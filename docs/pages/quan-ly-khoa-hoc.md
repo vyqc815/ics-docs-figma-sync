@@ -5,7 +5,7 @@
 > **Nguồn:** PLS-ICS T8/2026 ›     ├─ KHOÁ HỌC | THỬ NGHIỆM PROTOTYPE › CD-KH-010000 — Quản lý khoá học (`458:4142`, file `rRVs5HX0kIHffbS0V40djG`)  
 > **Route:** `/quan-ly-khoa-hoc`  
 > **Khung thiết kế:** 1440 × 810 px  
-> **Xuất lúc:** 2026-11-02T02:47:29.314Z  
+> **Xuất lúc:** 2026-11-02T18:06:26.867Z  
 > **Spec đầy đủ (giá trị chính xác từng node):** `../../.figma/pages/cd-kh-010000/page-spec.json`
 
 ## 1. Tổng quan
@@ -54,6 +54,7 @@ Nền trang: `linear-gradient(#f8fafc, #f8fafc), linear-gradient(#ffffff, #fffff
 | `spacing/24` | `--spacing-24` | `24` |  | Number Tokens / Mode 1 |
 | `spacing/4` | `--spacing-4` | `4` |  | Number Tokens / Mode 1 |
 | `spacing/8` | `--spacing-8` | `8` |  | Number Tokens / Mode 1 |
+| `text/on-brand` | `--text-on-brand` | `#ffffff` | color/neutral/white | Theme · Semantic / Light |
 
 **Style Figma đang dùng:**
 
@@ -102,7 +103,7 @@ Nền trang: `linear-gradient(#f8fafc, #f8fafc), linear-gradient(#ffffff, #fffff
 | — | Unbounded | 13 / 16px | 600 | 0 | #ffffff (color/neutral/white) | 1 | “Học Liệu Ngôn Ngữ” |
 | — | Afacad | 13 / 16px | 500 | 0 | #ffffff (color/neutral/white) | 1 | “CD.dacnhan@gmail.com” |
 | — | Afacad | 13 / 17px | 400 | 0 | #64748b (color/text/secondary) | 1 | “Hiển thị 1 - 5 trong tổng số 5” |
-| — | Afacad | 13 / 17px | 600 | 0 | #ffffff | 1 | “1” |
+| — | Afacad | 13 / 17px | 600 | 0 | #ffffff (text/on-brand) | 1 | “1” |
 | — | Unbounded | 12 / 15px | 600 · case title | 0 | #ffffff (color/neutral/white) | 12 | “Nội dung” |
 | — | Afacad | 12 / 18px | 400 | 0 | #334155 (color/text/primary) | 4 | “Khoá học HSK1” |
 | — | Afacad | 12 / 18px | 700 | 0 | #e65100 (color/brand/orange) | 1 | “Khoá học tổng hợp” |
@@ -177,7 +178,7 @@ Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí ·
         - [khối] **Container** — 148×32 [FILL×HUG] · @ (44, 2) flow · column `I2223:85233;2008:31771`
           - [chữ] “Học Liệu Ngôn Ngữ” — 148×16 [FILL×HUG] · @ (0, 0) flow · Unbounded 13/16px 600 #ffffff (color/neutral/white) · truncate 1 lines `I2223:85233;2008:31772`
           - [chữ] “CD.dacnhan@gmail.com” — 148×16 [FILL×HUG] · @ (0, 16) flow · Afacad 13/16px 500 #ffffff (color/neutral/white) · truncate 1 lines `I2223:85233;2008:31773`
-      - [icon] **Overlay** — 20×20 · @ (202, 8) flow · file /figma/assets/c19ad83f1e85.svg covers (-2, -2) 26×26 `I2223:85233;2008:31774`
+      - [icon] **Overlay** — 20×20 · @ (202, 8) flow · file /figma/assets/93cec656b378.svg covers (-2, -2) 26×26 `I2223:85233;2008:31774`
     - [instance] **Component 2** ⟨Switch Center: Property 1=Đắc Nhân⟩ — 166×42 · @ (12, 11) abs · row gap 4 pad 8 8 8 8 align CENTER · bg #e65100 (org/dac-nhan/bg) · radius 8px · border 1px solid #ffffff (org/border) · shadow 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4273:160608`
       - [khối] **Frame 427325409** — 128×24 [FILL×HUG] · @ (9, 9) flow · row gap 8 align CENTER `I4273:160608;4019:24203`
         - [icon] **LOGO CENTER** — 24×24 · @ (0, 0) flow · file /figma/assets/4bdd43f93c77.svg covers (-1.78, 0) 27.56×27.55 `I4273:160608;4019:22291`
@@ -376,13 +377,13 @@ Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí ·
         - [khối] **Card Footer · Thêm mới & Phân trang** — 1156×102 [FILL×HUG] · @ (1, 446) flow · column gap 12 pad 12 16 16 16 · clip `5035:378513`
           - [instance] **Add New Bar · Thêm nội dung khoá học mới** ⟨Molecule/Add New Bar: Icon trái=false, Nút=1075:1478, Placeholder=Thêm nội dung khoá học mới, Type=Box, Size=M, State=Default⟩ — 1124×38 [FILL×FIXED] · @ (16, 12) flow · row gap 12 pad 8 12 8 12 align CENTER · bg #f8fafc (color/extended/f8fafc) · radius 8px · border 1px dashed #cbd5e1 (color/extended/cbd5e1) `2702:48160`
             - [chữ] “Thêm nội dung khoá học mới” — 1066×19 [FILL×HUG] · @ (13, 9.5) flow · Afacad 15/19px 400 italic #cccccc (color/extended/cccccc) · truncate 1 lines `I2702:48160;5056:365849`
-            - [icon] **Action Button** ⟨Atom/Icon Button: Icon=Add Rounded⟩ — 20×20 · @ (1091, 9) flow · file /figma/assets/f3f9add99f48.svg covers (-2, -2) 26×26 `I2702:48160;5056:365850`
+            - [icon] **Action Button** ⟨Atom/Icon Button: Icon=Add Rounded⟩ — 20×20 · @ (1091, 9) flow · file /figma/assets/2e1c3bbebf39.svg covers (-2, -2) 26×26 `I2702:48160;5056:365850`
           - [khối] **Footer · Phân trang** — 1124×24 [FILL×HUG] · @ (16, 62) flow · row space-between align CENTER · clip `5035:378514`
             - [chữ] “Hiển thị 1 - 5 trong tổng số 5” — 1011×17 [FILL×HUG] · @ (0, 3.5) flow · Afacad 13/17px 400 #64748b (color/text/secondary) `5035:378515`
             - [khối] **Pages** — 113×24 [HUG×HUG] · @ (1011, 0) flow · row gap 8 align CENTER · clip `5035:378532`
               - [icon] **Trang ‹** — 36×24 · @ (0, 0) flow · file /figma/assets/9710eece7344.svg `5035:378516`
               - [khối] **Trang 1** — 25×23 [HUG×HUG] · @ (44, 0.5) flow · row pad 3 9 3 9 align CENTER · bg #e65100 (color/brand/orange) · radius 6px · clip `5035:378518`
-                - [chữ] “1” — 7×17 [HUG×HUG] · @ (9, 3) flow · Afacad 13/17px 600 #ffffff · no-wrap `5035:378519`
+                - [chữ] “1” — 7×17 [HUG×HUG] · @ (9, 3) flow · Afacad 13/17px 600 #ffffff (text/on-brand) · no-wrap `5035:378519`
               - [icon] **Trang ›** — 36×24 · @ (77, 0) flow · file /figma/assets/d8aa2a18881c.svg `5035:378528`
   - [instance] **DD/Organism/Menu Panel** ⟨DD/Organism/Menu Panel: Footer=false, Search=false, Type=Single⟩ — 170×148 · @ (862, 378) abs · column pad 4 0 4 0 · bg #ffffff (color/neutral/white) · radius 8px · border 1px solid #e2e8f0 (color/border/default) · shadow 0 8px 24px 0 rgba(15, 23, 41, 0.08), 0 1px 3px 0 rgba(15, 23, 41, 0.06) · clip `2032:5244`
     - [khối] **Items** — 168×138 [FILL×HUG] · @ (1, 5) flow · column · clip `I2032:5244;2015:31432`
@@ -549,7 +550,7 @@ Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí ·
 | `/figma/assets/a9b9fc2d1271.svg` | svg | 28 × 28 | I4915:256174;4901:216105;2245:87764 |
 | `/figma/assets/ea3f45ee891c.svg` | svg | 154 × 62 | I4915:256174;4901:216106 |
 | `/figma/assets/54db65cf0921.svg` | svg | 1206 × 64 | 4050:122702 |
-| `/figma/assets/c19ad83f1e85.svg` | svg | 26 × 26 | I2223:85233;2008:31774 |
+| `/figma/assets/93cec656b378.svg` | svg | 26 × 26 | I2223:85233;2008:31774 |
 | `/figma/assets/4bdd43f93c77.svg` | svg | 27.56 × 27.55 | I4273:160608;4019:22291 |
 | `/figma/assets/71bb4d809160.svg` | svg | 16 × 16 | I4273:160608;4019:24215 |
 | `/figma/assets/cd26e575cd42.svg` | svg | 14 × 14 | I2706:20428;1739:32349 |
@@ -594,7 +595,7 @@ Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí ·
 | `/figma/assets/997d95c6a080.svg` | svg | 28 × 28 | 2706:42988 |
 | `/figma/assets/6df572d9befc.svg` | svg | 28 × 28 | 5035:378509 |
 | `/figma/assets/fbe26afc4439.svg` | svg | 30.85 × 31.5 | 2706:42985 |
-| `/figma/assets/f3f9add99f48.svg` | svg | 26 × 26 | I2702:48160;5056:365850 |
+| `/figma/assets/2e1c3bbebf39.svg` | svg | 26 × 26 | I2702:48160;5056:365850 |
 | `/figma/assets/9710eece7344.svg` | svg | 36 × 24 | 5035:378516 |
 | `/figma/assets/d8aa2a18881c.svg` | svg | 36 × 24 | 5035:378528 |
 

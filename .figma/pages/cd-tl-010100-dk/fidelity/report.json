@@ -12,10 +12,10 @@
   "pixels": {
     "width": 1440,
     "height": 910,
-    "mismatched": 2985,
-    "percent": 0.228,
+    "mismatched": 2773,
+    "percent": 0.212,
     "shapePercent": 0.041,
-    "textPercent": 1.294,
+    "textPercent": 1.182,
     "sizeMismatch": false
   },
   "textNodes": [
@@ -24,12 +24,6 @@
       "name": "Label",
       "pixels": 221,
       "percent": 8.6
-    },
-    {
-      "id": "I6133:127553;6133:108641;2245:87774",
-      "name": "Label",
-      "pixels": 244,
-      "percent": 8.5
     },
     {
       "id": "I6133:127553;6133:108633;2245:87820",
@@ -105,6 +99,12 @@
     },
     {
       "id": "6133:127643",
+      "name": "⋮",
+      "pixels": 3,
+      "percent": 2.2
+    },
+    {
+      "id": "6133:127651",
       "name": "⋮",
       "pixels": 3,
       "percent": 2.2
@@ -732,7 +732,7 @@
   "failures": [
     "8 elements are off by more than their limit (1px, 2.5px for text-driven; worst 2.58px)."
   ],
-  "url": "http://localhost:3108/tools/giong-doc/hoi-thoai-dk",
+  "url": "http://localhost:3000/tools/giong-doc/hoi-thoai-dk",
   "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
   "consoleErrors": [],
   "rootFound": true

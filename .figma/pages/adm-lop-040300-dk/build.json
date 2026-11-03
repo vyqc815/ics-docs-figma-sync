@@ -15,8 +15,8 @@
     },
     {
       "nodeId": "4056:116762",
-      "component": "Header",
-      "file": "components/figma/adm-lop-040300-dk/Header.tsx"
+      "component": "Header39",
+      "file": "components/figma/shared/Header39.tsx"
     }
   ]
 }

@@ -1,0 +1,484 @@
+{
+  "pass": true,
+  "thresholds": {
+    "maxPixelDiffPercent": 0.5,
+    "maxBoxDelta": 1,
+    "maxTextBoxDelta": 2.5,
+    "colorThreshold": 0.1,
+    "aaRadius": 1,
+    "subpixel": true,
+    "maxTextNodeDiffPercent": 35
+  },
+  "pixels": {
+    "width": 1440,
+    "height": 1239,
+    "mismatched": 3123,
+    "percent": 0.175,
+    "shapePercent": 0.004,
+    "textPercent": 0.753,
+    "sizeMismatch": false
+  },
+  "textNodes": [
+    {
+      "id": "3058:76510",
+      "name": "Email",
+      "pixels": 253,
+      "percent": 5.4
+    },
+    {
+      "id": "3058:76509",
+      "name": "Tên học viên",
+      "pixels": 57,
+      "percent": 3.9
+    },
+    {
+      "id": "3058:76489",
+      "name": "#",
+      "pixels": 8,
+      "percent": 3.8
+    },
+    {
+      "id": "2929:49761",
+      "name": "Danh sách hoá đơn",
+      "pixels": 178,
+      "percent": 3.5
+    },
+    {
+      "id": "I2929:49770;2015:36092",
+      "name": "Value",
+      "pixels": 44,
+      "percent": 3.2
+    },
+    {
+      "id": "2929:50017",
+      "name": "DN1-127",
+      "pixels": 31,
+      "percent": 2.9
+    },
+    {
+      "id": "I2929:49767;2015:36092",
+      "name": "Value",
+      "pixels": 62,
+      "percent": 2.8
+    },
+    {
+      "id": "2929:49968",
+      "name": "103176",
+      "pixels": 26,
+      "percent": 2.8
+    },
+    {
+      "id": "2929:49938",
+      "name": "DN287",
+      "pixels": 24,
+      "percent": 2.7
+    },
+    {
+      "id": "2929:50134",
+      "name": "DN287",
+      "pixels": 24,
+      "percent": 2.7
+    },
+    {
+      "id": "3058:76491",
+      "name": "Học viên",
+      "pixels": 29,
+      "percent": 2.6
+    },
+    {
+      "id": "2929:49978",
+      "name": "DN1-138",
+      "pixels": 28,
+      "percent": 2.6
+    },
+    {
+      "id": "2929:50095",
+      "name": "DN1-138",
+      "pixels": 28,
+      "percent": 2.6
+    },
+    {
+      "id": "2929:50056",
+      "name": "DN265",
+      "pixels": 22,
+      "percent": 2.5
+    },
+    {
+      "id": "2929:49860",
+      "name": "DN1_",
+      "pixels": 17,
+      "percent": 2.4
+    }
+  ],
+  "regions": [
+    {
+      "x": 768,
+      "y": 216,
+      "width": 16,
+      "height": 24,
+      "pixels": 18,
+      "node": {
+        "id": "I2731:88067;2015:31501;2731:88070;2015:30629",
+        "name": "Control",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 256,
+      "y": 1016,
+      "width": 24,
+      "height": 24,
+      "pixels": 18,
+      "node": {
+        "id": "2929:50076",
+        "name": "Checkbox",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 256,
+      "y": 1176,
+      "width": 24,
+      "height": 16,
+      "pixels": 18,
+      "node": {
+        "id": "2929:50154",
+        "name": "Checkbox",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 768,
+      "y": 184,
+      "width": 16,
+      "height": 8,
+      "pixels": 12,
+      "node": {
+        "id": "I2731:88067;2015:31501;2731:88069;2015:30629",
+        "name": "Control",
+        "role": "icon"
+      }
+    }
+  ],
+  "boxes": {
+    "measured": 712,
+    "missing": [],
+    "withinThreshold": 712,
+    "buckets": {
+      "≤0.5px": 712,
+      "≤1px": 712,
+      "≤2px": 712,
+      "≤4px": 712,
+      ">4px": 0
+    },
+    "worst": [
+      {
+        "id": "2929:49822",
+        "name": "Lớp dự kiến",
+        "role": "text",
+        "delta": 0.34,
+        "dx": -0.17,
+        "dy": 0,
+        "dw": 0.34,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2929:49767",
+        "name": "Lọc · Người phụ trách",
+        "role": "instance",
+        "delta": 0.3,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.3,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I2929:49767;2015:36091",
+        "name": "Content",
+        "role": "container",
+        "delta": 0.3,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.3,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I2929:49767;2015:36092",
+        "name": "Value",
+        "role": "text",
+        "delta": 0.3,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.3,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I2929:49767;2015:36093",
+        "name": "Count",
+        "role": "container",
+        "delta": 0.3,
+        "dx": 0.3,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I2929:49767;2015:36094",
+        "name": "Value",
+        "role": "text",
+        "delta": 0.3,
+        "dx": 0.3,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I2929:49767;2015:36096",
+        "name": "Chevron",
+        "role": "icon",
+        "delta": 0.3,
+        "dx": 0.3,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2929:49768",
+        "name": "Lọc · Tuần này",
+        "role": "instance",
+        "delta": 0.3,
+        "dx": 0.3,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I2929:49768;2015:36091",
+        "name": "Content",
+        "role": "container",
+        "delta": 0.3,
+        "dx": 0.3,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I2929:49768;2015:36092",
+        "name": "Value",
+        "role": "text",
+        "delta": 0.3,
+        "dx": 0.3,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I2929:49768;2015:36096",
+        "name": "Chevron",
+        "role": "icon",
+        "delta": 0.3,
+        "dx": 0.3,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2929:49769",
+        "name": "Lọc · Loại hoá đơn",
+        "role": "instance",
+        "delta": 0.3,
+        "dx": 0.3,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I2929:49769;2015:36133",
+        "name": "Content",
+        "role": "container",
+        "delta": 0.3,
+        "dx": 0.3,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I2929:49769;2015:36134",
+        "name": "Value",
+        "role": "text",
+        "delta": 0.3,
+        "dx": 0.3,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I2929:49769;2015:36135",
+        "name": "Count",
+        "role": "container",
+        "delta": 0.3,
+        "dx": 0.3,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I2929:49769;2015:36136",
+        "name": "Value",
+        "role": "text",
+        "delta": 0.3,
+        "dx": 0.3,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I2929:49769;2015:36138",
+        "name": "Chevron",
+        "role": "icon",
+        "delta": 0.3,
+        "dx": 0.3,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2929:49770",
+        "name": "Lọc · Trạng thái",
+        "role": "instance",
+        "delta": 0.3,
+        "dx": 0.3,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I2929:49770;2015:36091",
+        "name": "Content",
+        "role": "container",
+        "delta": 0.3,
+        "dx": 0.3,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I2929:49770;2015:36092",
+        "name": "Value",
+        "role": "text",
+        "delta": 0.3,
+        "dx": 0.3,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I2929:49770;2015:36093",
+        "name": "Count",
+        "role": "container",
+        "delta": 0.3,
+        "dx": 0.3,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I2929:49770;2015:36094",
+        "name": "Value",
+        "role": "text",
+        "delta": 0.3,
+        "dx": 0.3,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I2929:49770;2015:36096",
+        "name": "Chevron",
+        "role": "icon",
+        "delta": 0.3,
+        "dx": 0.3,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2929:49771",
+        "name": "Lọc · Tag",
+        "role": "instance",
+        "delta": 0.3,
+        "dx": 0.3,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I2929:49771;2015:36007",
+        "name": "Content",
+        "role": "container",
+        "delta": 0.3,
+        "dx": 0.3,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      }
+    ],
+    "maxDelta": 0.34,
+    "over": []
+  },
+  "failures": [],
+  "url": "http://localhost:3000/hoa-don/danh-sach-hoa-don/dropdown-hoa-don-do-loai-hoa-don-doi-trang-thai",
+  "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
+  "consoleErrors": [],
+  "rootFound": true
+}

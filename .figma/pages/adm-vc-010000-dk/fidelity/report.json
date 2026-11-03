@@ -12,19 +12,13 @@
   "pixels": {
     "width": 1440,
     "height": 810,
-    "mismatched": 2931,
-    "percent": 0.251,
+    "mismatched": 2635,
+    "percent": 0.226,
     "shapePercent": 0.002,
-    "textPercent": 1.636,
+    "textPercent": 1.47,
     "sizeMismatch": false
   },
   "textNodes": [
-    {
-      "id": "I4056:129429;2245:87864",
-      "name": "Label",
-      "pixels": 308,
-      "percent": 12.3
-    },
     {
       "id": "I4056:129669;1391:17487",
       "name": "Sau",
@@ -105,6 +99,12 @@
     },
     {
       "id": "I4056:129527;3567:39161",
+      "name": "14.09.2026",
+      "pixels": 46,
+      "percent": 2.9
+    },
+    {
+      "id": "I4056:129542;3567:39161",
       "name": "14.09.2026",
       "pixels": 46,
       "percent": 2.9
@@ -453,7 +453,7 @@
     "over": []
   },
   "failures": [],
-  "url": "http://localhost:3108/voucher/danh-sach-voucher-dk",
+  "url": "http://localhost:3000/voucher/danh-sach-voucher-dk",
   "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
   "consoleErrors": [],
   "rootFound": true

@@ -5,7 +5,7 @@
 > **Nguồn:** PLS-ICS T8/2026 ›             └─ HƯỚNG DẪN GIẢNG DẠY › GV-LOP-090100 — Chi tiết lớp / Hướng dẫn giảng dạy / Trống (`4333:14602`, file `rRVs5HX0kIHffbS0V40djG`)  
 > **Route:** `/chi-tiet-lop/huong-dan-giang-day/trong`  
 > **Khung thiết kế:** 1440 × 810 px (cắt phần tràn ra ngoài khung)  
-> **Xuất lúc:** 2026-11-02T03:54:38.740Z  
+> **Xuất lúc:** 2026-11-03T01:10:01.130Z  
 > **Spec đầy đủ (giá trị chính xác từng node):** `../../../../.figma/pages/gv-lop-090100/page-spec.json`
 
 ## 1. Tổng quan

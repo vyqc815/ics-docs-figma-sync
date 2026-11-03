@@ -1,6 +1,6 @@
 # Fidelity: CD-KH-030100 — Học kỳ / Thông tin
 
-- URL: `http://localhost:3108/hoc-ky/thong-tin`
+- URL: `http://localhost:3000/hoc-ky/thong-tin`
 - Verdict: **PASS**
 - Pixels outside text: **0.014%** differ (limit 0.5%); all pixels: 0.407%; inside text boxes: 1.461% (glyph rendering)
 - Boxes: 291/291 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 285, ≤1px: 287, ≤2px: 291, ≤4px: 291, >4px: 0

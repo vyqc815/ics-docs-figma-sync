@@ -1,6 +1,6 @@
 # Fidelity: CD-DM-010000 — Quản lý danh mục
 
-- URL: `http://localhost:3108/quan-ly-danh-muc`
+- URL: `http://localhost:3000/quan-ly-danh-muc`
 - Verdict: **PASS**
 - Pixels outside text: **0.011%** differ (limit 0.5%); all pixels: 0.508%; inside text boxes: 2.128% (glyph rendering)
 - Boxes: 213/213 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 212, ≤1px: 212, ≤2px: 213, ≤4px: 213, >4px: 0

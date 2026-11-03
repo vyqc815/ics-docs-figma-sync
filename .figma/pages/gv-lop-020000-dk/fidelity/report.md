@@ -1,6 +1,6 @@
 # Fidelity: GV-LOP-020000-DK — Chi tiết lớp / Tổng quan
 
-- URL: `http://localhost:3108/chi-tiet-lop/tong-quan-dk`
+- URL: `http://localhost:3000/chi-tiet-lop/tong-quan-dk`
 - Verdict: **PASS**
 - Pixels outside text: **0.011%** differ (limit 0.5%); all pixels: 0.258%; inside text boxes: 1.122% (glyph rendering)
 - Boxes: 440/440 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 437, ≤1px: 439, ≤2px: 439, ≤4px: 440, >4px: 0

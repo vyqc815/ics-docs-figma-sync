@@ -12,37 +12,13 @@
   "pixels": {
     "width": 1440,
     "height": 1059,
-    "mismatched": 3930,
-    "percent": 0.258,
+    "mismatched": 3373,
+    "percent": 0.221,
     "shapePercent": 0.002,
-    "textPercent": 1.377,
+    "textPercent": 1.18,
     "sizeMismatch": false
   },
   "textNodes": [
-    {
-      "id": "I4056:110955;1308:6749",
-      "name": "100%",
-      "pixels": 67,
-      "percent": 19.9
-    },
-    {
-      "id": "I4056:110956;1308:6749",
-      "name": "100%",
-      "pixels": 67,
-      "percent": 19.9
-    },
-    {
-      "id": "I4056:110967;1308:6749",
-      "name": "100%",
-      "pixels": 67,
-      "percent": 19.9
-    },
-    {
-      "id": "I4056:110968;1308:6749",
-      "name": "100%",
-      "pixels": 67,
-      "percent": 19.9
-    },
     {
       "id": "4056:110843",
       "name": "ÔN TẬP: Giữa Kỳ 1",
@@ -54,12 +30,6 @@
       "name": "Label",
       "pixels": 329,
       "percent": 13.7
-    },
-    {
-      "id": "I4056:111119;2245:87914",
-      "name": "Label",
-      "pixels": 305,
-      "percent": 12.7
     },
     {
       "id": "I4056:111118;2245:87908",
@@ -108,6 +78,36 @@
       "name": "Label",
       "pixels": 73,
       "percent": 3
+    },
+    {
+      "id": "I4056:110897;3138:130001",
+      "name": "Tên",
+      "pixels": 95,
+      "percent": 2.6
+    },
+    {
+      "id": "I4056:111124;2245:87908",
+      "name": "Label",
+      "pixels": 61,
+      "percent": 2.5
+    },
+    {
+      "id": "I4056:110875;3138:130001",
+      "name": "Tên",
+      "pixels": 73,
+      "percent": 2
+    },
+    {
+      "id": "I4056:110951;3497:64446",
+      "name": "Trần Nguyễn Hoài Phương",
+      "pixels": 29,
+      "percent": 1.7
+    },
+    {
+      "id": "I4056:110962;3497:64446",
+      "name": "Trần Nguyễn Hoài Phương",
+      "pixels": 29,
+      "percent": 1.7
     }
   ],
   "regions": [
@@ -453,7 +453,7 @@
     "over": []
   },
   "failures": [],
-  "url": "http://localhost:3108/lop-hoc/bai-hoc/buoi-hoc-dk",
+  "url": "http://localhost:3000/lop-hoc/bai-hoc/buoi-hoc-dk",
   "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
   "consoleErrors": [],
   "rootFound": true

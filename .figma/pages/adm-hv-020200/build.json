@@ -5,8 +5,8 @@
   "sections": [
     {
       "nodeId": "2223:83793",
-      "component": "Header",
-      "file": "components/figma/adm-hv-020200/Header.tsx"
+      "component": "Header20",
+      "file": "components/figma/shared/Header20.tsx"
     },
     {
       "nodeId": "1648:12211",

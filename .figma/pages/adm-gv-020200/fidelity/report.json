@@ -12,37 +12,13 @@
   "pixels": {
     "width": 1440,
     "height": 810,
-    "mismatched": 2172,
-    "percent": 0.186,
+    "mismatched": 1934,
+    "percent": 0.166,
     "shapePercent": 0.027,
-    "textPercent": 1.495,
+    "textPercent": 1.303,
     "sizeMismatch": false
   },
   "textNodes": [
-    {
-      "id": "I1505:22696;1391:14476",
-      "name": "80%",
-      "pixels": 74,
-      "percent": 26.4
-    },
-    {
-      "id": "I1505:22700;1391:14476",
-      "name": "80%",
-      "pixels": 74,
-      "percent": 26.4
-    },
-    {
-      "id": "I1505:22698;1308:6706",
-      "name": "0%",
-      "pixels": 45,
-      "percent": 23
-    },
-    {
-      "id": "I1505:22702;1308:6706",
-      "name": "0%",
-      "pixels": 45,
-      "percent": 23
-    },
     {
       "id": "1505:22661",
       "name": "Tiếng Trung Sơ Cấp 2 - HSK3 (NEW)",
@@ -108,6 +84,30 @@
       "name": "Lương/giờ",
       "pixels": 62,
       "percent": 2.7
+    },
+    {
+      "id": "I1333:12647;1308:10497",
+      "name": "B",
+      "pixels": 16,
+      "percent": 1.8
+    },
+    {
+      "id": "1333:11628",
+      "name": "KPI",
+      "pixels": 22,
+      "percent": 1.6
+    },
+    {
+      "id": "1505:22894",
+      "name": "200.000 đ",
+      "pixels": 20,
+      "percent": 1.4
+    },
+    {
+      "id": "1505:22979",
+      "name": "200.000 đ",
+      "pixels": 20,
+      "percent": 1.4
     }
   ],
   "regions": [
@@ -501,7 +501,7 @@
     "over": []
   },
   "failures": [],
-  "url": "http://localhost:3108/chi-tiet-giao-vien/danh-sach-lop",
+  "url": "http://localhost:3000/chi-tiet-giao-vien/danh-sach-lop",
   "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
   "consoleErrors": [],
   "rootFound": true

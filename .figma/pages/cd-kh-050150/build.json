@@ -1,0 +1,12 @@
+{
+  "route": "/ky-nang-s6/nghe/popup-them-bai-tu-thu-vien",
+  "pageFile": "components/figma/cd-kh-050150/index.tsx",
+  "docFile": "docs/pages/ky-nang-s6/nghe/popup-them-bai-tu-thu-vien.md",
+  "sections": [
+    {
+      "nodeId": "6646:122540",
+      "component": "PopupThemTuThuVienDuLieu",
+      "file": "components/figma/cd-kh-050150/PopupThemTuThuVienDuLieu.tsx"
+    }
+  ]
+}

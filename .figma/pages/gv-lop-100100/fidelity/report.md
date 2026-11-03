@@ -1,6 +1,6 @@
 # Fidelity: GV-LOP-100100 — Chi tiết lớp / Đánh giá / Không có quyền truy cập
 
-- URL: `http://localhost:3108/chi-tiet-lop/danh-gia/khong-co-quyen-truy-cap`
+- URL: `http://localhost:3000/chi-tiet-lop/danh-gia/khong-co-quyen-truy-cap`
 - Verdict: **PASS**
 - Pixels outside text: **0%** differ (limit 0.5%); all pixels: 0.074%; inside text boxes: 1.628% (glyph rendering)
 - Boxes: 103/103 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 99, ≤1px: 101, ≤2px: 103, ≤4px: 103, >4px: 0

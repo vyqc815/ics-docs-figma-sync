@@ -5,8 +5,8 @@
   "sections": [
     {
       "nodeId": "4101:142414",
-      "component": "Header",
-      "file": "components/figma/adm-lsp-010000/Header.tsx"
+      "component": "Header12",
+      "file": "components/figma/shared/Header12.tsx"
     },
     {
       "nodeId": "4915:249224",
@@ -18,5 +18,8 @@
       "component": "MainLuongSp",
       "file": "components/figma/adm-lsp-010000/MainLuongSp.tsx"
     }
-  ]
+  ],
+  "idAlias": {
+    "4101:142414": "2731:86117"
+  }
 }

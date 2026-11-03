@@ -1,6 +1,6 @@
 # Fidelity: ADM-LOP-040300 — Lớp học / Cài đặt / Giáo viên
 
-- URL: `http://localhost:3108/lop-hoc/cai-dat/giao-vien`
+- URL: `http://localhost:3000/lop-hoc/cai-dat/giao-vien`
 - Verdict: **FAIL**
 - Pixels outside text: **0.002%** differ (limit 0.5%); all pixels: 0.103%; inside text boxes: 1.316% (glyph rendering)
 - Boxes: 147/148 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 147, ≤1px: 147, ≤2px: 147, ≤4px: 148, >4px: 0

@@ -1,6 +1,6 @@
 # Fidelity: ADM-GY-010000 — Góp ý / Học viên
 
-- URL: `http://localhost:3108/gop-y/hoc-vien`
+- URL: `http://localhost:3000/gop-y/hoc-vien`
 - Verdict: **PASS**
 - Pixels outside text: **0.001%** differ (limit 0.5%); all pixels: 0.119%; inside text boxes: 0.624% (glyph rendering)
 - Boxes: 151/151 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 151, ≤1px: 151, ≤2px: 151, ≤4px: 151, >4px: 0

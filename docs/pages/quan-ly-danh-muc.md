@@ -5,7 +5,7 @@
 > **Nguồn:** PLS-ICS T8/2026 ›     ├─ DANH MỤC › CD-DM-010000 — Quản lý danh mục (`714:16696`, file `rRVs5HX0kIHffbS0V40djG`)  
 > **Route:** `/quan-ly-danh-muc`  
 > **Khung thiết kế:** 1440 × 809 px  
-> **Xuất lúc:** 2026-11-02T03:53:14.085Z  
+> **Xuất lúc:** 2026-11-03T01:08:39.344Z  
 > **Spec đầy đủ (giá trị chính xác từng node):** `../../.figma/pages/cd-dm-010000/page-spec.json`
 
 ## 1. Tổng quan
@@ -54,6 +54,7 @@ Nền trang: `linear-gradient(#f8fafc, #f8fafc), linear-gradient(#ffffff, #fffff
 | `spacing/12` | `--spacing-12` | `12` |  | Number Tokens / Mode 1 |
 | `spacing/16` | `--spacing-16` | `16` |  | Number Tokens / Mode 1 |
 | `spacing/8` | `--spacing-8` | `8` |  | Number Tokens / Mode 1 |
+| `text/on-brand` | `--text-on-brand` | `#ffffff` | color/neutral/white | Theme · Semantic / Light |
 
 **Style Figma đang dùng:**
 
@@ -97,7 +98,7 @@ Nền trang: `linear-gradient(#f8fafc, #f8fafc), linear-gradient(#ffffff, #fffff
 | — | Unbounded | 13 / 16px | 600 | 0 | #ffffff (color/neutral/white) | 1 | “Học Liệu Ngôn Ngữ” |
 | — | Afacad | 13 / 16px | 500 | 0 | #ffffff (color/neutral/white) | 1 | “CD.dacnhan@gmail.com” |
 | — | Afacad | 13 / 17px | 400 | 0 | #64748b (color/text/secondary) | 1 | “Hiển thị 1 - 5 trong tổng số 5” |
-| — | Afacad | 13 / 17px | 600 | 0 | #ffffff | 1 | “1” |
+| — | Afacad | 13 / 17px | 600 | 0 | #ffffff (text/on-brand) | 1 | “1” |
 | — | Unbounded | 12 / 15px | 600 · case title | 0 | #ffffff (color/neutral/white) | 12 | “Nội dung” |
 | `Menu/8/Regular` | Unbounded | 8 / 12px | 400 | 0 | #ffffff (color/neutral/white) | 1 | “v20.07.2026_17:30” |
 
@@ -317,7 +318,7 @@ Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí ·
           - [khối] **Pages** — 113×24 [HUG×HUG] · @ (1027, 0) flow · row gap 8 align CENTER · clip `5035:378652`
             - [icon] **Trang ‹** — 36×24 · @ (0, 0) flow · file /figma/assets/557c5e6f41c9.svg `5035:378636`
             - [khối] **Trang 1** — 25×23 [HUG×HUG] · @ (44, 0.5) flow · row pad 3 9 3 9 align CENTER · bg #e65100 (color/brand/orange) · radius 6px · clip `5035:378638`
-              - [chữ] “1” — 7×17 [HUG×HUG] · @ (9, 3) flow · Afacad 13/17px 600 #ffffff · no-wrap `5035:378639`
+              - [chữ] “1” — 7×17 [HUG×HUG] · @ (9, 3) flow · Afacad 13/17px 600 #ffffff (text/on-brand) · no-wrap `5035:378639`
             - [icon] **Trang ›** — 36×24 · @ (77, 0) flow · file /figma/assets/b2bce4b84b65.svg `5035:378648`
 
 ## 5. Component đang dùng

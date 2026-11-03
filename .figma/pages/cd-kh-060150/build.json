@@ -1,0 +1,22 @@
+{
+  "route": "/bai-tap-ve-nha/frames/cd-kh-060150",
+  "pageFile": "components/figma/cd-kh-060150/index.tsx",
+  "docFile": "docs/pages/bai-tap-ve-nha/frames/cd-kh-060150.md",
+  "sections": [
+    {
+      "nodeId": "5672:75316",
+      "component": "PopupHeader",
+      "file": "components/figma/cd-kh-060150/PopupHeader.tsx"
+    },
+    {
+      "nodeId": "5672:75317",
+      "component": "Body",
+      "file": "components/figma/cd-kh-060150/Body.tsx"
+    },
+    {
+      "nodeId": "5672:75319",
+      "component": "PopupFooter",
+      "file": "components/figma/cd-kh-060150/PopupFooter.tsx"
+    }
+  ]
+}

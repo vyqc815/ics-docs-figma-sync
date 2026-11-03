@@ -1,18 +1,14 @@
 # Fidelity: CH-TC-010000 — Trang chủ / Thống kê tổng quan
 
-- URL: `http://localhost:3108/trang-chu/thong-ke-tong-quan`
+- URL: `http://localhost:3000/trang-chu/thong-ke-tong-quan`
 - Verdict: **PASS**
-- Pixels outside text: **0%** differ (limit 0.5%); all pixels: 0.077%; inside text boxes: 0.412% (glyph rendering)
+- Pixels outside text: **0%** differ (limit 0.5%); all pixels: 0.054%; inside text boxes: 0.285% (glyph rendering)
 - Boxes: 314/314 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 314, ≤1px: 314, ≤2px: 314, ≤4px: 314, >4px: 0
 
 ## Text boxes with most differing pixels (limit 35%)
 
 | Text | Differing |
 | --- | --- |
-| 80% (`I3778:20942;1391:14476`) | 26.8% |
-| 80% (`I3778:34714;1391:14476`) | 26.8% |
-| 100% (`I3778:34722;1308:6749`) | 24.7% |
-| 0% (`I3778:34517;1308:6706`) | 23% |
 | Ngày kết thúc (`3778:34640`) | 4% |
 | 30.07. 2025 (`3778:34642`) | 3.5% |
 | Value (`I4915:257387;4901:224689;3857:67911;1971:8814`) | 1.6% |
@@ -24,6 +20,10 @@
 | Value (`I6247:155137;2015:36008`) | 1.5% |
 | Value (`I4915:257387;4901:224688;3857:67911;1971:8814`) | 1.2% |
 | T4, 18h30 (`3778:34650`) | 1.2% |
+| T6, 18h30 (`3778:34652`) | 1.2% |
+| 6/20 Buổi (`I3778:25136;1350:13172`) | 1.2% |
+| 6/20 Buổi (`I3778:34511;1350:13172`) | 1.2% |
+| 6/20 Buổi (`I3778:34550;1350:13172`) | 1.2% |
 
 ## Largest box differences
 

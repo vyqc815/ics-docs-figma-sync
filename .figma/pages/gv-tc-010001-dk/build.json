@@ -1,0 +1,17 @@
+{
+  "route": "/trang-chu/thong-ke-theo-thang/chon-t9/2026-dk-gv-tc-010001-dk",
+  "pageFile": "components/figma/gv-tc-010001-dk/index.tsx",
+  "docFile": "docs/pages/trang-chu/thong-ke-theo-thang/chon-t9/2026-dk-gv-tc-010001-dk.md",
+  "sections": [
+    {
+      "nodeId": "6326:25992",
+      "component": "Body",
+      "file": "components/figma/gv-tc-010001-dk/Body.tsx"
+    },
+    {
+      "nodeId": "6326:26128",
+      "component": "Section2",
+      "file": "components/figma/gv-tc-010001-dk/Section2.tsx"
+    }
+  ]
+}

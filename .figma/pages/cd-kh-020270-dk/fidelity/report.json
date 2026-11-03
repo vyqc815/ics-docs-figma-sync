@@ -1,0 +1,760 @@
+{
+  "pass": true,
+  "thresholds": {
+    "maxPixelDiffPercent": 0.5,
+    "maxBoxDelta": 1,
+    "maxTextBoxDelta": 2.5,
+    "colorThreshold": 0.1,
+    "aaRadius": 1,
+    "subpixel": true,
+    "maxTextNodeDiffPercent": 35
+  },
+  "pixels": {
+    "width": 1440,
+    "height": 910,
+    "mismatched": 4080,
+    "percent": 0.311,
+    "shapePercent": 0.11,
+    "textPercent": 2.302,
+    "sizeMismatch": false
+  },
+  "textNodes": [
+    {
+      "id": "I6518:358591;4901:221039;2245:87908",
+      "name": "Label",
+      "pixels": 308,
+      "percent": 13.1
+    },
+    {
+      "id": "6518:357579",
+      "name": "[ 60 phút ]",
+      "pixels": 176,
+      "percent": 11.4
+    },
+    {
+      "id": "I6518:358591;5491:336932;2245:87908",
+      "name": "Label",
+      "pixels": 142,
+      "percent": 6.1
+    },
+    {
+      "id": "6518:357578",
+      "name": "THỜI GIAN",
+      "pixels": 89,
+      "percent": 5.9
+    },
+    {
+      "id": "6518:357592",
+      "name": "PHÁT ÂM",
+      "pixels": 72,
+      "percent": 5.8
+    },
+    {
+      "id": "6518:357585",
+      "name": "KHAI GIẢNG",
+      "pixels": 95,
+      "percent": 5.7
+    },
+    {
+      "id": "I6518:358591;4901:221044;2245:87908",
+      "name": "Label",
+      "pixels": 112,
+      "percent": 4.8
+    },
+    {
+      "id": "6518:357590",
+      "name": "[ 45 phút ]",
+      "pixels": 67,
+      "percent": 4.4
+    },
+    {
+      "id": "6518:357583",
+      "name": "[ 60 phút ]",
+      "pixels": 65,
+      "percent": 4.2
+    },
+    {
+      "id": "I6518:358591;5491:343756;2245:87908",
+      "name": "Label",
+      "pixels": 99,
+      "percent": 4.2
+    },
+    {
+      "id": "I6518:358591;4901:221049;2245:87908",
+      "name": "Label",
+      "pixels": 97,
+      "percent": 4.1
+    },
+    {
+      "id": "I6518:358591;4901:221042;2245:87908",
+      "name": "Label",
+      "pixels": 90,
+      "percent": 3.8
+    },
+    {
+      "id": "6518:357582",
+      "name": "Số buổi 03/12",
+      "pixels": 76,
+      "percent": 3.6
+    },
+    {
+      "id": "I6518:358591;4901:221043;2245:87908",
+      "name": "Label",
+      "pixels": 84,
+      "percent": 3.6
+    },
+    {
+      "id": "I6518:358591;4901:221046;2245:87908",
+      "name": "Label",
+      "pixels": 81,
+      "percent": 3.5
+    }
+  ],
+  "regions": [
+    {
+      "x": 336,
+      "y": 672,
+      "width": 1080,
+      "height": 48,
+      "pixels": 876,
+      "node": {
+        "id": "I6518:358471;5056:365849",
+        "name": "Placeholder",
+        "role": "text"
+      }
+    },
+    {
+      "x": 104,
+      "y": 120,
+      "width": 24,
+      "height": 32,
+      "pixels": 58,
+      "node": {
+        "id": "I6518:358591;4901:221036;2245:87816",
+        "name": "Icon",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 104,
+      "y": 752,
+      "width": 24,
+      "height": 32,
+      "pixels": 58,
+      "node": {
+        "id": "I6518:358591;4901:221047;2245:87816",
+        "name": "Icon",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 120,
+      "y": 856,
+      "width": 16,
+      "height": 24,
+      "pixels": 45,
+      "node": {
+        "id": "I6518:358591;4901:221049;2245:87904",
+        "name": "Icon",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 120,
+      "y": 176,
+      "width": 16,
+      "height": 24,
+      "pixels": 42,
+      "node": {
+        "id": "I6518:358591;4901:221037;2245:87904",
+        "name": "Icon",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 96,
+      "y": 80,
+      "width": 8,
+      "height": 32,
+      "pixels": 40,
+      "node": {
+        "id": "I6518:358591;4901:221031",
+        "name": "Frame 1171274940",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 1128,
+      "y": 216,
+      "width": 8,
+      "height": 24,
+      "pixels": 28,
+      "node": {
+        "id": "6518:357580",
+        "name": "Cell - Matrix Skill Header 1: KHAI GIẢNG",
+        "role": "container"
+      }
+    },
+    {
+      "x": 840,
+      "y": 376,
+      "width": 40,
+      "height": 8,
+      "pixels": 28,
+      "node": {
+        "id": "6518:372738",
+        "name": "Empty State / Illustration",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 1232,
+      "y": 216,
+      "width": 8,
+      "height": 24,
+      "pixels": 27,
+      "node": {
+        "id": "6518:357580",
+        "name": "Cell - Matrix Skill Header 1: KHAI GIẢNG",
+        "role": "container"
+      }
+    },
+    {
+      "x": 120,
+      "y": 656,
+      "width": 16,
+      "height": 24,
+      "pixels": 23,
+      "node": {
+        "id": "I6518:358591;4901:221045;2245:87904",
+        "name": "Icon",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 120,
+      "y": 272,
+      "width": 16,
+      "height": 24,
+      "pixels": 22,
+      "node": {
+        "id": "I6518:358591;4901:221039;2245:87904",
+        "name": "Icon",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 120,
+      "y": 808,
+      "width": 16,
+      "height": 24,
+      "pixels": 21,
+      "node": {
+        "id": "I6518:358591;4901:221048;2245:87904",
+        "name": "Icon",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 120,
+      "y": 416,
+      "width": 16,
+      "height": 24,
+      "pixels": 18,
+      "node": {
+        "id": "I6518:358591;5491:343756;2245:87904",
+        "name": "Icon",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 120,
+      "y": 608,
+      "width": 16,
+      "height": 24,
+      "pixels": 18,
+      "node": {
+        "id": "I6518:358591;4901:221044;2245:87904",
+        "name": "Icon",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 120,
+      "y": 512,
+      "width": 16,
+      "height": 24,
+      "pixels": 17,
+      "node": {
+        "id": "I6518:358591;4901:221042;2245:87904",
+        "name": "Icon",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 320,
+      "y": 672,
+      "width": 8,
+      "height": 40,
+      "pixels": 16,
+      "node": {
+        "id": "6518:358471",
+        "name": "Molecule/Add New Bar · Thêm bài học",
+        "role": "instance"
+      }
+    },
+    {
+      "x": 120,
+      "y": 712,
+      "width": 16,
+      "height": 16,
+      "pixels": 15,
+      "node": {
+        "id": "I6518:358591;4901:221046;2245:87904",
+        "name": "Icon",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 120,
+      "y": 576,
+      "width": 16,
+      "height": 8,
+      "pixels": 13,
+      "node": {
+        "id": "I6518:358591;4901:221043;2245:87904",
+        "name": "Icon",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 120,
+      "y": 320,
+      "width": 16,
+      "height": 24,
+      "pixels": 11,
+      "node": {
+        "id": "I6518:358591;4901:221040;2245:87910",
+        "name": "Icon",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 104,
+      "y": 464,
+      "width": 24,
+      "height": 24,
+      "pixels": 11,
+      "node": {
+        "id": "I6518:358591;4901:221041;2245:87816",
+        "name": "Icon",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 120,
+      "y": 224,
+      "width": 8,
+      "height": 8,
+      "pixels": 10,
+      "node": {
+        "id": "I6518:358591;4901:221038;2245:87904",
+        "name": "Icon",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 128,
+      "y": 376,
+      "width": 8,
+      "height": 16,
+      "pixels": 10,
+      "node": {
+        "id": "I6518:358591;5491:336932;2245:87904",
+        "name": "Icon",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 312,
+      "y": 24,
+      "width": 8,
+      "height": 16,
+      "pixels": 8,
+      "node": {
+        "id": "6518:358641",
+        "name": "Component 2",
+        "role": "instance"
+      }
+    },
+    {
+      "x": 264,
+      "y": 136,
+      "width": 16,
+      "height": 8,
+      "pixels": 8,
+      "node": {
+        "id": "I6518:358591;4901:221036;2245:87822",
+        "name": "Chevron",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 120,
+      "y": 240,
+      "width": 16,
+      "height": 8,
+      "pixels": 6,
+      "node": {
+        "id": "I6518:358591;4901:221038;2245:87904",
+        "name": "Icon",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 120,
+      "y": 560,
+      "width": 16,
+      "height": 8,
+      "pixels": 6,
+      "node": {
+        "id": "I6518:358591;4901:221043;2245:87904",
+        "name": "Icon",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 120,
+      "y": 904,
+      "width": 8,
+      "height": 6,
+      "pixels": 6,
+      "node": {
+        "id": "I6518:358591;4901:221050;2245:87904",
+        "name": "Icon",
+        "role": "icon"
+      }
+    }
+  ],
+  "boxes": {
+    "measured": 259,
+    "missing": [],
+    "withinThreshold": 259,
+    "buckets": {
+      "≤0.5px": 255,
+      "≤1px": 255,
+      "≤2px": 259,
+      "≤4px": 259,
+      ">4px": 0
+    },
+    "worst": [
+      {
+        "id": "6518:372764",
+        "name": "Bảng dữ liệu này đang trống",
+        "role": "text",
+        "delta": 1.91,
+        "dx": -0.95,
+        "dy": 0,
+        "dw": 1.91,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6518:357613",
+        "name": "TỔNG ÔN TẬP",
+        "role": "text",
+        "delta": 1.72,
+        "dx": -0.86,
+        "dy": 0,
+        "dw": 1.72,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6518:372765",
+        "name": "Button · Đi tới Tổng quan",
+        "role": "instance",
+        "delta": 1.36,
+        "dx": -0.69,
+        "dy": 0,
+        "dw": 1.36,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6518:372765;1071:20023",
+        "name": "Button",
+        "role": "text",
+        "delta": 1.36,
+        "dx": -0.69,
+        "dy": 0,
+        "dw": 1.36,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6518:357586",
+        "name": "Trạng thái số buổi",
+        "role": "instance",
+        "delta": 0.16,
+        "dx": -0.08,
+        "dy": 0,
+        "dw": 0.16,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6518:357586;2808:53211",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.16,
+        "dx": -0.08,
+        "dy": 0,
+        "dw": 0.16,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6518:357586;2808:53213",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.16,
+        "dx": -0.08,
+        "dy": 0,
+        "dw": 0.16,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6518:357586;2808:53214",
+        "name": "Chưa đủ buổi",
+        "role": "text",
+        "delta": 0.16,
+        "dx": -0.08,
+        "dy": 0,
+        "dw": 0.16,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6518:357593",
+        "name": "Trạng thái số buổi",
+        "role": "instance",
+        "delta": 0.16,
+        "dx": -0.08,
+        "dy": 0,
+        "dw": 0.16,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6518:357593;2808:53211",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.16,
+        "dx": -0.08,
+        "dy": 0,
+        "dw": 0.16,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6518:357593;2808:53213",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.16,
+        "dx": -0.08,
+        "dy": 0,
+        "dw": 0.16,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6518:357593;2808:53214",
+        "name": "Chưa đủ buổi",
+        "role": "text",
+        "delta": 0.16,
+        "dx": -0.08,
+        "dy": 0,
+        "dw": 0.16,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6518:357600",
+        "name": "Trạng thái số buổi",
+        "role": "instance",
+        "delta": 0.16,
+        "dx": -0.08,
+        "dy": 0,
+        "dw": 0.16,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6518:357600;2808:53211",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.16,
+        "dx": -0.08,
+        "dy": 0,
+        "dw": 0.16,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6518:357600;2808:53213",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.16,
+        "dx": -0.08,
+        "dy": 0,
+        "dw": 0.16,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6518:357600;2808:53214",
+        "name": "Chưa đủ buổi",
+        "role": "text",
+        "delta": 0.16,
+        "dx": -0.08,
+        "dy": 0,
+        "dw": 0.16,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6518:357607",
+        "name": "Trạng thái số buổi",
+        "role": "instance",
+        "delta": 0.16,
+        "dx": -0.08,
+        "dy": 0,
+        "dw": 0.16,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6518:357607;2808:53211",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.16,
+        "dx": -0.08,
+        "dy": 0,
+        "dw": 0.16,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6518:357607;2808:53213",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.16,
+        "dx": -0.08,
+        "dy": 0,
+        "dw": 0.16,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6518:357607;2808:53214",
+        "name": "Chưa đủ buổi",
+        "role": "text",
+        "delta": 0.16,
+        "dx": -0.08,
+        "dy": 0,
+        "dw": 0.16,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6518:357614",
+        "name": "Trạng thái số buổi",
+        "role": "instance",
+        "delta": 0.16,
+        "dx": -0.08,
+        "dy": 0,
+        "dw": 0.16,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6518:357614;2808:53211",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.16,
+        "dx": -0.08,
+        "dy": 0,
+        "dw": 0.16,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6518:357614;2808:53213",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.16,
+        "dx": -0.08,
+        "dy": 0,
+        "dw": 0.16,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6518:357614;2808:53214",
+        "name": "Chưa đủ buổi",
+        "role": "text",
+        "delta": 0.16,
+        "dx": -0.08,
+        "dy": 0,
+        "dw": 0.16,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6518:357621",
+        "name": "Trạng thái số buổi",
+        "role": "instance",
+        "delta": 0.16,
+        "dx": -0.08,
+        "dy": 0,
+        "dw": 0.16,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      }
+    ],
+    "maxDelta": 1.91,
+    "over": []
+  },
+  "failures": [],
+  "url": "http://localhost:3000/lo-trinh/chua-co-bai-hoc-dk",
+  "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
+  "consoleErrors": [],
+  "rootFound": true
+}

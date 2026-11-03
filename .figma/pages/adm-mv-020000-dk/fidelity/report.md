@@ -1,8 +1,8 @@
 # Fidelity: ADM-MV-020000-DK — Move video / Danh sách video
 
-- URL: `http://localhost:3108/move-video/danh-sach-video-dk`
+- URL: `http://localhost:3000/move-video/danh-sach-video-dk`
 - Verdict: **PASS**
-- Pixels outside text: **0.054%** differ (limit 0.5%); all pixels: 0.316%; inside text boxes: 1.05% (glyph rendering)
+- Pixels outside text: **0.054%** differ (limit 0.5%); all pixels: 0.286%; inside text boxes: 0.93% (glyph rendering)
 - Boxes: 286/286 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 286, ≤1px: 286, ≤2px: 286, ≤4px: 286, >4px: 0
 
 ## Pixel regions (largest first)
@@ -27,7 +27,6 @@
 
 | Text | Differing |
 | --- | --- |
-| Label (`I4056:130750;2245:87864`) | 17.5% |
 | Label (`I4101:138215;2245:87768`) | 5.4% |
 | Label (`I4056:130751;2245:87820`) | 3.3% |
 | Button (`I4056:130616;2706:23415;1910:18520`) | 3.1% |
@@ -42,6 +41,7 @@
 | Nội dung cảnh báo (`I4056:130620;2409:150455`) | 2.6% |
 | Label (`I4101:138211;2245:87768`) | 2.6% |
 | Label (`I4056:130744;2245:87820`) | 2.4% |
+| Label (`I4056:130745;2245:87768`) | 2.4% |
 
 ## Largest box differences
 

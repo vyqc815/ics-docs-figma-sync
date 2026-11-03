@@ -1,6 +1,6 @@
 # Fidelity: ADM-KPI-020000 — KPI & OT / Danh sách OT
 
-- URL: `http://localhost:3108/kpi-ot/danh-sach-ot`
+- URL: `http://localhost:3000/kpi-ot/danh-sach-ot`
 - Verdict: **PASS**
 - Pixels outside text: **0%** differ (limit 0.5%); all pixels: 0.06%; inside text boxes: 0.485% (glyph rendering)
 - Boxes: 204/204 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 204, ≤1px: 204, ≤2px: 204, ≤4px: 204, >4px: 0

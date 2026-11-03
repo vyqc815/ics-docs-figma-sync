@@ -1,0 +1,544 @@
+{
+  "pass": true,
+  "thresholds": {
+    "maxPixelDiffPercent": 0.5,
+    "maxBoxDelta": 1,
+    "maxTextBoxDelta": 2.5,
+    "colorThreshold": 0.1,
+    "aaRadius": 1,
+    "subpixel": true,
+    "maxTextNodeDiffPercent": 35
+  },
+  "pixels": {
+    "width": 1440,
+    "height": 946,
+    "mismatched": 3220,
+    "percent": 0.236,
+    "shapePercent": 0.005,
+    "textPercent": 1.395,
+    "sizeMismatch": false
+  },
+  "textNodes": [
+    {
+      "id": "5491:357762",
+      "name": "我 / 叫 / 王明",
+      "pixels": 235,
+      "percent": 12
+    },
+    {
+      "id": "5609:33903",
+      "name": "我 / 家 / 有 / 四口人",
+      "pixels": 267,
+      "percent": 10.2
+    },
+    {
+      "id": "I5491:357745;2015:30513",
+      "name": "Label",
+      "pixels": 205,
+      "percent": 8.5
+    },
+    {
+      "id": "I5491:357769;2015:30513",
+      "name": "Label",
+      "pixels": 205,
+      "percent": 8.5
+    },
+    {
+      "id": "I5491:357656;4901:220689;2245:87908",
+      "name": "Label",
+      "pixels": 184,
+      "percent": 7.8
+    },
+    {
+      "id": "5491:357810",
+      "name": "你 · 我 · 他 · 她",
+      "pixels": 161,
+      "percent": 7.6
+    },
+    {
+      "id": "I5491:357793;2015:30513",
+      "name": "Label",
+      "pixels": 124,
+      "percent": 6.5
+    },
+    {
+      "id": "I5491:357841;2015:30513",
+      "name": "Label",
+      "pixels": 106,
+      "percent": 6.4
+    },
+    {
+      "id": "I5491:357891;2015:30513",
+      "name": "Label",
+      "pixels": 101,
+      "percent": 5.8
+    },
+    {
+      "id": "I5491:357865;2015:30513",
+      "name": "Label",
+      "pixels": 93,
+      "percent": 5.4
+    },
+    {
+      "id": "I5491:357817;2015:30513",
+      "name": "Label",
+      "pixels": 137,
+      "percent": 5.1
+    },
+    {
+      "id": "I5491:357915;2015:30513",
+      "name": "Label",
+      "pixels": 122,
+      "percent": 4.9
+    },
+    {
+      "id": "I5491:357712;2015:30513",
+      "name": "Label",
+      "pixels": 52,
+      "percent": 4.5
+    },
+    {
+      "id": "I5491:357699;2015:31180",
+      "name": "Value",
+      "pixels": 148,
+      "percent": 4
+    },
+    {
+      "id": "I5491:357675;1430:10764",
+      "name": "Button",
+      "pixels": 61,
+      "percent": 3.8
+    }
+  ],
+  "regions": [
+    {
+      "x": 104,
+      "y": 80,
+      "width": 16,
+      "height": 24,
+      "pixels": 16,
+      "node": {
+        "id": "I5491:357656;4901:220681",
+        "name": "Frame 1171274940",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 120,
+      "y": 192,
+      "width": 16,
+      "height": 8,
+      "pixels": 9,
+      "node": {
+        "id": "I5491:357656;4901:220687;2245:87904",
+        "name": "Icon",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 120,
+      "y": 872,
+      "width": 16,
+      "height": 8,
+      "pixels": 9,
+      "node": {
+        "id": "I5491:357656;4901:220699;2245:87904",
+        "name": "Icon",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 1168,
+      "y": 184,
+      "width": 16,
+      "height": 16,
+      "pixels": 7,
+      "node": {
+        "id": "5614:35344",
+        "name": "Ellipse",
+        "role": "shape"
+      }
+    },
+    {
+      "x": 1240,
+      "y": 184,
+      "width": 16,
+      "height": 16,
+      "pixels": 7,
+      "node": {
+        "id": "5614:35348",
+        "name": "Ellipse",
+        "role": "shape"
+      }
+    },
+    {
+      "x": 888,
+      "y": 192,
+      "width": 8,
+      "height": 8,
+      "pixels": 4,
+      "node": {
+        "id": "5614:35332",
+        "name": "Ellipse",
+        "role": "shape"
+      }
+    },
+    {
+      "x": 1000,
+      "y": 192,
+      "width": 8,
+      "height": 8,
+      "pixels": 4,
+      "node": {
+        "id": "5614:35336",
+        "name": "Ellipse",
+        "role": "shape"
+      }
+    },
+    {
+      "x": 1088,
+      "y": 192,
+      "width": 16,
+      "height": 8,
+      "pixels": 4,
+      "node": {
+        "id": "5614:35340",
+        "name": "Ellipse",
+        "role": "shape"
+      }
+    },
+    {
+      "x": 24,
+      "y": 792,
+      "width": 8,
+      "height": 8,
+      "pixels": 4,
+      "node": {
+        "id": "I5491:357656;4901:220731",
+        "name": "LOGO CENTER",
+        "role": "icon"
+      }
+    }
+  ],
+  "boxes": {
+    "measured": 413,
+    "missing": [],
+    "withinThreshold": 413,
+    "buckets": {
+      "≤0.5px": 405,
+      "≤1px": 407,
+      "≤2px": 413,
+      "≤4px": 413,
+      ">4px": 0
+    },
+    "worst": [
+      {
+        "id": "5491:357745",
+        "name": "Atom/Tag",
+        "role": "instance",
+        "delta": 1.48,
+        "dx": 0,
+        "dy": 0,
+        "dw": 1.48,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5491:357745;2015:30513",
+        "name": "Label",
+        "role": "text",
+        "delta": 1.48,
+        "dx": 0,
+        "dy": 0,
+        "dw": 1.48,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5491:357769",
+        "name": "Atom/Tag",
+        "role": "instance",
+        "delta": 1.48,
+        "dx": 0,
+        "dy": 0,
+        "dw": 1.48,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5491:357769;2015:30513",
+        "name": "Label",
+        "role": "text",
+        "delta": 1.48,
+        "dx": 0,
+        "dy": 0,
+        "dw": 1.48,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5614:35319",
+        "name": "Tổng điểm",
+        "role": "text",
+        "delta": 1.08,
+        "dx": 0,
+        "dy": 0,
+        "dw": 1.08,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5614:35314",
+        "name": "Tổng số câu",
+        "role": "text",
+        "delta": 1.03,
+        "dx": 0,
+        "dy": 0,
+        "dw": 1.03,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5491:357672",
+        "name": "spacer",
+        "role": "container",
+        "delta": 0.77,
+        "dx": 0.36,
+        "dy": 0,
+        "dw": -0.77,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5609:33884",
+        "name": "Gia đình Lý Hoa có mấy người?",
+        "role": "text",
+        "delta": 0.56,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.56,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5491:357841",
+        "name": "Atom/Tag",
+        "role": "instance",
+        "delta": 0.5,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.5,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5491:357841;2015:30513",
+        "name": "Label",
+        "role": "text",
+        "delta": 0.5,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.5,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5491:357673",
+        "name": "Atom/Button",
+        "role": "instance",
+        "delta": 0.41,
+        "dx": -0.41,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5491:357673;1430:10764",
+        "name": "Button",
+        "role": "text",
+        "delta": 0.41,
+        "dx": -0.41,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5491:357675",
+        "name": "Atom/Button",
+        "role": "instance",
+        "delta": 0.41,
+        "dx": -0.41,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5491:357675;1430:10764",
+        "name": "Button",
+        "role": "text",
+        "delta": 0.41,
+        "dx": -0.41,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5614:35293",
+        "name": "Nút Thêm câu hỏi",
+        "role": "instance",
+        "delta": 0.41,
+        "dx": -0.41,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5614:35293;1430:10764",
+        "name": "Button",
+        "role": "text",
+        "delta": 0.41,
+        "dx": -0.41,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5491:357677",
+        "name": "Nút Generate",
+        "role": "instance",
+        "delta": 0.41,
+        "dx": -0.41,
+        "dy": 0,
+        "dw": 0.41,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5491:357677;1048:1238",
+        "name": "Button",
+        "role": "text",
+        "delta": 0.41,
+        "dx": -0.41,
+        "dy": 0,
+        "dw": 0.41,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5491:357669",
+        "name": "Tiêu đề",
+        "role": "container",
+        "delta": 0.36,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.36,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5491:357671",
+        "name": "Kiểm tra cuối kỳ 3 HSK1 · 30 phút",
+        "role": "text",
+        "delta": 0.36,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.36,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5491:357763",
+        "name": "Sắp xếp các từ thành câu đúng",
+        "role": "text",
+        "delta": 0.34,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.34,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5609:33904",
+        "name": "Sắp xếp các từ thành câu đúng",
+        "role": "text",
+        "delta": 0.34,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.34,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5491:357728",
+        "name": "Kiến thức / Kỹ năng",
+        "role": "text",
+        "delta": 0.25,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.25,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5491:357793",
+        "name": "Atom/Tag",
+        "role": "instance",
+        "delta": 0.22,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.22,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5491:357793;2015:30513",
+        "name": "Label",
+        "role": "text",
+        "delta": 0.22,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.22,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      }
+    ],
+    "maxDelta": 1.48,
+    "over": []
+  },
+  "failures": [],
+  "url": "http://localhost:3000/hoc-ky/kiem-tra/danh-sach-bai-tap",
+  "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
+  "consoleErrors": [],
+  "rootFound": true
+}

@@ -1,0 +1,30 @@
+{
+  "route": "/chi-tiet-lop/bai-hoc/buoc-2-ghi-chu-buoi-hoc",
+  "pageFile": "components/figma/gv-lop-030140/index.tsx",
+  "docFile": "docs/pages/chi-tiet-lop/bai-hoc/buoc-2-ghi-chu-buoi-hoc.md",
+  "sections": [
+    {
+      "nodeId": "5292:224395",
+      "component": "Body4",
+      "file": "components/figma/shared/Body4.tsx"
+    },
+    {
+      "nodeId": "5292:224396",
+      "component": "Maincontent",
+      "file": "components/figma/gv-lop-030140/Maincontent.tsx"
+    },
+    {
+      "nodeId": "5292:224638",
+      "component": "Header",
+      "file": "components/figma/gv-lop-030140/Header.tsx"
+    },
+    {
+      "nodeId": "5292:224780",
+      "component": "SidebarMenuTeacher",
+      "file": "components/figma/gv-lop-030140/SidebarMenuTeacher.tsx"
+    }
+  ],
+  "idAlias": {
+    "5292:224395": "769:30964"
+  }
+}

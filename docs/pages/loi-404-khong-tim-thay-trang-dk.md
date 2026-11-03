@@ -5,7 +5,7 @@
 > **Nguồn:** PLS-ICS T8/2026 › EMPTY / ERROR STATES › SYS-ERR-020000-DK — Lỗi 404 · Không tìm thấy trang (`5789:161384`, file `rRVs5HX0kIHffbS0V40djG`)  
 > **Route:** `/loi-404-khong-tim-thay-trang-dk`  
 > **Khung thiết kế:** 1440 × 810 px  
-> **Xuất lúc:** 2026-11-02T02:59:16.534Z  
+> **Xuất lúc:** 2026-11-03T02:57:37.235Z  
 > **Spec đầy đủ (giá trị chính xác từng node):** `../../.figma/pages/sys-err-020000-dk/page-spec.json`
 
 ## 1. Tổng quan
@@ -26,23 +26,24 @@ Nền trang: `#121213` (bg/canvas).
 
 | Token | Biến CSS | Giá trị | Trỏ tới | Bộ / mode |
 | --- | --- | --- | --- | --- |
-| `bg/brand-tint-strong` | `--bg-brand-tint-strong` | `#ffedd5` | color/extended/ffedd5 | Theme · Semantic / Light |
-| `bg/canvas` | `--bg-canvas` | `#f8fafc` | color/extended/f8fafc | Theme · Semantic / Light |
-| `bg/strong` | `--bg-strong` | `#e2e8f0` | color/border/default | Theme · Semantic / Light |
-| `bg/subtle` | `--bg-subtle` | `#f1f5f9` | color/surface/input | Theme · Semantic / Light |
+| `bg/brand-tint-strong` | `--bg-brand-tint-strong` | `#153020` |  | Theme · Semantic / Dark · Minimal |
+| `bg/canvas` | `--bg-canvas` | `#121213` |  | Theme · Semantic / Dark · Minimal |
+| `bg/strong` | `--bg-strong` | `#2a2a2e` |  | Theme · Semantic / Dark · Minimal |
+| `bg/subtle` | `--bg-subtle` | `#202023` |  | Theme · Semantic / Dark · Minimal |
 | `bố cục/khoảng cách khối` | `--bo-cuc-khoang-cach-khoi` | `16` | spacing/16 | Number Tokens / Mode 1 |
 | `bố cục/lề hai bên` | `--bo-cuc-le-hai-ben` | `16` | spacing/16 | Number Tokens / Mode 1 |
 | `bố cục/lề trên dưới` | `--bo-cuc-le-tren-duoi` | `24` | spacing/24 | Number Tokens / Mode 1 |
-| `border/default` | `--border-default` | `#e2e8f0` | color/border/default | Theme · Semantic / Light |
-| `border/strong` | `--border-strong` | `#cbd5e1` | color/extended/cbd5e1 | Theme · Semantic / Light |
-| `chrome/bg` | `--chrome-bg` | `#ff7700` | color/extended/ff7700 | Theme · Semantic / Light |
+| `border/default` | `--border-default` | `#27272a` |  | Theme · Semantic / Dark · Minimal |
+| `border/strong` | `--border-strong` | `#3f3f46` |  | Theme · Semantic / Dark · Minimal |
+| `brand/primary` | `--brand-primary` | `#16a34a` |  | Theme · Semantic / Dark · Minimal |
+| `chrome/bg` | `--chrome-bg` | `#0b0b0c` |  | Theme · Semantic / Dark · Minimal |
 | `color/brand/orange` | `--color-brand-orange` | `#e65100` |  | Color Tokens / Light |
 | `color/neutral/white` | `--color-neutral-white` | `#ffffff` |  | Color Tokens / Light |
 | `radius/8` | `--radius-8` | `8` |  | Number Tokens / Mode 1 |
 | `radius/full` | `--radius-full` | `9999` |  | Number Tokens / Mode 1 |
 | `spacing/4` | `--spacing-4` | `4` |  | Number Tokens / Mode 1 |
 | `spacing/8` | `--spacing-8` | `8` |  | Number Tokens / Mode 1 |
-| `theme/is-dark` | `--theme-is-dark` | `false` |  | Theme · Semantic / Light |
+| `theme/is-dark` | `--theme-is-dark` | `true` |  | Theme · Semantic / Dark · Minimal |
 
 **Style Figma đang dùng:**
 
@@ -66,7 +67,7 @@ Nền trang: `#121213` (bg/canvas).
 
 | Style | Font family | Cỡ / line-height | Độ đậm | Letter-spacing | Màu | Số lần | Ví dụ |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| — | Unbounded | 72 / 89px | 500 | 0 | #16a34a | 1 | “404” |
+| — | Unbounded | 72 / 89px | 500 | 0 | #16a34a (brand/primary) | 1 | “404” |
 | — | Unbounded | 24 / 30px | 500 | 0 | #ffffff (color/neutral/white) | 1 | “Không tìm thấy trang” |
 | `Body/17/Bold` | Afacad | 17 / 21px | 700 | 0 | #e65100 (color/brand/orange) | 1 | “Quay lại” |
 | `Body/17/Bold` | Afacad | 17 / 21px | 700 | 0 | #ffffff (color/neutral/white) | 1 | “Về trang chủ” |
@@ -149,7 +150,7 @@ Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí ·
   - [khối] **MainContent** — 1206×746 · @ (234, 64) abs · column gap 16 pad 24 16 24 16 justify CENTER align CENTER · bg #121213 (bg/canvas) · clip `5789:161520`
     - [khối] **Trạng thái · 404** — 460×459.81 [HUG×HUG] · @ (373, 143.1) flow · column gap 12 align CENTER · clip `5789:161854`
       - [icon] **Empty State / Illustration** ⟨Empty State / Illustration: Type=Không tìm thấy, Trung tâm=Sakumi⟩ — 260×198.81 · @ (100, 0) flow · file /figma/assets/aa0836527b64.svg `5789:161855`
-      - [chữ] “404” — 186×89 [HUG×HUG] · @ (137, 210.81) flow · Unbounded 72/89px 500 #16a34a · no-wrap `5789:161884`
+      - [chữ] “404” — 186×89 [HUG×HUG] · @ (137, 210.81) flow · Unbounded 72/89px 500 #16a34a (brand/primary) · no-wrap `5789:161884`
       - [chữ] “Không tìm thấy trang” — 313×30 [HUG×HUG] · @ (73.5, 311.81) flow · Unbounded 24/30px 500 #ffffff (color/neutral/white) · text-align center · no-wrap `5789:161885`
       - [chữ] “Trang bạn tìm không tồn tại, đã bị xoá hoặc đường dẫn không đúng. Kiểm tra lại đường dẫn hoặc quay về trang chủ.” — 460×46 [FIXED×HUG] · @ (0, 353.81) flow · Afacad 15/23px 400 #a1a1ab · text-align center `5789:161886`
       - [khối] **Nút** — 254×48 [HUG×HUG] · @ (103, 411.81) flow · row gap 12 pad 12 0 0 0 · clip `5789:161887`

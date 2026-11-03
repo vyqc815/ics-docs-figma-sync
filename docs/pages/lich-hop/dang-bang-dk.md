@@ -5,7 +5,7 @@
 > **Nguồn:** PLS-ICS T8/2026 ›     ├─ LỊCH HỌP › SP-LHP-020000-DK — Lịch họp / Dạng bảng (`4056:148138`, file `rRVs5HX0kIHffbS0V40djG`)  
 > **Route:** `/lich-hop/dang-bang-dk`  
 > **Khung thiết kế:** 1440 × 1205 px  
-> **Xuất lúc:** 2026-11-02T03:54:03.647Z  
+> **Xuất lúc:** 2026-11-03T01:09:30.606Z  
 > **Spec đầy đủ (giá trị chính xác từng node):** `../../../.figma/pages/sp-lhp-020000-dk/page-spec.json`
 
 ## 1. Tổng quan
@@ -25,21 +25,21 @@ Nền trang: `#121213` (bg/canvas).
 
 | Token | Biến CSS | Giá trị | Trỏ tới | Bộ / mode |
 | --- | --- | --- | --- | --- |
-| `bg/brand-tint` | `--bg-brand-tint` | `#fff7ed` | color/extended/fff7ed | Theme · Semantic / Light |
-| `bg/brand-tint-strong` | `--bg-brand-tint-strong` | `#ffedd5` | color/extended/ffedd5 | Theme · Semantic / Light |
-| `bg/canvas` | `--bg-canvas` | `#f8fafc` | color/extended/f8fafc | Theme · Semantic / Light |
-| `bg/strong` | `--bg-strong` | `#e2e8f0` | color/border/default | Theme · Semantic / Light |
-| `bg/subtle` | `--bg-subtle` | `#f1f5f9` | color/surface/input | Theme · Semantic / Light |
-| `bg/surface` | `--bg-surface` | `#ffffff` | color/neutral/white | Theme · Semantic / Light |
+| `bg/brand-tint` | `--bg-brand-tint` | `#102218` |  | Theme · Semantic / Dark · Minimal |
+| `bg/brand-tint-strong` | `--bg-brand-tint-strong` | `#153020` |  | Theme · Semantic / Dark · Minimal |
+| `bg/canvas` | `--bg-canvas` | `#121213` |  | Theme · Semantic / Dark · Minimal |
+| `bg/strong` | `--bg-strong` | `#2a2a2e` |  | Theme · Semantic / Dark · Minimal |
+| `bg/subtle` | `--bg-subtle` | `#202023` |  | Theme · Semantic / Dark · Minimal |
+| `bg/surface` | `--bg-surface` | `#18181a` |  | Theme · Semantic / Dark · Minimal |
 | `bố cục/lề trên dưới` | `--bo-cuc-le-tren-duoi` | `24` | spacing/24 | Number Tokens / Mode 1 |
-| `border/default` | `--border-default` | `#e2e8f0` | color/border/default | Theme · Semantic / Light |
-| `border/strong` | `--border-strong` | `#cbd5e1` | color/extended/cbd5e1 | Theme · Semantic / Light |
-| `border/subtle` | `--border-subtle` | `#f1f5f9` | color/border/subtle | Theme · Semantic / Light |
-| `brand/primary` | `--brand-primary` | `#e65100` | color/brand/orange | Theme · Semantic / Light |
-| `chrome/bg` | `--chrome-bg` | `#ff7700` | color/extended/ff7700 | Theme · Semantic / Light |
+| `border/default` | `--border-default` | `#27272a` |  | Theme · Semantic / Dark · Minimal |
+| `border/strong` | `--border-strong` | `#3f3f46` |  | Theme · Semantic / Dark · Minimal |
+| `border/subtle` | `--border-subtle` | `#1f1f22` |  | Theme · Semantic / Dark · Minimal |
+| `brand/primary` | `--brand-primary` | `#16a34a` |  | Theme · Semantic / Dark · Minimal |
+| `chrome/bg` | `--chrome-bg` | `#0b0b0c` |  | Theme · Semantic / Dark · Minimal |
 | `color/neutral/white` | `--color-neutral-white` | `#ffffff` |  | Color Tokens / Light |
-| `menu/select-bg` | `--menu-select-bg` | `rgba(255, 255, 255, 0)` |  | Theme · Semantic / Light |
-| `menu/select-border` | `--menu-select-border` | `rgba(255, 255, 255, 0.2)` |  | Theme · Semantic / Light |
+| `menu/select-bg` | `--menu-select-bg` | `#2a2a2e` | bg/strong | Theme · Semantic / Dark · Minimal |
+| `menu/select-border` | `--menu-select-border` | `#3f3f46` | border/strong | Theme · Semantic / Dark · Minimal |
 | `radius/12` | `--radius-12` | `12` |  | Number Tokens / Mode 1 |
 | `radius/6` | `--radius-6` | `6` |  | Number Tokens / Mode 1 |
 | `radius/64` | `--radius-64` | `64` |  | Number Tokens / Mode 1 |
@@ -47,9 +47,10 @@ Nền trang: `#121213` (bg/canvas).
 | `radius/full` | `--radius-full` | `9999` |  | Number Tokens / Mode 1 |
 | `spacing/12` | `--spacing-12` | `12` |  | Number Tokens / Mode 1 |
 | `spacing/8` | `--spacing-8` | `8` |  | Number Tokens / Mode 1 |
-| `text/primary` | `--text-primary` | `#334155` | color/text/primary | Theme · Semantic / Light |
-| `text/secondary` | `--text-secondary` | `#64748b` | color/text/secondary | Theme · Semantic / Light |
-| `theme/is-dark` | `--theme-is-dark` | `false` |  | Theme · Semantic / Light |
+| `text/on-brand` | `--text-on-brand` | `#ffffff` |  | Theme · Semantic / Dark · Minimal |
+| `text/primary` | `--text-primary` | `#ededef` |  | Theme · Semantic / Dark · Minimal |
+| `text/secondary` | `--text-secondary` | `#a1a1aa` |  | Theme · Semantic / Dark · Minimal |
+| `theme/is-dark` | `--theme-is-dark` | `true` |  | Theme · Semantic / Dark · Minimal |
 
 **Style Figma đang dùng:**
 
@@ -85,7 +86,7 @@ Nền trang: `#121213` (bg/canvas).
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | `Body/23/Bold` | Afacad | 23 / 29px | 700 | 0 | #ededef (text/primary) | 6 | “26” |
 | — | Unbounded | 17 / 26px | 600 · case title | 0 | #ededef (text/primary) | 1 | “Danh sách cuộc họp” |
-| `Body/17/Bold` | Afacad | 17 / 21px | 700 | 0 | #ffffff | 1 | “28” |
+| `Body/17/Bold` | Afacad | 17 / 21px | 700 | 0 | #ffffff (text/on-brand) | 1 | “28” |
 | — | Afacad | 16 / 20px | 700 | 0 | #ededef (text/primary) | 4 | “[Trước Buổi 10] Hướng dẫn luyện nghe - …” |
 | `Label/15/Bold` | Afacad | 15 / 19px | 700 · case upper | 0 | #a1a1aa (text/secondary) | 7 | “TH 2” |
 | `Body/15/Medium` | Afacad | 15 / 19px | 500 | 0 | #ededef (text/primary) | 3 | “Trạng thái” |
@@ -253,7 +254,7 @@ Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí ·
             - [khối] **Ngày · TH 4 28** — 155.71×72 [FILL×HUG] · @ (377.43, 0) flow · column gap 2 pad 12 0 12 0 align CENTER · clip `4056:148300`
               - [chữ] “TH 4” — 27×19 [HUG×HUG] · @ (64.36, 12) flow · Afacad 15/19px 700 #a1a1aa (text/secondary) case upper · no-wrap `4056:148301`
               - [khối] **Frame 427323675** — 68×27 [HUG×HUG] · @ (43.86, 33) flow · row gap 10 pad 3 8 3 8 justify CENTER align CENTER · bg #16a34a (brand/primary) · radius 8px `4056:148302`
-                - [chữ] “28” — 52×21 [FIXED×HUG] · @ (8, 3) flow · Afacad 17/21px 700 #ffffff · text-align center `4056:148303`
+                - [chữ] “28” — 52×21 [FIXED×HUG] · @ (8, 3) flow · Afacad 17/21px 700 #ffffff (text/on-brand) · text-align center `4056:148303`
             - [khối] **Ngày · TH 5 29** — 155.71×74 [FILL×HUG] · @ (533.14, 0) flow · column gap 2 pad 12 0 12 0 align CENTER · clip `4056:148304`
               - [chữ] “TH 5” — 27×19 [HUG×HUG] · @ (64.36, 12) flow · Afacad 15/19px 700 #a1a1aa (text/secondary) case upper · no-wrap `4056:148305`
               - [chữ] “29” — 24×29 [HUG×HUG] · @ (65.86, 33) flow · Afacad 23/29px 700 #ededef (text/primary) · no-wrap `4056:148306`

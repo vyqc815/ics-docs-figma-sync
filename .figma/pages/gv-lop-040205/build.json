@@ -1,0 +1,27 @@
+{
+  "route": "/chi-tiet-lop/bai-tap-va-kiem-tra/kiem-tra-vua-giao",
+  "pageFile": "components/figma/gv-lop-040205/index.tsx",
+  "docFile": "docs/pages/chi-tiet-lop/bai-tap-va-kiem-tra/kiem-tra-vua-giao.md",
+  "sections": [
+    {
+      "nodeId": "7074:398520",
+      "component": "Body",
+      "file": "components/figma/gv-lop-040205/Body.tsx"
+    },
+    {
+      "nodeId": "7074:398810",
+      "component": "Header",
+      "file": "components/figma/gv-lop-040205/Header.tsx"
+    },
+    {
+      "nodeId": "7074:398953",
+      "component": "SidebarMenuTeacher",
+      "file": "components/figma/gv-lop-040205/SidebarMenuTeacher.tsx"
+    },
+    {
+      "nodeId": "7074:399738",
+      "component": "ToastGiaoBaiKiemTraThanhCong",
+      "file": "components/figma/gv-lop-040205/ToastGiaoBaiKiemTraThanhCong.tsx"
+    }
+  ]
+}

@@ -5,7 +5,7 @@
 > **Nguồn:** PLS-ICS T8/2026 ›             ├─ Cài đặt › ADM-LOP-040400 — Lớp học / Cài đặt / Trợ giảng & support (`2384:51368`, file `rRVs5HX0kIHffbS0V40djG`)  
 > **Route:** `/lop-hoc/cai-dat/tro-giang-support`  
 > **Khung thiết kế:** 1440 × 860 px  
-> **Xuất lúc:** 2026-11-02T03:37:11.920Z  
+> **Xuất lúc:** 2026-11-03T03:27:42.214Z  
 > **Spec đầy đủ (giá trị chính xác từng node):** `../../../../.figma/pages/adm-lop-040400/page-spec.json`
 
 ## 1. Tổng quan
@@ -26,11 +26,15 @@ Nền trang: `#f8fafc`.
 
 | Token | Biến CSS | Giá trị | Trỏ tới | Bộ / mode |
 | --- | --- | --- | --- | --- |
+| `bg/canvas` | `--bg-canvas` | `#f8fafc` | color/extended/f8fafc | Theme · Semantic / Light |
+| `bg/surface` | `--bg-surface` | `#ffffff` | color/neutral/white | Theme · Semantic / Light |
+| `border/subtle` | `--border-subtle` | `#f1f5f9` | color/border/subtle | Theme · Semantic / Light |
 | `color/border/default` | `--color-border-default` | `#e2e8f0` |  | Color Tokens / Light |
 | `color/brand/orange` | `--color-brand-orange` | `#e65100` |  | Color Tokens / Light |
 | `color/extended/cbd5e1` | `--color-extended-cbd5e1` | `#cbd5e1` |  | Color Tokens / Light |
 | `color/extended/fed7aa` | `--color-extended-fed7aa` | `#fed7aa` |  | Color Tokens / Light |
 | `color/extended/fff5ec` | `--color-extended-fff5ec` | `#fff5ec` |  | Color Tokens / Light |
+| `color/extended/fffaf8` | `--color-extended-fffaf8` | `#fffaf8` |  | Color Tokens / Light |
 | `color/neutral/white` | `--color-neutral-white` | `#ffffff` |  | Color Tokens / Light |
 | `color/text/primary` | `--color-text-primary` | `#334155` |  | Color Tokens / Light |
 | `color/text/secondary` | `--color-text-secondary` | `#64748b` |  | Color Tokens / Light |
@@ -84,7 +88,7 @@ Nền trang: `#f8fafc`.
 Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí · bố cục · style`. Dòng đầu tiên là chính frame trang (gốc). Tên layer nằm trong `**…**`, chữ hiển thị nằm trong `“…”`, giá trị CSS nguyên văn nằm trong backtick: dấu `·` hay `—` **bên trong** các cặp đó là nội dung, chỉ dấu ` · ` bên ngoài mới ngăn cách các trường. Toạ độ `@ (x, y)` tính từ góc trên-trái của layer cha; layer **flow** do auto layout của cha xếp, layer **abs** đặt tuyệt đối. Các layer cùng cấp được liệt kê **theo thứ tự vẽ của Figma: layer sau nằm đè lên layer trước**. ID ở cuối dòng là node ID trong Figma.
 
 - [trang] **ADM-LOP-040400 — Lớp học / Cài đặt / Trợ giảng & support** — 1440×860 · bg #f8fafc `2384:51368`
-  - [khối] **MainContent** — 1140×796 · @ (300, 64) abs · column gap 12 pad 16 24 16 24 · bg #ffffff · clip `2384:51419`
+  - [khối] **MainContent** — 1140×796 · @ (300, 64) abs · column gap 12 pad 16 24 16 24 · bg #ffffff (bg/surface) · clip `2384:51419`
     - [khối] **Nav - Tabs** — 764×36 [HUG×HUG] · @ (24, 16) flow · row gap 12 align CENTER `2384:54701`
       - [instance] **Atom/Side Tab** ⟨Atom/Side Tab: Có số đếm=false, State=Inactive, Icon=No, Kiểu=Gạch trái⟩ — 87×36 [HUG×HUG] · @ (0, 0) flow · row gap 8 pad 8 12 8 12 align CENTER · radius 6px `2384:54702`
         - [khối] **Container** — 63×20 [HUG×HUG] · @ (12, 8) flow · row `I2384:54702;2177:28927`
@@ -114,10 +118,10 @@ Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí ·
     - [khối] **Frame 427321948** — 301×26 [FIXED×HUG] · @ (24, 64) flow · row gap 8 align CENTER `2384:54727`
       - [chữ] “Phụ trách lớp” — 140×26 [HUG×HUG] · @ (0, 0) flow · Unbounded 17/26px 600 #334155 (color/text/primary) · no-wrap `2384:54728`
       - [icon] **Atom/Icon Button** ⟨Atom/Icon Button: Icon=Plus Button Add⟩ — 24×24 · @ (148, 1) flow · file /figma/assets/686285254d4b.svg covers (-2, -2) 30×30 `2384:54729`
-    - [khối] **Section - Bảng dữ liệu chi tiết các lớp học** — 1092×164 [FILL×HUG] · @ (24, 102) flow · column · bg #ffffff · radius 12px · border 1px solid #e2e8f0 (color/border/default) · shadow 0 1.13px 2.25px 0 rgba(0, 0, 0, 0.05) `2384:54733`
+    - [khối] **Section - Bảng dữ liệu chi tiết các lớp học** — 1092×164 [FILL×HUG] · @ (24, 102) flow · column · bg #ffffff (bg/surface) · radius 12px · border 1px solid #e2e8f0 (color/border/default) · shadow 0 1.13px 2.25px 0 rgba(0, 0, 0, 0.05) `2384:54733`
       - [khối] **Table Scroll Container** — 1090×162 [FILL×HUG] · @ (1, 1) flow · column · clip `2384:54734`
         - [khối] **Table** — 1090×162 [FILL×HUG] · @ (0, 0) flow · column gap -1 `2384:54735`
-          - [khối] **Frame 427321948** — 1090×36 [FILL×HUG] · @ (0, 0) flow · row gap 24 pad 0 20 0 20 align CENTER · bg #f8fafc · radius 12px 12px 0 0 · border 0 0 1px 0 solid #e2e8f0 (color/border/default) `2384:54736`
+          - [khối] **Frame 427321948** — 1090×36 [FILL×HUG] · @ (0, 0) flow · row gap 24 pad 0 20 0 20 align CENTER · bg #f8fafc (bg/canvas) · radius 12px 12px 0 0 · border 0 0 1px 0 solid #e2e8f0 (color/border/default) `2384:54736`
             - [khối] **Frame 427326027** — 812×35 [FILL×HUG] · @ (20, 0) flow · row gap 12 align CENTER `2384:54737`
               - [khối] **Cell** — 812×35 [FILL×HUG] · @ (0, 0) flow · column pad 8 0 8 0 justify CENTER · radius 12px 0 0 0 `2384:54738`
                 - [chữ] “Tên” — 812×19 [FILL×HUG] · @ (0, 8) flow · Afacad 15/19px 700 #64748b (color/text/secondary) case upper `2384:54739`
@@ -126,7 +130,7 @@ Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí ·
             - [khối] **Cột thao tác** — 70×1 · @ (1000, 17) flow · clip · trống `5300:35256`
           - [khối] **Table Body** — 1090×127 [FILL×HUG] · @ (0, 35) flow · column · border 1px 0 0 0 solid #e2e8f0 (color/border/default) `2384:54744`
             - [khối] **Teachers Row List** — 1090×126 [FILL×HUG] · @ (0, 1) flow · column `2384:54745`
-              - [khối] **Frame 427321961** — 1090×63 [FILL×HUG] · @ (0, 0) flow · row gap 24 pad 12 20 12 20 align CENTER · border 1px 0 0 0 solid #f1f5f9 `2384:54746`
+              - [khối] **Frame 427321961** — 1090×63 [FILL×HUG] · @ (0, 0) flow · row gap 24 pad 12 20 12 20 align CENTER · border 1px 0 0 0 solid #f1f5f9 (border/subtle) `2384:54746`
                 - [khối] **Container** — 812×38 [FILL×HUG] · @ (20, 13) flow · row gap 10 align CENTER `2384:54747`
                   - [khối] **Background+Shadow** — 32×32 · @ (0, 3) flow · row justify CENTER align CENTER · bg #334155 · radius 9999px · shadow 0 1px 2px -1px rgba(0, 0, 0, 0.1), 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 0 0 2px #fdba74 · clip `2384:54748`
                     - [khối] **Container** — 16×19 [HUG×HUG] · @ (8, 6.5) flow · column `2384:54749`
@@ -139,7 +143,7 @@ Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí ·
                 - [icon] **Frame 1171274935** — 120×24 · @ (856, 20) flow · file /figma/assets/505fdd9ace22.svg covers (0, -2) 120×30 `2384:54757`
                 - [icon] **Action Icon** ⟨Action Icon: Icon=Delete, Size=18⟩ — 18×18 · @ (1000, 23) flow · file /figma/assets/de2cda17d469.svg `2384:54759`
                 - [khối] **SVG** — 28×28 · @ (1042, 18) flow · row gap 10 justify CENTER align CENTER · clip · trống `2384:54760`
-              - [khối] **Frame 427321972** — 1090×63 [FILL×HUG] · @ (0, 63) flow · row gap 24 pad 12 20 12 20 align CENTER · bg #fffaf8 · radius 0 0 12px 12px · border 1px 0 0 0 solid #f1f5f9 `2384:54763`
+              - [khối] **Frame 427321972** — 1090×63 [FILL×HUG] · @ (0, 63) flow · row gap 24 pad 12 20 12 20 align CENTER · bg #fffaf8 (color/extended/fffaf8) · radius 0 0 12px 12px · border 1px 0 0 0 solid #f1f5f9 (border/subtle) `2384:54763`
                 - [khối] **Container** — 812×38 [FILL×HUG] · @ (20, 13) flow · row gap 10 align CENTER `2384:54764`
                   - [khối] **Background+Shadow** — 32×32 · @ (0, 3) flow · row justify CENTER align CENTER · bg #334155 · radius 9999px · shadow 0 1px 2px -1px rgba(0, 0, 0, 0.1), 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 0 0 2px #fdba74 · clip `2384:54765`
                     - [khối] **Container** — 17×19 [HUG×HUG] · @ (7.5, 6.5) flow · column `2384:54766`
@@ -157,10 +161,10 @@ Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí ·
     - [khối] **Frame 427321949** — 301×24 [FIXED×HUG] · @ (24, 278) flow · row gap 8 align CENTER `2384:54800`
       - [chữ] “Support” — 77×23 [HUG×HUG] · @ (0, 0.5) flow · Unbounded 15/23px 600 #334155 (color/text/primary) case title · no-wrap `2384:54801`
       - [icon] **Atom/Icon Button** ⟨Atom/Icon Button: Icon=Plus Button Add⟩ — 24×24 · @ (85, 0) flow · file /figma/assets/686285254d4b.svg covers (-2, -2) 30×30 `2384:54802`
-    - [khối] **Section - Bảng dữ liệu chi tiết các lớp học** — 1092×164 [FILL×HUG] · @ (24, 314) flow · column · bg #ffffff · radius 12px · border 1px solid #e2e8f0 (color/border/default) · shadow 0 1.13px 2.25px 0 rgba(0, 0, 0, 0.05) `2384:54803`
+    - [khối] **Section - Bảng dữ liệu chi tiết các lớp học** — 1092×164 [FILL×HUG] · @ (24, 314) flow · column · bg #ffffff (bg/surface) · radius 12px · border 1px solid #e2e8f0 (color/border/default) · shadow 0 1.13px 2.25px 0 rgba(0, 0, 0, 0.05) `2384:54803`
       - [khối] **Table Scroll Container** — 1090×162 [FILL×HUG] · @ (1, 1) flow · column · clip `2384:54804`
         - [khối] **Table** — 1090×162 [FILL×HUG] · @ (0, 0) flow · column gap -1 `2384:54805`
-          - [khối] **Frame 427321948** — 1090×36 [FILL×HUG] · @ (0, 0) flow · row gap 24 pad 0 20 0 20 align CENTER · bg #f8fafc · radius 12px 12px 0 0 · border 0 0 1px 0 solid #e2e8f0 (color/border/default) `2384:54806`
+          - [khối] **Frame 427321948** — 1090×36 [FILL×HUG] · @ (0, 0) flow · row gap 24 pad 0 20 0 20 align CENTER · bg #f8fafc (bg/canvas) · radius 12px 12px 0 0 · border 0 0 1px 0 solid #e2e8f0 (color/border/default) `2384:54806`
             - [khối] **Frame 427326027** — 812×35 [FILL×HUG] · @ (20, 0) flow · row gap 12 align CENTER `2384:54807`
               - [khối] **Cell** — 812×35 [FILL×HUG] · @ (0, 0) flow · column pad 8 0 8 0 justify CENTER · radius 12px 0 0 0 `2384:54808`
                 - [chữ] “Tên” — 812×19 [FILL×HUG] · @ (0, 8) flow · Afacad 15/19px 700 #64748b (color/text/secondary) case upper `2384:54809`
@@ -169,7 +173,7 @@ Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí ·
             - [khối] **Cột thao tác** — 70×1 · @ (1000, 17) flow · clip · trống `5300:35406`
           - [khối] **Table Body** — 1090×127 [FILL×HUG] · @ (0, 35) flow · column · border 1px 0 0 0 solid #e2e8f0 (color/border/default) `2384:54814`
             - [khối] **Teachers Row List** — 1090×126 [FILL×HUG] · @ (0, 1) flow · column `2384:54815`
-              - [khối] **Frame 427321961** — 1090×63 [FILL×HUG] · @ (0, 0) flow · row gap 24 pad 12 20 12 20 align CENTER · border 1px 0 0 0 solid #f1f5f9 `2384:54816`
+              - [khối] **Frame 427321961** — 1090×63 [FILL×HUG] · @ (0, 0) flow · row gap 24 pad 12 20 12 20 align CENTER · border 1px 0 0 0 solid #f1f5f9 (border/subtle) `2384:54816`
                 - [khối] **Container** — 812×38 [FILL×HUG] · @ (20, 13) flow · row gap 10 align CENTER `2384:54817`
                   - [khối] **Background+Shadow** — 32×32 · @ (0, 3) flow · row justify CENTER align CENTER · bg #334155 · radius 9999px · shadow 0 1px 2px -1px rgba(0, 0, 0, 0.1), 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 0 0 2px #fdba74 · clip `2384:54818`
                     - [khối] **Container** — 16×19 [HUG×HUG] · @ (8, 6.5) flow · column `2384:54819`
@@ -182,7 +186,7 @@ Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí ·
                 - [icon] **Frame 1171274935** — 120×24 · @ (856, 20) flow · file /figma/assets/505fdd9ace22.svg covers (0, -2) 120×30 `2384:54827`
                 - [icon] **Action Icon** ⟨Action Icon: Icon=Delete, Size=18⟩ — 18×18 · @ (1000, 23) flow · file /figma/assets/de2cda17d469.svg `2384:54829`
                 - [khối] **SVG** — 28×28 · @ (1042, 18) flow · row gap 10 justify CENTER align CENTER · clip · trống `2384:54830`
-              - [khối] **Frame 427321972** — 1090×63 [FILL×HUG] · @ (0, 63) flow · row gap 24 pad 12 20 12 20 align CENTER · bg #fffaf8 · radius 0 0 12px 12px · border 1px 0 0 0 solid #f1f5f9 `2384:54833`
+              - [khối] **Frame 427321972** — 1090×63 [FILL×HUG] · @ (0, 63) flow · row gap 24 pad 12 20 12 20 align CENTER · bg #fffaf8 (color/extended/fffaf8) · radius 0 0 12px 12px · border 1px 0 0 0 solid #f1f5f9 (border/subtle) `2384:54833`
                 - [khối] **Container** — 812×38 [FILL×HUG] · @ (20, 13) flow · row gap 10 align CENTER `2384:54834`
                   - [khối] **Background+Shadow** — 32×32 · @ (0, 3) flow · row justify CENTER align CENTER · bg #334155 · radius 9999px · shadow 0 1px 2px -1px rgba(0, 0, 0, 0.1), 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 0 0 2px #fdba74 · clip `2384:54835`
                     - [khối] **Container** — 15×19 [HUG×HUG] · @ (8.5, 6.5) flow · column `2384:54836`

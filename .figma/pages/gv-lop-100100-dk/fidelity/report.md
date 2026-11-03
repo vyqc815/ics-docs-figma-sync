@@ -1,8 +1,8 @@
 # Fidelity: GV-LOP-100100-DK — Chi tiết lớp / Đánh giá / Không có quyền truy cập
 
-- URL: `http://localhost:3108/chi-tiet-lop/danh-gia/khong-co-quyen-truy-cap-dk`
+- URL: `http://localhost:3000/chi-tiet-lop/danh-gia/khong-co-quyen-truy-cap-dk`
 - Verdict: **PASS**
-- Pixels outside text: **0.001%** differ (limit 0.5%); all pixels: 0.155%; inside text boxes: 3.377% (glyph rendering)
+- Pixels outside text: **0.001%** differ (limit 0.5%); all pixels: 0.124%; inside text boxes: 2.714% (glyph rendering)
 - Boxes: 104/104 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 100, ≤1px: 102, ≤2px: 104, ≤4px: 104, >4px: 0
 
 ## Pixel regions (largest first)
@@ -16,7 +16,6 @@
 
 | Text | Differing |
 | --- | --- |
-| Label (`I4333:16852;2245:87914`) | 15.8% |
 | Button (`I4333:17362;1048:1238`) | 9% |
 | Label (`I4899:187852;2245:87908`) | 8.5% |
 | Label (`I4333:16842;2245:87908`) | 6.3% |
@@ -31,6 +30,7 @@
 | Vai trò (`I4899:187590;4899:187330`) | 1.6% |
 | Label (`I4333:16847;2245:87908`) | 1.4% |
 | GV.dacnhan@gmail.com (`I4333:16783;2008:31783`) | 1.3% |
+| Label (`I4333:16841;2245:87908`) | 1.3% |
 
 ## Largest box differences
 

@@ -1,6 +1,6 @@
 # Fidelity: ADM-TL-010000 — Tài liệu / Chi tiết tài liệu
 
-- URL: `http://localhost:3108/tai-lieu/chi-tiet-tai-lieu`
+- URL: `http://localhost:3000/tai-lieu/chi-tiet-tai-lieu`
 - Verdict: **PASS**
 - Pixels outside text: **0.04%** differ (limit 0.5%); all pixels: 0.105%; inside text boxes: 0.255% (glyph rendering)
 - Boxes: 213/213 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 212, ≤1px: 212, ≤2px: 213, ≤4px: 213, >4px: 0

@@ -1,8 +1,8 @@
 # Fidelity: CD-KH-020100-DK — Chi tiết khoá học / Tổng quan
 
-- URL: `http://localhost:3108/chi-tiet-khoa-hoc/tong-quan-dk`
+- URL: `http://localhost:3000/chi-tiet-khoa-hoc/tong-quan-dk`
 - Verdict: **PASS**
-- Pixels outside text: **0.083%** differ (limit 0.5%); all pixels: 0.562%; inside text boxes: 2.691% (glyph rendering)
+- Pixels outside text: **0.083%** differ (limit 0.5%); all pixels: 0.538%; inside text boxes: 2.554% (glyph rendering)
 - Boxes: 389/389 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 388, ≤1px: 389, ≤2px: 389, ≤4px: 389, >4px: 0
 
 ## Pixel regions (largest first)
@@ -44,7 +44,7 @@
 
 | Text | Differing |
 | --- | --- |
-| Label (`I6015:66515;4901:220865;2245:87914`) | 25.3% |
+| Label (`I6015:66515;4901:220865;2245:87914`) | 11.7% |
 | 270 (`6015:66223`) | 9.7% |
 | 720 (`6015:66343`) | 8.4% |
 | 320 (`6015:66383`) | 7.5% |

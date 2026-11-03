@@ -1,8 +1,8 @@
 # Fidelity: CD-KH-050300-DK — Kỹ năng (S6) / Viết
 
-- URL: `http://localhost:3108/ky-nang-s6/viet-dk`
+- URL: `http://localhost:3000/ky-nang-s6/viet-dk`
 - Verdict: **PASS**
-- Pixels outside text: **0.214%** differ (limit 0.5%); all pixels: 0.432%; inside text boxes: 1.012% (glyph rendering)
+- Pixels outside text: **0.214%** differ (limit 0.5%); all pixels: 0.4%; inside text boxes: 0.861% (glyph rendering)
 - Boxes: 415/415 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 411, ≤1px: 415, ≤2px: 415, ≤4px: 415, >4px: 0
 
 ## Pixel regions (largest first)
@@ -44,10 +44,10 @@
 
 | Text | Differing |
 | --- | --- |
-| Label (`I6646:125915;6579:362145;2245:87914`) | 23% |
 | Label (`I6646:125915;6579:362143;2245:87908`) | 13.1% |
 | Button (`I6646:125600;1048:1240`) | 8.1% |
 | Button (`I6646:125601;1048:1240`) | 5.8% |
+| Label (`I6646:125915;6579:362145;2245:87914`) | 4.8% |
 | Label (`I6646:125915;6579:362150;2245:87908`) | 4.8% |
 | Tất cả cụm (`6935:378192`) | 4.6% |
 | Placeholder (`I6935:378263;5056:365853`) | 4.4% |

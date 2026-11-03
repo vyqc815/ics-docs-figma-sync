@@ -1,0 +1,17 @@
+{
+  "route": "/hoa-don/popup-ho-so-hoc-vien/ghi-chu/trong-dk",
+  "pageFile": "components/figma/adm-hd-010224-dk/index.tsx",
+  "docFile": "docs/pages/hoa-don/popup-ho-so-hoc-vien/ghi-chu/trong-dk.md",
+  "sections": [
+    {
+      "nodeId": "4056:131900",
+      "component": "PopupHeader4",
+      "file": "components/figma/shared/PopupHeader4.tsx"
+    },
+    {
+      "nodeId": "4056:131901",
+      "component": "Body",
+      "file": "components/figma/adm-hd-010224-dk/Body.tsx"
+    }
+  ]
+}

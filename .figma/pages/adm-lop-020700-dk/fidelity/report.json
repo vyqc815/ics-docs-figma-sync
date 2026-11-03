@@ -12,19 +12,13 @@
   "pixels": {
     "width": 1440,
     "height": 2191,
-    "mismatched": 7290,
-    "percent": 0.231,
+    "mismatched": 6829,
+    "percent": 0.216,
     "shapePercent": 0.001,
-    "textPercent": 1.037,
+    "textPercent": 0.971,
     "sizeMismatch": false
   },
   "textNodes": [
-    {
-      "id": "I4056:114131;2245:87914",
-      "name": "Label",
-      "pixels": 507,
-      "percent": 21.1
-    },
     {
       "id": "I4056:114127;2245:87908",
       "name": "Label",
@@ -108,6 +102,12 @@
       "name": "Label",
       "pixels": 104,
       "percent": 4.3
+    },
+    {
+      "id": "I4056:113994;1055:2269",
+      "name": "Badge",
+      "pixels": 21,
+      "percent": 4.2
     }
   ],
   "regions": [
@@ -465,7 +465,7 @@
     "over": []
   },
   "failures": [],
-  "url": "http://localhost:3108/chi-tiet-lop-hoc/quy-trinh-lop-dk",
+  "url": "http://localhost:3000/chi-tiet-lop-hoc/quy-trinh-lop-dk",
   "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
   "consoleErrors": [],
   "rootFound": true

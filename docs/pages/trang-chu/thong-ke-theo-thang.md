@@ -5,7 +5,7 @@
 > **Nguồn:** PLS-ICS T8/2026 ›     ├─ TRANG CHỦ › CH-TC-010000 — Trang chủ / Thống kê theo tháng (`7015:11855`, file `rRVs5HX0kIHffbS0V40djG`)  
 > **Route:** `/trang-chu/thong-ke-theo-thang`  
 > **Khung thiết kế:** 1440 × 866 px  
-> **Xuất lúc:** 2026-11-02T03:53:51.112Z  
+> **Xuất lúc:** 2026-11-03T01:09:17.915Z  
 > **Spec đầy đủ (giá trị chính xác từng node):** `../../../.figma/pages/ch-tc-010000-2/page-spec.json`
 
 ## 1. Tổng quan

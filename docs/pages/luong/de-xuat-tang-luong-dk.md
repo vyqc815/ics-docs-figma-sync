@@ -5,7 +5,7 @@
 > **Nguồn:** PLS-ICS T8/2026 ›         └─ ĐỀ XUẤT TĂNG LƯƠNG › ADM-LGV-020000-DK — Lương / Đề xuất tăng lương (`4899:118092`, file `rRVs5HX0kIHffbS0V40djG`)  
 > **Route:** `/luong/de-xuat-tang-luong-dk`  
 > **Khung thiết kế:** 1440 × 810 px  
-> **Xuất lúc:** 2026-11-02T03:51:16.093Z  
+> **Xuất lúc:** 2026-11-03T01:06:42.921Z  
 > **Spec đầy đủ (giá trị chính xác từng node):** `../../../.figma/pages/adm-lgv-020000-dk/page-spec.json`
 
 ## 1. Tổng quan
@@ -26,19 +26,19 @@ Nền trang: `#18181a` (bg/surface).
 
 | Token | Biến CSS | Giá trị | Trỏ tới | Bộ / mode |
 | --- | --- | --- | --- | --- |
-| `bg/brand-tint` | `--bg-brand-tint` | `#fff7ed` | color/extended/fff7ed | Theme · Semantic / Light |
-| `bg/canvas` | `--bg-canvas` | `#f8fafc` | color/extended/f8fafc | Theme · Semantic / Light |
-| `bg/danger` | `--bg-danger` | `#fef2f2` | color/extended/fef2f2 | Theme · Semantic / Light |
-| `bg/strong` | `--bg-strong` | `#e2e8f0` | color/border/default | Theme · Semantic / Light |
-| `bg/subtle` | `--bg-subtle` | `#f1f5f9` | color/surface/input | Theme · Semantic / Light |
-| `bg/success` | `--bg-success` | `#ecfdf5` | color/extended/ecfdf5 | Theme · Semantic / Light |
-| `bg/surface` | `--bg-surface` | `#ffffff` | color/neutral/white | Theme · Semantic / Light |
+| `bg/brand-tint` | `--bg-brand-tint` | `#102218` |  | Theme · Semantic / Dark · Minimal |
+| `bg/canvas` | `--bg-canvas` | `#121213` |  | Theme · Semantic / Dark · Minimal |
+| `bg/danger` | `--bg-danger` | `#2a1618` |  | Theme · Semantic / Dark · Minimal |
+| `bg/strong` | `--bg-strong` | `#2a2a2e` |  | Theme · Semantic / Dark · Minimal |
+| `bg/subtle` | `--bg-subtle` | `#202023` |  | Theme · Semantic / Dark · Minimal |
+| `bg/success` | `--bg-success` | `#12251a` |  | Theme · Semantic / Dark · Minimal |
+| `bg/surface` | `--bg-surface` | `#18181a` |  | Theme · Semantic / Dark · Minimal |
 | `bố cục/lề trên dưới` | `--bo-cuc-le-tren-duoi` | `24` | spacing/24 | Number Tokens / Mode 1 |
-| `border/default` | `--border-default` | `#e2e8f0` | color/border/default | Theme · Semantic / Light |
-| `border/strong` | `--border-strong` | `#cbd5e1` | color/extended/cbd5e1 | Theme · Semantic / Light |
-| `border/subtle` | `--border-subtle` | `#f1f5f9` | color/border/subtle | Theme · Semantic / Light |
-| `brand/primary` | `--brand-primary` | `#e65100` | color/brand/orange | Theme · Semantic / Light |
-| `chrome/bg` | `--chrome-bg` | `#ff7700` | color/extended/ff7700 | Theme · Semantic / Light |
+| `border/default` | `--border-default` | `#27272a` |  | Theme · Semantic / Dark · Minimal |
+| `border/strong` | `--border-strong` | `#3f3f46` |  | Theme · Semantic / Dark · Minimal |
+| `border/subtle` | `--border-subtle` | `#1f1f22` |  | Theme · Semantic / Dark · Minimal |
+| `brand/primary` | `--brand-primary` | `#16a34a` |  | Theme · Semantic / Dark · Minimal |
+| `chrome/bg` | `--chrome-bg` | `#0b0b0c` |  | Theme · Semantic / Dark · Minimal |
 | `color/extended/ffedd5` | `--color-extended-ffedd5` | `#ffedd5` |  | Color Tokens / Light |
 | `color/neutral/white` | `--color-neutral-white` | `#ffffff` |  | Color Tokens / Light |
 | `radius/12` | `--radius-12` | `12` |  | Number Tokens / Mode 1 |
@@ -48,13 +48,13 @@ Nền trang: `#18181a` (bg/surface).
 | `spacing/12` | `--spacing-12` | `12` |  | Number Tokens / Mode 1 |
 | `spacing/4` | `--spacing-4` | `4` |  | Number Tokens / Mode 1 |
 | `spacing/8` | `--spacing-8` | `8` |  | Number Tokens / Mode 1 |
-| `status/danger-text` | `--status-danger-text` | `#e11d48` | color/semantic/error-text | Theme · Semantic / Light |
-| `text/muted` | `--text-muted` | `#cbd5e1` | color/text/muted | Theme · Semantic / Light |
-| `text/primary` | `--text-primary` | `#334155` | color/text/primary | Theme · Semantic / Light |
-| `text/secondary` | `--text-secondary` | `#64748b` | color/text/secondary | Theme · Semantic / Light |
-| `theme/is-dark` | `--theme-is-dark` | `false` |  | Theme · Semantic / Light |
-| `tone/yellow/bg` | `--tone-yellow-bg` | `#fef3c7` | color/extended/fef3c7 | Theme · Semantic / Light |
-| `tone/yellow/text` | `--tone-yellow-text` | `#92400e` |  | Theme · Semantic / Light |
+| `status/danger-text` | `--status-danger-text` | `#f87171` |  | Theme · Semantic / Dark · Minimal |
+| `text/muted` | `--text-muted` | `#71717a` |  | Theme · Semantic / Dark · Minimal |
+| `text/primary` | `--text-primary` | `#ededef` |  | Theme · Semantic / Dark · Minimal |
+| `text/secondary` | `--text-secondary` | `#a1a1aa` |  | Theme · Semantic / Dark · Minimal |
+| `theme/is-dark` | `--theme-is-dark` | `true` |  | Theme · Semantic / Dark · Minimal |
+| `tone/yellow/bg` | `--tone-yellow-bg` | `#372b18` |  | Theme · Semantic / Dark · Minimal |
+| `tone/yellow/text` | `--tone-yellow-text` | `#fcd34d` |  | Theme · Semantic / Dark · Minimal |
 
 **Style Figma đang dùng:**
 
@@ -89,7 +89,7 @@ Nền trang: `#18181a` (bg/surface).
 | `Body/15/Medium` | Afacad | 15 / 19px | 500 | 0 | #16a34a (brand/primary) | 1 | “Tháng này” |
 | — | Afacad | 14 / 19px | 600 | 0 | #ededef (text/primary) | 14 | “Phan Hồ Minh Hiếu” |
 | — | Afacad | 14 / 19px | 700 · case upper | 0 | #a1a1aa (text/secondary) | 8 | “Giáo viên” |
-| — | Afacad | 14 / 19px | 600 | 0 | #16a34a | 7 | “+14,3%” |
+| — | Afacad | 14 / 19px | 600 | 0 | #16a34a (brand/primary) | 7 | “+14,3%” |
 | `Body/14/Medium` | Afacad | 14 / 18px | 500 | 0 | #85bfff | 2 | “Mới” |
 | `Body/14/Medium` | Afacad | 14 / 18px | 500 | 0 | #2d9732 | 2 | “Đã duyệt” |
 | `Body/14/Medium` | Afacad | 14 / 18px | 500 | 0 | #fcd34d (tone/yellow/text) | 1 | “Đang xử lý” |
@@ -278,7 +278,7 @@ Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí ·
         - [khối] **Cell · Mức đề xuất** — 150×24 [FIXED×HUG] · @ (442, 14.5) flow · row gap 6 justify CENTER align CENTER `4899:118555`
           - [instance] **Atom/Chip** ⟨Atom/Chip: Icon=false, Name=Trần Minh Khoa, Time=4 ngày trước, Label=240.000 đ, Type=TỔNG DOANH THU⟩ — 77×24 [HUG×FIXED] · @ (12, 0) flow · row pad 2 8 2 8 justify CENTER align CENTER · bg #16a34a (brand/primary) · radius 6px · shadow inset 0 0 0 1px #18181a, 1px 1px 3px 0 rgba(0, 0, 0, 0.25) `4899:118556`
             - [chữ] “240.000 đ” — 61×19 [HUG×HUG] · @ (8, 2.5) flow · Afacad 15/19px 700 #ffffff (color/neutral/white) · no-wrap `I4899:118556;2812:34656`
-          - [chữ] “+14,3%” — 43×19 [HUG×HUG] · @ (95, 2.5) flow · Afacad 14/19px 600 #16a34a · no-wrap `4899:118557`
+          - [chữ] “+14,3%” — 43×19 [HUG×HUG] · @ (95, 2.5) flow · Afacad 14/19px 600 #16a34a (brand/primary) · no-wrap `4899:118557`
         - [khối] **Cell · Ngày gửi** — 86×16 [FIXED×HUG] · @ (604, 18.5) flow · row gap 8 justify CENTER align CENTER `4899:118558`
           - [chữ] “12.10.2026” — 55×16 [HUG×HUG] · @ (15.5, 0) flow · Afacad 12/16px 400 #ededef (text/primary) · no-wrap `4899:118559`
         - [khối] **Cell · Điều chỉnh gần nhất** — 110×16 [FIXED×HUG] · @ (702, 18.5) flow · row gap 8 justify CENTER align CENTER `4899:118560`
@@ -300,7 +300,7 @@ Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí ·
         - [khối] **Cell · Mức đề xuất** — 150×24 [FIXED×HUG] · @ (442, 14.5) flow · row gap 6 justify CENTER align CENTER `4899:118576`
           - [instance] **Atom/Chip** ⟨Atom/Chip: Icon=false, Name=Trần Minh Khoa, Time=4 ngày trước, Label=280.000 đ, Type=TỔNG DOANH THU⟩ — 77×24 [HUG×FIXED] · @ (12, 0) flow · row pad 2 8 2 8 justify CENTER align CENTER · bg #16a34a (brand/primary) · radius 6px · shadow inset 0 0 0 1px #18181a, 1px 1px 3px 0 rgba(0, 0, 0, 0.25) `4899:118577`
             - [chữ] “280.000 đ” — 61×19 [HUG×HUG] · @ (8, 2.5) flow · Afacad 15/19px 700 #ffffff (color/neutral/white) · no-wrap `I4899:118577;2812:34656`
-          - [chữ] “+16,7%” — 43×19 [HUG×HUG] · @ (95, 2.5) flow · Afacad 14/19px 600 #16a34a · no-wrap `4899:118578`
+          - [chữ] “+16,7%” — 43×19 [HUG×HUG] · @ (95, 2.5) flow · Afacad 14/19px 600 #16a34a (brand/primary) · no-wrap `4899:118578`
         - [khối] **Cell · Ngày gửi** — 86×16 [FIXED×HUG] · @ (604, 18.5) flow · row gap 8 justify CENTER align CENTER `4899:118579`
           - [chữ] “11.10.2026” — 55×16 [HUG×HUG] · @ (15.5, 0) flow · Afacad 12/16px 400 #ededef (text/primary) · no-wrap `4899:118580`
         - [khối] **Cell · Điều chỉnh gần nhất** — 110×16 [FIXED×HUG] · @ (702, 18.5) flow · row gap 8 justify CENTER align CENTER `4899:118581`
@@ -323,7 +323,7 @@ Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí ·
         - [khối] **Cell · Mức đề xuất** — 150×24 [FIXED×HUG] · @ (442, 14.5) flow · row gap 6 justify CENTER align CENTER `4899:118597`
           - [instance] **Atom/Chip** ⟨Atom/Chip: Icon=false, Name=Trần Minh Khoa, Time=4 ngày trước, Label=230.000 đ, Type=TỔNG DOANH THU⟩ — 77×24 [HUG×FIXED] · @ (12, 0) flow · row pad 2 8 2 8 justify CENTER align CENTER · bg #16a34a (brand/primary) · radius 6px · shadow inset 0 0 0 1px #18181a, 1px 1px 3px 0 rgba(0, 0, 0, 0.25) `4899:118598`
             - [chữ] “230.000 đ” — 61×19 [HUG×HUG] · @ (8, 2.5) flow · Afacad 15/19px 700 #ffffff (color/neutral/white) · no-wrap `I4899:118598;2812:34656`
-          - [chữ] “+15,0%” — 43×19 [HUG×HUG] · @ (95, 2.5) flow · Afacad 14/19px 600 #16a34a · no-wrap `4899:118599`
+          - [chữ] “+15,0%” — 43×19 [HUG×HUG] · @ (95, 2.5) flow · Afacad 14/19px 600 #16a34a (brand/primary) · no-wrap `4899:118599`
         - [khối] **Cell · Ngày gửi** — 86×16 [FIXED×HUG] · @ (604, 18.5) flow · row gap 8 justify CENTER align CENTER `4899:118600`
           - [chữ] “09.10.2026” — 54×16 [HUG×HUG] · @ (16, 0) flow · Afacad 12/16px 400 #ededef (text/primary) · no-wrap `4899:118601`
         - [khối] **Cell · Điều chỉnh gần nhất** — 110×16 [FIXED×HUG] · @ (702, 18.5) flow · row gap 8 justify CENTER align CENTER `4899:118602`
@@ -345,7 +345,7 @@ Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí ·
         - [khối] **Cell · Mức đề xuất** — 150×24 [FIXED×HUG] · @ (442, 14.5) flow · row gap 6 justify CENTER align CENTER `4899:118618`
           - [instance] **Atom/Chip** ⟨Atom/Chip: Icon=false, Name=Trần Minh Khoa, Time=4 ngày trước, Label=250.000 đ, Type=TỔNG DOANH THU⟩ — 77×24 [HUG×FIXED] · @ (12, 0) flow · row pad 2 8 2 8 justify CENTER align CENTER · bg #16a34a (brand/primary) · radius 6px · shadow inset 0 0 0 1px #18181a, 1px 1px 3px 0 rgba(0, 0, 0, 0.25) `4899:118619`
             - [chữ] “250.000 đ” — 61×19 [HUG×HUG] · @ (8, 2.5) flow · Afacad 15/19px 700 #ffffff (color/neutral/white) · no-wrap `I4899:118619;2812:34656`
-          - [chữ] “+13,6%” — 43×19 [HUG×HUG] · @ (95, 2.5) flow · Afacad 14/19px 600 #16a34a · no-wrap `4899:118620`
+          - [chữ] “+13,6%” — 43×19 [HUG×HUG] · @ (95, 2.5) flow · Afacad 14/19px 600 #16a34a (brand/primary) · no-wrap `4899:118620`
         - [khối] **Cell · Ngày gửi** — 86×16 [FIXED×HUG] · @ (604, 18.5) flow · row gap 8 justify CENTER align CENTER `4899:118621`
           - [chữ] “28.09.2026” — 54×16 [HUG×HUG] · @ (16, 0) flow · Afacad 12/16px 400 #ededef (text/primary) · no-wrap `4899:118622`
         - [khối] **Cell · Điều chỉnh gần nhất** — 110×16 [FIXED×HUG] · @ (702, 18.5) flow · row gap 8 justify CENTER align CENTER `4899:118623`
@@ -368,7 +368,7 @@ Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí ·
         - [khối] **Cell · Mức đề xuất** — 150×24 [FIXED×HUG] · @ (442, 14.5) flow · row gap 6 justify CENTER align CENTER `4899:118639`
           - [instance] **Atom/Chip** ⟨Atom/Chip: Icon=false, Name=Trần Minh Khoa, Time=4 ngày trước, Label=260.000 đ, Type=TỔNG DOANH THU⟩ — 77×24 [HUG×FIXED] · @ (12, 0) flow · row pad 2 8 2 8 justify CENTER align CENTER · bg #16a34a (brand/primary) · radius 6px · shadow inset 0 0 0 1px #18181a, 1px 1px 3px 0 rgba(0, 0, 0, 0.25) `4899:118640`
             - [chữ] “260.000 đ” — 61×19 [HUG×HUG] · @ (8, 2.5) flow · Afacad 15/19px 700 #ffffff (color/neutral/white) · no-wrap `I4899:118640;2812:34656`
-          - [chữ] “+13,0%” — 43×19 [HUG×HUG] · @ (95, 2.5) flow · Afacad 14/19px 600 #16a34a · no-wrap `4899:118641`
+          - [chữ] “+13,0%” — 43×19 [HUG×HUG] · @ (95, 2.5) flow · Afacad 14/19px 600 #16a34a (brand/primary) · no-wrap `4899:118641`
         - [khối] **Cell · Ngày gửi** — 86×16 [FIXED×HUG] · @ (604, 18.5) flow · row gap 8 justify CENTER align CENTER `4899:118642`
           - [chữ] “20.09.2026” — 54×16 [HUG×HUG] · @ (16, 0) flow · Afacad 12/16px 400 #ededef (text/primary) · no-wrap `4899:118643`
         - [khối] **Cell · Điều chỉnh gần nhất** — 110×16 [FIXED×HUG] · @ (702, 18.5) flow · row gap 8 justify CENTER align CENTER `4899:118644`
@@ -391,7 +391,7 @@ Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí ·
         - [khối] **Cell · Mức đề xuất** — 150×24 [FIXED×HUG] · @ (442, 14.5) flow · row gap 6 justify CENTER align CENTER `4899:118660`
           - [instance] **Atom/Chip** ⟨Atom/Chip: Icon=false, Name=Trần Minh Khoa, Time=4 ngày trước, Label=230.000 đ, Type=TỔNG DOANH THU⟩ — 77×24 [HUG×FIXED] · @ (16, 0) flow · row pad 2 8 2 8 justify CENTER align CENTER · bg #16a34a (brand/primary) · radius 6px · shadow inset 0 0 0 1px #18181a, 1px 1px 3px 0 rgba(0, 0, 0, 0.25) `4899:118661`
             - [chữ] “230.000 đ” — 61×19 [HUG×HUG] · @ (8, 2.5) flow · Afacad 15/19px 700 #ffffff (color/neutral/white) · no-wrap `I4899:118661;2812:34656`
-          - [chữ] “+9,5%” — 35×19 [HUG×HUG] · @ (99, 2.5) flow · Afacad 14/19px 600 #16a34a · no-wrap `4899:118662`
+          - [chữ] “+9,5%” — 35×19 [HUG×HUG] · @ (99, 2.5) flow · Afacad 14/19px 600 #16a34a (brand/primary) · no-wrap `4899:118662`
         - [khối] **Cell · Ngày gửi** — 86×16 [FIXED×HUG] · @ (604, 18.5) flow · row gap 8 justify CENTER align CENTER `4899:118663`
           - [chữ] “15.09.2026” — 54×16 [HUG×HUG] · @ (16, 0) flow · Afacad 12/16px 400 #ededef (text/primary) · no-wrap `4899:118664`
         - [khối] **Cell · Điều chỉnh gần nhất** — 110×16 [FIXED×HUG] · @ (702, 18.5) flow · row gap 8 justify CENTER align CENTER `4899:118665`
@@ -414,7 +414,7 @@ Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí ·
         - [khối] **Cell · Mức đề xuất** — 150×24 [FIXED×HUG] · @ (442, 14.5) flow · row gap 6 justify CENTER align CENTER `4899:118681`
           - [instance] **Atom/Chip** ⟨Atom/Chip: Icon=false, Name=Trần Minh Khoa, Time=4 ngày trước, Label=230.000 đ, Type=TỔNG DOANH THU⟩ — 77×24 [HUG×FIXED] · @ (12, 0) flow · row pad 2 8 2 8 justify CENTER align CENTER · bg #16a34a (brand/primary) · radius 6px · shadow inset 0 0 0 1px #18181a, 1px 1px 3px 0 rgba(0, 0, 0, 0.25) `4899:118682`
             - [chữ] “225.000 đ” — 61×19 [HUG×HUG] · @ (8, 2.5) flow · Afacad 15/19px 700 #ffffff (color/neutral/white) · no-wrap `I4899:118682;2812:34656`
-          - [chữ] “+12,5%” — 43×19 [HUG×HUG] · @ (95, 2.5) flow · Afacad 14/19px 600 #16a34a · no-wrap `4899:118683`
+          - [chữ] “+12,5%” — 43×19 [HUG×HUG] · @ (95, 2.5) flow · Afacad 14/19px 600 #16a34a (brand/primary) · no-wrap `4899:118683`
         - [khối] **Cell · Ngày gửi** — 86×16 [FIXED×HUG] · @ (604, 18.5) flow · row gap 8 justify CENTER align CENTER `4899:118684`
           - [chữ] “08.10.2026” — 55×16 [HUG×HUG] · @ (15.5, 0) flow · Afacad 12/16px 400 #ededef (text/primary) · no-wrap `4899:118685`
         - [khối] **Cell · Điều chỉnh gần nhất** — 110×16 [FIXED×HUG] · @ (702, 18.5) flow · row gap 8 justify CENTER align CENTER `4899:118686`

@@ -1,0 +1,28 @@
+{
+  "route": "/quan-ly-danh-muc/popup-danh-muc-cap-do/huong-dan-giang-day-dk",
+  "pageFile": "components/figma/cd-dm-010040-dk/index.tsx",
+  "docFile": "docs/pages/quan-ly-danh-muc/popup-danh-muc-cap-do/huong-dan-giang-day-dk.md",
+  "sections": [
+    {
+      "nodeId": "4056:145660",
+      "component": "PopupHeader9",
+      "file": "components/figma/shared/PopupHeader9.tsx"
+    },
+    {
+      "nodeId": "4056:145661",
+      "component": "Body",
+      "file": "components/figma/cd-dm-010040-dk/Body.tsx"
+    },
+    {
+      "nodeId": "4056:145781",
+      "component": "PopupFooter",
+      "file": "components/figma/cd-dm-010040-dk/PopupFooter.tsx"
+    }
+  ],
+  "idAlias": {
+    "4056:145660": "4056:145431",
+    "I4056:145660;2514:153353": "I4056:145431;2514:153353",
+    "I4056:145660;2514:153354": "I4056:145431;2514:153354",
+    "I4056:145660;2514:153355": "I4056:145431;2514:153355"
+  }
+}

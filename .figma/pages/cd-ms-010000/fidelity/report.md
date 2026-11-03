@@ -1,6 +1,6 @@
 # Fidelity: CD-MS-010000 — Mindset thiết kế khoá học
 
-- URL: `http://localhost:3108/mindset-thiet-ke-khoa-hoc`
+- URL: `http://localhost:3000/mindset-thiet-ke-khoa-hoc`
 - Verdict: **PASS**
 - Pixels outside text: **0.004%** differ (limit 0.5%); all pixels: 0.732%; inside text boxes: 3.172% (glyph rendering)
 - Boxes: 178/178 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 174, ≤1px: 176, ≤2px: 178, ≤4px: 178, >4px: 0

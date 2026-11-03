@@ -1,8 +1,8 @@
 # Fidelity: ADM-KS-030000-DK — Khảo sát / Tạo khảo sát học viên / Tạo cuộc khảo sát
 
-- URL: `http://localhost:3108/khao-sat/tao-khao-sat-hoc-vien/tao-cuoc-khao-sat-dk`
+- URL: `http://localhost:3000/khao-sat/tao-khao-sat-hoc-vien/tao-cuoc-khao-sat-dk`
 - Verdict: **PASS**
-- Pixels outside text: **0.045%** differ (limit 0.5%); all pixels: 0.176%; inside text boxes: 1.208% (glyph rendering)
+- Pixels outside text: **0.045%** differ (limit 0.5%); all pixels: 0.151%; inside text boxes: 0.974% (glyph rendering)
 - Boxes: 177/177 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 176, ≤1px: 176, ≤2px: 177, ≤4px: 177, >4px: 0
 
 ## Pixel regions (largest first)
@@ -20,7 +20,7 @@
 
 | Text | Differing |
 | --- | --- |
-| Label (`I4885:67430;2245:87864`) | 20.8% |
+| Label (`I4885:67430;2245:87864`) | 8.9% |
 | Tên khảo sát (`4885:64799`) | 3.1% |
 | Label (`I4885:67432;2245:87820`) | 2.7% |
 | Label (`I4885:67425;2245:87820`) | 2.4% |

@@ -1,15 +1,14 @@
 # Fidelity: GV-LOP-060100-DK — Chi tiết lớp / Tiêu chuẩn lớp / Trống
 
-- URL: `http://localhost:3108/chi-tiet-lop/tieu-chuan-lop/trong-dk`
+- URL: `http://localhost:3000/chi-tiet-lop/tieu-chuan-lop/trong-dk`
 - Verdict: **PASS**
-- Pixels outside text: **0%** differ (limit 0.5%); all pixels: 0.157%; inside text boxes: 3.029% (glyph rendering)
+- Pixels outside text: **0%** differ (limit 0.5%); all pixels: 0.111%; inside text boxes: 2.14% (glyph rendering)
 - Boxes: 111/111 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 109, ≤1px: 111, ≤2px: 111, ≤4px: 111, >4px: 0
 
 ## Text boxes with most differing pixels (limit 35%)
 
 | Text | Differing |
 | --- | --- |
-| Label (`I4333:13494;2245:87914`) | 27.1% |
 | Label (`I4899:187812;2245:87908`) | 8.5% |
 | Label (`I4333:13490;2245:87908`) | 6.3% |
 | Label (`I4333:13491;2245:87908`) | 4.9% |
@@ -18,6 +17,7 @@
 | Label (`I4333:13492;689:15190`) | 3.6% |
 | Label (`I4333:13498;2245:87908`) | 2.8% |
 | Label (`I4333:13499;2245:87908`) | 2.1% |
+| Label (`I4333:13494;2245:87914`) | 2% |
 | Label (`I4333:13501;2245:87908`) | 1.8% |
 | Vai trò (`I4899:187534;4899:187330`) | 1.6% |
 | Label (`I4333:13495;2245:87908`) | 1.4% |

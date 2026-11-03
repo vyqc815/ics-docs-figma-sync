@@ -1,0 +1,450 @@
+{
+  "pass": false,
+  "thresholds": {
+    "maxPixelDiffPercent": 0.5,
+    "maxBoxDelta": 1,
+    "maxTextBoxDelta": 2.5,
+    "colorThreshold": 0.1,
+    "aaRadius": 1,
+    "subpixel": true,
+    "maxTextNodeDiffPercent": 35
+  },
+  "pixels": {
+    "width": 980,
+    "height": 723,
+    "mismatched": 3550,
+    "percent": 0.501,
+    "shapePercent": 0,
+    "textPercent": 3.06,
+    "sizeMismatch": false
+  },
+  "textNodes": [
+    {
+      "id": "I6015:64453;2808:43032",
+      "name": "Số câu hỏi và tổng điểm có thể được cập nhật tự động dựa trên nội dung trong tab Bộ câu hỏi.",
+      "pixels": 1037,
+      "percent": 8.8
+    },
+    {
+      "id": "I6015:64414;2808:42324",
+      "name": "Tìm nội dung...",
+      "pixels": 1555,
+      "percent": 7.3
+    },
+    {
+      "id": "I6015:64448;2808:48145",
+      "name": "Nhãn trường",
+      "pixels": 85,
+      "percent": 6.1
+    },
+    {
+      "id": "6015:64426",
+      "name": "Thời gian làm bài *",
+      "pixels": 139,
+      "percent": 2.5
+    },
+    {
+      "id": "I6015:64398;2808:42172",
+      "name": "Title",
+      "pixels": 158,
+      "percent": 2.3
+    },
+    {
+      "id": "I6015:64453;2808:43031",
+      "name": "Lưu ý",
+      "pixels": 16,
+      "percent": 2.2
+    },
+    {
+      "id": "I6015:64429;2808:42328",
+      "name": "Tìm nội dung...",
+      "pixels": 22,
+      "percent": 2.1
+    },
+    {
+      "id": "I6015:64441;2808:42328",
+      "name": "Tìm nội dung...",
+      "pixels": 23,
+      "percent": 2.1
+    },
+    {
+      "id": "I6015:64398;2808:42174",
+      "name": "Description",
+      "pixels": 123,
+      "percent": 1.7
+    },
+    {
+      "id": "I6015:64435;2808:42328",
+      "name": "Tìm nội dung...",
+      "pixels": 18,
+      "percent": 1.6
+    },
+    {
+      "id": "I6015:64406;2808:48145",
+      "name": "Nhãn trường",
+      "pixels": 13,
+      "percent": 1.3
+    },
+    {
+      "id": "I6015:64451;2808:48145",
+      "name": "Nhãn trường",
+      "pixels": 16,
+      "percent": 1.3
+    },
+    {
+      "id": "I6015:64452;2808:42337",
+      "name": "câu",
+      "pixels": 12,
+      "percent": 1.3
+    },
+    {
+      "id": "I6015:64407;2808:42374",
+      "name": "Tìm nội dung...",
+      "pixels": 172,
+      "percent": 1.2
+    },
+    {
+      "id": "6015:64419",
+      "name": "Cấu hình bài kiểm tra",
+      "pixels": 40,
+      "percent": 1.2
+    }
+  ],
+  "regions": [],
+  "boxes": {
+    "measured": 134,
+    "missing": [],
+    "withinThreshold": 133,
+    "buckets": {
+      "≤0.5px": 129,
+      "≤1px": 131,
+      "≤2px": 133,
+      "≤4px": 133,
+      ">4px": 1
+    },
+    "worst": [
+      {
+        "id": "I6015:64410;2808:42364",
+        "name": "image clip",
+        "role": "container",
+        "delta": 39,
+        "dx": 0,
+        "dy": 0,
+        "dw": 39,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6015:64453;2808:43030",
+        "name": "Paragraph",
+        "role": "container",
+        "delta": 1.16,
+        "dx": 0,
+        "dy": 0,
+        "dw": 1.16,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6015:64453;2808:43032",
+        "name": "Số câu hỏi và tổng điểm có thể được cập nhật tự động dựa trên nội dung trong tab Bộ câu hỏi.",
+        "role": "text",
+        "delta": 1.16,
+        "dx": 0,
+        "dy": 0,
+        "dw": 1.16,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6015:64448",
+        "name": "Atom/Label",
+        "role": "instance",
+        "delta": 0.55,
+        "dx": -0.01,
+        "dy": 0,
+        "dw": 0.55,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6015:64448;2808:48145",
+        "name": "Nhãn trường",
+        "role": "text",
+        "delta": 0.55,
+        "dx": -0.01,
+        "dy": 0,
+        "dw": 0.55,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6015:64398;2808:42167",
+        "name": "Title",
+        "role": "container",
+        "delta": 0.05,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.05,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6015:64398;2808:42171",
+        "name": "Heading 2",
+        "role": "container",
+        "delta": 0.05,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.05,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6015:64398;2808:42172",
+        "name": "Title",
+        "role": "text",
+        "delta": 0.05,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.05,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6015:64443",
+        "name": "Giây",
+        "role": "text",
+        "delta": 0.03,
+        "dx": -0.03,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6015:64446;2808:42336",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.03,
+        "dx": -0.03,
+        "dy": -0.01,
+        "dw": 0,
+        "dh": -0.01,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6015:64446;2808:42337",
+        "name": "câu",
+        "role": "text",
+        "delta": 0.03,
+        "dx": -0.03,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6015:64452;2808:42336",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.03,
+        "dx": -0.03,
+        "dy": -0.01,
+        "dw": 0,
+        "dh": -0.01,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6015:64452;2808:42337",
+        "name": "câu",
+        "role": "text",
+        "delta": 0.03,
+        "dx": -0.03,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6015:64437",
+        "name": "Phút",
+        "role": "text",
+        "delta": 0.02,
+        "dx": -0.02,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6015:64438",
+        "name": "Margin",
+        "role": "container",
+        "delta": 0.02,
+        "dx": -0.02,
+        "dy": 0,
+        "dw": -0.01,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6015:64439",
+        "name": ":",
+        "role": "text",
+        "delta": 0.02,
+        "dx": -0.02,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6015:64440",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.02,
+        "dx": -0.02,
+        "dy": 0,
+        "dw": -0.01,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6015:64441",
+        "name": "Atom/Input",
+        "role": "instance",
+        "delta": 0.02,
+        "dx": -0.02,
+        "dy": 0,
+        "dw": -0.01,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6015:64441;2808:42327",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.02,
+        "dx": -0.02,
+        "dy": 0,
+        "dw": -0.01,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6015:64441;2808:42328",
+        "name": "Tìm nội dung...",
+        "role": "text",
+        "delta": 0.02,
+        "dx": -0.02,
+        "dy": 0,
+        "dw": -0.01,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6015:64442",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.02,
+        "dx": -0.02,
+        "dy": 0,
+        "dw": -0.01,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6015:64449;2808:42336",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.02,
+        "dx": -0.02,
+        "dy": -0.01,
+        "dw": 0,
+        "dh": -0.01,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6015:64449;2808:42337",
+        "name": "câu",
+        "role": "text",
+        "delta": 0.02,
+        "dx": -0.02,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6015:64432",
+        "name": "Margin",
+        "role": "container",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": -0.01,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6015:64434",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.01,
+        "dx": -0.01,
+        "dy": 0,
+        "dw": -0.01,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      }
+    ],
+    "maxDelta": 39,
+    "over": [
+      {
+        "id": "I6015:64410;2808:42364",
+        "name": "image clip",
+        "role": "container",
+        "delta": 39,
+        "dx": 0,
+        "dy": 0,
+        "dw": 39,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      }
+    ]
+  },
+  "failures": [
+    "1 elements are off by more than their limit (1px, 2.5px for text-driven; worst 39px)."
+  ],
+  "url": "http://localhost:3000/hoc-ky/kiem-tra/popup-cau-hinh-bai-kiem-tra-dk",
+  "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
+  "consoleErrors": [],
+  "rootFound": true
+}

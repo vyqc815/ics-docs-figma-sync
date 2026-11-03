@@ -1,8 +1,8 @@
 # Fidelity: CD-CDO-010000-DK — Quản lý cấp độ
 
-- URL: `http://localhost:3108/quan-ly-cap-do-dk`
+- URL: `http://localhost:3000/quan-ly-cap-do-dk`
 - Verdict: **PASS**
-- Pixels outside text: **0.002%** differ (limit 0.5%); all pixels: 0.164%; inside text boxes: 2.236% (glyph rendering)
+- Pixels outside text: **0.002%** differ (limit 0.5%); all pixels: 0.146%; inside text boxes: 1.979% (glyph rendering)
 - Boxes: 205/205 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 205, ≤1px: 205, ≤2px: 205, ≤4px: 205, >4px: 0
 
 ## Pixel regions (largest first)
@@ -16,7 +16,6 @@
 
 | Text | Differing |
 | --- | --- |
-| Label (`I4056:145051;2245:87774`) | 13.4% |
 | Label (`I4056:145066;2245:87820`) | 9.5% |
 | Label (`I4056:145060;2245:87829`) | 8.6% |
 | Label (`I4056:145052;2245:87768`) | 6.6% |
@@ -31,6 +30,7 @@
 | Mô tả cấp độ (`4056:144912`) | 2.8% |
 | Label (`I4056:145068;2245:87768`) | 2.8% |
 | Label (`I4056:145050;2245:87768`) | 2.7% |
+| Label (`I4056:145049;2245:87768`) | 2.6% |
 
 ## Largest box differences
 

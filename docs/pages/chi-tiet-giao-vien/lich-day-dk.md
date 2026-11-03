@@ -5,7 +5,7 @@
 > **Nguồn:** PLS-ICS T8/2026 ›         ├─ GIÁO VIÊN › ADM-GV-020300-DK — Chi tiết giáo viên / Lịch dạy (`4056:125077`, file `rRVs5HX0kIHffbS0V40djG`)  
 > **Route:** `/chi-tiet-giao-vien/lich-day-dk`  
 > **Khung thiết kế:** 1440 × 810 px (cắt phần tràn ra ngoài khung)  
-> **Xuất lúc:** 2026-11-02T03:28:45.070Z  
+> **Xuất lúc:** 2026-11-03T03:20:42.427Z  
 > **Spec đầy đủ (giá trị chính xác từng node):** `../../../.figma/pages/adm-gv-020300-dk/page-spec.json`
 
 ## 1. Tổng quan
@@ -26,22 +26,22 @@ Nền trang: `#121213` (bg/canvas).
 
 | Token | Biến CSS | Giá trị | Trỏ tới | Bộ / mode |
 | --- | --- | --- | --- | --- |
-| `bg/brand-tint` | `--bg-brand-tint` | `#fff7ed` | color/extended/fff7ed | Theme · Semantic / Light |
-| `bg/brand-tint-strong` | `--bg-brand-tint-strong` | `#ffedd5` | color/extended/ffedd5 | Theme · Semantic / Light |
-| `bg/canvas` | `--bg-canvas` | `#f8fafc` | color/extended/f8fafc | Theme · Semantic / Light |
-| `bg/info` | `--bg-info` | `#f0f9ff` | color/extended/f0f9ff | Theme · Semantic / Light |
-| `bg/strong` | `--bg-strong` | `#e2e8f0` | color/border/default | Theme · Semantic / Light |
-| `bg/subtle` | `--bg-subtle` | `#f1f5f9` | color/surface/input | Theme · Semantic / Light |
-| `bg/success` | `--bg-success` | `#ecfdf5` | color/extended/ecfdf5 | Theme · Semantic / Light |
-| `bg/surface` | `--bg-surface` | `#ffffff` | color/neutral/white | Theme · Semantic / Light |
+| `bg/brand-tint` | `--bg-brand-tint` | `#102218` |  | Theme · Semantic / Dark · Minimal |
+| `bg/brand-tint-strong` | `--bg-brand-tint-strong` | `#153020` |  | Theme · Semantic / Dark · Minimal |
+| `bg/canvas` | `--bg-canvas` | `#121213` |  | Theme · Semantic / Dark · Minimal |
+| `bg/info` | `--bg-info` | `#10202e` |  | Theme · Semantic / Dark · Minimal |
+| `bg/strong` | `--bg-strong` | `#2a2a2e` |  | Theme · Semantic / Dark · Minimal |
+| `bg/subtle` | `--bg-subtle` | `#202023` |  | Theme · Semantic / Dark · Minimal |
+| `bg/success` | `--bg-success` | `#12251a` |  | Theme · Semantic / Dark · Minimal |
+| `bg/surface` | `--bg-surface` | `#18181a` |  | Theme · Semantic / Dark · Minimal |
 | `bố cục/khoảng cách khối` | `--bo-cuc-khoang-cach-khoi` | `16` | spacing/16 | Number Tokens / Mode 1 |
 | `bố cục/lề hai bên` | `--bo-cuc-le-hai-ben` | `16` | spacing/16 | Number Tokens / Mode 1 |
 | `bố cục/lề trên dưới` | `--bo-cuc-le-tren-duoi` | `24` | spacing/24 | Number Tokens / Mode 1 |
-| `border/brand` | `--border-brand` | `#fed7aa` | color/extended/fed7aa | Theme · Semantic / Light |
-| `border/default` | `--border-default` | `#e2e8f0` | color/border/default | Theme · Semantic / Light |
-| `border/strong` | `--border-strong` | `#cbd5e1` | color/extended/cbd5e1 | Theme · Semantic / Light |
-| `brand/primary` | `--brand-primary` | `#e65100` | color/brand/orange | Theme · Semantic / Light |
-| `chrome/bg` | `--chrome-bg` | `#ff7700` | color/extended/ff7700 | Theme · Semantic / Light |
+| `border/brand` | `--border-brand` | `#1e4d31` |  | Theme · Semantic / Dark · Minimal |
+| `border/default` | `--border-default` | `#27272a` |  | Theme · Semantic / Dark · Minimal |
+| `border/strong` | `--border-strong` | `#3f3f46` |  | Theme · Semantic / Dark · Minimal |
+| `brand/primary` | `--brand-primary` | `#16a34a` |  | Theme · Semantic / Dark · Minimal |
+| `chrome/bg` | `--chrome-bg` | `#0b0b0c` |  | Theme · Semantic / Dark · Minimal |
 | `color/neutral/white` | `--color-neutral-white` | `#ffffff` |  | Color Tokens / Light |
 | `radius/6` | `--radius-6` | `6` |  | Number Tokens / Mode 1 |
 | `radius/8` | `--radius-8` | `8` |  | Number Tokens / Mode 1 |
@@ -49,9 +49,10 @@ Nền trang: `#121213` (bg/canvas).
 | `spacing/12` | `--spacing-12` | `12` |  | Number Tokens / Mode 1 |
 | `spacing/4` | `--spacing-4` | `4` |  | Number Tokens / Mode 1 |
 | `spacing/8` | `--spacing-8` | `8` |  | Number Tokens / Mode 1 |
-| `text/primary` | `--text-primary` | `#334155` | color/text/primary | Theme · Semantic / Light |
-| `text/secondary` | `--text-secondary` | `#64748b` | color/text/secondary | Theme · Semantic / Light |
-| `theme/is-dark` | `--theme-is-dark` | `false` |  | Theme · Semantic / Light |
+| `text/on-brand` | `--text-on-brand` | `#ffffff` |  | Theme · Semantic / Dark · Minimal |
+| `text/primary` | `--text-primary` | `#ededef` |  | Theme · Semantic / Dark · Minimal |
+| `text/secondary` | `--text-secondary` | `#a1a1aa` |  | Theme · Semantic / Dark · Minimal |
+| `theme/is-dark` | `--theme-is-dark` | `true` |  | Theme · Semantic / Dark · Minimal |
 
 **Style Figma đang dùng:**
 
@@ -82,7 +83,7 @@ Nền trang: `#121213` (bg/canvas).
 | `Body/17/SemiBold` | Afacad | 17 / 21px | 600 | 0 | #16a34a (brand/primary) | 7 | “T2 - 19:00AM” |
 | `Body/17/Bold` | Afacad | 17 / 21px | 700 | 0 | #ededef (text/primary) | 6 | “31.01” |
 | — | Unbounded | 17 / 26px | 600 · case title | 0 | #ededef (text/primary) | 1 | “Chi tiết giáo viên” |
-| `Body/17/Bold` | Afacad | 17 / 21px | 700 | 0 | #ffffff | 1 | “02.01” |
+| `Body/17/Bold` | Afacad | 17 / 21px | 700 | 0 | #ffffff (text/on-brand) | 1 | “02.01” |
 | — | Afacad | 16 / 20px | 700 | 0 | #ededef (text/primary) | 10 | “DN 342” |
 | — | Afacad | 16 / 20px | 500 · case title | 0 | #a1a1aa (text/secondary) | 5 | “Thông Tin Cá Nhân” |
 | `Body/16/Bold` | Afacad | 16 / 20px | 700 | 0 | #16a34a (brand/primary) | 1 | “Lịch Dạy” |
@@ -179,7 +180,7 @@ Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí ·
             - [khối] **Frame 427323679** — 153×46 [FIXED×HUG] · @ (322, 0.5) flow · column align CENTER `4056:125177`
               - [chữ] “Thứ 4” — 153×19 [FILL×HUG] · @ (0, 0) flow · Afacad 15/19px 500 #a1a1aa (text/secondary) · text-align center `4056:125178`
               - [khối] **Frame 427323675** — 68×27 [HUG×HUG] · @ (42.5, 19) flow · row gap 10 pad 3 8 3 8 justify CENTER align CENTER · bg #16a34a (brand/primary) · radius 8px `4056:125179`
-                - [chữ] “02.01” — 52×21 [FIXED×HUG] · @ (8, 3) flow · Afacad 17/21px 700 #ffffff · text-align center `4056:125180`
+                - [chữ] “02.01” — 52×21 [FIXED×HUG] · @ (8, 3) flow · Afacad 17/21px 700 #ffffff (text/on-brand) · text-align center `4056:125180`
             - [khối] **Frame 427323680** — 153×46 [FIXED×HUG] · @ (483, 0.5) flow · column align CENTER `4056:125181`
               - [chữ] “Thứ 5” — 153×19 [FILL×HUG] · @ (0, 0) flow · Afacad 15/19px 500 #a1a1aa (text/secondary) · text-align center `4056:125182`
               - [khối] **Frame 427323675** — 148×27 [FIXED×HUG] · @ (2.5, 19) flow · row gap 10 pad 3 8 3 8 justify CENTER align CENTER · radius 8px `4056:125183`

@@ -5,7 +5,7 @@
 > **Nguồn:** PLS-ICS T8/2026 ›     ├─ KHOÁ HỌC | THỬ NGHIỆM PROTOTYPE › CD-KH-070100-DK — Thư viện / Kiến thức (`6579:371255`, file `rRVs5HX0kIHffbS0V40djG`)  
 > **Route:** `/thu-vien/kien-thuc-dk`  
 > **Khung thiết kế:** 1440 × 1250 px  
-> **Xuất lúc:** 2026-11-02T02:52:08.910Z  
+> **Xuất lúc:** 2026-11-02T18:11:02.940Z  
 > **Spec đầy đủ (giá trị chính xác từng node):** `../../../.figma/pages/cd-kh-070100-dk/page-spec.json`
 
 ## 1. Tổng quan
@@ -26,13 +26,18 @@ Nền trang: `#18181a`.
 
 | Token | Biến CSS | Giá trị | Trỏ tới | Bộ / mode |
 | --- | --- | --- | --- | --- |
-| `bg/strong` | `--bg-strong` | `#e2e8f0` | color/border/default | Theme · Semantic / Light |
-| `border/strong` | `--border-strong` | `#cbd5e1` | color/extended/cbd5e1 | Theme · Semantic / Light |
+| `bg/canvas` | `--bg-canvas` | `#121213` |  | Theme · Semantic / Dark · Minimal |
+| `bg/strong` | `--bg-strong` | `#2a2a2e` |  | Theme · Semantic / Dark · Minimal |
+| `bg/surface` | `--bg-surface` | `#18181a` |  | Theme · Semantic / Dark · Minimal |
+| `border/default` | `--border-default` | `#27272a` |  | Theme · Semantic / Dark · Minimal |
+| `border/strong` | `--border-strong` | `#3f3f46` |  | Theme · Semantic / Dark · Minimal |
+| `brand/primary` | `--brand-primary` | `#16a34a` |  | Theme · Semantic / Dark · Minimal |
+| `color/extended/f59e0b` | `--color-extended-f59e0b` | `#f59e0b` |  | Color Tokens / Light |
 | `color/neutral/white` | `--color-neutral-white` | `#ffffff` |  | Color Tokens / Light |
 | `color/text/placeholder` | `--color-text-placeholder` | `#cccccc` |  | Color Tokens / Light |
-| `org/border` | `--org-border` | `#ffffff` |  | Theme · Semantic / Light |
-| `org/dac-nhan/bg` | `--org-dac-nhan-bg` | `#e65100` |  | Theme · Semantic / Light |
-| `org/dac-nhan/fg` | `--org-dac-nhan-fg` | `#ffffff` |  | Theme · Semantic / Light |
+| `org/border` | `--org-border` | `#3f3f46` | border/strong | Theme · Semantic / Dark · Minimal |
+| `org/dac-nhan/bg` | `--org-dac-nhan-bg` | `#202023` | bg/subtle | Theme · Semantic / Dark · Minimal |
+| `org/dac-nhan/fg` | `--org-dac-nhan-fg` | `#fb8c3a` |  | Theme · Semantic / Dark · Minimal |
 | `radius/6` | `--radius-6` | `6` |  | Number Tokens / Mode 1 |
 | `radius/8` | `--radius-8` | `8` |  | Number Tokens / Mode 1 |
 | `radius/full` | `--radius-full` | `9999` |  | Number Tokens / Mode 1 |
@@ -41,7 +46,10 @@ Nền trang: `#18181a`.
 | `spacing/32` | `--spacing-32` | `32` |  | Number Tokens / Mode 1 |
 | `spacing/4` | `--spacing-4` | `4` |  | Number Tokens / Mode 1 |
 | `spacing/8` | `--spacing-8` | `8` |  | Number Tokens / Mode 1 |
-| `theme/is-dark` | `--theme-is-dark` | `false` |  | Theme · Semantic / Light |
+| `text/on-brand` | `--text-on-brand` | `#ffffff` |  | Theme · Semantic / Dark · Minimal |
+| `text/primary` | `--text-primary` | `#ededef` |  | Theme · Semantic / Dark · Minimal |
+| `text/secondary` | `--text-secondary` | `#a1a1aa` |  | Theme · Semantic / Dark · Minimal |
+| `theme/is-dark` | `--theme-is-dark` | `true` |  | Theme · Semantic / Dark · Minimal |
 
 **Style Figma đang dùng:**
 
@@ -70,30 +78,30 @@ Nền trang: `#18181a`.
 
 | Style | Font family | Cỡ / line-height | Độ đậm | Letter-spacing | Màu | Số lần | Ví dụ |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| — | Afacad | 20 / 27px | 600 | 0 | #ededef | 1 | “Thư viện kiến thức” |
-| — | Noto Sans SC | 18 / 22px | 500 | 0 | #ededef | 10 | “你好” |
+| — | Afacad | 20 / 27px | 600 | 0 | #ededef (text/primary) | 1 | “Thư viện kiến thức” |
+| — | Noto Sans SC | 18 / 22px | 500 | 0 | #ededef (text/primary) | 10 | “你好” |
 | — | Afacad | 16 / 20px | 500 · case title | 0 | #a1a1aa | 5 | “Ngữ Pháp” |
 | `Body/16/Bold` | Afacad | 16 / 20px | 700 | 0 | #16a34a | 1 | “Từ Vựng” |
 | `Body/15/Medium` | Afacad | 15 / 19px | 500 | 0 | #ededef | 11 | “1.240 từ vựng” |
 | `Body/15/Regular` | Afacad | 15 / 19px | 400 | 0 | #cccccc (color/text/placeholder) | 1 | “Tìm từ, phiên âm, nghĩa…” |
 | — | Afacad | 15 / 18px | 400 | 0 | #ededef | 1 | “Cấp độ: Tất cả” |
 | `Body/15/SemiBold` | Afacad | 15 / 19px | 600 | 0 | #16a34a | 1 | “Xoá bộ lọc” |
-| — | Afacad | 14 / 19px | 400 | 0 | #ededef | 19 | “Nǐ hǎo” |
+| — | Afacad | 14 / 19px | 400 | 0 | #ededef (text/primary) | 19 | “Nǐ hǎo” |
 | `Body/14/Medium` | Afacad | 14 / 18px | 500 | 0 | #2d9732 | 8 | “Công khai” |
 | `Body/14/Medium` | Afacad | 14 / 18px | 500 | 0 | #c2410c | 2 | “Nháp” |
 | — | Unbounded | 14 / 17px | 500 | 0 | #fb8c3a (org/dac-nhan/fg) | 1 | “Đắc Nhân” |
-| — | Afacad | 13 / 17px | 500 | 0 | #ededef | 4 | “2” |
+| — | Afacad | 13 / 17px | 500 | 0 | #ededef (text/primary) | 4 | “2” |
 | `Body/13/Bold` | Afacad | 13 / 16px | 700 | 0 | #0f766e | 1 | “CD” |
 | — | Unbounded | 13 / 16px | 600 | 0 | #ffffff (color/neutral/white) | 1 | “Học Liệu Ngôn Ngữ” |
 | — | Afacad | 13 / 16px | 500 | 0 | #ffffff (color/neutral/white) | 1 | “CD.dacnhan@gmail.com” |
-| — | Afacad | 13 / 17px | 400 | 0 | #a1a1aa | 1 | “Kho từ vựng, ngữ pháp, mẫu câu, hán tự …” |
-| — | Afacad | 13 / 17px | 400 | 0 | #f59e0b | 1 | “— trống —” |
-| — | Afacad | 13 / 17px | 500 | 0 | #ffffff | 1 | “1” |
-| — | Afacad | 12 / 16px | 600 | 0 | #a1a1aa | 17 | “STT” |
-| — | Afacad | 12 / 16px | 400 | 0 | #ededef | 8 | “HK I · 3 bài” |
+| — | Afacad | 13 / 17px | 400 | 0 | #a1a1aa (text/secondary) | 1 | “Kho từ vựng, ngữ pháp, mẫu câu, hán tự …” |
+| — | Afacad | 13 / 17px | 400 | 0 | #f59e0b (color/extended/f59e0b) | 1 | “— trống —” |
+| — | Afacad | 13 / 17px | 500 | 0 | #ffffff (text/on-brand) | 1 | “1” |
+| — | Afacad | 12 / 16px | 600 | 0 | #a1a1aa (text/secondary) | 17 | “STT” |
+| — | Afacad | 12 / 16px | 400 | 0 | #ededef (text/primary) | 8 | “HK I · 3 bài” |
 | — | Unbounded | 12 / 15px | 600 · case title | 0 | #ffffff (color/neutral/white) | 4 | “Quy trình” |
-| — | Afacad | 12 / 16px | 400 | 0 | #f59e0b | 2 | “Chưa dùng” |
-| — | Afacad | 12 / 16px | 400 | 0 | #a1a1aa | 1 | “Hiển thị 1–50 trong 1.240 từ vựng” |
+| — | Afacad | 12 / 16px | 400 | 0 | #f59e0b (color/extended/f59e0b) | 2 | “Chưa dùng” |
+| — | Afacad | 12 / 16px | 400 | 0 | #a1a1aa (text/secondary) | 1 | “Hiển thị 1–50 trong 1.240 từ vựng” |
 | — | Unbounded | 11 / 14px | 600 · case title | 0 | #ffffff (color/neutral/white) | 18 | “Kiến thức (S1) ” |
 
 ## 4. Cấu trúc chi tiết
@@ -104,8 +112,8 @@ Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí ·
   - [khối] **Content** — 1140×1186 · @ (300, 64) abs · column gap 16 pad 24 24 24 24 · clip `6579:371256`
     - [khối] **Tiêu đề & hành động** — 1092×46 [FILL×HUG] · @ (24, 24) flow · row gap 12 align CENTER · clip `6579:371257`
       - [khối] **Tiêu đề** — 414×46 [HUG×HUG] · @ (0, 0) flow · column gap 2 · clip `6579:371258`
-        - [chữ] “Thư viện kiến thức” — 145×27 [HUG×HUG] · @ (0, 0) flow · Afacad 20/27px 600 #ededef · no-wrap `6579:371259`
-        - [chữ] “Kho từ vựng, ngữ pháp, mẫu câu, hán tự dùng chung · nhóm theo cụm kiến thức” — 414×17 [HUG×HUG] · @ (0, 29) flow · Afacad 13/17px 400 #a1a1aa · no-wrap `6579:371260`
+        - [chữ] “Thư viện kiến thức” — 145×27 [HUG×HUG] · @ (0, 0) flow · Afacad 20/27px 600 #ededef (text/primary) · no-wrap `6579:371259`
+        - [chữ] “Kho từ vựng, ngữ pháp, mẫu câu, hán tự dùng chung · nhóm theo cụm kiến thức” — 414×17 [HUG×HUG] · @ (0, 29) flow · Afacad 13/17px 400 #a1a1aa (text/secondary) · no-wrap `6579:371260`
       - [khối] **spacer** — 666×1 [FILL×FIXED] · @ (426, 22.5) flow · row · clip · trống `6579:371261`
     - [khối] **Nav · Loại kiến thức** — 537×36 [HUG×HUG] · @ (24, 86) flow · row gap 12 align CENTER · clip `6579:371262`
       - [instance] **Tab · Từ vựng** ⟨Atom/Side Tab: Có số đếm=false, State=Active, Icon=No, Kiểu=Gạch trái⟩ — 81×36 [HUG×HUG] · @ (0, 0) flow · row gap 8 pad 8 12 8 16 align CENTER · bg #102218 · radius 6px `6579:371263`
@@ -144,242 +152,242 @@ Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí ·
         - [chữ] “Xoá bộ lọc” — 63×19 [HUG×HUG] · @ (17, 4.5) flow · Afacad 15/19px 600 #16a34a · no-wrap `I6579:371275;1430:10764`
     - [khối] **Body · Bảng & Cụm** — 1092×569 [FILL×HUG] · @ (24, 191) flow · row gap 24 · clip `6579:371276`
       - [khối] **Cột trái · Bảng từ vựng** — 1092×569 [FILL×HUG] · @ (0, 0) flow · column gap 12 · clip `6579:371277`
-        - [khối] **Bảng từ vựng** — 1092×522 [FILL×HUG] · @ (0, 0) flow · column · bg #18181a · radius 12px · border 1px solid #27272a · clip `6579:371278`
-          - [khối] **Header row** — 1090×40 [FILL×FIXED] · @ (1, 1) flow · row gap 12 pad 0 16 0 16 align CENTER · bg #121213 · clip `6579:371279`
+        - [khối] **Bảng từ vựng** — 1092×522 [FILL×HUG] · @ (0, 0) flow · column · bg #18181a (bg/surface) · radius 12px · border 1px solid #27272a (border/default) · clip `6579:371278`
+          - [khối] **Header row** — 1090×40 [FILL×FIXED] · @ (1, 1) flow · row gap 12 pad 0 16 0 16 align CENTER · bg #121213 (bg/canvas) · clip `6579:371279`
             - [khối] **Cell** — 44×16 [FIXED×HUG] · @ (16, 12) flow · row gap 8 align CENTER · clip `6579:371280`
-              - [chữ] “STT” — 17×16 [HUG×HUG] · @ (0, 0) flow · Afacad 12/16px 600 #a1a1aa · no-wrap `6579:371281`
+              - [chữ] “STT” — 17×16 [HUG×HUG] · @ (0, 0) flow · Afacad 12/16px 600 #a1a1aa (text/secondary) · no-wrap `6579:371281`
             - [khối] **Cell** — 126×16 [FIXED×HUG] · @ (72, 12) flow · row gap 8 align CENTER · clip `6579:371282`
-              - [chữ] “Từ” — 12×16 [HUG×HUG] · @ (0, 0) flow · Afacad 12/16px 600 #a1a1aa · no-wrap `6579:371283`
+              - [chữ] “Từ” — 12×16 [HUG×HUG] · @ (0, 0) flow · Afacad 12/16px 600 #a1a1aa (text/secondary) · no-wrap `6579:371283`
             - [khối] **Cell** — 120×16 [FIXED×HUG] · @ (210, 12) flow · row gap 8 align CENTER · clip `6579:371284`
-              - [chữ] “Phiên âm” — 45×16 [HUG×HUG] · @ (0, 0) flow · Afacad 12/16px 600 #a1a1aa · no-wrap `6579:371285`
+              - [chữ] “Phiên âm” — 45×16 [HUG×HUG] · @ (0, 0) flow · Afacad 12/16px 600 #a1a1aa (text/secondary) · no-wrap `6579:371285`
             - [khối] **Cell** — 310×16 [FIXED×HUG] · @ (342, 12) flow · row gap 8 align CENTER · clip `6579:371286`
-              - [chữ] “Nghĩa” — 29×16 [HUG×HUG] · @ (0, 0) flow · Afacad 12/16px 600 #a1a1aa · no-wrap `6579:371287`
+              - [chữ] “Nghĩa” — 29×16 [HUG×HUG] · @ (0, 0) flow · Afacad 12/16px 600 #a1a1aa (text/secondary) · no-wrap `6579:371287`
             - [khối] **Cell** — 110×16 [FIXED×HUG] · @ (664, 12) flow · row gap 8 align CENTER · clip `6579:371288`
-              - [chữ] “Cụm” — 23×16 [HUG×HUG] · @ (0, 0) flow · Afacad 12/16px 600 #a1a1aa · no-wrap `6579:371289`
+              - [chữ] “Cụm” — 23×16 [HUG×HUG] · @ (0, 0) flow · Afacad 12/16px 600 #a1a1aa (text/secondary) · no-wrap `6579:371289`
             - [khối] **Cell** — 100×16 [FIXED×HUG] · @ (786, 12) flow · row gap 8 align CENTER · clip `6579:371290`
-              - [chữ] “Đang dùng ở” — 62×16 [HUG×HUG] · @ (0, 0) flow · Afacad 12/16px 600 #a1a1aa · no-wrap `6579:371291`
+              - [chữ] “Đang dùng ở” — 62×16 [HUG×HUG] · @ (0, 0) flow · Afacad 12/16px 600 #a1a1aa (text/secondary) · no-wrap `6579:371291`
             - [khối] **Cell** — 100×16 [FIXED×HUG] · @ (898, 12) flow · row gap 8 justify CENTER align CENTER · clip `6579:371292`
-              - [chữ] “Trạng thái” — 48×16 [HUG×HUG] · @ (26, 0) flow · Afacad 12/16px 600 #a1a1aa · no-wrap `6579:371293`
+              - [chữ] “Trạng thái” — 48×16 [HUG×HUG] · @ (26, 0) flow · Afacad 12/16px 600 #a1a1aa (text/secondary) · no-wrap `6579:371293`
             - [khối] **Cell · Menu** — 28×20 · @ (1010, 10) flow · row justify CENTER align CENTER · clip · trống `6579:371294`
-          - [khối] **Row 1** — 1090×48 [FILL×FIXED] · @ (1, 41) flow · row gap 12 pad 0 16 0 16 align CENTER · bg #18181a · border 1px 0 0 0 solid #27272a · clip `6579:371295`
+          - [khối] **Row 1** — 1090×48 [FILL×FIXED] · @ (1, 41) flow · row gap 12 pad 0 16 0 16 align CENTER · bg #18181a (bg/surface) · border 1px 0 0 0 solid #27272a (border/default) · clip `6579:371295`
             - [khối] **Cell** — 44×16 [FIXED×HUG] · @ (16, 16.5) flow · row gap 8 align CENTER · clip `6579:371296`
-              - [chữ] “01” — 13×16 [HUG×HUG] · @ (0, 0) flow · Afacad 12/16px 600 #a1a1aa · no-wrap `6579:371297`
+              - [chữ] “01” — 13×16 [HUG×HUG] · @ (0, 0) flow · Afacad 12/16px 600 #a1a1aa (text/secondary) · no-wrap `6579:371297`
             - [khối] **Cell** — 126×22 [FIXED×HUG] · @ (72, 13.5) flow · row gap 4 align CENTER · clip `6579:371298`
               - [icon] **Icon · Loa** ⟨Liner Icon: Property 1=Âm thanh⟩ — 16×16 · @ (0, 3) flow · file /figma/assets/8cc1a27c6609.svg `6935:381630`
               - [icon] **Icon · Hình** ⟨Liner Icon: Property 1=Hình ảnh⟩ — 16×16 · @ (20, 3) flow · file /figma/assets/138e70a13b80.svg `6935:381632`
-              - [chữ] “你好” — 36×22 [HUG×HUG] · @ (40, 0) flow · Noto Sans SC 18/22px 500 #ededef · no-wrap `6579:371299`
+              - [chữ] “你好” — 36×22 [HUG×HUG] · @ (40, 0) flow · Noto Sans SC 18/22px 500 #ededef (text/primary) · no-wrap `6579:371299`
             - [khối] **Cell** — 120×19 [FIXED×HUG] · @ (210, 15) flow · row gap 8 align CENTER · clip `6579:371300`
-              - [chữ] “Nǐ hǎo” — 38×19 [HUG×HUG] · @ (0, 0) flow · Afacad 14/19px 400 #ededef · no-wrap `6579:371301`
+              - [chữ] “Nǐ hǎo” — 38×19 [HUG×HUG] · @ (0, 0) flow · Afacad 14/19px 400 #ededef (text/primary) · no-wrap `6579:371301`
             - [khối] **Cell** — 310×19 [FIXED×HUG] · @ (342, 15) flow · row gap 8 align CENTER · clip `6579:371302`
-              - [chữ] “Xin chào” — 49×19 [HUG×HUG] · @ (0, 0) flow · Afacad 14/19px 400 #ededef · no-wrap `6579:371303`
+              - [chữ] “Xin chào” — 49×19 [HUG×HUG] · @ (0, 0) flow · Afacad 14/19px 400 #ededef (text/primary) · no-wrap `6579:371303`
             - [khối] **Cell** — 110×23 [FIXED×HUG] · @ (664, 13) flow · row gap 8 align CENTER · clip `6579:371304`
               - [instance] **Atom/Tag** ⟨Atom/Tag: Close=false, Label=01. Chào hỏi, Color=Gray, Size=Small, Dropdown=No, Shape=Bo góc⟩ — 88×23 [HUG×HUG] · @ (0, 0) flow · row gap 2 pad 2 4 2 8 align CENTER · bg #121213 · radius 6px `6579:371305`
                 - [chữ] “01. Chào hỏi” — 76×19 [HUG×HUG] · @ (8, 2) flow · Afacad 15/19px 500 #ededef · no-wrap `I6579:371305;2015:30513`
             - [khối] **Cell** — 100×16 [FIXED×HUG] · @ (786, 16.5) flow · row gap 8 align CENTER · clip `6579:371306`
-              - [chữ] “HK I · 3 bài” — 51×16 [HUG×HUG] · @ (0, 0) flow · Afacad 12/16px 400 #ededef · no-wrap `6579:371307`
+              - [chữ] “HK I · 3 bài” — 51×16 [HUG×HUG] · @ (0, 0) flow · Afacad 12/16px 400 #ededef (text/primary) · no-wrap `6579:371307`
             - [khối] **Cell** — 100×26 [FIXED×HUG] · @ (898, 11.5) flow · row gap 8 justify CENTER align CENTER · clip `6579:371308`
               - [instance] **Atom/Badge** ⟨Atom/Badge: Label=Công khai, Variant=Success, Dropdown=Off⟩ — 77×26 [FIXED×HUG] · @ (11.5, 0) flow · row pad 4 10 4 10 justify CENTER align CENTER · bg #ecfdf5 · radius 6px `6579:371309`
                 - [chữ] “Công khai” — 57×18 [HUG×HUG] · @ (10, 4) flow · Afacad 14/18px 500 #2d9732 · no-wrap `I6579:371309;1048:1247`
             - [icon] **Cell · Menu** — 28×20 · @ (1010, 14.5) flow · file /figma/assets/48ba47f0734a.svg `6579:371310`
-          - [khối] **Row 2** — 1090×48 [FILL×FIXED] · @ (1, 89) flow · row gap 12 pad 0 16 0 16 align CENTER · bg #18181a · border 1px 0 0 0 solid #27272a · clip `6579:371312`
+          - [khối] **Row 2** — 1090×48 [FILL×FIXED] · @ (1, 89) flow · row gap 12 pad 0 16 0 16 align CENTER · bg #18181a (bg/surface) · border 1px 0 0 0 solid #27272a (border/default) · clip `6579:371312`
             - [khối] **Cell** — 44×16 [FIXED×HUG] · @ (16, 16.5) flow · row gap 8 align CENTER · clip `6579:371313`
-              - [chữ] “02” — 13×16 [HUG×HUG] · @ (0, 0) flow · Afacad 12/16px 600 #a1a1aa · no-wrap `6579:371314`
+              - [chữ] “02” — 13×16 [HUG×HUG] · @ (0, 0) flow · Afacad 12/16px 600 #a1a1aa (text/secondary) · no-wrap `6579:371314`
             - [khối] **Cell** — 126×22 [FIXED×HUG] · @ (72, 13.5) flow · row gap 4 align CENTER · clip `6579:371315`
               - [icon] **Icon · Loa** ⟨Liner Icon: Property 1=Âm thanh⟩ — 16×16 · @ (0, 3) flow · file /figma/assets/8cc1a27c6609.svg `6935:381634`
               - [khối] **Icon · Hình (trống)** — 16×16 · @ (20, 3) flow · clip · trống `6935:381636`
-              - [chữ] “再见” — 36×22 [HUG×HUG] · @ (40, 0) flow · Noto Sans SC 18/22px 500 #ededef · no-wrap `6579:371316`
+              - [chữ] “再见” — 36×22 [HUG×HUG] · @ (40, 0) flow · Noto Sans SC 18/22px 500 #ededef (text/primary) · no-wrap `6579:371316`
             - [khối] **Cell** — 120×19 [FIXED×HUG] · @ (210, 15) flow · row gap 8 align CENTER · clip `6579:371317`
-              - [chữ] “Zàijiàn” — 37×19 [HUG×HUG] · @ (0, 0) flow · Afacad 14/19px 400 #ededef · no-wrap `6579:371318`
+              - [chữ] “Zàijiàn” — 37×19 [HUG×HUG] · @ (0, 0) flow · Afacad 14/19px 400 #ededef (text/primary) · no-wrap `6579:371318`
             - [khối] **Cell** — 310×19 [FIXED×HUG] · @ (342, 15) flow · row gap 8 align CENTER · clip `6579:371319`
-              - [chữ] “Tạm biệt” — 49×19 [HUG×HUG] · @ (0, 0) flow · Afacad 14/19px 400 #ededef · no-wrap `6579:371320`
+              - [chữ] “Tạm biệt” — 49×19 [HUG×HUG] · @ (0, 0) flow · Afacad 14/19px 400 #ededef (text/primary) · no-wrap `6579:371320`
             - [khối] **Cell** — 110×23 [FIXED×HUG] · @ (664, 13) flow · row gap 8 align CENTER · clip `6579:371321`
               - [instance] **Atom/Tag** ⟨Atom/Tag: Close=false, Label=01. Chào hỏi, Color=Gray, Size=Small, Dropdown=No, Shape=Bo góc⟩ — 88×23 [HUG×HUG] · @ (0, 0) flow · row gap 2 pad 2 4 2 8 align CENTER · bg #121213 · radius 6px `6579:371322`
                 - [chữ] “01. Chào hỏi” — 76×19 [HUG×HUG] · @ (8, 2) flow · Afacad 15/19px 500 #ededef · no-wrap `I6579:371322;2015:30513`
             - [khối] **Cell** — 100×16 [FIXED×HUG] · @ (786, 16.5) flow · row gap 8 align CENTER · clip `6579:371323`
-              - [chữ] “HK I · 2 bài” — 51×16 [HUG×HUG] · @ (0, 0) flow · Afacad 12/16px 400 #ededef · no-wrap `6579:371324`
+              - [chữ] “HK I · 2 bài” — 51×16 [HUG×HUG] · @ (0, 0) flow · Afacad 12/16px 400 #ededef (text/primary) · no-wrap `6579:371324`
             - [khối] **Cell** — 100×26 [FIXED×HUG] · @ (898, 11.5) flow · row gap 8 justify CENTER align CENTER · clip `6579:371325`
               - [instance] **Atom/Badge** ⟨Atom/Badge: Label=Công khai, Variant=Success, Dropdown=Off⟩ — 77×26 [FIXED×HUG] · @ (11.5, 0) flow · row pad 4 10 4 10 justify CENTER align CENTER · bg #ecfdf5 · radius 6px `6579:371326`
                 - [chữ] “Công khai” — 57×18 [HUG×HUG] · @ (10, 4) flow · Afacad 14/18px 500 #2d9732 · no-wrap `I6579:371326;1048:1247`
             - [icon] **Cell · Menu** — 28×20 · @ (1010, 14.5) flow · file /figma/assets/48ba47f0734a.svg `6579:371327`
-          - [khối] **Row 3** — 1090×48 [FILL×FIXED] · @ (1, 137) flow · row gap 12 pad 0 16 0 16 align CENTER · bg #18181a · border 1px 0 0 0 solid #27272a · clip `6579:371329`
+          - [khối] **Row 3** — 1090×48 [FILL×FIXED] · @ (1, 137) flow · row gap 12 pad 0 16 0 16 align CENTER · bg #18181a (bg/surface) · border 1px 0 0 0 solid #27272a (border/default) · clip `6579:371329`
             - [khối] **Cell** — 44×16 [FIXED×HUG] · @ (16, 16.5) flow · row gap 8 align CENTER · clip `6579:371330`
-              - [chữ] “03” — 13×16 [HUG×HUG] · @ (0, 0) flow · Afacad 12/16px 600 #a1a1aa · no-wrap `6579:371331`
+              - [chữ] “03” — 13×16 [HUG×HUG] · @ (0, 0) flow · Afacad 12/16px 600 #a1a1aa (text/secondary) · no-wrap `6579:371331`
             - [khối] **Cell** — 126×22 [FIXED×HUG] · @ (72, 13.5) flow · row gap 4 align CENTER · clip `6579:371332`
               - [icon] **Icon · Loa** ⟨Liner Icon: Property 1=Âm thanh⟩ — 16×16 · @ (0, 3) flow · file /figma/assets/8cc1a27c6609.svg `6935:381637`
               - [icon] **Icon · Hình** ⟨Liner Icon: Property 1=Hình ảnh⟩ — 16×16 · @ (20, 3) flow · file /figma/assets/138e70a13b80.svg `6935:381639`
-              - [chữ] “谢谢” — 36×22 [HUG×HUG] · @ (40, 0) flow · Noto Sans SC 18/22px 500 #ededef · no-wrap `6579:371333`
+              - [chữ] “谢谢” — 36×22 [HUG×HUG] · @ (40, 0) flow · Noto Sans SC 18/22px 500 #ededef (text/primary) · no-wrap `6579:371333`
             - [khối] **Cell** — 120×19 [FIXED×HUG] · @ (210, 15) flow · row gap 8 align CENTER · clip `6579:371334`
-              - [chữ] “Xièxie” — 34×19 [HUG×HUG] · @ (0, 0) flow · Afacad 14/19px 400 #ededef · no-wrap `6579:371335`
+              - [chữ] “Xièxie” — 34×19 [HUG×HUG] · @ (0, 0) flow · Afacad 14/19px 400 #ededef (text/primary) · no-wrap `6579:371335`
             - [khối] **Cell** — 310×19 [FIXED×HUG] · @ (342, 15) flow · row gap 8 align CENTER · clip `6579:371336`
-              - [chữ] “Cảm ơn” — 45×19 [HUG×HUG] · @ (0, 0) flow · Afacad 14/19px 400 #ededef · no-wrap `6579:371337`
+              - [chữ] “Cảm ơn” — 45×19 [HUG×HUG] · @ (0, 0) flow · Afacad 14/19px 400 #ededef (text/primary) · no-wrap `6579:371337`
             - [khối] **Cell** — 110×23 [FIXED×HUG] · @ (664, 13) flow · row gap 8 align CENTER · clip `6579:371338`
               - [instance] **Atom/Tag** ⟨Atom/Tag: Close=false, Label=01. Chào hỏi, Color=Gray, Size=Small, Dropdown=No, Shape=Bo góc⟩ — 88×23 [HUG×HUG] · @ (0, 0) flow · row gap 2 pad 2 4 2 8 align CENTER · bg #121213 · radius 6px `6579:371339`
                 - [chữ] “01. Chào hỏi” — 76×19 [HUG×HUG] · @ (8, 2) flow · Afacad 15/19px 500 #ededef · no-wrap `I6579:371339;2015:30513`
             - [khối] **Cell** — 100×16 [FIXED×HUG] · @ (786, 16.5) flow · row gap 8 align CENTER · clip `6579:371340`
-              - [chữ] “HK I · 2 bài” — 51×16 [HUG×HUG] · @ (0, 0) flow · Afacad 12/16px 400 #ededef · no-wrap `6579:371341`
+              - [chữ] “HK I · 2 bài” — 51×16 [HUG×HUG] · @ (0, 0) flow · Afacad 12/16px 400 #ededef (text/primary) · no-wrap `6579:371341`
             - [khối] **Cell** — 100×26 [FIXED×HUG] · @ (898, 11.5) flow · row gap 8 justify CENTER align CENTER · clip `6579:371342`
               - [instance] **Atom/Badge** ⟨Atom/Badge: Label=Công khai, Variant=Success, Dropdown=Off⟩ — 77×26 [FIXED×HUG] · @ (11.5, 0) flow · row pad 4 10 4 10 justify CENTER align CENTER · bg #ecfdf5 · radius 6px `6579:371343`
                 - [chữ] “Công khai” — 57×18 [HUG×HUG] · @ (10, 4) flow · Afacad 14/18px 500 #2d9732 · no-wrap `I6579:371343;1048:1247`
             - [icon] **Cell · Menu** — 28×20 · @ (1010, 14.5) flow · file /figma/assets/48ba47f0734a.svg `6579:371344`
-          - [khối] **Row 4** — 1090×48 [FILL×FIXED] · @ (1, 185) flow · row gap 12 pad 0 16 0 16 align CENTER · bg #18181a · border 1px 0 0 0 solid #27272a · clip `6579:371346`
+          - [khối] **Row 4** — 1090×48 [FILL×FIXED] · @ (1, 185) flow · row gap 12 pad 0 16 0 16 align CENTER · bg #18181a (bg/surface) · border 1px 0 0 0 solid #27272a (border/default) · clip `6579:371346`
             - [khối] **Cell** — 44×16 [FIXED×HUG] · @ (16, 16.5) flow · row gap 8 align CENTER · clip `6579:371347`
-              - [chữ] “04” — 13×16 [HUG×HUG] · @ (0, 0) flow · Afacad 12/16px 600 #a1a1aa · no-wrap `6579:371348`
+              - [chữ] “04” — 13×16 [HUG×HUG] · @ (0, 0) flow · Afacad 12/16px 600 #a1a1aa (text/secondary) · no-wrap `6579:371348`
             - [khối] **Cell** — 126×22 [FIXED×HUG] · @ (72, 13.5) flow · row gap 4 align CENTER · clip `6579:371349`
               - [khối] **Icon · Loa (trống)** — 16×16 · @ (0, 3) flow · clip · trống `6935:381641`
               - [khối] **Icon · Hình (trống)** — 16×16 · @ (20, 3) flow · clip · trống `6935:381642`
-              - [chữ] “对不起” — 54×22 [HUG×HUG] · @ (40, 0) flow · Noto Sans SC 18/22px 500 #ededef · no-wrap `6579:371350`
+              - [chữ] “对不起” — 54×22 [HUG×HUG] · @ (40, 0) flow · Noto Sans SC 18/22px 500 #ededef (text/primary) · no-wrap `6579:371350`
             - [khối] **Cell** — 120×19 [FIXED×HUG] · @ (210, 15) flow · row gap 8 align CENTER · clip `6579:371351`
-              - [chữ] “Duìbuqǐ” — 44×19 [HUG×HUG] · @ (0, 0) flow · Afacad 14/19px 400 #ededef · no-wrap `6579:371352`
+              - [chữ] “Duìbuqǐ” — 44×19 [HUG×HUG] · @ (0, 0) flow · Afacad 14/19px 400 #ededef (text/primary) · no-wrap `6579:371352`
             - [khối] **Cell** — 310×19 [FIXED×HUG] · @ (342, 15) flow · row gap 8 align CENTER · clip `6579:371353`
-              - [chữ] “Xin lỗi” — 35×19 [HUG×HUG] · @ (0, 0) flow · Afacad 14/19px 400 #ededef · no-wrap `6579:371354`
+              - [chữ] “Xin lỗi” — 35×19 [HUG×HUG] · @ (0, 0) flow · Afacad 14/19px 400 #ededef (text/primary) · no-wrap `6579:371354`
             - [khối] **Cell** — 110×23 [FIXED×HUG] · @ (664, 13) flow · row gap 8 align CENTER · clip `6579:371355`
               - [instance] **Atom/Tag** ⟨Atom/Tag: Close=false, Label=01. Chào hỏi, Color=Gray, Size=Small, Dropdown=No, Shape=Bo góc⟩ — 88×23 [HUG×HUG] · @ (0, 0) flow · row gap 2 pad 2 4 2 8 align CENTER · bg #121213 · radius 6px `6579:371356`
                 - [chữ] “01. Chào hỏi” — 76×19 [HUG×HUG] · @ (8, 2) flow · Afacad 15/19px 500 #ededef · no-wrap `I6579:371356;2015:30513`
             - [khối] **Cell** — 100×16 [FIXED×HUG] · @ (786, 16.5) flow · row gap 8 align CENTER · clip `6579:371357`
-              - [chữ] “HK I · 1 bài” — 51×16 [HUG×HUG] · @ (0, 0) flow · Afacad 12/16px 400 #ededef · no-wrap `6579:371358`
+              - [chữ] “HK I · 1 bài” — 51×16 [HUG×HUG] · @ (0, 0) flow · Afacad 12/16px 400 #ededef (text/primary) · no-wrap `6579:371358`
             - [khối] **Cell** — 100×26 [FIXED×HUG] · @ (898, 11.5) flow · row gap 8 justify CENTER align CENTER · clip `6579:371359`
               - [instance] **Atom/Badge** ⟨Atom/Badge: Label=Công khai, Variant=Success, Dropdown=Off⟩ — 77×26 [FIXED×HUG] · @ (11.5, 0) flow · row pad 4 10 4 10 justify CENTER align CENTER · bg #ecfdf5 · radius 6px `6579:371360`
                 - [chữ] “Công khai” — 57×18 [HUG×HUG] · @ (10, 4) flow · Afacad 14/18px 500 #2d9732 · no-wrap `I6579:371360;1048:1247`
             - [icon] **Cell · Menu** — 28×20 · @ (1010, 14.5) flow · file /figma/assets/48ba47f0734a.svg `6579:371361`
-          - [khối] **Row 5** — 1090×48 [FILL×FIXED] · @ (1, 233) flow · row gap 12 pad 0 16 0 16 align CENTER · bg #18181a · border 1px 0 0 0 solid #27272a · clip `6579:371363`
+          - [khối] **Row 5** — 1090×48 [FILL×FIXED] · @ (1, 233) flow · row gap 12 pad 0 16 0 16 align CENTER · bg #18181a (bg/surface) · border 1px 0 0 0 solid #27272a (border/default) · clip `6579:371363`
             - [khối] **Cell** — 44×16 [FIXED×HUG] · @ (16, 16.5) flow · row gap 8 align CENTER · clip `6579:371364`
-              - [chữ] “05” — 13×16 [HUG×HUG] · @ (0, 0) flow · Afacad 12/16px 600 #a1a1aa · no-wrap `6579:371365`
+              - [chữ] “05” — 13×16 [HUG×HUG] · @ (0, 0) flow · Afacad 12/16px 600 #a1a1aa (text/secondary) · no-wrap `6579:371365`
             - [khối] **Cell** — 126×22 [FIXED×HUG] · @ (72, 13.5) flow · row gap 4 align CENTER · clip `6579:371366`
               - [khối] **Icon · Loa (trống)** — 16×16 · @ (0, 3) flow · clip · trống `6935:381643`
               - [icon] **Icon · Hình** ⟨Liner Icon: Property 1=Hình ảnh⟩ — 16×16 · @ (20, 3) flow · file /figma/assets/138e70a13b80.svg `6935:381644`
-              - [chữ] “爸爸” — 36×22 [HUG×HUG] · @ (40, 0) flow · Noto Sans SC 18/22px 500 #ededef · no-wrap `6579:371367`
+              - [chữ] “爸爸” — 36×22 [HUG×HUG] · @ (40, 0) flow · Noto Sans SC 18/22px 500 #ededef (text/primary) · no-wrap `6579:371367`
             - [khối] **Cell** — 120×19 [FIXED×HUG] · @ (210, 15) flow · row gap 8 align CENTER · clip `6579:371368`
-              - [chữ] “Bàba” — 30×19 [HUG×HUG] · @ (0, 0) flow · Afacad 14/19px 400 #ededef · no-wrap `6579:371369`
+              - [chữ] “Bàba” — 30×19 [HUG×HUG] · @ (0, 0) flow · Afacad 14/19px 400 #ededef (text/primary) · no-wrap `6579:371369`
             - [khối] **Cell** — 310×19 [FIXED×HUG] · @ (342, 15) flow · row gap 8 align CENTER · clip `6579:371370`
-              - [chữ] “Bố” — 15×19 [HUG×HUG] · @ (0, 0) flow · Afacad 14/19px 400 #ededef · no-wrap `6579:371371`
+              - [chữ] “Bố” — 15×19 [HUG×HUG] · @ (0, 0) flow · Afacad 14/19px 400 #ededef (text/primary) · no-wrap `6579:371371`
             - [khối] **Cell** — 110×23 [FIXED×HUG] · @ (664, 13) flow · row gap 8 align CENTER · clip `6579:371372`
               - [instance] **Atom/Tag** ⟨Atom/Tag: Close=false, Label=02. Gia đình, Color=Gray, Size=Small, Dropdown=No, Shape=Bo góc⟩ — 84×23 [HUG×HUG] · @ (0, 0) flow · row gap 2 pad 2 4 2 8 align CENTER · bg #121213 · radius 6px `6579:371373`
                 - [chữ] “02. Gia đình” — 72×19 [HUG×HUG] · @ (8, 2) flow · Afacad 15/19px 500 #ededef · no-wrap `I6579:371373;2015:30513`
             - [khối] **Cell** — 100×16 [FIXED×HUG] · @ (786, 16.5) flow · row gap 8 align CENTER · clip `6579:371374`
-              - [chữ] “HK I · 2 bài” — 51×16 [HUG×HUG] · @ (0, 0) flow · Afacad 12/16px 400 #ededef · no-wrap `6579:371375`
+              - [chữ] “HK I · 2 bài” — 51×16 [HUG×HUG] · @ (0, 0) flow · Afacad 12/16px 400 #ededef (text/primary) · no-wrap `6579:371375`
             - [khối] **Cell** — 100×26 [FIXED×HUG] · @ (898, 11.5) flow · row gap 8 justify CENTER align CENTER · clip `6579:371376`
               - [instance] **Atom/Badge** ⟨Atom/Badge: Label=Công khai, Variant=Success, Dropdown=Off⟩ — 77×26 [FIXED×HUG] · @ (11.5, 0) flow · row pad 4 10 4 10 justify CENTER align CENTER · bg #ecfdf5 · radius 6px `6579:371377`
                 - [chữ] “Công khai” — 57×18 [HUG×HUG] · @ (10, 4) flow · Afacad 14/18px 500 #2d9732 · no-wrap `I6579:371377;1048:1247`
             - [icon] **Cell · Menu** — 28×20 · @ (1010, 14.5) flow · file /figma/assets/48ba47f0734a.svg `6579:371378`
-          - [khối] **Row 6** — 1090×48 [FILL×FIXED] · @ (1, 281) flow · row gap 12 pad 0 16 0 16 align CENTER · bg #18181a · border 1px 0 0 0 solid #27272a · clip `6579:371380`
+          - [khối] **Row 6** — 1090×48 [FILL×FIXED] · @ (1, 281) flow · row gap 12 pad 0 16 0 16 align CENTER · bg #18181a (bg/surface) · border 1px 0 0 0 solid #27272a (border/default) · clip `6579:371380`
             - [khối] **Cell** — 44×16 [FIXED×HUG] · @ (16, 16.5) flow · row gap 8 align CENTER · clip `6579:371381`
-              - [chữ] “06” — 13×16 [HUG×HUG] · @ (0, 0) flow · Afacad 12/16px 600 #a1a1aa · no-wrap `6579:371382`
+              - [chữ] “06” — 13×16 [HUG×HUG] · @ (0, 0) flow · Afacad 12/16px 600 #a1a1aa (text/secondary) · no-wrap `6579:371382`
             - [khối] **Cell** — 126×22 [FIXED×HUG] · @ (72, 13.5) flow · row gap 4 align CENTER · clip `6579:371383`
               - [icon] **Icon · Loa** ⟨Liner Icon: Property 1=Âm thanh⟩ — 16×16 · @ (0, 3) flow · file /figma/assets/8cc1a27c6609.svg `6935:381646`
               - [icon] **Icon · Hình** ⟨Liner Icon: Property 1=Hình ảnh⟩ — 16×16 · @ (20, 3) flow · file /figma/assets/138e70a13b80.svg `6935:381648`
-              - [chữ] “妈妈” — 36×22 [HUG×HUG] · @ (40, 0) flow · Noto Sans SC 18/22px 500 #ededef · no-wrap `6579:371384`
+              - [chữ] “妈妈” — 36×22 [HUG×HUG] · @ (40, 0) flow · Noto Sans SC 18/22px 500 #ededef (text/primary) · no-wrap `6579:371384`
             - [khối] **Cell** — 120×19 [FIXED×HUG] · @ (210, 15) flow · row gap 8 align CENTER · clip `6579:371385`
-              - [chữ] “Māma” — 37×19 [HUG×HUG] · @ (0, 0) flow · Afacad 14/19px 400 #ededef · no-wrap `6579:371386`
+              - [chữ] “Māma” — 37×19 [HUG×HUG] · @ (0, 0) flow · Afacad 14/19px 400 #ededef (text/primary) · no-wrap `6579:371386`
             - [khối] **Cell** — 310×19 [FIXED×HUG] · @ (342, 15) flow · row gap 8 align CENTER · clip `6579:371387`
-              - [chữ] “Mẹ” — 18×19 [HUG×HUG] · @ (0, 0) flow · Afacad 14/19px 400 #ededef · no-wrap `6579:371388`
+              - [chữ] “Mẹ” — 18×19 [HUG×HUG] · @ (0, 0) flow · Afacad 14/19px 400 #ededef (text/primary) · no-wrap `6579:371388`
             - [khối] **Cell** — 110×23 [FIXED×HUG] · @ (664, 13) flow · row gap 8 align CENTER · clip `6579:371389`
               - [instance] **Atom/Tag** ⟨Atom/Tag: Close=false, Label=02. Gia đình, Color=Gray, Size=Small, Dropdown=No, Shape=Bo góc⟩ — 84×23 [HUG×HUG] · @ (0, 0) flow · row gap 2 pad 2 4 2 8 align CENTER · bg #121213 · radius 6px `6579:371390`
                 - [chữ] “02. Gia đình” — 72×19 [HUG×HUG] · @ (8, 2) flow · Afacad 15/19px 500 #ededef · no-wrap `I6579:371390;2015:30513`
             - [khối] **Cell** — 100×16 [FIXED×HUG] · @ (786, 16.5) flow · row gap 8 align CENTER · clip `6579:371391`
-              - [chữ] “HK I · 2 bài” — 51×16 [HUG×HUG] · @ (0, 0) flow · Afacad 12/16px 400 #ededef · no-wrap `6579:371392`
+              - [chữ] “HK I · 2 bài” — 51×16 [HUG×HUG] · @ (0, 0) flow · Afacad 12/16px 400 #ededef (text/primary) · no-wrap `6579:371392`
             - [khối] **Cell** — 100×26 [FIXED×HUG] · @ (898, 11.5) flow · row gap 8 justify CENTER align CENTER · clip `6579:371393`
               - [instance] **Atom/Badge** ⟨Atom/Badge: Label=Công khai, Variant=Success, Dropdown=Off⟩ — 77×26 [FIXED×HUG] · @ (11.5, 0) flow · row pad 4 10 4 10 justify CENTER align CENTER · bg #ecfdf5 · radius 6px `6579:371394`
                 - [chữ] “Công khai” — 57×18 [HUG×HUG] · @ (10, 4) flow · Afacad 14/18px 500 #2d9732 · no-wrap `I6579:371394;1048:1247`
             - [icon] **Cell · Menu** — 28×20 · @ (1010, 14.5) flow · file /figma/assets/48ba47f0734a.svg `6579:371395`
-          - [khối] **Row 7** — 1090×48 [FILL×FIXED] · @ (1, 329) flow · row gap 12 pad 0 16 0 16 align CENTER · bg #18181a · border 1px 0 0 0 solid #27272a · clip `6579:371397`
+          - [khối] **Row 7** — 1090×48 [FILL×FIXED] · @ (1, 329) flow · row gap 12 pad 0 16 0 16 align CENTER · bg #18181a (bg/surface) · border 1px 0 0 0 solid #27272a (border/default) · clip `6579:371397`
             - [khối] **Cell** — 44×16 [FIXED×HUG] · @ (16, 16.5) flow · row gap 8 align CENTER · clip `6579:371398`
-              - [chữ] “07” — 13×16 [HUG×HUG] · @ (0, 0) flow · Afacad 12/16px 600 #a1a1aa · no-wrap `6579:371399`
+              - [chữ] “07” — 13×16 [HUG×HUG] · @ (0, 0) flow · Afacad 12/16px 600 #a1a1aa (text/secondary) · no-wrap `6579:371399`
             - [khối] **Cell** — 126×22 [FIXED×HUG] · @ (72, 13.5) flow · row gap 4 align CENTER · clip `6579:371400`
               - [icon] **Icon · Loa** ⟨Liner Icon: Property 1=Âm thanh⟩ — 16×16 · @ (0, 3) flow · file /figma/assets/8cc1a27c6609.svg `6935:381650`
               - [khối] **Icon · Hình (trống)** — 16×16 · @ (20, 3) flow · clip · trống `6935:381652`
-              - [chữ] “哥哥” — 36×22 [HUG×HUG] · @ (40, 0) flow · Noto Sans SC 18/22px 500 #ededef · no-wrap `6579:371401`
+              - [chữ] “哥哥” — 36×22 [HUG×HUG] · @ (40, 0) flow · Noto Sans SC 18/22px 500 #ededef (text/primary) · no-wrap `6579:371401`
             - [khối] **Cell** — 120×19 [FIXED×HUG] · @ (210, 15) flow · row gap 8 align CENTER · clip `6579:371402`
-              - [chữ] “Gēge” — 31×19 [HUG×HUG] · @ (0, 0) flow · Afacad 14/19px 400 #ededef · no-wrap `6579:371403`
+              - [chữ] “Gēge” — 31×19 [HUG×HUG] · @ (0, 0) flow · Afacad 14/19px 400 #ededef (text/primary) · no-wrap `6579:371403`
             - [khối] **Cell** — 310×19 [FIXED×HUG] · @ (342, 15) flow · row gap 8 align CENTER · clip `6579:371404`
-              - [chữ] “Anh trai” — 44×19 [HUG×HUG] · @ (0, 0) flow · Afacad 14/19px 400 #ededef · no-wrap `6579:371405`
+              - [chữ] “Anh trai” — 44×19 [HUG×HUG] · @ (0, 0) flow · Afacad 14/19px 400 #ededef (text/primary) · no-wrap `6579:371405`
             - [khối] **Cell** — 110×23 [FIXED×HUG] · @ (664, 13) flow · row gap 8 align CENTER · clip `6579:371406`
               - [instance] **Atom/Tag** ⟨Atom/Tag: Close=false, Label=02. Gia đình, Color=Gray, Size=Small, Dropdown=No, Shape=Bo góc⟩ — 84×23 [HUG×HUG] · @ (0, 0) flow · row gap 2 pad 2 4 2 8 align CENTER · bg #121213 · radius 6px `6579:371407`
                 - [chữ] “02. Gia đình” — 72×19 [HUG×HUG] · @ (8, 2) flow · Afacad 15/19px 500 #ededef · no-wrap `I6579:371407;2015:30513`
             - [khối] **Cell** — 100×16 [FIXED×HUG] · @ (786, 16.5) flow · row gap 8 align CENTER · clip `6579:371408`
-              - [chữ] “Chưa dùng” — 54×16 [HUG×HUG] · @ (0, 0) flow · Afacad 12/16px 400 #f59e0b · no-wrap `6579:371409`
+              - [chữ] “Chưa dùng” — 54×16 [HUG×HUG] · @ (0, 0) flow · Afacad 12/16px 400 #f59e0b (color/extended/f59e0b) · no-wrap `6579:371409`
             - [khối] **Cell** — 100×26 [FIXED×HUG] · @ (898, 11.5) flow · row gap 8 justify CENTER align CENTER · clip `6579:371410`
               - [instance] **Atom/Badge** ⟨Atom/Badge: Label=Nháp, Variant=Warning, Dropdown=Off⟩ — 77×26 [FIXED×HUG] · @ (11.5, 0) flow · row pad 4 10 4 10 justify CENTER align CENTER · bg #102218 · radius 6px `6579:371411`
                 - [chữ] “Nháp” — 31×18 [HUG×HUG] · @ (23, 4) flow · Afacad 14/18px 500 #c2410c · no-wrap `I6579:371411;1048:1251`
             - [icon] **Cell · Menu** — 28×20 · @ (1010, 14.5) flow · file /figma/assets/48ba47f0734a.svg `6579:371412`
-          - [khối] **Row 8** — 1090×48 [FILL×FIXED] · @ (1, 377) flow · row gap 12 pad 0 16 0 16 align CENTER · bg #18181a · border 1px 0 0 0 solid #27272a · clip `6579:371414`
+          - [khối] **Row 8** — 1090×48 [FILL×FIXED] · @ (1, 377) flow · row gap 12 pad 0 16 0 16 align CENTER · bg #18181a (bg/surface) · border 1px 0 0 0 solid #27272a (border/default) · clip `6579:371414`
             - [khối] **Cell** — 44×16 [FIXED×HUG] · @ (16, 16.5) flow · row gap 8 align CENTER · clip `6579:371415`
-              - [chữ] “08” — 13×16 [HUG×HUG] · @ (0, 0) flow · Afacad 12/16px 600 #a1a1aa · no-wrap `6579:371416`
+              - [chữ] “08” — 13×16 [HUG×HUG] · @ (0, 0) flow · Afacad 12/16px 600 #a1a1aa (text/secondary) · no-wrap `6579:371416`
             - [khối] **Cell** — 126×22 [FIXED×HUG] · @ (72, 13.5) flow · row gap 4 align CENTER · clip `6579:371417`
               - [khối] **Icon · Loa (trống)** — 16×16 · @ (0, 3) flow · clip · trống `6935:381653`
               - [khối] **Icon · Hình (trống)** — 16×16 · @ (20, 3) flow · clip · trống `6935:381654`
-              - [chữ] “学习” — 36×22 [HUG×HUG] · @ (40, 0) flow · Noto Sans SC 18/22px 500 #ededef · no-wrap `6579:371418`
+              - [chữ] “学习” — 36×22 [HUG×HUG] · @ (40, 0) flow · Noto Sans SC 18/22px 500 #ededef (text/primary) · no-wrap `6579:371418`
             - [khối] **Cell** — 120×19 [FIXED×HUG] · @ (210, 15) flow · row gap 8 align CENTER · clip `6579:371419`
-              - [chữ] “Xuéxí” — 31×19 [HUG×HUG] · @ (0, 0) flow · Afacad 14/19px 400 #ededef · no-wrap `6579:371420`
+              - [chữ] “Xuéxí” — 31×19 [HUG×HUG] · @ (0, 0) flow · Afacad 14/19px 400 #ededef (text/primary) · no-wrap `6579:371420`
             - [khối] **Cell** — 310×19 [FIXED×HUG] · @ (342, 15) flow · row gap 8 align CENTER · clip `6579:371421`
-              - [chữ] “Học tập” — 43×19 [HUG×HUG] · @ (0, 0) flow · Afacad 14/19px 400 #ededef · no-wrap `6579:371422`
+              - [chữ] “Học tập” — 43×19 [HUG×HUG] · @ (0, 0) flow · Afacad 14/19px 400 #ededef (text/primary) · no-wrap `6579:371422`
             - [khối] **Cell** — 110×23 [FIXED×HUG] · @ (664, 13) flow · row gap 8 align CENTER · clip `6579:371423`
               - [instance] **Atom/Tag** ⟨Atom/Tag: Close=false, Label=03. Học tập, Color=Gray, Size=Small, Dropdown=No, Shape=Bo góc⟩ — 80×23 [HUG×HUG] · @ (0, 0) flow · row gap 2 pad 2 4 2 8 align CENTER · bg #121213 · radius 6px `6579:371424`
                 - [chữ] “03. Học tập” — 68×19 [HUG×HUG] · @ (8, 2) flow · Afacad 15/19px 500 #ededef · no-wrap `I6579:371424;2015:30513`
             - [khối] **Cell** — 100×16 [FIXED×HUG] · @ (786, 16.5) flow · row gap 8 align CENTER · clip `6579:371425`
-              - [chữ] “HK I · 4 bài” — 51×16 [HUG×HUG] · @ (0, 0) flow · Afacad 12/16px 400 #ededef · no-wrap `6579:371426`
+              - [chữ] “HK I · 4 bài” — 51×16 [HUG×HUG] · @ (0, 0) flow · Afacad 12/16px 400 #ededef (text/primary) · no-wrap `6579:371426`
             - [khối] **Cell** — 100×26 [FIXED×HUG] · @ (898, 11.5) flow · row gap 8 justify CENTER align CENTER · clip `6579:371427`
               - [instance] **Atom/Badge** ⟨Atom/Badge: Label=Công khai, Variant=Success, Dropdown=Off⟩ — 77×26 [FIXED×HUG] · @ (11.5, 0) flow · row pad 4 10 4 10 justify CENTER align CENTER · bg #ecfdf5 · radius 6px `6579:371428`
                 - [chữ] “Công khai” — 57×18 [HUG×HUG] · @ (10, 4) flow · Afacad 14/18px 500 #2d9732 · no-wrap `I6579:371428;1048:1247`
             - [icon] **Cell · Menu** — 28×20 · @ (1010, 14.5) flow · file /figma/assets/48ba47f0734a.svg `6579:371429`
-          - [khối] **Row 9** — 1090×48 [FILL×FIXED] · @ (1, 425) flow · row gap 12 pad 0 16 0 16 align CENTER · bg #18181a · border 1px 0 0 0 solid #27272a · clip `6579:371431`
+          - [khối] **Row 9** — 1090×48 [FILL×FIXED] · @ (1, 425) flow · row gap 12 pad 0 16 0 16 align CENTER · bg #18181a (bg/surface) · border 1px 0 0 0 solid #27272a (border/default) · clip `6579:371431`
             - [khối] **Cell** — 44×16 [FIXED×HUG] · @ (16, 16.5) flow · row gap 8 align CENTER · clip `6579:371432`
-              - [chữ] “09” — 13×16 [HUG×HUG] · @ (0, 0) flow · Afacad 12/16px 600 #a1a1aa · no-wrap `6579:371433`
+              - [chữ] “09” — 13×16 [HUG×HUG] · @ (0, 0) flow · Afacad 12/16px 600 #a1a1aa (text/secondary) · no-wrap `6579:371433`
             - [khối] **Cell** — 126×22 [FIXED×HUG] · @ (72, 13.5) flow · row gap 4 align CENTER · clip `6579:371434`
               - [icon] **Icon · Loa** ⟨Liner Icon: Property 1=Âm thanh⟩ — 16×16 · @ (0, 3) flow · file /figma/assets/8cc1a27c6609.svg `6935:381655`
               - [icon] **Icon · Hình** ⟨Liner Icon: Property 1=Hình ảnh⟩ — 16×16 · @ (20, 3) flow · file /figma/assets/138e70a13b80.svg `6935:381657`
-              - [chữ] “老师” — 36×22 [HUG×HUG] · @ (40, 0) flow · Noto Sans SC 18/22px 500 #ededef · no-wrap `6579:371435`
+              - [chữ] “老师” — 36×22 [HUG×HUG] · @ (40, 0) flow · Noto Sans SC 18/22px 500 #ededef (text/primary) · no-wrap `6579:371435`
             - [khối] **Cell** — 120×19 [FIXED×HUG] · @ (210, 15) flow · row gap 8 align CENTER · clip `6579:371436`
-              - [chữ] “Lǎoshī” — 35×19 [HUG×HUG] · @ (0, 0) flow · Afacad 14/19px 400 #ededef · no-wrap `6579:371437`
+              - [chữ] “Lǎoshī” — 35×19 [HUG×HUG] · @ (0, 0) flow · Afacad 14/19px 400 #ededef (text/primary) · no-wrap `6579:371437`
             - [khối] **Cell** — 310×19 [FIXED×HUG] · @ (342, 15) flow · row gap 8 align CENTER · clip `6579:371438`
-              - [chữ] “Giáo viên” — 53×19 [HUG×HUG] · @ (0, 0) flow · Afacad 14/19px 400 #ededef · no-wrap `6579:371439`
+              - [chữ] “Giáo viên” — 53×19 [HUG×HUG] · @ (0, 0) flow · Afacad 14/19px 400 #ededef (text/primary) · no-wrap `6579:371439`
             - [khối] **Cell** — 110×23 [FIXED×HUG] · @ (664, 13) flow · row gap 8 align CENTER · clip `6579:371440`
               - [instance] **Atom/Tag** ⟨Atom/Tag: Close=false, Label=03. Học tập, Color=Gray, Size=Small, Dropdown=No, Shape=Bo góc⟩ — 80×23 [HUG×HUG] · @ (0, 0) flow · row gap 2 pad 2 4 2 8 align CENTER · bg #121213 · radius 6px `6579:371441`
                 - [chữ] “03. Học tập” — 68×19 [HUG×HUG] · @ (8, 2) flow · Afacad 15/19px 500 #ededef · no-wrap `I6579:371441;2015:30513`
             - [khối] **Cell** — 100×16 [FIXED×HUG] · @ (786, 16.5) flow · row gap 8 align CENTER · clip `6579:371442`
-              - [chữ] “HK I · 3 bài” — 51×16 [HUG×HUG] · @ (0, 0) flow · Afacad 12/16px 400 #ededef · no-wrap `6579:371443`
+              - [chữ] “HK I · 3 bài” — 51×16 [HUG×HUG] · @ (0, 0) flow · Afacad 12/16px 400 #ededef (text/primary) · no-wrap `6579:371443`
             - [khối] **Cell** — 100×26 [FIXED×HUG] · @ (898, 11.5) flow · row gap 8 justify CENTER align CENTER · clip `6579:371444`
               - [instance] **Atom/Badge** ⟨Atom/Badge: Label=Công khai, Variant=Success, Dropdown=Off⟩ — 77×26 [FIXED×HUG] · @ (11.5, 0) flow · row pad 4 10 4 10 justify CENTER align CENTER · bg #ecfdf5 · radius 6px `6579:371445`
                 - [chữ] “Công khai” — 57×18 [HUG×HUG] · @ (10, 4) flow · Afacad 14/18px 500 #2d9732 · no-wrap `I6579:371445;1048:1247`
             - [icon] **Cell · Menu** — 28×20 · @ (1010, 14.5) flow · file /figma/assets/48ba47f0734a.svg `6579:371446`
-          - [khối] **Row 10** — 1090×48 [FILL×FIXED] · @ (1, 473) flow · row gap 12 pad 0 16 0 16 align CENTER · bg #18181a · border 1px 0 0 0 solid #27272a · clip `6579:371448`
+          - [khối] **Row 10** — 1090×48 [FILL×FIXED] · @ (1, 473) flow · row gap 12 pad 0 16 0 16 align CENTER · bg #18181a (bg/surface) · border 1px 0 0 0 solid #27272a (border/default) · clip `6579:371448`
             - [khối] **Cell** — 44×16 [FIXED×HUG] · @ (16, 16.5) flow · row gap 8 align CENTER · clip `6579:371449`
-              - [chữ] “10” — 13×16 [HUG×HUG] · @ (0, 0) flow · Afacad 12/16px 600 #a1a1aa · no-wrap `6579:371450`
+              - [chữ] “10” — 13×16 [HUG×HUG] · @ (0, 0) flow · Afacad 12/16px 600 #a1a1aa (text/secondary) · no-wrap `6579:371450`
             - [khối] **Cell** — 126×22 [FIXED×HUG] · @ (72, 13.5) flow · row gap 4 align CENTER · clip `6579:371451`
               - [khối] **Icon · Loa (trống)** — 16×16 · @ (0, 3) flow · clip · trống `6935:381659`
               - [icon] **Icon · Hình** ⟨Liner Icon: Property 1=Hình ảnh⟩ — 16×16 · @ (20, 3) flow · file /figma/assets/138e70a13b80.svg `6935:381660`
-              - [chữ] “苹果” — 36×22 [HUG×HUG] · @ (40, 0) flow · Noto Sans SC 18/22px 500 #ededef · no-wrap `6579:371452`
+              - [chữ] “苹果” — 36×22 [HUG×HUG] · @ (40, 0) flow · Noto Sans SC 18/22px 500 #ededef (text/primary) · no-wrap `6579:371452`
             - [khối] **Cell** — 120×19 [FIXED×HUG] · @ (210, 15) flow · row gap 8 align CENTER · clip `6579:371453`
-              - [chữ] “Píngguǒ” — 46×19 [HUG×HUG] · @ (0, 0) flow · Afacad 14/19px 400 #ededef · no-wrap `6579:371454`
+              - [chữ] “Píngguǒ” — 46×19 [HUG×HUG] · @ (0, 0) flow · Afacad 14/19px 400 #ededef (text/primary) · no-wrap `6579:371454`
             - [khối] **Cell** — 310×17 [FIXED×HUG] · @ (342, 16) flow · row gap 8 align CENTER · clip `6579:371455`
-              - [chữ] “— trống —” — 60×17 [HUG×HUG] · @ (0, 0) flow · Afacad 13/17px 400 #f59e0b · no-wrap `6579:371456`
+              - [chữ] “— trống —” — 60×17 [HUG×HUG] · @ (0, 0) flow · Afacad 13/17px 400 #f59e0b (color/extended/f59e0b) · no-wrap `6579:371456`
             - [khối] **Cell** — 110×23 [FIXED×HUG] · @ (664, 13) flow · row gap 8 align CENTER · clip `6579:371457`
               - [instance] **Atom/Tag** ⟨Atom/Tag: Close=false, Label=04. Mua sắm, Color=Gray, Size=Small, Dropdown=No, Shape=Bo góc⟩ — 88×23 [HUG×HUG] · @ (0, 0) flow · row gap 2 pad 2 4 2 8 align CENTER · bg #121213 · radius 6px `6579:371458`
                 - [chữ] “04. Mua sắm” — 76×19 [HUG×HUG] · @ (8, 2) flow · Afacad 15/19px 500 #ededef · no-wrap `I6579:371458;2015:30513`
             - [khối] **Cell** — 100×16 [FIXED×HUG] · @ (786, 16.5) flow · row gap 8 align CENTER · clip `6579:371459`
-              - [chữ] “Chưa dùng” — 54×16 [HUG×HUG] · @ (0, 0) flow · Afacad 12/16px 400 #f59e0b · no-wrap `6579:371460`
+              - [chữ] “Chưa dùng” — 54×16 [HUG×HUG] · @ (0, 0) flow · Afacad 12/16px 400 #f59e0b (color/extended/f59e0b) · no-wrap `6579:371460`
             - [khối] **Cell** — 100×26 [FIXED×HUG] · @ (898, 11.5) flow · row gap 8 justify CENTER align CENTER · clip `6579:371461`
               - [instance] **Atom/Badge** ⟨Atom/Badge: Label=Nháp, Variant=Warning, Dropdown=Off⟩ — 77×26 [FIXED×HUG] · @ (11.5, 0) flow · row pad 4 10 4 10 justify CENTER align CENTER · bg #102218 · radius 6px `6579:371462`
                 - [chữ] “Nháp” — 31×18 [HUG×HUG] · @ (23, 4) flow · Afacad 14/18px 500 #c2410c · no-wrap `I6579:371462;1048:1251`
             - [icon] **Cell · Menu** — 28×20 · @ (1010, 14.5) flow · file /figma/assets/48ba47f0734a.svg `6579:371463`
         - [khối] **Footer · Phân trang** — 1092×35 [FILL×HUG] · @ (0, 534) flow · row gap 8 align CENTER · clip `6579:371465`
-          - [chữ] “Hiển thị 1–50 trong 1.240 từ vựng” — 876×16 [FILL×HUG] · @ (0, 9.5) flow · Afacad 12/16px 400 #a1a1aa `6579:371466`
-          - [khối] **Trang 1** — 31×33 [HUG×HUG] · @ (884, 1) flow · row pad 8 12 8 12 align CENTER · bg #16a34a · radius 6px · clip `6579:371467`
-            - [chữ] “1” — 7×17 [HUG×HUG] · @ (12, 8) flow · Afacad 13/17px 500 #ffffff · no-wrap `6579:371468`
-          - [khối] **Trang 2** — 33×35 [HUG×HUG] · @ (923, 0) flow · row pad 8 12 8 12 align CENTER · bg #18181a · radius 6px · border 1px solid #27272a · clip `6579:371469`
-            - [chữ] “2” — 7×17 [HUG×HUG] · @ (13, 9) flow · Afacad 13/17px 500 #ededef · no-wrap `6579:371470`
-          - [khối] **Trang 3** — 33×35 [HUG×HUG] · @ (964, 0) flow · row pad 8 12 8 12 align CENTER · bg #18181a · radius 6px · border 1px solid #27272a · clip `6579:371471`
-            - [chữ] “3” — 7×17 [HUG×HUG] · @ (13, 9) flow · Afacad 13/17px 500 #ededef · no-wrap `6579:371472`
-          - [khối] **Trang …** — 39×35 [HUG×HUG] · @ (1005, 0) flow · row pad 8 12 8 12 align CENTER · bg #18181a · radius 6px · border 1px solid #27272a · clip `6579:371473`
-            - [chữ] “…” — 13×17 [HUG×HUG] · @ (13, 9) flow · Afacad 13/17px 500 #ededef · no-wrap `6579:371474`
-          - [khối] **Trang 124** — 40×35 [HUG×HUG] · @ (1052, 0) flow · row pad 8 12 8 12 align CENTER · bg #18181a · radius 6px · border 1px solid #27272a · clip `6579:371475`
-            - [chữ] “25” — 14×17 [HUG×HUG] · @ (13, 9) flow · Afacad 13/17px 500 #ededef · no-wrap `6579:371476`
+          - [chữ] “Hiển thị 1–50 trong 1.240 từ vựng” — 876×16 [FILL×HUG] · @ (0, 9.5) flow · Afacad 12/16px 400 #a1a1aa (text/secondary) `6579:371466`
+          - [khối] **Trang 1** — 31×33 [HUG×HUG] · @ (884, 1) flow · row pad 8 12 8 12 align CENTER · bg #16a34a (brand/primary) · radius 6px · clip `6579:371467`
+            - [chữ] “1” — 7×17 [HUG×HUG] · @ (12, 8) flow · Afacad 13/17px 500 #ffffff (text/on-brand) · no-wrap `6579:371468`
+          - [khối] **Trang 2** — 33×35 [HUG×HUG] · @ (923, 0) flow · row pad 8 12 8 12 align CENTER · bg #18181a (bg/surface) · radius 6px · border 1px solid #27272a (border/default) · clip `6579:371469`
+            - [chữ] “2” — 7×17 [HUG×HUG] · @ (13, 9) flow · Afacad 13/17px 500 #ededef (text/primary) · no-wrap `6579:371470`
+          - [khối] **Trang 3** — 33×35 [HUG×HUG] · @ (964, 0) flow · row pad 8 12 8 12 align CENTER · bg #18181a (bg/surface) · radius 6px · border 1px solid #27272a (border/default) · clip `6579:371471`
+            - [chữ] “3” — 7×17 [HUG×HUG] · @ (13, 9) flow · Afacad 13/17px 500 #ededef (text/primary) · no-wrap `6579:371472`
+          - [khối] **Trang …** — 39×35 [HUG×HUG] · @ (1005, 0) flow · row pad 8 12 8 12 align CENTER · bg #18181a (bg/surface) · radius 6px · border 1px solid #27272a (border/default) · clip `6579:371473`
+            - [chữ] “…” — 13×17 [HUG×HUG] · @ (13, 9) flow · Afacad 13/17px 500 #ededef (text/primary) · no-wrap `6579:371474`
+          - [khối] **Trang 124** — 40×35 [HUG×HUG] · @ (1052, 0) flow · row pad 8 12 8 12 align CENTER · bg #18181a (bg/surface) · radius 6px · border 1px solid #27272a (border/default) · clip `6579:371475`
+            - [chữ] “25” — 14×17 [HUG×HUG] · @ (13, 9) flow · Afacad 13/17px 500 #ededef (text/primary) · no-wrap `6579:371476`
   - [instance] **Sidebar · MENU - CD** ⟨MENU - CD: Trang=Khoá học / Thư viện / Kiến thức⟩ — 300×1250 · @ (0, 0) abs · bg #18181a · clip `6579:371580`
     - [khối] **Frame 427322079** — 371.25×1198 · @ (0, -216) abs · bg #18181a `I6579:371580;5491:351736`
-      - [icon] **Subtract** — 332.18×305.61 · @ (277.9, 67.31) abs · file /figma/assets/4c2a8a733779.svg covers (1.16, 148.69) 20.94×150.43 `I6579:371580;5491:351738`
+      - [icon] **Subtract** — 332.18×305.61 · @ (277.9, 67.31) abs · file /figma/assets/88e35ac515e5.svg covers (1.16, 148.69) 20.94×150.43 `I6579:371580;5491:351738`
       - [icon] **Intersect** — 196.74×223.25 · @ (281.58, 127.62) abs · file /figma/assets/623bf4bd9e75.svg covers (0.61, 88.38) 17.81×130.99 `I6579:371580;5491:351745`
       - [icon] **Vector** — 92.05×189.04 · @ (0, 170.29) abs · file /figma/assets/e52441829479.svg covers (0, 45.71) 92.05×143.32 `I6579:371580;5491:351758`
       - [icon] **Vector** — 485.25×688.49 · @ (-54.28, 531.77) abs · file /figma/assets/624545f339e4.svg covers (54.28, 20.6) 300×651.43 `I6579:371580;5491:351759`
-      - [icon] **Union** — 328.37×643.92 · @ (98.87, 829.04) abs · file /figma/assets/7285ff724318.svg covers (0, 0) 201.13×636.96 `I6579:371580;5491:351760`
+      - [icon] **Union** — 328.37×643.92 · @ (98.87, 829.04) abs · file /figma/assets/8ae34082ae36.svg covers (0, 0) 201.13×636.96 `I6579:371580;5491:351760`
       - [icon] **Group 240002** — 324.75×297.48 · @ (-61.5, 181.5) abs · file /figma/assets/9960a058eabe.svg covers (61.5, 34.5) 263.25×262.98 `I6579:371580;5491:351763`
       - [khối] **material-symbols:menu-rounded** — 18×18 · @ (164.25, 240.75) abs · clip · trống `I6579:371580;5491:351784`
       - [khối] **Frame 427322029** — 36×36 · @ (9.75, 541.5) abs · clip · trống `I6579:371580;5491:351785`
@@ -475,7 +483,7 @@ Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí ·
         - [khối] **Container** — 148×32 [FILL×HUG] · @ (44, 2) flow · column `I6579:371629;2008:31771`
           - [chữ] “Học Liệu Ngôn Ngữ” — 148×16 [FILL×HUG] · @ (0, 0) flow · Unbounded 13/16px 600 #ffffff (color/neutral/white) · truncate 1 lines `I6579:371629;2008:31772`
           - [chữ] “CD.dacnhan@gmail.com” — 148×16 [FILL×HUG] · @ (0, 16) flow · Afacad 13/16px 500 #ffffff (color/neutral/white) · truncate 1 lines `I6579:371629;2008:31773`
-      - [icon] **Overlay** — 20×20 · @ (202, 8) flow · file /figma/assets/c19ad83f1e85.svg covers (-2, -2) 26×26 `I6579:371629;2008:31774`
+      - [icon] **Overlay** — 20×20 · @ (202, 8) flow · file /figma/assets/93cec656b378.svg covers (-2, -2) 26×26 `I6579:371629;2008:31774`
     - [instance] **Component 2** ⟨Switch Center: Property 1=Đắc Nhân⟩ — 166×42 · @ (12, 11) abs · row gap 4 pad 8 8 8 8 align CENTER · bg #202023 (org/dac-nhan/bg) · radius 8px · border 1px solid #3f3f46 (org/border) · shadow 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `6579:371630`
       - [khối] **Frame 427325409** — 128×24 [FILL×HUG] · @ (9, 9) flow · row gap 8 align CENTER `I6579:371630;4019:24203`
         - [icon] **LOGO CENTER** — 24×24 · @ (0, 0) flow · file /figma/assets/60d22290a6c3.svg covers (-1.78, 0) 27.55×27.55 `I6579:371630;4019:22291`
@@ -662,11 +670,11 @@ Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí ·
 | `/figma/assets/48ba47f0734a.svg` | svg | 28 × 20 | 6579:371446 |
 | `/figma/assets/138e70a13b80.svg` | svg | 16 × 16 | 6935:381660 |
 | `/figma/assets/48ba47f0734a.svg` | svg | 28 × 20 | 6579:371463 |
-| `/figma/assets/4c2a8a733779.svg` | svg | 20.94 × 150.43 | I6579:371580;5491:351738 |
+| `/figma/assets/88e35ac515e5.svg` | svg | 20.94 × 150.43 | I6579:371580;5491:351738 |
 | `/figma/assets/623bf4bd9e75.svg` | svg | 17.81 × 130.99 | I6579:371580;5491:351745 |
 | `/figma/assets/e52441829479.svg` | svg | 92.05 × 143.32 | I6579:371580;5491:351758 |
 | `/figma/assets/624545f339e4.svg` | svg | 300 × 651.43 | I6579:371580;5491:351759 |
-| `/figma/assets/7285ff724318.svg` | svg | 201.13 × 636.96 | I6579:371580;5491:351760 |
+| `/figma/assets/8ae34082ae36.svg` | svg | 201.13 × 636.96 | I6579:371580;5491:351760 |
 | `/figma/assets/9960a058eabe.svg` | svg | 263.25 × 262.98 | I6579:371580;5491:351763 |
 | `/figma/assets/88d7e98369ff.svg` | svg | 192 × 28.36 | I6579:371580;5491:351787 |
 | `/figma/assets/efc3a8aff80d.svg` | svg | 28 × 28 | I6579:371580;5491:351792;2245:87816 |
@@ -699,7 +707,7 @@ Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí ·
 | `/figma/assets/cae1412c87a2.svg` | svg | 54 × 44 | I6579:371580;5491:351838 |
 | `/figma/assets/c3f59fe02b01.svg` | svg | 62 × 62 | I6579:371580;5491:351843 |
 | `/figma/assets/40abc130d9e8.svg` | svg | 1140 × 64 | 6579:371582 |
-| `/figma/assets/c19ad83f1e85.svg` | svg | 26 × 26 | I6579:371629;2008:31774 |
+| `/figma/assets/93cec656b378.svg` | svg | 26 × 26 | I6579:371629;2008:31774 |
 | `/figma/assets/60d22290a6c3.svg` | svg | 27.55 × 27.55 | I6579:371630;4019:22291 |
 | `/figma/assets/25020368deef.svg` | svg | 16 × 16 | I6579:371630;4019:24215 |
 

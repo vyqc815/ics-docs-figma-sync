@@ -5,7 +5,7 @@
 > **Nguồn:** PLS-ICS T8/2026 ›         ├─ HỌC VIÊN › ADM-HV-020600 — Chi tiết học viên / Ghi chú (`1117:11216`, file `rRVs5HX0kIHffbS0V40djG`)  
 > **Route:** `/chi-tiet-hoc-vien/ghi-chu`  
 > **Khung thiết kế:** 1440 × 1095 px  
-> **Xuất lúc:** 2026-11-02T03:22:36.869Z  
+> **Xuất lúc:** 2026-11-03T03:14:46.792Z  
 > **Spec đầy đủ (giá trị chính xác từng node):** `../../../.figma/pages/adm-hv-020600/page-spec.json`
 
 ## 1. Tổng quan
@@ -26,6 +26,9 @@ Nền trang: `#ffffff`.
 
 | Token | Biến CSS | Giá trị | Trỏ tới | Bộ / mode |
 | --- | --- | --- | --- | --- |
+| `bg/canvas` | `--bg-canvas` | `#f8fafc` | color/extended/f8fafc | Theme · Semantic / Light |
+| `bg/subtle` | `--bg-subtle` | `#f1f5f9` | color/surface/input | Theme · Semantic / Light |
+| `bg/surface` | `--bg-surface` | `#ffffff` | color/neutral/white | Theme · Semantic / Light |
 | `bố cục/khoảng cách khối` | `--bo-cuc-khoang-cach-khoi` | `16` | spacing/16 | Number Tokens / Mode 1 |
 | `bố cục/lề hai bên` | `--bo-cuc-le-hai-ben` | `16` | spacing/16 | Number Tokens / Mode 1 |
 | `bố cục/lề trên dưới` | `--bo-cuc-le-tren-duoi` | `24` | spacing/24 | Number Tokens / Mode 1 |
@@ -178,12 +181,12 @@ Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí ·
                   - [chữ] “Bình thường” — 73×19 [HUG×HUG] · @ (0, 0) flow · Afacad 15/19px 500 #2563eb · no-wrap `I3641:79035;1725:17078`
               - [icon] **Riêng tư** — 28×28 · @ (99, 0.5) flow · file /figma/assets/97e85e970379.svg `3641:79036`
               - [icon] **Menu ⋮** ⟨Action Icon: Icon=More, Size=18⟩ — 18×18 · @ (135, 5.5) flow · file /figma/assets/a46ee748f8a4.svg `3641:79038`
-          - [khối] **Nội dung** — 1140×46 [FILL×HUG] · @ (17, 82) flow · column pad 12 16 12 16 · bg #ffffff · radius 8px · border 1px solid #e2e8f0 (color/border/default) · clip `3641:79039`
+          - [khối] **Nội dung** — 1140×46 [FILL×HUG] · @ (17, 82) flow · column pad 12 16 12 16 · bg #ffffff (bg/surface) · radius 8px · border 1px solid #e2e8f0 (color/border/default) · clip `3641:79039`
             - [chữ] “Chuẩn bị lớp, tài liệu in sẵn cho 10 học viên. Liên hệ giảng viên xác nhận lịch dạy và test hệ thống ICS trước buổi học.” — 1106×20 [FILL×HUG] · @ (17, 13) flow · Afacad 15/20px 400 #334155 (color/text/primary) `3641:79040`
           - [khối] **Bình luận** — 91×19 [HUG×HUG] · @ (17, 140) flow · row gap 12 align CENTER · clip `3641:79041`
             - [chữ] “0 bình luận” — 61×19 [HUG×HUG] · @ (0, 0) flow · Afacad 14/19px 600 #e65100 (color/brand/orange) underline · no-wrap `3641:79042`
             - [icon] **Action Icon** ⟨Action Icon: Icon=Refresh, Size=18⟩ — 18×18 · @ (73, 0.5) flow · file /figma/assets/2e45f7c84b82.svg `3641:79043`
-        - [khối] **Thẻ ghi chú · Quan trọng · Công khai** — 1174×145 [FILL×HUG] · @ (0, 188) flow · column gap 12 pad 16 16 16 16 · bg #ffffff · radius 12px · border 1px solid #e2e8f0 (color/border/default) · shadow 0 2px 6px 0 rgba(15, 23, 41, 0.06) · clip `3641:79044`
+        - [khối] **Thẻ ghi chú · Quan trọng · Công khai** — 1174×145 [FILL×HUG] · @ (0, 188) flow · column gap 12 pad 16 16 16 16 · bg #ffffff (bg/surface) · radius 12px · border 1px solid #e2e8f0 (color/border/default) · shadow 0 2px 6px 0 rgba(15, 23, 41, 0.06) · clip `3641:79044`
           - [khối] **Đầu thẻ** — 1140×53 [FILL×HUG] · @ (17, 17) flow · row space-between · clip `3641:79045`
             - [khối] **Người tạo & tiêu đề** — 177×53 [HUG×HUG] · @ (0, 0) flow · column gap 6 · clip `3641:79046`
               - [chữ] “Gọi xác nhận lịch học” — 141×23 [HUG×HUG] · @ (0, 0) flow · Afacad 17/23px 600 #334155 (color/text/primary) · no-wrap `3641:79047`
@@ -199,7 +202,7 @@ Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí ·
                   - [chữ] “Quan trọng” — 69×19 [HUG×HUG] · @ (0, 0) flow · Afacad 15/19px 500 #ea580c · no-wrap `I3641:79054;1725:17096`
               - [icon] **Công khai** — 28×28 · @ (95, 0.5) flow · file /figma/assets/e596868f53be.svg `3641:79055`
               - [icon] **Menu ⋮** ⟨Action Icon: Icon=More, Size=18⟩ — 18×18 · @ (131, 5.5) flow · file /figma/assets/a46ee748f8a4.svg `3641:79057`
-          - [khối] **Nội dung** — 1140×46 [FILL×HUG] · @ (17, 82) flow · column pad 12 16 12 16 · bg #f8fafc · radius 8px · border 1px solid #e2e8f0 (color/border/default) · clip `3641:79058`
+          - [khối] **Nội dung** — 1140×46 [FILL×HUG] · @ (17, 82) flow · column pad 12 16 12 16 · bg #f8fafc (bg/canvas) · radius 8px · border 1px solid #e2e8f0 (color/border/default) · clip `3641:79058`
             - [chữ] “Gọi phụ huynh xác nhận lịch học bù tuần sau, nhắc mang theo sách bài tập.” — 1106×20 [FILL×HUG] · @ (17, 13) flow · Afacad 15/20px 400 #334155 (color/text/primary) `3641:79059`
         - [khối] **Thẻ ghi chú · Rất quan trọng · Riêng tư · Có bình luận** — 1174×428 [FILL×HUG] · @ (0, 345) flow · column gap 12 pad 16 16 16 16 · bg #fff4ed · radius 12px · border 1px solid #fed7c3 · shadow 0 2px 6px 0 rgba(15, 23, 41, 0.06) · clip `3641:79060`
           - [khối] **Đầu thẻ** — 1140×71 [FILL×HUG] · @ (17, 17) flow · row space-between · clip `3641:79061`
@@ -224,7 +227,7 @@ Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí ·
                   - [chữ] “Rất quan trọng” — 90×19 [HUG×HUG] · @ (0, 0) flow · Afacad 15/19px 500 #dc2626 · no-wrap `I3641:79078;1725:17114`
               - [icon] **Riêng tư** — 28×28 · @ (355, 0.5) flow · file /figma/assets/97e85e970379.svg `3641:79079`
               - [icon] **Menu ⋮** ⟨Action Icon: Icon=More, Size=18⟩ — 18×18 · @ (391, 5.5) flow · file /figma/assets/a46ee748f8a4.svg `3641:79081`
-          - [khối] **Nội dung** — 1140×46 [FILL×HUG] · @ (17, 100) flow · column pad 12 16 12 16 · bg #ffffff · radius 8px · border 1px solid #e2e8f0 (color/border/default) · clip `3641:79082`
+          - [khối] **Nội dung** — 1140×46 [FILL×HUG] · @ (17, 100) flow · column pad 12 16 12 16 · bg #ffffff (bg/surface) · radius 8px · border 1px solid #e2e8f0 (color/border/default) · clip `3641:79082`
             - [chữ] “Học viên vắng buổi 1, cần gọi lại trước buổi 2 để nắm tình hình.” — 1106×20 [FILL×HUG] · @ (17, 13) flow · Afacad 15/20px 400 #334155 (color/text/primary) `3641:79083`
           - [khối] **Bình luận** — 99×19 [HUG×HUG] · @ (17, 158) flow · row gap 12 align CENTER · clip `3641:79084`
             - [chữ] “Ẩn bình luận” — 69×19 [HUG×HUG] · @ (0, 0) flow · Afacad 14/19px 600 #e65100 (color/brand/orange) · no-wrap `3641:79085`
@@ -249,11 +252,11 @@ Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí ·
             - [khối] **Ô nhập bình luận** — 1140×46 [FILL×HUG] · @ (0, 176) flow · row gap 8 pad 6 6 6 12 align CENTER · bg #ffffff (color/neutral/white) · radius 8px · border 1px solid #e65100 (color/brand/orange) · clip `3641:79102`
               - [chữ] “Nhập bình luận của bạn” — 1080×19 [FILL×HUG] · @ (13, 13.5) flow · Afacad 14/19px 400 italic #cbd5e1 (color/text/muted) `3641:79103`
               - [icon] **Nút gửi** — 32×32 · @ (1101, 7) flow · file /figma/assets/5bdd1083b50e.svg `3778:40809`
-        - [khối] **Ghi chú nhanh** — 1174×54 [FILL×HUG] · @ (0, 785) flow · row gap 10 pad 10 10 10 16 align CENTER · bg #ffffff · radius 12px · border 1px solid #e65100 (color/brand/orange) · shadow 0 2px 8px 0 rgba(229, 82, 0, 0.08) · clip `3705:82029`
+        - [khối] **Ghi chú nhanh** — 1174×54 [FILL×HUG] · @ (0, 785) flow · row gap 10 pad 10 10 10 16 align CENTER · bg #ffffff (bg/surface) · radius 12px · border 1px solid #e65100 (color/brand/orange) · shadow 0 2px 8px 0 rgba(229, 82, 0, 0.08) · clip `3705:82029`
           - [instance] **Avatar** ⟨Avatar: Count=+2, Name=Nguyễn Văn An, Size=24⟩ — 24×24 · @ (17, 15) flow `3705:82030`
             - [ảnh] **Ellipse 75** — 24×24 · @ (0, 0) abs · image `url("/figma/assets/4728c30e1456.jpg") 0 -1.67px / 24px 36px no-repeat, linear-gradient(#d9d9d9, #d9d9d9)` · radius 50% `I3705:82030;2130:25369`
           - [chữ] “Gõ nhanh nội dung ghi chú, nhấn Enter để tạo mới…” — 826×20 [FILL×HUG] · @ (51, 17) flow · Afacad 15/20px 400 italic #94a3b8 `3705:82031`
-          - [khối] **Chọn loại ghi chú** — 117×29 [HUG×FIXED] · @ (887, 12.5) flow · row gap 4 pad 0 8 0 8 justify CENTER align CENTER · bg #f1f5f9 · radius 6px · border 1px solid #e2e8f0 (color/border/default) · clip `3705:82032`
+          - [khối] **Chọn loại ghi chú** — 117×29 [HUG×FIXED] · @ (887, 12.5) flow · row gap 4 pad 0 8 0 8 justify CENTER align CENTER · bg #f1f5f9 (bg/subtle) · radius 6px · border 1px solid #e2e8f0 (color/border/default) · clip `3705:82032`
             - [icon] **Action Icon** ⟨Action Icon: Icon=Public, Size=18⟩ — 18×18 · @ (9, 5.5) flow · file /figma/assets/49f4bb1f2f13.svg `3705:82033`
             - [chữ] “Công khai” — 61×20 [HUG×HUG] · @ (31, 4.5) flow · Afacad 15/20px 500 #64748b (color/text/secondary) · no-wrap `3705:82034`
             - [icon] **SVG** — 12×12 · @ (96, 8.5) flow · file /figma/assets/8e55b26c1089.svg `3705:82035`

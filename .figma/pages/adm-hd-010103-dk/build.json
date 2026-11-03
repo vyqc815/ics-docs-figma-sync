@@ -1,0 +1,35 @@
+{
+  "route": "/hoa-don/danh-sach-hoa-don/menu-them-hoc-phi-dk",
+  "pageFile": "components/figma/adm-hd-010103-dk/index.tsx",
+  "docFile": "docs/pages/hoa-don/danh-sach-hoa-don/menu-them-hoc-phi-dk.md",
+  "sections": [
+    {
+      "nodeId": "4056:135530",
+      "component": "Header9",
+      "file": "components/figma/shared/Header9.tsx"
+    },
+    {
+      "nodeId": "4101:135057",
+      "component": "Sidebar",
+      "file": "components/figma/adm-hd-010103-dk/Sidebar.tsx"
+    },
+    {
+      "nodeId": "4056:135663",
+      "component": "Maincontent",
+      "file": "components/figma/adm-hd-010103-dk/Maincontent.tsx"
+    },
+    {
+      "nodeId": "4056:136114",
+      "component": "DropdownDongMenuHanhDong",
+      "file": "components/figma/adm-hd-010103-dk/DropdownDongMenuHanhDong.tsx"
+    },
+    {
+      "nodeId": "4056:136115",
+      "component": "MouseClick",
+      "file": "components/figma/adm-hd-010103-dk/MouseClick.tsx"
+    }
+  ],
+  "idAlias": {
+    "4056:135530": "4056:131049"
+  }
+}

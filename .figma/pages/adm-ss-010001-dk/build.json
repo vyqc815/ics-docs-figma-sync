@@ -1,0 +1,34 @@
+{
+  "route": "/ship-sach/danh-sach-don-sach/chon-1-don-xuat-excel-dk",
+  "pageFile": "components/figma/adm-ss-010001-dk/index.tsx",
+  "docFile": "docs/pages/ship-sach/danh-sach-don-sach/chon-1-don-xuat-excel-dk.md",
+  "sections": [
+    {
+      "nodeId": "4056:139405",
+      "component": "Maincontent",
+      "file": "components/figma/adm-ss-010001-dk/Maincontent.tsx"
+    },
+    {
+      "nodeId": "4056:139711",
+      "component": "Header16",
+      "file": "components/figma/shared/Header16.tsx"
+    },
+    {
+      "nodeId": "4056:139760",
+      "component": "Sidebar8",
+      "file": "components/figma/shared/Sidebar8.tsx"
+    }
+  ],
+  "idAlias": {
+    "4056:139711": "4056:121653",
+    "4056:139712": "4056:121654",
+    "4056:139759": "4056:121701",
+    "I4056:139759;2008:30986": "I4056:121701;2008:30986",
+    "I4056:139759;2008:31747": "I4056:121701;2008:31747",
+    "I4056:139759;2008:31748": "I4056:121701;2008:31748",
+    "I4056:139759;1391:17264": "I4056:121701;1391:17264",
+    "I4056:139759;1391:17266": "I4056:121701;1391:17266",
+    "I4056:139759;1391:17268": "I4056:121701;1391:17268",
+    "I4056:139759;1391:17270": "I4056:121701;1391:17270"
+  }
+}

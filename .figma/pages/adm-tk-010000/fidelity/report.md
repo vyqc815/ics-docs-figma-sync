@@ -1,6 +1,6 @@
 # Fidelity: ADM-TK-010000 — Thống kê / Chỉ số
 
-- URL: `http://localhost:3108/thong-ke/chi-so`
+- URL: `http://localhost:3000/thong-ke/chi-so`
 - Verdict: **PASS**
 - Pixels outside text: **0%** differ (limit 0.5%); all pixels: 0.105%; inside text boxes: 0.784% (glyph rendering)
 - Boxes: 245/245 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 243, ≤1px: 244, ≤2px: 244, ≤4px: 245, >4px: 0

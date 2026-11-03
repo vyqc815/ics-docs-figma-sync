@@ -1,0 +1,484 @@
+{
+  "pass": true,
+  "thresholds": {
+    "maxPixelDiffPercent": 0.5,
+    "maxBoxDelta": 1,
+    "maxTextBoxDelta": 2.5,
+    "colorThreshold": 0.1,
+    "aaRadius": 1,
+    "subpixel": true,
+    "maxTextNodeDiffPercent": 35
+  },
+  "pixels": {
+    "width": 960,
+    "height": 640,
+    "mismatched": 2819,
+    "percent": 0.459,
+    "shapePercent": 0.023,
+    "textPercent": 1.809,
+    "sizeMismatch": false
+  },
+  "textNodes": [
+    {
+      "id": "I7193:403963;2514:153342",
+      "name": "Description",
+      "pixels": 2244,
+      "percent": 11
+    },
+    {
+      "id": "7193:404271",
+      "name": "Bài chưa hoàn chỉnh ở Kỹ năng (S6): chưa có audio / câu hỏi — bổ sung ở S6 trước khi thêm",
+      "pixels": 305,
+      "percent": 3.9
+    },
+    {
+      "id": "7193:404183",
+      "name": "Loại kỹ năng",
+      "pixels": 6,
+      "percent": 0.5
+    },
+    {
+      "id": "I7193:403963;2514:153341",
+      "name": "Title",
+      "pixels": 75,
+      "percent": 0.3
+    },
+    {
+      "id": "7193:404212",
+      "name": "Bài kỹ năng · 01. Chào hỏi & làm quen",
+      "pixels": 12,
+      "percent": 0.3
+    },
+    {
+      "id": "7193:404268",
+      "name": "Nghe hội thoại lớp học",
+      "pixels": 7,
+      "percent": 0.3
+    },
+    {
+      "id": "7193:404094",
+      "name": "Đã chọn 2 bài (Nghe 2) · lựa chọn được giữ khi đổi cụm / loại",
+      "pixels": 31,
+      "percent": 0.2
+    },
+    {
+      "id": "7193:404255",
+      "name": "Nghe tạm biệt, cảm ơn",
+      "pixels": 4,
+      "percent": 0.1
+    },
+    {
+      "id": "I7193:404095;1048:1232",
+      "name": "Button",
+      "pixels": 1,
+      "percent": 0.1
+    },
+    {
+      "id": "I7193:404096;1048:1230",
+      "name": "Button",
+      "pixels": 1,
+      "percent": 0.1
+    },
+    {
+      "id": "7193:404186",
+      "name": "Nghe",
+      "pixels": 0,
+      "percent": 0
+    },
+    {
+      "id": "7193:404188",
+      "name": "2",
+      "pixels": 0,
+      "percent": 0
+    },
+    {
+      "id": "7193:404189",
+      "name": "14",
+      "pixels": 0,
+      "percent": 0
+    },
+    {
+      "id": "7193:404191",
+      "name": "Đọc",
+      "pixels": 0,
+      "percent": 0
+    },
+    {
+      "id": "7193:404192",
+      "name": "9",
+      "pixels": 0,
+      "percent": 0
+    }
+  ],
+  "regions": [
+    {
+      "x": 920,
+      "y": 480,
+      "width": 16,
+      "height": 40,
+      "pixels": 73,
+      "node": {
+        "id": "7193:404270",
+        "name": "Tooltip",
+        "role": "container"
+      }
+    },
+    {
+      "x": 480,
+      "y": 176,
+      "width": 16,
+      "height": 24,
+      "pixels": 30,
+      "node": {
+        "id": "7193:404222",
+        "name": "Checkbox",
+        "role": "instance"
+      }
+    },
+    {
+      "x": 472,
+      "y": 336,
+      "width": 16,
+      "height": 24,
+      "pixels": 19,
+      "node": {
+        "id": "7193:404244",
+        "name": "Checkbox",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 472,
+      "y": 392,
+      "width": 16,
+      "height": 24,
+      "pixels": 19,
+      "node": {
+        "id": "7193:404251",
+        "name": "Checkbox",
+        "role": "icon"
+      }
+    }
+  ],
+  "boxes": {
+    "measured": 92,
+    "missing": [],
+    "withinThreshold": 92,
+    "buckets": {
+      "≤0.5px": 90,
+      "≤1px": 90,
+      "≤2px": 92,
+      "≤4px": 92,
+      ">4px": 0
+    },
+    "worst": [
+      {
+        "id": "7193:404270",
+        "name": "Tooltip",
+        "role": "container",
+        "delta": 1.92,
+        "dx": 0,
+        "dy": 0,
+        "dw": 1.92,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "7193:404271",
+        "name": "Bài chưa hoàn chỉnh ở Kỹ năng (S6): chưa có audio / câu hỏi — bổ sung ở S6 trước khi thêm",
+        "role": "text",
+        "delta": 1.92,
+        "dx": 0,
+        "dy": 0,
+        "dw": 1.92,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "7193:404224",
+        "name": "Chọn tất cả",
+        "role": "text",
+        "delta": 0.27,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.27,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "7193:404225",
+        "name": "2/6 đã chọn",
+        "role": "text",
+        "delta": 0.27,
+        "dx": 0.27,
+        "dy": 0,
+        "dw": -0.27,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "7193:404241",
+        "name": "Nghe hiểu đoạn ngắn · 5 câu",
+        "role": "text",
+        "delta": 0.02,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.02,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "7193:404269",
+        "name": "Nghe hiểu đoạn ngắn · 6 câu",
+        "role": "text",
+        "delta": 0.02,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.02,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "7193:403962",
+        "name": "Popup · Thêm từ thư viện dữ liệu",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "7193:403963",
+        "name": "Popup/Header",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I7193:403963;2514:153340",
+        "name": "Tiêu đề",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I7193:403963;2711:67900",
+        "name": "Title Row",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I7193:403963;2514:153341",
+        "name": "Title",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I7193:403963;2514:153342",
+        "name": "Description",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "7193:403964",
+        "name": "Body",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "7193:404181",
+        "name": "3 cột · Loại | Cụm | Mục",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "7193:404182",
+        "name": "Cột · Loại kỹ năng",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "7193:404184",
+        "name": "Tiêu đề cột",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "7193:404183",
+        "name": "Loại kỹ năng",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "7193:404185",
+        "name": "Nghe",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "7193:404186",
+        "name": "Nghe",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "7193:404187",
+        "name": "Đã chọn",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "7193:404188",
+        "name": "2",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "7193:404189",
+        "name": "14",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "7193:404190",
+        "name": "Đọc",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "7193:404191",
+        "name": "Đọc",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "7193:404192",
+        "name": "9",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      }
+    ],
+    "maxDelta": 1.92,
+    "over": []
+  },
+  "failures": [],
+  "url": "http://localhost:3000/hoc-ky/bai-hoc/popup-chi-tiet-bai-hoc/tab-ky-nang/popup-them-ky-nang",
+  "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
+  "consoleErrors": [],
+  "rootFound": true
+}

@@ -1,6 +1,6 @@
 # Fidelity: ADM-VC-010000 — Voucher / Danh sách voucher
 
-- URL: `http://localhost:3108/voucher/danh-sach-voucher`
+- URL: `http://localhost:3000/voucher/danh-sach-voucher`
 - Verdict: **PASS**
 - Pixels outside text: **0%** differ (limit 0.5%); all pixels: 0.162%; inside text boxes: 1.063% (glyph rendering)
 - Boxes: 297/297 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 297, ≤1px: 297, ≤2px: 297, ≤4px: 297, >4px: 0

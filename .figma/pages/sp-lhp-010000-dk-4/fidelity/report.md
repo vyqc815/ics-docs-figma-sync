@@ -1,8 +1,8 @@
 # Fidelity: SP-LHP-010000-DK — Lịch họp / Dropdown lọc · Thời gian
 
-- URL: `http://localhost:3108/lich-hop/dropdown-loc-thoi-gian-dk`
+- URL: `http://localhost:3000/lich-hop/dropdown-loc-thoi-gian-dk`
 - Verdict: **PASS**
-- Pixels outside text: **0.02%** differ (limit 0.5%); all pixels: 0.58%; inside text boxes: 2.628% (glyph rendering)
+- Pixels outside text: **0.02%** differ (limit 0.5%); all pixels: 0.554%; inside text boxes: 2.506% (glyph rendering)
 - Boxes: 402/402 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 402, ≤1px: 402, ≤2px: 402, ≤4px: 402, >4px: 0
 
 ## Pixel regions (largest first)
@@ -31,7 +31,6 @@
 
 | Text | Differing |
 | --- | --- |
-| Label (`I6935:387197;3857:67915`) | 16.1% |
 | Th2, 14.09.2026 (`I6935:387328;1590:881`) | 6.1% |
 | Th2, 14.09.2026 (`I6935:387239;1590:881`) | 5.6% |
 | Th2, 14.09.2026 (`I6935:387260;1590:881`) | 5.6% |
@@ -46,6 +45,7 @@
 | Th2, 14.09.2026 (`I6935:387343;1590:881`) | 5.4% |
 | Th2, 14.09.2026 (`I6935:387360;1590:881`) | 5.4% |
 | Th2, 14.09.2026 (`I6935:387377;1590:881`) | 5.4% |
+| Th2, 14.09.2026 (`I6935:387309;1590:881`) | 5.3% |
 
 ## Largest box differences
 

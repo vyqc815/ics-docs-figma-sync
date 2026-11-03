@@ -10,13 +10,13 @@
     },
     {
       "nodeId": "6579:371580",
-      "component": "SidebarMenuCd",
-      "file": "components/figma/cd-kh-070100-dk/SidebarMenuCd.tsx"
+      "component": "SidebarMenuCd23",
+      "file": "components/figma/shared/SidebarMenuCd23.tsx"
     },
     {
       "nodeId": "6579:371581",
-      "component": "Header",
-      "file": "components/figma/cd-kh-070100-dk/Header.tsx"
+      "component": "Header61",
+      "file": "components/figma/shared/Header61.tsx"
     }
   ]
 }

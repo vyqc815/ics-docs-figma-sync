@@ -1,8 +1,8 @@
 # Fidelity: CD-BL-010000 — Báo lỗi / Danh sách báo lỗi
 
-- URL: `http://localhost:3108/bao-loi/danh-sach-bao-loi`
+- URL: `http://localhost:3000/bao-loi/danh-sach-bao-loi`
 - Verdict: **PASS**
-- Pixels outside text: **0%** differ (limit 0.5%); all pixels: 0.119%; inside text boxes: 0.715% (glyph rendering)
+- Pixels outside text: **0%** differ (limit 0.5%); all pixels: 0.118%; inside text boxes: 0.711% (glyph rendering)
 - Boxes: 477/477 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 475, ≤1px: 477, ≤2px: 477, ≤4px: 477, >4px: 0
 
 ## Text boxes with most differing pixels (limit 35%)
@@ -22,8 +22,8 @@
 | Label (`I5274:365124;5274:362953;2245:87820`) | 3.2% |
 | Value (`I5274:365131;2015:36008`) | 3.2% |
 | Value (`I5274:367753;2015:36008`) | 2.6% |
-| MEINE HOBBYS SIND... (`5274:365200`) | 2.6% |
 | Label (`I5274:368048;1725:17084`) | 2.2% |
+| MEINE HOBBYS SIND... (`5274:365200`) | 2.1% |
 
 ## Largest box differences
 
@@ -46,7 +46,6 @@
 | Filter · Đối tượng (`5274:367753`) | instance | 0.47 | 2.5 (text) | -0.47 | 0 | 0.47 | 0 |
 | Content (`I5274:367753;2015:36007`) | container | 0.47 | 2.5 (text) | -0.47 | 0 | 0.47 | 0 |
 | Value (`I5274:367753;2015:36008`) | text | 0.47 | 2.5 (text) | -0.47 | 0 | 0.47 | 0 |
-| MEINE HOBBYS SIND... (`5274:365200`) | text | 0.42 | 2.5 (text) | 0 | 0 | 0.42 | 0 |
 | Badge (`I5274:365176;2015:30321`) | text | 0.25 | 2.5 (text) | -0.12 | 0 | 0.25 | 0 |
 | Badge (`I5274:365227;2015:30321`) | text | 0.25 | 2.5 (text) | -0.12 | 0 | 0.25 | 0 |
 | Sĩ số (`5274:368015`) | text | 0.2 | 2.5 (text) | 0 | 0 | 0.2 | 0 |
@@ -54,3 +53,4 @@
 | Dropdown Icon (`I5274:365227;2015:30322`) | icon | 0.13 | 2.5 (text) | 0.13 | 0 | 0 | 0 |
 | Sĩ số (`5274:365155`) | text | 0.08 | 2.5 (text) | 0 | 0 | 0.08 | 0 |
 | Sĩ số (`5274:365153`) | text | 0.03 | 2.5 (text) | 0 | 0 | 0.03 | 0 |
+| Frame 1171274926 (`I5274:365124;5274:362931`) | icon | 0.02 | 2.5 (text) | 0 | -0.02 | 0 | 0 |

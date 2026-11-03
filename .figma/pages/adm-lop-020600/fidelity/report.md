@@ -1,6 +1,6 @@
 # Fidelity: ADM-LOP-020600 — Chi tiết lớp học / Tiêu chuẩn lớp - giáo viên
 
-- URL: `http://localhost:3108/chi-tiet-lop-hoc/tieu-chuan-lop/giao-vien`
+- URL: `http://localhost:3000/chi-tiet-lop-hoc/tieu-chuan-lop/giao-vien`
 - Verdict: **PASS**
 - Pixels outside text: **0.002%** differ (limit 0.5%); all pixels: 0.118%; inside text boxes: 0.813% (glyph rendering)
 - Boxes: 210/210 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 210, ≤1px: 210, ≤2px: 210, ≤4px: 210, >4px: 0

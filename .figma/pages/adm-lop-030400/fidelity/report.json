@@ -1,5 +1,5 @@
 {
-  "pass": false,
+  "pass": true,
   "thresholds": {
     "maxPixelDiffPercent": 0.5,
     "maxBoxDelta": 1,
@@ -12,37 +12,13 @@
   "pixels": {
     "width": 1440,
     "height": 1287,
-    "mismatched": 5228,
-    "percent": 0.282,
-    "shapePercent": 0.051,
-    "textPercent": 1.173,
+    "mismatched": 4055,
+    "percent": 0.219,
+    "shapePercent": 0.006,
+    "textPercent": 1.079,
     "sizeMismatch": false
   },
   "textNodes": [
-    {
-      "id": "I4554:24602;1308:6749",
-      "name": "100%",
-      "pixels": 83,
-      "percent": 24.7
-    },
-    {
-      "id": "I4554:24603;1308:6749",
-      "name": "100%",
-      "pixels": 83,
-      "percent": 24.7
-    },
-    {
-      "id": "I4554:24614;1308:6749",
-      "name": "100%",
-      "pixels": 83,
-      "percent": 24.7
-    },
-    {
-      "id": "I4554:24615;1308:6749",
-      "name": "100%",
-      "pixels": 83,
-      "percent": 24.7
-    },
     {
       "id": "I4558:30370;2053:24633",
       "name": "ID",
@@ -108,123 +84,39 @@
       "name": "18:25",
       "pixels": 19,
       "percent": 3.1
+    },
+    {
+      "id": "4554:24601",
+      "name": "ÔN TẬP: Giữa Kỳ 1",
+      "pixels": 167,
+      "percent": 3
+    },
+    {
+      "id": "I4554:24642;1050:2409",
+      "name": "Badge",
+      "pixels": 6,
+      "percent": 3
+    },
+    {
+      "id": "4554:25735",
+      "name": "Hướng dẫn viết chữ Hán: 你",
+      "pixels": 264,
+      "percent": 2.9
+    },
+    {
+      "id": "4554:25835",
+      "name": "Video luyện nghe tiếng Trung (YouTube)",
+      "pixels": 148,
+      "percent": 2.4
     }
   ],
   "regions": [
     {
       "x": 752,
-      "y": 840,
-      "width": 24,
-      "height": 16,
-      "pixels": 106,
-      "node": {
-        "id": "4554:25797",
-        "name": "Frame 427321972",
-        "role": "container"
-      }
-    },
-    {
-      "x": 920,
-      "y": 840,
-      "width": 24,
-      "height": 16,
-      "pixels": 106,
-      "node": {
-        "id": "4554:25797",
-        "name": "Frame 427321972",
-        "role": "container"
-      }
-    },
-    {
-      "x": 664,
-      "y": 840,
-      "width": 32,
-      "height": 16,
-      "pixels": 102,
-      "node": {
-        "id": "4554:25797",
-        "name": "Frame 427321972",
-        "role": "container"
-      }
-    },
-    {
-      "x": 920,
-      "y": 864,
-      "width": 24,
-      "height": 16,
-      "pixels": 101,
-      "node": {
-        "id": "4554:25782",
-        "name": "Container",
-        "role": "container"
-      }
-    },
-    {
-      "x": 664,
-      "y": 864,
-      "width": 24,
-      "height": 16,
-      "pixels": 97,
-      "node": {
-        "id": "4554:25797",
-        "name": "Frame 427321972",
-        "role": "container"
-      }
-    },
-    {
-      "x": 752,
-      "y": 864,
-      "width": 24,
-      "height": 16,
-      "pixels": 92,
-      "node": {
-        "id": "4554:25792",
-        "name": "Container",
-        "role": "container"
-      }
-    },
-    {
-      "x": 840,
-      "y": 840,
-      "width": 24,
-      "height": 16,
-      "pixels": 87,
-      "node": {
-        "id": "4554:25797",
-        "name": "Frame 427321972",
-        "role": "container"
-      }
-    },
-    {
-      "x": 840,
-      "y": 864,
-      "width": 24,
-      "height": 16,
-      "pixels": 84,
-      "node": {
-        "id": "4554:25787",
-        "name": "Container",
-        "role": "container"
-      }
-    },
-    {
-      "x": 928,
       "y": 896,
-      "width": 16,
+      "width": 24,
       "height": 8,
-      "pixels": 40,
-      "node": {
-        "id": "4554:25779",
-        "name": "Container",
-        "role": "icon"
-      }
-    },
-    {
-      "x": 760,
-      "y": 896,
-      "width": 16,
-      "height": 8,
-      "pixels": 36,
+      "pixels": 25,
       "node": {
         "id": "4554:25789",
         "name": "Container",
@@ -236,7 +128,7 @@
       "y": 896,
       "width": 16,
       "height": 8,
-      "pixels": 32,
+      "pixels": 19,
       "node": {
         "id": "4554:25794",
         "name": "Container",
@@ -248,9 +140,21 @@
       "y": 896,
       "width": 16,
       "height": 8,
-      "pixels": 30,
+      "pixels": 18,
       "node": {
         "id": "4554:25784",
+        "name": "Container",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 928,
+      "y": 896,
+      "width": 16,
+      "height": 8,
+      "pixels": 18,
+      "node": {
+        "id": "4554:25779",
         "name": "Container",
         "role": "icon"
       }
@@ -329,161 +233,17 @@
     }
   ],
   "boxes": {
-    "measured": 379,
+    "measured": 382,
     "missing": [],
-    "withinThreshold": 367,
+    "withinThreshold": 382,
     "buckets": {
-      "≤0.5px": 358,
-      "≤1px": 358,
-      "≤2px": 358,
-      "≤4px": 367,
-      ">4px": 12
+      "≤0.5px": 373,
+      "≤1px": 373,
+      "≤2px": 373,
+      "≤4px": 382,
+      ">4px": 0
     },
     "worst": [
-      {
-        "id": "4554:25779",
-        "name": "Container",
-        "role": "icon",
-        "delta": 82,
-        "dx": 0,
-        "dy": -82,
-        "dw": 0,
-        "dh": 0,
-        "limit": 2.5,
-        "textDriven": true
-      },
-      {
-        "id": "4554:25784",
-        "name": "Container",
-        "role": "icon",
-        "delta": 82,
-        "dx": 0,
-        "dy": -82,
-        "dw": 0,
-        "dh": 0,
-        "limit": 2.5,
-        "textDriven": true
-      },
-      {
-        "id": "4554:25789",
-        "name": "Container",
-        "role": "icon",
-        "delta": 82,
-        "dx": 0,
-        "dy": -82,
-        "dw": 0,
-        "dh": 0,
-        "limit": 2.5,
-        "textDriven": true
-      },
-      {
-        "id": "4554:25794",
-        "name": "Container",
-        "role": "icon",
-        "delta": 82,
-        "dx": 0,
-        "dy": -82,
-        "dw": 0,
-        "dh": 0,
-        "limit": 2.5,
-        "textDriven": true
-      },
-      {
-        "id": "4554:25777",
-        "name": "Container",
-        "role": "container",
-        "delta": 76.63,
-        "dx": -76.62,
-        "dy": -51,
-        "dw": 0,
-        "dh": 0,
-        "limit": 2.5,
-        "textDriven": true
-      },
-      {
-        "id": "4554:25782",
-        "name": "Container",
-        "role": "container",
-        "delta": 76.63,
-        "dx": -76.63,
-        "dy": -51,
-        "dw": 0,
-        "dh": 0,
-        "limit": 2.5,
-        "textDriven": true
-      },
-      {
-        "id": "4554:25787",
-        "name": "Container",
-        "role": "container",
-        "delta": 76.63,
-        "dx": -76.62,
-        "dy": -51,
-        "dw": 0,
-        "dh": 0,
-        "limit": 2.5,
-        "textDriven": true
-      },
-      {
-        "id": "4554:25792",
-        "name": "Container",
-        "role": "container",
-        "delta": 76.63,
-        "dx": -76.63,
-        "dy": -51,
-        "dw": 0,
-        "dh": 0,
-        "limit": 2.5,
-        "textDriven": true
-      },
-      {
-        "id": "4554:25778",
-        "name": "mā",
-        "role": "text",
-        "delta": 27,
-        "dx": -19,
-        "dy": -27,
-        "dw": 0,
-        "dh": 0,
-        "limit": 2.5,
-        "textDriven": true
-      },
-      {
-        "id": "4554:25783",
-        "name": "má",
-        "role": "text",
-        "delta": 27,
-        "dx": -19,
-        "dy": -27,
-        "dw": 0,
-        "dh": 0,
-        "limit": 2.5,
-        "textDriven": true
-      },
-      {
-        "id": "4554:25788",
-        "name": "mǎ",
-        "role": "text",
-        "delta": 27,
-        "dx": -19,
-        "dy": -27,
-        "dw": 0,
-        "dh": 0,
-        "limit": 2.5,
-        "textDriven": true
-      },
-      {
-        "id": "4554:25793",
-        "name": "mà",
-        "role": "text",
-        "delta": 27,
-        "dx": -19,
-        "dy": -27,
-        "dw": 0,
-        "dh": 0,
-        "limit": 2.5,
-        "textDriven": true
-      },
       {
         "id": "4558:30373",
         "name": "Frame 1171274946",
@@ -639,160 +399,157 @@
         "dh": 0,
         "limit": 2.5,
         "textDriven": true
+      },
+      {
+        "id": "I4554:25703;1062:1357",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.03,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.03,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4554:25703;1062:1358",
+        "name": "Cập nhật",
+        "role": "text",
+        "delta": 0.03,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.03,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4554:25704;1062:1357",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.03,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.03,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4554:25704;1062:1358",
+        "name": "Cập nhật",
+        "role": "text",
+        "delta": 0.03,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.03,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4554:25756",
+        "name": "Chữ nǐ v",
+        "role": "container",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": -0.01,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4554:25757",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": -0.01,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4554:25758",
+        "name": "nǐ",
+        "role": "text",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": -0.01,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4554:25759",
+        "name": "Icon",
+        "role": "icon",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": -0.01,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4554:25801",
+        "name": "Thumbnail mặc định / Icon",
+        "role": "icon",
+        "delta": 0.01,
+        "dx": -0.01,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4554:25808",
+        "name": "Thumbnail mặc định / Icon",
+        "role": "icon",
+        "delta": 0.01,
+        "dx": -0.01,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4915:224525;4901:206542",
+        "name": "Subtract",
+        "role": "icon",
+        "delta": 0.01,
+        "dx": -0.01,
+        "dy": -0.01,
+        "dw": -0.01,
+        "dh": 0,
+        "limit": 1,
+        "textDriven": false
+      },
+      {
+        "id": "I4915:224525;4901:206549",
+        "name": "Intersect",
+        "role": "icon",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": -0.01,
+        "dw": -0.01,
+        "dh": 0,
+        "limit": 1,
+        "textDriven": false
       }
     ],
-    "maxDelta": 82,
-    "over": [
-      {
-        "id": "4554:25779",
-        "name": "Container",
-        "role": "icon",
-        "delta": 82,
-        "dx": 0,
-        "dy": -82,
-        "dw": 0,
-        "dh": 0,
-        "limit": 2.5,
-        "textDriven": true
-      },
-      {
-        "id": "4554:25784",
-        "name": "Container",
-        "role": "icon",
-        "delta": 82,
-        "dx": 0,
-        "dy": -82,
-        "dw": 0,
-        "dh": 0,
-        "limit": 2.5,
-        "textDriven": true
-      },
-      {
-        "id": "4554:25789",
-        "name": "Container",
-        "role": "icon",
-        "delta": 82,
-        "dx": 0,
-        "dy": -82,
-        "dw": 0,
-        "dh": 0,
-        "limit": 2.5,
-        "textDriven": true
-      },
-      {
-        "id": "4554:25794",
-        "name": "Container",
-        "role": "icon",
-        "delta": 82,
-        "dx": 0,
-        "dy": -82,
-        "dw": 0,
-        "dh": 0,
-        "limit": 2.5,
-        "textDriven": true
-      },
-      {
-        "id": "4554:25777",
-        "name": "Container",
-        "role": "container",
-        "delta": 76.63,
-        "dx": -76.62,
-        "dy": -51,
-        "dw": 0,
-        "dh": 0,
-        "limit": 2.5,
-        "textDriven": true
-      },
-      {
-        "id": "4554:25782",
-        "name": "Container",
-        "role": "container",
-        "delta": 76.63,
-        "dx": -76.63,
-        "dy": -51,
-        "dw": 0,
-        "dh": 0,
-        "limit": 2.5,
-        "textDriven": true
-      },
-      {
-        "id": "4554:25787",
-        "name": "Container",
-        "role": "container",
-        "delta": 76.63,
-        "dx": -76.62,
-        "dy": -51,
-        "dw": 0,
-        "dh": 0,
-        "limit": 2.5,
-        "textDriven": true
-      },
-      {
-        "id": "4554:25792",
-        "name": "Container",
-        "role": "container",
-        "delta": 76.63,
-        "dx": -76.63,
-        "dy": -51,
-        "dw": 0,
-        "dh": 0,
-        "limit": 2.5,
-        "textDriven": true
-      },
-      {
-        "id": "4554:25778",
-        "name": "mā",
-        "role": "text",
-        "delta": 27,
-        "dx": -19,
-        "dy": -27,
-        "dw": 0,
-        "dh": 0,
-        "limit": 2.5,
-        "textDriven": true
-      },
-      {
-        "id": "4554:25783",
-        "name": "má",
-        "role": "text",
-        "delta": 27,
-        "dx": -19,
-        "dy": -27,
-        "dw": 0,
-        "dh": 0,
-        "limit": 2.5,
-        "textDriven": true
-      },
-      {
-        "id": "4554:25788",
-        "name": "mǎ",
-        "role": "text",
-        "delta": 27,
-        "dx": -19,
-        "dy": -27,
-        "dw": 0,
-        "dh": 0,
-        "limit": 2.5,
-        "textDriven": true
-      },
-      {
-        "id": "4554:25793",
-        "name": "mà",
-        "role": "text",
-        "delta": 27,
-        "dx": -19,
-        "dy": -27,
-        "dw": 0,
-        "dh": 0,
-        "limit": 2.5,
-        "textDriven": true
-      }
-    ]
+    "maxDelta": 2.38,
+    "over": []
   },
-  "failures": [
-    "12 elements are off by more than their limit (1px, 2.5px for text-driven; worst 82px)."
-  ],
-  "url": "http://localhost:3108/lop-hoc/bai-hoc/tai-nguyen",
+  "failures": [],
+  "url": "http://localhost:3000/lop-hoc/bai-hoc/tai-nguyen",
   "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
   "consoleErrors": [],
   "rootFound": true

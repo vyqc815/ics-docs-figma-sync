@@ -1,6 +1,6 @@
 # Fidelity: SP-LHP-010000 — Lịch họp / Dropdown lọc · Trạng thái
 
-- URL: `http://localhost:3108/lich-hop/dropdown-loc-trang-thai`
+- URL: `http://localhost:3000/lich-hop/dropdown-loc-trang-thai`
 - Verdict: **PASS**
 - Pixels outside text: **0.02%** differ (limit 0.5%); all pixels: 0.405%; inside text boxes: 1.867% (glyph rendering)
 - Boxes: 381/381 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 381, ≤1px: 381, ≤2px: 381, ≤4px: 381, >4px: 0

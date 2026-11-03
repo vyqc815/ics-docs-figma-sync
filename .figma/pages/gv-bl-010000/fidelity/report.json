@@ -12,10 +12,10 @@
   "pixels": {
     "width": 1440,
     "height": 1057,
-    "mismatched": 1356,
-    "percent": 0.089,
+    "mismatched": 1340,
+    "percent": 0.088,
     "shapePercent": 0,
-    "textPercent": 0.615,
+    "textPercent": 0.608,
     "sizeMismatch": false
   },
   "textNodes": [
@@ -62,12 +62,6 @@
       "percent": 3.4
     },
     {
-      "id": "5318:53974",
-      "name": "MEINE HOBBYS SIND...",
-      "pixels": 76,
-      "percent": 2.6
-    },
-    {
       "id": "I5318:53979;1725:17090",
       "name": "Label",
       "pixels": 17,
@@ -80,10 +74,16 @@
       "percent": 2.2
     },
     {
+      "id": "5318:53974",
+      "name": "MEINE HOBBYS SIND...",
+      "pixels": 63,
+      "percent": 2.1
+    },
+    {
       "id": "5318:53955",
       "name": "MEINE HOBBYS SIND...",
-      "pixels": 41,
-      "percent": 2
+      "pixels": 38,
+      "percent": 1.9
     },
     {
       "id": "I5019:365908;2015:36008",
@@ -143,18 +143,6 @@
         "dx": 0,
         "dy": 0,
         "dw": 0.81,
-        "dh": 0,
-        "limit": 2.5,
-        "textDriven": true
-      },
-      {
-        "id": "5318:53974",
-        "name": "MEINE HOBBYS SIND...",
-        "role": "text",
-        "delta": 0.42,
-        "dx": 0,
-        "dy": 0,
-        "dw": 0.42,
         "dh": 0,
         "limit": 2.5,
         "textDriven": true
@@ -422,13 +410,25 @@
         "dh": 0,
         "limit": 2.5,
         "textDriven": true
+      },
+      {
+        "id": "I5019:365117;3266:54000",
+        "name": "Số liệu",
+        "role": "text",
+        "delta": 0.01,
+        "dx": -0.01,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
       }
     ],
     "maxDelta": 0.86,
     "over": []
   },
   "failures": [],
-  "url": "http://localhost:3108/bao-loi/danh-sach-bao-loi-gv-bl-010000",
+  "url": "http://localhost:3000/bao-loi/danh-sach-bao-loi-gv-bl-010000",
   "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
   "consoleErrors": [],
   "rootFound": true

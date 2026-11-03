@@ -5,7 +5,7 @@
 > **Nguồn:** PLS-ICS T8/2026 › 🚪  LOG IN · COLOR THEME · PROFILE › MST-TK-020000 — Tài khoản / Chi tiết tài khoản (`3005:33480`, file `rRVs5HX0kIHffbS0V40djG`)  
 > **Route:** `/tai-khoan/chi-tiet-tai-khoan`  
 > **Khung thiết kế:** 1440 × 810 px  
-> **Xuất lúc:** 2026-11-02T04:07:07.227Z  
+> **Xuất lúc:** 2026-11-02T18:16:32.360Z  
 > **Spec đầy đủ (giá trị chính xác từng node):** `../../../.figma/pages/mst-tk-020000/page-spec.json`
 
 ## 1. Tổng quan
@@ -25,10 +25,19 @@ Nền trang: `#f8fafc`.
 
 | Token | Biến CSS | Giá trị | Trỏ tới | Bộ / mode |
 | --- | --- | --- | --- | --- |
+| `bg/surface` | `--bg-surface` | `#ffffff` | color/neutral/white | Theme · Semantic / Light |
+| `brand/primary` | `--brand-primary` | `#e65100` | color/brand/orange | Theme · Semantic / Light |
 | `color/border/button` | `--color-border-button` | `#cbd5e1` | color/extended/cbd5e1 | Color Tokens / Light |
 | `color/border/default` | `--color-border-default` | `#e2e8f0` |  | Color Tokens / Light |
 | `color/brand/orange` | `--color-brand-orange` | `#e65100` |  | Color Tokens / Light |
+| `color/brand/primary` | `--color-brand-primary` | `#e33f64` |  | Color Tokens / Light |
+| `color/extended/0039b3` | `--color-extended-0039b3` | `#0039b3` |  | Color Tokens / Light |
+| `color/extended/197b32` | `--color-extended-197b32` | `#197b32` |  | Color Tokens / Light |
+| `color/extended/253238` | `--color-extended-253238` | `#253238` |  | Color Tokens / Light |
+| `color/extended/e31e26` | `--color-extended-e31e26` | `#e31e26` |  | Color Tokens / Light |
 | `color/extended/fed7aa` | `--color-extended-fed7aa` | `#fed7aa` |  | Color Tokens / Light |
+| `color/neutral/500` | `--color-neutral-500` | `#757575` |  | Color Tokens / Light |
+| `color/neutral/700` | `--color-neutral-700` | `#3d3d3d` |  | Color Tokens / Light |
 | `color/neutral/white` | `--color-neutral-white` | `#ffffff` |  | Color Tokens / Light |
 | `color/semantic/danger` | `--color-semantic-danger` | `#ed4038` |  | Color Tokens / Light |
 | `color/semantic/error-text` | `--color-semantic-error-text` | `#e11d48` |  | Color Tokens / Light |
@@ -75,14 +84,14 @@ Nền trang: `#f8fafc`.
 | Style | Font family | Cỡ / line-height | Độ đậm | Letter-spacing | Màu | Số lần | Ví dụ |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | `Display/33/Regular` | Afacad | 33 / 50px | 400 | 0 | #e65100 (color/brand/orange) | 1 | “+” |
-| — | Unbounded | 22 / 28px | 600 | 0 | #3d3d3d | 1 | “Tạo tài khoản” |
-| — | Unbounded | 22 / 33px | 500 | 0 | #3d3d3d | 1 | “Nguyễn Văn A” |
+| — | Unbounded | 22 / 28px | 600 | 0 | #3d3d3d (color/neutral/700) | 1 | “Tạo tài khoản” |
+| — | Unbounded | 22 / 33px | 500 | 0 | #3d3d3d (color/neutral/700) | 1 | “Nguyễn Văn A” |
 | — | Unbounded | 20 / 30px | 500 | 0 | #e65100 (color/brand/orange) | 3 | “Thông Tin Cá Nhân” |
 | — | Afacad | 17 / 21px | 400 italic | 0 | #cccccc (color/text/placeholder) | 5 | “Nhập nội dung” |
 | — | Afacad | 17 / 21px | 500 | 0 | #334155 (color/text/primary) | 2 | “01.01.2000” |
 | `Body/17/Bold` | Afacad | 17 / 21px | 700 | 0 | #334155 (color/text/primary) | 1 | “Huỷ” |
 | `Body/17/Bold` | Afacad | 17 / 21px | 700 | 0 | #ffffff (color/neutral/white) | 1 | “Cập nhật” |
-| — | Afacad | 16 / 20px | 400 | 0 | #757575 | 2 | “Hãy chọn một màu để có được Một buổi là…” |
+| — | Afacad | 16 / 20px | 400 | 0 | #757575 (color/neutral/500) | 2 | “Hãy chọn một màu để có được Một buổi là…” |
 | `Body/15/Regular` | Afacad | 15 / 19px | 400 | 0 | #64748b (color/text/secondary) | 7 | “Họ và tên” |
 | `Body/15/Bold` | Afacad | 15 / 19px | 700 | 0 | #0694a2 | 1 | “Admin” |
 | `Body/15/Bold` | Afacad | 15 / 19px | 700 | 0 | #2a7ff5 | 1 | “App-handler” |
@@ -113,10 +122,10 @@ Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí ·
       - [icon] **Overlay** — 20×20 · @ (202, 8) flow · file /figma/assets/93cec656b378.svg covers (-2, -2) 26×26 `I3005:33529;2008:31744`
   - [khối] **Frame 427320139** — 1440×873 · @ (0, 64) abs · row gap 99 pad 16 40 16 40 · bg #ffffff (color/neutral/white) `3005:33606`
     - [khối] **Frame 427322608** — 1360×854.06 [FILL×HUG] · @ (40, 16) flow · column gap 12 · radius 16px `3005:41010`
-      - [chữ] “Tạo tài khoản” — 184×28 [HUG×HUG] · @ (0, 0) flow · Unbounded 22/28px 600 #3d3d3d · no-wrap `3005:41011`
+      - [chữ] “Tạo tài khoản” — 184×28 [HUG×HUG] · @ (0, 0) flow · Unbounded 22/28px 600 #3d3d3d (color/neutral/700) · no-wrap `3005:41011`
       - [khối] **Frame 1171274927** — 1360×742.06 [FILL×HUG] · @ (0, 40) flow · column gap 20 `3005:43566`
         - [khối] **Frame 427322600** — 1360×339 [FILL×HUG] · @ (0, 0) flow · row gap 20 `3005:41012`
-          - [khối] **Frame 427322589** — 342×339 [HUG×FILL] · @ (0, 0) flow · row gap 10 pad 32 24 32 24 justify CENTER · bg #ffffff · radius 12px · shadow 1px 1px 6px 0 rgba(0, 0, 0, 0.15) `3005:41013`
+          - [khối] **Frame 427322589** — 342×339 [HUG×FILL] · @ (0, 0) flow · row gap 10 pad 32 24 32 24 justify CENTER · bg #ffffff (bg/surface) · radius 12px · shadow 1px 1px 6px 0 rgba(0, 0, 0, 0.15) `3005:41013`
             - [khối] **Frame 427322586** — 294×263 [FIXED×HUG] · @ (24, 32) flow · column gap 12 align CENTER `3005:41014`
               - [khối] **Frame 427322587** — 294×263 [FILL×HUG] · @ (0, 0) flow · column gap 16 align CENTER `3005:41015`
                 - [khối] **Frame 1171274928** — 186×153 [HUG×HUG] · @ (54, 0) flow · column gap 8 align CENTER `3005:43569`
@@ -127,7 +136,7 @@ Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí ·
                           - [khối] **Container** — 18×50 [HUG×HUG] · @ (41, 25) flow · column align CENTER `3005:41705`
                             - [chữ] “+” — 18×50 [HUG×HUG] · @ (0, 0) flow · Afacad 33/50px 400 #e65100 (color/brand/orange) · text-align center · no-wrap `3005:41706`
                       - [icon] **Button - Camera Badge** — 32×32 · @ (76, 76) abs · file /figma/assets/4342972dd898.svg covers (-5, -1) 42×42 `3005:41707`
-                  - [chữ] “Nguyễn Văn A” — 186×33 [HUG×HUG] · @ (0, 120) flow · Unbounded 22/33px 500 #3d3d3d · no-wrap `3005:41022`
+                  - [chữ] “Nguyễn Văn A” — 186×33 [HUG×HUG] · @ (0, 120) flow · Unbounded 22/33px 500 #3d3d3d (color/neutral/700) · no-wrap `3005:41022`
                 - [khối] **Frame 427322588** — 294×94 [FILL×HUG] · @ (0, 169) flow · column gap 2 align CENTER `3005:41021`
                   - [khối] **Frame 427323689** — 270×94 [FIXED×HUG] · @ (12, 0) flow · column gap 8 align CENTER `3005:41023`
                     - [khối] **Frame 427323686** — 270×26 [FILL×HUG] · @ (0, 0) flow · row gap 8 justify CENTER align CENTER `3005:41024`
@@ -162,7 +171,7 @@ Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí ·
                         - [icon] **Vector** — 12×12 · @ (9, 7) flow · file /figma/assets/c53040673dd3.svg `I3005:43133;2623:27461`
                         - [chữ] “Thêm chức vụ” — 82×19 [HUG×HUG] · @ (29, 3.5) flow · Afacad 15/19px 700 #e65100 (color/brand/orange) · no-wrap `I3005:43133;139:67075`
                         - [icon] **Mouse click** ⟨Mouse click⟩ — 23.3×23.3 · @ (59, 20.93) abs · file /figma/assets/84531c22c2de.svg covers (-0.87, 0) 26.29×25.84 `I3005:43133;3065:68070`
-          - [khối] **Frame 427322601** — 998×339 [FILL×FILL] · @ (362, 0) flow · column gap 12 pad 20 32 24 32 · bg #ffffff · radius 12px · shadow 1px 1px 6px 0 rgba(0, 0, 0, 0.15) `3005:41046`
+          - [khối] **Frame 427322601** — 998×339 [FILL×FILL] · @ (362, 0) flow · column gap 12 pad 20 32 24 32 · bg #ffffff (bg/surface) · radius 12px · shadow 1px 1px 6px 0 rgba(0, 0, 0, 0.15) `3005:41046`
             - [chữ] “Thông Tin Cá Nhân” — 230×30 [HUG×HUG] · @ (32, 20) flow · Unbounded 20/30px 500 #e65100 (color/brand/orange) · no-wrap `3005:41047`
             - [khối] **Frame 427322598** — 934×253 [FILL×HUG] · @ (32, 62) flow · column gap 16 `3005:41073`
               - [khối] **Frame 427322597** — 934×253 [FILL×HUG] · @ (0, 0) flow · column gap 20 `3005:41074`
@@ -200,22 +209,22 @@ Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí ·
                     - [chữ] “Gmail” — 36×19 [HUG×HUG] · @ (20, 0) flow · Afacad 15/19px 400 #64748b (color/text/secondary) · no-wrap `I3005:43093;3004:58620;2808:48145`
                   - [instance] **Ô nhập** ⟨Atom/Input: Loại=Gift code, Text=Nhập nội dung, State=Default, Kiểu=Cao 48⟩ — 934×48 [FILL×HUG] · @ (0, 23) flow · row pad 12 8 12 12 align CENTER · bg #ffffff · radius 10px · border 1px solid #e2e8f0 (color/border/default) `I3005:43093;3004:58628`
                     - [chữ] “Nhập nội dung” — 912×21 [FILL×HUG] · @ (13, 13.5) flow · Afacad 17/21px 400 italic #cccccc (color/text/placeholder) `I3005:43093;3004:58628;3004:49331`
-        - [khối] **Frame 427322607** — 1360×194.06 [FILL×HUG] · @ (0, 359) flow · column gap 10 pad 20 24 20 24 · bg #ffffff · radius 12px · shadow 1px 1px 6px 0 rgba(0, 0, 0, 0.15) `3005:41131`
+        - [khối] **Frame 427322607** — 1360×194.06 [FILL×HUG] · @ (0, 359) flow · column gap 10 pad 20 24 20 24 · bg #ffffff (bg/surface) · radius 12px · shadow 1px 1px 6px 0 rgba(0, 0, 0, 0.15) `3005:41131`
           - [khối] **Frame 427322606** — 1312×154.06 [FILL×HUG] · @ (24, 20) flow · column gap 16 align MAX `3005:41132`
             - [khối] **Frame 427322605** — 1312×154.06 [FILL×HUG] · @ (0, 0) flow · column gap 8 `3005:41133`
               - [khối] **Frame 427322604** — 1312×50 [FILL×HUG] · @ (0, 0) flow · column `3005:41134`
                 - [chữ] “Đổi Theme Color” — 1312×30 [FILL×HUG] · @ (0, 0) flow · Unbounded 20/30px 500 #e65100 (color/brand/orange) `3005:41135`
-                - [chữ] “Hãy chọn một màu để có được Một buổi làm việc hiệu quả nhất nhé” — 1312×20 [FILL×HUG] · @ (0, 30) flow · Afacad 16/20px 400 #757575 `3005:41136`
+                - [chữ] “Hãy chọn một màu để có được Một buổi làm việc hiệu quả nhất nhé” — 1312×20 [FILL×HUG] · @ (0, 30) flow · Afacad 16/20px 400 #757575 (color/neutral/500) `3005:41136`
               - [khối] **Frame 427322605** — 1312×96.06 [FILL×HUG] · @ (0, 58) flow · row gap 24 align CENTER `3005:43104`
                 - [khối] **Frame 1171274944** — 124×96.06 [FIXED×HUG] · @ (0, 0) flow · column gap 8 `4030:88769`
                   - [icon] **COLOR THEME** ⟨COLOR THEME⟩ — 124×70.06 [FILL×FIXED] · @ (0, 0) flow · file /figma/assets/e22157524807.svg covers (-2.48, -1.24) 128.96×76.26 `4030:88770`
                   - [khối] **Frame 1171274935** — 124×18 [FILL×HUG] · @ (0, 78.06) flow · row gap 4 align CENTER `4030:88771`
-                    - [hình] **Màu** — 12×12 · @ (0, 3) flow · bg #e65100 · radius 50% `4030:88772`
+                    - [hình] **Màu** — 12×12 · @ (0, 3) flow · bg #e65100 (brand/primary) · radius 50% `4030:88772`
                     - [chữ] “Cam · Mặc định” — 87×18 [FIXED×HUG] · @ (16, 0) flow · Afacad 14/18px 600 #e65100 (color/brand/orange) `4030:88773`
                 - [khối] **Frame 1171274945** — 124×96.06 [FIXED×HUG] · @ (148, 0) flow · column gap 8 `4030:88894`
                   - [icon] **COLOR THEME** ⟨COLOR THEME⟩ — 124×70.06 · @ (0, 0) flow · file /figma/assets/54d87c389a13.svg covers (-2.48, -1.24) 128.96×76.26 `4030:89894`
                   - [khối] **Frame 1171274936** — 124×18 [FIXED×HUG] · @ (0, 78.06) flow · row gap 4 align CENTER `4030:90015`
-                    - [hình] **Màu** — 12×12 · @ (0, 3) flow · bg #0039b3 · radius 50% · opacity 0.5 `4030:90016`
+                    - [hình] **Màu** — 12×12 · @ (0, 3) flow · bg #0039b3 (color/extended/0039b3) · radius 50% · opacity 0.5 `4030:90016`
                     - [chữ] “Xanh dương” — 80×18 [FIXED×HUG] · @ (16, 0) flow · Afacad 14/18px 500 #334155 (color/text/primary) · opacity 0.6 `4030:90017`
                 - [khối] **Frame 1171274946** — 124×96.06 [FIXED×HUG] · @ (296, 0) flow · column gap 8 `4030:89019`
                   - [icon] **COLOR THEME** ⟨COLOR THEME⟩ — 124×70.06 · @ (0, 0) flow · file /figma/assets/5b3c3b7f5536.svg covers (-2.48, -1.24) 128.96×76.26 `4030:90023`
@@ -226,7 +235,7 @@ Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí ·
                   - [icon] **COLOR THEME** ⟨COLOR THEME⟩ — 124×70.06 · @ (0, 0) flow · file /figma/assets/54c424ef0902.svg covers (-2.48, -1.24) 128.96×76.26 `4030:90144`
                   - [khối] **Nhãn** — 124×18 [FIXED×HUG] · @ (0, 78.06) flow · row gap 4 align CENTER · clip `4030:90265`
                     - [khối] **Frame 1171274940** — 124×18 [FILL×HUG] · @ (0, 0) flow · row gap 4 align CENTER `4030:90266`
-                      - [hình] **Màu** — 12×12 · @ (0, 3) flow · bg #197b32 · radius 50% · opacity 0.5 `4030:90267`
+                      - [hình] **Màu** — 12×12 · @ (0, 3) flow · bg #197b32 (color/extended/197b32) · radius 50% · opacity 0.5 `4030:90267`
                       - [chữ] “Xanh lá” — 108×18 [FILL×HUG] · @ (16, 0) flow · Afacad 14/18px 500 #334155 (color/text/primary) · opacity 0.6 `4030:90268`
                 - [khối] **Frame 1171274950** — 124×96.06 [FIXED×HUG] · @ (592, 0) flow · column gap 8 `4030:89519`
                   - [icon] **COLOR THEME** ⟨COLOR THEME⟩ — 124×70.06 · @ (0, 0) flow · file /figma/assets/9d54bb8fba44.svg covers (-2.48, -1.24) 128.96×76.26 `4030:91154`
@@ -236,29 +245,29 @@ Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí ·
                 - [khối] **Frame 1171274949** — 124×96.06 [FIXED×HUG] · @ (740, 0) flow · column gap 8 `4030:89394`
                   - [icon] **COLOR THEME** ⟨COLOR THEME⟩ — 124×70.06 · @ (0, 0) flow · file /figma/assets/434111c7a8bb.svg covers (-2.48, -1.24) 128.96×76.26 `4030:90908`
                   - [khối] **Frame 1171274938** — 124×18 [FIXED×HUG] · @ (0, 78.06) flow · row gap 4 align CENTER `4030:91029`
-                    - [hình] **Màu** — 12×12 · @ (0, 3) flow · bg #e33f64 · radius 50% · opacity 0.5 `4030:91030`
+                    - [hình] **Màu** — 12×12 · @ (0, 3) flow · bg #e33f64 (color/brand/primary) · radius 50% · opacity 0.5 `4030:91030`
                     - [chữ] “Hồng” — 46.83×18 [FIXED×HUG] · @ (16, 0) flow · Afacad 14/18px 500 #334155 (color/text/primary) · opacity 0.6 `4030:91031`
                 - [khối] **Frame 1171274951** — 124×96.06 [FIXED×HUG] · @ (888, 0) flow · column gap 8 `4030:89644`
                   - [icon] **COLOR THEME** ⟨COLOR THEME⟩ — 124×70.06 · @ (0, 0) flow · file /figma/assets/273592a46fb0.svg covers (-2.48, -1.24) 128.96×76.26 `4030:91523`
                   - [khối] **Frame 1171274941** — 124×18 · @ (0, 78.06) flow · row gap 4 align CENTER `4030:91645`
-                    - [hình] **Màu** — 12×12 · @ (0, 3) flow · bg #e31e26 · radius 50% · opacity 0.5 `4030:91646`
+                    - [hình] **Màu** — 12×12 · @ (0, 3) flow · bg #e31e26 (color/extended/e31e26) · radius 50% · opacity 0.5 `4030:91646`
                     - [chữ] “Đỏ” — 108×18 [FILL×HUG] · @ (16, 0) flow · Afacad 14/18px 500 #334155 (color/text/primary) · opacity 0.6 `4030:91647`
                 - [khối] **Frame 1171274948** — 124×96.06 [FIXED×HUG] · @ (1036, 0) flow · column gap 8 `4030:89269`
                   - [icon] **COLOR THEME** ⟨COLOR THEME⟩ — 124×70.06 · @ (0, 0) flow · file /figma/assets/8202bc78181d.svg covers (-2.48, -1.24) 128.96×76.26 `4030:90270`
                   - [khối] **Frame 1171274942** — 124×18 [FIXED×HUG] · @ (0, 78.06) flow · row gap 4 align CENTER `4030:90664`
-                    - [hình] **Màu** — 12×12 · @ (0, 3) flow · bg #253238 · radius 50% · opacity 0.5 `4030:90665`
+                    - [hình] **Màu** — 12×12 · @ (0, 3) flow · bg #253238 (color/extended/253238) · radius 50% · opacity 0.5 `4030:90665`
                     - [chữ] “Xám đậm” — 110×18 [FIXED×HUG] · @ (16, 0) flow · Afacad 14/18px 500 #334155 (color/text/primary) · opacity 0.6 `4030:90666`
                 - [khối] **Frame 1171274952** — 124×96.06 [FIXED×HUG] · @ (1184, 0) flow · column gap 8 `4030:89769`
                   - [icon] **COLOR THEME** ⟨COLOR THEME⟩ — 124×70.06 · @ (0, 0) flow · file /figma/assets/413c3a9d8771.svg covers (-2.48, -1.24) 128.96×76.26 `4030:91033`
                   - [khối] **Frame 1171274943** — 124×18 [FIXED×HUG] · @ (0, 78.06) flow · row gap 4 align CENTER `4030:91398`
                     - [hình] **Màu** — 12×12 · @ (0, 3) flow · bg #313131 · radius 50% · opacity 0.5 `4030:91399`
                     - [chữ] “Dark mode” — 110×18 [FIXED×HUG] · @ (16, 0) flow · Afacad 14/18px 500 #334155 (color/text/primary) · opacity 0.6 `4030:91400`
-        - [khối] **Frame 427322608** — 1360×169 [FILL×HUG] · @ (0, 573.06) flow · column gap 10 pad 20 24 20 24 · bg #ffffff · radius 12px · shadow 1px 1px 6px 0 rgba(0, 0, 0, 0.15) `4030:81890`
+        - [khối] **Frame 427322608** — 1360×169 [FILL×HUG] · @ (0, 573.06) flow · column gap 10 pad 20 24 20 24 · bg #ffffff (bg/surface) · radius 12px · shadow 1px 1px 6px 0 rgba(0, 0, 0, 0.15) `4030:81890`
           - [khối] **Frame 427322606** — 1312×129 [FILL×HUG] · @ (24, 20) flow · column gap 16 align MAX `4030:81891`
             - [khối] **Frame 427322605** — 1312×129 [FILL×HUG] · @ (0, 0) flow · column gap 8 `4030:81892`
               - [khối] **Frame 427322604** — 1312×50 [FILL×HUG] · @ (0, 0) flow · column `4030:81893`
                 - [chữ] “Đổi Mật Khẩu” — 1312×30 [FILL×HUG] · @ (0, 0) flow · Unbounded 20/30px 500 #e65100 (color/brand/orange) `4030:81894`
-                - [chữ] “Hãy đảm bảo tài khoản của bạn đang sử dụng một mật khẩu mạnh để luôn được bảo mật.” — 1312×20 [FILL×HUG] · @ (0, 30) flow · Afacad 16/20px 400 #757575 `4030:81895`
+                - [chữ] “Hãy đảm bảo tài khoản của bạn đang sử dụng một mật khẩu mạnh để luôn được bảo mật.” — 1312×20 [FILL×HUG] · @ (0, 30) flow · Afacad 16/20px 400 #757575 (color/neutral/500) `4030:81895`
               - [khối] **Frame 427322605** — 1312×71 [FILL×HUG] · @ (0, 58) flow · row gap 24 align CENTER `4030:81896`
                 - [instance] **Molecule/Field** ⟨Molecule/Field: Gợi ý=Gợi ý hoặc thông báo lỗi, Có gợi ý=false, Loại ô=Ô nhập, Mật độ=Gọn⟩ — 644×71 [FILL×HUG] · @ (0, 0) flow · column gap 4 `4030:81897`
                   - [instance] **Atom/Label** ⟨Atom/Label: Required=false, Icon=1739:36453, Label=Mật khẩu cũ, Có icon=Yes⟩ — 94×19 [HUG×HUG] · @ (0, 0) flow · row gap 4 align CENTER `I4030:81897;3004:58620`

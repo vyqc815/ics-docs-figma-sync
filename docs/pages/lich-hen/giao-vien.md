@@ -5,7 +5,7 @@
 > **Nguồn:** PLS-ICS T8/2026 ›         ├─ LỊCH HẸN › ADM-LHN-010400 — Lịch hẹn / Giáo viên (`2367:25148`, file `rRVs5HX0kIHffbS0V40djG`)  
 > **Route:** `/lich-hen/giao-vien`  
 > **Khung thiết kế:** 1440 × 919 px (cắt phần tràn ra ngoài khung)  
-> **Xuất lúc:** 2026-11-02T03:08:27.701Z  
+> **Xuất lúc:** 2026-11-03T03:06:45.129Z  
 > **Spec đầy đủ (giá trị chính xác từng node):** `../../../.figma/pages/adm-lhn-010400/page-spec.json`
 
 ## 1. Tổng quan
@@ -35,6 +35,7 @@ Nền trang: `#ffffff`.
 | `color/extended/fed7aa` | `--color-extended-fed7aa` | `#fed7aa` |  | Color Tokens / Light |
 | `color/extended/ffe2e2` | `--color-extended-ffe2e2` | `#ffe2e2` |  | Color Tokens / Light |
 | `color/extended/fff5ec` | `--color-extended-fff5ec` | `#fff5ec` |  | Color Tokens / Light |
+| `color/extended/fffaf8` | `--color-extended-fffaf8` | `#fffaf8` |  | Color Tokens / Light |
 | `color/neutral/100` | `--color-neutral-100` | `#f5f5f5` |  | Color Tokens / Light |
 | `color/neutral/700` | `--color-neutral-700` | `#3d3d3d` |  | Color Tokens / Light |
 | `color/neutral/white` | `--color-neutral-white` | `#ffffff` |  | Color Tokens / Light |
@@ -218,7 +219,7 @@ Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí ·
                     - [icon] **Cell · Độ ưu tiên** — 80×28 · @ (925, 30) flow · file /figma/assets/e1cb209ea816.svg covers (0, -1) 80×32 `2912:19843`
                     - [icon] **Cell · Trạng thái** — 80×28 · @ (1017, 30) flow · file /figma/assets/433608723d0c.svg covers (0, -1) 80×32 `2912:19845`
                     - [icon] **Button** — 30.85×31.5 · @ (1109, 28.25) flow · file /figma/assets/fbe26afc4439.svg `3005:41869`
-                  - [khối] **Frame 427321971** — 1156×52 [FILL×HUG] · @ (0, 89) flow · row gap 12 pad 6 16 6 16 align CENTER · bg #fffaf8 · border 0 0 1px 0 solid #f1f5f9 (color/border/subtle) `2912:19847`
+                  - [khối] **Frame 427321971** — 1156×52 [FILL×HUG] · @ (0, 89) flow · row gap 12 pad 6 16 6 16 align CENTER · bg #fffaf8 (color/extended/fffaf8) · border 0 0 1px 0 solid #f1f5f9 (color/border/subtle) `2912:19847`
                     - [instance] **Thời gian lịch hẹn** ⟨Thời gian lịch hẹn: Thời gian=Hôm nay, Size=28H⟩ — 87×31 [FIXED×HUG] · @ (16, 10) flow · row gap 10 pad 6 8 6 8 justify CENTER align CENTER · bg #ecffed (color/extended/ecffed) · radius 8px `2912:19848`
                       - [chữ] “Hôm nay” — 53×19 [HUG×HUG] · @ (17, 6) flow · Afacad 15/19px 500 #2d9732 (color/semantic/success) · text-align center · no-wrap `I2912:19848;2200:30037`
                     - [chữ] “Follow khách sau tuần 1” — 180×19 [FIXED×HUG] · @ (115, 16) flow · Afacad 15/19px 500 #334155 (color/text/primary) · truncate 1 lines `2912:19849`

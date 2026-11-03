@@ -5,7 +5,7 @@
 > **Nguồn:** PLS-ICS T8/2026 ›         ├─ KPI & OT › ADM-KPI-010000 — KPI & OT / Danh sách KPI (`3674:65881`, file `rRVs5HX0kIHffbS0V40djG`)  
 > **Route:** `/kpi-ot/danh-sach-kpi`  
 > **Khung thiết kế:** 1440 × 1249 px  
-> **Xuất lúc:** 2026-11-02T03:38:04.394Z  
+> **Xuất lúc:** 2026-11-03T00:52:10.722Z  
 > **Spec đầy đủ (giá trị chính xác từng node):** `../../../.figma/pages/adm-kpi-010000/page-spec.json`
 
 ## 1. Tổng quan

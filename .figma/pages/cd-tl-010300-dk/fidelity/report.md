@@ -1,8 +1,8 @@
 # Fidelity: CD-TL-010300-DK — Tools / Giọng đọc / Âm tiết pinyin · Đang tạo
 
-- URL: `http://localhost:3108/tools/giong-doc/am-tiet-pinyin-dang-tao-dk`
+- URL: `http://localhost:3000/tools/giong-doc/am-tiet-pinyin-dang-tao-dk`
 - Verdict: **PASS**
-- Pixels outside text: **0.002%** differ (limit 0.5%); all pixels: 0.347%; inside text boxes: 2.211% (glyph rendering)
+- Pixels outside text: **0.002%** differ (limit 0.5%); all pixels: 0.331%; inside text boxes: 2.107% (glyph rendering)
 - Boxes: 124/124 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 122, ≤1px: 124, ≤2px: 124, ≤4px: 124, >4px: 0
 
 ## Pixel regions (largest first)
@@ -17,7 +17,6 @@
 | Text | Differing |
 | --- | --- |
 | Label (`I6133:128312;6133:108639;2245:87820`) | 8.6% |
-| Label (`I6133:128312;6133:108641;2245:87774`) | 8.5% |
 | Label (`I6133:128312;6133:108633;2245:87820`) | 8% |
 | Label (`I6133:128312;6133:108625;2245:87768`) | 5.9% |
 | Label (`I6133:128312;6133:108626;2245:87820`) | 5.7% |
@@ -31,6 +30,7 @@
 | Label (`I6133:128312;6133:108623;2245:87768`) | 2.4% |
 | Label (`I6133:128312;6133:108642;2245:87768`) | 2.2% |
 | Label (`I6133:128312;6133:108621;2245:87768`) | 2.1% |
+| Label (`I6133:128312;6133:108643;2245:87768`) | 1.9% |
 
 ## Largest box differences
 

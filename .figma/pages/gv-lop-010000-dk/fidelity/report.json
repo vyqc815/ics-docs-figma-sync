@@ -12,84 +12,18 @@
   "pixels": {
     "width": 1440,
     "height": 929,
-    "mismatched": 3079,
-    "percent": 0.23,
+    "mismatched": 2246,
+    "percent": 0.168,
     "shapePercent": 0.001,
-    "textPercent": 1.312,
+    "textPercent": 0.955,
     "sizeMismatch": false
   },
   "textNodes": [
     {
-      "id": "I4056:149458;1308:6706",
-      "name": "0%",
-      "pixels": 51,
-      "percent": 26
-    },
-    {
-      "id": "I4056:149440;1391:14476",
-      "name": "80%",
-      "pixels": 71,
-      "percent": 25.4
-    },
-    {
-      "id": "I4056:149476;1308:6749",
-      "name": "100%",
-      "pixels": 67,
-      "percent": 19.9
-    },
-    {
-      "id": "I4056:149494;1308:6749",
-      "name": "100%",
-      "pixels": 67,
-      "percent": 19.9
-    },
-    {
-      "id": "I4056:149512;1308:6749",
-      "name": "100%",
-      "pixels": 67,
-      "percent": 19.9
-    },
-    {
-      "id": "I4056:149530;1308:6749",
-      "name": "100%",
-      "pixels": 67,
-      "percent": 19.9
-    },
-    {
-      "id": "I6725:363140;1308:6749",
-      "name": "100%",
-      "pixels": 67,
-      "percent": 19.9
-    },
-    {
-      "id": "I6725:363158;1308:6749",
-      "name": "100%",
-      "pixels": 67,
-      "percent": 19.9
-    },
-    {
-      "id": "I6725:363176;1308:6749",
-      "name": "100%",
-      "pixels": 67,
-      "percent": 19.9
-    },
-    {
-      "id": "I6725:363194;1308:6749",
-      "name": "100%",
-      "pixels": 67,
-      "percent": 19.9
-    },
-    {
       "id": "6757:365858",
       "name": "Tiêu đề trang",
-      "pixels": 206,
-      "percent": 6.5
-    },
-    {
-      "id": "I4056:149350;2245:87774",
-      "name": "Label",
-      "pixels": 185,
-      "percent": 6.4
+      "pixels": 198,
+      "percent": 6.3
     },
     {
       "id": "I4056:149353;2245:87768",
@@ -108,6 +42,72 @@
       "name": "Ngày kết thúc",
       "pixels": 82,
       "percent": 4.7
+    },
+    {
+      "id": "4056:149489",
+      "name": "Tiếng Đức 4 Kỹ Năng B1 (v2026-nháp)",
+      "pixels": 113,
+      "percent": 3.4
+    },
+    {
+      "id": "6725:363189",
+      "name": "Tiếng Đức 4 Kỹ Năng B1 (v2026-nháp)",
+      "pixels": 113,
+      "percent": 3.4
+    },
+    {
+      "id": "6725:363135",
+      "name": "Tiếng Đức 4 Kỹ Năng B1 (v2026)",
+      "pixels": 98,
+      "percent": 3
+    },
+    {
+      "id": "6725:363187",
+      "name": "B2 - LUYỆN THI - HK2",
+      "pixels": 56,
+      "percent": 3
+    },
+    {
+      "id": "I6244:37145;2245:87768",
+      "name": "Label",
+      "pixels": 84,
+      "percent": 2.9
+    },
+    {
+      "id": "I4056:149354;2245:87768",
+      "name": "Label",
+      "pixels": 75,
+      "percent": 2.6
+    },
+    {
+      "id": "I4814:159030;2245:87768",
+      "name": "Label",
+      "pixels": 75,
+      "percent": 2.6
+    },
+    {
+      "id": "I4056:149351;2245:87768",
+      "name": "Label",
+      "pixels": 68,
+      "percent": 2.4
+    },
+    {
+      "id": "I6247:155116;2015:36008",
+      "name": "Value",
+      "pixels": 23,
+      "percent": 2.1
+    },
+    {
+      "id": "4056:149451",
+      "name": "BACKUP_RESOURCE",
+      "pixels": 39,
+      "percent": 2.1
+    },
+    {
+      "id": "I4056:149352;2245:87768",
+      "name": "Label",
+      "pixels": 55,
+      "percent": 1.9
     }
   ],
   "regions": [
@@ -453,7 +453,7 @@
     "over": []
   },
   "failures": [],
-  "url": "http://localhost:3108/lop/thong-ke-tong-quan-dk",
+  "url": "http://localhost:3000/lop/thong-ke-tong-quan-dk",
   "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
   "consoleErrors": [],
   "rootFound": true

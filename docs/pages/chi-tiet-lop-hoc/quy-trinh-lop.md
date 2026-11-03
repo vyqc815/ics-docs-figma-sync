@@ -5,7 +5,7 @@
 > **Nguồn:** PLS-ICS T8/2026 ›             ├─ Quy trình lớp › ADM-LOP-020700 — Chi tiết lớp học / Quy trình lớp (`2711:61204`, file `rRVs5HX0kIHffbS0V40djG`)  
 > **Route:** `/chi-tiet-lop-hoc/quy-trinh-lop`  
 > **Khung thiết kế:** 1440 × 2191 px  
-> **Xuất lúc:** 2026-11-02T03:37:07.803Z  
+> **Xuất lúc:** 2026-11-03T03:27:37.800Z  
 > **Spec đầy đủ (giá trị chính xác từng node):** `../../../.figma/pages/adm-lop-020700/page-spec.json`
 
 ## 1. Tổng quan
@@ -26,6 +26,7 @@ Nền trang: `#f8fafc`.
 
 | Token | Biến CSS | Giá trị | Trỏ tới | Bộ / mode |
 | --- | --- | --- | --- | --- |
+| `bg/canvas` | `--bg-canvas` | `#f8fafc` | color/extended/f8fafc | Theme · Semantic / Light |
 | `color/border/button` | `--color-border-button` | `#cbd5e1` | color/extended/cbd5e1 | Color Tokens / Light |
 | `color/border/default` | `--color-border-default` | `#e2e8f0` |  | Color Tokens / Light |
 | `color/border/subtle` | `--color-border-subtle` | `#f1f5f9` |  | Color Tokens / Light |
@@ -117,7 +118,7 @@ Nền trang: `#f8fafc`.
 Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí · bố cục · style`. Dòng đầu tiên là chính frame trang (gốc). Tên layer nằm trong `**…**`, chữ hiển thị nằm trong `“…”`, giá trị CSS nguyên văn nằm trong backtick: dấu `·` hay `—` **bên trong** các cặp đó là nội dung, chỉ dấu ` · ` bên ngoài mới ngăn cách các trường. Toạ độ `@ (x, y)` tính từ góc trên-trái của layer cha; layer **flow** do auto layout của cha xếp, layer **abs** đặt tuyệt đối. Các layer cùng cấp được liệt kê **theo thứ tự vẽ của Figma: layer sau nằm đè lên layer trước**. ID ở cuối dòng là node ID trong Figma.
 
 - [trang] **ADM-LOP-020700 — Chi tiết lớp học / Quy trình lớp** — 1440×2191 · bg #f8fafc `2711:61204`
-  - [khối] **MainContent** — 1140×2065 · @ (300, 64) abs · column gap 12 pad 24 24 24 24 · bg #f8fafc `2711:61337`
+  - [khối] **MainContent** — 1140×2065 · @ (300, 64) abs · column gap 12 pad 24 24 24 24 · bg #f8fafc (bg/canvas) `2711:61337`
     - [khối] **Container** — 1092×2017 [FILL×HUG] · @ (24, 24) flow · column gap 16 `2711:61338`
       - [khối] **Header line: Title, Progress Bar, Add Action** — 1092×38 [FILL×HUG] · @ (0, 0) flow · row gap 24 align CENTER `2711:61339`
         - [chữ] “Quy trình lớp” — 917×26 [FILL×HUG] · @ (0, 6) flow · Unbounded 17/26px 600 #334155 (color/text/primary) `2711:61342`

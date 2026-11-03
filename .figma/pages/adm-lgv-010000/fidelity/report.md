@@ -1,6 +1,6 @@
 # Fidelity: ADM-LGV-010000 — Lương / Lương giáo viên
 
-- URL: `http://localhost:3108/luong/luong-giao-vien`
+- URL: `http://localhost:3000/luong/luong-giao-vien`
 - Verdict: **PASS**
 - Pixels outside text: **0.041%** differ (limit 0.5%); all pixels: 0.149%; inside text boxes: 0.534% (glyph rendering)
 - Boxes: 435/435 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 433, ≤1px: 435, ≤2px: 435, ≤4px: 435, >4px: 0

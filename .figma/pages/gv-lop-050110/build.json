@@ -1,0 +1,27 @@
+{
+  "route": "/chi-tiet-lop/tu-hoc/co-du-lieu",
+  "pageFile": "components/figma/gv-lop-050110/index.tsx",
+  "docFile": "docs/pages/chi-tiet-lop/tu-hoc/co-du-lieu.md",
+  "sections": [
+    {
+      "nodeId": "5425:281326",
+      "component": "Body15",
+      "file": "components/figma/shared/Body15.tsx"
+    },
+    {
+      "nodeId": "5425:281327",
+      "component": "Maincontent",
+      "file": "components/figma/gv-lop-050110/Maincontent.tsx"
+    },
+    {
+      "nodeId": "5425:281341",
+      "component": "Header",
+      "file": "components/figma/gv-lop-050110/Header.tsx"
+    },
+    {
+      "nodeId": "5425:281483",
+      "component": "SidebarMenuTeacher",
+      "file": "components/figma/gv-lop-050110/SidebarMenuTeacher.tsx"
+    }
+  ]
+}

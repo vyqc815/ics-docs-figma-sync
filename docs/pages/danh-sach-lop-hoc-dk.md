@@ -5,7 +5,7 @@
 > **Nguồn:** PLS-ICS T8/2026 ›         ├─ LỚP HỌC › ADM-LOP-010000-DK — Danh sách lớp học (`4056:108555`, file `rRVs5HX0kIHffbS0V40djG`)  
 > **Route:** `/danh-sach-lop-hoc-dk`  
 > **Khung thiết kế:** 1440 × 1099 px  
-> **Xuất lúc:** 2026-11-02T03:36:53.090Z  
+> **Xuất lúc:** 2026-11-03T03:33:48.614Z  
 > **Spec đầy đủ (giá trị chính xác từng node):** `../../.figma/pages/adm-lop-010000-dk/page-spec.json`
 
 ## 1. Tổng quan
@@ -26,27 +26,27 @@ Nền trang: `#121213` (bg/canvas).
 
 | Token | Biến CSS | Giá trị | Trỏ tới | Bộ / mode |
 | --- | --- | --- | --- | --- |
-| `bg/brand-tint` | `--bg-brand-tint` | `#fff7ed` | color/extended/fff7ed | Theme · Semantic / Light |
-| `bg/brand-tint-strong` | `--bg-brand-tint-strong` | `#ffedd5` | color/extended/ffedd5 | Theme · Semantic / Light |
-| `bg/canvas` | `--bg-canvas` | `#f8fafc` | color/extended/f8fafc | Theme · Semantic / Light |
-| `bg/danger` | `--bg-danger` | `#fef2f2` | color/extended/fef2f2 | Theme · Semantic / Light |
-| `bg/hover` | `--bg-hover` | `#fff7ed` | color/extended/fff7ed | Theme · Semantic / Light |
-| `bg/info` | `--bg-info` | `#f0f9ff` | color/extended/f0f9ff | Theme · Semantic / Light |
-| `bg/strong` | `--bg-strong` | `#e2e8f0` | color/border/default | Theme · Semantic / Light |
-| `bg/subtle` | `--bg-subtle` | `#f1f5f9` | color/surface/input | Theme · Semantic / Light |
-| `bg/success` | `--bg-success` | `#ecfdf5` | color/extended/ecfdf5 | Theme · Semantic / Light |
-| `bg/surface` | `--bg-surface` | `#ffffff` | color/neutral/white | Theme · Semantic / Light |
+| `bg/brand-tint` | `--bg-brand-tint` | `#102218` |  | Theme · Semantic / Dark · Minimal |
+| `bg/brand-tint-strong` | `--bg-brand-tint-strong` | `#153020` |  | Theme · Semantic / Dark · Minimal |
+| `bg/canvas` | `--bg-canvas` | `#121213` |  | Theme · Semantic / Dark · Minimal |
+| `bg/danger` | `--bg-danger` | `#2a1618` |  | Theme · Semantic / Dark · Minimal |
+| `bg/hover` | `--bg-hover` | `#0e0e0f` |  | Theme · Semantic / Dark · Minimal |
+| `bg/info` | `--bg-info` | `#10202e` |  | Theme · Semantic / Dark · Minimal |
+| `bg/strong` | `--bg-strong` | `#2a2a2e` |  | Theme · Semantic / Dark · Minimal |
+| `bg/subtle` | `--bg-subtle` | `#202023` |  | Theme · Semantic / Dark · Minimal |
+| `bg/success` | `--bg-success` | `#12251a` |  | Theme · Semantic / Dark · Minimal |
+| `bg/surface` | `--bg-surface` | `#18181a` |  | Theme · Semantic / Dark · Minimal |
 | `bố cục/khoảng cách khối` | `--bo-cuc-khoang-cach-khoi` | `16` | spacing/16 | Number Tokens / Mode 1 |
 | `bố cục/lề hai bên` | `--bo-cuc-le-hai-ben` | `16` | spacing/16 | Number Tokens / Mode 1 |
 | `bố cục/lề trên dưới` | `--bo-cuc-le-tren-duoi` | `24` | spacing/24 | Number Tokens / Mode 1 |
-| `border/brand` | `--border-brand` | `#fed7aa` | color/extended/fed7aa | Theme · Semantic / Light |
-| `border/default` | `--border-default` | `#e2e8f0` | color/border/default | Theme · Semantic / Light |
-| `border/strong` | `--border-strong` | `#cbd5e1` | color/extended/cbd5e1 | Theme · Semantic / Light |
-| `border/subtle` | `--border-subtle` | `#f1f5f9` | color/border/subtle | Theme · Semantic / Light |
-| `brand/accent` | `--brand-accent` | `#ff9537` | color/extended/ff9537 | Theme · Semantic / Light |
-| `brand/primary` | `--brand-primary` | `#e65100` | color/brand/orange | Theme · Semantic / Light |
-| `brand/primary-soft` | `--brand-primary-soft` | `#ff9537` | color/extended/ff9537 | Theme · Semantic / Light |
-| `chrome/bg` | `--chrome-bg` | `#ff7700` | color/extended/ff7700 | Theme · Semantic / Light |
+| `border/brand` | `--border-brand` | `#1e4d31` |  | Theme · Semantic / Dark · Minimal |
+| `border/default` | `--border-default` | `#27272a` |  | Theme · Semantic / Dark · Minimal |
+| `border/strong` | `--border-strong` | `#3f3f46` |  | Theme · Semantic / Dark · Minimal |
+| `border/subtle` | `--border-subtle` | `#1f1f22` |  | Theme · Semantic / Dark · Minimal |
+| `brand/accent` | `--brand-accent` | `#a78bfa` |  | Theme · Semantic / Dark · Minimal |
+| `brand/primary` | `--brand-primary` | `#16a34a` |  | Theme · Semantic / Dark · Minimal |
+| `brand/primary-soft` | `--brand-primary-soft` | `#4ade80` |  | Theme · Semantic / Dark · Minimal |
+| `chrome/bg` | `--chrome-bg` | `#0b0b0c` |  | Theme · Semantic / Dark · Minimal |
 | `color/neutral/white` | `--color-neutral-white` | `#ffffff` |  | Color Tokens / Light |
 | `color/semantic/success` | `--color-semantic-success` | `#2d9732` |  | Color Tokens / Light |
 | `radius/12` | `--radius-12` | `12` |  | Number Tokens / Mode 1 |
@@ -59,45 +59,45 @@ Nền trang: `#121213` (bg/canvas).
 | `spacing/16` | `--spacing-16` | `16` |  | Number Tokens / Mode 1 |
 | `spacing/4` | `--spacing-4` | `4` |  | Number Tokens / Mode 1 |
 | `spacing/8` | `--spacing-8` | `8` |  | Number Tokens / Mode 1 |
-| `status/danger` | `--status-danger` | `#ed4038` | color/semantic/danger | Theme · Semantic / Light |
-| `status/success-text` | `--status-success-text` | `#059669` | color/semantic/success-text | Theme · Semantic / Light |
-| `text/muted` | `--text-muted` | `#cbd5e1` | color/text/muted | Theme · Semantic / Light |
-| `text/primary` | `--text-primary` | `#334155` | color/text/primary | Theme · Semantic / Light |
-| `text/secondary` | `--text-secondary` | `#64748b` | color/text/secondary | Theme · Semantic / Light |
-| `theme/is-dark` | `--theme-is-dark` | `false` |  | Theme · Semantic / Light |
-| `tone/blue/bg` | `--tone-blue-bg` | `#dbeafe` | color/extended/dbeafe | Theme · Semantic / Light |
-| `tone/blue/border` | `--tone-blue-border` | `#93c5fd` |  | Theme · Semantic / Light |
-| `tone/blue/text` | `--tone-blue-text` | `#1e40af` |  | Theme · Semantic / Light |
-| `tone/cyan/bg` | `--tone-cyan-bg` | `#cffafe` |  | Theme · Semantic / Light |
-| `tone/cyan/border` | `--tone-cyan-border` | `#67e8f9` |  | Theme · Semantic / Light |
-| `tone/cyan/text` | `--tone-cyan-text` | `#155e75` |  | Theme · Semantic / Light |
-| `tone/fuchsia/bg` | `--tone-fuchsia-bg` | `#fce7f3` |  | Theme · Semantic / Light |
-| `tone/fuchsia/border` | `--tone-fuchsia-border` | `#f9a8d4` |  | Theme · Semantic / Light |
-| `tone/fuchsia/text` | `--tone-fuchsia-text` | `#9d174d` |  | Theme · Semantic / Light |
-| `tone/gray/bg` | `--tone-gray-bg` | `#f1f5f9` |  | Theme · Semantic / Light |
-| `tone/gray/border` | `--tone-gray-border` | `#cbd5e1` | color/extended/cbd5e1 | Theme · Semantic / Light |
-| `tone/gray/text` | `--tone-gray-text` | `#334155` |  | Theme · Semantic / Light |
-| `tone/green/bg` | `--tone-green-bg` | `#d1fae5` | color/extended/d1fae5 | Theme · Semantic / Light |
-| `tone/green/border` | `--tone-green-border` | `#6ee7b7` |  | Theme · Semantic / Light |
-| `tone/green/text` | `--tone-green-text` | `#065f46` |  | Theme · Semantic / Light |
-| `tone/indigo/bg` | `--tone-indigo-bg` | `#e0e7ff` |  | Theme · Semantic / Light |
-| `tone/indigo/border` | `--tone-indigo-border` | `#a5b4fc` |  | Theme · Semantic / Light |
-| `tone/indigo/text` | `--tone-indigo-text` | `#3730a3` |  | Theme · Semantic / Light |
-| `tone/orange/bg` | `--tone-orange-bg` | `#ffedd5` | color/extended/ffedd5 | Theme · Semantic / Light |
-| `tone/orange/border` | `--tone-orange-border` | `#fdba74` | color/extended/fdba74 | Theme · Semantic / Light |
-| `tone/orange/text` | `--tone-orange-text` | `#9a3412` |  | Theme · Semantic / Light |
-| `tone/rose/bg` | `--tone-rose-bg` | `#ffe4e6` | color/extended/ffe4e6 | Theme · Semantic / Light |
-| `tone/rose/border` | `--tone-rose-border` | `#fda4af` |  | Theme · Semantic / Light |
-| `tone/rose/text` | `--tone-rose-text` | `#9f1239` |  | Theme · Semantic / Light |
-| `tone/teal/bg` | `--tone-teal-bg` | `#ccfbf1` | color/extended/ccfbf1 | Theme · Semantic / Light |
-| `tone/teal/border` | `--tone-teal-border` | `#5eead4` |  | Theme · Semantic / Light |
-| `tone/teal/text` | `--tone-teal-text` | `#115e59` |  | Theme · Semantic / Light |
-| `tone/violet/bg` | `--tone-violet-bg` | `#ede9fe` |  | Theme · Semantic / Light |
-| `tone/violet/border` | `--tone-violet-border` | `#c4b5fd` |  | Theme · Semantic / Light |
-| `tone/violet/text` | `--tone-violet-text` | `#5b21b6` |  | Theme · Semantic / Light |
-| `tone/yellow/bg` | `--tone-yellow-bg` | `#fef3c7` | color/extended/fef3c7 | Theme · Semantic / Light |
-| `tone/yellow/border` | `--tone-yellow-border` | `#fcd34d` | color/extended/fcd34d | Theme · Semantic / Light |
-| `tone/yellow/text` | `--tone-yellow-text` | `#92400e` |  | Theme · Semantic / Light |
+| `status/danger` | `--status-danger` | `#ef4444` |  | Theme · Semantic / Dark · Minimal |
+| `status/success-text` | `--status-success-text` | `#4ade80` |  | Theme · Semantic / Dark · Minimal |
+| `text/muted` | `--text-muted` | `#71717a` |  | Theme · Semantic / Dark · Minimal |
+| `text/primary` | `--text-primary` | `#ededef` |  | Theme · Semantic / Dark · Minimal |
+| `text/secondary` | `--text-secondary` | `#a1a1aa` |  | Theme · Semantic / Dark · Minimal |
+| `theme/is-dark` | `--theme-is-dark` | `true` |  | Theme · Semantic / Dark · Minimal |
+| `tone/blue/bg` | `--tone-blue-bg` | `#1d2739` |  | Theme · Semantic / Dark · Minimal |
+| `tone/blue/border` | `--tone-blue-border` | `#28487d` |  | Theme · Semantic / Dark · Minimal |
+| `tone/blue/text` | `--tone-blue-text` | `#93c5fd` |  | Theme · Semantic / Dark · Minimal |
+| `tone/cyan/bg` | `--tone-cyan-bg` | `#152e34` |  | Theme · Semantic / Dark · Minimal |
+| `tone/cyan/border` | `--tone-cyan-border` | `#105f6e` |  | Theme · Semantic / Dark · Minimal |
+| `tone/cyan/text` | `--tone-cyan-text` | `#67e8f9` |  | Theme · Semantic / Dark · Minimal |
+| `tone/fuchsia/bg` | `--tone-fuchsia-bg` | `#361f2c` |  | Theme · Semantic / Dark · Minimal |
+| `tone/fuchsia/border` | `--tone-fuchsia-border` | `#772e53` |  | Theme · Semantic / Dark · Minimal |
+| `tone/fuchsia/text` | `--tone-fuchsia-text` | `#f9a8d4` |  | Theme · Semantic / Dark · Minimal |
+| `tone/gray/bg` | `--tone-gray-bg` | `#242427` |  | Theme · Semantic / Dark · Minimal |
+| `tone/gray/border` | `--tone-gray-border` | `#404045` |  | Theme · Semantic / Dark · Minimal |
+| `tone/gray/text` | `--tone-gray-text` | `#d4d4d8` |  | Theme · Semantic / Dark · Minimal |
+| `tone/green/bg` | `--tone-green-bg` | `#172f28` |  | Theme · Semantic / Dark · Minimal |
+| `tone/green/border` | `--tone-green-border` | `#146048` |  | Theme · Semantic / Dark · Minimal |
+| `tone/green/text` | `--tone-green-text` | `#6ee7b7` |  | Theme · Semantic / Dark · Minimal |
+| `tone/indigo/bg` | `--tone-indigo-bg` | `#232338` |  | Theme · Semantic / Dark · Minimal |
+| `tone/indigo/border` | `--tone-indigo-border` | `#3a3b7b` |  | Theme · Semantic / Dark · Minimal |
+| `tone/indigo/text` | `--tone-indigo-text` | `#a5b4fc` |  | Theme · Semantic / Dark · Minimal |
+| `tone/orange/bg` | `--tone-orange-bg` | `#382519` |  | Theme · Semantic / Dark · Minimal |
+| `tone/orange/border` | `--tone-orange-border` | `#7d4118` |  | Theme · Semantic / Dark · Minimal |
+| `tone/orange/text` | `--tone-orange-text` | `#fdba74` |  | Theme · Semantic / Dark · Minimal |
+| `tone/rose/bg` | `--tone-rose-bg` | `#371d24` |  | Theme · Semantic / Dark · Minimal |
+| `tone/rose/border` | `--tone-rose-border` | `#7b2a39` |  | Theme · Semantic / Dark · Minimal |
+| `tone/rose/text` | `--tone-rose-text` | `#fda4af` |  | Theme · Semantic / Dark · Minimal |
+| `tone/teal/bg` | `--tone-teal-bg` | `#172e2e` |  | Theme · Semantic / Dark · Minimal |
+| `tone/teal/border` | `--tone-teal-border` | `#166059` |  | Theme · Semantic / Dark · Minimal |
+| `tone/teal/text` | `--tone-teal-text` | `#5eead4` |  | Theme · Semantic / Dark · Minimal |
+| `tone/violet/bg` | `--tone-violet-bg` | `#282239` |  | Theme · Semantic / Dark · Minimal |
+| `tone/violet/border` | `--tone-violet-border` | `#4c377d` |  | Theme · Semantic / Dark · Minimal |
+| `tone/violet/text` | `--tone-violet-text` | `#c4b5fd` |  | Theme · Semantic / Dark · Minimal |
+| `tone/yellow/bg` | `--tone-yellow-bg` | `#372b18` |  | Theme · Semantic / Dark · Minimal |
+| `tone/yellow/border` | `--tone-yellow-border` | `#7b5413` |  | Theme · Semantic / Dark · Minimal |
+| `tone/yellow/text` | `--tone-yellow-text` | `#fcd34d` |  | Theme · Semantic / Dark · Minimal |
 
 **Style Figma đang dùng:**
 
@@ -2569,8 +2569,8 @@ Những chỗ CSS không thể tái hiện y hệt Figma (đã dùng cách gần
 - `ASSET_EXPORT_FAILED` — **Control** (`I4056:108639;2015:31501;4056:109836;2015:30629`): Asset a68 (svg) could not be exported: Error: Failed to export node. This node may not have any visible layers.
 - `ASSET_EXPORT_FAILED` — **Group 240218** (`I4056:108709;1391:14471`): Asset a74 (svg) could not be exported: Error: Failed to export node. This node may not have any visible layers.
 - `ASSET_EXPORT_FAILED` — **Group 240218** (`I4056:108712;1391:14471`): Asset a75 (svg) could not be exported: Error: Failed to export node. This node may not have any visible layers.
-- `ASSET_EXPORT_FAILED` — **Group 240218** (`I4056:108790;1391:14471`): Asset a81 (svg) could not be exported: Error: Unable to establish connection to Figma after 10 seconds. Please check your internet connection.
-- `ASSET_EXPORT_FAILED` — **Group 240218** (`I4056:108793;1308:6702`): Asset a82 (svg) could not be exported: Error: Unable to establish connection to Figma after 10 seconds. Please check your internet connection.
+- `ASSET_EXPORT_FAILED` — **Group 240218** (`I4056:108790;1391:14471`): Asset a81 (svg) could not be exported: Error: Failed to export node. This node may not have any visible layers.
+- `ASSET_EXPORT_FAILED` — **Group 240218** (`I4056:108793;1308:6702`): Asset a82 (svg) could not be exported: Error: Failed to export node. This node may not have any visible layers.
 - `ASSET_EXPORT_FAILED` — **Group 240218** (`I4056:108871;1391:14019`): Asset a88 (svg) could not be exported: Error: Failed to export node. This node may not have any visible layers.
 - `ASSET_EXPORT_FAILED` — **Group 240218** (`I4056:108874;1391:14471`): Asset a89 (svg) could not be exported: Error: Failed to export node. This node may not have any visible layers.
 - `ASSET_EXPORT_FAILED` — **Group 240218** (`I4056:108949;1391:14471`): Asset a102 (svg) could not be exported: Error: Failed to export node. This node may not have any visible layers.

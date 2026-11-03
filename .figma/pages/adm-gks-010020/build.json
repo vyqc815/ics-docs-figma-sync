@@ -1,0 +1,32 @@
+{
+  "route": "/khao-sat/giao-khao-sat/ket-qua-khao-sat",
+  "pageFile": "components/figma/adm-gks-010020/index.tsx",
+  "docFile": "docs/pages/khao-sat/giao-khao-sat/ket-qua-khao-sat.md",
+  "sections": [
+    {
+      "nodeId": "4915:245208",
+      "component": "SidebarMenuAdmin",
+      "file": "components/figma/adm-gks-010020/SidebarMenuAdmin.tsx"
+    },
+    {
+      "nodeId": "4273:153335",
+      "component": "Header",
+      "file": "components/figma/adm-gks-010020/Header.tsx"
+    },
+    {
+      "nodeId": "4273:153384",
+      "component": "MaincontentGiaoKhaoSat",
+      "file": "components/figma/adm-gks-010020/MaincontentGiaoKhaoSat.tsx"
+    },
+    {
+      "nodeId": "5070:43464",
+      "component": "MenuThaoTacKhaoSatMo",
+      "file": "components/figma/shared/MenuThaoTacKhaoSatMo.tsx"
+    },
+    {
+      "nodeId": "5138:163889",
+      "component": "TooltipDanhSachNguoiChon",
+      "file": "components/figma/shared/TooltipDanhSachNguoiChon.tsx"
+    }
+  ]
+}

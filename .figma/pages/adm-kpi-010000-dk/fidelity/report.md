@@ -1,8 +1,8 @@
 # Fidelity: ADM-KPI-010000-DK — KPI & OT / Danh sách KPI
 
-- URL: `http://localhost:3108/kpi-ot/danh-sach-kpi-dk`
+- URL: `http://localhost:3000/kpi-ot/danh-sach-kpi-dk`
 - Verdict: **PASS**
-- Pixels outside text: **0.001%** differ (limit 0.5%); all pixels: 0.584%; inside text boxes: 2.232% (glyph rendering)
+- Pixels outside text: **0.001%** differ (limit 0.5%); all pixels: 0.568%; inside text boxes: 2.173% (glyph rendering)
 - Boxes: 419/419 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 419, ≤1px: 419, ≤2px: 419, ≤4px: 419, >4px: 0
 
 ## Pixel regions (largest first)
@@ -16,7 +16,6 @@
 
 | Text | Differing |
 | --- | --- |
-| Label (`I4056:128378;2245:87864`) | 12.5% |
 | Ngày Cập Nhật (`4056:128052`) | 5.8% |
 | Support: Lớp < 12 Mức 3 (`4056:128192`) | 4.3% |
 | Giáo viên: Lớp ≥ 12 Mức 2 (`4056:128072`) | 4.2% |
@@ -31,6 +30,7 @@
 | 21.09.2025 (`4056:128065`) | 3.9% |
 | 21.09.2025 (`4056:128067`) | 3.9% |
 | 21.09.2025 (`4056:128080`) | 3.9% |
+| 21.09.2025 (`4056:128082`) | 3.9% |
 
 ## Largest box differences
 

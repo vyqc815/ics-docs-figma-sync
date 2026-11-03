@@ -1,29 +1,29 @@
 # Fidelity: GV-LOP-010000 — Lớp / Thống kê tổng quan
 
-- URL: `http://localhost:3108/lop/thong-ke-tong-quan`
+- URL: `http://localhost:3000/lop/thong-ke-tong-quan`
 - Verdict: **PASS**
-- Pixels outside text: **0%** differ (limit 0.5%); all pixels: 0.176%; inside text boxes: 1.25% (glyph rendering)
+- Pixels outside text: **0%** differ (limit 0.5%); all pixels: 0.118%; inside text boxes: 0.835% (glyph rendering)
 - Boxes: 390/390 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 390, ≤1px: 390, ≤2px: 390, ≤4px: 390, >4px: 0
 
 ## Text boxes with most differing pixels (limit 35%)
 
 | Text | Differing |
 | --- | --- |
-| 80% (`I3868:95655;1391:14476`) | 25.4% |
-| 100% (`I3868:96297;1308:6749`) | 24.7% |
-| 100% (`I3868:96315;1308:6749`) | 24.7% |
-| 100% (`I3868:96333;1308:6749`) | 24.7% |
-| 100% (`I3868:96351;1308:6749`) | 24.7% |
-| 100% (`I6725:362994;1308:6749`) | 24.7% |
-| 100% (`I6725:363031;1308:6749`) | 24.7% |
-| 100% (`I6725:363068;1308:6749`) | 24.7% |
-| 100% (`I6725:363086;1308:6749`) | 24.7% |
-| 0% (`I3868:96279;1308:6706`) | 23% |
 | Điểm (`I6725:364190;6725:364182`) | 11% |
 | Ngày kết thúc (`3868:95612`) | 4% |
 | Tiêu đề trang (`6757:364978`) | 3% |
 | 01.10.2026 (`3868:95614`) | 2.7% |
 | Tiếng Đức 4 Kỹ Năng B1 (v2026-nháp) (`3868:96310`) | 2.6% |
+| Tiếng Đức 4 Kỹ Năng B1 (v2026-nháp) (`6725:363081`) | 2.6% |
+| Tiếng Đức 4 Kỹ Năng B1 (v2026) (`6725:362989`) | 2.2% |
+| B2 - LUYỆN THI - HK2 (`6725:363079`) | 2.2% |
+| BACKUP_RESOURCE (`3868:96272`) | 1.7% |
+| A1 - CƠ BẢN - HK2 (`6725:363061`) | 1.6% |
+| Value (`I6247:155103;2015:36008`) | 1.5% |
+| BD105-I (`3868:95648`) | 1.5% |
+| Label (`I4915:258752;4901:212603;2245:87768`) | 1.4% |
+| Tiếng Đức 4 Kỹ Năng A2 (v2026) (`3868:96274`) | 1.4% |
+| 6/20 Buổi (`I3868:96311;1350:13172`) | 1.4% |
 
 ## Largest box differences
 

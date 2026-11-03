@@ -5,7 +5,7 @@
 > **Nguồn:** PLS-ICS T8/2026 › EMPTY / ERROR STATES › SYS-ERR-010000 — Lỗi 403 · Không có quyền truy cập (`5789:152449`, file `rRVs5HX0kIHffbS0V40djG`)  
 > **Route:** `/loi-403-khong-co-quyen-truy-cap`  
 > **Khung thiết kế:** 1440 × 810 px  
-> **Xuất lúc:** 2026-11-02T02:58:29.443Z  
+> **Xuất lúc:** 2026-11-02T18:17:18.330Z  
 > **Spec đầy đủ (giá trị chính xác từng node):** `../../.figma/pages/sys-err-010000/page-spec.json`
 
 ## 1. Tổng quan
@@ -26,11 +26,15 @@ Nền trang: `linear-gradient(#f8fafc, #f8fafc), linear-gradient(#ffffff, #fffff
 
 | Token | Biến CSS | Giá trị | Trỏ tới | Bộ / mode |
 | --- | --- | --- | --- | --- |
+| `bg/canvas` | `--bg-canvas` | `#f8fafc` | color/extended/f8fafc | Theme · Semantic / Light |
 | `bố cục/khoảng cách khối` | `--bo-cuc-khoang-cach-khoi` | `16` | spacing/16 | Number Tokens / Mode 1 |
 | `bố cục/lề hai bên` | `--bo-cuc-le-hai-ben` | `16` | spacing/16 | Number Tokens / Mode 1 |
 | `bố cục/lề trên dưới` | `--bo-cuc-le-tren-duoi` | `24` | spacing/24 | Number Tokens / Mode 1 |
+| `brand/primary` | `--brand-primary` | `#e65100` | color/brand/orange | Theme · Semantic / Light |
 | `color/brand/orange` | `--color-brand-orange` | `#e65100` |  | Color Tokens / Light |
+| `color/extended/1e293b` | `--color-extended-1e293b` | `#1e293b` |  | Color Tokens / Light |
 | `color/extended/fed7aa` | `--color-extended-fed7aa` | `#fed7aa` |  | Color Tokens / Light |
+| `color/neutral/500` | `--color-neutral-500` | `#757575` |  | Color Tokens / Light |
 | `color/neutral/white` | `--color-neutral-white` | `#ffffff` |  | Color Tokens / Light |
 | `radius/12` | `--radius-12` | `12` |  | Number Tokens / Mode 1 |
 | `radius/8` | `--radius-8` | `8` |  | Number Tokens / Mode 1 |
@@ -61,11 +65,11 @@ Nền trang: `linear-gradient(#f8fafc, #f8fafc), linear-gradient(#ffffff, #fffff
 
 | Style | Font family | Cỡ / line-height | Độ đậm | Letter-spacing | Màu | Số lần | Ví dụ |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| — | Unbounded | 72 / 89px | 500 | 0.02em | #e65100 | 1 | “403” |
-| — | Unbounded | 24 / 30px | 500 | 0 | #1e293b | 1 | “Bạn không có quyền truy cập trang này” |
+| — | Unbounded | 72 / 89px | 500 | 0.02em | #e65100 (brand/primary) | 1 | “403” |
+| — | Unbounded | 24 / 30px | 500 | 0 | #1e293b (color/extended/1e293b) | 1 | “Bạn không có quyền truy cập trang này” |
 | `Body/17/Bold` | Afacad | 17 / 21px | 700 | 0 | #e65100 (color/brand/orange) | 1 | “Liên hệ quản trị” |
 | `Body/17/Bold` | Afacad | 17 / 21px | 700 | 0 | #ffffff (color/neutral/white) | 1 | “Về trang chủ” |
-| — | Afacad | 15 / 23px | 400 | 0 | #757575 | 1 | “Tài khoản của bạn chưa được cấp quyền x…” |
+| — | Afacad | 15 / 23px | 400 | 0 | #757575 (color/neutral/500) | 1 | “Tài khoản của bạn chưa được cấp quyền x…” |
 | `Body/13/SemiBold` | Afacad | 13 / 16px | 600 | 0 | #ffffff (color/neutral/white) | 3 | “20%” |
 | — | Unbounded | 13 / 16px | 600 | 0 | #ffffff (color/neutral/white) | 1 | “Admin Đắc Nhân” |
 | — | Afacad | 13 / 16px | 500 | 0 | #ffffff (color/neutral/white) | 1 | “admin@gmail.com” |
@@ -197,12 +201,12 @@ Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí ·
           - [icon] **Icon** ⟨ICON MENU: ICON MENU=Tương tác⟩ — 28×28 · @ (8, 8) flow · file /figma/sys-err-010000/icon-I5789-152585-4899-195460-2245-87764.svg `I5789:152585;4899:195460;2245:87764`
           - [chữ] “tương tác” — 158×15 [FILL×HUG] · @ (44, 14.5) flow · Unbounded 12/15px 600 #ffffff (color/neutral/white) case title `I5789:152585;4899:195460;2245:87768`
       - [icon] **LOGO CENTER** ⟨LOGO CENTER: Property 1=ICS, Property 2=yes⟩ — 146×54 · @ (32, 662) flow · file /figma/assets/a60805eceb04.svg covers (-4, 0) 154×62 `I5789:152585;4915:212082`
-  - [khối] **MainContent** — 1206×746 · @ (234, 64) abs · column gap 16 pad 24 16 24 16 justify CENTER align CENTER · bg #f8fafc · clip `5789:152586`
+  - [khối] **MainContent** — 1206×746 · @ (234, 64) abs · column gap 16 pad 24 16 24 16 justify CENTER align CENTER · bg #f8fafc (bg/canvas) · clip `5789:152586`
     - [khối] **Trạng thái · 403** — 575×459.67 [HUG×HUG] · @ (315.5, 143.17) flow · column gap 12 align CENTER · clip `5789:155373`
       - [icon] **Empty State / Illustration** ⟨Empty State / Illustration: Type=Cảnh báo, Trung tâm=Sakumi⟩ — 260×198.67 · @ (157.5, 0) flow · file /figma/assets/5af99f34b2e3.svg `5789:155374`
-      - [chữ] “403” — 188×89 [HUG×HUG] · @ (193.5, 210.67) flow · Unbounded 72/89px 500 #e65100 letter-spacing 0.02em · no-wrap `5789:155392`
-      - [chữ] “Bạn không có quyền truy cập trang này” — 575×30 [HUG×HUG] · @ (0, 311.67) flow · Unbounded 24/30px 500 #1e293b · text-align center · no-wrap `5789:155393`
-      - [chữ] “Tài khoản của bạn chưa được cấp quyền xem nội dung này. Nếu cần truy cập, hãy liên hệ quản trị viên để được cấp quyền.” — 460×46 [FIXED×HUG] · @ (57.5, 353.67) flow · Afacad 15/23px 400 #757575 · text-align center `5789:155394`
+      - [chữ] “403” — 188×89 [HUG×HUG] · @ (193.5, 210.67) flow · Unbounded 72/89px 500 #e65100 (brand/primary) letter-spacing 0.02em · no-wrap `5789:155392`
+      - [chữ] “Bạn không có quyền truy cập trang này” — 575×30 [HUG×HUG] · @ (0, 311.67) flow · Unbounded 24/30px 500 #1e293b (color/extended/1e293b) · text-align center · no-wrap `5789:155393`
+      - [chữ] “Tài khoản của bạn chưa được cấp quyền xem nội dung này. Nếu cần truy cập, hãy liên hệ quản trị viên để được cấp quyền.” — 460×46 [FIXED×HUG] · @ (57.5, 353.67) flow · Afacad 15/23px 400 #757575 (color/neutral/500) · text-align center `5789:155394`
       - [khối] **Nút** — 299×48 [HUG×HUG] · @ (138, 411.67) flow · row gap 12 pad 12 0 0 0 · clip `5789:155395`
         - [instance] **Nút · Liên hệ quản trị** ⟨Atom/Button: Label=Liên hệ quản trị, Type=Outlined, Size=Medium⟩ — 153×36 [HUG×FIXED] · @ (0, 12) flow · row pad 10 24 10 24 align CENTER · bg #ffffff · radius 8px · border 1px solid #e65100 (color/brand/orange) · shadow 1px 1px 6px 0 rgba(230, 81, 0, 0.35), 0 0 4px 0 rgba(230, 81, 0, 0.05) `5789:155396`
           - [chữ] “Liên hệ quản trị” — 103×21 [HUG×HUG] · @ (25, 7.5) flow · Afacad 17/21px 700 #e65100 (color/brand/orange) · no-wrap `I5789:155396;1430:10760`

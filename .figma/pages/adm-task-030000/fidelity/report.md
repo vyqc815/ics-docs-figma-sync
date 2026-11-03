@@ -1,8 +1,8 @@
 # Fidelity: ADM-TASK-030000 — Task trực
 
-- URL: `http://localhost:3108/task-truc`
+- URL: `http://localhost:3000/task-truc`
 - Verdict: **PASS**
-- Pixels outside text: **0.001%** differ (limit 0.5%); all pixels: 0.231%; inside text boxes: 1.072% (glyph rendering)
+- Pixels outside text: **0.001%** differ (limit 0.5%); all pixels: 0.208%; inside text boxes: 0.964% (glyph rendering)
 - Boxes: 278/278 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 278, ≤1px: 278, ≤2px: 278, ≤4px: 278, >4px: 0
 
 ## Pixel regions (largest first)
@@ -15,13 +15,6 @@
 
 | Text | Differing |
 | --- | --- |
-| 0% (`I4343:84050;1308:6706`) | 23% |
-| 0% (`I4343:84058;1308:6706`) | 23% |
-| 0% (`I4343:84066;1308:6706`) | 23% |
-| 0% (`I4343:84074;1308:6706`) | 23% |
-| 0% (`I4343:84088;1308:6706`) | 23% |
-| 0% (`I4343:84096;1308:6706`) | 23% |
-| 0% (`I4343:84104;1308:6706`) | 23% |
 | BẮT BUỘC ĐẢM BẢO Ô F-GẤP + F-KHAI GIẢNG = 0 (`4343:83670`) | 4% |
 | [Trực CSKH] Quy trình trước check out (`4343:83775`) | 2.9% |
 | Đã rà soát lại toàn bộ tin nhắn hôm nay và hôm qua xem có bị (`4343:83920`) | 1.7% |
@@ -30,6 +23,13 @@
 | Value (`I4343:81138;2015:36008`) | 1.1% |
 | [Trực CSKH] Vòng 1 (`4343:83558`) | 1% |
 | Hôm nay (08/10/2026) (`4343:84075`) | 1% |
+| Label (`I4915:238412;4899:196978;2245:87858`) | 0.9% |
+| [Trực CSKH] Vòng 2 (`4343:83760`) | 0.9% |
+| Hôm qua (07/10/2026) (`4343:84067`) | 0.9% |
+| Ngày mai (09/10/2026) (`4343:84089`) | 0.9% |
+| Label (`I4915:238412;4899:196977;2245:87858`) | 0.7% |
+| 05/10/2026 (`4343:84051`) | 0.7% |
+| 06/10/2026 (`4343:84059`) | 0.7% |
 
 ## Largest box differences
 

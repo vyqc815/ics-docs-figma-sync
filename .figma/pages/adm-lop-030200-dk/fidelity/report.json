@@ -12,37 +12,13 @@
   "pixels": {
     "width": 1440,
     "height": 1059,
-    "mismatched": 4828,
-    "percent": 0.317,
+    "mismatched": 4288,
+    "percent": 0.281,
     "shapePercent": 0.002,
-    "textPercent": 1.73,
+    "textPercent": 1.536,
     "sizeMismatch": false
   },
   "textNodes": [
-    {
-      "id": "I4056:111212;1308:6706",
-      "name": "0%",
-      "pixels": 51,
-      "percent": 26
-    },
-    {
-      "id": "I4056:111200;1391:14476",
-      "name": "80%",
-      "pixels": 66,
-      "percent": 23.6
-    },
-    {
-      "id": "I4056:111201;1308:6749",
-      "name": "100%",
-      "pixels": 67,
-      "percent": 19.9
-    },
-    {
-      "id": "I4056:111213;1308:6749",
-      "name": "100%",
-      "pixels": 67,
-      "percent": 19.9
-    },
     {
       "id": "4056:111158",
       "name": "ÔN TẬP: Giữa Kỳ 1",
@@ -54,12 +30,6 @@
       "name": "Label",
       "pixels": 329,
       "percent": 13.7
-    },
-    {
-      "id": "I4056:111364;2245:87914",
-      "name": "Label",
-      "pixels": 305,
-      "percent": 12.7
     },
     {
       "id": "I4056:111363;2245:87908",
@@ -108,6 +78,36 @@
       "name": "Label",
       "pixels": 61,
       "percent": 2.5
+    },
+    {
+      "id": "4056:111169",
+      "name": "ÔN TẬP: Giữa Kỳ 1",
+      "pixels": 317,
+      "percent": 2.2
+    },
+    {
+      "id": "I4056:111175;2808:48145",
+      "name": "Nhãn trường",
+      "pixels": 20,
+      "percent": 1.9
+    },
+    {
+      "id": "I4056:111167;2808:48145",
+      "name": "Nhãn trường",
+      "pixels": 17,
+      "percent": 1.8
+    },
+    {
+      "id": "I4056:111196;3497:64446",
+      "name": "Trần Nguyễn Hoài Phương",
+      "pixels": 29,
+      "percent": 1.7
+    },
+    {
+      "id": "I4056:111207;3497:64446",
+      "name": "Trần Nguyễn Hoài Phương",
+      "pixels": 29,
+      "percent": 1.7
     }
   ],
   "regions": [
@@ -453,7 +453,7 @@
     "over": []
   },
   "failures": [],
-  "url": "http://localhost:3108/lop-hoc/bai-hoc/thong-tin-dk",
+  "url": "http://localhost:3000/lop-hoc/bai-hoc/thong-tin-dk",
   "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
   "consoleErrors": [],
   "rootFound": true

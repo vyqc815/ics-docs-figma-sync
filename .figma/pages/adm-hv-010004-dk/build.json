@@ -1,0 +1,22 @@
+{
+  "route": "/danh-sach-hoc-vien-trong-dk",
+  "pageFile": "components/figma/adm-hv-010004-dk/index.tsx",
+  "docFile": "docs/pages/danh-sach-hoc-vien-trong-dk.md",
+  "sections": [
+    {
+      "nodeId": "5789:162340",
+      "component": "Header18",
+      "file": "components/figma/shared/Header18.tsx"
+    },
+    {
+      "nodeId": "5789:162390",
+      "component": "Sidebar",
+      "file": "components/figma/adm-hv-010004-dk/Sidebar.tsx"
+    },
+    {
+      "nodeId": "5789:162474",
+      "component": "Maincontent",
+      "file": "components/figma/adm-hv-010004-dk/Maincontent.tsx"
+    }
+  ]
+}

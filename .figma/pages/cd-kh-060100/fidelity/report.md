@@ -1,8 +1,8 @@
 # Fidelity: CD-KH-060100 — Bài tập về nhà / BTVN
 
-- URL: `http://localhost:3108/bai-tap-ve-nha/btvn`
+- URL: `http://localhost:3000/bai-tap-ve-nha/btvn`
 - Verdict: **PASS**
-- Pixels outside text: **0.004%** differ (limit 0.5%); all pixels: 0.235%; inside text boxes: 1.097% (glyph rendering)
+- Pixels outside text: **0.004%** differ (limit 0.5%); all pixels: 0.234%; inside text boxes: 1.091% (glyph rendering)
 - Boxes: 428/428 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 414, ≤1px: 423, ≤2px: 428, ≤4px: 428, >4px: 0
 
 ## Pixel regions (largest first)

@@ -1,8 +1,8 @@
 # Fidelity: ADM-GV-020100-DK — Chi tiết giáo viên / Thông tin cá nhân
 
-- URL: `http://localhost:3108/chi-tiet-giao-vien/thong-tin-ca-nhan-dk`
+- URL: `http://localhost:3000/chi-tiet-giao-vien/thong-tin-ca-nhan-dk`
 - Verdict: **PASS**
-- Pixels outside text: **0.013%** differ (limit 0.5%); all pixels: 0.302%; inside text boxes: 1.281% (glyph rendering)
+- Pixels outside text: **0.013%** differ (limit 0.5%); all pixels: 0.272%; inside text boxes: 1.146% (glyph rendering)
 - Boxes: 204/204 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 202, ≤1px: 202, ≤2px: 204, ≤4px: 204, >4px: 0
 
 ## Pixel regions (largest first)
@@ -19,7 +19,6 @@
 | Text | Differing |
 | --- | --- |
 | Tạ Thị Bích Ngọc (`4056:124630`) | 16.5% |
-| Label (`I4056:124816;2245:87864`) | 14.9% |
 | Gmail (`4056:124664`) | 8% |
 | Tạ Thị Bích Ngọc (`4056:124740`) | 7.8% |
 | Lấy lại mật khẩu (`4056:124646`) | 3.9% |
@@ -33,6 +32,7 @@
 | Label (`I4056:124820;2245:87858`) | 1.6% |
 | Số tài khoản (`4056:124731`) | 1.5% |
 | Label (`I4056:124812;2245:87858`) | 1.5% |
+| Label (`I4056:124819;2245:87858`) | 1.5% |
 
 ## Largest box differences
 

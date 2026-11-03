@@ -1,0 +1,37 @@
+{
+  "route": "/hoa-don/danh-sach-hoa-don/dropdown-hoa-don-do-loai-hoa-don-doi-trang-thai",
+  "pageFile": "components/figma/adm-hd-010202/index.tsx",
+  "docFile": "docs/pages/hoa-don/danh-sach-hoa-don/dropdown-hoa-don-do-loai-hoa-don-doi-trang-thai.md",
+  "sections": [
+    {
+      "nodeId": "2731:87278",
+      "component": "Header",
+      "file": "components/figma/adm-hd-010202/Header.tsx"
+    },
+    {
+      "nodeId": "4915:247680",
+      "component": "SidebarMenuAdmin",
+      "file": "components/figma/adm-hd-010202/SidebarMenuAdmin.tsx"
+    },
+    {
+      "nodeId": "2929:49758",
+      "component": "Maincontent",
+      "file": "components/figma/adm-hd-010202/Maincontent.tsx"
+    },
+    {
+      "nodeId": "2731:87981",
+      "component": "DropdownLocHoaDonDo",
+      "file": "components/figma/adm-hd-010202/DropdownLocHoaDonDo.tsx"
+    },
+    {
+      "nodeId": "2731:88067",
+      "component": "DropdownLocLoaiHoaDon",
+      "file": "components/figma/adm-hd-010202/DropdownLocLoaiHoaDon.tsx"
+    },
+    {
+      "nodeId": "2731:88315",
+      "component": "DropdownDongDoiTrangThai",
+      "file": "components/figma/adm-hd-010202/DropdownDongDoiTrangThai.tsx"
+    }
+  ]
+}

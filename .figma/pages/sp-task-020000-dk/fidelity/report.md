@@ -1,8 +1,8 @@
 # Fidelity: SP-TASK-020000-DK — Quy trình / Task tuần này
 
-- URL: `http://localhost:3108/quy-trinh/task-tuan-nay-dk`
+- URL: `http://localhost:3000/quy-trinh/task-tuan-nay-dk`
 - Verdict: **PASS**
-- Pixels outside text: **0.002%** differ (limit 0.5%); all pixels: 0.268%; inside text boxes: 1.431% (glyph rendering)
+- Pixels outside text: **0.002%** differ (limit 0.5%); all pixels: 0.264%; inside text boxes: 1.413% (glyph rendering)
 - Boxes: 246/246 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 246, ≤1px: 246, ≤2px: 246, ≤4px: 246, >4px: 0
 
 ## Pixel regions (largest first)
@@ -16,7 +16,6 @@
 
 | Text | Differing |
 | --- | --- |
-| 0% (`I4056:147052;1308:6706`) | 26% |
 | Đã xem và chốt tổng quan nhiệm vụ vần làm trong tuần dựa vào (`4056:146992`) | 7.8% |
 | Th2, 14.09.2026 (`I4056:146980;1590:881`) | 5.5% |
 | Th2, 14.09.2026 (`I4056:147015;1590:881`) | 5.3% |
@@ -31,6 +30,7 @@
 | Label (`I4056:146933;1971:7432`) | 2.1% |
 | Phụ Trách Lớp Đắc Nhân (`I4056:146857;2008:31709`) | 1.9% |
 | 01.01.2027 > 08.01.2027 (`4056:147053`) | 1.9% |
+| Label (`I4056:146941;2245:87829`) | 1.8% |
 
 ## Largest box differences
 

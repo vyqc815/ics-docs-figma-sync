@@ -5,7 +5,7 @@
 > **Nguồn:** PLS-ICS T8/2026 ›         ├─ Task hôm nay › SP-TASK-010000 — Quy trình / Task hôm nay · Đã chọn thêm người (`6935:389124`, file `rRVs5HX0kIHffbS0V40djG`)  
 > **Route:** `/quy-trinh/task-hom-nay-da-chon-them-nguoi`  
 > **Khung thiết kế:** 1440 × 1255 px  
-> **Xuất lúc:** 2026-11-02T03:53:53.288Z  
+> **Xuất lúc:** 2026-11-03T01:09:20.126Z  
 > **Spec đầy đủ (giá trị chính xác từng node):** `../../../.figma/pages/sp-task-010000-2/page-spec.json`
 
 ## 1. Tổng quan
@@ -25,7 +25,9 @@ Nền trang: `#f8fafc`.
 
 | Token | Biến CSS | Giá trị | Trỏ tới | Bộ / mode |
 | --- | --- | --- | --- | --- |
+| `bg/surface` | `--bg-surface` | `#ffffff` | color/neutral/white | Theme · Semantic / Light |
 | `bố cục/lề trên dưới` | `--bo-cuc-le-tren-duoi` | `24` | spacing/24 | Number Tokens / Mode 1 |
+| `brand/primary` | `--brand-primary` | `#e65100` | color/brand/orange | Theme · Semantic / Light |
 | `color/border/default` | `--color-border-default` | `#e2e8f0` |  | Color Tokens / Light |
 | `color/border/subtle` | `--color-border-subtle` | `#f1f5f9` |  | Color Tokens / Light |
 | `color/brand/orange` | `--color-brand-orange` | `#e65100` |  | Color Tokens / Light |
@@ -45,6 +47,7 @@ Nền trang: `#f8fafc`.
 | `spacing/12` | `--spacing-12` | `12` |  | Number Tokens / Mode 1 |
 | `spacing/16` | `--spacing-16` | `16` |  | Number Tokens / Mode 1 |
 | `spacing/8` | `--spacing-8` | `8` |  | Number Tokens / Mode 1 |
+| `text/primary` | `--text-primary` | `#334155` | color/text/primary | Theme · Semantic / Light |
 
 **Style Figma đang dùng:**
 
@@ -83,7 +86,7 @@ Nền trang: `#f8fafc`.
 | — | Afacad | 17 / 21px | 400 italic | 0 | #cccccc (color/text/placeholder) | 2 | “Nhập ghi chú...” |
 | — | Unbounded | 17 / 26px | 600 | 0 | #334155 (color/text/primary) | 1 | “Thời gian” |
 | `Body/16/Medium · Title` | Afacad | 16 / 20px | 500 · case title | 0 | #3d3d3d | 4 | “Của tôi” |
-| `Body/15/Bold` | Afacad | 15 / 19px | 700 | 0 | #334155 | 7 | “Hôm qua (05.10.2026)” |
+| `Body/15/Bold` | Afacad | 15 / 19px | 700 | 0 | #334155 (text/primary) | 7 | “Hôm qua (05.10.2026)” |
 | `Body/15/Bold` | Afacad | 15 / 19px | 700 | 0 | #e65100 | 5 | “1/1” |
 | `Body/15/Regular` | Afacad | 15 / 19px | 400 | 0 | #64748b (color/text/secondary) | 4 | “Ghi chú” |
 | `Body/15/Bold` | Afacad | 15 / 19px | 700 | 0 | #cbd5e1 (color/text/muted) | 3 | “4/7” |
@@ -382,41 +385,41 @@ Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí ·
               - [chữ] “Tuần này” — 54×19 [HUG×HUG] · @ (0, 0) flow · Afacad 15/19px 500 #e65100 (color/brand/orange) · no-wrap `I6935:389390;2015:36092`
             - [icon] **Chevron** ⟨Action Icon: Icon=Chevron Down, Size=16⟩ — 16×16 · @ (73, 7) flow · file /figma/assets/279c483ae289.svg `I6935:389390;2015:36096`
         - [khối] **Danh sách ngày** — 266×438 [FILL×HUG] · @ (0, 46) flow · column gap 12 `6935:389391`
-          - [khối] **Ngày · Hôm qua (05.10.2026)** — 266×52 [FILL×HUG] · @ (0, 0) flow · row gap 12 pad 8 12 8 12 align CENTER · bg #ffffff · radius 12px · shadow 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `6935:389392`
+          - [khối] **Ngày · Hôm qua (05.10.2026)** — 266×52 [FILL×HUG] · @ (0, 0) flow · row gap 12 pad 8 12 8 12 align CENTER · bg #ffffff (bg/surface) · radius 12px · shadow 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `6935:389392`
             - [instance] **PERCENT %** ⟨PERCENT %: Property 1=ĐN 1⟩ — 36×36 · @ (12, 8) flow · column gap 10 justify CENTER align CENTER · shadow 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `6935:389393`
               - [icon] **Group 240218** — 36×36 · @ (0, 0) abs · file /figma/assets/bffdac072745.svg `I6935:389393;1308:6702`
               - [chữ] “0%” — 12×12 [HUG×HUG] · @ (12, 12) flow · runs: “0” Afacad 10/12px 600 #334155 (color/text/primary); “%” Afacad 8/10px 600 #334155 (color/text/primary) · text-align center · no-wrap `I6935:389393;1308:6706`
-            - [chữ] “Hôm qua (05.10.2026)” — 194×19 [FILL×HUG] · @ (60, 16.5) flow · Afacad 15/19px 700 #334155 `6935:389394`
-          - [khối] **Ngày · Hôm nay (06.10.2026)** — 266×54 [FILL×HUG] · @ (0, 64) flow · row gap 12 pad 8 12 8 12 align CENTER · bg #ffffff · radius 12px · border 1px solid #e65100 · shadow 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `6935:389395`
+            - [chữ] “Hôm qua (05.10.2026)” — 194×19 [FILL×HUG] · @ (60, 16.5) flow · Afacad 15/19px 700 #334155 (text/primary) `6935:389394`
+          - [khối] **Ngày · Hôm nay (06.10.2026)** — 266×54 [FILL×HUG] · @ (0, 64) flow · row gap 12 pad 8 12 8 12 align CENTER · bg #ffffff (bg/surface) · radius 12px · border 1px solid #e65100 (brand/primary) · shadow 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `6935:389395`
             - [instance] **PERCENT %** ⟨PERCENT %: Property 1=ĐN 2⟩ — 36×36 · @ (13, 9) flow · column gap 10 justify CENTER align CENTER · shadow 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `6935:389396`
               - [icon] **Group 240218** — 36×36 · @ (0, 0) abs · file /figma/assets/880843598451.svg `I6935:389396;1391:14019`
               - [chữ] “100%” — 22×12 [HUG×HUG] · @ (7, 12) flow · runs: “100” Afacad 10/12px 600 #e65100 (color/brand/orange); “%” Afacad 8/10px 600 #e65100 (color/brand/orange) · text-align center · no-wrap `I6935:389396;1308:6749`
-            - [chữ] “Hôm nay (06.10.2026)” — 192×19 [FILL×HUG] · @ (61, 17.5) flow · Afacad 15/19px 700 #334155 `6935:389397`
-          - [khối] **Ngày · Ngày mai (07.10.2026)** — 266×52 [FILL×HUG] · @ (0, 130) flow · row gap 12 pad 8 12 8 12 align CENTER · bg #ffffff · radius 12px · shadow 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `6935:389398`
+            - [chữ] “Hôm nay (06.10.2026)” — 192×19 [FILL×HUG] · @ (61, 17.5) flow · Afacad 15/19px 700 #334155 (text/primary) `6935:389397`
+          - [khối] **Ngày · Ngày mai (07.10.2026)** — 266×52 [FILL×HUG] · @ (0, 130) flow · row gap 12 pad 8 12 8 12 align CENTER · bg #ffffff (bg/surface) · radius 12px · shadow 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `6935:389398`
             - [instance] **PERCENT %** ⟨PERCENT %: Property 1=ĐN 2⟩ — 36×36 · @ (12, 8) flow · column gap 10 justify CENTER align CENTER · shadow 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `6935:389399`
               - [icon] **Group 240218** — 36×36 · @ (0, 0) abs · file /figma/assets/880843598451.svg `I6935:389399;1391:14019`
               - [chữ] “100%” — 22×12 [HUG×HUG] · @ (7, 12) flow · runs: “100” Afacad 10/12px 600 #e65100 (color/brand/orange); “%” Afacad 8/10px 600 #e65100 (color/brand/orange) · text-align center · no-wrap `I6935:389399;1308:6749`
-            - [chữ] “Ngày mai (07.10.2026)” — 194×19 [FILL×HUG] · @ (60, 16.5) flow · Afacad 15/19px 700 #334155 `6935:389400`
-          - [khối] **Ngày · 08.10.2026** — 266×52 [FILL×HUG] · @ (0, 194) flow · row gap 12 pad 8 12 8 12 align CENTER · bg #ffffff · radius 12px · shadow 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `6935:389401`
+            - [chữ] “Ngày mai (07.10.2026)” — 194×19 [FILL×HUG] · @ (60, 16.5) flow · Afacad 15/19px 700 #334155 (text/primary) `6935:389400`
+          - [khối] **Ngày · 08.10.2026** — 266×52 [FILL×HUG] · @ (0, 194) flow · row gap 12 pad 8 12 8 12 align CENTER · bg #ffffff (bg/surface) · radius 12px · shadow 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `6935:389401`
             - [instance] **PERCENT %** ⟨PERCENT %: Property 1=ĐN 4⟩ — 36×36 · @ (12, 8) flow · column gap 10 justify CENTER align CENTER · shadow 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `6935:389402`
               - [icon] **Group 240218** — 36×36 · @ (0, 0) abs · file /figma/assets/2088668ec55b.svg `I6935:389402;1391:14471`
               - [chữ] “80%” — 17×12 [HUG×HUG] · @ (9.5, 12) flow · runs: “80” Afacad 10/12px 600 #1e293b; “%” Afacad 8/10px 600 #e65100 · text-align center · no-wrap `I6935:389402;1391:14476`
-            - [chữ] “08.10.2026” — 194×19 [FILL×HUG] · @ (60, 16.5) flow · Afacad 15/19px 700 #334155 `6935:389403`
-          - [khối] **Ngày · 09.10.2026** — 266×52 [FILL×HUG] · @ (0, 258) flow · row gap 12 pad 8 12 8 12 align CENTER · bg #ffffff · radius 12px · shadow 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `6935:389404`
+            - [chữ] “08.10.2026” — 194×19 [FILL×HUG] · @ (60, 16.5) flow · Afacad 15/19px 700 #334155 (text/primary) `6935:389403`
+          - [khối] **Ngày · 09.10.2026** — 266×52 [FILL×HUG] · @ (0, 258) flow · row gap 12 pad 8 12 8 12 align CENTER · bg #ffffff (bg/surface) · radius 12px · shadow 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `6935:389404`
             - [instance] **PERCENT %** ⟨PERCENT %: Property 1=ĐN 1⟩ — 36×36 · @ (12, 8) flow · column gap 10 justify CENTER align CENTER · shadow 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `6935:389405`
               - [icon] **Group 240218** — 36×36 · @ (0, 0) abs · file /figma/assets/bffdac072745.svg `I6935:389405;1308:6702`
               - [chữ] “0%” — 12×12 [HUG×HUG] · @ (12, 12) flow · runs: “0” Afacad 10/12px 600 #334155 (color/text/primary); “%” Afacad 8/10px 600 #334155 (color/text/primary) · text-align center · no-wrap `I6935:389405;1308:6706`
-            - [chữ] “09.10.2026” — 194×19 [FILL×HUG] · @ (60, 16.5) flow · Afacad 15/19px 700 #334155 `6935:389406`
-          - [khối] **Ngày · 10.10.2026** — 266×52 [FILL×HUG] · @ (0, 322) flow · row gap 12 pad 8 12 8 12 align CENTER · bg #ffffff · radius 12px · shadow 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `6935:389407`
+            - [chữ] “09.10.2026” — 194×19 [FILL×HUG] · @ (60, 16.5) flow · Afacad 15/19px 700 #334155 (text/primary) `6935:389406`
+          - [khối] **Ngày · 10.10.2026** — 266×52 [FILL×HUG] · @ (0, 322) flow · row gap 12 pad 8 12 8 12 align CENTER · bg #ffffff (bg/surface) · radius 12px · shadow 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `6935:389407`
             - [instance] **PERCENT %** ⟨PERCENT %: Property 1=ĐN 1⟩ — 36×36 · @ (12, 8) flow · column gap 10 justify CENTER align CENTER · shadow 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `6935:389408`
               - [icon] **Group 240218** — 36×36 · @ (0, 0) abs · file /figma/assets/bffdac072745.svg `I6935:389408;1308:6702`
               - [chữ] “0%” — 12×12 [HUG×HUG] · @ (12, 12) flow · runs: “0” Afacad 10/12px 600 #334155 (color/text/primary); “%” Afacad 8/10px 600 #334155 (color/text/primary) · text-align center · no-wrap `I6935:389408;1308:6706`
-            - [chữ] “10.10.2026” — 194×19 [FILL×HUG] · @ (60, 16.5) flow · Afacad 15/19px 700 #334155 `6935:389409`
-          - [khối] **Ngày · 11.10.2026** — 266×52 [FILL×HUG] · @ (0, 386) flow · row gap 12 pad 8 12 8 12 align CENTER · bg #ffffff · radius 12px · shadow 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `6935:389410`
+            - [chữ] “10.10.2026” — 194×19 [FILL×HUG] · @ (60, 16.5) flow · Afacad 15/19px 700 #334155 (text/primary) `6935:389409`
+          - [khối] **Ngày · 11.10.2026** — 266×52 [FILL×HUG] · @ (0, 386) flow · row gap 12 pad 8 12 8 12 align CENTER · bg #ffffff (bg/surface) · radius 12px · shadow 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `6935:389410`
             - [instance] **PERCENT %** ⟨PERCENT %: Property 1=ĐN 1⟩ — 36×36 · @ (12, 8) flow · column gap 10 justify CENTER align CENTER · shadow 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `6935:389411`
               - [icon] **Group 240218** — 36×36 · @ (0, 0) abs · file /figma/assets/bffdac072745.svg `I6935:389411;1308:6702`
               - [chữ] “0%” — 12×12 [HUG×HUG] · @ (12, 12) flow · runs: “0” Afacad 10/12px 600 #334155 (color/text/primary); “%” Afacad 8/10px 600 #334155 (color/text/primary) · text-align center · no-wrap `I6935:389411;1308:6706`
-            - [chữ] “11.10.2026” — 194×19 [FILL×HUG] · @ (60, 16.5) flow · Afacad 15/19px 700 #334155 `6935:389412`
+            - [chữ] “11.10.2026” — 194×19 [FILL×HUG] · @ (60, 16.5) flow · Afacad 15/19px 700 #334155 (text/primary) `6935:389412`
 
 ## 5. Component đang dùng
 

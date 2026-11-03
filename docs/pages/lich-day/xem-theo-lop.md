@@ -5,7 +5,7 @@
 > **Nguồn:** PLS-ICS T8/2026 ›     ├─ LỊCH DẠY › GV-LD-010000 — Lịch dạy / Xem theo lớp (`5413:46957`, file `rRVs5HX0kIHffbS0V40djG`)  
 > **Route:** `/lich-day/xem-theo-lop`  
 > **Khung thiết kế:** 1440 × 954 px (cắt phần tràn ra ngoài khung)  
-> **Xuất lúc:** 2026-11-02T03:54:42.851Z  
+> **Xuất lúc:** 2026-11-03T01:10:04.713Z  
 > **Spec đầy đủ (giá trị chính xác từng node):** `../../../.figma/pages/gv-ld-010000/page-spec.json`
 
 ## 1. Tổng quan
@@ -26,9 +26,12 @@ Nền trang: `#f8fafc`.
 
 | Token | Biến CSS | Giá trị | Trỏ tới | Bộ / mode |
 | --- | --- | --- | --- | --- |
+| `bg/surface` | `--bg-surface` | `#ffffff` | color/neutral/white | Theme · Semantic / Light |
 | `bố cục/khoảng cách khối` | `--bo-cuc-khoang-cach-khoi` | `16` | spacing/16 | Number Tokens / Mode 1 |
 | `bố cục/lề hai bên` | `--bo-cuc-le-hai-ben` | `16` | spacing/16 | Number Tokens / Mode 1 |
 | `bố cục/lề trên dưới` | `--bo-cuc-le-tren-duoi` | `24` | spacing/24 | Number Tokens / Mode 1 |
+| `border/default` | `--border-default` | `#e2e8f0` | color/border/default | Theme · Semantic / Light |
+| `brand/primary` | `--brand-primary` | `#e65100` | color/brand/orange | Theme · Semantic / Light |
 | `color/border/default` | `--color-border-default` | `#e2e8f0` |  | Color Tokens / Light |
 | `color/brand/orange` | `--color-brand-orange` | `#e65100` |  | Color Tokens / Light |
 | `color/extended/fff5ec` | `--color-extended-fff5ec` | `#fff5ec` |  | Color Tokens / Light |
@@ -44,6 +47,7 @@ Nền trang: `#f8fafc`.
 | `radius/full` | `--radius-full` | `9999` |  | Number Tokens / Mode 1 |
 | `spacing/12` | `--spacing-12` | `12` |  | Number Tokens / Mode 1 |
 | `spacing/8` | `--spacing-8` | `8` |  | Number Tokens / Mode 1 |
+| `text/on-brand` | `--text-on-brand` | `#ffffff` | color/neutral/white | Theme · Semantic / Light |
 
 **Style Figma đang dùng:**
 
@@ -74,8 +78,8 @@ Nền trang: `#f8fafc`.
 | Style | Font family | Cỡ / line-height | Độ đậm | Letter-spacing | Màu | Số lần | Ví dụ |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | `Body/19/Bold` | Afacad | 19 / 24px | 700 | 0 | #334155 (color/text/primary) | 6 | “31.01” |
-| `Body/19/Bold` | Afacad | 19 / 24px | 700 | 0 | #ffffff | 1 | “02.01” |
-| `Body/17/Bold` | Afacad | 17 / 21px | 700 | 0 | #ffffff | 2 | “DN 342” |
+| `Body/19/Bold` | Afacad | 19 / 24px | 700 | 0 | #ffffff (text/on-brand) | 1 | “02.01” |
+| `Body/17/Bold` | Afacad | 17 / 21px | 700 | 0 | #ffffff (text/on-brand) | 2 | “DN 342” |
 | — | Unbounded | 17 / 26px | 600 · case title | 0 | #334155 (color/text/primary) | 1 | “Lịch Dạy” |
 | — | Afacad | 16 / 20px | 700 | 0 | #334155 (color/text/primary) | 8 | “DN 342” |
 | `Body/16/Bold` | Afacad | 16 / 20px | 700 | 0 | #e65100 (color/brand/orange) | 1 | “Lịch Dạy” |
@@ -143,8 +147,8 @@ Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí ·
           - [khối] **Content** — 52×19 [HUG×HUG] · @ (13, 5.5) flow · row align CENTER · clip `5413:53454`
             - [chữ] “Theo lớp” — 52×19 [HUG×HUG] · @ (0, 0) flow · Afacad 15/19px 500 #334155 (color/text/primary) · no-wrap `5413:53455`
           - [icon] **Checkbox 2** ⟨Checkbox: Checked=Yes, Size=20, Disabled=No⟩ — 20×20 · @ (71, 5) flow · file /figma/assets/2b6403bbddf3.svg covers (-2, -2) 26×26 `5413:53456`
-      - [khối] **Frame 427325194** — 1174×637 [FILL×HUG] · @ (0, 94) flow · column gap 12 pad 0 12 12 12 align CENTER · bg #ffffff · radius 12px · shadow 1px 1px 6px 0 rgba(0, 0, 0, 0.15) `5413:47047`
-        - [khối] **Frame 427323674** — 1150×63 [FILL×HUG] · @ (12, 0) flow · column gap 8 pad 8 20 8 20 align CENTER · bg #ffffff · radius 12px 12px 0 0 · shadow inset 0 -1px 0 0 #e2e8f0 `5413:47048`
+      - [khối] **Frame 427325194** — 1174×637 [FILL×HUG] · @ (0, 94) flow · column gap 12 pad 0 12 12 12 align CENTER · bg #ffffff (bg/surface) · radius 12px · shadow 1px 1px 6px 0 rgba(0, 0, 0, 0.15) `5413:47047`
+        - [khối] **Frame 427323674** — 1150×63 [FILL×HUG] · @ (12, 0) flow · column gap 8 pad 8 20 8 20 align CENTER · bg #ffffff (bg/surface) · radius 12px 12px 0 0 · shadow inset 0 -1px 0 0 #e2e8f0 `5413:47048`
           - [khối] **Frame 427323673** — 1110×47 [FILL×FIXED] · @ (20, 8) flow · row gap 12 align CENTER `5413:47049`
             - [khối] **Frame 427323677** — 148.29×55 [FILL×HUG] · @ (0, -4) flow · column align CENTER `5413:47050`
               - [chữ] “Thứ 2” — 148.29×19 [FILL×HUG] · @ (0, 0) flow · Afacad 15/19px 500 #64748b (color/text/secondary) · text-align center `5413:47051`
@@ -157,7 +161,7 @@ Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí ·
             - [khối] **Frame 427323679** — 148.29×51 [FILL×HUG] · @ (320.57, -2) flow · column align CENTER `5413:47058`
               - [chữ] “Thứ 4” — 148.29×19 [FILL×HUG] · @ (0, 0) flow · Afacad 15/19px 500 #64748b (color/text/secondary) · text-align center `5413:47059`
               - [khối] **Frame 427323675** — 68×32 [HUG×HUG] · @ (40.14, 19) flow · row gap 10 pad 4 8 4 8 justify CENTER align CENTER · bg #e65100 (color/brand/orange) · radius 8px `5413:47060`
-                - [chữ] “02.01” — 52×24 [FIXED×HUG] · @ (8, 4) flow · Afacad 19/24px 700 #ffffff · text-align center `5413:47061`
+                - [chữ] “02.01” — 52×24 [FIXED×HUG] · @ (8, 4) flow · Afacad 19/24px 700 #ffffff (text/on-brand) · text-align center `5413:47061`
             - [khối] **Frame 427323680** — 148.29×55 [FILL×HUG] · @ (480.86, -4) flow · column align CENTER `5413:47062`
               - [chữ] “Thứ 5” — 148.29×19 [FILL×HUG] · @ (0, 0) flow · Afacad 15/19px 500 #64748b (color/text/secondary) · text-align center `5413:47063`
               - [khối] **Frame 427323675** — 148×36 [FIXED×HUG] · @ (0.14, 19) flow · row gap 10 pad 6 12 6 12 justify CENTER align CENTER · radius 8px `5413:47064`
@@ -174,10 +178,10 @@ Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí ·
               - [chữ] “Chủ Nhật” — 148.29×19 [FILL×HUG] · @ (0, 0) flow · Afacad 15/19px 500 #64748b (color/text/secondary) · text-align center `5413:47075`
               - [khối] **Frame 427323675** — 148×36 [FIXED×HUG] · @ (0.14, 19) flow · row gap 10 pad 6 12 6 12 justify CENTER align CENTER · radius 8px `5413:47076`
                 - [chữ] “06.01” — 44×24 [HUG×HUG] · @ (52, 6) flow · Afacad 19/24px 700 #334155 (color/text/primary) · text-align center · no-wrap `5413:47077`
-        - [khối] **Frame 1171274945** — 1150×316 [FILL×HUG] · @ (12, 75) flow · column gap 12 pad 0 0 12 0 · bg #ffffff · radius 8px · border 1px solid #e65100 `5413:47078`
+        - [khối] **Frame 1171274945** — 1150×316 [FILL×HUG] · @ (12, 75) flow · column gap 12 pad 0 0 12 0 · bg #ffffff (bg/surface) · radius 8px · border 1px solid #e65100 (brand/primary) `5413:47078`
           - [khối] **Frame 1171274944** — 1148×32 [FILL×HUG] · @ (1, 1) flow · row gap 4 pad 4 8 4 8 align CENTER · bg #e65100 (color/brand/orange) · radius 6px 6px 0 0 `5413:47079`
             - [icon] **ICON MENU** ⟨ICON MENU: ICON MENU=Lớp học⟩ — 24×24 · @ (8, 4) flow · file /figma/assets/073e94628af6.svg `5413:47080`
-            - [chữ] “DN 342” — 52×21 [HUG×HUG] · @ (36, 5.5) flow · Afacad 17/21px 700 #ffffff · text-align center · no-wrap `5413:47081`
+            - [chữ] “DN 342” — 52×21 [HUG×HUG] · @ (36, 5.5) flow · Afacad 17/21px 700 #ffffff (text/on-brand) · text-align center · no-wrap `5413:47081`
           - [khối] **Frame 1171274937** — 1148×82 [FILL×HUG] · @ (1, 45) flow · row gap 12 pad 0 12 0 12 align CENTER `5413:47082`
             - [instance] **STATUS CALENDAR** ⟨STATUS CALENDAR: Property 1=LỊCH HOÀN THÀNH⟩ — 150.29×82 [FILL×HUG] · @ (12, 0) flow · column gap 2 pad 8 8 8 8 justify CENTER · bg #f2ffef · radius 8px · shadow inset 0 0 0 1px #2d9732, 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `5413:47083`
               - [instance] **AVATAR + Name** ⟨AVATAR + Name: Property 1=AVATAR + Name 2⟩ — 134.29×26 [FILL×HUG] · @ (8, 8) flow · column gap 10 pad 3 8 3 6 justify CENTER · bg #ffffff · radius 6px · shadow 1px 1px 3px 0 rgba(0, 0, 0, 0.15) · clip `I5413:47083;2008:49570`
@@ -250,10 +254,10 @@ Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí ·
             - [instance] **STATUS CALENDAR** ⟨STATUS CALENDAR: Property 1=Ô trống⟩ — 150.29×70 [FILL×FIXED] · @ (661.14, 0) flow · column gap 2 pad 8 8 8 8 justify CENTER align CENTER · bg #ffffff · radius 8px · outline 1px dashed #e5e7eb offset -1px `5413:47103`
             - [instance] **STATUS CALENDAR** ⟨STATUS CALENDAR: Property 1=Ô trống⟩ — 150.29×70 [FILL×FIXED] · @ (823.43, 0) flow · column gap 2 pad 8 8 8 8 justify CENTER align CENTER · bg #ffffff · radius 8px · outline 1px dashed #e5e7eb offset -1px `5413:47104`
             - [instance] **STATUS CALENDAR** ⟨STATUS CALENDAR: Property 1=Ô trống⟩ — 150.29×70 [FILL×FIXED] · @ (985.71, 0) flow · column gap 2 pad 8 8 8 8 justify CENTER align CENTER · bg #ffffff · radius 8px · outline 1px dashed #e5e7eb offset -1px `5413:47105`
-        - [khối] **Frame 1171274946** — 1150×222 [FILL×HUG] · @ (12, 403) flow · column gap 12 pad 0 0 12 0 · bg #ffffff · radius 8px · border 1px solid #e65100 `5413:47106`
+        - [khối] **Frame 1171274946** — 1150×222 [FILL×HUG] · @ (12, 403) flow · column gap 12 pad 0 0 12 0 · bg #ffffff (bg/surface) · radius 8px · border 1px solid #e65100 (brand/primary) `5413:47106`
           - [khối] **Frame 1171274944** — 1148×32 [FILL×HUG] · @ (1, 1) flow · row gap 4 pad 4 8 4 8 align CENTER · bg #e65100 (color/brand/orange) · radius 6px 6px 0 0 `5413:47107`
             - [icon] **ICON MENU** ⟨ICON MENU: ICON MENU=Lớp học⟩ — 24×24 · @ (8, 4) flow · file /figma/assets/073e94628af6.svg `5413:47108`
-            - [chữ] “DN 5515” — 61×21 [HUG×HUG] · @ (36, 5.5) flow · Afacad 17/21px 700 #ffffff · text-align center · no-wrap `5413:47109`
+            - [chữ] “DN 5515” — 61×21 [HUG×HUG] · @ (36, 5.5) flow · Afacad 17/21px 700 #ffffff (text/on-brand) · text-align center · no-wrap `5413:47109`
           - [khối] **Frame 1171274939** — 1134.01×82 [FIXED×HUG] · @ (1, 45) flow · row gap 12 pad 0 12 0 12 align CENTER `5413:47110`
             - [instance] **STATUS CALENDAR** ⟨STATUS CALENDAR: Property 1=Ô trống⟩ — 148.29×70 [FILL×FIXED] · @ (12, 6) flow · column gap 2 pad 8 8 8 8 justify CENTER align CENTER · bg #ffffff · radius 8px · outline 1px dashed #e5e7eb offset -1px `5413:47111`
             - [instance] **STATUS CALENDAR** ⟨STATUS CALENDAR: Property 1=Ô trống⟩ — 148.29×70 [FILL×FIXED] · @ (172.29, 6) flow · column gap 2 pad 8 8 8 8 justify CENTER align CENTER · bg #ffffff · radius 8px · outline 1px dashed #e5e7eb offset -1px `5413:47112`

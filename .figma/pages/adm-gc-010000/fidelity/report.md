@@ -1,6 +1,6 @@
 # Fidelity: ADM-GC-010000 — Ghi chú / Danh sách ghi chú
 
-- URL: `http://localhost:3108/ghi-chu/danh-sach-ghi-chu`
+- URL: `http://localhost:3000/ghi-chu/danh-sach-ghi-chu`
 - Verdict: **PASS**
 - Pixels outside text: **0.003%** differ (limit 0.5%); all pixels: 0.073%; inside text boxes: 0.367% (glyph rendering)
 - Boxes: 285/285 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 285, ≤1px: 285, ≤2px: 285, ≤4px: 285, >4px: 0

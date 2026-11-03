@@ -1,8 +1,8 @@
 # Fidelity: ADM-LOP-030100-DK — Lớp học / Bài học / Buổi học
 
-- URL: `http://localhost:3108/lop-hoc/bai-hoc/buoi-hoc-dk`
+- URL: `http://localhost:3000/lop-hoc/bai-hoc/buoi-hoc-dk`
 - Verdict: **PASS**
-- Pixels outside text: **0.002%** differ (limit 0.5%); all pixels: 0.258%; inside text boxes: 1.377% (glyph rendering)
+- Pixels outside text: **0.002%** differ (limit 0.5%); all pixels: 0.221%; inside text boxes: 1.18% (glyph rendering)
 - Boxes: 323/323 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 322, ≤1px: 322, ≤2px: 322, ≤4px: 323, >4px: 0
 
 ## Pixel regions (largest first)
@@ -16,13 +16,8 @@
 
 | Text | Differing |
 | --- | --- |
-| 100% (`I4056:110955;1308:6749`) | 19.9% |
-| 100% (`I4056:110956;1308:6749`) | 19.9% |
-| 100% (`I4056:110967;1308:6749`) | 19.9% |
-| 100% (`I4056:110968;1308:6749`) | 19.9% |
 | ÔN TẬP: Giữa Kỳ 1 (`4056:110843`) | 14.9% |
 | Label (`I4056:111120;2245:87908`) | 13.7% |
-| Label (`I4056:111119;2245:87914`) | 12.7% |
 | Label (`I4056:111118;2245:87908`) | 8.6% |
 | Tên (`I4056:110886;3138:130001`) | 4.8% |
 | Label (`I4056:111121;2245:87908`) | 4.3% |
@@ -31,6 +26,11 @@
 | Badge (`I4056:110995;1050:2409`) | 3.5% |
 | Tên (`I4056:110919;3138:130001`) | 3.4% |
 | Label (`I4056:111123;2245:87908`) | 3% |
+| Tên (`I4056:110897;3138:130001`) | 2.6% |
+| Label (`I4056:111124;2245:87908`) | 2.5% |
+| Tên (`I4056:110875;3138:130001`) | 2% |
+| Trần Nguyễn Hoài Phương (`I4056:110951;3497:64446`) | 1.7% |
+| Trần Nguyễn Hoài Phương (`I4056:110962;3497:64446`) | 1.7% |
 
 ## Largest box differences
 

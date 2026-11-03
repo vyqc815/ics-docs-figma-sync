@@ -5,7 +5,7 @@
 > **Nguồn:** PLS-ICS T8/2026 ›     └─ KHẢO SÁT › GV-KS-010000 — Khảo sát / Danh sách khảo sát (`4686:43632`, file `rRVs5HX0kIHffbS0V40djG`)  
 > **Route:** `/khao-sat/danh-sach-khao-sat`  
 > **Khung thiết kế:** 1440 × 810 px  
-> **Xuất lúc:** 2026-11-02T03:54:59.360Z  
+> **Xuất lúc:** 2026-11-03T01:10:20.231Z  
 > **Spec đầy đủ (giá trị chính xác từng node):** `../../../.figma/pages/gv-ks-010000/page-spec.json`
 
 ## 1. Tổng quan
@@ -25,6 +25,10 @@ Nền trang: `#f8fafc`.
 
 | Token | Biến CSS | Giá trị | Trỏ tới | Bộ / mode |
 | --- | --- | --- | --- | --- |
+| `bg/subtle` | `--bg-subtle` | `#f1f5f9` | color/surface/input | Theme · Semantic / Light |
+| `bg/surface` | `--bg-surface` | `#ffffff` | color/neutral/white | Theme · Semantic / Light |
+| `border/default` | `--border-default` | `#e2e8f0` | color/border/default | Theme · Semantic / Light |
+| `brand/primary` | `--brand-primary` | `#e65100` | color/brand/orange | Theme · Semantic / Light |
 | `color/brand/orange` | `--color-brand-orange` | `#e65100` |  | Color Tokens / Light |
 | `color/extended/fff5ec` | `--color-extended-fff5ec` | `#fff5ec` |  | Color Tokens / Light |
 | `color/neutral/white` | `--color-neutral-white` | `#ffffff` |  | Color Tokens / Light |
@@ -39,6 +43,8 @@ Nền trang: `#f8fafc`.
 | `radius/8` | `--radius-8` | `8` |  | Number Tokens / Mode 1 |
 | `radius/full` | `--radius-full` | `9999` |  | Number Tokens / Mode 1 |
 | `spacing/8` | `--spacing-8` | `8` |  | Number Tokens / Mode 1 |
+| `text/primary` | `--text-primary` | `#334155` | color/text/primary | Theme · Semantic / Light |
+| `text/secondary` | `--text-secondary` | `#64748b` | color/text/secondary | Theme · Semantic / Light |
 
 **Style Figma đang dùng:**
 
@@ -67,20 +73,20 @@ Nền trang: `#f8fafc`.
 | Style | Font family | Cỡ / line-height | Độ đậm | Letter-spacing | Màu | Số lần | Ví dụ |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | — | Unbounded | 17 / 26px | 600 · case title | 0 | #334155 (color/text/primary) | 1 | “Khảo sát của tôi” |
-| — | Afacad | 16 / 21px | 600 | 0 | #334155 | 2 | “KHẢO SÁT TEMPLATE PPT” |
+| — | Afacad | 16 / 21px | 600 | 0 | #334155 (text/primary) | 2 | “KHẢO SÁT TEMPLATE PPT” |
 | `Body/16/Bold` | Afacad | 16 / 20px | 700 | 0 | #e65100 (color/brand/orange) | 1 | “Cần Làm” |
 | — | Afacad | 16 / 20px | 500 · case title | 0 | #64748b (color/text/secondary) | 1 | “Đã Hoàn Thành” |
 | `Body/15/Bold` | Afacad | 15 / 19px | 700 | 0 | #ffffff (color/neutral/white) | 2 | “Tiếp tục làm” |
 | — | Unbounded | 14 / 17px | 500 | 0 | #ffffff (org/sakumi/fg) | 1 | “Sakumi” |
 | `Body/14/Medium` | Afacad | 14 / 18px | 500 | 0 | #c2410c | 1 | “Đang làm” |
 | `Body/14/Medium` | Afacad | 14 / 18px | 500 | 0 | #e11d48 (color/semantic/error-text) | 1 | “Chưa làm” |
-| — | Afacad | 13 / 17px | 400 | 0 | #64748b | 2 | “Khảo sát thiết kế template, mức độ thân…” |
+| — | Afacad | 13 / 17px | 400 | 0 | #64748b (text/secondary) | 2 | “Khảo sát thiết kế template, mức độ thân…” |
 | `Body/13/Bold` | Afacad | 13 / 16px | 700 | 0 | #be123c | 1 | “HP” |
 | — | Unbounded | 13 / 16px | 600 | 0 | #ffffff (color/neutral/white) | 1 | “Hoài Phương” |
 | — | Afacad | 13 / 16px | 500 | 0 | #ffffff (color/neutral/white) | 1 | “hoaiphuongcv22@gmail.com” |
 | — | Unbounded | 12 / 15px | 600 · case title | 0 | #ffffff (color/neutral/white) | 7 | “Trang chủ” |
 | — | Afacad | 12 / 16px | 400 | 0 | #94a3b8 | 2 | “Giao lúc 18:52 · 04.08.2026” |
-| — | Afacad | 12 / 16px | 500 | 0 | #e65100 | 1 | “Đã trả lời 30/32 câu” |
+| — | Afacad | 12 / 16px | 500 | 0 | #e65100 (brand/primary) | 1 | “Đã trả lời 30/32 câu” |
 | — | Unbounded | 11 / 14px | 600 | 0 | #ffffff | 2 | “Góp ý” |
 | `Body/11/Bold` | Afacad | 11 / 14px | 700 | 0 | #ffffff (color/neutral/white) | 2 | “2” |
 | — | Unbounded | 11 / 14px | 600 | 0 | #e7550a | 1 | “Khảo sát” |
@@ -168,7 +174,7 @@ Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí ·
         - [instance] **Số đếm** ⟨Atom/Number Badge: Value=1, Type=Circle, Size=Small, State=Active⟩ — 16×16 · @ (119, 10) flow · column justify CENTER align CENTER · bg #e65100 (color/brand/orange) · radius 64px · border 1px solid #ffffff `I4686:43768;3554:65718`
           - [chữ] “1” — 14×14 [FIXED×HUG] · @ (1, 1) flow · Afacad 11/14px 700 #ffffff (color/neutral/white) case title · text-align center `I4686:43768;3554:65718;1971:8814`
     - [khối] **Danh sách khảo sát** — 1158×240 [FILL×HUG] · @ (24, 118) flow · column gap 12 `4686:43769`
-      - [khối] **Thẻ khảo sát · KHẢO SÁT TEMPLATE PPT** — 1158×124 [FILL×HUG] · @ (0, 0) flow · row gap 24 pad 16 20 16 20 align CENTER · bg #ffffff · radius 12px · border 1px solid #e2e8f0 · shadow 0 1.13px 2.25px 0 rgba(0, 0, 0, 0.05) `4686:43770`
+      - [khối] **Thẻ khảo sát · KHẢO SÁT TEMPLATE PPT** — 1158×124 [FILL×HUG] · @ (0, 0) flow · row gap 24 pad 16 20 16 20 align CENTER · bg #ffffff (bg/surface) · radius 12px · border 1px solid #e2e8f0 (border/default) · shadow 0 1.13px 2.25px 0 rgba(0, 0, 0, 0.05) `4686:43770`
         - [khối] **Thông tin** — 1116×90 [FILL×HUG] · @ (21, 17) flow · column gap 4 · clip `4686:43771`
           - [khối] **Hàng trạng thái** — 1116×28 [FILL×HUG] · @ (0, 0) flow · row gap 8 align CENTER `4885:105704`
             - [khối] **Trạng thái & thời gian** — 1001×26 [FILL×HUG] · @ (0, 1) flow · row gap 8 align CENTER `4885:105705`
@@ -180,13 +186,13 @@ Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí ·
             - [instance] **Tiếp tục làm** ⟨Atom/Button: Label=Tiếp tục làm, Type=Primary, Size=Small⟩ — 107×28 [HUG×FIXED] · @ (1009, 0) flow · row pad 6 16 6 16 justify CENTER align CENTER · bg #e65100 (color/brand/orange) · radius 6px · border 1px solid #ffffff · shadow 1px 1px 6px 0 rgba(230, 81, 0, 0.35), 0 0 4px 0 rgba(230, 81, 0, 0.05) `4686:43783`
               - [chữ] “Tiếp tục làm” — 73×19 [HUG×HUG] · @ (17, 4.5) flow · Afacad 15/19px 700 #ffffff (color/neutral/white) · no-wrap `I4686:43783;1048:1238`
           - [khối] **Tên & mô tả** — 1116×38 [FILL×HUG] · @ (0, 32) flow · column `4885:105706`
-            - [chữ] “KHẢO SÁT TEMPLATE PPT” — 1116×21 [FILL×HUG] · @ (0, 0) flow · Afacad 16/21px 600 #334155 `4686:43776`
-            - [chữ] “Khảo sát thiết kế template, mức độ thân thiện hiển thị đối với người sử dụng giáo trình (giáo viên và học sinh)” — 1116×17 [FILL×HUG] · @ (0, 21) flow · Afacad 13/17px 400 #64748b · truncate 1 lines `4686:43778`
+            - [chữ] “KHẢO SÁT TEMPLATE PPT” — 1116×21 [FILL×HUG] · @ (0, 0) flow · Afacad 16/21px 600 #334155 (text/primary) `4686:43776`
+            - [chữ] “Khảo sát thiết kế template, mức độ thân thiện hiển thị đối với người sử dụng giáo trình (giáo viên và học sinh)” — 1116×17 [FILL×HUG] · @ (0, 21) flow · Afacad 13/17px 400 #64748b (text/secondary) · truncate 1 lines `4686:43778`
           - [khối] **Tiến độ** — 420×16 [FIXED×HUG] · @ (0, 74) flow · row gap 12 align CENTER · clip `4686:43779`
-            - [khối] **Thanh** — 312×8 [FILL×FIXED] · @ (0, 4) flow · bg #f1f5f9 · radius 4px · clip `4686:43780`
-              - [hình] **Rectangle** — 292.5×8 · @ (0, 0) abs · bg #e65100 · radius 4px `4686:43781`
-            - [chữ] “Đã trả lời 30/32 câu” — 96×16 [HUG×HUG] · @ (324, 0) flow · Afacad 12/16px 500 #e65100 · no-wrap `4686:43782`
-      - [khối] **Thẻ khảo sát · KHẢO SÁT THÔNG TIN GIÁO VIÊN** — 1158×104 [FILL×HUG] · @ (0, 136) flow · row gap 24 pad 16 20 16 20 align CENTER · bg #ffffff · radius 12px · border 1px solid #e2e8f0 · shadow 0 1.13px 2.25px 0 rgba(0, 0, 0, 0.05) `4686:43784`
+            - [khối] **Thanh** — 312×8 [FILL×FIXED] · @ (0, 4) flow · bg #f1f5f9 (bg/subtle) · radius 4px · clip `4686:43780`
+              - [hình] **Rectangle** — 292.5×8 · @ (0, 0) abs · bg #e65100 (brand/primary) · radius 4px `4686:43781`
+            - [chữ] “Đã trả lời 30/32 câu” — 96×16 [HUG×HUG] · @ (324, 0) flow · Afacad 12/16px 500 #e65100 (brand/primary) · no-wrap `4686:43782`
+      - [khối] **Thẻ khảo sát · KHẢO SÁT THÔNG TIN GIÁO VIÊN** — 1158×104 [FILL×HUG] · @ (0, 136) flow · row gap 24 pad 16 20 16 20 align CENTER · bg #ffffff (bg/surface) · radius 12px · border 1px solid #e2e8f0 (border/default) · shadow 0 1.13px 2.25px 0 rgba(0, 0, 0, 0.05) `4686:43784`
         - [khối] **Thông tin** — 1116×70 [FILL×HUG] · @ (21, 17) flow · column gap 4 · clip `4686:43785`
           - [khối] **Hàng trạng thái** — 1116×28 [FILL×HUG] · @ (0, 0) flow · row gap 8 align CENTER `4885:105707`
             - [khối] **Trạng thái & thời gian** — 995×26 [FILL×HUG] · @ (0, 1) flow · row gap 8 align CENTER `4885:105708`
@@ -198,8 +204,8 @@ Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí ·
             - [instance] **Làm khảo sát** ⟨Atom/Button: Label=Làm khảo sát, Type=Primary, Size=Small⟩ — 113×28 [HUG×FIXED] · @ (1003, 0) flow · row pad 6 16 6 16 justify CENTER align CENTER · bg #e65100 (color/brand/orange) · radius 6px · border 1px solid #ffffff · shadow 1px 1px 6px 0 rgba(230, 81, 0, 0.35), 0 0 4px 0 rgba(230, 81, 0, 0.05) `4686:43793`
               - [chữ] “Làm khảo sát” — 79×19 [HUG×HUG] · @ (17, 4.5) flow · Afacad 15/19px 700 #ffffff (color/neutral/white) · no-wrap `I4686:43793;1048:1238`
           - [khối] **Tên & mô tả** — 1116×38 [FILL×HUG] · @ (0, 32) flow · column `4885:105709`
-            - [chữ] “KHẢO SÁT THÔNG TIN GIÁO VIÊN” — 1116×21 [FILL×HUG] · @ (0, 0) flow · Afacad 16/21px 600 #334155 `4686:43790`
-            - [chữ] “Form này nhằm thu thập thông tin về trình độ học vấn và chứng chỉ giảng dạy của giáo viên để phục vụ công tác đánh giá và quản lý chất lượng giảng dạy ạ.” — 1116×17 [FILL×HUG] · @ (0, 21) flow · Afacad 13/17px 400 #64748b · truncate 1 lines `4686:43792`
+            - [chữ] “KHẢO SÁT THÔNG TIN GIÁO VIÊN” — 1116×21 [FILL×HUG] · @ (0, 0) flow · Afacad 16/21px 600 #334155 (text/primary) `4686:43790`
+            - [chữ] “Form này nhằm thu thập thông tin về trình độ học vấn và chứng chỉ giảng dạy của giáo viên để phục vụ công tác đánh giá và quản lý chất lượng giảng dạy ạ.” — 1116×17 [FILL×HUG] · @ (0, 21) flow · Afacad 13/17px 400 #64748b (text/secondary) · truncate 1 lines `4686:43792`
 
 ## 5. Component đang dùng
 

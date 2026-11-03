@@ -1,6 +1,6 @@
 # Fidelity: CD-KH-040100 — Kiến thức (S1) / Từ vựng
 
-- URL: `http://localhost:3108/kien-thuc-s1/tu-vung`
+- URL: `http://localhost:3000/kien-thuc-s1/tu-vung`
 - Verdict: **PASS**
 - Pixels outside text: **0.032%** differ (limit 0.5%); all pixels: 0.175%; inside text boxes: 0.724% (glyph rendering)
 - Boxes: 476/476 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 449, ≤1px: 460, ≤2px: 476, ≤4px: 476, >4px: 0

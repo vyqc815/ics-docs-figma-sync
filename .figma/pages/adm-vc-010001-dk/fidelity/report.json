@@ -1,0 +1,499 @@
+{
+  "pass": false,
+  "thresholds": {
+    "maxPixelDiffPercent": 0.5,
+    "maxBoxDelta": 1,
+    "maxTextBoxDelta": 2.5,
+    "colorThreshold": 0.1,
+    "aaRadius": 1,
+    "subpixel": true,
+    "maxTextNodeDiffPercent": 35
+  },
+  "pixels": {
+    "width": 1440,
+    "height": 810,
+    "mismatched": 2925,
+    "percent": 0.251,
+    "shapePercent": 0.003,
+    "textPercent": 1.444,
+    "sizeMismatch": false
+  },
+  "textNodes": [
+    {
+      "id": "I4056:129988;3976:73771",
+      "name": "Khoá học áp dụng",
+      "pixels": 375,
+      "percent": 19.2
+    },
+    {
+      "id": "4056:129885",
+      "name": "Mã người nhận",
+      "pixels": 36,
+      "percent": 6.4
+    },
+    {
+      "id": "I4056:129986;1391:17487",
+      "name": "Sau",
+      "pixels": 30,
+      "percent": 5.5
+    },
+    {
+      "id": "I4056:129986;1391:17479",
+      "name": "2",
+      "pixels": 11,
+      "percent": 5
+    },
+    {
+      "id": "4056:129883",
+      "name": "Mã voucher",
+      "pixels": 117,
+      "percent": 3.8
+    },
+    {
+      "id": "4056:129928",
+      "name": "Mã voucher",
+      "pixels": 108,
+      "percent": 3.6
+    },
+    {
+      "id": "4056:129853",
+      "name": "Mã voucher",
+      "pixels": 108,
+      "percent": 3.5
+    },
+    {
+      "id": "4056:129898",
+      "name": "Mã voucher",
+      "pixels": 106,
+      "percent": 3.5
+    },
+    {
+      "id": "4056:129913",
+      "name": "Mã voucher",
+      "pixels": 102,
+      "percent": 3.4
+    },
+    {
+      "id": "I4056:129749;2245:87820",
+      "name": "Label",
+      "pixels": 84,
+      "percent": 3.3
+    },
+    {
+      "id": "4056:129838",
+      "name": "Mã voucher",
+      "pixels": 104,
+      "percent": 3.3
+    },
+    {
+      "id": "4056:129958",
+      "name": "Mã voucher",
+      "pixels": 91,
+      "percent": 3.1
+    },
+    {
+      "id": "4056:129973",
+      "name": "Mã voucher",
+      "pixels": 97,
+      "percent": 3
+    },
+    {
+      "id": "4056:129828",
+      "name": "Ngày hết hạn",
+      "pixels": 69,
+      "percent": 2.9
+    },
+    {
+      "id": "I4056:129844;3567:39161",
+      "name": "14.09.2026",
+      "pixels": 46,
+      "percent": 2.9
+    }
+  ],
+  "regions": [
+    {
+      "x": 56,
+      "y": 16,
+      "width": 16,
+      "height": 32,
+      "pixels": 8,
+      "node": {
+        "id": "4056:129726",
+        "name": "Navigation / Sidebar Menu / Light",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 1056,
+      "y": 536,
+      "width": 8,
+      "height": 8,
+      "pixels": 8,
+      "node": {
+        "id": "I4056:129988;3976:73771",
+        "name": "Khoá học áp dụng",
+        "role": "text"
+      }
+    },
+    {
+      "x": 16,
+      "y": 16,
+      "width": 16,
+      "height": 8,
+      "pixels": 6,
+      "node": {
+        "id": "4056:129726",
+        "name": "Navigation / Sidebar Menu / Light",
+        "role": "icon"
+      }
+    }
+  ],
+  "boxes": {
+    "measured": 334,
+    "missing": [],
+    "withinThreshold": 332,
+    "buckets": {
+      "≤0.5px": 329,
+      "≤1px": 332,
+      "≤2px": 332,
+      "≤4px": 334,
+      ">4px": 0
+    },
+    "worst": [
+      {
+        "id": "I4056:129988;3976:73769",
+        "name": "Áp dụng",
+        "role": "container",
+        "delta": 2.91,
+        "dx": 0,
+        "dy": 0,
+        "dw": 2.91,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:129988;3976:73771",
+        "name": "Khoá học áp dụng",
+        "role": "text",
+        "delta": 2.91,
+        "dx": 0,
+        "dy": 0,
+        "dw": 2.91,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:129988;3976:73759",
+        "name": "Tên trung tâm",
+        "role": "text",
+        "delta": 0.91,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.91,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:129988;3976:73773",
+        "name": "Điều kiện",
+        "role": "container",
+        "delta": 0.75,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.75,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:129988;3976:73775",
+        "name": "Tối đa 1 voucher cho 1 khoá học",
+        "role": "text",
+        "delta": 0.75,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.75,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:129846;1048:1253",
+        "name": "Badge",
+        "role": "text",
+        "delta": 0.42,
+        "dx": -0.2,
+        "dy": 0,
+        "dw": 0.42,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:129861;1048:1253",
+        "name": "Badge",
+        "role": "text",
+        "delta": 0.42,
+        "dx": -0.2,
+        "dy": 0,
+        "dw": 0.42,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:129876;1048:1253",
+        "name": "Badge",
+        "role": "text",
+        "delta": 0.42,
+        "dx": -0.2,
+        "dy": 0,
+        "dw": 0.42,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:129906;1048:1253",
+        "name": "Badge",
+        "role": "text",
+        "delta": 0.42,
+        "dx": -0.2,
+        "dy": 0,
+        "dw": 0.42,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:129921;1048:1253",
+        "name": "Badge",
+        "role": "text",
+        "delta": 0.42,
+        "dx": -0.2,
+        "dy": 0,
+        "dw": 0.42,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:129936;1048:1253",
+        "name": "Badge",
+        "role": "text",
+        "delta": 0.42,
+        "dx": -0.2,
+        "dy": 0,
+        "dw": 0.42,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:129951;1048:1253",
+        "name": "Badge",
+        "role": "text",
+        "delta": 0.42,
+        "dx": -0.2,
+        "dy": 0,
+        "dw": 0.42,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:129966;1048:1253",
+        "name": "Badge",
+        "role": "text",
+        "delta": 0.42,
+        "dx": -0.2,
+        "dy": 0,
+        "dw": 0.42,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:129981;1048:1253",
+        "name": "Badge",
+        "role": "text",
+        "delta": 0.42,
+        "dx": -0.2,
+        "dy": 0,
+        "dw": 0.42,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:129986;1391:17471",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.34,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.34,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:129986;1391:17472",
+        "name": "Hiển thị 1 - 10 trong tổng số 80 lớp học",
+        "role": "text",
+        "delta": 0.34,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.34,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:129986;1391:17473",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.34,
+        "dx": 0.34,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:129986;1391:17474",
+        "name": "Button",
+        "role": "container",
+        "delta": 0.34,
+        "dx": 0.34,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:129986;1391:17475",
+        "name": "Trước",
+        "role": "text",
+        "delta": 0.34,
+        "dx": 0.34,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:129986;1391:17476",
+        "name": "Button",
+        "role": "container",
+        "delta": 0.34,
+        "dx": 0.34,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:129986;1391:17477",
+        "name": "1",
+        "role": "text",
+        "delta": 0.34,
+        "dx": 0.34,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:129986;1391:17478",
+        "name": "Button",
+        "role": "container",
+        "delta": 0.34,
+        "dx": 0.34,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:129986;1391:17479",
+        "name": "2",
+        "role": "text",
+        "delta": 0.34,
+        "dx": 0.34,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:129986;1391:17486",
+        "name": "Button",
+        "role": "container",
+        "delta": 0.34,
+        "dx": 0.34,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:129986;1391:17487",
+        "name": "Sau",
+        "role": "text",
+        "delta": 0.34,
+        "dx": 0.34,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      }
+    ],
+    "maxDelta": 2.91,
+    "over": [
+      {
+        "id": "I4056:129988;3976:73769",
+        "name": "Áp dụng",
+        "role": "container",
+        "delta": 2.91,
+        "dx": 0,
+        "dy": 0,
+        "dw": 2.91,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:129988;3976:73771",
+        "name": "Khoá học áp dụng",
+        "role": "text",
+        "delta": 2.91,
+        "dx": 0,
+        "dy": 0,
+        "dw": 2.91,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      }
+    ]
+  },
+  "failures": [
+    "2 elements are off by more than their limit (1px, 2.5px for text-driven; worst 2.91px)."
+  ],
+  "url": "http://localhost:3000/voucher/danh-sach-voucher/xem-truoc-voucher-dk",
+  "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
+  "consoleErrors": [],
+  "rootFound": true
+}

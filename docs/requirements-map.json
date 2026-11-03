@@ -1,0 +1,615 @@
+{
+ "note": "Requirement ↔ mã màn Figma PLS-ICS T8/2026. Màn con (vd CD-KH-030341) thuộc requirement của màn chính.",
+ "requirements": {
+  "account_management/account_management.md": {
+   "title": "Quản lý tài khoản (Master)",
+   "screens": [
+    "MST-TK-010000",
+    "MST-TK-020000"
+   ],
+   "source": "ghép theo tiêu đề"
+  },
+  "action_board_requirement/action_board_requirements.md": {
+   "title": "Action Board",
+   "screens": [],
+   "note": "Chưa thấy màn Action Board trên Figma"
+  },
+  "appointment_requirement/appointment_requirements.md": {
+   "title": "Lịch hẹn — Danh sách, thêm lịch hẹn và Review",
+   "screens": [
+    "ADM-LHN-010100",
+    "ADM-LHN-010200",
+    "ADM-LHN-010300",
+    "ADM-LHN-010400",
+    "ADM-LHN-020000"
+   ],
+   "source": "ghép theo tiêu đề"
+  },
+  "class_handler_support/overview/overview.md": {
+   "title": "[Phụ trách lớp] Trang chủ — Thống kê tổng quan",
+   "screens": [
+    "CH-TC-010000"
+   ],
+   "source": "ghép theo tiêu đề"
+  },
+  "class_handler_support/process/process.md": {
+   "title": "[Phụ trách lớp] Quy trình — Task Hôm Nay, Task Tuần Này, Task Tháng Này, Ca Trực, Task Khác",
+   "screens": [
+    "SP-TASK-010000",
+    "SP-TASK-020000",
+    "SP-TASK-030000"
+   ],
+   "source": "ghép theo tiêu đề"
+  },
+  "class_handler_support/statistics/statistics.md": {
+   "title": "[Phụ trách lớp] Thống kê",
+   "screens": [],
+   "note": "Chưa thấy màn Thống kê của Phụ trách lớp (chỉ có ADM-TK-010000 của Admin)"
+  },
+  "course_management/course_management.md": {
+   "title": "Quản lý khoá học",
+   "screens": [
+    "CD-KH-010000"
+   ],
+   "source": "ghép theo tiêu đề"
+  },
+  "course_management/homework-test/homework-test.md": {
+   "title": "[CD] Bài tập về nhà và Kiểm tra",
+   "screens": [
+    "CD-KH-030340",
+    "CD-KH-030341",
+    "CD-KH-030342",
+    "CD-KH-030343",
+    "CD-KH-030344",
+    "CD-KH-030345",
+    "CD-KH-030346",
+    "CD-KH-030347",
+    "CD-KH-030349",
+    "CD-KH-060100",
+    "CD-KH-060110",
+    "CD-KH-060120",
+    "CD-KH-060130",
+    "CD-KH-060200"
+   ],
+   "source": "ghi trong file"
+  },
+  "course_management/knowledge-s1/knowledge-s1.md": {
+   "title": "Kiến thức (S1)",
+   "screens": [
+    "CD-KH-030270",
+    "CD-KH-030400",
+    "CD-KH-030540",
+    "CD-KH-040100",
+    "CD-KH-040200"
+   ],
+   "source": "ghi trong file"
+  },
+  "course_management/learning-path-s4/learning-path-s4.md": {
+   "title": "Lộ Trình (S4)",
+   "screens": [
+    "CD-KH-020200"
+   ],
+   "source": "ghép theo tiêu đề"
+  },
+  "course_management/library/library.md": {
+   "title": "[CD] Thư viện",
+   "screens": [
+    "CD-KH-070160",
+    "CD-KH-070161",
+    "CD-KH-070170",
+    "CD-KH-070171",
+    "CD-KH-070301",
+    "CD-KH-070302",
+    "CD-KH-070303",
+    "CD-KH-070304",
+    "CD-KH-070305"
+   ],
+   "source": "ghi trong file"
+  },
+  "course_management/overview-s2/overview-s2.md": {
+   "title": "Tổng quan (S2)",
+   "screens": [
+    "CD-KH-020100"
+   ],
+   "source": "ghép theo tiêu đề"
+  },
+  "course_management/semester/information/information.md": {
+   "title": "Học Kỳ",
+   "screens": [
+    "CD-KH-030100"
+   ],
+   "source": "ghép theo tiêu đề"
+  },
+  "course_management/semester/lesson/lesson.md": {
+   "title": "Học Kỳ - Tab Bài học",
+   "screens": [
+    "CD-KH-030200"
+   ],
+   "source": "ghép theo tiêu đề"
+  },
+  "course_management/semester/test/test.md": {
+   "title": "Học Kỳ - Tab Kiểm tra",
+   "screens": [
+    "CD-KH-030300",
+    "CD-KH-030310",
+    "CD-KH-030340"
+   ],
+   "source": "ghi trong file"
+  },
+  "course_management/skill-s6/skill-s6.md": {
+   "title": "Kỹ năng (S6) — Nghe / Đọc",
+   "screens": [
+    "CD-KH-050100",
+    "CD-KH-050110",
+    "CD-KH-050120",
+    "CD-KH-050130",
+    "CD-KH-050140",
+    "CD-KH-050150",
+    "CD-KH-050155",
+    "CD-KH-050160",
+    "CD-KH-050180",
+    "CD-KH-050190",
+    "CD-KH-050200",
+    "CD-KH-050300",
+    "CD-KH-050400",
+    "CD-KH-070301",
+    "CD-KH-070302"
+   ],
+   "source": "ghi trong file"
+  },
+  "curriculum_management_requirement/category_management/category_management.md": {
+   "title": "Quản lý danh sách danh mục",
+   "screens": [
+    "CD-DM-010000"
+   ],
+   "source": "ghép theo tiêu đề"
+  },
+  "curriculum_management_requirement/category_management/detail_category.md": {
+   "title": "Chi tiết danh mục (Popup)",
+   "screens": [
+    "CD-DM-010000"
+   ],
+   "source": "ghép theo tiêu đề"
+  },
+  "curriculum_management_requirement/level_management/level_management.md": {
+   "title": "Quản lý danh sách cấp độ",
+   "screens": [
+    "CD-CDO-010000"
+   ],
+   "source": "ghép theo tiêu đề"
+  },
+  "curriculum_management_requirement/level_management/level_management_requirements.md": {
+   "title": "Quản lý cấp độ",
+   "screens": [
+    "CD-CDO-010000"
+   ],
+   "source": "ghép theo tiêu đề"
+  },
+  "login_ics/login_requirements.md": {
+   "title": "Đăng nhập ICS",
+   "screens": [],
+   "note": "Màn đăng nhập nằm ở mục 🚪 LOG IN nhưng chưa có mã màn"
+  },
+  "management_requirement/class_management/class_creation_requirements.md": {
+   "title": "Tạo lớp học",
+   "screens": [
+    "ADM-LOP-010000"
+   ],
+   "source": "ghép theo tiêu đề"
+  },
+  "management_requirement/class_management/class_detail_appointments_requirements.md": {
+   "title": "Chi tiết lớp học — Menu Nhật ký — Tab Lịch hẹn",
+   "screens": [
+    "ADM-LOP-050100"
+   ],
+   "source": "ghép theo tiêu đề"
+  },
+  "management_requirement/class_management/class_detail_homework_tests_requirements.md": {
+   "title": "Chi tiết lớp học — Menu Bài tập và kiểm tra",
+   "screens": [
+    "ADM-LOP-020300"
+   ],
+   "source": "ghép theo tiêu đề"
+  },
+  "management_requirement/class_management/class_detail_information_requirements.md": {
+   "title": "Chi tiết lớp học — Tab Thông tin",
+   "screens": [
+    "ADM-LOP-040100"
+   ],
+   "source": "ghép theo tiêu đề"
+  },
+  "management_requirement/class_management/class_detail_invoices_requirements.md": {
+   "title": "Chi tiết lớp học — Tab Hóa đơn",
+   "screens": [
+    "ADM-LOP-040600"
+   ],
+   "source": "ghép theo tiêu đề"
+  },
+  "management_requirement/class_management/class_detail_journal_requirements.md": {
+   "title": "Chi tiết lớp học — Menu Nhật ký",
+   "screens": [
+    "ADM-LOP-050100"
+   ],
+   "source": "ghép theo tiêu đề"
+  },
+  "management_requirement/class_management/class_detail_kpi_requirements.md": {
+   "title": "Chi tiết lớp học — Tab KPI của Phụ trách lớp",
+   "screens": [
+    "ADM-LOP-040700"
+   ],
+   "source": "ghép theo tiêu đề"
+  },
+  "management_requirement/class_management/class_detail_lessons_requirements.md": {
+   "title": "Chi tiết lớp học — Menu Bài học",
+   "screens": [
+    "ADM-LOP-030100",
+    "ADM-LOP-030200",
+    "ADM-LOP-030300",
+    "ADM-LOP-030400",
+    "ADM-LOP-030500"
+   ],
+   "source": "ghép theo tiêu đề"
+  },
+  "management_requirement/class_management/class_detail_meetings_requirements.md": {
+   "title": "Chi tiết lớp học — Tab Cuộc họp",
+   "screens": [],
+   "note": "Admin chưa có màn Cuộc họp trong chi tiết lớp"
+  },
+  "management_requirement/class_management/class_detail_messages_requirements.md": {
+   "title": "Chi tiết lớp học — Menu Nhật ký — Tab Tin nhắn",
+   "screens": [
+    "ADM-LOP-050100"
+   ],
+   "source": "ghép theo tiêu đề"
+  },
+  "management_requirement/class_management/class_detail_notes_requirements.md": {
+   "title": "Chi tiết lớp học — Menu Nhật ký — Tab Ghi chú",
+   "screens": [
+    "ADM-LOP-050100"
+   ],
+   "source": "ghép theo tiêu đề"
+  },
+  "management_requirement/class_management/class_detail_ot_requirements.md": {
+   "title": "Chi tiết lớp học — Tab OT của Phụ trách lớp",
+   "screens": [
+    "ADM-LOP-040800"
+   ],
+   "source": "ghép theo tiêu đề"
+  },
+  "management_requirement/class_management/class_detail_overview_requirements.md": {
+   "title": "Chi tiết lớp học — Menu Tổng quan",
+   "screens": [
+    "ADM-LOP-020100"
+   ],
+   "source": "ghi trong file"
+  },
+  "management_requirement/class_management/class_detail_processes_requirements.md": {
+   "title": "Chi tiết lớp học — Tiêu chuẩn lớp - giáo viên, CSKH và Quy trình lớp",
+   "screens": [
+    "ADM-LOP-020600",
+    "ADM-LOP-020700",
+    "ADM-LOP-020800"
+   ],
+   "source": "ghép theo tiêu đề"
+  },
+  "management_requirement/class_management/class_detail_schedule_requirements.md": {
+   "title": "Chi tiết lớp học — Tab Lịch dạy",
+   "screens": [
+    "ADM-LOP-040500"
+   ],
+   "source": "ghép theo tiêu đề"
+  },
+  "management_requirement/class_management/class_detail_self_study_requirements.md": {
+   "title": "Chi tiết lớp học — Menu Tự học",
+   "screens": [],
+   "note": "Admin chưa có màn Tự học trong chi tiết lớp"
+  },
+  "management_requirement/class_management/class_detail_students_requirements.md": {
+   "title": "Chi tiết lớp học — Tab Học viên",
+   "screens": [
+    "ADM-LOP-040200"
+   ],
+   "source": "ghép theo tiêu đề"
+  },
+  "management_requirement/class_management/class_detail_support_handlers_requirements.md": {
+   "title": "Chi tiết lớp học — Tab Trợ giảng & Phụ trách lớp",
+   "screens": [
+    "ADM-LOP-040400"
+   ],
+   "source": "ghép theo tiêu đề"
+  },
+  "management_requirement/class_management/class_detail_teachers_requirements.md": {
+   "title": "Chi tiết lớp học — Tab Giáo viên",
+   "screens": [
+    "ADM-LOP-040300"
+   ],
+   "source": "ghép theo tiêu đề"
+  },
+  "management_requirement/class_management/class_management_requirements.md": {
+   "title": "Quản lý danh sách lớp học",
+   "screens": [
+    "ADM-LOP-010000"
+   ],
+   "source": "ghép theo tiêu đề"
+  },
+  "management_requirement/salary_management/teacher_salary_requirements.md": {
+   "title": "Lương giáo viên — Admin",
+   "screens": [
+    "ADM-LGV-010000"
+   ],
+   "source": "ghi trong file"
+  },
+  "management_requirement/schedule_management/teaching_schedule_requirements.md": {
+   "title": "Lịch dạy tổng",
+   "screens": [
+    "ADM-LD-010000",
+    "ADM-LD-010010"
+   ],
+   "source": "ghi trong file"
+  },
+  "management_requirement/student_management/student_detail_requirements.md": {
+   "title": "Chi tiết học viên",
+   "screens": [
+    "ADM-HV-020100",
+    "ADM-HV-020200",
+    "ADM-HV-020300",
+    "ADM-HV-020400",
+    "ADM-HV-020500",
+    "ADM-HV-020600"
+   ],
+   "source": "ghép theo tiêu đề"
+  },
+  "management_requirement/student_management/student_management_requirements.md": {
+   "title": "Quản lý học viên",
+   "screens": [
+    "ADM-HV-010000"
+   ],
+   "source": "ghép theo tiêu đề"
+  },
+  "management_requirement/teacher_management/teacher_detail_requirements.md": {
+   "title": "[Admin] Chi tiết giáo viên",
+   "screens": [
+    "ADM-GV-020100",
+    "ADM-GV-020200",
+    "ADM-GV-020300",
+    "ADM-GV-020400",
+    "ADM-GV-020500",
+    "ADM-GV-020600"
+   ],
+   "source": "ghép theo tiêu đề"
+  },
+  "management_requirement/teacher_management/teacher_management_requirements.md": {
+   "title": "[Admin] Quản lý danh sách giáo viên",
+   "screens": [
+    "ADM-GV-010000"
+   ],
+   "source": "ghép theo tiêu đề"
+  },
+  "meeting_schedule/meeting_schedule.md": {
+   "title": "[Phụ trách lớp, Admin] Lịch Họp",
+   "screens": [
+    "SP-LHP-010000",
+    "SP-LHP-020000"
+   ],
+   "source": "ghép theo tiêu đề"
+  },
+  "process_definition_requirement/process_definition_requirements.md": {
+   "title": "Define quy trình",
+   "screens": [
+    "ADM-QT-010000",
+    "ADM-QT-020000"
+   ],
+   "source": "ghép theo tiêu đề"
+  },
+  "receipt_management/receipt/receipt.md": {
+   "title": "Hoá Đơn",
+   "screens": [
+    "ADM-HD-010000"
+   ],
+   "source": "ghép theo tiêu đề"
+  },
+  "receipt_management/tuition_detail/tuition_detail.md": {
+   "title": "",
+   "screens": [],
+   "note": "Có thể là ADM-HV-020300 (Học phí) hoặc phần xổ xuống của ADM-HD-010000"
+  },
+  "ship_books/message_template/message_template.md": {
+   "title": "Template Tin Nhắn",
+   "screens": [
+    "ADM-TN-010000"
+   ],
+   "source": "ghép theo tiêu đề"
+  },
+  "ship_books/ship_books/ship_books.md": {
+   "title": "Ship Sách",
+   "screens": [
+    "ADM-SS-010000"
+   ],
+   "source": "ghép theo tiêu đề"
+  },
+  "student_app/account/account.md": {
+   "title": "[Học viên] Tài khoản",
+   "screens": [],
+   "note": "App học viên, không thuộc file Figma ICS"
+  },
+  "student_app/alphabet/alphabet.md": {
+   "title": "[Học viên] Bảng chữ",
+   "screens": [],
+   "note": "App học viên, không thuộc file Figma ICS"
+  },
+  "student_app/course/course.md": {
+   "title": "[Học viên] Lớp học",
+   "screens": [],
+   "note": "App học viên, không thuộc file Figma ICS"
+  },
+  "student_app/home_trial/home_trial.md": {
+   "title": "[Học viên] Màn chính và trải nghiệm",
+   "screens": [],
+   "note": "App học viên, không thuộc file Figma ICS"
+  },
+  "student_app/knowledge/knowledge.md": {
+   "title": "[Học viên] Kiến thức",
+   "screens": [],
+   "note": "App học viên, không thuộc file Figma ICS"
+  },
+  "student_app/lesson/lesson.md": {
+   "title": "[Học viên] Bài học",
+   "screens": [],
+   "note": "App học viên, không thuộc file Figma ICS"
+  },
+  "student_app/library/library.md": {
+   "title": "[Học viên] Thư viện học tập",
+   "screens": [],
+   "note": "App học viên, không thuộc file Figma ICS"
+  },
+  "student_app/skill/skill.md": {
+   "title": "[Học viên] Kỹ năng",
+   "screens": [],
+   "note": "App học viên, không thuộc file Figma ICS"
+  },
+  "student_app/test/test.md": {
+   "title": "[Học viên] Kiểm tra",
+   "screens": [],
+   "note": "App học viên, không thuộc file Figma ICS"
+  },
+  "survey_bug/bug/bug.md": {
+   "title": "Báo lỗi & Góp ý",
+   "screens": [
+    "CD-BL-010000",
+    "CH-BL-010000",
+    "GV-BL-010000",
+    "ADM-GY-010000"
+   ],
+   "source": "ghép theo tiêu đề"
+  },
+  "survey_bug/survey/01-create-survey/01-create-survey.md": {
+   "title": "Tạo khảo sát (Admin)",
+   "screens": [
+    "ADM-KS-010000",
+    "ADM-KS-020000",
+    "ADM-KS-030000"
+   ],
+   "source": "ghép theo tiêu đề"
+  },
+  "survey_bug/survey/02-assign-survey/02-assign-survey.md": {
+   "title": "Giao khảo sát & Kết quả (Admin)",
+   "screens": [
+    "ADM-GKS-010000",
+    "ADM-GKS-020000",
+    "ADM-GKS-030000"
+   ],
+   "source": "ghép theo tiêu đề"
+  },
+  "survey_bug/survey/03-take-survey/03-take-survey.md": {
+   "title": "Giáo viên làm khảo sát (Web)",
+   "screens": [
+    "GV-KS-010000"
+   ],
+   "source": "ghép theo tiêu đề"
+  },
+  "tag_definition_requirement/tag_definition_requirements.md": {
+   "title": "Define Tag — Quản lý nhóm và tag",
+   "screens": [
+    "ADM-TAG-010000"
+   ],
+   "source": "ghép theo tiêu đề"
+  },
+  "teacher_role/class/class_course_requirements.md": {
+   "title": "[Giáo viên] Chi tiết lớp — Khoá học",
+   "screens": [
+    "GV-LOP-080100",
+    "GV-LOP-090100"
+   ],
+   "source": "ghi trong file"
+  },
+  "teacher_role/class/class_evaluation_requirements.md": {
+   "title": "[Giáo viên] Chi tiết lớp — Đánh giá",
+   "screens": [
+    "GV-LOP-100100"
+   ],
+   "source": "ghi trong file"
+  },
+  "teacher_role/class/class_information_requirements.md": {
+   "title": "[Giáo viên] Chi tiết lớp — Thông tin",
+   "screens": [
+    "GV-LOP-110100",
+    "GV-LOP-110200",
+    "GV-LOP-110300"
+   ],
+   "source": "ghi trong file"
+  },
+  "teacher_role/class/class_overview_requirements.md": {
+   "title": "[Giáo viên] Chi tiết lớp — Tổng quan",
+   "screens": [
+    "GV-LOP-010000",
+    "GV-LOP-020000"
+   ],
+   "source": "ghi trong file"
+  },
+  "teacher_role/class/class_process_requirements.md": {
+   "title": "[Giáo viên] Chi tiết lớp — Quy trình",
+   "screens": [
+    "GV-LOP-060100",
+    "GV-LOP-070100"
+   ],
+   "source": "ghi trong file"
+  },
+  "teacher_role/class/class_teaching_requirements.md": {
+   "title": "[Giáo viên] Chi tiết lớp — Giảng dạy",
+   "screens": [
+    "GV-LOP-030100",
+    "GV-LOP-030110",
+    "GV-LOP-030170",
+    "GV-LOP-030200",
+    "GV-LOP-030300",
+    "GV-LOP-030400",
+    "GV-LOP-030500",
+    "GV-LOP-040100",
+    "GV-LOP-040200",
+    "GV-LOP-050100"
+   ],
+   "source": "ghi trong file"
+  },
+  "teacher_role/class_list/class_list_requirements.md": {
+   "title": "[Giáo viên] Lớp — Thống kê tổng quan",
+   "screens": [
+    "GV-LOP-010000"
+   ],
+   "source": "ghi trong file"
+  },
+  "teacher_role/history_and_salary/history_and_salary_requirements.md": {
+   "title": "[Giáo viên] Lịch sử & lương",
+   "screens": [
+    "ADM-LGV-020010",
+    "GV-LS-010000",
+    "GV-LS-010003",
+    "GV-LS-010004",
+    "GV-LS-010010",
+    "GV-LS-010011",
+    "GV-LS-010012",
+    "GV-LS-010013",
+    "GV-LS-010014",
+    "GV-LS-010015",
+    "GV-LS-010016"
+   ],
+   "source": "ghi trong file"
+  },
+  "teacher_role/teaching_schedule/teaching_schedule_requirements.md": {
+   "title": "[Giáo viên] Lịch dạy",
+   "screens": [
+    "GV-LD-010000",
+    "GV-LD-020000",
+    "GV-LD-020010"
+   ],
+   "source": "ghi trong file"
+  },
+  "tools/move_video/move_video.md": {
+   "title": "Move Video",
+   "screens": [
+    "ADM-MV-010000",
+    "ADM-MV-020000"
+   ],
+   "source": "ghép theo tiêu đề"
+  }
+ }
+}

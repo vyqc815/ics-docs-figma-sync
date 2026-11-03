@@ -1,0 +1,679 @@
+{
+  "pass": false,
+  "thresholds": {
+    "maxPixelDiffPercent": 0.5,
+    "maxBoxDelta": 1,
+    "maxTextBoxDelta": 2.5,
+    "colorThreshold": 0.1,
+    "aaRadius": 1,
+    "subpixel": true,
+    "maxTextNodeDiffPercent": 35
+  },
+  "pixels": {
+    "width": 1440,
+    "height": 981,
+    "mismatched": 1359,
+    "percent": 0.096,
+    "shapePercent": 0.027,
+    "textPercent": 0.237,
+    "sizeMismatch": false
+  },
+  "textNodes": [
+    {
+      "id": "I4915:230401;4901:211379;2245:87908",
+      "name": "Label",
+      "pixels": 201,
+      "percent": 8.4
+    },
+    {
+      "id": "I4915:230401;4901:211377;2245:87908",
+      "name": "Label",
+      "pixels": 141,
+      "percent": 5.9
+    },
+    {
+      "id": "I3705:84743;2015:36008",
+      "name": "Value",
+      "pixels": 56,
+      "percent": 3.7
+    },
+    {
+      "id": "I3705:84851;2015:36008",
+      "name": "Value",
+      "pixels": 56,
+      "percent": 3.7
+    },
+    {
+      "id": "I4915:230401;4901:211380;2245:87908",
+      "name": "Label",
+      "pixels": 47,
+      "percent": 2
+    },
+    {
+      "id": "I3705:83421;2159:26218",
+      "name": "Button",
+      "pixels": 9,
+      "percent": 1.9
+    },
+    {
+      "id": "I3705:83449;2159:26218",
+      "name": "Button",
+      "pixels": 9,
+      "percent": 1.9
+    },
+    {
+      "id": "I3705:83478;2159:26218",
+      "name": "Button",
+      "pixels": 9,
+      "percent": 1.9
+    },
+    {
+      "id": "I3705:83506;2159:26218",
+      "name": "Button",
+      "pixels": 9,
+      "percent": 1.9
+    },
+    {
+      "id": "I3705:83534;2159:26218",
+      "name": "Button",
+      "pixels": 9,
+      "percent": 1.9
+    },
+    {
+      "id": "I3705:83562;2159:26218",
+      "name": "Button",
+      "pixels": 9,
+      "percent": 1.9
+    },
+    {
+      "id": "I3705:84697;2015:36008",
+      "name": "Value",
+      "pixels": 26,
+      "percent": 1.7
+    },
+    {
+      "id": "I3705:84759;2015:36008",
+      "name": "Value",
+      "pixels": 26,
+      "percent": 1.7
+    },
+    {
+      "id": "I3705:84805;2015:36008",
+      "name": "Value",
+      "pixels": 26,
+      "percent": 1.7
+    },
+    {
+      "id": "I3705:84867;2015:36008",
+      "name": "Value",
+      "pixels": 26,
+      "percent": 1.7
+    }
+  ],
+  "regions": [
+    {
+      "x": 1344,
+      "y": 296,
+      "width": 32,
+      "height": 8,
+      "pixels": 26,
+      "node": {
+        "id": "3705:83421",
+        "name": "Atom/Button",
+        "role": "instance"
+      }
+    },
+    {
+      "x": 1344,
+      "y": 776,
+      "width": 32,
+      "height": 8,
+      "pixels": 26,
+      "node": {
+        "id": "I3705:83478;2159:26218",
+        "name": "Button",
+        "role": "text"
+      }
+    },
+    {
+      "x": 1344,
+      "y": 832,
+      "width": 32,
+      "height": 8,
+      "pixels": 26,
+      "node": {
+        "id": "I3705:83506;2159:26218",
+        "name": "Button",
+        "role": "text"
+      }
+    },
+    {
+      "x": 1344,
+      "y": 888,
+      "width": 32,
+      "height": 8,
+      "pixels": 26,
+      "node": {
+        "id": "I3705:83534;2159:26218",
+        "name": "Button",
+        "role": "text"
+      }
+    },
+    {
+      "x": 1344,
+      "y": 944,
+      "width": 32,
+      "height": 8,
+      "pixels": 26,
+      "node": {
+        "id": "I3705:83562;2159:26218",
+        "name": "Button",
+        "role": "text"
+      }
+    },
+    {
+      "x": 1344,
+      "y": 272,
+      "width": 32,
+      "height": 8,
+      "pixels": 24,
+      "node": {
+        "id": "3705:83398",
+        "name": "Hàng",
+        "role": "container"
+      }
+    },
+    {
+      "x": 1344,
+      "y": 760,
+      "width": 32,
+      "height": 8,
+      "pixels": 24,
+      "node": {
+        "id": "I3705:83478;2159:26218",
+        "name": "Button",
+        "role": "text"
+      }
+    },
+    {
+      "x": 1344,
+      "y": 816,
+      "width": 32,
+      "height": 8,
+      "pixels": 24,
+      "node": {
+        "id": "I3705:83506;2159:26218",
+        "name": "Button",
+        "role": "text"
+      }
+    },
+    {
+      "x": 1344,
+      "y": 872,
+      "width": 32,
+      "height": 8,
+      "pixels": 24,
+      "node": {
+        "id": "I3705:83534;2159:26218",
+        "name": "Button",
+        "role": "text"
+      }
+    },
+    {
+      "x": 1344,
+      "y": 928,
+      "width": 32,
+      "height": 8,
+      "pixels": 24,
+      "node": {
+        "id": "I3705:83562;2159:26218",
+        "name": "Button",
+        "role": "text"
+      }
+    },
+    {
+      "x": 344,
+      "y": 432,
+      "width": 16,
+      "height": 16,
+      "pixels": 22,
+      "node": {
+        "id": "3705:83581",
+        "name": "Cell · Chọn",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 344,
+      "y": 528,
+      "width": 16,
+      "height": 16,
+      "pixels": 22,
+      "node": {
+        "id": "3705:83650",
+        "name": "Cell · Chọn",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 344,
+      "y": 576,
+      "width": 16,
+      "height": 16,
+      "pixels": 22,
+      "node": {
+        "id": "3705:83685",
+        "name": "Cell · Chọn",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 344,
+      "y": 672,
+      "width": 16,
+      "height": 16,
+      "pixels": 22,
+      "node": {
+        "id": "3705:83754",
+        "name": "Cell · Chọn",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 1064,
+      "y": 816,
+      "width": 16,
+      "height": 24,
+      "pixels": 12,
+      "node": {
+        "id": "I3705:84572;2015:31432;3705:84570;2015:30561",
+        "name": "Icon/Nền tảng tin nhắn",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 1384,
+      "y": 184,
+      "width": 24,
+      "height": 24,
+      "pixels": 11,
+      "node": {
+        "id": "2533:33406",
+        "name": "Atom/Icon Button",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 24,
+      "y": 760,
+      "width": 8,
+      "height": 8,
+      "pixels": 4,
+      "node": {
+        "id": "I4915:230401;4901:211412",
+        "name": "LOGO CENTER",
+        "role": "icon"
+      }
+    }
+  ],
+  "boxes": {
+    "measured": 420,
+    "missing": [],
+    "withinThreshold": 417,
+    "buckets": {
+      "≤0.5px": 417,
+      "≤1px": 417,
+      "≤2px": 417,
+      "≤4px": 417,
+      ">4px": 3
+    },
+    "worst": [
+      {
+        "id": "3705:83395",
+        "name": "Text",
+        "role": "text",
+        "delta": 110,
+        "dx": -55,
+        "dy": 0,
+        "dw": 110,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "3705:83579",
+        "name": "Text",
+        "role": "text",
+        "delta": 70,
+        "dx": -35,
+        "dy": 0,
+        "dw": 70,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "3705:83569",
+        "name": "Text",
+        "role": "text",
+        "delta": 24,
+        "dx": -12,
+        "dy": 0,
+        "dw": 24,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "3705:83679",
+        "name": "Atom/Badge",
+        "role": "instance",
+        "delta": 0.31,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.31,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I3705:83679;1048:1255",
+        "name": "Badge",
+        "role": "text",
+        "delta": 0.31,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.31,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "3705:83748",
+        "name": "Atom/Badge",
+        "role": "instance",
+        "delta": 0.31,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.31,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I3705:83748;1048:1255",
+        "name": "Badge",
+        "role": "text",
+        "delta": 0.31,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.31,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4915:230401;4901:211322",
+        "name": "Subtract",
+        "role": "icon",
+        "delta": 0.01,
+        "dx": -0.01,
+        "dy": -0.01,
+        "dw": -0.01,
+        "dh": 0,
+        "limit": 1,
+        "textDriven": false
+      },
+      {
+        "id": "I4915:230401;4901:211329",
+        "name": "Intersect",
+        "role": "icon",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": -0.01,
+        "dw": -0.01,
+        "dh": 0,
+        "limit": 1,
+        "textDriven": false
+      },
+      {
+        "id": "I4915:230401;4901:211343",
+        "name": "Vector",
+        "role": "icon",
+        "delta": 0.01,
+        "dx": 0.01,
+        "dy": 0,
+        "dw": 0,
+        "dh": -0.01,
+        "limit": 1,
+        "textDriven": false
+      },
+      {
+        "id": "I4915:230401;4901:211344",
+        "name": "Union",
+        "role": "icon",
+        "delta": 0.01,
+        "dx": -0.01,
+        "dy": 0,
+        "dw": -0.01,
+        "dh": -0.01,
+        "limit": 1,
+        "textDriven": false
+      },
+      {
+        "id": "I4915:230401;4901:211347",
+        "name": "Group 240002",
+        "role": "icon",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": -0.01,
+        "limit": 1,
+        "textDriven": false
+      },
+      {
+        "id": "2533:33278",
+        "name": "MainContentArea",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2533:33279",
+        "name": "Frame 427321958",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2533:33558",
+        "name": "Container",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2533:33559",
+        "name": "Atom/Side Tab",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I2533:33559;2177:28927",
+        "name": "Container",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I2533:33559;2177:28928",
+        "name": "Chi tiết NV",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2533:33560",
+        "name": "Atom/Side Tab",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I2533:33560;2177:28927",
+        "name": "Container",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I2533:33560;2177:28928",
+        "name": "Chi tiết NV",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2533:33561",
+        "name": "Atom/Side Tab",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I2533:33561;2177:28927",
+        "name": "Container",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I2533:33561;2177:28928",
+        "name": "Chi tiết NV",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2533:33562",
+        "name": "Atom/Side Tab",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      }
+    ],
+    "maxDelta": 110,
+    "over": [
+      {
+        "id": "3705:83395",
+        "name": "Text",
+        "role": "text",
+        "delta": 110,
+        "dx": -55,
+        "dy": 0,
+        "dw": 110,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "3705:83579",
+        "name": "Text",
+        "role": "text",
+        "delta": 70,
+        "dx": -35,
+        "dy": 0,
+        "dw": 70,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "3705:83569",
+        "name": "Text",
+        "role": "text",
+        "delta": 24,
+        "dx": -12,
+        "dy": 0,
+        "dw": 24,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      }
+    ]
+  },
+  "failures": [
+    "3 elements are off by more than their limit (1px, 2.5px for text-driven; worst 110px)."
+  ],
+  "url": "http://localhost:3000/lop-hoc/nhat-ky/tin-nhan",
+  "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
+  "consoleErrors": [],
+  "rootFound": true
+}

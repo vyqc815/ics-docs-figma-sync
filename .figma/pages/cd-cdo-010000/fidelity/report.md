@@ -1,6 +1,6 @@
 # Fidelity: CD-CDO-010000 — Quản lý cấp độ
 
-- URL: `http://localhost:3108/quan-ly-cap-do`
+- URL: `http://localhost:3000/quan-ly-cap-do`
 - Verdict: **PASS**
 - Pixels outside text: **0%** differ (limit 0.5%); all pixels: 0.066%; inside text boxes: 1.081% (glyph rendering)
 - Boxes: 175/175 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 175, ≤1px: 175, ≤2px: 175, ≤4px: 175, >4px: 0

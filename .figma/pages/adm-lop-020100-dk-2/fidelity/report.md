@@ -1,6 +1,6 @@
 # Fidelity: ADM-LOP-020100-DK — Chi tiết lớp học / Tổng quan > chi tiết
 
-- URL: `http://localhost:3108/chi-tiet-lop-hoc/tong-quan-chi-tiet-dk`
+- URL: `http://localhost:3000/chi-tiet-lop-hoc/tong-quan-chi-tiet-dk`
 - Verdict: **PASS**
 - Pixels outside text: **0.001%** differ (limit 0.5%); all pixels: 0.32%; inside text boxes: 1.407% (glyph rendering)
 - Boxes: 470/470 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 465, ≤1px: 469, ≤2px: 469, ≤4px: 470, >4px: 0

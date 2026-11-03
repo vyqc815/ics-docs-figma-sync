@@ -5,7 +5,7 @@
 > **Nguồn:** PLS-ICS T8/2026 ›         ├─ TỔNG QUAN › GV-LOP-020000-DK — Chi tiết lớp / Tổng quan (`4324:15165`, file `rRVs5HX0kIHffbS0V40djG`)  
 > **Route:** `/chi-tiet-lop/tong-quan-dk`  
 > **Khung thiết kế:** 1440 × 847 px (cắt phần tràn ra ngoài khung)  
-> **Xuất lúc:** 2026-11-02T03:54:19.094Z  
+> **Xuất lúc:** 2026-11-03T01:09:45.181Z  
 > **Spec đầy đủ (giá trị chính xác từng node):** `../../../.figma/pages/gv-lop-020000-dk/page-spec.json`
 
 ## 1. Tổng quan
@@ -28,26 +28,26 @@ Nền trang: `#121213` (bg/canvas).
 
 | Token | Biến CSS | Giá trị | Trỏ tới | Bộ / mode |
 | --- | --- | --- | --- | --- |
-| `bg/brand-tint` | `--bg-brand-tint` | `#fff7ed` | color/extended/fff7ed | Theme · Semantic / Light |
-| `bg/brand-tint-strong` | `--bg-brand-tint-strong` | `#ffedd5` | color/extended/ffedd5 | Theme · Semantic / Light |
-| `bg/canvas` | `--bg-canvas` | `#f8fafc` | color/extended/f8fafc | Theme · Semantic / Light |
-| `bg/strong` | `--bg-strong` | `#e2e8f0` | color/border/default | Theme · Semantic / Light |
-| `bg/subtle` | `--bg-subtle` | `#f1f5f9` | color/surface/input | Theme · Semantic / Light |
-| `bg/surface` | `--bg-surface` | `#ffffff` | color/neutral/white | Theme · Semantic / Light |
-| `border/brand` | `--border-brand` | `#fed7aa` | color/extended/fed7aa | Theme · Semantic / Light |
-| `border/default` | `--border-default` | `#e2e8f0` | color/border/default | Theme · Semantic / Light |
-| `border/strong` | `--border-strong` | `#cbd5e1` | color/extended/cbd5e1 | Theme · Semantic / Light |
-| `brand/primary` | `--brand-primary` | `#e65100` | color/brand/orange | Theme · Semantic / Light |
-| `chrome/bg` | `--chrome-bg` | `#ff7700` | color/extended/ff7700 | Theme · Semantic / Light |
-| `chrome/ring-dark` | `--chrome-ring-dark` | `#ef6700` | color/extended/ef6700 | Theme · Semantic / Light |
-| `chrome/ring-light` | `--chrome-ring-light` | `#ff9537` | color/extended/ff9537 | Theme · Semantic / Light |
+| `bg/brand-tint` | `--bg-brand-tint` | `#102218` |  | Theme · Semantic / Dark · Minimal |
+| `bg/brand-tint-strong` | `--bg-brand-tint-strong` | `#153020` |  | Theme · Semantic / Dark · Minimal |
+| `bg/canvas` | `--bg-canvas` | `#121213` |  | Theme · Semantic / Dark · Minimal |
+| `bg/strong` | `--bg-strong` | `#2a2a2e` |  | Theme · Semantic / Dark · Minimal |
+| `bg/subtle` | `--bg-subtle` | `#202023` |  | Theme · Semantic / Dark · Minimal |
+| `bg/surface` | `--bg-surface` | `#18181a` |  | Theme · Semantic / Dark · Minimal |
+| `border/brand` | `--border-brand` | `#1e4d31` |  | Theme · Semantic / Dark · Minimal |
+| `border/default` | `--border-default` | `#27272a` |  | Theme · Semantic / Dark · Minimal |
+| `border/strong` | `--border-strong` | `#3f3f46` |  | Theme · Semantic / Dark · Minimal |
+| `brand/primary` | `--brand-primary` | `#16a34a` |  | Theme · Semantic / Dark · Minimal |
+| `chrome/bg` | `--chrome-bg` | `#0b0b0c` |  | Theme · Semantic / Dark · Minimal |
+| `chrome/ring-dark` | `--chrome-ring-dark` | `#0b0b0c` |  | Theme · Semantic / Dark · Minimal |
+| `chrome/ring-light` | `--chrome-ring-light` | `#0b0b0c` |  | Theme · Semantic / Dark · Minimal |
 | `Color/Main Color/Neutral 3` | `--color-main-color-neutral-3` | `#ffffff` |  | PLS ICS 1  / Đắc Nhân |
 | `color/neutral/white` | `--color-neutral-white` | `#ffffff` |  | Color Tokens / Light |
 | `color/neutral/white` | `--color-neutral-white` | `#ffffff` |  | Color Tokens / Light |
 | `color/semantic/success` | `--color-semantic-success` | `#2d9732` |  | Color Tokens / Light |
-| `org/border` | `--org-border` | `#ffffff` |  | Theme · Semantic / Light |
-| `org/sakumi/bg` | `--org-sakumi-bg` | `#e33f64` |  | Theme · Semantic / Light |
-| `org/sakumi/fg` | `--org-sakumi-fg` | `#ffffff` |  | Theme · Semantic / Light |
+| `org/border` | `--org-border` | `#3f3f46` | border/strong | Theme · Semantic / Dark · Minimal |
+| `org/sakumi/bg` | `--org-sakumi-bg` | `#202023` | bg/subtle | Theme · Semantic / Dark · Minimal |
+| `org/sakumi/fg` | `--org-sakumi-fg` | `#f0587b` |  | Theme · Semantic / Dark · Minimal |
 | `radius/12` | `--radius-12` | `12` |  | Number Tokens / Mode 1 |
 | `radius/16` | `--radius-16` | `16` |  | Number Tokens / Mode 1 |
 | `radius/4` | `--radius-4` | `4` |  | Number Tokens / Mode 1 |
@@ -59,14 +59,15 @@ Nền trang: `#121213` (bg/canvas).
 | `spacing/16` | `--spacing-16` | `16` |  | Number Tokens / Mode 1 |
 | `spacing/4` | `--spacing-4` | `4` |  | Number Tokens / Mode 1 |
 | `spacing/8` | `--spacing-8` | `8` |  | Number Tokens / Mode 1 |
-| `text/muted` | `--text-muted` | `#cbd5e1` | color/text/muted | Theme · Semantic / Light |
-| `text/primary` | `--text-primary` | `#334155` | color/text/primary | Theme · Semantic / Light |
-| `text/secondary` | `--text-secondary` | `#64748b` | color/text/secondary | Theme · Semantic / Light |
-| `theme/is-dark` | `--theme-is-dark` | `false` |  | Theme · Semantic / Light |
-| `tone/blue/border` | `--tone-blue-border` | `#93c5fd` |  | Theme · Semantic / Light |
-| `tone/green/border` | `--tone-green-border` | `#6ee7b7` |  | Theme · Semantic / Light |
-| `tone/rose/border` | `--tone-rose-border` | `#fda4af` |  | Theme · Semantic / Light |
-| `tone/rose/text` | `--tone-rose-text` | `#9f1239` |  | Theme · Semantic / Light |
+| `text/muted` | `--text-muted` | `#71717a` |  | Theme · Semantic / Dark · Minimal |
+| `text/on-brand` | `--text-on-brand` | `#ffffff` |  | Theme · Semantic / Dark · Minimal |
+| `text/primary` | `--text-primary` | `#ededef` |  | Theme · Semantic / Dark · Minimal |
+| `text/secondary` | `--text-secondary` | `#a1a1aa` |  | Theme · Semantic / Dark · Minimal |
+| `theme/is-dark` | `--theme-is-dark` | `true` |  | Theme · Semantic / Dark · Minimal |
+| `tone/blue/border` | `--tone-blue-border` | `#28487d` |  | Theme · Semantic / Dark · Minimal |
+| `tone/green/border` | `--tone-green-border` | `#146048` |  | Theme · Semantic / Dark · Minimal |
+| `tone/rose/border` | `--tone-rose-border` | `#7b2a39` |  | Theme · Semantic / Dark · Minimal |
+| `tone/rose/text` | `--tone-rose-text` | `#fda4af` |  | Theme · Semantic / Dark · Minimal |
 
 **Style Figma đang dùng:**
 
@@ -101,7 +102,7 @@ Nền trang: `#121213` (bg/canvas).
 | — | Unbounded | 17 / 26px | 600 · case title | 0 | #ededef (text/primary) | 1 | “Tổng Quan Lớp” |
 | — | Afacad | 16 / 20px | 500 · case title | 0 | #a1a1aa (text/secondary) | 14 | “Sĩ số” |
 | — | Afacad | 16 / 20px | 700 · case title | 0 | #ededef (text/primary) | 7 | “Phương Nga (mẹ là Trang Quỳnh)” |
-| — | Afacad | 16 / 20px | 700 · case title | 0 | #ffffff | 1 | “BD105-I” |
+| — | Afacad | 16 / 20px | 700 · case title | 0 | #ffffff (text/on-brand) | 1 | “BD105-I” |
 | — | Afacad | 15 / 19px | 400 | 0 | #ffffff (color/neutral/white) | 6 | “• Buổi học: 8/12” |
 | — | Afacad | 15 / 19px | 500 | 0 | #ededef (text/primary) | 3 | “00:00:00” |
 | `Body/15/Regular` | Afacad | 15 / 19px | 400 | 0 | #71717a (text/muted) | 1 | “Tìm kiếm” |
@@ -491,7 +492,7 @@ Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí ·
       - [icon] **Intersect** — 196.74×223.25 · @ (281.58, 127.62) abs · file /figma/assets/9b826a90ff38.svg covers (0.61, 88.38) 17.81×130.99 `4324:15433`
       - [icon] **Vector** — 92.05×189 · @ (0, 170.25) abs · file /figma/assets/b1b0bb1977e7.svg covers (0, 45.75) 92.05×143.25 `4324:15446`
       - [icon] **Vector** — 485.25×688.35 · @ (-54.28, 531.66) abs · file /figma/assets/9d47e72677fd.svg covers (54.28, 20.59) 300×510.75 `4324:15447`
-      - [icon] **Union** — 328.37×643.79 · @ (98.87, 828.86) abs · file /figma/assets/84fbbe19934b.svg covers (0, 0) 201.13×234.14 `4324:15448`
+      - [icon] **Union** — 328.37×643.79 · @ (98.87, 828.86) abs · file /figma/assets/a82ba21a3dbc.svg covers (0, 0) 201.13×234.14 `4324:15448`
       - [icon] **Group 240002** — 324.75×297.48 · @ (-61.5, 181.5) abs · file /figma/assets/7399776d35b6.svg covers (61.5, 34.5) 263.25×262.98 `4324:15451`
       - [khối] **material-symbols:menu-rounded** — 18×18 · @ (164.25, 240.75) abs · clip · trống `4324:15472`
       - [khối] **Frame 427322029** — 36×36 · @ (9.75, 541.5) abs · clip · trống `4324:15473`
@@ -499,7 +500,7 @@ Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí ·
         - [khối] **Back chip · BD105-I** — 192×28 [FILL×HUG] · @ (0, 0) flow · row gap 8 align CENTER `4324:15475`
           - [icon] **Button** — 28×28 · @ (0, 0) flow · file /figma/assets/c4e7b8bc1454.svg `4324:15476`
           - [khối] **Button** — 69×28 [HUG×FIXED] · @ (36, 0) flow · row pad 0 8 0 8 justify CENTER align CENTER · bg #2a2a2e (bg/strong) · radius 6px `4324:15479`
-            - [chữ] “BD105-I” — 53×20 [HUG×HUG] · @ (8, 4) flow · Afacad 16/20px 700 #ffffff case title · no-wrap `4324:15480`
+            - [chữ] “BD105-I” — 53×20 [HUG×HUG] · @ (8, 4) flow · Afacad 16/20px 700 #ffffff (text/on-brand) case title · no-wrap `4324:15480`
         - [instance] **Card Menu v2 (Test)** ⟨Card Menu v2 (Test): Icon=458:1148, Label=Tổng quan, Type=Menu phụ, State=Select, Expanded=No⟩ — 192×40 [FILL×HUG] · @ (0, 36) flow · row gap 8 pad 8 4 8 8 align CENTER · bg `linear-gradient(180deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0.35) 50%, rgba(255, 255, 255, 0.25) 100%)` · radius 8px · shadow inset 0 0 0 1px rgba(255, 255, 255, 0.2), 0 1.25px 2.25px 0 rgba(0, 0, 0, 0.05) · backdrop blur(2.25px) `4899:187718`
           - [hình] **Theme · Dark BG** — 192×40 · @ (0, 0) abs · bg #2a2a2e (bg/strong) · radius 8px · shadow inset 0 0 0 1px #3f3f46 `I4899:187718;4139:138323`
           - [icon] **Icon** ⟨ICON MENU: ICON MENU=Tổng quan⟩ — 24×24 · @ (8, 8) flow · file /figma/assets/26bc8994d31a.svg `I4899:187718;2245:87910`
@@ -806,7 +807,7 @@ Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí ·
 | `/figma/assets/9b826a90ff38.svg` | svg | 17.81 × 130.99 | 4324:15433 |
 | `/figma/assets/b1b0bb1977e7.svg` | svg | 92.05 × 143.25 | 4324:15446 |
 | `/figma/assets/9d47e72677fd.svg` | svg | 300 × 510.75 | 4324:15447 |
-| `/figma/assets/84fbbe19934b.svg` | svg | 201.13 × 234.14 | 4324:15448 |
+| `/figma/assets/a82ba21a3dbc.svg` | svg | 201.13 × 234.14 | 4324:15448 |
 | `/figma/assets/7399776d35b6.svg` | svg | 263.25 × 262.98 | 4324:15451 |
 | `/figma/assets/c4e7b8bc1454.svg` | svg | 28 × 28 | 4324:15476 |
 | `/figma/assets/26bc8994d31a.svg` | svg | 24 × 24 | I4899:187718;2245:87910 |

@@ -1,0 +1,544 @@
+{
+  "pass": true,
+  "thresholds": {
+    "maxPixelDiffPercent": 0.5,
+    "maxBoxDelta": 1,
+    "maxTextBoxDelta": 2.5,
+    "colorThreshold": 0.1,
+    "aaRadius": 1,
+    "subpixel": true,
+    "maxTextNodeDiffPercent": 35
+  },
+  "pixels": {
+    "width": 1440,
+    "height": 910,
+    "mismatched": 2874,
+    "percent": 0.219,
+    "shapePercent": 0.005,
+    "textPercent": 1.289,
+    "sizeMismatch": false
+  },
+  "textNodes": [
+    {
+      "id": "5609:34440",
+      "name": "对 / 不起 / 老师",
+      "pixels": 222,
+      "percent": 9.7
+    },
+    {
+      "id": "I5609:34366;2015:30513",
+      "name": "Label",
+      "pixels": 205,
+      "percent": 8.5
+    },
+    {
+      "id": "I5609:34393;2015:30513",
+      "name": "Label",
+      "pixels": 205,
+      "percent": 8.5
+    },
+    {
+      "id": "I5609:34315;4901:220689;2245:87908",
+      "name": "Label",
+      "pixels": 184,
+      "percent": 7.8
+    },
+    {
+      "id": "I5609:34090;2015:30513",
+      "name": "Label",
+      "pixels": 101,
+      "percent": 5.8
+    },
+    {
+      "id": "I5609:34071;2015:30513",
+      "name": "Label",
+      "pixels": 93,
+      "percent": 5.4
+    },
+    {
+      "id": "I5609:34420;2015:30513",
+      "name": "Label",
+      "pixels": 137,
+      "percent": 5.1
+    },
+    {
+      "id": "I5609:34447;2015:30513",
+      "name": "Label",
+      "pixels": 137,
+      "percent": 5.1
+    },
+    {
+      "id": "I5609:34153;2015:30513",
+      "name": "Label",
+      "pixels": 122,
+      "percent": 4.9
+    },
+    {
+      "id": "I5609:34476;2015:30513",
+      "name": "Label",
+      "pixels": 122,
+      "percent": 4.9
+    },
+    {
+      "id": "I5609:33950;2015:30513",
+      "name": "Label",
+      "pixels": 101,
+      "percent": 4.5
+    },
+    {
+      "id": "I5609:33948;2015:31180",
+      "name": "Value",
+      "pixels": 148,
+      "percent": 4
+    },
+    {
+      "id": "I5609:34086;2015:30513",
+      "name": "Label",
+      "pixels": 52,
+      "percent": 3.4
+    },
+    {
+      "id": "I5609:34088;2015:30513",
+      "name": "Label",
+      "pixels": 39,
+      "percent": 3.1
+    },
+    {
+      "id": "5609:34146",
+      "name": "“学习”的拼音是什么？",
+      "pixels": 104,
+      "percent": 3
+    }
+  ],
+  "regions": [
+    {
+      "x": 104,
+      "y": 80,
+      "width": 16,
+      "height": 24,
+      "pixels": 16,
+      "node": {
+        "id": "I5609:34315;4901:220681",
+        "name": "Frame 1171274940",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 120,
+      "y": 192,
+      "width": 16,
+      "height": 8,
+      "pixels": 9,
+      "node": {
+        "id": "I5609:34315;4901:220687;2245:87904",
+        "name": "Icon",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 120,
+      "y": 872,
+      "width": 16,
+      "height": 8,
+      "pixels": 9,
+      "node": {
+        "id": "I5609:34315;4901:220699;2245:87904",
+        "name": "Icon",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 1168,
+      "y": 192,
+      "width": 16,
+      "height": 16,
+      "pixels": 7,
+      "node": {
+        "id": "5614:35389",
+        "name": "Ellipse",
+        "role": "shape"
+      }
+    },
+    {
+      "x": 1240,
+      "y": 192,
+      "width": 16,
+      "height": 16,
+      "pixels": 7,
+      "node": {
+        "id": "5614:35393",
+        "name": "Ellipse",
+        "role": "shape"
+      }
+    },
+    {
+      "x": 888,
+      "y": 200,
+      "width": 8,
+      "height": 8,
+      "pixels": 4,
+      "node": {
+        "id": "5614:35376",
+        "name": "Trắc nghiệm",
+        "role": "container"
+      }
+    },
+    {
+      "x": 1000,
+      "y": 200,
+      "width": 8,
+      "height": 8,
+      "pixels": 4,
+      "node": {
+        "id": "5614:35380",
+        "name": "Sắp xếp",
+        "role": "container"
+      }
+    },
+    {
+      "x": 1088,
+      "y": 200,
+      "width": 16,
+      "height": 8,
+      "pixels": 4,
+      "node": {
+        "id": "5614:35384",
+        "name": "Nối từ",
+        "role": "container"
+      }
+    },
+    {
+      "x": 24,
+      "y": 760,
+      "width": 8,
+      "height": 8,
+      "pixels": 4,
+      "node": {
+        "id": "I5609:34315;4901:220731",
+        "name": "LOGO CENTER",
+        "role": "icon"
+      }
+    }
+  ],
+  "boxes": {
+    "measured": 384,
+    "missing": [],
+    "withinThreshold": 384,
+    "buckets": {
+      "≤0.5px": 376,
+      "≤1px": 378,
+      "≤2px": 384,
+      "≤4px": 384,
+      ">4px": 0
+    },
+    "worst": [
+      {
+        "id": "5609:34366",
+        "name": "Atom/Tag",
+        "role": "instance",
+        "delta": 1.48,
+        "dx": 0,
+        "dy": 0,
+        "dw": 1.48,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5609:34366;2015:30513",
+        "name": "Label",
+        "role": "text",
+        "delta": 1.48,
+        "dx": 0,
+        "dy": 0,
+        "dw": 1.48,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5609:34393",
+        "name": "Atom/Tag",
+        "role": "instance",
+        "delta": 1.48,
+        "dx": 0,
+        "dy": 0,
+        "dw": 1.48,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5609:34393;2015:30513",
+        "name": "Label",
+        "role": "text",
+        "delta": 1.48,
+        "dx": 0,
+        "dy": 0,
+        "dw": 1.48,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5614:35364",
+        "name": "Tổng điểm",
+        "role": "text",
+        "delta": 1.08,
+        "dx": 0,
+        "dy": 0,
+        "dw": 1.08,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5614:35359",
+        "name": "Tổng số câu",
+        "role": "text",
+        "delta": 1.03,
+        "dx": 0,
+        "dy": 0,
+        "dw": 1.03,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5609:33941",
+        "name": "spacer",
+        "role": "container",
+        "delta": 0.77,
+        "dx": 0.36,
+        "dy": 0,
+        "dw": -0.77,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5609:34391",
+        "name": "A. Tạm biệt",
+        "role": "text",
+        "delta": 0.72,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.72,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5609:33942",
+        "name": "Atom/Button",
+        "role": "instance",
+        "delta": 0.41,
+        "dx": -0.41,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5609:33942;1430:10764",
+        "name": "Button",
+        "role": "text",
+        "delta": 0.41,
+        "dx": -0.41,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5609:33943",
+        "name": "Atom/Button",
+        "role": "instance",
+        "delta": 0.41,
+        "dx": -0.41,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5609:33943;1430:10764",
+        "name": "Button",
+        "role": "text",
+        "delta": 0.41,
+        "dx": -0.41,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5614:35355",
+        "name": "Nút Thêm câu hỏi",
+        "role": "instance",
+        "delta": 0.41,
+        "dx": -0.41,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5614:35355;1430:10764",
+        "name": "Button",
+        "role": "text",
+        "delta": 0.41,
+        "dx": -0.41,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5609:33944",
+        "name": "Nút Generate",
+        "role": "instance",
+        "delta": 0.41,
+        "dx": -0.41,
+        "dy": 0,
+        "dw": 0.41,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5609:33944;1048:1238",
+        "name": "Button",
+        "role": "text",
+        "delta": 0.41,
+        "dx": -0.41,
+        "dy": 0,
+        "dw": 0.41,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5609:33938",
+        "name": "Tiêu đề",
+        "role": "container",
+        "delta": 0.36,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.36,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5609:33940",
+        "name": "Kiểm tra cuối kỳ 3 HSK1 · 30 phút",
+        "role": "text",
+        "delta": 0.36,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.36,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6579:358740",
+        "name": "Quay lại · Tiêu đề",
+        "role": "container",
+        "delta": 0.34,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.34,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5609:33939",
+        "name": "Danh sách bài tập",
+        "role": "text",
+        "delta": 0.34,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.34,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5609:34441",
+        "name": "Sắp xếp các từ thành câu đúng",
+        "role": "text",
+        "delta": 0.34,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.34,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5609:33964",
+        "name": "Kiến thức / Kỹ năng",
+        "role": "text",
+        "delta": 0.25,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.25,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5614:35375",
+        "name": "Lưới",
+        "role": "container",
+        "delta": 0.08,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.08,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5614:35380",
+        "name": "Sắp xếp",
+        "role": "container",
+        "delta": 0.08,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.08,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5614:35382",
+        "name": "Sắp xếp",
+        "role": "text",
+        "delta": 0.08,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.08,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      }
+    ],
+    "maxDelta": 1.48,
+    "over": []
+  },
+  "failures": [],
+  "url": "http://localhost:3000/hoc-ky/kiem-tra/danh-sach-bai-tap-sau-khi-tao",
+  "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
+  "consoleErrors": [],
+  "rootFound": true
+}

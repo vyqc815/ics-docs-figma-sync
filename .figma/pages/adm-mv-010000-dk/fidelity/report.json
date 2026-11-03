@@ -12,19 +12,13 @@
   "pixels": {
     "width": 1440,
     "height": 810,
-    "mismatched": 1955,
-    "percent": 0.168,
+    "mismatched": 1534,
+    "percent": 0.132,
     "shapePercent": 0.074,
-    "textPercent": 1.666,
+    "textPercent": 1.021,
     "sizeMismatch": false
   },
   "textNodes": [
-    {
-      "id": "I4056:130524;2245:87864",
-      "name": "Label",
-      "pixels": 438,
-      "percent": 17.5
-    },
     {
       "id": "I4056:130525;2245:87820",
       "name": "Label",
@@ -96,6 +90,12 @@
       "name": "Label",
       "pixels": 22,
       "percent": 0.9
+    },
+    {
+      "id": "I4056:130524;2245:87864",
+      "name": "Label",
+      "pixels": 17,
+      "percent": 0.7
     },
     {
       "id": "I4056:130447;1048:1230",
@@ -501,7 +501,7 @@
     "over": []
   },
   "failures": [],
-  "url": "http://localhost:3108/move-video/xac-minh-gmail-dk",
+  "url": "http://localhost:3000/move-video/xac-minh-gmail-dk",
   "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
   "consoleErrors": [],
   "rootFound": true

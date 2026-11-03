@@ -5,7 +5,7 @@
 > **Nguồn:** PLS-ICS T8/2026 ›     ├─ LỊCH SỬ VÀ LƯƠNG › GV-LS-010000-DK — Lịch sử & lương / Buổi dạy (`4056:149555`, file `rRVs5HX0kIHffbS0V40djG`)  
 > **Route:** `/lich-su-luong/buoi-day-dk`  
 > **Khung thiết kế:** 1440 × 1057 px  
-> **Xuất lúc:** 2026-11-02T03:54:58.469Z  
+> **Xuất lúc:** 2026-11-03T01:10:19.396Z  
 > **Spec đầy đủ (giá trị chính xác từng node):** `../../../.figma/pages/gv-ls-010000-dk/page-spec.json`
 
 ## 1. Tổng quan
@@ -25,29 +25,29 @@ Nền trang: `#121213` (bg/canvas).
 
 | Token | Biến CSS | Giá trị | Trỏ tới | Bộ / mode |
 | --- | --- | --- | --- | --- |
-| `bg/brand-tint` | `--bg-brand-tint` | `#fff7ed` | color/extended/fff7ed | Theme · Semantic / Light |
-| `bg/brand-tint-strong` | `--bg-brand-tint-strong` | `#ffedd5` | color/extended/ffedd5 | Theme · Semantic / Light |
-| `bg/canvas` | `--bg-canvas` | `#f8fafc` | color/extended/f8fafc | Theme · Semantic / Light |
-| `bg/danger` | `--bg-danger` | `#fef2f2` | color/extended/fef2f2 | Theme · Semantic / Light |
-| `bg/info` | `--bg-info` | `#f0f9ff` | color/extended/f0f9ff | Theme · Semantic / Light |
-| `bg/strong` | `--bg-strong` | `#e2e8f0` | color/border/default | Theme · Semantic / Light |
-| `bg/subtle` | `--bg-subtle` | `#f1f5f9` | color/surface/input | Theme · Semantic / Light |
-| `bg/success` | `--bg-success` | `#ecfdf5` | color/extended/ecfdf5 | Theme · Semantic / Light |
-| `bg/surface` | `--bg-surface` | `#ffffff` | color/neutral/white | Theme · Semantic / Light |
+| `bg/brand-tint` | `--bg-brand-tint` | `#102218` |  | Theme · Semantic / Dark · Minimal |
+| `bg/brand-tint-strong` | `--bg-brand-tint-strong` | `#153020` |  | Theme · Semantic / Dark · Minimal |
+| `bg/canvas` | `--bg-canvas` | `#121213` |  | Theme · Semantic / Dark · Minimal |
+| `bg/danger` | `--bg-danger` | `#2a1618` |  | Theme · Semantic / Dark · Minimal |
+| `bg/info` | `--bg-info` | `#10202e` |  | Theme · Semantic / Dark · Minimal |
+| `bg/strong` | `--bg-strong` | `#2a2a2e` |  | Theme · Semantic / Dark · Minimal |
+| `bg/subtle` | `--bg-subtle` | `#202023` |  | Theme · Semantic / Dark · Minimal |
+| `bg/success` | `--bg-success` | `#12251a` |  | Theme · Semantic / Dark · Minimal |
+| `bg/surface` | `--bg-surface` | `#18181a` |  | Theme · Semantic / Dark · Minimal |
 | `bố cục/lề trên dưới` | `--bo-cuc-le-tren-duoi` | `24` | spacing/24 | Number Tokens / Mode 1 |
-| `border/brand` | `--border-brand` | `#fed7aa` | color/extended/fed7aa | Theme · Semantic / Light |
-| `border/default` | `--border-default` | `#e2e8f0` | color/border/default | Theme · Semantic / Light |
-| `border/strong` | `--border-strong` | `#cbd5e1` | color/extended/cbd5e1 | Theme · Semantic / Light |
-| `border/subtle` | `--border-subtle` | `#f1f5f9` | color/border/subtle | Theme · Semantic / Light |
-| `brand/primary` | `--brand-primary` | `#e65100` | color/brand/orange | Theme · Semantic / Light |
-| `brand/primary-soft` | `--brand-primary-soft` | `#ff9537` | color/extended/ff9537 | Theme · Semantic / Light |
-| `chrome/bg` | `--chrome-bg` | `#ff7700` | color/extended/ff7700 | Theme · Semantic / Light |
+| `border/brand` | `--border-brand` | `#1e4d31` |  | Theme · Semantic / Dark · Minimal |
+| `border/default` | `--border-default` | `#27272a` |  | Theme · Semantic / Dark · Minimal |
+| `border/strong` | `--border-strong` | `#3f3f46` |  | Theme · Semantic / Dark · Minimal |
+| `border/subtle` | `--border-subtle` | `#1f1f22` |  | Theme · Semantic / Dark · Minimal |
+| `brand/primary` | `--brand-primary` | `#16a34a` |  | Theme · Semantic / Dark · Minimal |
+| `brand/primary-soft` | `--brand-primary-soft` | `#4ade80` |  | Theme · Semantic / Dark · Minimal |
+| `chrome/bg` | `--chrome-bg` | `#0b0b0c` |  | Theme · Semantic / Dark · Minimal |
 | `color/brand/orange` | `--color-brand-orange` | `#e65100` |  | Color Tokens / Light |
 | `color/neutral/white` | `--color-neutral-white` | `#ffffff` |  | Color Tokens / Light |
 | `color/text/secondary` | `--color-text-secondary` | `#64748b` |  | Color Tokens / Light |
-| `org/border` | `--org-border` | `#ffffff` |  | Theme · Semantic / Light |
-| `org/sakumi/bg` | `--org-sakumi-bg` | `#e33f64` |  | Theme · Semantic / Light |
-| `org/sakumi/fg` | `--org-sakumi-fg` | `#ffffff` |  | Theme · Semantic / Light |
+| `org/border` | `--org-border` | `#3f3f46` | border/strong | Theme · Semantic / Dark · Minimal |
+| `org/sakumi/bg` | `--org-sakumi-bg` | `#202023` | bg/subtle | Theme · Semantic / Dark · Minimal |
+| `org/sakumi/fg` | `--org-sakumi-fg` | `#f0587b` |  | Theme · Semantic / Dark · Minimal |
 | `radius/6` | `--radius-6` | `6` |  | Number Tokens / Mode 1 |
 | `radius/64` | `--radius-64` | `64` |  | Number Tokens / Mode 1 |
 | `radius/8` | `--radius-8` | `8` |  | Number Tokens / Mode 1 |
@@ -55,10 +55,10 @@ Nền trang: `#121213` (bg/canvas).
 | `spacing/12` | `--spacing-12` | `12` |  | Number Tokens / Mode 1 |
 | `spacing/4` | `--spacing-4` | `4` |  | Number Tokens / Mode 1 |
 | `spacing/8` | `--spacing-8` | `8` |  | Number Tokens / Mode 1 |
-| `text/primary` | `--text-primary` | `#334155` | color/text/primary | Theme · Semantic / Light |
-| `text/secondary` | `--text-secondary` | `#64748b` | color/text/secondary | Theme · Semantic / Light |
-| `theme/is-dark` | `--theme-is-dark` | `false` |  | Theme · Semantic / Light |
-| `tone/blue/border` | `--tone-blue-border` | `#93c5fd` |  | Theme · Semantic / Light |
+| `text/primary` | `--text-primary` | `#ededef` |  | Theme · Semantic / Dark · Minimal |
+| `text/secondary` | `--text-secondary` | `#a1a1aa` |  | Theme · Semantic / Dark · Minimal |
+| `theme/is-dark` | `--theme-is-dark` | `true` |  | Theme · Semantic / Dark · Minimal |
+| `tone/blue/border` | `--tone-blue-border` | `#28487d` |  | Theme · Semantic / Dark · Minimal |
 
 **Style Figma đang dùng:**
 

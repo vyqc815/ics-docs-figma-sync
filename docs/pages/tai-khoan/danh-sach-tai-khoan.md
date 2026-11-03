@@ -5,7 +5,7 @@
 > **Nguồn:** PLS-ICS T8/2026 ›     └─ QUẢN LÝ TÀI KHOẢN › MST-TK-010000 — Tài khoản / Danh sách tài khoản (`2008:35070`, file `rRVs5HX0kIHffbS0V40djG`)  
 > **Route:** `/tai-khoan/danh-sach-tai-khoan`  
 > **Khung thiết kế:** 1440 × 964 px  
-> **Xuất lúc:** 2026-11-02T03:00:04.975Z  
+> **Xuất lúc:** 2026-11-03T02:58:25.264Z  
 > **Spec đầy đủ (giá trị chính xác từng node):** `../../../.figma/pages/mst-tk-010000/page-spec.json`
 
 ## 1. Tổng quan

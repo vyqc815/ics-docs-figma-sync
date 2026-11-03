@@ -1,8 +1,8 @@
 # Fidelity: ADM-GC-010000-DK — Gift code / Danh sách gift code
 
-- URL: `http://localhost:3108/gift-code/danh-sach-gift-code-dk`
+- URL: `http://localhost:3000/gift-code/danh-sach-gift-code-dk`
 - Verdict: **PASS**
-- Pixels outside text: **0.003%** differ (limit 0.5%); all pixels: 0.209%; inside text boxes: 1.891% (glyph rendering)
+- Pixels outside text: **0.003%** differ (limit 0.5%); all pixels: 0.18%; inside text boxes: 1.625% (glyph rendering)
 - Boxes: 302/302 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 302, ≤1px: 302, ≤2px: 302, ≤4px: 302, >4px: 0
 
 ## Pixel regions (largest first)
@@ -16,7 +16,6 @@
 
 | Text | Differing |
 | --- | --- |
-| Label (`I4056:130151;2245:87864`) | 14.7% |
 | 14.09.2026 (`I4056:130269;3567:39161`) | 6.3% |
 | 14.09.2026 (`I4056:130308;3567:39161`) | 6.3% |
 | 14.09.2026 (`I4056:130282;3567:39161`) | 5.6% |
@@ -31,6 +30,7 @@
 | Trạng thái (`4056:130234`) | 2.8% |
 | Label (`I4056:130154;2245:87820`) | 2.7% |
 | Số tháng miễn phí (`4056:130230`) | 2.6% |
+| Label (`I4056:130146;2245:87820`) | 2.4% |
 
 ## Largest box differences
 

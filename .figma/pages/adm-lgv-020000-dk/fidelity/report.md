@@ -1,8 +1,8 @@
 # Fidelity: ADM-LGV-020000-DK — Lương / Đề xuất tăng lương
 
-- URL: `http://localhost:3108/luong/de-xuat-tang-luong-dk`
+- URL: `http://localhost:3000/luong/de-xuat-tang-luong-dk`
 - Verdict: **PASS**
-- Pixels outside text: **0.035%** differ (limit 0.5%); all pixels: 0.219%; inside text boxes: 0.965% (glyph rendering)
+- Pixels outside text: **0.035%** differ (limit 0.5%); all pixels: 0.169%; inside text boxes: 0.702% (glyph rendering)
 - Boxes: 317/317 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 313, ≤1px: 315, ≤2px: 317, ≤4px: 317, >4px: 0
 
 ## Pixel regions (largest first)
@@ -30,7 +30,6 @@
 
 | Text | Differing |
 | --- | --- |
-| Label (`I4899:118220;2245:87864`) | 24.6% |
 | Value (`I4899:118222;1981:25753;1971:8814`) | 4.7% |
 | 15.000.000 (`I4899:118619;2812:34656`) | 4.5% |
 | 15.000.000 (`I4899:118598;2812:34656`) | 4.3% |
@@ -45,6 +44,7 @@
 | Label (`I4899:118217;2245:87820`) | 2.7% |
 | Label (`I4899:118212;2245:87820`) | 2.5% |
 | Label (`I4899:118213;2245:87768`) | 2.4% |
+| Label (`I4899:118224;2245:87768`) | 2.2% |
 
 ## Largest box differences
 

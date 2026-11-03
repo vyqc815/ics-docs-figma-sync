@@ -12,19 +12,13 @@
   "pixels": {
     "width": 1440,
     "height": 810,
-    "mismatched": 2530,
-    "percent": 0.217,
+    "mismatched": 2006,
+    "percent": 0.172,
     "shapePercent": 0.028,
-    "textPercent": 1.34,
+    "textPercent": 1.021,
     "sizeMismatch": false
   },
   "textNodes": [
-    {
-      "id": "I4343:57369;2245:87864",
-      "name": "Label",
-      "pixels": 557,
-      "percent": 22.3
-    },
     {
       "id": "I4343:57368;2245:87858",
       "name": "Label",
@@ -108,6 +102,12 @@
       "name": "Label",
       "pixels": 37,
       "percent": 1.4
+    },
+    {
+      "id": "I4343:57365;2245:87820",
+      "name": "Label",
+      "pixels": 33,
+      "percent": 1.3
     }
   ],
   "regions": [
@@ -465,7 +465,7 @@
     "over": []
   },
   "failures": [],
-  "url": "http://localhost:3108/khao-sat/giao-khao-sat/danh-sach-nguoi-duoc-giao-dk",
+  "url": "http://localhost:3000/khao-sat/giao-khao-sat/danh-sach-nguoi-duoc-giao-dk",
   "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
   "consoleErrors": [],
   "rootFound": true

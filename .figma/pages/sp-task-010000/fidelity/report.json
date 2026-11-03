@@ -12,55 +12,13 @@
   "pixels": {
     "width": 1440,
     "height": 1255,
-    "mismatched": 2454,
-    "percent": 0.136,
+    "mismatched": 2034,
+    "percent": 0.113,
     "shapePercent": 0.003,
-    "textPercent": 0.656,
+    "textPercent": 0.541,
     "sizeMismatch": false
   },
   "textNodes": [
-    {
-      "id": "I3845:49820;1391:14476",
-      "name": "80%",
-      "pixels": 74,
-      "percent": 26.4
-    },
-    {
-      "id": "I3845:49804;1308:6749",
-      "name": "100%",
-      "pixels": 83,
-      "percent": 24.7
-    },
-    {
-      "id": "I3845:49812;1308:6749",
-      "name": "100%",
-      "pixels": 83,
-      "percent": 24.7
-    },
-    {
-      "id": "I3845:49796;1308:6706",
-      "name": "0%",
-      "pixels": 45,
-      "percent": 23
-    },
-    {
-      "id": "I3845:49828;1308:6706",
-      "name": "0%",
-      "pixels": 45,
-      "percent": 23
-    },
-    {
-      "id": "I3845:49836;1308:6706",
-      "name": "0%",
-      "pixels": 45,
-      "percent": 23
-    },
-    {
-      "id": "I3845:49844;1308:6706",
-      "name": "0%",
-      "pixels": 45,
-      "percent": 23
-    },
     {
       "id": "I3857:72447;1590:881",
       "name": "Th2, 14.09.2026",
@@ -108,6 +66,48 @@
       "name": "Tỷ lệ đi học trên 80%",
       "pixels": 318,
       "percent": 2.2
+    },
+    {
+      "id": "I3857:72487;2808:48145",
+      "name": "Nhãn trường",
+      "pixels": 21,
+      "percent": 2
+    },
+    {
+      "id": "I4915:257614;4901:224377;3857:67911;1971:8814",
+      "name": "Value",
+      "pixels": 4,
+      "percent": 1.6
+    },
+    {
+      "id": "3857:72445",
+      "name": "Nhắc nhở học viên trước buổi học tại GG Chat",
+      "pixels": 227,
+      "percent": 1.6
+    },
+    {
+      "id": "I4915:257614;4901:224376;3857:67911;1971:8814",
+      "name": "Value",
+      "pixels": 3,
+      "percent": 1.2
+    },
+    {
+      "id": "3845:49818",
+      "name": "Ngày mai (07.10.2026)",
+      "pixels": 50,
+      "percent": 1.2
+    },
+    {
+      "id": "3845:49802",
+      "name": "Hôm qua (05.10.2026)",
+      "pixels": 44,
+      "percent": 1
+    },
+    {
+      "id": "3857:72434",
+      "name": "[Urgent] Hỗ trợ vấn đề của khách",
+      "pixels": 174,
+      "percent": 0.9
     }
   ],
   "regions": [
@@ -465,7 +465,7 @@
     "over": []
   },
   "failures": [],
-  "url": "http://localhost:3108/quy-trinh/task-hom-nay",
+  "url": "http://localhost:3000/quy-trinh/task-hom-nay",
   "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
   "consoleErrors": [],
   "rootFound": true

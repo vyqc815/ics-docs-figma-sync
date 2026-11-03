@@ -1,6 +1,6 @@
 # Fidelity: CD-KH-020200 — Chi tiết khoá học / Lộ trình
 
-- URL: `http://localhost:3108/chi-tiet-khoa-hoc/lo-trinh`
+- URL: `http://localhost:3000/chi-tiet-khoa-hoc/lo-trinh`
 - Verdict: **PASS**
 - Pixels outside text: **0.003%** differ (limit 0.5%); all pixels: 0.32%; inside text boxes: 2.34% (glyph rendering)
 - Boxes: 1133/1133 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 1130, ≤1px: 1130, ≤2px: 1133, ≤4px: 1133, >4px: 0

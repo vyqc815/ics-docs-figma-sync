@@ -1,0 +1,435 @@
+{
+  "pass": true,
+  "thresholds": {
+    "maxPixelDiffPercent": 0.5,
+    "maxBoxDelta": 1,
+    "maxTextBoxDelta": 2.5,
+    "colorThreshold": 0.1,
+    "aaRadius": 1,
+    "subpixel": true,
+    "maxTextNodeDiffPercent": 35
+  },
+  "pixels": {
+    "width": 1440,
+    "height": 810,
+    "mismatched": 1145,
+    "percent": 0.098,
+    "shapePercent": 0.002,
+    "textPercent": 0.652,
+    "sizeMismatch": false
+  },
+  "textNodes": [
+    {
+      "id": "5019:5944",
+      "name": "Tên khảo sát",
+      "pixels": 564,
+      "percent": 9.7
+    },
+    {
+      "id": "I5019:5889;4899:200273;2245:87858",
+      "name": "Label",
+      "pixels": 159,
+      "percent": 6.4
+    },
+    {
+      "id": "I7074:397030;1048:1255",
+      "name": "Badge",
+      "pixels": 47,
+      "percent": 4.1
+    },
+    {
+      "id": "I7074:397086;1048:1255",
+      "name": "Badge",
+      "pixels": 47,
+      "percent": 4.1
+    },
+    {
+      "id": "I7074:397004;1048:1238",
+      "name": "Button",
+      "pixels": 22,
+      "percent": 1.3
+    },
+    {
+      "id": "I7074:397018;1048:1238",
+      "name": "Button",
+      "pixels": 22,
+      "percent": 1.3
+    },
+    {
+      "id": "I7074:397046;1048:1238",
+      "name": "Button",
+      "pixels": 22,
+      "percent": 1.3
+    },
+    {
+      "id": "I7074:397102;1048:1238",
+      "name": "Button",
+      "pixels": 22,
+      "percent": 1.3
+    },
+    {
+      "id": "I5019:5946;1048:1238",
+      "name": "Button",
+      "pixels": 20,
+      "percent": 1.1
+    },
+    {
+      "id": "5019:6092",
+      "name": "Tên",
+      "pixels": 42,
+      "percent": 1
+    },
+    {
+      "id": "5019:6106",
+      "name": "Tên",
+      "pixels": 45,
+      "percent": 1
+    },
+    {
+      "id": "I5019:5889;4899:200259;2245:87768",
+      "name": "Label",
+      "pixels": 16,
+      "percent": 0.6
+    },
+    {
+      "id": "I5019:5889;4899:200275;2245:87820",
+      "name": "Label",
+      "pixels": 14,
+      "percent": 0.5
+    },
+    {
+      "id": "7074:396985",
+      "name": "Trung tâm được giao",
+      "pixels": 16,
+      "percent": 0.5
+    },
+    {
+      "id": "I5019:5889;4899:200272;2245:87829",
+      "name": "Label",
+      "pixels": 10,
+      "percent": 0.4
+    }
+  ],
+  "regions": [],
+  "boxes": {
+    "measured": 309,
+    "missing": [],
+    "withinThreshold": 309,
+    "buckets": {
+      "≤0.5px": 308,
+      "≤1px": 308,
+      "≤2px": 309,
+      "≤4px": 309,
+      ">4px": 0
+    },
+    "worst": [
+      {
+        "id": "5019:5944",
+        "name": "Tên khảo sát",
+        "role": "text",
+        "delta": 1.83,
+        "dx": 0,
+        "dy": 0,
+        "dw": 1.83,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "7074:396985",
+        "name": "Trung tâm được giao",
+        "role": "text",
+        "delta": 0.2,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.2,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5019:5947",
+        "name": "Tabs · Giao / Kết quả",
+        "role": "container",
+        "delta": 0.13,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.13,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5019:5949",
+        "name": "Tab · Kết quả khảo sát",
+        "role": "instance",
+        "delta": 0.13,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.13,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5019:5949;2177:28927",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.13,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.13,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5019:5949;2177:28928",
+        "name": "Chi tiết NV",
+        "role": "text",
+        "delta": 0.13,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.13,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5019:6108",
+        "name": "Số lượng",
+        "role": "instance",
+        "delta": 0.09,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.09,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5019:6108;1050:2411",
+        "name": "Badge",
+        "role": "text",
+        "delta": 0.09,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.09,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5019:5889;4915:215921",
+        "name": "Frame 1171274926",
+        "role": "icon",
+        "delta": 0.02,
+        "dx": 0,
+        "dy": -0.02,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5019:5889;4915:215906",
+        "name": "Left: ICS Logo & Toggle",
+        "role": "container",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": -0.01,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5019:5889;4915:215907",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": -0.01,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5019:5889;4915:215908",
+        "name": "Navigation / Sidebar Menu / Light",
+        "role": "icon",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": -0.01,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5019:5889;4915:215920",
+        "name": "v20.07.2026_17:30",
+        "role": "text",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": -0.01,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5019:6087;4885:58949",
+        "name": "Chevron",
+        "role": "icon",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": -0.01,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5019:6101;4885:58940",
+        "name": "Chevron",
+        "role": "icon",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": -0.01,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5019:5889",
+        "name": "Sidebar · MENU - ADMIN",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 1,
+        "textDriven": false
+      },
+      {
+        "id": "I5019:5889;4915:215856",
+        "name": "Frame 427322079",
+        "role": "icon",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 1,
+        "textDriven": false
+      },
+      {
+        "id": "I5019:5889;4915:215923",
+        "name": "Nav Items",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 1,
+        "textDriven": false
+      },
+      {
+        "id": "I5019:5889;4915:215924",
+        "name": "MENU - ADMIN (Tổng)",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 1,
+        "textDriven": false
+      },
+      {
+        "id": "I5019:5889;4899:200248",
+        "name": "Card Menu v2 (Test)",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5019:5889;4899:200248;2245:87821",
+        "name": "Content",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5019:5889;4899:200248;2245:87816",
+        "name": "Icon",
+        "role": "icon",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5019:5889;4899:200248;2245:87820",
+        "name": "Label",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5019:5889;4899:200248;2245:87822",
+        "name": "Chevron",
+        "role": "icon",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5019:5889;4899:200259",
+        "name": "Card Menu v2 (Test)",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      }
+    ],
+    "maxDelta": 1.83,
+    "over": []
+  },
+  "failures": [],
+  "url": "http://localhost:3000/khao-sat/giao-khao-sat-hoc-vien/dropdown-chon-loai-giao-khao-sat",
+  "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
+  "consoleErrors": [],
+  "rootFound": true
+}

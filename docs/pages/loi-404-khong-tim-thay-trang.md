@@ -5,7 +5,7 @@
 > **Nguồn:** PLS-ICS T8/2026 › EMPTY / ERROR STATES › SYS-ERR-020000 — Lỗi 404 · Không tìm thấy trang (`5789:152813`, file `rRVs5HX0kIHffbS0V40djG`)  
 > **Route:** `/loi-404-khong-tim-thay-trang`  
 > **Khung thiết kế:** 1440 × 810 px  
-> **Xuất lúc:** 2026-11-02T02:59:15.791Z  
+> **Xuất lúc:** 2026-11-02T18:19:01.653Z  
 > **Spec đầy đủ (giá trị chính xác từng node):** `../../.figma/pages/sys-err-020000/page-spec.json`
 
 ## 1. Tổng quan
@@ -26,11 +26,15 @@ Nền trang: `linear-gradient(#f8fafc, #f8fafc), linear-gradient(#ffffff, #fffff
 
 | Token | Biến CSS | Giá trị | Trỏ tới | Bộ / mode |
 | --- | --- | --- | --- | --- |
+| `bg/canvas` | `--bg-canvas` | `#f8fafc` | color/extended/f8fafc | Theme · Semantic / Light |
 | `bố cục/khoảng cách khối` | `--bo-cuc-khoang-cach-khoi` | `16` | spacing/16 | Number Tokens / Mode 1 |
 | `bố cục/lề hai bên` | `--bo-cuc-le-hai-ben` | `16` | spacing/16 | Number Tokens / Mode 1 |
 | `bố cục/lề trên dưới` | `--bo-cuc-le-tren-duoi` | `24` | spacing/24 | Number Tokens / Mode 1 |
+| `brand/primary` | `--brand-primary` | `#e65100` | color/brand/orange | Theme · Semantic / Light |
 | `color/brand/orange` | `--color-brand-orange` | `#e65100` |  | Color Tokens / Light |
+| `color/extended/1e293b` | `--color-extended-1e293b` | `#1e293b` |  | Color Tokens / Light |
 | `color/extended/fed7aa` | `--color-extended-fed7aa` | `#fed7aa` |  | Color Tokens / Light |
+| `color/neutral/500` | `--color-neutral-500` | `#757575` |  | Color Tokens / Light |
 | `color/neutral/white` | `--color-neutral-white` | `#ffffff` |  | Color Tokens / Light |
 | `radius/12` | `--radius-12` | `12` |  | Number Tokens / Mode 1 |
 | `radius/8` | `--radius-8` | `8` |  | Number Tokens / Mode 1 |
@@ -61,11 +65,11 @@ Nền trang: `linear-gradient(#f8fafc, #f8fafc), linear-gradient(#ffffff, #fffff
 
 | Style | Font family | Cỡ / line-height | Độ đậm | Letter-spacing | Màu | Số lần | Ví dụ |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| — | Unbounded | 72 / 89px | 500 | 0.02em | #e65100 | 1 | “404” |
-| — | Unbounded | 24 / 30px | 500 | 0 | #1e293b | 1 | “Không tìm thấy trang” |
+| — | Unbounded | 72 / 89px | 500 | 0.02em | #e65100 (brand/primary) | 1 | “404” |
+| — | Unbounded | 24 / 30px | 500 | 0 | #1e293b (color/extended/1e293b) | 1 | “Không tìm thấy trang” |
 | `Body/17/Bold` | Afacad | 17 / 21px | 700 | 0 | #e65100 (color/brand/orange) | 1 | “Quay lại” |
 | `Body/17/Bold` | Afacad | 17 / 21px | 700 | 0 | #ffffff (color/neutral/white) | 1 | “Về trang chủ” |
-| — | Afacad | 15 / 23px | 400 | 0 | #757575 | 1 | “Trang bạn tìm không tồn tại, đã bị xoá …” |
+| — | Afacad | 15 / 23px | 400 | 0 | #757575 (color/neutral/500) | 1 | “Trang bạn tìm không tồn tại, đã bị xoá …” |
 | `Body/13/SemiBold` | Afacad | 13 / 16px | 600 | 0 | #ffffff (color/neutral/white) | 3 | “20%” |
 | — | Unbounded | 13 / 16px | 600 | 0 | #ffffff (color/neutral/white) | 1 | “Admin Đắc Nhân” |
 | — | Afacad | 13 / 16px | 500 | 0 | #ffffff (color/neutral/white) | 1 | “admin@gmail.com” |
@@ -197,12 +201,12 @@ Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí ·
           - [icon] **Icon** ⟨ICON MENU: ICON MENU=Tương tác⟩ — 28×28 · @ (8, 8) flow · file /figma/sys-err-020000/icon-I5789-152949-4899-195460-2245-87764.svg `I5789:152949;4899:195460;2245:87764`
           - [chữ] “tương tác” — 158×15 [FILL×HUG] · @ (44, 14.5) flow · Unbounded 12/15px 600 #ffffff (color/neutral/white) case title `I5789:152949;4899:195460;2245:87768`
       - [icon] **LOGO CENTER** ⟨LOGO CENTER: Property 1=ICS, Property 2=yes⟩ — 146×54 · @ (32, 662) flow · file /figma/assets/cbf5bdaf982b.svg covers (-4, 0) 154×62 `I5789:152949;4915:212082`
-  - [khối] **MainContent** — 1206×746 · @ (234, 64) abs · column gap 16 pad 24 16 24 16 justify CENTER align CENTER · bg #f8fafc · clip `5789:152950`
+  - [khối] **MainContent** — 1206×746 · @ (234, 64) abs · column gap 16 pad 24 16 24 16 justify CENTER align CENTER · bg #f8fafc (bg/canvas) · clip `5789:152950`
     - [khối] **Trạng thái · 404** — 460×459.81 [HUG×HUG] · @ (373, 143.1) flow · column gap 12 align CENTER · clip `5789:155539`
       - [icon] **Empty State / Illustration** ⟨Empty State / Illustration: Type=Không tìm thấy, Trung tâm=Sakumi⟩ — 260×198.81 · @ (100, 0) flow · file /figma/assets/233d2a34d81c.svg `5789:155540`
-      - [chữ] “404” — 189×89 [HUG×HUG] · @ (135.5, 210.81) flow · Unbounded 72/89px 500 #e65100 letter-spacing 0.02em · no-wrap `5789:155569`
-      - [chữ] “Không tìm thấy trang” — 313×30 [HUG×HUG] · @ (73.5, 311.81) flow · Unbounded 24/30px 500 #1e293b · text-align center · no-wrap `5789:155570`
-      - [chữ] “Trang bạn tìm không tồn tại, đã bị xoá hoặc đường dẫn không đúng. Kiểm tra lại đường dẫn hoặc quay về trang chủ.” — 460×46 [FIXED×HUG] · @ (0, 353.81) flow · Afacad 15/23px 400 #757575 · text-align center `5789:155571`
+      - [chữ] “404” — 189×89 [HUG×HUG] · @ (135.5, 210.81) flow · Unbounded 72/89px 500 #e65100 (brand/primary) letter-spacing 0.02em · no-wrap `5789:155569`
+      - [chữ] “Không tìm thấy trang” — 313×30 [HUG×HUG] · @ (73.5, 311.81) flow · Unbounded 24/30px 500 #1e293b (color/extended/1e293b) · text-align center · no-wrap `5789:155570`
+      - [chữ] “Trang bạn tìm không tồn tại, đã bị xoá hoặc đường dẫn không đúng. Kiểm tra lại đường dẫn hoặc quay về trang chủ.” — 460×46 [FIXED×HUG] · @ (0, 353.81) flow · Afacad 15/23px 400 #757575 (color/neutral/500) · text-align center `5789:155571`
       - [khối] **Nút** — 254×48 [HUG×HUG] · @ (103, 411.81) flow · row gap 12 pad 12 0 0 0 · clip `5789:155572`
         - [instance] **Nút · Quay lại** ⟨Atom/Button: Label=Quay lại, Type=Outlined, Size=Medium⟩ — 108×36 [HUG×FIXED] · @ (0, 12) flow · row pad 10 24 10 24 align CENTER · bg #ffffff · radius 8px · border 1px solid #e65100 (color/brand/orange) · shadow 1px 1px 6px 0 rgba(230, 81, 0, 0.35), 0 0 4px 0 rgba(230, 81, 0, 0.05) `5789:155573`
           - [chữ] “Quay lại” — 58×21 [HUG×HUG] · @ (25, 7.5) flow · Afacad 17/21px 700 #e65100 (color/brand/orange) · no-wrap `I5789:155573;1430:10760`
@@ -375,7 +379,8 @@ Những chỗ CSS không thể tái hiện y hệt Figma (đã dùng cách gần
 - `ASSET_EXPORT_FAILED` — **Icon** (`I5789:152949;4899:195457;2245:87764`): Asset a36 (svg) could not be exported: Error: Failed to export node. This node may not have any visible layers.
 - `ASSET_EXPORT_FAILED` — **Icon** (`I5789:152949;4899:195458;2245:87764`): Asset a37 (svg) could not be exported: Error: Failed to export node. This node may not have any visible layers.
 - `ASSET_EXPORT_FAILED` — **Icon** (`I5789:152949;4899:195459;2245:87764`): Asset a38 (svg) could not be exported: Error: Failed to export node. This node may not have any visible layers.
-- `ASSET_EXPORT_FAILED` — **Icon** (`I5789:152949;4899:195460;2245:87764`): Asset a39 (svg) could not be exported: Error: Failed to export node. This node may not have any visible layers.
+- `ASSET_EXPORT_FAILED` — **Icon** (`I5789:152949;4899:195460;2245:87764`): Asset a39 (svg) could not be exported: Error: Unable to establish connection to Figma after 10 seconds. Please check your internet connection.
+- `ASSET_EXPORT_STALE` — **LOGO CENTER** (`I5789:152949;4915:212082`): Asset a40 (svg) could not be re-exported (Error: Unable to establish connection to Figma after 10 seconds. Please check your internet connection.); kept the file from the previous export.
 
 ## 10. Hướng dẫn dựng lại (cho người và AI)
 

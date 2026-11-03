@@ -12,43 +12,13 @@
   "pixels": {
     "width": 1440,
     "height": 810,
-    "mismatched": 2888,
-    "percent": 0.248,
+    "mismatched": 2300,
+    "percent": 0.197,
     "shapePercent": 0.005,
-    "textPercent": 2.37,
+    "textPercent": 1.877,
     "sizeMismatch": false
   },
   "textNodes": [
-    {
-      "id": "I4056:124948;1308:6706",
-      "name": "0%",
-      "pixels": 51,
-      "percent": 26
-    },
-    {
-      "id": "I4056:124987;1308:6706",
-      "name": "0%",
-      "pixels": 51,
-      "percent": 26
-    },
-    {
-      "id": "I4056:124929;1391:14476",
-      "name": "80%",
-      "pixels": 66,
-      "percent": 23.6
-    },
-    {
-      "id": "I4056:124968;1391:14476",
-      "name": "80%",
-      "pixels": 66,
-      "percent": 23.6
-    },
-    {
-      "id": "I4056:125068;2245:87864",
-      "name": "Label",
-      "pixels": 373,
-      "percent": 14.9
-    },
     {
       "id": "4056:124943",
       "name": "Nhập Môn Tiếng Trung (NEW - v202...)",
@@ -108,6 +78,36 @@
       "name": "Label",
       "pixels": 62,
       "percent": 2.5
+    },
+    {
+      "id": "I4056:125074;2245:87768",
+      "name": "Label",
+      "pixels": 69,
+      "percent": 2.4
+    },
+    {
+      "id": "I4056:124894;2015:36008",
+      "name": "Value",
+      "pixels": 24,
+      "percent": 1.9
+    },
+    {
+      "id": "I4056:124944;1350:13172",
+      "name": "6/20 Buổi",
+      "pixels": 23,
+      "percent": 1.8
+    },
+    {
+      "id": "I4056:124985;1308:10497",
+      "name": "B",
+      "pixels": 16,
+      "percent": 1.8
+    },
+    {
+      "id": "I4056:125070;2245:87858",
+      "name": "Label",
+      "pixels": 45,
+      "percent": 1.8
     }
   ],
   "regions": [
@@ -501,7 +501,7 @@
     "over": []
   },
   "failures": [],
-  "url": "http://localhost:3108/chi-tiet-giao-vien/danh-sach-lop-dk",
+  "url": "http://localhost:3000/chi-tiet-giao-vien/danh-sach-lop-dk",
   "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
   "consoleErrors": [],
   "rootFound": true

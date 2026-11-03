@@ -1,8 +1,8 @@
 # Fidelity: SP-TASK-030000 — Quy trình / Ca trực
 
-- URL: `http://localhost:3108/quy-trinh/ca-truc`
+- URL: `http://localhost:3000/quy-trinh/ca-truc`
 - Verdict: **PASS**
-- Pixels outside text: **0.003%** differ (limit 0.5%); all pixels: 0.136%; inside text boxes: 0.665% (glyph rendering)
+- Pixels outside text: **0.003%** differ (limit 0.5%); all pixels: 0.113%; inside text boxes: 0.549% (glyph rendering)
 - Boxes: 309/309 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 309, ≤1px: 309, ≤2px: 309, ≤4px: 309, >4px: 0
 
 ## Pixel regions (largest first)
@@ -17,13 +17,6 @@
 
 | Text | Differing |
 | --- | --- |
-| 80% (`I3857:76105;1391:14476`) | 26.4% |
-| 100% (`I3857:76099;1308:6749`) | 24.7% |
-| 100% (`I3857:76102;1308:6749`) | 24.7% |
-| 0% (`I3857:76096;1308:6706`) | 23% |
-| 0% (`I3857:76108;1308:6706`) | 23% |
-| 0% (`I3857:76111;1308:6706`) | 23% |
-| 0% (`I3857:76114;1308:6706`) | 23% |
 | Th2, 14.09.2026 (`I3857:76003;1590:881`) | 4.4% |
 | Th2, 14.09.2026 (`I3857:76038;1590:881`) | 4.3% |
 | Thường xuyên nhắc nhở học viên đi học đầy đủ ở trên lớp (`3857:76036`) | 3% |
@@ -32,6 +25,13 @@
 | Tỷ lệ đi học trên 80% (`3857:76015`) | 2.3% |
 | Nhãn trường (`I3857:76026;2808:48145`) | 2.3% |
 | Nhãn trường (`I3857:76046;2808:48145`) | 2.3% |
+| Nhãn trường (`I3857:76043;2808:48145`) | 2% |
+| Nhắc nhở học viên trước buổi học tại GG Chat (`3857:76001`) | 1.7% |
+| Value (`I4915:258070;4901:225154;3857:67911;1971:8814`) | 1.6% |
+| Value (`I3857:76690;2015:36008`) | 1.6% |
+| Value (`I4915:258070;4901:225153;3857:67911;1971:8814`) | 1.2% |
+| Ngày mai (07.10.2026) (`3857:76103`) | 1.1% |
+| [Urgent] Hỗ trợ vấn đề của khách (`3857:75990`) | 0.9% |
 
 ## Largest box differences
 

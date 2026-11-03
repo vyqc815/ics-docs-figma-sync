@@ -1,8 +1,8 @@
 # Fidelity: CD-KH-060200-DK — Bài tập về nhà / Kiểm tra
 
-- URL: `http://localhost:3108/bai-tap-ve-nha/kiem-tra-dk`
+- URL: `http://localhost:3000/bai-tap-ve-nha/kiem-tra-dk`
 - Verdict: **PASS**
-- Pixels outside text: **0.121%** differ (limit 0.5%); all pixels: 0.48%; inside text boxes: 1.704% (glyph rendering)
+- Pixels outside text: **0.121%** differ (limit 0.5%); all pixels: 0.427%; inside text boxes: 1.452% (glyph rendering)
 - Boxes: 430/430 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 416, ≤1px: 425, ≤2px: 430, ≤4px: 430, >4px: 0
 
 ## Pixel regions (largest first)
@@ -44,7 +44,6 @@
 
 | Text | Differing |
 | --- | --- |
-| Label (`I6015:54055;6579:362457;2245:87914`) | 26.8% |
 | Label (`I6015:54055;6579:362454;2245:87908`) | 13% |
 | Button (`I6015:53728;1048:1240`) | 8.1% |
 | 你好！ (`6015:53753`) | 6.5% |
@@ -59,6 +58,7 @@
 | Label (`I6015:54055;6579:362466;2245:87908`) | 4.2% |
 | Label (`I6015:54055;6579:362455;2245:87908`) | 3.8% |
 | Label (`I6015:54055;6579:362459;2245:87908`) | 3.8% |
+| Label (`I6015:54055;6579:362460;2245:87908`) | 3.6% |
 
 ## Largest box differences
 

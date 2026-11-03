@@ -1,6 +1,6 @@
 # Fidelity: ADM-LGV-020000 — Lương / Đề xuất tăng lương
 
-- URL: `http://localhost:3108/luong/de-xuat-tang-luong`
+- URL: `http://localhost:3000/luong/de-xuat-tang-luong`
 - Verdict: **PASS**
 - Pixels outside text: **0.023%** differ (limit 0.5%); all pixels: 0.101%; inside text boxes: 0.402% (glyph rendering)
 - Boxes: 325/325 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 321, ≤1px: 323, ≤2px: 325, ≤4px: 325, >4px: 0

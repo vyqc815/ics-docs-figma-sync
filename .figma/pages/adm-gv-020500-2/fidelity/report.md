@@ -1,8 +1,8 @@
 # Fidelity: ADM-GV-020500 — Chi tiết giáo viên / Quản lý đăng ký lịch
 
-- URL: `http://localhost:3108/chi-tiet-giao-vien/quan-ly-dang-ky-lich-adm-gv-020500-2`
+- URL: `http://localhost:3000/chi-tiet-giao-vien/quan-ly-dang-ky-lich-adm-gv-020500-2`
 - Verdict: **PASS**
-- Pixels outside text: **0.005%** differ (limit 0.5%); all pixels: 0.065%; inside text boxes: 0.62% (glyph rendering)
+- Pixels outside text: **0.005%** differ (limit 0.5%); all pixels: 0.038%; inside text boxes: 0.341% (glyph rendering)
 - Boxes: 241/241 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 241, ≤1px: 241, ≤2px: 241, ≤4px: 241, >4px: 0
 
 ## Pixel regions (largest first)
@@ -17,13 +17,13 @@
 
 | Text | Differing |
 | --- | --- |
-| Label (`I4915:233777;4899:195680;2245:87864`) | 14.9% |
 | Buổi tối (`4056:126272`) | 1.7% |
 | Ghi chú (`4056:126293`) | 1.4% |
 | Buổi sáng (`4056:126232`) | 1.1% |
 | Rê chuột vào ô đã đăng ký để xem ghi chú của buổi này (`4056:126298`) | 1.1% |
 | Buổi chiều (`4056:126252`) | 1% |
 | Label (`I4915:233777;4899:195682;2245:87858`) | 0.9% |
+| Label (`I4915:233777;4899:195680;2245:87864`) | 0.8% |
 | Label (`I4915:233777;4899:195681;2245:87858`) | 0.7% |
 | Label (`I4915:233777;4899:195683;1971:7432`) | 0.6% |
 | Label (`I4915:233777;4899:195685;1971:7432`) | 0.6% |

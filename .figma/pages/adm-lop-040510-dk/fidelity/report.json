@@ -1,0 +1,435 @@
+{
+  "pass": true,
+  "thresholds": {
+    "maxPixelDiffPercent": 0.5,
+    "maxBoxDelta": 1,
+    "maxTextBoxDelta": 2.5,
+    "colorThreshold": 0.1,
+    "aaRadius": 1,
+    "subpixel": true,
+    "maxTextNodeDiffPercent": 35
+  },
+  "pixels": {
+    "width": 800,
+    "height": 568,
+    "mismatched": 757,
+    "percent": 0.167,
+    "shapePercent": 0,
+    "textPercent": 0.911,
+    "sizeMismatch": false
+  },
+  "textNodes": [
+    {
+      "id": "I4056:117447;1739:32361",
+      "name": "18:30",
+      "pixels": 62,
+      "percent": 7.6
+    },
+    {
+      "id": "I4056:117347;1739:32361",
+      "name": "18:30",
+      "pixels": 55,
+      "percent": 6.7
+    },
+    {
+      "id": "I4056:117397;1739:32361",
+      "name": "18:30",
+      "pixels": 55,
+      "percent": 6.7
+    },
+    {
+      "id": "I4056:117329;1739:32355",
+      "name": "Thứ Ba, 22.09.2026",
+      "pixels": 122,
+      "percent": 5
+    },
+    {
+      "id": "I4056:117340;1739:32803",
+      "name": "18:30",
+      "pixels": 41,
+      "percent": 5
+    },
+    {
+      "id": "I4056:117440;1739:32361",
+      "name": "18:30",
+      "pixels": 41,
+      "percent": 5
+    },
+    {
+      "id": "I4056:117390;1739:32361",
+      "name": "18:30",
+      "pixels": 35,
+      "percent": 4.3
+    },
+    {
+      "id": "4056:117346",
+      "name": "Giờ kết thúc",
+      "pixels": 33,
+      "percent": 2.1
+    },
+    {
+      "id": "4056:117396",
+      "name": "Giờ kết thúc",
+      "pixels": 33,
+      "percent": 2.1
+    },
+    {
+      "id": "4056:117446",
+      "name": "Giờ kết thúc",
+      "pixels": 33,
+      "percent": 2.1
+    },
+    {
+      "id": "I4056:117328;2177:28928",
+      "name": "Chi tiết NV",
+      "pixels": 63,
+      "percent": 2
+    },
+    {
+      "id": "I4056:117327;2177:28936",
+      "name": "Nhiệm vụ con",
+      "pixels": 49,
+      "percent": 1.7
+    },
+    {
+      "id": "4056:117339",
+      "name": "Giờ bắt đầu",
+      "pixels": 19,
+      "percent": 1.2
+    },
+    {
+      "id": "4056:117389",
+      "name": "Giờ bắt đầu",
+      "pixels": 19,
+      "percent": 1.2
+    },
+    {
+      "id": "4056:117439",
+      "name": "Giờ bắt đầu",
+      "pixels": 19,
+      "percent": 1.2
+    }
+  ],
+  "regions": [],
+  "boxes": {
+    "measured": 167,
+    "missing": [],
+    "withinThreshold": 167,
+    "buckets": {
+      "≤0.5px": 167,
+      "≤1px": 167,
+      "≤2px": 167,
+      "≤4px": 167,
+      ">4px": 0
+    },
+    "worst": [
+      {
+        "id": "4056:117336",
+        "name": "Frame 427326015",
+        "role": "container",
+        "delta": 0.5,
+        "dx": 0,
+        "dy": 0,
+        "dw": -0.5,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:117341",
+        "name": "Dash Separator:margin:align-flex-end",
+        "role": "container",
+        "delta": 0.5,
+        "dx": 0,
+        "dy": 0,
+        "dw": -0.5,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:117342",
+        "name": "Dash Separator:margin",
+        "role": "container",
+        "delta": 0.5,
+        "dx": 0,
+        "dy": 0,
+        "dw": -0.5,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:117343",
+        "name": "–",
+        "role": "text",
+        "delta": 0.5,
+        "dx": 0,
+        "dy": 0,
+        "dw": -0.5,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:117344",
+        "name": "Frame 427326014",
+        "role": "container",
+        "delta": 0.5,
+        "dx": -0.5,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:117345",
+        "name": "Label",
+        "role": "container",
+        "delta": 0.5,
+        "dx": -0.5,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:117346",
+        "name": "Giờ kết thúc",
+        "role": "text",
+        "delta": 0.5,
+        "dx": -0.5,
+        "dy": 0,
+        "dw": 0.09,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:117347",
+        "name": "Time",
+        "role": "instance",
+        "delta": 0.5,
+        "dx": -0.5,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:117347;1739:32358",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.5,
+        "dx": -0.5,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:117347;1739:32359",
+        "name": "Subtract",
+        "role": "icon",
+        "delta": 0.5,
+        "dx": -0.5,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:117347;1739:32360",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.5,
+        "dx": -0.5,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:117347;1739:32361",
+        "name": "18:30",
+        "role": "text",
+        "delta": 0.5,
+        "dx": -0.5,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:117347;1739:32362",
+        "name": "Action Icon",
+        "role": "icon",
+        "delta": 0.5,
+        "dx": -0.5,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:117348",
+        "name": "Vector 2",
+        "role": "icon",
+        "delta": 0.5,
+        "dx": -0.5,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:117349",
+        "name": "Frame 1171274922",
+        "role": "container",
+        "delta": 0.5,
+        "dx": -0.5,
+        "dy": 0,
+        "dw": 0.5,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:117350",
+        "name": "Frame 427323673",
+        "role": "container",
+        "delta": 0.5,
+        "dx": -0.5,
+        "dy": 0,
+        "dw": 0.5,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:117351",
+        "name": "Frame 427323677",
+        "role": "container",
+        "delta": 0.5,
+        "dx": -0.5,
+        "dy": 0,
+        "dw": 0.07,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:117352",
+        "name": "Thứ 2",
+        "role": "text",
+        "delta": 0.5,
+        "dx": -0.5,
+        "dy": 0,
+        "dw": 0.07,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:117365",
+        "name": "Frame 427325137",
+        "role": "icon",
+        "delta": 0.5,
+        "dx": -0.5,
+        "dy": 0,
+        "dw": 0.5,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:117386",
+        "name": "Frame 427326015",
+        "role": "container",
+        "delta": 0.5,
+        "dx": 0,
+        "dy": 0,
+        "dw": -0.5,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:117391",
+        "name": "Dash Separator:margin:align-flex-end",
+        "role": "container",
+        "delta": 0.5,
+        "dx": 0,
+        "dy": 0,
+        "dw": -0.5,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:117392",
+        "name": "Dash Separator:margin",
+        "role": "container",
+        "delta": 0.5,
+        "dx": 0,
+        "dy": 0,
+        "dw": -0.5,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:117393",
+        "name": "–",
+        "role": "text",
+        "delta": 0.5,
+        "dx": 0,
+        "dy": 0,
+        "dw": -0.5,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:117394",
+        "name": "Frame 427326014",
+        "role": "container",
+        "delta": 0.5,
+        "dx": -0.5,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:117395",
+        "name": "Label",
+        "role": "container",
+        "delta": 0.5,
+        "dx": -0.5,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      }
+    ],
+    "maxDelta": 0.5,
+    "over": []
+  },
+  "failures": [],
+  "url": "http://localhost:3000/lop-hoc/cai-dat/lich-day/popup-them-lich-day-co-dinh-dk",
+  "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
+  "consoleErrors": [],
+  "rootFound": true
+}

@@ -12,10 +12,10 @@
   "pixels": {
     "width": 1440,
     "height": 860,
-    "mismatched": 2584,
-    "percent": 0.209,
+    "mismatched": 2295,
+    "percent": 0.185,
     "shapePercent": 0.001,
-    "textPercent": 2.367,
+    "textPercent": 2.101,
     "sizeMismatch": false
   },
   "textNodes": [
@@ -24,12 +24,6 @@
       "name": "Label",
       "pixels": 329,
       "percent": 13.7
-    },
-    {
-      "id": "I4056:117001;2245:87914",
-      "name": "Label",
-      "pixels": 312,
-      "percent": 13
     },
     {
       "id": "I4056:116992;2245:87908",
@@ -108,6 +102,12 @@
       "name": "Label",
       "pixels": 73,
       "percent": 3
+    },
+    {
+      "id": "4056:116906",
+      "name": "Gmail",
+      "pixels": 70,
+      "percent": 2.8
     }
   ],
   "regions": [
@@ -441,7 +441,7 @@
     "over": []
   },
   "failures": [],
-  "url": "http://localhost:3108/lop-hoc/cai-dat/tro-giang-support-dk",
+  "url": "http://localhost:3000/lop-hoc/cai-dat/tro-giang-support-dk",
   "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
   "consoleErrors": [],
   "rootFound": true

@@ -1,6 +1,6 @@
 # Fidelity: ADM-SS-010000 — Ship sách / Danh sách đơn sách
 
-- URL: `http://localhost:3108/ship-sach/danh-sach-don-sach`
+- URL: `http://localhost:3000/ship-sach/danh-sach-don-sach`
 - Verdict: **PASS**
 - Pixels outside text: **0%** differ (limit 0.5%); all pixels: 0.967%; inside text boxes: 3.273% (glyph rendering)
 - Boxes: 455/455 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 455, ≤1px: 455, ≤2px: 455, ≤4px: 455, >4px: 0

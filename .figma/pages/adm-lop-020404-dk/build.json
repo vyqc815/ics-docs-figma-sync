@@ -1,0 +1,25 @@
+{
+  "route": "/chi-tiet-lop-hoc/tu-hoc/trong-dk",
+  "pageFile": "components/figma/adm-lop-020404-dk/index.tsx",
+  "docFile": "docs/pages/chi-tiet-lop-hoc/tu-hoc/trong-dk.md",
+  "sections": [
+    {
+      "nodeId": "4056:112843",
+      "component": "Body5",
+      "file": "components/figma/shared/Body5.tsx"
+    },
+    {
+      "nodeId": "4056:112844",
+      "component": "Header30",
+      "file": "components/figma/shared/Header30.tsx"
+    },
+    {
+      "nodeId": "4056:112893",
+      "component": "SidebarRail",
+      "file": "components/figma/adm-lop-020404-dk/SidebarRail.tsx"
+    }
+  ],
+  "idAlias": {
+    "4056:112843": "769:36845"
+  }
+}

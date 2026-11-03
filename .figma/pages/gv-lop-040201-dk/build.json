@@ -1,0 +1,22 @@
+{
+  "route": "/chi-tiet-lop/bai-tap-va-kiem-tra/kiem-tra-giao-vien-khong-phu-trach-chinh-chi-xem-dk",
+  "pageFile": "components/figma/gv-lop-040201-dk/index.tsx",
+  "docFile": "docs/pages/chi-tiet-lop/bai-tap-va-kiem-tra/kiem-tra-giao-vien-khong-phu-trach-chinh-chi-xem-dk.md",
+  "sections": [
+    {
+      "nodeId": "5425:284126",
+      "component": "Body",
+      "file": "components/figma/gv-lop-040201-dk/Body.tsx"
+    },
+    {
+      "nodeId": "5425:289467",
+      "component": "Header81",
+      "file": "components/figma/shared/Header81.tsx"
+    },
+    {
+      "nodeId": "5425:289519",
+      "component": "SidebarRail",
+      "file": "components/figma/gv-lop-040201-dk/SidebarRail.tsx"
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 # Fidelity: SP-LHP-010000 — Lịch họp / Dropdown lọc · Người tham gia
 
-- URL: `http://localhost:3108/lich-hop/dropdown-loc-nguoi-tham-gia`
+- URL: `http://localhost:3000/lich-hop/dropdown-loc-nguoi-tham-gia`
 - Verdict: **PASS**
 - Pixels outside text: **0.017%** differ (limit 0.5%); all pixels: 0.406%; inside text boxes: 1.864% (glyph rendering)
 - Boxes: 402/402 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 402, ≤1px: 402, ≤2px: 402, ≤4px: 402, >4px: 0

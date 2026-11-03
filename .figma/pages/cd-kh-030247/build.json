@@ -1,0 +1,12 @@
+{
+  "route": "/hoc-ky/bai-hoc/popup-chi-tiet-bai-hoc/tab-kien-thuc/popup-them-kien-thuc/cum-chua-co-kien-thuc",
+  "pageFile": "components/figma/cd-kh-030247/index.tsx",
+  "docFile": "docs/pages/hoc-ky/bai-hoc/popup-chi-tiet-bai-hoc/tab-kien-thuc/popup-them-kien-thuc/cum-chua-co-kien-thuc.md",
+  "sections": [
+    {
+      "nodeId": "7193:404534",
+      "component": "PopupThemTuThuVienDuLieu",
+      "file": "components/figma/cd-kh-030247/PopupThemTuThuVienDuLieu.tsx"
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 # Fidelity: SYS-ERR-020000 — Lỗi 404 · Không tìm thấy trang
 
-- URL: `http://localhost:3108/loi-404-khong-tim-thay-trang`
+- URL: `http://localhost:3000/loi-404-khong-tim-thay-trang`
 - Verdict: **PASS**
 - Pixels outside text: **0%** differ (limit 0.5%); all pixels: 0.039%; inside text boxes: 0.458% (glyph rendering)
 - Boxes: 130/130 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 129, ≤1px: 130, ≤2px: 130, ≤4px: 130, >4px: 0

@@ -1,8 +1,8 @@
 # Fidelity: MST-TK-020000 — Tài khoản / Chi tiết tài khoản
 
-- URL: `http://localhost:3108/tai-khoan/chi-tiet-tai-khoan`
+- URL: `http://localhost:3000/tai-khoan/chi-tiet-tai-khoan`
 - Verdict: **FAIL**
-- Pixels outside text: **0.054%** differ (limit 0.5%); all pixels: 0.294%; inside text boxes: 1.015% (glyph rendering)
+- Pixels outside text: **0.054%** differ (limit 0.5%); all pixels: 0.293%; inside text boxes: 1.012% (glyph rendering)
 - Boxes: 176/178 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 175, ≤1px: 175, ≤2px: 175, ≤4px: 178, >4px: 0
 
 ## Failures
@@ -26,8 +26,8 @@
 
 | Text | Differing |
 | --- | --- |
-| Tạo tài khoản (`3005:41011`) | 24.7% |
-| Nguyễn Văn A (`3005:41022`) | 9.9% |
+| Tạo tài khoản (`3005:41011`) | 24.6% |
+| Nguyễn Văn A (`3005:41022`) | 9.8% |
 | Nhãn trường (`I3005:43093;3004:58620;2808:48145`) | 2.5% |
 | Nhãn trường (`I3004:50135;3004:58620;2808:48145`) | 2.4% |
 | Nhãn trường (`I3004:49972;3004:58620;2808:48145`) | 2.3% |

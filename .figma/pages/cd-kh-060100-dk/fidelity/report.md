@@ -1,8 +1,8 @@
 # Fidelity: CD-KH-060100-DK — Bài tập về nhà / BTVN
 
-- URL: `http://localhost:3108/bai-tap-ve-nha/btvn-dk`
+- URL: `http://localhost:3000/bai-tap-ve-nha/btvn-dk`
 - Verdict: **PASS**
-- Pixels outside text: **0.11%** differ (limit 0.5%); all pixels: 0.471%; inside text boxes: 1.718% (glyph rendering)
+- Pixels outside text: **0.11%** differ (limit 0.5%); all pixels: 0.426%; inside text boxes: 1.505% (glyph rendering)
 - Boxes: 429/429 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 415, ≤1px: 424, ≤2px: 429, ≤4px: 429, >4px: 0
 
 ## Pixel regions (largest first)
@@ -44,7 +44,6 @@
 
 | Text | Differing |
 | --- | --- |
-| Label (`I6015:53616;6579:362457;2245:87914`) | 26.8% |
 | Label (`I6015:53616;6579:362454;2245:87908`) | 13% |
 | Button (`I6015:53289;1048:1240`) | 8.1% |
 | 你呢？ (`6015:53365`) | 6.8% |
@@ -59,6 +58,7 @@
 | Label (`I6015:53616;6579:362466;2245:87908`) | 4.2% |
 | Label (`I6015:53616;6579:362455;2245:87908`) | 3.8% |
 | Label (`I6015:53616;6579:362459;2245:87908`) | 3.8% |
+| 你好吗？ (`6015:53331`) | 3.6% |
 
 ## Largest box differences
 

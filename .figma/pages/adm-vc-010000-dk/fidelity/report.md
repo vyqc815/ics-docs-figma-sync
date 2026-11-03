@@ -1,8 +1,8 @@
 # Fidelity: ADM-VC-010000-DK — Voucher / Danh sách voucher
 
-- URL: `http://localhost:3108/voucher/danh-sach-voucher-dk`
+- URL: `http://localhost:3000/voucher/danh-sach-voucher-dk`
 - Verdict: **PASS**
-- Pixels outside text: **0.002%** differ (limit 0.5%); all pixels: 0.251%; inside text boxes: 1.636% (glyph rendering)
+- Pixels outside text: **0.002%** differ (limit 0.5%); all pixels: 0.226%; inside text boxes: 1.47% (glyph rendering)
 - Boxes: 298/298 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 298, ≤1px: 298, ≤2px: 298, ≤4px: 298, >4px: 0
 
 ## Pixel regions (largest first)
@@ -16,7 +16,6 @@
 
 | Text | Differing |
 | --- | --- |
-| Label (`I4056:129429;2245:87864`) | 12.3% |
 | Sau (`I4056:129669;1391:17487`) | 5.5% |
 | Mã người nhận (`4056:129568`) | 5% |
 | 2 (`I4056:129669;1391:17479`) | 5% |
@@ -31,6 +30,7 @@
 | Mã voucher (`4056:129656`) | 3% |
 | Ngày hết hạn (`4056:129511`) | 2.9% |
 | 14.09.2026 (`I4056:129527;3567:39161`) | 2.9% |
+| 14.09.2026 (`I4056:129542;3567:39161`) | 2.9% |
 
 ## Largest box differences
 

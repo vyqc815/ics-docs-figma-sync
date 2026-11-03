@@ -10,8 +10,8 @@
     },
     {
       "nodeId": "4885:66483",
-      "component": "Header",
-      "file": "components/figma/adm-gks-020000-dk/Header.tsx"
+      "component": "Header4",
+      "file": "components/figma/shared/Header4.tsx"
     },
     {
       "nodeId": "4885:60848",

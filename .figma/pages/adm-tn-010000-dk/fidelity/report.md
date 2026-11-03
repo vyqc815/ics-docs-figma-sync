@@ -1,8 +1,8 @@
 # Fidelity: ADM-TN-010000-DK — Tin nhắn / Danh sách mẫu tin nhắn
 
-- URL: `http://localhost:3108/tin-nhan/danh-sach-mau-tin-nhan-dk`
+- URL: `http://localhost:3000/tin-nhan/danh-sach-mau-tin-nhan-dk`
 - Verdict: **PASS**
-- Pixels outside text: **0.002%** differ (limit 0.5%); all pixels: 0.243%; inside text boxes: 0.906% (glyph rendering)
+- Pixels outside text: **0.002%** differ (limit 0.5%); all pixels: 0.219%; inside text boxes: 0.815% (glyph rendering)
 - Boxes: 168/168 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 168, ≤1px: 168, ≤2px: 168, ≤4px: 168, >4px: 0
 
 ## Pixel regions (largest first)
@@ -16,7 +16,6 @@
 
 | Text | Differing |
 | --- | --- |
-| Label (`I4056:140505;2245:87774`) | 13.3% |
 | Button (`I4056:140553;1048:1240`) | 5.5% |
 | Admin Đắc Nhân (`I4056:140423;1391:17266`) | 3.5% |
 | Label (`I4056:140498;2245:87820`) | 3.3% |
@@ -31,6 +30,7 @@
 | Label (`I4056:140502;2245:87768`) | 2.2% |
 | Nội dung tin nhắn (`4056:140542`) | 2.1% |
 | Label (`I4056:140501;2245:87768`) | 1.9% |
+| Xem trước (`4056:140548`) | 1.9% |
 
 ## Largest box differences
 

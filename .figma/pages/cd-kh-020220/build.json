@@ -1,0 +1,50 @@
+{
+  "route": "/lo-trinh/tick-vuot-thoi-luong-canh-bao",
+  "pageFile": "components/figma/cd-kh-020220/index.tsx",
+  "docFile": "docs/pages/lo-trinh/tick-vuot-thoi-luong-canh-bao.md",
+  "sections": [
+    {
+      "nodeId": "6518:341099",
+      "component": "MainWorkspacecontainer",
+      "file": "components/figma/cd-kh-020220/MainWorkspacecontainer.tsx"
+    },
+    {
+      "nodeId": "6518:342126",
+      "component": "SidebarMenuCd",
+      "file": "components/figma/cd-kh-020220/SidebarMenuCd.tsx"
+    },
+    {
+      "nodeId": "6518:342127",
+      "component": "Header47",
+      "file": "components/figma/shared/Header47.tsx"
+    },
+    {
+      "nodeId": "6518:355987",
+      "component": "HighlightBaiVuotThoiLuong",
+      "file": "components/figma/cd-kh-020220/HighlightBaiVuotThoiLuong.tsx"
+    },
+    {
+      "nodeId": "6518:355988",
+      "component": "ToastCanhBaoVuotThoiLuong",
+      "file": "components/figma/cd-kh-020220/ToastCanhBaoVuotThoiLuong.tsx"
+    }
+  ],
+  "idAlias": {
+    "6518:342127": "6518:340741",
+    "6518:342128": "6518:340742",
+    "6518:342175": "6518:340789",
+    "I6518:342175;2008:31768": "I6518:340789;2008:31768",
+    "I6518:342175;2008:31883": "I6518:340789;2008:31883",
+    "I6518:342175;2008:31884": "I6518:340789;2008:31884",
+    "I6518:342175;2008:31885": "I6518:340789;2008:31885",
+    "I6518:342175;2008:31771": "I6518:340789;2008:31771",
+    "I6518:342175;2008:31772": "I6518:340789;2008:31772",
+    "I6518:342175;2008:31773": "I6518:340789;2008:31773",
+    "I6518:342175;2008:31774": "I6518:340789;2008:31774",
+    "6518:342176": "6518:340790",
+    "I6518:342176;4019:24203": "I6518:340790;4019:24203",
+    "I6518:342176;4019:22291": "I6518:340790;4019:22291",
+    "I6518:342176;4019:24214": "I6518:340790;4019:24214",
+    "I6518:342176;4019:24215": "I6518:340790;4019:24215"
+  }
+}

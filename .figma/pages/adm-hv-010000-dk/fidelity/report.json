@@ -12,19 +12,13 @@
   "pixels": {
     "width": 1440,
     "height": 810,
-    "mismatched": 3696,
-    "percent": 0.317,
+    "mismatched": 3377,
+    "percent": 0.29,
     "shapePercent": 0.006,
-    "textPercent": 1.491,
+    "textPercent": 1.36,
     "sizeMismatch": false
   },
   "textNodes": [
-    {
-      "id": "I4056:119671;2245:87864",
-      "name": "Label",
-      "pixels": 338,
-      "percent": 13.5
-    },
     {
       "id": "4056:119709",
       "name": "Tổng doanh thu",
@@ -108,6 +102,12 @@
       "name": "Ghi chú",
       "pixels": 53,
       "percent": 4.4
+    },
+    {
+      "id": "4056:119705",
+      "name": "Lớp hiện tại",
+      "pixels": 73,
+      "percent": 4.2
     }
   ],
   "regions": [
@@ -489,7 +489,7 @@
     "over": []
   },
   "failures": [],
-  "url": "http://localhost:3108/danh-sach-hoc-vien-dk",
+  "url": "http://localhost:3000/danh-sach-hoc-vien-dk",
   "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
   "consoleErrors": [],
   "rootFound": true

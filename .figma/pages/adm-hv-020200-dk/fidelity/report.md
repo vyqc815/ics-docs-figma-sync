@@ -1,8 +1,8 @@
 # Fidelity: ADM-HV-020200-DK — Chi tiết học viên / Danh sách lớp
 
-- URL: `http://localhost:3108/chi-tiet-hoc-vien/danh-sach-lop-dk`
+- URL: `http://localhost:3000/chi-tiet-hoc-vien/danh-sach-lop-dk`
 - Verdict: **PASS**
-- Pixels outside text: **0.007%** differ (limit 0.5%); all pixels: 0.251%; inside text boxes: 2.357% (glyph rendering)
+- Pixels outside text: **0.007%** differ (limit 0.5%); all pixels: 0.204%; inside text boxes: 1.9% (glyph rendering)
 - Boxes: 227/227 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 227, ≤1px: 227, ≤2px: 227, ≤4px: 227, >4px: 0
 
 ## Pixel regions (largest first)
@@ -21,11 +21,6 @@
 
 | Text | Differing |
 | --- | --- |
-| 0% (`I4056:120342;1308:6706`) | 26% |
-| 0% (`I4056:120375;1308:6706`) | 26% |
-| 80% (`I4056:120326;1391:14476`) | 23.6% |
-| 80% (`I4056:120359;1391:14476`) | 23.6% |
-| Label (`I4056:120452;2245:87864`) | 13.5% |
 | Số liệu (`I4056:120290;3108:125015`) | 6.9% |
 | Nhập Môn Tiếng Trung (NEW - v202...) (`4056:120337`) | 5.8% |
 | Số liệu (`I4056:120291;3108:125015`) | 5.7% |
@@ -36,6 +31,11 @@
 | Nhập Môn Tiếng Trung (NEW - v202...) (`4056:120354`) | 5.3% |
 | Số liệu (`I4056:120293;3108:125015`) | 4.8% |
 | Tiếng Trung Trung Cấp (HSK4) (`4056:120370`) | 4.6% |
+| Khoá học (`4056:120306`) | 3.7% |
+| Đánh giá (`4056:120308`) | 3.5% |
+| 0/20 Buổi (`I4056:120322;1350:13181`) | 2.9% |
+| B (`I4056:120340;1308:10497`) | 2.5% |
+| Label (`I4056:120454;2245:87858`) | 2.5% |
 
 ## Largest box differences
 

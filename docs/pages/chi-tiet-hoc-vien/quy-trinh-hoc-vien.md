@@ -5,7 +5,7 @@
 > **Nguồn:** PLS-ICS T8/2026 ›         ├─ HỌC VIÊN › ADM-HV-020500 — Chi tiết học viên / Quy trình học viên (`1117:11079`, file `rRVs5HX0kIHffbS0V40djG`)  
 > **Route:** `/chi-tiet-hoc-vien/quy-trinh-hoc-vien`  
 > **Khung thiết kế:** 1440 × 810 px  
-> **Xuất lúc:** 2026-11-02T03:21:49.973Z  
+> **Xuất lúc:** 2026-11-03T03:14:00.657Z  
 > **Spec đầy đủ (giá trị chính xác từng node):** `../../../.figma/pages/adm-hv-020500/page-spec.json`
 
 ## 1. Tổng quan

@@ -1,6 +1,6 @@
 # Fidelity: MST-TK-010000 — Tài khoản / Danh sách tài khoản
 
-- URL: `http://localhost:3108/tai-khoan/danh-sach-tai-khoan`
+- URL: `http://localhost:3000/tai-khoan/danh-sach-tai-khoan`
 - Verdict: **PASS**
 - Pixels outside text: **0.03%** differ (limit 0.5%); all pixels: 0.362%; inside text boxes: 2.418% (glyph rendering)
 - Boxes: 1177/1177 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 1177, ≤1px: 1177, ≤2px: 1177, ≤4px: 1177, >4px: 0

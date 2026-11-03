@@ -5,7 +5,7 @@
 > **Nguồn:** PLS-ICS T8/2026 ›             ├─ Tổng quan › ADM-LOP-020100 — Chi tiết lớp học / Tổng quan > chi tiết (`3304:60340`, file `rRVs5HX0kIHffbS0V40djG`)  
 > **Route:** `/chi-tiet-lop-hoc/tong-quan-chi-tiet`  
 > **Khung thiết kế:** 1440 × 1059 px  
-> **Xuất lúc:** 2026-11-02T03:36:55.599Z  
+> **Xuất lúc:** 2026-11-03T03:27:25.872Z  
 > **Spec đầy đủ (giá trị chính xác từng node):** `../../../.figma/pages/adm-lop-020100-2/page-spec.json`
 
 ## 1. Tổng quan
@@ -27,17 +27,26 @@ Nền trang: `#f8fafc`.
 
 | Token | Biến CSS | Giá trị | Trỏ tới | Bộ / mode |
 | --- | --- | --- | --- | --- |
+| `bg/brand-tint-strong` | `--bg-brand-tint-strong` | `#ffedd5` | color/extended/ffedd5 | Theme · Semantic / Light |
+| `bg/success` | `--bg-success` | `#ecfdf5` | color/extended/ecfdf5 | Theme · Semantic / Light |
+| `bg/surface` | `--bg-surface` | `#ffffff` | color/neutral/white | Theme · Semantic / Light |
+| `border/subtle` | `--border-subtle` | `#f1f5f9` | color/border/subtle | Theme · Semantic / Light |
+| `brand/primary` | `--brand-primary` | `#e65100` | color/brand/orange | Theme · Semantic / Light |
 | `color/border/button` | `--color-border-button` | `#cbd5e1` | color/extended/cbd5e1 | Color Tokens / Light |
 | `color/border/default` | `--color-border-default` | `#e2e8f0` |  | Color Tokens / Light |
 | `color/border/subtle` | `--color-border-subtle` | `#f1f5f9` |  | Color Tokens / Light |
 | `color/brand/orange` | `--color-brand-orange` | `#e65100` |  | Color Tokens / Light |
+| `color/extended/a7f3d0` | `--color-extended-a7f3d0` | `#a7f3d0` |  | Color Tokens / Light |
+| `color/extended/d1fae5` | `--color-extended-d1fae5` | `#d1fae5` |  | Color Tokens / Light |
 | `color/extended/f59e0b` | `--color-extended-f59e0b` | `#f59e0b` |  | Color Tokens / Light |
 | `color/extended/f8fafc` | `--color-extended-f8fafc` | `#f8fafc` |  | Color Tokens / Light |
 | `color/extended/f97316` | `--color-extended-f97316` | `#f97316` |  | Color Tokens / Light |
+| `color/extended/fecdd3` | `--color-extended-fecdd3` | `#fecdd3` |  | Color Tokens / Light |
 | `color/extended/fed7aa` | `--color-extended-fed7aa` | `#fed7aa` |  | Color Tokens / Light |
 | `color/extended/ffedd5` | `--color-extended-ffedd5` | `#ffedd5` |  | Color Tokens / Light |
 | `color/extended/fff5ec` | `--color-extended-fff5ec` | `#fff5ec` |  | Color Tokens / Light |
 | `color/extended/fff7ed` | `--color-extended-fff7ed` | `#fff7ed` |  | Color Tokens / Light |
+| `color/extended/fffaf8` | `--color-extended-fffaf8` | `#fffaf8` |  | Color Tokens / Light |
 | `color/neutral/900` | `--color-neutral-900` | `#000000` |  | Color Tokens / Light |
 | `color/neutral/white` | `--color-neutral-white` | `#ffffff` |  | Color Tokens / Light |
 | `color/neutral/white` | `--color-neutral-white` | `#ffffff` |  | Color Tokens / Light |
@@ -58,6 +67,7 @@ Nền trang: `#f8fafc`.
 | `spacing/16` | `--spacing-16` | `16` |  | Number Tokens / Mode 1 |
 | `spacing/4` | `--spacing-4` | `4` |  | Number Tokens / Mode 1 |
 | `spacing/8` | `--spacing-8` | `8` |  | Number Tokens / Mode 1 |
+| `text/secondary` | `--text-secondary` | `#64748b` | color/text/secondary | Theme · Semantic / Light |
 
 **Style Figma đang dùng:**
 
@@ -108,7 +118,7 @@ Nền trang: `#f8fafc`.
 | `Body/14/Medium` | Afacad | 14 / 18px | 500 | 0 | #e65100 (color/brand/orange) | 7 | “1” |
 | — | Afacad | 14 / 18px | 600 | 0 | #334155 (color/text/primary) | 7 | “PHÁT ÂM: Thanh Điệu và Vận Mẫu” |
 | `Label/14/Bold` | Afacad | 14 / 18px | 700 · case upper | 0 | #64748b (color/text/secondary) | 5 | “Tên bài học” |
-| `Body/14/Regular` | Afacad | 14 / 18px | 400 | 0 | #64748b | 3 | “đóng combo H3-H4-> đã đóng H3 => còn H4…” |
+| `Body/14/Regular` | Afacad | 14 / 18px | 400 | 0 | #64748b (text/secondary) | 3 | “đóng combo H3-H4-> đã đóng H3 => còn H4…” |
 | — | Afacad | 14 / 17px | 600 | 0 | #059669 (color/semantic/success-text) | 2 | “9.8” |
 | `Body/14/Medium` | Afacad | 14 / 18px | 500 | 0 | #334155 (color/text/primary) | 1 | “Đang sinh sống và làm việc tại Thâm Quy…” |
 | — | Afacad | 14 / 18px | 600 · case title | 0 | #e65100 (color/brand/orange) | 1 | “Ghi chú của lớp:” |
@@ -192,7 +202,7 @@ Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí ·
                 - [chữ] “Đã chấm và sửa bài” — 185.25×20 [FILL×FIXED] · @ (0, 2) flow · Afacad 16/20px 500 #64748b (color/text/secondary) case title · truncate `I3304:60359;3266:53959`
                 - [icon] **Ô biểu tượng** ⟨Atom/Ô biểu tượng: Biểu tượng=TARGET, Cỡ=24⟩ — 24×24 · @ (195.25, 0) flow · file /figma/assets/ca93f61ec46b.svg `I3304:60359;3266:53996`
               - [chữ] “0” — 219.25×28 [FILL×HUG] · @ (0, 24) flow · Afacad 22/28px 700 #e65100 (color/brand/orange) `I3304:60359;3266:54000`
-      - [khối] **Thẻ chỉ số** — 78×180 [FILL×FILL] · @ (1013, 0) flow · row gap 4 justify CENTER align CENTER · bg #ffffff · radius 8px · border 1px solid #e2e8f0 (color/border/default) · shadow 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `3304:60360`
+      - [khối] **Thẻ chỉ số** — 78×180 [FILL×FILL] · @ (1013, 0) flow · row gap 4 justify CENTER align CENTER · bg #ffffff (bg/surface) · radius 8px · border 1px solid #e2e8f0 (color/border/default) · shadow 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `3304:60360`
         - [instance] **Progress/Điểm Đánh Giá (A-F)** ⟨Progress/Điểm Đánh Giá (A-F): Property 1=A nhỏ, Size=36x32⟩ — 36×32 · @ (21, 74) flow `3304:60361`
           - [icon] **Vector** — 36×32 · @ (0, 0) abs · file /figma/assets/4be1365da05c.svg covers (-4, -4) 46×42 `I3304:60361;1308:10490`
           - [chữ] “A” — 36×24 · @ (0, 0.22) abs · Afacad 19/24px 700 #ffffff (color/neutral/white) · text-align center `I3304:60361;1308:10491`
@@ -335,10 +345,10 @@ Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí ·
               - [icon] **Frame 1171274934** — 50×28 · @ (239, 2) flow · file /figma/assets/4c33a51ed053.svg `4056:93481`
               - [icon] **Column 3: Trạng thái** — 70×24 · @ (301, 4) flow · file /figma/assets/d3902258eaa0.svg covers (0, -2) 70×30 `4056:93483`
               - [khối] **Column 4: Điểm s** — 125×32 [FIXED×HUG] · @ (383, 0) flow · column justify CENTER align CENTER `4056:93485`
-                - [khối] **Điểm số · Đã chấm** — 125×32 [FILL×FIXED] · @ (0, 0) flow · row gap 5 pad 0 5 0 5 align CENTER · bg #ecfdf5 · radius 6px · border 1px solid #d1fae5 · clip `4056:93486`
+                - [khối] **Điểm số · Đã chấm** — 125×32 [FILL×FIXED] · @ (0, 0) flow · row gap 5 pad 0 5 0 5 align CENTER · bg #ecfdf5 (bg/success) · radius 6px · border 1px solid #d1fae5 (color/extended/d1fae5) · clip `4056:93486`
                   - [khối] **Slot · Giá trị** — 56×17 [FIXED×HUG] · @ (6, 7.5) flow · column justify CENTER align CENTER `4056:93487`
                     - [chữ] “9.8” — 17×17 [HUG×HUG] · @ (19.5, 0) flow · Afacad 14/17px 600 #059669 (color/semantic/success-text) · text-align center · no-wrap `4056:93488`
-                  - [hình] **Divider** — 1×16 · @ (67, 8) flow · bg #a7f3d0 `4056:93489`
+                  - [hình] **Divider** — 1×16 · @ (67, 8) flow · bg #a7f3d0 (color/extended/a7f3d0) `4056:93489`
                   - [khối] **Slot · Nộp** — 48×24 [FIXED×HUG] · @ (73, 4) flow · column justify CENTER align CENTER `4056:93490`
                     - [chữ] “09:58” — 25×12 [HUG×HUG] · @ (11.5, 0) flow · Afacad 10/12px 500 #059669 (color/semantic/success-text) · text-align center · no-wrap `4056:93491`
                     - [chữ] “16.09.2026” — 46×12 [HUG×HUG] · @ (1, 12) flow · Afacad 10/12px 500 #059669 (color/semantic/success-text) · text-align center · no-wrap · opacity 0.8 `4056:93492`
@@ -356,10 +366,10 @@ Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí ·
               - [icon] **Frame 1171274934** — 50×28 · @ (239, 2) flow · file /figma/assets/4c33a51ed053.svg `4056:93505`
               - [icon] **Column 3: Trạng thái** — 70×24 · @ (301, 4) flow · file /figma/assets/4eceba36f0ab.svg covers (0, -2) 70×30 `4056:93507`
               - [khối] **Column 4: Điểm s** — 125×32 [FIXED×HUG] · @ (383, 0) flow · column justify CENTER align CENTER `4056:93509`
-                - [khối] **Điểm số · Đã chấm** — 125×32 [FILL×FIXED] · @ (0, 0) flow · row gap 5 pad 0 5 0 5 align CENTER · bg #ecfdf5 · radius 6px · border 1px solid #d1fae5 · clip `4056:93510`
+                - [khối] **Điểm số · Đã chấm** — 125×32 [FILL×FIXED] · @ (0, 0) flow · row gap 5 pad 0 5 0 5 align CENTER · bg #ecfdf5 (bg/success) · radius 6px · border 1px solid #d1fae5 (color/extended/d1fae5) · clip `4056:93510`
                   - [khối] **Slot · Giá trị** — 56×17 [FIXED×HUG] · @ (6, 7.5) flow · column justify CENTER align CENTER `4056:93511`
                     - [chữ] “9.8” — 17×17 [HUG×HUG] · @ (19.5, 0) flow · Afacad 14/17px 600 #059669 (color/semantic/success-text) · text-align center · no-wrap `4056:93512`
-                  - [hình] **Divider** — 1×16 · @ (67, 8) flow · bg #a7f3d0 `4056:93513`
+                  - [hình] **Divider** — 1×16 · @ (67, 8) flow · bg #a7f3d0 (color/extended/a7f3d0) `4056:93513`
                   - [khối] **Slot · Nộp** — 48×24 [FIXED×HUG] · @ (73, 4) flow · column justify CENTER align CENTER `4056:93514`
                     - [chữ] “09:58” — 25×12 [HUG×HUG] · @ (11.5, 0) flow · Afacad 10/12px 500 #059669 (color/semantic/success-text) · text-align center · no-wrap `4056:93515`
                     - [chữ] “16.09.2026” — 46×12 [HUG×HUG] · @ (1, 12) flow · Afacad 10/12px 500 #059669 (color/semantic/success-text) · text-align center · no-wrap · opacity 0.8 `4056:93516`
@@ -377,10 +387,10 @@ Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí ·
               - [icon] **Frame 1171274934** — 50×28 · @ (239, 0) flow · file /figma/assets/a90e2521e335.svg `4056:93529`
               - [icon] **Column 3: Trạng thái** — 70×24 · @ (301, 2) flow · file /figma/assets/056734491f44.svg covers (0, -2) 70×30 `4056:93531`
               - [khối] **Column 4: Điểm s** — 125×24 · @ (383, 2) flow · row justify CENTER align CENTER `4056:93533`
-                - [khối] **Điểm số · Chưa nộp** — 125×32 [FILL×FIXED] · @ (0, -4) flow · row gap 5 pad 0 5 0 5 align CENTER · bg #fff6f6 · radius 6px · border 1px solid #fecdd3 · clip `4056:93534`
+                - [khối] **Điểm số · Chưa nộp** — 125×32 [FILL×FIXED] · @ (0, -4) flow · row gap 5 pad 0 5 0 5 align CENTER · bg #fff6f6 · radius 6px · border 1px solid #fecdd3 (color/extended/fecdd3) · clip `4056:93534`
                   - [khối] **Slot · Giá trị** — 56×16 [FIXED×HUG] · @ (6, 8) flow · column justify CENTER align CENTER `4056:93535`
                     - [chữ] “—” — 13×16 [HUG×HUG] · @ (21.5, 0) flow · Afacad 13/16px 600 #e11d48 (color/semantic/error-text) · text-align center · no-wrap `4056:93536`
-                  - [hình] **Divider** — 1×16 · @ (67, 8) flow · bg #fecdd3 `4056:93537`
+                  - [hình] **Divider** — 1×16 · @ (67, 8) flow · bg #fecdd3 (color/extended/fecdd3) `4056:93537`
                   - [khối] **Slot · Nộp** — 48×14 [FIXED×HUG] · @ (73, 9) flow · column justify CENTER align CENTER `4056:93538`
                     - [chữ] “Chưa nộp” — 47×14 [HUG×HUG] · @ (0.5, 0) flow · Afacad 12/14px 600 #e11d48 (color/semantic/error-text) · text-align center · no-wrap `4056:93539`
               - [khối] **Container** — 60×19 [FIXED×HUG] · @ (520, 4.5) flow · column justify CENTER align CENTER `4056:93540`
@@ -397,10 +407,10 @@ Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí ·
               - [icon] **Frame 1171274934** — 50×28 · @ (239, 0) flow · file /figma/assets/a90e2521e335.svg `4056:93552`
               - [icon] **Column 3: Trạng thái** — 70×24 · @ (301, 2) flow · file /figma/assets/e6d564798e14.svg covers (0, -2) 70×30 `4056:93554`
               - [khối] **Column 4: Điểm s** — 125×24 · @ (383, 2) flow · row justify CENTER align CENTER `4056:93556`
-                - [khối] **Điểm số · Chưa nộp** — 125×32 [FILL×FIXED] · @ (0, -4) flow · row gap 5 pad 0 5 0 5 align CENTER · bg #fff6f6 · radius 6px · border 1px solid #fecdd3 · clip `4056:93557`
+                - [khối] **Điểm số · Chưa nộp** — 125×32 [FILL×FIXED] · @ (0, -4) flow · row gap 5 pad 0 5 0 5 align CENTER · bg #fff6f6 · radius 6px · border 1px solid #fecdd3 (color/extended/fecdd3) · clip `4056:93557`
                   - [khối] **Slot · Giá trị** — 56×16 [FIXED×HUG] · @ (6, 8) flow · column justify CENTER align CENTER `4056:93558`
                     - [chữ] “—” — 13×16 [HUG×HUG] · @ (21.5, 0) flow · Afacad 13/16px 600 #e11d48 (color/semantic/error-text) · text-align center · no-wrap `4056:93559`
-                  - [hình] **Divider** — 1×16 · @ (67, 8) flow · bg #fecdd3 `4056:93560`
+                  - [hình] **Divider** — 1×16 · @ (67, 8) flow · bg #fecdd3 (color/extended/fecdd3) `4056:93560`
                   - [khối] **Slot · Nộp** — 48×14 [FIXED×HUG] · @ (73, 9) flow · column justify CENTER align CENTER `4056:93561`
                     - [chữ] “Chưa nộp” — 47×14 [HUG×HUG] · @ (0.5, 0) flow · Afacad 12/14px 600 #e11d48 (color/semantic/error-text) · text-align center · no-wrap `4056:93562`
               - [khối] **Container** — 60×19 [FIXED×HUG] · @ (520, 4.5) flow · column justify CENTER align CENTER `4056:93563`
@@ -419,7 +429,7 @@ Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí ·
               - [chữ] “Ghi chú của lớp:” — 357×18 [FILL×HUG] · @ (0, 0) flow · Afacad 14/18px 600 #e65100 (color/brand/orange) case title `3304:61548`
               - [chữ] “16/8 mở lịch mới cho sale dời lịch 15/9 ⏎ 5/9 dời lịch 15/9 --> 24/9 (mới 4b)” — 357×30 [FILL×HUG] · @ (0, 20) flow · Afacad 12/15px 600 #334155 (color/text/primary) case title `3304:61553`
         - [khối] **Frame 1171274938** — 427×476 [FILL×HUG] · @ (0, 124) flow · column gap 12 `3304:60536`
-          - [khối] **Frame 427321974** — 427×150 [FIXED×HUG] · @ (0, 0) flow · column gap 10 pad 12 12 12 12 · bg #ffffff · radius 12px · shadow 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `3304:62210`
+          - [khối] **Frame 427321974** — 427×150 [FIXED×HUG] · @ (0, 0) flow · column gap 10 pad 12 12 12 12 · bg #ffffff (bg/surface) · radius 12px · shadow 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `3304:62210`
             - [khối] **Frame 1171274935** — 403×54 [FILL×HUG] · @ (12, 12) flow · row gap 12 align CENTER `3304:62211`
               - [icon] **Student Status** ⟨Student Status: Property 1=Đang học⟩ — 24×24 · @ (0, 15) flow · file /figma/assets/1cae1ada71c3.svg covers (-2, -2) 30×30 `3304:62212`
               - [instance] **Ô định danh** ⟨Molecule/Ô định danh: Có Tiền=true, Có lịch hẹn=false, Có tag=true, Có avatar=true, Tên=Học viên 1, Có tag thứ 2=false, Mã=102189-mtra60790@gmail.com⟩ — 208×54 [FILL×HUG] · @ (36, 0) flow · row gap 8 align CENTER `3304:62213`
@@ -444,8 +454,8 @@ Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí ·
             - [icon] **Line 1** — 403×0 [FILL×FIXED] · @ (12, 76) flow · file /figma/assets/85d6e513443a.svg covers (0, -1) 403×1 `3304:62221`
             - [khối] **Note & Transaction Detail** — 403×52 [FILL×HUG] · @ (12, 86) flow · row gap 12 pad 8 12 8 12 align CENTER · bg #f8fafc (color/extended/f8fafc) · radius 8px `3304:62222`
               - [icon] **Action Icon** ⟨Action Icon: Icon=History, Size=18⟩ — 16×16 · @ (12, 18) flow · file /figma/assets/ce10a9094c41.svg `3304:62223`
-              - [chữ] “đóng combo H3-H4-> đã đóng H3 => còn H4 = 9.660 - 3.880 = 5.780K (đã đóng) 5tr780/5 tháng-> 1tr156/tháng->1tr734/kì” — 351×36 [FILL×HUG] · @ (40, 8) flow · Afacad 14/18px 400 #64748b `3304:62224`
-          - [khối] **Frame 427321975** — 427×150 [FIXED×HUG] · @ (0, 162) flow · column gap 10 pad 12 12 12 12 · bg #fffaf8 · radius 12px · shadow 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `3304:62225`
+              - [chữ] “đóng combo H3-H4-> đã đóng H3 => còn H4 = 9.660 - 3.880 = 5.780K (đã đóng) 5tr780/5 tháng-> 1tr156/tháng->1tr734/kì” — 351×36 [FILL×HUG] · @ (40, 8) flow · Afacad 14/18px 400 #64748b (text/secondary) `3304:62224`
+          - [khối] **Frame 427321975** — 427×150 [FIXED×HUG] · @ (0, 162) flow · column gap 10 pad 12 12 12 12 · bg #fffaf8 (color/extended/fffaf8) · radius 12px · shadow 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `3304:62225`
             - [khối] **Frame 1171274935** — 403×54 [FILL×HUG] · @ (12, 12) flow · row gap 12 align CENTER `3304:62226`
               - [icon] **Student Status** ⟨Student Status: Property 1=Đang học⟩ — 24×24 · @ (0, 15) flow · file /figma/assets/1cae1ada71c3.svg covers (-2, -2) 30×30 `3304:62227`
               - [instance] **Ô định danh** ⟨Molecule/Ô định danh: Có Tiền=true, Có lịch hẹn=true, Có tag=true, Có avatar=true, Tên=Học viên 1, Có tag thứ 2=true, Mã=102189-mtra60790@gmail.com⟩ — 208×54 [FILL×HUG] · @ (36, 0) flow · row gap 8 align CENTER `3304:62228`
@@ -493,8 +503,8 @@ Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí ·
             - [icon] **Line 1** — 403×0 [FILL×FIXED] · @ (12, 76) flow · file /figma/assets/85d6e513443a.svg covers (0, -1) 403×1 `3304:62236`
             - [khối] **Note & Transaction Detail** — 403×52 [FILL×HUG] · @ (12, 86) flow · row gap 12 pad 8 12 8 12 align CENTER · bg #f8fafc (color/extended/f8fafc) · radius 8px `3304:62237`
               - [icon] **Action Icon** ⟨Action Icon: Icon=History, Size=18⟩ — 16×16 · @ (12, 18) flow · file /figma/assets/ce10a9094c41.svg `3304:62238`
-              - [chữ] “đóng combo H3-H4-> đã đóng H3 => còn H4 = 9.660 - 3.880 = 5.780K (đã đóng) 5tr780/5 tháng-> 1tr156/tháng->1tr734/kì” — 351×36 [FILL×HUG] · @ (40, 8) flow · Afacad 14/18px 400 #64748b `3304:62239`
-          - [khối] **Frame 427321976** — 427×152 [FIXED×HUG] · @ (0, 324) flow · column gap 10 pad 12 12 12 12 · bg #ffffff · radius 12px · border 1px solid #e65100 · shadow 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `3304:62290`
+              - [chữ] “đóng combo H3-H4-> đã đóng H3 => còn H4 = 9.660 - 3.880 = 5.780K (đã đóng) 5tr780/5 tháng-> 1tr156/tháng->1tr734/kì” — 351×36 [FILL×HUG] · @ (40, 8) flow · Afacad 14/18px 400 #64748b (text/secondary) `3304:62239`
+          - [khối] **Frame 427321976** — 427×152 [FIXED×HUG] · @ (0, 324) flow · column gap 10 pad 12 12 12 12 · bg #ffffff (bg/surface) · radius 12px · border 1px solid #e65100 (brand/primary) · shadow 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `3304:62290`
             - [khối] **Frame 1171274935** — 401×54 [FILL×HUG] · @ (13, 13) flow · row gap 12 align CENTER `3304:62291`
               - [icon] **Student Status** ⟨Student Status: Property 1=Đang học⟩ — 24×24 · @ (0, 15) flow · file /figma/assets/1cae1ada71c3.svg covers (-2, -2) 30×30 `3304:62292`
               - [instance] **Ô định danh** ⟨Molecule/Ô định danh: Có Tiền=true, Có lịch hẹn=true, Có tag=true, Có avatar=true, Tên=Học viên 1, Có tag thứ 2=true, Mã=102189-mtra60790@gmail.com⟩ — 206×54 [FILL×HUG] · @ (36, 0) flow · row gap 8 align CENTER `3304:62293`
@@ -526,7 +536,7 @@ Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí ·
             - [icon] **Line 1** — 401×0 [FILL×FIXED] · @ (13, 77) flow · file /figma/assets/026868f6ea87.svg covers (0, -1) 401×1 `3304:62301`
             - [khối] **Note & Transaction Detail** — 401×52 [FILL×HUG] · @ (13, 87) flow · row gap 12 pad 8 12 8 12 align CENTER · bg #f8fafc (color/extended/f8fafc) · radius 8px `3304:62302`
               - [icon] **Action Icon** ⟨Action Icon: Icon=History, Size=18⟩ — 16×16 · @ (12, 18) flow · file /figma/assets/793c8c6feb7a.svg `3304:62303`
-              - [chữ] “đóng combo H3-H4-> đã đóng H3 => còn H4 = 9.660 - 3.880 = 5.780K (đã đóng) 5tr780/5 tháng-> 1tr156/tháng->1tr734/kì” — 349×36 [FILL×HUG] · @ (40, 8) flow · Afacad 14/18px 400 #64748b `3304:62304`
+              - [chữ] “đóng combo H3-H4-> đã đóng H3 => còn H4 = 9.660 - 3.880 = 5.780K (đã đóng) 5tr780/5 tháng-> 1tr156/tháng->1tr734/kì” — 349×36 [FILL×HUG] · @ (40, 8) flow · Afacad 14/18px 400 #64748b (text/secondary) `3304:62304`
   - [khối] **Header** — 1140×64 · @ (300, 0) abs · clip `3304:60614`
     - [icon] **Group 240178** — 1140×64 · @ (0, 0) abs · file /figma/assets/b0e7c3574bc7.svg `4050:115377`
     - [instance] **ACCOUNT** ⟨ACCOUNT: Role=Admin, Theme=Dark, Size=Default⟩ — 222×36 · @ (902, 14) abs · row gap 10 justify MAX align CENTER `3304:60662`

@@ -1,0 +1,448 @@
+{
+  "pass": true,
+  "thresholds": {
+    "maxPixelDiffPercent": 0.5,
+    "maxBoxDelta": 1,
+    "maxTextBoxDelta": 2.5,
+    "colorThreshold": 0.1,
+    "aaRadius": 1,
+    "subpixel": true,
+    "maxTextNodeDiffPercent": 35
+  },
+  "pixels": {
+    "width": 1440,
+    "height": 810,
+    "mismatched": 1700,
+    "percent": 0.146,
+    "shapePercent": 0.028,
+    "textPercent": 1.053,
+    "sizeMismatch": false
+  },
+  "textNodes": [
+    {
+      "id": "5165:187051",
+      "name": "Gift code",
+      "pixels": 62,
+      "percent": 5.8
+    },
+    {
+      "id": "I5165:187026;3567:39161",
+      "name": "14.09.2026",
+      "pixels": 73,
+      "percent": 5
+    },
+    {
+      "id": "I5165:186984;3567:39161",
+      "name": "14.09.2026",
+      "pixels": 72,
+      "percent": 4.9
+    },
+    {
+      "id": "I5165:186998;3567:39161",
+      "name": "14.09.2026",
+      "pixels": 65,
+      "percent": 4.4
+    },
+    {
+      "id": "I5165:187040;3567:39161",
+      "name": "14.09.2026",
+      "pixels": 64,
+      "percent": 4.4
+    },
+    {
+      "id": "I5165:186970;3567:39161",
+      "name": "14.09.2026",
+      "pixels": 63,
+      "percent": 4.2
+    },
+    {
+      "id": "I5165:187012;3567:39161",
+      "name": "14.09.2026",
+      "pixels": 58,
+      "percent": 3.9
+    },
+    {
+      "id": "I5165:186956;3567:39161",
+      "name": "14.09.2026",
+      "pixels": 57,
+      "percent": 3.8
+    },
+    {
+      "id": "I5165:187054;3567:39161",
+      "name": "14.09.2026",
+      "pixels": 57,
+      "percent": 3.8
+    },
+    {
+      "id": "I5165:187068;3567:39161",
+      "name": "14.09.2026",
+      "pixels": 55,
+      "percent": 3.6
+    },
+    {
+      "id": "I5165:187082;3567:39161",
+      "name": "14.09.2026",
+      "pixels": 55,
+      "percent": 3.6
+    },
+    {
+      "id": "I5165:187648;3058:76261",
+      "name": "Tên trạng thái",
+      "pixels": 118,
+      "percent": 3.5
+    },
+    {
+      "id": "5165:186946",
+      "name": "Trạng thái",
+      "pixels": 67,
+      "percent": 2.8
+    },
+    {
+      "id": "5165:186942",
+      "name": "Số tháng miễn phí",
+      "pixels": 84,
+      "percent": 2.2
+    },
+    {
+      "id": "5165:186944",
+      "name": "Số thiết bị tối đa",
+      "pixels": 151,
+      "percent": 2
+    }
+  ],
+  "regions": [
+    {
+      "x": 248,
+      "y": 560,
+      "width": 184,
+      "height": 40,
+      "pixels": 313,
+      "node": {
+        "id": "I5165:187648;3058:76261",
+        "name": "Tên trạng thái",
+        "role": "text"
+      }
+    }
+  ],
+  "boxes": {
+    "measured": 303,
+    "missing": [],
+    "withinThreshold": 303,
+    "buckets": {
+      "≤0.5px": 303,
+      "≤1px": 303,
+      "≤2px": 303,
+      "≤4px": 303,
+      ">4px": 0
+    },
+    "worst": [
+      {
+        "id": "5165:186984",
+        "name": "Atom/Chip",
+        "role": "instance",
+        "delta": 0.03,
+        "dx": -0.02,
+        "dy": 0,
+        "dw": 0.03,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5165:186984;3567:39161",
+        "name": "14.09.2026",
+        "role": "text",
+        "delta": 0.03,
+        "dx": -0.02,
+        "dy": 0,
+        "dw": 0.03,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5165:186873;4915:215090",
+        "name": "Frame 1171274926",
+        "role": "icon",
+        "delta": 0.02,
+        "dx": 0,
+        "dy": -0.02,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5165:186873;4915:215075",
+        "name": "Left: ICS Logo & Toggle",
+        "role": "container",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": -0.01,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5165:186873;4915:215076",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": -0.01,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5165:186873;4915:215077",
+        "name": "Navigation / Sidebar Menu / Light",
+        "role": "icon",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": -0.01,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5165:186873;4915:215089",
+        "name": "v20.07.2026_17:30",
+        "role": "text",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": -0.01,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5165:186784",
+        "name": "BG",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 1,
+        "textDriven": false
+      },
+      {
+        "id": "5165:186873",
+        "name": "Sidebar · MENU - ADMIN",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 1,
+        "textDriven": false
+      },
+      {
+        "id": "I5165:186873;4915:215025",
+        "name": "Frame 427322079",
+        "role": "icon",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 1,
+        "textDriven": false
+      },
+      {
+        "id": "I5165:186873;4915:215092",
+        "name": "Nav Items",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 1,
+        "textDriven": false
+      },
+      {
+        "id": "I5165:186873;4915:215093",
+        "name": "MENU - ADMIN (Tổng)",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 1,
+        "textDriven": false
+      },
+      {
+        "id": "I5165:186873;4899:199482",
+        "name": "Card Menu v2 (Test)",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5165:186873;4899:199482;2245:87821",
+        "name": "Content",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5165:186873;4899:199482;2245:87816",
+        "name": "Icon",
+        "role": "icon",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5165:186873;4899:199482;2245:87820",
+        "name": "Label",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5165:186873;4899:199482;2245:87822",
+        "name": "Chevron",
+        "role": "icon",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5165:186873;4899:199493",
+        "name": "Card Menu v2 (Test)",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5165:186873;4899:199493;2245:87764",
+        "name": "Icon",
+        "role": "icon",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5165:186873;4899:199493;2245:87768",
+        "name": "Label",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5165:186873;4899:199499",
+        "name": "Card Menu v2 (Test)",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5165:186873;4899:199499;2245:87821",
+        "name": "Content",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5165:186873;4899:199499;2245:87816",
+        "name": "Icon",
+        "role": "icon",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5165:186873;4899:199499;2245:87820",
+        "name": "Label",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5165:186873;4899:199499;2245:87822",
+        "name": "Chevron",
+        "role": "icon",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      }
+    ],
+    "maxDelta": 0.03,
+    "over": []
+  },
+  "failures": [],
+  "url": "http://localhost:3000/gift-code/danh-sach-gift-code/da-sao-chep-ma",
+  "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
+  "consoleErrors": [],
+  "rootFound": true
+}

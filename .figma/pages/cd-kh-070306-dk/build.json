@@ -1,0 +1,50 @@
+{
+  "route": "/thu-vien/bai-tap/chi-tiet-cau-hoi-listening/sua-xoa-dk",
+  "pageFile": "components/figma/cd-kh-070306-dk/index.tsx",
+  "docFile": "docs/pages/thu-vien/bai-tap/chi-tiet-cau-hoi-listening/sua-xoa-dk.md",
+  "sections": [
+    {
+      "nodeId": "6579:368142",
+      "component": "Content",
+      "file": "components/figma/cd-kh-070306-dk/Content.tsx"
+    },
+    {
+      "nodeId": "6579:368364",
+      "component": "SidebarMenuCd",
+      "file": "components/figma/cd-kh-070306-dk/SidebarMenuCd.tsx"
+    },
+    {
+      "nodeId": "6579:368365",
+      "component": "Header69",
+      "file": "components/figma/shared/Header69.tsx"
+    },
+    {
+      "nodeId": "6579:368415",
+      "component": "DdOrganismMenuPanelLuotThoai",
+      "file": "components/figma/cd-kh-070306-dk/DdOrganismMenuPanelLuotThoai.tsx"
+    },
+    {
+      "nodeId": "6579:368416",
+      "component": "DdOrganismMenuPanelDoiTuong",
+      "file": "components/figma/cd-kh-070306-dk/DdOrganismMenuPanelDoiTuong.tsx"
+    }
+  ],
+  "idAlias": {
+    "6579:368365": "6579:386916",
+    "6579:368366": "6579:386917",
+    "6579:368413": "6579:386964",
+    "I6579:368413;2008:31768": "I6579:386964;2008:31768",
+    "I6579:368413;2008:31883": "I6579:386964;2008:31883",
+    "I6579:368413;2008:31884": "I6579:386964;2008:31884",
+    "I6579:368413;2008:31885": "I6579:386964;2008:31885",
+    "I6579:368413;2008:31771": "I6579:386964;2008:31771",
+    "I6579:368413;2008:31772": "I6579:386964;2008:31772",
+    "I6579:368413;2008:31773": "I6579:386964;2008:31773",
+    "I6579:368413;2008:31774": "I6579:386964;2008:31774",
+    "6579:368414": "6579:386965",
+    "I6579:368414;4019:24203": "I6579:386965;4019:24203",
+    "I6579:368414;4019:22291": "I6579:386965;4019:22291",
+    "I6579:368414;4019:24214": "I6579:386965;4019:24214",
+    "I6579:368414;4019:24215": "I6579:386965;4019:24215"
+  }
+}

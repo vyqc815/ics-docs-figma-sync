@@ -12,55 +12,13 @@
   "pixels": {
     "width": 1440,
     "height": 1255,
-    "mismatched": 3517,
-    "percent": 0.195,
+    "mismatched": 3113,
+    "percent": 0.172,
     "shapePercent": 0.001,
-    "textPercent": 0.954,
+    "textPercent": 0.844,
     "sizeMismatch": false
   },
   "textNodes": [
-    {
-      "id": "I6935:390222;1308:6706",
-      "name": "0%",
-      "pixels": 51,
-      "percent": 26
-    },
-    {
-      "id": "I6935:390234;1308:6706",
-      "name": "0%",
-      "pixels": 51,
-      "percent": 26
-    },
-    {
-      "id": "I6935:390237;1308:6706",
-      "name": "0%",
-      "pixels": 51,
-      "percent": 26
-    },
-    {
-      "id": "I6935:390240;1308:6706",
-      "name": "0%",
-      "pixels": 51,
-      "percent": 26
-    },
-    {
-      "id": "I6935:390231;1391:14476",
-      "name": "80%",
-      "pixels": 66,
-      "percent": 23.6
-    },
-    {
-      "id": "I6935:390225;1308:6749",
-      "name": "100%",
-      "pixels": 67,
-      "percent": 19.9
-    },
-    {
-      "id": "I6935:390228;1308:6749",
-      "name": "100%",
-      "pixels": 67,
-      "percent": 19.9
-    },
     {
       "id": "I6935:390129;1590:881",
       "name": "Th2, 14.09.2026",
@@ -108,6 +66,48 @@
       "name": "Label",
       "pixels": 65,
       "percent": 2.5
+    },
+    {
+      "id": "6935:390141",
+      "name": "Tỷ lệ đi học trên 80%",
+      "pixels": 366,
+      "percent": 2.5
+    },
+    {
+      "id": "I6935:390088;2245:87768",
+      "name": "Label",
+      "pixels": 69,
+      "percent": 2.4
+    },
+    {
+      "id": "I6935:390081;1971:7432",
+      "name": "Label",
+      "pixels": 50,
+      "percent": 2.1
+    },
+    {
+      "id": "6935:390127",
+      "name": "Nhắc nhở học viên trước buổi học tại GG Chat",
+      "pixels": 294,
+      "percent": 2.1
+    },
+    {
+      "id": "I6935:390004;2008:31709",
+      "name": "Phụ Trách Lớp Đắc Nhân",
+      "pixels": 50,
+      "percent": 1.9
+    },
+    {
+      "id": "6935:390229",
+      "name": "Ngày mai (07.10.2026)",
+      "pixels": 80,
+      "percent": 1.9
+    },
+    {
+      "id": "I6935:390089;2245:87829",
+      "name": "Label",
+      "pixels": 45,
+      "percent": 1.8
     }
   ],
   "regions": [
@@ -453,7 +453,7 @@
     "over": []
   },
   "failures": [],
-  "url": "http://localhost:3108/quy-trinh/task-hom-nay-da-chon-them-nguoi-dk",
+  "url": "http://localhost:3000/quy-trinh/task-hom-nay-da-chon-them-nguoi-dk",
   "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
   "consoleErrors": [],
   "rootFound": true

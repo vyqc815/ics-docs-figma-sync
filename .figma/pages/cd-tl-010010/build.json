@@ -1,0 +1,30 @@
+{
+  "route": "/tools/giong-doc/dang-tao",
+  "pageFile": "components/figma/cd-tl-010010/index.tsx",
+  "docFile": "docs/pages/tools/giong-doc/dang-tao.md",
+  "sections": [
+    {
+      "nodeId": "6133:124293",
+      "component": "Applayoutwrapper",
+      "file": "components/figma/shared/Applayoutwrapper.tsx"
+    },
+    {
+      "nodeId": "6133:124294",
+      "component": "SidebarMenuCd",
+      "file": "components/figma/cd-tl-010010/SidebarMenuCd.tsx"
+    },
+    {
+      "nodeId": "6133:124295",
+      "component": "Header",
+      "file": "components/figma/cd-tl-010010/Header.tsx"
+    },
+    {
+      "nodeId": "6133:124345",
+      "component": "MainGiongDoc",
+      "file": "components/figma/cd-tl-010010/MainGiongDoc.tsx"
+    }
+  ],
+  "idAlias": {
+    "6133:124293": "714:16697"
+  }
+}

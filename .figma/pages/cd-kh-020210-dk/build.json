@@ -1,0 +1,32 @@
+{
+  "route": "/lo-trinh/o-da-khoa-tooltip-du-buoi-dk",
+  "pageFile": "components/figma/cd-kh-020210-dk/index.tsx",
+  "docFile": "docs/pages/lo-trinh/o-da-khoa-tooltip-du-buoi-dk.md",
+  "sections": [
+    {
+      "nodeId": "6518:359276",
+      "component": "MainWorkspacecontainer",
+      "file": "components/figma/cd-kh-020210-dk/MainWorkspacecontainer.tsx"
+    },
+    {
+      "nodeId": "6518:360303",
+      "component": "SidebarMenuCd2",
+      "file": "components/figma/shared/SidebarMenuCd2.tsx"
+    },
+    {
+      "nodeId": "6518:360304",
+      "component": "Header48",
+      "file": "components/figma/shared/Header48.tsx"
+    },
+    {
+      "nodeId": "6518:372769",
+      "component": "HoverOBiKhoa",
+      "file": "components/figma/cd-kh-020210-dk/HoverOBiKhoa.tsx"
+    },
+    {
+      "nodeId": "6518:372770",
+      "component": "TooltipDaDuBuoi",
+      "file": "components/figma/cd-kh-020210-dk/TooltipDaDuBuoi.tsx"
+    }
+  ]
+}

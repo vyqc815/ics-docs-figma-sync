@@ -12,43 +12,13 @@
   "pixels": {
     "width": 1440,
     "height": 1594,
-    "mismatched": 3909,
-    "percent": 0.17,
+    "mismatched": 3117,
+    "percent": 0.136,
     "shapePercent": 0.002,
-    "textPercent": 1.203,
+    "textPercent": 0.956,
     "sizeMismatch": false
   },
   "textNodes": [
-    {
-      "id": "I5425:295961;1308:6749",
-      "name": "100%",
-      "pixels": 70,
-      "percent": 19.4
-    },
-    {
-      "id": "I5425:296004;1308:6749",
-      "name": "100%",
-      "pixels": 70,
-      "percent": 19.4
-    },
-    {
-      "id": "I5425:296812;2245:87914",
-      "name": "Label",
-      "pixels": 764,
-      "percent": 19
-    },
-    {
-      "id": "I5425:295970;1308:6749",
-      "name": "100%",
-      "pixels": 53,
-      "percent": 17.7
-    },
-    {
-      "id": "I5425:295979;1308:6749",
-      "name": "100%",
-      "pixels": 42,
-      "percent": 15.8
-    },
     {
       "id": "I5425:296808;2245:87908",
       "name": "Label",
@@ -66,6 +36,12 @@
       "name": "Huong-dan-hoc-vien.mp4",
       "pixels": 103,
       "percent": 5.7
+    },
+    {
+      "id": "I5425:296812;2245:87914",
+      "name": "Label",
+      "pixels": 207,
+      "percent": 5.1
     },
     {
       "id": "I5425:296813;2245:87908",
@@ -108,6 +84,30 @@
       "name": "MINITEST 5 - PERSÖNLICHE DATEN",
       "pixels": 301,
       "percent": 3.2
+    },
+    {
+      "id": "I5425:295853;2808:42233",
+      "name": "Tìm nội dung...",
+      "pixels": 383,
+      "percent": 2.8
+    },
+    {
+      "id": "I5425:296820;2245:87908",
+      "name": "Label",
+      "pixels": 60,
+      "percent": 2.8
+    },
+    {
+      "id": "I5425:296816;2245:87908",
+      "name": "Label",
+      "pixels": 58,
+      "percent": 2.7
+    },
+    {
+      "id": "5425:295847",
+      "name": "Hiện Tên",
+      "pixels": 27,
+      "percent": 2.5
     }
   ],
   "regions": [
@@ -501,7 +501,7 @@
     "over": []
   },
   "failures": [],
-  "url": "http://localhost:3108/chi-tiet-lop/bai-tap-va-kiem-tra/man-cham-bai-dk",
+  "url": "http://localhost:3000/chi-tiet-lop/bai-tap-va-kiem-tra/man-cham-bai-dk",
   "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
   "consoleErrors": [],
   "rootFound": true

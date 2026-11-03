@@ -1,6 +1,6 @@
 # Fidelity: CD-KH-050400 — Kỹ năng (S6) / Nói
 
-- URL: `http://localhost:3108/ky-nang-s6/noi`
+- URL: `http://localhost:3000/ky-nang-s6/noi`
 - Verdict: **PASS**
 - Pixels outside text: **0.005%** differ (limit 0.5%); all pixels: 0.072%; inside text boxes: 0.309% (glyph rendering)
 - Boxes: 428/428 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 424, ≤1px: 428, ≤2px: 428, ≤4px: 428, >4px: 0

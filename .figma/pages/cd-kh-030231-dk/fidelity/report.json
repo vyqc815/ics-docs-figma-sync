@@ -1,0 +1,796 @@
+{
+  "pass": true,
+  "thresholds": {
+    "maxPixelDiffPercent": 0.5,
+    "maxBoxDelta": 1,
+    "maxTextBoxDelta": 2.5,
+    "colorThreshold": 0.1,
+    "aaRadius": 1,
+    "subpixel": true,
+    "maxTextNodeDiffPercent": 35
+  },
+  "pixels": {
+    "width": 980,
+    "height": 802,
+    "mismatched": 5068,
+    "percent": 0.645,
+    "shapePercent": 0.307,
+    "textPercent": 3.156,
+    "sizeMismatch": false
+  },
+  "textNodes": [
+    {
+      "id": "6015:64941",
+      "name": "ÔN TẬP HK I – HK II (BUỔI 1)",
+      "pixels": 604,
+      "percent": 13.5
+    },
+    {
+      "id": "I6015:64963;2808:43055",
+      "name": "Tài liệu học tập (3)",
+      "pixels": 174,
+      "percent": 6.9
+    },
+    {
+      "id": "I6015:64967;2808:43076",
+      "name": "Video bài giảng (2)",
+      "pixels": 135,
+      "percent": 5.2
+    },
+    {
+      "id": "I6015:64971;2808:43086",
+      "name": "Hình ảnh (4)",
+      "pixels": 89,
+      "percent": 5.2
+    },
+    {
+      "id": "6015:64973",
+      "name": "Chưa có hình ảnh nào.",
+      "pixels": 139,
+      "percent": 4.8
+    },
+    {
+      "id": "I6015:64975;2808:43096",
+      "name": "Link tham khảo (2)",
+      "pixels": 121,
+      "percent": 4.7
+    },
+    {
+      "id": "6015:64965",
+      "name": "Chưa có tài liệu học tập nào.",
+      "pixels": 169,
+      "percent": 4.6
+    },
+    {
+      "id": "6015:64969",
+      "name": "Chưa có video bài giảng nào.",
+      "pixels": 170,
+      "percent": 4.5
+    },
+    {
+      "id": "I6015:64975;2808:43098",
+      "name": "Đường dẫn tài liệu, website, video tham khảo, ...",
+      "pixels": 270,
+      "percent": 4.5
+    },
+    {
+      "id": "6015:64977",
+      "name": "Chưa có link tham khảo nào.",
+      "pixels": 163,
+      "percent": 4.5
+    },
+    {
+      "id": "I6015:64967;2808:43078",
+      "name": "Video minh hoạ, bài giảng, hướng dẫn phát âm, ...",
+      "pixels": 228,
+      "percent": 3.6
+    },
+    {
+      "id": "I6015:64943;2808:42802",
+      "name": "Badge",
+      "pixels": 48,
+      "percent": 3.5
+    },
+    {
+      "id": "I6015:64971;2808:43088",
+      "name": "Hình ảnh, sơ đồ, bảng biểu, flashcard, ...",
+      "pixels": 137,
+      "percent": 2.8
+    },
+    {
+      "id": "I6015:64955;868:21315",
+      "name": "Nội dung",
+      "pixels": 33,
+      "percent": 2.1
+    },
+    {
+      "id": "I6015:64959;2808:42278",
+      "name": "Tìm nội dung...",
+      "pixels": 79,
+      "percent": 1.5
+    }
+  ],
+  "regions": [
+    {
+      "x": 16,
+      "y": 408,
+      "width": 952,
+      "height": 72,
+      "pixels": 455,
+      "node": {
+        "id": "6015:64969",
+        "name": "Chưa có video bài giảng nào.",
+        "role": "text"
+      }
+    },
+    {
+      "x": 16,
+      "y": 296,
+      "width": 952,
+      "height": 56,
+      "pixels": 432,
+      "node": {
+        "id": "6015:64965",
+        "name": "Chưa có tài liệu học tập nào.",
+        "role": "text"
+      }
+    },
+    {
+      "x": 16,
+      "y": 536,
+      "width": 952,
+      "height": 64,
+      "pixels": 432,
+      "node": {
+        "id": "6015:64973",
+        "name": "Chưa có hình ảnh nào.",
+        "role": "text"
+      }
+    },
+    {
+      "x": 16,
+      "y": 664,
+      "width": 952,
+      "height": 56,
+      "pixels": 432,
+      "node": {
+        "id": "6015:64977",
+        "name": "Chưa có link tham khảo nào.",
+        "role": "text"
+      }
+    },
+    {
+      "x": 288,
+      "y": 296,
+      "width": 168,
+      "height": 8,
+      "pixels": 45,
+      "node": {
+        "id": "6015:64964",
+        "name": "Empty / tài liệu học tập",
+        "role": "container"
+      }
+    },
+    {
+      "x": 288,
+      "y": 416,
+      "width": 168,
+      "height": 8,
+      "pixels": 45,
+      "node": {
+        "id": "6015:64966",
+        "name": "Section - MỤC 2: Video bài giảng (0)",
+        "role": "container"
+      }
+    },
+    {
+      "x": 288,
+      "y": 536,
+      "width": 168,
+      "height": 8,
+      "pixels": 45,
+      "node": {
+        "id": "6015:64970",
+        "name": "Section - MỤC 3: Hình ảnh (0)",
+        "role": "container"
+      }
+    },
+    {
+      "x": 288,
+      "y": 664,
+      "width": 168,
+      "height": 8,
+      "pixels": 45,
+      "node": {
+        "id": "6015:64976",
+        "name": "Empty / link tham khảo",
+        "role": "container"
+      }
+    },
+    {
+      "x": 504,
+      "y": 296,
+      "width": 168,
+      "height": 8,
+      "pixels": 44,
+      "node": {
+        "id": "6015:64964",
+        "name": "Empty / tài liệu học tập",
+        "role": "container"
+      }
+    },
+    {
+      "x": 504,
+      "y": 416,
+      "width": 168,
+      "height": 8,
+      "pixels": 44,
+      "node": {
+        "id": "6015:64966",
+        "name": "Section - MỤC 2: Video bài giảng (0)",
+        "role": "container"
+      }
+    },
+    {
+      "x": 504,
+      "y": 536,
+      "width": 168,
+      "height": 8,
+      "pixels": 44,
+      "node": {
+        "id": "6015:64970",
+        "name": "Section - MỤC 3: Hình ảnh (0)",
+        "role": "container"
+      }
+    },
+    {
+      "x": 504,
+      "y": 664,
+      "width": 168,
+      "height": 8,
+      "pixels": 44,
+      "node": {
+        "id": "6015:64976",
+        "name": "Empty / link tham khảo",
+        "role": "container"
+      }
+    },
+    {
+      "x": 760,
+      "y": 296,
+      "width": 168,
+      "height": 8,
+      "pixels": 43,
+      "node": {
+        "id": "6015:64964",
+        "name": "Empty / tài liệu học tập",
+        "role": "container"
+      }
+    },
+    {
+      "x": 760,
+      "y": 416,
+      "width": 168,
+      "height": 8,
+      "pixels": 43,
+      "node": {
+        "id": "6015:64966",
+        "name": "Section - MỤC 2: Video bài giảng (0)",
+        "role": "container"
+      }
+    },
+    {
+      "x": 760,
+      "y": 536,
+      "width": 168,
+      "height": 8,
+      "pixels": 43,
+      "node": {
+        "id": "6015:64970",
+        "name": "Section - MỤC 3: Hình ảnh (0)",
+        "role": "container"
+      }
+    },
+    {
+      "x": 760,
+      "y": 664,
+      "width": 168,
+      "height": 8,
+      "pixels": 43,
+      "node": {
+        "id": "6015:64976",
+        "name": "Empty / link tham khảo",
+        "role": "container"
+      }
+    },
+    {
+      "x": 16,
+      "y": 376,
+      "width": 32,
+      "height": 16,
+      "pixels": 24,
+      "node": {
+        "id": "I6015:64967;2808:43070",
+        "name": "Background",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 24,
+      "y": 504,
+      "width": 16,
+      "height": 16,
+      "pixels": 12,
+      "node": {
+        "id": "I6015:64971;2808:43081",
+        "name": "Background",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 248,
+      "y": 296,
+      "width": 32,
+      "height": 8,
+      "pixels": 6,
+      "node": {
+        "id": "6015:64964",
+        "name": "Empty / tài liệu học tập",
+        "role": "container"
+      }
+    },
+    {
+      "x": 464,
+      "y": 296,
+      "width": 32,
+      "height": 8,
+      "pixels": 6,
+      "node": {
+        "id": "6015:64964",
+        "name": "Empty / tài liệu học tập",
+        "role": "container"
+      }
+    },
+    {
+      "x": 680,
+      "y": 296,
+      "width": 32,
+      "height": 8,
+      "pixels": 6,
+      "node": {
+        "id": "6015:64964",
+        "name": "Empty / tài liệu học tập",
+        "role": "container"
+      }
+    },
+    {
+      "x": 720,
+      "y": 296,
+      "width": 32,
+      "height": 8,
+      "pixels": 6,
+      "node": {
+        "id": "6015:64964",
+        "name": "Empty / tài liệu học tập",
+        "role": "container"
+      }
+    },
+    {
+      "x": 248,
+      "y": 416,
+      "width": 32,
+      "height": 8,
+      "pixels": 6,
+      "node": {
+        "id": "6015:64966",
+        "name": "Section - MỤC 2: Video bài giảng (0)",
+        "role": "container"
+      }
+    },
+    {
+      "x": 464,
+      "y": 416,
+      "width": 32,
+      "height": 8,
+      "pixels": 6,
+      "node": {
+        "id": "6015:64966",
+        "name": "Section - MỤC 2: Video bài giảng (0)",
+        "role": "container"
+      }
+    },
+    {
+      "x": 680,
+      "y": 416,
+      "width": 32,
+      "height": 8,
+      "pixels": 6,
+      "node": {
+        "id": "6015:64966",
+        "name": "Section - MỤC 2: Video bài giảng (0)",
+        "role": "container"
+      }
+    },
+    {
+      "x": 720,
+      "y": 416,
+      "width": 32,
+      "height": 8,
+      "pixels": 6,
+      "node": {
+        "id": "6015:64966",
+        "name": "Section - MỤC 2: Video bài giảng (0)",
+        "role": "container"
+      }
+    },
+    {
+      "x": 248,
+      "y": 536,
+      "width": 32,
+      "height": 8,
+      "pixels": 6,
+      "node": {
+        "id": "6015:64970",
+        "name": "Section - MỤC 3: Hình ảnh (0)",
+        "role": "container"
+      }
+    },
+    {
+      "x": 464,
+      "y": 536,
+      "width": 32,
+      "height": 8,
+      "pixels": 6,
+      "node": {
+        "id": "6015:64970",
+        "name": "Section - MỤC 3: Hình ảnh (0)",
+        "role": "container"
+      }
+    },
+    {
+      "x": 680,
+      "y": 536,
+      "width": 32,
+      "height": 8,
+      "pixels": 6,
+      "node": {
+        "id": "6015:64970",
+        "name": "Section - MỤC 3: Hình ảnh (0)",
+        "role": "container"
+      }
+    },
+    {
+      "x": 720,
+      "y": 536,
+      "width": 32,
+      "height": 8,
+      "pixels": 6,
+      "node": {
+        "id": "6015:64970",
+        "name": "Section - MỤC 3: Hình ảnh (0)",
+        "role": "container"
+      }
+    }
+  ],
+  "boxes": {
+    "measured": 107,
+    "missing": [],
+    "withinThreshold": 107,
+    "buckets": {
+      "≤0.5px": 106,
+      "≤1px": 107,
+      "≤2px": 107,
+      "≤4px": 107,
+      ">4px": 0
+    },
+    "worst": [
+      {
+        "id": "6015:64941",
+        "name": "ÔN TẬP HK I – HK II (BUỔI 1)",
+        "role": "text",
+        "delta": 0.97,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.97,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6015:64969",
+        "name": "Chưa có video bài giảng nào.",
+        "role": "text",
+        "delta": 0.42,
+        "dx": -0.22,
+        "dy": 0,
+        "dw": 0.42,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6015:64965",
+        "name": "Chưa có tài liệu học tập nào.",
+        "role": "text",
+        "delta": 0.36,
+        "dx": -0.19,
+        "dy": 0,
+        "dw": 0.36,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6015:64977",
+        "name": "Chưa có link tham khảo nào.",
+        "role": "text",
+        "delta": 0.16,
+        "dx": -0.08,
+        "dy": 0,
+        "dw": 0.16,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6015:64963;2808:43055",
+        "name": "Tài liệu học tập (3)",
+        "role": "text",
+        "delta": 0.08,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.08,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6015:64935;2808:42158",
+        "name": "Title",
+        "role": "container",
+        "delta": 0.06,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.06,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6015:64935;2808:42162",
+        "name": "Heading 2",
+        "role": "container",
+        "delta": 0.06,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.06,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6015:64935;2808:42163",
+        "name": "Title",
+        "role": "text",
+        "delta": 0.06,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.06,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6015:64943",
+        "name": "Atom/Badge",
+        "role": "instance",
+        "delta": 0.03,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.03,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6015:64943;2808:42802",
+        "name": "Badge",
+        "role": "text",
+        "delta": 0.03,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.03,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6015:64944",
+        "name": "•",
+        "role": "text",
+        "delta": 0.03,
+        "dx": 0.03,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6015:64945",
+        "name": "90 phút",
+        "role": "text",
+        "delta": 0.03,
+        "dx": 0.03,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6015:64946",
+        "name": "•",
+        "role": "text",
+        "delta": 0.03,
+        "dx": 0.03,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6015:64947",
+        "name": "Ngày tạo: 12.09.2025",
+        "role": "text",
+        "delta": 0.03,
+        "dx": 0.03,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6015:64948",
+        "name": "•",
+        "role": "text",
+        "delta": 0.03,
+        "dx": 0.03,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6015:64949",
+        "name": "Ngày cập nhật: 16.09.2025",
+        "role": "text",
+        "delta": 0.03,
+        "dx": 0.03,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6015:64935",
+        "name": "Popup/Header",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6015:64935;2808:42159",
+        "name": "Background",
+        "role": "icon",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6015:64936",
+        "name": "Body",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6015:64937",
+        "name": "ModalHeader",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6015:64938",
+        "name": "Big Lesson Heading & Tags",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6015:64939",
+        "name": "Heading 1",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6015:64940",
+        "name": "Atom/ID Badge",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6015:64940;2053:24633",
+        "name": "ID",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6015:64942",
+        "name": "Container",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      }
+    ],
+    "maxDelta": 0.97,
+    "over": []
+  },
+  "failures": [],
+  "url": "http://localhost:3000/hoc-ky/bai-hoc/popup-chi-tiet-bai-hoc-3/tai-nguyen/tung-muc-trong-dk",
+  "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
+  "consoleErrors": [],
+  "rootFound": true
+}

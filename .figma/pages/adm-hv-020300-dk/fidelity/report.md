@@ -1,8 +1,8 @@
 # Fidelity: ADM-HV-020300-DK — Chi tiết học viên / Học phí
 
-- URL: `http://localhost:3108/chi-tiet-hoc-vien/hoc-phi-dk`
+- URL: `http://localhost:3000/chi-tiet-hoc-vien/hoc-phi-dk`
 - Verdict: **PASS**
-- Pixels outside text: **0.002%** differ (limit 0.5%); all pixels: 0.183%; inside text boxes: 1.406% (glyph rendering)
+- Pixels outside text: **0.002%** differ (limit 0.5%); all pixels: 0.161%; inside text boxes: 1.235% (glyph rendering)
 - Boxes: 350/350 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 350, ≤1px: 350, ≤2px: 350, ≤4px: 350, >4px: 0
 
 ## Pixel regions (largest first)
@@ -16,7 +16,6 @@
 
 | Text | Differing |
 | --- | --- |
-| Label (`I4056:120817;2245:87864`) | 13.5% |
 | Số liệu (`I4056:120526;3108:125026`) | 7.6% |
 | Số liệu (`I4056:120527;3108:125026`) | 5.3% |
 | 3 (`I4056:120742;1391:17481`) | 5% |
@@ -31,6 +30,7 @@
 | Ghi chú học phí (`4056:120620`) | 2.7% |
 | Ghi chú trong lớp (`4056:120622`) | 2.6% |
 | Học viên (`4056:120612`) | 2.5% |
+| Label (`I4056:120819;2245:87858`) | 2.5% |
 
 ## Largest box differences
 

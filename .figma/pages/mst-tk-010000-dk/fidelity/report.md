@@ -1,8 +1,8 @@
 # Fidelity: MST-TK-010000-DK — Tài khoản / Danh sách tài khoản
 
-- URL: `http://localhost:3108/tai-khoan/danh-sach-tai-khoan-dk`
+- URL: `http://localhost:3000/tai-khoan/danh-sach-tai-khoan-dk`
 - Verdict: **PASS**
-- Pixels outside text: **0.011%** differ (limit 0.5%); all pixels: 0.361%; inside text boxes: 3.061% (glyph rendering)
+- Pixels outside text: **0.011%** differ (limit 0.5%); all pixels: 0.34%; inside text boxes: 2.882% (glyph rendering)
 - Boxes: 1096/1096 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 1096, ≤1px: 1096, ≤2px: 1096, ≤4px: 1096, >4px: 0
 
 ## Pixel regions (largest first)
@@ -26,7 +26,6 @@
 
 | Text | Differing |
 | --- | --- |
-| Label (`I4056:137931;2245:87864`) | 12% |
 | 13.05.2026 (`4056:138523`) | 8.1% |
 | 13.05.2026 (`4056:138694`) | 8.1% |
 | 15.05.2026 (`4056:138750`) | 8.1% |
@@ -41,6 +40,7 @@
 | Sale (`I4056:138673;3004:49431`) | 7.7% |
 | 19.07.2026 (`4056:138048`) | 7.3% |
 | 19.07.2026 (`4056:138067`) | 7.3% |
+| 19.07.2026 (`4056:138086`) | 7.3% |
 
 ## Largest box differences
 

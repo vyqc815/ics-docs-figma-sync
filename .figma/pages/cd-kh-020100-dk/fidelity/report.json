@@ -12,18 +12,18 @@
   "pixels": {
     "width": 1440,
     "height": 910,
-    "mismatched": 7370,
-    "percent": 0.562,
+    "mismatched": 7050,
+    "percent": 0.538,
     "shapePercent": 0.083,
-    "textPercent": 2.691,
+    "textPercent": 2.554,
     "sizeMismatch": false
   },
   "textNodes": [
     {
       "id": "I6015:66515;4901:220865;2245:87914",
       "name": "Label",
-      "pixels": 594,
-      "percent": 25.3
+      "pixels": 274,
+      "percent": 11.7
     },
     {
       "id": "6015:66223",
@@ -789,7 +789,7 @@
     "over": []
   },
   "failures": [],
-  "url": "http://localhost:3108/chi-tiet-khoa-hoc/tong-quan-dk",
+  "url": "http://localhost:3000/chi-tiet-khoa-hoc/tong-quan-dk",
   "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
   "consoleErrors": [],
   "rootFound": true

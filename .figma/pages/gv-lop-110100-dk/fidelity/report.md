@@ -1,15 +1,14 @@
 # Fidelity: GV-LOP-110100-DK — Chi tiết lớp / Thông tin / Thông tin
 
-- URL: `http://localhost:3108/chi-tiet-lop/thong-tin/thong-tin-dk`
+- URL: `http://localhost:3000/chi-tiet-lop/thong-tin/thong-tin-dk`
 - Verdict: **PASS**
-- Pixels outside text: **0%** differ (limit 0.5%); all pixels: 0.212%; inside text boxes: 1.653% (glyph rendering)
+- Pixels outside text: **0%** differ (limit 0.5%); all pixels: 0.183%; inside text boxes: 1.427% (glyph rendering)
 - Boxes: 177/177 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 175, ≤1px: 177, ≤2px: 177, ≤4px: 177, >4px: 0
 
 ## Text boxes with most differing pixels (limit 35%)
 
 | Text | Differing |
 | --- | --- |
-| Label (`I4333:18283;2245:87914`) | 15.7% |
 | Label (`I4899:187872;2245:87908`) | 8.5% |
 | Label (`I4333:18272;2245:87908`) | 6.3% |
 | Label (`I4333:18273;2245:87908`) | 4.9% |
@@ -24,6 +23,7 @@
 | Nhãn trường (`I4333:20500;3004:58620;2808:48145`) | 2.4% |
 | Nhãn trường (`I4333:20374;3004:58620;2808:48145`) | 2.2% |
 | Nhãn trường (`I4333:20372;3004:58620;2808:48145`) | 2.2% |
+| Nhãn trường (`I4333:20376;3004:58620;2808:48145`) | 2.2% |
 
 ## Largest box differences
 

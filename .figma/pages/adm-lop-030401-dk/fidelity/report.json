@@ -1,0 +1,532 @@
+{
+  "pass": true,
+  "thresholds": {
+    "maxPixelDiffPercent": 0.5,
+    "maxBoxDelta": 1,
+    "maxTextBoxDelta": 2.5,
+    "colorThreshold": 0.1,
+    "aaRadius": 1,
+    "subpixel": true,
+    "maxTextNodeDiffPercent": 35
+  },
+  "pixels": {
+    "width": 1440,
+    "height": 1059,
+    "mismatched": 4239,
+    "percent": 0.278,
+    "shapePercent": 0.011,
+    "textPercent": 1.478,
+    "sizeMismatch": false
+  },
+  "textNodes": [
+    {
+      "id": "4560:31966",
+      "name": "ÔN TẬP: Giữa Kỳ 1",
+      "pixels": 604,
+      "percent": 14.9
+    },
+    {
+      "id": "I4560:32304;2245:87908",
+      "name": "Label",
+      "pixels": 329,
+      "percent": 13.7
+    },
+    {
+      "id": "I4560:32302;2245:87908",
+      "name": "Label",
+      "pixels": 206,
+      "percent": 8.6
+    },
+    {
+      "id": "I4560:32370;2808:43055",
+      "name": "Tài liệu học tập (3)",
+      "pixels": 185,
+      "percent": 7.3
+    },
+    {
+      "id": "I4560:32378;2808:43086",
+      "name": "Hình ảnh (4)",
+      "pixels": 99,
+      "percent": 5.8
+    },
+    {
+      "id": "I4560:32374;2808:43076",
+      "name": "Video bài giảng (2)",
+      "pixels": 150,
+      "percent": 5.7
+    },
+    {
+      "id": "I4560:32382;2808:43096",
+      "name": "Link tham khảo (2)",
+      "pixels": 130,
+      "percent": 5
+    },
+    {
+      "id": "I4560:32382;2808:43098",
+      "name": "Đường dẫn tài liệu, website, video tham khảo, ...",
+      "pixels": 284,
+      "percent": 4.7
+    },
+    {
+      "id": "I4560:32305;2245:87908",
+      "name": "Label",
+      "pixels": 104,
+      "percent": 4.3
+    },
+    {
+      "id": "4560:32123",
+      "name": "Danh sách bài học",
+      "pixels": 179,
+      "percent": 3.9
+    },
+    {
+      "id": "4560:32137",
+      "name": "ÔN TẬP: Giữa Kỳ 1",
+      "pixels": 215,
+      "percent": 3.9
+    },
+    {
+      "id": "I4560:32374;2808:43078",
+      "name": "Video minh hoạ, bài giảng, hướng dẫn phát âm, ...",
+      "pixels": 236,
+      "percent": 3.8
+    },
+    {
+      "id": "I4560:32178;1050:2409",
+      "name": "Badge",
+      "pixels": 7,
+      "percent": 3.5
+    },
+    {
+      "id": "I4560:32307;2245:87908",
+      "name": "Label",
+      "pixels": 73,
+      "percent": 3
+    },
+    {
+      "id": "I4560:32378;2808:43088",
+      "name": "Hình ảnh, sơ đồ, bảng biểu, flashcard, ...",
+      "pixels": 144,
+      "percent": 2.9
+    }
+  ],
+  "regions": [
+    {
+      "x": 320,
+      "y": 472,
+      "width": 40,
+      "height": 16,
+      "pixels": 25,
+      "node": {
+        "id": "I4560:32378;2808:43081",
+        "name": "Background",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 320,
+      "y": 584,
+      "width": 40,
+      "height": 16,
+      "pixels": 25,
+      "node": {
+        "id": "I4560:32382;2808:43091",
+        "name": "Background",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 328,
+      "y": 328,
+      "width": 24,
+      "height": 16,
+      "pixels": 24,
+      "node": {
+        "id": "I4560:32374;2808:43070",
+        "name": "Background",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 320,
+      "y": 360,
+      "width": 40,
+      "height": 8,
+      "pixels": 24,
+      "node": {
+        "id": "4560:32374",
+        "name": "Molecule/Section Header",
+        "role": "instance"
+      }
+    },
+    {
+      "x": 328,
+      "y": 448,
+      "width": 24,
+      "height": 8,
+      "pixels": 22,
+      "node": {
+        "id": "I4560:32378;2808:43081",
+        "name": "Background",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 328,
+      "y": 560,
+      "width": 24,
+      "height": 16,
+      "pixels": 22,
+      "node": {
+        "id": "I4560:32382;2808:43091",
+        "name": "Background",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 480,
+      "y": 88,
+      "width": 8,
+      "height": 24,
+      "pixels": 11,
+      "node": {
+        "id": "4560:31966",
+        "name": "ÔN TẬP: Giữa Kỳ 1",
+        "role": "text"
+      }
+    },
+    {
+      "x": 24,
+      "y": 760,
+      "width": 8,
+      "height": 8,
+      "pixels": 4,
+      "node": {
+        "id": "4560:32336",
+        "name": "LOGO CENTER",
+        "role": "icon"
+      }
+    }
+  ],
+  "boxes": {
+    "measured": 237,
+    "missing": [],
+    "withinThreshold": 237,
+    "buckets": {
+      "≤0.5px": 236,
+      "≤1px": 236,
+      "≤2px": 236,
+      "≤4px": 237,
+      ">4px": 0
+    },
+    "worst": [
+      {
+        "id": "4560:31966",
+        "name": "ÔN TẬP: Giữa Kỳ 1",
+        "role": "text",
+        "delta": 2.38,
+        "dx": 0,
+        "dy": 0,
+        "dw": 2.38,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4560:32376",
+        "name": "Chưa có video bài giảng nào.",
+        "role": "text",
+        "delta": 0.42,
+        "dx": -0.22,
+        "dy": 0,
+        "dw": 0.42,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4560:32372",
+        "name": "Chưa có tài liệu học tập nào.",
+        "role": "text",
+        "delta": 0.36,
+        "dx": -0.19,
+        "dy": 0,
+        "dw": 0.36,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4560:32384",
+        "name": "Chưa có link tham khảo nào.",
+        "role": "text",
+        "delta": 0.16,
+        "dx": -0.08,
+        "dy": 0,
+        "dw": 0.16,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4560:32370;2808:43055",
+        "name": "Tài liệu học tập (3)",
+        "role": "text",
+        "delta": 0.08,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.08,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4560:32247",
+        "name": "Subtract",
+        "role": "icon",
+        "delta": 0.01,
+        "dx": -0.01,
+        "dy": -0.01,
+        "dw": -0.01,
+        "dh": 0,
+        "limit": 1,
+        "textDriven": false
+      },
+      {
+        "id": "4560:32254",
+        "name": "Intersect",
+        "role": "icon",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": -0.01,
+        "dw": -0.01,
+        "dh": 0,
+        "limit": 1,
+        "textDriven": false
+      },
+      {
+        "id": "4560:32268",
+        "name": "Vector",
+        "role": "icon",
+        "delta": 0.01,
+        "dx": 0.01,
+        "dy": 0,
+        "dw": 0,
+        "dh": -0.01,
+        "limit": 1,
+        "textDriven": false
+      },
+      {
+        "id": "4560:32269",
+        "name": "Union",
+        "role": "icon",
+        "delta": 0.01,
+        "dx": -0.01,
+        "dy": 0,
+        "dw": -0.01,
+        "dh": -0.01,
+        "limit": 1,
+        "textDriven": false
+      },
+      {
+        "id": "4560:32272",
+        "name": "Group 240002",
+        "role": "icon",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": -0.01,
+        "limit": 1,
+        "textDriven": false
+      },
+      {
+        "id": "4560:31962",
+        "name": "Body",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 1,
+        "textDriven": false
+      },
+      {
+        "id": "4560:31963",
+        "name": "MainContent",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4560:31964",
+        "name": "Frame 427321965",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4560:31965",
+        "name": "Frame 427321964",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4560:31967",
+        "name": "Tabs Navigation",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4560:31968",
+        "name": "Atom/Side Tab",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4560:31968;2177:28927",
+        "name": "Container",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4560:31968;2177:28928",
+        "name": "Chi tiết NV",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4560:31969",
+        "name": "Atom/Side Tab",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4560:31969;2177:28927",
+        "name": "Container",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4560:31969;2177:28928",
+        "name": "Chi tiết NV",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4560:31970",
+        "name": "Atom/Side Tab",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4560:31970;2177:28927",
+        "name": "Container",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4560:31970;2177:28928",
+        "name": "Chi tiết NV",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4560:31971",
+        "name": "Atom/Side Tab",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      }
+    ],
+    "maxDelta": 2.38,
+    "over": []
+  },
+  "failures": [],
+  "url": "http://localhost:3000/lop-hoc/bai-hoc/tai-nguyen/tung-muc-trong-dk",
+  "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
+  "consoleErrors": [],
+  "rootFound": true
+}

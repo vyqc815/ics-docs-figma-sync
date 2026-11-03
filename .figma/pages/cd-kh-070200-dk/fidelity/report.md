@@ -1,8 +1,8 @@
 # Fidelity: CD-KH-070200-DK — Thư viện / Kỹ năng / Nghe
 
-- URL: `http://localhost:3108/thu-vien/ky-nang/nghe-dk`
+- URL: `http://localhost:3000/thu-vien/ky-nang/nghe-dk`
 - Verdict: **PASS**
-- Pixels outside text: **0.092%** differ (limit 0.5%); all pixels: 0.239%; inside text boxes: 1.519% (glyph rendering)
+- Pixels outside text: **0.092%** differ (limit 0.5%); all pixels: 0.223%; inside text boxes: 1.354% (glyph rendering)
 - Boxes: 362/362 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 360, ≤1px: 362, ≤2px: 362, ≤4px: 362, >4px: 0
 
 ## Pixel regions (largest first)
@@ -44,7 +44,6 @@
 
 | Text | Differing |
 | --- | --- |
-| Label (`I6579:372654;5491:352118;2245:87914`) | 15.4% |
 | Label (`I6579:372654;5491:352101;2245:87908`) | 13% |
 | Label (`I6579:372324;2015:30513`) | 6.3% |
 | Label (`I6579:372654;5491:352103;2245:87908`) | 6.1% |
@@ -59,6 +58,7 @@
 | Label (`I6579:372654;5491:352114;2245:87908`) | 3.6% |
 | Label (`I6579:372654;5491:352110;2245:87908`) | 3.4% |
 | Label (`I6579:372654;5491:352115;2245:87908`) | 3.3% |
+| Label (`I6579:372654;5491:352118;2245:87914`) | 3.2% |
 
 ## Largest box differences
 

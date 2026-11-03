@@ -1,0 +1,22 @@
+{
+  "route": "/voucher/popup-tao-voucher-dk",
+  "pageFile": "components/figma/adm-vc-010010-dk/index.tsx",
+  "docFile": "docs/pages/voucher/popup-tao-voucher-dk.md",
+  "sections": [
+    {
+      "nodeId": "4056:129990",
+      "component": "PopupHeader",
+      "file": "components/figma/adm-vc-010010-dk/PopupHeader.tsx"
+    },
+    {
+      "nodeId": "4056:129991",
+      "component": "Body",
+      "file": "components/figma/adm-vc-010010-dk/Body.tsx"
+    },
+    {
+      "nodeId": "4056:130024",
+      "component": "PopupFooter",
+      "file": "components/figma/adm-vc-010010-dk/PopupFooter.tsx"
+    }
+  ]
+}

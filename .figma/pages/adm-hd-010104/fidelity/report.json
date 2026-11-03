@@ -1,0 +1,460 @@
+{
+  "pass": true,
+  "thresholds": {
+    "maxPixelDiffPercent": 0.5,
+    "maxBoxDelta": 1,
+    "maxTextBoxDelta": 2.5,
+    "colorThreshold": 0.1,
+    "aaRadius": 1,
+    "subpixel": true,
+    "maxTextNodeDiffPercent": 35
+  },
+  "pixels": {
+    "width": 1440,
+    "height": 1239,
+    "mismatched": 3321,
+    "percent": 0.186,
+    "shapePercent": 0.002,
+    "textPercent": 1.052,
+    "sizeMismatch": false
+  },
+  "textNodes": [
+    {
+      "id": "3058:104642",
+      "name": "Email",
+      "pixels": 253,
+      "percent": 5.4
+    },
+    {
+      "id": "3058:104621",
+      "name": "#",
+      "pixels": 8,
+      "percent": 3.8
+    },
+    {
+      "id": "3058:104485",
+      "name": "Danh sách hoá đơn",
+      "pixels": 178,
+      "percent": 3.5
+    },
+    {
+      "id": "I3058:104494;2015:36092",
+      "name": "Value",
+      "pixels": 44,
+      "percent": 3.2
+    },
+    {
+      "id": "3058:104633",
+      "name": "Ghi chú trong lớp",
+      "pixels": 69,
+      "percent": 3.2
+    },
+    {
+      "id": "3058:104627",
+      "name": "Lớp",
+      "pixels": 15,
+      "percent": 3
+    },
+    {
+      "id": "3058:104631",
+      "name": "Ghi chú học phí",
+      "pixels": 58,
+      "percent": 3
+    },
+    {
+      "id": "3058:104641",
+      "name": "Tên học viên",
+      "pixels": 42,
+      "percent": 2.9
+    },
+    {
+      "id": "3058:104755",
+      "name": "DN1-127",
+      "pixels": 31,
+      "percent": 2.9
+    },
+    {
+      "id": "I3058:104491;2015:36092",
+      "name": "Value",
+      "pixels": 62,
+      "percent": 2.8
+    },
+    {
+      "id": "3058:104706",
+      "name": "103176",
+      "pixels": 26,
+      "percent": 2.8
+    },
+    {
+      "id": "3058:104677",
+      "name": "DN287",
+      "pixels": 24,
+      "percent": 2.7
+    },
+    {
+      "id": "3058:104872",
+      "name": "DN287",
+      "pixels": 24,
+      "percent": 2.7
+    },
+    {
+      "id": "I3065:72158;3065:71069",
+      "name": "Tiêu đề",
+      "pixels": 74,
+      "percent": 2.6
+    },
+    {
+      "id": "3058:104623",
+      "name": "Học viên",
+      "pixels": 29,
+      "percent": 2.6
+    }
+  ],
+  "regions": [
+    {
+      "x": 256,
+      "y": 1016,
+      "width": 24,
+      "height": 24,
+      "pixels": 18,
+      "node": {
+        "id": "3058:104814",
+        "name": "Checkbox",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 256,
+      "y": 1176,
+      "width": 24,
+      "height": 16,
+      "pixels": 18,
+      "node": {
+        "id": "3058:104892",
+        "name": "Checkbox",
+        "role": "icon"
+      }
+    }
+  ],
+  "boxes": {
+    "measured": 639,
+    "missing": [],
+    "withinThreshold": 639,
+    "buckets": {
+      "≤0.5px": 639,
+      "≤1px": 639,
+      "≤2px": 639,
+      "≤4px": 639,
+      ">4px": 0
+    },
+    "worst": [
+      {
+        "id": "3058:104522",
+        "name": "Lớp dự kiến",
+        "role": "text",
+        "delta": 0.34,
+        "dx": -0.17,
+        "dy": 0,
+        "dw": 0.34,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "3058:104491",
+        "name": "Lọc · Người phụ trách",
+        "role": "instance",
+        "delta": 0.3,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.3,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I3058:104491;2015:36091",
+        "name": "Content",
+        "role": "container",
+        "delta": 0.3,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.3,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I3058:104491;2015:36092",
+        "name": "Value",
+        "role": "text",
+        "delta": 0.3,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.3,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I3058:104491;2015:36093",
+        "name": "Count",
+        "role": "container",
+        "delta": 0.3,
+        "dx": 0.3,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I3058:104491;2015:36094",
+        "name": "Value",
+        "role": "text",
+        "delta": 0.3,
+        "dx": 0.3,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I3058:104491;2015:36096",
+        "name": "Chevron",
+        "role": "icon",
+        "delta": 0.3,
+        "dx": 0.3,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "3058:104492",
+        "name": "Lọc · Tuần này",
+        "role": "instance",
+        "delta": 0.3,
+        "dx": 0.3,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I3058:104492;2015:36091",
+        "name": "Content",
+        "role": "container",
+        "delta": 0.3,
+        "dx": 0.3,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I3058:104492;2015:36092",
+        "name": "Value",
+        "role": "text",
+        "delta": 0.3,
+        "dx": 0.3,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I3058:104492;2015:36096",
+        "name": "Chevron",
+        "role": "icon",
+        "delta": 0.3,
+        "dx": 0.3,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "3058:104493",
+        "name": "Lọc · Loại hoá đơn",
+        "role": "instance",
+        "delta": 0.3,
+        "dx": 0.3,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I3058:104493;2015:36091",
+        "name": "Content",
+        "role": "container",
+        "delta": 0.3,
+        "dx": 0.3,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I3058:104493;2015:36092",
+        "name": "Value",
+        "role": "text",
+        "delta": 0.3,
+        "dx": 0.3,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I3058:104493;2015:36093",
+        "name": "Count",
+        "role": "container",
+        "delta": 0.3,
+        "dx": 0.3,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I3058:104493;2015:36094",
+        "name": "Value",
+        "role": "text",
+        "delta": 0.3,
+        "dx": 0.3,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I3058:104493;2015:36096",
+        "name": "Chevron",
+        "role": "icon",
+        "delta": 0.3,
+        "dx": 0.3,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "3058:104494",
+        "name": "Lọc · Trạng thái",
+        "role": "instance",
+        "delta": 0.3,
+        "dx": 0.3,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I3058:104494;2015:36091",
+        "name": "Content",
+        "role": "container",
+        "delta": 0.3,
+        "dx": 0.3,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I3058:104494;2015:36092",
+        "name": "Value",
+        "role": "text",
+        "delta": 0.3,
+        "dx": 0.3,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I3058:104494;2015:36093",
+        "name": "Count",
+        "role": "container",
+        "delta": 0.3,
+        "dx": 0.3,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I3058:104494;2015:36094",
+        "name": "Value",
+        "role": "text",
+        "delta": 0.3,
+        "dx": 0.3,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I3058:104494;2015:36096",
+        "name": "Chevron",
+        "role": "icon",
+        "delta": 0.3,
+        "dx": 0.3,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "3058:104495",
+        "name": "Lọc · Tag",
+        "role": "instance",
+        "delta": 0.3,
+        "dx": 0.3,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I3058:104495;2015:36007",
+        "name": "Content",
+        "role": "container",
+        "delta": 0.3,
+        "dx": 0.3,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      }
+    ],
+    "maxDelta": 0.34,
+    "over": []
+  },
+  "failures": [],
+  "url": "http://localhost:3000/hoa-don/danh-sach-hoa-don/menu-chinh-sua",
+  "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
+  "consoleErrors": [],
+  "rootFound": true
+}

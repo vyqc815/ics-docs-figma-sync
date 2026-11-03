@@ -1,6 +1,6 @@
 # Fidelity: GV-LOP-020000 — Chi tiết lớp / Tổng quan
 
-- URL: `http://localhost:3108/chi-tiet-lop/tong-quan`
+- URL: `http://localhost:3000/chi-tiet-lop/tong-quan`
 - Verdict: **PASS**
 - Pixels outside text: **0.012%** differ (limit 0.5%); all pixels: 0.246%; inside text boxes: 1.062% (glyph rendering)
 - Boxes: 439/439 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 436, ≤1px: 438, ≤2px: 438, ≤4px: 439, >4px: 0

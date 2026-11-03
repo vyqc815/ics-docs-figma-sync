@@ -12,102 +12,102 @@
   "pixels": {
     "width": 1440,
     "height": 866,
-    "mismatched": 4343,
-    "percent": 0.348,
+    "mismatched": 995,
+    "percent": 0.08,
     "shapePercent": 0.036,
-    "textPercent": 2.143,
+    "textPercent": 0.3,
     "sizeMismatch": false
   },
   "textNodes": [
     {
-      "id": "I7015:12070;1391:14476",
-      "name": "80%",
-      "pixels": 92,
-      "percent": 29.9
+      "id": "7015:12065",
+      "name": "BACKUP_RESOURCE",
+      "pixels": 72,
+      "percent": 1.9
     },
     {
-      "id": "I7015:12229;6247:61496;1391:14476",
-      "name": "80%",
-      "pixels": 92,
-      "percent": 29.9
+      "id": "I7015:13210;4901:224689;3857:67911;1971:8814",
+      "name": "Value",
+      "pixels": 4,
+      "percent": 1.6
     },
     {
-      "id": "I7015:12229;6326:1360;1391:14476",
-      "name": "80%",
-      "pixels": 92,
-      "percent": 29.9
+      "id": "7015:12215",
+      "name": "Theo tháng",
+      "pixels": 37,
+      "percent": 1.5
     },
     {
-      "id": "I7015:12230;6247:61498;1391:14476",
-      "name": "80%",
-      "pixels": 92,
-      "percent": 29.9
+      "id": "7015:12045",
+      "name": "Tiếng Đức 4 Kỹ Năng A1 (v2026-new)",
+      "pixels": 50,
+      "percent": 1.4
     },
     {
-      "id": "I7015:12236;6247:61496;1391:14476",
-      "name": "80%",
-      "pixels": 92,
-      "percent": 29.9
+      "id": "7015:12089",
+      "name": "Tiếng Đức 4 Kỹ Năng A1 (v2026-new)",
+      "pixels": 50,
+      "percent": 1.4
     },
     {
-      "id": "I7015:12092;1391:14476",
-      "name": "80%",
-      "pixels": 91,
-      "percent": 29.5
+      "id": "I7015:13210;4901:224688;3857:67911;1971:8814",
+      "name": "Value",
+      "pixels": 3,
+      "percent": 1.2
     },
     {
-      "id": "I7015:12231;6326:1360;1391:14476",
-      "name": "80%",
-      "pixels": 91,
-      "percent": 29.5
+      "id": "I7015:12046;1350:13172",
+      "name": "6/20 Buổi",
+      "pixels": 15,
+      "percent": 1.2
     },
     {
-      "id": "I7015:12235;6247:61496;1391:14476",
-      "name": "80%",
-      "pixels": 91,
-      "percent": 29.5
+      "id": "7015:12067",
+      "name": "Tiếng Đức 4 Kỹ Năng A2 (v2026)",
+      "pixels": 45,
+      "percent": 1.2
     },
     {
-      "id": "I7015:12231;6247:61496;1391:14476",
-      "name": "80%",
-      "pixels": 90,
-      "percent": 29.2
+      "id": "I7015:12068;1350:13172",
+      "name": "6/20 Buổi",
+      "pixels": 12,
+      "percent": 1.1
     },
     {
-      "id": "I7015:12232;6326:1360;1391:14476",
-      "name": "80%",
-      "pixels": 90,
-      "percent": 29.2
+      "id": "7015:12087",
+      "name": "A1 - TRẢI NGHIỆM - HK1",
+      "pixels": 43,
+      "percent": 1.1
     },
     {
-      "id": "I7015:12233;6247:61498;1391:14476",
-      "name": "80%",
-      "pixels": 90,
-      "percent": 29.2
+      "id": "I7015:12217;2015:36008",
+      "name": "Value",
+      "pixels": 15,
+      "percent": 1
     },
     {
-      "id": "I7015:12234;6247:61496;1391:14476",
-      "name": "80%",
-      "pixels": 90,
-      "percent": 29.2
+      "id": "I7015:12090;1350:13172",
+      "name": "6/20 Buổi",
+      "pixels": 11,
+      "percent": 0.9
     },
     {
-      "id": "I7015:12236;6326:1360;1391:14476",
-      "name": "80%",
-      "pixels": 90,
-      "percent": 29.2
+      "id": "I7015:12096;2245:108222",
+      "name": "C",
+      "pixels": 5,
+      "percent": 0.8
     },
     {
-      "id": "I7015:12230;6326:1360;1391:14476",
-      "name": "80%",
-      "pixels": 89,
-      "percent": 28.9
+      "id": "7015:12043",
+      "name": "BD105-I",
+      "pixels": 27,
+      "percent": 0.7
     },
     {
-      "id": "I7015:12233;6247:61496;1391:14476",
-      "name": "80%",
-      "pixels": 89,
-      "percent": 28.9
+      "id": "I7015:13210;4901:224683;2245:87820",
+      "name": "Label",
+      "pixels": 16,
+      "percent": 0.6
     }
   ],
   "regions": [
@@ -597,7 +597,7 @@
     "over": []
   },
   "failures": [],
-  "url": "http://localhost:3108/trang-chu/thong-ke-theo-thang",
+  "url": "http://localhost:3000/trang-chu/thong-ke-theo-thang",
   "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
   "consoleErrors": [],
   "rootFound": true

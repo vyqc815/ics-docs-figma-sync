@@ -12,19 +12,13 @@
   "pixels": {
     "width": 1440,
     "height": 810,
-    "mismatched": 2437,
-    "percent": 0.209,
+    "mismatched": 2099,
+    "percent": 0.18,
     "shapePercent": 0.003,
-    "textPercent": 1.891,
+    "textPercent": 1.625,
     "sizeMismatch": false
   },
   "textNodes": [
-    {
-      "id": "I4056:130151;2245:87864",
-      "name": "Label",
-      "pixels": 367,
-      "percent": 14.7
-    },
     {
       "id": "I4056:130269;3567:39161",
       "name": "14.09.2026",
@@ -108,6 +102,12 @@
       "name": "Số tháng miễn phí",
       "pixels": 100,
       "percent": 2.6
+    },
+    {
+      "id": "I4056:130146;2245:87820",
+      "name": "Label",
+      "pixels": 62,
+      "percent": 2.4
     }
   ],
   "regions": [
@@ -453,7 +453,7 @@
     "over": []
   },
   "failures": [],
-  "url": "http://localhost:3108/gift-code/danh-sach-gift-code-dk",
+  "url": "http://localhost:3000/gift-code/danh-sach-gift-code-dk",
   "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
   "consoleErrors": [],
   "rootFound": true

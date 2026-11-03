@@ -1,0 +1,34 @@
+{
+  "route": "/hoc-ky/bai-hoc/popup-chi-tiet-bai-hoc-4-dk",
+  "pageFile": "components/figma/cd-kh-030240-dk/index.tsx",
+  "docFile": "docs/pages/hoc-ky/bai-hoc/popup-chi-tiet-bai-hoc-4-dk.md",
+  "sections": [
+    {
+      "nodeId": "6015:64686",
+      "component": "PopupHeader11",
+      "file": "components/figma/shared/PopupHeader11.tsx"
+    },
+    {
+      "nodeId": "6015:64687",
+      "component": "Body",
+      "file": "components/figma/cd-kh-030240-dk/Body.tsx"
+    },
+    {
+      "nodeId": "6015:64927",
+      "component": "PopupFooter7",
+      "file": "components/figma/shared/PopupFooter7.tsx"
+    }
+  ],
+  "idAlias": {
+    "6015:64686": "6015:64459",
+    "I6015:64686;2808:42158": "I6015:64459;2808:42158",
+    "I6015:64686;2808:42159": "I6015:64459;2808:42159",
+    "I6015:64686;2808:42162": "I6015:64459;2808:42162",
+    "I6015:64686;2808:42163": "I6015:64459;2808:42163",
+    "6015:64927": "6015:64510",
+    "I6015:64927;2514:153361": "I6015:64510;2514:153361",
+    "I6015:64927;2514:153361;1048:1232": "I6015:64510;2514:153361;1048:1232",
+    "I6015:64927;2514:153363": "I6015:64510;2514:153363",
+    "I6015:64927;2514:153363;1048:1230": "I6015:64510;2514:153363;1048:1230"
+  }
+}

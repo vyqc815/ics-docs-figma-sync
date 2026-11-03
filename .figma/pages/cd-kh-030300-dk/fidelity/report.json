@@ -12,10 +12,10 @@
   "pixels": {
     "width": 1440,
     "height": 910,
-    "mismatched": 4089,
-    "percent": 0.312,
+    "mismatched": 3857,
+    "percent": 0.294,
     "shapePercent": 0.133,
-    "textPercent": 1.779,
+    "textPercent": 1.603,
     "sizeMismatch": false
   },
   "textNodes": [
@@ -24,12 +24,6 @@
       "name": "Label",
       "pixels": 308,
       "percent": 13.1
-    },
-    {
-      "id": "I6015:64054;4901:220688;2245:87914",
-      "name": "Label",
-      "pixels": 271,
-      "percent": 11.6
     },
     {
       "id": "I6015:64054;5491:336922;2245:87908",
@@ -107,6 +101,12 @@
       "id": "I6015:64054;4901:220695;2245:87908",
       "name": "Label",
       "pixels": 56,
+      "percent": 2.4
+    },
+    {
+      "id": "I6015:64054;4901:220698;2245:87908",
+      "name": "Label",
+      "pixels": 57,
       "percent": 2.4
     }
   ],
@@ -777,7 +777,7 @@
     "over": []
   },
   "failures": [],
-  "url": "http://localhost:3108/hoc-ky/kiem-tra-dk",
+  "url": "http://localhost:3000/hoc-ky/kiem-tra-dk",
   "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
   "consoleErrors": [],
   "rootFound": true

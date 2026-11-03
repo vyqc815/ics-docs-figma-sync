@@ -1,6 +1,6 @@
 # Fidelity: GV-LOP-080100 — Chi tiết lớp / Mindset khoá học / Học viên
 
-- URL: `http://localhost:3108/chi-tiet-lop/mindset-khoa-hoc/hoc-vien`
+- URL: `http://localhost:3000/chi-tiet-lop/mindset-khoa-hoc/hoc-vien`
 - Verdict: **PASS**
 - Pixels outside text: **0.001%** differ (limit 0.5%); all pixels: 0.426%; inside text boxes: 2.721% (glyph rendering)
 - Boxes: 149/149 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 143, ≤1px: 147, ≤2px: 149, ≤4px: 149, >4px: 0

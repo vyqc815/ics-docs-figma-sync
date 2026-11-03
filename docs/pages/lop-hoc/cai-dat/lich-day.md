@@ -5,7 +5,7 @@
 > **Nguồn:** PLS-ICS T8/2026 ›             ├─ Cài đặt › ADM-LOP-040500 — Lớp học / Cài đặt / Lịch dạy (`2384:51914`, file `rRVs5HX0kIHffbS0V40djG`)  
 > **Route:** `/lop-hoc/cai-dat/lich-day`  
 > **Khung thiết kế:** 1440 × 860 px  
-> **Xuất lúc:** 2026-11-02T04:08:44.690Z  
+> **Xuất lúc:** 2026-11-03T00:51:18.402Z  
 > **Spec đầy đủ (giá trị chính xác từng node):** `../../../../.figma/pages/adm-lop-040500/page-spec.json`
 
 ## 1. Tổng quan
@@ -26,10 +26,15 @@ Nền trang: `#f8fafc`.
 
 | Token | Biến CSS | Giá trị | Trỏ tới | Bộ / mode |
 | --- | --- | --- | --- | --- |
+| `bg/surface` | `--bg-surface` | `#ffffff` | color/neutral/white | Theme · Semantic / Light |
+| `border/default` | `--border-default` | `#e2e8f0` | color/border/default | Theme · Semantic / Light |
+| `brand/primary` | `--brand-primary` | `#e65100` | color/brand/orange | Theme · Semantic / Light |
 | `color/brand/orange` | `--color-brand-orange` | `#e65100` |  | Color Tokens / Light |
 | `color/extended/fed7aa` | `--color-extended-fed7aa` | `#fed7aa` |  | Color Tokens / Light |
 | `color/extended/fff5ec` | `--color-extended-fff5ec` | `#fff5ec` |  | Color Tokens / Light |
+| `color/neutral/700` | `--color-neutral-700` | `#3d3d3d` |  | Color Tokens / Light |
 | `color/neutral/white` | `--color-neutral-white` | `#ffffff` |  | Color Tokens / Light |
+| `color/semantic/error-strong` | `--color-semantic-error-strong` | `#ff0000` |  | Color Tokens / Light |
 | `color/text/primary` | `--color-text-primary` | `#334155` |  | Color Tokens / Light |
 | `color/text/secondary` | `--color-text-secondary` | `#64748b` |  | Color Tokens / Light |
 | `radius/6` | `--radius-6` | `6` |  | Number Tokens / Mode 1 |
@@ -38,6 +43,7 @@ Nền trang: `#f8fafc`.
 | `spacing/12` | `--spacing-12` | `12` |  | Number Tokens / Mode 1 |
 | `spacing/4` | `--spacing-4` | `4` |  | Number Tokens / Mode 1 |
 | `spacing/8` | `--spacing-8` | `8` |  | Number Tokens / Mode 1 |
+| `text/on-brand` | `--text-on-brand` | `#ffffff` | color/neutral/white | Theme · Semantic / Light |
 
 **Style Figma đang dùng:**
 
@@ -64,9 +70,9 @@ Nền trang: `#f8fafc`.
 
 | Style | Font family | Cỡ / line-height | Độ đậm | Letter-spacing | Màu | Số lần | Ví dụ |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| `Body/17/SemiBold` | Afacad | 17 / 21px | 600 | 0 | #e65100 | 6 | “T2 - 19:00AM” |
+| `Body/17/SemiBold` | Afacad | 17 / 21px | 600 | 0 | #e65100 (brand/primary) | 6 | “T2 - 19:00AM” |
 | `Body/17/Bold` | Afacad | 17 / 21px | 700 | 0 | #334155 (color/text/primary) | 6 | “31.01” |
-| `Body/17/Bold` | Afacad | 17 / 21px | 700 | 0 | #ffffff | 1 | “02.01” |
+| `Body/17/Bold` | Afacad | 17 / 21px | 700 | 0 | #ffffff (text/on-brand) | 1 | “02.01” |
 | — | Afacad | 16 / 20px | 700 | 0 | #334155 (color/text/primary) | 10 | “DN 342” |
 | — | Afacad | 16 / 20px | 500 · case title | 0 | #64748b (color/text/secondary) | 7 | “Thông Tin” |
 | — | Afacad | 16 / 20px | 700 · case title | 0 | #ffffff | 1 | “DN0091 - 132” |
@@ -86,7 +92,7 @@ Nền trang: `#f8fafc`.
 Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí · bố cục · style`. Dòng đầu tiên là chính frame trang (gốc). Tên layer nằm trong `**…**`, chữ hiển thị nằm trong `“…”`, giá trị CSS nguyên văn nằm trong backtick: dấu `·` hay `—` **bên trong** các cặp đó là nội dung, chỉ dấu ` · ` bên ngoài mới ngăn cách các trường. Toạ độ `@ (x, y)` tính từ góc trên-trái của layer cha; layer **flow** do auto layout của cha xếp, layer **abs** đặt tuyệt đối. Các layer cùng cấp được liệt kê **theo thứ tự vẽ của Figma: layer sau nằm đè lên layer trước**. ID ở cuối dòng là node ID trong Figma.
 
 - [trang] **ADM-LOP-040500 — Lớp học / Cài đặt / Lịch dạy** — 1440×860 · bg #f8fafc `2384:51914`
-  - [khối] **MainContent** — 1140×746 · @ (300, 64) abs · column gap 12 pad 16 24 16 24 · bg #ffffff · clip `2384:51965`
+  - [khối] **MainContent** — 1140×746 · @ (300, 64) abs · column gap 12 pad 16 24 16 24 · bg #ffffff (bg/surface) · clip `2384:51965`
     - [khối] **Frame 1171274943** — 1092×36 [FILL×HUG] · @ (24, 16) flow · row gap 12 align CENTER `2384:57857`
       - [khối] **Sub Navigation Tabs** — 1092×36 [FILL×HUG] · @ (0, 0) flow · row gap 12 align CENTER `2384:57885`
         - [instance] **Atom/Side Tab** ⟨Atom/Side Tab: Có số đếm=false, State=Inactive, Icon=No, Kiểu=Gạch trái⟩ — 87×36 [HUG×HUG] · @ (0, 0) flow · row gap 8 pad 8 12 8 12 align CENTER · radius 6px `2384:57886`
@@ -122,21 +128,21 @@ Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí ·
       - [khối] **Frame 1171274927** — 850×33 [FILL×HUG] · @ (242, 0) flow · row gap 12 wrap cross-gap 8 align CENTER `2384:57637`
         - [khối] **Frame 1171274950** — 820×33 [FILL×HUG] · @ (0, 0) flow · row gap 12 align CENTER `4686:8886`
           - [khối] **Frame 427325131** — 116×33 [FIXED×HUG] · @ (0, 0) flow · row gap 8 pad 6 8 6 8 align CENTER · bg #fff9f1 · radius 6px · shadow inset 0 0 0 1px #ffedd5 `2384:57638`
-            - [chữ] “T2 - 19:00AM” — 100×21 [FIXED×HUG] · @ (8, 6) flow · Afacad 17/21px 600 #e65100 · text-align center `2384:57639`
+            - [chữ] “T2 - 19:00AM” — 100×21 [FIXED×HUG] · @ (8, 6) flow · Afacad 17/21px 600 #e65100 (brand/primary) · text-align center `2384:57639`
           - [khối] **Frame 427325132** — 116×33 [FIXED×HUG] · @ (128, 0) flow · row gap 8 pad 6 8 6 8 align CENTER · bg #fff9f1 · radius 6px · shadow inset 0 0 0 1px #ffedd5 `2384:57640`
-            - [chữ] “T3 - 19:00AM” — 100×21 [FIXED×HUG] · @ (8, 6) flow · Afacad 17/21px 600 #e65100 · text-align center `2384:57641`
+            - [chữ] “T3 - 19:00AM” — 100×21 [FIXED×HUG] · @ (8, 6) flow · Afacad 17/21px 600 #e65100 (brand/primary) · text-align center `2384:57641`
           - [khối] **Frame 427325133** — 116×33 [FIXED×HUG] · @ (256, 0) flow · row gap 8 pad 6 8 6 8 align CENTER · bg #fff9f1 · radius 6px · shadow inset 0 0 0 1px #e65100, 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `2384:57642`
-            - [chữ] “T4 - 19:00AM” — 100×21 [FIXED×HUG] · @ (8, 6) flow · Afacad 17/21px 600 #e65100 · text-align center `2384:57643`
+            - [chữ] “T4 - 19:00AM” — 100×21 [FIXED×HUG] · @ (8, 6) flow · Afacad 17/21px 600 #e65100 (brand/primary) · text-align center `2384:57643`
             - [icon] **Vector** — 17×17 · @ (108, 19) abs · file /figma/assets/510d707981fa.svg covers (-1, -1) 21×21 `2384:57644`
           - [khối] **Frame 427325134** — 116×33 [FIXED×HUG] · @ (384, 0) flow · row gap 8 pad 6 8 6 8 align CENTER · bg #fff9f1 · radius 6px · shadow inset 0 0 0 1px #ffedd5 `2384:57647`
-            - [chữ] “T5 - 19:00AM” — 100×21 [FIXED×HUG] · @ (8, 6) flow · Afacad 17/21px 600 #e65100 · text-align center `2384:57648`
+            - [chữ] “T5 - 19:00AM” — 100×21 [FIXED×HUG] · @ (8, 6) flow · Afacad 17/21px 600 #e65100 (brand/primary) · text-align center `2384:57648`
           - [khối] **Frame 427325135** — 116×33 [FIXED×HUG] · @ (512, 0) flow · row gap 8 pad 6 8 6 8 align CENTER · bg #fff9f1 · radius 6px · shadow inset 0 0 0 1px #ffedd5 `2384:57649`
-            - [chữ] “T6 - 19:00AM” — 100×21 [FIXED×HUG] · @ (8, 6) flow · Afacad 17/21px 600 #e65100 · text-align center `2384:57650`
+            - [chữ] “T6 - 19:00AM” — 100×21 [FIXED×HUG] · @ (8, 6) flow · Afacad 17/21px 600 #e65100 (brand/primary) · text-align center `2384:57650`
           - [khối] **Frame 427325136** — 116×33 [FIXED×HUG] · @ (640, 0) flow · row gap 8 pad 6 8 6 8 align CENTER · bg #fff9f1 · radius 6px · shadow inset 0 0 0 1px #ffedd5 `2384:57651`
-            - [chữ] “T7 - 19:00AM” — 100×21 [FIXED×HUG] · @ (8, 6) flow · Afacad 17/21px 600 #e65100 · text-align center `2384:57652`
+            - [chữ] “T7 - 19:00AM” — 100×21 [FIXED×HUG] · @ (8, 6) flow · Afacad 17/21px 600 #e65100 (brand/primary) · text-align center `2384:57652`
         - [icon] **Atom/Icon Button** ⟨Atom/Icon Button: Icon=Add Circle Small⟩ — 18×18 · @ (832, 7.5) flow · file /figma/assets/07177e1c9827.svg covers (-2, -2) 24×24 `3772:85435`
-    - [khối] **Frame 427325194** — 1092×353 [FILL×HUG] · @ (24, 109) flow · column gap 12 pad 0 0 16 0 align CENTER · bg #ffffff · radius 12px · shadow 1px 1px 6px 0 rgba(0, 0, 0, 0.15) `2384:57655`
-      - [khối] **Frame 427323674** — 1092×55 [FILL×HUG] · @ (0, 0) flow · column gap 8 pad 4 18 4 18 align CENTER · bg #ffffff · radius 12px 12px 0 0 · shadow inset 0 -1px 0 0 #e2e8f0 `2384:57656`
+    - [khối] **Frame 427325194** — 1092×353 [FILL×HUG] · @ (24, 109) flow · column gap 12 pad 0 0 16 0 align CENTER · bg #ffffff (bg/surface) · radius 12px · shadow 1px 1px 6px 0 rgba(0, 0, 0, 0.15) `2384:57655`
+      - [khối] **Frame 427323674** — 1092×55 [FILL×HUG] · @ (0, 0) flow · column gap 8 pad 4 18 4 18 align CENTER · bg #ffffff (bg/surface) · radius 12px 12px 0 0 · shadow inset 0 -1px 0 0 #e2e8f0 `2384:57656`
         - [khối] **Frame 427323673** — 1056×47 [FILL×FIXED] · @ (18, 4) flow · row gap 8 align CENTER `2384:57657`
           - [khối] **Frame 427323677** — 144×46 [FILL×HUG] · @ (0, 0.5) flow · column align CENTER `2384:57658`
             - [chữ] “Thứ 2” — 144×19 [FILL×HUG] · @ (0, 0) flow · Afacad 15/19px 500 #64748b (color/text/secondary) · text-align center `2384:57659`
@@ -149,7 +155,7 @@ Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí ·
           - [khối] **Frame 427323679** — 144×46 [FILL×HUG] · @ (304, 0.5) flow · column align CENTER `2384:57666`
             - [chữ] “Thứ 4” — 144×19 [FILL×HUG] · @ (0, 0) flow · Afacad 15/19px 500 #64748b (color/text/secondary) · text-align center `2384:57667`
             - [khối] **Frame 427323675** — 68×27 [HUG×HUG] · @ (38, 19) flow · row gap 10 pad 3 8 3 8 justify CENTER align CENTER · bg #e65100 (color/brand/orange) · radius 8px `2384:57668`
-              - [chữ] “02.01” — 52×21 [FIXED×HUG] · @ (8, 3) flow · Afacad 17/21px 700 #ffffff · text-align center `2384:57669`
+              - [chữ] “02.01” — 52×21 [FIXED×HUG] · @ (8, 3) flow · Afacad 17/21px 700 #ffffff (text/on-brand) · text-align center `2384:57669`
           - [khối] **Frame 427323680** — 144×46 [FILL×HUG] · @ (456, 0.5) flow · column align CENTER `2384:57670`
             - [chữ] “Thứ 5” — 144×19 [FILL×HUG] · @ (0, 0) flow · Afacad 15/19px 500 #64748b (color/text/secondary) · text-align center `2384:57671`
             - [khối] **Frame 427323675** — 148×27 [FIXED×HUG] · @ (-2, 19) flow · row gap 10 pad 3 8 3 8 justify CENTER align CENTER · radius 8px `2384:57672`
@@ -540,6 +546,12 @@ Không có.
 
 Những chỗ CSS không thể tái hiện y hệt Figma (đã dùng cách gần nhất):
 
+- `ASSET_EXPORT_STALE` — **Action Icon** (`I2384:57636;2008:48184`): Asset a1 (svg) could not be re-exported (Error: Unable to establish connection to Figma after 10 seconds. Please check your internet connection.); kept the file from the previous export.
+- `ASSET_EXPORT_STALE` — **Action Icon** (`I2384:57636;2008:48178`): Asset a2 (svg) could not be re-exported (Error: Unable to establish connection to Figma after 10 seconds. Please check your internet connection.); kept the file from the previous export.
+- `ASSET_EXPORT_STALE` — **Subtract** (`I4915:229271;4901:211086`): Asset a18 (svg) could not be re-exported (Error: Unable to establish connection to Figma after 10 seconds. Please check your internet connection.); kept the file from the previous export.
+- `ASSET_EXPORT_STALE` — **Intersect** (`I4915:229271;4901:211093`): Asset a19 (svg) could not be re-exported (Error: Unable to establish connection to Figma after 10 seconds. Please check your internet connection.); kept the file from the previous export.
+- `ASSET_EXPORT_STALE` — **Vector** (`I4915:229271;4901:211106`): Asset a20 (svg) could not be re-exported (Error: Unable to establish connection to Figma after 10 seconds. Please check your internet connection.); kept the file from the previous export.
+- `ASSET_EXPORT_STALE` — **Vector** (`I4915:229271;4901:211107`): Asset a21 (svg) could not be re-exported (Error: Unable to establish connection to Figma after 10 seconds. Please check your internet connection.); kept the file from the previous export.
 - `CORNER_SMOOTHING` — **AVATAR + Name** (`I2384:57687;2008:49570`): Corner smoothing 50% (squircle) is drawn as a plain radius.
 - `CORNER_SMOOTHING` — **AVATAR + Name** (`I2384:57689;2008:49502`): Corner smoothing 50% (squircle) is drawn as a plain radius.
 - `CORNER_SMOOTHING` — **AVATAR + Name** (`I2384:57691;2008:49502`): Corner smoothing 50% (squircle) is drawn as a plain radius.

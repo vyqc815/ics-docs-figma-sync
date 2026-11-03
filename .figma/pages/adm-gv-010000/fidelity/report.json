@@ -12,102 +12,102 @@
   "pixels": {
     "width": 1440,
     "height": 1095,
-    "mismatched": 6426,
-    "percent": 0.408,
+    "mismatched": 4922,
+    "percent": 0.312,
     "shapePercent": 0.004,
-    "textPercent": 1.762,
+    "textPercent": 1.345,
     "sizeMismatch": false
   },
   "textNodes": [
     {
-      "id": "I3210:28460;1391:14476",
-      "name": "80%",
-      "pixels": 74,
-      "percent": 26.4
+      "id": "I3210:28445;1350:12808",
+      "name": "7 ngày (40 ca)",
+      "pixels": 139,
+      "percent": 6.9
     },
     {
-      "id": "I3210:28462;1391:14476",
-      "name": "80%",
-      "pixels": 74,
-      "percent": 26.4
+      "id": "I3210:28329;3138:130000;1971:8814",
+      "name": "Value",
+      "pixels": 18,
+      "percent": 6.6
     },
     {
-      "id": "I3210:28515;1391:14476",
-      "name": "80%",
-      "pixels": 74,
-      "percent": 26.4
+      "id": "I3210:28447;3195:39971;1971:8814",
+      "name": "Value",
+      "pixels": 17,
+      "percent": 6.6
     },
     {
-      "id": "I3210:28538;1391:14476",
-      "name": "80%",
-      "pixels": 74,
-      "percent": 26.4
+      "id": "I3210:28298;2015:36008",
+      "name": "Value",
+      "pixels": 29,
+      "percent": 5.8
     },
     {
-      "id": "I3210:28561;1391:14476",
-      "name": "80%",
-      "pixels": 74,
-      "percent": 26.4
+      "id": "I3210:28297;2015:36092",
+      "name": "Value",
+      "pixels": 72,
+      "percent": 5.3
     },
     {
-      "id": "I3210:28584;1391:14476",
-      "name": "80%",
-      "pixels": 74,
-      "percent": 26.4
+      "id": "3210:28402",
+      "name": "Đang sinh sống và làm việc tại Thâm Quyến, Trung Quốc. Đã tốt nghiệp cử nhân chuyên ngành Trung Quốc học, khoa Đông phương học, trường Đại học Khoa học Xã hội và Nhân văn TP.HCM, chứng chỉ HSK6.",
+      "pixels": 1535,
+      "percent": 5.2
     },
     {
-      "id": "I3210:28607;1391:14476",
-      "name": "80%",
-      "pixels": 74,
-      "percent": 26.4
+      "id": "3210:28495",
+      "name": "T7:",
+      "pixels": 25,
+      "percent": 5.2
     },
     {
-      "id": "I3210:28339;1308:6749",
-      "name": "100%",
-      "pixels": 83,
-      "percent": 24.7
+      "id": "3210:28487",
+      "name": "T5:",
+      "pixels": 24,
+      "percent": 5
     },
     {
-      "id": "I3210:28384;1308:6749",
-      "name": "100%",
-      "pixels": 83,
-      "percent": 24.7
+      "id": "3210:28643",
+      "name": "[5/18]",
+      "pixels": 43,
+      "percent": 5
     },
     {
-      "id": "I3210:28418;1308:6749",
-      "name": "100%",
-      "pixels": 83,
-      "percent": 24.7
+      "id": "3210:28479",
+      "name": "T3:",
+      "pixels": 23,
+      "percent": 4.8
     },
     {
-      "id": "I3210:28437;1308:6749",
-      "name": "100%",
-      "pixels": 83,
-      "percent": 24.7
+      "id": "I4713:129420;2015:36008",
+      "name": "Value",
+      "pixels": 60,
+      "percent": 4.5
     },
     {
-      "id": "I3210:28439;1308:6749",
-      "name": "100%",
-      "pixels": 83,
-      "percent": 24.7
+      "id": "I3210:28295;1739:32346",
+      "name": "Tìm Kiếm Nâng Cao",
+      "pixels": 111,
+      "percent": 4.4
     },
     {
-      "id": "I3210:28441;1308:6749",
-      "name": "100%",
-      "pixels": 83,
-      "percent": 24.7
+      "id": "3210:28310",
+      "name": "Đang dạy",
+      "pixels": 62,
+      "percent": 4.3
     },
     {
-      "id": "I3210:28464;1308:6749",
-      "name": "100%",
-      "pixels": 83,
-      "percent": 24.7
+      "id": "3210:28491",
+      "name": "T6:",
+      "pixels": 21,
+      "percent": 4.3
     },
     {
-      "id": "I3210:28337;1308:6706",
-      "name": "0%",
-      "pixels": 45,
-      "percent": 23
+      "id": "3210:28637",
+      "name": "T6:",
+      "pixels": 21,
+      "percent": 4.3
     }
   ],
   "regions": [
@@ -489,7 +489,7 @@
     "over": []
   },
   "failures": [],
-  "url": "http://localhost:3108/danh-sach-giao-vien",
+  "url": "http://localhost:3000/danh-sach-giao-vien",
   "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
   "consoleErrors": [],
   "rootFound": true

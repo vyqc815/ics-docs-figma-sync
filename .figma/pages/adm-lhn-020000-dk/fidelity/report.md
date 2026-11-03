@@ -1,8 +1,8 @@
 # Fidelity: ADM-LHN-020000-DK — Bảng chia lịch hẹn
 
-- URL: `http://localhost:3108/bang-chia-lich-hen-dk`
+- URL: `http://localhost:3000/bang-chia-lich-hen-dk`
 - Verdict: **PASS**
-- Pixels outside text: **0.002%** differ (limit 0.5%); all pixels: 0.226%; inside text boxes: 0.581% (glyph rendering)
+- Pixels outside text: **0.002%** differ (limit 0.5%); all pixels: 0.206%; inside text boxes: 0.53% (glyph rendering)
 - Boxes: 692/692 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 683, ≤1px: 692, ≤2px: 692, ≤4px: 692, >4px: 0
 
 ## Pixel regions (largest first)
@@ -16,7 +16,6 @@
 
 | Text | Differing |
 | --- | --- |
-| Label (`I4056:106635;2245:87774`) | 7.9% |
 | ID (`I4056:106791;2200:30227`) | 3.5% |
 | Bảng chia lịch hẹn (`4056:106834`) | 3.5% |
 | Ngày mai (`I4056:106783;2200:30042`) | 3.3% |
@@ -31,6 +30,7 @@
 | Giới thiệu về lớp học, bài học, và cách làm bài tập về nhà (`4056:107087`) | 1.7% |
 | Value (`I4056:106637;1981:25760;1971:8814`) | 1.3% |
 | Giới thiệu về lớp học, bài học, và cách làm bài tập về nhà (`4056:106736`) | 1.2% |
+| Thảo My (`I4056:106743;2245:92411`) | 1.2% |
 
 ## Largest box differences
 

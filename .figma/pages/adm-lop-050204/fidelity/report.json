@@ -1,0 +1,484 @@
+{
+  "pass": true,
+  "thresholds": {
+    "maxPixelDiffPercent": 0.5,
+    "maxBoxDelta": 1,
+    "maxTextBoxDelta": 2.5,
+    "colorThreshold": 0.1,
+    "aaRadius": 1,
+    "subpixel": true,
+    "maxTextNodeDiffPercent": 35
+  },
+  "pixels": {
+    "width": 1440,
+    "height": 1023,
+    "mismatched": 1384,
+    "percent": 0.094,
+    "shapePercent": 0.003,
+    "textPercent": 0.547,
+    "sizeMismatch": false
+  },
+  "textNodes": [
+    {
+      "id": "I4915:230853;4901:211379;2245:87908",
+      "name": "Label",
+      "pixels": 201,
+      "percent": 8.4
+    },
+    {
+      "id": "I4915:230853;4901:211377;2245:87908",
+      "name": "Label",
+      "pixels": 141,
+      "percent": 5.9
+    },
+    {
+      "id": "I3641:78962;1725:17114",
+      "name": "Label",
+      "pixels": 111,
+      "percent": 5.7
+    },
+    {
+      "id": "I3641:78919;1725:17078",
+      "name": "Label",
+      "pixels": 58,
+      "percent": 3.7
+    },
+    {
+      "id": "I3641:78938;1725:17096",
+      "name": "Label",
+      "pixels": 52,
+      "percent": 3.5
+    },
+    {
+      "id": "I4915:230853;4901:211380;2245:87908",
+      "name": "Label",
+      "pixels": 47,
+      "percent": 2
+    },
+    {
+      "id": "3641:78978",
+      "name": "Follow case này thật kỹ, xem lại là trước hay sau buổi học.",
+      "pixels": 391,
+      "percent": 1.7
+    },
+    {
+      "id": "3641:78912",
+      "name": "Khai Giảng Lớp Tháng 9",
+      "pixels": 47,
+      "percent": 1.2
+    },
+    {
+      "id": "I3705:81948;1677:982",
+      "name": "Label",
+      "pixels": 18,
+      "percent": 1.1
+    },
+    {
+      "id": "3641:78931",
+      "name": "Gọi xác nhận lịch học",
+      "pixels": 34,
+      "percent": 1
+    },
+    {
+      "id": "3641:78916",
+      "name": "Bạn",
+      "pixels": 5,
+      "percent": 0.9
+    },
+    {
+      "id": "3641:78935",
+      "name": "Bạn",
+      "pixels": 5,
+      "percent": 0.9
+    },
+    {
+      "id": "3641:78951",
+      "name": "Bạn",
+      "pixels": 5,
+      "percent": 0.9
+    },
+    {
+      "id": "I4915:230853;4901:211382;2245:87908",
+      "name": "Label",
+      "pixels": 22,
+      "percent": 0.9
+    },
+    {
+      "id": "3641:78947",
+      "name": "Follow học viên sau buổi 1",
+      "pixels": 33,
+      "percent": 0.8
+    }
+  ],
+  "regions": [
+    {
+      "x": 1000,
+      "y": 536,
+      "width": 24,
+      "height": 8,
+      "pixels": 12,
+      "node": {
+        "id": "I3641:78956;2130:25383",
+        "name": "Ellipse 76",
+        "role": "image"
+      }
+    },
+    {
+      "x": 1352,
+      "y": 184,
+      "width": 32,
+      "height": 24,
+      "pixels": 11,
+      "node": {
+        "id": "3641:78920",
+        "name": "Riêng tư",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 1352,
+      "y": 528,
+      "width": 32,
+      "height": 24,
+      "pixels": 11,
+      "node": {
+        "id": "3641:78963",
+        "name": "Riêng tư",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 24,
+      "y": 760,
+      "width": 8,
+      "height": 8,
+      "pixels": 4,
+      "node": {
+        "id": "I4915:230853;4901:211412",
+        "name": "LOGO CENTER",
+        "role": "icon"
+      }
+    }
+  ],
+  "boxes": {
+    "measured": 202,
+    "missing": [],
+    "withinThreshold": 202,
+    "buckets": {
+      "≤0.5px": 202,
+      "≤1px": 202,
+      "≤2px": 202,
+      "≤4px": 202,
+      ">4px": 0
+    },
+    "worst": [
+      {
+        "id": "3641:78925",
+        "name": "Bình luận",
+        "role": "container",
+        "delta": 0.02,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.02,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "3641:78926",
+        "name": "0 bình luận",
+        "role": "text",
+        "delta": 0.02,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.02,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "3641:78927",
+        "name": "Action Icon",
+        "role": "icon",
+        "delta": 0.02,
+        "dx": 0.02,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "3641:78937",
+        "name": "Điều khiển",
+        "role": "container",
+        "delta": 0.02,
+        "dx": -0.02,
+        "dy": 0,
+        "dw": 0.02,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "3641:78938",
+        "name": "Atom/Tag",
+        "role": "instance",
+        "delta": 0.02,
+        "dx": -0.02,
+        "dy": 0,
+        "dw": 0.02,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I3641:78938;1725:17095",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.02,
+        "dx": -0.02,
+        "dy": 0,
+        "dw": 0.02,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I3641:78938;1725:17096",
+        "name": "Label",
+        "role": "text",
+        "delta": 0.02,
+        "dx": -0.02,
+        "dy": 0,
+        "dw": 0.02,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4915:230853;4901:211322",
+        "name": "Subtract",
+        "role": "icon",
+        "delta": 0.01,
+        "dx": -0.01,
+        "dy": -0.01,
+        "dw": -0.01,
+        "dh": 0,
+        "limit": 1,
+        "textDriven": false
+      },
+      {
+        "id": "I4915:230853;4901:211329",
+        "name": "Intersect",
+        "role": "icon",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": -0.01,
+        "dw": -0.01,
+        "dh": 0,
+        "limit": 1,
+        "textDriven": false
+      },
+      {
+        "id": "I4915:230853;4901:211343",
+        "name": "Vector",
+        "role": "icon",
+        "delta": 0.01,
+        "dx": 0.01,
+        "dy": 0,
+        "dw": 0,
+        "dh": -0.01,
+        "limit": 1,
+        "textDriven": false
+      },
+      {
+        "id": "I4915:230853;4901:211344",
+        "name": "Union",
+        "role": "icon",
+        "delta": 0.01,
+        "dx": -0.01,
+        "dy": 0,
+        "dw": -0.01,
+        "dh": -0.01,
+        "limit": 1,
+        "textDriven": false
+      },
+      {
+        "id": "I4915:230853;4901:211347",
+        "name": "Group 240002",
+        "role": "icon",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": -0.01,
+        "limit": 1,
+        "textDriven": false
+      },
+      {
+        "id": "2533:31798",
+        "name": "Frame 427321957",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2533:31799",
+        "name": "Frame 427321958",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2533:32348",
+        "name": "Section - Horizontal Navigation Tabs: Nhật ký / Ghi chú / Lịch hẹn / Tin nhắn",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2533:32349",
+        "name": "Atom/Side Tab",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I2533:32349;2177:28927",
+        "name": "Container",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I2533:32349;2177:28928",
+        "name": "Chi tiết NV",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2533:32350",
+        "name": "Atom/Side Tab",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I2533:32350;2177:28935",
+        "name": "Container",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I2533:32350;2177:28936",
+        "name": "Nhiệm vụ con",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I2533:32350;2177:28937",
+        "name": "Left accent vertical pill bar",
+        "role": "shape",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2533:32351",
+        "name": "Atom/Side Tab",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I2533:32351;2177:28927",
+        "name": "Container",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I2533:32351;2177:28928",
+        "name": "Chi tiết NV",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      }
+    ],
+    "maxDelta": 0.02,
+    "over": []
+  },
+  "failures": [],
+  "url": "http://localhost:3000/lop-hoc/nhat-ky/ghi-chu",
+  "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
+  "consoleErrors": [],
+  "rootFound": true
+}

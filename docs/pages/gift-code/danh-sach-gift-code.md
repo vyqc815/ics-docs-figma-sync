@@ -5,7 +5,7 @@
 > **Nguồn:** PLS-ICS T8/2026 ›         ├─ GIFT CODE › ADM-GC-010000 — Gift code / Danh sách gift code (`3857:85663`, file `rRVs5HX0kIHffbS0V40djG`)  
 > **Route:** `/gift-code/danh-sach-gift-code`  
 > **Khung thiết kế:** 1440 × 810 px (cắt phần tràn ra ngoài khung)  
-> **Xuất lúc:** 2026-11-02T03:45:31.706Z  
+> **Xuất lúc:** 2026-11-03T00:59:33.982Z  
 > **Spec đầy đủ (giá trị chính xác từng node):** `../../../.figma/pages/adm-gc-010000-2/page-spec.json`
 
 ## 1. Tổng quan

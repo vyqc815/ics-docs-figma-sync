@@ -1,0 +1,12 @@
+{
+  "route": "/hoc-ky/bai-hoc/popup-chi-tiet-bai-hoc/tab-ky-nang/popup-them-ky-nang/loai-chua-co-du-lieu",
+  "pageFile": "components/figma/cd-kh-030246/index.tsx",
+  "docFile": "docs/pages/hoc-ky/bai-hoc/popup-chi-tiet-bai-hoc/tab-ky-nang/popup-them-ky-nang/loai-chua-co-du-lieu.md",
+  "sections": [
+    {
+      "nodeId": "7193:404273",
+      "component": "PopupThemTuThuVienDuLieu",
+      "file": "components/figma/cd-kh-030246/PopupThemTuThuVienDuLieu.tsx"
+    }
+  ]
+}

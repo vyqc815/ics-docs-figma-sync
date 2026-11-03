@@ -12,19 +12,13 @@
   "pixels": {
     "width": 1440,
     "height": 1250,
-    "mismatched": 4293,
-    "percent": 0.239,
+    "mismatched": 4006,
+    "percent": 0.223,
     "shapePercent": 0.092,
-    "textPercent": 1.519,
+    "textPercent": 1.354,
     "sizeMismatch": false
   },
   "textNodes": [
-    {
-      "id": "I6579:372654;5491:352118;2245:87914",
-      "name": "Label",
-      "pixels": 362,
-      "percent": 15.4
-    },
     {
       "id": "I6579:372654;5491:352101;2245:87908",
       "name": "Label",
@@ -108,6 +102,12 @@
       "name": "Label",
       "pixels": 77,
       "percent": 3.3
+    },
+    {
+      "id": "I6579:372654;5491:352118;2245:87914",
+      "name": "Label",
+      "pixels": 75,
+      "percent": 3.2
     }
   ],
   "regions": [
@@ -789,7 +789,7 @@
     "over": []
   },
   "failures": [],
-  "url": "http://localhost:3108/thu-vien/ky-nang/nghe-dk",
+  "url": "http://localhost:3000/thu-vien/ky-nang/nghe-dk",
   "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
   "consoleErrors": [],
   "rootFound": true

@@ -1,0 +1,34 @@
+{
+  "route": "/lop-hoc/nhat-ky/ghi-chu",
+  "pageFile": "components/figma/adm-lop-050204/index.tsx",
+  "docFile": "docs/pages/lop-hoc/nhat-ky/ghi-chu.md",
+  "sections": [
+    {
+      "nodeId": "2533:31798",
+      "component": "Section1",
+      "file": "components/figma/adm-lop-050204/Section1.tsx"
+    },
+    {
+      "nodeId": "4915:230853",
+      "component": "SidebarMenuAdmin",
+      "file": "components/figma/adm-lop-050204/SidebarMenuAdmin.tsx"
+    },
+    {
+      "nodeId": "3497:53369",
+      "component": "Header35",
+      "file": "components/figma/shared/Header35.tsx"
+    }
+  ],
+  "idAlias": {
+    "3497:53369": "3497:65629",
+    "4050:118143": "4050:115668",
+    "3497:53417": "3497:65677",
+    "I3497:53417;2008:30986": "I3497:65677;2008:30986",
+    "I3497:53417;2008:31747": "I3497:65677;2008:31747",
+    "I3497:53417;2008:31748": "I3497:65677;2008:31748",
+    "I3497:53417;1391:17264": "I3497:65677;1391:17264",
+    "I3497:53417;1391:17266": "I3497:65677;1391:17266",
+    "I3497:53417;1391:17268": "I3497:65677;1391:17268",
+    "I3497:53417;1391:17270": "I3497:65677;1391:17270"
+  }
+}

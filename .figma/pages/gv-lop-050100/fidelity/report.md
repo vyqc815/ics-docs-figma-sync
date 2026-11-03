@@ -1,6 +1,6 @@
 # Fidelity: GV-LOP-050100 — Chi tiết lớp / Tự học / Trống
 
-- URL: `http://localhost:3108/chi-tiet-lop/tu-hoc/trong`
+- URL: `http://localhost:3000/chi-tiet-lop/tu-hoc/trong`
 - Verdict: **PASS**
 - Pixels outside text: **0%** differ (limit 0.5%); all pixels: 0.048%; inside text boxes: 0.924% (glyph rendering)
 - Boxes: 110/110 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 108, ≤1px: 110, ≤2px: 110, ≤4px: 110, >4px: 0

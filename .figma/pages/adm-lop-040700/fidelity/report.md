@@ -1,6 +1,6 @@
 # Fidelity: ADM-LOP-040700 — Lớp học / Cài đặt / KPI
 
-- URL: `http://localhost:3108/lop-hoc/cai-dat/kpi`
+- URL: `http://localhost:3000/lop-hoc/cai-dat/kpi`
 - Verdict: **PASS**
 - Pixels outside text: **0%** differ (limit 0.5%); all pixels: 0.093%; inside text boxes: 1.252% (glyph rendering)
 - Boxes: 128/128 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 128, ≤1px: 128, ≤2px: 128, ≤4px: 128, >4px: 0

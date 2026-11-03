@@ -12,10 +12,10 @@
   "pixels": {
     "width": 1440,
     "height": 860,
-    "mismatched": 4819,
-    "percent": 0.389,
+    "mismatched": 4530,
+    "percent": 0.366,
     "shapePercent": 0.021,
-    "textPercent": 1.734,
+    "textPercent": 1.624,
     "sizeMismatch": false
   },
   "textNodes": [
@@ -24,12 +24,6 @@
       "name": "Label",
       "pixels": 333,
       "percent": 13.9
-    },
-    {
-      "id": "I4056:116460;2245:87914",
-      "name": "Label",
-      "pixels": 312,
-      "percent": 13
     },
     {
       "id": "I4056:116451;2245:87908",
@@ -108,6 +102,12 @@
       "name": "Label",
       "pixels": 75,
       "percent": 3.4
+    },
+    {
+      "id": "I4056:116456;2245:87908",
+      "name": "Label",
+      "pixels": 71,
+      "percent": 3
     }
   ],
   "regions": [
@@ -669,7 +669,7 @@
     "over": []
   },
   "failures": [],
-  "url": "http://localhost:3108/lop-hoc/cai-dat/hoc-vien-dk",
+  "url": "http://localhost:3000/lop-hoc/cai-dat/hoc-vien-dk",
   "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
   "consoleErrors": [],
   "rootFound": true

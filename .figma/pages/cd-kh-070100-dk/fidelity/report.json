@@ -12,19 +12,13 @@
   "pixels": {
     "width": 1440,
     "height": 1250,
-    "mismatched": 7089,
-    "percent": 0.394,
+    "mismatched": 6731,
+    "percent": 0.374,
     "shapePercent": 0.111,
-    "textPercent": 2.826,
+    "textPercent": 2.627,
     "sizeMismatch": false
   },
   "textNodes": [
-    {
-      "id": "I6579:371580;5491:351811;2245:87914",
-      "name": "Label",
-      "pixels": 387,
-      "percent": 16.5
-    },
     {
       "id": "6579:371367",
       "name": "爸爸",
@@ -107,6 +101,12 @@
       "id": "I6579:371269;2177:28928",
       "name": "Chi tiết NV",
       "pixels": 78,
+      "percent": 6.3
+    },
+    {
+      "id": "I6579:371424;2015:30513",
+      "name": "Label",
+      "pixels": 92,
       "percent": 6.3
     }
   ],
@@ -789,7 +789,7 @@
     "over": []
   },
   "failures": [],
-  "url": "http://localhost:3108/thu-vien/kien-thuc-dk",
+  "url": "http://localhost:3000/thu-vien/kien-thuc-dk",
   "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
   "consoleErrors": [],
   "rootFound": true

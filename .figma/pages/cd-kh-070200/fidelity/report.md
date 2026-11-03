@@ -1,6 +1,6 @@
 # Fidelity: CD-KH-070200 — Thư viện / Kỹ năng / Nghe
 
-- URL: `http://localhost:3108/thu-vien/ky-nang/nghe`
+- URL: `http://localhost:3000/thu-vien/ky-nang/nghe`
 - Verdict: **PASS**
 - Pixels outside text: **0.003%** differ (limit 0.5%); all pixels: 0.061%; inside text boxes: 0.6% (glyph rendering)
 - Boxes: 361/361 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 359, ≤1px: 361, ≤2px: 361, ≤4px: 361, >4px: 0

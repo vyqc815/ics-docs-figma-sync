@@ -1,8 +1,8 @@
 # Fidelity: CD-KH-070300-DK — Thư viện / Bài tập
 
-- URL: `http://localhost:3108/thu-vien/bai-tap-dk`
+- URL: `http://localhost:3000/thu-vien/bai-tap-dk`
 - Verdict: **PASS**
-- Pixels outside text: **0.138%** differ (limit 0.5%); all pixels: 0.38%; inside text boxes: 1.729% (glyph rendering)
+- Pixels outside text: **0.138%** differ (limit 0.5%); all pixels: 0.366%; inside text boxes: 1.63% (glyph rendering)
 - Boxes: 397/397 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 396, ≤1px: 397, ≤2px: 397, ≤4px: 397, >4px: 0
 
 ## Pixel regions (largest first)
@@ -44,7 +44,6 @@
 
 | Text | Differing |
 | --- | --- |
-| Label (`I6579:373704;5491:352425;2245:87914`) | 13.5% |
 | Label (`I6579:373704;5491:352407;2245:87908`) | 13% |
 | 我 / 叫 / 王明 (`6579:373424`) | 11.4% |
 | 我 / 家 / 有 / 四口人 (`6579:373523`) | 10.6% |
@@ -59,6 +58,7 @@
 | Label (`I6579:373461;2015:30513`) | 5.3% |
 | Label (`I6579:373554;2015:30513`) | 5.3% |
 | Label (`I6579:373570;2015:30513`) | 5.3% |
+| Label (`I6579:373584;2015:30513`) | 5.3% |
 
 ## Largest box differences
 

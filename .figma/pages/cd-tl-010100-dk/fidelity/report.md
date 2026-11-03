@@ -1,8 +1,8 @@
 # Fidelity: CD-TL-010100-DK — Tools / Giọng đọc / Hội thoại
 
-- URL: `http://localhost:3108/tools/giong-doc/hoi-thoai-dk`
+- URL: `http://localhost:3000/tools/giong-doc/hoi-thoai-dk`
 - Verdict: **FAIL**
-- Pixels outside text: **0.041%** differ (limit 0.5%); all pixels: 0.228%; inside text boxes: 1.294% (glyph rendering)
+- Pixels outside text: **0.041%** differ (limit 0.5%); all pixels: 0.212%; inside text boxes: 1.182% (glyph rendering)
 - Boxes: 174/182 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 164, ≤1px: 172, ≤2px: 174, ≤4px: 182, >4px: 0
 
 ## Failures
@@ -36,7 +36,6 @@
 | Text | Differing |
 | --- | --- |
 | Label (`I6133:127553;6133:108639;2245:87820`) | 8.6% |
-| Label (`I6133:127553;6133:108641;2245:87774`) | 8.5% |
 | Label (`I6133:127553;6133:108633;2245:87820`) | 8% |
 | Label (`I6133:127553;6133:108625;2245:87768`) | 5.9% |
 | Button (`I6133:127701;1048:1232`) | 5.8% |
@@ -50,6 +49,7 @@
 | Label (`I6133:127553;6133:108623;2245:87768`) | 2.4% |
 | Label (`I6133:127553;6133:108642;2245:87768`) | 2.2% |
 | ⋮ (`6133:127643`) | 2.2% |
+| ⋮ (`6133:127651`) | 2.2% |
 
 ## Largest box differences
 

@@ -1,0 +1,22 @@
+{
+  "route": "/lich/lich-day-tong/theo-lop-dk",
+  "pageFile": "components/figma/adm-ld-010010-dk/index.tsx",
+  "docFile": "docs/pages/lich/lich-day-tong/theo-lop-dk.md",
+  "sections": [
+    {
+      "nodeId": "5836:2743",
+      "component": "Maincontent",
+      "file": "components/figma/adm-ld-010010-dk/Maincontent.tsx"
+    },
+    {
+      "nodeId": "5836:4038",
+      "component": "Sidebar",
+      "file": "components/figma/adm-ld-010010-dk/Sidebar.tsx"
+    },
+    {
+      "nodeId": "5836:3988",
+      "component": "Header",
+      "file": "components/figma/adm-ld-010010-dk/Header.tsx"
+    }
+  ]
+}

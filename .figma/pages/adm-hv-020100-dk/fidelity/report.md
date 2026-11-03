@@ -1,8 +1,8 @@
 # Fidelity: ADM-HV-020100-DK — Chi tiết học viên / Thông tin cá nhân
 
-- URL: `http://localhost:3108/chi-tiet-hoc-vien/thong-tin-ca-nhan-dk`
+- URL: `http://localhost:3000/chi-tiet-hoc-vien/thong-tin-ca-nhan-dk`
 - Verdict: **PASS**
-- Pixels outside text: **0.014%** differ (limit 0.5%); all pixels: 0.155%; inside text boxes: 0.871% (glyph rendering)
+- Pixels outside text: **0.014%** differ (limit 0.5%); all pixels: 0.129%; inside text boxes: 0.709% (glyph rendering)
 - Boxes: 167/167 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 167, ≤1px: 167, ≤2px: 167, ≤4px: 167, >4px: 0
 
 ## Pixel regions (largest first)
@@ -19,7 +19,6 @@
 
 | Text | Differing |
 | --- | --- |
-| Label (`I4056:120195;2245:87864`) | 13.5% |
 | Gmail (`4056:120023`) | 8% |
 | Button (`I4056:120008;1048:1240`) | 4.5% |
 | Dương (`4056:119993`) | 2.6% |
@@ -34,6 +33,7 @@
 | Label (`I4056:120199;2245:87858`) | 1.5% |
 | Chi tiết học viên (`4056:119980`) | 1.4% |
 | Label (`I4056:120191;2245:87848`) | 1.4% |
+| Label (`I4056:120203;2245:87820`) | 1.3% |
 
 ## Largest box differences
 

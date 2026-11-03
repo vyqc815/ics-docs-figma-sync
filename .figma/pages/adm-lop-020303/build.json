@@ -1,0 +1,22 @@
+{
+  "route": "/chi-tiet-lop-hoc/kiem-tra",
+  "pageFile": "components/figma/adm-lop-020303/index.tsx",
+  "docFile": "docs/pages/chi-tiet-lop-hoc/kiem-tra.md",
+  "sections": [
+    {
+      "nodeId": "3502:69804",
+      "component": "Body",
+      "file": "components/figma/adm-lop-020303/Body.tsx"
+    },
+    {
+      "nodeId": "3502:69964",
+      "component": "Header29",
+      "file": "components/figma/shared/Header29.tsx"
+    },
+    {
+      "nodeId": "4915:225655",
+      "component": "SidebarMenuAdmin",
+      "file": "components/figma/adm-lop-020303/SidebarMenuAdmin.tsx"
+    }
+  ]
+}

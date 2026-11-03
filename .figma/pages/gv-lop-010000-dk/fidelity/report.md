@@ -1,8 +1,8 @@
 # Fidelity: GV-LOP-010000-DK — Lớp / Thống kê tổng quan
 
-- URL: `http://localhost:3108/lop/thong-ke-tong-quan-dk`
+- URL: `http://localhost:3000/lop/thong-ke-tong-quan-dk`
 - Verdict: **PASS**
-- Pixels outside text: **0.001%** differ (limit 0.5%); all pixels: 0.23%; inside text boxes: 1.312% (glyph rendering)
+- Pixels outside text: **0.001%** differ (limit 0.5%); all pixels: 0.168%; inside text boxes: 0.955% (glyph rendering)
 - Boxes: 428/428 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 428, ≤1px: 428, ≤2px: 428, ≤4px: 428, >4px: 0
 
 ## Pixel regions (largest first)
@@ -16,21 +16,21 @@
 
 | Text | Differing |
 | --- | --- |
-| 0% (`I4056:149458;1308:6706`) | 26% |
-| 80% (`I4056:149440;1391:14476`) | 25.4% |
-| 100% (`I4056:149476;1308:6749`) | 19.9% |
-| 100% (`I4056:149494;1308:6749`) | 19.9% |
-| 100% (`I4056:149512;1308:6749`) | 19.9% |
-| 100% (`I4056:149530;1308:6749`) | 19.9% |
-| 100% (`I6725:363140;1308:6749`) | 19.9% |
-| 100% (`I6725:363158;1308:6749`) | 19.9% |
-| 100% (`I6725:363176;1308:6749`) | 19.9% |
-| 100% (`I6725:363194;1308:6749`) | 19.9% |
-| Tiêu đề trang (`6757:365858`) | 6.5% |
-| Label (`I4056:149350;2245:87774`) | 6.4% |
+| Tiêu đề trang (`6757:365858`) | 6.3% |
 | Label (`I4056:149353;2245:87768`) | 5.7% |
 | Điểm (`I6757:365859;6725:364182`) | 5.7% |
 | Ngày kết thúc (`4056:149397`) | 4.7% |
+| Tiếng Đức 4 Kỹ Năng B1 (v2026-nháp) (`4056:149489`) | 3.4% |
+| Tiếng Đức 4 Kỹ Năng B1 (v2026-nháp) (`6725:363189`) | 3.4% |
+| Tiếng Đức 4 Kỹ Năng B1 (v2026) (`6725:363135`) | 3% |
+| B2 - LUYỆN THI - HK2 (`6725:363187`) | 3% |
+| Label (`I6244:37145;2245:87768`) | 2.9% |
+| Label (`I4056:149354;2245:87768`) | 2.6% |
+| Label (`I4814:159030;2245:87768`) | 2.6% |
+| Label (`I4056:149351;2245:87768`) | 2.4% |
+| Value (`I6247:155116;2015:36008`) | 2.1% |
+| BACKUP_RESOURCE (`4056:149451`) | 2.1% |
+| Label (`I4056:149352;2245:87768`) | 1.9% |
 
 ## Largest box differences
 

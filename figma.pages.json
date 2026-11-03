@@ -1342,6 +1342,1766 @@
       "name": "gv-ks-010000-dk",
       "nodeId": "4885:59798",
       "route": "/khao-sat/danh-sach-khao-sat-dk"
+    },
+    {
+      "name": "adm-hv-010004",
+      "nodeId": "5789:153177",
+      "route": "/danh-sach-hoc-vien-trong"
+    },
+    {
+      "name": "adm-hv-010004-dk",
+      "nodeId": "5789:162338",
+      "route": "/danh-sach-hoc-vien-trong-dk"
+    },
+    {
+      "name": "adm-lhn-020002",
+      "nodeId": "2371:37014",
+      "route": "/bang-chia-lich-hen/dang-keo-the"
+    },
+    {
+      "name": "adm-lhn-020009",
+      "nodeId": "2371:38662",
+      "route": "/bang-chia-lich-hen/dang-keo-cum-the"
+    },
+    {
+      "name": "adm-lhn-020002-dk",
+      "nodeId": "4056:107142",
+      "route": "/bang-chia-lich-hen/dang-keo-the-dk"
+    },
+    {
+      "name": "adm-lhn-020009-dk",
+      "nodeId": "4056:107679",
+      "route": "/bang-chia-lich-hen/dang-keo-cum-the-dk"
+    },
+    {
+      "name": "adm-hv-010001",
+      "nodeId": "2263:35840",
+      "route": "/danh-sach-hoc-vien/hover-menu-thao-tac"
+    },
+    {
+      "name": "adm-hv-010020",
+      "nodeId": "2263:48470",
+      "route": "/danh-sach-hoc-vien/popup-lich-su/hoa-don"
+    },
+    {
+      "name": "adm-hv-010030",
+      "nodeId": "2263:49209",
+      "route": "/danh-sach-hoc-vien/popup-lich-su/lop"
+    },
+    {
+      "name": "adm-hv-010040",
+      "nodeId": "2263:51376",
+      "route": "/danh-sach-hoc-vien/popup-lich-su/ghi-chu"
+    },
+    {
+      "name": "adm-hv-010001-dk",
+      "nodeId": "4056:121652",
+      "route": "/danh-sach-hoc-vien/hover-menu-thao-tac-dk"
+    },
+    {
+      "name": "adm-hv-010020-dk",
+      "nodeId": "4056:122027",
+      "route": "/danh-sach-hoc-vien/popup-lich-su/hoa-don-dk"
+    },
+    {
+      "name": "adm-hv-010030-dk",
+      "nodeId": "4056:122251",
+      "route": "/danh-sach-hoc-vien/popup-lich-su/lop-dk"
+    },
+    {
+      "name": "adm-hv-010040-dk",
+      "nodeId": "4056:122380",
+      "route": "/danh-sach-hoc-vien/popup-lich-su/ghi-chu-dk"
+    },
+    {
+      "name": "adm-gv-010003",
+      "nodeId": "1505:20827",
+      "route": "/danh-sach-giao-vien/ket-qua-tim-kiem-nang-cao"
+    },
+    {
+      "name": "adm-gv-010001",
+      "nodeId": "1657:12040",
+      "route": "/danh-sach-giao-vien/hover-menu-thao-tac"
+    },
+    {
+      "name": "adm-gv-020309",
+      "nodeId": "2008:50099",
+      "route": "/chi-tiet-giao-vien/lich-day/xem-theo-lop"
+    },
+    {
+      "name": "adm-gv-010003-dk",
+      "nodeId": "4056:123205",
+      "route": "/danh-sach-giao-vien/ket-qua-tim-kiem-nang-cao-dk"
+    },
+    {
+      "name": "adm-gv-010001-dk",
+      "nodeId": "4056:123818",
+      "route": "/danh-sach-giao-vien/hover-menu-thao-tac-dk"
+    },
+    {
+      "name": "adm-gv-020309-dk",
+      "nodeId": "4056:125305",
+      "route": "/chi-tiet-giao-vien/lich-day/xem-theo-lop-dk"
+    },
+    {
+      "name": "adm-lop-010020",
+      "nodeId": "2008:45644",
+      "route": "/danh-sach-lop-hoc/popup-them-lich-day-co-dinh"
+    },
+    {
+      "name": "adm-lop-010020-dk",
+      "nodeId": "4056:108388",
+      "route": "/danh-sach-lop-hoc/popup-them-lich-day-co-dinh-dk"
+    },
+    {
+      "name": "adm-lop-030401",
+      "nodeId": "4554:25922",
+      "route": "/lop-hoc/bai-hoc/tai-nguyen/tung-muc-trong"
+    },
+    {
+      "name": "adm-lop-030401-dk",
+      "nodeId": "4560:31961",
+      "route": "/lop-hoc/bai-hoc/tai-nguyen/tung-muc-trong-dk"
+    },
+    {
+      "name": "adm-lop-020303",
+      "nodeId": "3502:69803",
+      "route": "/chi-tiet-lop-hoc/kiem-tra"
+    },
+    {
+      "name": "adm-lop-020303-dk",
+      "nodeId": "4056:112515",
+      "route": "/chi-tiet-lop-hoc/kiem-tra-dk"
+    },
+    {
+      "name": "adm-lop-020404",
+      "nodeId": "769:36844",
+      "route": "/chi-tiet-lop-hoc/tu-hoc/trong"
+    },
+    {
+      "name": "adm-lop-020404-dk",
+      "nodeId": "4056:112842",
+      "route": "/chi-tiet-lop-hoc/tu-hoc/trong-dk"
+    },
+    {
+      "name": "adm-lop-020504",
+      "nodeId": "769:37126",
+      "route": "/chi-tiet-lop-hoc/danh-gia/trong"
+    },
+    {
+      "name": "adm-lop-020504-dk",
+      "nodeId": "4056:112999",
+      "route": "/chi-tiet-lop-hoc/danh-gia/trong-dk"
+    },
+    {
+      "name": "adm-lop-020604",
+      "nodeId": "2711:52388",
+      "route": "/chi-tiet-lop-hoc/tieu-chuan-lop/giao-vien/trong"
+    },
+    {
+      "name": "adm-lop-020604-dk",
+      "nodeId": "4056:113541",
+      "route": "/chi-tiet-lop-hoc/tieu-chuan-lop/giao-vien/trong-dk"
+    },
+    {
+      "name": "adm-lop-020704",
+      "nodeId": "2711:61714",
+      "route": "/chi-tiet-lop-hoc/quy-trinh-lop/trong"
+    },
+    {
+      "name": "adm-lop-020709",
+      "nodeId": "2711:61860",
+      "route": "/chi-tiet-lop-hoc/quy-trinh-lop/co-cap-nhat-qua-han"
+    },
+    {
+      "name": "adm-lop-020704-dk",
+      "nodeId": "4056:114164",
+      "route": "/chi-tiet-lop-hoc/quy-trinh-lop/trong-dk"
+    },
+    {
+      "name": "adm-lop-020709-dk",
+      "nodeId": "4056:114318",
+      "route": "/chi-tiet-lop-hoc/quy-trinh-lop/co-cap-nhat-qua-han-dk"
+    },
+    {
+      "name": "adm-lop-020804",
+      "nodeId": "2711:65419",
+      "route": "/chi-tiet-lop-hoc/cskh/trong"
+    },
+    {
+      "name": "adm-lop-020809",
+      "nodeId": "2711:65565",
+      "route": "/chi-tiet-lop-hoc/cskh/co-cap-nhat-qua-han"
+    },
+    {
+      "name": "adm-lop-020804-dk",
+      "nodeId": "4056:115351",
+      "route": "/chi-tiet-lop-hoc/cskh/trong-dk"
+    },
+    {
+      "name": "adm-lop-020809-dk",
+      "nodeId": "4056:115505",
+      "route": "/chi-tiet-lop-hoc/cskh/co-cap-nhat-qua-han-dk"
+    },
+    {
+      "name": "adm-lop-020904",
+      "nodeId": "769:38815",
+      "route": "/chi-tiet-lop-hoc/cuoc-hop/trong"
+    },
+    {
+      "name": "adm-lop-020904-dk",
+      "nodeId": "4056:115840",
+      "route": "/chi-tiet-lop-hoc/cuoc-hop/trong-dk"
+    },
+    {
+      "name": "adm-lop-040510",
+      "nodeId": "2384:59013",
+      "route": "/lop-hoc/cai-dat/lich-day/popup-them-lich-day-co-dinh"
+    },
+    {
+      "name": "adm-lop-040510-dk",
+      "nodeId": "4056:117322",
+      "route": "/lop-hoc/cai-dat/lich-day/popup-them-lich-day-co-dinh-dk"
+    },
+    {
+      "name": "adm-lop-050204",
+      "nodeId": "2533:31797",
+      "route": "/lop-hoc/nhat-ky/ghi-chu"
+    },
+    {
+      "name": "adm-lop-050304",
+      "nodeId": "1105:6628",
+      "route": "/lop-hoc/nhat-ky/lich-hen"
+    },
+    {
+      "name": "adm-lop-050404",
+      "nodeId": "1109:7375",
+      "route": "/lop-hoc/nhat-ky/tin-nhan"
+    },
+    {
+      "name": "adm-lop-050204-dk",
+      "nodeId": "4056:118675",
+      "route": "/lop-hoc/nhat-ky/ghi-chu-dk"
+    },
+    {
+      "name": "adm-lop-050304-dk",
+      "nodeId": "4056:118931",
+      "route": "/lop-hoc/nhat-ky/lich-hen-dk"
+    },
+    {
+      "name": "adm-lop-050404-dk",
+      "nodeId": "4056:119151",
+      "route": "/lop-hoc/nhat-ky/tin-nhan-dk"
+    },
+    {
+      "name": "adm-qt-010001",
+      "nodeId": "6823:374951",
+      "route": "/quy-trinh/danh-sach-loai-quy-trinh/dropdown-chon-loai-quy-trinh"
+    },
+    {
+      "name": "adm-qt-010001-dk",
+      "nodeId": "6823:376072",
+      "route": "/quy-trinh/danh-sach-loai-quy-trinh/dropdown-chon-loai-quy-trinh-dk"
+    },
+    {
+      "name": "adm-ld-010010",
+      "nodeId": "5822:38379",
+      "route": "/lich/lich-day-tong/theo-lop"
+    },
+    {
+      "name": "adm-ld-010010-dk",
+      "nodeId": "5836:2742",
+      "route": "/lich/lich-day-tong/theo-lop-dk"
+    },
+    {
+      "name": "adm-vc-010001",
+      "nodeId": "3977:74774",
+      "route": "/voucher/danh-sach-voucher/xem-truoc-voucher"
+    },
+    {
+      "name": "adm-vc-010010",
+      "nodeId": "3977:75750",
+      "route": "/voucher/popup-tao-voucher"
+    },
+    {
+      "name": "adm-vc-010020",
+      "nodeId": "3977:75870",
+      "route": "/voucher/popup-chinh-sua-voucher"
+    },
+    {
+      "name": "adm-vc-010001-dk",
+      "nodeId": "4056:129670",
+      "route": "/voucher/danh-sach-voucher/xem-truoc-voucher-dk"
+    },
+    {
+      "name": "adm-vc-010010-dk",
+      "nodeId": "4056:129989",
+      "route": "/voucher/popup-tao-voucher-dk"
+    },
+    {
+      "name": "adm-vc-010020-dk",
+      "nodeId": "4056:130025",
+      "route": "/voucher/popup-chinh-sua-voucher-dk"
+    },
+    {
+      "name": "adm-gc-010001",
+      "nodeId": "5165:186783",
+      "route": "/gift-code/danh-sach-gift-code/da-sao-chep-ma"
+    },
+    {
+      "name": "adm-ks-010010",
+      "nodeId": "4262:148572",
+      "route": "/khao-sat/tao-khao-sat/cau-hoi-lua-chon"
+    },
+    {
+      "name": "adm-ks-010020",
+      "nodeId": "4262:149022",
+      "route": "/khao-sat/tao-khao-sat/cau-hoi-tu-luan-danh-gia"
+    },
+    {
+      "name": "adm-ks-010010-dk",
+      "nodeId": "4343:71751",
+      "route": "/khao-sat/tao-khao-sat/cau-hoi-lua-chon-dk"
+    },
+    {
+      "name": "adm-ks-010020-dk",
+      "nodeId": "4343:71985",
+      "route": "/khao-sat/tao-khao-sat/cau-hoi-tu-luan-danh-gia-dk"
+    },
+    {
+      "name": "adm-ks-020010",
+      "nodeId": "4885:8470",
+      "route": "/khao-sat/tao-khao-sat-cho-lop/cau-hoi-lua-chon"
+    },
+    {
+      "name": "adm-ks-020020",
+      "nodeId": "4885:8704",
+      "route": "/khao-sat/tao-khao-sat-cho-lop/cau-hoi-tu-luan-danh-gia"
+    },
+    {
+      "name": "adm-ks-030010",
+      "nodeId": "4885:9972",
+      "route": "/khao-sat/tao-khao-sat-hoc-vien/cau-hoi-lua-chon"
+    },
+    {
+      "name": "adm-ks-030020",
+      "nodeId": "4885:10206",
+      "route": "/khao-sat/tao-khao-sat-hoc-vien/cau-hoi-tu-luan-danh-gia"
+    },
+    {
+      "name": "adm-ks-020010-dk",
+      "nodeId": "4885:63380",
+      "route": "/khao-sat/tao-khao-sat-cho-lop/cau-hoi-lua-chon-dk"
+    },
+    {
+      "name": "adm-ks-020020-dk",
+      "nodeId": "4885:63617",
+      "route": "/khao-sat/tao-khao-sat-cho-lop/cau-hoi-tu-luan-danh-gia-dk"
+    },
+    {
+      "name": "adm-ks-030010-dk",
+      "nodeId": "4885:64851",
+      "route": "/khao-sat/tao-khao-sat-hoc-vien/cau-hoi-lua-chon-dk"
+    },
+    {
+      "name": "adm-ks-030020-dk",
+      "nodeId": "4885:65094",
+      "route": "/khao-sat/tao-khao-sat-hoc-vien/cau-hoi-tu-luan-danh-gia-dk"
+    },
+    {
+      "name": "adm-gks-010020",
+      "nodeId": "4273:153247",
+      "route": "/khao-sat/giao-khao-sat/ket-qua-khao-sat"
+    },
+    {
+      "name": "adm-gks-010020-dk",
+      "nodeId": "4343:57662",
+      "route": "/khao-sat/giao-khao-sat/ket-qua-khao-sat-dk"
+    },
+    {
+      "name": "adm-gks-020020",
+      "nodeId": "4885:40002",
+      "route": "/khao-sat/giao-khao-sat-lop/ket-qua-khao-sat"
+    },
+    {
+      "name": "adm-gks-030020",
+      "nodeId": "4885:41300",
+      "route": "/khao-sat/giao-khao-sat-hoc-vien/ket-qua-khao-sat"
+    },
+    {
+      "name": "adm-gks-030045",
+      "nodeId": "5019:5801",
+      "route": "/khao-sat/giao-khao-sat-hoc-vien/dropdown-chon-loai-giao-khao-sat"
+    },
+    {
+      "name": "adm-gks-020020-dk",
+      "nodeId": "4885:61088",
+      "route": "/khao-sat/giao-khao-sat-lop/ket-qua-khao-sat-dk"
+    },
+    {
+      "name": "adm-gks-030020-dk",
+      "nodeId": "4885:62278",
+      "route": "/khao-sat/giao-khao-sat-hoc-vien/ket-qua-khao-sat-dk"
+    },
+    {
+      "name": "adm-hd-010020",
+      "nodeId": "2731:75565",
+      "route": "/hoa-don/popup-ho-so-hoc-vien/lich-su-hoa-don"
+    },
+    {
+      "name": "adm-hd-010224",
+      "nodeId": "2731:75800",
+      "route": "/hoa-don/popup-ho-so-hoc-vien/ghi-chu/trong"
+    },
+    {
+      "name": "adm-hd-010102",
+      "nodeId": "2731:86116",
+      "route": "/hoa-don/danh-sach-hoa-don/dropdown-nhan-tien-thoi-gian-tag-menu-hanh-dong"
+    },
+    {
+      "name": "adm-hd-010202",
+      "nodeId": "2731:87277",
+      "route": "/hoa-don/danh-sach-hoa-don/dropdown-hoa-don-do-loai-hoa-don-doi-trang-thai"
+    },
+    {
+      "name": "adm-hd-010302",
+      "nodeId": "2731:88436",
+      "route": "/hoa-don/danh-sach-hoa-don/dropdown-nguoi-phu-trach-trang-thai"
+    },
+    {
+      "name": "adm-hd-010040",
+      "nodeId": "2731:90174",
+      "route": "/hoa-don/popup-xem-anh-hoa-don"
+    },
+    {
+      "name": "adm-hd-010021",
+      "nodeId": "3004:71868",
+      "route": "/hoa-don/popup-ho-so-hoc-vien/lich-su-hoa-don/cuon-ngang-toi-cuoi"
+    },
+    {
+      "name": "adm-hd-010022",
+      "nodeId": "3004:73103",
+      "route": "/hoa-don/popup-ho-so-hoc-vien/lich-su-hoa-don/mo-chi-tiet-hoc-phi-hover"
+    },
+    {
+      "name": "adm-hd-010006",
+      "nodeId": "3058:98038",
+      "route": "/hoa-don/danh-sach-hoa-don/sau-khi-them-tag"
+    },
+    {
+      "name": "adm-hd-010103",
+      "nodeId": "3058:103087",
+      "route": "/hoa-don/danh-sach-hoa-don/menu-them-hoc-phi"
+    },
+    {
+      "name": "adm-hd-010104",
+      "nodeId": "3058:104348",
+      "route": "/hoa-don/danh-sach-hoa-don/menu-chinh-sua"
+    },
+    {
+      "name": "adm-hd-010007",
+      "nodeId": "3058:106824",
+      "route": "/hoa-don/danh-sach-hoa-don/sau-khi-them-lich-hen"
+    },
+    {
+      "name": "adm-hd-010225",
+      "nodeId": "3058:111486",
+      "route": "/hoa-don/popup-ho-so-hoc-vien/ghi-chu/co-ghi-chu-binh-luan"
+    },
+    {
+      "name": "adm-hd-010020-dk",
+      "nodeId": "4056:131690",
+      "route": "/hoa-don/popup-ho-so-hoc-vien/lich-su-hoa-don-dk"
+    },
+    {
+      "name": "adm-hd-010224-dk",
+      "nodeId": "4056:131899",
+      "route": "/hoa-don/popup-ho-so-hoc-vien/ghi-chu/trong-dk"
+    },
+    {
+      "name": "adm-hd-010102-dk",
+      "nodeId": "4056:131943",
+      "route": "/hoa-don/danh-sach-hoa-don/dropdown-nhan-tien-thoi-gian-tag-menu-hanh-dong-dk"
+    },
+    {
+      "name": "adm-hd-010202-dk",
+      "nodeId": "4056:132529",
+      "route": "/hoa-don/danh-sach-hoa-don/dropdown-hoa-don-do-loai-hoa-don-doi-trang-thai-dk"
+    },
+    {
+      "name": "adm-hd-010302-dk",
+      "nodeId": "4056:133114",
+      "route": "/hoa-don/danh-sach-hoa-don/dropdown-nguoi-phu-trach-trang-thai-dk"
+    },
+    {
+      "name": "adm-hd-010040-dk",
+      "nodeId": "4056:133698",
+      "route": "/hoa-don/popup-xem-anh-hoa-don-dk"
+    },
+    {
+      "name": "adm-hd-010021-dk",
+      "nodeId": "4056:134135",
+      "route": "/hoa-don/popup-ho-so-hoc-vien/lich-su-hoa-don/cuon-ngang-toi-cuoi-dk"
+    },
+    {
+      "name": "adm-hd-010022-dk",
+      "nodeId": "4056:134333",
+      "route": "/hoa-don/popup-ho-so-hoc-vien/lich-su-hoa-don/mo-chi-tiet-hoc-phi-hover-dk"
+    },
+    {
+      "name": "adm-hd-010006-dk",
+      "nodeId": "4056:134862",
+      "route": "/hoa-don/danh-sach-hoa-don/sau-khi-them-tag-dk"
+    },
+    {
+      "name": "adm-hd-010103-dk",
+      "nodeId": "4056:135529",
+      "route": "/hoa-don/danh-sach-hoa-don/menu-them-hoc-phi-dk"
+    },
+    {
+      "name": "adm-hd-010104-dk",
+      "nodeId": "4056:136125",
+      "route": "/hoa-don/danh-sach-hoa-don/menu-chinh-sua-dk"
+    },
+    {
+      "name": "adm-hd-010007-dk",
+      "nodeId": "4056:136722",
+      "route": "/hoa-don/danh-sach-hoa-don/sau-khi-them-lich-hen-dk"
+    },
+    {
+      "name": "adm-hd-010225-dk",
+      "nodeId": "4056:137363",
+      "route": "/hoa-don/popup-ho-so-hoc-vien/ghi-chu/co-ghi-chu-binh-luan-dk"
+    },
+    {
+      "name": "adm-gy-010010",
+      "nodeId": "4193:146930",
+      "route": "/gop-y/giao-vien"
+    },
+    {
+      "name": "adm-gy-010010-dk",
+      "nodeId": "4343:86933",
+      "route": "/gop-y/giao-vien-dk"
+    },
+    {
+      "name": "adm-ss-010001",
+      "nodeId": "2929:44886",
+      "route": "/ship-sach/danh-sach-don-sach/chon-1-don-xuat-excel"
+    },
+    {
+      "name": "adm-ss-010002",
+      "nodeId": "2929:45640",
+      "route": "/ship-sach/danh-sach-don-sach/chon-tat-ca-xuat-excel"
+    },
+    {
+      "name": "adm-ss-010001-dk",
+      "nodeId": "4056:139403",
+      "route": "/ship-sach/danh-sach-don-sach/chon-1-don-xuat-excel-dk"
+    },
+    {
+      "name": "adm-ss-010002-dk",
+      "nodeId": "4056:139845",
+      "route": "/ship-sach/danh-sach-don-sach/chon-tat-ca-xuat-excel-dk"
+    },
+    {
+      "name": "adm-tn-010004",
+      "nodeId": "3228:62216",
+      "route": "/tin-nhan/danh-sach-mau-tin-nhan/tin-nhan-moi-noi-dung-trong"
+    },
+    {
+      "name": "adm-tn-010004-dk",
+      "nodeId": "4056:140608",
+      "route": "/tin-nhan/danh-sach-mau-tin-nhan/tin-nhan-moi-noi-dung-trong-dk"
+    },
+    {
+      "name": "adm-tt-010001",
+      "nodeId": "4273:155962",
+      "route": "/tuong-tac/khong-co-du-lieu"
+    },
+    {
+      "name": "cd-kh-040110",
+      "nodeId": "4846:160270",
+      "route": "/kien-thuc-s1/tu-vung/chon-cum-chon-1-tu"
+    },
+    {
+      "name": "cd-kh-040120",
+      "nodeId": "4846:161062",
+      "route": "/kien-thuc-s1/tu-vung/chon-nhieu-thao-tac-hang-loat"
+    },
+    {
+      "name": "cd-kh-040130",
+      "nodeId": "4846:161829",
+      "route": "/kien-thuc-s1/tu-vung/nhap-nhanh-cuoi-bang"
+    },
+    {
+      "name": "cd-kh-040140",
+      "nodeId": "4846:170817",
+      "route": "/kien-thuc-s1/tu-vung/preview-mobile-theo-tu-dang-chon"
+    },
+    {
+      "name": "cd-kh-040150",
+      "nodeId": "4846:171723",
+      "route": "/kien-thuc-s1/tu-vung/popup-them-tu-thu-vien"
+    },
+    {
+      "name": "cd-kh-040160",
+      "nodeId": "4846:171901",
+      "route": "/kien-thuc-s1/tu-vung/popup-them-theo-list"
+    },
+    {
+      "name": "cd-kh-040170",
+      "nodeId": "4846:172002",
+      "route": "/kien-thuc-s1/tu-vung/popup-chia-cum-bang-ai"
+    },
+    {
+      "name": "cd-kh-040180",
+      "nodeId": "4846:175098",
+      "route": "/kien-thuc-s1/tu-vung/dien-thieu-bang-ai-inline"
+    },
+    {
+      "name": "cd-kh-040125",
+      "nodeId": "4846:176086",
+      "route": "/kien-thuc-s1/tu-vung/them-vao-cum-go-khoi-cum"
+    },
+    {
+      "name": "cd-kh-040190",
+      "nodeId": "5003:16761",
+      "route": "/kien-thuc-s1/tu-vung/soat-loi-bang-ai"
+    },
+    {
+      "name": "cd-kh-040210",
+      "nodeId": "5004:29016",
+      "route": "/kien-thuc-s1/mau-cau"
+    },
+    {
+      "name": "cd-kh-040220",
+      "nodeId": "5004:30033",
+      "route": "/kien-thuc-s1/hanzi"
+    },
+    {
+      "name": "cd-kh-040230",
+      "nodeId": "5004:31086",
+      "route": "/kien-thuc-s1/phat-am"
+    },
+    {
+      "name": "cd-kh-040240",
+      "nodeId": "5004:32103",
+      "route": "/kien-thuc-s1/kanji-khoa-tieng-nhat"
+    },
+    {
+      "name": "cd-kh-040195",
+      "nodeId": "5004:36529",
+      "route": "/kien-thuc-s1/tu-vung/chi-tiet-muc-drawer"
+    },
+    {
+      "name": "cd-kh-060130",
+      "nodeId": "5491:348893",
+      "route": "/bai-tap-ve-nha/btvn-bai-chua-co-cau-hoi"
+    },
+    {
+      "name": "cd-kh-060160",
+      "nodeId": "5672:75478",
+      "route": "/bai-tap-ve-nha/preview-mobile-tren-trang-kiem-tra"
+    },
+    {
+      "name": "cd-kh-070210",
+      "nodeId": "5505:23723",
+      "route": "/thu-vien/ky-nang/doc"
+    },
+    {
+      "name": "cd-kh-070101",
+      "nodeId": "5672:62187",
+      "route": "/thu-vien/kien-thuc-menu-nhap-chua-dung"
+    },
+    {
+      "name": "cd-kh-070102",
+      "nodeId": "5672:63250",
+      "route": "/thu-vien/kien-thuc-menu-cong-khai-dang-dung"
+    },
+    {
+      "name": "cd-kh-070110",
+      "nodeId": "5672:64382",
+      "route": "/thu-vien/kien-thuc/ngu-phap"
+    },
+    {
+      "name": "cd-kh-070120",
+      "nodeId": "5672:65680",
+      "route": "/thu-vien/kien-thuc/mau-cau"
+    },
+    {
+      "name": "cd-kh-070130",
+      "nodeId": "5672:66990",
+      "route": "/thu-vien/kien-thuc/hanzi"
+    },
+    {
+      "name": "cd-kh-070140",
+      "nodeId": "5672:68344",
+      "route": "/thu-vien/kien-thuc/phat-am"
+    },
+    {
+      "name": "cd-kh-070220",
+      "nodeId": "5672:69716",
+      "route": "/thu-vien/ky-nang/viet"
+    },
+    {
+      "name": "cd-kh-070230",
+      "nodeId": "5672:70935",
+      "route": "/thu-vien/ky-nang/noi"
+    },
+    {
+      "name": "cd-kh-070310",
+      "nodeId": "5672:72154",
+      "route": "/thu-vien/bai-tap/btvn-mau"
+    },
+    {
+      "name": "cd-kh-070320",
+      "nodeId": "5672:73387",
+      "route": "/thu-vien/bai-tap/kiem-tra-mau"
+    },
+    {
+      "name": "cd-kh-070150",
+      "nodeId": "5672:76669",
+      "route": "/thu-vien/kien-thuc/kanji"
+    },
+    {
+      "name": "cd-kh-070301",
+      "nodeId": "6163:81278",
+      "route": "/thu-vien/bai-tap/chi-tiet-cau-hoi-listening"
+    },
+    {
+      "name": "cd-kh-070302",
+      "nodeId": "6163:82177",
+      "route": "/thu-vien/bai-tap/chi-tiet-cau-hoi-reading"
+    },
+    {
+      "name": "cd-kh-070304",
+      "nodeId": "6163:332037",
+      "route": "/thu-vien/bai-tap/chi-tiet-cau-hoi-reading/sua-cau"
+    },
+    {
+      "name": "cd-kh-070305",
+      "nodeId": "6163:332868",
+      "route": "/thu-vien/bai-tap/chi-tiet-cau-hoi-reading/them-sua-tu-khoa"
+    },
+    {
+      "name": "cd-kh-070303",
+      "nodeId": "6163:82881",
+      "route": "/thu-vien/bai-tap/chi-tiet-cau-hoi-reading-tieng-nhat"
+    },
+    {
+      "name": "cd-kh-070308",
+      "nodeId": "6518:373772",
+      "route": "/thu-vien/bai-tap/chi-tiet-cau-hoi-listening-tieng-nhat"
+    },
+    {
+      "name": "cd-kh-070313",
+      "nodeId": "6518:376391",
+      "route": "/thu-vien/bai-tap/chi-tiet-cau-hoi-reading/xem-truoc-phia-hoc-vien"
+    },
+    {
+      "name": "cd-kh-070306",
+      "nodeId": "6579:358750",
+      "route": "/thu-vien/bai-tap/chi-tiet-cau-hoi-listening/sua-xoa"
+    },
+    {
+      "name": "cd-kh-070307",
+      "nodeId": "6579:359730",
+      "route": "/thu-vien/bai-tap/chi-tiet-cau-hoi-listening/xac-nhan-xoa-doi-tuong"
+    },
+    {
+      "name": "cd-kh-070309",
+      "nodeId": "6579:360783",
+      "route": "/thu-vien/bai-tap/chi-tiet-cau-hoi-reading/them-sua-cau-hoi"
+    },
+    {
+      "name": "cd-kh-050110",
+      "nodeId": "6646:84755",
+      "route": "/ky-nang-s6/nghe/chi-tiet-bai-nghe-drawer"
+    },
+    {
+      "name": "cd-kh-050140",
+      "nodeId": "6646:116941",
+      "route": "/ky-nang-s6/nghe/preview-mobile-theo-bai-dang-chon"
+    },
+    {
+      "name": "cd-kh-050130",
+      "nodeId": "6646:118162",
+      "route": "/ky-nang-s6/nghe/khoa-chua-co-bai-nghe"
+    },
+    {
+      "name": "cd-kh-050120",
+      "nodeId": "6646:119253",
+      "route": "/ky-nang-s6/nghe/chon-nhieu-thao-tac-hang-loat"
+    },
+    {
+      "name": "cd-kh-050180",
+      "nodeId": "6646:120248",
+      "route": "/ky-nang-s6/nghe/transcript-bang-ai-inline"
+    },
+    {
+      "name": "cd-kh-050190",
+      "nodeId": "6646:121390",
+      "route": "/ky-nang-s6/nghe/soat-loi-bang-ai"
+    },
+    {
+      "name": "cd-kh-050150",
+      "nodeId": "6646:122539",
+      "route": "/ky-nang-s6/nghe/popup-them-bai-tu-thu-vien"
+    },
+    {
+      "name": "cd-kh-050160",
+      "nodeId": "6646:122949",
+      "route": "/ky-nang-s6/nghe/popup-tao-bai-nghe-moi"
+    },
+    {
+      "name": "cd-kh-050210",
+      "nodeId": "6935:379016",
+      "route": "/ky-nang-s6/doc/chi-tiet-bai-doc-drawer"
+    },
+    {
+      "name": "cd-kh-030340",
+      "nodeId": "5491:357438",
+      "route": "/hoc-ky/kiem-tra/danh-sach-bai-tap"
+    },
+    {
+      "name": "cd-kh-030343",
+      "nodeId": "5491:358584",
+      "route": "/hoc-ky/kiem-tra/danh-sach-bai-tap-sau-generate-30-dong"
+    },
+    {
+      "name": "cd-kh-030347",
+      "nodeId": "5609:33933",
+      "route": "/hoc-ky/kiem-tra/danh-sach-bai-tap-sau-khi-tao"
+    },
+    {
+      "name": "cd-kh-030310",
+      "nodeId": "1496:16304",
+      "route": "/hoc-ky/kiem-tra/popup-cau-hinh-bai-kiem-tra"
+    },
+    {
+      "name": "cd-kh-030210",
+      "nodeId": "1076:4963",
+      "route": "/hoc-ky/bai-hoc/popup-chi-tiet-bai-hoc-1"
+    },
+    {
+      "name": "cd-kh-030230",
+      "nodeId": "1073:4361",
+      "route": "/hoc-ky/bai-hoc/popup-chi-tiet-bai-hoc-3"
+    },
+    {
+      "name": "cd-kh-030240",
+      "nodeId": "1076:6297",
+      "route": "/hoc-ky/bai-hoc/popup-chi-tiet-bai-hoc-4"
+    },
+    {
+      "name": "cd-kh-030231",
+      "nodeId": "2808:41384",
+      "route": "/hoc-ky/bai-hoc/popup-chi-tiet-bai-hoc-3/tai-nguyen/tung-muc-trong"
+    },
+    {
+      "name": "cd-kh-030250",
+      "nodeId": "2808:52020",
+      "route": "/hoc-ky/bai-hoc/popup-chi-tiet-bai-hoc-ban-day-du"
+    },
+    {
+      "name": "cd-kh-030104",
+      "nodeId": "6006:129022",
+      "route": "/hoc-ky/chua-co-hoc-ky"
+    },
+    {
+      "name": "cd-kh-030242",
+      "nodeId": "7193:401441",
+      "route": "/hoc-ky/bai-hoc/popup-chi-tiet-bai-hoc/tab-ky-nang"
+    },
+    {
+      "name": "cd-kh-030241",
+      "nodeId": "7193:402147",
+      "route": "/hoc-ky/bai-hoc/popup-chi-tiet-bai-hoc/tab-kien-thuc/trong"
+    },
+    {
+      "name": "cd-kh-030243",
+      "nodeId": "7193:402494",
+      "route": "/hoc-ky/bai-hoc/popup-chi-tiet-bai-hoc/tab-ky-nang/trong"
+    },
+    {
+      "name": "cd-kh-030211",
+      "nodeId": "7193:402861",
+      "route": "/hoc-ky/bai-hoc/popup-chi-tiet-bai-hoc-1/chua-gan-kien-thuc-ky-nang"
+    },
+    {
+      "name": "cd-kh-030244",
+      "nodeId": "7193:403630",
+      "route": "/hoc-ky/bai-hoc/popup-chi-tiet-bai-hoc/tab-kien-thuc/popup-them-kien-thuc"
+    },
+    {
+      "name": "cd-kh-030245",
+      "nodeId": "7193:403961",
+      "route": "/hoc-ky/bai-hoc/popup-chi-tiet-bai-hoc/tab-ky-nang/popup-them-ky-nang"
+    },
+    {
+      "name": "cd-kh-030246",
+      "nodeId": "7193:404272",
+      "route": "/hoc-ky/bai-hoc/popup-chi-tiet-bai-hoc/tab-ky-nang/popup-them-ky-nang/loai-chua-co-du-lieu"
+    },
+    {
+      "name": "cd-kh-030247",
+      "nodeId": "7193:404533",
+      "route": "/hoc-ky/bai-hoc/popup-chi-tiet-bai-hoc/tab-kien-thuc/popup-them-kien-thuc/cum-chua-co-kien-thuc"
+    },
+    {
+      "name": "cd-kh-020201",
+      "nodeId": "6518:337169",
+      "route": "/lo-trinh/cuon-ngang-toi-cot-cuoi"
+    },
+    {
+      "name": "cd-kh-020270",
+      "nodeId": "6518:338414",
+      "route": "/lo-trinh/chua-co-bai-hoc"
+    },
+    {
+      "name": "cd-kh-020210",
+      "nodeId": "6518:339712",
+      "route": "/lo-trinh/o-da-khoa-tooltip-du-buoi"
+    },
+    {
+      "name": "cd-kh-020220",
+      "nodeId": "6518:341098",
+      "route": "/lo-trinh/tick-vuot-thoi-luong-canh-bao"
+    },
+    {
+      "name": "cd-kh-020230",
+      "nodeId": "6518:342631",
+      "route": "/lo-trinh/dropdown-chon-ky"
+    },
+    {
+      "name": "cd-kh-020240",
+      "nodeId": "6518:344243",
+      "route": "/lo-trinh/keo-tha-doi-thu-tu"
+    },
+    {
+      "name": "cd-kh-020250",
+      "nodeId": "6518:345449",
+      "route": "/lo-trinh/sua-ten-bai-loi-de-trong-phim-tat"
+    },
+    {
+      "name": "cd-kh-020260",
+      "nodeId": "6518:346934",
+      "route": "/lo-trinh/them-nhanh-bai-hoc"
+    },
+    {
+      "name": "cd-kh-070160",
+      "nodeId": "5729:91615",
+      "route": "/thu-vien/kien-thuc/bang-chu-tieng-nhat"
+    },
+    {
+      "name": "cd-kh-070170",
+      "nodeId": "5729:92036",
+      "route": "/thu-vien/kien-thuc/bang-chu-tieng-han"
+    },
+    {
+      "name": "cd-kh-070161",
+      "nodeId": "5729:94334",
+      "route": "/thu-vien/kien-thuc/bang-chu-tieng-nhat-xem-dang-bang-chu"
+    },
+    {
+      "name": "cd-kh-070171",
+      "nodeId": "5729:95447",
+      "route": "/thu-vien/kien-thuc/bang-chu-tieng-han-xem-dang-bang-chu"
+    },
+    {
+      "name": "cd-kh-040110-dk",
+      "nodeId": "6015:47198",
+      "route": "/kien-thuc-s1/tu-vung/chon-cum-chon-1-tu-dk"
+    },
+    {
+      "name": "cd-kh-040120-dk",
+      "nodeId": "6015:47661",
+      "route": "/kien-thuc-s1/tu-vung/chon-nhieu-thao-tac-hang-loat-dk"
+    },
+    {
+      "name": "cd-kh-040130-dk",
+      "nodeId": "6015:48105",
+      "route": "/kien-thuc-s1/tu-vung/nhap-nhanh-cuoi-bang-dk"
+    },
+    {
+      "name": "cd-kh-040140-dk",
+      "nodeId": "6015:48547",
+      "route": "/kien-thuc-s1/tu-vung/preview-mobile-theo-tu-dang-chon-dk"
+    },
+    {
+      "name": "cd-kh-040150-dk",
+      "nodeId": "6015:48962",
+      "route": "/kien-thuc-s1/tu-vung/popup-them-tu-thu-vien-dk"
+    },
+    {
+      "name": "cd-kh-040160-dk",
+      "nodeId": "6015:49094",
+      "route": "/kien-thuc-s1/tu-vung/popup-them-theo-list-dk"
+    },
+    {
+      "name": "cd-kh-040170-dk",
+      "nodeId": "6015:49191",
+      "route": "/kien-thuc-s1/tu-vung/popup-chia-cum-bang-ai-dk"
+    },
+    {
+      "name": "cd-kh-040180-dk",
+      "nodeId": "6015:49290",
+      "route": "/kien-thuc-s1/tu-vung/dien-thieu-bang-ai-inline-dk"
+    },
+    {
+      "name": "cd-kh-040125-dk",
+      "nodeId": "6015:49757",
+      "route": "/kien-thuc-s1/tu-vung/them-vao-cum-go-khoi-cum-dk"
+    },
+    {
+      "name": "cd-kh-040190-dk",
+      "nodeId": "6015:50247",
+      "route": "/kien-thuc-s1/tu-vung/soat-loi-bang-ai-dk"
+    },
+    {
+      "name": "cd-kh-040210-dk",
+      "nodeId": "6015:50789",
+      "route": "/kien-thuc-s1/mau-cau-dk"
+    },
+    {
+      "name": "cd-kh-040220-dk",
+      "nodeId": "6015:51213",
+      "route": "/kien-thuc-s1/hanzi-dk"
+    },
+    {
+      "name": "cd-kh-040230-dk",
+      "nodeId": "6015:51673",
+      "route": "/kien-thuc-s1/phat-am-dk"
+    },
+    {
+      "name": "cd-kh-040240-dk",
+      "nodeId": "6015:52079",
+      "route": "/kien-thuc-s1/kanji-khoa-tieng-nhat-dk"
+    },
+    {
+      "name": "cd-kh-040195-dk",
+      "nodeId": "6015:52538",
+      "route": "/kien-thuc-s1/tu-vung/chi-tiet-muc-drawer-dk"
+    },
+    {
+      "name": "cd-kh-030270-dk",
+      "nodeId": "6015:53081",
+      "route": "/hoc-ky/bai-hoc/popup-chi-tiet-bai-hoc/tab-kien-thuc/popup-them-kien-thuc-vao-bai-dk"
+    },
+    {
+      "name": "cd-kh-060130-dk",
+      "nodeId": "6015:54200",
+      "route": "/bai-tap-ve-nha/btvn-bai-chua-co-cau-hoi-dk"
+    },
+    {
+      "name": "cd-kh-060160-dk",
+      "nodeId": "6015:54692",
+      "route": "/bai-tap-ve-nha/preview-mobile-tren-trang-kiem-tra-dk"
+    },
+    {
+      "name": "cd-kh-070304-dk",
+      "nodeId": "6579:366332",
+      "route": "/thu-vien/bai-tap/chi-tiet-cau-hoi-reading/sua-cau-dk"
+    },
+    {
+      "name": "cd-kh-070305-dk",
+      "nodeId": "6579:367198",
+      "route": "/thu-vien/bai-tap/chi-tiet-cau-hoi-reading/them-sua-tu-khoa-dk"
+    },
+    {
+      "name": "cd-kh-070306-dk",
+      "nodeId": "6579:368141",
+      "route": "/thu-vien/bai-tap/chi-tiet-cau-hoi-listening/sua-xoa-dk"
+    },
+    {
+      "name": "cd-kh-070307-dk",
+      "nodeId": "6579:369097",
+      "route": "/thu-vien/bai-tap/chi-tiet-cau-hoi-listening/xac-nhan-xoa-doi-tuong-dk"
+    },
+    {
+      "name": "cd-kh-070309-dk",
+      "nodeId": "6579:369959",
+      "route": "/thu-vien/bai-tap/chi-tiet-cau-hoi-reading/them-sua-cau-hoi-dk"
+    },
+    {
+      "name": "cd-kh-070210-dk",
+      "nodeId": "6579:374431",
+      "route": "/thu-vien/ky-nang/doc-dk"
+    },
+    {
+      "name": "cd-kh-070101-dk",
+      "nodeId": "6579:375435",
+      "route": "/thu-vien/kien-thuc-menu-nhap-chua-dung-dk"
+    },
+    {
+      "name": "cd-kh-070102-dk",
+      "nodeId": "6579:376506",
+      "route": "/thu-vien/kien-thuc-menu-cong-khai-dang-dung-dk"
+    },
+    {
+      "name": "cd-kh-070110-dk",
+      "nodeId": "6579:377576",
+      "route": "/thu-vien/kien-thuc/ngu-phap-dk"
+    },
+    {
+      "name": "cd-kh-070120-dk",
+      "nodeId": "6579:378617",
+      "route": "/thu-vien/kien-thuc/mau-cau-dk"
+    },
+    {
+      "name": "cd-kh-070130-dk",
+      "nodeId": "6579:379670",
+      "route": "/thu-vien/kien-thuc/hanzi-dk"
+    },
+    {
+      "name": "cd-kh-070140-dk",
+      "nodeId": "6579:380767",
+      "route": "/thu-vien/kien-thuc/phat-am-dk"
+    },
+    {
+      "name": "cd-kh-070220-dk",
+      "nodeId": "6579:381880",
+      "route": "/thu-vien/ky-nang/viet-dk"
+    },
+    {
+      "name": "cd-kh-070230-dk",
+      "nodeId": "6579:382864",
+      "route": "/thu-vien/ky-nang/noi-dk"
+    },
+    {
+      "name": "cd-kh-070310-dk",
+      "nodeId": "6579:383848",
+      "route": "/thu-vien/bai-tap/btvn-mau-dk"
+    },
+    {
+      "name": "cd-kh-070320-dk",
+      "nodeId": "6579:384742",
+      "route": "/thu-vien/bai-tap/kiem-tra-mau-dk"
+    },
+    {
+      "name": "cd-kh-070150-dk",
+      "nodeId": "6579:385636",
+      "route": "/thu-vien/kien-thuc/kanji-dk"
+    },
+    {
+      "name": "cd-kh-070301-dk",
+      "nodeId": "6579:386683",
+      "route": "/thu-vien/bai-tap/chi-tiet-cau-hoi-listening-dk"
+    },
+    {
+      "name": "cd-kh-070302-dk",
+      "nodeId": "6579:387571",
+      "route": "/thu-vien/bai-tap/chi-tiet-cau-hoi-reading-dk"
+    },
+    {
+      "name": "cd-kh-070303-dk",
+      "nodeId": "6579:388463",
+      "route": "/thu-vien/bai-tap/chi-tiet-cau-hoi-reading-tieng-nhat-dk"
+    },
+    {
+      "name": "cd-kh-070308-dk",
+      "nodeId": "6579:389359",
+      "route": "/thu-vien/bai-tap/chi-tiet-cau-hoi-listening-tieng-nhat-dk"
+    },
+    {
+      "name": "cd-kh-070313-dk",
+      "nodeId": "6579:400133",
+      "route": "/thu-vien/bai-tap/chi-tiet-cau-hoi-reading/xem-truoc-phia-hoc-vien-dk"
+    },
+    {
+      "name": "cd-kh-050110-dk",
+      "nodeId": "6646:127785",
+      "route": "/ky-nang-s6/nghe/chi-tiet-bai-nghe-drawer-dk"
+    },
+    {
+      "name": "cd-kh-050140-dk",
+      "nodeId": "6646:129058",
+      "route": "/ky-nang-s6/nghe/preview-mobile-theo-bai-dang-chon-dk"
+    },
+    {
+      "name": "cd-kh-050130-dk",
+      "nodeId": "6646:130193",
+      "route": "/ky-nang-s6/nghe/khoa-chua-co-bai-nghe-dk"
+    },
+    {
+      "name": "cd-kh-050120-dk",
+      "nodeId": "6646:131134",
+      "route": "/ky-nang-s6/nghe/chon-nhieu-thao-tac-hang-loat-dk"
+    },
+    {
+      "name": "cd-kh-050180-dk",
+      "nodeId": "6646:132301",
+      "route": "/ky-nang-s6/nghe/transcript-bang-ai-inline-dk"
+    },
+    {
+      "name": "cd-kh-050190-dk",
+      "nodeId": "6646:133447",
+      "route": "/ky-nang-s6/nghe/soat-loi-bang-ai-dk"
+    },
+    {
+      "name": "cd-kh-050150-dk",
+      "nodeId": "6646:134590",
+      "route": "/ky-nang-s6/nghe/popup-them-bai-tu-thu-vien-dk"
+    },
+    {
+      "name": "cd-kh-050160-dk",
+      "nodeId": "6646:134889",
+      "route": "/ky-nang-s6/nghe/popup-tao-bai-nghe-moi-dk"
+    },
+    {
+      "name": "cd-kh-050210-dk",
+      "nodeId": "6935:380111",
+      "route": "/ky-nang-s6/doc/chi-tiet-bai-doc-drawer-dk"
+    },
+    {
+      "name": "cd-kh-030340-dk",
+      "nodeId": "6015:61856",
+      "route": "/hoc-ky/kiem-tra/danh-sach-bai-tap-dk"
+    },
+    {
+      "name": "cd-kh-030347-dk",
+      "nodeId": "6015:62889",
+      "route": "/hoc-ky/kiem-tra/danh-sach-bai-tap-sau-khi-tao-dk"
+    },
+    {
+      "name": "cd-kh-030343-dk",
+      "nodeId": "6579:398214",
+      "route": "/hoc-ky/kiem-tra/danh-sach-bai-tap-sau-generate-30-dong-dk"
+    },
+    {
+      "name": "cd-kh-030310-dk",
+      "nodeId": "6015:64397",
+      "route": "/hoc-ky/kiem-tra/popup-cau-hinh-bai-kiem-tra-dk"
+    },
+    {
+      "name": "cd-kh-030210-dk",
+      "nodeId": "6015:64458",
+      "route": "/hoc-ky/bai-hoc/popup-chi-tiet-bai-hoc-1-dk"
+    },
+    {
+      "name": "cd-kh-030230-dk",
+      "nodeId": "6015:64513",
+      "route": "/hoc-ky/bai-hoc/popup-chi-tiet-bai-hoc-3-dk"
+    },
+    {
+      "name": "cd-kh-030240-dk",
+      "nodeId": "6015:64685",
+      "route": "/hoc-ky/bai-hoc/popup-chi-tiet-bai-hoc-4-dk"
+    },
+    {
+      "name": "cd-kh-030231-dk",
+      "nodeId": "6015:64934",
+      "route": "/hoc-ky/bai-hoc/popup-chi-tiet-bai-hoc-3/tai-nguyen/tung-muc-trong-dk"
+    },
+    {
+      "name": "cd-kh-030250-dk",
+      "nodeId": "6015:64981",
+      "route": "/hoc-ky/bai-hoc/popup-chi-tiet-bai-hoc-ban-day-du-dk"
+    },
+    {
+      "name": "cd-kh-030264-dk",
+      "nodeId": "6015:65273",
+      "route": "/hoc-ky/bai-hoc/popup-chi-tiet-bai-hoc/tab-bug/da-giai-quyet-co-ket-qua-xu-ly-dk"
+    },
+    {
+      "name": "cd-kh-030104-dk",
+      "nodeId": "6015:65401",
+      "route": "/hoc-ky/chua-co-hoc-ky-dk"
+    },
+    {
+      "name": "cd-kh-020201-dk",
+      "nodeId": "6518:356244",
+      "route": "/lo-trinh/cuon-ngang-toi-cot-cuoi-dk"
+    },
+    {
+      "name": "cd-kh-020270-dk",
+      "nodeId": "6518:357563",
+      "route": "/lo-trinh/chua-co-bai-hoc-dk"
+    },
+    {
+      "name": "cd-kh-020210-dk",
+      "nodeId": "6518:359275",
+      "route": "/lo-trinh/o-da-khoa-tooltip-du-buoi-dk"
+    },
+    {
+      "name": "cd-kh-020220-dk",
+      "nodeId": "6518:360484",
+      "route": "/lo-trinh/tick-vuot-thoi-luong-canh-bao-dk"
+    },
+    {
+      "name": "cd-kh-020230-dk",
+      "nodeId": "6518:362333",
+      "route": "/lo-trinh/dropdown-chon-ky-dk"
+    },
+    {
+      "name": "cd-kh-020240-dk",
+      "nodeId": "6518:363527",
+      "route": "/lo-trinh/keo-tha-doi-thu-tu-dk"
+    },
+    {
+      "name": "cd-kh-020250-dk",
+      "nodeId": "6518:365147",
+      "route": "/lo-trinh/sua-ten-bai-loi-de-trong-phim-tat-dk"
+    },
+    {
+      "name": "cd-kh-020260-dk",
+      "nodeId": "6518:366293",
+      "route": "/lo-trinh/them-nhanh-bai-hoc-dk"
+    },
+    {
+      "name": "cd-kh-070160-dk",
+      "nodeId": "6579:392879",
+      "route": "/thu-vien/kien-thuc/bang-chu-tieng-nhat-dk"
+    },
+    {
+      "name": "cd-kh-070170-dk",
+      "nodeId": "6579:393950",
+      "route": "/thu-vien/kien-thuc/bang-chu-tieng-han-dk"
+    },
+    {
+      "name": "cd-kh-070161-dk",
+      "nodeId": "6579:395015",
+      "route": "/thu-vien/kien-thuc/bang-chu-tieng-nhat-xem-dang-bang-chu-dk"
+    },
+    {
+      "name": "cd-kh-070171-dk",
+      "nodeId": "6579:396321",
+      "route": "/thu-vien/kien-thuc/bang-chu-tieng-han-xem-dang-bang-chu-dk"
+    },
+    {
+      "name": "cd-dm-010010",
+      "nodeId": "1725:17306",
+      "route": "/quan-ly-danh-muc/popup-danh-muc-cap-do"
+    },
+    {
+      "name": "cd-dm-010020",
+      "nodeId": "1758:4876",
+      "route": "/quan-ly-danh-muc/popup-danh-muc-cap-do/mindset"
+    },
+    {
+      "name": "cd-dm-010040",
+      "nodeId": "1758:5335",
+      "route": "/quan-ly-danh-muc/popup-danh-muc-cap-do/huong-dan-giang-day"
+    },
+    {
+      "name": "cd-dm-010030",
+      "nodeId": "1758:5127",
+      "route": "/quan-ly-danh-muc/popup-danh-muc-cap-do/tieu-chuan-giao-trinh"
+    },
+    {
+      "name": "cd-dm-010010-dk",
+      "nodeId": "4056:145430",
+      "route": "/quan-ly-danh-muc/popup-danh-muc-cap-do-dk"
+    },
+    {
+      "name": "cd-dm-010020-dk",
+      "nodeId": "4056:145523",
+      "route": "/quan-ly-danh-muc/popup-danh-muc-cap-do/mindset-dk"
+    },
+    {
+      "name": "cd-dm-010040-dk",
+      "nodeId": "4056:145659",
+      "route": "/quan-ly-danh-muc/popup-danh-muc-cap-do/huong-dan-giang-day-dk"
+    },
+    {
+      "name": "cd-dm-010030-dk",
+      "nodeId": "4056:145834",
+      "route": "/quan-ly-danh-muc/popup-danh-muc-cap-do/tieu-chuan-giao-trinh-dk"
+    },
+    {
+      "name": "cd-tl-010010",
+      "nodeId": "6133:124292",
+      "route": "/tools/giong-doc/dang-tao"
+    },
+    {
+      "name": "cd-tl-010210",
+      "nodeId": "6133:125715",
+      "route": "/tools/giong-doc/loi-ket-noi-may-chu"
+    },
+    {
+      "name": "cd-tl-010010-dk",
+      "nodeId": "6133:127094",
+      "route": "/tools/giong-doc/dang-tao-dk"
+    },
+    {
+      "name": "cd-tl-010210-dk",
+      "nodeId": "6133:127978",
+      "route": "/tools/giong-doc/loi-ket-noi-may-chu-dk"
+    },
+    {
+      "name": "cd-bl-010040",
+      "nodeId": "5274:365264",
+      "route": "/bao-loi/chua-co-bao-loi"
+    },
+    {
+      "name": "ch-tc-010001",
+      "nodeId": "7015:12238",
+      "route": "/trang-chu/thong-ke-theo-thang/chon-t9/2026"
+    },
+    {
+      "name": "ch-tc-010002",
+      "nodeId": "7015:12629",
+      "route": "/trang-chu/thong-ke-theo-thang/hien-thu-nhap"
+    },
+    {
+      "name": "ch-tc-010001-dk",
+      "nodeId": "7015:16369",
+      "route": "/trang-chu/thong-ke-theo-thang/chon-t9/2026-dk"
+    },
+    {
+      "name": "ch-tc-010002-dk",
+      "nodeId": "7015:16841",
+      "route": "/trang-chu/thong-ke-theo-thang/hien-thu-nhap-dk"
+    },
+    {
+      "name": "ch-bl-010040",
+      "nodeId": "5274:363930",
+      "route": "/bao-loi/chua-co-bao-loi-ch-bl-010040"
+    },
+    {
+      "name": "gv-tc-010001",
+      "nodeId": "6247:61758",
+      "route": "/trang-chu/thong-ke-theo-thang/chon-t9/2026-gv-tc-010001"
+    },
+    {
+      "name": "gv-tc-010002",
+      "nodeId": "6326:2277",
+      "route": "/trang-chu/thong-ke-theo-thang/hien-thu-nhap-gv-tc-010002"
+    },
+    {
+      "name": "gv-tc-010001-dk",
+      "nodeId": "6326:25991",
+      "route": "/trang-chu/thong-ke-theo-thang/chon-t9/2026-dk-gv-tc-010001-dk"
+    },
+    {
+      "name": "gv-tc-010002-dk",
+      "nodeId": "6326:26384",
+      "route": "/trang-chu/thong-ke-theo-thang/hien-thu-nhap-dk-gv-tc-010002-dk"
+    },
+    {
+      "name": "gv-lop-030110",
+      "nodeId": "5292:220948",
+      "route": "/chi-tiet-lop/bai-hoc/buoi-hoc/dan-do-truoc-buoi-hoc"
+    },
+    {
+      "name": "gv-lop-030111",
+      "nodeId": "5292:222200",
+      "route": "/chi-tiet-lop/bai-hoc/buoi-hoc/dan-do-da-doc"
+    },
+    {
+      "name": "gv-lop-030130",
+      "nodeId": "5292:223076",
+      "route": "/chi-tiet-lop/bai-hoc/buoc-1-diem-danh"
+    },
+    {
+      "name": "gv-lop-030140",
+      "nodeId": "5292:224394",
+      "route": "/chi-tiet-lop/bai-hoc/buoc-2-ghi-chu-buoi-hoc"
+    },
+    {
+      "name": "gv-lop-030150",
+      "nodeId": "5292:225250",
+      "route": "/chi-tiet-lop/bai-hoc/buoi-hoc-da-ket-thuc"
+    },
+    {
+      "name": "gv-lop-030160",
+      "nodeId": "5292:225685",
+      "route": "/chi-tiet-lop/bai-hoc/buoi-hoc/bai-dang-day"
+    },
+    {
+      "name": "gv-lop-030170",
+      "nodeId": "5292:226685",
+      "route": "/chi-tiet-lop/bai-hoc/buoi-hoc/bai-cho-hoan-thanh"
+    },
+    {
+      "name": "gv-lop-030401",
+      "nodeId": "5425:282079",
+      "route": "/chi-tiet-lop/bai-hoc/tai-nguyen-bi-khoa"
+    },
+    {
+      "name": "gv-lop-030401-dk",
+      "nodeId": "5425:292019",
+      "route": "/chi-tiet-lop/bai-hoc/tai-nguyen-bi-khoa-dk"
+    },
+    {
+      "name": "gv-lop-040110",
+      "nodeId": "5425:275048",
+      "route": "/chi-tiet-lop/bai-tap-va-kiem-tra/btvn-bai-hoc-chua-mo"
+    },
+    {
+      "name": "gv-lop-040210",
+      "nodeId": "5425:276208",
+      "route": "/chi-tiet-lop/bai-tap-va-kiem-tra/kiem-tra-chua-giao-xem-truoc-de"
+    },
+    {
+      "name": "gv-lop-040201",
+      "nodeId": "5425:277432",
+      "route": "/chi-tiet-lop/bai-tap-va-kiem-tra/kiem-tra-giao-vien-khong-phu-trach-chinh-chi-xem"
+    },
+    {
+      "name": "gv-lop-040301",
+      "nodeId": "5425:279548",
+      "route": "/chi-tiet-lop/bai-tap-va-kiem-tra/man-cham-bai-cau-hoi-con"
+    },
+    {
+      "name": "gv-lop-040302",
+      "nodeId": "5425:280390",
+      "route": "/chi-tiet-lop/bai-tap-va-kiem-tra/man-cham-bai-cau-khong-can-cham"
+    },
+    {
+      "name": "gv-lop-040204",
+      "nodeId": "7074:397332",
+      "route": "/chi-tiet-lop/bai-tap-va-kiem-tra/kiem-tra-chua-giao-giao-vien-khong-phu-trach-chinh-xem-truoc-de"
+    },
+    {
+      "name": "gv-lop-040205",
+      "nodeId": "7074:398519",
+      "route": "/chi-tiet-lop/bai-tap-va-kiem-tra/kiem-tra-vua-giao"
+    },
+    {
+      "name": "gv-lop-040110-dk",
+      "nodeId": "5425:283233",
+      "route": "/chi-tiet-lop/bai-tap-va-kiem-tra/btvn-bai-hoc-chua-mo-dk"
+    },
+    {
+      "name": "gv-lop-040201-dk",
+      "nodeId": "5425:284125",
+      "route": "/chi-tiet-lop/bai-tap-va-kiem-tra/kiem-tra-giao-vien-khong-phu-trach-chinh-chi-xem-dk"
+    },
+    {
+      "name": "gv-lop-040210-dk",
+      "nodeId": "5425:294337",
+      "route": "/chi-tiet-lop/bai-tap-va-kiem-tra/kiem-tra-chua-giao-xem-truoc-de-dk"
+    },
+    {
+      "name": "gv-lop-040301-dk",
+      "nodeId": "5425:296986",
+      "route": "/chi-tiet-lop/bai-tap-va-kiem-tra/man-cham-bai-cau-hoi-con-dk"
+    },
+    {
+      "name": "gv-lop-040302-dk",
+      "nodeId": "5425:298017",
+      "route": "/chi-tiet-lop/bai-tap-va-kiem-tra/man-cham-bai-cau-khong-can-cham-dk"
+    },
+    {
+      "name": "gv-lop-040204-dk",
+      "nodeId": "7074:403397",
+      "route": "/chi-tiet-lop/bai-tap-va-kiem-tra/kiem-tra-chua-giao-giao-vien-khong-phu-trach-chinh-xem-truoc-de-dk"
+    },
+    {
+      "name": "gv-lop-040205-dk",
+      "nodeId": "7074:404584",
+      "route": "/chi-tiet-lop/bai-tap-va-kiem-tra/kiem-tra-vua-giao-dk"
+    },
+    {
+      "name": "gv-lop-040320",
+      "nodeId": "5750:77075",
+      "route": "/chi-tiet-lop/bai-tap-va-kiem-tra/man-cham-bai-tong-quan-cham-bai"
+    },
+    {
+      "name": "gv-lop-040330",
+      "nodeId": "5750:77412",
+      "route": "/chi-tiet-lop/bai-tap-va-kiem-tra/man-cham-bai-trac-nghiem-app-cham"
+    },
+    {
+      "name": "gv-lop-040331",
+      "nodeId": "5750:77749",
+      "route": "/chi-tiet-lop/bai-tap-va-kiem-tra/man-cham-bai-sap-xep-app-cham"
+    },
+    {
+      "name": "gv-lop-040332",
+      "nodeId": "5750:78086",
+      "route": "/chi-tiet-lop/bai-tap-va-kiem-tra/man-cham-bai-noi-tu-app-cham"
+    },
+    {
+      "name": "gv-lop-040333",
+      "nodeId": "5750:78423",
+      "route": "/chi-tiet-lop/bai-tap-va-kiem-tra/man-cham-bai-noi-app-cham"
+    },
+    {
+      "name": "gv-lop-040334",
+      "nodeId": "5750:78760",
+      "route": "/chi-tiet-lop/bai-tap-va-kiem-tra/man-cham-bai-viet-gv-cham-ai-goi-y"
+    },
+    {
+      "name": "gv-lop-040335",
+      "nodeId": "5750:79097",
+      "route": "/chi-tiet-lop/bai-tap-va-kiem-tra/man-cham-bai-hinh-anh-gv-cham"
+    },
+    {
+      "name": "gv-lop-040336",
+      "nodeId": "5757:418294",
+      "route": "/chi-tiet-lop/bai-tap-va-kiem-tra/popup-xem-anh-bai-viet-tay"
+    },
+    {
+      "name": "gv-lop-040320-dk",
+      "nodeId": "5756:83936",
+      "route": "/chi-tiet-lop/bai-tap-va-kiem-tra/man-cham-bai-tong-quan-cham-bai-dk"
+    },
+    {
+      "name": "gv-lop-040330-dk",
+      "nodeId": "5756:84350",
+      "route": "/chi-tiet-lop/bai-tap-va-kiem-tra/man-cham-bai-trac-nghiem-app-cham-dk"
+    },
+    {
+      "name": "gv-lop-040331-dk",
+      "nodeId": "5756:84767",
+      "route": "/chi-tiet-lop/bai-tap-va-kiem-tra/man-cham-bai-sap-xep-app-cham-dk"
+    },
+    {
+      "name": "gv-lop-040332-dk",
+      "nodeId": "5756:85197",
+      "route": "/chi-tiet-lop/bai-tap-va-kiem-tra/man-cham-bai-noi-tu-app-cham-dk"
+    },
+    {
+      "name": "gv-lop-040333-dk",
+      "nodeId": "5756:85690",
+      "route": "/chi-tiet-lop/bai-tap-va-kiem-tra/man-cham-bai-noi-app-cham-dk"
+    },
+    {
+      "name": "gv-lop-040334-dk",
+      "nodeId": "5756:86117",
+      "route": "/chi-tiet-lop/bai-tap-va-kiem-tra/man-cham-bai-viet-gv-cham-ai-goi-y-dk"
+    },
+    {
+      "name": "gv-lop-040335-dk",
+      "nodeId": "5756:86513",
+      "route": "/chi-tiet-lop/bai-tap-va-kiem-tra/man-cham-bai-hinh-anh-gv-cham-dk"
+    },
+    {
+      "name": "gv-lop-040336-dk",
+      "nodeId": "5765:418912",
+      "route": "/chi-tiet-lop/bai-tap-va-kiem-tra/popup-xem-anh-bai-viet-tay-dk"
+    },
+    {
+      "name": "gv-lop-050110",
+      "nodeId": "5425:281325",
+      "route": "/chi-tiet-lop/tu-hoc/co-du-lieu"
+    },
+    {
+      "name": "gv-lop-050110-dk",
+      "nodeId": "5425:291153",
+      "route": "/chi-tiet-lop/tu-hoc/co-du-lieu-dk"
+    },
+    {
+      "name": "gv-ls-010003",
+      "nodeId": "3868:102081",
+      "route": "/lich-su-luong/kpi"
+    },
+    {
+      "name": "gv-ls-010004",
+      "nodeId": "3868:102573",
+      "route": "/lich-su-luong/ot"
+    },
+    {
+      "name": "gv-ls-010011",
+      "nodeId": "4760:16739",
+      "route": "/lich-su-luong/de-xuat-dang-xu-ly-khong-huy-duoc"
+    },
+    {
+      "name": "gv-ls-010014",
+      "nodeId": "4899:105950",
+      "route": "/lich-su-luong/de-xuat-moi-co-the-huy"
+    },
+    {
+      "name": "gv-ls-010003-dk",
+      "nodeId": "4056:150017",
+      "route": "/lich-su-luong/kpi-dk"
+    },
+    {
+      "name": "gv-ls-010004-dk",
+      "nodeId": "4056:150295",
+      "route": "/lich-su-luong/ot-dk"
+    },
+    {
+      "name": "gv-ls-010011-dk",
+      "nodeId": "4899:107263",
+      "route": "/lich-su-luong/de-xuat-dang-xu-ly-khong-huy-duoc-dk"
+    },
+    {
+      "name": "gv-ls-010014-dk",
+      "nodeId": "4899:107802",
+      "route": "/lich-su-luong/de-xuat-moi-co-the-huy-dk"
+    },
+    {
+      "name": "gv-bl-010040",
+      "nodeId": "5019:366839",
+      "route": "/bao-loi/chua-co-bao-loi-gv-bl-010040"
+    },
+    {
+      "name": "gv-ks-010010",
+      "nodeId": "4686:43794",
+      "route": "/khao-sat/lam-khao-sat"
+    },
+    {
+      "name": "gv-ks-010020",
+      "nodeId": "4686:43988",
+      "route": "/khao-sat/da-hoan-thanh"
+    },
+    {
+      "name": "gv-ks-010010-dk",
+      "nodeId": "4885:59963",
+      "route": "/khao-sat/lam-khao-sat-dk"
+    },
+    {
+      "name": "gv-ks-010020-dk",
+      "nodeId": "4885:60160",
+      "route": "/khao-sat/da-hoan-thanh-dk"
+    },
+    {
+      "name": "gv-ks-010004-dk",
+      "nodeId": "4885:105330",
+      "route": "/khao-sat/danh-sach-khao-sat/dropdown-thong-bao-dang-mo-dk"
+    },
+    {
+      "name": "cd-kh-060110",
+      "nodeId": "5491:348706",
+      "route": "/bai-tap-ve-nha/frames/cd-kh-060110"
+    },
+    {
+      "name": "cd-kh-060120",
+      "nodeId": "5491:348805",
+      "route": "/bai-tap-ve-nha/frames/cd-kh-060120"
+    },
+    {
+      "name": "cd-kh-060121",
+      "nodeId": "5672:74620",
+      "route": "/bai-tap-ve-nha/frames/cd-kh-060121"
+    },
+    {
+      "name": "cd-kh-060122",
+      "nodeId": "5672:74752",
+      "route": "/bai-tap-ve-nha/frames/cd-kh-060122"
+    },
+    {
+      "name": "cd-kh-060123",
+      "nodeId": "5672:74887",
+      "route": "/bai-tap-ve-nha/frames/cd-kh-060123"
+    },
+    {
+      "name": "cd-kh-060124",
+      "nodeId": "5672:75018",
+      "route": "/bai-tap-ve-nha/frames/cd-kh-060124"
+    },
+    {
+      "name": "cd-kh-060125",
+      "nodeId": "5672:75135",
+      "route": "/bai-tap-ve-nha/frames/cd-kh-060125"
+    },
+    {
+      "name": "cd-kh-060140",
+      "nodeId": "5672:75273",
+      "route": "/bai-tap-ve-nha/frames/cd-kh-060140"
+    },
+    {
+      "name": "cd-kh-060141",
+      "nodeId": "5672:75298",
+      "route": "/bai-tap-ve-nha/frames/cd-kh-060141"
+    },
+    {
+      "name": "cd-kh-060150",
+      "nodeId": "5672:75315",
+      "route": "/bai-tap-ve-nha/frames/cd-kh-060150"
     }
   ]
 }

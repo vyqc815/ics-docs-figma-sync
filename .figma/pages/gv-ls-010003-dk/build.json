@@ -1,0 +1,17 @@
+{
+  "route": "/lich-su-luong/kpi-dk",
+  "pageFile": "components/figma/gv-ls-010003-dk/index.tsx",
+  "docFile": "docs/pages/lich-su-luong/kpi-dk.md",
+  "sections": [
+    {
+      "nodeId": "4056:150018",
+      "component": "Body",
+      "file": "components/figma/gv-ls-010003-dk/Body.tsx"
+    },
+    {
+      "nodeId": "4056:150146",
+      "component": "Section2",
+      "file": "components/figma/gv-ls-010003-dk/Section2.tsx"
+    }
+  ]
+}

@@ -5,7 +5,7 @@
 > **Nguồn:** PLS-ICS T8/2026 ›     ├─ TRANG CHỦ › CH-TC-010000-DK — Trang chủ / Thống kê tổng quan (`4056:146090`, file `rRVs5HX0kIHffbS0V40djG`)  
 > **Route:** `/trang-chu/thong-ke-tong-quan-dk`  
 > **Khung thiết kế:** 1440 × 810 px  
-> **Xuất lúc:** 2026-11-02T03:53:50.255Z  
+> **Xuất lúc:** 2026-11-03T01:09:17.080Z  
 > **Spec đầy đủ (giá trị chính xác từng node):** `../../../.figma/pages/ch-tc-010000-dk/page-spec.json`
 
 ## 1. Tổng quan
@@ -25,22 +25,24 @@ Nền trang: `#121213` (bg/canvas).
 
 | Token | Biến CSS | Giá trị | Trỏ tới | Bộ / mode |
 | --- | --- | --- | --- | --- |
-| `bg/brand-tint` | `--bg-brand-tint` | `#fff7ed` | color/extended/fff7ed | Theme · Semantic / Light |
-| `bg/brand-tint-strong` | `--bg-brand-tint-strong` | `#ffedd5` | color/extended/ffedd5 | Theme · Semantic / Light |
-| `bg/canvas` | `--bg-canvas` | `#f8fafc` | color/extended/f8fafc | Theme · Semantic / Light |
-| `bg/info` | `--bg-info` | `#f0f9ff` | color/extended/f0f9ff | Theme · Semantic / Light |
-| `bg/strong` | `--bg-strong` | `#e2e8f0` | color/border/default | Theme · Semantic / Light |
-| `bg/subtle` | `--bg-subtle` | `#f1f5f9` | color/surface/input | Theme · Semantic / Light |
-| `bg/success` | `--bg-success` | `#ecfdf5` | color/extended/ecfdf5 | Theme · Semantic / Light |
-| `bg/surface` | `--bg-surface` | `#ffffff` | color/neutral/white | Theme · Semantic / Light |
+| `bg/brand-tint` | `--bg-brand-tint` | `#102218` |  | Theme · Semantic / Dark · Minimal |
+| `bg/brand-tint-strong` | `--bg-brand-tint-strong` | `#153020` |  | Theme · Semantic / Dark · Minimal |
+| `bg/canvas` | `--bg-canvas` | `#121213` |  | Theme · Semantic / Dark · Minimal |
+| `bg/info` | `--bg-info` | `#10202e` |  | Theme · Semantic / Dark · Minimal |
+| `bg/strong` | `--bg-strong` | `#2a2a2e` |  | Theme · Semantic / Dark · Minimal |
+| `bg/subtle` | `--bg-subtle` | `#202023` |  | Theme · Semantic / Dark · Minimal |
+| `bg/success` | `--bg-success` | `#12251a` |  | Theme · Semantic / Dark · Minimal |
+| `bg/surface` | `--bg-surface` | `#18181a` |  | Theme · Semantic / Dark · Minimal |
 | `bố cục/lề trên dưới` | `--bo-cuc-le-tren-duoi` | `24` | spacing/24 | Number Tokens / Mode 1 |
-| `border/brand` | `--border-brand` | `#fed7aa` | color/extended/fed7aa | Theme · Semantic / Light |
-| `border/default` | `--border-default` | `#e2e8f0` | color/border/default | Theme · Semantic / Light |
-| `border/strong` | `--border-strong` | `#cbd5e1` | color/extended/cbd5e1 | Theme · Semantic / Light |
-| `brand/accent` | `--brand-accent` | `#ff9537` | color/extended/ff9537 | Theme · Semantic / Light |
-| `brand/primary` | `--brand-primary` | `#e65100` | color/brand/orange | Theme · Semantic / Light |
-| `chrome/bg` | `--chrome-bg` | `#ff7700` | color/extended/ff7700 | Theme · Semantic / Light |
+| `border/brand` | `--border-brand` | `#1e4d31` |  | Theme · Semantic / Dark · Minimal |
+| `border/default` | `--border-default` | `#27272a` |  | Theme · Semantic / Dark · Minimal |
+| `border/strong` | `--border-strong` | `#3f3f46` |  | Theme · Semantic / Dark · Minimal |
+| `brand/accent` | `--brand-accent` | `#a78bfa` |  | Theme · Semantic / Dark · Minimal |
+| `brand/primary` | `--brand-primary` | `#16a34a` |  | Theme · Semantic / Dark · Minimal |
+| `chrome/bg` | `--chrome-bg` | `#0b0b0c` |  | Theme · Semantic / Dark · Minimal |
 | `color/neutral/white` | `--color-neutral-white` | `#ffffff` |  | Color Tokens / Light |
+| `color/semantic/error-strong` | `--color-semantic-error-strong` | `#ff0000` |  | Color Tokens / Light |
+| `color/semantic/success` | `--color-semantic-success` | `#2d9732` |  | Color Tokens / Light |
 | `color/semantic/success` | `--color-semantic-success` | `#2d9732` |  | Color Tokens / Light |
 | `radius/6` | `--radius-6` | `6` |  | Number Tokens / Mode 1 |
 | `radius/64` | `--radius-64` | `64` |  | Number Tokens / Mode 1 |
@@ -49,10 +51,11 @@ Nền trang: `#121213` (bg/canvas).
 | `spacing/12` | `--spacing-12` | `12` |  | Number Tokens / Mode 1 |
 | `spacing/4` | `--spacing-4` | `4` |  | Number Tokens / Mode 1 |
 | `spacing/8` | `--spacing-8` | `8` |  | Number Tokens / Mode 1 |
-| `text/primary` | `--text-primary` | `#334155` | color/text/primary | Theme · Semantic / Light |
-| `text/secondary` | `--text-secondary` | `#64748b` | color/text/secondary | Theme · Semantic / Light |
-| `theme/is-dark` | `--theme-is-dark` | `false` |  | Theme · Semantic / Light |
-| `tone/blue/border` | `--tone-blue-border` | `#93c5fd` |  | Theme · Semantic / Light |
+| `text/on-brand` | `--text-on-brand` | `#ffffff` |  | Theme · Semantic / Dark · Minimal |
+| `text/primary` | `--text-primary` | `#ededef` |  | Theme · Semantic / Dark · Minimal |
+| `text/secondary` | `--text-secondary` | `#a1a1aa` |  | Theme · Semantic / Dark · Minimal |
+| `theme/is-dark` | `--theme-is-dark` | `true` |  | Theme · Semantic / Dark · Minimal |
+| `tone/blue/border` | `--tone-blue-border` | `#28487d` |  | Theme · Semantic / Dark · Minimal |
 
 **Style Figma đang dùng:**
 
@@ -93,9 +96,9 @@ Nền trang: `#121213` (bg/canvas).
 | `Body/14/SemiBold` | Afacad | 14 / 18px | 600 | 0 | #16a34a (brand/primary) | 4 | “15/24 Buổi” |
 | — | Afacad | 14 / 18px | 500 | 0 | #ededef (text/primary) | 3 | “Ngày bắt đầu” |
 | — | Afacad | 14 / 18px | 600 | 0 | #a1a1aa (text/secondary) | 3 | “T2, 18h30” |
-| — | Afacad | 14 / 18px | 500 | 0 | #ffffff | 1 | “Kết quả” |
-| — | Afacad | 14 / 18px | 600 | 0 | #2d9732 | 1 | “20.12.2025” |
-| — | Afacad | 14 / 18px | 600 | 0 | #ff0000 | 1 | “30.07. 2025” |
+| — | Afacad | 14 / 18px | 500 | 0 | #ffffff (text/on-brand) | 1 | “Kết quả” |
+| — | Afacad | 14 / 18px | 600 | 0 | #2d9732 (color/semantic/success) | 1 | “20.12.2025” |
+| — | Afacad | 14 / 18px | 600 | 0 | #ff0000 (color/semantic/error-strong) | 1 | “30.07. 2025” |
 | — | Afacad | 13 / 16px | 600 | 0 | #ededef (text/primary) | 4 | “Nhập Môn Tiếng Trung (NEW - v2026+)” |
 | `Body/13/Bold` | Afacad | 13 / 16px | 700 | 0 | #16a34a (brand/primary) | 1 | “PTL” |
 | — | Unbounded | 13 / 16px | 600 | 0 | #ffffff (color/neutral/white) | 1 | “Phụ Trách Lớp ĐN” |
@@ -272,7 +275,7 @@ Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí ·
           - [khối] **Frame 427323706** — 615×56 [HUG×HUG] · @ (0, 27) flow · row gap 16 align CENTER `4056:146254`
             - [khối] **Frame 427322959** — 64×56 [HUG×HUG] · @ (0, 0) flow · row gap 92 pad 4 8 4 8 justify CENTER align CENTER · bg #16a34a (brand/primary) · radius 8px · shadow inset 0 0 0 1px #18181a, 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4056:146255`
               - [khối] **Frame 427322953** — 48×48 · @ (8, 4) flow · column gap 2 justify CENTER align CENTER `4056:146256`
-                - [chữ] “Kết quả” — 43×18 [HUG×HUG] · @ (2.5, 0.5) flow · Afacad 14/18px 500 #ffffff · text-align center · no-wrap `4056:146257`
+                - [chữ] “Kết quả” — 43×18 [HUG×HUG] · @ (2.5, 0.5) flow · Afacad 14/18px 500 #ffffff (text/on-brand) · text-align center · no-wrap `4056:146257`
                 - [khối] **Frame 1171274940** — 31×27 · @ (8.5, 20.5) flow · column gap 10 justify CENTER align CENTER `4056:146258`
                   - [khối] **Cell · Đánh giá** — 28×24 [HUG×HUG] · @ (1.5, 1.5) flow · row gap 8 justify CENTER align CENTER `4056:146259`
                     - [instance] **Progress/Điểm Đánh Giá (A-F)** ⟨Progress/Điểm Đánh Giá (A-F): Property 1=D nhỏ, Size=28x24⟩ — 28×24 · @ (0, 0) flow `4056:146260`
@@ -283,11 +286,11 @@ Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí ·
                 - [khối] **Frame 427323702** — 86×48 [HUG×HUG] · @ (0, 0) flow · column gap 4 align CENTER `4056:146263`
                   - [chữ] “Ngày bắt đầu” — 86×18 [FIXED×HUG] · @ (0, 0) flow · Afacad 14/18px 500 #ededef (text/primary) · text-align center `4056:146264`
                   - [khối] **Frame 427323058** — 86×26 [FILL×HUG] · @ (0, 22) flow · row gap 10 pad 4 8 4 8 justify CENTER align CENTER · bg #18181a (bg/surface) · radius 6px · shadow inset 0 0 0 1px #2d9732, 1px 1px 6px 0 rgba(45, 151, 50, 0.25) `4056:146265`
-                    - [chữ] “20.12.2025” — 64×18 [HUG×HUG] · @ (11, 4) flow · Afacad 14/18px 600 #2d9732 · text-align center · no-wrap `4056:146266`
+                    - [chữ] “20.12.2025” — 64×18 [HUG×HUG] · @ (11, 4) flow · Afacad 14/18px 600 #2d9732 (color/semantic/success) · text-align center · no-wrap `4056:146266`
                 - [khối] **Frame 427323703** — 86×48 [HUG×HUG] · @ (94, 0) flow · column gap 4 `4056:146267`
                   - [chữ] “Ngày kết thúc” — 86×18 [FIXED×HUG] · @ (0, 0) flow · Afacad 14/18px 500 #ededef (text/primary) · text-align center `4056:146268`
                   - [khối] **Frame 427323058** — 86×26 [FILL×HUG] · @ (0, 22) flow · row gap 10 pad 4 8 4 8 justify CENTER align CENTER · bg #18181a (bg/surface) · radius 6px · shadow inset 0 0 0 1px #ff0000, 1px 1px 6px 0 rgba(255, 0, 0, 0.25) `4056:146269`
-                    - [chữ] “30.07. 2025” — 67×18 [HUG×HUG] · @ (9.5, 4) flow · Afacad 14/18px 600 #ff0000 · text-align center · no-wrap `4056:146270`
+                    - [chữ] “30.07. 2025” — 67×18 [HUG×HUG] · @ (9.5, 4) flow · Afacad 14/18px 600 #ff0000 (color/semantic/error-strong) · text-align center · no-wrap `4056:146270`
               - [hình] **Rectangle 5646** — 3×36 · @ (196, 6) flow · bg #16a34a (brand/primary) · radius 2px `4056:146271`
               - [khối] **Frame 427323701** — 320×48 [FIXED×HUG] · @ (215, 0) flow · column gap 4 `4056:146272`
                 - [chữ] “Khung giờ học” — 86×18 [FIXED×HUG] · @ (0, 0) flow · Afacad 14/18px 500 #ededef (text/primary) `4056:146273`

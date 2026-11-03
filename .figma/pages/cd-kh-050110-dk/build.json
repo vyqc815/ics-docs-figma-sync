@@ -1,0 +1,45 @@
+{
+  "route": "/ky-nang-s6/nghe/chi-tiet-bai-nghe-drawer-dk",
+  "pageFile": "components/figma/cd-kh-050110-dk/index.tsx",
+  "docFile": "docs/pages/ky-nang-s6/nghe/chi-tiet-bai-nghe-drawer-dk.md",
+  "sections": [
+    {
+      "nodeId": "6646:127786",
+      "component": "Content",
+      "file": "components/figma/cd-kh-050110-dk/Content.tsx"
+    },
+    {
+      "nodeId": "6646:128139",
+      "component": "SidebarMenuCd",
+      "file": "components/figma/cd-kh-050110-dk/SidebarMenuCd.tsx"
+    },
+    {
+      "nodeId": "6646:128140",
+      "component": "Header52",
+      "file": "components/figma/shared/Header52.tsx"
+    },
+    {
+      "nodeId": "6646:128191",
+      "component": "DrawerChiTietBaiNghe",
+      "file": "components/figma/cd-kh-050110-dk/DrawerChiTietBaiNghe.tsx"
+    }
+  ],
+  "idAlias": {
+    "6646:128140": "6015:63764",
+    "6646:128141": "6015:63765",
+    "6646:128188": "6015:63812",
+    "I6646:128188;2008:31768": "I6015:63812;2008:31768",
+    "I6646:128188;2008:31883": "I6015:63812;2008:31883",
+    "I6646:128188;2008:31884": "I6015:63812;2008:31884",
+    "I6646:128188;2008:31885": "I6015:63812;2008:31885",
+    "I6646:128188;2008:31771": "I6015:63812;2008:31771",
+    "I6646:128188;2008:31772": "I6015:63812;2008:31772",
+    "I6646:128188;2008:31773": "I6015:63812;2008:31773",
+    "I6646:128188;2008:31774": "I6015:63812;2008:31774",
+    "6646:128189": "6015:63813",
+    "I6646:128189;4019:24203": "I6015:63813;4019:24203",
+    "I6646:128189;4019:22291": "I6015:63813;4019:22291",
+    "I6646:128189;4019:24214": "I6015:63813;4019:24214",
+    "I6646:128189;4019:24215": "I6015:63813;4019:24215"
+  }
+}

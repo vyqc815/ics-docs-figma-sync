@@ -1,8 +1,8 @@
 # Fidelity: ADM-QT-020000-DK — Quy trình / Chi tiết loại quy trình
 
-- URL: `http://localhost:3108/quy-trinh/chi-tiet-loai-quy-trinh-dk`
+- URL: `http://localhost:3000/quy-trinh/chi-tiet-loai-quy-trinh-dk`
 - Verdict: **PASS**
-- Pixels outside text: **0.018%** differ (limit 0.5%); all pixels: 0.254%; inside text boxes: 1.428% (glyph rendering)
+- Pixels outside text: **0.018%** differ (limit 0.5%); all pixels: 0.244%; inside text boxes: 1.367% (glyph rendering)
 - Boxes: 336/336 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 332, ≤1px: 333, ≤2px: 336, ≤4px: 336, >4px: 0
 
 ## Pixel regions (largest first)
@@ -38,7 +38,6 @@
 
 | Text | Differing |
 | --- | --- |
-| Label (`I4056:129038;2245:87774`) | 14.7% |
 | Tại Đắc Nhân Trí Thức Truyền Từ Tâm (`4056:129275`) | 8.6% |
 | Huong-dan-hoc-vien.mp4 (`I4056:129198;1061:1324`) | 6% |
 | Huong-dan-hoc-vien.mp4 (`I4056:129126;1061:1324`) | 5.7% |
@@ -53,6 +52,7 @@
 | Badge (`I4056:129184;1055:2263`) | 3.1% |
 | Thời hạn (`4056:129211`) | 3.1% |
 | File video (`4056:129195`) | 2.8% |
+| Label (`I4056:129037;2245:87820`) | 2.5% |
 
 ## Largest box differences
 

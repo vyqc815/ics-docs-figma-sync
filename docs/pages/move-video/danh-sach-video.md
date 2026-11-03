@@ -5,7 +5,7 @@
 > **Nguồn:** PLS-ICS T8/2026 ›         └─ MOVE VIDEO › ADM-MV-020000 — Move video / Danh sách video (`2391:66064`, file `rRVs5HX0kIHffbS0V40djG`)  
 > **Route:** `/move-video/danh-sach-video`  
 > **Khung thiết kế:** 1440 × 982 px (cắt phần tràn ra ngoài khung)  
-> **Xuất lúc:** 2026-11-02T04:08:57.933Z  
+> **Xuất lúc:** 2026-11-03T01:00:11.812Z  
 > **Spec đầy đủ (giá trị chính xác từng node):** `../../../.figma/pages/adm-mv-020000/page-spec.json`
 
 ## 1. Tổng quan

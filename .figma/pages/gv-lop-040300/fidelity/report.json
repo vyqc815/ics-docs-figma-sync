@@ -12,37 +12,13 @@
   "pixels": {
     "width": 1440,
     "height": 1594,
-    "mismatched": 2459,
-    "percent": 0.107,
+    "mismatched": 2168,
+    "percent": 0.094,
     "shapePercent": 0.005,
-    "textPercent": 0.731,
+    "textPercent": 0.641,
     "sizeMismatch": false
   },
   "textNodes": [
-    {
-      "id": "I5425:293760;1308:6749",
-      "name": "100%",
-      "pixels": 83,
-      "percent": 23.1
-    },
-    {
-      "id": "I5425:293781;1308:6749",
-      "name": "100%",
-      "pixels": 83,
-      "percent": 23.1
-    },
-    {
-      "id": "I5425:293767;1308:6749",
-      "name": "100%",
-      "pixels": 68,
-      "percent": 22.7
-    },
-    {
-      "id": "I5425:293774;1308:6749",
-      "name": "100%",
-      "pixels": 57,
-      "percent": 21.4
-    },
     {
       "id": "I5425:278883;4901:213764;2245:87908",
       "name": "Label",
@@ -108,6 +84,30 @@
       "name": "Tìm nội dung...",
       "pixels": 241,
       "percent": 1.8
+    },
+    {
+      "id": "I5425:278883;4901:213769;2245:87914",
+      "name": "Label",
+      "pixels": 74,
+      "percent": 1.8
+    },
+    {
+      "id": "5425:279202",
+      "name": "Ich komme aus Vietnam und wohne in Hanoi.",
+      "pixels": 114,
+      "percent": 1.5
+    },
+    {
+      "id": "I5425:278883;4901:213771;689:15190",
+      "name": "Label",
+      "pixels": 15,
+      "percent": 1.4
+    },
+    {
+      "id": "5425:279211",
+      "name": "Chưa Chấm",
+      "pixels": 19,
+      "percent": 1.3
     }
   ],
   "regions": [
@@ -561,7 +561,7 @@
     "over": []
   },
   "failures": [],
-  "url": "http://localhost:3108/chi-tiet-lop/bai-tap-va-kiem-tra/man-cham-bai",
+  "url": "http://localhost:3000/chi-tiet-lop/bai-tap-va-kiem-tra/man-cham-bai",
   "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
   "consoleErrors": [],
   "rootFound": true

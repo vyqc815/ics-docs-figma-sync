@@ -1,6 +1,6 @@
 # Fidelity: ADM-LHN-010200 — Lịch hẹn / Học viên
 
-- URL: `http://localhost:3108/lich-hen/hoc-vien`
+- URL: `http://localhost:3000/lich-hen/hoc-vien`
 - Verdict: **PASS**
 - Pixels outside text: **0.012%** differ (limit 0.5%); all pixels: 0.747%; inside text boxes: 3.107% (glyph rendering)
 - Boxes: 405/405 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 396, ≤1px: 405, ≤2px: 405, ≤4px: 405, >4px: 0

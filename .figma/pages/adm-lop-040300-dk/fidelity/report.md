@@ -1,8 +1,8 @@
 # Fidelity: ADM-LOP-040300-DK — Lớp học / Cài đặt / Giáo viên
 
-- URL: `http://localhost:3108/lop-hoc/cai-dat/giao-vien-dk`
+- URL: `http://localhost:3000/lop-hoc/cai-dat/giao-vien-dk`
 - Verdict: **FAIL**
-- Pixels outside text: **0.001%** differ (limit 0.5%); all pixels: 0.17%; inside text boxes: 2.212% (glyph rendering)
+- Pixels outside text: **0.001%** differ (limit 0.5%); all pixels: 0.147%; inside text boxes: 1.907% (glyph rendering)
 - Boxes: 148/149 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 148, ≤1px: 148, ≤2px: 148, ≤4px: 149, >4px: 0
 
 ## Failures
@@ -20,7 +20,6 @@
 | Text | Differing |
 | --- | --- |
 | Label (`I4056:116729;2245:87908`) | 13.7% |
-| Label (`I4056:116736;2245:87914`) | 13% |
 | Buổi đã dạy / Tổng (`4056:116637`) | 9.2% |
 | Label (`I4056:116727;2245:87908`) | 8.6% |
 | Label (`I4056:116730;2245:87908`) | 4.3% |
@@ -34,6 +33,7 @@
 | Label (`I4056:116733;2245:87908`) | 2.5% |
 | 200.000 đ (`4056:116650`) | 2.4% |
 | 8 / 20 (`4056:116660`) | 2.4% |
+| 12 / 20 (`4056:116648`) | 2% |
 
 ## Largest box differences
 

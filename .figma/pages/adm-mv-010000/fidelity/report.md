@@ -1,6 +1,6 @@
 # Fidelity: ADM-MV-010000 — Move video / Xác minh Gmail
 
-- URL: `http://localhost:3108/move-video/xac-minh-gmail`
+- URL: `http://localhost:3000/move-video/xac-minh-gmail`
 - Verdict: **PASS**
 - Pixels outside text: **0.073%** differ (limit 0.5%); all pixels: 0.084%; inside text boxes: 0.198% (glyph rendering)
 - Boxes: 98/98 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 98, ≤1px: 98, ≤2px: 98, ≤4px: 98, >4px: 0

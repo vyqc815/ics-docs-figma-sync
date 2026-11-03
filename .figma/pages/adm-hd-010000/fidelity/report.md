@@ -1,6 +1,6 @@
 # Fidelity: ADM-HD-010000 — Hoá đơn / Danh sách hoá đơn
 
-- URL: `http://localhost:3108/hoa-don/danh-sach-hoa-don`
+- URL: `http://localhost:3000/hoa-don/danh-sach-hoa-don`
 - Verdict: **PASS**
 - Pixels outside text: **0.004%** differ (limit 0.5%); all pixels: 0.304%; inside text boxes: 1.504% (glyph rendering)
 - Boxes: 637/637 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 637, ≤1px: 637, ≤2px: 637, ≤4px: 637, >4px: 0

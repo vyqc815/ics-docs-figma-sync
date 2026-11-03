@@ -1,8 +1,8 @@
 # Fidelity: ADM-LHN-010400-DK — Lịch hẹn / Giáo viên
 
-- URL: `http://localhost:3108/lich-hen/giao-vien-dk`
+- URL: `http://localhost:3000/lich-hen/giao-vien-dk`
 - Verdict: **PASS**
-- Pixels outside text: **0.006%** differ (limit 0.5%); all pixels: 0.701%; inside text boxes: 3.412% (glyph rendering)
+- Pixels outside text: **0.006%** differ (limit 0.5%); all pixels: 0.672%; inside text boxes: 3.269% (glyph rendering)
 - Boxes: 290/290 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 281, ≤1px: 290, ≤2px: 290, ≤4px: 290, >4px: 0
 
 ## Pixel regions (largest first)
@@ -18,7 +18,6 @@
 | Text | Differing |
 | --- | --- |
 | - Gửi giới thiệu bạn với học viên (lưu ý các học viên đang c (`4056:106275`) | 23.6% |
-| Label (`I4056:106117;2245:87774`) | 14.7% |
 | Value (`I4713:129300;2015:36008`) | 6.6% |
 | 3 (`I4056:106348;1391:17481`) | 5% |
 | Value (`I4056:106180;2015:36008`) | 4.7% |
@@ -32,6 +31,7 @@
 | [ Sau Buổi 7] CSKH Gửi giới thiệu bạn (`4056:106273`) | 3.2% |
 | 8 (`I4056:106348;1391:17485`) | 3.2% |
 | Label (`I4056:106116;2245:87768`) | 2.9% |
+| Thu gọn (`4056:106256`) | 2.8% |
 
 ## Largest box differences
 

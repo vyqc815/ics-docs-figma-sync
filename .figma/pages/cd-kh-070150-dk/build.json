@@ -1,0 +1,22 @@
+{
+  "route": "/thu-vien/kien-thuc/kanji-dk",
+  "pageFile": "components/figma/cd-kh-070150-dk/index.tsx",
+  "docFile": "docs/pages/thu-vien/kien-thuc/kanji-dk.md",
+  "sections": [
+    {
+      "nodeId": "6579:385637",
+      "component": "Content",
+      "file": "components/figma/cd-kh-070150-dk/Content.tsx"
+    },
+    {
+      "nodeId": "6579:386005",
+      "component": "SidebarMenuCd",
+      "file": "components/figma/cd-kh-070150-dk/SidebarMenuCd.tsx"
+    },
+    {
+      "nodeId": "6579:386006",
+      "component": "Header",
+      "file": "components/figma/cd-kh-070150-dk/Header.tsx"
+    }
+  ]
+}

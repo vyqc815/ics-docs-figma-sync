@@ -5,8 +5,8 @@
   "sections": [
     {
       "nodeId": "4056:109840",
-      "component": "Body3",
-      "file": "components/figma/shared/Body3.tsx"
+      "component": "Body4",
+      "file": "components/figma/shared/Body4.tsx"
     },
     {
       "nodeId": "4056:109841",
@@ -15,8 +15,8 @@
     },
     {
       "nodeId": "4056:110140",
-      "component": "Header9",
-      "file": "components/figma/shared/Header9.tsx"
+      "component": "Header26",
+      "file": "components/figma/shared/Header26.tsx"
     },
     {
       "nodeId": "4056:110189",

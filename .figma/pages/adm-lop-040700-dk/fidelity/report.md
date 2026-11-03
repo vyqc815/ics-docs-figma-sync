@@ -1,8 +1,8 @@
 # Fidelity: ADM-LOP-040700-DK — Lớp học / Cài đặt / KPI
 
-- URL: `http://localhost:3108/lop-hoc/cai-dat/kpi-dk`
+- URL: `http://localhost:3000/lop-hoc/cai-dat/kpi-dk`
 - Verdict: **PASS**
-- Pixels outside text: **0.001%** differ (limit 0.5%); all pixels: 0.167%; inside text boxes: 2.244% (glyph rendering)
+- Pixels outside text: **0.001%** differ (limit 0.5%); all pixels: 0.144%; inside text boxes: 1.929% (glyph rendering)
 - Boxes: 129/129 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 129, ≤1px: 129, ≤2px: 129, ≤4px: 129, >4px: 0
 
 ## Pixel regions (largest first)
@@ -16,7 +16,6 @@
 | Text | Differing |
 | --- | --- |
 | Label (`I4056:118006;2245:87908`) | 13.7% |
-| Label (`I4056:118013;2245:87914`) | 13% |
 | Label (`I4056:118004;2245:87908`) | 8.6% |
 | Ngày Cập Nhật (`4056:117927`) | 5.8% |
 | Label (`I4056:118007;2245:87908`) | 4.3% |
@@ -30,6 +29,7 @@
 | Số Tiền (`4056:117923`) | 1.5% |
 | 25.09.2026 (`4056:117935`) | 1.4% |
 | 25.09.2026 (`4056:117943`) | 1.4% |
+| Label (`I4056:118008;2245:87908`) | 1.4% |
 
 ## Largest box differences
 

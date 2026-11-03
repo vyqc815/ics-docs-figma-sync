@@ -1,0 +1,22 @@
+{
+  "route": "/danh-sach-lop-hoc/popup-them-lich-day-co-dinh",
+  "pageFile": "components/figma/adm-lop-010020/index.tsx",
+  "docFile": "docs/pages/danh-sach-lop-hoc/popup-them-lich-day-co-dinh.md",
+  "sections": [
+    {
+      "nodeId": "2527:167749",
+      "component": "PopupHeader",
+      "file": "components/figma/adm-lop-010020/PopupHeader.tsx"
+    },
+    {
+      "nodeId": "2527:167760",
+      "component": "Body",
+      "file": "components/figma/adm-lop-010020/Body.tsx"
+    },
+    {
+      "nodeId": "2527:167755",
+      "component": "PopupFooter",
+      "file": "components/figma/shared/PopupFooter.tsx"
+    }
+  ]
+}

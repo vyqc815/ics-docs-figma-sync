@@ -1,8 +1,8 @@
 # Fidelity: ADM-LOP-040500-DK — Lớp học / Cài đặt / Lịch dạy
 
-- URL: `http://localhost:3108/lop-hoc/cai-dat/lich-day-dk`
+- URL: `http://localhost:3000/lop-hoc/cai-dat/lich-day-dk`
 - Verdict: **PASS**
-- Pixels outside text: **0.001%** differ (limit 0.5%); all pixels: 0.222%; inside text boxes: 1.616% (glyph rendering)
+- Pixels outside text: **0.001%** differ (limit 0.5%); all pixels: 0.199%; inside text boxes: 1.445% (glyph rendering)
 - Boxes: 257/257 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 257, ≤1px: 257, ≤2px: 257, ≤4px: 257, >4px: 0
 
 ## Pixel regions (largest first)
@@ -16,7 +16,6 @@
 | Text | Differing |
 | --- | --- |
 | Label (`I4056:117229;2245:87908`) | 13.7% |
-| Label (`I4056:117236;2245:87914`) | 13% |
 | Label (`I4056:117227;2245:87908`) | 8.6% |
 | Trần Nguyễn Hoài Phương (`I4056:117162;2008:49590;1904:12423`) | 5.6% |
 | 31.01.2026 - 06.01.2026 (`I4056:117095;2008:48177`) | 5.1% |
@@ -30,6 +29,7 @@
 | Trần Nguyễn Hoài Phương (`I4056:117161;2008:49502;1904:12423`) | 4.3% |
 | Label (`I4056:117230;2245:87908`) | 4.3% |
 | Trần Nguyễn Hoài Phương (`I4056:117163;2008:49579;1904:12423`) | 3.9% |
+| Trần Nguyễn Hoài Phương (`I4056:117164;2008:49579;1904:12423`) | 3.9% |
 
 ## Largest box differences
 

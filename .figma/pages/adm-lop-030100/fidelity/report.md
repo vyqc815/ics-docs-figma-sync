@@ -1,8 +1,8 @@
 # Fidelity: ADM-LOP-030100 — Lớp học / Bài học / Buổi học
 
-- URL: `http://localhost:3108/lop-hoc/bai-hoc/buoi-hoc`
+- URL: `http://localhost:3000/lop-hoc/bai-hoc/buoi-hoc`
 - Verdict: **PASS**
-- Pixels outside text: **0.005%** differ (limit 0.5%); all pixels: 0.183%; inside text boxes: 0.959% (glyph rendering)
+- Pixels outside text: **0.005%** differ (limit 0.5%); all pixels: 0.161%; inside text boxes: 0.841% (glyph rendering)
 - Boxes: 322/322 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 321, ≤1px: 321, ≤2px: 321, ≤4px: 322, >4px: 0
 
 ## Pixel regions (largest first)
@@ -22,10 +22,6 @@
 
 | Text | Differing |
 | --- | --- |
-| 100% (`I3497:64371;1308:6749`) | 24.7% |
-| 100% (`I3497:64372;1308:6749`) | 24.7% |
-| 100% (`I3497:64408;1308:6749`) | 24.7% |
-| 100% (`I3497:64409;1308:6749`) | 24.7% |
 | ÔN TẬP: Giữa Kỳ 1 (`3497:54223`) | 13.1% |
 | Label (`I4915:225429;4901:206599;2245:87908`) | 8.4% |
 | Label (`I4915:225429;4901:206597;2245:87908`) | 5.9% |
@@ -37,6 +33,10 @@
 | Chưa nộp (`I3497:3878;3304:59612`) | 1.9% |
 | Chưa nộp (`I3497:3898;3304:59612`) | 1.9% |
 | Tên (`I3502:69242;3138:130001`) | 1.7% |
+| Danh sách bài học (`3497:3906`) | 1.7% |
+| Tên (`I3502:69240;3138:130001`) | 1.6% |
+| Badge (`I3497:64391;1050:2409`) | 1.5% |
+| Badge (`I3497:64556;1050:2409`) | 1.5% |
 
 ## Largest box differences
 

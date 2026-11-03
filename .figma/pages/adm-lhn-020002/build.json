@@ -1,0 +1,45 @@
+{
+  "route": "/bang-chia-lich-hen/dang-keo-the",
+  "pageFile": "components/figma/adm-lhn-020002/index.tsx",
+  "docFile": "docs/pages/bang-chia-lich-hen/dang-keo-the.md",
+  "sections": [
+    {
+      "nodeId": "4915:221672",
+      "component": "SidebarMenuAdmin",
+      "file": "components/figma/adm-lhn-020002/SidebarMenuAdmin.tsx"
+    },
+    {
+      "nodeId": "2371:37094",
+      "component": "Dn13",
+      "file": "components/figma/shared/Dn13.tsx"
+    },
+    {
+      "nodeId": "2371:37143",
+      "component": "Bg",
+      "file": "components/figma/adm-lhn-020002/Bg.tsx"
+    },
+    {
+      "nodeId": "2371:37275",
+      "component": "Section4",
+      "file": "components/figma/shared/Section4.tsx"
+    },
+    {
+      "nodeId": "2371:38157",
+      "component": "Section5",
+      "file": "components/figma/adm-lhn-020002/Section5.tsx"
+    }
+  ],
+  "idAlias": {
+    "2371:37094": "2371:35948",
+    "4050:115039": "4050:114942",
+    "4273:161953": "4273:161943",
+    "I4273:161953;2008:30986": "I4273:161943;2008:30986",
+    "I4273:161953;2008:31747": "I4273:161943;2008:31747",
+    "I4273:161953;2008:31748": "I4273:161943;2008:31748",
+    "I4273:161953;1391:17264": "I4273:161943;1391:17264",
+    "I4273:161953;1391:17266": "I4273:161943;1391:17266",
+    "I4273:161953;1391:17268": "I4273:161943;1391:17268",
+    "I4273:161953;1391:17270": "I4273:161943;1391:17270",
+    "2371:37275": "2371:36449"
+  }
+}

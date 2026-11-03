@@ -1,6 +1,6 @@
 # Fidelity: ADM-HV-020300 — Chi tiết học viên / Học phí
 
-- URL: `http://localhost:3108/chi-tiet-hoc-vien/hoc-phi`
+- URL: `http://localhost:3000/chi-tiet-hoc-vien/hoc-phi`
 - Verdict: **PASS**
 - Pixels outside text: **0.003%** differ (limit 0.5%); all pixels: 0.142%; inside text boxes: 0.998% (glyph rendering)
 - Boxes: 405/405 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 405, ≤1px: 405, ≤2px: 405, ≤4px: 405, >4px: 0

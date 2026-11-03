@@ -1,0 +1,50 @@
+{
+  "route": "/kien-thuc-s1/tu-vung/dien-thieu-bang-ai-inline",
+  "pageFile": "components/figma/cd-kh-040180/index.tsx",
+  "docFile": "docs/pages/kien-thuc-s1/tu-vung/dien-thieu-bang-ai-inline.md",
+  "sections": [
+    {
+      "nodeId": "4846:175099",
+      "component": "Content",
+      "file": "components/figma/cd-kh-040180/Content.tsx"
+    },
+    {
+      "nodeId": "4915:253193",
+      "component": "SidebarMenuCd13",
+      "file": "components/figma/shared/SidebarMenuCd13.tsx"
+    },
+    {
+      "nodeId": "4846:175508",
+      "component": "Header58",
+      "file": "components/figma/shared/Header58.tsx"
+    },
+    {
+      "nodeId": "4846:177005",
+      "component": "TooltipOAiDienHover",
+      "file": "components/figma/cd-kh-040180/TooltipOAiDienHover.tsx"
+    },
+    {
+      "nodeId": "5003:357662",
+      "component": "ToastCrud",
+      "file": "components/figma/cd-kh-040180/ToastCrud.tsx"
+    }
+  ],
+  "idAlias": {
+    "4846:175508": "4846:160681",
+    "4846:175509": "4846:160682",
+    "4846:175556": "4846:160729",
+    "I4846:175556;2008:31768": "I4846:160729;2008:31768",
+    "I4846:175556;2008:31883": "I4846:160729;2008:31883",
+    "I4846:175556;2008:31884": "I4846:160729;2008:31884",
+    "I4846:175556;2008:31885": "I4846:160729;2008:31885",
+    "I4846:175556;2008:31771": "I4846:160729;2008:31771",
+    "I4846:175556;2008:31772": "I4846:160729;2008:31772",
+    "I4846:175556;2008:31773": "I4846:160729;2008:31773",
+    "I4846:175556;2008:31774": "I4846:160729;2008:31774",
+    "4846:175557": "4846:160730",
+    "I4846:175557;4019:24203": "I4846:160730;4019:24203",
+    "I4846:175557;4019:22291": "I4846:160730;4019:22291",
+    "I4846:175557;4019:24214": "I4846:160730;4019:24214",
+    "I4846:175557;4019:24215": "I4846:160730;4019:24215"
+  }
+}

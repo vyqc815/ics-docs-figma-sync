@@ -12,19 +12,13 @@
   "pixels": {
     "width": 1440,
     "height": 810,
-    "mismatched": 5022,
-    "percent": 0.431,
+    "mismatched": 4703,
+    "percent": 0.403,
     "shapePercent": 0.002,
-    "textPercent": 2.339,
+    "textPercent": 2.19,
     "sizeMismatch": false
   },
   "textNodes": [
-    {
-      "id": "I4056:121126;2245:87864",
-      "name": "Label",
-      "pixels": 338,
-      "percent": 13.5
-    },
     {
       "id": "I4056:120990;2409:141178",
       "name": "Hệ thống",
@@ -107,6 +101,12 @@
       "id": "4056:120890",
       "name": "BÀI TẬP VỀ NHÀ",
       "pixels": 246,
+      "percent": 3.2
+    },
+    {
+      "id": "4056:120950",
+      "name": "Thuy SP đã Follow lớp NS0002",
+      "pixels": 121,
       "percent": 3.2
     }
   ],
@@ -453,7 +453,7 @@
     "over": []
   },
   "failures": [],
-  "url": "http://localhost:3108/chi-tiet-hoc-vien/log-dk",
+  "url": "http://localhost:3000/chi-tiet-hoc-vien/log-dk",
   "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
   "consoleErrors": [],
   "rootFound": true

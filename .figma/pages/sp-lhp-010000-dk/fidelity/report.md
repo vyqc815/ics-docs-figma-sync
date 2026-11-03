@@ -1,8 +1,8 @@
 # Fidelity: SP-LHP-010000-DK — Lịch họp / Dạng danh sách
 
-- URL: `http://localhost:3108/lich-hop/dang-danh-sach-dk`
+- URL: `http://localhost:3000/lich-hop/dang-danh-sach-dk`
 - Verdict: **PASS**
-- Pixels outside text: **0.024%** differ (limit 0.5%); all pixels: 0.606%; inside text boxes: 2.609% (glyph rendering)
+- Pixels outside text: **0.024%** differ (limit 0.5%); all pixels: 0.58%; inside text boxes: 2.492% (glyph rendering)
 - Boxes: 405/405 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 405, ≤1px: 405, ≤2px: 405, ≤4px: 405, >4px: 0
 
 ## Pixel regions (largest first)
@@ -37,7 +37,6 @@
 
 | Text | Differing |
 | --- | --- |
-| Label (`I4056:147924;3857:67915`) | 16.1% |
 | Th2, 14.09.2026 (`I4056:148055;1590:881`) | 6.1% |
 | Th2, 14.09.2026 (`I4056:147966;1590:881`) | 5.6% |
 | Th2, 14.09.2026 (`I4056:147987;1590:881`) | 5.6% |
@@ -52,6 +51,7 @@
 | Th2, 14.09.2026 (`I4056:148070;1590:881`) | 5.4% |
 | Th2, 14.09.2026 (`I4056:148087;1590:881`) | 5.4% |
 | Th2, 14.09.2026 (`I4056:148104;1590:881`) | 5.4% |
+| Th2, 14.09.2026 (`I4056:148036;1590:881`) | 5.3% |
 
 ## Largest box differences
 

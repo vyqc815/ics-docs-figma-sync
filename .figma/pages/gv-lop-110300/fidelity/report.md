@@ -1,6 +1,6 @@
 # Fidelity: GV-LOP-110300 — Chi tiết lớp / Thông tin / Lịch sử & lương
 
-- URL: `http://localhost:3108/chi-tiet-lop/thong-tin/lich-su-luong`
+- URL: `http://localhost:3000/chi-tiet-lop/thong-tin/lich-su-luong`
 - Verdict: **PASS**
 - Pixels outside text: **0%** differ (limit 0.5%); all pixels: 0.059%; inside text boxes: 0.638% (glyph rendering)
 - Boxes: 167/167 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 164, ≤1px: 166, ≤2px: 167, ≤4px: 167, >4px: 0

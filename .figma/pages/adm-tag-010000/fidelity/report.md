@@ -1,6 +1,6 @@
 # Fidelity: ADM-TAG-010000 — Tag / Quản lý tag
 
-- URL: `http://localhost:3108/tag/quan-ly-tag`
+- URL: `http://localhost:3000/tag/quan-ly-tag`
 - Verdict: **PASS**
 - Pixels outside text: **0.007%** differ (limit 0.5%); all pixels: 0.015%; inside text boxes: 0.091% (glyph rendering)
 - Boxes: 165/165 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 165, ≤1px: 165, ≤2px: 165, ≤4px: 165, >4px: 0

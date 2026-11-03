@@ -1,8 +1,8 @@
 # Fidelity: CD-KH-030200-DK — Học kỳ / Bài học
 
-- URL: `http://localhost:3108/hoc-ky/bai-hoc-dk`
+- URL: `http://localhost:3000/hoc-ky/bai-hoc-dk`
 - Verdict: **PASS**
-- Pixels outside text: **0.143%** differ (limit 0.5%); all pixels: 1.403%; inside text boxes: 5.15% (glyph rendering)
+- Pixels outside text: **0.143%** differ (limit 0.5%); all pixels: 1.388%; inside text boxes: 5.09% (glyph rendering)
 - Boxes: 286/286 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 276, ≤1px: 281, ≤2px: 286, ≤4px: 286, >4px: 0
 
 ## Pixel regions (largest first)
@@ -50,7 +50,6 @@
 | ÔN TẬP HK I – HK II (BUỔI 5) (`6015:64150`) | 18.8% |
 | ÔN TẬP HK I – HK II (BUỔI 3) (`6015:64114`) | 18.5% |
 | Label (`I6015:64295;4901:220689;2245:87908`) | 13.1% |
-| Label (`I6015:64295;4901:220688;2245:87914`) | 11.6% |
 | - Chủ đề Từ vựng HSK1 (phần 2): Con người, Cuộc sống & Văn h (`6015:64095`) | 8.2% |
 | - Chủ đề Từ vựng HSK1 (phần 1): Gia đình, Cuộc sống, Học tập (`6015:64077`) | 8.1% |
 | - Chủ đề Từ vựng HSK1 (phần 1): Gia đình, Cuộc sống, Học tập (`6015:64115`) | 8.1% |
@@ -59,6 +58,7 @@
 | Label (`I6015:64295;5491:336922;2245:87908`) | 6.1% |
 | Label (`I6015:64080;1067:2468`) | 5.2% |
 | Label (`I6015:64098;1067:2468`) | 5.2% |
+| Label (`I6015:64118;1067:2468`) | 5.2% |
 
 ## Largest box differences
 

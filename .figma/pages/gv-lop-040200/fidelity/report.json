@@ -12,49 +12,13 @@
   "pixels": {
     "width": 1440,
     "height": 873,
-    "mismatched": 3115,
-    "percent": 0.248,
+    "mismatched": 2652,
+    "percent": 0.211,
     "shapePercent": 0.001,
-    "textPercent": 1.071,
+    "textPercent": 0.912,
     "sizeMismatch": false
   },
   "textNodes": [
-    {
-      "id": "I4324:99746;1308:6749",
-      "name": "100%",
-      "pixels": 83,
-      "percent": 24.7
-    },
-    {
-      "id": "I4324:99770;1308:6749",
-      "name": "100%",
-      "pixels": 83,
-      "percent": 24.7
-    },
-    {
-      "id": "I4324:99794;1308:6749",
-      "name": "100%",
-      "pixels": 83,
-      "percent": 24.7
-    },
-    {
-      "id": "I4324:99745;1308:6798",
-      "name": "22/24",
-      "pixels": 82,
-      "percent": 24.4
-    },
-    {
-      "id": "I4324:99769;1308:6798",
-      "name": "22/24",
-      "pixels": 66,
-      "percent": 23.6
-    },
-    {
-      "id": "I4324:99793;1308:6798",
-      "name": "22/24",
-      "pixels": 66,
-      "percent": 23.6
-    },
     {
       "id": "4324:86235",
       "name": "Tổng Quan",
@@ -108,6 +72,42 @@
       "name": "00:05:42",
       "pixels": 55,
       "percent": 4.4
+    },
+    {
+      "id": "4324:99484",
+      "name": "00:04:06",
+      "pixels": 54,
+      "percent": 4.3
+    },
+    {
+      "id": "4324:99767",
+      "name": "MINI TEST 6 – WOHNEN, UHRZEIT UND ALLTAG",
+      "pixels": 145,
+      "percent": 2.7
+    },
+    {
+      "id": "4324:99743",
+      "name": "MINITEST 5 - PERSÖNLICHE DATEN",
+      "pixels": 121,
+      "percent": 2.2
+    },
+    {
+      "id": "I4915:260342;4901:213770;2245:87908",
+      "name": "Label",
+      "pixels": 47,
+      "percent": 2.2
+    },
+    {
+      "id": "I4324:99392;3304:59612",
+      "name": "Chưa nộp",
+      "pixels": 23,
+      "percent": 1.9
+    },
+    {
+      "id": "I4324:99551;3304:59612",
+      "name": "Chưa nộp",
+      "pixels": 23,
+      "percent": 1.9
     }
   ],
   "regions": [
@@ -441,7 +441,7 @@
     "over": []
   },
   "failures": [],
-  "url": "http://localhost:3108/chi-tiet-lop/bai-tap-va-kiem-tra/kiem-tra",
+  "url": "http://localhost:3000/chi-tiet-lop/bai-tap-va-kiem-tra/kiem-tra",
   "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
   "consoleErrors": [],
   "rootFound": true

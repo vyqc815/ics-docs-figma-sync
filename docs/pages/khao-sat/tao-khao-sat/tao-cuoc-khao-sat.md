@@ -5,7 +5,7 @@
 > **Nguồn:** PLS-ICS T8/2026 ›         ├─ TẠO KHẢO SÁT › ADM-KS-010000 — Khảo sát / Tạo khảo sát / Tạo cuộc khảo sát (`4252:148140`, file `rRVs5HX0kIHffbS0V40djG`)  
 > **Route:** `/khao-sat/tao-khao-sat/tao-cuoc-khao-sat`  
 > **Khung thiết kế:** 1440 × 810 px (cắt phần tràn ra ngoài khung)  
-> **Xuất lúc:** 2026-11-02T03:46:33.632Z  
+> **Xuất lúc:** 2026-11-03T01:00:34.643Z  
 > **Spec đầy đủ (giá trị chính xác từng node):** `../../../../.figma/pages/adm-ks-010000/page-spec.json`
 
 ## 1. Tổng quan
@@ -28,6 +28,8 @@ Nền trang: `#ffffff` (color/neutral/white).
 | Token | Biến CSS | Giá trị | Trỏ tới | Bộ / mode |
 | --- | --- | --- | --- | --- |
 | `bg/surface` | `--bg-surface` | `#ffffff` | color/neutral/white | Theme · Semantic / Light |
+| `border/default` | `--border-default` | `#e2e8f0` | color/border/default | Theme · Semantic / Light |
+| `brand/primary` | `--brand-primary` | `#e65100` | color/brand/orange | Theme · Semantic / Light |
 | `color/border/default` | `--color-border-default` | `#e2e8f0` |  | Color Tokens / Light |
 | `color/brand/orange` | `--color-brand-orange` | `#e65100` |  | Color Tokens / Light |
 | `color/extended/cbd5e1` | `--color-extended-cbd5e1` | `#cbd5e1` |  | Color Tokens / Light |
@@ -37,6 +39,7 @@ Nền trang: `#ffffff` (color/neutral/white).
 | `color/extended/fff5ec` | `--color-extended-fff5ec` | `#fff5ec` |  | Color Tokens / Light |
 | `color/neutral/white` | `--color-neutral-white` | `#ffffff` |  | Color Tokens / Light |
 | `color/semantic/error-text` | `--color-semantic-error-text` | `#e11d48` |  | Color Tokens / Light |
+| `color/text/placeholder` | `--color-text-placeholder` | `#cccccc` |  | Color Tokens / Light |
 | `color/text/primary` | `--color-text-primary` | `#334155` |  | Color Tokens / Light |
 | `color/text/secondary` | `--color-text-secondary` | `#64748b` |  | Color Tokens / Light |
 | `radius/4` | `--radius-4` | `4` |  | Number Tokens / Mode 1 |
@@ -48,6 +51,7 @@ Nền trang: `#ffffff` (color/neutral/white).
 | `spacing/4` | `--spacing-4` | `4` |  | Number Tokens / Mode 1 |
 | `spacing/8` | `--spacing-8` | `8` |  | Number Tokens / Mode 1 |
 | `text/primary` | `--text-primary` | `#334155` | color/text/primary | Theme · Semantic / Light |
+| `text/secondary` | `--text-secondary` | `#64748b` | color/text/secondary | Theme · Semantic / Light |
 | `tone/rose/text` | `--tone-rose-text` | `#9f1239` |  | Theme · Semantic / Light |
 | `tone/yellow/bg` | `--tone-yellow-bg` | `#fef3c7` | color/extended/fef3c7 | Theme · Semantic / Light |
 | `tone/yellow/text` | `--tone-yellow-text` | `#92400e` |  | Theme · Semantic / Light |
@@ -90,17 +94,17 @@ Nền trang: `#ffffff` (color/neutral/white).
 | — | Afacad | 15 / 18px | 400 | 0 | #334155 (text/primary) | 1 | “Nháp” |
 | — | Afacad | 15 / 18px | 700 | 0 | #334155 (text/primary) | 1 | “Công khai” |
 | — | Afacad | 15 / 18px | 400 | 0 | #9f1239 (tone/rose/text) | 1 | “Vô hiệu” |
-| — | Afacad | 14 / 19px | 600 | 0 | #334155 | 3 | “KHẢO SÁT THÔNG TIN GIÁO VIÊN” |
+| — | Afacad | 14 / 19px | 600 | 0 | #334155 (text/primary) | 3 | “KHẢO SÁT THÔNG TIN GIÁO VIÊN” |
 | — | Afacad | 14 / 18px | 400 italic | 0 | #cccccc (color/extended/cccccc) | 1 | “Thêm cuộc khảo sát” |
 | — | Unbounded | 13 / 16px | 600 | 0 | #ffffff (color/neutral/white) | 1 | “Admin Đắc Nhân” |
 | — | Afacad | 13 / 16px | 500 | 0 | #ffffff (color/neutral/white) | 1 | “admin@gmail.com” |
 | — | Unbounded | 12 / 15px | 600 · case title | 0 | #ffffff (color/neutral/white) | 14 | “Quản lý” |
 | — | Afacad | 12 / 16px | 400 | 0 | #94a3b8 | 3 | “17:24 · 19.12.2025” |
-| — | Afacad | 12 / 16px | 400 | 0 | #64748b | 2 | “Form này nhằm thu thập thông tin về trì…” |
+| — | Afacad | 12 / 16px | 400 | 0 | #64748b (text/secondary) | 2 | “Form này nhằm thu thập thông tin về trì…” |
 | — | Afacad | 12 / 15px | 500 | 0 | #2d9732 | 1 | “Công khai” |
 | — | Afacad | 12 / 15px | 500 | 0 | #92400e (tone/yellow/text) | 1 | “Nháp” |
 | — | Afacad | 12 / 15px | 500 | 0 | #e11d48 (color/semantic/error-text) | 1 | “Vô hiệu” |
-| — | Afacad | 12 / 16px | 400 italic | 0 | #cccccc | 1 | “Nhập mô tả” |
+| — | Afacad | 12 / 16px | 400 italic | 0 | #cccccc (color/text/placeholder) | 1 | “Nhập mô tả” |
 | — | Unbounded | 11 / 14px | 600 · case title | 0 | #ffffff (color/neutral/white) | 2 | “Tạo khảo sát” |
 | `Menu/8/Regular` | Unbounded | 8 / 12px | 400 | 0 | #ffffff (color/neutral/white) | 1 | “v20.07.2026_17:30” |
 
@@ -218,7 +222,7 @@ Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí ·
           - [khối] **Container** — 55×20 [HUG×HUG] · @ (12, 8) flow · row `I4262:148513;2177:28927`
             - [chữ] “Học Viên” — 55×20 [HUG×HUG] · @ (0, 0) flow · Afacad 16/20px 500 #64748b (color/text/secondary) case title · text-align center · no-wrap `I4262:148513;2177:28928`
       - [khối] **Danh sách** — 300×301 [FILL×HUG] · @ (0, 83) flow · column gap 8 `4262:148518`
-        - [khối] **Thẻ khảo sát · KHẢO SÁT THÔNG TIN GIÁO VIÊN** — 300×100 [FILL×HUG] · @ (0, 0) flow · row gap 10 pad 12 12 12 12 align CENTER · bg #ffffff · radius 12px · border 1px solid #e2e8f0 · shadow 0 1.13px 2.25px 0 rgba(0, 0, 0, 0.05) `4262:148519`
+        - [khối] **Thẻ khảo sát · KHẢO SÁT THÔNG TIN GIÁO VIÊN** — 300×100 [FILL×HUG] · @ (0, 0) flow · row gap 10 pad 12 12 12 12 align CENTER · bg #ffffff (bg/surface) · radius 12px · border 1px solid #e2e8f0 (border/default) · shadow 0 1.13px 2.25px 0 rgba(0, 0, 0, 0.05) `4262:148519`
           - [instance] **STT** ⟨Atom/Number Badge: Value=1, Type=Square, Size=Medium, State=Inactive⟩ — 32×32 · @ (13, 34) flow · row justify CENTER align CENTER · bg #f3f4f6 · radius 8px · border 1px solid #ffffff (color/neutral/white) `4262:148520`
             - [chữ] “1” — 9×21 [HUG×HUG] · @ (11.5, 5.5) flow · Afacad 17/21px 700 #64748b (color/text/secondary) · text-align center · no-wrap `I4262:148520;1249:763`
           - [khối] **Thông tin** — 204×74 [FILL×HUG] · @ (55, 13) flow · column gap 4 · clip `4262:148522`
@@ -230,10 +234,10 @@ Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí ·
                 - [icon] **Icon thời gian** ⟨Liner Icon: Property 1=Thời gian⟩ — 12×12 · @ (0, 2) flow · file /figma/assets/531c487a3e41.svg `4270:149747`
                 - [chữ] “17:24 · 19.12.2025” — 91×16 [HUG×HUG] · @ (16, 0) flow · Afacad 12/16px 400 #94a3b8 · no-wrap `4270:149749`
             - [khối] **Tên & mô tả** — 204×51 [FILL×HUG] · @ (0, 23) flow · column `4684:3659`
-              - [chữ] “KHẢO SÁT THÔNG TIN GIÁO VIÊN” — 204×19 [FILL×HUG] · @ (0, 0) flow · Afacad 14/19px 600 #334155 · truncate 1 lines `4262:148523`
-              - [chữ] “Form này nhằm thu thập thông tin về trình độ học vấn và chứng chỉ giảng dạy của giáo viên để phục vụ công tác đánh giá và quản lý chất lượng giảng dạy ạ.” — 204×32 [FILL×HUG] · @ (0, 19) flow · Afacad 12/16px 400 #64748b · truncate 2 lines `4262:148524`
+              - [chữ] “KHẢO SÁT THÔNG TIN GIÁO VIÊN” — 204×19 [FILL×HUG] · @ (0, 0) flow · Afacad 14/19px 600 #334155 (text/primary) · truncate 1 lines `4262:148523`
+              - [chữ] “Form này nhằm thu thập thông tin về trình độ học vấn và chứng chỉ giảng dạy của giáo viên để phục vụ công tác đánh giá và quản lý chất lượng giảng dạy ạ.” — 204×32 [FILL×HUG] · @ (0, 19) flow · Afacad 12/16px 400 #64748b (text/secondary) · truncate 2 lines `4262:148524`
           - [icon] **Thao tác** ⟨Action Icon: Icon=More, Size=18⟩ — 18×18 · @ (269, 41) flow · file /figma/assets/eda2b13313a3.svg `4273:149837`
-        - [khối] **Thẻ khảo sát · KHẢO SÁT TEMPLATE PPT** — 300×100 [FILL×HUG] · @ (0, 108) flow · row gap 10 pad 12 12 12 12 align CENTER · bg #ffffff · radius 12px · border 1px solid #e2e8f0 · shadow 0 1.13px 2.25px 0 rgba(0, 0, 0, 0.05) `4262:148532`
+        - [khối] **Thẻ khảo sát · KHẢO SÁT TEMPLATE PPT** — 300×100 [FILL×HUG] · @ (0, 108) flow · row gap 10 pad 12 12 12 12 align CENTER · bg #ffffff (bg/surface) · radius 12px · border 1px solid #e2e8f0 (border/default) · shadow 0 1.13px 2.25px 0 rgba(0, 0, 0, 0.05) `4262:148532`
           - [instance] **STT** ⟨Atom/Number Badge: Value=2, Type=Square, Size=Medium, State=Inactive⟩ — 32×32 · @ (13, 34) flow · row justify CENTER align CENTER · bg #f3f4f6 · radius 8px · border 1px solid #ffffff (color/neutral/white) `4262:148533`
             - [chữ] “2” — 9×21 [HUG×HUG] · @ (11.5, 5.5) flow · Afacad 17/21px 700 #64748b (color/text/secondary) · text-align center · no-wrap `I4262:148533;1249:763`
           - [khối] **Thông tin** — 204×74 [FILL×HUG] · @ (55, 13) flow · column gap 4 · clip `4262:148535`
@@ -245,10 +249,10 @@ Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí ·
                 - [icon] **Icon thời gian** ⟨Liner Icon: Property 1=Thời gian⟩ — 12×12 · @ (0, 2) flow · file /figma/assets/531c487a3e41.svg `4270:149751`
                 - [chữ] “18:52 · 04.08.2026” — 92×16 [HUG×HUG] · @ (16, 0) flow · Afacad 12/16px 400 #94a3b8 · no-wrap `4270:149753`
             - [khối] **Tên & mô tả** — 204×51 [FILL×HUG] · @ (0, 23) flow · column `4885:59281`
-              - [chữ] “KHẢO SÁT TEMPLATE PPT” — 204×19 [FILL×HUG] · @ (0, 0) flow · Afacad 14/19px 600 #334155 · truncate 1 lines `4262:148536`
-              - [chữ] “Khảo sát thiết kế template, mức độ thân thiện hiển thị đối với người sử dụng giáo trình (giáo viên và học sinh)” — 204×32 [FILL×HUG] · @ (0, 19) flow · Afacad 12/16px 400 #64748b · truncate 2 lines `4262:148537`
+              - [chữ] “KHẢO SÁT TEMPLATE PPT” — 204×19 [FILL×HUG] · @ (0, 0) flow · Afacad 14/19px 600 #334155 (text/primary) · truncate 1 lines `4262:148536`
+              - [chữ] “Khảo sát thiết kế template, mức độ thân thiện hiển thị đối với người sử dụng giáo trình (giáo viên và học sinh)” — 204×32 [FILL×HUG] · @ (0, 19) flow · Afacad 12/16px 400 #64748b (text/secondary) · truncate 2 lines `4262:148537`
           - [icon] **Thao tác** ⟨Action Icon: Icon=More, Size=18⟩ — 18×18 · @ (269, 41) flow · file /figma/assets/eda2b13313a3.svg `4273:149840`
-        - [khối] **Thẻ khảo sát · Test** — 300×85 [FILL×HUG] · @ (0, 216) flow · row gap 10 pad 12 12 12 12 align CENTER · bg #ffffff · radius 12px · shadow inset 0 0 0 1.5px #e65100, 0 1.13px 2.25px 0 rgba(0, 0, 0, 0.05) `4262:148545`
+        - [khối] **Thẻ khảo sát · Test** — 300×85 [FILL×HUG] · @ (0, 216) flow · row gap 10 pad 12 12 12 12 align CENTER · bg #ffffff (bg/surface) · radius 12px · shadow inset 0 0 0 1.5px #e65100, 0 1.13px 2.25px 0 rgba(0, 0, 0, 0.05) `4262:148545`
           - [instance] **STT** ⟨Atom/Number Badge: Value=3, Type=Square, Size=Medium, State=Active⟩ — 32×32 · @ (13.5, 26.5) flow · row justify CENTER align CENTER · bg #ffedd5 · radius 8px · border 1px solid #ffffff (color/neutral/white) `4262:148546`
             - [chữ] “3” — 9×21 [HUG×HUG] · @ (11.5, 5.5) flow · Afacad 17/21px 700 #e65100 (color/brand/orange) · text-align center · no-wrap `I4262:148546;1249:761`
           - [khối] **Thông tin** — 203×58 [FILL×HUG] · @ (55.5, 13.5) flow · column gap 4 · clip `4262:148548`
@@ -260,8 +264,8 @@ Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí ·
                 - [icon] **Icon thời gian** ⟨Liner Icon: Property 1=Thời gian⟩ — 12×12 · @ (0, 2) flow · file /figma/assets/531c487a3e41.svg `4270:149755`
                 - [chữ] “22:05 · 07.10.2026” — 92×16 [HUG×HUG] · @ (16, 0) flow · Afacad 12/16px 400 #94a3b8 · no-wrap `4270:149757`
             - [khối] **Tên & mô tả** — 203×35 [FILL×HUG] · @ (0, 23) flow · column `4885:59282`
-              - [chữ] “Test” — 203×19 [FILL×HUG] · @ (0, 0) flow · Afacad 14/19px 600 #334155 · truncate 1 lines `4262:148549`
-              - [chữ] “Nhập mô tả” — 203×16 [FILL×HUG] · @ (0, 19) flow · Afacad 12/16px 400 italic #cccccc · truncate 2 lines `4262:148550`
+              - [chữ] “Test” — 203×19 [FILL×HUG] · @ (0, 0) flow · Afacad 14/19px 600 #334155 (text/primary) · truncate 1 lines `4262:148549`
+              - [chữ] “Nhập mô tả” — 203×16 [FILL×HUG] · @ (0, 19) flow · Afacad 12/16px 400 italic #cccccc (color/text/placeholder) · truncate 2 lines `4262:148550`
           - [icon] **Thao tác** ⟨Action Icon: Icon=More, Size=18⟩ — 18×18 · @ (268.5, 33.5) flow · file /figma/assets/eda2b13313a3.svg `4273:149843`
           - [icon] **Kéo thả** ⟨Atom/Icon Button: Icon=Drop & Drag⟩ — 14×22 · @ (-7, 32) abs · file /figma/assets/479ff4c2bc6f.svg covers (-2, -2) 20×28 `4273:149876`
       - [instance] **Add New Bar · Thêm cuộc khảo sát** ⟨Molecule/Add New Bar: Nút=1075:1478, Icon trái=false, Placeholder=Thêm cuộc khảo sát, Type=Box, Size=S, State=Default⟩ — 300×34 [FILL×FIXED] · @ (0, 396) flow · row gap 8 pad 4 8 4 8 align CENTER · bg #f8fafc (color/extended/f8fafc) · radius 6px · border 1px dashed #cbd5e1 (color/extended/cbd5e1) `4262:148558`

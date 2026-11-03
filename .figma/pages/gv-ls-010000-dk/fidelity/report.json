@@ -12,24 +12,24 @@
   "pixels": {
     "width": 1440,
     "height": 1057,
-    "mismatched": 2948,
-    "percent": 0.194,
+    "mismatched": 2344,
+    "percent": 0.154,
     "shapePercent": 0.001,
-    "textPercent": 1.235,
+    "textPercent": 0.98,
     "sizeMismatch": false
   },
   "textNodes": [
-    {
-      "id": "I4056:149681;2245:87774",
-      "name": "Label",
-      "pixels": 721,
-      "percent": 25
-    },
     {
       "id": "4056:149829",
       "name": "UHRZEIT",
       "pixels": 47,
       "percent": 4.8
+    },
+    {
+      "id": "I4056:149681;2245:87774",
+      "name": "Label",
+      "pixels": 117,
+      "percent": 4.1
     },
     {
       "id": "4056:149869",
@@ -453,7 +453,7 @@
     "over": []
   },
   "failures": [],
-  "url": "http://localhost:3108/lich-su-luong/buoi-day-dk",
+  "url": "http://localhost:3000/lich-su-luong/buoi-day-dk",
   "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
   "consoleErrors": [],
   "rootFound": true

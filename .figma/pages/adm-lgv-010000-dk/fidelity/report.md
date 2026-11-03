@@ -1,8 +1,8 @@
 # Fidelity: ADM-LGV-010000-DK — Lương / Lương giáo viên
 
-- URL: `http://localhost:3108/luong/luong-giao-vien-dk`
+- URL: `http://localhost:3000/luong/luong-giao-vien-dk`
 - Verdict: **PASS**
-- Pixels outside text: **0.007%** differ (limit 0.5%); all pixels: 0.23%; inside text boxes: 1.099% (glyph rendering)
+- Pixels outside text: **0.007%** differ (limit 0.5%); all pixels: 0.179%; inside text boxes: 0.85% (glyph rendering)
 - Boxes: 436/436 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 434, ≤1px: 436, ≤2px: 436, ≤4px: 436, >4px: 0
 
 ## Pixel regions (largest first)
@@ -19,7 +19,6 @@
 
 | Text | Differing |
 | --- | --- |
-| Label (`I4343:91918;2245:87864`) | 24.6% |
 | Nguyễn Minh Phúc (`4343:92105`) | 6.7% |
 | Value (`I4760:157866;1981:25753;1971:8814`) | 4.7% |
 | Tiêu đề (`I4343:91955;3266:53959`) | 3.9% |
@@ -34,6 +33,7 @@
 | 15.000.000 (`I4343:92123;2812:34656`) | 3.2% |
 | BD105-I (`4343:92166`) | 3.2% |
 | Label (`I4760:157866;1981:25752`) | 3% |
+| Thanh Thuỳ (`4343:92191`) | 2.8% |
 
 ## Largest box differences
 

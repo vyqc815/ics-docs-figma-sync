@@ -12,19 +12,13 @@
   "pixels": {
     "width": 1440,
     "height": 910,
-    "mismatched": 8321,
-    "percent": 0.635,
+    "mismatched": 7479,
+    "percent": 0.571,
     "shapePercent": 0.089,
-    "textPercent": 2.794,
+    "textPercent": 2.465,
     "sizeMismatch": false
   },
   "textNodes": [
-    {
-      "id": "I6015:47142;4901:216164;2245:87914",
-      "name": "Label",
-      "pixels": 530,
-      "percent": 22.6
-    },
     {
       "id": "6015:46971",
       "name": "连动句：去 + 地方 + 做什么",
@@ -60,12 +54,6 @@
       "name": "Chi tiết NV",
       "pixels": 68,
       "percent": 8.4
-    },
-    {
-      "id": "6015:46925",
-      "name": "Đại từ nghi vấn 哪儿 và 哪里",
-      "pixels": 242,
-      "percent": 6.9
     },
     {
       "id": "I6015:46880;2015:30517",
@@ -108,6 +96,18 @@
       "name": "Label",
       "pixels": 138,
       "percent": 6.8
+    },
+    {
+      "id": "I6015:46993;2015:30517",
+      "name": "Label",
+      "pixels": 138,
+      "percent": 6.8
+    },
+    {
+      "id": "I6015:46830;2177:28928",
+      "name": "Chi tiết NV",
+      "pixels": 78,
+      "percent": 6.3
     }
   ],
   "regions": [
@@ -789,7 +789,7 @@
     "over": []
   },
   "failures": [],
-  "url": "http://localhost:3108/kien-thuc-s1/ngu-phap-dk",
+  "url": "http://localhost:3000/kien-thuc-s1/ngu-phap-dk",
   "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
   "consoleErrors": [],
   "rootFound": true

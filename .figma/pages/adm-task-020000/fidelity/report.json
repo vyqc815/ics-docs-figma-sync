@@ -12,55 +12,13 @@
   "pixels": {
     "width": 1440,
     "height": 1045,
-    "mismatched": 2242,
-    "percent": 0.149,
+    "mismatched": 1794,
+    "percent": 0.119,
     "shapePercent": 0.008,
-    "textPercent": 0.686,
+    "textPercent": 0.541,
     "sizeMismatch": false
   },
   "textNodes": [
-    {
-      "id": "I4343:83460;1391:14476",
-      "name": "80%",
-      "pixels": 74,
-      "percent": 26.4
-    },
-    {
-      "id": "I4343:83488;1391:14476",
-      "name": "80%",
-      "pixels": 73,
-      "percent": 26.1
-    },
-    {
-      "id": "I4343:83446;1308:6749",
-      "name": "100%",
-      "pixels": 83,
-      "percent": 24.7
-    },
-    {
-      "id": "I4343:83474;1308:6749",
-      "name": "100%",
-      "pixels": 83,
-      "percent": 24.7
-    },
-    {
-      "id": "I4343:83503;1308:6706",
-      "name": "0%",
-      "pixels": 45,
-      "percent": 23
-    },
-    {
-      "id": "I4343:83511;1308:6706",
-      "name": "0%",
-      "pixels": 45,
-      "percent": 23
-    },
-    {
-      "id": "I4343:83519;1308:6706",
-      "name": "0%",
-      "pixels": 45,
-      "percent": 23
-    },
     {
       "id": "I4343:83096;1590:881",
       "name": "Th2, 14.09.2026",
@@ -108,6 +66,48 @@
       "name": "[CSKH-01][Urgent] Hỗ trợ vấn đề của khách",
       "pixels": 193,
       "percent": 1
+    },
+    {
+      "id": "4343:83475",
+      "name": "Hôm qua (07/10/2026)",
+      "pixels": 43,
+      "percent": 1
+    },
+    {
+      "id": "4343:83504",
+      "name": "Ngày mai (09/10/2026)",
+      "pixels": 43,
+      "percent": 1
+    },
+    {
+      "id": "I4915:238103;4899:196714;2245:87858",
+      "name": "Label",
+      "pixels": 23,
+      "percent": 0.9
+    },
+    {
+      "id": "4343:83532",
+      "name": "20%",
+      "pixels": 6,
+      "percent": 0.9
+    },
+    {
+      "id": "4343:83152",
+      "name": "Đã hỗ trợ các học viên mới vào lớp đã khai giảng: GỌI KG + Add lịch hẹn",
+      "pixels": 120,
+      "percent": 0.9
+    },
+    {
+      "id": "4343:83539",
+      "name": "20%",
+      "pixels": 6,
+      "percent": 0.9
+    },
+    {
+      "id": "4343:83546",
+      "name": "20%",
+      "pixels": 6,
+      "percent": 0.9
     }
   ],
   "regions": [
@@ -501,7 +501,7 @@
     "over": []
   },
   "failures": [],
-  "url": "http://localhost:3108/task-ngay",
+  "url": "http://localhost:3000/task-ngay",
   "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
   "consoleErrors": [],
   "rootFound": true

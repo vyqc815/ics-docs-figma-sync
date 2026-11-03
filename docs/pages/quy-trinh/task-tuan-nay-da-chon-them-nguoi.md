@@ -5,7 +5,7 @@
 > **Nguồn:** PLS-ICS T8/2026 ›         ├─ Task tuần này › SP-TASK-020000 — Quy trình / Task tuần này · Đã chọn thêm người (`6935:390606`, file `rRVs5HX0kIHffbS0V40djG`)  
 > **Route:** `/quy-trinh/task-tuan-nay-da-chon-them-nguoi`  
 > **Khung thiết kế:** 1440 × 1035 px  
-> **Xuất lúc:** 2026-11-02T03:53:55.592Z  
+> **Xuất lúc:** 2026-11-03T01:09:22.434Z  
 > **Spec đầy đủ (giá trị chính xác từng node):** `../../../.figma/pages/sp-task-020000-2/page-spec.json`
 
 ## 1. Tổng quan
@@ -25,6 +25,7 @@ Nền trang: `#f8fafc`.
 
 | Token | Biến CSS | Giá trị | Trỏ tới | Bộ / mode |
 | --- | --- | --- | --- | --- |
+| `bg/surface` | `--bg-surface` | `#ffffff` | color/neutral/white | Theme · Semantic / Light |
 | `bố cục/lề trên dưới` | `--bo-cuc-le-tren-duoi` | `24` | spacing/24 | Number Tokens / Mode 1 |
 | `color/border/default` | `--color-border-default` | `#e2e8f0` |  | Color Tokens / Light |
 | `color/border/subtle` | `--color-border-subtle` | `#f1f5f9` |  | Color Tokens / Light |
@@ -45,6 +46,7 @@ Nền trang: `#f8fafc`.
 | `spacing/12` | `--spacing-12` | `12` |  | Number Tokens / Mode 1 |
 | `spacing/16` | `--spacing-16` | `16` |  | Number Tokens / Mode 1 |
 | `spacing/8` | `--spacing-8` | `8` |  | Number Tokens / Mode 1 |
+| `text/primary` | `--text-primary` | `#334155` | color/text/primary | Theme · Semantic / Light |
 
 **Style Figma đang dùng:**
 
@@ -88,7 +90,7 @@ Nền trang: `#f8fafc`.
 | — | Unbounded | 15 / 23px | 600 | 0 | #334155 (color/text/primary) | 2 | “Danh sách Support” |
 | `Body/15/Medium` | Afacad | 15 / 19px | 500 | 0 | #334155 (color/text/primary) | 2 | “17:00 - 30.09.2026” |
 | `Body/15/Medium` | Afacad | 15 / 19px | 500 | 0 | #e65100 (color/brand/orange) | 1 | “Tuần này” |
-| `Body/15/Bold` | Afacad | 15 / 19px | 700 | 0 | #334155 | 1 | “01.01.2027 > 08.01.2027” |
+| `Body/15/Bold` | Afacad | 15 / 19px | 700 | 0 | #334155 (text/primary) | 1 | “01.01.2027 > 08.01.2027” |
 | `Body/14/SemiBold` | Afacad | 14 / 18px | 600 | 0 | #e65100 (color/brand/orange) | 2 | “20%” |
 | `Body/14/Medium` | Afacad | 14 / 18px | 500 | 0 | #334155 (color/text/primary) | 1 | “Kiểm tra sau buổi 8” |
 | `Body/13/SemiBold` | Afacad | 13 / 16px | 600 | 0 | #ffffff (color/neutral/white) | 3 | “20%” |
@@ -347,11 +349,11 @@ Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí ·
               - [chữ] “Tuần này” — 54×19 [HUG×HUG] · @ (0, 0) flow · Afacad 15/19px 500 #e65100 (color/brand/orange) · no-wrap `I6935:390851;2015:36092`
             - [icon] **Chevron** ⟨Action Icon: Icon=Chevron Down, Size=16⟩ — 16×16 · @ (73, 7) flow · file /figma/assets/1cea79c9c94d.svg `I6935:390851;2015:36096`
         - [khối] **Danh sách ngày** — 266×52 [FILL×HUG] · @ (0, 46) flow · column gap 12 `6935:390852`
-          - [khối] **Ngày · Hôm qua (05.10.2026)** — 266×52 [FILL×HUG] · @ (0, 0) flow · row gap 12 pad 8 12 8 12 align CENTER · bg #ffffff · radius 12px · shadow 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `6935:390853`
+          - [khối] **Ngày · Hôm qua (05.10.2026)** — 266×52 [FILL×HUG] · @ (0, 0) flow · row gap 12 pad 8 12 8 12 align CENTER · bg #ffffff (bg/surface) · radius 12px · shadow 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `6935:390853`
             - [instance] **PERCENT %** ⟨PERCENT %: Property 1=ĐN 1⟩ — 36×36 · @ (12, 8) flow · column gap 10 justify CENTER align CENTER · shadow 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `6935:390854`
               - [icon] **Group 240218** — 36×36 · @ (0, 0) abs · file /figma/assets/bffdac072745.svg `I6935:390854;1308:6702`
               - [chữ] “0%” — 12×12 [HUG×HUG] · @ (12, 12) flow · runs: “0” Afacad 10/12px 600 #334155 (color/text/primary); “%” Afacad 8/10px 600 #334155 (color/text/primary) · text-align center · no-wrap `I6935:390854;1308:6706`
-            - [chữ] “01.01.2027 > 08.01.2027” — 194×19 [FILL×HUG] · @ (60, 16.5) flow · Afacad 15/19px 700 #334155 `6935:390855`
+            - [chữ] “01.01.2027 > 08.01.2027” — 194×19 [FILL×HUG] · @ (60, 16.5) flow · Afacad 15/19px 700 #334155 (text/primary) `6935:390855`
 
 ## 5. Component đang dùng
 

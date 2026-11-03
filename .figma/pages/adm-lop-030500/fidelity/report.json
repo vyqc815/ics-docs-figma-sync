@@ -12,37 +12,13 @@
   "pixels": {
     "width": 1440,
     "height": 1059,
-    "mismatched": 2459,
-    "percent": 0.161,
+    "mismatched": 2127,
+    "percent": 0.139,
     "shapePercent": 0.001,
-    "textPercent": 1.005,
+    "textPercent": 0.869,
     "sizeMismatch": false
   },
   "textNodes": [
-    {
-      "id": "I3497:66734;1308:6749",
-      "name": "100%",
-      "pixels": 83,
-      "percent": 24.7
-    },
-    {
-      "id": "I3497:66735;1308:6749",
-      "name": "100%",
-      "pixels": 83,
-      "percent": 24.7
-    },
-    {
-      "id": "I3497:66747;1308:6749",
-      "name": "100%",
-      "pixels": 83,
-      "percent": 24.7
-    },
-    {
-      "id": "I3497:66748;1308:6749",
-      "name": "100%",
-      "pixels": 83,
-      "percent": 24.7
-    },
     {
       "id": "3497:66621",
       "name": "ÔN TẬP: Giữa Kỳ 1",
@@ -108,6 +84,30 @@
       "name": "Badge",
       "pixels": 3,
       "percent": 1.5
+    },
+    {
+      "id": "3497:66721",
+      "name": "BTVN",
+      "pixels": 9,
+      "percent": 1.2
+    },
+    {
+      "id": "I3497:66757;1050:2409",
+      "name": "Badge",
+      "pixels": 2,
+      "percent": 1
+    },
+    {
+      "id": "I4915:224751;4901:206602;2245:87908",
+      "name": "Label",
+      "pixels": 22,
+      "percent": 0.9
+    },
+    {
+      "id": "3497:66745",
+      "name": "PHÁT ÂM: Thanh Điệu và Vận Mẫu",
+      "pixels": 42,
+      "percent": 0.8
     }
   ],
   "regions": [
@@ -453,7 +453,7 @@
     "over": []
   },
   "failures": [],
-  "url": "http://localhost:3108/lop-hoc/bai-hoc/kien-thuc",
+  "url": "http://localhost:3000/lop-hoc/bai-hoc/kien-thuc",
   "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
   "consoleErrors": [],
   "rootFound": true

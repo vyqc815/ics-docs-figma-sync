@@ -1,6 +1,6 @@
 # Fidelity: CD-KH-070300 — Thư viện / Bài tập
 
-- URL: `http://localhost:3108/thu-vien/bai-tap`
+- URL: `http://localhost:3000/thu-vien/bai-tap`
 - Verdict: **PASS**
 - Pixels outside text: **0.003%** differ (limit 0.5%); all pixels: 0.138%; inside text boxes: 0.963% (glyph rendering)
 - Boxes: 396/396 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 395, ≤1px: 396, ≤2px: 396, ≤4px: 396, >4px: 0

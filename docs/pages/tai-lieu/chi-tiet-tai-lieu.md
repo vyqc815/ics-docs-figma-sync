@@ -5,7 +5,7 @@
 > **Nguồn:** PLS-ICS T8/2026 ›     ├─ TÀI LIỆU › ADM-TL-010000 — Tài liệu / Chi tiết tài liệu (`4193:144448`, file `rRVs5HX0kIHffbS0V40djG`)  
 > **Route:** `/tai-lieu/chi-tiet-tai-lieu`  
 > **Khung thiết kế:** 1440 × 971 px  
-> **Xuất lúc:** 2026-11-02T03:51:19.774Z  
+> **Xuất lúc:** 2026-11-03T01:06:46.557Z  
 > **Spec đầy đủ (giá trị chính xác từng node):** `../../../.figma/pages/adm-tl-010000/page-spec.json`
 
 ## 1. Tổng quan
@@ -26,8 +26,11 @@ Nền trang: `#ffffff` (color/neutral/white).
 
 | Token | Biến CSS | Giá trị | Trỏ tới | Bộ / mode |
 | --- | --- | --- | --- | --- |
+| `bg/surface` | `--bg-surface` | `#ffffff` | color/neutral/white | Theme · Semantic / Light |
+| `border/default` | `--border-default` | `#e2e8f0` | color/border/default | Theme · Semantic / Light |
 | `border/strong` | `--border-strong` | `#cbd5e1` | color/extended/cbd5e1 | Theme · Semantic / Light |
 | `color/border/default` | `--color-border-default` | `#e2e8f0` |  | Color Tokens / Light |
+| `color/border/selected` | `--color-border-selected` | `#ff9537` | color/extended/ff9537 | Color Tokens / Light |
 | `color/border/subtle` | `--color-border-subtle` | `#f1f5f9` |  | Color Tokens / Light |
 | `color/brand/orange` | `--color-brand-orange` | `#e65100` |  | Color Tokens / Light |
 | `color/extended/cbd5e1` | `--color-extended-cbd5e1` | `#cbd5e1` |  | Color Tokens / Light |
@@ -179,7 +182,7 @@ Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí ·
             - [khối] **Atom/Input** — 802×21 [FILL×HUG] · @ (0, 25) flow · row align CENTER · radius 10px `4193:146140`
               - [chữ] “Nhập mô tả” — 802×21 [FILL×HUG] · @ (0, 0) flow · Afacad 17/21px 400 italic #cccccc (color/text/placeholder) `4193:146141`
           - [khối] **Accordion Body** — 802×379 [FILL×HUG] · @ (17, 71) flow · column gap 10 `4193:146142`
-            - [khối] **Task Card · a** — 802×46 [FILL×HUG] · @ (0, 0) flow · column gap 12 pad 12 12 12 12 · bg #ffffff (color/neutral/white) · radius 12px · border 1px solid #e2e8f0 · shadow 0 1.13px 2.25px 0 rgba(0, 0, 0, 0.05) `4193:146154`
+            - [khối] **Task Card · a** — 802×46 [FILL×HUG] · @ (0, 0) flow · column gap 12 pad 12 12 12 12 · bg #ffffff (color/neutral/white) · radius 12px · border 1px solid #e2e8f0 (border/default) · shadow 0 1.13px 2.25px 0 rgba(0, 0, 0, 0.05) `4193:146154`
               - [khối] **Card Header** — 776×20 [FILL×HUG] · @ (13, 13) flow · row gap 12 align CENTER · border 0 0 1px 0 solid #f1f5f9 (color/border/subtle) `4193:146155`
                 - [chữ] “a” — 716×19 [FILL×HUG] · @ (0, 0) flow · Afacad 15/19px 600 #334155 (color/text/primary) `4193:146156`
                 - [icon] **Actions** — 48×18 · @ (728, 0.5) flow · file /figma/assets/d589833a23d8.svg `4193:146157`
@@ -236,7 +239,7 @@ Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí ·
               - [khối] **Heading 1** — 307×23 [HUG×HUG] · @ (0, 0) flow · column `4193:145399`
                 - [chữ] “Danh Sách” — 307×23 [FIXED×HUG] · @ (0, 0) flow · Unbounded 15/23px 600 #e65100 (color/brand/orange) `4193:145400`
             - [khối] **Frame 427321957** — 290×510 [FILL×HUG] · @ (0, 35) flow · column gap 8 `4193:145401`
-              - [khối] **Main Toggle Item Card · HỌP BÀN GIAO 1** — 290×66 [FILL×HUG] · @ (0, 0) flow · row gap 4 pad 12 8 8 12 align CENTER · bg #ffffff · radius 12px · shadow inset 0 0 0 1.5px #ff9537, 0 1.13px 2.25px 0 rgba(0, 0, 0, 0.05) `4193:145506`
+              - [khối] **Main Toggle Item Card · HỌP BÀN GIAO 1** — 290×66 [FILL×HUG] · @ (0, 0) flow · row gap 4 pad 12 8 8 12 align CENTER · bg #ffffff (bg/surface) · radius 12px · shadow inset 0 0 0 1.5px #ff9537, 0 1.13px 2.25px 0 rgba(0, 0, 0, 0.05) `4193:145506`
                 - [icon] **Atom/Icon Button** ⟨Atom/Icon Button: Icon=Drop & Drag⟩ — 14×22 · @ (-7, 22) abs · file /figma/assets/479ff4c2bc6f.svg covers (-2, -2) 20×28 `4193:145507`
                 - [khối] **Frame 1171274942** — 267×43 [FILL×HUG] · @ (13.5, 13.5) flow · column gap 2 `4193:145509`
                   - [khối] **Frame 1171274943** — 267×22 [FILL×HUG] · @ (0, 0) flow · row space-between align CENTER `4193:145510`
@@ -247,7 +250,7 @@ Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí ·
                           - [chữ] “Công khai” — 52×16 [HUG×HUG] · @ (0, 0) flow · Afacad 13/16px 700 #2d9732 · text-align center · no-wrap `I4193:145511;2808:44039`
                       - [icon] **Chevron** — 12×13.84 · @ (79, 4.08) flow · file /figma/assets/1c71a83f9573.svg `I4193:145511;2808:44784`
                   - [chữ] “HỌP BÀN GIAO 1” — 267×19 [FILL×HUG] · @ (0, 24) flow · Afacad 15/19px 600 #334155 (color/text/primary) `4193:145514`
-              - [khối] **Main Toggle Item Card · CÁC CÔNG TÁC HÀNH CHÍNH** — 290×66 [FILL×HUG] · @ (0, 74) flow · row gap 4 pad 12 12 8 12 align CENTER · bg #ffffff · radius 12px · shadow inset 0 0 0 1.5px #e2e8f0, 0 1.13px 2.25px 0 rgba(0, 0, 0, 0.05) `4193:145578`
+              - [khối] **Main Toggle Item Card · CÁC CÔNG TÁC HÀNH CHÍNH** — 290×66 [FILL×HUG] · @ (0, 74) flow · row gap 4 pad 12 12 8 12 align CENTER · bg #ffffff (bg/surface) · radius 12px · shadow inset 0 0 0 1.5px #e2e8f0, 0 1.13px 2.25px 0 rgba(0, 0, 0, 0.05) `4193:145578`
                 - [khối] **Frame 1171274942** — 263×43 [FILL×HUG] · @ (13.5, 13.5) flow · column gap 2 `4193:145581`
                   - [khối] **Frame 1171274943** — 263×22 [FILL×HUG] · @ (0, 0) flow · row space-between align CENTER `4193:145582`
                     - [instance] **Atom/Status** ⟨Atom/Status: Status=Công khai, Size=S⟩ — 98×22 [HUG×HUG] · @ (0, 0) flow · row gap 4 pad 2 6 2 4 justify CENTER align CENTER · bg #f0ffef · radius 6px · border 1px solid #2d9732 `4193:145583`
@@ -257,7 +260,7 @@ Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí ·
                           - [chữ] “Công khai” — 52×16 [HUG×HUG] · @ (0, 0) flow · Afacad 13/16px 700 #2d9732 · text-align center · no-wrap `I4193:145583;2808:44039`
                       - [icon] **Chevron** — 12×13.84 · @ (79, 4.08) flow · file /figma/assets/1c71a83f9573.svg `I4193:145583;2808:44784`
                   - [chữ] “CÁC CÔNG TÁC HÀNH CHÍNH” — 263×19 [FILL×HUG] · @ (0, 24) flow · Afacad 15/19px 600 #334155 (color/text/primary) `4193:145586`
-              - [khối] **Main Toggle Item Card · BTVN - 1001 Cách Giúp Học Viên** — 290×66 [FILL×HUG] · @ (0, 148) flow · row gap 4 pad 12 12 8 12 align CENTER · bg #ffffff · radius 12px · shadow inset 0 0 0 1.5px #e2e8f0, 0 1.13px 2.25px 0 rgba(0, 0, 0, 0.05) `4193:145650`
+              - [khối] **Main Toggle Item Card · BTVN - 1001 Cách Giúp Học Viên** — 290×66 [FILL×HUG] · @ (0, 148) flow · row gap 4 pad 12 12 8 12 align CENTER · bg #ffffff (bg/surface) · radius 12px · shadow inset 0 0 0 1.5px #e2e8f0, 0 1.13px 2.25px 0 rgba(0, 0, 0, 0.05) `4193:145650`
                 - [khối] **Frame 1171274942** — 263×43 [FILL×HUG] · @ (13.5, 13.5) flow · column gap 2 `4193:145653`
                   - [khối] **Frame 1171274943** — 263×22 [FILL×HUG] · @ (0, 0) flow · row space-between align CENTER `4193:145654`
                     - [instance] **Atom/Status** ⟨Atom/Status: Status=Công khai, Size=S⟩ — 98×22 [HUG×HUG] · @ (0, 0) flow · row gap 4 pad 2 6 2 4 justify CENTER align CENTER · bg #f0ffef · radius 6px · border 1px solid #2d9732 `4193:145655`
@@ -267,7 +270,7 @@ Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí ·
                           - [chữ] “Công khai” — 52×16 [HUG×HUG] · @ (0, 0) flow · Afacad 13/16px 700 #2d9732 · text-align center · no-wrap `I4193:145655;2808:44039`
                       - [icon] **Chevron** — 12×13.84 · @ (79, 4.08) flow · file /figma/assets/1c71a83f9573.svg `I4193:145655;2808:44784`
                   - [chữ] “BTVN - 1001 Cách Giúp Học Viên” — 263×19 [FILL×HUG] · @ (0, 24) flow · Afacad 15/19px 600 #334155 (color/text/primary) `4193:145658`
-              - [khối] **Main Toggle Item Card · Mindset của Đắc Nhân & PLS** — 290×66 [FILL×HUG] · @ (0, 222) flow · row gap 4 pad 12 12 8 12 align CENTER · bg #ffffff · radius 12px · shadow inset 0 0 0 1.5px #e65100, 0 1.13px 2.25px 0 rgba(0, 0, 0, 0.05) `4193:145722`
+              - [khối] **Main Toggle Item Card · Mindset của Đắc Nhân & PLS** — 290×66 [FILL×HUG] · @ (0, 222) flow · row gap 4 pad 12 12 8 12 align CENTER · bg #ffffff (bg/surface) · radius 12px · shadow inset 0 0 0 1.5px #e65100, 0 1.13px 2.25px 0 rgba(0, 0, 0, 0.05) `4193:145722`
                 - [khối] **Frame 1171274942** — 263×43 [FILL×HUG] · @ (13.5, 13.5) flow · column gap 2 `4193:145725`
                   - [khối] **Frame 1171274943** — 263×22 [FILL×HUG] · @ (0, 0) flow · row space-between align CENTER `4193:145726`
                     - [instance] **Atom/Status** ⟨Atom/Status: Status=Công khai, Size=S⟩ — 98×22 [HUG×HUG] · @ (0, 0) flow · row gap 4 pad 2 6 2 4 justify CENTER align CENTER · bg #f0ffef · radius 6px · border 1px solid #2d9732 `4193:145727`
@@ -277,7 +280,7 @@ Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí ·
                           - [chữ] “Công khai” — 52×16 [HUG×HUG] · @ (0, 0) flow · Afacad 13/16px 700 #2d9732 · text-align center · no-wrap `I4193:145727;2808:44039`
                       - [icon] **Chevron** — 12×13.84 · @ (79, 4.08) flow · file /figma/assets/1c71a83f9573.svg `I4193:145727;2808:44784`
                   - [chữ] “Mindset của Đắc Nhân & PLS” — 263×19 [FILL×HUG] · @ (0, 24) flow · Afacad 15/19px 600 #334155 (color/text/primary) `4193:145730`
-              - [khối] **Main Toggle Item Card · Hiểu Về Các Đối Tượng** — 290×66 [FILL×HUG] · @ (0, 296) flow · row gap 4 pad 12 12 8 12 align CENTER · bg #ffffff · radius 12px · shadow inset 0 0 0 1.5px #e2e8f0, 0 1.13px 2.25px 0 rgba(0, 0, 0, 0.05) `4193:145794`
+              - [khối] **Main Toggle Item Card · Hiểu Về Các Đối Tượng** — 290×66 [FILL×HUG] · @ (0, 296) flow · row gap 4 pad 12 12 8 12 align CENTER · bg #ffffff (bg/surface) · radius 12px · shadow inset 0 0 0 1.5px #e2e8f0, 0 1.13px 2.25px 0 rgba(0, 0, 0, 0.05) `4193:145794`
                 - [khối] **Frame 1171274942** — 263×43 [FILL×HUG] · @ (13.5, 13.5) flow · column gap 2 `4193:145797`
                   - [khối] **Frame 1171274943** — 263×22 [FILL×HUG] · @ (0, 0) flow · row space-between align CENTER `4193:145798`
                     - [instance] **Atom/Status** ⟨Atom/Status: Status=Công khai, Size=S⟩ — 98×22 [HUG×HUG] · @ (0, 0) flow · row gap 4 pad 2 6 2 4 justify CENTER align CENTER · bg #f0ffef · radius 6px · border 1px solid #2d9732 `4193:145799`
@@ -287,7 +290,7 @@ Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí ·
                           - [chữ] “Công khai” — 52×16 [HUG×HUG] · @ (0, 0) flow · Afacad 13/16px 700 #2d9732 · text-align center · no-wrap `I4193:145799;2808:44039`
                       - [icon] **Chevron** — 12×13.84 · @ (79, 4.08) flow · file /figma/assets/1c71a83f9573.svg `I4193:145799;2808:44784`
                   - [chữ] “Hiểu Về Các Đối Tượng” — 263×19 [FILL×HUG] · @ (0, 24) flow · Afacad 15/19px 600 #334155 (color/text/primary) `4193:145802`
-              - [khối] **Main Toggle Item Card · Hãy là GIÁO VIÊN CÓ TÂM** — 290×66 [FILL×HUG] · @ (0, 370) flow · row gap 4 pad 12 12 8 12 align CENTER · bg #ffffff · radius 12px · shadow inset 0 0 0 1.5px #e2e8f0, 0 1.13px 2.25px 0 rgba(0, 0, 0, 0.05) `4193:145866`
+              - [khối] **Main Toggle Item Card · Hãy là GIÁO VIÊN CÓ TÂM** — 290×66 [FILL×HUG] · @ (0, 370) flow · row gap 4 pad 12 12 8 12 align CENTER · bg #ffffff (bg/surface) · radius 12px · shadow inset 0 0 0 1.5px #e2e8f0, 0 1.13px 2.25px 0 rgba(0, 0, 0, 0.05) `4193:145866`
                 - [khối] **Frame 1171274942** — 263×43 [FILL×HUG] · @ (13.5, 13.5) flow · column gap 2 `4193:145869`
                   - [khối] **Frame 1171274943** — 263×22 [FILL×HUG] · @ (0, 0) flow · row space-between align CENTER `4193:145870`
                     - [instance] **Atom/Status** ⟨Atom/Status: Status=Công khai, Size=S⟩ — 98×22 [HUG×HUG] · @ (0, 0) flow · row gap 4 pad 2 6 2 4 justify CENTER align CENTER · bg #f0ffef · radius 6px · border 1px solid #2d9732 `4193:145871`
@@ -297,7 +300,7 @@ Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí ·
                           - [chữ] “Công khai” — 52×16 [HUG×HUG] · @ (0, 0) flow · Afacad 13/16px 700 #2d9732 · text-align center · no-wrap `I4193:145871;2808:44039`
                       - [icon] **Chevron** — 12×13.84 · @ (79, 4.08) flow · file /figma/assets/1c71a83f9573.svg `I4193:145871;2808:44784`
                   - [chữ] “Hãy là GIÁO VIÊN CÓ TÂM” — 263×19 [FILL×HUG] · @ (0, 24) flow · Afacad 15/19px 600 #334155 (color/text/primary) `4193:145874`
-              - [khối] **Main Toggle Item Card · Nên Tránh để Tốt Hơn** — 290×66 [FILL×HUG] · @ (0, 444) flow · row gap 4 pad 12 12 8 12 align CENTER · bg #ffffff · radius 12px · shadow inset 0 0 0 1.5px #e2e8f0, 0 1.13px 2.25px 0 rgba(0, 0, 0, 0.05) `4193:145938`
+              - [khối] **Main Toggle Item Card · Nên Tránh để Tốt Hơn** — 290×66 [FILL×HUG] · @ (0, 444) flow · row gap 4 pad 12 12 8 12 align CENTER · bg #ffffff (bg/surface) · radius 12px · shadow inset 0 0 0 1.5px #e2e8f0, 0 1.13px 2.25px 0 rgba(0, 0, 0, 0.05) `4193:145938`
                 - [khối] **Frame 1171274942** — 263×43 [FILL×HUG] · @ (13.5, 13.5) flow · column gap 2 `4193:145941`
                   - [khối] **Frame 1171274943** — 263×22 [FILL×HUG] · @ (0, 0) flow · row space-between align CENTER `4193:145942`
                     - [instance] **Atom/Status** ⟨Atom/Status: Status=Công khai, Size=S⟩ — 98×22 [HUG×HUG] · @ (0, 0) flow · row gap 4 pad 2 6 2 4 justify CENTER align CENTER · bg #f0ffef · radius 6px · border 1px solid #2d9732 `4193:145943`

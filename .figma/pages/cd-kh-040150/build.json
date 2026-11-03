@@ -1,0 +1,12 @@
+{
+  "route": "/kien-thuc-s1/tu-vung/popup-them-tu-thu-vien",
+  "pageFile": "components/figma/cd-kh-040150/index.tsx",
+  "docFile": "docs/pages/kien-thuc-s1/tu-vung/popup-them-tu-thu-vien.md",
+  "sections": [
+    {
+      "nodeId": "4846:171724",
+      "component": "PopupThemTuThuVienDuLieu",
+      "file": "components/figma/cd-kh-040150/PopupThemTuThuVienDuLieu.tsx"
+    }
+  ]
+}

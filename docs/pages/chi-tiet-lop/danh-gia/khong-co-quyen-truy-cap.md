@@ -5,7 +5,7 @@
 > **Nguồn:** PLS-ICS T8/2026 ›         ├─ ĐÁNH GIÁ › GV-LOP-100100 — Chi tiết lớp / Đánh giá / Không có quyền truy cập (`4333:16560`, file `rRVs5HX0kIHffbS0V40djG`)  
 > **Route:** `/chi-tiet-lop/danh-gia/khong-co-quyen-truy-cap`  
 > **Khung thiết kế:** 1440 × 810 px (cắt phần tràn ra ngoài khung)  
-> **Xuất lúc:** 2026-11-02T03:54:39.517Z  
+> **Xuất lúc:** 2026-11-03T01:10:01.726Z  
 > **Spec đầy đủ (giá trị chính xác từng node):** `../../../../.figma/pages/gv-lop-100100/page-spec.json`
 
 ## 1. Tổng quan

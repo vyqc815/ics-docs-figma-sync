@@ -12,19 +12,13 @@
   "pixels": {
     "width": 1440,
     "height": 810,
-    "mismatched": 7484,
-    "percent": 0.642,
+    "mismatched": 6797,
+    "percent": 0.583,
     "shapePercent": 0.001,
-    "textPercent": 4.101,
+    "textPercent": 3.724,
     "sizeMismatch": false
   },
   "textNodes": [
-    {
-      "id": "I4333:15842;2245:87914",
-      "name": "Label",
-      "pixels": 720,
-      "percent": 33.6
-    },
     {
       "id": "I4899:187832;2245:87908",
       "name": "Label",
@@ -108,6 +102,12 @@
       "name": "HỌC VIÊN",
       "pixels": 39,
       "percent": 2.8
+    },
+    {
+      "id": "I4333:15838;2245:87908",
+      "name": "Label",
+      "pixels": 58,
+      "percent": 2.7
     }
   ],
   "regions": [],
@@ -428,7 +428,7 @@
     "over": []
   },
   "failures": [],
-  "url": "http://localhost:3108/chi-tiet-lop/mindset-khoa-hoc/hoc-vien-dk",
+  "url": "http://localhost:3000/chi-tiet-lop/mindset-khoa-hoc/hoc-vien-dk",
   "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
   "consoleErrors": [],
   "rootFound": true

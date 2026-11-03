@@ -12,19 +12,13 @@
   "pixels": {
     "width": 1440,
     "height": 810,
-    "mismatched": 2469,
-    "percent": 0.212,
+    "mismatched": 2115,
+    "percent": 0.181,
     "shapePercent": 0.006,
-    "textPercent": 1.303,
+    "textPercent": 1.111,
     "sizeMismatch": false
   },
   "textNodes": [
-    {
-      "id": "I4056:125296;2245:87864",
-      "name": "Label",
-      "pixels": 373,
-      "percent": 14.9
-    },
     {
       "id": "I4056:125149;2008:48177",
       "name": "31.01.2026 - 06.01.2026",
@@ -108,6 +102,12 @@
       "name": "Label",
       "pixels": 69,
       "percent": 2.4
+    },
+    {
+      "id": "I4056:125298;2245:87858",
+      "name": "Label",
+      "pixels": 45,
+      "percent": 1.8
     }
   ],
   "regions": [
@@ -537,7 +537,7 @@
     "over": []
   },
   "failures": [],
-  "url": "http://localhost:3108/chi-tiet-giao-vien/lich-day-dk",
+  "url": "http://localhost:3000/chi-tiet-giao-vien/lich-day-dk",
   "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
   "consoleErrors": [],
   "rootFound": true

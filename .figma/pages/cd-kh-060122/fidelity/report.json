@@ -1,0 +1,652 @@
+{
+  "pass": true,
+  "thresholds": {
+    "maxPixelDiffPercent": 0.5,
+    "maxBoxDelta": 1,
+    "maxTextBoxDelta": 2.5,
+    "colorThreshold": 0.1,
+    "aaRadius": 1,
+    "subpixel": true,
+    "maxTextNodeDiffPercent": 35
+  },
+  "pixels": {
+    "width": 640,
+    "height": 1058,
+    "mismatched": 1915,
+    "percent": 0.283,
+    "shapePercent": 0.12,
+    "textPercent": 0.639,
+    "sizeMismatch": false
+  },
+  "textNodes": [
+    {
+      "id": "I5672:74766;2015:30530",
+      "name": "Label",
+      "pixels": 128,
+      "percent": 4.2
+    },
+    {
+      "id": "I5672:74770;2015:30530",
+      "name": "Label",
+      "pixels": 66,
+      "percent": 3.7
+    },
+    {
+      "id": "I5672:74766;2015:30531",
+      "name": "Required",
+      "pixels": 7,
+      "percent": 3
+    },
+    {
+      "id": "I5672:74777;1061:1316",
+      "name": "Kéo thả file vào đây hoặc chọn file",
+      "pixels": 114,
+      "percent": 2.6
+    },
+    {
+      "id": "I5672:74859;2015:30530",
+      "name": "Label",
+      "pixels": 109,
+      "percent": 2.2
+    },
+    {
+      "id": "I5672:74798;2808:42233",
+      "name": "Tìm nội dung...",
+      "pixels": 270,
+      "percent": 2.2
+    },
+    {
+      "id": "6019:81629",
+      "name": "Kỹ năng",
+      "pixels": 18,
+      "percent": 1.8
+    },
+    {
+      "id": "I5672:74776;2015:30530",
+      "name": "Label",
+      "pixels": 34,
+      "percent": 1.1
+    },
+    {
+      "id": "I5672:74760;2015:30530",
+      "name": "Label",
+      "pixels": 12,
+      "percent": 0.9
+    },
+    {
+      "id": "I5672:74773;2015:30530",
+      "name": "Label",
+      "pixels": 23,
+      "percent": 0.9
+    },
+    {
+      "id": "I5672:74774;2808:42324",
+      "name": "Tìm nội dung...",
+      "pixels": 115,
+      "percent": 0.9
+    },
+    {
+      "id": "I5672:74859;2015:30531",
+      "name": "Required",
+      "pixels": 2,
+      "percent": 0.9
+    },
+    {
+      "id": "I5672:74797;2015:30530",
+      "name": "Label",
+      "pixels": 24,
+      "percent": 0.9
+    },
+    {
+      "id": "I5672:74753;2514:153355",
+      "name": "Description",
+      "pixels": 85,
+      "percent": 0.6
+    },
+    {
+      "id": "I5672:74799;2514:153363;1048:1230",
+      "name": "Button",
+      "pixels": 11,
+      "percent": 0.6
+    }
+  ],
+  "regions": [
+    {
+      "x": 424,
+      "y": 520,
+      "width": 64,
+      "height": 8,
+      "pixels": 66,
+      "node": {
+        "id": "5672:74777",
+        "name": "Atom/Dropzone",
+        "role": "instance"
+      }
+    },
+    {
+      "x": 344,
+      "y": 520,
+      "width": 56,
+      "height": 8,
+      "pixels": 62,
+      "node": {
+        "id": "5672:74777",
+        "name": "Atom/Dropzone",
+        "role": "instance"
+      }
+    },
+    {
+      "x": 416,
+      "y": 624,
+      "width": 72,
+      "height": 8,
+      "pixels": 62,
+      "node": {
+        "id": "5672:74754",
+        "name": "Body",
+        "role": "container"
+      }
+    },
+    {
+      "x": 248,
+      "y": 520,
+      "width": 64,
+      "height": 8,
+      "pixels": 60,
+      "node": {
+        "id": "5672:74777",
+        "name": "Atom/Dropzone",
+        "role": "instance"
+      }
+    },
+    {
+      "x": 512,
+      "y": 624,
+      "width": 64,
+      "height": 8,
+      "pixels": 60,
+      "node": {
+        "id": "5672:74754",
+        "name": "Body",
+        "role": "container"
+      }
+    },
+    {
+      "x": 328,
+      "y": 624,
+      "width": 72,
+      "height": 8,
+      "pixels": 57,
+      "node": {
+        "id": "5672:74754",
+        "name": "Body",
+        "role": "container"
+      }
+    },
+    {
+      "x": 240,
+      "y": 624,
+      "width": 64,
+      "height": 8,
+      "pixels": 54,
+      "node": {
+        "id": "5672:74754",
+        "name": "Body",
+        "role": "container"
+      }
+    },
+    {
+      "x": 16,
+      "y": 544,
+      "width": 8,
+      "height": 56,
+      "pixels": 53,
+      "node": {
+        "id": "5672:74777",
+        "name": "Atom/Dropzone",
+        "role": "instance"
+      }
+    },
+    {
+      "x": 152,
+      "y": 624,
+      "width": 64,
+      "height": 8,
+      "pixels": 52,
+      "node": {
+        "id": "5672:74754",
+        "name": "Body",
+        "role": "container"
+      }
+    },
+    {
+      "x": 152,
+      "y": 520,
+      "width": 72,
+      "height": 8,
+      "pixels": 49,
+      "node": {
+        "id": "5672:74777",
+        "name": "Atom/Dropzone",
+        "role": "instance"
+      }
+    },
+    {
+      "x": 520,
+      "y": 520,
+      "width": 64,
+      "height": 8,
+      "pixels": 48,
+      "node": {
+        "id": "5672:74777",
+        "name": "Atom/Dropzone",
+        "role": "instance"
+      }
+    },
+    {
+      "x": 64,
+      "y": 624,
+      "width": 64,
+      "height": 8,
+      "pixels": 48,
+      "node": {
+        "id": "5672:74754",
+        "name": "Body",
+        "role": "container"
+      }
+    },
+    {
+      "x": 64,
+      "y": 520,
+      "width": 64,
+      "height": 8,
+      "pixels": 46,
+      "node": {
+        "id": "5672:74777",
+        "name": "Atom/Dropzone",
+        "role": "instance"
+      }
+    },
+    {
+      "x": 616,
+      "y": 552,
+      "width": 8,
+      "height": 56,
+      "pixels": 42,
+      "node": {
+        "id": "5672:74777",
+        "name": "Atom/Dropzone",
+        "role": "instance"
+      }
+    },
+    {
+      "x": 32,
+      "y": 208,
+      "width": 8,
+      "height": 24,
+      "pixels": 19,
+      "node": {
+        "id": "6019:81624",
+        "name": "Checkbox",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 600,
+      "y": 624,
+      "width": 24,
+      "height": 8,
+      "pixels": 15,
+      "node": {
+        "id": "5672:74754",
+        "name": "Body",
+        "role": "container"
+      }
+    },
+    {
+      "x": 24,
+      "y": 520,
+      "width": 16,
+      "height": 8,
+      "pixels": 10,
+      "node": {
+        "id": "5672:74777",
+        "name": "Atom/Dropzone",
+        "role": "instance"
+      }
+    },
+    {
+      "x": 24,
+      "y": 624,
+      "width": 16,
+      "height": 8,
+      "pixels": 6,
+      "node": {
+        "id": "5672:74754",
+        "name": "Body",
+        "role": "container"
+      }
+    }
+  ],
+  "boxes": {
+    "measured": 91,
+    "missing": [],
+    "withinThreshold": 91,
+    "buckets": {
+      "≤0.5px": 84,
+      "≤1px": 87,
+      "≤2px": 91,
+      "≤4px": 91,
+      ">4px": 0
+    },
+    "worst": [
+      {
+        "id": "I5672:74777;1061:1317",
+        "name": "Hỗ trợ: PDF, DOC, DOCX, PPT, PPTX (Tối đa 20MB)",
+        "role": "text",
+        "delta": 1.64,
+        "dx": -0.83,
+        "dy": 0,
+        "dw": 1.64,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5672:74766",
+        "name": "Atom/Label",
+        "role": "instance",
+        "delta": 1.23,
+        "dx": 0,
+        "dy": 0,
+        "dw": 1.23,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5672:74766;2015:30530",
+        "name": "Label",
+        "role": "text",
+        "delta": 1.23,
+        "dx": 0,
+        "dy": 0,
+        "dw": 1.23,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5672:74766;2015:30531",
+        "name": "Required",
+        "role": "text",
+        "delta": 1.23,
+        "dx": 1.23,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5672:74859",
+        "name": "Atom/Label",
+        "role": "instance",
+        "delta": 0.73,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.73,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5672:74859;2015:30530",
+        "name": "Label",
+        "role": "text",
+        "delta": 0.73,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.73,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5672:74859;2015:30531",
+        "name": "Required",
+        "role": "text",
+        "delta": 0.73,
+        "dx": 0.73,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6019:81622",
+        "name": "Kiến thức / Kỹ năng",
+        "role": "container",
+        "delta": 0.5,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.5,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6019:81627",
+        "name": "Kiến thức / Kỹ năng · Kỹ năng",
+        "role": "container",
+        "delta": 0.5,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.5,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6019:81629",
+        "name": "Kỹ năng",
+        "role": "text",
+        "delta": 0.5,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.5,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5672:74770",
+        "name": "Atom/Label",
+        "role": "instance",
+        "delta": 0.33,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.33,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5672:74770;2015:30530",
+        "name": "Label",
+        "role": "text",
+        "delta": 0.33,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.33,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5672:74753",
+        "name": "Popup/Header",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5672:74753;2514:153353",
+        "name": "Tiêu đề",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5672:74753;2514:153354",
+        "name": "Title",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5672:74753;2514:153355",
+        "name": "Description",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5672:74754",
+        "name": "Body",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5672:74755",
+        "name": "Hàng · Số câu & Loại câu",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5672:74756",
+        "name": "Field · Số câu",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5672:74757",
+        "name": "Atom/Label",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5672:74757;2015:30530",
+        "name": "Label",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5672:74757;2015:30531",
+        "name": "Required",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5672:74758",
+        "name": "Atom/Input",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5672:74758;1048:1266",
+        "name": "Đã nhập xong",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5672:74759",
+        "name": "Field · Loại câu",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      }
+    ],
+    "maxDelta": 1.64,
+    "over": []
+  },
+  "failures": [],
+  "url": "http://localhost:3000/bai-tap-ve-nha/frames/cd-kh-060122",
+  "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
+  "consoleErrors": [],
+  "rootFound": true
+}

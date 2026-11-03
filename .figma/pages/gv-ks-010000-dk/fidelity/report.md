@@ -1,6 +1,6 @@
 # Fidelity: GV-KS-010000-DK — Khảo sát / Danh sách khảo sát
 
-- URL: `http://localhost:3108/khao-sat/danh-sach-khao-sat-dk`
+- URL: `http://localhost:3000/khao-sat/danh-sach-khao-sat-dk`
 - Verdict: **PASS**
 - Pixels outside text: **0.001%** differ (limit 0.5%); all pixels: 0.09%; inside text boxes: 0.723% (glyph rendering)
 - Boxes: 108/108 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 108, ≤1px: 108, ≤2px: 108, ≤4px: 108, >4px: 0

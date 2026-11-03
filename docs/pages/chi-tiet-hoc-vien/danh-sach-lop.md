@@ -5,7 +5,7 @@
 > **Nguồn:** PLS-ICS T8/2026 ›         ├─ HỌC VIÊN › ADM-HV-020200 — Chi tiết học viên / Danh sách lớp (`1117:10464`, file `rRVs5HX0kIHffbS0V40djG`)  
 > **Route:** `/chi-tiet-hoc-vien/danh-sach-lop`  
 > **Khung thiết kế:** 1440 × 810 px  
-> **Xuất lúc:** 2026-11-02T03:19:27.190Z  
+> **Xuất lúc:** 2026-11-03T03:11:38.723Z  
 > **Spec đầy đủ (giá trị chính xác từng node):** `../../../.figma/pages/adm-hv-020200/page-spec.json`
 
 ## 1. Tổng quan
@@ -26,6 +26,7 @@ Nền trang: `linear-gradient(#f8fafc, #f8fafc), linear-gradient(#ffffff, #fffff
 
 | Token | Biến CSS | Giá trị | Trỏ tới | Bộ / mode |
 | --- | --- | --- | --- | --- |
+| `bg/surface` | `--bg-surface` | `#ffffff` | color/neutral/white | Theme · Semantic / Light |
 | `bố cục/khoảng cách khối` | `--bo-cuc-khoang-cach-khoi` | `16` | spacing/16 | Number Tokens / Mode 1 |
 | `bố cục/lề hai bên` | `--bo-cuc-le-hai-ben` | `16` | spacing/16 | Number Tokens / Mode 1 |
 | `bố cục/lề trên dưới` | `--bo-cuc-le-tren-duoi` | `24` | spacing/24 | Number Tokens / Mode 1 |
@@ -37,6 +38,7 @@ Nền trang: `linear-gradient(#f8fafc, #f8fafc), linear-gradient(#ffffff, #fffff
 | `color/extended/ffedd5` | `--color-extended-ffedd5` | `#ffedd5` |  | Color Tokens / Light |
 | `color/extended/fff5ec` | `--color-extended-fff5ec` | `#fff5ec` |  | Color Tokens / Light |
 | `color/extended/fff7ed` | `--color-extended-fff7ed` | `#fff7ed` |  | Color Tokens / Light |
+| `color/extended/fffaf8` | `--color-extended-fffaf8` | `#fffaf8` |  | Color Tokens / Light |
 | `color/neutral/white` | `--color-neutral-white` | `#ffffff` |  | Color Tokens / Light |
 | `color/neutral/white` | `--color-neutral-white` | `#ffffff` |  | Color Tokens / Light |
 | `color/semantic/success` | `--color-semantic-success` | `#2d9732` |  | Color Tokens / Light |
@@ -195,7 +197,7 @@ Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí ·
                   - [khối] **Frame 427321961** — 1172×67 [FILL×HUG] · @ (0, 0) flow · row gap 146 pad 12 16 12 16 align CENTER · bg #ffffff (color/neutral/white) · border 0 0 1px 0 solid #f1f5f9 (color/border/subtle) `1648:12588`
                     - [khối] **Frame 427326026** — 136×24 [HUG×HUG] · @ (16, 21) flow · row gap 12 align CENTER `1648:12589`
                       - [icon] **CLass Status** ⟨CLass Status: Property 1=Hoàn thành⟩ — 24×24 · @ (0, 0) flow · file /figma/assets/f0b088c127e7.svg `1648:12590`
-                      - [khối] **Data** — 100×19 [FIXED×HUG] · @ (36, 2.5) flow · column justify CENTER · bg #ffffff `1648:12591`
+                      - [khối] **Data** — 100×19 [FIXED×HUG] · @ (36, 2.5) flow · column justify CENTER · bg #ffffff (bg/surface) `1648:12591`
                         - [khối] **Container** — 100×19 [FILL×HUG] · @ (0, 0) flow · column `1648:12592`
                           - [khối] **Frame 427321959** — 100×19 [FILL×HUG] · @ (0, 0) flow · row gap 6 align CENTER `1648:12593`
                             - [chữ] “DN420-II” — 100×19 [FILL×HUG] · @ (0, 0) flow · Afacad 15/19px 700 #334155 (color/text/primary) · truncate 1 lines `1648:12594`
@@ -212,10 +214,10 @@ Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí ·
                         - [icon] **Group 240218** — 36×36 · @ (0, 0) abs · file /figma/assets/2088668ec55b.svg `I1648:12601;1391:14471`
                         - [chữ] “80%” — 17×12 [HUG×HUG] · @ (9.5, 12) flow · runs: “80” Afacad 10/12px 600 #1e293b; “%” Afacad 8/10px 600 #e65100 · text-align center · no-wrap `I1648:12601;1391:14476`
                     - [icon] **SVG** — 28×28 · @ (1120, 19) flow · file /figma/assets/bbcb56853bb3.svg `1648:12605`
-                  - [khối] **Frame 427321962** — 1172×67 [FILL×HUG] · @ (0, 67) flow · row gap 146 pad 12 16 12 16 align CENTER · bg #fffaf8 · border 0 0 1px 0 solid #f1f5f9 (color/border/subtle) `1648:12607`
+                  - [khối] **Frame 427321962** — 1172×67 [FILL×HUG] · @ (0, 67) flow · row gap 146 pad 12 16 12 16 align CENTER · bg #fffaf8 (color/extended/fffaf8) · border 0 0 1px 0 solid #f1f5f9 (color/border/subtle) `1648:12607`
                     - [khối] **Frame 427326026** — 136×24 [HUG×HUG] · @ (16, 21) flow · row gap 12 align CENTER `1648:12608`
                       - [icon] **CLass Status** ⟨CLass Status: Property 1=Hoàn thành⟩ — 24×24 · @ (0, 0) flow · file /figma/assets/f0b088c127e7.svg `1648:12609`
-                      - [khối] **Data** — 100×19 [FIXED×HUG] · @ (36, 2.5) flow · column justify CENTER · bg #ffffff `1648:12610`
+                      - [khối] **Data** — 100×19 [FIXED×HUG] · @ (36, 2.5) flow · column justify CENTER · bg #ffffff (bg/surface) `1648:12610`
                         - [khối] **Container** — 100×19 [FILL×HUG] · @ (0, 0) flow · column `1648:12611`
                           - [khối] **Frame 427321959** — 100×19 [FILL×HUG] · @ (0, 0) flow · row gap 6 align CENTER `1648:12612`
                             - [chữ] “DN420-II” — 100×19 [FILL×HUG] · @ (0, 0) flow · Afacad 15/19px 700 #334155 (color/text/primary) · truncate 1 lines `1648:12613`
@@ -236,7 +238,7 @@ Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí ·
                   - [khối] **Frame 427321971** — 1172×67 [FILL×HUG] · @ (0, 134) flow · row gap 146 pad 12 16 12 16 align CENTER · bg #ffffff (color/neutral/white) · border 0 0 1px 0 solid #f1f5f9 (color/border/subtle) `1648:12627`
                     - [khối] **Frame 427326026** — 136×24 [HUG×HUG] · @ (16, 21) flow · row gap 12 align CENTER `1648:12628`
                       - [icon] **CLass Status** ⟨CLass Status: Property 1=Hoàn thành⟩ — 24×24 · @ (0, 0) flow · file /figma/assets/f0b088c127e7.svg `1648:12629`
-                      - [khối] **Data** — 100×19 [FIXED×HUG] · @ (36, 2.5) flow · column justify CENTER · bg #ffffff `1648:12630`
+                      - [khối] **Data** — 100×19 [FIXED×HUG] · @ (36, 2.5) flow · column justify CENTER · bg #ffffff (bg/surface) `1648:12630`
                         - [khối] **Container** — 100×19 [FILL×HUG] · @ (0, 0) flow · column `1648:12631`
                           - [khối] **Frame 427321959** — 100×19 [FILL×HUG] · @ (0, 0) flow · row gap 6 align CENTER `1648:12632`
                             - [chữ] “DN420-II” — 100×19 [FILL×HUG] · @ (0, 0) flow · Afacad 15/19px 700 #334155 (color/text/primary) · truncate 1 lines `1648:12633`
@@ -257,7 +259,7 @@ Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí ·
                   - [khối] **Frame 427321968** — 1172×67 [FILL×HUG] · @ (0, 201) flow · row gap 146 pad 12 16 12 16 align CENTER · bg #ffffff (color/neutral/white) · border 0 0 1px 0 solid #f1f5f9 (color/border/subtle) `1648:12646`
                     - [khối] **Frame 427326026** — 136×24 [HUG×HUG] · @ (16, 21) flow · row gap 12 align CENTER `1648:12647`
                       - [icon] **CLass Status** ⟨CLass Status: Property 1=Hoàn thành⟩ — 24×24 · @ (0, 0) flow · file /figma/assets/f0b088c127e7.svg `1648:12648`
-                      - [khối] **Data** — 100×19 [FIXED×HUG] · @ (36, 2.5) flow · column justify CENTER · bg #ffffff `1648:12649`
+                      - [khối] **Data** — 100×19 [FIXED×HUG] · @ (36, 2.5) flow · column justify CENTER · bg #ffffff (bg/surface) `1648:12649`
                         - [khối] **Container** — 100×19 [FILL×HUG] · @ (0, 0) flow · column `1648:12650`
                           - [khối] **Frame 427321959** — 100×19 [FILL×HUG] · @ (0, 0) flow · row gap 6 align CENTER `1648:12651`
                             - [chữ] “DN420-II” — 100×19 [FILL×HUG] · @ (0, 0) flow · Afacad 15/19px 700 #334155 (color/text/primary) · truncate 1 lines `1648:12652`

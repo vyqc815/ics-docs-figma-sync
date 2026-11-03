@@ -1,0 +1,54 @@
+{
+  "route": "/chi-tiet-lop/bai-hoc/tai-nguyen-bi-khoa-dk",
+  "pageFile": "components/figma/gv-lop-030401-dk/index.tsx",
+  "docFile": "docs/pages/chi-tiet-lop/bai-hoc/tai-nguyen-bi-khoa-dk.md",
+  "sections": [
+    {
+      "nodeId": "5425:292020",
+      "component": "Body4",
+      "file": "components/figma/shared/Body4.tsx"
+    },
+    {
+      "nodeId": "5425:292021",
+      "component": "Maincontent",
+      "file": "components/figma/gv-lop-030401-dk/Maincontent.tsx"
+    },
+    {
+      "nodeId": "5425:292348",
+      "component": "ToastChiTaiDuocTaiNguyenCua3BaiDaMoGa",
+      "file": "components/figma/gv-lop-030401-dk/ToastChiTaiDuocTaiNguyenCua3BaiDaMoGa.tsx"
+    },
+    {
+      "nodeId": "5425:292930",
+      "component": "Header77",
+      "file": "components/figma/shared/Header77.tsx"
+    },
+    {
+      "nodeId": "5425:292982",
+      "component": "SidebarRail",
+      "file": "components/figma/gv-lop-030401-dk/SidebarRail.tsx"
+    }
+  ],
+  "idAlias": {
+    "5425:292020": "769:30964",
+    "5425:292930": "4324:31489",
+    "5425:292931": "4324:31490",
+    "5425:292978": "4324:31539",
+    "I5425:292978;2008:31778": "I4324:31539;2008:31778",
+    "I5425:292978;2008:31870": "I4324:31539;2008:31870",
+    "I5425:292978;2008:31871": "I4324:31539;2008:31871",
+    "I5425:292978;2008:31872": "I4324:31539;2008:31872",
+    "I5425:292978;2008:31781": "I4324:31539;2008:31781",
+    "I5425:292978;2008:31782": "I4324:31539;2008:31782",
+    "I5425:292978;2008:31783": "I4324:31539;2008:31783",
+    "I5425:292978;2008:31784": "I4324:31539;2008:31784",
+    "5425:292980": "4324:34126",
+    "I5425:292980;4019:24067": "I4324:34126;4019:24067",
+    "I5425:292980;4019:24068": "I4324:34126;4019:24068",
+    "I5425:292980;4019:24078": "I4324:34126;4019:24078",
+    "I5425:292980;4019:24079": "I4324:34126;4019:24079",
+    "5425:292981": "4899:187471",
+    "I5425:292981;4899:187325": "I4899:187471;4899:187325",
+    "I5425:292981;4899:187330": "I4899:187471;4899:187330"
+  }
+}

@@ -1,8 +1,8 @@
 # Fidelity: ADM-LOP-040600-DK — Lớp học / Cài đặt / Hoá đơn
 
-- URL: `http://localhost:3108/lop-hoc/cai-dat/hoa-don-dk`
+- URL: `http://localhost:3000/lop-hoc/cai-dat/hoa-don-dk`
 - Verdict: **PASS**
-- Pixels outside text: **0.001%** differ (limit 0.5%); all pixels: 0.416%; inside text boxes: 1.945% (glyph rendering)
+- Pixels outside text: **0.001%** differ (limit 0.5%); all pixels: 0.376%; inside text boxes: 1.758% (glyph rendering)
 - Boxes: 250/250 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 250, ≤1px: 250, ≤2px: 250, ≤4px: 250, >4px: 0
 
 ## Pixel regions (largest first)
@@ -16,10 +16,9 @@
 | Text | Differing |
 | --- | --- |
 | Label (`I4056:117810;2245:87908`) | 13.7% |
-| Label (`I4056:117817;2245:87914`) | 13% |
 | Label (`I4056:117808;2245:87908`) | 8.6% |
-| 102152 - [SP] BS Trọn Khoá - DN1-115 - 102152 - Trần T. Trà  (`4056:117719`) | 4.4% |
 | Label (`I4056:117811;2245:87908`) | 4.3% |
+| 102152 - [SP] BS Trọn Khoá - DN1-115 - 102152 - Trần T. Trà  (`4056:117719`) | 3% |
 | Label (`I4056:117813;2245:87908`) | 3% |
 | 101729 - [SP] Renew - DN[2] - 101729 - Đỗ Lâm Tường - 500.00 (`4056:117697`) | 2.9% |
 | 101153 - [SP] BS Trọn Khoá - DN188 - 101153 Nguyễn Van Anh - (`4056:117642`) | 2.7% |
@@ -30,6 +29,7 @@
 | 101951 - [SP] Renew - DN277 - 101951 - Lê Thị Phương Anh (FB (`4056:117708`) | 1.9% |
 | 102080 - [SP] Renew - DN1-111 - 102080 Tuyết Chinh - 3.430.0 (`4056:117675`) | 1.8% |
 | Ngày Tạo (`4056:117638`) | 1.4% |
+| 102830 - [SALE] Mới - DN277 - 102830 - Tam Khiet - 980.000 đ (`4056:117730`) | 1.4% |
 
 ## Largest box differences
 

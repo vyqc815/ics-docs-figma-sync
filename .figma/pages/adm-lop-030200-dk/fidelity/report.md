@@ -1,8 +1,8 @@
 # Fidelity: ADM-LOP-030200-DK — Lớp học / Bài học / Thông tin
 
-- URL: `http://localhost:3108/lop-hoc/bai-hoc/thong-tin-dk`
+- URL: `http://localhost:3000/lop-hoc/bai-hoc/thong-tin-dk`
 - Verdict: **PASS**
-- Pixels outside text: **0.002%** differ (limit 0.5%); all pixels: 0.317%; inside text boxes: 1.73% (glyph rendering)
+- Pixels outside text: **0.002%** differ (limit 0.5%); all pixels: 0.281%; inside text boxes: 1.536% (glyph rendering)
 - Boxes: 215/215 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 214, ≤1px: 214, ≤2px: 214, ≤4px: 215, >4px: 0
 
 ## Pixel regions (largest first)
@@ -16,13 +16,8 @@
 
 | Text | Differing |
 | --- | --- |
-| 0% (`I4056:111212;1308:6706`) | 26% |
-| 80% (`I4056:111200;1391:14476`) | 23.6% |
-| 100% (`I4056:111201;1308:6749`) | 19.9% |
-| 100% (`I4056:111213;1308:6749`) | 19.9% |
 | ÔN TẬP: Giữa Kỳ 1 (`4056:111158`) | 14.9% |
 | Label (`I4056:111365;2245:87908`) | 13.7% |
-| Label (`I4056:111364;2245:87914`) | 12.7% |
 | Label (`I4056:111363;2245:87908`) | 8.6% |
 | Label (`I4056:111366;2245:87908`) | 4.3% |
 | - Ôn lại cả Thanh mẫu và Vận mẫu đã học.\|- Luyện đọc cụm từ (`4056:111173`) | 4% |
@@ -31,6 +26,11 @@
 | Badge (`I4056:111240;1050:2409`) | 3.5% |
 | Label (`I4056:111368;2245:87908`) | 3% |
 | Label (`I4056:111369;2245:87908`) | 2.5% |
+| ÔN TẬP: Giữa Kỳ 1 (`4056:111169`) | 2.2% |
+| Nhãn trường (`I4056:111175;2808:48145`) | 1.9% |
+| Nhãn trường (`I4056:111167;2808:48145`) | 1.8% |
+| Trần Nguyễn Hoài Phương (`I4056:111196;3497:64446`) | 1.7% |
+| Trần Nguyễn Hoài Phương (`I4056:111207;3497:64446`) | 1.7% |
 
 ## Largest box differences
 

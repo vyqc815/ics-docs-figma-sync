@@ -1,0 +1,580 @@
+{
+  "pass": true,
+  "thresholds": {
+    "maxPixelDiffPercent": 0.5,
+    "maxBoxDelta": 1,
+    "maxTextBoxDelta": 2.5,
+    "colorThreshold": 0.1,
+    "aaRadius": 1,
+    "subpixel": true,
+    "maxTextNodeDiffPercent": 35
+  },
+  "pixels": {
+    "width": 1440,
+    "height": 1477,
+    "mismatched": 1737,
+    "percent": 0.082,
+    "shapePercent": 0.017,
+    "textPercent": 0.439,
+    "sizeMismatch": false
+  },
+  "textNodes": [
+    {
+      "id": "I5750:78759;4901:213764;2245:87908",
+      "name": "Label",
+      "pixels": 141,
+      "percent": 5.9
+    },
+    {
+      "id": "I5750:78453;2015:36008",
+      "name": "Value",
+      "pixels": 46,
+      "percent": 3.9
+    },
+    {
+      "id": "5750:78429",
+      "name": "MINITEST 5 - PERSÖNLICHE DATEN",
+      "pixels": 281,
+      "percent": 3
+    },
+    {
+      "id": "I5750:78759;4901:213770;2245:87908",
+      "name": "Label",
+      "pixels": 47,
+      "percent": 2.2
+    },
+    {
+      "id": "I5750:78431;1048:1230",
+      "name": "Button",
+      "pixels": 86,
+      "percent": 1.8
+    },
+    {
+      "id": "5750:78451",
+      "name": "Hiện Tên",
+      "pixels": 19,
+      "percent": 1.8
+    },
+    {
+      "id": "I5750:78759;4901:213769;2245:87914",
+      "name": "Label",
+      "pixels": 74,
+      "percent": 1.8
+    },
+    {
+      "id": "5750:78443",
+      "name": "Ich komme aus Vietnam und wohne in Hanoi.",
+      "pixels": 114,
+      "percent": 1.5
+    },
+    {
+      "id": "I5750:78496;1904:12423",
+      "name": "Trần Nguyễn Hoài Phương",
+      "pixels": 69,
+      "percent": 1.4
+    },
+    {
+      "id": "I5750:78759;4901:213771;689:15190",
+      "name": "Label",
+      "pixels": 15,
+      "percent": 1.4
+    },
+    {
+      "id": "5750:78448",
+      "name": "Chưa Chấm",
+      "pixels": 19,
+      "percent": 1.3
+    },
+    {
+      "id": "I5750:78665;4019:24078",
+      "name": "Sakumi",
+      "pixels": 26,
+      "percent": 1.3
+    },
+    {
+      "id": "I5750:78759;4901:213766;689:15190",
+      "name": "Label",
+      "pixels": 15,
+      "percent": 1.3
+    },
+    {
+      "id": "I5750:78463;1904:12423",
+      "name": "Trần Nguyễn Hoài Phương",
+      "pixels": 59,
+      "percent": 1.2
+    },
+    {
+      "id": "5750:78555",
+      "name": "Câu Hỏi",
+      "pixels": 63,
+      "percent": 1.2
+    }
+  ],
+  "regions": [
+    {
+      "x": 440,
+      "y": 1040,
+      "width": 72,
+      "height": 16,
+      "pixels": 130,
+      "node": {
+        "id": "5751:81222",
+        "name": "Rectangle",
+        "role": "shape"
+      }
+    },
+    {
+      "x": 440,
+      "y": 1016,
+      "width": 64,
+      "height": 16,
+      "pixels": 108,
+      "node": {
+        "id": "5751:81217",
+        "name": "Rectangle",
+        "role": "shape"
+      }
+    },
+    {
+      "x": 1064,
+      "y": 264,
+      "width": 24,
+      "height": 24,
+      "pixels": 21,
+      "node": {
+        "id": "5750:78558",
+        "name": "Trạng thái chấm",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 1064,
+      "y": 768,
+      "width": 24,
+      "height": 24,
+      "pixels": 21,
+      "node": {
+        "id": "5750:78601",
+        "name": "Trạng thái chấm",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 1064,
+      "y": 376,
+      "width": 24,
+      "height": 16,
+      "pixels": 14,
+      "node": {
+        "id": "5750:78567",
+        "name": "Trạng thái chấm",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 1064,
+      "y": 968,
+      "width": 24,
+      "height": 24,
+      "pixels": 11,
+      "node": {
+        "id": "5751:82220",
+        "name": "Trạng thái chấm",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 432,
+      "y": 344,
+      "width": 16,
+      "height": 16,
+      "pixels": 10,
+      "node": {
+        "id": "5750:78450",
+        "name": "Checkbox",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 1072,
+      "y": 360,
+      "width": 8,
+      "height": 8,
+      "pixels": 7,
+      "node": {
+        "id": "5750:78566",
+        "name": "Câu 2",
+        "role": "container"
+      }
+    },
+    {
+      "x": 1352,
+      "y": 280,
+      "width": 24,
+      "height": 16,
+      "pixels": 6,
+      "node": {
+        "id": "I5750:78565;1391:14019",
+        "name": "Group 240218",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 1352,
+      "y": 488,
+      "width": 24,
+      "height": 8,
+      "pixels": 6,
+      "node": {
+        "id": "I5750:78583;1391:14019",
+        "name": "Group 240218",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 1352,
+      "y": 784,
+      "width": 24,
+      "height": 16,
+      "pixels": 6,
+      "node": {
+        "id": "I5750:78608;1391:14019",
+        "name": "Group 240218",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 1352,
+      "y": 384,
+      "width": 24,
+      "height": 16,
+      "pixels": 5,
+      "node": {
+        "id": "I5750:78574;1391:14019",
+        "name": "Group 240218",
+        "role": "icon"
+      }
+    }
+  ],
+  "boxes": {
+    "measured": 376,
+    "missing": [],
+    "withinThreshold": 376,
+    "buckets": {
+      "≤0.5px": 370,
+      "≤1px": 376,
+      "≤2px": 376,
+      "≤4px": 376,
+      ">4px": 0
+    },
+    "worst": [
+      {
+        "id": "5750:78427",
+        "name": "Tiêu đề",
+        "role": "container",
+        "delta": 0.58,
+        "dx": 0,
+        "dy": 0,
+        "dw": -0.58,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5750:78430",
+        "name": "Đã chấm và sửa bài",
+        "role": "container",
+        "delta": 0.58,
+        "dx": -0.58,
+        "dy": 0,
+        "dw": 0.58,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5750:78431",
+        "name": "Atom/Button",
+        "role": "instance",
+        "delta": 0.58,
+        "dx": -0.58,
+        "dy": 0,
+        "dw": 0.58,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5750:78431;1048:1230",
+        "name": "Button",
+        "role": "text",
+        "delta": 0.58,
+        "dx": -0.58,
+        "dy": 0,
+        "dw": 0.58,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5750:78759;4901:213775;689:15189",
+        "name": "Content",
+        "role": "container",
+        "delta": 0.55,
+        "dx": 0,
+        "dy": 0,
+        "dw": -0.55,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5750:78759;4901:213775;689:15190",
+        "name": "Label",
+        "role": "text",
+        "delta": 0.55,
+        "dx": 0,
+        "dy": 0,
+        "dw": -0.55,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5750:78759;4901:213766;689:15189",
+        "name": "Content",
+        "role": "container",
+        "delta": 0.47,
+        "dx": 0,
+        "dy": 0,
+        "dw": -0.47,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5750:78759;4901:213766;689:15190",
+        "name": "Label",
+        "role": "text",
+        "delta": 0.47,
+        "dx": 0,
+        "dy": 0,
+        "dw": -0.47,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5750:78446",
+        "name": "Chưa Chấm",
+        "role": "container",
+        "delta": 0.38,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.38,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5750:78448",
+        "name": "Chưa Chấm",
+        "role": "text",
+        "delta": 0.38,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.38,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5750:78449",
+        "name": "Hiện Tên",
+        "role": "container",
+        "delta": 0.38,
+        "dx": 0.38,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5750:78450",
+        "name": "Checkbox",
+        "role": "icon",
+        "delta": 0.38,
+        "dx": 0.38,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5750:78451",
+        "name": "Hiện Tên",
+        "role": "text",
+        "delta": 0.38,
+        "dx": 0.38,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5750:78452",
+        "name": "sp",
+        "role": "container",
+        "delta": 0.38,
+        "dx": 0.38,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5750:78453",
+        "name": "DD/Molecule/Trigger",
+        "role": "instance",
+        "delta": 0.38,
+        "dx": 0.38,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5750:78453;2015:36007",
+        "name": "Content",
+        "role": "container",
+        "delta": 0.38,
+        "dx": 0.38,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5750:78453;2015:36008",
+        "name": "Value",
+        "role": "text",
+        "delta": 0.38,
+        "dx": 0.38,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5750:78453;2015:36012",
+        "name": "Chevron",
+        "role": "icon",
+        "delta": 0.38,
+        "dx": 0.38,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5750:78454",
+        "name": "3 học viên đã nộp",
+        "role": "text",
+        "delta": 0.38,
+        "dx": 0.38,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5750:78759;4901:213771;689:15189",
+        "name": "Content",
+        "role": "container",
+        "delta": 0.14,
+        "dx": 0,
+        "dy": 0,
+        "dw": -0.14,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5750:78759;4901:213771;689:15190",
+        "name": "Label",
+        "role": "text",
+        "delta": 0.14,
+        "dx": 0,
+        "dy": 0,
+        "dw": -0.14,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5750:78569",
+        "name": "r",
+        "role": "container",
+        "delta": 0.05,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.05,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5750:78571",
+        "name": "Atom/Badge",
+        "role": "instance",
+        "delta": 0.05,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.05,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5750:78571;1048:1253",
+        "name": "Badge",
+        "role": "text",
+        "delta": 0.05,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.05,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5751:81353",
+        "name": "Badge · Cách chấm",
+        "role": "instance",
+        "delta": 0.05,
+        "dx": 0.05,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      }
+    ],
+    "maxDelta": 0.58,
+    "over": []
+  },
+  "failures": [],
+  "url": "http://localhost:3000/chi-tiet-lop/bai-tap-va-kiem-tra/man-cham-bai-noi-app-cham",
+  "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
+  "consoleErrors": [],
+  "rootFound": true
+}

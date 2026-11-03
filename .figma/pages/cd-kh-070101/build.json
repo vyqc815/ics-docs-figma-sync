@@ -1,0 +1,32 @@
+{
+  "route": "/thu-vien/kien-thuc-menu-nhap-chua-dung",
+  "pageFile": "components/figma/cd-kh-070101/index.tsx",
+  "docFile": "docs/pages/thu-vien/kien-thuc-menu-nhap-chua-dung.md",
+  "sections": [
+    {
+      "nodeId": "5672:62188",
+      "component": "Content",
+      "file": "components/figma/cd-kh-070101/Content.tsx"
+    },
+    {
+      "nodeId": "5672:62510",
+      "component": "SidebarMenuCd24",
+      "file": "components/figma/shared/SidebarMenuCd24.tsx"
+    },
+    {
+      "nodeId": "5672:62511",
+      "component": "Header62",
+      "file": "components/figma/shared/Header62.tsx"
+    },
+    {
+      "nodeId": "5672:63232",
+      "component": "Menu",
+      "file": "components/figma/cd-kh-070101/Menu.tsx"
+    },
+    {
+      "nodeId": "5672:63243",
+      "component": "MenuConDoiTrangThai",
+      "file": "components/figma/cd-kh-070101/MenuConDoiTrangThai.tsx"
+    }
+  ]
+}

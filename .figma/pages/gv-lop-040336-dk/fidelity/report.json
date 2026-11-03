@@ -1,0 +1,448 @@
+{
+  "pass": true,
+  "thresholds": {
+    "maxPixelDiffPercent": 0.5,
+    "maxBoxDelta": 1,
+    "maxTextBoxDelta": 2.5,
+    "colorThreshold": 0.1,
+    "aaRadius": 1,
+    "subpixel": true,
+    "maxTextNodeDiffPercent": 35
+  },
+  "pixels": {
+    "width": 980,
+    "height": 714,
+    "mismatched": 421,
+    "percent": 0.06,
+    "shapePercent": 0.006,
+    "textPercent": 0.745,
+    "sizeMismatch": false
+  },
+  "textNodes": [
+    {
+      "id": "5765:418989",
+      "name": "Thu nhỏ",
+      "pixels": 33,
+      "percent": 3.8
+    },
+    {
+      "id": "5765:418995",
+      "name": "Tải về",
+      "pixels": 11,
+      "percent": 1.7
+    },
+    {
+      "id": "5765:418932",
+      "name": "1 / 1",
+      "pixels": 11,
+      "percent": 1.7
+    },
+    {
+      "id": "5765:418986",
+      "name": "Phóng to",
+      "pixels": 15,
+      "percent": 1.6
+    },
+    {
+      "id": "I5765:418913;2514:153342",
+      "name": "Description",
+      "pixels": 278,
+      "percent": 1.3
+    },
+    {
+      "id": "5765:418992",
+      "name": "Xoay",
+      "pixels": 5,
+      "percent": 0.9
+    },
+    {
+      "id": "I5765:418913;2514:153341",
+      "name": "Title",
+      "pixels": 29,
+      "percent": 0.1
+    },
+    {
+      "id": "5765:418921",
+      "name": "Ảnh bài viết tay",
+      "pixels": 0,
+      "percent": 0
+    },
+    {
+      "id": "5765:418996",
+      "name": "100%",
+      "pixels": 0,
+      "percent": 0
+    }
+  ],
+  "regions": [
+    {
+      "x": 816,
+      "y": 656,
+      "width": 16,
+      "height": 16,
+      "pixels": 17,
+      "node": {
+        "id": "5765:418993",
+        "name": "Nút · Tải về",
+        "role": "container"
+      }
+    },
+    {
+      "x": 736,
+      "y": 648,
+      "width": 16,
+      "height": 24,
+      "pixels": 14,
+      "node": {
+        "id": "5765:418991",
+        "name": "Icon · Xoay",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 544,
+      "y": 656,
+      "width": 8,
+      "height": 8,
+      "pixels": 4,
+      "node": {
+        "id": "5765:418985",
+        "name": "Icon · Phóng to",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 648,
+      "y": 656,
+      "width": 8,
+      "height": 8,
+      "pixels": 4,
+      "node": {
+        "id": "5765:418988",
+        "name": "Icon · Thu nhỏ",
+        "role": "icon"
+      }
+    }
+  ],
+  "boxes": {
+    "measured": 30,
+    "missing": [],
+    "withinThreshold": 30,
+    "buckets": {
+      "≤0.5px": 16,
+      "≤1px": 30,
+      "≤2px": 30,
+      "≤4px": 30,
+      ">4px": 0
+    },
+    "worst": [
+      {
+        "id": "5765:418925",
+        "name": "Ảnh thu nhỏ",
+        "role": "icon",
+        "delta": 0.75,
+        "dx": 0,
+        "dy": 0,
+        "dw": -0.75,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5765:418983",
+        "name": "Công cụ",
+        "role": "container",
+        "delta": 0.75,
+        "dx": -0.75,
+        "dy": 0,
+        "dw": 0.75,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5765:418984",
+        "name": "Nút · Phóng to",
+        "role": "container",
+        "delta": 0.75,
+        "dx": -0.75,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5765:418985",
+        "name": "Icon · Phóng to",
+        "role": "icon",
+        "delta": 0.75,
+        "dx": -0.75,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5765:418986",
+        "name": "Phóng to",
+        "role": "text",
+        "delta": 0.75,
+        "dx": -0.75,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5765:418987",
+        "name": "Nút · Thu nhỏ",
+        "role": "container",
+        "delta": 0.75,
+        "dx": -0.75,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5765:418988",
+        "name": "Icon · Thu nhỏ",
+        "role": "icon",
+        "delta": 0.75,
+        "dx": -0.75,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5765:418989",
+        "name": "Thu nhỏ",
+        "role": "text",
+        "delta": 0.75,
+        "dx": -0.75,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5765:418990",
+        "name": "Nút · Xoay",
+        "role": "container",
+        "delta": 0.75,
+        "dx": -0.75,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5765:418991",
+        "name": "Icon · Xoay",
+        "role": "icon",
+        "delta": 0.75,
+        "dx": -0.75,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5765:418992",
+        "name": "Xoay",
+        "role": "text",
+        "delta": 0.75,
+        "dx": -0.75,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5765:418993",
+        "name": "Nút · Tải về",
+        "role": "container",
+        "delta": 0.75,
+        "dx": -0.75,
+        "dy": 0,
+        "dw": 0.75,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5765:418994",
+        "name": "Icon · Tải về",
+        "role": "icon",
+        "delta": 0.75,
+        "dx": -0.75,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5765:418995",
+        "name": "Tải về",
+        "role": "text",
+        "delta": 0.75,
+        "dx": -0.75,
+        "dy": 0,
+        "dw": 0.75,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5765:418913",
+        "name": "Popup/Header",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5765:418913;2514:153340",
+        "name": "Tiêu đề",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5765:418913;2711:67900",
+        "name": "Title Row",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5765:418913;2514:153341",
+        "name": "Title",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5765:418913;2514:153342",
+        "name": "Description",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5765:418914",
+        "name": "Body",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5765:418915",
+        "name": "Khung ảnh",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5765:418916",
+        "name": "Nút Chevron Left",
+        "role": "icon",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5765:418918",
+        "name": "Ảnh",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5765:418919",
+        "name": "Ảnh hoá đơn",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5765:418920",
+        "name": "Visualization File",
+        "role": "icon",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      }
+    ],
+    "maxDelta": 0.75,
+    "over": []
+  },
+  "failures": [],
+  "url": "http://localhost:3000/chi-tiet-lop/bai-tap-va-kiem-tra/popup-xem-anh-bai-viet-tay-dk",
+  "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
+  "consoleErrors": [],
+  "rootFound": true
+}

@@ -1,0 +1,1855 @@
+{
+  "pass": false,
+  "thresholds": {
+    "maxPixelDiffPercent": 0.5,
+    "maxBoxDelta": 1,
+    "maxTextBoxDelta": 2.5,
+    "colorThreshold": 0.1,
+    "aaRadius": 1,
+    "subpixel": true,
+    "maxTextNodeDiffPercent": 35
+  },
+  "pixels": {
+    "width": 1440,
+    "height": 810,
+    "mismatched": 5120,
+    "percent": 0.439,
+    "shapePercent": 0.176,
+    "textPercent": 0.776,
+    "sizeMismatch": false
+  },
+  "textNodes": [
+    {
+      "id": "4056:108096",
+      "name": "Kéo thả thẻ",
+      "pixels": 485,
+      "percent": 21.2
+    },
+    {
+      "id": "4056:108087",
+      "name": "Ví Dụ: Thứ 3",
+      "pixels": 315,
+      "percent": 15.3
+    },
+    {
+      "id": "4056:107841",
+      "name": "Đối tượng",
+      "pixels": 163,
+      "percent": 6.4
+    },
+    {
+      "id": "4056:107951",
+      "name": "Bảng chia lịch hẹn",
+      "pixels": 238,
+      "percent": 3.5
+    },
+    {
+      "id": "I4056:107900;2200:30042",
+      "name": "Ngày mai",
+      "pixels": 40,
+      "percent": 3.1
+    },
+    {
+      "id": "4056:107839",
+      "name": "Người phụ trách",
+      "pixels": 100,
+      "percent": 2.2
+    },
+    {
+      "id": "4056:108138",
+      "name": "Hẹn lớp chuẩn bị khai giảng",
+      "pixels": 143,
+      "percent": 2.1
+    },
+    {
+      "id": "4056:108174",
+      "name": "Hẹn lớp chuẩn bị khai giảng",
+      "pixels": 142,
+      "percent": 2.1
+    },
+    {
+      "id": "4056:108156",
+      "name": "Hẹn lớp chuẩn bị khai giảng",
+      "pixels": 139,
+      "percent": 2
+    },
+    {
+      "id": "I4056:108098;5056:365853",
+      "name": "Placeholder",
+      "pixels": 116,
+      "percent": 1.9
+    },
+    {
+      "id": "I4056:107953;2015:36008",
+      "name": "Value",
+      "pixels": 24,
+      "percent": 1.8
+    },
+    {
+      "id": "4056:108120",
+      "name": "Hẹn lớp chuẩn bị khai giảng",
+      "pixels": 121,
+      "percent": 1.8
+    },
+    {
+      "id": "4056:108024",
+      "name": "Giới thiệu về lớp học, bài học, và cách làm bài tập về nhà",
+      "pixels": 201,
+      "percent": 1.7
+    },
+    {
+      "id": "4056:108042",
+      "name": "Giới thiệu về lớp học, bài học, và cách làm bài tập về nhà",
+      "pixels": 201,
+      "percent": 1.7
+    },
+    {
+      "id": "I4056:107827;2177:28936",
+      "name": "Nhiệm vụ con",
+      "pixels": 21,
+      "percent": 1.5
+    }
+  ],
+  "regions": [
+    {
+      "x": 888,
+      "y": 128,
+      "width": 392,
+      "height": 64,
+      "pixels": 1171,
+      "node": {
+        "id": "4056:108086",
+        "name": "Frame 427325238",
+        "role": "container"
+      }
+    },
+    {
+      "x": 624,
+      "y": 128,
+      "width": 256,
+      "height": 40,
+      "pixels": 282,
+      "node": {
+        "id": "4056:108198",
+        "name": "Mouse click",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 1048,
+      "y": 208,
+      "width": 232,
+      "height": 576,
+      "pixels": 160,
+      "node": {
+        "id": "4056:107880",
+        "name": "Frame 427321972",
+        "role": "container"
+      }
+    },
+    {
+      "x": 704,
+      "y": 296,
+      "width": 32,
+      "height": 24,
+      "pixels": 136,
+      "node": {
+        "id": "4056:108125",
+        "name": "Status Độ ưu tiên",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 496,
+      "y": 360,
+      "width": 8,
+      "height": 136,
+      "pixels": 61,
+      "node": {
+        "id": "4056:107880",
+        "name": "Frame 427321972",
+        "role": "container"
+      }
+    },
+    {
+      "x": 736,
+      "y": 736,
+      "width": 16,
+      "height": 24,
+      "pixels": 49,
+      "node": {
+        "id": "4056:108179",
+        "name": "Status Độ ưu tiên",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 904,
+      "y": 200,
+      "width": 16,
+      "height": 16,
+      "pixels": 28,
+      "node": {
+        "id": "4056:108095",
+        "name": "Union",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 504,
+      "y": 128,
+      "width": 80,
+      "height": 8,
+      "pixels": 27,
+      "node": {
+        "id": "4056:107823",
+        "name": "Tabs",
+        "role": "container"
+      }
+    },
+    {
+      "x": 496,
+      "y": 200,
+      "width": 8,
+      "height": 56,
+      "pixels": 23,
+      "node": {
+        "id": "4056:107848",
+        "name": "Frame 427321961",
+        "role": "container"
+      }
+    },
+    {
+      "x": 496,
+      "y": 312,
+      "width": 8,
+      "height": 24,
+      "pixels": 13,
+      "node": {
+        "id": "4056:107867",
+        "name": "Frame 427321971",
+        "role": "container"
+      }
+    },
+    {
+      "x": 920,
+      "y": 776,
+      "width": 56,
+      "height": 8,
+      "pixels": 11,
+      "node": {
+        "id": "4056:107923",
+        "name": "Frame 1171274957",
+        "role": "container"
+      }
+    },
+    {
+      "x": 1272,
+      "y": 152,
+      "width": 16,
+      "height": 40,
+      "pixels": 10,
+      "node": {
+        "id": "4056:107831",
+        "name": "Frame 427321948",
+        "role": "container"
+      }
+    },
+    {
+      "x": 496,
+      "y": 536,
+      "width": 8,
+      "height": 40,
+      "pixels": 9,
+      "node": {
+        "id": "4056:107880",
+        "name": "Frame 427321972",
+        "role": "container"
+      }
+    },
+    {
+      "x": 688,
+      "y": 648,
+      "width": 16,
+      "height": 24,
+      "pixels": 9,
+      "node": {
+        "id": "I4056:108169;1991:15990",
+        "name": "Ellipse 76",
+        "role": "image"
+      }
+    },
+    {
+      "x": 288,
+      "y": 440,
+      "width": 16,
+      "height": 16,
+      "pixels": 8,
+      "node": {
+        "id": "4056:108010",
+        "name": "Status Độ ưu tiên",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 704,
+      "y": 744,
+      "width": 16,
+      "height": 16,
+      "pixels": 8,
+      "node": {
+        "id": "4056:108178",
+        "name": "Status lịch hẹn",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 672,
+      "y": 296,
+      "width": 16,
+      "height": 24,
+      "pixels": 7,
+      "node": {
+        "id": "4056:108124",
+        "name": "Status lịch hẹn",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 720,
+      "y": 232,
+      "width": 8,
+      "height": 8,
+      "pixels": 5,
+      "node": {
+        "id": "4056:108110",
+        "name": "Frame 427325250",
+        "role": "container"
+      }
+    },
+    {
+      "x": 736,
+      "y": 232,
+      "width": 24,
+      "height": 8,
+      "pixels": 4,
+      "node": {
+        "id": "4056:108110",
+        "name": "Frame 427325250",
+        "role": "container"
+      }
+    },
+    {
+      "x": 672,
+      "y": 368,
+      "width": 8,
+      "height": 16,
+      "pixels": 4,
+      "node": {
+        "id": "I4056:108133;1991:15990",
+        "name": "Ellipse 76",
+        "role": "image"
+      }
+    }
+  ],
+  "boxes": {
+    "measured": 617,
+    "missing": [],
+    "withinThreshold": 519,
+    "buckets": {
+      "≤0.5px": 468,
+      "≤1px": 482,
+      "≤2px": 519,
+      "≤4px": 530,
+      ">4px": 87
+    },
+    "worst": [
+      {
+        "id": "4056:108083",
+        "name": "Frame 427325252",
+        "role": "container",
+        "delta": 428,
+        "dx": 0,
+        "dy": 0,
+        "dw": 428,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:108084",
+        "name": "Frame 427325266",
+        "role": "container",
+        "delta": 428,
+        "dx": 428,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:108085",
+        "name": "Frame 427325261",
+        "role": "container",
+        "delta": 428,
+        "dx": 428,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:108086",
+        "name": "Frame 427325238",
+        "role": "container",
+        "delta": 428,
+        "dx": 428,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:108087",
+        "name": "Ví Dụ: Thứ 3",
+        "role": "text",
+        "delta": 428,
+        "dx": 428,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:108088",
+        "name": "Frame 427325260",
+        "role": "container",
+        "delta": 428,
+        "dx": 428,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:108089",
+        "name": "COLOR",
+        "role": "icon",
+        "delta": 428,
+        "dx": 428,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:108090",
+        "name": "Frame 427325258",
+        "role": "icon",
+        "delta": 428,
+        "dx": 428,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:108092",
+        "name": "Frame 427325260",
+        "role": "container",
+        "delta": 428,
+        "dx": 428,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:108093",
+        "name": "Frame 427325252",
+        "role": "container",
+        "delta": 428,
+        "dx": 428,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:108094",
+        "name": "Frame 427325272",
+        "role": "container",
+        "delta": 428,
+        "dx": 428,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:108095",
+        "name": "Union",
+        "role": "icon",
+        "delta": 428,
+        "dx": 428,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:108096",
+        "name": "Kéo thả thẻ",
+        "role": "text",
+        "delta": 428,
+        "dx": 428,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:108097",
+        "name": "Hiểu thị lúc kéo",
+        "role": "container",
+        "delta": 428,
+        "dx": 428,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:108098",
+        "name": "Add New Bar · Nhập tiêu đề mục mới",
+        "role": "instance",
+        "delta": 428,
+        "dx": 428,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:108098;5056:365853",
+        "name": "Placeholder",
+        "role": "text",
+        "delta": 428,
+        "dx": 428,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:108098;5056:365854",
+        "name": "Action Button",
+        "role": "icon",
+        "delta": 428,
+        "dx": 428,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:108107",
+        "name": "Frame 427325260",
+        "role": "container",
+        "delta": 35.98,
+        "dx": 0.09,
+        "dy": -19.97,
+        "dw": 35.98,
+        "dh": 20.25,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:108100",
+        "name": "Frame 427325261",
+        "role": "container",
+        "delta": 22.7,
+        "dx": 0,
+        "dy": -21.38,
+        "dw": 1.88,
+        "dh": 22.7,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:108101",
+        "name": "Frame 427325238",
+        "role": "container",
+        "delta": 21.26,
+        "dx": 0,
+        "dy": -19.91,
+        "dw": 0.94,
+        "dh": 21.26,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:108108",
+        "name": "Frame 427325259",
+        "role": "container",
+        "delta": 19.65,
+        "dx": 0.09,
+        "dy": -18.51,
+        "dw": 7.63,
+        "dh": 19.65,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:108126",
+        "name": "Frame 427325260",
+        "role": "container",
+        "delta": 19.65,
+        "dx": 0.08,
+        "dy": -18.5,
+        "dw": 7.63,
+        "dh": 19.65,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:108144",
+        "name": "Frame 427325261",
+        "role": "container",
+        "delta": 19.65,
+        "dx": 0.09,
+        "dy": -18.51,
+        "dw": 7.63,
+        "dh": 19.65,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:108162",
+        "name": "Frame 427325262",
+        "role": "container",
+        "delta": 19.65,
+        "dx": 0.08,
+        "dy": -18.5,
+        "dw": 7.63,
+        "dh": 19.65,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:108180",
+        "name": "Frame 427325263",
+        "role": "container",
+        "delta": 19.65,
+        "dx": 0.08,
+        "dy": -18.51,
+        "dw": 7.63,
+        "dh": 19.65,
+        "limit": 2.5,
+        "textDriven": true
+      }
+    ],
+    "maxDelta": 428,
+    "over": [
+      {
+        "id": "4056:108083",
+        "name": "Frame 427325252",
+        "role": "container",
+        "delta": 428,
+        "dx": 0,
+        "dy": 0,
+        "dw": 428,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:108084",
+        "name": "Frame 427325266",
+        "role": "container",
+        "delta": 428,
+        "dx": 428,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:108085",
+        "name": "Frame 427325261",
+        "role": "container",
+        "delta": 428,
+        "dx": 428,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:108086",
+        "name": "Frame 427325238",
+        "role": "container",
+        "delta": 428,
+        "dx": 428,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:108087",
+        "name": "Ví Dụ: Thứ 3",
+        "role": "text",
+        "delta": 428,
+        "dx": 428,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:108088",
+        "name": "Frame 427325260",
+        "role": "container",
+        "delta": 428,
+        "dx": 428,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:108089",
+        "name": "COLOR",
+        "role": "icon",
+        "delta": 428,
+        "dx": 428,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:108090",
+        "name": "Frame 427325258",
+        "role": "icon",
+        "delta": 428,
+        "dx": 428,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:108092",
+        "name": "Frame 427325260",
+        "role": "container",
+        "delta": 428,
+        "dx": 428,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:108093",
+        "name": "Frame 427325252",
+        "role": "container",
+        "delta": 428,
+        "dx": 428,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:108094",
+        "name": "Frame 427325272",
+        "role": "container",
+        "delta": 428,
+        "dx": 428,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:108095",
+        "name": "Union",
+        "role": "icon",
+        "delta": 428,
+        "dx": 428,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:108096",
+        "name": "Kéo thả thẻ",
+        "role": "text",
+        "delta": 428,
+        "dx": 428,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:108097",
+        "name": "Hiểu thị lúc kéo",
+        "role": "container",
+        "delta": 428,
+        "dx": 428,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:108098",
+        "name": "Add New Bar · Nhập tiêu đề mục mới",
+        "role": "instance",
+        "delta": 428,
+        "dx": 428,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:108098;5056:365853",
+        "name": "Placeholder",
+        "role": "text",
+        "delta": 428,
+        "dx": 428,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:108098;5056:365854",
+        "name": "Action Button",
+        "role": "icon",
+        "delta": 428,
+        "dx": 428,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:108107",
+        "name": "Frame 427325260",
+        "role": "container",
+        "delta": 35.98,
+        "dx": 0.09,
+        "dy": -19.97,
+        "dw": 35.98,
+        "dh": 20.25,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:108100",
+        "name": "Frame 427325261",
+        "role": "container",
+        "delta": 22.7,
+        "dx": 0,
+        "dy": -21.38,
+        "dw": 1.88,
+        "dh": 22.7,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:108101",
+        "name": "Frame 427325238",
+        "role": "container",
+        "delta": 21.26,
+        "dx": 0,
+        "dy": -19.91,
+        "dw": 0.94,
+        "dh": 21.26,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:108108",
+        "name": "Frame 427325259",
+        "role": "container",
+        "delta": 19.65,
+        "dx": 0.09,
+        "dy": -18.51,
+        "dw": 7.63,
+        "dh": 19.65,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:108126",
+        "name": "Frame 427325260",
+        "role": "container",
+        "delta": 19.65,
+        "dx": 0.08,
+        "dy": -18.5,
+        "dw": 7.63,
+        "dh": 19.65,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:108144",
+        "name": "Frame 427325261",
+        "role": "container",
+        "delta": 19.65,
+        "dx": 0.09,
+        "dy": -18.51,
+        "dw": 7.63,
+        "dh": 19.65,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:108162",
+        "name": "Frame 427325262",
+        "role": "container",
+        "delta": 19.65,
+        "dx": 0.08,
+        "dy": -18.5,
+        "dw": 7.63,
+        "dh": 19.65,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:108180",
+        "name": "Frame 427325263",
+        "role": "container",
+        "delta": 19.65,
+        "dx": 0.08,
+        "dy": -18.51,
+        "dw": 7.63,
+        "dh": 19.65,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:108110",
+        "name": "Frame 427325250",
+        "role": "container",
+        "delta": 17.97,
+        "dx": 0.09,
+        "dy": -16.61,
+        "dw": 0.79,
+        "dh": 17.97,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:108119",
+        "name": "Frame 1171274962",
+        "role": "container",
+        "delta": 17.97,
+        "dx": 0.09,
+        "dy": -16.61,
+        "dw": 0.67,
+        "dh": 17.97,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:108120",
+        "name": "Hẹn lớp chuẩn bị khai giảng",
+        "role": "text",
+        "delta": 17.97,
+        "dx": 0.09,
+        "dy": -16.61,
+        "dw": 0.67,
+        "dh": 17.97,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:108128",
+        "name": "Frame 427325250",
+        "role": "container",
+        "delta": 17.97,
+        "dx": 0.08,
+        "dy": -16.62,
+        "dw": 0.79,
+        "dh": 17.97,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:108137",
+        "name": "Frame 1171274962",
+        "role": "container",
+        "delta": 17.97,
+        "dx": 0.09,
+        "dy": -16.61,
+        "dw": 0.67,
+        "dh": 17.97,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:108138",
+        "name": "Hẹn lớp chuẩn bị khai giảng",
+        "role": "text",
+        "delta": 17.97,
+        "dx": 0.09,
+        "dy": -16.61,
+        "dw": 0.67,
+        "dh": 17.97,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:108146",
+        "name": "Frame 427325250",
+        "role": "container",
+        "delta": 17.97,
+        "dx": 0.09,
+        "dy": -16.61,
+        "dw": 0.79,
+        "dh": 17.97,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:108155",
+        "name": "Frame 1171274962",
+        "role": "container",
+        "delta": 17.97,
+        "dx": 0.08,
+        "dy": -16.62,
+        "dw": 0.67,
+        "dh": 17.97,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:108156",
+        "name": "Hẹn lớp chuẩn bị khai giảng",
+        "role": "text",
+        "delta": 17.97,
+        "dx": 0.08,
+        "dy": -16.62,
+        "dw": 0.67,
+        "dh": 17.97,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:108164",
+        "name": "Frame 427325250",
+        "role": "container",
+        "delta": 17.97,
+        "dx": 0.08,
+        "dy": -16.61,
+        "dw": 0.79,
+        "dh": 17.97,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:108173",
+        "name": "Frame 1171274962",
+        "role": "container",
+        "delta": 17.97,
+        "dx": 0.09,
+        "dy": -16.61,
+        "dw": 0.67,
+        "dh": 17.97,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:108174",
+        "name": "Hẹn lớp chuẩn bị khai giảng",
+        "role": "text",
+        "delta": 17.97,
+        "dx": 0.09,
+        "dy": -16.61,
+        "dw": 0.67,
+        "dh": 17.97,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:108182",
+        "name": "Frame 427325250",
+        "role": "container",
+        "delta": 17.97,
+        "dx": 0.08,
+        "dy": -16.62,
+        "dw": 0.79,
+        "dh": 17.97,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:108191",
+        "name": "Frame 1171274962",
+        "role": "container",
+        "delta": 17.97,
+        "dx": 0.08,
+        "dy": -16.62,
+        "dw": 0.67,
+        "dh": 17.97,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:108192",
+        "name": "Hẹn lớp chuẩn bị khai giảng",
+        "role": "text",
+        "delta": 17.97,
+        "dx": 0.08,
+        "dy": -16.62,
+        "dw": 0.67,
+        "dh": 17.97,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:108122",
+        "name": "Frame 427325248",
+        "role": "container",
+        "delta": 17.96,
+        "dx": 0.09,
+        "dy": -16.61,
+        "dw": 1.1,
+        "dh": 17.96,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:108140",
+        "name": "Frame 427325248",
+        "role": "container",
+        "delta": 17.96,
+        "dx": 0.08,
+        "dy": -16.61,
+        "dw": 1.1,
+        "dh": 17.96,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:108158",
+        "name": "Frame 427325248",
+        "role": "container",
+        "delta": 17.96,
+        "dx": 0.09,
+        "dy": -16.61,
+        "dw": 1.1,
+        "dh": 17.96,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:108176",
+        "name": "Frame 427325248",
+        "role": "container",
+        "delta": 17.96,
+        "dx": 0.08,
+        "dy": -16.62,
+        "dw": 1.1,
+        "dh": 17.96,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:108194",
+        "name": "Frame 427325248",
+        "role": "container",
+        "delta": 17.96,
+        "dx": 0.09,
+        "dy": -16.61,
+        "dw": 1.1,
+        "dh": 17.96,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:108121",
+        "name": "Giới thiệu về lớp học, bài học, và cách làm bài tập về nhà",
+        "role": "text",
+        "delta": 17.94,
+        "dx": 0.09,
+        "dy": -16.62,
+        "dw": 1.77,
+        "dh": 17.94,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:108139",
+        "name": "Giới thiệu về lớp học, bài học, và cách làm bài tập về nhà",
+        "role": "text",
+        "delta": 17.94,
+        "dx": 0.09,
+        "dy": -16.61,
+        "dw": 1.77,
+        "dh": 17.94,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:108157",
+        "name": "Giới thiệu về lớp học, bài học, và cách làm bài tập về nhà",
+        "role": "text",
+        "delta": 17.94,
+        "dx": 0.08,
+        "dy": -16.62,
+        "dw": 1.77,
+        "dh": 17.94,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:108175",
+        "name": "Giới thiệu về lớp học, bài học, và cách làm bài tập về nhà",
+        "role": "text",
+        "delta": 17.94,
+        "dx": 0.09,
+        "dy": -16.61,
+        "dw": 1.77,
+        "dh": 17.94,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:108193",
+        "name": "Giới thiệu về lớp học, bài học, và cách làm bài tập về nhà",
+        "role": "text",
+        "delta": 17.94,
+        "dx": 0.08,
+        "dy": -16.61,
+        "dw": 1.77,
+        "dh": 17.94,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:108118",
+        "name": "Frame 1171274963",
+        "role": "container",
+        "delta": 17.9,
+        "dx": 0.09,
+        "dy": -16.61,
+        "dw": 2.99,
+        "dh": 17.9,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:108136",
+        "name": "Frame 1171274963",
+        "role": "container",
+        "delta": 17.9,
+        "dx": 0.09,
+        "dy": -16.61,
+        "dw": 2.99,
+        "dh": 17.9,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:108154",
+        "name": "Frame 1171274963",
+        "role": "container",
+        "delta": 17.9,
+        "dx": 0.08,
+        "dy": -16.62,
+        "dw": 2.99,
+        "dh": 17.9,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:108172",
+        "name": "Frame 1171274963",
+        "role": "container",
+        "delta": 17.9,
+        "dx": 0.09,
+        "dy": -16.61,
+        "dw": 2.99,
+        "dh": 17.9,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:108190",
+        "name": "Frame 1171274963",
+        "role": "container",
+        "delta": 17.9,
+        "dx": 0.08,
+        "dy": -16.62,
+        "dw": 2.99,
+        "dh": 17.9,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:108109",
+        "name": "Frame 427325251",
+        "role": "container",
+        "delta": 17.79,
+        "dx": 0.09,
+        "dy": -16.61,
+        "dw": 6.47,
+        "dh": 17.79,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:108127",
+        "name": "Frame 427325251",
+        "role": "container",
+        "delta": 17.79,
+        "dx": 0.08,
+        "dy": -16.62,
+        "dw": 6.47,
+        "dh": 17.79,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:108145",
+        "name": "Frame 427325251",
+        "role": "container",
+        "delta": 17.79,
+        "dx": 0.09,
+        "dy": -16.61,
+        "dw": 6.47,
+        "dh": 17.79,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:108163",
+        "name": "Frame 427325251",
+        "role": "container",
+        "delta": 17.79,
+        "dx": 0.08,
+        "dy": -16.61,
+        "dw": 6.47,
+        "dh": 17.79,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:108181",
+        "name": "Frame 427325251",
+        "role": "container",
+        "delta": 17.79,
+        "dx": 0.08,
+        "dy": -16.62,
+        "dw": 6.47,
+        "dh": 17.79,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:108112",
+        "name": "Frame 427325249",
+        "role": "container",
+        "delta": 12.75,
+        "dx": 0.09,
+        "dy": -11.4,
+        "dw": 1.3,
+        "dh": 12.75,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:108130",
+        "name": "Frame 427325249",
+        "role": "container",
+        "delta": 12.75,
+        "dx": 0.08,
+        "dy": -11.39,
+        "dw": 1.3,
+        "dh": 12.75,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:108148",
+        "name": "Frame 427325249",
+        "role": "container",
+        "delta": 12.75,
+        "dx": 0.09,
+        "dy": -11.39,
+        "dw": 1.3,
+        "dh": 12.75,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:108166",
+        "name": "Frame 427325249",
+        "role": "container",
+        "delta": 12.75,
+        "dx": 0.08,
+        "dy": -11.39,
+        "dw": 1.3,
+        "dh": 12.75,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:108184",
+        "name": "Frame 427325249",
+        "role": "container",
+        "delta": 12.75,
+        "dx": 0.09,
+        "dy": -11.39,
+        "dw": 1.3,
+        "dh": 12.75,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:108117",
+        "name": "Huỳnh Thơ và 3 người khác",
+        "role": "text",
+        "delta": 9.82,
+        "dx": 0.08,
+        "dy": -8.47,
+        "dw": 1.33,
+        "dh": 9.82,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:108135",
+        "name": "Huỳnh Thơ và 3 người khác",
+        "role": "text",
+        "delta": 9.82,
+        "dx": 0.09,
+        "dy": -8.46,
+        "dw": 1.33,
+        "dh": 9.82,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:108153",
+        "name": "Huỳnh Thơ và 3 người khác",
+        "role": "text",
+        "delta": 9.82,
+        "dx": 0.09,
+        "dy": -8.46,
+        "dw": 1.33,
+        "dh": 9.82,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:108171",
+        "name": "Huỳnh Thơ và 3 người khác",
+        "role": "text",
+        "delta": 9.82,
+        "dx": 0.08,
+        "dy": -8.46,
+        "dw": 1.33,
+        "dh": 9.82,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:108189",
+        "name": "Huỳnh Thơ và 3 người khác",
+        "role": "text",
+        "delta": 9.82,
+        "dx": 0.09,
+        "dy": -8.46,
+        "dw": 1.33,
+        "dh": 9.82,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:108123",
+        "name": "Atom/ID Badge",
+        "role": "instance",
+        "delta": 5.51,
+        "dx": 0.09,
+        "dy": -4.16,
+        "dw": 1.48,
+        "dh": 5.51,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:108141",
+        "name": "Atom/ID Badge",
+        "role": "instance",
+        "delta": 5.51,
+        "dx": 0.08,
+        "dy": -4.16,
+        "dw": 1.48,
+        "dh": 5.51,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:108159",
+        "name": "Atom/ID Badge",
+        "role": "instance",
+        "delta": 5.51,
+        "dx": 0.09,
+        "dy": -4.16,
+        "dw": 1.48,
+        "dh": 5.51,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:108177",
+        "name": "Atom/ID Badge",
+        "role": "instance",
+        "delta": 5.51,
+        "dx": 0.08,
+        "dy": -4.16,
+        "dw": 1.48,
+        "dh": 5.51,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:108195",
+        "name": "Atom/ID Badge",
+        "role": "instance",
+        "delta": 5.51,
+        "dx": 0.09,
+        "dy": -4.16,
+        "dw": 1.48,
+        "dh": 5.51,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:108102",
+        "name": "Ví Dụ: Thứ 3",
+        "role": "text",
+        "delta": 5.09,
+        "dx": 0.04,
+        "dy": -4.44,
+        "dw": 1.13,
+        "dh": 5.09,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:108103",
+        "name": "Frame 427325260",
+        "role": "container",
+        "delta": 4.95,
+        "dx": -2.8,
+        "dy": -3.43,
+        "dw": 4.25,
+        "dh": 4.95,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:108111",
+        "name": "Thời gian lịch hẹn",
+        "role": "instance",
+        "delta": 4.11,
+        "dx": 0.09,
+        "dy": -2.75,
+        "dw": 1.22,
+        "dh": 4.11,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:108129",
+        "name": "Thời gian lịch hẹn",
+        "role": "instance",
+        "delta": 4.11,
+        "dx": 0.08,
+        "dy": -2.76,
+        "dw": 1.22,
+        "dh": 4.11,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:108147",
+        "name": "Thời gian lịch hẹn",
+        "role": "instance",
+        "delta": 4.11,
+        "dx": 0.09,
+        "dy": -2.75,
+        "dw": 1.22,
+        "dh": 4.11,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:108165",
+        "name": "Thời gian lịch hẹn",
+        "role": "instance",
+        "delta": 4.11,
+        "dx": 0.08,
+        "dy": -2.76,
+        "dw": 1.22,
+        "dh": 4.11,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:108183",
+        "name": "Thời gian lịch hẹn",
+        "role": "instance",
+        "delta": 4.11,
+        "dx": 0.08,
+        "dy": -2.76,
+        "dw": 1.22,
+        "dh": 4.11,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:108123;2200:30227",
+        "name": "ID",
+        "role": "text",
+        "delta": 4.05,
+        "dx": 0.08,
+        "dy": -2.7,
+        "dw": 1.03,
+        "dh": 4.05,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:108141;2200:30227",
+        "name": "ID",
+        "role": "text",
+        "delta": 4.05,
+        "dx": 0.09,
+        "dy": -2.69,
+        "dw": 1.03,
+        "dh": 4.05,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:108159;2200:30227",
+        "name": "ID",
+        "role": "text",
+        "delta": 4.05,
+        "dx": 0.09,
+        "dy": -2.69,
+        "dw": 1.03,
+        "dh": 4.05,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:108177;2200:30227",
+        "name": "ID",
+        "role": "text",
+        "delta": 4.05,
+        "dx": 0.08,
+        "dy": -2.7,
+        "dw": 1.03,
+        "dh": 4.05,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:108195;2200:30227",
+        "name": "ID",
+        "role": "text",
+        "delta": 4.05,
+        "dx": 0.09,
+        "dy": -2.69,
+        "dw": 1.03,
+        "dh": 4.05,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:108111;1877:9115",
+        "name": "Ngày mai",
+        "role": "text",
+        "delta": 3.26,
+        "dx": 0.09,
+        "dy": -1.9,
+        "dw": 1,
+        "dh": 3.26,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:108129;1877:9117",
+        "name": "Hôm qua",
+        "role": "text",
+        "delta": 3.2,
+        "dx": 0.08,
+        "dy": -1.84,
+        "dw": 1,
+        "dh": 3.2,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:108147;1877:9113",
+        "name": "Hôm nay",
+        "role": "text",
+        "delta": 3.14,
+        "dx": 0.08,
+        "dy": -1.78,
+        "dw": 1,
+        "dh": 3.14,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:108165;1877:9113",
+        "name": "Hôm nay",
+        "role": "text",
+        "delta": 3.14,
+        "dx": 0.09,
+        "dy": -1.78,
+        "dw": 1,
+        "dh": 3.14,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:108183;1877:9113",
+        "name": "Hôm nay",
+        "role": "text",
+        "delta": 3.14,
+        "dx": 0.08,
+        "dy": -1.77,
+        "dw": 1,
+        "dh": 3.14,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:108104",
+        "name": "COLOR",
+        "role": "icon",
+        "delta": 2.8,
+        "dx": -2.8,
+        "dy": 0.08,
+        "dw": 1.49,
+        "dh": 1.49,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:108113",
+        "name": "Frame 1171274956",
+        "role": "container",
+        "delta": 2.65,
+        "dx": 0.09,
+        "dy": -1.29,
+        "dw": 1.14,
+        "dh": 2.65,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:108131",
+        "name": "Frame 1171274956",
+        "role": "container",
+        "delta": 2.65,
+        "dx": 0.08,
+        "dy": -1.29,
+        "dw": 1.14,
+        "dh": 2.65,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:108149",
+        "name": "Frame 1171274956",
+        "role": "container",
+        "delta": 2.65,
+        "dx": 0.09,
+        "dy": -1.29,
+        "dw": 1.14,
+        "dh": 2.65,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:108167",
+        "name": "Frame 1171274956",
+        "role": "container",
+        "delta": 2.65,
+        "dx": 0.08,
+        "dy": -1.29,
+        "dw": 1.14,
+        "dh": 2.65,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:108185",
+        "name": "Frame 1171274956",
+        "role": "container",
+        "delta": 2.65,
+        "dx": 0.09,
+        "dy": -1.29,
+        "dw": 1.14,
+        "dh": 2.65,
+        "limit": 2.5,
+        "textDriven": true
+      }
+    ]
+  },
+  "failures": [
+    "98 elements are off by more than their limit (1px, 2.5px for text-driven; worst 428px)."
+  ],
+  "url": "http://localhost:3000/bang-chia-lich-hen/dang-keo-cum-the-dk",
+  "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
+  "consoleErrors": [],
+  "rootFound": true
+}

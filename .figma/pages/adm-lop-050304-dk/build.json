@@ -1,0 +1,34 @@
+{
+  "route": "/lop-hoc/nhat-ky/lich-hen-dk",
+  "pageFile": "components/figma/adm-lop-050304-dk/index.tsx",
+  "docFile": "docs/pages/lop-hoc/nhat-ky/lich-hen-dk.md",
+  "sections": [
+    {
+      "nodeId": "4056:118932",
+      "component": "Mainworkspace",
+      "file": "components/figma/adm-lop-050304-dk/Mainworkspace.tsx"
+    },
+    {
+      "nodeId": "4056:119009",
+      "component": "SidebarRail",
+      "file": "components/figma/adm-lop-050304-dk/SidebarRail.tsx"
+    },
+    {
+      "nodeId": "4056:119102",
+      "component": "Header28",
+      "file": "components/figma/shared/Header28.tsx"
+    }
+  ],
+  "idAlias": {
+    "4056:119102": "4056:112373",
+    "4056:119103": "4056:112374",
+    "4056:119150": "4056:112421",
+    "I4056:119150;2008:30986": "I4056:112421;2008:30986",
+    "I4056:119150;2008:31747": "I4056:112421;2008:31747",
+    "I4056:119150;2008:31748": "I4056:112421;2008:31748",
+    "I4056:119150;1391:17264": "I4056:112421;1391:17264",
+    "I4056:119150;1391:17266": "I4056:112421;1391:17266",
+    "I4056:119150;1391:17268": "I4056:112421;1391:17268",
+    "I4056:119150;1391:17270": "I4056:112421;1391:17270"
+  }
+}

@@ -1,0 +1,680 @@
+{
+  "pass": false,
+  "thresholds": {
+    "maxPixelDiffPercent": 0.5,
+    "maxBoxDelta": 1,
+    "maxTextBoxDelta": 2.5,
+    "colorThreshold": 0.1,
+    "aaRadius": 1,
+    "subpixel": true,
+    "maxTextNodeDiffPercent": 35
+  },
+  "pixels": {
+    "width": 980,
+    "height": 920,
+    "mismatched": 28448,
+    "percent": 3.155,
+    "shapePercent": 0.729,
+    "textPercent": 8.466,
+    "sizeMismatch": false
+  },
+  "textNodes": [
+    {
+      "id": "I6015:65266;2514:153371;1048:1230",
+      "name": "Button",
+      "pixels": 204,
+      "percent": 21.8
+    },
+    {
+      "id": "6015:65264",
+      "name": "Thu gọn",
+      "pixels": 172,
+      "percent": 15.6
+    },
+    {
+      "id": "6015:64990",
+      "name": "ÔN TẬP HK I – HK II (BUỔI 1)",
+      "pixels": 604,
+      "percent": 13.5
+    },
+    {
+      "id": "6015:65206",
+      "name": "Mô tả",
+      "pixels": 17168,
+      "percent": 12.8
+    },
+    {
+      "id": "6015:65192",
+      "name": "Ví dụ bài học 3",
+      "pixels": 258,
+      "percent": 11.2
+    },
+    {
+      "id": "I6015:65196;3667:80653",
+      "name": "Thời gian",
+      "pixels": 171,
+      "percent": 8.4
+    },
+    {
+      "id": "6015:65190",
+      "name": "90 phút",
+      "pixels": 72,
+      "percent": 7.6
+    },
+    {
+      "id": "6015:65187",
+      "name": "2 buổi",
+      "pixels": 54,
+      "percent": 6.9
+    },
+    {
+      "id": "6015:65119",
+      "name": "Mô tả",
+      "pixels": 2514,
+      "percent": 5.5
+    },
+    {
+      "id": "6015:65177",
+      "name": "Xem thêm",
+      "pixels": 63,
+      "percent": 4.5
+    },
+    {
+      "id": "I6015:64992;2808:42802",
+      "name": "Badge",
+      "pixels": 48,
+      "percent": 3.5
+    },
+    {
+      "id": "I6015:65003;868:21315",
+      "name": "Nội dung",
+      "pixels": 33,
+      "percent": 2.1
+    },
+    {
+      "id": "6015:65033",
+      "name": "Mô tả",
+      "pixels": 386,
+      "percent": 1.7
+    },
+    {
+      "id": "I6015:65000;497:25617",
+      "name": "Nội dung",
+      "pixels": 20,
+      "percent": 1.3
+    },
+    {
+      "id": "I6015:65002;868:21315",
+      "name": "Nội dung",
+      "pixels": 21,
+      "percent": 1.2
+    }
+  ],
+  "regions": [
+    {
+      "x": 16,
+      "y": 824,
+      "width": 952,
+      "height": 16,
+      "pixels": 1918,
+      "node": {
+        "id": "6015:65179",
+        "name": "Ví dụ bài học 3 · Xem · mở rộng",
+        "role": "container"
+      }
+    },
+    {
+      "x": 16,
+      "y": 568,
+      "width": 952,
+      "height": 16,
+      "pixels": 1885,
+      "node": {
+        "id": "6015:65179",
+        "name": "Ví dụ bài học 3 · Xem · mở rộng",
+        "role": "container"
+      }
+    },
+    {
+      "x": 16,
+      "y": 552,
+      "width": 952,
+      "height": 8,
+      "pixels": 1875,
+      "node": {
+        "id": "6015:65092",
+        "name": "Ví dụ bài học 2 · Xem · thu gọn",
+        "role": "container"
+      }
+    },
+    {
+      "x": 872,
+      "y": 896,
+      "width": 96,
+      "height": 16,
+      "pixels": 351,
+      "node": {
+        "id": "I6015:65266;2514:153371",
+        "name": "Atom/Button",
+        "role": "instance"
+      }
+    },
+    {
+      "x": 872,
+      "y": 872,
+      "width": 96,
+      "height": 8,
+      "pixels": 342,
+      "node": {
+        "id": "I6015:65266;2514:153371",
+        "name": "Atom/Button",
+        "role": "instance"
+      }
+    },
+    {
+      "x": 32,
+      "y": 592,
+      "width": 16,
+      "height": 24,
+      "pixels": 54,
+      "node": {
+        "id": "6015:65186",
+        "name": "Icon · Lịch",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 824,
+      "y": 608,
+      "width": 24,
+      "height": 24,
+      "pixels": 49,
+      "node": {
+        "id": "6015:65195",
+        "name": "Icon · Thời gian",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 96,
+      "y": 592,
+      "width": 24,
+      "height": 24,
+      "pixels": 40,
+      "node": {
+        "id": "6015:65189",
+        "name": "Icon · Thời gian",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 80,
+      "y": 800,
+      "width": 16,
+      "height": 16,
+      "pixels": 39,
+      "node": {
+        "id": "6015:65265",
+        "name": "Chevron",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 96,
+      "y": 528,
+      "width": 16,
+      "height": 8,
+      "pixels": 9,
+      "node": {
+        "id": "6015:65178",
+        "name": "Chevron",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 56,
+      "y": 816,
+      "width": 16,
+      "height": 8,
+      "pixels": 8,
+      "node": {
+        "id": "6015:65179",
+        "name": "Ví dụ bài học 3 · Xem · mở rộng",
+        "role": "container"
+      }
+    }
+  ],
+  "boxes": {
+    "measured": 176,
+    "missing": [],
+    "withinThreshold": 167,
+    "buckets": {
+      "≤0.5px": 124,
+      "≤1px": 125,
+      "≤2px": 167,
+      "≤4px": 176,
+      ">4px": 0
+    },
+    "worst": [
+      {
+        "id": "6015:64984",
+        "name": "Body",
+        "role": "container",
+        "delta": 4,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 4,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6015:64985",
+        "name": "Nội dung chính",
+        "role": "container",
+        "delta": 4,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 4,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6015:65005",
+        "name": "Frame 427321967",
+        "role": "container",
+        "delta": 4,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 4,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6015:65263",
+        "name": "Xem thêm / Thu gọn",
+        "role": "container",
+        "delta": 4,
+        "dx": 0,
+        "dy": 4,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6015:65264",
+        "name": "Thu gọn",
+        "role": "text",
+        "delta": 4,
+        "dx": 0,
+        "dy": 4,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6015:65265",
+        "name": "Chevron",
+        "role": "icon",
+        "delta": 4,
+        "dx": 0,
+        "dy": 4,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6015:65266",
+        "name": "Popup/Footer",
+        "role": "instance",
+        "delta": 4,
+        "dx": 0,
+        "dy": 4,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6015:65266;2514:153371",
+        "name": "Atom/Button",
+        "role": "instance",
+        "delta": 4,
+        "dx": 0,
+        "dy": 4,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6015:65266;2514:153371;1048:1230",
+        "name": "Button",
+        "role": "text",
+        "delta": 4,
+        "dx": 0,
+        "dy": 4,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6015:65092",
+        "name": "Ví dụ bài học 2 · Xem · thu gọn",
+        "role": "container",
+        "delta": 2,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 2,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6015:65110",
+        "name": "Action Cards Accordion List",
+        "role": "container",
+        "delta": 2,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 2,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6015:65111",
+        "name": "Mô tả",
+        "role": "container",
+        "delta": 2,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 2,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6015:65112",
+        "name": "HorizontalBorder",
+        "role": "container",
+        "delta": 2,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 2,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6015:65113",
+        "name": "Container",
+        "role": "container",
+        "delta": 2,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 2,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6015:65114",
+        "name": "Container",
+        "role": "container",
+        "delta": 2,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 2,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6015:65115",
+        "name": "Frame 1171274945",
+        "role": "container",
+        "delta": 2,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 2,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6015:65116",
+        "name": "HorizontalBorder",
+        "role": "container",
+        "delta": 2,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 2,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6015:65117",
+        "name": "Container",
+        "role": "container",
+        "delta": 2,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 2,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6015:65118",
+        "name": "Container",
+        "role": "container",
+        "delta": 2,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 2,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6015:65119",
+        "name": "Mô tả",
+        "role": "text",
+        "delta": 2,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 2,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6015:65176",
+        "name": "Xem thêm / Thu gọn",
+        "role": "container",
+        "delta": 2,
+        "dx": 0,
+        "dy": 2,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6015:65177",
+        "name": "Xem thêm",
+        "role": "text",
+        "delta": 2,
+        "dx": 0,
+        "dy": 2,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6015:65178",
+        "name": "Chevron",
+        "role": "icon",
+        "delta": 2,
+        "dx": 0,
+        "dy": 2,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6015:65179",
+        "name": "Ví dụ bài học 3 · Xem · mở rộng",
+        "role": "container",
+        "delta": 2,
+        "dx": 0,
+        "dy": 2,
+        "dw": 0,
+        "dh": 2,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6015:65180",
+        "name": "Section Title: Về Training tại PLS",
+        "role": "container",
+        "delta": 2,
+        "dx": 0,
+        "dy": 2,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      }
+    ],
+    "maxDelta": 4,
+    "over": [
+      {
+        "id": "6015:64984",
+        "name": "Body",
+        "role": "container",
+        "delta": 4,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 4,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6015:64985",
+        "name": "Nội dung chính",
+        "role": "container",
+        "delta": 4,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 4,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6015:65005",
+        "name": "Frame 427321967",
+        "role": "container",
+        "delta": 4,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 4,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6015:65263",
+        "name": "Xem thêm / Thu gọn",
+        "role": "container",
+        "delta": 4,
+        "dx": 0,
+        "dy": 4,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6015:65264",
+        "name": "Thu gọn",
+        "role": "text",
+        "delta": 4,
+        "dx": 0,
+        "dy": 4,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6015:65265",
+        "name": "Chevron",
+        "role": "icon",
+        "delta": 4,
+        "dx": 0,
+        "dy": 4,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6015:65266",
+        "name": "Popup/Footer",
+        "role": "instance",
+        "delta": 4,
+        "dx": 0,
+        "dy": 4,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6015:65266;2514:153371",
+        "name": "Atom/Button",
+        "role": "instance",
+        "delta": 4,
+        "dx": 0,
+        "dy": 4,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6015:65266;2514:153371;1048:1230",
+        "name": "Button",
+        "role": "text",
+        "delta": 4,
+        "dx": 0,
+        "dy": 4,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      }
+    ]
+  },
+  "failures": [
+    "0.729% of non-text pixels differ (limit 0.5%).",
+    "9 elements are off by more than their limit (1px, 2.5px for text-driven; worst 4px)."
+  ],
+  "url": "http://localhost:3000/hoc-ky/bai-hoc/popup-chi-tiet-bai-hoc-ban-day-du-dk",
+  "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
+  "consoleErrors": [],
+  "rootFound": true
+}

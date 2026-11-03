@@ -1,0 +1,435 @@
+{
+  "pass": true,
+  "thresholds": {
+    "maxPixelDiffPercent": 0.5,
+    "maxBoxDelta": 1,
+    "maxTextBoxDelta": 2.5,
+    "colorThreshold": 0.1,
+    "aaRadius": 1,
+    "subpixel": true,
+    "maxTextNodeDiffPercent": 35
+  },
+  "pixels": {
+    "width": 1440,
+    "height": 1057,
+    "mismatched": 1715,
+    "percent": 0.113,
+    "shapePercent": 0,
+    "textPercent": 0.711,
+    "sizeMismatch": false
+  },
+  "textNodes": [
+    {
+      "id": "4899:106232",
+      "name": "UHRZEIT",
+      "pixels": 44,
+      "percent": 4.5
+    },
+    {
+      "id": "I4899:106102;3266:53959",
+      "name": "Tiêu đề",
+      "pixels": 104,
+      "percent": 3.6
+    },
+    {
+      "id": "4899:106352",
+      "name": "LEBENSMITTEL",
+      "pixels": 56,
+      "percent": 3.4
+    },
+    {
+      "id": "4899:106272",
+      "name": "EINRICHTUNG",
+      "pixels": 47,
+      "percent": 2.9
+    },
+    {
+      "id": "4899:106312",
+      "name": "WIEDERHOLUNG 3",
+      "pixels": 62,
+      "percent": 2.9
+    },
+    {
+      "id": "4899:106172",
+      "name": "WETTER UND KLIMA",
+      "pixels": 65,
+      "percent": 2.8
+    },
+    {
+      "id": "4899:106372",
+      "name": "WIEDERHOLUNG 2",
+      "pixels": 59,
+      "percent": 2.8
+    },
+    {
+      "id": "4899:106192",
+      "name": "VON FRÜH BIS SPÄT",
+      "pixels": 58,
+      "percent": 2.6
+    },
+    {
+      "id": "4899:106132",
+      "name": "MEINE HOBBYS SIND...",
+      "pixels": 60,
+      "percent": 2.4
+    },
+    {
+      "id": "4899:106152",
+      "name": "ICH KAUFE EINE TOMATE.",
+      "pixels": 66,
+      "percent": 2.3
+    },
+    {
+      "id": "4899:106212",
+      "name": "TAGESABLAUF",
+      "pixels": 37,
+      "percent": 2.3
+    },
+    {
+      "id": "4899:106292",
+      "name": "WOHNUNG",
+      "pixels": 29,
+      "percent": 2.2
+    },
+    {
+      "id": "4899:106252",
+      "name": "WOHNUNGSSUCHE",
+      "pixels": 46,
+      "percent": 2.1
+    },
+    {
+      "id": "4899:106332",
+      "name": "MENGENANGABEN",
+      "pixels": 45,
+      "percent": 2.1
+    },
+    {
+      "id": "4899:106130",
+      "name": "BD105-I",
+      "pixels": 27,
+      "percent": 1.5
+    }
+  ],
+  "regions": [],
+  "boxes": {
+    "measured": 417,
+    "missing": [],
+    "withinThreshold": 417,
+    "buckets": {
+      "≤0.5px": 414,
+      "≤1px": 416,
+      "≤2px": 417,
+      "≤4px": 417,
+      ">4px": 0
+    },
+    "worst": [
+      {
+        "id": "4899:106120",
+        "name": "Lương buổi dạy",
+        "role": "text",
+        "delta": 1.13,
+        "dx": -0.56,
+        "dy": 0,
+        "dw": 1.13,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4899:106391",
+        "name": "Tổng lương",
+        "role": "text",
+        "delta": 0.92,
+        "dx": -0.47,
+        "dy": 0,
+        "dw": 0.92,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4899:106193",
+        "name": "Từ sáng sớm đến đêm muộn",
+        "role": "text",
+        "delta": 0.8,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.8,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4899:106112",
+        "name": "Lớp",
+        "role": "text",
+        "delta": 0.34,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.34,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4899:106387",
+        "name": "Lớp",
+        "role": "text",
+        "delta": 0.34,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.34,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4899:106087",
+        "name": "Heading 2",
+        "role": "container",
+        "delta": 0.22,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.22,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4899:106088",
+        "name": "Lịch sử & lương",
+        "role": "text",
+        "delta": 0.22,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.22,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4899:106333",
+        "name": "Cách nói số lượng",
+        "role": "text",
+        "delta": 0.08,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.08,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4899:106353",
+        "name": "Thực phẩm",
+        "role": "text",
+        "delta": 0.05,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.05,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4915:262619;4901:212421",
+        "name": "Frame 1171274926",
+        "role": "icon",
+        "delta": 0.02,
+        "dx": 0,
+        "dy": -0.02,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4915:262619;4901:212406",
+        "name": "Left: ICS Logo & Toggle",
+        "role": "container",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": -0.01,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4915:262619;4901:212407",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": -0.01,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4915:262619;4901:212408",
+        "name": "Navigation / Sidebar Menu / Light",
+        "role": "icon",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": -0.01,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4915:262619;4901:212420",
+        "name": "v20.07.2026_17:30",
+        "role": "text",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": -0.01,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4899:106098",
+        "name": "Thẻ chỉ số · Số buổi đã dạy",
+        "role": "instance",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.01,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4899:106098;3266:53957",
+        "name": "Frame 1171274980",
+        "role": "container",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.01,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4899:106098;3266:53958",
+        "name": "Frame 1171274979",
+        "role": "container",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.01,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4899:106098;3266:53959",
+        "name": "Tiêu đề",
+        "role": "text",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.01,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4899:106098;3266:54000",
+        "name": "Số liệu",
+        "role": "text",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.01,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4899:106100",
+        "name": "Thẻ chỉ số · Lương KPI",
+        "role": "instance",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.01,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4899:106100;3266:53957",
+        "name": "Frame 1171274980",
+        "role": "container",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.01,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4899:106100;3266:53958",
+        "name": "Frame 1171274979",
+        "role": "container",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.01,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4899:106100;3266:53959",
+        "name": "Tiêu đề",
+        "role": "text",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.01,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4899:106100;3266:53996",
+        "name": "Ô biểu tượng",
+        "role": "icon",
+        "delta": 0.01,
+        "dx": 0.01,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4899:106100;3266:54000",
+        "name": "Số liệu",
+        "role": "text",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.01,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      }
+    ],
+    "maxDelta": 1.13,
+    "over": []
+  },
+  "failures": [],
+  "url": "http://localhost:3000/lich-su-luong/de-xuat-moi-co-the-huy",
+  "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
+  "consoleErrors": [],
+  "rootFound": true
+}

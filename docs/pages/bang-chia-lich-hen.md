@@ -5,7 +5,7 @@
 > **Nguồn:** PLS-ICS T8/2026 ›         ├─ LỊCH HẸN › ADM-LHN-020000 — Bảng chia lịch hẹn (`2371:35868`, file `rRVs5HX0kIHffbS0V40djG`)  
 > **Route:** `/bang-chia-lich-hen`  
 > **Khung thiết kế:** 1440 × 810 px  
-> **Xuất lúc:** 2026-11-02T03:10:19.556Z  
+> **Xuất lúc:** 2026-11-03T03:08:35.579Z  
 > **Spec đầy đủ (giá trị chính xác từng node):** `../../.figma/pages/adm-lhn-020000/page-spec.json`
 
 ## 1. Tổng quan
@@ -28,19 +28,27 @@ Nền trang: `#ffffff`.
 
 | Token | Biến CSS | Giá trị | Trỏ tới | Bộ / mode |
 | --- | --- | --- | --- | --- |
+| `bg/surface` | `--bg-surface` | `#ffffff` | color/neutral/white | Theme · Semantic / Light |
 | `color/border/button` | `--color-border-button` | `#cbd5e1` | color/extended/cbd5e1 | Color Tokens / Light |
 | `color/border/default` | `--color-border-default` | `#e2e8f0` |  | Color Tokens / Light |
 | `color/border/subtle` | `--color-border-subtle` | `#f1f5f9` |  | Color Tokens / Light |
 | `color/brand/orange` | `--color-brand-orange` | `#e65100` |  | Color Tokens / Light |
+| `color/brand/primary` | `--color-brand-primary` | `#e33f64` |  | Color Tokens / Light |
+| `color/extended/0039b3` | `--color-extended-0039b3` | `#0039b3` |  | Color Tokens / Light |
+| `color/extended/253238` | `--color-extended-253238` | `#253238` |  | Color Tokens / Light |
 | `color/extended/cbd5e1` | `--color-extended-cbd5e1` | `#cbd5e1` |  | Color Tokens / Light |
 | `color/extended/cccccc` | `--color-extended-cccccc` | `#cccccc` |  | Color Tokens / Light |
 | `color/extended/ecffed` | `--color-extended-ecffed` | `#ecffed` |  | Color Tokens / Light |
+| `color/extended/eeeeee` | `--color-extended-eeeeee` | `#eeeeee` |  | Color Tokens / Light |
 | `color/extended/effff3` | `--color-extended-effff3` | `#effff3` |  | Color Tokens / Light |
+| `color/extended/f2f4ff` | `--color-extended-f2f4ff` | `#f2f4ff` |  | Color Tokens / Light |
 | `color/extended/f8fafc` | `--color-extended-f8fafc` | `#f8fafc` |  | Color Tokens / Light |
+| `color/extended/f8faff` | `--color-extended-f8faff` | `#f8faff` |  | Color Tokens / Light |
 | `color/extended/fed7aa` | `--color-extended-fed7aa` | `#fed7aa` |  | Color Tokens / Light |
 | `color/extended/ffe2e2` | `--color-extended-ffe2e2` | `#ffe2e2` |  | Color Tokens / Light |
 | `color/extended/fff2f2` | `--color-extended-fff2f2` | `#fff2f2` |  | Color Tokens / Light |
 | `color/extended/fff5ec` | `--color-extended-fff5ec` | `#fff5ec` |  | Color Tokens / Light |
+| `color/extended/fffaf8` | `--color-extended-fffaf8` | `#fffaf8` |  | Color Tokens / Light |
 | `color/neutral/100` | `--color-neutral-100` | `#f5f5f5` |  | Color Tokens / Light |
 | `color/neutral/700` | `--color-neutral-700` | `#3d3d3d` |  | Color Tokens / Light |
 | `color/neutral/900` | `--color-neutral-900` | `#000000` |  | Color Tokens / Light |
@@ -62,6 +70,7 @@ Nền trang: `#ffffff`.
 | `spacing/12` | `--spacing-12` | `12` |  | Number Tokens / Mode 1 |
 | `spacing/4` | `--spacing-4` | `4` |  | Number Tokens / Mode 1 |
 | `spacing/8` | `--spacing-8` | `8` |  | Number Tokens / Mode 1 |
+| `text/on-brand` | `--text-on-brand` | `#ffffff` | color/neutral/white | Theme · Semantic / Light |
 
 **Style Figma đang dùng:**
 
@@ -101,9 +110,9 @@ Nền trang: `#ffffff`.
 
 | Style | Font family | Cỡ / line-height | Độ đậm | Letter-spacing | Màu | Số lần | Ví dụ |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| `Heading/19/SemiBold` | Unbounded | 19 / 29px | 600 | 0 | #3d3d3d | 1 | “Bảng chia lịch hẹn” |
+| `Heading/19/SemiBold` | Unbounded | 19 / 29px | 600 | 0 | #3d3d3d (color/neutral/700) | 1 | “Bảng chia lịch hẹn” |
 | `Body/19/Bold` | Afacad | 19 / 24px | 700 | 0 | #cccccc (color/extended/cccccc) | 1 | “Kéo thả thẻ” |
-| `Body/17/SemiBold` | Afacad | 17 / 21px | 600 | 0 | #ffffff | 3 | “Thứ 2” |
+| `Body/17/SemiBold` | Afacad | 17 / 21px | 600 | 0 | #ffffff (text/on-brand) | 3 | “Thứ 2” |
 | `Body/17/SemiBold` | Afacad | 17 / 21px | 600 | 0 | #334155 (color/text/primary) | 1 | “Thứ 5” |
 | `Body/16/Medium · Title` | Afacad | 16 / 20px | 500 · case title | 0 | #334155 (color/text/primary) | 14 | “Hẹn lớp chuẩn bị khai giảng” |
 | — | Afacad | 16 / 20px | 500 | 0 | #64748b (color/text/secondary) | 5 | “Học Viên” |
@@ -409,7 +418,7 @@ Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí ·
                         - [chữ] “Giáo viên 1” — 67×19 [HUG×HUG] · @ (12, 4) flow · Afacad 15/19px 600 #e65100 (color/brand/orange) · no-wrap · truncate 1 lines `I2371:36054;2200:30227`
                     - [icon] **Cell · Độ ưu tiên** — 132×28 · @ (862, 32) flow · file /figma/assets/477c8654d8e2.svg covers (0, -1) 132×32 `2698:35169`
                     - [icon] **Cell · Trạng thái** — 128×28 · @ (1006, 32) flow · file /figma/assets/291b86d6da35.svg covers (0, -1) 128×32 `2698:35170`
-                  - [khối] **Frame 427321971** — 1156×57 [FILL×HUG] · @ (0, 93) flow · row gap 12 pad 8 8 8 8 align CENTER · bg #fffaf8 · border 0 0 1px 0 solid #f1f5f9 (color/border/subtle) `2371:36057`
+                  - [khối] **Frame 427321971** — 1156×57 [FILL×HUG] · @ (0, 93) flow · row gap 12 pad 8 8 8 8 align CENTER · bg #fffaf8 (color/extended/fffaf8) · border 0 0 1px 0 solid #f1f5f9 (color/border/subtle) `2371:36057`
                     - [instance] **Thời gian lịch hẹn** ⟨Thời gian lịch hẹn: Thời gian=Hôm nay, Size=28H⟩ — 87×31 [FIXED×HUG] · @ (8, 12.5) flow · row gap 10 pad 6 8 6 8 justify CENTER align CENTER · bg #ecffed (color/extended/ecffed) · radius 8px `2371:36058`
                       - [chữ] “Hôm nay” — 53×19 [HUG×HUG] · @ (17, 6) flow · Afacad 15/19px 500 #2d9732 (color/semantic/success) · text-align center · no-wrap `I2371:36058;2200:30037`
                     - [chữ] “Follow khách sau tuần 1” — 180×19 [FIXED×HUG] · @ (107, 18.5) flow · Afacad 15/19px 500 #334155 (color/text/primary) · truncate 1 lines `2371:36059`
@@ -518,10 +527,10 @@ Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí ·
                 - [khối] **Button** — 37×28 [HUG×FIXED] · @ (214, 0) flow · column pad 0 6 0 6 justify CENTER align CENTER · bg #ffffff (color/neutral/white) · radius 6px · border 1px solid #cbd5e1 (color/border/button) `I2371:36128;1391:17486`
                   - [chữ] “Sau” — 23×19 [HUG×HUG] · @ (7, 4.5) flow · Afacad 15/19px 500 #334155 (color/text/primary) · text-align center · no-wrap `I2371:36128;1391:17487`
   - [hình] **Rectangle 5647** — 1440×810 · @ (0, 0) abs · bg rgba(0, 0, 0, 0.75) `2371:36449`
-  - [khối] **Frame 427325271** — 1200×782 · @ (120, 17) abs · column gap 16 pad 0 0 4 0 · bg #eeeeee · radius 16px `2371:36451`
-    - [khối] **Frame 427325239** — 1200×54 [FILL×HUG] · @ (0, 0) flow · column gap 10 pad 12 16 12 16 justify CENTER · bg #ffffff · radius 12px 12px 0 0 `2371:36452`
+  - [khối] **Frame 427325271** — 1200×782 · @ (120, 17) abs · column gap 16 pad 0 0 4 0 · bg #eeeeee (color/extended/eeeeee) · radius 16px `2371:36451`
+    - [khối] **Frame 427325239** — 1200×54 [FILL×HUG] · @ (0, 0) flow · column gap 10 pad 12 16 12 16 justify CENTER · bg #ffffff (bg/surface) · radius 12px 12px 0 0 `2371:36452`
       - [khối] **Frame 427325238** — 1168×30 [FILL×HUG] · @ (16, 12) flow · row space-between align CENTER `2371:36453`
-        - [chữ] “Bảng chia lịch hẹn” — 211×29 [HUG×HUG] · @ (0, 0.5) flow · Unbounded 19/29px 600 #3d3d3d · no-wrap `2371:36454`
+        - [chữ] “Bảng chia lịch hẹn” — 211×29 [HUG×HUG] · @ (0, 0.5) flow · Unbounded 19/29px 600 #3d3d3d (color/neutral/700) · no-wrap `2371:36454`
         - [khối] **Frame 427325237** — 216×30 [HUG×HUG] · @ (952, 0) flow · row gap 12 align CENTER `2371:36455`
           - [instance] **Dropdown** ⟨DD/Molecule/Trigger: Placeholder=Chọn..., Clear=false, Count Value=1, Leading=false, Leading Icon=2015:30465, Count=false, Chevron=true, Value=Trạng thái, Size=XS, State=Default, Content=Value⟩ — 104×30 [HUG×FIXED] · @ (0, 0) flow · row gap 6 pad 0 8 0 12 align CENTER · bg #ffffff (color/neutral/white) · radius 8px · border 1px solid #e2e8f0 (color/border/default) `2371:36456`
             - [khối] **Content** — 60×19 [HUG×HUG] · @ (13, 5.5) flow · row align CENTER · clip `I2371:36456;2015:36007`
@@ -550,15 +559,15 @@ Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí ·
             - [khối] **Container** — 129×20 [HUG×HUG] · @ (12, 8) flow · row `I2371:36466;2177:28927`
               - [chữ] “Giáo Viên (Lịch Họp)” — 129×20 [HUG×HUG] · @ (0, 0) flow · Afacad 16/20px 500 #64748b (color/text/secondary) · text-align center · no-wrap `I2371:36466;2177:28928`
       - [khối] **Frame 427325269** — 1184×660 [FILL×HUG] · @ (16, 48) flow · row gap 16 pad 0 0 8 0 `2371:36467`
-        - [khối] **Frame 427325261** — 350×652 [FIXED×HUG] · @ (0, 0) flow · column gap 12 align CENTER · bg #fff2f2 · radius 12px · shadow 1px 1px 6px 0 rgba(0, 0, 0, 0.15) `2371:36468`
-          - [khối] **Frame 427325243** — 350×40 [FILL×HUG] · @ (0, 0) flow · column gap 10 pad 8 12 8 12 justify CENTER · bg #e33f64 · radius 8px 8px 0 0 `2371:36469`
+        - [khối] **Frame 427325261** — 350×652 [FIXED×HUG] · @ (0, 0) flow · column gap 12 align CENTER · bg #fff2f2 (color/extended/fff2f2) · radius 12px · shadow 1px 1px 6px 0 rgba(0, 0, 0, 0.15) `2371:36468`
+          - [khối] **Frame 427325243** — 350×40 [FILL×HUG] · @ (0, 0) flow · column gap 10 pad 8 12 8 12 justify CENTER · bg #e33f64 (color/brand/primary) · radius 8px 8px 0 0 `2371:36469`
             - [khối] **Frame 427325238** — 326×24 [FILL×HUG] · @ (12, 8) flow · row space-between align CENTER `2371:36470`
-              - [chữ] “Thứ 2” — 39×21 [HUG×HUG] · @ (0, 1.5) flow · Afacad 17/21px 600 #ffffff · no-wrap `2371:36471`
+              - [chữ] “Thứ 2” — 39×21 [HUG×HUG] · @ (0, 1.5) flow · Afacad 17/21px 600 #ffffff (text/on-brand) · no-wrap `2371:36471`
               - [khối] **Frame 427325259** — 56×24 [HUG×HUG] · @ (270, 0) flow · row gap 8 align CENTER `2371:36472`
                 - [icon] **COLOR** ⟨COLOR: Property 1=Bánh xe màu⟩ — 24×24 · @ (0, 0) flow · file /figma/assets/038db230f258.svg covers (-2, -2) 30×30 `2425:104406`
                 - [icon] **Frame 427325258** — 24×24 · @ (32, 0) flow · file /figma/assets/e35bd2e005ae.svg `2371:36474`
           - [khối] **Frame 427325260** — 350×600 · @ (0, 52) flow · column gap 12 pad 0 12 0 12 · clip `2371:36476`
-            - [khối] **Frame 427325252** — 326×135 [FILL×HUG] · @ (12, 0) flow · column gap 10 pad 12 12 8 12 · bg #ffffff · radius 8px · shadow 0 4px 4px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `2371:36477`
+            - [khối] **Frame 427325252** — 326×135 [FILL×HUG] · @ (12, 0) flow · column gap 10 pad 12 12 8 12 · bg #ffffff (bg/surface) · radius 8px · shadow 0 4px 4px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `2371:36477`
               - [khối] **Frame 427325251** — 295×115 [FIXED×HUG] · @ (12, 12) flow · column gap 4 `2371:36478`
                 - [khối] **Frame 427325250** — 295×22 [FILL×HUG] · @ (0, 0) flow · row gap 12 align CENTER `2371:36479`
                   - [instance] **Thời gian lịch hẹn** ⟨Thời gian lịch hẹn: Thời gian=Hôm nay, Size=24H⟩ — 68×22 [FIXED×HUG] · @ (0, 0) flow · column gap 5.45 pad 2 6 2 6 justify CENTER align CENTER · bg #effff3 (color/extended/effff3) · radius 6px · shadow inset 0 0 0 1px #2d9732 · clip `2371:36480`
@@ -598,7 +607,7 @@ Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí ·
                     - [chữ] “Giáo viên 6” — 67×19 [HUG×HUG] · @ (12, 4) flow · Afacad 15/19px 600 #e65100 (color/brand/orange) · no-wrap · truncate 1 lines `I2371:36495;2200:30227`
                   - [icon] **Status lịch hẹn** ⟨Status lịch hẹn: Trạng thái=Chưa xử lý, Size=24, Kiểu=Default⟩ — 24×24 · @ (97, 1.5) flow · file /figma/assets/63316472817e.svg covers (-2, -2) 30×30 `2371:36496`
                   - [icon] **Status Độ ưu tiên** ⟨Status Độ ưu tiên: Mức độ=Ít Quan Trọng, Size=24, Kiểu=Default⟩ — 24×24 · @ (127, 1.5) flow · file /figma/assets/d23851233c2d.svg covers (-2, -2) 30×30 `2371:36497`
-            - [khối] **Frame 427325253** — 326×135 [FILL×HUG] · @ (12, 147) flow · column gap 10 pad 12 12 8 12 · bg #ffffff · radius 8px · shadow 0 4px 4px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `2371:36498`
+            - [khối] **Frame 427325253** — 326×135 [FILL×HUG] · @ (12, 147) flow · column gap 10 pad 12 12 8 12 · bg #ffffff (bg/surface) · radius 8px · shadow 0 4px 4px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `2371:36498`
               - [khối] **Frame 427325251** — 295×115 [FIXED×HUG] · @ (12, 12) flow · column gap 4 `2371:36499`
                 - [khối] **Frame 427325250** — 295×22 [FILL×HUG] · @ (0, 0) flow · row gap 12 align CENTER `2371:36500`
                   - [instance] **Thời gian lịch hẹn** ⟨Thời gian lịch hẹn: Thời gian=Ngày mai, Size=24H⟩ — 68×22 [FIXED×HUG] · @ (0, 0) flow · column gap 5.45 pad 2 6 2 6 justify CENTER align CENTER · bg #f8f8ff · radius 6px · shadow inset 0 0 0 1px #4099ff · clip `2371:36501`
@@ -621,7 +630,7 @@ Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí ·
                     - [chữ] “Giáo viên 6” — 67×19 [HUG×HUG] · @ (12, 4) flow · Afacad 15/19px 600 #e65100 (color/brand/orange) · no-wrap · truncate 1 lines `I2371:36513;2200:30227`
                   - [icon] **Status lịch hẹn** ⟨Status lịch hẹn: Trạng thái=Đã xử lý, Size=24, Kiểu=Default⟩ — 24×24 · @ (97, 1.5) flow · file /figma/assets/42d13de61d08.svg covers (-2, -2) 30×30 `2371:36514`
                   - [icon] **Status Độ ưu tiên** ⟨Status Độ ưu tiên: Mức độ=Ưu Tiên Cao, Size=24, Kiểu=Default⟩ — 24×24 · @ (127, 1.5) flow · file /figma/assets/6877b903aec3.svg covers (-2, -2) 30×30 `2371:36515`
-            - [khối] **Frame 427325254** — 326×135 [FILL×HUG] · @ (12, 294) flow · column gap 10 pad 12 12 8 12 · bg #ffffff · radius 8px · shadow 0 4px 4px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `2371:36516`
+            - [khối] **Frame 427325254** — 326×135 [FILL×HUG] · @ (12, 294) flow · column gap 10 pad 12 12 8 12 · bg #ffffff (bg/surface) · radius 8px · shadow 0 4px 4px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `2371:36516`
               - [khối] **Frame 427325251** — 295×115 [FIXED×HUG] · @ (12, 12) flow · column gap 4 `2371:36517`
                 - [khối] **Frame 427325250** — 295×22 [FILL×HUG] · @ (0, 0) flow · row gap 12 align CENTER `2371:36518`
                   - [instance] **Thời gian lịch hẹn** ⟨Thời gian lịch hẹn: Thời gian=Hôm qua, Size=24H⟩ — 68×22 [FIXED×HUG] · @ (0, 0) flow · column gap 5.45 pad 2 6 2 6 justify CENTER align CENTER · bg #fff2f2 (color/extended/fff2f2) · radius 6px · shadow inset 0 0 0 1px #ff0000 · clip `2371:36519`
@@ -644,7 +653,7 @@ Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí ·
                     - [chữ] “Giáo viên 6” — 67×19 [HUG×HUG] · @ (12, 4) flow · Afacad 15/19px 600 #e65100 (color/brand/orange) · no-wrap · truncate 1 lines `I2371:36531;2200:30227`
                   - [icon] **Status lịch hẹn** ⟨Status lịch hẹn: Trạng thái=Đã xoá, Size=24, Kiểu=Default⟩ — 24×24 · @ (97, 1.5) flow · file /figma/assets/e757418ea48d.svg covers (-2, -2) 30×30 `2371:36532`
                   - [icon] **Status Độ ưu tiên** ⟨Status Độ ưu tiên: Mức độ=Quan Trọng, Size=24, Kiểu=Default⟩ — 24×24 · @ (127, 1.5) flow · file /figma/assets/55b1f0f0a572.svg covers (-2, -2) 30×30 `2371:36533`
-            - [khối] **Frame 427325255** — 326×135 [FILL×HUG] · @ (12, 441) flow · column gap 10 pad 12 12 8 12 · bg #ffffff · radius 8px · shadow 0 4px 4px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `2371:36534`
+            - [khối] **Frame 427325255** — 326×135 [FILL×HUG] · @ (12, 441) flow · column gap 10 pad 12 12 8 12 · bg #ffffff (bg/surface) · radius 8px · shadow 0 4px 4px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `2371:36534`
               - [khối] **Frame 427325251** — 295×115 [FIXED×HUG] · @ (12, 12) flow · column gap 4 `2371:36535`
                 - [khối] **Frame 427325250** — 295×22 [FILL×HUG] · @ (0, 0) flow · row gap 12 align CENTER `2371:36536`
                   - [instance] **Thời gian lịch hẹn** ⟨Thời gian lịch hẹn: Thời gian=Hôm nay, Size=24H⟩ — 68×22 [FIXED×HUG] · @ (0, 0) flow · column gap 5.45 pad 2 6 2 6 justify CENTER align CENTER · bg #effff3 (color/extended/effff3) · radius 6px · shadow inset 0 0 0 1px #2d9732 · clip `2371:36537`
@@ -667,7 +676,7 @@ Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí ·
                     - [chữ] “Giáo viên 6” — 67×19 [HUG×HUG] · @ (12, 4) flow · Afacad 15/19px 600 #e65100 (color/brand/orange) · no-wrap · truncate 1 lines `I2371:36549;2200:30227`
                   - [icon] **Status lịch hẹn** ⟨Status lịch hẹn: Trạng thái=Chưa xử lý, Size=24, Kiểu=Default⟩ — 24×24 · @ (97, 1.5) flow · file /figma/assets/63316472817e.svg covers (-2, -2) 30×30 `2371:36550`
                   - [icon] **Status Độ ưu tiên** ⟨Status Độ ưu tiên: Mức độ=Bình Thường, Size=24, Kiểu=Default⟩ — 24×24 · @ (127, 1.5) flow · file /figma/assets/5c6399844dfb.svg covers (-2, -2) 30×30 `2371:36551`
-            - [khối] **Frame 427325256** — 326×135 [FILL×HUG] · @ (12, 588) flow · column gap 10 pad 12 12 8 12 · bg #ffffff · radius 8px · shadow 0 4px 4px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `2371:36552`
+            - [khối] **Frame 427325256** — 326×135 [FILL×HUG] · @ (12, 588) flow · column gap 10 pad 12 12 8 12 · bg #ffffff (bg/surface) · radius 8px · shadow 0 4px 4px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `2371:36552`
               - [khối] **Frame 427325251** — 295×115 [FIXED×HUG] · @ (12, 12) flow · column gap 4 `2371:36553`
                 - [khối] **Frame 427325250** — 295×22 [FILL×HUG] · @ (0, 0) flow · row gap 12 align CENTER `2371:36554`
                   - [instance] **Thời gian lịch hẹn** ⟨Thời gian lịch hẹn: Thời gian=Hôm nay, Size=24H⟩ — 68×22 [FIXED×HUG] · @ (0, 0) flow · column gap 5.45 pad 2 6 2 6 justify CENTER align CENTER · bg #effff3 (color/extended/effff3) · radius 6px · shadow inset 0 0 0 1px #2d9732 · clip `2371:36555`
@@ -690,7 +699,7 @@ Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí ·
                     - [chữ] “Giáo viên 6” — 67×19 [HUG×HUG] · @ (12, 4) flow · Afacad 15/19px 600 #e65100 (color/brand/orange) · no-wrap · truncate 1 lines `I2371:36567;2200:30227`
                   - [icon] **Status lịch hẹn** ⟨Status lịch hẹn: Trạng thái=Chưa xử lý, Size=24, Kiểu=Default⟩ — 24×24 · @ (97, 1.5) flow · file /figma/adm-lhn-020000/status-lich-hen-2371-36568.svg `2371:36568`
                   - [icon] **Status Độ ưu tiên** ⟨Status Độ ưu tiên: Mức độ=Ít Quan Trọng, Size=24, Kiểu=Default⟩ — 24×24 · @ (127, 1.5) flow · file /figma/adm-lhn-020000/status-do-uu-tien-2371-36569.svg `2371:36569`
-            - [khối] **Frame 427325257** — 326×135 [FILL×HUG] · @ (12, 735) flow · column gap 10 pad 12 12 8 12 · bg #ffffff · radius 8px · shadow 0 4px 4px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `2371:36570`
+            - [khối] **Frame 427325257** — 326×135 [FILL×HUG] · @ (12, 735) flow · column gap 10 pad 12 12 8 12 · bg #ffffff (bg/surface) · radius 8px · shadow 0 4px 4px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `2371:36570`
               - [khối] **Frame 427325251** — 295×115 [FIXED×HUG] · @ (12, 12) flow · column gap 4 `2371:36571`
                 - [khối] **Frame 427325250** — 295×22 [FILL×HUG] · @ (0, 0) flow · row gap 12 align CENTER `2371:36572`
                   - [instance] **Thời gian lịch hẹn** ⟨Thời gian lịch hẹn: Thời gian=Hôm nay, Size=24H⟩ — 68×22 [FIXED×HUG] · @ (0, 0) flow · column gap 5.45 pad 2 6 2 6 justify CENTER align CENTER · bg #effff3 (color/extended/effff3) · radius 6px · shadow inset 0 0 0 1px #2d9732 · clip `2371:36573`
@@ -713,15 +722,15 @@ Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí ·
                     - [chữ] “Giáo viên 6” — 67×19 [HUG×HUG] · @ (12, 4) flow · Afacad 15/19px 600 #e65100 (color/brand/orange) · no-wrap · truncate 1 lines `I2371:36585;2200:30227`
                   - [icon] **Status lịch hẹn** ⟨Status lịch hẹn: Trạng thái=Chưa xử lý, Size=24, Kiểu=Default⟩ — 24×24 · @ (97, 1.5) flow · file /figma/adm-lhn-020000/status-lich-hen-2371-36586.svg `2371:36586`
                   - [icon] **Status Độ ưu tiên** ⟨Status Độ ưu tiên: Mức độ=Ít Quan Trọng, Size=24, Kiểu=Default⟩ — 24×24 · @ (127, 1.5) flow · file /figma/adm-lhn-020000/status-do-uu-tien-2371-36587.svg `2371:36587`
-        - [khối] **Frame 427325262** — 350×350 [FIXED×HUG] · @ (366, 0) flow · column gap 12 pad 0 0 16 0 align CENTER · bg #f2f4ff · radius 12px · shadow 1px 1px 6px 0 rgba(0, 0, 0, 0.15) `2371:36588`
-          - [khối] **Frame 427325261** — 350×40 [FILL×HUG] · @ (0, 0) flow · column gap 10 pad 8 12 8 12 justify CENTER · bg #0039b3 · radius 8px 8px 0 0 `2371:36589`
+        - [khối] **Frame 427325262** — 350×350 [FIXED×HUG] · @ (366, 0) flow · column gap 12 pad 0 0 16 0 align CENTER · bg #f2f4ff (color/extended/f2f4ff) · radius 12px · shadow 1px 1px 6px 0 rgba(0, 0, 0, 0.15) `2371:36588`
+          - [khối] **Frame 427325261** — 350×40 [FILL×HUG] · @ (0, 0) flow · column gap 10 pad 8 12 8 12 justify CENTER · bg #0039b3 (color/extended/0039b3) · radius 8px 8px 0 0 `2371:36589`
             - [khối] **Frame 427325238** — 326×24 [FILL×HUG] · @ (12, 8) flow · row space-between align CENTER `2371:36590`
-              - [chữ] “Thứ 3” — 39×21 [HUG×HUG] · @ (0, 1.5) flow · Afacad 17/21px 600 #ffffff · no-wrap `2371:36591`
+              - [chữ] “Thứ 3” — 39×21 [HUG×HUG] · @ (0, 1.5) flow · Afacad 17/21px 600 #ffffff (text/on-brand) · no-wrap `2371:36591`
               - [khối] **Frame 427325260** — 56×24 [HUG×HUG] · @ (270, 0) flow · row gap 8 align CENTER `2425:104409`
                 - [icon] **COLOR** ⟨COLOR: Property 1=Bánh xe màu⟩ — 24×24 · @ (0, 0) flow · file /figma/assets/038db230f258.svg covers (-2, -2) 30×30 `2425:104410`
                 - [icon] **Frame 427325258** — 24×24 · @ (32, 0) flow · file /figma/assets/e35bd2e005ae.svg `2425:104411`
           - [khối] **Frame 427325260** — 350×282 [FIXED×HUG] · @ (0, 52) flow · column gap 12 pad 0 12 0 12 `2371:36596`
-            - [khối] **Frame 427325254** — 326×135 [FILL×HUG] · @ (12, 0) flow · column gap 10 pad 12 12 8 12 · bg #ffffff · radius 8px · shadow 0 4px 4px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `2371:36597`
+            - [khối] **Frame 427325254** — 326×135 [FILL×HUG] · @ (12, 0) flow · column gap 10 pad 12 12 8 12 · bg #ffffff (bg/surface) · radius 8px · shadow 0 4px 4px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `2371:36597`
               - [khối] **Frame 427325251** — 295×115 [FIXED×HUG] · @ (12, 12) flow · column gap 4 `2371:36598`
                 - [khối] **Frame 427325250** — 295×22 [FILL×HUG] · @ (0, 0) flow · row gap 12 align CENTER `2371:36599`
                   - [instance] **Thời gian lịch hẹn** ⟨Thời gian lịch hẹn: Thời gian=Hôm nay, Size=24H⟩ — 68×22 [FIXED×HUG] · @ (0, 0) flow · column gap 5.45 pad 2 6 2 6 justify CENTER align CENTER · bg #effff3 (color/extended/effff3) · radius 6px · shadow inset 0 0 0 1px #2d9732 · clip `2371:36600`
@@ -744,7 +753,7 @@ Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí ·
                     - [chữ] “Giáo viên 6” — 67×19 [HUG×HUG] · @ (12, 4) flow · Afacad 15/19px 600 #e65100 (color/brand/orange) · no-wrap · truncate 1 lines `I2371:36612;2200:30227`
                   - [icon] **Status lịch hẹn** ⟨Status lịch hẹn: Trạng thái=Chưa xử lý, Size=24, Kiểu=Default⟩ — 24×24 · @ (97, 1.5) flow · file /figma/assets/63316472817e.svg covers (-2, -2) 30×30 `2371:36613`
                   - [icon] **Status Độ ưu tiên** ⟨Status Độ ưu tiên: Mức độ=Ít Quan Trọng, Size=24, Kiểu=Default⟩ — 24×24 · @ (127, 1.5) flow · file /figma/assets/d23851233c2d.svg covers (-2, -2) 30×30 `2371:36614`
-            - [khối] **Frame 427325255** — 326×135 [FILL×HUG] · @ (12, 147) flow · column gap 10 pad 12 12 8 12 · bg #ffffff · radius 8px · shadow 0 4px 4px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `2371:36615`
+            - [khối] **Frame 427325255** — 326×135 [FILL×HUG] · @ (12, 147) flow · column gap 10 pad 12 12 8 12 · bg #ffffff (bg/surface) · radius 8px · shadow 0 4px 4px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `2371:36615`
               - [khối] **Frame 427325251** — 295×115 [FIXED×HUG] · @ (12, 12) flow · column gap 4 `2371:36616`
                 - [khối] **Frame 427325250** — 295×22 [FILL×HUG] · @ (0, 0) flow · row gap 12 align CENTER `2371:36617`
                   - [instance] **Thời gian lịch hẹn** ⟨Thời gian lịch hẹn: Thời gian=Ngày mai, Size=24H⟩ — 68×22 [FIXED×HUG] · @ (0, 0) flow · column gap 5.45 pad 2 6 2 6 justify CENTER align CENTER · bg #f8f8ff · radius 6px · shadow inset 0 0 0 1px #4099ff · clip `2371:36618`
@@ -767,15 +776,15 @@ Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí ·
                     - [chữ] “Giáo viên 6” — 67×19 [HUG×HUG] · @ (12, 4) flow · Afacad 15/19px 600 #e65100 (color/brand/orange) · no-wrap · truncate 1 lines `I2371:36630;2200:30227`
                   - [icon] **Status lịch hẹn** ⟨Status lịch hẹn: Trạng thái=Đã xử lý, Size=24, Kiểu=Default⟩ — 24×24 · @ (97, 1.5) flow · file /figma/assets/42d13de61d08.svg covers (-2, -2) 30×30 `2371:36631`
                   - [icon] **Status Độ ưu tiên** ⟨Status Độ ưu tiên: Mức độ=Ưu Tiên Cao, Size=24, Kiểu=Default⟩ — 24×24 · @ (127, 1.5) flow · file /figma/assets/6877b903aec3.svg covers (-2, -2) 30×30 `2371:36632`
-        - [khối] **Frame 427325263** — 350×652 [FIXED×HUG] · @ (732, 0) flow · column gap 12 align CENTER · bg #f8faff · radius 12px · shadow 1px 1px 6px 0 rgba(0, 0, 0, 0.15) `2371:36633`
-          - [khối] **Frame 427325261** — 350×40 [FILL×HUG] · @ (0, 0) flow · column gap 10 pad 8 12 8 12 justify CENTER · bg #253238 · radius 8px 8px 0 0 `2371:36634`
+        - [khối] **Frame 427325263** — 350×652 [FIXED×HUG] · @ (732, 0) flow · column gap 12 align CENTER · bg #f8faff (color/extended/f8faff) · radius 12px · shadow 1px 1px 6px 0 rgba(0, 0, 0, 0.15) `2371:36633`
+          - [khối] **Frame 427325261** — 350×40 [FILL×HUG] · @ (0, 0) flow · column gap 10 pad 8 12 8 12 justify CENTER · bg #253238 (color/extended/253238) · radius 8px 8px 0 0 `2371:36634`
             - [khối] **Frame 427325238** — 326×24 [FILL×HUG] · @ (12, 8) flow · row space-between align CENTER `2371:36635`
-              - [chữ] “Thứ 4” — 39×21 [HUG×HUG] · @ (0, 1.5) flow · Afacad 17/21px 600 #ffffff · no-wrap `2371:36636`
+              - [chữ] “Thứ 4” — 39×21 [HUG×HUG] · @ (0, 1.5) flow · Afacad 17/21px 600 #ffffff (text/on-brand) · no-wrap `2371:36636`
               - [khối] **Frame 427325260** — 56×24 [HUG×HUG] · @ (270, 0) flow · row gap 8 align CENTER `2425:104414`
                 - [icon] **COLOR** ⟨COLOR: Property 1=Bánh xe màu⟩ — 24×24 · @ (0, 0) flow · file /figma/assets/038db230f258.svg covers (-2, -2) 30×30 `2425:104415`
                 - [icon] **Frame 427325258** — 24×24 · @ (32, 0) flow · file /figma/assets/e35bd2e005ae.svg `2425:104416`
           - [khối] **Frame 427325260** — 350×600 [FILL×FIXED] · @ (0, 52) flow · column gap 12 pad 0 12 0 12 · clip `2371:36641`
-            - [khối] **Frame 427325258** — 326×135 [FILL×HUG] · @ (12, 0) flow · column gap 10 pad 12 12 8 12 · bg #ffffff · radius 8px · shadow 0 4px 4px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `2371:36642`
+            - [khối] **Frame 427325258** — 326×135 [FILL×HUG] · @ (12, 0) flow · column gap 10 pad 12 12 8 12 · bg #ffffff (bg/surface) · radius 8px · shadow 0 4px 4px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `2371:36642`
               - [khối] **Frame 427325251** — 295×115 [FIXED×HUG] · @ (12, 12) flow · column gap 4 `2371:36643`
                 - [khối] **Frame 427325250** — 295×22 [FILL×HUG] · @ (0, 0) flow · row gap 12 align CENTER `2371:36644`
                   - [instance] **Thời gian lịch hẹn** ⟨Thời gian lịch hẹn: Thời gian=Hôm nay, Size=24H⟩ — 68×22 [FIXED×HUG] · @ (0, 0) flow · column gap 5.45 pad 2 6 2 6 justify CENTER align CENTER · bg #effff3 (color/extended/effff3) · radius 6px · shadow inset 0 0 0 1px #2d9732 · clip `2371:36645`
@@ -798,7 +807,7 @@ Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí ·
                     - [chữ] “Giáo viên 6” — 67×19 [HUG×HUG] · @ (12, 4) flow · Afacad 15/19px 600 #e65100 (color/brand/orange) · no-wrap · truncate 1 lines `I2371:36657;2200:30227`
                   - [icon] **Status lịch hẹn** ⟨Status lịch hẹn: Trạng thái=Chưa xử lý, Size=24, Kiểu=Default⟩ — 24×24 · @ (97, 1.5) flow · file /figma/assets/63316472817e.svg covers (-2, -2) 30×30 `2371:36658`
                   - [icon] **Status Độ ưu tiên** ⟨Status Độ ưu tiên: Mức độ=Ít Quan Trọng, Size=24, Kiểu=Default⟩ — 24×24 · @ (127, 1.5) flow · file /figma/assets/ee7ce5e6bfc9.svg covers (-2, -2) 30×30 `2371:36659`
-            - [khối] **Frame 427325259** — 326×135 [FILL×HUG] · @ (12, 147) flow · column gap 10 pad 12 12 8 12 · bg #ffffff · radius 8px · shadow 0 4px 4px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `2371:36660`
+            - [khối] **Frame 427325259** — 326×135 [FILL×HUG] · @ (12, 147) flow · column gap 10 pad 12 12 8 12 · bg #ffffff (bg/surface) · radius 8px · shadow 0 4px 4px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `2371:36660`
               - [khối] **Frame 427325251** — 295×115 [FIXED×HUG] · @ (12, 12) flow · column gap 4 `2371:36661`
                 - [khối] **Frame 427325250** — 295×22 [FILL×HUG] · @ (0, 0) flow · row gap 12 align CENTER `2371:36662`
                   - [instance] **Thời gian lịch hẹn** ⟨Thời gian lịch hẹn: Thời gian=Ngày mai, Size=24H⟩ — 68×22 [FIXED×HUG] · @ (0, 0) flow · column gap 5.45 pad 2 6 2 6 justify CENTER align CENTER · bg #f8f8ff · radius 6px · shadow inset 0 0 0 1px #4099ff · clip `2371:36663`
@@ -821,7 +830,7 @@ Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí ·
                     - [chữ] “Giáo viên 6” — 67×19 [HUG×HUG] · @ (12, 4) flow · Afacad 15/19px 600 #e65100 (color/brand/orange) · no-wrap · truncate 1 lines `I2371:36675;2200:30227`
                   - [icon] **Status lịch hẹn** ⟨Status lịch hẹn: Trạng thái=Đã xử lý, Size=24, Kiểu=Default⟩ — 24×24 · @ (97, 1.5) flow · file /figma/assets/42d13de61d08.svg covers (-2, -2) 30×30 `2371:36676`
                   - [icon] **Status Độ ưu tiên** ⟨Status Độ ưu tiên: Mức độ=Ưu Tiên Cao, Size=24, Kiểu=Default⟩ — 24×24 · @ (127, 1.5) flow · file /figma/assets/6877b903aec3.svg covers (-2, -2) 30×30 `2371:36677`
-            - [khối] **Frame 427325260** — 326×135 [FILL×HUG] · @ (12, 294) flow · column gap 10 pad 12 12 8 12 · bg #ffffff · radius 8px · shadow 0 4px 4px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `2371:36678`
+            - [khối] **Frame 427325260** — 326×135 [FILL×HUG] · @ (12, 294) flow · column gap 10 pad 12 12 8 12 · bg #ffffff (bg/surface) · radius 8px · shadow 0 4px 4px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `2371:36678`
               - [khối] **Frame 427325251** — 295×115 [FIXED×HUG] · @ (12, 12) flow · column gap 4 `2371:36679`
                 - [khối] **Frame 427325250** — 295×22 [FILL×HUG] · @ (0, 0) flow · row gap 12 align CENTER `2371:36680`
                   - [instance] **Thời gian lịch hẹn** ⟨Thời gian lịch hẹn: Thời gian=Hôm qua, Size=24H⟩ — 68×22 [FIXED×HUG] · @ (0, 0) flow · column gap 5.45 pad 2 6 2 6 justify CENTER align CENTER · bg #fff2f2 (color/extended/fff2f2) · radius 6px · shadow inset 0 0 0 1px #ff0000 · clip `2371:36681`
@@ -844,7 +853,7 @@ Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí ·
                     - [chữ] “Giáo viên 6” — 67×19 [HUG×HUG] · @ (12, 4) flow · Afacad 15/19px 600 #e65100 (color/brand/orange) · no-wrap · truncate 1 lines `I2371:36693;2200:30227`
                   - [icon] **Status lịch hẹn** ⟨Status lịch hẹn: Trạng thái=Đã xoá, Size=24, Kiểu=Default⟩ — 24×24 · @ (97, 1.5) flow · file /figma/assets/e757418ea48d.svg covers (-2, -2) 30×30 `2371:36694`
                   - [icon] **Status Độ ưu tiên** ⟨Status Độ ưu tiên: Mức độ=Quan Trọng, Size=24, Kiểu=Default⟩ — 24×24 · @ (127, 1.5) flow · file /figma/assets/f7cc512c1525.svg covers (-2, -2) 30×30 `2371:36695`
-            - [khối] **Frame 427325261** — 326×135 [FILL×HUG] · @ (12, 441) flow · column gap 10 pad 12 12 8 12 · bg #ffffff · radius 8px · shadow 0 4px 4px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `2371:36696`
+            - [khối] **Frame 427325261** — 326×135 [FILL×HUG] · @ (12, 441) flow · column gap 10 pad 12 12 8 12 · bg #ffffff (bg/surface) · radius 8px · shadow 0 4px 4px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `2371:36696`
               - [khối] **Frame 427325251** — 295×115 [FIXED×HUG] · @ (12, 12) flow · column gap 4 `2371:36697`
                 - [khối] **Frame 427325250** — 295×22 [FILL×HUG] · @ (0, 0) flow · row gap 12 align CENTER `2371:36698`
                   - [instance] **Thời gian lịch hẹn** ⟨Thời gian lịch hẹn: Thời gian=Hôm nay, Size=24H⟩ — 68×22 [FIXED×HUG] · @ (0, 0) flow · column gap 5.45 pad 2 6 2 6 justify CENTER align CENTER · bg #effff3 (color/extended/effff3) · radius 6px · shadow inset 0 0 0 1px #2d9732 · clip `2371:36699`
@@ -867,7 +876,7 @@ Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí ·
                     - [chữ] “Giáo viên 6” — 67×19 [HUG×HUG] · @ (12, 4) flow · Afacad 15/19px 600 #e65100 (color/brand/orange) · no-wrap · truncate 1 lines `I2371:36711;2200:30227`
                   - [icon] **Status lịch hẹn** ⟨Status lịch hẹn: Trạng thái=Chưa xử lý, Size=24, Kiểu=Default⟩ — 24×24 · @ (97, 1.5) flow · file /figma/assets/63316472817e.svg covers (-2, -2) 30×30 `2371:36712`
                   - [icon] **Status Độ ưu tiên** ⟨Status Độ ưu tiên: Mức độ=Bình Thường, Size=24, Kiểu=Default⟩ — 24×24 · @ (127, 1.5) flow · file /figma/assets/5c6399844dfb.svg covers (-2, -2) 30×30 `2371:36713`
-            - [khối] **Frame 427325262** — 326×135 [FILL×HUG] · @ (12, 588) flow · column gap 10 pad 12 12 8 12 · bg #ffffff · radius 8px · shadow 0 4px 4px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `2371:36714`
+            - [khối] **Frame 427325262** — 326×135 [FILL×HUG] · @ (12, 588) flow · column gap 10 pad 12 12 8 12 · bg #ffffff (bg/surface) · radius 8px · shadow 0 4px 4px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `2371:36714`
               - [khối] **Frame 427325251** — 295×115 [FIXED×HUG] · @ (12, 12) flow · column gap 4 `2371:36715`
                 - [khối] **Frame 427325250** — 295×22 [FILL×HUG] · @ (0, 0) flow · row gap 12 align CENTER `2371:36716`
                   - [instance] **Thời gian lịch hẹn** ⟨Thời gian lịch hẹn: Thời gian=Hôm nay, Size=24H⟩ — 68×22 [FIXED×HUG] · @ (0, 0) flow · column gap 5.45 pad 2 6 2 6 justify CENTER align CENTER · bg #effff3 (color/extended/effff3) · radius 6px · shadow inset 0 0 0 1px #2d9732 · clip `2371:36717`
@@ -890,7 +899,7 @@ Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí ·
                     - [chữ] “Giáo viên 6” — 67×19 [HUG×HUG] · @ (12, 4) flow · Afacad 15/19px 600 #e65100 (color/brand/orange) · no-wrap · truncate 1 lines `I2371:36729;2200:30227`
                   - [icon] **Status lịch hẹn** ⟨Status lịch hẹn: Trạng thái=Chưa xử lý, Size=24, Kiểu=Default⟩ — 24×24 · @ (97, 1.5) flow · file /figma/adm-lhn-020000/status-lich-hen-2371-36730.svg `2371:36730`
                   - [icon] **Status Độ ưu tiên** ⟨Status Độ ưu tiên: Mức độ=Ít Quan Trọng, Size=24, Kiểu=Default⟩ — 24×24 · @ (127, 1.5) flow · file /figma/adm-lhn-020000/status-do-uu-tien-2371-36731.svg `2371:36731`
-            - [khối] **Frame 427325263** — 326×135 [FILL×HUG] · @ (12, 735) flow · column gap 10 pad 12 12 8 12 · bg #ffffff · radius 8px · shadow 0 4px 4px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `2371:36732`
+            - [khối] **Frame 427325263** — 326×135 [FILL×HUG] · @ (12, 735) flow · column gap 10 pad 12 12 8 12 · bg #ffffff (bg/surface) · radius 8px · shadow 0 4px 4px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `2371:36732`
               - [khối] **Frame 427325251** — 295×115 [FIXED×HUG] · @ (12, 12) flow · column gap 4 `2371:36733`
                 - [khối] **Frame 427325250** — 295×22 [FILL×HUG] · @ (0, 0) flow · row gap 12 align CENTER `2371:36734`
                   - [instance] **Thời gian lịch hẹn** ⟨Thời gian lịch hẹn: Thời gian=Hôm nay, Size=24H⟩ — 68×22 [FIXED×HUG] · @ (0, 0) flow · column gap 5.45 pad 2 6 2 6 justify CENTER align CENTER · bg #effff3 (color/extended/effff3) · radius 6px · shadow inset 0 0 0 1px #2d9732 · clip `2371:36735`
@@ -913,15 +922,15 @@ Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí ·
                     - [chữ] “Giáo viên 6” — 67×19 [HUG×HUG] · @ (12, 4) flow · Afacad 15/19px 600 #e65100 (color/brand/orange) · no-wrap · truncate 1 lines `I2371:36747;2200:30227`
                   - [icon] **Status lịch hẹn** ⟨Status lịch hẹn: Trạng thái=Chưa xử lý, Size=24, Kiểu=Default⟩ — 24×24 · @ (97, 1.5) flow · file /figma/adm-lhn-020000/status-lich-hen-2371-36748.svg `2371:36748`
                   - [icon] **Status Độ ưu tiên** ⟨Status Độ ưu tiên: Mức độ=Ít Quan Trọng, Size=24, Kiểu=Default⟩ — 24×24 · @ (127, 1.5) flow · file /figma/adm-lhn-020000/status-do-uu-tien-2371-36749.svg `2371:36749`
-        - [khối] **Frame 427325264** — 350×112 [FIXED×HUG] · @ (1098, 0) flow · column gap 12 pad 0 0 12 0 align CENTER · bg #f5f5f5 · radius 12px · shadow 1px 1px 6px 0 rgba(0, 0, 0, 0.15) `2371:36750`
-          - [khối] **Frame 427325261** — 350×40 [FILL×HUG] · @ (0, 0) flow · column gap 10 pad 8 12 8 12 justify CENTER · bg #ffffff · radius 8px 8px 0 0 `2371:36751`
+        - [khối] **Frame 427325264** — 350×112 [FIXED×HUG] · @ (1098, 0) flow · column gap 12 pad 0 0 12 0 align CENTER · bg #f5f5f5 (color/neutral/100) · radius 12px · shadow 1px 1px 6px 0 rgba(0, 0, 0, 0.15) `2371:36750`
+          - [khối] **Frame 427325261** — 350×40 [FILL×HUG] · @ (0, 0) flow · column gap 10 pad 8 12 8 12 justify CENTER · bg #ffffff (bg/surface) · radius 8px 8px 0 0 `2371:36751`
             - [khối] **Frame 427325238** — 326×24 [FILL×HUG] · @ (12, 8) flow · row space-between align CENTER `2371:36752`
               - [chữ] “Thứ 5” — 39×21 [HUG×HUG] · @ (0, 1.5) flow · Afacad 17/21px 600 #334155 (color/text/primary) · no-wrap `2371:36753`
               - [khối] **Frame 427325260** — 56×24 [HUG×HUG] · @ (270, 0) flow · row gap 8 align CENTER `2425:104437`
                 - [icon] **COLOR** ⟨COLOR: Property 1=Bánh xe màu⟩ — 24×24 · @ (0, 0) flow · file /figma/assets/038db230f258.svg covers (-2, -2) 30×30 `2425:104438`
                 - [icon] **Frame 427325258** — 24×24 · @ (32, 0) flow · file /figma/assets/8b821ebc5119.svg `2425:104439`
           - [khối] **Frame 427325260** — 350×48 [FIXED×HUG] · @ (0, 52) flow · column gap 16 pad 0 12 0 12 `2371:36758`
-            - [khối] **Frame 427325252** — 326×48 [FILL×HUG] · @ (12, 0) flow · column gap 10 pad 12 16 12 16 justify CENTER · bg #ffffff · radius 10px · shadow inset 0 0 0 1px #eeeeee `2371:36759`
+            - [khối] **Frame 427325252** — 326×48 [FILL×HUG] · @ (12, 0) flow · column gap 10 pad 12 16 12 16 justify CENTER · bg #ffffff (bg/surface) · radius 10px · shadow inset 0 0 0 1px #eeeeee `2371:36759`
               - [khối] **Frame 427325272** — 118×24 [HUG×HUG] · @ (16, 12) flow · row gap 12 align CENTER `2371:36760`
                 - [icon] **Union** — 20×20 · @ (0, 2) flow · file /figma/assets/50064fcd0c55.svg `2371:36761`
                 - [chữ] “Kéo thả thẻ” — 86×24 [HUG×HUG] · @ (32, 0) flow · Afacad 19/24px 700 #cccccc (color/extended/cccccc) · no-wrap `2371:36762`

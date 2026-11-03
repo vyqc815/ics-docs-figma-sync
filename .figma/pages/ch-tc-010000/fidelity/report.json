@@ -12,37 +12,13 @@
   "pixels": {
     "width": 1440,
     "height": 810,
-    "mismatched": 903,
-    "percent": 0.077,
+    "mismatched": 625,
+    "percent": 0.054,
     "shapePercent": 0,
-    "textPercent": 0.412,
+    "textPercent": 0.285,
     "sizeMismatch": false
   },
   "textNodes": [
-    {
-      "id": "I3778:20942;1391:14476",
-      "name": "80%",
-      "pixels": 75,
-      "percent": 26.8
-    },
-    {
-      "id": "I3778:34714;1391:14476",
-      "name": "80%",
-      "pixels": 75,
-      "percent": 26.8
-    },
-    {
-      "id": "I3778:34722;1308:6749",
-      "name": "100%",
-      "pixels": 83,
-      "percent": 24.7
-    },
-    {
-      "id": "I3778:34517;1308:6706",
-      "name": "0%",
-      "pixels": 45,
-      "percent": 23
-    },
     {
       "id": "3778:34640",
       "name": "Ngày kết thúc",
@@ -107,6 +83,30 @@
       "id": "3778:34650",
       "name": "T4, 18h30",
       "pixels": 14,
+      "percent": 1.2
+    },
+    {
+      "id": "3778:34652",
+      "name": "T6, 18h30",
+      "pixels": 14,
+      "percent": 1.2
+    },
+    {
+      "id": "I3778:25136;1350:13172",
+      "name": "6/20 Buổi",
+      "pixels": 15,
+      "percent": 1.2
+    },
+    {
+      "id": "I3778:34511;1350:13172",
+      "name": "6/20 Buổi",
+      "pixels": 15,
+      "percent": 1.2
+    },
+    {
+      "id": "I3778:34550;1350:13172",
+      "name": "6/20 Buổi",
+      "pixels": 15,
       "percent": 1.2
     }
   ],
@@ -428,7 +428,7 @@
     "over": []
   },
   "failures": [],
-  "url": "http://localhost:3108/trang-chu/thong-ke-tong-quan",
+  "url": "http://localhost:3000/trang-chu/thong-ke-tong-quan",
   "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
   "consoleErrors": [],
   "rootFound": true

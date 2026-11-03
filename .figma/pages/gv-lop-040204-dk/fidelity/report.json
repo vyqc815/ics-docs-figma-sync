@@ -1,0 +1,435 @@
+{
+  "pass": true,
+  "thresholds": {
+    "maxPixelDiffPercent": 0.5,
+    "maxBoxDelta": 1,
+    "maxTextBoxDelta": 2.5,
+    "colorThreshold": 0.1,
+    "aaRadius": 1,
+    "subpixel": true,
+    "maxTextNodeDiffPercent": 35
+  },
+  "pixels": {
+    "width": 1440,
+    "height": 1182,
+    "mismatched": 3747,
+    "percent": 0.22,
+    "shapePercent": 0,
+    "textPercent": 0.94,
+    "sizeMismatch": false
+  },
+  "textNodes": [
+    {
+      "id": "7074:403401",
+      "name": "Tổng Quan",
+      "pixels": 585,
+      "percent": 18.2
+    },
+    {
+      "id": "I7074:403831;4901:213764;2245:87908",
+      "name": "Label",
+      "pixels": 201,
+      "percent": 8.4
+    },
+    {
+      "id": "I7074:403831;4901:213769;2245:87914",
+      "name": "Label",
+      "pixels": 207,
+      "percent": 5.1
+    },
+    {
+      "id": "7074:403583",
+      "name": "🍎",
+      "pixels": 84,
+      "percent": 4.8
+    },
+    {
+      "id": "I7074:403831;4901:213770;2245:87908",
+      "name": "Label",
+      "pixels": 99,
+      "percent": 4.6
+    },
+    {
+      "id": "I7074:403831;4901:213766;689:15190",
+      "name": "Label",
+      "pixels": 52,
+      "percent": 4.5
+    },
+    {
+      "id": "7074:403547",
+      "name": "Xem trước đề · 10 câu hỏi",
+      "pixels": 122,
+      "percent": 3.6
+    },
+    {
+      "id": "I7074:403666;1050:2409",
+      "name": "Badge",
+      "pixels": 7,
+      "percent": 3.5
+    },
+    {
+      "id": "I7074:403831;4901:213775;689:15190",
+      "name": "Label",
+      "pixels": 38,
+      "percent": 3.5
+    },
+    {
+      "id": "I7074:403831;4901:213771;689:15190",
+      "name": "Label",
+      "pixels": 35,
+      "percent": 3.3
+    },
+    {
+      "id": "7074:403622",
+      "name": "MINI TEST 6 – WOHNEN, UHRZEIT UND ALLTAG",
+      "pixels": 164,
+      "percent": 3
+    },
+    {
+      "id": "7074:403670",
+      "name": "MINI TEST 4 - PHỤ ÂM ĐẶC BIỆT",
+      "pixels": 149,
+      "percent": 2.7
+    },
+    {
+      "id": "7074:403610",
+      "name": "MINITEST 5 - PERSÖNLICHE DATEN",
+      "pixels": 143,
+      "percent": 2.6
+    },
+    {
+      "id": "I7074:403831;4901:213773;2245:87908",
+      "name": "Label",
+      "pixels": 53,
+      "percent": 2.5
+    },
+    {
+      "id": "I7074:403831;4901:213777;2245:87908",
+      "name": "Label",
+      "pixels": 53,
+      "percent": 2.5
+    }
+  ],
+  "regions": [],
+  "boxes": {
+    "measured": 342,
+    "missing": [],
+    "withinThreshold": 342,
+    "buckets": {
+      "≤0.5px": 335,
+      "≤1px": 341,
+      "≤2px": 342,
+      "≤4px": 342,
+      ">4px": 0
+    },
+    "worst": [
+      {
+        "id": "7074:403401",
+        "name": "Tổng Quan",
+        "role": "text",
+        "delta": 1.66,
+        "dx": 0,
+        "dy": 0,
+        "dw": 1.66,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "7074:403547",
+        "name": "Xem trước đề · 10 câu hỏi",
+        "role": "text",
+        "delta": 0.56,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.56,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "7074:403548",
+        "name": "sp",
+        "role": "container",
+        "delta": 0.56,
+        "dx": 0.56,
+        "dy": 0,
+        "dw": -0.56,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I7074:403831;4901:213775;689:15189",
+        "name": "Content",
+        "role": "container",
+        "delta": 0.55,
+        "dx": 0,
+        "dy": 0,
+        "dw": -0.55,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I7074:403831;4901:213775;689:15190",
+        "name": "Label",
+        "role": "text",
+        "delta": 0.55,
+        "dx": 0,
+        "dy": 0,
+        "dw": -0.55,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "7074:403564",
+        "name": "Đầu câu",
+        "role": "container",
+        "delta": 0.53,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.53,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "7074:403566",
+        "name": "Đọc đoạn văn và trả lời câu hỏi",
+        "role": "text",
+        "delta": 0.52,
+        "dx": 0.02,
+        "dy": 0,
+        "dw": 0.52,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I7074:403831;4901:213766;689:15189",
+        "name": "Content",
+        "role": "container",
+        "delta": 0.47,
+        "dx": 0,
+        "dy": 0,
+        "dw": -0.47,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I7074:403831;4901:213766;689:15190",
+        "name": "Label",
+        "role": "text",
+        "delta": 0.47,
+        "dx": 0,
+        "dy": 0,
+        "dw": -0.47,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I7074:403831;4901:213771;689:15189",
+        "name": "Content",
+        "role": "container",
+        "delta": 0.14,
+        "dx": 0,
+        "dy": 0,
+        "dw": -0.14,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I7074:403831;4901:213771;689:15190",
+        "name": "Label",
+        "role": "text",
+        "delta": 0.14,
+        "dx": 0,
+        "dy": 0,
+        "dw": -0.14,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "7074:403591",
+        "name": "… và 7 câu hỏi khác (cuộn để xem tiếp)",
+        "role": "text",
+        "delta": 0.03,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.03,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "7074:403551",
+        "name": "Đầu câu",
+        "role": "container",
+        "delta": 0.02,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.02,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "7074:403552",
+        "name": "Atom/Badge",
+        "role": "instance",
+        "delta": 0.02,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.02,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I7074:403552;1050:2411",
+        "name": "Badge",
+        "role": "text",
+        "delta": 0.02,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.02,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "7074:403553",
+        "name": "Nghe đoạn ghi âm và chọn chữ cái đúng",
+        "role": "text",
+        "delta": 0.02,
+        "dx": 0.02,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "7074:403565",
+        "name": "Atom/Badge",
+        "role": "instance",
+        "delta": 0.02,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.02,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I7074:403565;1050:2411",
+        "name": "Badge",
+        "role": "text",
+        "delta": 0.02,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.02,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "7074:403578",
+        "name": "Đầu câu",
+        "role": "container",
+        "delta": 0.02,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.02,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "7074:403579",
+        "name": "Atom/Badge",
+        "role": "instance",
+        "delta": 0.02,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.02,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I7074:403579;1050:2411",
+        "name": "Badge",
+        "role": "text",
+        "delta": 0.02,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.02,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "7074:403580",
+        "name": "Nhìn hình và chọn từ đúng",
+        "role": "text",
+        "delta": 0.02,
+        "dx": 0.02,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "7074:403407",
+        "name": "Thẻ chỉ số",
+        "role": "instance",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.01,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I7074:403407;3004:47241",
+        "name": "Nội dung",
+        "role": "container",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.01,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I7074:403407;3004:47242",
+        "name": "Tiêu đề",
+        "role": "text",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.01,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      }
+    ],
+    "maxDelta": 1.66,
+    "over": []
+  },
+  "failures": [],
+  "url": "http://localhost:3000/chi-tiet-lop/bai-tap-va-kiem-tra/kiem-tra-chua-giao-giao-vien-khong-phu-trach-chinh-xem-truoc-de-dk",
+  "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
+  "consoleErrors": [],
+  "rootFound": true
+}

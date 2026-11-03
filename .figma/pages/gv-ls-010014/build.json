@@ -1,0 +1,17 @@
+{
+  "route": "/lich-su-luong/de-xuat-moi-co-the-huy",
+  "pageFile": "components/figma/gv-ls-010014/index.tsx",
+  "docFile": "docs/pages/lich-su-luong/de-xuat-moi-co-the-huy.md",
+  "sections": [
+    {
+      "nodeId": "4899:105951",
+      "component": "Body",
+      "file": "components/figma/gv-ls-010014/Body.tsx"
+    },
+    {
+      "nodeId": "4899:106084",
+      "component": "Section2",
+      "file": "components/figma/gv-ls-010014/Section2.tsx"
+    }
+  ]
+}

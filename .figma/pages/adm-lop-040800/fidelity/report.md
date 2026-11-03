@@ -1,6 +1,6 @@
 # Fidelity: ADM-LOP-040800 — Lớp học / Cài đặt / OT
 
-- URL: `http://localhost:3108/lop-hoc/cai-dat/ot`
+- URL: `http://localhost:3000/lop-hoc/cai-dat/ot`
 - Verdict: **PASS**
 - Pixels outside text: **0%** differ (limit 0.5%); all pixels: 0.074%; inside text boxes: 1.092% (glyph rendering)
 - Boxes: 127/127 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 127, ≤1px: 127, ≤2px: 127, ≤4px: 127, >4px: 0

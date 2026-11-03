@@ -5,7 +5,7 @@
 > **Nguồn:** PLS-ICS T8/2026 ›         └─ LỊCH DẠY › ADM-LD-010000 — Lịch / Lịch dạy tổng (`4101:129181`, file `rRVs5HX0kIHffbS0V40djG`)  
 > **Route:** `/lich/lich-day-tong`  
 > **Khung thiết kế:** 1440 × 810 px  
-> **Xuất lúc:** 2026-11-02T03:44:42.046Z  
+> **Xuất lúc:** 2026-11-03T00:58:45.443Z  
 > **Spec đầy đủ (giá trị chính xác từng node):** `../../../.figma/pages/adm-ld-010000/page-spec.json`
 
 ## 1. Tổng quan
@@ -26,6 +26,8 @@ Nền trang: `#f8fafc`.
 
 | Token | Biến CSS | Giá trị | Trỏ tới | Bộ / mode |
 | --- | --- | --- | --- | --- |
+| `bg/surface` | `--bg-surface` | `#ffffff` | color/neutral/white | Theme · Semantic / Light |
+| `border/default` | `--border-default` | `#e2e8f0` | color/border/default | Theme · Semantic / Light |
 | `color/border/button` | `--color-border-button` | `#cbd5e1` | color/extended/cbd5e1 | Color Tokens / Light |
 | `color/border/default` | `--color-border-default` | `#e2e8f0` |  | Color Tokens / Light |
 | `color/brand/orange` | `--color-brand-orange` | `#e65100` |  | Color Tokens / Light |
@@ -41,6 +43,7 @@ Nền trang: `#f8fafc`.
 | `spacing/12` | `--spacing-12` | `12` |  | Number Tokens / Mode 1 |
 | `spacing/4` | `--spacing-4` | `4` |  | Number Tokens / Mode 1 |
 | `spacing/8` | `--spacing-8` | `8` |  | Number Tokens / Mode 1 |
+| `text/on-brand` | `--text-on-brand` | `#ffffff` | color/neutral/white | Theme · Semantic / Light |
 
 **Style Figma đang dùng:**
 
@@ -68,7 +71,7 @@ Nền trang: `#f8fafc`.
 | Style | Font family | Cỡ / line-height | Độ đậm | Letter-spacing | Màu | Số lần | Ví dụ |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | `Body/17/Bold` | Afacad | 17 / 21px | 700 | 0 | #334155 (color/text/primary) | 6 | “05.10” |
-| `Body/17/Bold` | Afacad | 17 / 21px | 700 | 0 | #ffffff | 1 | “07.10” |
+| `Body/17/Bold` | Afacad | 17 / 21px | 700 | 0 | #ffffff (text/on-brand) | 1 | “07.10” |
 | — | Afacad | 16 / 20px | 700 | 0 | #334155 (color/text/primary) | 42 | “DN1311-I” |
 | `Body/15/Medium` | Afacad | 15 / 19px | 500 | 0 | #64748b (color/text/secondary) | 7 | “Thứ 2” |
 | `Body/15/Medium` | Afacad | 15 / 19px | 500 | 0 | #334155 (color/text/primary) | 5 | “Theo lớp” |
@@ -88,7 +91,7 @@ Nền trang: `#f8fafc`.
 Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí · bố cục · style`. Dòng đầu tiên là chính frame trang (gốc). Tên layer nằm trong `**…**`, chữ hiển thị nằm trong `“…”`, giá trị CSS nguyên văn nằm trong backtick: dấu `·` hay `—` **bên trong** các cặp đó là nội dung, chỉ dấu ` · ` bên ngoài mới ngăn cách các trường. Toạ độ `@ (x, y)` tính từ góc trên-trái của layer cha; layer **flow** do auto layout của cha xếp, layer **abs** đặt tuyệt đối. Các layer cùng cấp được liệt kê **theo thứ tự vẽ của Figma: layer sau nằm đè lên layer trước**. ID ở cuối dòng là node ID trong Figma.
 
 - [trang] **ADM-LD-010000 — Lịch / Lịch dạy tổng** — 1440×810 · bg #f8fafc `4101:129181`
-  - [khối] **MainContent** — 1206×746 · @ (234, 64) abs · column gap 12 pad 16 24 16 24 · bg #ffffff · clip `4101:129182`
+  - [khối] **MainContent** — 1206×746 · @ (234, 64) abs · column gap 12 pad 16 24 16 24 · bg #ffffff (bg/surface) · clip `4101:129182`
     - [khối] **Thanh công cụ** — 1158×33 [FILL×HUG] · @ (24, 16) flow · row space-between align CENTER `4101:129183`
       - [instance] **Time** ⟨Time: Property 1=Variant4⟩ — 226×33 [HUG×HUG] · @ (0, 0) flow · row gap 12 pad 6 6 6 8 align CENTER · bg #ffffff · radius 8px · border 1px solid #e5e7eb · shadow 0 1px 2px 0 rgba(0, 0, 0, 0.05) `4101:129184`
         - [icon] **Action Icon** ⟨Action Icon: Icon=Chevron Right, Size=18⟩ — 18×18 · @ (9, 7.5) flow · file /figma/assets/7a953b49489d.svg `I4101:129184;2008:48184`
@@ -123,8 +126,8 @@ Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí ·
           - [khối] **Content** — 39×19 [HUG×HUG] · @ (13, 5.5) flow · row align CENTER · clip `I4101:129512;2015:36007`
             - [chữ] “Học kỳ” — 39×19 [HUG×HUG] · @ (0, 0) flow · Afacad 15/19px 500 #334155 (color/text/primary) · no-wrap `I4101:129512;2015:36008`
           - [icon] **Chevron** ⟨Action Icon: Icon=Chevron Down, Size=16⟩ — 16×16 · @ (58, 7) flow · file /figma/assets/b02703ab5f1a.svg `I4101:129512;2015:36012`
-    - [khối] **Frame 427325194** — 1158×635 [FILL×HUG] · @ (24, 61) flow · column gap 12 pad 0 0 16 0 align CENTER · bg #ffffff · radius 12px · shadow 1px 1px 6px 0 rgba(0, 0, 0, 0.15) `4101:129185`
-      - [khối] **Frame 427323674** — 1158×55 [FILL×HUG] · @ (0, 0) flow · column gap 8 pad 4 18 4 18 align CENTER · bg #ffffff · radius 12px 12px 0 0 · shadow inset 0 -1px 0 0 #e2e8f0 `4101:129186`
+    - [khối] **Frame 427325194** — 1158×635 [FILL×HUG] · @ (24, 61) flow · column gap 12 pad 0 0 16 0 align CENTER · bg #ffffff (bg/surface) · radius 12px · shadow 1px 1px 6px 0 rgba(0, 0, 0, 0.15) `4101:129185`
+      - [khối] **Frame 427323674** — 1158×55 [FILL×HUG] · @ (0, 0) flow · column gap 8 pad 4 18 4 18 align CENTER · bg #ffffff (bg/surface) · radius 12px 12px 0 0 · shadow inset 0 -1px 0 0 #e2e8f0 `4101:129186`
         - [khối] **Frame 427323673** — 1122×47 [FILL×FIXED] · @ (18, 4) flow · row gap 8 align CENTER `4101:129187`
           - [khối] **Frame 427323677** — 153.43×46 [FILL×HUG] · @ (0, 0.5) flow · column align CENTER `4101:129188`
             - [chữ] “Thứ 2” — 153.43×19 [FILL×HUG] · @ (0, 0) flow · Afacad 15/19px 500 #64748b (color/text/secondary) · text-align center `4101:129189`
@@ -137,7 +140,7 @@ Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí ·
           - [khối] **Frame 427323679** — 153.43×46 [FILL×HUG] · @ (322.86, 0.5) flow · column align CENTER `4101:129196`
             - [chữ] “Thứ 4” — 153.43×19 [FILL×HUG] · @ (0, 0) flow · Afacad 15/19px 500 #64748b (color/text/secondary) · text-align center `4101:129197`
             - [khối] **Frame 427323675** — 68×27 [HUG×HUG] · @ (42.71, 19) flow · row gap 10 pad 3 8 3 8 justify CENTER align CENTER · bg #e65100 (color/brand/orange) · radius 8px `4101:129198`
-              - [chữ] “07.10” — 52×21 [FIXED×HUG] · @ (8, 3) flow · Afacad 17/21px 700 #ffffff · text-align center `4101:129199`
+              - [chữ] “07.10” — 52×21 [FIXED×HUG] · @ (8, 3) flow · Afacad 17/21px 700 #ffffff (text/on-brand) · text-align center `4101:129199`
           - [khối] **Frame 427323680** — 153.43×46 [FILL×HUG] · @ (484.29, 0.5) flow · column align CENTER `4101:129200`
             - [chữ] “Thứ 5” — 153.43×19 [FILL×HUG] · @ (0, 0) flow · Afacad 15/19px 500 #64748b (color/text/secondary) · text-align center `4101:129201`
             - [khối] **Frame 427323675** — 148×27 [FIXED×HUG] · @ (2.71, 19) flow · row gap 10 pad 3 8 3 8 justify CENTER align CENTER · radius 8px `4101:129202`

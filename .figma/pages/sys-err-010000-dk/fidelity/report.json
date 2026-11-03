@@ -12,19 +12,13 @@
   "pixels": {
     "width": 1440,
     "height": 810,
-    "mismatched": 2173,
-    "percent": 0.186,
+    "mismatched": 1854,
+    "percent": 0.159,
     "shapePercent": 0.002,
-    "textPercent": 2.087,
+    "textPercent": 1.777,
     "sizeMismatch": false
   },
   "textNodes": [
-    {
-      "id": "I5789:160540;2245:87864",
-      "name": "Label",
-      "pixels": 338,
-      "percent": 13.5
-    },
     {
       "id": "5789:160904",
       "name": "Bạn không có quyền truy cập trang này",
@@ -108,6 +102,12 @@
       "name": "Label",
       "pixels": 27,
       "percent": 1.1
+    },
+    {
+      "id": "I5789:160539;2245:87858",
+      "name": "Label",
+      "pixels": 24,
+      "percent": 1
     }
   ],
   "regions": [
@@ -453,7 +453,7 @@
     "over": []
   },
   "failures": [],
-  "url": "http://localhost:3108/loi-403-khong-co-quyen-truy-cap-dk",
+  "url": "http://localhost:3000/loi-403-khong-co-quyen-truy-cap-dk",
   "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
   "consoleErrors": [],
   "rootFound": true

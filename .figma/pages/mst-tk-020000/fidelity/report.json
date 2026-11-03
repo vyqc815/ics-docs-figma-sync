@@ -12,24 +12,24 @@
   "pixels": {
     "width": 1440,
     "height": 810,
-    "mismatched": 3429,
-    "percent": 0.294,
+    "mismatched": 3420,
+    "percent": 0.293,
     "shapePercent": 0.054,
-    "textPercent": 1.015,
+    "textPercent": 1.012,
     "sizeMismatch": false
   },
   "textNodes": [
     {
       "id": "3005:41011",
       "name": "Tạo tài khoản",
-      "pixels": 1376,
-      "percent": 24.7
+      "pixels": 1373,
+      "percent": 24.6
     },
     {
       "id": "3005:41022",
       "name": "Nguyễn Văn A",
-      "pixels": 654,
-      "percent": 9.9
+      "pixels": 648,
+      "percent": 9.8
     },
     {
       "id": "I3005:43093;3004:58620;2808:48145",
@@ -552,7 +552,7 @@
   "failures": [
     "2 elements are off by more than their limit (1px, 2.5px for text-driven; worst 2.66px)."
   ],
-  "url": "http://localhost:3108/tai-khoan/chi-tiet-tai-khoan",
+  "url": "http://localhost:3000/tai-khoan/chi-tiet-tai-khoan",
   "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
   "consoleErrors": [],
   "rootFound": true

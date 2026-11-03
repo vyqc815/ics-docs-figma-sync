@@ -1,6 +1,6 @@
 # Fidelity: ADM-TN-010000 — Tin nhắn / Danh sách mẫu tin nhắn
 
-- URL: `http://localhost:3108/tin-nhan/danh-sach-mau-tin-nhan`
+- URL: `http://localhost:3000/tin-nhan/danh-sach-mau-tin-nhan`
 - Verdict: **PASS**
 - Pixels outside text: **0.01%** differ (limit 0.5%); all pixels: 0.211%; inside text boxes: 0.754% (glyph rendering)
 - Boxes: 168/168 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 168, ≤1px: 168, ≤2px: 168, ≤4px: 168, >4px: 0

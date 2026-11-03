@@ -1,8 +1,8 @@
 # Fidelity: ADM-LOP-040800-DK — Lớp học / Cài đặt / OT
 
-- URL: `http://localhost:3108/lop-hoc/cai-dat/ot-dk`
+- URL: `http://localhost:3000/lop-hoc/cai-dat/ot-dk`
 - Verdict: **PASS**
-- Pixels outside text: **0.001%** differ (limit 0.5%); all pixels: 0.145%; inside text boxes: 2.146% (glyph rendering)
+- Pixels outside text: **0.001%** differ (limit 0.5%); all pixels: 0.122%; inside text boxes: 1.798% (glyph rendering)
 - Boxes: 128/128 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 128, ≤1px: 128, ≤2px: 128, ≤4px: 128, >4px: 0
 
 ## Pixel regions (largest first)
@@ -16,7 +16,6 @@
 | Text | Differing |
 | --- | --- |
 | Label (`I4056:118241;2245:87908`) | 13.7% |
-| Label (`I4056:118248;2245:87914`) | 13% |
 | Label (`I4056:118239;2245:87908`) | 8.6% |
 | Ngày Cập Nhật (`4056:118163`) | 4.3% |
 | Label (`I4056:118242;2245:87908`) | 4.3% |
@@ -30,6 +29,7 @@
 | Label (`I4056:118247;2245:87908`) | 1.4% |
 | Label (`I4056:118240;2245:87908`) | 1.2% |
 | Số Tiền (`4056:118159`) | 1.1% |
+| 25.09.2026 (`4056:118170`) | 1.1% |
 
 ## Largest box differences
 

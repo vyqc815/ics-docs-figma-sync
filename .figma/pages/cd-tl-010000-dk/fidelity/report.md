@@ -1,8 +1,8 @@
 # Fidelity: CD-TL-010000-DK — Tools / Giọng đọc / Đọc văn bản
 
-- URL: `http://localhost:3108/tools/giong-doc/doc-van-ban-dk`
+- URL: `http://localhost:3000/tools/giong-doc/doc-van-ban-dk`
 - Verdict: **PASS**
-- Pixels outside text: **0.002%** differ (limit 0.5%); all pixels: 0.19%; inside text boxes: 1.556% (glyph rendering)
+- Pixels outside text: **0.002%** differ (limit 0.5%); all pixels: 0.174%; inside text boxes: 1.422% (glyph rendering)
 - Boxes: 173/173 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 165, ≤1px: 171, ≤2px: 173, ≤4px: 173, >4px: 0
 
 ## Pixel regions (largest first)
@@ -17,7 +17,6 @@
 | Text | Differing |
 | --- | --- |
 | Label (`I6133:126670;6133:108639;2245:87820`) | 8.6% |
-| Label (`I6133:126670;6133:108641;2245:87774`) | 8.5% |
 | Label (`I6133:126670;6133:108633;2245:87820`) | 8% |
 | Label (`I6133:126670;6133:108625;2245:87768`) | 5.9% |
 | Button (`I6133:126815;1048:1232`) | 5.8% |
@@ -31,6 +30,7 @@
 | Tab (`I6133:126766;3857:80277`) | 2.8% |
 | Label (`I6133:126670;6133:108623;2245:87768`) | 2.4% |
 | Label (`I6133:126670;6133:108642;2245:87768`) | 2.2% |
+| Label (`I6133:126670;6133:108621;2245:87768`) | 2.1% |
 
 ## Largest box differences
 

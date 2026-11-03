@@ -5,7 +5,7 @@
 > **Nguồn:** PLS-ICS T8/2026 ›         ├─ CHỈ SỐ › ADM-TK-010000 — Thống kê / Chỉ số (`4101:131683`, file `rRVs5HX0kIHffbS0V40djG`)  
 > **Route:** `/thong-ke/chi-so`  
 > **Khung thiết kế:** 1440 × 810 px (cắt phần tràn ra ngoài khung)  
-> **Xuất lúc:** 2026-11-02T03:48:30.994Z  
+> **Xuất lúc:** 2026-11-03T01:02:30.601Z  
 > **Spec đầy đủ (giá trị chính xác từng node):** `../../../.figma/pages/adm-tk-010000/page-spec.json`
 
 ## 1. Tổng quan

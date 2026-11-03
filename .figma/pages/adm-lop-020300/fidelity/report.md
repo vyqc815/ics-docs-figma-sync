@@ -1,8 +1,8 @@
 # Fidelity: ADM-LOP-020300 — Chi tiết lớp học / Bài tập về nhà
 
-- URL: `http://localhost:3108/chi-tiet-lop-hoc/bai-tap-ve-nha`
+- URL: `http://localhost:3000/chi-tiet-lop-hoc/bai-tap-ve-nha`
 - Verdict: **PASS**
-- Pixels outside text: **0.001%** differ (limit 0.5%); all pixels: 0.307%; inside text boxes: 1.553% (glyph rendering)
+- Pixels outside text: **0.001%** differ (limit 0.5%); all pixels: 0.266%; inside text boxes: 1.344% (glyph rendering)
 - Boxes: 352/352 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 350, ≤1px: 350, ≤2px: 352, ≤4px: 352, >4px: 0
 
 ## Pixel regions (largest first)
@@ -16,12 +16,6 @@
 
 | Text | Differing |
 | --- | --- |
-| 100% (`I3497:68617;1308:6749`) | 24.7% |
-| 100% (`I3497:68630;1308:6749`) | 24.7% |
-| 100% (`I3502:69534;1308:6749`) | 24.7% |
-| 22/24 (`I3497:68616;1308:6798`) | 22.6% |
-| 22/24 (`I3497:68629;1308:6798`) | 22.6% |
-| 22/24 (`I3502:69533;1308:6798`) | 22.6% |
 | Tổng Quan (`3497:67474`) | 15.5% |
 | Ôn tập kiến thức HSK1 (1) (`3502:69112`) | 14.9% |
 | Label (`I4915:225881;4901:207251;2245:87908`) | 5.9% |
@@ -31,6 +25,12 @@
 | 00:14:01 (`3497:67558`) | 4% |
 | 00:14:01 (`3497:67578`) | 4% |
 | 00:14:01 (`3497:67618`) | 4% |
+| 00:14:01 (`3497:67638`) | 4% |
+| 00:14:01 (`3497:67658`) | 4% |
+| Tên (`I3502:69321;3138:130001`) | 3.9% |
+| ÔN TẬP: Giữa Kỳ 1 (`3497:68615`) | 3% |
+| ÔN TẬP: Giữa Kỳ 1 (`3502:69531`) | 3% |
+| Label (`I4915:225881;4901:207254;2245:87908`) | 2% |
 
 ## Largest box differences
 

@@ -12,19 +12,13 @@
   "pixels": {
     "width": 1440,
     "height": 989,
-    "mismatched": 2576,
-    "percent": 0.181,
+    "mismatched": 2531,
+    "percent": 0.178,
     "shapePercent": 0.001,
-    "textPercent": 0.94,
+    "textPercent": 0.924,
     "sizeMismatch": false
   },
   "textNodes": [
-    {
-      "id": "I4343:82847;1308:6706",
-      "name": "0%",
-      "pixels": 45,
-      "percent": 23
-    },
     {
       "id": "4343:82395",
       "name": "[Giữa Tuần - Thứ 4 - CSKH] Báo Cáo Tiến Độ Công Việc",
@@ -107,6 +101,12 @@
       "id": "4343:82770",
       "name": "Nắm các lịch KG trong tuần và plan KG tuần tiếp theo",
       "pixels": 73,
+      "percent": 0.4
+    },
+    {
+      "id": "4343:82848",
+      "name": "Tuần này",
+      "pixels": 18,
       "percent": 0.4
     }
   ],
@@ -441,7 +441,7 @@
     "over": []
   },
   "failures": [],
-  "url": "http://localhost:3108/task-tuan",
+  "url": "http://localhost:3000/task-tuan",
   "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
   "consoleErrors": [],
   "rootFound": true

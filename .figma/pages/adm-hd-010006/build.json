@@ -1,0 +1,22 @@
+{
+  "route": "/hoa-don/danh-sach-hoa-don/sau-khi-them-tag",
+  "pageFile": "components/figma/adm-hd-010006/index.tsx",
+  "docFile": "docs/pages/hoa-don/danh-sach-hoa-don/sau-khi-them-tag.md",
+  "sections": [
+    {
+      "nodeId": "3058:98039",
+      "component": "Header10",
+      "file": "components/figma/shared/Header10.tsx"
+    },
+    {
+      "nodeId": "4915:247062",
+      "component": "SidebarMenuAdmin",
+      "file": "components/figma/adm-hd-010006/SidebarMenuAdmin.tsx"
+    },
+    {
+      "nodeId": "3058:98172",
+      "component": "Maincontent",
+      "file": "components/figma/adm-hd-010006/Maincontent.tsx"
+    }
+  ]
+}

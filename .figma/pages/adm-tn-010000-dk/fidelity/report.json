@@ -12,19 +12,13 @@
   "pixels": {
     "width": 1440,
     "height": 982,
-    "mismatched": 3438,
-    "percent": 0.243,
+    "mismatched": 3095,
+    "percent": 0.219,
     "shapePercent": 0.002,
-    "textPercent": 0.906,
+    "textPercent": 0.815,
     "sizeMismatch": false
   },
   "textNodes": [
-    {
-      "id": "I4056:140505;2245:87774",
-      "name": "Label",
-      "pixels": 382,
-      "percent": 13.3
-    },
     {
       "id": "I4056:140553;1048:1240",
       "name": "Button",
@@ -107,6 +101,12 @@
       "id": "I4056:140501;2245:87768",
       "name": "Label",
       "pixels": 54,
+      "percent": 1.9
+    },
+    {
+      "id": "4056:140548",
+      "name": "Xem trước",
+      "pixels": 23,
       "percent": 1.9
     }
   ],
@@ -453,7 +453,7 @@
     "over": []
   },
   "failures": [],
-  "url": "http://localhost:3108/tin-nhan/danh-sach-mau-tin-nhan-dk",
+  "url": "http://localhost:3000/tin-nhan/danh-sach-mau-tin-nhan-dk",
   "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
   "consoleErrors": [],
   "rootFound": true

@@ -1,0 +1,22 @@
+{
+  "route": "/voucher/popup-chinh-sua-voucher",
+  "pageFile": "components/figma/adm-vc-010020/index.tsx",
+  "docFile": "docs/pages/voucher/popup-chinh-sua-voucher.md",
+  "sections": [
+    {
+      "nodeId": "3977:75871",
+      "component": "PopupHeader",
+      "file": "components/figma/adm-vc-010020/PopupHeader.tsx"
+    },
+    {
+      "nodeId": "3977:75872",
+      "component": "Body",
+      "file": "components/figma/adm-vc-010020/Body.tsx"
+    },
+    {
+      "nodeId": "3977:75905",
+      "component": "PopupFooter",
+      "file": "components/figma/adm-vc-010020/PopupFooter.tsx"
+    }
+  ]
+}

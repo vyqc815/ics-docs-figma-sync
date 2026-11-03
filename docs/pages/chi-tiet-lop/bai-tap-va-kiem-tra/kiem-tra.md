@@ -5,7 +5,7 @@
 > **Nguồn:** PLS-ICS T8/2026 ›             ├─ BÀI TẬP VỀ NHÀ VÀ KIỂM TRA › GV-LOP-040200 — Chi tiết lớp / Bài tập và Kiểm tra / Kiểm tra (`4324:86231`, file `rRVs5HX0kIHffbS0V40djG`)  
 > **Route:** `/chi-tiet-lop/bai-tap-va-kiem-tra/kiem-tra`  
 > **Khung thiết kế:** 1440 × 873 px (cắt phần tràn ra ngoài khung)  
-> **Xuất lúc:** 2026-11-02T03:54:31.295Z  
+> **Xuất lúc:** 2026-11-03T01:09:55.057Z  
 > **Spec đầy đủ (giá trị chính xác từng node):** `../../../../.figma/pages/gv-lop-040200/page-spec.json`
 
 ## 1. Tổng quan
@@ -26,6 +26,8 @@ Nền trang: `#f8fafc`.
 
 | Token | Biến CSS | Giá trị | Trỏ tới | Bộ / mode |
 | --- | --- | --- | --- | --- |
+| `bg/surface` | `--bg-surface` | `#ffffff` | color/neutral/white | Theme · Semantic / Light |
+| `brand/primary` | `--brand-primary` | `#e65100` | color/brand/orange | Theme · Semantic / Light |
 | `color/border/button` | `--color-border-button` | `#cbd5e1` | color/extended/cbd5e1 | Color Tokens / Light |
 | `color/border/default` | `--color-border-default` | `#e2e8f0` |  | Color Tokens / Light |
 | `color/border/subtle` | `--color-border-subtle` | `#f1f5f9` |  | Color Tokens / Light |
@@ -427,7 +429,7 @@ Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí ·
                   - [icon] **SVG** — 14×14 · @ (0, 2.5) flow · file /figma/assets/cd26e575cd42.svg `I4324:86355;1739:32349`
                   - [chữ] “Tìm kiếm” — 140×19 [FILL×HUG] · @ (18, 0) flow · Afacad 15/19px 400 #cccccc (color/text/placeholder) · truncate 1 lines `I4324:86355;1739:32351`
             - [khối] **Frame 1171274938** — 427×986 [FILL×HUG] · @ (0, 44) flow · column gap 12 `4324:86356`
-              - [khối] **Thẻ Kiểm tra 1** — 427×122 [FILL×HUG] · @ (0, 0) flow · column gap 8 pad 8 12 8 12 · bg #ffffff · radius 12px · border 1px solid #e65100 · shadow 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4324:99737`
+              - [khối] **Thẻ Kiểm tra 1** — 427×122 [FILL×HUG] · @ (0, 0) flow · column gap 8 pad 8 12 8 12 · bg #ffffff (bg/surface) · radius 12px · border 1px solid #e65100 (brand/primary) · shadow 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4324:99737`
                 - [khối] **Frame 1171274935** — 401×72 [FILL×HUG] · @ (13, 9) flow · row gap 12 align CENTER `4324:99738`
                   - [instance] **Atom/Badge** ⟨Atom/Badge: Label=1, Variant=Orange, Dropdown=Off⟩ — 24×24 · @ (0, 24) flow · row pad 4 10 4 10 justify CENTER align CENTER · bg #ffedd5 · radius 6px `4324:99739`
                     - [chữ] “1” — 8×18 [HUG×HUG] · @ (8, 3) flow · Afacad 14/18px 500 #e65100 (color/brand/orange) · no-wrap `I4324:99739;1050:2411`
@@ -446,7 +448,7 @@ Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí ·
                 - [khối] **Hành động · Chấm bài** — 401×24 [FILL×HUG] · @ (13, 89) flow · row justify MAX · clip `5425:274819`
                   - [instance] **Nút · Chấm bài** ⟨Atom/Button: Label=Chấm bài, Type=Outlined, Size=XSmall⟩ — 70×24 [HUG×FIXED] · @ (331, 0) flow · row pad 0 8 0 8 align CENTER · bg #ffffff · radius 6px · shadow inset 0 0 0 1px #e65100, 1px 1px 6px 0 rgba(230, 81, 0, 0.35), 0 0 4px 0 rgba(230, 81, 0, 0.05) `5425:274820`
                     - [chữ] “Chấm bài” — 54×18 [HUG×HUG] · @ (8, 3) flow · Afacad 14/18px 600 #e65100 (color/brand/orange) · no-wrap `I5425:274820;2159:26241`
-              - [khối] **Thẻ Kiểm tra 2** — 427×120 [FILL×HUG] · @ (0, 134) flow · column gap 8 pad 8 12 8 12 · bg #ffffff · radius 12px · shadow 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4324:99761`
+              - [khối] **Thẻ Kiểm tra 2** — 427×120 [FILL×HUG] · @ (0, 134) flow · column gap 8 pad 8 12 8 12 · bg #ffffff (bg/surface) · radius 12px · shadow 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4324:99761`
                 - [khối] **Frame 1171274935** — 403×72 [FILL×HUG] · @ (12, 8) flow · row gap 12 align CENTER `4324:99762`
                   - [instance] **Atom/Badge** ⟨Atom/Badge: Label=2, Variant=Orange, Dropdown=Off⟩ — 24×24 · @ (0, 24) flow · row pad 4 10 4 10 justify CENTER align CENTER · bg #ffedd5 · radius 6px `4324:99763`
                     - [chữ] “2” — 8×18 [HUG×HUG] · @ (8, 3) flow · Afacad 14/18px 500 #e65100 (color/brand/orange) · no-wrap `I4324:99763;1050:2411`
@@ -465,7 +467,7 @@ Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí ·
                 - [khối] **Hành động · Chấm bài** — 403×24 [FILL×HUG] · @ (12, 88) flow · row justify MAX · clip `5425:274822`
                   - [instance] **Nút · Chấm bài** ⟨Atom/Button: Label=Chấm bài, Type=Outlined, Size=XSmall⟩ — 70×24 [HUG×FIXED] · @ (333, 0) flow · row pad 0 8 0 8 align CENTER · bg #ffffff · radius 6px · shadow inset 0 0 0 1px #e65100, 1px 1px 6px 0 rgba(230, 81, 0, 0.35), 0 0 4px 0 rgba(230, 81, 0, 0.05) `5425:274823`
                     - [chữ] “Chấm bài” — 54×18 [HUG×HUG] · @ (8, 3) flow · Afacad 14/18px 600 #e65100 (color/brand/orange) · no-wrap `I5425:274823;2159:26241`
-              - [khối] **Thẻ Kiểm tra 3** — 427×120 [FILL×HUG] · @ (0, 266) flow · column gap 8 pad 8 12 8 12 · bg #ffffff · radius 12px · shadow 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4324:99785`
+              - [khối] **Thẻ Kiểm tra 3** — 427×120 [FILL×HUG] · @ (0, 266) flow · column gap 8 pad 8 12 8 12 · bg #ffffff (bg/surface) · radius 12px · shadow 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4324:99785`
                 - [khối] **Frame 1171274935** — 403×72 [FILL×HUG] · @ (12, 8) flow · row gap 12 align CENTER `4324:99786`
                   - [instance] **Atom/Badge** ⟨Atom/Badge: Label=3, Variant=Orange, Dropdown=Off⟩ — 24×24 · @ (0, 24) flow · row pad 4 10 4 10 justify CENTER align CENTER · bg #ffedd5 · radius 6px `4324:99787`
                     - [chữ] “3” — 8×18 [HUG×HUG] · @ (8, 3) flow · Afacad 14/18px 500 #e65100 (color/brand/orange) · no-wrap `I4324:99787;1050:2411`
@@ -484,7 +486,7 @@ Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí ·
                 - [khối] **Hành động · Chấm bài** — 403×24 [FILL×HUG] · @ (12, 88) flow · row justify MAX · clip `5425:274825`
                   - [instance] **Nút · Chấm bài** ⟨Atom/Button: Label=Chấm bài, Type=Outlined, Size=XSmall⟩ — 70×24 [HUG×FIXED] · @ (333, 0) flow · row pad 0 8 0 8 align CENTER · bg #ffffff · radius 6px · shadow inset 0 0 0 1px #e65100, 1px 1px 6px 0 rgba(230, 81, 0, 0.35), 0 0 4px 0 rgba(230, 81, 0, 0.05) `5425:274826`
                     - [chữ] “Chấm bài” — 54×18 [HUG×HUG] · @ (8, 3) flow · Afacad 14/18px 600 #e65100 (color/brand/orange) · no-wrap `I5425:274826;2159:26241`
-              - [khối] **Thẻ Kiểm tra 4** — 427×88 [FILL×HUG] · @ (0, 398) flow · column gap 8 pad 8 12 8 12 · bg #ffffff · radius 12px · shadow 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4324:99809`
+              - [khối] **Thẻ Kiểm tra 4** — 427×88 [FILL×HUG] · @ (0, 398) flow · column gap 8 pad 8 12 8 12 · bg #ffffff (bg/surface) · radius 12px · shadow 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4324:99809`
                 - [khối] **Frame 1171274935** — 403×72 [FILL×HUG] · @ (12, 8) flow · row gap 12 align CENTER `4324:99810`
                   - [instance] **Atom/Badge** ⟨Atom/Badge: Label=4, Variant=Count, Dropdown=Off⟩ — 24×24 · @ (0, 24) flow · row pad 4 8 4 8 justify CENTER align CENTER · bg #f1f5f9 · radius 6px `4324:99811`
                     - [chữ] “4” — 8×18 [HUG×HUG] · @ (8, 3) flow · Afacad 14/18px 500 #334155 (color/text/primary) · no-wrap `I4324:99811;1050:2409`
@@ -494,7 +496,7 @@ Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí ·
                     - [khối] **Container** — 271×54 [FILL×HUG] · @ (0, 18) flow · column `4324:99814`
                       - [chữ] “MINI TEST 1 - BẢNG CHỮ CÁI” — 271×18 [FILL×HUG] · @ (0, 0) flow · Afacad 14/18px 600 #334155 (color/text/primary) `4324:99815`
                       - [chữ] “- Bảng chữ cái tiếng Đức ⏎ - Đánh vần tên riêng” — 271×36 [FILL×HUG] · @ (0, 18) flow · Afacad 14/18px 400 #64748b (color/text/secondary) `4324:99816`
-              - [khối] **Thẻ Kiểm tra 5** — 427×88 [FILL×HUG] · @ (0, 498) flow · column gap 8 pad 8 12 8 12 · bg #ffffff · radius 12px · shadow 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4324:99819`
+              - [khối] **Thẻ Kiểm tra 5** — 427×88 [FILL×HUG] · @ (0, 498) flow · column gap 8 pad 8 12 8 12 · bg #ffffff (bg/surface) · radius 12px · shadow 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4324:99819`
                 - [khối] **Frame 1171274935** — 403×72 [FILL×HUG] · @ (12, 8) flow · row gap 12 align CENTER `4324:99820`
                   - [instance] **Atom/Badge** ⟨Atom/Badge: Label=5, Variant=Count, Dropdown=Off⟩ — 24×24 · @ (0, 24) flow · row pad 4 8 4 8 justify CENTER align CENTER · bg #f1f5f9 · radius 6px `4324:99821`
                     - [chữ] “5” — 8×18 [HUG×HUG] · @ (8, 3) flow · Afacad 14/18px 500 #334155 (color/text/primary) · no-wrap `I4324:99821;1050:2409`
@@ -504,7 +506,7 @@ Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí ·
                     - [khối] **Container** — 271×54 [FILL×HUG] · @ (0, 18) flow · column `4324:99824`
                       - [chữ] “MINI TEST 2 - NGUYÊN ÂM ĐƠN” — 271×18 [FILL×HUG] · @ (0, 0) flow · Afacad 14/18px 600 #334155 (color/text/primary) `4324:99825`
                       - [chữ] “- Nguyên âm a, e, i, o, u ⏎ - Nguyên âm dài và ngắn” — 271×36 [FILL×HUG] · @ (0, 18) flow · Afacad 14/18px 400 #64748b (color/text/secondary) `4324:99826`
-              - [khối] **Thẻ Kiểm tra 6** — 427×88 [FILL×HUG] · @ (0, 598) flow · column gap 8 pad 8 12 8 12 · bg #ffffff · radius 12px · shadow 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4324:99829`
+              - [khối] **Thẻ Kiểm tra 6** — 427×88 [FILL×HUG] · @ (0, 598) flow · column gap 8 pad 8 12 8 12 · bg #ffffff (bg/surface) · radius 12px · shadow 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4324:99829`
                 - [khối] **Frame 1171274935** — 403×72 [FILL×HUG] · @ (12, 8) flow · row gap 12 align CENTER `4324:99830`
                   - [instance] **Atom/Badge** ⟨Atom/Badge: Label=6, Variant=Count, Dropdown=Off⟩ — 24×24 · @ (0, 24) flow · row pad 4 8 4 8 justify CENTER align CENTER · bg #f1f5f9 · radius 6px `4324:99831`
                     - [chữ] “6” — 8×18 [HUG×HUG] · @ (8, 3) flow · Afacad 14/18px 500 #334155 (color/text/primary) · no-wrap `I4324:99831;1050:2409`
@@ -514,7 +516,7 @@ Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí ·
                     - [khối] **Container** — 271×54 [FILL×HUG] · @ (0, 18) flow · column `4324:99834`
                       - [chữ] “MINI TEST 3 - NGUYÊN ÂM ĐÔI” — 271×18 [FILL×HUG] · @ (0, 0) flow · Afacad 14/18px 600 #334155 (color/text/primary) `4324:99835`
                       - [chữ] “- Nguyên âm đôi ei, ie, eu, äu, au ⏎ - Phân biệt khi đọc” — 271×36 [FILL×HUG] · @ (0, 18) flow · Afacad 14/18px 400 #64748b (color/text/secondary) `4324:99836`
-              - [khối] **Thẻ Kiểm tra 7** — 427×88 [FILL×HUG] · @ (0, 698) flow · column gap 8 pad 8 12 8 12 · bg #ffffff · radius 12px · shadow 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4324:99839`
+              - [khối] **Thẻ Kiểm tra 7** — 427×88 [FILL×HUG] · @ (0, 698) flow · column gap 8 pad 8 12 8 12 · bg #ffffff (bg/surface) · radius 12px · shadow 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4324:99839`
                 - [khối] **Frame 1171274935** — 403×72 [FILL×HUG] · @ (12, 8) flow · row gap 12 align CENTER `4324:99840`
                   - [instance] **Atom/Badge** ⟨Atom/Badge: Label=7, Variant=Count, Dropdown=Off⟩ — 24×24 · @ (0, 24) flow · row pad 4 8 4 8 justify CENTER align CENTER · bg #f1f5f9 · radius 6px `4324:99841`
                     - [chữ] “7” — 8×18 [HUG×HUG] · @ (8, 3) flow · Afacad 14/18px 500 #334155 (color/text/primary) · no-wrap `I4324:99841;1050:2409`
@@ -524,7 +526,7 @@ Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí ·
                     - [khối] **Container** — 271×54 [FILL×HUG] · @ (0, 18) flow · column `4324:99844`
                       - [chữ] “MINI TEST 4 - PHỤ ÂM ĐẶC BIỆT” — 271×18 [FILL×HUG] · @ (0, 0) flow · Afacad 14/18px 600 #334155 (color/text/primary) `4324:99845`
                       - [chữ] “- Phụ âm ch, sch, ß, z, w ⏎ - Luyện đọc từ có phụ âm đặc biệt” — 271×36 [FILL×HUG] · @ (0, 18) flow · Afacad 14/18px 400 #64748b (color/text/secondary) `4324:99846`
-              - [khối] **Thẻ Kiểm tra 8** — 427×88 [FILL×HUG] · @ (0, 798) flow · column gap 8 pad 8 12 8 12 · bg #ffffff · radius 12px · shadow 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4324:99849`
+              - [khối] **Thẻ Kiểm tra 8** — 427×88 [FILL×HUG] · @ (0, 798) flow · column gap 8 pad 8 12 8 12 · bg #ffffff (bg/surface) · radius 12px · shadow 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4324:99849`
                 - [khối] **Frame 1171274935** — 403×72 [FILL×HUG] · @ (12, 8) flow · row gap 12 align CENTER `4324:99850`
                   - [instance] **Atom/Badge** ⟨Atom/Badge: Label=8, Variant=Count, Dropdown=Off⟩ — 24×24 · @ (0, 24) flow · row pad 4 8 4 8 justify CENTER align CENTER · bg #f1f5f9 · radius 6px `4324:99851`
                     - [chữ] “8” — 8×18 [HUG×HUG] · @ (8, 3) flow · Afacad 14/18px 500 #334155 (color/text/primary) · no-wrap `I4324:99851;1050:2409`
@@ -534,7 +536,7 @@ Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí ·
                     - [khối] **Container** — 271×54 [FILL×HUG] · @ (0, 18) flow · column `4324:99854`
                       - [chữ] “FINAL TEST – PHÁT ÂM TIẾNG ĐỨC” — 271×18 [FILL×HUG] · @ (0, 0) flow · Afacad 14/18px 600 #334155 (color/text/primary) `4324:99855`
                       - [chữ] “- Tổng hợp phát âm ⏎ - Đọc to đoạn văn ngắn” — 271×36 [FILL×HUG] · @ (0, 18) flow · Afacad 14/18px 400 #64748b (color/text/secondary) `4324:99856`
-              - [khối] **Thẻ Kiểm tra 9** — 427×88 [FILL×HUG] · @ (0, 898) flow · column gap 8 pad 8 12 8 12 · bg #ffffff · radius 12px · shadow 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4324:99859`
+              - [khối] **Thẻ Kiểm tra 9** — 427×88 [FILL×HUG] · @ (0, 898) flow · column gap 8 pad 8 12 8 12 · bg #ffffff (bg/surface) · radius 12px · shadow 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4324:99859`
                 - [khối] **Frame 1171274935** — 403×72 [FILL×HUG] · @ (12, 8) flow · row gap 12 align CENTER `4324:99860`
                   - [instance] **Atom/Badge** ⟨Atom/Badge: Label=9, Variant=Count, Dropdown=Off⟩ — 24×24 · @ (0, 24) flow · row pad 4 8 4 8 justify CENTER align CENTER · bg #f1f5f9 · radius 6px `4324:99861`
                     - [chữ] “9” — 8×18 [HUG×HUG] · @ (8, 3) flow · Afacad 14/18px 500 #334155 (color/text/primary) · no-wrap `I4324:99861;1050:2409`

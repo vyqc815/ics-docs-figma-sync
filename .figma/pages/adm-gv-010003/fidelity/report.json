@@ -1,0 +1,544 @@
+{
+  "pass": true,
+  "thresholds": {
+    "maxPixelDiffPercent": 0.5,
+    "maxBoxDelta": 1,
+    "maxTextBoxDelta": 2.5,
+    "colorThreshold": 0.1,
+    "aaRadius": 1,
+    "subpixel": true,
+    "maxTextNodeDiffPercent": 35
+  },
+  "pixels": {
+    "width": 1440,
+    "height": 982,
+    "mismatched": 1912,
+    "percent": 0.135,
+    "shapePercent": 0.005,
+    "textPercent": 0.663,
+    "sizeMismatch": false
+  },
+  "textNodes": [
+    {
+      "id": "I3210:30305;3138:130000;1971:8814",
+      "name": "Value",
+      "pixels": 18,
+      "percent": 6.6
+    },
+    {
+      "id": "I1739:33300;2015:36008",
+      "name": "Value",
+      "pixels": 83,
+      "percent": 6.1
+    },
+    {
+      "id": "I1739:33301;2015:36008",
+      "name": "Value",
+      "pixels": 29,
+      "percent": 5.8
+    },
+    {
+      "id": "I4713:129443;2015:36008",
+      "name": "Value",
+      "pixels": 60,
+      "percent": 4.5
+    },
+    {
+      "id": "I1739:33298;1739:32346",
+      "name": "Tìm Kiếm Nâng Cao",
+      "pixels": 111,
+      "percent": 4.4
+    },
+    {
+      "id": "3210:30286",
+      "name": "Đang dạy",
+      "pixels": 62,
+      "percent": 4.3
+    },
+    {
+      "id": "3210:30298",
+      "name": "Lịch dạy",
+      "pixels": 55,
+      "percent": 4.2
+    },
+    {
+      "id": "3210:30300",
+      "name": "Ghi chú",
+      "pixels": 46,
+      "percent": 3.8
+    },
+    {
+      "id": "3210:30294",
+      "name": "Đánh giá",
+      "pixels": 46,
+      "percent": 3.3
+    },
+    {
+      "id": "I3210:30597;1391:17481",
+      "name": "3",
+      "pixels": 7,
+      "percent": 3.2
+    },
+    {
+      "id": "3210:30290",
+      "name": "Đi học",
+      "pixels": 35,
+      "percent": 2.9
+    },
+    {
+      "id": "3210:30282",
+      "name": "Mã giáo viên",
+      "pixels": 51,
+      "percent": 2.7
+    },
+    {
+      "id": "1739:33294",
+      "name": "Danh sách giáo viên",
+      "pixels": 164,
+      "percent": 2.6
+    },
+    {
+      "id": "3210:30292",
+      "name": "BTVN",
+      "pixels": 32,
+      "percent": 2.6
+    },
+    {
+      "id": "3210:30284",
+      "name": "Số lớp",
+      "pixels": 30,
+      "percent": 2.5
+    }
+  ],
+  "regions": [
+    {
+      "x": 480,
+      "y": 88,
+      "width": 16,
+      "height": 24,
+      "pixels": 24,
+      "node": {
+        "id": "1739:33295",
+        "name": "Atom/Icon Button",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 264,
+      "y": 144,
+      "width": 16,
+      "height": 8,
+      "pixels": 12,
+      "node": {
+        "id": "1505:22113",
+        "name": "Frame 427326022",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 1256,
+      "y": 368,
+      "width": 16,
+      "height": 16,
+      "pixels": 5,
+      "node": {
+        "id": "I3210:30370;3195:39954",
+        "name": "Subtract",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 1400,
+      "y": 160,
+      "width": 8,
+      "height": 8,
+      "pixels": 4,
+      "node": {
+        "id": "1505:22112",
+        "name": "Frame 427326021",
+        "role": "container"
+      }
+    },
+    {
+      "x": 1256,
+      "y": 432,
+      "width": 16,
+      "height": 16,
+      "pixels": 4,
+      "node": {
+        "id": "I3210:30400;3195:39954",
+        "name": "Subtract",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 1256,
+      "y": 504,
+      "width": 16,
+      "height": 16,
+      "pixels": 4,
+      "node": {
+        "id": "I3210:30423;3195:39954",
+        "name": "Subtract",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 1256,
+      "y": 576,
+      "width": 16,
+      "height": 16,
+      "pixels": 4,
+      "node": {
+        "id": "I3210:30478;3195:39954",
+        "name": "Subtract",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 1256,
+      "y": 640,
+      "width": 16,
+      "height": 8,
+      "pixels": 4,
+      "node": {
+        "id": "I3210:30501;3195:39954",
+        "name": "Subtract",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 1256,
+      "y": 848,
+      "width": 16,
+      "height": 16,
+      "pixels": 4,
+      "node": {
+        "id": "I3210:30593;3195:39954",
+        "name": "Subtract",
+        "role": "icon"
+      }
+    }
+  ],
+  "boxes": {
+    "measured": 699,
+    "missing": [],
+    "withinThreshold": 699,
+    "buckets": {
+      "≤0.5px": 698,
+      "≤1px": 698,
+      "≤2px": 699,
+      "≤4px": 699,
+      ">4px": 0
+    },
+    "worst": [
+      {
+        "id": "3210:30286",
+        "name": "Đang dạy",
+        "role": "text",
+        "delta": 1.16,
+        "dx": -0.58,
+        "dy": 0,
+        "dw": 1.16,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4915:236558;4915:212320",
+        "name": "Frame 1171274926",
+        "role": "icon",
+        "delta": 0.02,
+        "dx": 0,
+        "dy": -0.02,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I3210:30366;1308:10502",
+        "name": "Vector",
+        "role": "icon",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0.01,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I3210:30396;1308:10508",
+        "name": "Vector",
+        "role": "icon",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0.01,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I3210:30419;1308:10514",
+        "name": "Vector",
+        "role": "icon",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0.01,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I3210:30442;1308:10520",
+        "name": "Vector",
+        "role": "icon",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0.01,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4915:236558;4915:212305",
+        "name": "Left: ICS Logo & Toggle",
+        "role": "container",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": -0.01,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4915:236558;4915:212306",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": -0.01,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4915:236558;4915:212307",
+        "name": "Navigation / Sidebar Menu / Light",
+        "role": "icon",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": -0.01,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4915:236558;4915:212319",
+        "name": "v20.07.2026_17:30",
+        "role": "text",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": -0.01,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "1505:20828",
+        "name": "Body",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 1,
+        "textDriven": false
+      },
+      {
+        "id": "2223:84199",
+        "name": "Header",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 1,
+        "textDriven": false
+      },
+      {
+        "id": "4050:119257",
+        "name": "Group 240178",
+        "role": "icon",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 1,
+        "textDriven": false
+      },
+      {
+        "id": "2223:84247",
+        "name": "ACCOUNT",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I2223:84247;2008:30986",
+        "name": "Frame 1171274934",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I2223:84247;2008:31747",
+        "name": "Background+Border+Shadow",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I2223:84247;2008:31748",
+        "name": "Avatar",
+        "role": "image",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I2223:84247;1391:17264",
+        "name": "Container",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I2223:84247;1391:17266",
+        "name": "Admin Đắc Nhân",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I2223:84247;1391:17268",
+        "name": "admin@gmail.com",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I2223:84247;1391:17270",
+        "name": "Overlay",
+        "role": "icon",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "1505:20872",
+        "name": "Main - Scrollable Workspace",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 1,
+        "textDriven": false
+      },
+      {
+        "id": "1739:33292",
+        "name": "Frame 427321957",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "1739:33293",
+        "name": "Frame 427321947",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "1739:33294",
+        "name": "Danh sách giáo viên",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      }
+    ],
+    "maxDelta": 1.16,
+    "over": []
+  },
+  "failures": [],
+  "url": "http://localhost:3000/danh-sach-giao-vien/ket-qua-tim-kiem-nang-cao",
+  "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
+  "consoleErrors": [],
+  "rootFound": true
+}

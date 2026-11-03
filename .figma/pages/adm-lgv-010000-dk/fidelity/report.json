@@ -12,19 +12,13 @@
   "pixels": {
     "width": 1440,
     "height": 810,
-    "mismatched": 2679,
-    "percent": 0.23,
+    "mismatched": 2091,
+    "percent": 0.179,
     "shapePercent": 0.007,
-    "textPercent": 1.099,
+    "textPercent": 0.85,
     "sizeMismatch": false
   },
   "textNodes": [
-    {
-      "id": "I4343:91918;2245:87864",
-      "name": "Label",
-      "pixels": 615,
-      "percent": 24.6
-    },
     {
       "id": "4343:92105",
       "name": "Nguyễn Minh Phúc",
@@ -108,6 +102,12 @@
       "name": "Label",
       "pixels": 49,
       "percent": 3
+    },
+    {
+      "id": "4343:92191",
+      "name": "Thanh Thuỳ",
+      "pixels": 38,
+      "percent": 2.8
     }
   ],
   "regions": [
@@ -489,7 +489,7 @@
     "over": []
   },
   "failures": [],
-  "url": "http://localhost:3108/luong/luong-giao-vien-dk",
+  "url": "http://localhost:3000/luong/luong-giao-vien-dk",
   "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
   "consoleErrors": [],
   "rootFound": true

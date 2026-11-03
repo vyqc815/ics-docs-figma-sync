@@ -10,8 +10,8 @@
     },
     {
       "nodeId": "4056:124741",
-      "component": "Sidebar",
-      "file": "components/figma/adm-gv-020100-dk/Sidebar.tsx"
+      "component": "Sidebar2",
+      "file": "components/figma/shared/Sidebar2.tsx"
     }
   ]
 }

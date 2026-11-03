@@ -12,55 +12,13 @@
   "pixels": {
     "width": 1440,
     "height": 873,
-    "mismatched": 4613,
-    "percent": 0.367,
+    "mismatched": 3643,
+    "percent": 0.29,
     "shapePercent": 0,
-    "textPercent": 1.592,
+    "textPercent": 1.257,
     "sizeMismatch": false
   },
   "textNodes": [
-    {
-      "id": "I4324:100396;1308:6798",
-      "name": "22/24",
-      "pixels": 82,
-      "percent": 24.4
-    },
-    {
-      "id": "I4324:100406;1308:6798",
-      "name": "22/24",
-      "pixels": 65,
-      "percent": 23.2
-    },
-    {
-      "id": "I4324:100416;1308:6798",
-      "name": "22/24",
-      "pixels": 65,
-      "percent": 23.2
-    },
-    {
-      "id": "I4324:100397;1308:6749",
-      "name": "100%",
-      "pixels": 67,
-      "percent": 19.9
-    },
-    {
-      "id": "I4324:100407;1308:6749",
-      "name": "100%",
-      "pixels": 67,
-      "percent": 19.9
-    },
-    {
-      "id": "I4324:100417;1308:6749",
-      "name": "100%",
-      "pixels": 67,
-      "percent": 19.9
-    },
-    {
-      "id": "I4324:101709;2245:87914",
-      "name": "Label",
-      "pixels": 764,
-      "percent": 19
-    },
     {
       "id": "4324:100240",
       "name": "Tổng Quan",
@@ -108,6 +66,48 @@
       "name": "00:05:49",
       "pixels": 71,
       "percent": 5.6
+    },
+    {
+      "id": "4324:100375",
+      "name": "00:05:42",
+      "pixels": 70,
+      "percent": 5.6
+    },
+    {
+      "id": "4324:100304",
+      "name": "00:04:06",
+      "pixels": 66,
+      "percent": 5.2
+    },
+    {
+      "id": "I4324:101709;2245:87914",
+      "name": "Label",
+      "pixels": 207,
+      "percent": 5.1
+    },
+    {
+      "id": "I4324:101710;2245:87908",
+      "name": "Label",
+      "pixels": 104,
+      "percent": 4.9
+    },
+    {
+      "id": "I4324:101706;689:15190",
+      "name": "Label",
+      "pixels": 54,
+      "percent": 4.6
+    },
+    {
+      "id": "I4324:101715;689:15190",
+      "name": "Label",
+      "pixels": 42,
+      "percent": 3.9
+    },
+    {
+      "id": "I4324:101711;689:15190",
+      "name": "Label",
+      "pixels": 38,
+      "percent": 3.6
     }
   ],
   "regions": [],
@@ -428,7 +428,7 @@
     "over": []
   },
   "failures": [],
-  "url": "http://localhost:3108/chi-tiet-lop/bai-tap-va-kiem-tra/kiem-tra-dk",
+  "url": "http://localhost:3000/chi-tiet-lop/bai-tap-va-kiem-tra/kiem-tra-dk",
   "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
   "consoleErrors": [],
   "rootFound": true

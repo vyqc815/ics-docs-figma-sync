@@ -1,0 +1,25 @@
+{
+  "route": "/gop-y/giao-vien-dk",
+  "pageFile": "components/figma/adm-gy-010010-dk/index.tsx",
+  "docFile": "docs/pages/gop-y/giao-vien-dk.md",
+  "sections": [
+    {
+      "nodeId": "4343:86934",
+      "component": "Header7",
+      "file": "components/figma/shared/Header7.tsx"
+    },
+    {
+      "nodeId": "4343:86983",
+      "component": "Sidebar",
+      "file": "components/figma/adm-gy-010010-dk/Sidebar.tsx"
+    },
+    {
+      "nodeId": "4343:87071",
+      "component": "MainGopY",
+      "file": "components/figma/adm-gy-010010-dk/MainGopY.tsx"
+    }
+  ],
+  "idAlias": {
+    "4343:86934": "4343:86736"
+  }
+}

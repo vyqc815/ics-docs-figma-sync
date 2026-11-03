@@ -5,13 +5,13 @@
   "sections": [
     {
       "nodeId": "4885:59799",
-      "component": "Body",
-      "file": "components/figma/gv-ks-010000-dk/Body.tsx"
+      "component": "Body12",
+      "file": "components/figma/shared/Body12.tsx"
     },
     {
       "nodeId": "4885:59931",
       "component": "MainKhaoSat",
-      "file": "components/figma/gv-ks-010000-dk/MainKhaoSat.tsx"
+      "file": "components/figma/shared/MainKhaoSat.tsx"
     }
   ]
 }

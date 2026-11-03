@@ -5,7 +5,7 @@
 > **Nguồn:** PLS-ICS T8/2026 ›         ├─ GIÁO VIÊN › ADM-GV-020500 — Chi tiết giáo viên / Quản lý đăng ký lịch (`4056:126142`, file `rRVs5HX0kIHffbS0V40djG`)  
 > **Route:** `/chi-tiet-giao-vien/quan-ly-dang-ky-lich-adm-gv-020500-2`  
 > **Khung thiết kế:** 1440 × 905 px (cắt phần tràn ra ngoài khung)  
-> **Xuất lúc:** 2026-11-02T03:29:36.181Z  
+> **Xuất lúc:** 2026-11-03T03:21:32.870Z  
 > **Spec đầy đủ (giá trị chính xác từng node):** `../../../.figma/pages/adm-gv-020500-2/page-spec.json`
 
 ## 1. Tổng quan
@@ -25,19 +25,20 @@ Nền trang: `#121213` (bg/canvas).
 
 | Token | Biến CSS | Giá trị | Trỏ tới | Bộ / mode |
 | --- | --- | --- | --- | --- |
-| `bg/brand-tint` | `--bg-brand-tint` | `#fff7ed` | color/extended/fff7ed | Theme · Semantic / Light |
-| `bg/brand-tint-strong` | `--bg-brand-tint-strong` | `#ffedd5` | color/extended/ffedd5 | Theme · Semantic / Light |
-| `bg/canvas` | `--bg-canvas` | `#f8fafc` | color/extended/f8fafc | Theme · Semantic / Light |
-| `bg/strong` | `--bg-strong` | `#e2e8f0` | color/border/default | Theme · Semantic / Light |
-| `bg/subtle` | `--bg-subtle` | `#f1f5f9` | color/surface/input | Theme · Semantic / Light |
-| `bg/surface` | `--bg-surface` | `#ffffff` | color/neutral/white | Theme · Semantic / Light |
+| `bg/brand-tint` | `--bg-brand-tint` | `#102218` |  | Theme · Semantic / Dark · Minimal |
+| `bg/brand-tint-strong` | `--bg-brand-tint-strong` | `#153020` |  | Theme · Semantic / Dark · Minimal |
+| `bg/canvas` | `--bg-canvas` | `#121213` |  | Theme · Semantic / Dark · Minimal |
+| `bg/strong` | `--bg-strong` | `#2a2a2e` |  | Theme · Semantic / Dark · Minimal |
+| `bg/subtle` | `--bg-subtle` | `#202023` |  | Theme · Semantic / Dark · Minimal |
+| `bg/surface` | `--bg-surface` | `#18181a` |  | Theme · Semantic / Dark · Minimal |
 | `bố cục/lề hai bên` | `--bo-cuc-le-hai-ben` | `16` | spacing/16 | Number Tokens / Mode 1 |
 | `bố cục/lề trên dưới` | `--bo-cuc-le-tren-duoi` | `24` | spacing/24 | Number Tokens / Mode 1 |
-| `border/brand` | `--border-brand` | `#fed7aa` | color/extended/fed7aa | Theme · Semantic / Light |
-| `border/default` | `--border-default` | `#e2e8f0` | color/border/default | Theme · Semantic / Light |
-| `border/strong` | `--border-strong` | `#cbd5e1` | color/extended/cbd5e1 | Theme · Semantic / Light |
-| `brand/primary` | `--brand-primary` | `#e65100` | color/brand/orange | Theme · Semantic / Light |
+| `border/brand` | `--border-brand` | `#1e4d31` |  | Theme · Semantic / Dark · Minimal |
+| `border/default` | `--border-default` | `#27272a` |  | Theme · Semantic / Dark · Minimal |
+| `border/strong` | `--border-strong` | `#3f3f46` |  | Theme · Semantic / Dark · Minimal |
+| `brand/primary` | `--brand-primary` | `#16a34a` |  | Theme · Semantic / Dark · Minimal |
 | `color/neutral/white` | `--color-neutral-white` | `#ffffff` |  | Color Tokens / Light |
+| `color/text/primary` | `--color-text-primary` | `#334155` |  | Color Tokens / Light |
 | `radius/12` | `--radius-12` | `12` |  | Number Tokens / Mode 1 |
 | `radius/6` | `--radius-6` | `6` |  | Number Tokens / Mode 1 |
 | `radius/8` | `--radius-8` | `8` |  | Number Tokens / Mode 1 |
@@ -45,9 +46,10 @@ Nền trang: `#121213` (bg/canvas).
 | `spacing/12` | `--spacing-12` | `12` |  | Number Tokens / Mode 1 |
 | `spacing/4` | `--spacing-4` | `4` |  | Number Tokens / Mode 1 |
 | `spacing/8` | `--spacing-8` | `8` |  | Number Tokens / Mode 1 |
-| `text/primary` | `--text-primary` | `#334155` | color/text/primary | Theme · Semantic / Light |
-| `text/secondary` | `--text-secondary` | `#64748b` | color/text/secondary | Theme · Semantic / Light |
-| `theme/is-dark` | `--theme-is-dark` | `false` |  | Theme · Semantic / Light |
+| `text/on-brand` | `--text-on-brand` | `#ffffff` |  | Theme · Semantic / Dark · Minimal |
+| `text/primary` | `--text-primary` | `#ededef` |  | Theme · Semantic / Dark · Minimal |
+| `text/secondary` | `--text-secondary` | `#a1a1aa` |  | Theme · Semantic / Dark · Minimal |
+| `theme/is-dark` | `--theme-is-dark` | `true` |  | Theme · Semantic / Dark · Minimal |
 
 **Style Figma đang dùng:**
 
@@ -85,7 +87,7 @@ Nền trang: `#121213` (bg/canvas).
 | — | Afacad | 15 / 20px | 700 | 0 | #ededef (text/primary) | 1 | “Ghi chú” |
 | — | Afacad | 14 / 19px | 400 | 0 | #a1a1aa (text/secondary) | 3 | “07h30 - 12h00” |
 | — | Afacad | 14 / 19px | 500 | 0 | #a1a1aa (text/secondary) | 3 | “Trước 9h tối” |
-| — | Afacad | 14 / 20px | 400 | 0 | #ffffff | 1 | “Rê chuột vào ô đã đăng ký để xem ghi ch…” |
+| — | Afacad | 14 / 20px | 400 | 0 | #ffffff (text/on-brand) | 1 | “Rê chuột vào ô đã đăng ký để xem ghi ch…” |
 | `Body/13/SemiBold` | Afacad | 13 / 16px | 600 | 0 | #ffffff (color/neutral/white) | 3 | “20%” |
 | — | Unbounded | 13 / 16px | 600 | 0 | #ffffff (color/neutral/white) | 1 | “Admin Đắc Nhân” |
 | — | Afacad | 13 / 16px | 500 | 0 | #ffffff (color/neutral/white) | 1 | “admin@gmail.com” |
@@ -227,8 +229,8 @@ Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí ·
         - [khối] **Footer** — 1158×36 [FILL×HUG] · @ (0, 569) flow · row justify MAX · clip `4056:126295`
           - [instance] **Atom/Button** ⟨Atom/Button: Label=Cập nhật, Type=Warning, Size=Medium⟩ — 110×36 [HUG×FIXED] · @ (1048, 0) flow · row pad 9 24 9 24 justify CENTER align CENTER · bg #16a34a (brand/primary) · radius 8px · shadow inset 0 0 0 1px #18181a, 1px 1px 6px 0 rgba(230, 81, 0, 0.35), 0 0 4px 0 rgba(230, 81, 0, 0.05) `4056:126296`
             - [chữ] “Cập nhật” — 62×21 [HUG×HUG] · @ (24, 7.5) flow · Afacad 17/21px 700 #ffffff (color/neutral/white) · no-wrap `I4056:126296;1910:18518`
-        - [khối] **Tooltip · Ghi chú (hover)** — 220×56 · @ (277, 137) abs · column pad 8 10 8 10 · bg #334155 · radius 8px · shadow 0 4px 12px 0 rgba(0, 0, 0, 0.15) · clip `4056:126297`
-          - [chữ] “Rê chuột vào ô đã đăng ký để xem ghi chú của buổi này” — 200×40 [FILL×HUG] · @ (10, 8) flow · Afacad 14/20px 400 #ffffff `4056:126298`
+        - [khối] **Tooltip · Ghi chú (hover)** — 220×56 · @ (277, 137) abs · column pad 8 10 8 10 · bg #334155 (color/text/primary) · radius 8px · shadow 0 4px 12px 0 rgba(0, 0, 0, 0.15) · clip `4056:126297`
+          - [chữ] “Rê chuột vào ô đã đăng ký để xem ghi chú của buổi này” — 200×40 [FILL×HUG] · @ (10, 8) flow · Afacad 14/20px 400 #ffffff (text/on-brand) `4056:126298`
   - [instance] **Sidebar · MENU - ADMIN** ⟨MENU - ADMIN: Trang=Quản lý / Giáo viên⟩ — 234×905 · @ (0, 0) abs · bg #ff5b00 · clip `4915:233777`
     - [icon] **Frame 427322079** — 371.25×1197.75 · @ (0, -216) abs · file /figma/assets/220e592df519.svg covers (0, 216) 234×905 `I4915:233777;4915:212255`
     - [khối] **Left: ICS Logo & Toggle** — 207×44.59 · @ (14, 12) abs · row gap 24 align CENTER `I4915:233777;4915:212305`

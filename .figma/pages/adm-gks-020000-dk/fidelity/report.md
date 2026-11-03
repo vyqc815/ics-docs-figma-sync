@@ -1,8 +1,8 @@
 # Fidelity: ADM-GKS-020000-DK — Khảo sát / Giao khảo sát lớp / Danh sách lớp được giao
 
-- URL: `http://localhost:3108/khao-sat/giao-khao-sat-lop/danh-sach-lop-duoc-giao-dk`
+- URL: `http://localhost:3000/khao-sat/giao-khao-sat-lop/danh-sach-lop-duoc-giao-dk`
 - Verdict: **PASS**
-- Pixels outside text: **0.028%** differ (limit 0.5%); all pixels: 0.263%; inside text boxes: 1.509% (glyph rendering)
+- Pixels outside text: **0.028%** differ (limit 0.5%); all pixels: 0.218%; inside text boxes: 1.22% (glyph rendering)
 - Boxes: 278/278 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 277, ≤1px: 278, ≤2px: 278, ≤4px: 278, >4px: 0
 
 ## Pixel regions (largest first)
@@ -17,7 +17,6 @@
 
 | Text | Differing |
 | --- | --- |
-| Label (`I4885:66472;2245:87864`) | 22.3% |
 | Tên (`4885:60999`) | 10% |
 | Label (`I4885:66471;2245:87858`) | 9.7% |
 | Tên khảo sát (`4885:60852`) | 6.3% |
@@ -32,6 +31,7 @@
 | Label (`I4885:66476;2245:87768`) | 1.9% |
 | Label (`I4885:66470;2245:87839`) | 1.8% |
 | Label (`I4885:66478;2245:87768`) | 1.8% |
+| Label (`I4885:66469;2245:87829`) | 1.4% |
 
 ## Largest box differences
 

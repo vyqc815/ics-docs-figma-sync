@@ -1,6 +1,6 @@
 # Fidelity: SYS-ERR-010000 — Lỗi 403 · Không có quyền truy cập
 
-- URL: `http://localhost:3108/loi-403-khong-co-quyen-truy-cap`
+- URL: `http://localhost:3000/loi-403-khong-co-quyen-truy-cap`
 - Verdict: **PASS**
 - Pixels outside text: **0.002%** differ (limit 0.5%); all pixels: 0.125%; inside text boxes: 1.325% (glyph rendering)
 - Boxes: 130/130 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 127, ≤1px: 128, ≤2px: 130, ≤4px: 130, >4px: 0

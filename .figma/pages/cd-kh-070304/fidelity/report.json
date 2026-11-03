@@ -1,0 +1,583 @@
+{
+  "pass": false,
+  "thresholds": {
+    "maxPixelDiffPercent": 0.5,
+    "maxBoxDelta": 1,
+    "maxTextBoxDelta": 2.5,
+    "colorThreshold": 0.1,
+    "aaRadius": 1,
+    "subpixel": true,
+    "maxTextNodeDiffPercent": 35
+  },
+  "pixels": {
+    "width": 1440,
+    "height": 1044,
+    "mismatched": 1235,
+    "percent": 0.082,
+    "shapePercent": 0.003,
+    "textPercent": 0.372,
+    "sizeMismatch": false
+  },
+  "textNodes": [
+    {
+      "id": "I6163:332225;5491:352407;2245:87908",
+      "name": "Label",
+      "pixels": 184,
+      "percent": 7.8
+    },
+    {
+      "id": "I6163:332864;1048:1238",
+      "name": "Button",
+      "pixels": 28,
+      "percent": 2.6
+    },
+    {
+      "id": "I6163:332225;5491:352409;2245:87908",
+      "name": "Label",
+      "pixels": 55,
+      "percent": 2.3
+    },
+    {
+      "id": "I6163:332049;1048:1238",
+      "name": "Button",
+      "pixels": 33,
+      "percent": 2.1
+    },
+    {
+      "id": "I6163:332275;4019:24214",
+      "name": "Đắc Nhân",
+      "pixels": 31,
+      "percent": 1.6
+    },
+    {
+      "id": "I6163:332225;5491:352414;2245:87908",
+      "name": "Label",
+      "pixels": 32,
+      "percent": 1.4
+    },
+    {
+      "id": "I6163:332861;1048:1240",
+      "name": "Button",
+      "pixels": 7,
+      "percent": 1.3
+    },
+    {
+      "id": "6163:332078",
+      "name": "Từ khoá · 4",
+      "pixels": 89,
+      "percent": 1.3
+    },
+    {
+      "id": "6163:332867",
+      "name": "Sửa văn bản → phiên âm & dịch câu có thể bấm \"Tự tạo\" lại. Từ khoá trong câu được giữ nếu từ đó vẫn còn.",
+      "pixels": 137,
+      "percent": 1.2
+    },
+    {
+      "id": "I6518:383963;2015:30530",
+      "name": "Label",
+      "pixels": 30,
+      "percent": 1
+    },
+    {
+      "id": "6579:360680",
+      "name": "Đang sửa câu 2 · lưu hoặc huỷ câu đang sửa trước khi sửa câu hỏi.",
+      "pixels": 55,
+      "percent": 1
+    },
+    {
+      "id": "6163:332087",
+      "name": "老师",
+      "pixels": 8,
+      "percent": 0.9
+    },
+    {
+      "id": "I6163:332274;2008:31885",
+      "name": "CD",
+      "pixels": 3,
+      "percent": 0.8
+    },
+    {
+      "id": "6518:383971",
+      "name": "我 / 家 / 有 / 四口人",
+      "pixels": 92,
+      "percent": 0.7
+    },
+    {
+      "id": "I6163:332225;5491:352406;2245:87908",
+      "name": "Label",
+      "pixels": 16,
+      "percent": 0.7
+    }
+  ],
+  "regions": [
+    {
+      "x": 104,
+      "y": 80,
+      "width": 16,
+      "height": 24,
+      "pixels": 16,
+      "node": {
+        "id": "I6163:332225;5491:352399",
+        "name": "Frame 1171274940",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 120,
+      "y": 192,
+      "width": 16,
+      "height": 8,
+      "pixels": 9,
+      "node": {
+        "id": "I6163:332225;5491:352405;2245:87904",
+        "name": "Icon",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 120,
+      "y": 872,
+      "width": 16,
+      "height": 8,
+      "pixels": 9,
+      "node": {
+        "id": "I6163:332225;5491:352419;2245:87904",
+        "name": "Icon",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 24,
+      "y": 888,
+      "width": 8,
+      "height": 16,
+      "pixels": 4,
+      "node": {
+        "id": "I6163:332225;5491:352455",
+        "name": "LOGO CENTER",
+        "role": "icon"
+      }
+    }
+  ],
+  "boxes": {
+    "measured": 246,
+    "missing": [],
+    "withinThreshold": 238,
+    "buckets": {
+      "≤0.5px": 237,
+      "≤1px": 237,
+      "≤2px": 238,
+      "≤4px": 246,
+      ">4px": 0
+    },
+    "worst": [
+      {
+        "id": "6163:332082",
+        "name": "c",
+        "role": "container",
+        "delta": 2.58,
+        "dx": 0,
+        "dy": 0,
+        "dw": -2.58,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6163:332085",
+        "name": "⋮",
+        "role": "text",
+        "delta": 2.58,
+        "dx": -2.58,
+        "dy": 0,
+        "dw": 2.58,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6163:332088",
+        "name": "c",
+        "role": "container",
+        "delta": 2.58,
+        "dx": 0,
+        "dy": 0,
+        "dw": -2.58,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6163:332091",
+        "name": "⋮",
+        "role": "text",
+        "delta": 2.58,
+        "dx": -2.58,
+        "dy": 0,
+        "dw": 2.58,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6163:332094",
+        "name": "c",
+        "role": "container",
+        "delta": 2.58,
+        "dx": 0,
+        "dy": 0,
+        "dw": -2.58,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6163:332097",
+        "name": "⋮",
+        "role": "text",
+        "delta": 2.58,
+        "dx": -2.58,
+        "dy": 0,
+        "dw": 2.58,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6163:332100",
+        "name": "c",
+        "role": "container",
+        "delta": 2.58,
+        "dx": 0,
+        "dy": 0,
+        "dw": -2.58,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6163:332103",
+        "name": "⋮",
+        "role": "text",
+        "delta": 2.58,
+        "dx": -2.58,
+        "dy": 0,
+        "dw": 2.58,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6579:360680",
+        "name": "Đang sửa câu 2 · lưu hoặc huỷ câu đang sửa trước khi sửa câu hỏi.",
+        "role": "text",
+        "delta": 1.42,
+        "dx": 0,
+        "dy": 0,
+        "dw": 1.42,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6163:332042",
+        "name": "Tiêu đề",
+        "role": "container",
+        "delta": 0.48,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.48,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6163:332044",
+        "name": "Đọc đoạn văn và trả lời 3 câu · Kỹ năng: Đọc",
+        "role": "text",
+        "delta": 0.48,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.48,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6163:332045",
+        "name": "spacer",
+        "role": "container",
+        "delta": 0.48,
+        "dx": 0.48,
+        "dy": 0,
+        "dw": -0.48,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6163:332845",
+        "name": "Văn bản",
+        "role": "text",
+        "delta": 0.42,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.42,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6518:383971",
+        "name": "我 / 家 / 有 / 四口人",
+        "role": "text",
+        "delta": 0.05,
+        "dx": 0,
+        "dy": 0,
+        "dw": -0.05,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6518:383972",
+        "name": "Atom/Tag",
+        "role": "instance",
+        "delta": 0.05,
+        "dx": -0.05,
+        "dy": 0,
+        "dw": 0.05,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6518:383972;1725:17089",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.05,
+        "dx": -0.05,
+        "dy": 0,
+        "dw": 0.05,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6518:383972;1725:17090",
+        "name": "Label",
+        "role": "text",
+        "delta": 0.05,
+        "dx": -0.05,
+        "dy": 0,
+        "dw": 0.05,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6163:332225;5491:352350",
+        "name": "Subtract",
+        "role": "icon",
+        "delta": 0.01,
+        "dx": -0.01,
+        "dy": -0.01,
+        "dw": -0.01,
+        "dh": 0,
+        "limit": 1,
+        "textDriven": false
+      },
+      {
+        "id": "I6163:332225;5491:352357",
+        "name": "Intersect",
+        "role": "icon",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": -0.01,
+        "dw": -0.01,
+        "dh": 0,
+        "limit": 1,
+        "textDriven": false
+      },
+      {
+        "id": "I6163:332225;5491:352370",
+        "name": "Vector",
+        "role": "icon",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": -0.01,
+        "dw": 0,
+        "dh": -0.01,
+        "limit": 1,
+        "textDriven": false
+      },
+      {
+        "id": "I6163:332225;5491:352371",
+        "name": "Vector",
+        "role": "icon",
+        "delta": 0.01,
+        "dx": 0.01,
+        "dy": 0,
+        "dw": 0,
+        "dh": -0.01,
+        "limit": 1,
+        "textDriven": false
+      },
+      {
+        "id": "I6163:332225;5491:352372",
+        "name": "Union",
+        "role": "icon",
+        "delta": 0.01,
+        "dx": -0.01,
+        "dy": -0.01,
+        "dw": -0.01,
+        "dh": -0.01,
+        "limit": 1,
+        "textDriven": false
+      },
+      {
+        "id": "I6163:332225;5491:352375",
+        "name": "Group 240002",
+        "role": "icon",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": -0.01,
+        "limit": 1,
+        "textDriven": false
+      },
+      {
+        "id": "6163:332038",
+        "name": "Content",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6163:332039",
+        "name": "Tiêu đề & hành động",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      }
+    ],
+    "maxDelta": 2.58,
+    "over": [
+      {
+        "id": "6163:332082",
+        "name": "c",
+        "role": "container",
+        "delta": 2.58,
+        "dx": 0,
+        "dy": 0,
+        "dw": -2.58,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6163:332085",
+        "name": "⋮",
+        "role": "text",
+        "delta": 2.58,
+        "dx": -2.58,
+        "dy": 0,
+        "dw": 2.58,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6163:332088",
+        "name": "c",
+        "role": "container",
+        "delta": 2.58,
+        "dx": 0,
+        "dy": 0,
+        "dw": -2.58,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6163:332091",
+        "name": "⋮",
+        "role": "text",
+        "delta": 2.58,
+        "dx": -2.58,
+        "dy": 0,
+        "dw": 2.58,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6163:332094",
+        "name": "c",
+        "role": "container",
+        "delta": 2.58,
+        "dx": 0,
+        "dy": 0,
+        "dw": -2.58,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6163:332097",
+        "name": "⋮",
+        "role": "text",
+        "delta": 2.58,
+        "dx": -2.58,
+        "dy": 0,
+        "dw": 2.58,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6163:332100",
+        "name": "c",
+        "role": "container",
+        "delta": 2.58,
+        "dx": 0,
+        "dy": 0,
+        "dw": -2.58,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6163:332103",
+        "name": "⋮",
+        "role": "text",
+        "delta": 2.58,
+        "dx": -2.58,
+        "dy": 0,
+        "dw": 2.58,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      }
+    ]
+  },
+  "failures": [
+    "8 elements are off by more than their limit (1px, 2.5px for text-driven; worst 2.58px)."
+  ],
+  "url": "http://localhost:3000/thu-vien/bai-tap/chi-tiet-cau-hoi-reading/sua-cau",
+  "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
+  "consoleErrors": [],
+  "rootFound": true
+}

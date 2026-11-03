@@ -12,55 +12,13 @@
   "pixels": {
     "width": 1440,
     "height": 810,
-    "mismatched": 5056,
-    "percent": 0.433,
+    "mismatched": 4156,
+    "percent": 0.356,
     "shapePercent": 0.001,
-    "textPercent": 2.199,
+    "textPercent": 1.806,
     "sizeMismatch": false
   },
   "textNodes": [
-    {
-      "id": "I4056:112482;2245:87914",
-      "name": "Label",
-      "pixels": 763,
-      "percent": 31.8
-    },
-    {
-      "id": "I4056:112343;1308:6798",
-      "name": "22/24",
-      "pixels": 70,
-      "percent": 20.8
-    },
-    {
-      "id": "I4056:112353;1308:6798",
-      "name": "22/24",
-      "pixels": 70,
-      "percent": 20.8
-    },
-    {
-      "id": "I4056:112363;1308:6798",
-      "name": "22/24",
-      "pixels": 70,
-      "percent": 20.8
-    },
-    {
-      "id": "I4056:112344;1308:6749",
-      "name": "100%",
-      "pixels": 67,
-      "percent": 19.9
-    },
-    {
-      "id": "I4056:112354;1308:6749",
-      "name": "100%",
-      "pixels": 67,
-      "percent": 19.9
-    },
-    {
-      "id": "I4056:112364;1308:6749",
-      "name": "100%",
-      "pixels": 67,
-      "percent": 19.9
-    },
     {
       "id": "4056:112214",
       "name": "Tổng Quan",
@@ -72,6 +30,12 @@
       "name": "Ôn tập kiến thức HSK1 (1)",
       "pixels": 990,
       "percent": 16.9
+    },
+    {
+      "id": "I4056:112482;2245:87914",
+      "name": "Label",
+      "pixels": 274,
+      "percent": 11.4
     },
     {
       "id": "I4056:112480;2245:87908",
@@ -108,6 +72,42 @@
       "name": "00:14:01",
       "pixels": 64,
       "percent": 5.1
+    },
+    {
+      "id": "4056:112307",
+      "name": "00:14:01",
+      "pixels": 64,
+      "percent": 5.1
+    },
+    {
+      "id": "4056:112320",
+      "name": "00:14:01",
+      "pixels": 64,
+      "percent": 5.1
+    },
+    {
+      "id": "I4056:112305;3138:130001",
+      "name": "Tên",
+      "pixels": 159,
+      "percent": 4.8
+    },
+    {
+      "id": "I4056:112483;2245:87908",
+      "name": "Label",
+      "pixels": 104,
+      "percent": 4.3
+    },
+    {
+      "id": "4056:112341",
+      "name": "ÔN TẬP: Giữa Kỳ 1",
+      "pixels": 215,
+      "percent": 3.9
+    },
+    {
+      "id": "4056:112361",
+      "name": "ÔN TẬP: Giữa Kỳ 1",
+      "pixels": 215,
+      "percent": 3.9
     }
   ],
   "regions": [
@@ -441,7 +441,7 @@
     "over": []
   },
   "failures": [],
-  "url": "http://localhost:3108/chi-tiet-lop-hoc/bai-tap-ve-nha-dk",
+  "url": "http://localhost:3000/chi-tiet-lop-hoc/bai-tap-ve-nha-dk",
   "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
   "consoleErrors": [],
   "rootFound": true

@@ -12,10 +12,10 @@
   "pixels": {
     "width": 1440,
     "height": 962,
-    "mismatched": 3153,
-    "percent": 0.228,
+    "mismatched": 3055,
+    "percent": 0.221,
     "shapePercent": 0.004,
-    "textPercent": 1.062,
+    "textPercent": 1.029,
     "sizeMismatch": false
   },
   "textNodes": [
@@ -501,7 +501,7 @@
     "over": []
   },
   "failures": [],
-  "url": "http://localhost:3108/bai-tap-ve-nha/kiem-tra",
+  "url": "http://localhost:3000/bai-tap-ve-nha/kiem-tra",
   "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
   "consoleErrors": [],
   "rootFound": true

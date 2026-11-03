@@ -6,7 +6,7 @@
     "pageName": "    ├─ KHOÁ HỌC | THỬ NGHIỆM PROTOTYPE",
     "nodeId": "5491:352655",
     "nodeName": "CD-KH-070100 — Thư viện / Kiến thức",
-    "exportedAt": "2026-11-02T02:40:56.394Z"
+    "exportedAt": "2026-11-02T17:59:59.327Z"
   },
   "frame": {
     "width": 1440,
@@ -53,6 +53,18 @@
   "tokens": {
     "variables": [
       {
+        "name": "bg/surface",
+        "collection": "Theme · Semantic",
+        "mode": "Light",
+        "type": "COLOR",
+        "value": "#ffffff",
+        "aliasOf": [
+          "color/neutral/white"
+        ],
+        "cssVariable": "--bg-surface",
+        "codeSyntax": {}
+      },
+      {
         "name": "color/border/default",
         "collection": "Color Tokens",
         "mode": "Light",
@@ -73,6 +85,56 @@
         "codeSyntax": {}
       },
       {
+        "name": "color/extended/1e293b",
+        "collection": "Color Tokens",
+        "mode": "Light",
+        "type": "COLOR",
+        "value": "#1e293b",
+        "aliasOf": [],
+        "cssVariable": "--color-extended-1e293b",
+        "codeSyntax": {}
+      },
+      {
+        "name": "color/extended/475569",
+        "collection": "Color Tokens",
+        "mode": "Light",
+        "type": "COLOR",
+        "value": "#475569",
+        "aliasOf": [],
+        "cssVariable": "--color-extended-475569",
+        "codeSyntax": {}
+      },
+      {
+        "name": "color/extended/eeeeee",
+        "collection": "Color Tokens",
+        "mode": "Light",
+        "type": "COLOR",
+        "value": "#eeeeee",
+        "aliasOf": [],
+        "cssVariable": "--color-extended-eeeeee",
+        "codeSyntax": {}
+      },
+      {
+        "name": "color/extended/f59e0b",
+        "collection": "Color Tokens",
+        "mode": "Light",
+        "type": "COLOR",
+        "value": "#f59e0b",
+        "aliasOf": [],
+        "cssVariable": "--color-extended-f59e0b",
+        "codeSyntax": {}
+      },
+      {
+        "name": "color/extended/f8f9fa",
+        "collection": "Color Tokens",
+        "mode": "Light",
+        "type": "COLOR",
+        "value": "#f8f9fa",
+        "aliasOf": [],
+        "cssVariable": "--color-extended-f8f9fa",
+        "codeSyntax": {}
+      },
+      {
         "name": "color/extended/fff5ec",
         "collection": "Color Tokens",
         "mode": "Light",
@@ -90,6 +152,26 @@
         "value": "#d9d9d9",
         "aliasOf": [],
         "cssVariable": "--color-neutral-200",
+        "codeSyntax": {}
+      },
+      {
+        "name": "color/neutral/400",
+        "collection": "Color Tokens",
+        "mode": "Light",
+        "type": "COLOR",
+        "value": "#8c8c8c",
+        "aliasOf": [],
+        "cssVariable": "--color-neutral-400",
+        "codeSyntax": {}
+      },
+      {
+        "name": "color/neutral/500",
+        "collection": "Color Tokens",
+        "mode": "Light",
+        "type": "COLOR",
+        "value": "#757575",
+        "aliasOf": [],
+        "cssVariable": "--color-neutral-500",
         "codeSyntax": {}
       },
       {
@@ -260,6 +342,30 @@
         "value": 8,
         "aliasOf": [],
         "cssVariable": "--spacing-8",
+        "codeSyntax": {}
+      },
+      {
+        "name": "text/on-brand",
+        "collection": "Theme · Semantic",
+        "mode": "Light",
+        "type": "COLOR",
+        "value": "#ffffff",
+        "aliasOf": [
+          "color/neutral/white"
+        ],
+        "cssVariable": "--text-on-brand",
+        "codeSyntax": {}
+      },
+      {
+        "name": "text/primary",
+        "collection": "Theme · Semantic",
+        "mode": "Light",
+        "type": "COLOR",
+        "value": "#334155",
+        "aliasOf": [
+          "color/text/primary"
+        ],
+        "cssVariable": "--text-primary",
         "codeSyntax": {}
       }
     ],
@@ -630,7 +736,7 @@
       "fetched": true,
       "width": 20.94,
       "height": 150.43,
-      "bytes": 478
+      "bytes": 479
     },
     {
       "id": "a26",
@@ -682,7 +788,7 @@
       "fetched": true,
       "width": 201.13,
       "height": 636.96,
-      "bytes": 658
+      "bytes": 657
     },
     {
       "id": "a30",
@@ -1059,7 +1165,7 @@
       "fetched": true,
       "width": 58,
       "height": 663,
-      "bytes": 32126
+      "bytes": 32132
     },
     {
       "id": "a59",
@@ -1085,7 +1191,7 @@
       "fetched": true,
       "width": 62,
       "height": 62,
-      "bytes": 26004
+      "bytes": 26028
     },
     {
       "id": "a61",
@@ -1111,7 +1217,7 @@
       "fetched": true,
       "width": 26,
       "height": 26,
-      "bytes": 1764
+      "bytes": 1781
     },
     {
       "id": "a63",
@@ -1124,7 +1230,7 @@
       "fetched": true,
       "width": 27.56,
       "height": 27.55,
-      "bytes": 80436
+      "bytes": 80466
     },
     {
       "id": "a64",
@@ -1329,8 +1435,18 @@
                             "letter-spacing": "0",
                             "color": "#1e293b"
                           },
-                          "color": "#1e293b"
+                          "color": "#1e293b",
+                          "tokens": {
+                            "fills": [
+                              "color/extended/1e293b"
+                            ]
+                          }
                         }
+                      ]
+                    },
+                    "tokens": {
+                      "fills": [
+                        "color/extended/1e293b"
                       ]
                     }
                   },
@@ -1398,8 +1514,18 @@
                             "letter-spacing": "0",
                             "color": "#8c8c8c"
                           },
-                          "color": "#8c8c8c"
+                          "color": "#8c8c8c",
+                          "tokens": {
+                            "fills": [
+                              "color/neutral/400"
+                            ]
+                          }
                         }
+                      ]
+                    },
+                    "tokens": {
+                      "fills": [
+                        "color/neutral/400"
                       ]
                     }
                   }
@@ -1441,7 +1567,7 @@
                 },
                 "positioning": "flow",
                 "css": {
-                  "flex": "1 1 0px",
+                  "flex": "1 1 666px",
                   "min-width": "0",
                   "height": "1px",
                   "display": "flex",
@@ -2866,7 +2992,7 @@
                         "positioning": "flow",
                         "css": {
                           "position": "relative",
-                          "flex": "1 1 0px",
+                          "flex": "1 1 274px",
                           "min-width": "0",
                           "display": "flex",
                           "flex-direction": "column",
@@ -3154,7 +3280,7 @@
                     "positioning": "flow",
                     "css": {
                       "position": "relative",
-                      "flex": "1 1 0px",
+                      "flex": "1 1 154px",
                       "min-width": "0",
                       "display": "flex",
                       "flex-direction": "row",
@@ -3182,7 +3308,7 @@
                         },
                         "positioning": "flow",
                         "css": {
-                          "flex": "1 1 0px",
+                          "flex": "1 1 154px",
                           "min-width": "0",
                           "text-align": "left",
                           "white-space": "nowrap",
@@ -3384,7 +3510,7 @@
                 },
                 "positioning": "flow",
                 "css": {
-                  "flex": "1 1 0px",
+                  "flex": "1 1 346px",
                   "min-width": "0",
                   "height": "1px",
                   "overflow": "hidden"
@@ -3776,7 +3902,7 @@
                 "positioning": "flow",
                 "css": {
                   "position": "relative",
-                  "flex": "1 1 0px",
+                  "flex": "1 1 1092px",
                   "min-width": "0",
                   "display": "flex",
                   "flex-direction": "column",
@@ -3945,8 +4071,18 @@
                                         "letter-spacing": "0",
                                         "color": "#757575"
                                       },
-                                      "color": "#757575"
+                                      "color": "#757575",
+                                      "tokens": {
+                                        "fills": [
+                                          "color/neutral/500"
+                                        ]
+                                      }
                                     }
+                                  ]
+                                },
+                                "tokens": {
+                                  "fills": [
+                                    "color/neutral/500"
                                   ]
                                 }
                               }
@@ -4063,8 +4199,18 @@
                                         "letter-spacing": "0",
                                         "color": "#757575"
                                       },
-                                      "color": "#757575"
+                                      "color": "#757575",
+                                      "tokens": {
+                                        "fills": [
+                                          "color/neutral/500"
+                                        ]
+                                      }
                                     }
+                                  ]
+                                },
+                                "tokens": {
+                                  "fills": [
+                                    "color/neutral/500"
                                   ]
                                 }
                               }
@@ -4181,8 +4327,18 @@
                                         "letter-spacing": "0",
                                         "color": "#757575"
                                       },
-                                      "color": "#757575"
+                                      "color": "#757575",
+                                      "tokens": {
+                                        "fills": [
+                                          "color/neutral/500"
+                                        ]
+                                      }
                                     }
+                                  ]
+                                },
+                                "tokens": {
+                                  "fills": [
+                                    "color/neutral/500"
                                   ]
                                 }
                               }
@@ -4299,8 +4455,18 @@
                                         "letter-spacing": "0",
                                         "color": "#757575"
                                       },
-                                      "color": "#757575"
+                                      "color": "#757575",
+                                      "tokens": {
+                                        "fills": [
+                                          "color/neutral/500"
+                                        ]
+                                      }
                                     }
+                                  ]
+                                },
+                                "tokens": {
+                                  "fills": [
+                                    "color/neutral/500"
                                   ]
                                 }
                               }
@@ -4417,8 +4583,18 @@
                                         "letter-spacing": "0",
                                         "color": "#757575"
                                       },
-                                      "color": "#757575"
+                                      "color": "#757575",
+                                      "tokens": {
+                                        "fills": [
+                                          "color/neutral/500"
+                                        ]
+                                      }
                                     }
+                                  ]
+                                },
+                                "tokens": {
+                                  "fills": [
+                                    "color/neutral/500"
                                   ]
                                 }
                               }
@@ -4535,8 +4711,18 @@
                                         "letter-spacing": "0",
                                         "color": "#757575"
                                       },
-                                      "color": "#757575"
+                                      "color": "#757575",
+                                      "tokens": {
+                                        "fills": [
+                                          "color/neutral/500"
+                                        ]
+                                      }
                                     }
+                                  ]
+                                },
+                                "tokens": {
+                                  "fills": [
+                                    "color/neutral/500"
                                   ]
                                 }
                               }
@@ -4653,8 +4839,18 @@
                                         "letter-spacing": "0",
                                         "color": "#757575"
                                       },
-                                      "color": "#757575"
+                                      "color": "#757575",
+                                      "tokens": {
+                                        "fills": [
+                                          "color/neutral/500"
+                                        ]
+                                      }
                                     }
+                                  ]
+                                },
+                                "tokens": {
+                                  "fills": [
+                                    "color/neutral/500"
                                   ]
                                 }
                               }
@@ -4741,6 +4937,11 @@
                         "sizing": {
                           "horizontal": "FILL",
                           "vertical": "FIXED"
+                        },
+                        "tokens": {
+                          "fills": [
+                            "color/extended/f8f9fa"
+                          ]
                         }
                       },
                       {
@@ -4873,8 +5074,18 @@
                                         "letter-spacing": "0",
                                         "color": "#757575"
                                       },
-                                      "color": "#757575"
+                                      "color": "#757575",
+                                      "tokens": {
+                                        "fills": [
+                                          "color/neutral/500"
+                                        ]
+                                      }
                                     }
+                                  ]
+                                },
+                                "tokens": {
+                                  "fills": [
+                                    "color/neutral/500"
                                   ]
                                 }
                               }
@@ -5083,8 +5294,18 @@
                                         "letter-spacing": "0",
                                         "color": "#1e293b"
                                       },
-                                      "color": "#1e293b"
+                                      "color": "#1e293b",
+                                      "tokens": {
+                                        "fills": [
+                                          "color/extended/1e293b"
+                                        ]
+                                      }
                                     }
+                                  ]
+                                },
+                                "tokens": {
+                                  "fills": [
+                                    "color/extended/1e293b"
                                   ]
                                 }
                               }
@@ -5201,8 +5422,18 @@
                                         "letter-spacing": "0",
                                         "color": "#475569"
                                       },
-                                      "color": "#475569"
+                                      "color": "#475569",
+                                      "tokens": {
+                                        "fills": [
+                                          "color/extended/475569"
+                                        ]
+                                      }
                                     }
+                                  ]
+                                },
+                                "tokens": {
+                                  "fills": [
+                                    "color/extended/475569"
                                   ]
                                 }
                               }
@@ -5319,8 +5550,18 @@
                                         "letter-spacing": "0",
                                         "color": "#334155"
                                       },
-                                      "color": "#334155"
+                                      "color": "#334155",
+                                      "tokens": {
+                                        "fills": [
+                                          "text/primary"
+                                        ]
+                                      }
                                     }
+                                  ]
+                                },
+                                "tokens": {
+                                  "fills": [
+                                    "text/primary"
                                   ]
                                 }
                               }
@@ -5639,8 +5880,18 @@
                                         "letter-spacing": "0",
                                         "color": "#475569"
                                       },
-                                      "color": "#475569"
+                                      "color": "#475569",
+                                      "tokens": {
+                                        "fills": [
+                                          "color/extended/475569"
+                                        ]
+                                      }
                                     }
+                                  ]
+                                },
+                                "tokens": {
+                                  "fills": [
+                                    "color/extended/475569"
                                   ]
                                 }
                               }
@@ -5919,6 +6170,14 @@
                         "sizing": {
                           "horizontal": "FILL",
                           "vertical": "FIXED"
+                        },
+                        "tokens": {
+                          "fills": [
+                            "bg/surface"
+                          ],
+                          "strokes": [
+                            "color/extended/eeeeee"
+                          ]
                         }
                       },
                       {
@@ -6051,8 +6310,18 @@
                                         "letter-spacing": "0",
                                         "color": "#757575"
                                       },
-                                      "color": "#757575"
+                                      "color": "#757575",
+                                      "tokens": {
+                                        "fills": [
+                                          "color/neutral/500"
+                                        ]
+                                      }
                                     }
+                                  ]
+                                },
+                                "tokens": {
+                                  "fills": [
+                                    "color/neutral/500"
                                   ]
                                 }
                               }
@@ -6245,8 +6514,18 @@
                                         "letter-spacing": "0",
                                         "color": "#1e293b"
                                       },
-                                      "color": "#1e293b"
+                                      "color": "#1e293b",
+                                      "tokens": {
+                                        "fills": [
+                                          "color/extended/1e293b"
+                                        ]
+                                      }
                                     }
+                                  ]
+                                },
+                                "tokens": {
+                                  "fills": [
+                                    "color/extended/1e293b"
                                   ]
                                 }
                               }
@@ -6363,8 +6642,18 @@
                                         "letter-spacing": "0",
                                         "color": "#475569"
                                       },
-                                      "color": "#475569"
+                                      "color": "#475569",
+                                      "tokens": {
+                                        "fills": [
+                                          "color/extended/475569"
+                                        ]
+                                      }
                                     }
+                                  ]
+                                },
+                                "tokens": {
+                                  "fills": [
+                                    "color/extended/475569"
                                   ]
                                 }
                               }
@@ -6481,8 +6770,18 @@
                                         "letter-spacing": "0",
                                         "color": "#334155"
                                       },
-                                      "color": "#334155"
+                                      "color": "#334155",
+                                      "tokens": {
+                                        "fills": [
+                                          "text/primary"
+                                        ]
+                                      }
                                     }
+                                  ]
+                                },
+                                "tokens": {
+                                  "fills": [
+                                    "text/primary"
                                   ]
                                 }
                               }
@@ -6801,8 +7100,18 @@
                                         "letter-spacing": "0",
                                         "color": "#475569"
                                       },
-                                      "color": "#475569"
+                                      "color": "#475569",
+                                      "tokens": {
+                                        "fills": [
+                                          "color/extended/475569"
+                                        ]
+                                      }
                                     }
+                                  ]
+                                },
+                                "tokens": {
+                                  "fills": [
+                                    "color/extended/475569"
                                   ]
                                 }
                               }
@@ -7081,6 +7390,14 @@
                         "sizing": {
                           "horizontal": "FILL",
                           "vertical": "FIXED"
+                        },
+                        "tokens": {
+                          "fills": [
+                            "bg/surface"
+                          ],
+                          "strokes": [
+                            "color/extended/eeeeee"
+                          ]
                         }
                       },
                       {
@@ -7213,8 +7530,18 @@
                                         "letter-spacing": "0",
                                         "color": "#757575"
                                       },
-                                      "color": "#757575"
+                                      "color": "#757575",
+                                      "tokens": {
+                                        "fills": [
+                                          "color/neutral/500"
+                                        ]
+                                      }
                                     }
+                                  ]
+                                },
+                                "tokens": {
+                                  "fills": [
+                                    "color/neutral/500"
                                   ]
                                 }
                               }
@@ -7423,8 +7750,18 @@
                                         "letter-spacing": "0",
                                         "color": "#1e293b"
                                       },
-                                      "color": "#1e293b"
+                                      "color": "#1e293b",
+                                      "tokens": {
+                                        "fills": [
+                                          "color/extended/1e293b"
+                                        ]
+                                      }
                                     }
+                                  ]
+                                },
+                                "tokens": {
+                                  "fills": [
+                                    "color/extended/1e293b"
                                   ]
                                 }
                               }
@@ -7541,8 +7878,18 @@
                                         "letter-spacing": "0",
                                         "color": "#475569"
                                       },
-                                      "color": "#475569"
+                                      "color": "#475569",
+                                      "tokens": {
+                                        "fills": [
+                                          "color/extended/475569"
+                                        ]
+                                      }
                                     }
+                                  ]
+                                },
+                                "tokens": {
+                                  "fills": [
+                                    "color/extended/475569"
                                   ]
                                 }
                               }
@@ -7659,8 +8006,18 @@
                                         "letter-spacing": "0",
                                         "color": "#334155"
                                       },
-                                      "color": "#334155"
+                                      "color": "#334155",
+                                      "tokens": {
+                                        "fills": [
+                                          "text/primary"
+                                        ]
+                                      }
                                     }
+                                  ]
+                                },
+                                "tokens": {
+                                  "fills": [
+                                    "text/primary"
                                   ]
                                 }
                               }
@@ -7979,8 +8336,18 @@
                                         "letter-spacing": "0",
                                         "color": "#475569"
                                       },
-                                      "color": "#475569"
+                                      "color": "#475569",
+                                      "tokens": {
+                                        "fills": [
+                                          "color/extended/475569"
+                                        ]
+                                      }
                                     }
+                                  ]
+                                },
+                                "tokens": {
+                                  "fills": [
+                                    "color/extended/475569"
                                   ]
                                 }
                               }
@@ -8259,6 +8626,14 @@
                         "sizing": {
                           "horizontal": "FILL",
                           "vertical": "FIXED"
+                        },
+                        "tokens": {
+                          "fills": [
+                            "bg/surface"
+                          ],
+                          "strokes": [
+                            "color/extended/eeeeee"
+                          ]
                         }
                       },
                       {
@@ -8391,8 +8766,18 @@
                                         "letter-spacing": "0",
                                         "color": "#757575"
                                       },
-                                      "color": "#757575"
+                                      "color": "#757575",
+                                      "tokens": {
+                                        "fills": [
+                                          "color/neutral/500"
+                                        ]
+                                      }
                                     }
+                                  ]
+                                },
+                                "tokens": {
+                                  "fills": [
+                                    "color/neutral/500"
                                   ]
                                 }
                               }
@@ -8569,8 +8954,18 @@
                                         "letter-spacing": "0",
                                         "color": "#1e293b"
                                       },
-                                      "color": "#1e293b"
+                                      "color": "#1e293b",
+                                      "tokens": {
+                                        "fills": [
+                                          "color/extended/1e293b"
+                                        ]
+                                      }
                                     }
+                                  ]
+                                },
+                                "tokens": {
+                                  "fills": [
+                                    "color/extended/1e293b"
                                   ]
                                 }
                               }
@@ -8687,8 +9082,18 @@
                                         "letter-spacing": "0",
                                         "color": "#475569"
                                       },
-                                      "color": "#475569"
+                                      "color": "#475569",
+                                      "tokens": {
+                                        "fills": [
+                                          "color/extended/475569"
+                                        ]
+                                      }
                                     }
+                                  ]
+                                },
+                                "tokens": {
+                                  "fills": [
+                                    "color/extended/475569"
                                   ]
                                 }
                               }
@@ -8805,8 +9210,18 @@
                                         "letter-spacing": "0",
                                         "color": "#334155"
                                       },
-                                      "color": "#334155"
+                                      "color": "#334155",
+                                      "tokens": {
+                                        "fills": [
+                                          "text/primary"
+                                        ]
+                                      }
                                     }
+                                  ]
+                                },
+                                "tokens": {
+                                  "fills": [
+                                    "text/primary"
                                   ]
                                 }
                               }
@@ -9125,8 +9540,18 @@
                                         "letter-spacing": "0",
                                         "color": "#475569"
                                       },
-                                      "color": "#475569"
+                                      "color": "#475569",
+                                      "tokens": {
+                                        "fills": [
+                                          "color/extended/475569"
+                                        ]
+                                      }
                                     }
+                                  ]
+                                },
+                                "tokens": {
+                                  "fills": [
+                                    "color/extended/475569"
                                   ]
                                 }
                               }
@@ -9405,6 +9830,14 @@
                         "sizing": {
                           "horizontal": "FILL",
                           "vertical": "FIXED"
+                        },
+                        "tokens": {
+                          "fills": [
+                            "bg/surface"
+                          ],
+                          "strokes": [
+                            "color/extended/eeeeee"
+                          ]
                         }
                       },
                       {
@@ -9537,8 +9970,18 @@
                                         "letter-spacing": "0",
                                         "color": "#757575"
                                       },
-                                      "color": "#757575"
+                                      "color": "#757575",
+                                      "tokens": {
+                                        "fills": [
+                                          "color/neutral/500"
+                                        ]
+                                      }
                                     }
+                                  ]
+                                },
+                                "tokens": {
+                                  "fills": [
+                                    "color/neutral/500"
                                   ]
                                 }
                               }
@@ -9731,8 +10174,18 @@
                                         "letter-spacing": "0",
                                         "color": "#1e293b"
                                       },
-                                      "color": "#1e293b"
+                                      "color": "#1e293b",
+                                      "tokens": {
+                                        "fills": [
+                                          "color/extended/1e293b"
+                                        ]
+                                      }
                                     }
+                                  ]
+                                },
+                                "tokens": {
+                                  "fills": [
+                                    "color/extended/1e293b"
                                   ]
                                 }
                               }
@@ -9849,8 +10302,18 @@
                                         "letter-spacing": "0",
                                         "color": "#475569"
                                       },
-                                      "color": "#475569"
+                                      "color": "#475569",
+                                      "tokens": {
+                                        "fills": [
+                                          "color/extended/475569"
+                                        ]
+                                      }
                                     }
+                                  ]
+                                },
+                                "tokens": {
+                                  "fills": [
+                                    "color/extended/475569"
                                   ]
                                 }
                               }
@@ -9967,8 +10430,18 @@
                                         "letter-spacing": "0",
                                         "color": "#334155"
                                       },
-                                      "color": "#334155"
+                                      "color": "#334155",
+                                      "tokens": {
+                                        "fills": [
+                                          "text/primary"
+                                        ]
+                                      }
                                     }
+                                  ]
+                                },
+                                "tokens": {
+                                  "fills": [
+                                    "text/primary"
                                   ]
                                 }
                               }
@@ -10287,8 +10760,18 @@
                                         "letter-spacing": "0",
                                         "color": "#475569"
                                       },
-                                      "color": "#475569"
+                                      "color": "#475569",
+                                      "tokens": {
+                                        "fills": [
+                                          "color/extended/475569"
+                                        ]
+                                      }
                                     }
+                                  ]
+                                },
+                                "tokens": {
+                                  "fills": [
+                                    "color/extended/475569"
                                   ]
                                 }
                               }
@@ -10567,6 +11050,14 @@
                         "sizing": {
                           "horizontal": "FILL",
                           "vertical": "FIXED"
+                        },
+                        "tokens": {
+                          "fills": [
+                            "bg/surface"
+                          ],
+                          "strokes": [
+                            "color/extended/eeeeee"
+                          ]
                         }
                       },
                       {
@@ -10699,8 +11190,18 @@
                                         "letter-spacing": "0",
                                         "color": "#757575"
                                       },
-                                      "color": "#757575"
+                                      "color": "#757575",
+                                      "tokens": {
+                                        "fills": [
+                                          "color/neutral/500"
+                                        ]
+                                      }
                                     }
+                                  ]
+                                },
+                                "tokens": {
+                                  "fills": [
+                                    "color/neutral/500"
                                   ]
                                 }
                               }
@@ -10909,8 +11410,18 @@
                                         "letter-spacing": "0",
                                         "color": "#1e293b"
                                       },
-                                      "color": "#1e293b"
+                                      "color": "#1e293b",
+                                      "tokens": {
+                                        "fills": [
+                                          "color/extended/1e293b"
+                                        ]
+                                      }
                                     }
+                                  ]
+                                },
+                                "tokens": {
+                                  "fills": [
+                                    "color/extended/1e293b"
                                   ]
                                 }
                               }
@@ -11027,8 +11538,18 @@
                                         "letter-spacing": "0",
                                         "color": "#475569"
                                       },
-                                      "color": "#475569"
+                                      "color": "#475569",
+                                      "tokens": {
+                                        "fills": [
+                                          "color/extended/475569"
+                                        ]
+                                      }
                                     }
+                                  ]
+                                },
+                                "tokens": {
+                                  "fills": [
+                                    "color/extended/475569"
                                   ]
                                 }
                               }
@@ -11145,8 +11666,18 @@
                                         "letter-spacing": "0",
                                         "color": "#334155"
                                       },
-                                      "color": "#334155"
+                                      "color": "#334155",
+                                      "tokens": {
+                                        "fills": [
+                                          "text/primary"
+                                        ]
+                                      }
                                     }
+                                  ]
+                                },
+                                "tokens": {
+                                  "fills": [
+                                    "text/primary"
                                   ]
                                 }
                               }
@@ -11465,8 +11996,18 @@
                                         "letter-spacing": "0",
                                         "color": "#475569"
                                       },
-                                      "color": "#475569"
+                                      "color": "#475569",
+                                      "tokens": {
+                                        "fills": [
+                                          "color/extended/475569"
+                                        ]
+                                      }
                                     }
+                                  ]
+                                },
+                                "tokens": {
+                                  "fills": [
+                                    "color/extended/475569"
                                   ]
                                 }
                               }
@@ -11745,6 +12286,14 @@
                         "sizing": {
                           "horizontal": "FILL",
                           "vertical": "FIXED"
+                        },
+                        "tokens": {
+                          "fills": [
+                            "bg/surface"
+                          ],
+                          "strokes": [
+                            "color/extended/eeeeee"
+                          ]
                         }
                       },
                       {
@@ -11877,8 +12426,18 @@
                                         "letter-spacing": "0",
                                         "color": "#757575"
                                       },
-                                      "color": "#757575"
+                                      "color": "#757575",
+                                      "tokens": {
+                                        "fills": [
+                                          "color/neutral/500"
+                                        ]
+                                      }
                                     }
+                                  ]
+                                },
+                                "tokens": {
+                                  "fills": [
+                                    "color/neutral/500"
                                   ]
                                 }
                               }
@@ -12071,8 +12630,18 @@
                                         "letter-spacing": "0",
                                         "color": "#1e293b"
                                       },
-                                      "color": "#1e293b"
+                                      "color": "#1e293b",
+                                      "tokens": {
+                                        "fills": [
+                                          "color/extended/1e293b"
+                                        ]
+                                      }
                                     }
+                                  ]
+                                },
+                                "tokens": {
+                                  "fills": [
+                                    "color/extended/1e293b"
                                   ]
                                 }
                               }
@@ -12189,8 +12758,18 @@
                                         "letter-spacing": "0",
                                         "color": "#475569"
                                       },
-                                      "color": "#475569"
+                                      "color": "#475569",
+                                      "tokens": {
+                                        "fills": [
+                                          "color/extended/475569"
+                                        ]
+                                      }
                                     }
+                                  ]
+                                },
+                                "tokens": {
+                                  "fills": [
+                                    "color/extended/475569"
                                   ]
                                 }
                               }
@@ -12307,8 +12886,18 @@
                                         "letter-spacing": "0",
                                         "color": "#334155"
                                       },
-                                      "color": "#334155"
+                                      "color": "#334155",
+                                      "tokens": {
+                                        "fills": [
+                                          "text/primary"
+                                        ]
+                                      }
                                     }
+                                  ]
+                                },
+                                "tokens": {
+                                  "fills": [
+                                    "text/primary"
                                   ]
                                 }
                               }
@@ -12627,8 +13216,18 @@
                                         "letter-spacing": "0",
                                         "color": "#f59e0b"
                                       },
-                                      "color": "#f59e0b"
+                                      "color": "#f59e0b",
+                                      "tokens": {
+                                        "fills": [
+                                          "color/extended/f59e0b"
+                                        ]
+                                      }
                                     }
+                                  ]
+                                },
+                                "tokens": {
+                                  "fills": [
+                                    "color/extended/f59e0b"
                                   ]
                                 }
                               }
@@ -12907,6 +13506,14 @@
                         "sizing": {
                           "horizontal": "FILL",
                           "vertical": "FIXED"
+                        },
+                        "tokens": {
+                          "fills": [
+                            "bg/surface"
+                          ],
+                          "strokes": [
+                            "color/extended/eeeeee"
+                          ]
                         }
                       },
                       {
@@ -13039,8 +13646,18 @@
                                         "letter-spacing": "0",
                                         "color": "#757575"
                                       },
-                                      "color": "#757575"
+                                      "color": "#757575",
+                                      "tokens": {
+                                        "fills": [
+                                          "color/neutral/500"
+                                        ]
+                                      }
                                     }
+                                  ]
+                                },
+                                "tokens": {
+                                  "fills": [
+                                    "color/neutral/500"
                                   ]
                                 }
                               }
@@ -13217,8 +13834,18 @@
                                         "letter-spacing": "0",
                                         "color": "#1e293b"
                                       },
-                                      "color": "#1e293b"
+                                      "color": "#1e293b",
+                                      "tokens": {
+                                        "fills": [
+                                          "color/extended/1e293b"
+                                        ]
+                                      }
                                     }
+                                  ]
+                                },
+                                "tokens": {
+                                  "fills": [
+                                    "color/extended/1e293b"
                                   ]
                                 }
                               }
@@ -13335,8 +13962,18 @@
                                         "letter-spacing": "0",
                                         "color": "#475569"
                                       },
-                                      "color": "#475569"
+                                      "color": "#475569",
+                                      "tokens": {
+                                        "fills": [
+                                          "color/extended/475569"
+                                        ]
+                                      }
                                     }
+                                  ]
+                                },
+                                "tokens": {
+                                  "fills": [
+                                    "color/extended/475569"
                                   ]
                                 }
                               }
@@ -13453,8 +14090,18 @@
                                         "letter-spacing": "0",
                                         "color": "#334155"
                                       },
-                                      "color": "#334155"
+                                      "color": "#334155",
+                                      "tokens": {
+                                        "fills": [
+                                          "text/primary"
+                                        ]
+                                      }
                                     }
+                                  ]
+                                },
+                                "tokens": {
+                                  "fills": [
+                                    "text/primary"
                                   ]
                                 }
                               }
@@ -13773,8 +14420,18 @@
                                         "letter-spacing": "0",
                                         "color": "#475569"
                                       },
-                                      "color": "#475569"
+                                      "color": "#475569",
+                                      "tokens": {
+                                        "fills": [
+                                          "color/extended/475569"
+                                        ]
+                                      }
                                     }
+                                  ]
+                                },
+                                "tokens": {
+                                  "fills": [
+                                    "color/extended/475569"
                                   ]
                                 }
                               }
@@ -14053,6 +14710,14 @@
                         "sizing": {
                           "horizontal": "FILL",
                           "vertical": "FIXED"
+                        },
+                        "tokens": {
+                          "fills": [
+                            "bg/surface"
+                          ],
+                          "strokes": [
+                            "color/extended/eeeeee"
+                          ]
                         }
                       },
                       {
@@ -14185,8 +14850,18 @@
                                         "letter-spacing": "0",
                                         "color": "#757575"
                                       },
-                                      "color": "#757575"
+                                      "color": "#757575",
+                                      "tokens": {
+                                        "fills": [
+                                          "color/neutral/500"
+                                        ]
+                                      }
                                     }
+                                  ]
+                                },
+                                "tokens": {
+                                  "fills": [
+                                    "color/neutral/500"
                                   ]
                                 }
                               }
@@ -14395,8 +15070,18 @@
                                         "letter-spacing": "0",
                                         "color": "#1e293b"
                                       },
-                                      "color": "#1e293b"
+                                      "color": "#1e293b",
+                                      "tokens": {
+                                        "fills": [
+                                          "color/extended/1e293b"
+                                        ]
+                                      }
                                     }
+                                  ]
+                                },
+                                "tokens": {
+                                  "fills": [
+                                    "color/extended/1e293b"
                                   ]
                                 }
                               }
@@ -14513,8 +15198,18 @@
                                         "letter-spacing": "0",
                                         "color": "#475569"
                                       },
-                                      "color": "#475569"
+                                      "color": "#475569",
+                                      "tokens": {
+                                        "fills": [
+                                          "color/extended/475569"
+                                        ]
+                                      }
                                     }
+                                  ]
+                                },
+                                "tokens": {
+                                  "fills": [
+                                    "color/extended/475569"
                                   ]
                                 }
                               }
@@ -14631,8 +15326,18 @@
                                         "letter-spacing": "0",
                                         "color": "#334155"
                                       },
-                                      "color": "#334155"
+                                      "color": "#334155",
+                                      "tokens": {
+                                        "fills": [
+                                          "text/primary"
+                                        ]
+                                      }
                                     }
+                                  ]
+                                },
+                                "tokens": {
+                                  "fills": [
+                                    "text/primary"
                                   ]
                                 }
                               }
@@ -14951,8 +15656,18 @@
                                         "letter-spacing": "0",
                                         "color": "#475569"
                                       },
-                                      "color": "#475569"
+                                      "color": "#475569",
+                                      "tokens": {
+                                        "fills": [
+                                          "color/extended/475569"
+                                        ]
+                                      }
                                     }
+                                  ]
+                                },
+                                "tokens": {
+                                  "fills": [
+                                    "color/extended/475569"
                                   ]
                                 }
                               }
@@ -15231,6 +15946,14 @@
                         "sizing": {
                           "horizontal": "FILL",
                           "vertical": "FIXED"
+                        },
+                        "tokens": {
+                          "fills": [
+                            "bg/surface"
+                          ],
+                          "strokes": [
+                            "color/extended/eeeeee"
+                          ]
                         }
                       },
                       {
@@ -15363,8 +16086,18 @@
                                         "letter-spacing": "0",
                                         "color": "#757575"
                                       },
-                                      "color": "#757575"
+                                      "color": "#757575",
+                                      "tokens": {
+                                        "fills": [
+                                          "color/neutral/500"
+                                        ]
+                                      }
                                     }
+                                  ]
+                                },
+                                "tokens": {
+                                  "fills": [
+                                    "color/neutral/500"
                                   ]
                                 }
                               }
@@ -15557,8 +16290,18 @@
                                         "letter-spacing": "0",
                                         "color": "#1e293b"
                                       },
-                                      "color": "#1e293b"
+                                      "color": "#1e293b",
+                                      "tokens": {
+                                        "fills": [
+                                          "color/extended/1e293b"
+                                        ]
+                                      }
                                     }
+                                  ]
+                                },
+                                "tokens": {
+                                  "fills": [
+                                    "color/extended/1e293b"
                                   ]
                                 }
                               }
@@ -15675,8 +16418,18 @@
                                         "letter-spacing": "0",
                                         "color": "#475569"
                                       },
-                                      "color": "#475569"
+                                      "color": "#475569",
+                                      "tokens": {
+                                        "fills": [
+                                          "color/extended/475569"
+                                        ]
+                                      }
                                     }
+                                  ]
+                                },
+                                "tokens": {
+                                  "fills": [
+                                    "color/extended/475569"
                                   ]
                                 }
                               }
@@ -15793,8 +16546,18 @@
                                         "letter-spacing": "0",
                                         "color": "#f59e0b"
                                       },
-                                      "color": "#f59e0b"
+                                      "color": "#f59e0b",
+                                      "tokens": {
+                                        "fills": [
+                                          "color/extended/f59e0b"
+                                        ]
+                                      }
                                     }
+                                  ]
+                                },
+                                "tokens": {
+                                  "fills": [
+                                    "color/extended/f59e0b"
                                   ]
                                 }
                               }
@@ -16113,8 +16876,18 @@
                                         "letter-spacing": "0",
                                         "color": "#f59e0b"
                                       },
-                                      "color": "#f59e0b"
+                                      "color": "#f59e0b",
+                                      "tokens": {
+                                        "fills": [
+                                          "color/extended/f59e0b"
+                                        ]
+                                      }
                                     }
+                                  ]
+                                },
+                                "tokens": {
+                                  "fills": [
+                                    "color/extended/f59e0b"
                                   ]
                                 }
                               }
@@ -16393,6 +17166,14 @@
                         "sizing": {
                           "horizontal": "FILL",
                           "vertical": "FIXED"
+                        },
+                        "tokens": {
+                          "fills": [
+                            "bg/surface"
+                          ],
+                          "strokes": [
+                            "color/extended/eeeeee"
+                          ]
                         }
                       }
                     ],
@@ -16414,6 +17195,9 @@
                       "vertical": "HUG"
                     },
                     "tokens": {
+                      "fills": [
+                        "bg/surface"
+                      ],
                       "strokes": [
                         "color/neutral/200"
                       ]
@@ -16468,7 +17252,7 @@
                         },
                         "positioning": "flow",
                         "css": {
-                          "flex": "1 1 0px",
+                          "flex": "1 1 876px",
                           "min-width": "0",
                           "text-align": "left",
                           "white-space": "pre",
@@ -16514,8 +17298,18 @@
                                 "letter-spacing": "0",
                                 "color": "#8c8c8c"
                               },
-                              "color": "#8c8c8c"
+                              "color": "#8c8c8c",
+                              "tokens": {
+                                "fills": [
+                                  "color/neutral/400"
+                                ]
+                              }
                             }
+                          ]
+                        },
+                        "tokens": {
+                          "fills": [
+                            "color/neutral/400"
                           ]
                         }
                       },
@@ -16614,8 +17408,18 @@
                                     "letter-spacing": "0",
                                     "color": "#ffffff"
                                   },
-                                  "color": "#ffffff"
+                                  "color": "#ffffff",
+                                  "tokens": {
+                                    "fills": [
+                                      "text/on-brand"
+                                    ]
+                                  }
                                 }
+                              ]
+                            },
+                            "tokens": {
+                              "fills": [
+                                "text/on-brand"
                               ]
                             }
                           }
@@ -16739,8 +17543,18 @@
                                     "letter-spacing": "0",
                                     "color": "#475569"
                                   },
-                                  "color": "#475569"
+                                  "color": "#475569",
+                                  "tokens": {
+                                    "fills": [
+                                      "color/extended/475569"
+                                    ]
+                                  }
                                 }
+                              ]
+                            },
+                            "tokens": {
+                              "fills": [
+                                "color/extended/475569"
                               ]
                             }
                           }
@@ -16761,6 +17575,11 @@
                         "sizing": {
                           "horizontal": "HUG",
                           "vertical": "HUG"
+                        },
+                        "tokens": {
+                          "fills": [
+                            "bg/surface"
+                          ]
                         }
                       },
                       {
@@ -16859,8 +17678,18 @@
                                     "letter-spacing": "0",
                                     "color": "#475569"
                                   },
-                                  "color": "#475569"
+                                  "color": "#475569",
+                                  "tokens": {
+                                    "fills": [
+                                      "color/extended/475569"
+                                    ]
+                                  }
                                 }
+                              ]
+                            },
+                            "tokens": {
+                              "fills": [
+                                "color/extended/475569"
                               ]
                             }
                           }
@@ -16881,6 +17710,11 @@
                         "sizing": {
                           "horizontal": "HUG",
                           "vertical": "HUG"
+                        },
+                        "tokens": {
+                          "fills": [
+                            "bg/surface"
+                          ]
                         }
                       },
                       {
@@ -16979,8 +17813,18 @@
                                     "letter-spacing": "0",
                                     "color": "#475569"
                                   },
-                                  "color": "#475569"
+                                  "color": "#475569",
+                                  "tokens": {
+                                    "fills": [
+                                      "color/extended/475569"
+                                    ]
+                                  }
                                 }
+                              ]
+                            },
+                            "tokens": {
+                              "fills": [
+                                "color/extended/475569"
                               ]
                             }
                           }
@@ -17001,6 +17845,11 @@
                         "sizing": {
                           "horizontal": "HUG",
                           "vertical": "HUG"
+                        },
+                        "tokens": {
+                          "fills": [
+                            "bg/surface"
+                          ]
                         }
                       },
                       {
@@ -17099,8 +17948,18 @@
                                     "letter-spacing": "0",
                                     "color": "#475569"
                                   },
-                                  "color": "#475569"
+                                  "color": "#475569",
+                                  "tokens": {
+                                    "fills": [
+                                      "color/extended/475569"
+                                    ]
+                                  }
                                 }
+                              ]
+                            },
+                            "tokens": {
+                              "fills": [
+                                "color/extended/475569"
                               ]
                             }
                           }
@@ -17121,6 +17980,11 @@
                         "sizing": {
                           "horizontal": "HUG",
                           "vertical": "HUG"
+                        },
+                        "tokens": {
+                          "fills": [
+                            "bg/surface"
+                          ]
                         }
                       }
                     ],
@@ -17682,7 +18546,7 @@
                         "positioning": "flow",
                         "css": {
                           "position": "relative",
-                          "flex": "1 1 0px",
+                          "flex": "1 1 158px",
                           "min-width": "0",
                           "display": "flex",
                           "flex-direction": "row",
@@ -17757,7 +18621,7 @@
                             },
                             "positioning": "flow",
                             "css": {
-                              "flex": "1 1 0px",
+                              "flex": "1 1 122px",
                               "min-width": "0",
                               "text-align": "left",
                               "white-space": "pre",
@@ -18039,7 +18903,7 @@
                         },
                         "positioning": "flow",
                         "css": {
-                          "flex": "1 1 0px",
+                          "flex": "1 1 136px",
                           "min-width": "0",
                           "text-align": "left",
                           "white-space": "pre",
@@ -18243,7 +19107,7 @@
                         },
                         "positioning": "flow",
                         "css": {
-                          "flex": "1 1 0px",
+                          "flex": "1 1 136px",
                           "min-width": "0",
                           "text-align": "left",
                           "white-space": "pre",
@@ -18447,7 +19311,7 @@
                         },
                         "positioning": "flow",
                         "css": {
-                          "flex": "1 1 0px",
+                          "flex": "1 1 136px",
                           "min-width": "0",
                           "text-align": "left",
                           "white-space": "pre",
@@ -18664,7 +19528,7 @@
                         },
                         "positioning": "flow",
                         "css": {
-                          "flex": "1 1 0px",
+                          "flex": "1 1 136px",
                           "min-width": "0",
                           "text-align": "left",
                           "white-space": "pre",
@@ -18868,7 +19732,7 @@
                         },
                         "positioning": "flow",
                         "css": {
-                          "flex": "1 1 0px",
+                          "flex": "1 1 136px",
                           "min-width": "0",
                           "text-align": "left",
                           "white-space": "pre",
@@ -19072,7 +19936,7 @@
                         },
                         "positioning": "flow",
                         "css": {
-                          "flex": "1 1 0px",
+                          "flex": "1 1 136px",
                           "min-width": "0",
                           "text-align": "left",
                           "white-space": "pre",
@@ -19229,7 +20093,7 @@
                         "positioning": "flow",
                         "css": {
                           "position": "relative",
-                          "flex": "1 1 0px",
+                          "flex": "1 1 158px",
                           "min-width": "0",
                           "display": "flex",
                           "flex-direction": "row",
@@ -19304,7 +20168,7 @@
                             },
                             "positioning": "flow",
                             "css": {
-                              "flex": "1 1 0px",
+                              "flex": "1 1 122px",
                               "min-width": "0",
                               "text-align": "left",
                               "white-space": "pre",
@@ -19586,7 +20450,7 @@
                         },
                         "positioning": "flow",
                         "css": {
-                          "flex": "1 1 0px",
+                          "flex": "1 1 136px",
                           "min-width": "0",
                           "text-align": "left",
                           "white-space": "pre",
@@ -19790,7 +20654,7 @@
                         },
                         "positioning": "flow",
                         "css": {
-                          "flex": "1 1 0px",
+                          "flex": "1 1 136px",
                           "min-width": "0",
                           "text-align": "left",
                           "white-space": "pre",
@@ -20007,7 +20871,7 @@
                         },
                         "positioning": "flow",
                         "css": {
-                          "flex": "1 1 0px",
+                          "flex": "1 1 136px",
                           "min-width": "0",
                           "text-align": "left",
                           "white-space": "pre",
@@ -20224,7 +21088,7 @@
                         },
                         "positioning": "flow",
                         "css": {
-                          "flex": "1 1 0px",
+                          "flex": "1 1 136px",
                           "min-width": "0",
                           "text-align": "left",
                           "white-space": "pre",
@@ -20441,7 +21305,7 @@
                         },
                         "positioning": "flow",
                         "css": {
-                          "flex": "1 1 0px",
+                          "flex": "1 1 136px",
                           "min-width": "0",
                           "text-align": "left",
                           "white-space": "pre",
@@ -20598,7 +21462,7 @@
                         "positioning": "flow",
                         "css": {
                           "position": "relative",
-                          "flex": "1 1 0px",
+                          "flex": "1 1 158px",
                           "min-width": "0",
                           "display": "flex",
                           "flex-direction": "row",
@@ -20673,7 +21537,7 @@
                             },
                             "positioning": "flow",
                             "css": {
-                              "flex": "1 1 0px",
+                              "flex": "1 1 122px",
                               "min-width": "0",
                               "text-align": "left",
                               "white-space": "pre",
@@ -20955,7 +21819,7 @@
                         },
                         "positioning": "flow",
                         "css": {
-                          "flex": "1 1 0px",
+                          "flex": "1 1 136px",
                           "min-width": "0",
                           "text-align": "left",
                           "white-space": "pre",
@@ -21172,7 +22036,7 @@
                         },
                         "positioning": "flow",
                         "css": {
-                          "flex": "1 1 0px",
+                          "flex": "1 1 136px",
                           "min-width": "0",
                           "text-align": "left",
                           "white-space": "pre",
@@ -21376,7 +22240,7 @@
                         },
                         "positioning": "flow",
                         "css": {
-                          "flex": "1 1 0px",
+                          "flex": "1 1 136px",
                           "min-width": "0",
                           "text-align": "left",
                           "white-space": "pre",
@@ -21593,7 +22457,7 @@
                         },
                         "positioning": "flow",
                         "css": {
-                          "flex": "1 1 0px",
+                          "flex": "1 1 136px",
                           "min-width": "0",
                           "text-align": "left",
                           "white-space": "pre",
@@ -21779,7 +22643,7 @@
                         "positioning": "flow",
                         "css": {
                           "position": "relative",
-                          "flex": "1 1 0px",
+                          "flex": "1 1 158px",
                           "min-width": "0",
                           "display": "flex",
                           "flex-direction": "row",
@@ -21854,7 +22718,7 @@
                             },
                             "positioning": "flow",
                             "css": {
-                              "flex": "1 1 0px",
+                              "flex": "1 1 122px",
                               "min-width": "0",
                               "text-align": "left",
                               "white-space": "pre",
@@ -22158,7 +23022,7 @@
                         },
                         "positioning": "flow",
                         "css": {
-                          "flex": "1 1 0px",
+                          "flex": "1 1 136px",
                           "min-width": "0",
                           "text-align": "left",
                           "white-space": "pre",
@@ -22362,7 +23226,7 @@
                         },
                         "positioning": "flow",
                         "css": {
-                          "flex": "1 1 0px",
+                          "flex": "1 1 136px",
                           "min-width": "0",
                           "text-align": "left",
                           "white-space": "pre",
@@ -22585,7 +23449,7 @@
                         },
                         "positioning": "flow",
                         "css": {
-                          "flex": "1 1 0px",
+                          "flex": "1 1 136px",
                           "min-width": "0",
                           "text-align": "left",
                           "white-space": "pre",
@@ -23305,7 +24169,7 @@
                     "positioning": "flow",
                     "css": {
                       "position": "relative",
-                      "flex": "1 1 0px",
+                      "flex": "1 1 148px",
                       "min-width": "0",
                       "display": "flex",
                       "flex-direction": "column",
@@ -23668,7 +24532,7 @@
                 "positioning": "flow",
                 "css": {
                   "position": "relative",
-                  "flex": "1 1 0px",
+                  "flex": "1 1 128px",
                   "min-width": "0",
                   "display": "flex",
                   "flex-direction": "row",
@@ -23745,7 +24609,7 @@
                     },
                     "positioning": "flow",
                     "css": {
-                      "flex": "1 1 0px",
+                      "flex": "1 1 96px",
                       "min-width": "0",
                       "text-align": "left",
                       "white-space": "nowrap",

@@ -1,8 +1,8 @@
 # Fidelity: ADM-LOP-040400-DK — Lớp học / Cài đặt / Trợ giảng & support
 
-- URL: `http://localhost:3108/lop-hoc/cai-dat/tro-giang-support-dk`
+- URL: `http://localhost:3000/lop-hoc/cai-dat/tro-giang-support-dk`
 - Verdict: **PASS**
-- Pixels outside text: **0.001%** differ (limit 0.5%); all pixels: 0.209%; inside text boxes: 2.367% (glyph rendering)
+- Pixels outside text: **0.001%** differ (limit 0.5%); all pixels: 0.185%; inside text boxes: 2.101% (glyph rendering)
 - Boxes: 191/191 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 191, ≤1px: 191, ≤2px: 191, ≤4px: 191, >4px: 0
 
 ## Pixel regions (largest first)
@@ -16,7 +16,6 @@
 | Text | Differing |
 | --- | --- |
 | Label (`I4056:116994;2245:87908`) | 13.7% |
-| Label (`I4056:117001;2245:87914`) | 13% |
 | Label (`I4056:116992;2245:87908`) | 8.6% |
 | Thanh huy - CSKH (`4056:116851`) | 4.6% |
 | Mã Support (`4056:116892`) | 4.4% |
@@ -30,6 +29,7 @@
 | Nga - Support (`4056:116904`) | 3.2% |
 | Gmail (`4056:116924`) | 3.2% |
 | Label (`I4056:116997;2245:87908`) | 3% |
+| Gmail (`4056:116906`) | 2.8% |
 
 ## Largest box differences
 

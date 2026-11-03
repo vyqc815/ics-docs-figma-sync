@@ -1,8 +1,8 @@
 # Fidelity: ADM-LHN-010300-DK — Lịch hẹn / Hoá đơn
 
-- URL: `http://localhost:3108/lich-hen/hoa-don-dk`
+- URL: `http://localhost:3000/lich-hen/hoa-don-dk`
 - Verdict: **PASS**
-- Pixels outside text: **0.006%** differ (limit 0.5%); all pixels: 0.762%; inside text boxes: 3.445% (glyph rendering)
+- Pixels outside text: **0.006%** differ (limit 0.5%); all pixels: 0.733%; inside text boxes: 3.312% (glyph rendering)
 - Boxes: 328/328 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 319, ≤1px: 328, ≤2px: 328, ≤4px: 328, >4px: 0
 
 ## Pixel regions (largest first)
@@ -18,7 +18,6 @@
 | Text | Differing |
 | --- | --- |
 | - Gửi giới thiệu bạn với học viên (lưu ý các học viên đang c (`4056:105654`) | 27% |
-| Label (`I4056:105487;2245:87774`) | 14.7% |
 | Value (`I4713:129276;2015:36008`) | 6.6% |
 | 3 (`I4056:105735;1391:17481`) | 5% |
 | Value (`I4056:105550;2015:36008`) | 4.7% |
@@ -32,6 +31,7 @@
 | Value (`I4056:105551;2015:36008`) | 3.7% |
 | Trần Phương Nguyên (`I4056:105595;2245:92399`) | 3.3% |
 | Nhật Dương (`I4056:105595;2245:92423`) | 3.3% |
+| [ Sau Buổi 7] CSKH Gửi giới thiệu bạn (`4056:105628`) | 3.2% |
 
 ## Largest box differences
 

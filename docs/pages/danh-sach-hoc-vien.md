@@ -5,7 +5,7 @@
 > **Nguồn:** PLS-ICS T8/2026 ›         ├─ HỌC VIÊN › ADM-HV-010000 — Danh sách học viên (`1114:9234`, file `rRVs5HX0kIHffbS0V40djG`)  
 > **Route:** `/danh-sach-hoc-vien`  
 > **Khung thiết kế:** 1440 × 810 px  
-> **Xuất lúc:** 2026-11-02T03:17:52.140Z  
+> **Xuất lúc:** 2026-11-03T03:10:06.480Z  
 > **Spec đầy đủ (giá trị chính xác từng node):** `../../.figma/pages/adm-hv-010000/page-spec.json`
 
 ## 1. Tổng quan
@@ -26,6 +26,7 @@ Nền trang: `linear-gradient(#f8fafc, #f8fafc), linear-gradient(#ffffff, #fffff
 
 | Token | Biến CSS | Giá trị | Trỏ tới | Bộ / mode |
 | --- | --- | --- | --- | --- |
+| `bg/canvas` | `--bg-canvas` | `#f8fafc` | color/extended/f8fafc | Theme · Semantic / Light |
 | `bố cục/khoảng cách khối` | `--bo-cuc-khoang-cach-khoi` | `16` | spacing/16 | Number Tokens / Mode 1 |
 | `bố cục/lề hai bên` | `--bo-cuc-le-hai-ben` | `16` | spacing/16 | Number Tokens / Mode 1 |
 | `bố cục/lề trên dưới` | `--bo-cuc-le-tren-duoi` | `24` | spacing/24 | Number Tokens / Mode 1 |
@@ -229,7 +230,7 @@ Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí ·
           - [icon] **Icon** ⟨ICON MENU: ICON MENU=Tương tác⟩ — 28×28 · @ (8, 8) flow · file /figma/adm-hv-010000/icon-I4915-233468-4899-195460-2245-87764.svg `I4915:233468;4899:195460;2245:87764`
           - [chữ] “tương tác” — 158×15 [FILL×HUG] · @ (44, 14.5) flow · Unbounded 12/15px 600 #ffffff (color/neutral/white) case title `I4915:233468;4899:195460;2245:87768`
       - [icon] **LOGO CENTER** ⟨LOGO CENTER: Property 1=ICS, Property 2=yes⟩ — 146×54 · @ (32, 662) flow · file /figma/assets/6c027e31f443.svg covers (-4, 0) 154×62 `I4915:233468;4915:212082`
-  - [khối] **MainContent** — 1206×746 · @ (234, 64) abs · column gap 16 pad 24 16 24 16 · bg #f8fafc · clip `3210:25806`
+  - [khối] **MainContent** — 1206×746 · @ (234, 64) abs · column gap 16 pad 24 16 24 16 · bg #f8fafc (bg/canvas) · clip `3210:25806`
     - [khối] **Frame 427321957** — 1174×30 [FILL×HUG] · @ (16, 24) flow · row gap 20 align CENTER `3210:25807`
       - [khối] **Frame 427321947** — 317×26 [FILL×HUG] · @ (0, 2) flow · row gap 8 align CENTER `3210:25808`
         - [chữ] “Danh sách Học viên” — 210×26 [HUG×HUG] · @ (0, 0) flow · Unbounded 17/26px 600 #334155 (color/text/primary) case title · no-wrap `3210:25809`
@@ -967,17 +968,17 @@ Những chỗ CSS không thể tái hiện y hệt Figma (đã dùng cách gần
 - `ASSET_EXPORT_FAILED` — **Icon** (`I4915:233468;4899:195440;2245:87816`): Asset a25 (svg) could not be exported: Error: Failed to export node. This node may not have any visible layers.
 - `ASSET_EXPORT_FAILED` — **Chevron** (`I4915:233468;4899:195440;2245:87822`): Asset a26 (svg) could not be exported: Error: Failed to export node. This node may not have any visible layers.
 - `ASSET_EXPORT_FAILED` — **Icon** (`I4915:233468;4899:195444;2245:87816`): Asset a27 (svg) could not be exported: Error: Failed to export node. This node may not have any visible layers.
-- `ASSET_EXPORT_FAILED` — **Chevron** (`I4915:233468;4899:195444;2245:87822`): Asset a28 (svg) could not be exported: Error: Unable to establish connection to Figma after 10 seconds. Please check your internet connection.
-- `ASSET_EXPORT_FAILED` — **Icon** (`I4915:233468;4899:195447;2245:87816`): Asset a29 (svg) could not be exported: Error: Unable to establish connection to Figma after 10 seconds. Please check your internet connection.
-- `ASSET_EXPORT_FAILED` — **Chevron** (`I4915:233468;4899:195447;2245:87822`): Asset a30 (svg) could not be exported: Error: Unable to establish connection to Figma after 10 seconds. Please check your internet connection.
-- `ASSET_EXPORT_FAILED` — **Icon** (`I4915:233468;4899:195450;2245:87816`): Asset a31 (svg) could not be exported: Error: Unable to establish connection to Figma after 10 seconds. Please check your internet connection.
-- `ASSET_EXPORT_FAILED` — **Chevron** (`I4915:233468;4899:195450;2245:87822`): Asset a32 (svg) could not be exported: Error: Unable to establish connection to Figma after 10 seconds. Please check your internet connection.
-- `ASSET_EXPORT_FAILED` — **Icon** (`I4915:233468;4899:195454;2245:87764`): Asset a33 (svg) could not be exported: Error: Unable to establish connection to Figma after 10 seconds. Please check your internet connection.
-- `ASSET_EXPORT_FAILED` — **Icon** (`I4915:233468;4899:195455;2245:87764`): Asset a34 (svg) could not be exported: Error: Unable to establish connection to Figma after 10 seconds. Please check your internet connection.
-- `ASSET_EXPORT_FAILED` — **Icon** (`I4915:233468;4899:195456;2245:87764`): Asset a35 (svg) could not be exported: Error: Unable to establish connection to Figma after 10 seconds. Please check your internet connection.
-- `ASSET_EXPORT_FAILED` — **Icon** (`I4915:233468;4899:195457;2245:87764`): Asset a36 (svg) could not be exported: Error: Unable to establish connection to Figma after 10 seconds. Please check your internet connection.
-- `ASSET_EXPORT_FAILED` — **Icon** (`I4915:233468;4899:195458;2245:87764`): Asset a37 (svg) could not be exported: Error: Unable to establish connection to Figma after 10 seconds. Please check your internet connection.
-- `ASSET_EXPORT_FAILED` — **Icon** (`I4915:233468;4899:195459;2245:87764`): Asset a38 (svg) could not be exported: Error: Unable to establish connection to Figma after 10 seconds. Please check your internet connection.
+- `ASSET_EXPORT_FAILED` — **Chevron** (`I4915:233468;4899:195444;2245:87822`): Asset a28 (svg) could not be exported: Error: Failed to export node. This node may not have any visible layers.
+- `ASSET_EXPORT_FAILED` — **Icon** (`I4915:233468;4899:195447;2245:87816`): Asset a29 (svg) could not be exported: Error: Failed to export node. This node may not have any visible layers.
+- `ASSET_EXPORT_FAILED` — **Chevron** (`I4915:233468;4899:195447;2245:87822`): Asset a30 (svg) could not be exported: Error: Failed to export node. This node may not have any visible layers.
+- `ASSET_EXPORT_FAILED` — **Icon** (`I4915:233468;4899:195450;2245:87816`): Asset a31 (svg) could not be exported: Error: Failed to export node. This node may not have any visible layers.
+- `ASSET_EXPORT_FAILED` — **Chevron** (`I4915:233468;4899:195450;2245:87822`): Asset a32 (svg) could not be exported: Error: Failed to export node. This node may not have any visible layers.
+- `ASSET_EXPORT_FAILED` — **Icon** (`I4915:233468;4899:195454;2245:87764`): Asset a33 (svg) could not be exported: Error: Failed to export node. This node may not have any visible layers.
+- `ASSET_EXPORT_FAILED` — **Icon** (`I4915:233468;4899:195455;2245:87764`): Asset a34 (svg) could not be exported: Error: Failed to export node. This node may not have any visible layers.
+- `ASSET_EXPORT_FAILED` — **Icon** (`I4915:233468;4899:195456;2245:87764`): Asset a35 (svg) could not be exported: Error: Failed to export node. This node may not have any visible layers.
+- `ASSET_EXPORT_FAILED` — **Icon** (`I4915:233468;4899:195457;2245:87764`): Asset a36 (svg) could not be exported: Error: Failed to export node. This node may not have any visible layers.
+- `ASSET_EXPORT_FAILED` — **Icon** (`I4915:233468;4899:195458;2245:87764`): Asset a37 (svg) could not be exported: Error: Failed to export node. This node may not have any visible layers.
+- `ASSET_EXPORT_FAILED` — **Icon** (`I4915:233468;4899:195459;2245:87764`): Asset a38 (svg) could not be exported: Error: Failed to export node. This node may not have any visible layers.
 - `ASSET_EXPORT_FAILED` — **Icon** (`I4915:233468;4899:195460;2245:87764`): Asset a39 (svg) could not be exported: Error: Failed to export node. This node may not have any visible layers.
 
 ## 10. Hướng dẫn dựng lại (cho người và AI)

@@ -1,0 +1,472 @@
+{
+  "pass": true,
+  "thresholds": {
+    "maxPixelDiffPercent": 0.5,
+    "maxBoxDelta": 1,
+    "maxTextBoxDelta": 2.5,
+    "colorThreshold": 0.1,
+    "aaRadius": 1,
+    "subpixel": true,
+    "maxTextNodeDiffPercent": 35
+  },
+  "pixels": {
+    "width": 1440,
+    "height": 2668,
+    "mismatched": 2412,
+    "percent": 0.063,
+    "shapePercent": 0.003,
+    "textPercent": 0.609,
+    "sizeMismatch": false
+  },
+  "textNodes": [
+    {
+      "id": "I5835:2664;2015:36008",
+      "name": "Value",
+      "pixels": 92,
+      "percent": 7
+    },
+    {
+      "id": "I5822:38392;2015:36008",
+      "name": "Value",
+      "pixels": 58,
+      "percent": 6.7
+    },
+    {
+      "id": "5822:38387",
+      "name": "Value",
+      "pixels": 66,
+      "percent": 5.8
+    },
+    {
+      "id": "I5822:38390;2015:36008",
+      "name": "Value",
+      "pixels": 55,
+      "percent": 5.3
+    },
+    {
+      "id": "I5822:38382;2008:48177",
+      "name": "31.01.2026 - 06.01.2026",
+      "pixels": 164,
+      "percent": 5.1
+    },
+    {
+      "id": "I5822:38391;2015:36092",
+      "name": "Value",
+      "pixels": 36,
+      "percent": 5
+    },
+    {
+      "id": "I5822:38389;2015:36008",
+      "name": "Value",
+      "pixels": 61,
+      "percent": 4.9
+    },
+    {
+      "id": "I5822:39058;2008:49502;1904:12423",
+      "name": "Trần Nguyễn Hoài Phương",
+      "pixels": 76,
+      "percent": 3.8
+    },
+    {
+      "id": "I5822:39069;2008:49502;1904:12423",
+      "name": "Trần Nguyễn Hoài Phương",
+      "pixels": 76,
+      "percent": 3.8
+    },
+    {
+      "id": "I5822:39080;2008:49502;1904:12423",
+      "name": "Trần Nguyễn Hoài Phương",
+      "pixels": 76,
+      "percent": 3.8
+    },
+    {
+      "id": "I5822:38935;2008:49502;1904:12423",
+      "name": "Trần Nguyễn Hoài Phương",
+      "pixels": 57,
+      "percent": 2.9
+    },
+    {
+      "id": "I5822:40051;2008:49502;1904:12423",
+      "name": "Trần Nguyễn Hoài Phương",
+      "pixels": 42,
+      "percent": 2.1
+    },
+    {
+      "id": "I5822:40062;2008:49502;1904:12423",
+      "name": "Trần Nguyễn Hoài Phương",
+      "pixels": 42,
+      "percent": 2.1
+    },
+    {
+      "id": "I5822:40077;2008:49502;1904:12423",
+      "name": "Trần Nguyễn Hoài Phương",
+      "pixels": 42,
+      "percent": 2.1
+    },
+    {
+      "id": "5822:38405",
+      "name": "Thứ 4",
+      "pixels": 57,
+      "percent": 1.7
+    }
+  ],
+  "regions": [
+    {
+      "x": 648,
+      "y": 152,
+      "width": 80,
+      "height": 24,
+      "pixels": 86,
+      "node": {
+        "id": "5822:38407",
+        "name": "07.10",
+        "role": "text"
+      }
+    },
+    {
+      "x": 896,
+      "y": 96,
+      "width": 24,
+      "height": 16,
+      "pixels": 14,
+      "node": {
+        "id": "5822:38388",
+        "name": "Checkbox 2",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 896,
+      "y": 80,
+      "width": 16,
+      "height": 8,
+      "pixels": 7,
+      "node": {
+        "id": "5822:38385",
+        "name": "Checkbox Filter · Theo lớp",
+        "role": "container"
+      }
+    }
+  ],
+  "boxes": {
+    "measured": 611,
+    "missing": [],
+    "withinThreshold": 611,
+    "buckets": {
+      "≤0.5px": 611,
+      "≤1px": 611,
+      "≤2px": 611,
+      "≤4px": 611,
+      ">4px": 0
+    },
+    "worst": [
+      {
+        "id": "5822:38383",
+        "name": "Bộ lọc",
+        "role": "container",
+        "delta": 0.22,
+        "dx": -0.22,
+        "dy": 0,
+        "dw": 0.22,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5822:38384",
+        "name": "Tìm kiếm",
+        "role": "instance",
+        "delta": 0.22,
+        "dx": -0.22,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5822:38384;1739:32348",
+        "name": "Frame 427321959",
+        "role": "container",
+        "delta": 0.22,
+        "dx": -0.22,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5822:38384;1739:32349",
+        "name": "SVG",
+        "role": "icon",
+        "delta": 0.22,
+        "dx": -0.22,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5822:38384;1739:32351",
+        "name": "Tìm nội dung...",
+        "role": "text",
+        "delta": 0.22,
+        "dx": -0.22,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5822:38385",
+        "name": "Checkbox Filter · Theo lớp",
+        "role": "container",
+        "delta": 0.22,
+        "dx": -0.22,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5822:38386",
+        "name": "Content",
+        "role": "container",
+        "delta": 0.22,
+        "dx": -0.22,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5822:38387",
+        "name": "Value",
+        "role": "text",
+        "delta": 0.22,
+        "dx": -0.22,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5822:38388",
+        "name": "Checkbox 2",
+        "role": "icon",
+        "delta": 0.22,
+        "dx": -0.22,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5835:2664",
+        "name": "Filter · Trung tâm",
+        "role": "instance",
+        "delta": 0.22,
+        "dx": -0.22,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5835:2664;2015:36007",
+        "name": "Content",
+        "role": "container",
+        "delta": 0.22,
+        "dx": -0.22,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5835:2664;2015:36008",
+        "name": "Value",
+        "role": "text",
+        "delta": 0.22,
+        "dx": -0.22,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5835:2664;2015:36012",
+        "name": "Chevron",
+        "role": "icon",
+        "delta": 0.22,
+        "dx": -0.22,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5822:38389",
+        "name": "Filter · Giáo viên",
+        "role": "instance",
+        "delta": 0.22,
+        "dx": -0.22,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5822:38389;2015:36007",
+        "name": "Content",
+        "role": "container",
+        "delta": 0.22,
+        "dx": -0.22,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5822:38389;2015:36008",
+        "name": "Value",
+        "role": "text",
+        "delta": 0.22,
+        "dx": -0.22,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5822:38389;2015:36012",
+        "name": "Chevron",
+        "role": "icon",
+        "delta": 0.22,
+        "dx": -0.22,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5822:38390",
+        "name": "Filter · Loại lớp",
+        "role": "instance",
+        "delta": 0.22,
+        "dx": -0.22,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5822:38390;2015:36007",
+        "name": "Content",
+        "role": "container",
+        "delta": 0.22,
+        "dx": -0.22,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5822:38390;2015:36008",
+        "name": "Value",
+        "role": "text",
+        "delta": 0.22,
+        "dx": -0.22,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5822:38390;2015:36012",
+        "name": "Chevron",
+        "role": "icon",
+        "delta": 0.22,
+        "dx": -0.22,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5822:38391",
+        "name": "Filter · Trình độ",
+        "role": "instance",
+        "delta": 0.22,
+        "dx": -0.22,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5822:38391;2015:36091",
+        "name": "Content",
+        "role": "container",
+        "delta": 0.22,
+        "dx": -0.22,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5822:38391;2015:36092",
+        "name": "Value",
+        "role": "text",
+        "delta": 0.22,
+        "dx": -0.22,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5822:38391;2015:36096",
+        "name": "Chevron",
+        "role": "icon",
+        "delta": 0.22,
+        "dx": -0.22,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      }
+    ],
+    "maxDelta": 0.22,
+    "over": []
+  },
+  "failures": [],
+  "url": "http://localhost:3000/lich/lich-day-tong/theo-lop",
+  "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
+  "consoleErrors": [],
+  "rootFound": true
+}

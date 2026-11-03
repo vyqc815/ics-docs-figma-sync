@@ -1,8 +1,8 @@
 # Fidelity: SP-TASK-010000 — Quy trình / Task hôm nay
 
-- URL: `http://localhost:3108/quy-trinh/task-hom-nay`
+- URL: `http://localhost:3000/quy-trinh/task-hom-nay`
 - Verdict: **PASS**
-- Pixels outside text: **0.003%** differ (limit 0.5%); all pixels: 0.136%; inside text boxes: 0.656% (glyph rendering)
+- Pixels outside text: **0.003%** differ (limit 0.5%); all pixels: 0.113%; inside text boxes: 0.541% (glyph rendering)
 - Boxes: 305/305 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 305, ≤1px: 305, ≤2px: 305, ≤4px: 305, >4px: 0
 
 ## Pixel regions (largest first)
@@ -17,13 +17,6 @@
 
 | Text | Differing |
 | --- | --- |
-| 80% (`I3845:49820;1391:14476`) | 26.4% |
-| 100% (`I3845:49804;1308:6749`) | 24.7% |
-| 100% (`I3845:49812;1308:6749`) | 24.7% |
-| 0% (`I3845:49796;1308:6706`) | 23% |
-| 0% (`I3845:49828;1308:6706`) | 23% |
-| 0% (`I3845:49836;1308:6706`) | 23% |
-| 0% (`I3845:49844;1308:6706`) | 23% |
 | Th2, 14.09.2026 (`I3857:72447;1590:881`) | 4.4% |
 | Th2, 14.09.2026 (`I3857:72482;1590:881`) | 4.3% |
 | Giá trị (`3857:72465`) | 2.9% |
@@ -32,6 +25,13 @@
 | Nhãn trường (`I3857:72470;2808:48145`) | 2.3% |
 | Nhãn trường (`I3857:72490;2808:48145`) | 2.3% |
 | Tỷ lệ đi học trên 80% (`3857:72459`) | 2.2% |
+| Nhãn trường (`I3857:72487;2808:48145`) | 2% |
+| Value (`I4915:257614;4901:224377;3857:67911;1971:8814`) | 1.6% |
+| Nhắc nhở học viên trước buổi học tại GG Chat (`3857:72445`) | 1.6% |
+| Value (`I4915:257614;4901:224376;3857:67911;1971:8814`) | 1.2% |
+| Ngày mai (07.10.2026) (`3845:49818`) | 1.2% |
+| Hôm qua (05.10.2026) (`3845:49802`) | 1% |
+| [Urgent] Hỗ trợ vấn đề của khách (`3857:72434`) | 0.9% |
 
 ## Largest box differences
 

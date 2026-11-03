@@ -1,0 +1,34 @@
+{
+  "route": "/lop-hoc/nhat-ky/tin-nhan",
+  "pageFile": "components/figma/adm-lop-050404/index.tsx",
+  "docFile": "docs/pages/lop-hoc/nhat-ky/tin-nhan.md",
+  "sections": [
+    {
+      "nodeId": "2533:33278",
+      "component": "Maincontentarea",
+      "file": "components/figma/adm-lop-050404/Maincontentarea.tsx"
+    },
+    {
+      "nodeId": "4915:230401",
+      "component": "SidebarMenuAdmin",
+      "file": "components/figma/adm-lop-050404/SidebarMenuAdmin.tsx"
+    },
+    {
+      "nodeId": "3497:53320",
+      "component": "Header36",
+      "file": "components/figma/shared/Header36.tsx"
+    }
+  ],
+  "idAlias": {
+    "3497:53320": "4554:24658",
+    "4050:118337": "4554:24659",
+    "3497:53368": "4554:24706",
+    "I3497:53368;2008:30986": "I4554:24706;2008:30986",
+    "I3497:53368;2008:31747": "I4554:24706;2008:31747",
+    "I3497:53368;2008:31748": "I4554:24706;2008:31748",
+    "I3497:53368;1391:17264": "I4554:24706;1391:17264",
+    "I3497:53368;1391:17266": "I4554:24706;1391:17266",
+    "I3497:53368;1391:17268": "I4554:24706;1391:17268",
+    "I3497:53368;1391:17270": "I4554:24706;1391:17270"
+  }
+}

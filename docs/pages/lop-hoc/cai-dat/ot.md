@@ -5,7 +5,7 @@
 > **Nguồn:** PLS-ICS T8/2026 ›             ├─ Cài đặt › ADM-LOP-040800 — Lớp học / Cài đặt / OT (`2401:12807`, file `rRVs5HX0kIHffbS0V40djG`)  
 > **Route:** `/lop-hoc/cai-dat/ot`  
 > **Khung thiết kế:** 1440 × 860 px  
-> **Xuất lúc:** 2026-11-02T03:37:13.738Z  
+> **Xuất lúc:** 2026-11-03T00:51:20.018Z  
 > **Spec đầy đủ (giá trị chính xác từng node):** `../../../../.figma/pages/adm-lop-040800/page-spec.json`
 
 ## 1. Tổng quan
@@ -26,6 +26,8 @@ Nền trang: `#f8fafc`.
 
 | Token | Biến CSS | Giá trị | Trỏ tới | Bộ / mode |
 | --- | --- | --- | --- | --- |
+| `bg/canvas` | `--bg-canvas` | `#f8fafc` | color/extended/f8fafc | Theme · Semantic / Light |
+| `bg/surface` | `--bg-surface` | `#ffffff` | color/neutral/white | Theme · Semantic / Light |
 | `color/border/button` | `--color-border-button` | `#cbd5e1` | color/extended/cbd5e1 | Color Tokens / Light |
 | `color/border/default` | `--color-border-default` | `#e2e8f0` |  | Color Tokens / Light |
 | `color/border/subtle` | `--color-border-subtle` | `#f1f5f9` |  | Color Tokens / Light |
@@ -88,7 +90,7 @@ Nền trang: `#f8fafc`.
 Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí · bố cục · style`. Dòng đầu tiên là chính frame trang (gốc). Tên layer nằm trong `**…**`, chữ hiển thị nằm trong `“…”`, giá trị CSS nguyên văn nằm trong backtick: dấu `·` hay `—` **bên trong** các cặp đó là nội dung, chỉ dấu ` · ` bên ngoài mới ngăn cách các trường. Toạ độ `@ (x, y)` tính từ góc trên-trái của layer cha; layer **flow** do auto layout của cha xếp, layer **abs** đặt tuyệt đối. Các layer cùng cấp được liệt kê **theo thứ tự vẽ của Figma: layer sau nằm đè lên layer trước**. ID ở cuối dòng là node ID trong Figma.
 
 - [trang] **ADM-LOP-040800 — Lớp học / Cài đặt / OT** — 1440×860 · bg #f8fafc `2401:12807`
-  - [khối] **MainContent** — 1140×796 · @ (300, 64) abs · column gap 12 pad 16 24 16 24 · bg #ffffff · clip `2401:12858`
+  - [khối] **MainContent** — 1140×796 · @ (300, 64) abs · column gap 12 pad 16 24 16 24 · bg #ffffff (bg/surface) · clip `2401:12858`
     - [khối] **Sub Navigation Tabs** — 765×36 [HUG×HUG] · @ (24, 16) flow · row gap 12 · clip `2401:12859`
       - [instance] **Atom/Side Tab** ⟨Atom/Side Tab: Có số đếm=false, State=Inactive, Icon=No, Kiểu=Gạch trái⟩ — 87×36 [HUG×HUG] · @ (0, 0) flow · row gap 8 pad 8 12 8 12 align CENTER · radius 6px `2401:12860`
         - [khối] **Container** — 63×20 [HUG×HUG] · @ (12, 8) flow · row `I2401:12860;2177:28927`
@@ -124,7 +126,7 @@ Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí ·
           - [icon] **SVG** — 14×14 · @ (0, 2.5) flow · file /figma/assets/cd26e575cd42.svg `I2401:12872;1739:32349`
           - [chữ] “Tìm nội dung...” — 140×19 [FILL×HUG] · @ (18, 0) flow · Afacad 15/19px 400 #cccccc (color/text/placeholder) · truncate 1 lines `I2401:12872;1739:32351`
     - [khối] **Section - Bảng cài đặt KPI** — 1092×87 [FILL×HUG] · @ (24, 106) flow · column · bg #ffffff (color/neutral/white) · radius 12px · shadow inset 0 0 0 1px #e2e8f0 · clip `2401:12873`
-      - [khối] **Table Header** — 1092×35 [FILL×HUG] · @ (0, 0) flow · row gap 16 pad 8 20 8 20 align CENTER · bg #f8fafc · clip `2401:12874`
+      - [khối] **Table Header** — 1092×35 [FILL×HUG] · @ (0, 0) flow · row gap 16 pad 8 20 8 20 align CENTER · bg #f8fafc (bg/canvas) · clip `2401:12874`
         - [khối] **Cell** — 200×19 [FIXED×HUG] · @ (20, 8) flow · column justify CENTER · clip `2401:12875`
           - [chữ] “Tên” — 200×19 [FILL×HUG] · @ (0, 0) flow · Afacad 15/19px 700 #64748b (color/text/secondary) case upper `2401:12876`
         - [khối] **Cell** — 146×19 [FILL×HUG] · @ (236, 8) flow · column justify CENTER align CENTER · clip `2401:12877`

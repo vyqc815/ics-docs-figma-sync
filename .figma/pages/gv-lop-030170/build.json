@@ -1,0 +1,30 @@
+{
+  "route": "/chi-tiet-lop/bai-hoc/buoi-hoc/bai-cho-hoan-thanh",
+  "pageFile": "components/figma/gv-lop-030170/index.tsx",
+  "docFile": "docs/pages/chi-tiet-lop/bai-hoc/buoi-hoc/bai-cho-hoan-thanh.md",
+  "sections": [
+    {
+      "nodeId": "5292:226686",
+      "component": "Body4",
+      "file": "components/figma/shared/Body4.tsx"
+    },
+    {
+      "nodeId": "5292:226687",
+      "component": "Maincontent",
+      "file": "components/figma/gv-lop-030170/Maincontent.tsx"
+    },
+    {
+      "nodeId": "5292:226879",
+      "component": "Header",
+      "file": "components/figma/gv-lop-030170/Header.tsx"
+    },
+    {
+      "nodeId": "5292:227021",
+      "component": "SidebarMenuTeacher",
+      "file": "components/figma/gv-lop-030170/SidebarMenuTeacher.tsx"
+    }
+  ],
+  "idAlias": {
+    "5292:226686": "769:30964"
+  }
+}

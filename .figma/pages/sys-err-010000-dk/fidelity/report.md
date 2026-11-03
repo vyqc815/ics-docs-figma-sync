@@ -1,8 +1,8 @@
 # Fidelity: SYS-ERR-010000-DK — Lỗi 403 · Không có quyền truy cập
 
-- URL: `http://localhost:3108/loi-403-khong-co-quyen-truy-cap-dk`
+- URL: `http://localhost:3000/loi-403-khong-co-quyen-truy-cap-dk`
 - Verdict: **PASS**
-- Pixels outside text: **0.002%** differ (limit 0.5%); all pixels: 0.186%; inside text boxes: 2.087% (glyph rendering)
+- Pixels outside text: **0.002%** differ (limit 0.5%); all pixels: 0.159%; inside text boxes: 1.777% (glyph rendering)
 - Boxes: 75/75 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 73, ≤1px: 73, ≤2px: 75, ≤4px: 75, >4px: 0
 
 ## Pixel regions (largest first)
@@ -16,7 +16,6 @@
 
 | Text | Differing |
 | --- | --- |
-| Label (`I5789:160540;2245:87864`) | 13.5% |
 | Bạn không có quyền truy cập trang này (`5789:160904`) | 5.4% |
 | Label (`I5789:160542;2245:87858`) | 2.5% |
 | Label (`I5789:160547;2245:87768`) | 2.4% |
@@ -31,6 +30,7 @@
 | Tài khoản của bạn chưa được cấp quyền xem nội dung này. Nếu  (`5789:160905`) | 1.2% |
 | Label (`I5789:160538;2245:87858`) | 1.1% |
 | Label (`I5789:160541;2245:87858`) | 1.1% |
+| Label (`I5789:160539;2245:87858`) | 1% |
 
 ## Largest box differences
 

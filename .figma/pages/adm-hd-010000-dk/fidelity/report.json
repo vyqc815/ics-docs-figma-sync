@@ -12,19 +12,13 @@
   "pixels": {
     "width": 1440,
     "height": 1257,
-    "mismatched": 6173,
-    "percent": 0.341,
+    "mismatched": 5866,
+    "percent": 0.324,
     "shapePercent": 0.001,
-    "textPercent": 1.706,
+    "textPercent": 1.621,
     "sizeMismatch": false
   },
   "textNodes": [
-    {
-      "id": "I4101:133924;2245:87864",
-      "name": "Label",
-      "pixels": 326,
-      "percent": 13.1
-    },
     {
       "id": "I4056:131633;3004:73494",
       "name": "Tiêu đề",
@@ -107,6 +101,12 @@
       "id": "I4101:133921;2245:87820",
       "name": "Label",
       "pixels": 84,
+      "percent": 3.3
+    },
+    {
+      "id": "4056:131378",
+      "name": "DN287",
+      "pixels": 29,
       "percent": 3.3
     }
   ],
@@ -453,7 +453,7 @@
     "over": []
   },
   "failures": [],
-  "url": "http://localhost:3108/hoa-don/danh-sach-hoa-don-dk",
+  "url": "http://localhost:3000/hoa-don/danh-sach-hoa-don-dk",
   "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
   "consoleErrors": [],
   "rootFound": true

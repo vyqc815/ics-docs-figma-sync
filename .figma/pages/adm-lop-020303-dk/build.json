@@ -1,0 +1,34 @@
+{
+  "route": "/chi-tiet-lop-hoc/kiem-tra-dk",
+  "pageFile": "components/figma/adm-lop-020303-dk/index.tsx",
+  "docFile": "docs/pages/chi-tiet-lop-hoc/kiem-tra-dk.md",
+  "sections": [
+    {
+      "nodeId": "4056:112516",
+      "component": "Body",
+      "file": "components/figma/adm-lop-020303-dk/Body.tsx"
+    },
+    {
+      "nodeId": "4056:112679",
+      "component": "Header28",
+      "file": "components/figma/shared/Header28.tsx"
+    },
+    {
+      "nodeId": "4056:112728",
+      "component": "SidebarRail",
+      "file": "components/figma/adm-lop-020303-dk/SidebarRail.tsx"
+    }
+  ],
+  "idAlias": {
+    "4056:112679": "4056:112373",
+    "4056:112680": "4056:112374",
+    "4056:112727": "4056:112421",
+    "I4056:112727;2008:30986": "I4056:112421;2008:30986",
+    "I4056:112727;2008:31747": "I4056:112421;2008:31747",
+    "I4056:112727;2008:31748": "I4056:112421;2008:31748",
+    "I4056:112727;1391:17264": "I4056:112421;1391:17264",
+    "I4056:112727;1391:17266": "I4056:112421;1391:17266",
+    "I4056:112727;1391:17268": "I4056:112421;1391:17268",
+    "I4056:112727;1391:17270": "I4056:112421;1391:17270"
+  }
+}

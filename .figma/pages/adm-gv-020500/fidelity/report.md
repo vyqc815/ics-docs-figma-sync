@@ -1,6 +1,6 @@
 # Fidelity: ADM-GV-020500 — Chi tiết giáo viên / Quản lý đăng ký lịch
 
-- URL: `http://localhost:3108/chi-tiet-giao-vien/quan-ly-dang-ky-lich`
+- URL: `http://localhost:3000/chi-tiet-giao-vien/quan-ly-dang-ky-lich`
 - Verdict: **PASS**
 - Pixels outside text: **0%** differ (limit 0.5%); all pixels: 0.023%; inside text boxes: 0.236% (glyph rendering)
 - Boxes: 240/240 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 240, ≤1px: 240, ≤2px: 240, ≤4px: 240, >4px: 0

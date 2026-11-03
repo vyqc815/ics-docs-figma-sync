@@ -1,0 +1,24 @@
+{
+  "route": "/hoa-don/popup-ho-so-hoc-vien/lich-su-hoa-don/cuon-ngang-toi-cuoi-dk",
+  "pageFile": "components/figma/adm-hd-010021-dk/index.tsx",
+  "docFile": "docs/pages/hoa-don/popup-ho-so-hoc-vien/lich-su-hoa-don/cuon-ngang-toi-cuoi-dk.md",
+  "sections": [
+    {
+      "nodeId": "4056:134136",
+      "component": "PopupHeader2",
+      "file": "components/figma/shared/PopupHeader2.tsx"
+    },
+    {
+      "nodeId": "4056:134137",
+      "component": "Body",
+      "file": "components/figma/adm-hd-010021-dk/Body.tsx"
+    }
+  ],
+  "idAlias": {
+    "4056:134136": "4056:131691",
+    "I4056:134136;2514:153340": "I4056:131691;2514:153340",
+    "I4056:134136;2711:67900": "I4056:131691;2711:67900",
+    "I4056:134136;2514:153341": "I4056:131691;2514:153341",
+    "I4056:134136;2514:153342": "I4056:131691;2514:153342"
+  }
+}

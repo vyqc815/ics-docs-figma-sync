@@ -1,8 +1,8 @@
 # Fidelity: CH-TC-010000-DK — Trang chủ / Thống kê theo tháng
 
-- URL: `http://localhost:3108/trang-chu/thong-ke-theo-thang-dk`
+- URL: `http://localhost:3000/trang-chu/thong-ke-theo-thang-dk`
 - Verdict: **PASS**
-- Pixels outside text: **0.002%** differ (limit 0.5%); all pixels: 0.133%; inside text boxes: 0.899% (glyph rendering)
+- Pixels outside text: **0.002%** differ (limit 0.5%); all pixels: 0.099%; inside text boxes: 0.665% (glyph rendering)
 - Boxes: 431/431 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 431, ≤1px: 431, ≤2px: 431, ≤4px: 431, >4px: 0
 
 ## Pixel regions (largest first)
@@ -16,7 +16,6 @@
 
 | Text | Differing |
 | --- | --- |
-| Label (`I7015:17430;2245:87774`) | 16.6% |
 | Theo tháng (`7015:16346`) | 4.2% |
 | Label (`I7015:17431;2245:87829`) | 2.7% |
 | Label (`I7015:17432;3857:67909`) | 2.7% |
@@ -28,6 +27,7 @@
 | Tiếng Đức 4 Kỹ Năng A1 (v2026-new) (`7015:16176`) | 2% |
 | Tiếng Đức 4 Kỹ Năng A1 (v2026-new) (`7015:16220`) | 2% |
 | Phụ Trách Lớp Đắc Nhân (`I7015:17357;2008:31709`) | 1.9% |
+| Label (`I7015:17430;2245:87774`) | 1.8% |
 | Label (`I7015:17438;2245:87829`) | 1.8% |
 | Tiếng Đức 4 Kỹ Năng A2 (v2026) (`7015:16198`) | 1.7% |
 | Value (`I7015:16348;2015:36008`) | 1.7% |

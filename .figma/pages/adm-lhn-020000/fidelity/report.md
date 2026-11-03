@@ -1,6 +1,6 @@
 # Fidelity: ADM-LHN-020000 — Bảng chia lịch hẹn
 
-- URL: `http://localhost:3108/bang-chia-lich-hen`
+- URL: `http://localhost:3000/bang-chia-lich-hen`
 - Verdict: **PASS**
 - Pixels outside text: **0.005%** differ (limit 0.5%); all pixels: 0.255%; inside text boxes: 0.629% (glyph rendering)
 - Boxes: 783/783 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 774, ≤1px: 783, ≤2px: 783, ≤4px: 783, >4px: 0

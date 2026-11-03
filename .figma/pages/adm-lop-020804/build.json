@@ -1,0 +1,40 @@
+{
+  "route": "/chi-tiet-lop-hoc/cskh/trong",
+  "pageFile": "components/figma/adm-lop-020804/index.tsx",
+  "docFile": "docs/pages/chi-tiet-lop-hoc/cskh/trong.md",
+  "sections": [
+    {
+      "nodeId": "2711:65420",
+      "component": "Body5",
+      "file": "components/figma/shared/Body5.tsx"
+    },
+    {
+      "nodeId": "2711:65552",
+      "component": "Maincontent",
+      "file": "components/figma/adm-lop-020804/Maincontent.tsx"
+    },
+    {
+      "nodeId": "3497:49278",
+      "component": "Header31",
+      "file": "components/figma/shared/Header31.tsx"
+    },
+    {
+      "nodeId": "4915:227915",
+      "component": "SidebarMenuAdmin",
+      "file": "components/figma/adm-lop-020804/SidebarMenuAdmin.tsx"
+    }
+  ],
+  "idAlias": {
+    "2711:65420": "769:36845",
+    "3497:49278": "3497:47435",
+    "4050:116929": "4050:116444",
+    "3497:49326": "3497:47483",
+    "I3497:49326;2008:30986": "I3497:47483;2008:30986",
+    "I3497:49326;2008:31747": "I3497:47483;2008:31747",
+    "I3497:49326;2008:31748": "I3497:47483;2008:31748",
+    "I3497:49326;1391:17264": "I3497:47483;1391:17264",
+    "I3497:49326;1391:17266": "I3497:47483;1391:17266",
+    "I3497:49326;1391:17268": "I3497:47483;1391:17268",
+    "I3497:49326;1391:17270": "I3497:47483;1391:17270"
+  }
+}

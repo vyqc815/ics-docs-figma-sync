@@ -1,8 +1,8 @@
 # Fidelity: CD-KH-040200-DK — Kiến thức (S1) / Ngữ pháp
 
-- URL: `http://localhost:3108/kien-thuc-s1/ngu-phap-dk`
+- URL: `http://localhost:3000/kien-thuc-s1/ngu-phap-dk`
 - Verdict: **PASS**
-- Pixels outside text: **0.089%** differ (limit 0.5%); all pixels: 0.635%; inside text boxes: 2.794% (glyph rendering)
+- Pixels outside text: **0.089%** differ (limit 0.5%); all pixels: 0.571%; inside text boxes: 2.465% (glyph rendering)
 - Boxes: 380/380 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 359, ≤1px: 363, ≤2px: 380, ≤4px: 380, >4px: 0
 
 ## Pixel regions (largest first)
@@ -44,14 +44,12 @@
 
 | Text | Differing |
 | --- | --- |
-| Label (`I6015:47142;4901:216164;2245:87914`) | 22.6% |
 | 连动句：去 + 地方 + 做什么 (`6015:46971`) | 16% |
 | 表达存在 “有” ；“没有” (`6015:46907`) | 14.7% |
 | 否定副词 “不” 、“没” (`6015:46987`) | 13% |
 | Label (`I6015:47142;4901:216166;2245:87908`) | 13% |
 | 疑问代词 哪儿 ; 哪里 (`6015:46923`) | 11.9% |
 | Chi tiết NV (`I6015:46827;2177:28928`) | 8.4% |
-| Đại từ nghi vấn 哪儿 và 哪里 (`6015:46925`) | 6.9% |
 | Label (`I6015:46880;2015:30517`) | 6.8% |
 | Label (`I6015:46897;2015:30517`) | 6.8% |
 | Label (`I6015:46913;2015:30517`) | 6.8% |
@@ -59,6 +57,8 @@
 | Label (`I6015:46945;2015:30517`) | 6.8% |
 | Label (`I6015:46961;2015:30517`) | 6.8% |
 | Label (`I6015:46977;2015:30517`) | 6.8% |
+| Label (`I6015:46993;2015:30517`) | 6.8% |
+| Chi tiết NV (`I6015:46830;2177:28928`) | 6.3% |
 
 ## Largest box differences
 

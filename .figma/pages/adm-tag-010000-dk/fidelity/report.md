@@ -1,8 +1,8 @@
 # Fidelity: ADM-TAG-010000-DK — Tag / Quản lý tag
 
-- URL: `http://localhost:3108/tag/quan-ly-tag-dk`
+- URL: `http://localhost:3000/tag/quan-ly-tag-dk`
 - Verdict: **PASS**
-- Pixels outside text: **0.006%** differ (limit 0.5%); all pixels: 0.086%; inside text boxes: 0.867% (glyph rendering)
+- Pixels outside text: **0.006%** differ (limit 0.5%); all pixels: 0.072%; inside text boxes: 0.716% (glyph rendering)
 - Boxes: 165/165 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 165, ≤1px: 165, ≤2px: 165, ≤4px: 165, >4px: 0
 
 ## Pixel regions (largest first)
@@ -18,7 +18,6 @@
 
 | Text | Differing |
 | --- | --- |
-| Label (`I4056:130914;2245:87774`) | 6.5% |
 | Label (`I4056:130911;2245:87820`) | 3.3% |
 | Label (`I4056:130912;2245:87829`) | 2.7% |
 | Label (`I4056:130920;2245:87768`) | 2.7% |
@@ -31,6 +30,7 @@
 | Label (`I4056:130917;2245:87768`) | 1.8% |
 | Label (`I4056:130910;2245:87820`) | 1.4% |
 | Label (`I4056:130909;2245:87820`) | 1.3% |
+| Label (`I4056:130914;2245:87774`) | 0.9% |
 | HỌC PHÍ (`4056:130960`) | 0.3% |
 | Học viên (`I4056:130964;3065:65375`) | 0.3% |
 

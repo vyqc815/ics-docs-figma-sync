@@ -12,19 +12,13 @@
   "pixels": {
     "width": 1440,
     "height": 810,
-    "mismatched": 1526,
-    "percent": 0.131,
+    "mismatched": 1188,
+    "percent": 0.102,
     "shapePercent": 0,
-    "textPercent": 2.397,
+    "textPercent": 1.865,
     "sizeMismatch": false
   },
   "textNodes": [
-    {
-      "id": "I4333:19353;2245:87914",
-      "name": "Label",
-      "pixels": 376,
-      "percent": 15.7
-    },
     {
       "id": "I4899:187877;2245:87908",
       "name": "Label",
@@ -83,6 +77,12 @@
       "id": "I4899:187625;4899:187330",
       "name": "Vai trò",
       "pixels": 17,
+      "percent": 1.6
+    },
+    {
+      "id": "I4333:19353;2245:87914",
+      "name": "Label",
+      "pixels": 38,
       "percent": 1.6
     },
     {
@@ -428,7 +428,7 @@
     "over": []
   },
   "failures": [],
-  "url": "http://localhost:3108/chi-tiet-lop/thong-tin/kpi-dk",
+  "url": "http://localhost:3000/chi-tiet-lop/thong-tin/kpi-dk",
   "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
   "consoleErrors": [],
   "rootFound": true

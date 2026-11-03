@@ -12,19 +12,13 @@
   "pixels": {
     "width": 1440,
     "height": 1249,
-    "mismatched": 10496,
-    "percent": 0.584,
+    "mismatched": 10220,
+    "percent": 0.568,
     "shapePercent": 0.001,
-    "textPercent": 2.232,
+    "textPercent": 2.173,
     "sizeMismatch": false
   },
   "textNodes": [
-    {
-      "id": "I4056:128378;2245:87864",
-      "name": "Label",
-      "pixels": 313,
-      "percent": 12.5
-    },
     {
       "id": "4056:128052",
       "name": "Ngày Cập Nhật",
@@ -105,6 +99,12 @@
     },
     {
       "id": "4056:128080",
+      "name": "21.09.2025",
+      "pixels": 89,
+      "percent": 3.9
+    },
+    {
+      "id": "4056:128082",
       "name": "21.09.2025",
       "pixels": 89,
       "percent": 3.9
@@ -453,7 +453,7 @@
     "over": []
   },
   "failures": [],
-  "url": "http://localhost:3108/kpi-ot/danh-sach-kpi-dk",
+  "url": "http://localhost:3000/kpi-ot/danh-sach-kpi-dk",
   "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
   "consoleErrors": [],
   "rootFound": true

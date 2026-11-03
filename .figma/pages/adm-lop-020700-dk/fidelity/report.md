@@ -1,8 +1,8 @@
 # Fidelity: ADM-LOP-020700-DK — Chi tiết lớp học / Quy trình lớp
 
-- URL: `http://localhost:3108/chi-tiet-lop-hoc/quy-trinh-lop-dk`
+- URL: `http://localhost:3000/chi-tiet-lop-hoc/quy-trinh-lop-dk`
 - Verdict: **PASS**
-- Pixels outside text: **0.001%** differ (limit 0.5%); all pixels: 0.231%; inside text boxes: 1.037% (glyph rendering)
+- Pixels outside text: **0.001%** differ (limit 0.5%); all pixels: 0.216%; inside text boxes: 0.971% (glyph rendering)
 - Boxes: 331/331 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 319, ≤1px: 331, ≤2px: 331, ≤4px: 331, >4px: 0
 
 ## Pixel regions (largest first)
@@ -17,7 +17,6 @@
 
 | Text | Differing |
 | --- | --- |
-| Label (`I4056:114131;2245:87914`) | 21.1% |
 | Label (`I4056:114127;2245:87908`) | 13.7% |
 | Button (`I4056:113984;1048:1240`) | 10.5% |
 | Label (`I4056:114125;2245:87908`) | 8.6% |
@@ -32,6 +31,7 @@
 | Th2, 14.09.2026 (`I4056:114001;1590:881`) | 4.8% |
 | Th2, 14.09.2026 (`I4056:113998;1590:881`) | 4.7% |
 | Label (`I4056:114128;2245:87908`) | 4.3% |
+| Badge (`I4056:113994;1055:2269`) | 4.2% |
 
 ## Largest box differences
 

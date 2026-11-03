@@ -1,0 +1,472 @@
+{
+  "pass": true,
+  "thresholds": {
+    "maxPixelDiffPercent": 0.5,
+    "maxBoxDelta": 1,
+    "maxTextBoxDelta": 2.5,
+    "colorThreshold": 0.1,
+    "aaRadius": 1,
+    "subpixel": true,
+    "maxTextNodeDiffPercent": 35
+  },
+  "pixels": {
+    "width": 1440,
+    "height": 855,
+    "mismatched": 853,
+    "percent": 0.069,
+    "shapePercent": 0.003,
+    "textPercent": 0.401,
+    "sizeMismatch": false
+  },
+  "textNodes": [
+    {
+      "id": "4885:8914",
+      "name": "Tên",
+      "pixels": 390,
+      "percent": 9
+    },
+    {
+      "id": "I4915:242118;4899:200017;2245:87864",
+      "name": "Label",
+      "pixels": 76,
+      "percent": 3
+    },
+    {
+      "id": "I4885:8848;1430:10764",
+      "name": "Button",
+      "pixels": 30,
+      "percent": 2.1
+    },
+    {
+      "id": "I4885:8849;1048:1238",
+      "name": "Button",
+      "pixels": 8,
+      "percent": 1.5
+    },
+    {
+      "id": "I4885:8869;1048:1266",
+      "name": "Đã nhập xong",
+      "pixels": 148,
+      "percent": 0.8
+    },
+    {
+      "id": "I4885:8855;1739:32457",
+      "name": "0000000009",
+      "pixels": 17,
+      "percent": 0.7
+    },
+    {
+      "id": "I4915:242118;4899:200003;2245:87768",
+      "name": "Label",
+      "pixels": 16,
+      "percent": 0.6
+    },
+    {
+      "id": "I4915:242118;4899:200019;2245:87820",
+      "name": "Label",
+      "pixels": 14,
+      "percent": 0.5
+    },
+    {
+      "id": "I4915:242118;4899:200016;2245:87829",
+      "name": "Label",
+      "pixels": 10,
+      "percent": 0.4
+    },
+    {
+      "id": "I4915:242118;4899:200018;2245:87858",
+      "name": "Label",
+      "pixels": 10,
+      "percent": 0.4
+    },
+    {
+      "id": "I4915:242118;4899:199992;2245:87820",
+      "name": "Label",
+      "pixels": 7,
+      "percent": 0.3
+    },
+    {
+      "id": "I4885:8854;1048:1266",
+      "name": "Đã nhập xong",
+      "pixels": 55,
+      "percent": 0.3
+    },
+    {
+      "id": "I4885:8886;1050:2411",
+      "name": "Badge",
+      "pixels": 2,
+      "percent": 0.3
+    },
+    {
+      "id": "I4915:242118;4899:200009;2245:87820",
+      "name": "Label",
+      "pixels": 4,
+      "percent": 0.2
+    },
+    {
+      "id": "I4915:242118;4899:200012;2245:87820",
+      "name": "Label",
+      "pixels": 6,
+      "percent": 0.2
+    }
+  ],
+  "regions": [
+    {
+      "x": 872,
+      "y": 152,
+      "width": 24,
+      "height": 16,
+      "pixels": 11,
+      "node": {
+        "id": "I4885:8853;2015:31177",
+        "name": "Leading",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 280,
+      "y": 744,
+      "width": 16,
+      "height": 16,
+      "pixels": 11,
+      "node": {
+        "id": "4885:8893",
+        "name": "Checkbox",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 880,
+      "y": 592,
+      "width": 16,
+      "height": 16,
+      "pixels": 8,
+      "node": {
+        "id": "I4885:8887;2015:31177",
+        "name": "Leading",
+        "role": "icon"
+      }
+    }
+  ],
+  "boxes": {
+    "measured": 215,
+    "missing": [],
+    "withinThreshold": 215,
+    "buckets": {
+      "≤0.5px": 215,
+      "≤1px": 215,
+      "≤2px": 215,
+      "≤4px": 215,
+      ">4px": 0
+    },
+    "worst": [
+      {
+        "id": "4885:8847",
+        "name": "Hành động",
+        "role": "container",
+        "delta": 0.33,
+        "dx": -0.33,
+        "dy": 0,
+        "dw": 0.33,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4885:8848",
+        "name": "Xem trước",
+        "role": "instance",
+        "delta": 0.33,
+        "dx": -0.33,
+        "dy": 0,
+        "dw": 0.03,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4885:8848;1430:10764",
+        "name": "Button",
+        "role": "text",
+        "delta": 0.33,
+        "dx": -0.33,
+        "dy": 0,
+        "dw": 0.03,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4885:8849",
+        "name": "Lưu",
+        "role": "instance",
+        "delta": 0.3,
+        "dx": -0.3,
+        "dy": 0,
+        "dw": 0.3,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4885:8849;1048:1238",
+        "name": "Button",
+        "role": "text",
+        "delta": 0.3,
+        "dx": -0.3,
+        "dy": 0,
+        "dw": 0.3,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4915:242118;4915:215644",
+        "name": "Frame 1171274926",
+        "role": "icon",
+        "delta": 0.02,
+        "dx": 0,
+        "dy": -0.02,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4885:8852",
+        "name": "Số câu",
+        "role": "instance",
+        "delta": 0.02,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.02,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4885:8852;1050:2411",
+        "name": "Badge",
+        "role": "text",
+        "delta": 0.02,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.02,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4885:8867",
+        "name": "Số câu",
+        "role": "instance",
+        "delta": 0.02,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.02,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4885:8867;1050:2411",
+        "name": "Badge",
+        "role": "text",
+        "delta": 0.02,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.02,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4885:8886",
+        "name": "Số câu",
+        "role": "instance",
+        "delta": 0.02,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.02,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4885:8886;1050:2411",
+        "name": "Badge",
+        "role": "text",
+        "delta": 0.02,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.02,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4915:242118;4915:215629",
+        "name": "Left: ICS Logo & Toggle",
+        "role": "container",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": -0.01,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4915:242118;4915:215630",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": -0.01,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4915:242118;4915:215631",
+        "name": "Navigation / Sidebar Menu / Light",
+        "role": "icon",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": -0.01,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4915:242118;4915:215643",
+        "name": "v20.07.2026_17:30",
+        "role": "text",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": -0.01,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4915:242118",
+        "name": "Sidebar · MENU - ADMIN",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 1,
+        "textDriven": false
+      },
+      {
+        "id": "I4915:242118;4915:215579",
+        "name": "Frame 427322079",
+        "role": "icon",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 1,
+        "textDriven": false
+      },
+      {
+        "id": "I4915:242118;4915:215646",
+        "name": "Nav Items",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 1,
+        "textDriven": false
+      },
+      {
+        "id": "I4915:242118;4915:215647",
+        "name": "MENU - ADMIN (Tổng)",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 1,
+        "textDriven": false
+      },
+      {
+        "id": "I4915:242118;4899:199992",
+        "name": "Card Menu v2 (Test)",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4915:242118;4899:199992;2245:87821",
+        "name": "Content",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4915:242118;4899:199992;2245:87816",
+        "name": "Icon",
+        "role": "icon",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4915:242118;4899:199992;2245:87820",
+        "name": "Label",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4915:242118;4899:199992;2245:87822",
+        "name": "Chevron",
+        "role": "icon",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      }
+    ],
+    "maxDelta": 0.33,
+    "over": []
+  },
+  "failures": [],
+  "url": "http://localhost:3000/khao-sat/tao-khao-sat-cho-lop/cau-hoi-tu-luan-danh-gia",
+  "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
+  "consoleErrors": [],
+  "rootFound": true
+}

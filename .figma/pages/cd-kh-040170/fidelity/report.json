@@ -1,0 +1,448 @@
+{
+  "pass": true,
+  "thresholds": {
+    "maxPixelDiffPercent": 0.5,
+    "maxBoxDelta": 1,
+    "maxTextBoxDelta": 2.5,
+    "colorThreshold": 0.1,
+    "aaRadius": 1,
+    "subpixel": true,
+    "maxTextNodeDiffPercent": 35
+  },
+  "pixels": {
+    "width": 1040,
+    "height": 657,
+    "mismatched": 1420,
+    "percent": 0.208,
+    "shapePercent": 0.002,
+    "textPercent": 0.733,
+    "sizeMismatch": false
+  },
+  "textNodes": [
+    {
+      "id": "I4846:172108;1048:1232",
+      "name": "Button",
+      "pixels": 45,
+      "percent": 6.7
+    },
+    {
+      "id": "I4846:172046;1048:1232",
+      "name": "Button",
+      "pixels": 125,
+      "percent": 6.4
+    },
+    {
+      "id": "I4846:172004;2514:153342",
+      "name": "Description",
+      "pixels": 862,
+      "percent": 3.9
+    },
+    {
+      "id": "4846:172011",
+      "name": "Tất cả 398 từ (chia lại toàn bộ)",
+      "pixels": 139,
+      "percent": 3.8
+    },
+    {
+      "id": "I4846:172109;1430:10760",
+      "name": "Button",
+      "pixels": 20,
+      "percent": 1.8
+    },
+    {
+      "id": "4846:172014",
+      "name": "Chỉ 382 từ chưa phân cụm (giữ cụm cũ)",
+      "pixels": 67,
+      "percent": 1.4
+    },
+    {
+      "id": "I4846:172379;1048:1286",
+      "name": "Tab",
+      "pixels": 24,
+      "percent": 0.7
+    },
+    {
+      "id": "4846:172049",
+      "name": "Đề xuất của AI",
+      "pixels": 69,
+      "percent": 0.7
+    },
+    {
+      "id": "I4846:172381;1048:1288",
+      "name": "Tab",
+      "pixels": 4,
+      "percent": 0.2
+    },
+    {
+      "id": "I4846:172385;1048:1288",
+      "name": "Tab",
+      "pixels": 4,
+      "percent": 0.2
+    },
+    {
+      "id": "I4846:172387;1048:1288",
+      "name": "Tab",
+      "pixels": 3,
+      "percent": 0.2
+    },
+    {
+      "id": "I4846:172050;1050:2411",
+      "name": "Badge",
+      "pixels": 3,
+      "percent": 0.2
+    },
+    {
+      "id": "I4846:172054;1048:1255",
+      "name": "Badge",
+      "pixels": 2,
+      "percent": 0.2
+    },
+    {
+      "id": "I4846:172067;1048:1255",
+      "name": "Badge",
+      "pixels": 2,
+      "percent": 0.2
+    },
+    {
+      "id": "I4846:172082;1048:1255",
+      "name": "Badge",
+      "pixels": 2,
+      "percent": 0.2
+    }
+  ],
+  "regions": [
+    {
+      "x": 16,
+      "y": 136,
+      "width": 16,
+      "height": 24,
+      "pixels": 15,
+      "node": {
+        "id": "I4846:172013;2015:30488",
+        "name": "Dot",
+        "role": "shape"
+      }
+    }
+  ],
+  "boxes": {
+    "measured": 114,
+    "missing": [],
+    "withinThreshold": 114,
+    "buckets": {
+      "≤0.5px": 105,
+      "≤1px": 107,
+      "≤2px": 114,
+      "≤4px": 114,
+      ">4px": 0
+    },
+    "worst": [
+      {
+        "id": "4846:172107",
+        "name": "Kéo thả từ giữa các cụm để chỉnh trước khi áp dụng",
+        "role": "text",
+        "delta": 1.22,
+        "dx": 0,
+        "dy": 0,
+        "dw": -1.22,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4846:172108",
+        "name": "Atom/Button",
+        "role": "instance",
+        "delta": 1.22,
+        "dx": -1.22,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4846:172108;1048:1232",
+        "name": "Button",
+        "role": "text",
+        "delta": 1.22,
+        "dx": -1.22,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4846:172109",
+        "name": "Atom/Button",
+        "role": "instance",
+        "delta": 1.22,
+        "dx": -1.22,
+        "dy": 0,
+        "dw": 1.22,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4846:172109;1430:10760",
+        "name": "Button",
+        "role": "text",
+        "delta": 1.22,
+        "dx": -1.22,
+        "dy": 0,
+        "dw": 1.22,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4846:172009",
+        "name": "opt",
+        "role": "container",
+        "delta": 1.06,
+        "dx": 0,
+        "dy": 0,
+        "dw": 1.06,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4846:172011",
+        "name": "Tất cả 398 từ (chia lại toàn bộ)",
+        "role": "text",
+        "delta": 1.06,
+        "dx": 0,
+        "dy": 0,
+        "dw": 1.06,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4846:172015",
+        "name": "opt",
+        "role": "container",
+        "delta": 0.55,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.55,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4846:172017",
+        "name": "Mục đang chọn (chưa chọn mục nào)",
+        "role": "text",
+        "delta": 0.55,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.55,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4846:172046;1048:1232",
+        "name": "Button",
+        "role": "text",
+        "delta": 0.45,
+        "dx": -0.23,
+        "dy": 0,
+        "dw": 0.45,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4846:172003",
+        "name": "Popup · Chia cụm bằng AI",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4846:172004",
+        "name": "Popup/Header",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4846:172004;2514:153340",
+        "name": "Tiêu đề",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4846:172004;2711:67900",
+        "name": "Title Row",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4846:172004;2514:153341",
+        "name": "Title",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4846:172004;2514:153342",
+        "name": "Description",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4846:172005",
+        "name": "Body",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4846:172006",
+        "name": "Cột cấu hình",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4846:172007",
+        "name": "Phạm vi chia cụm",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4846:172008",
+        "name": "Phạm vi",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4846:172010",
+        "name": "Radio Button",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4846:172012",
+        "name": "opt",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4846:172013",
+        "name": "Radio Button",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4846:172013;2015:30488",
+        "name": "Dot",
+        "role": "shape",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4846:172014",
+        "name": "Chỉ 382 từ chưa phân cụm (giữ cụm cũ)",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      }
+    ],
+    "maxDelta": 1.22,
+    "over": []
+  },
+  "failures": [],
+  "url": "http://localhost:3000/kien-thuc-s1/tu-vung/popup-chia-cum-bang-ai",
+  "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
+  "consoleErrors": [],
+  "rootFound": true
+}

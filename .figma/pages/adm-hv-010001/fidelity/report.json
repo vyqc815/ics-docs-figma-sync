@@ -1,0 +1,435 @@
+{
+  "pass": true,
+  "thresholds": {
+    "maxPixelDiffPercent": 0.5,
+    "maxBoxDelta": 1,
+    "maxTextBoxDelta": 2.5,
+    "colorThreshold": 0.1,
+    "aaRadius": 1,
+    "subpixel": true,
+    "maxTextNodeDiffPercent": 35
+  },
+  "pixels": {
+    "width": 1440,
+    "height": 810,
+    "mismatched": 5812,
+    "percent": 0.498,
+    "shapePercent": 0.001,
+    "textPercent": 1.997,
+    "sizeMismatch": false
+  },
+  "textNodes": [
+    {
+      "id": "I3210:26402;3210:24843",
+      "name": "3.000.000",
+      "pixels": 141,
+      "percent": 10
+    },
+    {
+      "id": "I3210:26461;3210:24843",
+      "name": "3.000.000",
+      "pixels": 141,
+      "percent": 10
+    },
+    {
+      "id": "I3210:26480;3210:24843",
+      "name": "3.000.000",
+      "pixels": 123,
+      "percent": 8.7
+    },
+    {
+      "id": "I3210:26391;1590:881",
+      "name": "Th2, 14.09.2026",
+      "pixels": 179,
+      "percent": 8.1
+    },
+    {
+      "id": "I3210:26410;1590:881",
+      "name": "Th2, 14.09.2026",
+      "pixels": 179,
+      "percent": 8.1
+    },
+    {
+      "id": "I3210:26448;1590:881",
+      "name": "Th2, 14.09.2026",
+      "pixels": 179,
+      "percent": 8.1
+    },
+    {
+      "id": "I3210:26469;1590:881",
+      "name": "Th2, 14.09.2026",
+      "pixels": 179,
+      "percent": 8.1
+    },
+    {
+      "id": "I3210:26488;1590:881",
+      "name": "Th2, 14.09.2026",
+      "pixels": 179,
+      "percent": 8.1
+    },
+    {
+      "id": "I3210:26507;1590:881",
+      "name": "Th2, 14.09.2026",
+      "pixels": 179,
+      "percent": 8.1
+    },
+    {
+      "id": "I3210:26526;1590:881",
+      "name": "Th2, 14.09.2026",
+      "pixels": 179,
+      "percent": 8.1
+    },
+    {
+      "id": "I3210:26545;1590:881",
+      "name": "Th2, 14.09.2026",
+      "pixels": 179,
+      "percent": 8.1
+    },
+    {
+      "id": "I3210:26564;1590:881",
+      "name": "Th2, 14.09.2026",
+      "pixels": 179,
+      "percent": 8.1
+    },
+    {
+      "id": "I3210:26400;2812:34656",
+      "name": "15.000.000",
+      "pixels": 115,
+      "percent": 7.3
+    },
+    {
+      "id": "I3210:26419;2812:34656",
+      "name": "15.000.000",
+      "pixels": 115,
+      "percent": 7.3
+    },
+    {
+      "id": "I3210:26459;2812:34656",
+      "name": "15.000.000",
+      "pixels": 115,
+      "percent": 7.3
+    }
+  ],
+  "regions": [],
+  "boxes": {
+    "measured": 559,
+    "missing": [],
+    "withinThreshold": 559,
+    "buckets": {
+      "≤0.5px": 558,
+      "≤1px": 559,
+      "≤2px": 559,
+      "≤4px": 559,
+      ">4px": 0
+    },
+    "worst": [
+      {
+        "id": "3210:26370",
+        "name": "Ngày chốt đơn",
+        "role": "text",
+        "delta": 0.94,
+        "dx": -0.47,
+        "dy": 0,
+        "dw": 0.94,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "3210:26355",
+        "name": "Danh sách Học viên",
+        "role": "text",
+        "delta": 0.11,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.11,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "3210:26356",
+        "name": "Atom/Icon Button",
+        "role": "icon",
+        "delta": 0.11,
+        "dx": 0.11,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4915:231305;4915:212042",
+        "name": "v20.07.2026_17:30",
+        "role": "text",
+        "delta": 0.02,
+        "dx": 0,
+        "dy": -0.02,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4915:231305",
+        "name": "Sidebar · MENU - ADMIN",
+        "role": "instance",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": -0.01,
+        "dw": 0,
+        "dh": 0,
+        "limit": 1,
+        "textDriven": false
+      },
+      {
+        "id": "I4915:231305;4915:212028",
+        "name": "Left: ICS Logo & Toggle",
+        "role": "container",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": -0.01,
+        "dw": 0,
+        "dh": -0.01,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4915:231305;4915:212029",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": -0.01,
+        "dw": 0,
+        "dh": -0.01,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4915:231305;4915:212030",
+        "name": "Navigation / Sidebar Menu / Light",
+        "role": "icon",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": -0.01,
+        "dw": 0,
+        "dh": -0.01,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4915:231305;4915:212043",
+        "name": "Frame 1171274926",
+        "role": "icon",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": -0.01,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4915:231305;4899:195456",
+        "name": "Card Menu v2 (Test)",
+        "role": "instance",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": -0.01,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4915:231305;4899:195456;2245:87764",
+        "name": "Icon",
+        "role": "icon",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": -0.01,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4915:231305;4899:195456;2245:87768",
+        "name": "Label",
+        "role": "text",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": -0.01,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4915:231305;4899:195457",
+        "name": "Card Menu v2 (Test)",
+        "role": "instance",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": -0.01,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4915:231305;4899:195457;2245:87764",
+        "name": "Icon",
+        "role": "icon",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": -0.01,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4915:231305;4899:195457;2245:87768",
+        "name": "Label",
+        "role": "text",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": -0.01,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4915:231305;4899:195458",
+        "name": "Card Menu v2 (Test)",
+        "role": "instance",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": -0.01,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4915:231305;4899:195458;2245:87764",
+        "name": "Icon",
+        "role": "icon",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": -0.01,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4915:231305;4899:195458;2245:87768",
+        "name": "Label",
+        "role": "text",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": -0.01,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4915:231305;4899:195459",
+        "name": "Card Menu v2 (Test)",
+        "role": "instance",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": -0.01,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4915:231305;4899:195459;2245:87764",
+        "name": "Icon",
+        "role": "icon",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": -0.01,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4915:231305;4899:195459;2245:87768",
+        "name": "Label",
+        "role": "text",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": -0.01,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4915:231305;4899:195460",
+        "name": "Card Menu v2 (Test)",
+        "role": "instance",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": -0.01,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4915:231305;4899:195460;2245:87764",
+        "name": "Icon",
+        "role": "icon",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": -0.01,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4915:231305;4899:195460;2245:87768",
+        "name": "Label",
+        "role": "text",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": -0.01,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2263:36130",
+        "name": "Header",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 1,
+        "textDriven": false
+      }
+    ],
+    "maxDelta": 0.94,
+    "over": []
+  },
+  "failures": [],
+  "url": "http://localhost:3000/danh-sach-hoc-vien/hover-menu-thao-tac",
+  "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
+  "consoleErrors": [],
+  "rootFound": true
+}

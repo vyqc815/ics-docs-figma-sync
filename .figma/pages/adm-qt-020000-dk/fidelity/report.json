@@ -12,19 +12,13 @@
   "pixels": {
     "width": 1440,
     "height": 2635,
-    "mismatched": 9652,
-    "percent": 0.254,
+    "mismatched": 9267,
+    "percent": 0.244,
     "shapePercent": 0.018,
-    "textPercent": 1.428,
+    "textPercent": 1.367,
     "sizeMismatch": false
   },
   "textNodes": [
-    {
-      "id": "I4056:129038;2245:87774",
-      "name": "Label",
-      "pixels": 423,
-      "percent": 14.7
-    },
     {
       "id": "4056:129275",
       "name": "Tại Đắc Nhân Trí Thức Truyền Từ Tâm",
@@ -108,6 +102,12 @@
       "name": "File video",
       "pixels": 30,
       "percent": 2.8
+    },
+    {
+      "id": "I4056:129037;2245:87820",
+      "name": "Label",
+      "pixels": 65,
+      "percent": 2.5
     }
   ],
   "regions": [
@@ -717,7 +717,7 @@
     "over": []
   },
   "failures": [],
-  "url": "http://localhost:3108/quy-trinh/chi-tiet-loai-quy-trinh-dk",
+  "url": "http://localhost:3000/quy-trinh/chi-tiet-loai-quy-trinh-dk",
   "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
   "consoleErrors": [],
   "rootFound": true

@@ -12,19 +12,13 @@
   "pixels": {
     "width": 1440,
     "height": 955,
-    "mismatched": 7983,
-    "percent": 0.58,
+    "mismatched": 7623,
+    "percent": 0.554,
     "shapePercent": 0.02,
-    "textPercent": 2.628,
+    "textPercent": 2.506,
     "sizeMismatch": false
   },
   "textNodes": [
-    {
-      "id": "I6935:387197;3857:67915",
-      "name": "Label",
-      "pixels": 394,
-      "percent": 16.1
-    },
     {
       "id": "I6935:387328;1590:881",
       "name": "Th2, 14.09.2026",
@@ -108,6 +102,12 @@
       "name": "Th2, 14.09.2026",
       "pixels": 114,
       "percent": 5.4
+    },
+    {
+      "id": "I6935:387309;1590:881",
+      "name": "Th2, 14.09.2026",
+      "pixels": 111,
+      "percent": 5.3
     }
   ],
   "regions": [
@@ -633,7 +633,7 @@
     "over": []
   },
   "failures": [],
-  "url": "http://localhost:3108/lich-hop/dropdown-loc-thoi-gian-dk",
+  "url": "http://localhost:3000/lich-hop/dropdown-loc-thoi-gian-dk",
   "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
   "consoleErrors": [],
   "rootFound": true

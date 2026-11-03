@@ -1,8 +1,8 @@
 # Fidelity: ADM-SS-010000-DK — Ship sách / Danh sách đơn sách
 
-- URL: `http://localhost:3108/ship-sach/danh-sach-don-sach-dk`
+- URL: `http://localhost:3000/ship-sach/danh-sach-don-sach-dk`
 - Verdict: **PASS**
-- Pixels outside text: **0.002%** differ (limit 0.5%); all pixels: 1.182%; inside text boxes: 3.998% (glyph rendering)
+- Pixels outside text: **0.002%** differ (limit 0.5%); all pixels: 1.144%; inside text boxes: 3.868% (glyph rendering)
 - Boxes: 455/455 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 455, ≤1px: 455, ≤2px: 455, ≤4px: 455, >4px: 0
 
 ## Pixel regions (largest first)
@@ -16,7 +16,6 @@
 
 | Text | Differing |
 | --- | --- |
-| Label (`I4056:139287;2245:87774`) | 17% |
 | 2 (`I4056:139155;1391:17479`) | 11.8% |
 | 3 (`I4056:139155;1391:17481`) | 11.8% |
 | Nguyễn Công Thành (`4056:138894`) | 10.7% |
@@ -31,6 +30,7 @@
 | Nguyễn Công Thành (`4056:139069`) | 10.2% |
 | Nguyễn Công Thành (`4056:139098`) | 10.2% |
 | Nguyễn Công Thành (`4056:139127`) | 10.2% |
+| Value (`I4056:138858;2015:36008`) | 9.6% |
 
 ## Largest box differences
 

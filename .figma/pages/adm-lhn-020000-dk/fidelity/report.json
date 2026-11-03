@@ -12,19 +12,13 @@
   "pixels": {
     "width": 1440,
     "height": 810,
-    "mismatched": 2632,
-    "percent": 0.226,
+    "mismatched": 2406,
+    "percent": 0.206,
     "shapePercent": 0.002,
-    "textPercent": 0.581,
+    "textPercent": 0.53,
     "sizeMismatch": false
   },
   "textNodes": [
-    {
-      "id": "I4056:106635;2245:87774",
-      "name": "Label",
-      "pixels": 227,
-      "percent": 7.9
-    },
     {
       "id": "I4056:106791;2200:30227",
       "name": "ID",
@@ -107,6 +101,12 @@
       "id": "4056:106736",
       "name": "Giới thiệu về lớp học, bài học, và cách làm bài tập về nhà",
       "pixels": 113,
+      "percent": 1.2
+    },
+    {
+      "id": "I4056:106743;2245:92411",
+      "name": "Thảo My",
+      "pixels": 31,
       "percent": 1.2
     }
   ],
@@ -453,7 +453,7 @@
     "over": []
   },
   "failures": [],
-  "url": "http://localhost:3108/bang-chia-lich-hen-dk",
+  "url": "http://localhost:3000/bang-chia-lich-hen-dk",
   "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
   "consoleErrors": [],
   "rootFound": true

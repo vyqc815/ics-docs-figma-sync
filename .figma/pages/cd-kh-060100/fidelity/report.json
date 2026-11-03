@@ -12,10 +12,10 @@
   "pixels": {
     "width": 1440,
     "height": 962,
-    "mismatched": 3253,
-    "percent": 0.235,
+    "mismatched": 3235,
+    "percent": 0.234,
     "shapePercent": 0.004,
-    "textPercent": 1.097,
+    "textPercent": 1.091,
     "sizeMismatch": false
   },
   "textNodes": [
@@ -513,7 +513,7 @@
     "over": []
   },
   "failures": [],
-  "url": "http://localhost:3108/bai-tap-ve-nha/btvn",
+  "url": "http://localhost:3000/bai-tap-ve-nha/btvn",
   "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
   "consoleErrors": [],
   "rootFound": true

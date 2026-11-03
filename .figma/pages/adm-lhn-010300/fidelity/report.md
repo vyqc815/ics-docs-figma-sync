@@ -1,6 +1,6 @@
 # Fidelity: ADM-LHN-010300 — Lịch hẹn / Hoá đơn
 
-- URL: `http://localhost:3108/lich-hen/hoa-don`
+- URL: `http://localhost:3000/lich-hen/hoa-don`
 - Verdict: **PASS**
 - Pixels outside text: **0.012%** differ (limit 0.5%); all pixels: 0.766%; inside text boxes: 3.203% (glyph rendering)
 - Boxes: 419/419 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 410, ≤1px: 419, ≤2px: 419, ≤4px: 419, >4px: 0

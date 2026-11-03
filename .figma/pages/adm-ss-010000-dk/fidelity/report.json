@@ -12,19 +12,13 @@
   "pixels": {
     "width": 1440,
     "height": 810,
-    "mismatched": 13792,
-    "percent": 1.182,
+    "mismatched": 13344,
+    "percent": 1.144,
     "shapePercent": 0.002,
-    "textPercent": 3.998,
+    "textPercent": 3.868,
     "sizeMismatch": false
   },
   "textNodes": [
-    {
-      "id": "I4056:139287;2245:87774",
-      "name": "Label",
-      "pixels": 490,
-      "percent": 17
-    },
     {
       "id": "I4056:139155;1391:17479",
       "name": "2",
@@ -108,6 +102,12 @@
       "name": "Nguyễn Công Thành",
       "pixels": 328,
       "percent": 10.2
+    },
+    {
+      "id": "I4056:138858;2015:36008",
+      "name": "Value",
+      "pixels": 199,
+      "percent": 9.6
     }
   ],
   "regions": [
@@ -453,7 +453,7 @@
     "over": []
   },
   "failures": [],
-  "url": "http://localhost:3108/ship-sach/danh-sach-don-sach-dk",
+  "url": "http://localhost:3000/ship-sach/danh-sach-don-sach-dk",
   "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
   "consoleErrors": [],
   "rootFound": true

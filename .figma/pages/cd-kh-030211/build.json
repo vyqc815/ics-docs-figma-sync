@@ -1,0 +1,29 @@
+{
+  "route": "/hoc-ky/bai-hoc/popup-chi-tiet-bai-hoc-1/chua-gan-kien-thuc-ky-nang",
+  "pageFile": "components/figma/cd-kh-030211/index.tsx",
+  "docFile": "docs/pages/hoc-ky/bai-hoc/popup-chi-tiet-bai-hoc-1/chua-gan-kien-thuc-ky-nang.md",
+  "sections": [
+    {
+      "nodeId": "7193:402862",
+      "component": "PopupHeader12",
+      "file": "components/figma/shared/PopupHeader12.tsx"
+    },
+    {
+      "nodeId": "7193:402863",
+      "component": "Body",
+      "file": "components/figma/cd-kh-030211/Body.tsx"
+    },
+    {
+      "nodeId": "7193:402914",
+      "component": "PopupFooter6",
+      "file": "components/figma/shared/PopupFooter6.tsx"
+    }
+  ],
+  "idAlias": {
+    "7193:402914": "2527:167888",
+    "I7193:402914;2514:153361": "I2527:167888;2514:153361",
+    "I7193:402914;2514:153361;1048:1232": "I2527:167888;2514:153361;1048:1232",
+    "I7193:402914;2514:153363": "I2527:167888;2514:153363",
+    "I7193:402914;2514:153363;1048:1230": "I2527:167888;2514:153363;1048:1230"
+  }
+}

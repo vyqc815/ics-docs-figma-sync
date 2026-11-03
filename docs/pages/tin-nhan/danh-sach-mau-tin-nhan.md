@@ -5,7 +5,7 @@
 > **Nguồn:** PLS-ICS T8/2026 ›     ├─ TIN NHẮN › ADM-TN-010000 — Tin nhắn / Danh sách mẫu tin nhắn (`2711:68773`, file `rRVs5HX0kIHffbS0V40djG`)  
 > **Route:** `/tin-nhan/danh-sach-mau-tin-nhan`  
 > **Khung thiết kế:** 1440 × 982 px  
-> **Xuất lúc:** 2026-11-02T03:52:37.010Z  
+> **Xuất lúc:** 2026-11-03T01:08:02.538Z  
 > **Spec đầy đủ (giá trị chính xác từng node):** `../../../.figma/pages/adm-tn-010000/page-spec.json`
 
 ## 1. Tổng quan

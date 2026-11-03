@@ -1,0 +1,29 @@
+{
+  "route": "/bai-tap-ve-nha/frames/cd-kh-060125",
+  "pageFile": "components/figma/cd-kh-060125/index.tsx",
+  "docFile": "docs/pages/bai-tap-ve-nha/frames/cd-kh-060125.md",
+  "sections": [
+    {
+      "nodeId": "5672:75136",
+      "component": "PopupHeader",
+      "file": "components/figma/cd-kh-060125/PopupHeader.tsx"
+    },
+    {
+      "nodeId": "5672:75137",
+      "component": "Body",
+      "file": "components/figma/cd-kh-060125/Body.tsx"
+    },
+    {
+      "nodeId": "5672:75182",
+      "component": "PopupFooter9",
+      "file": "components/figma/shared/PopupFooter9.tsx"
+    }
+  ],
+  "idAlias": {
+    "5672:75182": "5491:348809",
+    "I5672:75182;2514:153361": "I5491:348809;2514:153361",
+    "I5672:75182;2514:153361;1048:1232": "I5491:348809;2514:153361;1048:1232",
+    "I5672:75182;2514:153363": "I5491:348809;2514:153363",
+    "I5672:75182;2514:153363;1048:1230": "I5491:348809;2514:153363;1048:1230"
+  }
+}

@@ -12,10 +12,10 @@
   "pixels": {
     "width": 1440,
     "height": 2016,
-    "mismatched": 5932,
-    "percent": 0.204,
+    "mismatched": 5717,
+    "percent": 0.197,
     "shapePercent": 0.001,
-    "textPercent": 0.902,
+    "textPercent": 0.87,
     "sizeMismatch": false
   },
   "textNodes": [
@@ -30,12 +30,6 @@
       "name": "Button",
       "pixels": 99,
       "percent": 10.5
-    },
-    {
-      "id": "I4056:115159;2245:87914",
-      "name": "Label",
-      "pixels": 241,
-      "percent": 10
     },
     {
       "id": "I4056:115152;2245:87908",
@@ -108,6 +102,12 @@
       "name": "Label",
       "pixels": 104,
       "percent": 4.3
+    },
+    {
+      "id": "I4056:115012;1048:1238",
+      "name": "Button",
+      "pixels": 39,
+      "percent": 3.4
     }
   ],
   "regions": [
@@ -441,7 +441,7 @@
     "over": []
   },
   "failures": [],
-  "url": "http://localhost:3108/chi-tiet-lop-hoc/cskh-dk",
+  "url": "http://localhost:3000/chi-tiet-lop-hoc/cskh-dk",
   "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
   "consoleErrors": [],
   "rootFound": true

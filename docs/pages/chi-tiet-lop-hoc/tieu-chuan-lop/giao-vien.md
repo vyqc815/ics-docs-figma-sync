@@ -5,7 +5,7 @@
 > **Nguồn:** PLS-ICS T8/2026 ›             ├─ Tiêu chuẩn lớp giáo viên › ADM-LOP-020600 — Chi tiết lớp học / Tiêu chuẩn lớp - giáo viên (`769:37409`, file `rRVs5HX0kIHffbS0V40djG`)  
 > **Route:** `/chi-tiet-lop-hoc/tieu-chuan-lop/giao-vien`  
 > **Khung thiết kế:** 1440 × 1907 px  
-> **Xuất lúc:** 2026-11-02T03:37:06.121Z  
+> **Xuất lúc:** 2026-11-03T03:27:36.642Z  
 > **Spec đầy đủ (giá trị chính xác từng node):** `../../../../.figma/pages/adm-lop-020600/page-spec.json`
 
 ## 1. Tổng quan
@@ -27,6 +27,7 @@ Nền trang: `#f8fafc`.
 
 | Token | Biến CSS | Giá trị | Trỏ tới | Bộ / mode |
 | --- | --- | --- | --- | --- |
+| `bg/canvas` | `--bg-canvas` | `#f8fafc` | color/extended/f8fafc | Theme · Semantic / Light |
 | `color/border/default` | `--color-border-default` | `#e2e8f0` |  | Color Tokens / Light |
 | `color/border/subtle` | `--color-border-subtle` | `#f1f5f9` |  | Color Tokens / Light |
 | `color/brand/orange` | `--color-brand-orange` | `#e65100` |  | Color Tokens / Light |
@@ -100,7 +101,7 @@ Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí ·
 
 - [trang] **ADM-LOP-020600 — Chi tiết lớp học / Tiêu chuẩn lớp - giáo viên** — 1440×1907 · bg #f8fafc `769:37409`
   - [khối] **Body** — 1440×1907 · @ (0, 0) abs · trống `769:37410`
-  - [khối] **MainContent** — 1140×1843 · @ (300, 64) abs · column gap 12 pad 24 24 24 24 · bg #f8fafc `811:9975`
+  - [khối] **MainContent** — 1140×1843 · @ (300, 64) abs · column gap 12 pad 24 24 24 24 · bg #f8fafc (bg/canvas) `811:9975`
     - [khối] **Container** — 1092×1057 [FILL×HUG] · @ (24, 24) flow · column gap 16 `811:9976`
       - [khối] **Header line: Title, Progress Bar, Add Action** — 1092×38 [FILL×HUG] · @ (0, 0) flow · row gap 24 align CENTER `3502:77177`
         - [khối] **Container** — 917×26 [FILL×HUG] · @ (0, 6) flow · column `3502:77178`

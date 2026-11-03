@@ -5,7 +5,7 @@
 > **Nguồn:** PLS-ICS T8/2026 ›     ├─ LỊCH HỌP › SP-LHP-010000-DK — Lịch họp / Dropdown lọc · Người tham gia (`6935:385966`, file `rRVs5HX0kIHffbS0V40djG`)  
 > **Route:** `/lich-hop/dropdown-loc-nguoi-tham-gia-dk`  
 > **Khung thiết kế:** 1440 × 955 px  
-> **Xuất lúc:** 2026-11-02T03:54:04.339Z  
+> **Xuất lúc:** 2026-11-03T01:09:31.309Z  
 > **Spec đầy đủ (giá trị chính xác từng node):** `../../../.figma/pages/sp-lhp-010000-dk-2/page-spec.json`
 
 ## 1. Tổng quan
@@ -26,22 +26,22 @@ Nền trang: `#121213` (bg/canvas).
 
 | Token | Biến CSS | Giá trị | Trỏ tới | Bộ / mode |
 | --- | --- | --- | --- | --- |
-| `bg/brand-tint` | `--bg-brand-tint` | `#fff7ed` | color/extended/fff7ed | Theme · Semantic / Light |
-| `bg/brand-tint-strong` | `--bg-brand-tint-strong` | `#ffedd5` | color/extended/ffedd5 | Theme · Semantic / Light |
-| `bg/canvas` | `--bg-canvas` | `#f8fafc` | color/extended/f8fafc | Theme · Semantic / Light |
-| `bg/strong` | `--bg-strong` | `#e2e8f0` | color/border/default | Theme · Semantic / Light |
-| `bg/subtle` | `--bg-subtle` | `#f1f5f9` | color/surface/input | Theme · Semantic / Light |
-| `bg/surface` | `--bg-surface` | `#ffffff` | color/neutral/white | Theme · Semantic / Light |
+| `bg/brand-tint` | `--bg-brand-tint` | `#102218` |  | Theme · Semantic / Dark · Minimal |
+| `bg/brand-tint-strong` | `--bg-brand-tint-strong` | `#153020` |  | Theme · Semantic / Dark · Minimal |
+| `bg/canvas` | `--bg-canvas` | `#121213` |  | Theme · Semantic / Dark · Minimal |
+| `bg/strong` | `--bg-strong` | `#2a2a2e` |  | Theme · Semantic / Dark · Minimal |
+| `bg/subtle` | `--bg-subtle` | `#202023` |  | Theme · Semantic / Dark · Minimal |
+| `bg/surface` | `--bg-surface` | `#18181a` |  | Theme · Semantic / Dark · Minimal |
 | `bố cục/lề trên dưới` | `--bo-cuc-le-tren-duoi` | `24` | spacing/24 | Number Tokens / Mode 1 |
-| `border/brand` | `--border-brand` | `#fed7aa` | color/extended/fed7aa | Theme · Semantic / Light |
-| `border/default` | `--border-default` | `#e2e8f0` | color/border/default | Theme · Semantic / Light |
-| `border/strong` | `--border-strong` | `#cbd5e1` | color/extended/cbd5e1 | Theme · Semantic / Light |
-| `border/subtle` | `--border-subtle` | `#f1f5f9` | color/border/subtle | Theme · Semantic / Light |
-| `brand/primary` | `--brand-primary` | `#e65100` | color/brand/orange | Theme · Semantic / Light |
-| `chrome/bg` | `--chrome-bg` | `#ff7700` | color/extended/ff7700 | Theme · Semantic / Light |
+| `border/brand` | `--border-brand` | `#1e4d31` |  | Theme · Semantic / Dark · Minimal |
+| `border/default` | `--border-default` | `#27272a` |  | Theme · Semantic / Dark · Minimal |
+| `border/strong` | `--border-strong` | `#3f3f46` |  | Theme · Semantic / Dark · Minimal |
+| `border/subtle` | `--border-subtle` | `#1f1f22` |  | Theme · Semantic / Dark · Minimal |
+| `brand/primary` | `--brand-primary` | `#16a34a` |  | Theme · Semantic / Dark · Minimal |
+| `chrome/bg` | `--chrome-bg` | `#0b0b0c` |  | Theme · Semantic / Dark · Minimal |
 | `color/neutral/white` | `--color-neutral-white` | `#ffffff` |  | Color Tokens / Light |
-| `menu/select-bg` | `--menu-select-bg` | `rgba(255, 255, 255, 0)` |  | Theme · Semantic / Light |
-| `menu/select-border` | `--menu-select-border` | `rgba(255, 255, 255, 0.2)` |  | Theme · Semantic / Light |
+| `menu/select-bg` | `--menu-select-bg` | `#2a2a2e` | bg/strong | Theme · Semantic / Dark · Minimal |
+| `menu/select-border` | `--menu-select-border` | `#3f3f46` | border/strong | Theme · Semantic / Dark · Minimal |
 | `radius/12` | `--radius-12` | `12` |  | Number Tokens / Mode 1 |
 | `radius/16` | `--radius-16` | `16` |  | Number Tokens / Mode 1 |
 | `radius/6` | `--radius-6` | `6` |  | Number Tokens / Mode 1 |
@@ -51,10 +51,11 @@ Nền trang: `#121213` (bg/canvas).
 | `spacing/12` | `--spacing-12` | `12` |  | Number Tokens / Mode 1 |
 | `spacing/16` | `--spacing-16` | `16` |  | Number Tokens / Mode 1 |
 | `spacing/8` | `--spacing-8` | `8` |  | Number Tokens / Mode 1 |
-| `text/muted` | `--text-muted` | `#cbd5e1` | color/text/muted | Theme · Semantic / Light |
-| `text/primary` | `--text-primary` | `#334155` | color/text/primary | Theme · Semantic / Light |
-| `text/secondary` | `--text-secondary` | `#64748b` | color/text/secondary | Theme · Semantic / Light |
-| `theme/is-dark` | `--theme-is-dark` | `false` |  | Theme · Semantic / Light |
+| `text/muted` | `--text-muted` | `#71717a` |  | Theme · Semantic / Dark · Minimal |
+| `text/on-brand` | `--text-on-brand` | `#ffffff` |  | Theme · Semantic / Dark · Minimal |
+| `text/primary` | `--text-primary` | `#ededef` |  | Theme · Semantic / Dark · Minimal |
+| `text/secondary` | `--text-secondary` | `#a1a1aa` |  | Theme · Semantic / Dark · Minimal |
+| `theme/is-dark` | `--theme-is-dark` | `true` |  | Theme · Semantic / Dark · Minimal |
 
 **Style Figma đang dùng:**
 
@@ -88,14 +89,14 @@ Nền trang: `#121213` (bg/canvas).
 | `Body/15/Medium` | Afacad | 15 / 19px | 500 | 0 | #ededef (text/primary) | 34 | “Trạng thái” |
 | `Body/15/Italic` | Afacad | 15 / 19px | 400 italic | 0 | #71717a (text/muted) | 9 | “Chưa có ghi chú” |
 | `Label/15/Bold` | Afacad | 15 / 19px | 700 · case upper | 0 | #a1a1aa (text/secondary) | 6 | “Ngày họp” |
-| — | Afacad | 15 / 20px | 400 | 0 | #ededef | 6 | “Trần Phương Nguyên” |
+| — | Afacad | 15 / 20px | 400 | 0 | #ededef (text/primary) | 6 | “Trần Phương Nguyên” |
 | `Body/15/Medium` | Afacad | 15 / 19px | 500 | 0 | #a1a1aa (text/secondary) | 2 | “Hiển thị 1 - 10 trong tổng số 13 cuộc h…” |
 | `Body/15/Medium` | Afacad | 15 / 19px | 500 | 0 | #16a34a (brand/primary) | 1 | “Người tham gia” |
 | `Body/15/Bold` | Afacad | 15 / 19px | 700 | 0 | #ffffff (color/neutral/white) | 1 | “1” |
 | `Body/15/Bold` | Afacad | 15 / 19px | 700 | 0 | #ededef (text/primary) | 1 | “2” |
 | — | Afacad | 15 / 20px | 400 | 0 | #5f5f61 | 1 | “Tìm người tham gia…” |
 | — | Afacad | 15 / 20px | 500 | 0 | #5f5f61 | 1 | “Xoá lọc” |
-| — | Afacad | 15 / 20px | 500 | 0 | #ffffff | 1 | “Áp dụng” |
+| — | Afacad | 15 / 20px | 500 | 0 | #ffffff (text/on-brand) | 1 | “Áp dụng” |
 | `Body/14/SemiBold` | Afacad | 14 / 18px | 600 | 0 | #ffffff (color/neutral/white) | 1 | “+7” |
 | `Body/13/SemiBold` | Afacad | 13 / 16px | 600 | 0 | #ffffff (color/neutral/white) | 3 | “20%” |
 | `Body/13/Bold` | Afacad | 13 / 16px | 700 | 0 | #16a34a (brand/primary) | 1 | “PTL” |
@@ -103,7 +104,7 @@ Nền trang: `#121213` (bg/canvas).
 | — | Afacad | 13 / 16px | 500 | 0 | #ffffff (color/neutral/white) | 1 | “PTL.dacnhan@gmail.com” |
 | `Body/13/Bold` | Afacad | 13 / 16px | 700 | 0 | #ffffff (color/neutral/white) | 1 | “1” |
 | — | Unbounded | 12 / 15px | 600 · case title | 0 | #ffffff (color/neutral/white) | 8 | “Trang chủ” |
-| — | Afacad | 12 / 16px | 500 | 0 | #16a34a | 6 | “N” |
+| — | Afacad | 12 / 16px | 500 | 0 | #16a34a (brand/primary) | 6 | “N” |
 | — | Unbounded | 12 / 15px | 600 | 0 | #ffffff (color/neutral/white) | 1 | “Lịch họp” |
 | — | Unbounded | 11 / 14px | 600 · case title | 0 | #ffffff (color/neutral/white) | 3 | “Task hôm nay” |
 | `Body/11/Bold` | Afacad | 11 / 14px | 700 | 0 | #ffffff (color/neutral/white) | 3 | “12” |
@@ -503,45 +504,45 @@ Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí ·
                   - [chữ] “2” — 8×19 [HUG×HUG] · @ (10, 4.5) flow · Afacad 15/19px 700 #ededef (text/primary) · text-align center · no-wrap `I6935:386311;1391:17479`
                 - [khối] **Button** — 37×28 [HUG×FIXED] · @ (122, 0) flow · column pad 0 6 0 6 justify CENTER align CENTER · bg #18181a (bg/surface) · radius 6px · border 1px solid #3f3f46 (border/strong) `I6935:386311;1391:17486`
                   - [chữ] “Sau” — 23×19 [HUG×HUG] · @ (7, 4.5) flow · Afacad 15/19px 500 #ededef (text/primary) · text-align center · no-wrap `I6935:386311;1391:17487`
-  - [khối] **Dropdown · Người tham gia** — 260×315 · @ (972, 122) abs · column gap 2 pad 8 8 8 8 · bg #18181a · radius 10px · border 1px solid #27272a · shadow 0 8px 24px 0 rgba(0, 0, 0, 0.5) `6935:386485`
-    - [khối] **Tìm kiếm** — 244×34 · @ (9, 9) flow · row pad 0 0 0 10 align CENTER · radius 8px · border 1px solid #27272a `6935:386486`
+  - [khối] **Dropdown · Người tham gia** — 260×315 · @ (972, 122) abs · column gap 2 pad 8 8 8 8 · bg #18181a (bg/surface) · radius 10px · border 1px solid #27272a (border/default) · shadow 0 8px 24px 0 rgba(0, 0, 0, 0.5) `6935:386485`
+    - [khối] **Tìm kiếm** — 244×34 · @ (9, 9) flow · row pad 0 0 0 10 align CENTER · radius 8px · border 1px solid #27272a (border/default) `6935:386486`
       - [chữ] “Tìm người tham gia…” — 132×20 [HUG×HUG] · @ (11, 7) flow · Afacad 15/20px 400 #5f5f61 · no-wrap `6935:386487`
     - [khối] **sp** — 244×4 · @ (9, 45) flow · row · trống `6935:386488`
     - [khối] **Item · Trần Phương Nguyên** — 244×34 · @ (9, 51) flow · row gap 10 pad 0 8 0 8 align CENTER · radius 6px `6935:386489`
       - [icon] **Checkbox** ⟨Checkbox: Checked=Yes, Size=16, Disabled=No⟩ — 16×16 · @ (8, 9) flow · file /figma/assets/1d357087a3a0.svg covers (-1.6, -1.6) 20.8×20.8 `6935:386490`
       - [khối] **Avatar** — 24×24 · @ (34, 5) flow · row justify CENTER align CENTER · bg #122b1a · radius 12px `6935:386492`
-        - [chữ] “N” — 8×16 [HUG×HUG] · @ (8, 4) flow · Afacad 12/16px 500 #16a34a · no-wrap `6935:386493`
-      - [chữ] “Trần Phương Nguyên” — 126×20 [HUG×HUG] · @ (68, 7) flow · Afacad 15/20px 400 #ededef · no-wrap `6935:386494`
+        - [chữ] “N” — 8×16 [HUG×HUG] · @ (8, 4) flow · Afacad 12/16px 500 #16a34a (brand/primary) · no-wrap `6935:386493`
+      - [chữ] “Trần Phương Nguyên” — 126×20 [HUG×HUG] · @ (68, 7) flow · Afacad 15/20px 400 #ededef (text/primary) · no-wrap `6935:386494`
     - [khối] **Item · Lê Thị Mỹ Dung** — 244×34 · @ (9, 87) flow · row gap 10 pad 0 8 0 8 align CENTER · radius 6px `6935:386495`
       - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=16, Disabled=No⟩ — 16×16 · @ (8, 9) flow · bg #242426 · radius 4.8px · shadow inset 0 0 0 0.8px #4d4d54, 0 0.8px 1.6px 0 rgba(0, 0, 0, 0.05), 0.8px 0.8px 2.4px 0 rgba(0, 0, 0, 0.15) `6935:386496`
       - [khối] **Avatar** — 24×24 · @ (34, 5) flow · row justify CENTER align CENTER · bg #122b1a · radius 12px `6935:386497`
-        - [chữ] “D” — 8×16 [HUG×HUG] · @ (8, 4) flow · Afacad 12/16px 500 #16a34a · no-wrap `6935:386498`
-      - [chữ] “Lê Thị Mỹ Dung” — 92×20 [HUG×HUG] · @ (68, 7) flow · Afacad 15/20px 400 #ededef · no-wrap `6935:386499`
+        - [chữ] “D” — 8×16 [HUG×HUG] · @ (8, 4) flow · Afacad 12/16px 500 #16a34a (brand/primary) · no-wrap `6935:386498`
+      - [chữ] “Lê Thị Mỹ Dung” — 92×20 [HUG×HUG] · @ (68, 7) flow · Afacad 15/20px 400 #ededef (text/primary) · no-wrap `6935:386499`
     - [khối] **Item · Lê Huỳnh Thơ** — 244×34 · @ (9, 123) flow · row gap 10 pad 0 8 0 8 align CENTER · radius 6px `6935:386500`
       - [icon] **Checkbox** ⟨Checkbox: Checked=Yes, Size=16, Disabled=No⟩ — 16×16 · @ (8, 9) flow · file /figma/assets/1d357087a3a0.svg covers (-1.6, -1.6) 20.8×20.8 `6935:386501`
       - [khối] **Avatar** — 24×24 · @ (34, 5) flow · row justify CENTER align CENTER · bg #122b1a · radius 12px `6935:386503`
-        - [chữ] “T” — 6×16 [HUG×HUG] · @ (9, 4) flow · Afacad 12/16px 500 #16a34a · no-wrap `6935:386504`
-      - [chữ] “Lê Huỳnh Thơ” — 80×20 [HUG×HUG] · @ (68, 7) flow · Afacad 15/20px 400 #ededef · no-wrap `6935:386505`
+        - [chữ] “T” — 6×16 [HUG×HUG] · @ (9, 4) flow · Afacad 12/16px 500 #16a34a (brand/primary) · no-wrap `6935:386504`
+      - [chữ] “Lê Huỳnh Thơ” — 80×20 [HUG×HUG] · @ (68, 7) flow · Afacad 15/20px 400 #ededef (text/primary) · no-wrap `6935:386505`
     - [khối] **Item · Ngọc** — 244×34 · @ (9, 159) flow · row gap 10 pad 0 8 0 8 align CENTER · radius 6px `6935:386506`
       - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=16, Disabled=No⟩ — 16×16 · @ (8, 9) flow · bg #242426 · radius 4.8px · shadow inset 0 0 0 0.8px #4d4d54, 0 0.8px 1.6px 0 rgba(0, 0, 0, 0.05), 0.8px 0.8px 2.4px 0 rgba(0, 0, 0, 0.15) `6935:386507`
       - [khối] **Avatar** — 24×24 · @ (34, 5) flow · row justify CENTER align CENTER · bg #122b1a · radius 12px `6935:386508`
-        - [chữ] “N” — 8×16 [HUG×HUG] · @ (8, 4) flow · Afacad 12/16px 500 #16a34a · no-wrap `6935:386509`
-      - [chữ] “Ngọc” — 33×20 [HUG×HUG] · @ (68, 7) flow · Afacad 15/20px 400 #ededef · no-wrap `6935:386510`
+        - [chữ] “N” — 8×16 [HUG×HUG] · @ (8, 4) flow · Afacad 12/16px 500 #16a34a (brand/primary) · no-wrap `6935:386509`
+      - [chữ] “Ngọc” — 33×20 [HUG×HUG] · @ (68, 7) flow · Afacad 15/20px 400 #ededef (text/primary) · no-wrap `6935:386510`
     - [khối] **Item · Thanh Huy - CSKH** — 244×34 · @ (9, 195) flow · row gap 10 pad 0 8 0 8 align CENTER · radius 6px `6935:386511`
       - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=16, Disabled=No⟩ — 16×16 · @ (8, 9) flow · bg #242426 · radius 4.8px · shadow inset 0 0 0 0.8px #4d4d54, 0 0.8px 1.6px 0 rgba(0, 0, 0, 0.05), 0.8px 0.8px 2.4px 0 rgba(0, 0, 0, 0.15) `6935:386512`
       - [khối] **Avatar** — 24×24 · @ (34, 5) flow · row justify CENTER align CENTER · bg #122b1a · radius 12px `6935:386513`
-        - [chữ] “C” — 8×16 [HUG×HUG] · @ (8, 4) flow · Afacad 12/16px 500 #16a34a · no-wrap `6935:386514`
-      - [chữ] “Thanh Huy - CSKH” — 107×20 [HUG×HUG] · @ (68, 7) flow · Afacad 15/20px 400 #ededef · no-wrap `6935:386515`
+        - [chữ] “C” — 8×16 [HUG×HUG] · @ (8, 4) flow · Afacad 12/16px 500 #16a34a (brand/primary) · no-wrap `6935:386514`
+      - [chữ] “Thanh Huy - CSKH” — 107×20 [HUG×HUG] · @ (68, 7) flow · Afacad 15/20px 400 #ededef (text/primary) · no-wrap `6935:386515`
     - [khối] **Item · Nhật Dương** — 244×34 · @ (9, 231) flow · row gap 10 pad 0 8 0 8 align CENTER · radius 6px `6935:386516`
       - [instance] **Checkbox** ⟨Checkbox: Checked=No, Size=16, Disabled=No⟩ — 16×16 · @ (8, 9) flow · bg #242426 · radius 4.8px · shadow inset 0 0 0 0.8px #4d4d54, 0 0.8px 1.6px 0 rgba(0, 0, 0, 0.05), 0.8px 0.8px 2.4px 0 rgba(0, 0, 0, 0.15) `6935:386517`
       - [khối] **Avatar** — 24×24 · @ (34, 5) flow · row justify CENTER align CENTER · bg #122b1a · radius 12px `6935:386518`
-        - [chữ] “D” — 8×16 [HUG×HUG] · @ (8, 4) flow · Afacad 12/16px 500 #16a34a · no-wrap `6935:386519`
-      - [chữ] “Nhật Dương” — 76×20 [HUG×HUG] · @ (68, 7) flow · Afacad 15/20px 400 #ededef · no-wrap `6935:386520`
-    - [hình] **Divider** — 244×1 · @ (9, 267) flow · bg #27272a `6935:386521`
+        - [chữ] “D” — 8×16 [HUG×HUG] · @ (8, 4) flow · Afacad 12/16px 500 #16a34a (brand/primary) · no-wrap `6935:386519`
+      - [chữ] “Nhật Dương” — 76×20 [HUG×HUG] · @ (68, 7) flow · Afacad 15/20px 400 #ededef (text/primary) · no-wrap `6935:386520`
+    - [hình] **Divider** — 244×1 · @ (9, 267) flow · bg #27272a (border/default) `6935:386521`
     - [khối] **Footer** — 242×36 [FILL×HUG] · @ (9, 270) flow · row space-between pad 6 6 0 6 align CENTER `6935:386522`
       - [chữ] “Xoá lọc” — 45×20 [HUG×HUG] · @ (6, 11) flow · Afacad 15/20px 500 #5f5f61 · no-wrap `6935:386523`
-      - [khối] **Áp dụng** — 74×30 [HUG×HUG] · @ (162, 6) flow · row pad 5 12 5 12 · bg #16a34a · radius 6px `6935:386524`
-        - [chữ] “Áp dụng” — 50×20 [HUG×HUG] · @ (12, 5) flow · Afacad 15/20px 500 #ffffff · no-wrap `6935:386525`
+      - [khối] **Áp dụng** — 74×30 [HUG×HUG] · @ (162, 6) flow · row pad 5 12 5 12 · bg #16a34a (brand/primary) · radius 6px `6935:386524`
+        - [chữ] “Áp dụng” — 50×20 [HUG×HUG] · @ (12, 5) flow · Afacad 15/20px 500 #ffffff (text/on-brand) · no-wrap `6935:386525`
 
 ## 5. Component đang dùng
 

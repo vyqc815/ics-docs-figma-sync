@@ -1,8 +1,8 @@
 # Fidelity: ADM-TASK-020000 — Task ngày
 
-- URL: `http://localhost:3108/task-ngay`
+- URL: `http://localhost:3000/task-ngay`
 - Verdict: **PASS**
-- Pixels outside text: **0.008%** differ (limit 0.5%); all pixels: 0.149%; inside text boxes: 0.686% (glyph rendering)
+- Pixels outside text: **0.008%** differ (limit 0.5%); all pixels: 0.119%; inside text boxes: 0.541% (glyph rendering)
 - Boxes: 306/306 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 306, ≤1px: 306, ≤2px: 306, ≤4px: 306, >4px: 0
 
 ## Pixel regions (largest first)
@@ -20,13 +20,6 @@
 
 | Text | Differing |
 | --- | --- |
-| 80% (`I4343:83460;1391:14476`) | 26.4% |
-| 80% (`I4343:83488;1391:14476`) | 26.1% |
-| 100% (`I4343:83446;1308:6749`) | 24.7% |
-| 100% (`I4343:83474;1308:6749`) | 24.7% |
-| 0% (`I4343:83503;1308:6706`) | 23% |
-| 0% (`I4343:83511;1308:6706`) | 23% |
-| 0% (`I4343:83519;1308:6706`) | 23% |
 | Th2, 14.09.2026 (`I4343:83096;1590:881`) | 4.4% |
 | Th2, 14.09.2026 (`I4343:83125;1590:881`) | 4.1% |
 | Th2, 14.09.2026 (`I4343:83154;1590:881`) | 4.1% |
@@ -35,6 +28,13 @@
 | [CSKH-03] Xử lý dời lịch + Khai giảng (`4343:83347`) | 1.4% |
 | Hôm nay (08/10/2026) (`4343:83489`) | 1.1% |
 | [CSKH-01][Urgent] Hỗ trợ vấn đề của khách (`4343:82981`) | 1% |
+| Hôm qua (07/10/2026) (`4343:83475`) | 1% |
+| Ngày mai (09/10/2026) (`4343:83504`) | 1% |
+| Label (`I4915:238103;4899:196714;2245:87858`) | 0.9% |
+| 20% (`4343:83532`) | 0.9% |
+| Đã hỗ trợ các học viên mới vào lớp đã khai giảng: GỌI KG + A (`4343:83152`) | 0.9% |
+| 20% (`4343:83539`) | 0.9% |
+| 20% (`4343:83546`) | 0.9% |
 
 ## Largest box differences
 

@@ -1,0 +1,703 @@
+{
+  "pass": false,
+  "thresholds": {
+    "maxPixelDiffPercent": 0.5,
+    "maxBoxDelta": 1,
+    "maxTextBoxDelta": 2.5,
+    "colorThreshold": 0.1,
+    "aaRadius": 1,
+    "subpixel": true,
+    "maxTextNodeDiffPercent": 35
+  },
+  "pixels": {
+    "width": 1440,
+    "height": 810,
+    "mismatched": 4053,
+    "percent": 0.347,
+    "shapePercent": 0.062,
+    "textPercent": 0.827,
+    "sizeMismatch": false
+  },
+  "textNodes": [
+    {
+      "id": "I2371:38325;1877:9117",
+      "name": "Hôm qua",
+      "pixels": 66,
+      "percent": 5.6
+    },
+    {
+      "id": "I2371:38319;2200:30227",
+      "name": "ID",
+      "pixels": 78,
+      "percent": 5.1
+    },
+    {
+      "id": "I2371:38337;2200:30227",
+      "name": "ID",
+      "pixels": 78,
+      "percent": 5.1
+    },
+    {
+      "id": "I2371:38355;2200:30227",
+      "name": "ID",
+      "pixels": 78,
+      "percent": 5.1
+    },
+    {
+      "id": "I2371:38312;2245:90745",
+      "name": "Count",
+      "pixels": 10,
+      "percent": 4.2
+    },
+    {
+      "id": "I2371:38330;2245:90745",
+      "name": "Count",
+      "pixels": 10,
+      "percent": 4.2
+    },
+    {
+      "id": "I2371:38348;2245:90745",
+      "name": "Count",
+      "pixels": 10,
+      "percent": 4.2
+    },
+    {
+      "id": "I2371:37232;2200:30042",
+      "name": "Ngày mai",
+      "pixels": 45,
+      "percent": 3.5
+    },
+    {
+      "id": "I2371:38343;1877:9113",
+      "name": "Hôm nay",
+      "pixels": 39,
+      "percent": 3.4
+    },
+    {
+      "id": "2371:38317",
+      "name": "Giới thiệu về lớp học, bài học, và cách làm bài tập về nhà",
+      "pixels": 400,
+      "percent": 3.3
+    },
+    {
+      "id": "2371:38335",
+      "name": "Giới thiệu về lớp học, bài học, và cách làm bài tập về nhà",
+      "pixels": 400,
+      "percent": 3.3
+    },
+    {
+      "id": "2371:38353",
+      "name": "Giới thiệu về lớp học, bài học, và cách làm bài tập về nhà",
+      "pixels": 400,
+      "percent": 3.3
+    },
+    {
+      "id": "2371:37235",
+      "name": "Giới thiệu về lớp học, bài học, và cách làm bài tập về nhà",
+      "pixels": 285,
+      "percent": 3
+    },
+    {
+      "id": "I2371:38201;2200:30227",
+      "name": "ID",
+      "pixels": 44,
+      "percent": 3
+    },
+    {
+      "id": "I2371:38219;2200:30227",
+      "name": "ID",
+      "pixels": 44,
+      "percent": 3
+    }
+  ],
+  "regions": [
+    {
+      "x": 512,
+      "y": 184,
+      "width": 288,
+      "height": 72,
+      "pixels": 253,
+      "node": {
+        "id": "2371:38398",
+        "name": "Frame 427325249",
+        "role": "container"
+      }
+    },
+    {
+      "x": 912,
+      "y": 184,
+      "width": 288,
+      "height": 8,
+      "pixels": 174,
+      "node": {
+        "id": "2371:37177",
+        "name": "Cell",
+        "role": "container"
+      }
+    },
+    {
+      "x": 992,
+      "y": 208,
+      "width": 216,
+      "height": 112,
+      "pixels": 142,
+      "node": {
+        "id": "2371:37199",
+        "name": "Frame 1171274957",
+        "role": "container"
+      }
+    },
+    {
+      "x": 880,
+      "y": 216,
+      "width": 8,
+      "height": 96,
+      "pixels": 86,
+      "node": {
+        "id": "2371:37192",
+        "name": "Frame 1171274956",
+        "role": "container"
+      }
+    },
+    {
+      "x": 664,
+      "y": 304,
+      "width": 24,
+      "height": 16,
+      "pixels": 30,
+      "node": {
+        "id": "2371:38411",
+        "name": "Status Độ ưu tiên",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 288,
+      "y": 432,
+      "width": 24,
+      "height": 24,
+      "pixels": 25,
+      "node": {
+        "id": "2371:38221",
+        "name": "Status Độ ưu tiên",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 608,
+      "y": 648,
+      "width": 8,
+      "height": 8,
+      "pixels": 4,
+      "node": {
+        "id": "I2371:38346;1991:15992",
+        "name": "Ellipse 76",
+        "role": "image"
+      }
+    }
+  ],
+  "boxes": {
+    "measured": 730,
+    "missing": [],
+    "withinThreshold": 715,
+    "buckets": {
+      "≤0.5px": 697,
+      "≤1px": 707,
+      "≤2px": 715,
+      "≤4px": 717,
+      ">4px": 13
+    },
+    "worst": [
+      {
+        "id": "2371:38303",
+        "name": "Frame 427325252",
+        "role": "container",
+        "delta": 452,
+        "dx": 0,
+        "dy": 0,
+        "dw": 452,
+        "dh": -0.01,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2371:38395",
+        "name": "Frame 427325251",
+        "role": "container",
+        "delta": 18.02,
+        "dx": 0,
+        "dy": -18.02,
+        "dw": 6.47,
+        "dh": 17.79,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2371:38396",
+        "name": "Frame 427325250",
+        "role": "container",
+        "delta": 18.02,
+        "dx": 0,
+        "dy": -18.02,
+        "dw": 0.79,
+        "dh": 17.97,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2371:38404",
+        "name": "Frame 1171274963",
+        "role": "container",
+        "delta": 18.02,
+        "dx": 0,
+        "dy": -18.02,
+        "dw": 2.99,
+        "dh": 17.9,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2371:38405",
+        "name": "Frame 1171274962",
+        "role": "container",
+        "delta": 18.02,
+        "dx": 0,
+        "dy": -18.02,
+        "dw": 0.67,
+        "dh": 17.97,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2371:38406",
+        "name": "Hẹn lớp chuẩn bị khai giảng",
+        "role": "text",
+        "delta": 18.02,
+        "dx": 0,
+        "dy": -18.02,
+        "dw": 0.67,
+        "dh": 17.97,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2371:38407",
+        "name": "Giới thiệu về lớp học, bài học, và cách làm bài tập về nhà",
+        "role": "text",
+        "delta": 18.02,
+        "dx": 0,
+        "dy": -18.02,
+        "dw": 1.77,
+        "dh": 17.94,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2371:38408",
+        "name": "Frame 427325248",
+        "role": "container",
+        "delta": 18.02,
+        "dx": 0,
+        "dy": -18.02,
+        "dw": 1.1,
+        "dh": 17.96,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2371:38398",
+        "name": "Frame 427325249",
+        "role": "container",
+        "delta": 12.8,
+        "dx": 0,
+        "dy": -12.8,
+        "dw": 1.3,
+        "dh": 12.75,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2371:38403",
+        "name": "Huỳnh Thơ và 3 người khác",
+        "role": "text",
+        "delta": 9.87,
+        "dx": 0,
+        "dy": -9.87,
+        "dw": 1.33,
+        "dh": 9.82,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2371:38409",
+        "name": "Atom/ID Badge",
+        "role": "instance",
+        "delta": 5.56,
+        "dx": 0,
+        "dy": -5.56,
+        "dw": 1.48,
+        "dh": 5.51,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2371:38397",
+        "name": "Thời gian lịch hẹn",
+        "role": "instance",
+        "delta": 4.17,
+        "dx": 0,
+        "dy": -4.17,
+        "dw": 1.22,
+        "dh": 4.11,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I2371:38409;2200:30227",
+        "name": "ID",
+        "role": "text",
+        "delta": 4.1,
+        "dx": 0,
+        "dy": -4.1,
+        "dw": 1.03,
+        "dh": 4.05,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I2371:38397;1877:9113",
+        "name": "Hôm nay",
+        "role": "text",
+        "delta": 3.18,
+        "dx": 0,
+        "dy": -3.18,
+        "dw": 1,
+        "dh": 3.14,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2371:38399",
+        "name": "Frame 1171274956",
+        "role": "container",
+        "delta": 2.7,
+        "dx": 0,
+        "dy": -2.7,
+        "dw": 1.14,
+        "dh": 2.65,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2371:38410",
+        "name": "Status lịch hẹn",
+        "role": "icon",
+        "delta": 1.49,
+        "dx": -0.04,
+        "dy": -0.8,
+        "dw": 1.49,
+        "dh": 1.49,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2371:38411",
+        "name": "Status Độ ưu tiên",
+        "role": "icon",
+        "delta": 1.49,
+        "dx": 1.36,
+        "dy": -0.88,
+        "dw": 1.49,
+        "dh": 1.49,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2371:38412",
+        "name": "Mouse click",
+        "role": "icon",
+        "delta": 1.37,
+        "dx": -0.02,
+        "dy": -1.37,
+        "dw": 1.29,
+        "dh": 1.29,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2371:38402",
+        "name": "Avatar",
+        "role": "instance",
+        "delta": 1.24,
+        "dx": 0,
+        "dy": -1.24,
+        "dw": 1.18,
+        "dh": 1.18,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2371:38400",
+        "name": "Avatar",
+        "role": "instance",
+        "delta": 1.23,
+        "dx": 0,
+        "dy": -1.23,
+        "dw": 1.18,
+        "dh": 1.18,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I2371:38400;1991:15992",
+        "name": "Ellipse 76",
+        "role": "image",
+        "delta": 1.23,
+        "dx": 0,
+        "dy": -1.23,
+        "dw": 1.18,
+        "dh": 1.18,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2371:38401",
+        "name": "Avatar",
+        "role": "instance",
+        "delta": 1.23,
+        "dx": 0,
+        "dy": -1.23,
+        "dw": 1.18,
+        "dh": 1.18,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I2371:38401;1991:15990",
+        "name": "Ellipse 76",
+        "role": "image",
+        "delta": 1.23,
+        "dx": 0,
+        "dy": -1.23,
+        "dw": 1.18,
+        "dh": 1.18,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I2371:38402;2245:90745",
+        "name": "Count",
+        "role": "text",
+        "delta": 0.83,
+        "dx": 0,
+        "dy": -0.75,
+        "dw": 0.83,
+        "dh": 0.71,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2371:37146",
+        "name": "Frame 427321947",
+        "role": "container",
+        "delta": 0.73,
+        "dx": 0,
+        "dy": 0,
+        "dw": -0.73,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      }
+    ],
+    "maxDelta": 452,
+    "over": [
+      {
+        "id": "2371:38303",
+        "name": "Frame 427325252",
+        "role": "container",
+        "delta": 452,
+        "dx": 0,
+        "dy": 0,
+        "dw": 452,
+        "dh": -0.01,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2371:38395",
+        "name": "Frame 427325251",
+        "role": "container",
+        "delta": 18.02,
+        "dx": 0,
+        "dy": -18.02,
+        "dw": 6.47,
+        "dh": 17.79,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2371:38396",
+        "name": "Frame 427325250",
+        "role": "container",
+        "delta": 18.02,
+        "dx": 0,
+        "dy": -18.02,
+        "dw": 0.79,
+        "dh": 17.97,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2371:38404",
+        "name": "Frame 1171274963",
+        "role": "container",
+        "delta": 18.02,
+        "dx": 0,
+        "dy": -18.02,
+        "dw": 2.99,
+        "dh": 17.9,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2371:38405",
+        "name": "Frame 1171274962",
+        "role": "container",
+        "delta": 18.02,
+        "dx": 0,
+        "dy": -18.02,
+        "dw": 0.67,
+        "dh": 17.97,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2371:38406",
+        "name": "Hẹn lớp chuẩn bị khai giảng",
+        "role": "text",
+        "delta": 18.02,
+        "dx": 0,
+        "dy": -18.02,
+        "dw": 0.67,
+        "dh": 17.97,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2371:38407",
+        "name": "Giới thiệu về lớp học, bài học, và cách làm bài tập về nhà",
+        "role": "text",
+        "delta": 18.02,
+        "dx": 0,
+        "dy": -18.02,
+        "dw": 1.77,
+        "dh": 17.94,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2371:38408",
+        "name": "Frame 427325248",
+        "role": "container",
+        "delta": 18.02,
+        "dx": 0,
+        "dy": -18.02,
+        "dw": 1.1,
+        "dh": 17.96,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2371:38398",
+        "name": "Frame 427325249",
+        "role": "container",
+        "delta": 12.8,
+        "dx": 0,
+        "dy": -12.8,
+        "dw": 1.3,
+        "dh": 12.75,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2371:38403",
+        "name": "Huỳnh Thơ và 3 người khác",
+        "role": "text",
+        "delta": 9.87,
+        "dx": 0,
+        "dy": -9.87,
+        "dw": 1.33,
+        "dh": 9.82,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2371:38409",
+        "name": "Atom/ID Badge",
+        "role": "instance",
+        "delta": 5.56,
+        "dx": 0,
+        "dy": -5.56,
+        "dw": 1.48,
+        "dh": 5.51,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2371:38397",
+        "name": "Thời gian lịch hẹn",
+        "role": "instance",
+        "delta": 4.17,
+        "dx": 0,
+        "dy": -4.17,
+        "dw": 1.22,
+        "dh": 4.11,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I2371:38409;2200:30227",
+        "name": "ID",
+        "role": "text",
+        "delta": 4.1,
+        "dx": 0,
+        "dy": -4.1,
+        "dw": 1.03,
+        "dh": 4.05,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I2371:38397;1877:9113",
+        "name": "Hôm nay",
+        "role": "text",
+        "delta": 3.18,
+        "dx": 0,
+        "dy": -3.18,
+        "dw": 1,
+        "dh": 3.14,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2371:38399",
+        "name": "Frame 1171274956",
+        "role": "container",
+        "delta": 2.7,
+        "dx": 0,
+        "dy": -2.7,
+        "dw": 1.14,
+        "dh": 2.65,
+        "limit": 2.5,
+        "textDriven": true
+      }
+    ]
+  },
+  "failures": [
+    "15 elements are off by more than their limit (1px, 2.5px for text-driven; worst 452px)."
+  ],
+  "url": "http://localhost:3000/bang-chia-lich-hen/dang-keo-the",
+  "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
+  "consoleErrors": [],
+  "rootFound": true
+}

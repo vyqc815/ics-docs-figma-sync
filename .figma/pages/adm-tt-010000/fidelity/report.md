@@ -1,6 +1,6 @@
 # Fidelity: ADM-TT-010000 — Tương tác / Danh sách log
 
-- URL: `http://localhost:3108/tuong-tac/danh-sach-log`
+- URL: `http://localhost:3000/tuong-tac/danh-sach-log`
 - Verdict: **PASS**
 - Pixels outside text: **0.005%** differ (limit 0.5%); all pixels: 0.375%; inside text boxes: 1.994% (glyph rendering)
 - Boxes: 273/273 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 272, ≤1px: 273, ≤2px: 273, ≤4px: 273, >4px: 0

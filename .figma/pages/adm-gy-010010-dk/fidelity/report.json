@@ -1,0 +1,484 @@
+{
+  "pass": true,
+  "thresholds": {
+    "maxPixelDiffPercent": 0.5,
+    "maxBoxDelta": 1,
+    "maxTextBoxDelta": 2.5,
+    "colorThreshold": 0.1,
+    "aaRadius": 1,
+    "subpixel": true,
+    "maxTextNodeDiffPercent": 35
+  },
+  "pixels": {
+    "width": 1440,
+    "height": 810,
+    "mismatched": 2915,
+    "percent": 0.25,
+    "shapePercent": 0.003,
+    "textPercent": 1.414,
+    "sizeMismatch": false
+  },
+  "textNodes": [
+    {
+      "id": "I4343:87087;3567:39161",
+      "name": "14.09.2026",
+      "pixels": 152,
+      "percent": 6.1
+    },
+    {
+      "id": "I4343:87099;2015:30321",
+      "name": "Badge",
+      "pixels": 46,
+      "percent": 4.1
+    },
+    {
+      "id": "I4343:87110;2015:30321",
+      "name": "Badge",
+      "pixels": 46,
+      "percent": 4.1
+    },
+    {
+      "id": "I4343:87098;3567:39161",
+      "name": "14.09.2026",
+      "pixels": 98,
+      "percent": 3.8
+    },
+    {
+      "id": "4343:87112",
+      "name": "Nội dung góp ý",
+      "pixels": 712,
+      "percent": 3.8
+    },
+    {
+      "id": "I4343:87109;3567:39161",
+      "name": "14.09.2026",
+      "pixels": 95,
+      "percent": 3.7
+    },
+    {
+      "id": "I4343:87058;2245:87820",
+      "name": "Label",
+      "pixels": 84,
+      "percent": 3.3
+    },
+    {
+      "id": "I4343:87059;2245:87820",
+      "name": "Label",
+      "pixels": 69,
+      "percent": 2.7
+    },
+    {
+      "id": "I4343:87065;2245:87768",
+      "name": "Label",
+      "pixels": 78,
+      "percent": 2.7
+    },
+    {
+      "id": "I4343:87054;2245:87820",
+      "name": "Label",
+      "pixels": 65,
+      "percent": 2.5
+    },
+    {
+      "id": "4343:87090",
+      "name": "Nội dung góp ý",
+      "pixels": 500,
+      "percent": 2.5
+    },
+    {
+      "id": "I4343:87055;2245:87768",
+      "name": "Label",
+      "pixels": 69,
+      "percent": 2.4
+    },
+    {
+      "id": "I4343:87061;2245:87820",
+      "name": "Label",
+      "pixels": 61,
+      "percent": 2.4
+    },
+    {
+      "id": "I4343:87063;2245:87768",
+      "name": "Label",
+      "pixels": 62,
+      "percent": 2.2
+    },
+    {
+      "id": "4343:87124",
+      "name": "Góp Ý Về CSKH & Trợ Giảng",
+      "pixels": 123,
+      "percent": 2.1
+    }
+  ],
+  "regions": [
+    {
+      "x": 56,
+      "y": 16,
+      "width": 16,
+      "height": 32,
+      "pixels": 8,
+      "node": {
+        "id": "4343:87037",
+        "name": "Navigation / Sidebar Menu / Light",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 16,
+      "y": 16,
+      "width": 16,
+      "height": 8,
+      "pixels": 6,
+      "node": {
+        "id": "4343:87037",
+        "name": "Navigation / Sidebar Menu / Light",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 280,
+      "y": 152,
+      "width": 16,
+      "height": 32,
+      "pixels": 6,
+      "node": {
+        "id": "I4343:87084;3228:62836",
+        "name": "Ellipse 76",
+        "role": "image"
+      }
+    },
+    {
+      "x": 272,
+      "y": 160,
+      "width": 8,
+      "height": 8,
+      "pixels": 5,
+      "node": {
+        "id": "I4343:87084;3228:62836",
+        "name": "Ellipse 76",
+        "role": "image"
+      }
+    }
+  ],
+  "boxes": {
+    "measured": 145,
+    "missing": [],
+    "withinThreshold": 145,
+    "buckets": {
+      "≤0.5px": 145,
+      "≤1px": 145,
+      "≤2px": 145,
+      "≤4px": 145,
+      ">4px": 0
+    },
+    "worst": [
+      {
+        "id": "4343:87086",
+        "name": "Thời gian & trạng thái",
+        "role": "container",
+        "delta": 0.25,
+        "dx": -0.25,
+        "dy": 0,
+        "dw": 0.25,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4343:87087",
+        "name": "Thời gian gửi",
+        "role": "instance",
+        "delta": 0.25,
+        "dx": -0.25,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4343:87087;3567:39161",
+        "name": "14.09.2026",
+        "role": "text",
+        "delta": 0.25,
+        "dx": -0.25,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4343:87088",
+        "name": "Trạng thái",
+        "role": "instance",
+        "delta": 0.25,
+        "dx": -0.25,
+        "dy": 0,
+        "dw": 0.25,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4343:87088;2015:30321",
+        "name": "Badge",
+        "role": "text",
+        "delta": 0.25,
+        "dx": -0.25,
+        "dy": 0,
+        "dw": 0.25,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4343:87097",
+        "name": "Thời gian & trạng thái",
+        "role": "container",
+        "delta": 0.25,
+        "dx": -0.25,
+        "dy": 0,
+        "dw": 0.25,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4343:87098",
+        "name": "Thời gian gửi",
+        "role": "instance",
+        "delta": 0.25,
+        "dx": -0.25,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4343:87098;3567:39161",
+        "name": "14.09.2026",
+        "role": "text",
+        "delta": 0.25,
+        "dx": -0.25,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4343:87099",
+        "name": "Trạng thái",
+        "role": "instance",
+        "delta": 0.25,
+        "dx": -0.25,
+        "dy": 0,
+        "dw": 0.25,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4343:87099;2015:30321",
+        "name": "Badge",
+        "role": "text",
+        "delta": 0.25,
+        "dx": -0.25,
+        "dy": 0,
+        "dw": 0.25,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4343:87108",
+        "name": "Thời gian & trạng thái",
+        "role": "container",
+        "delta": 0.25,
+        "dx": -0.25,
+        "dy": 0,
+        "dw": 0.25,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4343:87109",
+        "name": "Thời gian gửi",
+        "role": "instance",
+        "delta": 0.25,
+        "dx": -0.25,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4343:87109;3567:39161",
+        "name": "14.09.2026",
+        "role": "text",
+        "delta": 0.25,
+        "dx": -0.25,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4343:87110",
+        "name": "Trạng thái",
+        "role": "instance",
+        "delta": 0.25,
+        "dx": -0.25,
+        "dy": 0,
+        "dw": 0.25,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4343:87110;2015:30321",
+        "name": "Badge",
+        "role": "text",
+        "delta": 0.25,
+        "dx": -0.25,
+        "dy": 0,
+        "dw": 0.25,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4343:87050",
+        "name": "Frame 1171274926",
+        "role": "icon",
+        "delta": 0.02,
+        "dx": 0,
+        "dy": -0.02,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4343:87035",
+        "name": "Left: ICS Logo & Toggle",
+        "role": "container",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": -0.01,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4343:87036",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": -0.01,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4343:87037",
+        "name": "Navigation / Sidebar Menu / Light",
+        "role": "icon",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": -0.01,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4343:87049",
+        "name": "v20.07.2026_17:30",
+        "role": "text",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": -0.01,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4343:86934",
+        "name": "Header",
+        "role": "icon",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 1,
+        "textDriven": false
+      },
+      {
+        "id": "4343:86983",
+        "name": "Sidebar",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 1,
+        "textDriven": false
+      },
+      {
+        "id": "4343:86984",
+        "name": "Frame 427322079",
+        "role": "icon",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 1,
+        "textDriven": false
+      },
+      {
+        "id": "4343:87052",
+        "name": "LOGO CENTER",
+        "role": "icon",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 1,
+        "textDriven": false
+      },
+      {
+        "id": "4343:87053",
+        "name": "Menu Chính",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 1,
+        "textDriven": false
+      }
+    ],
+    "maxDelta": 0.25,
+    "over": []
+  },
+  "failures": [],
+  "url": "http://localhost:3000/gop-y/giao-vien-dk",
+  "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
+  "consoleErrors": [],
+  "rootFound": true
+}

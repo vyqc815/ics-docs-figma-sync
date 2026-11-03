@@ -5,7 +5,7 @@
 > **Nguồn:** PLS-ICS T8/2026 ›     ├─ TOOLS › CD-TL-010300 — Tools / Giọng đọc / Âm tiết pinyin · Đang tạo (`6133:126133`, file `rRVs5HX0kIHffbS0V40djG`)  
 > **Route:** `/tools/giong-doc/am-tiet-pinyin-dang-tao`  
 > **Khung thiết kế:** 1440 × 910 px  
-> **Xuất lúc:** 2026-11-02T03:53:47.032Z  
+> **Xuất lúc:** 2026-11-03T01:09:13.798Z  
 > **Spec đầy đủ (giá trị chính xác từng node):** `../../../../.figma/pages/cd-tl-010300/page-spec.json`
 
 ## 1. Tổng quan
@@ -27,7 +27,12 @@ Nền trang: `#f8fafc`.
 
 | Token | Biến CSS | Giá trị | Trỏ tới | Bộ / mode |
 | --- | --- | --- | --- | --- |
+| `bg/canvas` | `--bg-canvas` | `#f8fafc` | color/extended/f8fafc | Theme · Semantic / Light |
+| `bg/surface` | `--bg-surface` | `#ffffff` | color/neutral/white | Theme · Semantic / Light |
+| `border/default` | `--border-default` | `#e2e8f0` | color/border/default | Theme · Semantic / Light |
 | `color/brand/orange` | `--color-brand-orange` | `#e65100` |  | Color Tokens / Light |
+| `color/extended/1e293b` | `--color-extended-1e293b` | `#1e293b` |  | Color Tokens / Light |
+| `color/extended/475569` | `--color-extended-475569` | `#475569` |  | Color Tokens / Light |
 | `color/extended/ea580c` | `--color-extended-ea580c` | `#ea580c` |  | Color Tokens / Light |
 | `color/neutral/white` | `--color-neutral-white` | `#ffffff` |  | Color Tokens / Light |
 | `color/text/primary` | `--color-text-primary` | `#334155` |  | Color Tokens / Light |
@@ -40,6 +45,8 @@ Nền trang: `#f8fafc`.
 | `radius/full` | `--radius-full` | `9999` |  | Number Tokens / Mode 1 |
 | `spacing/4` | `--spacing-4` | `4` |  | Number Tokens / Mode 1 |
 | `spacing/8` | `--spacing-8` | `8` |  | Number Tokens / Mode 1 |
+| `text/primary` | `--text-primary` | `#334155` | color/text/primary | Theme · Semantic / Light |
+| `text/secondary` | `--text-secondary` | `#64748b` | color/text/secondary | Theme · Semantic / Light |
 
 **Style Figma đang dùng:**
 
@@ -64,18 +71,18 @@ Nền trang: `#f8fafc`.
 
 | Style | Font family | Cỡ / line-height | Độ đậm | Letter-spacing | Màu | Số lần | Ví dụ |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| — | Unbounded | 17 / 21px | 500 | 0 | #334155 | 2 | “Giọng đọc” |
+| — | Unbounded | 17 / 21px | 500 | 0 | #334155 (text/primary) | 2 | “Giọng đọc” |
 | `Body/17/Bold` | Afacad | 17 / 21px | 700 | 0 | #64748b (color/text/secondary) | 2 | “Đọc văn bản” |
 | `Body/17/Bold` | Afacad | 17 / 21px | 700 | 0 | #e65100 (color/brand/orange) | 1 | “Âm tiết pinyin” |
-| — | Afacad | 15 / 20px | 600 | 0 | #1e293b | 2 | “Serena · nữ” |
-| — | Afacad | 15 / 20px | 400 | 0 | #475569 | 1 | “1.120 âm tiết · 2 giọng: Serena (nữ) và…” |
+| — | Afacad | 15 / 20px | 600 | 0 | #1e293b (color/extended/1e293b) | 2 | “Serena · nữ” |
+| — | Afacad | 15 / 20px | 400 | 0 | #475569 (color/extended/475569) | 1 | “1.120 âm tiết · 2 giọng: Serena (nữ) và…” |
 | `Body/14/Medium` | Afacad | 14 / 18px | 500 | 0 | #c2410c | 3 | “Sắp có” |
-| — | Afacad | 14 / 19px | 500 | 0 | #475569 | 3 | “2. Tạo cả bảng 1.120 âm” |
+| — | Afacad | 14 / 19px | 500 | 0 | #475569 (color/extended/475569) | 3 | “2. Tạo cả bảng 1.120 âm” |
 | — | Afacad | 14 / 19px | 600 | 0 | #e65100 (color/brand/orange) | 2 | “—” |
 | — | Unbounded | 14 / 17px | 500 | 0 | #ffffff (org/sakumi/fg) | 1 | “Sakumi” |
 | `Body/14/Medium` | Afacad | 14 / 18px | 500 | 0 | #334155 (color/text/primary) | 1 | “Chờ” |
 | — | Afacad | 14 / 19px | 600 | 0 | #15803d | 1 | “1. Bản thử 40 âm · đã duyệt” |
-| — | Afacad | 13 / 17px | 400 | 0 | #64748b | 2 | “Còn khoảng 3,3 giờ để xong giọng nữ” |
+| — | Afacad | 13 / 17px | 400 | 0 | #64748b (text/secondary) | 2 | “Còn khoảng 3,3 giờ để xong giọng nữ” |
 | `Body/13/Bold` | Afacad | 13 / 16px | 700 | 0 | #0f766e | 1 | “CD” |
 | — | Unbounded | 13 / 16px | 600 | 0 | #ffffff (color/neutral/white) | 1 | “Học Liệu Ngôn Ngữ” |
 | — | Afacad | 13 / 16px | 500 | 0 | #ffffff (color/neutral/white) | 1 | “CD.dacnhan@gmail.com” |
@@ -161,8 +168,8 @@ Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí ·
   - [khối] **Main · Giọng đọc** — 1206×846 · @ (234, 64) abs · column gap 16 pad 24 24 24 24 · clip `6133:126186`
     - [khối] **Page Heading** — 1158×21 [FILL×HUG] · @ (24, 24) flow · row gap 16 align CENTER · clip `6133:126187`
       - [khối] **Tiêu đề** — 1158×21 [FILL×HUG] · @ (0, 0) flow · column gap 4 · clip `6133:126188`
-        - [chữ] “Giọng đọc” — 105×21 [HUG×HUG] · @ (0, 0) flow · Unbounded 17/21px 500 #334155 · no-wrap `6133:126189`
-    - [khối] **Tabs · Chế độ** — 1158×32 [FILL×HUG] · @ (24, 61) flow · row gap 24 align CENTER · border 0 0 1px 0 solid #e2e8f0 · clip `6133:126192`
+        - [chữ] “Giọng đọc” — 105×21 [HUG×HUG] · @ (0, 0) flow · Unbounded 17/21px 500 #334155 (text/primary) · no-wrap `6133:126189`
+    - [khối] **Tabs · Chế độ** — 1158×32 [FILL×HUG] · @ (24, 61) flow · row gap 24 align CENTER · border 0 0 1px 0 solid #e2e8f0 (border/default) · clip `6133:126192`
       - [instance] **Atom/Tab** ⟨Atom/Tab: Icon=3857:80306, Label=Đọc văn bản, State=Inactive, Kiểu=Gạch chân⟩ — 93×29 [HUG×HUG] · @ (0, 1) flow · column pad 0 4 8 4 justify CENTER align CENTER `6133:126193`
         - [chữ] “Đọc văn bản” — 85×21 [HUG×HUG] · @ (4, 0) flow · Afacad 17/21px 700 #64748b (color/text/secondary) · text-align center · no-wrap `I6133:126193;2808:42763`
       - [instance] **Atom/Tab** ⟨Atom/Tab: Icon=3857:80306, Label=Hội thoại, State=Inactive, Kiểu=Gạch chân⟩ — 68×29 [HUG×HUG] · @ (117, 1) flow · column pad 0 4 8 4 justify CENTER align CENTER `6133:126194`
@@ -173,15 +180,15 @@ Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí ·
         - [instance] **Atom/Badge** ⟨Atom/Badge: Label=Sắp có, Variant=Warning, Dropdown=Off⟩ — 57×26 [HUG×HUG] · @ (107, 2.5) flow · row pad 4 10 4 10 justify CENTER align CENTER · bg #fffbeb · radius 6px `6133:126197`
           - [chữ] “Sắp có” — 37×18 [HUG×HUG] · @ (10, 4) flow · Afacad 14/18px 500 #c2410c · no-wrap `I6133:126197;1048:1251`
     - [khối] **Body** — 1158×713 [FILL×FILL] · @ (24, 109) flow · column gap 16 · clip `6133:126198`
-      - [khối] **Card · Tiến độ bảng âm tiết** — 1158×409 [FILL×HUG] · @ (0, 0) flow · column gap 14 pad 20 20 20 20 · bg #ffffff · radius 12px · border 1px solid #e2e8f0 · clip `6133:126541`
+      - [khối] **Card · Tiến độ bảng âm tiết** — 1158×409 [FILL×HUG] · @ (0, 0) flow · column gap 14 pad 20 20 20 20 · bg #ffffff (bg/surface) · radius 12px · border 1px solid #e2e8f0 (border/default) · clip `6133:126541`
         - [khối] **h** — 1116×26 [FILL×HUG] · @ (21, 21) flow · row gap 8 align CENTER · clip `6133:126542`
-          - [chữ] “Bảng âm tiết pinyin tiếng Trung” — 1035×21 [FILL×HUG] · @ (0, 2.5) flow · Unbounded 17/21px 500 #334155 `6133:126543`
+          - [chữ] “Bảng âm tiết pinyin tiếng Trung” — 1035×21 [FILL×HUG] · @ (0, 2.5) flow · Unbounded 17/21px 500 #334155 (text/primary) `6133:126543`
           - [instance] **Atom/Badge** ⟨Atom/Badge: Label=Đang tạo, Variant=Warning, Dropdown=Off⟩ — 73×26 [HUG×HUG] · @ (1043, 0) flow · row pad 4 10 4 10 justify CENTER align CENTER · bg #fffbeb · radius 6px `6133:126544`
             - [chữ] “Đang tạo” — 53×18 [HUG×HUG] · @ (10, 4) flow · Afacad 14/18px 500 #c2410c · no-wrap `I6133:126544;1048:1251`
-        - [chữ] “1.120 âm tiết · 2 giọng: Serena (nữ) và Aiden (nam). Mỗi âm được máy tự chấm đúng thanh và cân âm lượng (lệch không quá ±1 dB). Sau khi tạo xong, nhóm duyệt các âm bị đánh dấu rồi mới mở nút "Âm tiết" trên web.” — 1116×40 [FILL×HUG] · @ (21, 61) flow · Afacad 15/20px 400 #475569 `6133:126546`
-        - [khối] **Giọng · Serena · nữ** — 1116×104 [FILL×HUG] · @ (21, 115) flow · column gap 8 pad 12 14 12 14 · bg #f8fafc · radius 8px · border 1px solid #e2e8f0 · clip `6133:126547`
+        - [chữ] “1.120 âm tiết · 2 giọng: Serena (nữ) và Aiden (nam). Mỗi âm được máy tự chấm đúng thanh và cân âm lượng (lệch không quá ±1 dB). Sau khi tạo xong, nhóm duyệt các âm bị đánh dấu rồi mới mở nút "Âm tiết" trên web.” — 1116×40 [FILL×HUG] · @ (21, 61) flow · Afacad 15/20px 400 #475569 (color/extended/475569) `6133:126546`
+        - [khối] **Giọng · Serena · nữ** — 1116×104 [FILL×HUG] · @ (21, 115) flow · column gap 8 pad 12 14 12 14 · bg #f8fafc (bg/canvas) · radius 8px · border 1px solid #e2e8f0 (border/default) · clip `6133:126547`
           - [khối] **rh** — 1086×26 [FILL×HUG] · @ (15, 13) flow · row gap 8 align CENTER · clip `6133:126548`
-            - [chữ] “Serena · nữ” — 1005×20 [FILL×HUG] · @ (0, 3) flow · Afacad 15/20px 600 #1e293b `6133:126549`
+            - [chữ] “Serena · nữ” — 1005×20 [FILL×HUG] · @ (0, 3) flow · Afacad 15/20px 600 #1e293b (color/extended/1e293b) `6133:126549`
             - [instance] **Atom/Badge** ⟨Atom/Badge: Label=Đang tạo, Variant=Warning, Dropdown=Off⟩ — 73×26 [HUG×HUG] · @ (1013, 0) flow · row pad 4 10 4 10 justify CENTER align CENTER · bg #fffbeb · radius 6px `6133:126550`
               - [chữ] “Đang tạo” — 53×18 [HUG×HUG] · @ (10, 4) flow · Afacad 14/18px 500 #c2410c · no-wrap `I6133:126550;1048:1251`
           - [instance] **Global Progress Bar** ⟨Global Progress Bar: Property 1=Progress ngang ( % ) Tự chạy⟩ — 1086×19 [FILL×HUG] · @ (15, 47) flow · row gap 8 align CENTER `6133:126552`
@@ -228,25 +235,25 @@ Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí ·
                 - [hình] **Sọc** — 4×20 · @ (334, -4) abs · bg rgba(255, 255, 255, 0.28) · rotate -35° `I6133:126552;6019:81727`
                 - [hình] **Sọc** — 4×20 · @ (343, -4) abs · bg rgba(255, 255, 255, 0.28) · rotate -35° `I6133:126552;6019:81728`
             - [chữ] “—” — 14×19 [HUG×HUG] · @ (1072, 0) flow · Afacad 14/19px 600 #e65100 (color/brand/orange) · no-wrap `I6133:126552;6019:81729`
-          - [chữ] “Còn khoảng 3,3 giờ để xong giọng nữ” — 194×17 [HUG×HUG] · @ (15, 74) flow · Afacad 13/17px 400 #64748b · no-wrap `6133:126596`
-        - [khối] **Giọng · Aiden · nam** — 1116×104 [FILL×HUG] · @ (21, 233) flow · column gap 8 pad 12 14 12 14 · bg #f8fafc · radius 8px · border 1px solid #e2e8f0 · clip `6133:126597`
+          - [chữ] “Còn khoảng 3,3 giờ để xong giọng nữ” — 194×17 [HUG×HUG] · @ (15, 74) flow · Afacad 13/17px 400 #64748b (text/secondary) · no-wrap `6133:126596`
+        - [khối] **Giọng · Aiden · nam** — 1116×104 [FILL×HUG] · @ (21, 233) flow · column gap 8 pad 12 14 12 14 · bg #f8fafc (bg/canvas) · radius 8px · border 1px solid #e2e8f0 (border/default) · clip `6133:126597`
           - [khối] **rh** — 1086×26 [FILL×HUG] · @ (15, 13) flow · row gap 8 align CENTER · clip `6133:126598`
-            - [chữ] “Aiden · nam” — 1035×20 [FILL×HUG] · @ (0, 3) flow · Afacad 15/20px 600 #1e293b `6133:126599`
+            - [chữ] “Aiden · nam” — 1035×20 [FILL×HUG] · @ (0, 3) flow · Afacad 15/20px 600 #1e293b (color/extended/1e293b) `6133:126599`
             - [instance] **Atom/Badge** ⟨Atom/Badge: Label=Chờ, Variant=Neutral, Dropdown=Off⟩ — 43×26 [HUG×HUG] · @ (1043, 0) flow · row pad 4 10 4 10 justify CENTER align CENTER · bg #f1f5f9 · radius 6px `6133:126600`
               - [chữ] “Chờ” — 23×18 [HUG×HUG] · @ (10, 4) flow · Afacad 14/18px 500 #334155 (color/text/primary) · no-wrap `I6133:126600;1048:1255`
           - [instance] **Global Progress Bar** ⟨Global Progress Bar: Property 1=Progress ngang ( % ) Tự chạy⟩ — 1086×19 [FILL×HUG] · @ (15, 47) flow · row gap 8 align CENTER `6133:126602`
             - [khối] **Track** — 1064×8 [FILL×FIXED] · @ (0, 5.5) flow · row pad 0 1052 0 0 · bg #f3f4f6 · radius 10px · clip `I6133:126602;6019:81687`
             - [chữ] “—” — 14×19 [HUG×HUG] · @ (1072, 0) flow · Afacad 14/19px 600 #e65100 (color/brand/orange) · no-wrap `I6133:126602;6019:81729`
-          - [chữ] “Bắt đầu sau giọng nữ · khoảng 3,3 giờ” — 196×17 [HUG×HUG] · @ (15, 74) flow · Afacad 13/17px 400 #64748b · no-wrap `6133:126646`
+          - [chữ] “Bắt đầu sau giọng nữ · khoảng 3,3 giờ” — 196×17 [HUG×HUG] · @ (15, 74) flow · Afacad 13/17px 400 #64748b (text/secondary) · no-wrap `6133:126646`
         - [khối] **Các bước** — 1116×37 [FILL×HUG] · @ (21, 351) flow · row gap 8 · clip `6133:126647`
           - [khối] **Bước** — 273×37 [FILL×HUG] · @ (0, 0) flow · row gap 6 pad 8 12 8 12 · bg #f0fdf4 · radius 8px · border 1px solid #86efac · clip `6133:126648`
             - [chữ] “1. Bản thử 40 âm · đã duyệt” — 154×19 [HUG×HUG] · @ (13, 9) flow · Afacad 14/19px 600 #15803d · no-wrap `6133:126649`
-          - [khối] **Bước** — 273×37 [FILL×HUG] · @ (281, 0) flow · row gap 6 pad 8 12 8 12 · bg #ffffff · radius 8px · border 1px solid #e2e8f0 · clip `6133:126650`
-            - [chữ] “2. Tạo cả bảng 1.120 âm” — 137×19 [HUG×HUG] · @ (13, 9) flow · Afacad 14/19px 500 #475569 · no-wrap `6133:126651`
-          - [khối] **Bước** — 273×37 [FILL×HUG] · @ (562, 0) flow · row gap 6 pad 8 12 8 12 · bg #ffffff · radius 8px · border 1px solid #e2e8f0 · clip `6133:126652`
-            - [chữ] “3. Nhóm duyệt âm bị đánh dấu” — 172×19 [HUG×HUG] · @ (13, 9) flow · Afacad 14/19px 500 #475569 · no-wrap `6133:126653`
-          - [khối] **Bước** — 273×37 [FILL×HUG] · @ (843, 0) flow · row gap 6 pad 8 12 8 12 · bg #ffffff · radius 8px · border 1px solid #e2e8f0 · clip `6133:126654`
-            - [chữ] “4. Mở nút "Âm tiết" trên web” — 156×19 [HUG×HUG] · @ (13, 9) flow · Afacad 14/19px 500 #475569 · no-wrap `6133:126655`
+          - [khối] **Bước** — 273×37 [FILL×HUG] · @ (281, 0) flow · row gap 6 pad 8 12 8 12 · bg #ffffff (bg/surface) · radius 8px · border 1px solid #e2e8f0 (border/default) · clip `6133:126650`
+            - [chữ] “2. Tạo cả bảng 1.120 âm” — 137×19 [HUG×HUG] · @ (13, 9) flow · Afacad 14/19px 500 #475569 (color/extended/475569) · no-wrap `6133:126651`
+          - [khối] **Bước** — 273×37 [FILL×HUG] · @ (562, 0) flow · row gap 6 pad 8 12 8 12 · bg #ffffff (bg/surface) · radius 8px · border 1px solid #e2e8f0 (border/default) · clip `6133:126652`
+            - [chữ] “3. Nhóm duyệt âm bị đánh dấu” — 172×19 [HUG×HUG] · @ (13, 9) flow · Afacad 14/19px 500 #475569 (color/extended/475569) · no-wrap `6133:126653`
+          - [khối] **Bước** — 273×37 [FILL×HUG] · @ (843, 0) flow · row gap 6 pad 8 12 8 12 · bg #ffffff (bg/surface) · radius 8px · border 1px solid #e2e8f0 (border/default) · clip `6133:126654`
+            - [chữ] “4. Mở nút "Âm tiết" trên web” — 156×19 [HUG×HUG] · @ (13, 9) flow · Afacad 14/19px 500 #475569 (color/extended/475569) · no-wrap `6133:126655`
 
 ## 5. Component đang dùng
 

@@ -1,8 +1,8 @@
 # Fidelity: ADM-LOP-040100-DK — Lớp học / Cài đặt / Thông tin
 
-- URL: `http://localhost:3108/lop-hoc/cai-dat/thong-tin-dk`
+- URL: `http://localhost:3000/lop-hoc/cai-dat/thong-tin-dk`
 - Verdict: **PASS**
-- Pixels outside text: **0.001%** differ (limit 0.5%); all pixels: 0.156%; inside text boxes: 0.908% (glyph rendering)
+- Pixels outside text: **0.001%** differ (limit 0.5%); all pixels: 0.132%; inside text boxes: 0.764% (glyph rendering)
 - Boxes: 174/174 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 172, ≤1px: 174, ≤2px: 174, ≤4px: 174, >4px: 0
 
 ## Pixel regions (largest first)
@@ -16,7 +16,6 @@
 | Text | Differing |
 | --- | --- |
 | Label (`I4056:116098;2245:87908`) | 13.7% |
-| Label (`I4056:116105;2245:87914`) | 13% |
 | Label (`I4056:116096;2245:87908`) | 8.6% |
 | Button (`I4056:116035;1910:18518`) | 4.8% |
 | Label (`I4056:116099;2245:87908`) | 4.3% |
@@ -30,6 +29,7 @@
 | Nhãn trường (`I4056:116011;3004:58620;2808:48145`) | 1.8% |
 | Nhãn trường (`I4056:116013;3004:58620;2808:48145`) | 1.7% |
 | Nhãn trường (`I4056:116017;2808:48145`) | 1.7% |
+| Label (`I4056:116100;2245:87908`) | 1.4% |
 
 ## Largest box differences
 

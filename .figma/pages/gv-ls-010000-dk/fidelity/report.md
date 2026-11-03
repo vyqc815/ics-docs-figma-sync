@@ -1,8 +1,8 @@
 # Fidelity: GV-LS-010000-DK — Lịch sử & lương / Buổi dạy
 
-- URL: `http://localhost:3108/lich-su-luong/buoi-day-dk`
+- URL: `http://localhost:3000/lich-su-luong/buoi-day-dk`
 - Verdict: **PASS**
-- Pixels outside text: **0.001%** differ (limit 0.5%); all pixels: 0.194%; inside text boxes: 1.235% (glyph rendering)
+- Pixels outside text: **0.001%** differ (limit 0.5%); all pixels: 0.154%; inside text boxes: 0.98% (glyph rendering)
 - Boxes: 414/414 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 411, ≤1px: 413, ≤2px: 414, ≤4px: 414, >4px: 0
 
 ## Pixel regions (largest first)
@@ -16,8 +16,8 @@
 
 | Text | Differing |
 | --- | --- |
-| Label (`I4056:149681;2245:87774`) | 25% |
 | UHRZEIT (`4056:149829`) | 4.8% |
+| Label (`I4056:149681;2245:87774`) | 4.1% |
 | EINRICHTUNG (`4056:149869`) | 3.7% |
 | LEBENSMITTEL (`4056:149949`) | 3.7% |
 | Tiêu đề (`I4056:149699;3266:53959`) | 3.4% |

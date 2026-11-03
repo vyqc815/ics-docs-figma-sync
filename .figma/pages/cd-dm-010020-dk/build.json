@@ -1,0 +1,28 @@
+{
+  "route": "/quan-ly-danh-muc/popup-danh-muc-cap-do/mindset-dk",
+  "pageFile": "components/figma/cd-dm-010020-dk/index.tsx",
+  "docFile": "docs/pages/quan-ly-danh-muc/popup-danh-muc-cap-do/mindset-dk.md",
+  "sections": [
+    {
+      "nodeId": "4056:145524",
+      "component": "PopupHeader9",
+      "file": "components/figma/shared/PopupHeader9.tsx"
+    },
+    {
+      "nodeId": "4056:145525",
+      "component": "Body",
+      "file": "components/figma/cd-dm-010020-dk/Body.tsx"
+    },
+    {
+      "nodeId": "4056:145658",
+      "component": "PopupFooter5",
+      "file": "components/figma/shared/PopupFooter5.tsx"
+    }
+  ],
+  "idAlias": {
+    "4056:145524": "4056:145431",
+    "I4056:145524;2514:153353": "I4056:145431;2514:153353",
+    "I4056:145524;2514:153354": "I4056:145431;2514:153354",
+    "I4056:145524;2514:153355": "I4056:145431;2514:153355"
+  }
+}

@@ -1,8 +1,8 @@
 # Fidelity: SP-TASK-020000 — Quy trình / Task tuần này
 
-- URL: `http://localhost:3108/quy-trinh/task-tuan-nay`
+- URL: `http://localhost:3000/quy-trinh/task-tuan-nay`
 - Verdict: **PASS**
-- Pixels outside text: **0.004%** differ (limit 0.5%); all pixels: 0.182%; inside text boxes: 0.96% (glyph rendering)
+- Pixels outside text: **0.004%** differ (limit 0.5%); all pixels: 0.179%; inside text boxes: 0.943% (glyph rendering)
 - Boxes: 244/244 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 244, ≤1px: 244, ≤2px: 244, ≤4px: 244, >4px: 0
 
 ## Pixel regions (largest first)
@@ -17,7 +17,6 @@
 
 | Text | Differing |
 | --- | --- |
-| 0% (`I3857:74170;1308:6706`) | 23% |
 | Đã xem và chốt tổng quan nhiệm vụ vần làm trong tuần dựa vào (`3857:74974`) | 6.7% |
 | Th2, 14.09.2026 (`I3857:74962;1590:881`) | 4.4% |
 | Th2, 14.09.2026 (`I3857:74997;1590:881`) | 4.3% |
@@ -32,6 +31,7 @@
 | 01.01.2027 > 08.01.2027 (`3857:74171`) | 1.5% |
 | Value (`I4915:257842;4901:224931;3857:67911;1971:8814`) | 1.2% |
 | Đã gửi lịch hẹn và add lịch họp ICS với giáo viên cần họp tr (`3857:74960`) | 1.2% |
+| 20% (`I3857:74950;1350:13208`) | 0.9% |
 
 ## Largest box differences
 

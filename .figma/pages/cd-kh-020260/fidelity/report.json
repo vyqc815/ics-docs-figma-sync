@@ -1,0 +1,520 @@
+{
+  "pass": true,
+  "thresholds": {
+    "maxPixelDiffPercent": 0.5,
+    "maxBoxDelta": 1,
+    "maxTextBoxDelta": 2.5,
+    "colorThreshold": 0.1,
+    "aaRadius": 1,
+    "subpixel": true,
+    "maxTextNodeDiffPercent": 35
+  },
+  "pixels": {
+    "width": 1440,
+    "height": 1599,
+    "mismatched": 7573,
+    "percent": 0.329,
+    "shapePercent": 0.003,
+    "textPercent": 2.27,
+    "sizeMismatch": false
+  },
+  "textNodes": [
+    {
+      "id": "I6518:347127;3004:75121",
+      "name": "Tìm nội dung...",
+      "pixels": 170,
+      "percent": 10.6
+    },
+    {
+      "id": "I6518:347962;4901:221039;2245:87908",
+      "name": "Label",
+      "pixels": 184,
+      "percent": 7.8
+    },
+    {
+      "id": "6518:346950",
+      "name": "[ 60 phút ]",
+      "pixels": 116,
+      "percent": 7.5
+    },
+    {
+      "id": "6518:346961",
+      "name": "[ 45 phút ]",
+      "pixels": 107,
+      "percent": 6.9
+    },
+    {
+      "id": "I6518:347036;2015:36008",
+      "name": "Value",
+      "pixels": 215,
+      "percent": 6.6
+    },
+    {
+      "id": "6518:347078",
+      "name": "Chào hỏi",
+      "pixels": 81,
+      "percent": 6.6
+    },
+    {
+      "id": "I6518:347231;2015:36008",
+      "name": "Value",
+      "pixels": 215,
+      "percent": 6.6
+    },
+    {
+      "id": "I6518:347278;2015:36008",
+      "name": "Value",
+      "pixels": 215,
+      "percent": 6.6
+    },
+    {
+      "id": "I6518:347325;2015:36008",
+      "name": "Value",
+      "pixels": 215,
+      "percent": 6.6
+    },
+    {
+      "id": "I6518:347372;2015:36008",
+      "name": "Value",
+      "pixels": 215,
+      "percent": 6.6
+    },
+    {
+      "id": "I6518:347466;2015:36008",
+      "name": "Value",
+      "pixels": 215,
+      "percent": 6.6
+    },
+    {
+      "id": "I6518:347513;2015:36008",
+      "name": "Value",
+      "pixels": 215,
+      "percent": 6.6
+    },
+    {
+      "id": "I6518:347560;2015:36008",
+      "name": "Value",
+      "pixels": 215,
+      "percent": 6.6
+    },
+    {
+      "id": "I6518:347607;2015:36008",
+      "name": "Value",
+      "pixels": 215,
+      "percent": 6.6
+    },
+    {
+      "id": "I6518:347654;2015:36008",
+      "name": "Value",
+      "pixels": 215,
+      "percent": 6.6
+    }
+  ],
+  "regions": [
+    {
+      "x": 104,
+      "y": 80,
+      "width": 16,
+      "height": 24,
+      "pixels": 16,
+      "node": {
+        "id": "I6518:347962;4901:221031",
+        "name": "Frame 1171274940",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 120,
+      "y": 192,
+      "width": 16,
+      "height": 8,
+      "pixels": 9,
+      "node": {
+        "id": "I6518:347962;4901:221037;2245:87904",
+        "name": "Icon",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 1320,
+      "y": 688,
+      "width": 16,
+      "height": 8,
+      "pixels": 9,
+      "node": {
+        "id": "6518:347284",
+        "name": "Data",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 120,
+      "y": 872,
+      "width": 16,
+      "height": 8,
+      "pixels": 9,
+      "node": {
+        "id": "I6518:347962;4901:221049;2245:87904",
+        "name": "Icon",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 120,
+      "y": 1064,
+      "width": 16,
+      "height": 8,
+      "pixels": 9,
+      "node": {
+        "id": "I6518:347962;5491:349906;2245:87904",
+        "name": "Icon",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 1320,
+      "y": 672,
+      "width": 16,
+      "height": 8,
+      "pixels": 5,
+      "node": {
+        "id": "6518:347284",
+        "name": "Data",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 24,
+      "y": 1384,
+      "width": 8,
+      "height": 8,
+      "pixels": 4,
+      "node": {
+        "id": "I6518:347962;4901:221081",
+        "name": "LOGO CENTER",
+        "role": "icon"
+      }
+    }
+  ],
+  "boxes": {
+    "measured": 1193,
+    "missing": [],
+    "withinThreshold": 1193,
+    "buckets": {
+      "≤0.5px": 1190,
+      "≤1px": 1190,
+      "≤2px": 1193,
+      "≤4px": 1193,
+      ">4px": 0
+    },
+    "worst": [
+      {
+        "id": "6518:346984",
+        "name": "TỔNG ÔN TẬP",
+        "role": "text",
+        "delta": 1.72,
+        "dx": -0.86,
+        "dy": 0,
+        "dw": 1.72,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6518:347127;3004:75121",
+        "name": "Tìm nội dung...",
+        "role": "text",
+        "delta": 1.5,
+        "dx": 0,
+        "dy": 1.5,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6518:347178;3004:75121",
+        "name": "Tìm nội dung...",
+        "role": "text",
+        "delta": 1.5,
+        "dx": 0,
+        "dy": 1.5,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6518:347221",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.5,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.5,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6518:347222",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.5,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.5,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6518:347224",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.5,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.5,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6518:347225",
+        "name": "Vận mẫu kép",
+        "role": "text",
+        "delta": 0.5,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.5,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6518:347738",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.42,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.42,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6518:347739",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.42,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.42,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6518:347741",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.42,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.42,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6518:347742",
+        "name": "Nghe: đường đến trường",
+        "role": "text",
+        "delta": 0.42,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.42,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6518:346964",
+        "name": "Trạng thái số buổi",
+        "role": "instance",
+        "delta": 0.16,
+        "dx": -0.08,
+        "dy": 0,
+        "dw": 0.16,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6518:346964;2808:53211",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.16,
+        "dx": -0.08,
+        "dy": 0,
+        "dw": 0.16,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6518:346964;2808:53213",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.16,
+        "dx": -0.08,
+        "dy": 0,
+        "dw": 0.16,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6518:346964;2808:53214",
+        "name": "Chưa đủ buổi",
+        "role": "text",
+        "delta": 0.16,
+        "dx": -0.08,
+        "dy": 0,
+        "dw": 0.16,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6518:346971",
+        "name": "Trạng thái số buổi",
+        "role": "instance",
+        "delta": 0.16,
+        "dx": -0.08,
+        "dy": 0,
+        "dw": 0.16,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6518:346971;2808:53211",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.16,
+        "dx": -0.08,
+        "dy": 0,
+        "dw": 0.16,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6518:346971;2808:53213",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.16,
+        "dx": -0.08,
+        "dy": 0,
+        "dw": 0.16,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6518:346971;2808:53214",
+        "name": "Chưa đủ buổi",
+        "role": "text",
+        "delta": 0.16,
+        "dx": -0.08,
+        "dy": 0,
+        "dw": 0.16,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6518:346985",
+        "name": "Trạng thái số buổi",
+        "role": "instance",
+        "delta": 0.16,
+        "dx": -0.08,
+        "dy": 0,
+        "dw": 0.16,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6518:346985;2808:53211",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.16,
+        "dx": -0.08,
+        "dy": 0,
+        "dw": 0.16,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6518:346985;2808:53213",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.16,
+        "dx": -0.08,
+        "dy": 0,
+        "dw": 0.16,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6518:346985;2808:53214",
+        "name": "Chưa đủ buổi",
+        "role": "text",
+        "delta": 0.16,
+        "dx": -0.08,
+        "dy": 0,
+        "dw": 0.16,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6518:346992",
+        "name": "Trạng thái số buổi",
+        "role": "instance",
+        "delta": 0.16,
+        "dx": -0.08,
+        "dy": 0,
+        "dw": 0.16,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6518:346992;2808:53211",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.16,
+        "dx": -0.08,
+        "dy": 0,
+        "dw": 0.16,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      }
+    ],
+    "maxDelta": 1.72,
+    "over": []
+  },
+  "failures": [],
+  "url": "http://localhost:3000/lo-trinh/them-nhanh-bai-hoc",
+  "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
+  "consoleErrors": [],
+  "rootFound": true
+}

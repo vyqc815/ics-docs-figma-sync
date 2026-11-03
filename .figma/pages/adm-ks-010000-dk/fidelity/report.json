@@ -12,18 +12,18 @@
   "pixels": {
     "width": 1440,
     "height": 810,
-    "mismatched": 1355,
-    "percent": 0.116,
+    "mismatched": 1058,
+    "percent": 0.091,
     "shapePercent": 0.014,
-    "textPercent": 1.009,
+    "textPercent": 0.758,
     "sizeMismatch": false
   },
   "textNodes": [
     {
       "id": "I4343:71642;2245:87864",
       "name": "Label",
-      "pixels": 518,
-      "percent": 20.8
+      "pixels": 221,
+      "percent": 8.9
     },
     {
       "id": "I4343:71644;2245:87820",
@@ -465,7 +465,7 @@
     "over": []
   },
   "failures": [],
-  "url": "http://localhost:3108/khao-sat/tao-khao-sat/tao-cuoc-khao-sat-dk",
+  "url": "http://localhost:3000/khao-sat/tao-khao-sat/tao-cuoc-khao-sat-dk",
   "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
   "consoleErrors": [],
   "rootFound": true

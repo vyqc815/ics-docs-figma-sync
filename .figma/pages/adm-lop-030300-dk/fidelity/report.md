@@ -1,8 +1,8 @@
 # Fidelity: ADM-LOP-030300-DK — Lớp học / Bài học / Nội dung
 
-- URL: `http://localhost:3108/lop-hoc/bai-hoc/noi-dung-dk`
+- URL: `http://localhost:3000/lop-hoc/bai-hoc/noi-dung-dk`
 - Verdict: **PASS**
-- Pixels outside text: **0.002%** differ (limit 0.5%); all pixels: 0.82%; inside text boxes: 2.859% (glyph rendering)
+- Pixels outside text: **0.002%** differ (limit 0.5%); all pixels: 0.784%; inside text boxes: 2.731% (glyph rendering)
 - Boxes: 251/251 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 250, ≤1px: 250, ≤2px: 250, ≤4px: 251, >4px: 0
 
 ## Pixel regions (largest first)
@@ -16,13 +16,8 @@
 
 | Text | Differing |
 | --- | --- |
-| 100% (`I4056:111497;1308:6749`) | 19.9% |
-| 100% (`I4056:111498;1308:6749`) | 19.9% |
-| 100% (`I4056:111509;1308:6749`) | 19.9% |
-| 100% (`I4056:111510;1308:6749`) | 19.9% |
 | ÔN TẬP: Giữa Kỳ 1 (`4056:111403`) | 14.9% |
 | Label (`I4056:111662;2245:87908`) | 13.7% |
-| Label (`I4056:111661;2245:87914`) | 12.7% |
 | [20P] (`4056:111463`) | 10.4% |
 | [10P] (`4056:111416`) | 9% |
 | 1. [OT] Sửa BTVN (`4056:111415`) | 8.8% |
@@ -31,6 +26,11 @@
 | - GV tổ chức thực hành nói dựa trên các hội thoại đã học: HV (`4056:111468`) | 7.9% |
 | [20P] (`4056:111429`) | 7.7% |
 | [20P] (`4056:111446`) | 7.7% |
+| [15P] (`4056:111476`) | 7.4% |
+| 3. [OT] Kiến thức 2 (`4056:111445`) | 6.7% |
+| 2. [OT] Kiến thức 1 (`4056:111428`) | 6.3% |
+| 5. [OT] Mini test (`4056:111475`) | 6% |
+| - GV hướng dẫn HV luyện đọc các cụm pinyin và mẫu câu pinyin (`4056:111436`) | 5.9% |
 
 ## Largest box differences
 

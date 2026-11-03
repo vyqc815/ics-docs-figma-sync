@@ -1,21 +1,14 @@
 # Fidelity: GV-LOP-040200-DK — Chi tiết lớp / Bài tập và Kiểm tra / Kiểm tra
 
-- URL: `http://localhost:3108/chi-tiet-lop/bai-tap-va-kiem-tra/kiem-tra-dk`
+- URL: `http://localhost:3000/chi-tiet-lop/bai-tap-va-kiem-tra/kiem-tra-dk`
 - Verdict: **PASS**
-- Pixels outside text: **0%** differ (limit 0.5%); all pixels: 0.367%; inside text boxes: 1.592% (glyph rendering)
+- Pixels outside text: **0%** differ (limit 0.5%); all pixels: 0.29%; inside text boxes: 1.257% (glyph rendering)
 - Boxes: 514/514 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 511, ≤1px: 513, ≤2px: 514, ≤4px: 514, >4px: 0
 
 ## Text boxes with most differing pixels (limit 35%)
 
 | Text | Differing |
 | --- | --- |
-| 22/24 (`I4324:100396;1308:6798`) | 24.4% |
-| 22/24 (`I4324:100406;1308:6798`) | 23.2% |
-| 22/24 (`I4324:100416;1308:6798`) | 23.2% |
-| 100% (`I4324:100397;1308:6749`) | 19.9% |
-| 100% (`I4324:100407;1308:6749`) | 19.9% |
-| 100% (`I4324:100417;1308:6749`) | 19.9% |
-| Label (`I4324:101709;2245:87914`) | 19% |
 | Tổng Quan (`4324:100240`) | 18.2% |
 | Label (`I4899:187792;2245:87908`) | 8.5% |
 | 00:02:35 (`4324:100334`) | 6.5% |
@@ -24,6 +17,13 @@
 | 00:05:06 (`4324:100315`) | 6% |
 | 00:06:32 (`4324:100356`) | 5.9% |
 | 00:05:49 (`4324:100282`) | 5.6% |
+| 00:05:42 (`4324:100375`) | 5.6% |
+| 00:04:06 (`4324:100304`) | 5.2% |
+| Label (`I4324:101709;2245:87914`) | 5.1% |
+| Label (`I4324:101710;2245:87908`) | 4.9% |
+| Label (`I4324:101706;689:15190`) | 4.6% |
+| Label (`I4324:101715;689:15190`) | 3.9% |
+| Label (`I4324:101711;689:15190`) | 3.6% |
 
 ## Largest box differences
 

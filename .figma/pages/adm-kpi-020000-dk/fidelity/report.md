@@ -1,8 +1,8 @@
 # Fidelity: ADM-KPI-020000-DK — KPI & OT / Danh sách OT
 
-- URL: `http://localhost:3108/kpi-ot/danh-sach-ot-dk`
+- URL: `http://localhost:3000/kpi-ot/danh-sach-ot-dk`
 - Verdict: **PASS**
-- Pixels outside text: **0.002%** differ (limit 0.5%); all pixels: 0.138%; inside text boxes: 1.092% (glyph rendering)
+- Pixels outside text: **0.002%** differ (limit 0.5%); all pixels: 0.114%; inside text boxes: 0.902% (glyph rendering)
 - Boxes: 238/238 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 238, ≤1px: 238, ≤2px: 238, ≤4px: 238, >4px: 0
 
 ## Pixel regions (largest first)
@@ -16,7 +16,6 @@
 
 | Text | Differing |
 | --- | --- |
-| Label (`I4056:128633;2245:87864`) | 12.5% |
 | Ngày Cập Nhật (`4056:128463`) | 5.8% |
 | Ngày Ghi Nhận (`4056:128461`) | 4% |
 | Label (`I4056:128632;2245:87858`) | 2.5% |
@@ -27,6 +26,7 @@
 | Label (`I4056:128635;2245:87858`) | 1.6% |
 | Label (`I4056:128638;2245:87858`) | 1.6% |
 | Label (`I4056:128627;2245:87858`) | 1.5% |
+| Label (`I4056:128633;2245:87864`) | 1.5% |
 | Label (`I4056:128634;2245:87858`) | 1.5% |
 | Label (`I4056:128626;2245:87848`) | 1.4% |
 | 02.02.2026 (`4056:128476`) | 1.3% |

@@ -5,7 +5,7 @@
 > **Nguồn:** PLS-ICS T8/2026 ›     ├─ SHIP SÁCH › ADM-SS-010000 — Ship sách / Danh sách đơn sách (`2619:196835`, file `rRVs5HX0kIHffbS0V40djG`)  
 > **Route:** `/ship-sach/danh-sach-don-sach`  
 > **Khung thiết kế:** 1440 × 810 px  
-> **Xuất lúc:** 2026-11-02T03:51:34.129Z  
+> **Xuất lúc:** 2026-11-03T01:07:00.701Z  
 > **Spec đầy đủ (giá trị chính xác từng node):** `../../../.figma/pages/adm-ss-010000/page-spec.json`
 
 ## 1. Tổng quan
@@ -29,6 +29,7 @@ Nền trang: `linear-gradient(#f8fafc, #f8fafc), linear-gradient(#ffffff, #fffff
 
 | Token | Biến CSS | Giá trị | Trỏ tới | Bộ / mode |
 | --- | --- | --- | --- | --- |
+| `bg/canvas` | `--bg-canvas` | `#f8fafc` | color/extended/f8fafc | Theme · Semantic / Light |
 | `color/border/button` | `--color-border-button` | `#cbd5e1` | color/extended/cbd5e1 | Color Tokens / Light |
 | `color/border/default` | `--color-border-default` | `#e2e8f0` |  | Color Tokens / Light |
 | `color/border/subtle` | `--color-border-subtle` | `#f1f5f9` |  | Color Tokens / Light |
@@ -111,7 +112,7 @@ Nền trang: `linear-gradient(#f8fafc, #f8fafc), linear-gradient(#ffffff, #fffff
 Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí · bố cục · style`. Dòng đầu tiên là chính frame trang (gốc). Tên layer nằm trong `**…**`, chữ hiển thị nằm trong `“…”`, giá trị CSS nguyên văn nằm trong backtick: dấu `·` hay `—` **bên trong** các cặp đó là nội dung, chỉ dấu ` · ` bên ngoài mới ngăn cách các trường. Toạ độ `@ (x, y)` tính từ góc trên-trái của layer cha; layer **flow** do auto layout của cha xếp, layer **abs** đặt tuyệt đối. Các layer cùng cấp được liệt kê **theo thứ tự vẽ của Figma: layer sau nằm đè lên layer trước**. ID ở cuối dòng là node ID trong Figma.
 
 - [trang] **ADM-SS-010000 — Ship sách / Danh sách đơn sách** — 1440×810 · bg `linear-gradient(#f8fafc, #f8fafc), linear-gradient(#ffffff, #ffffff)` `2619:196835`
-  - [khối] **MainContent** — 1206×700 · @ (234, 63.88) abs · column gap 12 pad 16 16 16 16 · bg #f8fafc `2619:196837`
+  - [khối] **MainContent** — 1206×700 · @ (234, 63.88) abs · column gap 12 pad 16 16 16 16 · bg #f8fafc (bg/canvas) `2619:196837`
     - [khối] **Frame 427321957** — 1174×30 [FILL×HUG] · @ (16, 16) flow · row gap 20 align CENTER `2619:196838`
       - [khối] **Frame 427321947** — 317×26 [FILL×HUG] · @ (0, 2) flow · row gap 8 align CENTER `2619:196839`
         - [chữ] “Danh sách đơn sách” — 220×26 [HUG×HUG] · @ (0, 0) flow · Unbounded 17/26px 600 #334155 (color/text/primary) case title · no-wrap `2619:196840`
@@ -473,7 +474,7 @@ Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí ·
         - [khối] **Container** — 148×32 [FILL×HUG] · @ (44, 2) flow · column `I2619:197135;1391:17264`
           - [chữ] “Admin Đắc Nhân” — 148×16 [FILL×HUG] · @ (0, 0) flow · Unbounded 13/16px 600 #ffffff (color/neutral/white) · truncate 1 lines `I2619:197135;1391:17266`
           - [chữ] “admin@gmail.com” — 148×16 [FILL×HUG] · @ (0, 16) flow · Afacad 13/16px 500 #ffffff (color/neutral/white) · truncate 1 lines `I2619:197135;1391:17268`
-      - [icon] **Overlay** — 20×20 · @ (202, 8) flow · file /figma/assets/c19ad83f1e85.svg covers (-2, -2) 26×26 `I2619:197135;1391:17270`
+      - [icon] **Overlay** — 20×20 · @ (202, 8) flow · file /figma/assets/93cec656b378.svg covers (-2, -2) 26×26 `I2619:197135;1391:17270`
   - [khối] **Tooltip ghi chú** — 189×35 · @ (1064, 235) abs · row pad 8 12 8 12 · bg #334155 (color/text/primary) · radius 8px · clip `2619:198107`
     - [chữ] “Đang chuẩn bị sách ver mới” — 165×19 [HUG×HUG] · @ (12, 8) flow · Afacad 15/19px 500 #ffffff (color/neutral/white) · no-wrap `2619:198108`
   - [instance] **Sidebar · MENU - ADMIN** ⟨MENU - ADMIN: Trang=Ship sách⟩ — 234×810 · @ (0, 0) abs · bg #ff5b00 · clip `4915:251382`
@@ -814,7 +815,7 @@ Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí ·
 | `/figma/assets/b50319e4aa70.svg` | svg | 52 × 26 | 2619:198079 |
 | `/figma/assets/9b5833ee794c.svg` | svg | 1206 × 64 | 4050:122070 |
 | `/figma/assets/372d69401a76.jpg` | image | 132 × 72 | I2619:197135;2008:31748 |
-| `/figma/assets/c19ad83f1e85.svg` | svg | 26 × 26 | I2619:197135;1391:17270 |
+| `/figma/assets/93cec656b378.svg` | svg | 26 × 26 | I2619:197135;1391:17270 |
 | `/figma/assets/a99125d85c12.svg` | svg | 234 × 810 | I4915:251382;4915:218626 |
 | `/figma/assets/aec5694cd6e5.svg` | svg | 53 × 32.59 | I4915:251382;4915:218678 |
 | `/figma/assets/c3c33af40a89.svg` | svg | 24 × 24 | I4915:251382;4915:218691 |

@@ -1,8 +1,8 @@
 # Fidelity: GV-LOP-040300 — Chi tiết lớp / Bài tập và Kiểm tra / Màn chấm bài
 
-- URL: `http://localhost:3108/chi-tiet-lop/bai-tap-va-kiem-tra/man-cham-bai`
+- URL: `http://localhost:3000/chi-tiet-lop/bai-tap-va-kiem-tra/man-cham-bai`
 - Verdict: **PASS**
-- Pixels outside text: **0.005%** differ (limit 0.5%); all pixels: 0.107%; inside text boxes: 0.731% (glyph rendering)
+- Pixels outside text: **0.005%** differ (limit 0.5%); all pixels: 0.094%; inside text boxes: 0.641% (glyph rendering)
 - Boxes: 424/424 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 418, ≤1px: 424, ≤2px: 424, ≤4px: 424, >4px: 0
 
 ## Pixel regions (largest first)
@@ -25,10 +25,6 @@
 
 | Text | Differing |
 | --- | --- |
-| 100% (`I5425:293760;1308:6749`) | 23.1% |
-| 100% (`I5425:293781;1308:6749`) | 23.1% |
-| 100% (`I5425:293767;1308:6749`) | 22.7% |
-| 100% (`I5425:293774;1308:6749`) | 21.4% |
 | Label (`I5425:278883;4901:213764;2245:87908`) | 5.9% |
 | Huong-dan-hoc-vien.mp4 (`I5425:293963;1062:1351`) | 4.4% |
 | Huong-dan-hoc-vien.mp4 (`I5425:293948;1062:1351`) | 4.2% |
@@ -40,6 +36,10 @@
 | Button (`I5425:278895;1048:1230`) | 1.8% |
 | Hiện Tên (`5425:279215`) | 1.8% |
 | Tìm nội dung... (`I5425:294005;2808:42233`) | 1.8% |
+| Label (`I5425:278883;4901:213769;2245:87914`) | 1.8% |
+| Ich komme aus Vietnam und wohne in Hanoi. (`5425:279202`) | 1.5% |
+| Label (`I5425:278883;4901:213771;689:15190`) | 1.4% |
+| Chưa Chấm (`5425:279211`) | 1.3% |
 
 ## Largest box differences
 

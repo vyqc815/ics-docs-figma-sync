@@ -1,8 +1,8 @@
 # Fidelity: ADM-GV-020200 — Chi tiết giáo viên / Danh sách lớp
 
-- URL: `http://localhost:3108/chi-tiet-giao-vien/danh-sach-lop`
+- URL: `http://localhost:3000/chi-tiet-giao-vien/danh-sach-lop`
 - Verdict: **PASS**
-- Pixels outside text: **0.027%** differ (limit 0.5%); all pixels: 0.186%; inside text boxes: 1.495% (glyph rendering)
+- Pixels outside text: **0.027%** differ (limit 0.5%); all pixels: 0.166%; inside text boxes: 1.303% (glyph rendering)
 - Boxes: 282/282 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 282, ≤1px: 282, ≤2px: 282, ≤4px: 282, >4px: 0
 
 ## Pixel regions (largest first)
@@ -20,10 +20,6 @@
 
 | Text | Differing |
 | --- | --- |
-| 80% (`I1505:22696;1391:14476`) | 26.4% |
-| 80% (`I1505:22700;1391:14476`) | 26.4% |
-| 0% (`I1505:22698;1308:6706`) | 23% |
-| 0% (`I1505:22702;1308:6706`) | 23% |
 | Tiếng Trung Sơ Cấp 2 - HSK3 (NEW) (`1505:22661`) | 4.4% |
 | Nhập Môn Tiếng Trung (NEW - v202...) (`1505:22664`) | 4.2% |
 | Nhập Môn Tiếng Trung (NEW - v202...) (`1505:22667`) | 4.2% |
@@ -35,6 +31,10 @@
 | Đánh giá (`1333:11626`) | 3.3% |
 | 0/20 Buổi (`I1505:22662;1350:13181`) | 2.9% |
 | Lương/giờ (`1333:11630`) | 2.7% |
+| B (`I1333:12647;1308:10497`) | 1.8% |
+| KPI (`1333:11628`) | 1.6% |
+| 200.000 đ (`1505:22894`) | 1.4% |
+| 200.000 đ (`1505:22979`) | 1.4% |
 
 ## Largest box differences
 

@@ -12,79 +12,13 @@
   "pixels": {
     "width": 1440,
     "height": 1226,
-    "mismatched": 5590,
-    "percent": 0.317,
+    "mismatched": 4324,
+    "percent": 0.245,
     "shapePercent": 0,
-    "textPercent": 1.52,
+    "textPercent": 1.176,
     "sizeMismatch": false
   },
   "textNodes": [
-    {
-      "id": "I4324:100087;1308:6798",
-      "name": "22/24",
-      "pixels": 83,
-      "percent": 24.7
-    },
-    {
-      "id": "I4324:100047;1308:6798",
-      "name": "22/24",
-      "pixels": 79,
-      "percent": 23.5
-    },
-    {
-      "id": "I4324:100097;1308:6798",
-      "name": "22/24",
-      "pixels": 63,
-      "percent": 22.5
-    },
-    {
-      "id": "I4324:100077;1308:6798",
-      "name": "22/24",
-      "pixels": 75,
-      "percent": 22.3
-    },
-    {
-      "id": "I4324:100067;1308:6798",
-      "name": "22/24",
-      "pixels": 74,
-      "percent": 22
-    },
-    {
-      "id": "I4324:100048;1308:6749",
-      "name": "100%",
-      "pixels": 67,
-      "percent": 19.9
-    },
-    {
-      "id": "I4324:100068;1308:6749",
-      "name": "100%",
-      "pixels": 67,
-      "percent": 19.9
-    },
-    {
-      "id": "I4324:100078;1308:6749",
-      "name": "100%",
-      "pixels": 67,
-      "percent": 19.9
-    },
-    {
-      "id": "I4324:100088;1308:6749",
-      "name": "100%",
-      "pixels": 67,
-      "percent": 19.9
-    },
-    {
-      "id": "I4324:100098;1308:6749",
-      "name": "100%",
-      "pixels": 67,
-      "percent": 19.9
-    },
-    {
-      "id": "I4324:101459;2245:87914",
-      "name": "Label",
-      "pixels": 764,
-      "percent": 19
-    },
     {
       "id": "4324:99884",
       "name": "Tổng Quan",
@@ -108,6 +42,72 @@
       "name": "00:12:00",
       "pixels": 81,
       "percent": 6.4
+    },
+    {
+      "id": "4324:99982",
+      "name": "00:19:07",
+      "pixels": 75,
+      "percent": 6
+    },
+    {
+      "id": "4324:99960",
+      "name": "00:14:35",
+      "pixels": 73,
+      "percent": 5.8
+    },
+    {
+      "id": "4324:99971",
+      "name": "00:07:20",
+      "pixels": 73,
+      "percent": 5.8
+    },
+    {
+      "id": "4324:99927",
+      "name": "00:23:45",
+      "pixels": 72,
+      "percent": 5.7
+    },
+    {
+      "id": "4324:99916",
+      "name": "00:14:33",
+      "pixels": 71,
+      "percent": 5.6
+    },
+    {
+      "id": "4324:99949",
+      "name": "00:16:19",
+      "pixels": 64,
+      "percent": 5.1
+    },
+    {
+      "id": "I4324:101459;2245:87914",
+      "name": "Label",
+      "pixels": 207,
+      "percent": 5.1
+    },
+    {
+      "id": "4324:99993",
+      "name": "00:19:19",
+      "pixels": 63,
+      "percent": 5
+    },
+    {
+      "id": "4324:100015",
+      "name": "00:08:40",
+      "pixels": 63,
+      "percent": 5
+    },
+    {
+      "id": "4324:100004",
+      "name": "00:11:15",
+      "pixels": 62,
+      "percent": 4.9
+    },
+    {
+      "id": "I4324:101460;2245:87908",
+      "name": "Label",
+      "pixels": 104,
+      "percent": 4.9
     }
   ],
   "regions": [],
@@ -428,7 +428,7 @@
     "over": []
   },
   "failures": [],
-  "url": "http://localhost:3108/chi-tiet-lop/bai-tap-va-kiem-tra/btvn-dk",
+  "url": "http://localhost:3000/chi-tiet-lop/bai-tap-va-kiem-tra/btvn-dk",
   "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
   "consoleErrors": [],
   "rootFound": true

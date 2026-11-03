@@ -1,0 +1,45 @@
+{
+  "route": "/hoc-ky/kiem-tra/danh-sach-bai-tap-sau-khi-tao-dk",
+  "pageFile": "components/figma/cd-kh-030347-dk/index.tsx",
+  "docFile": "docs/pages/hoc-ky/kiem-tra/danh-sach-bai-tap-sau-khi-tao-dk.md",
+  "sections": [
+    {
+      "nodeId": "6015:62890",
+      "component": "ContentBodyDanhSachBaiTap",
+      "file": "components/figma/cd-kh-030347-dk/ContentBodyDanhSachBaiTap.tsx"
+    },
+    {
+      "nodeId": "6015:63125",
+      "component": "Header55",
+      "file": "components/figma/shared/Header55.tsx"
+    },
+    {
+      "nodeId": "6015:63278",
+      "component": "SidebarMenuCd",
+      "file": "components/figma/cd-kh-030347-dk/SidebarMenuCd.tsx"
+    },
+    {
+      "nodeId": "6015:63279",
+      "component": "ToastTaoXong",
+      "file": "components/figma/cd-kh-030347-dk/ToastTaoXong.tsx"
+    }
+  ],
+  "idAlias": {
+    "6015:63125": "6015:62129",
+    "6015:63126": "6015:62130",
+    "6015:63173": "6015:62177",
+    "I6015:63173;2008:31768": "I6015:62177;2008:31768",
+    "I6015:63173;2008:31883": "I6015:62177;2008:31883",
+    "I6015:63173;2008:31884": "I6015:62177;2008:31884",
+    "I6015:63173;2008:31885": "I6015:62177;2008:31885",
+    "I6015:63173;2008:31771": "I6015:62177;2008:31771",
+    "I6015:63173;2008:31772": "I6015:62177;2008:31772",
+    "I6015:63173;2008:31773": "I6015:62177;2008:31773",
+    "I6015:63173;2008:31774": "I6015:62177;2008:31774",
+    "6015:63174": "6015:62178",
+    "I6015:63174;4019:24203": "I6015:62178;4019:24203",
+    "I6015:63174;4019:22291": "I6015:62178;4019:22291",
+    "I6015:63174;4019:24214": "I6015:62178;4019:24214",
+    "I6015:63174;4019:24215": "I6015:62178;4019:24215"
+  }
+}

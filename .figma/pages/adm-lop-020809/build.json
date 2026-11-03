@@ -1,0 +1,39 @@
+{
+  "route": "/chi-tiet-lop-hoc/cskh/co-cap-nhat-qua-han",
+  "pageFile": "components/figma/adm-lop-020809/index.tsx",
+  "docFile": "docs/pages/chi-tiet-lop-hoc/cskh/co-cap-nhat-qua-han.md",
+  "sections": [
+    {
+      "nodeId": "2711:65566",
+      "component": "Body",
+      "file": "components/figma/adm-lop-020809/Body.tsx"
+    },
+    {
+      "nodeId": "3497:49327",
+      "component": "Header29",
+      "file": "components/figma/shared/Header29.tsx"
+    },
+    {
+      "nodeId": "4915:227689",
+      "component": "SidebarMenuAdmin",
+      "file": "components/figma/adm-lop-020809/SidebarMenuAdmin.tsx"
+    },
+    {
+      "nodeId": "3502:76526",
+      "component": "Maincontent",
+      "file": "components/figma/adm-lop-020809/Maincontent.tsx"
+    }
+  ],
+  "idAlias": {
+    "3497:49327": "3502:69964",
+    "4050:117026": "4050:116056",
+    "3497:49375": "3502:70012",
+    "I3497:49375;2008:30986": "I3502:70012;2008:30986",
+    "I3497:49375;2008:31747": "I3502:70012;2008:31747",
+    "I3497:49375;2008:31748": "I3502:70012;2008:31748",
+    "I3497:49375;1391:17264": "I3502:70012;1391:17264",
+    "I3497:49375;1391:17266": "I3502:70012;1391:17266",
+    "I3497:49375;1391:17268": "I3502:70012;1391:17268",
+    "I3497:49375;1391:17270": "I3502:70012;1391:17270"
+  }
+}

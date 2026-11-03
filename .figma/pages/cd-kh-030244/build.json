@@ -1,0 +1,17 @@
+{
+  "route": "/hoc-ky/bai-hoc/popup-chi-tiet-bai-hoc/tab-kien-thuc/popup-them-kien-thuc",
+  "pageFile": "components/figma/cd-kh-030244/index.tsx",
+  "docFile": "docs/pages/hoc-ky/bai-hoc/popup-chi-tiet-bai-hoc/tab-kien-thuc/popup-them-kien-thuc.md",
+  "sections": [
+    {
+      "nodeId": "7193:403631",
+      "component": "PopupThemTuThuVienDuLieu",
+      "file": "components/figma/cd-kh-030244/PopupThemTuThuVienDuLieu.tsx"
+    },
+    {
+      "nodeId": "7193:403959",
+      "component": "Tooltip",
+      "file": "components/figma/cd-kh-030244/Tooltip.tsx"
+    }
+  ]
+}

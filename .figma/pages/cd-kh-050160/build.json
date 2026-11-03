@@ -1,0 +1,12 @@
+{
+  "route": "/ky-nang-s6/nghe/popup-tao-bai-nghe-moi",
+  "pageFile": "components/figma/cd-kh-050160/index.tsx",
+  "docFile": "docs/pages/ky-nang-s6/nghe/popup-tao-bai-nghe-moi.md",
+  "sections": [
+    {
+      "nodeId": "6646:122950",
+      "component": "PopupThemTuThuVienDuLieu",
+      "file": "components/figma/cd-kh-050160/PopupThemTuThuVienDuLieu.tsx"
+    }
+  ]
+}

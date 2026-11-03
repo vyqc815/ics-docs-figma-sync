@@ -1,22 +1,14 @@
 # Fidelity: ADM-GKS-020000 — Khảo sát / Giao khảo sát lớp / Danh sách lớp được giao
 
-- URL: `http://localhost:3108/khao-sat/giao-khao-sat-lop/danh-sach-lop-duoc-giao`
+- URL: `http://localhost:3000/khao-sat/giao-khao-sat-lop/danh-sach-lop-duoc-giao`
 - Verdict: **PASS**
-- Pixels outside text: **0.001%** differ (limit 0.5%); all pixels: 0.176%; inside text boxes: 1.182% (glyph rendering)
+- Pixels outside text: **0.001%** differ (limit 0.5%); all pixels: 0.123%; inside text boxes: 0.821% (glyph rendering)
 - Boxes: 298/298 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 297, ≤1px: 298, ≤2px: 298, ≤4px: 298, >4px: 0
 
 ## Text boxes with most differing pixels (limit 35%)
 
 | Text | Differing |
 | --- | --- |
-| 100% (`I5070:5215;1308:6749`) | 24.7% |
-| 100% (`I5070:5224;1308:6749`) | 24.7% |
-| 100% (`I5070:5232;1308:6749`) | 24.7% |
-| 100% (`I5070:5240;1308:6749`) | 24.7% |
-| 100% (`I5070:5248;1308:6749`) | 24.7% |
-| 100% (`I5070:5256;1308:6749`) | 24.7% |
-| 100% (`I5070:5264;1308:6749`) | 24.7% |
-| 0% (`I5070:5207;1308:6706`) | 23% |
 | Tên (`4885:39918`) | 9% |
 | Label (`I4915:244899;4899:200273;2245:87858`) | 6.4% |
 | Tên khảo sát (`4885:39774`) | 5.1% |
@@ -24,6 +16,14 @@
 | Badge (`I4885:39828;1048:1255`) | 4.1% |
 | Badge (`I4885:39884;1048:1255`) | 4.1% |
 | Button (`I4885:39802;1048:1238`) | 1.3% |
+| Button (`I4885:39816;1048:1238`) | 1.3% |
+| Button (`I4885:39844;1048:1238`) | 1.3% |
+| Button (`I4885:39900;1048:1238`) | 1.3% |
+| Button (`I4885:39776;1048:1238`) | 1.1% |
+| Label (`I4915:244899;4899:200259;2245:87768`) | 0.6% |
+| Value (`I5138:150713;2015:36008`) | 0.6% |
+| Badge (`I4885:39920;1050:2411`) | 0.6% |
+| Tên (`4885:39928`) | 0.6% |
 
 ## Largest box differences
 

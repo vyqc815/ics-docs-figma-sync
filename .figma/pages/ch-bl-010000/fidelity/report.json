@@ -12,10 +12,10 @@
   "pixels": {
     "width": 1440,
     "height": 1057,
-    "mismatched": 1523,
-    "percent": 0.1,
+    "mismatched": 1514,
+    "percent": 0.099,
     "shapePercent": 0,
-    "textPercent": 0.628,
+    "textPercent": 0.624,
     "sizeMismatch": false
   },
   "textNodes": [
@@ -86,16 +86,16 @@
       "percent": 2.6
     },
     {
-      "id": "5364:370207",
-      "name": "MEINE HOBBYS SIND...",
-      "pixels": 76,
-      "percent": 2.6
-    },
-    {
       "id": "I5364:370233;1725:17084",
       "name": "Label",
       "pixels": 11,
       "percent": 2.2
+    },
+    {
+      "id": "5364:370207",
+      "name": "MEINE HOBBYS SIND...",
+      "pixels": 63,
+      "percent": 2.1
     },
     {
       "id": "I5364:370118;5274:362799;3857:67911;1971:8814",
@@ -104,10 +104,10 @@
       "percent": 1.6
     },
     {
-      "id": "I5364:370179;2015:30321",
-      "name": "Badge",
-      "pixels": 16,
-      "percent": 1.4
+      "id": "I5371:38763;3004:75125",
+      "name": "Tìm nội dung...",
+      "pixels": 33,
+      "percent": 1.6
     }
   ],
   "regions": [],
@@ -328,18 +328,6 @@
         "textDriven": true
       },
       {
-        "id": "5364:370207",
-        "name": "MEINE HOBBYS SIND...",
-        "role": "text",
-        "delta": 0.42,
-        "dx": 0,
-        "dy": 0,
-        "dw": 0.42,
-        "dh": 0,
-        "limit": 2.5,
-        "textDriven": true
-      },
-      {
         "id": "I5364:370179;2015:30321",
         "name": "Badge",
         "role": "text",
@@ -422,13 +410,25 @@
         "dh": 0,
         "limit": 2.5,
         "textDriven": true
+      },
+      {
+        "id": "I5364:370118;5274:362788",
+        "name": "Frame 1171274926",
+        "role": "icon",
+        "delta": 0.02,
+        "dx": 0,
+        "dy": -0.02,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
       }
     ],
     "maxDelta": 0.86,
     "over": []
   },
   "failures": [],
-  "url": "http://localhost:3108/bao-loi/danh-sach-bao-loi-ch-bl-010000",
+  "url": "http://localhost:3000/bao-loi/danh-sach-bao-loi-ch-bl-010000",
   "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
   "consoleErrors": [],
   "rootFound": true

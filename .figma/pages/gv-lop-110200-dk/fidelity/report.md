@@ -1,15 +1,14 @@
 # Fidelity: GV-LOP-110200-DK — Chi tiết lớp / Thông tin / KPI
 
-- URL: `http://localhost:3108/chi-tiet-lop/thong-tin/kpi-dk`
+- URL: `http://localhost:3000/chi-tiet-lop/thong-tin/kpi-dk`
 - Verdict: **PASS**
-- Pixels outside text: **0%** differ (limit 0.5%); all pixels: 0.131%; inside text boxes: 2.397% (glyph rendering)
+- Pixels outside text: **0%** differ (limit 0.5%); all pixels: 0.102%; inside text boxes: 1.865% (glyph rendering)
 - Boxes: 133/133 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 131, ≤1px: 133, ≤2px: 133, ≤4px: 133, >4px: 0
 
 ## Text boxes with most differing pixels (limit 35%)
 
 | Text | Differing |
 | --- | --- |
-| Label (`I4333:19353;2245:87914`) | 15.7% |
 | Label (`I4899:187877;2245:87908`) | 8.5% |
 | Label (`I4333:19342;2245:87908`) | 6.3% |
 | Label (`I4333:19343;2245:87908`) | 4.9% |
@@ -20,6 +19,7 @@
 | Label (`I4333:19346;2245:87908`) | 2.7% |
 | Label (`I4333:19351;2245:87908`) | 2.1% |
 | Vai trò (`I4899:187625;4899:187330`) | 1.6% |
+| Label (`I4333:19353;2245:87914`) | 1.6% |
 | Label (`I4333:19347;2245:87908`) | 1.4% |
 | Label (`I4333:19352;2245:87908`) | 1.4% |
 | Bảng dữ liệu này đang trống (`4333:21003`) | 1.3% |

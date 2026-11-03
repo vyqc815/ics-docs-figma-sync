@@ -1,8 +1,8 @@
 # Fidelity: ADM-LHN-010200-DK — Lịch hẹn / Học viên
 
-- URL: `http://localhost:3108/lich-hen/hoc-vien-dk`
+- URL: `http://localhost:3000/lich-hen/hoc-vien-dk`
 - Verdict: **PASS**
-- Pixels outside text: **0.006%** differ (limit 0.5%); all pixels: 0.767%; inside text boxes: 3.475% (glyph rendering)
+- Pixels outside text: **0.006%** differ (limit 0.5%); all pixels: 0.738%; inside text boxes: 3.342% (glyph rendering)
 - Boxes: 314/314 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 305, ≤1px: 314, ≤2px: 314, ≤4px: 314, >4px: 0
 
 ## Pixel regions (largest first)
@@ -18,7 +18,6 @@
 | Text | Differing |
 | --- | --- |
 | - Gửi giới thiệu bạn với học viên (lưu ý các học viên đang c (`4056:105970`) | 22.8% |
-| Label (`I4056:105809;2245:87774`) | 14.7% |
 | Value (`I4713:129288;2015:36008`) | 6.6% |
 | giavynguyen2978@gmail.com (`I4056:105957;2245:92367`) | 6.4% |
 | Tên: (`I4056:105957;2245:92352`) | 6.3% |
@@ -32,6 +31,7 @@
 | - DNH315-I (Nghỉ học) (`I4056:105957;2245:92378`) | 4.3% |
 | [Buổi 10] CSKH gọi điện thông báo KG HK2 cho các bạn mới vào (`4056:105990`) | 4.3% |
 | [Buổi 10] CSKH gọi điện thông báo KG HK2 cho các bạn mới vào (`4056:106008`) | 4.3% |
+| [Buổi 10] CSKH gọi điện thông báo KG HK2 cho các bạn mới vào (`4056:106027`) | 4.3% |
 
 ## Largest box differences
 

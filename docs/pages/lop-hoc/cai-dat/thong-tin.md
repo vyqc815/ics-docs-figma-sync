@@ -5,7 +5,7 @@
 > **Nguồn:** PLS-ICS T8/2026 ›             ├─ Cài đặt › ADM-LOP-040100 — Lớp học / Cài đặt / Thông tin (`2199:17395`, file `rRVs5HX0kIHffbS0V40djG`)  
 > **Route:** `/lop-hoc/cai-dat/thong-tin`  
 > **Khung thiết kế:** 1440 × 810 px  
-> **Xuất lúc:** 2026-11-02T03:37:10.428Z  
+> **Xuất lúc:** 2026-11-03T03:27:40.610Z  
 > **Spec đầy đủ (giá trị chính xác từng node):** `../../../../.figma/pages/adm-lop-040100/page-spec.json`
 
 ## 1. Tổng quan
@@ -26,6 +26,9 @@ Nền trang: `#f8fafc`.
 
 | Token | Biến CSS | Giá trị | Trỏ tới | Bộ / mode |
 | --- | --- | --- | --- | --- |
+| `bg/canvas` | `--bg-canvas` | `#f8fafc` | color/extended/f8fafc | Theme · Semantic / Light |
+| `bg/surface` | `--bg-surface` | `#ffffff` | color/neutral/white | Theme · Semantic / Light |
+| `border/default` | `--border-default` | `#e2e8f0` | color/border/default | Theme · Semantic / Light |
 | `color/border/default` | `--color-border-default` | `#e2e8f0` |  | Color Tokens / Light |
 | `color/brand/orange` | `--color-brand-orange` | `#e65100` |  | Color Tokens / Light |
 | `color/extended/fed7aa` | `--color-extended-fed7aa` | `#fed7aa` |  | Color Tokens / Light |
@@ -86,7 +89,7 @@ Nền trang: `#f8fafc`.
 Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí · bố cục · style`. Dòng đầu tiên là chính frame trang (gốc). Tên layer nằm trong `**…**`, chữ hiển thị nằm trong `“…”`, giá trị CSS nguyên văn nằm trong backtick: dấu `·` hay `—` **bên trong** các cặp đó là nội dung, chỉ dấu ` · ` bên ngoài mới ngăn cách các trường. Toạ độ `@ (x, y)` tính từ góc trên-trái của layer cha; layer **flow** do auto layout của cha xếp, layer **abs** đặt tuyệt đối. Các layer cùng cấp được liệt kê **theo thứ tự vẽ của Figma: layer sau nằm đè lên layer trước**. ID ở cuối dòng là node ID trong Figma.
 
 - [trang] **ADM-LOP-040100 — Lớp học / Cài đặt / Thông tin** — 1440×810 · bg #f8fafc `2199:17395`
-  - [khối] **MainContent** — 1140×746 · @ (300, 64) abs · column gap 8 pad 16 24 16 24 · bg #ffffff · clip `2199:19566`
+  - [khối] **MainContent** — 1140×746 · @ (300, 64) abs · column gap 8 pad 16 24 16 24 · bg #ffffff (bg/surface) · clip `2199:19566`
     - [khối] **Sub Navigation Tabs** — 765×36 [HUG×HUG] · @ (24, 16) flow · row gap 12 align CENTER `2199:19567`
       - [instance] **Atom/Side Tab** ⟨Atom/Side Tab: Có số đếm=false, State=Active, Icon=No, Kiểu=Gạch trái⟩ — 91×36 [HUG×HUG] · @ (0, 0) flow · row gap 8 pad 8 12 8 16 align CENTER · bg #fff5ec (color/extended/fff5ec) · radius 6px `2199:19568`
         - [khối] **Container** — 63×20 [HUG×HUG] · @ (16, 8) flow · row `I2199:19568;2177:28935`
@@ -172,7 +175,7 @@ Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí ·
           - [instance] **Atom/Label** ⟨Atom/Label: Required=false, Icon=1832:36661, Label=Ghi chú, Có icon=Yes⟩ — 173×19 [FIXED×HUG] · @ (0, 0) flow · row gap 4 align CENTER `2210:14361`
             - [icon] **Liner Icon** ⟨Liner Icon: Property 1=Ghi chú⟩ — 16×16 · @ (0, 1.5) flow · file /figma/assets/a5c01d4af72d.svg `I2210:14361;2808:48144`
             - [chữ] “Ghi chú” — 46×19 [HUG×HUG] · @ (20, 0) flow · Afacad 15/19px 400 #64748b (color/text/secondary) · no-wrap `I2210:14361;2808:48145`
-          - [khối] **Ô nhập (giãn theo dòng)** — 1092×39 [FILL×HUG] · @ (0, 23) flow · row pad 8 12 8 12 justify CENTER align CENTER · bg #ffffff · radius 8px · border 1px solid #e2e8f0 (color/border/default) · clip `2210:14367`
+          - [khối] **Ô nhập (giãn theo dòng)** — 1092×39 [FILL×HUG] · @ (0, 23) flow · row pad 8 12 8 12 justify CENTER align CENTER · bg #ffffff (bg/surface) · radius 8px · border 1px solid #e2e8f0 (color/border/default) · clip `2210:14367`
             - [khối] **Container** — 1066×21 [FILL×HUG] · @ (13, 9) flow · column `2210:14368`
               - [chữ] “Nhập ghi chú hoặc nội dung vào đây...” — 1066×21 [FILL×HUG] · @ (0, 0) flow · Afacad 17/21px 400 italic #cccccc (color/text/placeholder) `2210:14369`
       - [khối] **Frame 1171274932** — 1092×62 [FILL×HUG] · @ (0, 299) flow · row gap 16 align CENTER `2210:14371`
@@ -180,11 +183,11 @@ Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí ·
           - [instance] **Atom/Label** ⟨Atom/Label: Required=false, Icon=1966:7703, Label=Mô tả, Có icon=Yes⟩ — 173×19 [FIXED×HUG] · @ (0, 0) flow · row gap 4 align CENTER `2210:14373`
             - [icon] **Liner Icon** ⟨Liner Icon: Property 1=Mô tả⟩ — 16×16 · @ (0, 1.5) flow · file /figma/assets/744459a4b8ec.svg `I2210:14373;2808:48144`
             - [chữ] “Mô tả” — 35×19 [HUG×HUG] · @ (20, 0) flow · Afacad 15/19px 400 #64748b (color/text/secondary) · no-wrap `I2210:14373;2808:48145`
-          - [khối] **Ô nhập (giãn theo dòng)** — 1092×39 [FILL×HUG] · @ (0, 23) flow · row pad 8 12 8 12 justify CENTER align CENTER · bg #ffffff · radius 8px · border 1px solid #e2e8f0 (color/border/default) · clip `2210:14374`
+          - [khối] **Ô nhập (giãn theo dòng)** — 1092×39 [FILL×HUG] · @ (0, 23) flow · row pad 8 12 8 12 justify CENTER align CENTER · bg #ffffff (bg/surface) · radius 8px · border 1px solid #e2e8f0 (color/border/default) · clip `2210:14374`
             - [khối] **Container** — 1066×21 [FILL×HUG] · @ (13, 9) flow · column `2210:14375`
               - [chữ] “Nhập mô tả hoặc nội dung vào đây...” — 1066×21 [FILL×HUG] · @ (0, 0) flow · Afacad 17/21px 400 italic #cccccc (color/text/placeholder) `2210:14376`
       - [khối] **Frame 427325134** — 1092×56 [FILL×HUG] · @ (0, 373) flow · row gap 12 `2481:114916`
-        - [khối] **Frame 427325132** — 1092×56 [FILL×HUG] · @ (0, 0) flow · row gap 8 pad 8 12 8 12 align CENTER · bg #f8fafc · radius 8px · shadow inset 0 0 0 1px #e2e8f0 · clip `2481:114917`
+        - [khối] **Frame 427325132** — 1092×56 [FILL×HUG] · @ (0, 0) flow · row gap 8 pad 8 12 8 12 align CENTER · bg #f8fafc (bg/canvas) · radius 8px · shadow inset 0 0 0 1px #e2e8f0 · clip `2481:114917`
           - [icon] **Checkbox 2** ⟨Checkbox: Checked=Yes, Size=20, Disabled=No⟩ — 20×20 · @ (12, 18) flow · file /figma/assets/2b6403bbddf3.svg covers (-2, -2) 26×26 `2481:114918`
           - [khối] **Frame 427325131** — 951×40 [FILL×HUG] · @ (40, 8) flow · column `2481:114919`
             - [chữ] “Lớp không chính thức” — 150×21 [HUG×HUG] · @ (0, 0) flow · Afacad 17/21px 700 #e65100 (color/brand/orange) case title · no-wrap `2481:114920`

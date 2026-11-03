@@ -1,8 +1,8 @@
 # Fidelity: ADM-GKS-030000-DK — Khảo sát / Giao khảo sát học viên / Danh sách học viên được giao
 
-- URL: `http://localhost:3108/khao-sat/giao-khao-sat-hoc-vien/danh-sach-hoc-vien-duoc-giao-dk`
+- URL: `http://localhost:3000/khao-sat/giao-khao-sat-hoc-vien/danh-sach-hoc-vien-duoc-giao-dk`
 - Verdict: **PASS**
-- Pixels outside text: **0.052%** differ (limit 0.5%); all pixels: 0.258%; inside text boxes: 1.399% (glyph rendering)
+- Pixels outside text: **0.052%** differ (limit 0.5%); all pixels: 0.213%; inside text boxes: 1.095% (glyph rendering)
 - Boxes: 299/299 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 298, ≤1px: 298, ≤2px: 299, ≤4px: 299, >4px: 0
 
 ## Pixel regions (largest first)
@@ -17,7 +17,6 @@
 
 | Text | Differing |
 | --- | --- |
-| Label (`I4885:66746;2245:87864`) | 22.3% |
 | Tên khảo sát (`4885:62107`) | 10.4% |
 | Label (`I4885:66745;2245:87858`) | 9.7% |
 | Badge (`I4885:62161;1048:1255`) | 4.6% |
@@ -32,6 +31,7 @@
 | Label (`I4885:66744;2245:87839`) | 1.8% |
 | Label (`I4885:66752;2245:87768`) | 1.8% |
 | Tên (`4885:62269`) | 1.7% |
+| Label (`I4885:66743;2245:87829`) | 1.4% |
 
 ## Largest box differences
 

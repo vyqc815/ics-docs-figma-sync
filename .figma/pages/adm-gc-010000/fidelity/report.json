@@ -465,7 +465,7 @@
     "over": []
   },
   "failures": [],
-  "url": "http://localhost:3108/ghi-chu/danh-sach-ghi-chu",
+  "url": "http://localhost:3000/ghi-chu/danh-sach-ghi-chu",
   "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
   "consoleErrors": [],
   "rootFound": true

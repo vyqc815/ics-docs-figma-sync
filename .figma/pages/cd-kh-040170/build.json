@@ -1,0 +1,12 @@
+{
+  "route": "/kien-thuc-s1/tu-vung/popup-chia-cum-bang-ai",
+  "pageFile": "components/figma/cd-kh-040170/index.tsx",
+  "docFile": "docs/pages/kien-thuc-s1/tu-vung/popup-chia-cum-bang-ai.md",
+  "sections": [
+    {
+      "nodeId": "4846:172003",
+      "component": "PopupChiaCumBangAi",
+      "file": "components/figma/cd-kh-040170/PopupChiaCumBangAi.tsx"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "route": "/khao-sat/lam-khao-sat",
+  "pageFile": "components/figma/gv-ks-010010/index.tsx",
+  "docFile": "docs/pages/khao-sat/lam-khao-sat.md",
+  "sections": [
+    {
+      "nodeId": "4686:43795",
+      "component": "Body",
+      "file": "components/figma/gv-ks-010010/Body.tsx"
+    },
+    {
+      "nodeId": "4686:43924",
+      "component": "MainLamKhaoSat",
+      "file": "components/figma/gv-ks-010010/MainLamKhaoSat.tsx"
+    }
+  ]
+}

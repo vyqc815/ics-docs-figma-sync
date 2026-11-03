@@ -1,0 +1,32 @@
+{
+  "route": "/thu-vien/bai-tap/chi-tiet-cau-hoi-listening/xac-nhan-xoa-doi-tuong",
+  "pageFile": "components/figma/cd-kh-070307/index.tsx",
+  "docFile": "docs/pages/thu-vien/bai-tap/chi-tiet-cau-hoi-listening/xac-nhan-xoa-doi-tuong.md",
+  "sections": [
+    {
+      "nodeId": "6579:359731",
+      "component": "Content",
+      "file": "components/figma/cd-kh-070307/Content.tsx"
+    },
+    {
+      "nodeId": "6579:359960",
+      "component": "SidebarMenuCd",
+      "file": "components/figma/cd-kh-070307/SidebarMenuCd.tsx"
+    },
+    {
+      "nodeId": "6579:359961",
+      "component": "Header",
+      "file": "components/figma/cd-kh-070307/Header.tsx"
+    },
+    {
+      "nodeId": "6579:360619",
+      "component": "Overlay",
+      "file": "components/figma/shared/Overlay.tsx"
+    },
+    {
+      "nodeId": "6579:360620",
+      "component": "PopupXoaDoiTuong",
+      "file": "components/figma/cd-kh-070307/PopupXoaDoiTuong.tsx"
+    }
+  ]
+}

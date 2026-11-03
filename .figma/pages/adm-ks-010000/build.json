@@ -5,13 +5,13 @@
   "sections": [
     {
       "nodeId": "4915:243663",
-      "component": "SidebarMenuAdmin",
-      "file": "components/figma/shared/SidebarMenuAdmin.tsx"
+      "component": "SidebarMenuAdmin4",
+      "file": "components/figma/shared/SidebarMenuAdmin4.tsx"
     },
     {
       "nodeId": "4252:148242",
-      "component": "Header7",
-      "file": "components/figma/shared/Header7.tsx"
+      "component": "Header22",
+      "file": "components/figma/shared/Header22.tsx"
     },
     {
       "nodeId": "4262:148485",

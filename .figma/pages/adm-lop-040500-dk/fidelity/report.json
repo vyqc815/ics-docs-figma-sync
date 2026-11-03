@@ -12,10 +12,10 @@
   "pixels": {
     "width": 1440,
     "height": 860,
-    "mismatched": 2753,
-    "percent": 0.222,
+    "mismatched": 2464,
+    "percent": 0.199,
     "shapePercent": 0.001,
-    "textPercent": 1.616,
+    "textPercent": 1.445,
     "sizeMismatch": false
   },
   "textNodes": [
@@ -24,12 +24,6 @@
       "name": "Label",
       "pixels": 329,
       "percent": 13.7
-    },
-    {
-      "id": "I4056:117236;2245:87914",
-      "name": "Label",
-      "pixels": 312,
-      "percent": 13
     },
     {
       "id": "I4056:117227;2245:87908",
@@ -105,6 +99,12 @@
     },
     {
       "id": "I4056:117163;2008:49579;1904:12423",
+      "name": "Trần Nguyễn Hoài Phương",
+      "pixels": 72,
+      "percent": 3.9
+    },
+    {
+      "id": "I4056:117164;2008:49579;1904:12423",
       "name": "Trần Nguyễn Hoài Phương",
       "pixels": 72,
       "percent": 3.9
@@ -441,7 +441,7 @@
     "over": []
   },
   "failures": [],
-  "url": "http://localhost:3108/lop-hoc/cai-dat/lich-day-dk",
+  "url": "http://localhost:3000/lop-hoc/cai-dat/lich-day-dk",
   "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
   "consoleErrors": [],
   "rootFound": true

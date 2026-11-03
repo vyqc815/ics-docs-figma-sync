@@ -1,8 +1,8 @@
 # Fidelity: ADM-HV-010000-DK — Danh sách học viên
 
-- URL: `http://localhost:3108/danh-sach-hoc-vien-dk`
+- URL: `http://localhost:3000/danh-sach-hoc-vien-dk`
 - Verdict: **PASS**
-- Pixels outside text: **0.006%** differ (limit 0.5%); all pixels: 0.317%; inside text boxes: 1.491% (glyph rendering)
+- Pixels outside text: **0.006%** differ (limit 0.5%); all pixels: 0.29%; inside text boxes: 1.36% (glyph rendering)
 - Boxes: 472/472 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 471, ≤1px: 472, ≤2px: 472, ≤4px: 472, >4px: 0
 
 ## Pixel regions (largest first)
@@ -19,7 +19,6 @@
 
 | Text | Differing |
 | --- | --- |
-| Label (`I4056:119671;2245:87864`) | 13.5% |
 | Tổng doanh thu (`4056:119709`) | 6.4% |
 | Ngày chốt đơn (`4056:119699`) | 5.4% |
 | Th2, 14.09.2026 (`I4056:119720;1590:881`) | 5% |
@@ -34,6 +33,7 @@
 | Th2, 14.09.2026 (`I4056:119891;1590:881`) | 5% |
 | 3 (`I4056:119905;1391:17481`) | 5% |
 | Ghi chú (`4056:119707`) | 4.4% |
+| Lớp hiện tại (`4056:119705`) | 4.2% |
 
 ## Largest box differences
 

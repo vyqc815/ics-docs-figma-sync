@@ -12,37 +12,13 @@
   "pixels": {
     "width": 1440,
     "height": 1059,
-    "mismatched": 2789,
-    "percent": 0.183,
+    "mismatched": 2457,
+    "percent": 0.161,
     "shapePercent": 0.005,
-    "textPercent": 0.959,
+    "textPercent": 0.841,
     "sizeMismatch": false
   },
   "textNodes": [
-    {
-      "id": "I3497:64371;1308:6749",
-      "name": "100%",
-      "pixels": 83,
-      "percent": 24.7
-    },
-    {
-      "id": "I3497:64372;1308:6749",
-      "name": "100%",
-      "pixels": 83,
-      "percent": 24.7
-    },
-    {
-      "id": "I3497:64408;1308:6749",
-      "name": "100%",
-      "pixels": 83,
-      "percent": 24.7
-    },
-    {
-      "id": "I3497:64409;1308:6749",
-      "name": "100%",
-      "pixels": 83,
-      "percent": 24.7
-    },
     {
       "id": "3497:54223",
       "name": "ÔN TẬP: Giữa Kỳ 1",
@@ -108,6 +84,30 @@
       "name": "Tên",
       "pixels": 63,
       "percent": 1.7
+    },
+    {
+      "id": "3497:3906",
+      "name": "Danh sách bài học",
+      "pixels": 76,
+      "percent": 1.7
+    },
+    {
+      "id": "I3502:69240;3138:130001",
+      "name": "Tên",
+      "pixels": 60,
+      "percent": 1.6
+    },
+    {
+      "id": "I3497:64391;1050:2409",
+      "name": "Badge",
+      "pixels": 3,
+      "percent": 1.5
+    },
+    {
+      "id": "I3497:64556;1050:2409",
+      "name": "Badge",
+      "pixels": 3,
+      "percent": 1.5
     }
   ],
   "regions": [
@@ -525,7 +525,7 @@
     "over": []
   },
   "failures": [],
-  "url": "http://localhost:3108/lop-hoc/bai-hoc/buoi-hoc",
+  "url": "http://localhost:3000/lop-hoc/bai-hoc/buoi-hoc",
   "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
   "consoleErrors": [],
   "rootFound": true

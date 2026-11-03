@@ -1,8 +1,8 @@
 # Fidelity: GV-LOP-040200 — Chi tiết lớp / Bài tập và Kiểm tra / Kiểm tra
 
-- URL: `http://localhost:3108/chi-tiet-lop/bai-tap-va-kiem-tra/kiem-tra`
+- URL: `http://localhost:3000/chi-tiet-lop/bai-tap-va-kiem-tra/kiem-tra`
 - Verdict: **PASS**
-- Pixels outside text: **0.001%** differ (limit 0.5%); all pixels: 0.248%; inside text boxes: 1.071% (glyph rendering)
+- Pixels outside text: **0.001%** differ (limit 0.5%); all pixels: 0.211%; inside text boxes: 0.912% (glyph rendering)
 - Boxes: 513/513 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 510, ≤1px: 512, ≤2px: 513, ≤4px: 513, >4px: 0
 
 ## Pixel regions (largest first)
@@ -15,12 +15,6 @@
 
 | Text | Differing |
 | --- | --- |
-| 100% (`I4324:99746;1308:6749`) | 24.7% |
-| 100% (`I4324:99770;1308:6749`) | 24.7% |
-| 100% (`I4324:99794;1308:6749`) | 24.7% |
-| 22/24 (`I4324:99745;1308:6798`) | 24.4% |
-| 22/24 (`I4324:99769;1308:6798`) | 23.6% |
-| 22/24 (`I4324:99793;1308:6798`) | 23.6% |
 | Tổng Quan (`4324:86235`) | 15.6% |
 | Label (`I4915:260342;4901:213764;2245:87908`) | 5.9% |
 | 00:06:57 (`4324:99611`) | 5.5% |
@@ -30,6 +24,12 @@
 | 00:05:49 (`4324:99418`) | 4.6% |
 | 00:06:32 (`4324:99644`) | 4.5% |
 | 00:05:42 (`4324:99703`) | 4.4% |
+| 00:04:06 (`4324:99484`) | 4.3% |
+| MINI TEST 6 – WOHNEN, UHRZEIT UND ALLTAG (`4324:99767`) | 2.7% |
+| MINITEST 5 - PERSÖNLICHE DATEN (`4324:99743`) | 2.2% |
+| Label (`I4915:260342;4901:213770;2245:87908`) | 2.2% |
+| Chưa nộp (`I4324:99392;3304:59612`) | 1.9% |
+| Chưa nộp (`I4324:99551;3304:59612`) | 1.9% |
 
 ## Largest box differences
 

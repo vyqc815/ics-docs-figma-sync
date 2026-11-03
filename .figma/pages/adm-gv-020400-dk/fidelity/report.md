@@ -1,8 +1,8 @@
 # Fidelity: ADM-GV-020400-DK — Chi tiết giáo viên / Log
 
-- URL: `http://localhost:3108/chi-tiet-giao-vien/log-dk`
+- URL: `http://localhost:3000/chi-tiet-giao-vien/log-dk`
 - Verdict: **PASS**
-- Pixels outside text: **0.001%** differ (limit 0.5%); all pixels: 0.339%; inside text boxes: 2.075% (glyph rendering)
+- Pixels outside text: **0.001%** differ (limit 0.5%); all pixels: 0.315%; inside text boxes: 1.927% (glyph rendering)
 - Boxes: 297/297 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 296, ≤1px: 297, ≤2px: 297, ≤4px: 297, >4px: 0
 
 ## Pixel regions (largest first)
@@ -16,7 +16,6 @@
 
 | Text | Differing |
 | --- | --- |
-| Label (`I4056:125858;2245:87864`) | 14.9% |
 | Hệ thống (`I4056:125771;2409:141178`) | 8.3% |
 | Thêm Tráo Thẻ (`4056:125763`) | 7.2% |
 | Hệ thống (`I4056:125737;2409:141178`) | 6.8% |
@@ -31,6 +30,7 @@
 | 7 ngày (40 ca) (`I4056:125752;1350:12808`) | 3.7% |
 | 7 ngày (40 ca) (`I4056:125769;1350:12808`) | 3.7% |
 | BÀI TẬP VỀ NHÀ (`4056:125671`) | 3.2% |
+| Thuy SP đã Follow lớp NS0002 (`4056:125731`) | 3.2% |
 
 ## Largest box differences
 

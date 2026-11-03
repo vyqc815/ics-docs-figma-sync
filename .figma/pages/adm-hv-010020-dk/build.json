@@ -1,0 +1,17 @@
+{
+  "route": "/danh-sach-hoc-vien/popup-lich-su/hoa-don-dk",
+  "pageFile": "components/figma/adm-hv-010020-dk/index.tsx",
+  "docFile": "docs/pages/danh-sach-hoc-vien/popup-lich-su/hoa-don-dk.md",
+  "sections": [
+    {
+      "nodeId": "4056:122028",
+      "component": "PopupHeader6",
+      "file": "components/figma/shared/PopupHeader6.tsx"
+    },
+    {
+      "nodeId": "4056:122029",
+      "component": "Body",
+      "file": "components/figma/adm-hv-010020-dk/Body.tsx"
+    }
+  ]
+}

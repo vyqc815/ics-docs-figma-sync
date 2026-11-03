@@ -1,8 +1,8 @@
 # Fidelity: ADM-MV-010000-DK — Move video / Xác minh Gmail
 
-- URL: `http://localhost:3108/move-video/xac-minh-gmail-dk`
+- URL: `http://localhost:3000/move-video/xac-minh-gmail-dk`
 - Verdict: **PASS**
-- Pixels outside text: **0.074%** differ (limit 0.5%); all pixels: 0.168%; inside text boxes: 1.666% (glyph rendering)
+- Pixels outside text: **0.074%** differ (limit 0.5%); all pixels: 0.132%; inside text boxes: 1.021% (glyph rendering)
 - Boxes: 99/99 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 99, ≤1px: 99, ≤2px: 99, ≤4px: 99, >4px: 0
 
 ## Pixel regions (largest first)
@@ -20,7 +20,6 @@
 
 | Text | Differing |
 | --- | --- |
-| Label (`I4056:130524;2245:87864`) | 17.5% |
 | Label (`I4056:130525;2245:87820`) | 3.3% |
 | Label (`I4056:130526;2245:87820`) | 2.7% |
 | Label (`I4056:130518;2245:87820`) | 2.4% |
@@ -33,6 +32,7 @@
 | Label (`I4101:138195;2245:87768`) | 1.3% |
 | Label (`I4056:130521;2245:87848`) | 1.1% |
 | Label (`I4056:130522;2245:87858`) | 0.9% |
+| Label (`I4056:130524;2245:87864`) | 0.7% |
 | Button (`I4056:130447;1048:1230`) | 0.5% |
 | admin@gmail.com (`I4056:130583;1391:17268`) | 0.3% |
 

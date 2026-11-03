@@ -10,13 +10,25 @@
     },
     {
       "nodeId": "4915:229497",
-      "component": "SidebarMenuAdmin2",
-      "file": "components/figma/shared/SidebarMenuAdmin2.tsx"
+      "component": "SidebarMenuAdmin8",
+      "file": "components/figma/shared/SidebarMenuAdmin8.tsx"
     },
     {
       "nodeId": "3497:50986",
-      "component": "Header17",
-      "file": "components/figma/shared/Header17.tsx"
+      "component": "Header38",
+      "file": "components/figma/shared/Header38.tsx"
     }
-  ]
+  ],
+  "idAlias": {
+    "3497:50986": "3497:50845",
+    "4050:117561": "4050:117464",
+    "3497:51034": "3497:50893",
+    "I3497:51034;2008:30986": "I3497:50893;2008:30986",
+    "I3497:51034;2008:31747": "I3497:50893;2008:31747",
+    "I3497:51034;2008:31748": "I3497:50893;2008:31748",
+    "I3497:51034;1391:17264": "I3497:50893;1391:17264",
+    "I3497:51034;1391:17266": "I3497:50893;1391:17266",
+    "I3497:51034;1391:17268": "I3497:50893;1391:17268",
+    "I3497:51034;1391:17270": "I3497:50893;1391:17270"
+  }
 }

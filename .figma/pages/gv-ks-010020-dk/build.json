@@ -1,0 +1,17 @@
+{
+  "route": "/khao-sat/da-hoan-thanh-dk",
+  "pageFile": "components/figma/gv-ks-010020-dk/index.tsx",
+  "docFile": "docs/pages/khao-sat/da-hoan-thanh-dk.md",
+  "sections": [
+    {
+      "nodeId": "4885:60161",
+      "component": "Body",
+      "file": "components/figma/gv-ks-010020-dk/Body.tsx"
+    },
+    {
+      "nodeId": "4885:60293",
+      "component": "MainKhaoSat",
+      "file": "components/figma/gv-ks-010020-dk/MainKhaoSat.tsx"
+    }
+  ]
+}

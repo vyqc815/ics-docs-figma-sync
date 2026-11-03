@@ -1,0 +1,22 @@
+{
+  "route": "/quan-ly-danh-muc/popup-danh-muc-cap-do-dk",
+  "pageFile": "components/figma/cd-dm-010010-dk/index.tsx",
+  "docFile": "docs/pages/quan-ly-danh-muc/popup-danh-muc-cap-do-dk.md",
+  "sections": [
+    {
+      "nodeId": "4056:145431",
+      "component": "PopupHeader9",
+      "file": "components/figma/shared/PopupHeader9.tsx"
+    },
+    {
+      "nodeId": "4056:145432",
+      "component": "Body",
+      "file": "components/figma/cd-dm-010010-dk/Body.tsx"
+    },
+    {
+      "nodeId": "4056:145522",
+      "component": "PopupFooter",
+      "file": "components/figma/cd-dm-010010-dk/PopupFooter.tsx"
+    }
+  ]
+}

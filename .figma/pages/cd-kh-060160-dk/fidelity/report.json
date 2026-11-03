@@ -1,0 +1,435 @@
+{
+  "pass": true,
+  "thresholds": {
+    "maxPixelDiffPercent": 0.5,
+    "maxBoxDelta": 1,
+    "maxTextBoxDelta": 2.5,
+    "colorThreshold": 0.1,
+    "aaRadius": 1,
+    "subpixel": true,
+    "maxTextNodeDiffPercent": 35
+  },
+  "pixels": {
+    "width": 1440,
+    "height": 962,
+    "mismatched": 482,
+    "percent": 0.035,
+    "shapePercent": 0.002,
+    "textPercent": 0.143,
+    "sizeMismatch": false
+  },
+  "textNodes": [
+    {
+      "id": "6015:55162",
+      "name": "D",
+      "pixels": 17,
+      "percent": 10
+    },
+    {
+      "id": "6015:55154",
+      "name": "B",
+      "pixels": 8,
+      "percent": 5.2
+    },
+    {
+      "id": "6015:55182",
+      "name": "Hiện đáp án & giải thích",
+      "pixels": 91,
+      "percent": 5.1
+    },
+    {
+      "id": "6015:55146",
+      "name": "Chọn nghĩa đúng của từ",
+      "pixels": 71,
+      "percent": 3.9
+    },
+    {
+      "id": "I6015:55079;6579:362454;2245:87908",
+      "name": "Label",
+      "pixels": 88,
+      "percent": 3.8
+    },
+    {
+      "id": "I6015:55178;1430:10764",
+      "name": "Button",
+      "pixels": 28,
+      "percent": 3.2
+    },
+    {
+      "id": "6015:55158",
+      "name": "C",
+      "pixels": 4,
+      "percent": 2.4
+    },
+    {
+      "id": "6015:55155",
+      "name": "Tạm biệt",
+      "pixels": 22,
+      "percent": 2.3
+    },
+    {
+      "id": "I6015:55177;1430:10764",
+      "name": "Button",
+      "pixels": 24,
+      "percent": 2.3
+    },
+    {
+      "id": "6015:54915",
+      "name": "2",
+      "pixels": 2,
+      "percent": 1.2
+    },
+    {
+      "id": "6015:55150",
+      "name": "A",
+      "pixels": 2,
+      "percent": 1.2
+    },
+    {
+      "id": "I6015:54753;1048:1240",
+      "name": "Button",
+      "pixels": 23,
+      "percent": 1.1
+    },
+    {
+      "id": "6015:54738",
+      "name": "Đọc",
+      "pixels": 4,
+      "percent": 1
+    },
+    {
+      "id": "I6015:54784;2015:30513",
+      "name": "Label",
+      "pixels": 15,
+      "percent": 0.8
+    },
+    {
+      "id": "I6015:54818;2015:30513",
+      "name": "Label",
+      "pixels": 15,
+      "percent": 0.8
+    }
+  ],
+  "regions": [],
+  "boxes": {
+    "measured": 487,
+    "missing": [],
+    "withinThreshold": 487,
+    "buckets": {
+      "≤0.5px": 472,
+      "≤1px": 481,
+      "≤2px": 487,
+      "≤4px": 487,
+      ">4px": 0
+    },
+    "worst": [
+      {
+        "id": "6015:54784",
+        "name": "Atom/Tag",
+        "role": "instance",
+        "delta": 1.22,
+        "dx": 0,
+        "dy": 0,
+        "dw": 1.22,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6015:54784;2015:30513",
+        "name": "Label",
+        "role": "text",
+        "delta": 1.22,
+        "dx": 0,
+        "dy": 0,
+        "dw": 1.22,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6015:54818",
+        "name": "Atom/Tag",
+        "role": "instance",
+        "delta": 1.22,
+        "dx": 0,
+        "dy": 0,
+        "dw": 1.22,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6015:54818;2015:30513",
+        "name": "Label",
+        "role": "text",
+        "delta": 1.22,
+        "dx": 0,
+        "dy": 0,
+        "dw": 1.22,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6015:55155",
+        "name": "Tạm biệt",
+        "role": "text",
+        "delta": 1.06,
+        "dx": -0.06,
+        "dy": -0.22,
+        "dw": 1.06,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6015:54767",
+        "name": "Kiến thức / Kỹ năng",
+        "role": "text",
+        "delta": 1.03,
+        "dx": 0,
+        "dy": 0,
+        "dw": 1.03,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6015:54907",
+        "name": "spacer",
+        "role": "container",
+        "delta": 1,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": -1,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6015:54908",
+        "name": "Footer · Phân trang",
+        "role": "container",
+        "delta": 1,
+        "dx": 0,
+        "dy": -1,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6015:54909",
+        "name": "Hiển thị 1–8 trong 10 câu hỏi",
+        "role": "text",
+        "delta": 1,
+        "dx": 0,
+        "dy": -1,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6015:54910",
+        "name": "Trang ‹",
+        "role": "icon",
+        "delta": 1,
+        "dx": 0,
+        "dy": -1,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6015:54912",
+        "name": "Trang 1",
+        "role": "container",
+        "delta": 1,
+        "dx": 0,
+        "dy": -1,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6015:54913",
+        "name": "1",
+        "role": "text",
+        "delta": 1,
+        "dx": 0,
+        "dy": -1,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6015:54914",
+        "name": "Trang 2",
+        "role": "container",
+        "delta": 1,
+        "dx": 0,
+        "dy": -1,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6015:54915",
+        "name": "2",
+        "role": "text",
+        "delta": 1,
+        "dx": 0,
+        "dy": -1,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6015:54922",
+        "name": "Trang ›",
+        "role": "icon",
+        "delta": 1,
+        "dx": 0,
+        "dy": -1,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6015:54749",
+        "name": "Atom/Input",
+        "role": "instance",
+        "delta": 0.41,
+        "dx": 0,
+        "dy": 0,
+        "dw": -0.41,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6015:54749;2808:42276",
+        "name": "Input",
+        "role": "container",
+        "delta": 0.41,
+        "dx": 0,
+        "dy": 0,
+        "dw": -0.41,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6015:54749;2808:42277",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.41,
+        "dx": 0,
+        "dy": 0,
+        "dw": -0.41,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6015:54749;2808:42278",
+        "name": "Tìm nội dung...",
+        "role": "text",
+        "delta": 0.41,
+        "dx": 0,
+        "dy": 0,
+        "dw": -0.41,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6015:54750",
+        "name": "DD/Molecule/Trigger",
+        "role": "instance",
+        "delta": 0.41,
+        "dx": -0.41,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6015:54750;2015:31179",
+        "name": "Content",
+        "role": "container",
+        "delta": 0.41,
+        "dx": -0.41,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6015:54750;2015:31180",
+        "name": "Value",
+        "role": "text",
+        "delta": 0.41,
+        "dx": -0.41,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6015:54750;2015:31183",
+        "name": "Chevron",
+        "role": "icon",
+        "delta": 0.41,
+        "dx": -0.41,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6015:54751",
+        "name": "DD/Molecule/Trigger",
+        "role": "instance",
+        "delta": 0.41,
+        "dx": -0.41,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6015:54751;2015:31179",
+        "name": "Content",
+        "role": "container",
+        "delta": 0.41,
+        "dx": -0.41,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      }
+    ],
+    "maxDelta": 1.22,
+    "over": []
+  },
+  "failures": [],
+  "url": "http://localhost:3000/bai-tap-ve-nha/preview-mobile-tren-trang-kiem-tra-dk",
+  "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
+  "consoleErrors": [],
+  "rootFound": true
+}

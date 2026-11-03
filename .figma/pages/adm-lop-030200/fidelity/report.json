@@ -12,37 +12,13 @@
   "pixels": {
     "width": 1440,
     "height": 1059,
-    "mismatched": 3740,
-    "percent": 0.245,
+    "mismatched": 3455,
+    "percent": 0.227,
     "shapePercent": 0.001,
-    "textPercent": 1.341,
+    "textPercent": 1.239,
     "sizeMismatch": false
   },
   "textNodes": [
-    {
-      "id": "I3497:64991;1391:14476",
-      "name": "80%",
-      "pixels": 74,
-      "percent": 26.4
-    },
-    {
-      "id": "I3497:64992;1308:6749",
-      "name": "100%",
-      "pixels": 83,
-      "percent": 24.7
-    },
-    {
-      "id": "I3497:65005;1308:6749",
-      "name": "100%",
-      "pixels": 83,
-      "percent": 24.7
-    },
-    {
-      "id": "I3497:65004;1308:6706",
-      "name": "0%",
-      "pixels": 45,
-      "percent": 23
-    },
     {
       "id": "3497:64878",
       "name": "ÔN TẬP: Giữa Kỳ 1",
@@ -108,6 +84,30 @@
       "name": "Badge",
       "pixels": 6,
       "percent": 3
+    },
+    {
+      "id": "3497:67274",
+      "name": "ÔN TẬP: Giữa Kỳ 1",
+      "pixels": 291,
+      "percent": 2.1
+    },
+    {
+      "id": "I4915:225203;4901:206600;2245:87908",
+      "name": "Label",
+      "pixels": 47,
+      "percent": 2
+    },
+    {
+      "id": "I3497:67327;2808:48145",
+      "name": "Nhãn trường",
+      "pixels": 20,
+      "percent": 1.9
+    },
+    {
+      "id": "I3497:67317;2808:48145",
+      "name": "Nhãn trường",
+      "pixels": 16,
+      "percent": 1.7
     }
   ],
   "regions": [
@@ -453,7 +453,7 @@
     "over": []
   },
   "failures": [],
-  "url": "http://localhost:3108/lop-hoc/bai-hoc/thong-tin",
+  "url": "http://localhost:3000/lop-hoc/bai-hoc/thong-tin",
   "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
   "consoleErrors": [],
   "rootFound": true

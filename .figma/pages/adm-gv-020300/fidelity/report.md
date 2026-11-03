@@ -1,6 +1,6 @@
 # Fidelity: ADM-GV-020300 — Chi tiết giáo viên / Lịch dạy
 
-- URL: `http://localhost:3108/chi-tiet-giao-vien/lich-day`
+- URL: `http://localhost:3000/chi-tiet-giao-vien/lich-day`
 - Verdict: **PASS**
 - Pixels outside text: **0.009%** differ (limit 0.5%); all pixels: 0.12%; inside text boxes: 0.689% (glyph rendering)
 - Boxes: 308/308 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 308, ≤1px: 308, ≤2px: 308, ≤4px: 308, >4px: 0

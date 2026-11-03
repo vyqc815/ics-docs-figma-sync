@@ -1,8 +1,8 @@
 # Fidelity: ADM-TK-010000-DK — Thống kê / Chỉ số
 
-- URL: `http://localhost:3108/thong-ke/chi-so-dk`
+- URL: `http://localhost:3000/thong-ke/chi-so-dk`
 - Verdict: **PASS**
-- Pixels outside text: **0.002%** differ (limit 0.5%); all pixels: 0.175%; inside text boxes: 1.293% (glyph rendering)
+- Pixels outside text: **0.002%** differ (limit 0.5%); all pixels: 0.154%; inside text boxes: 1.137% (glyph rendering)
 - Boxes: 246/246 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 244, ≤1px: 245, ≤2px: 245, ≤4px: 246, >4px: 0
 
 ## Pixel regions (largest first)
@@ -17,7 +17,6 @@
 | Text | Differing |
 | --- | --- |
 | Tổng quan (`4343:93117`) | 12.6% |
-| Label (`I4343:93053;2245:87864`) | 10.7% |
 | Tiêu đề (`I4343:93134;3004:47242`) | 5.4% |
 | Tiêu đề (`I4343:93136;3004:47242`) | 5.1% |
 | Tiêu đề (`I4343:93135;3004:47242`) | 5% |
@@ -31,6 +30,7 @@
 | Label (`I4343:93058;2245:87768`) | 2.2% |
 | Label (`I4343:93057;2245:87768`) | 1.9% |
 | Label (`I4343:93059;2245:87768`) | 1.8% |
+| Label (`I4343:93052;2245:87839`) | 1.6% |
 
 ## Largest box differences
 

@@ -1,6 +1,6 @@
 # Fidelity: ADM-LOP-040500 — Lớp học / Cài đặt / Lịch dạy
 
-- URL: `http://localhost:3108/lop-hoc/cai-dat/lich-day`
+- URL: `http://localhost:3000/lop-hoc/cai-dat/lich-day`
 - Verdict: **PASS**
 - Pixels outside text: **0.005%** differ (limit 0.5%); all pixels: 0.132%; inside text boxes: 0.928% (glyph rendering)
 - Boxes: 257/257 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 257, ≤1px: 257, ≤2px: 257, ≤4px: 257, >4px: 0

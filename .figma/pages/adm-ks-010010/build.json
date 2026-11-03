@@ -1,0 +1,27 @@
+{
+  "route": "/khao-sat/tao-khao-sat/cau-hoi-lua-chon",
+  "pageFile": "components/figma/adm-ks-010010/index.tsx",
+  "docFile": "docs/pages/khao-sat/tao-khao-sat/cau-hoi-lua-chon.md",
+  "sections": [
+    {
+      "nodeId": "4915:243354",
+      "component": "SidebarMenuAdmin5",
+      "file": "components/figma/shared/SidebarMenuAdmin5.tsx"
+    },
+    {
+      "nodeId": "4262:148660",
+      "component": "Header24",
+      "file": "components/figma/shared/Header24.tsx"
+    },
+    {
+      "nodeId": "4262:148709",
+      "component": "MaincontentTaoKhaoSat",
+      "file": "components/figma/adm-ks-010010/MaincontentTaoKhaoSat.tsx"
+    },
+    {
+      "nodeId": "5070:43519",
+      "component": "MenuThaoTacKhaoSatMo2",
+      "file": "components/figma/shared/MenuThaoTacKhaoSatMo2.tsx"
+    }
+  ]
+}

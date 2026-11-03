@@ -1,0 +1,22 @@
+{
+  "route": "/hoa-don/popup-ho-so-hoc-vien/lich-su-hoa-don",
+  "pageFile": "components/figma/adm-hd-010020/index.tsx",
+  "docFile": "docs/pages/hoa-don/popup-ho-so-hoc-vien/lich-su-hoa-don.md",
+  "sections": [
+    {
+      "nodeId": "2731:75566",
+      "component": "PopupHeader",
+      "file": "components/figma/shared/PopupHeader.tsx"
+    },
+    {
+      "nodeId": "2731:75575",
+      "component": "Body",
+      "file": "components/figma/adm-hd-010020/Body.tsx"
+    },
+    {
+      "nodeId": "3058:76272",
+      "component": "TooltipTrangThaiHover",
+      "file": "components/figma/adm-hd-010020/TooltipTrangThaiHover.tsx"
+    }
+  ]
+}

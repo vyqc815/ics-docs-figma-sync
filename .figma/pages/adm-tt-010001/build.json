@@ -1,0 +1,34 @@
+{
+  "route": "/tuong-tac/khong-co-du-lieu",
+  "pageFile": "components/figma/adm-tt-010001/index.tsx",
+  "docFile": "docs/pages/tuong-tac/khong-co-du-lieu.md",
+  "sections": [
+    {
+      "nodeId": "4273:155963",
+      "component": "Mainworkspace",
+      "file": "components/figma/adm-tt-010001/Mainworkspace.tsx"
+    },
+    {
+      "nodeId": "4273:156078",
+      "component": "Header43",
+      "file": "components/figma/shared/Header43.tsx"
+    },
+    {
+      "nodeId": "4915:252306",
+      "component": "SidebarMenuAdmin",
+      "file": "components/figma/adm-tt-010001/SidebarMenuAdmin.tsx"
+    }
+  ],
+  "idAlias": {
+    "4273:156078": "4273:155278",
+    "4273:156079": "4273:155279",
+    "4273:156126": "4273:155326",
+    "I4273:156126;2008:30986": "I4273:155326;2008:30986",
+    "I4273:156126;2008:31747": "I4273:155326;2008:31747",
+    "I4273:156126;2008:31748": "I4273:155326;2008:31748",
+    "I4273:156126;1391:17264": "I4273:155326;1391:17264",
+    "I4273:156126;1391:17266": "I4273:155326;1391:17266",
+    "I4273:156126;1391:17268": "I4273:155326;1391:17268",
+    "I4273:156126;1391:17270": "I4273:155326;1391:17270"
+  }
+}

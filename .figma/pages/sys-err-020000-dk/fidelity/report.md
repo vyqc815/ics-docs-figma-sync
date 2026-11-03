@@ -1,8 +1,8 @@
 # Fidelity: SYS-ERR-020000-DK — Lỗi 404 · Không tìm thấy trang
 
-- URL: `http://localhost:3108/loi-404-khong-tim-thay-trang-dk`
+- URL: `http://localhost:3000/loi-404-khong-tim-thay-trang-dk`
 - Verdict: **PASS**
-- Pixels outside text: **0.002%** differ (limit 0.5%); all pixels: 0.101%; inside text boxes: 1.234% (glyph rendering)
+- Pixels outside text: **0.002%** differ (limit 0.5%); all pixels: 0.073%; inside text boxes: 0.892% (glyph rendering)
 - Boxes: 75/75 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 75, ≤1px: 75, ≤2px: 75, ≤4px: 75, >4px: 0
 
 ## Pixel regions (largest first)
@@ -16,7 +16,6 @@
 
 | Text | Differing |
 | --- | --- |
-| Label (`I5789:161510;2245:87864`) | 13.5% |
 | Label (`I5789:161512;2245:87858`) | 2.5% |
 | Label (`I5789:161517;2245:87768`) | 2.4% |
 | Label (`I5789:161513;2245:87858`) | 1.8% |
@@ -30,6 +29,7 @@
 | Label (`I5789:161508;2245:87858`) | 1.1% |
 | Label (`I5789:161511;2245:87858`) | 1.1% |
 | Label (`I5789:161509;2245:87858`) | 1% |
+| Label (`I5789:161510;2245:87864`) | 0.8% |
 | Button (`I5789:161891;1048:1230`) | 0.8% |
 
 ## Largest box differences

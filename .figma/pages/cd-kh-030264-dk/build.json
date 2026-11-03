@@ -1,0 +1,29 @@
+{
+  "route": "/hoc-ky/bai-hoc/popup-chi-tiet-bai-hoc/tab-bug/da-giai-quyet-co-ket-qua-xu-ly-dk",
+  "pageFile": "components/figma/cd-kh-030264-dk/index.tsx",
+  "docFile": "docs/pages/hoc-ky/bai-hoc/popup-chi-tiet-bai-hoc/tab-bug/da-giai-quyet-co-ket-qua-xu-ly-dk.md",
+  "sections": [
+    {
+      "nodeId": "6015:65274",
+      "component": "PopupHeader11",
+      "file": "components/figma/shared/PopupHeader11.tsx"
+    },
+    {
+      "nodeId": "6015:65275",
+      "component": "Body",
+      "file": "components/figma/cd-kh-030264-dk/Body.tsx"
+    },
+    {
+      "nodeId": "6015:65318",
+      "component": "PopupFooter",
+      "file": "components/figma/cd-kh-030264-dk/PopupFooter.tsx"
+    }
+  ],
+  "idAlias": {
+    "6015:65274": "6015:64459",
+    "I6015:65274;2808:42158": "I6015:64459;2808:42158",
+    "I6015:65274;2808:42159": "I6015:64459;2808:42159",
+    "I6015:65274;2808:42162": "I6015:64459;2808:42162",
+    "I6015:65274;2808:42163": "I6015:64459;2808:42163"
+  }
+}

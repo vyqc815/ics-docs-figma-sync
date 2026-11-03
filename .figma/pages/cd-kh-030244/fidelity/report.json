@@ -1,0 +1,484 @@
+{
+  "pass": true,
+  "thresholds": {
+    "maxPixelDiffPercent": 0.5,
+    "maxBoxDelta": 1,
+    "maxTextBoxDelta": 2.5,
+    "colorThreshold": 0.1,
+    "aaRadius": 1,
+    "subpixel": true,
+    "maxTextNodeDiffPercent": 35
+  },
+  "pixels": {
+    "width": 960,
+    "height": 640,
+    "mismatched": 2615,
+    "percent": 0.426,
+    "shapePercent": 0.022,
+    "textPercent": 1.704,
+    "sizeMismatch": false
+  },
+  "textNodes": [
+    {
+      "id": "I7193:403632;2514:153342",
+      "name": "Description",
+      "pixels": 2078,
+      "percent": 10.2
+    },
+    {
+      "id": "7193:403763",
+      "name": "Đã chọn 4 mục ở 2 loại (Từ vựng 3 · Ngữ pháp 1) · lựa chọn được giữ khi đổi cụm / loại",
+      "pixels": 283,
+      "percent": 2
+    },
+    {
+      "id": "7193:403960",
+      "name": "Mục chưa hoàn chỉnh ở Kiến thức (S1): thiếu nghĩa, ví dụ — bổ sung ở S1 trước khi thêm",
+      "pixels": 96,
+      "percent": 1.3
+    },
+    {
+      "id": "7193:403855",
+      "name": "Từ vựng",
+      "pixels": 9,
+      "percent": 0.4
+    },
+    {
+      "id": "7193:403895",
+      "name": "Kiến thức · 02. Học tập",
+      "pixels": 5,
+      "percent": 0.2
+    },
+    {
+      "id": "I7193:403764;1048:1232",
+      "name": "Button",
+      "pixels": 1,
+      "percent": 0.1
+    },
+    {
+      "id": "I7193:403632;2514:153341",
+      "name": "Title",
+      "pixels": 6,
+      "percent": 0
+    },
+    {
+      "id": "7193:403852",
+      "name": "Loại kiến thức",
+      "pixels": 0,
+      "percent": 0
+    },
+    {
+      "id": "7193:403857",
+      "name": "3",
+      "pixels": 0,
+      "percent": 0
+    },
+    {
+      "id": "7193:403858",
+      "name": "124",
+      "pixels": 0,
+      "percent": 0
+    },
+    {
+      "id": "7193:403860",
+      "name": "Ngữ pháp",
+      "pixels": 0,
+      "percent": 0
+    },
+    {
+      "id": "7193:403862",
+      "name": "1",
+      "pixels": 0,
+      "percent": 0
+    },
+    {
+      "id": "7193:403863",
+      "name": "38",
+      "pixels": 0,
+      "percent": 0
+    },
+    {
+      "id": "7193:403865",
+      "name": "Mẫu câu",
+      "pixels": 0,
+      "percent": 0
+    },
+    {
+      "id": "7193:403866",
+      "name": "52",
+      "pixels": 0,
+      "percent": 0
+    }
+  ],
+  "regions": [
+    {
+      "x": 920,
+      "y": 472,
+      "width": 16,
+      "height": 40,
+      "pixels": 70,
+      "node": {
+        "id": "7193:403959",
+        "name": "Tooltip",
+        "role": "container"
+      }
+    },
+    {
+      "x": 480,
+      "y": 176,
+      "width": 16,
+      "height": 24,
+      "pixels": 30,
+      "node": {
+        "id": "7193:403905",
+        "name": "Checkbox",
+        "role": "instance"
+      }
+    },
+    {
+      "x": 472,
+      "y": 224,
+      "width": 24,
+      "height": 24,
+      "pixels": 19,
+      "node": {
+        "id": "7193:403911",
+        "name": "Checkbox",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 472,
+      "y": 280,
+      "width": 24,
+      "height": 16,
+      "pixels": 19,
+      "node": {
+        "id": "7193:403918",
+        "name": "Checkbox",
+        "role": "icon"
+      }
+    }
+  ],
+  "boxes": {
+    "measured": 111,
+    "missing": [],
+    "withinThreshold": 111,
+    "buckets": {
+      "≤0.5px": 109,
+      "≤1px": 109,
+      "≤2px": 111,
+      "≤4px": 111,
+      ">4px": 0
+    },
+    "worst": [
+      {
+        "id": "7193:403959",
+        "name": "Tooltip",
+        "role": "container",
+        "delta": 1.5,
+        "dx": 0,
+        "dy": 0,
+        "dw": 1.5,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "7193:403960",
+        "name": "Mục chưa hoàn chỉnh ở Kiến thức (S1): thiếu nghĩa, ví dụ — bổ sung ở S1 trước khi thêm",
+        "role": "text",
+        "delta": 1.5,
+        "dx": 0,
+        "dy": 0,
+        "dw": 1.5,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "7193:403852",
+        "name": "Loại kiến thức",
+        "role": "text",
+        "delta": 0.48,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.48,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "7193:403923",
+        "name": "xuéxí · học tập",
+        "role": "text",
+        "delta": 0.28,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.28,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "7193:403907",
+        "name": "Chọn tất cả",
+        "role": "text",
+        "delta": 0.27,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.27,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "7193:403908",
+        "name": "2/12 đã chọn",
+        "role": "text",
+        "delta": 0.27,
+        "dx": 0.27,
+        "dy": 0,
+        "dw": -0.27,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "7193:403958",
+        "name": "shū · sách",
+        "role": "text",
+        "delta": 0.02,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.02,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "7193:403631",
+        "name": "Popup · Thêm từ thư viện dữ liệu",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "7193:403632",
+        "name": "Popup/Header",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I7193:403632;2514:153340",
+        "name": "Tiêu đề",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I7193:403632;2711:67900",
+        "name": "Title Row",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I7193:403632;2514:153341",
+        "name": "Title",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I7193:403632;2514:153342",
+        "name": "Description",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "7193:403633",
+        "name": "Body",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "7193:403850",
+        "name": "3 cột · Loại | Cụm | Mục",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "7193:403851",
+        "name": "Cột · Loại kiến thức",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "7193:403853",
+        "name": "Tiêu đề cột",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "7193:403854",
+        "name": "Từ vựng",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "7193:403855",
+        "name": "Từ vựng",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "7193:403856",
+        "name": "Đã chọn",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "7193:403857",
+        "name": "3",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "7193:403858",
+        "name": "124",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "7193:403859",
+        "name": "Ngữ pháp",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "7193:403860",
+        "name": "Ngữ pháp",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "7193:403861",
+        "name": "Đã chọn",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      }
+    ],
+    "maxDelta": 1.5,
+    "over": []
+  },
+  "failures": [],
+  "url": "http://localhost:3000/hoc-ky/bai-hoc/popup-chi-tiet-bai-hoc/tab-kien-thuc/popup-them-kien-thuc",
+  "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
+  "consoleErrors": [],
+  "rootFound": true
+}

@@ -1,8 +1,8 @@
 # Fidelity: CD-DM-010000-DK — Quản lý danh mục
 
-- URL: `http://localhost:3108/quan-ly-danh-muc-dk`
+- URL: `http://localhost:3000/quan-ly-danh-muc-dk`
 - Verdict: **FAIL**
-- Pixels outside text: **0.775%** differ (limit 0.5%); all pixels: 1.905%; inside text boxes: 4.769% (glyph rendering)
+- Pixels outside text: **0.775%** differ (limit 0.5%); all pixels: 1.869%; inside text boxes: 4.616% (glyph rendering)
 - Boxes: 173/243 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 172, ≤1px: 172, ≤2px: 173, ≤4px: 173, >4px: 70
 
 ## Failures
@@ -57,7 +57,6 @@
 | ID (`I4056:145392;1994:25850`) | 26.8% |
 | ID (`I4056:145405;1994:25852`) | 23.5% |
 | ID (`I4056:145417;1994:25852`) | 23% |
-| Label (`I4056:145274;2245:87774`) | 16.6% |
 | Vô hiệu (`I4056:145411;1474:15129`) | 15.3% |
 | Vô hiệu (`I4056:145423;1474:15129`) | 15% |
 | Khoá Học Tổng Hợp A2 (`4056:145393`) | 13.8% |
@@ -65,6 +64,7 @@
 | Khóa Học Tổng Hợp B1 (`4056:145418`) | 10.6% |
 | Label (`I4056:145284;2245:87829`) | 8.6% |
 | Mô tả danh mục (`4056:145359`) | 7.2% |
+| Label (`I4056:145276;2245:87768`) | 6.6% |
 
 ## Largest box differences
 

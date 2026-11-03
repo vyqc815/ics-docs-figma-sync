@@ -1,8 +1,8 @@
 # Fidelity: ADM-GV-020200-DK — Chi tiết giáo viên / Danh sách lớp
 
-- URL: `http://localhost:3108/chi-tiet-giao-vien/danh-sach-lop-dk`
+- URL: `http://localhost:3000/chi-tiet-giao-vien/danh-sach-lop-dk`
 - Verdict: **PASS**
-- Pixels outside text: **0.005%** differ (limit 0.5%); all pixels: 0.248%; inside text boxes: 2.37% (glyph rendering)
+- Pixels outside text: **0.005%** differ (limit 0.5%); all pixels: 0.197%; inside text boxes: 1.877% (glyph rendering)
 - Boxes: 227/227 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 227, ≤1px: 227, ≤2px: 227, ≤4px: 227, >4px: 0
 
 ## Pixel regions (largest first)
@@ -20,11 +20,6 @@
 
 | Text | Differing |
 | --- | --- |
-| 0% (`I4056:124948;1308:6706`) | 26% |
-| 0% (`I4056:124987;1308:6706`) | 26% |
-| 80% (`I4056:124929;1391:14476`) | 23.6% |
-| 80% (`I4056:124968;1391:14476`) | 23.6% |
-| Label (`I4056:125068;2245:87864`) | 14.9% |
 | Nhập Môn Tiếng Trung (NEW - v202...) (`4056:124943`) | 5.8% |
 | Tiếng Trung Sơ Cấp 2 - HSK3 (NEW) (`4056:124924`) | 5.4% |
 | Nhập Môn Tiếng Trung (NEW - v202...) (`4056:124963`) | 5.3% |
@@ -35,6 +30,11 @@
 | 0/20 Buổi (`I4056:124925;1350:13181`) | 2.9% |
 | B (`I4056:124946;1308:10497`) | 2.5% |
 | Label (`I4056:125069;2245:87858`) | 2.5% |
+| Label (`I4056:125074;2245:87768`) | 2.4% |
+| Value (`I4056:124894;2015:36008`) | 1.9% |
+| 6/20 Buổi (`I4056:124944;1350:13172`) | 1.8% |
+| B (`I4056:124985;1308:10497`) | 1.8% |
+| Label (`I4056:125070;2245:87858`) | 1.8% |
 
 ## Largest box differences
 

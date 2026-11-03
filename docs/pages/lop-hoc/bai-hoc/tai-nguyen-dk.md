@@ -5,7 +5,7 @@
 > **Nguồn:** PLS-ICS T8/2026 ›             ├─ Bài học › ADM-LOP-030400-DK — Lớp học / Bài học / Tài nguyên (`4056:111695`, file `rRVs5HX0kIHffbS0V40djG`)  
 > **Route:** `/lop-hoc/bai-hoc/tai-nguyen-dk`  
 > **Khung thiết kế:** 1440 × 1280 px  
-> **Xuất lúc:** 2026-11-02T04:08:43.503Z  
+> **Xuất lúc:** 2026-11-03T03:27:34.103Z  
 > **Spec đầy đủ (giá trị chính xác từng node):** `../../../../.figma/pages/adm-lop-030400-dk/page-spec.json`
 
 ## 1. Tổng quan
@@ -27,18 +27,18 @@ Nền trang: `#121213` (bg/canvas).
 
 | Token | Biến CSS | Giá trị | Trỏ tới | Bộ / mode |
 | --- | --- | --- | --- | --- |
-| `bg/brand-tint` | `--bg-brand-tint` | `#fff7ed` | color/extended/fff7ed | Theme · Semantic / Light |
-| `bg/brand-tint-strong` | `--bg-brand-tint-strong` | `#ffedd5` | color/extended/ffedd5 | Theme · Semantic / Light |
-| `bg/canvas` | `--bg-canvas` | `#f8fafc` | color/extended/f8fafc | Theme · Semantic / Light |
-| `bg/strong` | `--bg-strong` | `#e2e8f0` | color/border/default | Theme · Semantic / Light |
-| `bg/subtle` | `--bg-subtle` | `#f1f5f9` | color/surface/input | Theme · Semantic / Light |
-| `bg/surface` | `--bg-surface` | `#ffffff` | color/neutral/white | Theme · Semantic / Light |
-| `border/default` | `--border-default` | `#e2e8f0` | color/border/default | Theme · Semantic / Light |
-| `border/strong` | `--border-strong` | `#cbd5e1` | color/extended/cbd5e1 | Theme · Semantic / Light |
-| `brand/primary` | `--brand-primary` | `#e65100` | color/brand/orange | Theme · Semantic / Light |
-| `chrome/bg` | `--chrome-bg` | `#ff7700` | color/extended/ff7700 | Theme · Semantic / Light |
-| `chrome/ring-dark` | `--chrome-ring-dark` | `#ef6700` | color/extended/ef6700 | Theme · Semantic / Light |
-| `chrome/ring-light` | `--chrome-ring-light` | `#ff9537` | color/extended/ff9537 | Theme · Semantic / Light |
+| `bg/brand-tint` | `--bg-brand-tint` | `#102218` |  | Theme · Semantic / Dark · Minimal |
+| `bg/brand-tint-strong` | `--bg-brand-tint-strong` | `#153020` |  | Theme · Semantic / Dark · Minimal |
+| `bg/canvas` | `--bg-canvas` | `#121213` |  | Theme · Semantic / Dark · Minimal |
+| `bg/strong` | `--bg-strong` | `#2a2a2e` |  | Theme · Semantic / Dark · Minimal |
+| `bg/subtle` | `--bg-subtle` | `#202023` |  | Theme · Semantic / Dark · Minimal |
+| `bg/surface` | `--bg-surface` | `#18181a` |  | Theme · Semantic / Dark · Minimal |
+| `border/default` | `--border-default` | `#27272a` |  | Theme · Semantic / Dark · Minimal |
+| `border/strong` | `--border-strong` | `#3f3f46` |  | Theme · Semantic / Dark · Minimal |
+| `brand/primary` | `--brand-primary` | `#16a34a` |  | Theme · Semantic / Dark · Minimal |
+| `chrome/bg` | `--chrome-bg` | `#0b0b0c` |  | Theme · Semantic / Dark · Minimal |
+| `chrome/ring-dark` | `--chrome-ring-dark` | `#0b0b0c` |  | Theme · Semantic / Dark · Minimal |
+| `chrome/ring-light` | `--chrome-ring-light` | `#0b0b0c` |  | Theme · Semantic / Dark · Minimal |
 | `color/border/button` | `--color-border-button` | `#cbd5e1` | color/extended/cbd5e1 | Color Tokens / Light |
 | `color/border/default` | `--color-border-default` | `#e2e8f0` |  | Color Tokens / Light |
 | `color/brand/orange` | `--color-brand-orange` | `#e65100` |  | Color Tokens / Light |
@@ -72,9 +72,10 @@ Nền trang: `#121213` (bg/canvas).
 | `spacing/24` | `--spacing-24` | `24` |  | Number Tokens / Mode 1 |
 | `spacing/4` | `--spacing-4` | `4` |  | Number Tokens / Mode 1 |
 | `spacing/8` | `--spacing-8` | `8` |  | Number Tokens / Mode 1 |
-| `text/primary` | `--text-primary` | `#334155` | color/text/primary | Theme · Semantic / Light |
-| `text/secondary` | `--text-secondary` | `#64748b` | color/text/secondary | Theme · Semantic / Light |
-| `theme/is-dark` | `--theme-is-dark` | `false` |  | Theme · Semantic / Light |
+| `text/on-brand` | `--text-on-brand` | `#ffffff` |  | Theme · Semantic / Dark · Minimal |
+| `text/primary` | `--text-primary` | `#ededef` |  | Theme · Semantic / Dark · Minimal |
+| `text/secondary` | `--text-secondary` | `#a1a1aa` |  | Theme · Semantic / Dark · Minimal |
+| `theme/is-dark` | `--theme-is-dark` | `true` |  | Theme · Semantic / Dark · Minimal |
 
 **Style Figma đang dùng:**
 
@@ -110,7 +111,7 @@ Nền trang: `#121213` (bg/canvas).
 | `Body/17/Bold` | Afacad | 17 / 21px | 700 | 0 | #a1a1aa | 4 | “(3)” |
 | `Body/17/Bold` | Afacad | 17 / 21px | 700 | 0 | #ededef (color/text/primary) | 4 | “Video bài giảng - Bài 1” |
 | — | Afacad | 16 / 20px | 500 · case title | 0 | #a1a1aa (text/secondary) | 4 | “Buổi Học” |
-| — | Afacad | 16 / 20px | 700 · case title | 0 | #ffffff | 1 | “DN0091 - 132” |
+| — | Afacad | 16 / 20px | 700 · case title | 0 | #ffffff (text/on-brand) | 1 | “DN0091 - 132” |
 | `Body/16/Bold` | Afacad | 16 / 20px | 700 | 0 | #16a34a (brand/primary) | 1 | “Tài Nguyên” |
 | `Body/15/Regular` | Afacad | 15 / 19px | 400 | 0 | #71717a (color/text/muted) | 10 | “MP4” |
 | `Body/15/Bold` | Afacad | 15 / 19px | 700 | 0 | #334155 (color/text/primary) | 8 | “Huong-dan-hoc-vien.mp4” |
@@ -250,7 +251,7 @@ Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí ·
                       - [khối] **Container** — 392×19 [FILL×HUG] · @ (0, 48) flow · column `4560:31759`
                         - [chữ] “Cập nhật: 12.09.2025” — 392×19 [FILL×HUG] · @ (0, 0) flow · Afacad 15/19px 400 #71717a (color/text/muted) `4560:31760`
                   - [icon] **Button - Thao tác:margin** — 36×24 · @ (558, 49) abs · file /figma/assets/4f2173310133.svg `4560:31761`
-                  - [khối] **Thumbnail minh họa** — 176×96 · @ (13, 13) abs · row space-between pad 8 8 8 8 align CENTER · bg #fffbeb (color/extended/fffbeb) · radius 8px · border 1px solid #27272a · clip `4560:31764`
+                  - [khối] **Thumbnail minh họa** — 176×96 · @ (13, 13) abs · row space-between pad 8 8 8 8 align CENTER · bg #fffbeb (color/extended/fffbeb) · radius 8px · border 1px solid #27272a (border/default) · clip `4560:31764`
                     - [khối] **Container** — 70×69 [HUG×HUG] · @ (9, 13.5) flow · column gap 2 `4560:31765`
                       - [khối] **Container** — 70×19 [FILL×HUG] · @ (0, 0) flow · column `4560:31766`
                         - [chữ] “Bài 1” — 30×19 [HUG×HUG] · @ (0, 0) flow · Afacad 15/19px 700 #334155 (color/text/primary) · no-wrap `4560:31767`
@@ -271,7 +272,7 @@ Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí ·
                       - [khối] **Container** — 392×19 [FILL×HUG] · @ (0, 48) flow · column `4560:31782`
                         - [chữ] “Cập nhật: 11.09.2025” — 392×19 [FILL×HUG] · @ (0, 0) flow · Afacad 15/19px 400 #71717a (color/text/muted) `4560:31783`
                   - [icon] **Button - Thao tác:margin** — 36×24 · @ (558, 49) abs · file /figma/assets/4f2173310133.svg `4560:31784`
-                  - [khối] **Thumbnail chữ 你 có nút play** — 176×96 · @ (13, 13) abs · row justify CENTER align CENTER · bg #faf8f5 (color/extended/faf8f5) · radius 8px · border 1px solid #27272a `4560:31787`
+                  - [khối] **Thumbnail chữ 你 có nút play** — 176×96 · @ (13, 13) abs · row justify CENTER align CENTER · bg #faf8f5 (color/extended/faf8f5) · radius 8px · border 1px solid #27272a (border/default) `4560:31787`
                     - [khối] **Kẻ ô viết chữ Hán Mễ tự cách** — 174×94 · @ (1, 1) abs · grid · opacity 0.15 `4560:31788`
                       - [hình] **Border** — 87×47 · @ (0, 0) abs · shadow inset 0 -1px 0 0 #ed4038, inset -1px 0 0 0 #ed4038 `4560:31789`
                       - [hình] **HorizontalBorder** — 87×47 · @ (87, 0) abs · shadow inset 0 -1px 0 0 #ed4038 `4560:31790`
@@ -304,29 +305,29 @@ Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí ·
                       - [hình] **Background** — 32×32 · @ (3.5, 32) flow · bg #7dd3fc (color/extended/7dd3fc) · radius 9999px `4560:31813`
                   - [khối] **Frame 427321972** — 314×96 · @ (0, 0) abs · bg `linear-gradient(0deg, rgba(0, 0, 0, 0.4) 0%, rgba(37, 39, 43, 0.4) 100%)` `4560:31814`
                     - [chữ] “Ảnh: Chào Hỏi” — 74×16 · @ (10.63, 73.5) abs · Afacad 13/16px 700 #ffffff (color/neutral/white) · no-wrap `4560:31815`
-                - [khối] **Card Ảnh 2: Thanh điệu mā má mǎ m** — 314×96 · @ (326, 0) flow · bg #ffffff (color/neutral/white) · radius 12px · border 1px solid #27272a · clip `4560:31816`
-                  - [khối] **Container** — 330.5×48 · @ (322, 24) abs · row gap 8 justify CENTER · rotate -180° `4560:31817`
+                - [khối] **Card Ảnh 2: Thanh điệu mā má mǎ m** — 314×96 · @ (326, 0) flow · bg #ffffff (color/neutral/white) · radius 12px · border 1px solid #27272a (border/default) · clip `4560:31816`
+                  - [khối] **Container** — 330.5×48 · @ (-8.5, 24) abs · row gap 8 justify CENTER `4560:31817`
                     - [khối] **Container** — 76.63×51 [FILL×HUG] · @ (0, 0) flow · column gap 8 pad 4 0 0 0 align CENTER `4560:31818`
-                      - [chữ] “mā” — 19×19 [HUG×HUG] · @ (-28.81, 4) flow · Afacad 15/19px 700 #334155 (color/text/primary) · text-align center · no-wrap `4560:31819`
-                      - [icon] **Container** — 20×20 · @ (-48.31, 31) flow · file /figma/assets/5d550a8150d0.svg `4560:31820`
-                    - [khối] **Container** — 76.63×51 [FILL×HUG] · @ (-84.62, 0) flow · column gap 8 pad 4 0 0 0 align CENTER `4560:31823`
-                      - [chữ] “má” — 19×19 [HUG×HUG] · @ (-28.81, 4) flow · Afacad 15/19px 700 #334155 (color/text/primary) · text-align center · no-wrap `4560:31824`
-                      - [icon] **Container** — 20×20 · @ (-48.31, 31) flow · file /figma/assets/5d550a8150d0.svg `4560:31825`
-                    - [khối] **Container** — 76.63×51 [FILL×HUG] · @ (-169.25, 0) flow · column gap 8 pad 4 0 0 0 align CENTER `4560:31828`
-                      - [chữ] “mǎ” — 19×19 [HUG×HUG] · @ (-28.81, 4) flow · Afacad 15/19px 700 #334155 (color/text/primary) · text-align center · no-wrap `4560:31829`
-                      - [icon] **Container** — 20×20 · @ (-48.31, 31) flow · file /figma/assets/5d550a8150d0.svg `4560:31830`
-                    - [khối] **Container** — 76.63×51 [FILL×HUG] · @ (-253.87, 0) flow · column gap 8 pad 4 0 0 0 align CENTER `4560:31833`
-                      - [chữ] “mà” — 19×19 [HUG×HUG] · @ (-28.81, 4) flow · Afacad 15/19px 700 #334155 (color/text/primary) · text-align center · no-wrap `4560:31834`
-                      - [icon] **Container** — 20×20 · @ (-48.31, 31) flow · file /figma/assets/5d550a8150d0.svg `4560:31835`
+                      - [chữ] “mā” — 19×19 [HUG×HUG] · @ (28.81, 4) flow · Afacad 15/19px 700 #334155 (color/text/primary) · text-align center · no-wrap `4560:31819`
+                      - [icon] **Container** — 20×20 · @ (28.31, 31) flow · file /figma/assets/5d550a8150d0.svg `4560:31820`
+                    - [khối] **Container** — 76.63×51 [FILL×HUG] · @ (84.63, 0) flow · column gap 8 pad 4 0 0 0 align CENTER `4560:31823`
+                      - [chữ] “má” — 19×19 [HUG×HUG] · @ (28.81, 4) flow · Afacad 15/19px 700 #334155 (color/text/primary) · text-align center · no-wrap `4560:31824`
+                      - [icon] **Container** — 20×20 · @ (28.31, 31) flow · file /figma/assets/5d550a8150d0.svg `4560:31825`
+                    - [khối] **Container** — 76.63×51 [FILL×HUG] · @ (169.25, 0) flow · column gap 8 pad 4 0 0 0 align CENTER `4560:31828`
+                      - [chữ] “mǎ” — 19×19 [HUG×HUG] · @ (28.81, 4) flow · Afacad 15/19px 700 #334155 (color/text/primary) · text-align center · no-wrap `4560:31829`
+                      - [icon] **Container** — 20×20 · @ (28.31, 31) flow · file /figma/assets/5d550a8150d0.svg `4560:31830`
+                    - [khối] **Container** — 76.63×51 [FILL×HUG] · @ (253.88, 0) flow · column gap 8 pad 4 0 0 0 align CENTER `4560:31833`
+                      - [chữ] “mà” — 19×19 [HUG×HUG] · @ (28.81, 4) flow · Afacad 15/19px 700 #334155 (color/text/primary) · text-align center · no-wrap `4560:31834`
+                      - [icon] **Container** — 20×20 · @ (28.31, 31) flow · file /figma/assets/5d550a8150d0.svg `4560:31835`
                   - [khối] **Frame 427321972** — 314×96 · @ (0, 0) abs · bg `linear-gradient(0deg, rgba(0, 0, 0, 0.4) 0%, rgba(37, 39, 43, 0.4) 100%)` `4560:31838`
                     - [chữ] “Ảnh :Thanh điệu mā má mǎ mà” — 160×16 · @ (10.63, 73.5) abs · Afacad 13/16px 700 #ffffff (color/neutral/white) · no-wrap `4560:31839`
-                - [khối] **Card Ảnh 4: Phong cảnh Cung điện hoa đào** — 314×96 · @ (0, 108) flow · radius 12px · border 1px solid #27272a · clip `4560:31840`
-                  - [khối] **Giả lập kiến trúc mái đình cổ trang và cành đào** — 314×94 · @ (314, 1) abs · row justify CENTER align CENTER · rotate -180° · trống `4560:31841`
+                - [khối] **Card Ảnh 4: Phong cảnh Cung điện hoa đào** — 314×96 · @ (0, 108) flow · radius 12px · border 1px solid #27272a (border/default) · clip `4560:31840`
+                  - [khối] **Giả lập kiến trúc mái đình cổ trang và cành đào** — 314×94 · @ (0, 1) abs · row justify CENTER align CENTER · trống `4560:31841`
                   - [icon] **Thumbnail mặc định / Icon** — 32×32 · @ (140.17, 32) abs · file /figma/assets/a4c4901e0556.svg `4560:31842`
                   - [khối] **Frame 427321972** — 314×96 · @ (0, 0) abs · bg `linear-gradient(0deg, rgba(0, 0, 0, 0.4) 0%, rgba(37, 39, 43, 0.4) 100%)` `4560:31845`
                     - [chữ] “Ảnh: Phong cảnh Cung điện hoa đào” — 187×16 · @ (10.63, 73.5) abs · Afacad 13/16px 700 #ffffff (color/neutral/white) · no-wrap `4560:31846`
-                - [khối] **Card Ảnh 4: Phong cảnh Cung điện hoa đào** — 314×96 · @ (326, 108) flow · radius 12px · border 1px solid #27272a · clip `4560:31847`
-                  - [khối] **Giả lập kiến trúc mái đình cổ trang và cành đào** — 314×94 · @ (314, 1) abs · row justify CENTER align CENTER · rotate -180° · trống `4560:31848`
+                - [khối] **Card Ảnh 4: Phong cảnh Cung điện hoa đào** — 314×96 · @ (326, 108) flow · radius 12px · border 1px solid #27272a (border/default) · clip `4560:31847`
+                  - [khối] **Giả lập kiến trúc mái đình cổ trang và cành đào** — 314×94 · @ (0, 1) abs · row justify CENTER align CENTER · trống `4560:31848`
                   - [icon] **Thumbnail mặc định / Icon** — 32×32 · @ (140.17, 32) abs · file /figma/assets/a4c4901e0556.svg `4560:31849`
                   - [khối] **Frame 427321972** — 314×96 · @ (0, 0) abs · bg `linear-gradient(0deg, rgba(0, 0, 0, 0.4) 0%, rgba(37, 39, 43, 0.4) 100%)` `4560:31852`
                     - [chữ] “Ảnh: Bảng chữ cái Hán ngữ Pinyin” — 173×16 · @ (10.63, 73.5) abs · Afacad 13/16px 700 #ffffff (color/neutral/white) · no-wrap `4560:31853`
@@ -482,7 +483,7 @@ Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí ·
         - [khối] **Frame 1171274929** — 192×28 [FILL×HUG] · @ (0, 0) flow · row gap 8 align CENTER `4056:111905`
           - [icon] **Button** — 28×28 · @ (0, 0) flow · file /figma/assets/5fbc0a65741f.svg `4056:111906`
           - [khối] **Button** — 106×28 [HUG×FIXED] · @ (36, 0) flow · row pad 0 8 0 8 justify CENTER align CENTER · bg #18181a (bg/surface) · radius 6px `4056:111909`
-            - [chữ] “DN0091 - 132” — 90×20 [HUG×HUG] · @ (8, 4) flow · Afacad 16/20px 700 #ffffff case title · no-wrap `4056:111910`
+            - [chữ] “DN0091 - 132” — 90×20 [HUG×HUG] · @ (8, 4) flow · Afacad 16/20px 700 #ffffff (text/on-brand) case title · no-wrap `4056:111910`
         - [instance] **Card Menu v2 (Test)** ⟨Card Menu v2 (Test): Icon=458:1148, Label=Tổng quan, Type=Menu phụ, State=Default, Expanded=No⟩ — 192×40 [FILL×HUG] · @ (0, 36) flow · row gap 8 pad 8 4 8 8 align CENTER · radius 8px `4056:111911`
           - [icon] **Icon** ⟨ICON MENU: ICON MENU=Tổng quan⟩ — 24×24 · @ (8, 8) flow · file /figma/assets/26bc8994d31a.svg `I4056:111911;2245:87904`
           - [chữ] “Tổng quan” — 148×14 [FILL×HUG] · @ (40, 13) flow · Unbounded 11/14px 600 #ffffff (color/neutral/white) case title `I4056:111911;2245:87908`
@@ -760,21 +761,6 @@ Không có.
 Những chỗ CSS không thể tái hiện y hệt Figma (đã dùng cách gần nhất):
 
 - `GRID_LAYOUT` — **Kẻ ô viết chữ Hán Mễ tự cách** (`4560:31788`): Figma grid layout is exported with absolutely positioned children.
-- `FLIPPED` — **Container** (`4560:31817`): Flipped (mirrored) layer: add scaleX(-1)/scaleY(-1) manually.
-- `FLIPPED` — **Container** (`4560:31818`): Flipped (mirrored) layer: add scaleX(-1)/scaleY(-1) manually.
-- `ROTATED_PARENT` — **Container** (`4560:31818`): Parent is rotated: child offsets are in canvas axes.
-- `FLIPPED` — **mā** (`4560:31819`): Flipped (mirrored) layer: add scaleX(-1)/scaleY(-1) manually.
-- `FLIPPED` — **Container** (`4560:31823`): Flipped (mirrored) layer: add scaleX(-1)/scaleY(-1) manually.
-- `ROTATED_PARENT` — **Container** (`4560:31823`): Parent is rotated: child offsets are in canvas axes.
-- `FLIPPED` — **má** (`4560:31824`): Flipped (mirrored) layer: add scaleX(-1)/scaleY(-1) manually.
-- `FLIPPED` — **Container** (`4560:31828`): Flipped (mirrored) layer: add scaleX(-1)/scaleY(-1) manually.
-- `ROTATED_PARENT` — **Container** (`4560:31828`): Parent is rotated: child offsets are in canvas axes.
-- `FLIPPED` — **mǎ** (`4560:31829`): Flipped (mirrored) layer: add scaleX(-1)/scaleY(-1) manually.
-- `FLIPPED` — **Container** (`4560:31833`): Flipped (mirrored) layer: add scaleX(-1)/scaleY(-1) manually.
-- `ROTATED_PARENT` — **Container** (`4560:31833`): Parent is rotated: child offsets are in canvas axes.
-- `FLIPPED` — **mà** (`4560:31834`): Flipped (mirrored) layer: add scaleX(-1)/scaleY(-1) manually.
-- `FLIPPED` — **Giả lập kiến trúc mái đình cổ trang và cành đào** (`4560:31841`): Flipped (mirrored) layer: add scaleX(-1)/scaleY(-1) manually.
-- `FLIPPED` — **Giả lập kiến trúc mái đình cổ trang và cành đào** (`4560:31848`): Flipped (mirrored) layer: add scaleX(-1)/scaleY(-1) manually.
 - `CORNER_SMOOTHING` — **AVATAR + Name** (`4056:111744`): Corner smoothing 50% (squircle) is drawn as a plain radius.
 - `CORNER_SMOOTHING` — **AVATAR + Name** (`4056:111755`): Corner smoothing 50% (squircle) is drawn as a plain radius.
 

@@ -1,8 +1,8 @@
 # Fidelity: ADM-LOP-020300-DK — Chi tiết lớp học / Bài tập về nhà
 
-- URL: `http://localhost:3108/chi-tiet-lop-hoc/bai-tap-ve-nha-dk`
+- URL: `http://localhost:3000/chi-tiet-lop-hoc/bai-tap-ve-nha-dk`
 - Verdict: **PASS**
-- Pixels outside text: **0.001%** differ (limit 0.5%); all pixels: 0.433%; inside text boxes: 2.199% (glyph rendering)
+- Pixels outside text: **0.001%** differ (limit 0.5%); all pixels: 0.356%; inside text boxes: 1.806% (glyph rendering)
 - Boxes: 353/353 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 351, ≤1px: 351, ≤2px: 353, ≤4px: 353, >4px: 0
 
 ## Pixel regions (largest first)
@@ -15,21 +15,21 @@
 
 | Text | Differing |
 | --- | --- |
-| Label (`I4056:112482;2245:87914`) | 31.8% |
-| 22/24 (`I4056:112343;1308:6798`) | 20.8% |
-| 22/24 (`I4056:112353;1308:6798`) | 20.8% |
-| 22/24 (`I4056:112363;1308:6798`) | 20.8% |
-| 100% (`I4056:112344;1308:6749`) | 19.9% |
-| 100% (`I4056:112354;1308:6749`) | 19.9% |
-| 100% (`I4056:112364;1308:6749`) | 19.9% |
 | Tổng Quan (`4056:112214`) | 18.2% |
 | Ôn tập kiến thức HSK1 (1) (`4056:112227`) | 16.9% |
+| Label (`I4056:112482;2245:87914`) | 11.4% |
 | Label (`I4056:112480;2245:87908`) | 8.6% |
 | Tên (`I4056:112270;3138:130001`) | 5.3% |
 | 00:14:01 (`4056:112246`) | 5.1% |
 | 00:14:01 (`4056:112259`) | 5.1% |
 | 00:14:01 (`4056:112272`) | 5.1% |
 | 00:14:01 (`4056:112294`) | 5.1% |
+| 00:14:01 (`4056:112307`) | 5.1% |
+| 00:14:01 (`4056:112320`) | 5.1% |
+| Tên (`I4056:112305;3138:130001`) | 4.8% |
+| Label (`I4056:112483;2245:87908`) | 4.3% |
+| ÔN TẬP: Giữa Kỳ 1 (`4056:112341`) | 3.9% |
+| ÔN TẬP: Giữa Kỳ 1 (`4056:112361`) | 3.9% |
 
 ## Largest box differences
 

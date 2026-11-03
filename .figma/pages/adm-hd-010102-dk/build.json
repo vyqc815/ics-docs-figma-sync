@@ -1,0 +1,42 @@
+{
+  "route": "/hoa-don/danh-sach-hoa-don/dropdown-nhan-tien-thoi-gian-tag-menu-hanh-dong-dk",
+  "pageFile": "components/figma/adm-hd-010102-dk/index.tsx",
+  "docFile": "docs/pages/hoa-don/danh-sach-hoa-don/dropdown-nhan-tien-thoi-gian-tag-menu-hanh-dong-dk.md",
+  "sections": [
+    {
+      "nodeId": "4056:131944",
+      "component": "Header13",
+      "file": "components/figma/shared/Header13.tsx"
+    },
+    {
+      "nodeId": "4101:134089",
+      "component": "Sidebar3",
+      "file": "components/figma/shared/Sidebar3.tsx"
+    },
+    {
+      "nodeId": "4056:132077",
+      "component": "Maincontent",
+      "file": "components/figma/adm-hd-010102-dk/Maincontent.tsx"
+    },
+    {
+      "nodeId": "4056:132525",
+      "component": "DropdownLocNhanTien",
+      "file": "components/figma/adm-hd-010102-dk/DropdownLocNhanTien.tsx"
+    },
+    {
+      "nodeId": "4056:132526",
+      "component": "DropdownLocThoiGian",
+      "file": "components/figma/adm-hd-010102-dk/DropdownLocThoiGian.tsx"
+    },
+    {
+      "nodeId": "4056:132527",
+      "component": "DropdownLocTag",
+      "file": "components/figma/adm-hd-010102-dk/DropdownLocTag.tsx"
+    },
+    {
+      "nodeId": "4056:132528",
+      "component": "DropdownDongMenuHanhDong",
+      "file": "components/figma/adm-hd-010102-dk/DropdownDongMenuHanhDong.tsx"
+    }
+  ]
+}

@@ -5,7 +5,7 @@
 > **Nguồn:** PLS-ICS T8/2026 ›         ├─ GIÁO VIÊN › ADM-GV-020300 — Chi tiết giáo viên / Lịch dạy (`2008:48438`, file `rRVs5HX0kIHffbS0V40djG`)  
 > **Route:** `/chi-tiet-giao-vien/lich-day`  
 > **Khung thiết kế:** 1440 × 810 px (cắt phần tràn ra ngoài khung)  
-> **Xuất lúc:** 2026-11-02T03:26:19.264Z  
+> **Xuất lúc:** 2026-11-03T03:18:17.494Z  
 > **Spec đầy đủ (giá trị chính xác từng node):** `../../../.figma/pages/adm-gv-020300/page-spec.json`
 
 ## 1. Tổng quan
@@ -26,14 +26,18 @@ Nền trang: `#f8fafc`.
 
 | Token | Biến CSS | Giá trị | Trỏ tới | Bộ / mode |
 | --- | --- | --- | --- | --- |
+| `bg/surface` | `--bg-surface` | `#ffffff` | color/neutral/white | Theme · Semantic / Light |
 | `bố cục/khoảng cách khối` | `--bo-cuc-khoang-cach-khoi` | `16` | spacing/16 | Number Tokens / Mode 1 |
 | `bố cục/lề hai bên` | `--bo-cuc-le-hai-ben` | `16` | spacing/16 | Number Tokens / Mode 1 |
 | `bố cục/lề trên dưới` | `--bo-cuc-le-tren-duoi` | `24` | spacing/24 | Number Tokens / Mode 1 |
+| `border/default` | `--border-default` | `#e2e8f0` | color/border/default | Theme · Semantic / Light |
+| `brand/primary` | `--brand-primary` | `#e65100` | color/brand/orange | Theme · Semantic / Light |
 | `color/border/default` | `--color-border-default` | `#e2e8f0` |  | Color Tokens / Light |
 | `color/brand/orange` | `--color-brand-orange` | `#e65100` |  | Color Tokens / Light |
 | `color/extended/cbd5e1` | `--color-extended-cbd5e1` | `#cbd5e1` |  | Color Tokens / Light |
 | `color/extended/fed7aa` | `--color-extended-fed7aa` | `#fed7aa` |  | Color Tokens / Light |
 | `color/extended/fff5ec` | `--color-extended-fff5ec` | `#fff5ec` |  | Color Tokens / Light |
+| `color/neutral/700` | `--color-neutral-700` | `#3d3d3d` |  | Color Tokens / Light |
 | `color/neutral/white` | `--color-neutral-white` | `#ffffff` |  | Color Tokens / Light |
 | `color/text/primary` | `--color-text-primary` | `#334155` |  | Color Tokens / Light |
 | `color/text/secondary` | `--color-text-secondary` | `#64748b` |  | Color Tokens / Light |
@@ -44,6 +48,7 @@ Nền trang: `#f8fafc`.
 | `spacing/12` | `--spacing-12` | `12` |  | Number Tokens / Mode 1 |
 | `spacing/4` | `--spacing-4` | `4` |  | Number Tokens / Mode 1 |
 | `spacing/8` | `--spacing-8` | `8` |  | Number Tokens / Mode 1 |
+| `text/on-brand` | `--text-on-brand` | `#ffffff` | color/neutral/white | Theme · Semantic / Light |
 
 **Style Figma đang dùng:**
 
@@ -72,10 +77,10 @@ Nền trang: `#f8fafc`.
 
 | Style | Font family | Cỡ / line-height | Độ đậm | Letter-spacing | Màu | Số lần | Ví dụ |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| `Body/17/SemiBold` | Afacad | 17 / 21px | 600 | 0 | #e65100 | 7 | “T2 - 19:00AM” |
+| `Body/17/SemiBold` | Afacad | 17 / 21px | 600 | 0 | #e65100 (brand/primary) | 7 | “T2 - 19:00AM” |
 | `Body/17/Bold` | Afacad | 17 / 21px | 700 | 0 | #334155 (color/text/primary) | 6 | “31.01” |
 | — | Unbounded | 17 / 26px | 600 · case title | 0 | #334155 (color/text/primary) | 1 | “Chi tiết giáo viên” |
-| `Body/17/Bold` | Afacad | 17 / 21px | 700 | 0 | #ffffff | 1 | “02.01” |
+| `Body/17/Bold` | Afacad | 17 / 21px | 700 | 0 | #ffffff (text/on-brand) | 1 | “02.01” |
 | — | Afacad | 16 / 20px | 700 | 0 | #334155 (color/text/primary) | 10 | “DN 342” |
 | — | Afacad | 16 / 20px | 500 · case title | 0 | #64748b (color/text/secondary) | 5 | “Thông Tin Cá Nhân” |
 | `Body/16/Bold` | Afacad | 16 / 20px | 700 | 0 | #e65100 (color/brand/orange) | 1 | “Lịch Dạy” |
@@ -146,22 +151,22 @@ Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí ·
           - [icon] **Action Icon** ⟨Action Icon: Icon=Chevron Right, Size=18⟩ — 18×18 · @ (201, 7.5) flow · file /figma/assets/9a0d6a1b2e46.svg `I2008:48827;2008:48178`
         - [khối] **Frame 1171274927** — 884×33 [FIXED×HUG] · @ (242, 0) flow · row gap 12 wrap cross-gap 8 `2008:48828`
           - [khối] **Frame 427325131** — 116×33 [FIXED×HUG] · @ (0, 0) flow · row gap 8 pad 6 8 6 8 align CENTER · bg #fff9f1 · radius 6px · shadow inset 0 0 0 1px #ffedd5 `2008:48829`
-            - [chữ] “T2 - 19:00AM” — 100×21 [FIXED×HUG] · @ (8, 6) flow · Afacad 17/21px 600 #e65100 · text-align center `2008:48830`
+            - [chữ] “T2 - 19:00AM” — 100×21 [FIXED×HUG] · @ (8, 6) flow · Afacad 17/21px 600 #e65100 (brand/primary) · text-align center `2008:48830`
           - [khối] **Frame 427325132** — 116×33 [FIXED×HUG] · @ (128, 0) flow · row gap 8 pad 6 8 6 8 align CENTER · bg #fff9f1 · radius 6px · shadow inset 0 0 0 1px #ffedd5 `2008:48831`
-            - [chữ] “T3 - 19:00AM” — 100×21 [FIXED×HUG] · @ (8, 6) flow · Afacad 17/21px 600 #e65100 · text-align center `2008:48832`
+            - [chữ] “T3 - 19:00AM” — 100×21 [FIXED×HUG] · @ (8, 6) flow · Afacad 17/21px 600 #e65100 (brand/primary) · text-align center `2008:48832`
           - [khối] **Frame 427325133** — 116×33 [FIXED×HUG] · @ (256, 0) flow · row gap 8 pad 6 8 6 8 align CENTER · bg #fff9f1 · radius 6px · shadow inset 0 0 0 1px #e65100, 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `2008:48833`
-            - [chữ] “T4 - 19:00AM” — 100×21 [FIXED×HUG] · @ (8, 6) flow · Afacad 17/21px 600 #e65100 · text-align center `2008:48834`
+            - [chữ] “T4 - 19:00AM” — 100×21 [FIXED×HUG] · @ (8, 6) flow · Afacad 17/21px 600 #e65100 (brand/primary) · text-align center `2008:48834`
             - [icon] **Vector** — 17×17 · @ (108, 19) abs · file /figma/assets/510d707981fa.svg covers (-1, -1) 21×21 `2008:48835`
           - [khối] **Frame 427325134** — 116×33 [FIXED×HUG] · @ (384, 0) flow · row gap 8 pad 6 8 6 8 align CENTER · bg #fff9f1 · radius 6px · shadow inset 0 0 0 1px #ffedd5 `2008:48838`
-            - [chữ] “T5 - 19:00AM” — 100×21 [FIXED×HUG] · @ (8, 6) flow · Afacad 17/21px 600 #e65100 · text-align center `2008:48839`
+            - [chữ] “T5 - 19:00AM” — 100×21 [FIXED×HUG] · @ (8, 6) flow · Afacad 17/21px 600 #e65100 (brand/primary) · text-align center `2008:48839`
           - [khối] **Frame 427325135** — 116×33 [FIXED×HUG] · @ (512, 0) flow · row gap 8 pad 6 8 6 8 align CENTER · bg #fff9f1 · radius 6px · shadow inset 0 0 0 1px #ffedd5 `2008:48840`
-            - [chữ] “T6 - 19:00AM” — 100×21 [FIXED×HUG] · @ (8, 6) flow · Afacad 17/21px 600 #e65100 · text-align center `2008:48841`
+            - [chữ] “T6 - 19:00AM” — 100×21 [FIXED×HUG] · @ (8, 6) flow · Afacad 17/21px 600 #e65100 (brand/primary) · text-align center `2008:48841`
           - [khối] **Frame 427325136** — 116×33 [FIXED×HUG] · @ (640, 0) flow · row gap 8 pad 6 8 6 8 align CENTER · bg #fff9f1 · radius 6px · shadow inset 0 0 0 1px #ffedd5 `2008:48842`
-            - [chữ] “T7 - 19:00AM” — 100×21 [FIXED×HUG] · @ (8, 6) flow · Afacad 17/21px 600 #e65100 · text-align center `2008:48843`
+            - [chữ] “T7 - 19:00AM” — 100×21 [FIXED×HUG] · @ (8, 6) flow · Afacad 17/21px 600 #e65100 (brand/primary) · text-align center `2008:48843`
           - [khối] **Frame 427325137** — 116×33 [FIXED×HUG] · @ (768, 0) flow · row gap 8 pad 6 8 6 8 align CENTER · bg #fff9f1 · radius 6px · shadow inset 0 0 0 1px #ffedd5 `2008:48844`
-            - [chữ] “CN - 19:00AM” — 100×21 [FIXED×HUG] · @ (8, 6) flow · Afacad 17/21px 600 #e65100 · text-align center `2008:48845`
-      - [khối] **Frame 427325194** — 1174×353 [FILL×HUG] · @ (0, 94) flow · column gap 12 pad 0 0 16 0 align CENTER · bg #ffffff · radius 12px · shadow 1px 1px 6px 0 rgba(0, 0, 0, 0.15) `2008:48243`
-        - [khối] **Frame 427323674** — 1174×55 [FILL×HUG] · @ (0, 0) flow · column gap 8 pad 4 18 4 18 align CENTER · bg #ffffff · radius 12px 12px 0 0 · shadow inset 0 -1px 0 0 #e2e8f0 `2008:48244`
+            - [chữ] “CN - 19:00AM” — 100×21 [FIXED×HUG] · @ (8, 6) flow · Afacad 17/21px 600 #e65100 (brand/primary) · text-align center `2008:48845`
+      - [khối] **Frame 427325194** — 1174×353 [FILL×HUG] · @ (0, 94) flow · column gap 12 pad 0 0 16 0 align CENTER · bg #ffffff (bg/surface) · radius 12px · shadow 1px 1px 6px 0 rgba(0, 0, 0, 0.15) `2008:48243`
+        - [khối] **Frame 427323674** — 1174×55 [FILL×HUG] · @ (0, 0) flow · column gap 8 pad 4 18 4 18 align CENTER · bg #ffffff (bg/surface) · radius 12px 12px 0 0 · shadow inset 0 -1px 0 0 #e2e8f0 `2008:48244`
           - [khối] **Frame 427323673** — 1138×47 [FILL×FIXED] · @ (18, 4) flow · row gap 8 align CENTER `2008:48245`
             - [khối] **Frame 427323677** — 153×46 [FIXED×HUG] · @ (0, 0.5) flow · column align CENTER `2008:48246`
               - [chữ] “Thứ 2” — 153×19 [FILL×HUG] · @ (0, 0) flow · Afacad 15/19px 500 #64748b (color/text/secondary) · text-align center `2008:48247`
@@ -174,7 +179,7 @@ Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí ·
             - [khối] **Frame 427323679** — 153×46 [FIXED×HUG] · @ (322, 0.5) flow · column align CENTER `2008:48254`
               - [chữ] “Thứ 4” — 153×19 [FILL×HUG] · @ (0, 0) flow · Afacad 15/19px 500 #64748b (color/text/secondary) · text-align center `2008:48255`
               - [khối] **Frame 427323675** — 68×27 [HUG×HUG] · @ (42.5, 19) flow · row gap 10 pad 3 8 3 8 justify CENTER align CENTER · bg #e65100 (color/brand/orange) · radius 8px `2008:48256`
-                - [chữ] “02.01” — 52×21 [FIXED×HUG] · @ (8, 3) flow · Afacad 17/21px 700 #ffffff · text-align center `2008:48257`
+                - [chữ] “02.01” — 52×21 [FIXED×HUG] · @ (8, 3) flow · Afacad 17/21px 700 #ffffff (text/on-brand) · text-align center `2008:48257`
             - [khối] **Frame 427323680** — 153×46 [FIXED×HUG] · @ (483, 0.5) flow · column align CENTER `2008:48258`
               - [chữ] “Thứ 5” — 153×19 [FILL×HUG] · @ (0, 0) flow · Afacad 15/19px 500 #64748b (color/text/secondary) · text-align center `2008:48259`
               - [khối] **Frame 427323675** — 148×27 [FIXED×HUG] · @ (2.5, 19) flow · row gap 10 pad 3 8 3 8 justify CENTER align CENTER · radius 8px `2008:48260`

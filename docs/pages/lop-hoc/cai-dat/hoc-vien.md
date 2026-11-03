@@ -5,7 +5,7 @@
 > **Nguồn:** PLS-ICS T8/2026 ›             ├─ Cài đặt › ADM-LOP-040200 — Lớp học / Cài đặt / Học viên (`2224:21097`, file `rRVs5HX0kIHffbS0V40djG`)  
 > **Route:** `/lop-hoc/cai-dat/hoc-vien`  
 > **Khung thiết kế:** 1440 × 860 px  
-> **Xuất lúc:** 2026-11-02T03:37:11.132Z  
+> **Xuất lúc:** 2026-11-03T03:27:41.377Z  
 > **Spec đầy đủ (giá trị chính xác từng node):** `../../../../.figma/pages/adm-lop-040200/page-spec.json`
 
 ## 1. Tổng quan
@@ -26,6 +26,8 @@ Nền trang: `#f8fafc`.
 
 | Token | Biến CSS | Giá trị | Trỏ tới | Bộ / mode |
 | --- | --- | --- | --- | --- |
+| `bg/surface` | `--bg-surface` | `#ffffff` | color/neutral/white | Theme · Semantic / Light |
+| `border/subtle` | `--border-subtle` | `#f1f5f9` | color/border/subtle | Theme · Semantic / Light |
 | `color/border/button` | `--color-border-button` | `#cbd5e1` | color/extended/cbd5e1 | Color Tokens / Light |
 | `color/border/default` | `--color-border-default` | `#e2e8f0` |  | Color Tokens / Light |
 | `color/border/subtle` | `--color-border-subtle` | `#f1f5f9` |  | Color Tokens / Light |
@@ -35,6 +37,7 @@ Nền trang: `#f8fafc`.
 | `color/extended/f97316` | `--color-extended-f97316` | `#f97316` |  | Color Tokens / Light |
 | `color/extended/fed7aa` | `--color-extended-fed7aa` | `#fed7aa` |  | Color Tokens / Light |
 | `color/extended/fff5ec` | `--color-extended-fff5ec` | `#fff5ec` |  | Color Tokens / Light |
+| `color/extended/fffaf8` | `--color-extended-fffaf8` | `#fffaf8` |  | Color Tokens / Light |
 | `color/neutral/white` | `--color-neutral-white` | `#ffffff` |  | Color Tokens / Light |
 | `color/semantic/error-strong` | `--color-semantic-error-strong` | `#ff0000` |  | Color Tokens / Light |
 | `color/text/muted` | `--color-text-muted` | `#cbd5e1` |  | Color Tokens / Light |
@@ -108,7 +111,7 @@ Nền trang: `#f8fafc`.
 Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí · bố cục · style`. Dòng đầu tiên là chính frame trang (gốc). Tên layer nằm trong `**…**`, chữ hiển thị nằm trong `“…”`, giá trị CSS nguyên văn nằm trong backtick: dấu `·` hay `—` **bên trong** các cặp đó là nội dung, chỉ dấu ` · ` bên ngoài mới ngăn cách các trường. Toạ độ `@ (x, y)` tính từ góc trên-trái của layer cha; layer **flow** do auto layout của cha xếp, layer **abs** đặt tuyệt đối. Các layer cùng cấp được liệt kê **theo thứ tự vẽ của Figma: layer sau nằm đè lên layer trước**. ID ở cuối dòng là node ID trong Figma.
 
 - [trang] **ADM-LOP-040200 — Lớp học / Cài đặt / Học viên** — 1440×860 · bg #f8fafc `2224:21097`
-  - [khối] **MainContent** — 1140×796 · @ (300, 64) abs · column gap 12 pad 16 24 16 24 · bg #ffffff · clip `2224:21182`
+  - [khối] **MainContent** — 1140×796 · @ (300, 64) abs · column gap 12 pad 16 24 16 24 · bg #ffffff (bg/surface) · clip `2224:21182`
     - [khối] **Sub Navigation Tabs** — 765×36 [HUG×HUG] · @ (24, 16) flow · row gap 12 align CENTER `2224:21183`
       - [instance] **Atom/Side Tab** ⟨Atom/Side Tab: Có số đếm=false, State=Inactive, Icon=No, Kiểu=Gạch trái⟩ — 87×36 [HUG×HUG] · @ (0, 0) flow · row gap 8 pad 8 12 8 12 align CENTER · radius 6px `2224:21185`
         - [khối] **Container** — 63×20 [HUG×HUG] · @ (12, 8) flow · row `I2224:21185;2177:28927`
@@ -187,7 +190,7 @@ Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí ·
                   - [instance] **Atom/Chip** ⟨Atom/Chip: Icon=false, Name=Trần Minh Khoa, Time=4 ngày trước, Label=9.445.000đ, Type=0 đ⟩ — 84×24 · @ (950, 13.5) flow · row pad 2 4 2 4 justify CENTER align CENTER · bg #f1f5f9 · radius 6px · shadow inset 0 0 0 1px #ffffff `2384:54033`
                     - [chữ] “0 đ” — 19×19 [HUG×HUG] · @ (32.5, 2.5) flow · Afacad 15/19px 700 #cbd5e1 (color/text/muted) · no-wrap `I2384:54033;3065:60018`
                   - [icon] **ARROW DETAIL** ⟨ARROW DETAIL: Property 1=Arrow detail (Default), Property 2=No⟩ — 28×28 · @ (1046, 11.5) flow · file /figma/assets/ed575fb93ad4.svg `2384:54036`
-                - [khối] **Frame 427321962** — 1090×71 [FILL×HUG] · @ (0, 52) flow · row gap 12 pad 8 16 8 16 align CENTER · bg #fffaf8 · border 0 0 1px 0 solid #f1f5f9 (color/border/subtle) `2384:54037`
+                - [khối] **Frame 427321962** — 1090×71 [FILL×HUG] · @ (0, 52) flow · row gap 12 pad 8 16 8 16 align CENTER · bg #fffaf8 (color/extended/fffaf8) · border 0 0 1px 0 solid #f1f5f9 (color/border/subtle) `2384:54037`
                   - [icon] **Student Status** ⟨Student Status: Property 1=Đang học⟩ — 24×24 · @ (16, 23) flow · file /figma/assets/8e8921fb15a5.svg covers (-2, -2) 30×30 `3372:39353`
                   - [instance] **Ô định danh** ⟨Molecule/Ô định danh: Có Tiền=false, Có lịch hẹn=false, Có tag=true, Có avatar=true, Tên=Bích Thùy, Có tag thứ 2=true, Mã=bichthuy00002@gmail.com⟩ — 348×54 [FILL×HUG] · @ (52, 8) flow · row gap 8 align CENTER `3372:39354`
                     - [icon] **Avatar** ⟨Avatar: Count=+2, Name=Nam 2, Size=32⟩ — 32×32 · @ (0, 11) flow · file /figma/assets/accf82e49094.svg `I3372:39354;3210:24925`
@@ -214,7 +217,7 @@ Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí ·
                   - [instance] **Atom/Chip** ⟨Atom/Chip: Icon=false, Name=Trần Minh Khoa, Time=4 ngày trước, Label=9.445.000 đ, Type=TỔNG DOANH THU⟩ — 84×24 · @ (950, 23) flow · row pad 2 8 2 8 justify CENTER align CENTER · bg #e65100 (color/brand/orange) · radius 6px · shadow inset 0 0 0 1px #ffffff, 1px 1px 3px 0 rgba(0, 0, 0, 0.25) `2384:54058`
                     - [chữ] “15.000.000” — 69×19 [HUG×HUG] · @ (7.5, 2.5) flow · Afacad 15/19px 700 #ffffff · no-wrap `I2384:54058;2812:34656`
                   - [icon] **ARROW DETAIL** ⟨ARROW DETAIL: Property 1=Arrow detail (Default), Property 2=No⟩ — 28×28 · @ (1046, 21) flow · file /figma/assets/ed575fb93ad4.svg `2384:54061`
-                  - [khối] **Hover information** — 280×167 · @ (542, 60) abs · column pad 6 0 6 0 · bg #ffffff · radius 12px · border 1px solid #f1f5f9 · shadow 1px 2px 6px 0 rgba(0, 0, 0, 0.15) `2384:54465`
+                  - [khối] **Hover information** — 280×167 · @ (542, 60) abs · column pad 6 0 6 0 · bg #ffffff (bg/surface) · radius 12px · border 1px solid #f1f5f9 (border/subtle) · shadow 1px 2px 6px 0 rgba(0, 0, 0, 0.15) `2384:54465`
                     - [khối] **Button** — 278×31 [FILL×HUG] · @ (1, 7) flow · row gap 8 pad 4 12 8 12 align CENTER · shadow inset 0 -1px 0 0 #cbd5e1 `2384:54466`
                       - [icon] **Frame 427325999** — 16×16 · @ (12, 5.5) flow · file /figma/assets/afd7ef42e6f0.svg `2384:54467`
                       - [chữ] “Ghi chú chi tiết” — 206×19 [FILL×HUG] · @ (36, 4) flow · Afacad 15/19px 700 #334155 (color/text/primary) `2384:54469`

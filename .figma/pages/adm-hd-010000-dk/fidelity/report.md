@@ -1,8 +1,8 @@
 # Fidelity: ADM-HD-010000-DK — Hoá đơn / Danh sách hoá đơn
 
-- URL: `http://localhost:3108/hoa-don/danh-sach-hoa-don-dk`
+- URL: `http://localhost:3000/hoa-don/danh-sach-hoa-don-dk`
 - Verdict: **PASS**
-- Pixels outside text: **0.001%** differ (limit 0.5%); all pixels: 0.341%; inside text boxes: 1.706% (glyph rendering)
+- Pixels outside text: **0.001%** differ (limit 0.5%); all pixels: 0.324%; inside text boxes: 1.621% (glyph rendering)
 - Boxes: 638/638 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 638, ≤1px: 638, ≤2px: 638, ≤4px: 638, >4px: 0
 
 ## Pixel regions (largest first)
@@ -16,7 +16,6 @@
 
 | Text | Differing |
 | --- | --- |
-| Label (`I4101:133924;2245:87864`) | 13.1% |
 | Tiêu đề (`I4056:131633;3004:73494`) | 6.1% |
 | Danh sách hoá đơn (`4056:131185`) | 5.8% |
 | Label (`I4101:137216;2245:87768`) | 5.4% |
@@ -31,6 +30,7 @@
 | Tên trạng thái (`I4056:131631;3058:76261`) | 3.6% |
 | DN1-127 (`4056:131457`) | 3.4% |
 | Label (`I4101:133921;2245:87820`) | 3.3% |
+| DN287 (`4056:131378`) | 3.3% |
 
 ## Largest box differences
 

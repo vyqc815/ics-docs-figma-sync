@@ -5,7 +5,7 @@
 > **Nguồn:** PLS-ICS T8/2026 ›     ├─ CẤP ĐỘ › CD-CDO-010000 — Quản lý cấp độ (`689:12942`, file `rRVs5HX0kIHffbS0V40djG`)  
 > **Route:** `/quan-ly-cap-do`  
 > **Khung thiết kế:** 1440 × 1281 px  
-> **Xuất lúc:** 2026-11-02T03:53:13.120Z  
+> **Xuất lúc:** 2026-11-03T01:08:38.354Z  
 > **Spec đầy đủ (giá trị chính xác từng node):** `../../.figma/pages/cd-cdo-010000/page-spec.json`
 
 ## 1. Tổng quan

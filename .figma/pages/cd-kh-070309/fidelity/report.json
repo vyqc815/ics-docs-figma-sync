@@ -1,0 +1,907 @@
+{
+  "pass": false,
+  "thresholds": {
+    "maxPixelDiffPercent": 0.5,
+    "maxBoxDelta": 1,
+    "maxTextBoxDelta": 2.5,
+    "colorThreshold": 0.1,
+    "aaRadius": 1,
+    "subpixel": true,
+    "maxTextNodeDiffPercent": 35
+  },
+  "pixels": {
+    "width": 1440,
+    "height": 1340,
+    "mismatched": 2323,
+    "percent": 0.12,
+    "shapePercent": 0.014,
+    "textPercent": 0.532,
+    "sizeMismatch": false
+  },
+  "textNodes": [
+    {
+      "id": "6579:361131",
+      "name": "有",
+      "pixels": 117,
+      "percent": 34.4
+    },
+    {
+      "id": "6579:361127",
+      "name": "家",
+      "pixels": 108,
+      "percent": 31.8
+    },
+    {
+      "id": "6579:361135",
+      "name": "四口人",
+      "pixels": 259,
+      "percent": 27.6
+    },
+    {
+      "id": "6579:361132",
+      "name": "✕",
+      "pixels": 57,
+      "percent": 26.4
+    },
+    {
+      "id": "6579:361136",
+      "name": "✕",
+      "pixels": 45,
+      "percent": 20.8
+    },
+    {
+      "id": "6579:361123",
+      "name": "我",
+      "pixels": 62,
+      "percent": 18.2
+    },
+    {
+      "id": "6579:361128",
+      "name": "✕",
+      "pixels": 33,
+      "percent": 15.3
+    },
+    {
+      "id": "6579:361138",
+      "name": "+ Thêm mảnh",
+      "pixels": 162,
+      "percent": 11.7
+    },
+    {
+      "id": "6579:361124",
+      "name": "✕",
+      "pixels": 17,
+      "percent": 7.9
+    },
+    {
+      "id": "I6579:361007;5491:352407;2245:87908",
+      "name": "Label",
+      "pixels": 184,
+      "percent": 7.8
+    },
+    {
+      "id": "I6579:362001;1048:1240",
+      "name": "Button",
+      "pixels": 29,
+      "percent": 2.7
+    },
+    {
+      "id": "I6579:362010;1048:1240",
+      "name": "Button",
+      "pixels": 15,
+      "percent": 2.6
+    },
+    {
+      "id": "I6579:361007;5491:352409;2245:87908",
+      "name": "Label",
+      "pixels": 55,
+      "percent": 2.3
+    },
+    {
+      "id": "I6579:360794;1048:1238",
+      "name": "Button",
+      "pixels": 33,
+      "percent": 2.1
+    },
+    {
+      "id": "I6579:361162;1048:1238",
+      "name": "Button",
+      "pixels": 33,
+      "percent": 2.1
+    }
+  ],
+  "regions": [
+    {
+      "x": 760,
+      "y": 848,
+      "width": 24,
+      "height": 16,
+      "pixels": 73,
+      "node": {
+        "id": "6579:361137",
+        "name": "+ mảnh",
+        "role": "container"
+      }
+    },
+    {
+      "x": 544,
+      "y": 848,
+      "width": 8,
+      "height": 24,
+      "pixels": 44,
+      "node": {
+        "id": "6579:361129",
+        "name": "Mảnh · 有",
+        "role": "container"
+      }
+    },
+    {
+      "x": 472,
+      "y": 848,
+      "width": 8,
+      "height": 24,
+      "pixels": 34,
+      "node": {
+        "id": "6579:361125",
+        "name": "Mảnh · 家",
+        "role": "container"
+      }
+    },
+    {
+      "x": 400,
+      "y": 848,
+      "width": 8,
+      "height": 24,
+      "pixels": 23,
+      "node": {
+        "id": "6579:361121",
+        "name": "Mảnh · 我",
+        "role": "container"
+      }
+    },
+    {
+      "x": 560,
+      "y": 856,
+      "width": 8,
+      "height": 8,
+      "pixels": 19,
+      "node": {
+        "id": "6579:361129",
+        "name": "Mảnh · 有",
+        "role": "container"
+      }
+    },
+    {
+      "x": 104,
+      "y": 80,
+      "width": 16,
+      "height": 24,
+      "pixels": 16,
+      "node": {
+        "id": "I6579:361007;5491:352399",
+        "name": "Frame 1171274940",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 488,
+      "y": 856,
+      "width": 8,
+      "height": 8,
+      "pixels": 11,
+      "node": {
+        "id": "6579:361125",
+        "name": "Mảnh · 家",
+        "role": "container"
+      }
+    },
+    {
+      "x": 664,
+      "y": 856,
+      "width": 16,
+      "height": 8,
+      "pixels": 10,
+      "node": {
+        "id": "6579:361133",
+        "name": "Mảnh · 四口人",
+        "role": "container"
+      }
+    },
+    {
+      "x": 120,
+      "y": 192,
+      "width": 16,
+      "height": 8,
+      "pixels": 9,
+      "node": {
+        "id": "I6579:361007;5491:352405;2245:87904",
+        "name": "Icon",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 120,
+      "y": 872,
+      "width": 16,
+      "height": 8,
+      "pixels": 9,
+      "node": {
+        "id": "I6579:361007;5491:352419;2245:87904",
+        "name": "Icon",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 120,
+      "y": 1064,
+      "width": 16,
+      "height": 8,
+      "pixels": 9,
+      "node": {
+        "id": "I6579:361007;5491:352423;2245:87904",
+        "name": "Icon",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 640,
+      "y": 864,
+      "width": 16,
+      "height": 8,
+      "pixels": 6,
+      "node": {
+        "id": "6579:361133",
+        "name": "Mảnh · 四口人",
+        "role": "container"
+      }
+    },
+    {
+      "x": 24,
+      "y": 1184,
+      "width": 8,
+      "height": 16,
+      "pixels": 4,
+      "node": {
+        "id": "I6579:361007;5491:352455",
+        "name": "LOGO CENTER",
+        "role": "icon"
+      }
+    }
+  ],
+  "boxes": {
+    "measured": 293,
+    "missing": [],
+    "withinThreshold": 267,
+    "buckets": {
+      "≤0.5px": 267,
+      "≤1px": 267,
+      "≤2px": 267,
+      "≤4px": 275,
+      ">4px": 18
+    },
+    "worst": [
+      {
+        "id": "6579:361135",
+        "name": "四口人",
+        "role": "text",
+        "delta": 16.19,
+        "dx": 16.19,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6579:361136",
+        "name": "✕",
+        "role": "text",
+        "delta": 16.19,
+        "dx": 16.19,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6579:361137",
+        "name": "+ mảnh",
+        "role": "container",
+        "delta": 16.19,
+        "dx": 16.19,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6579:361138",
+        "name": "+ Thêm mảnh",
+        "role": "text",
+        "delta": 16.19,
+        "dx": 16.19,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6579:361131",
+        "name": "有",
+        "role": "text",
+        "delta": 12.14,
+        "dx": 12.14,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6579:361132",
+        "name": "✕",
+        "role": "text",
+        "delta": 12.14,
+        "dx": 12.14,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6579:361133",
+        "name": "Mảnh · 四口人",
+        "role": "container",
+        "delta": 12.14,
+        "dx": 12.14,
+        "dy": 0,
+        "dw": 4.05,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6579:361134",
+        "name": "⋮⋮",
+        "role": "text",
+        "delta": 12.14,
+        "dx": 12.14,
+        "dy": 0,
+        "dw": 4.05,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6579:361127",
+        "name": "家",
+        "role": "text",
+        "delta": 8.09,
+        "dx": 8.09,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6579:361128",
+        "name": "✕",
+        "role": "text",
+        "delta": 8.09,
+        "dx": 8.09,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6579:361129",
+        "name": "Mảnh · 有",
+        "role": "container",
+        "delta": 8.09,
+        "dx": 8.09,
+        "dy": 0,
+        "dw": 4.05,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6579:361130",
+        "name": "⋮⋮",
+        "role": "text",
+        "delta": 8.09,
+        "dx": 8.09,
+        "dy": 0,
+        "dw": 4.05,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6579:361121",
+        "name": "Mảnh · 我",
+        "role": "container",
+        "delta": 4.05,
+        "dx": 0,
+        "dy": 0,
+        "dw": 4.05,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6579:361122",
+        "name": "⋮⋮",
+        "role": "text",
+        "delta": 4.05,
+        "dx": 0,
+        "dy": 0,
+        "dw": 4.05,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6579:361123",
+        "name": "我",
+        "role": "text",
+        "delta": 4.05,
+        "dx": 4.05,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6579:361124",
+        "name": "✕",
+        "role": "text",
+        "delta": 4.05,
+        "dx": 4.05,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6579:361125",
+        "name": "Mảnh · 家",
+        "role": "container",
+        "delta": 4.05,
+        "dx": 4.05,
+        "dy": 0,
+        "dw": 4.05,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6579:361126",
+        "name": "⋮⋮",
+        "role": "text",
+        "delta": 4.05,
+        "dx": 4.05,
+        "dy": 0,
+        "dw": 4.05,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6579:360864",
+        "name": "c",
+        "role": "container",
+        "delta": 2.58,
+        "dx": 0,
+        "dy": 0,
+        "dw": -2.58,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6579:360867",
+        "name": "⋮",
+        "role": "text",
+        "delta": 2.58,
+        "dx": -2.58,
+        "dy": 0,
+        "dw": 2.58,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6579:360870",
+        "name": "c",
+        "role": "container",
+        "delta": 2.58,
+        "dx": 0,
+        "dy": 0,
+        "dw": -2.58,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6579:360873",
+        "name": "⋮",
+        "role": "text",
+        "delta": 2.58,
+        "dx": -2.58,
+        "dy": 0,
+        "dw": 2.58,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6579:360876",
+        "name": "c",
+        "role": "container",
+        "delta": 2.58,
+        "dx": 0,
+        "dy": 0,
+        "dw": -2.58,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6579:360879",
+        "name": "⋮",
+        "role": "text",
+        "delta": 2.58,
+        "dx": -2.58,
+        "dy": 0,
+        "dw": 2.58,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6579:360882",
+        "name": "c",
+        "role": "container",
+        "delta": 2.58,
+        "dx": 0,
+        "dy": 0,
+        "dw": -2.58,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      }
+    ],
+    "maxDelta": 16.19,
+    "over": [
+      {
+        "id": "6579:361135",
+        "name": "四口人",
+        "role": "text",
+        "delta": 16.19,
+        "dx": 16.19,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6579:361136",
+        "name": "✕",
+        "role": "text",
+        "delta": 16.19,
+        "dx": 16.19,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6579:361137",
+        "name": "+ mảnh",
+        "role": "container",
+        "delta": 16.19,
+        "dx": 16.19,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6579:361138",
+        "name": "+ Thêm mảnh",
+        "role": "text",
+        "delta": 16.19,
+        "dx": 16.19,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6579:361131",
+        "name": "有",
+        "role": "text",
+        "delta": 12.14,
+        "dx": 12.14,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6579:361132",
+        "name": "✕",
+        "role": "text",
+        "delta": 12.14,
+        "dx": 12.14,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6579:361133",
+        "name": "Mảnh · 四口人",
+        "role": "container",
+        "delta": 12.14,
+        "dx": 12.14,
+        "dy": 0,
+        "dw": 4.05,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6579:361134",
+        "name": "⋮⋮",
+        "role": "text",
+        "delta": 12.14,
+        "dx": 12.14,
+        "dy": 0,
+        "dw": 4.05,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6579:361127",
+        "name": "家",
+        "role": "text",
+        "delta": 8.09,
+        "dx": 8.09,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6579:361128",
+        "name": "✕",
+        "role": "text",
+        "delta": 8.09,
+        "dx": 8.09,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6579:361129",
+        "name": "Mảnh · 有",
+        "role": "container",
+        "delta": 8.09,
+        "dx": 8.09,
+        "dy": 0,
+        "dw": 4.05,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6579:361130",
+        "name": "⋮⋮",
+        "role": "text",
+        "delta": 8.09,
+        "dx": 8.09,
+        "dy": 0,
+        "dw": 4.05,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6579:361121",
+        "name": "Mảnh · 我",
+        "role": "container",
+        "delta": 4.05,
+        "dx": 0,
+        "dy": 0,
+        "dw": 4.05,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6579:361122",
+        "name": "⋮⋮",
+        "role": "text",
+        "delta": 4.05,
+        "dx": 0,
+        "dy": 0,
+        "dw": 4.05,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6579:361123",
+        "name": "我",
+        "role": "text",
+        "delta": 4.05,
+        "dx": 4.05,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6579:361124",
+        "name": "✕",
+        "role": "text",
+        "delta": 4.05,
+        "dx": 4.05,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6579:361125",
+        "name": "Mảnh · 家",
+        "role": "container",
+        "delta": 4.05,
+        "dx": 4.05,
+        "dy": 0,
+        "dw": 4.05,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6579:361126",
+        "name": "⋮⋮",
+        "role": "text",
+        "delta": 4.05,
+        "dx": 4.05,
+        "dy": 0,
+        "dw": 4.05,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6579:360864",
+        "name": "c",
+        "role": "container",
+        "delta": 2.58,
+        "dx": 0,
+        "dy": 0,
+        "dw": -2.58,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6579:360867",
+        "name": "⋮",
+        "role": "text",
+        "delta": 2.58,
+        "dx": -2.58,
+        "dy": 0,
+        "dw": 2.58,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6579:360870",
+        "name": "c",
+        "role": "container",
+        "delta": 2.58,
+        "dx": 0,
+        "dy": 0,
+        "dw": -2.58,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6579:360873",
+        "name": "⋮",
+        "role": "text",
+        "delta": 2.58,
+        "dx": -2.58,
+        "dy": 0,
+        "dw": 2.58,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6579:360876",
+        "name": "c",
+        "role": "container",
+        "delta": 2.58,
+        "dx": 0,
+        "dy": 0,
+        "dw": -2.58,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6579:360879",
+        "name": "⋮",
+        "role": "text",
+        "delta": 2.58,
+        "dx": -2.58,
+        "dy": 0,
+        "dw": 2.58,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6579:360882",
+        "name": "c",
+        "role": "container",
+        "delta": 2.58,
+        "dx": 0,
+        "dy": 0,
+        "dw": -2.58,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6579:360885",
+        "name": "⋮",
+        "role": "text",
+        "delta": 2.58,
+        "dx": -2.58,
+        "dy": 0,
+        "dw": 2.58,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      }
+    ]
+  },
+  "failures": [
+    "26 elements are off by more than their limit (1px, 2.5px for text-driven; worst 16.19px)."
+  ],
+  "url": "http://localhost:3000/thu-vien/bai-tap/chi-tiet-cau-hoi-reading/them-sua-cau-hoi",
+  "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
+  "consoleErrors": [],
+  "rootFound": true
+}

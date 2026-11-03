@@ -5,7 +5,7 @@
 > **Nguồn:** PLS-ICS T8/2026 ›             ├─ Tổng quan › ADM-LOP-020100-DK — Chi tiết lớp học / Tổng quan > chi tiết (`4056:110282`, file `rRVs5HX0kIHffbS0V40djG`)  
 > **Route:** `/chi-tiet-lop-hoc/tong-quan-chi-tiet-dk`  
 > **Khung thiết kế:** 1440 × 1059 px  
-> **Xuất lúc:** 2026-11-02T03:36:57.855Z  
+> **Xuất lúc:** 2026-11-03T03:27:28.394Z  
 > **Spec đầy đủ (giá trị chính xác từng node):** `../../../.figma/pages/adm-lop-020100-dk-2/page-spec.json`
 
 ## 1. Tổng quan
@@ -27,24 +27,26 @@ Nền trang: `#121213` (bg/canvas).
 
 | Token | Biến CSS | Giá trị | Trỏ tới | Bộ / mode |
 | --- | --- | --- | --- | --- |
-| `bg/brand-tint` | `--bg-brand-tint` | `#fff7ed` | color/extended/fff7ed | Theme · Semantic / Light |
-| `bg/brand-tint-strong` | `--bg-brand-tint-strong` | `#ffedd5` | color/extended/ffedd5 | Theme · Semantic / Light |
-| `bg/canvas` | `--bg-canvas` | `#f8fafc` | color/extended/f8fafc | Theme · Semantic / Light |
-| `bg/danger` | `--bg-danger` | `#fef2f2` | color/extended/fef2f2 | Theme · Semantic / Light |
-| `bg/hover` | `--bg-hover` | `#fff7ed` | color/extended/fff7ed | Theme · Semantic / Light |
-| `bg/strong` | `--bg-strong` | `#e2e8f0` | color/border/default | Theme · Semantic / Light |
-| `bg/subtle` | `--bg-subtle` | `#f1f5f9` | color/surface/input | Theme · Semantic / Light |
-| `bg/success` | `--bg-success` | `#ecfdf5` | color/extended/ecfdf5 | Theme · Semantic / Light |
-| `bg/surface` | `--bg-surface` | `#ffffff` | color/neutral/white | Theme · Semantic / Light |
-| `border/brand` | `--border-brand` | `#fed7aa` | color/extended/fed7aa | Theme · Semantic / Light |
-| `border/default` | `--border-default` | `#e2e8f0` | color/border/default | Theme · Semantic / Light |
-| `border/strong` | `--border-strong` | `#cbd5e1` | color/extended/cbd5e1 | Theme · Semantic / Light |
-| `border/subtle` | `--border-subtle` | `#f1f5f9` | color/border/subtle | Theme · Semantic / Light |
-| `brand/accent` | `--brand-accent` | `#ff9537` | color/extended/ff9537 | Theme · Semantic / Light |
-| `brand/primary` | `--brand-primary` | `#e65100` | color/brand/orange | Theme · Semantic / Light |
-| `chrome/bg` | `--chrome-bg` | `#ff7700` | color/extended/ff7700 | Theme · Semantic / Light |
-| `chrome/ring-dark` | `--chrome-ring-dark` | `#ef6700` | color/extended/ef6700 | Theme · Semantic / Light |
-| `chrome/ring-light` | `--chrome-ring-light` | `#ff9537` | color/extended/ff9537 | Theme · Semantic / Light |
+| `bg/brand-tint` | `--bg-brand-tint` | `#102218` |  | Theme · Semantic / Dark · Minimal |
+| `bg/brand-tint-strong` | `--bg-brand-tint-strong` | `#153020` |  | Theme · Semantic / Dark · Minimal |
+| `bg/canvas` | `--bg-canvas` | `#121213` |  | Theme · Semantic / Dark · Minimal |
+| `bg/danger` | `--bg-danger` | `#2a1618` |  | Theme · Semantic / Dark · Minimal |
+| `bg/hover` | `--bg-hover` | `#0e0e0f` |  | Theme · Semantic / Dark · Minimal |
+| `bg/strong` | `--bg-strong` | `#2a2a2e` |  | Theme · Semantic / Dark · Minimal |
+| `bg/subtle` | `--bg-subtle` | `#202023` |  | Theme · Semantic / Dark · Minimal |
+| `bg/success` | `--bg-success` | `#12251a` |  | Theme · Semantic / Dark · Minimal |
+| `bg/surface` | `--bg-surface` | `#18181a` |  | Theme · Semantic / Dark · Minimal |
+| `border/brand` | `--border-brand` | `#1e4d31` |  | Theme · Semantic / Dark · Minimal |
+| `border/default` | `--border-default` | `#27272a` |  | Theme · Semantic / Dark · Minimal |
+| `border/strong` | `--border-strong` | `#3f3f46` |  | Theme · Semantic / Dark · Minimal |
+| `border/subtle` | `--border-subtle` | `#1f1f22` |  | Theme · Semantic / Dark · Minimal |
+| `brand/accent` | `--brand-accent` | `#a78bfa` |  | Theme · Semantic / Dark · Minimal |
+| `brand/primary` | `--brand-primary` | `#16a34a` |  | Theme · Semantic / Dark · Minimal |
+| `chrome/bg` | `--chrome-bg` | `#0b0b0c` |  | Theme · Semantic / Dark · Minimal |
+| `chrome/ring-dark` | `--chrome-ring-dark` | `#0b0b0c` |  | Theme · Semantic / Dark · Minimal |
+| `chrome/ring-light` | `--chrome-ring-light` | `#0b0b0c` |  | Theme · Semantic / Dark · Minimal |
+| `color/extended/a7f3d0` | `--color-extended-a7f3d0` | `#a7f3d0` |  | Color Tokens / Light |
+| `color/extended/fecdd3` | `--color-extended-fecdd3` | `#fecdd3` |  | Color Tokens / Light |
 | `color/neutral/white` | `--color-neutral-white` | `#ffffff` |  | Color Tokens / Light |
 | `color/semantic/success` | `--color-semantic-success` | `#2d9732` |  | Color Tokens / Light |
 | `radius/12` | `--radius-12` | `12` |  | Number Tokens / Mode 1 |
@@ -58,16 +60,17 @@ Nền trang: `#121213` (bg/canvas).
 | `spacing/16` | `--spacing-16` | `16` |  | Number Tokens / Mode 1 |
 | `spacing/4` | `--spacing-4` | `4` |  | Number Tokens / Mode 1 |
 | `spacing/8` | `--spacing-8` | `8` |  | Number Tokens / Mode 1 |
-| `status/danger-text` | `--status-danger-text` | `#e11d48` | color/semantic/error-text | Theme · Semantic / Light |
-| `status/success-text` | `--status-success-text` | `#059669` | color/semantic/success-text | Theme · Semantic / Light |
-| `text/muted` | `--text-muted` | `#cbd5e1` | color/text/muted | Theme · Semantic / Light |
-| `text/primary` | `--text-primary` | `#334155` | color/text/primary | Theme · Semantic / Light |
-| `text/secondary` | `--text-secondary` | `#64748b` | color/text/secondary | Theme · Semantic / Light |
-| `theme/is-dark` | `--theme-is-dark` | `false` |  | Theme · Semantic / Light |
-| `tone/green/border` | `--tone-green-border` | `#6ee7b7` |  | Theme · Semantic / Light |
-| `tone/rose/border` | `--tone-rose-border` | `#fda4af` |  | Theme · Semantic / Light |
-| `tone/violet/bg` | `--tone-violet-bg` | `#ede9fe` |  | Theme · Semantic / Light |
-| `tone/violet/border` | `--tone-violet-border` | `#c4b5fd` |  | Theme · Semantic / Light |
+| `status/danger-text` | `--status-danger-text` | `#f87171` |  | Theme · Semantic / Dark · Minimal |
+| `status/success-text` | `--status-success-text` | `#4ade80` |  | Theme · Semantic / Dark · Minimal |
+| `text/muted` | `--text-muted` | `#71717a` |  | Theme · Semantic / Dark · Minimal |
+| `text/on-brand` | `--text-on-brand` | `#ffffff` |  | Theme · Semantic / Dark · Minimal |
+| `text/primary` | `--text-primary` | `#ededef` |  | Theme · Semantic / Dark · Minimal |
+| `text/secondary` | `--text-secondary` | `#a1a1aa` |  | Theme · Semantic / Dark · Minimal |
+| `theme/is-dark` | `--theme-is-dark` | `true` |  | Theme · Semantic / Dark · Minimal |
+| `tone/green/border` | `--tone-green-border` | `#146048` |  | Theme · Semantic / Dark · Minimal |
+| `tone/rose/border` | `--tone-rose-border` | `#7b2a39` |  | Theme · Semantic / Dark · Minimal |
+| `tone/violet/bg` | `--tone-violet-bg` | `#282239` |  | Theme · Semantic / Dark · Minimal |
+| `tone/violet/border` | `--tone-violet-border` | `#4c377d` |  | Theme · Semantic / Dark · Minimal |
 
 **Style Figma đang dùng:**
 
@@ -104,7 +107,7 @@ Nền trang: `#121213` (bg/canvas).
 | — | Unbounded | 17 / 26px | 600 · case title | 0 | #ededef (text/primary) | 1 | “Tổng Quan Lớp” |
 | — | Afacad | 16 / 20px | 500 · case title | 0 | #a1a1aa (text/secondary) | 14 | “Sỉ số” |
 | — | Afacad | 16 / 20px | 700 · case title | 0 | #ededef (text/primary) | 2 | “Học viên 1” |
-| — | Afacad | 16 / 20px | 700 · case title | 0 | #ffffff | 1 | “DN0091 - 132” |
+| — | Afacad | 16 / 20px | 700 · case title | 0 | #ffffff (text/on-brand) | 1 | “DN0091 - 132” |
 | — | Afacad | 16 / 20px | 700 · case title underline | 0 | #16a34a (brand/primary) | 1 | “Học viên 1” |
 | — | Afacad | 15 / 19px | 500 | 0 | #ededef (text/primary) | 7 | “00:14:01” |
 | — | Afacad | 15 / 19px | 400 | 0 | #ffffff (color/neutral/white) | 7 | “• Sĩ số: 13/13” |
@@ -349,7 +352,7 @@ Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí ·
                 - [khối] **Điểm số · Đã chấm** — 125×32 [FILL×FIXED] · @ (0, 0) flow · row gap 5 pad 0 5 0 5 align CENTER · bg #12251a (bg/success) · radius 6px · border 1px solid #146048 (tone/green/border) · clip `4056:110419`
                   - [khối] **Slot · Giá trị** — 56×17 [FIXED×HUG] · @ (6, 7.5) flow · column justify CENTER align CENTER `4056:110420`
                     - [chữ] “9.8” — 17×17 [HUG×HUG] · @ (19.5, 0) flow · Afacad 14/17px 600 #4ade80 (status/success-text) · text-align center · no-wrap `4056:110421`
-                  - [hình] **Divider** — 1×16 · @ (67, 8) flow · bg #a7f3d0 `4056:110422`
+                  - [hình] **Divider** — 1×16 · @ (67, 8) flow · bg #a7f3d0 (color/extended/a7f3d0) `4056:110422`
                   - [khối] **Slot · Nộp** — 48×24 [FIXED×HUG] · @ (73, 4) flow · column justify CENTER align CENTER `4056:110423`
                     - [chữ] “09:58” — 25×12 [HUG×HUG] · @ (11.5, 0) flow · Afacad 10/12px 500 #4ade80 (status/success-text) · text-align center · no-wrap `4056:110424`
                     - [chữ] “16.09.2026” — 46×12 [HUG×HUG] · @ (1, 12) flow · Afacad 10/12px 500 #4ade80 (status/success-text) · text-align center · no-wrap · opacity 0.8 `4056:110425`
@@ -370,7 +373,7 @@ Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí ·
                 - [khối] **Điểm số · Đã chấm** — 125×32 [FILL×FIXED] · @ (0, 0) flow · row gap 5 pad 0 5 0 5 align CENTER · bg #12251a (bg/success) · radius 6px · border 1px solid #146048 (tone/green/border) · clip `4056:110443`
                   - [khối] **Slot · Giá trị** — 56×17 [FIXED×HUG] · @ (6, 7.5) flow · column justify CENTER align CENTER `4056:110444`
                     - [chữ] “9.8” — 17×17 [HUG×HUG] · @ (19.5, 0) flow · Afacad 14/17px 600 #4ade80 (status/success-text) · text-align center · no-wrap `4056:110445`
-                  - [hình] **Divider** — 1×16 · @ (67, 8) flow · bg #a7f3d0 `4056:110446`
+                  - [hình] **Divider** — 1×16 · @ (67, 8) flow · bg #a7f3d0 (color/extended/a7f3d0) `4056:110446`
                   - [khối] **Slot · Nộp** — 48×24 [FIXED×HUG] · @ (73, 4) flow · column justify CENTER align CENTER `4056:110447`
                     - [chữ] “09:58” — 25×12 [HUG×HUG] · @ (11.5, 0) flow · Afacad 10/12px 500 #4ade80 (status/success-text) · text-align center · no-wrap `4056:110448`
                     - [chữ] “16.09.2026” — 46×12 [HUG×HUG] · @ (1, 12) flow · Afacad 10/12px 500 #4ade80 (status/success-text) · text-align center · no-wrap · opacity 0.8 `4056:110449`
@@ -391,7 +394,7 @@ Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí ·
                 - [khối] **Điểm số · Chưa nộp** — 125×32 [FILL×FIXED] · @ (0, -4) flow · row gap 5 pad 0 5 0 5 align CENTER · bg #2a1618 (bg/danger) · radius 6px · border 1px solid #7b2a39 (tone/rose/border) · clip `4056:110467`
                   - [khối] **Slot · Giá trị** — 56×16 [FIXED×HUG] · @ (6, 8) flow · column justify CENTER align CENTER `4056:110468`
                     - [chữ] “—” — 13×16 [HUG×HUG] · @ (21.5, 0) flow · Afacad 13/16px 600 #f87171 (status/danger-text) · text-align center · no-wrap `4056:110469`
-                  - [hình] **Divider** — 1×16 · @ (67, 8) flow · bg #fecdd3 `4056:110470`
+                  - [hình] **Divider** — 1×16 · @ (67, 8) flow · bg #fecdd3 (color/extended/fecdd3) `4056:110470`
                   - [khối] **Slot · Nộp** — 48×14 [FIXED×HUG] · @ (73, 9) flow · column justify CENTER align CENTER `4056:110471`
                     - [chữ] “Chưa nộp” — 47×14 [HUG×HUG] · @ (0.5, 0) flow · Afacad 12/14px 600 #f87171 (status/danger-text) · text-align center · no-wrap `4056:110472`
               - [khối] **Container** — 60×19 [FIXED×HUG] · @ (520, 4.5) flow · column justify CENTER align CENTER `4056:110473`
@@ -411,7 +414,7 @@ Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí ·
                 - [khối] **Điểm số · Chưa nộp** — 125×32 [FILL×FIXED] · @ (0, -4) flow · row gap 5 pad 0 5 0 5 align CENTER · bg #2a1618 (bg/danger) · radius 6px · border 1px solid #7b2a39 (tone/rose/border) · clip `4056:110490`
                   - [khối] **Slot · Giá trị** — 56×16 [FIXED×HUG] · @ (6, 8) flow · column justify CENTER align CENTER `4056:110491`
                     - [chữ] “—” — 13×16 [HUG×HUG] · @ (21.5, 0) flow · Afacad 13/16px 600 #f87171 (status/danger-text) · text-align center · no-wrap `4056:110492`
-                  - [hình] **Divider** — 1×16 · @ (67, 8) flow · bg #fecdd3 `4056:110493`
+                  - [hình] **Divider** — 1×16 · @ (67, 8) flow · bg #fecdd3 (color/extended/fecdd3) `4056:110493`
                   - [khối] **Slot · Nộp** — 48×14 [FIXED×HUG] · @ (73, 9) flow · column justify CENTER align CENTER `4056:110494`
                     - [chữ] “Chưa nộp” — 47×14 [HUG×HUG] · @ (0.5, 0) flow · Afacad 12/14px 600 #f87171 (status/danger-text) · text-align center · no-wrap `4056:110495`
               - [khối] **Container** — 60×19 [FIXED×HUG] · @ (520, 4.5) flow · column justify CENTER align CENTER `4056:110496`
@@ -562,7 +565,7 @@ Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí ·
         - [khối] **Frame 1171274929** — 192×28 [FILL×HUG] · @ (0, 0) flow · row gap 8 align CENTER `4056:110677`
           - [icon] **Button** — 28×28 · @ (0, 0) flow · file /figma/assets/8d4078269cf5.svg `4056:110678`
           - [khối] **Button** — 106×28 [HUG×FIXED] · @ (36, 0) flow · row pad 0 8 0 8 justify CENTER align CENTER · bg #18181a (bg/surface) · radius 6px · shadow 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `4056:110681`
-            - [chữ] “DN0091 - 132” — 90×20 [HUG×HUG] · @ (8, 4) flow · Afacad 16/20px 700 #ffffff case title · no-wrap `4056:110682`
+            - [chữ] “DN0091 - 132” — 90×20 [HUG×HUG] · @ (8, 4) flow · Afacad 16/20px 700 #ffffff (text/on-brand) case title · no-wrap `4056:110682`
         - [icon] **Mouse click** ⟨Mouse click⟩ — 22×22 · @ (51, 19) abs · file /figma/assets/5001d0ee7282.svg covers (-1, -1) 26×26 `4056:110683`
         - [instance] **Card Menu v2 (Test)** ⟨Card Menu v2 (Test): Icon=458:1148, Label=Tổng quan, Type=Menu phụ, State=Select, Expanded=No⟩ — 192×40 [FILL×HUG] · @ (0, 36) flow · row gap 8 pad 8 4 8 8 align CENTER · bg `linear-gradient(180deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0.35) 50%, rgba(255, 255, 255, 0.25) 100%)` · radius 8px · shadow inset 0 0 0 1px rgba(255, 255, 255, 0.2), 0 1.25px 2.25px 0 rgba(0, 0, 0, 0.05) · backdrop blur(2.25px) `4056:110684`
           - [hình] **Theme · Dark BG** — 192×40 · @ (0, 0) abs · bg #2a2a2e (bg/strong) · radius 8px · shadow inset 0 0 0 1px #3f3f46 `I4056:110684;4139:138323`

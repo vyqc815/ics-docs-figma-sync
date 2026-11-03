@@ -1,8 +1,8 @@
 # Fidelity: ADM-LOP-030500 — Lớp học / Bài học / Kiến thức
 
-- URL: `http://localhost:3108/lop-hoc/bai-hoc/kien-thuc`
+- URL: `http://localhost:3000/lop-hoc/bai-hoc/kien-thuc`
 - Verdict: **PASS**
-- Pixels outside text: **0.001%** differ (limit 0.5%); all pixels: 0.161%; inside text boxes: 1.005% (glyph rendering)
+- Pixels outside text: **0.001%** differ (limit 0.5%); all pixels: 0.139%; inside text boxes: 0.869% (glyph rendering)
 - Boxes: 190/190 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 189, ≤1px: 189, ≤2px: 189, ≤4px: 190, >4px: 0
 
 ## Pixel regions (largest first)
@@ -16,10 +16,6 @@
 
 | Text | Differing |
 | --- | --- |
-| 100% (`I3497:66734;1308:6749`) | 24.7% |
-| 100% (`I3497:66735;1308:6749`) | 24.7% |
-| 100% (`I3497:66747;1308:6749`) | 24.7% |
-| 100% (`I3497:66748;1308:6749`) | 24.7% |
 | ÔN TẬP: Giữa Kỳ 1 (`3497:66621`) | 13.1% |
 | Label (`I4915:224751;4901:206599;2245:87908`) | 8.4% |
 | Label (`I4915:224751;4901:206597;2245:87908`) | 5.9% |
@@ -31,6 +27,10 @@
 | Badge (`I3497:66751;1050:2409`) | 1.5% |
 | Badge (`I3497:66763;1050:2409`) | 1.5% |
 | Badge (`I3497:66769;1050:2409`) | 1.5% |
+| BTVN (`3497:66721`) | 1.2% |
+| Badge (`I3497:66757;1050:2409`) | 1% |
+| Label (`I4915:224751;4901:206602;2245:87908`) | 0.9% |
+| PHÁT ÂM: Thanh Điệu và Vận Mẫu (`3497:66745`) | 0.8% |
 
 ## Largest box differences
 

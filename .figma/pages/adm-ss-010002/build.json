@@ -1,0 +1,22 @@
+{
+  "route": "/ship-sach/danh-sach-don-sach/chon-tat-ca-xuat-excel",
+  "pageFile": "components/figma/adm-ss-010002/index.tsx",
+  "docFile": "docs/pages/ship-sach/danh-sach-don-sach/chon-tat-ca-xuat-excel.md",
+  "sections": [
+    {
+      "nodeId": "2929:45642",
+      "component": "Maincontent",
+      "file": "components/figma/adm-ss-010002/Maincontent.tsx"
+    },
+    {
+      "nodeId": "2929:45947",
+      "component": "Header",
+      "file": "components/figma/adm-ss-010002/Header.tsx"
+    },
+    {
+      "nodeId": "4915:250766",
+      "component": "SidebarMenuAdmin",
+      "file": "components/figma/adm-ss-010002/SidebarMenuAdmin.tsx"
+    }
+  ]
+}

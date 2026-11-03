@@ -1,0 +1,50 @@
+{
+  "route": "/bai-tap-ve-nha/preview-mobile-tren-trang-kiem-tra",
+  "pageFile": "components/figma/cd-kh-060160/index.tsx",
+  "docFile": "docs/pages/bai-tap-ve-nha/preview-mobile-tren-trang-kiem-tra.md",
+  "sections": [
+    {
+      "nodeId": "5672:75479",
+      "component": "Content",
+      "file": "components/figma/cd-kh-060160/Content.tsx"
+    },
+    {
+      "nodeId": "5672:75888",
+      "component": "SidebarMenuCd",
+      "file": "components/figma/cd-kh-060160/SidebarMenuCd.tsx"
+    },
+    {
+      "nodeId": "5672:75889",
+      "component": "Header56",
+      "file": "components/figma/shared/Header56.tsx"
+    },
+    {
+      "nodeId": "5672:76628",
+      "component": "LopPhu",
+      "file": "components/figma/shared/LopPhu.tsx"
+    },
+    {
+      "nodeId": "5672:75356",
+      "component": "PopupPreviewMobile",
+      "file": "components/figma/cd-kh-060160/PopupPreviewMobile.tsx"
+    }
+  ],
+  "idAlias": {
+    "5672:75889": "4846:158024",
+    "5672:75890": "4846:158025",
+    "5672:75937": "4846:158072",
+    "I5672:75937;2008:31768": "I4846:158072;2008:31768",
+    "I5672:75937;2008:31883": "I4846:158072;2008:31883",
+    "I5672:75937;2008:31884": "I4846:158072;2008:31884",
+    "I5672:75937;2008:31885": "I4846:158072;2008:31885",
+    "I5672:75937;2008:31771": "I4846:158072;2008:31771",
+    "I5672:75937;2008:31772": "I4846:158072;2008:31772",
+    "I5672:75937;2008:31773": "I4846:158072;2008:31773",
+    "I5672:75937;2008:31774": "I4846:158072;2008:31774",
+    "5672:75938": "4846:158073",
+    "I5672:75938;4019:24203": "I4846:158073;4019:24203",
+    "I5672:75938;4019:22291": "I4846:158073;4019:22291",
+    "I5672:75938;4019:24214": "I4846:158073;4019:24214",
+    "I5672:75938;4019:24215": "I4846:158073;4019:24215"
+  }
+}

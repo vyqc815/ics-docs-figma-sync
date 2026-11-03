@@ -1,0 +1,33 @@
+{
+  "route": "/quan-ly-danh-muc/popup-danh-muc-cap-do/tieu-chuan-giao-trinh-dk",
+  "pageFile": "components/figma/cd-dm-010030-dk/index.tsx",
+  "docFile": "docs/pages/quan-ly-danh-muc/popup-danh-muc-cap-do/tieu-chuan-giao-trinh-dk.md",
+  "sections": [
+    {
+      "nodeId": "4056:145835",
+      "component": "PopupHeader9",
+      "file": "components/figma/shared/PopupHeader9.tsx"
+    },
+    {
+      "nodeId": "4056:145836",
+      "component": "Body",
+      "file": "components/figma/cd-dm-010030-dk/Body.tsx"
+    },
+    {
+      "nodeId": "4056:145954",
+      "component": "PopupFooter5",
+      "file": "components/figma/shared/PopupFooter5.tsx"
+    }
+  ],
+  "idAlias": {
+    "4056:145835": "4056:145431",
+    "I4056:145835;2514:153353": "I4056:145431;2514:153353",
+    "I4056:145835;2514:153354": "I4056:145431;2514:153354",
+    "I4056:145835;2514:153355": "I4056:145431;2514:153355",
+    "4056:145954": "4056:145658",
+    "I4056:145954;2514:153361": "I4056:145658;2514:153361",
+    "I4056:145954;2514:153361;1048:1232": "I4056:145658;2514:153361;1048:1232",
+    "I4056:145954;2514:153363": "I4056:145658;2514:153363",
+    "I4056:145954;2514:153363;1048:1230": "I4056:145658;2514:153363;1048:1230"
+  }
+}

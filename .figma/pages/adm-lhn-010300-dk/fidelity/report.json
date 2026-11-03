@@ -12,10 +12,10 @@
   "pixels": {
     "width": 1440,
     "height": 919,
-    "mismatched": 10090,
-    "percent": 0.762,
+    "mismatched": 9705,
+    "percent": 0.733,
     "shapePercent": 0.006,
-    "textPercent": 3.445,
+    "textPercent": 3.312,
     "sizeMismatch": false
   },
   "textNodes": [
@@ -24,12 +24,6 @@
       "name": "- Gửi giới thiệu bạn với học viên (lưu ý các học viên đang có chỉ số thấp/ phản ứng ==> không gửi nha) - Gửi giới thiệu bạn phải gởi hết vòng của TH giới thiệu bạn (khi khách seen ==> push tiếp cách đăng bài) - Kiểm tra khách này trước đó đã gửi giới thiệu bạn chưa để gửi văn khác, tránh bị trùng - Note: Đã gửi giới thiệu bạn ở ghi chú ==> mục tiêu nắm được khách này đã gửi hay chưa để lượt tiếp theo còn đổi văn mẫu",
       "pixels": 3597,
       "percent": 27
-    },
-    {
-      "id": "I4056:105487;2245:87774",
-      "name": "Label",
-      "pixels": 423,
-      "percent": 14.7
     },
     {
       "id": "I4713:129276;2015:36008",
@@ -108,6 +102,12 @@
       "name": "Nhật Dương",
       "pixels": 86,
       "percent": 3.3
+    },
+    {
+      "id": "4056:105628",
+      "name": "[ Sau Buổi 7] CSKH Gửi giới thiệu bạn",
+      "pixels": 236,
+      "percent": 3.2
     }
   ],
   "regions": [
@@ -465,7 +465,7 @@
     "over": []
   },
   "failures": [],
-  "url": "http://localhost:3108/lich-hen/hoa-don-dk",
+  "url": "http://localhost:3000/lich-hen/hoa-don-dk",
   "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
   "consoleErrors": [],
   "rootFound": true

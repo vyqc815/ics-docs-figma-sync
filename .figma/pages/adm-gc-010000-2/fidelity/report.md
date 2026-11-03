@@ -1,6 +1,6 @@
 # Fidelity: ADM-GC-010000 — Gift code / Danh sách gift code
 
-- URL: `http://localhost:3108/gift-code/danh-sach-gift-code`
+- URL: `http://localhost:3000/gift-code/danh-sach-gift-code`
 - Verdict: **PASS**
 - Pixels outside text: **0.001%** differ (limit 0.5%); all pixels: 0.105%; inside text boxes: 0.948% (glyph rendering)
 - Boxes: 301/301 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 301, ≤1px: 301, ≤2px: 301, ≤4px: 301, >4px: 0

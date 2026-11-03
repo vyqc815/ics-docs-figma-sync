@@ -1,0 +1,30 @@
+{
+  "route": "/chi-tiet-lop/bai-hoc/buoi-hoc-da-ket-thuc",
+  "pageFile": "components/figma/gv-lop-030150/index.tsx",
+  "docFile": "docs/pages/chi-tiet-lop/bai-hoc/buoi-hoc-da-ket-thuc.md",
+  "sections": [
+    {
+      "nodeId": "5292:225251",
+      "component": "Body4",
+      "file": "components/figma/shared/Body4.tsx"
+    },
+    {
+      "nodeId": "5292:225252",
+      "component": "Maincontent",
+      "file": "components/figma/gv-lop-030150/Maincontent.tsx"
+    },
+    {
+      "nodeId": "5292:225494",
+      "component": "Header74",
+      "file": "components/figma/shared/Header74.tsx"
+    },
+    {
+      "nodeId": "5292:225636",
+      "component": "SidebarMenuTeacher",
+      "file": "components/figma/gv-lop-030150/SidebarMenuTeacher.tsx"
+    }
+  ],
+  "idAlias": {
+    "5292:225251": "769:30964"
+  }
+}

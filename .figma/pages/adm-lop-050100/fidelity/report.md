@@ -1,6 +1,6 @@
 # Fidelity: ADM-LOP-050100 — Lớp học / Nhật ký / Nhật ký
 
-- URL: `http://localhost:3108/lop-hoc/nhat-ky/nhat-ky`
+- URL: `http://localhost:3000/lop-hoc/nhat-ky/nhat-ky`
 - Verdict: **PASS**
 - Pixels outside text: **0.006%** differ (limit 0.5%); all pixels: 0.406%; inside text boxes: 1.994% (glyph rendering)
 - Boxes: 278/278 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 277, ≤1px: 278, ≤2px: 278, ≤4px: 278, >4px: 0

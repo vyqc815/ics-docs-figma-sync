@@ -12,61 +12,13 @@
   "pixels": {
     "width": 1440,
     "height": 810,
-    "mismatched": 2055,
-    "percent": 0.176,
+    "mismatched": 1429,
+    "percent": 0.123,
     "shapePercent": 0.001,
-    "textPercent": 1.182,
+    "textPercent": 0.821,
     "sizeMismatch": false
   },
   "textNodes": [
-    {
-      "id": "I5070:5215;1308:6749",
-      "name": "100%",
-      "pixels": 83,
-      "percent": 24.7
-    },
-    {
-      "id": "I5070:5224;1308:6749",
-      "name": "100%",
-      "pixels": 83,
-      "percent": 24.7
-    },
-    {
-      "id": "I5070:5232;1308:6749",
-      "name": "100%",
-      "pixels": 83,
-      "percent": 24.7
-    },
-    {
-      "id": "I5070:5240;1308:6749",
-      "name": "100%",
-      "pixels": 83,
-      "percent": 24.7
-    },
-    {
-      "id": "I5070:5248;1308:6749",
-      "name": "100%",
-      "pixels": 83,
-      "percent": 24.7
-    },
-    {
-      "id": "I5070:5256;1308:6749",
-      "name": "100%",
-      "pixels": 83,
-      "percent": 24.7
-    },
-    {
-      "id": "I5070:5264;1308:6749",
-      "name": "100%",
-      "pixels": 83,
-      "percent": 24.7
-    },
-    {
-      "id": "I5070:5207;1308:6706",
-      "name": "0%",
-      "pixels": 45,
-      "percent": 23
-    },
     {
       "id": "4885:39918",
       "name": "Tên",
@@ -108,6 +60,54 @@
       "name": "Button",
       "pixels": 22,
       "percent": 1.3
+    },
+    {
+      "id": "I4885:39816;1048:1238",
+      "name": "Button",
+      "pixels": 22,
+      "percent": 1.3
+    },
+    {
+      "id": "I4885:39844;1048:1238",
+      "name": "Button",
+      "pixels": 22,
+      "percent": 1.3
+    },
+    {
+      "id": "I4885:39900;1048:1238",
+      "name": "Button",
+      "pixels": 22,
+      "percent": 1.3
+    },
+    {
+      "id": "I4885:39776;1048:1238",
+      "name": "Button",
+      "pixels": 20,
+      "percent": 1.1
+    },
+    {
+      "id": "I4915:244899;4899:200259;2245:87768",
+      "name": "Label",
+      "pixels": 16,
+      "percent": 0.6
+    },
+    {
+      "id": "I5138:150713;2015:36008",
+      "name": "Value",
+      "pixels": 8,
+      "percent": 0.6
+    },
+    {
+      "id": "I4885:39920;1050:2411",
+      "name": "Badge",
+      "pixels": 11,
+      "percent": 0.6
+    },
+    {
+      "id": "4885:39928",
+      "name": "Tên",
+      "pixels": 27,
+      "percent": 0.6
     }
   ],
   "regions": [],
@@ -428,7 +428,7 @@
     "over": []
   },
   "failures": [],
-  "url": "http://localhost:3108/khao-sat/giao-khao-sat-lop/danh-sach-lop-duoc-giao",
+  "url": "http://localhost:3000/khao-sat/giao-khao-sat-lop/danh-sach-lop-duoc-giao",
   "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
   "consoleErrors": [],
   "rootFound": true

@@ -5,7 +5,7 @@
 > **Nguồn:** PLS-ICS T8/2026 ›     ├─ TOOLS › CD-TL-010100 — Tools / Giọng đọc / Hội thoại (`6133:124760`, file `rRVs5HX0kIHffbS0V40djG`)  
 > **Route:** `/tools/giong-doc/hoi-thoai`  
 > **Khung thiết kế:** 1440 × 910 px  
-> **Xuất lúc:** 2026-11-02T04:09:31.158Z  
+> **Xuất lúc:** 2026-11-03T01:09:13.368Z  
 > **Spec đầy đủ (giá trị chính xác từng node):** `../../../../.figma/pages/cd-tl-010100/page-spec.json`
 
 ## 1. Tổng quan
@@ -27,8 +27,18 @@ Nền trang: `#f8fafc`.
 
 | Token | Biến CSS | Giá trị | Trỏ tới | Bộ / mode |
 | --- | --- | --- | --- | --- |
+| `bg/brand-tint-strong` | `--bg-brand-tint-strong` | `#ffedd5` | color/extended/ffedd5 | Theme · Semantic / Light |
+| `bg/canvas` | `--bg-canvas` | `#f8fafc` | color/extended/f8fafc | Theme · Semantic / Light |
+| `bg/strong` | `--bg-strong` | `#e2e8f0` | color/border/default | Theme · Semantic / Light |
+| `bg/surface` | `--bg-surface` | `#ffffff` | color/neutral/white | Theme · Semantic / Light |
+| `border/default` | `--border-default` | `#e2e8f0` | color/border/default | Theme · Semantic / Light |
+| `border/strong` | `--border-strong` | `#cbd5e1` | color/extended/cbd5e1 | Theme · Semantic / Light |
+| `brand/primary` | `--brand-primary` | `#e65100` | color/brand/orange | Theme · Semantic / Light |
 | `color/border/button` | `--color-border-button` | `#cbd5e1` | color/extended/cbd5e1 | Color Tokens / Light |
 | `color/brand/orange` | `--color-brand-orange` | `#e65100` |  | Color Tokens / Light |
+| `color/extended/1e293b` | `--color-extended-1e293b` | `#1e293b` |  | Color Tokens / Light |
+| `color/extended/2563eb` | `--color-extended-2563eb` | `#2563eb` |  | Color Tokens / Light |
+| `color/extended/dbeafe` | `--color-extended-dbeafe` | `#dbeafe` |  | Color Tokens / Light |
 | `color/extended/ea580c` | `--color-extended-ea580c` | `#ea580c` |  | Color Tokens / Light |
 | `color/extended/fff5ec` | `--color-extended-fff5ec` | `#fff5ec` |  | Color Tokens / Light |
 | `color/neutral/white` | `--color-neutral-white` | `#ffffff` |  | Color Tokens / Light |
@@ -43,6 +53,8 @@ Nền trang: `#f8fafc`.
 | `radius/full` | `--radius-full` | `9999` |  | Number Tokens / Mode 1 |
 | `spacing/4` | `--spacing-4` | `4` |  | Number Tokens / Mode 1 |
 | `spacing/8` | `--spacing-8` | `8` |  | Number Tokens / Mode 1 |
+| `text/primary` | `--text-primary` | `#334155` | color/text/primary | Theme · Semantic / Light |
+| `text/secondary` | `--text-secondary` | `#64748b` | color/text/secondary | Theme · Semantic / Light |
 
 **Style Figma đang dùng:**
 
@@ -70,22 +82,22 @@ Nền trang: `#f8fafc`.
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | `Body/17/Bold` | Afacad | 17 / 21px | 700 | 0 | #334155 (color/text/primary) | 3 | “Xoá” |
 | `Body/17/Bold` | Afacad | 17 / 21px | 700 | 0 | #64748b (color/text/secondary) | 2 | “Đọc văn bản” |
-| — | Unbounded | 17 / 21px | 500 | 0 | #334155 | 1 | “Giọng đọc” |
+| — | Unbounded | 17 / 21px | 500 | 0 | #334155 (text/primary) | 1 | “Giọng đọc” |
 | `Body/17/Bold` | Afacad | 17 / 21px | 700 | 0 | #e65100 (color/brand/orange) | 1 | “Hội thoại” |
 | `Body/17/Bold` | Afacad | 17 / 21px | 700 | 0 | #ffffff (color/neutral/white) | 1 | “Tạo giọng đọc” |
-| — | Afacad | 16 / 21px | 400 | 0 | #1e293b | 4 | “Guten Morgen! Wie geht es dir?” |
+| — | Afacad | 16 / 21px | 400 | 0 | #1e293b (color/extended/1e293b) | 4 | “Guten Morgen! Wie geht es dir?” |
 | — | Afacad | 16 / 21px | 400 | 0 | #94a3b8 | 4 | “⋮” |
-| — | Afacad | 15 / 20px | 500 | 0 | #334155 | 5 | “Tiếng Anh” |
-| — | Afacad | 15 / 20px | 600 | 0 | #334155 | 4 | “Ngôn ngữ” |
-| — | Afacad | 15 / 20px | 500 | 0 | #1e293b | 2 | “Người 1” |
-| — | Afacad | 15 / 20px | 600 | 0 | #e65100 | 1 | “Tiếng Đức” |
-| — | Afacad | 14 / 19px | 400 | 0 | #64748b | 7 | “⌄” |
-| — | Afacad | 14 / 19px | 500 | 0 | #334155 | 6 | “Người 1 · Nữ 2” |
-| — | Afacad | 14 / 19px | 500 | 0 | #e65100 | 2 | “+ Thêm lượt thoại” |
+| — | Afacad | 15 / 20px | 500 | 0 | #334155 (text/primary) | 5 | “Tiếng Anh” |
+| — | Afacad | 15 / 20px | 600 | 0 | #334155 (text/primary) | 4 | “Ngôn ngữ” |
+| — | Afacad | 15 / 20px | 500 | 0 | #1e293b (color/extended/1e293b) | 2 | “Người 1” |
+| — | Afacad | 15 / 20px | 600 | 0 | #e65100 (brand/primary) | 1 | “Tiếng Đức” |
+| — | Afacad | 14 / 19px | 400 | 0 | #64748b (text/secondary) | 7 | “⌄” |
+| — | Afacad | 14 / 19px | 500 | 0 | #334155 (text/primary) | 6 | “Người 1 · Nữ 2” |
+| — | Afacad | 14 / 19px | 500 | 0 | #e65100 (brand/primary) | 2 | “+ Thêm lượt thoại” |
 | — | Unbounded | 14 / 17px | 500 | 0 | #ffffff (org/sakumi/fg) | 1 | “Sakumi” |
 | `Body/14/Medium` | Afacad | 14 / 18px | 500 | 0 | #c2410c | 1 | “Sắp có” |
-| — | Afacad | 13 / 17px | 600 | 0 | #e65100 | 3 | “A” |
-| — | Afacad | 13 / 17px | 600 | 0 | #2563eb | 3 | “B” |
+| — | Afacad | 13 / 17px | 600 | 0 | #e65100 (brand/primary) | 3 | “A” |
+| — | Afacad | 13 / 17px | 600 | 0 | #2563eb (color/extended/2563eb) | 3 | “B” |
 | — | Afacad | 13 / 17px | 400 | 0 | #94a3b8 | 2 | “Mỗi dòng một lượt nói · kéo để đổi thứ …” |
 | `Body/13/Bold` | Afacad | 13 / 16px | 700 | 0 | #0f766e | 1 | “CD” |
 | — | Unbounded | 13 / 16px | 600 | 0 | #ffffff (color/neutral/white) | 1 | “Học Liệu Ngôn Ngữ” |
@@ -173,8 +185,8 @@ Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí ·
   - [khối] **Main · Giọng đọc** — 1206×846 · @ (234, 64) abs · column gap 16 pad 24 24 24 24 · clip `6133:124813`
     - [khối] **Page Heading** — 1158×21 [FILL×HUG] · @ (24, 24) flow · row gap 16 align CENTER · clip `6133:124814`
       - [khối] **Tiêu đề** — 1158×21 [FILL×HUG] · @ (0, 0) flow · column gap 4 · clip `6133:124815`
-        - [chữ] “Giọng đọc” — 105×21 [HUG×HUG] · @ (0, 0) flow · Unbounded 17/21px 500 #334155 · no-wrap `6133:124816`
-    - [khối] **Tabs · Chế độ** — 1158×32 [FILL×HUG] · @ (24, 61) flow · row gap 24 align CENTER · border 0 0 1px 0 solid #e2e8f0 · clip `6133:124819`
+        - [chữ] “Giọng đọc” — 105×21 [HUG×HUG] · @ (0, 0) flow · Unbounded 17/21px 500 #334155 (text/primary) · no-wrap `6133:124816`
+    - [khối] **Tabs · Chế độ** — 1158×32 [FILL×HUG] · @ (24, 61) flow · row gap 24 align CENTER · border 0 0 1px 0 solid #e2e8f0 (border/default) · clip `6133:124819`
       - [instance] **Atom/Tab** ⟨Atom/Tab: Icon=3857:80306, Label=Đọc văn bản, State=Inactive, Kiểu=Gạch chân⟩ — 93×29 [HUG×HUG] · @ (0, 1) flow · column pad 0 4 8 4 justify CENTER align CENTER `6133:124820`
         - [chữ] “Đọc văn bản” — 85×21 [HUG×HUG] · @ (4, 0) flow · Afacad 17/21px 700 #64748b (color/text/secondary) · text-align center · no-wrap `I6133:124820;2808:42763`
       - [instance] **Atom/Tab** ⟨Atom/Tab: Icon=3857:80306, Label=Hội thoại, State=Active, Kiểu=Gạch chân⟩ — 68×31 [HUG×HUG] · @ (117, 0) flow · row pad 0 4 8 4 justify CENTER align CENTER · border 0 0 2px 0 solid #ea580c (color/extended/ea580c) `6133:124821`
@@ -185,88 +197,88 @@ Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí ·
         - [instance] **Atom/Badge** ⟨Atom/Badge: Label=Sắp có, Variant=Warning, Dropdown=Off⟩ — 57×26 [HUG×HUG] · @ (107, 1.5) flow · row pad 4 10 4 10 justify CENTER align CENTER · bg #fffbeb · radius 6px `6133:124824`
           - [chữ] “Sắp có” — 37×18 [HUG×HUG] · @ (10, 4) flow · Afacad 14/18px 500 #c2410c · no-wrap `I6133:124824;1048:1251`
     - [khối] **Body** — 1158×713 [FILL×FILL] · @ (24, 109) flow · row gap 16 · clip `6133:124825`
-      - [khối] **Card · Văn bản** — 722×713 [FILL×FILL] · @ (0, 0) flow · column gap 16 pad 20 20 20 20 · bg #ffffff · radius 12px · border 1px solid #e2e8f0 · clip `6133:124826`
-        - [chữ] “Ngôn ngữ” — 60×20 [HUG×HUG] · @ (21, 21) flow · Afacad 15/20px 600 #334155 · no-wrap `6133:124827`
+      - [khối] **Card · Văn bản** — 722×713 [FILL×FILL] · @ (0, 0) flow · column gap 16 pad 20 20 20 20 · bg #ffffff (bg/surface) · radius 12px · border 1px solid #e2e8f0 (border/default) · clip `6133:124826`
+        - [chữ] “Ngôn ngữ” — 60×20 [HUG×HUG] · @ (21, 21) flow · Afacad 15/20px 600 #334155 (text/primary) · no-wrap `6133:124827`
         - [khối] **Chips · Ngôn ngữ** — 680×38 [FILL×HUG] · @ (21, 57) flow · row gap 8 wrap cross-gap 8 · clip `6133:124828`
-          - [khối] **Chip · Tiếng Đức** — 91×38 [HUG×HUG] · @ (0, 0) flow · row gap 6 pad 8 14 8 14 align CENTER · bg #fff5ec · radius 8px · border 1px solid #e65100 · clip `6133:124829`
-            - [chữ] “Tiếng Đức” — 61×20 [HUG×HUG] · @ (15, 9) flow · Afacad 15/20px 600 #e65100 · no-wrap `6133:124830`
-          - [khối] **Chip · Tiếng Anh** — 90×38 [HUG×HUG] · @ (99, 0) flow · row gap 6 pad 8 14 8 14 align CENTER · bg #ffffff · radius 8px · border 1px solid #e2e8f0 · clip `6133:124831`
-            - [chữ] “Tiếng Anh” — 60×20 [HUG×HUG] · @ (15, 9) flow · Afacad 15/20px 500 #334155 · no-wrap `6133:124832`
-          - [khối] **Chip · Tiếng Pháp** — 97×38 [HUG×HUG] · @ (197, 0) flow · row gap 6 pad 8 14 8 14 align CENTER · bg #ffffff · radius 8px · border 1px solid #e2e8f0 · clip `6133:124833`
-            - [chữ] “Tiếng Pháp” — 67×20 [HUG×HUG] · @ (15, 9) flow · Afacad 15/20px 500 #334155 · no-wrap `6133:124834`
-          - [khối] **Chip · Tiếng Trung** — 100×38 [HUG×HUG] · @ (302, 0) flow · row gap 6 pad 8 14 8 14 align CENTER · bg #ffffff · radius 8px · border 1px solid #e2e8f0 · clip `6133:124835`
-            - [chữ] “Tiếng Trung” — 70×20 [HUG×HUG] · @ (15, 9) flow · Afacad 15/20px 500 #334155 · no-wrap `6133:124836`
-          - [khối] **Chip · Tiếng Nhật** — 96×38 [HUG×HUG] · @ (410, 0) flow · row gap 6 pad 8 14 8 14 align CENTER · bg #ffffff · radius 8px · border 1px solid #e2e8f0 · clip `6133:124837`
-            - [chữ] “Tiếng Nhật” — 66×20 [HUG×HUG] · @ (15, 9) flow · Afacad 15/20px 500 #334155 · no-wrap `6133:124838`
-          - [khối] **Chip · Tiếng Hàn** — 90×38 [HUG×HUG] · @ (514, 0) flow · row gap 6 pad 8 14 8 14 align CENTER · bg #ffffff · radius 8px · border 1px solid #e2e8f0 · clip `6133:124839`
-            - [chữ] “Tiếng Hàn” — 60×20 [HUG×HUG] · @ (15, 9) flow · Afacad 15/20px 500 #334155 · no-wrap `6133:124840`
+          - [khối] **Chip · Tiếng Đức** — 91×38 [HUG×HUG] · @ (0, 0) flow · row gap 6 pad 8 14 8 14 align CENTER · bg #fff5ec (color/extended/fff5ec) · radius 8px · border 1px solid #e65100 (brand/primary) · clip `6133:124829`
+            - [chữ] “Tiếng Đức” — 61×20 [HUG×HUG] · @ (15, 9) flow · Afacad 15/20px 600 #e65100 (brand/primary) · no-wrap `6133:124830`
+          - [khối] **Chip · Tiếng Anh** — 90×38 [HUG×HUG] · @ (99, 0) flow · row gap 6 pad 8 14 8 14 align CENTER · bg #ffffff (bg/surface) · radius 8px · border 1px solid #e2e8f0 (border/default) · clip `6133:124831`
+            - [chữ] “Tiếng Anh” — 60×20 [HUG×HUG] · @ (15, 9) flow · Afacad 15/20px 500 #334155 (text/primary) · no-wrap `6133:124832`
+          - [khối] **Chip · Tiếng Pháp** — 97×38 [HUG×HUG] · @ (197, 0) flow · row gap 6 pad 8 14 8 14 align CENTER · bg #ffffff (bg/surface) · radius 8px · border 1px solid #e2e8f0 (border/default) · clip `6133:124833`
+            - [chữ] “Tiếng Pháp” — 67×20 [HUG×HUG] · @ (15, 9) flow · Afacad 15/20px 500 #334155 (text/primary) · no-wrap `6133:124834`
+          - [khối] **Chip · Tiếng Trung** — 100×38 [HUG×HUG] · @ (302, 0) flow · row gap 6 pad 8 14 8 14 align CENTER · bg #ffffff (bg/surface) · radius 8px · border 1px solid #e2e8f0 (border/default) · clip `6133:124835`
+            - [chữ] “Tiếng Trung” — 70×20 [HUG×HUG] · @ (15, 9) flow · Afacad 15/20px 500 #334155 (text/primary) · no-wrap `6133:124836`
+          - [khối] **Chip · Tiếng Nhật** — 96×38 [HUG×HUG] · @ (410, 0) flow · row gap 6 pad 8 14 8 14 align CENTER · bg #ffffff (bg/surface) · radius 8px · border 1px solid #e2e8f0 (border/default) · clip `6133:124837`
+            - [chữ] “Tiếng Nhật” — 66×20 [HUG×HUG] · @ (15, 9) flow · Afacad 15/20px 500 #334155 (text/primary) · no-wrap `6133:124838`
+          - [khối] **Chip · Tiếng Hàn** — 90×38 [HUG×HUG] · @ (514, 0) flow · row gap 6 pad 8 14 8 14 align CENTER · bg #ffffff (bg/surface) · radius 8px · border 1px solid #e2e8f0 (border/default) · clip `6133:124839`
+            - [chữ] “Tiếng Hàn” — 60×20 [HUG×HUG] · @ (15, 9) flow · Afacad 15/20px 500 #334155 (text/primary) · no-wrap `6133:124840`
         - [khối] **Label row** — 680×20 [FILL×HUG] · @ (21, 111) flow · row gap 8 · clip `6133:124841`
-          - [chữ] “Lời thoại” — 460×20 [FILL×HUG] · @ (0, 0) flow · Afacad 15/20px 600 #334155 `6133:124842`
+          - [chữ] “Lời thoại” — 460×20 [FILL×HUG] · @ (0, 0) flow · Afacad 15/20px 600 #334155 (text/primary) `6133:124842`
           - [chữ] “Mỗi dòng một lượt nói · kéo để đổi thứ tự” — 212×17 [HUG×HUG] · @ (468, 0) flow · Afacad 13/17px 400 #94a3b8 · no-wrap `6133:124843`
         - [khối] **Danh sách lượt thoại** — 680×493 [FILL×FILL] · @ (21, 147) flow · column gap 10 · clip `6133:125168`
-          - [khối] **Lượt · Người 1 · Nữ 2** — 680×55 [FILL×HUG] · @ (0, 0) flow · row gap 10 pad 10 12 10 12 align CENTER · bg #ffffff · radius 8px · border 1px solid #e2e8f0 · clip `6133:125169`
-            - [khối] **Avatar** — 28×28 · @ (13, 13.5) flow · row justify CENTER align CENTER · bg #ffedd5 · radius 14px · clip `6133:125170`
-              - [chữ] “A” — 8×17 [HUG×HUG] · @ (10, 5.5) flow · Afacad 13/17px 600 #e65100 · no-wrap `6133:125171`
-            - [khối] **Chọn người nói** — 150×33 [FIXED×HUG] · @ (51, 11) flow · row gap 6 pad 6 10 6 10 align CENTER · bg #f8fafc · radius 8px · border 1px solid #e2e8f0 · clip `6133:125172`
-              - [chữ] “Người 1 · Nữ 2” — 82×19 [HUG×HUG] · @ (11, 7) flow · Afacad 14/19px 500 #334155 · no-wrap `6133:125173`
-              - [chữ] “⌄” — 8×19 [HUG×HUG] · @ (99, 7) flow · Afacad 14/19px 400 #64748b · no-wrap `6133:125174`
-            - [chữ] “Guten Morgen! Wie geht es dir?” — 442×21 [FILL×HUG] · @ (211, 17) flow · Afacad 16/21px 400 #1e293b `6133:125175`
+          - [khối] **Lượt · Người 1 · Nữ 2** — 680×55 [FILL×HUG] · @ (0, 0) flow · row gap 10 pad 10 12 10 12 align CENTER · bg #ffffff (bg/surface) · radius 8px · border 1px solid #e2e8f0 (border/default) · clip `6133:125169`
+            - [khối] **Avatar** — 28×28 · @ (13, 13.5) flow · row justify CENTER align CENTER · bg #ffedd5 (bg/brand-tint-strong) · radius 14px · clip `6133:125170`
+              - [chữ] “A” — 8×17 [HUG×HUG] · @ (10, 5.5) flow · Afacad 13/17px 600 #e65100 (brand/primary) · no-wrap `6133:125171`
+            - [khối] **Chọn người nói** — 150×33 [FIXED×HUG] · @ (51, 11) flow · row gap 6 pad 6 10 6 10 align CENTER · bg #f8fafc (bg/canvas) · radius 8px · border 1px solid #e2e8f0 (border/default) · clip `6133:125172`
+              - [chữ] “Người 1 · Nữ 2” — 82×19 [HUG×HUG] · @ (11, 7) flow · Afacad 14/19px 500 #334155 (text/primary) · no-wrap `6133:125173`
+              - [chữ] “⌄” — 8×19 [HUG×HUG] · @ (99, 7) flow · Afacad 14/19px 400 #64748b (text/secondary) · no-wrap `6133:125174`
+            - [chữ] “Guten Morgen! Wie geht es dir?” — 442×21 [FILL×HUG] · @ (211, 17) flow · Afacad 16/21px 400 #1e293b (color/extended/1e293b) `6133:125175`
             - [chữ] “⋮” — 4×21 [HUG×HUG] · @ (663, 17) flow · Afacad 16/21px 400 #94a3b8 · no-wrap `6133:125176`
-          - [khối] **Lượt · Người 2 · Nam 3** — 680×55 [FILL×HUG] · @ (0, 65) flow · row gap 10 pad 10 12 10 12 align CENTER · bg #ffffff · radius 8px · border 1px solid #e2e8f0 · clip `6133:125177`
-            - [khối] **Avatar** — 28×28 · @ (13, 13.5) flow · row justify CENTER align CENTER · bg #dbeafe · radius 14px · clip `6133:125178`
-              - [chữ] “B” — 7×17 [HUG×HUG] · @ (10.5, 5.5) flow · Afacad 13/17px 600 #2563eb · no-wrap `6133:125179`
-            - [khối] **Chọn người nói** — 150×33 [FIXED×HUG] · @ (51, 11) flow · row gap 6 pad 6 10 6 10 align CENTER · bg #f8fafc · radius 8px · border 1px solid #e2e8f0 · clip `6133:125180`
-              - [chữ] “Người 2 · Nam 3” — 92×19 [HUG×HUG] · @ (11, 7) flow · Afacad 14/19px 500 #334155 · no-wrap `6133:125181`
-              - [chữ] “⌄” — 8×19 [HUG×HUG] · @ (109, 7) flow · Afacad 14/19px 400 #64748b · no-wrap `6133:125182`
-            - [chữ] “Danke, gut. Und dir?” — 442×21 [FILL×HUG] · @ (211, 17) flow · Afacad 16/21px 400 #1e293b `6133:125183`
+          - [khối] **Lượt · Người 2 · Nam 3** — 680×55 [FILL×HUG] · @ (0, 65) flow · row gap 10 pad 10 12 10 12 align CENTER · bg #ffffff (bg/surface) · radius 8px · border 1px solid #e2e8f0 (border/default) · clip `6133:125177`
+            - [khối] **Avatar** — 28×28 · @ (13, 13.5) flow · row justify CENTER align CENTER · bg #dbeafe (color/extended/dbeafe) · radius 14px · clip `6133:125178`
+              - [chữ] “B” — 7×17 [HUG×HUG] · @ (10.5, 5.5) flow · Afacad 13/17px 600 #2563eb (color/extended/2563eb) · no-wrap `6133:125179`
+            - [khối] **Chọn người nói** — 150×33 [FIXED×HUG] · @ (51, 11) flow · row gap 6 pad 6 10 6 10 align CENTER · bg #f8fafc (bg/canvas) · radius 8px · border 1px solid #e2e8f0 (border/default) · clip `6133:125180`
+              - [chữ] “Người 2 · Nam 3” — 92×19 [HUG×HUG] · @ (11, 7) flow · Afacad 14/19px 500 #334155 (text/primary) · no-wrap `6133:125181`
+              - [chữ] “⌄” — 8×19 [HUG×HUG] · @ (109, 7) flow · Afacad 14/19px 400 #64748b (text/secondary) · no-wrap `6133:125182`
+            - [chữ] “Danke, gut. Und dir?” — 442×21 [FILL×HUG] · @ (211, 17) flow · Afacad 16/21px 400 #1e293b (color/extended/1e293b) `6133:125183`
             - [chữ] “⋮” — 4×21 [HUG×HUG] · @ (663, 17) flow · Afacad 16/21px 400 #94a3b8 · no-wrap `6133:125184`
-          - [khối] **Lượt · Người 1 · Nữ 2** — 680×55 [FILL×HUG] · @ (0, 130) flow · row gap 10 pad 10 12 10 12 align CENTER · bg #ffffff · radius 8px · border 1px solid #e2e8f0 · clip `6133:125185`
-            - [khối] **Avatar** — 28×28 · @ (13, 13.5) flow · row justify CENTER align CENTER · bg #ffedd5 · radius 14px · clip `6133:125186`
-              - [chữ] “A” — 8×17 [HUG×HUG] · @ (10, 5.5) flow · Afacad 13/17px 600 #e65100 · no-wrap `6133:125187`
-            - [khối] **Chọn người nói** — 150×33 [FIXED×HUG] · @ (51, 11) flow · row gap 6 pad 6 10 6 10 align CENTER · bg #f8fafc · radius 8px · border 1px solid #e2e8f0 · clip `6133:125188`
-              - [chữ] “Người 1 · Nữ 2” — 82×19 [HUG×HUG] · @ (11, 7) flow · Afacad 14/19px 500 #334155 · no-wrap `6133:125189`
-              - [chữ] “⌄” — 8×19 [HUG×HUG] · @ (99, 7) flow · Afacad 14/19px 400 #64748b · no-wrap `6133:125190`
-            - [chữ] “Auch gut, danke. Was machst du heute?” — 442×21 [FILL×HUG] · @ (211, 17) flow · Afacad 16/21px 400 #1e293b `6133:125191`
+          - [khối] **Lượt · Người 1 · Nữ 2** — 680×55 [FILL×HUG] · @ (0, 130) flow · row gap 10 pad 10 12 10 12 align CENTER · bg #ffffff (bg/surface) · radius 8px · border 1px solid #e2e8f0 (border/default) · clip `6133:125185`
+            - [khối] **Avatar** — 28×28 · @ (13, 13.5) flow · row justify CENTER align CENTER · bg #ffedd5 (bg/brand-tint-strong) · radius 14px · clip `6133:125186`
+              - [chữ] “A” — 8×17 [HUG×HUG] · @ (10, 5.5) flow · Afacad 13/17px 600 #e65100 (brand/primary) · no-wrap `6133:125187`
+            - [khối] **Chọn người nói** — 150×33 [FIXED×HUG] · @ (51, 11) flow · row gap 6 pad 6 10 6 10 align CENTER · bg #f8fafc (bg/canvas) · radius 8px · border 1px solid #e2e8f0 (border/default) · clip `6133:125188`
+              - [chữ] “Người 1 · Nữ 2” — 82×19 [HUG×HUG] · @ (11, 7) flow · Afacad 14/19px 500 #334155 (text/primary) · no-wrap `6133:125189`
+              - [chữ] “⌄” — 8×19 [HUG×HUG] · @ (99, 7) flow · Afacad 14/19px 400 #64748b (text/secondary) · no-wrap `6133:125190`
+            - [chữ] “Auch gut, danke. Was machst du heute?” — 442×21 [FILL×HUG] · @ (211, 17) flow · Afacad 16/21px 400 #1e293b (color/extended/1e293b) `6133:125191`
             - [chữ] “⋮” — 4×21 [HUG×HUG] · @ (663, 17) flow · Afacad 16/21px 400 #94a3b8 · no-wrap `6133:125192`
-          - [khối] **Lượt · Người 2 · Nam 3** — 680×55 [FILL×HUG] · @ (0, 195) flow · row gap 10 pad 10 12 10 12 align CENTER · bg #ffffff · radius 8px · border 1px solid #e2e8f0 · clip `6133:125193`
-            - [khối] **Avatar** — 28×28 · @ (13, 13.5) flow · row justify CENTER align CENTER · bg #dbeafe · radius 14px · clip `6133:125194`
-              - [chữ] “B” — 7×17 [HUG×HUG] · @ (10.5, 5.5) flow · Afacad 13/17px 600 #2563eb · no-wrap `6133:125195`
-            - [khối] **Chọn người nói** — 150×33 [FIXED×HUG] · @ (51, 11) flow · row gap 6 pad 6 10 6 10 align CENTER · bg #f8fafc · radius 8px · border 1px solid #e2e8f0 · clip `6133:125196`
-              - [chữ] “Người 2 · Nam 3” — 92×19 [HUG×HUG] · @ (11, 7) flow · Afacad 14/19px 500 #334155 · no-wrap `6133:125197`
-              - [chữ] “⌄” — 8×19 [HUG×HUG] · @ (109, 7) flow · Afacad 14/19px 400 #64748b · no-wrap `6133:125198`
-            - [chữ] “Ich gehe ins Kino. Kommst du mit?” — 442×21 [FILL×HUG] · @ (211, 17) flow · Afacad 16/21px 400 #1e293b `6133:125199`
+          - [khối] **Lượt · Người 2 · Nam 3** — 680×55 [FILL×HUG] · @ (0, 195) flow · row gap 10 pad 10 12 10 12 align CENTER · bg #ffffff (bg/surface) · radius 8px · border 1px solid #e2e8f0 (border/default) · clip `6133:125193`
+            - [khối] **Avatar** — 28×28 · @ (13, 13.5) flow · row justify CENTER align CENTER · bg #dbeafe (color/extended/dbeafe) · radius 14px · clip `6133:125194`
+              - [chữ] “B” — 7×17 [HUG×HUG] · @ (10.5, 5.5) flow · Afacad 13/17px 600 #2563eb (color/extended/2563eb) · no-wrap `6133:125195`
+            - [khối] **Chọn người nói** — 150×33 [FIXED×HUG] · @ (51, 11) flow · row gap 6 pad 6 10 6 10 align CENTER · bg #f8fafc (bg/canvas) · radius 8px · border 1px solid #e2e8f0 (border/default) · clip `6133:125196`
+              - [chữ] “Người 2 · Nam 3” — 92×19 [HUG×HUG] · @ (11, 7) flow · Afacad 14/19px 500 #334155 (text/primary) · no-wrap `6133:125197`
+              - [chữ] “⌄” — 8×19 [HUG×HUG] · @ (109, 7) flow · Afacad 14/19px 400 #64748b (text/secondary) · no-wrap `6133:125198`
+            - [chữ] “Ich gehe ins Kino. Kommst du mit?” — 442×21 [FILL×HUG] · @ (211, 17) flow · Afacad 16/21px 400 #1e293b (color/extended/1e293b) `6133:125199`
             - [chữ] “⋮” — 4×21 [HUG×HUG] · @ (663, 17) flow · Afacad 16/21px 400 #94a3b8 · no-wrap `6133:125200`
-          - [khối] **+ Thêm lượt thoại** — 680×41 [FILL×HUG] · @ (0, 260) flow · row gap 6 pad 10 12 10 12 justify CENTER · radius 8px · border 1px dashed #cbd5e1 · clip `6133:125201`
-            - [chữ] “+ Thêm lượt thoại” — 99×19 [HUG×HUG] · @ (290.5, 11) flow · Afacad 14/19px 500 #e65100 · no-wrap `6133:125202`
+          - [khối] **+ Thêm lượt thoại** — 680×41 [FILL×HUG] · @ (0, 260) flow · row gap 6 pad 10 12 10 12 justify CENTER · radius 8px · border 1px dashed #cbd5e1 (border/strong) · clip `6133:125201`
+            - [chữ] “+ Thêm lượt thoại” — 99×19 [HUG×HUG] · @ (290.5, 11) flow · Afacad 14/19px 500 #e65100 (brand/primary) · no-wrap `6133:125202`
         - [khối] **Footer** — 680×36 [FILL×HUG] · @ (21, 656) flow · row gap 12 align CENTER · clip `6133:124849`
-          - [chữ] “4 lượt · 2 người nói · ~ 12 giây âm thanh” — 434×19 [FILL×HUG] · @ (0, 8.5) flow · Afacad 14/19px 400 #64748b `6133:124850`
+          - [chữ] “4 lượt · 2 người nói · ~ 12 giây âm thanh” — 434×19 [FILL×HUG] · @ (0, 8.5) flow · Afacad 14/19px 400 #64748b (text/secondary) `6133:124850`
           - [instance] **Atom/Button** ⟨Atom/Button: Label=Xoá, Type=Secondary, Size=Medium⟩ — 78×36 [HUG×FIXED] · @ (446, 0) flow · row pad 10 24 10 24 justify CENTER align CENTER · bg #ffffff · radius 8px · border 1px solid #cbd5e1 (color/border/button) `6133:124851`
             - [chữ] “Xoá” — 28×21 [HUG×HUG] · @ (25, 7.5) flow · Afacad 17/21px 700 #334155 (color/text/primary) · no-wrap `I6133:124851;1048:1232`
           - [instance] **Atom/Button** ⟨Atom/Button: Label=Tạo giọng đọc, Type=Primary, Size=Medium⟩ — 144×36 [HUG×FIXED] · @ (536, 0) flow · row pad 10 24 10 24 justify CENTER align CENTER · bg #e65100 (color/brand/orange) · radius 8px · border 1px solid #ffffff · shadow 1px 1px 6px 0 rgba(230, 81, 0, 0.35), 0 0 4px 0 rgba(230, 81, 0, 0.05) `6133:124852`
             - [chữ] “Tạo giọng đọc” — 94×21 [HUG×HUG] · @ (25, 7.5) flow · Afacad 17/21px 700 #ffffff (color/neutral/white) · no-wrap `I6133:124852;1048:1230`
-      - [khối] **Card · Giọng & kết quả** — 420×713 [FIXED×FILL] · @ (738, 0) flow · column gap 16 pad 20 20 20 20 · bg #ffffff · radius 12px · border 1px solid #e2e8f0 · clip `6133:124853`
+      - [khối] **Card · Giọng & kết quả** — 420×713 [FIXED×FILL] · @ (738, 0) flow · column gap 16 pad 20 20 20 20 · bg #ffffff (bg/surface) · radius 12px · border 1px solid #e2e8f0 (border/default) · clip `6133:124853`
         - [khối] **Giọng header** — 378×20 [FILL×HUG] · @ (21, 21) flow · row gap 8 align CENTER · clip `6133:124854`
-          - [chữ] “Người nói” — 378×20 [FILL×HUG] · @ (0, 0) flow · Afacad 15/20px 600 #334155 `6133:124855`
+          - [chữ] “Người nói” — 378×20 [FILL×HUG] · @ (0, 0) flow · Afacad 15/20px 600 #334155 (text/primary) `6133:124855`
         - [khối] **Người nói** — 378×161 [FILL×HUG] · @ (21, 57) flow · column gap 8 · clip `6133:125205`
-          - [khối] **Người nói · Người 1** — 378×55 [FILL×HUG] · @ (0, 0) flow · row gap 10 pad 10 12 10 12 align CENTER · bg #ffffff · radius 8px · border 1px solid #e2e8f0 · clip `6133:125214`
-            - [khối] **Avatar** — 28×28 · @ (13, 13.5) flow · row justify CENTER align CENTER · bg #ffedd5 · radius 14px · clip `6133:125215`
-              - [chữ] “A” — 8×17 [HUG×HUG] · @ (10, 5.5) flow · Afacad 13/17px 600 #e65100 · no-wrap `6133:125216`
-            - [chữ] “Người 1” — 199×20 [FILL×HUG] · @ (51, 17.5) flow · Afacad 15/20px 500 #1e293b `6133:125217`
-            - [khối] **Giọng** — 105×33 [HUG×HUG] · @ (260, 11) flow · row gap 6 pad 6 10 6 10 · bg #f8fafc · radius 8px · border 1px solid #e2e8f0 · clip `6133:125218`
-              - [chữ] “Giọng: Nữ 2” — 69×19 [HUG×HUG] · @ (11, 7) flow · Afacad 14/19px 500 #334155 · no-wrap `6133:125219`
-              - [chữ] “⌄” — 8×19 [HUG×HUG] · @ (86, 7) flow · Afacad 14/19px 400 #64748b · no-wrap `6133:125220`
-          - [khối] **Người nói · Người 2** — 378×55 [FILL×HUG] · @ (0, 63) flow · row gap 10 pad 10 12 10 12 align CENTER · bg #ffffff · radius 8px · border 1px solid #e2e8f0 · clip `6133:125221`
-            - [khối] **Avatar** — 28×28 · @ (13, 13.5) flow · row justify CENTER align CENTER · bg #dbeafe · radius 14px · clip `6133:125222`
-              - [chữ] “B” — 7×17 [HUG×HUG] · @ (10.5, 5.5) flow · Afacad 13/17px 600 #2563eb · no-wrap `6133:125223`
-            - [chữ] “Người 2” — 189×20 [FILL×HUG] · @ (51, 17.5) flow · Afacad 15/20px 500 #1e293b `6133:125224`
-            - [khối] **Giọng** — 115×33 [HUG×HUG] · @ (250, 11) flow · row gap 6 pad 6 10 6 10 · bg #f8fafc · radius 8px · border 1px solid #e2e8f0 · clip `6133:125225`
-              - [chữ] “Giọng: Nam 3” — 79×19 [HUG×HUG] · @ (11, 7) flow · Afacad 14/19px 500 #334155 · no-wrap `6133:125226`
-              - [chữ] “⌄” — 8×19 [HUG×HUG] · @ (96, 7) flow · Afacad 14/19px 400 #64748b · no-wrap `6133:125227`
+          - [khối] **Người nói · Người 1** — 378×55 [FILL×HUG] · @ (0, 0) flow · row gap 10 pad 10 12 10 12 align CENTER · bg #ffffff (bg/surface) · radius 8px · border 1px solid #e2e8f0 (border/default) · clip `6133:125214`
+            - [khối] **Avatar** — 28×28 · @ (13, 13.5) flow · row justify CENTER align CENTER · bg #ffedd5 (bg/brand-tint-strong) · radius 14px · clip `6133:125215`
+              - [chữ] “A” — 8×17 [HUG×HUG] · @ (10, 5.5) flow · Afacad 13/17px 600 #e65100 (brand/primary) · no-wrap `6133:125216`
+            - [chữ] “Người 1” — 199×20 [FILL×HUG] · @ (51, 17.5) flow · Afacad 15/20px 500 #1e293b (color/extended/1e293b) `6133:125217`
+            - [khối] **Giọng** — 105×33 [HUG×HUG] · @ (260, 11) flow · row gap 6 pad 6 10 6 10 · bg #f8fafc (bg/canvas) · radius 8px · border 1px solid #e2e8f0 (border/default) · clip `6133:125218`
+              - [chữ] “Giọng: Nữ 2” — 69×19 [HUG×HUG] · @ (11, 7) flow · Afacad 14/19px 500 #334155 (text/primary) · no-wrap `6133:125219`
+              - [chữ] “⌄” — 8×19 [HUG×HUG] · @ (86, 7) flow · Afacad 14/19px 400 #64748b (text/secondary) · no-wrap `6133:125220`
+          - [khối] **Người nói · Người 2** — 378×55 [FILL×HUG] · @ (0, 63) flow · row gap 10 pad 10 12 10 12 align CENTER · bg #ffffff (bg/surface) · radius 8px · border 1px solid #e2e8f0 (border/default) · clip `6133:125221`
+            - [khối] **Avatar** — 28×28 · @ (13, 13.5) flow · row justify CENTER align CENTER · bg #dbeafe (color/extended/dbeafe) · radius 14px · clip `6133:125222`
+              - [chữ] “B” — 7×17 [HUG×HUG] · @ (10.5, 5.5) flow · Afacad 13/17px 600 #2563eb (color/extended/2563eb) · no-wrap `6133:125223`
+            - [chữ] “Người 2” — 189×20 [FILL×HUG] · @ (51, 17.5) flow · Afacad 15/20px 500 #1e293b (color/extended/1e293b) `6133:125224`
+            - [khối] **Giọng** — 115×33 [HUG×HUG] · @ (250, 11) flow · row gap 6 pad 6 10 6 10 · bg #f8fafc (bg/canvas) · radius 8px · border 1px solid #e2e8f0 (border/default) · clip `6133:125225`
+              - [chữ] “Giọng: Nam 3” — 79×19 [HUG×HUG] · @ (11, 7) flow · Afacad 14/19px 500 #334155 (text/primary) · no-wrap `6133:125226`
+              - [chữ] “⌄” — 8×19 [HUG×HUG] · @ (96, 7) flow · Afacad 14/19px 400 #64748b (text/secondary) · no-wrap `6133:125227`
           - [khối] **+ Thêm người nói** — 378×35 [FILL×HUG] · @ (0, 126) flow · row pad 8 12 8 12 · clip `6133:125228`
-            - [chữ] “+ Thêm người nói” — 97×19 [HUG×HUG] · @ (12, 8) flow · Afacad 14/19px 500 #e65100 · no-wrap `6133:125229`
-        - [hình] **Divider** — 378×1 [FILL×FIXED] · @ (21, 234) flow · bg #e2e8f0 `6133:124900`
+            - [chữ] “+ Thêm người nói” — 97×19 [HUG×HUG] · @ (12, 8) flow · Afacad 14/19px 500 #e65100 (brand/primary) · no-wrap `6133:125229`
+        - [hình] **Divider** — 378×1 [FILL×FIXED] · @ (21, 234) flow · bg #e2e8f0 (bg/strong) `6133:124900`
         - [khối] **Kết quả header** — 378×20 [FILL×HUG] · @ (21, 251) flow · row gap 8 align CENTER · clip `6133:124901`
-          - [chữ] “Kết quả” — 203×20 [FILL×HUG] · @ (0, 0) flow · Afacad 15/20px 600 #334155 `6133:124902`
+          - [chữ] “Kết quả” — 203×20 [FILL×HUG] · @ (0, 0) flow · Afacad 15/20px 600 #334155 (text/primary) `6133:124902`
           - [chữ] “Tiếng Đức · 2 người nói · 12 giây” — 167×17 [HUG×HUG] · @ (211, 1.5) flow · Afacad 13/17px 400 #94a3b8 · no-wrap `6133:124903`
         - [instance] **Atom/Audio Player** ⟨Atom/Audio Player: Thời gian=00:00 / 00:12, State=Chưa phát, Theme=Light⟩ — 378×44 [FILL×FIXED] · @ (21, 287) flow · row gap 12 pad 8 12 8 12 align CENTER · bg #fff5ec (color/extended/fff5ec) · radius 8px `6133:124904`
           - [icon] **Nút phát** — 28×28 · @ (12, 8) flow · file /figma/assets/bc2e0f76904c.svg `I6133:124904;5741:417256`

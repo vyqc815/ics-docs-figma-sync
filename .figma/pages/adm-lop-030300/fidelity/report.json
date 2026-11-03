@@ -12,37 +12,13 @@
   "pixels": {
     "width": 1440,
     "height": 1059,
-    "mismatched": 10233,
-    "percent": 0.671,
+    "mismatched": 9901,
+    "percent": 0.649,
     "shapePercent": 0.001,
-    "textPercent": 2.34,
+    "textPercent": 2.264,
     "sizeMismatch": false
   },
   "textNodes": [
-    {
-      "id": "I3497:65572;1308:6749",
-      "name": "100%",
-      "pixels": 83,
-      "percent": 24.7
-    },
-    {
-      "id": "I3497:65573;1308:6749",
-      "name": "100%",
-      "pixels": 83,
-      "percent": 24.7
-    },
-    {
-      "id": "I3497:65585;1308:6749",
-      "name": "100%",
-      "pixels": 83,
-      "percent": 24.7
-    },
-    {
-      "id": "I3497:65586;1308:6749",
-      "name": "100%",
-      "pixels": 83,
-      "percent": 24.7
-    },
     {
       "id": "3497:65459",
       "name": "ÔN TẬP: Giữa Kỳ 1",
@@ -108,6 +84,30 @@
       "name": "Label",
       "pixels": 141,
       "percent": 5.9
+    },
+    {
+      "id": "3497:67379",
+      "name": "3. [OT] Kiến thức 2",
+      "pixels": 136,
+      "percent": 5.7
+    },
+    {
+      "id": "3497:67362",
+      "name": "2. [OT] Kiến thức 1",
+      "pixels": 129,
+      "percent": 5.4
+    },
+    {
+      "id": "3497:67370",
+      "name": "- GV hướng dẫn HV luyện đọc các cụm pinyin và mẫu câu pinyin, tăng khả năng phản xạ đọc.",
+      "pixels": 659,
+      "percent": 5.3
+    },
+    {
+      "id": "3497:67409",
+      "name": "5. [OT] Mini test",
+      "pixels": 106,
+      "percent": 5.2
     }
   ],
   "regions": [
@@ -453,7 +453,7 @@
     "over": []
   },
   "failures": [],
-  "url": "http://localhost:3108/lop-hoc/bai-hoc/noi-dung",
+  "url": "http://localhost:3000/lop-hoc/bai-hoc/noi-dung",
   "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
   "consoleErrors": [],
   "rootFound": true

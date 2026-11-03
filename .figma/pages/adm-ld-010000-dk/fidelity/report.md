@@ -1,6 +1,6 @@
 # Fidelity: ADM-LD-010000-DK — Lịch / Lịch dạy tổng
 
-- URL: `http://localhost:3108/lich/lich-day-tong-dk`
+- URL: `http://localhost:3000/lich/lich-day-tong-dk`
 - Verdict: **PASS**
 - Pixels outside text: **0.005%** differ (limit 0.5%); all pixels: 0.291%; inside text boxes: 0.821% (glyph rendering)
 - Boxes: 527/527 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 527, ≤1px: 527, ≤2px: 527, ≤4px: 527, >4px: 0

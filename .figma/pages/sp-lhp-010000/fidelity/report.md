@@ -1,6 +1,6 @@
 # Fidelity: SP-LHP-010000 — Lịch họp / Dạng danh sách
 
-- URL: `http://localhost:3108/lich-hop/dang-danh-sach`
+- URL: `http://localhost:3000/lich-hop/dang-danh-sach`
 - Verdict: **PASS**
 - Pixels outside text: **0.047%** differ (limit 0.5%); all pixels: 0.47%; inside text boxes: 1.964% (glyph rendering)
 - Boxes: 379/379 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 379, ≤1px: 379, ≤2px: 379, ≤4px: 379, >4px: 0

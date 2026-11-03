@@ -1,0 +1,50 @@
+{
+  "route": "/lo-trinh/keo-tha-doi-thu-tu-dk",
+  "pageFile": "components/figma/cd-kh-020240-dk/index.tsx",
+  "docFile": "docs/pages/lo-trinh/keo-tha-doi-thu-tu-dk.md",
+  "sections": [
+    {
+      "nodeId": "6518:363528",
+      "component": "MainWorkspacecontainer",
+      "file": "components/figma/cd-kh-020240-dk/MainWorkspacecontainer.tsx"
+    },
+    {
+      "nodeId": "6518:364555",
+      "component": "SidebarMenuCd5",
+      "file": "components/figma/shared/SidebarMenuCd5.tsx"
+    },
+    {
+      "nodeId": "6518:364556",
+      "component": "Header50",
+      "file": "components/figma/shared/Header50.tsx"
+    },
+    {
+      "nodeId": "6518:372905",
+      "component": "ViTriTha",
+      "file": "components/figma/cd-kh-020240-dk/ViTriTha.tsx"
+    },
+    {
+      "nodeId": "6518:372857",
+      "component": "DongDangKeoBai6",
+      "file": "components/figma/cd-kh-020240-dk/DongDangKeoBai6.tsx"
+    }
+  ],
+  "idAlias": {
+    "6518:364556": "6518:363362",
+    "6518:364557": "6518:363363",
+    "6518:364604": "6518:363410",
+    "I6518:364604;2008:31768": "I6518:363410;2008:31768",
+    "I6518:364604;2008:31883": "I6518:363410;2008:31883",
+    "I6518:364604;2008:31884": "I6518:363410;2008:31884",
+    "I6518:364604;2008:31885": "I6518:363410;2008:31885",
+    "I6518:364604;2008:31771": "I6518:363410;2008:31771",
+    "I6518:364604;2008:31772": "I6518:363410;2008:31772",
+    "I6518:364604;2008:31773": "I6518:363410;2008:31773",
+    "I6518:364604;2008:31774": "I6518:363410;2008:31774",
+    "6518:364605": "6518:363411",
+    "I6518:364605;4019:24203": "I6518:363411;4019:24203",
+    "I6518:364605;4019:22291": "I6518:363411;4019:22291",
+    "I6518:364605;4019:24214": "I6518:363411;4019:24214",
+    "I6518:364605;4019:24215": "I6518:363411;4019:24215"
+  }
+}

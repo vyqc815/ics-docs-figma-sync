@@ -1,0 +1,17 @@
+{
+  "route": "/lich-su-luong/de-xuat-dang-xu-ly-khong-huy-duoc-dk",
+  "pageFile": "components/figma/gv-ls-010011-dk/index.tsx",
+  "docFile": "docs/pages/lich-su-luong/de-xuat-dang-xu-ly-khong-huy-duoc-dk.md",
+  "sections": [
+    {
+      "nodeId": "4899:110210",
+      "component": "Body",
+      "file": "components/figma/gv-ls-010011-dk/Body.tsx"
+    },
+    {
+      "nodeId": "4899:107397",
+      "component": "Section2",
+      "file": "components/figma/gv-ls-010011-dk/Section2.tsx"
+    }
+  ]
+}

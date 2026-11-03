@@ -1,8 +1,8 @@
 # Fidelity: CH-TC-010000-DK — Trang chủ / Thống kê tổng quan
 
-- URL: `http://localhost:3108/trang-chu/thong-ke-tong-quan-dk`
+- URL: `http://localhost:3000/trang-chu/thong-ke-tong-quan-dk`
 - Verdict: **PASS**
-- Pixels outside text: **0.002%** differ (limit 0.5%); all pixels: 0.162%; inside text boxes: 0.857% (glyph rendering)
+- Pixels outside text: **0.002%** differ (limit 0.5%); all pixels: 0.103%; inside text boxes: 0.541% (glyph rendering)
 - Boxes: 315/315 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 315, ≤1px: 315, ≤2px: 315, ≤4px: 315, >4px: 0
 
 ## Pixel regions (largest first)
@@ -16,11 +16,6 @@
 
 | Text | Differing |
 | --- | --- |
-| 80% (`I4056:146311;1391:14476`) | 26.1% |
-| 80% (`I4056:146347;1391:14476`) | 26.1% |
-| 0% (`I4056:146329;1308:6706`) | 26% |
-| 100% (`I4056:146365;1308:6749`) | 19.9% |
-| Label (`I4056:146212;2245:87774`) | 16.6% |
 | Ngày kết thúc (`4056:146268`) | 4.7% |
 | Label (`I4056:146213;2245:87829`) | 2.7% |
 | Label (`I4056:146214;3857:67909`) | 2.7% |
@@ -31,6 +26,11 @@
 | DN1-119 (`4056:146304`) | 2.3% |
 | Thống kê tổng quan (`4056:146226`) | 2.2% |
 | DN1-119 (`4056:146322`) | 2.2% |
+| DN1-119 (`4056:146340`) | 2.2% |
+| DN1-119 (`4056:146358`) | 2.2% |
+| Value (`I6247:155154;2015:36008`) | 2.1% |
+| Phụ Trách Lớp Đắc Nhân (`I4056:146140;2008:31709`) | 1.9% |
+| Label (`I4056:146212;2245:87774`) | 1.8% |
 
 ## Largest box differences
 

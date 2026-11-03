@@ -11,12 +11,12 @@
     {
       "nodeId": "6015:67542",
       "component": "SidebarMenuCd",
-      "file": "components/figma/cd-kh-020200-dk/SidebarMenuCd.tsx"
+      "file": "components/figma/shared/SidebarMenuCd.tsx"
     },
     {
       "nodeId": "6015:67543",
-      "component": "Header",
-      "file": "components/figma/cd-kh-020200-dk/Header.tsx"
+      "component": "Header46",
+      "file": "components/figma/shared/Header46.tsx"
     }
   ]
 }

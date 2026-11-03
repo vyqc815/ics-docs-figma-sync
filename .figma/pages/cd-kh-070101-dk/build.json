@@ -1,0 +1,50 @@
+{
+  "route": "/thu-vien/kien-thuc-menu-nhap-chua-dung-dk",
+  "pageFile": "components/figma/cd-kh-070101-dk/index.tsx",
+  "docFile": "docs/pages/thu-vien/kien-thuc-menu-nhap-chua-dung-dk.md",
+  "sections": [
+    {
+      "nodeId": "6579:375436",
+      "component": "Content",
+      "file": "components/figma/cd-kh-070101-dk/Content.tsx"
+    },
+    {
+      "nodeId": "6579:375760",
+      "component": "SidebarMenuCd25",
+      "file": "components/figma/shared/SidebarMenuCd25.tsx"
+    },
+    {
+      "nodeId": "6579:375761",
+      "component": "Header61",
+      "file": "components/figma/shared/Header61.tsx"
+    },
+    {
+      "nodeId": "6579:375812",
+      "component": "Menu",
+      "file": "components/figma/cd-kh-070101-dk/Menu.tsx"
+    },
+    {
+      "nodeId": "6579:375820",
+      "component": "MenuConDoiTrangThai",
+      "file": "components/figma/cd-kh-070101-dk/MenuConDoiTrangThai.tsx"
+    }
+  ],
+  "idAlias": {
+    "6579:375761": "6579:371581",
+    "6579:375762": "6579:371582",
+    "6579:375809": "6579:371629",
+    "I6579:375809;2008:31768": "I6579:371629;2008:31768",
+    "I6579:375809;2008:31883": "I6579:371629;2008:31883",
+    "I6579:375809;2008:31884": "I6579:371629;2008:31884",
+    "I6579:375809;2008:31885": "I6579:371629;2008:31885",
+    "I6579:375809;2008:31771": "I6579:371629;2008:31771",
+    "I6579:375809;2008:31772": "I6579:371629;2008:31772",
+    "I6579:375809;2008:31773": "I6579:371629;2008:31773",
+    "I6579:375809;2008:31774": "I6579:371629;2008:31774",
+    "6579:375810": "6579:371630",
+    "I6579:375810;4019:24203": "I6579:371630;4019:24203",
+    "I6579:375810;4019:22291": "I6579:371630;4019:22291",
+    "I6579:375810;4019:24214": "I6579:371630;4019:24214",
+    "I6579:375810;4019:24215": "I6579:371630;4019:24215"
+  }
+}

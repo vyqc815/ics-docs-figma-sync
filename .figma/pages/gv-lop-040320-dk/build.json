@@ -1,0 +1,22 @@
+{
+  "route": "/chi-tiet-lop/bai-tap-va-kiem-tra/man-cham-bai-tong-quan-cham-bai-dk",
+  "pageFile": "components/figma/gv-lop-040320-dk/index.tsx",
+  "docFile": "docs/pages/chi-tiet-lop/bai-tap-va-kiem-tra/man-cham-bai-tong-quan-cham-bai-dk.md",
+  "sections": [
+    {
+      "nodeId": "5756:83937",
+      "component": "Body",
+      "file": "components/figma/gv-lop-040320-dk/Body.tsx"
+    },
+    {
+      "nodeId": "5757:90486",
+      "component": "Header84",
+      "file": "components/figma/shared/Header84.tsx"
+    },
+    {
+      "nodeId": "5757:91085",
+      "component": "SidebarRail",
+      "file": "components/figma/gv-lop-040320-dk/SidebarRail.tsx"
+    }
+  ]
+}

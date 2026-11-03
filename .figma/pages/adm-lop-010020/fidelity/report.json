@@ -1,0 +1,676 @@
+{
+  "pass": true,
+  "thresholds": {
+    "maxPixelDiffPercent": 0.5,
+    "maxBoxDelta": 1,
+    "maxTextBoxDelta": 2.5,
+    "colorThreshold": 0.1,
+    "aaRadius": 1,
+    "subpixel": true,
+    "maxTextNodeDiffPercent": 35
+  },
+  "pixels": {
+    "width": 800,
+    "height": 520,
+    "mismatched": 961,
+    "percent": 0.231,
+    "shapePercent": 0.046,
+    "textPercent": 1.002,
+    "sizeMismatch": false
+  },
+  "textNodes": [
+    {
+      "id": "I2008:45767;1739:32361",
+      "name": "18:30",
+      "pixels": 64,
+      "percent": 7.8
+    },
+    {
+      "id": "I2008:45667;1739:32361",
+      "name": "18:30",
+      "pixels": 57,
+      "percent": 7
+    },
+    {
+      "id": "I2008:45717;1739:32361",
+      "name": "18:30",
+      "pixels": 56,
+      "percent": 6.8
+    },
+    {
+      "id": "I2008:45660;1739:32803",
+      "name": "18:30",
+      "pixels": 43,
+      "percent": 5.3
+    },
+    {
+      "id": "I2008:45760;1739:32361",
+      "name": "18:30",
+      "pixels": 43,
+      "percent": 5.3
+    },
+    {
+      "id": "I2008:45649;1739:32355",
+      "name": "Thứ Ba, 22.09.2026",
+      "pixels": 123,
+      "percent": 5
+    },
+    {
+      "id": "I2008:45710;1739:32361",
+      "name": "18:30",
+      "pixels": 39,
+      "percent": 4.8
+    },
+    {
+      "id": "2008:45666",
+      "name": "Giờ kết thúc",
+      "pixels": 45,
+      "percent": 2.9
+    },
+    {
+      "id": "2008:45716",
+      "name": "Giờ kết thúc",
+      "pixels": 45,
+      "percent": 2.9
+    },
+    {
+      "id": "2008:45766",
+      "name": "Giờ kết thúc",
+      "pixels": 45,
+      "percent": 2.9
+    },
+    {
+      "id": "I2008:46511;2177:28936",
+      "name": "Nhiệm vụ con",
+      "pixels": 74,
+      "percent": 2.5
+    },
+    {
+      "id": "2008:45659",
+      "name": "Giờ bắt đầu",
+      "pixels": 26,
+      "percent": 1.7
+    },
+    {
+      "id": "2008:45709",
+      "name": "Giờ bắt đầu",
+      "pixels": 26,
+      "percent": 1.7
+    },
+    {
+      "id": "2008:45759",
+      "name": "Giờ bắt đầu",
+      "pixels": 26,
+      "percent": 1.7
+    },
+    {
+      "id": "2008:45801",
+      "name": "Đã trùng lịch dạy",
+      "pixels": 17,
+      "percent": 0.9
+    }
+  ],
+  "regions": [
+    {
+      "x": 576,
+      "y": 136,
+      "width": 24,
+      "height": 24,
+      "pixels": 22,
+      "node": {
+        "id": "2008:45685",
+        "name": "Frame 427325137",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 576,
+      "y": 232,
+      "width": 24,
+      "height": 24,
+      "pixels": 22,
+      "node": {
+        "id": "2008:45735",
+        "name": "Frame 427325137",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 576,
+      "y": 328,
+      "width": 24,
+      "height": 24,
+      "pixels": 22,
+      "node": {
+        "id": "2008:45785",
+        "name": "Frame 427325137",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 328,
+      "y": 136,
+      "width": 24,
+      "height": 24,
+      "pixels": 15,
+      "node": {
+        "id": "2008:45685",
+        "name": "Frame 427325137",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 328,
+      "y": 232,
+      "width": 24,
+      "height": 24,
+      "pixels": 15,
+      "node": {
+        "id": "2008:45735",
+        "name": "Frame 427325137",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 328,
+      "y": 328,
+      "width": 24,
+      "height": 24,
+      "pixels": 15,
+      "node": {
+        "id": "2008:45785",
+        "name": "Frame 427325137",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 592,
+      "y": 72,
+      "width": 16,
+      "height": 8,
+      "pixels": 11,
+      "node": {
+        "id": "I2008:45649;1739:32354",
+        "name": "Subtract",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 456,
+      "y": 136,
+      "width": 24,
+      "height": 24,
+      "pixels": 10,
+      "node": {
+        "id": "2008:45685",
+        "name": "Frame 427325137",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 80,
+      "y": 136,
+      "width": 16,
+      "height": 16,
+      "pixels": 5,
+      "node": {
+        "id": "I2008:45660;1739:32801",
+        "name": "Subtract",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 208,
+      "y": 136,
+      "width": 16,
+      "height": 16,
+      "pixels": 5,
+      "node": {
+        "id": "I2008:45667;1739:32359",
+        "name": "Subtract",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 152,
+      "y": 144,
+      "width": 16,
+      "height": 8,
+      "pixels": 5,
+      "node": {
+        "id": "I2008:45660;1739:32804",
+        "name": "Action Icon",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 80,
+      "y": 232,
+      "width": 16,
+      "height": 8,
+      "pixels": 5,
+      "node": {
+        "id": "I2008:45710;1739:32359",
+        "name": "Subtract",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 208,
+      "y": 232,
+      "width": 16,
+      "height": 8,
+      "pixels": 5,
+      "node": {
+        "id": "I2008:45717;1739:32359",
+        "name": "Subtract",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 456,
+      "y": 232,
+      "width": 16,
+      "height": 8,
+      "pixels": 5,
+      "node": {
+        "id": "2008:45735",
+        "name": "Frame 427325137",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 456,
+      "y": 248,
+      "width": 24,
+      "height": 8,
+      "pixels": 5,
+      "node": {
+        "id": "2008:45735",
+        "name": "Frame 427325137",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 80,
+      "y": 328,
+      "width": 16,
+      "height": 8,
+      "pixels": 5,
+      "node": {
+        "id": "I2008:45760;1739:32359",
+        "name": "Subtract",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 208,
+      "y": 328,
+      "width": 16,
+      "height": 8,
+      "pixels": 5,
+      "node": {
+        "id": "I2008:45767;1739:32359",
+        "name": "Subtract",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 456,
+      "y": 328,
+      "width": 16,
+      "height": 8,
+      "pixels": 5,
+      "node": {
+        "id": "2008:45785",
+        "name": "Frame 427325137",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 456,
+      "y": 344,
+      "width": 24,
+      "height": 8,
+      "pixels": 5,
+      "node": {
+        "id": "2008:45785",
+        "name": "Frame 427325137",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 344,
+      "y": 416,
+      "width": 8,
+      "height": 8,
+      "pixels": 4,
+      "node": {
+        "id": "2008:45803",
+        "name": "SVG",
+        "role": "icon"
+      }
+    }
+  ],
+  "boxes": {
+    "measured": 164,
+    "missing": [],
+    "withinThreshold": 164,
+    "buckets": {
+      "≤0.5px": 164,
+      "≤1px": 164,
+      "≤2px": 164,
+      "≤4px": 164,
+      ">4px": 0
+    },
+    "worst": [
+      {
+        "id": "2008:45656",
+        "name": "Frame 427326015",
+        "role": "container",
+        "delta": 0.5,
+        "dx": 0,
+        "dy": 0,
+        "dw": -0.5,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2008:45661",
+        "name": "Dash Separator:margin:align-flex-end",
+        "role": "container",
+        "delta": 0.5,
+        "dx": 0,
+        "dy": 0,
+        "dw": -0.5,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2008:45662",
+        "name": "Dash Separator:margin",
+        "role": "container",
+        "delta": 0.5,
+        "dx": 0,
+        "dy": 0,
+        "dw": -0.5,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2008:45663",
+        "name": "–",
+        "role": "text",
+        "delta": 0.5,
+        "dx": 0,
+        "dy": 0,
+        "dw": -0.5,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2008:45664",
+        "name": "Frame 427326014",
+        "role": "container",
+        "delta": 0.5,
+        "dx": -0.5,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2008:45665",
+        "name": "Label",
+        "role": "container",
+        "delta": 0.5,
+        "dx": -0.5,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2008:45666",
+        "name": "Giờ kết thúc",
+        "role": "text",
+        "delta": 0.5,
+        "dx": -0.5,
+        "dy": 0,
+        "dw": 0.09,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2008:45667",
+        "name": "Time",
+        "role": "instance",
+        "delta": 0.5,
+        "dx": -0.5,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I2008:45667;1739:32358",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.5,
+        "dx": -0.5,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I2008:45667;1739:32359",
+        "name": "Subtract",
+        "role": "icon",
+        "delta": 0.5,
+        "dx": -0.5,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I2008:45667;1739:32360",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.5,
+        "dx": -0.5,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I2008:45667;1739:32361",
+        "name": "18:30",
+        "role": "text",
+        "delta": 0.5,
+        "dx": -0.5,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I2008:45667;1739:32362",
+        "name": "Action Icon",
+        "role": "icon",
+        "delta": 0.5,
+        "dx": -0.5,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2008:45668",
+        "name": "Vector 2",
+        "role": "icon",
+        "delta": 0.5,
+        "dx": -0.5,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2008:45669",
+        "name": "Frame 1171274922",
+        "role": "container",
+        "delta": 0.5,
+        "dx": -0.5,
+        "dy": 0,
+        "dw": 0.5,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2008:45670",
+        "name": "Frame 427323673",
+        "role": "container",
+        "delta": 0.5,
+        "dx": -0.5,
+        "dy": 0,
+        "dw": 0.5,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2008:45671",
+        "name": "Frame 427323677",
+        "role": "container",
+        "delta": 0.5,
+        "dx": -0.5,
+        "dy": 0,
+        "dw": 0.07,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2008:45672",
+        "name": "Thứ 2",
+        "role": "text",
+        "delta": 0.5,
+        "dx": -0.5,
+        "dy": 0,
+        "dw": 0.07,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2008:45685",
+        "name": "Frame 427325137",
+        "role": "icon",
+        "delta": 0.5,
+        "dx": -0.5,
+        "dy": 0,
+        "dw": 0.5,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2008:45706",
+        "name": "Frame 427326015",
+        "role": "container",
+        "delta": 0.5,
+        "dx": 0,
+        "dy": 0,
+        "dw": -0.5,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2008:45711",
+        "name": "Dash Separator:margin:align-flex-end",
+        "role": "container",
+        "delta": 0.5,
+        "dx": 0,
+        "dy": 0,
+        "dw": -0.5,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2008:45712",
+        "name": "Dash Separator:margin",
+        "role": "container",
+        "delta": 0.5,
+        "dx": 0,
+        "dy": 0,
+        "dw": -0.5,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2008:45713",
+        "name": "–",
+        "role": "text",
+        "delta": 0.5,
+        "dx": 0,
+        "dy": 0,
+        "dw": -0.5,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2008:45714",
+        "name": "Frame 427326014",
+        "role": "container",
+        "delta": 0.5,
+        "dx": -0.5,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2008:45715",
+        "name": "Label",
+        "role": "container",
+        "delta": 0.5,
+        "dx": -0.5,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      }
+    ],
+    "maxDelta": 0.5,
+    "over": []
+  },
+  "failures": [],
+  "url": "http://localhost:3000/danh-sach-lop-hoc/popup-them-lich-day-co-dinh",
+  "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
+  "consoleErrors": [],
+  "rootFound": true
+}

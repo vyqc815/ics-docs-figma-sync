@@ -1,0 +1,472 @@
+{
+  "pass": true,
+  "thresholds": {
+    "maxPixelDiffPercent": 0.5,
+    "maxBoxDelta": 1,
+    "maxTextBoxDelta": 2.5,
+    "colorThreshold": 0.1,
+    "aaRadius": 1,
+    "subpixel": true,
+    "maxTextNodeDiffPercent": 35
+  },
+  "pixels": {
+    "width": 1440,
+    "height": 1015,
+    "mismatched": 2337,
+    "percent": 0.16,
+    "shapePercent": 0.042,
+    "textPercent": 0.792,
+    "sizeMismatch": false
+  },
+  "textNodes": [
+    {
+      "id": "4885:62420",
+      "name": "Tên khảo sát",
+      "pixels": 607,
+      "percent": 10.4
+    },
+    {
+      "id": "I4885:66882;2245:87858",
+      "name": "Label",
+      "pixels": 242,
+      "percent": 9.7
+    },
+    {
+      "id": "I4885:66884;2245:87820",
+      "name": "Label",
+      "pixels": 69,
+      "percent": 2.7
+    },
+    {
+      "id": "I4885:66877;2245:87820",
+      "name": "Label",
+      "pixels": 62,
+      "percent": 2.4
+    },
+    {
+      "id": "I4885:66878;2245:87768",
+      "name": "Label",
+      "pixels": 69,
+      "percent": 2.4
+    },
+    {
+      "id": "I4885:66886;2245:87820",
+      "name": "Label",
+      "pixels": 61,
+      "percent": 2.4
+    },
+    {
+      "id": "I4885:66888;2245:87768",
+      "name": "Label",
+      "pixels": 62,
+      "percent": 2.2
+    },
+    {
+      "id": "I4885:66887;2245:87768",
+      "name": "Label",
+      "pixels": 54,
+      "percent": 1.9
+    },
+    {
+      "id": "I4885:66881;2245:87839",
+      "name": "Label",
+      "pixels": 45,
+      "percent": 1.8
+    },
+    {
+      "id": "I4885:66889;2245:87768",
+      "name": "Label",
+      "pixels": 51,
+      "percent": 1.8
+    },
+    {
+      "id": "4885:62554",
+      "name": "Tên",
+      "pixels": 77,
+      "percent": 1.7
+    },
+    {
+      "id": "I4885:66880;2245:87829",
+      "name": "Label",
+      "pixels": 37,
+      "percent": 1.4
+    },
+    {
+      "id": "I4885:66879;2245:87820",
+      "name": "Label",
+      "pixels": 33,
+      "percent": 1.3
+    },
+    {
+      "id": "I4885:66883;2245:87864",
+      "name": "Label",
+      "pixels": 33,
+      "percent": 1.3
+    },
+    {
+      "id": "I4885:66885;2245:87768",
+      "name": "Label",
+      "pixels": 36,
+      "percent": 1.3
+    }
+  ],
+  "regions": [
+    {
+      "x": 1168,
+      "y": 344,
+      "width": 152,
+      "height": 32,
+      "pixels": 584,
+      "node": {
+        "id": "4885:62549",
+        "name": "Trạng thái giao",
+        "role": "instance"
+      }
+    },
+    {
+      "x": 56,
+      "y": 16,
+      "width": 16,
+      "height": 32,
+      "pixels": 8,
+      "node": {
+        "id": "4885:66861",
+        "name": "Navigation / Sidebar Menu / Light",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 16,
+      "y": 16,
+      "width": 16,
+      "height": 8,
+      "pixels": 6,
+      "node": {
+        "id": "4885:66861",
+        "name": "Navigation / Sidebar Menu / Light",
+        "role": "icon"
+      }
+    }
+  ],
+  "boxes": {
+    "measured": 286,
+    "missing": [],
+    "withinThreshold": 286,
+    "buckets": {
+      "≤0.5px": 285,
+      "≤1px": 285,
+      "≤2px": 286,
+      "≤4px": 286,
+      ">4px": 0
+    },
+    "worst": [
+      {
+        "id": "4885:62420",
+        "name": "Tên khảo sát",
+        "role": "text",
+        "delta": 1.83,
+        "dx": 0,
+        "dy": 0,
+        "dw": 1.83,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4885:62497",
+        "name": "Người chọn",
+        "role": "container",
+        "delta": 0.34,
+        "dx": -0.34,
+        "dy": 0,
+        "dw": 0.34,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5019:10670",
+        "name": "Avatars",
+        "role": "container",
+        "delta": 0.34,
+        "dx": -0.34,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4885:62498",
+        "name": "Avatar",
+        "role": "instance",
+        "delta": 0.34,
+        "dx": -0.34,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4885:62498;3228:62848",
+        "name": "Ellipse 76",
+        "role": "image",
+        "delta": 0.34,
+        "dx": -0.34,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4885:62499",
+        "name": "Avatar",
+        "role": "instance",
+        "delta": 0.34,
+        "dx": -0.34,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4885:62499;3228:62850",
+        "name": "Ellipse 76",
+        "role": "image",
+        "delta": 0.34,
+        "dx": -0.34,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4885:62500",
+        "name": "Avatar",
+        "role": "instance",
+        "delta": 0.34,
+        "dx": -0.34,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4885:62500;3228:62852",
+        "name": "Ellipse 76",
+        "role": "image",
+        "delta": 0.34,
+        "dx": -0.34,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4885:62501",
+        "name": "  và 8 người khác",
+        "role": "text",
+        "delta": 0.34,
+        "dx": -0.34,
+        "dy": 0,
+        "dw": 0.34,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4885:62456",
+        "name": "C. Tương đối đồng bộ",
+        "role": "text",
+        "delta": 0.17,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.17,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4885:62457",
+        "name": "Người chọn",
+        "role": "container",
+        "delta": 0.11,
+        "dx": -0.11,
+        "dy": 0,
+        "dw": 0.11,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5019:10668",
+        "name": "Avatars",
+        "role": "container",
+        "delta": 0.11,
+        "dx": -0.11,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4885:62458",
+        "name": "Avatar",
+        "role": "instance",
+        "delta": 0.11,
+        "dx": -0.11,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4885:62458;3228:62834",
+        "name": "Ellipse 76",
+        "role": "image",
+        "delta": 0.11,
+        "dx": -0.11,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4885:62459",
+        "name": "Avatar",
+        "role": "instance",
+        "delta": 0.11,
+        "dx": -0.11,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4885:62459;3228:62838",
+        "name": "Ellipse 76",
+        "role": "image",
+        "delta": 0.11,
+        "dx": -0.11,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4885:62460",
+        "name": "Avatar",
+        "role": "instance",
+        "delta": 0.11,
+        "dx": -0.11,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4885:62460;3228:62846",
+        "name": "Ellipse 76",
+        "role": "image",
+        "delta": 0.11,
+        "dx": -0.11,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4885:62461",
+        "name": "  và 40 người khác",
+        "role": "text",
+        "delta": 0.11,
+        "dx": -0.11,
+        "dy": 0,
+        "dw": 0.11,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4885:62485",
+        "name": "Người chọn",
+        "role": "container",
+        "delta": 0.11,
+        "dx": -0.11,
+        "dy": 0,
+        "dw": 0.11,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5019:10669",
+        "name": "Avatars",
+        "role": "container",
+        "delta": 0.11,
+        "dx": -0.11,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4885:62486",
+        "name": "Avatar",
+        "role": "instance",
+        "delta": 0.11,
+        "dx": -0.11,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4885:62486;3228:62836",
+        "name": "Ellipse 76",
+        "role": "image",
+        "delta": 0.11,
+        "dx": -0.11,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4885:62487",
+        "name": "Avatar",
+        "role": "instance",
+        "delta": 0.11,
+        "dx": -0.11,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      }
+    ],
+    "maxDelta": 1.83,
+    "over": []
+  },
+  "failures": [],
+  "url": "http://localhost:3000/khao-sat/giao-khao-sat-hoc-vien/ket-qua-khao-sat-dk",
+  "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
+  "consoleErrors": [],
+  "rootFound": true
+}

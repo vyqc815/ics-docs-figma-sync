@@ -12,19 +12,13 @@
   "pixels": {
     "width": 1440,
     "height": 810,
-    "mismatched": 2556,
-    "percent": 0.219,
+    "mismatched": 1968,
+    "percent": 0.169,
     "shapePercent": 0.035,
-    "textPercent": 0.965,
+    "textPercent": 0.702,
     "sizeMismatch": false
   },
   "textNodes": [
-    {
-      "id": "I4899:118220;2245:87864",
-      "name": "Label",
-      "pixels": 615,
-      "percent": 24.6
-    },
     {
       "id": "I4899:118222;1981:25753;1971:8814",
       "name": "Value",
@@ -108,6 +102,12 @@
       "name": "Label",
       "pixels": 69,
       "percent": 2.4
+    },
+    {
+      "id": "I4899:118224;2245:87768",
+      "name": "Label",
+      "pixels": 62,
+      "percent": 2.2
     }
   ],
   "regions": [
@@ -621,7 +621,7 @@
     "over": []
   },
   "failures": [],
-  "url": "http://localhost:3108/luong/de-xuat-tang-luong-dk",
+  "url": "http://localhost:3000/luong/de-xuat-tang-luong-dk",
   "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
   "consoleErrors": [],
   "rootFound": true

@@ -1,0 +1,27 @@
+{
+  "route": "/lo-trinh/dropdown-chon-ky-dk",
+  "pageFile": "components/figma/cd-kh-020230-dk/index.tsx",
+  "docFile": "docs/pages/lo-trinh/dropdown-chon-ky-dk.md",
+  "sections": [
+    {
+      "nodeId": "6518:362334",
+      "component": "MainWorkspacecontainer",
+      "file": "components/figma/cd-kh-020230-dk/MainWorkspacecontainer.tsx"
+    },
+    {
+      "nodeId": "6518:363361",
+      "component": "SidebarMenuCd4",
+      "file": "components/figma/shared/SidebarMenuCd4.tsx"
+    },
+    {
+      "nodeId": "6518:363362",
+      "component": "Header50",
+      "file": "components/figma/shared/Header50.tsx"
+    },
+    {
+      "nodeId": "6518:372802",
+      "component": "MenuChonKy",
+      "file": "components/figma/cd-kh-020230-dk/MenuChonKy.tsx"
+    }
+  ]
+}

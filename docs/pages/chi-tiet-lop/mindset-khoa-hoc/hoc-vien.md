@@ -5,7 +5,7 @@
 > **Nguồn:** PLS-ICS T8/2026 ›             ├─ MINDSET KHOÁ HỌC › GV-LOP-080100 — Chi tiết lớp / Mindset khoá học / Học viên (`4333:15552`, file `rRVs5HX0kIHffbS0V40djG`)  
 > **Route:** `/chi-tiet-lop/mindset-khoa-hoc/hoc-vien`  
 > **Khung thiết kế:** 1440 × 810 px (cắt phần tràn ra ngoài khung)  
-> **Xuất lúc:** 2026-11-02T03:54:37.871Z  
+> **Xuất lúc:** 2026-11-03T01:10:00.404Z  
 > **Spec đầy đủ (giá trị chính xác từng node):** `../../../../.figma/pages/gv-lop-080100/page-spec.json`
 
 ## 1. Tổng quan
@@ -27,6 +27,7 @@ Nền trang: `#f8fafc`.
 
 | Token | Biến CSS | Giá trị | Trỏ tới | Bộ / mode |
 | --- | --- | --- | --- | --- |
+| `bg/surface` | `--bg-surface` | `#ffffff` | color/neutral/white | Theme · Semantic / Light |
 | `color/border/default` | `--color-border-default` | `#e2e8f0` |  | Color Tokens / Light |
 | `color/brand/orange` | `--color-brand-orange` | `#e65100` |  | Color Tokens / Light |
 | `color/extended/ff9537` | `--color-extended-ff9537` | `#ff9537` |  | Color Tokens / Light |
@@ -98,27 +99,27 @@ Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí ·
           - [khối] **Package Title Area** — 640×26 [FILL×HUG] · @ (0, 0) flow · column gap 2 `4333:16239`
             - [khối] **Heading 1** — 640×26 [FILL×HUG] · @ (0, 0) flow · column `4333:16240`
               - [chữ] “HỌC VIÊN” — 640×26 [FILL×HUG] · @ (0, 0) flow · Unbounded 17/26px 600 #e65100 (color/brand/orange) `4333:16241`
-          - [khối] **Accordion · HỌC VIÊN** — 640×408 [FILL×HUG] · @ (0, 38) flow · column · bg #ffffff · radius 12px · border 1px solid #e2e8f0 (color/border/default) · shadow 0 1.13px 2.25px 0 rgba(0, 0, 0, 0.05) `4333:16244`
+          - [khối] **Accordion · HỌC VIÊN** — 640×408 [FILL×HUG] · @ (0, 38) flow · column · bg #ffffff (bg/surface) · radius 12px · border 1px solid #e2e8f0 (color/border/default) · shadow 0 1.13px 2.25px 0 rgba(0, 0, 0, 0.05) `4333:16244`
             - [khối] **Header** — 638×38 [FILL×HUG] · @ (1, 1) flow · row space-between pad 8 12 8 12 align CENTER · bg #fff7ed (color/extended/fff7ed) · radius 11px 11px 0 0 · border 0 0 1px 0 solid #ffedd5 (color/extended/ffedd5) `4333:16245`
               - [khối] **Container** — 68×21 [HUG×HUG] · @ (12, 8) flow · row gap 8 align CENTER `4333:16246`
                 - [chữ] “HỌC VIÊN” — 68×21 [HUG×HUG] · @ (0, 0) flow · Afacad 17/21px 600 #334155 (color/text/primary) · no-wrap `4333:16247`
               - [icon] **Collapse Icon Button** — 18×18 · @ (608, 9.5) flow · file /figma/assets/e91d48175163.svg `4333:16248`
             - [khối] **Nội dung** — 638×368 [FILL×HUG] · @ (1, 39) flow · column gap 12 pad 12 12 12 12 `4333:16252`
-              - [khối] **Accordion · Chân dung học viên** — 614×113 [FILL×HUG] · @ (12, 12) flow · column · bg #ffffff · radius 12px · border 1px solid #e2e8f0 (color/border/default) · shadow 0 1.13px 2.25px 0 rgba(0, 0, 0, 0.05) `4333:16359`
+              - [khối] **Accordion · Chân dung học viên** — 614×113 [FILL×HUG] · @ (12, 12) flow · column · bg #ffffff (bg/surface) · radius 12px · border 1px solid #e2e8f0 (color/border/default) · shadow 0 1.13px 2.25px 0 rgba(0, 0, 0, 0.05) `4333:16359`
                 - [khối] **Header** — 612×38 [FILL×HUG] · @ (1, 1) flow · row space-between pad 8 12 8 12 align CENTER · bg #fff7ed (color/extended/fff7ed) · radius 11px 11px 0 0 · border 0 0 1px 0 solid #ffedd5 (color/extended/ffedd5) · clip `4333:16360`
                   - [khối] **Container** — 133×21 [HUG×HUG] · @ (12, 8) flow · row gap 8 align CENTER `4333:16361`
                     - [chữ] “Chân dung học viên” — 133×21 [HUG×HUG] · @ (0, 0) flow · Afacad 17/21px 600 #334155 (color/text/primary) · no-wrap `4333:16362`
                   - [icon] **Collapse Icon Button** — 18×18 · @ (582, 9.5) flow · file /figma/assets/e91d48175163.svg `4333:16363`
                 - [khối] **Nội dung** — 612×73 [FILL×HUG] · @ (1, 39) flow · column pad 8 12 8 12 `4333:16366`
                   - [chữ] “- Người học tiếng Đức để du học. ⏎ - Người đã có bằng đại học, đang đi làm, học tiếng Đức phục vụ diện công nhận văn bằng. ⏎ - Người đã từng học tiếng Đức và muốn học lại một cách bài bản.” — 588×57 [FILL×HUG] · @ (12, 8) flow · Afacad 15/19px 400 #334155 (color/text/primary) `4333:16367`
-              - [khối] **Accordion · Vấn đề của học viên** — 614×113 [FILL×HUG] · @ (12, 137) flow · column · bg #ffffff · radius 12px · border 1px solid #e2e8f0 (color/border/default) · shadow 0 1.13px 2.25px 0 rgba(0, 0, 0, 0.05) `4333:16368`
+              - [khối] **Accordion · Vấn đề của học viên** — 614×113 [FILL×HUG] · @ (12, 137) flow · column · bg #ffffff (bg/surface) · radius 12px · border 1px solid #e2e8f0 (color/border/default) · shadow 0 1.13px 2.25px 0 rgba(0, 0, 0, 0.05) `4333:16368`
                 - [khối] **Header** — 612×38 [FILL×HUG] · @ (1, 1) flow · row space-between pad 8 12 8 12 align CENTER · bg #fff7ed (color/extended/fff7ed) · radius 11px 11px 0 0 · border 0 0 1px 0 solid #ffedd5 (color/extended/ffedd5) · clip `4333:16369`
                   - [khối] **Container** — 133×21 [HUG×HUG] · @ (12, 8) flow · row gap 8 align CENTER `4333:16370`
                     - [chữ] “Vấn đề của học viên” — 133×21 [HUG×HUG] · @ (0, 0) flow · Afacad 17/21px 600 #334155 (color/text/primary) · no-wrap `4333:16371`
                   - [icon] **Collapse Icon Button** — 18×18 · @ (582, 9.5) flow · file /figma/assets/e91d48175163.svg `4333:16372`
                 - [khối] **Nội dung** — 612×73 [FILL×HUG] · @ (1, 39) flow · column pad 8 12 8 12 `4333:16375`
                   - [chữ] “- Cảm thấy tiếng Đức khó, không biết bắt đầu từ đâu. ⏎ - Không có nền tảng học ngoại ngữ chuyên sâu nên còn mơ hồ về cách học. ⏎ - Không thể tham gia lớp học trực tiếp.” — 588×57 [FILL×HUG] · @ (12, 8) flow · Afacad 15/19px 400 #334155 (color/text/primary) `4333:16376`
-              - [khối] **Accordion · Kỳ vọng của học viên** — 614×94 [FILL×HUG] · @ (12, 262) flow · column · bg #ffffff · radius 12px · border 1px solid #e2e8f0 (color/border/default) · shadow 0 1.13px 2.25px 0 rgba(0, 0, 0, 0.05) `4333:16377`
+              - [khối] **Accordion · Kỳ vọng của học viên** — 614×94 [FILL×HUG] · @ (12, 262) flow · column · bg #ffffff (bg/surface) · radius 12px · border 1px solid #e2e8f0 (color/border/default) · shadow 0 1.13px 2.25px 0 rgba(0, 0, 0, 0.05) `4333:16377`
                 - [khối] **Header** — 612×38 [FILL×HUG] · @ (1, 1) flow · row space-between pad 8 12 8 12 align CENTER · bg #fff7ed (color/extended/fff7ed) · radius 11px 11px 0 0 · border 0 0 1px 0 solid #ffedd5 (color/extended/ffedd5) · clip `4333:16378`
                   - [khối] **Container** — 141×21 [HUG×HUG] · @ (12, 8) flow · row gap 8 align CENTER `4333:16379`
                     - [chữ] “Kỳ vọng của học viên” — 141×21 [HUG×HUG] · @ (0, 0) flow · Afacad 17/21px 600 #334155 (color/text/primary) · no-wrap `4333:16380`
@@ -132,16 +133,16 @@ Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí ·
               - [khối] **Heading 1** — 307×23 [HUG×HUG] · @ (0, 0) flow · column `4333:16298`
                 - [chữ] “Danh Sách” — 307×23 [FIXED×HUG] · @ (0, 0) flow · Unbounded 15/23px 600 #334155 (color/text/primary) `4333:16299`
             - [khối] **Frame 427321957** — 427×208 [FILL×HUG] · @ (0, 35) flow · column gap 8 `4333:16300`
-              - [khối] **Main Toggle Item Card** — 427×46 [FILL×HUG] · @ (0, 0) flow · row space-between pad 12 12 12 12 align CENTER · bg #ffffff · radius 8px · shadow inset 0 0 0 1.5px #ff9537, 0 1.13px 2.25px 0 rgba(0, 0, 0, 0.05) `4333:16301`
+              - [khối] **Main Toggle Item Card** — 427×46 [FILL×HUG] · @ (0, 0) flow · row space-between pad 12 12 12 12 align CENTER · bg #ffffff (bg/surface) · radius 8px · shadow inset 0 0 0 1.5px #ff9537, 0 1.13px 2.25px 0 rgba(0, 0, 0, 0.05) `4333:16301`
                 - [khối] **Container** — 60×19 [HUG×HUG] · @ (13.5, 13.5) flow · column `4333:16302`
                   - [chữ] “HỌC VIÊN” — 60×19 [HUG×HUG] · @ (0, 0) flow · Afacad 15/19px 600 #334155 (color/text/primary) · no-wrap `4333:16303`
-              - [khối] **Main Toggle Item Card** — 427×46 [FILL×HUG] · @ (0, 54) flow · row space-between pad 12 12 12 12 align CENTER · bg #ffffff · radius 8px · shadow inset 0 0 0 1.5px #e2e8f0, 0 1.13px 2.25px 0 rgba(0, 0, 0, 0.05) `4333:16306`
+              - [khối] **Main Toggle Item Card** — 427×46 [FILL×HUG] · @ (0, 54) flow · row space-between pad 12 12 12 12 align CENTER · bg #ffffff (bg/surface) · radius 8px · shadow inset 0 0 0 1.5px #e2e8f0, 0 1.13px 2.25px 0 rgba(0, 0, 0, 0.05) `4333:16306`
                 - [khối] **Container** — 207×19 [HUG×HUG] · @ (13.5, 13.5) flow · column `4333:16307`
                   - [chữ] “MỤC TIÊU ĐẦU RA CỦA KHÓA HỌC” — 207×19 [HUG×HUG] · @ (0, 0) flow · Afacad 15/19px 600 #334155 (color/text/primary) · no-wrap `4333:16308`
-              - [khối] **Main Toggle Item Card** — 427×46 [FILL×HUG] · @ (0, 108) flow · row space-between pad 12 12 12 12 align CENTER · bg #ffffff · radius 8px · shadow inset 0 0 0 1.5px #e2e8f0, 0 1.13px 2.25px 0 rgba(0, 0, 0, 0.05) `4333:16309`
+              - [khối] **Main Toggle Item Card** — 427×46 [FILL×HUG] · @ (0, 108) flow · row space-between pad 12 12 12 12 align CENTER · bg #ffffff (bg/surface) · radius 8px · shadow inset 0 0 0 1.5px #e2e8f0, 0 1.13px 2.25px 0 rgba(0, 0, 0, 0.05) `4333:16309`
                 - [khối] **Container** — 181×19 [HUG×HUG] · @ (13.5, 13.5) flow · column `4333:16310`
                   - [chữ] “MINDSET THIẾT KẾ KHÓA HỌC” — 181×19 [HUG×HUG] · @ (0, 0) flow · Afacad 15/19px 600 #334155 (color/text/primary) · no-wrap `4333:16311`
-              - [khối] **Main Toggle Item Card** — 427×46 [FILL×HUG] · @ (0, 162) flow · row space-between pad 12 12 12 12 align CENTER · bg #ffffff · radius 8px · shadow inset 0 0 0 1.5px #e2e8f0, 0 1.13px 2.25px 0 rgba(0, 0, 0, 0.05) `4333:16312`
+              - [khối] **Main Toggle Item Card** — 427×46 [FILL×HUG] · @ (0, 162) flow · row space-between pad 12 12 12 12 align CENTER · bg #ffffff (bg/surface) · radius 8px · shadow inset 0 0 0 1.5px #e2e8f0, 0 1.13px 2.25px 0 rgba(0, 0, 0, 0.05) `4333:16312`
                 - [khối] **Container** — 133×19 [HUG×HUG] · @ (13.5, 13.5) flow · column `4333:16313`
                   - [chữ] “MINDSET DẠY VÀ HỌC” — 133×19 [HUG×HUG] · @ (0, 0) flow · Afacad 15/19px 600 #334155 (color/text/primary) · no-wrap `4333:16314`
   - [khối] **Header** — 1140×64 · @ (300, 0) abs · clip `4333:15568`

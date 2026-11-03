@@ -5,7 +5,7 @@
 > **Nguồn:** PLS-ICS T8/2026 ›     ├─ QUY TRÌNH › ADM-QT-020000-DK — Quy trình / Chi tiết loại quy trình (`4056:128966`, file `rRVs5HX0kIHffbS0V40djG`)  
 > **Route:** `/quy-trinh/chi-tiet-loai-quy-trinh-dk`  
 > **Khung thiết kế:** 1440 × 2635 px  
-> **Xuất lúc:** 2026-11-02T03:44:31.715Z  
+> **Xuất lúc:** 2026-11-03T00:58:35.290Z  
 > **Spec đầy đủ (giá trị chính xác từng node):** `../../../.figma/pages/adm-qt-020000-dk/page-spec.json`
 
 ## 1. Tổng quan
@@ -26,23 +26,23 @@ Nền trang: `#121213` (bg/canvas).
 
 | Token | Biến CSS | Giá trị | Trỏ tới | Bộ / mode |
 | --- | --- | --- | --- | --- |
-| `bg/brand-tint` | `--bg-brand-tint` | `#fff7ed` | color/extended/fff7ed | Theme · Semantic / Light |
-| `bg/brand-tint-strong` | `--bg-brand-tint-strong` | `#ffedd5` | color/extended/ffedd5 | Theme · Semantic / Light |
-| `bg/canvas` | `--bg-canvas` | `#f8fafc` | color/extended/f8fafc | Theme · Semantic / Light |
-| `bg/danger` | `--bg-danger` | `#fef2f2` | color/extended/fef2f2 | Theme · Semantic / Light |
-| `bg/info` | `--bg-info` | `#f0f9ff` | color/extended/f0f9ff | Theme · Semantic / Light |
-| `bg/purple` | `--bg-purple` | `#faf5ff` | color/extended/faf5ff | Theme · Semantic / Light |
-| `bg/strong` | `--bg-strong` | `#e2e8f0` | color/border/default | Theme · Semantic / Light |
-| `bg/subtle` | `--bg-subtle` | `#f1f5f9` | color/surface/input | Theme · Semantic / Light |
-| `bg/success` | `--bg-success` | `#ecfdf5` | color/extended/ecfdf5 | Theme · Semantic / Light |
-| `bg/surface` | `--bg-surface` | `#ffffff` | color/neutral/white | Theme · Semantic / Light |
-| `bg/warning` | `--bg-warning` | `#fffbeb` | color/extended/fffbeb | Theme · Semantic / Light |
-| `border/brand` | `--border-brand` | `#fed7aa` | color/extended/fed7aa | Theme · Semantic / Light |
-| `border/default` | `--border-default` | `#e2e8f0` | color/border/default | Theme · Semantic / Light |
-| `border/strong` | `--border-strong` | `#cbd5e1` | color/extended/cbd5e1 | Theme · Semantic / Light |
-| `border/subtle` | `--border-subtle` | `#f1f5f9` | color/border/subtle | Theme · Semantic / Light |
-| `brand/primary` | `--brand-primary` | `#e65100` | color/brand/orange | Theme · Semantic / Light |
-| `chrome/bg` | `--chrome-bg` | `#ff7700` | color/extended/ff7700 | Theme · Semantic / Light |
+| `bg/brand-tint` | `--bg-brand-tint` | `#102218` |  | Theme · Semantic / Dark · Minimal |
+| `bg/brand-tint-strong` | `--bg-brand-tint-strong` | `#153020` |  | Theme · Semantic / Dark · Minimal |
+| `bg/canvas` | `--bg-canvas` | `#121213` |  | Theme · Semantic / Dark · Minimal |
+| `bg/danger` | `--bg-danger` | `#2a1618` |  | Theme · Semantic / Dark · Minimal |
+| `bg/info` | `--bg-info` | `#10202e` |  | Theme · Semantic / Dark · Minimal |
+| `bg/purple` | `--bg-purple` | `#221a30` |  | Theme · Semantic / Dark · Minimal |
+| `bg/strong` | `--bg-strong` | `#2a2a2e` |  | Theme · Semantic / Dark · Minimal |
+| `bg/subtle` | `--bg-subtle` | `#202023` |  | Theme · Semantic / Dark · Minimal |
+| `bg/success` | `--bg-success` | `#12251a` |  | Theme · Semantic / Dark · Minimal |
+| `bg/surface` | `--bg-surface` | `#18181a` |  | Theme · Semantic / Dark · Minimal |
+| `bg/warning` | `--bg-warning` | `#29230f` |  | Theme · Semantic / Dark · Minimal |
+| `border/brand` | `--border-brand` | `#1e4d31` |  | Theme · Semantic / Dark · Minimal |
+| `border/default` | `--border-default` | `#27272a` |  | Theme · Semantic / Dark · Minimal |
+| `border/strong` | `--border-strong` | `#3f3f46` |  | Theme · Semantic / Dark · Minimal |
+| `border/subtle` | `--border-subtle` | `#1f1f22` |  | Theme · Semantic / Dark · Minimal |
+| `brand/primary` | `--brand-primary` | `#16a34a` |  | Theme · Semantic / Dark · Minimal |
+| `chrome/bg` | `--chrome-bg` | `#0b0b0c` |  | Theme · Semantic / Dark · Minimal |
 | `color/neutral/white` | `--color-neutral-white` | `#ffffff` |  | Color Tokens / Light |
 | `radius/10` | `--radius-10` | `10` |  | Number Tokens / Mode 1 |
 | `radius/12` | `--radius-12` | `12` |  | Number Tokens / Mode 1 |
@@ -57,18 +57,18 @@ Nền trang: `#121213` (bg/canvas).
 | `spacing/32` | `--spacing-32` | `32` |  | Number Tokens / Mode 1 |
 | `spacing/4` | `--spacing-4` | `4` |  | Number Tokens / Mode 1 |
 | `spacing/8` | `--spacing-8` | `8` |  | Number Tokens / Mode 1 |
-| `status/success-text` | `--status-success-text` | `#059669` | color/semantic/success-text | Theme · Semantic / Light |
-| `text/muted` | `--text-muted` | `#cbd5e1` | color/text/muted | Theme · Semantic / Light |
-| `text/primary` | `--text-primary` | `#334155` | color/text/primary | Theme · Semantic / Light |
-| `text/secondary` | `--text-secondary` | `#64748b` | color/text/secondary | Theme · Semantic / Light |
-| `theme/is-dark` | `--theme-is-dark` | `false` |  | Theme · Semantic / Light |
-| `tone/blue/border` | `--tone-blue-border` | `#93c5fd` |  | Theme · Semantic / Light |
-| `tone/cyan/border` | `--tone-cyan-border` | `#67e8f9` |  | Theme · Semantic / Light |
-| `tone/fuchsia/border` | `--tone-fuchsia-border` | `#f9a8d4` |  | Theme · Semantic / Light |
-| `tone/green/border` | `--tone-green-border` | `#6ee7b7` |  | Theme · Semantic / Light |
-| `tone/rose/border` | `--tone-rose-border` | `#fda4af` |  | Theme · Semantic / Light |
-| `tone/violet/border` | `--tone-violet-border` | `#c4b5fd` |  | Theme · Semantic / Light |
-| `tone/yellow/border` | `--tone-yellow-border` | `#fcd34d` | color/extended/fcd34d | Theme · Semantic / Light |
+| `status/success-text` | `--status-success-text` | `#4ade80` |  | Theme · Semantic / Dark · Minimal |
+| `text/muted` | `--text-muted` | `#71717a` |  | Theme · Semantic / Dark · Minimal |
+| `text/primary` | `--text-primary` | `#ededef` |  | Theme · Semantic / Dark · Minimal |
+| `text/secondary` | `--text-secondary` | `#a1a1aa` |  | Theme · Semantic / Dark · Minimal |
+| `theme/is-dark` | `--theme-is-dark` | `true` |  | Theme · Semantic / Dark · Minimal |
+| `tone/blue/border` | `--tone-blue-border` | `#28487d` |  | Theme · Semantic / Dark · Minimal |
+| `tone/cyan/border` | `--tone-cyan-border` | `#105f6e` |  | Theme · Semantic / Dark · Minimal |
+| `tone/fuchsia/border` | `--tone-fuchsia-border` | `#772e53` |  | Theme · Semantic / Dark · Minimal |
+| `tone/green/border` | `--tone-green-border` | `#146048` |  | Theme · Semantic / Dark · Minimal |
+| `tone/rose/border` | `--tone-rose-border` | `#7b2a39` |  | Theme · Semantic / Dark · Minimal |
+| `tone/violet/border` | `--tone-violet-border` | `#4c377d` |  | Theme · Semantic / Dark · Minimal |
+| `tone/yellow/border` | `--tone-yellow-border` | `#7b5413` |  | Theme · Semantic / Dark · Minimal |
 
 **Style Figma đang dùng:**
 

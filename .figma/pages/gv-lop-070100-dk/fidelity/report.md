@@ -1,15 +1,14 @@
 # Fidelity: GV-LOP-070100-DK — Chi tiết lớp / Cuộc họp / Trống
 
-- URL: `http://localhost:3108/chi-tiet-lop/cuoc-hop/trong-dk`
+- URL: `http://localhost:3000/chi-tiet-lop/cuoc-hop/trong-dk`
 - Verdict: **PASS**
-- Pixels outside text: **0%** differ (limit 0.5%); all pixels: 0.125%; inside text boxes: 3.076% (glyph rendering)
+- Pixels outside text: **0%** differ (limit 0.5%); all pixels: 0.095%; inside text boxes: 2.33% (glyph rendering)
 - Boxes: 107/107 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 105, ≤1px: 107, ≤2px: 107, ≤4px: 107, >4px: 0
 
 ## Text boxes with most differing pixels (limit 35%)
 
 | Text | Differing |
 | --- | --- |
-| Label (`I4333:14198;2245:87914`) | 17.4% |
 | Label (`I4899:187822;2245:87908`) | 8.5% |
 | Label (`I4333:14193;2245:87908`) | 6.3% |
 | Label (`I4333:14194;2245:87908`) | 4.9% |
@@ -24,6 +23,7 @@
 | Label (`I4333:14203;2245:87908`) | 1.4% |
 | GV.dacnhan@gmail.com (`I4333:14134;2008:31783`) | 1.3% |
 | Label (`I4333:14192;2245:87908`) | 1.3% |
+| Value (`I4885:101645;4760:156576;1971:8814`) | 1.2% |
 
 ## Largest box differences
 

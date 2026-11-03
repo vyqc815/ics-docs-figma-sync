@@ -1,0 +1,30 @@
+{
+  "route": "/tools/giong-doc/loi-ket-noi-may-chu-dk",
+  "pageFile": "components/figma/cd-tl-010210-dk/index.tsx",
+  "docFile": "docs/pages/tools/giong-doc/loi-ket-noi-may-chu-dk.md",
+  "sections": [
+    {
+      "nodeId": "6133:127979",
+      "component": "Applayoutwrapper",
+      "file": "components/figma/shared/Applayoutwrapper.tsx"
+    },
+    {
+      "nodeId": "6133:127980",
+      "component": "SidebarMenuCd",
+      "file": "components/figma/cd-tl-010210-dk/SidebarMenuCd.tsx"
+    },
+    {
+      "nodeId": "6133:127981",
+      "component": "Header",
+      "file": "components/figma/cd-tl-010210-dk/Header.tsx"
+    },
+    {
+      "nodeId": "6133:128031",
+      "component": "MainGiongDoc",
+      "file": "components/figma/cd-tl-010210-dk/MainGiongDoc.tsx"
+    }
+  ],
+  "idAlias": {
+    "6133:127979": "714:16697"
+  }
+}

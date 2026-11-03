@@ -12,10 +12,10 @@
   "pixels": {
     "width": 1440,
     "height": 919,
-    "mismatched": 10145,
-    "percent": 0.767,
+    "mismatched": 9760,
+    "percent": 0.738,
     "shapePercent": 0.006,
-    "textPercent": 3.475,
+    "textPercent": 3.342,
     "sizeMismatch": false
   },
   "textNodes": [
@@ -24,12 +24,6 @@
       "name": "- Gửi giới thiệu bạn với học viên (lưu ý các học viên đang có chỉ số thấp/ phản ứng ==> không gửi nha) - Gửi giới thiệu bạn phải gởi hết vòng của TH giới thiệu bạn (khi khách seen ==> push tiếp cách đăng bài) - Kiểm tra khách này trước đó đã gửi giới thiệu bạn chưa để gửi văn khác, tránh bị trùng - Note: Đã gửi giới thiệu bạn ở ghi chú ==> mục tiêu nắm được khách này đã gửi hay chưa để lượt tiếp theo còn đổi văn mẫu",
       "pixels": 3633,
       "percent": 22.8
-    },
-    {
-      "id": "I4056:105809;2245:87774",
-      "name": "Label",
-      "pixels": 423,
-      "percent": 14.7
     },
     {
       "id": "I4713:129288;2015:36008",
@@ -105,6 +99,12 @@
     },
     {
       "id": "4056:106008",
+      "name": "[Buổi 10] CSKH gọi điện thông báo KG HK2 cho các bạn mới vào từ kì 2",
+      "pixels": 464,
+      "percent": 4.3
+    },
+    {
+      "id": "4056:106027",
       "name": "[Buổi 10] CSKH gọi điện thông báo KG HK2 cho các bạn mới vào từ kì 2",
       "pixels": 464,
       "percent": 4.3
@@ -465,7 +465,7 @@
     "over": []
   },
   "failures": [],
-  "url": "http://localhost:3108/lich-hen/hoc-vien-dk",
+  "url": "http://localhost:3000/lich-hen/hoc-vien-dk",
   "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
   "consoleErrors": [],
   "rootFound": true

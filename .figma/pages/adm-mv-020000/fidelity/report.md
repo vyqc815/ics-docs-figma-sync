@@ -1,6 +1,6 @@
 # Fidelity: ADM-MV-020000 — Move video / Danh sách video
 
-- URL: `http://localhost:3108/move-video/danh-sach-video`
+- URL: `http://localhost:3000/move-video/danh-sach-video`
 - Verdict: **PASS**
 - Pixels outside text: **0.078%** differ (limit 0.5%); all pixels: 0.21%; inside text boxes: 0.531% (glyph rendering)
 - Boxes: 285/285 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 285, ≤1px: 285, ≤2px: 285, ≤4px: 285, >4px: 0

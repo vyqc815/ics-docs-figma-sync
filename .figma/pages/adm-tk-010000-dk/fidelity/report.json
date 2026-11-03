@@ -12,10 +12,10 @@
   "pixels": {
     "width": 1440,
     "height": 810,
-    "mismatched": 2041,
-    "percent": 0.175,
+    "mismatched": 1797,
+    "percent": 0.154,
     "shapePercent": 0.002,
-    "textPercent": 1.293,
+    "textPercent": 1.137,
     "sizeMismatch": false
   },
   "textNodes": [
@@ -24,12 +24,6 @@
       "name": "Tổng quan",
       "pixels": 394,
       "percent": 12.6
-    },
-    {
-      "id": "I4343:93053;2245:87864",
-      "name": "Label",
-      "pixels": 267,
-      "percent": 10.7
     },
     {
       "id": "I4343:93134;3004:47242",
@@ -108,6 +102,12 @@
       "name": "Label",
       "pixels": 51,
       "percent": 1.8
+    },
+    {
+      "id": "I4343:93052;2245:87839",
+      "name": "Label",
+      "pixels": 41,
+      "percent": 1.6
     }
   ],
   "regions": [
@@ -453,7 +453,7 @@
     "over": []
   },
   "failures": [],
-  "url": "http://localhost:3108/thong-ke/chi-so-dk",
+  "url": "http://localhost:3000/thong-ke/chi-so-dk",
   "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
   "consoleErrors": [],
   "rootFound": true

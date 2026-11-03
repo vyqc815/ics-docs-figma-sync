@@ -5,7 +5,7 @@
 > **Nguồn:** PLS-ICS T8/2026 ›         └─ ĐỀ XUẤT TĂNG LƯƠNG › ADM-LGV-020000 — Lương / Đề xuất tăng lương (`4899:117449`, file `rRVs5HX0kIHffbS0V40djG`)  
 > **Route:** `/luong/de-xuat-tang-luong`  
 > **Khung thiết kế:** 1440 × 810 px  
-> **Xuất lúc:** 2026-11-02T03:51:03.197Z  
+> **Xuất lúc:** 2026-11-03T01:06:30.171Z  
 > **Spec đầy đủ (giá trị chính xác từng node):** `../../../.figma/pages/adm-lgv-020000/page-spec.json`
 
 ## 1. Tổng quan

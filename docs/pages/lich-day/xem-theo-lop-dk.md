@@ -5,7 +5,7 @@
 > **Nguồn:** PLS-ICS T8/2026 ›     ├─ LỊCH DẠY › GV-LD-010000-DK — Lịch dạy / Xem theo lớp (`5425:272113`, file `rRVs5HX0kIHffbS0V40djG`)  
 > **Route:** `/lich-day/xem-theo-lop-dk`  
 > **Khung thiết kế:** 1440 × 954 px (cắt phần tràn ra ngoài khung)  
-> **Xuất lúc:** 2026-11-02T03:54:50.037Z  
+> **Xuất lúc:** 2026-11-03T01:10:11.624Z  
 > **Spec đầy đủ (giá trị chính xác từng node):** `../../../.figma/pages/gv-ld-010000-dk/page-spec.json`
 
 ## 1. Tổng quan

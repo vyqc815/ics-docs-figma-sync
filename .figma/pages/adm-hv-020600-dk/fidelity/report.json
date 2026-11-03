@@ -12,19 +12,13 @@
   "pixels": {
     "width": 1440,
     "height": 1095,
-    "mismatched": 2127,
-    "percent": 0.135,
+    "mismatched": 1808,
+    "percent": 0.115,
     "shapePercent": 0.002,
-    "textPercent": 0.772,
+    "textPercent": 0.655,
     "sizeMismatch": false
   },
   "textNodes": [
-    {
-      "id": "I4056:121622;2245:87864",
-      "name": "Label",
-      "pixels": 338,
-      "percent": 13.5
-    },
     {
       "id": "4056:121446",
       "name": "Danh sách ghi chú",
@@ -108,6 +102,12 @@
       "name": "Label",
       "pixels": 37,
       "percent": 1.5
+    },
+    {
+      "id": "4056:121435",
+      "name": "Chi tiết học viên",
+      "pixels": 72,
+      "percent": 1.4
     }
   ],
   "regions": [
@@ -453,7 +453,7 @@
     "over": []
   },
   "failures": [],
-  "url": "http://localhost:3108/chi-tiet-hoc-vien/ghi-chu-dk",
+  "url": "http://localhost:3000/chi-tiet-hoc-vien/ghi-chu-dk",
   "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
   "consoleErrors": [],
   "rootFound": true

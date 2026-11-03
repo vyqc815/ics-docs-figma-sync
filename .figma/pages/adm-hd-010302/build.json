@@ -1,0 +1,32 @@
+{
+  "route": "/hoa-don/danh-sach-hoa-don/dropdown-nguoi-phu-trach-trang-thai",
+  "pageFile": "components/figma/adm-hd-010302/index.tsx",
+  "docFile": "docs/pages/hoa-don/danh-sach-hoa-don/dropdown-nguoi-phu-trach-trang-thai.md",
+  "sections": [
+    {
+      "nodeId": "2731:88437",
+      "component": "Header",
+      "file": "components/figma/adm-hd-010302/Header.tsx"
+    },
+    {
+      "nodeId": "4915:247371",
+      "component": "SidebarMenuAdmin",
+      "file": "components/figma/adm-hd-010302/SidebarMenuAdmin.tsx"
+    },
+    {
+      "nodeId": "2929:50726",
+      "component": "Maincontent",
+      "file": "components/figma/adm-hd-010302/Maincontent.tsx"
+    },
+    {
+      "nodeId": "2731:89150",
+      "component": "DropdownLocNguoiPhuTrach",
+      "file": "components/figma/adm-hd-010302/DropdownLocNguoiPhuTrach.tsx"
+    },
+    {
+      "nodeId": "2731:89337",
+      "component": "DropdownLocTrangThai",
+      "file": "components/figma/adm-hd-010302/DropdownLocTrangThai.tsx"
+    }
+  ]
+}

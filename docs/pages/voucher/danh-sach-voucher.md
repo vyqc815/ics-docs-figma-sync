@@ -5,7 +5,7 @@
 > **Nguồn:** PLS-ICS T8/2026 ›         ├─ VOUCHER › ADM-VC-010000 — Voucher / Danh sách voucher (`3857:84715`, file `rRVs5HX0kIHffbS0V40djG`)  
 > **Route:** `/voucher/danh-sach-voucher`  
 > **Khung thiết kế:** 1440 × 810 px (cắt phần tràn ra ngoài khung)  
-> **Xuất lúc:** 2026-11-02T03:45:05.731Z  
+> **Xuất lúc:** 2026-11-03T00:59:08.609Z  
 > **Spec đầy đủ (giá trị chính xác từng node):** `../../../.figma/pages/adm-vc-010000/page-spec.json`
 
 ## 1. Tổng quan

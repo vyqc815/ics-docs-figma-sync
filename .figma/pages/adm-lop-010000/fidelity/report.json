@@ -12,102 +12,102 @@
   "pixels": {
     "width": 1440,
     "height": 1099,
-    "mismatched": 5389,
-    "percent": 0.341,
+    "mismatched": 3938,
+    "percent": 0.249,
     "shapePercent": 0.007,
-    "textPercent": 1.874,
+    "textPercent": 1.359,
     "sizeMismatch": false
   },
   "textNodes": [
     {
-      "id": "I2623:12731;1391:14476",
-      "name": "80%",
-      "pixels": 74,
-      "percent": 24.7
+      "id": "I2623:12851;2409:141137",
+      "name": "Initials",
+      "pixels": 17,
+      "percent": 8.1
     },
     {
-      "id": "I2623:12733;1391:14476",
-      "name": "80%",
-      "pixels": 74,
-      "percent": 24.7
+      "id": "I2623:13055;2409:141140",
+      "name": "Initials",
+      "pixels": 17,
+      "percent": 8.1
     },
     {
-      "id": "I2623:12785;1391:14476",
-      "name": "80%",
-      "pixels": 74,
-      "percent": 24.7
+      "id": "I2623:13212;2409:141128",
+      "name": "Initials",
+      "pixels": 17,
+      "percent": 8.1
     },
     {
-      "id": "I2623:12842;1391:14476",
-      "name": "80%",
-      "pixels": 74,
-      "percent": 24.7
+      "id": "I3065:75344;3108:125046",
+      "name": "Tiêu đề",
+      "pixels": 160,
+      "percent": 7.5
     },
     {
-      "id": "I2623:12894;1391:14476",
-      "name": "80%",
-      "pixels": 74,
-      "percent": 24.7
+      "id": "I3065:75300;3108:125046",
+      "name": "Tiêu đề",
+      "pixels": 152,
+      "percent": 7.1
     },
     {
-      "id": "I2623:12944;1391:14476",
-      "name": "80%",
-      "pixels": 74,
-      "percent": 24.7
+      "id": "2623:12898",
+      "name": "7/9(3)",
+      "pixels": 63,
+      "percent": 7.1
     },
     {
-      "id": "I2623:12946;1391:14476",
-      "name": "80%",
-      "pixels": 74,
-      "percent": 24.7
+      "id": "I2623:12955;2409:141122",
+      "name": "Initials",
+      "pixels": 14,
+      "percent": 6.7
     },
     {
-      "id": "I2623:12995;1391:14476",
-      "name": "80%",
-      "pixels": 74,
-      "percent": 24.7
+      "id": "I2623:13004;2409:141149",
+      "name": "Initials",
+      "pixels": 17,
+      "percent": 6.7
     },
     {
-      "id": "I2623:12997;1391:14476",
-      "name": "80%",
-      "pixels": 74,
-      "percent": 24.7
+      "id": "I2623:13106;2409:141152",
+      "name": "Initials",
+      "pixels": 17,
+      "percent": 6.7
     },
     {
-      "id": "I2623:13046;1391:14476",
-      "name": "80%",
-      "pixels": 74,
-      "percent": 24.7
+      "id": "I2623:13108;2409:141122",
+      "name": "Initials",
+      "pixels": 14,
+      "percent": 6.7
     },
     {
-      "id": "I2623:13048;1391:14476",
-      "name": "80%",
-      "pixels": 74,
-      "percent": 24.7
+      "id": "I3065:70064;1971:8814",
+      "name": "Value",
+      "pixels": 18,
+      "percent": 6.6
     },
     {
-      "id": "I2623:13097;1391:14476",
-      "name": "80%",
-      "pixels": 74,
-      "percent": 24.7
+      "id": "I3065:75333;3108:125048",
+      "name": "Số liệu",
+      "pixels": 81,
+      "percent": 6.3
     },
     {
-      "id": "I2623:13099;1391:14476",
-      "name": "80%",
-      "pixels": 74,
-      "percent": 24.7
+      "id": "2623:14087",
+      "name": "7",
+      "pixels": 13,
+      "percent": 6.2
     },
     {
-      "id": "I2623:13148;1391:14476",
-      "name": "80%",
-      "pixels": 74,
-      "percent": 24.7
+      "id": "I2623:12903;2409:141140",
+      "name": "Initials",
+      "pixels": 14,
+      "percent": 5.6
     },
     {
-      "id": "I2623:13150;1391:14476",
-      "name": "80%",
-      "pixels": 74,
-      "percent": 24.7
+      "id": "2623:13152",
+      "name": "7/8(1)",
+      "pixels": 49,
+      "percent": 5.6
     }
   ],
   "regions": [
@@ -501,7 +501,7 @@
     "over": []
   },
   "failures": [],
-  "url": "http://localhost:3108/danh-sach-lop-hoc",
+  "url": "http://localhost:3000/danh-sach-lop-hoc",
   "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
   "consoleErrors": [],
   "rootFound": true

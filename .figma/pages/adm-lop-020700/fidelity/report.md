@@ -1,6 +1,6 @@
 # Fidelity: ADM-LOP-020700 — Chi tiết lớp học / Quy trình lớp
 
-- URL: `http://localhost:3108/chi-tiet-lop-hoc/quy-trinh-lop`
+- URL: `http://localhost:3000/chi-tiet-lop-hoc/quy-trinh-lop`
 - Verdict: **PASS**
 - Pixels outside text: **0.002%** differ (limit 0.5%); all pixels: 0.183%; inside text boxes: 0.814% (glyph rendering)
 - Boxes: 330/330 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 318, ≤1px: 330, ≤2px: 330, ≤4px: 330, >4px: 0

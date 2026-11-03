@@ -1,6 +1,6 @@
 # Fidelity: ADM-LOP-020800 — Chi tiết lớp học / CSKH
 
-- URL: `http://localhost:3108/chi-tiet-lop-hoc/cskh`
+- URL: `http://localhost:3000/chi-tiet-lop-hoc/cskh`
 - Verdict: **PASS**
 - Pixels outside text: **0.002%** differ (limit 0.5%); all pixels: 0.159%; inside text boxes: 0.697% (glyph rendering)
 - Boxes: 308/308 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 303, ≤1px: 306, ≤2px: 308, ≤4px: 308, >4px: 0

@@ -1,6 +1,6 @@
 # Fidelity: CD-KH-030300 — Học kỳ / Kiểm tra
 
-- URL: `http://localhost:3108/hoc-ky/kiem-tra`
+- URL: `http://localhost:3000/hoc-ky/kiem-tra`
 - Verdict: **PASS**
 - Pixels outside text: **0.003%** differ (limit 0.5%); all pixels: 0.077%; inside text boxes: 0.733% (glyph rendering)
 - Boxes: 222/222 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 222, ≤1px: 222, ≤2px: 222, ≤4px: 222, >4px: 0

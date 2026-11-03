@@ -1,0 +1,523 @@
+{
+  "pass": false,
+  "thresholds": {
+    "maxPixelDiffPercent": 0.5,
+    "maxBoxDelta": 1,
+    "maxTextBoxDelta": 2.5,
+    "colorThreshold": 0.1,
+    "aaRadius": 1,
+    "subpixel": true,
+    "maxTextNodeDiffPercent": 35
+  },
+  "pixels": {
+    "width": 920,
+    "height": 587,
+    "mismatched": 1484,
+    "percent": 0.275,
+    "shapePercent": 0.014,
+    "textPercent": 1.116,
+    "sizeMismatch": false
+  },
+  "textNodes": [
+    {
+      "id": "I3977:75904;3976:73771",
+      "name": "Khoá học áp dụng",
+      "pixels": 325,
+      "percent": 16.6
+    },
+    {
+      "id": "I3977:75982;1739:32457",
+      "name": "0000000009",
+      "pixels": 231,
+      "percent": 8.9
+    },
+    {
+      "id": "I3977:75904;3976:73759",
+      "name": "Tên trung tâm",
+      "pixels": 195,
+      "percent": 5.9
+    },
+    {
+      "id": "3977:75893",
+      "name": "Toàn bộ khoá học",
+      "pixels": 112,
+      "percent": 5
+    },
+    {
+      "id": "I3977:75875;2911:43272",
+      "name": "Required",
+      "pixels": 8,
+      "percent": 4.2
+    },
+    {
+      "id": "I3977:75886;2911:43272",
+      "name": "Required",
+      "pixels": 8,
+      "percent": 4.2
+    },
+    {
+      "id": "I3977:75882;2911:43272",
+      "name": "Required",
+      "pixels": 8,
+      "percent": 4.2
+    },
+    {
+      "id": "I3977:75889;2911:43272",
+      "name": "Required",
+      "pixels": 8,
+      "percent": 4.2
+    },
+    {
+      "id": "I3977:75952;2808:48145",
+      "name": "Nhãn trường",
+      "pixels": 65,
+      "percent": 2.8
+    },
+    {
+      "id": "I3977:75879;2808:48145",
+      "name": "Nhãn trường",
+      "pixels": 50,
+      "percent": 2.6
+    },
+    {
+      "id": "I3977:75875;2808:48145",
+      "name": "Nhãn trường",
+      "pixels": 35,
+      "percent": 2.3
+    },
+    {
+      "id": "I3977:75889;2808:48145",
+      "name": "Nhãn trường",
+      "pixels": 41,
+      "percent": 2.3
+    },
+    {
+      "id": "I3977:75897;2808:48145",
+      "name": "Nhãn trường",
+      "pixels": 23,
+      "percent": 2.3
+    },
+    {
+      "id": "I3977:75882;2808:48145",
+      "name": "Nhãn trường",
+      "pixels": 37,
+      "percent": 2.1
+    },
+    {
+      "id": "I3977:75886;2808:48145",
+      "name": "Nhãn trường",
+      "pixels": 28,
+      "percent": 1.8
+    }
+  ],
+  "regions": [
+    {
+      "x": 400,
+      "y": 408,
+      "width": 24,
+      "height": 8,
+      "pixels": 26,
+      "node": {
+        "id": "3977:75895",
+        "name": "Switch",
+        "role": "instance"
+      }
+    },
+    {
+      "x": 496,
+      "y": 136,
+      "width": 32,
+      "height": 24,
+      "pixels": 24,
+      "node": {
+        "id": "I3977:75904;3976:73698",
+        "name": "Logo",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 408,
+      "y": 384,
+      "width": 16,
+      "height": 16,
+      "pixels": 13,
+      "node": {
+        "id": "3977:75895",
+        "name": "Switch",
+        "role": "instance"
+      }
+    },
+    {
+      "x": 600,
+      "y": 280,
+      "width": 8,
+      "height": 16,
+      "pixels": 9,
+      "node": {
+        "id": "I3977:75904;3976:73771",
+        "name": "Khoá học áp dụng",
+        "role": "text"
+      }
+    },
+    {
+      "x": 384,
+      "y": 384,
+      "width": 8,
+      "height": 16,
+      "pixels": 4,
+      "node": {
+        "id": "3977:75895",
+        "name": "Switch",
+        "role": "instance"
+      }
+    }
+  ],
+  "boxes": {
+    "measured": 111,
+    "missing": [],
+    "withinThreshold": 109,
+    "buckets": {
+      "≤0.5px": 105,
+      "≤1px": 109,
+      "≤2px": 109,
+      "≤4px": 111,
+      ">4px": 0
+    },
+    "worst": [
+      {
+        "id": "I3977:75904;3976:73769",
+        "name": "Áp dụng",
+        "role": "container",
+        "delta": 2.94,
+        "dx": 0,
+        "dy": 0,
+        "dw": 2.94,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I3977:75904;3976:73771",
+        "name": "Khoá học áp dụng",
+        "role": "text",
+        "delta": 2.94,
+        "dx": 0,
+        "dy": 0,
+        "dw": 2.94,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I3977:75982;1739:32457",
+        "name": "0000000009",
+        "role": "text",
+        "delta": 0.97,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.97,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I3977:75904;3976:73759",
+        "name": "Tên trung tâm",
+        "role": "text",
+        "delta": 0.94,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.94,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I3977:75904;3976:73773",
+        "name": "Điều kiện",
+        "role": "container",
+        "delta": 0.75,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.75,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I3977:75904;3976:73775",
+        "name": "Tối đa 1 voucher cho 1 khoá học",
+        "role": "text",
+        "delta": 0.75,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.75,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I3977:75904;3976:73766",
+        "name": "Nhãn giá trị",
+        "role": "text",
+        "delta": 0.25,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.25,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "3977:75902",
+        "name": "Xem trước voucher",
+        "role": "text",
+        "delta": 0.19,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.19,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "3977:75879",
+        "name": "Atom/Label",
+        "role": "instance",
+        "delta": 0.16,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.16,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I3977:75879;2808:48145",
+        "name": "Nhãn trường",
+        "role": "text",
+        "delta": 0.16,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.16,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "3977:75894",
+        "name": "Áp dụng voucher cho tất cả khoá học",
+        "role": "text",
+        "delta": 0.03,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.03,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "3977:75871",
+        "name": "Popup/Header",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I3977:75871;2514:153340",
+        "name": "Tiêu đề",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I3977:75871;2711:67900",
+        "name": "Title Row",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I3977:75871;2514:153341",
+        "name": "Title",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I3977:75871;2514:153342",
+        "name": "Description",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "3977:75872",
+        "name": "Body",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "3977:75873",
+        "name": "Form",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "3977:75874",
+        "name": "Field · Mã voucher",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "3977:75875",
+        "name": "Atom/Label",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I3977:75875;2808:48144",
+        "name": "Liner Icon",
+        "role": "icon",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I3977:75875;2808:48145",
+        "name": "Nhãn trường",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I3977:75875;2911:43272",
+        "name": "Required",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "3977:75921",
+        "name": "Atom/Input",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I3977:75921;1739:32457",
+        "name": "0000000009",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      }
+    ],
+    "maxDelta": 2.94,
+    "over": [
+      {
+        "id": "I3977:75904;3976:73769",
+        "name": "Áp dụng",
+        "role": "container",
+        "delta": 2.94,
+        "dx": 0,
+        "dy": 0,
+        "dw": 2.94,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I3977:75904;3976:73771",
+        "name": "Khoá học áp dụng",
+        "role": "text",
+        "delta": 2.94,
+        "dx": 0,
+        "dy": 0,
+        "dw": 2.94,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      }
+    ]
+  },
+  "failures": [
+    "2 elements are off by more than their limit (1px, 2.5px for text-driven; worst 2.94px)."
+  ],
+  "url": "http://localhost:3000/voucher/popup-chinh-sua-voucher",
+  "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
+  "consoleErrors": [],
+  "rootFound": true
+}

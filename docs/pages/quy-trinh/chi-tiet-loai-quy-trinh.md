@@ -5,7 +5,7 @@
 > **Nguồn:** PLS-ICS T8/2026 ›     ├─ QUY TRÌNH › ADM-QT-020000 — Quy trình / Chi tiết loại quy trình (`2676:205799`, file `rRVs5HX0kIHffbS0V40djG`)  
 > **Route:** `/quy-trinh/chi-tiet-loai-quy-trinh`  
 > **Khung thiết kế:** 1440 × 2635 px  
-> **Xuất lúc:** 2026-11-02T03:44:27.035Z  
+> **Xuất lúc:** 2026-11-03T00:58:30.881Z  
 > **Spec đầy đủ (giá trị chính xác từng node):** `../../../.figma/pages/adm-qt-020000/page-spec.json`
 
 ## 1. Tổng quan
@@ -26,6 +26,7 @@ Nền trang: `#f8fafc` (color/extended/f8fafc).
 
 | Token | Biến CSS | Giá trị | Trỏ tới | Bộ / mode |
 | --- | --- | --- | --- | --- |
+| `bg/surface` | `--bg-surface` | `#ffffff` | color/neutral/white | Theme · Semantic / Light |
 | `color/border/default` | `--color-border-default` | `#e2e8f0` |  | Color Tokens / Light |
 | `color/border/subtle` | `--color-border-subtle` | `#f1f5f9` |  | Color Tokens / Light |
 | `color/brand/orange` | `--color-brand-orange` | `#e65100` |  | Color Tokens / Light |
@@ -452,7 +453,7 @@ Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí ·
               - [khối] **Heading 1** — 307×23 [HUG×HUG] · @ (0, 0) flow · column `2706:35119`
                 - [chữ] “Danh Sách” — 307×23 [FIXED×HUG] · @ (0, 0) flow · Unbounded 15/23px 600 #e65100 (color/brand/orange) `2706:35120`
             - [khối] **Frame 427321957** — 290×389 [FILL×HUG] · @ (0, 35) flow · column gap 8 `2706:35121`
-              - [khối] **Main Toggle Item Card** — 290×46 [FILL×HUG] · @ (0, 0) flow · row gap 8 pad 12 12 12 12 align CENTER · bg #ffffff · radius 8px · shadow inset 0 0 0 1.5px #ff9537, 0 1.13px 2.25px 0 rgba(0, 0, 0, 0.05) `2706:35122`
+              - [khối] **Main Toggle Item Card** — 290×46 [FILL×HUG] · @ (0, 0) flow · row gap 8 pad 12 12 12 12 align CENTER · bg #ffffff (bg/surface) · radius 8px · shadow inset 0 0 0 1.5px #ff9537, 0 1.13px 2.25px 0 rgba(0, 0, 0, 0.05) `2706:35122`
                 - [khối] **Container** — 227×19 [FILL×HUG] · @ (13.5, 13.5) flow · column `2706:35123`
                   - [chữ] “Tiêu Chuẩn Chung” — 110×19 [HUG×HUG] · @ (0, 0) flow · Afacad 15/19px 600 #334155 (color/text/primary) · no-wrap `2706:35124`
                 - [instance] **Switch** ⟨Switch: Size=Small, Status=On, Title=No, Copy=No⟩ — 28×16 [FIXED×HUG] · @ (248.5, 15) flow · row gap 10 pad 2 2 2 2 justify MAX align CENTER · bg #e65100 (color/brand/orange) · radius 4px `2706:35142`
@@ -460,32 +461,32 @@ Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí ·
                 - [icon] **Atom/Icon Button** ⟨Atom/Icon Button: Icon=Drop & Drag⟩ — 14×22 · @ (-7, 12) abs · file /figma/assets/7af315ad362b.svg covers (-2, -2) 20×28 `2706:39050`
                 - [icon] **Mouse click** ⟨Mouse click⟩ — 22×22 · @ (195, 27) abs · file /figma/assets/74943651b8b7.svg covers (-1, -1) 26×26 `2706:40356`
                 - [icon] **Nút xoá** — 16×16 · @ (280, -6) abs · file /figma/assets/775a0d4139bf.svg `3058:120687`
-              - [khối] **Main Toggle Item Card** — 290×46 [FILL×HUG] · @ (0, 54) flow · row gap 8 pad 12 12 12 12 align CENTER · bg #ffffff · radius 8px · shadow inset 0 0 0 1.5px #e2e8f0, 0 1.13px 2.25px 0 rgba(0, 0, 0, 0.05) `2706:38193`
+              - [khối] **Main Toggle Item Card** — 290×46 [FILL×HUG] · @ (0, 54) flow · row gap 8 pad 12 12 12 12 align CENTER · bg #ffffff (bg/surface) · radius 8px · shadow inset 0 0 0 1.5px #e2e8f0, 0 1.13px 2.25px 0 rgba(0, 0, 0, 0.05) `2706:38193`
                 - [khối] **Container** — 227×19 [FILL×HUG] · @ (13.5, 13.5) flow · column `2706:38194`
                   - [chữ] “Tiêu Chuẩn Kiến Thức & Kỹ Năng” — 194×19 [HUG×HUG] · @ (0, 0) flow · Afacad 15/19px 600 #334155 (color/text/primary) · no-wrap `2706:38195`
                 - [instance] **Switch** ⟨Switch: Size=Small, Status=On, Title=No, Copy=No⟩ — 28×16 [FIXED×HUG] · @ (248.5, 15) flow · row gap 10 pad 2 2 2 2 justify MAX align CENTER · bg #e65100 (color/brand/orange) · radius 4px `2706:38196`
                   - [khối] **Switch** — 12×12 · @ (14, 2) flow · bg #ffffff · radius 3px · shadow 0 2px 4px 0 rgba(39, 39, 39, 0.1) · clip `I2706:38196;124:65559`
-              - [khối] **Main Toggle Item Card** — 290×65 [FILL×HUG] · @ (0, 108) flow · row gap 8 pad 12 12 12 12 align CENTER · bg #ffffff · radius 8px · shadow inset 0 0 0 1.5px #e2e8f0, 0 1.13px 2.25px 0 rgba(0, 0, 0, 0.05) `2706:38199`
+              - [khối] **Main Toggle Item Card** — 290×65 [FILL×HUG] · @ (0, 108) flow · row gap 8 pad 12 12 12 12 align CENTER · bg #ffffff (bg/surface) · radius 8px · shadow inset 0 0 0 1.5px #e2e8f0, 0 1.13px 2.25px 0 rgba(0, 0, 0, 0.05) `2706:38199`
                 - [khối] **Container** — 227×38 [FILL×HUG] · @ (13.5, 13.5) flow · column `2706:38200`
                   - [chữ] “[Meeting cố định] Họp bàn giao lần đầu tiên” — 227×38 [FILL×HUG] · @ (0, 0) flow · Afacad 15/19px 600 #334155 (color/text/primary) `2706:38201`
                 - [instance] **Switch** ⟨Switch: Size=Small, Status=On, Title=No, Copy=No⟩ — 28×16 [FIXED×HUG] · @ (248.5, 24.5) flow · row gap 10 pad 2 2 2 2 justify MAX align CENTER · bg #e65100 (color/brand/orange) · radius 4px `2706:38202`
                   - [khối] **Switch** — 12×12 · @ (14, 2) flow · bg #ffffff · radius 3px · shadow 0 2px 4px 0 rgba(39, 39, 39, 0.1) · clip `I2706:38202;124:65559`
-              - [khối] **Main Toggle Item Card** — 290×46 [FILL×HUG] · @ (0, 181) flow · row gap 8 pad 12 12 12 12 align CENTER · bg #ffffff · radius 8px · shadow inset 0 0 0 1.5px #e2e8f0, 0 1.13px 2.25px 0 rgba(0, 0, 0, 0.05) `2706:38205`
+              - [khối] **Main Toggle Item Card** — 290×46 [FILL×HUG] · @ (0, 181) flow · row gap 8 pad 12 12 12 12 align CENTER · bg #ffffff (bg/surface) · radius 8px · shadow inset 0 0 0 1.5px #e2e8f0, 0 1.13px 2.25px 0 rgba(0, 0, 0, 0.05) `2706:38205`
                 - [khối] **Container** — 227×19 [FILL×HUG] · @ (13.5, 13.5) flow · column `2706:38206`
                   - [chữ] “[Meeting cố định] Họp lần 2” — 164×19 [HUG×HUG] · @ (0, 0) flow · Afacad 15/19px 600 #334155 (color/text/primary) · no-wrap `2706:38207`
                 - [instance] **Switch** ⟨Switch: Size=Small, Status=On, Title=No, Copy=No⟩ — 28×16 [FIXED×HUG] · @ (248.5, 15) flow · row gap 10 pad 2 2 2 2 justify MAX align CENTER · bg #e65100 (color/brand/orange) · radius 4px `2706:38208`
                   - [khối] **Switch** — 12×12 · @ (14, 2) flow · bg #ffffff · radius 3px · shadow 0 2px 4px 0 rgba(39, 39, 39, 0.1) · clip `I2706:38208;124:65559`
-              - [khối] **Main Toggle Item Card** — 290×46 [FILL×HUG] · @ (0, 235) flow · row gap 8 pad 12 12 12 12 align CENTER · bg #ffffff · radius 8px · shadow inset 0 0 0 1.5px #e65100, 0 1.13px 2.25px 0 rgba(0, 0, 0, 0.05) `2706:38211`
+              - [khối] **Main Toggle Item Card** — 290×46 [FILL×HUG] · @ (0, 235) flow · row gap 8 pad 12 12 12 12 align CENTER · bg #ffffff (bg/surface) · radius 8px · shadow inset 0 0 0 1.5px #e65100, 0 1.13px 2.25px 0 rgba(0, 0, 0, 0.05) `2706:38211`
                 - [khối] **Container** — 227×19 [FILL×HUG] · @ (13.5, 13.5) flow · column `2706:38212`
                   - [chữ] “[Meeting cố định] Họp lần 3” — 164×19 [HUG×HUG] · @ (0, 0) flow · Afacad 15/19px 600 #334155 (color/text/primary) · no-wrap `2706:38213`
                 - [instance] **Switch** ⟨Switch: Size=Small, Status=On, Title=No, Copy=No⟩ — 28×16 [FIXED×HUG] · @ (248.5, 15) flow · row gap 10 pad 2 2 2 2 justify MAX align CENTER · bg #e65100 (color/brand/orange) · radius 4px `2706:38214`
                   - [khối] **Switch** — 12×12 · @ (14, 2) flow · bg #ffffff · radius 3px · shadow 0 2px 4px 0 rgba(39, 39, 39, 0.1) · clip `I2706:38214;124:65559`
-              - [khối] **Main Toggle Item Card** — 290×46 [FILL×HUG] · @ (0, 289) flow · row gap 8 pad 12 12 12 12 align CENTER · bg #ffffff · radius 8px · shadow inset 0 0 0 1.5px #e2e8f0, 0 1.13px 2.25px 0 rgba(0, 0, 0, 0.05) `2706:38217`
+              - [khối] **Main Toggle Item Card** — 290×46 [FILL×HUG] · @ (0, 289) flow · row gap 8 pad 12 12 12 12 align CENTER · bg #ffffff (bg/surface) · radius 8px · shadow inset 0 0 0 1.5px #e2e8f0, 0 1.13px 2.25px 0 rgba(0, 0, 0, 0.05) `2706:38217`
                 - [khối] **Container** — 227×19 [FILL×HUG] · @ (13.5, 13.5) flow · column `2706:38218`
                   - [chữ] “[Meeting cố định] Họp lần 4” — 164×19 [HUG×HUG] · @ (0, 0) flow · Afacad 15/19px 600 #334155 (color/text/primary) · no-wrap `2706:38219`
                 - [instance] **Switch** ⟨Switch: Size=Small, Status=On, Title=No, Copy=No⟩ — 28×16 [FIXED×HUG] · @ (248.5, 15) flow · row gap 10 pad 2 2 2 2 justify MAX align CENTER · bg #e65100 (color/brand/orange) · radius 4px `2706:38220`
                   - [khối] **Switch** — 12×12 · @ (14, 2) flow · bg #ffffff · radius 3px · shadow 0 2px 4px 0 rgba(39, 39, 39, 0.1) · clip `I2706:38220;124:65559`
-              - [khối] **Main Toggle Item Card** — 290×46 [FILL×HUG] · @ (0, 343) flow · row gap 8 pad 12 12 12 12 align CENTER · bg #ffffff · radius 8px · shadow inset 0 0 0 1.5px #e2e8f0, 0 1.13px 2.25px 0 rgba(0, 0, 0, 0.05) `2706:38223`
+              - [khối] **Main Toggle Item Card** — 290×46 [FILL×HUG] · @ (0, 343) flow · row gap 8 pad 12 12 12 12 align CENTER · bg #ffffff (bg/surface) · radius 8px · shadow inset 0 0 0 1.5px #e2e8f0, 0 1.13px 2.25px 0 rgba(0, 0, 0, 0.05) `2706:38223`
                 - [khối] **Container** — 227×19 [FILL×HUG] · @ (13.5, 13.5) flow · column `2706:38224`
                   - [chữ] “[Meeting Ngoại lệ] Họp ngoại lệ” — 189×19 [HUG×HUG] · @ (0, 0) flow · Afacad 15/19px 600 #334155 (color/text/primary) · no-wrap `2706:38225`
                 - [instance] **Switch** ⟨Switch: Size=Small, Status=On, Title=No, Copy=No⟩ — 28×16 [FIXED×HUG] · @ (248.5, 15) flow · row gap 10 pad 2 2 2 2 justify MAX align CENTER · bg #e65100 (color/brand/orange) · radius 4px `2706:38226`

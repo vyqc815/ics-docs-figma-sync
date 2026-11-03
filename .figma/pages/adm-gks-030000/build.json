@@ -6,7 +6,7 @@
     {
       "nodeId": "4915:244281",
       "component": "SidebarMenuAdmin",
-      "file": "components/figma/adm-gks-030000/SidebarMenuAdmin.tsx"
+      "file": "components/figma/shared/SidebarMenuAdmin.tsx"
     },
     {
       "nodeId": "4885:41018",
@@ -16,7 +16,7 @@
     {
       "nodeId": "4885:41068",
       "component": "MaincontentGiaoKhaoSat",
-      "file": "components/figma/adm-gks-030000/MaincontentGiaoKhaoSat.tsx"
+      "file": "components/figma/shared/MaincontentGiaoKhaoSat.tsx"
     }
   ]
 }

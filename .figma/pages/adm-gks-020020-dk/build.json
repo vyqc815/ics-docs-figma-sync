@@ -1,0 +1,34 @@
+{
+  "route": "/khao-sat/giao-khao-sat-lop/ket-qua-khao-sat-dk",
+  "pageFile": "components/figma/adm-gks-020020-dk/index.tsx",
+  "docFile": "docs/pages/khao-sat/giao-khao-sat-lop/ket-qua-khao-sat-dk.md",
+  "sections": [
+    {
+      "nodeId": "4885:66533",
+      "component": "Sidebar",
+      "file": "components/figma/adm-gks-020020-dk/Sidebar.tsx"
+    },
+    {
+      "nodeId": "4885:66620",
+      "component": "Header4",
+      "file": "components/figma/shared/Header4.tsx"
+    },
+    {
+      "nodeId": "4885:61226",
+      "component": "MaincontentGiaoKhaoSat",
+      "file": "components/figma/adm-gks-020020-dk/MaincontentGiaoKhaoSat.tsx"
+    }
+  ],
+  "idAlias": {
+    "4885:66620": "4885:66483",
+    "4885:66621": "4885:66484",
+    "4885:66668": "4885:66531",
+    "I4885:66668;2008:30986": "I4885:66531;2008:30986",
+    "I4885:66668;2008:31747": "I4885:66531;2008:31747",
+    "I4885:66668;2008:31748": "I4885:66531;2008:31748",
+    "I4885:66668;1391:17264": "I4885:66531;1391:17264",
+    "I4885:66668;1391:17266": "I4885:66531;1391:17266",
+    "I4885:66668;1391:17268": "I4885:66531;1391:17268",
+    "I4885:66668;1391:17270": "I4885:66531;1391:17270"
+  }
+}

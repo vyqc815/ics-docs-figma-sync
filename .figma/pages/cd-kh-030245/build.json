@@ -1,0 +1,17 @@
+{
+  "route": "/hoc-ky/bai-hoc/popup-chi-tiet-bai-hoc/tab-ky-nang/popup-them-ky-nang",
+  "pageFile": "components/figma/cd-kh-030245/index.tsx",
+  "docFile": "docs/pages/hoc-ky/bai-hoc/popup-chi-tiet-bai-hoc/tab-ky-nang/popup-them-ky-nang.md",
+  "sections": [
+    {
+      "nodeId": "7193:403962",
+      "component": "PopupThemTuThuVienDuLieu",
+      "file": "components/figma/cd-kh-030245/PopupThemTuThuVienDuLieu.tsx"
+    },
+    {
+      "nodeId": "7193:404270",
+      "component": "Tooltip",
+      "file": "components/figma/cd-kh-030245/Tooltip.tsx"
+    }
+  ]
+}

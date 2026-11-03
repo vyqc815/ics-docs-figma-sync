@@ -1,0 +1,22 @@
+{
+  "route": "/lo-trinh/chua-co-bai-hoc",
+  "pageFile": "components/figma/cd-kh-020270/index.tsx",
+  "docFile": "docs/pages/lo-trinh/chua-co-bai-hoc.md",
+  "sections": [
+    {
+      "nodeId": "6518:338415",
+      "component": "MainWorkspacecontainer",
+      "file": "components/figma/cd-kh-020270/MainWorkspacecontainer.tsx"
+    },
+    {
+      "nodeId": "6518:339442",
+      "component": "SidebarMenuCd",
+      "file": "components/figma/cd-kh-020270/SidebarMenuCd.tsx"
+    },
+    {
+      "nodeId": "6518:339443",
+      "component": "Header",
+      "file": "components/figma/cd-kh-020270/Header.tsx"
+    }
+  ]
+}

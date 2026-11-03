@@ -1,0 +1,30 @@
+{
+  "route": "/chi-tiet-lop/bai-hoc/buoi-hoc/dan-do-truoc-buoi-hoc",
+  "pageFile": "components/figma/gv-lop-030110/index.tsx",
+  "docFile": "docs/pages/chi-tiet-lop/bai-hoc/buoi-hoc/dan-do-truoc-buoi-hoc.md",
+  "sections": [
+    {
+      "nodeId": "5292:220949",
+      "component": "Body4",
+      "file": "components/figma/shared/Body4.tsx"
+    },
+    {
+      "nodeId": "5292:220950",
+      "component": "Maincontent",
+      "file": "components/figma/gv-lop-030110/Maincontent.tsx"
+    },
+    {
+      "nodeId": "5292:221264",
+      "component": "Header73",
+      "file": "components/figma/shared/Header73.tsx"
+    },
+    {
+      "nodeId": "5292:221406",
+      "component": "SidebarMenuTeacher",
+      "file": "components/figma/gv-lop-030110/SidebarMenuTeacher.tsx"
+    }
+  ],
+  "idAlias": {
+    "5292:220949": "769:30964"
+  }
+}

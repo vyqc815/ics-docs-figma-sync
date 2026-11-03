@@ -5,7 +5,7 @@
 > **Nguồn:** PLS-ICS T8/2026 ›             └─ Nhật ký › ADM-LOP-050100 — Lớp học / Nhật ký / Nhật ký (`1105:5472`, file `rRVs5HX0kIHffbS0V40djG`)  
 > **Route:** `/lop-hoc/nhat-ky/nhat-ky`  
 > **Khung thiết kế:** 1440 × 810 px  
-> **Xuất lúc:** 2026-11-02T03:37:17.749Z  
+> **Xuất lúc:** 2026-11-03T00:51:24.222Z  
 > **Spec đầy đủ (giá trị chính xác từng node):** `../../../../.figma/pages/adm-lop-050100/page-spec.json`
 
 ## 1. Tổng quan

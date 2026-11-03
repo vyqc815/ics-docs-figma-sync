@@ -12,10 +12,10 @@
   "pixels": {
     "width": 1440,
     "height": 809,
-    "mismatched": 22196,
-    "percent": 1.905,
+    "mismatched": 21773,
+    "percent": 1.869,
     "shapePercent": 0.775,
-    "textPercent": 4.769,
+    "textPercent": 4.616,
     "sizeMismatch": false
   },
   "textNodes": [
@@ -62,12 +62,6 @@
       "percent": 23
     },
     {
-      "id": "I4056:145274;2245:87774",
-      "name": "Label",
-      "pixels": 478,
-      "percent": 16.6
-    },
-    {
       "id": "I4056:145411;1474:15129",
       "name": "Vô hiệu",
       "pixels": 231,
@@ -108,6 +102,12 @@
       "name": "Mô tả danh mục",
       "pixels": 170,
       "percent": 7.2
+    },
+    {
+      "id": "I4056:145276;2245:87768",
+      "name": "Label",
+      "pixels": 190,
+      "percent": 6.6
     }
   ],
   "regions": [
@@ -1634,7 +1634,7 @@
     "4 text boxes differ in more than 35% of their pixels (check font, weight, color).",
     "70 elements are off by more than their limit (1px, 2.5px for text-driven; worst 19px)."
   ],
-  "url": "http://localhost:3108/quan-ly-danh-muc-dk",
+  "url": "http://localhost:3000/quan-ly-danh-muc-dk",
   "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
   "consoleErrors": [],
   "rootFound": true

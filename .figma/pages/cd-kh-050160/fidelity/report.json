@@ -1,0 +1,448 @@
+{
+  "pass": true,
+  "thresholds": {
+    "maxPixelDiffPercent": 0.5,
+    "maxBoxDelta": 1,
+    "maxTextBoxDelta": 2.5,
+    "colorThreshold": 0.1,
+    "aaRadius": 1,
+    "subpixel": true,
+    "maxTextNodeDiffPercent": 35
+  },
+  "pixels": {
+    "width": 880,
+    "height": 493,
+    "mismatched": 2448,
+    "percent": 0.564,
+    "shapePercent": 0.005,
+    "textPercent": 2.022,
+    "sizeMismatch": false
+  },
+  "textNodes": [
+    {
+      "id": "I6646:122951;2514:153342",
+      "name": "Description",
+      "pixels": 1030,
+      "percent": 5.5
+    },
+    {
+      "id": "I6646:122951;2514:153341",
+      "name": "Title",
+      "pixels": 844,
+      "percent": 3.6
+    },
+    {
+      "id": "I6646:123112;1048:1232",
+      "name": "Button",
+      "pixels": 21,
+      "percent": 3.1
+    },
+    {
+      "id": "6646:123241",
+      "name": "Tạo transcript bằng AI sau khi tải lên (có phiên âm & dịch câu, duyệt lại ở trang chi tiết)",
+      "pixels": 457,
+      "percent": 3
+    },
+    {
+      "id": "I6646:123113;1048:1230",
+      "name": "Button",
+      "pixels": 66,
+      "percent": 2.4
+    },
+    {
+      "id": "I6646:123203;1048:1264",
+      "name": "Tìm nội dung...",
+      "pixels": 10,
+      "percent": 0.1
+    },
+    {
+      "id": "6646:123202",
+      "name": "Tên bài *",
+      "pixels": 0,
+      "percent": 0
+    },
+    {
+      "id": "6646:123211",
+      "name": "Thêm vào cụm",
+      "pixels": 0,
+      "percent": 0
+    },
+    {
+      "id": "I6646:123212;2015:31180",
+      "name": "Value",
+      "pixels": 0,
+      "percent": 0
+    },
+    {
+      "id": "6646:123232",
+      "name": "Mô tả",
+      "pixels": 0,
+      "percent": 0
+    },
+    {
+      "id": "I6646:123224;1048:1264",
+      "name": "Tìm nội dung...",
+      "pixels": 0,
+      "percent": 0
+    },
+    {
+      "id": "6646:123237",
+      "name": "Âm thanh *",
+      "pixels": 0,
+      "percent": 0
+    },
+    {
+      "id": "6646:123234",
+      "name": "Kéo thả file âm thanh vào đây hoặc chọn file",
+      "pixels": 0,
+      "percent": 0
+    },
+    {
+      "id": "6646:123235",
+      "name": ".mp3 · tối đa 50 MB",
+      "pixels": 0,
+      "percent": 0
+    },
+    {
+      "id": "6646:123111",
+      "name": "Câu hỏi soạn ở trang chi tiết sau khi tạo",
+      "pixels": 0,
+      "percent": 0
+    }
+  ],
+  "regions": [
+    {
+      "x": 24,
+      "y": 376,
+      "width": 8,
+      "height": 24,
+      "pixels": 19,
+      "node": {
+        "id": "6646:123238",
+        "name": "Tuỳ chọn AI",
+        "role": "container"
+      }
+    }
+  ],
+  "boxes": {
+    "measured": 36,
+    "missing": [],
+    "withinThreshold": 36,
+    "buckets": {
+      "≤0.5px": 31,
+      "≤1px": 36,
+      "≤2px": 36,
+      "≤4px": 36,
+      ">4px": 0
+    },
+    "worst": [
+      {
+        "id": "6646:123111",
+        "name": "Câu hỏi soạn ở trang chi tiết sau khi tạo",
+        "role": "text",
+        "delta": 0.52,
+        "dx": 0,
+        "dy": 0,
+        "dw": -0.52,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6646:123112",
+        "name": "Atom/Button",
+        "role": "instance",
+        "delta": 0.52,
+        "dx": -0.52,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6646:123112;1048:1232",
+        "name": "Button",
+        "role": "text",
+        "delta": 0.52,
+        "dx": -0.52,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6646:123113",
+        "name": "Atom/Button",
+        "role": "instance",
+        "delta": 0.52,
+        "dx": -0.52,
+        "dy": 0,
+        "dw": 0.52,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6646:123113;1048:1230",
+        "name": "Button",
+        "role": "text",
+        "delta": 0.52,
+        "dx": -0.52,
+        "dy": 0,
+        "dw": 0.52,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6646:122950",
+        "name": "Popup · Thêm từ thư viện dữ liệu",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6646:122951",
+        "name": "Popup/Header",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6646:122951;2514:153340",
+        "name": "Tiêu đề",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6646:122951;2711:67900",
+        "name": "Title Row",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6646:122951;2514:153341",
+        "name": "Title",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6646:122951;2514:153342",
+        "name": "Description",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6646:122952",
+        "name": "Body",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6646:123200",
+        "name": "Hàng 1",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6646:123201",
+        "name": "Field · Tên bài",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6646:123202",
+        "name": "Tên bài *",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6646:123203",
+        "name": "Atom/Input",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6646:123203;1048:1264",
+        "name": "Tìm nội dung...",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6646:123210",
+        "name": "Field · Bài học",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6646:123211",
+        "name": "Thêm vào cụm",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6646:123212",
+        "name": "DD/Molecule/Trigger · Bài học",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6646:123212;2015:31179",
+        "name": "Content",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6646:123212;2015:31180",
+        "name": "Value",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6646:123212;2015:31183",
+        "name": "Chevron",
+        "role": "icon",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6646:123231",
+        "name": "Field · Mô tả",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6646:123232",
+        "name": "Mô tả",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      }
+    ],
+    "maxDelta": 0.52,
+    "over": []
+  },
+  "failures": [],
+  "url": "http://localhost:3000/ky-nang-s6/nghe/popup-tao-bai-nghe-moi",
+  "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
+  "consoleErrors": [],
+  "rootFound": true
+}

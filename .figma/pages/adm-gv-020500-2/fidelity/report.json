@@ -12,19 +12,13 @@
   "pixels": {
     "width": 1440,
     "height": 905,
-    "mismatched": 848,
-    "percent": 0.065,
+    "mismatched": 494,
+    "percent": 0.038,
     "shapePercent": 0.005,
-    "textPercent": 0.62,
+    "textPercent": 0.341,
     "sizeMismatch": false
   },
   "textNodes": [
-    {
-      "id": "I4915:233777;4899:195680;2245:87864",
-      "name": "Label",
-      "pixels": 373,
-      "percent": 14.9
-    },
     {
       "id": "4056:126272",
       "name": "Buổi tối",
@@ -60,6 +54,12 @@
       "name": "Label",
       "pixels": 23,
       "percent": 0.9
+    },
+    {
+      "id": "I4915:233777;4899:195680;2245:87864",
+      "name": "Label",
+      "pixels": 19,
+      "percent": 0.8
     },
     {
       "id": "I4915:233777;4899:195681;2245:87858",
@@ -465,7 +465,7 @@
     "over": []
   },
   "failures": [],
-  "url": "http://localhost:3108/chi-tiet-giao-vien/quan-ly-dang-ky-lich-adm-gv-020500-2",
+  "url": "http://localhost:3000/chi-tiet-giao-vien/quan-ly-dang-ky-lich-adm-gv-020500-2",
   "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
   "consoleErrors": [],
   "rootFound": true

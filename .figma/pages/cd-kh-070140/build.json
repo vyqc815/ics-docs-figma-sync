@@ -1,0 +1,22 @@
+{
+  "route": "/thu-vien/kien-thuc/phat-am",
+  "pageFile": "components/figma/cd-kh-070140/index.tsx",
+  "docFile": "docs/pages/thu-vien/kien-thuc/phat-am.md",
+  "sections": [
+    {
+      "nodeId": "5672:68345",
+      "component": "Content",
+      "file": "components/figma/cd-kh-070140/Content.tsx"
+    },
+    {
+      "nodeId": "5672:68667",
+      "component": "SidebarMenuCd",
+      "file": "components/figma/cd-kh-070140/SidebarMenuCd.tsx"
+    },
+    {
+      "nodeId": "5672:68668",
+      "component": "Header",
+      "file": "components/figma/cd-kh-070140/Header.tsx"
+    }
+  ]
+}

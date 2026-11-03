@@ -5,7 +5,7 @@
 > **Nguồn:** PLS-ICS T8/2026 ›         ├─ LỚP HỌC › ADM-LOP-010000 — Danh sách lớp học (`2623:12572`, file `rRVs5HX0kIHffbS0V40djG`)  
 > **Route:** `/danh-sach-lop-hoc`  
 > **Khung thiết kế:** 1440 × 1099 px  
-> **Xuất lúc:** 2026-11-02T03:30:26.995Z  
+> **Xuất lúc:** 2026-11-03T03:22:20.638Z  
 > **Spec đầy đủ (giá trị chính xác từng node):** `../../.figma/pages/adm-lop-010000/page-spec.json`
 
 ## 1. Tổng quan
@@ -26,6 +26,9 @@ Nền trang: `#f8fafc`.
 
 | Token | Biến CSS | Giá trị | Trỏ tới | Bộ / mode |
 | --- | --- | --- | --- | --- |
+| `bg/canvas` | `--bg-canvas` | `#f8fafc` | color/extended/f8fafc | Theme · Semantic / Light |
+| `bg/strong` | `--bg-strong` | `#e2e8f0` | color/border/default | Theme · Semantic / Light |
+| `bg/surface` | `--bg-surface` | `#ffffff` | color/neutral/white | Theme · Semantic / Light |
 | `bố cục/khoảng cách khối` | `--bo-cuc-khoang-cach-khoi` | `16` | spacing/16 | Number Tokens / Mode 1 |
 | `bố cục/lề hai bên` | `--bo-cuc-le-hai-ben` | `16` | spacing/16 | Number Tokens / Mode 1 |
 | `bố cục/lề trên dưới` | `--bo-cuc-le-tren-duoi` | `24` | spacing/24 | Number Tokens / Mode 1 |
@@ -266,7 +269,7 @@ Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí ·
     - [khối] **Section - Bảng dữ liệu chi tiết các lớp học** — 2913×822 [FIXED×HUG] · @ (16, 151) flow · column · bg #ffffff (color/neutral/white) · radius 16px · border 1px solid #e2e8f0 (color/border/default) · shadow 0 1px 2px 0 rgba(0, 0, 0, 0.05) `2623:12664`
       - [khối] **Table Scroll Container** — 2911×36 [FILL×HUG] · @ (1, 1) flow · column `2623:12665`
         - [khối] **Table** — 2911×36 [FILL×HUG] · @ (0, 0) flow · column `2623:12666`
-          - [khối] **Frame 427321948** — 2911×36 [FILL×HUG] · @ (0, 0) flow · row gap 12 pad 0 16 0 16 align CENTER · bg #f8fafc · radius 16px 16px 0 0 · border 0 0 1px 0 solid #e2e8f0 (color/border/default) `2623:12667`
+          - [khối] **Frame 427321948** — 2911×36 [FILL×HUG] · @ (0, 0) flow · row gap 12 pad 0 16 0 16 align CENTER · bg #f8fafc (bg/canvas) · radius 16px 16px 0 0 · border 0 0 1px 0 solid #e2e8f0 (color/border/default) `2623:12667`
             - [khối] **Cell** — 152×35 [FIXED×HUG] · @ (16, 0) flow · column pad 8 0 8 20 justify CENTER · radius 12px 0 0 0 `2623:12668`
               - [chữ] “MÃ Lớp học ” — 132×19 [FILL×HUG] · @ (20, 8) flow · Afacad 15/19px 700 #64748b (color/text/secondary) case upper `2623:12669`
             - [khối] **Cell** — 64×35 [FIXED×HUG] · @ (180, 0) flow · column pad 8 0 8 0 justify CENTER align CENTER `2623:12670`
@@ -485,7 +488,7 @@ Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí ·
         - [khối] **Row - ROW 1: DN1314-I** — 2924×74 [HUG×HUG] · @ (0, 1) flow · row gap 12 pad 8 16 8 16 align CENTER · bg #ffffff (color/neutral/white) · border 0 0 1px 0 solid #f1f5f9 (color/border/subtle) `2623:12719`
           - [khối] **Cell · MÃ Lớp học** — 152×36 [FIXED×HUG] · @ (16, 18.5) flow · row gap 8 align CENTER `2764:93208`
             - [icon] **CLass Status** ⟨CLass Status: Property 1=Đang học⟩ — 24×24 · @ (0, 6) flow · file /figma/assets/c69ec0db5251.svg `2623:12721`
-            - [khối] **Data** — 100×36 [FIXED×HUG] · @ (32, 0) flow · column justify CENTER · bg #ffffff `2623:12722`
+            - [khối] **Data** — 100×36 [FIXED×HUG] · @ (32, 0) flow · column justify CENTER · bg #ffffff (bg/surface) `2623:12722`
               - [khối] **Container** — 100×36 [FILL×HUG] · @ (0, 0) flow · column `2623:12723`
                 - [khối] **Container** — 100×17 [FILL×HUG] · @ (0, 0) flow · row gap 6 align CENTER `2623:12724`
                   - [instance] **Atom/Tag Solid** ⟨Atom/Tag Solid: Label=H4, Size=16H, Tone=Amber⟩ — 25×17 [HUG×HUG] · @ (0, 0) flow · row pad 1 6 1 6 justify CENTER align CENTER · bg #f59e0b (color/extended/f59e0b) · radius 4px `2623:12725`
@@ -592,7 +595,7 @@ Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí ·
         - [khối] **Row - ROW 2: DN1157-I** — 2924×74 [HUG×HUG] · @ (0, 75) flow · row gap 12 pad 8 16 8 16 align CENTER · bg #ffffff (color/neutral/white) · border 0 0 1px 0 solid #f1f5f9 (color/border/subtle) `2623:12772`
           - [khối] **Cell · MÃ Lớp học** — 152×36 [FIXED×HUG] · @ (16, 18.5) flow · row gap 8 align CENTER `2764:93233`
             - [icon] **CLass Status** ⟨CLass Status: Property 1=Hoàn thành⟩ — 24×24 · @ (0, 6) flow · file /figma/assets/54423391e03b.svg `2623:12773`
-            - [khối] **Data** — 100×36 [FIXED×HUG] · @ (32, 0) flow · column justify CENTER · bg #ffffff `2623:12774`
+            - [khối] **Data** — 100×36 [FIXED×HUG] · @ (32, 0) flow · column justify CENTER · bg #ffffff (bg/surface) `2623:12774`
               - [khối] **Container** — 100×36 [FILL×HUG] · @ (0, 0) flow · column `2623:12775`
                 - [khối] **Container** — 100×17 [FILL×HUG] · @ (0, 0) flow · row gap 6 align CENTER `2623:12776`
                   - [instance] **Atom/Tag Solid** ⟨Atom/Tag Solid: Label=H4, Size=16H, Tone=Amber⟩ — 25×17 [HUG×HUG] · @ (0, 0) flow · row pad 1 6 1 6 justify CENTER align CENTER · bg #f59e0b (color/extended/f59e0b) · radius 4px `2623:12777`
@@ -701,7 +704,7 @@ Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí ·
         - [khối] **Row - ROW 3: DN1501-II** — 2924×74 [HUG×HUG] · @ (0, 149) flow · row gap 12 pad 8 16 8 16 align CENTER · bg #ffffff (color/neutral/white) · border 0 0 1px 0 solid #f1f5f9 (color/border/subtle) `2623:12827`
           - [khối] **Cell · MÃ Lớp học** — 152×36 [FIXED×HUG] · @ (16, 18.5) flow · row gap 8 align CENTER `2764:93258`
             - [icon] **CLass Status** ⟨CLass Status: Property 1=Mới tạo⟩ — 24×24 · @ (0, 6) flow · file /figma/assets/597f53073cab.svg `2623:12828`
-            - [khối] **Data** — 100×36 [FIXED×HUG] · @ (32, 0) flow · column justify CENTER · bg #ffffff `2623:12829`
+            - [khối] **Data** — 100×36 [FIXED×HUG] · @ (32, 0) flow · column justify CENTER · bg #ffffff (bg/surface) `2623:12829`
               - [khối] **Container** — 100×36 [FILL×HUG] · @ (0, 0) flow · column `2623:12830`
                 - [khối] **Container** — 100×17 [FILL×HUG] · @ (0, 0) flow · row gap 6 align CENTER `2623:12831`
                   - [instance] **Atom/Tag Solid** ⟨Atom/Tag Solid: Label=H4, Size=16H, Tone=Amber⟩ — 25×17 [HUG×HUG] · @ (0, 0) flow · row pad 1 6 1 6 justify CENTER align CENTER · bg #f59e0b (color/extended/f59e0b) · radius 4px `2623:12832`
@@ -807,7 +810,7 @@ Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí ·
         - [khối] **Row - ROW 4: DN420-II** — 2924×82 [HUG×HUG] · @ (0, 223) flow · row gap 12 pad 8 16 8 16 align CENTER · bg #ffffff (color/neutral/white) · border 0 0 1px 0 solid #f1f5f9 (color/border/subtle) `2623:12882`
           - [khối] **Cell · MÃ Lớp học** — 152×24 [FIXED×HUG] · @ (16, 28.5) flow · row gap 8 align CENTER `2764:93283`
             - [icon] **CLass Status** ⟨CLass Status: Property 1=Huỷ bỏ⟩ — 24×24 · @ (0, 0) flow · file /figma/assets/0ec67941e9aa.svg `2623:12883`
-            - [khối] **Data** — 100×19 [FIXED×HUG] · @ (32, 2.5) flow · column justify CENTER · bg #ffffff `2623:12884`
+            - [khối] **Data** — 100×19 [FIXED×HUG] · @ (32, 2.5) flow · column justify CENTER · bg #ffffff (bg/surface) `2623:12884`
               - [khối] **Container** — 100×19 [FILL×HUG] · @ (0, 0) flow · column `2623:12885`
                 - [khối] **Frame 427321959** — 100×19 [FILL×HUG] · @ (0, 0) flow · row gap 6 align CENTER `2623:12886`
                   - [chữ] “DN420-II” — 100×19 [FILL×HUG] · @ (0, 0) flow · Afacad 15/19px 700 #e65100 (color/brand/orange) · truncate 1 lines `2623:12887`
@@ -910,7 +913,7 @@ Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí ·
               - [khối] **Group 240059** — 6.55×9.82 · @ (8.73, 7.09) flow `I2623:12935;1454:2860`
                 - [hình] **Rectangle 5627** — 1.96×9.82 · @ (0, 0) abs · bg #bbbbbb · radius 2.18px `I2623:12935;1454:2861`
                 - [hình] **Rectangle 5626** — 1.96×9.82 · @ (4.58, 0) abs · bg #bbbbbb · radius 2.18px `I2623:12935;1454:2862`
-            - [khối] **Data** — 100×19 [FIXED×HUG] · @ (32, 2.5) flow · column justify CENTER · bg #ffffff `2623:12936`
+            - [khối] **Data** — 100×19 [FIXED×HUG] · @ (32, 2.5) flow · column justify CENTER · bg #ffffff (bg/surface) `2623:12936`
               - [khối] **Container** — 100×19 [FILL×HUG] · @ (0, 0) flow · column `2623:12937`
                 - [khối] **Frame 427321959** — 100×19 [FILL×HUG] · @ (0, 0) flow · row gap 6 align CENTER `2623:12938`
                   - [instance] **Atom/Number Badge** ⟨Atom/Number Badge: Value=1, Type=Circle, Size=Small, State=Active⟩ — 16×16 · @ (0, 1.5) flow · column justify CENTER align CENTER · bg #ff0000 · radius 64px · border 1px solid #ffffff · shadow 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `3065:70064`
@@ -1014,7 +1017,7 @@ Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí ·
         - [khối] **Row - ROW 6: DN1207-III** — 2924×74 [HUG×HUG] · @ (0, 379) flow · row gap 12 pad 8 16 8 16 align CENTER · bg #ffffff (color/neutral/white) · border 0 0 1px 0 solid #f1f5f9 (color/border/subtle) `2623:12986`
           - [khối] **Cell · MÃ Lớp học** — 152×24 [FIXED×HUG] · @ (16, 24.5) flow · row gap 8 align CENTER `2764:93333`
             - [icon] **CLass Status** ⟨CLass Status: Property 1=Khai giảng⟩ — 24×24 · @ (0, 0) flow · file /figma/assets/5cd6c82d87c5.svg `2623:12987`
-            - [khối] **Data** — 100×19 [FIXED×HUG] · @ (32, 2.5) flow · column justify CENTER · bg #ffffff `2623:12988`
+            - [khối] **Data** — 100×19 [FIXED×HUG] · @ (32, 2.5) flow · column justify CENTER · bg #ffffff (bg/surface) `2623:12988`
               - [khối] **Container** — 100×19 [FILL×HUG] · @ (0, 0) flow · column `2623:12989`
                 - [khối] **Frame 427321959** — 100×19 [FILL×HUG] · @ (0, 0) flow · row gap 6 align CENTER `2623:12990`
                   - [chữ] “DN420-II” — 100×19 [FILL×HUG] · @ (0, 0) flow · Afacad 15/19px 700 #334155 (color/text/primary) · truncate 1 lines `2623:12991`
@@ -1116,7 +1119,7 @@ Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí ·
         - [khối] **Row - ROW 7: DN1-131** — 2924×74 [HUG×HUG] · @ (0, 453) flow · row gap 12 pad 8 16 8 16 align CENTER · bg #ffffff (color/neutral/white) · border 0 0 1px 0 solid #f1f5f9 (color/border/subtle) `2623:13037`
           - [khối] **Cell · MÃ Lớp học** — 152×24 [FIXED×HUG] · @ (16, 24.5) flow · row gap 8 align CENTER `2764:93358`
             - [icon] **CLass Status** ⟨CLass Status: Property 1=Trải nghiệm⟩ — 24×24 · @ (0, 0) flow · file /figma/assets/f9d845ca65bf.svg `2623:13038`
-            - [khối] **Data** — 100×19 [FIXED×HUG] · @ (32, 2.5) flow · column justify CENTER · bg #ffffff `2623:13039`
+            - [khối] **Data** — 100×19 [FIXED×HUG] · @ (32, 2.5) flow · column justify CENTER · bg #ffffff (bg/surface) `2623:13039`
               - [khối] **Container** — 100×19 [FILL×HUG] · @ (0, 0) flow · column `2623:13040`
                 - [khối] **Frame 427321959** — 100×19 [FILL×HUG] · @ (0, 0) flow · row gap 6 align CENTER `2623:13041`
                   - [chữ] “DN420-II” — 100×19 [FILL×HUG] · @ (0, 0) flow · Afacad 15/19px 700 #334155 (color/text/primary) · truncate 1 lines `2623:13042`
@@ -1218,7 +1221,7 @@ Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí ·
         - [khối] **Row - ROW 8: DN1-130** — 2924×74 [HUG×HUG] · @ (0, 527) flow · row gap 12 pad 8 16 8 16 align CENTER · bg #ffffff (color/neutral/white) · border 0 0 1px 0 solid #f1f5f9 (color/border/subtle) `2623:13088`
           - [khối] **Cell · MÃ Lớp học** — 152×24 [FIXED×HUG] · @ (16, 24.5) flow · row gap 8 align CENTER `2764:93383`
             - [icon] **CLass Status** ⟨CLass Status: Property 1=Hoàn thành⟩ — 24×24 · @ (0, 0) flow · file /figma/assets/54423391e03b.svg `2623:13089`
-            - [khối] **Data** — 100×19 [FIXED×HUG] · @ (32, 2.5) flow · column justify CENTER · bg #ffffff `2623:13090`
+            - [khối] **Data** — 100×19 [FIXED×HUG] · @ (32, 2.5) flow · column justify CENTER · bg #ffffff (bg/surface) `2623:13090`
               - [khối] **Container** — 100×19 [FILL×HUG] · @ (0, 0) flow · column `2623:13091`
                 - [khối] **Frame 427321959** — 100×19 [FILL×HUG] · @ (0, 0) flow · row gap 6 align CENTER `2623:13092`
                   - [chữ] “DN420-II” — 100×19 [FILL×HUG] · @ (0, 0) flow · Afacad 15/19px 700 #334155 (color/text/primary) · truncate 1 lines `2623:13093`
@@ -1320,7 +1323,7 @@ Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí ·
         - [khối] **Row - ROW 9: DN511-II** — 2924×64 [HUG×HUG] · @ (0, 601) flow · row gap 12 pad 8 16 8 16 align CENTER · bg #ffffff (color/neutral/white) · border 0 0 1px 0 solid #f1f5f9 (color/border/subtle) `2623:13139`
           - [khối] **Cell · MÃ Lớp học** — 152×24 [FIXED×HUG] · @ (16, 19.5) flow · row gap 8 align CENTER `2764:93408`
             - [icon] **CLass Status** ⟨CLass Status: Property 1=Hoàn thành⟩ — 24×24 · @ (0, 0) flow · file /figma/assets/54423391e03b.svg `2623:13140`
-            - [khối] **Data** — 100×19 [FIXED×HUG] · @ (32, 2.5) flow · column justify CENTER · bg #ffffff `2623:13141`
+            - [khối] **Data** — 100×19 [FIXED×HUG] · @ (32, 2.5) flow · column justify CENTER · bg #ffffff (bg/surface) `2623:13141`
               - [khối] **Container** — 100×19 [FILL×HUG] · @ (0, 0) flow · column `2623:13142`
                 - [khối] **Frame 427321959** — 100×19 [FILL×HUG] · @ (0, 0) flow · row gap 6 align CENTER `2623:13143`
                   - [chữ] “DN420-II” — 100×19 [FILL×HUG] · @ (0, 0) flow · Afacad 15/19px 700 #334155 (color/text/primary) · truncate 1 lines `2623:13144`
@@ -1422,7 +1425,7 @@ Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí ·
         - [khối] **Row - ROW 10: DN1204-IV** — 2924×74 [HUG×HUG] · @ (0, 665) flow · row gap 12 pad 8 16 8 16 align CENTER · bg #ffffff (color/neutral/white) · border 0 0 1px 0 solid #f1f5f9 (color/border/subtle) `2623:13190`
           - [khối] **Cell · MÃ Lớp học** — 152×36 [FIXED×HUG] · @ (16, 18.5) flow · row gap 8 align CENTER `2764:93433`
             - [icon] **CLass Status** ⟨CLass Status: Property 1=Hoàn thành⟩ — 24×24 · @ (0, 6) flow · file /figma/assets/54423391e03b.svg `2623:13191`
-            - [khối] **Data** — 100×36 [FIXED×HUG] · @ (32, 0) flow · column justify CENTER · bg #ffffff `2623:13192`
+            - [khối] **Data** — 100×36 [FIXED×HUG] · @ (32, 0) flow · column justify CENTER · bg #ffffff (bg/surface) `2623:13192`
               - [khối] **Container** — 100×36 [FILL×HUG] · @ (0, 0) flow · column `2623:13193`
                 - [khối] **Container** — 100×17 [FILL×HUG] · @ (0, 0) flow · row gap 6 align CENTER `2623:13194`
                   - [instance] **Atom/Tag Solid** ⟨Atom/Tag Solid: Label=H4, Size=16H, Tone=Amber⟩ — 25×17 [HUG×HUG] · @ (0, 0) flow · row pad 1 6 1 6 justify CENTER align CENTER · bg #f59e0b (color/extended/f59e0b) · radius 4px `2623:13195`

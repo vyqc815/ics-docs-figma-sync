@@ -1,6 +1,6 @@
 # Fidelity: CD-TL-010300 — Tools / Giọng đọc / Âm tiết pinyin · Đang tạo
 
-- URL: `http://localhost:3108/tools/giong-doc/am-tiet-pinyin-dang-tao`
+- URL: `http://localhost:3000/tools/giong-doc/am-tiet-pinyin-dang-tao`
 - Verdict: **PASS**
 - Pixels outside text: **0.04%** differ (limit 0.5%); all pixels: 0.218%; inside text boxes: 1.216% (glyph rendering)
 - Boxes: 120/120 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 119, ≤1px: 120, ≤2px: 120, ≤4px: 120, >4px: 0

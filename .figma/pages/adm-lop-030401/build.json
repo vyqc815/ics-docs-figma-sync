@@ -1,0 +1,39 @@
+{
+  "route": "/lop-hoc/bai-hoc/tai-nguyen/tung-muc-trong",
+  "pageFile": "components/figma/adm-lop-030401/index.tsx",
+  "docFile": "docs/pages/lop-hoc/bai-hoc/tai-nguyen/tung-muc-trong.md",
+  "sections": [
+    {
+      "nodeId": "4554:25923",
+      "component": "Body10",
+      "file": "components/figma/shared/Body10.tsx"
+    },
+    {
+      "nodeId": "4554:25924",
+      "component": "Maincontent",
+      "file": "components/figma/adm-lop-030401/Maincontent.tsx"
+    },
+    {
+      "nodeId": "4554:26154",
+      "component": "Header36",
+      "file": "components/figma/shared/Header36.tsx"
+    },
+    {
+      "nodeId": "4915:224299",
+      "component": "SidebarMenuAdmin7",
+      "file": "components/figma/shared/SidebarMenuAdmin7.tsx"
+    }
+  ],
+  "idAlias": {
+    "4554:26154": "4554:24658",
+    "4554:26155": "4554:24659",
+    "4554:26202": "4554:24706",
+    "I4554:26202;2008:30986": "I4554:24706;2008:30986",
+    "I4554:26202;2008:31747": "I4554:24706;2008:31747",
+    "I4554:26202;2008:31748": "I4554:24706;2008:31748",
+    "I4554:26202;1391:17264": "I4554:24706;1391:17264",
+    "I4554:26202;1391:17266": "I4554:24706;1391:17266",
+    "I4554:26202;1391:17268": "I4554:24706;1391:17268",
+    "I4554:26202;1391:17270": "I4554:24706;1391:17270"
+  }
+}

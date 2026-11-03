@@ -11,7 +11,7 @@
     {
       "nodeId": "4056:122749",
       "component": "Sidebar",
-      "file": "components/figma/adm-gv-010000-dk/Sidebar.tsx"
+      "file": "components/figma/shared/Sidebar.tsx"
     },
     {
       "nodeId": "4056:122833",

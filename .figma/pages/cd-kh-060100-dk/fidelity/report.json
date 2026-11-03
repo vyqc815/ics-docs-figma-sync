@@ -12,19 +12,13 @@
   "pixels": {
     "width": 1440,
     "height": 962,
-    "mismatched": 6521,
-    "percent": 0.471,
+    "mismatched": 5900,
+    "percent": 0.426,
     "shapePercent": 0.11,
-    "textPercent": 1.718,
+    "textPercent": 1.505,
     "sizeMismatch": false
   },
   "textNodes": [
-    {
-      "id": "I6015:53616;6579:362457;2245:87914",
-      "name": "Label",
-      "pixels": 628,
-      "percent": 26.8
-    },
     {
       "id": "I6015:53616;6579:362454;2245:87908",
       "name": "Label",
@@ -108,6 +102,12 @@
       "name": "Label",
       "pixels": 90,
       "percent": 3.8
+    },
+    {
+      "id": "6015:53331",
+      "name": "你好吗？",
+      "pixels": 200,
+      "percent": 3.6
     }
   ],
   "regions": [
@@ -789,7 +789,7 @@
     "over": []
   },
   "failures": [],
-  "url": "http://localhost:3108/bai-tap-ve-nha/btvn-dk",
+  "url": "http://localhost:3000/bai-tap-ve-nha/btvn-dk",
   "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
   "consoleErrors": [],
   "rootFound": true

@@ -1,6 +1,6 @@
 # Fidelity: GV-LD-020000-DK — Lịch dạy / Quản lý đăng ký lịch
 
-- URL: `http://localhost:3108/lich-day/quan-ly-dang-ky-lich-dk`
+- URL: `http://localhost:3000/lich-day/quan-ly-dang-ky-lich-dk`
 - Verdict: **PASS**
 - Pixels outside text: **0.002%** differ (limit 0.5%); all pixels: 0.063%; inside text boxes: 0.8% (glyph rendering)
 - Boxes: 166/166 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 166, ≤1px: 166, ≤2px: 166, ≤4px: 166, >4px: 0

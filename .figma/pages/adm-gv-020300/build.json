@@ -6,7 +6,7 @@
     {
       "nodeId": "2008:48439",
       "component": "Body",
-      "file": "components/figma/adm-gv-020300/Body.tsx"
+      "file": "components/figma/shared/Body.tsx"
     },
     {
       "nodeId": "2008:48473",
@@ -15,8 +15,8 @@
     },
     {
       "nodeId": "4915:235322",
-      "component": "SidebarMenuAdmin",
-      "file": "components/figma/adm-gv-020300/SidebarMenuAdmin.tsx"
+      "component": "SidebarMenuAdmin2",
+      "file": "components/figma/shared/SidebarMenuAdmin2.tsx"
     }
   ]
 }

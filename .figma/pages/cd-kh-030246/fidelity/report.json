@@ -1,0 +1,450 @@
+{
+  "pass": false,
+  "thresholds": {
+    "maxPixelDiffPercent": 0.5,
+    "maxBoxDelta": 1,
+    "maxTextBoxDelta": 2.5,
+    "colorThreshold": 0.1,
+    "aaRadius": 1,
+    "subpixel": true,
+    "maxTextNodeDiffPercent": 35
+  },
+  "pixels": {
+    "width": 960,
+    "height": 640,
+    "mismatched": 2340,
+    "percent": 0.381,
+    "shapePercent": 0,
+    "textPercent": 2.382,
+    "sizeMismatch": false
+  },
+  "textNodes": [
+    {
+      "id": "I7193:404274;2514:153342",
+      "name": "Description",
+      "pixels": 2244,
+      "percent": 11
+    },
+    {
+      "id": "7193:404494",
+      "name": "Loại kỹ năng",
+      "pixels": 6,
+      "percent": 0.5
+    },
+    {
+      "id": "7193:404531",
+      "name": "Chưa có bài kỹ năng",
+      "pixels": 9,
+      "percent": 0.4
+    },
+    {
+      "id": "I7193:404274;2514:153341",
+      "name": "Title",
+      "pixels": 75,
+      "percent": 0.3
+    },
+    {
+      "id": "7193:404515",
+      "name": "Bài kỹ năng",
+      "pixels": 3,
+      "percent": 0.3
+    },
+    {
+      "id": "I7193:404406;1048:1232",
+      "name": "Button",
+      "pixels": 1,
+      "percent": 0.1
+    },
+    {
+      "id": "7193:404497",
+      "name": "Nghe",
+      "pixels": 0,
+      "percent": 0
+    },
+    {
+      "id": "7193:404498",
+      "name": "14",
+      "pixels": 0,
+      "percent": 0
+    },
+    {
+      "id": "7193:404500",
+      "name": "Đọc",
+      "pixels": 0,
+      "percent": 0
+    },
+    {
+      "id": "7193:404501",
+      "name": "9",
+      "pixels": 0,
+      "percent": 0
+    },
+    {
+      "id": "7193:404503",
+      "name": "Viết",
+      "pixels": 0,
+      "percent": 0
+    },
+    {
+      "id": "7193:404504",
+      "name": "0",
+      "pixels": 0,
+      "percent": 0
+    },
+    {
+      "id": "7193:404506",
+      "name": "Nói",
+      "pixels": 0,
+      "percent": 0
+    },
+    {
+      "id": "7193:404507",
+      "name": "0",
+      "pixels": 0,
+      "percent": 0
+    },
+    {
+      "id": "7193:404509",
+      "name": "Cụm",
+      "pixels": 0,
+      "percent": 0
+    }
+  ],
+  "regions": [],
+  "boxes": {
+    "measured": 51,
+    "missing": [],
+    "withinThreshold": 50,
+    "buckets": {
+      "≤0.5px": 50,
+      "≤1px": 50,
+      "≤2px": 50,
+      "≤4px": 50,
+      ">4px": 1
+    },
+    "worst": [
+      {
+        "id": "7193:404528",
+        "name": "Text",
+        "role": "text",
+        "delta": 345.73,
+        "dx": -172.73,
+        "dy": 0,
+        "dw": 345.73,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "7193:404513",
+        "name": "Loại Viết chưa có cụm ở Kỹ năng (S6)",
+        "role": "text",
+        "delta": 0.5,
+        "dx": -0.25,
+        "dy": 0,
+        "dw": 0.5,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "7193:404531",
+        "name": "Chưa có bài kỹ năng",
+        "role": "text",
+        "delta": 0.48,
+        "dx": -0.25,
+        "dy": 0,
+        "dw": 0.48,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "7193:404512",
+        "name": "Chưa có cụm",
+        "role": "text",
+        "delta": 0.45,
+        "dx": -0.23,
+        "dy": 0,
+        "dw": 0.45,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "7193:404527",
+        "name": "Chọn tất cả",
+        "role": "text",
+        "delta": 0.27,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.27,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "7193:404532",
+        "name": "Chọn loại có dữ liệu hoặc tạo bài ở Kỹ năng (S6)",
+        "role": "text",
+        "delta": 0.25,
+        "dx": -0.12,
+        "dy": 0,
+        "dw": 0.25,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "7193:404273",
+        "name": "Popup · Thêm từ thư viện dữ liệu",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "7193:404274",
+        "name": "Popup/Header",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I7193:404274;2514:153340",
+        "name": "Tiêu đề",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I7193:404274;2711:67900",
+        "name": "Title Row",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I7193:404274;2514:153341",
+        "name": "Title",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I7193:404274;2514:153342",
+        "name": "Description",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "7193:404275",
+        "name": "Body",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "7193:404492",
+        "name": "3 cột · Loại | Cụm | Mục",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "7193:404493",
+        "name": "Cột · Loại kỹ năng",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "7193:404495",
+        "name": "Tiêu đề cột",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "7193:404494",
+        "name": "Loại kỹ năng",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "7193:404496",
+        "name": "Nghe",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "7193:404497",
+        "name": "Nghe",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "7193:404498",
+        "name": "14",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "7193:404499",
+        "name": "Đọc",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "7193:404500",
+        "name": "Đọc",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "7193:404501",
+        "name": "9",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "7193:404502",
+        "name": "Viết",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "7193:404503",
+        "name": "Viết",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      }
+    ],
+    "maxDelta": 345.73,
+    "over": [
+      {
+        "id": "7193:404528",
+        "name": "Text",
+        "role": "text",
+        "delta": 345.73,
+        "dx": -172.73,
+        "dy": 0,
+        "dw": 345.73,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      }
+    ]
+  },
+  "failures": [
+    "1 elements are off by more than their limit (1px, 2.5px for text-driven; worst 345.73px)."
+  ],
+  "url": "http://localhost:3000/hoc-ky/bai-hoc/popup-chi-tiet-bai-hoc/tab-ky-nang/popup-them-ky-nang/loai-chua-co-du-lieu",
+  "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
+  "consoleErrors": [],
+  "rootFound": true
+}

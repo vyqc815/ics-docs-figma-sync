@@ -1,0 +1,34 @@
+{
+  "route": "/lich/lich-day-tong/theo-lop",
+  "pageFile": "components/figma/adm-ld-010010/index.tsx",
+  "docFile": "docs/pages/lich/lich-day-tong/theo-lop.md",
+  "sections": [
+    {
+      "nodeId": "5822:38380",
+      "component": "Maincontent",
+      "file": "components/figma/adm-ld-010010/Maincontent.tsx"
+    },
+    {
+      "nodeId": "5822:38559",
+      "component": "SidebarMenuAdmin",
+      "file": "components/figma/adm-ld-010010/SidebarMenuAdmin.tsx"
+    },
+    {
+      "nodeId": "5822:38560",
+      "component": "Header20",
+      "file": "components/figma/shared/Header20.tsx"
+    }
+  ],
+  "idAlias": {
+    "5822:38560": "2223:83793",
+    "5822:38561": "4050:118578",
+    "5822:38608": "2223:83841",
+    "I5822:38608;2008:30986": "I2223:83841;2008:30986",
+    "I5822:38608;2008:31747": "I2223:83841;2008:31747",
+    "I5822:38608;2008:31748": "I2223:83841;2008:31748",
+    "I5822:38608;1391:17264": "I2223:83841;1391:17264",
+    "I5822:38608;1391:17266": "I2223:83841;1391:17266",
+    "I5822:38608;1391:17268": "I2223:83841;1391:17268",
+    "I5822:38608;1391:17270": "I2223:83841;1391:17270"
+  }
+}

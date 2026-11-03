@@ -5,7 +5,7 @@
 > **Nguồn:** PLS-ICS T8/2026 ›         └─ MOVE VIDEO › ADM-MV-010000 — Move video / Xác minh Gmail (`2391:65872`, file `rRVs5HX0kIHffbS0V40djG`)  
 > **Route:** `/move-video/xac-minh-gmail`  
 > **Khung thiết kế:** 1440 × 810 px (cắt phần tràn ra ngoài khung)  
-> **Xuất lúc:** 2026-11-02T03:45:57.089Z  
+> **Xuất lúc:** 2026-11-03T00:59:59.083Z  
 > **Spec đầy đủ (giá trị chính xác từng node):** `../../../.figma/pages/adm-mv-010000/page-spec.json`
 
 ## 1. Tổng quan

@@ -1,0 +1,22 @@
+{
+  "route": "/thu-vien/kien-thuc/hanzi",
+  "pageFile": "components/figma/cd-kh-070130/index.tsx",
+  "docFile": "docs/pages/thu-vien/kien-thuc/hanzi.md",
+  "sections": [
+    {
+      "nodeId": "5672:66991",
+      "component": "Content",
+      "file": "components/figma/cd-kh-070130/Content.tsx"
+    },
+    {
+      "nodeId": "5672:67313",
+      "component": "SidebarMenuCd",
+      "file": "components/figma/cd-kh-070130/SidebarMenuCd.tsx"
+    },
+    {
+      "nodeId": "5672:67314",
+      "component": "Header",
+      "file": "components/figma/cd-kh-070130/Header.tsx"
+    }
+  ]
+}

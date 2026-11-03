@@ -1,0 +1,32 @@
+{
+  "route": "/thu-vien/bai-tap/chi-tiet-cau-hoi-listening/sua-xoa",
+  "pageFile": "components/figma/cd-kh-070306/index.tsx",
+  "docFile": "docs/pages/thu-vien/bai-tap/chi-tiet-cau-hoi-listening/sua-xoa.md",
+  "sections": [
+    {
+      "nodeId": "6579:358751",
+      "component": "Content",
+      "file": "components/figma/cd-kh-070306/Content.tsx"
+    },
+    {
+      "nodeId": "6579:358980",
+      "component": "SidebarMenuCd",
+      "file": "components/figma/cd-kh-070306/SidebarMenuCd.tsx"
+    },
+    {
+      "nodeId": "6579:358981",
+      "component": "Header70",
+      "file": "components/figma/shared/Header70.tsx"
+    },
+    {
+      "nodeId": "6579:359656",
+      "component": "DdOrganismMenuPanelLuotThoai",
+      "file": "components/figma/cd-kh-070306/DdOrganismMenuPanelLuotThoai.tsx"
+    },
+    {
+      "nodeId": "6579:359693",
+      "component": "DdOrganismMenuPanelDoiTuong",
+      "file": "components/figma/cd-kh-070306/DdOrganismMenuPanelDoiTuong.tsx"
+    }
+  ]
+}

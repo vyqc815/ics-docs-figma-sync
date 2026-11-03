@@ -1,0 +1,487 @@
+{
+  "pass": false,
+  "thresholds": {
+    "maxPixelDiffPercent": 0.5,
+    "maxBoxDelta": 1,
+    "maxTextBoxDelta": 2.5,
+    "colorThreshold": 0.1,
+    "aaRadius": 1,
+    "subpixel": true,
+    "maxTextNodeDiffPercent": 35
+  },
+  "pixels": {
+    "width": 960,
+    "height": 717,
+    "mismatched": 2567,
+    "percent": 0.373,
+    "shapePercent": 0.002,
+    "textPercent": 2.054,
+    "sizeMismatch": false
+  },
+  "textNodes": [
+    {
+      "id": "1781:15612",
+      "name": "Tổng kết",
+      "pixels": 120,
+      "percent": 10.8
+    },
+    {
+      "id": "1758:5412",
+      "name": "hướng dẫn giảng dạy c2",
+      "pixels": 392,
+      "percent": 10.4
+    },
+    {
+      "id": "1758:5370",
+      "name": "hướng dẫn giảng dạy b1",
+      "pixels": 356,
+      "percent": 10
+    },
+    {
+      "id": "1758:5406",
+      "name": "hướng dẫn giảng dạy b2",
+      "pixels": 375,
+      "percent": 10
+    },
+    {
+      "id": "1781:15594",
+      "name": "Luyện tập",
+      "pixels": 74,
+      "percent": 5.9
+    },
+    {
+      "id": "1781:15576",
+      "name": "Kiến thức mới",
+      "pixels": 89,
+      "percent": 5
+    },
+    {
+      "id": "1781:15583",
+      "name": "03",
+      "pixels": 16,
+      "percent": 4.2
+    },
+    {
+      "id": "1781:15585",
+      "name": "Ví dụ minh họa",
+      "pixels": 77,
+      "percent": 4.1
+    },
+    {
+      "id": "1781:15567",
+      "name": "Khởi động",
+      "pixels": 53,
+      "percent": 4
+    },
+    {
+      "id": "1781:15592",
+      "name": "04",
+      "pixels": 15,
+      "percent": 4
+    },
+    {
+      "id": "1781:15603",
+      "name": "Vận dụng",
+      "pixels": 49,
+      "percent": 4
+    },
+    {
+      "id": "1781:15574",
+      "name": "02",
+      "pixels": 14,
+      "percent": 3.7
+    },
+    {
+      "id": "1781:15601",
+      "name": "05",
+      "pixels": 14,
+      "percent": 3.7
+    },
+    {
+      "id": "1781:15610",
+      "name": "06",
+      "pixels": 13,
+      "percent": 3.4
+    },
+    {
+      "id": "1781:15565",
+      "name": "01",
+      "pixels": 12,
+      "percent": 3.2
+    }
+  ],
+  "regions": [
+    {
+      "x": 200,
+      "y": 480,
+      "width": 8,
+      "height": 16,
+      "pixels": 6,
+      "node": {
+        "id": "1758:5406",
+        "name": "hướng dẫn giảng dạy b2",
+        "role": "text"
+      }
+    }
+  ],
+  "boxes": {
+    "measured": 141,
+    "missing": [],
+    "withinThreshold": 138,
+    "buckets": {
+      "≤0.5px": 127,
+      "≤1px": 137,
+      "≤2px": 137,
+      "≤4px": 141,
+      ">4px": 0
+    },
+    "worst": [
+      {
+        "id": "1758:5369",
+        "name": "Container",
+        "role": "container",
+        "delta": 2.84,
+        "dx": 0,
+        "dy": 0,
+        "dw": 2.84,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "1758:5370",
+        "name": "hướng dẫn giảng dạy b1",
+        "role": "text",
+        "delta": 2.84,
+        "dx": 0,
+        "dy": 0,
+        "dw": 2.84,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "1758:5406",
+        "name": "hướng dẫn giảng dạy b2",
+        "role": "text",
+        "delta": 2.84,
+        "dx": 0,
+        "dy": 0.01,
+        "dw": 2.84,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "1758:5412",
+        "name": "hướng dẫn giảng dạy c2",
+        "role": "text",
+        "delta": 2.09,
+        "dx": 0,
+        "dy": 0.01,
+        "dw": 2.09,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "1781:15605",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.98,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.98,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "1781:15607",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.98,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.98,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "1781:15608",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.98,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.98,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "1781:15611",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.98,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.98,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "1781:15612",
+        "name": "Tổng kết",
+        "role": "text",
+        "delta": 0.98,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.98,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "1781:15596",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.67,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.67,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "1781:15598",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.67,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.67,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "1781:15599",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.67,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.67,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "1781:15602",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.67,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.67,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "1781:15603",
+        "name": "Vận dụng",
+        "role": "text",
+        "delta": 0.67,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.67,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "1758:5361",
+        "name": "Atom/Side Tab",
+        "role": "instance",
+        "delta": 0.48,
+        "dx": 0.41,
+        "dy": 0,
+        "dw": 0.48,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I1758:5361;2177:28899",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.48,
+        "dx": 0.41,
+        "dy": 0,
+        "dw": 0.48,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I1758:5361;2177:28900",
+        "name": "Nhiệm vụ con",
+        "role": "text",
+        "delta": 0.48,
+        "dx": 0.41,
+        "dy": 0,
+        "dw": 0.48,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "1781:15587",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.44,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.44,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "1781:15589",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.44,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.44,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "1781:15590",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.44,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.44,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "1781:15593",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.44,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.44,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "1781:15594",
+        "name": "Luyện tập",
+        "role": "text",
+        "delta": 0.44,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.44,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "1758:5358",
+        "name": "Atom/Side Tab",
+        "role": "instance",
+        "delta": 0.41,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.41,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I1758:5358;2177:28891",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.41,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.41,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I1758:5358;2177:28892",
+        "name": "Chi tiết NV",
+        "role": "text",
+        "delta": 0.41,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.41,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      }
+    ],
+    "maxDelta": 2.84,
+    "over": [
+      {
+        "id": "1758:5369",
+        "name": "Container",
+        "role": "container",
+        "delta": 2.84,
+        "dx": 0,
+        "dy": 0,
+        "dw": 2.84,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "1758:5370",
+        "name": "hướng dẫn giảng dạy b1",
+        "role": "text",
+        "delta": 2.84,
+        "dx": 0,
+        "dy": 0,
+        "dw": 2.84,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "1758:5406",
+        "name": "hướng dẫn giảng dạy b2",
+        "role": "text",
+        "delta": 2.84,
+        "dx": 0,
+        "dy": 0.01,
+        "dw": 2.84,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      }
+    ]
+  },
+  "failures": [
+    "3 elements are off by more than their limit (1px, 2.5px for text-driven; worst 2.84px)."
+  ],
+  "url": "http://localhost:3000/quan-ly-danh-muc/popup-danh-muc-cap-do/huong-dan-giang-day",
+  "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
+  "consoleErrors": [],
+  "rootFound": true
+}

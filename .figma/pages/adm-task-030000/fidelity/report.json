@@ -12,55 +12,13 @@
   "pixels": {
     "width": 1440,
     "height": 949,
-    "mismatched": 3153,
-    "percent": 0.231,
+    "mismatched": 2838,
+    "percent": 0.208,
     "shapePercent": 0.001,
-    "textPercent": 1.072,
+    "textPercent": 0.964,
     "sizeMismatch": false
   },
   "textNodes": [
-    {
-      "id": "I4343:84050;1308:6706",
-      "name": "0%",
-      "pixels": 45,
-      "percent": 23
-    },
-    {
-      "id": "I4343:84058;1308:6706",
-      "name": "0%",
-      "pixels": 45,
-      "percent": 23
-    },
-    {
-      "id": "I4343:84066;1308:6706",
-      "name": "0%",
-      "pixels": 45,
-      "percent": 23
-    },
-    {
-      "id": "I4343:84074;1308:6706",
-      "name": "0%",
-      "pixels": 45,
-      "percent": 23
-    },
-    {
-      "id": "I4343:84088;1308:6706",
-      "name": "0%",
-      "pixels": 45,
-      "percent": 23
-    },
-    {
-      "id": "I4343:84096;1308:6706",
-      "name": "0%",
-      "pixels": 45,
-      "percent": 23
-    },
-    {
-      "id": "I4343:84104;1308:6706",
-      "name": "0%",
-      "pixels": 45,
-      "percent": 23
-    },
     {
       "id": "4343:83670",
       "name": "BẮT BUỘC ĐẢM BẢO Ô F-GẤP + F-KHAI GIẢNG = 0",
@@ -108,6 +66,48 @@
       "name": "Hôm nay (08/10/2026)",
       "pixels": 46,
       "percent": 1
+    },
+    {
+      "id": "I4915:238412;4899:196978;2245:87858",
+      "name": "Label",
+      "pixels": 23,
+      "percent": 0.9
+    },
+    {
+      "id": "4343:83760",
+      "name": "[Trực CSKH] Vòng 2",
+      "pixels": 178,
+      "percent": 0.9
+    },
+    {
+      "id": "4343:84067",
+      "name": "Hôm qua (07/10/2026)",
+      "pixels": 43,
+      "percent": 0.9
+    },
+    {
+      "id": "4343:84089",
+      "name": "Ngày mai (09/10/2026)",
+      "pixels": 43,
+      "percent": 0.9
+    },
+    {
+      "id": "I4915:238412;4899:196977;2245:87858",
+      "name": "Label",
+      "pixels": 17,
+      "percent": 0.7
+    },
+    {
+      "id": "4343:84051",
+      "name": "05/10/2026",
+      "pixels": 34,
+      "percent": 0.7
+    },
+    {
+      "id": "4343:84059",
+      "name": "06/10/2026",
+      "pixels": 32,
+      "percent": 0.7
     }
   ],
   "regions": [
@@ -441,7 +441,7 @@
     "over": []
   },
   "failures": [],
-  "url": "http://localhost:3108/task-truc",
+  "url": "http://localhost:3000/task-truc",
   "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
   "consoleErrors": [],
   "rootFound": true

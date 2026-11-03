@@ -1,8 +1,8 @@
 # Fidelity: ADM-LOP-030500-DK — Lớp học / Bài học / Kiến thức
 
-- URL: `http://localhost:3108/lop-hoc/bai-hoc/kien-thuc-dk`
+- URL: `http://localhost:3000/lop-hoc/bai-hoc/kien-thuc-dk`
 - Verdict: **PASS**
-- Pixels outside text: **0.002%** differ (limit 0.5%); all pixels: 0.231%; inside text boxes: 1.438% (glyph rendering)
+- Pixels outside text: **0.002%** differ (limit 0.5%); all pixels: 0.194%; inside text boxes: 1.209% (glyph rendering)
 - Boxes: 191/191 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 190, ≤1px: 190, ≤2px: 190, ≤4px: 191, >4px: 0
 
 ## Pixel regions (largest first)
@@ -16,13 +16,8 @@
 
 | Text | Differing |
 | --- | --- |
-| 100% (`I4056:111980;1308:6749`) | 19.9% |
-| 100% (`I4056:111981;1308:6749`) | 19.9% |
-| 100% (`I4056:111992;1308:6749`) | 19.9% |
-| 100% (`I4056:111993;1308:6749`) | 19.9% |
 | ÔN TẬP: Giữa Kỳ 1 (`4056:111951`) | 14.9% |
 | Label (`I4056:112145;2245:87908`) | 13.7% |
-| Label (`I4056:112144;2245:87914`) | 12.7% |
 | Label (`I4056:112143;2245:87908`) | 8.6% |
 | Label (`I4056:112146;2245:87908`) | 4.3% |
 | Danh sách bài học (`4056:111965`) | 3.9% |
@@ -31,6 +26,11 @@
 | Label (`I4056:112148;2245:87908`) | 3% |
 | Label (`I4056:112149;2245:87908`) | 2.5% |
 | Thêm từ vựng, ngữ pháp, mẫu câu trọng tâm để học viên ôn tập (`4056:111961`) | 1.8% |
+| Trần Nguyễn Hoài Phương (`I4056:111976;3497:64446`) | 1.7% |
+| Trần Nguyễn Hoài Phương (`I4056:111987;3497:64446`) | 1.7% |
+| Badge (`I4056:111996;1050:2409`) | 1.5% |
+| Badge (`I4056:112002;1050:2409`) | 1.5% |
+| Badge (`I4056:112008;1050:2409`) | 1.5% |
 
 ## Largest box differences
 

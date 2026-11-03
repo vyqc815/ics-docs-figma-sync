@@ -1,0 +1,556 @@
+{
+  "pass": true,
+  "thresholds": {
+    "maxPixelDiffPercent": 0.5,
+    "maxBoxDelta": 1,
+    "maxTextBoxDelta": 2.5,
+    "colorThreshold": 0.1,
+    "aaRadius": 1,
+    "subpixel": true,
+    "maxTextNodeDiffPercent": 35
+  },
+  "pixels": {
+    "width": 1440,
+    "height": 1940,
+    "mismatched": 33160,
+    "percent": 1.187,
+    "shapePercent": 0.006,
+    "textPercent": 5.066,
+    "sizeMismatch": false
+  },
+  "textNodes": [
+    {
+      "id": "I5491:359952;1048:1266",
+      "name": "Đã nhập xong",
+      "pixels": 1394,
+      "percent": 12.7
+    },
+    {
+      "id": "I5491:359572;1048:1266",
+      "name": "Đã nhập xong",
+      "pixels": 1265,
+      "percent": 11.5
+    },
+    {
+      "id": "I5491:359648;1048:1266",
+      "name": "Đã nhập xong",
+      "pixels": 1215,
+      "percent": 11.1
+    },
+    {
+      "id": "I5491:359724;1048:1266",
+      "name": "Đã nhập xong",
+      "pixels": 1193,
+      "percent": 10.9
+    },
+    {
+      "id": "I5491:359534;1048:1266",
+      "name": "Đã nhập xong",
+      "pixels": 1179,
+      "percent": 10.7
+    },
+    {
+      "id": "I5491:360408;1048:1266",
+      "name": "Đã nhập xong",
+      "pixels": 1136,
+      "percent": 10.3
+    },
+    {
+      "id": "I5491:359762;1048:1266",
+      "name": "Đã nhập xong",
+      "pixels": 1120,
+      "percent": 10.2
+    },
+    {
+      "id": "I5491:360104;1048:1266",
+      "name": "Đã nhập xong",
+      "pixels": 1121,
+      "percent": 10.2
+    },
+    {
+      "id": "I5491:359610;1048:1266",
+      "name": "Đã nhập xong",
+      "pixels": 1113,
+      "percent": 10.1
+    },
+    {
+      "id": "I5491:359914;1048:1266",
+      "name": "Đã nhập xong",
+      "pixels": 1107,
+      "percent": 10.1
+    },
+    {
+      "id": "I5491:360028;1048:1266",
+      "name": "Đã nhập xong",
+      "pixels": 1099,
+      "percent": 10
+    },
+    {
+      "id": "I5491:360218;1048:1266",
+      "name": "Đã nhập xong",
+      "pixels": 1066,
+      "percent": 9.7
+    },
+    {
+      "id": "I5491:359686;1048:1266",
+      "name": "Đã nhập xong",
+      "pixels": 1058,
+      "percent": 9.6
+    },
+    {
+      "id": "I5491:359800;1048:1266",
+      "name": "Đã nhập xong",
+      "pixels": 1043,
+      "percent": 9.5
+    },
+    {
+      "id": "I5491:359838;1048:1266",
+      "name": "Đã nhập xong",
+      "pixels": 1018,
+      "percent": 9.3
+    }
+  ],
+  "regions": [
+    {
+      "x": 336,
+      "y": 352,
+      "width": 24,
+      "height": 16,
+      "pixels": 23,
+      "node": {
+        "id": "5491:359293",
+        "name": "Cell",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 336,
+      "y": 408,
+      "width": 24,
+      "height": 8,
+      "pixels": 23,
+      "node": {
+        "id": "5491:359332",
+        "name": "Cell",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 336,
+      "y": 456,
+      "width": 24,
+      "height": 16,
+      "pixels": 23,
+      "node": {
+        "id": "5491:359371",
+        "name": "Cell",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 336,
+      "y": 512,
+      "width": 24,
+      "height": 8,
+      "pixels": 23,
+      "node": {
+        "id": "5491:359410",
+        "name": "Cell",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 336,
+      "y": 560,
+      "width": 24,
+      "height": 16,
+      "pixels": 23,
+      "node": {
+        "id": "5491:359449",
+        "name": "Cell",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 104,
+      "y": 80,
+      "width": 16,
+      "height": 24,
+      "pixels": 16,
+      "node": {
+        "id": "I5491:358900;4901:220681",
+        "name": "Frame 1171274940",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 120,
+      "y": 192,
+      "width": 16,
+      "height": 8,
+      "pixels": 9,
+      "node": {
+        "id": "I5491:358900;4901:220687;2245:87904",
+        "name": "Icon",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 120,
+      "y": 872,
+      "width": 16,
+      "height": 8,
+      "pixels": 9,
+      "node": {
+        "id": "I5491:358900;4901:220699;2245:87904",
+        "name": "Icon",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 120,
+      "y": 1064,
+      "width": 16,
+      "height": 8,
+      "pixels": 9,
+      "node": {
+        "id": "I5491:358900;5491:349856;2245:87904",
+        "name": "Icon",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 24,
+      "y": 1784,
+      "width": 8,
+      "height": 16,
+      "pixels": 4,
+      "node": {
+        "id": "I5491:358900;4901:220731",
+        "name": "LOGO CENTER",
+        "role": "icon"
+      }
+    }
+  ],
+  "boxes": {
+    "measured": 724,
+    "missing": [],
+    "withinThreshold": 724,
+    "buckets": {
+      "≤0.5px": 724,
+      "≤1px": 724,
+      "≤2px": 724,
+      "≤4px": 724,
+      ">4px": 0
+    },
+    "worst": [
+      {
+        "id": "5491:358965",
+        "name": "Kiến thức / Kỹ năng",
+        "role": "text",
+        "delta": 0.25,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.25,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5491:358937",
+        "name": "Sửa loại chung:",
+        "role": "text",
+        "delta": 0.17,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.17,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5491:358938",
+        "name": "DD/Molecule/Trigger",
+        "role": "instance",
+        "delta": 0.17,
+        "dx": 0.17,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5491:358938;2015:31179",
+        "name": "Content",
+        "role": "container",
+        "delta": 0.17,
+        "dx": 0.17,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5491:358938;2015:31180",
+        "name": "Value",
+        "role": "text",
+        "delta": 0.17,
+        "dx": 0.17,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5491:358938;2015:31183",
+        "name": "Chevron",
+        "role": "icon",
+        "delta": 0.17,
+        "dx": 0.17,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5491:358950",
+        "name": "Atom/Button",
+        "role": "instance",
+        "delta": 0.17,
+        "dx": 0.17,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5491:358950;1048:1238",
+        "name": "Button",
+        "role": "text",
+        "delta": 0.17,
+        "dx": 0.17,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5491:358952",
+        "name": "spacer",
+        "role": "container",
+        "delta": 0.17,
+        "dx": 0.17,
+        "dy": 0,
+        "dw": -0.17,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5491:360438",
+        "name": "30 dòng · 5 dòng được chọn sẽ thêm vào danh sách bài tập · Loại câu \"Tuỳ chọn\": AI tự chọn dạng phù hợp",
+        "role": "text",
+        "delta": 0.09,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.09,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5491:358905",
+        "name": "Tiêu đề",
+        "role": "container",
+        "delta": 0.02,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.02,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5491:358907",
+        "name": "Kiểm tra cuối kỳ 3 HSK1 · Tick các dòng muốn dùng rồi bấm \"Thêm câu đã chọn\"; dòng không tick sẽ bị bỏ",
+        "role": "text",
+        "delta": 0.02,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.02,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5491:358908",
+        "name": "spacer",
+        "role": "container",
+        "delta": 0.02,
+        "dx": 0.02,
+        "dy": 0,
+        "dw": -0.02,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5491:358900;4901:220632",
+        "name": "Subtract",
+        "role": "icon",
+        "delta": 0.01,
+        "dx": -0.01,
+        "dy": -0.01,
+        "dw": -0.01,
+        "dh": 0,
+        "limit": 1,
+        "textDriven": false
+      },
+      {
+        "id": "I5491:358900;4901:220639",
+        "name": "Intersect",
+        "role": "icon",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": -0.01,
+        "dw": -0.01,
+        "dh": 0,
+        "limit": 1,
+        "textDriven": false
+      },
+      {
+        "id": "I5491:358900;4901:220652",
+        "name": "Vector",
+        "role": "icon",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": -0.01,
+        "dw": 0,
+        "dh": -0.01,
+        "limit": 1,
+        "textDriven": false
+      },
+      {
+        "id": "I5491:358900;4901:220653",
+        "name": "Vector",
+        "role": "icon",
+        "delta": 0.01,
+        "dx": 0.01,
+        "dy": 0,
+        "dw": 0,
+        "dh": -0.01,
+        "limit": 1,
+        "textDriven": false
+      },
+      {
+        "id": "I5491:358900;4901:220654",
+        "name": "Union",
+        "role": "icon",
+        "delta": 0.01,
+        "dx": -0.01,
+        "dy": -0.01,
+        "dw": -0.01,
+        "dh": -0.01,
+        "limit": 1,
+        "textDriven": false
+      },
+      {
+        "id": "I5491:358900;4901:220657",
+        "name": "Group 240002",
+        "role": "icon",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": -0.01,
+        "limit": 1,
+        "textDriven": false
+      },
+      {
+        "id": "5491:358585",
+        "name": "Content Body · Sau Generate",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5491:358901",
+        "name": "Tiêu đề & hành động",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6579:358737",
+        "name": "Quay lại · Tiêu đề",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6579:358735",
+        "name": "Action Icon",
+        "role": "icon",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5491:358906",
+        "name": "Generate bài tập · 30 dòng",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5491:358909",
+        "name": "Atom/Button",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      }
+    ],
+    "maxDelta": 0.25,
+    "over": []
+  },
+  "failures": [],
+  "url": "http://localhost:3000/hoc-ky/kiem-tra/danh-sach-bai-tap-sau-generate-30-dong",
+  "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
+  "consoleErrors": [],
+  "rootFound": true
+}

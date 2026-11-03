@@ -1,6 +1,6 @@
 # Fidelity: GV-LOP-070100 — Chi tiết lớp / Cuộc họp / Trống
 
-- URL: `http://localhost:3108/chi-tiet-lop/cuoc-hop/trong`
+- URL: `http://localhost:3000/chi-tiet-lop/cuoc-hop/trong`
 - Verdict: **PASS**
 - Pixels outside text: **0%** differ (limit 0.5%); all pixels: 0.043%; inside text boxes: 1.043% (glyph rendering)
 - Boxes: 106/106 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 104, ≤1px: 106, ≤2px: 106, ≤4px: 106, >4px: 0

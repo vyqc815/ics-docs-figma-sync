@@ -1,0 +1,32 @@
+{
+  "route": "/hoc-ky/bai-hoc/popup-chi-tiet-bai-hoc-ban-day-du",
+  "pageFile": "components/figma/cd-kh-030250/index.tsx",
+  "docFile": "docs/pages/hoc-ky/bai-hoc/popup-chi-tiet-bai-hoc-ban-day-du.md",
+  "sections": [
+    {
+      "nodeId": "2808:52021",
+      "component": "PopupHeader10",
+      "file": "components/figma/shared/PopupHeader10.tsx"
+    },
+    {
+      "nodeId": "2808:52022",
+      "component": "Body",
+      "file": "components/figma/cd-kh-030250/Body.tsx"
+    },
+    {
+      "nodeId": "2808:52098",
+      "component": "PopupFooter3",
+      "file": "components/figma/shared/PopupFooter3.tsx"
+    }
+  ],
+  "idAlias": {
+    "2808:52021": "2808:42175",
+    "I2808:52021;2808:42158": "I2808:42175;2808:42158",
+    "I2808:52021;2808:42159": "I2808:42175;2808:42159",
+    "I2808:52021;2808:42162": "I2808:42175;2808:42162",
+    "I2808:52021;2808:42163": "I2808:42175;2808:42163",
+    "2808:52098": "2527:167970",
+    "I2808:52098;2514:153371": "I2527:167970;2514:153371",
+    "I2808:52098;2514:153371;1048:1230": "I2527:167970;2514:153371;1048:1230"
+  }
+}

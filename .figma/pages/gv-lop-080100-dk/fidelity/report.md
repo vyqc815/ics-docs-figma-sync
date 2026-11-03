@@ -1,15 +1,14 @@
 # Fidelity: GV-LOP-080100-DK — Chi tiết lớp / Mindset khoá học / Học viên
 
-- URL: `http://localhost:3108/chi-tiet-lop/mindset-khoa-hoc/hoc-vien-dk`
+- URL: `http://localhost:3000/chi-tiet-lop/mindset-khoa-hoc/hoc-vien-dk`
 - Verdict: **PASS**
-- Pixels outside text: **0.001%** differ (limit 0.5%); all pixels: 0.642%; inside text boxes: 4.101% (glyph rendering)
+- Pixels outside text: **0.001%** differ (limit 0.5%); all pixels: 0.583%; inside text boxes: 3.724% (glyph rendering)
 - Boxes: 150/150 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 144, ≤1px: 148, ≤2px: 150, ≤4px: 150, >4px: 0
 
 ## Text boxes with most differing pixels (limit 35%)
 
 | Text | Differing |
 | --- | --- |
-| Label (`I4333:15842;2245:87914`) | 33.6% |
 | Label (`I4899:187832;2245:87908`) | 8.5% |
 | MINDSET DẠY VÀ HỌC (`4333:16483`) | 7.5% |
 | Nội dung · Kỳ vọng của học viên (`4333:16554`) | 7.4% |
@@ -24,6 +23,7 @@
 | Vấn đề của học viên (`4333:16540`) | 3.5% |
 | Nội dung · Vấn đề của học viên (`4333:16545`) | 3.4% |
 | HỌC VIÊN (`4333:16472`) | 2.8% |
+| Label (`I4333:15838;2245:87908`) | 2.7% |
 
 ## Largest box differences
 

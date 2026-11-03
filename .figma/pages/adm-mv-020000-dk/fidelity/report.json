@@ -12,19 +12,13 @@
   "pixels": {
     "width": 1440,
     "height": 982,
-    "mismatched": 4464,
-    "percent": 0.316,
+    "mismatched": 4043,
+    "percent": 0.286,
     "shapePercent": 0.054,
-    "textPercent": 1.05,
+    "textPercent": 0.93,
     "sizeMismatch": false
   },
   "textNodes": [
-    {
-      "id": "I4056:130750;2245:87864",
-      "name": "Label",
-      "pixels": 438,
-      "percent": 17.5
-    },
     {
       "id": "I4101:138215;2245:87768",
       "name": "Label",
@@ -107,6 +101,12 @@
       "id": "I4056:130744;2245:87820",
       "name": "Label",
       "pixels": 62,
+      "percent": 2.4
+    },
+    {
+      "id": "I4056:130745;2245:87768",
+      "name": "Label",
+      "pixels": 69,
       "percent": 2.4
     }
   ],
@@ -585,7 +585,7 @@
     "over": []
   },
   "failures": [],
-  "url": "http://localhost:3108/move-video/danh-sach-video-dk",
+  "url": "http://localhost:3000/move-video/danh-sach-video-dk",
   "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
   "consoleErrors": [],
   "rootFound": true

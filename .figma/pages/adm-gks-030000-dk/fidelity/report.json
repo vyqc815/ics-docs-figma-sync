@@ -12,19 +12,13 @@
   "pixels": {
     "width": 1440,
     "height": 810,
-    "mismatched": 3012,
-    "percent": 0.258,
+    "mismatched": 2488,
+    "percent": 0.213,
     "shapePercent": 0.052,
-    "textPercent": 1.399,
+    "textPercent": 1.095,
     "sizeMismatch": false
   },
   "textNodes": [
-    {
-      "id": "I4885:66746;2245:87864",
-      "name": "Label",
-      "pixels": 557,
-      "percent": 22.3
-    },
     {
       "id": "4885:62107",
       "name": "Tên khảo sát",
@@ -108,6 +102,12 @@
       "name": "Tên",
       "pixels": 77,
       "percent": 1.7
+    },
+    {
+      "id": "I4885:66743;2245:87829",
+      "name": "Label",
+      "pixels": 37,
+      "percent": 1.4
     }
   ],
   "regions": [
@@ -465,7 +465,7 @@
     "over": []
   },
   "failures": [],
-  "url": "http://localhost:3108/khao-sat/giao-khao-sat-hoc-vien/danh-sach-hoc-vien-duoc-giao-dk",
+  "url": "http://localhost:3000/khao-sat/giao-khao-sat-hoc-vien/danh-sach-hoc-vien-duoc-giao-dk",
   "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
   "consoleErrors": [],
   "rootFound": true

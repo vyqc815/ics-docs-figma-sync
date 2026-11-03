@@ -1,0 +1,556 @@
+{
+  "pass": true,
+  "thresholds": {
+    "maxPixelDiffPercent": 0.5,
+    "maxBoxDelta": 1,
+    "maxTextBoxDelta": 2.5,
+    "colorThreshold": 0.1,
+    "aaRadius": 1,
+    "subpixel": true,
+    "maxTextNodeDiffPercent": 35
+  },
+  "pixels": {
+    "width": 880,
+    "height": 645,
+    "mismatched": 1399,
+    "percent": 0.246,
+    "shapePercent": 0.14,
+    "textPercent": 0.351,
+    "sizeMismatch": false
+  },
+  "textNodes": [
+    {
+      "id": "I6646:134598;2015:31180",
+      "name": "Value",
+      "pixels": 52,
+      "percent": 2.3
+    },
+    {
+      "id": "I6646:134592;2514:153342",
+      "name": "Description",
+      "pixels": 270,
+      "percent": 1.4
+    },
+    {
+      "id": "I6646:134595;2808:42278",
+      "name": "Tìm nội dung...",
+      "pixels": 90,
+      "percent": 1.3
+    },
+    {
+      "id": "6646:134748",
+      "name": "Thêm vào cụm:",
+      "pixels": 16,
+      "percent": 0.8
+    },
+    {
+      "id": "I6646:134596;2015:31180",
+      "name": "Value",
+      "pixels": 16,
+      "percent": 0.7
+    },
+    {
+      "id": "I6646:134592;2514:153341",
+      "name": "Title",
+      "pixels": 129,
+      "percent": 0.6
+    },
+    {
+      "id": "6646:134621",
+      "name": "Hội thoại: Lần đầu gặp mặt ở Trung Quốc, giới thiệu bản thân và hỏi về công việc của đối phương",
+      "pixels": 15,
+      "percent": 0.3
+    },
+    {
+      "id": "6646:134708",
+      "name": "03:12",
+      "pixels": 2,
+      "percent": 0.3
+    },
+    {
+      "id": "I6646:134753;1048:1232",
+      "name": "Button",
+      "pixels": 2,
+      "percent": 0.3
+    },
+    {
+      "id": "6646:134625",
+      "name": "01:24",
+      "pixels": 1,
+      "percent": 0.2
+    },
+    {
+      "id": "6646:134659",
+      "name": "01:48",
+      "pixels": 1,
+      "percent": 0.2
+    },
+    {
+      "id": "I6646:134627;1725:17090",
+      "name": "Label",
+      "pixels": 1,
+      "percent": 0.1
+    },
+    {
+      "id": "I6646:134661;1725:17090",
+      "name": "Label",
+      "pixels": 1,
+      "percent": 0.1
+    },
+    {
+      "id": "I6646:134678;1725:17090",
+      "name": "Label",
+      "pixels": 2,
+      "percent": 0.1
+    },
+    {
+      "id": "I6646:134693;1725:17090",
+      "name": "Label",
+      "pixels": 2,
+      "percent": 0.1
+    }
+  ],
+  "regions": [
+    {
+      "x": 568,
+      "y": 416,
+      "width": 96,
+      "height": 8,
+      "pixels": 91,
+      "node": {
+        "id": "I6646:134710;1725:17090",
+        "name": "Label",
+        "role": "text"
+      }
+    },
+    {
+      "x": 568,
+      "y": 320,
+      "width": 96,
+      "height": 8,
+      "pixels": 87,
+      "node": {
+        "id": "6646:134677",
+        "name": "Cell · Bài học",
+        "role": "container"
+      }
+    },
+    {
+      "x": 568,
+      "y": 368,
+      "width": 96,
+      "height": 8,
+      "pixels": 87,
+      "node": {
+        "id": "6646:134693",
+        "name": "Atom/Tag",
+        "role": "instance"
+      }
+    },
+    {
+      "x": 568,
+      "y": 432,
+      "width": 96,
+      "height": 8,
+      "pixels": 83,
+      "node": {
+        "id": "I6646:134710;1725:17090",
+        "name": "Label",
+        "role": "text"
+      }
+    },
+    {
+      "x": 568,
+      "y": 344,
+      "width": 88,
+      "height": 8,
+      "pixels": 79,
+      "node": {
+        "id": "6646:134677",
+        "name": "Cell · Bài học",
+        "role": "container"
+      }
+    },
+    {
+      "x": 568,
+      "y": 392,
+      "width": 88,
+      "height": 8,
+      "pixels": 79,
+      "node": {
+        "id": "6646:134692",
+        "name": "Cell · Bài học",
+        "role": "container"
+      }
+    },
+    {
+      "x": 568,
+      "y": 184,
+      "width": 80,
+      "height": 8,
+      "pixels": 76,
+      "node": {
+        "id": "6646:134627",
+        "name": "Atom/Tag",
+        "role": "instance"
+      }
+    },
+    {
+      "x": 568,
+      "y": 272,
+      "width": 80,
+      "height": 16,
+      "pixels": 76,
+      "node": {
+        "id": "6646:134661",
+        "name": "Atom/Tag",
+        "role": "instance"
+      }
+    },
+    {
+      "x": 568,
+      "y": 208,
+      "width": 80,
+      "height": 8,
+      "pixels": 68,
+      "node": {
+        "id": "6646:134626",
+        "name": "Cell · Bài học",
+        "role": "container"
+      }
+    },
+    {
+      "x": 568,
+      "y": 296,
+      "width": 80,
+      "height": 8,
+      "pixels": 68,
+      "node": {
+        "id": "6646:134661",
+        "name": "Atom/Tag",
+        "role": "instance"
+      }
+    }
+  ],
+  "boxes": {
+    "measured": 147,
+    "missing": [],
+    "withinThreshold": 147,
+    "buckets": {
+      "≤0.5px": 147,
+      "≤1px": 147,
+      "≤2px": 147,
+      "≤4px": 147,
+      ">4px": 0
+    },
+    "worst": [
+      {
+        "id": "6646:134750",
+        "name": "Mặc định = cụm đang chọn ở panel Cụm. Có thể để “Chưa phân cụm” và phân cụm sau.",
+        "role": "text",
+        "delta": 0.5,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.5,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6646:134591",
+        "name": "Popup · Thêm từ thư viện dữ liệu",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6646:134592",
+        "name": "Popup/Header",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6646:134592;2514:153340",
+        "name": "Tiêu đề",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6646:134592;2711:67900",
+        "name": "Title Row",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6646:134592;2514:153341",
+        "name": "Title",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6646:134592;2514:153342",
+        "name": "Description",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6646:134593",
+        "name": "Body",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6646:134594",
+        "name": "Bộ lọc",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6646:134595",
+        "name": "Atom/Input",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6646:134595;2808:42276",
+        "name": "Input",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6646:134595;2808:42277",
+        "name": "Container",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6646:134595;2808:42278",
+        "name": "Tìm nội dung...",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6646:134595;2808:42279",
+        "name": "Container",
+        "role": "icon",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6646:134596",
+        "name": "DD/Molecule/Trigger",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6646:134596;2015:31179",
+        "name": "Content",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6646:134596;2015:31180",
+        "name": "Value",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6646:134596;2015:31183",
+        "name": "Chevron",
+        "role": "icon",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6646:134597",
+        "name": "DD/Molecule/Trigger",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6646:134597;2015:31179",
+        "name": "Content",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6646:134597;2015:31180",
+        "name": "Value",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6646:134597;2015:31183",
+        "name": "Chevron",
+        "role": "icon",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6646:134598",
+        "name": "DD/Molecule/Trigger",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6646:134598;2015:31179",
+        "name": "Content",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6646:134598;2015:31180",
+        "name": "Value",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      }
+    ],
+    "maxDelta": 0.5,
+    "over": []
+  },
+  "failures": [],
+  "url": "http://localhost:3000/ky-nang-s6/nghe/popup-them-bai-tu-thu-vien-dk",
+  "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
+  "consoleErrors": [],
+  "rootFound": true
+}

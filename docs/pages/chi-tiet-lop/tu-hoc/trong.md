@@ -5,7 +5,7 @@
 > **Nguồn:** PLS-ICS T8/2026 ›             └─ TỰ HỌC › GV-LOP-050100 — Chi tiết lớp / Tự học / Trống (`4333:7910`, file `rRVs5HX0kIHffbS0V40djG`)  
 > **Route:** `/chi-tiet-lop/tu-hoc/trong`  
 > **Khung thiết kế:** 1440 × 810 px (cắt phần tràn ra ngoài khung)  
-> **Xuất lúc:** 2026-11-02T03:54:35.716Z  
+> **Xuất lúc:** 2026-11-03T01:09:58.525Z  
 > **Spec đầy đủ (giá trị chính xác từng node):** `../../../../.figma/pages/gv-lop-050100/page-spec.json`
 
 ## 1. Tổng quan

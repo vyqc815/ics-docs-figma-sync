@@ -1,0 +1,17 @@
+{
+  "route": "/chi-tiet-lop/bai-tap-va-kiem-tra/popup-xem-anh-bai-viet-tay-dk",
+  "pageFile": "components/figma/gv-lop-040336-dk/index.tsx",
+  "docFile": "docs/pages/chi-tiet-lop/bai-tap-va-kiem-tra/popup-xem-anh-bai-viet-tay-dk.md",
+  "sections": [
+    {
+      "nodeId": "5765:418913",
+      "component": "PopupHeader",
+      "file": "components/figma/gv-lop-040336-dk/PopupHeader.tsx"
+    },
+    {
+      "nodeId": "5765:418914",
+      "component": "Body",
+      "file": "components/figma/gv-lop-040336-dk/Body.tsx"
+    }
+  ]
+}

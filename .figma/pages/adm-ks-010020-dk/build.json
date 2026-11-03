@@ -1,0 +1,34 @@
+{
+  "route": "/khao-sat/tao-khao-sat/cau-hoi-tu-luan-danh-gia-dk",
+  "pageFile": "components/figma/adm-ks-010020-dk/index.tsx",
+  "docFile": "docs/pages/khao-sat/tao-khao-sat/cau-hoi-tu-luan-danh-gia-dk.md",
+  "sections": [
+    {
+      "nodeId": "4343:71986",
+      "component": "Sidebar7",
+      "file": "components/figma/shared/Sidebar7.tsx"
+    },
+    {
+      "nodeId": "4343:72073",
+      "component": "Header23",
+      "file": "components/figma/shared/Header23.tsx"
+    },
+    {
+      "nodeId": "4343:72123",
+      "component": "MaincontentTaoKhaoSat",
+      "file": "components/figma/adm-ks-010020-dk/MaincontentTaoKhaoSat.tsx"
+    }
+  ],
+  "idAlias": {
+    "4343:72073": "4343:71654",
+    "4343:72074": "4343:71655",
+    "4343:72121": "4343:71702",
+    "I4343:72121;2008:30986": "I4343:71702;2008:30986",
+    "I4343:72121;2008:31747": "I4343:71702;2008:31747",
+    "I4343:72121;2008:31748": "I4343:71702;2008:31748",
+    "I4343:72121;1391:17264": "I4343:71702;1391:17264",
+    "I4343:72121;1391:17266": "I4343:71702;1391:17266",
+    "I4343:72121;1391:17268": "I4343:71702;1391:17268",
+    "I4343:72121;1391:17270": "I4343:71702;1391:17270"
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "route": "/hoc-ky/bai-hoc/popup-chi-tiet-bai-hoc-3/tai-nguyen/tung-muc-trong",
+  "pageFile": "components/figma/cd-kh-030231/index.tsx",
+  "docFile": "docs/pages/hoc-ky/bai-hoc/popup-chi-tiet-bai-hoc-3/tai-nguyen/tung-muc-trong.md",
+  "sections": [
+    {
+      "nodeId": "2808:42196",
+      "component": "PopupHeader10",
+      "file": "components/figma/shared/PopupHeader10.tsx"
+    },
+    {
+      "nodeId": "2808:41385",
+      "component": "Body",
+      "file": "components/figma/cd-kh-030231/Body.tsx"
+    },
+    {
+      "nodeId": "2808:41635",
+      "component": "PopupFooter6",
+      "file": "components/figma/shared/PopupFooter6.tsx"
+    }
+  ],
+  "idAlias": {
+    "2808:42196": "2808:42175",
+    "I2808:42196;2808:42158": "I2808:42175;2808:42158",
+    "I2808:42196;2808:42159": "I2808:42175;2808:42159",
+    "I2808:42196;2808:42162": "I2808:42175;2808:42162",
+    "I2808:42196;2808:42163": "I2808:42175;2808:42163",
+    "2808:41635": "2527:167888",
+    "I2808:41635;2514:153361": "I2527:167888;2514:153361",
+    "I2808:41635;2514:153361;1048:1232": "I2527:167888;2514:153361;1048:1232",
+    "I2808:41635;2514:153363": "I2527:167888;2514:153363",
+    "I2808:41635;2514:153363;1048:1230": "I2527:167888;2514:153363;1048:1230"
+  }
+}

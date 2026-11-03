@@ -1,0 +1,484 @@
+{
+  "pass": true,
+  "thresholds": {
+    "maxPixelDiffPercent": 0.5,
+    "maxBoxDelta": 1,
+    "maxTextBoxDelta": 2.5,
+    "colorThreshold": 0.1,
+    "aaRadius": 1,
+    "subpixel": true,
+    "maxTextNodeDiffPercent": 35
+  },
+  "pixels": {
+    "width": 1224,
+    "height": 497,
+    "mismatched": 1929,
+    "percent": 0.317,
+    "shapePercent": 0.011,
+    "textPercent": 1.653,
+    "sizeMismatch": false
+  },
+  "textNodes": [
+    {
+      "id": "I4056:122259;3108:125037",
+      "name": "Số liệu",
+      "pixels": 35,
+      "percent": 6.9
+    },
+    {
+      "id": "I4056:122261;3108:125037",
+      "name": "Số liệu",
+      "pixels": 39,
+      "percent": 6
+    },
+    {
+      "id": "4056:122318",
+      "name": "Nhập Môn Tiếng Trung (NEW - v202...)",
+      "pixels": 313,
+      "percent": 5.8
+    },
+    {
+      "id": "I4056:122264;3108:125037",
+      "name": "Số liệu",
+      "pixels": 13,
+      "percent": 5.6
+    },
+    {
+      "id": "I4056:122260;3108:125037",
+      "name": "Số liệu",
+      "pixels": 35,
+      "percent": 5.4
+    },
+    {
+      "id": "I4056:122263;3108:125037",
+      "name": "Số liệu",
+      "pixels": 35,
+      "percent": 5.4
+    },
+    {
+      "id": "4056:122295",
+      "name": "Tiếng Trung Sơ Cấp 2 - HSK3 (NEW)",
+      "pixels": 287,
+      "percent": 5.3
+    },
+    {
+      "id": "4056:122342",
+      "name": "Nhập Môn Tiếng Trung (NEW - v202...)",
+      "pixels": 284,
+      "percent": 5.2
+    },
+    {
+      "id": "I4056:122262;3108:125037",
+      "name": "Số liệu",
+      "pixels": 18,
+      "percent": 4.8
+    },
+    {
+      "id": "4056:122365",
+      "name": "Tiếng Trung Trung Cấp (HSK4)",
+      "pixels": 247,
+      "percent": 4.5
+    },
+    {
+      "id": "4056:122275",
+      "name": "Khoá học",
+      "pixels": 63,
+      "percent": 4.2
+    },
+    {
+      "id": "4056:122283",
+      "name": "Đánh giá",
+      "pixels": 46,
+      "percent": 3.3
+    },
+    {
+      "id": "4056:122279",
+      "name": "Điểm BTVN",
+      "pixels": 49,
+      "percent": 3.2
+    },
+    {
+      "id": "I4056:122255;2177:28928",
+      "name": "Chi tiết NV",
+      "pixels": 28,
+      "percent": 2.9
+    },
+    {
+      "id": "I4056:122296;1350:13181",
+      "name": "0/20 Buổi",
+      "pixels": 36,
+      "percent": 2.8
+    }
+  ],
+  "regions": [
+    {
+      "x": 304,
+      "y": 376,
+      "width": 16,
+      "height": 16,
+      "pixels": 17,
+      "node": {
+        "id": "I4056:122343;1350:13191",
+        "name": "Frame 427325998",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 304,
+      "y": 440,
+      "width": 16,
+      "height": 16,
+      "pixels": 17,
+      "node": {
+        "id": "I4056:122366;1350:13191",
+        "name": "Frame 427325998",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 296,
+      "y": 312,
+      "width": 16,
+      "height": 16,
+      "pixels": 15,
+      "node": {
+        "id": "I4056:122319;1350:13191",
+        "name": "Frame 427325998",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 248,
+      "y": 248,
+      "width": 16,
+      "height": 8,
+      "pixels": 12,
+      "node": {
+        "id": "I4056:122296;1350:13198",
+        "name": "Frame 427325997",
+        "role": "icon"
+      }
+    }
+  ],
+  "boxes": {
+    "measured": 188,
+    "missing": [],
+    "withinThreshold": 188,
+    "buckets": {
+      "≤0.5px": 188,
+      "≤1px": 188,
+      "≤2px": 188,
+      "≤4px": 188,
+      ">4px": 0
+    },
+    "worst": [
+      {
+        "id": "I4056:122261;3108:127778",
+        "name": "Ô biểu tượng",
+        "role": "icon",
+        "delta": 0.02,
+        "dx": -0.02,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:122262",
+        "name": "Thẻ chỉ số · BTVN",
+        "role": "instance",
+        "delta": 0.02,
+        "dx": -0.02,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:122262;3108:125042",
+        "name": "Hàng nhãn",
+        "role": "container",
+        "delta": 0.02,
+        "dx": -0.02,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:122262;3108:125035",
+        "name": "Tiêu đề",
+        "role": "text",
+        "delta": 0.02,
+        "dx": -0.02,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:122262;3108:125036",
+        "name": "Số liệu + đơn vị",
+        "role": "container",
+        "delta": 0.02,
+        "dx": -0.02,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:122262;3108:125037",
+        "name": "Số liệu",
+        "role": "text",
+        "delta": 0.02,
+        "dx": -0.02,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:122259",
+        "name": "Thẻ chỉ số · Số lớp",
+        "role": "instance",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": -0.01,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:122259;3108:125042",
+        "name": "Hàng nhãn",
+        "role": "container",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": -0.01,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:122259;3108:125035",
+        "name": "Tiêu đề",
+        "role": "text",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": -0.01,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:122259;3108:127778",
+        "name": "Ô biểu tượng",
+        "role": "icon",
+        "delta": 0.01,
+        "dx": -0.01,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:122260",
+        "name": "Thẻ chỉ số · Lên kỳ",
+        "role": "instance",
+        "delta": 0.01,
+        "dx": -0.01,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:122260;3108:125042",
+        "name": "Hàng nhãn",
+        "role": "container",
+        "delta": 0.01,
+        "dx": -0.01,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:122260;3108:125035",
+        "name": "Tiêu đề",
+        "role": "text",
+        "delta": 0.01,
+        "dx": -0.01,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:122260;3108:125036",
+        "name": "Số liệu + đơn vị",
+        "role": "container",
+        "delta": 0.01,
+        "dx": -0.01,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:122260;3108:125037",
+        "name": "Số liệu",
+        "role": "text",
+        "delta": 0.01,
+        "dx": -0.01,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:122261",
+        "name": "Thẻ chỉ số · Đi học",
+        "role": "instance",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": -0.01,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:122261;3108:125042",
+        "name": "Hàng nhãn",
+        "role": "container",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": -0.01,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:122261;3108:125035",
+        "name": "Tiêu đề",
+        "role": "text",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": -0.01,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:122262;3108:127778",
+        "name": "Ô biểu tượng",
+        "role": "icon",
+        "delta": 0.01,
+        "dx": -0.01,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:122263",
+        "name": "Thẻ chỉ số · Đạt kpi",
+        "role": "instance",
+        "delta": 0.01,
+        "dx": -0.01,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:122263;3108:125042",
+        "name": "Hàng nhãn",
+        "role": "container",
+        "delta": 0.01,
+        "dx": -0.01,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:122263;3108:125035",
+        "name": "Tiêu đề",
+        "role": "text",
+        "delta": 0.01,
+        "dx": -0.01,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:122263;3108:125036",
+        "name": "Số liệu + đơn vị",
+        "role": "container",
+        "delta": 0.01,
+        "dx": -0.01,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:122263;3108:125037",
+        "name": "Số liệu",
+        "role": "text",
+        "delta": 0.01,
+        "dx": -0.01,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:122354;1308:10502",
+        "name": "Vector",
+        "role": "icon",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0.01,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      }
+    ],
+    "maxDelta": 0.02,
+    "over": []
+  },
+  "failures": [],
+  "url": "http://localhost:3000/danh-sach-hoc-vien/popup-lich-su/lop-dk",
+  "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
+  "consoleErrors": [],
+  "rootFound": true
+}

@@ -1,0 +1,34 @@
+{
+  "route": "/quy-trinh/danh-sach-loai-quy-trinh/dropdown-chon-loai-quy-trinh",
+  "pageFile": "components/figma/adm-qt-010001/index.tsx",
+  "docFile": "docs/pages/quy-trinh/danh-sach-loai-quy-trinh/dropdown-chon-loai-quy-trinh.md",
+  "sections": [
+    {
+      "nodeId": "6823:374952",
+      "component": "MainAppContainer",
+      "file": "components/figma/adm-qt-010001/MainAppContainer.tsx"
+    },
+    {
+      "nodeId": "6823:375206",
+      "component": "Header20",
+      "file": "components/figma/shared/Header20.tsx"
+    },
+    {
+      "nodeId": "6823:375294",
+      "component": "MenuLoaiQuyTrinh",
+      "file": "components/figma/adm-qt-010001/MenuLoaiQuyTrinh.tsx"
+    }
+  ],
+  "idAlias": {
+    "6823:375206": "2223:83793",
+    "6823:375207": "4050:118578",
+    "6823:375254": "2223:83841",
+    "I6823:375254;2008:30986": "I2223:83841;2008:30986",
+    "I6823:375254;2008:31747": "I2223:83841;2008:31747",
+    "I6823:375254;2008:31748": "I2223:83841;2008:31748",
+    "I6823:375254;1391:17264": "I2223:83841;1391:17264",
+    "I6823:375254;1391:17266": "I2223:83841;1391:17266",
+    "I6823:375254;1391:17268": "I2223:83841;1391:17268",
+    "I6823:375254;1391:17270": "I2223:83841;1391:17270"
+  }
+}

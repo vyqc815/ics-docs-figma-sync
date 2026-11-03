@@ -1,0 +1,22 @@
+{
+  "route": "/ship-sach/danh-sach-don-sach/chon-1-don-xuat-excel",
+  "pageFile": "components/figma/adm-ss-010001/index.tsx",
+  "docFile": "docs/pages/ship-sach/danh-sach-don-sach/chon-1-don-xuat-excel.md",
+  "sections": [
+    {
+      "nodeId": "2929:44888",
+      "component": "Maincontent",
+      "file": "components/figma/adm-ss-010001/Maincontent.tsx"
+    },
+    {
+      "nodeId": "2929:45193",
+      "component": "Header",
+      "file": "components/figma/adm-ss-010001/Header.tsx"
+    },
+    {
+      "nodeId": "4915:251074",
+      "component": "SidebarMenuAdmin",
+      "file": "components/figma/adm-ss-010001/SidebarMenuAdmin.tsx"
+    }
+  ]
+}

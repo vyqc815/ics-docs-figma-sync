@@ -1,8 +1,8 @@
 # Fidelity: CD-KH-020200-DK — Chi tiết khoá học / Lộ trình
 
-- URL: `http://localhost:3108/chi-tiet-khoa-hoc/lo-trinh-dk`
+- URL: `http://localhost:3000/chi-tiet-khoa-hoc/lo-trinh-dk`
 - Verdict: **PASS**
-- Pixels outside text: **0.175%** differ (limit 0.5%); all pixels: 0.615%; inside text boxes: 3.242% (glyph rendering)
+- Pixels outside text: **0.175%** differ (limit 0.5%); all pixels: 0.596%; inside text boxes: 3.107% (glyph rendering)
 - Boxes: 1134/1134 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 1131, ≤1px: 1131, ≤2px: 1134, ≤4px: 1134, >4px: 0
 
 ## Pixel regions (largest first)
@@ -44,7 +44,6 @@
 
 | Text | Differing |
 | --- | --- |
-| Label (`I6015:67542;4901:221040;2245:87914`) | 19.4% |
 | Tìm nội dung... (`I6015:66756;3004:75121`) | 13.7% |
 | Label (`I6015:67542;4901:221039;2245:87908`) | 13.1% |
 | [ 60 phút ] (`6015:66590`) | 11.4% |
@@ -59,6 +58,7 @@
 | Value (`I6015:67216;2015:36008`) | 8% |
 | Value (`I6015:67261;2015:36008`) | 8% |
 | Value (`I6015:67306;2015:36008`) | 8% |
+| Value (`I6015:67351;2015:36008`) | 8% |
 
 ## Largest box differences
 

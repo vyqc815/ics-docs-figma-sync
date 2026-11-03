@@ -5,7 +5,7 @@
 > **Nguồn:** PLS-ICS T8/2026 ›     ├─ LỊCH SỬ VÀ LƯƠNG › GV-LS-010000 — Lịch sử & lương / Buổi dạy (`3868:96982`, file `rRVs5HX0kIHffbS0V40djG`)  
 > **Route:** `/lich-su-luong/buoi-day`  
 > **Khung thiết kế:** 1440 × 1057 px  
-> **Xuất lúc:** 2026-11-02T03:54:57.819Z  
+> **Xuất lúc:** 2026-11-03T01:10:18.801Z  
 > **Spec đầy đủ (giá trị chính xác từng node):** `../../../.figma/pages/gv-ls-010000/page-spec.json`
 
 ## 1. Tổng quan
@@ -25,6 +25,8 @@ Nền trang: `#f8fafc`.
 
 | Token | Biến CSS | Giá trị | Trỏ tới | Bộ / mode |
 | --- | --- | --- | --- | --- |
+| `bg/strong` | `--bg-strong` | `#e2e8f0` | color/border/default | Theme · Semantic / Light |
+| `bg/surface` | `--bg-surface` | `#ffffff` | color/neutral/white | Theme · Semantic / Light |
 | `bố cục/lề trên dưới` | `--bo-cuc-le-tren-duoi` | `24` | spacing/24 | Number Tokens / Mode 1 |
 | `color/border/default` | `--color-border-default` | `#e2e8f0` |  | Color Tokens / Light |
 | `color/border/subtle` | `--color-border-subtle` | `#f1f5f9` |  | Color Tokens / Light |
@@ -175,7 +177,7 @@ Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí ·
           - [khối] **Content** — 55×19 [HUG×HUG] · @ (13, 5.5) flow · row align CENTER · clip `I3868:97121;2015:36091`
             - [chữ] “Năm nay” — 55×19 [HUG×HUG] · @ (0, 0) flow · Afacad 15/19px 500 #e65100 (color/brand/orange) · no-wrap `I3868:97121;2015:36092`
           - [icon] **Chevron** ⟨Action Icon: Icon=Chevron Down, Size=16⟩ — 16×16 · @ (74, 7) flow · file /figma/assets/87c9685932c9.svg `I3868:97121;2015:36096`
-        - [hình] **Phân cách** — 1×20 · @ (552, 5) flow · bg #e2e8f0 `4899:105925`
+        - [hình] **Phân cách** — 1×20 · @ (552, 5) flow · bg #e2e8f0 (bg/strong) `4899:105925`
         - [instance] **Nút · Lịch sử đề xuất** ⟨Atom/Button: Label=Lịch sử đề xuất, Type=Ghost, Size=Small⟩ — 119×30 [HUG×HUG] · @ (561, 0) flow · row gap 4 pad 5 12 5 12 justify CENTER align CENTER · radius 6px `4899:105926`
           - [chữ] “Lịch sử đề xuất” — 95×20 [HUG×HUG] · @ (12, 5) flow · Afacad 16/20px 500 #64748b (color/text/secondary) · no-wrap `I4899:105926;2015:30555`
         - [instance] **Nút · Đề xuất tăng lương** ⟨Atom/Button: Label=Đề xuất tăng lương, Type=Primary, Size=Small⟩ — 149×28 [HUG×FIXED] · @ (688, 1) flow · row pad 6 16 6 16 justify CENTER align CENTER · bg #e65100 (color/brand/orange) · radius 6px · border 1px solid #ffffff · shadow 1px 1px 6px 0 rgba(230, 81, 0, 0.35), 0 0 4px 0 rgba(230, 81, 0, 0.05) `4760:16610`
@@ -248,7 +250,7 @@ Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí ·
             - [khối] **Cell · Lớp** — 120×24 [FIXED×HUG] · @ (16, 15) flow · column gap 2 justify CENTER · clip `3868:99403`
               - [khối] **Cell · Mã lớp** — 114×24 [HUG×HUG] · @ (0, 0) flow · row gap 8 align CENTER `3868:99384`
                 - [icon] **CLass Status** ⟨CLass Status: Property 1=Đang học⟩ — 24×24 · @ (0, 0) flow · file /figma/assets/8f384c348f4a.svg `3868:99385`
-                - [khối] **Data** — 82×19 [FILL×HUG] · @ (32, 2.5) flow · column justify CENTER · bg #ffffff `3868:99386`
+                - [khối] **Data** — 82×19 [FILL×HUG] · @ (32, 2.5) flow · column justify CENTER · bg #ffffff (bg/surface) `3868:99386`
                   - [khối] **Container** — 82×19 [FILL×HUG] · @ (0, 0) flow · column gap 4 `3868:99387`
                     - [chữ] “BD105-I” — 82×19 [FILL×HUG] · @ (0, 0) flow · Afacad 15/19px 700 #334155 (color/text/primary) · truncate 1 lines `3868:99391`
             - [khối] **Cell · Tên buổi học** — 224×36 [FILL×HUG] · @ (148, 9) flow · column gap 2 justify CENTER · clip `3868:99404`
@@ -266,7 +268,7 @@ Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí ·
             - [khối] **Cell · Lớp** — 120×24 [FIXED×HUG] · @ (16, 15) flow · column gap 2 justify CENTER · clip `3868:99427`
               - [khối] **Cell · Mã lớp** — 114×24 [HUG×HUG] · @ (0, 0) flow · row gap 8 align CENTER `3868:99408`
                 - [icon] **CLass Status** ⟨CLass Status: Property 1=Khai giảng⟩ — 24×24 · @ (0, 0) flow · file /figma/assets/ccf7432e4f92.svg `3868:99409`
-                - [khối] **Data** — 82×19 [FILL×HUG] · @ (32, 2.5) flow · column justify CENTER · bg #ffffff `3868:99410`
+                - [khối] **Data** — 82×19 [FILL×HUG] · @ (32, 2.5) flow · column justify CENTER · bg #ffffff (bg/surface) `3868:99410`
                   - [khối] **Container** — 82×19 [FILL×HUG] · @ (0, 0) flow · column gap 4 `3868:99411`
                     - [chữ] “BD105-I” — 82×19 [FILL×HUG] · @ (0, 0) flow · Afacad 15/19px 700 #334155 (color/text/primary) · truncate 1 lines `3868:99415`
             - [khối] **Cell · Tên buổi học** — 224×36 [FILL×HUG] · @ (148, 9) flow · column gap 2 justify CENTER · clip `3868:99428`
@@ -284,7 +286,7 @@ Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí ·
             - [khối] **Cell · Lớp** — 120×24 [FIXED×HUG] · @ (16, 15) flow · column gap 2 justify CENTER · clip `3868:99451`
               - [khối] **Cell · Mã lớp** — 114×24 [HUG×HUG] · @ (0, 0) flow · row gap 8 align CENTER `3868:99432`
                 - [icon] **CLass Status** ⟨CLass Status: Property 1=Mới tạo⟩ — 24×24 · @ (0, 0) flow · file /figma/assets/e73bc1bee8b7.svg `3868:99433`
-                - [khối] **Data** — 82×19 [FILL×HUG] · @ (32, 2.5) flow · column justify CENTER · bg #ffffff `3868:99434`
+                - [khối] **Data** — 82×19 [FILL×HUG] · @ (32, 2.5) flow · column justify CENTER · bg #ffffff (bg/surface) `3868:99434`
                   - [khối] **Container** — 82×19 [FILL×HUG] · @ (0, 0) flow · column gap 4 `3868:99435`
                     - [chữ] “BD105-I” — 82×19 [FILL×HUG] · @ (0, 0) flow · Afacad 15/19px 700 #334155 (color/text/primary) · truncate 1 lines `3868:99439`
             - [khối] **Cell · Tên buổi học** — 224×36 [FILL×HUG] · @ (148, 9) flow · column gap 2 justify CENTER · clip `3868:99452`
@@ -302,7 +304,7 @@ Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí ·
             - [khối] **Cell · Lớp** — 120×24 [FIXED×HUG] · @ (16, 15) flow · column gap 2 justify CENTER · clip `3868:99475`
               - [khối] **Cell · Mã lớp** — 114×24 [HUG×HUG] · @ (0, 0) flow · row gap 8 align CENTER `3868:99456`
                 - [icon] **CLass Status** ⟨CLass Status: Property 1=Trải nghiệm⟩ — 24×24 · @ (0, 0) flow · file /figma/assets/f9d845ca65bf.svg `3868:99457`
-                - [khối] **Data** — 82×19 [FILL×HUG] · @ (32, 2.5) flow · column justify CENTER · bg #ffffff `3868:99458`
+                - [khối] **Data** — 82×19 [FILL×HUG] · @ (32, 2.5) flow · column justify CENTER · bg #ffffff (bg/surface) `3868:99458`
                   - [khối] **Container** — 82×19 [FILL×HUG] · @ (0, 0) flow · column gap 4 `3868:99459`
                     - [chữ] “BD105-I” — 82×19 [FILL×HUG] · @ (0, 0) flow · Afacad 15/19px 700 #334155 (color/text/primary) · truncate 1 lines `3868:99463`
             - [khối] **Cell · Tên buổi học** — 224×36 [FILL×HUG] · @ (148, 9) flow · column gap 2 justify CENTER · clip `3868:99476`
@@ -323,7 +325,7 @@ Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí ·
                   - [khối] **Group 240059** — 6.55×9.82 · @ (8.73, 7.09) flow `I3868:99481;1454:2860`
                     - [hình] **Rectangle 5627** — 1.96×9.82 · @ (0, 0) abs · bg #bbbbbb · radius 2.18px `I3868:99481;1454:2861`
                     - [hình] **Rectangle 5626** — 1.96×9.82 · @ (4.58, 0) abs · bg #bbbbbb · radius 2.18px `I3868:99481;1454:2862`
-                - [khối] **Data** — 82×19 [FILL×HUG] · @ (32, 2.5) flow · column justify CENTER · bg #ffffff `3868:99482`
+                - [khối] **Data** — 82×19 [FILL×HUG] · @ (32, 2.5) flow · column justify CENTER · bg #ffffff (bg/surface) `3868:99482`
                   - [khối] **Container** — 82×19 [FILL×HUG] · @ (0, 0) flow · column gap 4 `3868:99483`
                     - [chữ] “BD105-I” — 82×19 [FILL×HUG] · @ (0, 0) flow · Afacad 15/19px 700 #334155 (color/text/primary) · truncate 1 lines `3868:99487`
             - [khối] **Cell · Tên buổi học** — 224×36 [FILL×HUG] · @ (148, 9) flow · column gap 2 justify CENTER · clip `3868:99500`
@@ -341,7 +343,7 @@ Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí ·
             - [khối] **Cell · Lớp** — 120×24 [FIXED×HUG] · @ (16, 15) flow · column gap 2 justify CENTER · clip `3868:99523`
               - [khối] **Cell · Mã lớp** — 114×24 [HUG×HUG] · @ (0, 0) flow · row gap 8 align CENTER `3868:99504`
                 - [icon] **CLass Status** ⟨CLass Status: Property 1=Hoàn thành⟩ — 24×24 · @ (0, 0) flow · file /figma/assets/391cdbc8d2c3.svg `3868:99505`
-                - [khối] **Data** — 82×19 [FILL×HUG] · @ (32, 2.5) flow · column justify CENTER · bg #ffffff `3868:99506`
+                - [khối] **Data** — 82×19 [FILL×HUG] · @ (32, 2.5) flow · column justify CENTER · bg #ffffff (bg/surface) `3868:99506`
                   - [khối] **Container** — 82×19 [FILL×HUG] · @ (0, 0) flow · column gap 4 `3868:99507`
                     - [chữ] “BD105-I” — 82×19 [FILL×HUG] · @ (0, 0) flow · Afacad 15/19px 700 #334155 (color/text/primary) · truncate 1 lines `3868:99511`
             - [khối] **Cell · Tên buổi học** — 224×36 [FILL×HUG] · @ (148, 9) flow · column gap 2 justify CENTER · clip `3868:99524`
@@ -359,7 +361,7 @@ Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí ·
             - [khối] **Cell · Lớp** — 120×24 [FIXED×HUG] · @ (16, 15) flow · column gap 2 justify CENTER · clip `3868:99547`
               - [khối] **Cell · Mã lớp** — 114×24 [HUG×HUG] · @ (0, 0) flow · row gap 8 align CENTER `3868:99528`
                 - [icon] **CLass Status** ⟨CLass Status: Property 1=Huỷ bỏ⟩ — 24×24 · @ (0, 0) flow · file /figma/assets/cc9cc9860e78.svg `3868:99529`
-                - [khối] **Data** — 82×19 [FILL×HUG] · @ (32, 2.5) flow · column justify CENTER · bg #ffffff `3868:99530`
+                - [khối] **Data** — 82×19 [FILL×HUG] · @ (32, 2.5) flow · column justify CENTER · bg #ffffff (bg/surface) `3868:99530`
                   - [khối] **Container** — 82×19 [FILL×HUG] · @ (0, 0) flow · column gap 4 `3868:99531`
                     - [chữ] “BD105-I” — 82×19 [FILL×HUG] · @ (0, 0) flow · Afacad 15/19px 700 #334155 (color/text/primary) · truncate 1 lines `3868:99535`
             - [khối] **Cell · Tên buổi học** — 224×36 [FILL×HUG] · @ (148, 9) flow · column gap 2 justify CENTER · clip `3868:99548`
@@ -377,7 +379,7 @@ Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí ·
             - [khối] **Cell · Lớp** — 120×24 [FIXED×HUG] · @ (16, 15) flow · column gap 2 justify CENTER · clip `3868:99571`
               - [khối] **Cell · Mã lớp** — 114×24 [HUG×HUG] · @ (0, 0) flow · row gap 8 align CENTER `3868:99552`
                 - [icon] **CLass Status** ⟨CLass Status: Property 1=Đang học⟩ — 24×24 · @ (0, 0) flow · file /figma/assets/6e9af18671f4.svg `3868:99553`
-                - [khối] **Data** — 82×19 [FILL×HUG] · @ (32, 2.5) flow · column justify CENTER · bg #ffffff `3868:99554`
+                - [khối] **Data** — 82×19 [FILL×HUG] · @ (32, 2.5) flow · column justify CENTER · bg #ffffff (bg/surface) `3868:99554`
                   - [khối] **Container** — 82×19 [FILL×HUG] · @ (0, 0) flow · column gap 4 `3868:99555`
                     - [chữ] “BD105-I” — 82×19 [FILL×HUG] · @ (0, 0) flow · Afacad 15/19px 700 #334155 (color/text/primary) · truncate 1 lines `3868:99559`
             - [khối] **Cell · Tên buổi học** — 224×36 [FILL×HUG] · @ (148, 9) flow · column gap 2 justify CENTER · clip `3868:99572`
@@ -395,7 +397,7 @@ Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí ·
             - [khối] **Cell · Lớp** — 120×24 [FIXED×HUG] · @ (16, 15) flow · column gap 2 justify CENTER · clip `3868:99595`
               - [khối] **Cell · Mã lớp** — 114×24 [HUG×HUG] · @ (0, 0) flow · row gap 8 align CENTER `3868:99576`
                 - [icon] **CLass Status** ⟨CLass Status: Property 1=Khai giảng⟩ — 24×24 · @ (0, 0) flow · file /figma/assets/68e702ec0efb.svg `3868:99577`
-                - [khối] **Data** — 82×19 [FILL×HUG] · @ (32, 2.5) flow · column justify CENTER · bg #ffffff `3868:99578`
+                - [khối] **Data** — 82×19 [FILL×HUG] · @ (32, 2.5) flow · column justify CENTER · bg #ffffff (bg/surface) `3868:99578`
                   - [khối] **Container** — 82×19 [FILL×HUG] · @ (0, 0) flow · column gap 4 `3868:99579`
                     - [chữ] “BD105-I” — 82×19 [FILL×HUG] · @ (0, 0) flow · Afacad 15/19px 700 #334155 (color/text/primary) · truncate 1 lines `3868:99583`
             - [khối] **Cell · Tên buổi học** — 224×36 [FILL×HUG] · @ (148, 9) flow · column gap 2 justify CENTER · clip `3868:99596`
@@ -413,7 +415,7 @@ Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí ·
             - [khối] **Cell · Lớp** — 120×24 [FIXED×HUG] · @ (16, 15) flow · column gap 2 justify CENTER · clip `3868:99619`
               - [khối] **Cell · Mã lớp** — 114×24 [HUG×HUG] · @ (0, 0) flow · row gap 8 align CENTER `3868:99600`
                 - [icon] **CLass Status** ⟨CLass Status: Property 1=Mới tạo⟩ — 24×24 · @ (0, 0) flow · file /figma/assets/71b40bc9ee44.svg `3868:99601`
-                - [khối] **Data** — 82×19 [FILL×HUG] · @ (32, 2.5) flow · column justify CENTER · bg #ffffff `3868:99602`
+                - [khối] **Data** — 82×19 [FILL×HUG] · @ (32, 2.5) flow · column justify CENTER · bg #ffffff (bg/surface) `3868:99602`
                   - [khối] **Container** — 82×19 [FILL×HUG] · @ (0, 0) flow · column gap 4 `3868:99603`
                     - [chữ] “BD105-I” — 82×19 [FILL×HUG] · @ (0, 0) flow · Afacad 15/19px 700 #334155 (color/text/primary) · truncate 1 lines `3868:99607`
             - [khối] **Cell · Tên buổi học** — 224×36 [FILL×HUG] · @ (148, 9) flow · column gap 2 justify CENTER · clip `3868:99620`
@@ -431,7 +433,7 @@ Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí ·
             - [khối] **Cell · Lớp** — 120×24 [FIXED×HUG] · @ (16, 15) flow · column gap 2 justify CENTER · clip `3868:99643`
               - [khối] **Cell · Mã lớp** — 114×24 [HUG×HUG] · @ (0, 0) flow · row gap 8 align CENTER `3868:99624`
                 - [icon] **CLass Status** ⟨CLass Status: Property 1=Trải nghiệm⟩ — 24×24 · @ (0, 0) flow · file /figma/assets/f9d845ca65bf.svg `3868:99625`
-                - [khối] **Data** — 82×19 [FILL×HUG] · @ (32, 2.5) flow · column justify CENTER · bg #ffffff `3868:99626`
+                - [khối] **Data** — 82×19 [FILL×HUG] · @ (32, 2.5) flow · column justify CENTER · bg #ffffff (bg/surface) `3868:99626`
                   - [khối] **Container** — 82×19 [FILL×HUG] · @ (0, 0) flow · column gap 4 `3868:99627`
                     - [chữ] “BD105-I” — 82×19 [FILL×HUG] · @ (0, 0) flow · Afacad 15/19px 700 #334155 (color/text/primary) · truncate 1 lines `3868:99631`
             - [khối] **Cell · Tên buổi học** — 224×36 [FILL×HUG] · @ (148, 9) flow · column gap 2 justify CENTER · clip `3868:99644`
@@ -452,7 +454,7 @@ Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí ·
                   - [khối] **Group 240059** — 6.55×9.82 · @ (8.73, 7.09) flow `I3868:99649;1454:2860`
                     - [hình] **Rectangle 5627** — 1.96×9.82 · @ (0, 0) abs · bg #bbbbbb · radius 2.18px `I3868:99649;1454:2861`
                     - [hình] **Rectangle 5626** — 1.96×9.82 · @ (4.58, 0) abs · bg #bbbbbb · radius 2.18px `I3868:99649;1454:2862`
-                - [khối] **Data** — 82×19 [FILL×HUG] · @ (32, 2.5) flow · column justify CENTER · bg #ffffff `3868:99650`
+                - [khối] **Data** — 82×19 [FILL×HUG] · @ (32, 2.5) flow · column justify CENTER · bg #ffffff (bg/surface) `3868:99650`
                   - [khối] **Container** — 82×19 [FILL×HUG] · @ (0, 0) flow · column gap 4 `3868:99651`
                     - [chữ] “BD105-I” — 82×19 [FILL×HUG] · @ (0, 0) flow · Afacad 15/19px 700 #334155 (color/text/primary) · truncate 1 lines `3868:99655`
             - [khối] **Cell · Tên buổi học** — 224×36 [FILL×HUG] · @ (148, 9) flow · column gap 2 justify CENTER · clip `3868:99668`
@@ -470,7 +472,7 @@ Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí ·
             - [khối] **Cell · Lớp** — 120×24 [FIXED×HUG] · @ (16, 15) flow · column gap 2 justify CENTER · clip `3868:99691`
               - [khối] **Cell · Mã lớp** — 114×24 [HUG×HUG] · @ (0, 0) flow · row gap 8 align CENTER `3868:99672`
                 - [icon] **CLass Status** ⟨CLass Status: Property 1=Hoàn thành⟩ — 24×24 · @ (0, 0) flow · file /figma/assets/391cdbc8d2c3.svg `3868:99673`
-                - [khối] **Data** — 82×19 [FILL×HUG] · @ (32, 2.5) flow · column justify CENTER · bg #ffffff `3868:99674`
+                - [khối] **Data** — 82×19 [FILL×HUG] · @ (32, 2.5) flow · column justify CENTER · bg #ffffff (bg/surface) `3868:99674`
                   - [khối] **Container** — 82×19 [FILL×HUG] · @ (0, 0) flow · column gap 4 `3868:99675`
                     - [chữ] “BD105-I” — 82×19 [FILL×HUG] · @ (0, 0) flow · Afacad 15/19px 700 #334155 (color/text/primary) · truncate 1 lines `3868:99679`
             - [khối] **Cell · Tên buổi học** — 224×36 [FILL×HUG] · @ (148, 9) flow · column gap 2 justify CENTER · clip `3868:99692`
@@ -499,7 +501,7 @@ Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí ·
             - [khối] **Cell · Lớp** — 196×24 [FILL×HUG] · @ (16, 9) flow · column gap 2 justify CENTER · clip `3868:99721`
               - [khối] **Cell · Mã lớp** — 196×24 [FILL×HUG] · @ (0, 0) flow · row gap 8 align CENTER `3868:99706`
                 - [icon] **CLass Status** ⟨CLass Status: Property 1=Đang học⟩ — 24×24 · @ (0, 0) flow · file /figma/assets/8136202ae4d5.svg `3868:99707`
-                - [khối] **Data** — 164×19 [FILL×HUG] · @ (32, 2.5) flow · column justify CENTER · bg #ffffff `3868:99708`
+                - [khối] **Data** — 164×19 [FILL×HUG] · @ (32, 2.5) flow · column justify CENTER · bg #ffffff (bg/surface) `3868:99708`
                   - [khối] **Container** — 164×19 [FILL×HUG] · @ (0, 0) flow · column gap 4 `3868:99709`
                     - [chữ] “BD105-I” — 164×19 [FILL×HUG] · @ (0, 0) flow · Afacad 15/19px 700 #334155 (color/text/primary) · truncate 1 lines `3868:99713`
             - [khối] **Cell · Số buổi** — 70×19 [FIXED×HUG] · @ (224, 11.5) flow · column gap 2 justify CENTER align CENTER · clip `3868:99722`
@@ -511,7 +513,7 @@ Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí ·
             - [khối] **Cell · Lớp** — 196×24 [FILL×HUG] · @ (16, 9) flow · column gap 2 justify CENTER · clip `3868:103135`
               - [khối] **Cell · Mã lớp** — 196×24 [FILL×HUG] · @ (0, 0) flow · row gap 8 align CENTER `3868:103136`
                 - [icon] **CLass Status** ⟨CLass Status: Property 1=Đang học⟩ — 24×24 · @ (0, 0) flow · file /figma/assets/8136202ae4d5.svg `3868:103137`
-                - [khối] **Data** — 164×19 [FILL×HUG] · @ (32, 2.5) flow · column justify CENTER · bg #ffffff `3868:103138`
+                - [khối] **Data** — 164×19 [FILL×HUG] · @ (32, 2.5) flow · column justify CENTER · bg #ffffff (bg/surface) `3868:103138`
                   - [khối] **Container** — 164×19 [FILL×HUG] · @ (0, 0) flow · column gap 4 `3868:103139`
                     - [chữ] “A1 - TRẢI NGHIỆM - HK1” — 164×19 [FILL×HUG] · @ (0, 0) flow · Afacad 15/19px 700 #334155 (color/text/primary) · truncate 1 lines `3868:103143`
             - [khối] **Cell · Số buổi** — 70×19 [FIXED×HUG] · @ (224, 11.5) flow · column gap 2 justify CENTER align CENTER · clip `3868:103144`

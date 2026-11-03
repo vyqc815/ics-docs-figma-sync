@@ -12,19 +12,13 @@
   "pixels": {
     "width": 1440,
     "height": 971,
-    "mismatched": 2470,
-    "percent": 0.177,
+    "mismatched": 2136,
+    "percent": 0.153,
     "shapePercent": 0.021,
-    "textPercent": 0.608,
+    "textPercent": 0.515,
     "sizeMismatch": false
   },
   "textNodes": [
-    {
-      "id": "I4343:86180;2245:87774",
-      "name": "Label",
-      "pixels": 366,
-      "percent": 12.7
-    },
     {
       "id": "I4343:86226;1061:1316",
       "name": "Kéo thả file vào đây hoặc chọn file",
@@ -108,6 +102,12 @@
       "name": "CÁC CÔNG TÁC HÀNH CHÍNH",
       "pixels": 106,
       "percent": 1.8
+    },
+    {
+      "id": "4343:86277",
+      "name": "BTVN - 1001 Cách Giúp Học Viên",
+      "pixels": 93,
+      "percent": 1.6
     }
   ],
   "regions": [
@@ -561,7 +561,7 @@
     "over": []
   },
   "failures": [],
-  "url": "http://localhost:3108/tai-lieu/chi-tiet-tai-lieu-dk",
+  "url": "http://localhost:3000/tai-lieu/chi-tiet-tai-lieu-dk",
   "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
   "consoleErrors": [],
   "rootFound": true

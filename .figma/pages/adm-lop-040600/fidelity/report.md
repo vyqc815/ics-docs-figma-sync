@@ -1,8 +1,8 @@
 # Fidelity: ADM-LOP-040600 — Lớp học / Cài đặt / Hoá đơn
 
-- URL: `http://localhost:3108/lop-hoc/cai-dat/hoa-don`
+- URL: `http://localhost:3000/lop-hoc/cai-dat/hoa-don`
 - Verdict: **PASS**
-- Pixels outside text: **0.006%** differ (limit 0.5%); all pixels: 0.422%; inside text boxes: 1.952% (glyph rendering)
+- Pixels outside text: **0.006%** differ (limit 0.5%); all pixels: 0.411%; inside text boxes: 1.901% (glyph rendering)
 - Boxes: 249/249 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 249, ≤1px: 249, ≤2px: 249, ≤4px: 249, >4px: 0
 
 ## Pixel regions (largest first)
@@ -30,8 +30,8 @@
 | 15.000.000 (`I3561:76414;2812:34656`) | 9.9% |
 | Label (`I4915:229045;4901:211143;2245:87908`) | 8.4% |
 | Label (`I4915:229045;4901:211141;2245:87908`) | 5.9% |
-| 102152 - [SP] BS Trọn Khoá - DN1-115 - 102152 - Trần T. Trà  (`2389:60781`) | 3.2% |
 | 101729 - [SP] Renew - DN[2] - 101729 - Đỗ Lâm Tường - 500.00 (`2389:60767`) | 2.5% |
+| 102152 - [SP] BS Trọn Khoá - DN1-115 - 102152 - Trần T. Trà  (`2389:60781`) | 2.3% |
 | 101153 - [SP] BS Trọn Khoá - DN188 - 101153 Nguyễn Van Anh - (`2389:60732`) | 2.1% |
 
 ## Largest box differences

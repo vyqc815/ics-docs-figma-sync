@@ -1,6 +1,6 @@
 # Fidelity: CD-KH-020100 — Chi tiết khoá học / Tổng quan
 
-- URL: `http://localhost:3108/chi-tiet-khoa-hoc/tong-quan`
+- URL: `http://localhost:3000/chi-tiet-khoa-hoc/tong-quan`
 - Verdict: **PASS**
 - Pixels outside text: **0.01%** differ (limit 0.5%); all pixels: 0.32%; inside text boxes: 1.738% (glyph rendering)
 - Boxes: 388/388 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 387, ≤1px: 388, ≤2px: 388, ≤4px: 388, >4px: 0

@@ -1,0 +1,22 @@
+{
+  "route": "/tin-nhan/danh-sach-mau-tin-nhan/tin-nhan-moi-noi-dung-trong",
+  "pageFile": "components/figma/adm-tn-010004/index.tsx",
+  "docFile": "docs/pages/tin-nhan/danh-sach-mau-tin-nhan/tin-nhan-moi-noi-dung-trong.md",
+  "sections": [
+    {
+      "nodeId": "3228:62217",
+      "component": "Header",
+      "file": "components/figma/adm-tn-010004/Header.tsx"
+    },
+    {
+      "nodeId": "4915:251690",
+      "component": "SidebarMenuAdmin",
+      "file": "components/figma/adm-tn-010004/SidebarMenuAdmin.tsx"
+    },
+    {
+      "nodeId": "3228:62350",
+      "component": "Maincontent",
+      "file": "components/figma/adm-tn-010004/Maincontent.tsx"
+    }
+  ]
+}

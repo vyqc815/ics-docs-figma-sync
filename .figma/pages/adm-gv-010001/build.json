@@ -1,0 +1,17 @@
+{
+  "route": "/danh-sach-giao-vien/hover-menu-thao-tac",
+  "pageFile": "components/figma/adm-gv-010001/index.tsx",
+  "docFile": "docs/pages/danh-sach-giao-vien/hover-menu-thao-tac.md",
+  "sections": [
+    {
+      "nodeId": "1657:12041",
+      "component": "Body",
+      "file": "components/figma/adm-gv-010001/Body.tsx"
+    },
+    {
+      "nodeId": "1657:12085",
+      "component": "MainScrollableWorkspace",
+      "file": "components/figma/adm-gv-010001/MainScrollableWorkspace.tsx"
+    }
+  ]
+}

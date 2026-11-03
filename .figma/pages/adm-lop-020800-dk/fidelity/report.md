@@ -1,8 +1,8 @@
 # Fidelity: ADM-LOP-020800-DK — Chi tiết lớp học / CSKH
 
-- URL: `http://localhost:3108/chi-tiet-lop-hoc/cskh-dk`
+- URL: `http://localhost:3000/chi-tiet-lop-hoc/cskh-dk`
 - Verdict: **PASS**
-- Pixels outside text: **0.001%** differ (limit 0.5%); all pixels: 0.204%; inside text boxes: 0.902% (glyph rendering)
+- Pixels outside text: **0.001%** differ (limit 0.5%); all pixels: 0.197%; inside text boxes: 0.87% (glyph rendering)
 - Boxes: 309/309 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 304, ≤1px: 307, ≤2px: 309, ≤4px: 309, >4px: 0
 
 ## Pixel regions (largest first)
@@ -17,7 +17,6 @@
 | --- | --- |
 | Label (`I4056:115154;2245:87908`) | 13.7% |
 | Button (`I4056:115011;1048:1240`) | 10.5% |
-| Label (`I4056:115159;2245:87914`) | 10% |
 | Label (`I4056:115152;2245:87908`) | 8.6% |
 | Huong-dan-hoc-vien.mp4 (`I4056:114995;1062:1351`) | 6.9% |
 | Huong-dan-hoc-vien.mp4 (`I4056:114904;1062:1351`) | 5.8% |
@@ -30,6 +29,7 @@
 | Th2, 14.09.2026 (`I4056:115028;1590:881`) | 5.3% |
 | Th2, 14.09.2026 (`I4056:114945;1590:881`) | 5.2% |
 | Label (`I4056:115155;2245:87908`) | 4.3% |
+| Button (`I4056:115012;1048:1238`) | 3.4% |
 
 ## Largest box differences
 

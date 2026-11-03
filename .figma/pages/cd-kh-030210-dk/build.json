@@ -1,0 +1,22 @@
+{
+  "route": "/hoc-ky/bai-hoc/popup-chi-tiet-bai-hoc-1-dk",
+  "pageFile": "components/figma/cd-kh-030210-dk/index.tsx",
+  "docFile": "docs/pages/hoc-ky/bai-hoc/popup-chi-tiet-bai-hoc-1-dk.md",
+  "sections": [
+    {
+      "nodeId": "6015:64459",
+      "component": "PopupHeader11",
+      "file": "components/figma/shared/PopupHeader11.tsx"
+    },
+    {
+      "nodeId": "6015:64460",
+      "component": "Body",
+      "file": "components/figma/cd-kh-030210-dk/Body.tsx"
+    },
+    {
+      "nodeId": "6015:64510",
+      "component": "PopupFooter7",
+      "file": "components/figma/shared/PopupFooter7.tsx"
+    }
+  ]
+}

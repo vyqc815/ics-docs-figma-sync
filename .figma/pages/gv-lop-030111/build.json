@@ -1,0 +1,30 @@
+{
+  "route": "/chi-tiet-lop/bai-hoc/buoi-hoc/dan-do-da-doc",
+  "pageFile": "components/figma/gv-lop-030111/index.tsx",
+  "docFile": "docs/pages/chi-tiet-lop/bai-hoc/buoi-hoc/dan-do-da-doc.md",
+  "sections": [
+    {
+      "nodeId": "5292:222201",
+      "component": "Body4",
+      "file": "components/figma/shared/Body4.tsx"
+    },
+    {
+      "nodeId": "5292:222202",
+      "component": "Maincontent",
+      "file": "components/figma/gv-lop-030111/Maincontent.tsx"
+    },
+    {
+      "nodeId": "5292:222399",
+      "component": "Header",
+      "file": "components/figma/gv-lop-030111/Header.tsx"
+    },
+    {
+      "nodeId": "5292:222541",
+      "component": "SidebarMenuTeacher",
+      "file": "components/figma/gv-lop-030111/SidebarMenuTeacher.tsx"
+    }
+  ],
+  "idAlias": {
+    "5292:222201": "769:30964"
+  }
+}

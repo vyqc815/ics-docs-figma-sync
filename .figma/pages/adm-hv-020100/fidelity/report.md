@@ -1,6 +1,6 @@
 # Fidelity: ADM-HV-020100 — Chi tiết học viên / Thông tin cá nhân
 
-- URL: `http://localhost:3108/chi-tiet-hoc-vien/thong-tin-ca-nhan`
+- URL: `http://localhost:3000/chi-tiet-hoc-vien/thong-tin-ca-nhan`
 - Verdict: **PASS**
 - Pixels outside text: **0.014%** differ (limit 0.5%); all pixels: 0.079%; inside text boxes: 0.387% (glyph rendering)
 - Boxes: 222/222 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 222, ≤1px: 222, ≤2px: 222, ≤4px: 222, >4px: 0

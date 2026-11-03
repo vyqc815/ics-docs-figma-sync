@@ -12,10 +12,10 @@
   "pixels": {
     "width": 1440,
     "height": 910,
-    "mismatched": 2488,
-    "percent": 0.19,
+    "mismatched": 2276,
+    "percent": 0.174,
     "shapePercent": 0.002,
-    "textPercent": 1.556,
+    "textPercent": 1.422,
     "sizeMismatch": false
   },
   "textNodes": [
@@ -24,12 +24,6 @@
       "name": "Label",
       "pixels": 221,
       "percent": 8.6
-    },
-    {
-      "id": "I6133:126670;6133:108641;2245:87774",
-      "name": "Label",
-      "pixels": 244,
-      "percent": 8.5
     },
     {
       "id": "I6133:126670;6133:108633;2245:87820",
@@ -108,6 +102,12 @@
       "name": "Label",
       "pixels": 63,
       "percent": 2.2
+    },
+    {
+      "id": "I6133:126670;6133:108621;2245:87768",
+      "name": "Label",
+      "pixels": 60,
+      "percent": 2.1
     }
   ],
   "regions": [
@@ -453,7 +453,7 @@
     "over": []
   },
   "failures": [],
-  "url": "http://localhost:3108/tools/giong-doc/doc-van-ban-dk",
+  "url": "http://localhost:3000/tools/giong-doc/doc-van-ban-dk",
   "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
   "consoleErrors": [],
   "rootFound": true

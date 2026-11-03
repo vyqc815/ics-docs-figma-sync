@@ -1,6 +1,6 @@
 # Fidelity: CD-TL-010000 — Tools / Giọng đọc / Đọc văn bản
 
-- URL: `http://localhost:3108/tools/giong-doc/doc-van-ban`
+- URL: `http://localhost:3000/tools/giong-doc/doc-van-ban`
 - Verdict: **PASS**
 - Pixels outside text: **0%** differ (limit 0.5%); all pixels: 0.078%; inside text boxes: 0.686% (glyph rendering)
 - Boxes: 171/171 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 164, ≤1px: 169, ≤2px: 171, ≤4px: 171, >4px: 0

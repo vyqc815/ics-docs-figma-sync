@@ -5,7 +5,7 @@
 > **Nguồn:** PLS-ICS T8/2026 ›         ├─ GIÁO VIÊN › ADM-GV-020200 — Chi tiết giáo viên / Danh sách lớp (`1331:10823`, file `rRVs5HX0kIHffbS0V40djG`)  
 > **Route:** `/chi-tiet-giao-vien/danh-sach-lop`  
 > **Khung thiết kế:** 1440 × 810 px (cắt phần tràn ra ngoài khung)  
-> **Xuất lúc:** 2026-11-02T03:25:32.629Z  
+> **Xuất lúc:** 2026-11-03T03:17:31.318Z  
 > **Spec đầy đủ (giá trị chính xác từng node):** `../../../.figma/pages/adm-gv-020200/page-spec.json`
 
 ## 1. Tổng quan
@@ -25,6 +25,7 @@ Nền trang: `#f8fafc`.
 
 | Token | Biến CSS | Giá trị | Trỏ tới | Bộ / mode |
 | --- | --- | --- | --- | --- |
+| `bg/surface` | `--bg-surface` | `#ffffff` | color/neutral/white | Theme · Semantic / Light |
 | `bố cục/khoảng cách khối` | `--bo-cuc-khoang-cach-khoi` | `16` | spacing/16 | Number Tokens / Mode 1 |
 | `bố cục/lề hai bên` | `--bo-cuc-le-hai-ben` | `16` | spacing/16 | Number Tokens / Mode 1 |
 | `bố cục/lề trên dưới` | `--bo-cuc-le-tren-duoi` | `24` | spacing/24 | Number Tokens / Mode 1 |
@@ -35,6 +36,7 @@ Nền trang: `#f8fafc`.
 | `color/extended/f8fafc` | `--color-extended-f8fafc` | `#f8fafc` |  | Color Tokens / Light |
 | `color/extended/fed7aa` | `--color-extended-fed7aa` | `#fed7aa` |  | Color Tokens / Light |
 | `color/extended/fff5ec` | `--color-extended-fff5ec` | `#fff5ec` |  | Color Tokens / Light |
+| `color/extended/fffaf8` | `--color-extended-fffaf8` | `#fffaf8` |  | Color Tokens / Light |
 | `color/neutral/white` | `--color-neutral-white` | `#ffffff` |  | Color Tokens / Light |
 | `color/neutral/white` | `--color-neutral-white` | `#ffffff` |  | Color Tokens / Light |
 | `color/semantic/success` | `--color-semantic-success` | `#2d9732` |  | Color Tokens / Light |
@@ -185,7 +187,7 @@ Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí ·
                   - [khối] **Frame 427321961** — 1172×67 [FILL×HUG] · @ (0, 0) flow · row gap 92 pad 12 16 12 16 align CENTER · bg #ffffff (color/neutral/white) · border 0 0 1px 0 solid #f1f5f9 (color/border/subtle) `1333:11645`
                     - [khối] **Frame 427326026** — 136×24 [HUG×HUG] · @ (16, 21) flow · row gap 12 align CENTER `1505:22754`
                       - [icon] **CLass Status** ⟨CLass Status: Property 1=Hoàn thành⟩ — 24×24 · @ (0, 0) flow · file /figma/assets/f0b088c127e7.svg `1505:22755`
-                      - [khối] **Data** — 100×19 [FIXED×HUG] · @ (36, 2.5) flow · column justify CENTER · bg #ffffff `1505:22756`
+                      - [khối] **Data** — 100×19 [FIXED×HUG] · @ (36, 2.5) flow · column justify CENTER · bg #ffffff (bg/surface) `1505:22756`
                         - [khối] **Container** — 100×19 [FILL×HUG] · @ (0, 0) flow · column `1505:22757`
                           - [khối] **Frame 427321959** — 100×19 [FILL×HUG] · @ (0, 0) flow · row gap 6 align CENTER `1505:22758`
                             - [chữ] “DN420-II” — 100×19 [FILL×HUG] · @ (0, 0) flow · Afacad 15/19px 700 #334155 (color/text/primary) · truncate 1 lines `1505:22759`
@@ -205,10 +207,10 @@ Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí ·
                       - [chữ] “200.000 đ” — 61×19 [HUG×HUG] · @ (8, 6) flow · Afacad 15/19px 700 #ffffff (color/neutral/white) · no-wrap `1505:22894`
                       - [icon] **Action Icon** ⟨Action Icon: Icon=Edit, Size=18⟩ — 16×16 · @ (77, 7.5) flow · file /figma/assets/65bf4d564fae.svg `1505:22974`
                     - [icon] **SVG** — 28×28 · @ (1099, 19) flow · file /figma/assets/ed575fb93ad4.svg `1333:11688`
-                  - [khối] **Frame 427321962** — 1172×67 [FILL×HUG] · @ (0, 67) flow · row gap 92 pad 12 16 12 16 align CENTER · bg #fffaf8 · border 0 0 1px 0 solid #f1f5f9 (color/border/subtle) `1333:11690`
+                  - [khối] **Frame 427321962** — 1172×67 [FILL×HUG] · @ (0, 67) flow · row gap 92 pad 12 16 12 16 align CENTER · bg #fffaf8 (color/extended/fffaf8) · border 0 0 1px 0 solid #f1f5f9 (color/border/subtle) `1333:11690`
                     - [khối] **Frame 427326026** — 136×24 [HUG×HUG] · @ (16, 21) flow · row gap 12 align CENTER `1505:22747`
                       - [icon] **CLass Status** ⟨CLass Status: Property 1=Hoàn thành⟩ — 24×24 · @ (0, 0) flow · file /figma/assets/f0b088c127e7.svg `1505:22748`
-                      - [khối] **Data** — 100×19 [FIXED×HUG] · @ (36, 2.5) flow · column justify CENTER · bg #ffffff `1505:22749`
+                      - [khối] **Data** — 100×19 [FIXED×HUG] · @ (36, 2.5) flow · column justify CENTER · bg #ffffff (bg/surface) `1505:22749`
                         - [khối] **Container** — 100×19 [FILL×HUG] · @ (0, 0) flow · column `1505:22750`
                           - [khối] **Frame 427321959** — 100×19 [FILL×HUG] · @ (0, 0) flow · row gap 6 align CENTER `1505:22751`
                             - [chữ] “DN420-II” — 100×19 [FILL×HUG] · @ (0, 0) flow · Afacad 15/19px 700 #334155 (color/text/primary) · truncate 1 lines `1505:22752`
@@ -232,7 +234,7 @@ Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí ·
                   - [khối] **Frame 427321971** — 1172×67 [FILL×HUG] · @ (0, 134) flow · row gap 92 pad 12 16 12 16 align CENTER · bg #ffffff (color/neutral/white) · border 0 0 1px 0 solid #f1f5f9 (color/border/subtle) `1333:12103`
                     - [khối] **Frame 427326026** — 136×24 [HUG×HUG] · @ (16, 21) flow · row gap 12 align CENTER `1505:22740`
                       - [icon] **CLass Status** ⟨CLass Status: Property 1=Hoàn thành⟩ — 24×24 · @ (0, 0) flow · file /figma/assets/f0b088c127e7.svg `1505:22741`
-                      - [khối] **Data** — 100×19 [FIXED×HUG] · @ (36, 2.5) flow · column justify CENTER · bg #ffffff `1505:22742`
+                      - [khối] **Data** — 100×19 [FIXED×HUG] · @ (36, 2.5) flow · column justify CENTER · bg #ffffff (bg/surface) `1505:22742`
                         - [khối] **Container** — 100×19 [FILL×HUG] · @ (0, 0) flow · column `1505:22743`
                           - [khối] **Frame 427321959** — 100×19 [FILL×HUG] · @ (0, 0) flow · row gap 6 align CENTER `1505:22744`
                             - [chữ] “DN420-II” — 100×19 [FILL×HUG] · @ (0, 0) flow · Afacad 15/19px 700 #334155 (color/text/primary) · truncate 1 lines `1505:22745`
@@ -256,7 +258,7 @@ Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí ·
                   - [khối] **Frame 427321968** — 1172×67 [FILL×HUG] · @ (0, 201) flow · row gap 92 pad 12 16 12 16 align CENTER · bg #ffffff (color/neutral/white) · border 0 0 1px 0 solid #f1f5f9 (color/border/subtle) `1333:12145`
                     - [khối] **Frame 427326026** — 136×24 [HUG×HUG] · @ (16, 21) flow · row gap 12 align CENTER `1505:22732`
                       - [icon] **CLass Status** ⟨CLass Status: Property 1=Hoàn thành⟩ — 24×24 · @ (0, 0) flow · file /figma/assets/f0b088c127e7.svg `1505:22644`
-                      - [khối] **Data** — 100×19 [FIXED×HUG] · @ (36, 2.5) flow · column justify CENTER · bg #ffffff `1505:22645`
+                      - [khối] **Data** — 100×19 [FIXED×HUG] · @ (36, 2.5) flow · column justify CENTER · bg #ffffff (bg/surface) `1505:22645`
                         - [khối] **Container** — 100×19 [FILL×HUG] · @ (0, 0) flow · column `1505:22646`
                           - [khối] **Frame 427321959** — 100×19 [FILL×HUG] · @ (0, 0) flow · row gap 6 align CENTER `1505:22647`
                             - [chữ] “DN420-II” — 100×19 [FILL×HUG] · @ (0, 0) flow · Afacad 15/19px 700 #334155 (color/text/primary) · truncate 1 lines `1505:22648`
@@ -617,7 +619,7 @@ Những chỗ CSS không thể tái hiện y hệt Figma (đã dùng cách gần
 - `ASSET_EXPORT_FAILED` — **Icon** (`I4915:235631;4899:195709;2245:87764`): Asset a62 (svg) could not be exported: Error: Failed to export node. This node may not have any visible layers.
 - `ASSET_EXPORT_FAILED` — **Icon** (`I4915:235631;4899:195710;2245:87764`): Asset a63 (svg) could not be exported: Error: Failed to export node. This node may not have any visible layers.
 - `ASSET_EXPORT_FAILED` — **Icon** (`I4915:235631;4899:195711;2245:87764`): Asset a64 (svg) could not be exported: Error: Failed to export node. This node may not have any visible layers.
-- `ASSET_EXPORT_FAILED` — **Icon** (`I4915:235631;4899:195712;2245:87764`): Asset a65 (svg) could not be exported: No WebSocket client connected. Make sure the Desktop Bridge plugin is open in Figma.
+- `ASSET_EXPORT_FAILED` — **Icon** (`I4915:235631;4899:195712;2245:87764`): Asset a65 (svg) could not be exported: Error: Failed to export node. This node may not have any visible layers.
 - `ASSET_EXPORT_FAILED` — **Icon** (`I4915:235631;4899:195713;2245:87764`): Asset a66 (svg) could not be exported: Error: Failed to export node. This node may not have any visible layers.
 - `ASSET_EXPORT_FAILED` — **Icon** (`I4915:235631;4899:195714;2245:87764`): Asset a67 (svg) could not be exported: Error: Failed to export node. This node may not have any visible layers.
 - `ASSET_EXPORT_FAILED` — **Icon** (`I4915:235631;4899:195715;2245:87764`): Asset a68 (svg) could not be exported: Error: Failed to export node. This node may not have any visible layers.

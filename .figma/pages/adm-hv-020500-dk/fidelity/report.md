@@ -1,8 +1,8 @@
 # Fidelity: ADM-HV-020500-DK — Chi tiết học viên / Quy trình học viên
 
-- URL: `http://localhost:3108/chi-tiet-hoc-vien/quy-trinh-hoc-vien-dk`
+- URL: `http://localhost:3000/chi-tiet-hoc-vien/quy-trinh-hoc-vien-dk`
 - Verdict: **PASS**
-- Pixels outside text: **0.002%** differ (limit 0.5%); all pixels: 0.364%; inside text boxes: 3.548% (glyph rendering)
+- Pixels outside text: **0.002%** differ (limit 0.5%); all pixels: 0.337%; inside text boxes: 3.28% (glyph rendering)
 - Boxes: 150/150 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 143, ≤1px: 150, ≤2px: 150, ≤4px: 150, >4px: 0
 
 ## Pixel regions (largest first)
@@ -16,7 +16,6 @@
 
 | Text | Differing |
 | --- | --- |
-| Label (`I4056:121260;2245:87864`) | 13.5% |
 | I. QUY TRÌNH SUPPORT HỌC VIÊN SAU CHỐT (`4056:121305`) | 8% |
 | [V10.25] QUY TRÌNH SUPPORT HỌC VIÊN (`4056:121294`) | 7.7% |
 | Hướng dẫn cách sử dụng các app và tài liệu trung tâm (`4056:121363`) | 6.3% |
@@ -31,6 +30,7 @@
 | Label (`I4056:121266;2245:87858`) | 1.7% |
 | Label (`I4056:121265;2245:87858`) | 1.6% |
 | Label (`I4056:121257;2245:87858`) | 1.5% |
+| Label (`I4056:121264;2245:87858`) | 1.5% |
 
 ## Largest box differences
 

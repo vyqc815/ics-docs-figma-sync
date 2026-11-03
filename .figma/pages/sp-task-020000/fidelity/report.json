@@ -12,19 +12,13 @@
   "pixels": {
     "width": 1440,
     "height": 1035,
-    "mismatched": 2710,
-    "percent": 0.182,
+    "mismatched": 2665,
+    "percent": 0.179,
     "shapePercent": 0.004,
-    "textPercent": 0.96,
+    "textPercent": 0.943,
     "sizeMismatch": false
   },
   "textNodes": [
-    {
-      "id": "I3857:74170;1308:6706",
-      "name": "0%",
-      "pixels": 45,
-      "percent": 23
-    },
     {
       "id": "3857:74974",
       "name": "Đã xem và chốt tổng quan nhiệm vụ vần làm trong tuần dựa vào lịch hẹn (sau họp team)",
@@ -108,6 +102,12 @@
       "name": "Đã gửi lịch hẹn và add lịch họp ICS với giáo viên cần họp trong tuần",
       "pixels": 172,
       "percent": 1.2
+    },
+    {
+      "id": "I3857:74950;1350:13208",
+      "name": "20%",
+      "pixels": 5,
+      "percent": 0.9
     }
   ],
   "regions": [
@@ -465,7 +465,7 @@
     "over": []
   },
   "failures": [],
-  "url": "http://localhost:3108/quy-trinh/task-tuan-nay",
+  "url": "http://localhost:3000/quy-trinh/task-tuan-nay",
   "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
   "consoleErrors": [],
   "rootFound": true

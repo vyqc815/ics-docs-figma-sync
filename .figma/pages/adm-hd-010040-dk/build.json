@@ -1,0 +1,17 @@
+{
+  "route": "/hoa-don/popup-xem-anh-hoa-don-dk",
+  "pageFile": "components/figma/adm-hd-010040-dk/index.tsx",
+  "docFile": "docs/pages/hoa-don/popup-xem-anh-hoa-don-dk.md",
+  "sections": [
+    {
+      "nodeId": "4056:133699",
+      "component": "PopupHeader",
+      "file": "components/figma/adm-hd-010040-dk/PopupHeader.tsx"
+    },
+    {
+      "nodeId": "4056:133700",
+      "component": "Body",
+      "file": "components/figma/adm-hd-010040-dk/Body.tsx"
+    }
+  ]
+}

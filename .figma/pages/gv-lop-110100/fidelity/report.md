@@ -1,6 +1,6 @@
 # Fidelity: GV-LOP-110100 — Chi tiết lớp / Thông tin / Thông tin
 
-- URL: `http://localhost:3108/chi-tiet-lop/thong-tin/thong-tin`
+- URL: `http://localhost:3000/chi-tiet-lop/thong-tin/thong-tin`
 - Verdict: **PASS**
 - Pixels outside text: **0.002%** differ (limit 0.5%); all pixels: 0.116%; inside text boxes: 0.889% (glyph rendering)
 - Boxes: 176/176 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 174, ≤1px: 176, ≤2px: 176, ≤4px: 176, >4px: 0

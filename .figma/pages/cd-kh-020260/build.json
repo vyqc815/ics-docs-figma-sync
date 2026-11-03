@@ -1,0 +1,27 @@
+{
+  "route": "/lo-trinh/them-nhanh-bai-hoc",
+  "pageFile": "components/figma/cd-kh-020260/index.tsx",
+  "docFile": "docs/pages/lo-trinh/them-nhanh-bai-hoc.md",
+  "sections": [
+    {
+      "nodeId": "6518:346935",
+      "component": "MainWorkspacecontainer",
+      "file": "components/figma/cd-kh-020260/MainWorkspacecontainer.tsx"
+    },
+    {
+      "nodeId": "6518:347962",
+      "component": "SidebarMenuCd",
+      "file": "components/figma/cd-kh-020260/SidebarMenuCd.tsx"
+    },
+    {
+      "nodeId": "6518:347963",
+      "component": "Header",
+      "file": "components/figma/cd-kh-020260/Header.tsx"
+    },
+    {
+      "nodeId": "6518:356213",
+      "component": "ToastDaThemBaiHoc",
+      "file": "components/figma/cd-kh-020260/ToastDaThemBaiHoc.tsx"
+    }
+  ]
+}

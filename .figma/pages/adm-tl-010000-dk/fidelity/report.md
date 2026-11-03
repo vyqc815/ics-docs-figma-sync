@@ -1,8 +1,8 @@
 # Fidelity: ADM-TL-010000-DK — Tài liệu / Chi tiết tài liệu
 
-- URL: `http://localhost:3108/tai-lieu/chi-tiet-tai-lieu-dk`
+- URL: `http://localhost:3000/tai-lieu/chi-tiet-tai-lieu-dk`
 - Verdict: **PASS**
-- Pixels outside text: **0.021%** differ (limit 0.5%); all pixels: 0.177%; inside text boxes: 0.608% (glyph rendering)
+- Pixels outside text: **0.021%** differ (limit 0.5%); all pixels: 0.153%; inside text boxes: 0.515% (glyph rendering)
 - Boxes: 213/213 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 212, ≤1px: 212, ≤2px: 213, ≤4px: 213, >4px: 0
 
 ## Pixel regions (largest first)
@@ -25,7 +25,6 @@
 
 | Text | Differing |
 | --- | --- |
-| Label (`I4343:86180;2245:87774`) | 12.7% |
 | Kéo thả file vào đây hoặc chọn file (`I4343:86226;1061:1316`) | 3.8% |
 | Label (`I4343:86176;2245:87820`) | 3.3% |
 | Hiểu Về Các Đối Tượng (`4343:86289`) | 3.2% |
@@ -40,6 +39,7 @@
 | Label (`I4343:86175;2245:87820`) | 1.8% |
 | Label (`I4343:86182;2245:87768`) | 1.8% |
 | CÁC CÔNG TÁC HÀNH CHÍNH (`4343:86271`) | 1.8% |
+| BTVN - 1001 Cách Giúp Học Viên (`4343:86277`) | 1.6% |
 
 ## Largest box differences
 

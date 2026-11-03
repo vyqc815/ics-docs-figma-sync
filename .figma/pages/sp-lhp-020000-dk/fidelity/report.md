@@ -1,8 +1,8 @@
 # Fidelity: SP-LHP-020000-DK — Lịch họp / Dạng bảng
 
-- URL: `http://localhost:3108/lich-hop/dang-bang-dk`
+- URL: `http://localhost:3000/lich-hop/dang-bang-dk`
 - Verdict: **PASS**
-- Pixels outside text: **0.001%** differ (limit 0.5%); all pixels: 0.125%; inside text boxes: 1.978% (glyph rendering)
+- Pixels outside text: **0.001%** differ (limit 0.5%); all pixels: 0.104%; inside text boxes: 1.645% (glyph rendering)
 - Boxes: 235/235 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 235, ≤1px: 235, ≤2px: 235, ≤4px: 235, >4px: 0
 
 ## Pixel regions (largest first)
@@ -16,7 +16,6 @@
 
 | Text | Differing |
 | --- | --- |
-| Label (`I4056:148269;3857:67915`) | 16.1% |
 | TH 2 (`4056:148295`) | 5.6% |
 | TH 7 (`4056:148311`) | 5.4% |
 | IT_VUONG123 (`I4056:148357;2008:49449`) | 5.3% |
@@ -31,6 +30,7 @@
 | Label (`I4056:148262;2245:87829`) | 2.7% |
 | Label (`I4056:148267;3857:67909`) | 2.7% |
 | Label (`I4056:148268;3857:67909`) | 2.6% |
+| Label (`I4056:148271;2245:87829`) | 2.5% |
 
 ## Largest box differences
 

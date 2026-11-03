@@ -12,10 +12,10 @@
   "pixels": {
     "width": 1440,
     "height": 910,
-    "mismatched": 4469,
-    "percent": 0.341,
+    "mismatched": 4133,
+    "percent": 0.315,
     "shapePercent": 0.004,
-    "textPercent": 1.723,
+    "textPercent": 1.592,
     "sizeMismatch": false
   },
   "textNodes": [
@@ -74,12 +74,6 @@
       "percent": 7
     },
     {
-      "id": "4846:168610",
-      "name": "Đại từ nghi vấn 哪儿 và 哪里",
-      "pixels": 225,
-      "percent": 6.5
-    },
-    {
       "id": "I5003:14902;2177:28928",
       "name": "Chi tiết NV",
       "pixels": 84,
@@ -108,6 +102,12 @@
       "name": "Button",
       "pixels": 81,
       "percent": 3.4
+    },
+    {
+      "id": "I4915:254548;5491:336917;2245:87908",
+      "name": "Label",
+      "pixels": 55,
+      "percent": 2.3
     }
   ],
   "regions": [
@@ -477,7 +477,7 @@
     "over": []
   },
   "failures": [],
-  "url": "http://localhost:3108/kien-thuc-s1/ngu-phap",
+  "url": "http://localhost:3000/kien-thuc-s1/ngu-phap",
   "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
   "consoleErrors": [],
   "rootFound": true

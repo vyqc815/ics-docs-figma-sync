@@ -1,0 +1,17 @@
+{
+  "route": "/bao-loi/chua-co-bao-loi",
+  "pageFile": "components/figma/cd-bl-010040/index.tsx",
+  "docFile": "docs/pages/bao-loi/chua-co-bao-loi.md",
+  "sections": [
+    {
+      "nodeId": "5274:365265",
+      "component": "Body",
+      "file": "components/figma/cd-bl-010040/Body.tsx"
+    },
+    {
+      "nodeId": "5274:365400",
+      "component": "NoiDung2",
+      "file": "components/figma/shared/NoiDung2.tsx"
+    }
+  ]
+}

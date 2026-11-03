@@ -5,7 +5,7 @@
 > **Nguồn:** PLS-ICS T8/2026 ›         ├─ HỌC VIÊN › ADM-HV-020400 — Chi tiết học viên / Log (`1117:10948`, file `rRVs5HX0kIHffbS0V40djG`)  
 > **Route:** `/chi-tiet-hoc-vien/log`  
 > **Khung thiết kế:** 1440 × 810 px  
-> **Xuất lúc:** 2026-11-02T03:21:03.526Z  
+> **Xuất lúc:** 2026-11-03T03:13:14.588Z  
 > **Spec đầy đủ (giá trị chính xác từng node):** `../../../.figma/pages/adm-hv-020400/page-spec.json`
 
 ## 1. Tổng quan
@@ -26,6 +26,7 @@ Nền trang: `#ffffff`.
 
 | Token | Biến CSS | Giá trị | Trỏ tới | Bộ / mode |
 | --- | --- | --- | --- | --- |
+| `bg/surface` | `--bg-surface` | `#ffffff` | color/neutral/white | Theme · Semantic / Light |
 | `bố cục/khoảng cách khối` | `--bo-cuc-khoang-cach-khoi` | `16` | spacing/16 | Number Tokens / Mode 1 |
 | `bố cục/lề hai bên` | `--bo-cuc-le-hai-ben` | `16` | spacing/16 | Number Tokens / Mode 1 |
 | `bố cục/lề trên dưới` | `--bo-cuc-le-tren-duoi` | `24` | spacing/24 | Number Tokens / Mode 1 |
@@ -110,7 +111,7 @@ Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí ·
 
 - [trang] **ADM-HV-020400 — Chi tiết học viên / Log** — 1440×810 · bg #ffffff `1117:10948`
   - [khối] **MainContainer** — 1206×745 · @ (234, 64) abs · clip `1117:10970`
-    - [khối] **MainContentArea** — 1206×1087 · @ (0, 0) abs · column gap 16 pad 24 16 24 16 · bg #ffffff `1117:11045`
+    - [khối] **MainContentArea** — 1206×1087 · @ (0, 0) abs · column gap 16 pad 24 16 24 16 · bg #ffffff (bg/surface) `1117:11045`
       - [khối] **Back Navigation Header** — 1174×26 [FILL×HUG] · @ (16, 24) flow · row gap 4 align CENTER `1117:11047`
         - [icon] **SVG** — 18×18 · @ (0, 4) flow · file /figma/assets/01b3a22f7d63.svg `1117:11048`
         - [chữ] “Chi tiết học viên” — 176×26 [HUG×HUG] · @ (22, 0) flow · Unbounded 17/26px 600 #334155 (color/text/primary) case title · no-wrap `1117:11051`

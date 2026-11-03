@@ -5,7 +5,7 @@
 > **Nguồn:** PLS-ICS T8/2026 ›         └─ THÔNG TIN › GV-LOP-110100 — Chi tiết lớp / Thông tin / Thông tin (`4333:17990`, file `rRVs5HX0kIHffbS0V40djG`)  
 > **Route:** `/chi-tiet-lop/thong-tin/thong-tin`  
 > **Khung thiết kế:** 1440 × 810 px (cắt phần tràn ra ngoài khung)  
-> **Xuất lúc:** 2026-11-02T03:54:40.258Z  
+> **Xuất lúc:** 2026-11-03T01:10:02.434Z  
 > **Spec đầy đủ (giá trị chính xác từng node):** `../../../../.figma/pages/gv-lop-110100/page-spec.json`
 
 ## 1. Tổng quan

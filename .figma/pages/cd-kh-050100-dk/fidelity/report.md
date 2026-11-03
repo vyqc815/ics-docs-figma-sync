@@ -1,8 +1,8 @@
 # Fidelity: CD-KH-050100-DK — Kỹ năng (S6) / Nghe
 
-- URL: `http://localhost:3108/ky-nang-s6/nghe-dk`
+- URL: `http://localhost:3000/ky-nang-s6/nghe-dk`
 - Verdict: **PASS**
-- Pixels outside text: **0.199%** differ (limit 0.5%); all pixels: 0.396%; inside text boxes: 0.915% (glyph rendering)
+- Pixels outside text: **0.199%** differ (limit 0.5%); all pixels: 0.363%; inside text boxes: 0.763% (glyph rendering)
 - Boxes: 429/429 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 425, ≤1px: 429, ≤2px: 429, ≤4px: 429, >4px: 0
 
 ## Pixel regions (largest first)
@@ -44,8 +44,8 @@
 
 | Text | Differing |
 | --- | --- |
-| Label (`I6646:123729;6579:362145;2245:87914`) | 23% |
 | Label (`I6646:123729;6579:362143;2245:87908`) | 13.1% |
+| Label (`I6646:123729;6579:362145;2245:87914`) | 4.8% |
 | Label (`I6646:123729;6579:362150;2245:87908`) | 4.8% |
 | Tất cả cụm (`6935:377956`) | 4.6% |
 | Placeholder (`I6935:378027;5056:365853`) | 4.4% |

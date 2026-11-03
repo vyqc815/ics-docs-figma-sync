@@ -5,7 +5,7 @@
 > **Nguồn:** PLS-ICS T8/2026 › EMPTY / ERROR STATES › SYS-ERR-010000-DK — Lỗi 403 · Không có quyền truy cập (`5789:160414`, file `rRVs5HX0kIHffbS0V40djG`)  
 > **Route:** `/loi-403-khong-co-quyen-truy-cap-dk`  
 > **Khung thiết kế:** 1440 × 810 px  
-> **Xuất lúc:** 2026-11-02T02:59:16.242Z  
+> **Xuất lúc:** 2026-11-03T02:57:36.906Z  
 > **Spec đầy đủ (giá trị chính xác từng node):** `../../.figma/pages/sys-err-010000-dk/page-spec.json`
 
 ## 1. Tổng quan
@@ -26,23 +26,24 @@ Nền trang: `#121213` (bg/canvas).
 
 | Token | Biến CSS | Giá trị | Trỏ tới | Bộ / mode |
 | --- | --- | --- | --- | --- |
-| `bg/brand-tint-strong` | `--bg-brand-tint-strong` | `#ffedd5` | color/extended/ffedd5 | Theme · Semantic / Light |
-| `bg/canvas` | `--bg-canvas` | `#f8fafc` | color/extended/f8fafc | Theme · Semantic / Light |
-| `bg/strong` | `--bg-strong` | `#e2e8f0` | color/border/default | Theme · Semantic / Light |
-| `bg/subtle` | `--bg-subtle` | `#f1f5f9` | color/surface/input | Theme · Semantic / Light |
+| `bg/brand-tint-strong` | `--bg-brand-tint-strong` | `#153020` |  | Theme · Semantic / Dark · Minimal |
+| `bg/canvas` | `--bg-canvas` | `#121213` |  | Theme · Semantic / Dark · Minimal |
+| `bg/strong` | `--bg-strong` | `#2a2a2e` |  | Theme · Semantic / Dark · Minimal |
+| `bg/subtle` | `--bg-subtle` | `#202023` |  | Theme · Semantic / Dark · Minimal |
 | `bố cục/khoảng cách khối` | `--bo-cuc-khoang-cach-khoi` | `16` | spacing/16 | Number Tokens / Mode 1 |
 | `bố cục/lề hai bên` | `--bo-cuc-le-hai-ben` | `16` | spacing/16 | Number Tokens / Mode 1 |
 | `bố cục/lề trên dưới` | `--bo-cuc-le-tren-duoi` | `24` | spacing/24 | Number Tokens / Mode 1 |
-| `border/default` | `--border-default` | `#e2e8f0` | color/border/default | Theme · Semantic / Light |
-| `border/strong` | `--border-strong` | `#cbd5e1` | color/extended/cbd5e1 | Theme · Semantic / Light |
-| `chrome/bg` | `--chrome-bg` | `#ff7700` | color/extended/ff7700 | Theme · Semantic / Light |
+| `border/default` | `--border-default` | `#27272a` |  | Theme · Semantic / Dark · Minimal |
+| `border/strong` | `--border-strong` | `#3f3f46` |  | Theme · Semantic / Dark · Minimal |
+| `brand/primary` | `--brand-primary` | `#16a34a` |  | Theme · Semantic / Dark · Minimal |
+| `chrome/bg` | `--chrome-bg` | `#0b0b0c` |  | Theme · Semantic / Dark · Minimal |
 | `color/brand/orange` | `--color-brand-orange` | `#e65100` |  | Color Tokens / Light |
 | `color/neutral/white` | `--color-neutral-white` | `#ffffff` |  | Color Tokens / Light |
 | `radius/8` | `--radius-8` | `8` |  | Number Tokens / Mode 1 |
 | `radius/full` | `--radius-full` | `9999` |  | Number Tokens / Mode 1 |
 | `spacing/4` | `--spacing-4` | `4` |  | Number Tokens / Mode 1 |
 | `spacing/8` | `--spacing-8` | `8` |  | Number Tokens / Mode 1 |
-| `theme/is-dark` | `--theme-is-dark` | `false` |  | Theme · Semantic / Light |
+| `theme/is-dark` | `--theme-is-dark` | `true` |  | Theme · Semantic / Dark · Minimal |
 
 **Style Figma đang dùng:**
 
@@ -66,7 +67,7 @@ Nền trang: `#121213` (bg/canvas).
 
 | Style | Font family | Cỡ / line-height | Độ đậm | Letter-spacing | Màu | Số lần | Ví dụ |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| — | Unbounded | 72 / 89px | 500 | 0 | #16a34a | 1 | “403” |
+| — | Unbounded | 72 / 89px | 500 | 0 | #16a34a (brand/primary) | 1 | “403” |
 | — | Unbounded | 24 / 30px | 500 | 0 | #ffffff (color/neutral/white) | 1 | “Bạn không có quyền truy cập trang này” |
 | `Body/17/Bold` | Afacad | 17 / 21px | 700 | 0 | #e65100 (color/brand/orange) | 1 | “Liên hệ quản trị” |
 | `Body/17/Bold` | Afacad | 17 / 21px | 700 | 0 | #ffffff (color/neutral/white) | 1 | “Về trang chủ” |
@@ -149,7 +150,7 @@ Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí ·
   - [khối] **MainContent** — 1206×746 · @ (234, 64) abs · column gap 16 pad 24 16 24 16 justify CENTER align CENTER · bg #121213 (bg/canvas) · clip `5789:160550`
     - [khối] **Trạng thái · 403** — 575×459.67 [HUG×HUG] · @ (315.5, 143.17) flow · column gap 12 align CENTER · clip `5789:160884`
       - [icon] **Empty State / Illustration** ⟨Empty State / Illustration: Type=Cảnh báo, Trung tâm=Sakumi⟩ — 260×198.67 · @ (157.5, 0) flow · file /figma/assets/83c3ec33bea7.svg `5789:160885`
-      - [chữ] “403” — 185×89 [HUG×HUG] · @ (195, 210.67) flow · Unbounded 72/89px 500 #16a34a · no-wrap `5789:160903`
+      - [chữ] “403” — 185×89 [HUG×HUG] · @ (195, 210.67) flow · Unbounded 72/89px 500 #16a34a (brand/primary) · no-wrap `5789:160903`
       - [chữ] “Bạn không có quyền truy cập trang này” — 575×30 [HUG×HUG] · @ (0, 311.67) flow · Unbounded 24/30px 500 #ffffff (color/neutral/white) · text-align center · no-wrap `5789:160904`
       - [chữ] “Tài khoản của bạn chưa được cấp quyền xem nội dung này. Nếu cần truy cập, hãy liên hệ quản trị viên để được cấp quyền.” — 460×46 [FIXED×HUG] · @ (57.5, 353.67) flow · Afacad 15/23px 400 #a1a1ab · text-align center `5789:160905`
       - [khối] **Nút** — 299×48 [HUG×HUG] · @ (138, 411.67) flow · row gap 12 pad 12 0 0 0 · clip `5789:160906`

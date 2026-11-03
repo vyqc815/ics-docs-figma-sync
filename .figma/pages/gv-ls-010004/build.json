@@ -1,0 +1,17 @@
+{
+  "route": "/lich-su-luong/ot",
+  "pageFile": "components/figma/gv-ls-010004/index.tsx",
+  "docFile": "docs/pages/lich-su-luong/ot.md",
+  "sections": [
+    {
+      "nodeId": "3868:102574",
+      "component": "Body",
+      "file": "components/figma/gv-ls-010004/Body.tsx"
+    },
+    {
+      "nodeId": "3868:102701",
+      "component": "Section2",
+      "file": "components/figma/gv-ls-010004/Section2.tsx"
+    }
+  ]
+}

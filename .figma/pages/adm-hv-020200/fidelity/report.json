@@ -12,37 +12,13 @@
   "pixels": {
     "width": 1440,
     "height": 810,
-    "mismatched": 1914,
-    "percent": 0.164,
+    "mismatched": 1676,
+    "percent": 0.144,
     "shapePercent": 0.006,
-    "textPercent": 1.466,
+    "textPercent": 1.277,
     "sizeMismatch": false
   },
   "textNodes": [
-    {
-      "id": "I1648:12601;1391:14476",
-      "name": "80%",
-      "pixels": 74,
-      "percent": 26.4
-    },
-    {
-      "id": "I1648:12640;1391:14476",
-      "name": "80%",
-      "pixels": 74,
-      "percent": 26.4
-    },
-    {
-      "id": "I1648:12620;1308:6706",
-      "name": "0%",
-      "pixels": 45,
-      "percent": 23
-    },
-    {
-      "id": "I1648:12659;1308:6706",
-      "name": "0%",
-      "pixels": 45,
-      "percent": 23
-    },
     {
       "id": "I3108:125417;3108:125015",
       "name": "Số liệu",
@@ -108,6 +84,30 @@
       "name": "6/20 Buổi",
       "pixels": 44,
       "percent": 3.5
+    },
+    {
+      "id": "I1648:12655;1350:13172",
+      "name": "6/20 Buổi",
+      "pixels": 44,
+      "percent": 3.5
+    },
+    {
+      "id": "I3108:125458;3108:125015",
+      "name": "Số liệu",
+      "pixels": 13,
+      "percent": 3.4
+    },
+    {
+      "id": "I1648:12616;1350:13172",
+      "name": "6/20 Buổi",
+      "pixels": 43,
+      "percent": 3.4
+    },
+    {
+      "id": "1648:12581",
+      "name": "Đánh giá",
+      "pixels": 46,
+      "percent": 3.3
     }
   ],
   "regions": [
@@ -477,7 +477,7 @@
     "over": []
   },
   "failures": [],
-  "url": "http://localhost:3108/chi-tiet-hoc-vien/danh-sach-lop",
+  "url": "http://localhost:3000/chi-tiet-hoc-vien/danh-sach-lop",
   "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
   "consoleErrors": [],
   "rootFound": true

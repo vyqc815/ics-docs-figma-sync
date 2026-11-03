@@ -12,37 +12,13 @@
   "pixels": {
     "width": 1440,
     "height": 1059,
-    "mismatched": 12507,
-    "percent": 0.82,
+    "mismatched": 11950,
+    "percent": 0.784,
     "shapePercent": 0.002,
-    "textPercent": 2.859,
+    "textPercent": 2.731,
     "sizeMismatch": false
   },
   "textNodes": [
-    {
-      "id": "I4056:111497;1308:6749",
-      "name": "100%",
-      "pixels": 67,
-      "percent": 19.9
-    },
-    {
-      "id": "I4056:111498;1308:6749",
-      "name": "100%",
-      "pixels": 67,
-      "percent": 19.9
-    },
-    {
-      "id": "I4056:111509;1308:6749",
-      "name": "100%",
-      "pixels": 67,
-      "percent": 19.9
-    },
-    {
-      "id": "I4056:111510;1308:6749",
-      "name": "100%",
-      "pixels": 67,
-      "percent": 19.9
-    },
     {
       "id": "4056:111403",
       "name": "ÔN TẬP: Giữa Kỳ 1",
@@ -54,12 +30,6 @@
       "name": "Label",
       "pixels": 329,
       "percent": 13.7
-    },
-    {
-      "id": "I4056:111661;2245:87914",
-      "name": "Label",
-      "pixels": 305,
-      "percent": 12.7
     },
     {
       "id": "4056:111463",
@@ -108,6 +78,36 @@
       "name": "[20P]",
       "pixels": 58,
       "percent": 7.7
+    },
+    {
+      "id": "4056:111476",
+      "name": "[15P]",
+      "pixels": 56,
+      "percent": 7.4
+    },
+    {
+      "id": "4056:111445",
+      "name": "3. [OT] Kiến thức 2",
+      "pixels": 160,
+      "percent": 6.7
+    },
+    {
+      "id": "4056:111428",
+      "name": "2. [OT] Kiến thức 1",
+      "pixels": 150,
+      "percent": 6.3
+    },
+    {
+      "id": "4056:111475",
+      "name": "5. [OT] Mini test",
+      "pixels": 122,
+      "percent": 6
+    },
+    {
+      "id": "4056:111436",
+      "name": "- GV hướng dẫn HV luyện đọc các cụm pinyin và mẫu câu pinyin, tăng khả năng phản xạ đọc.",
+      "pixels": 739,
+      "percent": 5.9
     }
   ],
   "regions": [
@@ -453,7 +453,7 @@
     "over": []
   },
   "failures": [],
-  "url": "http://localhost:3108/lop-hoc/bai-hoc/noi-dung-dk",
+  "url": "http://localhost:3000/lop-hoc/bai-hoc/noi-dung-dk",
   "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
   "consoleErrors": [],
   "rootFound": true

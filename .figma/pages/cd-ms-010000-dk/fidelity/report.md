@@ -1,8 +1,8 @@
 # Fidelity: CD-MS-010000-DK — Mindset thiết kế khoá học
 
-- URL: `http://localhost:3108/mindset-thiet-ke-khoa-hoc-dk`
+- URL: `http://localhost:3000/mindset-thiet-ke-khoa-hoc-dk`
 - Verdict: **PASS**
-- Pixels outside text: **0.037%** differ (limit 0.5%); all pixels: 1.027%; inside text boxes: 4.314% (glyph rendering)
+- Pixels outside text: **0.037%** differ (limit 0.5%); all pixels: 1.001%; inside text boxes: 4.203% (glyph rendering)
 - Boxes: 152/152 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 148, ≤1px: 150, ≤2px: 152, ≤4px: 152, >4px: 0
 
 ## Pixel regions (largest first)
@@ -36,7 +36,6 @@
 
 | Text | Differing |
 | --- | --- |
-| Label (`I4056:144751;2245:87914`) | 14.9% |
 | Label (`I4056:144742;2245:87908`) | 13.9% |
 | Từ vựng và ngữ pháp phải được lặp lại nhiều lần trong ngữ cả (`4056:144650`) | 7.7% |
 | MINDSET DẠY VÀ HỌC (`4056:144674`) | 7.5% |
@@ -51,6 +50,7 @@
 | Label (`I4056:144746;2245:87908`) | 4.1% |
 | Label (`I4056:144753;2245:87908`) | 4.1% |
 | Label (`I4056:144749;2245:87908`) | 3.7% |
+| Trước khi xây dựng khóa học phải xác định rõ bối cảnh học vi (`4056:144613`) | 3.5% |
 
 ## Largest box differences
 

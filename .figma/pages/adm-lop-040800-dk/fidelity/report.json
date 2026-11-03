@@ -12,10 +12,10 @@
   "pixels": {
     "width": 1440,
     "height": 860,
-    "mismatched": 1795,
-    "percent": 0.145,
+    "mismatched": 1506,
+    "percent": 0.122,
     "shapePercent": 0.001,
-    "textPercent": 2.146,
+    "textPercent": 1.798,
     "sizeMismatch": false
   },
   "textNodes": [
@@ -24,12 +24,6 @@
       "name": "Label",
       "pixels": 329,
       "percent": 13.7
-    },
-    {
-      "id": "I4056:118248;2245:87914",
-      "name": "Label",
-      "pixels": 312,
-      "percent": 13
     },
     {
       "id": "I4056:118239;2245:87908",
@@ -106,6 +100,12 @@
     {
       "id": "4056:118159",
       "name": "Số Tiền",
+      "pixels": 35,
+      "percent": 1.1
+    },
+    {
+      "id": "4056:118170",
+      "name": "25.09.2026",
       "pixels": 35,
       "percent": 1.1
     }
@@ -441,7 +441,7 @@
     "over": []
   },
   "failures": [],
-  "url": "http://localhost:3108/lop-hoc/cai-dat/ot-dk",
+  "url": "http://localhost:3000/lop-hoc/cai-dat/ot-dk",
   "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
   "consoleErrors": [],
   "rootFound": true

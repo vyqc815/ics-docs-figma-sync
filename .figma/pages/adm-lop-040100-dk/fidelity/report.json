@@ -12,10 +12,10 @@
   "pixels": {
     "width": 1440,
     "height": 810,
-    "mismatched": 1825,
-    "percent": 0.156,
+    "mismatched": 1536,
+    "percent": 0.132,
     "shapePercent": 0.001,
-    "textPercent": 0.908,
+    "textPercent": 0.764,
     "sizeMismatch": false
   },
   "textNodes": [
@@ -24,12 +24,6 @@
       "name": "Label",
       "pixels": 329,
       "percent": 13.7
-    },
-    {
-      "id": "I4056:116105;2245:87914",
-      "name": "Label",
-      "pixels": 312,
-      "percent": 13
     },
     {
       "id": "I4056:116096;2245:87908",
@@ -108,6 +102,12 @@
       "name": "Nhãn trường",
       "pixels": 17,
       "percent": 1.7
+    },
+    {
+      "id": "I4056:116100;2245:87908",
+      "name": "Label",
+      "pixels": 33,
+      "percent": 1.4
     }
   ],
   "regions": [
@@ -441,7 +441,7 @@
     "over": []
   },
   "failures": [],
-  "url": "http://localhost:3108/lop-hoc/cai-dat/thong-tin-dk",
+  "url": "http://localhost:3000/lop-hoc/cai-dat/thong-tin-dk",
   "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
   "consoleErrors": [],
   "rootFound": true

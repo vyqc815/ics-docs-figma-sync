@@ -1,6 +1,6 @@
 # Fidelity: ADM-HV-020600 — Chi tiết học viên / Ghi chú
 
-- URL: `http://localhost:3108/chi-tiet-hoc-vien/ghi-chu`
+- URL: `http://localhost:3000/chi-tiet-hoc-vien/ghi-chu`
 - Verdict: **PASS**
 - Pixels outside text: **0.002%** differ (limit 0.5%); all pixels: 0.075%; inside text boxes: 0.393% (glyph rendering)
 - Boxes: 266/266 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 266, ≤1px: 266, ≤2px: 266, ≤4px: 266, >4px: 0

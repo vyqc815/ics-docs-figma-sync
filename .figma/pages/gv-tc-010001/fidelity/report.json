@@ -1,0 +1,580 @@
+{
+  "pass": true,
+  "thresholds": {
+    "maxPixelDiffPercent": 0.5,
+    "maxBoxDelta": 1,
+    "maxTextBoxDelta": 2.5,
+    "colorThreshold": 0.1,
+    "aaRadius": 1,
+    "subpixel": true,
+    "maxTextNodeDiffPercent": 35
+  },
+  "pixels": {
+    "width": 1440,
+    "height": 866,
+    "mismatched": 922,
+    "percent": 0.074,
+    "shapePercent": 0.026,
+    "textPercent": 0.331,
+    "sizeMismatch": false
+  },
+  "textNodes": [
+    {
+      "id": "6247:61967",
+      "name": "BACKUP_RESOURCE",
+      "pixels": 72,
+      "percent": 1.9
+    },
+    {
+      "id": "6247:62187",
+      "name": "Theo tháng",
+      "pixels": 37,
+      "percent": 1.5
+    },
+    {
+      "id": "I6247:61894;6244:33843;2245:87768",
+      "name": "Label",
+      "pixels": 39,
+      "percent": 1.4
+    },
+    {
+      "id": "6247:61946",
+      "name": "Tiếng Đức 4 Kỹ Năng A1 (v2026-new)",
+      "pixels": 50,
+      "percent": 1.4
+    },
+    {
+      "id": "6247:61992",
+      "name": "Tiếng Đức 4 Kỹ Năng A1 (v2026-new)",
+      "pixels": 50,
+      "percent": 1.4
+    },
+    {
+      "id": "I6247:61810;4019:24078",
+      "name": "Sakumi",
+      "pixels": 26,
+      "percent": 1.3
+    },
+    {
+      "id": "I6247:61894;6244:33849;4885:104460;1971:8814",
+      "name": "Value",
+      "pixels": 3,
+      "percent": 1.2
+    },
+    {
+      "id": "I6247:61947;1350:13172",
+      "name": "6/20 Buổi",
+      "pixels": 15,
+      "percent": 1.2
+    },
+    {
+      "id": "6247:61969",
+      "name": "Tiếng Đức 4 Kỹ Năng A2 (v2026)",
+      "pixels": 45,
+      "percent": 1.2
+    },
+    {
+      "id": "I6247:61970;1350:13172",
+      "name": "6/20 Buổi",
+      "pixels": 12,
+      "percent": 1.1
+    },
+    {
+      "id": "6247:61990",
+      "name": "A1 - TRẢI NGHIỆM - HK1",
+      "pixels": 43,
+      "percent": 1.1
+    },
+    {
+      "id": "I6247:62189;2015:36008",
+      "name": "Value",
+      "pixels": 15,
+      "percent": 1
+    },
+    {
+      "id": "I6247:61993;1350:13172",
+      "name": "6/20 Buổi",
+      "pixels": 11,
+      "percent": 0.9
+    },
+    {
+      "id": "I6247:61999;2245:108222",
+      "name": "C",
+      "pixels": 5,
+      "percent": 0.8
+    },
+    {
+      "id": "I6247:61808;2008:31783",
+      "name": "GV.dacnhan@gmail.com",
+      "pixels": 20,
+      "percent": 0.7
+    }
+  ],
+  "regions": [
+    {
+      "x": 1328,
+      "y": 552,
+      "width": 40,
+      "height": 8,
+      "pixels": 34,
+      "node": {
+        "id": "I6247:62198;6326:1431",
+        "name": "Cell · Thu nhập",
+        "role": "container"
+      }
+    },
+    {
+      "x": 1328,
+      "y": 688,
+      "width": 40,
+      "height": 8,
+      "pixels": 33,
+      "node": {
+        "id": "I6247:62196;6326:24491",
+        "name": "Chip · Thu nhập",
+        "role": "container"
+      }
+    },
+    {
+      "x": 1336,
+      "y": 288,
+      "width": 32,
+      "height": 8,
+      "pixels": 32,
+      "node": {
+        "id": "I6247:62202;6326:1431",
+        "name": "Cell · Thu nhập",
+        "role": "container"
+      }
+    },
+    {
+      "x": 1336,
+      "y": 360,
+      "width": 32,
+      "height": 8,
+      "pixels": 32,
+      "node": {
+        "id": "I6247:62201;6326:1432",
+        "name": "Thu nhập",
+        "role": "text"
+      }
+    },
+    {
+      "x": 1336,
+      "y": 424,
+      "width": 32,
+      "height": 8,
+      "pixels": 32,
+      "node": {
+        "id": "I6247:62200;6326:24491",
+        "name": "Chip · Thu nhập",
+        "role": "container"
+      }
+    },
+    {
+      "x": 1336,
+      "y": 488,
+      "width": 32,
+      "height": 8,
+      "pixels": 32,
+      "node": {
+        "id": "I6247:62199;6326:1431",
+        "name": "Cell · Thu nhập",
+        "role": "container"
+      }
+    },
+    {
+      "x": 1336,
+      "y": 624,
+      "width": 32,
+      "height": 8,
+      "pixels": 32,
+      "node": {
+        "id": "I6247:62197;6326:1432",
+        "name": "Thu nhập",
+        "role": "text"
+      }
+    },
+    {
+      "x": 1336,
+      "y": 752,
+      "width": 32,
+      "height": 8,
+      "pixels": 32,
+      "node": {
+        "id": "I6247:62195;6326:1431",
+        "name": "Cell · Thu nhập",
+        "role": "container"
+      }
+    },
+    {
+      "x": 1336,
+      "y": 160,
+      "width": 32,
+      "height": 8,
+      "pixels": 29,
+      "node": {
+        "id": "I6247:62194;6326:24491",
+        "name": "Chip · Thu nhập",
+        "role": "container"
+      }
+    },
+    {
+      "x": 1184,
+      "y": 240,
+      "width": 16,
+      "height": 16,
+      "pixels": 9,
+      "node": {
+        "id": "I6247:62203;6247:61519;1391:14471",
+        "name": "Group 240218",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 1224,
+      "y": 240,
+      "width": 24,
+      "height": 16,
+      "pixels": 9,
+      "node": {
+        "id": "I6247:62203;6247:61521;1391:14471",
+        "name": "Group 240218",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 1272,
+      "y": 240,
+      "width": 16,
+      "height": 16,
+      "pixels": 9,
+      "node": {
+        "id": "I6247:62203;6326:1434;1391:14471",
+        "name": "Group 240218",
+        "role": "icon"
+      }
+    }
+  ],
+  "boxes": {
+    "measured": 428,
+    "missing": [],
+    "withinThreshold": 428,
+    "buckets": {
+      "≤0.5px": 428,
+      "≤1px": 428,
+      "≤2px": 428,
+      "≤4px": 428,
+      ">4px": 0
+    },
+    "worst": [
+      {
+        "id": "6247:61922",
+        "name": "Mã lớp",
+        "role": "text",
+        "delta": 0.34,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.34,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6247:61930",
+        "name": "Đánh giá",
+        "role": "text",
+        "delta": 0.27,
+        "dx": -0.14,
+        "dy": 0,
+        "dw": 0.27,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6247:61894;6244:33835",
+        "name": "Frame 1171274926",
+        "role": "icon",
+        "delta": 0.02,
+        "dx": 0,
+        "dy": -0.02,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6247:61894;6244:33820",
+        "name": "Left: ICS Logo & Toggle",
+        "role": "container",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": -0.01,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6247:61894;6244:33821",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": -0.01,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6247:61894;6244:33822",
+        "name": "Navigation / Sidebar Menu / Light",
+        "role": "icon",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": -0.01,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6247:61894;6244:33834",
+        "name": "v20.07.2026_17:30",
+        "role": "text",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": -0.01,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6247:61911",
+        "name": "Thẻ chỉ số · Số lớp",
+        "role": "instance",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": -0.01,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6247:61911;3266:53957",
+        "name": "Frame 1171274980",
+        "role": "container",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": -0.01,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6247:61911;3266:53958",
+        "name": "Frame 1171274979",
+        "role": "container",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": -0.01,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6247:61911;3266:53959",
+        "name": "Tiêu đề",
+        "role": "text",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": -0.01,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6247:61911;3266:53996",
+        "name": "Ô biểu tượng",
+        "role": "icon",
+        "delta": 0.01,
+        "dx": -0.01,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6247:61911;3266:54000",
+        "name": "Số liệu",
+        "role": "text",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": -0.01,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6247:61912",
+        "name": "Thẻ chỉ số · Lên kỳ",
+        "role": "instance",
+        "delta": 0.01,
+        "dx": -0.01,
+        "dy": 0,
+        "dw": 0.01,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6247:61912;3266:53957",
+        "name": "Frame 1171274980",
+        "role": "container",
+        "delta": 0.01,
+        "dx": -0.01,
+        "dy": 0,
+        "dw": 0.01,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6247:61912;3266:53958",
+        "name": "Frame 1171274979",
+        "role": "container",
+        "delta": 0.01,
+        "dx": -0.01,
+        "dy": 0,
+        "dw": 0.01,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6247:61912;3266:53959",
+        "name": "Tiêu đề",
+        "role": "text",
+        "delta": 0.01,
+        "dx": -0.01,
+        "dy": 0,
+        "dw": 0.01,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6247:61912;3266:54000",
+        "name": "Số liệu",
+        "role": "text",
+        "delta": 0.01,
+        "dx": -0.01,
+        "dy": 0,
+        "dw": 0.01,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6247:61913",
+        "name": "Thẻ chỉ số · Đi học",
+        "role": "instance",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": -0.01,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6247:61913;3266:53957",
+        "name": "Frame 1171274980",
+        "role": "container",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": -0.01,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6247:61913;3266:53958",
+        "name": "Frame 1171274979",
+        "role": "container",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": -0.01,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6247:61913;3266:53959",
+        "name": "Tiêu đề",
+        "role": "text",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": -0.01,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6247:61913;3266:53996",
+        "name": "Ô biểu tượng",
+        "role": "icon",
+        "delta": 0.01,
+        "dx": -0.01,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6247:61913;3266:54000",
+        "name": "Số liệu",
+        "role": "text",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": -0.01,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6247:61914",
+        "name": "Thẻ chỉ số · BTVN",
+        "role": "instance",
+        "delta": 0.01,
+        "dx": -0.01,
+        "dy": 0,
+        "dw": 0.01,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      }
+    ],
+    "maxDelta": 0.34,
+    "over": []
+  },
+  "failures": [],
+  "url": "http://localhost:3000/trang-chu/thong-ke-theo-thang/chon-t9/2026-gv-tc-010001",
+  "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
+  "consoleErrors": [],
+  "rootFound": true
+}

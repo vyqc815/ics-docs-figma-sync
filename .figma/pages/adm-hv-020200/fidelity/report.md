@@ -1,8 +1,8 @@
 # Fidelity: ADM-HV-020200 — Chi tiết học viên / Danh sách lớp
 
-- URL: `http://localhost:3108/chi-tiet-hoc-vien/danh-sach-lop`
+- URL: `http://localhost:3000/chi-tiet-hoc-vien/danh-sach-lop`
 - Verdict: **PASS**
-- Pixels outside text: **0.006%** differ (limit 0.5%); all pixels: 0.164%; inside text boxes: 1.466% (glyph rendering)
+- Pixels outside text: **0.006%** differ (limit 0.5%); all pixels: 0.144%; inside text boxes: 1.277% (glyph rendering)
 - Boxes: 282/282 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 282, ≤1px: 282, ≤2px: 282, ≤4px: 282, >4px: 0
 
 ## Pixel regions (largest first)
@@ -18,10 +18,6 @@
 
 | Text | Differing |
 | --- | --- |
-| 80% (`I1648:12601;1391:14476`) | 26.4% |
-| 80% (`I1648:12640;1391:14476`) | 26.4% |
-| 0% (`I1648:12620;1308:6706`) | 23% |
-| 0% (`I1648:12659;1308:6706`) | 23% |
 | Số liệu (`I3108:125417;3108:125015`) | 6.5% |
 | Số liệu (`I3108:125431;3108:125015`) | 4.9% |
 | Số liệu (`I3108:125469;3108:125015`) | 4.9% |
@@ -33,6 +29,10 @@
 | Tiếng Trung Trung Cấp (HSK4) (`1648:12654`) | 3.9% |
 | Khoá học (`1648:12579`) | 3.5% |
 | 6/20 Buổi (`I1648:12636;1350:13172`) | 3.5% |
+| 6/20 Buổi (`I1648:12655;1350:13172`) | 3.5% |
+| Số liệu (`I3108:125458;3108:125015`) | 3.4% |
+| 6/20 Buổi (`I1648:12616;1350:13172`) | 3.4% |
+| Đánh giá (`1648:12581`) | 3.3% |
 
 ## Largest box differences
 

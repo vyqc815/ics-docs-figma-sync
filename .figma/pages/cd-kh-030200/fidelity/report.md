@@ -1,6 +1,6 @@
 # Fidelity: CD-KH-030200 — Học kỳ / Bài học
 
-- URL: `http://localhost:3108/hoc-ky/bai-hoc`
+- URL: `http://localhost:3000/hoc-ky/bai-hoc`
 - Verdict: **PASS**
 - Pixels outside text: **0.004%** differ (limit 0.5%); all pixels: 1.236%; inside text boxes: 5.039% (glyph rendering)
 - Boxes: 285/285 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 275, ≤1px: 280, ≤2px: 285, ≤4px: 285, >4px: 0

@@ -5,7 +5,7 @@
 > **Nguồn:** PLS-ICS T8/2026 ›         ├─ HỌC VIÊN › ADM-HV-020100 — Chi tiết học viên / Thông tin cá nhân (`1117:9753`, file `rRVs5HX0kIHffbS0V40djG`)  
 > **Route:** `/chi-tiet-hoc-vien/thong-tin-ca-nhan`  
 > **Khung thiết kế:** 1440 × 845 px  
-> **Xuất lúc:** 2026-11-02T04:07:53.899Z  
+> **Xuất lúc:** 2026-11-03T03:10:52.513Z  
 > **Spec đầy đủ (giá trị chính xác từng node):** `../../../.figma/pages/adm-hv-020100/page-spec.json`
 
 ## 1. Tổng quan
@@ -26,6 +26,7 @@ Nền trang: `linear-gradient(#f8f9fa, #f8f9fa), linear-gradient(#ffffff, #fffff
 
 | Token | Biến CSS | Giá trị | Trỏ tới | Bộ / mode |
 | --- | --- | --- | --- | --- |
+| `bg/surface` | `--bg-surface` | `#ffffff` | color/neutral/white | Theme · Semantic / Light |
 | `bố cục/khoảng cách khối` | `--bo-cuc-khoang-cach-khoi` | `16` | spacing/16 | Number Tokens / Mode 1 |
 | `bố cục/lề hai bên` | `--bo-cuc-le-hai-ben` | `16` | spacing/16 | Number Tokens / Mode 1 |
 | `bố cục/lề trên dưới` | `--bo-cuc-le-tren-duoi` | `24` | spacing/24 | Number Tokens / Mode 1 |
@@ -129,7 +130,7 @@ Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí ·
             - [chữ] “Ghi Chú” — 51×20 [HUG×HUG] · @ (0, 0) flow · Afacad 16/20px 500 #64748b (color/text/secondary) case title · text-align center · no-wrap `I1648:11883;2177:28928`
       - [khối] **Two-Column Main Layout matching Image BG.png** — 1174×391 [FILL×HUG] · @ (0, 52) flow · row gap 20 `1648:11738`
         - [khối] **LEFT COLUMN: Profile Card & Actions** — 280×272 [FIXED×HUG] · @ (0, 0) flow · column gap 16 `1648:11739`
-          - [khối] **Profile Card** — 280×220 [FILL×FIXED] · @ (0, 0) flow · bg #ffffff · radius 16px · border 1px solid #e2e8f0 (color/border/default) · shadow 0 1px 2px 0 rgba(0, 0, 0, 0.05) `1648:11740`
+          - [khối] **Profile Card** — 280×220 [FILL×FIXED] · @ (0, 0) flow · bg #ffffff (bg/surface) · radius 16px · border 1px solid #e2e8f0 (color/border/default) · shadow 0 1px 2px 0 rgba(0, 0, 0, 0.05) `1648:11740`
             - [khối] **Heading 3 - Teacher Name & Code** — 62×23 · @ (109, 152.5) abs · column align CENTER `1648:11741`
               - [chữ] “Dương” — 62×23 [HUG×HUG] · @ (0, 0) flow · Unbounded 15/23px 600 #334155 (color/text/primary) · text-align center · no-wrap `1648:11742`
             - [khối] **Margin** — 28×23 · @ (124.06, 175) abs · column pad 4 0 0 0 `1648:11743`
@@ -147,14 +148,14 @@ Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí ·
               - [chữ] “Lấy lại tài khoản” — 97×19 [HUG×HUG] · @ (19, 8.5) flow · Afacad 15/19px 700 #334155 (color/text/primary) · no-wrap `I1657:10231;1048:1240`
             - [instance] **Atom/Button** ⟨Atom/Button: Label=Cập nhật tài khoản, Type=Primary, Size=Small⟩ — 135×36 [FILL×FIXED] · @ (145, 0) flow · row pad 6 12 6 12 justify CENTER align CENTER · bg #e65100 (color/brand/orange) · radius 6px · border 1px solid #ffffff · shadow 1px 1px 6px 0 rgba(230, 81, 0, 0.35), 0 0 4px 0 rgba(230, 81, 0, 0.05) `1648:11891`
               - [chữ] “Cập nhật tài khoản” — 113×19 [HUG×HUG] · @ (11, 8.5) flow · Afacad 15/19px 700 #ffffff (color/neutral/white) · no-wrap `I1648:11891;1048:1238`
-        - [khối] **RIGHT COLUMN: Detailed Information Form Card** — 874×391 [FILL×HUG] · @ (300, 0) flow · column · bg #ffffff · radius 16px · border 1px solid #e2e8f0 (color/border/default) · shadow 0 1px 2px 0 rgba(0, 0, 0, 0.05) · clip `1648:11761`
+        - [khối] **RIGHT COLUMN: Detailed Information Form Card** — 874×391 [FILL×HUG] · @ (300, 0) flow · column · bg #ffffff (bg/surface) · radius 16px · border 1px solid #e2e8f0 (color/border/default) · shadow 0 1px 2px 0 rgba(0, 0, 0, 0.05) · clip `1648:11761`
           - [khối] **Form Body Content** — 872×389 [FILL×HUG] · @ (1, 1) flow · column gap 16 pad 24 24 24 24 `1648:11762`
             - [khối] **Section 1: Thông tin cá nhân** — 824×341 [FILL×HUG] · @ (24, 24) flow · column gap 16 `1648:11763`
               - [khối] **Row 1: Mã người dùng & Email** — 824×65 [FILL×HUG] · @ (0, 0) flow · row gap 16 justify CENTER `1648:11764`
                 - [khối] **Container** — 404×65 [FILL×HUG] · @ (0, 0) flow · column gap 6 `1648:11765`
                   - [khối] **Label** — 404×19 [FILL×HUG] · @ (0, 0) flow · column `1648:11766`
                     - [chữ] “Mã người dùng” — 404×19 [FILL×HUG] · @ (0, 0) flow · Afacad 15/19px 700 #334155 (color/text/primary) `1648:11767`
-                  - [khối] **Input** — 404×40 [FILL×FIXED] · @ (0, 25) flow · row pad 10 12 10 12 justify CENTER · bg #ffffff · radius 8px · border 1px solid #e2e8f0 (color/border/default) · clip `1648:11768`
+                  - [khối] **Input** — 404×40 [FILL×FIXED] · @ (0, 25) flow · row pad 10 12 10 12 justify CENTER · bg #ffffff (bg/surface) · radius 8px · border 1px solid #e2e8f0 (color/border/default) · clip `1648:11768`
                     - [khối] **Container** — 378×21 [FILL×HUG] · @ (13, 11) flow · column · clip `1648:11769`
                       - [chữ] “TEST” — 378×21 [FILL×HUG] · @ (0, 0) flow · Afacad 17/21px 500 #334155 (color/text/primary) `1648:11770`
                 - [khối] **Container** — 404×65 [FILL×HUG] · @ (420, 0) flow · column gap 6 `1648:11771`
@@ -174,7 +175,7 @@ Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí ·
                   - [khối] **Label** — 404×19 [FILL×HUG] · @ (0, 0) flow · column `1648:11787`
                     - [chữ] “Giới tính” — 404×19 [FILL×HUG] · @ (0, 0) flow · Afacad 15/19px 700 #334155 (color/text/primary) `1648:11788`
                   - [khối] **Container** — 404×40 [FILL×HUG] · @ (0, 25) flow · column `1648:11789`
-                    - [khối] **Options** — 404×40 [FILL×FIXED] · @ (0, 0) flow · row pad 8 8 8 12 justify CENTER align CENTER · bg #ffffff · radius 8px · shadow 1px 1px 6px 0 rgba(0, 0, 0, 0.15), 0 0 5px 0 rgba(0, 0, 0, 0.05) `1648:11790`
+                    - [khối] **Options** — 404×40 [FILL×FIXED] · @ (0, 0) flow · row pad 8 8 8 12 justify CENTER align CENTER · bg #ffffff (bg/surface) · radius 8px · shadow 1px 1px 6px 0 rgba(0, 0, 0, 0.15), 0 0 5px 0 rgba(0, 0, 0, 0.05) `1648:11790`
                       - [khối] **image clip** — 404×40 · @ (0, 0) abs · column pad 10 8 10 267 justify CENTER · clip · trống `1648:11791`
                       - [chữ] “Không xác định” — 356×24 [FILL×FILL] · @ (12, 8) flow · Afacad 17/21px 500 #334155 (color/text/primary) `1648:11792`
                       - [icon] **SVG** — 28×28 · @ (368, 6) flow · file /figma/assets/4a3db3ce7ffa.svg `1648:11793`
@@ -182,7 +183,7 @@ Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí ·
                   - [khối] **Label** — 404×19 [FILL×HUG] · @ (0, 0) flow · column `1648:11796`
                     - [chữ] “Ngày sinh” — 404×19 [FILL×HUG] · @ (0, 0) flow · Afacad 15/19px 700 #334155 (color/text/primary) `1648:11797`
                   - [khối] **Container** — 404×40 [FILL×HUG] · @ (0, 25) flow · column `1648:11798`
-                    - [khối] **Options** — 404×40 [FILL×FIXED] · @ (0, 0) flow · row pad 8 8 8 12 justify CENTER align CENTER · bg #ffffff · radius 8px · shadow 1px 1px 6px 0 rgba(0, 0, 0, 0.15), 0 0 5px 0 rgba(0, 0, 0, 0.05) `1648:11799`
+                    - [khối] **Options** — 404×40 [FILL×FIXED] · @ (0, 0) flow · row pad 8 8 8 12 justify CENTER align CENTER · bg #ffffff (bg/surface) · radius 8px · shadow 1px 1px 6px 0 rgba(0, 0, 0, 0.15), 0 0 5px 0 rgba(0, 0, 0, 0.05) `1648:11799`
                       - [khối] **image clip** — 404×40 · @ (0, 0) abs · column pad 10 8 10 267 justify CENTER · clip · trống `1648:11800`
                       - [chữ] “Chọn ngày” — 356×24 [FILL×FILL] · @ (12, 8) flow · Afacad 17/21px 500 #334155 (color/text/primary) `1648:11801`
                       - [icon] **SVG** — 28×28 · @ (368, 6) flow · file /figma/assets/a841fe2bf2da.svg `1648:11802`
@@ -190,19 +191,19 @@ Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí ·
                 - [khối] **Container** — 404×65 [FILL×HUG] · @ (0, 0) flow · column gap 6 `1648:11805`
                   - [khối] **Label** — 404×19 [FILL×HUG] · @ (0, 0) flow · column `1648:11806`
                     - [chữ] “Họ và tên” — 404×19 [FILL×HUG] · @ (0, 0) flow · Afacad 15/19px 700 #334155 (color/text/primary) `1648:11807`
-                  - [khối] **Input** — 404×40 [FILL×FIXED] · @ (0, 25) flow · row pad 10 12 10 12 justify CENTER · bg #ffffff · radius 8px · border 1px solid #e2e8f0 (color/border/default) · clip `1648:11808`
+                  - [khối] **Input** — 404×40 [FILL×FIXED] · @ (0, 25) flow · row pad 10 12 10 12 justify CENTER · bg #ffffff (bg/surface) · radius 8px · border 1px solid #e2e8f0 (color/border/default) · clip `1648:11808`
                     - [khối] **Container** — 378×21 [FILL×HUG] · @ (13, 11) flow · column · clip `1648:11809`
                       - [chữ] “Dương” — 378×21 [FILL×HUG] · @ (0, 0) flow · Afacad 17/21px 500 #334155 (color/text/primary) `1648:11810`
                 - [khối] **Container** — 404×65 [FILL×HUG] · @ (420, 0) flow · column gap 6 `1648:11811`
                   - [khối] **Label** — 404×19 [FILL×HUG] · @ (0, 0) flow · column `1648:11812`
                     - [chữ] “Số điện thoại” — 404×19 [FILL×HUG] · @ (0, 0) flow · Afacad 15/19px 700 #334155 (color/text/primary) `1648:11813`
-                  - [khối] **Input** — 404×40 [FILL×FIXED] · @ (0, 25) flow · row pad 10 12 10 12 justify CENTER · bg #ffffff · radius 8px · border 1px solid #e2e8f0 (color/border/default) · clip `1648:11814`
+                  - [khối] **Input** — 404×40 [FILL×FIXED] · @ (0, 25) flow · row pad 10 12 10 12 justify CENTER · bg #ffffff (bg/surface) · radius 8px · border 1px solid #e2e8f0 (color/border/default) · clip `1648:11814`
                     - [khối] **Container** — 378×21 [FILL×HUG] · @ (13, 11) flow · column · clip `1648:11815`
                       - [chữ] “1” — 378×21 [FILL×HUG] · @ (0, 0) flow · Afacad 17/21px 500 #334155 (color/text/primary) `1648:11816`
               - [khối] **Row 4: Ghi ch** — 824×98 [FILL×HUG] · @ (0, 243) flow · column gap 6 `1648:11838`
                 - [khối] **Label** — 824×19 [FILL×HUG] · @ (0, 0) flow · column `1648:11839`
                   - [chữ] “Ghi chú” — 824×19 [FILL×HUG] · @ (0, 0) flow · Afacad 15/19px 700 #334155 (color/text/primary) `1648:11840`
-                - [khối] **Textarea** — 824×73 [FILL×HUG] · @ (0, 25) flow · row pad 8 12 42 12 justify CENTER · bg #ffffff · radius 8px · border 1px solid #e2e8f0 (color/border/default) · clip `1648:11841`
+                - [khối] **Textarea** — 824×73 [FILL×HUG] · @ (0, 25) flow · row pad 8 12 42 12 justify CENTER · bg #ffffff (bg/surface) · radius 8px · border 1px solid #e2e8f0 (color/border/default) · clip `1648:11841`
                   - [khối] **Container** — 798×21 [FILL×HUG] · @ (13, 9) flow · column `1648:11842`
                     - [chữ] “Nhập ghi chú vào đây” — 798×21 [FILL×HUG] · @ (0, 0) flow · Afacad 17/21px 400 #cccccc (color/text/placeholder) `1648:11843`
   - [khối] **Header** — 1206×64 · @ (234, 0) abs · clip `2223:83735`

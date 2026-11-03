@@ -5,7 +5,7 @@
 > **Nguồn:** PLS-ICS T8/2026 ›             └─ CUỘC HỌP › GV-LOP-070100 — Chi tiết lớp / Cuộc họp / Trống (`4333:13911`, file `rRVs5HX0kIHffbS0V40djG`)  
 > **Route:** `/chi-tiet-lop/cuoc-hop/trong`  
 > **Khung thiết kế:** 1440 × 810 px (cắt phần tràn ra ngoài khung)  
-> **Xuất lúc:** 2026-11-02T03:54:37.127Z  
+> **Xuất lúc:** 2026-11-03T01:09:59.805Z  
 > **Spec đầy đủ (giá trị chính xác từng node):** `../../../../.figma/pages/gv-lop-070100/page-spec.json`
 
 ## 1. Tổng quan

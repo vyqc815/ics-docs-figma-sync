@@ -1,0 +1,435 @@
+{
+  "pass": true,
+  "thresholds": {
+    "maxPixelDiffPercent": 0.5,
+    "maxBoxDelta": 1,
+    "maxTextBoxDelta": 2.5,
+    "colorThreshold": 0.1,
+    "aaRadius": 1,
+    "subpixel": true,
+    "maxTextNodeDiffPercent": 35
+  },
+  "pixels": {
+    "width": 560,
+    "height": 422,
+    "mismatched": 234,
+    "percent": 0.099,
+    "shapePercent": 0,
+    "textPercent": 0.392,
+    "sizeMismatch": false
+  },
+  "textNodes": [
+    {
+      "id": "I5672:75350;1048:1255",
+      "name": "Badge",
+      "pixels": 52,
+      "percent": 3.2
+    },
+    {
+      "id": "5672:75352",
+      "name": "Câu hỏi về phiên âm nhưng gắn Kiến thức: Từ vựng",
+      "pixels": 130,
+      "percent": 2.1
+    },
+    {
+      "id": "I5672:75329;1048:1249",
+      "name": "Badge",
+      "pixels": 13,
+      "percent": 1.9
+    },
+    {
+      "id": "I5672:75343;1048:1251",
+      "name": "Badge",
+      "pixels": 12,
+      "percent": 1.1
+    },
+    {
+      "id": "I5672:75336;1048:1251",
+      "name": "Badge",
+      "pixels": 13,
+      "percent": 0.9
+    },
+    {
+      "id": "I5672:75319;2514:153361;1048:1232",
+      "name": "Button",
+      "pixels": 8,
+      "percent": 0.9
+    },
+    {
+      "id": "5672:75338",
+      "name": "Câu Trắc nghiệm chưa chọn đáp án đúng",
+      "pixels": 5,
+      "percent": 0.1
+    },
+    {
+      "id": "I5672:75316;2514:153348",
+      "name": "Title",
+      "pixels": 0,
+      "percent": 0
+    },
+    {
+      "id": "5672:75328",
+      "name": "Câu 02 & 07",
+      "pixels": 0,
+      "percent": 0
+    },
+    {
+      "id": "5672:75331",
+      "name": "Cùng loại Trắc nghiệm, nội dung gần giống nhau",
+      "pixels": 0,
+      "percent": 0
+    },
+    {
+      "id": "5672:75335",
+      "name": "Câu 04",
+      "pixels": 0,
+      "percent": 0
+    },
+    {
+      "id": "5672:75342",
+      "name": "Câu 05",
+      "pixels": 0,
+      "percent": 0
+    },
+    {
+      "id": "5672:75345",
+      "name": "“xiexie” nên là “xièxie”",
+      "pixels": 1,
+      "percent": 0
+    },
+    {
+      "id": "5672:75349",
+      "name": "Câu 09",
+      "pixels": 0,
+      "percent": 0
+    },
+    {
+      "id": "5672:75355",
+      "name": "Bấm một vấn đề để cuộn tới câu tương ứng. AI chỉ báo, không tự sửa hay xoá.",
+      "pixels": 0,
+      "percent": 0
+    }
+  ],
+  "regions": [],
+  "boxes": {
+    "measured": 33,
+    "missing": [],
+    "withinThreshold": 33,
+    "buckets": {
+      "≤0.5px": 30,
+      "≤1px": 33,
+      "≤2px": 33,
+      "≤4px": 33,
+      ">4px": 0
+    },
+    "worst": [
+      {
+        "id": "5672:75350",
+        "name": "Atom/Badge",
+        "role": "instance",
+        "delta": 0.78,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.78,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5672:75350;1048:1255",
+        "name": "Badge",
+        "role": "text",
+        "delta": 0.78,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.78,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5672:75352",
+        "name": "Câu hỏi về phiên âm nhưng gắn Kiến thức: Từ vựng",
+        "role": "text",
+        "delta": 0.78,
+        "dx": 0.78,
+        "dy": 0,
+        "dw": -0.78,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5672:75316",
+        "name": "Popup/Header",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5672:75316;2514:153347",
+        "name": "Tiêu đề",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5672:75316;2711:67901",
+        "name": "Title Row",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5672:75316;2514:153348",
+        "name": "Title",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5672:75317",
+        "name": "Body",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5672:75327",
+        "name": "Vấn đề Câu 02 & 07",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5672:75328",
+        "name": "Câu 02 & 07",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5672:75329",
+        "name": "Atom/Badge",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5672:75329;1048:1249",
+        "name": "Badge",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5672:75331",
+        "name": "Cùng loại Trắc nghiệm, nội dung gần giống nhau",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5672:75332",
+        "name": "Action Icon",
+        "role": "icon",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5672:75334",
+        "name": "Vấn đề Câu 04",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5672:75335",
+        "name": "Câu 04",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5672:75336",
+        "name": "Atom/Badge",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5672:75336;1048:1251",
+        "name": "Badge",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5672:75338",
+        "name": "Câu Trắc nghiệm chưa chọn đáp án đúng",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5672:75339",
+        "name": "Action Icon",
+        "role": "icon",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5672:75341",
+        "name": "Vấn đề Câu 05",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5672:75342",
+        "name": "Câu 05",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5672:75343",
+        "name": "Atom/Badge",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5672:75343;1048:1251",
+        "name": "Badge",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5672:75345",
+        "name": "“xiexie” nên là “xièxie”",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      }
+    ],
+    "maxDelta": 0.78,
+    "over": []
+  },
+  "failures": [],
+  "url": "http://localhost:3000/bai-tap-ve-nha/frames/cd-kh-060150",
+  "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
+  "consoleErrors": [],
+  "rootFound": true
+}

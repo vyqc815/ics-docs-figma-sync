@@ -1,6 +1,6 @@
 # Fidelity: GV-LOP-110200 — Chi tiết lớp / Thông tin / KPI
 
-- URL: `http://localhost:3108/chi-tiet-lop/thong-tin/kpi`
+- URL: `http://localhost:3000/chi-tiet-lop/thong-tin/kpi`
 - Verdict: **PASS**
 - Pixels outside text: **0%** differ (limit 0.5%); all pixels: 0.046%; inside text boxes: 0.84% (glyph rendering)
 - Boxes: 132/132 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 130, ≤1px: 132, ≤2px: 132, ≤4px: 132, >4px: 0

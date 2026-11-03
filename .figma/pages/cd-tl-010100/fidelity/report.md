@@ -1,6 +1,6 @@
 # Fidelity: CD-TL-010100 — Tools / Giọng đọc / Hội thoại
 
-- URL: `http://localhost:3108/tools/giong-doc/hoi-thoai`
+- URL: `http://localhost:3000/tools/giong-doc/hoi-thoai`
 - Verdict: **FAIL**
 - Pixels outside text: **0%** differ (limit 0.5%); all pixels: 0.06%; inside text boxes: 0.445% (glyph rendering)
 - Boxes: 170/178 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 161, ≤1px: 168, ≤2px: 170, ≤4px: 178, >4px: 0

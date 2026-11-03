@@ -1,0 +1,22 @@
+{
+  "route": "/chi-tiet-lop/bai-tap-va-kiem-tra/btvn-bai-hoc-chua-mo",
+  "pageFile": "components/figma/gv-lop-040110/index.tsx",
+  "docFile": "docs/pages/chi-tiet-lop/bai-tap-va-kiem-tra/btvn-bai-hoc-chua-mo.md",
+  "sections": [
+    {
+      "nodeId": "5425:275049",
+      "component": "Body",
+      "file": "components/figma/gv-lop-040110/Body.tsx"
+    },
+    {
+      "nodeId": "5425:275277",
+      "component": "Header79",
+      "file": "components/figma/shared/Header79.tsx"
+    },
+    {
+      "nodeId": "5425:275419",
+      "component": "SidebarMenuTeacher",
+      "file": "components/figma/gv-lop-040110/SidebarMenuTeacher.tsx"
+    }
+  ]
+}

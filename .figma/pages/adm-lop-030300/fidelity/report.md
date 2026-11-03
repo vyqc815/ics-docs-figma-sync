@@ -1,8 +1,8 @@
 # Fidelity: ADM-LOP-030300 — Lớp học / Bài học / Nội dung
 
-- URL: `http://localhost:3108/lop-hoc/bai-hoc/noi-dung`
+- URL: `http://localhost:3000/lop-hoc/bai-hoc/noi-dung`
 - Verdict: **PASS**
-- Pixels outside text: **0.001%** differ (limit 0.5%); all pixels: 0.671%; inside text boxes: 2.34% (glyph rendering)
+- Pixels outside text: **0.001%** differ (limit 0.5%); all pixels: 0.649%; inside text boxes: 2.264% (glyph rendering)
 - Boxes: 250/250 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 249, ≤1px: 249, ≤2px: 249, ≤4px: 250, >4px: 0
 
 ## Pixel regions (largest first)
@@ -16,10 +16,6 @@
 
 | Text | Differing |
 | --- | --- |
-| 100% (`I3497:65572;1308:6749`) | 24.7% |
-| 100% (`I3497:65573;1308:6749`) | 24.7% |
-| 100% (`I3497:65585;1308:6749`) | 24.7% |
-| 100% (`I3497:65586;1308:6749`) | 24.7% |
 | ÔN TẬP: Giữa Kỳ 1 (`3497:65459`) | 13.1% |
 | Label (`I4915:224977;4901:206599;2245:87908`) | 8.4% |
 | [10P] (`3497:67350`) | 7.5% |
@@ -31,6 +27,10 @@
 | [20P] (`3497:67380`) | 6.5% |
 | [15P] (`3497:67410`) | 6.1% |
 | Label (`I4915:224977;4901:206597;2245:87908`) | 5.9% |
+| 3. [OT] Kiến thức 2 (`3497:67379`) | 5.7% |
+| 2. [OT] Kiến thức 1 (`3497:67362`) | 5.4% |
+| - GV hướng dẫn HV luyện đọc các cụm pinyin và mẫu câu pinyin (`3497:67370`) | 5.3% |
+| 5. [OT] Mini test (`3497:67409`) | 5.2% |
 
 ## Largest box differences
 

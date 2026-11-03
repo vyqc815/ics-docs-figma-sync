@@ -1,0 +1,520 @@
+{
+  "pass": true,
+  "thresholds": {
+    "maxPixelDiffPercent": 0.5,
+    "maxBoxDelta": 1,
+    "maxTextBoxDelta": 2.5,
+    "colorThreshold": 0.1,
+    "aaRadius": 1,
+    "subpixel": true,
+    "maxTextNodeDiffPercent": 35
+  },
+  "pixels": {
+    "width": 1440,
+    "height": 1823,
+    "mismatched": 3287,
+    "percent": 0.125,
+    "shapePercent": 0.014,
+    "textPercent": 0.61,
+    "sizeMismatch": false
+  },
+  "textNodes": [
+    {
+      "id": "I5757:91593;2245:87908",
+      "name": "Label",
+      "pixels": 205,
+      "percent": 8.5
+    },
+    {
+      "id": "I5757:91597;2245:87914",
+      "name": "Label",
+      "pixels": 207,
+      "percent": 5.1
+    },
+    {
+      "id": "I5757:91598;2245:87908",
+      "name": "Label",
+      "pixels": 104,
+      "percent": 4.9
+    },
+    {
+      "id": "I5757:91594;689:15190",
+      "name": "Label",
+      "pixels": 54,
+      "percent": 4.6
+    },
+    {
+      "id": "I5757:91603;689:15190",
+      "name": "Label",
+      "pixels": 42,
+      "percent": 3.9
+    },
+    {
+      "id": "I5757:91599;689:15190",
+      "name": "Label",
+      "pixels": 38,
+      "percent": 3.6
+    },
+    {
+      "id": "5756:86123",
+      "name": "MINITEST 5 - PERSÖNLICHE DATEN",
+      "pixels": 301,
+      "percent": 3.2
+    },
+    {
+      "id": "I5757:91605;2245:87908",
+      "name": "Label",
+      "pixels": 60,
+      "percent": 2.8
+    },
+    {
+      "id": "I5757:91601;2245:87908",
+      "name": "Label",
+      "pixels": 58,
+      "percent": 2.7
+    },
+    {
+      "id": "5756:86146",
+      "name": "Hiện Tên",
+      "pixels": 27,
+      "percent": 2.5
+    },
+    {
+      "id": "5756:86178",
+      "name": "Ich heiße Phương Nga. Ich komme aus Vietnam. Wohne in Hanoi.",
+      "pixels": 378,
+      "percent": 2.4
+    },
+    {
+      "id": "I5756:86157;811:10098",
+      "name": "Value",
+      "pixels": 5,
+      "percent": 2.3
+    },
+    {
+      "id": "5756:86143",
+      "name": "Chưa Chấm",
+      "pixels": 34,
+      "percent": 2.2
+    },
+    {
+      "id": "I5757:91606;2245:87908",
+      "name": "Label",
+      "pixels": 83,
+      "percent": 2.1
+    },
+    {
+      "id": "5756:86271",
+      "name": "Ich heiße Dang Thuy. Ich komme aus Vietnam. Ich wohne in Hanoi.",
+      "pixels": 304,
+      "percent": 2
+    }
+  ],
+  "regions": [
+    {
+      "x": 1184,
+      "y": 544,
+      "width": 80,
+      "height": 32,
+      "pixels": 166,
+      "node": {
+        "id": "I5756:86329;1048:1247",
+        "name": "Badge",
+        "role": "text"
+      }
+    },
+    {
+      "x": 1344,
+      "y": 376,
+      "width": 48,
+      "height": 24,
+      "pixels": 44,
+      "node": {
+        "id": "I5756:86312;1391:14019",
+        "name": "Group 240218",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 1344,
+      "y": 272,
+      "width": 48,
+      "height": 24,
+      "pixels": 43,
+      "node": {
+        "id": "I5756:86302;1391:14019",
+        "name": "Group 240218",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 1344,
+      "y": 784,
+      "width": 48,
+      "height": 24,
+      "pixels": 43,
+      "node": {
+        "id": "I5756:86350;1391:14019",
+        "name": "Group 240218",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 1344,
+      "y": 480,
+      "width": 48,
+      "height": 16,
+      "pixels": 42,
+      "node": {
+        "id": "I5756:86322;1391:14019",
+        "name": "Group 240218",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 1352,
+      "y": 992,
+      "width": 40,
+      "height": 16,
+      "pixels": 25,
+      "node": {
+        "id": "I5756:86369;1308:6702",
+        "name": "Group 240218",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 1360,
+      "y": 960,
+      "width": 24,
+      "height": 16,
+      "pixels": 8,
+      "node": {
+        "id": "I5756:86369;1308:6702",
+        "name": "Group 240218",
+        "role": "icon"
+      }
+    }
+  ],
+  "boxes": {
+    "measured": 441,
+    "missing": [],
+    "withinThreshold": 441,
+    "buckets": {
+      "≤0.5px": 435,
+      "≤1px": 441,
+      "≤2px": 441,
+      "≤4px": 441,
+      ">4px": 0
+    },
+    "worst": [
+      {
+        "id": "5756:86121",
+        "name": "Tiêu đề",
+        "role": "container",
+        "delta": 0.58,
+        "dx": 0,
+        "dy": 0,
+        "dw": -0.58,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5756:86124",
+        "name": "Đã chấm và sửa bài",
+        "role": "container",
+        "delta": 0.58,
+        "dx": -0.58,
+        "dy": 0,
+        "dw": 0.58,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5756:86125",
+        "name": "Atom/Button",
+        "role": "instance",
+        "delta": 0.58,
+        "dx": -0.58,
+        "dy": 0,
+        "dw": 0.58,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5756:86125;1048:1230",
+        "name": "Button",
+        "role": "text",
+        "delta": 0.58,
+        "dx": -0.58,
+        "dy": 0,
+        "dw": 0.58,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5757:91603;689:15189",
+        "name": "Content",
+        "role": "container",
+        "delta": 0.55,
+        "dx": 0,
+        "dy": 0,
+        "dw": -0.55,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5757:91603;689:15190",
+        "name": "Label",
+        "role": "text",
+        "delta": 0.55,
+        "dx": 0,
+        "dy": 0,
+        "dw": -0.55,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5756:86179",
+        "name": "Chú thích",
+        "role": "container",
+        "delta": 0.5,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.5,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5756:86182",
+        "name": "Gạch đỏ = AI phát hiện lỗi ngữ pháp / chính tả, giáo viên tự quyết định",
+        "role": "text",
+        "delta": 0.5,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.5,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5756:86226",
+        "name": "Chú thích",
+        "role": "container",
+        "delta": 0.5,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.5,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5756:86229",
+        "name": "Gạch đỏ = AI phát hiện lỗi ngữ pháp / chính tả, giáo viên tự quyết định",
+        "role": "text",
+        "delta": 0.5,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.5,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5757:91594;689:15189",
+        "name": "Content",
+        "role": "container",
+        "delta": 0.47,
+        "dx": 0,
+        "dy": 0,
+        "dw": -0.47,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5757:91594;689:15190",
+        "name": "Label",
+        "role": "text",
+        "delta": 0.47,
+        "dx": 0,
+        "dy": 0,
+        "dw": -0.47,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5756:86141",
+        "name": "Chưa Chấm",
+        "role": "container",
+        "delta": 0.38,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.38,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5756:86143",
+        "name": "Chưa Chấm",
+        "role": "text",
+        "delta": 0.38,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.38,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5756:86144",
+        "name": "Hiện Tên",
+        "role": "container",
+        "delta": 0.38,
+        "dx": 0.38,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5756:86145",
+        "name": "Checkbox",
+        "role": "icon",
+        "delta": 0.38,
+        "dx": 0.38,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5756:86146",
+        "name": "Hiện Tên",
+        "role": "text",
+        "delta": 0.38,
+        "dx": 0.38,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5756:86147",
+        "name": "sp",
+        "role": "container",
+        "delta": 0.38,
+        "dx": 0.38,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5756:86148",
+        "name": "DD/Molecule/Trigger",
+        "role": "instance",
+        "delta": 0.38,
+        "dx": 0.38,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5756:86148;2015:36007",
+        "name": "Content",
+        "role": "container",
+        "delta": 0.38,
+        "dx": 0.38,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5756:86148;2015:36008",
+        "name": "Value",
+        "role": "text",
+        "delta": 0.38,
+        "dx": 0.38,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5756:86148;2015:36012",
+        "name": "Chevron",
+        "role": "icon",
+        "delta": 0.38,
+        "dx": 0.38,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "5756:86149",
+        "name": "3 học viên đã nộp",
+        "role": "text",
+        "delta": 0.38,
+        "dx": 0.38,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5757:91599;689:15189",
+        "name": "Content",
+        "role": "container",
+        "delta": 0.14,
+        "dx": 0,
+        "dy": 0,
+        "dw": -0.14,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I5757:91599;689:15190",
+        "name": "Label",
+        "role": "text",
+        "delta": 0.14,
+        "dx": 0,
+        "dy": 0,
+        "dw": -0.14,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      }
+    ],
+    "maxDelta": 0.58,
+    "over": []
+  },
+  "failures": [],
+  "url": "http://localhost:3000/chi-tiet-lop/bai-tap-va-kiem-tra/man-cham-bai-viet-gv-cham-ai-goi-y-dk",
+  "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
+  "consoleErrors": [],
+  "rootFound": true
+}

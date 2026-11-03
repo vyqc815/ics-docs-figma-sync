@@ -1,6 +1,6 @@
 # Fidelity: GV-LS-010000 — Lịch sử & lương / Buổi dạy
 
-- URL: `http://localhost:3108/lich-su-luong/buoi-day`
+- URL: `http://localhost:3000/lich-su-luong/buoi-day`
 - Verdict: **PASS**
 - Pixels outside text: **0%** differ (limit 0.5%); all pixels: 0.115%; inside text boxes: 0.739% (glyph rendering)
 - Boxes: 413/413 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 410, ≤1px: 412, ≤2px: 413, ≤4px: 413, >4px: 0

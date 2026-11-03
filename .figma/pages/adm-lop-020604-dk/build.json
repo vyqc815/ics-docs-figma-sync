@@ -1,0 +1,30 @@
+{
+  "route": "/chi-tiet-lop-hoc/tieu-chuan-lop/giao-vien/trong-dk",
+  "pageFile": "components/figma/adm-lop-020604-dk/index.tsx",
+  "docFile": "docs/pages/chi-tiet-lop-hoc/tieu-chuan-lop/giao-vien/trong-dk.md",
+  "sections": [
+    {
+      "nodeId": "4056:113542",
+      "component": "Body6",
+      "file": "components/figma/shared/Body6.tsx"
+    },
+    {
+      "nodeId": "4056:113543",
+      "component": "Maincontent",
+      "file": "components/figma/adm-lop-020604-dk/Maincontent.tsx"
+    },
+    {
+      "nodeId": "4056:113553",
+      "component": "Header32",
+      "file": "components/figma/shared/Header32.tsx"
+    },
+    {
+      "nodeId": "4056:113602",
+      "component": "SidebarRail",
+      "file": "components/figma/adm-lop-020604-dk/SidebarRail.tsx"
+    }
+  ],
+  "idAlias": {
+    "4056:113542": "769:37127"
+  }
+}

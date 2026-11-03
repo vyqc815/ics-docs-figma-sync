@@ -1,0 +1,24 @@
+{
+  "route": "/hoa-don/popup-ho-so-hoc-vien/ghi-chu/co-ghi-chu-binh-luan",
+  "pageFile": "components/figma/adm-hd-010225/index.tsx",
+  "docFile": "docs/pages/hoa-don/popup-ho-so-hoc-vien/ghi-chu/co-ghi-chu-binh-luan.md",
+  "sections": [
+    {
+      "nodeId": "3058:111487",
+      "component": "PopupHeader3",
+      "file": "components/figma/shared/PopupHeader3.tsx"
+    },
+    {
+      "nodeId": "3058:111488",
+      "component": "Body",
+      "file": "components/figma/adm-hd-010225/Body.tsx"
+    }
+  ],
+  "idAlias": {
+    "3058:111487": "2731:75801",
+    "I3058:111487;2514:153340": "I2731:75801;2514:153340",
+    "I3058:111487;2711:67900": "I2731:75801;2711:67900",
+    "I3058:111487;2514:153341": "I2731:75801;2514:153341",
+    "I3058:111487;2514:153342": "I2731:75801;2514:153342"
+  }
+}

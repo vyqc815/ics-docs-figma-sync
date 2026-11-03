@@ -5,7 +5,7 @@
 > **Nguồn:** PLS-ICS T8/2026 ›     ├─ LỊCH HỌP › SP-LHP-020000 — Lịch họp / Dạng bảng (`3857:79450`, file `rRVs5HX0kIHffbS0V40djG`)  
 > **Route:** `/lich-hop/dang-bang`  
 > **Khung thiết kế:** 1440 × 1205 px  
-> **Xuất lúc:** 2026-11-02T03:54:00.166Z  
+> **Xuất lúc:** 2026-11-03T01:09:27.083Z  
 > **Spec đầy đủ (giá trị chính xác từng node):** `../../../.figma/pages/sp-lhp-020000/page-spec.json`
 
 ## 1. Tổng quan
@@ -25,7 +25,11 @@ Nền trang: `#f8fafc`.
 
 | Token | Biến CSS | Giá trị | Trỏ tới | Bộ / mode |
 | --- | --- | --- | --- | --- |
+| `bg/canvas` | `--bg-canvas` | `#f8fafc` | color/extended/f8fafc | Theme · Semantic / Light |
+| `bg/subtle` | `--bg-subtle` | `#f1f5f9` | color/surface/input | Theme · Semantic / Light |
+| `bg/surface` | `--bg-surface` | `#ffffff` | color/neutral/white | Theme · Semantic / Light |
 | `bố cục/lề trên dưới` | `--bo-cuc-le-tren-duoi` | `24` | spacing/24 | Number Tokens / Mode 1 |
+| `border/default` | `--border-default` | `#e2e8f0` | color/border/default | Theme · Semantic / Light |
 | `color/border/default` | `--color-border-default` | `#e2e8f0` |  | Color Tokens / Light |
 | `color/brand/orange` | `--color-brand-orange` | `#e65100` |  | Color Tokens / Light |
 | `color/neutral/white` | `--color-neutral-white` | `#ffffff` |  | Color Tokens / Light |
@@ -35,6 +39,9 @@ Nền trang: `#f8fafc`.
 | `radius/8` | `--radius-8` | `8` |  | Number Tokens / Mode 1 |
 | `radius/full` | `--radius-full` | `9999` |  | Number Tokens / Mode 1 |
 | `spacing/8` | `--spacing-8` | `8` |  | Number Tokens / Mode 1 |
+| `text/on-brand` | `--text-on-brand` | `#ffffff` | color/neutral/white | Theme · Semantic / Light |
+| `text/primary` | `--text-primary` | `#334155` | color/text/primary | Theme · Semantic / Light |
+| `text/secondary` | `--text-secondary` | `#64748b` | color/text/secondary | Theme · Semantic / Light |
 
 **Style Figma đang dùng:**
 
@@ -67,16 +74,16 @@ Nền trang: `#f8fafc`.
 
 | Style | Font family | Cỡ / line-height | Độ đậm | Letter-spacing | Màu | Số lần | Ví dụ |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| `Body/23/Bold` | Afacad | 23 / 29px | 700 | 0 | #334155 | 6 | “26” |
+| `Body/23/Bold` | Afacad | 23 / 29px | 700 | 0 | #334155 (text/primary) | 6 | “26” |
 | — | Unbounded | 17 / 26px | 600 · case title | 0 | #334155 (color/text/primary) | 1 | “Danh sách cuộc họp” |
-| `Body/17/Bold` | Afacad | 17 / 21px | 700 | 0 | #ffffff | 1 | “28” |
+| `Body/17/Bold` | Afacad | 17 / 21px | 700 | 0 | #ffffff (text/on-brand) | 1 | “28” |
 | — | Afacad | 16 / 20px | 700 | 0 | #334155 (color/text/primary) | 4 | “[Trước Buổi 10] Hướng dẫn luyện nghe - …” |
-| `Label/15/Bold` | Afacad | 15 / 19px | 700 · case upper | 0 | #64748b | 7 | “TH 2” |
+| `Label/15/Bold` | Afacad | 15 / 19px | 700 · case upper | 0 | #64748b (text/secondary) | 7 | “TH 2” |
 | `Body/15/Medium` | Afacad | 15 / 19px | 500 | 0 | #334155 (color/text/primary) | 2 | “Trạng thái” |
 | `Body/15/Medium` | Afacad | 15 / 19px | 500 | 0 | #e65100 (color/brand/orange) | 1 | “Người tham gia” |
 | `Body/15/Medium` | Afacad | 15 / 19px | 500 | 0 | #1f2937 | 1 | “26.01.2026 - 01.02.2026” |
 | `Body/15/SemiBold` | Afacad | 15 / 19px | 600 | 0 | #e65100 (color/brand/orange) | 1 | “Hôm nay” |
-| `Body/14/Medium` | Afacad | 14 / 18px | 500 | 0 | #64748b | 16 | “08:00” |
+| `Body/14/Medium` | Afacad | 14 / 18px | 500 | 0 | #64748b (text/secondary) | 16 | “08:00” |
 | — | Afacad | 14 / 18px | 500 | 0 | #334155 (color/text/primary) | 5 | “09:00” |
 | `Body/14/Medium · Title` | Afacad | 14 / 18px | 500 · case title | 0 | #3d3d3d | 4 | “Lê Huỳnh Thơ +1” |
 | `Body/13/Bold` | Afacad | 13 / 16px | 700 | 0 | #d8ac1d | 1 | “PTL” |
@@ -175,7 +182,7 @@ Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí ·
             - [khối] **Content** — 56×19 [HUG×HUG] · @ (13, 5.5) flow · row align CENTER · clip `I3857:79594;2015:36007`
               - [chữ] “Thời gian” — 56×19 [HUG×HUG] · @ (0, 0) flow · Afacad 15/19px 500 #334155 (color/text/primary) · no-wrap `I3857:79594;2015:36008`
             - [icon] **Chevron** ⟨Action Icon: Icon=Chevron Down, Size=16⟩ — 16×16 · @ (75, 7) flow · file /figma/assets/3fd3393aaf58.svg `I3857:79594;2015:36012`
-          - [khối] **Switch · Chế độ xem** — 56×30 [HUG×HUG] · @ (388, 0) flow · row gap 2 pad 3 3 3 3 align CENTER · bg #f1f5f9 · radius 8px · clip `3857:79595`
+          - [khối] **Switch · Chế độ xem** — 56×30 [HUG×HUG] · @ (388, 0) flow · row gap 2 pad 3 3 3 3 align CENTER · bg #f1f5f9 (bg/subtle) · radius 8px · clip `3857:79595`
             - [instance] **Xem · Bảng** ⟨Atom/Tab: Label=Bảng, Icon=3857:80306, State=Active, Kiểu=Switch icon⟩ — 24×24 [FIXED×HUG] · @ (3, 3) flow · row pad 4 8 4 8 justify CENTER align CENTER · bg #ffffff · radius 6px · shadow 0 1px 3px 0 rgba(0, 0, 0, 0.08) `3857:79596`
               - [instance] **Liner Icon** ⟨Liner Icon: Property 1=Xem dạng bảng⟩ — 16×16 · @ (4, 4) flow · clip `I3857:79596;3857:80584`
                 - [hình] **Ô** — 5.25×5.25 · @ (2, 2) abs · radius 1.5px · shadow inset 0 0 0 1.5px #e65100 `I3857:79596;3857:80584;3857:80308`
@@ -191,79 +198,79 @@ Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí ·
                 - [hình] **Chấm** — 2×2 · @ (2, 11.25) abs · bg #64748b · radius 1px `I3857:79597;3857:80591;3857:80318`
                 - [hình] **Dòng** — 8.5×1.5 · @ (5.5, 11.5) abs · bg #64748b · radius 0.75px `I3857:79597;3857:80591;3857:80319`
       - [khối] **Frame 427323941** — 1158×1047 [FIXED×HUG] · @ (0, 42) flow · column gap 8 `3857:79598`
-        - [khối] **Lịch tuần** — 1158×1047 [FILL×HUG] · @ (0, 0) flow · column · bg #ffffff · radius 16px · border 1px solid #e2e8f0 · clip `3857:80042`
-          - [khối] **Thanh điều hướng tuần** — 1156×58 [FILL×HUG] · @ (1, 1) flow · row space-between pad 12 16 12 16 align CENTER · bg #f8fafc · border 0 0 1px 0 solid #e2e8f0 · clip `3857:80043`
+        - [khối] **Lịch tuần** — 1158×1047 [FILL×HUG] · @ (0, 0) flow · column · bg #ffffff (bg/surface) · radius 16px · border 1px solid #e2e8f0 (border/default) · clip `3857:80042`
+          - [khối] **Thanh điều hướng tuần** — 1156×58 [FILL×HUG] · @ (1, 1) flow · row space-between pad 12 16 12 16 align CENTER · bg #f8fafc (bg/canvas) · border 0 0 1px 0 solid #e2e8f0 (border/default) · clip `3857:80043`
             - [instance] **Time** ⟨Time: Property 1=Variant4⟩ — 226×33 [HUG×HUG] · @ (16, 12) flow · row gap 12 pad 6 6 6 8 align CENTER · bg #ffffff · radius 8px · border 1px solid #e5e7eb · shadow 0 1px 2px 0 rgba(0, 0, 0, 0.05) `3857:84381`
               - [icon] **Action Icon** ⟨Action Icon: Icon=Chevron Right, Size=18⟩ — 18×18 · @ (9, 7.5) flow · file /figma/assets/56dd49aa5998.svg `I3857:84381;2008:48184`
               - [chữ] “26.01.2026 - 01.02.2026” — 150×19 [FIXED×HUG] · @ (39, 7) flow · Afacad 15/19px 500 #1f2937 · text-align center `I3857:84381;2008:48177`
               - [icon] **Action Icon** ⟨Action Icon: Icon=Chevron Right, Size=18⟩ — 18×18 · @ (201, 7.5) flow · file /figma/assets/60e48ade1062.svg `I3857:84381;2008:48178`
             - [instance] **Atom/Button** ⟨Atom/Button: Label=Hôm nay, Type=Outlined, Size=Small⟩ — 87×28 [HUG×FIXED] · @ (1053, 14.5) flow · row pad 6 16 6 16 align CENTER · bg #ffffff · radius 6px · border 1px solid #e65100 (color/brand/orange) · shadow 1px 1px 6px 0 rgba(230, 81, 0, 0.35), 0 0 4px 0 rgba(230, 81, 0, 0.05) `3857:80046`
               - [chữ] “Hôm nay” — 53×19 [HUG×HUG] · @ (17, 4.5) flow · Afacad 15/19px 600 #e65100 (color/brand/orange) · no-wrap `I3857:80046;1430:10764`
-          - [khối] **Hàng ngày** — 1156×75 [FILL×HUG] · @ (1, 59) flow · row · border 0 0 1px 0 solid #e2e8f0 · clip `3857:80052`
+          - [khối] **Hàng ngày** — 1156×75 [FILL×HUG] · @ (1, 59) flow · row · border 0 0 1px 0 solid #e2e8f0 (border/default) · clip `3857:80052`
             - [khối] **Cột giờ** — 66×74 [FIXED×FILL] · @ (0, 0) flow · clip · trống `3857:80053`
             - [khối] **Ngày · TH 2 26** — 155.71×74 [FILL×HUG] · @ (66, 0) flow · column gap 2 pad 12 0 12 0 align CENTER · clip `3857:80054`
-              - [chữ] “TH 2” — 27×19 [HUG×HUG] · @ (64.36, 12) flow · Afacad 15/19px 700 #64748b case upper · no-wrap `3857:80055`
-              - [chữ] “26” — 24×29 [HUG×HUG] · @ (65.86, 33) flow · Afacad 23/29px 700 #334155 · no-wrap `3857:80056`
+              - [chữ] “TH 2” — 27×19 [HUG×HUG] · @ (64.36, 12) flow · Afacad 15/19px 700 #64748b (text/secondary) case upper · no-wrap `3857:80055`
+              - [chữ] “26” — 24×29 [HUG×HUG] · @ (65.86, 33) flow · Afacad 23/29px 700 #334155 (text/primary) · no-wrap `3857:80056`
             - [khối] **Ngày · TH 3 27** — 155.71×74 [FILL×HUG] · @ (221.71, 0) flow · column gap 2 pad 12 0 12 0 align CENTER · clip `3857:80057`
-              - [chữ] “TH 3” — 27×19 [HUG×HUG] · @ (64.36, 12) flow · Afacad 15/19px 700 #64748b case upper · no-wrap `3857:80058`
-              - [chữ] “27” — 24×29 [HUG×HUG] · @ (65.86, 33) flow · Afacad 23/29px 700 #334155 · no-wrap `3857:80059`
+              - [chữ] “TH 3” — 27×19 [HUG×HUG] · @ (64.36, 12) flow · Afacad 15/19px 700 #64748b (text/secondary) case upper · no-wrap `3857:80058`
+              - [chữ] “27” — 24×29 [HUG×HUG] · @ (65.86, 33) flow · Afacad 23/29px 700 #334155 (text/primary) · no-wrap `3857:80059`
             - [khối] **Ngày · TH 4 28** — 155.71×72 [FILL×HUG] · @ (377.43, 0) flow · column gap 2 pad 12 0 12 0 align CENTER · clip `3857:80060`
-              - [chữ] “TH 4” — 27×19 [HUG×HUG] · @ (64.36, 12) flow · Afacad 15/19px 700 #64748b case upper · no-wrap `3857:80061`
+              - [chữ] “TH 4” — 27×19 [HUG×HUG] · @ (64.36, 12) flow · Afacad 15/19px 700 #64748b (text/secondary) case upper · no-wrap `3857:80061`
               - [khối] **Frame 427323675** — 68×27 [HUG×HUG] · @ (43.86, 33) flow · row gap 10 pad 3 8 3 8 justify CENTER align CENTER · bg #e65100 (color/brand/orange) · radius 8px `3857:84378`
-                - [chữ] “28” — 52×21 [FIXED×HUG] · @ (8, 3) flow · Afacad 17/21px 700 #ffffff · text-align center `3857:84379`
+                - [chữ] “28” — 52×21 [FIXED×HUG] · @ (8, 3) flow · Afacad 17/21px 700 #ffffff (text/on-brand) · text-align center `3857:84379`
             - [khối] **Ngày · TH 5 29** — 155.71×74 [FILL×HUG] · @ (533.14, 0) flow · column gap 2 pad 12 0 12 0 align CENTER · clip `3857:80063`
-              - [chữ] “TH 5” — 27×19 [HUG×HUG] · @ (64.36, 12) flow · Afacad 15/19px 700 #64748b case upper · no-wrap `3857:80064`
-              - [chữ] “29” — 24×29 [HUG×HUG] · @ (65.86, 33) flow · Afacad 23/29px 700 #334155 · no-wrap `3857:80065`
+              - [chữ] “TH 5” — 27×19 [HUG×HUG] · @ (64.36, 12) flow · Afacad 15/19px 700 #64748b (text/secondary) case upper · no-wrap `3857:80064`
+              - [chữ] “29” — 24×29 [HUG×HUG] · @ (65.86, 33) flow · Afacad 23/29px 700 #334155 (text/primary) · no-wrap `3857:80065`
             - [khối] **Ngày · TH 6 30** — 155.71×74 [FILL×HUG] · @ (688.86, 0) flow · column gap 2 pad 12 0 12 0 align CENTER · clip `3857:80066`
-              - [chữ] “TH 6” — 27×19 [HUG×HUG] · @ (64.36, 12) flow · Afacad 15/19px 700 #64748b case upper · no-wrap `3857:80067`
-              - [chữ] “30” — 24×29 [HUG×HUG] · @ (65.86, 33) flow · Afacad 23/29px 700 #334155 · no-wrap `3857:80068`
+              - [chữ] “TH 6” — 27×19 [HUG×HUG] · @ (64.36, 12) flow · Afacad 15/19px 700 #64748b (text/secondary) case upper · no-wrap `3857:80067`
+              - [chữ] “30” — 24×29 [HUG×HUG] · @ (65.86, 33) flow · Afacad 23/29px 700 #334155 (text/primary) · no-wrap `3857:80068`
             - [khối] **Ngày · TH 7 31** — 155.71×74 [FILL×HUG] · @ (844.57, 0) flow · column gap 2 pad 12 0 12 0 align CENTER · clip `3857:80069`
-              - [chữ] “TH 7” — 27×19 [HUG×HUG] · @ (64.36, 12) flow · Afacad 15/19px 700 #64748b case upper · no-wrap `3857:80070`
-              - [chữ] “31” — 24×29 [HUG×HUG] · @ (65.86, 33) flow · Afacad 23/29px 700 #334155 · no-wrap `3857:80071`
+              - [chữ] “TH 7” — 27×19 [HUG×HUG] · @ (64.36, 12) flow · Afacad 15/19px 700 #64748b (text/secondary) case upper · no-wrap `3857:80070`
+              - [chữ] “31” — 24×29 [HUG×HUG] · @ (65.86, 33) flow · Afacad 23/29px 700 #334155 (text/primary) · no-wrap `3857:80071`
             - [khối] **Ngày · CN 01** — 155.71×74 [FILL×HUG] · @ (1000.29, 0) flow · column gap 2 pad 12 0 12 0 align CENTER · clip `3857:80072`
-              - [chữ] “CN” — 19×19 [HUG×HUG] · @ (68.36, 12) flow · Afacad 15/19px 700 #64748b case upper · no-wrap `3857:80073`
-              - [chữ] “01” — 24×29 [HUG×HUG] · @ (65.86, 33) flow · Afacad 23/29px 700 #334155 · no-wrap `3857:80074`
+              - [chữ] “CN” — 19×19 [HUG×HUG] · @ (68.36, 12) flow · Afacad 15/19px 700 #64748b (text/secondary) case upper · no-wrap `3857:80073`
+              - [chữ] “01” — 24×29 [HUG×HUG] · @ (65.86, 33) flow · Afacad 23/29px 700 #334155 (text/primary) · no-wrap `3857:80074`
           - [khối] **Lưới giờ** — 1156×912 [FILL×FIXED] · @ (1, 134) flow · clip `3857:80075`
-            - [hình] **Kẻ giờ** — 1090×1 · @ (66, 8) abs · bg #f1f5f9 `3857:80076`
-            - [chữ] “08:00” — 34×18 · @ (16, -1) abs · Afacad 14/18px 500 #64748b · no-wrap `3857:80077`
-            - [hình] **Kẻ giờ** — 1090×1 · @ (66, 64) abs · bg #f1f5f9 `3857:80078`
-            - [chữ] “09:00” — 34×18 · @ (16, 55) abs · Afacad 14/18px 500 #64748b · no-wrap `3857:80079`
-            - [hình] **Kẻ giờ** — 1090×1 · @ (66, 120) abs · bg #f1f5f9 `3857:80080`
-            - [chữ] “10:00” — 34×18 · @ (16, 111) abs · Afacad 14/18px 500 #64748b · no-wrap `3857:80081`
-            - [hình] **Kẻ giờ** — 1090×1 · @ (66, 176) abs · bg #f1f5f9 `3857:80082`
-            - [chữ] “11:00” — 34×18 · @ (16, 167) abs · Afacad 14/18px 500 #64748b · no-wrap `3857:80083`
-            - [hình] **Kẻ giờ** — 1090×1 · @ (66, 232) abs · bg #f1f5f9 `3857:80084`
-            - [chữ] “12:00” — 34×18 · @ (16, 223) abs · Afacad 14/18px 500 #64748b · no-wrap `3857:80085`
-            - [hình] **Kẻ giờ** — 1090×1 · @ (66, 288) abs · bg #f1f5f9 `3857:80086`
-            - [chữ] “13:00” — 34×18 · @ (16, 279) abs · Afacad 14/18px 500 #64748b · no-wrap `3857:80087`
-            - [hình] **Kẻ giờ** — 1090×1 · @ (66, 344) abs · bg #f1f5f9 `3857:80088`
-            - [chữ] “14:00” — 34×18 · @ (16, 335) abs · Afacad 14/18px 500 #64748b · no-wrap `3857:80089`
-            - [hình] **Kẻ giờ** — 1090×1 · @ (66, 400) abs · bg #f1f5f9 `3857:80090`
-            - [chữ] “15:00” — 34×18 · @ (16, 391) abs · Afacad 14/18px 500 #64748b · no-wrap `3857:80091`
-            - [hình] **Kẻ giờ** — 1090×1 · @ (66, 456) abs · bg #f1f5f9 `3857:80092`
-            - [chữ] “16:00” — 34×18 · @ (16, 447) abs · Afacad 14/18px 500 #64748b · no-wrap `3857:80093`
-            - [hình] **Kẻ giờ** — 1090×1 · @ (66, 512) abs · bg #f1f5f9 `3857:80094`
-            - [chữ] “17:00” — 34×18 · @ (16, 503) abs · Afacad 14/18px 500 #64748b · no-wrap `3857:80095`
-            - [hình] **Kẻ giờ** — 1090×1 · @ (66, 568) abs · bg #f1f5f9 `3857:80096`
-            - [chữ] “18:00” — 34×18 · @ (16, 559) abs · Afacad 14/18px 500 #64748b · no-wrap `3857:80097`
-            - [hình] **Kẻ giờ** — 1090×1 · @ (66, 624) abs · bg #f1f5f9 `3857:80098`
-            - [chữ] “19:00” — 34×18 · @ (16, 615) abs · Afacad 14/18px 500 #64748b · no-wrap `3857:80099`
-            - [hình] **Kẻ giờ** — 1090×1 · @ (66, 680) abs · bg #f1f5f9 `3857:80100`
-            - [chữ] “20:00” — 34×18 · @ (16, 671) abs · Afacad 14/18px 500 #64748b · no-wrap `3857:80101`
-            - [hình] **Kẻ giờ** — 1090×1 · @ (66, 736) abs · bg #f1f5f9 `3857:80102`
-            - [chữ] “21:00” — 34×18 · @ (16, 727) abs · Afacad 14/18px 500 #64748b · no-wrap `3857:80103`
-            - [hình] **Kẻ giờ** — 1090×1 · @ (66, 792) abs · bg #f1f5f9 `3857:80104`
-            - [chữ] “22:00” — 34×18 · @ (16, 783) abs · Afacad 14/18px 500 #64748b · no-wrap `3857:80105`
-            - [hình] **Kẻ giờ** — 1090×1 · @ (66, 848) abs · bg #f1f5f9 `3857:80106`
-            - [chữ] “23:00” — 34×18 · @ (16, 839) abs · Afacad 14/18px 500 #64748b · no-wrap `3857:80107`
-            - [hình] **Kẻ ngày** — 1×912 · @ (66, 0) abs · bg #f1f5f9 `3857:80108`
-            - [hình] **Kẻ ngày** — 1×912 · @ (221.71, 0) abs · bg #f1f5f9 `3857:80109`
-            - [hình] **Kẻ ngày** — 1×912 · @ (377.43, 0) abs · bg #f1f5f9 `3857:80110`
-            - [hình] **Kẻ ngày** — 1×912 · @ (533.14, 0) abs · bg #f1f5f9 `3857:80111`
-            - [hình] **Kẻ ngày** — 1×912 · @ (688.86, 0) abs · bg #f1f5f9 `3857:80112`
-            - [hình] **Kẻ ngày** — 1×912 · @ (844.57, 0) abs · bg #f1f5f9 `3857:80113`
-            - [hình] **Kẻ ngày** — 1×912 · @ (1000.29, 0) abs · bg #f1f5f9 `3857:80114`
-            - [hình] **Kẻ ngày** — 1×912 · @ (1156, 0) abs · bg #f1f5f9 `3857:80115`
+            - [hình] **Kẻ giờ** — 1090×1 · @ (66, 8) abs · bg #f1f5f9 (bg/subtle) `3857:80076`
+            - [chữ] “08:00” — 34×18 · @ (16, -1) abs · Afacad 14/18px 500 #64748b (text/secondary) · no-wrap `3857:80077`
+            - [hình] **Kẻ giờ** — 1090×1 · @ (66, 64) abs · bg #f1f5f9 (bg/subtle) `3857:80078`
+            - [chữ] “09:00” — 34×18 · @ (16, 55) abs · Afacad 14/18px 500 #64748b (text/secondary) · no-wrap `3857:80079`
+            - [hình] **Kẻ giờ** — 1090×1 · @ (66, 120) abs · bg #f1f5f9 (bg/subtle) `3857:80080`
+            - [chữ] “10:00” — 34×18 · @ (16, 111) abs · Afacad 14/18px 500 #64748b (text/secondary) · no-wrap `3857:80081`
+            - [hình] **Kẻ giờ** — 1090×1 · @ (66, 176) abs · bg #f1f5f9 (bg/subtle) `3857:80082`
+            - [chữ] “11:00” — 34×18 · @ (16, 167) abs · Afacad 14/18px 500 #64748b (text/secondary) · no-wrap `3857:80083`
+            - [hình] **Kẻ giờ** — 1090×1 · @ (66, 232) abs · bg #f1f5f9 (bg/subtle) `3857:80084`
+            - [chữ] “12:00” — 34×18 · @ (16, 223) abs · Afacad 14/18px 500 #64748b (text/secondary) · no-wrap `3857:80085`
+            - [hình] **Kẻ giờ** — 1090×1 · @ (66, 288) abs · bg #f1f5f9 (bg/subtle) `3857:80086`
+            - [chữ] “13:00” — 34×18 · @ (16, 279) abs · Afacad 14/18px 500 #64748b (text/secondary) · no-wrap `3857:80087`
+            - [hình] **Kẻ giờ** — 1090×1 · @ (66, 344) abs · bg #f1f5f9 (bg/subtle) `3857:80088`
+            - [chữ] “14:00” — 34×18 · @ (16, 335) abs · Afacad 14/18px 500 #64748b (text/secondary) · no-wrap `3857:80089`
+            - [hình] **Kẻ giờ** — 1090×1 · @ (66, 400) abs · bg #f1f5f9 (bg/subtle) `3857:80090`
+            - [chữ] “15:00” — 34×18 · @ (16, 391) abs · Afacad 14/18px 500 #64748b (text/secondary) · no-wrap `3857:80091`
+            - [hình] **Kẻ giờ** — 1090×1 · @ (66, 456) abs · bg #f1f5f9 (bg/subtle) `3857:80092`
+            - [chữ] “16:00” — 34×18 · @ (16, 447) abs · Afacad 14/18px 500 #64748b (text/secondary) · no-wrap `3857:80093`
+            - [hình] **Kẻ giờ** — 1090×1 · @ (66, 512) abs · bg #f1f5f9 (bg/subtle) `3857:80094`
+            - [chữ] “17:00” — 34×18 · @ (16, 503) abs · Afacad 14/18px 500 #64748b (text/secondary) · no-wrap `3857:80095`
+            - [hình] **Kẻ giờ** — 1090×1 · @ (66, 568) abs · bg #f1f5f9 (bg/subtle) `3857:80096`
+            - [chữ] “18:00” — 34×18 · @ (16, 559) abs · Afacad 14/18px 500 #64748b (text/secondary) · no-wrap `3857:80097`
+            - [hình] **Kẻ giờ** — 1090×1 · @ (66, 624) abs · bg #f1f5f9 (bg/subtle) `3857:80098`
+            - [chữ] “19:00” — 34×18 · @ (16, 615) abs · Afacad 14/18px 500 #64748b (text/secondary) · no-wrap `3857:80099`
+            - [hình] **Kẻ giờ** — 1090×1 · @ (66, 680) abs · bg #f1f5f9 (bg/subtle) `3857:80100`
+            - [chữ] “20:00” — 34×18 · @ (16, 671) abs · Afacad 14/18px 500 #64748b (text/secondary) · no-wrap `3857:80101`
+            - [hình] **Kẻ giờ** — 1090×1 · @ (66, 736) abs · bg #f1f5f9 (bg/subtle) `3857:80102`
+            - [chữ] “21:00” — 34×18 · @ (16, 727) abs · Afacad 14/18px 500 #64748b (text/secondary) · no-wrap `3857:80103`
+            - [hình] **Kẻ giờ** — 1090×1 · @ (66, 792) abs · bg #f1f5f9 (bg/subtle) `3857:80104`
+            - [chữ] “22:00” — 34×18 · @ (16, 783) abs · Afacad 14/18px 500 #64748b (text/secondary) · no-wrap `3857:80105`
+            - [hình] **Kẻ giờ** — 1090×1 · @ (66, 848) abs · bg #f1f5f9 (bg/subtle) `3857:80106`
+            - [chữ] “23:00” — 34×18 · @ (16, 839) abs · Afacad 14/18px 500 #64748b (text/secondary) · no-wrap `3857:80107`
+            - [hình] **Kẻ ngày** — 1×912 · @ (66, 0) abs · bg #f1f5f9 (bg/subtle) `3857:80108`
+            - [hình] **Kẻ ngày** — 1×912 · @ (221.71, 0) abs · bg #f1f5f9 (bg/subtle) `3857:80109`
+            - [hình] **Kẻ ngày** — 1×912 · @ (377.43, 0) abs · bg #f1f5f9 (bg/subtle) `3857:80110`
+            - [hình] **Kẻ ngày** — 1×912 · @ (533.14, 0) abs · bg #f1f5f9 (bg/subtle) `3857:80111`
+            - [hình] **Kẻ ngày** — 1×912 · @ (688.86, 0) abs · bg #f1f5f9 (bg/subtle) `3857:80112`
+            - [hình] **Kẻ ngày** — 1×912 · @ (844.57, 0) abs · bg #f1f5f9 (bg/subtle) `3857:80113`
+            - [hình] **Kẻ ngày** — 1×912 · @ (1000.29, 0) abs · bg #f1f5f9 (bg/subtle) `3857:80114`
+            - [hình] **Kẻ ngày** — 1×912 · @ (1156, 0) abs · bg #f1f5f9 (bg/subtle) `3857:80115`
             - [instance] **Cuộc họp · [Trước Buổi 10] Hướng dẫn luyệ** ⟨STATUS CALENDAR: Property 1=LỊCH CỐ ĐỊNH⟩ — 147.71×82 · @ (70, 66) abs · column gap 2 pad 8 8 8 8 justify CENTER · bg #fff4e8 · radius 8px · shadow inset 0 0 0 1px #e65100, 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `3857:80116`
               - [instance] **AVATAR + Name** ⟨AVATAR + Name: Property 1=AVATAR + Name 2⟩ — 131.71×26 [FILL×HUG] · @ (8, 8) flow · column gap 10 pad 3 8 3 6 justify CENTER · bg #ffffff · radius 6px · shadow 1px 1px 3px 0 rgba(0, 0, 0, 0.15) · clip `I3857:80116;2008:49502`
                 - [khối] **Frame 427323652** — 117.71×20 [FILL×HUG] · @ (6, 3) flow · row gap 4 align CENTER `I3857:80116;2008:49502;1904:12420`

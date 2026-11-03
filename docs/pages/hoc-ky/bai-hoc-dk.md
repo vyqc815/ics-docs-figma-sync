@@ -5,7 +5,7 @@
 > **Nguồn:** PLS-ICS T8/2026 ›     ├─ KHOÁ HỌC | THỬ NGHIỆM PROTOTYPE › CD-KH-030200-DK — Học kỳ / Bài học (`6015:64055`, file `rRVs5HX0kIHffbS0V40djG`)  
 > **Route:** `/hoc-ky/bai-hoc-dk`  
 > **Khung thiết kế:** 1440 × 1090 px  
-> **Xuất lúc:** 2026-11-02T02:55:51.145Z  
+> **Xuất lúc:** 2026-11-02T18:14:42.076Z  
 > **Spec đầy đủ (giá trị chính xác từng node):** `../../../.figma/pages/cd-kh-030200-dk/page-spec.json`
 
 ## 1. Tổng quan
@@ -27,17 +27,21 @@ Nền trang: `#18181a`.
 
 | Token | Biến CSS | Giá trị | Trỏ tới | Bộ / mode |
 | --- | --- | --- | --- | --- |
-| `bg/strong` | `--bg-strong` | `#e2e8f0` | color/border/default | Theme · Semantic / Light |
-| `border/strong` | `--border-strong` | `#cbd5e1` | color/extended/cbd5e1 | Theme · Semantic / Light |
+| `bg/brand-tint` | `--bg-brand-tint` | `#102218` |  | Theme · Semantic / Dark · Minimal |
+| `bg/strong` | `--bg-strong` | `#2a2a2e` |  | Theme · Semantic / Dark · Minimal |
+| `bg/surface` | `--bg-surface` | `#18181a` |  | Theme · Semantic / Dark · Minimal |
+| `border/default` | `--border-default` | `#27272a` |  | Theme · Semantic / Dark · Minimal |
+| `border/strong` | `--border-strong` | `#3f3f46` |  | Theme · Semantic / Dark · Minimal |
+| `brand/primary` | `--brand-primary` | `#16a34a` |  | Theme · Semantic / Dark · Minimal |
 | `color/brand/orange` | `--color-brand-orange` | `#e65100` |  | Color Tokens / Light |
 | `color/extended/cbd5e1` | `--color-extended-cbd5e1` | `#cbd5e1` |  | Color Tokens / Light |
 | `color/extended/cccccc` | `--color-extended-cccccc` | `#cccccc` |  | Color Tokens / Light |
 | `color/extended/fff5ec` | `--color-extended-fff5ec` | `#fff5ec` |  | Color Tokens / Light |
 | `color/neutral/white` | `--color-neutral-white` | `#ffffff` |  | Color Tokens / Light |
 | `color/semantic/success-text` | `--color-semantic-success-text` | `#059669` |  | Color Tokens / Light |
-| `org/border` | `--org-border` | `#ffffff` |  | Theme · Semantic / Light |
-| `org/dac-nhan/bg` | `--org-dac-nhan-bg` | `#e65100` |  | Theme · Semantic / Light |
-| `org/dac-nhan/fg` | `--org-dac-nhan-fg` | `#ffffff` |  | Theme · Semantic / Light |
+| `org/border` | `--org-border` | `#3f3f46` | border/strong | Theme · Semantic / Dark · Minimal |
+| `org/dac-nhan/bg` | `--org-dac-nhan-bg` | `#202023` | bg/subtle | Theme · Semantic / Dark · Minimal |
+| `org/dac-nhan/fg` | `--org-dac-nhan-fg` | `#fb8c3a` |  | Theme · Semantic / Dark · Minimal |
 | `radius/12` | `--radius-12` | `12` |  | Number Tokens / Mode 1 |
 | `radius/4` | `--radius-4` | `4` |  | Number Tokens / Mode 1 |
 | `radius/40` | `--radius-40` | `40` |  | Number Tokens / Mode 1 |
@@ -48,7 +52,9 @@ Nền trang: `#18181a`.
 | `spacing/24` | `--spacing-24` | `24` |  | Number Tokens / Mode 1 |
 | `spacing/4` | `--spacing-4` | `4` |  | Number Tokens / Mode 1 |
 | `spacing/8` | `--spacing-8` | `8` |  | Number Tokens / Mode 1 |
-| `theme/is-dark` | `--theme-is-dark` | `false` |  | Theme · Semantic / Light |
+| `text/primary` | `--text-primary` | `#ededef` |  | Theme · Semantic / Dark · Minimal |
+| `text/secondary` | `--text-secondary` | `#a1a1aa` |  | Theme · Semantic / Dark · Minimal |
+| `theme/is-dark` | `--theme-is-dark` | `true` |  | Theme · Semantic / Dark · Minimal |
 
 **Style Figma đang dùng:**
 
@@ -74,21 +80,21 @@ Nền trang: `#18181a`.
 | Style | Font family | Cỡ / line-height | Độ đậm | Letter-spacing | Màu | Số lần | Ví dụ |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | — | Afacad | 16.38 / 20px | 700 | 0 | #e65100 (color/brand/orange) | 1 | “Bài Học” |
-| — | Afacad | 16 / 20px | 700 | 0 | #16a34a | 10 | “HSK1 ” |
-| — | Noto Sans SC | 16 / 20px | 500 | 0 | #16a34a | 3 | “复习” |
+| — | Afacad | 16 / 20px | 700 | 0 | #16a34a (brand/primary) | 10 | “HSK1 ” |
+| — | Noto Sans SC | 16 / 20px | 500 | 0 | #16a34a (brand/primary) | 3 | “复习” |
 | — | Afacad | 16 / 18px | 500 | 0 | #a1a1aa | 2 | “Thông Tin” |
-| — | Noto Sans SC | 16 / 20px | 700 | 0 | #16a34a | 2 | “复习” |
-| — | Afacad | 15 / 19px | 400 | 0 | #a1a1aa | 5 | “- Chủ đề Từ vựng HSK1 (phần 1): Gia đìn…” |
-| — | Afacad | 15 / 19px | 600 | 0 | #ededef | 3 | “[2024.11] Nhập Môn Tiếng Trung (HSK1) ·…” |
-| `Heading/15/SemiBold` | Unbounded | 15 / 23px | 600 | 0 | #16a34a | 1 | “Danh Sách kỳ” |
+| — | Noto Sans SC | 16 / 20px | 700 | 0 | #16a34a (brand/primary) | 2 | “复习” |
+| — | Afacad | 15 / 19px | 400 | 0 | #a1a1aa (text/secondary) | 5 | “- Chủ đề Từ vựng HSK1 (phần 1): Gia đìn…” |
+| — | Afacad | 15 / 19px | 600 | 0 | #ededef (text/primary) | 3 | “[2024.11] Nhập Môn Tiếng Trung (HSK1) ·…” |
+| `Heading/15/SemiBold` | Unbounded | 15 / 23px | 600 | 0 | #16a34a (brand/primary) | 1 | “Danh Sách kỳ” |
 | — | Afacad | 15 / 19px | 500 | 0 | #ededef | 1 | “HSK1” |
-| — | Afacad | 14 / 19px | 500 | 0 | #ededef | 6 | “Tất cả cấp độ” |
-| — | Unbounded | 14 / 18px | 600 | 0 | #ededef | 5 | “ÔN TẬP HK I – HK II (BUỔI 1)” |
+| — | Afacad | 14 / 19px | 500 | 0 | #ededef (text/primary) | 6 | “Tất cả cấp độ” |
+| — | Unbounded | 14 / 18px | 600 | 0 | #ededef (text/primary) | 5 | “ÔN TẬP HK I – HK II (BUỔI 1)” |
 | `Body/14/Regular` | Afacad | 14 / 18px | 400 | 0 | #9333ea | 5 | “Kỹ Năng” |
 | `Body/14/Regular` | Afacad | 14 / 18px | 400 | 0 | #059669 (color/semantic/success-text) | 5 | “Kiến Thức” |
 | — | Unbounded | 14 / 17px | 500 | 0 | #fb8c3a (org/dac-nhan/fg) | 1 | “Đắc Nhân” |
 | — | Afacad | 14 / 18px | 400 italic | 0 | #cccccc (color/extended/cccccc) | 1 | “Thêm mới” |
-| — | Afacad | 14 / 19px | 600 | 0 | #16a34a | 1 | “HSK1 · Sơ cấp 1” |
+| — | Afacad | 14 / 19px | 600 | 0 | #16a34a (brand/primary) | 1 | “HSK1 · Sơ cấp 1” |
 | — | Afacad | 13 / 16px | 700 | 0 | #2d9732 | 7 | “4237789001” |
 | `Body/13/Bold` | Afacad | 13 / 16px | 700 | 0 | #0f766e | 1 | “CD” |
 | — | Unbounded | 13 / 16px | 600 | 0 | #ffffff (color/neutral/white) | 1 | “Học Liệu Ngôn Ngữ” |
@@ -117,37 +123,37 @@ Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí ·
           - [khối] **Container** — 56×18 [HUG×HUG] · @ (12.28, 8.19) flow · row `I6015:64061;2177:28927`
             - [chữ] “Kiểm Tra” — 56×18 [HUG×HUG] · @ (0, 0) flow · Afacad 16/18px 500 #a1a1aa · text-align center · no-wrap `I6015:64061;2177:28928`
       - [khối] **Lesson Cards Container** — 770×738 [FILL×HUG] · @ (0, 48.38) flow · column gap 12 `6015:64062`
-        - [khối] **Article - Card 1** — 770×138 [FILL×HUG] · @ (0, 0) flow · row gap 8 pad 12 12 12 12 · bg #18181a · radius 12px · border 1px solid #27272a · shadow 0 1.02px 3.07px 0 rgba(0, 0, 0, 0.06) `6015:64063`
+        - [khối] **Article - Card 1** — 770×138 [FILL×HUG] · @ (0, 0) flow · row gap 8 pad 12 12 12 12 · bg #18181a (bg/surface) · radius 12px · border 1px solid #27272a (border/default) · shadow 0 1.02px 3.07px 0 rgba(0, 0, 0, 0.06) `6015:64063`
           - [khối] **Container** — 744×112 [FILL×HUG] · @ (13, 13) flow · row `6015:64064`
             - [khối] **Margin** — 744×112 [FILL×HUG] · @ (0, 0) flow · column gap 4 `6015:64065`
               - [khối] **Container** — 744×84 [FILL×HUG] · @ (0, 0) flow · column gap 2 `6015:64066`
                 - [khối] **Container** — 744×24 [FILL×HUG] · @ (0, 0) flow · row gap 8 align CENTER `6015:64067`
                   - [instance] **Atom/ID Badge** ⟨Atom/ID Badge: Type=10-digit, Size=20H, Item=02⟩ — 84×22 [HUG×HUG] · @ (0, 1) flow · row pad 3 8 3 8 align CENTER · bg #18181a · radius 6px `6015:64068`
                     - [chữ] “4237789001” — 68×16 [HUG×HUG] · @ (8, 3) flow · Afacad 13/16px 700 #2d9732 · no-wrap `I6015:64068;2053:24639`
-                  - [chữ] “HSK1 复习 (1)” — 556×20 [FILL×HUG] · @ (92, 2) flow · runs: “HSK1 ” Afacad 16/20px 700 #16a34a; “复习” Noto Sans SC 16/20px 700 #16a34a; “ (1)” Afacad 16/20px 700 #16a34a `6015:64069`
+                  - [chữ] “HSK1 复习 (1)” — 556×20 [FILL×HUG] · @ (92, 2) flow · runs: “HSK1 ” Afacad 16/20px 700 #16a34a (brand/primary); “复习” Noto Sans SC 16/20px 700 #16a34a (brand/primary); “ (1)” Afacad 16/20px 700 #16a34a (brand/primary) `6015:64069`
                   - [icon] **Content Indicators** — 88×24 · @ (656, 0) flow · file /figma/assets/a9d7281a243c.svg `6015:64070`
                 - [khối] **Frame 1171274941** — 744×58 [FILL×HUG] · @ (0, 26) flow · column gap 2 `6015:64074`
                   - [khối] **Heading 3** — 744×18 [FILL×HUG] · @ (0, 0) flow · column `6015:64075`
-                    - [chữ] “ÔN TẬP HK I – HK II (BUỔI 1)” — 222×18 [HUG×HUG] · @ (0, 0) flow · Unbounded 14/18px 600 #ededef · no-wrap `6015:64076`
-                  - [chữ] “- Chủ đề Từ vựng HSK1 (phần 1): Gia đình, Cuộc sống, Học tập & Mua sắm|- Cấu trúc Ngữ pháp HSK1 (phần 1): Liên kết, Thời gian & Đánh giá trong câu|- Luyện tập tổng hợp HSK1 (phần 1), Kỹ năng Nghe - Nói - Đọc hiểu” — 744×38 [FILL×HUG] · @ (0, 20) flow · Afacad 15/19px 400 #a1a1aa `6015:64077`
+                    - [chữ] “ÔN TẬP HK I – HK II (BUỔI 1)” — 222×18 [HUG×HUG] · @ (0, 0) flow · Unbounded 14/18px 600 #ededef (text/primary) · no-wrap `6015:64076`
+                  - [chữ] “- Chủ đề Từ vựng HSK1 (phần 1): Gia đình, Cuộc sống, Học tập & Mua sắm|- Cấu trúc Ngữ pháp HSK1 (phần 1): Liên kết, Thời gian & Đánh giá trong câu|- Luyện tập tổng hợp HSK1 (phần 1), Kỹ năng Nghe - Nói - Đọc hiểu” — 744×38 [FILL×HUG] · @ (0, 20) flow · Afacad 15/19px 400 #a1a1aa (text/secondary) `6015:64077`
               - [khối] **Frame 427321971** — 155×24 [HUG×HUG] · @ (0, 88) flow · row gap 8 `6015:64078`
                 - [instance] **Background+Border** ⟨Background+Border: Label=Kỹ Năng, Shape=Pill, Color=Purple⟩ — 70×24 [HUG×HUG] · @ (0, 0) flow · column pad 2 10 2 10 · bg #121213 · radius 6px · border 1px solid #f3e8ff `6015:64079`
                   - [chữ] “Kỹ Năng” — 48×18 [HUG×HUG] · @ (11, 3) flow · Afacad 14/18px 400 #9333ea · no-wrap `I6015:64079;1067:2466`
                 - [instance] **Background+Border** ⟨Background+Border: Label=Kiến Thức, Shape=Pill, Color=Green⟩ — 77×24 [HUG×HUG] · @ (78, 0) flow · column pad 2 10 2 10 · bg #ecfdf5 · radius 6px · border 1px solid #d1fae5 `6015:64080`
                   - [chữ] “Kiến Thức” — 55×18 [HUG×HUG] · @ (11, 3) flow · Afacad 14/18px 400 #059669 (color/semantic/success-text) · no-wrap `I6015:64080;1067:2468`
-        - [khối] **Article - Card 7** — 770×138 [FILL×HUG] · @ (0, 150) flow · row gap 8 pad 12 12 12 12 · bg #18181a · radius 12px · border 1px solid #16a34a · shadow 0 1.02px 3.07px 0 rgba(0, 0, 0, 0.06) `6015:64081`
+        - [khối] **Article - Card 7** — 770×138 [FILL×HUG] · @ (0, 150) flow · row gap 8 pad 12 12 12 12 · bg #18181a (bg/surface) · radius 12px · border 1px solid #16a34a (brand/primary) · shadow 0 1.02px 3.07px 0 rgba(0, 0, 0, 0.06) `6015:64081`
           - [khối] **Container** — 744×112 [FILL×HUG] · @ (13, 13) flow · row `6015:64082`
             - [khối] **Margin** — 744×112 [FILL×HUG] · @ (0, 0) flow · column gap 4 `6015:64083`
               - [khối] **Container** — 744×84 [FILL×HUG] · @ (0, 0) flow · column gap 2 `6015:64084`
                 - [khối] **Container** — 744×24 [FILL×HUG] · @ (0, 0) flow · row gap 8 align CENTER `6015:64085`
                   - [instance] **Atom/ID Badge** ⟨Atom/ID Badge: Type=10-digit, Size=20H, Item=02⟩ — 84×22 [HUG×HUG] · @ (0, 1) flow · row pad 3 8 3 8 align CENTER · bg #18181a · radius 6px `6015:64086`
                     - [chữ] “4237789002” — 68×16 [HUG×HUG] · @ (8, 3) flow · Afacad 13/16px 700 #2d9732 · no-wrap `I6015:64086;2053:24639`
-                  - [chữ] “HSK1 复习 (2)” — 556×20 [FILL×HUG] · @ (92, 2) flow · runs: “HSK1 ” Afacad 16/20px 700 #16a34a; “复习” Noto Sans SC 16/20px 500 #16a34a; “ (2)” Afacad 16/20px 700 #16a34a `6015:64087`
+                  - [chữ] “HSK1 复习 (2)” — 556×20 [FILL×HUG] · @ (92, 2) flow · runs: “HSK1 ” Afacad 16/20px 700 #16a34a (brand/primary); “复习” Noto Sans SC 16/20px 500 #16a34a (brand/primary); “ (2)” Afacad 16/20px 700 #16a34a (brand/primary) `6015:64087`
                   - [icon] **Content Indicators** — 88×24 · @ (656, 0) flow · file /figma/assets/358027d7c2f1.svg `6015:64088`
                 - [khối] **Frame 1171274941** — 744×58 [FILL×HUG] · @ (0, 26) flow · column gap 2 `6015:64092`
                   - [khối] **Heading 3** — 744×18 [FILL×HUG] · @ (0, 0) flow · column `6015:64093`
-                    - [chữ] “ÔN TẬP HK I – HK II (BUỔI 2)” — 226×18 [HUG×HUG] · @ (0, 0) flow · Unbounded 14/18px 600 #ededef · no-wrap `6015:64094`
-                  - [chữ] “- Chủ đề Từ vựng HSK1 (phần 2): Con người, Cuộc sống & Văn hóa|- Cấu trúc Ngữ pháp HSK1 (phần 2): Liên kết, Hành động & Biểu đạt|- Luyện tập tổng hợp HSK1 (phần 2), Kỹ năng Nghe - Nói - Đọc hiểu” — 744×38 [FILL×HUG] · @ (0, 20) flow · Afacad 15/19px 400 #a1a1aa `6015:64095`
+                    - [chữ] “ÔN TẬP HK I – HK II (BUỔI 2)” — 226×18 [HUG×HUG] · @ (0, 0) flow · Unbounded 14/18px 600 #ededef (text/primary) · no-wrap `6015:64094`
+                  - [chữ] “- Chủ đề Từ vựng HSK1 (phần 2): Con người, Cuộc sống & Văn hóa|- Cấu trúc Ngữ pháp HSK1 (phần 2): Liên kết, Hành động & Biểu đạt|- Luyện tập tổng hợp HSK1 (phần 2), Kỹ năng Nghe - Nói - Đọc hiểu” — 744×38 [FILL×HUG] · @ (0, 20) flow · Afacad 15/19px 400 #a1a1aa (text/secondary) `6015:64095`
               - [khối] **Frame 427321971** — 155×24 [HUG×HUG] · @ (0, 88) flow · row gap 8 `6015:64096`
                 - [instance] **Background+Border** ⟨Background+Border: Label=Kỹ Năng, Shape=Pill, Color=Purple⟩ — 70×24 [HUG×HUG] · @ (0, 0) flow · column pad 2 10 2 10 · bg #121213 · radius 6px · border 1px solid #f3e8ff `6015:64097`
                   - [chữ] “Kỹ Năng” — 48×18 [HUG×HUG] · @ (11, 3) flow · Afacad 14/18px 400 #9333ea · no-wrap `I6015:64097;1067:2466`
@@ -155,55 +161,55 @@ Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí ·
                   - [chữ] “Kiến Thức” — 55×18 [HUG×HUG] · @ (11, 3) flow · Afacad 14/18px 400 #059669 (color/semantic/success-text) · no-wrap `I6015:64098;1067:2468`
           - [icon] **Atom/Icon Button** ⟨Atom/Icon Button: Icon=Drop & Drag⟩ — 14×22 · @ (-7, 58) abs · file /figma/assets/35050a4eeea2.svg covers (-2, -2) 20×28 `6015:64099`
           - [icon] **Mouse click** ⟨Mouse click⟩ — 22×22 · @ (761, 112.25) abs · file /figma/assets/8a03d5ed4cfb.svg covers (-1, -1) 26×26 `6015:64100`
-        - [khối] **Article - Card 8** — 770×138 [FILL×HUG] · @ (0, 300) flow · row gap 8 pad 12 12 12 12 · bg #18181a · radius 12px · border 1px solid #27272a · shadow 0 1.02px 3.07px 0 rgba(0, 0, 0, 0.06) `6015:64101`
+        - [khối] **Article - Card 8** — 770×138 [FILL×HUG] · @ (0, 300) flow · row gap 8 pad 12 12 12 12 · bg #18181a (bg/surface) · radius 12px · border 1px solid #27272a (border/default) · shadow 0 1.02px 3.07px 0 rgba(0, 0, 0, 0.06) `6015:64101`
           - [khối] **Container** — 744×112 [FILL×HUG] · @ (13, 13) flow · row `6015:64102`
             - [khối] **Margin** — 744×112 [FILL×HUG] · @ (0, 0) flow · column gap 4 `6015:64103`
               - [khối] **Container** — 744×84 [FILL×HUG] · @ (0, 0) flow · column gap 2 `6015:64104`
                 - [khối] **Container** — 744×24 [FILL×HUG] · @ (0, 0) flow · row gap 8 align CENTER `6015:64105`
                   - [instance] **Atom/ID Badge** ⟨Atom/ID Badge: Type=10-digit, Size=20H, Item=02⟩ — 84×22 [HUG×HUG] · @ (0, 1) flow · row pad 3 8 3 8 align CENTER · bg #18181a · radius 6px `6015:64106`
                     - [chữ] “4237789003” — 68×16 [HUG×HUG] · @ (8, 3) flow · Afacad 13/16px 700 #2d9732 · no-wrap `I6015:64106;2053:24639`
-                  - [chữ] “HSK1 复习 (3)” — 556×20 [FILL×HUG] · @ (92, 2) flow · runs: “HSK1 ” Afacad 16/20px 700 #16a34a; “复习” Noto Sans SC 16/20px 500 #16a34a; “ (3)” Afacad 16/20px 700 #16a34a `6015:64107`
+                  - [chữ] “HSK1 复习 (3)” — 556×20 [FILL×HUG] · @ (92, 2) flow · runs: “HSK1 ” Afacad 16/20px 700 #16a34a (brand/primary); “复习” Noto Sans SC 16/20px 500 #16a34a (brand/primary); “ (3)” Afacad 16/20px 700 #16a34a (brand/primary) `6015:64107`
                   - [icon] **Content Indicators** — 88×24 · @ (656, 0) flow · file /figma/assets/fdbe328ff077.svg `6015:64108`
                 - [khối] **Frame 1171274941** — 744×58 [FILL×HUG] · @ (0, 26) flow · column gap 2 `6015:64112`
                   - [khối] **Heading 3** — 744×18 [FILL×HUG] · @ (0, 0) flow · column `6015:64113`
-                    - [chữ] “ÔN TẬP HK I – HK II (BUỔI 3)” — 226×18 [HUG×HUG] · @ (0, 0) flow · Unbounded 14/18px 600 #ededef · no-wrap `6015:64114`
-                  - [chữ] “- Chủ đề Từ vựng HSK1 (phần 1): Gia đình, Cuộc sống, Học tập & Mua sắm|- Cấu trúc Ngữ pháp HSK1 (phần 1): Liên kết, Thời gian & Đánh giá trong câu|- Luyện tập tổng hợp HSK1 (phần 1), Kỹ năng Nghe - Nói - Đọc hiểu” — 744×38 [FILL×HUG] · @ (0, 20) flow · Afacad 15/19px 400 #a1a1aa `6015:64115`
+                    - [chữ] “ÔN TẬP HK I – HK II (BUỔI 3)” — 226×18 [HUG×HUG] · @ (0, 0) flow · Unbounded 14/18px 600 #ededef (text/primary) · no-wrap `6015:64114`
+                  - [chữ] “- Chủ đề Từ vựng HSK1 (phần 1): Gia đình, Cuộc sống, Học tập & Mua sắm|- Cấu trúc Ngữ pháp HSK1 (phần 1): Liên kết, Thời gian & Đánh giá trong câu|- Luyện tập tổng hợp HSK1 (phần 1), Kỹ năng Nghe - Nói - Đọc hiểu” — 744×38 [FILL×HUG] · @ (0, 20) flow · Afacad 15/19px 400 #a1a1aa (text/secondary) `6015:64115`
               - [khối] **Frame 427321971** — 155×24 [HUG×HUG] · @ (0, 88) flow · row gap 8 `6015:64116`
                 - [instance] **Background+Border** ⟨Background+Border: Label=Kỹ Năng, Shape=Pill, Color=Purple⟩ — 70×24 [HUG×HUG] · @ (0, 0) flow · column pad 2 10 2 10 · bg #121213 · radius 6px · border 1px solid #f3e8ff `6015:64117`
                   - [chữ] “Kỹ Năng” — 48×18 [HUG×HUG] · @ (11, 3) flow · Afacad 14/18px 400 #9333ea · no-wrap `I6015:64117;1067:2466`
                 - [instance] **Background+Border** ⟨Background+Border: Label=Kiến Thức, Shape=Pill, Color=Green⟩ — 77×24 [HUG×HUG] · @ (78, 0) flow · column pad 2 10 2 10 · bg #ecfdf5 · radius 6px · border 1px solid #d1fae5 `6015:64118`
                   - [chữ] “Kiến Thức” — 55×18 [HUG×HUG] · @ (11, 3) flow · Afacad 14/18px 400 #059669 (color/semantic/success-text) · no-wrap `I6015:64118;1067:2468`
-        - [khối] **Article - Card 9** — 770×138 [FILL×HUG] · @ (0, 450) flow · row gap 8 pad 12 12 12 12 · bg #18181a · radius 12px · border 1px solid #27272a · shadow 0 1.02px 3.07px 0 rgba(0, 0, 0, 0.06) `6015:64119`
+        - [khối] **Article - Card 9** — 770×138 [FILL×HUG] · @ (0, 450) flow · row gap 8 pad 12 12 12 12 · bg #18181a (bg/surface) · radius 12px · border 1px solid #27272a (border/default) · shadow 0 1.02px 3.07px 0 rgba(0, 0, 0, 0.06) `6015:64119`
           - [khối] **Container** — 744×112 [FILL×HUG] · @ (13, 13) flow · row `6015:64120`
             - [khối] **Margin** — 744×112 [FILL×HUG] · @ (0, 0) flow · column gap 4 `6015:64121`
               - [khối] **Container** — 744×84 [FILL×HUG] · @ (0, 0) flow · column gap 2 `6015:64122`
                 - [khối] **Container** — 744×24 [FILL×HUG] · @ (0, 0) flow · row gap 8 align CENTER `6015:64123`
                   - [instance] **Atom/ID Badge** ⟨Atom/ID Badge: Type=10-digit, Size=20H, Item=02⟩ — 84×22 [HUG×HUG] · @ (0, 1) flow · row pad 3 8 3 8 align CENTER · bg #18181a · radius 6px `6015:64124`
                     - [chữ] “4237789004” — 68×16 [HUG×HUG] · @ (8, 3) flow · Afacad 13/16px 700 #2d9732 · no-wrap `I6015:64124;2053:24639`
-                  - [chữ] “HSK1 复习 (4)” — 556×20 [FILL×HUG] · @ (92, 2) flow · runs: “HSK1 ” Afacad 16/20px 700 #16a34a; “复习” Noto Sans SC 16/20px 500 #16a34a; “ (4)” Afacad 16/20px 700 #16a34a `6015:64125`
+                  - [chữ] “HSK1 复习 (4)” — 556×20 [FILL×HUG] · @ (92, 2) flow · runs: “HSK1 ” Afacad 16/20px 700 #16a34a (brand/primary); “复习” Noto Sans SC 16/20px 500 #16a34a (brand/primary); “ (4)” Afacad 16/20px 700 #16a34a (brand/primary) `6015:64125`
                   - [icon] **Content Indicators** — 88×24 · @ (656, 0) flow · file /figma/assets/49f5addffce1.svg `6015:64126`
                 - [khối] **Frame 1171274941** — 744×58 [FILL×HUG] · @ (0, 26) flow · column gap 2 `6015:64130`
                   - [khối] **Heading 3** — 744×18 [FILL×HUG] · @ (0, 0) flow · column `6015:64131`
-                    - [chữ] “ÔN TẬP HK I – HK II (BUỔI 4)” — 226×18 [HUG×HUG] · @ (0, 0) flow · Unbounded 14/18px 600 #ededef · no-wrap `6015:64132`
-                  - [chữ] “- Chủ đề Từ vựng HSK1 (phần 1): Gia đình, Cuộc sống, Học tập & Mua sắm|- Cấu trúc Ngữ pháp HSK1 (phần 1): Liên kết, Thời gian & Đánh giá trong câu|- Luyện tập tổng hợp HSK1 (phần 1), Kỹ năng Nghe - Nói - Đọc hiểu” — 744×38 [FILL×HUG] · @ (0, 20) flow · Afacad 15/19px 400 #a1a1aa `6015:64133`
+                    - [chữ] “ÔN TẬP HK I – HK II (BUỔI 4)” — 226×18 [HUG×HUG] · @ (0, 0) flow · Unbounded 14/18px 600 #ededef (text/primary) · no-wrap `6015:64132`
+                  - [chữ] “- Chủ đề Từ vựng HSK1 (phần 1): Gia đình, Cuộc sống, Học tập & Mua sắm|- Cấu trúc Ngữ pháp HSK1 (phần 1): Liên kết, Thời gian & Đánh giá trong câu|- Luyện tập tổng hợp HSK1 (phần 1), Kỹ năng Nghe - Nói - Đọc hiểu” — 744×38 [FILL×HUG] · @ (0, 20) flow · Afacad 15/19px 400 #a1a1aa (text/secondary) `6015:64133`
               - [khối] **Frame 427321971** — 155×24 [HUG×HUG] · @ (0, 88) flow · row gap 8 `6015:64134`
                 - [instance] **Background+Border** ⟨Background+Border: Label=Kỹ Năng, Shape=Pill, Color=Purple⟩ — 70×24 [HUG×HUG] · @ (0, 0) flow · column pad 2 10 2 10 · bg #121213 · radius 6px · border 1px solid #f3e8ff `6015:64135`
                   - [chữ] “Kỹ Năng” — 48×18 [HUG×HUG] · @ (11, 3) flow · Afacad 14/18px 400 #9333ea · no-wrap `I6015:64135;1067:2466`
                 - [instance] **Background+Border** ⟨Background+Border: Label=Kiến Thức, Shape=Pill, Color=Green⟩ — 77×24 [HUG×HUG] · @ (78, 0) flow · column pad 2 10 2 10 · bg #ecfdf5 · radius 6px · border 1px solid #d1fae5 `6015:64136`
                   - [chữ] “Kiến Thức” — 55×18 [HUG×HUG] · @ (11, 3) flow · Afacad 14/18px 400 #059669 (color/semantic/success-text) · no-wrap `I6015:64136;1067:2468`
-        - [khối] **Article - Card 10** — 770×138 [FILL×HUG] · @ (0, 600) flow · row gap 8 pad 12 12 12 12 · bg #18181a · radius 12px · border 1px solid #27272a · shadow 0 1.02px 3.07px 0 rgba(0, 0, 0, 0.06) `6015:64137`
+        - [khối] **Article - Card 10** — 770×138 [FILL×HUG] · @ (0, 600) flow · row gap 8 pad 12 12 12 12 · bg #18181a (bg/surface) · radius 12px · border 1px solid #27272a (border/default) · shadow 0 1.02px 3.07px 0 rgba(0, 0, 0, 0.06) `6015:64137`
           - [khối] **Container** — 744×112 [FILL×HUG] · @ (13, 13) flow · row `6015:64138`
             - [khối] **Margin** — 744×112 [FILL×HUG] · @ (0, 0) flow · column gap 4 `6015:64139`
               - [khối] **Container** — 744×84 [FILL×HUG] · @ (0, 0) flow · column gap 2 `6015:64140`
                 - [khối] **Container** — 744×24 [FILL×HUG] · @ (0, 0) flow · row gap 8 align CENTER `6015:64141`
                   - [instance] **Atom/ID Badge** ⟨Atom/ID Badge: Type=10-digit, Size=20H, Item=02⟩ — 84×22 [HUG×HUG] · @ (0, 1) flow · row pad 3 8 3 8 align CENTER · bg #18181a · radius 6px `6015:64142`
                     - [chữ] “4237789005” — 68×16 [HUG×HUG] · @ (8, 3) flow · Afacad 13/16px 700 #2d9732 · no-wrap `I6015:64142;2053:24639`
-                  - [chữ] “HSK1 复习 (5)” — 556×20 [FILL×HUG] · @ (92, 2) flow · runs: “HSK1 ” Afacad 16/20px 700 #16a34a; “复习” Noto Sans SC 16/20px 700 #16a34a; “ (5)” Afacad 16/20px 700 #16a34a `6015:64143`
+                  - [chữ] “HSK1 复习 (5)” — 556×20 [FILL×HUG] · @ (92, 2) flow · runs: “HSK1 ” Afacad 16/20px 700 #16a34a (brand/primary); “复习” Noto Sans SC 16/20px 700 #16a34a (brand/primary); “ (5)” Afacad 16/20px 700 #16a34a (brand/primary) `6015:64143`
                   - [icon] **Content Indicators** — 88×24 · @ (656, 0) flow · file /figma/assets/42f8dcd83563.svg `6015:64144`
                 - [khối] **Frame 1171274941** — 744×58 [FILL×HUG] · @ (0, 26) flow · column gap 2 `6015:64148`
                   - [khối] **Heading 3** — 744×18 [FILL×HUG] · @ (0, 0) flow · column `6015:64149`
-                    - [chữ] “ÔN TẬP HK I – HK II (BUỔI 5)” — 226×18 [HUG×HUG] · @ (0, 0) flow · Unbounded 14/18px 600 #ededef · no-wrap `6015:64150`
-                  - [chữ] “- Chủ đề Từ vựng HSK1 (phần 1): Gia đình, Cuộc sống, Học tập & Mua sắm|- Cấu trúc Ngữ pháp HSK1 (phần 1): Liên kết, Thời gian & Đánh giá trong câu|- Luyện tập tổng hợp HSK1 (phần 1), Kỹ năng Nghe - Nói - Đọc hiểu” — 744×38 [FILL×HUG] · @ (0, 20) flow · Afacad 15/19px 400 #a1a1aa `6015:64151`
+                    - [chữ] “ÔN TẬP HK I – HK II (BUỔI 5)” — 226×18 [HUG×HUG] · @ (0, 0) flow · Unbounded 14/18px 600 #ededef (text/primary) · no-wrap `6015:64150`
+                  - [chữ] “- Chủ đề Từ vựng HSK1 (phần 1): Gia đình, Cuộc sống, Học tập & Mua sắm|- Cấu trúc Ngữ pháp HSK1 (phần 1): Liên kết, Thời gian & Đánh giá trong câu|- Luyện tập tổng hợp HSK1 (phần 1), Kỹ năng Nghe - Nói - Đọc hiểu” — 744×38 [FILL×HUG] · @ (0, 20) flow · Afacad 15/19px 400 #a1a1aa (text/secondary) `6015:64151`
               - [khối] **Frame 427321971** — 155×24 [HUG×HUG] · @ (0, 88) flow · row gap 8 `6015:64152`
                 - [instance] **Background+Border** ⟨Background+Border: Label=Kỹ Năng, Shape=Pill, Color=Purple⟩ — 70×24 [HUG×HUG] · @ (0, 0) flow · column pad 2 10 2 10 · bg #121213 · radius 6px · border 1px solid #f3e8ff `6015:64153`
                   - [chữ] “Kỹ Năng” — 48×18 [HUG×HUG] · @ (11, 3) flow · Afacad 14/18px 400 #9333ea · no-wrap `I6015:64153;1067:2466`
@@ -213,13 +219,13 @@ Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí ·
       - [khối] **Frame 427321958** — 290×380 [FILL×HUG] · @ (0, 0) flow · column gap 12 `6015:64156`
         - [khối] **Header of Right Panel** — 290×30 [FILL×HUG] · @ (0, 0) flow · row space-between align CENTER `6015:64157`
           - [khối] **Heading 1** — 214×23 [FILL×HUG] · @ (0, 3.5) flow · column `6015:64158`
-            - [chữ] “Danh Sách kỳ” — 307×23 [FIXED×HUG] · @ (0, 0) flow · Unbounded 15/23px 600 #16a34a `6015:64159`
+            - [chữ] “Danh Sách kỳ” — 307×23 [FIXED×HUG] · @ (0, 0) flow · Unbounded 15/23px 600 #16a34a (brand/primary) `6015:64159`
           - [instance] **Bộ lọc · Học kỳ (cấp độ)** ⟨DD/Molecule/Trigger: Placeholder=Chọn..., Clear=false, Count Value=1, Leading=false, Leading Icon=2015:30465, Count=false, Chevron=true, Value=HSK1, Size=XS, State=Default, Content=Value⟩ — 76×30 [HUG×FIXED] · @ (214, 0) flow · row gap 6 pad 0 8 0 12 align CENTER · bg #18181a · radius 8px · border 1px solid #27272a `6015:64160`
             - [khối] **Content** — 32×19 [HUG×HUG] · @ (13, 5.5) flow · row align CENTER · clip `I6015:64160;2015:36007`
               - [chữ] “HSK1” — 32×19 [HUG×HUG] · @ (0, 0) flow · Afacad 15/19px 500 #ededef · no-wrap `I6015:64160;2015:36008`
             - [icon] **Chevron** ⟨Action Icon: Icon=Chevron Down, Size=16⟩ — 16×16 · @ (51, 7) flow · file /figma/assets/3be8e3ba76eb.svg `I6015:64160;2015:36012`
         - [khối] **Frame 427321957** — 290×292 [FILL×HUG] · @ (0, 42) flow · column gap 8 `6015:64161`
-          - [khối] **Main Toggle Item Card** — 290×92 [FILL×HUG] · @ (0, 0) flow · row gap 4 pad 12 12 8 12 align CENTER · bg #18181a · radius 12px · shadow inset 0 0 0 1.5px #16a34a, 0 1.13px 2.25px 0 rgba(0, 0, 0, 0.05) `6015:64162`
+          - [khối] **Main Toggle Item Card** — 290×92 [FILL×HUG] · @ (0, 0) flow · row gap 4 pad 12 12 8 12 align CENTER · bg #18181a (bg/surface) · radius 12px · shadow inset 0 0 0 1.5px #16a34a, 0 1.13px 2.25px 0 rgba(0, 0, 0, 0.05) `6015:64162`
             - [icon] **Atom/Icon Button** ⟨Atom/Icon Button: Icon=Drop & Drag⟩ — 14×22 · @ (-7, 35) abs · file /figma/assets/35050a4eeea2.svg covers (-2, -2) 20×28 `6015:64163`
             - [icon] **Mouse click** ⟨Mouse click⟩ — 22×22 · @ (164, 4) abs · file /figma/assets/8a03d5ed4cfb.svg covers (-1, -1) 26×26 `6015:64164`
             - [khối] **Frame 1171274942** — 263×69 [FILL×FIXED] · @ (13.5, 13.5) flow · column gap 2 `6015:64165`
@@ -231,8 +237,8 @@ Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí ·
                       - [chữ] “Công khai” — 52×16 [HUG×HUG] · @ (0, 0) flow · Afacad 13/16px 700 #2d9732 · text-align center · no-wrap `I6015:64167;2808:44039`
                   - [icon] **Chevron** — 12×13.84 · @ (79, 4.08) flow · file /figma/assets/e43dc6d6bfbf.svg `I6015:64167;2808:44784`
                 - [icon] **Action Icon / More** ⟨Action Icon: Icon=More, Size=18⟩ — 18×18 · @ (245, 2) flow · file /figma/assets/eda2b13313a3.svg `6015:64168`
-              - [chữ] “[2024.11] Nhập Môn Tiếng Trung (HSK1) · HK III” — 263×45 [FILL×FILL] · @ (0, 24) flow · Afacad 15/19px 600 #ededef `6015:64170`
-          - [khối] **Main Toggle Item Card** — 290×92 [FILL×HUG] · @ (0, 100) flow · row gap 4 pad 12 12 8 12 align CENTER · bg #18181a · radius 12px · shadow inset 0 0 0 1.5px #27272a, 0 1.13px 2.25px 0 rgba(0, 0, 0, 0.05) `6015:64171`
+              - [chữ] “[2024.11] Nhập Môn Tiếng Trung (HSK1) · HK III” — 263×45 [FILL×FILL] · @ (0, 24) flow · Afacad 15/19px 600 #ededef (text/primary) `6015:64170`
+          - [khối] **Main Toggle Item Card** — 290×92 [FILL×HUG] · @ (0, 100) flow · row gap 4 pad 12 12 8 12 align CENTER · bg #18181a (bg/surface) · radius 12px · shadow inset 0 0 0 1.5px #27272a, 0 1.13px 2.25px 0 rgba(0, 0, 0, 0.05) `6015:64171`
             - [khối] **Frame 1171274942** — 263×69 [FILL×FIXED] · @ (13.5, 13.5) flow · column gap 2 `6015:64172`
               - [khối] **Frame 1171274943** — 263×22 [FILL×HUG] · @ (0, 0) flow · row space-between align CENTER `6015:64173`
                 - [instance] **Atom/Status** ⟨Atom/Status: Status=Nháp, Size=S⟩ — 74×22 [HUG×HUG] · @ (0, 0) flow · row gap 4 pad 2 6 2 4 justify CENTER align CENTER · bg #102218 · radius 6px · border 1px solid #da9c00 · shadow 0 1.13px 2.25px 0 rgba(0, 0, 0, 0.05) · clip `6015:64174`
@@ -243,8 +249,8 @@ Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí ·
                         - [chữ] “Nháp” — 28×16 [HUG×HUG] · @ (0, 0) flow · Afacad 13/16px 700 #da9c00 · text-align center · no-wrap `I6015:64174;2808:44051`
                   - [icon] **Chevron** — 12×12 · @ (55, 5) flow · file /figma/assets/131557ea0d8c.svg `I6015:64174;2808:44787`
                 - [icon] **Action Icon / More** ⟨Action Icon: Icon=More, Size=18⟩ — 18×18 · @ (245, 2) flow · file /figma/assets/eda2b13313a3.svg `6015:64175`
-              - [chữ] “[2024.11] Nhập Môn Tiếng Trung (HSK1) · HK II” — 263×45 [FILL×FILL] · @ (0, 24) flow · Afacad 15/19px 600 #ededef `6015:64176`
-          - [khối] **Main Toggle Item Card** — 290×92 [FILL×HUG] · @ (0, 200) flow · row space-between pad 12 12 8 12 align CENTER · bg #18181a · radius 12px · shadow inset 0 0 0 1.5px #16a34a, 0 1.13px 2.25px 0 rgba(0, 0, 0, 0.05) `6015:64177`
+              - [chữ] “[2024.11] Nhập Môn Tiếng Trung (HSK1) · HK II” — 263×45 [FILL×FILL] · @ (0, 24) flow · Afacad 15/19px 600 #ededef (text/primary) `6015:64176`
+          - [khối] **Main Toggle Item Card** — 290×92 [FILL×HUG] · @ (0, 200) flow · row space-between pad 12 12 8 12 align CENTER · bg #18181a (bg/surface) · radius 12px · shadow inset 0 0 0 1.5px #16a34a, 0 1.13px 2.25px 0 rgba(0, 0, 0, 0.05) `6015:64177`
             - [khối] **Frame 1171274942** — 263×69 [FILL×FIXED] · @ (13.5, 13.5) flow · column gap 2 `6015:64178`
               - [khối] **Frame 1171274943** — 263×22 [FILL×HUG] · @ (0, 0) flow · row space-between align CENTER `6015:64179`
                 - [instance] **Atom/Status** ⟨Atom/Status: Status=Công khai, Size=S⟩ — 98×22 [HUG×HUG] · @ (0, 0) flow · row gap 4 pad 2 6 2 4 justify CENTER align CENTER · bg #f0ffef · radius 6px · border 1px solid #2d9732 `6015:64180`
@@ -254,18 +260,18 @@ Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí ·
                       - [chữ] “Công khai” — 52×16 [HUG×HUG] · @ (0, 0) flow · Afacad 13/16px 700 #2d9732 · text-align center · no-wrap `I6015:64180;2808:44039`
                   - [icon] **Chevron** — 12×13.84 · @ (79, 4.08) flow · file /figma/assets/e43dc6d6bfbf.svg `I6015:64180;2808:44784`
                 - [icon] **Action Icon / More** ⟨Action Icon: Icon=More, Size=18⟩ — 18×18 · @ (245, 2) flow · file /figma/assets/eda2b13313a3.svg `6015:64181`
-              - [chữ] “[2024.11] Nhập Môn Tiếng Trung (HSK1) · HK I” — 263×45 [FILL×FILL] · @ (0, 24) flow · Afacad 15/19px 600 #ededef `6015:64182`
+              - [chữ] “[2024.11] Nhập Môn Tiếng Trung (HSK1) · HK I” — 263×45 [FILL×FILL] · @ (0, 24) flow · Afacad 15/19px 600 #ededef (text/primary) `6015:64182`
         - [khối] **Add New Package Row** — 290×34 [FILL×HUG] · @ (0, 346) flow · row align CENTER `6015:64190`
           - [instance] **Add New Bar · Thêm mới** ⟨Molecule/Add New Bar: Nút=1075:1478, Icon trái=false, Placeholder=Thêm mới, Type=Box, Size=S, State=Default⟩ — 290×34 [FILL×FIXED] · @ (0, 0) flow · row gap 8 pad 4 8 4 8 align CENTER · bg #121213 · radius 6px · border 1px dashed #cbd5e1 (color/extended/cbd5e1) `6015:64191`
             - [chữ] “Thêm mới” — 244×18 [FILL×HUG] · @ (9, 8) flow · Afacad 14/18px 400 italic #cccccc (color/extended/cccccc) · truncate 1 lines `I6015:64191;5056:365853`
-            - [icon] **Action Button** ⟨Atom/Icon Button: Icon=Add Rounded⟩ — 20×20 · @ (261, 7) flow · file /figma/assets/369c0c8ae320.svg covers (-2, -2) 26×26 `I6015:64191;5056:365854`
+            - [icon] **Action Button** ⟨Atom/Icon Button: Icon=Add Rounded⟩ — 20×20 · @ (261, 7) flow · file /figma/assets/16f5f5d2437c.svg covers (-2, -2) 26×26 `I6015:64191;5056:365854`
   - [instance] **Sidebar · MENU - CD** ⟨MENU - CD: Trang=Khoá học / Quy trình / Học kỳ⟩ — 300×1090 · @ (0, 0) abs · bg #18181a · clip `6015:64295`
     - [khối] **Frame 427322079** — 371.25×1198 · @ (0, -216) abs · bg #18181a `I6015:64295;4901:220630`
-      - [icon] **Subtract** — 332.18×305.61 · @ (277.9, 67.31) abs · file /figma/assets/25815954d7d9.svg covers (1.16, 148.69) 20.94×150.43 `I6015:64295;4901:220632`
+      - [icon] **Subtract** — 332.18×305.61 · @ (277.9, 67.31) abs · file /figma/assets/9448d08545ab.svg covers (1.16, 148.69) 20.94×150.43 `I6015:64295;4901:220632`
       - [icon] **Intersect** — 196.74×223.25 · @ (281.58, 127.62) abs · file /figma/assets/623bf4bd9e75.svg covers (0.61, 88.38) 17.81×130.99 `I6015:64295;4901:220639`
       - [icon] **Vector** — 92.05×189.04 · @ (0, 170.29) abs · file /figma/assets/bccac3a4849d.svg covers (0, 45.71) 92.05×143.33 `I6015:64295;4901:220652`
       - [icon] **Vector** — 485.25×688.49 · @ (-54.28, 531.77) abs · file /figma/assets/43de826034ff.svg covers (54.28, 20.6) 300×651.43 `I6015:64295;4901:220653`
-      - [icon] **Union** — 328.37×643.92 · @ (98.87, 829.04) abs · file /figma/assets/40af3d6d909c.svg covers (0, 0) 201.13×476.96 `I6015:64295;4901:220654`
+      - [icon] **Union** — 328.37×643.92 · @ (98.87, 829.04) abs · file /figma/assets/052a94b444de.svg covers (0, 0) 201.13×476.96 `I6015:64295;4901:220654`
       - [icon] **Group 240002** — 324.75×297.48 · @ (-61.5, 181.5) abs · file /figma/assets/4854dc9ed56d.svg covers (61.5, 34.5) 263.25×262.98 `I6015:64295;4901:220657`
       - [khối] **material-symbols:menu-rounded** — 18×18 · @ (164.25, 240.75) abs · clip · trống `I6015:64295;4901:220678`
       - [khối] **Frame 427322029** — 36×36 · @ (9.75, 541.5) abs · clip · trống `I6015:64295;4901:220679`
@@ -361,33 +367,33 @@ Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí ·
         - [khối] **Container** — 148×32 [FILL×HUG] · @ (44, 2) flow · column `I6015:64344;2008:31771`
           - [chữ] “Học Liệu Ngôn Ngữ” — 148×16 [FILL×HUG] · @ (0, 0) flow · Unbounded 13/16px 600 #ffffff (color/neutral/white) · truncate 1 lines `I6015:64344;2008:31772`
           - [chữ] “CD.dacnhan@gmail.com” — 148×16 [FILL×HUG] · @ (0, 16) flow · Afacad 13/16px 500 #ffffff (color/neutral/white) · truncate 1 lines `I6015:64344;2008:31773`
-      - [icon] **Overlay** — 20×20 · @ (202, 8) flow · file /figma/assets/c19ad83f1e85.svg covers (-2, -2) 26×26 `I6015:64344;2008:31774`
+      - [icon] **Overlay** — 20×20 · @ (202, 8) flow · file /figma/assets/93cec656b378.svg covers (-2, -2) 26×26 `I6015:64344;2008:31774`
     - [instance] **Component 2** ⟨Switch Center: Property 1=Đắc Nhân⟩ — 166×42 · @ (12, 11) abs · row gap 4 pad 8 8 8 8 align CENTER · bg #202023 (org/dac-nhan/bg) · radius 8px · border 1px solid #3f3f46 (org/border) · shadow 0 1px 2px 0 rgba(0, 0, 0, 0.05), 1px 1px 3px 0 rgba(0, 0, 0, 0.15) `6015:64345`
       - [khối] **Frame 427325409** — 128×24 [FILL×HUG] · @ (9, 9) flow · row gap 8 align CENTER `I6015:64345;4019:24203`
         - [icon] **LOGO CENTER** — 24×24 · @ (0, 0) flow · file /figma/assets/c9f359765790.svg covers (-1.78, 0) 27.55×27.56 `I6015:64345;4019:22291`
         - [chữ] “Đắc Nhân” — 96×17 [FILL×HUG] · @ (32, 3.5) flow · Unbounded 14/17px 500 #fb8c3a (org/dac-nhan/fg) · truncate 1 lines `I6015:64345;4019:24214`
       - [icon] **Chevron** ⟨Action Icon: Icon=Chevron Down, Size=16⟩ — 16×16 · @ (141, 13) flow · file /figma/assets/25020368deef.svg `I6015:64345;4019:24215`
-  - [khối] **Menu · Học kỳ (cấp độ)** — 200×261 · @ (1216, 125) abs · column gap 2 pad 8 8 8 8 · bg #18181a · radius 10px · border 1px solid #27272a · shadow 0 6px 16px 0 rgba(0, 0, 0, 0.12) · clip `6015:64346`
+  - [khối] **Menu · Học kỳ (cấp độ)** — 200×261 · @ (1216, 125) abs · column gap 2 pad 8 8 8 8 · bg #18181a (bg/surface) · radius 10px · border 1px solid #27272a (border/default) · shadow 0 6px 16px 0 rgba(0, 0, 0, 0.12) · clip `6015:64346`
     - [khối] **Mục · Tất cả cấp độ** — 182×33 [FILL×HUG] · @ (9, 9) flow · row gap 8 pad 7 12 7 12 align CENTER · radius 6px · clip `6015:64347`
-      - [chữ] “Tất cả cấp độ” — 124×19 [FILL×HUG] · @ (12, 7) flow · Afacad 14/19px 500 #ededef `6015:64348`
+      - [chữ] “Tất cả cấp độ” — 124×19 [FILL×HUG] · @ (12, 7) flow · Afacad 14/19px 500 #ededef (text/primary) `6015:64348`
       - [chữ] “24 kỳ” — 26×16 [HUG×HUG] · @ (144, 8.5) flow · Afacad 12/16px 400 #94a3b8 · no-wrap `6015:64349`
-    - [khối] **Mục · HSK1 · Sơ cấp 1** — 182×33 [FILL×HUG] · @ (9, 44) flow · row gap 8 pad 7 12 7 12 align CENTER · bg #102218 · radius 6px · clip `6015:64350`
-      - [chữ] “HSK1 · Sơ cấp 1” — 131×19 [FILL×HUG] · @ (12, 7) flow · Afacad 14/19px 600 #16a34a `6015:64351`
+    - [khối] **Mục · HSK1 · Sơ cấp 1** — 182×33 [FILL×HUG] · @ (9, 44) flow · row gap 8 pad 7 12 7 12 align CENTER · bg #102218 (bg/brand-tint) · radius 6px · clip `6015:64350`
+      - [chữ] “HSK1 · Sơ cấp 1” — 131×19 [FILL×HUG] · @ (12, 7) flow · Afacad 14/19px 600 #16a34a (brand/primary) `6015:64351`
       - [chữ] “4 kỳ” — 19×16 [HUG×HUG] · @ (151, 8.5) flow · Afacad 12/16px 400 #94a3b8 · no-wrap `6015:64352`
     - [khối] **Mục · HSK2 · Sơ cấp 2** — 182×33 [FILL×HUG] · @ (9, 79) flow · row gap 8 pad 7 12 7 12 align CENTER · radius 6px · clip `6015:64353`
-      - [chữ] “HSK2 · Sơ cấp 2” — 131×19 [FILL×HUG] · @ (12, 7) flow · Afacad 14/19px 500 #ededef `6015:64354`
+      - [chữ] “HSK2 · Sơ cấp 2” — 131×19 [FILL×HUG] · @ (12, 7) flow · Afacad 14/19px 500 #ededef (text/primary) `6015:64354`
       - [chữ] “4 kỳ” — 19×16 [HUG×HUG] · @ (151, 8.5) flow · Afacad 12/16px 400 #94a3b8 · no-wrap `6015:64355`
     - [khối] **Mục · HSK3 · Sơ cấp 3** — 182×33 [FILL×HUG] · @ (9, 114) flow · row gap 8 pad 7 12 7 12 align CENTER · radius 6px · clip `6015:64356`
-      - [chữ] “HSK3 · Sơ cấp 3” — 131×19 [FILL×HUG] · @ (12, 7) flow · Afacad 14/19px 500 #ededef `6015:64357`
+      - [chữ] “HSK3 · Sơ cấp 3” — 131×19 [FILL×HUG] · @ (12, 7) flow · Afacad 14/19px 500 #ededef (text/primary) `6015:64357`
       - [chữ] “4 kỳ” — 19×16 [HUG×HUG] · @ (151, 8.5) flow · Afacad 12/16px 400 #94a3b8 · no-wrap `6015:64358`
     - [khối] **Mục · HSK4 · Trung cấp 1** — 182×33 [FILL×HUG] · @ (9, 149) flow · row gap 8 pad 7 12 7 12 align CENTER · radius 6px · clip `6015:64359`
-      - [chữ] “HSK4 · Trung cấp 1” — 131×19 [FILL×HUG] · @ (12, 7) flow · Afacad 14/19px 500 #ededef `6015:64360`
+      - [chữ] “HSK4 · Trung cấp 1” — 131×19 [FILL×HUG] · @ (12, 7) flow · Afacad 14/19px 500 #ededef (text/primary) `6015:64360`
       - [chữ] “4 kỳ” — 19×16 [HUG×HUG] · @ (151, 8.5) flow · Afacad 12/16px 400 #94a3b8 · no-wrap `6015:64361`
     - [khối] **Mục · HSK5 · Trung cấp** — 182×33 [FILL×HUG] · @ (9, 184) flow · row gap 8 pad 7 12 7 12 align CENTER · radius 6px · clip `6015:64362`
-      - [chữ] “HSK5 · Trung cấp” — 131×19 [FILL×HUG] · @ (12, 7) flow · Afacad 14/19px 500 #ededef `6015:64363`
+      - [chữ] “HSK5 · Trung cấp” — 131×19 [FILL×HUG] · @ (12, 7) flow · Afacad 14/19px 500 #ededef (text/primary) `6015:64363`
       - [chữ] “4 kỳ” — 19×16 [HUG×HUG] · @ (151, 8.5) flow · Afacad 12/16px 400 #94a3b8 · no-wrap `6015:64364`
     - [khối] **Mục · HSK6 · Cao cấp** — 182×33 [FILL×HUG] · @ (9, 219) flow · row gap 8 pad 7 12 7 12 align CENTER · radius 6px · clip `6015:64365`
-      - [chữ] “HSK6 · Cao cấp” — 131×19 [FILL×HUG] · @ (12, 7) flow · Afacad 14/19px 500 #ededef `6015:64366`
+      - [chữ] “HSK6 · Cao cấp” — 131×19 [FILL×HUG] · @ (12, 7) flow · Afacad 14/19px 500 #ededef (text/primary) `6015:64366`
       - [chữ] “4 kỳ” — 19×16 [HUG×HUG] · @ (151, 8.5) flow · Afacad 12/16px 400 #94a3b8 · no-wrap `6015:64367`
 
 ## 5. Component đang dùng
@@ -530,12 +536,12 @@ Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí ·
 | `/figma/assets/845d03c9fecf.svg` | svg | 14 × 14 | I6015:64180;2808:44037 |
 | `/figma/assets/e43dc6d6bfbf.svg` | svg | 12 × 13.84 | I6015:64180;2808:44784 |
 | `/figma/assets/eda2b13313a3.svg` | svg | 18 × 18 | 6015:64181 |
-| `/figma/assets/369c0c8ae320.svg` | svg | 26 × 26 | I6015:64191;5056:365854 |
-| `/figma/assets/25815954d7d9.svg` | svg | 20.94 × 150.43 | I6015:64295;4901:220632 |
+| `/figma/assets/16f5f5d2437c.svg` | svg | 26 × 26 | I6015:64191;5056:365854 |
+| `/figma/assets/9448d08545ab.svg` | svg | 20.94 × 150.43 | I6015:64295;4901:220632 |
 | `/figma/assets/623bf4bd9e75.svg` | svg | 17.81 × 130.99 | I6015:64295;4901:220639 |
 | `/figma/assets/bccac3a4849d.svg` | svg | 92.05 × 143.33 | I6015:64295;4901:220652 |
 | `/figma/assets/43de826034ff.svg` | svg | 300 × 651.43 | I6015:64295;4901:220653 |
-| `/figma/assets/40af3d6d909c.svg` | svg | 201.13 × 476.96 | I6015:64295;4901:220654 |
+| `/figma/assets/052a94b444de.svg` | svg | 201.13 × 476.96 | I6015:64295;4901:220654 |
 | `/figma/assets/4854dc9ed56d.svg` | svg | 263.25 × 262.98 | I6015:64295;4901:220657 |
 | `/figma/assets/88d7e98369ff.svg` | svg | 192 × 28.36 | I6015:64295;4901:220681 |
 | `/figma/assets/efc3a8aff80d.svg` | svg | 28 × 28 | I6015:64295;4901:220686;2245:87816 |
@@ -568,7 +574,7 @@ Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí ·
 | `/figma/assets/cae1412c87a2.svg` | svg | 54 × 44 | I6015:64295;4901:220726 |
 | `/figma/assets/692a4d282fa0.svg` | svg | 62 × 62 | I6015:64295;4901:220731 |
 | `/figma/assets/e9f53eba5b94.svg` | svg | 1140 × 64 | 6015:64297 |
-| `/figma/assets/c19ad83f1e85.svg` | svg | 26 × 26 | I6015:64344;2008:31774 |
+| `/figma/assets/93cec656b378.svg` | svg | 26 × 26 | I6015:64344;2008:31774 |
 | `/figma/assets/c9f359765790.svg` | svg | 27.55 × 27.56 | I6015:64345;4019:22291 |
 | `/figma/assets/25020368deef.svg` | svg | 16 × 16 | I6015:64345;4019:24215 |
 

@@ -1,0 +1,496 @@
+{
+  "pass": true,
+  "thresholds": {
+    "maxPixelDiffPercent": 0.5,
+    "maxBoxDelta": 1,
+    "maxTextBoxDelta": 2.5,
+    "colorThreshold": 0.1,
+    "aaRadius": 1,
+    "subpixel": true,
+    "maxTextNodeDiffPercent": 35
+  },
+  "pixels": {
+    "width": 980,
+    "height": 980,
+    "mismatched": 4586,
+    "percent": 0.478,
+    "shapePercent": 0.007,
+    "textPercent": 2.897,
+    "sizeMismatch": false
+  },
+  "textNodes": [
+    {
+      "id": "6015:64665",
+      "name": "Từ điển Hán Việt trực tuyến",
+      "pixels": 613,
+      "percent": 14.6
+    },
+    {
+      "id": "6015:64520",
+      "name": "ÔN TẬP HK I – HK II (BUỔI 1)",
+      "pixels": 604,
+      "percent": 13.5
+    },
+    {
+      "id": "6015:64577",
+      "name": "Hướng dẫn viết chữ Hán: 你",
+      "pixels": 588,
+      "percent": 11.5
+    },
+    {
+      "id": "I6015:64544;1062:1351",
+      "name": "Huong-dan-hoc-vien.mp4",
+      "pixels": 200,
+      "percent": 6.3
+    },
+    {
+      "id": "I6015:64545;1062:1351",
+      "name": "Huong-dan-hoc-vien.mp4",
+      "pixels": 200,
+      "percent": 6.3
+    },
+    {
+      "id": "I6015:64546;1062:1351",
+      "name": "Huong-dan-hoc-vien.mp4",
+      "pixels": 200,
+      "percent": 6.3
+    },
+    {
+      "id": "I6015:64656;2808:43098",
+      "name": "Đường dẫn tài liệu, website, video tham khảo, ...",
+      "pixels": 270,
+      "percent": 4.5
+    },
+    {
+      "id": "6015:64600",
+      "name": "nǐ",
+      "pixels": 12,
+      "percent": 3.9
+    },
+    {
+      "id": "6015:64677",
+      "name": "Video luyện nghe tiếng Trung (YouTube)",
+      "pixels": 238,
+      "percent": 3.9
+    },
+    {
+      "id": "6015:64557",
+      "name": "MP4",
+      "pixels": 23,
+      "percent": 3.8
+    },
+    {
+      "id": "6015:64580",
+      "name": "MP4",
+      "pixels": 23,
+      "percent": 3.8
+    },
+    {
+      "id": "I6015:64542;2808:43057",
+      "name": "Giáo trình, file PDF, Word, PPT, ...",
+      "pixels": 145,
+      "percent": 3.6
+    },
+    {
+      "id": "I6015:64548;2808:43078",
+      "name": "Video minh hoạ, bài giảng, hướng dẫn phát âm, ...",
+      "pixels": 225,
+      "percent": 3.6
+    },
+    {
+      "id": "I6015:64522;2808:42802",
+      "name": "Badge",
+      "pixels": 48,
+      "percent": 3.5
+    },
+    {
+      "id": "6015:64679",
+      "name": "https://www.youtube.com/@chineselearning",
+      "pixels": 182,
+      "percent": 3.2
+    }
+  ],
+  "regions": [
+    {
+      "x": 392,
+      "y": 712,
+      "width": 16,
+      "height": 8,
+      "pixels": 17,
+      "node": {
+        "id": "6015:64626",
+        "name": "Container",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 456,
+      "y": 712,
+      "width": 16,
+      "height": 8,
+      "pixels": 16,
+      "node": {
+        "id": "6015:64621",
+        "name": "Container",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 328,
+      "y": 712,
+      "width": 16,
+      "height": 8,
+      "pixels": 13,
+      "node": {
+        "id": "6015:64631",
+        "name": "Container",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 264,
+      "y": 712,
+      "width": 16,
+      "height": 8,
+      "pixels": 12,
+      "node": {
+        "id": "6015:64636",
+        "name": "Container",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 256,
+      "y": 840,
+      "width": 8,
+      "height": 16,
+      "pixels": 7,
+      "node": {
+        "id": "6015:64665",
+        "name": "Từ điển Hán Việt trực tuyến",
+        "role": "text"
+      }
+    }
+  ],
+  "boxes": {
+    "measured": 250,
+    "missing": [],
+    "withinThreshold": 250,
+    "buckets": {
+      "≤0.5px": 244,
+      "≤1px": 245,
+      "≤2px": 245,
+      "≤4px": 250,
+      ">4px": 0
+    },
+    "worst": [
+      {
+        "id": "6015:64659",
+        "name": "Container",
+        "role": "container",
+        "delta": 2.34,
+        "dx": 0,
+        "dy": 0,
+        "dw": 2.34,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6015:64663",
+        "name": "Container",
+        "role": "container",
+        "delta": 2.34,
+        "dx": 0,
+        "dy": 0,
+        "dw": 2.34,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6015:64664",
+        "name": "Heading 4",
+        "role": "container",
+        "delta": 2.34,
+        "dx": 0,
+        "dy": 0,
+        "dw": 2.34,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6015:64665",
+        "name": "Từ điển Hán Việt trực tuyến",
+        "role": "text",
+        "delta": 2.34,
+        "dx": 0,
+        "dy": 0,
+        "dw": 2.34,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6015:64666",
+        "name": "Link",
+        "role": "container",
+        "delta": 2.34,
+        "dx": 0,
+        "dy": 0,
+        "dw": 2.34,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6015:64520",
+        "name": "ÔN TẬP HK I – HK II (BUỔI 1)",
+        "role": "text",
+        "delta": 0.97,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.97,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6015:64677",
+        "name": "Video luyện nghe tiếng Trung (YouTube)",
+        "role": "text",
+        "delta": 0.27,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.27,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6015:64542;2808:43055",
+        "name": "Tài liệu học tập (3)",
+        "role": "text",
+        "delta": 0.08,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.08,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6015:64514;2808:42158",
+        "name": "Title",
+        "role": "container",
+        "delta": 0.06,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.06,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6015:64514;2808:42162",
+        "name": "Heading 2",
+        "role": "container",
+        "delta": 0.06,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.06,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6015:64514;2808:42163",
+        "name": "Title",
+        "role": "text",
+        "delta": 0.06,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.06,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6015:64522",
+        "name": "Atom/Badge",
+        "role": "instance",
+        "delta": 0.03,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.03,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6015:64522;2808:42802",
+        "name": "Badge",
+        "role": "text",
+        "delta": 0.03,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.03,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6015:64523",
+        "name": "•",
+        "role": "text",
+        "delta": 0.03,
+        "dx": 0.03,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6015:64524",
+        "name": "90 phút",
+        "role": "text",
+        "delta": 0.03,
+        "dx": 0.03,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6015:64525",
+        "name": "•",
+        "role": "text",
+        "delta": 0.03,
+        "dx": 0.03,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6015:64526",
+        "name": "Ngày tạo: 12.09.2025",
+        "role": "text",
+        "delta": 0.03,
+        "dx": 0.03,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6015:64527",
+        "name": "•",
+        "role": "text",
+        "delta": 0.03,
+        "dx": 0.03,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6015:64528",
+        "name": "Ngày cập nhật: 16.09.2025",
+        "role": "text",
+        "delta": 0.03,
+        "dx": 0.03,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6015:64544;1062:1357",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.03,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.03,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6015:64544;1062:1358",
+        "name": "Cập nhật",
+        "role": "text",
+        "delta": 0.03,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.03,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6015:64545;1062:1357",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.03,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.03,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6015:64545;1062:1358",
+        "name": "Cập nhật",
+        "role": "text",
+        "delta": 0.03,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.03,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6015:64546;1062:1357",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.03,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.03,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6015:64546;1062:1358",
+        "name": "Cập nhật",
+        "role": "text",
+        "delta": 0.03,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.03,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      }
+    ],
+    "maxDelta": 2.34,
+    "over": []
+  },
+  "failures": [],
+  "url": "http://localhost:3000/hoc-ky/bai-hoc/popup-chi-tiet-bai-hoc-3-dk",
+  "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
+  "consoleErrors": [],
+  "rootFound": true
+}

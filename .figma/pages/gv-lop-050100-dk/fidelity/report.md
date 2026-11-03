@@ -1,18 +1,18 @@
 # Fidelity: GV-LOP-050100-DK — Chi tiết lớp / Tự học / Trống
 
-- URL: `http://localhost:3108/chi-tiet-lop/tu-hoc/trong-dk`
+- URL: `http://localhost:3000/chi-tiet-lop/tu-hoc/trong-dk`
 - Verdict: **PASS**
-- Pixels outside text: **0%** differ (limit 0.5%); all pixels: 0.126%; inside text boxes: 2.421% (glyph rendering)
+- Pixels outside text: **0%** differ (limit 0.5%); all pixels: 0.112%; inside text boxes: 2.147% (glyph rendering)
 - Boxes: 111/111 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 109, ≤1px: 111, ≤2px: 111, ≤4px: 111, >4px: 0
 
 ## Text boxes with most differing pixels (limit 35%)
 
 | Text | Differing |
 | --- | --- |
-| Label (`I4333:8772;2245:87914`) | 12% |
 | Label (`I4899:187802;2245:87908`) | 8.5% |
 | Label (`I4333:8771;2245:87908`) | 6.3% |
 | Label (`I4333:8768;689:15190`) | 4.6% |
+| Label (`I4333:8772;2245:87914`) | 4.3% |
 | Label (`I4333:8777;689:15190`) | 3.9% |
 | Label (`I4333:8773;689:15190`) | 3.6% |
 | Label (`I4333:8779;2245:87908`) | 2.8% |

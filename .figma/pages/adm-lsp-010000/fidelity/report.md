@@ -1,6 +1,6 @@
 # Fidelity: ADM-LSP-010000 — Lương / Lương SP
 
-- URL: `http://localhost:3108/luong/luong-sp`
+- URL: `http://localhost:3000/luong/luong-sp`
 - Verdict: **PASS**
 - Pixels outside text: **0.009%** differ (limit 0.5%); all pixels: 0.101%; inside text boxes: 0.415% (glyph rendering)
 - Boxes: 394/394 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 394, ≤1px: 394, ≤2px: 394, ≤4px: 394, >4px: 0

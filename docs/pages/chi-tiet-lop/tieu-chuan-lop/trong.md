@@ -5,7 +5,7 @@
 > **Nguồn:** PLS-ICS T8/2026 ›             ├─ TIÊU CHUẨN LỚP › GV-LOP-060100 — Chi tiết lớp / Tiêu chuẩn lớp / Trống (`4333:13208`, file `rRVs5HX0kIHffbS0V40djG`)  
 > **Route:** `/chi-tiet-lop/tieu-chuan-lop/trong`  
 > **Khung thiết kế:** 1440 × 810 px (cắt phần tràn ra ngoài khung)  
-> **Xuất lúc:** 2026-11-02T03:54:36.406Z  
+> **Xuất lúc:** 2026-11-03T01:09:59.178Z  
 > **Spec đầy đủ (giá trị chính xác từng node):** `../../../../.figma/pages/gv-lop-060100/page-spec.json`
 
 ## 1. Tổng quan

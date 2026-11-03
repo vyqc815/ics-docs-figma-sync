@@ -12,19 +12,13 @@
   "pixels": {
     "width": 1440,
     "height": 866,
-    "mismatched": 1659,
-    "percent": 0.133,
+    "mismatched": 1233,
+    "percent": 0.099,
     "shapePercent": 0.002,
-    "textPercent": 0.899,
+    "textPercent": 0.665,
     "sizeMismatch": false
   },
   "textNodes": [
-    {
-      "id": "I7015:17430;2245:87774",
-      "name": "Label",
-      "pixels": 479,
-      "percent": 16.6
-    },
     {
       "id": "7015:16346",
       "name": "Theo tháng",
@@ -90,6 +84,12 @@
       "name": "Phụ Trách Lớp Đắc Nhân",
       "pixels": 50,
       "percent": 1.9
+    },
+    {
+      "id": "I7015:17430;2245:87774",
+      "name": "Label",
+      "pixels": 53,
+      "percent": 1.8
     },
     {
       "id": "I7015:17438;2245:87829",
@@ -453,7 +453,7 @@
     "over": []
   },
   "failures": [],
-  "url": "http://localhost:3108/trang-chu/thong-ke-theo-thang-dk",
+  "url": "http://localhost:3000/trang-chu/thong-ke-theo-thang-dk",
   "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
   "consoleErrors": [],
   "rootFound": true

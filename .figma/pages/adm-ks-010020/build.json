@@ -1,0 +1,22 @@
+{
+  "route": "/khao-sat/tao-khao-sat/cau-hoi-tu-luan-danh-gia",
+  "pageFile": "components/figma/adm-ks-010020/index.tsx",
+  "docFile": "docs/pages/khao-sat/tao-khao-sat/cau-hoi-tu-luan-danh-gia.md",
+  "sections": [
+    {
+      "nodeId": "4915:243045",
+      "component": "SidebarMenuAdmin6",
+      "file": "components/figma/shared/SidebarMenuAdmin6.tsx"
+    },
+    {
+      "nodeId": "4262:149110",
+      "component": "Header25",
+      "file": "components/figma/shared/Header25.tsx"
+    },
+    {
+      "nodeId": "4262:149159",
+      "component": "MaincontentTaoKhaoSat",
+      "file": "components/figma/adm-ks-010020/MaincontentTaoKhaoSat.tsx"
+    }
+  ]
+}

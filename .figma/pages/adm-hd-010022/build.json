@@ -1,0 +1,34 @@
+{
+  "route": "/hoa-don/popup-ho-so-hoc-vien/lich-su-hoa-don/mo-chi-tiet-hoc-phi-hover",
+  "pageFile": "components/figma/adm-hd-010022/index.tsx",
+  "docFile": "docs/pages/hoa-don/popup-ho-so-hoc-vien/lich-su-hoa-don/mo-chi-tiet-hoc-phi-hover.md",
+  "sections": [
+    {
+      "nodeId": "3004:73104",
+      "component": "PopupHeader",
+      "file": "components/figma/shared/PopupHeader.tsx"
+    },
+    {
+      "nodeId": "3004:73105",
+      "component": "Body",
+      "file": "components/figma/adm-hd-010022/Body.tsx"
+    },
+    {
+      "nodeId": "3058:101170",
+      "component": "TooltipLienHe",
+      "file": "components/figma/adm-hd-010022/TooltipLienHe.tsx"
+    },
+    {
+      "nodeId": "3058:101183",
+      "component": "TooltipThongTinLop",
+      "file": "components/figma/adm-hd-010022/TooltipThongTinLop.tsx"
+    }
+  ],
+  "idAlias": {
+    "3004:73104": "2731:75566",
+    "I3004:73104;2514:153340": "I2731:75566;2514:153340",
+    "I3004:73104;2711:67900": "I2731:75566;2711:67900",
+    "I3004:73104;2514:153341": "I2731:75566;2514:153341",
+    "I3004:73104;2514:153342": "I2731:75566;2514:153342"
+  }
+}

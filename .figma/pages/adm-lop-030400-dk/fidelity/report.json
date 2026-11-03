@@ -1,5 +1,5 @@
 {
-  "pass": false,
+  "pass": true,
   "thresholds": {
     "maxPixelDiffPercent": 0.5,
     "maxBoxDelta": 1,
@@ -12,37 +12,13 @@
   "pixels": {
     "width": 1440,
     "height": 1280,
-    "mismatched": 6655,
-    "percent": 0.361,
-    "shapePercent": 0.051,
-    "textPercent": 1.574,
+    "mismatched": 5248,
+    "percent": 0.285,
+    "shapePercent": 0.006,
+    "textPercent": 1.416,
     "sizeMismatch": false
   },
   "textNodes": [
-    {
-      "id": "I4056:111748;1308:6749",
-      "name": "100%",
-      "pixels": 67,
-      "percent": 19.9
-    },
-    {
-      "id": "I4056:111749;1308:6749",
-      "name": "100%",
-      "pixels": 67,
-      "percent": 19.9
-    },
-    {
-      "id": "I4056:111760;1308:6749",
-      "name": "100%",
-      "pixels": 67,
-      "percent": 19.9
-    },
-    {
-      "id": "I4056:111761;1308:6749",
-      "name": "100%",
-      "pixels": 67,
-      "percent": 19.9
-    },
     {
       "id": "4056:111700",
       "name": "ÔN TẬP: Giữa Kỳ 1",
@@ -60,12 +36,6 @@
       "name": "Label",
       "pixels": 329,
       "percent": 13.7
-    },
-    {
-      "id": "I4056:111912;2245:87914",
-      "name": "Label",
-      "pixels": 305,
-      "percent": 12.7
     },
     {
       "id": "I4056:111911;2245:87908",
@@ -108,123 +78,45 @@
       "name": "Giáo trình, file PDF, Word, PPT, ...",
       "pixels": 153,
       "percent": 3.8
+    },
+    {
+      "id": "I4560:31747;2808:43078",
+      "name": "Video minh hoạ, bài giảng, hướng dẫn phát âm, ...",
+      "pixels": 233,
+      "percent": 3.7
+    },
+    {
+      "id": "4560:31776",
+      "name": "Hướng dẫn viết chữ Hán: 你",
+      "pixels": 327,
+      "percent": 3.6
+    },
+    {
+      "id": "4560:31799",
+      "name": "nǐ",
+      "pixels": 11,
+      "percent": 3.6
+    },
+    {
+      "id": "I4056:111788;1050:2409",
+      "name": "Badge",
+      "pixels": 7,
+      "percent": 3.5
+    },
+    {
+      "id": "4560:31796",
+      "name": "07:40",
+      "pixels": 20,
+      "percent": 3.3
     }
   ],
   "regions": [
     {
       "x": 752,
-      "y": 832,
-      "width": 24,
-      "height": 16,
-      "pixels": 107,
-      "node": {
-        "id": "4560:31838",
-        "name": "Frame 427321972",
-        "role": "container"
-      }
-    },
-    {
-      "x": 920,
-      "y": 832,
-      "width": 24,
-      "height": 16,
-      "pixels": 106,
-      "node": {
-        "id": "4560:31838",
-        "name": "Frame 427321972",
-        "role": "container"
-      }
-    },
-    {
-      "x": 664,
-      "y": 832,
-      "width": 32,
-      "height": 16,
-      "pixels": 103,
-      "node": {
-        "id": "4560:31838",
-        "name": "Frame 427321972",
-        "role": "container"
-      }
-    },
-    {
-      "x": 920,
-      "y": 856,
-      "width": 24,
-      "height": 16,
-      "pixels": 101,
-      "node": {
-        "id": "4560:31823",
-        "name": "Container",
-        "role": "container"
-      }
-    },
-    {
-      "x": 664,
-      "y": 856,
-      "width": 24,
-      "height": 16,
-      "pixels": 97,
-      "node": {
-        "id": "4560:31838",
-        "name": "Frame 427321972",
-        "role": "container"
-      }
-    },
-    {
-      "x": 752,
-      "y": 856,
-      "width": 24,
-      "height": 16,
-      "pixels": 92,
-      "node": {
-        "id": "4560:31833",
-        "name": "Container",
-        "role": "container"
-      }
-    },
-    {
-      "x": 840,
-      "y": 832,
-      "width": 24,
-      "height": 16,
-      "pixels": 87,
-      "node": {
-        "id": "4560:31838",
-        "name": "Frame 427321972",
-        "role": "container"
-      }
-    },
-    {
-      "x": 840,
-      "y": 856,
-      "width": 24,
-      "height": 16,
-      "pixels": 84,
-      "node": {
-        "id": "4560:31828",
-        "name": "Container",
-        "role": "container"
-      }
-    },
-    {
-      "x": 928,
       "y": 888,
-      "width": 16,
-      "height": 16,
-      "pixels": 40,
-      "node": {
-        "id": "4560:31820",
-        "name": "Container",
-        "role": "icon"
-      }
-    },
-    {
-      "x": 760,
-      "y": 888,
-      "width": 16,
-      "height": 16,
-      "pixels": 36,
+      "width": 24,
+      "height": 8,
+      "pixels": 25,
       "node": {
         "id": "4560:31830",
         "name": "Container",
@@ -235,8 +127,8 @@
       "x": 672,
       "y": 888,
       "width": 16,
-      "height": 16,
-      "pixels": 32,
+      "height": 8,
+      "pixels": 19,
       "node": {
         "id": "4560:31835",
         "name": "Container",
@@ -247,10 +139,22 @@
       "x": 840,
       "y": 888,
       "width": 16,
-      "height": 16,
-      "pixels": 30,
+      "height": 8,
+      "pixels": 18,
       "node": {
         "id": "4560:31825",
+        "name": "Container",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 928,
+      "y": 888,
+      "width": 16,
+      "height": 8,
+      "pixels": 18,
+      "node": {
+        "id": "4560:31820",
         "name": "Container",
         "role": "icon"
       }
@@ -293,161 +197,17 @@
     }
   ],
   "boxes": {
-    "measured": 377,
+    "measured": 380,
     "missing": [],
-    "withinThreshold": 365,
+    "withinThreshold": 380,
     "buckets": {
-      "≤0.5px": 359,
-      "≤1px": 359,
-      "≤2px": 359,
-      "≤4px": 365,
-      ">4px": 12
+      "≤0.5px": 374,
+      "≤1px": 374,
+      "≤2px": 374,
+      "≤4px": 380,
+      ">4px": 0
     },
     "worst": [
-      {
-        "id": "4560:31820",
-        "name": "Container",
-        "role": "icon",
-        "delta": 82,
-        "dx": 0,
-        "dy": -82,
-        "dw": 0,
-        "dh": 0,
-        "limit": 2.5,
-        "textDriven": true
-      },
-      {
-        "id": "4560:31825",
-        "name": "Container",
-        "role": "icon",
-        "delta": 82,
-        "dx": 0,
-        "dy": -82,
-        "dw": 0,
-        "dh": 0,
-        "limit": 2.5,
-        "textDriven": true
-      },
-      {
-        "id": "4560:31830",
-        "name": "Container",
-        "role": "icon",
-        "delta": 82,
-        "dx": 0,
-        "dy": -82,
-        "dw": 0,
-        "dh": 0,
-        "limit": 2.5,
-        "textDriven": true
-      },
-      {
-        "id": "4560:31835",
-        "name": "Container",
-        "role": "icon",
-        "delta": 82,
-        "dx": 0,
-        "dy": -82,
-        "dw": 0,
-        "dh": 0,
-        "limit": 2.5,
-        "textDriven": true
-      },
-      {
-        "id": "4560:31818",
-        "name": "Container",
-        "role": "container",
-        "delta": 76.63,
-        "dx": -76.62,
-        "dy": -51,
-        "dw": 0,
-        "dh": 0,
-        "limit": 2.5,
-        "textDriven": true
-      },
-      {
-        "id": "4560:31823",
-        "name": "Container",
-        "role": "container",
-        "delta": 76.63,
-        "dx": -76.63,
-        "dy": -51,
-        "dw": 0,
-        "dh": 0,
-        "limit": 2.5,
-        "textDriven": true
-      },
-      {
-        "id": "4560:31828",
-        "name": "Container",
-        "role": "container",
-        "delta": 76.63,
-        "dx": -76.62,
-        "dy": -51,
-        "dw": 0,
-        "dh": 0,
-        "limit": 2.5,
-        "textDriven": true
-      },
-      {
-        "id": "4560:31833",
-        "name": "Container",
-        "role": "container",
-        "delta": 76.63,
-        "dx": -76.63,
-        "dy": -51,
-        "dw": 0,
-        "dh": 0,
-        "limit": 2.5,
-        "textDriven": true
-      },
-      {
-        "id": "4560:31819",
-        "name": "mā",
-        "role": "text",
-        "delta": 27,
-        "dx": -19,
-        "dy": -27,
-        "dw": 0,
-        "dh": 0,
-        "limit": 2.5,
-        "textDriven": true
-      },
-      {
-        "id": "4560:31824",
-        "name": "má",
-        "role": "text",
-        "delta": 27,
-        "dx": -19,
-        "dy": -27,
-        "dw": 0,
-        "dh": 0,
-        "limit": 2.5,
-        "textDriven": true
-      },
-      {
-        "id": "4560:31829",
-        "name": "mǎ",
-        "role": "text",
-        "delta": 27,
-        "dx": -19,
-        "dy": -27,
-        "dw": 0,
-        "dh": 0,
-        "limit": 2.5,
-        "textDriven": true
-      },
-      {
-        "id": "4560:31834",
-        "name": "mà",
-        "role": "text",
-        "delta": 27,
-        "dx": -19,
-        "dy": -27,
-        "dw": 0,
-        "dh": 0,
-        "limit": 2.5,
-        "textDriven": true
-      },
       {
         "id": "4056:111700",
         "name": "ÔN TẬP: Giữa Kỳ 1",
@@ -603,160 +363,157 @@
         "dh": 0,
         "limit": 2.5,
         "textDriven": true
+      },
+      {
+        "id": "I4560:31745;1062:1358",
+        "name": "Cập nhật",
+        "role": "text",
+        "delta": 0.03,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.03,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4560:31797",
+        "name": "Chữ nǐ v",
+        "role": "container",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": -0.01,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4560:31798",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": -0.01,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4560:31799",
+        "name": "nǐ",
+        "role": "text",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": -0.01,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4560:31800",
+        "name": "Icon",
+        "role": "icon",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": -0.01,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4560:31842",
+        "name": "Thumbnail mặc định / Icon",
+        "role": "icon",
+        "delta": 0.01,
+        "dx": -0.01,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4560:31849",
+        "name": "Thumbnail mặc định / Icon",
+        "role": "icon",
+        "delta": 0.01,
+        "dx": -0.01,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:111856",
+        "name": "Subtract",
+        "role": "icon",
+        "delta": 0.01,
+        "dx": -0.01,
+        "dy": -0.01,
+        "dw": -0.01,
+        "dh": 0,
+        "limit": 1,
+        "textDriven": false
+      },
+      {
+        "id": "4056:111863",
+        "name": "Intersect",
+        "role": "icon",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": -0.01,
+        "dw": -0.01,
+        "dh": 0,
+        "limit": 1,
+        "textDriven": false
+      },
+      {
+        "id": "4056:111877",
+        "name": "Vector",
+        "role": "icon",
+        "delta": 0.01,
+        "dx": 0.01,
+        "dy": 0,
+        "dw": 0,
+        "dh": -0.01,
+        "limit": 1,
+        "textDriven": false
+      },
+      {
+        "id": "4056:111878",
+        "name": "Union",
+        "role": "icon",
+        "delta": 0.01,
+        "dx": -0.01,
+        "dy": 0,
+        "dw": -0.01,
+        "dh": -0.01,
+        "limit": 1,
+        "textDriven": false
+      },
+      {
+        "id": "4056:111881",
+        "name": "Group 240002",
+        "role": "icon",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": -0.01,
+        "limit": 1,
+        "textDriven": false
       }
     ],
-    "maxDelta": 82,
-    "over": [
-      {
-        "id": "4560:31820",
-        "name": "Container",
-        "role": "icon",
-        "delta": 82,
-        "dx": 0,
-        "dy": -82,
-        "dw": 0,
-        "dh": 0,
-        "limit": 2.5,
-        "textDriven": true
-      },
-      {
-        "id": "4560:31825",
-        "name": "Container",
-        "role": "icon",
-        "delta": 82,
-        "dx": 0,
-        "dy": -82,
-        "dw": 0,
-        "dh": 0,
-        "limit": 2.5,
-        "textDriven": true
-      },
-      {
-        "id": "4560:31830",
-        "name": "Container",
-        "role": "icon",
-        "delta": 82,
-        "dx": 0,
-        "dy": -82,
-        "dw": 0,
-        "dh": 0,
-        "limit": 2.5,
-        "textDriven": true
-      },
-      {
-        "id": "4560:31835",
-        "name": "Container",
-        "role": "icon",
-        "delta": 82,
-        "dx": 0,
-        "dy": -82,
-        "dw": 0,
-        "dh": 0,
-        "limit": 2.5,
-        "textDriven": true
-      },
-      {
-        "id": "4560:31818",
-        "name": "Container",
-        "role": "container",
-        "delta": 76.63,
-        "dx": -76.62,
-        "dy": -51,
-        "dw": 0,
-        "dh": 0,
-        "limit": 2.5,
-        "textDriven": true
-      },
-      {
-        "id": "4560:31823",
-        "name": "Container",
-        "role": "container",
-        "delta": 76.63,
-        "dx": -76.63,
-        "dy": -51,
-        "dw": 0,
-        "dh": 0,
-        "limit": 2.5,
-        "textDriven": true
-      },
-      {
-        "id": "4560:31828",
-        "name": "Container",
-        "role": "container",
-        "delta": 76.63,
-        "dx": -76.62,
-        "dy": -51,
-        "dw": 0,
-        "dh": 0,
-        "limit": 2.5,
-        "textDriven": true
-      },
-      {
-        "id": "4560:31833",
-        "name": "Container",
-        "role": "container",
-        "delta": 76.63,
-        "dx": -76.63,
-        "dy": -51,
-        "dw": 0,
-        "dh": 0,
-        "limit": 2.5,
-        "textDriven": true
-      },
-      {
-        "id": "4560:31819",
-        "name": "mā",
-        "role": "text",
-        "delta": 27,
-        "dx": -19,
-        "dy": -27,
-        "dw": 0,
-        "dh": 0,
-        "limit": 2.5,
-        "textDriven": true
-      },
-      {
-        "id": "4560:31824",
-        "name": "má",
-        "role": "text",
-        "delta": 27,
-        "dx": -19,
-        "dy": -27,
-        "dw": 0,
-        "dh": 0,
-        "limit": 2.5,
-        "textDriven": true
-      },
-      {
-        "id": "4560:31829",
-        "name": "mǎ",
-        "role": "text",
-        "delta": 27,
-        "dx": -19,
-        "dy": -27,
-        "dw": 0,
-        "dh": 0,
-        "limit": 2.5,
-        "textDriven": true
-      },
-      {
-        "id": "4560:31834",
-        "name": "mà",
-        "role": "text",
-        "delta": 27,
-        "dx": -19,
-        "dy": -27,
-        "dw": 0,
-        "dh": 0,
-        "limit": 2.5,
-        "textDriven": true
-      }
-    ]
+    "maxDelta": 2.38,
+    "over": []
   },
-  "failures": [
-    "12 elements are off by more than their limit (1px, 2.5px for text-driven; worst 82px)."
-  ],
-  "url": "http://localhost:3108/lop-hoc/bai-hoc/tai-nguyen-dk",
+  "failures": [],
+  "url": "http://localhost:3000/lop-hoc/bai-hoc/tai-nguyen-dk",
   "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
   "consoleErrors": [],
   "rootFound": true

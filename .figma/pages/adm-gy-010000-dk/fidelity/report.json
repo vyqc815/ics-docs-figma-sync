@@ -12,19 +12,13 @@
   "pixels": {
     "width": 1440,
     "height": 810,
-    "mismatched": 2656,
-    "percent": 0.228,
+    "mismatched": 2409,
+    "percent": 0.207,
     "shapePercent": 0.002,
-    "textPercent": 1.19,
+    "textPercent": 1.078,
     "sizeMismatch": false
   },
   "textNodes": [
-    {
-      "id": "I4343:86866;2245:87774",
-      "name": "Label",
-      "pixels": 272,
-      "percent": 9.4
-    },
     {
       "id": "4343:86928",
       "name": "Góp Ý Về Bài Tập Về Nhà",
@@ -108,6 +102,12 @@
       "name": "Label",
       "pixels": 61,
       "percent": 2.4
+    },
+    {
+      "id": "I4343:86865;2245:87768",
+      "name": "Label",
+      "pixels": 62,
+      "percent": 2.2
     }
   ],
   "regions": [
@@ -465,7 +465,7 @@
     "over": []
   },
   "failures": [],
-  "url": "http://localhost:3108/gop-y/hoc-vien-dk",
+  "url": "http://localhost:3000/gop-y/hoc-vien-dk",
   "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
   "consoleErrors": [],
   "rootFound": true

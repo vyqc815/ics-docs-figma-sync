@@ -1,0 +1,435 @@
+{
+  "pass": true,
+  "thresholds": {
+    "maxPixelDiffPercent": 0.5,
+    "maxBoxDelta": 1,
+    "maxTextBoxDelta": 2.5,
+    "colorThreshold": 0.1,
+    "aaRadius": 1,
+    "subpixel": true,
+    "maxTextNodeDiffPercent": 35
+  },
+  "pixels": {
+    "width": 1440,
+    "height": 810,
+    "mismatched": 10933,
+    "percent": 0.937,
+    "shapePercent": 0,
+    "textPercent": 3.649,
+    "sizeMismatch": false
+  },
+  "textNodes": [
+    {
+      "id": "I3065:47600;1391:17481",
+      "name": "3",
+      "pixels": 24,
+      "percent": 10.9
+    },
+    {
+      "id": "I3065:47600;1391:17479",
+      "name": "2",
+      "pixels": 23,
+      "percent": 10.5
+    },
+    {
+      "id": "3065:47320",
+      "name": "Số lượng",
+      "pixels": 142,
+      "percent": 9.5
+    },
+    {
+      "id": "I3065:47600;1391:17487",
+      "name": "Sau",
+      "pixels": 52,
+      "percent": 9.5
+    },
+    {
+      "id": "I2929:45650;2015:36008",
+      "name": "Value",
+      "pixels": 127,
+      "percent": 9.3
+    },
+    {
+      "id": "3065:47339",
+      "name": "Nguyễn Công Thành",
+      "pixels": 278,
+      "percent": 8.7
+    },
+    {
+      "id": "3065:47369",
+      "name": "Nguyễn Công Thành",
+      "pixels": 278,
+      "percent": 8.7
+    },
+    {
+      "id": "3065:47398",
+      "name": "Nguyễn Công Thành",
+      "pixels": 278,
+      "percent": 8.7
+    },
+    {
+      "id": "3065:47427",
+      "name": "Nguyễn Công Thành",
+      "pixels": 278,
+      "percent": 8.7
+    },
+    {
+      "id": "3065:47456",
+      "name": "Nguyễn Công Thành",
+      "pixels": 278,
+      "percent": 8.7
+    },
+    {
+      "id": "3065:47485",
+      "name": "Nguyễn Công Thành",
+      "pixels": 278,
+      "percent": 8.7
+    },
+    {
+      "id": "3065:47514",
+      "name": "Nguyễn Công Thành",
+      "pixels": 278,
+      "percent": 8.7
+    },
+    {
+      "id": "3065:47543",
+      "name": "Nguyễn Công Thành",
+      "pixels": 278,
+      "percent": 8.7
+    },
+    {
+      "id": "3065:47572",
+      "name": "Nguyễn Công Thành",
+      "pixels": 278,
+      "percent": 8.7
+    },
+    {
+      "id": "I2929:45649;2015:36008",
+      "name": "Value",
+      "pixels": 172,
+      "percent": 8.3
+    }
+  ],
+  "regions": [],
+  "boxes": {
+    "measured": 429,
+    "missing": [],
+    "withinThreshold": 429,
+    "buckets": {
+      "≤0.5px": 429,
+      "≤1px": 429,
+      "≤2px": 429,
+      "≤4px": 429,
+      ">4px": 0
+    },
+    "worst": [
+      {
+        "id": "3065:47537",
+        "name": "Atom/Badge",
+        "role": "instance",
+        "delta": 0.08,
+        "dx": -0.05,
+        "dy": 0,
+        "dw": 0.08,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I3065:47537;2015:30309",
+        "name": "Badge",
+        "role": "text",
+        "delta": 0.08,
+        "dx": -0.05,
+        "dy": 0,
+        "dw": 0.08,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I3065:47537;2015:30310",
+        "name": "Dropdown Icon",
+        "role": "icon",
+        "delta": 0.03,
+        "dx": 0.03,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4915:250766;4915:218691",
+        "name": "Frame 1171274926",
+        "role": "icon",
+        "delta": 0.02,
+        "dx": 0,
+        "dy": -0.02,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2929:45642",
+        "name": "MainContent",
+        "role": "container",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": -0.01,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4915:250766;4915:218676",
+        "name": "Left: ICS Logo & Toggle",
+        "role": "container",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": -0.01,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4915:250766;4915:218677",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": -0.01,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4915:250766;4915:218678",
+        "name": "Navigation / Sidebar Menu / Light",
+        "role": "icon",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": -0.01,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4915:250766;4915:218690",
+        "name": "v20.07.2026_17:30",
+        "role": "text",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": -0.01,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2929:45643",
+        "name": "Frame 427321957",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2929:45644",
+        "name": "Frame 427321947",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2929:45645",
+        "name": "Danh sách đơn sách",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2929:45646",
+        "name": "Atom/Icon Button",
+        "role": "icon",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2929:45647",
+        "name": "Filter Pills Toolbar",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2929:45648",
+        "name": "Atom/Input",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I2929:45648;1739:32348",
+        "name": "Frame 427321959",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I2929:45648;1739:32349",
+        "name": "SVG",
+        "role": "icon",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I2929:45648;1739:32351",
+        "name": "Tìm nội dung...",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4713:129562",
+        "name": "Dropdown · Trung tâm",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4713:129562;2015:36007",
+        "name": "Content",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4713:129562;2015:36008",
+        "name": "Value",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4713:129562;2015:36012",
+        "name": "Chevron",
+        "role": "icon",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2929:45649",
+        "name": "Dropdown",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I2929:45649;2015:36007",
+        "name": "Content",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I2929:45649;2015:36008",
+        "name": "Value",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      }
+    ],
+    "maxDelta": 0.08,
+    "over": []
+  },
+  "failures": [],
+  "url": "http://localhost:3000/ship-sach/danh-sach-don-sach/chon-tat-ca-xuat-excel",
+  "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
+  "consoleErrors": [],
+  "rootFound": true
+}

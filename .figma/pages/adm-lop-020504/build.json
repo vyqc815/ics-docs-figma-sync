@@ -1,0 +1,34 @@
+{
+  "route": "/chi-tiet-lop-hoc/danh-gia/trong",
+  "pageFile": "components/figma/adm-lop-020504/index.tsx",
+  "docFile": "docs/pages/chi-tiet-lop-hoc/danh-gia/trong.md",
+  "sections": [
+    {
+      "nodeId": "769:37127",
+      "component": "Body6",
+      "file": "components/figma/shared/Body6.tsx"
+    },
+    {
+      "nodeId": "3497:46794",
+      "component": "Header27",
+      "file": "components/figma/shared/Header27.tsx"
+    },
+    {
+      "nodeId": "4915:226333",
+      "component": "SidebarMenuAdmin",
+      "file": "components/figma/adm-lop-020504/SidebarMenuAdmin.tsx"
+    }
+  ],
+  "idAlias": {
+    "3497:46794": "3497:45868",
+    "4050:116250": "4050:115959",
+    "3497:46842": "3497:45916",
+    "I3497:46842;2008:30986": "I3497:45916;2008:30986",
+    "I3497:46842;2008:31747": "I3497:45916;2008:31747",
+    "I3497:46842;2008:31748": "I3497:45916;2008:31748",
+    "I3497:46842;1391:17264": "I3497:45916;1391:17264",
+    "I3497:46842;1391:17266": "I3497:45916;1391:17266",
+    "I3497:46842;1391:17268": "I3497:45916;1391:17268",
+    "I3497:46842;1391:17270": "I3497:45916;1391:17270"
+  }
+}

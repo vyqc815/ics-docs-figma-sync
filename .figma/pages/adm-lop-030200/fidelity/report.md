@@ -1,8 +1,8 @@
 # Fidelity: ADM-LOP-030200 — Lớp học / Bài học / Thông tin
 
-- URL: `http://localhost:3108/lop-hoc/bai-hoc/thong-tin`
+- URL: `http://localhost:3000/lop-hoc/bai-hoc/thong-tin`
 - Verdict: **PASS**
-- Pixels outside text: **0.001%** differ (limit 0.5%); all pixels: 0.245%; inside text boxes: 1.341% (glyph rendering)
+- Pixels outside text: **0.001%** differ (limit 0.5%); all pixels: 0.227%; inside text boxes: 1.239% (glyph rendering)
 - Boxes: 214/214 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 213, ≤1px: 213, ≤2px: 213, ≤4px: 214, >4px: 0
 
 ## Pixel regions (largest first)
@@ -16,10 +16,6 @@
 
 | Text | Differing |
 | --- | --- |
-| 80% (`I3497:64991;1391:14476`) | 26.4% |
-| 100% (`I3497:64992;1308:6749`) | 24.7% |
-| 100% (`I3497:65005;1308:6749`) | 24.7% |
-| 0% (`I3497:65004;1308:6706`) | 23% |
 | ÔN TẬP: Giữa Kỳ 1 (`3497:64878`) | 13.1% |
 | Label (`I4915:225203;4901:206599;2245:87908`) | 8.4% |
 | Label (`I4915:225203;4901:206597;2245:87908`) | 5.9% |
@@ -31,6 +27,10 @@
 | alphabet (0) (`I3497:67298;1250:760`) | 3.1% |
 | ÔN TẬP: Giữa Kỳ 1 (`3497:64990`) | 3% |
 | Badge (`I3497:65032;1050:2409`) | 3% |
+| ÔN TẬP: Giữa Kỳ 1 (`3497:67274`) | 2.1% |
+| Label (`I4915:225203;4901:206600;2245:87908`) | 2% |
+| Nhãn trường (`I3497:67327;2808:48145`) | 1.9% |
+| Nhãn trường (`I3497:67317;2808:48145`) | 1.7% |
 
 ## Largest box differences
 

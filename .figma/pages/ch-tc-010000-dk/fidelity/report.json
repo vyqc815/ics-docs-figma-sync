@@ -12,43 +12,13 @@
   "pixels": {
     "width": 1440,
     "height": 810,
-    "mismatched": 1893,
-    "percent": 0.162,
+    "mismatched": 1203,
+    "percent": 0.103,
     "shapePercent": 0.002,
-    "textPercent": 0.857,
+    "textPercent": 0.541,
     "sizeMismatch": false
   },
   "textNodes": [
-    {
-      "id": "I4056:146311;1391:14476",
-      "name": "80%",
-      "pixels": 73,
-      "percent": 26.1
-    },
-    {
-      "id": "I4056:146347;1391:14476",
-      "name": "80%",
-      "pixels": 73,
-      "percent": 26.1
-    },
-    {
-      "id": "I4056:146329;1308:6706",
-      "name": "0%",
-      "pixels": 51,
-      "percent": 26
-    },
-    {
-      "id": "I4056:146365;1308:6749",
-      "name": "100%",
-      "pixels": 67,
-      "percent": 19.9
-    },
-    {
-      "id": "I4056:146212;2245:87774",
-      "name": "Label",
-      "pixels": 479,
-      "percent": 16.6
-    },
     {
       "id": "4056:146268",
       "name": "Ngày kết thúc",
@@ -108,6 +78,36 @@
       "name": "DN1-119",
       "pixels": 34,
       "percent": 2.2
+    },
+    {
+      "id": "4056:146340",
+      "name": "DN1-119",
+      "pixels": 34,
+      "percent": 2.2
+    },
+    {
+      "id": "4056:146358",
+      "name": "DN1-119",
+      "pixels": 34,
+      "percent": 2.2
+    },
+    {
+      "id": "I6247:155154;2015:36008",
+      "name": "Value",
+      "pixels": 23,
+      "percent": 2.1
+    },
+    {
+      "id": "I4056:146140;2008:31709",
+      "name": "Phụ Trách Lớp Đắc Nhân",
+      "pixels": 50,
+      "percent": 1.9
+    },
+    {
+      "id": "I4056:146212;2245:87774",
+      "name": "Label",
+      "pixels": 53,
+      "percent": 1.8
     }
   ],
   "regions": [
@@ -453,7 +453,7 @@
     "over": []
   },
   "failures": [],
-  "url": "http://localhost:3108/trang-chu/thong-ke-tong-quan-dk",
+  "url": "http://localhost:3000/trang-chu/thong-ke-tong-quan-dk",
   "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
   "consoleErrors": [],
   "rootFound": true

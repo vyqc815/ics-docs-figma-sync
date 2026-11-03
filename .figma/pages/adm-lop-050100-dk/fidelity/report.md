@@ -1,8 +1,8 @@
 # Fidelity: ADM-LOP-050100-DK — Lớp học / Nhật ký / Nhật ký
 
-- URL: `http://localhost:3108/lop-hoc/nhat-ky/nhat-ky-dk`
+- URL: `http://localhost:3000/lop-hoc/nhat-ky/nhat-ky-dk`
 - Verdict: **PASS**
-- Pixels outside text: **0.001%** differ (limit 0.5%); all pixels: 0.489%; inside text boxes: 2.432% (glyph rendering)
+- Pixels outside text: **0.001%** differ (limit 0.5%); all pixels: 0.461%; inside text boxes: 2.294% (glyph rendering)
 - Boxes: 279/279 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 278, ≤1px: 279, ≤2px: 279, ≤4px: 279, >4px: 0
 
 ## Pixel regions (largest first)
@@ -15,7 +15,6 @@
 
 | Text | Differing |
 | --- | --- |
-| Label (`I4056:118601;2245:87914`) | 14.3% |
 | Label (`I4056:118593;2245:87908`) | 13.7% |
 | Label (`I4056:118591;2245:87908`) | 8.6% |
 | Thêm Tráo Thẻ (`4056:118518`) | 7.2% |
@@ -30,6 +29,7 @@
 | Giúp học viên thực hành theo dõi lớp học, nắm được tình trạn (`4056:118460`) | 4.1% |
 | Thuy SP đã đổi trạng thái lớp NS003 (`4056:118509`) | 3.9% |
 | 7 ngày (40 ca) (`I4056:118502;1350:12808`) | 3.7% |
+| 7 ngày (40 ca) (`I4056:118513;1350:12808`) | 3.7% |
 
 ## Largest box differences
 

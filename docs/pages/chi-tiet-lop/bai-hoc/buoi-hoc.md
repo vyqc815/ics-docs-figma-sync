@@ -5,7 +5,7 @@
 > **Nguồn:** PLS-ICS T8/2026 ›             ├─ BÀI HỌC › GV-LOP-030100 — Chi tiết lớp / Bài học / Buổi học (`4324:16651`, file `rRVs5HX0kIHffbS0V40djG`)  
 > **Route:** `/chi-tiet-lop/bai-hoc/buoi-hoc`  
 > **Khung thiết kế:** 1440 × 1238 px (cắt phần tràn ra ngoài khung)  
-> **Xuất lúc:** 2026-11-02T03:54:20.917Z  
+> **Xuất lúc:** 2026-11-03T01:09:46.291Z  
 > **Spec đầy đủ (giá trị chính xác từng node):** `../../../../.figma/pages/gv-lop-030100/page-spec.json`
 
 ## 1. Tổng quan

@@ -5,7 +5,7 @@
 > **Nguồn:** PLS-ICS T8/2026 ›         └─ THÔNG TIN › GV-LOP-110200 — Chi tiết lớp / Thông tin / KPI (`4333:18493`, file `rRVs5HX0kIHffbS0V40djG`)  
 > **Route:** `/chi-tiet-lop/thong-tin/kpi`  
 > **Khung thiết kế:** 1440 × 810 px (cắt phần tràn ra ngoài khung)  
-> **Xuất lúc:** 2026-11-02T03:54:40.656Z  
+> **Xuất lúc:** 2026-11-03T01:10:02.812Z  
 > **Spec đầy đủ (giá trị chính xác từng node):** `../../../../.figma/pages/gv-lop-110200/page-spec.json`
 
 ## 1. Tổng quan

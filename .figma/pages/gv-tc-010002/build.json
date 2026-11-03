@@ -1,0 +1,17 @@
+{
+  "route": "/trang-chu/thong-ke-theo-thang/hien-thu-nhap-gv-tc-010002",
+  "pageFile": "components/figma/gv-tc-010002/index.tsx",
+  "docFile": "docs/pages/trang-chu/thong-ke-theo-thang/hien-thu-nhap-gv-tc-010002.md",
+  "sections": [
+    {
+      "nodeId": "6326:2278",
+      "component": "Body",
+      "file": "components/figma/gv-tc-010002/Body.tsx"
+    },
+    {
+      "nodeId": "6326:2414",
+      "component": "Section2",
+      "file": "components/figma/gv-tc-010002/Section2.tsx"
+    }
+  ]
+}

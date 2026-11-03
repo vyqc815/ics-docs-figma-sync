@@ -1,8 +1,8 @@
 # Fidelity: ADM-TASK-010000 — Task tuần
 
-- URL: `http://localhost:3108/task-tuan`
+- URL: `http://localhost:3000/task-tuan`
 - Verdict: **PASS**
-- Pixels outside text: **0.001%** differ (limit 0.5%); all pixels: 0.181%; inside text boxes: 0.94% (glyph rendering)
+- Pixels outside text: **0.001%** differ (limit 0.5%); all pixels: 0.178%; inside text boxes: 0.924% (glyph rendering)
 - Boxes: 249/249 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 249, ≤1px: 249, ≤2px: 249, ≤4px: 249, >4px: 0
 
 ## Pixel regions (largest first)
@@ -15,7 +15,6 @@
 
 | Text | Differing |
 | --- | --- |
-| 0% (`I4343:82847;1308:6706`) | 23% |
 | [Giữa Tuần - Thứ 4 - CSKH] Báo Cáo Tiến Độ Công Việc (`4343:82395`) | 3.2% |
 | [Cuối Tuần - Thứ 6 - CSKH] Rà Soát Nhiệm Vụ trong Tuần và Tr (`4343:82596`) | 2.6% |
 | Đã báo các các lớp đang có vấn đề và lên phương án xử lý nga (`4343:82569`) | 2.5% |
@@ -30,6 +29,7 @@
 | [Trả Đủ Nợ] Trả Nợ Lịch Hẹn (`4343:82712`) | 0.5% |
 | Đã planning lịch hẹn cho tuần tiếp theo (`4343:82741`) | 0.4% |
 | Nắm các lịch KG trong tuần và plan KG tuần tiếp theo (`4343:82770`) | 0.4% |
+| Tuần này (`4343:82848`) | 0.4% |
 
 ## Largest box differences
 

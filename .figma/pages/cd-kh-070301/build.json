@@ -1,0 +1,22 @@
+{
+  "route": "/thu-vien/bai-tap/chi-tiet-cau-hoi-listening",
+  "pageFile": "components/figma/cd-kh-070301/index.tsx",
+  "docFile": "docs/pages/thu-vien/bai-tap/chi-tiet-cau-hoi-listening.md",
+  "sections": [
+    {
+      "nodeId": "6163:81279",
+      "component": "Content",
+      "file": "components/figma/cd-kh-070301/Content.tsx"
+    },
+    {
+      "nodeId": "6163:81632",
+      "component": "SidebarMenuCd34",
+      "file": "components/figma/shared/SidebarMenuCd34.tsx"
+    },
+    {
+      "nodeId": "6163:81633",
+      "component": "Header",
+      "file": "components/figma/cd-kh-070301/Header.tsx"
+    }
+  ]
+}

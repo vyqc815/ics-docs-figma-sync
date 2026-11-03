@@ -12,19 +12,13 @@
   "pixels": {
     "width": 1440,
     "height": 1281,
-    "mismatched": 3034,
-    "percent": 0.164,
+    "mismatched": 2689,
+    "percent": 0.146,
     "shapePercent": 0.002,
-    "textPercent": 2.236,
+    "textPercent": 1.979,
     "sizeMismatch": false
   },
   "textNodes": [
-    {
-      "id": "I4056:145051;2245:87774",
-      "name": "Label",
-      "pixels": 385,
-      "percent": 13.4
-    },
     {
       "id": "I4056:145066;2245:87820",
       "name": "Label",
@@ -108,6 +102,12 @@
       "name": "Label",
       "pixels": 78,
       "percent": 2.7
+    },
+    {
+      "id": "I4056:145049;2245:87768",
+      "name": "Label",
+      "pixels": 76,
+      "percent": 2.6
     }
   ],
   "regions": [
@@ -453,7 +453,7 @@
     "over": []
   },
   "failures": [],
-  "url": "http://localhost:3108/quan-ly-cap-do-dk",
+  "url": "http://localhost:3000/quan-ly-cap-do-dk",
   "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
   "consoleErrors": [],
   "rootFound": true

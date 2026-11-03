@@ -1,0 +1,448 @@
+{
+  "pass": true,
+  "thresholds": {
+    "maxPixelDiffPercent": 0.5,
+    "maxBoxDelta": 1,
+    "maxTextBoxDelta": 2.5,
+    "colorThreshold": 0.1,
+    "aaRadius": 1,
+    "subpixel": true,
+    "maxTextNodeDiffPercent": 35
+  },
+  "pixels": {
+    "width": 800,
+    "height": 675,
+    "mismatched": 671,
+    "percent": 0.124,
+    "shapePercent": 0.002,
+    "textPercent": 0.672,
+    "sizeMismatch": false
+  },
+  "textNodes": [
+    {
+      "id": "4846:171925",
+      "name": "Tự chia cụm bằng AI sau khi import",
+      "pixels": 103,
+      "percent": 3
+    },
+    {
+      "id": "4846:171915",
+      "name": "短信, duǎnxìn, tin nhắn",
+      "pixels": 69,
+      "percent": 2
+    },
+    {
+      "id": "I4846:171903;2514:153342",
+      "name": "Description",
+      "pixels": 322,
+      "percent": 1.9
+    },
+    {
+      "id": "4846:171976",
+      "name": "饭店",
+      "pixels": 13,
+      "percent": 1.9
+    },
+    {
+      "id": "4846:171954",
+      "name": "大学",
+      "pixels": 10,
+      "percent": 1.5
+    },
+    {
+      "id": "4846:171943",
+      "name": "电影",
+      "pixels": 7,
+      "percent": 1
+    },
+    {
+      "id": "4846:171987",
+      "name": "短信",
+      "pixels": 7,
+      "percent": 1
+    },
+    {
+      "id": "4846:171913",
+      "name": "妈妈, māma, mẹ",
+      "pixels": 21,
+      "percent": 0.8
+    },
+    {
+      "id": "4846:171910",
+      "name": "字, zì, chữ",
+      "pixels": 11,
+      "percent": 0.7
+    },
+    {
+      "id": "4846:171914",
+      "name": "饭店, fàndiàn,",
+      "pixels": 14,
+      "percent": 0.7
+    },
+    {
+      "id": "4846:171926",
+      "name": "Xem trước · 6 dòng",
+      "pixels": 16,
+      "percent": 0.7
+    },
+    {
+      "id": "4846:171932",
+      "name": "字",
+      "pixels": 2,
+      "percent": 0.6
+    },
+    {
+      "id": "4846:171912",
+      "name": "大学, , đại học",
+      "pixels": 10,
+      "percent": 0.5
+    },
+    {
+      "id": "4846:171911",
+      "name": "电影, diànyǐng, phim",
+      "pixels": 12,
+      "percent": 0.4
+    },
+    {
+      "id": "I4846:171903;2514:153341",
+      "name": "Title",
+      "pixels": 38,
+      "percent": 0.2
+    }
+  ],
+  "regions": [
+    {
+      "x": 200,
+      "y": 272,
+      "width": 8,
+      "height": 16,
+      "pixels": 11,
+      "node": {
+        "id": "4846:171921",
+        "name": "Checkbox",
+        "role": "icon"
+      }
+    }
+  ],
+  "boxes": {
+    "measured": 104,
+    "missing": [],
+    "withinThreshold": 104,
+    "buckets": {
+      "≤0.5px": 102,
+      "≤1px": 104,
+      "≤2px": 104,
+      "≤4px": 104,
+      ">4px": 0
+    },
+    "worst": [
+      {
+        "id": "4846:171923",
+        "name": "opt",
+        "role": "container",
+        "delta": 0.92,
+        "dx": 0.02,
+        "dy": 0,
+        "dw": 0.92,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4846:171925",
+        "name": "Tự chia cụm bằng AI sau khi import",
+        "role": "text",
+        "delta": 0.92,
+        "dx": 0.02,
+        "dy": 0,
+        "dw": 0.92,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4846:171912",
+        "name": "大学, , đại học",
+        "role": "text",
+        "delta": 0.02,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.02,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4846:171917",
+        "name": "opt",
+        "role": "container",
+        "delta": 0.02,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.02,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4846:171918",
+        "name": "Tách cột bằng: dấu phẩy",
+        "role": "text",
+        "delta": 0.02,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.02,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4846:171919",
+        "name": "Action Icon",
+        "role": "icon",
+        "delta": 0.02,
+        "dx": 0.02,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4846:171920",
+        "name": "opt",
+        "role": "container",
+        "delta": 0.02,
+        "dx": 0.02,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4846:171921",
+        "name": "Checkbox",
+        "role": "icon",
+        "delta": 0.02,
+        "dx": 0.02,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4846:171922",
+        "name": "AI tự điền phiên âm / nghĩa còn thiếu",
+        "role": "text",
+        "delta": 0.02,
+        "dx": 0.02,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4846:171924",
+        "name": "Checkbox",
+        "role": "instance",
+        "delta": 0.02,
+        "dx": 0.02,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4846:171902",
+        "name": "Popup · Thêm từ vựng theo list",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4846:171903",
+        "name": "Popup/Header",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4846:171903;2514:153340",
+        "name": "Tiêu đề",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4846:171903;2711:67900",
+        "name": "Title Row",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4846:171903;2514:153341",
+        "name": "Title",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4846:171903;2514:153342",
+        "name": "Description",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4846:171904",
+        "name": "Body",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4846:171909",
+        "name": "Ô dán danh sách",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4846:171910",
+        "name": "字, zì, chữ",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4846:171911",
+        "name": "电影, diànyǐng, phim",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4846:171913",
+        "name": "妈妈, māma, mẹ",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4846:171914",
+        "name": "饭店, fàndiàn,",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4846:171915",
+        "name": "短信, duǎnxìn, tin nhắn",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4846:171916",
+        "name": "Tuỳ chọn",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4846:171926",
+        "name": "Xem trước · 6 dòng",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      }
+    ],
+    "maxDelta": 0.92,
+    "over": []
+  },
+  "failures": [],
+  "url": "http://localhost:3000/kien-thuc-s1/tu-vung/popup-them-theo-list",
+  "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
+  "consoleErrors": [],
+  "rootFound": true
+}

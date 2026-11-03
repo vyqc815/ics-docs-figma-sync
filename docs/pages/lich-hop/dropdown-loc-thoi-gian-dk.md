@@ -5,7 +5,7 @@
 > **Nguồn:** PLS-ICS T8/2026 ›     ├─ LỊCH HỌP › SP-LHP-010000-DK — Lịch họp / Dropdown lọc · Thời gian (`6935:387065`, file `rRVs5HX0kIHffbS0V40djG`)  
 > **Route:** `/lich-hop/dropdown-loc-thoi-gian-dk`  
 > **Khung thiết kế:** 1440 × 955 px  
-> **Xuất lúc:** 2026-11-02T03:54:05.937Z  
+> **Xuất lúc:** 2026-11-03T01:09:32.866Z  
 > **Spec đầy đủ (giá trị chính xác từng node):** `../../../.figma/pages/sp-lhp-010000-dk-4/page-spec.json`
 
 ## 1. Tổng quan
@@ -26,22 +26,22 @@ Nền trang: `#121213` (bg/canvas).
 
 | Token | Biến CSS | Giá trị | Trỏ tới | Bộ / mode |
 | --- | --- | --- | --- | --- |
-| `bg/brand-tint` | `--bg-brand-tint` | `#fff7ed` | color/extended/fff7ed | Theme · Semantic / Light |
-| `bg/brand-tint-strong` | `--bg-brand-tint-strong` | `#ffedd5` | color/extended/ffedd5 | Theme · Semantic / Light |
-| `bg/canvas` | `--bg-canvas` | `#f8fafc` | color/extended/f8fafc | Theme · Semantic / Light |
-| `bg/strong` | `--bg-strong` | `#e2e8f0` | color/border/default | Theme · Semantic / Light |
-| `bg/subtle` | `--bg-subtle` | `#f1f5f9` | color/surface/input | Theme · Semantic / Light |
-| `bg/surface` | `--bg-surface` | `#ffffff` | color/neutral/white | Theme · Semantic / Light |
+| `bg/brand-tint` | `--bg-brand-tint` | `#102218` |  | Theme · Semantic / Dark · Minimal |
+| `bg/brand-tint-strong` | `--bg-brand-tint-strong` | `#153020` |  | Theme · Semantic / Dark · Minimal |
+| `bg/canvas` | `--bg-canvas` | `#121213` |  | Theme · Semantic / Dark · Minimal |
+| `bg/strong` | `--bg-strong` | `#2a2a2e` |  | Theme · Semantic / Dark · Minimal |
+| `bg/subtle` | `--bg-subtle` | `#202023` |  | Theme · Semantic / Dark · Minimal |
+| `bg/surface` | `--bg-surface` | `#18181a` |  | Theme · Semantic / Dark · Minimal |
 | `bố cục/lề trên dưới` | `--bo-cuc-le-tren-duoi` | `24` | spacing/24 | Number Tokens / Mode 1 |
-| `border/brand` | `--border-brand` | `#fed7aa` | color/extended/fed7aa | Theme · Semantic / Light |
-| `border/default` | `--border-default` | `#e2e8f0` | color/border/default | Theme · Semantic / Light |
-| `border/strong` | `--border-strong` | `#cbd5e1` | color/extended/cbd5e1 | Theme · Semantic / Light |
-| `border/subtle` | `--border-subtle` | `#f1f5f9` | color/border/subtle | Theme · Semantic / Light |
-| `brand/primary` | `--brand-primary` | `#e65100` | color/brand/orange | Theme · Semantic / Light |
-| `chrome/bg` | `--chrome-bg` | `#ff7700` | color/extended/ff7700 | Theme · Semantic / Light |
+| `border/brand` | `--border-brand` | `#1e4d31` |  | Theme · Semantic / Dark · Minimal |
+| `border/default` | `--border-default` | `#27272a` |  | Theme · Semantic / Dark · Minimal |
+| `border/strong` | `--border-strong` | `#3f3f46` |  | Theme · Semantic / Dark · Minimal |
+| `border/subtle` | `--border-subtle` | `#1f1f22` |  | Theme · Semantic / Dark · Minimal |
+| `brand/primary` | `--brand-primary` | `#16a34a` |  | Theme · Semantic / Dark · Minimal |
+| `chrome/bg` | `--chrome-bg` | `#0b0b0c` |  | Theme · Semantic / Dark · Minimal |
 | `color/neutral/white` | `--color-neutral-white` | `#ffffff` |  | Color Tokens / Light |
-| `menu/select-bg` | `--menu-select-bg` | `rgba(255, 255, 255, 0)` |  | Theme · Semantic / Light |
-| `menu/select-border` | `--menu-select-border` | `rgba(255, 255, 255, 0.2)` |  | Theme · Semantic / Light |
+| `menu/select-bg` | `--menu-select-bg` | `#2a2a2e` | bg/strong | Theme · Semantic / Dark · Minimal |
+| `menu/select-border` | `--menu-select-border` | `#3f3f46` | border/strong | Theme · Semantic / Dark · Minimal |
 | `radius/12` | `--radius-12` | `12` |  | Number Tokens / Mode 1 |
 | `radius/16` | `--radius-16` | `16` |  | Number Tokens / Mode 1 |
 | `radius/6` | `--radius-6` | `6` |  | Number Tokens / Mode 1 |
@@ -51,10 +51,10 @@ Nền trang: `#121213` (bg/canvas).
 | `spacing/12` | `--spacing-12` | `12` |  | Number Tokens / Mode 1 |
 | `spacing/16` | `--spacing-16` | `16` |  | Number Tokens / Mode 1 |
 | `spacing/8` | `--spacing-8` | `8` |  | Number Tokens / Mode 1 |
-| `text/muted` | `--text-muted` | `#cbd5e1` | color/text/muted | Theme · Semantic / Light |
-| `text/primary` | `--text-primary` | `#334155` | color/text/primary | Theme · Semantic / Light |
-| `text/secondary` | `--text-secondary` | `#64748b` | color/text/secondary | Theme · Semantic / Light |
-| `theme/is-dark` | `--theme-is-dark` | `false` |  | Theme · Semantic / Light |
+| `text/muted` | `--text-muted` | `#71717a` |  | Theme · Semantic / Dark · Minimal |
+| `text/primary` | `--text-primary` | `#ededef` |  | Theme · Semantic / Dark · Minimal |
+| `text/secondary` | `--text-secondary` | `#a1a1aa` |  | Theme · Semantic / Dark · Minimal |
+| `theme/is-dark` | `--theme-is-dark` | `true` |  | Theme · Semantic / Dark · Minimal |
 
 **Style Figma đang dùng:**
 
@@ -88,9 +88,9 @@ Nền trang: `#121213` (bg/canvas).
 | `Body/15/Medium` | Afacad | 15 / 19px | 500 | 0 | #ededef (text/primary) | 34 | “Trạng thái” |
 | `Body/15/Italic` | Afacad | 15 / 19px | 400 italic | 0 | #71717a (text/muted) | 9 | “Chưa có ghi chú” |
 | `Label/15/Bold` | Afacad | 15 / 19px | 700 · case upper | 0 | #a1a1aa (text/secondary) | 6 | “Ngày họp” |
-| — | Afacad | 15 / 20px | 400 | 0 | #ededef | 4 | “Hôm nay” |
+| — | Afacad | 15 / 20px | 400 | 0 | #ededef (text/primary) | 4 | “Hôm nay” |
 | `Body/15/Medium` | Afacad | 15 / 19px | 500 | 0 | #a1a1aa (text/secondary) | 2 | “Hiển thị 1 - 10 trong tổng số 13 cuộc h…” |
-| — | Afacad | 15 / 20px | 500 | 0 | #16a34a | 2 | “Tuần này” |
+| — | Afacad | 15 / 20px | 500 | 0 | #16a34a (brand/primary) | 2 | “Tuần này” |
 | `Body/15/Medium` | Afacad | 15 / 19px | 500 | 0 | #16a34a (brand/primary) | 1 | “Người tham gia” |
 | `Body/15/Bold` | Afacad | 15 / 19px | 700 | 0 | #ffffff (color/neutral/white) | 1 | “1” |
 | `Body/15/Bold` | Afacad | 15 / 19px | 700 | 0 | #ededef (text/primary) | 1 | “2” |
@@ -500,19 +500,19 @@ Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí ·
                   - [chữ] “2” — 8×19 [HUG×HUG] · @ (10, 4.5) flow · Afacad 15/19px 700 #ededef (text/primary) · text-align center · no-wrap `I6935:387410;1391:17479`
                 - [khối] **Button** — 37×28 [HUG×FIXED] · @ (122, 0) flow · column pad 0 6 0 6 justify CENTER align CENTER · bg #18181a (bg/surface) · radius 6px · border 1px solid #3f3f46 (border/strong) `I6935:387410;1391:17486`
                   - [chữ] “Sau” — 23×19 [HUG×HUG] · @ (7, 4.5) flow · Afacad 15/19px 500 #ededef (text/primary) · text-align center · no-wrap `I6935:387410;1391:17487`
-  - [khối] **Dropdown · Thời gian** — 210×196 · @ (1142, 122) abs · column gap 2 pad 8 8 8 8 · bg #18181a · radius 10px · border 1px solid #27272a · shadow 0 8px 24px 0 rgba(0, 0, 0, 0.5) `6935:387584`
+  - [khối] **Dropdown · Thời gian** — 210×196 · @ (1142, 122) abs · column gap 2 pad 8 8 8 8 · bg #18181a (bg/surface) · radius 10px · border 1px solid #27272a (border/default) · shadow 0 8px 24px 0 rgba(0, 0, 0, 0.5) `6935:387584`
     - [khối] **Item · Hôm nay** — 194×34 · @ (9, 9) flow · row gap 10 pad 0 8 0 8 align CENTER · radius 6px `6935:387585`
-      - [chữ] “Hôm nay” — 53×20 [HUG×HUG] · @ (8, 7) flow · Afacad 15/20px 400 #ededef · no-wrap `6935:387586`
+      - [chữ] “Hôm nay” — 53×20 [HUG×HUG] · @ (8, 7) flow · Afacad 15/20px 400 #ededef (text/primary) · no-wrap `6935:387586`
     - [khối] **Item · Tuần này** — 194×34 · @ (9, 45) flow · row gap 10 pad 0 8 0 8 align CENTER · bg #122b1a · radius 6px `6935:387587`
-      - [chữ] “Tuần này” — 54×20 [HUG×HUG] · @ (8, 7) flow · Afacad 15/20px 500 #16a34a · no-wrap `6935:387588`
+      - [chữ] “Tuần này” — 54×20 [HUG×HUG] · @ (8, 7) flow · Afacad 15/20px 500 #16a34a (brand/primary) · no-wrap `6935:387588`
       - [khối] **sp** — 91×100 [FILL×FIXED] · @ (72, -33) flow · row · trống `6935:387589`
-      - [chữ] “✓” — 13×20 [HUG×HUG] · @ (173, 7) flow · Afacad 15/20px 500 #16a34a · no-wrap `6935:387590`
+      - [chữ] “✓” — 13×20 [HUG×HUG] · @ (173, 7) flow · Afacad 15/20px 500 #16a34a (brand/primary) · no-wrap `6935:387590`
     - [khối] **Item · Tháng này** — 194×34 · @ (9, 81) flow · row gap 10 pad 0 8 0 8 align CENTER · radius 6px `6935:387591`
-      - [chữ] “Tháng này” — 64×20 [HUG×HUG] · @ (8, 7) flow · Afacad 15/20px 400 #ededef · no-wrap `6935:387592`
+      - [chữ] “Tháng này” — 64×20 [HUG×HUG] · @ (8, 7) flow · Afacad 15/20px 400 #ededef (text/primary) · no-wrap `6935:387592`
     - [khối] **Item · 30 ngày qua** — 194×34 · @ (9, 117) flow · row gap 10 pad 0 8 0 8 align CENTER · radius 6px `6935:387593`
-      - [chữ] “30 ngày qua” — 76×20 [HUG×HUG] · @ (8, 7) flow · Afacad 15/20px 400 #ededef · no-wrap `6935:387594`
+      - [chữ] “30 ngày qua” — 76×20 [HUG×HUG] · @ (8, 7) flow · Afacad 15/20px 400 #ededef (text/primary) · no-wrap `6935:387594`
     - [khối] **Item · Tuỳ chọn khoảng ngày…** — 194×34 · @ (9, 153) flow · row gap 10 pad 0 8 0 8 align CENTER · radius 6px `6935:387595`
-      - [chữ] “Tuỳ chọn khoảng ngày…” — 149×20 [HUG×HUG] · @ (8, 7) flow · Afacad 15/20px 400 #ededef · no-wrap `6935:387596`
+      - [chữ] “Tuỳ chọn khoảng ngày…” — 149×20 [HUG×HUG] · @ (8, 7) flow · Afacad 15/20px 400 #ededef (text/primary) · no-wrap `6935:387596`
 
 ## 5. Component đang dùng
 

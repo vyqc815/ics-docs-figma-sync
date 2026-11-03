@@ -1,8 +1,8 @@
 # Fidelity: ADM-LOP-040200-DK — Lớp học / Cài đặt / Học viên
 
-- URL: `http://localhost:3108/lop-hoc/cai-dat/hoc-vien-dk`
+- URL: `http://localhost:3000/lop-hoc/cai-dat/hoc-vien-dk`
 - Verdict: **PASS**
-- Pixels outside text: **0.021%** differ (limit 0.5%); all pixels: 0.389%; inside text boxes: 1.734% (glyph rendering)
+- Pixels outside text: **0.021%** differ (limit 0.5%); all pixels: 0.366%; inside text boxes: 1.624% (glyph rendering)
 - Boxes: 382/382 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 379, ≤1px: 379, ≤2px: 379, ≤4px: 382, >4px: 0
 
 ## Pixel regions (largest first)
@@ -35,7 +35,6 @@
 | Text | Differing |
 | --- | --- |
 | Label (`I4056:116453;2245:87908`) | 13.9% |
-| Label (`I4056:116460;2245:87914`) | 13% |
 | Label (`I4056:116451;2245:87908`) | 8.5% |
 | Đang sinh sống và làm việc tại Thâm Quyến, Trung Quốc. Đã tố (`4056:116261`) | 6.3% |
 | Ghi chú trong lớp (`4056:116210`) | 5.9% |
@@ -49,6 +48,7 @@
 | 15.000.000 (`I4056:116326;2812:34656`) | 3.8% |
 | Label (`I4056:116283;2015:31836;4056:118372;2015:30564`) | 3.7% |
 | Label (`I4056:116283;2015:31836;4056:118373;2015:30575`) | 3.4% |
+| Label (`I4056:116456;2245:87908`) | 3% |
 
 ## Largest box differences
 

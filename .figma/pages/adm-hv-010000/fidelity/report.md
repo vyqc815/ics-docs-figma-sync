@@ -1,6 +1,6 @@
 # Fidelity: ADM-HV-010000 — Danh sách học viên
 
-- URL: `http://localhost:3108/danh-sach-hoc-vien`
+- URL: `http://localhost:3000/danh-sach-hoc-vien`
 - Verdict: **PASS**
 - Pixels outside text: **0.066%** differ (limit 0.5%); all pixels: 0.322%; inside text boxes: 1.206% (glyph rendering)
 - Boxes: 527/527 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 526, ≤1px: 527, ≤2px: 527, ≤4px: 527, >4px: 0

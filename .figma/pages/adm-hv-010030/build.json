@@ -1,0 +1,23 @@
+{
+  "route": "/danh-sach-hoc-vien/popup-lich-su/lop",
+  "pageFile": "components/figma/adm-hv-010030/index.tsx",
+  "docFile": "docs/pages/danh-sach-hoc-vien/popup-lich-su/lop.md",
+  "sections": [
+    {
+      "nodeId": "2527:167842",
+      "component": "PopupHeader5",
+      "file": "components/figma/shared/PopupHeader5.tsx"
+    },
+    {
+      "nodeId": "2527:167848",
+      "component": "Body",
+      "file": "components/figma/adm-hv-010030/Body.tsx"
+    }
+  ],
+  "idAlias": {
+    "2527:167842": "2527:167835",
+    "I2527:167842;2514:153347": "I2527:167835;2514:153347",
+    "I2527:167842;2711:67901": "I2527:167835;2711:67901",
+    "I2527:167842;2514:153348": "I2527:167835;2514:153348"
+  }
+}

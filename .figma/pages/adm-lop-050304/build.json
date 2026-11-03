@@ -1,0 +1,34 @@
+{
+  "route": "/lop-hoc/nhat-ky/lich-hen",
+  "pageFile": "components/figma/adm-lop-050304/index.tsx",
+  "docFile": "docs/pages/lop-hoc/nhat-ky/lich-hen.md",
+  "sections": [
+    {
+      "nodeId": "2533:33013",
+      "component": "Mainworkspace",
+      "file": "components/figma/adm-lop-050304/Mainworkspace.tsx"
+    },
+    {
+      "nodeId": "4915:230627",
+      "component": "SidebarMenuAdmin",
+      "file": "components/figma/adm-lop-050304/SidebarMenuAdmin.tsx"
+    },
+    {
+      "nodeId": "3497:53467",
+      "component": "Header35",
+      "file": "components/figma/shared/Header35.tsx"
+    }
+  ],
+  "idAlias": {
+    "3497:53467": "3497:65629",
+    "4050:118240": "4050:115668",
+    "3497:53515": "3497:65677",
+    "I3497:53515;2008:30986": "I3497:65677;2008:30986",
+    "I3497:53515;2008:31747": "I3497:65677;2008:31747",
+    "I3497:53515;2008:31748": "I3497:65677;2008:31748",
+    "I3497:53515;1391:17264": "I3497:65677;1391:17264",
+    "I3497:53515;1391:17266": "I3497:65677;1391:17266",
+    "I3497:53515;1391:17268": "I3497:65677;1391:17268",
+    "I3497:53515;1391:17270": "I3497:65677;1391:17270"
+  }
+}

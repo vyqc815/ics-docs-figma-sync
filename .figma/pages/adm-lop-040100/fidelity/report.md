@@ -1,6 +1,6 @@
 # Fidelity: ADM-LOP-040100 — Lớp học / Cài đặt / Thông tin
 
-- URL: `http://localhost:3108/lop-hoc/cai-dat/thong-tin`
+- URL: `http://localhost:3000/lop-hoc/cai-dat/thong-tin`
 - Verdict: **PASS**
 - Pixels outside text: **0%** differ (limit 0.5%); all pixels: 0.094%; inside text boxes: 0.55% (glyph rendering)
 - Boxes: 173/173 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 171, ≤1px: 173, ≤2px: 173, ≤4px: 173, >4px: 0

@@ -1,15 +1,14 @@
 # Fidelity: GV-LOP-090100-DK — Chi tiết lớp / Hướng dẫn giảng dạy / Trống
 
-- URL: `http://localhost:3108/chi-tiet-lop/huong-dan-giang-day/trong-dk`
+- URL: `http://localhost:3000/chi-tiet-lop/huong-dan-giang-day/trong-dk`
 - Verdict: **PASS**
-- Pixels outside text: **0%** differ (limit 0.5%); all pixels: 0.165%; inside text boxes: 4.243% (glyph rendering)
+- Pixels outside text: **0%** differ (limit 0.5%); all pixels: 0.094%; inside text boxes: 2.418% (glyph rendering)
 - Boxes: 107/107 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 105, ≤1px: 107, ≤2px: 107, ≤4px: 107, >4px: 0
 
 ## Text boxes with most differing pixels (limit 35%)
 
 | Text | Differing |
 | --- | --- |
-| Label (`I4333:14893;2245:87914`) | 22.1% |
 | Label (`I4899:187842;2245:87908`) | 8.5% |
 | Label (`I4333:14884;2245:87908`) | 6.3% |
 | Label (`I4333:14885;2245:87908`) | 4.9% |
@@ -20,6 +19,7 @@
 | Label (`I4333:14888;2245:87908`) | 2.7% |
 | Label (`I4333:14895;2245:87908`) | 1.8% |
 | Vai trò (`I4899:187576;4899:187330`) | 1.6% |
+| Label (`I4333:14893;2245:87914`) | 1.5% |
 | Label (`I4333:14889;2245:87908`) | 1.4% |
 | Label (`I4333:14894;2245:87908`) | 1.4% |
 | GV.dacnhan@gmail.com (`I4333:14825;2008:31783`) | 1.3% |

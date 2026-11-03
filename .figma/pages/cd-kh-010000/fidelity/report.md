@@ -1,6 +1,6 @@
 # Fidelity: CD-KH-010000 — Quản lý khoá học
 
-- URL: `http://localhost:3108/quan-ly-khoa-hoc`
+- URL: `http://localhost:3000/quan-ly-khoa-hoc`
 - Verdict: **PASS**
 - Pixels outside text: **0.185%** differ (limit 0.5%); all pixels: 0.536%; inside text boxes: 1.61% (glyph rendering)
 - Boxes: 288/288 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 190, ≤1px: 215, ≤2px: 288, ≤4px: 288, >4px: 0

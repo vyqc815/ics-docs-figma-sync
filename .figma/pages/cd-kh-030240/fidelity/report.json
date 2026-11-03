@@ -1,0 +1,1495 @@
+{
+  "pass": false,
+  "thresholds": {
+    "maxPixelDiffPercent": 0.5,
+    "maxBoxDelta": 1,
+    "maxTextBoxDelta": 2.5,
+    "colorThreshold": 0.1,
+    "aaRadius": 1,
+    "subpixel": true,
+    "maxTextNodeDiffPercent": 35
+  },
+  "pixels": {
+    "width": 980,
+    "height": 938,
+    "mismatched": 5983,
+    "percent": 0.651,
+    "shapePercent": 0.102,
+    "textPercent": 2.314,
+    "sizeMismatch": false
+  },
+  "textNodes": [
+    {
+      "id": "I7037:390094;1067:2464",
+      "name": "Label",
+      "pixels": 227,
+      "percent": 24.9
+    },
+    {
+      "id": "I7037:390079;1067:2464",
+      "name": "Label",
+      "pixels": 198,
+      "percent": 22.9
+    },
+    {
+      "id": "7037:390074",
+      "name": "你叫什么名字？",
+      "pixels": 489,
+      "percent": 21.8
+    },
+    {
+      "id": "7037:390089",
+      "name": "我姓……",
+      "pixels": 261,
+      "percent": 20
+    },
+    {
+      "id": "7037:390014",
+      "name": "再见",
+      "pixels": 121,
+      "percent": 18
+    },
+    {
+      "id": "7037:390185",
+      "name": "早上好",
+      "pixels": 174,
+      "percent": 17.3
+    },
+    {
+      "id": "7037:390180",
+      "name": "谢谢",
+      "pixels": 118,
+      "percent": 17
+    },
+    {
+      "id": "7037:390059",
+      "name": "你好！",
+      "pixels": 157,
+      "percent": 15.9
+    },
+    {
+      "id": "I7037:390049;1067:2462",
+      "name": "Label",
+      "pixels": 162,
+      "percent": 15
+    },
+    {
+      "id": "I7037:390064;1067:2464",
+      "name": "Label",
+      "pixels": 130,
+      "percent": 14.3
+    },
+    {
+      "id": "I7037:390034;1067:2462",
+      "name": "Label",
+      "pixels": 140,
+      "percent": 13.6
+    },
+    {
+      "id": "7037:390075",
+      "name": "nǐ jiào shén me...",
+      "pixels": 209,
+      "percent": 12.8
+    },
+    {
+      "id": "1076:6307",
+      "name": "ÔN TẬP HK I – HK II (BUỔI 1)",
+      "pixels": 548,
+      "percent": 12.2
+    },
+    {
+      "id": "7037:390187",
+      "name": "zǎo shang hǎo",
+      "pixels": 188,
+      "percent": 9.9
+    },
+    {
+      "id": "7037:390090",
+      "name": "wǒ xìng ......",
+      "pixels": 248,
+      "percent": 9.6
+    }
+  ],
+  "regions": [
+    {
+      "x": 88,
+      "y": 776,
+      "width": 24,
+      "height": 24,
+      "pixels": 91,
+      "node": {
+        "id": "7037:390084",
+        "name": "Background+Border",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 88,
+      "y": 648,
+      "width": 24,
+      "height": 16,
+      "pixels": 90,
+      "node": {
+        "id": "7037:390054",
+        "name": "Background+Border",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 88,
+      "y": 712,
+      "width": 24,
+      "height": 24,
+      "pixels": 80,
+      "node": {
+        "id": "7037:390069",
+        "name": "Background+Border",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 56,
+      "y": 776,
+      "width": 16,
+      "height": 24,
+      "pixels": 61,
+      "node": {
+        "id": "7037:390095",
+        "name": "Gỡ (x)",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 88,
+      "y": 512,
+      "width": 24,
+      "height": 24,
+      "pixels": 59,
+      "node": {
+        "id": "7037:390024",
+        "name": "Background+Border",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 88,
+      "y": 576,
+      "width": 24,
+      "height": 24,
+      "pixels": 59,
+      "node": {
+        "id": "7037:390039",
+        "name": "Background+Border",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 88,
+      "y": 448,
+      "width": 24,
+      "height": 24,
+      "pixels": 49,
+      "node": {
+        "id": "7037:390010",
+        "name": "Overlay+Border",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 56,
+      "y": 648,
+      "width": 16,
+      "height": 16,
+      "pixels": 49,
+      "node": {
+        "id": "7037:390065",
+        "name": "Gỡ (x)",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 200,
+      "y": 784,
+      "width": 64,
+      "height": 8,
+      "pixels": 48,
+      "node": {
+        "id": "7037:390091",
+        "name": "Container",
+        "role": "container"
+      }
+    },
+    {
+      "x": 56,
+      "y": 520,
+      "width": 16,
+      "height": 16,
+      "pixels": 47,
+      "node": {
+        "id": "7037:390035",
+        "name": "Gỡ (x)",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 56,
+      "y": 584,
+      "width": 16,
+      "height": 16,
+      "pixels": 47,
+      "node": {
+        "id": "7037:390050",
+        "name": "Gỡ (x)",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 56,
+      "y": 712,
+      "width": 16,
+      "height": 24,
+      "pixels": 47,
+      "node": {
+        "id": "7037:390080",
+        "name": "Gỡ (x)",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 128,
+      "y": 504,
+      "width": 16,
+      "height": 24,
+      "pixels": 40,
+      "node": {
+        "id": "7037:390029",
+        "name": "Icon",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 56,
+      "y": 456,
+      "width": 16,
+      "height": 16,
+      "pixels": 33,
+      "node": {
+        "id": "7037:390020",
+        "name": "Gỡ (x)",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 128,
+      "y": 568,
+      "width": 16,
+      "height": 24,
+      "pixels": 28,
+      "node": {
+        "id": "7037:390044",
+        "name": "Icon",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 336,
+      "y": 792,
+      "width": 48,
+      "height": 8,
+      "pixels": 27,
+      "node": {
+        "id": "7037:390082",
+        "name": "Item 8",
+        "role": "container"
+      }
+    },
+    {
+      "x": 88,
+      "y": 384,
+      "width": 24,
+      "height": 24,
+      "pixels": 19,
+      "node": {
+        "id": "7037:389996",
+        "name": "Overlay+Border",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 56,
+      "y": 392,
+      "width": 16,
+      "height": 16,
+      "pixels": 17,
+      "node": {
+        "id": "7037:390006",
+        "name": "Gỡ (x)",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 208,
+      "y": 720,
+      "width": 8,
+      "height": 8,
+      "pixels": 5,
+      "node": {
+        "id": "7037:390076",
+        "name": "Container",
+        "role": "container"
+      }
+    },
+    {
+      "x": 256,
+      "y": 720,
+      "width": 8,
+      "height": 8,
+      "pixels": 4,
+      "node": {
+        "id": "7037:390076",
+        "name": "Container",
+        "role": "container"
+      }
+    }
+  ],
+  "boxes": {
+    "measured": 263,
+    "missing": [],
+    "withinThreshold": 195,
+    "buckets": {
+      "≤0.5px": 141,
+      "≤1px": 157,
+      "≤2px": 184,
+      "≤4px": 240,
+      ">4px": 23
+    },
+    "worst": [
+      {
+        "id": "7037:389972",
+        "name": "Section - Left Column: Knowledge Item List (Span 5 of 12)",
+        "role": "container",
+        "delta": 7,
+        "dx": 0,
+        "dy": 0,
+        "dw": -0.01,
+        "dh": 7,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "7037:389979",
+        "name": "Knowledge Items List",
+        "role": "container",
+        "delta": 7,
+        "dx": 0,
+        "dy": 0,
+        "dw": -0.01,
+        "dh": 7,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "7037:390090",
+        "name": "wǒ xìng ......",
+        "role": "text",
+        "delta": 7,
+        "dx": 0,
+        "dy": 7,
+        "dw": -0.01,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "7037:390091",
+        "name": "Container",
+        "role": "container",
+        "delta": 7,
+        "dx": 0,
+        "dy": 7,
+        "dw": -0.01,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "7037:390092",
+        "name": "Tôi họ ......",
+        "role": "text",
+        "delta": 7,
+        "dx": 0,
+        "dy": 7,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "7037:390095",
+        "name": "Gỡ (x)",
+        "role": "icon",
+        "delta": 6,
+        "dx": 0,
+        "dy": 6,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "7037:390084",
+        "name": "Background+Border",
+        "role": "icon",
+        "delta": 6,
+        "dx": 0,
+        "dy": 6,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "7037:390093",
+        "name": "Container",
+        "role": "container",
+        "delta": 6,
+        "dx": -0.01,
+        "dy": 6,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "7037:390094",
+        "name": "Background+Border",
+        "role": "instance",
+        "delta": 6,
+        "dx": -0.01,
+        "dy": 6,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I7037:390094;1067:2464",
+        "name": "Label",
+        "role": "text",
+        "delta": 6,
+        "dx": -0.01,
+        "dy": 6,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "7037:390075",
+        "name": "nǐ jiào shén me...",
+        "role": "text",
+        "delta": 5,
+        "dx": 0,
+        "dy": 5,
+        "dw": -0.01,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "7037:390076",
+        "name": "Container",
+        "role": "container",
+        "delta": 5,
+        "dx": 0,
+        "dy": 5,
+        "dw": -0.01,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "7037:390077",
+        "name": "Bạn tên là gì?",
+        "role": "text",
+        "delta": 5,
+        "dx": 0,
+        "dy": 5,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "7037:390082",
+        "name": "Item 8",
+        "role": "container",
+        "delta": 5,
+        "dx": 0,
+        "dy": 5,
+        "dw": -0.01,
+        "dh": 2,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "7037:390083",
+        "name": "Container",
+        "role": "container",
+        "delta": 5,
+        "dx": 0,
+        "dy": 5,
+        "dw": -0.01,
+        "dh": 2,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "7037:390087",
+        "name": "Container",
+        "role": "container",
+        "delta": 5,
+        "dx": 0,
+        "dy": 5,
+        "dw": -0.01,
+        "dh": 2,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "7037:390088",
+        "name": "Paragraph",
+        "role": "container",
+        "delta": 5,
+        "dx": 0,
+        "dy": 5,
+        "dw": -0.01,
+        "dh": 2,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "7037:390089",
+        "name": "我姓……",
+        "role": "text",
+        "delta": 5,
+        "dx": 0,
+        "dy": 5,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "7037:390080",
+        "name": "Gỡ (x)",
+        "role": "icon",
+        "delta": 4.5,
+        "dx": 0,
+        "dy": 4.5,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "7037:390069",
+        "name": "Background+Border",
+        "role": "icon",
+        "delta": 4.5,
+        "dx": 0,
+        "dy": 4.5,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "7037:390078",
+        "name": "Container",
+        "role": "container",
+        "delta": 4.5,
+        "dx": -0.01,
+        "dy": 4.5,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "7037:390079",
+        "name": "Background+Border",
+        "role": "instance",
+        "delta": 4.5,
+        "dx": -0.01,
+        "dy": 4.5,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I7037:390079;1067:2464",
+        "name": "Label",
+        "role": "text",
+        "delta": 4.5,
+        "dx": -0.01,
+        "dy": 4.5,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "7037:390060",
+        "name": "nǐ hǎo !",
+        "role": "text",
+        "delta": 4,
+        "dx": 0,
+        "dy": 4,
+        "dw": -0.01,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "7037:390061",
+        "name": "Container",
+        "role": "container",
+        "delta": 4,
+        "dx": 0,
+        "dy": 4,
+        "dw": -0.01,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      }
+    ],
+    "maxDelta": 7,
+    "over": [
+      {
+        "id": "7037:389972",
+        "name": "Section - Left Column: Knowledge Item List (Span 5 of 12)",
+        "role": "container",
+        "delta": 7,
+        "dx": 0,
+        "dy": 0,
+        "dw": -0.01,
+        "dh": 7,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "7037:389979",
+        "name": "Knowledge Items List",
+        "role": "container",
+        "delta": 7,
+        "dx": 0,
+        "dy": 0,
+        "dw": -0.01,
+        "dh": 7,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "7037:390090",
+        "name": "wǒ xìng ......",
+        "role": "text",
+        "delta": 7,
+        "dx": 0,
+        "dy": 7,
+        "dw": -0.01,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "7037:390091",
+        "name": "Container",
+        "role": "container",
+        "delta": 7,
+        "dx": 0,
+        "dy": 7,
+        "dw": -0.01,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "7037:390092",
+        "name": "Tôi họ ......",
+        "role": "text",
+        "delta": 7,
+        "dx": 0,
+        "dy": 7,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "7037:390095",
+        "name": "Gỡ (x)",
+        "role": "icon",
+        "delta": 6,
+        "dx": 0,
+        "dy": 6,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "7037:390084",
+        "name": "Background+Border",
+        "role": "icon",
+        "delta": 6,
+        "dx": 0,
+        "dy": 6,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "7037:390093",
+        "name": "Container",
+        "role": "container",
+        "delta": 6,
+        "dx": -0.01,
+        "dy": 6,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "7037:390094",
+        "name": "Background+Border",
+        "role": "instance",
+        "delta": 6,
+        "dx": -0.01,
+        "dy": 6,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I7037:390094;1067:2464",
+        "name": "Label",
+        "role": "text",
+        "delta": 6,
+        "dx": -0.01,
+        "dy": 6,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "7037:390075",
+        "name": "nǐ jiào shén me...",
+        "role": "text",
+        "delta": 5,
+        "dx": 0,
+        "dy": 5,
+        "dw": -0.01,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "7037:390076",
+        "name": "Container",
+        "role": "container",
+        "delta": 5,
+        "dx": 0,
+        "dy": 5,
+        "dw": -0.01,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "7037:390077",
+        "name": "Bạn tên là gì?",
+        "role": "text",
+        "delta": 5,
+        "dx": 0,
+        "dy": 5,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "7037:390082",
+        "name": "Item 8",
+        "role": "container",
+        "delta": 5,
+        "dx": 0,
+        "dy": 5,
+        "dw": -0.01,
+        "dh": 2,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "7037:390083",
+        "name": "Container",
+        "role": "container",
+        "delta": 5,
+        "dx": 0,
+        "dy": 5,
+        "dw": -0.01,
+        "dh": 2,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "7037:390087",
+        "name": "Container",
+        "role": "container",
+        "delta": 5,
+        "dx": 0,
+        "dy": 5,
+        "dw": -0.01,
+        "dh": 2,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "7037:390088",
+        "name": "Paragraph",
+        "role": "container",
+        "delta": 5,
+        "dx": 0,
+        "dy": 5,
+        "dw": -0.01,
+        "dh": 2,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "7037:390089",
+        "name": "我姓……",
+        "role": "text",
+        "delta": 5,
+        "dx": 0,
+        "dy": 5,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "7037:390080",
+        "name": "Gỡ (x)",
+        "role": "icon",
+        "delta": 4.5,
+        "dx": 0,
+        "dy": 4.5,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "7037:390069",
+        "name": "Background+Border",
+        "role": "icon",
+        "delta": 4.5,
+        "dx": 0,
+        "dy": 4.5,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "7037:390078",
+        "name": "Container",
+        "role": "container",
+        "delta": 4.5,
+        "dx": -0.01,
+        "dy": 4.5,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "7037:390079",
+        "name": "Background+Border",
+        "role": "instance",
+        "delta": 4.5,
+        "dx": -0.01,
+        "dy": 4.5,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I7037:390079;1067:2464",
+        "name": "Label",
+        "role": "text",
+        "delta": 4.5,
+        "dx": -0.01,
+        "dy": 4.5,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "7037:390060",
+        "name": "nǐ hǎo !",
+        "role": "text",
+        "delta": 4,
+        "dx": 0,
+        "dy": 4,
+        "dw": -0.01,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "7037:390061",
+        "name": "Container",
+        "role": "container",
+        "delta": 4,
+        "dx": 0,
+        "dy": 4,
+        "dw": -0.01,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "7037:390062",
+        "name": "Câu chào hỏi",
+        "role": "text",
+        "delta": 4,
+        "dx": 0,
+        "dy": 4,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "7037:390067",
+        "name": "Item 7",
+        "role": "container",
+        "delta": 4,
+        "dx": 0,
+        "dy": 4,
+        "dw": -0.01,
+        "dh": 1,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "7037:390068",
+        "name": "Container",
+        "role": "container",
+        "delta": 4,
+        "dx": 0,
+        "dy": 4,
+        "dw": -0.01,
+        "dh": 1,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "7037:390072",
+        "name": "Container",
+        "role": "container",
+        "delta": 4,
+        "dx": 0,
+        "dy": 4,
+        "dw": -0.01,
+        "dh": 1,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "7037:390073",
+        "name": "Paragraph",
+        "role": "container",
+        "delta": 4,
+        "dx": 0,
+        "dy": 4,
+        "dw": -0.01,
+        "dh": 1,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "7037:390074",
+        "name": "你叫什么名字？",
+        "role": "text",
+        "delta": 4,
+        "dx": 0,
+        "dy": 4,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "7037:390065",
+        "name": "Gỡ (x)",
+        "role": "icon",
+        "delta": 3.5,
+        "dx": 0,
+        "dy": 3.5,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "7037:390054",
+        "name": "Background+Border",
+        "role": "icon",
+        "delta": 3.5,
+        "dx": 0,
+        "dy": 3.5,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "7037:390063",
+        "name": "Container",
+        "role": "container",
+        "delta": 3.5,
+        "dx": -0.01,
+        "dy": 3.5,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "7037:390064",
+        "name": "Background+Border",
+        "role": "instance",
+        "delta": 3.5,
+        "dx": -0.01,
+        "dy": 3.5,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I7037:390064;1067:2464",
+        "name": "Label",
+        "role": "text",
+        "delta": 3.5,
+        "dx": -0.01,
+        "dy": 3.5,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "7037:390015",
+        "name": "zài jiàn",
+        "role": "text",
+        "delta": 3,
+        "dx": 0,
+        "dy": 3,
+        "dw": -0.17,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "7037:390016",
+        "name": "Container",
+        "role": "container",
+        "delta": 3,
+        "dx": 0,
+        "dy": 3,
+        "dw": -0.17,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "7037:390017",
+        "name": "Tạm biệt",
+        "role": "text",
+        "delta": 3,
+        "dx": 0,
+        "dy": 3,
+        "dw": 1.03,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "7037:390022",
+        "name": "Item 4",
+        "role": "container",
+        "delta": 3,
+        "dx": 0,
+        "dy": 3,
+        "dw": -0.01,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "7037:390035",
+        "name": "Gỡ (x)",
+        "role": "icon",
+        "delta": 3,
+        "dx": 0,
+        "dy": 3,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "7037:390023",
+        "name": "Container",
+        "role": "container",
+        "delta": 3,
+        "dx": 0,
+        "dy": 3,
+        "dw": -0.01,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "7037:390024",
+        "name": "Background+Border",
+        "role": "icon",
+        "delta": 3,
+        "dx": 0,
+        "dy": 3,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "7037:390027",
+        "name": "Container",
+        "role": "container",
+        "delta": 3,
+        "dx": 0,
+        "dy": 3,
+        "dw": -0.01,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "7037:390028",
+        "name": "Paragraph",
+        "role": "container",
+        "delta": 3,
+        "dx": 0,
+        "dy": 3,
+        "dw": -0.01,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "7037:390030",
+        "name": "shì",
+        "role": "text",
+        "delta": 3,
+        "dx": 0,
+        "dy": 3,
+        "dw": -0.01,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "7037:390031",
+        "name": "Container",
+        "role": "container",
+        "delta": 3,
+        "dx": 0,
+        "dy": 3,
+        "dw": -0.01,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "7037:390032",
+        "name": "Là, thì, đúng là",
+        "role": "text",
+        "delta": 3,
+        "dx": 0,
+        "dy": 3,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "7037:390033",
+        "name": "Container",
+        "role": "container",
+        "delta": 3,
+        "dx": -0.01,
+        "dy": 3,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "7037:390034",
+        "name": "Background+Border",
+        "role": "instance",
+        "delta": 3,
+        "dx": -0.01,
+        "dy": 3,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I7037:390034;1067:2462",
+        "name": "Label",
+        "role": "text",
+        "delta": 3,
+        "dx": -0.01,
+        "dy": 3,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "7037:390037",
+        "name": "Item 5",
+        "role": "container",
+        "delta": 3,
+        "dx": 0,
+        "dy": 3,
+        "dw": -0.01,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "7037:390050",
+        "name": "Gỡ (x)",
+        "role": "icon",
+        "delta": 3,
+        "dx": 0,
+        "dy": 3,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "7037:390038",
+        "name": "Container",
+        "role": "container",
+        "delta": 3,
+        "dx": 0,
+        "dy": 3,
+        "dw": -0.01,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "7037:390039",
+        "name": "Background+Border",
+        "role": "icon",
+        "delta": 3,
+        "dx": 0,
+        "dy": 3,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "7037:390042",
+        "name": "Container",
+        "role": "container",
+        "delta": 3,
+        "dx": 0,
+        "dy": 3,
+        "dw": -0.01,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "7037:390043",
+        "name": "Paragraph",
+        "role": "container",
+        "delta": 3,
+        "dx": 0,
+        "dy": 3,
+        "dw": -0.01,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "7037:390045",
+        "name": "ma",
+        "role": "text",
+        "delta": 3,
+        "dx": -0.01,
+        "dy": 3,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "7037:390046",
+        "name": "Container",
+        "role": "container",
+        "delta": 3,
+        "dx": 0,
+        "dy": 3,
+        "dw": -0.01,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "7037:390047",
+        "name": "Trợ từ nghi vấn",
+        "role": "text",
+        "delta": 3,
+        "dx": 0,
+        "dy": 3,
+        "dw": 0.48,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "7037:390048",
+        "name": "Container",
+        "role": "container",
+        "delta": 3,
+        "dx": -0.01,
+        "dy": 3,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "7037:390049",
+        "name": "Background+Border",
+        "role": "instance",
+        "delta": 3,
+        "dx": -0.01,
+        "dy": 3,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I7037:390049;1067:2462",
+        "name": "Label",
+        "role": "text",
+        "delta": 3,
+        "dx": -0.01,
+        "dy": 3,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "7037:390052",
+        "name": "Item 6",
+        "role": "container",
+        "delta": 3,
+        "dx": 0,
+        "dy": 3,
+        "dw": -0.01,
+        "dh": 1,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "7037:390053",
+        "name": "Container",
+        "role": "container",
+        "delta": 3,
+        "dx": 0,
+        "dy": 3,
+        "dw": -0.01,
+        "dh": 1,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "7037:390057",
+        "name": "Container",
+        "role": "container",
+        "delta": 3,
+        "dx": 0,
+        "dy": 3,
+        "dw": -0.01,
+        "dh": 1,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "7037:390058",
+        "name": "Paragraph",
+        "role": "container",
+        "delta": 3,
+        "dx": 0,
+        "dy": 3,
+        "dw": -0.01,
+        "dh": 1,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "7037:390059",
+        "name": "你好！",
+        "role": "text",
+        "delta": 3,
+        "dx": 0,
+        "dy": 3,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      }
+    ]
+  },
+  "failures": [
+    "68 elements are off by more than their limit (1px, 2.5px for text-driven; worst 7px)."
+  ],
+  "url": "http://localhost:3000/hoc-ky/bai-hoc/popup-chi-tiet-bai-hoc-4",
+  "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
+  "consoleErrors": [],
+  "rootFound": true
+}

@@ -1,0 +1,435 @@
+{
+  "pass": true,
+  "thresholds": {
+    "maxPixelDiffPercent": 0.5,
+    "maxBoxDelta": 1,
+    "maxTextBoxDelta": 2.5,
+    "colorThreshold": 0.1,
+    "aaRadius": 1,
+    "subpixel": true,
+    "maxTextNodeDiffPercent": 35
+  },
+  "pixels": {
+    "width": 960,
+    "height": 922,
+    "mismatched": 2676,
+    "percent": 0.302,
+    "shapePercent": 0,
+    "textPercent": 1.977,
+    "sizeMismatch": false
+  },
+  "textNodes": [
+    {
+      "id": "4056:145654",
+      "name": "Tổng kết",
+      "pixels": 153,
+      "percent": 13.7
+    },
+    {
+      "id": "4056:145592",
+      "name": "MINDSET DẠY VÀ HỌC",
+      "pixels": 314,
+      "percent": 10.6
+    },
+    {
+      "id": "4056:145636",
+      "name": "Luyện tập",
+      "pixels": 93,
+      "percent": 7.4
+    },
+    {
+      "id": "4056:145618",
+      "name": "Kiến thức mới",
+      "pixels": 119,
+      "percent": 6.7
+    },
+    {
+      "id": "4056:145582",
+      "name": "MỤC TIÊU ĐẦU RA CỦA KHÓA HỌC",
+      "pixels": 290,
+      "percent": 6.3
+    },
+    {
+      "id": "4056:145587",
+      "name": "MINDSET THIẾT KẾ KHÓA HỌC",
+      "pixels": 225,
+      "percent": 5.6
+    },
+    {
+      "id": "4056:145627",
+      "name": "Ví dụ minh họa",
+      "pixels": 99,
+      "percent": 5.2
+    },
+    {
+      "id": "4056:145608",
+      "name": "Khởi động",
+      "pixels": 67,
+      "percent": 5.1
+    },
+    {
+      "id": "4056:145645",
+      "name": "Vận dụng",
+      "pixels": 59,
+      "percent": 4.8
+    },
+    {
+      "id": "4056:145625",
+      "name": "03",
+      "pixels": 17,
+      "percent": 4.5
+    },
+    {
+      "id": "4056:145643",
+      "name": "05",
+      "pixels": 17,
+      "percent": 4.5
+    },
+    {
+      "id": "4056:145634",
+      "name": "04",
+      "pixels": 15,
+      "percent": 4
+    },
+    {
+      "id": "4056:145616",
+      "name": "02",
+      "pixels": 14,
+      "percent": 3.7
+    },
+    {
+      "id": "4056:145652",
+      "name": "06",
+      "pixels": 14,
+      "percent": 3.7
+    },
+    {
+      "id": "4056:145606",
+      "name": "01",
+      "pixels": 12,
+      "percent": 3.2
+    }
+  ],
+  "regions": [],
+  "boxes": {
+    "measured": 161,
+    "missing": [],
+    "withinThreshold": 161,
+    "buckets": {
+      "≤0.5px": 147,
+      "≤1px": 161,
+      "≤2px": 161,
+      "≤4px": 161,
+      ">4px": 0
+    },
+    "worst": [
+      {
+        "id": "4056:145647",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.98,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.98,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:145649",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.98,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.98,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:145650",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.98,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.98,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:145653",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.98,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.98,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:145654",
+        "name": "Tổng kết",
+        "role": "text",
+        "delta": 0.98,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.98,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:145592",
+        "name": "MINDSET DẠY VÀ HỌC",
+        "role": "text",
+        "delta": 0.86,
+        "dx": 0,
+        "dy": 0.01,
+        "dw": 0.86,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:145561",
+        "name": "Margin",
+        "role": "container",
+        "delta": 0.7,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.7,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:145562",
+        "name": "Chiến lược học viên",
+        "role": "text",
+        "delta": 0.7,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.7,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:145638",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.67,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.67,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:145640",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.67,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.67,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:145641",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.67,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.67,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:145644",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.67,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.67,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:145645",
+        "name": "Vận dụng",
+        "role": "text",
+        "delta": 0.67,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.67,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:145572",
+        "name": "Đánh giá năng lực đầu vào",
+        "role": "text",
+        "delta": 0.58,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.58,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:145577",
+        "name": "Đặc điểm tâm lý lứa tuổi",
+        "role": "text",
+        "delta": 0.47,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.47,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:145629",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.44,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.44,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:145631",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.44,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.44,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:145632",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.44,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.44,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:145635",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.44,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.44,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:145636",
+        "name": "Luyện tập",
+        "role": "text",
+        "delta": 0.44,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.44,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:145537",
+        "name": "Atom/Side Tab",
+        "role": "instance",
+        "delta": 0.41,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.41,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:145537;2177:28891",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.41,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.41,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:145537;2177:28892",
+        "name": "Chi tiết NV",
+        "role": "text",
+        "delta": 0.41,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.41,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "4056:145538",
+        "name": "Atom/Side Tab",
+        "role": "instance",
+        "delta": 0.41,
+        "dx": 0.41,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I4056:145538;2177:28948",
+        "name": "Liner Icon",
+        "role": "icon",
+        "delta": 0.41,
+        "dx": 0.41,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      }
+    ],
+    "maxDelta": 0.98,
+    "over": []
+  },
+  "failures": [],
+  "url": "http://localhost:3000/quan-ly-danh-muc/popup-danh-muc-cap-do/mindset-dk",
+  "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
+  "consoleErrors": [],
+  "rootFound": true
+}

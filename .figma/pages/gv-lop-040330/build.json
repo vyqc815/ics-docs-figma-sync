@@ -1,0 +1,22 @@
+{
+  "route": "/chi-tiet-lop/bai-tap-va-kiem-tra/man-cham-bai-trac-nghiem-app-cham",
+  "pageFile": "components/figma/gv-lop-040330/index.tsx",
+  "docFile": "docs/pages/chi-tiet-lop/bai-tap-va-kiem-tra/man-cham-bai-trac-nghiem-app-cham.md",
+  "sections": [
+    {
+      "nodeId": "5750:77413",
+      "component": "Body",
+      "file": "components/figma/gv-lop-040330/Body.tsx"
+    },
+    {
+      "nodeId": "5750:77606",
+      "component": "Header85",
+      "file": "components/figma/shared/Header85.tsx"
+    },
+    {
+      "nodeId": "5750:77748",
+      "component": "SidebarMenuTeacher",
+      "file": "components/figma/gv-lop-040330/SidebarMenuTeacher.tsx"
+    }
+  ]
+}

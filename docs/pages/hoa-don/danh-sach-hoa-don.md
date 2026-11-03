@@ -5,7 +5,7 @@
 > **Nguồn:** PLS-ICS T8/2026 ›         └─ HOÁ ĐƠN › ADM-HD-010000 — Hoá đơn / Danh sách hoá đơn (`2711:70470`, file `rRVs5HX0kIHffbS0V40djG`)  
 > **Route:** `/hoa-don/danh-sach-hoa-don`  
 > **Khung thiết kế:** 1440 × 1257 px  
-> **Xuất lúc:** 2026-11-02T03:48:50.863Z  
+> **Xuất lúc:** 2026-11-03T01:02:50.534Z  
 > **Spec đầy đủ (giá trị chính xác từng node):** `../../../.figma/pages/adm-hd-010000/page-spec.json`
 
 ## 1. Tổng quan
@@ -29,6 +29,8 @@ Nền trang: `#ffffff` (color/neutral/white).
 
 | Token | Biến CSS | Giá trị | Trỏ tới | Bộ / mode |
 | --- | --- | --- | --- | --- |
+| `bg/strong` | `--bg-strong` | `#e2e8f0` | color/border/default | Theme · Semantic / Light |
+| `bg/surface` | `--bg-surface` | `#ffffff` | color/neutral/white | Theme · Semantic / Light |
 | `bố cục/khoảng cách khối` | `--bo-cuc-khoang-cach-khoi` | `16` | spacing/16 | Number Tokens / Mode 1 |
 | `bố cục/lề hai bên` | `--bo-cuc-le-hai-ben` | `16` | spacing/16 | Number Tokens / Mode 1 |
 | `bố cục/lề trên dưới` | `--bo-cuc-le-tren-duoi` | `24` | spacing/24 | Number Tokens / Mode 1 |
@@ -440,7 +442,7 @@ Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí ·
                         - [chữ] “( Trống )” — 375×19 [FILL×HUG] · @ (0, 12) flow · Afacad 15/19px 500 #64748b (color/text/secondary) `3058:76425`
                       - [khối] **Data** — 375×43 [FILL×HUG] · @ (1053, 22.5) flow · column pad 12 0 12 0 `3058:76426`
                         - [chữ] “Học viên mới, chờ xếp lớp DN1.” — 375×19 [FILL×HUG] · @ (0, 12) flow · Afacad 15/19px 500 #64748b (color/text/secondary) `3058:76427`
-          - [khối] **Row · 102486** — 1498×77 [HUG×HUG] · @ (0, 343) flow · row gap 16 pad 10 12 10 12 align CENTER · bg #ffffff · border 0 0 1px 0 solid #f1f5f9 (color/border/subtle) `2731:72058`
+          - [khối] **Row · 102486** — 1498×77 [HUG×HUG] · @ (0, 343) flow · row gap 16 pad 10 12 10 12 align CENTER · bg #ffffff (bg/surface) · border 0 0 1px 0 solid #f1f5f9 (color/border/subtle) `2731:72058`
             - [khối] **Tên hoá đơn** — 200×56 [FIXED×HUG] · @ (12, 10) flow · column gap 4 `2731:72059`
               - [chữ] “[SP] Renew - DN287 - 102486 - Văn Anh (FB: Heo Xinh) - 1.000.000 đ” — 200×36 [FILL×HUG] · @ (0, 0) flow · Afacad 14/18px 500 #334155 (color/text/primary) · truncate 2 lines `2731:72060`
               - [khối] **Nhận tiền** — 84×16 [HUG×HUG] · @ (0, 40) flow · row gap 6 align CENTER `2731:72061`
@@ -742,7 +744,7 @@ Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí ·
                 - [instance] **Count** ⟨Atom/Number Badge: Value=1, Type=Circle, Size=Small, State=Active⟩ — 16×16 · @ (13, -5) abs · column justify CENTER align CENTER · bg #ff0000 · radius 64px · border 1px solid #ffffff `I2929:48461;2695:213048`
                   - [chữ] “1” — 14×14 [FIXED×HUG] · @ (1, 1) flow · Afacad 11/14px 700 #ffffff (color/neutral/white) · text-align center `I2929:48461;2695:213048;1971:8814`
             - [icon] **Hành động** — 20×18 · @ (1466, 29) flow · file /figma/assets/05a1b2abc952.svg `2731:72495`
-      - [hình] **Thanh cuộn** — 1174×6 · @ (0, 933) abs · bg #e2e8f0 · radius 3px `3269:66622`
+      - [hình] **Thanh cuộn** — 1174×6 · @ (0, 933) abs · bg #e2e8f0 (bg/strong) · radius 3px `3269:66622`
       - [hình] **Con trượt** — 919×6 · @ (0, 933) abs · bg #cbd5e1 (color/text/muted) · radius 3px `3269:66623`
   - [instance] **Tooltip · Trạng thái (hover)** ⟨Molecule/Tooltip: Tên trạng thái=Đợi lớp, Property 1=Trạng thái⟩ — 64×31 · @ (477, 869) abs · column gap 4 pad 6 10 6 10 · bg #000000 (color/neutral/900) · radius 6px · backdrop blur(2px) `3058:76265`
     - [chữ] “Đợi lớp” — 44×19 [HUG×HUG] · @ (10, 6) flow · Afacad 15/19px 500 #ffffff (color/neutral/white) · no-wrap `I3058:76265;3058:76261`

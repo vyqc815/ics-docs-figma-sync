@@ -1,6 +1,6 @@
 # Fidelity: GV-LD-010000-DK — Lịch dạy / Xem theo lớp
 
-- URL: `http://localhost:3108/lich-day/xem-theo-lop-dk`
+- URL: `http://localhost:3000/lich-day/xem-theo-lop-dk`
 - Verdict: **PASS**
 - Pixels outside text: **0.003%** differ (limit 0.5%); all pixels: 0.113%; inside text boxes: 1.125% (glyph rendering)
 - Boxes: 226/226 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 226, ≤1px: 226, ≤2px: 226, ≤4px: 226, >4px: 0

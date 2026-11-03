@@ -1,8 +1,8 @@
 # Fidelity: CD-KH-040200 — Kiến thức (S1) / Ngữ pháp
 
-- URL: `http://localhost:3108/kien-thuc-s1/ngu-phap`
+- URL: `http://localhost:3000/kien-thuc-s1/ngu-phap`
 - Verdict: **PASS**
-- Pixels outside text: **0.004%** differ (limit 0.5%); all pixels: 0.341%; inside text boxes: 1.723% (glyph rendering)
+- Pixels outside text: **0.004%** differ (limit 0.5%); all pixels: 0.315%; inside text boxes: 1.592% (glyph rendering)
 - Boxes: 379/379 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 358, ≤1px: 362, ≤2px: 379, ≤4px: 379, >4px: 0
 
 ## Pixel regions (largest first)
@@ -27,12 +27,12 @@
 | Tất cả cụm (`5003:16660`) | 7.8% |
 | Label (`I4915:254548;4901:216166;2245:87908`) | 7.8% |
 | Chi tiết NV (`I5003:14917;2177:28928`) | 7% |
-| Đại từ nghi vấn 哪儿 và 哪里 (`4846:168610`) | 6.5% |
 | Chi tiết NV (`I5003:14902;2177:28928`) | 6.4% |
 | Chi tiết NV (`I4846:168504;2177:28928`) | 4.8% |
 | Button (`I5003:16565;1048:1240`) | 4.8% |
 | Ngữ pháp (`4846:168509`) | 3.5% |
 | Button (`I4846:168520;1048:1240`) | 3.4% |
+| Label (`I4915:254548;5491:336917;2245:87908`) | 2.3% |
 
 ## Largest box differences
 

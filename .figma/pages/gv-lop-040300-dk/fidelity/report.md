@@ -1,8 +1,8 @@
 # Fidelity: GV-LOP-040300-DK — Chi tiết lớp / Bài tập và Kiểm tra / Màn chấm bài
 
-- URL: `http://localhost:3108/chi-tiet-lop/bai-tap-va-kiem-tra/man-cham-bai-dk`
+- URL: `http://localhost:3000/chi-tiet-lop/bai-tap-va-kiem-tra/man-cham-bai-dk`
 - Verdict: **PASS**
-- Pixels outside text: **0.002%** differ (limit 0.5%); all pixels: 0.17%; inside text boxes: 1.203% (glyph rendering)
+- Pixels outside text: **0.002%** differ (limit 0.5%); all pixels: 0.136%; inside text boxes: 0.956% (glyph rendering)
 - Boxes: 425/425 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 419, ≤1px: 425, ≤2px: 425, ≤4px: 425, >4px: 0
 
 ## Pixel regions (largest first)
@@ -20,14 +20,10 @@
 
 | Text | Differing |
 | --- | --- |
-| 100% (`I5425:295961;1308:6749`) | 19.4% |
-| 100% (`I5425:296004;1308:6749`) | 19.4% |
-| Label (`I5425:296812;2245:87914`) | 19% |
-| 100% (`I5425:295970;1308:6749`) | 17.7% |
-| 100% (`I5425:295979;1308:6749`) | 15.8% |
 | Label (`I5425:296808;2245:87908`) | 8.5% |
 | Huong-dan-hoc-vien.mp4 (`I5425:295878;1062:1351`) | 6.2% |
 | Huong-dan-hoc-vien.mp4 (`I5425:295877;1062:1351`) | 5.7% |
+| Label (`I5425:296812;2245:87914`) | 5.1% |
 | Label (`I5425:296813;2245:87908`) | 4.9% |
 | Label (`I5425:296809;689:15190`) | 4.6% |
 | Value (`I5425:295849;2015:36008`) | 4.3% |
@@ -35,6 +31,10 @@
 | Label (`I5425:296818;689:15190`) | 3.9% |
 | Label (`I5425:296814;689:15190`) | 3.6% |
 | MINITEST 5 - PERSÖNLICHE DATEN (`5425:295821`) | 3.2% |
+| Tìm nội dung... (`I5425:295853;2808:42233`) | 2.8% |
+| Label (`I5425:296820;2245:87908`) | 2.8% |
+| Label (`I5425:296816;2245:87908`) | 2.7% |
+| Hiện Tên (`5425:295847`) | 2.5% |
 
 ## Largest box differences
 

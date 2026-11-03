@@ -1,15 +1,14 @@
 # Fidelity: GV-LOP-110300-DK — Chi tiết lớp / Thông tin / Lịch sử & lương
 
-- URL: `http://localhost:3108/chi-tiet-lop/thong-tin/lich-su-luong-dk`
+- URL: `http://localhost:3000/chi-tiet-lop/thong-tin/lich-su-luong-dk`
 - Verdict: **PASS**
-- Pixels outside text: **0%** differ (limit 0.5%); all pixels: 0.145%; inside text boxes: 1.582% (glyph rendering)
+- Pixels outside text: **0%** differ (limit 0.5%); all pixels: 0.116%; inside text boxes: 1.265% (glyph rendering)
 - Boxes: 168/168 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 165, ≤1px: 167, ≤2px: 168, ≤4px: 168, >4px: 0
 
 ## Text boxes with most differing pixels (limit 35%)
 
 | Text | Differing |
 | --- | --- |
-| Label (`I4333:19629;2245:87914`) | 15.7% |
 | Label (`I4899:187882;2245:87908`) | 8.5% |
 | Label (`I4333:19618;2245:87908`) | 6.3% |
 | Label (`I4333:19619;2245:87908`) | 4.9% |
@@ -22,6 +21,7 @@
 | Lịch sử & lương (`4333:21495`) | 2.5% |
 | Label (`I4333:19627;2245:87908`) | 2.1% |
 | Vai trò (`I4899:187632;4899:187330`) | 1.6% |
+| Label (`I4333:19629;2245:87914`) | 1.6% |
 | Label (`I4333:19623;2245:87908`) | 1.4% |
 | Label (`I4333:19628;2245:87908`) | 1.4% |
 

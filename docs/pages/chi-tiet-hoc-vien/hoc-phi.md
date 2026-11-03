@@ -5,7 +5,7 @@
 > **Nguồn:** PLS-ICS T8/2026 ›         ├─ HỌC VIÊN › ADM-HV-020300 — Chi tiết học viên / Học phí (`1117:10745`, file `rRVs5HX0kIHffbS0V40djG`)  
 > **Route:** `/chi-tiet-hoc-vien/hoc-phi`  
 > **Khung thiết kế:** 1440 × 1004 px  
-> **Xuất lúc:** 2026-11-02T03:20:13.628Z  
+> **Xuất lúc:** 2026-11-03T03:12:24.943Z  
 > **Spec đầy đủ (giá trị chính xác từng node):** `../../../.figma/pages/adm-hv-020300/page-spec.json`
 
 ## 1. Tổng quan
@@ -26,6 +26,7 @@ Nền trang: `#ffffff`.
 
 | Token | Biến CSS | Giá trị | Trỏ tới | Bộ / mode |
 | --- | --- | --- | --- | --- |
+| `bg/strong` | `--bg-strong` | `#e2e8f0` | color/border/default | Theme · Semantic / Light |
 | `bố cục/khoảng cách khối` | `--bo-cuc-khoang-cach-khoi` | `16` | spacing/16 | Number Tokens / Mode 1 |
 | `bố cục/lề hai bên` | `--bo-cuc-le-hai-ben` | `16` | spacing/16 | Number Tokens / Mode 1 |
 | `bố cục/lề trên dưới` | `--bo-cuc-le-tren-duoi` | `24` | spacing/24 | Number Tokens / Mode 1 |
@@ -403,7 +404,7 @@ Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí ·
                 - [instance] **Count** ⟨Atom/Number Badge: Value=4, Type=Circle, Size=Small, State=Active⟩ — 16×16 · @ (13, -5) abs · column justify CENTER align CENTER · bg #ff0000 · radius 64px · border 1px solid #ffffff `I3269:62827;2695:213048`
                   - [chữ] “4” — 14×14 [FIXED×HUG] · @ (1, 1) flow · Afacad 11/14px 700 #ffffff (color/neutral/white) · text-align center `I3269:62827;2695:213048;1971:8814`
             - [icon] **Hành động** — 20×18 · @ (1466, 29) flow · file /figma/assets/05a1b2abc952.svg `3269:62828`
-      - [hình] **Thanh cuộn** — 1174×6 · @ (0, 559) abs · bg #e2e8f0 · radius 3px `3269:66616`
+      - [hình] **Thanh cuộn** — 1174×6 · @ (0, 559) abs · bg #e2e8f0 (bg/strong) · radius 3px `3269:66616`
       - [hình] **Con trượt** — 919×6 · @ (0, 559) abs · bg #cbd5e1 (color/text/muted) · radius 3px `3269:66617`
     - [instance] **Phân Trang** ⟨Phân Trang⟩ — 1174×28 [FILL×HUG] · @ (16, 776) flow · row gap 12 align CENTER `1805:17859`
       - [khối] **Container** — 229×19 [HUG×HUG] · @ (0, 4.5) flow · column `I1805:17859;1391:17471`

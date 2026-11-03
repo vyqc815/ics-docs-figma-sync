@@ -1,0 +1,484 @@
+{
+  "pass": true,
+  "thresholds": {
+    "maxPixelDiffPercent": 0.5,
+    "maxBoxDelta": 1,
+    "maxTextBoxDelta": 2.5,
+    "colorThreshold": 0.1,
+    "aaRadius": 1,
+    "subpixel": true,
+    "maxTextNodeDiffPercent": 35
+  },
+  "pixels": {
+    "width": 1440,
+    "height": 900,
+    "mismatched": 3698,
+    "percent": 0.285,
+    "shapePercent": 0.004,
+    "textPercent": 1.469,
+    "sizeMismatch": false
+  },
+  "textNodes": [
+    {
+      "id": "I6823:376080;2015:36008",
+      "name": "Value",
+      "pixels": 90,
+      "percent": 6.6
+    },
+    {
+      "id": "6823:376117",
+      "name": "27.09.2026",
+      "pixels": 95,
+      "percent": 6.5
+    },
+    {
+      "id": "6823:376136",
+      "name": "25.09.2026",
+      "pixels": 93,
+      "percent": 6.3
+    },
+    {
+      "id": "6823:376155",
+      "name": "25.09.2026",
+      "pixels": 93,
+      "percent": 6.3
+    },
+    {
+      "id": "6823:376193",
+      "name": "15.09.2026",
+      "pixels": 83,
+      "percent": 5.6
+    },
+    {
+      "id": "6823:376212",
+      "name": "13.09.2026",
+      "pixels": 83,
+      "percent": 5.6
+    },
+    {
+      "id": "6823:376231",
+      "name": "10.09.2026",
+      "pixels": 79,
+      "percent": 5.4
+    },
+    {
+      "id": "6823:376174",
+      "name": "18.09.2026",
+      "pixels": 76,
+      "percent": 5.2
+    },
+    {
+      "id": "6823:376098",
+      "name": "Người tạo",
+      "pixels": 64,
+      "percent": 4.9
+    },
+    {
+      "id": "I6823:376083;2015:36008",
+      "name": "Value",
+      "pixels": 60,
+      "percent": 4.4
+    },
+    {
+      "id": "6823:376221",
+      "name": "Quy trình đánh giá",
+      "pixels": 153,
+      "percent": 4.4
+    },
+    {
+      "id": "6823:376164",
+      "name": "Quy trình giáo viên",
+      "pixels": 144,
+      "percent": 4.1
+    },
+    {
+      "id": "6823:376183",
+      "name": "Quy trình CSKH",
+      "pixels": 141,
+      "percent": 4
+    },
+    {
+      "id": "I6823:376081;2015:36008",
+      "name": "Value",
+      "pixels": 70,
+      "percent": 3.8
+    },
+    {
+      "id": "6823:376202",
+      "name": "Quy trình kiểm tra",
+      "pixels": 133,
+      "percent": 3.8
+    }
+  ],
+  "regions": [
+    {
+      "x": 856,
+      "y": 176,
+      "width": 24,
+      "height": 8,
+      "pixels": 11,
+      "node": {
+        "id": "I6823:376115;1991:15993;1991:15980",
+        "name": "Ellipse 76",
+        "role": "image"
+      }
+    },
+    {
+      "x": 856,
+      "y": 232,
+      "width": 24,
+      "height": 16,
+      "pixels": 11,
+      "node": {
+        "id": "I6823:376134;1991:15993;1991:15980",
+        "name": "Ellipse 76",
+        "role": "image"
+      }
+    },
+    {
+      "x": 56,
+      "y": 16,
+      "width": 16,
+      "height": 32,
+      "pixels": 8,
+      "node": {
+        "id": "6823:376295",
+        "name": "Navigation / Sidebar Menu / Light",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 16,
+      "y": 16,
+      "width": 16,
+      "height": 8,
+      "pixels": 6,
+      "node": {
+        "id": "6823:376295",
+        "name": "Navigation / Sidebar Menu / Light",
+        "role": "icon"
+      }
+    }
+  ],
+  "boxes": {
+    "measured": 345,
+    "missing": [],
+    "withinThreshold": 345,
+    "buckets": {
+      "≤0.5px": 329,
+      "≤1px": 344,
+      "≤2px": 344,
+      "≤4px": 345,
+      ">4px": 0
+    },
+    "worst": [
+      {
+        "id": "6823:376098",
+        "name": "Người tạo",
+        "role": "text",
+        "delta": 2.03,
+        "dx": 0,
+        "dy": 0,
+        "dw": 2.03,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6823:376079",
+        "name": "Atom/Input",
+        "role": "instance",
+        "delta": 0.84,
+        "dx": -0.84,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6823:376079;1739:32348",
+        "name": "Frame 427321959",
+        "role": "container",
+        "delta": 0.84,
+        "dx": -0.84,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6823:376079;1739:32349",
+        "name": "SVG",
+        "role": "icon",
+        "delta": 0.84,
+        "dx": -0.84,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6823:376079;1739:32351",
+        "name": "Tìm nội dung...",
+        "role": "text",
+        "delta": 0.84,
+        "dx": -0.84,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6823:376080",
+        "name": "Dropdown",
+        "role": "instance",
+        "delta": 0.84,
+        "dx": -0.84,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6823:376080;2015:36007",
+        "name": "Content",
+        "role": "container",
+        "delta": 0.84,
+        "dx": -0.84,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6823:376080;2015:36008",
+        "name": "Value",
+        "role": "text",
+        "delta": 0.84,
+        "dx": -0.84,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6823:376080;2015:36012",
+        "name": "Chevron",
+        "role": "icon",
+        "delta": 0.84,
+        "dx": -0.84,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6823:376081",
+        "name": "Dropdown · Loại quy trình",
+        "role": "instance",
+        "delta": 0.84,
+        "dx": -0.84,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6823:376081;2015:36007",
+        "name": "Content",
+        "role": "container",
+        "delta": 0.84,
+        "dx": -0.84,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6823:376081;2015:36008",
+        "name": "Value",
+        "role": "text",
+        "delta": 0.84,
+        "dx": -0.84,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6823:376081;2015:36012",
+        "name": "Chevron",
+        "role": "icon",
+        "delta": 0.84,
+        "dx": -0.84,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6823:376083",
+        "name": "Dropdown",
+        "role": "instance",
+        "delta": 0.84,
+        "dx": -0.84,
+        "dy": 0,
+        "dw": 0.84,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6823:376083;2015:36007",
+        "name": "Content",
+        "role": "container",
+        "delta": 0.84,
+        "dx": -0.84,
+        "dy": 0,
+        "dw": 0.84,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6823:376083;2015:36008",
+        "name": "Value",
+        "role": "text",
+        "delta": 0.84,
+        "dx": -0.84,
+        "dy": 0,
+        "dw": 0.84,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6823:376100",
+        "name": "Ngày cập nhật",
+        "role": "text",
+        "delta": 0.27,
+        "dx": -0.14,
+        "dy": 0,
+        "dw": 0.27,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6823:376092",
+        "name": "Mô tả",
+        "role": "text",
+        "delta": 0.22,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.22,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6823:376240;1391:17471",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.03,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.03,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6823:376240;1391:17472",
+        "name": "Hiển thị 1 - 10 trong tổng số 80 lớp học",
+        "role": "text",
+        "delta": 0.03,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.03,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6823:376240;1391:17473",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.03,
+        "dx": 0.03,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6823:376240;1391:17474",
+        "name": "Button",
+        "role": "container",
+        "delta": 0.03,
+        "dx": 0.03,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6823:376240;1391:17475",
+        "name": "Trước",
+        "role": "text",
+        "delta": 0.03,
+        "dx": 0.03,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6823:376240;1391:17476",
+        "name": "Button",
+        "role": "container",
+        "delta": 0.03,
+        "dx": 0.03,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6823:376240;1391:17477",
+        "name": "1",
+        "role": "text",
+        "delta": 0.03,
+        "dx": 0.03,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      }
+    ],
+    "maxDelta": 2.03,
+    "over": []
+  },
+  "failures": [],
+  "url": "http://localhost:3000/quy-trinh/danh-sach-loai-quy-trinh/dropdown-chon-loai-quy-trinh-dk",
+  "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
+  "consoleErrors": [],
+  "rootFound": true
+}

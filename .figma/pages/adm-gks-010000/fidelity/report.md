@@ -1,6 +1,6 @@
 # Fidelity: ADM-GKS-010000 — Khảo sát / Giao khảo sát / Danh sách người được giao
 
-- URL: `http://localhost:3108/khao-sat/giao-khao-sat/danh-sach-nguoi-duoc-giao`
+- URL: `http://localhost:3000/khao-sat/giao-khao-sat/danh-sach-nguoi-duoc-giao`
 - Verdict: **PASS**
 - Pixels outside text: **0.001%** differ (limit 0.5%); all pixels: 0.084%; inside text boxes: 0.486% (glyph rendering)
 - Boxes: 326/326 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 319, ≤1px: 323, ≤2px: 326, ≤4px: 326, >4px: 0

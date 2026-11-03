@@ -12,19 +12,13 @@
   "pixels": {
     "width": 1440,
     "height": 1004,
-    "mismatched": 2646,
-    "percent": 0.183,
+    "mismatched": 2327,
+    "percent": 0.161,
     "shapePercent": 0.002,
-    "textPercent": 1.406,
+    "textPercent": 1.235,
     "sizeMismatch": false
   },
   "textNodes": [
-    {
-      "id": "I4056:120817;2245:87864",
-      "name": "Label",
-      "pixels": 338,
-      "percent": 13.5
-    },
     {
       "id": "I4056:120526;3108:125026",
       "name": "Số liệu",
@@ -107,6 +101,12 @@
       "id": "4056:120612",
       "name": "Học viên",
       "pixels": 28,
+      "percent": 2.5
+    },
+    {
+      "id": "I4056:120819;2245:87858",
+      "name": "Label",
+      "pixels": 62,
       "percent": 2.5
     }
   ],
@@ -453,7 +453,7 @@
     "over": []
   },
   "failures": [],
-  "url": "http://localhost:3108/chi-tiet-hoc-vien/hoc-phi-dk",
+  "url": "http://localhost:3000/chi-tiet-hoc-vien/hoc-phi-dk",
   "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
   "consoleErrors": [],
   "rootFound": true

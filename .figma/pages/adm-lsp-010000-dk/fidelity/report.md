@@ -1,8 +1,8 @@
 # Fidelity: ADM-LSP-010000-DK — Lương / Lương SP
 
-- URL: `http://localhost:3108/luong/luong-sp-dk`
+- URL: `http://localhost:3000/luong/luong-sp-dk`
 - Verdict: **PASS**
-- Pixels outside text: **0.005%** differ (limit 0.5%); all pixels: 0.188%; inside text boxes: 0.831% (glyph rendering)
+- Pixels outside text: **0.005%** differ (limit 0.5%); all pixels: 0.159%; inside text boxes: 0.699% (glyph rendering)
 - Boxes: 395/395 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 395, ≤1px: 395, ≤2px: 395, ≤4px: 395, >4px: 0
 
 ## Pixel regions (largest first)
@@ -19,7 +19,6 @@
 
 | Text | Differing |
 | --- | --- |
-| Label (`I4343:84622;2245:87864`) | 14.3% |
 | Nguyễn Thị Thu Thủy (`4343:84890`) | 5.5% |
 | Value (`I4760:157894;1981:25753;1971:8814`) | 4.7% |
 | Trần Phương Nguyên (`4343:84802`) | 4.3% |
@@ -34,6 +33,7 @@
 | BD105-I (`4343:84867`) | 2.4% |
 | Label (`I4343:84624;2245:87768`) | 2.2% |
 | BD105-I (`4343:84825`) | 2.2% |
+| BD105-I (`4343:84673`) | 2.1% |
 
 ## Largest box differences
 

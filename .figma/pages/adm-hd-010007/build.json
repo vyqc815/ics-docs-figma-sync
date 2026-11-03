@@ -1,0 +1,30 @@
+{
+  "route": "/hoa-don/danh-sach-hoa-don/sau-khi-them-lich-hen",
+  "pageFile": "components/figma/adm-hd-010007/index.tsx",
+  "docFile": "docs/pages/hoa-don/danh-sach-hoa-don/sau-khi-them-lich-hen.md",
+  "sections": [
+    {
+      "nodeId": "3058:106825",
+      "component": "Header10",
+      "file": "components/figma/shared/Header10.tsx"
+    },
+    {
+      "nodeId": "4915:246135",
+      "component": "SidebarMenuAdmin",
+      "file": "components/figma/adm-hd-010007/SidebarMenuAdmin.tsx"
+    },
+    {
+      "nodeId": "3058:106958",
+      "component": "Maincontent",
+      "file": "components/figma/adm-hd-010007/Maincontent.tsx"
+    },
+    {
+      "nodeId": "3058:107410",
+      "component": "MouseClick",
+      "file": "components/figma/adm-hd-010007/MouseClick.tsx"
+    }
+  ],
+  "idAlias": {
+    "3058:106825": "3058:98039"
+  }
+}

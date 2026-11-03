@@ -1,0 +1,22 @@
+{
+  "route": "/thu-vien/ky-nang/noi",
+  "pageFile": "components/figma/cd-kh-070230/index.tsx",
+  "docFile": "docs/pages/thu-vien/ky-nang/noi.md",
+  "sections": [
+    {
+      "nodeId": "5672:70936",
+      "component": "Content",
+      "file": "components/figma/cd-kh-070230/Content.tsx"
+    },
+    {
+      "nodeId": "5672:71263",
+      "component": "SidebarMenuCd",
+      "file": "components/figma/cd-kh-070230/SidebarMenuCd.tsx"
+    },
+    {
+      "nodeId": "5672:71264",
+      "component": "Header",
+      "file": "components/figma/cd-kh-070230/Header.tsx"
+    }
+  ]
+}

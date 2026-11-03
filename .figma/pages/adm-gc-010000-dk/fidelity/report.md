@@ -1,8 +1,8 @@
 # Fidelity: ADM-GC-010000-DK — Ghi chú / Danh sách ghi chú
 
-- URL: `http://localhost:3108/ghi-chu/danh-sach-ghi-chu-dk`
+- URL: `http://localhost:3000/ghi-chu/danh-sach-ghi-chu-dk`
 - Verdict: **PASS**
-- Pixels outside text: **0.002%** differ (limit 0.5%); all pixels: 0.131%; inside text boxes: 0.669% (glyph rendering)
+- Pixels outside text: **0.002%** differ (limit 0.5%); all pixels: 0.112%; inside text boxes: 0.57% (glyph rendering)
 - Boxes: 298/298 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 298, ≤1px: 298, ≤2px: 298, ≤4px: 298, >4px: 0
 
 ## Pixel regions (largest first)
@@ -16,7 +16,6 @@
 
 | Text | Differing |
 | --- | --- |
-| Label (`I4083:136996;2245:87864`) | 11.9% |
 | Label (`I4083:137001;2245:87858`) | 2.5% |
 | Label (`I4083:137006;2245:87768`) | 2.4% |
 | Khai Giảng Lớp Tháng 9 (`4083:136832`) | 2.1% |
@@ -31,6 +30,7 @@
 | 20% (`I4083:137003;1971:7433;1959:25431`) | 1.5% |
 | 20% (`I4083:137004;1971:7433;1959:25431`) | 1.5% |
 | 20% (`I4083:137005;1971:7433;1959:25431`) | 1.5% |
+| 02:30 PM, 05.10.2026 (`4083:136881`) | 1.4% |
 
 ## Largest box differences
 

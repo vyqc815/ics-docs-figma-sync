@@ -1,6 +1,6 @@
 # Fidelity: ADM-QT-010000 — Quy trình / Danh sách loại quy trình
 
-- URL: `http://localhost:3108/quy-trinh/danh-sach-loai-quy-trinh`
+- URL: `http://localhost:3000/quy-trinh/danh-sach-loai-quy-trinh`
 - Verdict: **PASS**
 - Pixels outside text: **0.001%** differ (limit 0.5%); all pixels: 0.208%; inside text boxes: 1.23% (glyph rendering)
 - Boxes: 311/311 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 295, ≤1px: 310, ≤2px: 310, ≤4px: 311, >4px: 0

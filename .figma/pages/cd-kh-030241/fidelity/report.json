@@ -1,0 +1,435 @@
+{
+  "pass": true,
+  "thresholds": {
+    "maxPixelDiffPercent": 0.5,
+    "maxBoxDelta": 1,
+    "maxTextBoxDelta": 2.5,
+    "colorThreshold": 0.1,
+    "aaRadius": 1,
+    "subpixel": true,
+    "maxTextNodeDiffPercent": 35
+  },
+  "pixels": {
+    "width": 980,
+    "height": 938,
+    "mismatched": 793,
+    "percent": 0.086,
+    "shapePercent": 0.002,
+    "textPercent": 1.53,
+    "sizeMismatch": false
+  },
+  "textNodes": [
+    {
+      "id": "7193:402154",
+      "name": "ÔN TẬP HK I – HK II (BUỔI 1)",
+      "pixels": 548,
+      "percent": 12.2
+    },
+    {
+      "id": "I7193:402170;868:21315",
+      "name": "Nội dung",
+      "pixels": 48,
+      "percent": 4.4
+    },
+    {
+      "id": "I7193:402156;2808:42802",
+      "name": "Badge",
+      "pixels": 39,
+      "percent": 2.9
+    },
+    {
+      "id": "7193:402175",
+      "name": "Danh sách kiến thức",
+      "pixels": 44,
+      "percent": 1.4
+    },
+    {
+      "id": "I7193:402166;497:25617",
+      "name": "Nội dung",
+      "pixels": 17,
+      "percent": 1.1
+    },
+    {
+      "id": "I7193:402168;868:21315",
+      "name": "Nội dung",
+      "pixels": 15,
+      "percent": 0.9
+    },
+    {
+      "id": "I7193:402167;868:21315",
+      "name": "Nội dung",
+      "pixels": 10,
+      "percent": 0.7
+    },
+    {
+      "id": "7193:402158",
+      "name": "90 phút",
+      "pixels": 6,
+      "percent": 0.5
+    },
+    {
+      "id": "7193:402160",
+      "name": "Ngày tạo: 12.09.2025",
+      "pixels": 12,
+      "percent": 0.3
+    },
+    {
+      "id": "7193:402162",
+      "name": "Ngày cập nhật: 16.09.2025",
+      "pixels": 12,
+      "percent": 0.3
+    },
+    {
+      "id": "I7193:402148;2808:42163",
+      "name": "Title",
+      "pixels": 7,
+      "percent": 0.2
+    },
+    {
+      "id": "7193:402453",
+      "name": "Chưa có tài liệu học tập nào.",
+      "pixels": 6,
+      "percent": 0.2
+    },
+    {
+      "id": "I7193:402388;2514:153363;1048:1230",
+      "name": "Button",
+      "pixels": 4,
+      "percent": 0.2
+    },
+    {
+      "id": "I7193:402169;868:21210",
+      "name": "Nội dung",
+      "pixels": 2,
+      "percent": 0.1
+    },
+    {
+      "id": "I7193:402388;2514:153361;1048:1232",
+      "name": "Button",
+      "pixels": 1,
+      "percent": 0.1
+    }
+  ],
+  "regions": [],
+  "boxes": {
+    "measured": 75,
+    "missing": [],
+    "withinThreshold": 75,
+    "buckets": {
+      "≤0.5px": 72,
+      "≤1px": 75,
+      "≤2px": 75,
+      "≤4px": 75,
+      ">4px": 0
+    },
+    "worst": [
+      {
+        "id": "7193:402154",
+        "name": "ÔN TẬP HK I – HK II (BUỔI 1)",
+        "role": "text",
+        "delta": 0.97,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.97,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "7193:402467",
+        "name": "Chưa có tài liệu học tập nào.",
+        "role": "text",
+        "delta": 0.75,
+        "dx": -0.38,
+        "dy": 0,
+        "dw": 0.75,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "7193:402453",
+        "name": "Chưa có tài liệu học tập nào.",
+        "role": "text",
+        "delta": 0.53,
+        "dx": -0.27,
+        "dy": 0,
+        "dw": 0.53,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I7193:402148;2808:42158",
+        "name": "Title",
+        "role": "container",
+        "delta": 0.06,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.06,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I7193:402148;2808:42162",
+        "name": "Heading 2",
+        "role": "container",
+        "delta": 0.06,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.06,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I7193:402148;2808:42163",
+        "name": "Title",
+        "role": "text",
+        "delta": 0.06,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.06,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "7193:402156",
+        "name": "Atom/Badge",
+        "role": "instance",
+        "delta": 0.03,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.03,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I7193:402156;2808:42802",
+        "name": "Badge",
+        "role": "text",
+        "delta": 0.03,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.03,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "7193:402157",
+        "name": "•",
+        "role": "text",
+        "delta": 0.03,
+        "dx": 0.03,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "7193:402158",
+        "name": "90 phút",
+        "role": "text",
+        "delta": 0.03,
+        "dx": 0.03,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "7193:402159",
+        "name": "•",
+        "role": "text",
+        "delta": 0.03,
+        "dx": 0.03,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "7193:402160",
+        "name": "Ngày tạo: 12.09.2025",
+        "role": "text",
+        "delta": 0.03,
+        "dx": 0.03,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "7193:402161",
+        "name": "•",
+        "role": "text",
+        "delta": 0.03,
+        "dx": 0.03,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "7193:402162",
+        "name": "Ngày cập nhật: 16.09.2025",
+        "role": "text",
+        "delta": 0.03,
+        "dx": 0.03,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "7193:402836",
+        "name": "Liner Icon",
+        "role": "icon",
+        "delta": 0.02,
+        "dx": -0.02,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "7193:402493",
+        "name": "Chưa có tài liệu học tập nào.",
+        "role": "text",
+        "delta": 0.02,
+        "dx": -0.02,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "7193:402172",
+        "name": "Section - Left Column: Knowledge Item List (Span 5 of 12)",
+        "role": "container",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": -0.01,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "7193:402173",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": -0.01,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "7193:402174",
+        "name": "Heading 3",
+        "role": "container",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": -0.01,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "7193:402452",
+        "name": "Empty state",
+        "role": "container",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": -0.01,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "7193:402297",
+        "name": "Section - Right Column: Detailed View for Active Knowledge Item (Span 7 of 12)",
+        "role": "container",
+        "delta": 0.01,
+        "dx": -0.01,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "7193:402492",
+        "name": "Empty state",
+        "role": "container",
+        "delta": 0.01,
+        "dx": -0.01,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "7193:402148",
+        "name": "Popup/Header",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I7193:402148;2808:42159",
+        "name": "Background",
+        "role": "icon",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "7193:402149",
+        "name": "Body",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      }
+    ],
+    "maxDelta": 0.97,
+    "over": []
+  },
+  "failures": [],
+  "url": "http://localhost:3000/hoc-ky/bai-hoc/popup-chi-tiet-bai-hoc/tab-kien-thuc/trong",
+  "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
+  "consoleErrors": [],
+  "rootFound": true
+}

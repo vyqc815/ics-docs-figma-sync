@@ -1,8 +1,8 @@
 # Fidelity: CD-KH-040100-DK — Kiến thức (S1) / Từ vựng
 
-- URL: `http://localhost:3108/kien-thuc-s1/tu-vung-dk`
+- URL: `http://localhost:3000/kien-thuc-s1/tu-vung-dk`
 - Verdict: **PASS**
-- Pixels outside text: **0.108%** differ (limit 0.5%); all pixels: 0.413%; inside text boxes: 1.539% (glyph rendering)
+- Pixels outside text: **0.108%** differ (limit 0.5%); all pixels: 0.376%; inside text boxes: 1.352% (glyph rendering)
 - Boxes: 477/477 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 450, ≤1px: 461, ≤2px: 477, ≤4px: 477, >4px: 0
 
 ## Pixel regions (largest first)
@@ -44,7 +44,6 @@
 
 | Text | Differing |
 | --- | --- |
-| Label (`I6015:107416;4901:216164;2245:87914`) | 22.6% |
 | Từ vựng (`6015:107046`) | 14% |
 | Label (`I6015:107416;4901:216166;2245:87908`) | 13% |
 | Chi tiết NV (`I6015:107035;2177:28928`) | 8.4% |
@@ -59,6 +58,7 @@
 | Chi tiết NV (`I6015:107034;2177:28928`) | 6% |
 | Label (`I6015:107416;4901:216171;2245:87908`) | 4.8% |
 | Tất cả cụm (`6015:107241`) | 4.6% |
+| Placeholder (`I6015:107312;5056:365853`) | 4.4% |
 
 ## Largest box differences
 

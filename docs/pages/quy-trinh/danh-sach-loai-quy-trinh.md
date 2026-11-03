@@ -5,7 +5,7 @@
 > **Nguồn:** PLS-ICS T8/2026 ›     ├─ QUY TRÌNH › ADM-QT-010000 — Quy trình / Danh sách loại quy trình (`2619:204022`, file `rRVs5HX0kIHffbS0V40djG`)  
 > **Route:** `/quy-trinh/danh-sach-loai-quy-trinh`  
 > **Khung thiết kế:** 1440 × 900 px  
-> **Xuất lúc:** 2026-11-02T03:44:23.243Z  
+> **Xuất lúc:** 2026-11-03T00:58:27.113Z  
 > **Spec đầy đủ (giá trị chính xác từng node):** `../../../.figma/pages/adm-qt-010000/page-spec.json`
 
 ## 1. Tổng quan
@@ -25,6 +25,7 @@ Nền trang: `linear-gradient(#f5f6fa, #f5f6fa), linear-gradient(#ffffff, #fffff
 
 | Token | Biến CSS | Giá trị | Trỏ tới | Bộ / mode |
 | --- | --- | --- | --- | --- |
+| `bg/canvas` | `--bg-canvas` | `#f8fafc` | color/extended/f8fafc | Theme · Semantic / Light |
 | `color/border/button` | `--color-border-button` | `#cbd5e1` | color/extended/cbd5e1 | Color Tokens / Light |
 | `color/border/default` | `--color-border-default` | `#e2e8f0` |  | Color Tokens / Light |
 | `color/border/subtle` | `--color-border-subtle` | `#f1f5f9` |  | Color Tokens / Light |
@@ -106,7 +107,7 @@ Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí ·
 
 - [trang] **ADM-QT-010000 — Quy trình / Danh sách loại quy trình** — 1440×900 · bg `linear-gradient(#f5f6fa, #f5f6fa), linear-gradient(#ffffff, #ffffff)` `2619:204022`
   - [khối] **Main App Container** — 1440×900 · @ (0, 0) abs `2619:204023`
-    - [khối] **Main Page Area** — 1206×602 · @ (234, 64) abs · column gap 12 pad 16 16 16 16 · bg #f8fafc · clip `2702:35211`
+    - [khối] **Main Page Area** — 1206×602 · @ (234, 64) abs · column gap 12 pad 16 16 16 16 · bg #f8fafc (bg/canvas) · clip `2702:35211`
       - [khối] **Frame 427321957** — 1174×30 [FILL×HUG] · @ (16, 16) flow · row gap 20 align CENTER `2702:35212`
         - [khối] **Frame 427321947** — 317×26 [FILL×HUG] · @ (0, 2) flow · row gap 8 align CENTER `2702:35213`
           - [chữ] “Danh sách loại quy trình” — 266×26 [HUG×HUG] · @ (0, 0) flow · Unbounded 17/26px 600 #334155 (color/text/primary) case title · no-wrap `2702:35214`

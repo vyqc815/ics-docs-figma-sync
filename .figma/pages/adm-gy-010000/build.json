@@ -10,8 +10,8 @@
     },
     {
       "nodeId": "4915:250458",
-      "component": "SidebarMenuAdmin",
-      "file": "components/figma/adm-gy-010000/SidebarMenuAdmin.tsx"
+      "component": "SidebarMenuAdmin3",
+      "file": "components/figma/shared/SidebarMenuAdmin3.tsx"
     },
     {
       "nodeId": "4193:146783",

@@ -1,8 +1,8 @@
 # Fidelity: ADM-GY-010000-DK — Góp ý / Học viên
 
-- URL: `http://localhost:3108/gop-y/hoc-vien-dk`
+- URL: `http://localhost:3000/gop-y/hoc-vien-dk`
 - Verdict: **PASS**
-- Pixels outside text: **0.002%** differ (limit 0.5%); all pixels: 0.228%; inside text boxes: 1.19% (glyph rendering)
+- Pixels outside text: **0.002%** differ (limit 0.5%); all pixels: 0.207%; inside text boxes: 1.078% (glyph rendering)
 - Boxes: 151/151 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 151, ≤1px: 151, ≤2px: 151, ≤4px: 151, >4px: 0
 
 ## Pixel regions (largest first)
@@ -17,7 +17,6 @@
 
 | Text | Differing |
 | --- | --- |
-| Label (`I4343:86866;2245:87774`) | 9.4% |
 | Góp Ý Về Bài Tập Về Nhà (`4343:86928`) | 5.9% |
 | 14.09.2026 (`I4343:86889;3567:39161`) | 5.2% |
 | Badge (`I4343:86901;2015:30321`) | 4.1% |
@@ -32,6 +31,7 @@
 | Label (`I4343:86856;2245:87820`) | 2.5% |
 | Label (`I4343:86857;2245:87768`) | 2.4% |
 | Label (`I4343:86863;2245:87820`) | 2.4% |
+| Label (`I4343:86865;2245:87768`) | 2.2% |
 
 ## Largest box differences
 

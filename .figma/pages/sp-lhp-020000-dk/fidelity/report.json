@@ -12,19 +12,13 @@
   "pixels": {
     "width": 1440,
     "height": 1205,
-    "mismatched": 2163,
-    "percent": 0.125,
+    "mismatched": 1803,
+    "percent": 0.104,
     "shapePercent": 0.001,
-    "textPercent": 1.978,
+    "textPercent": 1.645,
     "sizeMismatch": false
   },
   "textNodes": [
-    {
-      "id": "I4056:148269;3857:67915",
-      "name": "Label",
-      "pixels": 394,
-      "percent": 16.1
-    },
     {
       "id": "4056:148295",
       "name": "TH 2",
@@ -108,6 +102,12 @@
       "name": "Label",
       "pixels": 64,
       "percent": 2.6
+    },
+    {
+      "id": "I4056:148271;2245:87829",
+      "name": "Label",
+      "pixels": 65,
+      "percent": 2.5
     }
   ],
   "regions": [
@@ -453,7 +453,7 @@
     "over": []
   },
   "failures": [],
-  "url": "http://localhost:3108/lich-hop/dang-bang-dk",
+  "url": "http://localhost:3000/lich-hop/dang-bang-dk",
   "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
   "consoleErrors": [],
   "rootFound": true

@@ -1,0 +1,22 @@
+{
+  "route": "/hoc-ky/kiem-tra/danh-sach-bai-tap-dk",
+  "pageFile": "components/figma/cd-kh-030340-dk/index.tsx",
+  "docFile": "docs/pages/hoc-ky/kiem-tra/danh-sach-bai-tap-dk.md",
+  "sections": [
+    {
+      "nodeId": "6015:61857",
+      "component": "ContentBodyDanhSachBaiTap",
+      "file": "components/figma/cd-kh-030340-dk/ContentBodyDanhSachBaiTap.tsx"
+    },
+    {
+      "nodeId": "6015:62129",
+      "component": "Header55",
+      "file": "components/figma/shared/Header55.tsx"
+    },
+    {
+      "nodeId": "6015:62282",
+      "component": "SidebarMenuCd",
+      "file": "components/figma/cd-kh-030340-dk/SidebarMenuCd.tsx"
+    }
+  ]
+}

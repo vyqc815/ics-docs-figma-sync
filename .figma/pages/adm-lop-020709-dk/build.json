@@ -1,0 +1,40 @@
+{
+  "route": "/chi-tiet-lop-hoc/quy-trinh-lop/co-cap-nhat-qua-han-dk",
+  "pageFile": "components/figma/adm-lop-020709-dk/index.tsx",
+  "docFile": "docs/pages/chi-tiet-lop-hoc/quy-trinh-lop/co-cap-nhat-qua-han-dk.md",
+  "sections": [
+    {
+      "nodeId": "4056:114319",
+      "component": "Body8",
+      "file": "components/figma/shared/Body8.tsx"
+    },
+    {
+      "nodeId": "4056:114320",
+      "component": "Maincontent",
+      "file": "components/figma/adm-lop-020709-dk/Maincontent.tsx"
+    },
+    {
+      "nodeId": "4056:114513",
+      "component": "Header28",
+      "file": "components/figma/shared/Header28.tsx"
+    },
+    {
+      "nodeId": "4056:114562",
+      "component": "SidebarRail",
+      "file": "components/figma/adm-lop-020709-dk/SidebarRail.tsx"
+    }
+  ],
+  "idAlias": {
+    "4056:114319": "2711:61861",
+    "4056:114513": "4056:112373",
+    "4056:114514": "4056:112374",
+    "4056:114561": "4056:112421",
+    "I4056:114561;2008:30986": "I4056:112421;2008:30986",
+    "I4056:114561;2008:31747": "I4056:112421;2008:31747",
+    "I4056:114561;2008:31748": "I4056:112421;2008:31748",
+    "I4056:114561;1391:17264": "I4056:112421;1391:17264",
+    "I4056:114561;1391:17266": "I4056:112421;1391:17266",
+    "I4056:114561;1391:17268": "I4056:112421;1391:17268",
+    "I4056:114561;1391:17270": "I4056:112421;1391:17270"
+  }
+}

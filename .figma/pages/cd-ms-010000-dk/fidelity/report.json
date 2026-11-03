@@ -12,19 +12,13 @@
   "pixels": {
     "width": 1440,
     "height": 850,
-    "mismatched": 12569,
-    "percent": 1.027,
+    "mismatched": 12257,
+    "percent": 1.001,
     "shapePercent": 0.037,
-    "textPercent": 4.314,
+    "textPercent": 4.203,
     "sizeMismatch": false
   },
   "textNodes": [
-    {
-      "id": "I4056:144751;2245:87914",
-      "name": "Label",
-      "pixels": 350,
-      "percent": 14.9
-    },
     {
       "id": "I4056:144742;2245:87908",
       "name": "Label",
@@ -108,6 +102,12 @@
       "name": "Label",
       "pixels": 86,
       "percent": 3.7
+    },
+    {
+      "id": "4056:144613",
+      "name": "Trước khi xây dựng khóa học phải xác định rõ bối cảnh học viên. Mọi nội dung và phương pháp đều xuất phát từ nhu cầu thực tế của học viên.",
+      "pixels": 1083,
+      "percent": 3.5
     }
   ],
   "regions": [
@@ -693,7 +693,7 @@
     "over": []
   },
   "failures": [],
-  "url": "http://localhost:3108/mindset-thiet-ke-khoa-hoc-dk",
+  "url": "http://localhost:3000/mindset-thiet-ke-khoa-hoc-dk",
   "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
   "consoleErrors": [],
   "rootFound": true

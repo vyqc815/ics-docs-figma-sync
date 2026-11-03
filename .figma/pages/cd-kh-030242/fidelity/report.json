@@ -1,0 +1,448 @@
+{
+  "pass": true,
+  "thresholds": {
+    "maxPixelDiffPercent": 0.5,
+    "maxBoxDelta": 1,
+    "maxTextBoxDelta": 2.5,
+    "colorThreshold": 0.1,
+    "aaRadius": 1,
+    "subpixel": true,
+    "maxTextNodeDiffPercent": 35
+  },
+  "pixels": {
+    "width": 980,
+    "height": 938,
+    "mismatched": 2441,
+    "percent": 0.266,
+    "shapePercent": 0.003,
+    "textPercent": 1.192,
+    "sizeMismatch": false
+  },
+  "textNodes": [
+    {
+      "id": "7193:401448",
+      "name": "ÔN TẬP HK I – HK II (BUỔI 1)",
+      "pixels": 548,
+      "percent": 12.2
+    },
+    {
+      "id": "7193:401674",
+      "name": "10 phút",
+      "pixels": 121,
+      "percent": 9.9
+    },
+    {
+      "id": "7193:401676",
+      "name": "Thời lượng",
+      "pixels": 101,
+      "percent": 7.2
+    },
+    {
+      "id": "I7193:401463;868:21315",
+      "name": "Nội dung",
+      "pixels": 57,
+      "percent": 4.6
+    },
+    {
+      "id": "7193:401669",
+      "name": "8",
+      "pixels": 11,
+      "percent": 4.4
+    },
+    {
+      "id": "7193:401614",
+      "name": "Học viên nghe 8 đoạn hội thoại ngắn về chào hỏi (gặp mặt, tạm biệt, cảm ơn) và chọn đáp án đúng. Mỗi đoạn được nghe tối đa 2 lần.",
+      "pixels": 608,
+      "percent": 3.5
+    },
+    {
+      "id": "I7193:401463;868:21317;2808:42115",
+      "name": "Value",
+      "pixels": 9,
+      "percent": 3.3
+    },
+    {
+      "id": "7193:401605",
+      "name": "Cụm: Chào hỏi & làm quen · 8 câu · 10 phút",
+      "pixels": 170,
+      "percent": 3.1
+    },
+    {
+      "id": "7193:401469",
+      "name": "Danh sách kỹ năng",
+      "pixels": 89,
+      "percent": 3
+    },
+    {
+      "id": "I7193:401450;2808:42802",
+      "name": "Badge",
+      "pixels": 39,
+      "percent": 2.9
+    },
+    {
+      "id": "7193:401666",
+      "name": "Cụm",
+      "pixels": 19,
+      "percent": 2.8
+    },
+    {
+      "id": "I7193:401464;868:21210",
+      "name": "Nội dung",
+      "pixels": 27,
+      "percent": 2.4
+    },
+    {
+      "id": "7193:401671",
+      "name": "Số câu",
+      "pixels": 18,
+      "percent": 2
+    },
+    {
+      "id": "7193:401664",
+      "name": "Chào hỏi & làm quen",
+      "pixels": 47,
+      "percent": 1.5
+    },
+    {
+      "id": "7193:401510",
+      "name": "Nghe giới thiệu bản thân",
+      "pixels": 32,
+      "percent": 1.2
+    }
+  ],
+  "regions": [
+    {
+      "x": 176,
+      "y": 224,
+      "width": 24,
+      "height": 16,
+      "pixels": 10,
+      "node": {
+        "id": "7193:401470",
+        "name": "Atom/Icon Button",
+        "role": "icon"
+      }
+    }
+  ],
+  "boxes": {
+    "measured": 223,
+    "missing": [],
+    "withinThreshold": 223,
+    "buckets": {
+      "≤0.5px": 209,
+      "≤1px": 216,
+      "≤2px": 223,
+      "≤4px": 223,
+      ">4px": 0
+    },
+    "worst": [
+      {
+        "id": "7193:401672",
+        "name": "Container",
+        "role": "container",
+        "delta": 1.56,
+        "dx": -1.56,
+        "dy": 0,
+        "dw": -0.23,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "7193:401675",
+        "name": "Container",
+        "role": "container",
+        "delta": 1.56,
+        "dx": -1.56,
+        "dy": 0,
+        "dw": 0.28,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "7193:401676",
+        "name": "Thời lượng",
+        "role": "text",
+        "delta": 1.56,
+        "dx": -1.56,
+        "dy": 0,
+        "dw": 0.28,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "7193:401673",
+        "name": "Container",
+        "role": "container",
+        "delta": 1.28,
+        "dx": -1.28,
+        "dy": 0,
+        "dw": -0.52,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "7193:401674",
+        "name": "10 phút",
+        "role": "text",
+        "delta": 1.28,
+        "dx": -1.28,
+        "dy": 0,
+        "dw": -0.52,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "7193:401668",
+        "name": "Container",
+        "role": "container",
+        "delta": 1.12,
+        "dx": -1.12,
+        "dy": 0,
+        "dw": -0.44,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "7193:401669",
+        "name": "8",
+        "role": "text",
+        "delta": 1.12,
+        "dx": -1.12,
+        "dy": 0,
+        "dw": -0.44,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "7193:401448",
+        "name": "ÔN TẬP HK I – HK II (BUỔI 1)",
+        "role": "text",
+        "delta": 0.97,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.97,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "7193:401667",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.81,
+        "dx": -0.81,
+        "dy": 0,
+        "dw": -0.75,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "7193:401670",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.81,
+        "dx": -0.81,
+        "dy": 0,
+        "dw": -0.31,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "7193:401671",
+        "name": "Số câu",
+        "role": "text",
+        "delta": 0.81,
+        "dx": -0.81,
+        "dy": 0,
+        "dw": -0.31,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "7193:401662",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.8,
+        "dx": -0.01,
+        "dy": 0,
+        "dw": -0.8,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "7193:401652",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.61,
+        "dx": -0.01,
+        "dy": 0,
+        "dw": -0.61,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "7193:401653",
+        "name": "B 怎么回答？",
+        "role": "text",
+        "delta": 0.61,
+        "dx": -0.01,
+        "dy": 0,
+        "dw": -0.61,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "7193:401457",
+        "name": "Slide Tab",
+        "role": "container",
+        "delta": 0.47,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.47,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "7193:401458",
+        "name": "Slide Tab",
+        "role": "container",
+        "delta": 0.47,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.47,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "7193:401459",
+        "name": "Slide Tab",
+        "role": "container",
+        "delta": 0.47,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.47,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "7193:401463",
+        "name": "Button Icon",
+        "role": "instance",
+        "delta": 0.47,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.47,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I7193:401463;868:21212",
+        "name": "Button - Tab: Nội dung",
+        "role": "container",
+        "delta": 0.47,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.47,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I7193:401463;2623:25760",
+        "name": "Frame 1171274967",
+        "role": "container",
+        "delta": 0.47,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.47,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I7193:401463;868:21315",
+        "name": "Nội dung",
+        "role": "text",
+        "delta": 0.47,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.47,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I7193:401463;868:21317",
+        "name": "Atom/Number Badge",
+        "role": "instance",
+        "delta": 0.47,
+        "dx": 0.47,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I7193:401463;868:21317;2808:42115",
+        "name": "Value",
+        "role": "text",
+        "delta": 0.47,
+        "dx": 0.47,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "7193:401464",
+        "name": "Button Icon",
+        "role": "instance",
+        "delta": 0.47,
+        "dx": 0.47,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I7193:401464;2623:25709",
+        "name": "Frame 1171274966",
+        "role": "container",
+        "delta": 0.47,
+        "dx": 0.47,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      }
+    ],
+    "maxDelta": 1.56,
+    "over": []
+  },
+  "failures": [],
+  "url": "http://localhost:3000/hoc-ky/bai-hoc/popup-chi-tiet-bai-hoc/tab-ky-nang",
+  "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
+  "consoleErrors": [],
+  "rootFound": true
+}

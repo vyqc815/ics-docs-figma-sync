@@ -1,0 +1,556 @@
+{
+  "pass": true,
+  "thresholds": {
+    "maxPixelDiffPercent": 0.5,
+    "maxBoxDelta": 1,
+    "maxTextBoxDelta": 2.5,
+    "colorThreshold": 0.1,
+    "aaRadius": 1,
+    "subpixel": true,
+    "maxTextNodeDiffPercent": 35
+  },
+  "pixels": {
+    "width": 980,
+    "height": 545,
+    "mismatched": 3791,
+    "percent": 0.71,
+    "shapePercent": 0.011,
+    "textPercent": 3.658,
+    "sizeMismatch": false
+  },
+  "textNodes": [
+    {
+      "id": "6015:64465",
+      "name": "ÔN TẬP HK I – HK II (BUỔI 1)",
+      "pixels": 604,
+      "percent": 13.5
+    },
+    {
+      "id": "I6015:64491;2808:42233",
+      "name": "Tìm nội dung...",
+      "pixels": 2114,
+      "percent": 10.9
+    },
+    {
+      "id": "6015:64496",
+      "name": "Kỹ năng",
+      "pixels": 86,
+      "percent": 8
+    },
+    {
+      "id": "I6015:64500;2808:42785",
+      "name": "Label",
+      "pixels": 33,
+      "percent": 6.8
+    },
+    {
+      "id": "6015:64505",
+      "name": "Kiến thức",
+      "pixels": 62,
+      "percent": 5.1
+    },
+    {
+      "id": "I6015:64509;2808:42785",
+      "name": "Label",
+      "pixels": 32,
+      "percent": 4.8
+    },
+    {
+      "id": "I6015:64499;2808:42778",
+      "name": "Label",
+      "pixels": 30,
+      "percent": 4.1
+    },
+    {
+      "id": "I6015:64508;2808:42778",
+      "name": "Label",
+      "pixels": 25,
+      "percent": 3.7
+    },
+    {
+      "id": "I6015:64467;2808:42802",
+      "name": "Badge",
+      "pixels": 48,
+      "percent": 3.5
+    },
+    {
+      "id": "I6015:64488;2808:42229",
+      "name": "Tìm nội dung...",
+      "pixels": 490,
+      "percent": 2.5
+    },
+    {
+      "id": "I6015:64478;868:21315",
+      "name": "Nội dung",
+      "pixels": 33,
+      "percent": 2.1
+    },
+    {
+      "id": "I6015:64487;2808:48145",
+      "name": "Nhãn trường",
+      "pixels": 26,
+      "percent": 1.8
+    },
+    {
+      "id": "I6015:64501;2808:42792",
+      "name": "Label",
+      "pixels": 10,
+      "percent": 1.8
+    },
+    {
+      "id": "I6015:64502;2808:42797",
+      "name": "Label",
+      "pixels": 8,
+      "percent": 1.5
+    },
+    {
+      "id": "I6015:64477;868:21315",
+      "name": "Nội dung",
+      "pixels": 21,
+      "percent": 1.2
+    }
+  ],
+  "regions": [
+    {
+      "x": 56,
+      "y": 400,
+      "width": 32,
+      "height": 32,
+      "pixels": 12,
+      "node": {
+        "id": "6015:64495",
+        "name": "Label",
+        "role": "container"
+      }
+    },
+    {
+      "x": 536,
+      "y": 416,
+      "width": 16,
+      "height": 16,
+      "pixels": 8,
+      "node": {
+        "id": "6015:64508",
+        "name": "Atom/Tag",
+        "role": "instance"
+      }
+    },
+    {
+      "x": 104,
+      "y": 416,
+      "width": 16,
+      "height": 16,
+      "pixels": 6,
+      "node": {
+        "id": "6015:64498",
+        "name": "Container",
+        "role": "container"
+      }
+    },
+    {
+      "x": 152,
+      "y": 416,
+      "width": 8,
+      "height": 16,
+      "pixels": 5,
+      "node": {
+        "id": "6015:64501",
+        "name": "Atom/Tag",
+        "role": "instance"
+      }
+    },
+    {
+      "x": 584,
+      "y": 416,
+      "width": 16,
+      "height": 16,
+      "pixels": 5,
+      "node": {
+        "id": "6015:64509",
+        "name": "Atom/Tag",
+        "role": "instance"
+      }
+    },
+    {
+      "x": 64,
+      "y": 440,
+      "width": 16,
+      "height": 8,
+      "pixels": 5,
+      "node": {
+        "id": "6015:64500",
+        "name": "Atom/Tag",
+        "role": "instance"
+      }
+    },
+    {
+      "x": 536,
+      "y": 440,
+      "width": 16,
+      "height": 8,
+      "pixels": 5,
+      "node": {
+        "id": "6015:64508",
+        "name": "Atom/Tag",
+        "role": "instance"
+      }
+    },
+    {
+      "x": 552,
+      "y": 392,
+      "width": 24,
+      "height": 24,
+      "pixels": 4,
+      "node": {
+        "id": "6015:64506",
+        "name": "Atom/Icon Button",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 104,
+      "y": 440,
+      "width": 16,
+      "height": 8,
+      "pixels": 4,
+      "node": {
+        "id": "6015:64498",
+        "name": "Container",
+        "role": "container"
+      }
+    },
+    {
+      "x": 152,
+      "y": 440,
+      "width": 8,
+      "height": 8,
+      "pixels": 4,
+      "node": {
+        "id": "6015:64501",
+        "name": "Atom/Tag",
+        "role": "instance"
+      }
+    }
+  ],
+  "boxes": {
+    "measured": 101,
+    "missing": [],
+    "withinThreshold": 101,
+    "buckets": {
+      "≤0.5px": 88,
+      "≤1px": 97,
+      "≤2px": 101,
+      "≤4px": 101,
+      ">4px": 0
+    },
+    "worst": [
+      {
+        "id": "6015:64502",
+        "name": "Atom/Tag",
+        "role": "instance",
+        "delta": 1.13,
+        "dx": -1.12,
+        "dy": 0,
+        "dw": -0.92,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6015:64502;2808:42797",
+        "name": "Label",
+        "role": "text",
+        "delta": 1.13,
+        "dx": -1.12,
+        "dy": 0,
+        "dw": -0.92,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6015:64501",
+        "name": "Atom/Tag",
+        "role": "instance",
+        "delta": 1.03,
+        "dx": -1.03,
+        "dy": 0,
+        "dw": -0.09,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6015:64501;2808:42792",
+        "name": "Label",
+        "role": "text",
+        "delta": 1.03,
+        "dx": -1.03,
+        "dy": 0,
+        "dw": -0.09,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6015:64465",
+        "name": "ÔN TẬP HK I – HK II (BUỔI 1)",
+        "role": "text",
+        "delta": 0.97,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.97,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6015:64499",
+        "name": "Atom/Tag",
+        "role": "instance",
+        "delta": 0.66,
+        "dx": 0,
+        "dy": 0,
+        "dw": -0.66,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6015:64499;2808:42778",
+        "name": "Label",
+        "role": "text",
+        "delta": 0.66,
+        "dx": 0,
+        "dy": 0,
+        "dw": -0.66,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6015:64500",
+        "name": "Atom/Tag",
+        "role": "instance",
+        "delta": 0.66,
+        "dx": -0.66,
+        "dy": 0,
+        "dw": -0.37,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6015:64500;2808:42785",
+        "name": "Label",
+        "role": "text",
+        "delta": 0.66,
+        "dx": -0.66,
+        "dy": 0,
+        "dw": -0.37,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6015:64508",
+        "name": "Atom/Tag",
+        "role": "instance",
+        "delta": 0.52,
+        "dx": 0,
+        "dy": 0,
+        "dw": -0.52,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6015:64508;2808:42778",
+        "name": "Label",
+        "role": "text",
+        "delta": 0.52,
+        "dx": 0,
+        "dy": 0,
+        "dw": -0.52,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6015:64509",
+        "name": "Atom/Tag",
+        "role": "instance",
+        "delta": 0.52,
+        "dx": -0.52,
+        "dy": 0,
+        "dw": -0.09,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6015:64509;2808:42785",
+        "name": "Label",
+        "role": "text",
+        "delta": 0.52,
+        "dx": -0.52,
+        "dy": 0,
+        "dw": -0.09,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6015:64505",
+        "name": "Kiến thức",
+        "role": "text",
+        "delta": 0.47,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.47,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6015:64506",
+        "name": "Atom/Icon Button",
+        "role": "icon",
+        "delta": 0.47,
+        "dx": 0.47,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6015:64459;2808:42158",
+        "name": "Title",
+        "role": "container",
+        "delta": 0.06,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.06,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6015:64459;2808:42162",
+        "name": "Heading 2",
+        "role": "container",
+        "delta": 0.06,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.06,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6015:64459;2808:42163",
+        "name": "Title",
+        "role": "text",
+        "delta": 0.06,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.06,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6015:64467",
+        "name": "Atom/Badge",
+        "role": "instance",
+        "delta": 0.03,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.03,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6015:64467;2808:42802",
+        "name": "Badge",
+        "role": "text",
+        "delta": 0.03,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.03,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6015:64468",
+        "name": "•",
+        "role": "text",
+        "delta": 0.03,
+        "dx": 0.03,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6015:64469",
+        "name": "90 phút",
+        "role": "text",
+        "delta": 0.03,
+        "dx": 0.03,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6015:64470",
+        "name": "•",
+        "role": "text",
+        "delta": 0.03,
+        "dx": 0.03,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6015:64471",
+        "name": "Ngày tạo: 12.09.2025",
+        "role": "text",
+        "delta": 0.03,
+        "dx": 0.03,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6015:64472",
+        "name": "•",
+        "role": "text",
+        "delta": 0.03,
+        "dx": 0.03,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      }
+    ],
+    "maxDelta": 1.13,
+    "over": []
+  },
+  "failures": [],
+  "url": "http://localhost:3000/hoc-ky/bai-hoc/popup-chi-tiet-bai-hoc-1-dk",
+  "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
+  "consoleErrors": [],
+  "rootFound": true
+}

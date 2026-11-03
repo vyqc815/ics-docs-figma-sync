@@ -12,10 +12,10 @@
   "pixels": {
     "width": 1440,
     "height": 860,
-    "mismatched": 5147,
-    "percent": 0.416,
+    "mismatched": 4654,
+    "percent": 0.376,
     "shapePercent": 0.001,
-    "textPercent": 1.945,
+    "textPercent": 1.758,
     "sizeMismatch": false
   },
   "textNodes": [
@@ -26,28 +26,22 @@
       "percent": 13.7
     },
     {
-      "id": "I4056:117817;2245:87914",
-      "name": "Label",
-      "pixels": 312,
-      "percent": 13
-    },
-    {
       "id": "I4056:117808;2245:87908",
       "name": "Label",
       "pixels": 206,
       "percent": 8.6
     },
     {
-      "id": "4056:117719",
-      "name": "102152 - [SP] BS Trọn Khoá - DN1-115 - 102152 - Trần T. Trà Giang (茶江) - 2.930.000 đ - Tài khoản cá nhân",
-      "pixels": 644,
-      "percent": 4.4
-    },
-    {
       "id": "I4056:117811;2245:87908",
       "name": "Label",
       "pixels": 104,
       "percent": 4.3
+    },
+    {
+      "id": "4056:117719",
+      "name": "102152 - [SP] BS Trọn Khoá - DN1-115 - 102152 - Trần T. Trà Giang (茶江) - 2.930.000 đ - Tài khoản cá nhân",
+      "pixels": 440,
+      "percent": 3
     },
     {
       "id": "I4056:117813;2245:87908",
@@ -107,6 +101,12 @@
       "id": "4056:117638",
       "name": "Ngày Tạo",
       "pixels": 24,
+      "percent": 1.4
+    },
+    {
+      "id": "4056:117730",
+      "name": "102830 - [SALE] Mới - DN277 - 102830 - Tam Khiet - 980.000 đ - Tài khoản công ty",
+      "pixels": 201,
       "percent": 1.4
     }
   ],
@@ -441,7 +441,7 @@
     "over": []
   },
   "failures": [],
-  "url": "http://localhost:3108/lop-hoc/cai-dat/hoa-don-dk",
+  "url": "http://localhost:3000/lop-hoc/cai-dat/hoa-don-dk",
   "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
   "consoleErrors": [],
   "rootFound": true

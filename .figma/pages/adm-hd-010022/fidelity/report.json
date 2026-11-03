@@ -1,0 +1,460 @@
+{
+  "pass": true,
+  "thresholds": {
+    "maxPixelDiffPercent": 0.5,
+    "maxBoxDelta": 1,
+    "maxTextBoxDelta": 2.5,
+    "colorThreshold": 0.1,
+    "aaRadius": 1,
+    "subpixel": true,
+    "maxTextNodeDiffPercent": 35
+  },
+  "pixels": {
+    "width": 980,
+    "height": 714,
+    "mismatched": 3411,
+    "percent": 0.487,
+    "shapePercent": 0.005,
+    "textPercent": 1.968,
+    "sizeMismatch": false
+  },
+  "textNodes": [
+    {
+      "id": "I3058:101183;3004:73494",
+      "name": "Tiêu đề",
+      "pixels": 238,
+      "percent": 8.2
+    },
+    {
+      "id": "3269:65651",
+      "name": "Email",
+      "pixels": 327,
+      "percent": 7
+    },
+    {
+      "id": "I3058:101170;2245:92367",
+      "name": "giavynguyen2978@gmail.com",
+      "pixels": 112,
+      "percent": 5
+    },
+    {
+      "id": "3269:65650",
+      "name": "Tên học viên",
+      "pixels": 117,
+      "percent": 4.8
+    },
+    {
+      "id": "I3058:101170;2245:92353",
+      "name": "Nguyễn Gia Vĩ",
+      "pixels": 100,
+      "percent": 4.1
+    },
+    {
+      "id": "I3058:101170;2245:92366",
+      "name": "Gmail:",
+      "pixels": 20,
+      "percent": 3.9
+    },
+    {
+      "id": "3269:65630",
+      "name": "#",
+      "pixels": 8,
+      "percent": 3.8
+    },
+    {
+      "id": "I3004:73104;2514:153341",
+      "name": "Title",
+      "pixels": 953,
+      "percent": 3.7
+    },
+    {
+      "id": "I3058:101183;3004:73497",
+      "name": "Khai giảng",
+      "pixels": 182,
+      "percent": 3.1
+    },
+    {
+      "id": "3269:65636",
+      "name": "Lớp",
+      "pixels": 15,
+      "percent": 3
+    },
+    {
+      "id": "3269:65640",
+      "name": "Ghi chú học phí",
+      "pixels": 58,
+      "percent": 3
+    },
+    {
+      "id": "3269:65456",
+      "name": "[SP] Renew - DN1-122 - 102486 - Văn Anh (FB: Heo Xinh) - 1.790.000 đ",
+      "pixels": 212,
+      "percent": 2.8
+    },
+    {
+      "id": "I3058:101170;2245:92359",
+      "name": "Sđt:",
+      "pixels": 9,
+      "percent": 2.8
+    },
+    {
+      "id": "3269:65632",
+      "name": "Học viên",
+      "pixels": 29,
+      "percent": 2.6
+    },
+    {
+      "id": "3269:65634",
+      "name": "Mã học viên",
+      "pixels": 36,
+      "percent": 2.3
+    }
+  ],
+  "regions": [
+    {
+      "x": 32,
+      "y": 376,
+      "width": 16,
+      "height": 24,
+      "pixels": 18,
+      "node": {
+        "id": "3269:65458",
+        "name": "Checkbox",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 32,
+      "y": 456,
+      "width": 16,
+      "height": 16,
+      "pixels": 18,
+      "node": {
+        "id": "3269:65539",
+        "name": "Checkbox",
+        "role": "icon"
+      }
+    }
+  ],
+  "boxes": {
+    "measured": 257,
+    "missing": [],
+    "withinThreshold": 257,
+    "buckets": {
+      "≤0.5px": 256,
+      "≤1px": 257,
+      "≤2px": 257,
+      "≤4px": 257,
+      ">4px": 0
+    },
+    "worst": [
+      {
+        "id": "3269:65650",
+        "name": "Tên học viên",
+        "role": "text",
+        "delta": 0.69,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.69,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "3269:64997",
+        "name": "Lớp dự kiến",
+        "role": "text",
+        "delta": 0.34,
+        "dx": -0.17,
+        "dy": 0,
+        "dw": 0.34,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "3269:65132",
+        "name": "Nhận tiền",
+        "role": "container",
+        "delta": 0.34,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.34,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "3269:65134",
+        "name": "Chưa nhận tiền",
+        "role": "text",
+        "delta": 0.34,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.34,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "3269:64999",
+        "name": "Số tiền đã đóng",
+        "role": "text",
+        "delta": 0.25,
+        "dx": -0.12,
+        "dy": 0,
+        "dw": 0.25,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "3269:65636",
+        "name": "Lớp",
+        "role": "text",
+        "delta": 0.09,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.09,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "3269:65160",
+        "name": "Hình",
+        "role": "icon",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": -0.01,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "3269:65485",
+        "name": "Hình",
+        "role": "icon",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": -0.01,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "3269:65566",
+        "name": "Hình",
+        "role": "icon",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": -0.01,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I3058:101170;2245:92354",
+        "name": "Action Icon",
+        "role": "icon",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": -0.01,
+        "dh": -0.01,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I3058:101170;2245:92361",
+        "name": "Action Icon",
+        "role": "icon",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": -0.01,
+        "dh": -0.01,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I3058:101170;2245:92368",
+        "name": "Action Icon",
+        "role": "icon",
+        "delta": 0.01,
+        "dx": 0,
+        "dy": 0,
+        "dw": -0.01,
+        "dh": -0.01,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "3004:73104",
+        "name": "Popup/Header",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I3004:73104;2514:153340",
+        "name": "Tiêu đề",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I3004:73104;2711:67900",
+        "name": "Title Row",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I3004:73104;2514:153341",
+        "name": "Title",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I3004:73104;2514:153342",
+        "name": "Description",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "3004:73105",
+        "name": "Body",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "3004:73106",
+        "name": "Tabs",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "3004:73107",
+        "name": "Tab · Lịch sử hoá đơn",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I3004:73107;2177:28935",
+        "name": "Container",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I3004:73107;2177:28936",
+        "name": "Nhiệm vụ con",
+        "role": "text",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I3004:73107;2177:28937",
+        "name": "Left accent vertical pill bar",
+        "role": "shape",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "3004:73108",
+        "name": "Tab · Lịch sử lớp",
+        "role": "instance",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I3004:73108;2177:28927",
+        "name": "Container",
+        "role": "container",
+        "delta": 0,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      }
+    ],
+    "maxDelta": 0.69,
+    "over": []
+  },
+  "failures": [],
+  "url": "http://localhost:3000/hoa-don/popup-ho-so-hoc-vien/lich-su-hoa-don/mo-chi-tiet-hoc-phi-hover",
+  "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
+  "consoleErrors": [],
+  "rootFound": true
+}

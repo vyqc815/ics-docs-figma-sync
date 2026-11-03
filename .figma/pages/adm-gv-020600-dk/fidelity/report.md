@@ -1,8 +1,8 @@
 # Fidelity: ADM-GV-020600-DK — Chi tiết giáo viên / Ghi chú
 
-- URL: `http://localhost:3108/chi-tiet-giao-vien/ghi-chu-dk`
+- URL: `http://localhost:3000/chi-tiet-giao-vien/ghi-chu-dk`
 - Verdict: **PASS**
-- Pixels outside text: **0.002%** differ (limit 0.5%); all pixels: 0.133%; inside text boxes: 0.772% (glyph rendering)
+- Pixels outside text: **0.002%** differ (limit 0.5%); all pixels: 0.11%; inside text boxes: 0.641% (glyph rendering)
 - Boxes: 212/212 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 212, ≤1px: 212, ≤2px: 212, ≤4px: 212, >4px: 0
 
 ## Pixel regions (largest first)
@@ -16,7 +16,6 @@
 
 | Text | Differing |
 | --- | --- |
-| Label (`I4056:126111;2245:87864`) | 14.9% |
 | Danh sách ghi chú (`4056:125934`) | 3% |
 | Label (`I4056:126112;2245:87858`) | 2.5% |
 | Value (`I4056:125937;2015:36008`) | 2.4% |
@@ -31,6 +30,7 @@
 | Bạn (`4056:125967`) | 1.5% |
 | Label (`I4056:126107;2245:87858`) | 1.5% |
 | Label (`I4056:126114;2245:87858`) | 1.5% |
+| 02:30 PM, 05.10.2026 (`4056:125993`) | 1.4% |
 
 ## Largest box differences
 

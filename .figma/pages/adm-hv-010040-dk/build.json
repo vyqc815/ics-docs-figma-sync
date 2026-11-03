@@ -1,0 +1,28 @@
+{
+  "route": "/danh-sach-hoc-vien/popup-lich-su/ghi-chu-dk",
+  "pageFile": "components/figma/adm-hv-010040-dk/index.tsx",
+  "docFile": "docs/pages/danh-sach-hoc-vien/popup-lich-su/ghi-chu-dk.md",
+  "sections": [
+    {
+      "nodeId": "4056:122381",
+      "component": "PopupHeader6",
+      "file": "components/figma/shared/PopupHeader6.tsx"
+    },
+    {
+      "nodeId": "4056:122382",
+      "component": "Body",
+      "file": "components/figma/adm-hv-010040-dk/Body.tsx"
+    },
+    {
+      "nodeId": "4056:122491",
+      "component": "DropdownTheGhiChuMenuHanhDong",
+      "file": "components/figma/adm-hv-010040-dk/DropdownTheGhiChuMenuHanhDong.tsx"
+    }
+  ],
+  "idAlias": {
+    "4056:122381": "4056:122028",
+    "I4056:122381;2514:153347": "I4056:122028;2514:153347",
+    "I4056:122381;2711:67901": "I4056:122028;2711:67901",
+    "I4056:122381;2514:153348": "I4056:122028;2514:153348"
+  }
+}

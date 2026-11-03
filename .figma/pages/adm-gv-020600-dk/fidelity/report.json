@@ -12,19 +12,13 @@
   "pixels": {
     "width": 1440,
     "height": 1103,
-    "mismatched": 2109,
-    "percent": 0.133,
+    "mismatched": 1755,
+    "percent": 0.11,
     "shapePercent": 0.002,
-    "textPercent": 0.772,
+    "textPercent": 0.641,
     "sizeMismatch": false
   },
   "textNodes": [
-    {
-      "id": "I4056:126111;2245:87864",
-      "name": "Label",
-      "pixels": 373,
-      "percent": 14.9
-    },
     {
       "id": "4056:125934",
       "name": "Danh sách ghi chú",
@@ -108,6 +102,12 @@
       "name": "Label",
       "pixels": 37,
       "percent": 1.5
+    },
+    {
+      "id": "4056:125993",
+      "name": "02:30 PM, 05.10.2026",
+      "pixels": 32,
+      "percent": 1.4
     }
   ],
   "regions": [
@@ -453,7 +453,7 @@
     "over": []
   },
   "failures": [],
-  "url": "http://localhost:3108/chi-tiet-giao-vien/ghi-chu-dk",
+  "url": "http://localhost:3000/chi-tiet-giao-vien/ghi-chu-dk",
   "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
   "consoleErrors": [],
   "rootFound": true

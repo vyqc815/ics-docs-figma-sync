@@ -1,0 +1,448 @@
+{
+  "pass": true,
+  "thresholds": {
+    "maxPixelDiffPercent": 0.5,
+    "maxBoxDelta": 1,
+    "maxTextBoxDelta": 2.5,
+    "colorThreshold": 0.1,
+    "aaRadius": 1,
+    "subpixel": true,
+    "maxTextNodeDiffPercent": 35
+  },
+  "pixels": {
+    "width": 980,
+    "height": 938,
+    "mismatched": 906,
+    "percent": 0.099,
+    "shapePercent": 0.003,
+    "textPercent": 1.767,
+    "sizeMismatch": false
+  },
+  "textNodes": [
+    {
+      "id": "7193:402501",
+      "name": "ÔN TẬP HK I – HK II (BUỔI 1)",
+      "pixels": 548,
+      "percent": 12.2
+    },
+    {
+      "id": "I7193:402516;868:21315",
+      "name": "Nội dung",
+      "pixels": 57,
+      "percent": 4.6
+    },
+    {
+      "id": "I7193:402516;868:21317;2808:42115",
+      "name": "Value",
+      "pixels": 9,
+      "percent": 3.3
+    },
+    {
+      "id": "7193:402522",
+      "name": "Danh sách kỹ năng",
+      "pixels": 89,
+      "percent": 3
+    },
+    {
+      "id": "I7193:402503;2808:42802",
+      "name": "Badge",
+      "pixels": 39,
+      "percent": 2.9
+    },
+    {
+      "id": "I7193:402517;868:21210",
+      "name": "Nội dung",
+      "pixels": 27,
+      "percent": 2.4
+    },
+    {
+      "id": "I7193:402517;868:21297;2808:42115",
+      "name": "Value",
+      "pixels": 6,
+      "percent": 2.1
+    },
+    {
+      "id": "I7193:402513;497:25617",
+      "name": "Nội dung",
+      "pixels": 17,
+      "percent": 1.1
+    },
+    {
+      "id": "I7193:402515;868:21315",
+      "name": "Nội dung",
+      "pixels": 15,
+      "percent": 0.9
+    },
+    {
+      "id": "I7193:402514;868:21315",
+      "name": "Nội dung",
+      "pixels": 10,
+      "percent": 0.7
+    },
+    {
+      "id": "7193:402790",
+      "name": "Chưa có tài liệu học tập nào.",
+      "pixels": 18,
+      "percent": 0.6
+    },
+    {
+      "id": "7193:402505",
+      "name": "90 phút",
+      "pixels": 6,
+      "percent": 0.5
+    },
+    {
+      "id": "7193:402507",
+      "name": "Ngày tạo: 12.09.2025",
+      "pixels": 12,
+      "percent": 0.3
+    },
+    {
+      "id": "7193:402509",
+      "name": "Ngày cập nhật: 16.09.2025",
+      "pixels": 12,
+      "percent": 0.3
+    },
+    {
+      "id": "I7193:402495;2808:42163",
+      "name": "Title",
+      "pixels": 7,
+      "percent": 0.2
+    }
+  ],
+  "regions": [
+    {
+      "x": 176,
+      "y": 224,
+      "width": 24,
+      "height": 16,
+      "pixels": 10,
+      "node": {
+        "id": "7193:402523",
+        "name": "Atom/Icon Button",
+        "role": "icon"
+      }
+    }
+  ],
+  "boxes": {
+    "measured": 75,
+    "missing": [],
+    "withinThreshold": 75,
+    "buckets": {
+      "≤0.5px": 72,
+      "≤1px": 74,
+      "≤2px": 75,
+      "≤4px": 75,
+      ">4px": 0
+    },
+    "worst": [
+      {
+        "id": "7193:402795",
+        "name": "Chưa có tài liệu học tập nào.",
+        "role": "text",
+        "delta": 1.17,
+        "dx": -0.6,
+        "dy": 0,
+        "dw": 1.17,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "7193:402501",
+        "name": "ÔN TẬP HK I – HK II (BUỔI 1)",
+        "role": "text",
+        "delta": 0.97,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.97,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "7193:402790",
+        "name": "Chưa có tài liệu học tập nào.",
+        "role": "text",
+        "delta": 0.61,
+        "dx": -0.31,
+        "dy": 0,
+        "dw": 0.61,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "7193:402510",
+        "name": "Slide Tab",
+        "role": "container",
+        "delta": 0.47,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.47,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "7193:402511",
+        "name": "Slide Tab",
+        "role": "container",
+        "delta": 0.47,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.47,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "7193:402512",
+        "name": "Slide Tab",
+        "role": "container",
+        "delta": 0.47,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.47,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "7193:402516",
+        "name": "Button Icon",
+        "role": "instance",
+        "delta": 0.47,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.47,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I7193:402516;868:21212",
+        "name": "Button - Tab: Nội dung",
+        "role": "container",
+        "delta": 0.47,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.47,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I7193:402516;2623:25760",
+        "name": "Frame 1171274967",
+        "role": "container",
+        "delta": 0.47,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.47,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I7193:402516;868:21315",
+        "name": "Nội dung",
+        "role": "text",
+        "delta": 0.47,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.47,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I7193:402516;868:21317",
+        "name": "Atom/Number Badge",
+        "role": "instance",
+        "delta": 0.47,
+        "dx": 0.47,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I7193:402516;868:21317;2808:42115",
+        "name": "Value",
+        "role": "text",
+        "delta": 0.47,
+        "dx": 0.47,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "7193:402517",
+        "name": "Button Icon",
+        "role": "instance",
+        "delta": 0.47,
+        "dx": 0.47,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I7193:402517;2623:25709",
+        "name": "Frame 1171274966",
+        "role": "container",
+        "delta": 0.47,
+        "dx": 0.47,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I7193:402517;868:21207",
+        "name": "Liner Icon",
+        "role": "icon",
+        "delta": 0.47,
+        "dx": 0.47,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I7193:402517;868:21209",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.47,
+        "dx": 0.47,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I7193:402517;868:21210",
+        "name": "Nội dung",
+        "role": "text",
+        "delta": 0.47,
+        "dx": 0.47,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I7193:402517;868:21297",
+        "name": "Atom/Number Badge",
+        "role": "instance",
+        "delta": 0.47,
+        "dx": 0.47,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I7193:402517;868:21297;2808:42115",
+        "name": "Value",
+        "role": "text",
+        "delta": 0.47,
+        "dx": 0.47,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "7193:402522",
+        "name": "Danh sách kỹ năng",
+        "role": "text",
+        "delta": 0.39,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.39,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "7193:402523",
+        "name": "Atom/Icon Button",
+        "role": "icon",
+        "delta": 0.39,
+        "dx": 0.39,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I7193:402495;2808:42158",
+        "name": "Title",
+        "role": "container",
+        "delta": 0.06,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.06,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I7193:402495;2808:42162",
+        "name": "Heading 2",
+        "role": "container",
+        "delta": 0.06,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.06,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I7193:402495;2808:42163",
+        "name": "Title",
+        "role": "text",
+        "delta": 0.06,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.06,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "7193:402503",
+        "name": "Atom/Badge",
+        "role": "instance",
+        "delta": 0.03,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.03,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      }
+    ],
+    "maxDelta": 1.17,
+    "over": []
+  },
+  "failures": [],
+  "url": "http://localhost:3000/hoc-ky/bai-hoc/popup-chi-tiet-bai-hoc/tab-ky-nang/trong",
+  "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
+  "consoleErrors": [],
+  "rootFound": true
+}

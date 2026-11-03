@@ -5,7 +5,7 @@
 > **Nguồn:** PLS-ICS T8/2026 ›             ├─ CSKH › ADM-LOP-020800 — Chi tiết lớp học / CSKH (`2711:64949`, file `rRVs5HX0kIHffbS0V40djG`)  
 > **Route:** `/chi-tiet-lop-hoc/cskh`  
 > **Khung thiết kế:** 1440 × 2016 px  
-> **Xuất lúc:** 2026-11-02T03:37:09.316Z  
+> **Xuất lúc:** 2026-11-03T03:27:39.142Z  
 > **Spec đầy đủ (giá trị chính xác từng node):** `../../../.figma/pages/adm-lop-020800/page-spec.json`
 
 ## 1. Tổng quan
@@ -27,6 +27,7 @@ Nền trang: `#f8fafc`.
 
 | Token | Biến CSS | Giá trị | Trỏ tới | Bộ / mode |
 | --- | --- | --- | --- | --- |
+| `bg/canvas` | `--bg-canvas` | `#f8fafc` | color/extended/f8fafc | Theme · Semantic / Light |
 | `color/border/button` | `--color-border-button` | `#cbd5e1` | color/extended/cbd5e1 | Color Tokens / Light |
 | `color/border/default` | `--color-border-default` | `#e2e8f0` |  | Color Tokens / Light |
 | `color/border/subtle` | `--color-border-subtle` | `#f1f5f9` |  | Color Tokens / Light |
@@ -117,7 +118,7 @@ Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí ·
 
 - [trang] **ADM-LOP-020800 — Chi tiết lớp học / CSKH** — 1440×2016 · bg #f8fafc `2711:64949`
   - [khối] **Body** — 1440×2016 · @ (0, 0) abs · trống `2711:64950`
-  - [khối] **MainContent** — 1140×1901 · @ (300, 64) abs · column gap 12 pad 24 24 24 24 · bg #f8fafc `2711:65082`
+  - [khối] **MainContent** — 1140×1901 · @ (300, 64) abs · column gap 12 pad 24 24 24 24 · bg #f8fafc (bg/canvas) `2711:65082`
     - [khối] **Container** — 1092×1853 [FILL×HUG] · @ (24, 24) flow · column gap 12 `2711:65083`
       - [khối] **Header line: Title, Progress Bar, Add Action** — 1092×38 [FILL×HUG] · @ (0, 0) flow · row gap 24 align CENTER `3857:68622`
         - [chữ] “CSKH” — 876×26 [FILL×HUG] · @ (0, 6) flow · Unbounded 17/26px 600 #334155 (color/text/primary) `3857:68623`

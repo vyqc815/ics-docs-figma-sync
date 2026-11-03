@@ -12,10 +12,10 @@
   "pixels": {
     "width": 1440,
     "height": 860,
-    "mismatched": 5229,
-    "percent": 0.422,
+    "mismatched": 5092,
+    "percent": 0.411,
     "shapePercent": 0.006,
-    "textPercent": 1.952,
+    "textPercent": 1.901,
     "sizeMismatch": false
   },
   "textNodes": [
@@ -92,16 +92,16 @@
       "percent": 5.9
     },
     {
-      "id": "2389:60781",
-      "name": "102152 - [SP] BS Trọn Khoá - DN1-115 - 102152 - Trần T. Trà Giang (茶江) - 2.930.000 đ - Tài khoản cá nhân",
-      "pixels": 471,
-      "percent": 3.2
-    },
-    {
       "id": "2389:60767",
       "name": "101729 - [SP] Renew - DN[2] - 101729 - Đỗ Lâm Tường - 500.000 đ - Tài khoản cá nhân",
       "pixels": 359,
       "percent": 2.5
+    },
+    {
+      "id": "2389:60781",
+      "name": "102152 - [SP] BS Trọn Khoá - DN1-115 - 102152 - Trần T. Trà Giang (茶江) - 2.930.000 đ - Tài khoản cá nhân",
+      "pixels": 334,
+      "percent": 2.3
     },
     {
       "id": "2389:60732",
@@ -477,7 +477,7 @@
     "over": []
   },
   "failures": [],
-  "url": "http://localhost:3108/lop-hoc/cai-dat/hoa-don",
+  "url": "http://localhost:3000/lop-hoc/cai-dat/hoa-don",
   "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
   "consoleErrors": [],
   "rootFound": true

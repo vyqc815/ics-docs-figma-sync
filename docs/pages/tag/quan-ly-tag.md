@@ -5,7 +5,7 @@
 > **Nguồn:** PLS-ICS T8/2026 ›     ├─ TAG › ADM-TAG-010000 — Tag / Quản lý tag (`3065:62875`, file `rRVs5HX0kIHffbS0V40djG`)  
 > **Route:** `/tag/quan-ly-tag`  
 > **Khung thiết kế:** 1440 × 810 px  
-> **Xuất lúc:** 2026-11-02T03:49:54.102Z  
+> **Xuất lúc:** 2026-11-03T01:03:53.052Z  
 > **Spec đầy đủ (giá trị chính xác từng node):** `../../../.figma/pages/adm-tag-010000/page-spec.json`
 
 ## 1. Tổng quan
@@ -26,6 +26,7 @@ Nền trang: `#ffffff` (color/neutral/white).
 
 | Token | Biến CSS | Giá trị | Trỏ tới | Bộ / mode |
 | --- | --- | --- | --- | --- |
+| `bg/surface` | `--bg-surface` | `#ffffff` | color/neutral/white | Theme · Semantic / Light |
 | `color/border/default` | `--color-border-default` | `#e2e8f0` |  | Color Tokens / Light |
 | `color/brand/orange` | `--color-brand-orange` | `#e65100` |  | Color Tokens / Light |
 | `color/extended/0369a1` | `--color-extended-0369a1` | `#0369a1` |  | Color Tokens / Light |
@@ -199,7 +200,7 @@ Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí ·
           - [khối] **Heading 1** — 307×23 [HUG×HUG] · @ (0, 0) flow · column `3065:67846`
             - [chữ] “Nhóm” — 307×23 [FIXED×HUG] · @ (0, 0) flow · Unbounded 15/23px 600 #e65100 (color/brand/orange) `3065:67847`
         - [khối] **Frame 427321957** — 290×445 [FILL×HUG] · @ (0, 35) flow · column gap 8 `3065:67848`
-          - [khối] **Main Toggle Item Card** — 290×67 [FILL×HUG] · @ (0, 0) flow · row gap 4 pad 12 12 8 12 align CENTER · bg #ffffff · radius 12px · shadow inset 0 0 0 1.5px #ff9537, 0 1.13px 2.25px 0 rgba(0, 0, 0, 0.05) `3065:67849`
+          - [khối] **Main Toggle Item Card** — 290×67 [FILL×HUG] · @ (0, 0) flow · row gap 4 pad 12 12 8 12 align CENTER · bg #ffffff (bg/surface) · radius 12px · shadow inset 0 0 0 1.5px #ff9537, 0 1.13px 2.25px 0 rgba(0, 0, 0, 0.05) `3065:67849`
             - [icon] **Mouse click** ⟨Mouse click⟩ — 22×22 · @ (164, 4) abs · file /figma/assets/74943651b8b7.svg covers (-1, -1) 26×26 `3065:67851`
             - [khối] **Frame 1171274942** — 263×44 [FILL×HUG] · @ (13.5, 13.5) flow · column gap 4 `3065:67852`
               - [khối] **Frame 1171274943** — 263×20 [FILL×HUG] · @ (0, 0) flow · row space-between `3065:67853`
@@ -209,7 +210,7 @@ Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí ·
                     - [chữ] “Lớp” — 21×18 [HUG×HUG] · @ (18, 0) flow · Afacad 14/18px 500 #417bff case title · no-wrap `I3065:67854;3065:65360`
                 - [icon] **Action Icon** ⟨Action Icon: Icon=Edit, Size=18⟩ — 18×18 · @ (245, 0) flow · file /figma/assets/32b299e71e09.svg `3065:67855`
               - [chữ] “HỌC PHÍ” — 263×20 [FILL×HUG] · @ (0, 24) flow · Afacad 16/20px 700 #334155 (color/text/primary) `3065:67856`
-          - [khối] **Main Toggle Item Card** — 290×64 [FILL×HUG] · @ (0, 75) flow · row gap 4 pad 12 12 8 12 align CENTER · bg #ffffff · radius 12px · shadow 0 1.13px 2.25px 0 rgba(0, 0, 0, 0.05) `3065:67857`
+          - [khối] **Main Toggle Item Card** — 290×64 [FILL×HUG] · @ (0, 75) flow · row gap 4 pad 12 12 8 12 align CENTER · bg #ffffff (bg/surface) · radius 12px · shadow 0 1.13px 2.25px 0 rgba(0, 0, 0, 0.05) `3065:67857`
             - [khối] **Frame 1171274942** — 266×44 [FILL×HUG] · @ (12, 12) flow · column gap 4 `3065:67858`
               - [khối] **Frame 1171274943** — 266×20 [FILL×HUG] · @ (0, 0) flow · row space-between `3065:67859`
                 - [instance] **Loại tag** ⟨Loại tag: Property 1=Học viên, Property 2=Text⟩ — 80×20 [HUG×HUG] · @ (0, 0) flow · row gap 4 pad 0 6 0 6 align CENTER · bg #ffffff · radius 6px · border 1px solid #d96af0 `3065:67860`
@@ -218,7 +219,7 @@ Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí ·
                     - [chữ] “Học viên” — 48×18 [HUG×HUG] · @ (18, 0) flow · Afacad 14/18px 500 #d96af0 case title · no-wrap `I3065:67860;3065:65375`
                 - [icon] **Action Icon** ⟨Action Icon: Icon=Edit, Size=18⟩ — 18×18 · @ (248, 0) flow · file /figma/assets/32b299e71e09.svg `3065:67861`
               - [chữ] “HỌC TIẾP KÌ/KHOÁ” — 266×20 [FILL×HUG] · @ (0, 24) flow · Afacad 16/20px 700 #334155 (color/text/primary) `3065:67862`
-          - [khối] **Main Toggle Item Card** — 290×64 [FILL×HUG] · @ (0, 147) flow · row gap 4 pad 12 12 8 12 align CENTER · bg #ffffff · radius 12px · shadow 0 1.13px 2.25px 0 rgba(0, 0, 0, 0.05) `3065:67863`
+          - [khối] **Main Toggle Item Card** — 290×64 [FILL×HUG] · @ (0, 147) flow · row gap 4 pad 12 12 8 12 align CENTER · bg #ffffff (bg/surface) · radius 12px · shadow 0 1.13px 2.25px 0 rgba(0, 0, 0, 0.05) `3065:67863`
             - [khối] **Frame 1171274942** — 266×44 [FILL×HUG] · @ (12, 12) flow · column gap 4 `3065:67864`
               - [khối] **Frame 1171274943** — 266×20 [FILL×HUG] · @ (0, 0) flow · row space-between `3065:67865`
                 - [instance] **Loại tag** ⟨Loại tag: Property 1=Học viên, Property 2=Text⟩ — 80×20 [HUG×HUG] · @ (0, 0) flow · row gap 4 pad 0 6 0 6 align CENTER · bg #ffffff · radius 6px · border 1px solid #d96af0 `3065:67866`
@@ -227,7 +228,7 @@ Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí ·
                     - [chữ] “Học viên” — 48×18 [HUG×HUG] · @ (18, 0) flow · Afacad 14/18px 500 #d96af0 case title · no-wrap `I3065:67866;3065:65375`
                 - [icon] **Action Icon** ⟨Action Icon: Icon=Edit, Size=18⟩ — 18×18 · @ (248, 0) flow · file /figma/assets/32b299e71e09.svg `3065:67867`
               - [chữ] “HỌC TIẾP KÌ/KHOÁ” — 266×20 [FILL×HUG] · @ (0, 24) flow · Afacad 16/20px 700 #334155 (color/text/primary) `3065:67868`
-          - [khối] **Main Toggle Item Card** — 290×82 [FILL×HUG] · @ (0, 219) flow · row gap 4 pad 12 12 8 12 align CENTER · bg #ffffff · radius 12px · shadow 0 1.13px 2.25px 0 rgba(0, 0, 0, 0.05) `3065:67869`
+          - [khối] **Main Toggle Item Card** — 290×82 [FILL×HUG] · @ (0, 219) flow · row gap 4 pad 12 12 8 12 align CENTER · bg #ffffff (bg/surface) · radius 12px · shadow 0 1.13px 2.25px 0 rgba(0, 0, 0, 0.05) `3065:67869`
             - [khối] **Frame 1171274942** — 266×62 [FILL×HUG] · @ (12, 12) flow · column gap 4 `3065:67870`
               - [khối] **Frame 1171274943** — 266×20 [FILL×HUG] · @ (0, 0) flow · row space-between `3065:67871`
                 - [instance] **Loại tag** ⟨Loại tag: Property 1=Giáo viên, Property 2=Text⟩ — 86×20 [HUG×HUG] · @ (0, 0) flow · row gap 4 pad 0 6 0 6 align CENTER · bg #ffffff · radius 6px · border 1px solid #d57500 `3065:67872`
@@ -238,7 +239,7 @@ Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí ·
               - [khối] **Frame 1171274944** — 266×38 [FILL×HUG] · @ (0, 24) flow · column `3065:67874`
                 - [chữ] “KIỂM SOÁT QUY TRÌNH” — 266×20 [FILL×HUG] · @ (0, 0) flow · Afacad 16/20px 700 #334155 (color/text/primary) `3065:67875`
                 - [chữ] “Chị Hà kiểm soát quy trình” — 266×18 [FILL×HUG] · @ (0, 20) flow · Afacad 14/18px 400 #64748b (color/text/secondary) `3065:67876`
-          - [khối] **Main Toggle Item Card** — 290×64 [FILL×HUG] · @ (0, 309) flow · row gap 4 pad 12 12 8 12 align CENTER · bg #ffffff · radius 12px · shadow 0 1.13px 2.25px 0 rgba(0, 0, 0, 0.05) `3065:67877`
+          - [khối] **Main Toggle Item Card** — 290×64 [FILL×HUG] · @ (0, 309) flow · row gap 4 pad 12 12 8 12 align CENTER · bg #ffffff (bg/surface) · radius 12px · shadow 0 1.13px 2.25px 0 rgba(0, 0, 0, 0.05) `3065:67877`
             - [khối] **Frame 1171274942** — 266×44 [FILL×HUG] · @ (12, 12) flow · column gap 4 `3065:67878`
               - [khối] **Frame 1171274943** — 266×20 [FILL×HUG] · @ (0, 0) flow · row space-between `3065:67879`
                 - [instance] **Loại tag** ⟨Loại tag: Property 1=Hoá đơn, Property 2=Text⟩ — 81×20 [HUG×HUG] · @ (0, 0) flow · row gap 4 pad 0 6 0 6 align CENTER · bg #ffffff · radius 6px · border 1px solid #648aa3 `3065:67880`
@@ -247,7 +248,7 @@ Mỗi dòng là một layer: `[vai trò] Tên — kích thước · vị trí ·
                     - [chữ] “Hoá đơn” — 49×18 [HUG×HUG] · @ (18, 0) flow · Afacad 14/18px 500 #648aa3 case title · no-wrap `I3065:67880;3065:65391`
                 - [icon] **Action Icon** ⟨Action Icon: Icon=Edit, Size=18⟩ — 18×18 · @ (248, 0) flow · file /figma/assets/32b299e71e09.svg `3065:67881`
               - [chữ] “LỊCH HỌC/KÌ” — 266×20 [FILL×HUG] · @ (0, 24) flow · Afacad 16/20px 700 #334155 (color/text/primary) `3065:67882`
-          - [khối] **Main Toggle Item Card** — 290×64 [FILL×HUG] · @ (0, 381) flow · row gap 4 pad 12 12 8 12 align CENTER · bg #ffffff · radius 12px · shadow 0 1.13px 2.25px 0 rgba(0, 0, 0, 0.05) `3065:67883`
+          - [khối] **Main Toggle Item Card** — 290×64 [FILL×HUG] · @ (0, 381) flow · row gap 4 pad 12 12 8 12 align CENTER · bg #ffffff (bg/surface) · radius 12px · shadow 0 1.13px 2.25px 0 rgba(0, 0, 0, 0.05) `3065:67883`
             - [khối] **Frame 1171274942** — 266×44 [FILL×HUG] · @ (12, 12) flow · column gap 4 `3065:67884`
               - [khối] **Frame 1171274943** — 266×20 [FILL×HUG] · @ (0, 0) flow · row space-between `3065:67885`
                 - [instance] **Loại tag** ⟨Loại tag: Property 1=Ghi chú, Property 2=Text⟩ — 77×20 [HUG×HUG] · @ (0, 0) flow · row gap 4 pad 0 6 0 6 align CENTER · bg #ffffff · radius 6px · border 1px solid #908ed0 `3065:67886`

@@ -1,0 +1,29 @@
+{
+  "route": "/hoc-ky/bai-hoc/popup-chi-tiet-bai-hoc-ban-day-du-dk",
+  "pageFile": "components/figma/cd-kh-030250-dk/index.tsx",
+  "docFile": "docs/pages/hoc-ky/bai-hoc/popup-chi-tiet-bai-hoc-ban-day-du-dk.md",
+  "sections": [
+    {
+      "nodeId": "6015:64983",
+      "component": "PopupHeader11",
+      "file": "components/figma/shared/PopupHeader11.tsx"
+    },
+    {
+      "nodeId": "6015:64984",
+      "component": "Body",
+      "file": "components/figma/cd-kh-030250-dk/Body.tsx"
+    },
+    {
+      "nodeId": "6015:65266",
+      "component": "PopupFooter8",
+      "file": "components/figma/shared/PopupFooter8.tsx"
+    }
+  ],
+  "idAlias": {
+    "6015:64983": "6015:64459",
+    "I6015:64983;2808:42158": "I6015:64459;2808:42158",
+    "I6015:64983;2808:42159": "I6015:64459;2808:42159",
+    "I6015:64983;2808:42162": "I6015:64459;2808:42162",
+    "I6015:64983;2808:42163": "I6015:64459;2808:42163"
+  }
+}

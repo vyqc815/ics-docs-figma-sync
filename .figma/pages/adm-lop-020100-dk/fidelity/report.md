@@ -1,8 +1,8 @@
 # Fidelity: ADM-LOP-020100-DK — Chi tiết lớp học / Tổng quan
 
-- URL: `http://localhost:3108/chi-tiet-lop-hoc/tong-quan-dk`
+- URL: `http://localhost:3000/chi-tiet-lop-hoc/tong-quan-dk`
 - Verdict: **PASS**
-- Pixels outside text: **0.003%** differ (limit 0.5%); all pixels: 0.212%; inside text boxes: 1.276% (glyph rendering)
+- Pixels outside text: **0.003%** differ (limit 0.5%); all pixels: 0.197%; inside text boxes: 1.18% (glyph rendering)
 - Boxes: 500/500 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 495, ≤1px: 499, ≤2px: 499, ≤4px: 500, >4px: 0
 
 ## Pixel regions (largest first)
@@ -19,8 +19,8 @@
 | Text | Differing |
 | --- | --- |
 | Tổng Quan Lớp (`4056:109843`) | 19% |
-| Label (`I4056:110247;2245:87914`) | 17.8% |
 | Label (`I4056:110249;2245:87908`) | 13.7% |
+| Label (`I4056:110247;2245:87914`) | 7.8% |
 | Tuyết Ngọc (`4056:109868`) | 5.4% |
 | Tiêu đề (`I4056:109874;3065:71108`) | 5.4% |
 | D (`I4056:110103;1308:10509`) | 4.9% |

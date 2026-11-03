@@ -1,8 +1,8 @@
 # Fidelity: SP-TASK-030000-DK — Quy trình / Ca trực · Đã chọn thêm người
 
-- URL: `http://localhost:3108/quy-trinh/ca-truc-da-chon-them-nguoi-dk`
+- URL: `http://localhost:3000/quy-trinh/ca-truc-da-chon-them-nguoi-dk`
 - Verdict: **PASS**
-- Pixels outside text: **0.001%** differ (limit 0.5%); all pixels: 0.195%; inside text boxes: 0.966% (glyph rendering)
+- Pixels outside text: **0.001%** differ (limit 0.5%); all pixels: 0.173%; inside text boxes: 0.854% (glyph rendering)
 - Boxes: 311/311 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 311, ≤1px: 311, ≤2px: 311, ≤4px: 311, >4px: 0
 
 ## Pixel regions (largest first)
@@ -16,13 +16,6 @@
 
 | Text | Differing |
 | --- | --- |
-| 0% (`I6935:392953;1308:6706`) | 26% |
-| 0% (`I6935:392965;1308:6706`) | 26% |
-| 0% (`I6935:392968;1308:6706`) | 26% |
-| 0% (`I6935:392971;1308:6706`) | 26% |
-| 80% (`I6935:392962;1391:14476`) | 23.6% |
-| 100% (`I6935:392956;1308:6749`) | 19.9% |
-| 100% (`I6935:392959;1308:6749`) | 19.9% |
 | Th2, 14.09.2026 (`I6935:392858;1590:881`) | 5.5% |
 | Th2, 14.09.2026 (`I6935:392893;1590:881`) | 5.3% |
 | Thường xuyên nhắc nhở học viên đi học đầy đủ ở trên lớp (`6935:392891`) | 3.8% |
@@ -31,6 +24,13 @@
 | Label (`I6935:392814;3857:67909`) | 2.7% |
 | Label (`I6935:392813;3857:67909`) | 2.6% |
 | Tỷ lệ đi học trên 80% (`6935:392870`) | 2.6% |
+| Label (`I6935:392816;2245:87829`) | 2.5% |
+| Label (`I6935:392817;2245:87768`) | 2.4% |
+| Nhắc nhở học viên trước buổi học tại GG Chat (`6935:392856`) | 2.2% |
+| Label (`I6935:392810;1971:7432`) | 2.1% |
+| Value (`I6935:392950;2015:36008`) | 2% |
+| Phụ Trách Lớp Đắc Nhân (`I6935:392733;2008:31709`) | 1.9% |
+| Label (`I6935:392818;2245:87829`) | 1.8% |
 
 ## Largest box differences
 

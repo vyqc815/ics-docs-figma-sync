@@ -1,6 +1,6 @@
 # Fidelity: ADM-GV-020400 — Chi tiết giáo viên / Log
 
-- URL: `http://localhost:3108/chi-tiet-giao-vien/log`
+- URL: `http://localhost:3000/chi-tiet-giao-vien/log`
 - Verdict: **PASS**
 - Pixels outside text: **0.005%** differ (limit 0.5%); all pixels: 0.277%; inside text boxes: 1.564% (glyph rendering)
 - Boxes: 352/352 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 351, ≤1px: 352, ≤2px: 352, ≤4px: 352, >4px: 0

@@ -1,0 +1,460 @@
+{
+  "pass": true,
+  "thresholds": {
+    "maxPixelDiffPercent": 0.5,
+    "maxBoxDelta": 1,
+    "maxTextBoxDelta": 2.5,
+    "colorThreshold": 0.1,
+    "aaRadius": 1,
+    "subpixel": true,
+    "maxTextNodeDiffPercent": 35
+  },
+  "pixels": {
+    "width": 1440,
+    "height": 954,
+    "mismatched": 1381,
+    "percent": 0.101,
+    "shapePercent": 0.002,
+    "textPercent": 0.825,
+    "sizeMismatch": false
+  },
+  "textNodes": [
+    {
+      "id": "I2008:50716;2008:49579;1904:12423",
+      "name": "Trần Nguyễn Hoài Phương",
+      "pixels": 112,
+      "percent": 5.8
+    },
+    {
+      "id": "I2008:50159;2008:48177",
+      "name": "31.01.2026 - 06.01.2026",
+      "pixels": 160,
+      "percent": 5
+    },
+    {
+      "id": "I2008:50717;2008:49579;1904:12423",
+      "name": "Trần Nguyễn Hoài Phương",
+      "pixels": 87,
+      "percent": 4.5
+    },
+    {
+      "id": "I2008:50214;2008:49502;1904:12423",
+      "name": "Trần Nguyễn Hoài Phương",
+      "pixels": 87,
+      "percent": 4.4
+    },
+    {
+      "id": "I2008:50540;2008:49502;1904:12423",
+      "name": "Trần Nguyễn Hoài Phương",
+      "pixels": 87,
+      "percent": 4.4
+    },
+    {
+      "id": "2008:50153",
+      "name": "Value",
+      "pixels": 46,
+      "percent": 4.1
+    },
+    {
+      "id": "I2008:50210;2008:49570;1904:12423",
+      "name": "Trần Nguyễn Hoài Phương",
+      "pixels": 78,
+      "percent": 3.9
+    },
+    {
+      "id": "I2008:50536;2008:49570;1904:12423",
+      "name": "Trần Nguyễn Hoài Phương",
+      "pixels": 78,
+      "percent": 3.9
+    },
+    {
+      "id": "I2008:50212;2008:49502;1904:12423",
+      "name": "Trần Nguyễn Hoài Phương",
+      "pixels": 75,
+      "percent": 3.8
+    },
+    {
+      "id": "I2008:50538;2008:49502;1904:12423",
+      "name": "Trần Nguyễn Hoài Phương",
+      "pixels": 75,
+      "percent": 3.8
+    },
+    {
+      "id": "2008:50206",
+      "name": "Chủ Nhật",
+      "pixels": 31,
+      "percent": 1
+    },
+    {
+      "id": "2008:50202",
+      "name": "Thứ 7",
+      "pixels": 29,
+      "percent": 0.9
+    },
+    {
+      "id": "I2008:50210;2008:49573",
+      "name": "09:00 am - 11:00 am",
+      "pixels": 26,
+      "percent": 0.9
+    },
+    {
+      "id": "I2008:50214;2008:49450",
+      "name": "09:00 am - 11:00 am",
+      "pixels": 24,
+      "percent": 0.9
+    },
+    {
+      "id": "I2008:50536;2008:49573",
+      "name": "09:00 am - 11:00 am",
+      "pixels": 26,
+      "percent": 0.9
+    }
+  ],
+  "regions": [
+    {
+      "x": 1400,
+      "y": 152,
+      "width": 24,
+      "height": 16,
+      "pixels": 14,
+      "node": {
+        "id": "2008:50157",
+        "name": "Checkbox 2",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 1400,
+      "y": 136,
+      "width": 16,
+      "height": 8,
+      "pixels": 7,
+      "node": {
+        "id": "2008:50150",
+        "name": "Checkbox Filter",
+        "role": "container"
+      }
+    }
+  ],
+  "boxes": {
+    "measured": 300,
+    "missing": [],
+    "withinThreshold": 300,
+    "buckets": {
+      "≤0.5px": 300,
+      "≤1px": 300,
+      "≤2px": 300,
+      "≤4px": 300,
+      ">4px": 0
+    },
+    "worst": [
+      {
+        "id": "2008:50145",
+        "name": "Atom/Side Tab",
+        "role": "instance",
+        "delta": 0.28,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.28,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I2008:50145;2177:28927",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.28,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.28,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I2008:50145;2177:28928",
+        "name": "Chi tiết NV",
+        "role": "text",
+        "delta": 0.28,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.28,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2008:50146",
+        "name": "Atom/Side Tab",
+        "role": "instance",
+        "delta": 0.28,
+        "dx": 0.28,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I2008:50146;2177:28935",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.28,
+        "dx": 0.28,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I2008:50146;2177:28936",
+        "name": "Nhiệm vụ con",
+        "role": "text",
+        "delta": 0.28,
+        "dx": 0.28,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I2008:50146;2177:28937",
+        "name": "Left accent vertical pill bar",
+        "role": "shape",
+        "delta": 0.28,
+        "dx": 0.28,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2008:50147",
+        "name": "Atom/Side Tab",
+        "role": "instance",
+        "delta": 0.28,
+        "dx": 0.28,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I2008:50147;2177:28927",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.28,
+        "dx": 0.28,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I2008:50147;2177:28928",
+        "name": "Chi tiết NV",
+        "role": "text",
+        "delta": 0.28,
+        "dx": 0.28,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2008:50148",
+        "name": "Atom/Side Tab",
+        "role": "instance",
+        "delta": 0.28,
+        "dx": 0.28,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I2008:50148;2177:28927",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.28,
+        "dx": 0.28,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I2008:50148;2177:28928",
+        "name": "Chi tiết NV",
+        "role": "text",
+        "delta": 0.28,
+        "dx": 0.28,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2008:50149",
+        "name": "Atom/Side Tab",
+        "role": "instance",
+        "delta": 0.28,
+        "dx": 0.28,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I2008:50149;2177:28927",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.28,
+        "dx": 0.28,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I2008:50149;2177:28928",
+        "name": "Chi tiết NV",
+        "role": "text",
+        "delta": 0.28,
+        "dx": 0.28,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2008:50139",
+        "name": "Chi tiết giáo viên",
+        "role": "text",
+        "delta": 0.11,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.11,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2008:50197",
+        "name": "Frame 427323681",
+        "role": "container",
+        "delta": 0.02,
+        "dx": 0.02,
+        "dy": 0,
+        "dw": -0.01,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2008:50198",
+        "name": "Thứ 6",
+        "role": "text",
+        "delta": 0.02,
+        "dx": 0.02,
+        "dy": 0,
+        "dw": -0.01,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "2008:50214",
+        "name": "STATUS CALENDAR",
+        "role": "instance",
+        "delta": 0.02,
+        "dx": 0.02,
+        "dy": 0,
+        "dw": -0.01,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I2008:50214;2008:49502",
+        "name": "AVATAR + Name",
+        "role": "instance",
+        "delta": 0.02,
+        "dx": 0.02,
+        "dy": 0,
+        "dw": -0.01,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I2008:50214;2008:49502;1904:12420",
+        "name": "Frame 427323652",
+        "role": "container",
+        "delta": 0.02,
+        "dx": 0.02,
+        "dy": 0,
+        "dw": -0.01,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I2008:50214;2008:49502;1991:15993",
+        "name": "Avatar",
+        "role": "instance",
+        "delta": 0.02,
+        "dx": 0.02,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I2008:50214;2008:49502;1991:15993;1991:15980",
+        "name": "Ellipse 76",
+        "role": "image",
+        "delta": 0.02,
+        "dx": 0.02,
+        "dy": 0,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I2008:50214;2008:49502;1904:12423",
+        "name": "Trần Nguyễn Hoài Phương",
+        "role": "text",
+        "delta": 0.02,
+        "dx": 0.02,
+        "dy": 0,
+        "dw": -0.01,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      }
+    ],
+    "maxDelta": 0.28,
+    "over": []
+  },
+  "failures": [],
+  "url": "http://localhost:3000/chi-tiet-giao-vien/lich-day/xem-theo-lop",
+  "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
+  "consoleErrors": [],
+  "rootFound": true
+}

@@ -1,0 +1,22 @@
+{
+  "route": "/hoc-ky/chua-co-hoc-ky",
+  "pageFile": "components/figma/cd-kh-030104/index.tsx",
+  "docFile": "docs/pages/hoc-ky/chua-co-hoc-ky.md",
+  "sections": [
+    {
+      "nodeId": "6006:129023",
+      "component": "Section1",
+      "file": "components/figma/cd-kh-030104/Section1.tsx"
+    },
+    {
+      "nodeId": "6006:129240",
+      "component": "SidebarMenuCd",
+      "file": "components/figma/cd-kh-030104/SidebarMenuCd.tsx"
+    },
+    {
+      "nodeId": "6006:129241",
+      "component": "Header53",
+      "file": "components/figma/shared/Header53.tsx"
+    }
+  ]
+}

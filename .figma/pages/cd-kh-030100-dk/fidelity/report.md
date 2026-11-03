@@ -1,8 +1,8 @@
 # Fidelity: CD-KH-030100-DK — Học kỳ / Thông tin
 
-- URL: `http://localhost:3108/hoc-ky/thong-tin-dk`
+- URL: `http://localhost:3000/hoc-ky/thong-tin-dk`
 - Verdict: **PASS**
-- Pixels outside text: **0.102%** differ (limit 0.5%); all pixels: 0.687%; inside text boxes: 2.171% (glyph rendering)
+- Pixels outside text: **0.102%** differ (limit 0.5%); all pixels: 0.669%; inside text boxes: 2.105% (glyph rendering)
 - Boxes: 292/292 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 286, ≤1px: 288, ≤2px: 292, ≤4px: 292, >4px: 0
 
 ## Pixel regions (largest first)
@@ -43,7 +43,6 @@
 | --- | --- |
 | Tổng ôn (`6015:63584`) | 19% |
 | Label (`I6015:63763;4901:220689;2245:87908`) | 13.1% |
-| Label (`I6015:63763;4901:220688;2245:87914`) | 11.6% |
 | Button (`I6015:63585;1071:20023`) | 9.5% |
 | - Chú trọng luyện nói và phản xạ giao tiếp, lồng ghép bài tậ (`6015:63563`) | 7.3% |
 | - Tổng ôn toàn diện nền tảng HSK1 qua các kiến thức chính: T (`6015:63557`) | 6.6% |
@@ -56,6 +55,7 @@
 | Label (`I6015:63763;4901:220690;2245:87908`) | 3.8% |
 | Label (`I6015:63763;4901:220692;2245:87908`) | 3.8% |
 | Label (`I6015:63763;4901:220693;2245:87908`) | 3.6% |
+| Label (`I6015:63763;4901:220696;2245:87908`) | 3.5% |
 
 ## Largest box differences
 

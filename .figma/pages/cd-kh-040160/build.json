@@ -1,0 +1,12 @@
+{
+  "route": "/kien-thuc-s1/tu-vung/popup-them-theo-list",
+  "pageFile": "components/figma/cd-kh-040160/index.tsx",
+  "docFile": "docs/pages/kien-thuc-s1/tu-vung/popup-them-theo-list.md",
+  "sections": [
+    {
+      "nodeId": "4846:171902",
+      "component": "PopupThemTuVungTheoList",
+      "file": "components/figma/cd-kh-040160/PopupThemTuVungTheoList.tsx"
+    }
+  ]
+}

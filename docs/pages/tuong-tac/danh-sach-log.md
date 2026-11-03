@@ -5,7 +5,7 @@
 > **Nguồn:** PLS-ICS T8/2026 ›     └─ TƯƠNG TÁC › ADM-TT-010000 — Tương tác / Danh sách log (`4273:155277`, file `rRVs5HX0kIHffbS0V40djG`)  
 > **Route:** `/tuong-tac/danh-sach-log`  
 > **Khung thiết kế:** 1440 × 810 px (cắt phần tràn ra ngoài khung)  
-> **Xuất lúc:** 2026-11-02T03:52:44.141Z  
+> **Xuất lúc:** 2026-11-03T01:08:09.655Z  
 > **Spec đầy đủ (giá trị chính xác từng node):** `../../../.figma/pages/adm-tt-010000/page-spec.json`
 
 ## 1. Tổng quan

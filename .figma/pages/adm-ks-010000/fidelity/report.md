@@ -1,6 +1,6 @@
 # Fidelity: ADM-KS-010000 — Khảo sát / Tạo khảo sát / Tạo cuộc khảo sát
 
-- URL: `http://localhost:3108/khao-sat/tao-khao-sat/tao-cuoc-khao-sat`
+- URL: `http://localhost:3000/khao-sat/tao-khao-sat/tao-cuoc-khao-sat`
 - Verdict: **PASS**
 - Pixels outside text: **0%** differ (limit 0.5%); all pixels: 0.018%; inside text boxes: 0.173% (glyph rendering)
 - Boxes: 170/170 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 170, ≤1px: 170, ≤2px: 170, ≤4px: 170, >4px: 0

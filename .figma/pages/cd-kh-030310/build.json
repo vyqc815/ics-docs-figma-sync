@@ -1,0 +1,27 @@
+{
+  "route": "/hoc-ky/kiem-tra/popup-cau-hinh-bai-kiem-tra",
+  "pageFile": "components/figma/cd-kh-030310/index.tsx",
+  "docFile": "docs/pages/hoc-ky/kiem-tra/popup-cau-hinh-bai-kiem-tra.md",
+  "sections": [
+    {
+      "nodeId": "2808:42217",
+      "component": "PopupHeader",
+      "file": "components/figma/cd-kh-030310/PopupHeader.tsx"
+    },
+    {
+      "nodeId": "2527:167938",
+      "component": "Body",
+      "file": "components/figma/cd-kh-030310/Body.tsx"
+    },
+    {
+      "nodeId": "2527:167935",
+      "component": "PopupFooter3",
+      "file": "components/figma/shared/PopupFooter3.tsx"
+    }
+  ],
+  "idAlias": {
+    "2527:167935": "2527:167970",
+    "I2527:167935;2514:153371": "I2527:167970;2514:153371",
+    "I2527:167935;2514:153371;1048:1230": "I2527:167970;2514:153371;1048:1230"
+  }
+}

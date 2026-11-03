@@ -1,0 +1,22 @@
+{
+  "route": "/thu-vien/kien-thuc/bang-chu-tieng-nhat-dk",
+  "pageFile": "components/figma/cd-kh-070160-dk/index.tsx",
+  "docFile": "docs/pages/thu-vien/kien-thuc/bang-chu-tieng-nhat-dk.md",
+  "sections": [
+    {
+      "nodeId": "6579:392880",
+      "component": "Content",
+      "file": "components/figma/cd-kh-070160-dk/Content.tsx"
+    },
+    {
+      "nodeId": "6579:393271",
+      "component": "SidebarMenuCd29",
+      "file": "components/figma/shared/SidebarMenuCd29.tsx"
+    },
+    {
+      "nodeId": "6579:393272",
+      "component": "Header64",
+      "file": "components/figma/shared/Header64.tsx"
+    }
+  ]
+}

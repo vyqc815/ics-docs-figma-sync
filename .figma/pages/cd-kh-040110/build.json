@@ -1,0 +1,27 @@
+{
+  "route": "/kien-thuc-s1/tu-vung/chon-cum-chon-1-tu",
+  "pageFile": "components/figma/cd-kh-040110/index.tsx",
+  "docFile": "docs/pages/kien-thuc-s1/tu-vung/chon-cum-chon-1-tu.md",
+  "sections": [
+    {
+      "nodeId": "4846:160271",
+      "component": "Content",
+      "file": "components/figma/cd-kh-040110/Content.tsx"
+    },
+    {
+      "nodeId": "4915:254277",
+      "component": "SidebarMenuCd",
+      "file": "components/figma/cd-kh-040110/SidebarMenuCd.tsx"
+    },
+    {
+      "nodeId": "4846:160681",
+      "component": "Header58",
+      "file": "components/figma/shared/Header58.tsx"
+    },
+    {
+      "nodeId": "5238:17232",
+      "component": "OverlayMenuHanhDong1Tu",
+      "file": "components/figma/cd-kh-040110/OverlayMenuHanhDong1Tu.tsx"
+    }
+  ]
+}

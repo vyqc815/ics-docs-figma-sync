@@ -1,0 +1,40 @@
+{
+  "route": "/hoa-don/danh-sach-hoa-don/menu-chinh-sua-dk",
+  "pageFile": "components/figma/adm-hd-010104-dk/index.tsx",
+  "docFile": "docs/pages/hoa-don/danh-sach-hoa-don/menu-chinh-sua-dk.md",
+  "sections": [
+    {
+      "nodeId": "4056:136126",
+      "component": "Header9",
+      "file": "components/figma/shared/Header9.tsx"
+    },
+    {
+      "nodeId": "4101:135299",
+      "component": "Sidebar",
+      "file": "components/figma/adm-hd-010104-dk/Sidebar.tsx"
+    },
+    {
+      "nodeId": "4056:136259",
+      "component": "Maincontent",
+      "file": "components/figma/adm-hd-010104-dk/Maincontent.tsx"
+    },
+    {
+      "nodeId": "4056:136710",
+      "component": "DropdownDongMenuHanhDong",
+      "file": "components/figma/adm-hd-010104-dk/DropdownDongMenuHanhDong.tsx"
+    },
+    {
+      "nodeId": "4056:136711",
+      "component": "MouseClick",
+      "file": "components/figma/adm-hd-010104-dk/MouseClick.tsx"
+    },
+    {
+      "nodeId": "4056:136712",
+      "component": "MouseClick2",
+      "file": "components/figma/adm-hd-010104-dk/MouseClick2.tsx"
+    }
+  ],
+  "idAlias": {
+    "4056:136126": "4056:131049"
+  }
+}

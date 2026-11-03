@@ -1,0 +1,796 @@
+{
+  "pass": true,
+  "thresholds": {
+    "maxPixelDiffPercent": 0.5,
+    "maxBoxDelta": 1,
+    "maxTextBoxDelta": 2.5,
+    "colorThreshold": 0.1,
+    "aaRadius": 1,
+    "subpixel": true,
+    "maxTextNodeDiffPercent": 35
+  },
+  "pixels": {
+    "width": 1440,
+    "height": 1593,
+    "mismatched": 12738,
+    "percent": 0.555,
+    "shapePercent": 0.169,
+    "textPercent": 2.896,
+    "sizeMismatch": false
+  },
+  "textNodes": [
+    {
+      "id": "I6518:366175;4901:221039;2245:87908",
+      "name": "Label",
+      "pixels": 308,
+      "percent": 13.1
+    },
+    {
+      "id": "6518:365163",
+      "name": "[ 60 phút ]",
+      "pixels": 176,
+      "percent": 11.4
+    },
+    {
+      "id": "I6518:365249;2015:36008",
+      "name": "Value",
+      "pixels": 258,
+      "percent": 8
+    },
+    {
+      "id": "I6518:365444;2015:36008",
+      "name": "Value",
+      "pixels": 258,
+      "percent": 8
+    },
+    {
+      "id": "I6518:365491;2015:36008",
+      "name": "Value",
+      "pixels": 258,
+      "percent": 8
+    },
+    {
+      "id": "I6518:365538;2015:36008",
+      "name": "Value",
+      "pixels": 258,
+      "percent": 8
+    },
+    {
+      "id": "I6518:365585;2015:36008",
+      "name": "Value",
+      "pixels": 258,
+      "percent": 8
+    },
+    {
+      "id": "I6518:365679;2015:36008",
+      "name": "Value",
+      "pixels": 258,
+      "percent": 8
+    },
+    {
+      "id": "I6518:365726;2015:36008",
+      "name": "Value",
+      "pixels": 258,
+      "percent": 8
+    },
+    {
+      "id": "I6518:365773;2015:36008",
+      "name": "Value",
+      "pixels": 258,
+      "percent": 8
+    },
+    {
+      "id": "I6518:365820;2015:36008",
+      "name": "Value",
+      "pixels": 258,
+      "percent": 8
+    },
+    {
+      "id": "I6518:365867;2015:36008",
+      "name": "Value",
+      "pixels": 258,
+      "percent": 8
+    },
+    {
+      "id": "I6518:365914;2015:36008",
+      "name": "Value",
+      "pixels": 258,
+      "percent": 8
+    },
+    {
+      "id": "I6518:365961;2015:36008",
+      "name": "Value",
+      "pixels": 258,
+      "percent": 8
+    },
+    {
+      "id": "I6518:366008;2015:36008",
+      "name": "Value",
+      "pixels": 258,
+      "percent": 8
+    }
+  ],
+  "regions": [
+    {
+      "x": 0,
+      "y": 1592,
+      "width": 1440,
+      "height": 1,
+      "pixels": 1440,
+      "node": {
+        "id": "6518:365148",
+        "name": "Main - WorkspaceContainer",
+        "role": "container"
+      }
+    },
+    {
+      "x": 336,
+      "y": 1488,
+      "width": 1080,
+      "height": 48,
+      "pixels": 877,
+      "node": {
+        "id": "I6518:366055;5056:365849",
+        "name": "Placeholder",
+        "role": "text"
+      }
+    },
+    {
+      "x": 104,
+      "y": 120,
+      "width": 24,
+      "height": 32,
+      "pixels": 58,
+      "node": {
+        "id": "I6518:366175;4901:221036;2245:87816",
+        "name": "Icon",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 104,
+      "y": 752,
+      "width": 24,
+      "height": 32,
+      "pixels": 58,
+      "node": {
+        "id": "I6518:366175;4901:221047;2245:87816",
+        "name": "Icon",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 120,
+      "y": 856,
+      "width": 16,
+      "height": 24,
+      "pixels": 45,
+      "node": {
+        "id": "I6518:366175;4901:221049;2245:87904",
+        "name": "Icon",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 120,
+      "y": 176,
+      "width": 16,
+      "height": 24,
+      "pixels": 42,
+      "node": {
+        "id": "I6518:366175;4901:221037;2245:87904",
+        "name": "Icon",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 120,
+      "y": 1048,
+      "width": 16,
+      "height": 24,
+      "pixels": 42,
+      "node": {
+        "id": "I6518:366175;5491:349906;2245:87904",
+        "name": "Icon",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 96,
+      "y": 80,
+      "width": 8,
+      "height": 32,
+      "pixels": 40,
+      "node": {
+        "id": "I6518:366175;4901:221031",
+        "name": "Frame 1171274940",
+        "role": "icon"
+      }
+    },
+    {
+      "x": 1080,
+      "y": 272,
+      "width": 16,
+      "height": 24,
+      "pixels": 39,
+      "node": {
+        "id": "6518:365251",
+        "name": "Atom/Chip · Thời gian",
+        "role": "instance"
+      }
+    },
+    {
+      "x": 1008,
+      "y": 384,
+      "width": 16,
+      "height": 32,
+      "pixels": 39,
+      "node": {
+        "id": "6518:365299",
+        "name": "Atom/Chip · Thời gian",
+        "role": "instance"
+      }
+    },
+    {
+      "x": 1080,
+      "y": 712,
+      "width": 16,
+      "height": 32,
+      "pixels": 39,
+      "node": {
+        "id": "6518:365493",
+        "name": "Atom/Chip · Thời gian",
+        "role": "instance"
+      }
+    },
+    {
+      "x": 1080,
+      "y": 776,
+      "width": 16,
+      "height": 32,
+      "pixels": 39,
+      "node": {
+        "id": "6518:365540",
+        "name": "Atom/Chip · Thời gian",
+        "role": "instance"
+      }
+    },
+    {
+      "x": 1080,
+      "y": 840,
+      "width": 16,
+      "height": 24,
+      "pixels": 39,
+      "node": {
+        "id": "6518:365587",
+        "name": "Atom/Chip · Thời gian",
+        "role": "instance"
+      }
+    },
+    {
+      "x": 1080,
+      "y": 968,
+      "width": 16,
+      "height": 24,
+      "pixels": 39,
+      "node": {
+        "id": "6518:365681",
+        "name": "Atom/Chip · Thời gian",
+        "role": "instance"
+      }
+    },
+    {
+      "x": 1080,
+      "y": 1088,
+      "width": 16,
+      "height": 32,
+      "pixels": 39,
+      "node": {
+        "id": "6518:365775",
+        "name": "Atom/Chip · Thời gian",
+        "role": "instance"
+      }
+    },
+    {
+      "x": 1080,
+      "y": 1152,
+      "width": 16,
+      "height": 32,
+      "pixels": 39,
+      "node": {
+        "id": "6518:365822",
+        "name": "Atom/Chip · Thời gian",
+        "role": "instance"
+      }
+    },
+    {
+      "x": 1080,
+      "y": 1216,
+      "width": 16,
+      "height": 32,
+      "pixels": 39,
+      "node": {
+        "id": "6518:365869",
+        "name": "Atom/Chip · Thời gian",
+        "role": "instance"
+      }
+    },
+    {
+      "x": 1080,
+      "y": 1408,
+      "width": 16,
+      "height": 24,
+      "pixels": 39,
+      "node": {
+        "id": "6518:366010",
+        "name": "Atom/Chip · Thời gian",
+        "role": "instance"
+      }
+    },
+    {
+      "x": 1008,
+      "y": 272,
+      "width": 16,
+      "height": 32,
+      "pixels": 38,
+      "node": {
+        "id": "6518:365251",
+        "name": "Atom/Chip · Thời gian",
+        "role": "instance"
+      }
+    },
+    {
+      "x": 1080,
+      "y": 384,
+      "width": 16,
+      "height": 32,
+      "pixels": 38,
+      "node": {
+        "id": "6518:365299",
+        "name": "Atom/Chip · Thời gian",
+        "role": "instance"
+      }
+    },
+    {
+      "x": 1080,
+      "y": 512,
+      "width": 16,
+      "height": 32,
+      "pixels": 38,
+      "node": {
+        "id": "6518:365349",
+        "name": "Atom/Chip · Thời gian",
+        "role": "instance"
+      }
+    },
+    {
+      "x": 1080,
+      "y": 584,
+      "width": 16,
+      "height": 32,
+      "pixels": 38,
+      "node": {
+        "id": "6518:365399",
+        "name": "Atom/Chip · Thời gian",
+        "role": "instance"
+      }
+    },
+    {
+      "x": 1008,
+      "y": 592,
+      "width": 8,
+      "height": 24,
+      "pixels": 38,
+      "node": {
+        "id": "6518:365398",
+        "name": "Data",
+        "role": "container"
+      }
+    },
+    {
+      "x": 1008,
+      "y": 712,
+      "width": 16,
+      "height": 32,
+      "pixels": 38,
+      "node": {
+        "id": "6518:365493",
+        "name": "Atom/Chip · Thời gian",
+        "role": "instance"
+      }
+    },
+    {
+      "x": 1008,
+      "y": 776,
+      "width": 16,
+      "height": 32,
+      "pixels": 38,
+      "node": {
+        "id": "6518:365540",
+        "name": "Atom/Chip · Thời gian",
+        "role": "instance"
+      }
+    },
+    {
+      "x": 1008,
+      "y": 840,
+      "width": 16,
+      "height": 32,
+      "pixels": 38,
+      "node": {
+        "id": "6518:365587",
+        "name": "Atom/Chip · Thời gian",
+        "role": "instance"
+      }
+    },
+    {
+      "x": 1008,
+      "y": 968,
+      "width": 16,
+      "height": 32,
+      "pixels": 38,
+      "node": {
+        "id": "6518:365681",
+        "name": "Atom/Chip · Thời gian",
+        "role": "instance"
+      }
+    },
+    {
+      "x": 1008,
+      "y": 1096,
+      "width": 16,
+      "height": 24,
+      "pixels": 38,
+      "node": {
+        "id": "6518:365775",
+        "name": "Atom/Chip · Thời gian",
+        "role": "instance"
+      }
+    },
+    {
+      "x": 1008,
+      "y": 1160,
+      "width": 16,
+      "height": 24,
+      "pixels": 38,
+      "node": {
+        "id": "6518:365822",
+        "name": "Atom/Chip · Thời gian",
+        "role": "instance"
+      }
+    },
+    {
+      "x": 1008,
+      "y": 1224,
+      "width": 16,
+      "height": 24,
+      "pixels": 38,
+      "node": {
+        "id": "6518:365869",
+        "name": "Atom/Chip · Thời gian",
+        "role": "instance"
+      }
+    }
+  ],
+  "boxes": {
+    "measured": 1136,
+    "missing": [],
+    "withinThreshold": 1136,
+    "buckets": {
+      "≤0.5px": 1133,
+      "≤1px": 1133,
+      "≤2px": 1136,
+      "≤4px": 1136,
+      ">4px": 0
+    },
+    "worst": [
+      {
+        "id": "6518:365197",
+        "name": "TỔNG ÔN TẬP",
+        "role": "text",
+        "delta": 1.72,
+        "dx": -0.86,
+        "dy": 0,
+        "dw": 1.72,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6518:365340;3004:75121",
+        "name": "Tìm nội dung...",
+        "role": "text",
+        "delta": 1.5,
+        "dx": 0,
+        "dy": 1.5,
+        "dw": 0.03,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6518:365391;3004:75121",
+        "name": "Tìm nội dung...",
+        "role": "text",
+        "delta": 1.5,
+        "dx": 0,
+        "dy": 1.5,
+        "dw": 0,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6518:365434",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.5,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.5,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6518:365435",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.5,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.5,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6518:365437",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.5,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.5,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6518:365438",
+        "name": "Vận mẫu kép",
+        "role": "text",
+        "delta": 0.5,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.5,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6518:365951",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.42,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.42,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6518:365952",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.42,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.42,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6518:365954",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.42,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.42,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6518:365955",
+        "name": "Nghe: đường đến trường",
+        "role": "text",
+        "delta": 0.42,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.42,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6518:372920",
+        "name": "Lỗi · Tên trống",
+        "role": "text",
+        "delta": 0.25,
+        "dx": 0,
+        "dy": 0,
+        "dw": 0.25,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6518:365177",
+        "name": "Trạng thái số buổi",
+        "role": "instance",
+        "delta": 0.16,
+        "dx": -0.08,
+        "dy": 0,
+        "dw": 0.16,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6518:365177;2808:53211",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.16,
+        "dx": -0.08,
+        "dy": 0,
+        "dw": 0.16,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6518:365177;2808:53213",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.16,
+        "dx": -0.08,
+        "dy": 0,
+        "dw": 0.16,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6518:365177;2808:53214",
+        "name": "Chưa đủ buổi",
+        "role": "text",
+        "delta": 0.16,
+        "dx": -0.08,
+        "dy": 0,
+        "dw": 0.16,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6518:365184",
+        "name": "Trạng thái số buổi",
+        "role": "instance",
+        "delta": 0.16,
+        "dx": -0.08,
+        "dy": 0,
+        "dw": 0.16,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6518:365184;2808:53211",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.16,
+        "dx": -0.08,
+        "dy": 0,
+        "dw": 0.16,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6518:365184;2808:53213",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.16,
+        "dx": -0.08,
+        "dy": 0,
+        "dw": 0.16,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6518:365184;2808:53214",
+        "name": "Chưa đủ buổi",
+        "role": "text",
+        "delta": 0.16,
+        "dx": -0.08,
+        "dy": 0,
+        "dw": 0.16,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6518:365198",
+        "name": "Trạng thái số buổi",
+        "role": "instance",
+        "delta": 0.16,
+        "dx": -0.08,
+        "dy": 0,
+        "dw": 0.16,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6518:365198;2808:53211",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.16,
+        "dx": -0.08,
+        "dy": 0,
+        "dw": 0.16,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6518:365198;2808:53213",
+        "name": "Container",
+        "role": "container",
+        "delta": 0.16,
+        "dx": -0.08,
+        "dy": 0,
+        "dw": 0.16,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "I6518:365198;2808:53214",
+        "name": "Chưa đủ buổi",
+        "role": "text",
+        "delta": 0.16,
+        "dx": -0.08,
+        "dy": 0,
+        "dw": 0.16,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      },
+      {
+        "id": "6518:365205",
+        "name": "Trạng thái số buổi",
+        "role": "instance",
+        "delta": 0.16,
+        "dx": -0.08,
+        "dy": 0,
+        "dw": 0.16,
+        "dh": 0,
+        "limit": 2.5,
+        "textDriven": true
+      }
+    ],
+    "maxDelta": 1.72,
+    "over": []
+  },
+  "failures": [],
+  "url": "http://localhost:3000/lo-trinh/sua-ten-bai-loi-de-trong-phim-tat-dk",
+  "chrome": "/Users/truongquockhanh/.cache/puppeteer/chrome-headless-shell/mac_arm-156.0.8078.80/chrome-headless-shell-mac-arm64/chrome-headless-shell",
+  "consoleErrors": [],
+  "rootFound": true
+}

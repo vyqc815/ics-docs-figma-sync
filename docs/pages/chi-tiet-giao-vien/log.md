@@ -5,7 +5,7 @@
 > **Nguồn:** PLS-ICS T8/2026 ›         ├─ GIÁO VIÊN › ADM-GV-020400 — Chi tiết giáo viên / Log (`1904:6493`, file `rRVs5HX0kIHffbS0V40djG`)  
 > **Route:** `/chi-tiet-giao-vien/log`  
 > **Khung thiết kế:** 1440 × 1027 px (cắt phần tràn ra ngoài khung)  
-> **Xuất lúc:** 2026-11-02T03:27:09.362Z  
+> **Xuất lúc:** 2026-11-03T03:19:06.855Z  
 > **Spec đầy đủ (giá trị chính xác từng node):** `../../../.figma/pages/adm-gv-020400/page-spec.json`
 
 ## 1. Tổng quan

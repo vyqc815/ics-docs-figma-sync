@@ -1,8 +1,8 @@
 # Fidelity: CD-KH-030300-DK — Học kỳ / Kiểm tra
 
-- URL: `http://localhost:3108/hoc-ky/kiem-tra-dk`
+- URL: `http://localhost:3000/hoc-ky/kiem-tra-dk`
 - Verdict: **PASS**
-- Pixels outside text: **0.133%** differ (limit 0.5%); all pixels: 0.312%; inside text boxes: 1.779% (glyph rendering)
+- Pixels outside text: **0.133%** differ (limit 0.5%); all pixels: 0.294%; inside text boxes: 1.603% (glyph rendering)
 - Boxes: 223/223 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 223, ≤1px: 223, ≤2px: 223, ≤4px: 223, >4px: 0
 
 ## Pixel regions (largest first)
@@ -44,7 +44,6 @@
 | Text | Differing |
 | --- | --- |
 | Label (`I6015:64054;4901:220689;2245:87908`) | 13.1% |
-| Label (`I6015:64054;4901:220688;2245:87914`) | 11.6% |
 | Label (`I6015:64054;5491:336922;2245:87908`) | 6.1% |
 | Kiểm tra giữa kỳ 3 HSK1 (`6015:63847`) | 6% |
 | Label (`I6015:64054;4901:220694;2245:87908`) | 4.8% |
@@ -58,6 +57,7 @@
 | Label (`I6015:64054;4901:220696;2245:87908`) | 3.5% |
 | Label (`I6015:64054;4901:220687;2245:87908`) | 3% |
 | Label (`I6015:64054;4901:220695;2245:87908`) | 2.4% |
+| Label (`I6015:64054;4901:220698;2245:87908`) | 2.4% |
 
 ## Largest box differences
 

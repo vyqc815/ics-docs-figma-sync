@@ -1,8 +1,8 @@
 # Fidelity: ADM-GV-020300-DK — Chi tiết giáo viên / Lịch dạy
 
-- URL: `http://localhost:3108/chi-tiet-giao-vien/lich-day-dk`
+- URL: `http://localhost:3000/chi-tiet-giao-vien/lich-day-dk`
 - Verdict: **PASS**
-- Pixels outside text: **0.006%** differ (limit 0.5%); all pixels: 0.212%; inside text boxes: 1.303% (glyph rendering)
+- Pixels outside text: **0.006%** differ (limit 0.5%); all pixels: 0.181%; inside text boxes: 1.111% (glyph rendering)
 - Boxes: 253/253 within their limit (1px, 2.5px for text-driven) — ≤0.5px: 253, ≤1px: 253, ≤2px: 253, ≤4px: 253, >4px: 0
 
 ## Pixel regions (largest first)
@@ -23,7 +23,6 @@
 
 | Text | Differing |
 | --- | --- |
-| Label (`I4056:125296;2245:87864`) | 14.9% |
 | 31.01.2026 - 06.01.2026 (`I4056:125149;2008:48177`) | 5.1% |
 | Value (`4056:125146`) | 4.8% |
 | Trần Nguyễn Hoài Phương (`I4056:125198;2008:49570;1904:12423`) | 4% |
@@ -38,6 +37,7 @@
 | Trần Nguyễn Hoài Phương (`I4056:125219;2008:49579;1904:12423`) | 4% |
 | Label (`I4056:125297;2245:87858`) | 2.5% |
 | Label (`I4056:125302;2245:87768`) | 2.4% |
+| Label (`I4056:125298;2245:87858`) | 1.8% |
 
 ## Largest box differences
 

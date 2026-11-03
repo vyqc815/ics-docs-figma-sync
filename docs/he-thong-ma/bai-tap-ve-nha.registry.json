@@ -1,0 +1,5024 @@
+{
+ "pilot": true,
+ "source": "homework-test.md",
+ "prefix": "CM-HW",
+ "screens": {
+  "cd-kh-030340": {
+   "id": "CD-KH-030340",
+   "inPageList": true,
+   "synced": false,
+   "route": "/hoc-ky/kiem-tra/danh-sach-bai-tap",
+   "darkVariant": "cd-kh-030340-dk",
+   "citedByRequirement": true,
+   "regions": [
+    "CM-HW.A02",
+    "CM-HW.A03",
+    "CM-HW.A07"
+   ]
+  },
+  "cd-kh-030341": {
+   "id": "CD-KH-030341",
+   "inPageList": false,
+   "synced": false,
+   "route": null,
+   "darkVariant": null,
+   "citedByRequirement": true,
+   "regions": [
+    "CM-HW.A09"
+   ]
+  },
+  "cd-kh-030342": {
+   "id": "CD-KH-030342",
+   "inPageList": false,
+   "synced": false,
+   "route": null,
+   "darkVariant": null,
+   "citedByRequirement": true,
+   "regions": [
+    "CM-HW.A09"
+   ]
+  },
+  "cd-kh-030343": {
+   "id": "CD-KH-030343",
+   "inPageList": true,
+   "synced": false,
+   "route": "/hoc-ky/kiem-tra/danh-sach-bai-tap-sau-generate-30-dong",
+   "darkVariant": "cd-kh-030343-dk",
+   "citedByRequirement": true,
+   "regions": [
+    "CM-HW.A11"
+   ]
+  },
+  "cd-kh-030344": {
+   "id": "CD-KH-030344",
+   "inPageList": false,
+   "synced": false,
+   "route": null,
+   "darkVariant": null,
+   "citedByRequirement": true,
+   "regions": [
+    "CM-HW.A10"
+   ]
+  },
+  "cd-kh-030345": {
+   "id": "CD-KH-030345",
+   "inPageList": false,
+   "synced": false,
+   "route": null,
+   "darkVariant": null,
+   "citedByRequirement": true,
+   "regions": [
+    "CM-HW.A11"
+   ]
+  },
+  "cd-kh-030346": {
+   "id": "CD-KH-030346",
+   "inPageList": false,
+   "synced": false,
+   "route": null,
+   "darkVariant": null,
+   "citedByRequirement": true,
+   "regions": [
+    "CM-HW.A10"
+   ]
+  },
+  "cd-kh-030347": {
+   "id": "CD-KH-030347",
+   "inPageList": true,
+   "synced": false,
+   "route": "/hoc-ky/kiem-tra/danh-sach-bai-tap-sau-khi-tao",
+   "darkVariant": "cd-kh-030347-dk",
+   "citedByRequirement": true,
+   "regions": [
+    "CM-HW.A12"
+   ]
+  },
+  "cd-kh-060100": {
+   "id": "CD-KH-060100",
+   "inPageList": true,
+   "synced": true,
+   "route": "/bai-tap-ve-nha/btvn",
+   "darkVariant": "cd-kh-060100-dk",
+   "citedByRequirement": true,
+   "regions": [
+    "CM-HW.A01",
+    "CM-HW.A02",
+    "CM-HW.A03"
+   ]
+  },
+  "cd-kh-060110": {
+   "id": "CD-KH-060110",
+   "inPageList": true,
+   "synced": true,
+   "route": "/bai-tap-ve-nha/frames/cd-kh-060110",
+   "darkVariant": null,
+   "citedByRequirement": true,
+   "regions": [
+    "CM-HW.A05"
+   ]
+  },
+  "cd-kh-060120": {
+   "id": "CD-KH-060120",
+   "inPageList": true,
+   "synced": true,
+   "route": "/bai-tap-ve-nha/frames/cd-kh-060120",
+   "darkVariant": null,
+   "citedByRequirement": true,
+   "regions": [
+    "CM-HW.A06"
+   ]
+  },
+  "cd-kh-060121": {
+   "id": "CD-KH-060121",
+   "inPageList": true,
+   "synced": true,
+   "route": "/bai-tap-ve-nha/frames/cd-kh-060121",
+   "darkVariant": null,
+   "citedByRequirement": true,
+   "regions": [
+    "CM-HW.A06"
+   ]
+  },
+  "cd-kh-060122": {
+   "id": "CD-KH-060122",
+   "inPageList": true,
+   "synced": true,
+   "route": "/bai-tap-ve-nha/frames/cd-kh-060122",
+   "darkVariant": null,
+   "citedByRequirement": true,
+   "regions": [
+    "CM-HW.A06"
+   ]
+  },
+  "cd-kh-060123": {
+   "id": "CD-KH-060123",
+   "inPageList": true,
+   "synced": true,
+   "route": "/bai-tap-ve-nha/frames/cd-kh-060123",
+   "darkVariant": null,
+   "citedByRequirement": true,
+   "regions": [
+    "CM-HW.A06"
+   ]
+  },
+  "cd-kh-060124": {
+   "id": "CD-KH-060124",
+   "inPageList": true,
+   "synced": true,
+   "route": "/bai-tap-ve-nha/frames/cd-kh-060124",
+   "darkVariant": null,
+   "citedByRequirement": true,
+   "regions": [
+    "CM-HW.A06"
+   ]
+  },
+  "cd-kh-060125": {
+   "id": "CD-KH-060125",
+   "inPageList": true,
+   "synced": true,
+   "route": "/bai-tap-ve-nha/frames/cd-kh-060125",
+   "darkVariant": null,
+   "citedByRequirement": true,
+   "regions": [
+    "CM-HW.A06"
+   ]
+  },
+  "cd-kh-060130": {
+   "id": "CD-KH-060130",
+   "inPageList": true,
+   "synced": true,
+   "route": "/bai-tap-ve-nha/btvn-bai-chua-co-cau-hoi",
+   "darkVariant": "cd-kh-060130-dk",
+   "citedByRequirement": true,
+   "regions": [
+    "CM-HW.A04"
+   ]
+  },
+  "cd-kh-060140": {
+   "id": "CD-KH-060140",
+   "inPageList": true,
+   "synced": true,
+   "route": "/bai-tap-ve-nha/frames/cd-kh-060140",
+   "darkVariant": null,
+   "citedByRequirement": true,
+   "regions": [
+    "CM-HW.A07"
+   ]
+  },
+  "cd-kh-060141": {
+   "id": "CD-KH-060141",
+   "inPageList": true,
+   "synced": true,
+   "route": "/bai-tap-ve-nha/frames/cd-kh-060141",
+   "darkVariant": null,
+   "citedByRequirement": true,
+   "regions": [
+    "CM-HW.A07"
+   ]
+  },
+  "cd-kh-060150": {
+   "id": "CD-KH-060150",
+   "inPageList": true,
+   "synced": true,
+   "route": "/bai-tap-ve-nha/frames/cd-kh-060150",
+   "darkVariant": null,
+   "citedByRequirement": true,
+   "regions": [
+    "CM-HW.A08"
+   ]
+  },
+  "cd-kh-060160": {
+   "id": "CD-KH-060160",
+   "inPageList": true,
+   "synced": true,
+   "route": "/bai-tap-ve-nha/preview-mobile-tren-trang-kiem-tra",
+   "darkVariant": "cd-kh-060160-dk",
+   "citedByRequirement": false,
+   "regions": []
+  },
+  "cd-kh-060200": {
+   "id": "CD-KH-060200",
+   "inPageList": true,
+   "synced": true,
+   "route": "/bai-tap-ve-nha/kiem-tra",
+   "darkVariant": "cd-kh-060200-dk",
+   "citedByRequirement": true,
+   "regions": [
+    "CM-HW.A01",
+    "CM-HW.A02",
+    "CM-HW.A03"
+   ]
+  }
+ },
+ "regions": [
+  {
+   "id": "CM-HW.A01",
+   "name": "khung-man-cay-ky-va-bai",
+   "title": "Khung màn, cây kỳ và bài",
+   "screens": [
+    "cd-kh-060100",
+    "cd-kh-060200"
+   ],
+   "syncedScreens": [
+    "cd-kh-060100",
+    "cd-kh-060200"
+   ],
+   "needsDesign": false,
+   "figmaDiffNotes": [
+    "Khác Figma CD-KH-060200: tab Kiểm tra trên Figma là danh sách phẳng; requirement là cây theo kỳ giống BTVN."
+   ],
+   "items": [
+    {
+     "id": "CM-HW.A01.01",
+     "name": "tab-btvn",
+     "label": "Tab BTVN",
+     "spec": "Cây theo kỳ: mỗi kỳ (`HK I`, `HK II`…) kèm số bài; mở kỳ ra **danh sách lesson của kỳ** theo thứ tự bài học. Mỗi bài kèm badge số câu hỏi (`0` màu vàng).",
+     "matches": {
+      "cd-kh-060100": [
+       {
+        "term": "BTVN",
+        "figmaId": "I5491:347473;2177:28936",
+        "layer": "Nhiệm vụ con",
+        "confidence": "cao",
+        "region": "Panel · BTVN theo kỳ & bài",
+        "owner": "Tab · BTVN",
+        "component": "Atom/Side Tab",
+        "variant": {
+         "Có số đếm": false,
+         "State": "Active",
+         "Icon": "No",
+         "Kiểu": "Gạch trái"
+        },
+        "inCode": true
+       }
+      ],
+      "cd-kh-060200": [
+       {
+        "term": "BTVN",
+        "figmaId": "I5491:348636;2177:28928",
+        "layer": "Chi tiết NV",
+        "confidence": "cao",
+        "region": "Panel · Danh sách bài kiểm tra",
+        "owner": "Tab · BTVN",
+        "component": "Atom/Side Tab",
+        "variant": {
+         "Có số đếm": false,
+         "State": "Inactive",
+         "Icon": "No",
+         "Kiểu": "Gạch trái"
+        },
+        "inCode": true
+       }
+      ]
+     },
+     "relations": [],
+     "missingTerms": [],
+     "status": "khop",
+     "testcases": [
+      "CM-HW.TC01"
+     ]
+    },
+    {
+     "id": "CM-HW.A01.02",
+     "name": "tab-kiem-tra",
+     "label": "Tab Kiểm tra",
+     "spec": "Cây theo kỳ giống BTVN: mỗi kỳ mở ra **danh sách bài kiểm tra của kỳ** (vd `Mini test 1 · Chào hỏi`, `Kiểm tra giữa kỳ`), kèm badge số câu.",
+     "matches": {
+      "cd-kh-060100": [
+       {
+        "term": "Kiểm tra",
+        "figmaId": "I5491:347475;2177:28928",
+        "layer": "Chi tiết NV",
+        "confidence": "cao",
+        "region": "Panel · BTVN theo kỳ & bài",
+        "owner": "Tab · Kiểm tra",
+        "component": "Atom/Side Tab",
+        "variant": {
+         "Có số đếm": false,
+         "State": "Inactive",
+         "Icon": "No",
+         "Kiểu": "Gạch trái"
+        },
+        "inCode": true
+       }
+      ],
+      "cd-kh-060200": [
+       {
+        "term": "Kiểm tra",
+        "figmaId": "I5491:348638;2177:28936",
+        "layer": "Nhiệm vụ con",
+        "confidence": "cao",
+        "region": "Panel · Danh sách bài kiểm tra",
+        "owner": "Tab · Kiểm tra",
+        "component": "Atom/Side Tab",
+        "variant": {
+         "Có số đếm": false,
+         "State": "Active",
+         "Icon": "No",
+         "Kiểu": "Gạch trái"
+        },
+        "inCode": true
+       }
+      ]
+     },
+     "relations": [],
+     "missingTerms": [],
+     "status": "khop",
+     "testcases": [
+      "CM-HW.TC03"
+     ]
+    },
+    {
+     "id": "CM-HW.A01.03",
+     "name": "o-tim-bai-hoc-tim-bai-kiem-tra",
+     "label": "Ô Tìm bài học… / Tìm bài kiểm tra…",
+     "spec": "Tìm theo tên bài trong tab đang mở; kỳ chứa bài khớp tự mở.",
+     "matches": {
+      "cd-kh-060100": [
+       {
+        "term": "Tìm bài học…",
+        "figmaId": "5491:346599",
+        "layer": "Atom/Input",
+        "confidence": "cao",
+        "region": "Panel · BTVN theo kỳ & bài",
+        "owner": "Atom/Input",
+        "component": "Atom/Input",
+        "variant": {
+         "Loại": "Gift code",
+         "Text": "Tìm bài học…",
+         "State": "Search",
+         "Kiểu": "S"
+        },
+        "inCode": true
+       }
+      ],
+      "cd-kh-060200": [
+       {
+        "term": "Tìm bài kiểm tra…",
+        "figmaId": "5491:347764",
+        "layer": "Atom/Input",
+        "confidence": "cao",
+        "region": "Panel · Danh sách bài kiểm tra",
+        "owner": "Atom/Input",
+        "component": "Atom/Input",
+        "variant": {
+         "Loại": "Gift code",
+         "Text": "Tìm bài kiểm tra…",
+         "State": "Search",
+         "Kiểu": "S"
+        },
+        "inCode": true
+       }
+      ]
+     },
+     "relations": [],
+     "missingTerms": [],
+     "status": "khop",
+     "testcases": []
+    },
+    {
+     "id": "CM-HW.A01.04",
+     "name": "chon-bai",
+     "label": "Chọn bài",
+     "spec": "Bấm bài: dòng tô cam, vùng trái tải bộ câu hỏi của bài. Mặc định kỳ đầu tiên, bài đầu tiên.",
+     "matches": {},
+     "relations": [],
+     "missingTerms": [
+      "Chọn bài"
+     ],
+     "status": "chua-thay-tren-figma",
+     "testcases": [
+      "CM-HW.TC01"
+     ]
+    },
+    {
+     "id": "CM-HW.A01.05",
+     "name": "ky-cong-khai-vo-hieu",
+     "label": "Kỳ Công khai / Vô hiệu",
+     "spec": "Vẫn hiện trong cây (kỳ `Vô hiệu` kèm nhãn `Vô hiệu`); CD chỉ **xem** bộ câu hỏi, không sửa được (xem REQ09).",
+     "matches": {},
+     "relations": [
+      {
+       "type": "governed-by",
+       "target": "CM-HW.REQ09",
+       "raw": "REQ09"
+      }
+     ],
+     "missingTerms": [
+      "Công khai",
+      "Vô hiệu"
+     ],
+     "status": "chua-thay-tren-figma",
+     "testcases": []
+    }
+   ]
+  },
+  {
+   "id": "CM-HW.A02",
+   "name": "bo-cau-hoi-thanh-cong-cu-va-the-tong-qua",
+   "title": "Bộ câu hỏi: thanh công cụ và thẻ tổng quan",
+   "screens": [
+    "cd-kh-030340",
+    "cd-kh-060100",
+    "cd-kh-060200"
+   ],
+   "syncedScreens": [
+    "cd-kh-060100",
+    "cd-kh-060200"
+   ],
+   "needsDesign": true,
+   "figmaDiffNotes": [
+    "Khác Figma CD-KH-030340: còn thẻ `Tổng điểm` (đã bỏ theo thang 10, CD-KH-060100 / 060200 đã sửa); nút tạo bằng AI ghi `Generate`."
+   ],
+   "items": [
+    {
+     "id": "CM-HW.A02.01",
+     "name": "tieu-de",
+     "label": "Tiêu đề",
+     "spec": "`BTVN · <tên bài>` hoặc `<tên bài kiểm tra>`; tag `N câu hỏi`; tag cảnh báo `N thiếu đáp án` khi có câu chưa có đáp án (không áp dụng câu Giáo viên chấm).",
+     "matches": {
+      "cd-kh-060100": [
+       {
+        "term": "Tiêu đề",
+        "figmaId": "5491:346413",
+        "layer": "Tiêu đề",
+        "confidence": "cao",
+        "region": "Panel · Danh sách kiến thức",
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": true
+       }
+      ],
+      "cd-kh-060200": [
+       {
+        "term": "Tiêu đề",
+        "figmaId": "5491:347578",
+        "layer": "Tiêu đề",
+        "confidence": "cao",
+        "region": "Panel · Danh sách kiến thức",
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": true
+       }
+      ]
+     },
+     "relations": [],
+     "missingTerms": [
+      "BTVN · <tên bài>"
+     ],
+     "status": "khop",
+     "testcases": [
+      "CM-HW.TC07"
+     ]
+    },
+    {
+     "id": "CM-HW.A02.02",
+     "name": "import-excel-export-excel",
+     "label": "Import Excel / Export Excel",
+     "spec": "Xem khu vực Import / Export Excel.",
+     "matches": {
+      "cd-kh-060100": [
+       {
+        "term": "Import Excel",
+        "figmaId": "5672:61901",
+        "layer": "Nút Import Excel",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Nút Import Excel",
+        "component": "Atom/Button",
+        "variant": {
+         "Label": "Import Excel",
+         "Type": "Outlined",
+         "Size": "Small"
+        },
+        "inCode": true
+       },
+       {
+        "term": "Export Excel",
+        "figmaId": "5672:61903",
+        "layer": "Nút Export Excel",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Nút Export Excel",
+        "component": "Atom/Button",
+        "variant": {
+         "Label": "Export Excel",
+         "Type": "Outlined",
+         "Size": "Small"
+        },
+        "inCode": true
+       }
+      ],
+      "cd-kh-060200": [
+       {
+        "term": "Import Excel",
+        "figmaId": "5672:61997",
+        "layer": "Nút Import Excel",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Nút Import Excel",
+        "component": "Atom/Button",
+        "variant": {
+         "Label": "Import Excel",
+         "Type": "Outlined",
+         "Size": "Small"
+        },
+        "inCode": true
+       },
+       {
+        "term": "Export Excel",
+        "figmaId": "5672:61999",
+        "layer": "Nút Export Excel",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Nút Export Excel",
+        "component": "Atom/Button",
+        "variant": {
+         "Label": "Export Excel",
+         "Type": "Outlined",
+         "Size": "Small"
+        },
+        "inCode": true
+       }
+      ]
+     },
+     "relations": [
+      {
+       "type": "see",
+       "target": "CM-HW.A07",
+       "raw": "Xem khu vực Import / Export Excel"
+      }
+     ],
+     "missingTerms": [],
+     "status": "khop",
+     "testcases": []
+    },
+    {
+     "id": "CM-HW.A02.03",
+     "name": "preview-mobile",
+     "label": "Preview mobile",
+     "spec": "Xem bộ câu hỏi như học viên thấy trên app (**UI cần bổ sung**).",
+     "matches": {
+      "cd-kh-060100": [
+       {
+        "term": "Preview mobile",
+        "figmaId": "5491:346417",
+        "layer": "Atom/Button",
+        "confidence": "cao",
+        "region": "Panel · Danh sách kiến thức",
+        "owner": "Atom/Button",
+        "component": "Atom/Button",
+        "variant": {
+         "Label": "Preview mobile",
+         "Type": "Outlined",
+         "Size": "Small"
+        },
+        "inCode": true
+       }
+      ],
+      "cd-kh-060200": [
+       {
+        "term": "Preview mobile",
+        "figmaId": "5491:347582",
+        "layer": "Atom/Button",
+        "confidence": "cao",
+        "region": "Panel · Danh sách kiến thức",
+        "owner": "Atom/Button",
+        "component": "Atom/Button",
+        "variant": {
+         "Label": "Preview mobile",
+         "Type": "Outlined",
+         "Size": "Small"
+        },
+        "inCode": true
+       }
+      ]
+     },
+     "relations": [],
+     "missingTerms": [],
+     "status": "req-ghi-thieu-nhung-figma-co",
+     "testcases": []
+    },
+    {
+     "id": "CM-HW.A02.04",
+     "name": "them-cau-hoi",
+     "label": "+ Thêm câu hỏi",
+     "spec": "Mở popup Chọn loại câu.",
+     "matches": {
+      "cd-kh-060100": [
+       {
+        "term": "+ Thêm câu hỏi",
+        "figmaId": "5491:346418",
+        "layer": "Nút Thêm từ (dropdown)",
+        "confidence": "cao",
+        "region": "Panel · Danh sách kiến thức",
+        "owner": "Nút Thêm từ (dropdown)",
+        "component": "Atom/Button",
+        "variant": {
+         "Label": "Thêm câu hỏi",
+         "Type": "Outlined Icon",
+         "Size": "Small"
+        },
+        "inCode": true
+       }
+      ],
+      "cd-kh-060200": [
+       {
+        "term": "+ Thêm câu hỏi",
+        "figmaId": "5491:347583",
+        "layer": "Nút Thêm từ (dropdown)",
+        "confidence": "cao",
+        "region": "Panel · Danh sách kiến thức",
+        "owner": "Nút Thêm từ (dropdown)",
+        "component": "Atom/Button",
+        "variant": {
+         "Label": "Thêm câu hỏi",
+         "Type": "Outlined Icon",
+         "Size": "Small"
+        },
+        "inCode": true
+       }
+      ]
+     },
+     "relations": [
+      {
+       "type": "opens",
+       "target": "CM-HW.A05",
+       "raw": "Mở popup Chọn loại câu"
+      }
+     ],
+     "missingTerms": [],
+     "status": "khop",
+     "testcases": []
+    },
+    {
+     "id": "CM-HW.A02.05",
+     "name": "tao-cau-hoi-bang-ai",
+     "label": "Tạo câu hỏi bằng AI",
+     "spec": "Mở popup Generate bài tập bằng AI.",
+     "matches": {
+      "cd-kh-060100": [
+       {
+        "term": "Tạo câu hỏi bằng AI",
+        "figmaId": "5491:346423",
+        "layer": "Atom/Button",
+        "confidence": "cao",
+        "region": "Panel · Danh sách kiến thức",
+        "owner": "Atom/Button",
+        "component": "Atom/Button",
+        "variant": {
+         "Label": "Tạo câu hỏi bằng AI",
+         "Type": "Secondary",
+         "Size": "Small"
+        },
+        "inCode": true
+       }
+      ],
+      "cd-kh-060200": [
+       {
+        "term": "Tạo câu hỏi bằng AI",
+        "figmaId": "5491:347588",
+        "layer": "Atom/Button",
+        "confidence": "cao",
+        "region": "Panel · Danh sách kiến thức",
+        "owner": "Atom/Button",
+        "component": "Atom/Button",
+        "variant": {
+         "Label": "Tạo câu hỏi bằng AI",
+         "Type": "Secondary",
+         "Size": "Small"
+        },
+        "inCode": true
+       }
+      ]
+     },
+     "relations": [
+      {
+       "type": "opens",
+       "target": "CM-HW.A09",
+       "raw": "Mở popup Generate bài tập bằng AI"
+      }
+     ],
+     "missingTerms": [],
+     "status": "khop",
+     "testcases": []
+    },
+    {
+     "id": "CM-HW.A02.06",
+     "name": "soat-loi-bang-ai",
+     "label": "Soát lỗi bằng AI",
+     "spec": "Xem khu vực Soát lỗi bằng AI.",
+     "matches": {
+      "cd-kh-060100": [
+       {
+        "term": "Soát lỗi bằng AI",
+        "figmaId": "5491:346424",
+        "layer": "Atom/Button",
+        "confidence": "cao",
+        "region": "Panel · Danh sách kiến thức",
+        "owner": "Atom/Button",
+        "component": "Atom/Button",
+        "variant": {
+         "Label": "Soát lỗi bằng AI",
+         "Type": "Secondary",
+         "Size": "Small"
+        },
+        "inCode": true
+       }
+      ],
+      "cd-kh-060200": [
+       {
+        "term": "Soát lỗi bằng AI",
+        "figmaId": "5491:347589",
+        "layer": "Atom/Button",
+        "confidence": "cao",
+        "region": "Panel · Danh sách kiến thức",
+        "owner": "Atom/Button",
+        "component": "Atom/Button",
+        "variant": {
+         "Label": "Soát lỗi bằng AI",
+         "Type": "Secondary",
+         "Size": "Small"
+        },
+        "inCode": true
+       }
+      ]
+     },
+     "relations": [
+      {
+       "type": "see",
+       "target": "CM-HW.A08",
+       "raw": "Xem khu vực Soát lỗi bằng AI"
+      }
+     ],
+     "missingTerms": [],
+     "status": "khop",
+     "testcases": []
+    },
+    {
+     "id": "CM-HW.A02.07",
+     "name": "the-tong-so-cau",
+     "label": "Thẻ Tổng số câu",
+     "spec": "Số câu cha của bộ (câu hỏi con tính trong câu cha).",
+     "matches": {
+      "cd-kh-060100": [
+       {
+        "term": "Tổng số câu",
+        "figmaId": "5672:61907",
+        "layer": "Tổng số câu",
+        "confidence": "cao",
+        "region": "Panel · Danh sách kiến thức",
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": true
+       }
+      ],
+      "cd-kh-060200": [
+       {
+        "term": "Tổng số câu",
+        "figmaId": "5672:62003",
+        "layer": "Tổng số câu",
+        "confidence": "cao",
+        "region": "Panel · Danh sách kiến thức",
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": true
+       }
+      ]
+     },
+     "relations": [],
+     "missingTerms": [],
+     "status": "khop",
+     "testcases": []
+    },
+    {
+     "id": "CM-HW.A02.08",
+     "name": "the-thoi-gian-lam-bai",
+     "label": "Thẻ Thời gian làm bài",
+     "spec": "Chỉ bài kiểm tra: thời gian làm bài (phút) lấy từ cấu hình bài kiểm tra ở Học kỳ.",
+     "matches": {
+      "cd-kh-060200": [
+       {
+        "term": "Thời gian làm bài",
+        "figmaId": "5672:62013",
+        "layer": "Thời gian làm bài",
+        "confidence": "cao",
+        "region": "Panel · Danh sách kiến thức",
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": true
+       }
+      ]
+     },
+     "relations": [],
+     "missingTerms": [],
+     "status": "khop-mot-phan",
+     "testcases": [
+      "CM-HW.TC08"
+     ]
+    },
+    {
+     "id": "CM-HW.A02.09",
+     "name": "the-co-cau-theo-dang-cau",
+     "label": "Thẻ Cơ cấu theo dạng câu",
+     "spec": "Số câu theo từng loại câu có trong bộ (vd `Trắc nghiệm 3 · Sắp xếp 1 · Câu hỏi con 1`).",
+     "matches": {
+      "cd-kh-060100": [
+       {
+        "term": "Cơ cấu theo dạng câu",
+        "figmaId": "5672:61917",
+        "layer": "Cơ cấu theo dạng câu",
+        "confidence": "cao",
+        "region": "Panel · Danh sách kiến thức",
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": true
+       }
+      ],
+      "cd-kh-060200": [
+       {
+        "term": "Cơ cấu theo dạng câu",
+        "figmaId": "5672:62018",
+        "layer": "Cơ cấu theo dạng câu",
+        "confidence": "cao",
+        "region": "Panel · Danh sách kiến thức",
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": true
+       }
+      ]
+     },
+     "relations": [],
+     "missingTerms": [],
+     "status": "khop",
+     "testcases": []
+    }
+   ]
+  },
+  {
+   "id": "CM-HW.A03",
+   "name": "bang-cau-hoi",
+   "title": "Bảng câu hỏi",
+   "screens": [
+    "cd-kh-030340",
+    "cd-kh-060100",
+    "cd-kh-060200"
+   ],
+   "syncedScreens": [
+    "cd-kh-060100",
+    "cd-kh-060200"
+   ],
+   "needsDesign": false,
+   "figmaDiffNotes": [
+    "Khác Figma CD-KH-060100 / 060200: bảng chưa có cột `Kiến thức / Kỹ năng`, lọc `Kiến thức / Kỹ năng` (đã có ở CD-KH-030340) và còn lọc `Trạng thái`."
+   ],
+   "items": [
+    {
+     "id": "CM-HW.A03.01",
+     "name": "cot",
+     "label": "Cột",
+     "spec": "`☐`, `STT`, `Câu hỏi` (nội dung + hướng dẫn), `Loại câu`, `Đáp án đúng`, `Kiến thức / Kỹ năng`, `Điểm`, `⋮`.",
+     "matches": {
+      "cd-kh-060100": [
+       {
+        "term": "STT",
+        "figmaId": "5491:346430",
+        "layer": "STT",
+        "confidence": "cao",
+        "region": "Panel · Danh sách kiến thức",
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": true
+       },
+       {
+        "term": "Câu hỏi",
+        "figmaId": "5491:346432",
+        "layer": "Câu",
+        "confidence": "cao",
+        "region": "Panel · Danh sách kiến thức",
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": true
+       },
+       {
+        "term": "Loại câu",
+        "figmaId": "5491:346438",
+        "layer": "Loại câu",
+        "confidence": "cao",
+        "region": "Panel · Danh sách kiến thức",
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": true
+       },
+       {
+        "term": "Đáp án đúng",
+        "figmaId": "5491:346434",
+        "layer": "Phiên âm",
+        "confidence": "cao",
+        "region": "Panel · Danh sách kiến thức",
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": true
+       },
+       {
+        "term": "Kiến thức / Kỹ năng",
+        "figmaId": "5672:61948",
+        "layer": "Kiến thức / Kỹ năng",
+        "confidence": "cao",
+        "region": "Panel · Danh sách kiến thức",
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": true
+       }
+      ],
+      "cd-kh-060200": [
+       {
+        "term": "STT",
+        "figmaId": "5491:347595",
+        "layer": "STT",
+        "confidence": "cao",
+        "region": "Panel · Danh sách kiến thức",
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": true
+       },
+       {
+        "term": "Câu hỏi",
+        "figmaId": "5491:347597",
+        "layer": "Câu",
+        "confidence": "cao",
+        "region": "Panel · Danh sách kiến thức",
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": true
+       },
+       {
+        "term": "Loại câu",
+        "figmaId": "5491:347603",
+        "layer": "Loại câu",
+        "confidence": "cao",
+        "region": "Panel · Danh sách kiến thức",
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": true
+       },
+       {
+        "term": "Đáp án đúng",
+        "figmaId": "5491:347599",
+        "layer": "Phiên âm",
+        "confidence": "cao",
+        "region": "Panel · Danh sách kiến thức",
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": true
+       },
+       {
+        "term": "Kiến thức / Kỹ năng",
+        "figmaId": "5672:62045",
+        "layer": "Kiến thức / Kỹ năng",
+        "confidence": "cao",
+        "region": "Panel · Danh sách kiến thức",
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": true
+       }
+      ]
+     },
+     "relations": [],
+     "missingTerms": [
+      "Điểm"
+     ],
+     "status": "khop",
+     "testcases": []
+    },
+    {
+     "id": "CM-HW.A03.02",
+     "name": "dap-an-dung",
+     "label": "Đáp án đúng",
+     "spec": "Theo loại câu; `Đọc`, `Viết`, `Hình ảnh` hiển thị `Giáo viên chấm`; chưa có đáp án hiển thị `— chưa có đáp án —` màu cam; `Câu hỏi con` hiển thị `N câu hỏi con`.",
+     "matches": {
+      "cd-kh-060100": [
+       {
+        "term": "Đáp án đúng",
+        "figmaId": "5491:346434",
+        "layer": "Phiên âm",
+        "confidence": "cao",
+        "region": "Panel · Danh sách kiến thức",
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": true
+       }
+      ],
+      "cd-kh-060200": [
+       {
+        "term": "Đáp án đúng",
+        "figmaId": "5491:347599",
+        "layer": "Phiên âm",
+        "confidence": "cao",
+        "region": "Panel · Danh sách kiến thức",
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": true
+       }
+      ]
+     },
+     "relations": [],
+     "missingTerms": [],
+     "status": "khop",
+     "testcases": []
+    },
+    {
+     "id": "CM-HW.A03.03",
+     "name": "cau-hoi-con",
+     "label": "Câu hỏi con",
+     "spec": "Dòng cha có mũi tên mở / thu các câu con `7.1`, `7.2`…; mỗi câu con có loại câu, đáp án và menu `⋮` riêng. Điểm câu cha là điểm của cả câu.",
+     "matches": {
+      "cd-kh-060100": [
+       {
+        "term": "Câu hỏi con",
+        "figmaId": "5491:346574",
+        "layer": "Atom/Tag",
+        "confidence": "cao",
+        "region": "Panel · Danh sách kiến thức",
+        "owner": "Atom/Tag",
+        "component": "Atom/Tag",
+        "variant": {
+         "Close": false,
+         "Label": "Câu hỏi con",
+         "Color": "Gray",
+         "Size": "Small",
+         "Dropdown": "No",
+         "Shape": "Bo góc"
+        },
+        "inCode": true
+       }
+      ],
+      "cd-kh-060200": [
+       {
+        "term": "Câu hỏi con",
+        "figmaId": "5491:347739",
+        "layer": "Atom/Tag",
+        "confidence": "cao",
+        "region": "Panel · Danh sách kiến thức",
+        "owner": "Atom/Tag",
+        "component": "Atom/Tag",
+        "variant": {
+         "Close": false,
+         "Label": "Câu hỏi con",
+         "Color": "Gray",
+         "Size": "Small",
+         "Dropdown": "No",
+         "Shape": "Bo góc"
+        },
+        "inCode": true
+       }
+      ]
+     },
+     "relations": [],
+     "missingTerms": [
+      "7.1"
+     ],
+     "status": "khop",
+     "testcases": [
+      "CM-HW.TC09"
+     ]
+    },
+    {
+     "id": "CM-HW.A03.04",
+     "name": "tag-ai",
+     "label": "Tag AI",
+     "spec": "Câu tạo bằng AI có tag `AI` cạnh nội dung; mất khi CD sửa và lưu câu.",
+     "matches": {},
+     "relations": [],
+     "missingTerms": [
+      "AI"
+     ],
+     "status": "chua-thay-tren-figma",
+     "testcases": []
+    },
+    {
+     "id": "CM-HW.A03.05",
+     "name": "o-tim-cau-hoi",
+     "label": "Ô Tìm câu hỏi…",
+     "spec": "Theo nội dung và hướng dẫn câu hỏi.",
+     "matches": {
+      "cd-kh-060100": [
+       {
+        "term": "Tìm câu hỏi…",
+        "figmaId": "5491:346420",
+        "layer": "Atom/Input",
+        "confidence": "cao",
+        "region": "Panel · Danh sách kiến thức",
+        "owner": "Atom/Input",
+        "component": "Atom/Input",
+        "variant": {
+         "Loại": "Gift code",
+         "Text": "Tìm câu hỏi…",
+         "State": "Search",
+         "Kiểu": "S"
+        },
+        "inCode": true
+       }
+      ],
+      "cd-kh-060200": [
+       {
+        "term": "Tìm câu hỏi…",
+        "figmaId": "5491:347585",
+        "layer": "Atom/Input",
+        "confidence": "cao",
+        "region": "Panel · Danh sách kiến thức",
+        "owner": "Atom/Input",
+        "component": "Atom/Input",
+        "variant": {
+         "Loại": "Gift code",
+         "Text": "Tìm câu hỏi…",
+         "State": "Search",
+         "Kiểu": "S"
+        },
+        "inCode": true
+       }
+      ]
+     },
+     "relations": [],
+     "missingTerms": [],
+     "status": "khop",
+     "testcases": []
+    },
+    {
+     "id": "CM-HW.A03.06",
+     "name": "loc-loai-cau",
+     "label": "Lọc Loại câu",
+     "spec": "Chọn nhiều trong 8 loại; mặc định `Tất cả`.",
+     "matches": {
+      "cd-kh-060100": [
+       {
+        "term": "Loại câu",
+        "figmaId": "5491:346421",
+        "layer": "DD/Molecule/Trigger",
+        "confidence": "cao",
+        "region": "Panel · Danh sách kiến thức",
+        "owner": "DD/Molecule/Trigger",
+        "component": "DD/Molecule/Trigger",
+        "variant": {
+         "Leading Icon": "2015:30465",
+         "Placeholder": "Chọn...",
+         "Count": false,
+         "Chevron": true,
+         "Clear": false,
+         "Leading": false,
+         "Count Value": "1",
+         "Value": "Loại câu: Tất cả",
+         "Size": "S",
+         "State": "Default",
+         "Content": "Value"
+        },
+        "inCode": true
+       }
+      ],
+      "cd-kh-060200": [
+       {
+        "term": "Loại câu",
+        "figmaId": "5491:347586",
+        "layer": "DD/Molecule/Trigger",
+        "confidence": "cao",
+        "region": "Panel · Danh sách kiến thức",
+        "owner": "DD/Molecule/Trigger",
+        "component": "DD/Molecule/Trigger",
+        "variant": {
+         "Leading Icon": "2015:30465",
+         "Placeholder": "Chọn...",
+         "Count": false,
+         "Chevron": true,
+         "Clear": false,
+         "Leading": false,
+         "Count Value": "1",
+         "Value": "Loại câu: Tất cả",
+         "Size": "S",
+         "State": "Default",
+         "Content": "Value"
+        },
+        "inCode": true
+       }
+      ]
+     },
+     "relations": [],
+     "missingTerms": [],
+     "status": "khop",
+     "testcases": [
+      "CM-HW.TC10"
+     ]
+    },
+    {
+     "id": "CM-HW.A03.07",
+     "name": "loc-kien-thuc-ky-nang",
+     "label": "Lọc Kiến thức / Kỹ năng",
+     "spec": "Chọn nhiều cụm kiến thức của khoá hoặc kỹ năng Nghe, Đọc, Viết, Nói; mặc định `Tất cả`.",
+     "matches": {
+      "cd-kh-060100": [
+       {
+        "term": "Kiến thức / Kỹ năng",
+        "figmaId": "5491:346422",
+        "layer": "DD/Molecule/Trigger",
+        "confidence": "cao",
+        "region": "Panel · Danh sách kiến thức",
+        "owner": "DD/Molecule/Trigger",
+        "component": "DD/Molecule/Trigger",
+        "variant": {
+         "Leading Icon": "2015:30465",
+         "Placeholder": "Chọn...",
+         "Count": false,
+         "Chevron": true,
+         "Clear": false,
+         "Leading": false,
+         "Count Value": "1",
+         "Value": "Kiến thức / Kỹ năng: Tất cả",
+         "Size": "S",
+         "State": "Default",
+         "Content": "Value"
+        },
+        "inCode": true
+       }
+      ],
+      "cd-kh-060200": [
+       {
+        "term": "Kiến thức / Kỹ năng",
+        "figmaId": "5491:347587",
+        "layer": "DD/Molecule/Trigger",
+        "confidence": "cao",
+        "region": "Panel · Danh sách kiến thức",
+        "owner": "DD/Molecule/Trigger",
+        "component": "DD/Molecule/Trigger",
+        "variant": {
+         "Leading Icon": "2015:30465",
+         "Placeholder": "Chọn...",
+         "Count": false,
+         "Chevron": true,
+         "Clear": false,
+         "Leading": false,
+         "Count Value": "1",
+         "Value": "Kiến thức / Kỹ năng: Tất cả",
+         "Size": "S",
+         "State": "Default",
+         "Content": "Value"
+        },
+        "inCode": true
+       }
+      ]
+     },
+     "relations": [],
+     "missingTerms": [],
+     "status": "khop",
+     "testcases": []
+    },
+    {
+     "id": "CM-HW.A03.08",
+     "name": "checkbox",
+     "label": "Checkbox",
+     "spec": "Chọn nhiều câu để `Xoá` hàng loạt; checkbox tiêu đề chọn tất cả câu đang hiển thị.",
+     "matches": {
+      "cd-kh-060100": [
+       {
+        "term": "Checkbox",
+        "figmaId": "5491:346428",
+        "layer": "Checkbox",
+        "confidence": "cao",
+        "region": "Panel · Danh sách kiến thức",
+        "owner": "Checkbox",
+        "component": "Checkbox",
+        "variant": {
+         "Checked": "No",
+         "Size": "16",
+         "Disabled": "No"
+        },
+        "inCode": true
+       }
+      ],
+      "cd-kh-060200": [
+       {
+        "term": "Checkbox",
+        "figmaId": "5491:347593",
+        "layer": "Checkbox",
+        "confidence": "cao",
+        "region": "Panel · Danh sách kiến thức",
+        "owner": "Checkbox",
+        "component": "Checkbox",
+        "variant": {
+         "Checked": "No",
+         "Size": "16",
+         "Disabled": "No"
+        },
+        "inCode": true
+       }
+      ]
+     },
+     "relations": [],
+     "missingTerms": [
+      "Xoá"
+     ],
+     "status": "khop",
+     "testcases": []
+    },
+    {
+     "id": "CM-HW.A03.09",
+     "name": "menu",
+     "label": "Menu ⋮",
+     "spec": "`Sửa` (mở popup soạn câu), `Xoá` (popup xác nhận).",
+     "matches": {},
+     "relations": [
+      {
+       "type": "opens",
+       "target": "CM-HW.A06",
+       "raw": "mở popup soạn câu"
+      }
+     ],
+     "missingTerms": [
+      "⋮"
+     ],
+     "status": "chua-thay-tren-figma",
+     "testcases": []
+    },
+    {
+     "id": "CM-HW.A03.10",
+     "name": "nhap-nhanh-cuoi-bang",
+     "label": "Nhập nhanh cuối bảng",
+     "spec": "Ô `Nhập nhanh câu hỏi — nhấn Enter để thêm vào bộ câu hỏi`; Enter mở popup Chọn loại câu với Nội dung câu hỏi điền sẵn chữ vừa nhập.",
+     "matches": {
+      "cd-kh-060100": [
+       {
+        "term": "Nhập nhanh câu hỏi — nhấn Enter để thêm vào bộ câu hỏi",
+        "figmaId": "5491:346577",
+        "layer": "Molecule/Add New Bar",
+        "confidence": "cao",
+        "region": "Panel · Danh sách kiến thức",
+        "owner": "Molecule/Add New Bar",
+        "component": "Molecule/Add New Bar",
+        "variant": {
+         "Icon trái": false,
+         "Nút": "1075:1478",
+         "Placeholder": "Nhập nhanh câu hỏi — nhấn Enter để thêm vào bộ câu hỏi",
+         "Type": "Box",
+         "Size": "M",
+         "State": "Default"
+        },
+        "inCode": true
+       }
+      ],
+      "cd-kh-060200": [
+       {
+        "term": "Nhập nhanh câu hỏi — nhấn Enter để thêm vào bộ câu hỏi",
+        "figmaId": "5491:347742",
+        "layer": "Molecule/Add New Bar",
+        "confidence": "cao",
+        "region": "Panel · Danh sách kiến thức",
+        "owner": "Molecule/Add New Bar",
+        "component": "Molecule/Add New Bar",
+        "variant": {
+         "Icon trái": false,
+         "Nút": "1075:1478",
+         "Placeholder": "Nhập nhanh câu hỏi — nhấn Enter để thêm vào bộ câu hỏi",
+         "Type": "Box",
+         "Size": "M",
+         "State": "Default"
+        },
+        "inCode": true
+       }
+      ]
+     },
+     "relations": [
+      {
+       "type": "opens",
+       "target": "CM-HW.A05",
+       "raw": "mở popup Chọn loại câu với Nội dung câu hỏi điền sẵn chữ vừa nhập"
+      }
+     ],
+     "missingTerms": [
+      "Nhập nhanh cuối bảng"
+     ],
+     "status": "khop",
+     "testcases": []
+    },
+    {
+     "id": "CM-HW.A03.11",
+     "name": "phan-trang",
+     "label": "Phân trang",
+     "spec": "50 câu/trang; `Hiển thị 1–50 trong N câu hỏi`; nút trang trước / sau.",
+     "matches": {
+      "cd-kh-060100": [
+       {
+        "term": "Phân trang",
+        "figmaId": "5491:346579",
+        "layer": "Footer · Phân trang",
+        "confidence": "cao",
+        "region": "Panel · Danh sách kiến thức",
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": true
+       }
+      ],
+      "cd-kh-060200": [
+       {
+        "term": "Phân trang",
+        "figmaId": "5491:347744",
+        "layer": "Footer · Phân trang",
+        "confidence": "cao",
+        "region": "Panel · Danh sách kiến thức",
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": true
+       }
+      ]
+     },
+     "relations": [],
+     "missingTerms": [
+      "Hiển thị 1–50 trong N câu hỏi"
+     ],
+     "status": "khop",
+     "testcases": []
+    }
+   ]
+  },
+  {
+   "id": "CM-HW.A04",
+   "name": "bai-chua-co-cau-hoi",
+   "title": "Bài chưa có câu hỏi",
+   "screens": [
+    "cd-kh-060130"
+   ],
+   "syncedScreens": [
+    "cd-kh-060130"
+   ],
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "CM-HW.A04.01",
+     "name": "tieu-de",
+     "label": "Tiêu đề",
+     "spec": "`BTVN · <tên bài>` và tag `0 câu hỏi`.",
+     "matches": {
+      "cd-kh-060130": [
+       {
+        "term": "Tiêu đề",
+        "figmaId": "5491:348903",
+        "layer": "Tiêu đề",
+        "confidence": "cao",
+        "region": "Panel · Danh sách kiến thức",
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": true
+       }
+      ]
+     },
+     "relations": [],
+     "missingTerms": [
+      "BTVN · <tên bài>"
+     ],
+     "status": "khop",
+     "testcases": []
+    },
+    {
+     "id": "CM-HW.A04.02",
+     "name": "them-cau-hoi",
+     "label": "Thêm câu hỏi",
+     "spec": "Mở popup Chọn loại câu.",
+     "matches": {
+      "cd-kh-060130": [
+       {
+        "term": "Thêm câu hỏi",
+        "figmaId": "5491:348908",
+        "layer": "Nút Thêm từ (dropdown)",
+        "confidence": "cao",
+        "region": "Panel · Danh sách kiến thức",
+        "owner": "Nút Thêm từ (dropdown)",
+        "component": "Atom/Button",
+        "variant": {
+         "Label": "Thêm câu hỏi",
+         "Type": "Outlined Icon",
+         "Size": "Small"
+        },
+        "inCode": true
+       }
+      ]
+     },
+     "relations": [
+      {
+       "type": "opens",
+       "target": "CM-HW.A05",
+       "raw": "Mở popup Chọn loại câu"
+      }
+     ],
+     "missingTerms": [],
+     "status": "khop",
+     "testcases": []
+    },
+    {
+     "id": "CM-HW.A04.03",
+     "name": "tao-cau-hoi-bang-ai",
+     "label": "Tạo câu hỏi bằng AI",
+     "spec": "Mở popup Generate.",
+     "matches": {
+      "cd-kh-060130": [
+       {
+        "term": "Tạo câu hỏi bằng AI",
+        "figmaId": "5491:349773",
+        "layer": "Atom/Button",
+        "confidence": "cao",
+        "region": "Panel · Danh sách kiến thức",
+        "owner": "Atom/Button",
+        "component": "Atom/Button",
+        "variant": {
+         "Label": "Tạo câu hỏi bằng AI",
+         "Type": "Secondary",
+         "Size": "Medium"
+        },
+        "inCode": true
+       }
+      ]
+     },
+     "relations": [
+      {
+       "type": "opens",
+       "target": "CM-HW.A09",
+       "raw": "Mở popup Generate"
+      }
+     ],
+     "missingTerms": [],
+     "status": "khop",
+     "testcases": []
+    },
+    {
+     "id": "CM-HW.A04.04",
+     "name": "import-excel",
+     "label": "Import Excel",
+     "spec": "Vẫn dùng được khi bài chưa có câu.",
+     "matches": {
+      "cd-kh-060130": [
+       {
+        "term": "Import Excel",
+        "figmaId": "5672:62094",
+        "layer": "Nút Import Excel",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Nút Import Excel",
+        "component": "Atom/Button",
+        "variant": {
+         "Label": "Import Excel",
+         "Type": "Outlined",
+         "Size": "Small"
+        },
+        "inCode": true
+       }
+      ]
+     },
+     "relations": [],
+     "missingTerms": [],
+     "status": "khop",
+     "testcases": []
+    }
+   ]
+  },
+  {
+   "id": "CM-HW.A05",
+   "name": "popup-chon-loai-cau",
+   "title": "Popup Chọn loại câu",
+   "screens": [
+    "cd-kh-060110"
+   ],
+   "syncedScreens": [
+    "cd-kh-060110"
+   ],
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "CM-HW.A05.01",
+     "name": "trac-nghiem",
+     "label": "Trắc nghiệm",
+     "spec": "App chấm | 1 (từ vựng), 5 (câu), 11 (hình ảnh)",
+     "matches": {
+      "cd-kh-060110": [
+       {
+        "term": "Trắc nghiệm",
+        "figmaId": "5491:348733",
+        "layer": "Trắc nghiệm",
+        "confidence": "cao",
+        "region": "Hàng loại câu 1",
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "missingTerms": [],
+     "status": "khop",
+     "testcases": []
+    },
+    {
+     "id": "CM-HW.A05.02",
+     "name": "sap-xep",
+     "label": "Sắp xếp",
+     "spec": "App chấm | 7",
+     "matches": {
+      "cd-kh-060110": [
+       {
+        "term": "Sắp xếp",
+        "figmaId": "5491:348746",
+        "layer": "Sắp xếp",
+        "confidence": "cao",
+        "region": "Hàng loại câu 1",
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "missingTerms": [],
+     "status": "khop",
+     "testcases": [
+      "CM-HW.TC15"
+     ]
+    },
+    {
+     "id": "CM-HW.A05.03",
+     "name": "noi-tu",
+     "label": "Nối từ",
+     "spec": "App chấm | 8",
+     "matches": {
+      "cd-kh-060110": [
+       {
+        "term": "Nối từ",
+        "figmaId": "5491:348754",
+        "layer": "Nối từ",
+        "confidence": "cao",
+        "region": "Hàng loại câu 1",
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "missingTerms": [],
+     "status": "khop",
+     "testcases": []
+    },
+    {
+     "id": "CM-HW.A05.04",
+     "name": "noi",
+     "label": "Nói",
+     "spec": "App chấm | 22",
+     "matches": {
+      "cd-kh-060110": [
+       {
+        "term": "Nói",
+        "figmaId": "5491:348763",
+        "layer": "Nói",
+        "confidence": "cao",
+        "region": "Hàng loại câu 1",
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "missingTerms": [],
+     "status": "khop",
+     "testcases": []
+    },
+    {
+     "id": "CM-HW.A05.05",
+     "name": "doc",
+     "label": "Đọc",
+     "spec": "GV chấm | 3, 10",
+     "matches": {
+      "cd-kh-060110": [
+       {
+        "term": "Đọc",
+        "figmaId": "5491:348772",
+        "layer": "Đọc",
+        "confidence": "cao",
+        "region": "Hàng loại câu 2",
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "missingTerms": [],
+     "status": "khop",
+     "testcases": []
+    },
+    {
+     "id": "CM-HW.A05.06",
+     "name": "viet",
+     "label": "Viết",
+     "spec": "GV chấm | 4, 44, 6",
+     "matches": {
+      "cd-kh-060110": [
+       {
+        "term": "Viết",
+        "figmaId": "5491:348780",
+        "layer": "Viết",
+        "confidence": "cao",
+        "region": "Hàng loại câu 2",
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "missingTerms": [],
+     "status": "khop",
+     "testcases": []
+    },
+    {
+     "id": "CM-HW.A05.07",
+     "name": "hinh-anh",
+     "label": "Hình ảnh",
+     "spec": "GV chấm | 2",
+     "matches": {
+      "cd-kh-060110": [
+       {
+        "term": "Hình ảnh",
+        "figmaId": "5491:348788",
+        "layer": "Hình ảnh",
+        "confidence": "cao",
+        "region": "Hàng loại câu 2",
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "missingTerms": [],
+     "status": "khop",
+     "testcases": []
+    },
+    {
+     "id": "CM-HW.A05.08",
+     "name": "cau-hoi-con",
+     "label": "Câu hỏi con",
+     "spec": "Theo từng câu con | Câu có danh sách câu con",
+     "matches": {
+      "cd-kh-060110": [
+       {
+        "term": "Câu hỏi con",
+        "figmaId": "5491:348798",
+        "layer": "Câu hỏi con",
+        "confidence": "cao",
+        "region": "Hàng loại câu 2",
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "missingTerms": [],
+     "status": "khop",
+     "testcases": []
+    }
+   ]
+  },
+  {
+   "id": "CM-HW.A06",
+   "name": "popup-soan-cau-hoi",
+   "title": "Popup Soạn câu hỏi",
+   "screens": [
+    "cd-kh-060120",
+    "cd-kh-060121",
+    "cd-kh-060122",
+    "cd-kh-060123",
+    "cd-kh-060124",
+    "cd-kh-060125"
+   ],
+   "syncedScreens": [
+    "cd-kh-060120",
+    "cd-kh-060121",
+    "cd-kh-060122",
+    "cd-kh-060123",
+    "cd-kh-060124",
+    "cd-kh-060125"
+   ],
+   "needsDesign": true,
+   "figmaDiffNotes": [
+    "Khác Figma CD-KH-060120: popup chưa có field `Số câu` và `Kiến thức / Kỹ năng`; Figma mới có phần đáp án của Trắc nghiệm."
+   ],
+   "items": [
+    {
+     "id": "CM-HW.A06.01",
+     "name": "tieu-de",
+     "label": "Tiêu đề",
+     "spec": "`Soạn câu hỏi · <loại câu>`; dòng phụ `BTVN · <tên bài> · Câu <số câu>` hoặc `<tên bài kiểm tra> · Câu <số câu>`.",
+     "matches": {
+      "cd-kh-060120": [
+       {
+        "term": "Tiêu đề",
+        "figmaId": "I5491:348806;2514:153353",
+        "layer": "Tiêu đề",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Popup/Header",
+        "component": "Popup/Header",
+        "variant": {
+         "Close": "No",
+         "Description": "Yes",
+         "Icon": "No"
+        },
+        "inCode": false
+       }
+      ],
+      "cd-kh-060121": [
+       {
+        "term": "Tiêu đề",
+        "figmaId": "I5672:74621;2514:153353",
+        "layer": "Tiêu đề",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Popup/Header",
+        "component": "Popup/Header",
+        "variant": {
+         "Close": "No",
+         "Description": "Yes",
+         "Icon": "No"
+        },
+        "inCode": false
+       }
+      ],
+      "cd-kh-060122": [
+       {
+        "term": "Tiêu đề",
+        "figmaId": "I5672:74753;2514:153353",
+        "layer": "Tiêu đề",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Popup/Header",
+        "component": "Popup/Header",
+        "variant": {
+         "Close": "No",
+         "Description": "Yes",
+         "Icon": "No"
+        },
+        "inCode": false
+       }
+      ],
+      "cd-kh-060123": [
+       {
+        "term": "Tiêu đề",
+        "figmaId": "I5672:74888;2514:153353",
+        "layer": "Tiêu đề",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Popup/Header",
+        "component": "Popup/Header",
+        "variant": {
+         "Close": "No",
+         "Description": "Yes",
+         "Icon": "No"
+        },
+        "inCode": false
+       }
+      ],
+      "cd-kh-060124": [
+       {
+        "term": "Tiêu đề",
+        "figmaId": "I5672:75019;2514:153353",
+        "layer": "Tiêu đề",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Popup/Header",
+        "component": "Popup/Header",
+        "variant": {
+         "Close": "No",
+         "Description": "Yes",
+         "Icon": "No"
+        },
+        "inCode": false
+       }
+      ],
+      "cd-kh-060125": [
+       {
+        "term": "Tiêu đề",
+        "figmaId": "I5672:75136;2514:153353",
+        "layer": "Tiêu đề",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Popup/Header",
+        "component": "Popup/Header",
+        "variant": {
+         "Close": "No",
+         "Description": "Yes",
+         "Icon": "No"
+        },
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "missingTerms": [
+      "Soạn câu hỏi · <loại câu>"
+     ],
+     "status": "khop",
+     "testcases": []
+    },
+    {
+     "id": "CM-HW.A06.02",
+     "name": "so-cau",
+     "label": "Số câu ",
+     "spec": "Bắt buộc; số thứ tự câu trong bộ, số nguyên ≥ 1. Thêm mới mặc định là câu tiếp theo cuối bộ; nhập số đã có thì chèn vào vị trí đó, các câu sau dồn xuống.",
+     "matches": {
+      "cd-kh-060120": [
+       {
+        "term": "Số câu",
+        "figmaId": "5672:62120",
+        "layer": "Atom/Label",
+        "confidence": "cao",
+        "region": "Hàng · Số câu & Loại câu",
+        "owner": "Atom/Label",
+        "component": "Atom/Label",
+        "variant": {
+         "Icon": "738:25432",
+         "Required": true,
+         "Label": "Số câu",
+         "Có icon": "No"
+        },
+        "inCode": false
+       }
+      ],
+      "cd-kh-060121": [
+       {
+        "term": "Số câu",
+        "figmaId": "5672:74625",
+        "layer": "Atom/Label",
+        "confidence": "cao",
+        "region": "Hàng · Số câu & Loại câu",
+        "owner": "Atom/Label",
+        "component": "Atom/Label",
+        "variant": {
+         "Icon": "738:25432",
+         "Required": true,
+         "Label": "Số câu",
+         "Có icon": "No"
+        },
+        "inCode": false
+       }
+      ],
+      "cd-kh-060122": [
+       {
+        "term": "Số câu",
+        "figmaId": "5672:74757",
+        "layer": "Atom/Label",
+        "confidence": "cao",
+        "region": "Hàng · Số câu & Loại câu",
+        "owner": "Atom/Label",
+        "component": "Atom/Label",
+        "variant": {
+         "Icon": "738:25432",
+         "Required": true,
+         "Label": "Số câu",
+         "Có icon": "No"
+        },
+        "inCode": false
+       }
+      ],
+      "cd-kh-060123": [
+       {
+        "term": "Số câu",
+        "figmaId": "5672:74892",
+        "layer": "Atom/Label",
+        "confidence": "cao",
+        "region": "Hàng · Số câu & Loại câu",
+        "owner": "Atom/Label",
+        "component": "Atom/Label",
+        "variant": {
+         "Icon": "738:25432",
+         "Required": true,
+         "Label": "Số câu",
+         "Có icon": "No"
+        },
+        "inCode": false
+       }
+      ],
+      "cd-kh-060124": [
+       {
+        "term": "Số câu",
+        "figmaId": "5672:75023",
+        "layer": "Atom/Label",
+        "confidence": "cao",
+        "region": "Hàng · Số câu & Loại câu",
+        "owner": "Atom/Label",
+        "component": "Atom/Label",
+        "variant": {
+         "Icon": "738:25432",
+         "Required": true,
+         "Label": "Số câu",
+         "Có icon": "No"
+        },
+        "inCode": false
+       }
+      ],
+      "cd-kh-060125": [
+       {
+        "term": "Số câu",
+        "figmaId": "5672:75140",
+        "layer": "Atom/Label",
+        "confidence": "cao",
+        "region": "Hàng · Số câu & Loại câu",
+        "owner": "Atom/Label",
+        "component": "Atom/Label",
+        "variant": {
+         "Icon": "738:25432",
+         "Required": true,
+         "Label": "Số câu",
+         "Có icon": "No"
+        },
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "missingTerms": [],
+     "status": "khop",
+     "testcases": [
+      "CM-HW.TC18",
+      "CM-HW.TC19"
+     ]
+    },
+    {
+     "id": "CM-HW.A06.03",
+     "name": "loai-cau",
+     "label": "Loại câu ",
+     "spec": "Bắt buộc; lấy từ popup Chọn loại câu, khoá không sửa (icon khoá). Muốn đổi loại thì tạo câu mới.",
+     "matches": {
+      "cd-kh-060120": [
+       {
+        "term": "Loại câu",
+        "figmaId": "5491:348822",
+        "layer": "Atom/Label",
+        "confidence": "cao",
+        "region": "Hàng · Số câu & Loại câu",
+        "owner": "Atom/Label",
+        "component": "Atom/Label",
+        "variant": {
+         "Icon": "738:25432",
+         "Required": true,
+         "Label": "Loại câu",
+         "Có icon": "No"
+        },
+        "inCode": false
+       }
+      ],
+      "cd-kh-060121": [
+       {
+        "term": "Loại câu",
+        "figmaId": "5672:74628",
+        "layer": "Atom/Label",
+        "confidence": "cao",
+        "region": "Hàng · Số câu & Loại câu",
+        "owner": "Atom/Label",
+        "component": "Atom/Label",
+        "variant": {
+         "Icon": "738:25432",
+         "Required": true,
+         "Label": "Loại câu",
+         "Có icon": "No"
+        },
+        "inCode": false
+       }
+      ],
+      "cd-kh-060122": [
+       {
+        "term": "Loại câu",
+        "figmaId": "5672:74760",
+        "layer": "Atom/Label",
+        "confidence": "cao",
+        "region": "Hàng · Số câu & Loại câu",
+        "owner": "Atom/Label",
+        "component": "Atom/Label",
+        "variant": {
+         "Icon": "738:25432",
+         "Required": true,
+         "Label": "Loại câu",
+         "Có icon": "No"
+        },
+        "inCode": false
+       }
+      ],
+      "cd-kh-060123": [
+       {
+        "term": "Loại câu",
+        "figmaId": "5672:74895",
+        "layer": "Atom/Label",
+        "confidence": "cao",
+        "region": "Hàng · Số câu & Loại câu",
+        "owner": "Atom/Label",
+        "component": "Atom/Label",
+        "variant": {
+         "Icon": "738:25432",
+         "Required": true,
+         "Label": "Loại câu",
+         "Có icon": "No"
+        },
+        "inCode": false
+       }
+      ],
+      "cd-kh-060124": [
+       {
+        "term": "Loại câu",
+        "figmaId": "5672:75026",
+        "layer": "Atom/Label",
+        "confidence": "cao",
+        "region": "Hàng · Số câu & Loại câu",
+        "owner": "Atom/Label",
+        "component": "Atom/Label",
+        "variant": {
+         "Icon": "738:25432",
+         "Required": true,
+         "Label": "Loại câu",
+         "Có icon": "No"
+        },
+        "inCode": false
+       }
+      ],
+      "cd-kh-060125": [
+       {
+        "term": "Loại câu",
+        "figmaId": "5672:75143",
+        "layer": "Atom/Label",
+        "confidence": "cao",
+        "region": "Hàng · Số câu & Loại câu",
+        "owner": "Atom/Label",
+        "component": "Atom/Label",
+        "variant": {
+         "Icon": "738:25432",
+         "Required": true,
+         "Label": "Loại câu",
+         "Có icon": "No"
+        },
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "missingTerms": [],
+     "status": "khop",
+     "testcases": []
+    },
+    {
+     "id": "CM-HW.A06.04",
+     "name": "kien-thuc-ky-nang",
+     "label": "Kiến thức / Kỹ năng ",
+     "spec": "Bắt buộc; chọn **một** cụm kiến thức của khoá học (vd `Cụm 01. Chào hỏi`) **hoặc** một kỹ năng `Nghe`, `Đọc`, `Viết`, `Nói`.",
+     "matches": {
+      "cd-kh-060120": [
+       {
+        "term": "Kiến thức / Kỹ năng",
+        "figmaId": "5672:62126",
+        "layer": "Atom/Label",
+        "confidence": "cao",
+        "region": "Field · Kiến thức / Kỹ năng",
+        "owner": "Atom/Label",
+        "component": "Atom/Label",
+        "variant": {
+         "Icon": "738:25432",
+         "Required": true,
+         "Label": "Kiến thức / Kỹ năng",
+         "Có icon": "No"
+        },
+        "inCode": false
+       }
+      ],
+      "cd-kh-060121": [
+       {
+        "term": "Kiến thức / Kỹ năng",
+        "figmaId": "5672:74634",
+        "layer": "Atom/Label",
+        "confidence": "cao",
+        "region": "Field · Kiến thức / Kỹ năng",
+        "owner": "Atom/Label",
+        "component": "Atom/Label",
+        "variant": {
+         "Icon": "738:25432",
+         "Required": true,
+         "Label": "Kiến thức / Kỹ năng",
+         "Có icon": "No"
+        },
+        "inCode": false
+       }
+      ],
+      "cd-kh-060122": [
+       {
+        "term": "Kiến thức / Kỹ năng",
+        "figmaId": "5672:74766",
+        "layer": "Atom/Label",
+        "confidence": "cao",
+        "region": "Field · Kiến thức / Kỹ năng",
+        "owner": "Atom/Label",
+        "component": "Atom/Label",
+        "variant": {
+         "Icon": "738:25432",
+         "Required": true,
+         "Label": "Kiến thức / Kỹ năng",
+         "Có icon": "No"
+        },
+        "inCode": false
+       }
+      ],
+      "cd-kh-060123": [
+       {
+        "term": "Kiến thức / Kỹ năng",
+        "figmaId": "5672:74901",
+        "layer": "Atom/Label",
+        "confidence": "cao",
+        "region": "Field · Kiến thức / Kỹ năng",
+        "owner": "Atom/Label",
+        "component": "Atom/Label",
+        "variant": {
+         "Icon": "738:25432",
+         "Required": true,
+         "Label": "Kiến thức / Kỹ năng",
+         "Có icon": "No"
+        },
+        "inCode": false
+       }
+      ],
+      "cd-kh-060124": [
+       {
+        "term": "Kiến thức / Kỹ năng",
+        "figmaId": "5672:75032",
+        "layer": "Atom/Label",
+        "confidence": "cao",
+        "region": "Field · Kiến thức / Kỹ năng",
+        "owner": "Atom/Label",
+        "component": "Atom/Label",
+        "variant": {
+         "Icon": "738:25432",
+         "Required": true,
+         "Label": "Kiến thức / Kỹ năng",
+         "Có icon": "No"
+        },
+        "inCode": false
+       }
+      ],
+      "cd-kh-060125": [
+       {
+        "term": "Kiến thức / Kỹ năng",
+        "figmaId": "5672:75149",
+        "layer": "Atom/Label",
+        "confidence": "cao",
+        "region": "Field · Kiến thức / Kỹ năng",
+        "owner": "Atom/Label",
+        "component": "Atom/Label",
+        "variant": {
+         "Icon": "738:25432",
+         "Required": true,
+         "Label": "Kiến thức / Kỹ năng",
+         "Có icon": "No"
+        },
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "missingTerms": [],
+     "status": "khop",
+     "testcases": [
+      "CM-HW.TC18"
+     ]
+    },
+    {
+     "id": "CM-HW.A06.05",
+     "name": "huong-dan",
+     "label": "Hướng dẫn",
+     "spec": "Không bắt buộc; lời dặn hiển thị trên câu (vd `Chọn nghĩa đúng của từ`).",
+     "matches": {
+      "cd-kh-060120": [
+       {
+        "term": "Hướng dẫn",
+        "figmaId": "5491:348840",
+        "layer": "Atom/Label",
+        "confidence": "cao",
+        "region": "Field · Hướng dẫn",
+        "owner": "Atom/Label",
+        "component": "Atom/Label",
+        "variant": {
+         "Icon": "738:25432",
+         "Required": false,
+         "Label": "Hướng dẫn",
+         "Có icon": "No"
+        },
+        "inCode": false
+       }
+      ],
+      "cd-kh-060121": [
+       {
+        "term": "Hướng dẫn",
+        "figmaId": "5672:74638",
+        "layer": "Atom/Label",
+        "confidence": "cao",
+        "region": "Field · Hướng dẫn",
+        "owner": "Atom/Label",
+        "component": "Atom/Label",
+        "variant": {
+         "Icon": "738:25432",
+         "Required": false,
+         "Label": "Hướng dẫn",
+         "Có icon": "No"
+        },
+        "inCode": false
+       }
+      ],
+      "cd-kh-060122": [
+       {
+        "term": "Hướng dẫn",
+        "figmaId": "5672:74770",
+        "layer": "Atom/Label",
+        "confidence": "cao",
+        "region": "Field · Hướng dẫn",
+        "owner": "Atom/Label",
+        "component": "Atom/Label",
+        "variant": {
+         "Icon": "738:25432",
+         "Required": false,
+         "Label": "Hướng dẫn",
+         "Có icon": "No"
+        },
+        "inCode": false
+       }
+      ],
+      "cd-kh-060123": [
+       {
+        "term": "Hướng dẫn",
+        "figmaId": "5672:74905",
+        "layer": "Atom/Label",
+        "confidence": "cao",
+        "region": "Field · Hướng dẫn",
+        "owner": "Atom/Label",
+        "component": "Atom/Label",
+        "variant": {
+         "Icon": "738:25432",
+         "Required": false,
+         "Label": "Hướng dẫn",
+         "Có icon": "No"
+        },
+        "inCode": false
+       }
+      ],
+      "cd-kh-060124": [
+       {
+        "term": "Hướng dẫn",
+        "figmaId": "5672:75036",
+        "layer": "Atom/Label",
+        "confidence": "cao",
+        "region": "Field · Hướng dẫn",
+        "owner": "Atom/Label",
+        "component": "Atom/Label",
+        "variant": {
+         "Icon": "738:25432",
+         "Required": false,
+         "Label": "Hướng dẫn",
+         "Có icon": "No"
+        },
+        "inCode": false
+       }
+      ],
+      "cd-kh-060125": [
+       {
+        "term": "Hướng dẫn",
+        "figmaId": "5672:75153",
+        "layer": "Atom/Label",
+        "confidence": "cao",
+        "region": "Field · Hướng dẫn",
+        "owner": "Atom/Label",
+        "component": "Atom/Label",
+        "variant": {
+         "Icon": "738:25432",
+         "Required": false,
+         "Label": "Hướng dẫn",
+         "Có icon": "No"
+        },
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "missingTerms": [],
+     "status": "khop",
+     "testcases": [
+      "CM-HW.TC20"
+     ]
+    },
+    {
+     "id": "CM-HW.A06.06",
+     "name": "noi-dung-cau-hoi",
+     "label": "Nội dung câu hỏi ",
+     "spec": "Bắt buộc; nhiều dòng.",
+     "matches": {
+      "cd-kh-060120": [
+       {
+        "term": "Nội dung câu hỏi",
+        "figmaId": "5491:348847",
+        "layer": "Atom/Label",
+        "confidence": "cao",
+        "region": "Field · Nội dung câu hỏi",
+        "owner": "Atom/Label",
+        "component": "Atom/Label",
+        "variant": {
+         "Icon": "738:25432",
+         "Required": true,
+         "Label": "Nội dung câu hỏi",
+         "Có icon": "No"
+        },
+        "inCode": false
+       }
+      ],
+      "cd-kh-060121": [
+       {
+        "term": "Nội dung câu hỏi",
+        "figmaId": "5672:74641",
+        "layer": "Atom/Label",
+        "confidence": "cao",
+        "region": "Field · Nội dung câu hỏi",
+        "owner": "Atom/Label",
+        "component": "Atom/Label",
+        "variant": {
+         "Icon": "738:25432",
+         "Required": true,
+         "Label": "Nội dung câu hỏi",
+         "Có icon": "No"
+        },
+        "inCode": false
+       }
+      ],
+      "cd-kh-060122": [
+       {
+        "term": "Nội dung câu hỏi",
+        "figmaId": "5672:74773",
+        "layer": "Atom/Label",
+        "confidence": "cao",
+        "region": "Field · Nội dung câu hỏi",
+        "owner": "Atom/Label",
+        "component": "Atom/Label",
+        "variant": {
+         "Icon": "738:25432",
+         "Required": true,
+         "Label": "Nội dung câu hỏi",
+         "Có icon": "No"
+        },
+        "inCode": false
+       }
+      ],
+      "cd-kh-060123": [
+       {
+        "term": "Nội dung câu hỏi",
+        "figmaId": "5672:74908",
+        "layer": "Atom/Label",
+        "confidence": "cao",
+        "region": "Field · Nội dung câu hỏi",
+        "owner": "Atom/Label",
+        "component": "Atom/Label",
+        "variant": {
+         "Icon": "738:25432",
+         "Required": true,
+         "Label": "Nội dung câu hỏi",
+         "Có icon": "No"
+        },
+        "inCode": false
+       }
+      ],
+      "cd-kh-060124": [
+       {
+        "term": "Nội dung câu hỏi",
+        "figmaId": "5672:75039",
+        "layer": "Atom/Label",
+        "confidence": "cao",
+        "region": "Field · Nội dung câu hỏi",
+        "owner": "Atom/Label",
+        "component": "Atom/Label",
+        "variant": {
+         "Icon": "738:25432",
+         "Required": true,
+         "Label": "Nội dung câu hỏi",
+         "Có icon": "No"
+        },
+        "inCode": false
+       }
+      ],
+      "cd-kh-060125": [
+       {
+        "term": "Nội dung câu hỏi",
+        "figmaId": "5672:75156",
+        "layer": "Atom/Label",
+        "confidence": "cao",
+        "region": "Field · Nội dung câu hỏi",
+        "owner": "Atom/Label",
+        "component": "Atom/Label",
+        "variant": {
+         "Icon": "738:25432",
+         "Required": true,
+         "Label": "Nội dung câu hỏi",
+         "Có icon": "No"
+        },
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "missingTerms": [],
+     "status": "khop",
+     "testcases": []
+    },
+    {
+     "id": "CM-HW.A06.07",
+     "name": "hinh-anh-am-thanh",
+     "label": "Hình ảnh / âm thanh",
+     "spec": "Không bắt buộc; kéo thả hoặc chọn file, mỗi file tối đa 25MB.",
+     "matches": {
+      "cd-kh-060120": [
+       {
+        "term": "Hình ảnh / âm thanh",
+        "figmaId": "5491:348851",
+        "layer": "Atom/Label",
+        "confidence": "cao",
+        "region": "Field · Hình ảnh / âm thanh",
+        "owner": "Atom/Label",
+        "component": "Atom/Label",
+        "variant": {
+         "Icon": "738:25432",
+         "Required": false,
+         "Label": "Hình ảnh / âm thanh",
+         "Có icon": "No"
+        },
+        "inCode": false
+       }
+      ],
+      "cd-kh-060121": [
+       {
+        "term": "Hình ảnh / âm thanh",
+        "figmaId": "5672:74644",
+        "layer": "Atom/Label",
+        "confidence": "cao",
+        "region": "Field · Hình ảnh / âm thanh",
+        "owner": "Atom/Label",
+        "component": "Atom/Label",
+        "variant": {
+         "Icon": "738:25432",
+         "Required": false,
+         "Label": "Hình ảnh / âm thanh",
+         "Có icon": "No"
+        },
+        "inCode": false
+       }
+      ],
+      "cd-kh-060122": [
+       {
+        "term": "Hình ảnh / âm thanh",
+        "figmaId": "5672:74776",
+        "layer": "Atom/Label",
+        "confidence": "cao",
+        "region": "Field · Hình ảnh / âm thanh",
+        "owner": "Atom/Label",
+        "component": "Atom/Label",
+        "variant": {
+         "Icon": "738:25432",
+         "Required": false,
+         "Label": "Hình ảnh / âm thanh",
+         "Có icon": "No"
+        },
+        "inCode": false
+       }
+      ],
+      "cd-kh-060123": [
+       {
+        "term": "Hình ảnh / âm thanh",
+        "figmaId": "5672:74911",
+        "layer": "Atom/Label",
+        "confidence": "cao",
+        "region": "Field · Hình ảnh / âm thanh",
+        "owner": "Atom/Label",
+        "component": "Atom/Label",
+        "variant": {
+         "Icon": "738:25432",
+         "Required": false,
+         "Label": "Hình ảnh / âm thanh",
+         "Có icon": "No"
+        },
+        "inCode": false
+       }
+      ],
+      "cd-kh-060124": [
+       {
+        "term": "Hình ảnh / âm thanh",
+        "figmaId": "5672:75042",
+        "layer": "Atom/Label",
+        "confidence": "cao",
+        "region": "Field · Hình ảnh / âm thanh",
+        "owner": "Atom/Label",
+        "component": "Atom/Label",
+        "variant": {
+         "Icon": "738:25432",
+         "Required": false,
+         "Label": "Hình ảnh / âm thanh",
+         "Có icon": "No"
+        },
+        "inCode": false
+       }
+      ],
+      "cd-kh-060125": [
+       {
+        "term": "Hình ảnh / âm thanh",
+        "figmaId": "5672:75159",
+        "layer": "Atom/Label",
+        "confidence": "cao",
+        "region": "Field · Hình ảnh / âm thanh",
+        "owner": "Atom/Label",
+        "component": "Atom/Label",
+        "variant": {
+         "Icon": "738:25432",
+         "Required": false,
+         "Label": "Hình ảnh / âm thanh",
+         "Có icon": "No"
+        },
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "missingTerms": [],
+     "status": "khop",
+     "testcases": []
+    },
+    {
+     "id": "CM-HW.A06.08",
+     "name": "dap-an",
+     "label": "Đáp án ",
+     "spec": "Theo loại câu (bảng dưới).",
+     "matches": {
+      "cd-kh-060120": [
+       {
+        "term": "Đáp án",
+        "figmaId": "5491:348855",
+        "layer": "Field · Đáp án",
+        "confidence": "cao",
+        "region": "Field · Đáp án",
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       }
+      ],
+      "cd-kh-060121": [
+       {
+        "term": "Đáp án",
+        "figmaId": "5672:74646",
+        "layer": "Field · Đáp án",
+        "confidence": "cao",
+        "region": "Field · Đáp án",
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       }
+      ],
+      "cd-kh-060122": [
+       {
+        "term": "Đáp án",
+        "figmaId": "5672:74778",
+        "layer": "Field · Đáp án",
+        "confidence": "cao",
+        "region": "Field · Đáp án",
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       }
+      ],
+      "cd-kh-060123": [
+       {
+        "term": "Đáp án",
+        "figmaId": "5672:74913",
+        "layer": "Field · Đáp án",
+        "confidence": "cao",
+        "region": "Field · Đáp án",
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       }
+      ],
+      "cd-kh-060124": [
+       {
+        "term": "Đáp án",
+        "figmaId": "5672:75044",
+        "layer": "Field · Đáp án",
+        "confidence": "cao",
+        "region": "Field · Đáp án",
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       }
+      ],
+      "cd-kh-060125": [
+       {
+        "term": "Đáp án",
+        "figmaId": "5672:75161",
+        "layer": "Field · Đáp án",
+        "confidence": "cao",
+        "region": "Field · Đáp án",
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "missingTerms": [],
+     "status": "khop",
+     "testcases": []
+    },
+    {
+     "id": "CM-HW.A06.09",
+     "name": "giai-thich-dap-an",
+     "label": "Giải thích đáp án",
+     "spec": "Không bắt buộc; hiển thị cho học viên sau khi nộp bài.",
+     "matches": {
+      "cd-kh-060120": [
+       {
+        "term": "Giải thích đáp án",
+        "figmaId": "5491:348884",
+        "layer": "Atom/Label",
+        "confidence": "cao",
+        "region": "Field · Giải thích đáp án",
+        "owner": "Atom/Label",
+        "component": "Atom/Label",
+        "variant": {
+         "Icon": "738:25432",
+         "Required": false,
+         "Label": "Giải thích đáp án",
+         "Có icon": "No"
+        },
+        "inCode": false
+       }
+      ],
+      "cd-kh-060121": [
+       {
+        "term": "Giải thích đáp án",
+        "figmaId": "5672:74665",
+        "layer": "Atom/Label",
+        "confidence": "cao",
+        "region": "Field · Giải thích đáp án",
+        "owner": "Atom/Label",
+        "component": "Atom/Label",
+        "variant": {
+         "Icon": "738:25432",
+         "Required": false,
+         "Label": "Giải thích đáp án",
+         "Có icon": "No"
+        },
+        "inCode": false
+       }
+      ],
+      "cd-kh-060122": [
+       {
+        "term": "Giải thích đáp án",
+        "figmaId": "5672:74797",
+        "layer": "Atom/Label",
+        "confidence": "cao",
+        "region": "Field · Giải thích đáp án",
+        "owner": "Atom/Label",
+        "component": "Atom/Label",
+        "variant": {
+         "Icon": "738:25432",
+         "Required": false,
+         "Label": "Giải thích đáp án",
+         "Có icon": "No"
+        },
+        "inCode": false
+       }
+      ],
+      "cd-kh-060123": [
+       {
+        "term": "Giải thích đáp án",
+        "figmaId": "5672:74932",
+        "layer": "Atom/Label",
+        "confidence": "cao",
+        "region": "Field · Giải thích đáp án",
+        "owner": "Atom/Label",
+        "component": "Atom/Label",
+        "variant": {
+         "Icon": "738:25432",
+         "Required": false,
+         "Label": "Giải thích đáp án",
+         "Có icon": "No"
+        },
+        "inCode": false
+       }
+      ],
+      "cd-kh-060124": [
+       {
+        "term": "Giải thích đáp án",
+        "figmaId": "5672:75063",
+        "layer": "Atom/Label",
+        "confidence": "cao",
+        "region": "Field · Giải thích đáp án",
+        "owner": "Atom/Label",
+        "component": "Atom/Label",
+        "variant": {
+         "Icon": "738:25432",
+         "Required": false,
+         "Label": "Giải thích đáp án",
+         "Có icon": "No"
+        },
+        "inCode": false
+       }
+      ],
+      "cd-kh-060125": [
+       {
+        "term": "Giải thích đáp án",
+        "figmaId": "5672:75180",
+        "layer": "Atom/Label",
+        "confidence": "cao",
+        "region": "Field · Giải thích đáp án",
+        "owner": "Atom/Label",
+        "component": "Atom/Label",
+        "variant": {
+         "Icon": "738:25432",
+         "Required": false,
+         "Label": "Giải thích đáp án",
+         "Có icon": "No"
+        },
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "missingTerms": [],
+     "status": "khop",
+     "testcases": []
+    },
+    {
+     "id": "CM-HW.A06.10",
+     "name": "huy-luu-cau-hoi",
+     "label": "Huỷ / Lưu câu hỏi",
+     "spec": "`Huỷ` đóng, không lưu. `Lưu câu hỏi` kiểm tra field bắt buộc, lưu và đóng popup.",
+     "matches": {
+      "cd-kh-060120": [
+       {
+        "term": "Huỷ",
+        "figmaId": "I5491:348809;2514:153361",
+        "layer": "Atom/Button",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Button",
+        "component": "Atom/Button",
+        "variant": {
+         "Label": "Huỷ",
+         "Type": "Secondary",
+         "Size": "Medium"
+        },
+        "inCode": false
+       },
+       {
+        "term": "Lưu câu hỏi",
+        "figmaId": "I5491:348809;2514:153363",
+        "layer": "Atom/Button",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Button",
+        "component": "Atom/Button",
+        "variant": {
+         "Label": "Lưu câu hỏi",
+         "Type": "Primary",
+         "Size": "Medium"
+        },
+        "inCode": false
+       }
+      ],
+      "cd-kh-060121": [
+       {
+        "term": "Huỷ",
+        "figmaId": "I5672:74667;2514:153361",
+        "layer": "Atom/Button",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Button",
+        "component": "Atom/Button",
+        "variant": {
+         "Label": "Huỷ",
+         "Type": "Secondary",
+         "Size": "Medium"
+        },
+        "inCode": false
+       },
+       {
+        "term": "Lưu câu hỏi",
+        "figmaId": "I5672:74667;2514:153363",
+        "layer": "Atom/Button",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Button",
+        "component": "Atom/Button",
+        "variant": {
+         "Label": "Lưu câu hỏi",
+         "Type": "Primary",
+         "Size": "Medium"
+        },
+        "inCode": false
+       }
+      ],
+      "cd-kh-060122": [
+       {
+        "term": "Huỷ",
+        "figmaId": "I5672:74799;2514:153361",
+        "layer": "Atom/Button",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Button",
+        "component": "Atom/Button",
+        "variant": {
+         "Label": "Huỷ",
+         "Type": "Secondary",
+         "Size": "Medium"
+        },
+        "inCode": false
+       },
+       {
+        "term": "Lưu câu hỏi",
+        "figmaId": "I5672:74799;2514:153363",
+        "layer": "Atom/Button",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Button",
+        "component": "Atom/Button",
+        "variant": {
+         "Label": "Lưu câu hỏi",
+         "Type": "Primary",
+         "Size": "Medium"
+        },
+        "inCode": false
+       }
+      ],
+      "cd-kh-060123": [
+       {
+        "term": "Huỷ",
+        "figmaId": "I5672:74934;2514:153361",
+        "layer": "Atom/Button",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Button",
+        "component": "Atom/Button",
+        "variant": {
+         "Label": "Huỷ",
+         "Type": "Secondary",
+         "Size": "Medium"
+        },
+        "inCode": false
+       },
+       {
+        "term": "Lưu câu hỏi",
+        "figmaId": "I5672:74934;2514:153363",
+        "layer": "Atom/Button",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Button",
+        "component": "Atom/Button",
+        "variant": {
+         "Label": "Lưu câu hỏi",
+         "Type": "Primary",
+         "Size": "Medium"
+        },
+        "inCode": false
+       }
+      ],
+      "cd-kh-060124": [
+       {
+        "term": "Huỷ",
+        "figmaId": "I5672:75065;2514:153361",
+        "layer": "Atom/Button",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Button",
+        "component": "Atom/Button",
+        "variant": {
+         "Label": "Huỷ",
+         "Type": "Secondary",
+         "Size": "Medium"
+        },
+        "inCode": false
+       },
+       {
+        "term": "Lưu câu hỏi",
+        "figmaId": "I5672:75065;2514:153363",
+        "layer": "Atom/Button",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Button",
+        "component": "Atom/Button",
+        "variant": {
+         "Label": "Lưu câu hỏi",
+         "Type": "Primary",
+         "Size": "Medium"
+        },
+        "inCode": false
+       }
+      ],
+      "cd-kh-060125": [
+       {
+        "term": "Huỷ",
+        "figmaId": "I5672:75182;2514:153361",
+        "layer": "Atom/Button",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Button",
+        "component": "Atom/Button",
+        "variant": {
+         "Label": "Huỷ",
+         "Type": "Secondary",
+         "Size": "Medium"
+        },
+        "inCode": false
+       },
+       {
+        "term": "Lưu câu hỏi",
+        "figmaId": "I5672:75182;2514:153363",
+        "layer": "Atom/Button",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Button",
+        "component": "Atom/Button",
+        "variant": {
+         "Label": "Lưu câu hỏi",
+         "Type": "Primary",
+         "Size": "Medium"
+        },
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "missingTerms": [],
+     "status": "khop",
+     "testcases": []
+    },
+    {
+     "id": "CM-HW.A06.11",
+     "name": "trac-nghiem",
+     "label": "Trắc nghiệm",
+     "spec": "4 lựa chọn `A`–`D`, chọn đúng một đáp án đúng.",
+     "matches": {
+      "cd-kh-060120": [
+       {
+        "term": "Trắc nghiệm",
+        "figmaId": "5491:348825",
+        "layer": "Atom/Input",
+        "confidence": "cao",
+        "region": "Hàng · Số câu & Loại câu",
+        "owner": "Atom/Input",
+        "component": "Atom/Input",
+        "variant": {
+         "Loại": "Gift code",
+         "Text": "Trắc nghiệm",
+         "State": "Disabled",
+         "Kiểu": "S"
+        },
+        "inCode": false
+       }
+      ],
+      "cd-kh-060125": [
+       {
+        "term": "Trắc nghiệm",
+        "figmaId": "5672:75248",
+        "layer": "Atom/Tag",
+        "confidence": "cao",
+        "region": "Field · Đáp án",
+        "owner": "Atom/Tag",
+        "component": "Atom/Tag",
+        "variant": {
+         "Close": false,
+         "Label": "Trắc nghiệm",
+         "Color": "Blue",
+         "Size": "Small",
+         "Dropdown": "No",
+         "Shape": "Bo góc"
+        },
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "missingTerms": [],
+     "status": "khop-mot-phan",
+     "testcases": [
+      "CM-HW.TC17"
+     ]
+    },
+    {
+     "id": "CM-HW.A06.12",
+     "name": "sap-xep",
+     "label": "Sắp xếp",
+     "spec": "Các mảnh theo thứ tự đúng; app xáo trộn khi hiển thị (**UI cần bổ sung**).",
+     "matches": {
+      "cd-kh-060121": [
+       {
+        "term": "Sắp xếp",
+        "figmaId": "5672:74629",
+        "layer": "Atom/Input",
+        "confidence": "cao",
+        "region": "Hàng · Số câu & Loại câu",
+        "owner": "Atom/Input",
+        "component": "Atom/Input",
+        "variant": {
+         "Loại": "Gift code",
+         "Text": "Sắp xếp",
+         "State": "Disabled",
+         "Kiểu": "S"
+        },
+        "inCode": false
+       }
+      ],
+      "cd-kh-060125": [
+       {
+        "term": "Sắp xếp",
+        "figmaId": "5672:75257",
+        "layer": "Atom/Tag",
+        "confidence": "cao",
+        "region": "Field · Đáp án",
+        "owner": "Atom/Tag",
+        "component": "Atom/Tag",
+        "variant": {
+         "Close": false,
+         "Label": "Sắp xếp",
+         "Color": "Blue",
+         "Size": "Small",
+         "Dropdown": "No",
+         "Shape": "Bo góc"
+        },
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "missingTerms": [],
+     "status": "req-ghi-thieu-nhung-figma-co",
+     "testcases": []
+    },
+    {
+     "id": "CM-HW.A06.13",
+     "name": "noi-tu",
+     "label": "Nối từ",
+     "spec": "Danh sách cặp cột trái – cột phải (**UI cần bổ sung**).",
+     "matches": {
+      "cd-kh-060122": [
+       {
+        "term": "Nối từ",
+        "figmaId": "5672:74761",
+        "layer": "Atom/Input",
+        "confidence": "cao",
+        "region": "Hàng · Số câu & Loại câu",
+        "owner": "Atom/Input",
+        "component": "Atom/Input",
+        "variant": {
+         "Loại": "Gift code",
+         "Text": "Nối từ",
+         "State": "Disabled",
+         "Kiểu": "S"
+        },
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "missingTerms": [],
+     "status": "req-ghi-thieu-nhung-figma-co",
+     "testcases": []
+    },
+    {
+     "id": "CM-HW.A06.14",
+     "name": "noi",
+     "label": "Nói",
+     "spec": "Câu mẫu để app nhận diện giọng nói (**UI cần bổ sung**).",
+     "matches": {
+      "cd-kh-060120": [
+       {
+        "term": "Nói",
+        "figmaId": "I5491:348847;2015:30530",
+        "layer": "Label",
+        "confidence": "thap",
+        "region": "Field · Nội dung câu hỏi",
+        "owner": "Atom/Label",
+        "component": "Atom/Label",
+        "variant": {
+         "Icon": "738:25432",
+         "Required": true,
+         "Label": "Nội dung câu hỏi",
+         "Có icon": "No"
+        },
+        "inCode": false
+       }
+      ],
+      "cd-kh-060121": [
+       {
+        "term": "Nói",
+        "figmaId": "I5672:74641;2015:30530",
+        "layer": "Label",
+        "confidence": "thap",
+        "region": "Field · Nội dung câu hỏi",
+        "owner": "Atom/Label",
+        "component": "Atom/Label",
+        "variant": {
+         "Icon": "738:25432",
+         "Required": true,
+         "Label": "Nội dung câu hỏi",
+         "Có icon": "No"
+        },
+        "inCode": false
+       }
+      ],
+      "cd-kh-060122": [
+       {
+        "term": "Nói",
+        "figmaId": "I5672:74753;2514:153354",
+        "layer": "Title",
+        "confidence": "thap",
+        "region": null,
+        "owner": "Popup/Header",
+        "component": "Popup/Header",
+        "variant": {
+         "Close": "No",
+         "Description": "Yes",
+         "Icon": "No"
+        },
+        "inCode": false
+       }
+      ],
+      "cd-kh-060123": [
+       {
+        "term": "Nói",
+        "figmaId": "5672:74896",
+        "layer": "Atom/Input",
+        "confidence": "cao",
+        "region": "Hàng · Số câu & Loại câu",
+        "owner": "Atom/Input",
+        "component": "Atom/Input",
+        "variant": {
+         "Loại": "Gift code",
+         "Text": "Nói",
+         "State": "Disabled",
+         "Kiểu": "S"
+        },
+        "inCode": false
+       }
+      ],
+      "cd-kh-060124": [
+       {
+        "term": "Nói",
+        "figmaId": "I5672:75039;2015:30530",
+        "layer": "Label",
+        "confidence": "thap",
+        "region": "Field · Nội dung câu hỏi",
+        "owner": "Atom/Label",
+        "component": "Atom/Label",
+        "variant": {
+         "Icon": "738:25432",
+         "Required": true,
+         "Label": "Nội dung câu hỏi",
+         "Có icon": "No"
+        },
+        "inCode": false
+       }
+      ],
+      "cd-kh-060125": [
+       {
+        "term": "Nói",
+        "figmaId": "I5672:75156;2015:30530",
+        "layer": "Label",
+        "confidence": "thap",
+        "region": "Field · Nội dung câu hỏi",
+        "owner": "Atom/Label",
+        "component": "Atom/Label",
+        "variant": {
+         "Icon": "738:25432",
+         "Required": true,
+         "Label": "Nội dung câu hỏi",
+         "Có icon": "No"
+        },
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "missingTerms": [],
+     "status": "req-ghi-thieu-nhung-figma-co",
+     "testcases": []
+    },
+    {
+     "id": "CM-HW.A06.15",
+     "name": "doc-viet-hinh-anh",
+     "label": "Đọc, Viết, Hình ảnh",
+     "spec": "Không có đáp án; giáo viên chấm. Có thể nhập bài mẫu tham khảo (**UI cần bổ sung**).",
+     "matches": {
+      "cd-kh-060120": [
+       {
+        "term": "Đọc",
+        "figmaId": "I5491:348852;1061:1317",
+        "layer": "Hỗ trợ: PDF, DOC, DOCX, PPT, PPTX (Tối đa 20MB)",
+        "confidence": "thap",
+        "region": "Field · Hình ảnh / âm thanh",
+        "owner": "Atom/Dropzone",
+        "component": "Atom/Dropzone",
+        "variant": {
+         "Kiểu": "Mặc định",
+         "Loại": "File"
+        },
+        "inCode": false
+       },
+       {
+        "term": "Hình ảnh",
+        "figmaId": "I5491:348851;2015:30530",
+        "layer": "Label",
+        "confidence": "thap",
+        "region": "Field · Hình ảnh / âm thanh",
+        "owner": "Atom/Label",
+        "component": "Atom/Label",
+        "variant": {
+         "Icon": "738:25432",
+         "Required": false,
+         "Label": "Hình ảnh / âm thanh",
+         "Có icon": "No"
+        },
+        "inCode": false
+       }
+      ],
+      "cd-kh-060121": [
+       {
+        "term": "Đọc",
+        "figmaId": "I5672:74645;1061:1317",
+        "layer": "Hỗ trợ: PDF, DOC, DOCX, PPT, PPTX (Tối đa 20MB)",
+        "confidence": "thap",
+        "region": "Field · Hình ảnh / âm thanh",
+        "owner": "Atom/Dropzone",
+        "component": "Atom/Dropzone",
+        "variant": {
+         "Kiểu": "Mặc định",
+         "Loại": "File"
+        },
+        "inCode": false
+       },
+       {
+        "term": "Hình ảnh",
+        "figmaId": "I5672:74644;2015:30530",
+        "layer": "Label",
+        "confidence": "thap",
+        "region": "Field · Hình ảnh / âm thanh",
+        "owner": "Atom/Label",
+        "component": "Atom/Label",
+        "variant": {
+         "Icon": "738:25432",
+         "Required": false,
+         "Label": "Hình ảnh / âm thanh",
+         "Có icon": "No"
+        },
+        "inCode": false
+       }
+      ],
+      "cd-kh-060122": [
+       {
+        "term": "Đọc",
+        "figmaId": "I5672:74777;1061:1317",
+        "layer": "Hỗ trợ: PDF, DOC, DOCX, PPT, PPTX (Tối đa 20MB)",
+        "confidence": "thap",
+        "region": "Field · Hình ảnh / âm thanh",
+        "owner": "Atom/Dropzone",
+        "component": "Atom/Dropzone",
+        "variant": {
+         "Kiểu": "Mặc định",
+         "Loại": "File"
+        },
+        "inCode": false
+       },
+       {
+        "term": "Hình ảnh",
+        "figmaId": "I5672:74776;2015:30530",
+        "layer": "Label",
+        "confidence": "thap",
+        "region": "Field · Hình ảnh / âm thanh",
+        "owner": "Atom/Label",
+        "component": "Atom/Label",
+        "variant": {
+         "Icon": "738:25432",
+         "Required": false,
+         "Label": "Hình ảnh / âm thanh",
+         "Có icon": "No"
+        },
+        "inCode": false
+       }
+      ],
+      "cd-kh-060123": [
+       {
+        "term": "Đọc",
+        "figmaId": "I5672:74912;1061:1317",
+        "layer": "Hỗ trợ: PDF, DOC, DOCX, PPT, PPTX (Tối đa 20MB)",
+        "confidence": "thap",
+        "region": "Field · Hình ảnh / âm thanh",
+        "owner": "Atom/Dropzone",
+        "component": "Atom/Dropzone",
+        "variant": {
+         "Kiểu": "Mặc định",
+         "Loại": "File"
+        },
+        "inCode": false
+       },
+       {
+        "term": "Hình ảnh",
+        "figmaId": "I5672:74911;2015:30530",
+        "layer": "Label",
+        "confidence": "thap",
+        "region": "Field · Hình ảnh / âm thanh",
+        "owner": "Atom/Label",
+        "component": "Atom/Label",
+        "variant": {
+         "Icon": "738:25432",
+         "Required": false,
+         "Label": "Hình ảnh / âm thanh",
+         "Có icon": "No"
+        },
+        "inCode": false
+       }
+      ],
+      "cd-kh-060124": [
+       {
+        "term": "Đọc",
+        "figmaId": "5672:75134",
+        "layer": "Không có đáp án cố định; giáo viên chấm. Áp dụng tương tự cho Đọc và Hình ảnh.",
+        "confidence": "thap",
+        "region": "Field · Đáp án",
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       },
+       {
+        "term": "Viết",
+        "figmaId": "5672:75027",
+        "layer": "Atom/Input",
+        "confidence": "cao",
+        "region": "Hàng · Số câu & Loại câu",
+        "owner": "Atom/Input",
+        "component": "Atom/Input",
+        "variant": {
+         "Loại": "Gift code",
+         "Text": "Viết",
+         "State": "Disabled",
+         "Kiểu": "S"
+        },
+        "inCode": false
+       },
+       {
+        "term": "Hình ảnh",
+        "figmaId": "5672:75134",
+        "layer": "Không có đáp án cố định; giáo viên chấm. Áp dụng tương tự cho Đọc và Hình ảnh.",
+        "confidence": "cao",
+        "region": "Field · Đáp án",
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       }
+      ],
+      "cd-kh-060125": [
+       {
+        "term": "Đọc",
+        "figmaId": "I5672:75160;1061:1317",
+        "layer": "Hỗ trợ: PDF, DOC, DOCX, PPT, PPTX (Tối đa 20MB)",
+        "confidence": "thap",
+        "region": "Field · Hình ảnh / âm thanh",
+        "owner": "Atom/Dropzone",
+        "component": "Atom/Dropzone",
+        "variant": {
+         "Kiểu": "Mặc định",
+         "Loại": "File"
+        },
+        "inCode": false
+       },
+       {
+        "term": "Viết",
+        "figmaId": "5672:75266",
+        "layer": "Atom/Tag",
+        "confidence": "cao",
+        "region": "Field · Đáp án",
+        "owner": "Atom/Tag",
+        "component": "Atom/Tag",
+        "variant": {
+         "Close": false,
+         "Label": "Viết",
+         "Color": "Orange",
+         "Size": "Small",
+         "Dropdown": "No",
+         "Shape": "Bo góc"
+        },
+        "inCode": false
+       },
+       {
+        "term": "Hình ảnh",
+        "figmaId": "I5672:75159;2015:30530",
+        "layer": "Label",
+        "confidence": "thap",
+        "region": "Field · Hình ảnh / âm thanh",
+        "owner": "Atom/Label",
+        "component": "Atom/Label",
+        "variant": {
+         "Icon": "738:25432",
+         "Required": false,
+         "Label": "Hình ảnh / âm thanh",
+         "Có icon": "No"
+        },
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "missingTerms": [],
+     "status": "req-ghi-thieu-nhung-figma-co",
+     "testcases": []
+    },
+    {
+     "id": "CM-HW.A06.16",
+     "name": "cau-hoi-con",
+     "label": "Câu hỏi con",
+     "spec": "Danh sách câu con; mỗi câu con chọn loại câu riêng và soạn như câu thường, không có Số câu riêng (đánh `N.1`, `N.2`…) (**UI cần bổ sung**).",
+     "matches": {
+      "cd-kh-060125": [
+       {
+        "term": "Câu hỏi con",
+        "figmaId": "5672:75144",
+        "layer": "Atom/Input",
+        "confidence": "cao",
+        "region": "Hàng · Số câu & Loại câu",
+        "owner": "Atom/Input",
+        "component": "Atom/Input",
+        "variant": {
+         "Loại": "Gift code",
+         "Text": "Câu hỏi con",
+         "State": "Disabled",
+         "Kiểu": "S"
+        },
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "missingTerms": [],
+     "status": "req-ghi-thieu-nhung-figma-co",
+     "testcases": []
+    }
+   ]
+  },
+  {
+   "id": "CM-HW.A07",
+   "name": "import-export-excel",
+   "title": "Import / Export Excel",
+   "screens": [
+    "cd-kh-030340",
+    "cd-kh-060140",
+    "cd-kh-060141"
+   ],
+   "syncedScreens": [
+    "cd-kh-060140",
+    "cd-kh-060141"
+   ],
+   "needsDesign": true,
+   "figmaDiffNotes": [
+    "Khác Figma: nút Import / Export mới có ở CD-KH-030340; chưa có popup kết quả import."
+   ],
+   "items": [
+    {
+     "id": "CM-HW.A07.01",
+     "name": "cot-file",
+     "label": "Cột file",
+     "spec": "**Giống cột bảng câu hỏi trên UI**: `STT`, `Câu hỏi`, `Hướng dẫn`, `Loại câu`, `Đáp án đúng`, `Kiến thức / Kỹ năng`, `Điểm`. Câu hỏi con nằm ở các dòng ngay dưới câu cha, `STT` dạng `7.1`, `7.2`.",
+     "matches": {},
+     "relations": [],
+     "missingTerms": [
+      "Cột file",
+      "STT"
+     ],
+     "status": "chua-thay-tren-figma",
+     "testcases": []
+    },
+    {
+     "id": "CM-HW.A07.02",
+     "name": "export",
+     "label": "Export",
+     "spec": "Xuất toàn bộ câu của bài (không theo bộ lọc đang chọn); tên file `<Khoá học>_<Bài>.xlsx`.",
+     "matches": {},
+     "relations": [],
+     "missingTerms": [
+      "Export",
+      "<Khoá học>_<Bài>.xlsx"
+     ],
+     "status": "chua-thay-tren-figma",
+     "testcases": [
+      "CM-HW.TC22",
+      "CM-HW.TC26"
+     ]
+    },
+    {
+     "id": "CM-HW.A07.03",
+     "name": "import-dong-bat-buoc",
+     "label": "Import — dòng bắt buộc",
+     "spec": "Mỗi dòng phải có `STT`, `Câu hỏi`, `Loại câu` (một trong 8 loại), `Kiến thức / Kỹ năng` (cụm của khoá hoặc Nghe, Đọc, Viết, Nói). Không có cột `Điểm`.",
+     "matches": {},
+     "relations": [],
+     "missingTerms": [
+      "Import — dòng bắt buộc",
+      "STT"
+     ],
+     "status": "chua-thay-tren-figma",
+     "testcases": []
+    },
+    {
+     "id": "CM-HW.A07.04",
+     "name": "import-loi-du-lieu",
+     "label": "Import — lỗi dữ liệu",
+     "spec": "Có dòng thiếu field bắt buộc hoặc sai giá trị → **chặn cả file**, không thêm câu nào, hiển thị danh sách lỗi theo số dòng (vd `Dòng 5: thiếu Loại câu`).",
+     "matches": {
+      "cd-kh-060140": [
+       {
+        "term": "Dòng 5: thiếu Loại câu",
+        "figmaId": "5672:75289",
+        "layer": "Dòng 5: thiếu Loại câu",
+        "confidence": "cao",
+        "region": "Lỗi",
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "missingTerms": [
+      "Import — lỗi dữ liệu"
+     ],
+     "status": "khop-mot-phan",
+     "testcases": []
+    },
+    {
+     "id": "CM-HW.A07.05",
+     "name": "import-cau-trung",
+     "label": "Import — câu trùng",
+     "spec": "Không tự dò hay bỏ câu trùng; mọi dòng hợp lệ đều được thêm. Câu trùng do **Soát lỗi bằng AI** phát hiện.",
+     "matches": {},
+     "relations": [],
+     "missingTerms": [
+      "Import — câu trùng"
+     ],
+     "status": "chua-thay-tren-figma",
+     "testcases": []
+    },
+    {
+     "id": "CM-HW.A07.06",
+     "name": "import-thanh-cong",
+     "label": "Import — thành công",
+     "spec": "Thêm vào cuối bộ theo thứ tự `STT` trong file; Toast `Thành Công` `Đã import N câu hỏi.`; gợi ý chạy Soát lỗi bằng AI.",
+     "matches": {},
+     "relations": [],
+     "missingTerms": [
+      "Import — thành công",
+      "STT"
+     ],
+     "status": "chua-thay-tren-figma",
+     "testcases": []
+    }
+   ]
+  },
+  {
+   "id": "CM-HW.A08",
+   "name": "soat-loi-bang-ai",
+   "title": "Soát lỗi bằng AI",
+   "screens": [
+    "cd-kh-060150"
+   ],
+   "syncedScreens": [
+    "cd-kh-060150"
+   ],
+   "needsDesign": true,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "CM-HW.A08.01",
+     "name": "pham-vi",
+     "label": "Phạm vi",
+     "spec": "Toàn bộ câu của bài đang chọn, kể cả câu hỏi con.",
+     "matches": {},
+     "relations": [],
+     "missingTerms": [
+      "Phạm vi"
+     ],
+     "status": "chua-thay-tren-figma",
+     "testcases": []
+    },
+    {
+     "id": "CM-HW.A08.02",
+     "name": "van-de-phat-hien",
+     "label": "Vấn đề phát hiện",
+     "spec": "Câu **trùng** (cùng loại câu, nội dung giống hoặc gần giống), thiếu đáp án, đáp án không khớp nội dung, lỗi chính tả / phiên âm, câu không khớp Kiến thức / Kỹ năng đã gắn.",
+     "matches": {},
+     "relations": [],
+     "missingTerms": [
+      "Vấn đề phát hiện"
+     ],
+     "status": "chua-thay-tren-figma",
+     "testcases": []
+    },
+    {
+     "id": "CM-HW.A08.03",
+     "name": "ket-qua",
+     "label": "Kết quả",
+     "spec": "Danh sách vấn đề theo số câu, bấm một vấn đề cuộn tới câu tương ứng. Không có vấn đề thì báo `Không tìm thấy lỗi.`",
+     "matches": {},
+     "relations": [],
+     "missingTerms": [
+      "Kết quả",
+      "Không tìm thấy lỗi."
+     ],
+     "status": "chua-thay-tren-figma",
+     "testcases": [
+      "CM-HW.TC27",
+      "CM-HW.TC28"
+     ]
+    },
+    {
+     "id": "CM-HW.A08.04",
+     "name": "xu-ly",
+     "label": "Xử lý",
+     "spec": "AI **không tự sửa hay xoá**; CD sửa hoặc xoá câu bằng menu `⋮`.",
+     "matches": {},
+     "relations": [],
+     "missingTerms": [
+      "Xử lý",
+      "⋮"
+     ],
+     "status": "chua-thay-tren-figma",
+     "testcases": []
+    }
+   ]
+  },
+  {
+   "id": "CM-HW.A09",
+   "name": "generate-bai-tap-bang-ai-popup-nhap-yeu-",
+   "title": "Generate bài tập bằng AI — Popup nhập yêu cầu",
+   "screens": [
+    "cd-kh-030341",
+    "cd-kh-030342"
+   ],
+   "syncedScreens": [],
+   "needsDesign": false,
+   "figmaDiffNotes": [
+    "Khác Figma CD-KH-030341 / 030342: dòng phụ dưới `Số câu` ghi `Tối đa 50 câu mỗi lần`; requirement không giới hạn."
+   ],
+   "items": [
+    {
+     "id": "CM-HW.A09.01",
+     "name": "tab-nhap-prompt",
+     "label": "Tab Nhập prompt",
+     "spec": "`Prompt theo yêu cầu` * (nhiều dòng).",
+     "matches": {},
+     "relations": [],
+     "missingTerms": [],
+     "status": "chua-co-spec",
+     "testcases": []
+    },
+    {
+     "id": "CM-HW.A09.02",
+     "name": "tab-chon-kien-thuc-ky-nang",
+     "label": "Tab Chọn kiến thức & kỹ năng",
+     "spec": "`Cụm kiến thức` * (tìm cụm, tick ít nhất 1 cụm; mỗi cụm kèm số mục; dòng `Đã chọn N cụm · M mục kiến thức`); `Kỹ năng` (tick 0 hoặc nhiều trong Nghe, Nói, Đọc, Viết).",
+     "matches": {},
+     "relations": [],
+     "missingTerms": [],
+     "status": "chua-co-spec",
+     "testcases": []
+    },
+    {
+     "id": "CM-HW.A09.03",
+     "name": "so-cau",
+     "label": "Số câu ",
+     "spec": "Bắt buộc, số nguyên ≥ 1; **không giới hạn** số câu mỗi lần.",
+     "matches": {},
+     "relations": [],
+     "missingTerms": [],
+     "status": "chua-co-spec",
+     "testcases": [
+      "CM-HW.TC29",
+      "CM-HW.TC31"
+     ]
+    },
+    {
+     "id": "CM-HW.A09.04",
+     "name": "dang-cau-hoi",
+     "label": "Dạng câu hỏi ",
+     "spec": "`Tuỳ chọn (AI tự phân bổ)` hoặc chọn một / nhiều trong 8 loại câu.",
+     "matches": {},
+     "relations": [],
+     "missingTerms": [],
+     "status": "chua-co-spec",
+     "testcases": []
+    },
+    {
+     "id": "CM-HW.A09.05",
+     "name": "ghi-chu",
+     "label": "Ghi chú",
+     "spec": "`Sau khi Generate sẽ hiện bảng N dòng. Mỗi dòng gồm prompt, kiến thức hoặc kỹ năng và loại câu; bạn sửa từng dòng trước khi tạo câu hỏi.`",
+     "matches": {},
+     "relations": [],
+     "missingTerms": [],
+     "status": "chua-co-spec",
+     "testcases": []
+    },
+    {
+     "id": "CM-HW.A09.06",
+     "name": "huy-generate",
+     "label": "Huỷ / Generate",
+     "spec": "`Generate` chỉ bật khi tab đang dùng đủ field bắt buộc.",
+     "matches": {},
+     "relations": [],
+     "missingTerms": [],
+     "status": "chua-co-spec",
+     "testcases": []
+    }
+   ]
+  },
+  {
+   "id": "CM-HW.A10",
+   "name": "generate-dang-tao-bang-va-loi",
+   "title": "Generate — Đang tạo bảng và lỗi",
+   "screens": [
+    "cd-kh-030344",
+    "cd-kh-030346"
+   ],
+   "syncedScreens": [],
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "CM-HW.A10.01",
+     "name": "dang-tao-bang-generate",
+     "label": "Đang tạo bảng Generate",
+     "spec": "Thanh tiến độ `%` và dòng `Đang tạo N dòng từ prompt của bạn… (x/N dòng)`; nút `Huỷ` dừng tạo, quay lại popup nhập, giữ dữ liệu.",
+     "matches": {},
+     "relations": [],
+     "missingTerms": [],
+     "status": "chua-co-spec",
+     "testcases": []
+    },
+    {
+     "id": "CM-HW.A10.02",
+     "name": "loi",
+     "label": "Lỗi",
+     "spec": "Popup nhập hiện thông báo đỏ `Không tạo được bảng Generate. Dữ liệu bạn đã nhập vẫn được giữ, hãy thử lại.`; nút `Generate` đổi thành `Thử lại`.",
+     "matches": {},
+     "relations": [],
+     "missingTerms": [],
+     "status": "chua-co-spec",
+     "testcases": []
+    }
+   ]
+  },
+  {
+   "id": "CM-HW.A11",
+   "name": "generate-bang-n-dong",
+   "title": "Generate — Bảng N dòng",
+   "screens": [
+    "cd-kh-030343",
+    "cd-kh-030345"
+   ],
+   "syncedScreens": [],
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "CM-HW.A11.01",
+     "name": "dong-tom-tat",
+     "label": "Dòng tóm tắt",
+     "spec": "Prompt đã nhập (cắt `…`), `Chế độ` (Nhập prompt / Chọn kiến thức & kỹ năng), `Số câu`, `Dạng`.",
+     "matches": {},
+     "relations": [],
+     "missingTerms": [],
+     "status": "chua-co-spec",
+     "testcases": []
+    },
+    {
+     "id": "CM-HW.A11.02",
+     "name": "cot",
+     "label": "Cột",
+     "spec": "`☐`, `STT`, `Prompt` (sửa được), `Kiến thức / Kỹ năng` (dropdown cụm của khoá hoặc kỹ năng), `Loại câu` (dropdown `Tuỳ chọn` hoặc 8 loại), `⋮` (xoá dòng).",
+     "matches": {},
+     "relations": [],
+     "missingTerms": [],
+     "status": "chua-co-spec",
+     "testcases": []
+    },
+    {
+     "id": "CM-HW.A11.03",
+     "name": "thanh-chon",
+     "label": "Thanh chọn",
+     "spec": "`Đã chọn x / N dòng`; `Sửa loại chung` (dropdown) + `Áp dụng` đổi Loại câu cho các dòng đã tick; `Bỏ chọn`.",
+     "matches": {},
+     "relations": [],
+     "missingTerms": [],
+     "status": "chua-co-spec",
+     "testcases": []
+    },
+    {
+     "id": "CM-HW.A11.04",
+     "name": "them-n-cau-da-chon",
+     "label": "Thêm N câu đã chọn",
+     "spec": "AI tạo câu hỏi cho các dòng đã tick, thêm vào **cuối** bộ câu hỏi; dòng không tick bị bỏ. `Tuỳ chọn` nghĩa là AI chọn loại câu phù hợp.",
+     "matches": {},
+     "relations": [],
+     "missingTerms": [],
+     "status": "chua-co-spec",
+     "testcases": [
+      "CM-HW.TC37"
+     ]
+    },
+    {
+     "id": "CM-HW.A11.05",
+     "name": "huy-nut",
+     "label": "Huỷ / nút <",
+     "spec": "Mở popup `Bỏ bảng Generate?` (`Bảng N dòng và các chỉnh sửa của bạn sẽ bị xoá. Chưa có câu hỏi nào được thêm vào danh sách.`, nút `Tiếp tục chỉnh sửa` / `Bỏ bảng`).",
+     "matches": {},
+     "relations": [
+      {
+       "type": "opens",
+       "target": "CM-HW.A11",
+       "raw": "Mở popup `Bỏ bảng Generate?` "
+      }
+     ],
+     "missingTerms": [],
+     "status": "chua-co-spec",
+     "testcases": []
+    }
+   ]
+  },
+  {
+   "id": "CM-HW.A12",
+   "name": "generate-sau-khi-tao",
+   "title": "Generate — Sau khi tạo",
+   "screens": [
+    "cd-kh-030347"
+   ],
+   "syncedScreens": [],
+   "needsDesign": false,
+   "figmaDiffNotes": [
+    "Khác Figma CD-KH-030347: tag câu mới ghi `Mới`; requirement dùng tag `AI`."
+   ],
+   "items": [
+    {
+     "id": "CM-HW.A12.01",
+     "name": "cau-moi",
+     "label": "Câu mới",
+     "spec": "Nền xanh nhạt và tag `AI`; số câu tiếp nối cuối bộ.",
+     "matches": {},
+     "relations": [],
+     "missingTerms": [],
+     "status": "chua-co-spec",
+     "testcases": []
+    },
+    {
+     "id": "CM-HW.A12.02",
+     "name": "badge-tong",
+     "label": "Badge tổng",
+     "spec": "`N bài tập · M mới`.",
+     "matches": {},
+     "relations": [],
+     "missingTerms": [],
+     "status": "chua-co-spec",
+     "testcases": []
+    },
+    {
+     "id": "CM-HW.A12.03",
+     "name": "the-tong-quan",
+     "label": "Thẻ tổng quan",
+     "spec": "Cập nhật Tổng số câu, Cơ cấu theo dạng câu.",
+     "matches": {},
+     "relations": [],
+     "missingTerms": [],
+     "status": "chua-co-spec",
+     "testcases": []
+    }
+   ]
+  },
+  {
+   "id": "CM-HW.A13",
+   "name": "toast-phan-hoi-crud",
+   "title": "Toast phản hồi CRUD",
+   "screens": [],
+   "syncedScreens": [],
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "CM-HW.A13.01",
+     "name": "thanh-cong",
+     "label": "Thành công",
+     "spec": "`Thành Công` | `Đã thêm câu hỏi.`; `Đã cập nhật câu hỏi.`; `Đã xoá N câu hỏi.`; `Đã import N câu hỏi.`; `Đã thêm N câu hỏi vào cuối danh sách bài tập.`",
+     "matches": {},
+     "relations": [],
+     "missingTerms": [],
+     "status": "chua-co-spec",
+     "testcases": [
+      "CM-HW.TTC01"
+     ]
+    },
+    {
+     "id": "CM-HW.A13.02",
+     "name": "canh-bao",
+     "label": "Cảnh báo",
+     "spec": "`Cảnh Báo` | `Học kỳ hoặc khoá học không ở trạng thái Nháp, không thể chỉnh sửa câu hỏi.`; `File vượt quá dung lượng cho phép (25MB).`; `File import có dòng lỗi, chưa thêm câu nào.`",
+     "matches": {},
+     "relations": [],
+     "missingTerms": [],
+     "status": "chua-co-spec",
+     "testcases": []
+    },
+    {
+     "id": "CM-HW.A13.03",
+     "name": "loi",
+     "label": "Lỗi",
+     "spec": "`Có Lỗi Xảy Ra` | Lưu, xoá, import, export, tạo câu bằng AI thất bại do backend / network.",
+     "matches": {},
+     "relations": [],
+     "missingTerms": [],
+     "status": "chua-co-spec",
+     "testcases": []
+    }
+   ]
+  }
+ ],
+ "requirements": [
+  {
+   "id": "CM-HW.REQ01",
+   "name": "Chọn bài theo kỳ",
+   "text": "Tab BTVN: kỳ → lesson của kỳ; tab Kiểm tra: kỳ → bài kiểm tra của kỳ; badge số câu từng bài; tìm theo tên bài; mặc định kỳ đầu, bài đầu."
+  },
+  {
+   "id": "CM-HW.REQ02",
+   "name": "Thẻ tổng quan",
+   "text": "Tổng số câu (câu cha), Thời gian làm bài (chỉ Kiểm tra), Cơ cấu theo dạng câu; tag `N câu hỏi`, `N thiếu đáp án`, `Thang 10` (chỉ Kiểm tra); cập nhật ngay sau mọi thay đổi. Không có Tổng điểm và điểm riêng từng câu: mọi câu thang 10, điểm bài là trung bình các câu."
+  },
+  {
+   "id": "CM-HW.REQ03",
+   "name": "Bảng câu hỏi",
+   "text": "Cột STT, Câu hỏi, Loại câu, Đáp án đúng, Kiến thức / Kỹ năng; lọc Loại câu, Kiến thức / Kỹ năng và tìm kiếm (không có lọc Trạng thái); câu hỏi con mở / thu; 50 câu/trang; xoá mềm; chỉ thêm / sửa / xoá khi học kỳ và khoá học `Nháp`."
+  },
+  {
+   "id": "CM-HW.REQ04",
+   "name": "Loại câu",
+   "text": "8 loại Trắc nghiệm, Sắp xếp, Nối từ, Nói (App chấm); Đọc, Viết, Hình ảnh (GV chấm); Câu hỏi con (theo từng câu con)."
+  },
+  {
+   "id": "CM-HW.REQ05",
+   "name": "Soạn câu hỏi",
+   "text": "Bắt buộc Số câu, Loại câu (khoá sau khi chọn), Kiến thức hoặc Kỹ năng, Điểm, Nội dung câu hỏi; đáp án theo loại câu; file tối đa 25MB; Số câu trùng thì chèn và dồn các câu sau."
+  },
+  {
+   "id": "CM-HW.REQ06",
+   "name": "Import / Export Excel",
+   "text": "Cột file giống bảng UI, không có cột Điểm; export toàn bộ câu của bài; import thêm vào cuối, kiểm tra từng dòng, có dòng lỗi thì chặn cả file; không tự dò câu trùng."
+  },
+  {
+   "id": "CM-HW.REQ07",
+   "name": "Soát lỗi bằng AI",
+   "text": "Rà toàn bộ câu của bài, phát hiện câu trùng và các lỗi khác, chỉ báo, không tự sửa."
+  },
+  {
+   "id": "CM-HW.REQ08",
+   "name": "Generate bằng AI",
+   "text": "Hai chế độ Nhập prompt / Chọn kiến thức & kỹ năng; Số câu không giới hạn; sinh bảng N dòng để sửa và chọn; chỉ dòng được tick mới tạo câu, thêm vào cuối bộ với tag `AI`; huỷ / lỗi không thêm câu."
+  },
+  {
+   "id": "CM-HW.REQ09",
+   "name": "Không trạng thái và kỳ Vô hiệu",
+   "text": "BTVN, bộ câu hỏi và câu hỏi không có trạng thái riêng (trạng thái hiển thị ở Thư viện theo khoá học); chỉ sửa được khi học kỳ `Nháp` và khoá học `Nháp`, ngược lại chỉ đọc. Nhân bản học kỳ / khoá học sao chép toàn bộ BTVN và bộ câu hỏi thành câu hỏi mới. Kỳ `Vô hiệu`: BTVN đã tạo trong lớp từ kỳ đó trước khi vô hiệu vẫn dùng bình thường."
+  }
+ ],
+ "exceptions": [
+  {
+   "id": "CM-HW.EX01",
+   "text": "Lưu câu thiếu field bắt buộc (Số câu, Loại câu, Kiến thức / Kỹ năng, Điểm, Nội dung câu hỏi) → báo lỗi dưới field, không lưu."
+  },
+  {
+   "id": "CM-HW.EX02",
+   "text": "File hình ảnh / âm thanh lớn hơn 25MB → không tải lên; Toast `Cảnh Báo` `File vượt quá dung lượng cho phép (25MB).`"
+  },
+  {
+   "id": "CM-HW.EX03",
+   "text": "File import có dòng thiếu field bắt buộc, sai Loại câu, sai Kiến thức / Kỹ năng, không phải `.xlsx` hoặc sai cột tiêu đề → chặn cả file, báo lỗi theo dòng; không thêm câu nào."
+  },
+  {
+   "id": "CM-HW.EX04",
+   "text": "Lưu, import, export thất bại do backend / network → Toast `Có Lỗi Xảy Ra`; dữ liệu không thay đổi một phần."
+  },
+  {
+   "id": "CM-HW.EX05",
+   "text": "Thêm, sửa, xoá, import, generate câu thuộc học kỳ hoặc khoá học không ở `Nháp` (giao diện hoặc request trực tiếp) → backend từ chối; Toast `Cảnh Báo`; dữ liệu không đổi."
+  },
+  {
+   "id": "CM-HW.EX06",
+   "text": "Generate thiếu field bắt buộc (prompt, cụm kiến thức, số câu, dạng câu hỏi) hoặc dòng bảng thiếu Prompt / Kiến thức / Kỹ năng → khoá nút hoặc báo lỗi dòng, không tạo."
+  },
+  {
+   "id": "CM-HW.EX07",
+   "text": "AI không tạo được bảng hoặc câu hỏi → báo lỗi, giữ dữ liệu đã nhập, cho `Thử lại`; không thêm câu nào."
+  }
+ ],
+ "flows": [
+  {
+   "id": "CM-HW.FLOW01",
+   "name": "Chọn kỳ, bài và xem bộ câu hỏi",
+   "requirements": [
+    "CM-HW.REQ01",
+    "CM-HW.REQ02",
+    "CM-HW.REQ03"
+   ]
+  },
+  {
+   "id": "CM-HW.FLOW02",
+   "name": "Thêm câu hỏi soạn tay",
+   "requirements": [
+    "CM-HW.REQ04",
+    "CM-HW.REQ05"
+   ]
+  },
+  {
+   "id": "CM-HW.FLOW03",
+   "name": "Sửa câu hỏi",
+   "requirements": [
+    "CM-HW.REQ05"
+   ]
+  },
+  {
+   "id": "CM-HW.FLOW04",
+   "name": "Xoá câu hỏi",
+   "requirements": [
+    "CM-HW.REQ03"
+   ]
+  },
+  {
+   "id": "CM-HW.FLOW05",
+   "name": "Export và Import Excel",
+   "requirements": [
+    "CM-HW.REQ06"
+   ]
+  },
+  {
+   "id": "CM-HW.FLOW06",
+   "name": "Tạo câu hỏi bằng AI",
+   "requirements": [
+    "CM-HW.REQ08"
+   ]
+  },
+  {
+   "id": "CM-HW.FLOW07",
+   "name": "Soát lỗi bằng AI",
+   "requirements": [
+    "CM-HW.REQ07"
+   ]
+  }
+ ],
+ "testcases": [
+  {
+   "id": "CM-HW.TC01",
+   "title": "Case 1: Mở menu Bài tập về nhà",
+   "priority": "High",
+   "smoke": true,
+   "region": "CM-HW.A01",
+   "scenario": "Flow 1 / REQ01",
+   "requirements": [
+    "CM-HW.REQ01"
+   ],
+   "exceptions": [],
+   "flows": [
+    "CM-HW.FLOW01"
+   ],
+   "items": [
+    "CM-HW.A01.01",
+    "CM-HW.A01.04"
+   ]
+  },
+  {
+   "id": "CM-HW.TC02",
+   "title": "Case 2: Chọn bài khác",
+   "priority": "High",
+   "smoke": false,
+   "region": "CM-HW.A01",
+   "scenario": "Flow 1 / REQ01",
+   "requirements": [
+    "CM-HW.REQ01"
+   ],
+   "exceptions": [],
+   "flows": [
+    "CM-HW.FLOW01"
+   ],
+   "items": []
+  },
+  {
+   "id": "CM-HW.TC03",
+   "title": "Case 3: Tab Kiểm tra theo kỳ",
+   "priority": "High",
+   "smoke": false,
+   "region": "CM-HW.A01",
+   "scenario": "REQ01",
+   "requirements": [
+    "CM-HW.REQ01"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": [
+    "CM-HW.A01.02"
+   ]
+  },
+  {
+   "id": "CM-HW.TC04",
+   "title": "Case 4: Tìm bài",
+   "priority": "Medium",
+   "smoke": false,
+   "region": "CM-HW.A01",
+   "scenario": "REQ01",
+   "requirements": [
+    "CM-HW.REQ01"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "CM-HW.TC05",
+   "title": "Case 5: Kỳ Vô hiệu vẫn dùng ở lớp",
+   "priority": "High",
+   "smoke": false,
+   "region": "CM-HW.A01",
+   "scenario": "REQ09",
+   "requirements": [
+    "CM-HW.REQ09"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "CM-HW.TC5a",
+   "title": "Case 5a: Role khác truy cập Bài Tập Về Nhà / gọi API",
+   "priority": "High",
+   "smoke": false,
+   "region": "CM-HW.A01",
+   "scenario": "Ràng buộc quyền",
+   "requirements": [],
+   "exceptions": [],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "CM-HW.TC06",
+   "title": "Case 6: Thẻ tổng quan đúng bộ câu",
+   "priority": "High",
+   "smoke": false,
+   "region": "CM-HW.A02",
+   "scenario": "REQ02",
+   "requirements": [
+    "CM-HW.REQ02"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "CM-HW.TC07",
+   "title": "Case 7: Tag thiếu đáp án",
+   "priority": "Medium",
+   "smoke": false,
+   "region": "CM-HW.A02",
+   "scenario": "REQ02",
+   "requirements": [
+    "CM-HW.REQ02"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": [
+    "CM-HW.A02.01"
+   ]
+  },
+  {
+   "id": "CM-HW.TC08",
+   "title": "Case 8: BTVN không có thời gian làm bài",
+   "priority": "Low",
+   "smoke": false,
+   "region": "CM-HW.A02",
+   "scenario": "REQ02",
+   "requirements": [
+    "CM-HW.REQ02"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": [
+    "CM-HW.A02.08"
+   ]
+  },
+  {
+   "id": "CM-HW.TC09",
+   "title": "Case 9: Bảng đủ cột",
+   "priority": "High",
+   "smoke": true,
+   "region": "CM-HW.A03",
+   "scenario": "Flow 1 / REQ03",
+   "requirements": [
+    "CM-HW.REQ03"
+   ],
+   "exceptions": [],
+   "flows": [
+    "CM-HW.FLOW01"
+   ],
+   "items": [
+    "CM-HW.A03.03"
+   ]
+  },
+  {
+   "id": "CM-HW.TC10",
+   "title": "Case 10: Lọc kết hợp",
+   "priority": "Medium",
+   "smoke": false,
+   "region": "CM-HW.A03",
+   "scenario": "REQ03",
+   "requirements": [
+    "CM-HW.REQ03"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": [
+    "CM-HW.A03.06"
+   ]
+  },
+  {
+   "id": "CM-HW.TC11",
+   "title": "Case 11: Xoá câu",
+   "priority": "High",
+   "smoke": false,
+   "region": "CM-HW.A03",
+   "scenario": "Flow 4 / REQ03",
+   "requirements": [
+    "CM-HW.REQ03"
+   ],
+   "exceptions": [],
+   "flows": [
+    "CM-HW.FLOW04"
+   ],
+   "items": []
+  },
+  {
+   "id": "CM-HW.TC12",
+   "title": "Case 12: Không thêm / sửa / xoá câu khi không ở Nháp",
+   "priority": "High",
+   "smoke": false,
+   "region": "CM-HW.A03",
+   "scenario": "EX05 / REQ03 / REQ09",
+   "requirements": [
+    "CM-HW.REQ03",
+    "CM-HW.REQ09"
+   ],
+   "exceptions": [
+    "CM-HW.EX05"
+   ],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "CM-HW.TC13",
+   "title": "Case 13: Nhập nhanh",
+   "priority": "Medium",
+   "smoke": false,
+   "region": "CM-HW.A03",
+   "scenario": "Flow 2 / REQ03",
+   "requirements": [
+    "CM-HW.REQ03"
+   ],
+   "exceptions": [],
+   "flows": [
+    "CM-HW.FLOW02"
+   ],
+   "items": []
+  },
+  {
+   "id": "CM-HW.TC13a",
+   "title": "Case 13a: Phân trang 50 câu / trang",
+   "priority": "Low",
+   "smoke": false,
+   "region": "CM-HW.A03",
+   "scenario": "REQ03",
+   "requirements": [
+    "CM-HW.REQ03"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "CM-HW.TC14",
+   "title": "Case 14: Trạng thái rỗng",
+   "priority": "Medium",
+   "smoke": false,
+   "region": "CM-HW.A04",
+   "scenario": "REQ03",
+   "requirements": [
+    "CM-HW.REQ03"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "CM-HW.TC15",
+   "title": "Case 15: Chọn loại và tiếp tục",
+   "priority": "High",
+   "smoke": true,
+   "region": "CM-HW.A05",
+   "scenario": "Flow 2 / REQ04",
+   "requirements": [
+    "CM-HW.REQ04"
+   ],
+   "exceptions": [],
+   "flows": [
+    "CM-HW.FLOW02"
+   ],
+   "items": [
+    "CM-HW.A05.02"
+   ]
+  },
+  {
+   "id": "CM-HW.TC16",
+   "title": "Case 16: Đủ 8 loại và người chấm",
+   "priority": "Medium",
+   "smoke": false,
+   "region": "CM-HW.A05",
+   "scenario": "REQ04",
+   "requirements": [
+    "CM-HW.REQ04"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "CM-HW.TC17",
+   "title": "Case 17: Thêm câu Trắc nghiệm",
+   "priority": "High",
+   "smoke": true,
+   "region": "CM-HW.A06",
+   "scenario": "Flow 2 / REQ05",
+   "requirements": [
+    "CM-HW.REQ05"
+   ],
+   "exceptions": [],
+   "flows": [
+    "CM-HW.FLOW02"
+   ],
+   "items": [
+    "CM-HW.A06.11"
+   ]
+  },
+  {
+   "id": "CM-HW.TC18",
+   "title": "Case 18: Thiếu Kiến thức / Kỹ năng",
+   "priority": "High",
+   "smoke": false,
+   "region": "CM-HW.A06",
+   "scenario": "EX01 / REQ05",
+   "requirements": [
+    "CM-HW.REQ05"
+   ],
+   "exceptions": [
+    "CM-HW.EX01"
+   ],
+   "flows": [],
+   "items": [
+    "CM-HW.A06.02",
+    "CM-HW.A06.04"
+   ]
+  },
+  {
+   "id": "CM-HW.TC19",
+   "title": "Case 19: Chèn theo Số câu",
+   "priority": "Medium",
+   "smoke": false,
+   "region": "CM-HW.A06",
+   "scenario": "REQ05",
+   "requirements": [
+    "CM-HW.REQ05"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": [
+    "CM-HW.A06.02"
+   ]
+  },
+  {
+   "id": "CM-HW.TC20",
+   "title": "Case 20: Sửa câu AI",
+   "priority": "Medium",
+   "smoke": false,
+   "region": "CM-HW.A06",
+   "scenario": "REQ05 / REQ08",
+   "requirements": [
+    "CM-HW.REQ05",
+    "CM-HW.REQ08"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": [
+    "CM-HW.A06.05"
+   ]
+  },
+  {
+   "id": "CM-HW.TC21",
+   "title": "Case 21: File quá 25MB",
+   "priority": "Medium",
+   "smoke": false,
+   "region": "CM-HW.A06",
+   "scenario": "EX02 / REQ05",
+   "requirements": [
+    "CM-HW.REQ05"
+   ],
+   "exceptions": [
+    "CM-HW.EX02"
+   ],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "CM-HW.TC22",
+   "title": "Case 22: Export đúng cột",
+   "priority": "High",
+   "smoke": true,
+   "region": "CM-HW.A07",
+   "scenario": "Flow 5 / REQ06",
+   "requirements": [
+    "CM-HW.REQ06"
+   ],
+   "exceptions": [],
+   "flows": [
+    "CM-HW.FLOW05"
+   ],
+   "items": [
+    "CM-HW.A07.02"
+   ]
+  },
+  {
+   "id": "CM-HW.TC23",
+   "title": "Case 23: Import thành công",
+   "priority": "High",
+   "smoke": true,
+   "region": "CM-HW.A07",
+   "scenario": "Flow 5 / REQ06",
+   "requirements": [
+    "CM-HW.REQ06"
+   ],
+   "exceptions": [],
+   "flows": [
+    "CM-HW.FLOW05"
+   ],
+   "items": []
+  },
+  {
+   "id": "CM-HW.TC24",
+   "title": "Case 24: Chặn cả file khi có dòng lỗi",
+   "priority": "High",
+   "smoke": false,
+   "region": "CM-HW.A07",
+   "scenario": "EX03 / REQ06",
+   "requirements": [
+    "CM-HW.REQ06"
+   ],
+   "exceptions": [
+    "CM-HW.EX03"
+   ],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "CM-HW.TC25",
+   "title": "Case 25: Không tự bỏ câu trùng",
+   "priority": "Medium",
+   "smoke": false,
+   "region": "CM-HW.A07",
+   "scenario": "REQ06 / REQ07",
+   "requirements": [
+    "CM-HW.REQ06",
+    "CM-HW.REQ07"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "CM-HW.TC26",
+   "title": "Case 26: Export rồi import lại",
+   "priority": "Medium",
+   "smoke": false,
+   "region": "CM-HW.A07",
+   "scenario": "REQ06",
+   "requirements": [
+    "CM-HW.REQ06"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": [
+    "CM-HW.A07.02"
+   ]
+  },
+  {
+   "id": "CM-HW.TC26a",
+   "title": "Case 26a: Import file không phải .xlsx / sai cột tiêu đề",
+   "priority": "Medium",
+   "smoke": false,
+   "region": "CM-HW.A07",
+   "scenario": "EX03 / REQ06",
+   "requirements": [
+    "CM-HW.REQ06"
+   ],
+   "exceptions": [
+    "CM-HW.EX03"
+   ],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "CM-HW.TC27",
+   "title": "Case 27: Phát hiện câu trùng",
+   "priority": "High",
+   "smoke": false,
+   "region": "CM-HW.A08",
+   "scenario": "Flow 7 / REQ07",
+   "requirements": [
+    "CM-HW.REQ07"
+   ],
+   "exceptions": [],
+   "flows": [
+    "CM-HW.FLOW07"
+   ],
+   "items": [
+    "CM-HW.A08.03"
+   ]
+  },
+  {
+   "id": "CM-HW.TC28",
+   "title": "Case 28: Không có lỗi",
+   "priority": "Low",
+   "smoke": false,
+   "region": "CM-HW.A08",
+   "scenario": "REQ07",
+   "requirements": [
+    "CM-HW.REQ07"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": [
+    "CM-HW.A08.03"
+   ]
+  },
+  {
+   "id": "CM-HW.TC29",
+   "title": "Case 29: Generate theo prompt",
+   "priority": "High",
+   "smoke": true,
+   "region": "CM-HW.A09",
+   "scenario": "Flow 6 / REQ08",
+   "requirements": [
+    "CM-HW.REQ08"
+   ],
+   "exceptions": [],
+   "flows": [
+    "CM-HW.FLOW06"
+   ],
+   "items": [
+    "CM-HW.A09.03"
+   ]
+  },
+  {
+   "id": "CM-HW.TC30",
+   "title": "Case 30: Chọn cụm bắt buộc",
+   "priority": "High",
+   "smoke": false,
+   "region": "CM-HW.A09",
+   "scenario": "EX06 / REQ08",
+   "requirements": [
+    "CM-HW.REQ08"
+   ],
+   "exceptions": [
+    "CM-HW.EX06"
+   ],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "CM-HW.TC31",
+   "title": "Case 31: Không giới hạn số câu",
+   "priority": "Medium",
+   "smoke": false,
+   "region": "CM-HW.A09",
+   "scenario": "REQ08",
+   "requirements": [
+    "CM-HW.REQ08"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": [
+    "CM-HW.A09.03"
+   ]
+  },
+  {
+   "id": "CM-HW.TC32",
+   "title": "Case 32: Huỷ khi đang tạo",
+   "priority": "Medium",
+   "smoke": false,
+   "region": "CM-HW.A10",
+   "scenario": "Flow 6 / REQ08",
+   "requirements": [
+    "CM-HW.REQ08"
+   ],
+   "exceptions": [],
+   "flows": [
+    "CM-HW.FLOW06"
+   ],
+   "items": []
+  },
+  {
+   "id": "CM-HW.TC33",
+   "title": "Case 33: Lỗi tạo bảng",
+   "priority": "High",
+   "smoke": false,
+   "region": "CM-HW.A10",
+   "scenario": "EX07 / REQ08",
+   "requirements": [
+    "CM-HW.REQ08"
+   ],
+   "exceptions": [
+    "CM-HW.EX07"
+   ],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "CM-HW.TC34",
+   "title": "Case 34: Thêm các dòng đã chọn",
+   "priority": "High",
+   "smoke": true,
+   "region": "CM-HW.A11",
+   "scenario": "Flow 6 / REQ08",
+   "requirements": [
+    "CM-HW.REQ08"
+   ],
+   "exceptions": [],
+   "flows": [
+    "CM-HW.FLOW06"
+   ],
+   "items": []
+  },
+  {
+   "id": "CM-HW.TC35",
+   "title": "Case 35: Sửa loại chung",
+   "priority": "Medium",
+   "smoke": false,
+   "region": "CM-HW.A11",
+   "scenario": "REQ08",
+   "requirements": [
+    "CM-HW.REQ08"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "CM-HW.TC36",
+   "title": "Case 36: Bỏ bảng",
+   "priority": "Medium",
+   "smoke": false,
+   "region": "CM-HW.A11",
+   "scenario": "Flow 6 / REQ08",
+   "requirements": [
+    "CM-HW.REQ08"
+   ],
+   "exceptions": [],
+   "flows": [
+    "CM-HW.FLOW06"
+   ],
+   "items": []
+  },
+  {
+   "id": "CM-HW.TC37",
+   "title": "Case 37: Dòng thiếu Kiến thức / Kỹ năng",
+   "priority": "Medium",
+   "smoke": false,
+   "region": "CM-HW.A11",
+   "scenario": "EX06 / REQ08",
+   "requirements": [
+    "CM-HW.REQ08"
+   ],
+   "exceptions": [
+    "CM-HW.EX06"
+   ],
+   "flows": [],
+   "items": [
+    "CM-HW.A11.04"
+   ]
+  },
+  {
+   "id": "CM-HW.TC38",
+   "title": "Case 38: Cuộn tới câu mới",
+   "priority": "Medium",
+   "smoke": false,
+   "region": "CM-HW.A12",
+   "scenario": "REQ08",
+   "requirements": [
+    "CM-HW.REQ08"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "CM-HW.TTC01",
+   "title": "Toast Case 1: Thành công",
+   "priority": "High",
+   "smoke": false,
+   "region": "CM-HW.A13",
+   "scenario": "Ràng buộc Toast CRUD",
+   "requirements": [],
+   "exceptions": [],
+   "flows": [],
+   "items": [
+    "CM-HW.A13.01"
+   ]
+  },
+  {
+   "id": "CM-HW.TTC02",
+   "title": "Toast Case 2: Lỗi",
+   "priority": "High",
+   "smoke": false,
+   "region": "CM-HW.A13",
+   "scenario": "Ràng buộc Toast CRUD",
+   "requirements": [],
+   "exceptions": [],
+   "flows": [],
+   "items": []
+  }
+ ],
+ "orphanLayers": {
+  "cd-kh-060100": [
+   {
+    "figmaId": "5491:347473",
+    "layer": "Tab · BTVN",
+    "component": "Atom/Side Tab",
+    "region": "Panel · BTVN theo kỳ & bài"
+   },
+   {
+    "figmaId": "5491:347475",
+    "layer": "Tab · Kiểm tra",
+    "component": "Atom/Side Tab",
+    "region": "Panel · BTVN theo kỳ & bài"
+   }
+  ],
+  "cd-kh-060200": [
+   {
+    "figmaId": "5491:348636",
+    "layer": "Tab · BTVN",
+    "component": "Atom/Side Tab",
+    "region": "Panel · Danh sách bài kiểm tra"
+   },
+   {
+    "figmaId": "5491:348638",
+    "layer": "Tab · Kiểm tra",
+    "component": "Atom/Side Tab",
+    "region": "Panel · Danh sách bài kiểm tra"
+   }
+  ]
+ },
+ "designSystemUsage": [
+  [
+   "Atom/Tag",
+   38
+  ],
+  [
+   "Action Icon",
+   28
+  ],
+  [
+   "Checkbox",
+   18
+  ],
+  [
+   "Atom/Button",
+   12
+  ],
+  [
+   "Atom/Input",
+   4
+  ],
+  [
+   "DD/Molecule/Trigger",
+   4
+  ],
+  [
+   "Atom/Side Tab",
+   4
+  ],
+  [
+   "Molecule/Add New Bar",
+   2
+  ],
+  [
+   "Atom/Icon Button",
+   2
+  ]
+ ],
+ "namingFlags": {},
+ "namingExamples": {}
+}

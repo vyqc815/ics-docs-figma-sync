@@ -1,0 +1,17 @@
+{
+  "route": "/bao-loi/chua-co-bao-loi-gv-bl-010040",
+  "pageFile": "components/figma/gv-bl-010040/index.tsx",
+  "docFile": "docs/pages/bao-loi/chua-co-bao-loi-gv-bl-010040.md",
+  "sections": [
+    {
+      "nodeId": "5019:366840",
+      "component": "Body",
+      "file": "components/figma/gv-bl-010040/Body.tsx"
+    },
+    {
+      "nodeId": "5019:366975",
+      "component": "NoiDung",
+      "file": "components/figma/gv-bl-010040/NoiDung.tsx"
+    }
+  ]
+}

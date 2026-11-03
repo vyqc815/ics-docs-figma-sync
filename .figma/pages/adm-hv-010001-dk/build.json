@@ -1,0 +1,37 @@
+{
+  "route": "/danh-sach-hoc-vien/hover-menu-thao-tac-dk",
+  "pageFile": "components/figma/adm-hv-010001-dk/index.tsx",
+  "docFile": "docs/pages/danh-sach-hoc-vien/hover-menu-thao-tac-dk.md",
+  "sections": [
+    {
+      "nodeId": "4056:121653",
+      "component": "Header16",
+      "file": "components/figma/shared/Header16.tsx"
+    },
+    {
+      "nodeId": "4056:121702",
+      "component": "Sidebar",
+      "file": "components/figma/adm-hv-010001-dk/Sidebar.tsx"
+    },
+    {
+      "nodeId": "4056:121786",
+      "component": "Maincontent",
+      "file": "components/figma/adm-hv-010001-dk/Maincontent.tsx"
+    },
+    {
+      "nodeId": "4056:122017",
+      "component": "TooltipLopHienTaiHover",
+      "file": "components/figma/adm-hv-010001-dk/TooltipLopHienTaiHover.tsx"
+    },
+    {
+      "nodeId": "4056:122018",
+      "component": "TooltipGhiChuHoverClick",
+      "file": "components/figma/adm-hv-010001-dk/TooltipGhiChuHoverClick.tsx"
+    },
+    {
+      "nodeId": "4056:122019",
+      "component": "TooltipSoLopHover",
+      "file": "components/figma/adm-hv-010001-dk/TooltipSoLopHover.tsx"
+    }
+  ]
+}

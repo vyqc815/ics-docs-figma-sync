@@ -1,0 +1,32 @@
+{
+  "route": "/lop-hoc/cai-dat/lich-day/popup-them-lich-day-co-dinh-dk",
+  "pageFile": "components/figma/adm-lop-040510-dk/index.tsx",
+  "docFile": "docs/pages/lop-hoc/cai-dat/lich-day/popup-them-lich-day-co-dinh-dk.md",
+  "sections": [
+    {
+      "nodeId": "4056:117323",
+      "component": "PopupHeader7",
+      "file": "components/figma/shared/PopupHeader7.tsx"
+    },
+    {
+      "nodeId": "4056:117324",
+      "component": "Body",
+      "file": "components/figma/adm-lop-040510-dk/Body.tsx"
+    },
+    {
+      "nodeId": "4056:117488",
+      "component": "PopupFooter2",
+      "file": "components/figma/shared/PopupFooter2.tsx"
+    }
+  ],
+  "idAlias": {
+    "4056:117323": "4056:108389",
+    "I4056:117323;2514:153357": "I4056:108389;2514:153357",
+    "I4056:117323;2514:153358": "I4056:108389;2514:153358",
+    "4056:117488": "4056:108554",
+    "I4056:117488;2514:153361": "I4056:108554;2514:153361",
+    "I4056:117488;2514:153361;1048:1232": "I4056:108554;2514:153361;1048:1232",
+    "I4056:117488;2514:153363": "I4056:108554;2514:153363",
+    "I4056:117488;2514:153363;1048:1230": "I4056:108554;2514:153363;1048:1230"
+  }
+}
