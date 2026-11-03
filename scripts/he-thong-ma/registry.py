@@ -12,7 +12,7 @@ Requirements are read only, never changed.
   registry.py md <cluster>
   registry.py all            # build + md for every cluster in clusters.json
 """
-import argparse, collections, json, os, re, sys, unicodedata, zipfile
+import argparse, collections, gzip, json, os, re, sys, unicodedata, zipfile
 
 from khoa_ma import Lock
 
@@ -147,10 +147,14 @@ class Specs:
         if name in self.cache:
             return self.cache[name]
         path = f"{self.work}/.figma/pages/{name}/page-spec.json"
-        if not os.path.exists(path):
+        slim = f"{self.work}/docs/he-thong-ma/spec-slim/{name}.json.gz"  # spec_slim.py: the same fields, committed
+        if os.path.exists(path) and not os.environ.get("SPEC_SLIM_ONLY"):
+            tree = json.load(open(path))["tree"]
+        elif os.path.exists(slim):
+            tree = json.load(gzip.open(slim))["tree"]
+        else:
             self.cache[name] = None
             return None
-        tree = json.load(open(path))["tree"]
         nodes = []
 
         def walk(n, trail, region, parent=None):

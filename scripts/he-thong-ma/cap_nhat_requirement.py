@@ -125,7 +125,8 @@ def main():
     if added:
         json.dump(reqmap, open(map_path, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
 
-    # 4. registry theo bộ mới
+    # 4. registry theo bộ mới (spec_slim: bản rút gọn page-spec để GitHub Actions khớp layer như trên máy)
+    run(f"{HERE}/spec_slim.py", "--work", w)
     run(f"{HERE}/make_clusters.py", "--work", w)
     run(f"{HERE}/registry.py", "all", "--req", src, "--work", w)
     run(f"{HERE}/figma_fixes.py", "--work", w)
