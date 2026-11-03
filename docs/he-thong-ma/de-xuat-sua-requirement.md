@@ -35,7 +35,7 @@ Figma: `CD-KH-060100` và `CD-KH-060200` đã bỏ thẻ Tổng điểm, bảng 
 
 Requirement ghi "Figma là danh sách phẳng"; Figma `CD-KH-060200` đã chia theo HK I, II, III giống requirement.
 
-**Đề xuất:** QC xoá ghi chú "Khác Figma" ở khu vực `A01`. Sau đó `FIX-001` không cần làm.
+**Đã chốt (design, 2026-11-03): tab Kiểm tra chia theo học kỳ là đúng.** QC xoá ghi chú "Khác Figma" ở khu vực `A01`; `FIX-001` không cần làm.
 
 ## 4. Màn chưa được requirement nhắc mã
 
