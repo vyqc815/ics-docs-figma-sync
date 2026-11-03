@@ -1,0 +1,2338 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Requirement Chi tiết lớp học — Menu Tổng quan">
+  <link rel="icon" href="data:,">
+  <title>Chi tiết lớp học — Menu Tổng quan — Requirement</title>
+  <style>
+    :root {
+      --orange-700: #c83f00;
+      --orange-600: #e84c00;
+      --orange-500: #f45b0a;
+      --orange-400: #ff7a32;
+      --orange-100: #fff0e8;
+      --orange-50: #fff8f4;
+      --navy-950: #101828;
+      --navy-900: #172033;
+      --navy-800: #243047;
+      --slate-700: #344054;
+      --slate-600: #475467;
+      --slate-500: #667085;
+      --slate-400: #98a2b3;
+      --slate-300: #d0d5dd;
+      --slate-200: #e4e7ec;
+      --slate-100: #f2f4f7;
+      --slate-50: #f8fafc;
+      --white: #ffffff;
+      --green: #159447;
+      --blue: #2154c5;
+      --yellow: #b77900;
+      --red: #c92a2a;
+      --purple: #6941c6;
+      --shadow-sm: 0 1px 2px rgba(16, 24, 40, .06);
+      --shadow-md: 0 12px 32px rgba(16, 24, 40, .10);
+      --shadow-lg: 0 24px 64px rgba(16, 24, 40, .16);
+      --radius-sm: 10px;
+      --radius: 16px;
+      --radius-lg: 24px;
+      --sidebar: 286px;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      color: var(--navy-950);
+      background:
+        radial-gradient(circle at 88% 5%, rgba(244, 91, 10, .10), transparent 24rem),
+        var(--slate-50);
+      font: 15px/1.65 Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      text-rendering: optimizeLegibility;
+    }
+    a { color: inherit; }
+    img { max-width: 100%; }
+    button, input, select { font: inherit; }
+    code {
+      padding: .12rem .38rem;
+      border: 1px solid #fed7c3;
+      border-radius: 6px;
+      color: var(--orange-700);
+      background: var(--orange-50);
+      font: 600 .9em ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    }
+
+    .skip-link {
+      position: fixed;
+      z-index: 999;
+      top: 12px;
+      left: 12px;
+      padding: 10px 14px;
+      border-radius: 9px;
+      color: var(--white);
+      background: var(--navy-950);
+      transform: translateY(-150%);
+    }
+    .skip-link:focus { transform: none; }
+
+    .sidebar {
+      position: fixed;
+      z-index: 30;
+      inset: 0 auto 0 0;
+      width: var(--sidebar);
+      padding: 22px 18px;
+      overflow-y: auto;
+      color: #f8fafc;
+      background:
+        linear-gradient(155deg, rgba(255, 122, 50, .24), transparent 26%),
+        linear-gradient(180deg, #192338 0%, #111827 100%);
+      border-right: 1px solid rgba(255, 255, 255, .08);
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 4px 8px 22px;
+      border-bottom: 1px solid rgba(255, 255, 255, .10);
+    }
+    .brand-mark {
+      display: grid;
+      width: 44px;
+      height: 44px;
+      place-items: center;
+      border-radius: 14px;
+      color: var(--white);
+      background: linear-gradient(135deg, var(--orange-400), var(--orange-600));
+      box-shadow: 0 10px 26px rgba(244, 91, 10, .35);
+      font-weight: 900;
+      letter-spacing: -.06em;
+    }
+    .brand strong { display: block; font-size: 16px; }
+    .brand small { color: #aeb8c9; }
+    .nav-title {
+      margin: 24px 10px 8px;
+      color: #8f9aae;
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+    .nav { display: grid; gap: 4px; }
+    .nav a {
+      display: flex;
+      align-items: center;
+      gap: 11px;
+      padding: 10px 12px;
+      border-radius: 10px;
+      color: #cbd5e1;
+      text-decoration: none;
+      transition: .18s ease;
+    }
+    .nav a:hover, .nav a.active {
+      color: var(--white);
+      background: rgba(255, 255, 255, .09);
+    }
+    .nav a.active { box-shadow: inset 3px 0 var(--orange-400); }
+    .nav-num {
+      display: grid;
+      width: 25px;
+      height: 25px;
+      flex: 0 0 auto;
+      place-items: center;
+      border: 1px solid rgba(255, 255, 255, .15);
+      border-radius: 8px;
+      font-size: 11px;
+      font-weight: 800;
+    }
+    .sidebar-footer {
+      margin-top: 26px;
+      padding: 14px;
+      border: 1px solid rgba(255, 255, 255, .10);
+      border-radius: 14px;
+      color: #aeb8c9;
+      background: rgba(255, 255, 255, .04);
+      font-size: 12px;
+    }
+    .sidebar-footer a { color: #ffd8c5; }
+
+    main {
+      width: min(1500px, calc(100% - var(--sidebar)));
+      margin-left: var(--sidebar);
+      padding: 34px clamp(24px, 4vw, 64px) 80px;
+    }
+    section { scroll-margin-top: 24px; }
+    .hero {
+      position: relative;
+      padding: clamp(30px, 5vw, 56px);
+      overflow: hidden;
+      border: 1px solid rgba(255, 255, 255, .08);
+      border-radius: var(--radius-lg);
+      color: var(--white);
+      background:
+        linear-gradient(105deg, rgba(16, 24, 40, .97) 0%, rgba(23, 32, 51, .94) 62%, rgba(109, 45, 9, .90) 100%);
+      box-shadow: var(--shadow-lg);
+    }
+    .hero::after {
+      content: "";
+      position: absolute;
+      width: 360px;
+      height: 360px;
+      top: -190px;
+      right: -80px;
+      border: 70px solid rgba(255, 122, 50, .15);
+      border-radius: 50%;
+    }
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 10px;
+      border: 1px solid rgba(255, 255, 255, .15);
+      border-radius: 999px;
+      color: #ffd8c5;
+      background: rgba(255, 255, 255, .06);
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+    .hero h1 {
+      max-width: 900px;
+      margin: 18px 0 12px;
+      font-size: clamp(34px, 5vw, 64px);
+      line-height: 1.03;
+      letter-spacing: -.045em;
+    }
+    .hero p { max-width: 780px; margin: 0; color: #cbd5e1; font-size: 17px; }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 25px; }
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      min-height: 42px;
+      padding: 9px 14px;
+      border: 1px solid transparent;
+      border-radius: 10px;
+      color: var(--white);
+      background: var(--orange-500);
+      text-decoration: none;
+      cursor: pointer;
+      transition: .18s ease;
+    }
+    .button:hover { transform: translateY(-1px); background: var(--orange-600); }
+    .button.secondary { border-color: rgba(255, 255, 255, .15); background: rgba(255, 255, 255, .07); }
+    .button.ghost { color: var(--slate-700); border-color: var(--slate-300); background: var(--white); }
+    .button.small { min-height: 36px; padding: 7px 11px; font-size: 13px; }
+
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 14px;
+      margin-top: 18px;
+    }
+    .stat {
+      padding: 18px;
+      border: 1px solid var(--slate-200);
+      border-radius: var(--radius);
+      background: rgba(255, 255, 255, .86);
+      box-shadow: var(--shadow-sm);
+    }
+    .stat strong { display: block; color: var(--orange-600); font-size: 30px; line-height: 1; }
+    .stat span { display: block; margin-top: 7px; color: var(--slate-600); font-weight: 650; }
+
+    .section-head {
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 24px;
+      margin: 64px 0 20px;
+    }
+    .section-kicker {
+      margin: 0 0 6px;
+      color: var(--orange-600);
+      font-size: 12px;
+      font-weight: 850;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+    .section-head h2 { margin: 0; font-size: clamp(27px, 4vw, 40px); letter-spacing: -.035em; }
+    .section-head p { max-width: 600px; margin: 8px 0 0; color: var(--slate-600); }
+
+    .panel {
+      padding: clamp(20px, 3vw, 30px);
+      border: 1px solid var(--slate-200);
+      border-radius: var(--radius-lg);
+      background: var(--white);
+      box-shadow: var(--shadow-sm);
+    }
+    .panel + .panel { margin-top: 18px; }
+    .panel h3 { margin: 0 0 14px; font-size: 21px; letter-spacing: -.02em; }
+    .panel h4 { margin: 26px 0 10px; }
+    .muted { color: var(--slate-600); }
+    .note {
+      padding: 15px 17px;
+      border-left: 4px solid var(--orange-500);
+      border-radius: 0 12px 12px 0;
+      color: var(--slate-700);
+      background: var(--orange-50);
+    }
+
+    .mockup {
+      position: relative;
+      padding: 12px;
+      border: 1px solid var(--slate-200);
+      border-radius: 18px;
+      background: linear-gradient(145deg, #fff, #f4f6f9);
+      box-shadow: var(--shadow-md);
+    }
+    .mockup a { display: block; overflow: hidden; border-radius: 12px; }
+    .mockup img { display: block; width: 100%; transition: transform .3s ease; }
+    .mockup a:hover img { transform: scale(1.01); }
+    .mockup figcaption { padding: 12px 4px 2px; color: var(--slate-600); font-size: 13px; }
+
+    .grid-2 { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
+    .grid-3 { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+    .grid-4 { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 14px; }
+    .card {
+      padding: 18px;
+      border: 1px solid var(--slate-200);
+      border-radius: var(--radius);
+      background: var(--white);
+      box-shadow: var(--shadow-sm);
+    }
+    .card h3, .card h4 { margin: 0 0 8px; }
+    .card p { margin: 0; color: var(--slate-600); }
+    .card-accent { border-top: 4px solid var(--orange-500); }
+
+    .column-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+    .column-item {
+      min-height: 124px;
+      padding: 15px;
+      border: 1px solid var(--slate-200);
+      border-radius: 14px;
+      background: var(--slate-50);
+    }
+    .column-item strong { display: block; margin-bottom: 5px; color: var(--navy-900); }
+    .column-item span { color: var(--slate-600); font-size: 13px; }
+
+    .status-card { display: flex; align-items: center; gap: 12px; }
+    .status-card img { width: 42px; height: 42px; }
+    .status-card small { display: block; color: var(--slate-500); }
+
+    .tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      padding: 4px 9px;
+      border-radius: 999px;
+      color: var(--orange-700);
+      background: var(--orange-100);
+      font-size: 12px;
+      font-weight: 800;
+    }
+    .tag.high { color: #9d174d; background: #fce7f3; }
+    .tag.medium { color: #92400e; background: #fef3c7; }
+    .tag.req { color: #3730a3; background: #e0e7ff; }
+    .tag.ex { color: #b42318; background: #fee4e2; }
+
+    .flow-list { display: grid; gap: 14px; counter-reset: flow; }
+    .flow {
+      position: relative;
+      padding: 22px 22px 22px 68px;
+      border: 1px solid var(--slate-200);
+      border-radius: var(--radius);
+      background: var(--white);
+    }
+    .flow::before {
+      counter-increment: flow;
+      content: counter(flow, decimal-leading-zero);
+      position: absolute;
+      top: 20px;
+      left: 18px;
+      display: grid;
+      width: 36px;
+      height: 36px;
+      place-items: center;
+      border-radius: 11px;
+      color: var(--white);
+      background: var(--orange-500);
+      font-weight: 900;
+    }
+    .flow h3 { margin: 0 0 8px; }
+    .flow ol { margin: 0; padding-left: 20px; color: var(--slate-700); }
+
+    .exception { border-left: 4px solid #ef4444; }
+    .exception strong { color: var(--red); }
+
+    .formula-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; }
+    .formula {
+      padding: 18px;
+      border: 1px solid #ffd6c2;
+      border-radius: 16px;
+      background: linear-gradient(160deg, #fff, var(--orange-50));
+    }
+    .formula h4 { margin: 0 0 12px; color: var(--orange-700); }
+    .fraction { display: grid; justify-items: center; color: var(--navy-900); font-weight: 720; text-align: center; }
+    .fraction .top { padding: 0 10px 7px; border-bottom: 2px solid var(--navy-800); }
+    .fraction .bottom { padding-top: 7px; }
+    .formula .teacher { margin-top: 16px; padding-top: 12px; border-top: 1px dashed #f5b896; color: var(--slate-600); font-size: 13px; }
+
+    .filters {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      align-items: center;
+      padding: 14px;
+      border: 1px solid var(--slate-200);
+      border-radius: 14px;
+      background: var(--white);
+      position: sticky;
+      top: 10px;
+      z-index: 10;
+      box-shadow: var(--shadow-md);
+    }
+    .search {
+      min-width: min(100%, 320px);
+      flex: 1 1 260px;
+      height: 42px;
+      padding: 0 13px;
+      border: 1px solid var(--slate-300);
+      border-radius: 10px;
+      color: var(--navy-950);
+      background: var(--white);
+      outline: none;
+    }
+    .search:focus { border-color: var(--orange-500); box-shadow: 0 0 0 4px rgba(244, 91, 10, .12); }
+    .testcases { display: grid; gap: 10px; margin-top: 16px; }
+    .testcase {
+      border: 1px solid var(--slate-200);
+      border-radius: 14px;
+      background: var(--white);
+      overflow: clip;
+    }
+    .testcase[hidden] { display: none; }
+    .testcase summary {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 15px 17px;
+      cursor: pointer;
+      list-style: none;
+    }
+    .testcase summary::-webkit-details-marker { display: none; }
+    .testcase summary::after { content: "+"; margin-left: auto; color: var(--orange-600); font-size: 22px; font-weight: 700; }
+    .testcase[open] summary::after { content: "−"; }
+    .testcase-title { min-width: 0; font-weight: 780; }
+    .case-body {
+      display: grid;
+      grid-template-columns: minmax(180px, .7fr) minmax(0, 1.3fr);
+      gap: 18px;
+      padding: 18px;
+      border-top: 1px solid var(--slate-200);
+      background: var(--slate-50);
+    }
+    .case-meta { color: var(--slate-600); }
+    .case-meta div + div { margin-top: 8px; }
+    .case-steps { display: grid; gap: 10px; }
+    .step { padding: 10px 12px; border-left: 3px solid var(--orange-400); background: var(--white); }
+    .expected { margin: 14px 0 0; padding-left: 20px; }
+    .expected li + li { margin-top: 4px; }
+    .empty-filter { display: none; padding: 28px; color: var(--slate-600); text-align: center; }
+
+    .question-list { display: grid; gap: 10px; margin: 0; padding: 0; counter-reset: question; list-style: none; }
+    .question-list li {
+      position: relative;
+      padding: 14px 16px 14px 54px;
+      border: 1px solid #f4d8a4;
+      border-radius: 13px;
+      background: #fffbeb;
+      color: #664d03;
+    }
+    .question-list li::before {
+      counter-increment: question;
+      content: counter(question);
+      position: absolute;
+      top: 12px;
+      left: 14px;
+      display: grid;
+      width: 28px;
+      height: 28px;
+      place-items: center;
+      border-radius: 9px;
+      color: #fff;
+      background: #d99100;
+      font-weight: 850;
+    }
+
+    .footer {
+      margin-top: 64px;
+      padding-top: 24px;
+      border-top: 1px solid var(--slate-200);
+      color: var(--slate-500);
+      text-align: center;
+    }
+
+    @media (max-width: 1120px) {
+      :root { --sidebar: 244px; }
+      .column-grid, .grid-3, .formula-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .stats { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
+    @media (max-width: 780px) {
+      .sidebar { position: static; width: auto; padding: 14px; }
+      .brand { padding-bottom: 12px; }
+      .nav-title, .sidebar-footer { display: none; }
+      .nav { display: flex; overflow-x: auto; padding-top: 10px; }
+      .nav a { flex: 0 0 auto; }
+      main { width: 100%; margin: 0; padding: 18px 14px 60px; }
+      .hero { border-radius: 18px; }
+      .grid-2, .grid-3, .grid-4, .column-grid, .formula-grid, .case-body { grid-template-columns: 1fr; }
+      .section-head { align-items: start; flex-direction: column; }
+      .filters { position: static; }
+    }
+    @media print {
+      body { background: #fff; font-size: 11px; }
+      .sidebar, .hero-actions, .filters, .skip-link { display: none !important; }
+      main { width: 100%; margin: 0; padding: 0; }
+      .hero { color: #111; background: #fff; border: 2px solid #111; box-shadow: none; }
+      .hero p { color: #333; }
+      .panel, .card, .stat, .mockup, .testcase { break-inside: avoid; box-shadow: none; }
+      .section-head { margin-top: 32px; }
+      .testcase { display: block !important; }
+      .testcase summary::after { display: none; }
+      .testcase:not([open]) .case-body { display: grid; }
+    }
+
+    .doc-shell { min-width: 0; }
+    .doc-toolbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      margin-bottom: 18px;
+      padding: 14px 16px;
+      border: 1px solid var(--slate-200);
+      border-radius: 14px;
+      background: rgba(255,255,255,.92);
+      box-shadow: var(--shadow-sm);
+    }
+    .doc-toolbar-left, .doc-toolbar-right { display: flex; flex-wrap: wrap; align-items: center; gap: 9px; }
+    .sync-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      padding: 6px 10px;
+      border-radius: 999px;
+      color: #067647;
+      background: #ecfdf3;
+      border: 1px solid #abefc6;
+      font-size: 12px;
+      font-weight: 800;
+    }
+    .sync-badge::before { content: "✓"; }
+    .hash { color: var(--slate-500); font: 12px ui-monospace, SFMono-Regular, Menlo, monospace; }
+    .markdown-body {
+      padding: clamp(24px, 4vw, 54px);
+      border: 1px solid var(--slate-200);
+      border-radius: var(--radius-lg);
+      background: var(--white);
+      box-shadow: var(--shadow-md);
+      overflow: hidden;
+    }
+    .markdown-body > h1 {
+      position: relative;
+      margin: -54px -54px 42px;
+      padding: 62px 54px 54px;
+      color: var(--white);
+      background:
+        radial-gradient(circle at 88% 10%, rgba(255,122,50,.36), transparent 20rem),
+        linear-gradient(115deg, var(--navy-950), #243047 68%, #713209);
+      font-size: clamp(34px, 5vw, 62px);
+      line-height: 1.05;
+      letter-spacing: -.045em;
+    }
+    .markdown-body h2 {
+      margin: 70px 0 24px;
+      padding: 0 0 13px;
+      border-bottom: 2px solid var(--slate-200);
+      font-size: clamp(27px, 4vw, 39px);
+      line-height: 1.15;
+      letter-spacing: -.035em;
+      scroll-margin-top: 24px;
+    }
+    .markdown-body h2::first-letter { color: var(--orange-600); }
+    .markdown-body h3 {
+      margin: 38px 0 16px;
+      color: var(--navy-900);
+      font-size: 23px;
+      line-height: 1.25;
+      letter-spacing: -.02em;
+      scroll-margin-top: 24px;
+    }
+    .markdown-body h4 {
+      margin: 28px 0 12px;
+      color: var(--orange-700);
+      font-size: 17px;
+      scroll-margin-top: 24px;
+    }
+    .markdown-body p { margin: 12px 0; }
+    .markdown-body strong { color: var(--navy-900); }
+    .markdown-body ul, .markdown-body ol { padding-left: 1.35rem; }
+    .markdown-body li { margin: 6px 0; }
+    .markdown-body li::marker { color: var(--orange-500); font-weight: 800; }
+    .markdown-body hr {
+      height: 1px;
+      margin: 48px 0;
+      border: 0;
+      background: linear-gradient(90deg, transparent, var(--slate-300), transparent);
+    }
+    .markdown-body > p[align="center"] {
+      margin: 22px 0 28px;
+      padding: 12px;
+      border: 1px solid var(--slate-200);
+      border-radius: 18px;
+      background: linear-gradient(145deg, #fff, #f5f7fa);
+      box-shadow: var(--shadow-md);
+    }
+    .markdown-body > p[align="center"] a { display: inline-block; max-width: 100%; }
+    .markdown-body > p[align="center"] img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+      margin: auto;
+      border-radius: 12px;
+    }
+    .markdown-body > p[align="center"] em {
+      display: block;
+      margin-top: 10px;
+      color: var(--slate-500);
+      font-size: 13px;
+    }
+    .table-wrap {
+      width: 100%;
+      margin: 18px 0 28px;
+      overflow: auto;
+      border: 1px solid var(--slate-200);
+      border-radius: 15px;
+      background: var(--white);
+      box-shadow: var(--shadow-sm);
+    }
+    .markdown-body table {
+      width: 100%;
+      min-width: 720px;
+      border-collapse: separate;
+      border-spacing: 0;
+      font-size: 14px;
+    }
+    .markdown-body th {
+      position: sticky;
+      top: 0;
+      z-index: 2;
+      padding: 12px 14px;
+      color: var(--white);
+      background: var(--navy-900);
+      border-bottom: 1px solid var(--navy-800);
+      text-align: left;
+      white-space: nowrap;
+    }
+    .markdown-body td {
+      padding: 12px 14px;
+      border-bottom: 1px solid var(--slate-200);
+      vertical-align: top;
+    }
+    .markdown-body tbody tr:nth-child(even) td { background: var(--slate-50); }
+    .markdown-body tbody tr:hover td { background: var(--orange-50); }
+    .markdown-body tbody tr:last-child td { border-bottom: 0; }
+    .markdown-body td img { display: block; width: 36px; height: 36px; max-width: none; }
+    .markdown-body pre {
+      position: relative;
+      margin: 16px 0 24px;
+      padding: 18px 20px;
+      overflow: auto;
+      border: 1px solid #ffd3bd;
+      border-radius: 14px;
+      color: #fff7ed;
+      background: linear-gradient(145deg, #172033, #222f48);
+      box-shadow: var(--shadow-sm);
+      font: 13px/1.75 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    }
+    .markdown-body pre code { padding: 0; border: 0; color: inherit; background: none; font: inherit; }
+    .markdown-body blockquote {
+      margin: 18px 0;
+      padding: 13px 16px;
+      border-left: 4px solid var(--orange-500);
+      border-radius: 0 12px 12px 0;
+      color: var(--slate-700);
+      background: var(--orange-50);
+    }
+    .case-tools {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 10px;
+      margin: 12px 0 14px;
+      padding: 13px;
+      border: 1px solid var(--slate-200);
+      border-radius: 13px;
+      background: var(--slate-50);
+    }
+    .case-tools input {
+      flex: 1 1 280px;
+      height: 42px;
+      padding: 0 13px;
+      border: 1px solid var(--slate-300);
+      border-radius: 10px;
+      outline: none;
+    }
+    .case-tools input:focus { border-color: var(--orange-500); box-shadow: 0 0 0 4px rgba(244,91,10,.12); }
+    .case-count { color: var(--orange-700); font-weight: 800; white-space: nowrap; }
+    .testcase-table table { min-width: 1500px; }
+    .testcase-table th:first-child, .testcase-table td:first-child {
+      position: sticky;
+      left: 0;
+      z-index: 1;
+      min-width: 230px;
+      box-shadow: 1px 0 0 var(--slate-200);
+    }
+    .testcase-table th:first-child { z-index: 3; background: var(--navy-900); }
+    .testcase-table td:first-child { background: var(--white); font-weight: 750; }
+    .testcase-table tbody tr:nth-child(even) td:first-child { background: var(--slate-50); }
+    .testcase-table tbody tr:hover td:first-child { background: var(--orange-50); }
+    .source-note {
+      margin-top: 18px;
+      color: var(--slate-500);
+      text-align: center;
+      font-size: 12px;
+    }
+    @media (max-width: 780px) {
+      .doc-toolbar { align-items: flex-start; flex-direction: column; }
+      .markdown-body { padding: 20px 16px; border-radius: 16px; }
+      .markdown-body > h1 { margin: -20px -16px 32px; padding: 40px 20px 34px; }
+      .markdown-body h2 { margin-top: 48px; }
+      .markdown-body table { font-size: 13px; }
+    }
+    @media print {
+      .doc-toolbar, .case-tools { display: none !important; }
+      .markdown-body { padding: 0; border: 0; box-shadow: none; overflow: visible; }
+      .markdown-body > h1 { margin: 0 0 32px; padding: 30px; color: #111; background: #fff; border: 2px solid #111; }
+      .table-wrap { overflow: visible; box-shadow: none; }
+      .markdown-body table { min-width: 0 !important; font-size: 9px; }
+      .markdown-body th { position: static; color: #111; background: #eee; }
+      .testcase-table th:first-child, .testcase-table td:first-child { position: static; }
+    }
+</style>
+</head>
+<body>
+  <a class="skip-link" href="#document">Đi đến nội dung chính</a>
+  <aside class="sidebar" aria-label="Mục lục requirement">
+    <div class="brand">
+      <div class="brand-mark">ics</div>
+      <div><strong>ICS Requirement</strong><small>Tổng quan lớp học</small></div>
+    </div>
+    <div class="nav-title">Nội dung Markdown</div>
+    <nav id="docNav" class="nav"></nav>
+    <div class="sidebar-footer">
+      HTML được render trực tiếp từ Markdown nguồn.<br>
+      <a href="./class_detail_overview_requirements.md">Mở file Markdown</a>
+    </div>
+  </aside>
+  <main class="doc-shell">
+    <div class="doc-toolbar">
+      <div class="doc-toolbar-left">
+        <span class="sync-badge">Đồng bộ 100% từ Markdown</span>
+        <span class="hash">SHA-256: bf3e9e2b420d…</span>
+      </div>
+      <div class="doc-toolbar-right">
+        <a class="button ghost small" href="./class_detail_overview_requirements.md">Xem Markdown</a>
+        <button class="button small" type="button" onclick="window.print()">In / Lưu PDF</button>
+      </div>
+    </div>
+    <article id="document" class="markdown-body" data-source-sha256="bf3e9e2b420d4fc218a385c5d0affc4d0ca2c944978d0c4791af5076fdd46a9c">
+<h1 id="chi-tiet-lop-hoc-menu-tong-quan">Chi tiết lớp học — Menu Tổng quan</h1>
+<blockquote>
+<p>Đặc tả menu <strong>Tổng quan</strong> của một lớp, không phải các thẻ tổng hợp nhiều lớp ở <a href="./class_management_requirements.md">Danh sách lớp</a>, cũng không phải tab Thông tin trong Cài đặt. Dữ liệu học viên/ghi chú cài đặt dẫn chiếu <a href="./class_detail_students_requirements.md">Tab Học viên</a>; ghi chú lớp dẫn chiếu <a href="./class_detail_information_requirements.md">Tab Thông tin</a>. UI trong ảnh là tham chiếu; số tiền, điểm và nội dung mẫu không phải giá trị cố định.</p>
+</blockquote>
+<h2 id="1-ui">1. UI</h2>
+<h3 id="man-tong-quan-va-phan-quyen">Màn Tổng quan và phân quyền</h3>
+<p align="center">
+  <a href="./images/37-class-overview-off.png"><img src="./images/37-class-overview-off.png" alt="Tổng quan lớp khi OFF" width="1000" title="Nhấn để xem ảnh gốc"></a><br>
+  <em>Thống kê lớp phía trên; học viên được chọn bên trái; danh sách học viên bên phải.</em>
+</p>
+
+<p><strong>Mô tả:</strong> Admin, Class Handler, Support, Teacher và Sale xem Tổng quan trong phạm vi lớp được phân quyền. Teacher không có công tắc ON/OFF để xem học phí và ghi chú cài đặt.</p>
+<p><strong>Giải thích field/thành phần:</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Thành phần</th>
+<th>Yêu cầu</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Tổng Quan Lớp</td>
+<td>Dữ liệu của đúng class_id đang mở.</td>
+</tr>
+<tr>
+<td>Nút Back / mã lớp</td>
+<td>Hover hiển thị tooltip Thông tin lớp; click quay về Danh sách lớp. Chi tiết ở UI Nút Back bên dưới.</td>
+</tr>
+<tr>
+<td>Thống kê phía trên</td>
+<td>Các chỉ số toàn lớp; không đổi thành chỉ số của học viên đang chọn.</td>
+</tr>
+<tr>
+<td>Vùng bên trái</td>
+<td>Tên, chỉ số và bảng bài học của học viên đang chọn.</td>
+</tr>
+<tr>
+<td>Danh sách bên phải</td>
+<td>Các học viên của lớp, trạng thái quan hệ lớp, tag, chấm đỏ số lịch hẹn (Admin/Class Handler/Support), tên, mã, email, bài gần đây, đánh giá và dấu &gt;.</td>
+</tr>
+<tr>
+<td>Search</td>
+<td>Tìm theo tên học viên; không kế thừa rule không-search của tab Học viên trong Cài đặt.</td>
+</tr>
+<tr>
+<td>Công tắc ON/OFF</td>
+<td>Admin/Class Handler/Support/Sale sử dụng; Teacher không có control này.</td>
+</tr>
+<tr>
+<td>Dấu ⌃ cạnh search</td>
+<td>Bấm để thu gọn vùng thống kê Tổng quan toàn lớp phía trên; bấm lại mở rộng. Không thu gọn danh sách hoặc vùng chi tiết học viên.</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Điểm cần lưu ý:</strong></p>
+<ul>
+<li>Role/phạm vi phải được kiểm tra ở backend; không chỉ ẩn nút trên giao diện.</li>
+<li>Cột Role trong testcase ghi trực tiếp tên role. Khi một case liệt kê nhiều role, chạy riêng cho từng role trong đúng phạm vi lớp; không dùng nhãn chung thay cho nhóm role cụ thể.</li>
+<li>Teacher không nhận học phí, ghi chú cài đặt học viên và ghi chú cài đặt lớp qua payload/API Tổng quan chỉ vì các field đang được ẩn. Quyền ghi chú bài học là nghiệp vụ khác, xem phần dưới.</li>
+<li>Màn này phục vụ xem dữ liệu; không tự thêm quyền chấm điểm, sửa điểm danh, sửa ghi chú giáo viên hoặc thay trạng thái học viên.</li>
+<li>Badge trạng thái học viên thuộc bộ trạng thái quan hệ lớp đã chốt; không nhầm với trạng thái điểm danh từng bài.</li>
+</ul>
+<h4 id="testcase-man-va-quyen">Testcase — Màn và quyền</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 1: Mở Tổng quan đúng lớp</td>
+<td>High</td>
+<td>Smoke</td>
+<td>Flow 1 / REQ01</td>
+<td>Admin/Class Handler/Support/Teacher/Sale</td>
+<td>Có quyền với lớp A</td>
+<td><strong>Given</strong> mở A<br><strong>When</strong> vào Tổng quan<br><strong>Then</strong> tải theo class_id</td>
+<td>- Đúng ba vùng UI<br>- Không trộn lớp B<br>- Chỉ đọc dữ liệu</td>
+</tr>
+<tr>
+<td>Case 2: Teacher không có ON/OFF</td>
+<td>High</td>
+<td></td>
+<td>REQ01 / REQ05</td>
+<td>Teacher</td>
+<td>Được xem lớp</td>
+<td><strong>Given</strong> mở Tổng quan<br><strong>When</strong> render hoặc sửa request để yêu cầu ON<br><strong>Then</strong> giữ đúng quyền Teacher</td>
+<td>- Không có công tắc<br>- Không trả học phí/ghi chú cài đặt qua API Tổng quan<br>- Vẫn xem chỉ số học tập được phép</td>
+</tr>
+<tr>
+<td>Case 3: Chặn ngoài quyền/phạm vi</td>
+<td>High</td>
+<td></td>
+<td>EX01 / REQ01</td>
+<td>Student; Admin / Class Handler / Support / Teacher / Sale ngoài phạm vi lớp</td>
+<td>Student hoặc tài khoản thuộc một trong năm role nhưng không được xem lớp</td>
+<td><strong>Given</strong> biết ID lớp/học viên và truy cập URL/API trực tiếp<br><strong>When</strong> kiểm tra role/phạm vi<br><strong>Then</strong> từ chối</td>
+<td>- Student không được vào Tổng quan lớp này<br>- Năm role không vượt phạm vi lớp<br>- Không lộ học tập, tài chính hoặc ghi chú</td>
+</tr>
+<tr>
+<td>Case 45: Thu gọn và mở thống kê</td>
+<td>Medium</td>
+<td></td>
+<td>REQ01 / REQ12</td>
+<td>Admin / Class Handler / Support / Teacher / Sale</td>
+<td>Thống kê đang mở, một học viên đang chọn</td>
+<td><strong>Given</strong> bấm ⌃<br><strong>When</strong> thu gọn rồi mở lại<br><strong>Then</strong> chỉ thay vùng thống kê lớp</td>
+<td>- Danh sách/vùng trái vẫn hiện<br>- Giữ học viên/search/ON-OFF<br>- Không đổi dữ liệu hoặc Toast CRUD</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="nut-back-va-tooltip-thong-tin-lop">Nút Back và tooltip thông tin lớp</h3>
+<p align="center">
+  <a href="./images/61-class-overview-back-tooltip.png"><img src="./images/61-class-overview-back-tooltip.png" alt="Hover nút Back để xem thông tin lớp" width="618" title="Nhấn để xem ảnh gốc"></a><br>
+  <em>Tooltip thông tin lớp khi hover nút Back — UI ngày 29/09/2026, nhấn để xem ảnh gốc.</em>
+</p>
+
+<p><strong>Mô tả:</strong></p>
+<p>Nút Back ở góc trên trái gồm mũi tên quay lại và mã lớp đang xem. Khi hover vào nút này, hiển thị tooltip <strong>Thông tin:</strong> của đúng lớp; khi click nút, quay về <strong>Danh sách lớp</strong>. Áp dụng cho Admin, Class Handler, Support, Teacher và Sale có quyền xem Tổng quan lớp theo phạm vi hiện có.</p>
+<p><strong>Giải thích field/thành phần:</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Thành phần</th>
+<th>Yêu cầu</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Nút Back / mã lớp</td>
+<td>Hover vùng nút gồm mũi tên và mã lớp để xem tooltip. Click nút quay về Danh sách lớp; hover chỉ hiển thị thông tin, không điều hướng. Mã lớp lấy từ lớp đang mở, ví dụ <code>IT_TRI2026</code>.</td>
+</tr>
+<tr>
+<td>Tooltip</td>
+<td>Khung nền tối, chữ sáng, bo góc và hiển thị ngay dưới nút như ảnh. Tiêu đề <code>Thông tin:</code>; các thông tin theo thứ tự Buổi học, Lịch học, SP, CSKH, Giáo viên, Khai giảng.</td>
+</tr>
+<tr>
+<td>Buổi học</td>
+<td>Số buổi dạng <code>đã thực hiện/tổng số buổi</code>, cùng nguồn tiến độ của lớp tại Danh sách lớp, ví dụ <code>8/12</code>. Giữ quy tắc xác định buổi đã thực hiện của nguồn; không lấy sĩ số hoặc số học viên nộp BTVN thay số buổi.</td>
+</tr>
+<tr>
+<td>Lịch học</td>
+<td>Hiển thị đầy đủ lịch học của lớp theo thứ và giờ <code>HH:mm-HH:mm</code>. Có thể nhóm các thứ cùng khung giờ như <code>T3-T5-T7 (09:00-09:10)</code>; các lịch khác xuống dòng riêng như <code>T4 (09:00-09:20)</code> và <code>T6 (13:00-13:20)</code>. Không cắt chỉ còn lịch đầu tiên.</td>
+</tr>
+<tr>
+<td>SP</td>
+<td>Hiển thị tên Support được gán cho lớp; người phụ trách chính có nhãn <code>(chính)</code> như <code>Long SP (chính)</code>. Nếu có nhiều Support, hiển thị đầy đủ người được gán và đúng nhãn chính từ nguồn phân công.</td>
+</tr>
+<tr>
+<td>CSKH</td>
+<td>Hiển thị nhân sự CSKH của lớp; chưa được gán thì hiển thị <code>(Chưa có)</code> như ảnh.</td>
+</tr>
+<tr>
+<td>Giáo viên</td>
+<td>Hiển thị tên giáo viên được gán cho lớp từ nguồn phân công; ví dụ <code>gv01</code>. Khi có nhiều giáo viên, hiển thị đầy đủ danh sách.</td>
+</tr>
+<tr>
+<td>Khai giảng</td>
+<td>Hiển thị ngày khai giảng của lớp theo <code>DD/MM/YYYY</code>, ví dụ <code>27/01/2026</code>; không dùng ngày tạo lớp thay ngày khai giảng.</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Điểm cần lưu ý:</strong></p>
+<ul>
+<li>Tooltip chỉ đọc, dùng thông tin lớp từ các chức năng quản lý hiện có; mã lớp, lịch học, nhân sự và ngày khai giảng trong ảnh là dữ liệu mẫu.</li>
+<li>Rời vùng nút/tooltip thì ẩn tooltip; click Back điều hướng về Danh sách lớp và đóng tooltip. Tooltip không giữ lại trên màn đích.</li>
+<li>Không có nhân sự được gán thì hiển thị <code>(Chưa có)</code>; dữ liệu tải lỗi không được coi là chưa có phân công. Giữ cách xử lý loading/lỗi của màn Tổng quan.</li>
+<li>Khi đổi lớp, tooltip phải theo class_id mới; response lớp cũ không ghi đè. Tooltip không phụ thuộc học viên đang chọn hoặc công tắc ON/OFF.</li>
+<li>Hover/ẩn/click Back không thay dữ liệu và không hiển thị Toast CRUD.</li>
+</ul>
+<h4 id="testcase-nut-back-va-tooltip-thong-tin-lop">Testcase — Nút Back và tooltip thông tin lớp</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 55: Hover nút Back hiển thị đúng lớp</td>
+<td>High</td>
+<td></td>
+<td>Flow 7 / REQ13</td>
+<td>Admin / Class Handler / Support / Teacher / Sale</td>
+<td>Có quyền xem lớp A và dữ liệu thông tin lớp</td>
+<td><strong>Given</strong> Tổng quan A đang mở<br><strong>When</strong> hover mũi tên hoặc mã lớp trên nút Back<br><strong>Then</strong> tooltip Thông tin hiện dưới nút với đủ sáu nhóm theo UI</td>
+<td>- Đúng mã/phân công/lịch/ngày của A<br>- Không điều hướng khi hover<br>- Không phụ thuộc học viên chọn hoặc ON/OFF</td>
+</tr>
+<tr>
+<td>Case 56: Nhiều lịch và nhân sự</td>
+<td>High</td>
+<td></td>
+<td>REQ13</td>
+<td>Admin / Class Handler / Support / Teacher / Sale</td>
+<td>Lớp có tiến độ 8/12, lịch T3-T5-T7 và hai lịch T4/T6, nhiều Support/giáo viên</td>
+<td><strong>Given</strong> thông tin nguồn đã có<br><strong>When</strong> mở tooltip<br><strong>Then</strong> đủ lịch và nhân sự, Support chính có nhãn (chính)</td>
+<td>- Hiện 8/12 cùng nguồn tiến độ<br>- Các khung giờ khác xuống dòng<br>- Không chỉ hiển thị phần tử đầu</td>
+</tr>
+<tr>
+<td>Case 57: Chưa phân công và đúng ngày khai giảng</td>
+<td>Medium</td>
+<td></td>
+<td>REQ13 / EX05</td>
+<td>Admin / Class Handler / Support / Teacher / Sale</td>
+<td>CSKH chưa được gán; ngày tạo khác ngày khai giảng 27/01/2026</td>
+<td><strong>Given</strong> dữ liệu lớp tải thành công<br><strong>When</strong> hover nút Back<br><strong>Then</strong> CSKH (Chưa có), Khai giảng 27/01/2026</td>
+<td>- Không lấy ngày tạo thay thế<br>- Lỗi tải không hiển thị thành Chưa có giả</td>
+</tr>
+<tr>
+<td>Case 58: Rời hover, click Back và đổi lớp</td>
+<td>High</td>
+<td></td>
+<td>Flow 7 / REQ13 / EX03</td>
+<td>Admin / Class Handler / Support / Teacher / Sale</td>
+<td>Tooltip A đang hiển thị</td>
+<td><strong>Given</strong> đang xem thông tin A<br><strong>When</strong> rời vùng hover hoặc click Back; sau đó mở lớp B<br><strong>Then</strong> tooltip ẩn, click quay về Danh sách lớp, hover ở B chỉ hiển thị B</td>
+<td>- Hover không điều hướng, click vẫn quay về danh sách<br>- Không lưu dữ liệu/Toast CRUD<br>- Response A không ghi đè B</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="thong-ke-hoc-tap-trung-binh-cua-lop">Thống kê học tập trung bình của lớp</h3>
+<p><strong>Mô tả:</strong> Hiển thị các chỉ số toàn lớp: Sĩ số, Đi học, BTVN, Điểm KT, Điểm BTVN, Thời gian học, Tiêu chuẩn và Đã chấm và sửa bài; cạnh khối có badge đánh giá lớp.</p>
+<p><strong>Giải thích field/thành phần:</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Thẻ</th>
+<th>Yêu cầu</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Sĩ số</td>
+<td>Tử số = số học viên Đang học + Dự thính; mẫu số = tất cả học viên của lớp thuộc đủ 7 trạng thái: Đang học, Dự thính, Hoàn thành, Nghỉ học, Rời lớp, Chỉ xem, Xóa. Dấu / phân cách hai số, không đổi sang %.</td>
+</tr>
+<tr>
+<td>Đi học</td>
+<td>Trung bình cộng tỷ lệ đi học của học viên có dữ liệu trong lớp, dùng cùng công thức mức lớp đã chốt tại Danh sách lớp. Không có dữ liệu thì để trống.</td>
+</tr>
+<tr>
+<td>BTVN</td>
+<td>Trung bình cộng tỷ lệ làm BTVN của học viên có dữ liệu trong lớp, dùng cùng công thức mức lớp đã chốt tại Danh sách lớp. Không có dữ liệu thì để trống.</td>
+</tr>
+<tr>
+<td>Điểm KT</td>
+<td>Cộng điểm các bài kiểm tra đã chấm của học viên trong lớp rồi chia số bài đã chấm. Giữ bài của học viên trước đó dù đã Rời lớp/Xóa. Làm tròn kết quả đến 1 chữ số thập phân.</td>
+</tr>
+<tr>
+<td>Điểm BTVN</td>
+<td>Cộng điểm các bài BTVN đã chấm rồi chia số bài BTVN đã chấm, kể cả bài của học viên đã Rời lớp/Xóa. Tính riêng với KT, làm tròn đến 1 chữ số thập phân.</td>
+</tr>
+<tr>
+<td>Thời gian học</td>
+<td>Lấy trung bình tổng thời gian từng bài học của từng học viên trên app: cộng các tổng thời gian học viên–bài, chia số bản ghi học viên–bài trong tập tính. Không lấy trung bình các trung bình học viên, không lấy tổng lịch dạy; hiển thị HH:mm:ss.</td>
+</tr>
+<tr>
+<td>Tiêu chuẩn</td>
+<td>% hoàn thành tiêu chuẩn lớp–giáo viên, lấy dữ liệu từ function Tiêu chuẩn; không tự suy ra từ Đi học/BTVN/điểm. Chưa có icon chính thức, không điều hướng khi click.</td>
+</tr>
+<tr>
+<td>Đã chấm và sửa bài</td>
+<td>Số bài <strong>BTVN và Kiểm tra</strong> của lớp đã có ít nhất một lần giáo viên bấm <code>Đã Chấm và Sửa Bài Trên Lớp</code> (xem <a href="../../teacher_role/class/class_teaching_requirements.md">Giảng dạy — role Giáo viên</a>). Mỗi bài tính một lần; bấm lại không tăng. Chưa có icon chính thức, không điều hướng khi click.</td>
+</tr>
+<tr>
+<td>Đánh giá lớp</td>
+<td>Badge theo giá trị được nguồn dữ liệu cung cấp; chưa có công thức tự tính, không click để điều hướng.</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Điểm cần lưu ý:</strong></p>
+<ul>
+<li>Tách tập quan hệ học viên hiện tại để hiển thị/sĩ số với dữ liệu kết quả học tập lịch sử. Không INNER JOIN chỉ học viên còn trong lớp rồi làm mất các bài BTVN/KT đã làm.</li>
+<li>Rời lớp/xóa quan hệ không xóa bài đã làm, điểm đã chấm hoặc liên kết lịch sử học viên–lớp–bài.</li>
+<li>Quy tắc giữ lịch sử đã chốt cho trung bình Điểm BTVN/KT; không tự suy rộng sang Đi học, tỷ lệ BTVN hoặc Thời gian học khi chưa xác nhận.</li>
+<li>Chưa nộp/Chưa chấm không tham gia tử số hoặc mẫu số trung bình điểm. Bài đã chấm điểm 0 vẫn tính vào cả hai. Không có bài đã chấm thì để trống điểm trung bình, không tạo 0 giả.</li>
+<li>Lấy trung bình trực tiếp các bài đã chấm, không trung bình hai cấp qua từng học viên. Giữ độ chính xác khi tính và chỉ làm tròn kết quả cuối đến 1 chữ số thập phân.</li>
+<li>Chỉ số điểm/thời gian của một học viên áp dụng cùng cách lấy trung bình nhưng tập dữ liệu giới hạn theo học viên đó.</li>
+<li>Với thời gian, mỗi giá trị là tổng thời gian app của một cặp học viên–bài, đếm một lần trong tập tính. Bản ghi có tổng thời gian thực tế 0 vẫn là dữ liệu 0; bản ghi thiếu dữ liệu không tự biến thành thời gian 0. Chính sách bản ghi chưa có thời gian và làm tròn giây cần chốt với nguồn app.</li>
+<li>Search/chọn học viên/ON/OFF không làm thay đổi thống kê toàn lớp.</li>
+<li>Công thức sĩ số thường này thay công thức cũ tính Hoàn thành ở tử số và loại Chỉ xem/Xóa khỏi mẫu số; dùng thống nhất với Danh sách lớp. Không đổi công thức Sĩ số KPI có điều kiện học phí.</li>
+<li>Mẫu số sĩ số phải lấy cả quan hệ học viên–lớp trạng thái Xóa, không chỉ đếm danh sách đang hiển thị. Ví dụ mỗi trạng thái có một học viên thì sĩ số là 2/7.</li>
+</ul>
+<h4 id="testcase-thong-ke-lop">Testcase — Thống kê lớp</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 4: Tử số sĩ số đúng rule mới</td>
+<td>High</td>
+<td></td>
+<td>REQ02</td>
+<td>Admin / Class Handler / Support / Teacher / Sale</td>
+<td>3 Đang học, 2 Dự thính, 1 Hoàn thành</td>
+<td><strong>Given</strong> tính sĩ số Tổng quan<br><strong>When</strong> tính tử số<br><strong>Then</strong> 3 + 2 = 5</td>
+<td>- Không cộng Hoàn thành vào tử số<br>- Không dùng sĩ số KPI có điều kiện học phí</td>
+</tr>
+<tr>
+<td>Case 5: Đi học/BTVN trung bình</td>
+<td>High</td>
+<td></td>
+<td>REQ02</td>
+<td>Admin / Class Handler / Support / Teacher / Sale</td>
+<td>Tỷ lệ hai học viên 80% và 100%, người khác không có dữ liệu</td>
+<td><strong>Given</strong> tính chỉ số lớp<br><strong>When</strong> tổng hợp<br><strong>Then</strong> (80 + 100) / 2 = 90%</td>
+<td>- Bỏ học viên không có dữ liệu<br>- Không có dữ liệu toàn lớp thì để trống, không 0%</td>
+</tr>
+<tr>
+<td>Case 6: Giữ bài của học viên rời/xóa</td>
+<td>High</td>
+<td></td>
+<td>REQ03</td>
+<td>Admin / Class Handler / Support / Teacher / Sale</td>
+<td>Có điểm BTVN/KT của học viên trước đó</td>
+<td><strong>Given</strong> điểm đã được ghi nhận ở lớp<br><strong>When</strong> học viên Rời lớp/Xóa rồi tải Tổng quan<br><strong>Then</strong> vẫn đưa bài đã làm vào tập tính trung bình</td>
+<td>- Không mất đóng góp vì quan hệ bị ẩn/xóa mềm<br>- Không xóa dữ liệu lịch sử</td>
+</tr>
+<tr>
+<td>Case 7: Chỉ tính bài đã chấm</td>
+<td>High</td>
+<td></td>
+<td>REQ03 / EX02</td>
+<td>Admin / Class Handler / Support / Teacher / Sale</td>
+<td>Có điểm đã chấm 8 và 0, một Chưa nộp, một Chưa chấm</td>
+<td><strong>Given</strong> tính trung bình<br><strong>When</strong> lọc bài đã chấm<br><strong>Then</strong> (8 + 0) / 2 = 4.0</td>
+<td>- Hai trạng thái chưa có điểm bị loại cả tử/mẫu<br>- Điểm 0 đã chấm vẫn tính<br>- Toàn bộ chưa chấm thì để trống</td>
+</tr>
+<tr>
+<td>Case 8: Thời gian học là trung bình</td>
+<td>High</td>
+<td></td>
+<td>REQ02</td>
+<td>Admin / Class Handler / Support / Teacher / Sale</td>
+<td>Backend có thời gian trung bình 00:19:12</td>
+<td><strong>Given</strong> tải chỉ số<br><strong>When</strong> hiển thị<br><strong>Then</strong> 00:19:12</td>
+<td>- Đúng HH:mm:ss<br>- Không cộng thành tổng lớp hoặc dùng giờ lịch dạy</td>
+</tr>
+<tr>
+<td>Case 9: Tiêu chuẩn đúng nguồn</td>
+<td>High</td>
+<td></td>
+<td>REQ02</td>
+<td>Admin / Class Handler / Support / Teacher / Sale</td>
+<td>Tiêu chuẩn lớp–giáo viên là 40%</td>
+<td><strong>Given</strong> Đi học/BTVN có tỷ lệ khác<br><strong>When</strong> render Tiêu chuẩn<br><strong>Then</strong> 40%</td>
+<td>- Không tự tính lại từ tỷ lệ khác<br>- Không suy ra đánh giá A–F</td>
+</tr>
+<tr>
+<td>Case 41: Sĩ số đủ mọi trạng thái kể cả Xóa</td>
+<td>High</td>
+<td></td>
+<td>REQ02</td>
+<td>Admin / Class Handler / Support / Teacher / Sale</td>
+<td>Mỗi trạng thái trong bộ 7 có một học viên</td>
+<td><strong>Given</strong> tải thống kê<br><strong>When</strong> tính sĩ số<br><strong>Then</strong> (Đang học + Dự thính) / tất cả = 2/7</td>
+<td>- Hoàn thành không vào tử số<br>- Xóa và Chỉ xem vẫn vào mẫu số<br>- Không phụ thuộc học phí hoặc số thẻ hiển thị</td>
+</tr>
+<tr>
+<td>Case 42: Trung bình theo bài và làm tròn</td>
+<td>High</td>
+<td></td>
+<td>REQ03</td>
+<td>Admin / Class Handler / Support / Teacher / Sale</td>
+<td>A có bài đã chấm 8 và 9, B có bài đã chấm 9</td>
+<td><strong>Given</strong> tính riêng KT hoặc BTVN<br><strong>When</strong> cộng điểm và chia số bài<br><strong>Then</strong> 26 / 3 làm tròn thành 8.7</td>
+<td>- Không trung bình các trung bình học viên<br>- Chỉ làm tròn kết quả cuối<br>- Điểm lịch sử của người rời/xóa vẫn tính</td>
+</tr>
+<tr>
+<td>Case 43: Trung bình tổng thời gian học viên–bài</td>
+<td>High</td>
+<td></td>
+<td>REQ02 / REQ11</td>
+<td>Admin / Class Handler / Support / Teacher / Sale</td>
+<td>A có tổng thời gian hai bài 10 và 30 phút, B một bài 50 phút</td>
+<td><strong>Given</strong> tính thời gian lớp<br><strong>When</strong> cộng ba tổng thời gian và chia 3<br><strong>Then</strong> 00:30:00</td>
+<td>- Không hiện tổng 01:30:00<br>- Không lấy trung bình hai trung bình học viên thành 00:35:00<br>- Thời gian A là 00:20:00</td>
+</tr>
+<tr>
+<td>Case 51: Đã chấm và sửa bài đếm số bài BTVN + KT</td>
+<td>High</td>
+<td></td>
+<td>REQ02</td>
+<td>Admin / Class Handler / Support / Teacher / Sale</td>
+<td>3 BTVN và 2 bài kiểm tra đã được bấm nút, một BTVN được bấm 4 lần; 1 BTVN đã chấm nhưng chưa bấm nút</td>
+<td><strong>Given</strong> tải thống kê lớp<br><strong>When</strong> tính Đã chấm và sửa bài<br><strong>Then</strong> hiển thị 5</td>
+<td>- Không đếm số lần bấm thành 8<br>- Không bỏ bài kiểm tra<br>- Bài chưa bấm nút không tính<br>- Không click điều hướng</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="bieu-o-theo-bai-hoc">Biểu đồ theo bài học</h3>
+<p><strong>Mô tả:</strong> Các chỉ số học tập có biểu đồ đường màu cam theo số bài học, có thể tô vùng dưới đường như ảnh.</p>
+<p><strong>Giải thích field/thành phần:</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Thành phần</th>
+<th>Yêu cầu</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Trục bài học</td>
+<td>Theo thứ tự bài học, không theo ngày/tuần lịch.</td>
+</tr>
+<tr>
+<td>Giá trị</td>
+<td>Mỗi điểm là dữ liệu của bài học tương ứng, không phải trung bình lũy kế qua các bài trước. Đúng phạm vi: biểu đồ lớp ở trên; biểu đồ học viên đang chọn ở bên trái.</td>
+</tr>
+<tr>
+<td>Giới hạn chart học viên</td>
+<td>Lấy theo bài học của học viên đang chọn; học tới bài nào thì chart hiển thị tới bài đó. Không vẽ các bài phía sau chỉ vì lớp đã mở hoặc học viên khác đã học.</td>
+</tr>
+<tr>
+<td>Đường/vùng cam</td>
+<td>Dùng dữ liệu thực tế; không vẽ đường trang trí giống ảnh khi dữ liệu khác.</td>
+</tr>
+<tr>
+<td>Tooltip</td>
+<td>Nội dung/khả năng hover chưa chốt.</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Điểm cần lưu ý:</strong></p>
+<ul>
+<li>Không dùng cùng một chuỗi dữ liệu cho tất cả thẻ hoặc tất cả học viên.</li>
+<li>Không dùng ngày mở bài như thứ tự duy nhất nếu thứ tự bài trong lớp khác.</li>
+<li>Xác định bài học viên đã học từ dữ liệu tiến độ học viên–bài; không dùng bài mới nhất giáo viên mở cho cả lớp thay cho tiến độ từng người.</li>
+<li>Thiếu dữ liệu không dựng thành đường 0 như kết quả hợp lệ.</li>
+</ul>
+<h4 id="testcase-bieu-o">Testcase — Biểu đồ</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 10: Theo thứ tự bài</td>
+<td>High</td>
+<td></td>
+<td>REQ04</td>
+<td>Admin / Class Handler / Support / Teacher / Sale</td>
+<td>Có nhiều bài với ngày khác nhau</td>
+<td><strong>Given</strong> tải biểu đồ<br><strong>When</strong> sắp dữ liệu<br><strong>Then</strong> theo thứ tự bài học</td>
+<td>- Không tự chia theo ngày/tuần<br>- Đúng chỉ số đang hiển thị</td>
+</tr>
+<tr>
+<td>Case 11: Đổi học viên không lẫn biểu đồ</td>
+<td>High</td>
+<td></td>
+<td>Flow 2 / EX03</td>
+<td>Admin / Class Handler / Support / Teacher / Sale</td>
+<td>A/B có chuỗi khác nhau</td>
+<td><strong>Given</strong> chọn A rồi B<br><strong>When</strong> response A về muộn<br><strong>Then</strong> giữ dữ liệu B</td>
+<td>- Các biểu đồ trái đúng B<br>- Biểu đồ toàn lớp không đổi</td>
+</tr>
+<tr>
+<td>Case 48: Chart theo bài và dừng đúng tiến độ</td>
+<td>High</td>
+<td></td>
+<td>REQ04</td>
+<td>Admin / Class Handler / Support / Teacher / Sale</td>
+<td>Lớp có 10 bài, A học tới bài 4, B học tới bài 7</td>
+<td><strong>Given</strong> chọn A rồi B<br><strong>When</strong> render chart học viên<br><strong>Then</strong> A tới bài 4, B tới bài 7</td>
+<td>- Không vẽ cả 10 bài hoặc bổ sung điểm 0 cho bài chưa học<br>- Mỗi điểm lấy giá trị của bài đó, không lũy kế<br>- Không dùng tiến độ B để kéo dài chart A</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="danh-sach-tim-kiem-va-chon-hoc-vien">Danh sách, tìm kiếm và chọn học viên</h3>
+<p><strong>Mô tả:</strong> Mặc định chọn học viên đầu tiên khi mở màn. Click thẻ chọn học viên và cập nhật vùng trái; dấu &gt; vào detail học viên.</p>
+<p><strong>Giải thích field/thành phần:</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Thành phần</th>
+<th>Yêu cầu</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Thẻ học viên</td>
+<td>Tag, icon trạng thái quan hệ lớp, chấm đỏ số lịch hẹn, tên, mã, email, 3 bài gần nhất, badge đánh giá và &gt;.</td>
+</tr>
+<tr>
+<td>Chấm đỏ lịch hẹn</td>
+<td>Chấm đỏ có số ngay trước tên học viên = số lịch hẹn loại đối tượng Học viên của học viên đó có trạng thái <code>Mới</code>, <code>Chưa xử lý</code>, <code>Đang xử lý</code> mà người xem được thấy theo <a href="../../appointment_requirement/appointment_requirements.md">requirement Lịch hẹn</a>: Admin thấy toàn bộ; Class Handler, Support thấy lịch hẹn mình là Người phụ trách hoặc Theo dõi. Bằng 0 thì ẩn. Chỉ Admin, Class Handler, Support thấy; Teacher và Sale không thấy.</td>
+</tr>
+<tr>
+<td>Hover chấm đỏ</td>
+<td>Mở popup <code>Danh sách lịch hẹn</code> chỉ đọc của học viên, cùng cột và quy tắc với popup Danh sách lịch hẹn ở <a href="../teacher_management/teacher_management_requirements.md">Danh sách giáo viên</a>: Thời gian, Nội dung, Ghi chú, Người phụ trách, Người theo dõi, Đối tượng, Trạng thái; sắp theo thời gian tăng dần; số dòng bằng số trên chấm đỏ. Không chọn học viên, không điều hướng.</td>
+</tr>
+<tr>
+<td>Thẻ đang chọn</td>
+<td>Viền cam theo UI. Chỉ một học viên được chọn.</td>
+</tr>
+<tr>
+<td>Click thẻ</td>
+<td>Chọn theo student_id và class_id; tải chỉ số/bài của học viên đó.</td>
+</tr>
+<tr>
+<td>Dấu &gt;</td>
+<td>Điều hướng detail đúng học viên, không kích hoạt click chọn thẻ do bubbling.</td>
+</tr>
+<tr>
+<td>Search tên</td>
+<td>Tìm theo tên học viên trong phạm vi lớp trên toàn bộ dữ liệu, không chỉ phần đã tải.</td>
+</tr>
+<tr>
+<td>Toàn bộ danh sách</td>
+<td>Hiển thị đầy đủ học viên thuộc mọi trạng thái của lớp, kể cả Xóa; không load-more, không phân trang. Không phải chỉ tải 3 hoặc một trang đầu.</td>
+</tr>
+<tr>
+<td>Vùng trái</td>
+<td>Điểm KT, Điểm BTVN, Thời gian học, tỷ lệ BTVN, Đi học, Bài học gần đây (6 bài) và bảng chi tiết.</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Điểm cần lưu ý:</strong></p>
+<ul>
+<li>Search không lọc lại các chỉ số thống kê lớp phía trên.</li>
+<li>Chấm đỏ lịch hẹn chỉ để xem; sửa, xoá, đổi trạng thái lịch hẹn thực hiện tại menu <code>Lịch Hẹn</code> → tab <code>Học viên</code>. API không trả số lịch hẹn cho Teacher và Sale.</li>
+<li>Danh sách hiển thị toàn bộ đủ 7 trạng thái: Đang học, Dự thính, Hoàn thành, Nghỉ học, Rời lớp, Chỉ xem, Xóa. Không có filter ngầm loại Xóa/Rời lớp/Nghỉ học. Thứ tự học viên cần chốt riêng.</li>
+<li>Khi search không khớp học viên đang chọn, chính sách giữ lựa chọn hay chuyển sang kết quả đầu cần chốt; không trộn tên A với dữ liệu B.</li>
+<li>Học viên Rời lớp/Xóa vẫn có thẻ trong Tổng quan theo rule mọi trạng thái; click xem dữ liệu học tập lịch sử theo quyền. Hiển thị Xóa ở Tổng quan không khôi phục quan hệ hoặc đổi rule ẩn Xóa tại tab Học viên trong Cài đặt.</li>
+</ul>
+<h4 id="testcase-chon-va-search">Testcase — Chọn và search</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 12: Chọn học viên đầu tiên</td>
+<td>High</td>
+<td></td>
+<td>Flow 1 / REQ06</td>
+<td>Admin / Class Handler / Support / Teacher / Sale</td>
+<td>Có ít nhất một học viên</td>
+<td><strong>Given</strong> mở Tổng quan<br><strong>When</strong> danh sách tải thành công<br><strong>Then</strong> chọn người đầu tiên của danh sách trả về</td>
+<td>- Viền cam đúng thẻ<br>- Vùng trái cùng student_id</td>
+</tr>
+<tr>
+<td>Case 13: Click thẻ cập nhật vùng trái</td>
+<td>High</td>
+<td></td>
+<td>Flow 2 / REQ06</td>
+<td>Admin / Class Handler / Support / Teacher / Sale</td>
+<td>A đang chọn, có B</td>
+<td><strong>Given</strong> click thẻ B<br><strong>When</strong> dữ liệu tải xong<br><strong>Then</strong> đổi tên/chỉ số/bài/biểu đồ sang B</td>
+<td>- Không đổi thống kê lớp<br>- Không mở detail</td>
+</tr>
+<tr>
+<td>Case 14: Dấu &gt; mở detail</td>
+<td>High</td>
+<td></td>
+<td>Flow 2 / REQ06</td>
+<td>Admin / Class Handler / Support / Teacher / Sale</td>
+<td>Có thẻ B</td>
+<td><strong>Given</strong> click &gt; của B<br><strong>When</strong> điều hướng<br><strong>Then</strong> vào detail B theo quyền màn đích</td>
+<td>- Không dùng tên/email làm khóa<br>- Không chạy thêm click thẻ</td>
+</tr>
+<tr>
+<td>Case 15: Search theo tên</td>
+<td>High</td>
+<td></td>
+<td>REQ06</td>
+<td>Admin / Class Handler / Support / Teacher / Sale</td>
+<td>Có nhiều học viên</td>
+<td><strong>Given</strong> nhập tên<br><strong>When</strong> tìm<br><strong>Then</strong> trả kết quả đúng lớp/tên</td>
+<td>- Tìm toàn bộ dữ liệu<br>- Không tự đổi sang search mã/email<br>- Thống kê lớp không đổi</td>
+</tr>
+<tr>
+<td>Case 16: Không có học viên/kết quả</td>
+<td>Medium</td>
+<td></td>
+<td>EX04 / REQ06</td>
+<td>Admin / Class Handler / Support / Teacher / Sale</td>
+<td>Danh sách hoặc search rỗng</td>
+<td><strong>Given</strong> tải thành công nhưng rỗng<br><strong>When</strong> render<br><strong>Then</strong> hiển thị empty state</td>
+<td>- Không dựng học viên giả<br>- Không hiển thị nhầm dữ liệu lớp khác</td>
+</tr>
+<tr>
+<td>Case 44: Hiển thị toàn bộ danh sách và bài</td>
+<td>High</td>
+<td></td>
+<td>REQ06 / REQ09</td>
+<td>Admin / Class Handler / Support / Teacher / Sale</td>
+<td>Có nhiều học viên và nhiều bài</td>
+<td><strong>Given</strong> mở Tổng quan/chọn học viên<br><strong>When</strong> tải thành công và cuộn<br><strong>Then</strong> đủ danh sách học viên và toàn bộ bảng bài</td>
+<td>- Không control phân trang/load-more<br>- Không cắt ở kích thước trang đầu<br>- Bài học sắp theo số thứ tự tăng dần</td>
+</tr>
+<tr>
+<td>Case 59: Chấm đỏ đếm lịch hẹn chưa hoàn tất theo phạm vi</td>
+<td>High</td>
+<td></td>
+<td>REQ06</td>
+<td>Admin / Class Handler / Support</td>
+<td>A có 2 lịch hẹn <code>Mới</code> (Support X phụ trách 1), 1 <code>Đang xử lý</code>, 1 <code>Đã xử lý</code></td>
+<td><strong>Given</strong> mở Tổng quan<br><strong>When</strong> Admin và Support X xem thẻ A<br><strong>Then</strong> Admin thấy 3, X thấy 1</td>
+<td>- Không đếm <code>Đã xử lý</code><br>- Bằng 0 thì ẩn chấm<br>- Hover mở popup đúng số dòng, chỉ đọc</td>
+</tr>
+<tr>
+<td>Case 60: Teacher và Sale không thấy chấm đỏ</td>
+<td>High</td>
+<td></td>
+<td>REQ06 / EX01</td>
+<td>Teacher / Sale</td>
+<td>A có lịch hẹn chưa hoàn tất</td>
+<td><strong>Given</strong> mở Tổng quan<br><strong>When</strong> render thẻ A hoặc gọi API<br><strong>Then</strong> không có chấm đỏ và số lịch hẹn</td>
+<td>- Không mở được popup lịch hẹn</td>
+</tr>
+<tr>
+<td>Case 49: Hiện và tìm đủ mọi trạng thái</td>
+<td>High</td>
+<td></td>
+<td>REQ06</td>
+<td>Admin / Class Handler / Support / Teacher / Sale</td>
+<td>Mỗi trạng thái có học viên, gồm Xóa/Rời lớp/Nghỉ học</td>
+<td><strong>Given</strong> mở danh sách và search tên người trạng thái Xóa<br><strong>When</strong> trả kết quả<br><strong>Then</strong> vẫn có thẻ phù hợp theo tên</td>
+<td>- Không loại bất kỳ trạng thái hợp lệ nào<br>- Click thẻ chọn/xem lịch sử học tập theo quyền<br>- Không tự khôi phục người đã Xóa</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="cong-tac-onoff-hoc-phi-va-ghi-chu-cai-at">Công tắc ON/OFF: học phí và ghi chú cài đặt</h3>
+<p align="center">
+  <a href="./images/38-class-overview-on.png"><img src="./images/38-class-overview-on.png" alt="ON hiển thị học phí và ghi chú cài đặt" width="1000" title="Nhấn để xem ảnh gốc"></a><br>
+  <em>ON: thêm học phí, ghi chú lớp và ghi chú từng học viên.</em>
+</p>
+
+<p><strong>Mô tả:</strong> ON hiển thị ghi chú cài đặt lớp, tổng học phí học viên đã đóng cho lớp và ghi chú cài đặt từng học viên. OFF ẩn các vùng bổ sung này.</p>
+<p><strong>Giải thích field/thành phần:</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Thành phần</th>
+<th>Yêu cầu</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ON/OFF</td>
+<td>Admin/Class Handler/Support/Sale; mặc định OFF khi mở màn. Không tự khôi phục ON từ lần mở trước.</td>
+</tr>
+<tr>
+<td>Học phí</td>
+<td>Tổng học phí học viên đã đóng cho lớp hiện tại, cùng dữ liệu cột Số tiền của tab Học viên; không phải tổng giá trị hóa đơn.</td>
+</tr>
+<tr>
+<td>Ghi chú của lớp</td>
+<td>Dùng field Ghi chú trong Cài đặt lớp/Tab Thông tin; rỗng hiển thị Không có ghi chú.</td>
+</tr>
+<tr>
+<td>Ghi chú dưới từng thẻ</td>
+<td>Nội dung hiện tại của ghi chú quan hệ học viên–lớp trong Cài đặt → Học viên.</td>
+</tr>
+<tr>
+<td>Icon lịch sử cạnh ghi chú</td>
+<td>Mở lịch sử của đúng ghi chú cài đặt học viên–lớp; nội dung, người sửa/thời điểm, Copy.</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Điểm cần lưu ý:</strong></p>
+<ul>
+<li>Công tắc chỉ thay cách xem, không tạo/sửa ghi chú hoặc học phí, không cập nhật audit dữ liệu.</li>
+<li>Không dùng ghi chú bài học từ giáo viên thay cho ghi chú cài đặt; đó là hai nguồn khác nhau.</li>
+<li>Teacher không có cách bật các vùng này trong Tổng quan; không sử dụng OFF như biện pháp phân quyền duy nhất.</li>
+<li>Các role khác được xem ON trong Tổng quan không vì thế được quyền xem tab Hóa đơn: tab Hóa đơn vẫn chỉ Admin/Class Handler/Support theo requirement riêng.</li>
+<li>Không cho sửa ghi chú cài đặt ngay tại Tổng quan với mọi role; chỉ xem/lịch sử/Copy. Quyền sửa ở function Cài đặt không thay đổi.</li>
+</ul>
+<h4 id="testcase-cong-tac">Testcase — Công tắc</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 17: Mặc định OFF rồi bật ON</td>
+<td>High</td>
+<td></td>
+<td>Flow 3 / REQ05</td>
+<td>Admin/Class Handler/Support/Sale</td>
+<td>Có ghi chú lớp, học viên và học phí</td>
+<td><strong>Given</strong> mở màn mới ở OFF<br><strong>When</strong> bật ON<br><strong>Then</strong> hiện các vùng bổ sung</td>
+<td>- Không tự mở ON từ lựa chọn cũ<br>- Ghi chú lớp từ Cài đặt lớp<br>- Ghi chú học viên từ Cài đặt Học viên<br>- Học phí đúng lớp, không phải giá trị hóa đơn</td>
+</tr>
+<tr>
+<td>Case 18: OFF ẩn dữ liệu bổ sung</td>
+<td>High</td>
+<td></td>
+<td>REQ05</td>
+<td>Admin / Class Handler / Support / Sale</td>
+<td>ON đang hiện</td>
+<td><strong>Given</strong> tắt OFF<br><strong>When</strong> UI cập nhật<br><strong>Then</strong> ẩn học phí và ghi chú cài đặt</td>
+<td>- Vẫn có thẻ/chỉ số học tập<br>- Không sửa dữ liệu hoặc tạo lịch sử</td>
+</tr>
+<tr>
+<td>Case 19: Sale xem ON không mở rộng quyền</td>
+<td>High</td>
+<td></td>
+<td>REQ01 / REQ05</td>
+<td>Sale</td>
+<td>Được xem Tổng quan</td>
+<td><strong>Given</strong> ON<br><strong>When</strong> xem dữ liệu hoặc truy cập Hóa đơn<br><strong>Then</strong> áp quyền riêng từng màn</td>
+<td>- Xem dữ liệu ON được phép<br>- Không vì ON mà được tab Hóa đơn hoặc sửa ghi chú</td>
+</tr>
+<tr>
+<td>Case 20: Không trộn học phí giữa lớp</td>
+<td>High</td>
+<td></td>
+<td>REQ05</td>
+<td>Admin / Class Handler / Support / Sale</td>
+<td>Cùng học viên ở A/B với học phí khác</td>
+<td><strong>Given</strong> mở A và bật ON<br><strong>When</strong> hiển thị tiền<br><strong>Then</strong> chỉ học phí thuộc A</td>
+<td>- Không cộng học phí B<br>- Không dùng tổng giá trị hóa đơn</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="ghi-chu-cai-at-va-lich-su">Ghi chú cài đặt và lịch sử</h3>
+<p align="center">
+  <a href="./images/39-class-overview-note-history.png"><img src="./images/39-class-overview-note-history.png" alt="Lịch sử ghi chú cài đặt học viên ở Tổng quan" width="900" title="Nhấn để xem ảnh gốc"></a>
+</p>
+
+<p><strong>Mô tả:</strong> Ghi chú học viên dùng cùng nguồn với tab Học viên trong Cài đặt; có thể chứa các ghi chú bất thường như học kém/cảnh báo nghỉ học. Lịch sử và Copy dùng dữ liệu phiên bản đã lưu.</p>
+<p><strong>Giải thích field/thành phần:</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Thành phần</th>
+<th>Yêu cầu</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Icon cạnh tên học viên đang chọn</td>
+<td>Mở xem ghi chú cài đặt học viên–lớp và lịch sử theo quyền, không có ô chỉnh/nút lưu. Teacher không được mở nguồn ghi chú cài đặt qua Tổng quan.</td>
+</tr>
+<tr>
+<td>Popup Lịch sử ghi chú</td>
+<td>Nội dung, avatar/tên người tạo/chỉnh, thời điểm máy chủ; mới nhất trước, đúng class_id + student_id.</td>
+</tr>
+<tr>
+<td>Copy</td>
+<td>Copy nội dung của bản được chọn, không kèm metadata; không tạo phiên bản.</td>
+</tr>
+<tr>
+<td>Ghi chú bất thường</td>
+<td>Hiển thị đúng text được nhập; chưa có rule tự phân loại/tự tạo cảnh báo từ chỉ số.</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Điểm cần lưu ý:</strong></p>
+<ul>
+<li>Không tự sinh cảnh báo “học kém” từ điểm hoặc “nghỉ học” từ tỷ lệ nếu chưa có công thức.</li>
+<li>Xem lịch sử không được chỉnh/xóa các phiên bản. Đọc/Copy không có Toast CRUD.</li>
+<li>Mọi ghi chú tại Tổng quan đều chỉ xem; không dùng component ghi chú có mode chỉnh sửa chỉ vì role có quyền sửa ở màn nguồn.</li>
+<li>Ghi chú cài đặt và ghi chú giáo viên theo bài có định danh/phạm vi riêng, không dùng chung nội dung vì cùng học viên.</li>
+<li>Không lấy ảnh avatar làm định danh người sửa; backend phải giữ người và thời điểm audit.</li>
+</ul>
+<h4 id="testcase-lich-su-ghi-chu">Testcase — Lịch sử ghi chú</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 21: Lịch sử đúng học viên/lớp</td>
+<td>High</td>
+<td></td>
+<td>Flow 4 / REQ07</td>
+<td>Admin / Class Handler / Support / Sale</td>
+<td>ON và có lịch sử</td>
+<td><strong>Given</strong> click lịch sử dưới thẻ A<br><strong>When</strong> popup mở<br><strong>Then</strong> dữ liệu A của lớp hiện tại</td>
+<td>- Nội dung/người/thời điểm đầy đủ<br>- Mới nhất trước<br>- Không sửa/xóa lịch sử</td>
+</tr>
+<tr>
+<td>Case 22: Copy đúng phiên bản</td>
+<td>Medium</td>
+<td></td>
+<td>REQ07</td>
+<td>Admin / Class Handler / Support / Sale</td>
+<td>Nhiều phiên bản</td>
+<td><strong>Given</strong> popup lịch sử mở<br><strong>When</strong> Copy một bản<br><strong>Then</strong> đúng nội dung bản chọn</td>
+<td>- Không nối metadata<br>- Không đổi Ngày cập nhật/audit<br>- Không có Toast CRUD</td>
+</tr>
+<tr>
+<td>Case 23: Ghi chú bất thường theo dữ liệu</td>
+<td>High</td>
+<td></td>
+<td>REQ07</td>
+<td>Admin / Class Handler / Support / Sale</td>
+<td>Có text học kém/cảnh báo nghỉ học</td>
+<td><strong>Given</strong> xem ghi chú<br><strong>When</strong> render<br><strong>Then</strong> đầy đủ nội dung đã lưu</td>
+<td>- Không tự tạo cảnh báo từ điểm/tỷ lệ<br>- Không thực thi HTML/script</td>
+</tr>
+<tr>
+<td>Case 46: Mọi ghi chú tại Tổng quan chỉ xem</td>
+<td>High</td>
+<td></td>
+<td>REQ07 / REQ10</td>
+<td>Admin/Class Handler/Support/Sale</td>
+<td>Có ghi chú cài đặt và ghi chú giáo viên</td>
+<td><strong>Given</strong> mở các popup ghi chú<br><strong>When</strong> xem/lịch sử/Copy rồi đóng<br><strong>Then</strong> không có chỉnh sửa hoặc lưu</td>
+<td>- Không kế thừa mode sửa của màn Cài đặt<br>- Không thay nội dung/người/thời điểm<br>- Teacher xem popup ghi chú giáo viên cũng chỉ đọc; ghi chú được nhập tại function role Giáo viên</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="anh-gia-tong-va-bai-hoc-gan-ay">Đánh giá tổng và bài học gần đây</h3>
+<p><strong>Mô tả:</strong> Mỗi học viên có badge đánh giá tổng và trạng thái 3 bài gần nhất. Vùng trái hiển thị Bài học gần đây gồm 6 bài gần nhất của người được chọn.</p>
+<p align="center">
+  <a href="./images/recent-lesson-status-icons.png"><img src="./images/recent-lesson-status-icons.png" alt="Bộ icon trạng thái bài học gần đây" width="280" title="Nhấn để xem ảnh gốc"></a><br>
+  <em>Bộ icon `Class Session Status` cho Bài học gần đây (Figma component 2425:105717) — nhấn để xem ảnh gốc</em>
+</p>
+
+<p><strong>Giải thích field/thành phần:</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Thành phần</th>
+<th>Yêu cầu</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Badge đánh giá</td>
+<td>F màu đỏ, D màu nâu, E màu cam theo xác nhận; A xanh lá và B xanh dương theo UI tham chiếu. C hoặc màu khác chưa có quy tắc.</td>
+</tr>
+<tr>
+<td>Giá trị đánh giá</td>
+<td>Hiển thị giá trị nguồn cung cấp; chưa có công thức tự tính từ điểm/đi học/BTVN.</td>
+</tr>
+<tr>
+<td>Số bài hiển thị</td>
+<td>Thẻ học viên ở danh sách bên phải: 3 bài gần nhất. Khối Bài học gần đây ở vùng trái khi chọn học viên: 6 bài gần nhất. Chỉ tính bài <strong>đã được điểm danh</strong> của học viên trong lớp; bài học viên còn Chưa điểm danh không tính. Ít hơn số bài quy định thì chỉ hiện số bài có dữ liệu; sắp từ bài mới nhất.</td>
+</tr>
+<tr>
+<td>Đi học / vắng</td>
+<td>Đi học: Có mặt, Vào trễ, Ra sớm, Vào trễ &amp; Ra sớm. Vắng: Nghỉ CP, Nghỉ KP.</td>
+</tr>
+<tr>
+<td>Đã nộp BTVN</td>
+<td>Học viên đã nộp BTVN của bài; nộp chưa chấm hoặc điểm 0 vẫn là đã nộp.</td>
+</tr>
+<tr>
+<td>Icon bài gần đây</td>
+<td>Viền cam = đi học, viền xám = vắng; sách cam = đã nộp BTVN, sách xám = chưa nộp.</td>
+</tr>
+<tr>
+<td>Đi học + đã nộp BTVN</td>
+<td>Viền cam, sách cam.</td>
+</tr>
+<tr>
+<td>Đi học + chưa nộp BTVN</td>
+<td>Viền cam, sách xám.</td>
+</tr>
+<tr>
+<td>Vắng + đã nộp BTVN</td>
+<td>Viền xám, sách cam.</td>
+</tr>
+<tr>
+<td>Vắng + chưa nộp BTVN</td>
+<td>Viền xám, sách xám.</td>
+</tr>
+<tr>
+<td>Hover icon bài gần đây</td>
+<td>Hiển thị tên tổ hợp của bài tương ứng.</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Điểm cần lưu ý:</strong></p>
+<ul>
+<li>Đi học/vắng của icon bài gần đây suy ra từ điểm danh theo bảng trên; bộ icon bài gần đây khác bộ icon điểm danh ở cột Trạng thái của bảng bài.</li>
+<li>Khác Figma ADM-LOP-020100: khối Bài học gần đây ở vùng trái đang vẽ 4 icon, requirement là 6 bài.</li>
+<li>Badge đánh giá không có điều hướng. Hover icon bài gần đây để xem trạng thái; không tự thêm thao tác click cập nhật/điều hướng.</li>
+</ul>
+<h4 id="testcase-anh-gia-va-bai-gan-ay">Testcase — Đánh giá và bài gần đây</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 24: Badge F/D/E đúng màu</td>
+<td>High</td>
+<td></td>
+<td>REQ08</td>
+<td>Admin / Class Handler / Support / Teacher / Sale</td>
+<td>Có học viên F, D, E</td>
+<td><strong>Given</strong> danh sách trả đánh giá<br><strong>When</strong> render<br><strong>Then</strong> F đỏ, D nâu, E cam</td>
+<td>- Không tự tính lại đánh giá<br>- Có chữ, không chỉ dựa màu</td>
+</tr>
+<tr>
+<td>Case 25: Thẻ học viên chỉ 3 bài gần nhất đã điểm danh</td>
+<td>High</td>
+<td></td>
+<td>REQ08</td>
+<td>Admin / Class Handler / Support / Teacher / Sale</td>
+<td>A có bài 5 Chưa điểm danh, bài 1–4 đã điểm danh; B có 2 bài đã điểm danh</td>
+<td><strong>Given</strong> xem thẻ A và B<br><strong>When</strong> render<br><strong>Then</strong> A hiện bài 4, 3, 2; B hiện 2 bài</td>
+<td>- Bài Chưa điểm danh không tính<br>- Ít bài không dựng placeholder<br>- Đúng người/lớp</td>
+</tr>
+<tr>
+<td>Case 61: Vùng trái hiển thị 6 bài gần nhất</td>
+<td>High</td>
+<td></td>
+<td>REQ08</td>
+<td>Admin / Class Handler / Support / Teacher / Sale</td>
+<td>A có 8 bài đã điểm danh, B có 4 bài</td>
+<td><strong>Given</strong> chọn A rồi chọn B<br><strong>When</strong> khối Bài học gần đây vùng trái render<br><strong>Then</strong> A có 6 icon (bài 8 → 3), B có 4 icon</td>
+<td>- Thẻ A ở danh sách vẫn chỉ 3 icon<br>- Không dựng placeholder</td>
+</tr>
+<tr>
+<td>Case 26: Phân biệt bốn tổ hợp</td>
+<td>High</td>
+<td></td>
+<td>REQ08</td>
+<td>Admin / Class Handler / Support / Teacher / Sale</td>
+<td>Các bài: Vào trễ + đã nộp, Có mặt + chưa nộp, Nghỉ CP + đã nộp, Nghỉ KP + chưa nộp</td>
+<td><strong>Given</strong> xem icon từng bài<br><strong>When</strong> render<br><strong>Then</strong> đúng bốn icon theo bảng</td>
+<td>- Vào trễ tính đi học<br>- Nghỉ CP/KP tính vắng<br>- Không nhầm với trạng thái quan hệ lớp</td>
+</tr>
+<tr>
+<td>Case 47: Không điều hướng hoặc tự chốt icon</td>
+<td>Medium</td>
+<td></td>
+<td>REQ02 / REQ08 / REQ09</td>
+<td>Admin / Class Handler / Support / Teacher / Sale</td>
+<td>Có Tiêu chuẩn/Đã chấm và sửa bài/đánh giá</td>
+<td><strong>Given</strong> xem hoặc click các thẻ/badge này<br><strong>When</strong> tương tác<br><strong>Then</strong> không chuyển menu</td>
+<td>- Chưa có icon chính thức cho thẻ Tiêu chuẩn/Đã chấm và sửa bài<br>- Không làm thay đổi dữ liệu</td>
+</tr>
+<tr>
+<td>Case 50: Hover xem trạng thái bài gần đây</td>
+<td>High</td>
+<td></td>
+<td>REQ08</td>
+<td>Admin / Class Handler / Support / Teacher / Sale</td>
+<td>Các bài gần nhất có tổ hợp trạng thái khác nhau</td>
+<td><strong>Given</strong> vùng bài gần đây hiển thị<br><strong>When</strong> hover từng icon<br><strong>Then</strong> hiện đúng trạng thái của bài đó</td>
+<td>- Không trộn bài/học viên<br>- Phân biệt đủ bốn tổ hợp<br>- Không tự tạo click điều hướng hoặc cập nhật</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="bang-bai-hoc-cua-hoc-vien-va-iem-danh">Bảng bài học của học viên và điểm danh</h3>
+<p><strong>Mô tả:</strong> Bảng bên trái gồm Tên bài học, Ghi chú, Trạng thái, Điểm số và Thời gian của học viên đang chọn.</p>
+<p><strong>Giải thích field/thành phần:</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Cột</th>
+<th>Yêu cầu</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Tên bài học</td>
+<td>Thứ tự bài; tag thời điểm giáo viên mở bài cho lớp dạng <code>HH:mm - dd/MM/yyyy</code> (ví dụ <code>19:18 - 13/07/2026</code>) đặt <strong>phía trên</strong> tên bài; tên bài. Cùng lớp/cùng bài thì mốc này giống nhau ở mọi học viên, không phải giờ học/nộp của từng người. Bài chưa mở không có tag.</td>
+</tr>
+<tr>
+<td>Ghi chú</td>
+<td>Ghi chú giáo viên theo học viên–bài; có nội dung dùng icon đỏ và click xem. Không có nội dung dùng icon xám, không click được. Không chỉnh tại Tổng quan.</td>
+</tr>
+<tr>
+<td>Trạng thái</td>
+<td>Icon điểm danh của đúng học viên ở bài/buổi theo bảng bên dưới; không phải trạng thái Đang học/Rời lớp. Hover icon hiển thị tên trạng thái điểm danh tương ứng.</td>
+</tr>
+<tr>
+<td>Điểm số</td>
+<td>Điểm BTVN của học viên tại bài đó: điểm cụ thể, Chưa nộp hoặc Chưa chấm. Không lấy điểm kiểm tra thay cho cột này.</td>
+</tr>
+<tr>
+<td>Thời gian</td>
+<td>Thời gian học trên app của học viên cho bài; HH:mm:ss; icon i mở chi tiết từng phần.</td>
+</tr>
+</tbody>
+</table></div>
+<p align="center">
+  <a href="./images/attendance-status-icons.png"><img src="./images/attendance-status-icons.png" alt="Bộ icon trạng thái điểm danh" width="300" title="Nhấn để xem ảnh gốc"></a><br>
+  <em>Bộ icon `Trạng thái đi học` (Figma component 2456:110608) — nhấn để xem ảnh gốc</em>
+</p>
+
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Trạng thái điểm danh</th>
+<th>Tooltip</th>
+<th>Icon</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Có mặt</td>
+<td>Có mặt</td>
+<td>Ô viền xanh lá, dấu tick trắng nền xanh lá.</td>
+</tr>
+<tr>
+<td>Vào trễ</td>
+<td>Vào trễ</td>
+<td>Ô viền cam, lịch có dấu <code>!</code> màu cam.</td>
+</tr>
+<tr>
+<td>Ra sớm</td>
+<td>Ra sớm</td>
+<td>Ô viền cam, đồng hồ màu cam.</td>
+</tr>
+<tr>
+<td>Vào trễ &amp; ra sớm</td>
+<td>Vào trễ &amp; ra sớm</td>
+<td>Ô viền đỏ, đồng hồ có dấu <code>!</code> màu đỏ.</td>
+</tr>
+<tr>
+<td>Nghỉ có phép</td>
+<td>Nghỉ có phép (cp)</td>
+<td>Ô viền cam, lịch có bút màu cam.</td>
+</tr>
+<tr>
+<td>Nghỉ không phép</td>
+<td>Nghỉ không phép (kp)</td>
+<td>Ô viền đỏ, biểu tượng cấm màu đỏ.</td>
+</tr>
+<tr>
+<td>Chưa điểm danh</td>
+<td>Chưa điểm danh</td>
+<td>Ô viền đỏ, lịch có dấu <code>x</code> màu đỏ.</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Điểm cần lưu ý:</strong></p>
+<ul>
+<li>Chỉ xem: không chỉnh điểm, điểm danh hoặc ghi chú bài học bằng icon ở đây. Quyền chấm BTVN/KT chính thức vẫn thuộc giáo viên phụ trách chính ở function khác.</li>
+<li>Điểm cụ thể 0 là một điểm hợp lệ khác với Chưa nộp/Chưa chấm; không dùng falsy để thay 0 thành trạng thái chưa có điểm.</li>
+<li>Bộ icon điểm danh dùng component <code>Trạng thái đi học</code>; mỗi icon có tooltip tên trạng thái. Cùng bộ icon được dùng ở cột Đi học của menu Bài học.</li>
+<li>Bảng bài hiển thị toàn bộ, không load-more/phân trang; sắp theo số thứ tự bài học tăng dần. Không cắt bảng theo số bài của vùng Bài học gần đây.</li>
+<li>Khác Figma ADM-LOP-020100: bảng bài chưa có tag thời điểm mở bài phía trên tên bài.</li>
+</ul>
+<h4 id="testcase-bang-bai-va-iem-danh">Testcase — Bảng bài và điểm danh</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 27: Bảng đúng học viên được chọn</td>
+<td>High</td>
+<td></td>
+<td>Flow 2 / REQ09</td>
+<td>Admin / Class Handler / Support / Teacher / Sale</td>
+<td>A/B có bài khác dữ liệu</td>
+<td><strong>Given</strong> chọn B<br><strong>When</strong> tải bảng<br><strong>Then</strong> bài/ghi chú/điểm danh/điểm/thời gian đúng B</td>
+<td>- Không dùng dữ liệu A<br>- Không giới hạn 3 bài chỉ vì vùng gần đây</td>
+</tr>
+<tr>
+<td>Case 28: Đủ bảy trạng thái điểm danh</td>
+<td>High</td>
+<td></td>
+<td>REQ09</td>
+<td>Admin / Class Handler / Support / Teacher / Sale</td>
+<td>Có các trạng thái hợp lệ</td>
+<td><strong>Given</strong> tải bảng<br><strong>When</strong> hiển thị trạng thái<br><strong>Then</strong> khớp đủ 7 giá trị, đúng icon và tooltip</td>
+<td>- Phân biệt trễ, sớm, trễ &amp; sớm, cp, kp, chưa điểm danh<br>- Không thay bằng enum học viên–lớp</td>
+</tr>
+<tr>
+<td>Case 29: Điểm BTVN và trạng thái chưa có điểm</td>
+<td>High</td>
+<td></td>
+<td>REQ09</td>
+<td>Admin / Class Handler / Support / Teacher / Sale</td>
+<td>BTVN có 9.7, 0, Chưa nộp, Chưa chấm; KT có điểm khác</td>
+<td><strong>Given</strong> tải điểm từng dòng<br><strong>When</strong> render<br><strong>Then</strong> lấy đúng BTVN và giữ từng loại</td>
+<td>- Không dùng điểm KT<br>- 0 vẫn là điểm số<br>- Không đổi trạng thái thành 0<br>- Không tự chấm điểm</td>
+</tr>
+<tr>
+<td>Case 30: Icon ghi chú đỏ/xám</td>
+<td>High</td>
+<td></td>
+<td>REQ09 / REQ10</td>
+<td>Admin / Class Handler / Support / Teacher / Sale</td>
+<td>Được xem lớp, có bài có/không có ghi chú</td>
+<td><strong>Given</strong> bảng hiển thị<br><strong>When</strong> đối chiếu nội dung<br><strong>Then</strong> có ghi chú đỏ, không có xám</td>
+<td>- Icon đỏ mở xem hai vùng ghi chú đã được chốt<br>- Icon xám không click<br>- Không chuyển ghi chú cài đặt vào cột này</td>
+</tr>
+<tr>
+<td>Case 53: Mốc mở bài giống nhau ở mọi học viên</td>
+<td>High</td>
+<td></td>
+<td>REQ09</td>
+<td>Admin / Class Handler / Support / Teacher / Sale</td>
+<td>Giáo viên mở bài 3 lúc 21:18 ngày 25/09; A/B học hoặc nộp vào giờ khác</td>
+<td><strong>Given</strong> chọn A rồi B<br><strong>When</strong> xem dòng bài 3<br><strong>Then</strong> cùng mốc giáo viên mở 21:18 ngày 25/09</td>
+<td>- Không lấy giờ học/nộp cá nhân<br>- Vẫn giữ thời gian app/điểm/điểm danh riêng của A/B</td>
+</tr>
+<tr>
+<td>Case 62: Tag thời gian phía trên tên bài</td>
+<td>Medium</td>
+<td></td>
+<td>REQ09</td>
+<td>Admin / Class Handler / Support / Teacher / Sale</td>
+<td>Bài 1 mở lúc 19:18 ngày 13/07/2026; bài 4 chưa mở</td>
+<td><strong>Given</strong> xem bảng bài vùng trái<br><strong>When</strong> render cột Tên bài học<br><strong>Then</strong> dòng bài 1 có tag <code>19:18 - 13/07/2026</code> phía trên tên bài</td>
+<td>- Dòng bài 4 không có tag<br>- Không lấy giờ học/nộp của học viên</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="popup-ghi-chu-giao-vien-theo-bai-hoc">Popup ghi chú giáo viên theo bài học</h3>
+<p align="center">
+  <a href="./images/41-class-overview-lesson-note.png"><img src="./images/41-class-overview-lesson-note.png" alt="Popup chỉ xem ghi chú từ giáo viên" width="900" title="Nhấn để xem ảnh gốc"></a>
+</p>
+
+<p><strong>Mô tả:</strong> Click ghi chú bài mở popup Ghi chú, có hai vùng theo UI mới: Ghi chú từ Giáo viên cho Học viên và Ghi chú từ Giáo viên cho Team Support.</p>
+<p><strong>Giải thích field/thành phần:</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Thành phần</th>
+<th>Yêu cầu</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Cho Học viên</td>
+<td>Nội dung giáo viên đã ghi theo bài và học viên; chỉ đọc.</td>
+</tr>
+<tr>
+<td>Cho Team Support</td>
+<td>Nội dung giáo viên cho team hỗ trợ; chỉ đọc. Admin/Class Handler/Sale/Support và Teacher của lớp được xem cả vùng này và vùng Cho Học viên.</td>
+</tr>
+<tr>
+<td>Hủy</td>
+<td>Đóng popup, không lưu hay đổi ghi chú.</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Điểm cần lưu ý:</strong></p>
+<ul>
+<li>Dữ liệu dùng class_id + student_id + lesson/session_id, không chỉ student_id.</li>
+<li>Không có quyền sửa tại Tổng quan, kể cả Teacher; việc giáo viên tạo/sửa ghi chú nằm trong function bên role Giáo viên.</li>
+<li>Admin/Class Handler/Sale/Support và Teacher (mọi giáo viên của lớp) được xem cả hai vùng theo quyền lớp; Teacher xem cả ghi chú do giáo viên khác của lớp viết, theo <a href="../../teacher_role/class/class_overview_requirements.md">Tổng quan — role Giáo viên</a>.</li>
+<li>Không tự nối hai vùng thành một ghi chú; xử lý nội dung trống riêng từng vùng.</li>
+<li>Icon xám không click được: không mở popup rỗng, không gửi request tải ghi chú và không có thao tác lưu.</li>
+</ul>
+<h4 id="testcase-popup-ghi-chu-giao-vien">Testcase — Popup ghi chú giáo viên</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 31: Mở ghi chú đúng bài/học viên</td>
+<td>High</td>
+<td></td>
+<td>Flow 5 / REQ10</td>
+<td>Admin / Class Handler / Support / Teacher / Sale</td>
+<td>Có ghi chú bài</td>
+<td><strong>Given</strong> click icon đỏ tại bài của B<br><strong>When</strong> popup mở<br><strong>Then</strong> ghi chú đúng lớp/B/bài</td>
+<td>- Hai vùng đúng nguồn<br>- Chỉ đọc<br>- Không trộn ghi chú cài đặt</td>
+</tr>
+<tr>
+<td>Case 32: Năm role xem cả hai vùng ghi chú</td>
+<td>High</td>
+<td></td>
+<td>REQ10 / EX01</td>
+<td>Admin / Class Handler / Sale / Support / Teacher</td>
+<td>Được xem lớp, có hai vùng ghi chú</td>
+<td><strong>Given</strong> mở popup/API ghi chú<br><strong>When</strong> tải nội dung<br><strong>Then</strong> xem cả Cho Học viên và Cho Team Support</td>
+<td>- Đúng role/phạm vi lớp<br>- Không có lưu/chỉnh<br>- Hủy không đổi dữ liệu<br>- Teacher xem cả ghi chú do giáo viên khác của lớp viết</td>
+</tr>
+<tr>
+<td>Case 52: Icon ghi chú xám không click</td>
+<td>High</td>
+<td></td>
+<td>REQ09 / REQ10</td>
+<td>Admin / Class Handler / Support / Teacher / Sale</td>
+<td>Bài không có ghi chú, icon xám</td>
+<td><strong>Given</strong> click hoặc kích hoạt icon xám<br><strong>When</strong> xử lý tương tác<br><strong>Then</strong> không thao tác</td>
+<td>- Không mở popup rỗng<br>- Không request tải ghi chú<br>- Không Toast hoặc thay dữ liệu</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="popup-thoi-gian-tung-phan-tren-app">Popup Thời gian từng phần trên app</h3>
+<p align="center">
+  <a href="./images/40-class-overview-learning-time.png"><img src="./images/40-class-overview-learning-time.png" alt="Thời gian từng phần trên app" width="850" title="Nhấn để xem ảnh gốc"></a>
+</p>
+
+<p><strong>Mô tả:</strong> Click icon i tại một dòng bài học mở Thời gian, hiển thị thời gian học của đúng học viên và bài đó theo từng phần trên app.</p>
+<p><strong>Giải thích field/thành phần:</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Thành phần</th>
+<th>Yêu cầu</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Chín phần</td>
+<td>BTVN, Từ vựng, Nghe, Học flashcard, Duyệt kiến thức, Ngữ pháp, Đọc, Lật flashcard, Luyện nhớ.</td>
+</tr>
+<tr>
+<td>Mỗi ô</td>
+<td>Icon đúng loại hoạt động, thời gian HH:mm:ss; có nhãn/tooltip phân biệt hoạt động.</td>
+</tr>
+<tr>
+<td>00:00:00</td>
+<td>Thời gian ghi nhận thực tế bằng 0; không dùng 0 để che lỗi tải hoặc thiếu dữ liệu chưa xác định.</td>
+</tr>
+<tr>
+<td>Hủy</td>
+<td>Đóng popup, không thay dữ liệu thời gian.</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Điểm cần lưu ý:</strong></p>
+<ul>
+<li>Học flashcard và Lật flashcard là hai phần riêng; không gộp vì icon tương tự.</li>
+<li>Popup không hiển thị thời gian toàn lớp hoặc tổng nhiều bài thay cho bài được bấm.</li>
+<li>Giá trị dùng tính trung bình là tổng thời gian từng bài của từng học viên trên app, không phải từng ô hoạt động riêng lẻ. Cách nguồn thời gian tổng loại trùng giữa chín hoạt động cần xác nhận với function app; không tự cộng trùng.</li>
+<li>Mapping icon/thứ tự ô không được đoán từ hình; cần dùng định danh hoạt động và asset chuẩn.</li>
+</ul>
+<h4 id="testcase-popup-thoi-gian">Testcase — Popup thời gian</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 33: i mở đúng thời gian theo bài</td>
+<td>High</td>
+<td></td>
+<td>Flow 6 / REQ11</td>
+<td>Admin / Class Handler / Support / Teacher / Sale</td>
+<td>Có nhiều bài/học viên</td>
+<td><strong>Given</strong> click i tại bài của B<br><strong>When</strong> popup mở<br><strong>Then</strong> đúng class/student/lesson</td>
+<td>- Không hiện thời gian A/toàn lớp<br>- Chỉ đọc</td>
+</tr>
+<tr>
+<td>Case 34: Đủ chín phần riêng biệt</td>
+<td>High</td>
+<td></td>
+<td>REQ11</td>
+<td>Admin / Class Handler / Support / Teacher / Sale</td>
+<td>Có dữ liệu thời gian</td>
+<td><strong>Given</strong> popup mở<br><strong>When</strong> render<br><strong>Then</strong> đủ chín hoạt động đã chốt</td>
+<td>- Không gộp hai flashcard<br>- Thời gian đúng HH:mm:ss<br>- Có nhãn/tooltip hoạt động</td>
+</tr>
+<tr>
+<td>Case 35: Giá trị 0 khác lỗi tải</td>
+<td>High</td>
+<td></td>
+<td>EX05 / REQ11</td>
+<td>Admin / Class Handler / Support / Teacher / Sale</td>
+<td>Một phần có 0, hoặc API lỗi</td>
+<td><strong>Given</strong> tải popup<br><strong>When</strong> nhận dữ liệu/lỗi<br><strong>Then</strong> phân biệt hai tình huống</td>
+<td>- 0 hợp lệ hiển thị 00:00:00<br>- Lỗi có thông báo/thử lại, không dựng chín số 0</td>
+</tr>
+<tr>
+<td>Case 36: Đóng Thời gian</td>
+<td>Medium</td>
+<td></td>
+<td>REQ11</td>
+<td>Admin / Class Handler / Support / Teacher / Sale</td>
+<td>Popup đang mở</td>
+<td><strong>Given</strong> click Hủy<br><strong>When</strong> đóng<br><strong>Then</strong> giữ nguyên lựa chọn/dữ liệu</td>
+<td>- Không lưu/audit/Toast CRUD<br>- Không đổi học viên đang chọn</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="loading-rong-loi-va-an-toan-du-lieu">Loading, rỗng, lỗi và an toàn dữ liệu</h3>
+<p><strong>Mô tả:</strong> Phân biệt tải/chưa có dữ liệu/lỗi ở thống kê, danh sách, bảng bài và popup; chống response cũ ghi đè học viên đang chọn.</p>
+<p><strong>Giải thích field/thành phần:</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Thành phần</th>
+<th>Yêu cầu</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Loading</td>
+<td>Hiển thị tại vùng đang tải; không giữ dữ liệu A dưới tên B.</td>
+</tr>
+<tr>
+<td>Empty</td>
+<td>Chưa có học viên, Không tìm thấy học viên, Chưa có bài học hoặc Chưa có ghi chú tùy nguồn.</td>
+</tr>
+<tr>
+<td>Error</td>
+<td>Thông báo phù hợp và Thử lại; không biến lỗi thành chỉ số 0.</td>
+</tr>
+<tr>
+<td>Toast</td>
+<td>Các thao tác xem/search/chọn/ON-OFF/Copy/Hủy popup không có Toast CRUD thành công.</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Điểm cần lưu ý:</strong></p>
+<ul>
+<li>Render text ghi chú an toàn, không thực thi HTML/script.</li>
+<li>Request/response phải xác định đúng lớp, học viên, bài và quyền hiện tại.</li>
+<li>Không cache/chia sẻ payload có học phí/ghi chú cài đặt cho Teacher hoặc role khác phạm vi; ghi chú bài học tuân quyền nguồn riêng.</li>
+</ul>
+<h4 id="testcase-trang-thai-tai-va-ngoai-le">Testcase — Trạng thái tải và ngoại lệ</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 37: Đổi học viên/search liên tục</td>
+<td>High</td>
+<td></td>
+<td>EX03 / REQ12</td>
+<td>Admin / Class Handler / Support / Teacher / Sale</td>
+<td>Request cũ trả muộn</td>
+<td><strong>Given</strong> A rồi B hoặc search mới<br><strong>When</strong> response cũ về<br><strong>Then</strong> bỏ qua response cũ</td>
+<td>- Tên/chỉ số/bài/ghi chú cùng ngữ cảnh mới<br>- Không trộn kết quả</td>
+</tr>
+<tr>
+<td>Case 38: Lỗi tải từng vùng</td>
+<td>High</td>
+<td></td>
+<td>EX05 / REQ12</td>
+<td>Admin / Class Handler / Support / Teacher / Sale</td>
+<td>API thống kê/bảng bài/popup Thời gian lỗi</td>
+<td><strong>Given</strong> tải dữ liệu<br><strong>When</strong> thất bại<br><strong>Then</strong> lỗi và Thử lại tại vùng đó</td>
+<td>- Không số 0 giả<br>- Không xóa dữ liệu hợp lệ vùng khác<br>- Lỗi không làm lộ ghi chú cho người ngoài lớp</td>
+</tr>
+<tr>
+<td>Case 39: Text ghi chú an toàn</td>
+<td>High</td>
+<td></td>
+<td>REQ12</td>
+<td>Admin / Class Handler / Support / Teacher / Sale</td>
+<td>Nội dung có HTML/script</td>
+<td><strong>Given</strong> popup hoặc thẻ mở<br><strong>When</strong> render<br><strong>Then</strong> chỉ text an toàn</td>
+<td>- Không chạy script<br>- Không mất nội dung nghiệp vụ</td>
+</tr>
+<tr>
+<td>Case 40: Chỉ đọc không tạo CRUD</td>
+<td>Medium</td>
+<td></td>
+<td>REQ12</td>
+<td>Admin / Class Handler / Support / Sale</td>
+<td>Dữ liệu đang có, được xem học phí/ghi chú trong lớp</td>
+<td><strong>Given</strong> search/chọn/ON-OFF/xem lịch sử/Copy/đóng popup<br><strong>When</strong> thao tác xong<br><strong>Then</strong> không thay dữ liệu</td>
+<td>- Không Toast CRUD<br>- Không tự lưu điểm/ghi chú/điểm danh</td>
+</tr>
+<tr>
+<td>Case 54: Thao tác đọc của Teacher không tạo CRUD</td>
+<td>Medium</td>
+<td></td>
+<td>REQ01 / REQ12</td>
+<td>Teacher</td>
+<td>Được xem lớp, có dữ liệu học tập</td>
+<td><strong>Given</strong> search tên/chọn học viên/xem chart/hover trạng thái/mở và đóng Thời gian<br><strong>When</strong> thao tác xong<br><strong>Then</strong> không thay dữ liệu</td>
+<td>- Không ON/OFF, không học phí/ghi chú cài đặt<br>- Không Toast CRUD<br>- Không tự sửa điểm/điểm danh/ghi chú bài</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="2-yeu-cau">2. Yêu cầu</h2>
+<h3 id="21-flow-chinh">2.1. Flow chính</h3>
+<ul>
+<li><strong>Flow 1 / REQ01–REQ03:</strong> Mở Tổng quan → kiểm tra role/phạm vi → tải thống kê lớp và danh sách → chọn học viên đầu tiên → tải chỉ số/bảng bài.</li>
+<li><strong>Flow 2 / REQ04, REQ06, REQ09:</strong> Search theo tên hoặc click thẻ → ngữ cảnh học viên mới → cập nhật vùng trái; click &gt; → detail học viên theo quyền màn đích; Admin/Class Handler/Support hover chấm đỏ lịch hẹn → popup Danh sách lịch hẹn chỉ đọc.</li>
+<li><strong>Flow 3 / REQ05:</strong> Admin/Class Handler/Support/Sale bật ON → hiện học phí/ghi chú cài đặt của lớp và học viên; OFF → ẩn; Teacher không có công tắc, không thay dữ liệu học tập hoặc quyền màn khác.</li>
+<li><strong>Flow 4 / REQ07:</strong> Icon lịch sử ghi chú cài đặt → popup theo học viên–lớp → xem các phiên bản → Copy nội dung bản chọn.</li>
+<li><strong>Flow 5 / REQ10:</strong> Icon ghi chú bài → kiểm tra quyền từng vùng → popup hai nguồn ghi chú giáo viên → chỉ xem → Hủy.</li>
+<li><strong>Flow 6 / REQ11:</strong> i của bài → thời gian học viên–bài → chín phần trên app → Hủy, giữ lựa chọn.</li>
+<li><strong>Flow 7 / REQ13:</strong> Hover nút Back/mã lớp → tooltip Thông tin của lớp đang mở → rời hover thì ẩn; click Back → đóng tooltip và về Danh sách lớp.</li>
+</ul>
+<h3 id="22-ngoai-le">2.2. Ngoại lệ</h3>
+<ul>
+<li><strong>EX01:</strong> Sai role/ngoài lớp/sai quyền ghi chú nội bộ → chặn backend và không trả nội dung không được phép.</li>
+<li><strong>EX02:</strong> Thiếu điểm hoặc enum khác giá trị đã chốt → không tự đổi thành 0/đánh giá/điểm danh khác.</li>
+<li><strong>EX03:</strong> Response ngữ cảnh cũ → bỏ qua; không ghi đè học viên/search/lớp hiện tại.</li>
+<li><strong>EX04:</strong> Danh sách/search/bảng bài rỗng → empty state đúng vùng, không dữ liệu giả.</li>
+<li><strong>EX05:</strong> Lỗi tải → giữ phần hợp lệ, báo lỗi/thử lại; không coi là kết quả 0 hoặc không có ghi chú.</li>
+<li><strong>EX06:</strong> Học viên rời/xóa → bảo toàn bài đã làm/điểm BTVN và KT trong tập tính thống kê lịch sử; không xóa dữ liệu theo quan hệ hiện tại.</li>
+</ul>
+<h3 id="23-yeu-cau-khac">2.3. Yêu cầu khác</h3>
+<ul>
+<li><strong>REQ01:</strong> Admin/Class Handler/Support/Teacher/Sale được xem theo phạm vi; Teacher không có ON/OFF hoặc payload học phí/ghi chú cài đặt qua Tổng quan.</li>
+<li><strong>REQ02:</strong> Sĩ số = (Đang học + Dự thính) / tất cả 7 trạng thái kể cả Xóa; Đi học/BTVN dùng công thức đã chốt; thời gian trung bình của tổng thời gian từng học viên–bài; Tiêu chuẩn lớp–giáo viên; Đã chấm và sửa bài = số bài BTVN + Kiểm tra đã bấm nút Đã Chấm và Sửa Bài Trên Lớp, mỗi bài một lần; không điều hướng các thẻ.</li>
+<li><strong>REQ03:</strong> Trung bình trực tiếp bài đã chấm, tính KT và BTVN riêng, giữ bài người rời/xóa, loại Chưa nộp/Chưa chấm khỏi cả tử/mẫu, giữ điểm 0 đã chấm, làm tròn kết quả cuối 1 chữ số thập phân.</li>
+<li><strong>REQ04:</strong> Mỗi điểm chart theo bài, không lũy kế; chart học viên chỉ tới bài người đó đã học, không hiển thị bài phía sau; đúng phạm vi lớp/học viên.</li>
+<li><strong>REQ05:</strong> Mặc định OFF; ON hiển thị học phí và ghi chú cài đặt, OFF ẩn; Teacher không có control; không mở rộng tab Hóa đơn/quyền sửa.</li>
+<li><strong>REQ06:</strong> Toàn bộ danh sách đủ mọi trạng thái kể cả Xóa, không load-more/phân trang; chọn người đầu tiên; click thẻ cập nhật vùng trái; &gt; vào detail; search tên không lọc thống kê lớp. Chấm đỏ số lịch hẹn chưa hoàn tất (Mới, Chưa xử lý, Đang xử lý) của học viên theo phạm vi xem lịch hẹn, chỉ Admin/Class Handler/Support; hover mở popup Danh sách lịch hẹn chỉ đọc; Teacher và Sale không thấy.</li>
+<li><strong>REQ07:</strong> Ghi chú cài đặt cùng nguồn ở Cài đặt, chỉ xem bất thường/lịch sử/Copy với mọi role ở Tổng quan, không tự sinh cảnh báo.</li>
+<li><strong>REQ08:</strong> Đánh giá nguồn chưa có công thức, không điều hướng; F đỏ/D nâu/E cam; bài gần nhất đã được điểm danh (bỏ bài Chưa điểm danh): thẻ học viên tối đa 3 bài, vùng trái tối đa 6 bài; bốn icon <code>Class Session Status</code> theo đi học (Có mặt, Vào trễ, Ra sớm, Vào trễ &amp; Ra sớm) / vắng (Nghỉ CP, Nghỉ KP) và đã nộp / chưa nộp BTVN; hover xem tên tổ hợp.</li>
+<li><strong>REQ09:</strong> Toàn bộ bảng bài theo số thứ tự tăng dần, không load-more/phân trang; bảy enum điểm danh hiển thị bằng bộ icon <code>Trạng thái đi học</code> kèm tooltip; điểm từng dòng là BTVN; tag thời điểm giáo viên mở bài <code>HH:mm - dd/MM/yyyy</code> phía trên tên bài, giống nhau cho mọi học viên, bài chưa mở không có tag; icon ghi chú xám không click; chỉ đọc.</li>
+<li><strong>REQ10:</strong> Popup hai vùng ghi chú giáo viên theo bài; Admin/Class Handler/Sale/Support và Teacher của lớp xem cả hai (Teacher gồm ghi chú của giáo viên khác trong lớp); không sửa ở Tổng quan, Teacher nhập ghi chú tại function role Giáo viên.</li>
+<li><strong>REQ11:</strong> i mở chín phần thời gian trên app, HH:mm:ss, không gộp flashcard, không thay 0 cho lỗi.</li>
+<li>
+<p><strong>REQ12:</strong> Loading/empty/error rõ ràng, chống stale response, text an toàn, không Toast CRUD cho thao tác đọc; ⌃ chỉ thu gọn/mở vùng thống kê Tổng quan.</p>
+</li>
+<li>
+<p><strong>REQ13 – Tooltip nút Back:</strong> Hover mũi tên/mã lớp hiển thị Thông tin gồm Buổi học, toàn bộ Lịch học, SP và nhãn chính, CSKH, Giáo viên, Khai giảng DD/MM/YYYY của đúng lớp. Chưa phân công hiển thị (Chưa có); rời hover thì ẩn; click vẫn quay về Danh sách lớp. Chỉ đọc, không phụ thuộc ON/OFF hoặc học viên được chọn; cùng quyền xem Tổng quan.</p>
+</li>
+</ul>
+<h3 id="24-rang-buoc">2.4. Ràng buộc</h3>
+<ul>
+<li>Dùng class_id + student_id và lesson/session_id phù hợp; không dùng tên/email/vị trí dòng làm khóa.</li>
+<li>Tập dữ liệu tính trung bình không bị giới hạn ở số thẻ/bài đã tải trên client.</li>
+<li>Dữ liệu lịch sử phải còn liên kết nguồn để tính điểm ngay khi học viên không còn trong danh sách hiện tại; không join theo quan hệ hoạt động rồi mất điểm.</li>
+<li>Ghi chú cài đặt lớp, ghi chú cài đặt học viên, ghi chú giáo viên cho học viên và cho Team Support là bốn nguồn khác nhau.</li>
+<li>Tổng quan không cho chấm điểm, sửa điểm danh, tự tính đánh giá hoặc sửa ghi chú giáo viên. Quyền giáo viên phụ trách chính tại function chấm điểm không thay đổi.</li>
+<li>Không suy role Assistant Teacher riêng; Trợ giảng là Support theo thuật ngữ đã chốt.</li>
+<li>Các công thức chưa chốt phải được xác nhận trước triển khai tính toán, không dùng đường biểu đồ/số mẫu trong ảnh làm công thức.</li>
+</ul>
+<h2 id="3-can-xac-nhan">3. Cần xác nhận</h2>
+<ol>
+<li>Tooltip chart cụ thể; nguồn tổng thời gian app chống trùng chín hoạt động, xử lý bản ghi thiếu thời gian/làm tròn giây và có tính thời gian người rời/xóa không? Chart theo bài, chỉ tới bài học viên đã học và công thức trung bình thời gian đã chốt.</li>
+<li>Thứ tự học viên; search không còn khớp người đang chọn thì giữ hay chuyển lựa chọn? Đã chốt tìm theo tên và hiển thị mọi trạng thái kể cả Xóa, full danh sách/bảng bài không tải thêm.</li>
+<li>Công thức đánh giá và màu C vẫn chưa có; không tự tính. Đã chốt Đã chấm và sửa bài đếm số bài BTVN + Kiểm tra đã bấm nút, mốc thời gian là lúc giáo viên mở bài, icon ghi chú xám không click.</li>
+</ol>
+</article>
+    <p class="source-note">Nguồn: class_detail_overview_requirements.md · SHA-256 bf3e9e2b420d4fc218a385c5d0affc4d0ca2c944978d0c4791af5076fdd46a9c</p>
+  </main>
+  <script>
+    const article = document.getElementById('document');
+    const nav = document.getElementById('docNav');
+    const headings = [...article.querySelectorAll('h2')];
+    headings.forEach((heading, index) => {
+      const link = document.createElement('a');
+      link.href = `#${heading.id}`;
+      const number = document.createElement('span');
+      number.className = 'nav-num';
+      number.textContent = String(index + 1).padStart(2, '0');
+      link.append(number, document.createTextNode(heading.textContent));
+      nav.append(link);
+    });
+
+    const navLinks = [...nav.querySelectorAll('a')];
+    const observer = new IntersectionObserver(entries => {
+      const current = entries.filter(item => item.isIntersecting).sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
+      if (!current) return;
+      navLinks.forEach(link => link.classList.toggle('active', link.hash === `#${current.target.id}`));
+    }, {rootMargin: '-18% 0px -68% 0px', threshold: [0, .2, .5]});
+    headings.forEach(heading => observer.observe(heading));
+    if (navLinks[0]) navLinks[0].classList.add('active');
+
+    const testcaseHeadings = [...article.querySelectorAll('h4, h5')]
+      .filter(heading => heading.textContent.trim().startsWith('Testcase'));
+    const testcaseGroups = testcaseHeadings
+      .map(heading => ({heading, tableWrap: heading.nextElementSibling}))
+      .filter(group => group.tableWrap?.classList.contains('table-wrap'));
+    if (testcaseGroups.length) {
+        const tableWraps = testcaseGroups.map(group => group.tableWrap);
+        tableWraps.forEach(tableWrap => tableWrap.classList.add('testcase-table'));
+        const rows = tableWraps.flatMap(tableWrap => [...tableWrap.querySelectorAll('tbody tr')]);
+        const tools = document.createElement('div');
+        tools.className = 'case-tools';
+        const input = document.createElement('input');
+        input.type = 'search';
+        input.placeholder = 'Tìm testcase, Flow, REQ, EX hoặc nội dung…';
+        input.setAttribute('aria-label', 'Tìm testcase');
+        const count = document.createElement('span');
+        count.className = 'case-count';
+        tools.append(input, count);
+        testcaseGroups[0].heading.before(tools);
+        const filterRows = () => {
+          const query = input.value.trim().toLocaleLowerCase('vi');
+          let visible = 0;
+          rows.forEach(row => {
+            const match = !query || row.textContent.toLocaleLowerCase('vi').includes(query);
+            row.hidden = !match;
+            if (match) visible += 1;
+          });
+          testcaseGroups.forEach(({heading, tableWrap}) => {
+            const hasVisibleRow = [...tableWrap.querySelectorAll('tbody tr')]
+              .some(row => !row.hidden);
+            heading.hidden = !hasVisibleRow;
+            tableWrap.hidden = !hasVisibleRow;
+          });
+          count.textContent = `${visible}/${rows.length} testcase`;
+        };
+        input.addEventListener('input', filterRows);
+        filterRows();
+    }
+  </script>
+</body>
+</html>

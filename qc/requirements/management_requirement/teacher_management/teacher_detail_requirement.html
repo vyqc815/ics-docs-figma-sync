@@ -1,0 +1,2911 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Requirement [Admin] Chi tiết giáo viên">
+  <link rel="icon" href="data:,">
+  <title>[Admin] Chi tiết giáo viên — Requirement</title>
+  <style>
+    :root {
+      --orange-700: #c83f00;
+      --orange-600: #e84c00;
+      --orange-500: #f45b0a;
+      --orange-400: #ff7a32;
+      --orange-100: #fff0e8;
+      --orange-50: #fff8f4;
+      --navy-950: #101828;
+      --navy-900: #172033;
+      --navy-800: #243047;
+      --slate-700: #344054;
+      --slate-600: #475467;
+      --slate-500: #667085;
+      --slate-400: #98a2b3;
+      --slate-300: #d0d5dd;
+      --slate-200: #e4e7ec;
+      --slate-100: #f2f4f7;
+      --slate-50: #f8fafc;
+      --white: #ffffff;
+      --green: #159447;
+      --blue: #2154c5;
+      --yellow: #b77900;
+      --red: #c92a2a;
+      --purple: #6941c6;
+      --shadow-sm: 0 1px 2px rgba(16, 24, 40, .06);
+      --shadow-md: 0 12px 32px rgba(16, 24, 40, .10);
+      --shadow-lg: 0 24px 64px rgba(16, 24, 40, .16);
+      --radius-sm: 10px;
+      --radius: 16px;
+      --radius-lg: 24px;
+      --sidebar: 286px;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      color: var(--navy-950);
+      background:
+        radial-gradient(circle at 88% 5%, rgba(244, 91, 10, .10), transparent 24rem),
+        var(--slate-50);
+      font: 15px/1.65 Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      text-rendering: optimizeLegibility;
+    }
+    a { color: inherit; }
+    img { max-width: 100%; }
+    button, input, select { font: inherit; }
+    code {
+      padding: .12rem .38rem;
+      border: 1px solid #fed7c3;
+      border-radius: 6px;
+      color: var(--orange-700);
+      background: var(--orange-50);
+      font: 600 .9em ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    }
+
+    .skip-link {
+      position: fixed;
+      z-index: 999;
+      top: 12px;
+      left: 12px;
+      padding: 10px 14px;
+      border-radius: 9px;
+      color: var(--white);
+      background: var(--navy-950);
+      transform: translateY(-150%);
+    }
+    .skip-link:focus { transform: none; }
+
+    .sidebar {
+      position: fixed;
+      z-index: 30;
+      inset: 0 auto 0 0;
+      width: var(--sidebar);
+      padding: 22px 18px;
+      overflow-y: auto;
+      color: #f8fafc;
+      background:
+        linear-gradient(155deg, rgba(255, 122, 50, .24), transparent 26%),
+        linear-gradient(180deg, #192338 0%, #111827 100%);
+      border-right: 1px solid rgba(255, 255, 255, .08);
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 4px 8px 22px;
+      border-bottom: 1px solid rgba(255, 255, 255, .10);
+    }
+    .brand-mark {
+      display: grid;
+      width: 44px;
+      height: 44px;
+      place-items: center;
+      border-radius: 14px;
+      color: var(--white);
+      background: linear-gradient(135deg, var(--orange-400), var(--orange-600));
+      box-shadow: 0 10px 26px rgba(244, 91, 10, .35);
+      font-weight: 900;
+      letter-spacing: -.06em;
+    }
+    .brand strong { display: block; font-size: 16px; }
+    .brand small { color: #aeb8c9; }
+    .nav-title {
+      margin: 24px 10px 8px;
+      color: #8f9aae;
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+    .nav { display: grid; gap: 4px; }
+    .nav a {
+      display: flex;
+      align-items: center;
+      gap: 11px;
+      padding: 10px 12px;
+      border-radius: 10px;
+      color: #cbd5e1;
+      text-decoration: none;
+      transition: .18s ease;
+    }
+    .nav a:hover, .nav a.active {
+      color: var(--white);
+      background: rgba(255, 255, 255, .09);
+    }
+    .nav a.active { box-shadow: inset 3px 0 var(--orange-400); }
+    .nav-num {
+      display: grid;
+      width: 25px;
+      height: 25px;
+      flex: 0 0 auto;
+      place-items: center;
+      border: 1px solid rgba(255, 255, 255, .15);
+      border-radius: 8px;
+      font-size: 11px;
+      font-weight: 800;
+    }
+    .sidebar-footer {
+      margin-top: 26px;
+      padding: 14px;
+      border: 1px solid rgba(255, 255, 255, .10);
+      border-radius: 14px;
+      color: #aeb8c9;
+      background: rgba(255, 255, 255, .04);
+      font-size: 12px;
+    }
+    .sidebar-footer a { color: #ffd8c5; }
+
+    main {
+      width: min(1500px, calc(100% - var(--sidebar)));
+      margin-left: var(--sidebar);
+      padding: 34px clamp(24px, 4vw, 64px) 80px;
+    }
+    section { scroll-margin-top: 24px; }
+    .hero {
+      position: relative;
+      padding: clamp(30px, 5vw, 56px);
+      overflow: hidden;
+      border: 1px solid rgba(255, 255, 255, .08);
+      border-radius: var(--radius-lg);
+      color: var(--white);
+      background:
+        linear-gradient(105deg, rgba(16, 24, 40, .97) 0%, rgba(23, 32, 51, .94) 62%, rgba(109, 45, 9, .90) 100%);
+      box-shadow: var(--shadow-lg);
+    }
+    .hero::after {
+      content: "";
+      position: absolute;
+      width: 360px;
+      height: 360px;
+      top: -190px;
+      right: -80px;
+      border: 70px solid rgba(255, 122, 50, .15);
+      border-radius: 50%;
+    }
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 10px;
+      border: 1px solid rgba(255, 255, 255, .15);
+      border-radius: 999px;
+      color: #ffd8c5;
+      background: rgba(255, 255, 255, .06);
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+    .hero h1 {
+      max-width: 900px;
+      margin: 18px 0 12px;
+      font-size: clamp(34px, 5vw, 64px);
+      line-height: 1.03;
+      letter-spacing: -.045em;
+    }
+    .hero p { max-width: 780px; margin: 0; color: #cbd5e1; font-size: 17px; }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 25px; }
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      min-height: 42px;
+      padding: 9px 14px;
+      border: 1px solid transparent;
+      border-radius: 10px;
+      color: var(--white);
+      background: var(--orange-500);
+      text-decoration: none;
+      cursor: pointer;
+      transition: .18s ease;
+    }
+    .button:hover { transform: translateY(-1px); background: var(--orange-600); }
+    .button.secondary { border-color: rgba(255, 255, 255, .15); background: rgba(255, 255, 255, .07); }
+    .button.ghost { color: var(--slate-700); border-color: var(--slate-300); background: var(--white); }
+    .button.small { min-height: 36px; padding: 7px 11px; font-size: 13px; }
+
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 14px;
+      margin-top: 18px;
+    }
+    .stat {
+      padding: 18px;
+      border: 1px solid var(--slate-200);
+      border-radius: var(--radius);
+      background: rgba(255, 255, 255, .86);
+      box-shadow: var(--shadow-sm);
+    }
+    .stat strong { display: block; color: var(--orange-600); font-size: 30px; line-height: 1; }
+    .stat span { display: block; margin-top: 7px; color: var(--slate-600); font-weight: 650; }
+
+    .section-head {
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 24px;
+      margin: 64px 0 20px;
+    }
+    .section-kicker {
+      margin: 0 0 6px;
+      color: var(--orange-600);
+      font-size: 12px;
+      font-weight: 850;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+    .section-head h2 { margin: 0; font-size: clamp(27px, 4vw, 40px); letter-spacing: -.035em; }
+    .section-head p { max-width: 600px; margin: 8px 0 0; color: var(--slate-600); }
+
+    .panel {
+      padding: clamp(20px, 3vw, 30px);
+      border: 1px solid var(--slate-200);
+      border-radius: var(--radius-lg);
+      background: var(--white);
+      box-shadow: var(--shadow-sm);
+    }
+    .panel + .panel { margin-top: 18px; }
+    .panel h3 { margin: 0 0 14px; font-size: 21px; letter-spacing: -.02em; }
+    .panel h4 { margin: 26px 0 10px; }
+    .muted { color: var(--slate-600); }
+    .note {
+      padding: 15px 17px;
+      border-left: 4px solid var(--orange-500);
+      border-radius: 0 12px 12px 0;
+      color: var(--slate-700);
+      background: var(--orange-50);
+    }
+
+    .mockup {
+      position: relative;
+      padding: 12px;
+      border: 1px solid var(--slate-200);
+      border-radius: 18px;
+      background: linear-gradient(145deg, #fff, #f4f6f9);
+      box-shadow: var(--shadow-md);
+    }
+    .mockup a { display: block; overflow: hidden; border-radius: 12px; }
+    .mockup img { display: block; width: 100%; transition: transform .3s ease; }
+    .mockup a:hover img { transform: scale(1.01); }
+    .mockup figcaption { padding: 12px 4px 2px; color: var(--slate-600); font-size: 13px; }
+
+    .grid-2 { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
+    .grid-3 { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+    .grid-4 { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 14px; }
+    .card {
+      padding: 18px;
+      border: 1px solid var(--slate-200);
+      border-radius: var(--radius);
+      background: var(--white);
+      box-shadow: var(--shadow-sm);
+    }
+    .card h3, .card h4 { margin: 0 0 8px; }
+    .card p { margin: 0; color: var(--slate-600); }
+    .card-accent { border-top: 4px solid var(--orange-500); }
+
+    .column-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+    .column-item {
+      min-height: 124px;
+      padding: 15px;
+      border: 1px solid var(--slate-200);
+      border-radius: 14px;
+      background: var(--slate-50);
+    }
+    .column-item strong { display: block; margin-bottom: 5px; color: var(--navy-900); }
+    .column-item span { color: var(--slate-600); font-size: 13px; }
+
+    .status-card { display: flex; align-items: center; gap: 12px; }
+    .status-card img { width: 42px; height: 42px; }
+    .status-card small { display: block; color: var(--slate-500); }
+
+    .tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      padding: 4px 9px;
+      border-radius: 999px;
+      color: var(--orange-700);
+      background: var(--orange-100);
+      font-size: 12px;
+      font-weight: 800;
+    }
+    .tag.high { color: #9d174d; background: #fce7f3; }
+    .tag.medium { color: #92400e; background: #fef3c7; }
+    .tag.req { color: #3730a3; background: #e0e7ff; }
+    .tag.ex { color: #b42318; background: #fee4e2; }
+
+    .flow-list { display: grid; gap: 14px; counter-reset: flow; }
+    .flow {
+      position: relative;
+      padding: 22px 22px 22px 68px;
+      border: 1px solid var(--slate-200);
+      border-radius: var(--radius);
+      background: var(--white);
+    }
+    .flow::before {
+      counter-increment: flow;
+      content: counter(flow, decimal-leading-zero);
+      position: absolute;
+      top: 20px;
+      left: 18px;
+      display: grid;
+      width: 36px;
+      height: 36px;
+      place-items: center;
+      border-radius: 11px;
+      color: var(--white);
+      background: var(--orange-500);
+      font-weight: 900;
+    }
+    .flow h3 { margin: 0 0 8px; }
+    .flow ol { margin: 0; padding-left: 20px; color: var(--slate-700); }
+
+    .exception { border-left: 4px solid #ef4444; }
+    .exception strong { color: var(--red); }
+
+    .formula-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; }
+    .formula {
+      padding: 18px;
+      border: 1px solid #ffd6c2;
+      border-radius: 16px;
+      background: linear-gradient(160deg, #fff, var(--orange-50));
+    }
+    .formula h4 { margin: 0 0 12px; color: var(--orange-700); }
+    .fraction { display: grid; justify-items: center; color: var(--navy-900); font-weight: 720; text-align: center; }
+    .fraction .top { padding: 0 10px 7px; border-bottom: 2px solid var(--navy-800); }
+    .fraction .bottom { padding-top: 7px; }
+    .formula .teacher { margin-top: 16px; padding-top: 12px; border-top: 1px dashed #f5b896; color: var(--slate-600); font-size: 13px; }
+
+    .filters {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      align-items: center;
+      padding: 14px;
+      border: 1px solid var(--slate-200);
+      border-radius: 14px;
+      background: var(--white);
+      position: sticky;
+      top: 10px;
+      z-index: 10;
+      box-shadow: var(--shadow-md);
+    }
+    .search {
+      min-width: min(100%, 320px);
+      flex: 1 1 260px;
+      height: 42px;
+      padding: 0 13px;
+      border: 1px solid var(--slate-300);
+      border-radius: 10px;
+      color: var(--navy-950);
+      background: var(--white);
+      outline: none;
+    }
+    .search:focus { border-color: var(--orange-500); box-shadow: 0 0 0 4px rgba(244, 91, 10, .12); }
+    .testcases { display: grid; gap: 10px; margin-top: 16px; }
+    .testcase {
+      border: 1px solid var(--slate-200);
+      border-radius: 14px;
+      background: var(--white);
+      overflow: clip;
+    }
+    .testcase[hidden] { display: none; }
+    .testcase summary {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 15px 17px;
+      cursor: pointer;
+      list-style: none;
+    }
+    .testcase summary::-webkit-details-marker { display: none; }
+    .testcase summary::after { content: "+"; margin-left: auto; color: var(--orange-600); font-size: 22px; font-weight: 700; }
+    .testcase[open] summary::after { content: "−"; }
+    .testcase-title { min-width: 0; font-weight: 780; }
+    .case-body {
+      display: grid;
+      grid-template-columns: minmax(180px, .7fr) minmax(0, 1.3fr);
+      gap: 18px;
+      padding: 18px;
+      border-top: 1px solid var(--slate-200);
+      background: var(--slate-50);
+    }
+    .case-meta { color: var(--slate-600); }
+    .case-meta div + div { margin-top: 8px; }
+    .case-steps { display: grid; gap: 10px; }
+    .step { padding: 10px 12px; border-left: 3px solid var(--orange-400); background: var(--white); }
+    .expected { margin: 14px 0 0; padding-left: 20px; }
+    .expected li + li { margin-top: 4px; }
+    .empty-filter { display: none; padding: 28px; color: var(--slate-600); text-align: center; }
+
+    .question-list { display: grid; gap: 10px; margin: 0; padding: 0; counter-reset: question; list-style: none; }
+    .question-list li {
+      position: relative;
+      padding: 14px 16px 14px 54px;
+      border: 1px solid #f4d8a4;
+      border-radius: 13px;
+      background: #fffbeb;
+      color: #664d03;
+    }
+    .question-list li::before {
+      counter-increment: question;
+      content: counter(question);
+      position: absolute;
+      top: 12px;
+      left: 14px;
+      display: grid;
+      width: 28px;
+      height: 28px;
+      place-items: center;
+      border-radius: 9px;
+      color: #fff;
+      background: #d99100;
+      font-weight: 850;
+    }
+
+    .footer {
+      margin-top: 64px;
+      padding-top: 24px;
+      border-top: 1px solid var(--slate-200);
+      color: var(--slate-500);
+      text-align: center;
+    }
+
+    @media (max-width: 1120px) {
+      :root { --sidebar: 244px; }
+      .column-grid, .grid-3, .formula-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .stats { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
+    @media (max-width: 780px) {
+      .sidebar { position: static; width: auto; padding: 14px; }
+      .brand { padding-bottom: 12px; }
+      .nav-title, .sidebar-footer { display: none; }
+      .nav { display: flex; overflow-x: auto; padding-top: 10px; }
+      .nav a { flex: 0 0 auto; }
+      main { width: 100%; margin: 0; padding: 18px 14px 60px; }
+      .hero { border-radius: 18px; }
+      .grid-2, .grid-3, .grid-4, .column-grid, .formula-grid, .case-body { grid-template-columns: 1fr; }
+      .section-head { align-items: start; flex-direction: column; }
+      .filters { position: static; }
+    }
+    @media print {
+      body { background: #fff; font-size: 11px; }
+      .sidebar, .hero-actions, .filters, .skip-link { display: none !important; }
+      main { width: 100%; margin: 0; padding: 0; }
+      .hero { color: #111; background: #fff; border: 2px solid #111; box-shadow: none; }
+      .hero p { color: #333; }
+      .panel, .card, .stat, .mockup, .testcase { break-inside: avoid; box-shadow: none; }
+      .section-head { margin-top: 32px; }
+      .testcase { display: block !important; }
+      .testcase summary::after { display: none; }
+      .testcase:not([open]) .case-body { display: grid; }
+    }
+
+    .doc-shell { min-width: 0; }
+    .doc-toolbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      margin-bottom: 18px;
+      padding: 14px 16px;
+      border: 1px solid var(--slate-200);
+      border-radius: 14px;
+      background: rgba(255,255,255,.92);
+      box-shadow: var(--shadow-sm);
+    }
+    .doc-toolbar-left, .doc-toolbar-right { display: flex; flex-wrap: wrap; align-items: center; gap: 9px; }
+    .sync-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      padding: 6px 10px;
+      border-radius: 999px;
+      color: #067647;
+      background: #ecfdf3;
+      border: 1px solid #abefc6;
+      font-size: 12px;
+      font-weight: 800;
+    }
+    .sync-badge::before { content: "✓"; }
+    .hash { color: var(--slate-500); font: 12px ui-monospace, SFMono-Regular, Menlo, monospace; }
+    .markdown-body {
+      padding: clamp(24px, 4vw, 54px);
+      border: 1px solid var(--slate-200);
+      border-radius: var(--radius-lg);
+      background: var(--white);
+      box-shadow: var(--shadow-md);
+      overflow: hidden;
+    }
+    .markdown-body > h1 {
+      position: relative;
+      margin: -54px -54px 42px;
+      padding: 62px 54px 54px;
+      color: var(--white);
+      background:
+        radial-gradient(circle at 88% 10%, rgba(255,122,50,.36), transparent 20rem),
+        linear-gradient(115deg, var(--navy-950), #243047 68%, #713209);
+      font-size: clamp(34px, 5vw, 62px);
+      line-height: 1.05;
+      letter-spacing: -.045em;
+    }
+    .markdown-body h2 {
+      margin: 70px 0 24px;
+      padding: 0 0 13px;
+      border-bottom: 2px solid var(--slate-200);
+      font-size: clamp(27px, 4vw, 39px);
+      line-height: 1.15;
+      letter-spacing: -.035em;
+      scroll-margin-top: 24px;
+    }
+    .markdown-body h2::first-letter { color: var(--orange-600); }
+    .markdown-body h3 {
+      margin: 38px 0 16px;
+      color: var(--navy-900);
+      font-size: 23px;
+      line-height: 1.25;
+      letter-spacing: -.02em;
+      scroll-margin-top: 24px;
+    }
+    .markdown-body h4 {
+      margin: 28px 0 12px;
+      color: var(--orange-700);
+      font-size: 17px;
+      scroll-margin-top: 24px;
+    }
+    .markdown-body p { margin: 12px 0; }
+    .markdown-body strong { color: var(--navy-900); }
+    .markdown-body ul, .markdown-body ol { padding-left: 1.35rem; }
+    .markdown-body li { margin: 6px 0; }
+    .markdown-body li::marker { color: var(--orange-500); font-weight: 800; }
+    .markdown-body hr {
+      height: 1px;
+      margin: 48px 0;
+      border: 0;
+      background: linear-gradient(90deg, transparent, var(--slate-300), transparent);
+    }
+    .markdown-body > p[align="center"] {
+      margin: 22px 0 28px;
+      padding: 12px;
+      border: 1px solid var(--slate-200);
+      border-radius: 18px;
+      background: linear-gradient(145deg, #fff, #f5f7fa);
+      box-shadow: var(--shadow-md);
+    }
+    .markdown-body > p[align="center"] a { display: inline-block; max-width: 100%; }
+    .markdown-body > p[align="center"] img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+      margin: auto;
+      border-radius: 12px;
+    }
+    .markdown-body > p[align="center"] em {
+      display: block;
+      margin-top: 10px;
+      color: var(--slate-500);
+      font-size: 13px;
+    }
+    .table-wrap {
+      width: 100%;
+      margin: 18px 0 28px;
+      overflow: auto;
+      border: 1px solid var(--slate-200);
+      border-radius: 15px;
+      background: var(--white);
+      box-shadow: var(--shadow-sm);
+    }
+    .markdown-body table {
+      width: 100%;
+      min-width: 720px;
+      border-collapse: separate;
+      border-spacing: 0;
+      font-size: 14px;
+    }
+    .markdown-body th {
+      position: sticky;
+      top: 0;
+      z-index: 2;
+      padding: 12px 14px;
+      color: var(--white);
+      background: var(--navy-900);
+      border-bottom: 1px solid var(--navy-800);
+      text-align: left;
+      white-space: nowrap;
+    }
+    .markdown-body td {
+      padding: 12px 14px;
+      border-bottom: 1px solid var(--slate-200);
+      vertical-align: top;
+    }
+    .markdown-body tbody tr:nth-child(even) td { background: var(--slate-50); }
+    .markdown-body tbody tr:hover td { background: var(--orange-50); }
+    .markdown-body tbody tr:last-child td { border-bottom: 0; }
+    .markdown-body td img { display: block; width: 36px; height: 36px; max-width: none; }
+    .markdown-body pre {
+      position: relative;
+      margin: 16px 0 24px;
+      padding: 18px 20px;
+      overflow: auto;
+      border: 1px solid #ffd3bd;
+      border-radius: 14px;
+      color: #fff7ed;
+      background: linear-gradient(145deg, #172033, #222f48);
+      box-shadow: var(--shadow-sm);
+      font: 13px/1.75 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    }
+    .markdown-body pre code { padding: 0; border: 0; color: inherit; background: none; font: inherit; }
+    .markdown-body blockquote {
+      margin: 18px 0;
+      padding: 13px 16px;
+      border-left: 4px solid var(--orange-500);
+      border-radius: 0 12px 12px 0;
+      color: var(--slate-700);
+      background: var(--orange-50);
+    }
+    .case-tools {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 10px;
+      margin: 12px 0 14px;
+      padding: 13px;
+      border: 1px solid var(--slate-200);
+      border-radius: 13px;
+      background: var(--slate-50);
+    }
+    .case-tools input {
+      flex: 1 1 280px;
+      height: 42px;
+      padding: 0 13px;
+      border: 1px solid var(--slate-300);
+      border-radius: 10px;
+      outline: none;
+    }
+    .case-tools input:focus { border-color: var(--orange-500); box-shadow: 0 0 0 4px rgba(244,91,10,.12); }
+    .case-count { color: var(--orange-700); font-weight: 800; white-space: nowrap; }
+    .testcase-table table { min-width: 1500px; }
+    .testcase-table th:first-child, .testcase-table td:first-child {
+      position: sticky;
+      left: 0;
+      z-index: 1;
+      min-width: 230px;
+      box-shadow: 1px 0 0 var(--slate-200);
+    }
+    .testcase-table th:first-child { z-index: 3; background: var(--navy-900); }
+    .testcase-table td:first-child { background: var(--white); font-weight: 750; }
+    .testcase-table tbody tr:nth-child(even) td:first-child { background: var(--slate-50); }
+    .testcase-table tbody tr:hover td:first-child { background: var(--orange-50); }
+    .source-note {
+      margin-top: 18px;
+      color: var(--slate-500);
+      text-align: center;
+      font-size: 12px;
+    }
+    @media (max-width: 780px) {
+      .doc-toolbar { align-items: flex-start; flex-direction: column; }
+      .markdown-body { padding: 20px 16px; border-radius: 16px; }
+      .markdown-body > h1 { margin: -20px -16px 32px; padding: 40px 20px 34px; }
+      .markdown-body h2 { margin-top: 48px; }
+      .markdown-body table { font-size: 13px; }
+    }
+    @media print {
+      .doc-toolbar, .case-tools { display: none !important; }
+      .markdown-body { padding: 0; border: 0; box-shadow: none; overflow: visible; }
+      .markdown-body > h1 { margin: 0 0 32px; padding: 30px; color: #111; background: #fff; border: 2px solid #111; }
+      .table-wrap { overflow: visible; box-shadow: none; }
+      .markdown-body table { min-width: 0 !important; font-size: 9px; }
+      .markdown-body th { position: static; color: #111; background: #eee; }
+      .testcase-table th:first-child, .testcase-table td:first-child { position: static; }
+    }
+</style>
+</head>
+<body>
+  <a class="skip-link" href="#document">Đi đến nội dung chính</a>
+  <aside class="sidebar" aria-label="Mục lục requirement">
+    <div class="brand">
+      <div class="brand-mark">ics</div>
+      <div><strong>ICS Requirement</strong><small>Teacher Detail</small></div>
+    </div>
+    <div class="nav-title">Nội dung Markdown</div>
+    <nav id="docNav" class="nav"></nav>
+    <div class="sidebar-footer">
+      HTML được render trực tiếp từ Markdown nguồn.<br>
+      <a href="./teacher_detail_requirements.md">Mở file Markdown</a>
+    </div>
+  </aside>
+  <main class="doc-shell">
+    <div class="doc-toolbar">
+      <div class="doc-toolbar-left">
+        <span class="sync-badge">Đồng bộ 100% từ Markdown</span>
+        <span class="hash">SHA-256: c347422140d8…</span>
+      </div>
+      <div class="doc-toolbar-right">
+        <a class="button ghost small" href="./teacher_detail_requirements.md">Xem Markdown</a>
+        <button class="button small" type="button" onclick="window.print()">In / Lưu PDF</button>
+      </div>
+    </div>
+    <article id="document" class="markdown-body" data-source-sha256="c347422140d8404a911aafa284399f353639f82357f3a65f9514dc036e9642f5">
+<h1 id="admin-chi-tiet-giao-vien">[Admin] Chi tiết giáo viên</h1>
+<h2 id="1-ui">1. UI</h2>
+<h3 id="man-hinh-chi-tiet-giao-vien">Màn hình Chi tiết giáo viên</h3>
+<p><strong>Mô tả:</strong></p>
+<ul>
+<li>Màn hình tập trung hồ sơ và toàn bộ dữ liệu vận hành của đúng giáo viên được chọn từ danh sách.</li>
+</ul>
+<p><strong>Giải thích field/thành phần:</strong></p>
+<ul>
+<li>Màn hình được mở từ nút chi tiết của đúng giáo viên tại <a href="./teacher_management_requirements.md">teacher_management_requirements.md</a>.</li>
+<li>Tiêu đề hiển thị <code>Chi Tiết Giáo Viên</code> và có nút quay lại danh sách giáo viên.</li>
+<li>Các tab trên UI gồm <code>Thông tin cá nhân</code>, <code>Danh sách lớp</code>, <code>Lịch dạy</code>, <code>Log</code>, <code>Quản lý đăng ký lịch</code>, <code>Ghi chú</code>.</li>
+<li>Phạm vi tài liệu này gồm tab <code>Thông tin cá nhân</code>, tab <code>Danh sách lớp</code>, tab <code>Lịch dạy</code>, tab <code>Log</code>, tab <code>Quản lý đăng ký lịch</code>, tab <code>Ghi chú</code> và các hành động trực tiếp trên sáu tab này.</li>
+</ul>
+<p><strong>Điểm cần lưu ý:</strong></p>
+<ul>
+<li>Khi đổi tab, hệ thống giữ đúng giáo viên đang xem; không được tải hoặc hiển thị dữ liệu của giáo viên khác.</li>
+<li><code>Class Handler</code> và <code>Support</code> được truy cập tab <code>Danh sách lớp</code>, tab <code>Log</code> (chỉ xem), tab <code>Quản lý đăng ký lịch</code> và tab <code>Ghi chú</code>; tại tab <code>Danh sách lớp</code>, hai role này được cập nhật lương giáo viên theo từng lớp. Quyền này không đồng nghĩa được xem hoặc thao tác tại các tab khác.</li>
+</ul>
+<h4 id="testcase-khung-man-hinh-chi-tiet-giao-vien">Testcase — Khung màn hình Chi tiết giáo viên</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 1: Mở đúng chi tiết giáo viên</td>
+<td>High</td>
+<td>Smoke</td>
+<td>Flow 1 / REQ01</td>
+<td>Admin</td>
+<td>Giáo viên tồn tại và thuộc phạm vi của Admin</td>
+<td><strong>Given</strong> Admin chọn một giáo viên từ màn danh sách<br><strong>When</strong> màn chi tiết tải thành công<br><strong>Then</strong> hệ thống hiển thị chi tiết đúng giáo viên</td>
+<td>- Tiêu đề và các tab được hiển thị<br>- Tab mặc định là <code>Thông tin cá nhân</code><br>- Không hiển thị dữ liệu của giáo viên khác</td>
+</tr>
+<tr>
+<td>Case 2: Từ chối giáo viên không còn hợp lệ</td>
+<td>High</td>
+<td></td>
+<td>EX01 / REQ01</td>
+<td>Admin</td>
+<td>Giáo viên không tồn tại hoặc không còn thuộc phạm vi</td>
+<td><strong>Given</strong> Admin mở URL chi tiết cũ hoặc không còn quyền với giáo viên<br><strong>When</strong> hệ thống kiểm tra định danh và phạm vi<br><strong>Then</strong> hệ thống từ chối hiển thị chi tiết</td>
+<td>- Không thay bằng dữ liệu giáo viên khác<br>- Hiển thị lỗi phù hợp<br>- Không thay đổi dữ liệu</td>
+</tr>
+</tbody>
+</table></div>
+<h4 id="testcase-quyen-va-notification-cua-man-hinh-chi-tiet-giao-vien">Testcase — Quyền và notification của màn hình Chi tiết giáo viên</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 72: Từ chối role không có quyền</td>
+<td>High</td>
+<td></td>
+<td>EX01 / Ràng buộc quyền</td>
+<td>Các role khác</td>
+<td>Người dùng đã đăng nhập nhưng không thuộc role được cấp quyền</td>
+<td><strong>Given</strong> người dùng không có quyền với màn hình hoặc tab được yêu cầu<br><strong>When</strong> mở URL hoặc gửi request trực tiếp<br><strong>Then</strong> hệ thống từ chối</td>
+<td>- Không nhận dữ liệu ngoài quyền<br>- Không thực hiện được thao tác thay đổi<br>- Dữ liệu không thay đổi</td>
+</tr>
+<tr>
+<td>Case 74: Notification khi thao tác thành công</td>
+<td>High</td>
+<td></td>
+<td>REQ06</td>
+<td>Admin / Class Handler / Support</td>
+<td>Có thao tác thay đổi hợp lệ trong phạm vi quyền</td>
+<td><strong>Given</strong> người dùng xác nhận thao tác thay đổi<br><strong>When</strong> backend trả kết quả thành công<br><strong>Then</strong> hệ thống hiển thị notification thành công</td>
+<td>- Nội dung đúng thao tác và đúng giáo viên/đối tượng<br>- Chỉ hiển thị sau khi backend xác nhận<br>- Mỗi request chỉ có một notification</td>
+</tr>
+<tr>
+<td>Case 75: Notification khi thao tác thất bại</td>
+<td>High</td>
+<td></td>
+<td>REQ06</td>
+<td>Admin / Class Handler / Support</td>
+<td>Thao tác bị validation, lỗi quyền, lỗi backend hoặc hết thời gian chờ</td>
+<td><strong>Given</strong> người dùng thực hiện thao tác thay đổi<br><strong>When</strong> thao tác bị từ chối hoặc thất bại<br><strong>Then</strong> hệ thống hiển thị notification thất bại</td>
+<td>- Không hiển thị notification thành công<br>- Mỗi request chỉ có một notification thất bại<br>- Không hiển thị mật khẩu hoặc thông tin kỹ thuật nhạy cảm<br>- Không hiển thị dữ liệu như đã thay đổi khi backend chưa ghi nhận</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="tab-thong-tin-ca-nhan">Tab Thông tin cá nhân</h3>
+<p align="center">
+  <a href="./images/teacher-detail-personal-info.png"><img src="./images/teacher-detail-personal-info.png" alt="Chi tiết giáo viên - Thông tin cá nhân" width="900" title="Nhấn để xem ảnh gốc"></a><br>
+  <em>Tab Thông tin cá nhân của chi tiết giáo viên — nhấn để xem ảnh gốc</em>
+</p>
+
+<p><strong>Mô tả:</strong></p>
+<ul>
+<li>Tab hiển thị hồ sơ, trạng thái, ghi chú và thông tin ngân hàng của đúng giáo viên đang xem.</li>
+<li>Tab gồm khối avatar (ảnh, tên, mã giáo viên, nút <code>Lấy lại mật khẩu</code>, <code>Cập nhật tài khoản</code>) bên trái và 2 khối <code>THÔNG TIN cá nhân</code>, <code>THÔNG TIN NGÂN HÀNG</code> (ghi chú <code>Dùng chi trả thù lao &amp; lương</code>) bên phải.</li>
+<li>Không có field lương theo giờ trong tab này; lương được quản lý theo từng lớp tại tab <code>Danh sách lớp</code>.</li>
+<li><code>Mã giáo viên</code> và <code>Email</code> là thông tin cố định, bị khóa và không cho cập nhật.</li>
+<li>Không cung cấp thao tác xóa cứng giáo viên trên màn hình này.</li>
+</ul>
+<p><strong>Giải thích field/thành phần:</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Trường/Thành phần</th>
+<th style="text-align: center;">Cho cập nhật</th>
+<th>Yêu cầu</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Ảnh đại diện</td>
+<td style="text-align: center;">✅</td>
+<td>Khung tròn có dấu <code>+</code> và icon máy ảnh; cho phép chọn/thay ảnh; dung lượng tệp tối đa 25 MB.</td>
+</tr>
+<tr>
+<td>Mã giáo viên</td>
+<td style="text-align: center;">❌</td>
+<td>Hiển thị code đã tự sinh khi tạo (vd <code>LS08</code>); khóa, không cho phép chỉnh sửa.</td>
+</tr>
+<tr>
+<td>Gmail</td>
+<td style="text-align: center;">❌</td>
+<td>Hiển thị email hiện tại kèm nhãn <code>Cố định</code> và icon khóa; không cho phép chỉnh sửa.</td>
+</tr>
+<tr>
+<td>Họ và tên</td>
+<td style="text-align: center;">✅</td>
+<td>Cho phép cập nhật; không áp dụng validation bắt buộc khi cập nhật.</td>
+</tr>
+<tr>
+<td>Giới tính</td>
+<td style="text-align: center;">✅</td>
+<td>Dropdown <code>Chọn</code>; không bắt buộc khi cập nhật.</td>
+</tr>
+<tr>
+<td>Ngày sinh</td>
+<td style="text-align: center;">✅</td>
+<td>Date picker <code>Chọn ngày</code>; không bắt buộc khi cập nhật.</td>
+</tr>
+<tr>
+<td>Số điện thoại</td>
+<td style="text-align: center;">✅</td>
+<td>Không bắt buộc; nếu có giá trị phải gồm đúng 10 chữ số và bắt đầu bằng <code>0</code>.</td>
+</tr>
+<tr>
+<td>Trạng thái</td>
+<td style="text-align: center;">✅</td>
+<td>Dropdown <code>Training</code>, <code>Thử việc</code>, <code>Chính thức</code>, <code>Nghỉ việc</code>; giáo viên mới tạo mặc định <code>Training</code>; chuyển sang <code>Nghỉ việc</code> kích hoạt quy tắc nghỉ việc.</td>
+</tr>
+<tr>
+<td>Ghi chú</td>
+<td style="text-align: center;">✅</td>
+<td>Không bắt buộc; đây là ghi chú tổng quan riêng của Thông tin cá nhân, dùng để hiển thị tại cột Ghi chú ở danh sách giáo viên và không dùng chung dữ liệu với tab <code>Ghi chú</code>.</td>
+</tr>
+<tr>
+<td>Ngân hàng</td>
+<td style="text-align: center;">✅</td>
+<td>Không bắt buộc; chọn ngân hàng từ danh sách hỗ trợ.</td>
+</tr>
+<tr>
+<td>Số tài khoản</td>
+<td style="text-align: center;">✅</td>
+<td>Không bắt buộc; cho phép người dùng nhập.</td>
+</tr>
+<tr>
+<td>Tên chủ tài khoản</td>
+<td style="text-align: center;">✅</td>
+<td>Không bắt buộc; người dùng nhập và hệ thống tự động chuyển thành chữ in hoa.</td>
+</tr>
+<tr>
+<td><code>Lấy lại mật khẩu</code></td>
+<td style="text-align: center;">—</td>
+<td>Reset mật khẩu của giáo viên về <code>abc12345</code>.</td>
+</tr>
+<tr>
+<td><code>Cập nhật tài khoản</code></td>
+<td style="text-align: center;">—</td>
+<td>Lưu toàn bộ thay đổi của Thông tin cá nhân, ảnh, ghi chú và thông tin ngân hàng trong một lần.</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Điểm cần lưu ý:</strong></p>
+<ul>
+<li>Khi cập nhật không có trường nhập liệu nào bắt buộc. Hệ thống chỉ validation định dạng, khoảng giá trị hoặc dung lượng đối với trường có giá trị/tệp được cung cấp.</li>
+<li><code>Mã giáo viên</code> và <code>Email</code> luôn bị khóa trên UI; backend phải bỏ qua hoặc từ chối mọi giá trị ghi đè hai trường này.</li>
+<li><code>Số điện thoại</code> được xử lý dạng chuỗi để giữ số <code>0</code> đầu tiên.</li>
+<li>Thông tin ngân hàng không bắt buộc. <code>Tên chủ tài khoản</code> do người dùng nhập và được chuyển thành chữ in hoa trước khi lưu.</li>
+<li><code>Ghi chú</code> tại Thông tin cá nhân là dữ liệu riêng, không thuộc danh sách ghi chú tại tab <code>Ghi chú</code>. Khi cập nhật thành công, cột Ghi chú ở danh sách giáo viên phải hiển thị nội dung mới.</li>
+<li><code>Cập nhật tài khoản</code> gửi toàn bộ thay đổi trong một thao tác logic. Thành công hoặc thất bại đều phải có đúng một notification kết quả theo REQ06.</li>
+<li>Nếu chuyển tab hoặc quay lại khi có thay đổi chưa lưu, hệ thống phải hiển thị cảnh báo xác nhận trước khi rời màn hình.</li>
+</ul>
+<p><strong>Quy tắc tài khoản và nghỉ việc:</strong></p>
+<ul>
+<li><code>Lấy lại mật khẩu</code> tự reset mật khẩu về đúng giá trị <code>abc12345</code>; mật khẩu phải được lưu an toàn và không ghi plain text vào log.</li>
+<li>Reset mật khẩu thành công hoặc thất bại phải có đúng một notification kết quả theo REQ06.</li>
+<li>Khi chuyển trạng thái sang <code>Nghỉ việc</code>, hệ thống khóa quyền đăng nhập của giáo viên, loại giáo viên khỏi lịch đăng ký và các lớp đang dạy.</li>
+<li>Dữ liệu hồ sơ, lịch sử và log đã phát sinh trước khi nghỉ việc phải được giữ lại; không xóa cứng giáo viên.</li>
+</ul>
+<h4 id="testcase-tab-thong-tin-ca-nhan">Testcase — Tab Thông tin cá nhân</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 3: Hiển thị Thông tin cá nhân</td>
+<td>High</td>
+<td></td>
+<td>Flow 1 / REQ01</td>
+<td>Admin</td>
+<td>Giáo viên tồn tại trong phạm vi</td>
+<td><strong>Given</strong> Admin mở chi tiết giáo viên<br><strong>When</strong> dữ liệu tải thành công<br><strong>Then</strong> tab <code>Thông tin cá nhân</code> được hiển thị</td>
+<td>- Hiển thị đúng giáo viên<br>- Có trường Giới tính, Ngày sinh, Trạng thái, Ghi chú và khối thông tin ngân hàng<br>- Không có field lương theo giờ<br>- Mã giáo viên và Gmail bị khóa<br>- Không hiển thị hành động xóa cứng</td>
+</tr>
+<tr>
+<td>Case 4: Cập nhật khi không có trường bắt buộc</td>
+<td>High</td>
+<td>Smoke</td>
+<td>Flow 2 / REQ02 / REQ06</td>
+<td>Admin</td>
+<td>Tab Thông tin cá nhân đã tải</td>
+<td><strong>Given</strong> Admin chỉ thay đổi một hoặc nhiều trường tùy chọn<br><strong>When</strong> chọn <code>Cập nhật tài khoản</code><br><strong>Then</strong> hệ thống không yêu cầu nhập lại các trường khác</td>
+<td>- Chỉ validation trường có giá trị thay đổi/cung cấp<br>- Lưu toàn bộ thay đổi trong một thao tác logic<br>- Mã giáo viên và Email không thay đổi<br>- Hiển thị đúng một notification kết quả</td>
+</tr>
+<tr>
+<td>Case 5: Validation số điện thoại khi cập nhật</td>
+<td>High</td>
+<td></td>
+<td>EX03 / REQ02</td>
+<td>Admin</td>
+<td>Tab Thông tin cá nhân đã tải</td>
+<td><strong>Given</strong> Admin cập nhật Số điện thoại hoặc để trống<br><strong>When</strong> chọn <code>Cập nhật tài khoản</code><br><strong>Then</strong> hệ thống validation trường Số điện thoại</td>
+<td>- Cho phép để trống<br>- Chấp nhận đúng 10 chữ số và bắt đầu bằng <code>0</code><br>- Từ chối sai độ dài, không bắt đầu bằng <code>0</code>, có chữ hoặc ký tự phân cách<br>- Giữ số <code>0</code> đầu tiên</td>
+</tr>
+<tr>
+<td>Case 6: Cập nhật thông tin ngân hàng và viết hoa tên chủ tài khoản</td>
+<td>Medium</td>
+<td></td>
+<td>Flow 2 / REQ02</td>
+<td>Admin</td>
+<td>Tab Thông tin cá nhân đã tải</td>
+<td><strong>Given</strong> các trường ngân hàng đang trống hoặc đã có dữ liệu<br><strong>When</strong> Admin nhập/chỉnh sửa rồi cập nhật<br><strong>Then</strong> hệ thống lưu thông tin đã nhập</td>
+<td>- Không báo lỗi bắt buộc khi để trống<br>- Tên chủ tài khoản được chuyển thành chữ in hoa<br>- Giá trị do người dùng nhập, không tự thay bằng Họ và tên giáo viên</td>
+</tr>
+<tr>
+<td>Case 7: Cập nhật ghi chú tổng quan</td>
+<td>High</td>
+<td></td>
+<td>Flow 2 / REQ02</td>
+<td>Admin</td>
+<td>Giáo viên có hoặc chưa có ghi chú tổng quan</td>
+<td><strong>Given</strong> Admin thay đổi Ghi chú tại Thông tin cá nhân và cập nhật thành công<br><strong>When</strong> quay lại danh sách hoặc mở tab <code>Ghi chú</code><br><strong>Then</strong> hệ thống sử dụng đúng nguồn dữ liệu</td>
+<td>- Danh sách giáo viên hiển thị nội dung ghi chú tổng quan mới<br>- Tab Ghi chú không tự tạo hoặc thay đổi bản ghi từ nội dung này<br>- Hai loại ghi chú được lưu độc lập</td>
+</tr>
+<tr>
+<td>Case 8: Validation ảnh đại diện tối đa 25 MB</td>
+<td>High</td>
+<td></td>
+<td>EX03 / REQ02</td>
+<td>Admin</td>
+<td>Admin có tệp ảnh hợp lệ hoặc vượt giới hạn</td>
+<td><strong>Given</strong> Admin chọn ảnh đại diện<br><strong>When</strong> tệp có dung lượng bằng/nhỏ hơn hoặc lớn hơn 25 MB<br><strong>Then</strong> hệ thống validation dung lượng</td>
+<td>- Chấp nhận tệp không vượt quá 25 MB nếu không có lỗi khác<br>- Từ chối tệp lớn hơn 25 MB<br>- Giữ ảnh cũ khi tệp mới không hợp lệ<br>- Hiển thị lỗi và notification phù hợp</td>
+</tr>
+<tr>
+<td>Case 9: Lấy lại mật khẩu mặc định</td>
+<td>High</td>
+<td></td>
+<td>Flow 3 / REQ03 / REQ06</td>
+<td>Admin</td>
+<td>Giáo viên có tài khoản đang tồn tại</td>
+<td><strong>Given</strong> Admin chọn <code>Lấy lại mật khẩu</code><br><strong>When</strong> backend reset thành công<br><strong>Then</strong> mật khẩu giáo viên được đặt thành <code>abc12345</code></td>
+<td>- Mật khẩu được lưu an toàn, không ghi plain text vào log<br>- Hiển thị đúng một notification thành công<br>- Nếu thất bại, mật khẩu cũ không đổi và hiển thị đúng một notification thất bại</td>
+</tr>
+<tr>
+<td>Case 10: Chuyển giáo viên sang Nghỉ việc</td>
+<td>High</td>
+<td>Smoke</td>
+<td>Flow 4 / REQ04 / REQ06</td>
+<td>Admin</td>
+<td>Giáo viên đang hoạt động, có thể có lịch đăng ký hoặc lớp đang dạy</td>
+<td><strong>Given</strong> Admin chọn trạng thái <code>Nghỉ việc</code><br><strong>When</strong> cập nhật thành công<br><strong>Then</strong> hệ thống áp dụng nghiệp vụ nghỉ việc</td>
+<td>- Khóa đăng nhập của giáo viên<br>- Loại giáo viên khỏi lịch đăng ký và lớp đang dạy<br>- Không xóa cứng hồ sơ, lịch sử hoặc log<br>- Hiển thị đúng một notification thành công</td>
+</tr>
+<tr>
+<td>Case 11: Cảnh báo khi rời màn hình có thay đổi chưa lưu</td>
+<td>High</td>
+<td></td>
+<td>EX06 / REQ02</td>
+<td>Admin</td>
+<td>Admin đã thay đổi dữ liệu nhưng chưa cập nhật</td>
+<td><strong>Given</strong> form đang ở trạng thái có thay đổi chưa lưu<br><strong>When</strong> chuyển tab hoặc bấm quay lại<br><strong>Then</strong> hệ thống hiển thị cảnh báo xác nhận</td>
+<td>- Ở lại tiếp tục giữ dữ liệu đã nhập<br>- Xác nhận rời sẽ bỏ thay đổi chưa lưu và điều hướng<br>- Không gửi request cập nhật ngoài ý muốn</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="tab-danh-sach-lop">Tab Danh sách lớp</h3>
+<p align="center">
+  <a href="./images/teacher-detail-class-list.png"><img src="./images/teacher-detail-class-list.png" alt="Chi tiết giáo viên - Danh sách lớp" width="900" title="Nhấn để xem ảnh gốc"></a><br>
+  <em>Tab Danh sách lớp và cột Lương/giờ — nhấn để xem ảnh gốc</em>
+</p>
+
+<p align="center">
+  <a href="./images/teacher-detail-class-salary-edit.png"><img src="./images/teacher-detail-class-salary-edit.png" alt="Popup chỉnh sửa lương giáo viên theo lớp" width="900" title="Nhấn để xem ảnh gốc"></a><br>
+  <em>Popup Chỉnh Sửa Lương của một lớp — nhấn để xem ảnh gốc</em>
+</p>
+
+<p><strong>Mô tả:</strong></p>
+<ul>
+<li>Tab <code>Danh sách lớp</code> chỉ hiển thị những lớp mà giáo viên đang xem đã được thêm hoặc phân công; không hiển thị lớp chưa có quan hệ với giáo viên này.</li>
+<li><code>Admin</code>, <code>Class Handler</code> và <code>Support</code> được xem danh sách lớp trong phạm vi dữ liệu được cấp và được thiết lập/cập nhật <code>Lương giáo viên theo giờ</code> riêng cho giáo viên tại từng lớp.</li>
+<li>Lương không phải thuộc tính chung trong hồ sơ giáo viên. Giá trị lương được lưu trên quan hệ <code>giáo viên–lớp</code>, vì vậy cùng một giáo viên có thể có mức lương khác nhau ở các lớp khác nhau.</li>
+<li>Ngoài cập nhật lương theo từng lớp, tab này không cung cấp thao tác thêm giáo viên vào lớp, gỡ giáo viên khỏi lớp hoặc cập nhật thông tin lớp.</li>
+</ul>
+<p><strong>Giải thích field/thành phần:</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Trường/Thành phần</th>
+<th>Yêu cầu</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Tìm kiếm lớp học</td>
+<td>Ô tìm kiếm nằm phía trên bảng; tìm theo Mã lớp hoặc Tên khóa học. Tự tìm sau 2 giây kể từ lần nhập cuối hoặc tìm ngay khi nhấn <code>Enter</code>; điều kiện tìm kiếm kết hợp với các bộ lọc và đưa danh sách về trang đầu.</td>
+</tr>
+<tr>
+<td>Trạng thái lớp</td>
+<td>Cột <code>#</code>: icon trạng thái hiện tại của lớp có nội dung nhận biết được (tooltip tên trạng thái); hỗ trợ các trạng thái <code>Khai giảng</code>, <code>Mới tạo</code>, <code>Đang học</code>, <code>Tạm dừng</code>, <code>Hoàn thành</code>, <code>Hủy</code>, <code>Xóa</code>, <code>Trải nghiệm</code>.</td>
+</tr>
+<tr>
+<td>Mã lớp</td>
+<td>Hiển thị mã lớp của đúng bản ghi; không dùng mã lớp làm khóa phân quyền hoặc khóa liên kết.</td>
+</tr>
+<tr>
+<td>Khóa học</td>
+<td>Tên khóa học đã gắn với lớp, thanh tiến độ và số buổi dạng <code>đã học/tổng số buổi Buổi</code> (vd <code>6/20 Buổi</code>); dữ liệu phải thuộc đúng lớp và cùng khóa học đang hiển thị, cùng nguồn với <code>[đã học/tổng]</code> ở popover Chi tiết Lớp của danh sách giáo viên.</td>
+</tr>
+<tr>
+<td>Đánh giá</td>
+<td>Hiển thị đánh giá hiện hành của lớp theo nguồn dữ liệu đánh giá lớp; không tự suy diễn từ KPI hoặc lương.</td>
+</tr>
+<tr>
+<td>KPI lớp</td>
+<td>Hiển thị tỷ lệ lên kỳ của riêng lớp đó. Công thức mỗi học viên là trung bình cộng tỷ lệ đi học và tỷ lệ BTVN; KPI lớp là trung bình cộng kết quả của tất cả học viên thuộc lớp.</td>
+</tr>
+<tr>
+<td>Lương giáo viên theo giờ</td>
+<td>Cột có tiêu đề <code>LƯƠNG/GIỜ</code>; mỗi dòng hiển thị mức lương của đúng giáo viên trong đúng lớp bằng nút màu cam kèm icon bút chỉnh sửa, định dạng phân tách hàng nghìn kèm <code>đ</code>, ví dụ <code>200.000 đ</code>. <code>Admin</code>, <code>Class Handler</code>, <code>Support</code> được mở popup thiết lập/cập nhật.</td>
+</tr>
+<tr>
+<td>Mở chi tiết</td>
+<td>Icon mũi tên ở cuối dòng được hiển thị theo UI; hành vi điều hướng khi click cần xác nhận tại mục 3.</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Điểm cần lưu ý:</strong></p>
+<ul>
+<li>Tỷ lệ đi học của học viên tính các trạng thái được xem là có đi học: <code>Có mặt</code>, <code>Vào trễ</code>, <code>Ra sớm</code>, <code>Vào trễ &amp; Ra sớm</code>.</li>
+<li>Tỷ lệ BTVN của học viên là tỷ lệ bài tập về nhà có trạng thái <code>Hoàn thành</code>.</li>
+<li>Tỷ lệ lên kỳ của mỗi học viên = <code>(Tỷ lệ đi học + Tỷ lệ BTVN) / 2</code>.</li>
+<li>KPI lớp = trung bình cộng tỷ lệ lên kỳ của tất cả học viên thuộc đúng lớp.</li>
+<li>Kết quả hiển thị theo tỷ lệ phần trăm. Khi không có mẫu số hợp lệ, UI phải hiển thị trạng thái không có dữ liệu hoặc giá trị quy ước đã được chốt; tuyệt đối không hiển thị <code>NaN</code>, <code>Infinity</code> hoặc tỷ lệ âm.</li>
+<li>Đánh giá lớp là dữ liệu độc lập với KPI lớp; requirement hiện tại chưa quy định công thức đánh giá.</li>
+</ul>
+<p><strong>Quy tắc lương giáo viên theo lớp:</strong></p>
+<ul>
+<li>Dữ liệu lương được định danh tối thiểu bằng <code>teacher_id</code> và <code>class_id</code>; backend không tin cậy mã/tên hiển thị do client gửi để xác định quan hệ cần cập nhật.</li>
+<li>Giá trị lương có đơn vị <code>VNĐ/giờ</code>, phải là số nguyên không âm và cho phép <code>0</code>.</li>
+<li>Ngoài bảng, lương hiển thị đầy đủ có phân tách hàng nghìn kèm <code>đ</code>, ví dụ <code>200.000 đ</code>; đây chỉ là định dạng hiển thị, không thay đổi giá trị lưu.</li>
+<li>Click nút lương hoặc icon bút mở popup <code>Chỉnh sửa lương</code>. Popup hiển thị <code>Lớp: &lt;Mã lớp&gt;</code> của đúng dòng, ô tiền lương đang có theo định dạng phân tách hàng nghìn (ví dụ <code>200.000</code>), chọn tiền tệ <code>đ</code>, đơn vị cố định <code>Giờ</code>, nút <code>Huỷ</code> và nút <code>Xác nhận</code>.</li>
+<li>Tiền tệ của requirement này cố định là <code>VNĐ</code>; nếu UI hiển thị control dạng dropdown thì chỉ giá trị VNĐ được áp dụng. Đơn vị tính cố định theo giờ và không cho sửa thành đơn vị khác.</li>
+<li><code>Hủy</code> đóng popup, không gửi request, không thay đổi lương và không hiển thị notification CUD.</li>
+<li><code>Xác Nhận</code> validation giá trị rồi gửi đúng một request cập nhật. Trong khi xử lý phải vô hiệu hóa xác nhận lặp.</li>
+<li>Khi mở chỉnh sửa, hệ thống giữ nguyên giá trị hiện tại cho đến khi người dùng xác nhận. Cập nhật thành công đóng popup, cập nhật nút lương tại đúng dòng và chỉ thay đổi lương tại đúng quan hệ giáo viên–lớp đang thao tác, không làm thay đổi lương ở lớp khác.</li>
+<li>Khi cập nhật thất bại, popup giữ giá trị người dùng vừa nhập để sửa/thử lại; giá trị chính thức ngoài bảng không được thay đổi.</li>
+<li>Backend phải kiểm tra role, phạm vi giáo viên, phạm vi lớp và sự tồn tại của quan hệ giáo viên–lớp trước khi cập nhật.</li>
+<li>Hệ thống ghi nhận đúng người thao tác và thời điểm cập nhật. Cập nhật thành công hoặc thất bại phải có đúng một notification kết quả theo REQ06.</li>
+<li>Khi hai người cùng cập nhật một quan hệ, hệ thống không được âm thầm để response cũ ghi đè giá trị mới hơn; phải áp dụng cơ chế kiểm soát phiên bản hoặc xung đột.</li>
+</ul>
+<p><strong>Bộ lọc:</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Bộ lọc</th>
+<th>Giá trị/Quy tắc</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Loại lớp</td>
+<td><code>Lớp 1-1</code>, <code>Lớp chung</code>.</td>
+</tr>
+<tr>
+<td>Khóa học</td>
+<td>Lấy động từ danh sách khóa học được cấu hình/define trong hệ thống; kết quả chỉ gồm lớp thuộc khóa học đã chọn.</td>
+</tr>
+<tr>
+<td>Trạng thái lớp</td>
+<td><code>Khai giảng</code>, <code>Mới tạo</code>, <code>Đang học</code>, <code>Tạm dừng</code>, <code>Hoàn thành</code>, <code>Hủy</code>, <code>Xóa</code>, <code>Trải nghiệm</code>.</td>
+</tr>
+<tr>
+<td>Thời gian</td>
+<td>Lọc theo thời gian tạo lớp (<code>class.created_at</code>), mặc định <code>Hôm nay</code>; danh sách gồm <code>Tới hạn</code>, <code>Hôm nay</code>, <code>Hôm qua</code>, <code>Hôm nay và hôm qua</code>, <code>Tuần này</code>, <code>Tuần trước</code>, <code>Tháng này</code>, <code>Tháng trước</code>, <code>3 tháng trước</code>, <code>Năm nay</code>, <code>Năm trước</code>, <code>Tùy chọn</code>.</td>
+</tr>
+</tbody>
+</table></div>
+<ul>
+<li><code>Tới hạn</code> lấy từ thời điểm bắt đầu có dữ liệu trong hệ thống đến hết ngày hôm nay theo múi giờ nghiệp vụ.</li>
+<li><code>Tùy chọn</code> cho phép chọn ngày bắt đầu và kết thúc, bao gồm toàn bộ hai ngày biên; từ chối ngày bắt đầu sau ngày kết thúc.</li>
+<li>Các bộ lọc được áp dụng đồng thời theo phép giao. Mọi kết quả vẫn phải thuộc đúng giáo viên đang xem và phạm vi dữ liệu của người dùng.</li>
+<li>Từ khóa tìm kiếm được kết hợp <code>AND</code> với Loại lớp, Khóa học, Trạng thái và Thời gian; nhấn <code>Enter</code> phải hủy lần debounce đang chờ để không gửi request trùng.</li>
+<li>Mỗi trang hiển thị tối đa 10 lớp sau khi áp dụng quyền và toàn bộ bộ lọc.</li>
+<li>Phân trang hiển thị khoảng dữ liệu đang xem, tổng số kết quả, trang hiện tại, nút <code>Trước</code>, các số trang, dấu <code>...</code> khi cần và nút <code>Sau</code>; <code>Trước</code> bị vô hiệu hóa ở trang đầu, <code>Sau</code> bị vô hiệu hóa ở trang cuối.</li>
+<li>Chuyển trang giữ nguyên từ khóa và toàn bộ bộ lọc. Thay đổi từ khóa hoặc bất kỳ bộ lọc nào đưa danh sách về trang đầu.</li>
+<li>Khi đổi bộ lọc liên tục, chỉ response của tổ hợp điều kiện mới nhất được phép cập nhật danh sách.</li>
+<li>Trạng thái loading, rỗng và lỗi phải được phân biệt. Lỗi tải dữ liệu không được hiển thị như danh sách rỗng và phải cho phép thử lại.</li>
+</ul>
+<h4 id="testcase-tab-danh-sach-lop">Testcase — Tab Danh sách lớp</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 12: Chỉ hiển thị lớp đã thêm giáo viên</td>
+<td>High</td>
+<td>Smoke</td>
+<td>Flow 10 / REQ11</td>
+<td>Admin / Class Handler / Support</td>
+<td>Giáo viên được thêm vào một số lớp và chưa được thêm vào các lớp khác</td>
+<td><strong>Given</strong> người dùng mở tab Danh sách lớp<br><strong>When</strong> dữ liệu tải thành công<br><strong>Then</strong> hệ thống chỉ hiển thị lớp có quan hệ với giáo viên đang xem</td>
+<td>- Không hiển thị lớp chưa thêm giáo viên<br>- Không trộn lớp của giáo viên khác<br>- Mỗi quan hệ hợp lệ chỉ tạo một dòng</td>
+</tr>
+<tr>
+<td>Case 13: Hiển thị đủ thông tin của từng lớp</td>
+<td>High</td>
+<td></td>
+<td>Flow 10 / REQ11</td>
+<td>Admin / Class Handler / Support</td>
+<td>Giáo viên có lớp thuộc nhiều trạng thái và khóa học</td>
+<td><strong>Given</strong> danh sách lớp đã tải<br><strong>When</strong> người dùng xem từng dòng<br><strong>Then</strong> hệ thống hiển thị đúng Trạng thái, Mã lớp, Khóa học, Đánh giá, KPI và Lương</td>
+<td>- Dữ liệu trên cùng dòng thuộc cùng một lớp<br>- Trạng thái có nội dung nhận biết được<br>- Tiến độ/số buổi nếu có thuộc đúng khóa học và lớp</td>
+</tr>
+<tr>
+<td>Case 14: Đánh giá lớp độc lập với KPI</td>
+<td>Medium</td>
+<td></td>
+<td>REQ11</td>
+<td>Admin / Class Handler / Support</td>
+<td>Lớp có dữ liệu đánh giá và KPI khác nhau</td>
+<td><strong>Given</strong> hai nguồn dữ liệu có giá trị khác nhau<br><strong>When</strong> dòng lớp hiển thị<br><strong>Then</strong> hệ thống giữ đúng từng giá trị</td>
+<td>- Không dùng KPI thay cho đánh giá<br>- Không tự tính đánh giá từ lương hoặc tiến độ<br>- Trạng thái chưa có đánh giá được hiển thị nhất quán</td>
+</tr>
+<tr>
+<td>Case 15: Tính KPI lớp theo tỷ lệ lên kỳ</td>
+<td>High</td>
+<td></td>
+<td>REQ11</td>
+<td>Admin / Class Handler / Support</td>
+<td>Lớp có học viên với dữ liệu đi học và BTVN hợp lệ</td>
+<td><strong>Given</strong> mỗi học viên có tỷ lệ đi học và tỷ lệ BTVN<br><strong>When</strong> hệ thống tính KPI lớp<br><strong>Then</strong> tính tỷ lệ lên kỳ từng học viên rồi lấy trung bình cộng toàn lớp</td>
+<td>- Công thức học viên là <code>(Đi học + BTVN) / 2</code><br>- Chỉ dùng học viên thuộc đúng lớp<br>- Hiển thị phần trăm đúng quy tắc làm tròn được chốt</td>
+</tr>
+<tr>
+<td>Case 16: KPI lớp không có mẫu số hợp lệ</td>
+<td>High</td>
+<td></td>
+<td>REQ11</td>
+<td>Admin / Class Handler / Support</td>
+<td>Lớp chưa có học viên hoặc dữ liệu chưa đủ để tính</td>
+<td><strong>Given</strong> hệ thống không có mẫu số hợp lệ<br><strong>When</strong> hiển thị KPI<br><strong>Then</strong> dùng trạng thái không có dữ liệu hoặc giá trị quy ước</td>
+<td>- Không hiển thị <code>NaN</code>, <code>Infinity</code> hoặc số âm<br>- Không lấy KPI của lớp khác thay thế</td>
+</tr>
+<tr>
+<td>Case 17: Lương được lưu và hiển thị riêng theo quan hệ giáo viên–lớp</td>
+<td>High</td>
+<td></td>
+<td>Flow 10 / REQ11</td>
+<td>Admin / Class Handler / Support</td>
+<td>Cùng giáo viên có lương khác nhau ở hai lớp</td>
+<td><strong>Given</strong> người dùng mở danh sách lớp<br><strong>When</strong> dữ liệu tải thành công<br><strong>Then</strong> mỗi dòng hiển thị đúng nút lương của quan hệ tương ứng</td>
+<td>- Lương không lấy từ hồ sơ chung giáo viên<br>- Hai lớp có thể hiển thị hai mức lương khác nhau<br>- Cột có tiêu đề LƯƠNG/GIỜ<br>- Nút màu cam hiển thị <code>200.000 đ</code> và icon bút chỉnh sửa</td>
+</tr>
+<tr>
+<td>Case 18: Mở popup và cập nhật lương đúng lớp</td>
+<td>High</td>
+<td></td>
+<td>Flow 10 / REQ11 / REQ06</td>
+<td>Admin / Class Handler / Support</td>
+<td>Người dùng có quyền và quan hệ giáo viên–lớp tồn tại</td>
+<td><strong>Given</strong> người dùng click nút lương/icon bút tại một dòng<br><strong>When</strong> popup mở, người dùng nhập giá trị hợp lệ và chọn <code>Xác Nhận</code><br><strong>Then</strong> hệ thống lưu lương cho đúng giáo viên và đúng lớp</td>
+<td>- Popup có tiêu đề Chỉnh Sửa Lương và đúng Mã lớp<br>- Hiển thị giá trị hiện tại, tiền tệ VNĐ và đơn vị Giờ<br>- Chỉ gửi một request dù click lặp khi đang xử lý<br>- Thành công đóng popup và cập nhật đúng nút lương<br>- Không thay đổi lương ở lớp khác<br>- Ghi nhận actor/thời điểm và hiển thị đúng một notification thành công</td>
+</tr>
+<tr>
+<td>Case 19: Hủy chỉnh sửa lương</td>
+<td>High</td>
+<td></td>
+<td>REQ11</td>
+<td>Admin / Class Handler / Support</td>
+<td>Popup Chỉnh Sửa Lương đang Mới và người dùng đã thay đổi giá trị</td>
+<td><strong>Given</strong> giá trị trong popup khác giá trị đang lưu<br><strong>When</strong> người dùng chọn <code>Hủy</code><br><strong>Then</strong> hệ thống đóng popup mà không cập nhật</td>
+<td>- Không gửi request thay đổi<br>- Nút lương ngoài bảng giữ nguyên<br>- Không ảnh hưởng lớp khác<br>- Không hiển thị notification CUD</td>
+</tr>
+<tr>
+<td>Case 20: Validation lương VNĐ không âm</td>
+<td>High</td>
+<td></td>
+<td>EX23 / REQ11 / REQ06</td>
+<td>Admin / Class Handler / Support</td>
+<td>Người dùng đang sửa lương</td>
+<td><strong>Given</strong> người dùng lần lượt nhập <code>0</code>, số nguyên dương, số âm, số thập phân hoặc giá trị không phải số<br><strong>When</strong> chọn <code>Xác Nhận</code><br><strong>Then</strong> hệ thống chỉ chấp nhận số nguyên không âm</td>
+<td>- Cho phép <code>0</code> và số nguyên dương<br>- Từ chối số âm, số thập phân hoặc không phải số<br>- Hỗ trợ định dạng phân tách hàng nghìn nhưng lưu đúng giá trị số<br>- Giữ giá trị chính thức khi bị từ chối<br>- Hiển thị đúng một notification kết quả khi xác nhận bị validation hoặc backend từ chối</td>
+</tr>
+<tr>
+<td>Case 21: Kiểm tra quyền cập nhật lương</td>
+<td>High</td>
+<td></td>
+<td>EX24 / REQ11</td>
+<td>Các role được cấp quyền và role khác</td>
+<td>Quan hệ giáo viên–lớp tồn tại</td>
+<td><strong>Given</strong> người dùng mở UI hoặc gọi API cập nhật lương<br><strong>When</strong> hệ thống kiểm tra quyền và phạm vi<br><strong>Then</strong> chỉ Admin, Class Handler, Support hợp lệ được cập nhật</td>
+<td>- Role khác không thấy thao tác chỉnh sửa<br>- Backend từ chối request trái quyền<br>- Lương không thay đổi khi bị từ chối</td>
+</tr>
+<tr>
+<td>Case 22: Tìm kiếm lớp học</td>
+<td>High</td>
+<td></td>
+<td>Flow 10 / REQ11</td>
+<td>Admin / Class Handler / Support</td>
+<td>Có lớp khớp và không khớp Mã lớp/Tên khóa học</td>
+<td><strong>Given</strong> người dùng nhập từ khóa tại ô Tìm kiếm lớp học<br><strong>When</strong> ngừng gõ 2 giây hoặc nhấn <code>Enter</code><br><strong>Then</strong> hệ thống tìm theo Mã lớp hoặc Tên khóa học và trở về trang đầu</td>
+<td>- Không gửi request trước đủ 2 giây nếu vẫn đang gõ<br>- Enter tìm ngay và hủy debounce đang chờ<br>- Kết hợp từ khóa theo AND với các filter hiện tại<br>- Không hiển thị lớp chưa thêm giáo viên<br>- Chuyển trang giữ nguyên từ khóa</td>
+</tr>
+<tr>
+<td>Case 23: Lọc theo Loại lớp, Khóa học và Trạng thái</td>
+<td>High</td>
+<td></td>
+<td>Flow 10 / REQ11</td>
+<td>Admin / Class Handler / Support</td>
+<td>Có lớp thuộc nhiều loại, khóa học và tám trạng thái</td>
+<td><strong>Given</strong> người dùng chọn một hoặc nhiều điều kiện lọc<br><strong>When</strong> danh sách tải lại<br><strong>Then</strong> hệ thống áp dụng giao các điều kiện</td>
+<td>- Loại lớp chỉ gồm Lớp 1-1/Lớp chung<br>- Khóa học lấy từ cấu hình hiện hành<br>- Trạng thái hỗ trợ đủ tám giá trị đã quy định<br>- Kết quả vẫn thuộc đúng giáo viên</td>
+</tr>
+<tr>
+<td>Case 24: Filter thời gian mặc định Hôm nay</td>
+<td>High</td>
+<td></td>
+<td>Flow 10 / REQ11</td>
+<td>Admin / Class Handler / Support</td>
+<td>Có lớp tạo hôm nay và ngày khác</td>
+<td><strong>Given</strong> người dùng mở tab lần đầu<br><strong>When</strong> danh sách tải<br><strong>Then</strong> filter Thời gian mặc định là Hôm nay</td>
+<td>- Lọc theo <code>class.created_at</code> từ đầu đến hết ngày hôm nay<br>- Dùng đúng múi giờ nghiệp vụ<br>- Không dùng thời gian cập nhật lương</td>
+</tr>
+<tr>
+<td>Case 25: Filter Tới hạn và các khoảng định sẵn</td>
+<td>High</td>
+<td></td>
+<td>Flow 10 / REQ11</td>
+<td>Admin / Class Handler / Support</td>
+<td>Có lớp được tạo tại các mốc biên</td>
+<td><strong>Given</strong> người dùng lần lượt chọn các khoảng thời gian định sẵn<br><strong>When</strong> danh sách tải<br><strong>Then</strong> hệ thống lọc đúng theo <code>class.created_at</code></td>
+<td>- Tới hạn lấy từ đầu hệ thống đến hết hôm nay<br>- Hỗ trợ đủ Hôm qua, Hôm nay và hôm qua, tuần/tháng/năm hiện tại hoặc trước đó và 3 tháng trước<br>- Bao gồm đúng các mốc biên</td>
+</tr>
+<tr>
+<td>Case 26: Filter thời gian Tùy chọn và kết hợp filter</td>
+<td>High</td>
+<td></td>
+<td>Flow 10 / REQ11</td>
+<td>Admin / Class Handler / Support</td>
+<td>Có lớp trong và ngoài khoảng chọn</td>
+<td><strong>Given</strong> người dùng chọn khoảng ngày hợp lệ cùng các filter khác<br><strong>When</strong> áp dụng filter<br><strong>Then</strong> hệ thống trả giao của toàn bộ điều kiện</td>
+<td>- Bao gồm toàn bộ hai ngày biên<br>- Từ chối ngày bắt đầu sau ngày kết thúc<br>- Chỉ response mới nhất được hiển thị</td>
+</tr>
+<tr>
+<td>Case 27: Phân trang Danh sách lớp</td>
+<td>High</td>
+<td></td>
+<td>Flow 10 / REQ11</td>
+<td>Admin / Class Handler / Support</td>
+<td>Có hơn 10 lớp thỏa từ khóa, quyền và bộ lọc hiện tại</td>
+<td><strong>Given</strong> danh sách lớp đang có nhiều trang<br><strong>When</strong> người dùng chọn số trang, <code>Trước</code> hoặc <code>Sau</code><br><strong>Then</strong> hệ thống tải đúng tối đa 10 lớp của trang được chọn</td>
+<td>- Hiển thị đúng khoảng dữ liệu, tổng kết quả và trang hiện tại<br>- Giữ nguyên từ khóa và toàn bộ bộ lọc khi chuyển trang<br>- <code>Trước</code>/<code>Sau</code> vô hiệu hóa đúng ở trang biên<br>- Thay đổi từ khóa/filter đưa danh sách về trang đầu<br>- Không lặp hoặc bỏ sót lớp giữa các trang</td>
+</tr>
+<tr>
+<td>Case 28: Tải danh sách hoặc cập nhật lương thất bại/xung đột</td>
+<td>High</td>
+<td></td>
+<td>EX25 / EX26 / EX27 / REQ11 / REQ06</td>
+<td>Admin / Class Handler / Support</td>
+<td>API lỗi, hết thời gian chờ, response sai thứ tự hoặc dữ liệu đã được người khác cập nhật</td>
+<td><strong>Given</strong> người dùng tải/tìm/lọc danh sách hoặc cập nhật lương<br><strong>When</strong> xảy ra lỗi hay xung đột<br><strong>Then</strong> hệ thống giữ dữ liệu nhất quán và hiển thị trạng thái phù hợp</td>
+<td>- Không coi lỗi tải là danh sách rỗng<br>- Response cũ không ghi đè điều kiện mới<br>- Không âm thầm ghi đè lương mới hơn<br>- Popup giữ giá trị vừa nhập khi cập nhật thất bại<br>- Cập nhật thất bại hiển thị đúng một notification thất bại và cho phép thử lại</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="tab-lich-day">Tab Lịch dạy</h3>
+<p align="center">
+  <a href="./images/teacher-detail-schedule-by-day.png"><img src="./images/teacher-detail-schedule-by-day.png" alt="Lịch dạy theo ngày" width="900" title="Nhấn để xem ảnh gốc"></a><br>
+  <em>Tab Lịch dạy khi tắt `Theo lớp`: thanh tuần, hàng chip tóm tắt lịch đăng ký, card 3 màu — nhấn để xem ảnh gốc</em>
+</p>
+
+<p align="center">
+  <a href="./images/teacher-detail-schedule-by-class.png"><img src="./images/teacher-detail-schedule-by-class.png" alt="Lịch dạy theo lớp" width="900" title="Nhấn để xem ảnh gốc"></a><br>
+  <em>Tab Lịch dạy khi bật `Theo lớp`: mỗi lớp một nhóm có thanh tiêu đề mã lớp — nhấn để xem ảnh gốc</em>
+</p>
+
+<p><strong>Mô tả:</strong></p>
+<ul>
+<li>Tab <code>Lịch dạy</code> là màn hình chỉ đọc, chỉ hiển thị các buổi dạy đã được xếp cho đúng giáo viên đang xem.</li>
+<li>Không hiển thị lịch đăng ký làm việc, ca giáo viên có thể nhận, log, ghi chú hoặc dữ liệu của giáo viên khác trong tab này.</li>
+<li>Không cho phép thêm, sửa, xóa, đăng ký hoặc hủy lịch trực tiếp tại tab <code>Lịch dạy</code>.</li>
+</ul>
+<p><strong>Giải thích field/thành phần:</strong></p>
+<ul>
+<li>Khi mở tab, hệ thống mặc định hiển thị tuần chứa ngày hiện tại, từ <code>Thứ 2</code> đến <code>Chủ Nhật</code>.</li>
+<li>Thanh chọn tuần hiển thị khoảng ngày bắt đầu–kết thúc theo định dạng <code>dd.MM.yyyy - dd.MM.yyyy</code>.</li>
+<li>Nút mũi tên trái/phải lần lượt chuyển sang tuần trước hoặc tuần sau.</li>
+<li>Click khoảng ngày mở danh sách tuần; chọn một tuần sẽ đóng danh sách và tải lịch của đúng tuần đó.</li>
+<li>Tiêu đề lịch gồm đủ bảy cột từ <code>Thứ 2</code> đến <code>Chủ Nhật</code>, kèm ngày dạng <code>dd.MM</code>; ngày hiện tại được đánh dấu nổi bật nếu thuộc tuần đang xem.</li>
+<li>Khi đổi tuần, hệ thống thay toàn bộ dữ liệu bằng lịch của tuần mới; không giữ hoặc trộn các buổi của tuần trước.</li>
+<li>Hàng chip <code>T2 - 19:00 … CN - 19:00</code> bên phải thanh tuần là <strong>tóm tắt lịch đăng ký</strong> của giáo viên: mỗi chip = thứ + giờ bắt đầu sớm nhất giáo viên đã đăng ký trong thứ đó (dữ liệu từ tab Quản lý đăng ký lịch); thứ chưa đăng ký không có chip; chip của thứ trùng ngày hiện tại được tô sáng. Chip chỉ đọc, không lọc lịch dạy.</li>
+<li>Mỗi card buổi dạy hiển thị avatar + tên giáo viên, mã lớp và khoảng giờ <code>hh:mm am - hh:mm am</code>.</li>
+<li>Màu viền card theo mốc thời gian của buổi so với hiện tại: <strong>xanh lá</strong> = buổi đã dạy (đã qua), <strong>cam</strong> = buổi trong ngày hôm nay, <strong>xanh dương</strong> = buổi sắp dạy (tương lai).</li>
+</ul>
+<p><strong>Chế độ <code>Theo Lớp</code>:</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Trạng thái</th>
+<th>Cách hiển thị</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Bật</td>
+<td>Mỗi lớp là một nhóm riêng có thanh tiêu đề màu cam ghi mã lớp; bên dưới là lưới bảy cột ngày. Ngày có lịch hiển thị card buổi dạy; ngày không có lịch là ô trống viền nét đứt, không có chữ.</td>
+</tr>
+<tr>
+<td>Tắt</td>
+<td>Lịch được gom theo ngày, không chia thành nhóm lớp. Mỗi cột ngày hiển thị toàn bộ buổi dạy trong ngày, xếp tăng dần theo giờ bắt đầu; nhiều buổi được xếp dọc. Ngày không có buổi dạy là ô trống viền nét đứt.</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Điểm cần lưu ý:</strong></p>
+<ul>
+<li>Chỉ lấy buổi dạy có giáo viên được phân công trùng với giáo viên đang xem và có ngày thuộc tuần được chọn.</li>
+<li>Mỗi card hiển thị tối thiểu <code>Mã lớp</code> và khoảng giờ <code>HH:mm - HH:mm</code>.</li>
+<li>Một buổi dạy chỉ xuất hiện một lần trong cùng chế độ hiển thị, kể cả khi dữ liệu quan hệ giáo viên–lớp bị trùng.</li>
+<li>Ở chế độ <code>Theo Lớp</code>, các lớp và lịch không được trộn với nhau; ở chế độ theo ngày, các buổi cùng ngày được sắp xếp theo giờ bắt đầu tăng dần.</li>
+<li>Trạng thái không có lịch (ô trống nét đứt) phản ánh đúng phạm vi: từng ô ngày trong chế độ <code>Theo lớp</code>, hoặc từng cột ngày trong chế độ theo ngày; tuần không có buổi nào thì toàn bộ lưới trống.</li>
+<li>Việc đổi chế độ chỉ thay cách trình bày, không làm thay đổi tập buổi dạy của giáo viên trong tuần đang chọn.</li>
+<li>Mọi lần đổi tuần hoặc đổi chế độ phải chỉ hiển thị kết quả của request mới nhất; dữ liệu cũ không được ghi đè kết quả hiện tại.</li>
+</ul>
+<h4 id="testcase-tab-lich-day">Testcase — Tab Lịch dạy</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 29: Mở tab Lịch dạy</td>
+<td>High</td>
+<td>Smoke</td>
+<td>Flow 5 / REQ05</td>
+<td>Admin</td>
+<td>Giáo viên tồn tại trong phạm vi</td>
+<td><strong>Given</strong> Admin đang ở chi tiết giáo viên<br><strong>When</strong> chọn tab <code>Lịch dạy</code><br><strong>Then</strong> hệ thống tải lịch tuần hiện tại</td>
+<td>- Chỉ hiển thị buổi dạy của đúng giáo viên<br>- Tuần bắt đầu từ Thứ 2 và kết thúc Chủ Nhật<br>- Không hiển thị lịch đăng ký làm việc<br>- Không có thao tác thêm, sửa hoặc xóa lịch</td>
+</tr>
+<tr>
+<td>Case 30: Chuyển và chọn tuần</td>
+<td>High</td>
+<td></td>
+<td>Flow 5 / REQ05</td>
+<td>Admin</td>
+<td>Giáo viên có lịch ở nhiều tuần</td>
+<td><strong>Given</strong> tuần hiện tại đang hiển thị<br><strong>When</strong> Admin dùng mũi tên hoặc chọn một tuần trong danh sách<br><strong>Then</strong> hệ thống tải đúng tuần được chọn</td>
+<td>- Khoảng ngày và bảy tiêu đề ngày cập nhật đúng<br>- Không trộn dữ liệu tuần cũ<br>- Ngày hiện tại chỉ được đánh dấu khi thuộc tuần đang xem</td>
+</tr>
+<tr>
+<td>Case 31: Hiển thị lịch Theo Lớp</td>
+<td>High</td>
+<td></td>
+<td>Flow 5 / REQ05</td>
+<td>Admin</td>
+<td>Tuần được chọn có nhiều lớp và ngày trống</td>
+<td><strong>Given</strong> tùy chọn <code>Theo Lớp</code> đang bật<br><strong>When</strong> lịch tải thành công<br><strong>Then</strong> hệ thống nhóm lịch theo từng lớp</td>
+<td>- Mỗi lớp có đúng một nhóm riêng với thanh tiêu đề mã lớp<br>- Mỗi nhóm có đủ bảy cột ngày<br>- Card hiển thị đúng tên giáo viên, mã lớp và giờ<br>- Ô không có buổi là ô trống nét đứt<br>- Không trộn buổi giữa các lớp</td>
+</tr>
+<tr>
+<td>Case 32: Hiển thị lịch theo ngày</td>
+<td>High</td>
+<td></td>
+<td>Flow 5 / REQ05</td>
+<td>Admin</td>
+<td>Một ngày có nhiều buổi thuộc nhiều lớp</td>
+<td><strong>Given</strong> tùy chọn <code>Theo Lớp</code> đang tắt<br><strong>When</strong> lịch tải thành công<br><strong>Then</strong> hệ thống gom toàn bộ buổi theo ngày</td>
+<td>- Không hiển thị hàng nhóm lớp<br>- Các buổi trong ngày xếp tăng dần theo giờ bắt đầu<br>- Mỗi card hiển thị đúng mã lớp và giờ<br>- Cột không có buổi là ô trống nét đứt</td>
+</tr>
+<tr>
+<td>Case 33: Đổi chế độ không làm thay đổi dữ liệu</td>
+<td>High</td>
+<td></td>
+<td>Flow 5 / REQ05</td>
+<td>Admin</td>
+<td>Tuần đang xem có nhiều buổi dạy</td>
+<td><strong>Given</strong> lịch đã tải ở một chế độ<br><strong>When</strong> Admin bật hoặc tắt <code>Theo Lớp</code><br><strong>Then</strong> hệ thống chỉ đổi cách trình bày</td>
+<td>- Tập buổi dạy trước và sau giống nhau<br>- Tuần đang chọn được giữ nguyên<br>- Không nhân đôi hoặc làm mất buổi dạy</td>
+</tr>
+<tr>
+<td>Case 34: Giáo viên không có lịch dạy trong tuần</td>
+<td>Medium</td>
+<td></td>
+<td>EX07 / REQ05</td>
+<td>Admin</td>
+<td>Giáo viên không có buổi dạy trong tuần được chọn</td>
+<td><strong>Given</strong> Admin mở hoặc chuyển tới tuần không có lịch<br><strong>When</strong> hệ thống tải thành công<br><strong>Then</strong> hiển thị trạng thái không có lịch</td>
+<td>- Không hiển thị dữ liệu tuần trước hoặc giáo viên khác<br>- Không coi dữ liệu rỗng là lỗi hệ thống<br>- Vẫn cho phép chuyển tuần và đổi chế độ</td>
+</tr>
+<tr>
+<td>Case 35: Tải lịch dạy thất bại</td>
+<td>High</td>
+<td></td>
+<td>EX08 / REQ05</td>
+<td>Admin</td>
+<td>API lịch dạy lỗi hoặc hết thời gian chờ</td>
+<td><strong>Given</strong> Admin mở tab hoặc đổi tuần<br><strong>When</strong> request thất bại<br><strong>Then</strong> hệ thống hiển thị trạng thái lỗi phù hợp</td>
+<td>- Không hiển thị dữ liệu cũ như dữ liệu của tuần mới<br>- Không hiển thị lịch đăng ký thay thế<br>- Cho phép thử tải lại</td>
+</tr>
+<tr>
+<td>Case 36a: Chip tóm tắt lịch đăng ký</td>
+<td>Medium</td>
+<td></td>
+<td>Flow 5 / REQ05</td>
+<td>Admin</td>
+<td>Giáo viên đăng ký buổi tối T2–T6 (sớm nhất 19:00) và không đăng ký T7, CN</td>
+<td><strong>Given</strong> mở tab Lịch dạy<br><strong>When</strong> xem hàng chip cạnh thanh tuần<br><strong>Then</strong> có chip <code>T2 - 19:00</code> … <code>T6 - 19:00</code>, không có chip T7, CN</td>
+<td>- Chip của thứ trùng ngày hiện tại được tô sáng<br>- Bấm chip không lọc, không đổi lịch<br>- Đổi lịch đăng ký ở tab Quản lý đăng ký lịch thì chip cập nhật</td>
+</tr>
+<tr>
+<td>Case 36b: Màu card theo mốc thời gian</td>
+<td>Medium</td>
+<td></td>
+<td>REQ05</td>
+<td>Admin</td>
+<td>Tuần đang xem có buổi đã qua, buổi hôm nay và buổi tương lai</td>
+<td><strong>Given</strong> lịch tuần đã tải<br><strong>When</strong> xem màu viền card<br><strong>Then</strong> buổi đã qua xanh lá, buổi hôm nay cam, buổi tương lai xanh dương</td>
+<td>- Màu tính theo ngày giờ buổi so với hiện tại theo múi giờ nghiệp vụ<br>- Qua ngày thì màu card hôm nay chuyển xanh lá khi tải lại</td>
+</tr>
+<tr>
+<td>Case 36: Chỉ nhận dữ liệu lịch của request mới nhất</td>
+<td>High</td>
+<td></td>
+<td>EX09 / REQ05</td>
+<td>Admin</td>
+<td>Hai request tuần/chế độ phản hồi không đúng thứ tự</td>
+<td><strong>Given</strong> request cũ đang xử lý<br><strong>When</strong> Admin đổi tuần hoặc chế độ và request mới hoàn tất trước<br><strong>Then</strong> hệ thống giữ kết quả mới nhất</td>
+<td>- Response cũ không ghi đè dữ liệu hiện tại<br>- Tuần, chế độ và lịch hiển thị nhất quán</td>
+</tr>
+</tbody>
+</table></div>
+<h4 id="testcase-gioi-han-thao-tac-tai-tab-lich-day">Testcase — Giới hạn thao tác tại Tab Lịch dạy</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 73: Không cho CUD tại tab Lịch dạy</td>
+<td>High</td>
+<td></td>
+<td>REQ05 / Ràng buộc quyền</td>
+<td>Admin</td>
+<td>Tab Lịch dạy đã tải</td>
+<td><strong>Given</strong> Admin đang xem lịch dạy<br><strong>When</strong> kiểm tra UI hoặc gửi request CUD thông qua ngữ cảnh tab này<br><strong>Then</strong> hệ thống không cung cấp/không chấp nhận thao tác CUD lịch</td>
+<td>- Không có nút thêm, sửa, xóa, đăng ký hoặc hủy lịch<br>- Lịch dạy không thay đổi</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="tab-log">Tab Log</h3>
+<p align="center">
+  <a href="./images/teacher-detail-log.png"><img src="./images/teacher-detail-log.png" alt="Tab Log của chi tiết giáo viên" width="900" title="Nhấn để xem ảnh gốc"></a><br>
+  <em>Tab Log: log hệ thống tự ghi theo giáo viên, bộ lọc Đối tượng và Thời gian — nhấn để xem ảnh gốc</em>
+</p>
+
+<p><strong>Mô tả:</strong></p>
+<ul>
+<li>Tab <code>Log</code> hiển thị <strong>log hệ thống tự ghi</strong> cho mọi thay đổi liên quan đến đúng giáo viên đang xem; tab <strong>chỉ đọc</strong>, không có thao tác tạo, sửa hoặc xóa log bằng tay.</li>
+<li>Các role <code>Admin</code>, <code>Class Handler</code>, <code>Support</code> được xem log trong phạm vi dữ liệu được cấp.</li>
+<li>Hệ thống ghi log khi có thao tác thành công liên quan tới giáo viên: cập nhật hồ sơ, đổi trạng thái, reset mật khẩu, thêm / gỡ giáo viên khỏi lớp, cập nhật lương theo lớp, cập nhật lịch đăng ký, gán tag, tạo lịch hẹn, cũng như thao tác của chính giáo viên với học viên / lớp (vd <code>Thuy SP đã thêm học viên Thanh Thảo vào lớp NS0001</code>).</li>
+</ul>
+<p><strong>Giải thích field/thành phần:</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Thành phần</th>
+<th>Yêu cầu</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Tìm kiếm</td>
+<td>Ô <code>Tìm kiếm lớp học</code>: lọc log theo mã lớp hoặc tên lớp xuất hiện trong mô tả; tự tìm sau 2 giây hoặc nhấn <code>Enter</code>.</td>
+</tr>
+<tr>
+<td>Tiêu đề</td>
+<td>Tên loại log (vd <code>Thêm Học Viên</code>, <code>Đổi Trạng Thái</code>, <code>Chăm Sóc Lớp</code>).</td>
+</tr>
+<tr>
+<td>Mô tả</td>
+<td>Câu mô tả do hệ thống sinh; tên người, học viên, mã lớp được tô màu cam và dẫn tới đối tượng tương ứng. Mô tả dài có khối chi tiết thu gọn / mở rộng (<code>Thu gọn</code>). Không có mô tả hiển thị <code>Trống</code>.</td>
+</tr>
+<tr>
+<td>Giờ log, Ngày log</td>
+<td>Thời điểm ghi log dạng <code>hh:mm AM</code> và <code>dd.MM.yyyy</code> theo múi giờ nghiệp vụ.</td>
+</tr>
+<tr>
+<td>Đối tượng</td>
+<td>Người thực hiện thao tác (avatar + tên) hoặc <code>Hệ thống</code> với log do tiến trình tự động sinh.</td>
+</tr>
+<tr>
+<td>Thao tác</td>
+<td>Nút <code>⋯</code> mở <code>Xem chi tiết</code> (toàn bộ nội dung log); không có sửa / xóa.</td>
+</tr>
+<tr>
+<td>Bộ lọc Đối tượng</td>
+<td>Chọn <code>Hệ thống</code> hoặc một người dùng cụ thể; không chọn thì hiển thị tất cả.</td>
+</tr>
+<tr>
+<td>Bộ lọc Thời gian</td>
+<td>Lọc theo thời điểm ghi log; cùng danh sách khoảng thời gian của tab Ghi chú; giá trị mặc định cần xác nhận tại mục 3.</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Điểm cần lưu ý:</strong></p>
+<ul>
+<li>Log sắp xếp theo thời gian mới nhất trước; mỗi trang tối đa 10 log, phân trang như các tab khác.</li>
+<li>Log là dữ liệu <strong>bất biến</strong>: không có API tạo, sửa hoặc xóa log từ client; mọi role đều không xóa được log.</li>
+<li>Mỗi thao tác thay đổi dữ liệu thành công trong requirement này (cập nhật tài khoản, reset mật khẩu, đổi trạng thái, cập nhật lương, cập nhật lịch đăng ký, gán tag, tạo lịch hẹn) phải sinh đúng một dòng log với <code>Đối tượng</code> là người thao tác thực tế.</li>
+<li>Log chỉ thuộc đúng giáo viên đang xem; không hiển thị log của giáo viên khác dù cùng người thao tác.</li>
+<li>Từ khóa, Đối tượng và Thời gian kết hợp theo <code>AND</code>; thay đổi điều kiện đưa danh sách về trang đầu; chỉ response của điều kiện mới nhất được phép cập nhật danh sách.</li>
+</ul>
+<h4 id="testcase-tab-log">Testcase — Tab Log</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 37: Hiển thị log đúng giáo viên</td>
+<td>High</td>
+<td>Smoke</td>
+<td>Flow 6 / REQ07</td>
+<td>Admin / Class Handler / Support</td>
+<td>Giáo viên có log do nhiều người và hệ thống ghi</td>
+<td><strong>Given</strong> người dùng có quyền mở tab Log<br><strong>When</strong> dữ liệu tải thành công<br><strong>Then</strong> hệ thống hiển thị log của đúng giáo viên</td>
+<td>- Có Tiêu đề, Mô tả, Giờ log, Ngày log, Đối tượng, Thao tác<br>- Sắp xếp mới nhất trước<br>- Không hiển thị log của giáo viên khác</td>
+</tr>
+<tr>
+<td>Case 38: Tự ghi log khi thao tác thành công</td>
+<td>High</td>
+<td></td>
+<td>Flow 6 / REQ07</td>
+<td>Admin / Class Handler / Support</td>
+<td>Người dùng cập nhật lương một lớp của giáo viên</td>
+<td><strong>Given</strong> cập nhật lương thành công<br><strong>When</strong> mở tab Log<br><strong>Then</strong> có một dòng log mới ở đầu danh sách</td>
+<td>- Đối tượng là người vừa thao tác<br>- Mô tả nêu mã lớp và mức lương mới<br>- Thao tác thất bại không sinh log</td>
+</tr>
+<tr>
+<td>Case 39: Log của Hệ thống</td>
+<td>Medium</td>
+<td></td>
+<td>Flow 6 / REQ07</td>
+<td>Admin / Class Handler / Support</td>
+<td>Có tiến trình tự động tạo log cho giáo viên</td>
+<td><strong>Given</strong> tiến trình tự động chạy xong<br><strong>When</strong> xem dòng log tương ứng<br><strong>Then</strong> cột Đối tượng hiển thị <code>Hệ thống</code></td>
+<td>- Không gán cho người dùng nào<br>- Lọc Đối tượng = <code>Hệ thống</code> thấy dòng này</td>
+</tr>
+<tr>
+<td>Case 40: Mở rộng mô tả dài và Xem chi tiết</td>
+<td>Medium</td>
+<td></td>
+<td>REQ07</td>
+<td>Admin / Class Handler / Support</td>
+<td>Có log mô tả dài kèm khối chi tiết</td>
+<td><strong>Given</strong> dòng log hiển thị khối chi tiết<br><strong>When</strong> bấm <code>Thu gọn</code> rồi <code>⋯</code> → <code>Xem chi tiết</code><br><strong>Then</strong> khối chi tiết ẩn / hiện và popup chi tiết hiển thị toàn bộ nội dung</td>
+<td>- Không có thao tác sửa / xóa trong menu <code>⋯</code><br>- Dữ liệu log không đổi</td>
+</tr>
+<tr>
+<td>Case 41: Không cho tạo, sửa, xóa log</td>
+<td>High</td>
+<td></td>
+<td>EX10 / REQ07</td>
+<td>Admin / Class Handler / Support</td>
+<td>Tab Log đã tải</td>
+<td><strong>Given</strong> người dùng kiểm tra UI hoặc gọi API tạo/sửa/xóa log trực tiếp<br><strong>When</strong> hệ thống xử lý<br><strong>Then</strong> UI không có thao tác và backend từ chối</td>
+<td>- Log không thay đổi<br>- Không tiết lộ dữ liệu ngoài phạm vi</td>
+</tr>
+<tr>
+<td>Case 42: Lọc theo Đối tượng</td>
+<td>High</td>
+<td></td>
+<td>Flow 6 / REQ07</td>
+<td>Admin / Class Handler / Support</td>
+<td>Có log của <code>Hệ thống</code> và của 2 người dùng</td>
+<td><strong>Given</strong> người dùng chọn một Đối tượng trong bộ lọc<br><strong>When</strong> danh sách tải lại<br><strong>Then</strong> chỉ hiển thị log của Đối tượng đã chọn</td>
+<td>- Về trang đầu<br>- Bỏ chọn hiển thị lại tất cả</td>
+</tr>
+<tr>
+<td>Case 43: Lọc theo Thời gian và tìm theo lớp</td>
+<td>High</td>
+<td></td>
+<td>Flow 6 / REQ07</td>
+<td>Admin / Class Handler / Support</td>
+<td>Có log ở nhiều ngày và nhiều lớp</td>
+<td><strong>Given</strong> người dùng chọn khoảng thời gian và nhập mã lớp <code>NS0001</code><br><strong>When</strong> ngừng gõ 2 giây hoặc nhấn <code>Enter</code><br><strong>Then</strong> chỉ hiển thị log trong khoảng thời gian có mô tả chứa <code>NS0001</code></td>
+<td>- Điều kiện kết hợp AND<br>- Chuyển trang giữ nguyên điều kiện</td>
+</tr>
+<tr>
+<td>Case 44: Tải danh sách log thất bại</td>
+<td>High</td>
+<td></td>
+<td>EX13 / REQ07</td>
+<td>Admin / Class Handler / Support</td>
+<td>API log lỗi hoặc hết thời gian chờ</td>
+<td><strong>Given</strong> người dùng mở tab Log<br><strong>When</strong> request tải thất bại<br><strong>Then</strong> hệ thống hiển thị lỗi</td>
+<td>- Không coi lỗi là danh sách rỗng<br>- Không hiển thị dữ liệu của giáo viên khác<br>- Cho phép thử tải lại</td>
+</tr>
+<tr>
+<td>Case 45: Phân trang danh sách log</td>
+<td>High</td>
+<td></td>
+<td>Flow 6 / REQ07</td>
+<td>Admin / Class Handler / Support</td>
+<td>Giáo viên có hơn 10 log</td>
+<td><strong>Given</strong> danh sách Log đang có nhiều trang<br><strong>When</strong> người dùng chọn số trang, <code>Trước</code> hoặc <code>Sau</code><br><strong>Then</strong> hệ thống tải đúng tối đa 10 log của trang được chọn</td>
+<td>- Hiển thị đúng khoảng dữ liệu, tổng kết quả và trang hiện tại<br>- <code>Trước</code>/<code>Sau</code> vô hiệu hóa đúng ở trang biên<br>- Không lặp hoặc bỏ sót log giữa các trang<br>- Chỉ response của trang mới nhất được hiển thị</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="tab-quan-ly-dang-ky-lich">Tab Quản lý đăng ký lịch</h3>
+<p align="center">
+  <a href="./images/teacher-detail-registration-schedule.png"><img src="./images/teacher-detail-registration-schedule.png" alt="Quản lý lịch đăng ký của giáo viên" width="900" title="Nhấn để xem ảnh gốc"></a><br>
+  <em>Lưới 3 buổi × 7 thứ, ô đã đăng ký có khung giờ và ghi chú, checkbox Fulltime — nhấn để xem ảnh gốc</em>
+</p>
+
+<p align="center">
+  <a href="./images/teacher-detail-registration-slot.png"><img src="./images/teacher-detail-registration-slot.png" alt="Popup Đăng ký khung giờ" width="440" title="Nhấn để xem ảnh gốc"></a><br>
+  <em>Popup Đăng ký khung giờ khi tick một ô buổi — nhấn để xem ảnh gốc</em>
+</p>
+
+<p><strong>Mô tả:</strong></p>
+<ul>
+<li>Tab <code>Quản lý đăng ký lịch</code> hiển thị lịch làm việc đã đăng ký của đúng giáo viên đang xem dưới dạng lưới <strong>3 buổi mỗi ngày</strong> × 7 thứ: <code>Buổi sáng 07h30 - 12h00</code>, <code>Buổi chiều 14h00 - 18h00</code>, <code>Buổi tối 18h00 - 23h00</code>.</li>
+<li>Mỗi ô buổi đã đăng ký có thể kèm <strong>khung giờ cụ thể</strong> trong buổi (mốc 30 phút) và ghi chú riêng; một ô buổi đã đăng ký được tính là <strong>1 ca</strong> ở cột Lịch đăng ký của danh sách giáo viên (tối đa 21 ca).</li>
+<li>Các role <code>Admin</code>, <code>Class Handler</code>, <code>Support</code> được xem và cập nhật lịch đăng ký thay cho giáo viên trong phạm vi dữ liệu được cấp.</li>
+<li>Quy tắc buổi, khung giờ, validation và cách lưu phải giống chức năng đăng ký lịch phía giáo viên; không tạo một bộ quy tắc riêng cho màn quản lý.</li>
+<li>Việc cập nhật thay không đổi owner của lịch. Hệ thống phải lưu người thao tác thực tế là <code>Admin</code>, <code>Class Handler</code> hoặc <code>Support</code>, không ghi nhận giả là giáo viên tự cập nhật.</li>
+</ul>
+<p><strong>Giải thích field/thành phần:</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Thành phần</th>
+<th>Yêu cầu</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Fulltime</code></td>
+<td>Checkbox phía trên lưới. Tick = chọn đủ 21 ô với khung giờ trọn buổi (vẫn sửa được từng ô sau đó); bỏ tick bất kỳ ô nào thì <code>Fulltime</code> tự bỏ tick. Khi tải tab, <code>Fulltime</code> được tick nếu lịch hiện hành đủ 21 ô trọn buổi.</td>
+</tr>
+<tr>
+<td>Cột ngày</td>
+<td><code>Thứ 2</code> … <code>Thứ 7</code>, <code>Chủ Nhật</code>.</td>
+</tr>
+<tr>
+<td>Hàng buổi</td>
+<td><code>Buổi sáng 07h30 - 12h00</code>, <code>Buổi chiều 14h00 - 18h00</code>, <code>Buổi tối 18h00 - 23h00</code>.</td>
+</tr>
+<tr>
+<td>Ô buổi chưa đăng ký</td>
+<td>Checkbox trống; tick mở popup <code>Đăng ký khung giờ</code> của đúng thứ và buổi.</td>
+</tr>
+<tr>
+<td>Ô buổi đã đăng ký</td>
+<td>Checkbox đã tick, nền cam, hiển thị ghi chú ngắn của ô (vd <code>Trước 9h tối</code>, <code>Toàn buổi trừ lúc 18h30</code>) và icon bút để mở lại popup sửa khung giờ / ghi chú; hover hiển thị tooltip ghi chú đầy đủ (Figma: <code>Rê chuột vào ô đã đăng ký để xem ghi chú của buổi này</code>). Bỏ tick = gỡ đăng ký buổi đó.</td>
+</tr>
+<tr>
+<td>Popup <code>Đăng ký khung giờ</code></td>
+<td>Dòng phụ <code>&lt;Thứ&gt; · &lt;Buổi&gt; (&lt;khung buổi&gt;)</code>; <code>Giờ bắt đầu</code>, <code>Giờ kết thúc</code> là dropdown các mốc cách nhau 30 phút trong khung buổi (gợi ý <code>Chọn trong khung 14h00 – 18h00, mỗi mốc cách nhau 30 phút</code>); <code>Ghi chú</code> không bắt buộc; <code>Huỷ</code> đóng không đổi ô; <code>Xác nhận</code> lưu tạm vào lưới.</td>
+</tr>
+<tr>
+<td><code>Ghi chú</code> (chung)</td>
+<td>Ô văn bản dưới lưới, không bắt buộc, lưu cùng lịch đăng ký; placeholder <code>gửi tới người phỏng vấn</code> trên Figma là copy từ màn giáo viên, requirement đọc là ghi chú chung cho lịch đăng ký.</td>
+</tr>
+<tr>
+<td><code>Cập nhật</code></td>
+<td>Lưu toàn bộ lưới (các ô đã tick, khung giờ và ghi chú từng ô, ghi chú chung, cờ <code>Fulltime</code>) làm lịch đăng ký mới của giáo viên.</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Điểm cần lưu ý:</strong></p>
+<ul>
+<li>Trong popup, <code>Giờ bắt đầu</code> và <code>Giờ kết thúc</code> bắt buộc chọn, đều nằm trong khung buổi và <code>Giờ kết thúc</code> phải lớn hơn <code>Giờ bắt đầu</code>; ô tick bằng <code>Fulltime</code> nhận trọn khung buổi.</li>
+<li>Khi tải tab, mỗi ô phải phản ánh đúng cặp <code>thứ + buổi</code>, khung giờ và ghi chú thuộc lịch đăng ký hiện hành của giáo viên.</li>
+<li>Thay đổi trên lưới và trong popup chỉ là nháp cho tới khi bấm <code>Cập nhật</code>; rời tab khi có thay đổi chưa lưu phải hỏi xác nhận.</li>
+<li>Nút <code>Cập nhật</code> gửi toàn bộ lưới; backend ghi nhận atomically để không lưu lịch ở trạng thái một phần.</li>
+<li>Sau khi cập nhật thành công, cột <code>Lịch đăng ký</code> (<code>N ngày (M ca)</code>), popover <code>Chi tiết lịch đăng ký</code> ở danh sách giáo viên và hàng chip ở tab Lịch dạy dùng cùng dữ liệu mới. Số ngày = số thứ có ít nhất một ô đã tick; số ca = số ô đã tick.</li>
+<li>Trong khi request đang xử lý, vô hiệu hóa thao tác xác nhận lặp để không gửi nhiều bản cập nhật giống nhau.</li>
+<li>Nếu cập nhật thất bại, giữ lựa chọn người dùng đang chỉnh sửa để thử lại nhưng không hiển thị dữ liệu chưa lưu như dữ liệu chính thức ở màn khác.</li>
+<li>Mọi thao tác cập nhật thành công hoặc thất bại phải có đúng một notification kết quả theo REQ06 và sinh một dòng log ở tab Log khi thành công.</li>
+<li>Backend phải kiểm tra role, phạm vi giáo viên và trạng thái tài khoản tại thời điểm xử lý, kể cả khi gọi API trực tiếp.</li>
+<li>Khi giáo viên hoặc một role khác cập nhật đồng thời, hệ thống không được âm thầm ghi đè dữ liệu mới hơn; cơ chế xử lý xung đột phải thống nhất với chức năng phía giáo viên.</li>
+</ul>
+<h4 id="testcase-tab-quan-ly-dang-ky-lich">Testcase — Tab Quản lý đăng ký lịch</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 46: Hiển thị đúng lịch giáo viên đã đăng ký</td>
+<td>High</td>
+<td>Smoke</td>
+<td>Flow 9 / REQ10</td>
+<td>Admin / Class Handler / Support</td>
+<td>Giáo viên đăng ký Thứ 2 cả 3 buổi với khung giờ và ghi chú riêng</td>
+<td><strong>Given</strong> người dùng mở tab Quản lý đăng ký lịch<br><strong>When</strong> dữ liệu tải thành công<br><strong>Then</strong> hệ thống hiển thị lưới 3 buổi × 7 thứ của đúng giáo viên</td>
+<td>- 3 ô Thứ 2 đã tick, hiện ghi chú ngắn và icon bút<br>- Hover ô hiện tooltip ghi chú đầy đủ<br>- Ô khác trống<br>- <code>Fulltime</code> không tick</td>
+</tr>
+<tr>
+<td>Case 47: Đăng ký buổi mới qua popup</td>
+<td>High</td>
+<td></td>
+<td>Flow 9 / REQ10 / REQ06</td>
+<td>Admin / Class Handler / Support</td>
+<td>Ô <code>Thứ 3 · Buổi chiều</code> đang trống</td>
+<td><strong>Given</strong> người dùng tick ô<br><strong>When</strong> popup <code>Đăng ký khung giờ</code> mở, chọn <code>14:30</code> – <code>17:00</code>, nhập ghi chú, <code>Xác nhận</code> rồi bấm <code>Cập nhật</code><br><strong>Then</strong> hệ thống lưu buổi mới</td>
+<td>- Dòng phụ popup <code>Thứ 3 · Buổi chiều (14h00 – 18h00)</code><br>- Ô hiển thị tick và ghi chú<br>- Danh sách giáo viên tăng số ca lên 1<br>- Hiển thị đúng một notification thành công</td>
+</tr>
+<tr>
+<td>Case 48: Validation khung giờ trong popup</td>
+<td>High</td>
+<td></td>
+<td>EX21 / REQ10</td>
+<td>Admin / Class Handler / Support</td>
+<td>Popup <code>Đăng ký khung giờ</code> của Buổi chiều đang Mới</td>
+<td><strong>Given</strong> người dùng bỏ trống giờ, hoặc chọn giờ kết thúc không lớn hơn giờ bắt đầu<br><strong>When</strong> bấm <code>Xác nhận</code><br><strong>Then</strong> hệ thống từ chối</td>
+<td>- Chỉ chọn được mốc 30 phút trong <code>14h00 – 18h00</code><br>- Báo lỗi tại trường giờ<br>- Ô vẫn chưa được tick</td>
+</tr>
+<tr>
+<td>Case 49: Fulltime</td>
+<td>High</td>
+<td></td>
+<td>Flow 9 / REQ10</td>
+<td>Admin / Class Handler / Support</td>
+<td>Lưới có vài ô đã đăng ký</td>
+<td><strong>Given</strong> người dùng tick <code>Fulltime</code><br><strong>When</strong> xem lưới rồi bỏ tick một ô<br><strong>Then</strong> tick Fulltime chọn đủ 21 ô trọn buổi; bỏ một ô thì <code>Fulltime</code> tự bỏ tick</td>
+<td>- Ô đã có khung giờ riêng vẫn giữ khung giờ riêng cho tới khi sửa<br>- <code>Cập nhật</code> lưu đúng tập ô đang tick</td>
+</tr>
+<tr>
+<td>Case 50: Gỡ đăng ký và cập nhật</td>
+<td>High</td>
+<td></td>
+<td>Flow 9 / REQ10 / REQ06</td>
+<td>Admin / Class Handler / Support</td>
+<td>Thứ 2 có 3 ô đã đăng ký</td>
+<td><strong>Given</strong> người dùng bỏ tick ô <code>Thứ 2 · Buổi tối</code><br><strong>When</strong> bấm <code>Cập nhật</code><br><strong>Then</strong> hệ thống lưu lịch còn 2 ô</td>
+<td>- Không lưu một phần<br>- Popover Chi tiết lịch đăng ký ở danh sách chỉ còn Sáng và Chiều<br>- Hiển thị đúng một notification thành công</td>
+</tr>
+<tr>
+<td>Case 51: Ghi nhận đúng người thao tác thay</td>
+<td>High</td>
+<td></td>
+<td>REQ10</td>
+<td>Admin / Class Handler / Support</td>
+<td>Người dùng cập nhật lịch của giáo viên khác</td>
+<td><strong>Given</strong> request cập nhật thành công<br><strong>When</strong> hệ thống lưu audit và log<br><strong>Then</strong> ghi nhận đúng actor và giáo viên</td>
+<td>- Owner lịch vẫn là giáo viên<br>- Actor là tài khoản đang đăng nhập<br>- Tab Log có dòng log với Đối tượng là actor</td>
+</tr>
+<tr>
+<td>Case 52: Cập nhật thất bại hoặc xác nhận lặp</td>
+<td>High</td>
+<td></td>
+<td>EX21 / REQ10 / REQ06</td>
+<td>Admin / Class Handler / Support</td>
+<td>Request lỗi, hết thời gian chờ hoặc đang xử lý</td>
+<td><strong>Given</strong> người dùng chọn Cập nhật nhiều lần hoặc backend trả lỗi<br><strong>When</strong> hệ thống xử lý<br><strong>Then</strong> không tạo trạng thái lịch không nhất quán</td>
+<td>- Vô hiệu hóa xác nhận lặp khi đang xử lý<br>- Giữ lựa chọn đang sửa để thử lại<br>- Dữ liệu chính thức không đổi<br>- Hiển thị đúng một notification thất bại</td>
+</tr>
+<tr>
+<td>Case 52a: Xử lý cập nhật đồng thời</td>
+<td>High</td>
+<td></td>
+<td>EX22 / REQ10</td>
+<td>Admin / Class Handler / Support</td>
+<td>Giáo viên hoặc hai người quản lý cùng mở một phiên bản lịch</td>
+<td><strong>Given</strong> một bên đã lưu lịch mới trước<br><strong>When</strong> bên còn lại gửi dữ liệu dựa trên phiên bản cũ<br><strong>Then</strong> hệ thống không âm thầm ghi đè</td>
+<td>- Phát hiện xung đột theo cơ chế dùng chung với màn giáo viên<br>- Yêu cầu tải lại/hợp nhất theo quy tắc được chốt<br>- Không làm mất thay đổi mới hơn</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="tab-ghi-chu">Tab Ghi chú</h3>
+<p align="center">
+  <a href="./images/teacher-detail-notes-list.png"><img src="./images/teacher-detail-notes-list.png" alt="Danh sách ghi chú giáo viên" width="900" title="Nhấn để xem ảnh gốc"></a><br>
+  <em>Danh sách ghi chú, bộ lọc, bình luận và ô gõ nhanh tạo ghi chú — nhấn để xem ảnh gốc</em>
+</p>
+
+<p><strong>Mô tả:</strong></p>
+<ul>
+<li>Tab <code>Ghi chú</code> quản lý danh sách ghi chú độc lập liên quan đến đúng giáo viên đang xem.</li>
+<li>Danh sách này không phải trường <code>Ghi chú</code> tổng quan tại tab <code>Thông tin cá nhân</code> và không cấp dữ liệu cho cột Ghi chú ở danh sách giáo viên.</li>
+<li>Các role <code>Admin</code>, <code>Class Handler</code>, <code>Support</code> được truy cập tab Ghi chú trong phạm vi dữ liệu được cấp.</li>
+<li>Owner của ghi chú là người tạo ghi chú, được xác định bằng định danh tài khoản đã xác thực và không thể bị giả mạo từ client.</li>
+</ul>
+<p><strong>Giải thích field/thành phần:</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Trường/Thành phần</th>
+<th>Yêu cầu</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Ô gõ nhanh</td>
+<td>Thanh cố định cuối tab: <code>Gõ nhanh nội dung ghi chú, nhấn Enter để tạo mới…</code> kèm dropdown Loại (mặc định <code>Công khai</code>), Độ ưu tiên (mặc định <code>Bình thường</code>) và nút gửi. <code>Enter</code> hoặc nút gửi tạo ghi chú với Nội dung là text đã gõ, Tiêu đề trống. Không có nút <code>+</code> hay popup thêm riêng.</td>
+</tr>
+<tr>
+<td>Tiêu đề</td>
+<td>Không bắt buộc; nhập / sửa qua <code>Sửa</code> trong menu <code>⋮</code>; card không có tiêu đề hiển thị dòng đầu của nội dung làm tiêu đề.</td>
+</tr>
+<tr>
+<td>Nội dung</td>
+<td>Bắt buộc; hiển thị đầy đủ trong card ghi chú.</td>
+</tr>
+<tr>
+<td>Loại</td>
+<td>Gồm <code>Công khai</code> (icon quả địa cầu), <code>Riêng tư</code> (icon khóa); mặc định <code>Công khai</code>.</td>
+</tr>
+<tr>
+<td>Độ ưu tiên</td>
+<td>Gồm <code>Bình thường</code>, <code>Quan trọng</code>, <code>Rất quan trọng</code>; hiển thị badge màu trên card; mặc định <code>Bình thường</code>.</td>
+</tr>
+<tr>
+<td>Trạng thái</td>
+<td>Gồm <code>Mới</code>, <code>Đóng</code>; ghi chú mới mặc định là <code>Mới</code>.</td>
+</tr>
+<tr>
+<td>Menu <code>⋮</code></td>
+<td>Chỉ owner thấy: <code>Sửa</code> (popup Tiêu đề, Nội dung, Loại, Độ ưu tiên), <code>Đóng</code> / <code>Mở lại</code>, <code>Xóa</code> (có xác nhận). Người khác không có menu.</td>
+</tr>
+<tr>
+<td>Nhãn <code>Đã chỉnh sửa</code></td>
+<td>Ghi chú đã được sửa hiển thị nhãn <code>Đã chỉnh sửa</code> dưới owner.</td>
+</tr>
+<tr>
+<td>Owner</td>
+<td>Hiển thị avatar, tên người tạo và thời gian tạo đầy đủ ngày, tháng, năm, giờ, phút.</td>
+</tr>
+<tr>
+<td>Bình luận</td>
+<td>Hiển thị số lượng; cho phép mở/ẩn danh sách bình luận.</td>
+</tr>
+<tr>
+<td>Hoạt động bình luận cuối</td>
+<td>Nếu có bình luận, phía bên phải ghi chú hiển thị avatar người comment cuối cùng và đầy đủ ngày, tháng, năm, thời gian của comment cuối cùng.</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Điểm cần lưu ý:</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Điều kiện</th>
+<th>Owner</th>
+<th>Admin/Class Handler/Support khác</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Ghi chú <code>Công khai</code> + <code>Mới</code></td>
+<td>Xem, sửa, xóa, đóng, comment</td>
+<td>Xem và comment</td>
+</tr>
+<tr>
+<td>Ghi chú <code>Riêng tư</code> + <code>Mới</code></td>
+<td>Xem, sửa, xóa, đóng, comment</td>
+<td>Không nhìn thấy và không truy cập được</td>
+</tr>
+<tr>
+<td>Ghi chú <code>Công khai</code> + <code>Đóng</code></td>
+<td>Xem, sửa, xóa, mở lại; không comment khi đang đóng</td>
+<td>Không nhìn thấy và không truy cập được</td>
+</tr>
+<tr>
+<td>Ghi chú <code>Riêng tư</code> + <code>Đóng</code></td>
+<td>Xem, sửa, xóa, mở lại; không comment khi đang đóng</td>
+<td>Không nhìn thấy và không truy cập được</td>
+</tr>
+</tbody>
+</table></div>
+<ul>
+<li>Chỉ owner được cập nhật tiêu đề, nội dung, loại, độ ưu tiên và trạng thái; chỉ owner được xóa ghi chú.</li>
+<li>Chỉ owner được đóng ghi chú và mở lại ghi chú đã đóng.</li>
+<li>Ghi chú đã đóng chỉ owner được xem; quy tắc này áp dụng cả khi Loại đang là <code>Công khai</code>.</li>
+<li>Người không phải owner chỉ được xem và comment ghi chú <code>Công khai</code> đang <code>Mới</code>.</li>
+<li>Backend phải áp dụng điều kiện quyền và tính riêng tư trước khi trả dữ liệu; không chỉ ẩn thao tác ở UI.</li>
+</ul>
+<p><strong>Quy tắc bình luận:</strong></p>
+<ul>
+<li>Ghi chú đang <code>Mới</code> cho phép những người có quyền xem thêm bình luận.</li>
+<li>Ghi chú đang <code>Đóng</code> không cho bất kỳ người dùng nào thêm, sửa hoặc xóa bình luận; owner phải mở lại ghi chú trước khi thao tác với bình luận.</li>
+<li>Mỗi bình luận hiển thị avatar, tên người comment và thời gian tạo đầy đủ ngày, tháng, năm, giờ, phút.</li>
+<li>Chỉ người tạo bình luận được sửa hoặc xóa bình luận của mình.</li>
+<li>Owner ghi chú không được sửa hoặc xóa bình luận của người khác.</li>
+<li>Sửa bình luận không thay đổi người tạo; thời gian cập nhật và cách đánh dấu bình luận đã sửa cần xác nhận tại mục 3.</li>
+<li>Comment mới nhất được xác định theo thời gian tạo comment. Avatar và thời gian ở bên phải card phải cập nhật theo comment mới nhất còn tồn tại.</li>
+<li>Nếu comment mới nhất bị xóa, metadata bên phải phải quay về comment mới nhất còn lại; nếu không còn comment thì không hiển thị avatar/thời gian comment cuối.</li>
+</ul>
+<p><strong>Bộ lọc:</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Bộ lọc</th>
+<th>Giá trị và quy tắc</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Loại</td>
+<td><code>Công khai</code>, <code>Riêng tư</code>; trạng thái không chọn giá trị không giới hạn theo Loại. Kết quả vẫn phải tuân thủ quyền riêng tư.</td>
+</tr>
+<tr>
+<td>Độ ưu tiên</td>
+<td><code>Bình thường</code>, <code>Quan trọng</code>, <code>Rất quan trọng</code>; trạng thái không chọn giá trị không giới hạn theo độ ưu tiên.</td>
+</tr>
+<tr>
+<td>Trạng thái ghi chú</td>
+<td><code>Mới</code>, <code>Đóng</code>; trạng thái không chọn giá trị không giới hạn theo trạng thái. Ghi chú đóng vẫn chỉ owner được nhận trong kết quả.</td>
+</tr>
+<tr>
+<td>Thời gian</td>
+<td>Mặc định <code>Hôm nay</code>; lọc theo thời gian tạo ghi chú (<code>created_at</code>) trong múi giờ nghiệp vụ.</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Khoảng thời gian:</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Giá trị</th>
+<th>Phạm vi bao gồm</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Tới hạn</code></td>
+<td>Từ thời điểm bắt đầu lưu dữ liệu của hệ thống đến hết ngày hôm nay.</td>
+</tr>
+<tr>
+<td><code>Hôm nay</code></td>
+<td>Từ đầu ngày đến hết ngày hôm nay; là giá trị mặc định.</td>
+</tr>
+<tr>
+<td><code>Hôm qua</code></td>
+<td>Toàn bộ ngày liền trước hôm nay.</td>
+</tr>
+<tr>
+<td><code>Hôm nay và hôm qua</code></td>
+<td>Hợp của toàn bộ ngày hôm qua và ngày hôm nay.</td>
+</tr>
+<tr>
+<td><code>Tuần này</code></td>
+<td>Từ đầu Thứ 2 đến hết Chủ Nhật của tuần hiện tại.</td>
+</tr>
+<tr>
+<td><code>Tuần trước</code></td>
+<td>Từ đầu Thứ 2 đến hết Chủ Nhật của tuần liền trước.</td>
+</tr>
+<tr>
+<td><code>Tháng này</code></td>
+<td>Từ ngày đầu đến ngày cuối của tháng hiện tại.</td>
+</tr>
+<tr>
+<td><code>Tháng trước</code></td>
+<td>Từ ngày đầu đến ngày cuối của tháng liền trước.</td>
+</tr>
+<tr>
+<td><code>3 tháng trước</code></td>
+<td>Từ đầu ngày cách ngày hiện tại ba tháng đến thời điểm hiện tại.</td>
+</tr>
+<tr>
+<td><code>Năm nay</code></td>
+<td>Từ ngày 01/01 đến ngày 31/12 của năm hiện tại.</td>
+</tr>
+<tr>
+<td><code>Năm trước</code></td>
+<td>Từ ngày 01/01 đến ngày 31/12 của năm liền trước.</td>
+</tr>
+<tr>
+<td><code>Tùy chọn</code></td>
+<td>Người dùng chọn ngày bắt đầu và ngày kết thúc; bao gồm toàn bộ hai ngày biên.</td>
+</tr>
+</tbody>
+</table></div>
+<ul>
+<li>Các bộ lọc Loại, Độ ưu tiên, Trạng thái và Thời gian kết hợp theo AND.</li>
+<li>Thay đổi bất kỳ bộ lọc nào phải tải lại danh sách từ trang đầu và giữ nguyên các giá trị lọc còn lại.</li>
+<li>Điều kiện lọc không được làm lộ ghi chú riêng tư, ghi chú đóng hoặc dữ liệu ngoài phạm vi mà người dùng không có quyền xem.</li>
+<li>Chỉ response của tổ hợp bộ lọc mới nhất được phép cập nhật danh sách.</li>
+<li>Mỗi trang hiển thị tối đa 10 ghi chú sau khi áp dụng quyền riêng tư, trạng thái sở hữu và toàn bộ bộ lọc.</li>
+<li>Phân trang hiển thị khoảng dữ liệu đang xem, tổng số kết quả người dùng được phép xem, trang hiện tại, nút <code>Trước</code>, các số trang, dấu <code>...</code> khi cần và nút <code>Sau</code>; số lượng tổng không được làm lộ ghi chú Riêng tư/Đóng của người khác.</li>
+<li><code>Trước</code> bị vô hiệu hóa ở trang đầu; <code>Sau</code> bị vô hiệu hóa ở trang cuối. Chuyển trang giữ nguyên toàn bộ bộ lọc đang áp dụng.</li>
+<li>Sau khi tạo ghi chú thành công, danh sách trở về trang đầu để hiển thị bản ghi mới. Cập nhật/đóng/mở giữ trang nếu bản ghi vẫn phù hợp bộ lọc; nếu thao tác làm trang hiện tại không còn hợp lệ, chuyển đến trang hợp lệ gần nhất.</li>
+<li>Khi chuyển trang hoặc đổi filter liên tục, chỉ response của trang và tổ hợp filter mới nhất được phép cập nhật danh sách; không lặp hoặc bỏ sót ghi chú giữa các trang.</li>
+</ul>
+<p><strong>Thao tác dữ liệu:</strong></p>
+<ul>
+<li>Ô gõ nhanh ở cuối tab tạo ghi chú mới với Nội dung đã gõ, Loại và Độ ưu tiên đã chọn, Tiêu đề trống; ghi chú mới tự nhận trạng thái <code>Mới</code> và owner là người dùng hiện tại. Tiêu đề, Nội dung, Loại, Độ ưu tiên sửa sau qua <code>Sửa</code> trong menu <code>⋮</code>.</li>
+<li>Tạo, cập nhật, xóa, đóng/mở ghi chú và tạo, cập nhật, xóa bình luận thành công hoặc thất bại đều phải có đúng một notification kết quả theo REQ06.</li>
+<li>Xóa ghi chú phải có bước xác nhận và không được xóa dữ liệu giáo viên hoặc ghi chú khác.</li>
+<li>Request thay đổi phải chống gửi lặp; backend phải kiểm tra lại role, phạm vi, owner, trạng thái và quyền xem tại thời điểm xử lý.</li>
+</ul>
+<h4 id="testcase-tab-ghi-chu">Testcase — Tab Ghi chú</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 53: Xem ghi chú Công khai đang Mới</td>
+<td>High</td>
+<td>Smoke</td>
+<td>Flow 7 / REQ08</td>
+<td>Admin / Class Handler / Support</td>
+<td>Có ghi chú Công khai đang Mới do nhiều người tạo</td>
+<td><strong>Given</strong> người dùng có quyền với giáo viên<br><strong>When</strong> mở tab Ghi chú<br><strong>Then</strong> hệ thống hiển thị ghi chú công khai đang Mới</td>
+<td>- Hiển thị tiêu đề, nội dung, loại, ưu tiên, trạng thái, owner và thời gian tạo<br>- Không trộn dữ liệu giáo viên khác</td>
+</tr>
+<tr>
+<td>Case 54: Bảo vệ ghi chú Riêng tư</td>
+<td>High</td>
+<td></td>
+<td>EX14 / REQ08</td>
+<td>Admin / Class Handler / Support</td>
+<td>Có ghi chú Riêng tư của người dùng hiện tại và người khác</td>
+<td><strong>Given</strong> người dùng mở danh sách hoặc gọi API trực tiếp<br><strong>When</strong> hệ thống xác định owner<br><strong>Then</strong> chỉ trả ghi chú Riêng tư của chính người dùng</td>
+<td>- Owner xem được ghi chú của mình<br>- Người khác không thấy và không truy cập được bằng ID<br>- Bộ lọc Riêng tư không làm lộ dữ liệu</td>
+</tr>
+<tr>
+<td>Case 55: Ghi chú Đóng chỉ owner được xem và mở lại</td>
+<td>High</td>
+<td></td>
+<td>Flow 7 / REQ08</td>
+<td>Admin / Class Handler / Support</td>
+<td>Có ghi chú đã Đóng</td>
+<td><strong>Given</strong> owner và người khác cùng truy cập tab Ghi chú<br><strong>When</strong> xem hoặc owner chọn mở lại<br><strong>Then</strong> áp dụng đúng quyền trạng thái</td>
+<td>- Chỉ owner xem được khi Đóng<br>- Không ai comment khi Đóng<br>- Chỉ owner mở lại được<br>- Sau khi mở lại, quyền xem/comment áp dụng theo Loại</td>
+</tr>
+<tr>
+<td>Case 56: Tạo ghi chú bằng ô gõ nhanh</td>
+<td>High</td>
+<td></td>
+<td>Flow 7 / REQ08 / REQ06</td>
+<td>Admin / Class Handler / Support</td>
+<td>Tab Ghi chú đã tải</td>
+<td><strong>Given</strong> người dùng gõ nội dung vào ô gõ nhanh, chọn Loại/Độ ưu tiên<br><strong>When</strong> nhấn <code>Enter</code> hoặc nút gửi<br><strong>Then</strong> hệ thống tạo ghi chú cho đúng giáo viên</td>
+<td>- Owner lấy từ tài khoản đăng nhập<br>- Tiêu đề trống, card hiện dòng đầu nội dung<br>- Trạng thái mặc định Mới<br>- Mặc định Loại Công khai và Độ ưu tiên Bình thường nếu không đổi<br>- Hiển thị đúng một notification thành công</td>
+</tr>
+<tr>
+<td>Case 57: Validation nội dung ghi chú và comment</td>
+<td>High</td>
+<td></td>
+<td>EX15 / REQ08 / REQ09</td>
+<td>Admin / Class Handler / Support</td>
+<td>Form tạo/cập nhật ghi chú hoặc ô comment đang Mới</td>
+<td><strong>Given</strong> Nội dung ghi chú (ô gõ nhanh hoặc popup Sửa) hoặc Nội dung comment đang rỗng/chỉ có khoảng trắng<br><strong>When</strong> xác nhận thao tác<br><strong>Then</strong> hệ thống từ chối lưu</td>
+<td>- Hiển thị lỗi tại trường liên quan và notification thất bại<br>- Không tạo/cập nhật bản ghi không hợp lệ<br>- Giữ dữ liệu để chỉnh sửa</td>
+</tr>
+<tr>
+<td>Case 58: Owner cập nhật ghi chú</td>
+<td>High</td>
+<td></td>
+<td>Flow 7 / REQ08 / REQ06</td>
+<td>Admin / Class Handler / Support</td>
+<td>Người dùng hiện tại là owner</td>
+<td><strong>Given</strong> owner thay đổi tiêu đề, nội dung, loại hoặc độ ưu tiên<br><strong>When</strong> xác nhận cập nhật<br><strong>Then</strong> hệ thống lưu thay đổi</td>
+<td>- Không thay đổi owner hoặc thời gian tạo<br>- Quyền xem mới có hiệu lực ngay theo Loại/Trạng thái<br>- Hiển thị đúng một notification thành công</td>
+</tr>
+<tr>
+<td>Case 59: Owner xóa ghi chú</td>
+<td>High</td>
+<td></td>
+<td>Flow 7 / REQ08 / REQ06</td>
+<td>Admin / Class Handler / Support</td>
+<td>Người dùng hiện tại là owner</td>
+<td><strong>Given</strong> owner chọn xóa ghi chú<br><strong>When</strong> xác nhận xóa<br><strong>Then</strong> hệ thống xóa đúng ghi chú</td>
+<td>- Không xóa ghi chú khác hoặc dữ liệu giáo viên<br>- Không còn truy cập được ghi chú đã xóa<br>- Hiển thị đúng một notification thành công</td>
+</tr>
+<tr>
+<td>Case 60: Người khác không được quản lý ghi chú</td>
+<td>High</td>
+<td></td>
+<td>EX16 / REQ08</td>
+<td>Admin / Class Handler / Support</td>
+<td>Ghi chú Công khai đang Mới do người khác tạo</td>
+<td><strong>Given</strong> người dùng không phải owner<br><strong>When</strong> xem UI hoặc gọi API sửa/xóa/đóng/mở<br><strong>Then</strong> hệ thống chỉ cho xem và comment</td>
+<td>- UI không hiển thị thao tác quản lý<br>- Backend từ chối request trái quyền<br>- Ghi chú không thay đổi</td>
+</tr>
+<tr>
+<td>Case 61: Thêm comment vào ghi chú đang Mới</td>
+<td>High</td>
+<td></td>
+<td>Flow 8 / REQ09 / REQ06</td>
+<td>Admin / Class Handler / Support</td>
+<td>Người dùng được xem ghi chú đang Mới</td>
+<td><strong>Given</strong> người dùng nhập comment hợp lệ<br><strong>When</strong> gửi comment<br><strong>Then</strong> hệ thống thêm comment</td>
+<td>- Hiển thị đúng người, ngày, tháng, năm và thời gian<br>- Số lượng comment tăng<br>- Metadata comment cuối bên phải cập nhật avatar và thời gian mới<br>- Hiển thị đúng một notification thành công</td>
+</tr>
+<tr>
+<td>Case 62: Người comment sửa/xóa comment của mình</td>
+<td>High</td>
+<td></td>
+<td>Flow 8 / REQ09 / REQ06</td>
+<td>Admin / Class Handler / Support</td>
+<td>Người dùng là người tạo comment và ghi chú đang Mới</td>
+<td><strong>Given</strong> người dùng chọn sửa hoặc xóa comment của mình<br><strong>When</strong> xác nhận thao tác<br><strong>Then</strong> hệ thống cập nhật đúng comment</td>
+<td>- Không thay đổi comment khác<br>- Metadata comment cuối được tính lại nếu cần<br>- Hiển thị đúng một notification kết quả</td>
+</tr>
+<tr>
+<td>Case 63: Owner ghi chú không được xóa comment người khác</td>
+<td>High</td>
+<td></td>
+<td>EX17 / REQ09</td>
+<td>Admin / Class Handler / Support</td>
+<td>Owner ghi chú không phải người tạo comment</td>
+<td><strong>Given</strong> owner xem comment của người khác<br><strong>When</strong> kiểm tra UI hoặc gọi API sửa/xóa comment<br><strong>Then</strong> hệ thống từ chối</td>
+<td>- Không hiển thị thao tác sửa/xóa comment đó<br>- Backend từ chối request<br>- Comment không thay đổi</td>
+</tr>
+<tr>
+<td>Case 64: Ghi chú Đóng chặn mọi thao tác comment</td>
+<td>High</td>
+<td></td>
+<td>EX18 / REQ09</td>
+<td>Admin / Class Handler / Support</td>
+<td>Ghi chú đang Đóng và có comment cũ</td>
+<td><strong>Given</strong> owner đang xem ghi chú Đóng<br><strong>When</strong> thử thêm/sửa/xóa comment<br><strong>Then</strong> hệ thống từ chối cho đến khi ghi chú được mở lại</td>
+<td>- Comment cũ chỉ đọc<br>- Không có dữ liệu comment bị thay đổi<br>- API trực tiếp cũng bị từ chối</td>
+</tr>
+<tr>
+<td>Case 65: Hiển thị người và thời gian đầy đủ</td>
+<td>High</td>
+<td></td>
+<td>REQ08 / REQ09</td>
+<td>Admin / Class Handler / Support</td>
+<td>Ghi chú có nhiều comment</td>
+<td><strong>Given</strong> dữ liệu có owner, người comment và timestamp khác nhau<br><strong>When</strong> card và danh sách comment hiển thị<br><strong>Then</strong> hệ thống hiển thị đúng metadata</td>
+<td>- Ghi chú có avatar/tên owner và ngày–tháng–năm–giờ–phút tạo<br>- Mỗi comment có avatar/tên người comment và timestamp<br>- Bên phải card dùng đúng avatar/timestamp comment mới nhất</td>
+</tr>
+<tr>
+<td>Case 66: Lọc theo Loại, Độ ưu tiên và Trạng thái</td>
+<td>High</td>
+<td></td>
+<td>Flow 7 / REQ08</td>
+<td>Admin / Class Handler / Support</td>
+<td>Có dữ liệu thuộc nhiều loại, ưu tiên và trạng thái</td>
+<td><strong>Given</strong> người dùng chọn một hoặc nhiều điều kiện lọc<br><strong>When</strong> hệ thống tải kết quả<br><strong>Then</strong> áp dụng giao các điều kiện</td>
+<td>- Chỉ trả dữ liệu phù hợp và người dùng có quyền xem<br>- Ghi chú đóng/riêng tư của người khác không xuất hiện<br>- Giữ các filter còn lại</td>
+</tr>
+<tr>
+<td>Case 67: Filter thời gian mặc định Hôm nay</td>
+<td>High</td>
+<td></td>
+<td>Flow 7 / REQ08</td>
+<td>Admin / Class Handler / Support</td>
+<td>Có ghi chú tạo hôm nay và ngày khác</td>
+<td><strong>Given</strong> người dùng mở tab lần đầu<br><strong>When</strong> danh sách tải<br><strong>Then</strong> filter thời gian mặc định là Hôm nay</td>
+<td>- Lọc theo <code>created_at</code> từ đầu ngày đến hết ngày hôm nay<br>- Không dùng thời gian update hoặc comment cuối<br>- Đúng múi giờ nghiệp vụ</td>
+</tr>
+<tr>
+<td>Case 68: Filter Tới hạn và các khoảng thời gian định sẵn</td>
+<td>High</td>
+<td></td>
+<td>Flow 7 / REQ08</td>
+<td>Admin / Class Handler / Support</td>
+<td>Có ghi chú tại các mốc biên</td>
+<td><strong>Given</strong> người dùng lần lượt chọn Tới hạn, Hôm qua, Hôm nay và hôm qua, tuần/tháng/năm hiện tại hoặc trước đó, 3 tháng trước<br><strong>When</strong> danh sách tải<br><strong>Then</strong> hệ thống áp dụng đúng khoảng thời gian theo <code>created_at</code></td>
+<td>- Tới hạn lấy từ đầu hệ thống đến hết hôm nay<br>- Bao gồm đầy đủ các mốc biên<br>- Không dùng thời gian update/comment để lọc</td>
+</tr>
+<tr>
+<td>Case 69: Filter thời gian Tùy chọn</td>
+<td>High</td>
+<td></td>
+<td>Flow 7 / REQ08</td>
+<td>Admin / Class Handler / Support</td>
+<td>Có dữ liệu trong và ngoài khoảng chọn</td>
+<td><strong>Given</strong> người dùng chọn ngày bắt đầu và kết thúc hợp lệ<br><strong>When</strong> áp dụng filter Tùy chọn<br><strong>Then</strong> hệ thống lọc theo <code>created_at</code> trong khoảng</td>
+<td>- Bao gồm toàn bộ hai ngày biên<br>- Từ chối ngày bắt đầu sau ngày kết thúc<br>- Giữ các filter khác</td>
+</tr>
+<tr>
+<td>Case 70: Tải hoặc thay đổi bộ lọc thất bại</td>
+<td>High</td>
+<td></td>
+<td>EX19 / EX20 / REQ08</td>
+<td>Admin / Class Handler / Support</td>
+<td>API lỗi, hết thời gian chờ hoặc response trả sai thứ tự</td>
+<td><strong>Given</strong> người dùng mở tab hoặc đổi filter liên tục<br><strong>When</strong> request thất bại hoặc request cũ trả về sau<br><strong>Then</strong> hệ thống giữ đúng ngữ cảnh mới nhất</td>
+<td>- Không coi lỗi là danh sách rỗng<br>- Response cũ không ghi đè kết quả mới<br>- Không làm lộ ghi chú không có quyền<br>- Cho phép thử lại</td>
+</tr>
+<tr>
+<td>Case 71: Phân trang danh sách ghi chú</td>
+<td>High</td>
+<td></td>
+<td>Flow 7 / REQ08</td>
+<td>Admin / Class Handler / Support</td>
+<td>Có hơn 10 ghi chú mà người dùng được phép xem và phù hợp bộ lọc</td>
+<td><strong>Given</strong> danh sách Ghi chú đang có nhiều trang<br><strong>When</strong> người dùng chọn số trang, <code>Trước</code> hoặc <code>Sau</code><br><strong>Then</strong> hệ thống tải đúng tối đa 10 ghi chú của trang được chọn</td>
+<td>- Hiển thị đúng khoảng dữ liệu, tổng kết quả được phép xem và trang hiện tại<br>- Giữ nguyên filter khi chuyển trang; đổi filter về trang đầu<br>- <code>Trước</code>/<code>Sau</code> vô hiệu hóa đúng ở trang biên<br>- Không lộ số lượng ghi chú Riêng tư/Đóng của người khác<br>- Tạo mới về trang đầu; thao tác làm trang không hợp lệ chuyển đến trang hợp lệ gần nhất<br>- Chỉ response mới nhất được hiển thị</td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h3 id="toast-phan-hoi-crud">Toast phản hồi CRUD</h3>
+<p align="center">
+  <a href="../../images/01-toast-crud.png"><img src="../../images/01-toast-crud.png" alt="Bốn trạng thái Toast CRUD" width="520" title="Nhấn để xem ảnh gốc"></a><br>
+  <em>Toast phản hồi Create, Update, Delete và đổi trạng thái — nhấn để xem ảnh gốc</em>
+</p>
+
+<p><strong>Mô tả:</strong> Toast phản hồi kết quả các thao tác thay đổi dữ liệu trong requirement này.</p>
+<p><strong>Giải thích thành phần:</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Loại</th>
+<th>Tiêu đề</th>
+<th>Khi sử dụng</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Thành công</td>
+<td><code>Thành Công</code></td>
+<td>Backend xác nhận thao tác thành công.</td>
+</tr>
+<tr>
+<td>Thông tin</td>
+<td><code>Thông Báo</code></td>
+<td>Thao tác đã tiếp nhận nhưng dữ liệu cần thời gian đồng bộ.</td>
+</tr>
+<tr>
+<td>Cảnh báo</td>
+<td><code>Cảnh Báo</code></td>
+<td>Dữ liệu/điều kiện cần người dùng kiểm tra.</td>
+</tr>
+<tr>
+<td>Lỗi</td>
+<td><code>Có Lỗi Xảy Ra</code></td>
+<td>Backend/network không hoàn tất thao tác.</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Điểm cần lưu ý:</strong> Nội dung dòng hai lấy từ flow CRUD tương ứng; mỗi thao tác chỉ có một Toast; Hủy/chỉ đọc không có Toast CRUD; nút <code>×</code> đóng thủ công; không hiển thị dữ liệu nhạy cảm.</p>
+<h4 id="testcase-toast-phan-hoi-crud">Testcase — Toast phản hồi CRUD</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Toast Case 1: Thành công</td>
+<td>High</td>
+<td></td>
+<td>Ràng buộc Toast CRUD</td>
+<td>Role có quyền CRUD</td>
+<td>Dữ liệu hợp lệ</td>
+<td><strong>Given</strong> người dùng xác nhận thay đổi<br><strong>When</strong> backend thành công<br><strong>Then</strong> hiển thị Toast <code>Thành Công</code></td>
+<td>- Đúng nội dung nghiệp vụ<br>- Đúng một Toast<br>- Chỉ hiện sau khi backend xác nhận</td>
+</tr>
+<tr>
+<td>Toast Case 2: Cảnh báo</td>
+<td>High</td>
+<td></td>
+<td>Ràng buộc Toast CRUD</td>
+<td>Role có quyền CRUD</td>
+<td>Dữ liệu/điều kiện chưa hợp lệ</td>
+<td><strong>Given</strong> thao tác chưa đủ điều kiện<br><strong>When</strong> người dùng xác nhận<br><strong>Then</strong> hiển thị Toast <code>Cảnh Báo</code> nếu flow có Toast validation</td>
+<td>- Không lưu dữ liệu sai<br>- Vẫn đánh dấu field lỗi<br>- Không hiện thành công</td>
+</tr>
+<tr>
+<td>Toast Case 3: Lỗi</td>
+<td>High</td>
+<td></td>
+<td>Ràng buộc Toast CRUD</td>
+<td>Role có quyền CRUD</td>
+<td>Backend/network lỗi</td>
+<td><strong>Given</strong> request hợp lệ đã gửi<br><strong>When</strong> xử lý thất bại<br><strong>Then</strong> hiển thị Toast <code>Có Lỗi Xảy Ra</code></td>
+<td>- Không cập nhật một phần<br>- Cho phép thử lại<br>- Không lộ lỗi kỹ thuật</td>
+</tr>
+<tr>
+<td>Toast Case 4: Thông tin, đóng và chống lặp</td>
+<td>Medium</td>
+<td></td>
+<td>Ràng buộc Toast CRUD</td>
+<td>Role có quyền CRUD</td>
+<td>Đang đồng bộ hoặc Toast đang hiển thị</td>
+<td><strong>Given</strong> thao tác xử lý bất đồng bộ hoặc callback lặp<br><strong>When</strong> UI nhận trạng thái hoặc người dùng bấm <code>×</code><br><strong>Then</strong> hiển thị tối đa một Toast <code>Thông Báo</code> và cho đóng thủ công</td>
+<td>- Không báo thành công sớm<br>- Không nhân đôi Toast<br>- Đóng không hoàn tác dữ liệu</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="2-yeu-cau">2. Yêu cầu</h2>
+<h3 id="21-flow-chinh">2.1. Flow chính</h3>
+<p><strong>Flow 1 / REQ01: Xem chi tiết giáo viên</strong></p>
+<pre><code class="language-text">Admin mở chi tiết của một giáo viên
+      → Hệ thống kiểm tra quyền, định danh và phạm vi dữ liệu
+      → Hệ thống tải đúng hồ sơ giáo viên
+      → Thành công: mở tab Thông tin cá nhân; Mã giáo viên và Email bị khóa
+      → Thất bại: hiển thị lỗi; không hiển thị dữ liệu của giáo viên khác
+</code></pre>
+<p><strong>Flow 2 / REQ02: Cập nhật Thông tin cá nhân</strong></p>
+<pre><code class="language-text">Admin cập nhật một hoặc nhiều trường cho phép chỉnh sửa
+      → Không bắt buộc nhập lại bất kỳ trường nào khác
+      → Hệ thống validation dữ liệu/tệp được cung cấp
+      → Admin chọn Cập nhật tài khoản
+      → Thành công: lưu toàn bộ thay đổi, cập nhật ghi chú tổng quan tại danh sách và hiển thị notification thành công
+      → Thất bại: không hiển thị dữ liệu như đã lưu, giữ dữ liệu phù hợp để sửa và hiển thị notification thất bại
+</code></pre>
+<p><strong>Flow 3 / REQ03: Lấy lại mật khẩu giáo viên</strong></p>
+<pre><code class="language-text">Admin chọn Lấy lại mật khẩu
+      → Backend xác định đúng tài khoản giáo viên
+      → Reset mật khẩu về abc12345 và lưu theo cơ chế bảo mật
+      → Thành công: hiển thị notification thành công
+      → Thất bại: giữ mật khẩu cũ và hiển thị notification thất bại
+</code></pre>
+<p><strong>Flow 4 / REQ04: Chuyển giáo viên sang Nghỉ việc</strong></p>
+<pre><code class="language-text">Admin chọn Trạng thái = Nghỉ việc → Cập nhật tài khoản
+      → Hệ thống cập nhật trạng thái giáo viên
+      → Khóa quyền đăng nhập
+      → Loại giáo viên khỏi lịch đăng ký và các lớp đang dạy
+      → Giữ hồ sơ, dữ liệu lịch sử và log; không xóa cứng
+      → Thành công/thất bại hiển thị notification tương ứng
+</code></pre>
+<p><strong>Flow 5 / REQ05: Xem lịch dạy theo tuần</strong></p>
+<pre><code class="language-text">Admin mở tab Lịch dạy
+      → Hệ thống mặc định chọn tuần chứa ngày hiện tại và chỉ tải buổi dạy của đúng giáo viên
+      → Admin có thể chuyển tuần bằng mũi tên hoặc chọn tuần từ danh sách
+      → Hệ thống hiển thị bảy ngày từ Thứ 2 đến Chủ Nhật và đánh dấu ngày hiện tại nếu thuộc tuần đang xem
+      → Nếu bật Theo Lớp: nhóm buổi dạy theo lớp, mỗi lớp có đủ bảy ô ngày
+      → Nếu tắt Theo Lớp: gom buổi dạy theo ngày và sắp xếp tăng dần theo giờ bắt đầu
+      → Ngày/ô không có buổi là ô trống nét đứt; màu card theo mốc thời gian (đã dạy / hôm nay / sắp dạy)
+      → Hàng chip cạnh thanh tuần tóm tắt lịch đăng ký của giáo viên, chỉ đọc
+      → Không có thao tác thêm, sửa hoặc xóa lịch
+</code></pre>
+<p><strong>Flow 6 / REQ07: Xem log hệ thống của giáo viên</strong></p>
+<pre><code class="language-text">Admin, Class Handler hoặc Support mở tab Log
+      → Hệ thống tải log tự ghi của đúng giáo viên, sắp xếp mới nhất trước, tối đa 10 log/trang
+      → Người dùng tìm theo mã lớp, lọc Đối tượng (Hệ thống / người dùng) và Thời gian; điều kiện kết hợp AND
+      → Người dùng mở rộng / thu gọn mô tả dài, bấm ⋯ → Xem chi tiết
+      → Không có thao tác tạo, sửa, xóa log; API thay đổi log bị từ chối
+      → Mỗi thao tác thay đổi dữ liệu thành công ở các tab khác sinh đúng một dòng log với Đối tượng là người thao tác
+</code></pre>
+<p><strong>Flow 7 / REQ08: Xem, lọc và quản lý ghi chú</strong></p>
+<pre><code class="language-text">Admin, Class Handler hoặc Support mở tab Ghi chú
+      → Hệ thống áp dụng quyền trước khi trả dữ liệu: Công khai + Mới cho các role được cấp; Riêng tư hoặc Đóng chỉ cho owner
+      → Hệ thống mặc định lọc created_at theo Hôm nay
+      → Người dùng có thể kết hợp Loại, Độ ưu tiên, Trạng thái và Thời gian
+      → Mỗi trang tối đa 10 ghi chú được phép xem; chuyển trang giữ filter, đổi filter trở về trang đầu
+      → Người dùng gõ nhanh nội dung ở ô cuối tab, chọn Loại / Độ ưu tiên, nhấn Enter để tạo; Tiêu đề sửa sau qua Sửa
+      → Owner có thể sửa, xóa, đóng hoặc mở lại ghi chú của mình
+      → Người không phải owner chỉ được xem và comment ghi chú Công khai đang Mới
+      → Mọi request thay đổi được backend kiểm tra lại role, phạm vi, owner và trạng thái
+</code></pre>
+<p><strong>Flow 8 / REQ09: Bình luận ghi chú</strong></p>
+<pre><code class="language-text">Người dùng mở phần bình luận của ghi chú đang Mới mà mình có quyền xem
+      → Hệ thống hiển thị từng comment kèm người tạo và thời gian đầy đủ
+      → Người dùng thêm comment; metadata comment cuối trên card được cập nhật
+      → Người tạo comment có thể sửa/xóa comment của mình khi ghi chú vẫn Mới
+      → Owner ghi chú không được sửa/xóa comment của người khác
+      → Khi ghi chú Đóng: toàn bộ comment chỉ đọc và chỉ owner ghi chú còn xem được
+      → Khi xóa comment cuối: hệ thống tính lại avatar/thời gian comment mới nhất còn lại
+</code></pre>
+<p><strong>Flow 9 / REQ10: Cập nhật lịch đăng ký của giáo viên</strong></p>
+<pre><code class="language-text">Admin, Class Handler hoặc Support mở tab Quản lý đăng ký lịch
+      → Hệ thống tải đúng lịch đăng ký hiện hành của giáo viên theo lưới 3 buổi × Thứ 2–Chủ Nhật (khung giờ, ghi chú từng ô, ghi chú chung, Fulltime)
+      → Tick ô trống → popup Đăng ký khung giờ (mốc 30 phút trong khung buổi, ghi chú) → Xác nhận lưu tạm vào ô
+      → Bỏ tick ô = gỡ buổi; tick Fulltime = chọn đủ 21 ô trọn buổi
+      → Chọn Cập nhật
+      → Backend kiểm tra role, phạm vi, phiên bản dữ liệu và cùng validation với chức năng phía giáo viên
+      → Thành công: lưu atomically toàn bộ tập ca, ghi nhận actor thực tế, cập nhật dữ liệu danh sách và hiển thị notification thành công
+      → Thất bại/xung đột: không ghi đè dữ liệu mới hơn, giữ lựa chọn phù hợp để thử lại và hiển thị notification thất bại
+</code></pre>
+<p><strong>Flow 10 / REQ11: Xem lớp và cập nhật lương giáo viên theo lớp</strong></p>
+<pre><code class="language-text">Admin, Class Handler hoặc Support mở tab Danh sách lớp
+      → Hệ thống kiểm tra role, phạm vi giáo viên và chỉ tải các lớp đã thêm giáo viên này
+      → Hệ thống hiển thị Trạng thái, Mã lớp, Khóa học, Đánh giá, KPI lớp và Lương giáo viên theo giờ của từng quan hệ
+      → Người dùng có thể tìm theo Mã lớp/Tên khóa học và kết hợp filter Loại lớp, Khóa học, Trạng thái, Thời gian tạo lớp
+      → Mỗi trang tối đa 10 lớp; chuyển trang giữ từ khóa/filter, đổi từ khóa/filter trở về trang đầu
+      → Người dùng click nút lương/icon bút để mở popup Chỉnh Sửa Lương của đúng lớp
+      → Hủy: đóng popup, không gửi request và không thay đổi dữ liệu
+      → Xác Nhận: nhập số nguyên VNĐ/giờ không âm, backend kiểm tra và gửi đúng một request
+      → Backend kiểm tra role, phạm vi lớp, quan hệ giáo viên–lớp và phiên bản dữ liệu
+      → Thành công: chỉ cập nhật lương của đúng quan hệ, ghi nhận actor/thời gian và hiển thị notification thành công
+      → Thất bại/xung đột: giữ giá trị đã lưu, không ghi đè dữ liệu mới hơn và hiển thị notification thất bại
+</code></pre>
+<h3 id="22-ngoai-le">2.2. Ngoại lệ</h3>
+<ul>
+<li><strong>EX01:</strong> Giáo viên không tồn tại hoặc không còn thuộc phạm vi của người dùng hiện tại → từ chối hiển thị, không dùng dữ liệu của giáo viên khác thay thế.</li>
+<li><strong>EX02:</strong> Tải chi tiết thất bại hoặc hết thời gian chờ → hiển thị lỗi và cho phép thử lại; không hiển thị form với dữ liệu cũ như dữ liệu hiện tại.</li>
+<li><strong>EX03:</strong> Số điện thoại sai định dạng hoặc ảnh đại diện lớn hơn 25 MB → không gửi/lưu dữ liệu không hợp lệ, hiển thị lỗi tại trường và notification thất bại.</li>
+<li><strong>EX04:</strong> Cập nhật Thông tin cá nhân hoặc reset mật khẩu thất bại → không hiển thị thành công giả; dữ liệu đã lưu trước đó và mật khẩu cũ không bị thay đổi.</li>
+<li><strong>EX05:</strong> Client gửi yêu cầu sửa Mã giáo viên hoặc Email → backend bỏ qua hoặc từ chối thay đổi và giữ nguyên hai giá trị đã khóa.</li>
+<li><strong>EX06:</strong> Admin chuyển tab hoặc quay lại khi có thay đổi chưa lưu → hiển thị cảnh báo; chỉ rời màn hình sau khi Admin xác nhận bỏ thay đổi.</li>
+<li><strong>EX07:</strong> Giáo viên không có buổi dạy trong tuần được chọn → hiển thị lưới trống (ô nét đứt) đúng theo chế độ; không tái sử dụng dữ liệu tuần hoặc giáo viên khác.</li>
+<li><strong>EX08:</strong> Tải lịch dạy thất bại hoặc hết thời gian chờ → hiển thị lỗi và cho phép thử lại; không dùng lịch đăng ký hoặc dữ liệu cũ thay thế.</li>
+<li><strong>EX09:</strong> Admin đổi tuần/chế độ khi request cũ chưa hoàn tất → chỉ response của điều kiện mới nhất được phép cập nhật lịch.</li>
+<li><strong>EX10:</strong> Client gửi request tạo, sửa hoặc xóa log → backend từ chối; log là dữ liệu bất biến và không thay đổi.</li>
+<li><strong>EX11:</strong> Không có log phù hợp với từ khóa, Đối tượng hoặc Thời gian đang chọn → hiển thị trạng thái không có dữ liệu và giữ điều kiện để chỉnh sửa.</li>
+<li><strong>EX12:</strong> Ghi log thất bại sau một thao tác thành công → không làm thất bại thao tác chính; hệ thống ghi nhận lỗi để đồng bộ log sau, không hiển thị thành công giả cho log.</li>
+<li><strong>EX13:</strong> Tải danh sách/trang log thất bại hoặc response của trang cũ trả về sau → hiển thị lỗi và cho phép thử lại, chỉ nhận response của trang mới nhất; không coi lỗi là danh sách rỗng và không hiển thị dữ liệu của giáo viên khác.</li>
+<li><strong>EX14:</strong> Người dùng không phải owner truy cập ghi chú <code>Riêng tư</code> hoặc ghi chú <code>Đóng</code> bằng danh sách, filter hay ID trực tiếp → không trả nội dung hoặc metadata của ghi chú.</li>
+<li><strong>EX15:</strong> Nội dung ghi chú hoặc Nội dung comment rỗng/chỉ có khoảng trắng → từ chối tạo/cập nhật, hiển thị lỗi validation và notification thất bại; Tiêu đề được phép trống.</li>
+<li><strong>EX16:</strong> Người không phải owner gửi request cập nhật, xóa, đóng hoặc mở ghi chú → backend từ chối và giữ nguyên dữ liệu.</li>
+<li><strong>EX17:</strong> Người dùng gửi request sửa/xóa comment do người khác tạo, kể cả khi là owner ghi chú → backend từ chối và giữ nguyên comment.</li>
+<li><strong>EX18:</strong> Có request tạo/sửa/xóa comment khi ghi chú đang <code>Đóng</code> → backend từ chối; owner phải mở lại ghi chú trước.</li>
+<li><strong>EX19:</strong> Tải danh sách/trang ghi chú thất bại → hiển thị lỗi và cho phép thử lại; không coi lỗi là danh sách rỗng và không dùng dữ liệu cũ/ngoài quyền thay thế.</li>
+<li><strong>EX20:</strong> Người dùng thay đổi trang hoặc filter khi request cũ chưa hoàn tất → chỉ response của trang và tổ hợp filter mới nhất được phép cập nhật danh sách.</li>
+<li><strong>EX21:</strong> Khung giờ trong popup trống, ngoài khung buổi hoặc giờ kết thúc không lớn hơn giờ bắt đầu → không lưu ô; tải/cập nhật lịch đăng ký thất bại, hết thời gian chờ hoặc người dùng xác nhận lặp → không lưu lịch một phần/trùng request, giữ dữ liệu chính thức cũ và hiển thị đúng một notification thất bại.</li>
+<li><strong>EX22:</strong> Lịch đăng ký đã được giáo viên hoặc người quản lý khác cập nhật sau khi màn hình tải → không âm thầm ghi đè; xử lý xung đột theo cùng cơ chế của chức năng phía giáo viên.</li>
+<li><strong>EX23:</strong> Lương giáo viên theo lớp là số âm, số thập phân hoặc không phải số → từ chối cập nhật, giữ giá trị đã lưu và hiển thị lỗi tại trường cùng notification thất bại; số nguyên <code>0</code> là hợp lệ.</li>
+<li><strong>EX24:</strong> Role không thuộc <code>Admin</code>, <code>Class Handler</code>, <code>Support</code>, người dùng ngoài phạm vi hoặc quan hệ giáo viên–lớp không tồn tại gửi request cập nhật lương → backend từ chối và không thay đổi dữ liệu.</li>
+<li><strong>EX25:</strong> Tải/tìm/lọc/chuyển trang Danh sách lớp thất bại, hết thời gian chờ hoặc request cũ trả về sau → hiển thị lỗi có thể thử lại và chỉ nhận response của trang, từ khóa và tổ hợp filter mới nhất; không coi lỗi là danh sách rỗng.</li>
+<li><strong>EX26:</strong> Cập nhật lương thất bại hoặc người dùng xác nhận lặp khi request đang xử lý → không tạo nhiều lần cập nhật, giữ lương chính thức cũ và hiển thị đúng một notification thất bại.</li>
+<li><strong>EX27:</strong> Lương của quan hệ giáo viên–lớp đã được người khác cập nhật sau khi dòng dữ liệu được tải → không âm thầm ghi đè; thông báo xung đột và yêu cầu tải lại theo cơ chế kiểm soát phiên bản.</li>
+</ul>
+<h3 id="23-yeu-cau-khac">2.3. Yêu cầu khác</h3>
+<ul>
+<li><strong>REQ01 – Xem chi tiết giáo viên:</strong> <code>Admin</code> được xem hồ sơ giáo viên thuộc phạm vi dữ liệu; tab mặc định là <code>Thông tin cá nhân</code> với Giới tính, Ngày sinh, Trạng thái, Ghi chú và thông tin ngân hàng; Mã giáo viên và Gmail bị khóa; không có field lương theo giờ. <code>Class Handler</code> và <code>Support</code> chỉ được truy cập tab <code>Danh sách lớp</code> theo REQ11, tab <code>Log</code> theo REQ07, tab <code>Quản lý đăng ký lịch</code> theo REQ10 và tab <code>Ghi chú</code> theo REQ08–REQ09, không được kế thừa quyền xem/cập nhật các tab khác.</li>
+<li><strong>REQ02 – Cập nhật Thông tin cá nhân:</strong> Cho phép cập nhật ảnh, Họ tên, Giới tính, Ngày sinh, Số điện thoại, Trạng thái, Ghi chú tổng quan và thông tin ngân hàng. Không có trường cập nhật bắt buộc; dữ liệu có nhập phải đúng định dạng/ràng buộc. Ghi chú tổng quan là dữ liệu riêng, hiển thị tại danh sách giáo viên và không dùng chung với tab <code>Ghi chú</code>.</li>
+<li><strong>REQ03 – Lấy lại mật khẩu:</strong> Nút <code>Lấy lại mật khẩu</code> reset mật khẩu đúng tài khoản giáo viên về <code>abc12345</code>, lưu theo cơ chế bảo mật, không ghi plain text vào log và hiển thị notification thành công/thất bại.</li>
+<li><strong>REQ04 – Nghỉ việc và không xóa cứng:</strong> Khi cập nhật trạng thái <code>Nghỉ việc</code>, hệ thống khóa đăng nhập, loại giáo viên khỏi lịch đăng ký và lớp đang dạy nhưng giữ nguyên hồ sơ, dữ liệu lịch sử và log. Không cung cấp chức năng xóa cứng giáo viên.</li>
+<li><strong>REQ05 – Lịch dạy chỉ đọc:</strong> Tab chỉ hiển thị các buổi dạy của đúng giáo viên trong tuần được chọn, không hiển thị lịch đăng ký làm việc và không cho CUD lịch. Hỗ trợ chuyển/chọn tuần (<code>dd.MM.yyyy</code>), bật <code>Theo lớp</code> để nhóm theo lớp hoặc tắt để gom theo ngày; cả hai chế độ biểu diễn cùng một tập buổi dạy. Hàng chip cạnh thanh tuần tóm tắt lịch đăng ký của giáo viên (chỉ đọc, chip của ngày hiện tại tô sáng); màu viền card theo mốc thời gian: xanh lá đã dạy, cam hôm nay, xanh dương sắp dạy.</li>
+<li><strong>REQ06 – Notification cho thao tác thay đổi:</strong> Mọi thao tác cập nhật tài khoản, reset mật khẩu, đổi trạng thái, cập nhật lương giáo viên theo lớp, cập nhật lịch đăng ký, CUD ghi chú, đóng/mở ghi chú hoặc CUD comment phải hiển thị đúng một notification thành công/thất bại. Chỉ hiển thị thành công sau khi backend xác nhận và không đưa mật khẩu, stack trace, token hoặc thông tin kỹ thuật nhạy cảm vào nội dung.</li>
+<li><strong>REQ07 – Log hệ thống của giáo viên:</strong> Tab Log chỉ đọc, hiển thị log do hệ thống tự ghi cho giáo viên thuộc phạm vi; mỗi log có Tiêu đề, Mô tả (có thể mở rộng / xem chi tiết), Giờ log, Ngày log, Đối tượng (<code>Hệ thống</code> hoặc người thao tác). Hỗ trợ tìm theo lớp, lọc Đối tượng và Thời gian; sắp xếp mới nhất trước, tối đa 10 log/trang. Không có API tạo, sửa, xóa log từ client. Mọi thao tác thay đổi dữ liệu thành công liên quan giáo viên phải sinh đúng một dòng log với Đối tượng là người thao tác thực tế.</li>
+<li><strong>REQ08 – Ghi chú giáo viên:</strong> <code>Admin</code>, <code>Class Handler</code>, <code>Support</code> được tạo ghi chú và xem ghi chú <code>Công khai</code> đang <code>Mới</code> trong phạm vi. Ghi chú <code>Riêng tư</code> và mọi ghi chú <code>Đóng</code> chỉ owner được xem. Owner được sửa, xóa, đóng/mở ghi chú của mình. Hỗ trợ các bộ lọc Loại, Độ ưu tiên, Trạng thái và Thời gian tạo; Thời gian mặc định là <code>Hôm nay</code>, <code>Tới hạn</code> lấy từ đầu hệ thống đến hết hôm nay. Danh sách phân trang tối đa 10 ghi chú người dùng được phép xem/trang và không được làm lộ số lượng dữ liệu ngoài quyền.</li>
+<li><strong>REQ09 – Bình luận ghi chú:</strong> Người có quyền xem ghi chú đang <code>Mới</code> được comment. Ghi chú <code>Đóng</code> không cho bất kỳ thao tác comment nào. Chỉ người tạo comment được sửa/xóa comment của mình; owner ghi chú không được sửa/xóa comment của người khác. Ghi chú, comment và metadata comment cuối phải hiển thị đúng người cùng ngày, tháng, năm, thời gian.</li>
+<li><strong>REQ10 – Quản lý đăng ký lịch:</strong> <code>Admin</code>, <code>Class Handler</code>, <code>Support</code> được xem và cập nhật lịch đăng ký của giáo viên thuộc phạm vi. Lưới gồm 3 buổi (<code>Sáng 07h30 - 12h00</code>, <code>Chiều 14h00 - 18h00</code>, <code>Tối 18h00 - 23h00</code>) × Thứ 2–Chủ Nhật; tick ô mở popup <code>Đăng ký khung giờ</code> (mốc 30 phút trong khung buổi, ghi chú ô); <code>Fulltime</code> chọn đủ 21 ô trọn buổi; có ghi chú chung. 1 ô buổi đã tick = 1 ca ở danh sách giáo viên. Cập nhật lưu atomically toàn bộ lưới, áp dụng cùng validation/quy tắc với phía giáo viên, cập nhật dữ liệu danh sách và chip ở tab Lịch dạy, ghi nhận đúng actor thực tế và sinh log.</li>
+<li><strong>REQ11 – Danh sách lớp và lương giáo viên theo lớp:</strong> Tab chỉ hiển thị các lớp đã thêm giáo viên đang xem, gồm Trạng thái lớp, Mã lớp, Khóa học, Đánh giá lớp, KPI là tỷ lệ lên kỳ của lớp và cột <code>LƯƠNG/GIỜ</code>. Lương là dữ liệu riêng của quan hệ giáo viên–lớp, đơn vị VNĐ/giờ, là số nguyên không âm và cho phép <code>0</code>; hiển thị bằng nút màu cam dạng <code>200.000 đ</code> kèm icon bút. <code>Admin</code>, <code>Class Handler</code>, <code>Support</code> click nút để mở popup <code>Chỉnh Sửa Lương</code>, trong đó có đúng Mã lớp, giá trị hiện tại, tiền tệ VNĐ, đơn vị Giờ, <code>Hủy</code> và <code>Xác Nhận</code>. Hỗ trợ tìm theo Mã lớp/Tên khóa học, filter Loại lớp, Khóa học cấu hình, đủ tám Trạng thái lớp và Thời gian tạo lớp với cùng danh sách khoảng thời gian của tab Ghi chú; danh sách phân trang tối đa 10 lớp/trang.</li>
+</ul>
+<h3 id="24-rang-buoc">2.4. Ràng buộc</h3>
+<h4 id="quyen">Quyền</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Role</th>
+<th style="text-align: center;">Xem Thông tin cá nhân</th>
+<th style="text-align: center;">Cập nhật Thông tin cá nhân</th>
+<th style="text-align: center;">Reset mật khẩu</th>
+<th style="text-align: center;">Chuyển Nghỉ việc</th>
+<th style="text-align: center;">Xem Lịch dạy</th>
+<th style="text-align: center;">CUD Lịch dạy</th>
+<th style="text-align: center;">Xem Log</th>
+<th style="text-align: center;">Tạo/Sửa/Xóa Log</th>
+<th style="text-align: center;">Xem lịch đăng ký</th>
+<th style="text-align: center;">Cập nhật lịch đăng ký</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Admin</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+</tr>
+<tr>
+<td>Class Handler</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+</tr>
+<tr>
+<td>Support</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+</tr>
+<tr>
+<td>Các role khác</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Quyền tại tab Danh sách lớp:</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Role</th>
+<th style="text-align: center;">Xem danh sách lớp đã thêm giáo viên</th>
+<th style="text-align: center;">Tìm kiếm/Lọc/Phân trang</th>
+<th style="text-align: center;">Cập nhật lương giáo viên theo lớp</th>
+<th style="text-align: center;">Thêm/Gỡ giáo viên khỏi lớp</th>
+<th style="text-align: center;">Cập nhật thông tin lớp</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Admin</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+</tr>
+<tr>
+<td>Class Handler</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+</tr>
+<tr>
+<td>Support</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+</tr>
+<tr>
+<td>Các role khác</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Quyền tại tab Ghi chú:</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Role</th>
+<th style="text-align: center;">Xem Công khai + Mới</th>
+<th style="text-align: center;">Xem Riêng tư/Đóng của mình</th>
+<th style="text-align: center;">Xem Riêng tư/Đóng người khác</th>
+<th style="text-align: center;">Tạo ghi chú</th>
+<th style="text-align: center;">Quản lý ghi chú của mình</th>
+<th style="text-align: center;">Quản lý ghi chú người khác</th>
+<th style="text-align: center;">Comment ghi chú được xem + Mới</th>
+<th style="text-align: center;">Sửa/Xóa comment của mình</th>
+<th style="text-align: center;">Sửa/Xóa comment người khác</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Admin</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">❌</td>
+</tr>
+<tr>
+<td>Class Handler</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">❌</td>
+</tr>
+<tr>
+<td>Support</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">❌</td>
+</tr>
+<tr>
+<td>Các role khác</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+</tr>
+</tbody>
+</table></div>
+<h4 id="pham-vi-va-bao-mat-du-lieu">Phạm vi và bảo mật dữ liệu</h4>
+<ul>
+<li>Giáo viên được nhận diện bằng định danh nội bộ, không dùng tên, email hoặc mã hiển thị làm khóa liên kết.</li>
+<li><code>Admin</code> chỉ được xem và cập nhật giáo viên thuộc phạm vi được cấp.</li>
+<li><code>Class Handler</code> và <code>Support</code> chỉ được truy cập tab <code>Danh sách lớp</code>, tab <code>Log</code>, tab <code>Quản lý đăng ký lịch</code> và tab <code>Ghi chú</code> trong phạm vi được cấp theo requirement này; quyền với các tab khác không được mở rộng.</li>
+<li>Mã giáo viên và Email phải được bảo vệ ở cả UI và backend.</li>
+<li>Mật khẩu mặc định sau reset không được trả về trong API đọc, log hoặc notification.</li>
+<li>Tab <code>Lịch dạy</code> chỉ đọc; dữ liệu lịch phải thuộc đúng giáo viên và đúng tuần đang chọn.</li>
+<li>Danh sách lớp chỉ được truy vấn từ quan hệ lớp có đúng định danh giáo viên đang xem và nằm trong phạm vi người dùng. Giá trị lương phải được đọc/cập nhật bằng định danh nội bộ của quan hệ <code>giáo viên–lớp</code>, không bằng mã hoặc tên hiển thị.</li>
+<li>Backend phải validation lương không âm, kiểm tra quyền <code>Admin</code>/<code>Class Handler</code>/<code>Support</code>, ghi nhận actor và kiểm soát xung đột; client không được tự gán <code>teacher_id</code>, <code>class_id</code> hoặc actor ngoài ngữ cảnh đã được cấp.</li>
+<li>Log phải thuộc đúng giáo viên và do hệ thống ghi; <code>Đối tượng</code> lấy từ danh tính đã xác thực của người thao tác hoặc <code>Hệ thống</code>; backend không nhận log do client gửi.</li>
+<li>Log là dữ liệu bất biến: không có API sửa/xóa; mọi role, kể cả <code>Admin</code>, không xóa được log.</li>
+<li>Lịch đăng ký phải thuộc đúng giáo viên; request cập nhật phải ghi nhận actor đang đăng nhập và không được cho phép client ghi đè định danh giáo viên/actor ngoài phạm vi.</li>
+<li>Ghi chú và comment phải thuộc đúng giáo viên/ghi chú. Owner và người comment được lấy từ danh tính đã xác thực; backend không tin cậy định danh chủ sở hữu do client cung cấp.</li>
+<li>Quyền riêng tư, trạng thái Đóng và quyền sở hữu phải được áp dụng trong truy vấn dữ liệu lẫn API thay đổi; role <code>Admin</code> không được bỏ qua quyền sở hữu.</li>
+<li>Mọi response bất đồng bộ phải được gắn với định danh giáo viên, tab và điều kiện đang xem để không ghi đè sai ngữ cảnh.</li>
+</ul>
+<h4 id="notification">Notification</h4>
+<ul>
+<li>Áp dụng cho <code>Cập nhật tài khoản</code>, <code>Lấy lại mật khẩu</code>, thay đổi trạng thái giáo viên, cập nhật lương giáo viên theo lớp, cập nhật lịch đăng ký, CUD ghi chú, đóng/mở ghi chú và CUD comment.</li>
+<li>Khi thành công, notification chỉ hiển thị sau khi backend xác nhận dữ liệu đã được ghi nhận.</li>
+<li>Khi validation phía client chặn thao tác, hiển thị lỗi tại trường liên quan và một notification thất bại tổng quát.</li>
+<li>Khi backend trả lỗi hoặc hết thời gian chờ, hiển thị notification thất bại và không hiển thị notification thành công.</li>
+<li>Mỗi request thay đổi chỉ tạo một notification kết quả, kể cả khi người dùng click lặp hoặc nhiều tầng xử lý cùng nhận lỗi.</li>
+<li>Các thao tác chỉ đọc như xem hồ sơ, xem danh sách lớp, xem log/ghi chú/comment, lọc, chuyển tab, chuyển tuần và đổi chế độ lịch không thuộc quy tắc notification này.</li>
+</ul>
+<hr />
+<h2 id="3-can-xac-nhan">3. Cần xác nhận</h2>
+<ul>
+<li>Định dạng ảnh đại diện được chấp nhận, kích thước pixel tối thiểu/tối đa và có cho phép xóa ảnh hiện tại hay không; dung lượng tối đa đã chốt là 25 MB.</li>
+<li>Danh sách giá trị Giới tính được phép chọn.</li>
+<li>Khi chỉ nhập một phần thông tin ngân hàng, hệ thống cho phép lưu hay yêu cầu đủ Ngân hàng, Số tài khoản và Tên chủ tài khoản.</li>
+<li>Sau khi reset về <code>abc12345</code>, có bắt buộc giáo viên đổi mật khẩu ở lần đăng nhập tiếp theo và có hủy các phiên đăng nhập hiện tại hay không.</li>
+<li>Khi chuyển sang <code>Nghỉ việc</code>, thời điểm khóa tài khoản/gỡ lịch/gỡ lớp có hiệu lực ngay hay theo ngày nghỉ việc; có cho phép chuyển lại trạng thái hoạt động hay không.</li>
+<li>Nguồn, thang điểm và cách hiển thị khi chưa có dữ liệu của <code>Đánh giá lớp</code>; requirement hiện tại chỉ hiển thị giá trị hiện hành và không tự tính từ KPI.</li>
+<li>Quy tắc làm tròn KPI lớp và giá trị hiển thị khi lớp chưa có mẫu số hợp lệ (<code>—</code>, <code>0%</code> hay trạng thái khác).</li>
+<li>Số buổi dạng <code>đã học/tổng số buổi</code> và thanh tiến độ trong ảnh UI được tính theo trạng thái buổi học nào; có bắt buộc hiển thị khi khóa học chưa cấu hình tổng số buổi hay không.</li>
+<li>Bộ lọc <code>Loại lớp</code>, <code>Khóa học</code>, <code>Trạng thái</code> cho phép chọn một hay nhiều giá trị trong cùng bộ lọc; danh sách giá trị và phép giao giữa các bộ lọc đã được xác định.</li>
+<li>Filter Thời gian của Danh sách lớp hiện được đặc tả theo <code>class.created_at</code>; cần xác nhận có đổi sang ngày khai giảng, ngày giáo viên được thêm vào lớp hoặc một trường nghiệp vụ khác hay không.</li>
+<li>Giá trị tối đa của Lương giáo viên theo giờ; định dạng số nguyên, phân tách hàng nghìn, đơn vị VNĐ/giờ, điều kiện không âm và giá trị <code>0</code> đã được chốt.</li>
+<li>Khi cập nhật lương, mức lương mới áp dụng từ thời điểm cập nhật, từ buổi dạy kế tiếp hay hồi tố cho các buổi/lương đã phát sinh trước đó.</li>
+<li>Cách xử lý xung đột cập nhật lương cụ thể: chặn và tải lại, ghi đè có xác nhận hay hỗ trợ lịch sử phiên bản.</li>
+<li>Thứ tự sắp xếp mặc định của Danh sách lớp và hành động khi click vào một dòng/mã lớp; phân trang tối đa 10 lớp/trang đã được chốt.</li>
+<li>Những trạng thái buổi học nào được hiển thị trong Lịch dạy; cách xử lý buổi bị hủy, dời lịch, học bù hoặc thay giáo viên.</li>
+<li>Số tuần hiển thị trong danh sách chọn tuần, giới hạn được phép xem về quá khứ/tương lai và có cần tải thêm khi cuộn hay không.</li>
+<li>Tùy chọn <code>Theo Lớp</code> có mặc định bật cho mọi lần mở tab hay ghi nhớ lựa chọn gần nhất của Admin.</li>
+<li>Click card buổi dạy có hoàn toàn không có hành động hay được phép điều hướng tới màn chỉ đọc của lớp/buổi học; tab hiện tại không cho phép CUD lịch.</li>
+<li>Múi giờ nghiệp vụ dùng để xác định tuần, ngày hiện tại và giờ của buổi dạy.</li>
+<li>Danh sách đầy đủ các loại log (Tiêu đề) được ghi cho giáo viên, thời gian lưu log và giá trị mặc định của bộ lọc Thời gian ở tab Log.</li>
+<li>Khung giờ 3 buổi (<code>07h30 - 12h00</code>, <code>14h00 - 18h00</code>, <code>18h00 - 23h00</code>) là cố định toàn hệ thống hay cấu hình theo trung tâm.</li>
+<li>Lịch đăng ký lặp cố định theo tuần hay có ngày bắt đầu/kết thúc hiệu lực; UI hiện tại thể hiện theo thứ trong tuần.</li>
+<li>Có cho phép cập nhật thành lịch rỗng khi bỏ chọn toàn bộ checkbox hay phải giữ tối thiểu một ca.</li>
+<li>Khi bỏ chọn ca đang có lịch dạy hoặc phân công liên quan, hệ thống cho phép, cảnh báo hay chặn cập nhật.</li>
+<li>Giáo viên trạng thái <code>Nghỉ việc</code> có được xem/cập nhật tab Quản lý đăng ký lịch hay tab bị khóa hoàn toàn.</li>
+<li>Cách xử lý xung đột đồng thời cụ thể: chặn và tải lại, ghi đè có xác nhận hay hỗ trợ hợp nhất từng ca.</li>
+<li>Vị trí hiển thị audit người cập nhật lịch thay và có cần hiển thị lịch sử các lần thay đổi hay không.</li>
+<li>Số ký tự tối đa của Tiêu đề, Nội dung ghi chú và Nội dung comment; có cho phép xuống dòng hoặc định dạng rich text hay không.</li>
+<li>Thứ tự sắp xếp mặc định của danh sách Ghi chú; phân trang tối đa 10 ghi chú được phép xem/trang đã được chốt.</li>
+<li>Xóa ghi chú/comment là xóa mềm hay xóa cứng; có cần lưu audit và cho phép khôi phục hay không.</li>
+<li>Khi comment được chỉnh sửa, có hiển thị thời gian cập nhật và nhãn <code>Đã chỉnh sửa</code> hay không (ghi chú đã có nhãn theo Figma).</li>
+<li>Các filter Loại, Độ ưu tiên và Trạng thái là chọn một giá trị hay cho phép chọn nhiều giá trị trong cùng filter.</li>
+<li>Định dạng ngày giờ hiển thị cho ghi chú/comment và múi giờ nghiệp vụ; filter thời gian đã chốt dùng <code>created_at</code> của ghi chú.</li>
+<li>Nội dung chính xác, vị trí hiển thị, thời gian tự đóng và khả năng đóng thủ công của notification thành công/thất bại cho từng thao tác cập nhật tài khoản, reset mật khẩu, đổi trạng thái, cập nhật lịch đăng ký, CUD ghi chú, đóng/mở ghi chú và CUD comment.</li>
+</ul>
+</article>
+    <p class="source-note">Nguồn: teacher_detail_requirements.md · SHA-256 c347422140d8404a911aafa284399f353639f82357f3a65f9514dc036e9642f5</p>
+  </main>
+  <script>
+    const article = document.getElementById('document');
+    const nav = document.getElementById('docNav');
+    const headings = [...article.querySelectorAll('h2')];
+    headings.forEach((heading, index) => {
+      const link = document.createElement('a');
+      link.href = `#${heading.id}`;
+      const number = document.createElement('span');
+      number.className = 'nav-num';
+      number.textContent = String(index + 1).padStart(2, '0');
+      link.append(number, document.createTextNode(heading.textContent));
+      nav.append(link);
+    });
+
+    const navLinks = [...nav.querySelectorAll('a')];
+    const observer = new IntersectionObserver(entries => {
+      const current = entries.filter(item => item.isIntersecting).sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
+      if (!current) return;
+      navLinks.forEach(link => link.classList.toggle('active', link.hash === `#${current.target.id}`));
+    }, {rootMargin: '-18% 0px -68% 0px', threshold: [0, .2, .5]});
+    headings.forEach(heading => observer.observe(heading));
+    if (navLinks[0]) navLinks[0].classList.add('active');
+
+    const testcaseHeadings = [...article.querySelectorAll('h4, h5')]
+      .filter(heading => heading.textContent.trim().startsWith('Testcase'));
+    const testcaseGroups = testcaseHeadings
+      .map(heading => ({heading, tableWrap: heading.nextElementSibling}))
+      .filter(group => group.tableWrap?.classList.contains('table-wrap'));
+    if (testcaseGroups.length) {
+        const tableWraps = testcaseGroups.map(group => group.tableWrap);
+        tableWraps.forEach(tableWrap => tableWrap.classList.add('testcase-table'));
+        const rows = tableWraps.flatMap(tableWrap => [...tableWrap.querySelectorAll('tbody tr')]);
+        const tools = document.createElement('div');
+        tools.className = 'case-tools';
+        const input = document.createElement('input');
+        input.type = 'search';
+        input.placeholder = 'Tìm testcase, Flow, REQ, EX hoặc nội dung…';
+        input.setAttribute('aria-label', 'Tìm testcase');
+        const count = document.createElement('span');
+        count.className = 'case-count';
+        tools.append(input, count);
+        testcaseGroups[0].heading.before(tools);
+        const filterRows = () => {
+          const query = input.value.trim().toLocaleLowerCase('vi');
+          let visible = 0;
+          rows.forEach(row => {
+            const match = !query || row.textContent.toLocaleLowerCase('vi').includes(query);
+            row.hidden = !match;
+            if (match) visible += 1;
+          });
+          testcaseGroups.forEach(({heading, tableWrap}) => {
+            const hasVisibleRow = [...tableWrap.querySelectorAll('tbody tr')]
+              .some(row => !row.hidden);
+            heading.hidden = !hasVisibleRow;
+            tableWrap.hidden = !hasVisibleRow;
+          });
+          count.textContent = `${visible}/${rows.length} testcase`;
+        };
+        input.addEventListener('input', filterRows);
+        filterRows();
+    }
+  </script>
+</body>
+</html>

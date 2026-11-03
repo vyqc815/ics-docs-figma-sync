@@ -1,0 +1,1161 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Requirement Chi tiết lớp học — Ba loại quy trình">
+  <link rel="icon" href="data:,">
+  <title>Chi tiết lớp học — Ba loại quy trình — Requirement</title>
+  <style>
+    :root {
+      --orange-700: #c83f00;
+      --orange-600: #e84c00;
+      --orange-500: #f45b0a;
+      --orange-400: #ff7a32;
+      --orange-100: #fff0e8;
+      --orange-50: #fff8f4;
+      --navy-950: #101828;
+      --navy-900: #172033;
+      --navy-800: #243047;
+      --slate-700: #344054;
+      --slate-600: #475467;
+      --slate-500: #667085;
+      --slate-400: #98a2b3;
+      --slate-300: #d0d5dd;
+      --slate-200: #e4e7ec;
+      --slate-100: #f2f4f7;
+      --slate-50: #f8fafc;
+      --white: #ffffff;
+      --green: #159447;
+      --blue: #2154c5;
+      --yellow: #b77900;
+      --red: #c92a2a;
+      --purple: #6941c6;
+      --shadow-sm: 0 1px 2px rgba(16, 24, 40, .06);
+      --shadow-md: 0 12px 32px rgba(16, 24, 40, .10);
+      --shadow-lg: 0 24px 64px rgba(16, 24, 40, .16);
+      --radius-sm: 10px;
+      --radius: 16px;
+      --radius-lg: 24px;
+      --sidebar: 286px;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      color: var(--navy-950);
+      background:
+        radial-gradient(circle at 88% 5%, rgba(244, 91, 10, .10), transparent 24rem),
+        var(--slate-50);
+      font: 15px/1.65 Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      text-rendering: optimizeLegibility;
+    }
+    a { color: inherit; }
+    img { max-width: 100%; }
+    button, input, select { font: inherit; }
+    code {
+      padding: .12rem .38rem;
+      border: 1px solid #fed7c3;
+      border-radius: 6px;
+      color: var(--orange-700);
+      background: var(--orange-50);
+      font: 600 .9em ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    }
+
+    .skip-link {
+      position: fixed;
+      z-index: 999;
+      top: 12px;
+      left: 12px;
+      padding: 10px 14px;
+      border-radius: 9px;
+      color: var(--white);
+      background: var(--navy-950);
+      transform: translateY(-150%);
+    }
+    .skip-link:focus { transform: none; }
+
+    .sidebar {
+      position: fixed;
+      z-index: 30;
+      inset: 0 auto 0 0;
+      width: var(--sidebar);
+      padding: 22px 18px;
+      overflow-y: auto;
+      color: #f8fafc;
+      background:
+        linear-gradient(155deg, rgba(255, 122, 50, .24), transparent 26%),
+        linear-gradient(180deg, #192338 0%, #111827 100%);
+      border-right: 1px solid rgba(255, 255, 255, .08);
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 4px 8px 22px;
+      border-bottom: 1px solid rgba(255, 255, 255, .10);
+    }
+    .brand-mark {
+      display: grid;
+      width: 44px;
+      height: 44px;
+      place-items: center;
+      border-radius: 14px;
+      color: var(--white);
+      background: linear-gradient(135deg, var(--orange-400), var(--orange-600));
+      box-shadow: 0 10px 26px rgba(244, 91, 10, .35);
+      font-weight: 900;
+      letter-spacing: -.06em;
+    }
+    .brand strong { display: block; font-size: 16px; }
+    .brand small { color: #aeb8c9; }
+    .nav-title {
+      margin: 24px 10px 8px;
+      color: #8f9aae;
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+    .nav { display: grid; gap: 4px; }
+    .nav a {
+      display: flex;
+      align-items: center;
+      gap: 11px;
+      padding: 10px 12px;
+      border-radius: 10px;
+      color: #cbd5e1;
+      text-decoration: none;
+      transition: .18s ease;
+    }
+    .nav a:hover, .nav a.active {
+      color: var(--white);
+      background: rgba(255, 255, 255, .09);
+    }
+    .nav a.active { box-shadow: inset 3px 0 var(--orange-400); }
+    .nav-num {
+      display: grid;
+      width: 25px;
+      height: 25px;
+      flex: 0 0 auto;
+      place-items: center;
+      border: 1px solid rgba(255, 255, 255, .15);
+      border-radius: 8px;
+      font-size: 11px;
+      font-weight: 800;
+    }
+    .sidebar-footer {
+      margin-top: 26px;
+      padding: 14px;
+      border: 1px solid rgba(255, 255, 255, .10);
+      border-radius: 14px;
+      color: #aeb8c9;
+      background: rgba(255, 255, 255, .04);
+      font-size: 12px;
+    }
+    .sidebar-footer a { color: #ffd8c5; }
+
+    main {
+      width: min(1500px, calc(100% - var(--sidebar)));
+      margin-left: var(--sidebar);
+      padding: 34px clamp(24px, 4vw, 64px) 80px;
+    }
+    section { scroll-margin-top: 24px; }
+    .hero {
+      position: relative;
+      padding: clamp(30px, 5vw, 56px);
+      overflow: hidden;
+      border: 1px solid rgba(255, 255, 255, .08);
+      border-radius: var(--radius-lg);
+      color: var(--white);
+      background:
+        linear-gradient(105deg, rgba(16, 24, 40, .97) 0%, rgba(23, 32, 51, .94) 62%, rgba(109, 45, 9, .90) 100%);
+      box-shadow: var(--shadow-lg);
+    }
+    .hero::after {
+      content: "";
+      position: absolute;
+      width: 360px;
+      height: 360px;
+      top: -190px;
+      right: -80px;
+      border: 70px solid rgba(255, 122, 50, .15);
+      border-radius: 50%;
+    }
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 10px;
+      border: 1px solid rgba(255, 255, 255, .15);
+      border-radius: 999px;
+      color: #ffd8c5;
+      background: rgba(255, 255, 255, .06);
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+    .hero h1 {
+      max-width: 900px;
+      margin: 18px 0 12px;
+      font-size: clamp(34px, 5vw, 64px);
+      line-height: 1.03;
+      letter-spacing: -.045em;
+    }
+    .hero p { max-width: 780px; margin: 0; color: #cbd5e1; font-size: 17px; }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 25px; }
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      min-height: 42px;
+      padding: 9px 14px;
+      border: 1px solid transparent;
+      border-radius: 10px;
+      color: var(--white);
+      background: var(--orange-500);
+      text-decoration: none;
+      cursor: pointer;
+      transition: .18s ease;
+    }
+    .button:hover { transform: translateY(-1px); background: var(--orange-600); }
+    .button.secondary { border-color: rgba(255, 255, 255, .15); background: rgba(255, 255, 255, .07); }
+    .button.ghost { color: var(--slate-700); border-color: var(--slate-300); background: var(--white); }
+    .button.small { min-height: 36px; padding: 7px 11px; font-size: 13px; }
+
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 14px;
+      margin-top: 18px;
+    }
+    .stat {
+      padding: 18px;
+      border: 1px solid var(--slate-200);
+      border-radius: var(--radius);
+      background: rgba(255, 255, 255, .86);
+      box-shadow: var(--shadow-sm);
+    }
+    .stat strong { display: block; color: var(--orange-600); font-size: 30px; line-height: 1; }
+    .stat span { display: block; margin-top: 7px; color: var(--slate-600); font-weight: 650; }
+
+    .section-head {
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 24px;
+      margin: 64px 0 20px;
+    }
+    .section-kicker {
+      margin: 0 0 6px;
+      color: var(--orange-600);
+      font-size: 12px;
+      font-weight: 850;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+    .section-head h2 { margin: 0; font-size: clamp(27px, 4vw, 40px); letter-spacing: -.035em; }
+    .section-head p { max-width: 600px; margin: 8px 0 0; color: var(--slate-600); }
+
+    .panel {
+      padding: clamp(20px, 3vw, 30px);
+      border: 1px solid var(--slate-200);
+      border-radius: var(--radius-lg);
+      background: var(--white);
+      box-shadow: var(--shadow-sm);
+    }
+    .panel + .panel { margin-top: 18px; }
+    .panel h3 { margin: 0 0 14px; font-size: 21px; letter-spacing: -.02em; }
+    .panel h4 { margin: 26px 0 10px; }
+    .muted { color: var(--slate-600); }
+    .note {
+      padding: 15px 17px;
+      border-left: 4px solid var(--orange-500);
+      border-radius: 0 12px 12px 0;
+      color: var(--slate-700);
+      background: var(--orange-50);
+    }
+
+    .mockup {
+      position: relative;
+      padding: 12px;
+      border: 1px solid var(--slate-200);
+      border-radius: 18px;
+      background: linear-gradient(145deg, #fff, #f4f6f9);
+      box-shadow: var(--shadow-md);
+    }
+    .mockup a { display: block; overflow: hidden; border-radius: 12px; }
+    .mockup img { display: block; width: 100%; transition: transform .3s ease; }
+    .mockup a:hover img { transform: scale(1.01); }
+    .mockup figcaption { padding: 12px 4px 2px; color: var(--slate-600); font-size: 13px; }
+
+    .grid-2 { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
+    .grid-3 { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+    .grid-4 { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 14px; }
+    .card {
+      padding: 18px;
+      border: 1px solid var(--slate-200);
+      border-radius: var(--radius);
+      background: var(--white);
+      box-shadow: var(--shadow-sm);
+    }
+    .card h3, .card h4 { margin: 0 0 8px; }
+    .card p { margin: 0; color: var(--slate-600); }
+    .card-accent { border-top: 4px solid var(--orange-500); }
+
+    .column-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+    .column-item {
+      min-height: 124px;
+      padding: 15px;
+      border: 1px solid var(--slate-200);
+      border-radius: 14px;
+      background: var(--slate-50);
+    }
+    .column-item strong { display: block; margin-bottom: 5px; color: var(--navy-900); }
+    .column-item span { color: var(--slate-600); font-size: 13px; }
+
+    .status-card { display: flex; align-items: center; gap: 12px; }
+    .status-card img { width: 42px; height: 42px; }
+    .status-card small { display: block; color: var(--slate-500); }
+
+    .tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      padding: 4px 9px;
+      border-radius: 999px;
+      color: var(--orange-700);
+      background: var(--orange-100);
+      font-size: 12px;
+      font-weight: 800;
+    }
+    .tag.high { color: #9d174d; background: #fce7f3; }
+    .tag.medium { color: #92400e; background: #fef3c7; }
+    .tag.req { color: #3730a3; background: #e0e7ff; }
+    .tag.ex { color: #b42318; background: #fee4e2; }
+
+    .flow-list { display: grid; gap: 14px; counter-reset: flow; }
+    .flow {
+      position: relative;
+      padding: 22px 22px 22px 68px;
+      border: 1px solid var(--slate-200);
+      border-radius: var(--radius);
+      background: var(--white);
+    }
+    .flow::before {
+      counter-increment: flow;
+      content: counter(flow, decimal-leading-zero);
+      position: absolute;
+      top: 20px;
+      left: 18px;
+      display: grid;
+      width: 36px;
+      height: 36px;
+      place-items: center;
+      border-radius: 11px;
+      color: var(--white);
+      background: var(--orange-500);
+      font-weight: 900;
+    }
+    .flow h3 { margin: 0 0 8px; }
+    .flow ol { margin: 0; padding-left: 20px; color: var(--slate-700); }
+
+    .exception { border-left: 4px solid #ef4444; }
+    .exception strong { color: var(--red); }
+
+    .formula-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; }
+    .formula {
+      padding: 18px;
+      border: 1px solid #ffd6c2;
+      border-radius: 16px;
+      background: linear-gradient(160deg, #fff, var(--orange-50));
+    }
+    .formula h4 { margin: 0 0 12px; color: var(--orange-700); }
+    .fraction { display: grid; justify-items: center; color: var(--navy-900); font-weight: 720; text-align: center; }
+    .fraction .top { padding: 0 10px 7px; border-bottom: 2px solid var(--navy-800); }
+    .fraction .bottom { padding-top: 7px; }
+    .formula .teacher { margin-top: 16px; padding-top: 12px; border-top: 1px dashed #f5b896; color: var(--slate-600); font-size: 13px; }
+
+    .filters {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      align-items: center;
+      padding: 14px;
+      border: 1px solid var(--slate-200);
+      border-radius: 14px;
+      background: var(--white);
+      position: sticky;
+      top: 10px;
+      z-index: 10;
+      box-shadow: var(--shadow-md);
+    }
+    .search {
+      min-width: min(100%, 320px);
+      flex: 1 1 260px;
+      height: 42px;
+      padding: 0 13px;
+      border: 1px solid var(--slate-300);
+      border-radius: 10px;
+      color: var(--navy-950);
+      background: var(--white);
+      outline: none;
+    }
+    .search:focus { border-color: var(--orange-500); box-shadow: 0 0 0 4px rgba(244, 91, 10, .12); }
+    .testcases { display: grid; gap: 10px; margin-top: 16px; }
+    .testcase {
+      border: 1px solid var(--slate-200);
+      border-radius: 14px;
+      background: var(--white);
+      overflow: clip;
+    }
+    .testcase[hidden] { display: none; }
+    .testcase summary {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 15px 17px;
+      cursor: pointer;
+      list-style: none;
+    }
+    .testcase summary::-webkit-details-marker { display: none; }
+    .testcase summary::after { content: "+"; margin-left: auto; color: var(--orange-600); font-size: 22px; font-weight: 700; }
+    .testcase[open] summary::after { content: "−"; }
+    .testcase-title { min-width: 0; font-weight: 780; }
+    .case-body {
+      display: grid;
+      grid-template-columns: minmax(180px, .7fr) minmax(0, 1.3fr);
+      gap: 18px;
+      padding: 18px;
+      border-top: 1px solid var(--slate-200);
+      background: var(--slate-50);
+    }
+    .case-meta { color: var(--slate-600); }
+    .case-meta div + div { margin-top: 8px; }
+    .case-steps { display: grid; gap: 10px; }
+    .step { padding: 10px 12px; border-left: 3px solid var(--orange-400); background: var(--white); }
+    .expected { margin: 14px 0 0; padding-left: 20px; }
+    .expected li + li { margin-top: 4px; }
+    .empty-filter { display: none; padding: 28px; color: var(--slate-600); text-align: center; }
+
+    .question-list { display: grid; gap: 10px; margin: 0; padding: 0; counter-reset: question; list-style: none; }
+    .question-list li {
+      position: relative;
+      padding: 14px 16px 14px 54px;
+      border: 1px solid #f4d8a4;
+      border-radius: 13px;
+      background: #fffbeb;
+      color: #664d03;
+    }
+    .question-list li::before {
+      counter-increment: question;
+      content: counter(question);
+      position: absolute;
+      top: 12px;
+      left: 14px;
+      display: grid;
+      width: 28px;
+      height: 28px;
+      place-items: center;
+      border-radius: 9px;
+      color: #fff;
+      background: #d99100;
+      font-weight: 850;
+    }
+
+    .footer {
+      margin-top: 64px;
+      padding-top: 24px;
+      border-top: 1px solid var(--slate-200);
+      color: var(--slate-500);
+      text-align: center;
+    }
+
+    @media (max-width: 1120px) {
+      :root { --sidebar: 244px; }
+      .column-grid, .grid-3, .formula-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .stats { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
+    @media (max-width: 780px) {
+      .sidebar { position: static; width: auto; padding: 14px; }
+      .brand { padding-bottom: 12px; }
+      .nav-title, .sidebar-footer { display: none; }
+      .nav { display: flex; overflow-x: auto; padding-top: 10px; }
+      .nav a { flex: 0 0 auto; }
+      main { width: 100%; margin: 0; padding: 18px 14px 60px; }
+      .hero { border-radius: 18px; }
+      .grid-2, .grid-3, .grid-4, .column-grid, .formula-grid, .case-body { grid-template-columns: 1fr; }
+      .section-head { align-items: start; flex-direction: column; }
+      .filters { position: static; }
+    }
+    @media print {
+      body { background: #fff; font-size: 11px; }
+      .sidebar, .hero-actions, .filters, .skip-link { display: none !important; }
+      main { width: 100%; margin: 0; padding: 0; }
+      .hero { color: #111; background: #fff; border: 2px solid #111; box-shadow: none; }
+      .hero p { color: #333; }
+      .panel, .card, .stat, .mockup, .testcase { break-inside: avoid; box-shadow: none; }
+      .section-head { margin-top: 32px; }
+      .testcase { display: block !important; }
+      .testcase summary::after { display: none; }
+      .testcase:not([open]) .case-body { display: grid; }
+    }
+
+    .doc-shell { min-width: 0; }
+    .doc-toolbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      margin-bottom: 18px;
+      padding: 14px 16px;
+      border: 1px solid var(--slate-200);
+      border-radius: 14px;
+      background: rgba(255,255,255,.92);
+      box-shadow: var(--shadow-sm);
+    }
+    .doc-toolbar-left, .doc-toolbar-right { display: flex; flex-wrap: wrap; align-items: center; gap: 9px; }
+    .sync-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      padding: 6px 10px;
+      border-radius: 999px;
+      color: #067647;
+      background: #ecfdf3;
+      border: 1px solid #abefc6;
+      font-size: 12px;
+      font-weight: 800;
+    }
+    .sync-badge::before { content: "✓"; }
+    .hash { color: var(--slate-500); font: 12px ui-monospace, SFMono-Regular, Menlo, monospace; }
+    .markdown-body {
+      padding: clamp(24px, 4vw, 54px);
+      border: 1px solid var(--slate-200);
+      border-radius: var(--radius-lg);
+      background: var(--white);
+      box-shadow: var(--shadow-md);
+      overflow: hidden;
+    }
+    .markdown-body > h1 {
+      position: relative;
+      margin: -54px -54px 42px;
+      padding: 62px 54px 54px;
+      color: var(--white);
+      background:
+        radial-gradient(circle at 88% 10%, rgba(255,122,50,.36), transparent 20rem),
+        linear-gradient(115deg, var(--navy-950), #243047 68%, #713209);
+      font-size: clamp(34px, 5vw, 62px);
+      line-height: 1.05;
+      letter-spacing: -.045em;
+    }
+    .markdown-body h2 {
+      margin: 70px 0 24px;
+      padding: 0 0 13px;
+      border-bottom: 2px solid var(--slate-200);
+      font-size: clamp(27px, 4vw, 39px);
+      line-height: 1.15;
+      letter-spacing: -.035em;
+      scroll-margin-top: 24px;
+    }
+    .markdown-body h2::first-letter { color: var(--orange-600); }
+    .markdown-body h3 {
+      margin: 38px 0 16px;
+      color: var(--navy-900);
+      font-size: 23px;
+      line-height: 1.25;
+      letter-spacing: -.02em;
+      scroll-margin-top: 24px;
+    }
+    .markdown-body h4 {
+      margin: 28px 0 12px;
+      color: var(--orange-700);
+      font-size: 17px;
+      scroll-margin-top: 24px;
+    }
+    .markdown-body p { margin: 12px 0; }
+    .markdown-body strong { color: var(--navy-900); }
+    .markdown-body ul, .markdown-body ol { padding-left: 1.35rem; }
+    .markdown-body li { margin: 6px 0; }
+    .markdown-body li::marker { color: var(--orange-500); font-weight: 800; }
+    .markdown-body hr {
+      height: 1px;
+      margin: 48px 0;
+      border: 0;
+      background: linear-gradient(90deg, transparent, var(--slate-300), transparent);
+    }
+    .markdown-body > p[align="center"] {
+      margin: 22px 0 28px;
+      padding: 12px;
+      border: 1px solid var(--slate-200);
+      border-radius: 18px;
+      background: linear-gradient(145deg, #fff, #f5f7fa);
+      box-shadow: var(--shadow-md);
+    }
+    .markdown-body > p[align="center"] a { display: inline-block; max-width: 100%; }
+    .markdown-body > p[align="center"] img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+      margin: auto;
+      border-radius: 12px;
+    }
+    .markdown-body > p[align="center"] em {
+      display: block;
+      margin-top: 10px;
+      color: var(--slate-500);
+      font-size: 13px;
+    }
+    .table-wrap {
+      width: 100%;
+      margin: 18px 0 28px;
+      overflow: auto;
+      border: 1px solid var(--slate-200);
+      border-radius: 15px;
+      background: var(--white);
+      box-shadow: var(--shadow-sm);
+    }
+    .markdown-body table {
+      width: 100%;
+      min-width: 720px;
+      border-collapse: separate;
+      border-spacing: 0;
+      font-size: 14px;
+    }
+    .markdown-body th {
+      position: sticky;
+      top: 0;
+      z-index: 2;
+      padding: 12px 14px;
+      color: var(--white);
+      background: var(--navy-900);
+      border-bottom: 1px solid var(--navy-800);
+      text-align: left;
+      white-space: nowrap;
+    }
+    .markdown-body td {
+      padding: 12px 14px;
+      border-bottom: 1px solid var(--slate-200);
+      vertical-align: top;
+    }
+    .markdown-body tbody tr:nth-child(even) td { background: var(--slate-50); }
+    .markdown-body tbody tr:hover td { background: var(--orange-50); }
+    .markdown-body tbody tr:last-child td { border-bottom: 0; }
+    .markdown-body td img { display: block; width: 36px; height: 36px; max-width: none; }
+    .markdown-body pre {
+      position: relative;
+      margin: 16px 0 24px;
+      padding: 18px 20px;
+      overflow: auto;
+      border: 1px solid #ffd3bd;
+      border-radius: 14px;
+      color: #fff7ed;
+      background: linear-gradient(145deg, #172033, #222f48);
+      box-shadow: var(--shadow-sm);
+      font: 13px/1.75 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    }
+    .markdown-body pre code { padding: 0; border: 0; color: inherit; background: none; font: inherit; }
+    .markdown-body blockquote {
+      margin: 18px 0;
+      padding: 13px 16px;
+      border-left: 4px solid var(--orange-500);
+      border-radius: 0 12px 12px 0;
+      color: var(--slate-700);
+      background: var(--orange-50);
+    }
+    .case-tools {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 10px;
+      margin: 12px 0 14px;
+      padding: 13px;
+      border: 1px solid var(--slate-200);
+      border-radius: 13px;
+      background: var(--slate-50);
+    }
+    .case-tools input {
+      flex: 1 1 280px;
+      height: 42px;
+      padding: 0 13px;
+      border: 1px solid var(--slate-300);
+      border-radius: 10px;
+      outline: none;
+    }
+    .case-tools input:focus { border-color: var(--orange-500); box-shadow: 0 0 0 4px rgba(244,91,10,.12); }
+    .case-count { color: var(--orange-700); font-weight: 800; white-space: nowrap; }
+    .testcase-table table { min-width: 1500px; }
+    .testcase-table th:first-child, .testcase-table td:first-child {
+      position: sticky;
+      left: 0;
+      z-index: 1;
+      min-width: 230px;
+      box-shadow: 1px 0 0 var(--slate-200);
+    }
+    .testcase-table th:first-child { z-index: 3; background: var(--navy-900); }
+    .testcase-table td:first-child { background: var(--white); font-weight: 750; }
+    .testcase-table tbody tr:nth-child(even) td:first-child { background: var(--slate-50); }
+    .testcase-table tbody tr:hover td:first-child { background: var(--orange-50); }
+    .source-note {
+      margin-top: 18px;
+      color: var(--slate-500);
+      text-align: center;
+      font-size: 12px;
+    }
+    @media (max-width: 780px) {
+      .doc-toolbar { align-items: flex-start; flex-direction: column; }
+      .markdown-body { padding: 20px 16px; border-radius: 16px; }
+      .markdown-body > h1 { margin: -20px -16px 32px; padding: 40px 20px 34px; }
+      .markdown-body h2 { margin-top: 48px; }
+      .markdown-body table { font-size: 13px; }
+    }
+    @media print {
+      .doc-toolbar, .case-tools { display: none !important; }
+      .markdown-body { padding: 0; border: 0; box-shadow: none; overflow: visible; }
+      .markdown-body > h1 { margin: 0 0 32px; padding: 30px; color: #111; background: #fff; border: 2px solid #111; }
+      .table-wrap { overflow: visible; box-shadow: none; }
+      .markdown-body table { min-width: 0 !important; font-size: 9px; }
+      .markdown-body th { position: static; color: #111; background: #eee; }
+      .testcase-table th:first-child, .testcase-table td:first-child { position: static; }
+    }
+</style>
+</head>
+<body>
+  <a class="skip-link" href="#document">Đi đến nội dung chính</a>
+  <aside class="sidebar" aria-label="Mục lục requirement">
+    <div class="brand">
+      <div class="brand-mark">ics</div>
+      <div><strong>ICS Requirement</strong><small>Ba loại quy trình lớp: Tiêu chuẩn giáo viên, CSKH, Quy trình lớp</small></div>
+    </div>
+    <div class="nav-title">Nội dung Markdown</div>
+    <nav id="docNav" class="nav"></nav>
+    <div class="sidebar-footer">
+      HTML được render trực tiếp từ Markdown nguồn.<br>
+      <a href="./class_detail_processes_requirements.md">Mở file Markdown</a>
+    </div>
+  </aside>
+  <main class="doc-shell">
+    <div class="doc-toolbar">
+      <div class="doc-toolbar-left">
+        <span class="sync-badge">Đồng bộ 100% từ Markdown</span>
+        <span class="hash">SHA-256: e1b7359787f1…</span>
+      </div>
+      <div class="doc-toolbar-right">
+        <a class="button ghost small" href="./class_detail_processes_requirements.md">Xem Markdown</a>
+        <button class="button small" type="button" onclick="window.print()">In / Lưu PDF</button>
+      </div>
+    </div>
+    <article id="document" class="markdown-body" data-source-sha256="e1b7359787f1abcc7f615a20191d8d62707614d377720136013bfa352ebc8d3d">
+<h1 id="chi-tiet-lop-hoc-tieu-chuan-lop-giao-vien-cskh-va-quy-trinh-lop">Chi tiết lớp học — Tiêu chuẩn lớp - giáo viên, CSKH và Quy trình lớp</h1>
+<blockquote>
+<p>Ba tab dùng cùng Action Board, chỉ khác tên và loại quy trình. Package, Category, Action Item được định nghĩa tại <a href="../../process_definition_requirement/process_definition_requirements.md">menu Define quy trình</a>, ngoài lớp. Nguồn dùng chung bảng ComGao, quản lý theo center. Trong lớp chỉ chọn nội dung từ quy trình <strong>Công khai</strong> và cập nhật Result theo <a href="../../action_board_requirement/action_board_requirements.md">Requirement Action Board</a>.</p>
+</blockquote>
+<h2 id="1-ui">1. UI</h2>
+<h3 id="ba-tab-quy-trinh-trong-lop">Ba tab quy trình trong lớp</h3>
+<p align="center">
+  <a href="./images/69-class-teacher-standard-board.png"><img src="./images/69-class-teacher-standard-board.png" alt="Tab Tiêu chuẩn lớp - giáo viên" width="900" title="Nhấn để xem ảnh gốc"></a><br>
+  <em>Ảnh tab Tiêu chuẩn lớp - giáo viên; CSKH và Quy trình lớp dùng cùng bố cục.</em>
+</p>
+
+<p><strong>Mô tả:</strong></p>
+<ul>
+<li>Người đã được add vào lớp mở Chi tiết lớp để xem nội dung và Result ở tab <code>Tiêu chuẩn lớp - giáo viên</code>, <code>CSKH</code> hoặc <code>Quy trình lớp</code> theo quyền của mình.</li>
+</ul>
+<p><strong>Giải thích field/thành phần:</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Thành phần</th>
+<th>Yêu cầu</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Tên tab</td>
+<td>Mỗi tab lấy đúng loại quy trình tương ứng đã định nghĩa ngoài lớp.</td>
+</tr>
+<tr>
+<td>Tiến độ</td>
+<td>Hiển thị tiến độ tổng, Package, Category và số item hoàn thành như <code>2/7</code>.</td>
+</tr>
+<tr>
+<td>Action Item</td>
+<td>Mở/thu gọn để xem nội dung và control Result theo loại Action.</td>
+</tr>
+<tr>
+<td>Nút Thêm</td>
+<td><code>Thêm tiêu chuẩn</code> ở tab Tiêu chuẩn lớp - giáo viên; <code>Thêm quy trình</code> ở tab CSKH và Quy trình lớp.</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Điểm cần lưu ý:</strong></p>
+<ul>
+<li>Chỉ <strong>Class Handler hoặc Support đã được add vào chính lớp với role đó</strong> được Thêm nội dung và cập nhật Result khi quy trình nguồn Công khai. Họ được cập nhật item do người khác thêm. Ngoại lệ: <strong>Giáo viên của lớp</strong> được tick checkbox xác thực của Action loại <code>Xác thực</code> (<code>verify</code>) ở tab Tiêu chuẩn lớp - giáo viên khi mình nằm trong Người gán của Result; tick một lần, không bỏ tick (xem <a href="../../teacher_role/class/class_process_requirements.md">requirement Giáo viên — Quy trình</a>).</li>
+<li>Người chưa được add vào lớp không vào được Chi tiết lớp hoặc ba tab này, kể cả khi biết URL hay ID lớp.</li>
+<li>Result không lẫn giữa các lớp, ba loại quy trình hoặc với định nghĩa nguồn. Định nghĩa đã Công khai bị khóa thêm/sửa/xóa; khi Công khai, cập nhật Result theo quyền. Quy trình chuyển Vô hiệu vẫn hiện nội dung/Result đã ghi nhưng chỉ xem; không xóa kết quả cũ.</li>
+</ul>
+<h4 id="testcase-ba-tab-quy-trinh">Testcase — Ba tab quy trình</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 1: Hiển thị đúng phạm vi lớp và tab</td>
+<td>High</td>
+<td>Smoke</td>
+<td>Flow 1 / REQ01 / EX02</td>
+<td>Thành viên lớp / người ngoài lớp</td>
+<td>Hai lớp có dữ liệu ở ba tab; user được add vào lớp A nhưng không thuộc lớp B</td>
+<td><strong>Given</strong> user mở các tab lớp A rồi truy cập trực tiếp lớp B<br><strong>When</strong> hệ thống kiểm tra quan hệ với lớp<br><strong>Then</strong> chỉ hiển thị nội dung, Result và tiến độ lớp A</td>
+<td>Không trộn loại quy trình; không vào được Chi tiết lớp B hoặc đọc dữ liệu qua URL/request.</td>
+</tr>
+<tr>
+<td>Case 2: Result theo quyền và trạng thái nguồn</td>
+<td>High</td>
+<td></td>
+<td>Flow 3 / REQ02 / REQ03 / EX04</td>
+<td>Class Handler / Support / người chỉ xem</td>
+<td>Item đã được gắn vào lớp</td>
+<td><strong>Given</strong> nguồn đang Công khai<br><strong>When</strong> Support lưu Result, sau đó nguồn chuyển Vô hiệu rồi Công khai lại<br><strong>Then</strong> Công khai cập nhật theo quyền; Vô hiệu chỉ xem</td>
+<td>Vô hiệu vẫn hiện nội dung/Result cũ và chặn cập nhật qua UI/request; Công khai lại khôi phục thao tác theo quyền, không mất kết quả. Người chỉ xem luôn bị chặn.</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="popup-them-noi-dung">Popup Thêm nội dung</h3>
+<p align="center">
+  <a href="./images/70-class-process-picker.png"><img src="./images/70-class-process-picker.png" alt="Popup Thêm quy trình trong tab Quy trình lớp" width="700" title="Nhấn để xem ảnh gốc"></a><br>
+  <em>Ảnh popup Thêm quy trình của tab Quy trình lớp; chỉ hiển thị Package được định nghĩa cho loại này.</em>
+</p>
+
+<p><strong>Mô tả:</strong></p>
+<ul>
+<li>Class Handler/Support của lớp chọn <strong>Package → Category → Action Item</strong> có sẵn. Popup chỉ tải nguồn <strong>Công khai</strong> của <strong>tab đã bấm Thêm</strong>.</li>
+</ul>
+<p><strong>Giải thích field/thành phần:</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Thành phần</th>
+<th>Yêu cầu</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Tiêu chuẩn lớp - giáo viên → <code>Thêm tiêu chuẩn</code></td>
+<td>Chỉ hiển thị Package từ loại <code>Lớp - Giáo viên</code>.</td>
+</tr>
+<tr>
+<td>CSKH → <code>Thêm quy trình</code></td>
+<td>Chỉ hiển thị Package từ loại <code>CSKH</code> (Support).</td>
+</tr>
+<tr>
+<td>Quy trình lớp → <code>Thêm quy trình</code></td>
+<td>Chỉ hiển thị Package từ loại <code>Lớp học</code>; ảnh có Package <code>Khai giảng</code>.</td>
+</tr>
+<tr>
+<td>Cây lựa chọn</td>
+<td>Mở/thu gọn, chọn nhiều cấp bằng checkbox; chọn cha chọn các mục con, có thể bỏ chọn mục con.</td>
+</tr>
+<tr>
+<td>Category / Action Item</td>
+<td>Hiển thị badge tiến độ Category như <code>10/10</code> và nhãn loại Action như <code>Task tiến trình</code>, <code>Hướng dẫn</code>, <code>Kiểm tra</code> theo nguồn.</td>
+</tr>
+<tr>
+<td><code>Thêm (1)</code></td>
+<td>Xác nhận lựa chọn; ảnh thể hiện một Package được chọn.</td>
+</tr>
+<tr>
+<td>Hủy</td>
+<td>Đóng popup, không lưu lựa chọn mới.</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Điểm cần lưu ý:</strong></p>
+<ul>
+<li>Nguồn và lớp phải cùng center; không tải/chọn quy trình center khác.</li>
+<li>Chỉ quy trình Công khai được chọn và thêm vào lớp; Nháp/Vô hiệu không được thêm mới. Kiểm tra lại trạng thái nguồn lúc lưu.</li>
+<li>Không trộn Package giữa ba loại, kể cả khi trùng tên. Không thêm trùng Action Item; Thêm nội dung không tự ghi Result hoặc sửa định nghĩa nguồn.</li>
+</ul>
+<h4 id="testcase-popup-them-noi-dung">Testcase — Popup Thêm nội dung</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 3: Mỗi tab chỉ thấy nguồn của mình</td>
+<td>High</td>
+<td></td>
+<td>Flow 2 / REQ01 / REQ04</td>
+<td>Class Handler / Support của lớp</td>
+<td>Ba loại có Package riêng và nguồn ở ba trạng thái</td>
+<td><strong>Given</strong> mở popup Thêm ở từng tab<br><strong>When</strong> chọn Package, Category, Action Item rồi Thêm<br><strong>Then</strong> popup và nội dung lưu chỉ thuộc loại của tab đó, từ quy trình Công khai</td>
+<td>CSKH không thấy Package Tiêu chuẩn/Quy trình lớp; không trùng hoặc tự hoàn thành item.</td>
+</tr>
+<tr>
+<td>Case 4: Hủy hoặc lựa chọn không hợp lệ</td>
+<td>High</td>
+<td></td>
+<td>Flow 2 / EX01 / EX02</td>
+<td>Người đang chọn / người ngoài quyền</td>
+<td>Popup có lựa chọn nháp</td>
+<td><strong>Given</strong> Hủy hoặc gửi item sai nguồn/khác center/không có quyền/nguồn Nháp hoặc Vô hiệu<br><strong>When</strong> hệ thống xử lý<br><strong>Then</strong> không thay dữ liệu</td>
+<td>Không thêm item sai loại, vượt quyền hoặc chưa Công khai; nguồn vừa chuyển Vô hiệu trước lúc lưu cũng bị từ chối.</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="toast-phan-hoi-crud">Toast phản hồi CRUD</h3>
+<p align="center">
+  <a href="../../images/01-toast-crud.png"><img src="../../images/01-toast-crud.png" alt="Bốn trạng thái Toast CRUD" width="520" title="Nhấn để xem ảnh gốc"></a><br>
+  <em>Toast chung cho thao tác Thêm nội dung và cập nhật Result.</em>
+</p>
+
+<p><strong>Mô tả:</strong></p>
+<ul>
+<li>Dùng Toast chung sau khi lưu Thêm nội dung hoặc Result.</li>
+</ul>
+<p><strong>Giải thích thành phần:</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Loại Toast</th>
+<th>Khi sử dụng</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Thành Công</code></td>
+<td>Lưu thành công.</td>
+</tr>
+<tr>
+<td><code>Thông Báo</code></td>
+<td>Chỉ khi thao tác đã tiếp nhận nhưng còn chờ đồng bộ.</td>
+</tr>
+<tr>
+<td><code>Cảnh Báo</code></td>
+<td>Lựa chọn hoặc Result không hợp lệ.</td>
+</tr>
+<tr>
+<td><code>Có Lỗi Xảy Ra</code></td>
+<td>Lưu thất bại.</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Điểm cần lưu ý:</strong></p>
+<ul>
+<li>Mỗi lần lưu có tối đa một Toast; Hủy, chỉ xem và mở/thu gọn không có Toast CRUD.</li>
+</ul>
+<h4 id="testcase-toast-phan-hoi-crud">Testcase — Toast phản hồi CRUD</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 5: Phản hồi đúng kết quả</td>
+<td>High</td>
+<td></td>
+<td>REQ05 / EX03</td>
+<td>Class Handler / Support của lớp</td>
+<td>Có thao tác Thêm hoặc lưu Result</td>
+<td><strong>Given</strong> xác nhận lưu<br><strong>When</strong> backend trả thành công, validation hoặc lỗi<br><strong>Then</strong> hiển thị một Toast đúng loại</td>
+<td>Không báo thành công trước khi lưu; Hủy không Toast.</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="2-yeu-cau">2. Yêu cầu</h2>
+<h3 id="21-flow-chinh">2.1. Flow chính</h3>
+<p><strong>Flow 1 / REQ01: Xem tab quy trình</strong></p>
+<pre><code class="language-text">Người đã được add vào lớp mở một trong ba tab theo quyền
+      → Kiểm tra quan hệ user–lớp trước khi tải dữ liệu
+      → Tải nội dung đã gắn và Result của đúng lớp, đúng loại quy trình
+      → Hiển thị cây Action Board và tiến độ
+</code></pre>
+<p><strong>Flow 2 / REQ02 / REQ04 / REQ05: Thêm nội dung</strong></p>
+<pre><code class="language-text">Class Handler/Support của lớp bấm Thêm
+      → Popup chỉ tải quy trình Công khai cùng center: Lớp - Giáo viên/CSKH/Lớp học theo tab đã bấm
+      → Chọn Package → Category → Action Item từ nguồn đó
+      → Hủy: không lưu; Thêm: kiểm tra quyền, liên kết nguồn và trạng thái vẫn Công khai
+      → Thành công: gắn item vào lớp, cập nhật màn hình và một Toast
+</code></pre>
+<p><strong>Flow 3 / REQ02 / REQ03 / REQ05: Cập nhật Result</strong></p>
+<pre><code class="language-text">Class Handler/Support của lớp mở Action Item đã gắn
+      → Kiểm tra nguồn còn Công khai; Vô hiệu thì chỉ xem nội dung/Result cũ
+      → Nhập/chọn Result theo control của loại Action rồi lưu
+      → Thành công: cập nhật Result, tiến độ và một Toast
+      → Thất bại: giữ Result cũ, hiển thị phản hồi lỗi
+</code></pre>
+<h3 id="22-ngoai-le">2.2. Ngoại lệ</h3>
+<ul>
+<li><strong>EX01:</strong> Khi Thêm nội dung, Package/Category/Action Item không thuộc loại quy trình của tab, khác center với lớp, không còn hợp lệ, quy trình nguồn không còn Công khai hoặc đã gắn trùng → từ chối, không lưu một phần.</li>
+<li><strong>EX02:</strong> Chưa được add vào lớp → không vào Chi tiết lớp/tab hoặc đọc dữ liệu qua request; đã thuộc lớp nhưng không có role Class Handler/Support → từ chối Thêm/cập nhật Result.</li>
+<li><strong>EX03:</strong> Lưu lỗi → giữ lựa chọn hoặc Result cũ để thử lại; không báo thành công.</li>
+<li><strong>EX04:</strong> Cập nhật Result khi nguồn Vô hiệu → từ chối qua UI/request; nội dung và Result đã ghi vẫn hiển thị.</li>
+</ul>
+<h3 id="23-yeu-cau-khac">2.3. Yêu cầu khác</h3>
+<ul>
+<li><strong>REQ01 – Nguồn:</strong> Ba loại quy trình được định nghĩa riêng ngoài lớp. Nguồn ICS dùng chung bảng ComGao và theo center. Popup chỉ hiển thị Package từ quy trình Công khai cùng center: tab Tiêu chuẩn lớp - giáo viên lấy Lớp - Giáo viên, CSKH lấy CSKH (Support), Quy trình lớp lấy Lớp học.</li>
+<li><strong>REQ02 – Quyền:</strong> Phải được add vào lớp mới được vào Chi tiết lớp và xem tab theo quyền. Chỉ Class Handler/Support của lớp được Thêm và cập nhật Result; không phụ thuộc người đã thêm item. Ngoại lệ: Giáo viên của lớp tick Action <code>Xác thực</code> có mình trong Người gán (tab Tiêu chuẩn lớp - giáo viên).</li>
+<li><strong>REQ03 – Result:</strong> Lưu riêng theo lớp, loại quy trình và Action Item; tiến độ theo Action Board. Định nghĩa đã Công khai bị khóa thêm/sửa/xóa nên không có tình huống đổi Loại task hoặc xóa item nguồn sau khi gắn vào lớp. Khi nguồn Công khai, cập nhật Result theo quyền lớp. Khi nguồn Vô hiệu, vẫn hiện nội dung/Result cũ nhưng chỉ xem; Công khai lại thì áp dụng quyền cập nhật theo role lớp.</li>
+<li><strong>REQ04 – Chọn nội dung:</strong> Chọn nhiều cấp; Hủy không lưu; không thêm trùng hoặc tự ghi Result; chỉ lưu nguồn còn Công khai.</li>
+<li><strong>REQ05 – Phản hồi:</strong> Lưu thành công/lỗi có một Toast đúng kết quả; Hủy và chỉ xem không có Toast CRUD.</li>
+</ul>
+<h3 id="24-rang-buoc">2.4. Ràng buộc</h3>
+<h4 id="quyen">Quyền</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Role/phạm vi</th>
+<th style="text-align: center;">Xem tab</th>
+<th style="text-align: center;">Thêm nội dung</th>
+<th style="text-align: center;">Cập nhật Result</th>
+<th style="text-align: center;">Sửa định nghĩa nguồn trong lớp</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Class Handler đã được add vào lớp</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">❌</td>
+</tr>
+<tr>
+<td>Support đã được add vào lớp</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">❌</td>
+</tr>
+<tr>
+<td>Giáo viên của lớp, nằm trong Người gán của Action <code>Xác thực</code> (tab Tiêu chuẩn lớp - giáo viên)</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">✅ chỉ tick item <code>Xác thực</code> đó</td>
+<td style="text-align: center;">❌</td>
+</tr>
+<tr>
+<td>Thành viên lớp có role khác và có quyền mở tab</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+</tr>
+<tr>
+<td>Người chưa được add vào lớp, kể cả có role hệ thống khác</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+</tr>
+</tbody>
+</table></div>
+<h4 id="pham-vi-du-lieu">Phạm vi dữ liệu</h4>
+<ul>
+<li>Quy trình nguồn và lớp thuộc cùng center; kiểm tra center khi tải popup, thêm nội dung và cập nhật Result.</li>
+<li>Kiểm tra quan hệ user–lớp trước khi đọc; khi lưu kiểm tra role <strong>trong lớp hiện tại</strong>, trạng thái nguồn còn Công khai và liên kết Package → Category → Action Item, kể cả request trực tiếp.</li>
+<li>Bảng quyền Thêm/cập nhật Result chỉ áp dụng khi nguồn Công khai. Với nguồn Vô hiệu đã thêm, mọi role chỉ xem nội dung và Result.</li>
+<li>Result của lớp và tab này không thay Result lớp/tab khác hoặc nội dung định nghĩa nguồn.</li>
+</ul>
+<h2 id="3-can-xac-nhan">3. Cần xác nhận</h2>
+<ul>
+<li>Quyền xem tab của các role <strong>đã được add vào lớp</strong> ngoài Class Handler/Support chưa được nêu; người ngoài lớp không có quyền xem.</li>
+</ul>
+</article>
+    <p class="source-note">Nguồn: class_detail_processes_requirements.md · SHA-256 e1b7359787f1abcc7f615a20191d8d62707614d377720136013bfa352ebc8d3d</p>
+  </main>
+  <script>
+    const article = document.getElementById('document');
+    const nav = document.getElementById('docNav');
+    const headings = [...article.querySelectorAll('h2')];
+    headings.forEach((heading, index) => {
+      const link = document.createElement('a');
+      link.href = `#${heading.id}`;
+      const number = document.createElement('span');
+      number.className = 'nav-num';
+      number.textContent = String(index + 1).padStart(2, '0');
+      link.append(number, document.createTextNode(heading.textContent));
+      nav.append(link);
+    });
+
+    const navLinks = [...nav.querySelectorAll('a')];
+    const observer = new IntersectionObserver(entries => {
+      const current = entries.filter(item => item.isIntersecting).sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
+      if (!current) return;
+      navLinks.forEach(link => link.classList.toggle('active', link.hash === `#${current.target.id}`));
+    }, {rootMargin: '-18% 0px -68% 0px', threshold: [0, .2, .5]});
+    headings.forEach(heading => observer.observe(heading));
+    if (navLinks[0]) navLinks[0].classList.add('active');
+
+    const testcaseHeadings = [...article.querySelectorAll('h4, h5')]
+      .filter(heading => heading.textContent.trim().startsWith('Testcase'));
+    const testcaseGroups = testcaseHeadings
+      .map(heading => ({heading, tableWrap: heading.nextElementSibling}))
+      .filter(group => group.tableWrap?.classList.contains('table-wrap'));
+    if (testcaseGroups.length) {
+        const tableWraps = testcaseGroups.map(group => group.tableWrap);
+        tableWraps.forEach(tableWrap => tableWrap.classList.add('testcase-table'));
+        const rows = tableWraps.flatMap(tableWrap => [...tableWrap.querySelectorAll('tbody tr')]);
+        const tools = document.createElement('div');
+        tools.className = 'case-tools';
+        const input = document.createElement('input');
+        input.type = 'search';
+        input.placeholder = 'Tìm testcase, Flow, REQ, EX hoặc nội dung…';
+        input.setAttribute('aria-label', 'Tìm testcase');
+        const count = document.createElement('span');
+        count.className = 'case-count';
+        tools.append(input, count);
+        testcaseGroups[0].heading.before(tools);
+        const filterRows = () => {
+          const query = input.value.trim().toLocaleLowerCase('vi');
+          let visible = 0;
+          rows.forEach(row => {
+            const match = !query || row.textContent.toLocaleLowerCase('vi').includes(query);
+            row.hidden = !match;
+            if (match) visible += 1;
+          });
+          testcaseGroups.forEach(({heading, tableWrap}) => {
+            const hasVisibleRow = [...tableWrap.querySelectorAll('tbody tr')]
+              .some(row => !row.hidden);
+            heading.hidden = !hasVisibleRow;
+            tableWrap.hidden = !hasVisibleRow;
+          });
+          count.textContent = `${visible}/${rows.length} testcase`;
+        };
+        input.addEventListener('input', filterRows);
+        filterRows();
+    }
+  </script>
+</body>
+</html>

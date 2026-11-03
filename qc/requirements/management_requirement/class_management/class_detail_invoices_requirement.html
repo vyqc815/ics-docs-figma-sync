@@ -1,0 +1,1483 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Requirement Chi tiết lớp học — Hóa đơn">
+  <link rel="icon" href="data:,">
+  <title>Chi tiết lớp học — Hóa đơn — Requirement</title>
+  <style>
+    :root {
+      --orange-700: #c83f00;
+      --orange-600: #e84c00;
+      --orange-500: #f45b0a;
+      --orange-400: #ff7a32;
+      --orange-100: #fff0e8;
+      --orange-50: #fff8f4;
+      --navy-950: #101828;
+      --navy-900: #172033;
+      --navy-800: #243047;
+      --slate-700: #344054;
+      --slate-600: #475467;
+      --slate-500: #667085;
+      --slate-400: #98a2b3;
+      --slate-300: #d0d5dd;
+      --slate-200: #e4e7ec;
+      --slate-100: #f2f4f7;
+      --slate-50: #f8fafc;
+      --white: #ffffff;
+      --green: #159447;
+      --blue: #2154c5;
+      --yellow: #b77900;
+      --red: #c92a2a;
+      --purple: #6941c6;
+      --shadow-sm: 0 1px 2px rgba(16, 24, 40, .06);
+      --shadow-md: 0 12px 32px rgba(16, 24, 40, .10);
+      --shadow-lg: 0 24px 64px rgba(16, 24, 40, .16);
+      --radius-sm: 10px;
+      --radius: 16px;
+      --radius-lg: 24px;
+      --sidebar: 286px;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      color: var(--navy-950);
+      background:
+        radial-gradient(circle at 88% 5%, rgba(244, 91, 10, .10), transparent 24rem),
+        var(--slate-50);
+      font: 15px/1.65 Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      text-rendering: optimizeLegibility;
+    }
+    a { color: inherit; }
+    img { max-width: 100%; }
+    button, input, select { font: inherit; }
+    code {
+      padding: .12rem .38rem;
+      border: 1px solid #fed7c3;
+      border-radius: 6px;
+      color: var(--orange-700);
+      background: var(--orange-50);
+      font: 600 .9em ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    }
+
+    .skip-link {
+      position: fixed;
+      z-index: 999;
+      top: 12px;
+      left: 12px;
+      padding: 10px 14px;
+      border-radius: 9px;
+      color: var(--white);
+      background: var(--navy-950);
+      transform: translateY(-150%);
+    }
+    .skip-link:focus { transform: none; }
+
+    .sidebar {
+      position: fixed;
+      z-index: 30;
+      inset: 0 auto 0 0;
+      width: var(--sidebar);
+      padding: 22px 18px;
+      overflow-y: auto;
+      color: #f8fafc;
+      background:
+        linear-gradient(155deg, rgba(255, 122, 50, .24), transparent 26%),
+        linear-gradient(180deg, #192338 0%, #111827 100%);
+      border-right: 1px solid rgba(255, 255, 255, .08);
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 4px 8px 22px;
+      border-bottom: 1px solid rgba(255, 255, 255, .10);
+    }
+    .brand-mark {
+      display: grid;
+      width: 44px;
+      height: 44px;
+      place-items: center;
+      border-radius: 14px;
+      color: var(--white);
+      background: linear-gradient(135deg, var(--orange-400), var(--orange-600));
+      box-shadow: 0 10px 26px rgba(244, 91, 10, .35);
+      font-weight: 900;
+      letter-spacing: -.06em;
+    }
+    .brand strong { display: block; font-size: 16px; }
+    .brand small { color: #aeb8c9; }
+    .nav-title {
+      margin: 24px 10px 8px;
+      color: #8f9aae;
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+    .nav { display: grid; gap: 4px; }
+    .nav a {
+      display: flex;
+      align-items: center;
+      gap: 11px;
+      padding: 10px 12px;
+      border-radius: 10px;
+      color: #cbd5e1;
+      text-decoration: none;
+      transition: .18s ease;
+    }
+    .nav a:hover, .nav a.active {
+      color: var(--white);
+      background: rgba(255, 255, 255, .09);
+    }
+    .nav a.active { box-shadow: inset 3px 0 var(--orange-400); }
+    .nav-num {
+      display: grid;
+      width: 25px;
+      height: 25px;
+      flex: 0 0 auto;
+      place-items: center;
+      border: 1px solid rgba(255, 255, 255, .15);
+      border-radius: 8px;
+      font-size: 11px;
+      font-weight: 800;
+    }
+    .sidebar-footer {
+      margin-top: 26px;
+      padding: 14px;
+      border: 1px solid rgba(255, 255, 255, .10);
+      border-radius: 14px;
+      color: #aeb8c9;
+      background: rgba(255, 255, 255, .04);
+      font-size: 12px;
+    }
+    .sidebar-footer a { color: #ffd8c5; }
+
+    main {
+      width: min(1500px, calc(100% - var(--sidebar)));
+      margin-left: var(--sidebar);
+      padding: 34px clamp(24px, 4vw, 64px) 80px;
+    }
+    section { scroll-margin-top: 24px; }
+    .hero {
+      position: relative;
+      padding: clamp(30px, 5vw, 56px);
+      overflow: hidden;
+      border: 1px solid rgba(255, 255, 255, .08);
+      border-radius: var(--radius-lg);
+      color: var(--white);
+      background:
+        linear-gradient(105deg, rgba(16, 24, 40, .97) 0%, rgba(23, 32, 51, .94) 62%, rgba(109, 45, 9, .90) 100%);
+      box-shadow: var(--shadow-lg);
+    }
+    .hero::after {
+      content: "";
+      position: absolute;
+      width: 360px;
+      height: 360px;
+      top: -190px;
+      right: -80px;
+      border: 70px solid rgba(255, 122, 50, .15);
+      border-radius: 50%;
+    }
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 10px;
+      border: 1px solid rgba(255, 255, 255, .15);
+      border-radius: 999px;
+      color: #ffd8c5;
+      background: rgba(255, 255, 255, .06);
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+    .hero h1 {
+      max-width: 900px;
+      margin: 18px 0 12px;
+      font-size: clamp(34px, 5vw, 64px);
+      line-height: 1.03;
+      letter-spacing: -.045em;
+    }
+    .hero p { max-width: 780px; margin: 0; color: #cbd5e1; font-size: 17px; }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 25px; }
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      min-height: 42px;
+      padding: 9px 14px;
+      border: 1px solid transparent;
+      border-radius: 10px;
+      color: var(--white);
+      background: var(--orange-500);
+      text-decoration: none;
+      cursor: pointer;
+      transition: .18s ease;
+    }
+    .button:hover { transform: translateY(-1px); background: var(--orange-600); }
+    .button.secondary { border-color: rgba(255, 255, 255, .15); background: rgba(255, 255, 255, .07); }
+    .button.ghost { color: var(--slate-700); border-color: var(--slate-300); background: var(--white); }
+    .button.small { min-height: 36px; padding: 7px 11px; font-size: 13px; }
+
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 14px;
+      margin-top: 18px;
+    }
+    .stat {
+      padding: 18px;
+      border: 1px solid var(--slate-200);
+      border-radius: var(--radius);
+      background: rgba(255, 255, 255, .86);
+      box-shadow: var(--shadow-sm);
+    }
+    .stat strong { display: block; color: var(--orange-600); font-size: 30px; line-height: 1; }
+    .stat span { display: block; margin-top: 7px; color: var(--slate-600); font-weight: 650; }
+
+    .section-head {
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 24px;
+      margin: 64px 0 20px;
+    }
+    .section-kicker {
+      margin: 0 0 6px;
+      color: var(--orange-600);
+      font-size: 12px;
+      font-weight: 850;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+    .section-head h2 { margin: 0; font-size: clamp(27px, 4vw, 40px); letter-spacing: -.035em; }
+    .section-head p { max-width: 600px; margin: 8px 0 0; color: var(--slate-600); }
+
+    .panel {
+      padding: clamp(20px, 3vw, 30px);
+      border: 1px solid var(--slate-200);
+      border-radius: var(--radius-lg);
+      background: var(--white);
+      box-shadow: var(--shadow-sm);
+    }
+    .panel + .panel { margin-top: 18px; }
+    .panel h3 { margin: 0 0 14px; font-size: 21px; letter-spacing: -.02em; }
+    .panel h4 { margin: 26px 0 10px; }
+    .muted { color: var(--slate-600); }
+    .note {
+      padding: 15px 17px;
+      border-left: 4px solid var(--orange-500);
+      border-radius: 0 12px 12px 0;
+      color: var(--slate-700);
+      background: var(--orange-50);
+    }
+
+    .mockup {
+      position: relative;
+      padding: 12px;
+      border: 1px solid var(--slate-200);
+      border-radius: 18px;
+      background: linear-gradient(145deg, #fff, #f4f6f9);
+      box-shadow: var(--shadow-md);
+    }
+    .mockup a { display: block; overflow: hidden; border-radius: 12px; }
+    .mockup img { display: block; width: 100%; transition: transform .3s ease; }
+    .mockup a:hover img { transform: scale(1.01); }
+    .mockup figcaption { padding: 12px 4px 2px; color: var(--slate-600); font-size: 13px; }
+
+    .grid-2 { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
+    .grid-3 { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+    .grid-4 { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 14px; }
+    .card {
+      padding: 18px;
+      border: 1px solid var(--slate-200);
+      border-radius: var(--radius);
+      background: var(--white);
+      box-shadow: var(--shadow-sm);
+    }
+    .card h3, .card h4 { margin: 0 0 8px; }
+    .card p { margin: 0; color: var(--slate-600); }
+    .card-accent { border-top: 4px solid var(--orange-500); }
+
+    .column-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+    .column-item {
+      min-height: 124px;
+      padding: 15px;
+      border: 1px solid var(--slate-200);
+      border-radius: 14px;
+      background: var(--slate-50);
+    }
+    .column-item strong { display: block; margin-bottom: 5px; color: var(--navy-900); }
+    .column-item span { color: var(--slate-600); font-size: 13px; }
+
+    .status-card { display: flex; align-items: center; gap: 12px; }
+    .status-card img { width: 42px; height: 42px; }
+    .status-card small { display: block; color: var(--slate-500); }
+
+    .tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      padding: 4px 9px;
+      border-radius: 999px;
+      color: var(--orange-700);
+      background: var(--orange-100);
+      font-size: 12px;
+      font-weight: 800;
+    }
+    .tag.high { color: #9d174d; background: #fce7f3; }
+    .tag.medium { color: #92400e; background: #fef3c7; }
+    .tag.req { color: #3730a3; background: #e0e7ff; }
+    .tag.ex { color: #b42318; background: #fee4e2; }
+
+    .flow-list { display: grid; gap: 14px; counter-reset: flow; }
+    .flow {
+      position: relative;
+      padding: 22px 22px 22px 68px;
+      border: 1px solid var(--slate-200);
+      border-radius: var(--radius);
+      background: var(--white);
+    }
+    .flow::before {
+      counter-increment: flow;
+      content: counter(flow, decimal-leading-zero);
+      position: absolute;
+      top: 20px;
+      left: 18px;
+      display: grid;
+      width: 36px;
+      height: 36px;
+      place-items: center;
+      border-radius: 11px;
+      color: var(--white);
+      background: var(--orange-500);
+      font-weight: 900;
+    }
+    .flow h3 { margin: 0 0 8px; }
+    .flow ol { margin: 0; padding-left: 20px; color: var(--slate-700); }
+
+    .exception { border-left: 4px solid #ef4444; }
+    .exception strong { color: var(--red); }
+
+    .formula-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; }
+    .formula {
+      padding: 18px;
+      border: 1px solid #ffd6c2;
+      border-radius: 16px;
+      background: linear-gradient(160deg, #fff, var(--orange-50));
+    }
+    .formula h4 { margin: 0 0 12px; color: var(--orange-700); }
+    .fraction { display: grid; justify-items: center; color: var(--navy-900); font-weight: 720; text-align: center; }
+    .fraction .top { padding: 0 10px 7px; border-bottom: 2px solid var(--navy-800); }
+    .fraction .bottom { padding-top: 7px; }
+    .formula .teacher { margin-top: 16px; padding-top: 12px; border-top: 1px dashed #f5b896; color: var(--slate-600); font-size: 13px; }
+
+    .filters {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      align-items: center;
+      padding: 14px;
+      border: 1px solid var(--slate-200);
+      border-radius: 14px;
+      background: var(--white);
+      position: sticky;
+      top: 10px;
+      z-index: 10;
+      box-shadow: var(--shadow-md);
+    }
+    .search {
+      min-width: min(100%, 320px);
+      flex: 1 1 260px;
+      height: 42px;
+      padding: 0 13px;
+      border: 1px solid var(--slate-300);
+      border-radius: 10px;
+      color: var(--navy-950);
+      background: var(--white);
+      outline: none;
+    }
+    .search:focus { border-color: var(--orange-500); box-shadow: 0 0 0 4px rgba(244, 91, 10, .12); }
+    .testcases { display: grid; gap: 10px; margin-top: 16px; }
+    .testcase {
+      border: 1px solid var(--slate-200);
+      border-radius: 14px;
+      background: var(--white);
+      overflow: clip;
+    }
+    .testcase[hidden] { display: none; }
+    .testcase summary {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 15px 17px;
+      cursor: pointer;
+      list-style: none;
+    }
+    .testcase summary::-webkit-details-marker { display: none; }
+    .testcase summary::after { content: "+"; margin-left: auto; color: var(--orange-600); font-size: 22px; font-weight: 700; }
+    .testcase[open] summary::after { content: "−"; }
+    .testcase-title { min-width: 0; font-weight: 780; }
+    .case-body {
+      display: grid;
+      grid-template-columns: minmax(180px, .7fr) minmax(0, 1.3fr);
+      gap: 18px;
+      padding: 18px;
+      border-top: 1px solid var(--slate-200);
+      background: var(--slate-50);
+    }
+    .case-meta { color: var(--slate-600); }
+    .case-meta div + div { margin-top: 8px; }
+    .case-steps { display: grid; gap: 10px; }
+    .step { padding: 10px 12px; border-left: 3px solid var(--orange-400); background: var(--white); }
+    .expected { margin: 14px 0 0; padding-left: 20px; }
+    .expected li + li { margin-top: 4px; }
+    .empty-filter { display: none; padding: 28px; color: var(--slate-600); text-align: center; }
+
+    .question-list { display: grid; gap: 10px; margin: 0; padding: 0; counter-reset: question; list-style: none; }
+    .question-list li {
+      position: relative;
+      padding: 14px 16px 14px 54px;
+      border: 1px solid #f4d8a4;
+      border-radius: 13px;
+      background: #fffbeb;
+      color: #664d03;
+    }
+    .question-list li::before {
+      counter-increment: question;
+      content: counter(question);
+      position: absolute;
+      top: 12px;
+      left: 14px;
+      display: grid;
+      width: 28px;
+      height: 28px;
+      place-items: center;
+      border-radius: 9px;
+      color: #fff;
+      background: #d99100;
+      font-weight: 850;
+    }
+
+    .footer {
+      margin-top: 64px;
+      padding-top: 24px;
+      border-top: 1px solid var(--slate-200);
+      color: var(--slate-500);
+      text-align: center;
+    }
+
+    @media (max-width: 1120px) {
+      :root { --sidebar: 244px; }
+      .column-grid, .grid-3, .formula-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .stats { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
+    @media (max-width: 780px) {
+      .sidebar { position: static; width: auto; padding: 14px; }
+      .brand { padding-bottom: 12px; }
+      .nav-title, .sidebar-footer { display: none; }
+      .nav { display: flex; overflow-x: auto; padding-top: 10px; }
+      .nav a { flex: 0 0 auto; }
+      main { width: 100%; margin: 0; padding: 18px 14px 60px; }
+      .hero { border-radius: 18px; }
+      .grid-2, .grid-3, .grid-4, .column-grid, .formula-grid, .case-body { grid-template-columns: 1fr; }
+      .section-head { align-items: start; flex-direction: column; }
+      .filters { position: static; }
+    }
+    @media print {
+      body { background: #fff; font-size: 11px; }
+      .sidebar, .hero-actions, .filters, .skip-link { display: none !important; }
+      main { width: 100%; margin: 0; padding: 0; }
+      .hero { color: #111; background: #fff; border: 2px solid #111; box-shadow: none; }
+      .hero p { color: #333; }
+      .panel, .card, .stat, .mockup, .testcase { break-inside: avoid; box-shadow: none; }
+      .section-head { margin-top: 32px; }
+      .testcase { display: block !important; }
+      .testcase summary::after { display: none; }
+      .testcase:not([open]) .case-body { display: grid; }
+    }
+
+    .doc-shell { min-width: 0; }
+    .doc-toolbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      margin-bottom: 18px;
+      padding: 14px 16px;
+      border: 1px solid var(--slate-200);
+      border-radius: 14px;
+      background: rgba(255,255,255,.92);
+      box-shadow: var(--shadow-sm);
+    }
+    .doc-toolbar-left, .doc-toolbar-right { display: flex; flex-wrap: wrap; align-items: center; gap: 9px; }
+    .sync-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      padding: 6px 10px;
+      border-radius: 999px;
+      color: #067647;
+      background: #ecfdf3;
+      border: 1px solid #abefc6;
+      font-size: 12px;
+      font-weight: 800;
+    }
+    .sync-badge::before { content: "✓"; }
+    .hash { color: var(--slate-500); font: 12px ui-monospace, SFMono-Regular, Menlo, monospace; }
+    .markdown-body {
+      padding: clamp(24px, 4vw, 54px);
+      border: 1px solid var(--slate-200);
+      border-radius: var(--radius-lg);
+      background: var(--white);
+      box-shadow: var(--shadow-md);
+      overflow: hidden;
+    }
+    .markdown-body > h1 {
+      position: relative;
+      margin: -54px -54px 42px;
+      padding: 62px 54px 54px;
+      color: var(--white);
+      background:
+        radial-gradient(circle at 88% 10%, rgba(255,122,50,.36), transparent 20rem),
+        linear-gradient(115deg, var(--navy-950), #243047 68%, #713209);
+      font-size: clamp(34px, 5vw, 62px);
+      line-height: 1.05;
+      letter-spacing: -.045em;
+    }
+    .markdown-body h2 {
+      margin: 70px 0 24px;
+      padding: 0 0 13px;
+      border-bottom: 2px solid var(--slate-200);
+      font-size: clamp(27px, 4vw, 39px);
+      line-height: 1.15;
+      letter-spacing: -.035em;
+      scroll-margin-top: 24px;
+    }
+    .markdown-body h2::first-letter { color: var(--orange-600); }
+    .markdown-body h3 {
+      margin: 38px 0 16px;
+      color: var(--navy-900);
+      font-size: 23px;
+      line-height: 1.25;
+      letter-spacing: -.02em;
+      scroll-margin-top: 24px;
+    }
+    .markdown-body h4 {
+      margin: 28px 0 12px;
+      color: var(--orange-700);
+      font-size: 17px;
+      scroll-margin-top: 24px;
+    }
+    .markdown-body p { margin: 12px 0; }
+    .markdown-body strong { color: var(--navy-900); }
+    .markdown-body ul, .markdown-body ol { padding-left: 1.35rem; }
+    .markdown-body li { margin: 6px 0; }
+    .markdown-body li::marker { color: var(--orange-500); font-weight: 800; }
+    .markdown-body hr {
+      height: 1px;
+      margin: 48px 0;
+      border: 0;
+      background: linear-gradient(90deg, transparent, var(--slate-300), transparent);
+    }
+    .markdown-body > p[align="center"] {
+      margin: 22px 0 28px;
+      padding: 12px;
+      border: 1px solid var(--slate-200);
+      border-radius: 18px;
+      background: linear-gradient(145deg, #fff, #f5f7fa);
+      box-shadow: var(--shadow-md);
+    }
+    .markdown-body > p[align="center"] a { display: inline-block; max-width: 100%; }
+    .markdown-body > p[align="center"] img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+      margin: auto;
+      border-radius: 12px;
+    }
+    .markdown-body > p[align="center"] em {
+      display: block;
+      margin-top: 10px;
+      color: var(--slate-500);
+      font-size: 13px;
+    }
+    .table-wrap {
+      width: 100%;
+      margin: 18px 0 28px;
+      overflow: auto;
+      border: 1px solid var(--slate-200);
+      border-radius: 15px;
+      background: var(--white);
+      box-shadow: var(--shadow-sm);
+    }
+    .markdown-body table {
+      width: 100%;
+      min-width: 720px;
+      border-collapse: separate;
+      border-spacing: 0;
+      font-size: 14px;
+    }
+    .markdown-body th {
+      position: sticky;
+      top: 0;
+      z-index: 2;
+      padding: 12px 14px;
+      color: var(--white);
+      background: var(--navy-900);
+      border-bottom: 1px solid var(--navy-800);
+      text-align: left;
+      white-space: nowrap;
+    }
+    .markdown-body td {
+      padding: 12px 14px;
+      border-bottom: 1px solid var(--slate-200);
+      vertical-align: top;
+    }
+    .markdown-body tbody tr:nth-child(even) td { background: var(--slate-50); }
+    .markdown-body tbody tr:hover td { background: var(--orange-50); }
+    .markdown-body tbody tr:last-child td { border-bottom: 0; }
+    .markdown-body td img { display: block; width: 36px; height: 36px; max-width: none; }
+    .markdown-body pre {
+      position: relative;
+      margin: 16px 0 24px;
+      padding: 18px 20px;
+      overflow: auto;
+      border: 1px solid #ffd3bd;
+      border-radius: 14px;
+      color: #fff7ed;
+      background: linear-gradient(145deg, #172033, #222f48);
+      box-shadow: var(--shadow-sm);
+      font: 13px/1.75 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    }
+    .markdown-body pre code { padding: 0; border: 0; color: inherit; background: none; font: inherit; }
+    .markdown-body blockquote {
+      margin: 18px 0;
+      padding: 13px 16px;
+      border-left: 4px solid var(--orange-500);
+      border-radius: 0 12px 12px 0;
+      color: var(--slate-700);
+      background: var(--orange-50);
+    }
+    .case-tools {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 10px;
+      margin: 12px 0 14px;
+      padding: 13px;
+      border: 1px solid var(--slate-200);
+      border-radius: 13px;
+      background: var(--slate-50);
+    }
+    .case-tools input {
+      flex: 1 1 280px;
+      height: 42px;
+      padding: 0 13px;
+      border: 1px solid var(--slate-300);
+      border-radius: 10px;
+      outline: none;
+    }
+    .case-tools input:focus { border-color: var(--orange-500); box-shadow: 0 0 0 4px rgba(244,91,10,.12); }
+    .case-count { color: var(--orange-700); font-weight: 800; white-space: nowrap; }
+    .testcase-table table { min-width: 1500px; }
+    .testcase-table th:first-child, .testcase-table td:first-child {
+      position: sticky;
+      left: 0;
+      z-index: 1;
+      min-width: 230px;
+      box-shadow: 1px 0 0 var(--slate-200);
+    }
+    .testcase-table th:first-child { z-index: 3; background: var(--navy-900); }
+    .testcase-table td:first-child { background: var(--white); font-weight: 750; }
+    .testcase-table tbody tr:nth-child(even) td:first-child { background: var(--slate-50); }
+    .testcase-table tbody tr:hover td:first-child { background: var(--orange-50); }
+    .source-note {
+      margin-top: 18px;
+      color: var(--slate-500);
+      text-align: center;
+      font-size: 12px;
+    }
+    @media (max-width: 780px) {
+      .doc-toolbar { align-items: flex-start; flex-direction: column; }
+      .markdown-body { padding: 20px 16px; border-radius: 16px; }
+      .markdown-body > h1 { margin: -20px -16px 32px; padding: 40px 20px 34px; }
+      .markdown-body h2 { margin-top: 48px; }
+      .markdown-body table { font-size: 13px; }
+    }
+    @media print {
+      .doc-toolbar, .case-tools { display: none !important; }
+      .markdown-body { padding: 0; border: 0; box-shadow: none; overflow: visible; }
+      .markdown-body > h1 { margin: 0 0 32px; padding: 30px; color: #111; background: #fff; border: 2px solid #111; }
+      .table-wrap { overflow: visible; box-shadow: none; }
+      .markdown-body table { min-width: 0 !important; font-size: 9px; }
+      .markdown-body th { position: static; color: #111; background: #eee; }
+      .testcase-table th:first-child, .testcase-table td:first-child { position: static; }
+    }
+</style>
+</head>
+<body>
+  <a class="skip-link" href="#document">Đi đến nội dung chính</a>
+  <aside class="sidebar" aria-label="Mục lục requirement">
+    <div class="brand">
+      <div class="brand-mark">ics</div>
+      <div><strong>ICS Requirement</strong><small>Requirement UI, filter học viên, cột ngày tạo, dữ liệu hóa đơn và học phí, testcase</small></div>
+    </div>
+    <div class="nav-title">Nội dung Markdown</div>
+    <nav id="docNav" class="nav"></nav>
+    <div class="sidebar-footer">
+      HTML được render trực tiếp từ Markdown nguồn.<br>
+      <a href="./class_detail_invoices_requirements.md">Mở file Markdown</a>
+    </div>
+  </aside>
+  <main class="doc-shell">
+    <div class="doc-toolbar">
+      <div class="doc-toolbar-left">
+        <span class="sync-badge">Đồng bộ 100% từ Markdown</span>
+        <span class="hash">SHA-256: d6ea9f6bc531…</span>
+      </div>
+      <div class="doc-toolbar-right">
+        <a class="button ghost small" href="./class_detail_invoices_requirements.md">Xem Markdown</a>
+        <button class="button small" type="button" onclick="window.print()">In / Lưu PDF</button>
+      </div>
+    </div>
+    <article id="document" class="markdown-body" data-source-sha256="d6ea9f6bc531398420de58c32039dc5d3447438ee6d3606a0f220deccf1de882">
+<h1 id="chi-tiet-lop-hoc-tab-hoa-on">Chi tiết lớp học — Tab Hóa đơn</h1>
+<blockquote>
+<p>Requirement này đặc tả màn <strong>Chi tiết lớp học → Cài đặt → Tab Hóa đơn</strong>. Tab chỉ hiển thị thông tin hóa đơn và học phí đã dùng trong lớp, có cột Tên học viên, cột Ngày tạo hóa đơn và filter Học viên cho phép chọn một hoặc nhiều người. Hóa đơn được tạo tại Cơm Gạo rồi đồng bộ sang ICS; cột Ngày tạo hóa đơn hiển thị ngày tạo gốc tại Cơm Gạo, không phải ngày đồng bộ. <strong>Không có filter ngày tạo hóa đơn.</strong> Thao tác ghi nhận học phí được đặc tả tại <a href="./class_detail_students_requirements.md">Tab Học viên</a>.</p>
+</blockquote>
+<h2 id="1-ui">1. UI</h2>
+<h3 id="tab-hoa-on-bang-hoa-on-a-dung">Tab Hóa đơn — Bảng Hóa đơn đã dùng</h3>
+<p align="center">
+  <a href="./images/30-class-detail-invoices.png"><img src="./images/30-class-detail-invoices.png" alt="Chi tiết lớp học — Tab Hóa đơn" width="900" title="Nhấn để xem ảnh gốc"></a><br>
+  <em>Ảnh tham chiếu bố cục cũ — UI cần bổ sung cột Tên học viên, cột Ngày tạo hóa đơn và filter Học viên chọn một/nhiều người; không có filter ngày tạo; nhấn để xem ảnh gốc</em>
+</p>
+
+<p><strong>Mô tả:</strong> Hiển thị các hóa đơn đã được dùng để ghi nhận học phí cho lớp hiện tại. Đây là màn chỉ xem, không có thao tác CRUD hóa đơn hoặc học phí.</p>
+<p><strong>Giải thích field/thành phần:</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Thành phần</th>
+<th>Yêu cầu</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Tab</td>
+<td>Nhãn <code>Hóa đơn</code>; làm nổi bật khi đang chọn.</td>
+</tr>
+<tr>
+<td>Tiêu đề</td>
+<td><code>Hóa đơn đã dùng</code>.</td>
+</tr>
+<tr>
+<td>Tên hóa đơn</td>
+<td>Hiển thị tên/mô tả hóa đơn lấy từ dữ liệu hóa đơn; cho xuống dòng để đọc đầy đủ như ảnh.</td>
+</tr>
+<tr>
+<td>Tên học viên</td>
+<td>Cột riêng hiển thị tên học viên liên kết với hóa đơn đã dùng trong lớp; lấy theo quan hệ dữ liệu và student_id, không tách tên từ chuỗi Tên hóa đơn.</td>
+</tr>
+<tr>
+<td>Ngày tạo hóa đơn</td>
+<td>Cột chỉ xem, hiển thị ngày tạo gốc từ Cơm Gạo được đồng bộ sang ICS; không phải ngày đồng bộ hay ngày ghi nhận học phí. Không có control lọc ngày.</td>
+</tr>
+<tr>
+<td>Giá trị</td>
+<td>Tổng giá trị của hóa đơn, không phải số dư còn lại hoặc học phí của riêng lớp này.</td>
+</tr>
+<tr>
+<td>Giá trị dùng trong lớp</td>
+<td>Tổng học phí được ghi nhận từ hóa đơn đó vào <strong>lớp đang xem</strong>.</td>
+</tr>
+<tr>
+<td>Mỗi dòng</td>
+<td>Đại diện cho một hóa đơn, nhận diện bằng invoice_id. Một hóa đơn dùng nhiều lần trong cùng lớp vẫn chỉ có một dòng.</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Điểm cần lưu ý:</strong></p>
+<ul>
+<li>Chỉ <code>Admin</code>, <code>Class Handler</code> và <code>Support</code> được xem tab và thông tin tiền trong phạm vi lớp được phân quyền. <code>Teacher</code> và mọi role khác không được xem; backend phải từ chối cả request trực tiếp.</li>
+<li>Không có nút thêm/sửa/xóa, input sửa tiền hoặc popup học phí trong tab này. Bấm dòng không tự mở flow chỉnh sửa.</li>
+<li>Không đưa mọi hóa đơn của học viên vào bảng: chỉ hiển thị hóa đơn có học phí đã được ghi nhận cho chính lớp này.</li>
+<li>Không lọc bỏ giao dịch tài chính chỉ vì học viên đã Rời lớp, Nghỉ học hoặc bị xóa mềm khỏi danh sách học viên; dữ liệu học phí vẫn được giữ theo nghiệp vụ đã chốt.</li>
+<li>Danh sách dùng load-more khi cuộn xuống gần cuối, không có phân trang theo số trang. Chỉ bổ sung filter <code>Học viên</code>, cho phép chọn một hoặc nhiều người; không có filter <code>Ngày tạo hóa đơn</code>.</li>
+<li>Cột Tên học viên không phải nút mở/chỉnh sửa học viên. Cột Ngày tạo hóa đơn chỉ hiển thị, không có thao tác chỉnh ngày tại tab.</li>
+</ul>
+<h4 id="testcase-tab-hoa-on-bang-hoa-on-a-dung">Testcase — Tab Hóa đơn — Bảng Hóa đơn đã dùng</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 1: Mở đúng bảng hóa đơn của lớp</td>
+<td>High</td>
+<td>Smoke</td>
+<td>Flow 1 / REQ01 / REQ08–REQ09</td>
+<td>Admin/Class Handler/Support</td>
+<td>Có hóa đơn đã dùng tại nhiều lớp</td>
+<td><strong>Given</strong> mở lớp A<br><strong>When</strong> chọn Hóa đơn<br><strong>Then</strong> tải dữ liệu theo class_id của A</td>
+<td>- Đúng tiêu đề và năm cột Tên hóa đơn / Tên học viên / Ngày tạo hóa đơn / Giá trị / Giá trị dùng trong lớp<br>- Có filter Học viên chọn một/nhiều người, không có filter ngày tạo<br>- Không trộn hóa đơn chỉ dùng tại lớp B<br>- Không thay đổi dữ liệu</td>
+</tr>
+<tr>
+<td>Case 2: Một hóa đơn chỉ hiển thị một dòng</td>
+<td>High</td>
+<td></td>
+<td>REQ02</td>
+<td>Admin/Class Handler/Support</td>
+<td>Một hóa đơn có nhiều lần ghi nhận học phí trong lớp</td>
+<td><strong>Given</strong> các giao dịch cùng invoice_id<br><strong>When</strong> tải bảng<br><strong>Then</strong> gộp theo hóa đơn</td>
+<td>- Một dòng duy nhất<br>- Không nhân đôi Giá trị hóa đơn<br>- Cộng đủ học phí trong lớp</td>
+</tr>
+<tr>
+<td>Case 3: Tab chỉ xem</td>
+<td>High</td>
+<td></td>
+<td>REQ01</td>
+<td>Admin/Class Handler/Support</td>
+<td>Bảng đã tải</td>
+<td><strong>Given</strong> người dùng xem hoặc bấm một dòng<br><strong>When</strong> kiểm tra control<br><strong>Then</strong> không có flow CRUD tại tab</td>
+<td>- Không có nút thêm/sửa/xóa<br>- Không có input chỉnh tiền<br>- Không gửi request ghi dữ liệu</td>
+</tr>
+<tr>
+<td>Case 4: Giữ dữ liệu khi học viên không còn học</td>
+<td>High</td>
+<td></td>
+<td>REQ02</td>
+<td>Admin/Class Handler/Support</td>
+<td>Học viên đã có học phí và chuyển Rời lớp/Nghỉ học/Xóa mềm</td>
+<td><strong>Given</strong> học phí vẫn được lưu<br><strong>When</strong> mở bảng hóa đơn<br><strong>Then</strong> vẫn hiển thị hóa đơn đã dùng</td>
+<td>- Không mất học phí do đổi trạng thái học viên<br>- Không tự hoàn tiền hoặc trả số dư hóa đơn</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="filter-hoc-vien-va-cot-ngay-tao-hoa-on">Filter Học viên và cột Ngày tạo hóa đơn</h3>
+<p><strong>Mô tả:</strong> Cho phép Admin / Class Handler / Support lọc hóa đơn đã dùng trong lớp theo một hoặc nhiều học viên. Ngày tạo hóa đơn là cột chỉ xem ngày tạo gốc tại Cơm Gạo, không phải bộ lọc. Filter chỉ thay đổi tập dòng hiển thị, không cập nhật hóa đơn hoặc học phí.</p>
+<p><strong>Giải thích field/thành phần:</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Thành phần</th>
+<th>Yêu cầu</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Filter Học viên</td>
+<td>Cho phép chọn một hoặc nhiều học viên liên kết với hóa đơn trong lớp hiện tại bằng student_id; hiển thị tên để người dùng nhận biết, không so khớp chuỗi trong Tên hóa đơn. Khả năng tìm kiếm trong control chờ xác nhận.</td>
+</tr>
+<tr>
+<td>Chọn nhiều học viên</td>
+<td>Trả hóa đơn của <strong>bất kỳ</strong> học viên nào trong tập đã chọn (OR giữa các student_id), đồng thời chỉ lấy hóa đơn đã dùng trong lớp hiện tại. Không yêu cầu một hóa đơn thuộc tất cả người được chọn.</td>
+</tr>
+<tr>
+<td>Không chọn học viên</td>
+<td>Không giới hạn theo học viên; hiển thị danh sách hóa đơn đã dùng của lớp.</td>
+</tr>
+<tr>
+<td>Cột Ngày tạo hóa đơn</td>
+<td>Hiển thị ngày tạo gốc tại Cơm Gạo đồng bộ sang ICS, chỉ xem. Không có filter ngày, date picker hoặc điều kiện ngày trong request lọc. Định dạng ngày và múi giờ hiển thị chờ xác nhận.</td>
+</tr>
+<tr>
+<td>Kết quả rỗng</td>
+<td><code>Không có hóa đơn phù hợp với bộ lọc.</code>; phân biệt với lớp chưa có hóa đơn được sử dụng.</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Điểm cần lưu ý:</strong></p>
+<ul>
+<li>Lọc trên toàn bộ dữ liệu phù hợp của lớp ở backend trước khi chia nhóm load-more; không chỉ lọc các dòng đã tải trên client.</li>
+<li>Khi đổi/xóa điều kiện lọc, bắt đầu lại từ nhóm đầu, reset cursor và dữ liệu của kết quả cũ. Không nối response của bộ lọc cũ vào kết quả mới; retry phải dùng đúng điều kiện đang áp dụng.</li>
+<li>Học viên Rời lớp / Nghỉ học / Xóa mềm có hóa đơn đã dùng vẫn được nhận diện, hiển thị tên và lọc được; không loại dữ liệu tài chính lịch sử do trạng thái học viên.</li>
+<li>Hai học viên trùng tên phải được phân biệt bằng student_id. Tên học viên phải hiển thị an toàn, không thực thi HTML/script.</li>
+<li>Giá trị hóa đơn và tổng học phí theo hóa đơn–lớp vẫn giữ đúng nghĩa đã chốt; không biến cột tiền thành tổng của riêng nhóm tải hoặc tự phân bổ lại theo filter.</li>
+<li>Không dùng ngày ICS nhận đồng bộ, ngày ghi nhận học phí hoặc ngày sửa gần nhất thay cho Ngày tạo hóa đơn. Thiếu ngày tạo gốc thì đánh dấu cột ngày không khả dụng, không tự gán ngày thay thế và không loại hóa đơn khỏi bảng/filter Học viên chỉ vì thiếu ngày.</li>
+<li>Trường hợp một hóa đơn liên kết nhiều học viên chưa được chốt cách hiển thị tên/lọc; không tự đổi quy tắc một dòng mỗi invoice_id.</li>
+</ul>
+<h4 id="testcase-filter-hoc-vien-va-cot-ngay-tao-hoa-on">Testcase — Filter Học viên và cột Ngày tạo hóa đơn</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 20: Hiển thị cột Tên học viên từ quan hệ dữ liệu</td>
+<td>High</td>
+<td></td>
+<td>REQ08</td>
+<td>Admin/Class Handler/Support</td>
+<td>Hóa đơn có học viên liên kết và tên hóa đơn không chứa tên học viên</td>
+<td><strong>Given</strong> dữ liệu có student_id và tên học viên<br><strong>When</strong> tải bảng<br><strong>Then</strong> hiển thị tên ở cột riêng</td>
+<td>- Tên đúng học viên liên kết<br>- Không suy ra tên bằng cách tách chuỗi Tên hóa đơn<br>- Không mở flow sửa từ cột tên</td>
+</tr>
+<tr>
+<td>Case 21: Lọc một học viên trên toàn bộ dữ liệu</td>
+<td>High</td>
+<td></td>
+<td>Flow 4 / REQ08</td>
+<td>Admin/Class Handler/Support</td>
+<td>Hóa đơn của học viên cần lọc nằm ngoài nhóm đã tải</td>
+<td><strong>Given</strong> chọn một học viên<br><strong>When</strong> áp dụng filter<br><strong>Then</strong> backend lọc theo student_id trong lớp trước khi chia nhóm</td>
+<td>- Chỉ trả hóa đơn của học viên đã chọn trong lớp<br>- Tìm thấy hóa đơn dù trước đó chưa tải<br>- Không hiện hóa đơn chỉ dùng ở lớp khác<br>- Không gửi thao tác ghi dữ liệu</td>
+</tr>
+<tr>
+<td>Case 22: Phân biệt học viên trùng tên</td>
+<td>High</td>
+<td></td>
+<td>REQ08</td>
+<td>Admin/Class Handler/Support</td>
+<td>Hai học viên cùng tên nhưng student_id khác nhau</td>
+<td><strong>Given</strong> đặt điều kiện theo ID của học viên A<br><strong>When</strong> lọc hóa đơn<br><strong>Then</strong> không nhầm với học viên B</td>
+<td>- Không lọc theo chuỗi tên đơn thuần<br>- Kết quả đúng quan hệ học viên–hóa đơn</td>
+</tr>
+<tr>
+<td>Case 23: Hiển thị ngày tạo gốc Cơm Gạo</td>
+<td>High</td>
+<td></td>
+<td>REQ09</td>
+<td>Admin/Class Handler/Support</td>
+<td>Hóa đơn tạo ngày 21/09/2026 ở Cơm Gạo, đồng bộ ICS ngày 25/09/2026, ghi nhận học phí ngày 27/09/2026</td>
+<td><strong>Given</strong> hóa đơn đã đồng bộ<br><strong>When</strong> tải bảng rồi đồng bộ lại cùng hóa đơn<br><strong>Then</strong> cột Ngày tạo hóa đơn hiển thị ngày 21/09/2026</td>
+<td>- Không hiển thị ngày đồng bộ/ngày ghi nhận học phí thay ngày tạo<br>- Ngày tạo gốc không đổi sau đồng bộ lại<br>- Không tạo dòng trùng</td>
+</tr>
+<tr>
+<td>Case 24: Lọc nhiều học viên</td>
+<td>High</td>
+<td></td>
+<td>Flow 4 / REQ08</td>
+<td>Admin/Class Handler/Support</td>
+<td>Lớp có hóa đơn của học viên A, B, C</td>
+<td><strong>Given</strong> chọn đồng thời A và B<br><strong>When</strong> áp dụng filter<br><strong>Then</strong> trả hóa đơn của A hoặc B đã dùng trong lớp</td>
+<td>- Có hóa đơn của cả A và B, không có C<br>- OR giữa các student_id, không yêu cầu hóa đơn thuộc cả A và B<br>- Mỗi invoice_id vẫn một dòng, tiền không cộng lặp</td>
+</tr>
+<tr>
+<td>Case 25: Reset load-more khi đổi bộ lọc</td>
+<td>High</td>
+<td></td>
+<td>REQ07–REQ08 / EX07</td>
+<td>Admin/Class Handler/Support</td>
+<td>Đã tải nhiều nhóm, request bộ lọc cũ chưa hoàn tất</td>
+<td><strong>Given</strong> thêm/bỏ học viên hoặc thay đổi tập đã chọn<br><strong>When</strong> tải nhóm đầu mới rồi response cũ trả về<br><strong>Then</strong> giữ kết quả bộ lọc mới</td>
+<td>- Reset cursor và dữ liệu cũ<br>- Bỏ response cũ<br>- Tải thêm/retry đúng tập student_id mới<br>- Không trộn, lặp hoặc bỏ sót dòng</td>
+</tr>
+<tr>
+<td>Case 26: Không có kết quả và bỏ điều kiện lọc</td>
+<td>Medium</td>
+<td></td>
+<td>REQ08 / EX08</td>
+<td>Admin/Class Handler/Support</td>
+<td>Lớp có hóa đơn nhưng không dòng nào khớp học viên đã chọn</td>
+<td><strong>Given</strong> filter trả rỗng<br><strong>When</strong> xem rồi bỏ hết học viên đã chọn<br><strong>Then</strong> tải lại danh sách hóa đơn đã dùng trong lớp</td>
+<td>- Thông báo Không có hóa đơn phù hợp với bộ lọc<br>- Bỏ filter khôi phục tập dữ liệu của lớp<br>- Không biến kết quả rỗng thành lỗi hoặc dòng 0đ</td>
+</tr>
+<tr>
+<td>Case 27: Lọc được học viên đã rời/nghỉ/xóa mềm</td>
+<td>High</td>
+<td></td>
+<td>REQ02 / REQ08</td>
+<td>Admin/Class Handler/Support</td>
+<td>Có hóa đơn đã dùng của học viên Rời lớp / Nghỉ học / Xóa mềm</td>
+<td><strong>Given</strong> đặt điều kiện học viên đó<br><strong>When</strong> lọc<br><strong>Then</strong> vẫn trả hóa đơn đã dùng hợp lệ</td>
+<td>- Hiển thị đúng Tên học viên<br>- Học phí lịch sử không mất hoặc bị tính lại<br>- Không khôi phục trạng thái học viên</td>
+</tr>
+<tr>
+<td>Case 28: Thiếu ngày tạo gốc không dùng ngày đồng bộ thay thế</td>
+<td>High</td>
+<td></td>
+<td>REQ09 / EX05</td>
+<td>Admin/Class Handler/Support</td>
+<td>Bản ghi đồng bộ thiếu ngày tạo Cơm Gạo nhưng có ngày ICS nhận dữ liệu</td>
+<td><strong>Given</strong> hóa đơn đã dùng hợp lệ và khớp học viên được chọn<br><strong>When</strong> tải bảng<br><strong>Then</strong> vẫn hiển thị dòng, đánh dấu cột ngày không khả dụng</td>
+<td>- Không tự lấy ngày đồng bộ/ngày học phí/ngày sửa làm ngày tạo<br>- Không gán ngày giả<br>- Không loại hóa đơn hoặc che tên/tiền chỉ vì thiếu ngày</td>
+</tr>
+<tr>
+<td>Case 29: Ngày tạo chỉ là cột hiển thị, không có filter</td>
+<td>High</td>
+<td></td>
+<td>REQ09</td>
+<td>Admin/Class Handler/Support</td>
+<td>Bảng có hóa đơn tạo ở nhiều ngày</td>
+<td><strong>Given</strong> mở tab và chọn một/nhiều học viên<br><strong>When</strong> kiểm tra UI và request đọc dữ liệu<br><strong>Then</strong> ngày tạo chỉ được hiển thị tại cột</td>
+<td>- Không có filter ngày hoặc date picker<br>- Không gửi điều kiện ngày tạo trong request lọc<br>- Không tự giới hạn theo ngày hiện tại<br>- Không sửa ngày từ cột</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="cot-gia-tri-va-gia-tri-dung-trong-lop">Cột Giá trị và Giá trị dùng trong lớp</h3>
+<p><strong>Mô tả:</strong> Hai cột tiền phản ánh hai dữ liệu khác nhau: giá trị toàn bộ hóa đơn và phần học phí đã ghi nhận từ hóa đơn vào lớp hiện tại.</p>
+<p><strong>Giải thích field/thành phần:</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Cột</th>
+<th>Cách lấy dữ liệu</th>
+<th>Ví dụ</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Giá trị</td>
+<td>Lấy tổng giá trị hóa đơn từ nguồn quản lý hóa đơn.</td>
+<td>Hóa đơn 1.000.000đ luôn hiển thị 1.000.000đ dù đã dùng một phần.</td>
+</tr>
+<tr>
+<td>Giá trị dùng trong lớp</td>
+<td>Cộng các lần ghi nhận học phí thuộc cùng invoice_id và class_id đang xem.</td>
+<td>Dùng 100.000đ rồi 200.000đ trong lớp A thì hiển thị 300.000đ.</td>
+</tr>
+<tr>
+<td>Định dạng</td>
+<td>Tiền VND, phân cách hàng nghìn bằng dấu chấm và có ký hiệu đồng; căn phải.</td>
+<td><code>1.000.000 đ</code>.</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Điểm cần lưu ý:</strong></p>
+<ul>
+<li>Ví dụ hóa đơn 1.000.000đ dùng 300.000đ ở lớp A và 400.000đ ở lớp B: tab lớp A hiển thị Giá trị = 1.000.000đ, Giá trị dùng trong lớp = 300.000đ. Số dư 300.000đ không phải giá trị của hai cột này.</li>
+<li>Không cộng phần đã dùng ở lớp khác vào học phí của lớp hiện tại.</li>
+<li>Không tính lần ghi nhận thất bại, chưa lưu hoặc request lặp thành giao dịch mới.</li>
+<li>Không cộng theo tên hóa đơn vì hai hóa đơn khác nhau có thể trùng tên; phải dùng ID.</li>
+<li>Việc hoàn/hủy giao dịch học phí sẽ tuân theo requirement học phí riêng. Tab này không tự đặt quy tắc giảm học phí hoặc xóa lịch sử.</li>
+</ul>
+<h4 id="testcase-cot-gia-tri-va-gia-tri-dung-trong-lop">Testcase — Cột Giá trị và Giá trị dùng trong lớp</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 5: Phân biệt giá trị hóa đơn và học phí</td>
+<td>High</td>
+<td></td>
+<td>REQ03</td>
+<td>Admin/Class Handler/Support</td>
+<td>Hóa đơn 1.000.000đ, dùng 100.000đ trong lớp</td>
+<td><strong>Given</strong> đã ghi nhận học phí<br><strong>When</strong> tải bảng<br><strong>Then</strong> hiển thị hai giá trị đúng nghĩa</td>
+<td>- Giá trị = 1.000.000đ<br>- Giá trị dùng trong lớp = 100.000đ<br>- Không hiển thị số dư 900.000đ ở hai cột</td>
+</tr>
+<tr>
+<td>Case 6: Cộng nhiều lần học phí từ cùng hóa đơn</td>
+<td>High</td>
+<td></td>
+<td>Flow 2 / REQ03</td>
+<td>Admin/Class Handler/Support</td>
+<td>Ghi nhận 100.000đ và 200.000đ trong cùng lớp</td>
+<td><strong>Given</strong> hai giao dịch hợp lệ cùng hóa đơn<br><strong>When</strong> tính học phí của dòng<br><strong>Then</strong> cộng 100.000 + 200.000</td>
+<td>- Hiển thị 300.000đ<br>- Một dòng hóa đơn<br>- Tổng giá trị hóa đơn không bị nhân đôi</td>
+</tr>
+<tr>
+<td>Case 7: Một hóa đơn dùng ở nhiều lớp</td>
+<td>High</td>
+<td></td>
+<td>REQ03</td>
+<td>Admin/Class Handler/Support</td>
+<td>Hóa đơn 1.000.000đ; A dùng 300.000đ, B dùng 400.000đ</td>
+<td><strong>Given</strong> đang xem lớp A<br><strong>When</strong> tải bảng<br><strong>Then</strong> chỉ tổng hợp học phí của A</td>
+<td>- Giá trị = 1.000.000đ<br>- Dùng trong lớp = 300.000đ<br>- Không hiển thị 700.000đ hoặc số dư 300.000đ như tổng đã dùng</td>
+</tr>
+<tr>
+<td>Case 8: Hai hóa đơn trùng tên</td>
+<td>High</td>
+<td></td>
+<td>REQ02–REQ03</td>
+<td>Admin/Class Handler/Support</td>
+<td>Hai invoice_id khác nhau có cùng tên</td>
+<td><strong>Given</strong> cả hai đã dùng trong lớp<br><strong>When</strong> tải bảng<br><strong>Then</strong> hiển thị hai dòng độc lập</td>
+<td>- Không gộp theo tên<br>- Tiền mỗi dòng đúng hóa đơn</td>
+</tr>
+<tr>
+<td>Case 9: Định dạng tiền và tên dài</td>
+<td>Medium</td>
+<td></td>
+<td>REQ04</td>
+<td>Admin/Class Handler/Support</td>
+<td>Tên dài và giá trị nhiều chữ số</td>
+<td><strong>Given</strong> bảng render<br><strong>When</strong> đọc các cột<br><strong>Then</strong> tên xuống dòng và tiền rõ ràng</td>
+<td>- Tiền căn phải, phân cách hàng nghìn và ký hiệu đồng<br>- Không cắt mất giá trị<br>- Không chồng cột</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="trang-thai-tai-rong-loi-va-ong-bo">Trạng thái tải, rỗng, lỗi và đồng bộ</h3>
+<p><strong>Mô tả:</strong> Phản ánh đúng quá trình đọc dữ liệu. Khi học phí được thêm ở tab Học viên, lần mở/tải lại tab Hóa đơn phải hiển thị dữ liệu đã lưu mới nhất.</p>
+<p><strong>Giải thích field/thành phần:</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Trạng thái</th>
+<th>Yêu cầu</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Loading</td>
+<td>Hiển thị loading/skeleton khi đang tải; không trình bày dữ liệu cũ của lớp khác.</td>
+</tr>
+<tr>
+<td>Rỗng</td>
+<td><code>Chưa có hóa đơn được sử dụng trong lớp này.</code></td>
+</tr>
+<tr>
+<td>Lỗi</td>
+<td><code>Không thể tải thông tin hóa đơn và học phí. Vui lòng thử lại.</code>; có nút Thử lại.</td>
+</tr>
+<tr>
+<td>Đồng bộ</td>
+<td>Khi mở lại tab, đọc dữ liệu mới nhất đã commit; thay đổi học phí hiển thị đúng dòng.</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Điểm cần lưu ý:</strong></p>
+<ul>
+<li>Không dùng giá trị 0 hoặc empty state để thay thế lỗi tải dữ liệu.</li>
+<li>Response của lớp cũ không được ghi đè khi người dùng đã chuyển sang lớp khác.</li>
+<li>Không có Toast CRUD vì tab không thực hiện CRUD. Lỗi đọc dữ liệu hiển thị ngay tại bảng.</li>
+</ul>
+<h4 id="testcase-trang-thai-tai-rong-loi-va-ong-bo">Testcase — Trạng thái tải, rỗng, lỗi và đồng bộ</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 10: Chưa có hóa đơn dùng trong lớp</td>
+<td>Medium</td>
+<td></td>
+<td>EX01</td>
+<td>Admin/Class Handler/Support</td>
+<td>Không có học phí từ hóa đơn trong lớp</td>
+<td><strong>Given</strong> API trả danh sách rỗng<br><strong>When</strong> render<br><strong>Then</strong> hiển thị thông báo rỗng</td>
+<td>- Không tạo dòng 0đ giả<br>- Không hiện hóa đơn chưa dùng</td>
+</tr>
+<tr>
+<td>Case 11: Tải thất bại và thử lại</td>
+<td>High</td>
+<td></td>
+<td>EX02</td>
+<td>Admin/Class Handler/Support</td>
+<td>API lỗi</td>
+<td><strong>Given</strong> mở tab<br><strong>When</strong> tải thất bại rồi Thử lại thành công<br><strong>Then</strong> chuyển lỗi → dữ liệu đúng</td>
+<td>- Không hiển thị 0 thay lỗi<br>- Không có Toast thành công CRUD</td>
+</tr>
+<tr>
+<td>Case 12: Cập nhật sau khi thêm học phí</td>
+<td>High</td>
+<td></td>
+<td>Flow 2 / REQ05</td>
+<td>Admin/Class Handler/Support</td>
+<td>Hóa đơn đã dùng 100.000đ trong lớp</td>
+<td><strong>Given</strong> thêm 200.000đ thành công tại tab Học viên<br><strong>When</strong> quay lại tab Hóa đơn<br><strong>Then</strong> dòng hiển thị 300.000đ dùng trong lớp</td>
+<td>- Giá trị hóa đơn giữ đúng tổng giá trị<br>- Không tạo dòng trùng<br>- Không tính thao tác thất bại</td>
+</tr>
+<tr>
+<td>Case 13: Response lớp cũ trả về muộn</td>
+<td>High</td>
+<td></td>
+<td>EX03</td>
+<td>Admin/Class Handler/Support</td>
+<td>Hai request của hai lớp trả không đúng thứ tự</td>
+<td><strong>Given</strong> chuyển từ lớp A sang B khi A đang tải<br><strong>When</strong> response A về sau B<br><strong>Then</strong> vẫn giữ dữ liệu B</td>
+<td>- Không trộn invoice/class_id<br>- Header và dữ liệu cùng lớp</td>
+</tr>
+<tr>
+<td>Case 14: Chặn xem dữ liệu tài chính ngoài quyền</td>
+<td>High</td>
+<td></td>
+<td>EX04 / REQ06</td>
+<td>Teacher/Sale/Student; Admin/Class Handler/Support ngoài phạm vi lớp</td>
+<td>Có ID lớp/hóa đơn hợp lệ</td>
+<td><strong>Given</strong> gọi API tab Hóa đơn trực tiếp<br><strong>When</strong> backend kiểm tra quyền<br><strong>Then</strong> từ chối</td>
+<td>- Không trả tên hóa đơn hoặc tiền<br>- Không dựa riêng vào việc ẩn tab ở client</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="load-more-danh-sach-hoa-on">Load-more danh sách hóa đơn</h3>
+<p><strong>Mô tả:</strong> Khi người dùng cuộn gần cuối các dòng đã tải, hệ thống tự tải thêm hóa đơn của lớp hiện tại và nối vào bảng.</p>
+<p><strong>Giải thích field/thành phần:</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Thành phần</th>
+<th>Yêu cầu</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Vùng cuộn</td>
+<td>Cuộn gần cuối kích hoạt tải nhóm dữ liệu tiếp theo nếu còn hóa đơn.</td>
+</tr>
+<tr>
+<td>Loading cuối bảng</td>
+<td>Hiển thị trong lúc tải thêm; giữ các dòng hiện có và vị trí cuộn.</td>
+</tr>
+<tr>
+<td>Lỗi tải thêm</td>
+<td>Hiển thị lỗi và Thử lại ở cuối bảng; không thay toàn bộ bảng bằng lỗi.</td>
+</tr>
+<tr>
+<td>Hết dữ liệu</td>
+<td>Dừng gọi tải thêm khi backend báo không còn dữ liệu.</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Điểm cần lưu ý:</strong></p>
+<ul>
+<li>Mỗi thời điểm chỉ gửi một request tải thêm cho cùng lớp/cursor; cuộn liên tục không tạo nhiều request trùng.</li>
+<li>Dữ liệu phải được tổng hợp theo invoice_id trước khi chia nhóm tải. Học phí mỗi dòng là tổng của hóa đơn trong lớp, không phải tổng của riêng nhóm giao dịch vừa tải.</li>
+<li>Nối danh sách theo invoice_id, không nhân đôi dòng khi response giao nhau hoặc retry. Response của lớp cũ không được nối vào lớp mới.</li>
+<li>Thứ tự và cursor phải ổn định trong một lượt tải để không bỏ sót hoặc lặp hóa đơn. Tiêu chí sắp xếp mặc định vẫn chờ xác nhận.</li>
+</ul>
+<h4 id="testcase-load-more-danh-sach-hoa-on">Testcase — Load-more danh sách hóa đơn</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 15: Cuộn tải thêm hóa đơn</td>
+<td>High</td>
+<td></td>
+<td>Flow 3 / REQ07</td>
+<td>Admin/Class Handler/Support</td>
+<td>Còn hóa đơn chưa tải</td>
+<td><strong>Given</strong> nhóm đầu đã hiển thị<br><strong>When</strong> cuộn gần cuối<br><strong>Then</strong> tải và nối nhóm tiếp theo</td>
+<td>- Loading ở cuối bảng<br>- Giữ dòng/vị trí cuộn hiện có<br>- Không có nút số trang</td>
+</tr>
+<tr>
+<td>Case 16: Chống request và dòng trùng</td>
+<td>High</td>
+<td></td>
+<td>REQ07</td>
+<td>Admin/Class Handler/Support</td>
+<td>Request tải thêm đang xử lý hoặc response có invoice_id đã hiển thị</td>
+<td><strong>Given</strong> cuộn liên tục hoặc retry<br><strong>When</strong> dữ liệu trả về<br><strong>Then</strong> hợp nhất theo invoice_id</td>
+<td>- Một request đang xử lý cho cùng cursor<br>- Mỗi hóa đơn một dòng<br>- Không cộng tiền lại lần nữa</td>
+</tr>
+<tr>
+<td>Case 17: Tải thêm lỗi và thử lại</td>
+<td>High</td>
+<td></td>
+<td>EX06 / REQ07</td>
+<td>Admin/Class Handler/Support</td>
+<td>Đã có dữ liệu, request tiếp theo lỗi</td>
+<td><strong>Given</strong> lỗi tải thêm<br><strong>When</strong> bấm Thử lại<br><strong>Then</strong> tải lại đúng nhóm chưa thành công</td>
+<td>- Giữ dữ liệu cũ<br>- Không quay về đầu bảng<br>- Không bỏ sót/nhân đôi dòng</td>
+</tr>
+<tr>
+<td>Case 18: Dừng khi hết hóa đơn</td>
+<td>Medium</td>
+<td></td>
+<td>REQ07</td>
+<td>Admin/Class Handler/Support</td>
+<td>Backend báo hết dữ liệu</td>
+<td><strong>Given</strong> đã tải nhóm cuối<br><strong>When</strong> tiếp tục cuộn<br><strong>Then</strong> không gửi thêm request</td>
+<td>- Không loading vô hạn<br>- Giữ toàn bộ dòng đã tải</td>
+</tr>
+<tr>
+<td>Case 19: Teacher và role khác không được xem tab</td>
+<td>High</td>
+<td></td>
+<td>REQ06 / EX04</td>
+<td>Teacher/Sale/Student</td>
+<td>Có ID lớp hợp lệ</td>
+<td><strong>Given</strong> mở lớp hoặc gọi API trực tiếp<br><strong>When</strong> kiểm tra quyền xem Hóa đơn<br><strong>Then</strong> từ chối</td>
+<td>- Tab không hiển thị cho role bị chặn<br>- API không trả tên hóa đơn hoặc tiền<br>- Có quyền xem lịch không cấp quyền xem Hóa đơn</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="2-yeu-cau">2. Yêu cầu</h2>
+<h3 id="21-flow-chinh">2.1. Flow chính</h3>
+<p><strong>Flow 1 / REQ01–REQ04: Xem hóa đơn đã dùng</strong></p>
+<pre><code class="language-text">Mở Chi tiết lớp → chọn tab Hóa đơn
+      → Kiểm tra quyền xem dữ liệu tài chính của lớp
+      → Lấy hóa đơn đã có học phí ghi nhận trong lớp
+      → Gộp theo invoice_id và cộng học phí theo class_id
+      → Hiển thị Tên hóa đơn / Tên học viên / Ngày tạo hóa đơn / Giá trị / Giá trị dùng trong lớp
+      → Cho phép lọc theo một hoặc nhiều học viên; ngày tạo chỉ hiển thị ở cột
+</code></pre>
+<p><strong>Flow 2 / REQ05: Đồng bộ khi học phí thay đổi</strong></p>
+<pre><code class="language-text">Ghi nhận học phí thành công tại function khác
+      → Mở lại/tải lại tab Hóa đơn
+      → Đọc dữ liệu đã commit mới nhất
+      → Cập nhật học phí của dòng hóa đơn hoặc thêm dòng nếu lần đầu dùng
+</code></pre>
+<p><strong>Flow 3 / REQ07: Tải thêm khi cuộn</strong></p>
+<pre><code class="language-text">Cuộn gần cuối bảng → kiểm tra còn dữ liệu và không có request đang xử lý
+      → Gửi class_id + tập student_id đang lọc (nếu có) + cursor tiếp theo
+      → Hiển thị loading cuối bảng
+      → Thành công: hợp nhất theo invoice_id, giữ vị trí cuộn
+      → Lỗi: giữ dữ liệu đã tải, cho Thử lại
+      → Hết dữ liệu: dừng tải thêm
+</code></pre>
+<p><strong>Flow 4 / REQ08: Lọc hóa đơn theo học viên</strong></p>
+<pre><code class="language-text">Admin / Class Handler / Support chọn một/nhiều học viên hoặc bỏ lựa chọn
+      → Reset dữ liệu và cursor của kết quả cũ
+      → Backend kiểm tra quyền và class_id
+      → Lọc theo tập student_id (OR) trên toàn bộ dữ liệu của lớp; không lọc ngày tạo
+      → Tổng hợp hóa đơn–lớp rồi trả nhóm đầu phù hợp
+      → Có kết quả: hiển thị bảng và load-more theo cùng điều kiện
+      → Không có kết quả: thông báo không có hóa đơn phù hợp bộ lọc
+</code></pre>
+<h3 id="22-ngoai-le">2.2. Ngoại lệ</h3>
+<ul>
+<li><strong>EX01:</strong> Chưa có hóa đơn dùng trong lớp → hiển thị empty state.</li>
+<li><strong>EX02:</strong> API lỗi/hết thời gian chờ → hiển thị lỗi và Thử lại; không biến lỗi thành số 0.</li>
+<li><strong>EX03:</strong> Response lớp cũ về muộn → bỏ response không còn phù hợp class_id hiện tại.</li>
+<li><strong>EX04:</strong> Người dùng không có quyền xem tài chính hoặc ngoài phạm vi lớp → từ chối truy cập; không trả tên hóa đơn và tiền.</li>
+<li><strong>EX05:</strong> Dữ liệu hóa đơn thiếu hoặc không nhất quán → báo trạng thái dữ liệu không khả dụng; không tự suy ra giá trị hóa đơn từ tổng học phí.</li>
+<li><strong>EX06:</strong> Tải thêm thất bại → giữ các dòng hiện có và cursor chưa thành công; hiển thị Thử lại ở cuối bảng.</li>
+<li><strong>EX07:</strong> Response bộ lọc cũ trả về sau khi đổi điều kiện → bỏ response, không nối hoặc ghi đè kết quả bộ lọc hiện tại.</li>
+<li><strong>EX08:</strong> Lớp có hóa đơn nhưng không khớp bộ lọc → hiển thị empty state theo bộ lọc; không báo lớp chưa có hóa đơn.</li>
+</ul>
+<h3 id="23-yeu-cau-khac">2.3. Yêu cầu khác</h3>
+<ul>
+<li><strong>REQ01 – Chỉ xem:</strong> Tab hiển thị thông tin hóa đơn và học phí; không CRUD và không mở popup chỉnh sửa từ dòng.</li>
+<li><strong>REQ02 – Danh sách:</strong> Chỉ hóa đơn đã dùng cho lớp hiện tại; một dòng mỗi invoice_id, không gộp theo tên.</li>
+<li><strong>REQ03 – Giá trị tiền:</strong> Giá trị là tổng giá trị hóa đơn. Giá trị dùng trong lớp là tổng học phí ghi nhận từ hóa đơn cho lớp hiện tại; không phải số dư hoặc tổng dùng ở mọi lớp.</li>
+<li><strong>REQ04 – Hiển thị:</strong> Tên dài xuống dòng, tiền VND căn phải với dấu phân cách hàng nghìn; layout đọc được trên các kích thước màn hình.</li>
+<li><strong>REQ05 – Đồng bộ:</strong> Mở/tải lại tab hiển thị dữ liệu mới nhất đã lưu; không nhân đôi giao dịch hoặc dùng dữ liệu ngoài class_id.</li>
+<li><strong>REQ06 – Quyền và bảo mật:</strong> Chỉ Admin/Class Handler/Support được xem trong phạm vi lớp; Teacher và mọi role khác bị chặn tại UI và API. Nội dung tên hóa đơn hiển thị an toàn, không thực thi HTML/script.</li>
+<li><strong>REQ07 – Load-more:</strong> Cuộn gần cuối tự tải nhóm hóa đơn tiếp theo; không phân trang số. Giữ vị trí cuộn, chống request/dòng trùng, hỗ trợ thử lại và dừng khi hết dữ liệu.</li>
+<li><strong>REQ08 – Học viên:</strong> Bổ sung cột Tên học viên và filter Học viên chọn một hoặc nhiều người theo quan hệ student_id với hóa đơn đã dùng trong lớp. Nhiều người áp dụng OR giữa các student_id; không chọn thì không giới hạn theo học viên. Lọc toàn bộ dữ liệu trước load-more; đổi/bỏ lựa chọn phải reset kết quả và cursor, tải thêm/retry theo đúng tập đã chọn. Không suy ra học viên từ tên hóa đơn và không bỏ dữ liệu lịch sử do trạng thái Rời lớp / Nghỉ học / Xóa mềm.</li>
+<li><strong>REQ09 – Ngày tạo hóa đơn:</strong> Bổ sung cột chỉ xem ngày tạo gốc Cơm Gạo đồng bộ sang ICS, không dùng ngày đồng bộ, ngày học phí hoặc ngày sửa. <strong>Không có filter ngày tạo hóa đơn</strong>, không gửi điều kiện ngày trong request lọc. Thiếu ngày tạo thì đánh dấu cột không khả dụng, không tự thay ngày hoặc loại hóa đơn khỏi bảng.</li>
+</ul>
+<h3 id="24-rang-buoc">2.4. Ràng buộc</h3>
+<ul>
+<li>Tab không làm thay đổi hóa đơn, học phí, số dư hoặc trạng thái học viên.</li>
+<li>Dữ liệu nhận diện dùng class_id, invoice_id và transaction_id; tổng hợp mỗi giao dịch đã lưu đúng một lần.</li>
+<li>Tổng học phí của một dòng phải khớp các giao dịch dùng cùng hóa đơn trong lớp; không phụ thuộc số hàng đang hiển thị trên màn hình.</li>
+<li>Quy tắc số dư, phân bổ vượt giá trị, hoàn/hủy và hiệu lực giao dịch theo requirement Học phí/Hóa đơn riêng.</li>
+<li>Chỉ Admin/Class Handler/Support được xem trong phạm vi lớp. Teacher và mọi role khác không được xem thông tin hóa đơn/học phí, kể cả có quyền xem lịch lớp.</li>
+<li>Tổng hợp học phí theo hóa đơn–lớp trước khi chia nhóm load-more; mỗi dòng hiển thị tổng học phí đầy đủ của hóa đơn trong lớp.</li>
+<li>Không Toast CRUD, không bổ sung nút tạo/sửa/xóa tại tab này.</li>
+<li>Hóa đơn được tạo tại Cơm Gạo rồi đồng bộ sang ICS; tab này chỉ đọc dữ liệu đồng bộ. Bản đồng bộ lại của cùng hóa đơn không được tự tạo dòng trùng hoặc đổi ngày tạo gốc.</li>
+<li>Quyền xem và phạm vi lớp áp dụng cho cả bảng, cột Tên học viên và dữ liệu control filter; không dùng filter để lấy dữ liệu lớp ngoài quyền.</li>
+</ul>
+<h2 id="3-can-xac-nhan">3. Cần xác nhận</h2>
+<ul>
+<li>Thứ tự hiển thị hóa đơn mặc định theo tiêu chí nào? Cơ chế load-more đã được chốt; tiêu chí sắp xếp chưa được xác nhận.</li>
+<li>Filter Học viên đã chốt chọn một hoặc nhiều người; control có hỗ trợ tìm kiếm theo tên không?</li>
+<li>Cột Ngày tạo hóa đơn hiển thị định dạng ngày nào, có kèm giờ không và theo múi giờ nào? Đã chốt chỉ là cột hiển thị, không có filter ngày.</li>
+<li>Nếu một hóa đơn liên kết nhiều học viên, cột Tên học viên hiển thị thế nào và filter Học viên đối chiếu theo quan hệ nào? Hiện giữ quy tắc một dòng mỗi invoice_id, chưa tự tách dòng.</li>
+</ul>
+</article>
+    <p class="source-note">Nguồn: class_detail_invoices_requirements.md · SHA-256 d6ea9f6bc531398420de58c32039dc5d3447438ee6d3606a0f220deccf1de882</p>
+  </main>
+  <script>
+    const article = document.getElementById('document');
+    const nav = document.getElementById('docNav');
+    const headings = [...article.querySelectorAll('h2')];
+    headings.forEach((heading, index) => {
+      const link = document.createElement('a');
+      link.href = `#${heading.id}`;
+      const number = document.createElement('span');
+      number.className = 'nav-num';
+      number.textContent = String(index + 1).padStart(2, '0');
+      link.append(number, document.createTextNode(heading.textContent));
+      nav.append(link);
+    });
+
+    const navLinks = [...nav.querySelectorAll('a')];
+    const observer = new IntersectionObserver(entries => {
+      const current = entries.filter(item => item.isIntersecting).sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
+      if (!current) return;
+      navLinks.forEach(link => link.classList.toggle('active', link.hash === `#${current.target.id}`));
+    }, {rootMargin: '-18% 0px -68% 0px', threshold: [0, .2, .5]});
+    headings.forEach(heading => observer.observe(heading));
+    if (navLinks[0]) navLinks[0].classList.add('active');
+
+    const testcaseHeadings = [...article.querySelectorAll('h4, h5')]
+      .filter(heading => heading.textContent.trim().startsWith('Testcase'));
+    const testcaseGroups = testcaseHeadings
+      .map(heading => ({heading, tableWrap: heading.nextElementSibling}))
+      .filter(group => group.tableWrap?.classList.contains('table-wrap'));
+    if (testcaseGroups.length) {
+        const tableWraps = testcaseGroups.map(group => group.tableWrap);
+        tableWraps.forEach(tableWrap => tableWrap.classList.add('testcase-table'));
+        const rows = tableWraps.flatMap(tableWrap => [...tableWrap.querySelectorAll('tbody tr')]);
+        const tools = document.createElement('div');
+        tools.className = 'case-tools';
+        const input = document.createElement('input');
+        input.type = 'search';
+        input.placeholder = 'Tìm testcase, Flow, REQ, EX hoặc nội dung…';
+        input.setAttribute('aria-label', 'Tìm testcase');
+        const count = document.createElement('span');
+        count.className = 'case-count';
+        tools.append(input, count);
+        testcaseGroups[0].heading.before(tools);
+        const filterRows = () => {
+          const query = input.value.trim().toLocaleLowerCase('vi');
+          let visible = 0;
+          rows.forEach(row => {
+            const match = !query || row.textContent.toLocaleLowerCase('vi').includes(query);
+            row.hidden = !match;
+            if (match) visible += 1;
+          });
+          testcaseGroups.forEach(({heading, tableWrap}) => {
+            const hasVisibleRow = [...tableWrap.querySelectorAll('tbody tr')]
+              .some(row => !row.hidden);
+            heading.hidden = !hasVisibleRow;
+            tableWrap.hidden = !hasVisibleRow;
+          });
+          count.textContent = `${visible}/${rows.length} testcase`;
+        };
+        input.addEventListener('input', filterRows);
+        filterRows();
+    }
+  </script>
+</body>
+</html>

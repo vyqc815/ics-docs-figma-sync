@@ -1,5 +1,6 @@
 {
- "generatedAt": "2026-11-03T20:33:58+07:00",
+ "version": "b1528052e1dffdf5",
+ "generatedAt": "2026-11-03T20:39:50+07:00",
  "liveImage": "https://ics-figma-demo.vercel.app/api/figma-frame/{code}.png",
  "files": [
   {

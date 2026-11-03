@@ -1,0 +1,1906 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Requirement Chi tiết lớp học — Thông tin">
+  <link rel="icon" href="data:,">
+  <title>Chi tiết lớp học — Thông tin — Requirement</title>
+  <style>
+    :root {
+      --orange-700: #c83f00;
+      --orange-600: #e84c00;
+      --orange-500: #f45b0a;
+      --orange-400: #ff7a32;
+      --orange-100: #fff0e8;
+      --orange-50: #fff8f4;
+      --navy-950: #101828;
+      --navy-900: #172033;
+      --navy-800: #243047;
+      --slate-700: #344054;
+      --slate-600: #475467;
+      --slate-500: #667085;
+      --slate-400: #98a2b3;
+      --slate-300: #d0d5dd;
+      --slate-200: #e4e7ec;
+      --slate-100: #f2f4f7;
+      --slate-50: #f8fafc;
+      --white: #ffffff;
+      --green: #159447;
+      --blue: #2154c5;
+      --yellow: #b77900;
+      --red: #c92a2a;
+      --purple: #6941c6;
+      --shadow-sm: 0 1px 2px rgba(16, 24, 40, .06);
+      --shadow-md: 0 12px 32px rgba(16, 24, 40, .10);
+      --shadow-lg: 0 24px 64px rgba(16, 24, 40, .16);
+      --radius-sm: 10px;
+      --radius: 16px;
+      --radius-lg: 24px;
+      --sidebar: 286px;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      color: var(--navy-950);
+      background:
+        radial-gradient(circle at 88% 5%, rgba(244, 91, 10, .10), transparent 24rem),
+        var(--slate-50);
+      font: 15px/1.65 Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      text-rendering: optimizeLegibility;
+    }
+    a { color: inherit; }
+    img { max-width: 100%; }
+    button, input, select { font: inherit; }
+    code {
+      padding: .12rem .38rem;
+      border: 1px solid #fed7c3;
+      border-radius: 6px;
+      color: var(--orange-700);
+      background: var(--orange-50);
+      font: 600 .9em ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    }
+
+    .skip-link {
+      position: fixed;
+      z-index: 999;
+      top: 12px;
+      left: 12px;
+      padding: 10px 14px;
+      border-radius: 9px;
+      color: var(--white);
+      background: var(--navy-950);
+      transform: translateY(-150%);
+    }
+    .skip-link:focus { transform: none; }
+
+    .sidebar {
+      position: fixed;
+      z-index: 30;
+      inset: 0 auto 0 0;
+      width: var(--sidebar);
+      padding: 22px 18px;
+      overflow-y: auto;
+      color: #f8fafc;
+      background:
+        linear-gradient(155deg, rgba(255, 122, 50, .24), transparent 26%),
+        linear-gradient(180deg, #192338 0%, #111827 100%);
+      border-right: 1px solid rgba(255, 255, 255, .08);
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 4px 8px 22px;
+      border-bottom: 1px solid rgba(255, 255, 255, .10);
+    }
+    .brand-mark {
+      display: grid;
+      width: 44px;
+      height: 44px;
+      place-items: center;
+      border-radius: 14px;
+      color: var(--white);
+      background: linear-gradient(135deg, var(--orange-400), var(--orange-600));
+      box-shadow: 0 10px 26px rgba(244, 91, 10, .35);
+      font-weight: 900;
+      letter-spacing: -.06em;
+    }
+    .brand strong { display: block; font-size: 16px; }
+    .brand small { color: #aeb8c9; }
+    .nav-title {
+      margin: 24px 10px 8px;
+      color: #8f9aae;
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+    .nav { display: grid; gap: 4px; }
+    .nav a {
+      display: flex;
+      align-items: center;
+      gap: 11px;
+      padding: 10px 12px;
+      border-radius: 10px;
+      color: #cbd5e1;
+      text-decoration: none;
+      transition: .18s ease;
+    }
+    .nav a:hover, .nav a.active {
+      color: var(--white);
+      background: rgba(255, 255, 255, .09);
+    }
+    .nav a.active { box-shadow: inset 3px 0 var(--orange-400); }
+    .nav-num {
+      display: grid;
+      width: 25px;
+      height: 25px;
+      flex: 0 0 auto;
+      place-items: center;
+      border: 1px solid rgba(255, 255, 255, .15);
+      border-radius: 8px;
+      font-size: 11px;
+      font-weight: 800;
+    }
+    .sidebar-footer {
+      margin-top: 26px;
+      padding: 14px;
+      border: 1px solid rgba(255, 255, 255, .10);
+      border-radius: 14px;
+      color: #aeb8c9;
+      background: rgba(255, 255, 255, .04);
+      font-size: 12px;
+    }
+    .sidebar-footer a { color: #ffd8c5; }
+
+    main {
+      width: min(1500px, calc(100% - var(--sidebar)));
+      margin-left: var(--sidebar);
+      padding: 34px clamp(24px, 4vw, 64px) 80px;
+    }
+    section { scroll-margin-top: 24px; }
+    .hero {
+      position: relative;
+      padding: clamp(30px, 5vw, 56px);
+      overflow: hidden;
+      border: 1px solid rgba(255, 255, 255, .08);
+      border-radius: var(--radius-lg);
+      color: var(--white);
+      background:
+        linear-gradient(105deg, rgba(16, 24, 40, .97) 0%, rgba(23, 32, 51, .94) 62%, rgba(109, 45, 9, .90) 100%);
+      box-shadow: var(--shadow-lg);
+    }
+    .hero::after {
+      content: "";
+      position: absolute;
+      width: 360px;
+      height: 360px;
+      top: -190px;
+      right: -80px;
+      border: 70px solid rgba(255, 122, 50, .15);
+      border-radius: 50%;
+    }
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 10px;
+      border: 1px solid rgba(255, 255, 255, .15);
+      border-radius: 999px;
+      color: #ffd8c5;
+      background: rgba(255, 255, 255, .06);
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+    .hero h1 {
+      max-width: 900px;
+      margin: 18px 0 12px;
+      font-size: clamp(34px, 5vw, 64px);
+      line-height: 1.03;
+      letter-spacing: -.045em;
+    }
+    .hero p { max-width: 780px; margin: 0; color: #cbd5e1; font-size: 17px; }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 25px; }
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      min-height: 42px;
+      padding: 9px 14px;
+      border: 1px solid transparent;
+      border-radius: 10px;
+      color: var(--white);
+      background: var(--orange-500);
+      text-decoration: none;
+      cursor: pointer;
+      transition: .18s ease;
+    }
+    .button:hover { transform: translateY(-1px); background: var(--orange-600); }
+    .button.secondary { border-color: rgba(255, 255, 255, .15); background: rgba(255, 255, 255, .07); }
+    .button.ghost { color: var(--slate-700); border-color: var(--slate-300); background: var(--white); }
+    .button.small { min-height: 36px; padding: 7px 11px; font-size: 13px; }
+
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 14px;
+      margin-top: 18px;
+    }
+    .stat {
+      padding: 18px;
+      border: 1px solid var(--slate-200);
+      border-radius: var(--radius);
+      background: rgba(255, 255, 255, .86);
+      box-shadow: var(--shadow-sm);
+    }
+    .stat strong { display: block; color: var(--orange-600); font-size: 30px; line-height: 1; }
+    .stat span { display: block; margin-top: 7px; color: var(--slate-600); font-weight: 650; }
+
+    .section-head {
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 24px;
+      margin: 64px 0 20px;
+    }
+    .section-kicker {
+      margin: 0 0 6px;
+      color: var(--orange-600);
+      font-size: 12px;
+      font-weight: 850;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+    .section-head h2 { margin: 0; font-size: clamp(27px, 4vw, 40px); letter-spacing: -.035em; }
+    .section-head p { max-width: 600px; margin: 8px 0 0; color: var(--slate-600); }
+
+    .panel {
+      padding: clamp(20px, 3vw, 30px);
+      border: 1px solid var(--slate-200);
+      border-radius: var(--radius-lg);
+      background: var(--white);
+      box-shadow: var(--shadow-sm);
+    }
+    .panel + .panel { margin-top: 18px; }
+    .panel h3 { margin: 0 0 14px; font-size: 21px; letter-spacing: -.02em; }
+    .panel h4 { margin: 26px 0 10px; }
+    .muted { color: var(--slate-600); }
+    .note {
+      padding: 15px 17px;
+      border-left: 4px solid var(--orange-500);
+      border-radius: 0 12px 12px 0;
+      color: var(--slate-700);
+      background: var(--orange-50);
+    }
+
+    .mockup {
+      position: relative;
+      padding: 12px;
+      border: 1px solid var(--slate-200);
+      border-radius: 18px;
+      background: linear-gradient(145deg, #fff, #f4f6f9);
+      box-shadow: var(--shadow-md);
+    }
+    .mockup a { display: block; overflow: hidden; border-radius: 12px; }
+    .mockup img { display: block; width: 100%; transition: transform .3s ease; }
+    .mockup a:hover img { transform: scale(1.01); }
+    .mockup figcaption { padding: 12px 4px 2px; color: var(--slate-600); font-size: 13px; }
+
+    .grid-2 { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
+    .grid-3 { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+    .grid-4 { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 14px; }
+    .card {
+      padding: 18px;
+      border: 1px solid var(--slate-200);
+      border-radius: var(--radius);
+      background: var(--white);
+      box-shadow: var(--shadow-sm);
+    }
+    .card h3, .card h4 { margin: 0 0 8px; }
+    .card p { margin: 0; color: var(--slate-600); }
+    .card-accent { border-top: 4px solid var(--orange-500); }
+
+    .column-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+    .column-item {
+      min-height: 124px;
+      padding: 15px;
+      border: 1px solid var(--slate-200);
+      border-radius: 14px;
+      background: var(--slate-50);
+    }
+    .column-item strong { display: block; margin-bottom: 5px; color: var(--navy-900); }
+    .column-item span { color: var(--slate-600); font-size: 13px; }
+
+    .status-card { display: flex; align-items: center; gap: 12px; }
+    .status-card img { width: 42px; height: 42px; }
+    .status-card small { display: block; color: var(--slate-500); }
+
+    .tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      padding: 4px 9px;
+      border-radius: 999px;
+      color: var(--orange-700);
+      background: var(--orange-100);
+      font-size: 12px;
+      font-weight: 800;
+    }
+    .tag.high { color: #9d174d; background: #fce7f3; }
+    .tag.medium { color: #92400e; background: #fef3c7; }
+    .tag.req { color: #3730a3; background: #e0e7ff; }
+    .tag.ex { color: #b42318; background: #fee4e2; }
+
+    .flow-list { display: grid; gap: 14px; counter-reset: flow; }
+    .flow {
+      position: relative;
+      padding: 22px 22px 22px 68px;
+      border: 1px solid var(--slate-200);
+      border-radius: var(--radius);
+      background: var(--white);
+    }
+    .flow::before {
+      counter-increment: flow;
+      content: counter(flow, decimal-leading-zero);
+      position: absolute;
+      top: 20px;
+      left: 18px;
+      display: grid;
+      width: 36px;
+      height: 36px;
+      place-items: center;
+      border-radius: 11px;
+      color: var(--white);
+      background: var(--orange-500);
+      font-weight: 900;
+    }
+    .flow h3 { margin: 0 0 8px; }
+    .flow ol { margin: 0; padding-left: 20px; color: var(--slate-700); }
+
+    .exception { border-left: 4px solid #ef4444; }
+    .exception strong { color: var(--red); }
+
+    .formula-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; }
+    .formula {
+      padding: 18px;
+      border: 1px solid #ffd6c2;
+      border-radius: 16px;
+      background: linear-gradient(160deg, #fff, var(--orange-50));
+    }
+    .formula h4 { margin: 0 0 12px; color: var(--orange-700); }
+    .fraction { display: grid; justify-items: center; color: var(--navy-900); font-weight: 720; text-align: center; }
+    .fraction .top { padding: 0 10px 7px; border-bottom: 2px solid var(--navy-800); }
+    .fraction .bottom { padding-top: 7px; }
+    .formula .teacher { margin-top: 16px; padding-top: 12px; border-top: 1px dashed #f5b896; color: var(--slate-600); font-size: 13px; }
+
+    .filters {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      align-items: center;
+      padding: 14px;
+      border: 1px solid var(--slate-200);
+      border-radius: 14px;
+      background: var(--white);
+      position: sticky;
+      top: 10px;
+      z-index: 10;
+      box-shadow: var(--shadow-md);
+    }
+    .search {
+      min-width: min(100%, 320px);
+      flex: 1 1 260px;
+      height: 42px;
+      padding: 0 13px;
+      border: 1px solid var(--slate-300);
+      border-radius: 10px;
+      color: var(--navy-950);
+      background: var(--white);
+      outline: none;
+    }
+    .search:focus { border-color: var(--orange-500); box-shadow: 0 0 0 4px rgba(244, 91, 10, .12); }
+    .testcases { display: grid; gap: 10px; margin-top: 16px; }
+    .testcase {
+      border: 1px solid var(--slate-200);
+      border-radius: 14px;
+      background: var(--white);
+      overflow: clip;
+    }
+    .testcase[hidden] { display: none; }
+    .testcase summary {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 15px 17px;
+      cursor: pointer;
+      list-style: none;
+    }
+    .testcase summary::-webkit-details-marker { display: none; }
+    .testcase summary::after { content: "+"; margin-left: auto; color: var(--orange-600); font-size: 22px; font-weight: 700; }
+    .testcase[open] summary::after { content: "−"; }
+    .testcase-title { min-width: 0; font-weight: 780; }
+    .case-body {
+      display: grid;
+      grid-template-columns: minmax(180px, .7fr) minmax(0, 1.3fr);
+      gap: 18px;
+      padding: 18px;
+      border-top: 1px solid var(--slate-200);
+      background: var(--slate-50);
+    }
+    .case-meta { color: var(--slate-600); }
+    .case-meta div + div { margin-top: 8px; }
+    .case-steps { display: grid; gap: 10px; }
+    .step { padding: 10px 12px; border-left: 3px solid var(--orange-400); background: var(--white); }
+    .expected { margin: 14px 0 0; padding-left: 20px; }
+    .expected li + li { margin-top: 4px; }
+    .empty-filter { display: none; padding: 28px; color: var(--slate-600); text-align: center; }
+
+    .question-list { display: grid; gap: 10px; margin: 0; padding: 0; counter-reset: question; list-style: none; }
+    .question-list li {
+      position: relative;
+      padding: 14px 16px 14px 54px;
+      border: 1px solid #f4d8a4;
+      border-radius: 13px;
+      background: #fffbeb;
+      color: #664d03;
+    }
+    .question-list li::before {
+      counter-increment: question;
+      content: counter(question);
+      position: absolute;
+      top: 12px;
+      left: 14px;
+      display: grid;
+      width: 28px;
+      height: 28px;
+      place-items: center;
+      border-radius: 9px;
+      color: #fff;
+      background: #d99100;
+      font-weight: 850;
+    }
+
+    .footer {
+      margin-top: 64px;
+      padding-top: 24px;
+      border-top: 1px solid var(--slate-200);
+      color: var(--slate-500);
+      text-align: center;
+    }
+
+    @media (max-width: 1120px) {
+      :root { --sidebar: 244px; }
+      .column-grid, .grid-3, .formula-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .stats { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
+    @media (max-width: 780px) {
+      .sidebar { position: static; width: auto; padding: 14px; }
+      .brand { padding-bottom: 12px; }
+      .nav-title, .sidebar-footer { display: none; }
+      .nav { display: flex; overflow-x: auto; padding-top: 10px; }
+      .nav a { flex: 0 0 auto; }
+      main { width: 100%; margin: 0; padding: 18px 14px 60px; }
+      .hero { border-radius: 18px; }
+      .grid-2, .grid-3, .grid-4, .column-grid, .formula-grid, .case-body { grid-template-columns: 1fr; }
+      .section-head { align-items: start; flex-direction: column; }
+      .filters { position: static; }
+    }
+    @media print {
+      body { background: #fff; font-size: 11px; }
+      .sidebar, .hero-actions, .filters, .skip-link { display: none !important; }
+      main { width: 100%; margin: 0; padding: 0; }
+      .hero { color: #111; background: #fff; border: 2px solid #111; box-shadow: none; }
+      .hero p { color: #333; }
+      .panel, .card, .stat, .mockup, .testcase { break-inside: avoid; box-shadow: none; }
+      .section-head { margin-top: 32px; }
+      .testcase { display: block !important; }
+      .testcase summary::after { display: none; }
+      .testcase:not([open]) .case-body { display: grid; }
+    }
+
+    .doc-shell { min-width: 0; }
+    .doc-toolbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      margin-bottom: 18px;
+      padding: 14px 16px;
+      border: 1px solid var(--slate-200);
+      border-radius: 14px;
+      background: rgba(255,255,255,.92);
+      box-shadow: var(--shadow-sm);
+    }
+    .doc-toolbar-left, .doc-toolbar-right { display: flex; flex-wrap: wrap; align-items: center; gap: 9px; }
+    .sync-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      padding: 6px 10px;
+      border-radius: 999px;
+      color: #067647;
+      background: #ecfdf3;
+      border: 1px solid #abefc6;
+      font-size: 12px;
+      font-weight: 800;
+    }
+    .sync-badge::before { content: "✓"; }
+    .hash { color: var(--slate-500); font: 12px ui-monospace, SFMono-Regular, Menlo, monospace; }
+    .markdown-body {
+      padding: clamp(24px, 4vw, 54px);
+      border: 1px solid var(--slate-200);
+      border-radius: var(--radius-lg);
+      background: var(--white);
+      box-shadow: var(--shadow-md);
+      overflow: hidden;
+    }
+    .markdown-body > h1 {
+      position: relative;
+      margin: -54px -54px 42px;
+      padding: 62px 54px 54px;
+      color: var(--white);
+      background:
+        radial-gradient(circle at 88% 10%, rgba(255,122,50,.36), transparent 20rem),
+        linear-gradient(115deg, var(--navy-950), #243047 68%, #713209);
+      font-size: clamp(34px, 5vw, 62px);
+      line-height: 1.05;
+      letter-spacing: -.045em;
+    }
+    .markdown-body h2 {
+      margin: 70px 0 24px;
+      padding: 0 0 13px;
+      border-bottom: 2px solid var(--slate-200);
+      font-size: clamp(27px, 4vw, 39px);
+      line-height: 1.15;
+      letter-spacing: -.035em;
+      scroll-margin-top: 24px;
+    }
+    .markdown-body h2::first-letter { color: var(--orange-600); }
+    .markdown-body h3 {
+      margin: 38px 0 16px;
+      color: var(--navy-900);
+      font-size: 23px;
+      line-height: 1.25;
+      letter-spacing: -.02em;
+      scroll-margin-top: 24px;
+    }
+    .markdown-body h4 {
+      margin: 28px 0 12px;
+      color: var(--orange-700);
+      font-size: 17px;
+      scroll-margin-top: 24px;
+    }
+    .markdown-body p { margin: 12px 0; }
+    .markdown-body strong { color: var(--navy-900); }
+    .markdown-body ul, .markdown-body ol { padding-left: 1.35rem; }
+    .markdown-body li { margin: 6px 0; }
+    .markdown-body li::marker { color: var(--orange-500); font-weight: 800; }
+    .markdown-body hr {
+      height: 1px;
+      margin: 48px 0;
+      border: 0;
+      background: linear-gradient(90deg, transparent, var(--slate-300), transparent);
+    }
+    .markdown-body > p[align="center"] {
+      margin: 22px 0 28px;
+      padding: 12px;
+      border: 1px solid var(--slate-200);
+      border-radius: 18px;
+      background: linear-gradient(145deg, #fff, #f5f7fa);
+      box-shadow: var(--shadow-md);
+    }
+    .markdown-body > p[align="center"] a { display: inline-block; max-width: 100%; }
+    .markdown-body > p[align="center"] img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+      margin: auto;
+      border-radius: 12px;
+    }
+    .markdown-body > p[align="center"] em {
+      display: block;
+      margin-top: 10px;
+      color: var(--slate-500);
+      font-size: 13px;
+    }
+    .table-wrap {
+      width: 100%;
+      margin: 18px 0 28px;
+      overflow: auto;
+      border: 1px solid var(--slate-200);
+      border-radius: 15px;
+      background: var(--white);
+      box-shadow: var(--shadow-sm);
+    }
+    .markdown-body table {
+      width: 100%;
+      min-width: 720px;
+      border-collapse: separate;
+      border-spacing: 0;
+      font-size: 14px;
+    }
+    .markdown-body th {
+      position: sticky;
+      top: 0;
+      z-index: 2;
+      padding: 12px 14px;
+      color: var(--white);
+      background: var(--navy-900);
+      border-bottom: 1px solid var(--navy-800);
+      text-align: left;
+      white-space: nowrap;
+    }
+    .markdown-body td {
+      padding: 12px 14px;
+      border-bottom: 1px solid var(--slate-200);
+      vertical-align: top;
+    }
+    .markdown-body tbody tr:nth-child(even) td { background: var(--slate-50); }
+    .markdown-body tbody tr:hover td { background: var(--orange-50); }
+    .markdown-body tbody tr:last-child td { border-bottom: 0; }
+    .markdown-body td img { display: block; width: 36px; height: 36px; max-width: none; }
+    .markdown-body pre {
+      position: relative;
+      margin: 16px 0 24px;
+      padding: 18px 20px;
+      overflow: auto;
+      border: 1px solid #ffd3bd;
+      border-radius: 14px;
+      color: #fff7ed;
+      background: linear-gradient(145deg, #172033, #222f48);
+      box-shadow: var(--shadow-sm);
+      font: 13px/1.75 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    }
+    .markdown-body pre code { padding: 0; border: 0; color: inherit; background: none; font: inherit; }
+    .markdown-body blockquote {
+      margin: 18px 0;
+      padding: 13px 16px;
+      border-left: 4px solid var(--orange-500);
+      border-radius: 0 12px 12px 0;
+      color: var(--slate-700);
+      background: var(--orange-50);
+    }
+    .case-tools {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 10px;
+      margin: 12px 0 14px;
+      padding: 13px;
+      border: 1px solid var(--slate-200);
+      border-radius: 13px;
+      background: var(--slate-50);
+    }
+    .case-tools input {
+      flex: 1 1 280px;
+      height: 42px;
+      padding: 0 13px;
+      border: 1px solid var(--slate-300);
+      border-radius: 10px;
+      outline: none;
+    }
+    .case-tools input:focus { border-color: var(--orange-500); box-shadow: 0 0 0 4px rgba(244,91,10,.12); }
+    .case-count { color: var(--orange-700); font-weight: 800; white-space: nowrap; }
+    .testcase-table table { min-width: 1500px; }
+    .testcase-table th:first-child, .testcase-table td:first-child {
+      position: sticky;
+      left: 0;
+      z-index: 1;
+      min-width: 230px;
+      box-shadow: 1px 0 0 var(--slate-200);
+    }
+    .testcase-table th:first-child { z-index: 3; background: var(--navy-900); }
+    .testcase-table td:first-child { background: var(--white); font-weight: 750; }
+    .testcase-table tbody tr:nth-child(even) td:first-child { background: var(--slate-50); }
+    .testcase-table tbody tr:hover td:first-child { background: var(--orange-50); }
+    .source-note {
+      margin-top: 18px;
+      color: var(--slate-500);
+      text-align: center;
+      font-size: 12px;
+    }
+    @media (max-width: 780px) {
+      .doc-toolbar { align-items: flex-start; flex-direction: column; }
+      .markdown-body { padding: 20px 16px; border-radius: 16px; }
+      .markdown-body > h1 { margin: -20px -16px 32px; padding: 40px 20px 34px; }
+      .markdown-body h2 { margin-top: 48px; }
+      .markdown-body table { font-size: 13px; }
+    }
+    @media print {
+      .doc-toolbar, .case-tools { display: none !important; }
+      .markdown-body { padding: 0; border: 0; box-shadow: none; overflow: visible; }
+      .markdown-body > h1 { margin: 0 0 32px; padding: 30px; color: #111; background: #fff; border: 2px solid #111; }
+      .table-wrap { overflow: visible; box-shadow: none; }
+      .markdown-body table { min-width: 0 !important; font-size: 9px; }
+      .markdown-body th { position: static; color: #111; background: #eee; }
+      .testcase-table th:first-child, .testcase-table td:first-child { position: static; }
+    }
+</style>
+</head>
+<body>
+  <a class="skip-link" href="#document">Đi đến nội dung chính</a>
+  <aside class="sidebar" aria-label="Mục lục requirement">
+    <div class="brand">
+      <div class="brand-mark">ics</div>
+      <div><strong>ICS Requirement</strong><small>Requirement UI, nghiệp vụ và testcase</small></div>
+    </div>
+    <div class="nav-title">Nội dung Markdown</div>
+    <nav id="docNav" class="nav"></nav>
+    <div class="sidebar-footer">
+      HTML được render trực tiếp từ Markdown nguồn.<br>
+      <a href="./class_detail_information_requirements.md">Mở file Markdown</a>
+    </div>
+  </aside>
+  <main class="doc-shell">
+    <div class="doc-toolbar">
+      <div class="doc-toolbar-left">
+        <span class="sync-badge">Đồng bộ 100% từ Markdown</span>
+        <span class="hash">SHA-256: 943df5b39936…</span>
+      </div>
+      <div class="doc-toolbar-right">
+        <a class="button ghost small" href="./class_detail_information_requirements.md">Xem Markdown</a>
+        <button class="button small" type="button" onclick="window.print()">In / Lưu PDF</button>
+      </div>
+    </div>
+    <article id="document" class="markdown-body" data-source-sha256="943df5b39936442aace4b0bee2a7526b898ec0a82b743c5504451017c7714e26">
+<h1 id="chi-tiet-lop-hoc-tab-thong-tin">Chi tiết lớp học — Tab Thông tin</h1>
+<blockquote>
+<p>Requirement này đặc tả màn <strong>Chi tiết lớp học → Tab Thông tin</strong>. Màn danh sách lớp, popup tạo lớp và các tab liên quan được đặc tả riêng tại <a href="./class_management_requirements.md">Quản lý danh sách lớp học</a>, <a href="./class_creation_requirements.md">Tạo lớp học</a>, <a href="./class_detail_students_requirements.md">Tab Học viên</a>, <a href="./class_detail_teachers_requirements.md">Tab Giáo viên</a>, <a href="./class_detail_support_handlers_requirements.md">Tab Trợ giảng &amp; Phụ trách lớp</a> và <a href="./class_detail_schedule_requirements.md">Tab Lịch dạy</a>.</p>
+</blockquote>
+<h2 id="1-ui">1. UI</h2>
+<h3 id="tab-thong-tin-lop-hoc">Tab Thông tin lớp học</h3>
+<p align="center">
+  <a href="./images/09-class-detail-information.png"><img src="./images/09-class-detail-information.png" alt="Chi tiết lớp học - Tab Thông tin" width="900" title="Nhấn để xem ảnh gốc"></a><br>
+  <em>Chi tiết lớp học — Tab Thông tin — nhấn để xem ảnh gốc</em>
+</p>
+
+<p><strong>Mô tả:</strong></p>
+<ul>
+<li>Hiển thị thông tin hiện tại của một lớp và cho phép người dùng có quyền chỉnh sửa các field được quy định bên dưới.</li>
+<li><code>Admin</code> và <code>Class Handler</code> được chỉnh sửa thông tin chung của lớp trong phạm vi được phân quyền. Riêng <code>Trạng thái</code> chỉ <code>Class Handler</code> được thay đổi.</li>
+<li>Dữ liệu phải được lấy lại từ backend khi mở tab; không sử dụng dữ liệu cũ của màn danh sách làm nguồn quyết định quyền hoặc điều kiện nghiệp vụ.</li>
+</ul>
+<p><strong>Giải thích field/thành phần:</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Field/thành phần</th>
+<th>Yêu cầu</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Lớp không chính thức</td>
+<td>Chỉ <code>Admin</code> được chuyển một lớp chính thức thành lớp không chính thức. Đây là chuyển đổi <strong>một chiều</strong>: sau khi đã tick và lưu, không được bỏ tick để chuyển lại thành lớp chính thức. Lớp test bỏ qua điều kiện nghiệp vụ nhưng không bỏ qua phân quyền.</td>
+</tr>
+<tr>
+<td>Mã lớp</td>
+<td>Cho phép chỉnh sửa. Bắt buộc lưu bằng chữ in hoa, không được rỗng/chỉ chứa khoảng trắng và không giới hạn số ký tự theo nghiệp vụ. Hệ thống chuẩn hóa sang in hoa rồi kiểm tra trùng trên toàn hệ thống.</td>
+</tr>
+<tr>
+<td>Link Google Meet</td>
+<td>Cho phép chỉnh sửa. Nếu có giá trị thì phải là URL <code>http://</code> hoặc <code>https://</code> hợp lệ. Có thể để trống khi lớp chưa chuyển sang <code>Đang học</code>; bắt buộc có URL hợp lệ trước khi lớp chính thức chuyển sang <code>Đang học</code>.</td>
+</tr>
+<tr>
+<td>Khóa học</td>
+<td>Hiển thị khóa học hiện tại. Cho phép đổi khi bài học đầu tiên chưa từng được mở; bị khóa ngay sau lần đầu mở bài học số 1. Hành vi chi tiết nằm tại khu vực <code>Dropdown chọn Khóa học</code>.</td>
+</tr>
+<tr>
+<td>Ghi chú</td>
+<td>Cho phép chỉnh sửa; không bắt buộc. Nội dung phải được lưu và hiển thị an toàn.</td>
+</tr>
+<tr>
+<td>Mô tả</td>
+<td>Cho phép chỉnh sửa; không được rỗng hoặc chỉ chứa khoảng trắng.</td>
+</tr>
+<tr>
+<td>Ngày bắt đầu</td>
+<td>Cho phép chỉnh sửa trước khi bài học số 1 được mở lần đầu. Khi lưu ngày mới, hệ thống sinh lại toàn bộ lịch chưa mở theo số buổi của khóa học. Sau khi bài 1 đã mở, field chuyển sang chỉ đọc.</td>
+</tr>
+<tr>
+<td>Ngày kết thúc</td>
+<td>Field chỉ đọc, người dùng không được chỉnh sửa. Luôn bằng ngày của buổi cuối cùng trong lịch được sinh; tự cập nhật khi lịch thay đổi.</td>
+</tr>
+<tr>
+<td>Loại lớp</td>
+<td>Cho phép đổi giữa đúng hai giá trị <code>Lớp chung</code> và <code>Lớp 1-1</code>. Loại lớp không phụ thuộc sĩ số; <code>Lớp 1-1</code> có thể có nhiều học viên.</td>
+</tr>
+<tr>
+<td>Trạng thái</td>
+<td>Chỉ <code>Class Handler</code> được thay đổi. Các điều kiện chuyển sang <code>Đang học</code> được mô tả tại khu vực <code>Dropdown Trạng thái</code>.</td>
+</tr>
+<tr>
+<td>Lưu/Cập nhật</td>
+<td>Nút lưu toàn bộ thay đổi đang có trên tab. Không tự lưu theo từng field hoặc khi rời field. Nút chưa xuất hiện trong ảnh tham chiếu nhưng bắt buộc có trong UI triển khai.</td>
+</tr>
+<tr>
+<td>Xóa lớp</td>
+<td>Hiển thị cho <code>Admin</code> và <code>Class Handler</code> đang là Phụ trách chính của lớp. Mở quy trình xác nhận hai lần. Chưa hoàn tất xác nhận lần hai thì chưa gửi yêu cầu xóa lớp.</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Điểm cần lưu ý:</strong></p>
+<ul>
+<li>Các field được phép chỉnh sửa gồm: <code>Mã lớp</code>, <code>Link Google Meet</code>, <code>Ghi chú</code>, <code>Mô tả</code>, <code>Loại lớp</code>; <code>Ngày bắt đầu</code> và <code>Khóa học</code> chỉ được chỉnh khi bài học đầu tiên chưa mở. <code>Ngày kết thúc</code> luôn chỉ đọc.</li>
+<li>Không hiển thị control đổi trạng thái ở trạng thái có thể thao tác cho role khác <code>Class Handler</code>; backend vẫn phải từ chối request đổi trạng thái được gửi trực tiếp.</li>
+<li>Chỉ <code>Admin</code> được chuyển lớp chính thức thành <code>Lớp không chính thức</code>. <code>Admin</code> và <code>Class Handler</code> đang phụ trách chính được xóa lớp. Không role nào được chuyển lớp không chính thức về lớp chính thức.</li>
+<li>Không tự lưu khi nhập/chọn field. Chỉ lưu sau khi người dùng bấm <code>Lưu/Cập nhật</code> và backend xác nhận thành công.</li>
+<li>Cho phép đổi sang <code>Lớp 1-1</code> bất kể lớp hiện có 0, 1 hay nhiều học viên; không tự thêm hoặc xóa học viên khi đổi Loại lớp.</li>
+<li>Cập nhật thành công hiển thị notification: <code>Cập nhật thông tin lớp học thành công.</code></li>
+<li>Cập nhật thất bại hiển thị notification: <code>Không thể cập nhật thông tin lớp học. Vui lòng thử lại.</code> Validation tại field vẫn phải hiển thị đúng nguyên nhân cụ thể.</li>
+</ul>
+<h4 id="testcase-tab-thong-tin-lop-hoc">Testcase — Tab Thông tin lớp học</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 1: Mở tab và hiển thị dữ liệu lớp</td>
+<td>High</td>
+<td>Smoke</td>
+<td>Flow 1 / REQ01</td>
+<td>Người dùng có quyền xem lớp</td>
+<td>Lớp tồn tại và thuộc phạm vi được xem</td>
+<td><strong>Given</strong> người dùng mở Chi tiết lớp<br><strong>When</strong> chọn tab <code>Thông tin</code><br><strong>Then</strong> hệ thống tải dữ liệu mới nhất từ backend</td>
+<td>- Hiển thị đúng Mã lớp, Meet, Khóa học, Ghi chú, Mô tả, ngày, Loại lớp và Trạng thái<br>- Không dùng dữ liệu cũ để quyết định quyền<br>- Không làm thay đổi dữ liệu</td>
+</tr>
+<tr>
+<td>Case 2: Chỉnh sửa và lưu các field thông tin chung</td>
+<td>High</td>
+<td>Smoke</td>
+<td>Flow 1 / REQ01</td>
+<td><code>Admin</code> hoặc <code>Class Handler</code></td>
+<td>Người dùng có quyền sửa lớp</td>
+<td><strong>Given</strong> tab đang hiển thị dữ liệu hiện tại<br><strong>When</strong> sửa Mã lớp, Meet, Ghi chú, Mô tả hoặc Loại lớp rồi bấm <code>Lưu/Cập nhật</code><br><strong>Then</strong> backend kiểm tra và lưu đúng field đã đổi</td>
+<td>- Không tự lưu trước khi bấm nút<br>- Dữ liệu mới hiển thị sau khi tải lại<br>- Hiển thị <code>Cập nhật thông tin lớp học thành công.</code><br>- Có ghi nhận người và thời điểm cập nhật</td>
+</tr>
+<tr>
+<td>Case 3: Validation Mã lớp, Mô tả và URL Meet</td>
+<td>High</td>
+<td></td>
+<td>EX01 / REQ06 / REQ10</td>
+<td><code>Admin</code> hoặc <code>Class Handler</code></td>
+<td>Người dùng có quyền sửa lớp</td>
+<td><strong>Given</strong> Mã lớp/Mô tả rỗng, Mã lớp trùng sau chuẩn hóa hoặc Meet không phải URL HTTP(S)<br><strong>When</strong> bấm <code>Lưu/Cập nhật</code><br><strong>Then</strong> hệ thống chuẩn hóa và validate</td>
+<td>- Mã lớp hợp lệ được lưu in hoa<br>- Mã trùng toàn hệ thống bị từ chối, không phân biệt hoa/thường<br>- Báo lỗi tại đúng field<br>- Không giới hạn ký tự Mã lớp, Mô tả, Ghi chú</td>
+</tr>
+<tr>
+<td>Case 4: Admin chuyển lớp chính thức thành lớp không chính thức</td>
+<td>High</td>
+<td></td>
+<td>Flow 1 / REQ11</td>
+<td><code>Admin</code></td>
+<td>Lớp đang là lớp chính thức</td>
+<td><strong>Given</strong> checkbox chưa tick<br><strong>When</strong> Admin tick rồi bấm <code>Lưu/Cập nhật</code><br><strong>Then</strong> backend chuyển lớp thành lớp test</td>
+<td>- Ghi nhận người và thời điểm thay đổi<br>- Quy tắc lớp test có hiệu lực sau khi lưu<br>- Checkbox trở thành chỉ đọc sau khi chuyển thành công</td>
+</tr>
+<tr>
+<td>Case 5: Chặn role khác thay đổi Lớp không chính thức</td>
+<td>High</td>
+<td></td>
+<td>EX13 / REQ11 / Ràng buộc quyền</td>
+<td><code>Class Handler</code> hoặc role khác</td>
+<td>Lớp tồn tại</td>
+<td><strong>Given</strong> checkbox ở chế độ chỉ đọc/không hiển thị control<br><strong>When</strong> người dùng sửa request để tick/bỏ tick<br><strong>Then</strong> backend từ chối</td>
+<td>- Giá trị không đổi<br>- Không cho client giả lập lớp test<br>- Các field hợp lệ khác không bị ghi đè ngoài ý muốn</td>
+</tr>
+<tr>
+<td>Case 39: Không cho chuyển lớp không chính thức về lớp chính thức</td>
+<td>High</td>
+<td></td>
+<td>EX18 / REQ11</td>
+<td><code>Admin</code></td>
+<td>Lớp đã là lớp không chính thức</td>
+<td><strong>Given</strong> checkbox hiển thị đã tick và chỉ đọc<br><strong>When</strong> Admin hoặc client gửi request bỏ tick<br><strong>Then</strong> backend từ chối</td>
+<td>- Lớp vẫn là lớp không chính thức<br>- Không áp dụng lại một phần quy tắc lớp chính thức<br>- Trả lỗi chuyển đổi một chiều</td>
+</tr>
+<tr>
+<td>Case 6: Đổi Loại lớp thành Lớp 1-1 hợp lệ</td>
+<td>High</td>
+<td></td>
+<td>Flow 1 / REQ05</td>
+<td><code>Admin</code> hoặc <code>Class Handler</code></td>
+<td>Lớp có số lượng học viên bất kỳ</td>
+<td><strong>Given</strong> Loại lớp hiện tại là <code>Lớp chung</code><br><strong>When</strong> chọn <code>Lớp 1-1</code> và lưu<br><strong>Then</strong> hệ thống cập nhật Loại lớp</td>
+<td>- Loại lớp mới là <code>Lớp 1-1</code><br>- Danh sách học viên không đổi<br>- Không chấp nhận loại lớp thứ ba</td>
+</tr>
+<tr>
+<td>Case 7: Đổi thành Lớp 1-1 khi lớp có nhiều học viên</td>
+<td>High</td>
+<td></td>
+<td>REQ05</td>
+<td><code>Admin</code> hoặc <code>Class Handler</code></td>
+<td>Lớp có từ 2 học viên trở lên</td>
+<td><strong>Given</strong> người dùng chọn <code>Lớp 1-1</code><br><strong>When</strong> lưu thay đổi<br><strong>Then</strong> backend chấp nhận nếu các field khác hợp lệ</td>
+<td>- Giữ nguyên toàn bộ học viên<br>- Không cảnh báo giới hạn sĩ số bằng 1<br>- Loại lớp và sĩ số được lưu độc lập</td>
+</tr>
+<tr>
+<td>Case 8: Role không có quyền gửi request chỉnh sửa trực tiếp</td>
+<td>High</td>
+<td></td>
+<td>EX04 / Ràng buộc quyền</td>
+<td>Role không có quyền sửa lớp</td>
+<td>Có ID lớp hợp lệ</td>
+<td><strong>Given</strong> role không được phép sửa không thấy hoặc không thao tác được field<br><strong>When</strong> sửa request và gửi trực tiếp<br><strong>Then</strong> backend từ chối</td>
+<td>- Không có field nào bị thay đổi<br>- Không làm lộ dữ liệu ngoài phạm vi<br>- Ghi nhận sự kiện từ chối theo cơ chế hệ thống</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="dropdown-chon-khoa-hoc">Dropdown chọn Khóa học</h3>
+<p align="center">
+  <a href="./images/10-class-detail-course-picker.png"><img src="./images/10-class-detail-course-picker.png" alt="Dropdown chọn Khóa học trong Chi tiết lớp" width="900" title="Nhấn để xem ảnh gốc"></a><br>
+  <em>Dropdown chọn Khóa học có tìm kiếm — nhấn để xem ảnh gốc</em>
+</p>
+
+<p><strong>Mô tả:</strong></p>
+<ul>
+<li>Cho phép chọn một khóa học khác trong danh sách khóa học đã được define sẵn khi bài học đầu tiên của lớp chưa từng được mở.</li>
+<li>Chỉ cần bài học số 1 được mở lần đầu là lớp bị khóa đổi khóa học vĩnh viễn; đóng bài, quay lại trạng thái cũ hoặc chưa hoàn thành bài không mở lại quyền đổi khóa.</li>
+</ul>
+<p><strong>Giải thích field/thành phần:</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Thành phần</th>
+<th>Yêu cầu</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Giá trị hiện tại</td>
+<td>Hiển thị đúng khóa học đang gắn với lớp.</td>
+</tr>
+<tr>
+<td>Ô Tìm kiếm</td>
+<td>Tìm trong danh sách khóa học được phép sử dụng; không tạo khóa học mới và không cho nhập giá trị tự do.</td>
+</tr>
+<tr>
+<td>Danh sách khóa học</td>
+<td>Chỉ hiển thị khóa học đang hoạt động, đã được define và thuộc phạm vi người dùng được phép chọn.</td>
+</tr>
+<tr>
+<td>Chọn khóa học mới</td>
+<td>Trước lần đầu mở bài 1: cho chọn và lưu. Sau lần đầu mở bài 1: control chỉ đọc/disabled và backend từ chối mọi request đổi khóa.</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Điểm cần lưu ý:</strong></p>
+<ul>
+<li>Đổi khóa học thành công phải đồng thời thay toàn bộ <code>Bài học</code>, BTVN gắn với bài học, <code>Bài kiểm tra</code>, tổng số buổi và lịch dạy bằng dữ liệu của khóa học mới.</li>
+<li>Hệ thống dùng số buổi của khóa học mới để sinh lại lịch theo cấu hình lịch cố định hiện tại. Ví dụ đổi khóa <code>24 buổi</code> sang <code>30 buổi</code> thì lịch mới phải có đủ <code>30 buổi</code>.</li>
+<li>Ngày bắt đầu của lớp là buổi 1; các buổi tiếp theo chạy theo lịch cố định đến đủ tổng số buổi của khóa mới.</li>
+<li>Không được giữ lại các buổi dư của khóa cũ hoặc thiếu buổi của khóa mới.</li>
+<li>Toàn bộ thay đổi phải có tính nguyên tử: nếu không thể tạo đủ lịch mới thì giữ nguyên khóa học, số buổi và lịch cũ.</li>
+<li>Backend phải kiểm tra lại mốc “đã mở bài học đầu tiên” tại thời điểm lưu để tránh hai người thao tác đồng thời.</li>
+<li>Thành công hiển thị: <code>Đổi khóa học thành công. Bài học, bài kiểm tra và lịch dạy đã được cập nhật.</code></li>
+<li>Nếu bài 1 đã mở, hiển thị: <code>Không thể đổi khóa học vì bài học đầu tiên đã được mở.</code></li>
+</ul>
+<h4 id="testcase-dropdown-chon-khoa-hoc">Testcase — Dropdown chọn Khóa học</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 9: Mở dropdown và tìm khóa học</td>
+<td>Medium</td>
+<td></td>
+<td>Flow 2 / REQ02</td>
+<td><code>Admin</code> hoặc <code>Class Handler</code></td>
+<td>Bài học 1 chưa từng được mở; người dùng có quyền sửa lớp</td>
+<td><strong>Given</strong> dropdown đang khả dụng<br><strong>When</strong> mở dropdown và nhập từ khóa<br><strong>Then</strong> hệ thống lọc danh sách khóa học hợp lệ</td>
+<td>- Hiển thị khóa học khớp từ khóa<br>- Không cho nhập giá trị tự do<br>- Không hiển thị khóa bị xóa, ngừng hoạt động hoặc ngoài phạm vi</td>
+</tr>
+<tr>
+<td>Case 10: Đổi khóa học trước khi mở bài đầu tiên</td>
+<td>High</td>
+<td></td>
+<td>Flow 2 / REQ02 / REQ03</td>
+<td><code>Admin</code> hoặc <code>Class Handler</code></td>
+<td>Bài học 1 chưa từng được mở; lịch hiện tại hợp lệ</td>
+<td><strong>Given</strong> lớp đang dùng khóa A<br><strong>When</strong> chọn khóa B và bấm <code>Lưu/Cập nhật</code><br><strong>Then</strong> hệ thống thay toàn bộ dữ liệu theo khóa B</td>
+<td>- Bài học, BTVN thuộc bài và bài kiểm tra thuộc khóa B<br>- Tổng số buổi và lịch thuộc khóa B<br>- Không còn nội dung/lịch dư của khóa A<br>- Hiển thị notification đổi khóa thành công</td>
+</tr>
+<tr>
+<td>Case 11: Đổi khóa từ 24 buổi sang 30 buổi</td>
+<td>High</td>
+<td></td>
+<td>Flow 2 / REQ03</td>
+<td><code>Admin</code> hoặc <code>Class Handler</code></td>
+<td>Bài học 1 chưa mở; khóa A có 24 buổi; khóa B có 30 buổi</td>
+<td><strong>Given</strong> lớp có đủ 24 lịch của khóa A<br><strong>When</strong> đổi sang khóa B và lưu thành công<br><strong>Then</strong> hệ thống sinh lại lịch đủ 30 buổi</td>
+<td>- Buổi 1 bắt đầu từ Ngày bắt đầu<br>- Có đúng 30 buổi theo lịch cố định<br>- Không dừng ở 24 và không sinh quá 30</td>
+</tr>
+<tr>
+<td>Case 12: Khóa đổi khóa học ngay khi mở bài đầu tiên</td>
+<td>High</td>
+<td></td>
+<td>Flow 2 / REQ02</td>
+<td><code>Admin</code> hoặc <code>Class Handler</code></td>
+<td>Bài học 1 chưa từng mở</td>
+<td><strong>Given</strong> dropdown đang khả dụng<br><strong>When</strong> bài học số 1 được mở lần đầu rồi người dùng quay lại tab Thông tin<br><strong>Then</strong> khóa học không còn được phép thay đổi</td>
+<td>- Dropdown ở chế độ chỉ đọc/disabled<br>- Đóng bài hoặc bài chưa hoàn thành không mở lại quyền đổi<br>- Giá trị khóa học hiện tại vẫn hiển thị</td>
+</tr>
+<tr>
+<td>Case 13: Từ chối request đổi khóa sau khi bài 1 đã mở</td>
+<td>High</td>
+<td></td>
+<td>EX05 / REQ02 / Ràng buộc quyền</td>
+<td><code>Admin</code> hoặc <code>Class Handler</code></td>
+<td>Bài học số 1 đã từng được mở</td>
+<td><strong>Given</strong> client sửa request hoặc dùng dữ liệu UI cũ<br><strong>When</strong> gửi yêu cầu đổi khóa học<br><strong>Then</strong> backend kiểm tra mốc mở bài và từ chối</td>
+<td>- Khóa học, bài học, BTVN, bài kiểm tra, số buổi và lịch không đổi<br>- Không cập nhật một phần<br>- Hiển thị <code>Không thể đổi khóa học vì bài học đầu tiên đã được mở.</code></td>
+</tr>
+<tr>
+<td>Case 14: Lỗi khi sinh lịch mới</td>
+<td>High</td>
+<td></td>
+<td>EX06 / REQ03</td>
+<td><code>Admin</code> hoặc <code>Class Handler</code></td>
+<td>Bài 1 chưa mở; khóa mới hợp lệ; mô phỏng lỗi sinh/lưu lịch</td>
+<td><strong>Given</strong> lớp đang có khóa và lịch cũ hợp lệ<br><strong>When</strong> đổi khóa nhưng không thể sinh hoặc lưu đủ lịch mới<br><strong>Then</strong> toàn bộ thao tác thất bại</td>
+<td>- Giữ nguyên khóa học, tổng số buổi, danh sách buổi và lịch cũ<br>- Không để dữ liệu nửa cũ nửa mới<br>- Cho phép thử lại</td>
+</tr>
+<tr>
+<td>Case 15: Bài 1 được mở trong lúc người khác đang đổi khóa</td>
+<td>High</td>
+<td></td>
+<td>EX07 / REQ02</td>
+<td><code>Admin</code> hoặc <code>Class Handler</code></td>
+<td>Hai người cùng mở dữ liệu khi bài 1 chưa mở</td>
+<td><strong>Given</strong> người A đang chọn khóa mới<br><strong>When</strong> người B mở bài 1 trước khi người A lưu<br><strong>Then</strong> backend từ chối thao tác đổi khóa của người A</td>
+<td>- Mốc mở bài được ưu tiên kiểm tra tại thời điểm lưu<br>- Không thay khóa hoặc lịch<br>- UI yêu cầu tải lại dữ liệu mới nhất</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="nhom-ngay-bat-au-ngay-ket-thuc-va-lich-uoc-sinh">Nhóm Ngày bắt đầu, Ngày kết thúc và lịch được sinh</h3>
+<p><strong>Mô tả:</strong></p>
+<ul>
+<li><code>Ngày bắt đầu</code> là ngày của buổi 1 và chỉ được chỉnh trước khi bài học số 1 được mở lần đầu.</li>
+<li><code>Ngày kết thúc</code> không cho người dùng nhập; luôn lấy ngày của buổi cuối cùng sau khi hệ thống sinh hoặc điều chỉnh lịch.</li>
+<li>Lịch của lớp luôn phải có đúng tổng số buổi của khóa học, kể cả khi có buổi được chèn, xóa, dời lịch hoặc phải bỏ qua một khung giờ bị trùng.</li>
+</ul>
+<p><strong>Giải thích field/thành phần:</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Thành phần</th>
+<th>Yêu cầu</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Ngày bắt đầu</td>
+<td>Trước khi mở bài 1: cho chọn ngày mới. Sau khi mở bài 1: chỉ đọc và backend từ chối request chỉnh sửa.</td>
+</tr>
+<tr>
+<td>Ngày kết thúc</td>
+<td>Luôn chỉ đọc. Bằng ngày của buổi có số thứ tự cuối cùng trong tổng số buổi của khóa học.</td>
+</tr>
+<tr>
+<td>Lịch cố định</td>
+<td>Là mẫu thứ/giờ dùng để sinh các buổi tự động từ Ngày bắt đầu đến khi đủ số buổi.</td>
+</tr>
+<tr>
+<td>Lịch/buổi được chèn</td>
+<td>Mọi buổi học được chèn vào lịch lớp đều được tính vào tổng số buổi khóa học. Hệ thống đưa buổi chèn vào đúng vị trí thời gian rồi tự động dời, sinh lại và đánh số các buổi phía sau để lịch cuối cùng vẫn đủ đúng N buổi.</td>
+</tr>
+<tr>
+<td>Xóa/hủy một buổi có tính vào chương trình</td>
+<td>Đánh lại số thứ tự các buổi sau và sinh bù một buổi ở khung hợp lệ tiếp theo để tổng số trở lại đúng cấu hình khóa học.</td>
+</tr>
+<tr>
+<td>Dời lịch một buổi</td>
+<td>Chỉ đổi ngày/giờ của chính buổi đó, không tăng/giảm tổng số; sau khi sắp xếp lại phải đánh lại thứ tự theo thời gian nếu cần.</td>
+</tr>
+<tr>
+<td>Khung giờ bị trùng</td>
+<td>Không xếp hai buổi của cùng lớp vào cùng thời gian. Bỏ qua khung bị trùng và tiếp tục tìm khung hợp lệ tiếp theo theo lịch cố định.</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Điểm cần lưu ý:</strong></p>
+<ul>
+<li>Mọi phép cộng/trừ lịch đều lấy <code>Số buổi của khóa học</code> làm tổng chuẩn; một buổi được chèn mặc định có tính vào tổng, không cần thêm control đánh dấu có/không tính.</li>
+<li>Không tự xóa, dời hoặc thay nội dung một buổi đã mở/đã hoàn thành. Khi cần cân bằng tổng số, chỉ điều chỉnh các buổi tương lai chưa mở.</li>
+<li>Đổi Ngày bắt đầu trước khi mở bài 1 sẽ xóa lịch tự sinh cũ chưa mở và sinh lại từ ngày mới đến đủ số buổi.</li>
+<li>Sau mọi thay đổi hợp lệ, hệ thống sắp xếp lịch theo thời gian, đánh số liên tục <code>1…N</code>, bảo đảm không thiếu/trùng số buổi và cập nhật <code>Ngày kết thúc</code> bằng ngày buổi N.</li>
+<li>Nếu không thể cân bằng đủ số buổi mà không tác động đến buổi đã mở/hoàn thành, từ chối toàn bộ thay đổi và giữ lịch cũ.</li>
+<li>Đổi ngày bắt đầu thành công hiển thị: <code>Cập nhật ngày bắt đầu và lịch dạy thành công.</code></li>
+<li>Sau khi bài 1 đã mở, hiển thị: <code>Không thể đổi ngày bắt đầu vì bài học đầu tiên đã được mở.</code></li>
+</ul>
+<h4 id="testcase-nhom-ngay-bat-au-ngay-ket-thuc-va-lich-uoc-sinh">Testcase — Nhóm Ngày bắt đầu, Ngày kết thúc và lịch được sinh</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 29: Đổi Ngày bắt đầu trước khi mở bài 1</td>
+<td>High</td>
+<td></td>
+<td>Flow 5 / REQ12</td>
+<td><code>Admin</code> hoặc <code>Class Handler</code></td>
+<td>Bài 1 chưa mở; khóa học và lịch cố định hợp lệ</td>
+<td><strong>Given</strong> lớp đã có lịch tự sinh<br><strong>When</strong> chọn Ngày bắt đầu mới và bấm <code>Lưu/Cập nhật</code><br><strong>Then</strong> hệ thống sinh lại lịch từ ngày mới</td>
+<td>- Ngày mới là ngày buổi 1<br>- Có đúng N buổi theo khóa học<br>- Đánh số liên tục 1…N<br>- Ngày kết thúc bằng ngày buổi N<br>- Hiển thị notification thành công</td>
+</tr>
+<tr>
+<td>Case 30: Khóa Ngày bắt đầu sau khi mở bài 1</td>
+<td>High</td>
+<td></td>
+<td>EX14 / REQ12</td>
+<td><code>Admin</code> hoặc <code>Class Handler</code></td>
+<td>Bài 1 đã từng được mở</td>
+<td><strong>Given</strong> tab Thông tin được tải lại<br><strong>When</strong> xem field hoặc gửi request đổi ngày trực tiếp<br><strong>Then</strong> hệ thống từ chối chỉnh sửa</td>
+<td>- Field chỉ đọc<br>- Ngày bắt đầu và lịch không đổi<br>- Hiển thị notification không thể đổi vì bài đầu đã mở</td>
+</tr>
+<tr>
+<td>Case 31: Ngày kết thúc luôn bằng ngày buổi cuối</td>
+<td>High</td>
+<td></td>
+<td>REQ12</td>
+<td>Người dùng có quyền xem lớp</td>
+<td>Lớp có N buổi được sinh hợp lệ</td>
+<td><strong>Given</strong> lịch đã được sắp xếp và đánh số<br><strong>When</strong> xem tab Thông tin<br><strong>Then</strong> Ngày kết thúc lấy từ buổi N</td>
+<td>- Field chỉ đọc<br>- Không nhận giá trị do client tự gửi<br>- Tự cập nhật khi ngày buổi N thay đổi</td>
+</tr>
+<tr>
+<td>Case 32: Chèn một buổi và tự điều chỉnh các lịch phía sau</td>
+<td>High</td>
+<td></td>
+<td>Flow 5 / REQ12</td>
+<td>Người dùng có quyền chỉnh lịch</td>
+<td>Còn các buổi tương lai chưa mở; lịch hiện có đủ N buổi</td>
+<td><strong>Given</strong> thêm một buổi vào giữa lịch<br><strong>When</strong> xác nhận chèn buổi<br><strong>Then</strong> hệ thống tính buổi chèn vào tổng và tự điều chỉnh toàn bộ lịch phía sau</td>
+<td>- Tổng vẫn đúng N<br>- Các buổi sau được dời/sinh lại và đánh số liên tục<br>- Không tác động buổi đã mở/hoàn thành<br>- Ngày kết thúc cập nhật theo buổi N mới</td>
+</tr>
+<tr>
+<td>Case 33: Xóa hoặc hủy một buổi có tính vào chương trình</td>
+<td>High</td>
+<td></td>
+<td>Flow 5 / REQ12</td>
+<td>Người dùng có quyền chỉnh lịch</td>
+<td>Buổi cần xóa chưa mở; lịch cố định còn khung hợp lệ</td>
+<td><strong>Given</strong> lịch đang có đúng N buổi<br><strong>When</strong> xóa/hủy một buổi có tính vào chương trình<br><strong>Then</strong> hệ thống đánh lại số và sinh bù ở khung tiếp theo</td>
+<td>- Tổng trở lại đúng N<br>- Không thiếu số thứ tự<br>- Không thay buổi đã mở/hoàn thành<br>- Ngày kết thúc bằng ngày của buổi sinh bù nếu đó là buổi N</td>
+</tr>
+<tr>
+<td>Case 34: Dời một buổi không làm đổi tổng số</td>
+<td>High</td>
+<td></td>
+<td>REQ12</td>
+<td>Người dùng có quyền chỉnh lịch</td>
+<td>Buổi cần dời chưa mở; thời gian mới hợp lệ</td>
+<td><strong>Given</strong> lớp có đúng N buổi<br><strong>When</strong> dời một buổi sang ngày/giờ khác<br><strong>Then</strong> hệ thống sắp xếp và đánh số lại nếu cần</td>
+<td>- Vẫn đúng N buổi<br>- Không nhân đôi hoặc làm mất buổi<br>- Ngày kết thúc tự cập nhật nếu buổi cuối thay đổi</td>
+</tr>
+<tr>
+<td>Case 35: Bỏ qua khung giờ bị trùng khi sinh lịch</td>
+<td>High</td>
+<td></td>
+<td>EX15 / REQ12</td>
+<td><code>Admin</code> hoặc <code>Class Handler</code></td>
+<td>Một hoặc nhiều khung lịch cố định đã có lịch khác của cùng lớp</td>
+<td><strong>Given</strong> hệ thống cần sinh/tái sinh lịch<br><strong>When</strong> gặp khung giờ bị trùng<br><strong>Then</strong> bỏ qua khung trùng và tiếp tục đến khung hợp lệ kế tiếp</td>
+<td>- Không tạo lịch chồng nhau<br>- Cuối cùng vẫn đủ N buổi nếu còn khả năng xếp<br>- Ngày kết thúc phản ánh buổi N thực tế</td>
+</tr>
+<tr>
+<td>Case 36: Không thể cân bằng lịch</td>
+<td>High</td>
+<td></td>
+<td>EX16 / REQ12</td>
+<td><code>Admin</code> hoặc <code>Class Handler</code></td>
+<td>Không đủ khung hợp lệ hoặc việc cân bằng sẽ tác động buổi đã mở</td>
+<td><strong>Given</strong> người dùng đổi ngày/khóa hoặc chỉnh lịch<br><strong>When</strong> hệ thống không thể tạo đủ N buổi hợp lệ<br><strong>Then</strong> từ chối toàn bộ thay đổi</td>
+<td>- Giữ nguyên Ngày bắt đầu, Ngày kết thúc và lịch cũ<br>- Không lưu dữ liệu một phần<br>- Trả nguyên nhân không thể sinh đủ lịch</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="dropdown-trang-thai">Dropdown Trạng thái</h3>
+<p><strong>Mô tả:</strong></p>
+<ul>
+<li>Hiển thị trạng thái hiện tại của lớp.</li>
+<li>Chỉ người dùng có role <code>Class Handler</code> được thay đổi trạng thái lớp. <code>Admin</code> và các role khác chỉ được xem, không được đổi trạng thái.</li>
+</ul>
+<p><strong>Giải thích field/thành phần:</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Thành phần</th>
+<th>Yêu cầu</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Trạng thái hiện tại</td>
+<td>Luôn hiển thị giá trị mới nhất của lớp.</td>
+</tr>
+<tr>
+<td>Danh sách trạng thái</td>
+<td>Các trạng thái vận hành gồm: <code>Mới tạo</code>, <code>Khai giảng</code>, <code>Trải nghiệm</code>, <code>Đang học</code>, <code>Tạm dừng</code>, <code>Hoàn thành</code>, <code>Hủy</code>. <code>Xóa</code> là trạng thái hệ thống do Admin thực hiện qua nút Xóa lớp, không phải lựa chọn trong dropdown.</td>
+</tr>
+<tr>
+<td>Trạng thái <code>Đang học</code></td>
+<td>Với lớp chính thức, chỉ cho chuyển khi đồng thời có Link Google Meet, đạt Tiêu chuẩn giáo viên, hoàn tất đúng Quy trình lớp, có ít nhất 1 học viên ở trạng thái <code>Đang học</code> và <strong>tất cả</strong> học viên ở trạng thái đó đã đáp ứng điều kiện học phí. Cách xác định học phí tuân theo requirement học phí riêng.</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Ma trận chuyển trạng thái lớp chính thức:</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Trạng thái hiện tại</th>
+<th>Trạng thái được phép chuyển đến</th>
+<th>Điều kiện bổ sung</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Mới tạo, Khai giảng, Trải nghiệm, Đang học, Tạm dừng, Hoàn thành hoặc Hủy</td>
+<td>Bất kỳ trạng thái vận hành nào khác trong bảy trạng thái</td>
+<td>Nếu đích là <code>Khai giảng</code> thì lớp phải có lịch dạy hợp lệ. Nếu đích là <code>Đang học</code> thì phải đủ điều kiện Meet, Tiêu chuẩn GV, Quy trình lớp và học phí. <code>Hoàn thành</code>/<code>Hủy</code> vẫn được mở lại sang trạng thái khác như bình thường.</td>
+</tr>
+<tr>
+<td>Xóa</td>
+<td>Không có</td>
+<td>Trạng thái hệ thống sau flow xóa của Admin hoặc Phụ trách chính, không đổi qua dropdown.</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Điểm cần lưu ý:</strong></p>
+<ul>
+<li>Thiếu bất kỳ điều kiện nào của <code>Đang học</code> thì giữ nguyên trạng thái và trả đúng danh sách điều kiện còn thiếu.</li>
+<li>Khi tạo lớp có ít nhất một lịch dạy hợp lệ, hệ thống tự đặt trạng thái <code>Khai giảng</code>; tạo không có lịch thì là <code>Mới tạo</code>. Lớp <code>Mới tạo</code> được thêm lịch hợp lệ sau đó cũng tự chuyển sang <code>Khai giảng</code>.</li>
+<li>Lớp không chính thức được bỏ qua các điều kiện Meet, Tiêu chuẩn giáo viên, Quy trình lớp và học phí; tuy nhiên chỉ <code>Class Handler</code> vẫn được quyền đổi trạng thái.</li>
+<li>Với lớp không chính thức, <code>Class Handler</code> có thể chuyển tự do giữa bảy trạng thái vận hành để phục vụ test; <code>Xóa</code> vẫn chỉ do <code>Admin</code> thực hiện qua flow xóa hai lần.</li>
+<li>Requirement này không tự định nghĩa hóa đơn, số tiền hoặc trạng thái thanh toán được coi là “đã đóng học phí”.</li>
+<li>Backend phải kiểm tra quyền, trạng thái nguồn và điều kiện nghiệp vụ tại thời điểm cập nhật.</li>
+<li>Đổi trạng thái thành công hiển thị: <code>Cập nhật trạng thái lớp học thành công.</code></li>
+<li>Thiếu điều kiện vào <code>Đang học</code> hiển thị: <code>Không thể chuyển lớp sang Đang học. Vui lòng hoàn tất: {danh sách điều kiện còn thiếu}.</code></li>
+</ul>
+<h4 id="testcase-dropdown-trang-thai">Testcase — Dropdown Trạng thái</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 16: Class Handler đổi trạng thái hợp lệ</td>
+<td>High</td>
+<td>Smoke</td>
+<td>Flow 3 / REQ04</td>
+<td><code>Class Handler</code></td>
+<td>Lớp thuộc phạm vi phụ trách; trạng thái đích hợp lệ</td>
+<td><strong>Given</strong> dropdown trạng thái khả dụng<br><strong>When</strong> chọn trạng thái đích và xác nhận<br><strong>Then</strong> backend kiểm tra quyền và ma trận chuyển trạng thái</td>
+<td>- Cập nhật đúng lớp khi đủ điều kiện<br>- Hiển thị <code>Cập nhật trạng thái lớp học thành công.</code><br>- Có ghi nhận người và thời điểm đổi</td>
+</tr>
+<tr>
+<td>Case 17: Chỉ Class Handler được đổi trạng thái</td>
+<td>High</td>
+<td></td>
+<td>EX08 / REQ04 / Ràng buộc quyền</td>
+<td>Kiểm thử <code>Admin</code>, <code>Support</code> và role khác</td>
+<td>Lớp tồn tại</td>
+<td><strong>Given</strong> người dùng không có role <code>Class Handler</code><br><strong>When</strong> xem UI hoặc gửi request đổi trạng thái trực tiếp<br><strong>Then</strong> hệ thống không cho phép</td>
+<td>- UI chỉ hiển thị trạng thái ở chế độ xem<br>- Backend từ chối request trực tiếp<br>- Trạng thái không đổi</td>
+</tr>
+<tr>
+<td>Case 18: Chuyển lớp chính thức sang Đang học khi đủ điều kiện</td>
+<td>High</td>
+<td></td>
+<td>Flow 3 / REQ04</td>
+<td><code>Class Handler</code></td>
+<td>Có Meet; đạt Tiêu chuẩn GV; hoàn tất Quy trình; có ít nhất 1 học viên <code>Đang học</code> và tất cả nhóm này đủ điều kiện học phí</td>
+<td><strong>Given</strong> lớp chính thức đang ở một trạng thái vận hành khác<br><strong>When</strong> chọn <code>Đang học</code> và xác nhận<br><strong>Then</strong> hệ thống kiểm tra đồng thời các điều kiện</td>
+<td>- Trạng thái lớp chuyển thành <code>Đang học</code><br>- Kiểm tra học phí từng học viên có trạng thái <code>Đang học</code><br>- Không yêu cầu học phí của học viên chưa ở trạng thái <code>Đang học</code></td>
+</tr>
+<tr>
+<td>Case 19: Chặn Đang học khi thiếu một hoặc nhiều điều kiện</td>
+<td>High</td>
+<td></td>
+<td>EX09 / REQ04</td>
+<td><code>Class Handler</code></td>
+<td>Thiếu Meet, Tiêu chuẩn GV, Quy trình; không có học viên Đang học; hoặc ít nhất một học viên Đang học chưa đủ học phí</td>
+<td><strong>Given</strong> lần lượt thiếu từng điều kiện và tổ hợp nhiều điều kiện<br><strong>When</strong> chọn <code>Đang học</code><br><strong>Then</strong> backend từ chối</td>
+<td>- Giữ nguyên trạng thái<br>- Notification liệt kê đúng toàn bộ điều kiện còn thiếu/học viên chưa đạt<br>- Không cập nhật một phần</td>
+</tr>
+<tr>
+<td>Case 20: Lớp không chính thức đổi tự do trạng thái nhưng không bỏ qua quyền</td>
+<td>High</td>
+<td></td>
+<td>REQ04 / REQ11 / Ràng buộc quyền</td>
+<td>Kiểm thử <code>Class Handler</code> và role khác</td>
+<td>Lớp được Admin đánh dấu không chính thức</td>
+<td><strong>Given</strong> lớp test thiếu các điều kiện của lớp chính thức<br><strong>When</strong> lần lượt chọn các trạng thái vận hành<br><strong>Then</strong> chỉ Class Handler được đổi tự do giữa bảy trạng thái</td>
+<td>- Không kiểm tra Meet, tiêu chuẩn, quy trình, học phí hoặc ma trận lớp chính thức<br>- Role khác vẫn bị từ chối<br>- Trạng thái Xóa không xuất hiện trong dropdown</td>
+</tr>
+<tr>
+<td>Case 21: Điều kiện thay đổi trong lúc xác nhận trạng thái</td>
+<td>High</td>
+<td></td>
+<td>EX10 / REQ04</td>
+<td><code>Class Handler</code></td>
+<td>UI đã hiển thị đủ điều kiện nhưng một điều kiện không còn hợp lệ trước khi lưu</td>
+<td><strong>Given</strong> dữ liệu điều kiện trên UI đã cũ<br><strong>When</strong> Class Handler xác nhận chuyển sang <code>Đang học</code><br><strong>Then</strong> backend kiểm tra lại dữ liệu mới nhất</td>
+<td>- Từ chối nếu điều kiện không còn đủ<br>- Trạng thái nguồn được giữ nguyên<br>- UI tải lại điều kiện hiện tại</td>
+</tr>
+<tr>
+<td>Case 37: Hiển thị trạng thái đích và mở lại trạng thái kết thúc</td>
+<td>High</td>
+<td></td>
+<td>REQ04</td>
+<td><code>Class Handler</code></td>
+<td>Có lớp lần lượt ở từng trạng thái vận hành</td>
+<td><strong>Given</strong> Class Handler mở dropdown trạng thái<br><strong>When</strong> xem danh sách trạng thái đích, gồm lớp Hoàn thành/Hủy<br><strong>Then</strong> hiển thị sáu trạng thái vận hành còn lại</td>
+<td>- Không hiển thị trạng thái nguồn hoặc Xóa<br>- Hoàn thành/Hủy vẫn chuyển được sang trạng thái khác<br>- Backend áp dụng cùng danh sách với UI</td>
+</tr>
+<tr>
+<td>Case 38: Chặn trạng thái không thuộc danh sách vận hành</td>
+<td>High</td>
+<td></td>
+<td>EX17 / REQ04</td>
+<td><code>Class Handler</code></td>
+<td>Lớp chính thức có trạng thái nguồn xác định</td>
+<td><strong>Given</strong> client gửi giá trị ngoài bảy trạng thái hoặc gửi Xóa qua dropdown<br><strong>When</strong> backend xử lý request<br><strong>Then</strong> từ chối thay đổi</td>
+<td>- Giữ nguyên trạng thái nguồn<br>- Xóa chỉ qua flow xóa của Admin/Phụ trách chính<br>- Không cập nhật dữ liệu một phần</td>
+</tr>
+<tr>
+<td>Case 40: Tự chuyển Mới tạo sang Khai giảng khi thêm lịch</td>
+<td>High</td>
+<td></td>
+<td>REQ04</td>
+<td>Người dùng có quyền thêm lịch</td>
+<td>Lớp <code>Mới tạo</code> chưa có lịch</td>
+<td><strong>Given</strong> người dùng thêm ít nhất một lịch hợp lệ<br><strong>When</strong> backend lưu lịch thành công<br><strong>Then</strong> trạng thái tự chuyển thành <code>Khai giảng</code></td>
+<td>- Lịch và trạng thái cập nhật cùng giao dịch<br>- Không cần Class Handler chọn trạng thái thủ công<br>- Lưu lịch thất bại vẫn giữ <code>Mới tạo</code></td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="popup-xac-nhan-xoa-lop-lan-1">Popup xác nhận xóa lớp — Lần 1</h3>
+<p><strong>Mô tả:</strong></p>
+<ul>
+<li>Chỉ xuất hiện khi <code>Admin</code> hoặc <code>Class Handler</code> đang phụ trách chính bấm <code>Xóa lớp</code>.</li>
+<li>Đây là bước xác nhận ý định; xác nhận lần 1 chỉ mở popup xác nhận lần 2 và chưa gửi request xóa.</li>
+</ul>
+<p><strong>Giải thích thành phần:</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Thành phần</th>
+<th>Yêu cầu</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Tiêu đề</td>
+<td><code>Xóa lớp học?</code></td>
+</tr>
+<tr>
+<td>Nội dung</td>
+<td><code>Bạn đang yêu cầu xóa lớp {Mã lớp}. Hành động này cần được xác nhận thêm một lần.</code></td>
+</tr>
+<tr>
+<td>Hủy</td>
+<td>Đóng popup, giữ nguyên lớp.</td>
+</tr>
+<tr>
+<td>Tiếp tục</td>
+<td>Đóng popup lần 1 và mở popup xác nhận lần 2; chưa thay đổi dữ liệu lớp.</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Điểm cần lưu ý:</strong></p>
+<ul>
+<li>Không được dùng một lần bấm để vượt qua cả hai bước xác nhận.</li>
+<li>Đóng popup bằng nút Hủy, icon đóng hoặc phím Escape đều không được xóa lớp.</li>
+</ul>
+<h4 id="testcase-popup-xac-nhan-xoa-lop-lan-1">Testcase — Popup xác nhận xóa lớp lần 1</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 22: Mở popup xóa lần 1</td>
+<td>High</td>
+<td></td>
+<td>Flow 4 / REQ07</td>
+<td><code>Admin</code> hoặc Phụ trách chính</td>
+<td>Tab Thông tin đang mở</td>
+<td><strong>Given</strong> người dùng có quyền đang xem đúng lớp<br><strong>When</strong> bấm <code>Xóa lớp</code><br><strong>Then</strong> hiển thị popup <code>Xóa lớp học?</code></td>
+<td>- Nội dung có đúng Mã lớp<br>- Có nút Hủy và Tiếp tục<br>- Chưa gửi request xóa</td>
+</tr>
+<tr>
+<td>Case 23: Hủy tại lần xác nhận thứ nhất</td>
+<td>High</td>
+<td></td>
+<td>Flow 4 / REQ07</td>
+<td><code>Admin</code> hoặc Phụ trách chính</td>
+<td>Popup lần 1 đang mở</td>
+<td><strong>Given</strong> popup xác nhận ý định đang hiển thị<br><strong>When</strong> chọn Hủy/đóng popup<br><strong>Then</strong> kết thúc flow xóa</td>
+<td>- Không mở popup lần 2<br>- Không gửi request xóa<br>- Lớp vẫn hoạt động như trước</td>
+</tr>
+<tr>
+<td>Case 24: Tiếp tục sang lần xác nhận thứ hai</td>
+<td>High</td>
+<td></td>
+<td>Flow 4 / REQ07</td>
+<td><code>Admin</code> hoặc Phụ trách chính</td>
+<td>Popup lần 1 đang mở</td>
+<td><strong>Given</strong> popup hiển thị đúng lớp<br><strong>When</strong> chọn <code>Tiếp tục</code><br><strong>Then</strong> mở popup xác nhận lần 2</td>
+<td>- Chưa gửi request xóa ở bước này<br>- Popup lần 2 vẫn nhận diện đúng lớp<br>- Không thể xác nhận nhầm lớp khác</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="popup-xac-nhan-xoa-lop-lan-2">Popup xác nhận xóa lớp — Lần 2</h3>
+<p><strong>Mô tả:</strong></p>
+<ul>
+<li>Là bước xác nhận cuối cùng sau khi người dùng đã xác nhận lần 1.</li>
+<li>Chỉ thao tác xác nhận tại popup lần 2 mới gửi request xóa lớp.</li>
+</ul>
+<p><strong>Giải thích thành phần:</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Thành phần</th>
+<th>Yêu cầu</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Tiêu đề</td>
+<td><code>Xác nhận xóa lớp học</code></td>
+</tr>
+<tr>
+<td>Nội dung</td>
+<td><code>Bạn có chắc chắn muốn xóa lớp {Mã lớp}? Lớp sẽ chuyển sang trạng thái Xóa và không còn được sử dụng cho hoạt động mới.</code></td>
+</tr>
+<tr>
+<td>Quay lại</td>
+<td>Đóng popup lần 2 và quay lại popup lần 1; không xóa lớp.</td>
+</tr>
+<tr>
+<td>Xóa lớp</td>
+<td>Gửi đúng một request xóa lớp sau khi backend kiểm tra lại người dùng là <code>Admin</code> hoặc Phụ trách chính của lớp và kiểm tra trạng thái hiện tại.</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Điểm cần lưu ý:</strong></p>
+<ul>
+<li>Xóa lớp là xóa mềm bằng trạng thái <code>Xóa</code>, phù hợp với trạng thái <code>Xóa</code> đang có ở màn danh sách; không xóa vật lý dữ liệu liên quan.</li>
+<li>Request lặp chỉ được tạo một kết quả xóa; không phát sinh lỗi dữ liệu do bấm nhiều lần.</li>
+<li>Backend không được tin việc client đã đi qua popup lần 1 để bỏ qua kiểm tra quyền ở lần cuối.</li>
+<li>Thành công hiển thị: <code>Đã xóa lớp học {Mã lớp}.</code></li>
+<li>Thất bại hiển thị: <code>Không thể xóa lớp học. Vui lòng thử lại.</code></li>
+</ul>
+<h4 id="testcase-popup-xac-nhan-xoa-lop-lan-2">Testcase — Popup xác nhận xóa lớp lần 2</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 25: Quay lại tại lần xác nhận thứ hai</td>
+<td>High</td>
+<td></td>
+<td>Flow 4 / REQ07</td>
+<td><code>Admin</code> hoặc Phụ trách chính</td>
+<td>Đã xác nhận lần 1; popup lần 2 đang mở</td>
+<td><strong>Given</strong> cảnh báo cuối đang hiển thị<br><strong>When</strong> chọn <code>Quay lại</code><br><strong>Then</strong> quay về popup lần 1</td>
+<td>- Không gửi request xóa<br>- Lớp và dữ liệu liên quan giữ nguyên<br>- Người dùng có thể Hủy hoặc tiếp tục lại</td>
+</tr>
+<tr>
+<td>Case 26: Xóa lớp sau hai lần xác nhận</td>
+<td>High</td>
+<td>Smoke</td>
+<td>Flow 4 / REQ07</td>
+<td><code>Admin</code> hoặc Phụ trách chính</td>
+<td>Đã xác nhận lần 1; popup lần 2 đang mở</td>
+<td><strong>Given</strong> popup hiển thị đúng lớp<br><strong>When</strong> chọn <code>Xóa lớp</code><br><strong>Then</strong> backend kiểm tra lại quyền và xử lý xóa mềm</td>
+<td>- Trạng thái lớp thành <code>Xóa</code><br>- Không xóa vật lý dữ liệu liên quan<br>- Hiển thị <code>Đã xóa lớp học {Mã lớp}.</code></td>
+</tr>
+<tr>
+<td>Case 27: Request xóa thất bại hoặc được gửi lặp</td>
+<td>High</td>
+<td></td>
+<td>EX11 / REQ07</td>
+<td><code>Admin</code> hoặc Phụ trách chính</td>
+<td>Popup lần 2 đang mở; mô phỏng lỗi hoặc bấm nhiều lần</td>
+<td><strong>Given</strong> request đầu tiên đang xử lý<br><strong>When</strong> request thất bại hoặc bị gửi lặp<br><strong>Then</strong> hệ thống xử lý nhất quán</td>
+<td>- Thất bại giữ nguyên trạng thái lớp và hiển thị notification thất bại<br>- Gửi lặp chỉ xóa mềm một lần<br>- Không mất dữ liệu liên quan</td>
+</tr>
+<tr>
+<td>Case 28: Backend từ chối Class Handler không phụ trách xóa lớp</td>
+<td>High</td>
+<td></td>
+<td>EX12 / Ràng buộc quyền</td>
+<td>Class Handler không phụ trách hoặc role khác</td>
+<td>Có ID lớp hợp lệ</td>
+<td><strong>Given</strong> UI không hiển thị nút xóa<br><strong>When</strong> người dùng gửi request trực tiếp<br><strong>Then</strong> backend từ chối</td>
+<td>- Trạng thái lớp không đổi<br>- Không xóa dữ liệu<br>- Backend kiểm tra quan hệ phụ trách tại thời điểm xóa</td>
+</tr>
+</tbody>
+</table></div>
+<hr>
+<h3 id="toast-phan-hoi-crud">Toast phản hồi CRUD</h3>
+<p align="center">
+  <a href="../../images/01-toast-crud.png"><img src="../../images/01-toast-crud.png" alt="Bốn trạng thái Toast CRUD" width="520" title="Nhấn để xem ảnh gốc"></a><br>
+  <em>Toast phản hồi Create, Update, Delete và đổi trạng thái — nhấn để xem ảnh gốc</em>
+</p>
+
+<p><strong>Mô tả:</strong> Toast phản hồi kết quả các thao tác thay đổi dữ liệu trong requirement này.</p>
+<p><strong>Giải thích thành phần:</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Loại</th>
+<th>Tiêu đề</th>
+<th>Khi sử dụng</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Thành công</td>
+<td><code>Thành Công</code></td>
+<td>Backend xác nhận thao tác thành công.</td>
+</tr>
+<tr>
+<td>Thông tin</td>
+<td><code>Thông Báo</code></td>
+<td>Thao tác đã tiếp nhận nhưng dữ liệu cần thời gian đồng bộ.</td>
+</tr>
+<tr>
+<td>Cảnh báo</td>
+<td><code>Cảnh Báo</code></td>
+<td>Dữ liệu/điều kiện cần người dùng kiểm tra.</td>
+</tr>
+<tr>
+<td>Lỗi</td>
+<td><code>Có Lỗi Xảy Ra</code></td>
+<td>Backend/network không hoàn tất thao tác.</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Điểm cần lưu ý:</strong> Nội dung dòng hai lấy từ flow CRUD tương ứng; mỗi thao tác chỉ có một Toast; Hủy/chỉ đọc không có Toast CRUD; nút <code>×</code> đóng thủ công; không hiển thị dữ liệu nhạy cảm.</p>
+<h4 id="testcase-toast-phan-hoi-crud">Testcase — Toast phản hồi CRUD</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Toast Case 1: Thành công</td>
+<td>High</td>
+<td></td>
+<td>Ràng buộc Toast CRUD</td>
+<td>Role có quyền CRUD</td>
+<td>Dữ liệu hợp lệ</td>
+<td><strong>Given</strong> người dùng xác nhận thay đổi<br><strong>When</strong> backend thành công<br><strong>Then</strong> hiển thị Toast <code>Thành Công</code></td>
+<td>- Đúng nội dung nghiệp vụ<br>- Đúng một Toast<br>- Chỉ hiện sau khi backend xác nhận</td>
+</tr>
+<tr>
+<td>Toast Case 2: Cảnh báo</td>
+<td>High</td>
+<td></td>
+<td>Ràng buộc Toast CRUD</td>
+<td>Role có quyền CRUD</td>
+<td>Dữ liệu/điều kiện chưa hợp lệ</td>
+<td><strong>Given</strong> thao tác chưa đủ điều kiện<br><strong>When</strong> người dùng xác nhận<br><strong>Then</strong> hiển thị Toast <code>Cảnh Báo</code> nếu flow có Toast validation</td>
+<td>- Không lưu dữ liệu sai<br>- Vẫn đánh dấu field lỗi<br>- Không hiện thành công</td>
+</tr>
+<tr>
+<td>Toast Case 3: Lỗi</td>
+<td>High</td>
+<td></td>
+<td>Ràng buộc Toast CRUD</td>
+<td>Role có quyền CRUD</td>
+<td>Backend/network lỗi</td>
+<td><strong>Given</strong> request hợp lệ đã gửi<br><strong>When</strong> xử lý thất bại<br><strong>Then</strong> hiển thị Toast <code>Có Lỗi Xảy Ra</code></td>
+<td>- Không cập nhật một phần<br>- Cho phép thử lại<br>- Không lộ lỗi kỹ thuật</td>
+</tr>
+<tr>
+<td>Toast Case 4: Thông tin, đóng và chống lặp</td>
+<td>Medium</td>
+<td></td>
+<td>Ràng buộc Toast CRUD</td>
+<td>Role có quyền CRUD</td>
+<td>Đang đồng bộ hoặc Toast đang hiển thị</td>
+<td><strong>Given</strong> thao tác xử lý bất đồng bộ hoặc callback lặp<br><strong>When</strong> UI nhận trạng thái hoặc người dùng bấm <code>×</code><br><strong>Then</strong> hiển thị tối đa một Toast <code>Thông Báo</code> và cho đóng thủ công</td>
+<td>- Không báo thành công sớm<br>- Không nhân đôi Toast<br>- Đóng không hoàn tác dữ liệu</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="2-yeu-cau">2. Yêu cầu</h2>
+<h3 id="21-flow-chinh">2.1. Flow chính</h3>
+<p><strong>Flow 1 / REQ01, REQ05–REQ06: Xem và chỉnh sửa thông tin chung</strong></p>
+<pre><code class="language-text">Người dùng có quyền mở Chi tiết lớp → tab Thông tin
+      → Hệ thống tải dữ liệu và quyền mới nhất từ backend
+      → Admin hoặc Class Handler chỉnh field được phép
+      → Chưa bấm Lưu/Cập nhật: không gửi request và không tự lưu
+      → Người dùng bấm Lưu/Cập nhật
+      → Backend kiểm tra quyền, phạm vi, field bắt buộc, URL Meet và Loại lớp
+      → Hợp lệ: lưu đúng field thay đổi và hiển thị notification thành công
+      → Không hợp lệ: không cập nhật một phần; giữ dữ liệu hợp lệ trước đó và trả lỗi đúng field
+</code></pre>
+<p><strong>Flow 2 / REQ02–REQ03: Đổi Khóa học</strong></p>
+<pre><code class="language-text">Admin hoặc Class Handler mở dropdown Khóa học
+      → Backend/UI kiểm tra bài học số 1 chưa từng được mở
+      → Người dùng tìm và chọn khóa học đã define
+      → Bấm Lưu/Cập nhật; backend kiểm tra lại mốc mở bài 1 và cấu hình khóa mới
+      → Tính lại tổng số buổi theo khóa mới
+      → Thay toàn bộ Bài học, BTVN theo bài và Bài kiểm tra theo khóa mới
+      → Tạo lại danh sách buổi và lịch dạy theo lịch cố định đến đủ số buổi mới
+      → Chỉ khi toàn bộ dữ liệu hợp lệ: cập nhật đồng thời khóa, nội dung, số buổi và lịch
+      → Nếu bài 1 đã mở hoặc sinh lịch thất bại: giữ nguyên toàn bộ dữ liệu cũ
+</code></pre>
+<p><strong>Flow 3 / REQ04: Class Handler đổi Trạng thái</strong></p>
+<pre><code class="language-text">Class Handler mở dropdown Trạng thái
+      → Hệ thống chỉ hiển thị trạng thái đích hợp lệ theo ma trận
+      → Nếu chọn Đang học cho lớp chính thức, backend kiểm tra đồng thời:
+           có Link Google Meet
+           đạt Tiêu chuẩn giáo viên
+           hoàn tất đúng Quy trình lớp
+           có ít nhất 1 học viên ở trạng thái Đang học
+           tất cả học viên ở trạng thái Đang học đáp ứng điều kiện học phí
+      → Đủ điều kiện: cập nhật trạng thái
+      → Thiếu điều kiện: giữ nguyên trạng thái và trả toàn bộ điều kiện còn thiếu
+      → Lớp không chính thức cho Class Handler đổi tự do giữa bảy trạng thái vận hành
+      → Mọi trường hợp vẫn không bỏ qua quyền Class Handler
+</code></pre>
+<p><strong>Flow 4 / REQ07: Xóa lớp với hai lần xác nhận</strong></p>
+<pre><code class="language-text">Admin hoặc Class Handler đang phụ trách chính bấm Xóa lớp
+      → Popup Xóa lớp học? hiển thị đúng Mã lớp
+      → Hủy: kết thúc, không xóa
+      → Tiếp tục: mở popup Xác nhận xóa lớp học, chưa gửi request xóa
+      → Quay lại: trở về popup lần 1, không xóa
+      → Xóa lớp: backend kiểm tra lại role/phạm vi phụ trách và trạng thái
+      → Thành công: chuyển lớp sang trạng thái Xóa và hiển thị notification thành công
+      → Thất bại: giữ nguyên lớp và cho phép thử lại
+</code></pre>
+<p><strong>Flow 5 / REQ12: Đổi ngày bắt đầu và cân bằng lịch</strong></p>
+<pre><code class="language-text">Admin hoặc Class Handler chỉnh Ngày bắt đầu trước khi mở bài 1
+      → Bấm Lưu/Cập nhật
+      → Backend kiểm tra lại mốc mở bài 1, tổng số buổi và lịch cố định
+      → Xóa lịch tự sinh cũ chưa mở và sinh lại từ ngày mới
+      → Nếu chèn một buổi: mặc định tính vào tổng; tự dời/sinh lại và đánh số các buổi phía sau
+      → Nếu xóa một buổi tính vào chương trình: đánh lại số, sinh bù ở khung hợp lệ kế tiếp
+      → Nếu dời buổi: giữ nguyên tổng số và sắp xếp/đánh số lại
+      → Luôn giữ đúng N buổi; Ngày kết thúc bằng ngày buổi N
+      → Không thể cân bằng: rollback toàn bộ và giữ lịch cũ
+</code></pre>
+<h3 id="22-ngoai-le">2.2. Ngoại lệ</h3>
+<ul>
+<li><strong>EX01:</strong> Mã lớp hoặc Mô tả rỗng/chỉ chứa khoảng trắng, Mã lớp trùng sau khi chuẩn hóa in hoa, hoặc Link Google Meet không phải URL HTTP(S) hợp lệ → từ chối lưu, báo đúng field và giữ dữ liệu cũ.</li>
+<li><strong>EX02:</strong> Client gửi giá trị <code>Ngày kết thúc</code> → bỏ qua/từ chối field này và tính lại từ buổi cuối; không dùng giá trị client để ghi đè.</li>
+<li><strong>EX04:</strong> Role không có quyền hoặc lớp ngoài phạm vi gửi request cập nhật → backend từ chối và không thay đổi dữ liệu.</li>
+<li><strong>EX05:</strong> Bài học số 1 đã từng được mở → từ chối mọi request đổi khóa học, kể cả request trực tiếp hoặc UI đang giữ dữ liệu cũ.</li>
+<li><strong>EX06:</strong> Khóa mới thiếu cấu hình số buổi, lịch cố định không còn hợp lệ hoặc không thể sinh/lưu đủ lịch → không đổi khóa; giữ nguyên toàn bộ khóa, số buổi và lịch cũ.</li>
+<li><strong>EX07:</strong> Bài học số 1 được mở trong lúc một người khác đang đổi khóa → tại thời điểm lưu, ưu tiên mốc mở bài và từ chối đổi khóa.</li>
+<li><strong>EX08:</strong> Người không có role <code>Class Handler</code> gửi request đổi trạng thái → backend từ chối, kể cả <code>Admin</code>.</li>
+<li><strong>EX09:</strong> Lớp chính thức thiếu Meet, Tiêu chuẩn giáo viên, Quy trình lớp, không có học viên ở trạng thái <code>Đang học</code>, hoặc có ít nhất một học viên <code>Đang học</code> chưa đáp ứng học phí → không chuyển lớp sang <code>Đang học</code>; trả đúng toàn bộ điều kiện còn thiếu.</li>
+<li><strong>EX10:</strong> Một điều kiện chuyển trạng thái thay đổi sau khi UI tải nhưng trước khi lưu → backend dùng dữ liệu mới nhất và từ chối nếu không còn đủ điều kiện.</li>
+<li><strong>EX11:</strong> Xóa lớp thất bại hoặc request bị gửi lặp → không thay đổi một phần; chỉ cho phép một kết quả xóa mềm.</li>
+<li><strong>EX12:</strong> Người dùng không phải <code>Admin</code> và không phải <code>Class Handler</code> đang phụ trách chính gửi request xóa → backend từ chối; không đổi trạng thái hoặc xóa dữ liệu liên quan.</li>
+<li><strong>EX13:</strong> Người không có role <code>Admin</code> gửi request tick/bỏ tick <code>Lớp không chính thức</code> → backend từ chối và giữ nguyên giá trị.</li>
+<li><strong>EX14:</strong> Bài học số 1 đã mở → không cho đổi Ngày bắt đầu, kể cả request trực tiếp hoặc UI cũ.</li>
+<li><strong>EX15:</strong> Gặp khung giờ trùng khi sinh lịch → bỏ qua khung trùng và tiếp tục theo lịch cố định đến khi đủ N buổi.</li>
+<li><strong>EX16:</strong> Không thể sinh/cân bằng đủ N buổi mà không tác động buổi đã mở/hoàn thành → rollback toàn bộ thay đổi lịch.</li>
+<li><strong>EX17:</strong> Request gửi giá trị ngoài bảy trạng thái vận hành hoặc cố chọn <code>Xóa</code> qua dropdown → backend từ chối và giữ nguyên trạng thái nguồn.</li>
+<li><strong>EX18:</strong> Lớp đã là lớp không chính thức nhưng client gửi request bỏ tick → backend từ chối; lớp test không được chuyển lại thành lớp chính thức.</li>
+</ul>
+<h3 id="23-yeu-cau-khac">2.3. Yêu cầu khác</h3>
+<ul>
+<li><strong>REQ01 – Thông tin được chỉnh sửa và cơ chế lưu:</strong> Cho phép chỉnh <code>Mã lớp</code>, <code>Link Google Meet</code>, <code>Ghi chú</code>, <code>Mô tả</code>, <code>Loại lớp</code>; <code>Ngày bắt đầu</code> tuân theo REQ12. Không tự lưu; chỉ gửi cập nhật khi bấm <code>Lưu/Cập nhật</code>. <code>Ngày kết thúc</code> chỉ đọc.</li>
+<li><strong>REQ02 – Mốc khóa Khóa học:</strong> Chỉ được đổi Khóa học trước khi bài học số 1 được mở lần đầu. Mốc đã mở là vĩnh viễn và phải được kiểm tra ở backend.</li>
+<li><strong>REQ03 – Đồng bộ khi đổi Khóa học:</strong> Khóa mới quyết định toàn bộ Bài học, BTVN theo bài, Bài kiểm tra và tổng số buổi. Hệ thống tạo lại lịch đến đủ số buổi mới; cập nhật nguyên tử cùng Khóa học.</li>
+<li><strong>REQ04 – Quyền và điều kiện đổi Trạng thái:</strong> Chỉ <code>Class Handler</code> được đổi trạng thái. Bảy trạng thái vận hành được chuyển qua lại, kể cả mở lại từ <code>Hoàn thành</code>/<code>Hủy</code>; <code>Xóa</code> không nằm trong dropdown. Chuyển sang <code>Khai giảng</code> cần lịch hợp lệ. Chuyển sang <code>Đang học</code> cần Meet, Tiêu chuẩn GV, Quy trình lớp, ít nhất 1 học viên <code>Đang học</code> và toàn bộ nhóm này đáp ứng học phí. Có lịch ngay khi tạo hoặc thêm lịch cho lớp <code>Mới tạo</code> thì tự chuyển <code>Khai giảng</code>.</li>
+<li><strong>REQ05 – Loại lớp:</strong> Chỉ có <code>Lớp chung</code> và <code>Lớp 1-1</code>. Loại lớp là field độc lập với sĩ số; lớp 1-1 có thể có 0, 1 hoặc nhiều học viên. Đổi Loại lớp không tự thêm/xóa học viên.</li>
+<li><strong>REQ06 – Validation và toàn vẹn cập nhật:</strong> Backend kiểm tra lại dữ liệu, quyền và phạm vi; không tin field chỉ đọc/cờ điều kiện từ client; một lần cập nhật thất bại không được lưu một phần.</li>
+<li><strong>REQ07 – Xóa lớp:</strong> <code>Admin</code> và <code>Class Handler</code> đang phụ trách chính được xóa lớp. Phải xác nhận qua hai popup độc lập. Chỉ nút <code>Xóa lớp</code> ở popup lần 2 mới gửi request; backend kiểm tra lại quan hệ phụ trách tại thời điểm xóa; xóa mềm bằng trạng thái <code>Xóa</code>.</li>
+<li><strong>REQ08 – Theo dõi thay đổi:</strong> Ghi nhận tối thiểu lớp, field/trạng thái cũ và mới, người thực hiện và thời điểm cho thao tác chỉnh sửa, đổi khóa, đổi trạng thái và xóa.</li>
+<li><strong>REQ09 – Hiển thị an toàn:</strong> Mã lớp, Mô tả và Ghi chú phải được hiển thị như text; không thực thi HTML/script. Lỗi trả về không chứa stack trace, token hoặc định danh kỹ thuật nhạy cảm.</li>
+<li><strong>REQ10 – Dữ liệu text và URL:</strong> Không giới hạn số ký tự theo nghiệp vụ đối với Mã lớp, Mô tả và Ghi chú. Mã lớp bắt buộc lưu in hoa và duy nhất toàn hệ thống sau chuẩn hóa, không phân biệt hoa/thường khi kiểm tra trùng. Link Google Meet, nếu có, chỉ chấp nhận URL HTTP(S) hợp lệ.</li>
+<li><strong>REQ11 – Lớp không chính thức:</strong> Chỉ <code>Admin</code> được chuyển lớp chính thức thành lớp không chính thức. Chuyển đổi là một chiều; sau khi lưu lớp test thì không được bỏ tick để về lớp chính thức. Class Handler chỉ được đổi trạng thái của lớp test, không được tự gán cờ lớp test.</li>
+<li><strong>REQ12 – Ngày và cân bằng lịch:</strong> Ngày bắt đầu chỉ đổi trước khi mở bài 1. Lịch luôn đúng N buổi của khóa học; mọi buổi chèn được tính vào tổng và làm các buổi phía sau tự dời/sinh lại, đánh số lại. Ngày kết thúc luôn bằng ngày buổi N và không cho người dùng sửa.</li>
+</ul>
+<h3 id="24-rang-buoc">2.4. Ràng buộc</h3>
+<h4 id="quyen">Quyền</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Role</th>
+<th style="text-align: center;">Xem tab theo phạm vi</th>
+<th style="text-align: center;">Sửa thông tin chung</th>
+<th style="text-align: center;">Đổi Khóa học/Ngày bắt đầu trước khi mở bài 1</th>
+<th style="text-align: center;">Tick Lớp không chính thức</th>
+<th style="text-align: center;">Đổi Trạng thái</th>
+<th style="text-align: center;">Xóa lớp</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Admin</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">✅</td>
+</tr>
+<tr>
+<td>Class Handler</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+</tr>
+<tr>
+<td>Các role khác</td>
+<td style="text-align: center;">Theo quyền xem hiện hành</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+</tr>
+</tbody>
+</table></div>
+<ul>
+<li>Không cho phép role bị đánh dấu <code>❌</code> thực hiện hành động bằng cách sửa giao diện, mở URL hoặc gửi request trực tiếp.</li>
+<li>Quyền xóa của <code>Class Handler</code> chỉ áp dụng khi người đó là <code>Phụ trách chính</code> hiện tại của chính lớp cần xóa; <code>Admin</code> không bị giới hạn bởi quan hệ phụ trách.</li>
+<li><code>Class Handler</code> chỉ thao tác trên lớp thuộc phạm vi được phân công, trừ khi có permission phạm vi rộng hơn được cấu hình riêng.</li>
+</ul>
+<h4 id="pham-vi-va-tinh-toan-ven-du-lieu">Phạm vi và tính toàn vẹn dữ liệu</h4>
+<ul>
+<li>Backend là nguồn quyết định cuối cùng cho quyền, mốc đã mở bài 1, trạng thái lớp, điều kiện <code>Đang học</code>, cờ lớp test và quyền xóa.</li>
+<li>Khóa học được chọn phải tồn tại, đang hoạt động, đã define số buổi và thuộc phạm vi người dùng tại thời điểm lưu.</li>
+<li>Thao tác đổi khóa phải nguyên tử giữa Khóa học, Bài học, BTVN, Bài kiểm tra, tổng số buổi và lịch dạy.</li>
+<li>Mọi thay đổi lịch phải giữ đúng tổng số buổi, không tác động buổi đã mở/hoàn thành và cập nhật Ngày kết thúc trong cùng giao dịch.</li>
+<li>Không dùng tên Khóa học, Mã lớp hoặc text hiển thị làm định danh cập nhật/phân quyền.</li>
+<li>Mỗi thao tác gửi lặp phải có kết quả nhất quán, không tạo thêm lịch hoặc xóa lớp nhiều lần.</li>
+</ul>
+<hr>
+<h2 id="3-can-xac-nhan">3. Cần xác nhận</h2>
+<ul>
+<li>Không còn nội dung nghiệp vụ cần xác nhận cho phạm vi tab Thông tin tại thời điểm cập nhật requirement này.</li>
+</ul>
+</article>
+    <p class="source-note">Nguồn: class_detail_information_requirements.md · SHA-256 943df5b39936442aace4b0bee2a7526b898ec0a82b743c5504451017c7714e26</p>
+  </main>
+  <script>
+    const article = document.getElementById('document');
+    const nav = document.getElementById('docNav');
+    const headings = [...article.querySelectorAll('h2')];
+    headings.forEach((heading, index) => {
+      const link = document.createElement('a');
+      link.href = `#${heading.id}`;
+      const number = document.createElement('span');
+      number.className = 'nav-num';
+      number.textContent = String(index + 1).padStart(2, '0');
+      link.append(number, document.createTextNode(heading.textContent));
+      nav.append(link);
+    });
+
+    const navLinks = [...nav.querySelectorAll('a')];
+    const observer = new IntersectionObserver(entries => {
+      const current = entries.filter(item => item.isIntersecting).sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
+      if (!current) return;
+      navLinks.forEach(link => link.classList.toggle('active', link.hash === `#${current.target.id}`));
+    }, {rootMargin: '-18% 0px -68% 0px', threshold: [0, .2, .5]});
+    headings.forEach(heading => observer.observe(heading));
+    if (navLinks[0]) navLinks[0].classList.add('active');
+
+    const testcaseHeadings = [...article.querySelectorAll('h4, h5')]
+      .filter(heading => heading.textContent.trim().startsWith('Testcase'));
+    const testcaseGroups = testcaseHeadings
+      .map(heading => ({heading, tableWrap: heading.nextElementSibling}))
+      .filter(group => group.tableWrap?.classList.contains('table-wrap'));
+    if (testcaseGroups.length) {
+        const tableWraps = testcaseGroups.map(group => group.tableWrap);
+        tableWraps.forEach(tableWrap => tableWrap.classList.add('testcase-table'));
+        const rows = tableWraps.flatMap(tableWrap => [...tableWrap.querySelectorAll('tbody tr')]);
+        const tools = document.createElement('div');
+        tools.className = 'case-tools';
+        const input = document.createElement('input');
+        input.type = 'search';
+        input.placeholder = 'Tìm testcase, Flow, REQ, EX hoặc nội dung…';
+        input.setAttribute('aria-label', 'Tìm testcase');
+        const count = document.createElement('span');
+        count.className = 'case-count';
+        tools.append(input, count);
+        testcaseGroups[0].heading.before(tools);
+        const filterRows = () => {
+          const query = input.value.trim().toLocaleLowerCase('vi');
+          let visible = 0;
+          rows.forEach(row => {
+            const match = !query || row.textContent.toLocaleLowerCase('vi').includes(query);
+            row.hidden = !match;
+            if (match) visible += 1;
+          });
+          testcaseGroups.forEach(({heading, tableWrap}) => {
+            const hasVisibleRow = [...tableWrap.querySelectorAll('tbody tr')]
+              .some(row => !row.hidden);
+            heading.hidden = !hasVisibleRow;
+            tableWrap.hidden = !hasVisibleRow;
+          });
+          count.textContent = `${visible}/${rows.length} testcase`;
+        };
+        input.addEventListener('input', filterRows);
+        filterRows();
+    }
+  </script>
+</body>
+</html>

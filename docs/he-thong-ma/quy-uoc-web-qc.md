@@ -26,7 +26,7 @@ Demo phục vụ sẵn toàn bộ requirement và dữ liệu hệ thống mã, 
 
 - **Khoá:** gửi header `x-qc-key: <khoá>` (hoặc `Authorization: Bearer <khoá>`). Thiếu hoặc sai khoá trả `401`. Khoá do design giữ, gửi riêng cho team web QC.
 - **Gọi từ server của web QC**, không gọi từ trình duyệt, để khoá không lộ. Server QC tải về rồi trả cho người dùng.
-- **Cập nhật:** đọc `index.json` định kỳ (ví dụ mỗi 15 phút) hoặc khi người dùng bấm làm mới; `generatedAt` đổi nghĩa là có bản mới thì nhập lại theo mục 6.
+- **Cập nhật:** đọc `index.json` định kỳ (ví dụ mỗi 15 phút) hoặc khi người dùng bấm làm mới; `version` đổi nghĩa là có bản mới (thời điểm ở `generatedAt`) thì nhập lại theo mục 6.
 - Ảnh "Figma mới nhất" vẫn lấy từ `/api/figma-frame/<MÃ>.png`, không cần khoá.
 
 ## 2. Cấu trúc file và cách đọc

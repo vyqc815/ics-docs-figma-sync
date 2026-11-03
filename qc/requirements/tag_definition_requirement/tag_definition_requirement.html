@@ -1,0 +1,1296 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Requirement Define Tag — quản lý nhóm và tag">
+  <link rel="icon" href="data:,">
+  <title>Define Tag — Quản lý nhóm và tag — Requirement</title>
+  <style>
+    :root {
+      --orange-700: #c83f00;
+      --orange-600: #e84c00;
+      --orange-500: #f45b0a;
+      --orange-400: #ff7a32;
+      --orange-100: #fff0e8;
+      --orange-50: #fff8f4;
+      --navy-950: #101828;
+      --navy-900: #172033;
+      --navy-800: #243047;
+      --slate-700: #344054;
+      --slate-600: #475467;
+      --slate-500: #667085;
+      --slate-400: #98a2b3;
+      --slate-300: #d0d5dd;
+      --slate-200: #e4e7ec;
+      --slate-100: #f2f4f7;
+      --slate-50: #f8fafc;
+      --white: #ffffff;
+      --green: #159447;
+      --blue: #2154c5;
+      --yellow: #b77900;
+      --red: #c92a2a;
+      --purple: #6941c6;
+      --shadow-sm: 0 1px 2px rgba(16, 24, 40, .06);
+      --shadow-md: 0 12px 32px rgba(16, 24, 40, .10);
+      --shadow-lg: 0 24px 64px rgba(16, 24, 40, .16);
+      --radius-sm: 10px;
+      --radius: 16px;
+      --radius-lg: 24px;
+      --sidebar: 286px;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      color: var(--navy-950);
+      background:
+        radial-gradient(circle at 88% 5%, rgba(244, 91, 10, .10), transparent 24rem),
+        var(--slate-50);
+      font: 15px/1.65 Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      text-rendering: optimizeLegibility;
+    }
+    a { color: inherit; }
+    img { max-width: 100%; }
+    button, input, select { font: inherit; }
+    code {
+      padding: .12rem .38rem;
+      border: 1px solid #fed7c3;
+      border-radius: 6px;
+      color: var(--orange-700);
+      background: var(--orange-50);
+      font: 600 .9em ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    }
+
+    .skip-link {
+      position: fixed;
+      z-index: 999;
+      top: 12px;
+      left: 12px;
+      padding: 10px 14px;
+      border-radius: 9px;
+      color: var(--white);
+      background: var(--navy-950);
+      transform: translateY(-150%);
+    }
+    .skip-link:focus { transform: none; }
+
+    .sidebar {
+      position: fixed;
+      z-index: 30;
+      inset: 0 auto 0 0;
+      width: var(--sidebar);
+      padding: 22px 18px;
+      overflow-y: auto;
+      color: #f8fafc;
+      background:
+        linear-gradient(155deg, rgba(255, 122, 50, .24), transparent 26%),
+        linear-gradient(180deg, #192338 0%, #111827 100%);
+      border-right: 1px solid rgba(255, 255, 255, .08);
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 4px 8px 22px;
+      border-bottom: 1px solid rgba(255, 255, 255, .10);
+    }
+    .brand-mark {
+      display: grid;
+      width: 44px;
+      height: 44px;
+      place-items: center;
+      border-radius: 14px;
+      color: var(--white);
+      background: linear-gradient(135deg, var(--orange-400), var(--orange-600));
+      box-shadow: 0 10px 26px rgba(244, 91, 10, .35);
+      font-weight: 900;
+      letter-spacing: -.06em;
+    }
+    .brand strong { display: block; font-size: 16px; }
+    .brand small { color: #aeb8c9; }
+    .nav-title {
+      margin: 24px 10px 8px;
+      color: #8f9aae;
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+    .nav { display: grid; gap: 4px; }
+    .nav a {
+      display: flex;
+      align-items: center;
+      gap: 11px;
+      padding: 10px 12px;
+      border-radius: 10px;
+      color: #cbd5e1;
+      text-decoration: none;
+      transition: .18s ease;
+    }
+    .nav a:hover, .nav a.active {
+      color: var(--white);
+      background: rgba(255, 255, 255, .09);
+    }
+    .nav a.active { box-shadow: inset 3px 0 var(--orange-400); }
+    .nav-num {
+      display: grid;
+      width: 25px;
+      height: 25px;
+      flex: 0 0 auto;
+      place-items: center;
+      border: 1px solid rgba(255, 255, 255, .15);
+      border-radius: 8px;
+      font-size: 11px;
+      font-weight: 800;
+    }
+    .sidebar-footer {
+      margin-top: 26px;
+      padding: 14px;
+      border: 1px solid rgba(255, 255, 255, .10);
+      border-radius: 14px;
+      color: #aeb8c9;
+      background: rgba(255, 255, 255, .04);
+      font-size: 12px;
+    }
+    .sidebar-footer a { color: #ffd8c5; }
+
+    main {
+      width: min(1500px, calc(100% - var(--sidebar)));
+      margin-left: var(--sidebar);
+      padding: 34px clamp(24px, 4vw, 64px) 80px;
+    }
+    section { scroll-margin-top: 24px; }
+    .hero {
+      position: relative;
+      padding: clamp(30px, 5vw, 56px);
+      overflow: hidden;
+      border: 1px solid rgba(255, 255, 255, .08);
+      border-radius: var(--radius-lg);
+      color: var(--white);
+      background:
+        linear-gradient(105deg, rgba(16, 24, 40, .97) 0%, rgba(23, 32, 51, .94) 62%, rgba(109, 45, 9, .90) 100%);
+      box-shadow: var(--shadow-lg);
+    }
+    .hero::after {
+      content: "";
+      position: absolute;
+      width: 360px;
+      height: 360px;
+      top: -190px;
+      right: -80px;
+      border: 70px solid rgba(255, 122, 50, .15);
+      border-radius: 50%;
+    }
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 10px;
+      border: 1px solid rgba(255, 255, 255, .15);
+      border-radius: 999px;
+      color: #ffd8c5;
+      background: rgba(255, 255, 255, .06);
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+    .hero h1 {
+      max-width: 900px;
+      margin: 18px 0 12px;
+      font-size: clamp(34px, 5vw, 64px);
+      line-height: 1.03;
+      letter-spacing: -.045em;
+    }
+    .hero p { max-width: 780px; margin: 0; color: #cbd5e1; font-size: 17px; }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 25px; }
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      min-height: 42px;
+      padding: 9px 14px;
+      border: 1px solid transparent;
+      border-radius: 10px;
+      color: var(--white);
+      background: var(--orange-500);
+      text-decoration: none;
+      cursor: pointer;
+      transition: .18s ease;
+    }
+    .button:hover { transform: translateY(-1px); background: var(--orange-600); }
+    .button.secondary { border-color: rgba(255, 255, 255, .15); background: rgba(255, 255, 255, .07); }
+    .button.ghost { color: var(--slate-700); border-color: var(--slate-300); background: var(--white); }
+    .button.small { min-height: 36px; padding: 7px 11px; font-size: 13px; }
+
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 14px;
+      margin-top: 18px;
+    }
+    .stat {
+      padding: 18px;
+      border: 1px solid var(--slate-200);
+      border-radius: var(--radius);
+      background: rgba(255, 255, 255, .86);
+      box-shadow: var(--shadow-sm);
+    }
+    .stat strong { display: block; color: var(--orange-600); font-size: 30px; line-height: 1; }
+    .stat span { display: block; margin-top: 7px; color: var(--slate-600); font-weight: 650; }
+
+    .section-head {
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 24px;
+      margin: 64px 0 20px;
+    }
+    .section-kicker {
+      margin: 0 0 6px;
+      color: var(--orange-600);
+      font-size: 12px;
+      font-weight: 850;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+    .section-head h2 { margin: 0; font-size: clamp(27px, 4vw, 40px); letter-spacing: -.035em; }
+    .section-head p { max-width: 600px; margin: 8px 0 0; color: var(--slate-600); }
+
+    .panel {
+      padding: clamp(20px, 3vw, 30px);
+      border: 1px solid var(--slate-200);
+      border-radius: var(--radius-lg);
+      background: var(--white);
+      box-shadow: var(--shadow-sm);
+    }
+    .panel + .panel { margin-top: 18px; }
+    .panel h3 { margin: 0 0 14px; font-size: 21px; letter-spacing: -.02em; }
+    .panel h4 { margin: 26px 0 10px; }
+    .muted { color: var(--slate-600); }
+    .note {
+      padding: 15px 17px;
+      border-left: 4px solid var(--orange-500);
+      border-radius: 0 12px 12px 0;
+      color: var(--slate-700);
+      background: var(--orange-50);
+    }
+
+    .mockup {
+      position: relative;
+      padding: 12px;
+      border: 1px solid var(--slate-200);
+      border-radius: 18px;
+      background: linear-gradient(145deg, #fff, #f4f6f9);
+      box-shadow: var(--shadow-md);
+    }
+    .mockup a { display: block; overflow: hidden; border-radius: 12px; }
+    .mockup img { display: block; width: 100%; transition: transform .3s ease; }
+    .mockup a:hover img { transform: scale(1.01); }
+    .mockup figcaption { padding: 12px 4px 2px; color: var(--slate-600); font-size: 13px; }
+
+    .grid-2 { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
+    .grid-3 { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+    .grid-4 { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 14px; }
+    .card {
+      padding: 18px;
+      border: 1px solid var(--slate-200);
+      border-radius: var(--radius);
+      background: var(--white);
+      box-shadow: var(--shadow-sm);
+    }
+    .card h3, .card h4 { margin: 0 0 8px; }
+    .card p { margin: 0; color: var(--slate-600); }
+    .card-accent { border-top: 4px solid var(--orange-500); }
+
+    .column-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+    .column-item {
+      min-height: 124px;
+      padding: 15px;
+      border: 1px solid var(--slate-200);
+      border-radius: 14px;
+      background: var(--slate-50);
+    }
+    .column-item strong { display: block; margin-bottom: 5px; color: var(--navy-900); }
+    .column-item span { color: var(--slate-600); font-size: 13px; }
+
+    .status-card { display: flex; align-items: center; gap: 12px; }
+    .status-card img { width: 42px; height: 42px; }
+    .status-card small { display: block; color: var(--slate-500); }
+
+    .tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      padding: 4px 9px;
+      border-radius: 999px;
+      color: var(--orange-700);
+      background: var(--orange-100);
+      font-size: 12px;
+      font-weight: 800;
+    }
+    .tag.high { color: #9d174d; background: #fce7f3; }
+    .tag.medium { color: #92400e; background: #fef3c7; }
+    .tag.req { color: #3730a3; background: #e0e7ff; }
+    .tag.ex { color: #b42318; background: #fee4e2; }
+
+    .flow-list { display: grid; gap: 14px; counter-reset: flow; }
+    .flow {
+      position: relative;
+      padding: 22px 22px 22px 68px;
+      border: 1px solid var(--slate-200);
+      border-radius: var(--radius);
+      background: var(--white);
+    }
+    .flow::before {
+      counter-increment: flow;
+      content: counter(flow, decimal-leading-zero);
+      position: absolute;
+      top: 20px;
+      left: 18px;
+      display: grid;
+      width: 36px;
+      height: 36px;
+      place-items: center;
+      border-radius: 11px;
+      color: var(--white);
+      background: var(--orange-500);
+      font-weight: 900;
+    }
+    .flow h3 { margin: 0 0 8px; }
+    .flow ol { margin: 0; padding-left: 20px; color: var(--slate-700); }
+
+    .exception { border-left: 4px solid #ef4444; }
+    .exception strong { color: var(--red); }
+
+    .formula-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; }
+    .formula {
+      padding: 18px;
+      border: 1px solid #ffd6c2;
+      border-radius: 16px;
+      background: linear-gradient(160deg, #fff, var(--orange-50));
+    }
+    .formula h4 { margin: 0 0 12px; color: var(--orange-700); }
+    .fraction { display: grid; justify-items: center; color: var(--navy-900); font-weight: 720; text-align: center; }
+    .fraction .top { padding: 0 10px 7px; border-bottom: 2px solid var(--navy-800); }
+    .fraction .bottom { padding-top: 7px; }
+    .formula .teacher { margin-top: 16px; padding-top: 12px; border-top: 1px dashed #f5b896; color: var(--slate-600); font-size: 13px; }
+
+    .filters {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      align-items: center;
+      padding: 14px;
+      border: 1px solid var(--slate-200);
+      border-radius: 14px;
+      background: var(--white);
+      position: sticky;
+      top: 10px;
+      z-index: 10;
+      box-shadow: var(--shadow-md);
+    }
+    .search {
+      min-width: min(100%, 320px);
+      flex: 1 1 260px;
+      height: 42px;
+      padding: 0 13px;
+      border: 1px solid var(--slate-300);
+      border-radius: 10px;
+      color: var(--navy-950);
+      background: var(--white);
+      outline: none;
+    }
+    .search:focus { border-color: var(--orange-500); box-shadow: 0 0 0 4px rgba(244, 91, 10, .12); }
+    .testcases { display: grid; gap: 10px; margin-top: 16px; }
+    .testcase {
+      border: 1px solid var(--slate-200);
+      border-radius: 14px;
+      background: var(--white);
+      overflow: clip;
+    }
+    .testcase[hidden] { display: none; }
+    .testcase summary {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 15px 17px;
+      cursor: pointer;
+      list-style: none;
+    }
+    .testcase summary::-webkit-details-marker { display: none; }
+    .testcase summary::after { content: "+"; margin-left: auto; color: var(--orange-600); font-size: 22px; font-weight: 700; }
+    .testcase[open] summary::after { content: "−"; }
+    .testcase-title { min-width: 0; font-weight: 780; }
+    .case-body {
+      display: grid;
+      grid-template-columns: minmax(180px, .7fr) minmax(0, 1.3fr);
+      gap: 18px;
+      padding: 18px;
+      border-top: 1px solid var(--slate-200);
+      background: var(--slate-50);
+    }
+    .case-meta { color: var(--slate-600); }
+    .case-meta div + div { margin-top: 8px; }
+    .case-steps { display: grid; gap: 10px; }
+    .step { padding: 10px 12px; border-left: 3px solid var(--orange-400); background: var(--white); }
+    .expected { margin: 14px 0 0; padding-left: 20px; }
+    .expected li + li { margin-top: 4px; }
+    .empty-filter { display: none; padding: 28px; color: var(--slate-600); text-align: center; }
+
+    .question-list { display: grid; gap: 10px; margin: 0; padding: 0; counter-reset: question; list-style: none; }
+    .question-list li {
+      position: relative;
+      padding: 14px 16px 14px 54px;
+      border: 1px solid #f4d8a4;
+      border-radius: 13px;
+      background: #fffbeb;
+      color: #664d03;
+    }
+    .question-list li::before {
+      counter-increment: question;
+      content: counter(question);
+      position: absolute;
+      top: 12px;
+      left: 14px;
+      display: grid;
+      width: 28px;
+      height: 28px;
+      place-items: center;
+      border-radius: 9px;
+      color: #fff;
+      background: #d99100;
+      font-weight: 850;
+    }
+
+    .footer {
+      margin-top: 64px;
+      padding-top: 24px;
+      border-top: 1px solid var(--slate-200);
+      color: var(--slate-500);
+      text-align: center;
+    }
+
+    @media (max-width: 1120px) {
+      :root { --sidebar: 244px; }
+      .column-grid, .grid-3, .formula-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .stats { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
+    @media (max-width: 780px) {
+      .sidebar { position: static; width: auto; padding: 14px; }
+      .brand { padding-bottom: 12px; }
+      .nav-title, .sidebar-footer { display: none; }
+      .nav { display: flex; overflow-x: auto; padding-top: 10px; }
+      .nav a { flex: 0 0 auto; }
+      main { width: 100%; margin: 0; padding: 18px 14px 60px; }
+      .hero { border-radius: 18px; }
+      .grid-2, .grid-3, .grid-4, .column-grid, .formula-grid, .case-body { grid-template-columns: 1fr; }
+      .section-head { align-items: start; flex-direction: column; }
+      .filters { position: static; }
+    }
+    @media print {
+      body { background: #fff; font-size: 11px; }
+      .sidebar, .hero-actions, .filters, .skip-link { display: none !important; }
+      main { width: 100%; margin: 0; padding: 0; }
+      .hero { color: #111; background: #fff; border: 2px solid #111; box-shadow: none; }
+      .hero p { color: #333; }
+      .panel, .card, .stat, .mockup, .testcase { break-inside: avoid; box-shadow: none; }
+      .section-head { margin-top: 32px; }
+      .testcase { display: block !important; }
+      .testcase summary::after { display: none; }
+      .testcase:not([open]) .case-body { display: grid; }
+    }
+
+    .doc-shell { min-width: 0; }
+    .doc-toolbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      margin-bottom: 18px;
+      padding: 14px 16px;
+      border: 1px solid var(--slate-200);
+      border-radius: 14px;
+      background: rgba(255,255,255,.92);
+      box-shadow: var(--shadow-sm);
+    }
+    .doc-toolbar-left, .doc-toolbar-right { display: flex; flex-wrap: wrap; align-items: center; gap: 9px; }
+    .sync-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      padding: 6px 10px;
+      border-radius: 999px;
+      color: #067647;
+      background: #ecfdf3;
+      border: 1px solid #abefc6;
+      font-size: 12px;
+      font-weight: 800;
+    }
+    .sync-badge::before { content: "✓"; }
+    .hash { color: var(--slate-500); font: 12px ui-monospace, SFMono-Regular, Menlo, monospace; }
+    .markdown-body {
+      padding: clamp(24px, 4vw, 54px);
+      border: 1px solid var(--slate-200);
+      border-radius: var(--radius-lg);
+      background: var(--white);
+      box-shadow: var(--shadow-md);
+      overflow: hidden;
+    }
+    .markdown-body > h1 {
+      position: relative;
+      margin: -54px -54px 42px;
+      padding: 62px 54px 54px;
+      color: var(--white);
+      background:
+        radial-gradient(circle at 88% 10%, rgba(255,122,50,.36), transparent 20rem),
+        linear-gradient(115deg, var(--navy-950), #243047 68%, #713209);
+      font-size: clamp(34px, 5vw, 62px);
+      line-height: 1.05;
+      letter-spacing: -.045em;
+    }
+    .markdown-body h2 {
+      margin: 70px 0 24px;
+      padding: 0 0 13px;
+      border-bottom: 2px solid var(--slate-200);
+      font-size: clamp(27px, 4vw, 39px);
+      line-height: 1.15;
+      letter-spacing: -.035em;
+      scroll-margin-top: 24px;
+    }
+    .markdown-body h2::first-letter { color: var(--orange-600); }
+    .markdown-body h3 {
+      margin: 38px 0 16px;
+      color: var(--navy-900);
+      font-size: 23px;
+      line-height: 1.25;
+      letter-spacing: -.02em;
+      scroll-margin-top: 24px;
+    }
+    .markdown-body h4 {
+      margin: 28px 0 12px;
+      color: var(--orange-700);
+      font-size: 17px;
+      scroll-margin-top: 24px;
+    }
+    .markdown-body p { margin: 12px 0; }
+    .markdown-body strong { color: var(--navy-900); }
+    .markdown-body ul, .markdown-body ol { padding-left: 1.35rem; }
+    .markdown-body li { margin: 6px 0; }
+    .markdown-body li::marker { color: var(--orange-500); font-weight: 800; }
+    .markdown-body hr {
+      height: 1px;
+      margin: 48px 0;
+      border: 0;
+      background: linear-gradient(90deg, transparent, var(--slate-300), transparent);
+    }
+    .markdown-body > p[align="center"] {
+      margin: 22px 0 28px;
+      padding: 12px;
+      border: 1px solid var(--slate-200);
+      border-radius: 18px;
+      background: linear-gradient(145deg, #fff, #f5f7fa);
+      box-shadow: var(--shadow-md);
+    }
+    .markdown-body > p[align="center"] a { display: inline-block; max-width: 100%; }
+    .markdown-body > p[align="center"] img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+      margin: auto;
+      border-radius: 12px;
+    }
+    .markdown-body > p[align="center"] em {
+      display: block;
+      margin-top: 10px;
+      color: var(--slate-500);
+      font-size: 13px;
+    }
+    .table-wrap {
+      width: 100%;
+      margin: 18px 0 28px;
+      overflow: auto;
+      border: 1px solid var(--slate-200);
+      border-radius: 15px;
+      background: var(--white);
+      box-shadow: var(--shadow-sm);
+    }
+    .markdown-body table {
+      width: 100%;
+      min-width: 720px;
+      border-collapse: separate;
+      border-spacing: 0;
+      font-size: 14px;
+    }
+    .markdown-body th {
+      position: sticky;
+      top: 0;
+      z-index: 2;
+      padding: 12px 14px;
+      color: var(--white);
+      background: var(--navy-900);
+      border-bottom: 1px solid var(--navy-800);
+      text-align: left;
+      white-space: nowrap;
+    }
+    .markdown-body td {
+      padding: 12px 14px;
+      border-bottom: 1px solid var(--slate-200);
+      vertical-align: top;
+    }
+    .markdown-body tbody tr:nth-child(even) td { background: var(--slate-50); }
+    .markdown-body tbody tr:hover td { background: var(--orange-50); }
+    .markdown-body tbody tr:last-child td { border-bottom: 0; }
+    .markdown-body td img { display: block; width: 36px; height: 36px; max-width: none; }
+    .markdown-body pre {
+      position: relative;
+      margin: 16px 0 24px;
+      padding: 18px 20px;
+      overflow: auto;
+      border: 1px solid #ffd3bd;
+      border-radius: 14px;
+      color: #fff7ed;
+      background: linear-gradient(145deg, #172033, #222f48);
+      box-shadow: var(--shadow-sm);
+      font: 13px/1.75 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    }
+    .markdown-body pre code { padding: 0; border: 0; color: inherit; background: none; font: inherit; }
+    .markdown-body blockquote {
+      margin: 18px 0;
+      padding: 13px 16px;
+      border-left: 4px solid var(--orange-500);
+      border-radius: 0 12px 12px 0;
+      color: var(--slate-700);
+      background: var(--orange-50);
+    }
+    .case-tools {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 10px;
+      margin: 12px 0 14px;
+      padding: 13px;
+      border: 1px solid var(--slate-200);
+      border-radius: 13px;
+      background: var(--slate-50);
+    }
+    .case-tools input {
+      flex: 1 1 280px;
+      height: 42px;
+      padding: 0 13px;
+      border: 1px solid var(--slate-300);
+      border-radius: 10px;
+      outline: none;
+    }
+    .case-tools input:focus { border-color: var(--orange-500); box-shadow: 0 0 0 4px rgba(244,91,10,.12); }
+    .case-count { color: var(--orange-700); font-weight: 800; white-space: nowrap; }
+    .testcase-table table { min-width: 1500px; }
+    .testcase-table th:first-child, .testcase-table td:first-child {
+      position: sticky;
+      left: 0;
+      z-index: 1;
+      min-width: 230px;
+      box-shadow: 1px 0 0 var(--slate-200);
+    }
+    .testcase-table th:first-child { z-index: 3; background: var(--navy-900); }
+    .testcase-table td:first-child { background: var(--white); font-weight: 750; }
+    .testcase-table tbody tr:nth-child(even) td:first-child { background: var(--slate-50); }
+    .testcase-table tbody tr:hover td:first-child { background: var(--orange-50); }
+    .source-note {
+      margin-top: 18px;
+      color: var(--slate-500);
+      text-align: center;
+      font-size: 12px;
+    }
+    @media (max-width: 780px) {
+      .doc-toolbar { align-items: flex-start; flex-direction: column; }
+      .markdown-body { padding: 20px 16px; border-radius: 16px; }
+      .markdown-body > h1 { margin: -20px -16px 32px; padding: 40px 20px 34px; }
+      .markdown-body h2 { margin-top: 48px; }
+      .markdown-body table { font-size: 13px; }
+    }
+    @media print {
+      .doc-toolbar, .case-tools { display: none !important; }
+      .markdown-body { padding: 0; border: 0; box-shadow: none; overflow: visible; }
+      .markdown-body > h1 { margin: 0 0 32px; padding: 30px; color: #111; background: #fff; border: 2px solid #111; }
+      .table-wrap { overflow: visible; box-shadow: none; }
+      .markdown-body table { min-width: 0 !important; font-size: 9px; }
+      .markdown-body th { position: static; color: #111; background: #eee; }
+      .testcase-table th:first-child, .testcase-table td:first-child { position: static; }
+    }
+</style>
+</head>
+<body>
+  <a class="skip-link" href="#document">Đi đến nội dung chính</a>
+  <aside class="sidebar" aria-label="Mục lục requirement">
+    <div class="brand">
+      <div class="brand-mark">ics</div>
+      <div><strong>ICS Requirement</strong><small>Nhóm tag, loại áp dụng và center</small></div>
+    </div>
+    <div class="nav-title">Nội dung Markdown</div>
+    <nav id="docNav" class="nav"></nav>
+    <div class="sidebar-footer">
+      HTML được render trực tiếp từ Markdown nguồn.<br>
+      <a href="./tag_definition_requirements.md">Mở file Markdown</a>
+    </div>
+  </aside>
+  <main class="doc-shell">
+    <div class="doc-toolbar">
+      <div class="doc-toolbar-left">
+        <span class="sync-badge">Đồng bộ 100% từ Markdown</span>
+        <span class="hash">SHA-256: e9796c087b4b…</span>
+      </div>
+      <div class="doc-toolbar-right">
+        <a class="button ghost small" href="./tag_definition_requirements.md">Xem Markdown</a>
+        <button class="button small" type="button" onclick="window.print()">In / Lưu PDF</button>
+      </div>
+    </div>
+    <article id="document" class="markdown-body" data-source-sha256="e9796c087b4b53f6c193c34ab4bfb6c1c32681ca92e13be538d3b373404097b3">
+<h1 id="define-tag-quan-ly-nhom-va-tag">Define Tag — Quản lý nhóm và tag</h1>
+<blockquote>
+<p>Màn hình Define Tag quản lý tag theo nhóm. <strong>Loại</strong> dùng chung một bộ giá trị: <code>Học viên</code>, <code>Giáo viên</code>, <code>Lớp</code>, <code>Hoá đơn</code>, <code>Ghi chú</code>. Tag dùng chung bản ghi với ComGao; trên ICS quản lý theo center. Ảnh popup Thêm nhóm còn các giá trị cũ; áp dụng bộ năm loại này theo yêu cầu mới.</p>
+</blockquote>
+<h2 id="1-ui">1. UI</h2>
+<h3 id="trang-1-tag-quan-ly-va-nhom">Trang 1: Tag quản lý và Nhóm</h3>
+<p align="center">
+  <a href="./images/01-tag-groups.png"><img src="./images/01-tag-groups.png" alt="Tag quản lý và danh sách Nhóm" width="760" title="Nhấn để xem ảnh gốc"></a><br>
+  <em>Tag quản lý bên trái, Nhóm bên phải — nhấn để xem ảnh gốc</em>
+</p>
+
+<p><strong>Mô tả:</strong></p>
+<ul>
+<li>Admin, Class Handler và Support được xem, thêm, sửa, xóa nhóm và tag trong center hiện tại.</li>
+</ul>
+<p><strong>Giải thích thành phần:</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Thành phần</th>
+<th>Yêu cầu</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Tag quản lý</td>
+<td>Hiển thị các tag đã tạo; nút <code>Thêm tag</code> mở popup tạo tag trực tiếp.</td>
+</tr>
+<tr>
+<td>Nhóm</td>
+<td>Hiển thị tên nhóm, mô tả nếu có và nhãn Loại. Chọn một nhóm để xem/thêm tag trong nhóm đó.</td>
+</tr>
+<tr>
+<td>Thêm nhóm mới</td>
+<td>Nút <code>+</code> mở popup Thêm nhóm.</td>
+</tr>
+<tr>
+<td>Chỉnh sửa / Xóa</td>
+<td>Sửa thông tin nhóm/tag hoặc xóa bản ghi theo quyền CRUD.</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Điểm cần lưu ý:</strong></p>
+<ul>
+<li>Loại hiển thị trên nhóm là loại đã chọn khi tạo nhóm; tag thêm trong nhóm dùng cùng loại đó.</li>
+<li>Các tên nhóm/tag trong ảnh chỉ là dữ liệu mẫu, không phải danh sách cố định.</li>
+<li>Không có field bắt buộc hoặc kiểm tra trùng Tên nhóm/Tên tag; cho phép để trống và trùng tên.</li>
+</ul>
+<h4 id="testcase-tag-quan-ly-va-nhom">Testcase — Tag quản lý và Nhóm</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 1: Xem nhóm và tag</td>
+<td>High</td>
+<td>Smoke</td>
+<td>Flow 1 / REQ01</td>
+<td>Admin, Class Handler, Support</td>
+<td>Có nhóm và tag đã tạo</td>
+<td><strong>Given</strong> mở Define Tag tại center hiện tại<br><strong>When</strong> chọn một nhóm<br><strong>Then</strong> hiển thị tag của nhóm và nhãn Loại đã lưu</td>
+<td>- Chỉ hiển thị dữ liệu thuộc center hiện tại và nhóm đã chọn<br>- Loại nhóm không đổi khi chỉ xem</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="popup-them-nhom-moi">Popup Thêm nhóm mới</h3>
+<p align="center">
+  <a href="./images/02-add-tag-group.png"><img src="./images/02-add-tag-group.png" alt="Popup Thêm nhóm mới và danh sách Loại" width="400" title="Nhấn để xem ảnh gốc"></a><br>
+  <em>Loại nhóm dùng đúng năm giá trị mới — nhấn để xem ảnh gốc</em>
+</p>
+
+<p><strong>Mô tả:</strong></p>
+<ul>
+<li>Nhấn <code>Thêm nhóm mới</code> để nhập thông tin và chọn loại áp dụng cho cả nhóm.</li>
+</ul>
+<p><strong>Giải thích field/thành phần:</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Yêu cầu</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Tên nhóm</td>
+<td>Nhập tên nhóm.</td>
+</tr>
+<tr>
+<td>Mô tả</td>
+<td>Nhập mô tả nhóm nếu có.</td>
+</tr>
+<tr>
+<td>Loại</td>
+<td>Chọn một trong đúng năm giá trị: <code>Học viên</code>, <code>Giáo viên</code>, <code>Lớp</code>, <code>Hoá đơn</code>, <code>Ghi chú</code>.</td>
+</tr>
+<tr>
+<td>Thêm / Hủy</td>
+<td>Thêm lưu nhóm cùng loại đã chọn; Hủy đóng popup và không lưu.</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Điểm cần lưu ý:</strong></p>
+<ul>
+<li>Loại được lưu ở cấp nhóm để tag tạo bên trong kế thừa; không lặp lại bước chọn Loại khi thêm tag trong nhóm.</li>
+<li>Không dùng các mục <code>CSKH</code>, <code>Sale</code>, <code>Quản lý</code> còn thấy trong ảnh popup cũ.</li>
+<li>Không áp đặt giá trị mặc định hoặc giới hạn nhập liệu cho các field; dữ liệu mẫu trong ảnh không phải mặc định bắt buộc.</li>
+</ul>
+<h4 id="testcase-popup-them-nhom-moi">Testcase — Popup Thêm nhóm mới</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 2: Danh sách Loại nhóm</td>
+<td>High</td>
+<td></td>
+<td>Flow 2 / REQ02</td>
+<td>Admin, Class Handler, Support</td>
+<td>Popup Thêm nhóm đang mở</td>
+<td><strong>Given</strong> người dùng mở trường Loại<br><strong>When</strong> xem các lựa chọn<br><strong>Then</strong> thấy đúng năm loại được chốt</td>
+<td>- Có Học viên/Giáo viên/Lớp/Hoá đơn/Ghi chú<br>- Không có CSKH/Sale/Quản lý</td>
+</tr>
+<tr>
+<td>Case 3: Tạo nhóm</td>
+<td>High</td>
+<td>Smoke</td>
+<td>Flow 2 / REQ02</td>
+<td>Admin, Class Handler, Support</td>
+<td>Đã nhập thông tin nhóm và chọn Loại</td>
+<td><strong>Given</strong> nhóm mới thuộc loại Lớp<br><strong>When</strong> bấm Thêm và lưu thành công<br><strong>Then</strong> nhóm xuất hiện với nhãn Lớp</td>
+<td>- Loại nhóm được lưu để các tag trong nhóm kế thừa<br>- Hủy không tạo nhóm</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="popup-them-tag">Popup Thêm tag</h3>
+<p align="center">
+  <a href="./images/03-add-tag.png"><img src="./images/03-add-tag.png" alt="Popup Thêm tag trực tiếp và danh sách Loại" width="400" title="Nhấn để xem ảnh gốc"></a><br>
+  <em>Thêm tag trực tiếp có trường Loại; thêm trong nhóm kế thừa Loại — nhấn để xem ảnh gốc</em>
+</p>
+
+<p><strong>Mô tả:</strong></p>
+<ul>
+<li>Nút <code>Thêm tag</code> ở khu vực Tag quản lý mở form có trường Loại. Khi thêm tag <strong>bên trong một nhóm</strong>, form không hiển thị trường Loại.</li>
+</ul>
+<p><strong>Giải thích field/thành phần:</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Yêu cầu</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Tên tag, Mô tả</td>
+<td>Nhập thông tin tag theo form.</td>
+</tr>
+<tr>
+<td>Loại</td>
+<td>Chỉ hiển thị khi thêm tag trực tiếp; chọn một trong <code>Học viên</code>, <code>Giáo viên</code>, <code>Lớp</code>, <code>Hoá đơn</code>, <code>Ghi chú</code>. Khi thêm trong nhóm, tag tự nhận Loại của nhóm và không có trường này.</td>
+</tr>
+<tr>
+<td>Ngày thống kê, Riêng tư, Màu sắc</td>
+<td>Hiển thị theo UI để người dùng chọn/cập nhật thông tin tag.</td>
+</tr>
+<tr>
+<td>Thêm / Hủy bỏ</td>
+<td>Thêm lưu tag theo Loại đã chọn hoặc kế thừa; Hủy bỏ không lưu.</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Điểm cần lưu ý:</strong></p>
+<ul>
+<li>Backend cũng dùng Loại của nhóm cho tag tạo trong nhóm; request tự gửi Loại khác với nhóm không được ghi đè Loại nhóm.</li>
+<li>Việc chọn Loại ở popup Thêm nhóm chỉ thực hiện một lần ở cấp nhóm, không yêu cầu người dùng chọn lại cho từng tag của nhóm.</li>
+<li>Mô tả, Ngày thống kê, Riêng tư, Màu sắc cho người dùng tự chọn; không có yêu cầu bắt buộc hay giới hạn nghiệp vụ bổ sung.</li>
+</ul>
+<h4 id="testcase-popup-them-tag">Testcase — Popup Thêm tag</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 4: Thêm tag trực tiếp</td>
+<td>High</td>
+<td></td>
+<td>Flow 3 / REQ03</td>
+<td>Admin, Class Handler, Support</td>
+<td>Không mở trong nhóm</td>
+<td><strong>Given</strong> bấm Thêm tag tại Tag quản lý<br><strong>When</strong> mở trường Loại<br><strong>Then</strong> thấy đúng năm giá trị và có thể chọn loại cho tag</td>
+<td>- Form có trường Loại<br>- Không có CSKH/Sale/Quản lý</td>
+</tr>
+<tr>
+<td>Case 5: Thêm tag trong nhóm</td>
+<td>High</td>
+<td>Smoke</td>
+<td>Flow 3 / REQ03</td>
+<td>Admin, Class Handler, Support</td>
+<td>Nhóm A đã lưu loại Giáo viên</td>
+<td><strong>Given</strong> đang thêm tag trong nhóm A<br><strong>When</strong> mở form và lưu tag<br><strong>Then</strong> không cần chọn Loại, tag nhận loại Giáo viên</td>
+<td>- Form không có trường Loại<br>- Tag thuộc đúng nhóm A và loại Giáo viên</td>
+</tr>
+<tr>
+<td>Case 6: Không ghi đè Loại nhóm</td>
+<td>High</td>
+<td></td>
+<td>EX01 / REQ03</td>
+<td>Admin, Class Handler, Support</td>
+<td>Nhóm A có loại Giáo viên</td>
+<td><strong>Given</strong> request tạo tag trong nhóm A gửi thêm loại Lớp<br><strong>When</strong> hệ thống kiểm tra dữ liệu<br><strong>Then</strong> từ chối request sai Loại</td>
+<td>- Không tạo tag loại Lớp trong nhóm A<br>- Loại nhóm không đổi</td>
+</tr>
+</tbody>
+</table></div>
+<h4 id="testcase-crud-va-center">Testcase — CRUD và center</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 7: Field tự do và trùng tên</td>
+<td>High</td>
+<td></td>
+<td>REQ05</td>
+<td>Admin, Class Handler, Support</td>
+<td>Có nhóm/tag đã tạo</td>
+<td><strong>Given</strong> để trống các field hoặc dùng Tên nhóm/Tên tag đã tồn tại<br><strong>When</strong> lưu<br><strong>Then</strong> không bị chặn bởi yêu cầu bắt buộc hoặc trùng tên</td>
+<td>- Không áp đặt giới hạn nhập liệu hay giá trị mặc định từ ảnh mẫu</td>
+</tr>
+<tr>
+<td>Case 8: Quyền CRUD</td>
+<td>High</td>
+<td></td>
+<td>Flow 4 / REQ06</td>
+<td>Admin, Class Handler, Support; role khác</td>
+<td>Có nhóm/tag thuộc center hiện tại</td>
+<td><strong>Given</strong> người dùng thao tác thêm/sửa/xóa<br><strong>When</strong> kiểm tra quyền<br><strong>Then</strong> ba role được thực hiện; role khác không được quản lý</td>
+<td>- Kiểm tra quyền cả UI và API<br>- Sửa/xóa cập nhật đúng bản ghi</td>
+</tr>
+<tr>
+<td>Case 9: Dùng chung bản ghi theo center</td>
+<td>High</td>
+<td></td>
+<td>REQ07</td>
+<td>Admin, Class Handler, Support</td>
+<td>ComGao có tag thuộc hai center</td>
+<td><strong>Given</strong> mở ICS ở center A<br><strong>When</strong> xem và chỉnh sửa tag của center A<br><strong>Then</strong> cập nhật cùng bản ghi ComGao và không tác động tag của center B</td>
+<td>- Không sao chép thành bản ghi riêng cho ICS<br>- Không truy cập/sửa/xóa dữ liệu center B bằng request trực tiếp</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="toast-phan-hoi-crud">Toast phản hồi CRUD</h3>
+<p align="center">
+  <a href="../images/01-toast-crud.png"><img src="../images/01-toast-crud.png" alt="Bốn trạng thái Toast CRUD" width="520" title="Nhấn để xem ảnh gốc"></a><br>
+  <em>Toast dùng chung sau thao tác thay đổi dữ liệu — nhấn để xem ảnh gốc</em>
+</p>
+
+<p><strong>Mô tả:</strong></p>
+<ul>
+<li>Thêm/sửa/xóa nhóm và tag phản hồi sau khi dữ liệu được xử lý; Hủy và chỉ xem không có Toast CRUD.</li>
+</ul>
+<p><strong>Giải thích thành phần:</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Loại Toast</th>
+<th>Khi sử dụng</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Thành Công</code></td>
+<td>Thêm/sửa/xóa nhóm hoặc tag thành công.</td>
+</tr>
+<tr>
+<td><code>Cảnh Báo</code></td>
+<td>Thao tác không đúng quyền, center hoặc Loại của nhóm.</td>
+</tr>
+<tr>
+<td><code>Có Lỗi Xảy Ra</code></td>
+<td>Không thể hoàn tất thao tác lưu.</td>
+</tr>
+<tr>
+<td><code>Thông Báo</code></td>
+<td>Chỉ dùng nếu hệ thống tiếp nhận thao tác nhưng còn chờ đồng bộ.</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Điểm cần lưu ý:</strong></p>
+<ul>
+<li>Mỗi thao tác chỉ có một Toast kết quả; không báo thành công trước khi lưu xong.</li>
+</ul>
+<h4 id="testcase-toast-phan-hoi-crud">Testcase — Toast phản hồi CRUD</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Toast Case 1: Thành công</td>
+<td>High</td>
+<td></td>
+<td>REQ04</td>
+<td>Admin, Class Handler, Support</td>
+<td>Dữ liệu hợp lệ</td>
+<td><strong>Given</strong> đã bấm Thêm<br><strong>When</strong> hệ thống lưu thành công<br><strong>Then</strong> hiển thị Thành Công</td>
+<td>- Chỉ một Toast sau khi lưu</td>
+</tr>
+<tr>
+<td>Toast Case 2: Cảnh báo</td>
+<td>High</td>
+<td></td>
+<td>REQ04</td>
+<td>Admin, Class Handler, Support</td>
+<td>Request không đúng center hoặc Loại nhóm</td>
+<td><strong>Given</strong> request sai phạm vi<br><strong>When</strong> lưu<br><strong>Then</strong> báo Cảnh Báo và không lưu sai dữ liệu</td>
+<td>- Không cảnh báo chỉ vì bỏ trống field hoặc trùng tên</td>
+</tr>
+<tr>
+<td>Toast Case 3: Lỗi xử lý</td>
+<td>High</td>
+<td></td>
+<td>REQ04</td>
+<td>Admin, Class Handler, Support</td>
+<td>Hệ thống không lưu được</td>
+<td><strong>Given</strong> dữ liệu hợp lệ<br><strong>When</strong> lưu thất bại<br><strong>Then</strong> hiển thị Có Lỗi Xảy Ra</td>
+<td>- Không báo thành công giả</td>
+</tr>
+<tr>
+<td>Toast Case 4: Hủy và chờ đồng bộ</td>
+<td>Medium</td>
+<td></td>
+<td>REQ04</td>
+<td>Admin, Class Handler, Support</td>
+<td>Popup đang mở</td>
+<td><strong>Given</strong> người dùng bấm Hủy hoặc hệ thống đang đồng bộ<br><strong>When</strong> xử lý thao tác<br><strong>Then</strong> Hủy không có Toast; chờ đồng bộ chỉ hiện Thông Báo nếu thực sự có</td>
+<td>- Không nhân đôi Toast</td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2 id="2-yeu-cau">2. Yêu cầu</h2>
+<h3 id="21-flow-chinh">2.1. Flow chính</h3>
+<p><strong>Flow 1 / REQ01: Xem nhóm và tag</strong></p>
+<pre><code class="language-text">Mở Define Tag → Xem danh sách nhóm và tag của center hiện tại
+      → Chọn nhóm → Hiển thị tag thuộc nhóm và Loại đã lưu
+</code></pre>
+<p><strong>Flow 2 / REQ02: Tạo nhóm</strong></p>
+<pre><code class="language-text">Nhấn Thêm nhóm mới → Nhập Tên nhóm, Mô tả và chọn một trong năm Loại
+      → Nhấn Thêm → Lưu nhóm cùng Loại đã chọn
+      → Tag thêm về sau trong nhóm tự nhận Loại đó
+</code></pre>
+<p><strong>Flow 3 / REQ03: Tạo tag</strong></p>
+<pre><code class="language-text">Thêm tag trực tiếp → Chọn Loại trong năm giá trị → Lưu tag
+Thêm tag trong nhóm → Không hiển thị trường Loại → Lưu tag với Loại của nhóm
+</code></pre>
+<p><strong>Flow 4 / REQ06: Sửa và xóa</strong></p>
+<pre><code class="language-text">Admin/Class Handler/Support chọn nhóm hoặc tag của center hiện tại
+      → Sửa và lưu / Xóa → Cập nhật cùng bản ghi dùng chung với ComGao
+</code></pre>
+<h3 id="22-ngoai-le">2.2. Ngoại lệ</h3>
+<ul>
+<li><strong>EX01:</strong> Tag tạo trong nhóm có Loại khác Loại nhóm → không tạo tag sai loại, không thay đổi nhóm.</li>
+<li><strong>EX02:</strong> Hủy hoặc lưu lỗi → không tạo nhóm/tag dở dang.</li>
+<li><strong>EX03:</strong> Không có quyền CRUD hoặc khác center hiện tại → từ chối thao tác.</li>
+</ul>
+<h3 id="23-yeu-cau-khac">2.3. Yêu cầu khác</h3>
+<ul>
+<li><strong>REQ01 – Hiển thị:</strong> Define Tag hiển thị nhóm và tag của center hiện tại cùng tên, mô tả, Loại đã lưu; chọn nhóm chỉ xem tag thuộc nhóm đó.</li>
+<li><strong>REQ02 – Loại nhóm:</strong> Popup Thêm nhóm có Tên nhóm, Mô tả, Loại; Loại chỉ gồm Học viên/Giáo viên/Lớp/Hoá đơn/Ghi chú và được lưu ở cấp nhóm.</li>
+<li><strong>REQ03 – Loại tag:</strong> Thêm tag trực tiếp có trường Loại với cùng năm giá trị. Thêm tag trong nhóm ẩn trường Loại và kế thừa Loại của nhóm; không cho lưu tag khác loại với nhóm.</li>
+<li><strong>REQ04 – Phản hồi:</strong> Thêm/sửa/xóa chỉ báo thành công sau khi xử lý xong; Hủy hoặc lỗi xử lý không làm thay đổi dữ liệu.</li>
+<li><strong>REQ05 – Nhập liệu:</strong> Không có field bắt buộc, kiểm tra trùng tên hoặc giới hạn nghiệp vụ cho Tên nhóm, Tên tag, Mô tả, Ngày thống kê, Riêng tư, Màu sắc. Không áp đặt mặc định từ dữ liệu mẫu UI.</li>
+<li><strong>REQ06 – CRUD:</strong> Admin, Class Handler và Support được xem, thêm, sửa, xóa nhóm và tag trong center hiện tại.</li>
+<li><strong>REQ07 – ComGao và center:</strong> Tag ICS dùng chung bảng và bản ghi với ComGao; thao tác không tạo bản sao riêng. Dữ liệu nhóm/tag trên ICS được quản lý theo center.</li>
+</ul>
+<h3 id="24-rang-buoc">2.4. Ràng buộc</h3>
+<h4 id="quyen">Quyền</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Role</th>
+<th style="text-align: center;">Xem Define Tag</th>
+<th style="text-align: center;">Thêm</th>
+<th style="text-align: center;">Sửa</th>
+<th style="text-align: center;">Xóa</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Admin</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+</tr>
+<tr>
+<td>Class Handler</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+</tr>
+<tr>
+<td>Support</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+</tr>
+<tr>
+<td>Role khác</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+</tr>
+</tbody>
+</table></div>
+<h4 id="pham-vi-du-lieu">Phạm vi dữ liệu</h4>
+<ul>
+<li>Tạo nhóm/tag trên ICS gắn với center hiện tại; tag trong nhóm cùng center với nhóm. Xem/sửa/xóa chỉ áp dụng trong center hiện tại, kiểm tra cả UI và API.</li>
+<li>Nhóm và tag lưu bằng định danh nội bộ; việc ẩn trường Loại trên UI không thay thế kiểm tra Loại nhóm khi lưu.</li>
+<li>Tag dùng ở các màn Học viên/Giáo viên/Lớp/Hoá đơn/Ghi chú phải khớp Loại đã định nghĩa.</li>
+</ul>
+<hr />
+<h2 id="3-can-xac-nhan">3. Cần xác nhận</h2>
+<p>Không còn nội dung cần xác nhận trong phạm vi requirement này.</p>
+</article>
+    <p class="source-note">Nguồn: tag_definition_requirements.md · SHA-256 d39095686ee29def96eb3108f7b49c99446d3be0b2695c6a2ced87c52f3dc1e1</p>
+  </main>
+  <script>
+    const article = document.getElementById('document');
+    const nav = document.getElementById('docNav');
+    const headings = [...article.querySelectorAll('h2')];
+    headings.forEach((heading, index) => {
+      const link = document.createElement('a');
+      link.href = `#${heading.id}`;
+      const number = document.createElement('span');
+      number.className = 'nav-num';
+      number.textContent = String(index + 1).padStart(2, '0');
+      link.append(number, document.createTextNode(heading.textContent));
+      nav.append(link);
+    });
+
+    const navLinks = [...nav.querySelectorAll('a')];
+    const observer = new IntersectionObserver(entries => {
+      const current = entries.filter(item => item.isIntersecting).sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
+      if (!current) return;
+      navLinks.forEach(link => link.classList.toggle('active', link.hash === `#${current.target.id}`));
+    }, {rootMargin: '-18% 0px -68% 0px', threshold: [0, .2, .5]});
+    headings.forEach(heading => observer.observe(heading));
+    if (navLinks[0]) navLinks[0].classList.add('active');
+
+    const testcaseHeadings = [...article.querySelectorAll('h4, h5')]
+      .filter(heading => heading.textContent.trim().startsWith('Testcase'));
+    const testcaseGroups = testcaseHeadings
+      .map(heading => ({heading, tableWrap: heading.nextElementSibling}))
+      .filter(group => group.tableWrap?.classList.contains('table-wrap'));
+    if (testcaseGroups.length) {
+        const tableWraps = testcaseGroups.map(group => group.tableWrap);
+        tableWraps.forEach(tableWrap => tableWrap.classList.add('testcase-table'));
+        const rows = tableWraps.flatMap(tableWrap => [...tableWrap.querySelectorAll('tbody tr')]);
+        const tools = document.createElement('div');
+        tools.className = 'case-tools';
+        const input = document.createElement('input');
+        input.type = 'search';
+        input.placeholder = 'Tìm testcase, Flow, REQ, EX hoặc nội dung…';
+        input.setAttribute('aria-label', 'Tìm testcase');
+        const count = document.createElement('span');
+        count.className = 'case-count';
+        tools.append(input, count);
+        testcaseGroups[0].heading.before(tools);
+        const filterRows = () => {
+          const query = input.value.trim().toLocaleLowerCase('vi');
+          let visible = 0;
+          rows.forEach(row => {
+            const match = !query || row.textContent.toLocaleLowerCase('vi').includes(query);
+            row.hidden = !match;
+            if (match) visible += 1;
+          });
+          testcaseGroups.forEach(({heading, tableWrap}) => {
+            const hasVisibleRow = [...tableWrap.querySelectorAll('tbody tr')]
+              .some(row => !row.hidden);
+            heading.hidden = !hasVisibleRow;
+            tableWrap.hidden = !hasVisibleRow;
+          });
+          count.textContent = `${visible}/${rows.length} testcase`;
+        };
+        input.addEventListener('input', filterRows);
+        filterRows();
+    }
+  </script>
+</body>
+</html>

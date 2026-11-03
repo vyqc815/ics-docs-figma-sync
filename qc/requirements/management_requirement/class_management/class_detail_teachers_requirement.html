@@ -1,0 +1,1751 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Requirement Chi tiết lớp học — Giáo viên">
+  <link rel="icon" href="data:,">
+  <title>Chi tiết lớp học — Giáo viên — Requirement</title>
+  <style>
+    :root {
+      --orange-700: #c83f00;
+      --orange-600: #e84c00;
+      --orange-500: #f45b0a;
+      --orange-400: #ff7a32;
+      --orange-100: #fff0e8;
+      --orange-50: #fff8f4;
+      --navy-950: #101828;
+      --navy-900: #172033;
+      --navy-800: #243047;
+      --slate-700: #344054;
+      --slate-600: #475467;
+      --slate-500: #667085;
+      --slate-400: #98a2b3;
+      --slate-300: #d0d5dd;
+      --slate-200: #e4e7ec;
+      --slate-100: #f2f4f7;
+      --slate-50: #f8fafc;
+      --white: #ffffff;
+      --green: #159447;
+      --blue: #2154c5;
+      --yellow: #b77900;
+      --red: #c92a2a;
+      --purple: #6941c6;
+      --shadow-sm: 0 1px 2px rgba(16, 24, 40, .06);
+      --shadow-md: 0 12px 32px rgba(16, 24, 40, .10);
+      --shadow-lg: 0 24px 64px rgba(16, 24, 40, .16);
+      --radius-sm: 10px;
+      --radius: 16px;
+      --radius-lg: 24px;
+      --sidebar: 286px;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      color: var(--navy-950);
+      background:
+        radial-gradient(circle at 88% 5%, rgba(244, 91, 10, .10), transparent 24rem),
+        var(--slate-50);
+      font: 15px/1.65 Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      text-rendering: optimizeLegibility;
+    }
+    a { color: inherit; }
+    img { max-width: 100%; }
+    button, input, select { font: inherit; }
+    code {
+      padding: .12rem .38rem;
+      border: 1px solid #fed7c3;
+      border-radius: 6px;
+      color: var(--orange-700);
+      background: var(--orange-50);
+      font: 600 .9em ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    }
+
+    .skip-link {
+      position: fixed;
+      z-index: 999;
+      top: 12px;
+      left: 12px;
+      padding: 10px 14px;
+      border-radius: 9px;
+      color: var(--white);
+      background: var(--navy-950);
+      transform: translateY(-150%);
+    }
+    .skip-link:focus { transform: none; }
+
+    .sidebar {
+      position: fixed;
+      z-index: 30;
+      inset: 0 auto 0 0;
+      width: var(--sidebar);
+      padding: 22px 18px;
+      overflow-y: auto;
+      color: #f8fafc;
+      background:
+        linear-gradient(155deg, rgba(255, 122, 50, .24), transparent 26%),
+        linear-gradient(180deg, #192338 0%, #111827 100%);
+      border-right: 1px solid rgba(255, 255, 255, .08);
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 4px 8px 22px;
+      border-bottom: 1px solid rgba(255, 255, 255, .10);
+    }
+    .brand-mark {
+      display: grid;
+      width: 44px;
+      height: 44px;
+      place-items: center;
+      border-radius: 14px;
+      color: var(--white);
+      background: linear-gradient(135deg, var(--orange-400), var(--orange-600));
+      box-shadow: 0 10px 26px rgba(244, 91, 10, .35);
+      font-weight: 900;
+      letter-spacing: -.06em;
+    }
+    .brand strong { display: block; font-size: 16px; }
+    .brand small { color: #aeb8c9; }
+    .nav-title {
+      margin: 24px 10px 8px;
+      color: #8f9aae;
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+    .nav { display: grid; gap: 4px; }
+    .nav a {
+      display: flex;
+      align-items: center;
+      gap: 11px;
+      padding: 10px 12px;
+      border-radius: 10px;
+      color: #cbd5e1;
+      text-decoration: none;
+      transition: .18s ease;
+    }
+    .nav a:hover, .nav a.active {
+      color: var(--white);
+      background: rgba(255, 255, 255, .09);
+    }
+    .nav a.active { box-shadow: inset 3px 0 var(--orange-400); }
+    .nav-num {
+      display: grid;
+      width: 25px;
+      height: 25px;
+      flex: 0 0 auto;
+      place-items: center;
+      border: 1px solid rgba(255, 255, 255, .15);
+      border-radius: 8px;
+      font-size: 11px;
+      font-weight: 800;
+    }
+    .sidebar-footer {
+      margin-top: 26px;
+      padding: 14px;
+      border: 1px solid rgba(255, 255, 255, .10);
+      border-radius: 14px;
+      color: #aeb8c9;
+      background: rgba(255, 255, 255, .04);
+      font-size: 12px;
+    }
+    .sidebar-footer a { color: #ffd8c5; }
+
+    main {
+      width: min(1500px, calc(100% - var(--sidebar)));
+      margin-left: var(--sidebar);
+      padding: 34px clamp(24px, 4vw, 64px) 80px;
+    }
+    section { scroll-margin-top: 24px; }
+    .hero {
+      position: relative;
+      padding: clamp(30px, 5vw, 56px);
+      overflow: hidden;
+      border: 1px solid rgba(255, 255, 255, .08);
+      border-radius: var(--radius-lg);
+      color: var(--white);
+      background:
+        linear-gradient(105deg, rgba(16, 24, 40, .97) 0%, rgba(23, 32, 51, .94) 62%, rgba(109, 45, 9, .90) 100%);
+      box-shadow: var(--shadow-lg);
+    }
+    .hero::after {
+      content: "";
+      position: absolute;
+      width: 360px;
+      height: 360px;
+      top: -190px;
+      right: -80px;
+      border: 70px solid rgba(255, 122, 50, .15);
+      border-radius: 50%;
+    }
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 10px;
+      border: 1px solid rgba(255, 255, 255, .15);
+      border-radius: 999px;
+      color: #ffd8c5;
+      background: rgba(255, 255, 255, .06);
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+    .hero h1 {
+      max-width: 900px;
+      margin: 18px 0 12px;
+      font-size: clamp(34px, 5vw, 64px);
+      line-height: 1.03;
+      letter-spacing: -.045em;
+    }
+    .hero p { max-width: 780px; margin: 0; color: #cbd5e1; font-size: 17px; }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 25px; }
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      min-height: 42px;
+      padding: 9px 14px;
+      border: 1px solid transparent;
+      border-radius: 10px;
+      color: var(--white);
+      background: var(--orange-500);
+      text-decoration: none;
+      cursor: pointer;
+      transition: .18s ease;
+    }
+    .button:hover { transform: translateY(-1px); background: var(--orange-600); }
+    .button.secondary { border-color: rgba(255, 255, 255, .15); background: rgba(255, 255, 255, .07); }
+    .button.ghost { color: var(--slate-700); border-color: var(--slate-300); background: var(--white); }
+    .button.small { min-height: 36px; padding: 7px 11px; font-size: 13px; }
+
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 14px;
+      margin-top: 18px;
+    }
+    .stat {
+      padding: 18px;
+      border: 1px solid var(--slate-200);
+      border-radius: var(--radius);
+      background: rgba(255, 255, 255, .86);
+      box-shadow: var(--shadow-sm);
+    }
+    .stat strong { display: block; color: var(--orange-600); font-size: 30px; line-height: 1; }
+    .stat span { display: block; margin-top: 7px; color: var(--slate-600); font-weight: 650; }
+
+    .section-head {
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 24px;
+      margin: 64px 0 20px;
+    }
+    .section-kicker {
+      margin: 0 0 6px;
+      color: var(--orange-600);
+      font-size: 12px;
+      font-weight: 850;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+    .section-head h2 { margin: 0; font-size: clamp(27px, 4vw, 40px); letter-spacing: -.035em; }
+    .section-head p { max-width: 600px; margin: 8px 0 0; color: var(--slate-600); }
+
+    .panel {
+      padding: clamp(20px, 3vw, 30px);
+      border: 1px solid var(--slate-200);
+      border-radius: var(--radius-lg);
+      background: var(--white);
+      box-shadow: var(--shadow-sm);
+    }
+    .panel + .panel { margin-top: 18px; }
+    .panel h3 { margin: 0 0 14px; font-size: 21px; letter-spacing: -.02em; }
+    .panel h4 { margin: 26px 0 10px; }
+    .muted { color: var(--slate-600); }
+    .note {
+      padding: 15px 17px;
+      border-left: 4px solid var(--orange-500);
+      border-radius: 0 12px 12px 0;
+      color: var(--slate-700);
+      background: var(--orange-50);
+    }
+
+    .mockup {
+      position: relative;
+      padding: 12px;
+      border: 1px solid var(--slate-200);
+      border-radius: 18px;
+      background: linear-gradient(145deg, #fff, #f4f6f9);
+      box-shadow: var(--shadow-md);
+    }
+    .mockup a { display: block; overflow: hidden; border-radius: 12px; }
+    .mockup img { display: block; width: 100%; transition: transform .3s ease; }
+    .mockup a:hover img { transform: scale(1.01); }
+    .mockup figcaption { padding: 12px 4px 2px; color: var(--slate-600); font-size: 13px; }
+
+    .grid-2 { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
+    .grid-3 { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+    .grid-4 { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 14px; }
+    .card {
+      padding: 18px;
+      border: 1px solid var(--slate-200);
+      border-radius: var(--radius);
+      background: var(--white);
+      box-shadow: var(--shadow-sm);
+    }
+    .card h3, .card h4 { margin: 0 0 8px; }
+    .card p { margin: 0; color: var(--slate-600); }
+    .card-accent { border-top: 4px solid var(--orange-500); }
+
+    .column-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+    .column-item {
+      min-height: 124px;
+      padding: 15px;
+      border: 1px solid var(--slate-200);
+      border-radius: 14px;
+      background: var(--slate-50);
+    }
+    .column-item strong { display: block; margin-bottom: 5px; color: var(--navy-900); }
+    .column-item span { color: var(--slate-600); font-size: 13px; }
+
+    .status-card { display: flex; align-items: center; gap: 12px; }
+    .status-card img { width: 42px; height: 42px; }
+    .status-card small { display: block; color: var(--slate-500); }
+
+    .tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      padding: 4px 9px;
+      border-radius: 999px;
+      color: var(--orange-700);
+      background: var(--orange-100);
+      font-size: 12px;
+      font-weight: 800;
+    }
+    .tag.high { color: #9d174d; background: #fce7f3; }
+    .tag.medium { color: #92400e; background: #fef3c7; }
+    .tag.req { color: #3730a3; background: #e0e7ff; }
+    .tag.ex { color: #b42318; background: #fee4e2; }
+
+    .flow-list { display: grid; gap: 14px; counter-reset: flow; }
+    .flow {
+      position: relative;
+      padding: 22px 22px 22px 68px;
+      border: 1px solid var(--slate-200);
+      border-radius: var(--radius);
+      background: var(--white);
+    }
+    .flow::before {
+      counter-increment: flow;
+      content: counter(flow, decimal-leading-zero);
+      position: absolute;
+      top: 20px;
+      left: 18px;
+      display: grid;
+      width: 36px;
+      height: 36px;
+      place-items: center;
+      border-radius: 11px;
+      color: var(--white);
+      background: var(--orange-500);
+      font-weight: 900;
+    }
+    .flow h3 { margin: 0 0 8px; }
+    .flow ol { margin: 0; padding-left: 20px; color: var(--slate-700); }
+
+    .exception { border-left: 4px solid #ef4444; }
+    .exception strong { color: var(--red); }
+
+    .formula-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; }
+    .formula {
+      padding: 18px;
+      border: 1px solid #ffd6c2;
+      border-radius: 16px;
+      background: linear-gradient(160deg, #fff, var(--orange-50));
+    }
+    .formula h4 { margin: 0 0 12px; color: var(--orange-700); }
+    .fraction { display: grid; justify-items: center; color: var(--navy-900); font-weight: 720; text-align: center; }
+    .fraction .top { padding: 0 10px 7px; border-bottom: 2px solid var(--navy-800); }
+    .fraction .bottom { padding-top: 7px; }
+    .formula .teacher { margin-top: 16px; padding-top: 12px; border-top: 1px dashed #f5b896; color: var(--slate-600); font-size: 13px; }
+
+    .filters {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      align-items: center;
+      padding: 14px;
+      border: 1px solid var(--slate-200);
+      border-radius: 14px;
+      background: var(--white);
+      position: sticky;
+      top: 10px;
+      z-index: 10;
+      box-shadow: var(--shadow-md);
+    }
+    .search {
+      min-width: min(100%, 320px);
+      flex: 1 1 260px;
+      height: 42px;
+      padding: 0 13px;
+      border: 1px solid var(--slate-300);
+      border-radius: 10px;
+      color: var(--navy-950);
+      background: var(--white);
+      outline: none;
+    }
+    .search:focus { border-color: var(--orange-500); box-shadow: 0 0 0 4px rgba(244, 91, 10, .12); }
+    .testcases { display: grid; gap: 10px; margin-top: 16px; }
+    .testcase {
+      border: 1px solid var(--slate-200);
+      border-radius: 14px;
+      background: var(--white);
+      overflow: clip;
+    }
+    .testcase[hidden] { display: none; }
+    .testcase summary {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 15px 17px;
+      cursor: pointer;
+      list-style: none;
+    }
+    .testcase summary::-webkit-details-marker { display: none; }
+    .testcase summary::after { content: "+"; margin-left: auto; color: var(--orange-600); font-size: 22px; font-weight: 700; }
+    .testcase[open] summary::after { content: "−"; }
+    .testcase-title { min-width: 0; font-weight: 780; }
+    .case-body {
+      display: grid;
+      grid-template-columns: minmax(180px, .7fr) minmax(0, 1.3fr);
+      gap: 18px;
+      padding: 18px;
+      border-top: 1px solid var(--slate-200);
+      background: var(--slate-50);
+    }
+    .case-meta { color: var(--slate-600); }
+    .case-meta div + div { margin-top: 8px; }
+    .case-steps { display: grid; gap: 10px; }
+    .step { padding: 10px 12px; border-left: 3px solid var(--orange-400); background: var(--white); }
+    .expected { margin: 14px 0 0; padding-left: 20px; }
+    .expected li + li { margin-top: 4px; }
+    .empty-filter { display: none; padding: 28px; color: var(--slate-600); text-align: center; }
+
+    .question-list { display: grid; gap: 10px; margin: 0; padding: 0; counter-reset: question; list-style: none; }
+    .question-list li {
+      position: relative;
+      padding: 14px 16px 14px 54px;
+      border: 1px solid #f4d8a4;
+      border-radius: 13px;
+      background: #fffbeb;
+      color: #664d03;
+    }
+    .question-list li::before {
+      counter-increment: question;
+      content: counter(question);
+      position: absolute;
+      top: 12px;
+      left: 14px;
+      display: grid;
+      width: 28px;
+      height: 28px;
+      place-items: center;
+      border-radius: 9px;
+      color: #fff;
+      background: #d99100;
+      font-weight: 850;
+    }
+
+    .footer {
+      margin-top: 64px;
+      padding-top: 24px;
+      border-top: 1px solid var(--slate-200);
+      color: var(--slate-500);
+      text-align: center;
+    }
+
+    @media (max-width: 1120px) {
+      :root { --sidebar: 244px; }
+      .column-grid, .grid-3, .formula-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .stats { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
+    @media (max-width: 780px) {
+      .sidebar { position: static; width: auto; padding: 14px; }
+      .brand { padding-bottom: 12px; }
+      .nav-title, .sidebar-footer { display: none; }
+      .nav { display: flex; overflow-x: auto; padding-top: 10px; }
+      .nav a { flex: 0 0 auto; }
+      main { width: 100%; margin: 0; padding: 18px 14px 60px; }
+      .hero { border-radius: 18px; }
+      .grid-2, .grid-3, .grid-4, .column-grid, .formula-grid, .case-body { grid-template-columns: 1fr; }
+      .section-head { align-items: start; flex-direction: column; }
+      .filters { position: static; }
+    }
+    @media print {
+      body { background: #fff; font-size: 11px; }
+      .sidebar, .hero-actions, .filters, .skip-link { display: none !important; }
+      main { width: 100%; margin: 0; padding: 0; }
+      .hero { color: #111; background: #fff; border: 2px solid #111; box-shadow: none; }
+      .hero p { color: #333; }
+      .panel, .card, .stat, .mockup, .testcase { break-inside: avoid; box-shadow: none; }
+      .section-head { margin-top: 32px; }
+      .testcase { display: block !important; }
+      .testcase summary::after { display: none; }
+      .testcase:not([open]) .case-body { display: grid; }
+    }
+
+    .doc-shell { min-width: 0; }
+    .doc-toolbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      margin-bottom: 18px;
+      padding: 14px 16px;
+      border: 1px solid var(--slate-200);
+      border-radius: 14px;
+      background: rgba(255,255,255,.92);
+      box-shadow: var(--shadow-sm);
+    }
+    .doc-toolbar-left, .doc-toolbar-right { display: flex; flex-wrap: wrap; align-items: center; gap: 9px; }
+    .sync-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      padding: 6px 10px;
+      border-radius: 999px;
+      color: #067647;
+      background: #ecfdf3;
+      border: 1px solid #abefc6;
+      font-size: 12px;
+      font-weight: 800;
+    }
+    .sync-badge::before { content: "✓"; }
+    .hash { color: var(--slate-500); font: 12px ui-monospace, SFMono-Regular, Menlo, monospace; }
+    .markdown-body {
+      padding: clamp(24px, 4vw, 54px);
+      border: 1px solid var(--slate-200);
+      border-radius: var(--radius-lg);
+      background: var(--white);
+      box-shadow: var(--shadow-md);
+      overflow: hidden;
+    }
+    .markdown-body > h1 {
+      position: relative;
+      margin: -54px -54px 42px;
+      padding: 62px 54px 54px;
+      color: var(--white);
+      background:
+        radial-gradient(circle at 88% 10%, rgba(255,122,50,.36), transparent 20rem),
+        linear-gradient(115deg, var(--navy-950), #243047 68%, #713209);
+      font-size: clamp(34px, 5vw, 62px);
+      line-height: 1.05;
+      letter-spacing: -.045em;
+    }
+    .markdown-body h2 {
+      margin: 70px 0 24px;
+      padding: 0 0 13px;
+      border-bottom: 2px solid var(--slate-200);
+      font-size: clamp(27px, 4vw, 39px);
+      line-height: 1.15;
+      letter-spacing: -.035em;
+      scroll-margin-top: 24px;
+    }
+    .markdown-body h2::first-letter { color: var(--orange-600); }
+    .markdown-body h3 {
+      margin: 38px 0 16px;
+      color: var(--navy-900);
+      font-size: 23px;
+      line-height: 1.25;
+      letter-spacing: -.02em;
+      scroll-margin-top: 24px;
+    }
+    .markdown-body h4 {
+      margin: 28px 0 12px;
+      color: var(--orange-700);
+      font-size: 17px;
+      scroll-margin-top: 24px;
+    }
+    .markdown-body p { margin: 12px 0; }
+    .markdown-body strong { color: var(--navy-900); }
+    .markdown-body ul, .markdown-body ol { padding-left: 1.35rem; }
+    .markdown-body li { margin: 6px 0; }
+    .markdown-body li::marker { color: var(--orange-500); font-weight: 800; }
+    .markdown-body hr {
+      height: 1px;
+      margin: 48px 0;
+      border: 0;
+      background: linear-gradient(90deg, transparent, var(--slate-300), transparent);
+    }
+    .markdown-body > p[align="center"] {
+      margin: 22px 0 28px;
+      padding: 12px;
+      border: 1px solid var(--slate-200);
+      border-radius: 18px;
+      background: linear-gradient(145deg, #fff, #f5f7fa);
+      box-shadow: var(--shadow-md);
+    }
+    .markdown-body > p[align="center"] a { display: inline-block; max-width: 100%; }
+    .markdown-body > p[align="center"] img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+      margin: auto;
+      border-radius: 12px;
+    }
+    .markdown-body > p[align="center"] em {
+      display: block;
+      margin-top: 10px;
+      color: var(--slate-500);
+      font-size: 13px;
+    }
+    .table-wrap {
+      width: 100%;
+      margin: 18px 0 28px;
+      overflow: auto;
+      border: 1px solid var(--slate-200);
+      border-radius: 15px;
+      background: var(--white);
+      box-shadow: var(--shadow-sm);
+    }
+    .markdown-body table {
+      width: 100%;
+      min-width: 720px;
+      border-collapse: separate;
+      border-spacing: 0;
+      font-size: 14px;
+    }
+    .markdown-body th {
+      position: sticky;
+      top: 0;
+      z-index: 2;
+      padding: 12px 14px;
+      color: var(--white);
+      background: var(--navy-900);
+      border-bottom: 1px solid var(--navy-800);
+      text-align: left;
+      white-space: nowrap;
+    }
+    .markdown-body td {
+      padding: 12px 14px;
+      border-bottom: 1px solid var(--slate-200);
+      vertical-align: top;
+    }
+    .markdown-body tbody tr:nth-child(even) td { background: var(--slate-50); }
+    .markdown-body tbody tr:hover td { background: var(--orange-50); }
+    .markdown-body tbody tr:last-child td { border-bottom: 0; }
+    .markdown-body td img { display: block; width: 36px; height: 36px; max-width: none; }
+    .markdown-body pre {
+      position: relative;
+      margin: 16px 0 24px;
+      padding: 18px 20px;
+      overflow: auto;
+      border: 1px solid #ffd3bd;
+      border-radius: 14px;
+      color: #fff7ed;
+      background: linear-gradient(145deg, #172033, #222f48);
+      box-shadow: var(--shadow-sm);
+      font: 13px/1.75 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    }
+    .markdown-body pre code { padding: 0; border: 0; color: inherit; background: none; font: inherit; }
+    .markdown-body blockquote {
+      margin: 18px 0;
+      padding: 13px 16px;
+      border-left: 4px solid var(--orange-500);
+      border-radius: 0 12px 12px 0;
+      color: var(--slate-700);
+      background: var(--orange-50);
+    }
+    .case-tools {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 10px;
+      margin: 12px 0 14px;
+      padding: 13px;
+      border: 1px solid var(--slate-200);
+      border-radius: 13px;
+      background: var(--slate-50);
+    }
+    .case-tools input {
+      flex: 1 1 280px;
+      height: 42px;
+      padding: 0 13px;
+      border: 1px solid var(--slate-300);
+      border-radius: 10px;
+      outline: none;
+    }
+    .case-tools input:focus { border-color: var(--orange-500); box-shadow: 0 0 0 4px rgba(244,91,10,.12); }
+    .case-count { color: var(--orange-700); font-weight: 800; white-space: nowrap; }
+    .testcase-table table { min-width: 1500px; }
+    .testcase-table th:first-child, .testcase-table td:first-child {
+      position: sticky;
+      left: 0;
+      z-index: 1;
+      min-width: 230px;
+      box-shadow: 1px 0 0 var(--slate-200);
+    }
+    .testcase-table th:first-child { z-index: 3; background: var(--navy-900); }
+    .testcase-table td:first-child { background: var(--white); font-weight: 750; }
+    .testcase-table tbody tr:nth-child(even) td:first-child { background: var(--slate-50); }
+    .testcase-table tbody tr:hover td:first-child { background: var(--orange-50); }
+    .source-note {
+      margin-top: 18px;
+      color: var(--slate-500);
+      text-align: center;
+      font-size: 12px;
+    }
+    @media (max-width: 780px) {
+      .doc-toolbar { align-items: flex-start; flex-direction: column; }
+      .markdown-body { padding: 20px 16px; border-radius: 16px; }
+      .markdown-body > h1 { margin: -20px -16px 32px; padding: 40px 20px 34px; }
+      .markdown-body h2 { margin-top: 48px; }
+      .markdown-body table { font-size: 13px; }
+    }
+    @media print {
+      .doc-toolbar, .case-tools { display: none !important; }
+      .markdown-body { padding: 0; border: 0; box-shadow: none; overflow: visible; }
+      .markdown-body > h1 { margin: 0 0 32px; padding: 30px; color: #111; background: #fff; border: 2px solid #111; }
+      .table-wrap { overflow: visible; box-shadow: none; }
+      .markdown-body table { min-width: 0 !important; font-size: 9px; }
+      .markdown-body th { position: static; color: #111; background: #eee; }
+      .testcase-table th:first-child, .testcase-table td:first-child { position: static; }
+    }
+</style>
+</head>
+<body>
+  <a class="skip-link" href="#document">Đi đến nội dung chính</a>
+  <aside class="sidebar" aria-label="Mục lục requirement">
+    <div class="brand">
+      <div class="brand-mark">ics</div>
+      <div><strong>ICS Requirement</strong><small>Requirement UI, nghiệp vụ và testcase</small></div>
+    </div>
+    <div class="nav-title">Nội dung Markdown</div>
+    <nav id="docNav" class="nav"></nav>
+    <div class="sidebar-footer">
+      HTML được render trực tiếp từ Markdown nguồn.<br>
+      <a href="./class_detail_teachers_requirements.md">Mở file Markdown</a>
+    </div>
+  </aside>
+  <main class="doc-shell">
+    <div class="doc-toolbar">
+      <div class="doc-toolbar-left">
+        <span class="sync-badge">Đồng bộ 100% từ Markdown</span>
+        <span class="hash">SHA-256: 294b751be976…</span>
+      </div>
+      <div class="doc-toolbar-right">
+        <a class="button ghost small" href="./class_detail_teachers_requirements.md">Xem Markdown</a>
+        <button class="button small" type="button" onclick="window.print()">In / Lưu PDF</button>
+      </div>
+    </div>
+    <article id="document" class="markdown-body" data-source-sha256="294b751be976d25d9a44790552875682028d9e51c7cf60987b9ef22292e00d94">
+<h1 id="chi-tiet-lop-hoc-tab-giao-vien">Chi tiết lớp học — Tab Giáo viên</h1>
+<blockquote>
+<p>Requirement này đặc tả màn <strong>Chi tiết lớp học → Tab Giáo viên</strong>. Hồ sơ, popup tạo mới và các tab Chi tiết giáo viên dùng lại nghiệp vụ tại <a href="../teacher_management/teacher_management_requirements.md">Quản lý danh sách giáo viên</a> và <a href="../teacher_management/teacher_detail_requirements.md">Chi tiết giáo viên</a>. Trợ giảng/Phụ trách lớp được đặc tả tại <a href="./class_detail_support_handlers_requirements.md">Tab Trợ giảng &amp; Phụ trách lớp</a>; lịch và thời điểm phát sinh lương được đặc tả tại <a href="./class_detail_schedule_requirements.md">Tab Lịch dạy</a>. <code>Giáo viên phụ trách chính</code> trong tài liệu này là giáo viên được quyền chấm điểm BTVN và bài kiểm tra, khác với <code>Phụ trách chính</code> có role <code>Class Handler</code> của lớp.</p>
+</blockquote>
+<h2 id="1-ui">1. UI</h2>
+<h3 id="tab-giao-vien-danh-sach-giao-vien-trong-lop">Tab Giáo viên — Danh sách giáo viên trong lớp</h3>
+<p align="center">
+  <a href="./images/22-class-detail-teachers.png"><img src="./images/22-class-detail-teachers.png" alt="Chi tiết lớp học - Tab Giáo viên" width="900" title="Nhấn để xem ảnh gốc"></a><br>
+  <em>Danh sách giáo viên đã được thêm vào lớp — nhấn để xem ảnh gốc</em>
+</p>
+
+<p><strong>Mô tả:</strong></p>
+<ul>
+<li>Hiển thị danh sách giáo viên đang được gắn với lớp hiện tại.</li>
+<li><code>Admin</code>, <code>Class Handler</code> và <code>Support</code> được xem, thêm giáo viên có sẵn, tạo giáo viên mới, đổi Giáo viên phụ trách chính và xóa giáo viên khỏi lớp trong phạm vi được phân quyền.</li>
+<li>Mỗi lớp được có nhiều giáo viên nhưng tại một thời điểm chỉ có tối đa một <code>Giáo viên phụ trách chính</code>.</li>
+<li>Chỉ giáo viên đang là <code>Giáo viên phụ trách chính</code> của lớp mới được nhập/cập nhật điểm BTVN và bài kiểm tra cho học viên trong lớp đó.</li>
+</ul>
+<p><strong>Giải thích field/thành phần:</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Field/thành phần</th>
+<th>Yêu cầu</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Tên</td>
+<td>Hiển thị avatar, họ tên và mã giáo viên. Bấm vào giáo viên mở đúng màn Chi tiết giáo viên theo quyền của người dùng.</td>
+</tr>
+<tr>
+<td>Email</td>
+<td>Hiển thị email hiện tại của giáo viên; không dùng email làm khóa quan hệ giáo viên–lớp.</td>
+</tr>
+<tr>
+<td>Phụ trách chính</td>
+<td>Checkbox thể hiện giáo viên có quyền chấm điểm BTVN và bài kiểm tra của lớp hay không. Mỗi lớp tối đa một checkbox được chọn.</td>
+</tr>
+<tr>
+<td>Xóa</td>
+<td>Icon thùng rác mở popup xác nhận xóa giáo viên khỏi lớp. Không xóa tài khoản giáo viên.</td>
+</tr>
+<tr>
+<td>Thêm giáo viên vào lớp</td>
+<td>Mở popup lựa chọn giữa <code>Chọn giáo viên</code> hiện có và <code>Tạo giáo viên mới</code>.</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Điểm cần lưu ý:</strong></p>
+<ul>
+<li><code>Giáo viên phụ trách chính</code> không phải <code>Class Handler/Phụ trách chính</code> của lớp. Hai quan hệ có role và quyền khác nhau.</li>
+<li>Danh sách có thể có 0, 1 hoặc nhiều giáo viên. Không nhân đôi cùng một giáo viên trong một lớp.</li>
+<li>Quan hệ giáo viên–lớp phải là nguồn chung cho <code>Số lớp</code>, <code>Đang dạy</code> và <code>Lịch dạy</code> tại module Giáo viên.</li>
+<li>Thao tác thêm/xóa/đổi phụ trách phải cập nhật danh sách sau khi backend xác nhận, không cập nhật thành công giả ở client.</li>
+<li>Thêm giáo viên đầu tiên không tự động đánh dấu Phụ trách chính; người có quyền phải tick thủ công.</li>
+<li>Lớp được phép tạm thời không có Giáo viên phụ trách chính. Khi đó không giáo viên nào được nhập/cập nhật điểm BTVN hoặc bài kiểm tra của lớp.</li>
+<li>Giáo viên thường và Giáo viên phụ trách chính đều không được xem tab quản lý này; quyền chấm điểm được thực hiện tại màn BTVN/Bài kiểm tra tương ứng.</li>
+</ul>
+<h4 id="testcase-tab-giao-vien-danh-sach-giao-vien">Testcase — Tab Giáo viên — Danh sách giáo viên</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 1: Mở tab và hiển thị danh sách giáo viên</td>
+<td>High</td>
+<td>Smoke</td>
+<td>Flow 1 / REQ01</td>
+<td><code>Admin</code>, <code>Class Handler</code> hoặc <code>Support</code></td>
+<td>Lớp có giáo viên</td>
+<td><strong>Given</strong> người dùng được xem lớp<br><strong>When</strong> mở tab <code>Giáo viên</code><br><strong>Then</strong> hệ thống tải quan hệ giáo viên–lớp mới nhất</td>
+<td>- Hiển thị đúng Tên, Mã, Email, checkbox Phụ trách chính và icon Xóa<br>- Không trộn giáo viên lớp khác<br>- Không thay đổi dữ liệu</td>
+</tr>
+<tr>
+<td>Case 2: Danh sách rỗng</td>
+<td>Medium</td>
+<td></td>
+<td>REQ01</td>
+<td>Role có quyền</td>
+<td>Lớp chưa có giáo viên</td>
+<td><strong>Given</strong> tab được mở<br><strong>When</strong> backend trả danh sách rỗng<br><strong>Then</strong> hiển thị empty state và nút thêm</td>
+<td>- Không tạo dòng giả<br>- Có thể mở flow thêm giáo viên<br>- Không tự gán giáo viên phụ trách chính</td>
+</tr>
+<tr>
+<td>Case 3: Chỉ ba role quản lý được CRUD</td>
+<td>High</td>
+<td></td>
+<td>Ràng buộc quyền / EX01</td>
+<td>Kiểm thử nhiều role</td>
+<td>Có ID lớp hợp lệ</td>
+<td><strong>Given</strong> role không phải Admin/Class Handler/Support<br><strong>When</strong> xem control hoặc gửi request CRUD trực tiếp<br><strong>Then</strong> hệ thống từ chối</td>
+<td>- Không hiển thị/disable control thay đổi<br>- Backend không thêm, đổi phụ trách hoặc xóa<br>- Không lộ dữ liệu ngoài phạm vi</td>
+</tr>
+<tr>
+<td>Case 4: Không hiển thị trùng giáo viên</td>
+<td>High</td>
+<td></td>
+<td>EX02 / REQ01</td>
+<td>Role có quyền</td>
+<td>Cùng giáo viên được gửi thêm lặp/đồng thời</td>
+<td><strong>Given</strong> quan hệ giáo viên–lớp đã tồn tại<br><strong>When</strong> tải lại danh sách<br><strong>Then</strong> mỗi giáo viên chỉ có một dòng</td>
+<td>- Không nhân đôi quan hệ<br>- Không làm sai số lớp của giáo viên<br>- Có thể cảnh báo đã thuộc lớp</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="popup-chon-cach-them-giao-vien">Popup chọn cách thêm giáo viên</h3>
+<p align="center">
+  <a href="./images/24-class-detail-teacher-add-choice.png"><img src="./images/24-class-detail-teacher-add-choice.png" alt="Popup chọn giáo viên hoặc tạo giáo viên mới" width="900" title="Nhấn để xem ảnh gốc"></a><br>
+  <em>Chọn giáo viên hiện có hoặc tạo giáo viên mới — nhấn để xem ảnh gốc</em>
+</p>
+
+<p><strong>Mô tả:</strong> Bấm <code>Thêm giáo viên vào lớp</code> để chọn một trong hai flow: thêm giáo viên đã có hoặc tạo tài khoản giáo viên mới rồi thêm vào lớp.</p>
+<p><strong>Giải thích field/thành phần:</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Thành phần</th>
+<th>Yêu cầu</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Chọn giáo viên</td>
+<td>Mở popup tìm và chọn một hoặc nhiều giáo viên hiện có.</td>
+</tr>
+<tr>
+<td>Tạo giáo viên mới</td>
+<td>Mở popup tạo giáo viên dùng chung của module Giáo viên.</td>
+</tr>
+<tr>
+<td>Đóng popup</td>
+<td>Đóng mà không tạo hoặc thêm quan hệ giáo viên–lớp.</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Điểm cần lưu ý:</strong></p>
+<ul>
+<li>Chỉ <code>Admin</code>, <code>Class Handler</code>, <code>Support</code> được mở và thực hiện hai flow.</li>
+<li>Việc mở popup không tự chọn hoặc tự thêm giáo viên.</li>
+<li>ID lớp phải được giữ xuyên suốt hai flow để sau khi xác nhận giáo viên được thêm đúng lớp.</li>
+</ul>
+<h4 id="testcase-popup-chon-cach-them-giao-vien">Testcase — Popup chọn cách thêm giáo viên</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 5: Mở và đóng popup lựa chọn</td>
+<td>Medium</td>
+<td></td>
+<td>Flow 2 / REQ02</td>
+<td>Role có quyền CRUD</td>
+<td>Tab Giáo viên đang mở</td>
+<td><strong>Given</strong> người dùng bấm <code>Thêm giáo viên vào lớp</code><br><strong>When</strong> popup hiển thị rồi được đóng<br><strong>Then</strong> không thay đổi dữ liệu</td>
+<td>- Có đúng hai lựa chọn<br>- Không tạo giáo viên/quan hệ<br>- Danh sách giữ nguyên</td>
+</tr>
+<tr>
+<td>Case 6: Điều hướng đúng hai flow</td>
+<td>High</td>
+<td></td>
+<td>Flow 2 / REQ02</td>
+<td>Role có quyền CRUD</td>
+<td>Popup lựa chọn đang mở</td>
+<td><strong>Given</strong> người dùng chọn một phương án<br><strong>When</strong> bấm nút tương ứng<br><strong>Then</strong> mở đúng popup Chọn giáo viên hoặc Tạo giáo viên mới</td>
+<td>- Không mở hai popup đồng thời<br>- Giữ đúng ID lớp<br>- Chưa thêm dữ liệu trước khi xác nhận flow con</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="popup-chon-giao-vien-hien-co">Popup Chọn giáo viên hiện có</h3>
+<p align="center">
+  <a href="./images/23-class-detail-teacher-picker.png"><img src="./images/23-class-detail-teacher-picker.png" alt="Popup chọn giáo viên hiện có" width="900" title="Nhấn để xem ảnh gốc"></a><br>
+  <em>Tìm và chọn một hoặc nhiều giáo viên hiện có — nhấn để xem ảnh gốc</em>
+</p>
+
+<p><strong>Mô tả:</strong> Cho phép tìm theo tên hoặc mã giáo viên và chọn một hoặc nhiều giáo viên để thêm vào lớp.</p>
+<p><strong>Giải thích field/thành phần:</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Thành phần</th>
+<th>Yêu cầu</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Tìm kiếm</td>
+<td>Tìm theo tên hoặc mã giáo viên như placeholder UI; áp dụng trong phạm vi dữ liệu người dùng.</td>
+</tr>
+<tr>
+<td>Danh sách</td>
+<td>Mỗi dòng hiển thị tối thiểu tên, mã và email; checkbox hỗ trợ multi-select.</td>
+</tr>
+<tr>
+<td>Hủy</td>
+<td>Đóng popup và bỏ các lựa chọn chưa xác nhận.</td>
+</tr>
+<tr>
+<td>Thêm mới</td>
+<td>Thêm toàn bộ giáo viên đang chọn vào lớp; trong popup này không có nghĩa là tạo tài khoản mới.</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Điểm cần lưu ý:</strong></p>
+<ul>
+<li>Không cho chọn giáo viên đã thuộc lớp; nếu vẫn hiển thị thì phải disabled và nêu rõ <code>Đã thuộc lớp</code>.</li>
+<li>Hệ thống có bốn trạng thái giáo viên: <code>Training</code>, <code>Chính thức</code>, <code>Thử việc</code>, <code>Nghỉ việc</code>. Không có trạng thái giáo viên <code>Testing</code>.</li>
+<li>Popup chọn để thêm vào lớp chỉ hiển thị giáo viên có hồ sơ/tài khoản còn hiệu lực thuộc một trong ba trạng thái <code>Training</code>, <code>Chính thức</code>, <code>Thử việc</code>.</li>
+<li>Giáo viên <code>Nghỉ việc</code> <strong>không hiển thị trong danh sách chọn</strong>, kể cả khi từ khóa tìm kiếm khớp chính xác tên hoặc mã giáo viên. Backend vẫn phải từ chối nếu client gửi trực tiếp ID giáo viên đã nghỉ việc.</li>
+<li>Thêm nhiều giáo viên phải nguyên tử. Nếu có phần tử không còn hợp lệ tại thời điểm xác nhận, không thêm một phần và trả rõ phần tử cần chọn lại.</li>
+<li>Thêm giáo viên, kể cả giáo viên đầu tiên, không tự động đánh dấu Phụ trách chính.</li>
+</ul>
+<h4 id="testcase-popup-chon-giao-vien-hien-co">Testcase — Popup Chọn giáo viên hiện có</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 7: Tìm theo tên hoặc mã giáo viên</td>
+<td>Medium</td>
+<td></td>
+<td>Flow 2 / REQ03</td>
+<td>Role có quyền CRUD</td>
+<td>Có nhiều giáo viên hợp lệ</td>
+<td><strong>Given</strong> popup đang mở<br><strong>When</strong> nhập tên hoặc mã<br><strong>Then</strong> lọc danh sách đúng phạm vi</td>
+<td>- Tên/mã khớp được hiển thị<br>- Không tự thêm khi tìm<br>- Không lộ giáo viên ngoài phạm vi</td>
+</tr>
+<tr>
+<td>Case 8: Chọn và thêm nhiều giáo viên</td>
+<td>High</td>
+<td>Smoke</td>
+<td>Flow 2 / REQ03</td>
+<td>Role có quyền CRUD</td>
+<td>Các giáo viên chưa thuộc lớp</td>
+<td><strong>Given</strong> chọn từ hai giáo viên trở lên<br><strong>When</strong> bấm <code>Thêm mới</code><br><strong>Then</strong> backend tạo các quan hệ giáo viên–lớp</td>
+<td>- Mỗi giáo viên xuất hiện một lần<br>- Chưa ai tự thành Phụ trách chính<br>- Cập nhật số lớp/lịch liên quan<br>- Hiển thị Toast thành công</td>
+</tr>
+<tr>
+<td>Case 9: Hủy lựa chọn</td>
+<td>Medium</td>
+<td></td>
+<td>Flow 2 / REQ03</td>
+<td>Role có quyền CRUD</td>
+<td>Đã tick giáo viên</td>
+<td><strong>Given</strong> lựa chọn chưa xác nhận<br><strong>When</strong> bấm <code>Hủy</code><br><strong>Then</strong> đóng popup mà không thêm</td>
+<td>- Không tạo quan hệ<br>- Không có Toast thành công<br>- Mở lại không tự giữ lựa chọn cũ</td>
+</tr>
+<tr>
+<td>Case 10: Không hiển thị và chặn giáo viên Nghỉ việc</td>
+<td>High</td>
+<td></td>
+<td>EX03 / REQ03</td>
+<td>Role có quyền CRUD</td>
+<td>Có giáo viên trạng thái <code>Nghỉ việc</code> trong hệ thống</td>
+<td><strong>Given</strong> popup Chọn giáo viên đang mở<br><strong>When</strong> xem danh sách hoặc tìm chính xác theo tên/mã giáo viên đã nghỉ việc<br><strong>Then</strong> giáo viên đó không xuất hiện trong kết quả</td>
+<td>- API danh sách loại giáo viên Nghỉ việc ở backend<br>- Client gửi trực tiếp teacher_id Nghỉ việc vẫn bị từ chối<br>- Không tạo quan hệ giáo viên–lớp<br>- Không làm lộ dữ liệu ngoài phạm vi</td>
+</tr>
+<tr>
+<td>Case 11: Chỉ hiển thị ba trạng thái giáo viên có thể thêm</td>
+<td>High</td>
+<td></td>
+<td>REQ03</td>
+<td>Role có quyền CRUD</td>
+<td>Có giáo viên thuộc nhiều trạng thái</td>
+<td><strong>Given</strong> popup Chọn giáo viên đang mở<br><strong>When</strong> tải hoặc tìm danh sách<br><strong>Then</strong> chỉ trả giáo viên <code>Training</code>, <code>Chính thức</code>, <code>Thử việc</code> còn hiệu lực</td>
+<td>- Không có trạng thái <code>Testing</code><br>- Không hiển thị <code>Nghỉ việc</code><br>- Kết quả vẫn đúng phạm vi và chưa thuộc lớp</td>
+</tr>
+<tr>
+<td>Case 28: Giáo viên chuyển Nghỉ việc khi popup đang mở</td>
+<td>High</td>
+<td></td>
+<td>EX03 / REQ03</td>
+<td>Role có quyền CRUD</td>
+<td>Giáo viên đang hiển thị hợp lệ rồi được chuyển sang Nghỉ việc bởi thao tác khác</td>
+<td><strong>Given</strong> popup còn giữ dữ liệu cũ và giáo viên đang được tick<br><strong>When</strong> người dùng xác nhận thêm<br><strong>Then</strong> backend kiểm tra trạng thái mới nhất và từ chối</td>
+<td>- Không thêm giáo viên Nghỉ việc<br>- Không thêm một phần danh sách multi-select<br>- Yêu cầu tải lại/chọn lại danh sách<br>- Sau khi tải lại giáo viên không còn xuất hiện</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="popup-tao-giao-vien-moi-dung-chung">Popup Tạo giáo viên mới dùng chung</h3>
+<p align="center">
+  <a href="../teacher_management/images/teacher-create-modal.png"><img src="../teacher_management/images/teacher-create-modal.png" alt="Popup tạo giáo viên dùng chung" width="900" title="Nhấn để xem ảnh gốc"></a><br>
+  <em>Popup tạo giáo viên dùng chung từ requirement Quản lý giáo viên — nhấn để xem ảnh gốc</em>
+</p>
+
+<p><strong>Mô tả:</strong> Tạo giáo viên mới ngay trong ngữ cảnh lớp bằng popup dùng chung của module Giáo viên; sau khi tạo thành công, tự thêm giáo viên mới vào lớp hiện tại.</p>
+<p><strong>Giải thích field/thành phần:</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Field/thành phần</th>
+<th>Yêu cầu</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Họ và tên</td>
+<td>Thông tin giáo viên; validation dùng requirement Quản lý giáo viên.</td>
+</tr>
+<tr>
+<td>Mã giáo viên/Code</td>
+<td>Do backend tự sinh duy nhất theo quy tắc module Giáo viên; người dùng không tự nhập/ghi đè.</td>
+</tr>
+<tr>
+<td>Email, Số điện thoại</td>
+<td>Dùng validation và kiểm tra trùng của module Giáo viên.</td>
+</tr>
+<tr>
+<td>Trạng thái</td>
+<td>Hệ thống hỗ trợ <code>Training</code>, <code>Chính thức</code>, <code>Thử việc</code>, <code>Nghỉ việc</code>. Trong flow tạo từ lớp, chỉ cho chọn ba trạng thái có thể được thêm vào lớp; không cho chọn <code>Nghỉ việc</code>. Không có trạng thái <code>Testing</code>.</td>
+</tr>
+<tr>
+<td>Ghi chú</td>
+<td>Cho nhập ghi chú ban đầu; hiển thị/lưu an toàn và dùng chung với hồ sơ giáo viên.</td>
+</tr>
+<tr>
+<td>Các field khác</td>
+<td>Giới tính, Ngày sinh, Vai trò <code>Teacher</code>, Mật khẩu và các field hiện có tiếp tục theo popup tạo giáo viên dùng chung.</td>
+</tr>
+<tr>
+<td>Xác Nhận</td>
+<td>Tạo giáo viên và thêm vào lớp trong một flow nhất quán.</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Điểm cần lưu ý:</strong></p>
+<ul>
+<li><code>Admin</code>, <code>Class Handler</code>, <code>Support</code> được dùng popup này từ tab Giáo viên của lớp. Quyền tạo từ màn Danh sách giáo viên độc lập vẫn theo requirement module Giáo viên.</li>
+<li>Tạo giáo viên mới không tự đánh dấu Phụ trách chính.</li>
+<li>Nếu tạo tài khoản thành công nhưng thêm vào lớp thất bại, hệ thống phải trả kết quả rõ ràng và không hiển thị quan hệ lớp chưa được tạo; cách rollback tài khoản dùng quy tắc chung module Giáo viên.</li>
+<li>Không lưu hoặc hiển thị mật khẩu trong Toast, log, lịch sử hay response sau tạo.</li>
+</ul>
+<h4 id="testcase-popup-tao-giao-vien-moi-dung-chung">Testcase — Popup Tạo giáo viên mới dùng chung</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 12: Mở đúng popup tạo giáo viên dùng chung</td>
+<td>High</td>
+<td></td>
+<td>Flow 3 / REQ04</td>
+<td>Role có quyền CRUD</td>
+<td>Popup lựa chọn đang mở</td>
+<td><strong>Given</strong> người dùng chọn <code>Tạo giáo viên mới</code><br><strong>When</strong> popup tạo mở<br><strong>Then</strong> dùng đúng component/rule module Giáo viên</td>
+<td>- Có các field hiện hành và bổ sung Trạng thái/Ghi chú<br>- Code chỉ đọc/tự sinh<br>- Vai trò cố định Teacher</td>
+</tr>
+<tr>
+<td>Case 13: Tạo giáo viên và tự thêm vào lớp</td>
+<td>High</td>
+<td></td>
+<td>Flow 3 / REQ04</td>
+<td>Role có quyền CRUD</td>
+<td>Dữ liệu hợp lệ</td>
+<td><strong>Given</strong> người dùng nhập hợp lệ<br><strong>When</strong> xác nhận tạo<br><strong>Then</strong> tạo giáo viên rồi gắn vào lớp</td>
+<td>- Danh sách xuất hiện giáo viên mới<br>- Không tự tick Phụ trách chính<br>- Không tạo trùng khi bấm lặp<br>- Hiển thị Toast thành công</td>
+</tr>
+<tr>
+<td>Case 14: Tạo giáo viên theo ba trạng thái được phân công</td>
+<td>High</td>
+<td></td>
+<td>Flow 3 / REQ04</td>
+<td>Role có quyền CRUD</td>
+<td>Dữ liệu hợp lệ</td>
+<td><strong>Given</strong> lần lượt chọn <code>Training</code>, <code>Chính thức</code>, <code>Thử việc</code><br><strong>When</strong> xác nhận tạo<br><strong>Then</strong> tạo Teacher đúng trạng thái và thêm vào lớp</td>
+<td>- Code vẫn duy nhất<br>- Không có lựa chọn Testing/Nghỉ việc trong flow từ lớp<br>- Không bỏ qua validation email/quyền/audit</td>
+</tr>
+<tr>
+<td>Case 15: Chặn trạng thái hoặc dữ liệu tạo không hợp lệ</td>
+<td>High</td>
+<td></td>
+<td>EX04 / REQ04</td>
+<td>Role có quyền CRUD</td>
+<td>Form chứa dữ liệu sai/trùng hoặc trạng thái <code>Nghỉ việc</code></td>
+<td><strong>Given</strong> người dùng/client gửi dữ liệu không hợp lệ<br><strong>When</strong> xác nhận<br><strong>Then</strong> backend từ chối</td>
+<td>- Không tạo giáo viên/quan hệ lớp<br>- Báo đúng field<br>- Không lộ mật khẩu/thông tin kỹ thuật</td>
+</tr>
+<tr>
+<td>Case 16: Xử lý lỗi ở bước thêm vào lớp</td>
+<td>High</td>
+<td></td>
+<td>EX05 / REQ04</td>
+<td>Role có quyền CRUD</td>
+<td>Giáo viên tạo hợp lệ nhưng gắn lớp thất bại</td>
+<td><strong>Given</strong> flow đang xử lý<br><strong>When</strong> bước tạo tài khoản thành công nhưng bước liên kết lỗi<br><strong>Then</strong> trả trạng thái rõ và không hiển thị liên kết giả</td>
+<td>- Không có dòng giáo viên trong lớp nếu quan hệ chưa tạo<br>- Không gửi lặp làm trùng tài khoản<br>- Cho phép xử lý lại theo ID giáo viên đã tạo nếu module giữ tài khoản</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="checkbox-giao-vien-phu-trach-chinh-va-quyen-cham-iem">Checkbox Giáo viên phụ trách chính và quyền chấm điểm</h3>
+<p><strong>Mô tả:</strong> Cho phép Admin/Class Handler/Support chỉ định tối đa một giáo viên trong lớp làm Giáo viên phụ trách chính. Đây là giáo viên duy nhất được nhập/cập nhật điểm BTVN và bài kiểm tra của lớp.</p>
+<p><strong>Giải thích field/thành phần:</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Thành phần</th>
+<th>Yêu cầu</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Checkbox chưa chọn</td>
+<td>Bấm để gán giáo viên của dòng thành Phụ trách chính.</td>
+</tr>
+<tr>
+<td>Checkbox đã chọn</td>
+<td>Thể hiện giáo viên hiện tại có quyền chấm điểm BTVN và bài kiểm tra. Cho phép bỏ chọn để lớp tạm thời không có Phụ trách chính.</td>
+</tr>
+<tr>
+<td>Chuyển từ A sang B</td>
+<td>Tick B phải đồng thời bỏ tick A trong cùng giao dịch; không tồn tại trạng thái có hai giáo viên chính.</td>
+</tr>
+<tr>
+<td>Kiểm tra quyền chấm điểm</td>
+<td>Mọi API nhập/cập nhật điểm BTVN và bài kiểm tra phải kiểm tra giáo viên đăng nhập là Phụ trách chính hiện tại của đúng lớp.</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Điểm cần lưu ý:</strong></p>
+<ul>
+<li>Ràng buộc duy nhất phải nằm ở backend/database, không chỉ ở checkbox UI.</li>
+<li>Hai request đồng thời chọn hai giáo viên khác nhau phải kết thúc với đúng một người chính; request còn lại nhận dữ liệu mới nhất/cảnh báo xung đột.</li>
+<li>Khi chuyển A → B, A mất quyền nhập/cập nhật điểm BTVN và bài kiểm tra ngay sau khi giao dịch thành công; B có quyền. Điểm đã chấm vẫn giữ người chấm và lịch sử cũ.</li>
+<li><code>Admin</code>, <code>Class Handler</code>, <code>Support</code> được quản lý checkbox nhưng không vì vậy mà được chấm điểm thay giáo viên. Chỉ tài khoản Teacher đang là Phụ trách chính có quyền nhập/cập nhật điểm BTVN và bài kiểm tra.</li>
+<li>Quyền này áp dụng cả lớp chính thức và lớp không chính thức.</li>
+<li>Giáo viên không được xem tab Giáo viên. Backend phân quyền chấm điểm trực tiếp tại function BTVN/Bài kiểm tra, không yêu cầu giáo viên truy cập tab này.</li>
+</ul>
+<h4 id="testcase-checkbox-giao-vien-phu-trach-chinh-va-quyen-cham-iem">Testcase — Checkbox Giáo viên phụ trách chính và quyền chấm điểm</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 17: Giáo viên đầu tiên không tự thành Phụ trách chính</td>
+<td>High</td>
+<td></td>
+<td>REQ04 / REQ05</td>
+<td>Role có quyền CRUD</td>
+<td>Lớp chưa có giáo viên</td>
+<td><strong>Given</strong> thêm giáo viên đầu tiên thành công<br><strong>When</strong> danh sách tải lại<br><strong>Then</strong> checkbox Phụ trách chính vẫn chưa được tick</td>
+<td>- Lớp tạm thời không có người chính<br>- Giáo viên chưa được chấm điểm BTVN/bài kiểm tra<br>- Chỉ có quyền sau khi Admin/Class Handler/Support tick thủ công</td>
+</tr>
+<tr>
+<td>Case 18: Chuyển Phụ trách chính từ A sang B</td>
+<td>High</td>
+<td>Smoke</td>
+<td>Flow 4 / REQ05</td>
+<td>Role có quyền CRUD</td>
+<td>A đang chính; B thuộc lớp</td>
+<td><strong>Given</strong> A đang được tick<br><strong>When</strong> tick B<br><strong>Then</strong> backend đổi nguyên tử A → B</td>
+<td>- A tự bỏ tick<br>- B được tick<br>- Không có thời điểm lưu chính thức với hai người chính<br>- Quyền chấm chuyển sang B</td>
+</tr>
+<tr>
+<td>Case 19: Chặn hai Phụ trách chính do request đồng thời</td>
+<td>High</td>
+<td></td>
+<td>EX06 / REQ05</td>
+<td>Hai role có quyền CRUD</td>
+<td>A và B cùng thuộc lớp</td>
+<td><strong>Given</strong> hai request gán A/B đồng thời<br><strong>When</strong> backend commit<br><strong>Then</strong> chỉ một quan hệ được đánh dấu chính</td>
+<td>- Tối đa một giáo viên chính<br>- UI tải lại người thắng cuối cùng theo cơ chế version<br>- Không cấp quyền chấm cho cả hai</td>
+</tr>
+<tr>
+<td>Case 20: Chỉ Phụ trách chính được chấm điểm BTVN và bài kiểm tra</td>
+<td>High</td>
+<td></td>
+<td>Flow 4 / REQ06</td>
+<td>Kiểm thử Teacher chính, Teacher thường và role quản lý</td>
+<td>Lớp có một giáo viên chính</td>
+<td><strong>Given</strong> các tài khoản lần lượt gửi yêu cầu nhập/cập nhật điểm BTVN và bài kiểm tra<br><strong>When</strong> backend kiểm tra quan hệ hiện tại<br><strong>Then</strong> chỉ Teacher chính được phép</td>
+<td>- Teacher thường bị từ chối<br>- Admin/Class Handler/Support không chấm thay<br>- Không ghi điểm trái quyền<br>- Ghi nhận người chấm hợp lệ</td>
+</tr>
+<tr>
+<td>Case 21: Đổi người chính không làm mất điểm cũ</td>
+<td>High</td>
+<td></td>
+<td>REQ05 / REQ06</td>
+<td>Role có quyền CRUD</td>
+<td>A đã chấm BTVN/bài kiểm tra; sau đó đổi chính sang B</td>
+<td><strong>Given</strong> điểm cũ có người chấm A<br><strong>When</strong> chuyển Phụ trách chính sang B<br><strong>Then</strong> giữ nguyên điểm và audit cũ</td>
+<td>- A không được nhập/cập nhật điểm mới sau khi mất quyền<br>- B được chấm BTVN/bài kiểm tra theo quyền mới<br>- Không đổi người chấm của dữ liệu lịch sử</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="popup-xac-nhan-xoa-giao-vien-khoi-lop">Popup xác nhận xóa giáo viên khỏi lớp</h3>
+<p><strong>Mô tả:</strong> Bấm icon thùng rác tại một dòng để xác nhận gỡ giáo viên khỏi lớp; không xóa tài khoản/hồ sơ giáo viên.</p>
+<p><strong>Giải thích thành phần:</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Thành phần</th>
+<th>Yêu cầu</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Tiêu đề</td>
+<td><code>Xóa giáo viên khỏi lớp?</code></td>
+</tr>
+<tr>
+<td>Nội dung thường</td>
+<td><code>Bạn có chắc chắn muốn xóa giáo viên {Tên giáo viên} khỏi lớp {Mã lớp}?</code></td>
+</tr>
+<tr>
+<td>Cảnh báo giáo viên chính</td>
+<td>Nếu đang là Phụ trách chính, bổ sung <code>Sau khi xóa, lớp sẽ không có giáo viên được quyền chấm điểm BTVN và bài kiểm tra cho đến khi gán phụ trách chính mới.</code></td>
+</tr>
+<tr>
+<td>Hủy</td>
+<td>Đóng popup, không thay đổi quan hệ.</td>
+</tr>
+<tr>
+<td>Xóa</td>
+<td>Xóa mềm quan hệ giáo viên–lớp sau khi backend kiểm tra lại quyền và trạng thái hiện tại.</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Điểm cần lưu ý:</strong></p>
+<ul>
+<li>Không xóa tài khoản giáo viên, điểm đã chấm, lương đã phát sinh, lịch sử hoặc dữ liệu buổi học đã hoàn thành.</li>
+<li>Sau khi xóa, giáo viên không còn được phân vào lịch/buổi mới của lớp; dữ liệu lịch sử vẫn giữ định danh giáo viên.</li>
+<li>Cho phép xóa giáo viên chính mà không cần chọn người thay thế. Sau khi xóa, lớp tạm thời không có giáo viên được chấm điểm BTVN/bài kiểm tra cho đến khi gán người mới.</li>
+<li>Request xóa lặp chỉ tạo một kết quả; không phát sinh lỗi vì quan hệ đã được xóa.</li>
+</ul>
+<h4 id="testcase-popup-xac-nhan-xoa-giao-vien-khoi-lop">Testcase — Popup xác nhận xóa giáo viên khỏi lớp</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 22: Hủy xóa giáo viên</td>
+<td>Medium</td>
+<td></td>
+<td>Flow 5 / REQ07</td>
+<td>Role có quyền CRUD</td>
+<td>Popup xác nhận đang mở</td>
+<td><strong>Given</strong> đúng giáo viên/lớp đang hiển thị<br><strong>When</strong> bấm <code>Hủy</code><br><strong>Then</strong> đóng popup</td>
+<td>- Không xóa quan hệ<br>- Checkbox/quyền giữ nguyên<br>- Không có Toast thành công</td>
+</tr>
+<tr>
+<td>Case 23: Xóa giáo viên thường khỏi lớp</td>
+<td>High</td>
+<td>Smoke</td>
+<td>Flow 5 / REQ07</td>
+<td>Role có quyền CRUD</td>
+<td>Giáo viên thuộc lớp và không phải chính</td>
+<td><strong>Given</strong> người dùng xác nhận xóa<br><strong>When</strong> backend xử lý thành công<br><strong>Then</strong> gỡ quan hệ khỏi lớp</td>
+<td>- Dòng biến mất khỏi danh sách hoạt động<br>- Tài khoản và lịch sử vẫn còn<br>- Không ảnh hưởng giáo viên chính<br>- Hiển thị Toast thành công</td>
+</tr>
+<tr>
+<td>Case 24: Xóa giáo viên phụ trách chính không cần người thay thế</td>
+<td>High</td>
+<td></td>
+<td>Flow 5 / REQ07</td>
+<td>Role có quyền CRUD</td>
+<td>Giáo viên đang là chính</td>
+<td><strong>Given</strong> popup hiển thị cảnh báo mất quyền chấm điểm<br><strong>When</strong> xác nhận xóa mà không chọn người thay thế<br><strong>Then</strong> gỡ quan hệ và quyền chính</td>
+<td>- Lớp được phép không có giáo viên chính<br>- Không giáo viên nào chấm BTVN/bài kiểm tra được<br>- Điểm/lịch sử cũ không bị xóa<br>- Danh sách phản ánh trạng thái mới</td>
+</tr>
+<tr>
+<td>Case 25: Từ chối xóa khi quan hệ đã đổi</td>
+<td>High</td>
+<td></td>
+<td>EX07 / REQ07</td>
+<td>Role có quyền CRUD</td>
+<td>Giáo viên đã bị xóa/chuyển bởi thao tác khác</td>
+<td><strong>Given</strong> popup đang giữ dữ liệu cũ<br><strong>When</strong> xác nhận<br><strong>Then</strong> backend xử lý idempotent hoặc yêu cầu tải lại</td>
+<td>- Không xóa nhầm giáo viên khác<br>- Không xóa tài khoản<br>- Không làm mất Phụ trách chính mới</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="ieu-huong-en-chi-tiet-giao-vien">Điều hướng đến Chi tiết giáo viên</h3>
+<p><strong>Mô tả:</strong> Bấm vào vùng giáo viên tại cột Tên mở đúng màn Chi tiết giáo viên.</p>
+<p><strong>Giải thích field/thành phần:</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Thành phần</th>
+<th>Yêu cầu</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Vùng bấm</td>
+<td>Tên/avatar/mã giáo viên; không bao gồm checkbox Phụ trách chính hoặc icon Xóa.</td>
+</tr>
+<tr>
+<td>Đích đến</td>
+<td>Màn Chi tiết giáo viên của đúng <code>teacher_id</code>; tab được xem/chỉnh theo quyền tại requirement Chi tiết giáo viên.</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Điểm cần lưu ý:</strong></p>
+<ul>
+<li>Không dùng tên/email/code làm định danh điều hướng.</li>
+<li>Bấm checkbox hoặc thùng rác không được điều hướng ngoài ý muốn.</li>
+<li>Nếu giáo viên không còn tồn tại/ngoài phạm vi, không mở hồ sơ khác thay thế.</li>
+</ul>
+<h4 id="testcase-ieu-huong-en-chi-tiet-giao-vien">Testcase — Điều hướng đến Chi tiết giáo viên</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 26: Mở đúng Chi tiết giáo viên</td>
+<td>High</td>
+<td></td>
+<td>Flow 1 / REQ08</td>
+<td>Role có quyền xem</td>
+<td>Danh sách có nhiều giáo viên</td>
+<td><strong>Given</strong> người dùng bấm giáo viên A<br><strong>When</strong> điều hướng<br><strong>Then</strong> mở Chi tiết của A</td>
+<td>- Dùng teacher_id của A<br>- Không mở B<br>- Tab/quyền theo requirement Chi tiết giáo viên</td>
+</tr>
+<tr>
+<td>Case 27: Checkbox và Xóa không kích hoạt điều hướng</td>
+<td>Medium</td>
+<td></td>
+<td>REQ08</td>
+<td>Role có quyền CRUD</td>
+<td>Một dòng đang hiển thị</td>
+<td><strong>Given</strong> người dùng bấm checkbox hoặc thùng rác<br><strong>When</strong> control nhận sự kiện<br><strong>Then</strong> chỉ mở flow tương ứng</td>
+<td>- Không mở Chi tiết<br>- Không thực hiện hai hành động đồng thời<br>- Đúng giáo viên được chọn</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="toast-phan-hoi-crud">Toast phản hồi CRUD</h3>
+<p align="center">
+  <a href="../../images/01-toast-crud.png"><img src="../../images/01-toast-crud.png" alt="Bốn trạng thái Toast CRUD" width="520" title="Nhấn để xem ảnh gốc"></a><br>
+  <em>Toast phản hồi thêm, tạo, đổi phụ trách và xóa giáo viên — nhấn để xem ảnh gốc</em>
+</p>
+
+<p><strong>Mô tả:</strong> Phản hồi kết quả các thao tác thay đổi dữ liệu tại tab Giáo viên.</p>
+<p><strong>Giải thích thành phần:</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Loại</th>
+<th>Tiêu đề</th>
+<th>Ví dụ nội dung</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Thành công</td>
+<td><code>Thành Công</code></td>
+<td><code>Đã thêm giáo viên vào lớp.</code>, <code>Đã cập nhật giáo viên phụ trách chính.</code>, <code>Đã xóa giáo viên khỏi lớp.</code></td>
+</tr>
+<tr>
+<td>Thông tin</td>
+<td><code>Thông Báo</code></td>
+<td>Dữ liệu quan hệ/lịch cần thời gian đồng bộ.</td>
+</tr>
+<tr>
+<td>Cảnh báo</td>
+<td><code>Cảnh Báo</code></td>
+<td>Giáo viên đã thuộc lớp, không còn hợp lệ hoặc có xung đột.</td>
+</tr>
+<tr>
+<td>Lỗi</td>
+<td><code>Có Lỗi Xảy Ra</code></td>
+<td>Backend/network không hoàn tất thao tác.</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Điểm cần lưu ý:</strong></p>
+<ul>
+<li>Chỉ hiển thị sau khi backend xác nhận; mỗi thao tác logic có tối đa một Toast.</li>
+<li>Hủy, xem danh sách hoặc điều hướng Chi tiết không có Toast CRUD.</li>
+<li>Nội dung không hiển thị mật khẩu, token, stack trace hoặc dữ liệu kỹ thuật nhạy cảm.</li>
+</ul>
+<h4 id="testcase-toast-phan-hoi-crud">Testcase — Toast phản hồi CRUD</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Toast Case 1: Thành công</td>
+<td>High</td>
+<td></td>
+<td>Ràng buộc Toast CRUD</td>
+<td>Role có quyền CRUD</td>
+<td>Thao tác hợp lệ</td>
+<td><strong>Given</strong> người dùng xác nhận thay đổi<br><strong>When</strong> backend thành công<br><strong>Then</strong> hiển thị Toast <code>Thành Công</code></td>
+<td>- Đúng nội dung nghiệp vụ<br>- Đúng một Toast<br>- Dữ liệu đã được lưu</td>
+</tr>
+<tr>
+<td>Toast Case 2: Cảnh báo</td>
+<td>High</td>
+<td></td>
+<td>Ràng buộc Toast CRUD</td>
+<td>Role có quyền CRUD</td>
+<td>Dữ liệu/điều kiện chưa hợp lệ</td>
+<td><strong>Given</strong> giáo viên trùng/hết hiệu lực/xung đột<br><strong>When</strong> xác nhận<br><strong>Then</strong> hiển thị <code>Cảnh Báo</code> khi flow dùng Toast validation</td>
+<td>- Không lưu sai<br>- Nêu nguyên nhân người dùng xử lý được<br>- Không hiện thành công</td>
+</tr>
+<tr>
+<td>Toast Case 3: Lỗi</td>
+<td>High</td>
+<td></td>
+<td>Ràng buộc Toast CRUD</td>
+<td>Role có quyền CRUD</td>
+<td>Backend/network lỗi</td>
+<td><strong>Given</strong> request hợp lệ đã gửi<br><strong>When</strong> xử lý thất bại<br><strong>Then</strong> hiển thị <code>Có Lỗi Xảy Ra</code></td>
+<td>- Không cập nhật một phần<br>- Cho thử lại<br>- Không lộ lỗi kỹ thuật</td>
+</tr>
+<tr>
+<td>Toast Case 4: Thông tin, đóng và chống lặp</td>
+<td>Medium</td>
+<td></td>
+<td>Ràng buộc Toast CRUD</td>
+<td>Role có quyền CRUD</td>
+<td>Đang đồng bộ hoặc callback lặp</td>
+<td><strong>Given</strong> dữ liệu chưa đồng bộ xong hoặc bấm lặp<br><strong>When</strong> UI nhận trạng thái/bấm <code>×</code><br><strong>Then</strong> tối đa một Toast <code>Thông Báo</code> và cho đóng</td>
+<td>- Không báo thành công sớm<br>- Không nhân đôi Toast<br>- Đóng không hoàn tác dữ liệu</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="2-yeu-cau">2. Yêu cầu</h2>
+<h3 id="21-flow-chinh">2.1. Flow chính</h3>
+<p><strong>Flow 1 / REQ01, REQ08: Xem danh sách và mở Chi tiết</strong></p>
+<pre><code class="language-text">Admin/Class Handler/Support mở Chi tiết lớp → tab Giáo viên
+      → Backend kiểm tra quyền/phạm vi và tải quan hệ giáo viên–lớp
+      → Hiển thị Tên, Mã, Email, Phụ trách chính, Xóa
+      → Bấm giáo viên: mở đúng Chi tiết giáo viên theo teacher_id
+</code></pre>
+<p><strong>Flow 2 / REQ02–REQ03: Thêm giáo viên hiện có</strong></p>
+<pre><code class="language-text">Bấm Thêm giáo viên vào lớp → Chọn giáo viên
+      → Tìm theo tên/mã → chọn một/nhiều giáo viên hợp lệ
+      → Bấm Thêm mới
+      → Backend kiểm tra quyền, trạng thái, phạm vi và quan hệ trùng
+      → Hợp lệ: thêm nguyên tử, cập nhật danh sách và Toast
+      → Không hợp lệ: không thêm một phần, trả phần tử cần chọn lại
+</code></pre>
+<p><strong>Flow 3 / REQ04: Tạo giáo viên mới và thêm vào lớp</strong></p>
+<pre><code class="language-text">Bấm Thêm giáo viên vào lớp → Tạo giáo viên mới
+      → Mở popup dùng chung module Giáo viên
+      → Nhập thông tin, chọn Training/Chính thức/Thử việc, nhập Ghi chú
+      → Backend sinh Code, tạo role Teacher và audit
+      → Tạo thành công: gắn teacher_id mới vào lớp
+      → Chỉ khi quan hệ lớp thành công mới hiển thị dòng trong tab
+</code></pre>
+<p><strong>Flow 4 / REQ05–REQ06: Đổi Giáo viên phụ trách chính</strong></p>
+<pre><code class="language-text">Role CRUD tick giáo viên B
+      → Backend kiểm tra B đang thuộc lớp/còn hiệu lực
+      → Trong một giao dịch: bỏ cờ chính ở A (nếu có) và gán B
+      → Sau commit: chỉ B được chấm điểm BTVN/bài kiểm tra; A mất quyền
+      → Điểm/lịch sử cũ giữ nguyên người chấm
+</code></pre>
+<p><strong>Flow 5 / REQ07: Xóa giáo viên khỏi lớp</strong></p>
+<pre><code class="language-text">Bấm icon Xóa → mở popup đúng giáo viên/lớp
+      → Nếu là người chính: cảnh báo mất quyền chấm BTVN/bài kiểm tra; không bắt chọn người thay thế
+      → Hủy: không thay đổi
+      → Xóa: backend xóa mềm quan hệ, giữ tài khoản và lịch sử
+      → Nếu xóa người chính: lớp không có quyền chấm cho đến khi gán người mới
+</code></pre>
+<h3 id="22-ngoai-le">2.2. Ngoại lệ</h3>
+<ul>
+<li><strong>EX01:</strong> Role ngoài <code>Admin</code>, <code>Class Handler</code>, <code>Support</code> hoặc người dùng ngoài phạm vi gửi request CRUD → backend từ chối và không thay đổi dữ liệu.</li>
+<li><strong>EX02:</strong> Cùng giáo viên được thêm lặp/đồng thời → chỉ tồn tại một quan hệ hoạt động trong lớp.</li>
+<li><strong>EX03:</strong> Giáo viên đã thuộc lớp, <code>Nghỉ việc</code>, tài khoản/hồ sơ không còn hiệu lực hoặc ngoài phạm vi → không hiển thị như lựa chọn hợp lệ và không được thêm. Nếu trạng thái thay đổi sau khi popup tải, backend từ chối toàn bộ multi-select để không tạo dữ liệu một phần.</li>
+<li><strong>EX04:</strong> Dữ liệu tạo giáo viên sai/trùng, trạng thái không thuộc <code>Training</code>/<code>Chính thức</code>/<code>Thử việc</code> hoặc client gửi <code>Nghỉ việc</code>/<code>Testing</code> → từ chối tạo.</li>
+<li><strong>EX05:</strong> Tạo hồ sơ thành công nhưng liên kết lớp thất bại → không hiển thị quan hệ giả, không tạo lại tài khoản trùng và trả hướng xử lý rõ ràng.</li>
+<li><strong>EX06:</strong> Hai request cùng gán Phụ trách chính → backend/database bảo đảm tối đa một người chính và trả dữ liệu mới nhất cho request xung đột.</li>
+<li><strong>EX07:</strong> Giáo viên bị xóa/chuyển quan hệ trong lúc popup đang mở → không xóa nhầm tài khoản/giáo viên khác hoặc làm mất người chính mới.</li>
+<li><strong>EX08:</strong> Giáo viên không phải Phụ trách chính hoặc role quản lý gửi request nhập/cập nhật điểm BTVN hay bài kiểm tra → backend từ chối và không ghi dữ liệu điểm.</li>
+</ul>
+<h3 id="23-yeu-cau-khac">2.3. Yêu cầu khác</h3>
+<ul>
+<li><strong>REQ01 – Danh sách giáo viên lớp:</strong> Hiển thị Tên, Mã, Email, Phụ trách chính và Xóa từ quan hệ giáo viên–lớp; cho phép 0, 1 hoặc nhiều giáo viên nhưng không trùng.</li>
+<li><strong>REQ02 – Điểm vào thêm:</strong> <code>Thêm giáo viên vào lớp</code> mở đúng hai flow <code>Chọn giáo viên</code> và <code>Tạo giáo viên mới</code>; chỉ Admin/Class Handler/Support được thao tác.</li>
+<li><strong>REQ03 – Chọn giáo viên hiện có:</strong> Tìm theo tên/mã và hỗ trợ multi-select. Danh sách chỉ trả giáo viên <code>Training</code>, <code>Chính thức</code>, <code>Thử việc</code> còn hiệu lực và chưa thuộc lớp. Không có trạng thái Testing. Giáo viên <code>Nghỉ việc</code> không xuất hiện ngay cả khi tìm đúng tên/mã; backend từ chối teacher_id Nghỉ việc gửi trực tiếp.</li>
+<li><strong>REQ04 – Tạo giáo viên:</strong> Dùng chung popup/rule module Giáo viên, bổ sung Trạng thái và Ghi chú; Code do backend sinh; role cố định Teacher; tạo xong tự gắn lớp, không tự làm Phụ trách chính.</li>
+<li><strong>REQ05 – Duy nhất Phụ trách chính:</strong> Mỗi lớp có tối đa một Giáo viên phụ trách chính. Giáo viên đầu tiên không tự thành người chính; phải được tick thủ công. Chuyển người chính phải bỏ người cũ và gán người mới trong một giao dịch. Cho phép lớp tạm thời không có người chính.</li>
+<li><strong>REQ06 – Quyền chấm điểm:</strong> Chỉ tài khoản Teacher đang là Phụ trách chính hiện tại của lớp được nhập/cập nhật điểm BTVN và bài kiểm tra. Role quản lý không được chấm thay. Giáo viên không được xem tab quản lý này. Điểm và audit cũ không đổi khi chuyển người chính.</li>
+<li><strong>REQ07 – Xóa khỏi lớp:</strong> Xóa mềm quan hệ, không xóa tài khoản, điểm, lương, lịch sử hoặc dữ liệu buổi đã hoàn thành. Cho phép xóa người chính không cần người thay thế; lớp không có quyền chấm BTVN/bài kiểm tra cho đến khi gán mới.</li>
+<li><strong>REQ08 – Điều hướng:</strong> Bấm giáo viên mở đúng Chi tiết theo teacher_id và quyền module Giáo viên; checkbox/Xóa không kích hoạt điều hướng.</li>
+<li><strong>REQ09 – Audit và an toàn:</strong> Lưu người/thời điểm cho thêm, tạo, đổi phụ trách, xóa; không tin role/trạng thái/ID do client tự khai; không lộ mật khẩu hoặc lỗi kỹ thuật.</li>
+</ul>
+<h3 id="24-rang-buoc">2.4. Ràng buộc</h3>
+<h4 id="quyen">Quyền</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Role</th>
+<th style="text-align: center;">Xem tab</th>
+<th style="text-align: center;">Chọn/thêm giáo viên</th>
+<th style="text-align: center;">Tạo giáo viên từ lớp</th>
+<th style="text-align: center;">Đổi Phụ trách chính</th>
+<th style="text-align: center;">Xóa khỏi lớp</th>
+<th style="text-align: center;">Chấm điểm BTVN/kiểm tra</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Admin</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">❌</td>
+</tr>
+<tr>
+<td>Class Handler</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">❌</td>
+</tr>
+<tr>
+<td>Support</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">❌</td>
+</tr>
+<tr>
+<td>Teacher đang là Phụ trách chính</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">✅ (chỉ BTVN/kiểm tra)</td>
+</tr>
+<tr>
+<td>Teacher khác/role khác</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+</tr>
+</tbody>
+</table></div>
+<h4 id="tinh-toan-ven-du-lieu">Tính toàn vẹn dữ liệu</h4>
+<ul>
+<li>Dùng <code>class_id</code>, <code>teacher_id</code> và ID quan hệ bất biến; không dùng tên/email/code làm khóa cập nhật.</li>
+<li>Có unique constraint cho một quan hệ giáo viên–lớp hoạt động và ràng buộc tối đa một giáo viên chính trên mỗi lớp.</li>
+<li>Thêm nhiều giáo viên và chuyển người chính phải nguyên tử; thao tác gửi lặp phải idempotent.</li>
+<li>Xóa quan hệ không được cascade xóa tài khoản, điểm, lịch sử, lương hoặc lịch dạy đã hoàn thành.</li>
+<li>Mọi endpoint nhập/cập nhật điểm BTVN và bài kiểm tra kiểm tra quyền từ dữ liệu quan hệ mới nhất tại backend, không tin cờ <code>is_primary</code> do client gửi.</li>
+</ul>
+<hr>
+<h2 id="3-can-xac-nhan">3. Cần xác nhận</h2>
+<ul>
+<li>Không còn nội dung nghiệp vụ cần xác nhận cho phạm vi Tab Giáo viên tại thời điểm cập nhật requirement này.</li>
+</ul>
+</article>
+    <p class="source-note">Nguồn: class_detail_teachers_requirements.md · SHA-256 294b751be976d25d9a44790552875682028d9e51c7cf60987b9ef22292e00d94</p>
+  </main>
+  <script>
+    const article = document.getElementById('document');
+    const nav = document.getElementById('docNav');
+    const headings = [...article.querySelectorAll('h2')];
+    headings.forEach((heading, index) => {
+      const link = document.createElement('a');
+      link.href = `#${heading.id}`;
+      const number = document.createElement('span');
+      number.className = 'nav-num';
+      number.textContent = String(index + 1).padStart(2, '0');
+      link.append(number, document.createTextNode(heading.textContent));
+      nav.append(link);
+    });
+
+    const navLinks = [...nav.querySelectorAll('a')];
+    const observer = new IntersectionObserver(entries => {
+      const current = entries.filter(item => item.isIntersecting).sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
+      if (!current) return;
+      navLinks.forEach(link => link.classList.toggle('active', link.hash === `#${current.target.id}`));
+    }, {rootMargin: '-18% 0px -68% 0px', threshold: [0, .2, .5]});
+    headings.forEach(heading => observer.observe(heading));
+    if (navLinks[0]) navLinks[0].classList.add('active');
+
+    const testcaseHeadings = [...article.querySelectorAll('h4, h5')]
+      .filter(heading => heading.textContent.trim().startsWith('Testcase'));
+    const testcaseGroups = testcaseHeadings
+      .map(heading => ({heading, tableWrap: heading.nextElementSibling}))
+      .filter(group => group.tableWrap?.classList.contains('table-wrap'));
+    if (testcaseGroups.length) {
+        const tableWraps = testcaseGroups.map(group => group.tableWrap);
+        tableWraps.forEach(tableWrap => tableWrap.classList.add('testcase-table'));
+        const rows = tableWraps.flatMap(tableWrap => [...tableWrap.querySelectorAll('tbody tr')]);
+        const tools = document.createElement('div');
+        tools.className = 'case-tools';
+        const input = document.createElement('input');
+        input.type = 'search';
+        input.placeholder = 'Tìm testcase, Flow, REQ, EX hoặc nội dung…';
+        input.setAttribute('aria-label', 'Tìm testcase');
+        const count = document.createElement('span');
+        count.className = 'case-count';
+        tools.append(input, count);
+        testcaseGroups[0].heading.before(tools);
+        const filterRows = () => {
+          const query = input.value.trim().toLocaleLowerCase('vi');
+          let visible = 0;
+          rows.forEach(row => {
+            const match = !query || row.textContent.toLocaleLowerCase('vi').includes(query);
+            row.hidden = !match;
+            if (match) visible += 1;
+          });
+          testcaseGroups.forEach(({heading, tableWrap}) => {
+            const hasVisibleRow = [...tableWrap.querySelectorAll('tbody tr')]
+              .some(row => !row.hidden);
+            heading.hidden = !hasVisibleRow;
+            tableWrap.hidden = !hasVisibleRow;
+          });
+          count.textContent = `${visible}/${rows.length} testcase`;
+        };
+        input.addEventListener('input', filterRows);
+        filterRows();
+    }
+  </script>
+</body>
+</html>

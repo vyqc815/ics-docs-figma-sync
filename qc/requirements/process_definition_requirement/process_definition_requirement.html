@@ -1,0 +1,1410 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Requirement Define quy trình — cấu hình Action Board nguồn">
+  <link rel="icon" href="data:,">
+  <title>Define quy trình — Requirement</title>
+  <style>
+    :root {
+      --orange-700: #c83f00;
+      --orange-600: #e84c00;
+      --orange-500: #f45b0a;
+      --orange-400: #ff7a32;
+      --orange-100: #fff0e8;
+      --orange-50: #fff8f4;
+      --navy-950: #101828;
+      --navy-900: #172033;
+      --navy-800: #243047;
+      --slate-700: #344054;
+      --slate-600: #475467;
+      --slate-500: #667085;
+      --slate-400: #98a2b3;
+      --slate-300: #d0d5dd;
+      --slate-200: #e4e7ec;
+      --slate-100: #f2f4f7;
+      --slate-50: #f8fafc;
+      --white: #ffffff;
+      --green: #159447;
+      --blue: #2154c5;
+      --yellow: #b77900;
+      --red: #c92a2a;
+      --purple: #6941c6;
+      --shadow-sm: 0 1px 2px rgba(16, 24, 40, .06);
+      --shadow-md: 0 12px 32px rgba(16, 24, 40, .10);
+      --shadow-lg: 0 24px 64px rgba(16, 24, 40, .16);
+      --radius-sm: 10px;
+      --radius: 16px;
+      --radius-lg: 24px;
+      --sidebar: 286px;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      color: var(--navy-950);
+      background:
+        radial-gradient(circle at 88% 5%, rgba(244, 91, 10, .10), transparent 24rem),
+        var(--slate-50);
+      font: 15px/1.65 Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      text-rendering: optimizeLegibility;
+    }
+    a { color: inherit; }
+    img { max-width: 100%; }
+    button, input, select { font: inherit; }
+    code {
+      padding: .12rem .38rem;
+      border: 1px solid #fed7c3;
+      border-radius: 6px;
+      color: var(--orange-700);
+      background: var(--orange-50);
+      font: 600 .9em ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    }
+
+    .skip-link {
+      position: fixed;
+      z-index: 999;
+      top: 12px;
+      left: 12px;
+      padding: 10px 14px;
+      border-radius: 9px;
+      color: var(--white);
+      background: var(--navy-950);
+      transform: translateY(-150%);
+    }
+    .skip-link:focus { transform: none; }
+
+    .sidebar {
+      position: fixed;
+      z-index: 30;
+      inset: 0 auto 0 0;
+      width: var(--sidebar);
+      padding: 22px 18px;
+      overflow-y: auto;
+      color: #f8fafc;
+      background:
+        linear-gradient(155deg, rgba(255, 122, 50, .24), transparent 26%),
+        linear-gradient(180deg, #192338 0%, #111827 100%);
+      border-right: 1px solid rgba(255, 255, 255, .08);
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 4px 8px 22px;
+      border-bottom: 1px solid rgba(255, 255, 255, .10);
+    }
+    .brand-mark {
+      display: grid;
+      width: 44px;
+      height: 44px;
+      place-items: center;
+      border-radius: 14px;
+      color: var(--white);
+      background: linear-gradient(135deg, var(--orange-400), var(--orange-600));
+      box-shadow: 0 10px 26px rgba(244, 91, 10, .35);
+      font-weight: 900;
+      letter-spacing: -.06em;
+    }
+    .brand strong { display: block; font-size: 16px; }
+    .brand small { color: #aeb8c9; }
+    .nav-title {
+      margin: 24px 10px 8px;
+      color: #8f9aae;
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+    .nav { display: grid; gap: 4px; }
+    .nav a {
+      display: flex;
+      align-items: center;
+      gap: 11px;
+      padding: 10px 12px;
+      border-radius: 10px;
+      color: #cbd5e1;
+      text-decoration: none;
+      transition: .18s ease;
+    }
+    .nav a:hover, .nav a.active {
+      color: var(--white);
+      background: rgba(255, 255, 255, .09);
+    }
+    .nav a.active { box-shadow: inset 3px 0 var(--orange-400); }
+    .nav-num {
+      display: grid;
+      width: 25px;
+      height: 25px;
+      flex: 0 0 auto;
+      place-items: center;
+      border: 1px solid rgba(255, 255, 255, .15);
+      border-radius: 8px;
+      font-size: 11px;
+      font-weight: 800;
+    }
+    .sidebar-footer {
+      margin-top: 26px;
+      padding: 14px;
+      border: 1px solid rgba(255, 255, 255, .10);
+      border-radius: 14px;
+      color: #aeb8c9;
+      background: rgba(255, 255, 255, .04);
+      font-size: 12px;
+    }
+    .sidebar-footer a { color: #ffd8c5; }
+
+    main {
+      width: min(1500px, calc(100% - var(--sidebar)));
+      margin-left: var(--sidebar);
+      padding: 34px clamp(24px, 4vw, 64px) 80px;
+    }
+    section { scroll-margin-top: 24px; }
+    .hero {
+      position: relative;
+      padding: clamp(30px, 5vw, 56px);
+      overflow: hidden;
+      border: 1px solid rgba(255, 255, 255, .08);
+      border-radius: var(--radius-lg);
+      color: var(--white);
+      background:
+        linear-gradient(105deg, rgba(16, 24, 40, .97) 0%, rgba(23, 32, 51, .94) 62%, rgba(109, 45, 9, .90) 100%);
+      box-shadow: var(--shadow-lg);
+    }
+    .hero::after {
+      content: "";
+      position: absolute;
+      width: 360px;
+      height: 360px;
+      top: -190px;
+      right: -80px;
+      border: 70px solid rgba(255, 122, 50, .15);
+      border-radius: 50%;
+    }
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 10px;
+      border: 1px solid rgba(255, 255, 255, .15);
+      border-radius: 999px;
+      color: #ffd8c5;
+      background: rgba(255, 255, 255, .06);
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+    .hero h1 {
+      max-width: 900px;
+      margin: 18px 0 12px;
+      font-size: clamp(34px, 5vw, 64px);
+      line-height: 1.03;
+      letter-spacing: -.045em;
+    }
+    .hero p { max-width: 780px; margin: 0; color: #cbd5e1; font-size: 17px; }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 25px; }
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      min-height: 42px;
+      padding: 9px 14px;
+      border: 1px solid transparent;
+      border-radius: 10px;
+      color: var(--white);
+      background: var(--orange-500);
+      text-decoration: none;
+      cursor: pointer;
+      transition: .18s ease;
+    }
+    .button:hover { transform: translateY(-1px); background: var(--orange-600); }
+    .button.secondary { border-color: rgba(255, 255, 255, .15); background: rgba(255, 255, 255, .07); }
+    .button.ghost { color: var(--slate-700); border-color: var(--slate-300); background: var(--white); }
+    .button.small { min-height: 36px; padding: 7px 11px; font-size: 13px; }
+
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 14px;
+      margin-top: 18px;
+    }
+    .stat {
+      padding: 18px;
+      border: 1px solid var(--slate-200);
+      border-radius: var(--radius);
+      background: rgba(255, 255, 255, .86);
+      box-shadow: var(--shadow-sm);
+    }
+    .stat strong { display: block; color: var(--orange-600); font-size: 30px; line-height: 1; }
+    .stat span { display: block; margin-top: 7px; color: var(--slate-600); font-weight: 650; }
+
+    .section-head {
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 24px;
+      margin: 64px 0 20px;
+    }
+    .section-kicker {
+      margin: 0 0 6px;
+      color: var(--orange-600);
+      font-size: 12px;
+      font-weight: 850;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+    .section-head h2 { margin: 0; font-size: clamp(27px, 4vw, 40px); letter-spacing: -.035em; }
+    .section-head p { max-width: 600px; margin: 8px 0 0; color: var(--slate-600); }
+
+    .panel {
+      padding: clamp(20px, 3vw, 30px);
+      border: 1px solid var(--slate-200);
+      border-radius: var(--radius-lg);
+      background: var(--white);
+      box-shadow: var(--shadow-sm);
+    }
+    .panel + .panel { margin-top: 18px; }
+    .panel h3 { margin: 0 0 14px; font-size: 21px; letter-spacing: -.02em; }
+    .panel h4 { margin: 26px 0 10px; }
+    .muted { color: var(--slate-600); }
+    .note {
+      padding: 15px 17px;
+      border-left: 4px solid var(--orange-500);
+      border-radius: 0 12px 12px 0;
+      color: var(--slate-700);
+      background: var(--orange-50);
+    }
+
+    .mockup {
+      position: relative;
+      padding: 12px;
+      border: 1px solid var(--slate-200);
+      border-radius: 18px;
+      background: linear-gradient(145deg, #fff, #f4f6f9);
+      box-shadow: var(--shadow-md);
+    }
+    .mockup a { display: block; overflow: hidden; border-radius: 12px; }
+    .mockup img { display: block; width: 100%; transition: transform .3s ease; }
+    .mockup a:hover img { transform: scale(1.01); }
+    .mockup figcaption { padding: 12px 4px 2px; color: var(--slate-600); font-size: 13px; }
+
+    .grid-2 { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
+    .grid-3 { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+    .grid-4 { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 14px; }
+    .card {
+      padding: 18px;
+      border: 1px solid var(--slate-200);
+      border-radius: var(--radius);
+      background: var(--white);
+      box-shadow: var(--shadow-sm);
+    }
+    .card h3, .card h4 { margin: 0 0 8px; }
+    .card p { margin: 0; color: var(--slate-600); }
+    .card-accent { border-top: 4px solid var(--orange-500); }
+
+    .column-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+    .column-item {
+      min-height: 124px;
+      padding: 15px;
+      border: 1px solid var(--slate-200);
+      border-radius: 14px;
+      background: var(--slate-50);
+    }
+    .column-item strong { display: block; margin-bottom: 5px; color: var(--navy-900); }
+    .column-item span { color: var(--slate-600); font-size: 13px; }
+
+    .status-card { display: flex; align-items: center; gap: 12px; }
+    .status-card img { width: 42px; height: 42px; }
+    .status-card small { display: block; color: var(--slate-500); }
+
+    .tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      padding: 4px 9px;
+      border-radius: 999px;
+      color: var(--orange-700);
+      background: var(--orange-100);
+      font-size: 12px;
+      font-weight: 800;
+    }
+    .tag.high { color: #9d174d; background: #fce7f3; }
+    .tag.medium { color: #92400e; background: #fef3c7; }
+    .tag.req { color: #3730a3; background: #e0e7ff; }
+    .tag.ex { color: #b42318; background: #fee4e2; }
+
+    .flow-list { display: grid; gap: 14px; counter-reset: flow; }
+    .flow {
+      position: relative;
+      padding: 22px 22px 22px 68px;
+      border: 1px solid var(--slate-200);
+      border-radius: var(--radius);
+      background: var(--white);
+    }
+    .flow::before {
+      counter-increment: flow;
+      content: counter(flow, decimal-leading-zero);
+      position: absolute;
+      top: 20px;
+      left: 18px;
+      display: grid;
+      width: 36px;
+      height: 36px;
+      place-items: center;
+      border-radius: 11px;
+      color: var(--white);
+      background: var(--orange-500);
+      font-weight: 900;
+    }
+    .flow h3 { margin: 0 0 8px; }
+    .flow ol { margin: 0; padding-left: 20px; color: var(--slate-700); }
+
+    .exception { border-left: 4px solid #ef4444; }
+    .exception strong { color: var(--red); }
+
+    .formula-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; }
+    .formula {
+      padding: 18px;
+      border: 1px solid #ffd6c2;
+      border-radius: 16px;
+      background: linear-gradient(160deg, #fff, var(--orange-50));
+    }
+    .formula h4 { margin: 0 0 12px; color: var(--orange-700); }
+    .fraction { display: grid; justify-items: center; color: var(--navy-900); font-weight: 720; text-align: center; }
+    .fraction .top { padding: 0 10px 7px; border-bottom: 2px solid var(--navy-800); }
+    .fraction .bottom { padding-top: 7px; }
+    .formula .teacher { margin-top: 16px; padding-top: 12px; border-top: 1px dashed #f5b896; color: var(--slate-600); font-size: 13px; }
+
+    .filters {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      align-items: center;
+      padding: 14px;
+      border: 1px solid var(--slate-200);
+      border-radius: 14px;
+      background: var(--white);
+      position: sticky;
+      top: 10px;
+      z-index: 10;
+      box-shadow: var(--shadow-md);
+    }
+    .search {
+      min-width: min(100%, 320px);
+      flex: 1 1 260px;
+      height: 42px;
+      padding: 0 13px;
+      border: 1px solid var(--slate-300);
+      border-radius: 10px;
+      color: var(--navy-950);
+      background: var(--white);
+      outline: none;
+    }
+    .search:focus { border-color: var(--orange-500); box-shadow: 0 0 0 4px rgba(244, 91, 10, .12); }
+    .testcases { display: grid; gap: 10px; margin-top: 16px; }
+    .testcase {
+      border: 1px solid var(--slate-200);
+      border-radius: 14px;
+      background: var(--white);
+      overflow: clip;
+    }
+    .testcase[hidden] { display: none; }
+    .testcase summary {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 15px 17px;
+      cursor: pointer;
+      list-style: none;
+    }
+    .testcase summary::-webkit-details-marker { display: none; }
+    .testcase summary::after { content: "+"; margin-left: auto; color: var(--orange-600); font-size: 22px; font-weight: 700; }
+    .testcase[open] summary::after { content: "−"; }
+    .testcase-title { min-width: 0; font-weight: 780; }
+    .case-body {
+      display: grid;
+      grid-template-columns: minmax(180px, .7fr) minmax(0, 1.3fr);
+      gap: 18px;
+      padding: 18px;
+      border-top: 1px solid var(--slate-200);
+      background: var(--slate-50);
+    }
+    .case-meta { color: var(--slate-600); }
+    .case-meta div + div { margin-top: 8px; }
+    .case-steps { display: grid; gap: 10px; }
+    .step { padding: 10px 12px; border-left: 3px solid var(--orange-400); background: var(--white); }
+    .expected { margin: 14px 0 0; padding-left: 20px; }
+    .expected li + li { margin-top: 4px; }
+    .empty-filter { display: none; padding: 28px; color: var(--slate-600); text-align: center; }
+
+    .question-list { display: grid; gap: 10px; margin: 0; padding: 0; counter-reset: question; list-style: none; }
+    .question-list li {
+      position: relative;
+      padding: 14px 16px 14px 54px;
+      border: 1px solid #f4d8a4;
+      border-radius: 13px;
+      background: #fffbeb;
+      color: #664d03;
+    }
+    .question-list li::before {
+      counter-increment: question;
+      content: counter(question);
+      position: absolute;
+      top: 12px;
+      left: 14px;
+      display: grid;
+      width: 28px;
+      height: 28px;
+      place-items: center;
+      border-radius: 9px;
+      color: #fff;
+      background: #d99100;
+      font-weight: 850;
+    }
+
+    .footer {
+      margin-top: 64px;
+      padding-top: 24px;
+      border-top: 1px solid var(--slate-200);
+      color: var(--slate-500);
+      text-align: center;
+    }
+
+    @media (max-width: 1120px) {
+      :root { --sidebar: 244px; }
+      .column-grid, .grid-3, .formula-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .stats { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
+    @media (max-width: 780px) {
+      .sidebar { position: static; width: auto; padding: 14px; }
+      .brand { padding-bottom: 12px; }
+      .nav-title, .sidebar-footer { display: none; }
+      .nav { display: flex; overflow-x: auto; padding-top: 10px; }
+      .nav a { flex: 0 0 auto; }
+      main { width: 100%; margin: 0; padding: 18px 14px 60px; }
+      .hero { border-radius: 18px; }
+      .grid-2, .grid-3, .grid-4, .column-grid, .formula-grid, .case-body { grid-template-columns: 1fr; }
+      .section-head { align-items: start; flex-direction: column; }
+      .filters { position: static; }
+    }
+    @media print {
+      body { background: #fff; font-size: 11px; }
+      .sidebar, .hero-actions, .filters, .skip-link { display: none !important; }
+      main { width: 100%; margin: 0; padding: 0; }
+      .hero { color: #111; background: #fff; border: 2px solid #111; box-shadow: none; }
+      .hero p { color: #333; }
+      .panel, .card, .stat, .mockup, .testcase { break-inside: avoid; box-shadow: none; }
+      .section-head { margin-top: 32px; }
+      .testcase { display: block !important; }
+      .testcase summary::after { display: none; }
+      .testcase:not([open]) .case-body { display: grid; }
+    }
+
+    .doc-shell { min-width: 0; }
+    .doc-toolbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      margin-bottom: 18px;
+      padding: 14px 16px;
+      border: 1px solid var(--slate-200);
+      border-radius: 14px;
+      background: rgba(255,255,255,.92);
+      box-shadow: var(--shadow-sm);
+    }
+    .doc-toolbar-left, .doc-toolbar-right { display: flex; flex-wrap: wrap; align-items: center; gap: 9px; }
+    .sync-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      padding: 6px 10px;
+      border-radius: 999px;
+      color: #067647;
+      background: #ecfdf3;
+      border: 1px solid #abefc6;
+      font-size: 12px;
+      font-weight: 800;
+    }
+    .sync-badge::before { content: "✓"; }
+    .hash { color: var(--slate-500); font: 12px ui-monospace, SFMono-Regular, Menlo, monospace; }
+    .markdown-body {
+      padding: clamp(24px, 4vw, 54px);
+      border: 1px solid var(--slate-200);
+      border-radius: var(--radius-lg);
+      background: var(--white);
+      box-shadow: var(--shadow-md);
+      overflow: hidden;
+    }
+    .markdown-body > h1 {
+      position: relative;
+      margin: -54px -54px 42px;
+      padding: 62px 54px 54px;
+      color: var(--white);
+      background:
+        radial-gradient(circle at 88% 10%, rgba(255,122,50,.36), transparent 20rem),
+        linear-gradient(115deg, var(--navy-950), #243047 68%, #713209);
+      font-size: clamp(34px, 5vw, 62px);
+      line-height: 1.05;
+      letter-spacing: -.045em;
+    }
+    .markdown-body h2 {
+      margin: 70px 0 24px;
+      padding: 0 0 13px;
+      border-bottom: 2px solid var(--slate-200);
+      font-size: clamp(27px, 4vw, 39px);
+      line-height: 1.15;
+      letter-spacing: -.035em;
+      scroll-margin-top: 24px;
+    }
+    .markdown-body h2::first-letter { color: var(--orange-600); }
+    .markdown-body h3 {
+      margin: 38px 0 16px;
+      color: var(--navy-900);
+      font-size: 23px;
+      line-height: 1.25;
+      letter-spacing: -.02em;
+      scroll-margin-top: 24px;
+    }
+    .markdown-body h4 {
+      margin: 28px 0 12px;
+      color: var(--orange-700);
+      font-size: 17px;
+      scroll-margin-top: 24px;
+    }
+    .markdown-body p { margin: 12px 0; }
+    .markdown-body strong { color: var(--navy-900); }
+    .markdown-body ul, .markdown-body ol { padding-left: 1.35rem; }
+    .markdown-body li { margin: 6px 0; }
+    .markdown-body li::marker { color: var(--orange-500); font-weight: 800; }
+    .markdown-body hr {
+      height: 1px;
+      margin: 48px 0;
+      border: 0;
+      background: linear-gradient(90deg, transparent, var(--slate-300), transparent);
+    }
+    .markdown-body > p[align="center"] {
+      margin: 22px 0 28px;
+      padding: 12px;
+      border: 1px solid var(--slate-200);
+      border-radius: 18px;
+      background: linear-gradient(145deg, #fff, #f5f7fa);
+      box-shadow: var(--shadow-md);
+    }
+    .markdown-body > p[align="center"] a { display: inline-block; max-width: 100%; }
+    .markdown-body > p[align="center"] img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+      margin: auto;
+      border-radius: 12px;
+    }
+    .markdown-body > p[align="center"] em {
+      display: block;
+      margin-top: 10px;
+      color: var(--slate-500);
+      font-size: 13px;
+    }
+    .table-wrap {
+      width: 100%;
+      margin: 18px 0 28px;
+      overflow: auto;
+      border: 1px solid var(--slate-200);
+      border-radius: 15px;
+      background: var(--white);
+      box-shadow: var(--shadow-sm);
+    }
+    .markdown-body table {
+      width: 100%;
+      min-width: 720px;
+      border-collapse: separate;
+      border-spacing: 0;
+      font-size: 14px;
+    }
+    .markdown-body th {
+      position: sticky;
+      top: 0;
+      z-index: 2;
+      padding: 12px 14px;
+      color: var(--white);
+      background: var(--navy-900);
+      border-bottom: 1px solid var(--navy-800);
+      text-align: left;
+      white-space: nowrap;
+    }
+    .markdown-body td {
+      padding: 12px 14px;
+      border-bottom: 1px solid var(--slate-200);
+      vertical-align: top;
+    }
+    .markdown-body tbody tr:nth-child(even) td { background: var(--slate-50); }
+    .markdown-body tbody tr:hover td { background: var(--orange-50); }
+    .markdown-body tbody tr:last-child td { border-bottom: 0; }
+    .markdown-body td img { display: block; width: 36px; height: 36px; max-width: none; }
+    .markdown-body pre {
+      position: relative;
+      margin: 16px 0 24px;
+      padding: 18px 20px;
+      overflow: auto;
+      border: 1px solid #ffd3bd;
+      border-radius: 14px;
+      color: #fff7ed;
+      background: linear-gradient(145deg, #172033, #222f48);
+      box-shadow: var(--shadow-sm);
+      font: 13px/1.75 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    }
+    .markdown-body pre code { padding: 0; border: 0; color: inherit; background: none; font: inherit; }
+    .markdown-body blockquote {
+      margin: 18px 0;
+      padding: 13px 16px;
+      border-left: 4px solid var(--orange-500);
+      border-radius: 0 12px 12px 0;
+      color: var(--slate-700);
+      background: var(--orange-50);
+    }
+    .case-tools {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 10px;
+      margin: 12px 0 14px;
+      padding: 13px;
+      border: 1px solid var(--slate-200);
+      border-radius: 13px;
+      background: var(--slate-50);
+    }
+    .case-tools input {
+      flex: 1 1 280px;
+      height: 42px;
+      padding: 0 13px;
+      border: 1px solid var(--slate-300);
+      border-radius: 10px;
+      outline: none;
+    }
+    .case-tools input:focus { border-color: var(--orange-500); box-shadow: 0 0 0 4px rgba(244,91,10,.12); }
+    .case-count { color: var(--orange-700); font-weight: 800; white-space: nowrap; }
+    .testcase-table table { min-width: 1500px; }
+    .testcase-table th:first-child, .testcase-table td:first-child {
+      position: sticky;
+      left: 0;
+      z-index: 1;
+      min-width: 230px;
+      box-shadow: 1px 0 0 var(--slate-200);
+    }
+    .testcase-table th:first-child { z-index: 3; background: var(--navy-900); }
+    .testcase-table td:first-child { background: var(--white); font-weight: 750; }
+    .testcase-table tbody tr:nth-child(even) td:first-child { background: var(--slate-50); }
+    .testcase-table tbody tr:hover td:first-child { background: var(--orange-50); }
+    .source-note {
+      margin-top: 18px;
+      color: var(--slate-500);
+      text-align: center;
+      font-size: 12px;
+    }
+    @media (max-width: 780px) {
+      .doc-toolbar { align-items: flex-start; flex-direction: column; }
+      .markdown-body { padding: 20px 16px; border-radius: 16px; }
+      .markdown-body > h1 { margin: -20px -16px 32px; padding: 40px 20px 34px; }
+      .markdown-body h2 { margin-top: 48px; }
+      .markdown-body table { font-size: 13px; }
+    }
+    @media print {
+      .doc-toolbar, .case-tools { display: none !important; }
+      .markdown-body { padding: 0; border: 0; box-shadow: none; overflow: visible; }
+      .markdown-body > h1 { margin: 0 0 32px; padding: 30px; color: #111; background: #fff; border: 2px solid #111; }
+      .table-wrap { overflow: visible; box-shadow: none; }
+      .markdown-body table { min-width: 0 !important; font-size: 9px; }
+      .markdown-body th { position: static; color: #111; background: #eee; }
+      .testcase-table th:first-child, .testcase-table td:first-child { position: static; }
+    }
+</style>
+</head>
+<body>
+  <a class="skip-link" href="#document">Đi đến nội dung chính</a>
+  <aside class="sidebar" aria-label="Mục lục requirement">
+    <div class="brand">
+      <div class="brand-mark">ics</div>
+      <div><strong>ICS Requirement</strong><small>Package, Category và Action Item</small></div>
+    </div>
+    <div class="nav-title">Nội dung Markdown</div>
+    <nav id="docNav" class="nav"></nav>
+    <div class="sidebar-footer">
+      HTML được render trực tiếp từ Markdown nguồn.<br>
+      <a href="./process_definition_requirements.md">Mở file Markdown</a>
+    </div>
+  </aside>
+  <main class="doc-shell">
+    <div class="doc-toolbar">
+      <div class="doc-toolbar-left">
+        <span class="sync-badge">Đồng bộ 100% từ Markdown</span>
+        <span class="hash">SHA-256: 6965beb4ebef…</span>
+      </div>
+      <div class="doc-toolbar-right">
+        <a class="button ghost small" href="./process_definition_requirements.md">Xem Markdown</a>
+        <button class="button small" type="button" onclick="window.print()">In / Lưu PDF</button>
+      </div>
+    </div>
+    <article id="document" class="markdown-body" data-source-sha256="6965beb4ebefe4b3774ce114b66cbf5502fd2cd63ff2bd0f2a32619858caa4de">
+<h1 id="define-quy-trinh">Define quy trình</h1>
+<blockquote>
+<p>Menu Quy trình định nghĩa nguồn Action Board theo cấu trúc <strong>Package → Category → Action Item</strong>, để sử dụng ở nhiều nơi như các tab quy trình trong lớp. Chỉ quy trình Công khai mới được thêm vào lớp. Định nghĩa đã Công khai bị khóa thay đổi; Vô hiệu vẫn hiển thị nội dung đã thêm nhưng chỉ xem. Quy trình ICS dùng chung bảng với ComGao và được quản lý theo center.</p>
+</blockquote>
+<h2 id="1-ui">1. UI</h2>
+<h3 id="trang-1-danh-sach-loai-quy-trinh">Trang 1: Danh sách loại quy trình</h3>
+<p align="center">
+  <a href="./images/01-process-list.png"><img src="./images/01-process-list.png" alt="Danh sách loại quy trình" width="760" title="Nhấn để xem ảnh gốc"></a><br>
+  <em>Danh sách loại quy trình — nhấn để xem ảnh gốc</em>
+</p>
+
+<p><strong>Mô tả:</strong></p>
+<ul>
+<li>Admin và Class Handler quản lý định nghĩa; Support và Assistant Teacher chỉ xem. Danh sách và chi tiết chỉ lấy dữ liệu thuộc center hiện tại.</li>
+</ul>
+<p><strong>Giải thích thành phần:</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Thành phần</th>
+<th>Yêu cầu</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Danh sách</td>
+<td>Các cột: Tên loại quy trình, Mô tả, Loại quy trình, Người tạo, Ngày cập nhật, Trạng thái.</td>
+</tr>
+<tr>
+<td>Tìm kiếm</td>
+<td>Tìm theo tên loại quy trình.</td>
+</tr>
+<tr>
+<td>Bộ lọc</td>
+<td>Trạng thái, Đối tượng, Người tạo, Thời gian.</td>
+</tr>
+<tr>
+<td>Loại quy trình</td>
+<td>Đúng 5 loại: <code>Lớp - Giáo viên</code>, <code>Lớp học</code>, <code>Học viên</code>, <code>Giáo viên</code>, <code>CSKH</code> (Support). Nhãn <code>Lớp &amp; giáo viên</code> trong ảnh tương ứng <code>Lớp - Giáo viên</code>.</td>
+</tr>
+<tr>
+<td>Trạng thái quy trình</td>
+<td><code>Nháp</code>, <code>Công khai</code>, <code>Vô hiệu</code>; áp dụng cho bản ghi ở danh sách quy trình, chọn tại dropdown của dòng.</td>
+</tr>
+<tr>
+<td>Nhập quy trình mới</td>
+<td>Dòng cuối bảng và nút <code>+</code> dùng để thêm quy trình Nháp; chỉ Admin/Class Handler được thao tác.</td>
+</tr>
+<tr>
+<td>Thông tin quy trình</td>
+<td>Tên loại quy trình, Mô tả và Loại quy trình đều bắt buộc khi lưu. Người tạo/Ngày cập nhật do hệ thống ghi nhận.</td>
+</tr>
+<tr>
+<td>Mũi tên cuối dòng</td>
+<td>Mở chi tiết quy trình đã chọn.</td>
+</tr>
+<tr>
+<td>Phân trang</td>
+<td>Hiển thị khoảng bản ghi, tổng số quy trình và Trước/Sau/số trang.</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Điểm cần lưu ý:</strong></p>
+<ul>
+<li>Chỉ cho phép <strong>Nháp → Công khai</strong>, <strong>Nháp → Vô hiệu</strong>, <strong>Công khai ↔ Vô hiệu</strong>. Công khai hoặc Vô hiệu không quay về Nháp.</li>
+<li>Tên và dữ liệu trong ảnh là ví dụ; không cố định số quy trình theo ảnh. Tạo mới tại dòng <code>Nhập quy trình mới</code> và nút <code>+</code> như UI mới.</li>
+<li>Mọi field nhập/chọn cấu hình đều bắt buộc; thiếu field thì không lưu và chỉ rõ field cần bổ sung.</li>
+<li>Đã Công khai thì không được thêm/sửa/xóa bất kỳ nội dung định nghĩa nào, kể cả khi chuyển sang Vô hiệu. Vẫn được đổi Công khai ↔ Vô hiệu theo rule trên.</li>
+</ul>
+<h4 id="testcase-danh-sach-loai-quy-trinh">Testcase — Danh sách loại quy trình</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 1: Xem theo center và role</td>
+<td>High</td>
+<td>Smoke</td>
+<td>Flow 1 / REQ01 / REQ07 / EX07</td>
+<td>Admin / Class Handler / Support / Assistant Teacher</td>
+<td>Hai center có quy trình</td>
+<td><strong>Given</strong> mở danh sách ở center A<br><strong>When</strong> tìm/lọc, mở chi tiết rồi thử ID center B; Support/Assistant Teacher thử thay đổi dữ liệu<br><strong>Then</strong> chỉ xem dữ liệu center A và chặn vượt quyền</td>
+<td>Phân trang/tổng số đúng kết quả; chỉ xem không được thêm/sửa/xóa, kéo thả, toggle hoặc đổi trạng thái.</td>
+</tr>
+<tr>
+<td>Case 2: Tạo quy trình và field bắt buộc</td>
+<td>High</td>
+<td>Smoke</td>
+<td>Flow 5 / REQ07 / REQ08 / EX06</td>
+<td>Admin / Class Handler</td>
+<td>Đang ở center A</td>
+<td><strong>Given</strong> nhập tại dòng Nhập quy trình mới và bấm <code>+</code><br><strong>When</strong> lưu đủ thông tin, rồi thử để trống từng field<br><strong>Then</strong> tạo quy trình Nháp thuộc center A; thiếu field không lưu</td>
+<td>Dùng chung bảng ComGao, không tạo bản sao riêng cho ICS; Loại chỉ có 5 giá trị đã chốt.</td>
+</tr>
+<tr>
+<td>Case 3: Chuyển trạng thái hợp lệ</td>
+<td>High</td>
+<td>Smoke</td>
+<td>Flow 2 / REQ02</td>
+<td>Admin / Class Handler</td>
+<td>Có quy trình ở ba trạng thái</td>
+<td><strong>Given</strong> chọn trạng thái mới<br><strong>When</strong> thực hiện Nháp → Công khai/Vô hiệu hoặc Công khai ↔ Vô hiệu<br><strong>Then</strong> lưu được</td>
+<td>Tải lại vẫn giữ trạng thái đã lưu; phản hồi Thành Công.</td>
+</tr>
+<tr>
+<td>Case 4: Không quay về Nháp</td>
+<td>High</td>
+<td></td>
+<td>EX01 / REQ02</td>
+<td>Admin / Class Handler</td>
+<td>Quy trình đang Công khai hoặc Vô hiệu</td>
+<td><strong>Given</strong> mở dropdown hoặc gửi yêu cầu đổi về Nháp<br><strong>When</strong> kiểm tra chuyển trạng thái<br><strong>Then</strong> không cho đổi</td>
+<td>UI không cho chọn Nháp; request trực tiếp cũng bị từ chối; trạng thái cũ giữ nguyên.</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="trang-2-chi-tiet-loai-quy-trinh">Trang 2: Chi tiết loại quy trình</h3>
+<p align="center">
+  <a href="./images/02-process-detail.png"><img src="./images/02-process-detail.png" alt="Chi tiết quy trình: Package, Category và Action Item" width="760" title="Nhấn để xem ảnh gốc"></a><br>
+  <em>Cấu hình Action Board nguồn — nhấn để xem ảnh gốc</em>
+</p>
+
+<p><strong>Mô tả:</strong></p>
+<ul>
+<li>Chọn Package ở Danh Sách bên phải; bên trái hiển thị tên, mô tả và các Category/Action Item của Package đó.</li>
+</ul>
+<p><strong>Giải thích field/thành phần:</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Thành phần</th>
+<th>Yêu cầu</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Quay lại</td>
+<td>Trở về danh sách loại quy trình.</td>
+</tr>
+<tr>
+<td>Danh Sách Package</td>
+<td>Chọn Package để xem nội dung. Toggle và tay nắm kéo thả chỉ được thao tác khi còn Nháp.</td>
+</tr>
+<tr>
+<td>Thêm mới Package</td>
+<td>Khi còn Nháp, nhập tên tại dòng <code>Thêm mới</code> và bấm <code>+</code>.</td>
+</tr>
+<tr>
+<td>Category</td>
+<td>Hiển thị tên, mô tả, mở/thu gọn, kéo thả và nút xóa. Dòng <code>Nhập danh mục mới</code> thêm Category vào Package đang chọn.</td>
+</tr>
+<tr>
+<td>Action Item</td>
+<td>Hiển thị tên, Loại task, field cấu hình, mở/thu gọn và nút sửa/xóa theo UI. Dòng <code>Nhập nội dung mới</code> thêm item vào Category hiện tại.</td>
+</tr>
+<tr>
+<td>Kéo thả</td>
+<td>Khi còn Nháp, sắp xếp Package trong Danh Sách, Category trong Package và Action Item trong Category.</td>
+</tr>
+<tr>
+<td>Toggle Package</td>
+<td>Enable/Disable Package; độc lập với trạng thái Nháp/Công khai/Vô hiệu ở danh sách quy trình.</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Điểm cần lưu ý:</strong></p>
+<ul>
+<li>Admin/Class Handler chỉ thay đổi định nghĩa khi quy trình còn Nháp. Sau Công khai, khóa tên, mô tả, Package, Category, Action Item, Loại task, field cấu hình, file/URL, kéo thả và toggle Enable/Disable.</li>
+<li>Các control thay đổi được ẩn hoặc vô hiệu hóa khi đã Công khai; vẫn chọn Package và mở/thu gọn để xem được.</li>
+<li>Toggle Package không đổi trạng thái quy trình và không đưa quy trình về Nháp.</li>
+<li>Các checkbox trước một số Action Item trong ảnh chưa được giải thích; không mặc định coi đây là Result của lớp.</li>
+<li>Tên, mô tả và các field cấu hình Package/Category/Action Item đều bắt buộc khi lưu; chỉ kiểm tra field của Loại task đang chọn. Cơ chế lưu/xác nhận xóa khi Nháp chưa thể hiện đầy đủ.</li>
+</ul>
+<h4 id="testcase-chi-tiet-loai-quy-trinh">Testcase — Chi tiết loại quy trình</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 5: Chọn đúng Package và Category</td>
+<td>High</td>
+<td></td>
+<td>Flow 3 / REQ03</td>
+<td>Admin / Class Handler / Support / Assistant Teacher</td>
+<td>Có nhiều Package và Category</td>
+<td><strong>Given</strong> mở chi tiết<br><strong>When</strong> đổi Package và mở/thu gọn Category<br><strong>Then</strong> hiển thị đúng tên, mô tả và Action Item</td>
+<td>Không lẫn nội dung của Package/Category khác.</td>
+</tr>
+<tr>
+<td>Case 6: Quản lý cấu trúc khi Nháp</td>
+<td>High</td>
+<td>Smoke</td>
+<td>Flow 3 / REQ03</td>
+<td>Admin / Class Handler</td>
+<td>Quy trình còn Nháp</td>
+<td><strong>Given</strong> chọn Package/Category<br><strong>When</strong> thêm, sửa, xóa hoặc sắp xếp nội dung và lưu thành công<br><strong>Then</strong> cấu trúc nguồn cập nhật đúng vị trí</td>
+<td>Tải lại giữ thay đổi; không tự tạo Result tại nơi sử dụng.</td>
+</tr>
+<tr>
+<td>Case 7: Khóa định nghĩa sau Công khai</td>
+<td>High</td>
+<td></td>
+<td>REQ03 / EX04</td>
+<td>Admin / Class Handler</td>
+<td>Quy trình đã Công khai</td>
+<td><strong>Given</strong> mở chi tiết, rồi chuyển quy trình sang Vô hiệu<br><strong>When</strong> thử thêm/sửa/xóa, đổi Loại task/file, kéo thả hoặc toggle Package qua UI/request<br><strong>Then</strong> bị từ chối trong cả hai trạng thái</td>
+<td>Không đổi cấu trúc, nội dung hoặc Result lớp; trạng thái quy trình vẫn được đổi theo rule.</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="dropdown-loai-task-va-field-cau-hinh">Dropdown Loại task và field cấu hình</h3>
+<p align="center">
+  <a href="./images/03-task-types.png"><img src="./images/03-task-types.png" alt="Chín loại task" width="280" title="Nhấn để xem ảnh gốc"></a><br>
+  <em>Dropdown Loại task — nhấn để xem ảnh gốc</em>
+</p>
+
+<p><strong>Mô tả:</strong></p>
+<ul>
+<li>Khi còn Nháp, mỗi Action Item chọn một Loại task và cấu hình field tương ứng. Sau Công khai chỉ xem cấu hình đã định nghĩa.</li>
+</ul>
+<p><strong>Giải thích field/thành phần:</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Loại task</th>
+<th>Field cấu hình theo UI</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Hướng dẫn</td>
+<td>Tài liệu hướng dẫn, Mô tả, Nội dung chi tiết. Kéo thả/chọn file <code>PDF</code>, <code>DOC</code>, <code>DOCX</code>, <code>PPT</code>, <code>PPTX</code>, tối đa <code>20MB</code> mỗi file. Hiển thị file đã tải với tên/định dạng/dung lượng.</td>
+</tr>
+<tr>
+<td>Task tiến trình</td>
+<td>Mô tả công việc cần thực hiện.</td>
+</tr>
+<tr>
+<td>Task nhập liệu</td>
+<td>Mô tả nội dung cần nhập khi sử dụng.</td>
+</tr>
+<tr>
+<td>Kiểm tra</td>
+<td>Mô tả tiêu chí kiểm tra.</td>
+</tr>
+<tr>
+<td>Đánh giá</td>
+<td>Mô tả và Loại đánh giá; ảnh đang chọn <code>Đạt / Không đạt</code>.</td>
+</tr>
+<tr>
+<td>Media</td>
+<td>Mô tả, URL, File video; kéo thả/chọn file <code>MP4</code>, <code>MOV</code>, tối đa <code>500MB</code> mỗi file. Có nút gỡ file đã tải.</td>
+</tr>
+<tr>
+<td>Deadline</td>
+<td>Mốc tính và Thời hạn; ví dụ <code>Sau buổi học</code>, <code>Trong 24 giờ</code>.</td>
+</tr>
+<tr>
+<td>Xác thực</td>
+<td>Thời điểm xác thực và Vai trò xác thực; ví dụ <code>Sau khi hoàn thành</code>, <code>Class Handler</code>.</td>
+</tr>
+<tr>
+<td>Log</td>
+<td>Tần suất ghi nhận và Mẫu ghi nhận; ví dụ <code>Mỗi buổi học</code>.</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Điểm cần lưu ý:</strong></p>
+<ul>
+<li>Dropdown có đúng 9 loại theo thứ tự trên; không thêm <code>Nhận xét</code> từ Action Board cũ vào UI mới.</li>
+<li>Field văn bản có bộ đếm <code>/500</code> tối đa 500 ký tự. Tất cả field của Loại task đang chọn đều bắt buộc, gồm file/URL khi loại đó có các field này; yêu cầu mới áp dụng cả với URL mà ảnh ghi “nếu có”.</li>
+<li>Các giá trị đang chọn trong ảnh là ví dụ; không mặc định là toàn bộ lựa chọn dropdown.</li>
+<li>Chỉ đổi Loại task khi còn Nháp; hiển thị đúng bộ field. Quy trình Nháp chưa được thêm vào lớp nên thao tác này không tác động Result của lớp.</li>
+</ul>
+<h4 id="testcase-loai-task-va-field-cau-hinh">Testcase — Loại task và field cấu hình</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 8: Chọn Loại task</td>
+<td>High</td>
+<td></td>
+<td>Flow 4 / REQ04</td>
+<td>Admin / Class Handler</td>
+<td>Quy trình Nháp có Action Item</td>
+<td><strong>Given</strong> mở dropdown<br><strong>When</strong> lần lượt chọn 9 loại<br><strong>Then</strong> hiển thị đúng field của từng loại; thiếu field hoặc vượt 500 ký tự bị từ chối</td>
+<td>Chỉ validate field của loại đang chọn; đúng 9 nhãn; không ghi Result khi đổi loại.</td>
+</tr>
+<tr>
+<td>Case 9: Tài liệu và Media</td>
+<td>High</td>
+<td></td>
+<td>Flow 4 / REQ04 / EX02</td>
+<td>Admin / Class Handler</td>
+<td>Quy trình Nháp, đang cấu hình Hướng dẫn hoặc Media</td>
+<td><strong>Given</strong> chọn file đúng loại và trong giới hạn<br><strong>When</strong> tải file, rồi thử file sai định dạng/vượt dung lượng<br><strong>Then</strong> file hợp lệ hiển thị; file không hợp lệ bị từ chối</td>
+<td>Hướng dẫn: 20MB, đúng định dạng tài liệu; Media: 500MB, MP4/MOV; không mất cấu hình đã lưu khi upload lỗi.</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="su-dung-nguon-trong-lop">Sử dụng nguồn trong lớp</h3>
+<p><strong>Mô tả:</strong></p>
+<ul>
+<li>Các tab trong lớp chỉ thêm mới từ quy trình Công khai. Khi quy trình đã thêm chuyển Vô hiệu, vẫn hiện nội dung và Result đã ghi nhưng chỉ xem.</li>
+</ul>
+<p><strong>Giải thích thành phần:</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Thành phần</th>
+<th>Yêu cầu</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Nội dung đã thêm</td>
+<td>Sử dụng định nghĩa đã Công khai; không có tình huống xóa Category hoặc sửa Action Item ở nguồn sau khi đã thêm vào lớp.</td>
+</tr>
+<tr>
+<td>Result</td>
+<td>Quy trình Công khai: cập nhật theo quyền lớp. Quy trình Vô hiệu: giữ Result đã ghi để xem, khóa mọi cập nhật Result.</td>
+</tr>
+<tr>
+<td>Tab trong lớp</td>
+<td>Tiêu chuẩn lớp - giáo viên lấy loại <code>Lớp - Giáo viên</code>; CSKH lấy <code>CSKH</code> (Support); Quy trình lớp lấy <code>Lớp học</code>. Nguồn và lớp phải cùng center.</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Điểm cần lưu ý:</strong></p>
+<ul>
+<li>Quyền thêm/cập nhật Result trong lớp vẫn theo role được add vào lớp; quyền define nguồn chỉ dành cho Admin/Class Handler.</li>
+<li>Popup và thao tác lưu chỉ nhận quy trình Công khai; Nháp/Vô hiệu không được thêm mới vào lớp. Chuyển Vô hiệu không xóa/ẩn nội dung đã thêm; chỉ khóa thao tác cập nhật. Khi Công khai lại, áp dụng quyền cập nhật Result theo role lớp.</li>
+</ul>
+<h4 id="testcase-them-nguon-cong-khai-vao-lop">Testcase — Thêm nguồn Công khai vào lớp</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 10: Chỉ thêm quy trình Công khai</td>
+<td>High</td>
+<td></td>
+<td>REQ05 / EX05</td>
+<td>Class Handler / Support của lớp</td>
+<td>Có quy trình đúng loại ở ba trạng thái</td>
+<td><strong>Given</strong> mở popup Thêm ở lớp<br><strong>When</strong> chọn nguồn rồi lưu; đồng thời thử gửi ID nguồn Nháp/Vô hiệu hoặc nguồn vừa bị Vô hiệu sau khi mở popup<br><strong>Then</strong> chỉ thêm được nguồn còn Công khai</td>
+<td>Kiểm tra trạng thái lúc lưu; nguồn Nháp/Vô hiệu bị từ chối. Nguồn đã thêm chuyển Vô hiệu vẫn hiện nội dung/Result nhưng chặn cập nhật qua UI/request; không mất kết quả cũ.</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="toast-phan-hoi-crud">Toast phản hồi CRUD</h3>
+<p align="center">
+  <a href="../images/01-toast-crud.png"><img src="../images/01-toast-crud.png" alt="Bốn trạng thái Toast CRUD" width="520" title="Nhấn để xem ảnh gốc"></a><br>
+  <em>Toast sau thao tác thay đổi định nghĩa — nhấn để xem ảnh gốc</em>
+</p>
+
+<p><strong>Mô tả:</strong></p>
+<ul>
+<li>Phản hồi sau khi thêm/sửa/xóa/sắp xếp hoặc đổi trạng thái được xử lý.</li>
+</ul>
+<p><strong>Giải thích thành phần:</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Loại Toast</th>
+<th>Khi sử dụng</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Thành Công</code></td>
+<td>Thay đổi được lưu thành công.</td>
+</tr>
+<tr>
+<td><code>Thông Báo</code></td>
+<td>Chỉ khi thao tác đã được tiếp nhận nhưng còn chờ đồng bộ.</td>
+</tr>
+<tr>
+<td><code>Cảnh Báo</code></td>
+<td>Thiếu field bắt buộc, vượt giới hạn, sai file, vượt quyền/center hoặc sửa định nghĩa đã khóa.</td>
+</tr>
+<tr>
+<td><code>Có Lỗi Xảy Ra</code></td>
+<td>Không hoàn tất được thao tác.</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Điểm cần lưu ý:</strong></p>
+<ul>
+<li>Mỗi thao tác chỉ có một Toast kết quả; chỉ xem, mở/thu gọn hoặc Hủy không có Toast CRUD. Không báo thành công trước khi lưu xong.</li>
+</ul>
+<h4 id="testcase-toast-phan-hoi-crud">Testcase — Toast phản hồi CRUD</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 11: Phản hồi thao tác</td>
+<td>High</td>
+<td></td>
+<td>REQ06 / EX03</td>
+<td>Admin / Class Handler</td>
+<td>Có thao tác thay đổi</td>
+<td><strong>Given</strong> xác nhận thay đổi<br><strong>When</strong> hệ thống trả thành công, cảnh báo hoặc lỗi<br><strong>Then</strong> hiển thị một Toast đúng loại</td>
+<td>Lưu lỗi giữ dữ liệu cũ; không báo thành công giả. Thông Báo chỉ khi thực sự chờ đồng bộ.</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="2-yeu-cau">2. Yêu cầu</h2>
+<h3 id="21-flow-chinh">2.1. Flow chính</h3>
+<p><strong>Flow 1 / REQ01: Xem quy trình</strong></p>
+<pre><code class="language-text">Kiểm tra role và center hiện tại → Mở menu Quy trình → Tìm/lọc danh sách → Chọn dòng
+      → Mở chi tiết → Chọn Package → Xem Category và Action Item
+</code></pre>
+<p><strong>Flow 2 / REQ02 / REQ06: Đổi trạng thái</strong></p>
+<pre><code class="language-text">Chọn trạng thái → Kiểm tra quyền và trạng thái hiện tại
+      → Nháp: cho chuyển Công khai hoặc Vô hiệu
+      → Công khai/Vô hiệu: chỉ cho chuyển qua lại, không về Nháp
+      → Công khai: khóa định nghĩa; chuyển sang Vô hiệu vẫn không mở khóa
+      → Lưu thành công → Cập nhật trạng thái và Toast
+</code></pre>
+<p><strong>Flow 3 / REQ03 / REQ06: Quản lý cấu trúc nguồn</strong></p>
+<pre><code class="language-text">Kiểm tra quyền và quy trình còn Nháp → Chọn Package → Thêm/sửa/xóa Category và Action Item
+      → Sắp xếp bằng kéo thả trong cùng cấp cha hoặc Enable/Disable Package
+      → Lưu thành công → Cập nhật định nghĩa nguồn và Toast
+</code></pre>
+<p><strong>Flow 4 / REQ04 / REQ06: Cấu hình Action Item</strong></p>
+<pre><code class="language-text">Kiểm tra quy trình còn Nháp → Chọn Action Item → Chọn Loại task → Hiển thị field tương ứng
+      → Nhập đầy đủ cấu hình/tải file → Kiểm tra bắt buộc và giới hạn → Lưu định nghĩa → Phản hồi kết quả
+</code></pre>
+<p><strong>Flow 5 / REQ07 / REQ08 / REQ06: Tạo quy trình</strong></p>
+<pre><code class="language-text">Admin/Class Handler nhập tại dòng Nhập quy trình mới → Bấm +
+      → Kiểm tra thông tin bắt buộc, Loại quy trình và center hiện tại
+      → Lưu quy trình Nháp vào bảng dùng chung ComGao → Cập nhật danh sách và Toast
+</code></pre>
+<h3 id="22-ngoai-le">2.2. Ngoại lệ</h3>
+<ul>
+<li><strong>EX01:</strong> Công khai/Vô hiệu → Nháp hoặc vượt quyền → từ chối, giữ trạng thái cũ; kiểm tra cả request trực tiếp.</li>
+<li><strong>EX02:</strong> File sai định dạng hoặc vượt giới hạn theo loại → không nhận file, nêu rõ lý do.</li>
+<li><strong>EX03:</strong> Lưu lỗi → không giữ thay đổi chưa lưu như kết quả thành công; phản hồi lỗi để thử lại.</li>
+<li><strong>EX04:</strong> Sửa định nghĩa đã Công khai, kể cả sau khi chuyển Vô hiệu hoặc gửi từ form Nháp cũ → từ chối, giữ nguyên dữ liệu.</li>
+<li><strong>EX05:</strong> Thêm nguồn Nháp/Vô hiệu vào lớp hoặc cập nhật Result của quy trình Vô hiệu → từ chối; nội dung/Result cũ vẫn hiển thị.</li>
+<li><strong>EX06:</strong> Thiếu field bắt buộc hoặc field có <code>/500</code> vượt 500 ký tự → không lưu, chỉ rõ field lỗi.</li>
+<li><strong>EX07:</strong> Khác center hiện tại hoặc Support/Assistant Teacher gửi thao tác define → từ chối, không thay dữ liệu.</li>
+</ul>
+<h3 id="23-yeu-cau-khac">2.3. Yêu cầu khác</h3>
+<ul>
+<li><strong>REQ01 – Danh sách:</strong> Hiển thị đúng cột, tìm kiếm, bộ lọc và phân trang theo UI; mở đúng quy trình đã chọn.</li>
+<li><strong>REQ02 – Trạng thái quy trình ở danh sách:</strong> Nháp → Công khai/Vô hiệu; Công khai ↔ Vô hiệu; không quay về Nháp.</li>
+<li><strong>REQ03 – Cấu trúc và khóa định nghĩa:</strong> Package → Category → Action Item. Admin/Class Handler quản lý nội dung khi còn Nháp. Đã Công khai thì khóa mọi thêm/sửa/xóa, kéo thả, cấu hình task/file và toggle Package; chuyển Vô hiệu không mở khóa. Toggle Enable/Disable là cấu hình Package riêng với trạng thái quy trình.</li>
+<li><strong>REQ04 – Loại task:</strong> Đúng 9 loại và field cấu hình trong bảng UI; mọi field của loại đang chọn bắt buộc, kiểm tra định dạng/dung lượng file tương ứng và tối đa 500 ký tự ở field có <code>/500</code>.</li>
+<li><strong>REQ05 – Sử dụng nguồn:</strong> Chỉ quy trình Công khai mới được thêm vào lớp, đúng loại của tab Tiêu chuẩn lớp - giáo viên/CSKH/Quy trình lớp. Kiểm tra cả lúc tải popup và lưu lựa chọn. Định nghĩa đã Công khai không sửa/xóa được. Quy trình chuyển Vô hiệu vẫn hiện nội dung/Result đã thêm nhưng chỉ xem; Công khai lại thì áp dụng quyền cập nhật theo <a href="../management_requirement/class_management/class_detail_processes_requirements.md">requirement Chi tiết lớp</a>.</li>
+<li><strong>REQ06 – Phản hồi:</strong> Thay đổi có Toast theo kết quả xử lý; không báo thành công trước khi lưu.</li>
+<li><strong>REQ07 – ComGao và center:</strong> ICS dùng chung bảng quy trình với ComGao. Tạo mới gắn center hiện tại; danh sách, chi tiết, thay đổi và lựa chọn tại nơi sử dụng đều kiểm tra cùng center; không sao chép thành bảng/bản ghi riêng cho ICS.</li>
+<li><strong>REQ08 – Tạo mới:</strong> Admin/Class Handler thêm quy trình Nháp bằng dòng Nhập quy trình mới và <code>+</code>; Tên, Mô tả, Loại quy trình bắt buộc. Loại gồm Lớp - Giáo viên/Lớp học/Học viên/Giáo viên/CSKH (Support).</li>
+</ul>
+<h3 id="24-rang-buoc">2.4. Ràng buộc</h3>
+<h4 id="quyen">Quyền</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Phạm vi quyền</th>
+<th style="text-align: center;">Xem</th>
+<th style="text-align: center;">Thêm/sửa/xóa định nghĩa</th>
+<th style="text-align: center;">Kéo thả</th>
+<th style="text-align: center;">Đổi trạng thái</th>
+<th style="text-align: center;">Ghi Result tại menu Define</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Admin — quy trình Nháp</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">❌</td>
+</tr>
+<tr>
+<td>Admin — đã Công khai</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">❌</td>
+</tr>
+<tr>
+<td>Class Handler — quy trình Nháp</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">❌</td>
+</tr>
+<tr>
+<td>Class Handler — đã Công khai</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">❌</td>
+</tr>
+<tr>
+<td>Support</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+</tr>
+<tr>
+<td>Assistant Teacher</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+</tr>
+<tr>
+<td>Không có quyền truy cập</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+</tr>
+</tbody>
+</table></div>
+<h4 id="pham-vi-du-lieu">Phạm vi dữ liệu</h4>
+<ul>
+<li>Các dòng quyền đã Công khai áp dụng cả sau khi chuyển Vô hiệu; đổi trạng thái chỉ theo REQ02. Toggle Package tuân thủ khóa định nghĩa.</li>
+<li>Quyền dùng nội dung/cập nhật Result trong lớp không tự cấp quyền sửa định nghĩa ở menu Quy trình.</li>
+<li>Kiểm tra liên kết Package → Category → Action Item, quyền thao tác và rule trạng thái khi lưu, kể cả URL/request trực tiếp.</li>
+<li>Mọi dữ liệu ICS trong phạm vi chức năng này theo center. Nhóm quyền trong bảng chỉ áp dụng cho dữ liệu center hiện tại; không vượt center bằng URL/request.</li>
+<li>Quyền chỉ xem của Support/Assistant Teacher tại menu Define khác với quyền cập nhật Result của Support đã được add vào lớp; quy trình Vô hiệu vẫn chỉ xem ở lớp.</li>
+</ul>
+<h2 id="3-can-xac-nhan">3. Cần xác nhận</h2>
+<ul>
+<li>Package Disable hiển thị và thao tác tại nơi sử dụng ra sao.</li>
+<li>Cách lưu/xác nhận xóa khi Nháp, các lựa chọn dropdown cấu hình và ý nghĩa checkbox trước Action Item.</li>
+</ul>
+</article>
+    <p class="source-note">Nguồn: process_definition_requirements.md · SHA-256 6965beb4ebefe4b3774ce114b66cbf5502fd2cd63ff2bd0f2a32619858caa4de</p>
+  </main>
+  <script>
+    const article = document.getElementById('document');
+    const nav = document.getElementById('docNav');
+    const headings = [...article.querySelectorAll('h2')];
+    headings.forEach((heading, index) => {
+      const link = document.createElement('a');
+      link.href = `#${heading.id}`;
+      const number = document.createElement('span');
+      number.className = 'nav-num';
+      number.textContent = String(index + 1).padStart(2, '0');
+      link.append(number, document.createTextNode(heading.textContent));
+      nav.append(link);
+    });
+
+    const navLinks = [...nav.querySelectorAll('a')];
+    const observer = new IntersectionObserver(entries => {
+      const current = entries.filter(item => item.isIntersecting).sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
+      if (!current) return;
+      navLinks.forEach(link => link.classList.toggle('active', link.hash === `#${current.target.id}`));
+    }, {rootMargin: '-18% 0px -68% 0px', threshold: [0, .2, .5]});
+    headings.forEach(heading => observer.observe(heading));
+    if (navLinks[0]) navLinks[0].classList.add('active');
+
+    const testcaseHeadings = [...article.querySelectorAll('h4, h5')]
+      .filter(heading => heading.textContent.trim().startsWith('Testcase'));
+    const testcaseGroups = testcaseHeadings
+      .map(heading => ({heading, tableWrap: heading.nextElementSibling}))
+      .filter(group => group.tableWrap?.classList.contains('table-wrap'));
+    if (testcaseGroups.length) {
+        const tableWraps = testcaseGroups.map(group => group.tableWrap);
+        tableWraps.forEach(tableWrap => tableWrap.classList.add('testcase-table'));
+        const rows = tableWraps.flatMap(tableWrap => [...tableWrap.querySelectorAll('tbody tr')]);
+        const tools = document.createElement('div');
+        tools.className = 'case-tools';
+        const input = document.createElement('input');
+        input.type = 'search';
+        input.placeholder = 'Tìm testcase, Flow, REQ, EX hoặc nội dung…';
+        input.setAttribute('aria-label', 'Tìm testcase');
+        const count = document.createElement('span');
+        count.className = 'case-count';
+        tools.append(input, count);
+        testcaseGroups[0].heading.before(tools);
+        const filterRows = () => {
+          const query = input.value.trim().toLocaleLowerCase('vi');
+          let visible = 0;
+          rows.forEach(row => {
+            const match = !query || row.textContent.toLocaleLowerCase('vi').includes(query);
+            row.hidden = !match;
+            if (match) visible += 1;
+          });
+          testcaseGroups.forEach(({heading, tableWrap}) => {
+            const hasVisibleRow = [...tableWrap.querySelectorAll('tbody tr')]
+              .some(row => !row.hidden);
+            heading.hidden = !hasVisibleRow;
+            tableWrap.hidden = !hasVisibleRow;
+          });
+          count.textContent = `${visible}/${rows.length} testcase`;
+        };
+        input.addEventListener('input', filterRows);
+        filterRows();
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,2257 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Requirement [CD] Bài tập về nhà và Kiểm tra">
+  <link rel="icon" href="data:,">
+  <title>[CD] Bài tập về nhà và Kiểm tra — Requirement</title>
+  <style>
+    :root {
+      --orange-700: #c83f00;
+      --orange-600: #e84c00;
+      --orange-500: #f45b0a;
+      --orange-400: #ff7a32;
+      --orange-100: #fff0e8;
+      --orange-50: #fff8f4;
+      --navy-950: #101828;
+      --navy-900: #172033;
+      --navy-800: #243047;
+      --slate-700: #344054;
+      --slate-600: #475467;
+      --slate-500: #667085;
+      --slate-400: #98a2b3;
+      --slate-300: #d0d5dd;
+      --slate-200: #e4e7ec;
+      --slate-100: #f2f4f7;
+      --slate-50: #f8fafc;
+      --white: #ffffff;
+      --green: #159447;
+      --blue: #2154c5;
+      --yellow: #b77900;
+      --red: #c92a2a;
+      --purple: #6941c6;
+      --shadow-sm: 0 1px 2px rgba(16, 24, 40, .06);
+      --shadow-md: 0 12px 32px rgba(16, 24, 40, .10);
+      --shadow-lg: 0 24px 64px rgba(16, 24, 40, .16);
+      --radius-sm: 10px;
+      --radius: 16px;
+      --radius-lg: 24px;
+      --sidebar: 286px;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      color: var(--navy-950);
+      background:
+        radial-gradient(circle at 88% 5%, rgba(244, 91, 10, .10), transparent 24rem),
+        var(--slate-50);
+      font: 15px/1.65 Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      text-rendering: optimizeLegibility;
+    }
+    a { color: inherit; }
+    img { max-width: 100%; }
+    button, input, select { font: inherit; }
+    code {
+      padding: .12rem .38rem;
+      border: 1px solid #fed7c3;
+      border-radius: 6px;
+      color: var(--orange-700);
+      background: var(--orange-50);
+      font: 600 .9em ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    }
+
+    .skip-link {
+      position: fixed;
+      z-index: 999;
+      top: 12px;
+      left: 12px;
+      padding: 10px 14px;
+      border-radius: 9px;
+      color: var(--white);
+      background: var(--navy-950);
+      transform: translateY(-150%);
+    }
+    .skip-link:focus { transform: none; }
+
+    .sidebar {
+      position: fixed;
+      z-index: 30;
+      inset: 0 auto 0 0;
+      width: var(--sidebar);
+      padding: 22px 18px;
+      overflow-y: auto;
+      color: #f8fafc;
+      background:
+        linear-gradient(155deg, rgba(255, 122, 50, .24), transparent 26%),
+        linear-gradient(180deg, #192338 0%, #111827 100%);
+      border-right: 1px solid rgba(255, 255, 255, .08);
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 4px 8px 22px;
+      border-bottom: 1px solid rgba(255, 255, 255, .10);
+    }
+    .brand-mark {
+      display: grid;
+      width: 44px;
+      height: 44px;
+      place-items: center;
+      border-radius: 14px;
+      color: var(--white);
+      background: linear-gradient(135deg, var(--orange-400), var(--orange-600));
+      box-shadow: 0 10px 26px rgba(244, 91, 10, .35);
+      font-weight: 900;
+      letter-spacing: -.06em;
+    }
+    .brand strong { display: block; font-size: 16px; }
+    .brand small { color: #aeb8c9; }
+    .nav-title {
+      margin: 24px 10px 8px;
+      color: #8f9aae;
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+    .nav { display: grid; gap: 4px; }
+    .nav a {
+      display: flex;
+      align-items: center;
+      gap: 11px;
+      padding: 10px 12px;
+      border-radius: 10px;
+      color: #cbd5e1;
+      text-decoration: none;
+      transition: .18s ease;
+    }
+    .nav a:hover, .nav a.active {
+      color: var(--white);
+      background: rgba(255, 255, 255, .09);
+    }
+    .nav a.active { box-shadow: inset 3px 0 var(--orange-400); }
+    .nav-num {
+      display: grid;
+      width: 25px;
+      height: 25px;
+      flex: 0 0 auto;
+      place-items: center;
+      border: 1px solid rgba(255, 255, 255, .15);
+      border-radius: 8px;
+      font-size: 11px;
+      font-weight: 800;
+    }
+    .sidebar-footer {
+      margin-top: 26px;
+      padding: 14px;
+      border: 1px solid rgba(255, 255, 255, .10);
+      border-radius: 14px;
+      color: #aeb8c9;
+      background: rgba(255, 255, 255, .04);
+      font-size: 12px;
+    }
+    .sidebar-footer a { color: #ffd8c5; }
+
+    main {
+      width: min(1500px, calc(100% - var(--sidebar)));
+      margin-left: var(--sidebar);
+      padding: 34px clamp(24px, 4vw, 64px) 80px;
+    }
+    section { scroll-margin-top: 24px; }
+    .hero {
+      position: relative;
+      padding: clamp(30px, 5vw, 56px);
+      overflow: hidden;
+      border: 1px solid rgba(255, 255, 255, .08);
+      border-radius: var(--radius-lg);
+      color: var(--white);
+      background:
+        linear-gradient(105deg, rgba(16, 24, 40, .97) 0%, rgba(23, 32, 51, .94) 62%, rgba(109, 45, 9, .90) 100%);
+      box-shadow: var(--shadow-lg);
+    }
+    .hero::after {
+      content: "";
+      position: absolute;
+      width: 360px;
+      height: 360px;
+      top: -190px;
+      right: -80px;
+      border: 70px solid rgba(255, 122, 50, .15);
+      border-radius: 50%;
+    }
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 10px;
+      border: 1px solid rgba(255, 255, 255, .15);
+      border-radius: 999px;
+      color: #ffd8c5;
+      background: rgba(255, 255, 255, .06);
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+    .hero h1 {
+      max-width: 900px;
+      margin: 18px 0 12px;
+      font-size: clamp(34px, 5vw, 64px);
+      line-height: 1.03;
+      letter-spacing: -.045em;
+    }
+    .hero p { max-width: 780px; margin: 0; color: #cbd5e1; font-size: 17px; }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 25px; }
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      min-height: 42px;
+      padding: 9px 14px;
+      border: 1px solid transparent;
+      border-radius: 10px;
+      color: var(--white);
+      background: var(--orange-500);
+      text-decoration: none;
+      cursor: pointer;
+      transition: .18s ease;
+    }
+    .button:hover { transform: translateY(-1px); background: var(--orange-600); }
+    .button.secondary { border-color: rgba(255, 255, 255, .15); background: rgba(255, 255, 255, .07); }
+    .button.ghost { color: var(--slate-700); border-color: var(--slate-300); background: var(--white); }
+    .button.small { min-height: 36px; padding: 7px 11px; font-size: 13px; }
+
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 14px;
+      margin-top: 18px;
+    }
+    .stat {
+      padding: 18px;
+      border: 1px solid var(--slate-200);
+      border-radius: var(--radius);
+      background: rgba(255, 255, 255, .86);
+      box-shadow: var(--shadow-sm);
+    }
+    .stat strong { display: block; color: var(--orange-600); font-size: 30px; line-height: 1; }
+    .stat span { display: block; margin-top: 7px; color: var(--slate-600); font-weight: 650; }
+
+    .section-head {
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 24px;
+      margin: 64px 0 20px;
+    }
+    .section-kicker {
+      margin: 0 0 6px;
+      color: var(--orange-600);
+      font-size: 12px;
+      font-weight: 850;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+    .section-head h2 { margin: 0; font-size: clamp(27px, 4vw, 40px); letter-spacing: -.035em; }
+    .section-head p { max-width: 600px; margin: 8px 0 0; color: var(--slate-600); }
+
+    .panel {
+      padding: clamp(20px, 3vw, 30px);
+      border: 1px solid var(--slate-200);
+      border-radius: var(--radius-lg);
+      background: var(--white);
+      box-shadow: var(--shadow-sm);
+    }
+    .panel + .panel { margin-top: 18px; }
+    .panel h3 { margin: 0 0 14px; font-size: 21px; letter-spacing: -.02em; }
+    .panel h4 { margin: 26px 0 10px; }
+    .muted { color: var(--slate-600); }
+    .note {
+      padding: 15px 17px;
+      border-left: 4px solid var(--orange-500);
+      border-radius: 0 12px 12px 0;
+      color: var(--slate-700);
+      background: var(--orange-50);
+    }
+
+    .mockup {
+      position: relative;
+      padding: 12px;
+      border: 1px solid var(--slate-200);
+      border-radius: 18px;
+      background: linear-gradient(145deg, #fff, #f4f6f9);
+      box-shadow: var(--shadow-md);
+    }
+    .mockup a { display: block; overflow: hidden; border-radius: 12px; }
+    .mockup img { display: block; width: 100%; transition: transform .3s ease; }
+    .mockup a:hover img { transform: scale(1.01); }
+    .mockup figcaption { padding: 12px 4px 2px; color: var(--slate-600); font-size: 13px; }
+
+    .grid-2 { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
+    .grid-3 { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+    .grid-4 { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 14px; }
+    .card {
+      padding: 18px;
+      border: 1px solid var(--slate-200);
+      border-radius: var(--radius);
+      background: var(--white);
+      box-shadow: var(--shadow-sm);
+    }
+    .card h3, .card h4 { margin: 0 0 8px; }
+    .card p { margin: 0; color: var(--slate-600); }
+    .card-accent { border-top: 4px solid var(--orange-500); }
+
+    .column-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+    .column-item {
+      min-height: 124px;
+      padding: 15px;
+      border: 1px solid var(--slate-200);
+      border-radius: 14px;
+      background: var(--slate-50);
+    }
+    .column-item strong { display: block; margin-bottom: 5px; color: var(--navy-900); }
+    .column-item span { color: var(--slate-600); font-size: 13px; }
+
+    .status-card { display: flex; align-items: center; gap: 12px; }
+    .status-card img { width: 42px; height: 42px; }
+    .status-card small { display: block; color: var(--slate-500); }
+
+    .tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      padding: 4px 9px;
+      border-radius: 999px;
+      color: var(--orange-700);
+      background: var(--orange-100);
+      font-size: 12px;
+      font-weight: 800;
+    }
+    .tag.high { color: #9d174d; background: #fce7f3; }
+    .tag.medium { color: #92400e; background: #fef3c7; }
+    .tag.req { color: #3730a3; background: #e0e7ff; }
+    .tag.ex { color: #b42318; background: #fee4e2; }
+
+    .flow-list { display: grid; gap: 14px; counter-reset: flow; }
+    .flow {
+      position: relative;
+      padding: 22px 22px 22px 68px;
+      border: 1px solid var(--slate-200);
+      border-radius: var(--radius);
+      background: var(--white);
+    }
+    .flow::before {
+      counter-increment: flow;
+      content: counter(flow, decimal-leading-zero);
+      position: absolute;
+      top: 20px;
+      left: 18px;
+      display: grid;
+      width: 36px;
+      height: 36px;
+      place-items: center;
+      border-radius: 11px;
+      color: var(--white);
+      background: var(--orange-500);
+      font-weight: 900;
+    }
+    .flow h3 { margin: 0 0 8px; }
+    .flow ol { margin: 0; padding-left: 20px; color: var(--slate-700); }
+
+    .exception { border-left: 4px solid #ef4444; }
+    .exception strong { color: var(--red); }
+
+    .formula-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; }
+    .formula {
+      padding: 18px;
+      border: 1px solid #ffd6c2;
+      border-radius: 16px;
+      background: linear-gradient(160deg, #fff, var(--orange-50));
+    }
+    .formula h4 { margin: 0 0 12px; color: var(--orange-700); }
+    .fraction { display: grid; justify-items: center; color: var(--navy-900); font-weight: 720; text-align: center; }
+    .fraction .top { padding: 0 10px 7px; border-bottom: 2px solid var(--navy-800); }
+    .fraction .bottom { padding-top: 7px; }
+    .formula .teacher { margin-top: 16px; padding-top: 12px; border-top: 1px dashed #f5b896; color: var(--slate-600); font-size: 13px; }
+
+    .filters {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      align-items: center;
+      padding: 14px;
+      border: 1px solid var(--slate-200);
+      border-radius: 14px;
+      background: var(--white);
+      position: sticky;
+      top: 10px;
+      z-index: 10;
+      box-shadow: var(--shadow-md);
+    }
+    .search {
+      min-width: min(100%, 320px);
+      flex: 1 1 260px;
+      height: 42px;
+      padding: 0 13px;
+      border: 1px solid var(--slate-300);
+      border-radius: 10px;
+      color: var(--navy-950);
+      background: var(--white);
+      outline: none;
+    }
+    .search:focus { border-color: var(--orange-500); box-shadow: 0 0 0 4px rgba(244, 91, 10, .12); }
+    .testcases { display: grid; gap: 10px; margin-top: 16px; }
+    .testcase {
+      border: 1px solid var(--slate-200);
+      border-radius: 14px;
+      background: var(--white);
+      overflow: clip;
+    }
+    .testcase[hidden] { display: none; }
+    .testcase summary {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 15px 17px;
+      cursor: pointer;
+      list-style: none;
+    }
+    .testcase summary::-webkit-details-marker { display: none; }
+    .testcase summary::after { content: "+"; margin-left: auto; color: var(--orange-600); font-size: 22px; font-weight: 700; }
+    .testcase[open] summary::after { content: "−"; }
+    .testcase-title { min-width: 0; font-weight: 780; }
+    .case-body {
+      display: grid;
+      grid-template-columns: minmax(180px, .7fr) minmax(0, 1.3fr);
+      gap: 18px;
+      padding: 18px;
+      border-top: 1px solid var(--slate-200);
+      background: var(--slate-50);
+    }
+    .case-meta { color: var(--slate-600); }
+    .case-meta div + div { margin-top: 8px; }
+    .case-steps { display: grid; gap: 10px; }
+    .step { padding: 10px 12px; border-left: 3px solid var(--orange-400); background: var(--white); }
+    .expected { margin: 14px 0 0; padding-left: 20px; }
+    .expected li + li { margin-top: 4px; }
+    .empty-filter { display: none; padding: 28px; color: var(--slate-600); text-align: center; }
+
+    .question-list { display: grid; gap: 10px; margin: 0; padding: 0; counter-reset: question; list-style: none; }
+    .question-list li {
+      position: relative;
+      padding: 14px 16px 14px 54px;
+      border: 1px solid #f4d8a4;
+      border-radius: 13px;
+      background: #fffbeb;
+      color: #664d03;
+    }
+    .question-list li::before {
+      counter-increment: question;
+      content: counter(question);
+      position: absolute;
+      top: 12px;
+      left: 14px;
+      display: grid;
+      width: 28px;
+      height: 28px;
+      place-items: center;
+      border-radius: 9px;
+      color: #fff;
+      background: #d99100;
+      font-weight: 850;
+    }
+
+    .footer {
+      margin-top: 64px;
+      padding-top: 24px;
+      border-top: 1px solid var(--slate-200);
+      color: var(--slate-500);
+      text-align: center;
+    }
+
+    @media (max-width: 1120px) {
+      :root { --sidebar: 244px; }
+      .column-grid, .grid-3, .formula-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .stats { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
+    @media (max-width: 780px) {
+      .sidebar { position: static; width: auto; padding: 14px; }
+      .brand { padding-bottom: 12px; }
+      .nav-title, .sidebar-footer { display: none; }
+      .nav { display: flex; overflow-x: auto; padding-top: 10px; }
+      .nav a { flex: 0 0 auto; }
+      main { width: 100%; margin: 0; padding: 18px 14px 60px; }
+      .hero { border-radius: 18px; }
+      .grid-2, .grid-3, .grid-4, .column-grid, .formula-grid, .case-body { grid-template-columns: 1fr; }
+      .section-head { align-items: start; flex-direction: column; }
+      .filters { position: static; }
+    }
+    @media print {
+      body { background: #fff; font-size: 11px; }
+      .sidebar, .hero-actions, .filters, .skip-link { display: none !important; }
+      main { width: 100%; margin: 0; padding: 0; }
+      .hero { color: #111; background: #fff; border: 2px solid #111; box-shadow: none; }
+      .hero p { color: #333; }
+      .panel, .card, .stat, .mockup, .testcase { break-inside: avoid; box-shadow: none; }
+      .section-head { margin-top: 32px; }
+      .testcase { display: block !important; }
+      .testcase summary::after { display: none; }
+      .testcase:not([open]) .case-body { display: grid; }
+    }
+
+    .doc-shell { min-width: 0; }
+    .doc-toolbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      margin-bottom: 18px;
+      padding: 14px 16px;
+      border: 1px solid var(--slate-200);
+      border-radius: 14px;
+      background: rgba(255,255,255,.92);
+      box-shadow: var(--shadow-sm);
+    }
+    .doc-toolbar-left, .doc-toolbar-right { display: flex; flex-wrap: wrap; align-items: center; gap: 9px; }
+    .sync-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      padding: 6px 10px;
+      border-radius: 999px;
+      color: #067647;
+      background: #ecfdf3;
+      border: 1px solid #abefc6;
+      font-size: 12px;
+      font-weight: 800;
+    }
+    .sync-badge::before { content: "✓"; }
+    .hash { color: var(--slate-500); font: 12px ui-monospace, SFMono-Regular, Menlo, monospace; }
+    .markdown-body {
+      padding: clamp(24px, 4vw, 54px);
+      border: 1px solid var(--slate-200);
+      border-radius: var(--radius-lg);
+      background: var(--white);
+      box-shadow: var(--shadow-md);
+      overflow: hidden;
+    }
+    .markdown-body > h1 {
+      position: relative;
+      margin: -54px -54px 42px;
+      padding: 62px 54px 54px;
+      color: var(--white);
+      background:
+        radial-gradient(circle at 88% 10%, rgba(255,122,50,.36), transparent 20rem),
+        linear-gradient(115deg, var(--navy-950), #243047 68%, #713209);
+      font-size: clamp(34px, 5vw, 62px);
+      line-height: 1.05;
+      letter-spacing: -.045em;
+    }
+    .markdown-body h2 {
+      margin: 70px 0 24px;
+      padding: 0 0 13px;
+      border-bottom: 2px solid var(--slate-200);
+      font-size: clamp(27px, 4vw, 39px);
+      line-height: 1.15;
+      letter-spacing: -.035em;
+      scroll-margin-top: 24px;
+    }
+    .markdown-body h2::first-letter { color: var(--orange-600); }
+    .markdown-body h3 {
+      margin: 38px 0 16px;
+      color: var(--navy-900);
+      font-size: 23px;
+      line-height: 1.25;
+      letter-spacing: -.02em;
+      scroll-margin-top: 24px;
+    }
+    .markdown-body h4 {
+      margin: 28px 0 12px;
+      color: var(--orange-700);
+      font-size: 17px;
+      scroll-margin-top: 24px;
+    }
+    .markdown-body p { margin: 12px 0; }
+    .markdown-body strong { color: var(--navy-900); }
+    .markdown-body ul, .markdown-body ol { padding-left: 1.35rem; }
+    .markdown-body li { margin: 6px 0; }
+    .markdown-body li::marker { color: var(--orange-500); font-weight: 800; }
+    .markdown-body hr {
+      height: 1px;
+      margin: 48px 0;
+      border: 0;
+      background: linear-gradient(90deg, transparent, var(--slate-300), transparent);
+    }
+    .markdown-body > p[align="center"] {
+      margin: 22px 0 28px;
+      padding: 12px;
+      border: 1px solid var(--slate-200);
+      border-radius: 18px;
+      background: linear-gradient(145deg, #fff, #f5f7fa);
+      box-shadow: var(--shadow-md);
+    }
+    .markdown-body > p[align="center"] a { display: inline-block; max-width: 100%; }
+    .markdown-body > p[align="center"] img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+      margin: auto;
+      border-radius: 12px;
+    }
+    .markdown-body > p[align="center"] em {
+      display: block;
+      margin-top: 10px;
+      color: var(--slate-500);
+      font-size: 13px;
+    }
+    .table-wrap {
+      width: 100%;
+      margin: 18px 0 28px;
+      overflow: auto;
+      border: 1px solid var(--slate-200);
+      border-radius: 15px;
+      background: var(--white);
+      box-shadow: var(--shadow-sm);
+    }
+    .markdown-body table {
+      width: 100%;
+      min-width: 720px;
+      border-collapse: separate;
+      border-spacing: 0;
+      font-size: 14px;
+    }
+    .markdown-body th {
+      position: sticky;
+      top: 0;
+      z-index: 2;
+      padding: 12px 14px;
+      color: var(--white);
+      background: var(--navy-900);
+      border-bottom: 1px solid var(--navy-800);
+      text-align: left;
+      white-space: nowrap;
+    }
+    .markdown-body td {
+      padding: 12px 14px;
+      border-bottom: 1px solid var(--slate-200);
+      vertical-align: top;
+    }
+    .markdown-body tbody tr:nth-child(even) td { background: var(--slate-50); }
+    .markdown-body tbody tr:hover td { background: var(--orange-50); }
+    .markdown-body tbody tr:last-child td { border-bottom: 0; }
+    .markdown-body td img { display: block; width: 36px; height: 36px; max-width: none; }
+    .markdown-body pre {
+      position: relative;
+      margin: 16px 0 24px;
+      padding: 18px 20px;
+      overflow: auto;
+      border: 1px solid #ffd3bd;
+      border-radius: 14px;
+      color: #fff7ed;
+      background: linear-gradient(145deg, #172033, #222f48);
+      box-shadow: var(--shadow-sm);
+      font: 13px/1.75 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    }
+    .markdown-body pre code { padding: 0; border: 0; color: inherit; background: none; font: inherit; }
+    .markdown-body blockquote {
+      margin: 18px 0;
+      padding: 13px 16px;
+      border-left: 4px solid var(--orange-500);
+      border-radius: 0 12px 12px 0;
+      color: var(--slate-700);
+      background: var(--orange-50);
+    }
+    .case-tools {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 10px;
+      margin: 12px 0 14px;
+      padding: 13px;
+      border: 1px solid var(--slate-200);
+      border-radius: 13px;
+      background: var(--slate-50);
+    }
+    .case-tools input {
+      flex: 1 1 280px;
+      height: 42px;
+      padding: 0 13px;
+      border: 1px solid var(--slate-300);
+      border-radius: 10px;
+      outline: none;
+    }
+    .case-tools input:focus { border-color: var(--orange-500); box-shadow: 0 0 0 4px rgba(244,91,10,.12); }
+    .case-count { color: var(--orange-700); font-weight: 800; white-space: nowrap; }
+    .testcase-table table { min-width: 1500px; }
+    .testcase-table th:first-child, .testcase-table td:first-child {
+      position: sticky;
+      left: 0;
+      z-index: 1;
+      min-width: 230px;
+      box-shadow: 1px 0 0 var(--slate-200);
+    }
+    .testcase-table th:first-child { z-index: 3; background: var(--navy-900); }
+    .testcase-table td:first-child { background: var(--white); font-weight: 750; }
+    .testcase-table tbody tr:nth-child(even) td:first-child { background: var(--slate-50); }
+    .testcase-table tbody tr:hover td:first-child { background: var(--orange-50); }
+    .source-note {
+      margin-top: 18px;
+      color: var(--slate-500);
+      text-align: center;
+      font-size: 12px;
+    }
+    @media (max-width: 780px) {
+      .doc-toolbar { align-items: flex-start; flex-direction: column; }
+      .markdown-body { padding: 20px 16px; border-radius: 16px; }
+      .markdown-body > h1 { margin: -20px -16px 32px; padding: 40px 20px 34px; }
+      .markdown-body h2 { margin-top: 48px; }
+      .markdown-body table { font-size: 13px; }
+    }
+    @media print {
+      .doc-toolbar, .case-tools { display: none !important; }
+      .markdown-body { padding: 0; border: 0; box-shadow: none; overflow: visible; }
+      .markdown-body > h1 { margin: 0 0 32px; padding: 30px; color: #111; background: #fff; border: 2px solid #111; }
+      .table-wrap { overflow: visible; box-shadow: none; }
+      .markdown-body table { min-width: 0 !important; font-size: 9px; }
+      .markdown-body th { position: static; color: #111; background: #eee; }
+      .testcase-table th:first-child, .testcase-table td:first-child { position: static; }
+    }
+</style>
+</head>
+<body>
+  <a class="skip-link" href="#document">Đi đến nội dung chính</a>
+  <aside class="sidebar" aria-label="Mục lục requirement">
+    <div class="brand">
+      <div class="brand-mark">ics</div>
+      <div><strong>ICS Requirement</strong><small>CD Homework & Test</small></div>
+    </div>
+    <div class="nav-title">Nội dung Markdown</div>
+    <nav id="docNav" class="nav"></nav>
+    <div class="sidebar-footer">
+      HTML được render trực tiếp từ Markdown nguồn.<br>
+      <a href="./homework-test.md">Mở file Markdown</a>
+    </div>
+  </aside>
+  <main class="doc-shell">
+    <div class="doc-toolbar">
+      <div class="doc-toolbar-left">
+        <span class="sync-badge">Đồng bộ 100% từ Markdown</span>
+        <span class="hash">SHA-256: d58a5bef0504…</span>
+      </div>
+      <div class="doc-toolbar-right">
+        <a class="button ghost small" href="./homework-test.md">Xem Markdown</a>
+        <button class="button small" type="button" onclick="window.print()">In / Lưu PDF</button>
+      </div>
+    </div>
+    <article id="document" class="markdown-body" data-source-sha256="d58a5bef0504e476a731cee7d42d58cf98b5133765124dfb0a0a8aa3996e4fb1">
+<h1 id="cd-bai-tap-ve-nha-va-kiem-tra">[CD] Bài tập về nhà và Kiểm tra</h1>
+<blockquote>
+<p>Menu <strong>Bài Tập Về Nhà</strong> trong khoá học của role <strong>CD</strong>: soạn <strong>bộ câu hỏi</strong> cho BTVN của từng bài học và cho từng <strong>bài kiểm tra</strong>, theo kỳ. Bộ câu hỏi được soạn tay, <strong>Import / Export Excel</strong> hoặc <strong>tạo bằng AI</strong> (Generate), kiểm tra bằng <strong>Soát lỗi bằng AI</strong>. Câu hỏi tạo tại đây là dữ liệu của <a href="../library/library.md">Thư viện bài tập</a>.</p>
+<p>Ảnh lấy từ Figma <code>CD-KH-060100</code> → <code>CD-KH-060200</code> (BTVN, Kiểm tra) và <code>CD-KH-030340</code> → <code>CD-KH-030349</code> (Danh sách bài tập, luồng Generate — thiết kế ở Học kỳ / Kiểm tra, dùng chung cho BTVN và Kiểm tra). Điểm khác Figma ghi ngay dưới ảnh; phần chưa có thiết kế ghi rõ là <strong>UI cần bổ sung</strong>. Câu hỏi, điểm, tên bài trong ảnh là dữ liệu mẫu.</p>
+</blockquote>
+<h2 id="1-ui">1. UI</h2>
+<h3 id="khung-man-cay-ky-va-bai">Khung màn, cây kỳ và bài</h3>
+<p align="center">
+  <a href="./images/01-btvn.png"><img src="./images/01-btvn.png" alt="Bài tập về nhà — tab BTVN" width="900" title="Nhấn để xem ảnh gốc"></a><br>
+  <em>Tab BTVN: cây Học kỳ & bài học bên phải, bộ câu hỏi của bài đang chọn bên trái (Figma CD-KH-060100) — nhấn để xem ảnh gốc</em>
+</p>
+
+<p align="center">
+  <a href="./images/02-kiem-tra.png"><img src="./images/02-kiem-tra.png" alt="Bài tập về nhà — tab Kiểm tra" width="900" title="Nhấn để xem ảnh gốc"></a><br>
+  <em>Tab Kiểm tra (Figma CD-KH-060200) — nhấn để xem ảnh gốc</em>
+</p>
+
+<p><strong>Mô tả:</strong></p>
+<ul>
+<li>CD mở menu <code>Bài Tập Về Nhà</code> của khoá học. Vùng phải là panel chọn bài với 2 tab <code>BTVN</code> / <code>Kiểm tra</code>; vùng trái là bộ câu hỏi của bài đang chọn. Góc trên phải ghi <code>Khoá học: &lt;tên khoá&gt; · &lt;cấp độ&gt;</code>.</li>
+</ul>
+<p><strong>Giải thích thành phần:</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Thành phần</th>
+<th>Yêu cầu</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Tab <code>BTVN</code></td>
+<td>Cây theo kỳ: mỗi kỳ (<code>HK I</code>, <code>HK II</code>…) kèm số bài; mở kỳ ra <strong>danh sách lesson của kỳ</strong> theo thứ tự bài học. Mỗi bài kèm badge số câu hỏi (<code>0</code> màu vàng).</td>
+</tr>
+<tr>
+<td>Tab <code>Kiểm tra</code></td>
+<td>Cây theo kỳ giống BTVN: mỗi kỳ mở ra <strong>danh sách bài kiểm tra của kỳ</strong> (vd <code>Mini test 1 · Chào hỏi</code>, <code>Kiểm tra giữa kỳ</code>), kèm badge số câu.</td>
+</tr>
+<tr>
+<td>Ô <code>Tìm bài học…</code> / <code>Tìm bài kiểm tra…</code></td>
+<td>Tìm theo tên bài trong tab đang mở; kỳ chứa bài khớp tự mở.</td>
+</tr>
+<tr>
+<td>Chọn bài</td>
+<td>Bấm bài: dòng tô cam, vùng trái tải bộ câu hỏi của bài. Mặc định kỳ đầu tiên, bài đầu tiên.</td>
+</tr>
+<tr>
+<td>Kỳ <code>Vô hiệu</code></td>
+<td>Vẫn hiện trong cây kèm nhãn <code>Vô hiệu</code>; CD vẫn xem và sửa bộ câu hỏi.</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Điểm cần lưu ý:</strong></p>
+<ul>
+<li>Luồng: chọn kỳ → danh sách lesson (hoặc bài kiểm tra) của kỳ → chọn bài → bộ câu hỏi của bài.</li>
+<li>Kỳ, lesson và bài kiểm tra được định nghĩa ở <strong>Khoá học → Học kỳ</strong> (<a href="../semester/lesson/lesson.md">Tab Bài học</a>, <a href="../semester/test/test.md">Tab Kiểm tra</a>); menu Bài Tập Về Nhà chỉ chọn bài để soạn bộ câu hỏi, không thêm / sửa / xoá kỳ, lesson hay bài kiểm tra.</li>
+<li>BTVN và bộ câu hỏi <strong>không có trạng thái</strong> riêng.</li>
+<li>Kỳ bị <code>Vô hiệu</code>: BTVN của kỳ đó đã được tạo trong lớp trước khi vô hiệu vẫn dùng bình thường ở lớp (học viên vẫn làm, giáo viên vẫn chấm).</li>
+<li>Khác Figma CD-KH-060200: tab Kiểm tra trên Figma là danh sách phẳng; requirement là cây theo kỳ giống BTVN.</li>
+</ul>
+<h4 id="testcase-khung-man-cay-ky-va-bai">Testcase — Khung màn, cây kỳ và bài</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 1: Mở menu Bài tập về nhà</td>
+<td>High</td>
+<td>Smoke</td>
+<td>Flow 1 / REQ01</td>
+<td>CD</td>
+<td>Khoá học có 3 kỳ, HK I có 6 bài</td>
+<td><strong>Given</strong> mở menu Bài Tập Về Nhà<br><strong>When</strong> màn tải xong<br><strong>Then</strong> tab BTVN, HK I mở, chọn bài 1, vùng trái là bộ câu hỏi bài 1</td>
+<td>- Badge số câu đúng từng bài</td>
+</tr>
+<tr>
+<td>Case 2: Chọn bài khác</td>
+<td>High</td>
+<td></td>
+<td>Flow 1 / REQ01</td>
+<td>CD</td>
+<td>Đang ở bài 1</td>
+<td><strong>Given</strong> bấm <code>Bài 4: Mua sắm</code> của HK I<br><strong>When</strong> vùng trái tải<br><strong>Then</strong> tiêu đề <code>BTVN · Bài 4: Mua sắm</code> và bộ câu hỏi bài 4</td>
+<td>- Bài 4 tô cam</td>
+</tr>
+<tr>
+<td>Case 3: Tab Kiểm tra theo kỳ</td>
+<td>High</td>
+<td></td>
+<td>REQ01</td>
+<td>CD</td>
+<td>HK I có 4 mini test và 2 bài kiểm tra</td>
+<td><strong>Given</strong> chọn tab Kiểm tra<br><strong>When</strong> mở HK I<br><strong>Then</strong> hiện 6 bài kiểm tra của HK I</td>
+<td>- Không trộn bài kiểm tra kỳ khác</td>
+</tr>
+<tr>
+<td>Case 4: Tìm bài</td>
+<td>Medium</td>
+<td></td>
+<td>REQ01</td>
+<td>CD</td>
+<td>HK II có bài <code>Thời tiết</code></td>
+<td><strong>Given</strong> nhập <code>thời tiết</code><br><strong>When</strong> tìm<br><strong>Then</strong> HK II tự mở, chỉ còn bài khớp</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Case 5: Kỳ Vô hiệu vẫn dùng ở lớp</td>
+<td>High</td>
+<td></td>
+<td>REQ09</td>
+<td>CD</td>
+<td>Lớp A đã dùng BTVN bài 2 của HK I; HK I chuyển <code>Vô hiệu</code></td>
+<td><strong>Given</strong> học viên lớp A mở BTVN bài 2<br><strong>When</strong> làm và nộp bài<br><strong>Then</strong> vẫn làm và nộp được</td>
+<td>- Cây hiển thị HK I kèm <code>Vô hiệu</code></td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="bo-cau-hoi-thanh-cong-cu-va-the-tong-quan">Bộ câu hỏi: thanh công cụ và thẻ tổng quan</h3>
+<p align="center">
+  <a href="./images/04-danh-sach-bai-tap.png"><img src="./images/04-danh-sach-bai-tap.png" alt="Danh sách bài tập của một bài" width="900" title="Nhấn để xem ảnh gốc"></a><br>
+  <em>Bộ câu hỏi của bài kiểm tra: nút Import / Export Excel, Thêm câu hỏi, Generate và 4 thẻ tổng quan (Figma CD-KH-030340) — nhấn để xem ảnh gốc</em>
+</p>
+
+<p><strong>Mô tả:</strong></p>
+<ul>
+<li>Đầu vùng trái là tên bài, các nút thao tác và 4 thẻ tổng quan của bộ câu hỏi. Áp dụng cho cả BTVN và Kiểm tra.</li>
+</ul>
+<p><strong>Giải thích thành phần:</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Thành phần</th>
+<th>Yêu cầu</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Tiêu đề</td>
+<td><code>BTVN · &lt;tên bài&gt;</code> hoặc <code>&lt;tên bài kiểm tra&gt;</code>; tag <code>N câu hỏi</code>; tag cảnh báo <code>N thiếu đáp án</code> khi có câu chưa có đáp án (không áp dụng câu Giáo viên chấm).</td>
+</tr>
+<tr>
+<td><code>Import Excel</code> / <code>Export Excel</code></td>
+<td>Xem khu vực Import / Export Excel.</td>
+</tr>
+<tr>
+<td><code>Preview mobile</code></td>
+<td>Xem bộ câu hỏi như học viên thấy trên app (<strong>UI cần bổ sung</strong>).</td>
+</tr>
+<tr>
+<td><code>+ Thêm câu hỏi</code></td>
+<td>Mở popup Chọn loại câu.</td>
+</tr>
+<tr>
+<td><code>Tạo câu hỏi bằng AI</code></td>
+<td>Mở popup Generate bài tập bằng AI.</td>
+</tr>
+<tr>
+<td><code>Soát lỗi bằng AI</code></td>
+<td>Xem khu vực Soát lỗi bằng AI.</td>
+</tr>
+<tr>
+<td>Thẻ <code>Tổng số câu</code></td>
+<td>Số câu cha của bộ (câu hỏi con tính trong câu cha).</td>
+</tr>
+<tr>
+<td>Thẻ <code>Tổng điểm</code></td>
+<td>Tổng <code>Điểm</code> các câu cha.</td>
+</tr>
+<tr>
+<td>Thẻ <code>Thời gian làm bài</code></td>
+<td>Chỉ bài kiểm tra: thời gian làm bài (phút) lấy từ cấu hình bài kiểm tra ở Học kỳ.</td>
+</tr>
+<tr>
+<td>Thẻ <code>Cơ cấu theo dạng câu</code></td>
+<td>Số câu theo từng loại câu có trong bộ (vd <code>Trắc nghiệm 3 · Sắp xếp 1 · Câu hỏi con 1</code>).</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Điểm cần lưu ý:</strong></p>
+<ul>
+<li>Thẻ tổng quan cập nhật ngay sau khi thêm, sửa, xoá, import hoặc tạo câu bằng AI.</li>
+<li>Khác Figma CD-KH-060100 / 060200: màn BTVN và Kiểm tra chưa có nút <code>Import Excel</code>, <code>Export Excel</code> và 4 thẻ tổng quan (đã có ở CD-KH-030340); nút tạo bằng AI trên CD-KH-030340 ghi <code>Generate</code>.</li>
+</ul>
+<h4 id="testcase-thanh-cong-cu-va-the-tong-quan">Testcase — Thanh công cụ và thẻ tổng quan</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 6: Thẻ tổng quan đúng bộ câu</td>
+<td>High</td>
+<td></td>
+<td>REQ02</td>
+<td>CD</td>
+<td>Bài kiểm tra có 8 câu (3 Trắc nghiệm, 1 Câu hỏi con 3 câu con…), mỗi câu 10 điểm, thời gian 30 phút</td>
+<td><strong>Given</strong> chọn bài kiểm tra<br><strong>When</strong> xem thẻ<br><strong>Then</strong> 8 câu, 80 điểm, 30 phút, cơ cấu đúng từng loại</td>
+<td>- Câu con không cộng thêm vào Tổng số câu</td>
+</tr>
+<tr>
+<td>Case 7: Tag thiếu đáp án</td>
+<td>Medium</td>
+<td></td>
+<td>REQ02</td>
+<td>CD</td>
+<td>1 câu Trắc nghiệm chưa có đáp án; 2 câu Viết</td>
+<td><strong>Given</strong> xem tiêu đề<br><strong>When</strong> render<br><strong>Then</strong> tag <code>1 thiếu đáp án</code></td>
+<td>- Câu Viết không tính thiếu</td>
+</tr>
+<tr>
+<td>Case 8: BTVN không có thời gian làm bài</td>
+<td>Low</td>
+<td></td>
+<td>REQ02</td>
+<td>CD</td>
+<td>Đang ở tab BTVN</td>
+<td><strong>Given</strong> xem thẻ tổng quan<br><strong>When</strong> render<br><strong>Then</strong> không có thẻ Thời gian làm bài</td>
+<td>-</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="bang-cau-hoi">Bảng câu hỏi</h3>
+<p><strong>Mô tả:</strong></p>
+<ul>
+<li>Bảng các câu hỏi của bài đang chọn, có tìm kiếm, lọc, chọn nhiều, menu thao tác dòng và ô nhập nhanh cuối bảng.</li>
+</ul>
+<p><strong>Giải thích thành phần:</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Thành phần</th>
+<th>Yêu cầu</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Cột</td>
+<td><code>☐</code>, <code>STT</code>, <code>Câu hỏi</code> (nội dung + hướng dẫn), <code>Loại câu</code>, <code>Đáp án đúng</code>, <code>Kiến thức / Kỹ năng</code>, <code>Điểm</code>, <code>⋮</code>.</td>
+</tr>
+<tr>
+<td><code>Đáp án đúng</code></td>
+<td>Theo loại câu; <code>Đọc</code>, <code>Viết</code>, <code>Hình ảnh</code> hiển thị <code>Giáo viên chấm</code>; chưa có đáp án hiển thị <code>— chưa có đáp án —</code> màu cam; <code>Câu hỏi con</code> hiển thị <code>N câu hỏi con</code>.</td>
+</tr>
+<tr>
+<td>Câu hỏi con</td>
+<td>Dòng cha có mũi tên mở / thu các câu con <code>7.1</code>, <code>7.2</code>…; mỗi câu con có loại câu, đáp án và menu <code>⋮</code> riêng. Điểm câu cha là điểm của cả câu.</td>
+</tr>
+<tr>
+<td>Tag <code>AI</code></td>
+<td>Câu tạo bằng AI có tag <code>AI</code> cạnh nội dung; mất khi CD sửa và lưu câu.</td>
+</tr>
+<tr>
+<td>Ô <code>Tìm câu hỏi…</code></td>
+<td>Theo nội dung và hướng dẫn câu hỏi.</td>
+</tr>
+<tr>
+<td>Lọc <code>Loại câu</code></td>
+<td>Chọn nhiều trong 8 loại; mặc định <code>Tất cả</code>.</td>
+</tr>
+<tr>
+<td>Lọc <code>Kiến thức / Kỹ năng</code></td>
+<td>Chọn nhiều cụm kiến thức của khoá hoặc kỹ năng Nghe, Đọc, Viết, Nói; mặc định <code>Tất cả</code>.</td>
+</tr>
+<tr>
+<td>Checkbox</td>
+<td>Chọn nhiều câu để <code>Xoá</code> hàng loạt; checkbox tiêu đề chọn tất cả câu đang hiển thị.</td>
+</tr>
+<tr>
+<td>Menu <code>⋮</code></td>
+<td><code>Sửa</code> (mở popup soạn câu), <code>Xoá</code> (popup xác nhận).</td>
+</tr>
+<tr>
+<td>Nhập nhanh cuối bảng</td>
+<td>Ô <code>Nhập nhanh câu hỏi — nhấn Enter để thêm vào bộ câu hỏi</code>; Enter mở popup Chọn loại câu với Nội dung câu hỏi điền sẵn chữ vừa nhập.</td>
+</tr>
+<tr>
+<td>Phân trang</td>
+<td>8 câu/trang; <code>Hiển thị 1–8 trong N câu hỏi</code>; nút trang trước / sau.</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Điểm cần lưu ý:</strong></p>
+<ul>
+<li>Không có lọc <code>Trạng thái</code> vì câu hỏi và BTVN không có trạng thái.</li>
+<li>Câu hỏi thuộc khoá học đang <code>Công khai</code> không được xoá (quy tắc chung: mục Công khai không xoá), vẫn được sửa; muốn ngừng dùng cả khoá thì chuyển khoá sang <code>Vô hiệu</code>.</li>
+<li>Xoá câu là xoá mềm; số thứ tự các câu sau dồn lên.</li>
+<li>Khác Figma CD-KH-060100 / 060200: bảng chưa có cột <code>Kiến thức / Kỹ năng</code>, lọc <code>Kiến thức / Kỹ năng</code> (đã có ở CD-KH-030340) và còn lọc <code>Trạng thái</code>.</li>
+</ul>
+<h4 id="testcase-bang-cau-hoi">Testcase — Bảng câu hỏi</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 9: Bảng đủ cột</td>
+<td>High</td>
+<td>Smoke</td>
+<td>Flow 1 / REQ03</td>
+<td>CD</td>
+<td>Bài có câu Trắc nghiệm, Viết, Câu hỏi con</td>
+<td><strong>Given</strong> chọn bài<br><strong>When</strong> bảng tải<br><strong>Then</strong> đủ cột; Viết hiện <code>Giáo viên chấm</code>; Câu hỏi con hiện <code>N câu hỏi con</code></td>
+<td>- Không có lọc Trạng thái</td>
+</tr>
+<tr>
+<td>Case 10: Lọc kết hợp</td>
+<td>Medium</td>
+<td></td>
+<td>REQ03</td>
+<td>CD</td>
+<td>Bài có câu Trắc nghiệm gắn Cụm 01 và Kỹ năng Nghe</td>
+<td><strong>Given</strong> lọc Loại câu <code>Trắc nghiệm</code> và Kiến thức / Kỹ năng <code>Kỹ năng: Nghe</code><br><strong>When</strong> áp dụng<br><strong>Then</strong> chỉ còn câu Trắc nghiệm gắn Nghe</td>
+<td>- Thẻ tổng quan vẫn tính cả bộ</td>
+</tr>
+<tr>
+<td>Case 11: Xoá câu</td>
+<td>High</td>
+<td></td>
+<td>Flow 4 / REQ03</td>
+<td>CD</td>
+<td>Bài thuộc khoá <code>Nháp</code></td>
+<td><strong>Given</strong> chọn <code>⋮</code> → <code>Xoá</code> câu 03<br><strong>When</strong> xác nhận<br><strong>Then</strong> câu 03 biến mất, các câu sau dồn số</td>
+<td>- Toast <code>Thành Công</code><br>- Thẻ tổng quan cập nhật</td>
+</tr>
+<tr>
+<td>Case 12: Không xoá câu của khoá Công khai</td>
+<td>High</td>
+<td></td>
+<td>EX05 / REQ03</td>
+<td>CD</td>
+<td>Bài thuộc khoá <code>Công khai</code></td>
+<td><strong>Given</strong> mở <code>⋮</code> hoặc gửi request xoá<br><strong>When</strong> hệ thống xử lý<br><strong>Then</strong> không có <code>Xoá</code>; backend từ chối</td>
+<td>- Vẫn sửa được câu</td>
+</tr>
+<tr>
+<td>Case 13: Nhập nhanh</td>
+<td>Medium</td>
+<td></td>
+<td>Flow 2 / REQ03</td>
+<td>CD</td>
+<td>Đang ở bộ câu hỏi</td>
+<td><strong>Given</strong> nhập <code>你叫什么名字？</code> vào ô nhập nhanh<br><strong>When</strong> nhấn Enter<br><strong>Then</strong> mở popup Chọn loại câu, nội dung điền sẵn</td>
+<td>- Chưa lưu câu đến khi bấm <code>Lưu câu hỏi</code></td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="bai-chua-co-cau-hoi">Bài chưa có câu hỏi</h3>
+<p align="center">
+  <a href="./images/03-btvn-chua-co-cau-hoi.png"><img src="./images/03-btvn-chua-co-cau-hoi.png" alt="Bài chưa có câu hỏi" width="900" title="Nhấn để xem ảnh gốc"></a><br>
+  <em>Bài chưa có câu hỏi (Figma CD-KH-060130) — nhấn để xem ảnh gốc</em>
+</p>
+
+<p><strong>Mô tả:</strong></p>
+<ul>
+<li>Bài chưa có câu nào: vùng trái hiển thị trạng thái rỗng <code>Bài học này chưa có câu hỏi</code> và 2 nút <code>Thêm câu hỏi</code>, <code>Tạo câu hỏi bằng AI</code>.</li>
+</ul>
+<p><strong>Giải thích thành phần:</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Thành phần</th>
+<th>Yêu cầu</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Tiêu đề</td>
+<td><code>BTVN · &lt;tên bài&gt;</code> và tag <code>0 câu hỏi</code>.</td>
+</tr>
+<tr>
+<td><code>Thêm câu hỏi</code></td>
+<td>Mở popup Chọn loại câu.</td>
+</tr>
+<tr>
+<td><code>Tạo câu hỏi bằng AI</code></td>
+<td>Mở popup Generate.</td>
+</tr>
+<tr>
+<td><code>Import Excel</code></td>
+<td>Vẫn dùng được khi bài chưa có câu.</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Điểm cần lưu ý:</strong></p>
+<ul>
+<li>Badge số câu của bài trong cây là <code>0</code> màu vàng.</li>
+</ul>
+<h4 id="testcase-bai-chua-co-cau-hoi">Testcase — Bài chưa có câu hỏi</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 14: Trạng thái rỗng</td>
+<td>Medium</td>
+<td></td>
+<td>REQ03</td>
+<td>CD</td>
+<td>Bài 4 chưa có câu</td>
+<td><strong>Given</strong> chọn bài 4<br><strong>When</strong> vùng trái tải<br><strong>Then</strong> hiện <code>Bài học này chưa có câu hỏi</code> và 2 nút</td>
+<td>- Không có bảng rỗng giả</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="popup-chon-loai-cau">Popup Chọn loại câu</h3>
+<p align="center">
+  <a href="./images/05-popup-chon-loai-cau.png"><img src="./images/05-popup-chon-loai-cau.png" alt="Popup chọn loại câu" width="600" title="Nhấn để xem ảnh gốc"></a><br>
+  <em>Popup Thêm câu hỏi — chọn loại câu (Figma CD-KH-060110) — nhấn để xem ảnh gốc</em>
+</p>
+
+<p><strong>Mô tả:</strong></p>
+<ul>
+<li>Bước đầu khi thêm câu: chọn <strong>một</strong> trong 8 loại câu rồi <code>Tiếp tục</code> sang popup soạn câu.</li>
+</ul>
+<p><strong>Giải thích thành phần:</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Loại câu</th>
+<th>Người chấm</th>
+<th>Mã loại câu (source ICS cũ)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Trắc nghiệm</code></td>
+<td>App chấm</td>
+<td>1 (từ vựng), 5 (câu), 11 (hình ảnh)</td>
+</tr>
+<tr>
+<td><code>Sắp xếp</code></td>
+<td>App chấm</td>
+<td>7</td>
+</tr>
+<tr>
+<td><code>Nối từ</code></td>
+<td>App chấm</td>
+<td>8</td>
+</tr>
+<tr>
+<td><code>Nói</code></td>
+<td>App chấm</td>
+<td>22</td>
+</tr>
+<tr>
+<td><code>Đọc</code></td>
+<td>GV chấm</td>
+<td>3, 10</td>
+</tr>
+<tr>
+<td><code>Viết</code></td>
+<td>GV chấm</td>
+<td>4, 44, 6</td>
+</tr>
+<tr>
+<td><code>Hình ảnh</code></td>
+<td>GV chấm</td>
+<td>2</td>
+</tr>
+<tr>
+<td><code>Câu hỏi con</code></td>
+<td>Theo từng câu con</td>
+<td>Câu có danh sách câu con</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Điểm cần lưu ý:</strong></p>
+<ul>
+<li>Mặc định chọn sẵn <code>Trắc nghiệm</code>; <code>Huỷ</code> đóng popup không lưu.</li>
+<li>Ghi chú dưới lưới: <code>Câu hỏi con: câu cha chứa nhiều câu nhỏ, mỗi câu con chọn một loại câu riêng và chấm điểm riêng.</code></li>
+</ul>
+<h4 id="testcase-popup-chon-loai-cau">Testcase — Popup Chọn loại câu</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 15: Chọn loại và tiếp tục</td>
+<td>High</td>
+<td>Smoke</td>
+<td>Flow 2 / REQ04</td>
+<td>CD</td>
+<td>Bộ câu hỏi đang mở</td>
+<td><strong>Given</strong> bấm <code>+ Thêm câu hỏi</code>, chọn <code>Sắp xếp</code><br><strong>When</strong> bấm <code>Tiếp tục</code><br><strong>Then</strong> mở popup <code>Soạn câu hỏi · Sắp xếp</code></td>
+<td>- Loại câu khoá trong popup soạn</td>
+</tr>
+<tr>
+<td>Case 16: Đủ 8 loại và người chấm</td>
+<td>Medium</td>
+<td></td>
+<td>REQ04</td>
+<td>CD</td>
+<td>Popup đang mở</td>
+<td><strong>Given</strong> xem lưới<br><strong>When</strong> render<br><strong>Then</strong> đủ 8 loại, nhãn App chấm / GV chấm / Theo từng câu con đúng</td>
+<td>-</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="popup-soan-cau-hoi">Popup Soạn câu hỏi</h3>
+<p align="center">
+  <a href="./images/06-popup-soan-cau-hoi.png"><img src="./images/06-popup-soan-cau-hoi.png" alt="Popup soạn câu hỏi Trắc nghiệm" width="520" title="Nhấn để xem ảnh gốc"></a><br>
+  <em>Popup Soạn câu hỏi · Trắc nghiệm (Figma CD-KH-060120) — nhấn để xem ảnh gốc</em>
+</p>
+
+<p><strong>Mô tả:</strong></p>
+<ul>
+<li>Soạn hoặc sửa một câu hỏi. Phần đầu chung cho mọi loại; phần đáp án đổi theo loại câu.</li>
+</ul>
+<p><strong>Giải thích thành phần:</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Yêu cầu</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Tiêu đề</td>
+<td><code>Soạn câu hỏi · &lt;loại câu&gt;</code>; dòng phụ <code>BTVN · &lt;tên bài&gt; · Câu &lt;số câu&gt;</code> hoặc <code>&lt;tên bài kiểm tra&gt; · Câu &lt;số câu&gt;</code>.</td>
+</tr>
+<tr>
+<td><code>Số câu</code> *</td>
+<td>Bắt buộc; số thứ tự câu trong bộ, số nguyên ≥ 1. Thêm mới mặc định là câu tiếp theo cuối bộ; nhập số đã có thì chèn vào vị trí đó, các câu sau dồn xuống.</td>
+</tr>
+<tr>
+<td><code>Loại câu</code> *</td>
+<td>Bắt buộc; lấy từ popup Chọn loại câu, khoá không sửa (icon khoá). Muốn đổi loại thì tạo câu mới.</td>
+</tr>
+<tr>
+<td><code>Kiến thức / Kỹ năng</code> *</td>
+<td>Bắt buộc; chọn <strong>một</strong> cụm kiến thức của khoá học (vd <code>Cụm 01. Chào hỏi</code>) <strong>hoặc</strong> một kỹ năng <code>Nghe</code>, <code>Đọc</code>, <code>Viết</code>, <code>Nói</code>.</td>
+</tr>
+<tr>
+<td><code>Điểm</code> *</td>
+<td>Bắt buộc; số &gt; 0, mặc định 10.</td>
+</tr>
+<tr>
+<td><code>Hướng dẫn</code></td>
+<td>Không bắt buộc; lời dặn hiển thị trên câu (vd <code>Chọn nghĩa đúng của từ</code>).</td>
+</tr>
+<tr>
+<td><code>Nội dung câu hỏi</code> *</td>
+<td>Bắt buộc; nhiều dòng.</td>
+</tr>
+<tr>
+<td><code>Hình ảnh / âm thanh</code></td>
+<td>Không bắt buộc; kéo thả hoặc chọn file, mỗi file tối đa 25MB.</td>
+</tr>
+<tr>
+<td>Đáp án *</td>
+<td>Theo loại câu (bảng dưới).</td>
+</tr>
+<tr>
+<td><code>Giải thích đáp án</code></td>
+<td>Không bắt buộc; hiển thị cho học viên sau khi nộp bài.</td>
+</tr>
+<tr>
+<td><code>Huỷ</code> / <code>Lưu câu hỏi</code></td>
+<td><code>Huỷ</code> đóng, không lưu. <code>Lưu câu hỏi</code> kiểm tra field bắt buộc, lưu và đóng popup.</td>
+</tr>
+</tbody>
+</table></div>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Loại câu</th>
+<th>Phần đáp án</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Trắc nghiệm</code></td>
+<td>4 lựa chọn <code>A</code>–<code>D</code>, chọn đúng một đáp án đúng.</td>
+</tr>
+<tr>
+<td><code>Sắp xếp</code></td>
+<td>Các mảnh theo thứ tự đúng; app xáo trộn khi hiển thị (<strong>UI cần bổ sung</strong>).</td>
+</tr>
+<tr>
+<td><code>Nối từ</code></td>
+<td>Danh sách cặp cột trái – cột phải (<strong>UI cần bổ sung</strong>).</td>
+</tr>
+<tr>
+<td><code>Nói</code></td>
+<td>Câu mẫu để app nhận diện giọng nói (<strong>UI cần bổ sung</strong>).</td>
+</tr>
+<tr>
+<td><code>Đọc</code>, <code>Viết</code>, <code>Hình ảnh</code></td>
+<td>Không có đáp án; giáo viên chấm. Có thể nhập bài mẫu tham khảo (<strong>UI cần bổ sung</strong>).</td>
+</tr>
+<tr>
+<td><code>Câu hỏi con</code></td>
+<td>Danh sách câu con; mỗi câu con chọn loại câu riêng và soạn như câu thường, không có Số câu riêng (đánh <code>N.1</code>, <code>N.2</code>…) (<strong>UI cần bổ sung</strong>).</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Điểm cần lưu ý:</strong></p>
+<ul>
+<li>Thiếu field bắt buộc: báo lỗi đỏ dưới field, chặn lưu.</li>
+<li>Câu thiếu đáp án vẫn được lưu nhưng tính vào tag <code>N thiếu đáp án</code> (trừ loại GV chấm).</li>
+<li>Sửa câu có tag <code>AI</code> rồi lưu thì tag <code>AI</code> mất.</li>
+<li>Khác Figma CD-KH-060120: popup chưa có field <code>Số câu</code> và <code>Kiến thức / Kỹ năng</code>; Figma mới có phần đáp án của Trắc nghiệm.</li>
+</ul>
+<h4 id="testcase-popup-soan-cau-hoi">Testcase — Popup Soạn câu hỏi</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 17: Thêm câu Trắc nghiệm</td>
+<td>High</td>
+<td>Smoke</td>
+<td>Flow 2 / REQ05</td>
+<td>CD</td>
+<td>Bộ có 12 câu</td>
+<td><strong>Given</strong> soạn câu Trắc nghiệm đủ field, gắn <code>Cụm 01. Chào hỏi</code><br><strong>When</strong> bấm <code>Lưu câu hỏi</code><br><strong>Then</strong> câu 13 thêm cuối bảng</td>
+<td>- Toast <code>Thành Công</code><br>- Thẻ tổng quan cập nhật</td>
+</tr>
+<tr>
+<td>Case 18: Thiếu Kiến thức / Kỹ năng</td>
+<td>High</td>
+<td></td>
+<td>EX01 / REQ05</td>
+<td>CD</td>
+<td>Popup đang mở</td>
+<td><strong>Given</strong> bỏ trống Kiến thức / Kỹ năng<br><strong>When</strong> bấm <code>Lưu câu hỏi</code><br><strong>Then</strong> báo lỗi dưới field, không lưu</td>
+<td>- Tương tự khi thiếu Số câu, Điểm, Nội dung</td>
+</tr>
+<tr>
+<td>Case 19: Chèn theo Số câu</td>
+<td>Medium</td>
+<td></td>
+<td>REQ05</td>
+<td>CD</td>
+<td>Bộ có 12 câu</td>
+<td><strong>Given</strong> soạn câu mới với Số câu <code>3</code><br><strong>When</strong> lưu<br><strong>Then</strong> câu mới là câu 3, câu 3–12 cũ thành 4–13</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Case 20: Sửa câu AI</td>
+<td>Medium</td>
+<td></td>
+<td>REQ05 / REQ08</td>
+<td>CD</td>
+<td>Câu 09 có tag <code>AI</code></td>
+<td><strong>Given</strong> <code>⋮</code> → <code>Sửa</code> câu 09, đổi Hướng dẫn<br><strong>When</strong> lưu<br><strong>Then</strong> câu cập nhật, mất tag <code>AI</code></td>
+<td>-</td>
+</tr>
+<tr>
+<td>Case 21: File quá 25MB</td>
+<td>Medium</td>
+<td></td>
+<td>EX02 / REQ05</td>
+<td>CD</td>
+<td>File âm thanh 30MB</td>
+<td><strong>Given</strong> chọn file<br><strong>When</strong> tải lên<br><strong>Then</strong> không thêm file, báo <code>File vượt quá dung lượng cho phép (25MB).</code></td>
+<td>-</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="import-export-excel">Import / Export Excel</h3>
+<p><strong>Mô tả:</strong></p>
+<ul>
+<li><code>Export Excel</code> tải bộ câu hỏi của bài đang chọn ra file <code>.xlsx</code>; <code>Import Excel</code> thêm câu hỏi từ file <code>.xlsx</code> vào cuối bộ câu hỏi của bài đang chọn (<strong>UI popup kết quả cần bổ sung</strong>).</li>
+</ul>
+<p><strong>Giải thích thành phần:</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Thành phần</th>
+<th>Yêu cầu</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Cột file</td>
+<td><strong>Giống cột bảng câu hỏi trên UI</strong>: <code>STT</code>, <code>Câu hỏi</code>, <code>Hướng dẫn</code>, <code>Loại câu</code>, <code>Đáp án đúng</code>, <code>Kiến thức / Kỹ năng</code>, <code>Điểm</code>. Câu hỏi con nằm ở các dòng ngay dưới câu cha, <code>STT</code> dạng <code>7.1</code>, <code>7.2</code>.</td>
+</tr>
+<tr>
+<td>Export</td>
+<td>Xuất toàn bộ câu của bài (không theo bộ lọc đang chọn); tên file <code>&lt;Khoá học&gt;_&lt;Bài&gt;.xlsx</code>.</td>
+</tr>
+<tr>
+<td>Import — dòng bắt buộc</td>
+<td>Mỗi dòng phải có <code>STT</code>, <code>Câu hỏi</code>, <code>Loại câu</code> (một trong 8 loại), <code>Kiến thức / Kỹ năng</code> (cụm của khoá hoặc Nghe, Đọc, Viết, Nói), <code>Điểm</code>.</td>
+</tr>
+<tr>
+<td>Import — lỗi dữ liệu</td>
+<td>Có dòng thiếu field bắt buộc hoặc sai giá trị → <strong>chặn cả file</strong>, không thêm câu nào, hiển thị danh sách lỗi theo số dòng (vd <code>Dòng 5: thiếu Loại câu</code>).</td>
+</tr>
+<tr>
+<td>Import — câu trùng</td>
+<td>Không tự dò hay bỏ câu trùng; mọi dòng hợp lệ đều được thêm. Câu trùng do <strong>Soát lỗi bằng AI</strong> phát hiện.</td>
+</tr>
+<tr>
+<td>Import — thành công</td>
+<td>Thêm vào cuối bộ theo thứ tự <code>STT</code> trong file; Toast <code>Thành Công</code> <code>Đã import N câu hỏi.</code>; gợi ý chạy Soát lỗi bằng AI.</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Điểm cần lưu ý:</strong></p>
+<ul>
+<li>File export dùng lại được để import (cùng cấu trúc cột).</li>
+<li>Chỉ nhận <code>.xlsx</code>; file khác hoặc sai cột tiêu đề → báo lỗi, không import.</li>
+<li>Khác Figma: nút Import / Export mới có ở CD-KH-030340; chưa có popup kết quả import.</li>
+</ul>
+<h4 id="testcase-import-export-excel">Testcase — Import / Export Excel</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 22: Export đúng cột</td>
+<td>High</td>
+<td>Smoke</td>
+<td>Flow 5 / REQ06</td>
+<td>CD</td>
+<td>Bài có 8 câu, 1 câu hỏi con 3 câu con</td>
+<td><strong>Given</strong> đang lọc Loại câu <code>Viết</code><br><strong>When</strong> bấm <code>Export Excel</code><br><strong>Then</strong> file có đủ 8 câu và 3 dòng <code>7.1</code>–<code>7.3</code>, cột như bảng UI</td>
+<td>- Không phụ thuộc bộ lọc</td>
+</tr>
+<tr>
+<td>Case 23: Import thành công</td>
+<td>High</td>
+<td>Smoke</td>
+<td>Flow 5 / REQ06</td>
+<td>CD</td>
+<td>File 10 dòng hợp lệ</td>
+<td><strong>Given</strong> bấm <code>Import Excel</code>, chọn file<br><strong>When</strong> hệ thống xử lý<br><strong>Then</strong> thêm 10 câu vào cuối bộ</td>
+<td>- Toast <code>Đã import 10 câu hỏi.</code></td>
+</tr>
+<tr>
+<td>Case 24: Chặn cả file khi có dòng lỗi</td>
+<td>High</td>
+<td></td>
+<td>EX03 / REQ06</td>
+<td>CD</td>
+<td>File 10 dòng, dòng 5 thiếu Loại câu</td>
+<td><strong>Given</strong> import file<br><strong>When</strong> kiểm tra<br><strong>Then</strong> không thêm câu nào, báo <code>Dòng 5: thiếu Loại câu</code></td>
+<td>- Bộ câu hỏi giữ nguyên</td>
+</tr>
+<tr>
+<td>Case 25: Không tự bỏ câu trùng</td>
+<td>Medium</td>
+<td></td>
+<td>REQ06 / REQ07</td>
+<td>CD</td>
+<td>File có 2 dòng trùng câu đã có</td>
+<td><strong>Given</strong> import file<br><strong>When</strong> thành công<br><strong>Then</strong> cả 2 dòng được thêm</td>
+<td>- Soát lỗi bằng AI báo 2 câu trùng</td>
+</tr>
+<tr>
+<td>Case 26: Export rồi import lại</td>
+<td>Medium</td>
+<td></td>
+<td>REQ06</td>
+<td>CD</td>
+<td>Bài A có 8 câu</td>
+<td><strong>Given</strong> export bài A, import file vào bài B trống<br><strong>When</strong> thành công<br><strong>Then</strong> bài B có 8 câu giống bài A</td>
+<td>-</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="soat-loi-bang-ai">Soát lỗi bằng AI</h3>
+<p><strong>Mô tả:</strong></p>
+<ul>
+<li>Nút <code>Soát lỗi bằng AI</code> cho AI rà toàn bộ câu của bài đang chọn và trả danh sách vấn đề để CD tự xử lý (<strong>UI cần bổ sung</strong>).</li>
+</ul>
+<p><strong>Giải thích thành phần:</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Thành phần</th>
+<th>Yêu cầu</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Phạm vi</td>
+<td>Toàn bộ câu của bài đang chọn, kể cả câu hỏi con.</td>
+</tr>
+<tr>
+<td>Vấn đề phát hiện</td>
+<td>Câu <strong>trùng</strong> (cùng loại câu, nội dung giống hoặc gần giống), thiếu đáp án, đáp án không khớp nội dung, lỗi chính tả / phiên âm, câu không khớp Kiến thức / Kỹ năng đã gắn.</td>
+</tr>
+<tr>
+<td>Kết quả</td>
+<td>Danh sách vấn đề theo số câu, bấm một vấn đề cuộn tới câu tương ứng. Không có vấn đề thì báo <code>Không tìm thấy lỗi.</code></td>
+</tr>
+<tr>
+<td>Xử lý</td>
+<td>AI <strong>không tự sửa hay xoá</strong>; CD sửa hoặc xoá câu bằng menu <code>⋮</code>.</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Điểm cần lưu ý:</strong></p>
+<ul>
+<li>Soát lỗi chỉ đọc dữ liệu, không thay đổi bộ câu hỏi.</li>
+</ul>
+<h4 id="testcase-soat-loi-bang-ai">Testcase — Soát lỗi bằng AI</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 27: Phát hiện câu trùng</td>
+<td>High</td>
+<td></td>
+<td>Flow 7 / REQ07</td>
+<td>CD</td>
+<td>Câu 02 và câu 11 cùng nội dung, cùng loại</td>
+<td><strong>Given</strong> bấm <code>Soát lỗi bằng AI</code><br><strong>When</strong> AI trả kết quả<br><strong>Then</strong> danh sách có vấn đề trùng giữa câu 02 và 11</td>
+<td>- Không tự xoá câu nào</td>
+</tr>
+<tr>
+<td>Case 28: Không có lỗi</td>
+<td>Low</td>
+<td></td>
+<td>REQ07</td>
+<td>CD</td>
+<td>Bộ câu hỏi đúng</td>
+<td><strong>Given</strong> soát lỗi<br><strong>When</strong> AI trả kết quả<br><strong>Then</strong> hiện <code>Không tìm thấy lỗi.</code></td>
+<td>-</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="generate-bai-tap-bang-ai-popup-nhap-yeu-cau">Generate bài tập bằng AI — Popup nhập yêu cầu</h3>
+<p align="center">
+  <a href="./images/07-generate-nhap-prompt.png"><img src="./images/07-generate-nhap-prompt.png" alt="Popup Generate — tab Nhập prompt" width="600" title="Nhấn để xem ảnh gốc"></a><br>
+  <em>Popup Generate bài tập bằng AI, tab Nhập prompt (Figma CD-KH-030341) — nhấn để xem ảnh gốc</em>
+</p>
+
+<p align="center">
+  <a href="./images/08-generate-chon-kien-thuc-ky-nang.png"><img src="./images/08-generate-chon-kien-thuc-ky-nang.png" alt="Popup Generate — tab Chọn kiến thức & kỹ năng" width="600" title="Nhấn để xem ảnh gốc"></a><br>
+  <em>Popup Generate, tab Chọn kiến thức & kỹ năng (Figma CD-KH-030342) — nhấn để xem ảnh gốc</em>
+</p>
+
+<p><strong>Mô tả:</strong></p>
+<ul>
+<li>Bấm <code>Tạo câu hỏi bằng AI</code> mở popup <code>Generate bài tập bằng AI</code> (dòng phụ là tên bài). AI <strong>không tạo câu hỏi ngay</strong> mà sinh một bảng N dòng để CD soát, sửa rồi chọn dòng muốn tạo.</li>
+</ul>
+<p><strong>Giải thích thành phần:</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Yêu cầu</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Tab <code>Nhập prompt</code></td>
+<td><code>Prompt theo yêu cầu</code> * (nhiều dòng).</td>
+</tr>
+<tr>
+<td>Tab <code>Chọn kiến thức &amp; kỹ năng</code></td>
+<td><code>Cụm kiến thức</code> * (tìm cụm, tick ít nhất 1 cụm; mỗi cụm kèm số mục; dòng <code>Đã chọn N cụm · M mục kiến thức</code>); <code>Kỹ năng</code> (tick 0 hoặc nhiều trong Nghe, Nói, Đọc, Viết).</td>
+</tr>
+<tr>
+<td><code>Số câu</code> *</td>
+<td>Bắt buộc, số nguyên ≥ 1; <strong>không giới hạn</strong> số câu mỗi lần.</td>
+</tr>
+<tr>
+<td><code>Dạng câu hỏi</code> *</td>
+<td><code>Tuỳ chọn (AI tự phân bổ)</code> hoặc chọn một / nhiều trong 8 loại câu.</td>
+</tr>
+<tr>
+<td>Ghi chú</td>
+<td><code>Sau khi Generate sẽ hiện bảng N dòng. Mỗi dòng gồm prompt, kiến thức hoặc kỹ năng và loại câu; bạn sửa từng dòng trước khi tạo câu hỏi.</code></td>
+</tr>
+<tr>
+<td><code>Huỷ</code> / <code>Generate</code></td>
+<td><code>Generate</code> chỉ bật khi tab đang dùng đủ field bắt buộc.</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Điểm cần lưu ý:</strong></p>
+<ul>
+<li>Chuyển tab giữ nguyên <code>Số câu</code> và <code>Dạng câu hỏi</code>; chế độ Generate theo tab đang mở khi bấm <code>Generate</code>.</li>
+<li>Khác Figma CD-KH-030341 / 030342: dòng phụ dưới <code>Số câu</code> ghi <code>Tối đa 50 câu mỗi lần</code>; requirement không giới hạn.</li>
+</ul>
+<h4 id="testcase-popup-nhap-yeu-cau-generate">Testcase — Popup nhập yêu cầu Generate</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 29: Generate theo prompt</td>
+<td>High</td>
+<td>Smoke</td>
+<td>Flow 6 / REQ08</td>
+<td>CD</td>
+<td>Bài kiểm tra đang mở</td>
+<td><strong>Given</strong> nhập prompt, Số câu <code>30</code>, Dạng <code>Tuỳ chọn</code><br><strong>When</strong> bấm <code>Generate</code><br><strong>Then</strong> mở trạng thái Đang tạo bảng</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Case 30: Chọn cụm bắt buộc</td>
+<td>High</td>
+<td></td>
+<td>EX06 / REQ08</td>
+<td>CD</td>
+<td>Tab Chọn kiến thức &amp; kỹ năng, chưa tick cụm</td>
+<td><strong>Given</strong> chỉ tick kỹ năng Nghe<br><strong>When</strong> xem nút <code>Generate</code><br><strong>Then</strong> nút khoá</td>
+<td>- Tick 1 cụm thì nút mở</td>
+</tr>
+<tr>
+<td>Case 31: Không giới hạn số câu</td>
+<td>Medium</td>
+<td></td>
+<td>REQ08</td>
+<td>CD</td>
+<td>Popup đang mở</td>
+<td><strong>Given</strong> nhập Số câu <code>80</code><br><strong>When</strong> bấm <code>Generate</code><br><strong>Then</strong> hệ thống chấp nhận, sinh bảng 80 dòng</td>
+<td>- Không báo vượt giới hạn</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="generate-dang-tao-bang-va-loi">Generate — Đang tạo bảng và lỗi</h3>
+<p align="center">
+  <a href="./images/09-generate-dang-tao.png"><img src="./images/09-generate-dang-tao.png" alt="Đang tạo bảng Generate" width="420" title="Nhấn để xem ảnh gốc"></a><br>
+  <em>Đang tạo bảng Generate (Figma CD-KH-030344) — nhấn để xem ảnh gốc</em>
+</p>
+
+<p align="center">
+  <a href="./images/10-generate-loi.png"><img src="./images/10-generate-loi.png" alt="Generate lỗi" width="600" title="Nhấn để xem ảnh gốc"></a><br>
+  <em>Không tạo được bảng Generate (Figma CD-KH-030346) — nhấn để xem ảnh gốc</em>
+</p>
+
+<p><strong>Mô tả:</strong></p>
+<ul>
+<li>Trong lúc AI sinh bảng, popup hiện tiến độ; lỗi thì quay lại popup nhập với dữ liệu đã nhập.</li>
+</ul>
+<p><strong>Giải thích thành phần:</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Thành phần</th>
+<th>Yêu cầu</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Đang tạo bảng Generate</code></td>
+<td>Thanh tiến độ <code>%</code> và dòng <code>Đang tạo N dòng từ prompt của bạn… (x/N dòng)</code>; nút <code>Huỷ</code> dừng tạo, quay lại popup nhập, giữ dữ liệu.</td>
+</tr>
+<tr>
+<td>Lỗi</td>
+<td>Popup nhập hiện thông báo đỏ <code>Không tạo được bảng Generate. Dữ liệu bạn đã nhập vẫn được giữ, hãy thử lại.</code>; nút <code>Generate</code> đổi thành <code>Thử lại</code>.</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Điểm cần lưu ý:</strong></p>
+<ul>
+<li>Huỷ hoặc lỗi không thêm câu nào vào bộ câu hỏi.</li>
+</ul>
+<h4 id="testcase-dang-tao-va-loi">Testcase — Đang tạo và lỗi</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 32: Huỷ khi đang tạo</td>
+<td>Medium</td>
+<td></td>
+<td>Flow 6 / REQ08</td>
+<td>CD</td>
+<td>Đang tạo 9/30 dòng</td>
+<td><strong>Given</strong> bấm <code>Huỷ</code><br><strong>When</strong> popup xử lý<br><strong>Then</strong> quay lại popup nhập, giữ prompt và số câu</td>
+<td>- Không thêm câu</td>
+</tr>
+<tr>
+<td>Case 33: Lỗi tạo bảng</td>
+<td>High</td>
+<td></td>
+<td>EX07 / REQ08</td>
+<td>CD</td>
+<td>AI lỗi</td>
+<td><strong>Given</strong> bấm <code>Generate</code><br><strong>When</strong> lỗi xảy ra<br><strong>Then</strong> thông báo đỏ, nút <code>Thử lại</code>, dữ liệu giữ nguyên</td>
+<td>-</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="generate-bang-n-dong">Generate — Bảng N dòng</h3>
+<p align="center">
+  <a href="./images/11-generate-bang-dong.png"><img src="./images/11-generate-bang-dong.png" alt="Bảng N dòng sau Generate" width="700" title="Nhấn để xem ảnh gốc"></a><br>
+  <em>Bảng 30 dòng sau Generate (Figma CD-KH-030343) — nhấn để xem ảnh gốc</em>
+</p>
+
+<p align="center">
+  <a href="./images/12-generate-xac-nhan-bo-bang.png"><img src="./images/12-generate-xac-nhan-bo-bang.png" alt="Xác nhận bỏ bảng Generate" width="420" title="Nhấn để xem ảnh gốc"></a><br>
+  <em>Popup Bỏ bảng Generate (Figma CD-KH-030345) — nhấn để xem ảnh gốc</em>
+</p>
+
+<p><strong>Mô tả:</strong></p>
+<ul>
+<li>Màn <code>Generate bài tập · N dòng</code>: mỗi dòng là một câu sẽ tạo. CD sửa từng dòng, tick các dòng muốn dùng rồi bấm <code>Thêm N câu đã chọn</code>.</li>
+</ul>
+<p><strong>Giải thích thành phần:</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Thành phần</th>
+<th>Yêu cầu</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Dòng tóm tắt</td>
+<td>Prompt đã nhập (cắt <code>…</code>), <code>Chế độ</code> (Nhập prompt / Chọn kiến thức &amp; kỹ năng), <code>Số câu</code>, <code>Dạng</code>.</td>
+</tr>
+<tr>
+<td>Cột</td>
+<td><code>☐</code>, <code>STT</code>, <code>Prompt</code> (sửa được), <code>Kiến thức / Kỹ năng</code> (dropdown cụm của khoá hoặc kỹ năng), <code>Loại câu</code> (dropdown <code>Tuỳ chọn</code> hoặc 8 loại), <code>⋮</code> (xoá dòng).</td>
+</tr>
+<tr>
+<td>Thanh chọn</td>
+<td><code>Đã chọn x / N dòng</code>; <code>Sửa loại chung</code> (dropdown) + <code>Áp dụng</code> đổi Loại câu cho các dòng đã tick; <code>Bỏ chọn</code>.</td>
+</tr>
+<tr>
+<td><code>Thêm N câu đã chọn</code></td>
+<td>AI tạo câu hỏi cho các dòng đã tick, thêm vào <strong>cuối</strong> bộ câu hỏi; dòng không tick bị bỏ. <code>Tuỳ chọn</code> nghĩa là AI chọn loại câu phù hợp.</td>
+</tr>
+<tr>
+<td><code>Huỷ</code> / nút <code>&lt;</code></td>
+<td>Mở popup <code>Bỏ bảng Generate?</code> (<code>Bảng N dòng và các chỉnh sửa của bạn sẽ bị xoá. Chưa có câu hỏi nào được thêm vào danh sách.</code>, nút <code>Tiếp tục chỉnh sửa</code> / <code>Bỏ bảng</code>).</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Điểm cần lưu ý:</strong></p>
+<ul>
+<li>Mỗi dòng phải có Prompt và Kiến thức / Kỹ năng trước khi thêm; dòng thiếu báo lỗi, chặn thêm.</li>
+<li>Chưa bấm <code>Thêm N câu đã chọn</code> thì chưa có câu nào được tạo.</li>
+</ul>
+<h4 id="testcase-bang-n-dong">Testcase — Bảng N dòng</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 34: Thêm các dòng đã chọn</td>
+<td>High</td>
+<td>Smoke</td>
+<td>Flow 6 / REQ08</td>
+<td>CD</td>
+<td>Bảng 30 dòng, tick 5 dòng</td>
+<td><strong>Given</strong> bấm <code>Thêm 5 câu đã chọn</code><br><strong>When</strong> tạo xong<br><strong>Then</strong> 5 câu thêm vào cuối bộ, có tag <code>AI</code></td>
+<td>- 25 dòng còn lại bị bỏ</td>
+</tr>
+<tr>
+<td>Case 35: Sửa loại chung</td>
+<td>Medium</td>
+<td></td>
+<td>REQ08</td>
+<td>CD</td>
+<td>Tick 5 dòng</td>
+<td><strong>Given</strong> chọn <code>Trắc nghiệm</code> ở Sửa loại chung<br><strong>When</strong> bấm <code>Áp dụng</code><br><strong>Then</strong> 5 dòng đổi Loại câu thành Trắc nghiệm</td>
+<td>- Dòng không tick giữ nguyên</td>
+</tr>
+<tr>
+<td>Case 36: Bỏ bảng</td>
+<td>Medium</td>
+<td></td>
+<td>Flow 6 / REQ08</td>
+<td>CD</td>
+<td>Đã sửa vài dòng</td>
+<td><strong>Given</strong> bấm <code>Huỷ</code><br><strong>When</strong> bấm <code>Bỏ bảng</code><br><strong>Then</strong> quay về bộ câu hỏi, không thêm câu nào</td>
+<td>- <code>Tiếp tục chỉnh sửa</code> giữ bảng</td>
+</tr>
+<tr>
+<td>Case 37: Dòng thiếu Kiến thức / Kỹ năng</td>
+<td>Medium</td>
+<td></td>
+<td>EX06 / REQ08</td>
+<td>CD</td>
+<td>Dòng 04 đã tick, bỏ trống Kiến thức / Kỹ năng</td>
+<td><strong>Given</strong> bấm <code>Thêm N câu đã chọn</code><br><strong>When</strong> kiểm tra<br><strong>Then</strong> dòng 04 báo lỗi, không thêm</td>
+<td>-</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="generate-sau-khi-tao">Generate — Sau khi tạo</h3>
+<p align="center">
+  <a href="./images/13-sau-khi-tao.png"><img src="./images/13-sau-khi-tao.png" alt="Bộ câu hỏi sau khi tạo bằng AI" width="900" title="Nhấn để xem ảnh gốc"></a><br>
+  <em>Bộ câu hỏi sau khi thêm 5 câu tạo bằng AI (Figma CD-KH-030347) — nhấn để xem ảnh gốc</em>
+</p>
+
+<p><strong>Mô tả:</strong></p>
+<ul>
+<li>Sau khi thêm, quay về bộ câu hỏi, tự cuộn tới các câu mới; Toast <code>Thành Công</code> <code>Đã thêm N câu hỏi vào cuối danh sách bài tập.</code></li>
+</ul>
+<p><strong>Giải thích thành phần:</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Thành phần</th>
+<th>Yêu cầu</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Câu mới</td>
+<td>Nền xanh nhạt và tag <code>AI</code>; số câu tiếp nối cuối bộ.</td>
+</tr>
+<tr>
+<td>Badge tổng</td>
+<td><code>N bài tập · M mới</code>.</td>
+</tr>
+<tr>
+<td>Thẻ tổng quan</td>
+<td>Cập nhật Tổng số câu, Tổng điểm, Cơ cấu theo dạng câu.</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Điểm cần lưu ý:</strong></p>
+<ul>
+<li>Câu tạo bằng AI không có trạng thái riêng, dùng như câu soạn tay. Tag <code>AI</code> mất khi CD sửa và lưu câu.</li>
+<li>Khác Figma CD-KH-030347: tag câu mới ghi <code>Mới</code>; requirement dùng tag <code>AI</code>.</li>
+</ul>
+<h4 id="testcase-sau-khi-tao">Testcase — Sau khi tạo</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 38: Cuộn tới câu mới</td>
+<td>Medium</td>
+<td></td>
+<td>REQ08</td>
+<td>CD</td>
+<td>Bộ có 8 câu, thêm 5 câu AI</td>
+<td><strong>Given</strong> thêm thành công<br><strong>When</strong> quay về bộ câu hỏi<br><strong>Then</strong> cuộn tới câu 09–13, có tag <code>AI</code></td>
+<td>- Toast <code>Đã thêm 5 câu hỏi vào cuối danh sách bài tập.</code></td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="toast-phan-hoi-crud">Toast phản hồi CRUD</h3>
+<p align="center">
+  <a href="../../images/01-toast-crud.png"><img src="../../images/01-toast-crud.png" alt="Bốn trạng thái Toast CRUD" width="520" title="Nhấn để xem ảnh gốc"></a><br>
+  <em>Toast Thành Công, Thông Báo, Cảnh Báo và Có Lỗi Xảy Ra — nhấn để xem ảnh gốc</em>
+</p>
+
+<p><strong>Mô tả:</strong></p>
+<ul>
+<li>Phản hồi sau khi thêm, sửa, xoá câu, import, tạo câu bằng AI.</li>
+</ul>
+<p><strong>Giải thích thành phần:</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Loại Toast</th>
+<th>Tiêu đề cố định</th>
+<th>Khi sử dụng</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Thành công</td>
+<td><code>Thành Công</code></td>
+<td><code>Đã thêm câu hỏi.</code>; <code>Đã cập nhật câu hỏi.</code>; <code>Đã xoá N câu hỏi.</code>; <code>Đã import N câu hỏi.</code>; <code>Đã thêm N câu hỏi vào cuối danh sách bài tập.</code></td>
+</tr>
+<tr>
+<td>Cảnh báo</td>
+<td><code>Cảnh Báo</code></td>
+<td><code>Câu hỏi thuộc khoá học đang Công khai không thể xoá.</code>; <code>File vượt quá dung lượng cho phép (25MB).</code>; <code>File import có dòng lỗi, chưa thêm câu nào.</code></td>
+</tr>
+<tr>
+<td>Lỗi</td>
+<td><code>Có Lỗi Xảy Ra</code></td>
+<td>Lưu, xoá, import, export, tạo câu bằng AI thất bại do backend / network.</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Điểm cần lưu ý:</strong></p>
+<ul>
+<li>Mỗi thao tác một Toast; <code>Huỷ</code>, tìm kiếm, lọc, chọn bài, soát lỗi không có Toast CRUD.</li>
+</ul>
+<h4 id="testcase-toast-phan-hoi-crud">Testcase — Toast phản hồi CRUD</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Toast Case 1: Thành công</td>
+<td>High</td>
+<td></td>
+<td>Ràng buộc Toast CRUD</td>
+<td>CD</td>
+<td>Dữ liệu hợp lệ</td>
+<td><strong>Given</strong> lưu, xoá, import hoặc thêm câu AI<br><strong>When</strong> backend thành công<br><strong>Then</strong> Toast <code>Thành Công</code> đúng nội dung</td>
+<td>- Một Toast</td>
+</tr>
+<tr>
+<td>Toast Case 2: Lỗi</td>
+<td>High</td>
+<td></td>
+<td>Ràng buộc Toast CRUD</td>
+<td>CD</td>
+<td>Backend / network lỗi</td>
+<td><strong>Given</strong> lưu hoặc import<br><strong>When</strong> thất bại<br><strong>Then</strong> Toast <code>Có Lỗi Xảy Ra</code></td>
+<td>- Dữ liệu không đổi một phần</td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2 id="2-yeu-cau">2. Yêu cầu</h2>
+<h3 id="21-flow-chinh">2.1. Flow chính</h3>
+<p><strong>Flow 1 / REQ01 / REQ02 / REQ03: Chọn kỳ, bài và xem bộ câu hỏi</strong></p>
+<pre><code class="language-text">CD mở khoá học → Bài Tập Về Nhà
+      → Chọn tab BTVN hoặc Kiểm tra → chọn kỳ → danh sách lesson / bài kiểm tra của kỳ
+      → Chọn bài → vùng trái tải tiêu đề, thẻ tổng quan, bảng câu hỏi (hoặc trạng thái rỗng)
+</code></pre>
+<p><strong>Flow 2 / REQ04 / REQ05: Thêm câu hỏi soạn tay</strong></p>
+<pre><code class="language-text">CD bấm &quot;+ Thêm câu hỏi&quot; (hoặc Enter ở ô nhập nhanh)
+      → Popup Chọn loại câu → chọn 1 trong 8 loại → Tiếp tục
+      → Popup Soạn câu hỏi: Số câu, Kiến thức / Kỹ năng, Điểm, Nội dung, đáp án theo loại…
+      → Lưu câu hỏi: thiếu field bắt buộc → báo lỗi; đủ → lưu, đóng popup, Toast &quot;Đã thêm câu hỏi.&quot;
+</code></pre>
+<p><strong>Flow 3 / REQ05: Sửa câu hỏi</strong></p>
+<pre><code class="language-text">CD bấm ⋮ → Sửa → popup Soạn câu hỏi (loại câu khoá)
+      → Lưu: cập nhật câu; câu có tag AI thì mất tag; Toast &quot;Đã cập nhật câu hỏi.&quot;
+</code></pre>
+<p><strong>Flow 4 / REQ03: Xoá câu hỏi</strong></p>
+<pre><code class="language-text">CD bấm ⋮ → Xoá (hoặc chọn nhiều → Xoá)
+      → Backend kiểm tra khoá học không ở trạng thái Công khai
+      → Popup xác nhận → Xoá: xoá mềm, các câu sau dồn số, Toast &quot;Đã xoá N câu hỏi.&quot;
+</code></pre>
+<p><strong>Flow 5 / REQ06: Export và Import Excel</strong></p>
+<pre><code class="language-text">Export Excel → tải file .xlsx toàn bộ câu của bài, cột như bảng UI
+Import Excel → chọn file .xlsx → kiểm tra từng dòng
+      → Có dòng lỗi: chặn cả file, báo lỗi theo số dòng
+      → Hợp lệ: thêm mọi dòng vào cuối bộ (không bỏ câu trùng), Toast &quot;Đã import N câu hỏi.&quot;
+</code></pre>
+<p><strong>Flow 6 / REQ08: Tạo câu hỏi bằng AI</strong></p>
+<pre><code class="language-text">CD bấm &quot;Tạo câu hỏi bằng AI&quot;
+      → Tab Nhập prompt (prompt) hoặc Chọn kiến thức &amp; kỹ năng (≥ 1 cụm, kỹ năng tuỳ chọn) + Số câu + Dạng câu hỏi
+      → Generate → Đang tạo bảng (Huỷ: quay lại, giữ dữ liệu; lỗi: báo đỏ, Thử lại)
+      → Bảng N dòng: sửa Prompt / Kiến thức / Kỹ năng / Loại câu, tick dòng
+      → Thêm N câu đã chọn → câu thêm vào cuối bộ có tag AI, Toast thành công
+      → Huỷ → popup Bỏ bảng → Bỏ bảng: không thêm câu nào
+</code></pre>
+<p><strong>Flow 7 / REQ07: Soát lỗi bằng AI</strong></p>
+<pre><code class="language-text">CD bấm &quot;Soát lỗi bằng AI&quot; → AI rà toàn bộ câu của bài
+      → Trả danh sách vấn đề (trùng, thiếu đáp án, sai lệch…) theo số câu
+      → CD tự sửa / xoá câu; AI không tự thay đổi dữ liệu
+</code></pre>
+<h3 id="22-ngoai-le">2.2. Ngoại lệ</h3>
+<ul>
+<li><strong>EX01:</strong> Lưu câu thiếu field bắt buộc (Số câu, Loại câu, Kiến thức / Kỹ năng, Điểm, Nội dung câu hỏi) → báo lỗi dưới field, không lưu.</li>
+<li><strong>EX02:</strong> File hình ảnh / âm thanh lớn hơn 25MB → không tải lên; Toast <code>Cảnh Báo</code> <code>File vượt quá dung lượng cho phép (25MB).</code></li>
+<li><strong>EX03:</strong> File import có dòng thiếu field bắt buộc, sai Loại câu, sai Kiến thức / Kỹ năng, không phải <code>.xlsx</code> hoặc sai cột tiêu đề → chặn cả file, báo lỗi theo dòng; không thêm câu nào.</li>
+<li><strong>EX04:</strong> Lưu, import, export thất bại do backend / network → Toast <code>Có Lỗi Xảy Ra</code>; dữ liệu không thay đổi một phần.</li>
+<li><strong>EX05:</strong> Xoá câu thuộc khoá học đang <code>Công khai</code> (giao diện hoặc request trực tiếp) → backend từ chối; Toast <code>Cảnh Báo</code>.</li>
+<li><strong>EX06:</strong> Generate thiếu field bắt buộc (prompt, cụm kiến thức, số câu, dạng câu hỏi) hoặc dòng bảng thiếu Prompt / Kiến thức / Kỹ năng → khoá nút hoặc báo lỗi dòng, không tạo.</li>
+<li><strong>EX07:</strong> AI không tạo được bảng hoặc câu hỏi → báo lỗi, giữ dữ liệu đã nhập, cho <code>Thử lại</code>; không thêm câu nào.</li>
+</ul>
+<h3 id="23-yeu-cau-khac">2.3. Yêu cầu khác</h3>
+<ul>
+<li><strong>REQ01 – Chọn bài theo kỳ:</strong> Tab BTVN: kỳ → lesson của kỳ; tab Kiểm tra: kỳ → bài kiểm tra của kỳ; badge số câu từng bài; tìm theo tên bài; mặc định kỳ đầu, bài đầu.</li>
+<li><strong>REQ02 – Thẻ tổng quan:</strong> Tổng số câu (câu cha), Tổng điểm, Thời gian làm bài (chỉ Kiểm tra), Cơ cấu theo dạng câu; tag <code>N câu hỏi</code>, <code>N thiếu đáp án</code>; cập nhật ngay sau mọi thay đổi.</li>
+<li><strong>REQ03 – Bảng câu hỏi:</strong> Cột STT, Câu hỏi, Loại câu, Đáp án đúng, Kiến thức / Kỹ năng, Điểm; lọc Loại câu, Kiến thức / Kỹ năng và tìm kiếm (không có lọc Trạng thái); câu hỏi con mở / thu; 8 câu/trang; xoá mềm, không xoá câu thuộc khoá <code>Công khai</code>.</li>
+<li><strong>REQ04 – Loại câu:</strong> 8 loại Trắc nghiệm, Sắp xếp, Nối từ, Nói (App chấm); Đọc, Viết, Hình ảnh (GV chấm); Câu hỏi con (theo từng câu con).</li>
+<li><strong>REQ05 – Soạn câu hỏi:</strong> Bắt buộc Số câu, Loại câu (khoá sau khi chọn), Kiến thức hoặc Kỹ năng, Điểm, Nội dung câu hỏi; đáp án theo loại câu; file tối đa 25MB; Số câu trùng thì chèn và dồn các câu sau.</li>
+<li><strong>REQ06 – Import / Export Excel:</strong> Cột file giống bảng UI; export toàn bộ câu của bài; import thêm vào cuối, kiểm tra từng dòng, có dòng lỗi thì chặn cả file; không tự dò câu trùng.</li>
+<li><strong>REQ07 – Soát lỗi bằng AI:</strong> Rà toàn bộ câu của bài, phát hiện câu trùng và các lỗi khác, chỉ báo, không tự sửa.</li>
+<li><strong>REQ08 – Generate bằng AI:</strong> Hai chế độ Nhập prompt / Chọn kiến thức &amp; kỹ năng; Số câu không giới hạn; sinh bảng N dòng để sửa và chọn; chỉ dòng được tick mới tạo câu, thêm vào cuối bộ với tag <code>AI</code>; huỷ / lỗi không thêm câu.</li>
+<li><strong>REQ09 – Không trạng thái và kỳ Vô hiệu:</strong> BTVN, bộ câu hỏi và câu hỏi không có trạng thái riêng (trạng thái hiển thị ở Thư viện theo khoá học). Kỳ <code>Vô hiệu</code>: BTVN đã tạo trong lớp từ kỳ đó trước khi vô hiệu vẫn dùng bình thường.</li>
+</ul>
+<h3 id="24-rang-buoc">2.4. Ràng buộc</h3>
+<h4 id="quyen">Quyền</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Role</th>
+<th style="text-align: center;">Xem bộ câu hỏi</th>
+<th style="text-align: center;">Thêm / sửa câu</th>
+<th style="text-align: center;">Xoá câu (khoá chưa Công khai)</th>
+<th style="text-align: center;">Import / Export Excel</th>
+<th style="text-align: center;">Generate / Soát lỗi bằng AI</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CD</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+</tr>
+<tr>
+<td>Các role khác</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+</tr>
+</tbody>
+</table></div>
+<h4 id="pham-vi-du-lieu">Phạm vi dữ liệu</h4>
+<ul>
+<li>Dữ liệu theo khoá học và trung tâm CD đang chọn; Kiến thức / Kỹ năng chỉ chọn trong cụm của chính khoá học và 4 kỹ năng.</li>
+<li>Mọi request thêm, sửa, xoá, import được backend kiểm tra quyền, khoá học, bài và field bắt buộc; không dựa vào việc ẩn nút.</li>
+</ul>
+<hr />
+<h2 id="3-can-xac-nhan">3. Cần xác nhận</h2>
+<ul>
+<li>Giao diện chi tiết còn thiếu: phần đáp án của Sắp xếp, Nối từ, Nói, Đọc / Viết / Hình ảnh (bài mẫu), Câu hỏi con; popup kết quả Import; kết quả Soát lỗi bằng AI; Preview mobile.</li>
+</ul>
+</article>
+    <p class="source-note">Nguồn: homework-test.md · SHA-256 d58a5bef0504e476a731cee7d42d58cf98b5133765124dfb0a0a8aa3996e4fb1</p>
+  </main>
+  <script>
+    const article = document.getElementById('document');
+    const nav = document.getElementById('docNav');
+    const headings = [...article.querySelectorAll('h2')];
+    headings.forEach((heading, index) => {
+      const link = document.createElement('a');
+      link.href = `#${heading.id}`;
+      const number = document.createElement('span');
+      number.className = 'nav-num';
+      number.textContent = String(index + 1).padStart(2, '0');
+      link.append(number, document.createTextNode(heading.textContent));
+      nav.append(link);
+    });
+
+    const navLinks = [...nav.querySelectorAll('a')];
+    const observer = new IntersectionObserver(entries => {
+      const current = entries.filter(item => item.isIntersecting).sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
+      if (!current) return;
+      navLinks.forEach(link => link.classList.toggle('active', link.hash === `#${current.target.id}`));
+    }, {rootMargin: '-18% 0px -68% 0px', threshold: [0, .2, .5]});
+    headings.forEach(heading => observer.observe(heading));
+    if (navLinks[0]) navLinks[0].classList.add('active');
+
+    const testcaseHeadings = [...article.querySelectorAll('h4, h5')]
+      .filter(heading => heading.textContent.trim().startsWith('Testcase'));
+    const testcaseGroups = testcaseHeadings
+      .map(heading => ({heading, tableWrap: heading.nextElementSibling}))
+      .filter(group => group.tableWrap?.classList.contains('table-wrap'));
+    if (testcaseGroups.length) {
+        const tableWraps = testcaseGroups.map(group => group.tableWrap);
+        tableWraps.forEach(tableWrap => tableWrap.classList.add('testcase-table'));
+        const rows = tableWraps.flatMap(tableWrap => [...tableWrap.querySelectorAll('tbody tr')]);
+        const tools = document.createElement('div');
+        tools.className = 'case-tools';
+        const input = document.createElement('input');
+        input.type = 'search';
+        input.placeholder = 'Tìm testcase, Flow, REQ, EX hoặc nội dung…';
+        input.setAttribute('aria-label', 'Tìm testcase');
+        const count = document.createElement('span');
+        count.className = 'case-count';
+        tools.append(input, count);
+        testcaseGroups[0].heading.before(tools);
+        const filterRows = () => {
+          const query = input.value.trim().toLocaleLowerCase('vi');
+          let visible = 0;
+          rows.forEach(row => {
+            const match = !query || row.textContent.toLocaleLowerCase('vi').includes(query);
+            row.hidden = !match;
+            if (match) visible += 1;
+          });
+          testcaseGroups.forEach(({heading, tableWrap}) => {
+            const hasVisibleRow = [...tableWrap.querySelectorAll('tbody tr')]
+              .some(row => !row.hidden);
+            heading.hidden = !hasVisibleRow;
+            tableWrap.hidden = !hasVisibleRow;
+          });
+          count.textContent = `${visible}/${rows.length} testcase`;
+        };
+        input.addEventListener('input', filterRows);
+        filterRows();
+    }
+  </script>
+</body>
+</html>

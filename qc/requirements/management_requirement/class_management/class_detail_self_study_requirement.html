@@ -1,0 +1,1735 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Requirement Chi tiết lớp học — Menu Tự học">
+  <link rel="icon" href="data:,">
+  <title>Chi tiết lớp học — Menu Tự học — Requirement</title>
+  <style>
+    :root {
+      --orange-700: #c83f00;
+      --orange-600: #e84c00;
+      --orange-500: #f45b0a;
+      --orange-400: #ff7a32;
+      --orange-100: #fff0e8;
+      --orange-50: #fff8f4;
+      --navy-950: #101828;
+      --navy-900: #172033;
+      --navy-800: #243047;
+      --slate-700: #344054;
+      --slate-600: #475467;
+      --slate-500: #667085;
+      --slate-400: #98a2b3;
+      --slate-300: #d0d5dd;
+      --slate-200: #e4e7ec;
+      --slate-100: #f2f4f7;
+      --slate-50: #f8fafc;
+      --white: #ffffff;
+      --green: #159447;
+      --blue: #2154c5;
+      --yellow: #b77900;
+      --red: #c92a2a;
+      --purple: #6941c6;
+      --shadow-sm: 0 1px 2px rgba(16, 24, 40, .06);
+      --shadow-md: 0 12px 32px rgba(16, 24, 40, .10);
+      --shadow-lg: 0 24px 64px rgba(16, 24, 40, .16);
+      --radius-sm: 10px;
+      --radius: 16px;
+      --radius-lg: 24px;
+      --sidebar: 286px;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      color: var(--navy-950);
+      background:
+        radial-gradient(circle at 88% 5%, rgba(244, 91, 10, .10), transparent 24rem),
+        var(--slate-50);
+      font: 15px/1.65 Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      text-rendering: optimizeLegibility;
+    }
+    a { color: inherit; }
+    img { max-width: 100%; }
+    button, input, select { font: inherit; }
+    code {
+      padding: .12rem .38rem;
+      border: 1px solid #fed7c3;
+      border-radius: 6px;
+      color: var(--orange-700);
+      background: var(--orange-50);
+      font: 600 .9em ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    }
+
+    .skip-link {
+      position: fixed;
+      z-index: 999;
+      top: 12px;
+      left: 12px;
+      padding: 10px 14px;
+      border-radius: 9px;
+      color: var(--white);
+      background: var(--navy-950);
+      transform: translateY(-150%);
+    }
+    .skip-link:focus { transform: none; }
+
+    .sidebar {
+      position: fixed;
+      z-index: 30;
+      inset: 0 auto 0 0;
+      width: var(--sidebar);
+      padding: 22px 18px;
+      overflow-y: auto;
+      color: #f8fafc;
+      background:
+        linear-gradient(155deg, rgba(255, 122, 50, .24), transparent 26%),
+        linear-gradient(180deg, #192338 0%, #111827 100%);
+      border-right: 1px solid rgba(255, 255, 255, .08);
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 4px 8px 22px;
+      border-bottom: 1px solid rgba(255, 255, 255, .10);
+    }
+    .brand-mark {
+      display: grid;
+      width: 44px;
+      height: 44px;
+      place-items: center;
+      border-radius: 14px;
+      color: var(--white);
+      background: linear-gradient(135deg, var(--orange-400), var(--orange-600));
+      box-shadow: 0 10px 26px rgba(244, 91, 10, .35);
+      font-weight: 900;
+      letter-spacing: -.06em;
+    }
+    .brand strong { display: block; font-size: 16px; }
+    .brand small { color: #aeb8c9; }
+    .nav-title {
+      margin: 24px 10px 8px;
+      color: #8f9aae;
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+    .nav { display: grid; gap: 4px; }
+    .nav a {
+      display: flex;
+      align-items: center;
+      gap: 11px;
+      padding: 10px 12px;
+      border-radius: 10px;
+      color: #cbd5e1;
+      text-decoration: none;
+      transition: .18s ease;
+    }
+    .nav a:hover, .nav a.active {
+      color: var(--white);
+      background: rgba(255, 255, 255, .09);
+    }
+    .nav a.active { box-shadow: inset 3px 0 var(--orange-400); }
+    .nav-num {
+      display: grid;
+      width: 25px;
+      height: 25px;
+      flex: 0 0 auto;
+      place-items: center;
+      border: 1px solid rgba(255, 255, 255, .15);
+      border-radius: 8px;
+      font-size: 11px;
+      font-weight: 800;
+    }
+    .sidebar-footer {
+      margin-top: 26px;
+      padding: 14px;
+      border: 1px solid rgba(255, 255, 255, .10);
+      border-radius: 14px;
+      color: #aeb8c9;
+      background: rgba(255, 255, 255, .04);
+      font-size: 12px;
+    }
+    .sidebar-footer a { color: #ffd8c5; }
+
+    main {
+      width: min(1500px, calc(100% - var(--sidebar)));
+      margin-left: var(--sidebar);
+      padding: 34px clamp(24px, 4vw, 64px) 80px;
+    }
+    section { scroll-margin-top: 24px; }
+    .hero {
+      position: relative;
+      padding: clamp(30px, 5vw, 56px);
+      overflow: hidden;
+      border: 1px solid rgba(255, 255, 255, .08);
+      border-radius: var(--radius-lg);
+      color: var(--white);
+      background:
+        linear-gradient(105deg, rgba(16, 24, 40, .97) 0%, rgba(23, 32, 51, .94) 62%, rgba(109, 45, 9, .90) 100%);
+      box-shadow: var(--shadow-lg);
+    }
+    .hero::after {
+      content: "";
+      position: absolute;
+      width: 360px;
+      height: 360px;
+      top: -190px;
+      right: -80px;
+      border: 70px solid rgba(255, 122, 50, .15);
+      border-radius: 50%;
+    }
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 10px;
+      border: 1px solid rgba(255, 255, 255, .15);
+      border-radius: 999px;
+      color: #ffd8c5;
+      background: rgba(255, 255, 255, .06);
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+    .hero h1 {
+      max-width: 900px;
+      margin: 18px 0 12px;
+      font-size: clamp(34px, 5vw, 64px);
+      line-height: 1.03;
+      letter-spacing: -.045em;
+    }
+    .hero p { max-width: 780px; margin: 0; color: #cbd5e1; font-size: 17px; }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 25px; }
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      min-height: 42px;
+      padding: 9px 14px;
+      border: 1px solid transparent;
+      border-radius: 10px;
+      color: var(--white);
+      background: var(--orange-500);
+      text-decoration: none;
+      cursor: pointer;
+      transition: .18s ease;
+    }
+    .button:hover { transform: translateY(-1px); background: var(--orange-600); }
+    .button.secondary { border-color: rgba(255, 255, 255, .15); background: rgba(255, 255, 255, .07); }
+    .button.ghost { color: var(--slate-700); border-color: var(--slate-300); background: var(--white); }
+    .button.small { min-height: 36px; padding: 7px 11px; font-size: 13px; }
+
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 14px;
+      margin-top: 18px;
+    }
+    .stat {
+      padding: 18px;
+      border: 1px solid var(--slate-200);
+      border-radius: var(--radius);
+      background: rgba(255, 255, 255, .86);
+      box-shadow: var(--shadow-sm);
+    }
+    .stat strong { display: block; color: var(--orange-600); font-size: 30px; line-height: 1; }
+    .stat span { display: block; margin-top: 7px; color: var(--slate-600); font-weight: 650; }
+
+    .section-head {
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 24px;
+      margin: 64px 0 20px;
+    }
+    .section-kicker {
+      margin: 0 0 6px;
+      color: var(--orange-600);
+      font-size: 12px;
+      font-weight: 850;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+    .section-head h2 { margin: 0; font-size: clamp(27px, 4vw, 40px); letter-spacing: -.035em; }
+    .section-head p { max-width: 600px; margin: 8px 0 0; color: var(--slate-600); }
+
+    .panel {
+      padding: clamp(20px, 3vw, 30px);
+      border: 1px solid var(--slate-200);
+      border-radius: var(--radius-lg);
+      background: var(--white);
+      box-shadow: var(--shadow-sm);
+    }
+    .panel + .panel { margin-top: 18px; }
+    .panel h3 { margin: 0 0 14px; font-size: 21px; letter-spacing: -.02em; }
+    .panel h4 { margin: 26px 0 10px; }
+    .muted { color: var(--slate-600); }
+    .note {
+      padding: 15px 17px;
+      border-left: 4px solid var(--orange-500);
+      border-radius: 0 12px 12px 0;
+      color: var(--slate-700);
+      background: var(--orange-50);
+    }
+
+    .mockup {
+      position: relative;
+      padding: 12px;
+      border: 1px solid var(--slate-200);
+      border-radius: 18px;
+      background: linear-gradient(145deg, #fff, #f4f6f9);
+      box-shadow: var(--shadow-md);
+    }
+    .mockup a { display: block; overflow: hidden; border-radius: 12px; }
+    .mockup img { display: block; width: 100%; transition: transform .3s ease; }
+    .mockup a:hover img { transform: scale(1.01); }
+    .mockup figcaption { padding: 12px 4px 2px; color: var(--slate-600); font-size: 13px; }
+
+    .grid-2 { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
+    .grid-3 { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+    .grid-4 { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 14px; }
+    .card {
+      padding: 18px;
+      border: 1px solid var(--slate-200);
+      border-radius: var(--radius);
+      background: var(--white);
+      box-shadow: var(--shadow-sm);
+    }
+    .card h3, .card h4 { margin: 0 0 8px; }
+    .card p { margin: 0; color: var(--slate-600); }
+    .card-accent { border-top: 4px solid var(--orange-500); }
+
+    .column-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+    .column-item {
+      min-height: 124px;
+      padding: 15px;
+      border: 1px solid var(--slate-200);
+      border-radius: 14px;
+      background: var(--slate-50);
+    }
+    .column-item strong { display: block; margin-bottom: 5px; color: var(--navy-900); }
+    .column-item span { color: var(--slate-600); font-size: 13px; }
+
+    .status-card { display: flex; align-items: center; gap: 12px; }
+    .status-card img { width: 42px; height: 42px; }
+    .status-card small { display: block; color: var(--slate-500); }
+
+    .tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      padding: 4px 9px;
+      border-radius: 999px;
+      color: var(--orange-700);
+      background: var(--orange-100);
+      font-size: 12px;
+      font-weight: 800;
+    }
+    .tag.high { color: #9d174d; background: #fce7f3; }
+    .tag.medium { color: #92400e; background: #fef3c7; }
+    .tag.req { color: #3730a3; background: #e0e7ff; }
+    .tag.ex { color: #b42318; background: #fee4e2; }
+
+    .flow-list { display: grid; gap: 14px; counter-reset: flow; }
+    .flow {
+      position: relative;
+      padding: 22px 22px 22px 68px;
+      border: 1px solid var(--slate-200);
+      border-radius: var(--radius);
+      background: var(--white);
+    }
+    .flow::before {
+      counter-increment: flow;
+      content: counter(flow, decimal-leading-zero);
+      position: absolute;
+      top: 20px;
+      left: 18px;
+      display: grid;
+      width: 36px;
+      height: 36px;
+      place-items: center;
+      border-radius: 11px;
+      color: var(--white);
+      background: var(--orange-500);
+      font-weight: 900;
+    }
+    .flow h3 { margin: 0 0 8px; }
+    .flow ol { margin: 0; padding-left: 20px; color: var(--slate-700); }
+
+    .exception { border-left: 4px solid #ef4444; }
+    .exception strong { color: var(--red); }
+
+    .formula-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; }
+    .formula {
+      padding: 18px;
+      border: 1px solid #ffd6c2;
+      border-radius: 16px;
+      background: linear-gradient(160deg, #fff, var(--orange-50));
+    }
+    .formula h4 { margin: 0 0 12px; color: var(--orange-700); }
+    .fraction { display: grid; justify-items: center; color: var(--navy-900); font-weight: 720; text-align: center; }
+    .fraction .top { padding: 0 10px 7px; border-bottom: 2px solid var(--navy-800); }
+    .fraction .bottom { padding-top: 7px; }
+    .formula .teacher { margin-top: 16px; padding-top: 12px; border-top: 1px dashed #f5b896; color: var(--slate-600); font-size: 13px; }
+
+    .filters {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      align-items: center;
+      padding: 14px;
+      border: 1px solid var(--slate-200);
+      border-radius: 14px;
+      background: var(--white);
+      position: sticky;
+      top: 10px;
+      z-index: 10;
+      box-shadow: var(--shadow-md);
+    }
+    .search {
+      min-width: min(100%, 320px);
+      flex: 1 1 260px;
+      height: 42px;
+      padding: 0 13px;
+      border: 1px solid var(--slate-300);
+      border-radius: 10px;
+      color: var(--navy-950);
+      background: var(--white);
+      outline: none;
+    }
+    .search:focus { border-color: var(--orange-500); box-shadow: 0 0 0 4px rgba(244, 91, 10, .12); }
+    .testcases { display: grid; gap: 10px; margin-top: 16px; }
+    .testcase {
+      border: 1px solid var(--slate-200);
+      border-radius: 14px;
+      background: var(--white);
+      overflow: clip;
+    }
+    .testcase[hidden] { display: none; }
+    .testcase summary {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 15px 17px;
+      cursor: pointer;
+      list-style: none;
+    }
+    .testcase summary::-webkit-details-marker { display: none; }
+    .testcase summary::after { content: "+"; margin-left: auto; color: var(--orange-600); font-size: 22px; font-weight: 700; }
+    .testcase[open] summary::after { content: "−"; }
+    .testcase-title { min-width: 0; font-weight: 780; }
+    .case-body {
+      display: grid;
+      grid-template-columns: minmax(180px, .7fr) minmax(0, 1.3fr);
+      gap: 18px;
+      padding: 18px;
+      border-top: 1px solid var(--slate-200);
+      background: var(--slate-50);
+    }
+    .case-meta { color: var(--slate-600); }
+    .case-meta div + div { margin-top: 8px; }
+    .case-steps { display: grid; gap: 10px; }
+    .step { padding: 10px 12px; border-left: 3px solid var(--orange-400); background: var(--white); }
+    .expected { margin: 14px 0 0; padding-left: 20px; }
+    .expected li + li { margin-top: 4px; }
+    .empty-filter { display: none; padding: 28px; color: var(--slate-600); text-align: center; }
+
+    .question-list { display: grid; gap: 10px; margin: 0; padding: 0; counter-reset: question; list-style: none; }
+    .question-list li {
+      position: relative;
+      padding: 14px 16px 14px 54px;
+      border: 1px solid #f4d8a4;
+      border-radius: 13px;
+      background: #fffbeb;
+      color: #664d03;
+    }
+    .question-list li::before {
+      counter-increment: question;
+      content: counter(question);
+      position: absolute;
+      top: 12px;
+      left: 14px;
+      display: grid;
+      width: 28px;
+      height: 28px;
+      place-items: center;
+      border-radius: 9px;
+      color: #fff;
+      background: #d99100;
+      font-weight: 850;
+    }
+
+    .footer {
+      margin-top: 64px;
+      padding-top: 24px;
+      border-top: 1px solid var(--slate-200);
+      color: var(--slate-500);
+      text-align: center;
+    }
+
+    @media (max-width: 1120px) {
+      :root { --sidebar: 244px; }
+      .column-grid, .grid-3, .formula-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .stats { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
+    @media (max-width: 780px) {
+      .sidebar { position: static; width: auto; padding: 14px; }
+      .brand { padding-bottom: 12px; }
+      .nav-title, .sidebar-footer { display: none; }
+      .nav { display: flex; overflow-x: auto; padding-top: 10px; }
+      .nav a { flex: 0 0 auto; }
+      main { width: 100%; margin: 0; padding: 18px 14px 60px; }
+      .hero { border-radius: 18px; }
+      .grid-2, .grid-3, .grid-4, .column-grid, .formula-grid, .case-body { grid-template-columns: 1fr; }
+      .section-head { align-items: start; flex-direction: column; }
+      .filters { position: static; }
+    }
+    @media print {
+      body { background: #fff; font-size: 11px; }
+      .sidebar, .hero-actions, .filters, .skip-link { display: none !important; }
+      main { width: 100%; margin: 0; padding: 0; }
+      .hero { color: #111; background: #fff; border: 2px solid #111; box-shadow: none; }
+      .hero p { color: #333; }
+      .panel, .card, .stat, .mockup, .testcase { break-inside: avoid; box-shadow: none; }
+      .section-head { margin-top: 32px; }
+      .testcase { display: block !important; }
+      .testcase summary::after { display: none; }
+      .testcase:not([open]) .case-body { display: grid; }
+    }
+
+    .doc-shell { min-width: 0; }
+    .doc-toolbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      margin-bottom: 18px;
+      padding: 14px 16px;
+      border: 1px solid var(--slate-200);
+      border-radius: 14px;
+      background: rgba(255,255,255,.92);
+      box-shadow: var(--shadow-sm);
+    }
+    .doc-toolbar-left, .doc-toolbar-right { display: flex; flex-wrap: wrap; align-items: center; gap: 9px; }
+    .sync-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      padding: 6px 10px;
+      border-radius: 999px;
+      color: #067647;
+      background: #ecfdf3;
+      border: 1px solid #abefc6;
+      font-size: 12px;
+      font-weight: 800;
+    }
+    .sync-badge::before { content: "✓"; }
+    .hash { color: var(--slate-500); font: 12px ui-monospace, SFMono-Regular, Menlo, monospace; }
+    .markdown-body {
+      padding: clamp(24px, 4vw, 54px);
+      border: 1px solid var(--slate-200);
+      border-radius: var(--radius-lg);
+      background: var(--white);
+      box-shadow: var(--shadow-md);
+      overflow: hidden;
+    }
+    .markdown-body > h1 {
+      position: relative;
+      margin: -54px -54px 42px;
+      padding: 62px 54px 54px;
+      color: var(--white);
+      background:
+        radial-gradient(circle at 88% 10%, rgba(255,122,50,.36), transparent 20rem),
+        linear-gradient(115deg, var(--navy-950), #243047 68%, #713209);
+      font-size: clamp(34px, 5vw, 62px);
+      line-height: 1.05;
+      letter-spacing: -.045em;
+    }
+    .markdown-body h2 {
+      margin: 70px 0 24px;
+      padding: 0 0 13px;
+      border-bottom: 2px solid var(--slate-200);
+      font-size: clamp(27px, 4vw, 39px);
+      line-height: 1.15;
+      letter-spacing: -.035em;
+      scroll-margin-top: 24px;
+    }
+    .markdown-body h2::first-letter { color: var(--orange-600); }
+    .markdown-body h3 {
+      margin: 38px 0 16px;
+      color: var(--navy-900);
+      font-size: 23px;
+      line-height: 1.25;
+      letter-spacing: -.02em;
+      scroll-margin-top: 24px;
+    }
+    .markdown-body h4 {
+      margin: 28px 0 12px;
+      color: var(--orange-700);
+      font-size: 17px;
+      scroll-margin-top: 24px;
+    }
+    .markdown-body p { margin: 12px 0; }
+    .markdown-body strong { color: var(--navy-900); }
+    .markdown-body ul, .markdown-body ol { padding-left: 1.35rem; }
+    .markdown-body li { margin: 6px 0; }
+    .markdown-body li::marker { color: var(--orange-500); font-weight: 800; }
+    .markdown-body hr {
+      height: 1px;
+      margin: 48px 0;
+      border: 0;
+      background: linear-gradient(90deg, transparent, var(--slate-300), transparent);
+    }
+    .markdown-body > p[align="center"] {
+      margin: 22px 0 28px;
+      padding: 12px;
+      border: 1px solid var(--slate-200);
+      border-radius: 18px;
+      background: linear-gradient(145deg, #fff, #f5f7fa);
+      box-shadow: var(--shadow-md);
+    }
+    .markdown-body > p[align="center"] a { display: inline-block; max-width: 100%; }
+    .markdown-body > p[align="center"] img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+      margin: auto;
+      border-radius: 12px;
+    }
+    .markdown-body > p[align="center"] em {
+      display: block;
+      margin-top: 10px;
+      color: var(--slate-500);
+      font-size: 13px;
+    }
+    .table-wrap {
+      width: 100%;
+      margin: 18px 0 28px;
+      overflow: auto;
+      border: 1px solid var(--slate-200);
+      border-radius: 15px;
+      background: var(--white);
+      box-shadow: var(--shadow-sm);
+    }
+    .markdown-body table {
+      width: 100%;
+      min-width: 720px;
+      border-collapse: separate;
+      border-spacing: 0;
+      font-size: 14px;
+    }
+    .markdown-body th {
+      position: sticky;
+      top: 0;
+      z-index: 2;
+      padding: 12px 14px;
+      color: var(--white);
+      background: var(--navy-900);
+      border-bottom: 1px solid var(--navy-800);
+      text-align: left;
+      white-space: nowrap;
+    }
+    .markdown-body td {
+      padding: 12px 14px;
+      border-bottom: 1px solid var(--slate-200);
+      vertical-align: top;
+    }
+    .markdown-body tbody tr:nth-child(even) td { background: var(--slate-50); }
+    .markdown-body tbody tr:hover td { background: var(--orange-50); }
+    .markdown-body tbody tr:last-child td { border-bottom: 0; }
+    .markdown-body td img { display: block; width: 36px; height: 36px; max-width: none; }
+    .markdown-body pre {
+      position: relative;
+      margin: 16px 0 24px;
+      padding: 18px 20px;
+      overflow: auto;
+      border: 1px solid #ffd3bd;
+      border-radius: 14px;
+      color: #fff7ed;
+      background: linear-gradient(145deg, #172033, #222f48);
+      box-shadow: var(--shadow-sm);
+      font: 13px/1.75 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    }
+    .markdown-body pre code { padding: 0; border: 0; color: inherit; background: none; font: inherit; }
+    .markdown-body blockquote {
+      margin: 18px 0;
+      padding: 13px 16px;
+      border-left: 4px solid var(--orange-500);
+      border-radius: 0 12px 12px 0;
+      color: var(--slate-700);
+      background: var(--orange-50);
+    }
+    .case-tools {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 10px;
+      margin: 12px 0 14px;
+      padding: 13px;
+      border: 1px solid var(--slate-200);
+      border-radius: 13px;
+      background: var(--slate-50);
+    }
+    .case-tools input {
+      flex: 1 1 280px;
+      height: 42px;
+      padding: 0 13px;
+      border: 1px solid var(--slate-300);
+      border-radius: 10px;
+      outline: none;
+    }
+    .case-tools input:focus { border-color: var(--orange-500); box-shadow: 0 0 0 4px rgba(244,91,10,.12); }
+    .case-count { color: var(--orange-700); font-weight: 800; white-space: nowrap; }
+    .testcase-table table { min-width: 1500px; }
+    .testcase-table th:first-child, .testcase-table td:first-child {
+      position: sticky;
+      left: 0;
+      z-index: 1;
+      min-width: 230px;
+      box-shadow: 1px 0 0 var(--slate-200);
+    }
+    .testcase-table th:first-child { z-index: 3; background: var(--navy-900); }
+    .testcase-table td:first-child { background: var(--white); font-weight: 750; }
+    .testcase-table tbody tr:nth-child(even) td:first-child { background: var(--slate-50); }
+    .testcase-table tbody tr:hover td:first-child { background: var(--orange-50); }
+    .source-note {
+      margin-top: 18px;
+      color: var(--slate-500);
+      text-align: center;
+      font-size: 12px;
+    }
+    @media (max-width: 780px) {
+      .doc-toolbar { align-items: flex-start; flex-direction: column; }
+      .markdown-body { padding: 20px 16px; border-radius: 16px; }
+      .markdown-body > h1 { margin: -20px -16px 32px; padding: 40px 20px 34px; }
+      .markdown-body h2 { margin-top: 48px; }
+      .markdown-body table { font-size: 13px; }
+    }
+    @media print {
+      .doc-toolbar, .case-tools { display: none !important; }
+      .markdown-body { padding: 0; border: 0; box-shadow: none; overflow: visible; }
+      .markdown-body > h1 { margin: 0 0 32px; padding: 30px; color: #111; background: #fff; border: 2px solid #111; }
+      .table-wrap { overflow: visible; box-shadow: none; }
+      .markdown-body table { min-width: 0 !important; font-size: 9px; }
+      .markdown-body th { position: static; color: #111; background: #eee; }
+      .testcase-table th:first-child, .testcase-table td:first-child { position: static; }
+    }
+</style>
+</head>
+<body>
+  <a class="skip-link" href="#document">Đi đến nội dung chính</a>
+  <aside class="sidebar" aria-label="Mục lục requirement">
+    <div class="brand">
+      <div class="brand-mark">ics</div>
+      <div><strong>ICS Requirement</strong><small>Requirement UI, khóa tự học, bài ôn tập và thời gian học trên app</small></div>
+    </div>
+    <div class="nav-title">Nội dung Markdown</div>
+    <nav id="docNav" class="nav"></nav>
+    <div class="sidebar-footer">
+      HTML được render trực tiếp từ Markdown nguồn.<br>
+      <a href="./class_detail_self_study_requirements.md">Mở file Markdown</a>
+    </div>
+  </aside>
+  <main class="doc-shell">
+    <div class="doc-toolbar">
+      <div class="doc-toolbar-left">
+        <span class="sync-badge">Đồng bộ 100% từ Markdown</span>
+        <span class="hash">SHA-256: 30f9712ca5e8…</span>
+      </div>
+      <div class="doc-toolbar-right">
+        <a class="button ghost small" href="./class_detail_self_study_requirements.md">Xem Markdown</a>
+        <button class="button small" type="button" onclick="window.print()">In / Lưu PDF</button>
+      </div>
+    </div>
+    <article id="document" class="markdown-body" data-source-sha256="30f9712ca5e8cb0216e8e7bfee8150f1fd92686cb41a49ab4770ec6e99f8317b">
+<h1 id="chi-tiet-lop-hoc-menu-tu-hoc">Chi tiết lớp học — Menu Tự học</h1>
+<blockquote>
+<p>Menu Tự học dùng để giao bài ôn tập cho học viên trên app và xem thời gian học theo từng phần. Mỗi lớp chỉ có <strong>một khóa tự học</strong>. Ban đầu chọn <strong>một khóa học thường đã định nghĩa</strong>, hệ thống lấy <strong>toàn bộ bài học của khóa đó</strong> vào Tự học của lớp. Sau đó được thêm một hoặc nhiều bài riêng giống <a href="./class_detail_lessons_requirements.md">Menu Bài học</a>. Nội dung nguồn do <strong>Curriculum Development Handler</strong> quản lý tại <a href="../../course_management/semester/lesson/lesson.md">function Bài học</a>. Đây là ôn tập tự do, không có điều kiện hoàn thành hay thứ tự bắt buộc; thời gian ghi nhận là dữ liệu theo dõi.</p>
+</blockquote>
+<h2 id="1-ui">1. UI</h2>
+<h3 id="khung-menu-va-trang-thai-chua-co-khoa-tu-hoc">Khung menu và trạng thái chưa có khóa tự học</h3>
+<p align="center">
+  <a href="./images/55-class-self-study-empty.png"><img src="./images/55-class-self-study-empty.png" alt="Tự học — Hai vùng chưa có dữ liệu" width="1050" title="Nhấn để xem ảnh gốc"></a><br>
+  <em>Tự học — Hai vùng chưa có dữ liệu — nhấn để xem ảnh gốc</em>
+</p>
+
+<p><strong>Mô tả:</strong></p>
+<p>Chọn menu Tự học trong Chi tiết lớp. UI có vùng trái <strong>Chi tiết buổi học</strong>, vùng phải <strong>Danh sách bài học</strong> và nút <strong>Thêm khóa tự học</strong>.</p>
+<p><strong>Giải thích field/thành phần:</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Thành phần</th>
+<th>Yêu cầu</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Hai vùng dữ liệu</td>
+<td>Khi chưa gán khóa/chưa có bài tự học, cả hai vùng hiển thị icon rỗng và <code>Bảng dữ liệu này đang trống</code> như ảnh; không dựng bài hoặc học viên mẫu.</td>
+</tr>
+<tr>
+<td>Thêm khóa tự học</td>
+<td>Mở popup chọn khóa nguồn. Đây là chọn khóa đã có để ôn tập, không tạo định nghĩa khóa học mới.</td>
+</tr>
+<tr>
+<td>Ngữ cảnh lớp</td>
+<td>Toàn bộ danh sách, bài đang xem và học viên thuộc đúng lớp trên thanh điều hướng.</td>
+</tr>
+<tr>
+<td>Loading/lỗi</td>
+<td>Phân biệt đang tải, dữ liệu rỗng và tải lỗi. Tải lỗi có Thử lại; không thay lỗi bằng màn rỗng hoặc số 0.</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Điểm cần lưu ý:</strong></p>
+<ul>
+<li>Không yêu cầu giáo viên mở buổi để học viên vào bài tự học trên app. Tên Chi tiết buổi học theo UI không tạo buổi điểm danh.</li>
+<li>Admin và Class Handler/Support được add vào lớp có quyền xem/thêm khóa/thêm bài, giống menu Bài học; quyền app của học viên được kiểm tra theo phạm vi lớp được cấp.</li>
+</ul>
+<h4 id="testcase-khung-menu-va-trang-thai-chua-co-khoa-tu-hoc">Testcase — Khung menu và trạng thái chưa có khóa tự học</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 1: Rỗng đúng UI</td>
+<td>High</td>
+<td></td>
+<td>Flow 1 / REQ01</td>
+<td>Admin / Class Handler / Support trong phạm vi lớp</td>
+<td>Lớp chưa có khóa/bài tự học</td>
+<td><strong>Given</strong> mở Tự học<br><strong>When</strong> tải thành công<br><strong>Then</strong> hai vùng hiện đúng trạng thái rỗng</td>
+<td>- Nút Thêm khóa tự học mở popup<br>- Không có bài hoặc thời gian giả</td>
+</tr>
+<tr>
+<td>Case 2: Đúng lớp và phân biệt lỗi</td>
+<td>High</td>
+<td></td>
+<td>EX01 / EX02 / REQ07</td>
+<td>Admin / Class Handler / Support trong phạm vi lớp</td>
+<td>Lớp A/B khác dữ liệu; request chậm/lỗi</td>
+<td><strong>Given</strong> đổi lớp trong khi tải<br><strong>When</strong> response về<br><strong>Then</strong> chỉ dữ liệu đúng lớp hiển thị</td>
+<td>- Có Thử lại khi lỗi<br>- Không dùng rỗng/00:00:00 che lỗi</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="popup-them-khoa-tu-hoc-va-dropdown-khoa-hoc">Popup Thêm khóa tự học và dropdown khóa học</h3>
+<p align="center">
+  <a href="./images/56-class-self-study-add-course.png"><img src="./images/56-class-self-study-add-course.png" alt="Popup Thêm khóa tự học" width="1050" title="Nhấn để xem ảnh gốc"></a><br>
+  <em>Popup Thêm khóa tự học — nhấn để xem ảnh gốc</em>
+</p>
+
+<p align="center">
+  <a href="./images/57-class-self-study-course-options.png"><img src="./images/57-class-self-study-course-options.png" alt="Dropdown chọn khóa học đã định nghĩa" width="1050" title="Nhấn để xem ảnh gốc"></a><br>
+  <em>Dropdown chọn khóa học đã định nghĩa — nhấn để xem ảnh gốc</em>
+</p>
+
+<p><strong>Mô tả:</strong></p>
+<p>Bấm Thêm khóa tự học để mở popup <strong>Thêm khóa tự học</strong>, chọn một khóa trong dropdown rồi bấm Thêm. Hệ thống lấy <strong>full bài học trong khóa đã chọn</strong> để học viên lớp ôn tập.</p>
+<p><strong>Giải thích field/thành phần:</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Thành phần</th>
+<th>Yêu cầu</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Chọn khóa học</td>
+<td>Dropdown một lựa chọn, placeholder <code>Chọn khóa học</code>; tên/phiên bản khóa lấy từ nguồn như ảnh, danh sách dài có cuộn. Chọn theo định danh khóa, không ghép theo tên vì có thể có tên giống nhau.</td>
+</tr>
+<tr>
+<td>Loại khóa nguồn</td>
+<td>Khóa học thường đã define; không bắt buộc phải là loại khóa chuyên biệt Tự học hoặc khóa hiện tại của lớp khi chưa có quy định đó.</td>
+</tr>
+<tr>
+<td>Thêm</td>
+<td>Bắt buộc chọn khóa nguồn hợp lệ. Kiểm tra quyền và lấy toàn bộ bài thuộc đúng khóa; không yêu cầu chọn từng bài hay chỉ lấy trang đầu. Chống gửi lặp và kiểm tra bài nguồn trùng; báo trùng khi có cùng bài nguồn trong danh sách, không lưu một phần khi lỗi.</td>
+</tr>
+<tr>
+<td>Hủy</td>
+<td>Đóng popup, không gán khóa/bài, không có Toast CRUD.</td>
+</tr>
+<tr>
+<td>Sau khi thêm</td>
+<td>Danh sách Tự học có đủ bài của khóa được chọn và được cấp cho học viên lớp trên app. Toast <code>Thêm khóa tự học thành công.</code>. Không thay chương trình Bài học chính của lớp.</td>
+</tr>
+<tr>
+<td>Thêm khóa tiếp theo</td>
+<td><strong>Chỉ một khóa tự học cho mỗi lớp</strong>. Sau khi đã có khóa, chặn thêm khóa thứ hai ở cả UI và kiểm tra khi lưu; không cộng thêm full khóa khác hay tự thay khóa hiện tại. Vẫn được bổ sung bài riêng giống menu Bài học.</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Điểm cần lưu ý:</strong></p>
+<ul>
+<li>Danh sách sau khi chọn khóa phải chứa toàn bộ bài của khóa, kể cả bài ôn/kiểm tra nếu đó là bài trong nguồn. Các bài này vẫn là phần ôn tự do trong Tự học.</li>
+<li>Không gọi flow tạo khóa/bài Curriculum; không sao chép khóa sang chương trình lớp chính.</li>
+<li>Khóa không có bài hiển thị danh sách trống đúng dữ liệu; cách cho phép gán khóa rỗng cần chốt, không tạo bài giả.</li>
+</ul>
+<h4 id="testcase-popup-them-khoa-tu-hoc-va-dropdown-khoa-hoc">Testcase — Popup Thêm khóa tự học và dropdown khóa học</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 3: Chọn khóa lấy toàn bộ bài</td>
+<td>High</td>
+<td>Smoke</td>
+<td>Flow 2 / REQ02</td>
+<td>Admin / Class Handler / Support trong phạm vi lớp</td>
+<td>Khóa A có 35 bài trong dữ liệu nguồn</td>
+<td><strong>Given</strong> chọn A rồi Thêm<br><strong>When</strong> lưu thành công<br><strong>Then</strong> đủ 35 bài A trong Tự học lớp</td>
+<td>- Không chỉ lấy trang đầu hoặc bài đang học<br>- Không lấy bài khóa B<br>- Một Toast thành công</td>
+</tr>
+<tr>
+<td>Case 4: Chọn đúng phiên bản/định danh</td>
+<td>High</td>
+<td></td>
+<td>REQ02 / REQ07</td>
+<td>Admin / Class Handler / Support trong phạm vi lớp</td>
+<td>Hai khóa có tên gần giống hoặc trùng</td>
+<td><strong>Given</strong> chọn khóa có ID A<br><strong>When</strong> xác nhận thêm<br><strong>Then</strong> lấy bài của đúng A</td>
+<td>- Không dùng tên hiển thị làm khóa<br>- Không trộn phiên bản</td>
+</tr>
+<tr>
+<td>Case 5: Thiếu khóa/Hủy</td>
+<td>High</td>
+<td></td>
+<td>EX03 / REQ02</td>
+<td>Admin / Class Handler / Support trong phạm vi lớp</td>
+<td>Popup chưa chọn hoặc đã chọn khóa</td>
+<td><strong>Given</strong> Hủy hoặc Thêm khi chưa chọn<br><strong>When</strong> validate thao tác<br><strong>Then</strong> Hủy không lưu; thiếu khóa báo field</td>
+<td>- Cảnh Báo Vui lòng chọn khóa học. khi xác nhận thiếu<br>- Không tạo bài giả</td>
+</tr>
+<tr>
+<td>Case 6: Lỗi/chống lặp/thiếu quyền</td>
+<td>High</td>
+<td></td>
+<td>EX04 / EX05 / REQ02</td>
+<td>Admin / Class Handler / Support trong phạm vi lớp</td>
+<td>Backend lỗi, request đang lưu hoặc thiếu quyền lớp</td>
+<td><strong>Given</strong> xác nhận thêm khóa<br><strong>When</strong> kiểm tra dữ liệu/quyền<br><strong>Then</strong> không lưu lặp hoặc ngoài quyền</td>
+<td>- Lỗi giữ lựa chọn để thử lại<br>- Một Toast lỗi<br>- Không thêm một phần</td>
+</tr>
+<tr>
+<td>Case 7: Chỉ một khóa và gán đồng thời</td>
+<td>High</td>
+<td></td>
+<td>EX07 / REQ02</td>
+<td>Admin / Class Handler / Support trong phạm vi lớp</td>
+<td>Lớp đã có khóa A hoặc hai user cùng gán khóa</td>
+<td><strong>Given</strong> thử thêm khóa B<br><strong>When</strong> backend kiểm tra trước lưu<br><strong>Then</strong> không tạo khóa thứ hai hoặc thay A</td>
+<td>- Bài/thời gian A giữ nguyên<br>- Không cộng full khóa B<br>- Vẫn được thêm bài riêng</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="danh-sach-bai-tu-hoc-va-chon-bai">Danh sách bài tự học và chọn bài</h3>
+<p align="center">
+  <a href="./images/58-class-self-study-times.png"><img src="./images/58-class-self-study-times.png" alt="Danh sách bài tự học và thời gian từng học viên" width="1050" title="Nhấn để xem ảnh gốc"></a><br>
+  <em>Danh sách bài tự học và thời gian từng học viên — nhấn để xem ảnh gốc</em>
+</p>
+
+<p><strong>Mô tả:</strong></p>
+<p>Sau khi có bài, vùng phải hiển thị card số thứ tự và tên bài. Bấm một bài để xem thời gian của từng học viên theo từng phần ở vùng trái.</p>
+<p><strong>Giải thích field/thành phần:</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Thành phần</th>
+<th>Yêu cầu</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Card bài</td>
+<td>Số thứ tự và tên bài theo danh sách tự học đã gán cho lớp; bài chọn có viền cam như ảnh. Nội dung không fix theo các tên bài mẫu.</td>
+</tr>
+<tr>
+<td>Chọn bài</td>
+<td>Cập nhật bảng thời gian của đúng bài, giữ phạm vi lớp. Việc quản trị viên bấm card không được tính là thời gian học của học viên.</td>
+</tr>
+<tr>
+<td>Thứ tự</td>
+<td>Giữ thứ tự bài nguồn được áp dụng khi lấy khóa và thứ tự bài bổ sung đã lưu. Không tự thêm kéo-thả/xóa bài khi UI chưa đặc tả.</td>
+</tr>
+<tr>
+<td>Tải toàn bộ khóa</td>
+<td><strong>Tải full danh sách bài và học viên, không phân trang/load-more</strong>. Khi mở menu có dữ liệu, <strong>mặc định chọn bài 1</strong> theo thứ tự danh sách. Không có bài thì giữ trạng thái rỗng.</td>
+</tr>
+<tr>
+<td>Bài không bị khóa theo tiến độ</td>
+<td>Học viên có quyền app được vào bất kỳ bài tự học đã gán, không cần hoàn thành bài trước hoặc đợi ngày dạy của lớp.</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Điểm cần lưu ý:</strong></p>
+<ul>
+<li>Danh sách Tự học tách khỏi danh sách Bài học chính dù dùng cùng định nghĩa nguồn. Chọn/thêm bài tự học không sửa điểm danh hoặc % BTVN/Đi học của menu Bài học.</li>
+<li>Không suy ra chỉ số hoàn thành/đạt/chưa đạt từ thời gian đã vào bài.</li>
+</ul>
+<h4 id="testcase-danh-sach-bai-tu-hoc-va-chon-bai">Testcase — Danh sách bài tự học và chọn bài</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 8: Chọn bài đúng bảng thời gian</td>
+<td>High</td>
+<td>Smoke</td>
+<td>Flow 1 / REQ01 / REQ04</td>
+<td>Admin / Class Handler / Support trong phạm vi lớp</td>
+<td>Bài A/B có thời gian khác</td>
+<td><strong>Given</strong> bấm B sau khi xem A<br><strong>When</strong> tải bảng<br><strong>Then</strong> viền cam và toàn bộ ô cùng thuộc B</td>
+<td>- Không dùng thời gian A<br>- Không ghi nhận việc quản trị bấm là học app</td>
+</tr>
+<tr>
+<td>Case 9: Tên bài và thứ tự nguồn</td>
+<td>Medium</td>
+<td></td>
+<td>REQ01 / REQ02</td>
+<td>Admin / Class Handler / Support trong phạm vi lớp</td>
+<td>Khóa có bài khác ảnh</td>
+<td><strong>Given</strong> mở danh sách<br><strong>When</strong> hiển thị<br><strong>Then</strong> tên/thứ tự đúng nguồn được áp dụng</td>
+<td>- Không hard-code 15 bài mẫu<br>- Không sửa định nghĩa nguồn</td>
+</tr>
+<tr>
+<td>Case 10: Không khóa bài ôn theo trình tự</td>
+<td>High</td>
+<td></td>
+<td>Flow 4 / REQ05</td>
+<td>Học viên có quyền app của lớp</td>
+<td>Khóa đã gán; chưa học bài đầu</td>
+<td><strong>Given</strong> vào bài cuối trên app<br><strong>When</strong> kiểm tra quyền<br><strong>Then</strong> được học bài đã gán</td>
+<td>- Không đòi hoàn thành bài trước<br>- Không cần giáo viên mở buổi</td>
+</tr>
+<tr>
+<td>Case 11: Mặc định bài 1 và tải full</td>
+<td>High</td>
+<td></td>
+<td>Flow 1 / REQ01</td>
+<td>Admin / Class Handler / Support trong phạm vi lớp</td>
+<td>Có 35 bài và 25 học viên ở nhiều trạng thái</td>
+<td><strong>Given</strong> mở menu Tự học<br><strong>When</strong> tải xong<br><strong>Then</strong> bài 1 được chọn và đầy đủ bài/học viên khi cuộn</td>
+<td>- Không chọn bài học gần nhất thay bài 1<br>- Không phân trang/load-more hoặc cắt trang đầu</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="them-mot-hoac-nhieu-bai-tu-hoc-rieng">Thêm một hoặc nhiều bài tự học riêng</h3>
+<p align="center">
+  <a href="./images/53-class-lesson-add-empty.png"><img src="./images/53-class-lesson-add-empty.png" alt="UI kế thừa Menu Bài học — Popup thêm bài" width="1050" title="Nhấn để xem ảnh gốc"></a><br>
+  <em>UI kế thừa Menu Bài học — Popup thêm bài — nhấn để xem ảnh gốc</em>
+</p>
+
+<p align="center">
+  <a href="./images/54-class-lesson-add-selected.png"><img src="./images/54-class-lesson-add-selected.png" alt="UI kế thừa — Chọn Khóa học/Bài học nguồn" width="1050" title="Nhấn để xem ảnh gốc"></a><br>
+  <em>UI kế thừa — Chọn Khóa học/Bài học nguồn — nhấn để xem ảnh gốc</em>
+</p>
+
+<p><strong>Mô tả:</strong></p>
+<p>Sau bước thêm khóa tự học ban đầu, được <strong>Thêm bài học mới giống menu Bài học</strong> để bổ sung một hoặc nhiều bài vào danh sách Tự học. Hai ảnh popup là tham chiếu kế thừa; vị trí nút trên UI Tự học sau gán khóa cần xác nhận vì ảnh hiện bị cắt phần bên phải.</p>
+<p><strong>Giải thích field/thành phần:</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Thành phần</th>
+<th>Yêu cầu</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Tiêu đề</td>
+<td>Tự lấy từ bài nguồn đã chọn; chỉ đọc, không sửa. Mỗi bài bổ sung dùng tên của đúng bài nguồn.</td>
+</tr>
+<tr>
+<td>Khóa học/Bài học</td>
+<td>Mỗi dòng chọn một khóa trước, sau đó chọn một bài thuộc khóa đó. Được thêm nhiều dòng; đổi khóa phải bỏ lựa chọn bài không thuộc khóa mới.</td>
+</tr>
+<tr>
+<td>Mô tả</td>
+<td>Được nhập/sửa giống popup Menu Bài học, lưu phạm vi lớp/Tự học; không thay Mô tả Curriculum. <strong>Một ô Mô tả chung cho lần thêm; tất cả bài được thêm trong cùng lần dùng cùng nội dung Mô tả</strong>. Không áp dụng lại mô tả mới cho bài đã có. Validation bắt buộc/giới hạn ký tự còn theo mục 3.</td>
+</tr>
+<tr>
+<td>Thêm</td>
+<td>Kiểm tra toàn bộ dòng hợp lệ và không trùng bài đã có/giữa các dòng rồi bổ sung đúng các bài được chọn; không lấy full khóa ở thao tác thêm bài riêng. Một Toast <code>Thêm bài tự học thành công.</code>; lỗi giữ input.</td>
+</tr>
+<tr>
+<td>Hủy</td>
+<td>Đóng, không bổ sung bài hoặc đổi nguồn, không Toast CRUD.</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Điểm cần lưu ý:</strong></p>
+<ul>
+<li>Thêm khóa: lấy toàn bộ bài của khóa. Thêm bài: chỉ lấy bài được chọn trong từng dòng.</li>
+<li>Bài bổ sung được dùng để ôn tập trên app theo cùng cơ chế tự do và ghi nhận thời gian; không tự tạo buổi lớp hoặc dữ liệu điểm danh.</li>
+<li><strong>Bài trùng phải báo trùng và chặn lưu</strong>: bài đã có từ khóa tự học, bài đã bổ sung trước đó hoặc chọn lặp trong cùng lần thêm. Kiểm tra theo định danh bài nguồn, không chỉ theo tiêu đề. Không bỏ qua dòng trùng rồi thêm một phần; giữ input để sửa. Vị trí bài bổ sung và thao tác sửa/xóa liên kết tự học còn cần chốt.</li>
+</ul>
+<h4 id="testcase-them-mot-hoac-nhieu-bai-tu-hoc-rieng">Testcase — Thêm một hoặc nhiều bài tự học riêng</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 12: Thêm bài chỉ lấy bài đã chọn</td>
+<td>High</td>
+<td></td>
+<td>Flow 3 / REQ03</td>
+<td>Admin / Class Handler / Support trong phạm vi lớp</td>
+<td>Đã có khóa tự học; khóa B có 20 bài</td>
+<td><strong>Given</strong> chọn B/bài 4 trong popup thêm bài<br><strong>When</strong> lưu<br><strong>Then</strong> chỉ bổ sung bài 4 vào Tự học</td>
+<td>- Không thêm cả 20 bài của B<br>- Không bổ sung vào Bài học chính</td>
+</tr>
+<tr>
+<td>Case 13: Một hoặc nhiều dòng nguồn</td>
+<td>High</td>
+<td></td>
+<td>REQ03</td>
+<td>Admin / Class Handler / Support trong phạm vi lớp</td>
+<td>Khóa A/B và các bài hợp lệ</td>
+<td><strong>Given</strong> chọn A/bài 2 rồi thêm dòng B/bài 3<br><strong>When</strong> xác nhận<br><strong>Then</strong> bổ sung hai bài với đúng nguồn từng dòng</td>
+<td>- Không gộp nội dung thành một bài<br>- Tiêu đề tự lấy và khóa sửa<br>- Mô tả được sửa và áp dụng giống nhau cho cả hai bài</td>
+</tr>
+<tr>
+<td>Case 14: Dòng thiếu/sai khóa và lỗi lưu</td>
+<td>High</td>
+<td></td>
+<td>EX03 / EX04 / REQ03</td>
+<td>Admin / Class Handler / Support trong phạm vi lớp</td>
+<td>Một dòng thiếu bài hoặc bài không thuộc khóa</td>
+<td><strong>Given</strong> bấm Thêm<br><strong>When</strong> validate toàn bộ/lưu<br><strong>Then</strong> không lưu một phần hoặc bài sai nguồn</td>
+<td>- Báo đúng dòng lỗi<br>- Giữ input khi lỗi<br>- Một Toast kết quả</td>
+</tr>
+<tr>
+<td>Case 15: Hủy không thay khóa/danh sách</td>
+<td>Medium</td>
+<td></td>
+<td>REQ03</td>
+<td>Admin / Class Handler / Support trong phạm vi lớp</td>
+<td>Popup đã có lựa chọn</td>
+<td><strong>Given</strong> bấm Hủy<br><strong>When</strong> đóng<br><strong>Then</strong> danh sách Tự học giữ nguyên</td>
+<td>- Không sửa nguồn<br>- Không có Toast CRUD</td>
+</tr>
+<tr>
+<td>Case 16: Trùng bài đã có hoặc trùng giữa các dòng</td>
+<td>High</td>
+<td></td>
+<td>EX08 / REQ03 / REQ08</td>
+<td>Admin / Class Handler / Support trong phạm vi lớp</td>
+<td>Bài A đã có từ khóa tự học hoặc hai dòng chọn cùng bài B</td>
+<td><strong>Given</strong> chọn thêm bài trùng kèm một bài mới hợp lệ<br><strong>When</strong> bấm Thêm<br><strong>Then</strong> báo đúng dòng trùng, không lưu toàn bộ lần thêm</td>
+<td>- Một Toast Bài học đã tồn tại trong danh sách Tự học.<br>- Giữ Mô tả/lựa chọn để sửa<br>- Cùng tên nhưng khác định danh bài không tự coi là trùng</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="bang-thoi-gian-hoc-theo-hoc-vien-va-tung-phan">Bảng thời gian học theo học viên và từng phần</h3>
+<p align="center">
+  <a href="./images/58-class-self-study-times.png"><img src="./images/58-class-self-study-times.png" alt="Bảng thời gian Tự học — 8 phần như UI" width="1050" title="Nhấn để xem ảnh gốc"></a><br>
+  <em>Bảng thời gian Tự học — 8 phần như UI — nhấn để xem ảnh gốc</em>
+</p>
+
+<p><strong>Mô tả:</strong></p>
+<p>Vùng Chi tiết buổi học hiển thị một dòng mỗi học viên và thời gian học trên app của <strong>bài tự học đang chọn</strong>, tách theo tám phần trong UI. Bảng dùng để theo dõi, chỉ đọc.</p>
+<p><strong>Giải thích field/thành phần:</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Thành phần</th>
+<th>Yêu cầu</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Định danh dòng</td>
+<td>Số thứ tự và Tên học viên thuộc lớp; mỗi ô gắn đúng lớp–học viên–bài tự học–phần học. <strong>Lấy toàn bộ học viên của lớp, không loại trừ trạng thái</strong>: Đang học, Dự thính, Hoàn thành, Nghỉ học, Rời lớp, Chỉ xem, Xóa. Học viên rời lớp vẫn hiển thị và giữ/xem được thời gian học cũ.</td>
+</tr>
+<tr>
+<td>Học Flashcard</td>
+<td>Thời gian học phần Flashcard của bài tự học đang chọn.</td>
+</tr>
+<tr>
+<td>Bài tập</td>
+<td>Thời gian vào học phần Bài tập; không phải điểm/đã nộp BTVN bắt buộc của buổi chính.</td>
+</tr>
+<tr>
+<td>Từ vựng / Ngữ pháp / Đọc</td>
+<td>Mỗi phần một cột và thời gian riêng, không gộp thành tổng chung.</td>
+</tr>
+<tr>
+<td>Kanji / Nghe / Bảng chữ</td>
+<td>Ba cột riêng theo UI; không gộp Kanji với Bảng chữ hoặc Từ vựng.</td>
+</tr>
+<tr>
+<td>Giá trị thời gian</td>
+<td>Tổng thời gian được app ghi nhận của đúng học viên/bài/phần, hiển thị <strong>HH:mm:ss</strong> như ảnh. Mỗi lần quay lại học tiếp cộng thời gian hợp lệ; không dùng lịch dạy/thời lượng kế hoạch hoặc thời gian của người quản trị mở bảng.</td>
+</tr>
+<tr>
+<td>Giới hạn hiển thị</td>
+<td>Khi tổng thời gian một ô <strong>vượt 24 giờ</strong>, hiển thị tối đa <strong><code>23:59:59</code></strong> theo xác nhận; không hiển thị 24/25 giờ hoặc quay về 00:00:00. Đây là giới hạn hiển thị, vẫn giữ thời gian thực đã ghi nhận trong dữ liệu. Bình thường dùng HH:mm:ss như UI.</td>
+</tr>
+<tr>
+<td>00:00:00</td>
+<td>Khi xác định chưa có thời gian học của phần đó hoặc tổng ghi nhận bằng 0, hiển thị 00:00:00. Dữ liệu tải lỗi/chưa xác định không tự biến thành 0.</td>
+</tr>
+<tr>
+<td>Chỉ đọc</td>
+<td>Không sửa thời gian thủ công, không click ô để mở popup/chấm bài khi UI chưa có đặc tả.</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Điểm cần lưu ý:</strong></p>
+<ul>
+<li>Giữ đúng 8 cột UI; không kế thừa 9 hoạt động của popup Thời gian trong Tổng quan vì hai UI có nhóm khác nhau.</li>
+<li>Không tự tính trung bình toàn lớp hoặc tổng nhiều bài thay ô học viên–bài–phần.</li>
+<li>Bắt đầu tính khi mở phần học đã chốt, không đòi tương tác. Quy tắc ra nền/khóa màn hình, offline, nhiều thiết bị và ánh xạ các phần app cần chốt ở mục 3; không tự cộng cả thời gian đã rời phần học.</li>
+<li>Có dữ liệu mới từ app thì bảng phản ánh sau khi lấy dữ liệu thành công; không yêu cầu realtime/polling khi chưa được chốt.</li>
+</ul>
+<h4 id="testcase-bang-thoi-gian-hoc-theo-hoc-vien-va-tung-phan">Testcase — Bảng thời gian học theo học viên và từng phần</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 17: Đủ tám phần theo UI</td>
+<td>High</td>
+<td></td>
+<td>Flow 5 / REQ04</td>
+<td>Admin / Class Handler / Support trong phạm vi lớp</td>
+<td>Bài có dữ liệu thời gian theo phần</td>
+<td><strong>Given</strong> xem Chi tiết buổi học<br><strong>When</strong> render bảng<br><strong>Then</strong> đủ Flashcard/Bài tập/Từ vựng/Ngữ pháp/Đọc/Kanji/Nghe/Bảng chữ</td>
+<td>- Đúng thứ tự UI<br>- Không dùng 9 phần Tổng quan<br>- Chỉ đọc</td>
+</tr>
+<tr>
+<td>Case 18: Cộng các lần học cùng phần</td>
+<td>High</td>
+<td></td>
+<td>REQ04 / REQ06</td>
+<td>Admin / Class Handler / Support trong phạm vi lớp</td>
+<td>A học Từ vựng cùng bài hai lần hợp lệ 120s và 90s</td>
+<td><strong>Given</strong> xem ô Từ vựng của A<br><strong>When</strong> tổng hợp bản ghi<br><strong>Then</strong> 00:03:30</td>
+<td>- Không hiện chỉ lần cuối 00:01:30<br>- Không cộng sang Bài tập hoặc học viên B</td>
+</tr>
+<tr>
+<td>Case 19: Đúng học viên/bài/phần</td>
+<td>High</td>
+<td></td>
+<td>REQ04 / REQ07</td>
+<td>Admin / Class Handler / Support trong phạm vi lớp</td>
+<td>A/B và bài 1/2 có thời gian khác</td>
+<td><strong>Given</strong> chọn bài 2<br><strong>When</strong> lấy bảng<br><strong>Then</strong> mỗi ô đúng người/bài 2/phần</td>
+<td>- Không tổng tất cả bài<br>- Không trộn giữa lớp dùng cùng source</td>
+</tr>
+<tr>
+<td>Case 20: Zero thật khác lỗi</td>
+<td>High</td>
+<td></td>
+<td>EX01 / REQ04</td>
+<td>Admin / Class Handler / Support trong phạm vi lớp</td>
+<td>Chưa có thời gian học hoặc request lỗi</td>
+<td><strong>Given</strong> mở bảng<br><strong>When</strong> nhận dữ liệu/lỗi<br><strong>Then</strong> zero thật hiện 00:00:00; lỗi có Thử lại</td>
+<td>- Không dựng số 0 khi lỗi<br>- Không dùng thời lượng kế hoạch</td>
+</tr>
+<tr>
+<td>Case 21: Xem bảng không tăng thời gian app</td>
+<td>High</td>
+<td></td>
+<td>REQ04 / REQ06</td>
+<td>Admin / Class Handler / Support trong phạm vi lớp</td>
+<td>App không phát sinh phiên học mới</td>
+<td><strong>Given</strong> mở bảng/chuyển card nhiều lần<br><strong>When</strong> tải lại<br><strong>Then</strong> thời gian học giữ đúng dữ liệu app</td>
+<td>- Không tính thời gian Admin xem bảng<br>- Không sửa thủ công</td>
+</tr>
+<tr>
+<td>Case 22: Full học viên và giữ thời gian khi rời lớp</td>
+<td>High</td>
+<td></td>
+<td>REQ04 / REQ05 / REQ07</td>
+<td>Admin / Class Handler / Support trong phạm vi lớp; Học viên lớp</td>
+<td>Lớp có đủ 7 trạng thái; A đã học 00:10:00 rồi Rời lớp</td>
+<td><strong>Given</strong> mở bảng Tự học và A vào lại ôn trên app<br><strong>When</strong> lấy danh sách/kiểm tra truy cập<br><strong>Then</strong> đủ học viên mọi trạng thái, A giữ thời gian 00:10:00 và vẫn được vào ôn</td>
+<td>- Không lọc Rời lớp/Xóa/Chỉ xem<br>- Không reset thời gian cũ<br>- Dữ liệu vẫn đúng lớp/học viên</td>
+</tr>
+<tr>
+<td>Case 23: Vượt 24 giờ hiển thị max 23:59:59</td>
+<td>High</td>
+<td></td>
+<td>REQ04 / REQ06</td>
+<td>Admin / Class Handler / Support trong phạm vi lớp</td>
+<td>A có 25:30:00 Nghe và 00:05:00 Đọc của cùng bài</td>
+<td><strong>Given</strong> xem bảng thời gian<br><strong>When</strong> định dạng từng ô<br><strong>Then</strong> Nghe hiện 23:59:59, Đọc hiện 00:05:00</td>
+<td>- Giữ dữ liệu gốc 25:30:00<br>- Không reset qua ngày hay cắt số đếm thực<br>- Giới hạn độc lập từng ô</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="hoc-vien-on-tap-tu-do-tren-app-va-ghi-nhan-thoi-gian">Học viên ôn tập tự do trên app và ghi nhận thời gian</h3>
+<p><strong>Mô tả:</strong></p>
+<p>Học viên truy cập các bài Tự học đã gán cho lớp trên app, chọn phần muốn ôn và học lại theo nhu cầu. Phần này đặc tả hành vi nghiệp vụ; UI app không có trong ảnh, không tự tạo màn hình app mới.</p>
+<p><strong>Giải thích field/thành phần:</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Thành phần</th>
+<th>Yêu cầu</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Truy cập bài</td>
+<td>Bài từ khóa tự học và bài được bổ sung xuất hiện trong phạm vi lớp được cấp cho học viên. <strong>Tất cả trạng thái học viên của lớp đều được vào ôn app</strong>, không chặn vì Hoàn thành/Nghỉ học/Rời lớp/Chỉ xem/Xóa. Vẫn kiểm tra đúng học viên và lớp/bài được gán; rời lớp không xóa thời gian cũ.</td>
+</tr>
+<tr>
+<td>Không có ràng buộc ôn tập</td>
+<td>Không yêu cầu học đúng thứ tự, đủ thời gian, đạt điểm, hoàn thành phần trước, điểm danh buổi hoặc nộp bài bắt buộc mới được mở bài tự học khác.</td>
+</tr>
+<tr>
+<td>Học lại</td>
+<td>Được quay lại cùng bài/phần để ôn nhiều lần; thời gian hợp lệ cộng vào đúng bài/phần. Không khóa khi đã học.</td>
+</tr>
+<tr>
+<td>Bắt đầu tính/Nguồn ghi nhận</td>
+<td><strong>Khi học viên mở phần học trên app thì bắt đầu tính thời gian phần đó</strong>, không yêu cầu click/nhập/làm bài mới bắt đầu đếm. Đổi/đóng phần thì kết thúc khoảng học của phần trước. Dữ liệu do phiên học trên app cung cấp, không do thao tác chọn khóa/chọn card trên trang quản trị tạo ra. Ra nền/khóa màn hình còn cần chốt riêng.</td>
+</tr>
+<tr>
+<td>Tách dữ liệu chương trình chính</td>
+<td>Việc vào ôn hoặc tăng thời gian Tự học không tự đánh dấu Có mặt, đã nộp BTVN hoặc hoàn thành buổi chính. Không suy ra nghĩa vụ/điểm thưởng/phạt khi chưa có yêu cầu.</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Điểm cần lưu ý:</strong></p>
+<ul>
+<li>Không có ràng buộc học tập không có nghĩa bỏ kiểm tra học viên–lớp–bài được cấp.</li>
+<li>Chỉ ghi nhận phần thực tế đã học theo quy tắc bộ đếm: <strong>mở phần học trên app là bắt đầu tính, không yêu cầu tương tác mới tính</strong>; không cộng cùng khoảng thời gian sang các phần khác.</li>
+<li>Tránh nhân đôi khi đồng bộ lại cùng bản ghi; quy tắc hợp nhất phiên nhiều thiết bị/offline còn cần xác nhận, không tự chọn giới hạn thời gian.</li>
+</ul>
+<h4 id="testcase-hoc-vien-on-tap-tu-do-tren-app-va-ghi-nhan-thoi-gian">Testcase — Học viên ôn tập tự do trên app và ghi nhận thời gian</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 24: Ôn tùy phần, không điều kiện hoàn thành</td>
+<td>High</td>
+<td></td>
+<td>Flow 4 / REQ05</td>
+<td>Học viên có quyền app của lớp</td>
+<td>Các bài đã gán, chưa ôn/hoàn thành phần nào</td>
+<td><strong>Given</strong> mở Nghe ở bài bất kỳ rồi sang Từ vựng bài khác<br><strong>When</strong> truy cập<br><strong>Then</strong> được ôn phần đã gán</td>
+<td>- Không khóa theo thứ tự/điểm/thời gian tối thiểu<br>- Không cần điểm danh</td>
+</tr>
+<tr>
+<td>Case 25: Học lại và ghi đúng phần</td>
+<td>High</td>
+<td></td>
+<td>Flow 4 / REQ06</td>
+<td>Học viên có quyền app của lớp</td>
+<td>Có thời gian Flashcard cũ</td>
+<td><strong>Given</strong> vào ôn Flashcard lại<br><strong>When</strong> ghi nhận thời gian hợp lệ<br><strong>Then</strong> cộng đúng Flashcard của học viên/bài</td>
+<td>- Các phần không học không tăng<br>- Không khóa vì đã học</td>
+</tr>
+<tr>
+<td>Case 26: Không tự đổi kết quả buổi chính</td>
+<td>High</td>
+<td></td>
+<td>REQ05 / REQ07</td>
+<td>Học viên có quyền app của lớp</td>
+<td>Buổi chính chưa điểm danh/chưa nộp BTVN</td>
+<td><strong>Given</strong> học bài Tự học<br><strong>When</strong> ghi nhận thời gian<br><strong>Then</strong> chỉ dữ liệu Tự học thay đổi</td>
+<td>- Không tự Có mặt/đã nộp BTVN<br>- Không sửa % Đi học/BTVN của chương trình chính</td>
+</tr>
+<tr>
+<td>Case 27: Chặn bài ngoài phạm vi</td>
+<td>High</td>
+<td></td>
+<td>EX05 / REQ07</td>
+<td>Học viên ngoài lớp hoặc thiếu quyền bài</td>
+<td>Biết ID bài tự học lớp khác</td>
+<td><strong>Given</strong> mở trực tiếp bài ngoài quyền<br><strong>When</strong> kiểm tra phạm vi<br><strong>Then</strong> không truy cập/ghi thời gian vào lớp khác</td>
+<td>- Không ghép theo tên khóa/bài<br>- Không sửa thời gian của học viên khác</td>
+</tr>
+<tr>
+<td>Case 28: Mở phần là bắt đầu đếm</td>
+<td>High</td>
+<td></td>
+<td>Flow 4 / REQ06</td>
+<td>Học viên có quyền app của lớp</td>
+<td>Bài có phần Từ vựng và Nghe</td>
+<td><strong>Given</strong> mở Từ vựng 60 giây không click/nhập rồi chuyển sang Nghe 30 giây<br><strong>When</strong> app ghi nhận các khoảng học<br><strong>Then</strong> Từ vựng 00:01:00, Nghe 00:00:30</td>
+<td>- Không yêu cầu tương tác<br>- Không cộng 30 giây Nghe vào Từ vựng<br>- Không tính thao tác quản trị</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="toast-phan-hoi-crud">Toast phản hồi CRUD</h3>
+<p><strong>Mô tả:</strong></p>
+<p>Thêm khóa và thêm bài tự học dùng component Toast chung. Nội dung dưới đây là thông báo đề xuất theo kết quả nghiệp vụ.</p>
+<p><strong>Giải thích field/thành phần:</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Thành phần</th>
+<th>Yêu cầu</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Thành Công</td>
+<td><code>Thêm khóa tự học thành công.</code> hoặc <code>Thêm bài tự học thành công.</code> sau khi backend xác nhận lưu.</td>
+</tr>
+<tr>
+<td>Cảnh Báo</td>
+<td><code>Vui lòng chọn khóa học.</code> / <code>Vui lòng chọn đầy đủ khóa học và bài học.</code> khi thiếu lựa chọn; <code>Lớp đã có khóa tự học.</code> khi thử gán khóa thứ hai; <code>Bài học đã tồn tại trong danh sách Tự học.</code> khi trùng bài. Vẫn báo lỗi ở field/dòng tương ứng.</td>
+</tr>
+<tr>
+<td>Có Lỗi Xảy Ra</td>
+<td><code>Không thể thêm khóa tự học. Vui lòng thử lại.</code> / <code>Không thể thêm bài tự học. Vui lòng thử lại.</code> khi thao tác lỗi.</td>
+</tr>
+<tr>
+<td>Thông Báo</td>
+<td>Chỉ dùng khi có trạng thái đồng bộ bất đồng bộ thực tế; không báo thành công trước lưu.</td>
+</tr>
+<tr>
+<td>UI Toast</td>
+<td>Dùng <a href="../../images/01-toast-crud.png">Toast chung</a>, màu/icon/tiêu đề/nút × theo component chuẩn; vị trí/thời lượng theo component chung.</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Điểm cần lưu ý:</strong></p>
+<ul>
+<li>Mỗi thao tác logic có một Toast; Hủy/chỉ xem/chọn bài/đọc thời gian không có Toast CRUD.</li>
+<li>Lỗi giữ input để sửa hoặc thử lại; Toast không thay thế validation tại field.</li>
+</ul>
+<h4 id="testcase-toast-phan-hoi-crud">Testcase — Toast phản hồi CRUD</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 29: Thành công đúng thao tác</td>
+<td>High</td>
+<td></td>
+<td>REQ08</td>
+<td>Admin / Class Handler / Support trong phạm vi lớp</td>
+<td>Đã lưu khóa hoặc bài thành công</td>
+<td><strong>Given</strong> xác nhận thao tác<br><strong>When</strong> backend thành công<br><strong>Then</strong> một Toast đúng nội dung</td>
+<td>- Không báo trước lưu<br>- Không báo đã hoàn thành buổi</td>
+</tr>
+<tr>
+<td>Case 30: Validation/lỗi giữ input</td>
+<td>High</td>
+<td></td>
+<td>EX03 / EX04 / REQ08</td>
+<td>Admin / Class Handler / Support trong phạm vi lớp</td>
+<td>Thiếu lựa chọn hoặc backend lỗi</td>
+<td><strong>Given</strong> bấm Thêm<br><strong>When</strong> xử lý<br><strong>Then</strong> Cảnh Báo hoặc Có Lỗi Xảy Ra đúng kết quả</td>
+<td>- Giữ lựa chọn hợp lệ<br>- Không lưu một phần<br>- Không lộ lỗi kỹ thuật</td>
+</tr>
+<tr>
+<td>Case 31: Hủy/chỉ xem và đóng/chống lặp</td>
+<td>Medium</td>
+<td></td>
+<td>REQ08</td>
+<td>Admin / Class Handler / Support trong phạm vi lớp</td>
+<td>Popup/Toast đang hiển thị</td>
+<td><strong>Given</strong> Hủy, chọn bài hoặc có callback lặp<br><strong>When</strong> xử lý<br><strong>Then</strong> không Toast CRUD cho chỉ xem/Hủy; tối đa một Toast kết quả</td>
+<td>- Nút × đóng được<br>- Đóng Toast không hoàn tác dữ liệu</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="2-yeu-cau">2. Yêu cầu</h2>
+<h3 id="21-flow-chinh">2.1. Flow chính</h3>
+<p><strong>Flow 1 / REQ01 / REQ04: Mở menu và chọn bài</strong></p>
+<pre><code class="language-text">Admin hoặc Class Handler/Support được add vào lớp mở Tự học
+      → Chưa có bài: hai vùng Bảng dữ liệu này đang trống
+      → Có bài: tải full danh sách bài/học viên, không phân trang/load-more; mặc định chọn bài 1
+      → Bảng gồm toàn bộ học viên, không loại trạng thái; rời lớp vẫn xem thời gian cũ
+      → Click bài: viền cam, bảng thời gian đúng lớp–bài–học viên–phần
+      → Chỉ đọc, không tạo phiên học từ thao tác quản trị
+</code></pre>
+<p><strong>Flow 2 / REQ02 / REQ08: Chọn khóa tự học ban đầu</strong></p>
+<pre><code class="language-text">Thêm khóa tự học → Popup dropdown Chọn khóa học
+      → Lớp chưa có khóa: chọn một khóa học thường đã define → Thêm
+      → Lớp đã có khóa: không được thêm khóa thứ hai, không tự thay khóa hiện tại
+      → Kiểm tra quyền/lựa chọn → lấy toàn bộ bài của đúng khóa
+      → Lưu vào danh sách Tự học lớp, cấp các bài cho học viên trên app
+      → Thành công: Thêm khóa tự học thành công.
+      → Lỗi: giữ lựa chọn, không thêm một phần; Toast lỗi
+      → Hủy: đóng, không thay dữ liệu
+</code></pre>
+<p><strong>Flow 3 / REQ03 / REQ08: Bổ sung bài tự học riêng</strong></p>
+<pre><code class="language-text">Đã thêm khóa ban đầu → Thêm bài học mới giống menu Bài học
+      → Mỗi dòng: chọn khóa rồi chọn bài thuộc khóa
+      → Tiêu đề tự lấy, khóa sửa; chỉ Mô tả được chỉnh
+      → Một hoặc nhiều dòng → cùng một Mô tả cho các bài trong lần thêm
+      → Validate tất cả dòng và kiểm tra trùng với bài đã có/giữa các dòng
+      → Có trùng: báo Bài học đã tồn tại trong danh sách Tự học., giữ input và không lưu
+      → Hợp lệ: thêm đúng bài đã chọn vào Tự học
+      → Không lấy full khóa trong thao tác thêm bài riêng
+      → Thành công: Thêm bài tự học thành công.; lỗi giữ input/Toast lỗi
+</code></pre>
+<p><strong>Flow 4 / REQ05 / REQ06: Học viên ôn tập trên app</strong></p>
+<pre><code class="language-text">Học viên lớp ở mọi trạng thái mở bài Tự học đã gán; không loại theo trạng thái
+      → Chọn bất kỳ bài/phần, không yêu cầu trình tự/điểm/thời gian tối thiểu
+      → Ôn bài và có thể quay lại học nhiều lần
+      → Mở phần học: bắt đầu đếm, không cần tương tác; đổi/đóng phần: kết thúc khoảng của phần trước
+      → App ghi nhận thời gian theo từng học viên–bài–phần
+      → Không tự thay điểm danh/BTVN/kết quả buổi chính
+</code></pre>
+<p><strong>Flow 5 / REQ04 / REQ06: Xem thời gian đã ghi nhận</strong></p>
+<pre><code class="language-text">Admin hoặc Class Handler/Support được add vào lớp chọn bài tự học
+      → Lấy toàn bộ học viên mọi trạng thái và thời gian app đúng bài/phần
+      → Học viên đã rời lớp vẫn có dòng và giữ thời gian cũ
+      → Hiển thị HH:mm:ss ở tám cột UI; tổng một ô vượt 24 giờ thì hiện 23:59:59
+      → Giới hạn hiển thị không cắt/xóa dữ liệu thời gian thực
+      → Có thời gian mới thì phản ánh khi lấy dữ liệu thành công
+      → Tải lỗi khác 00:00:00 thật; không có thao tác sửa thời gian
+</code></pre>
+<h3 id="22-ngoai-le">2.2. Ngoại lệ</h3>
+<ul>
+<li><strong>EX01:</strong> Tải lỗi/chưa xác định thời gian → báo lỗi/Thử lại, không dựng rỗng hay 00:00:00 giả.</li>
+<li><strong>EX02:</strong> Response lớp/bài cũ → không ghi đè bài/lớp đang xem.</li>
+<li><strong>EX03:</strong> Thiếu khóa, thiếu bài ở một dòng hoặc bài không thuộc khóa → chặn lưu, báo đúng field/dòng; không bỏ qua dòng thiếu để thêm một phần.</li>
+<li><strong>EX04:</strong> Lưu lỗi hoặc gửi lặp → giữ input, không tạo liên kết trùng từ cùng thao tác, một Toast kết quả.</li>
+<li><strong>EX07:</strong> Lớp đã có khóa tự học, hoặc hai thao tác gán khóa đồng thời → không gán khóa thứ hai/ghi đè khóa đã có; giữ bài và thời gian hiện hữu, Toast Cảnh Báo <code>Lớp đã có khóa tự học.</code> khi xác nhận thao tác không hợp lệ.</li>
+<li><strong>EX05:</strong> Ngoài quyền quản trị/app hoặc sai liên kết lớp–học viên–bài–phần → từ chối đọc/ghi ngoài phạm vi.</li>
+<li><strong>EX08:</strong> Bài nguồn đã có trong Tự học hoặc chọn trùng giữa các dòng → báo lỗi dòng trùng và Toast Cảnh Báo <code>Bài học đã tồn tại trong danh sách Tự học.</code>; chặn toàn bộ lần thêm, giữ input, không tạo bản trùng. Backend kiểm tra lại khi lưu.</li>
+<li><strong>EX06:</strong> Chưa có thời gian học thật của phần → 00:00:00; phần app không có nội dung và điều kiện được truy cập cần mapping nguồn, không dựng nội dung mẫu.</li>
+</ul>
+<h3 id="23-yeu-cau-khac">2.3. Yêu cầu khác</h3>
+<ul>
+<li><strong>REQ01 – Khung và danh sách:</strong> Hai vùng Chi tiết buổi học/Danh sách bài học; rỗng đúng UI; tải full bài và học viên không phân trang/load-more, mặc định bài 1 khi có dữ liệu. Card có số/tên/viền chọn, bấm để xem đúng bảng của bài.</li>
+<li><strong>REQ02 – Thêm khóa:</strong> Mỗi lớp chỉ một khóa tự học; ban đầu chọn một khóa học thường có sẵn, chặn khóa thứ hai; lấy full bài học khóa đó cho Tự học lớp, không chọn từng bài hay đổi chương trình lớp chính.</li>
+<li><strong>REQ03 – Thêm bài:</strong> Bổ sung một hoặc nhiều bài theo popup menu Bài học; mỗi dòng chọn đủ khóa–bài; tiêu đề tự lấy/chỉ đọc; một Mô tả được sửa, dùng chung cho tất cả bài thêm cùng lần. Bài trùng với bài đã có hoặc giữa các dòng phải báo trùng, chặn lưu. Chỉ lấy bài đã chọn, không full khóa ở thao tác này.</li>
+<li><strong>REQ04 – Bảng thời gian:</strong> Lấy full học viên lớp mọi trạng thái, giữ/xem thời gian cũ khi rời lớp. Theo học viên–bài tự học–phần; tám cột Flashcard/Bài tập/Từ vựng/Ngữ pháp/Đọc/Kanji/Nghe/Bảng chữ, HH:mm:ss, tổng một ô vượt 24 giờ hiện max 23:59:59 nhưng giữ dữ liệu thời gian thực; chỉ đọc. Không trộn bảng với thời gian tổng/9 hoạt động của UI khác.</li>
+<li><strong>REQ05 – Ôn tập tự do:</strong> Học viên mọi trạng thái được vào ôn bài đã gán cho lớp. Không thứ tự/điểm/thời gian tối thiểu/điểm danh/nộp bài bắt buộc để truy cập bài ôn được cấp; được học lại. Không có đánh giá hoàn thành bắt buộc từ thời gian.</li>
+<li><strong>REQ06 – Ghi nhận app:</strong> Mở phần học trên app bắt đầu đếm, không đòi tương tác; đổi/đóng phần kết thúc khoảng đó. Cộng thời gian qua các lần học đúng phần; không tính thao tác quản trị, không cộng trùng bản ghi đồng bộ. Quy tắc bộ đếm chi tiết còn cần chốt mục 3.</li>
+<li><strong>REQ07 – Phạm vi:</strong> Đúng lớp–học viên–bài–khóa–phần; nội dung nguồn do Curriculum Development Handler quản lý. Tự học không tự đổi điểm danh/% BTVN/% Đi học/kết quả chương trình chính.</li>
+<li><strong>REQ08 – Phản hồi:</strong> Thêm khóa/thêm bài có Toast kết quả; lỗi giữ input, chống lặp. Hủy và thao tác chỉ xem không có Toast CRUD.</li>
+</ul>
+<h3 id="24-rang-buoc">2.4. Ràng buộc</h3>
+<h4 id="quyen">Quyền</h4>
+<p>Quyền giống Menu Bài học: Admin được quản lý theo phạm vi quản trị; Class Handler và Support phải được add vào lớp. Kiểm tra lại quyền khi thêm khóa/thêm bài. Học viên dùng các bài được cấp trên app.</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Role/Phạm vi</th>
+<th style="text-align: center;">Xem bảng Tự học</th>
+<th style="text-align: center;">Thêm khóa/thêm bài</th>
+<th style="text-align: center;">Sửa thời gian thủ công</th>
+<th style="text-align: center;">Sửa định nghĩa Curriculum qua menu này</th>
+<th style="text-align: center;">Học ôn trên app</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Admin trong phạm vi quản trị</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+</tr>
+<tr>
+<td>Class Handler được add vào lớp</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+</tr>
+<tr>
+<td>Support được add vào lớp</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+</tr>
+<tr>
+<td>Giáo viên của lớp</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+</tr>
+<tr>
+<td>Học viên lớp ở mọi trạng thái được vào Tự học trên app</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">✅</td>
+</tr>
+<tr>
+<td>User thiếu quyền lớp/bài</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+</tr>
+</tbody>
+</table></div>
+<ul>
+<li>Giáo viên của lớp chỉ xem danh sách bài và bảng thời gian, không có nút Thêm khóa tự học/Thêm bài học mới; đặc tả tại <a href="../../teacher_role/class/class_teaching_requirements.md">Giảng dạy — role Giáo viên</a>.</li>
+<li>Quyền ôn app và quyền quản trị là hai phạm vi riêng; một account có cả hai thì kiểm tra theo thao tác cụ thể.</li>
+<li>Không có ràng buộc ôn tập không bỏ qua quyền truy cập lớp/bài. Toàn bộ trạng thái học viên đều được hiển thị và vào ôn; không có filter ngầm theo trạng thái, kể cả Rời lớp/Xóa. Giữ thời gian đã học khi trạng thái thay đổi.</li>
+</ul>
+<h4 id="pham-vi-du-lieu">Phạm vi dữ liệu</h4>
+<ul>
+<li>Mỗi lớp có một khóa tự học; không thêm khóa thứ hai hoặc tự thay khóa. Bổ sung bài riêng vẫn chọn khóa–bài nguồn từng dòng theo menu Bài học, không trở thành gán thêm một khóa tự học. Không tạo/sửa định nghĩa nguồn hoặc thay khóa chương trình chính.</li>
+<li>Thêm khóa lấy toàn bộ bài; thêm bài riêng chỉ bổ sung các bài được chọn. Chưa tự thêm thao tác gỡ khóa/xóa/sắp xếp bài.</li>
+<li>Thời gian phản ánh việc học trên app và giữ lịch sử khi học viên rời lớp/thay trạng thái; bảng quản trị chỉ xem. Giới hạn 23:59:59 khi vượt 24 giờ chỉ áp dụng hiển thị, không xóa thời gian thực hoặc đặt mức hoàn thành bắt buộc.</li>
+</ul>
+<h2 id="3-can-xac-nhan">3. Cần xác nhận</h2>
+<ul>
+<li>Đã chốt mở phần học trên app bắt đầu tính, không đòi tương tác. Khi ra nền/khóa màn hình có dừng không; xử lý offline/nhiều thiết bị và bản ghi trùng thế nào?</li>
+<li>Chỉ một khóa tự học mỗi lớp đã chốt. Có chức năng thay/gỡ khóa không; nếu có, UI và dữ liệu lịch sử khi thay/gỡ thế nào? Phạm vi hiện tại chưa thêm thao tác này.</li>
+<li>Thứ tự học viên và vị trí nút Thêm bài học mới sau gán khóa; vị trí bài bổ sung trong danh sách? Tải full và mặc định bài 1 đã chốt, không có UI nhiều khóa tự học.</li>
+<li>Mapping tám phần UI sang hoạt động app; phần không có nội dung hiện 0/trống thế nào và thời điểm cập nhật bảng? Khi vượt 24 giờ, hiển thị max 23:59:59 đã chốt.</li>
+<li>Khi định nghĩa nguồn được sửa có tự cập nhật vào Tự học không; Mô tả có bắt buộc/giới hạn ký tự/tự điền không? Bài trùng báo trùng và Mô tả dùng chung cho các bài thêm cùng lần đã chốt.</li>
+</ul>
+</article>
+    <p class="source-note">Nguồn: class_detail_self_study_requirements.md · SHA-256 30f9712ca5e8cb0216e8e7bfee8150f1fd92686cb41a49ab4770ec6e99f8317b</p>
+  </main>
+  <script>
+    const article = document.getElementById('document');
+    const nav = document.getElementById('docNav');
+    const headings = [...article.querySelectorAll('h2')];
+    headings.forEach((heading, index) => {
+      const link = document.createElement('a');
+      link.href = `#${heading.id}`;
+      const number = document.createElement('span');
+      number.className = 'nav-num';
+      number.textContent = String(index + 1).padStart(2, '0');
+      link.append(number, document.createTextNode(heading.textContent));
+      nav.append(link);
+    });
+
+    const navLinks = [...nav.querySelectorAll('a')];
+    const observer = new IntersectionObserver(entries => {
+      const current = entries.filter(item => item.isIntersecting).sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
+      if (!current) return;
+      navLinks.forEach(link => link.classList.toggle('active', link.hash === `#${current.target.id}`));
+    }, {rootMargin: '-18% 0px -68% 0px', threshold: [0, .2, .5]});
+    headings.forEach(heading => observer.observe(heading));
+    if (navLinks[0]) navLinks[0].classList.add('active');
+
+    const testcaseHeadings = [...article.querySelectorAll('h4, h5')]
+      .filter(heading => heading.textContent.trim().startsWith('Testcase'));
+    const testcaseGroups = testcaseHeadings
+      .map(heading => ({heading, tableWrap: heading.nextElementSibling}))
+      .filter(group => group.tableWrap?.classList.contains('table-wrap'));
+    if (testcaseGroups.length) {
+        const tableWraps = testcaseGroups.map(group => group.tableWrap);
+        tableWraps.forEach(tableWrap => tableWrap.classList.add('testcase-table'));
+        const rows = tableWraps.flatMap(tableWrap => [...tableWrap.querySelectorAll('tbody tr')]);
+        const tools = document.createElement('div');
+        tools.className = 'case-tools';
+        const input = document.createElement('input');
+        input.type = 'search';
+        input.placeholder = 'Tìm testcase, Flow, REQ, EX hoặc nội dung…';
+        input.setAttribute('aria-label', 'Tìm testcase');
+        const count = document.createElement('span');
+        count.className = 'case-count';
+        tools.append(input, count);
+        testcaseGroups[0].heading.before(tools);
+        const filterRows = () => {
+          const query = input.value.trim().toLocaleLowerCase('vi');
+          let visible = 0;
+          rows.forEach(row => {
+            const match = !query || row.textContent.toLocaleLowerCase('vi').includes(query);
+            row.hidden = !match;
+            if (match) visible += 1;
+          });
+          testcaseGroups.forEach(({heading, tableWrap}) => {
+            const hasVisibleRow = [...tableWrap.querySelectorAll('tbody tr')]
+              .some(row => !row.hidden);
+            heading.hidden = !hasVisibleRow;
+            tableWrap.hidden = !hasVisibleRow;
+          });
+          count.textContent = `${visible}/${rows.length} testcase`;
+        };
+        input.addEventListener('input', filterRows);
+        filterRows();
+    }
+  </script>
+</body>
+</html>

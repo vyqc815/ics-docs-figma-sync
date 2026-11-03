@@ -1,0 +1,1690 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Requirement Chi tiết lớp học — Hóa đơn">
+  <link rel="icon" href="data:,">
+  <title>Chi tiết lớp học — Hóa đơn — Requirement</title>
+  <style>
+    :root {
+      --orange-700: #c83f00;
+      --orange-600: #e84c00;
+      --orange-500: #f45b0a;
+      --orange-400: #ff7a32;
+      --orange-100: #fff0e8;
+      --orange-50: #fff8f4;
+      --navy-950: #101828;
+      --navy-900: #172033;
+      --navy-800: #243047;
+      --slate-700: #344054;
+      --slate-600: #475467;
+      --slate-500: #667085;
+      --slate-400: #98a2b3;
+      --slate-300: #d0d5dd;
+      --slate-200: #e4e7ec;
+      --slate-100: #f2f4f7;
+      --slate-50: #f8fafc;
+      --white: #ffffff;
+      --green: #159447;
+      --blue: #2154c5;
+      --yellow: #b77900;
+      --red: #c92a2a;
+      --purple: #6941c6;
+      --shadow-sm: 0 1px 2px rgba(16, 24, 40, .06);
+      --shadow-md: 0 12px 32px rgba(16, 24, 40, .10);
+      --shadow-lg: 0 24px 64px rgba(16, 24, 40, .16);
+      --radius-sm: 10px;
+      --radius: 16px;
+      --radius-lg: 24px;
+      --sidebar: 286px;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      color: var(--navy-950);
+      background:
+        radial-gradient(circle at 88% 5%, rgba(244, 91, 10, .10), transparent 24rem),
+        var(--slate-50);
+      font: 15px/1.65 Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      text-rendering: optimizeLegibility;
+    }
+    a { color: inherit; }
+    img { max-width: 100%; }
+    button, input, select { font: inherit; }
+    code {
+      padding: .12rem .38rem;
+      border: 1px solid #fed7c3;
+      border-radius: 6px;
+      color: var(--orange-700);
+      background: var(--orange-50);
+      font: 600 .9em ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    }
+
+    .skip-link {
+      position: fixed;
+      z-index: 999;
+      top: 12px;
+      left: 12px;
+      padding: 10px 14px;
+      border-radius: 9px;
+      color: var(--white);
+      background: var(--navy-950);
+      transform: translateY(-150%);
+    }
+    .skip-link:focus { transform: none; }
+
+    .sidebar {
+      position: fixed;
+      z-index: 30;
+      inset: 0 auto 0 0;
+      width: var(--sidebar);
+      padding: 22px 18px;
+      overflow-y: auto;
+      color: #f8fafc;
+      background:
+        linear-gradient(155deg, rgba(255, 122, 50, .24), transparent 26%),
+        linear-gradient(180deg, #192338 0%, #111827 100%);
+      border-right: 1px solid rgba(255, 255, 255, .08);
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 4px 8px 22px;
+      border-bottom: 1px solid rgba(255, 255, 255, .10);
+    }
+    .brand-mark {
+      display: grid;
+      width: 44px;
+      height: 44px;
+      place-items: center;
+      border-radius: 14px;
+      color: var(--white);
+      background: linear-gradient(135deg, var(--orange-400), var(--orange-600));
+      box-shadow: 0 10px 26px rgba(244, 91, 10, .35);
+      font-weight: 900;
+      letter-spacing: -.06em;
+    }
+    .brand strong { display: block; font-size: 16px; }
+    .brand small { color: #aeb8c9; }
+    .nav-title {
+      margin: 24px 10px 8px;
+      color: #8f9aae;
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+    .nav { display: grid; gap: 4px; }
+    .nav a {
+      display: flex;
+      align-items: center;
+      gap: 11px;
+      padding: 10px 12px;
+      border-radius: 10px;
+      color: #cbd5e1;
+      text-decoration: none;
+      transition: .18s ease;
+    }
+    .nav a:hover, .nav a.active {
+      color: var(--white);
+      background: rgba(255, 255, 255, .09);
+    }
+    .nav a.active { box-shadow: inset 3px 0 var(--orange-400); }
+    .nav-num {
+      display: grid;
+      width: 25px;
+      height: 25px;
+      flex: 0 0 auto;
+      place-items: center;
+      border: 1px solid rgba(255, 255, 255, .15);
+      border-radius: 8px;
+      font-size: 11px;
+      font-weight: 800;
+    }
+    .sidebar-footer {
+      margin-top: 26px;
+      padding: 14px;
+      border: 1px solid rgba(255, 255, 255, .10);
+      border-radius: 14px;
+      color: #aeb8c9;
+      background: rgba(255, 255, 255, .04);
+      font-size: 12px;
+    }
+    .sidebar-footer a { color: #ffd8c5; }
+
+    main {
+      width: min(1500px, calc(100% - var(--sidebar)));
+      margin-left: var(--sidebar);
+      padding: 34px clamp(24px, 4vw, 64px) 80px;
+    }
+    section { scroll-margin-top: 24px; }
+    .hero {
+      position: relative;
+      padding: clamp(30px, 5vw, 56px);
+      overflow: hidden;
+      border: 1px solid rgba(255, 255, 255, .08);
+      border-radius: var(--radius-lg);
+      color: var(--white);
+      background:
+        linear-gradient(105deg, rgba(16, 24, 40, .97) 0%, rgba(23, 32, 51, .94) 62%, rgba(109, 45, 9, .90) 100%);
+      box-shadow: var(--shadow-lg);
+    }
+    .hero::after {
+      content: "";
+      position: absolute;
+      width: 360px;
+      height: 360px;
+      top: -190px;
+      right: -80px;
+      border: 70px solid rgba(255, 122, 50, .15);
+      border-radius: 50%;
+    }
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 10px;
+      border: 1px solid rgba(255, 255, 255, .15);
+      border-radius: 999px;
+      color: #ffd8c5;
+      background: rgba(255, 255, 255, .06);
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+    .hero h1 {
+      max-width: 900px;
+      margin: 18px 0 12px;
+      font-size: clamp(34px, 5vw, 64px);
+      line-height: 1.03;
+      letter-spacing: -.045em;
+    }
+    .hero p { max-width: 780px; margin: 0; color: #cbd5e1; font-size: 17px; }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 25px; }
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      min-height: 42px;
+      padding: 9px 14px;
+      border: 1px solid transparent;
+      border-radius: 10px;
+      color: var(--white);
+      background: var(--orange-500);
+      text-decoration: none;
+      cursor: pointer;
+      transition: .18s ease;
+    }
+    .button:hover { transform: translateY(-1px); background: var(--orange-600); }
+    .button.secondary { border-color: rgba(255, 255, 255, .15); background: rgba(255, 255, 255, .07); }
+    .button.ghost { color: var(--slate-700); border-color: var(--slate-300); background: var(--white); }
+    .button.small { min-height: 36px; padding: 7px 11px; font-size: 13px; }
+
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 14px;
+      margin-top: 18px;
+    }
+    .stat {
+      padding: 18px;
+      border: 1px solid var(--slate-200);
+      border-radius: var(--radius);
+      background: rgba(255, 255, 255, .86);
+      box-shadow: var(--shadow-sm);
+    }
+    .stat strong { display: block; color: var(--orange-600); font-size: 30px; line-height: 1; }
+    .stat span { display: block; margin-top: 7px; color: var(--slate-600); font-weight: 650; }
+
+    .section-head {
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 24px;
+      margin: 64px 0 20px;
+    }
+    .section-kicker {
+      margin: 0 0 6px;
+      color: var(--orange-600);
+      font-size: 12px;
+      font-weight: 850;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+    .section-head h2 { margin: 0; font-size: clamp(27px, 4vw, 40px); letter-spacing: -.035em; }
+    .section-head p { max-width: 600px; margin: 8px 0 0; color: var(--slate-600); }
+
+    .panel {
+      padding: clamp(20px, 3vw, 30px);
+      border: 1px solid var(--slate-200);
+      border-radius: var(--radius-lg);
+      background: var(--white);
+      box-shadow: var(--shadow-sm);
+    }
+    .panel + .panel { margin-top: 18px; }
+    .panel h3 { margin: 0 0 14px; font-size: 21px; letter-spacing: -.02em; }
+    .panel h4 { margin: 26px 0 10px; }
+    .muted { color: var(--slate-600); }
+    .note {
+      padding: 15px 17px;
+      border-left: 4px solid var(--orange-500);
+      border-radius: 0 12px 12px 0;
+      color: var(--slate-700);
+      background: var(--orange-50);
+    }
+
+    .mockup {
+      position: relative;
+      padding: 12px;
+      border: 1px solid var(--slate-200);
+      border-radius: 18px;
+      background: linear-gradient(145deg, #fff, #f4f6f9);
+      box-shadow: var(--shadow-md);
+    }
+    .mockup a { display: block; overflow: hidden; border-radius: 12px; }
+    .mockup img { display: block; width: 100%; transition: transform .3s ease; }
+    .mockup a:hover img { transform: scale(1.01); }
+    .mockup figcaption { padding: 12px 4px 2px; color: var(--slate-600); font-size: 13px; }
+
+    .grid-2 { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
+    .grid-3 { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+    .grid-4 { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 14px; }
+    .card {
+      padding: 18px;
+      border: 1px solid var(--slate-200);
+      border-radius: var(--radius);
+      background: var(--white);
+      box-shadow: var(--shadow-sm);
+    }
+    .card h3, .card h4 { margin: 0 0 8px; }
+    .card p { margin: 0; color: var(--slate-600); }
+    .card-accent { border-top: 4px solid var(--orange-500); }
+
+    .column-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+    .column-item {
+      min-height: 124px;
+      padding: 15px;
+      border: 1px solid var(--slate-200);
+      border-radius: 14px;
+      background: var(--slate-50);
+    }
+    .column-item strong { display: block; margin-bottom: 5px; color: var(--navy-900); }
+    .column-item span { color: var(--slate-600); font-size: 13px; }
+
+    .status-card { display: flex; align-items: center; gap: 12px; }
+    .status-card img { width: 42px; height: 42px; }
+    .status-card small { display: block; color: var(--slate-500); }
+
+    .tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      padding: 4px 9px;
+      border-radius: 999px;
+      color: var(--orange-700);
+      background: var(--orange-100);
+      font-size: 12px;
+      font-weight: 800;
+    }
+    .tag.high { color: #9d174d; background: #fce7f3; }
+    .tag.medium { color: #92400e; background: #fef3c7; }
+    .tag.req { color: #3730a3; background: #e0e7ff; }
+    .tag.ex { color: #b42318; background: #fee4e2; }
+
+    .flow-list { display: grid; gap: 14px; counter-reset: flow; }
+    .flow {
+      position: relative;
+      padding: 22px 22px 22px 68px;
+      border: 1px solid var(--slate-200);
+      border-radius: var(--radius);
+      background: var(--white);
+    }
+    .flow::before {
+      counter-increment: flow;
+      content: counter(flow, decimal-leading-zero);
+      position: absolute;
+      top: 20px;
+      left: 18px;
+      display: grid;
+      width: 36px;
+      height: 36px;
+      place-items: center;
+      border-radius: 11px;
+      color: var(--white);
+      background: var(--orange-500);
+      font-weight: 900;
+    }
+    .flow h3 { margin: 0 0 8px; }
+    .flow ol { margin: 0; padding-left: 20px; color: var(--slate-700); }
+
+    .exception { border-left: 4px solid #ef4444; }
+    .exception strong { color: var(--red); }
+
+    .formula-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; }
+    .formula {
+      padding: 18px;
+      border: 1px solid #ffd6c2;
+      border-radius: 16px;
+      background: linear-gradient(160deg, #fff, var(--orange-50));
+    }
+    .formula h4 { margin: 0 0 12px; color: var(--orange-700); }
+    .fraction { display: grid; justify-items: center; color: var(--navy-900); font-weight: 720; text-align: center; }
+    .fraction .top { padding: 0 10px 7px; border-bottom: 2px solid var(--navy-800); }
+    .fraction .bottom { padding-top: 7px; }
+    .formula .teacher { margin-top: 16px; padding-top: 12px; border-top: 1px dashed #f5b896; color: var(--slate-600); font-size: 13px; }
+
+    .filters {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      align-items: center;
+      padding: 14px;
+      border: 1px solid var(--slate-200);
+      border-radius: 14px;
+      background: var(--white);
+      position: sticky;
+      top: 10px;
+      z-index: 10;
+      box-shadow: var(--shadow-md);
+    }
+    .search {
+      min-width: min(100%, 320px);
+      flex: 1 1 260px;
+      height: 42px;
+      padding: 0 13px;
+      border: 1px solid var(--slate-300);
+      border-radius: 10px;
+      color: var(--navy-950);
+      background: var(--white);
+      outline: none;
+    }
+    .search:focus { border-color: var(--orange-500); box-shadow: 0 0 0 4px rgba(244, 91, 10, .12); }
+    .testcases { display: grid; gap: 10px; margin-top: 16px; }
+    .testcase {
+      border: 1px solid var(--slate-200);
+      border-radius: 14px;
+      background: var(--white);
+      overflow: clip;
+    }
+    .testcase[hidden] { display: none; }
+    .testcase summary {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 15px 17px;
+      cursor: pointer;
+      list-style: none;
+    }
+    .testcase summary::-webkit-details-marker { display: none; }
+    .testcase summary::after { content: "+"; margin-left: auto; color: var(--orange-600); font-size: 22px; font-weight: 700; }
+    .testcase[open] summary::after { content: "−"; }
+    .testcase-title { min-width: 0; font-weight: 780; }
+    .case-body {
+      display: grid;
+      grid-template-columns: minmax(180px, .7fr) minmax(0, 1.3fr);
+      gap: 18px;
+      padding: 18px;
+      border-top: 1px solid var(--slate-200);
+      background: var(--slate-50);
+    }
+    .case-meta { color: var(--slate-600); }
+    .case-meta div + div { margin-top: 8px; }
+    .case-steps { display: grid; gap: 10px; }
+    .step { padding: 10px 12px; border-left: 3px solid var(--orange-400); background: var(--white); }
+    .expected { margin: 14px 0 0; padding-left: 20px; }
+    .expected li + li { margin-top: 4px; }
+    .empty-filter { display: none; padding: 28px; color: var(--slate-600); text-align: center; }
+
+    .question-list { display: grid; gap: 10px; margin: 0; padding: 0; counter-reset: question; list-style: none; }
+    .question-list li {
+      position: relative;
+      padding: 14px 16px 14px 54px;
+      border: 1px solid #f4d8a4;
+      border-radius: 13px;
+      background: #fffbeb;
+      color: #664d03;
+    }
+    .question-list li::before {
+      counter-increment: question;
+      content: counter(question);
+      position: absolute;
+      top: 12px;
+      left: 14px;
+      display: grid;
+      width: 28px;
+      height: 28px;
+      place-items: center;
+      border-radius: 9px;
+      color: #fff;
+      background: #d99100;
+      font-weight: 850;
+    }
+
+    .footer {
+      margin-top: 64px;
+      padding-top: 24px;
+      border-top: 1px solid var(--slate-200);
+      color: var(--slate-500);
+      text-align: center;
+    }
+
+    @media (max-width: 1120px) {
+      :root { --sidebar: 244px; }
+      .column-grid, .grid-3, .formula-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .stats { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
+    @media (max-width: 780px) {
+      .sidebar { position: static; width: auto; padding: 14px; }
+      .brand { padding-bottom: 12px; }
+      .nav-title, .sidebar-footer { display: none; }
+      .nav { display: flex; overflow-x: auto; padding-top: 10px; }
+      .nav a { flex: 0 0 auto; }
+      main { width: 100%; margin: 0; padding: 18px 14px 60px; }
+      .hero { border-radius: 18px; }
+      .grid-2, .grid-3, .grid-4, .column-grid, .formula-grid, .case-body { grid-template-columns: 1fr; }
+      .section-head { align-items: start; flex-direction: column; }
+      .filters { position: static; }
+    }
+    @media print {
+      body { background: #fff; font-size: 11px; }
+      .sidebar, .hero-actions, .filters, .skip-link { display: none !important; }
+      main { width: 100%; margin: 0; padding: 0; }
+      .hero { color: #111; background: #fff; border: 2px solid #111; box-shadow: none; }
+      .hero p { color: #333; }
+      .panel, .card, .stat, .mockup, .testcase { break-inside: avoid; box-shadow: none; }
+      .section-head { margin-top: 32px; }
+      .testcase { display: block !important; }
+      .testcase summary::after { display: none; }
+      .testcase:not([open]) .case-body { display: grid; }
+    }
+
+    .doc-shell { min-width: 0; }
+    .doc-toolbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      margin-bottom: 18px;
+      padding: 14px 16px;
+      border: 1px solid var(--slate-200);
+      border-radius: 14px;
+      background: rgba(255,255,255,.92);
+      box-shadow: var(--shadow-sm);
+    }
+    .doc-toolbar-left, .doc-toolbar-right { display: flex; flex-wrap: wrap; align-items: center; gap: 9px; }
+    .sync-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      padding: 6px 10px;
+      border-radius: 999px;
+      color: #067647;
+      background: #ecfdf3;
+      border: 1px solid #abefc6;
+      font-size: 12px;
+      font-weight: 800;
+    }
+    .sync-badge::before { content: "✓"; }
+    .hash { color: var(--slate-500); font: 12px ui-monospace, SFMono-Regular, Menlo, monospace; }
+    .markdown-body {
+      padding: clamp(24px, 4vw, 54px);
+      border: 1px solid var(--slate-200);
+      border-radius: var(--radius-lg);
+      background: var(--white);
+      box-shadow: var(--shadow-md);
+      overflow: hidden;
+    }
+    .markdown-body > h1 {
+      position: relative;
+      margin: -54px -54px 42px;
+      padding: 62px 54px 54px;
+      color: var(--white);
+      background:
+        radial-gradient(circle at 88% 10%, rgba(255,122,50,.36), transparent 20rem),
+        linear-gradient(115deg, var(--navy-950), #243047 68%, #713209);
+      font-size: clamp(34px, 5vw, 62px);
+      line-height: 1.05;
+      letter-spacing: -.045em;
+    }
+    .markdown-body h2 {
+      margin: 70px 0 24px;
+      padding: 0 0 13px;
+      border-bottom: 2px solid var(--slate-200);
+      font-size: clamp(27px, 4vw, 39px);
+      line-height: 1.15;
+      letter-spacing: -.035em;
+      scroll-margin-top: 24px;
+    }
+    .markdown-body h2::first-letter { color: var(--orange-600); }
+    .markdown-body h3 {
+      margin: 38px 0 16px;
+      color: var(--navy-900);
+      font-size: 23px;
+      line-height: 1.25;
+      letter-spacing: -.02em;
+      scroll-margin-top: 24px;
+    }
+    .markdown-body h4 {
+      margin: 28px 0 12px;
+      color: var(--orange-700);
+      font-size: 17px;
+      scroll-margin-top: 24px;
+    }
+    .markdown-body p { margin: 12px 0; }
+    .markdown-body strong { color: var(--navy-900); }
+    .markdown-body ul, .markdown-body ol { padding-left: 1.35rem; }
+    .markdown-body li { margin: 6px 0; }
+    .markdown-body li::marker { color: var(--orange-500); font-weight: 800; }
+    .markdown-body hr {
+      height: 1px;
+      margin: 48px 0;
+      border: 0;
+      background: linear-gradient(90deg, transparent, var(--slate-300), transparent);
+    }
+    .markdown-body > p[align="center"] {
+      margin: 22px 0 28px;
+      padding: 12px;
+      border: 1px solid var(--slate-200);
+      border-radius: 18px;
+      background: linear-gradient(145deg, #fff, #f5f7fa);
+      box-shadow: var(--shadow-md);
+    }
+    .markdown-body > p[align="center"] a { display: inline-block; max-width: 100%; }
+    .markdown-body > p[align="center"] img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+      margin: auto;
+      border-radius: 12px;
+    }
+    .markdown-body > p[align="center"] em {
+      display: block;
+      margin-top: 10px;
+      color: var(--slate-500);
+      font-size: 13px;
+    }
+    .table-wrap {
+      width: 100%;
+      margin: 18px 0 28px;
+      overflow: auto;
+      border: 1px solid var(--slate-200);
+      border-radius: 15px;
+      background: var(--white);
+      box-shadow: var(--shadow-sm);
+    }
+    .markdown-body table {
+      width: 100%;
+      min-width: 720px;
+      border-collapse: separate;
+      border-spacing: 0;
+      font-size: 14px;
+    }
+    .markdown-body th {
+      position: sticky;
+      top: 0;
+      z-index: 2;
+      padding: 12px 14px;
+      color: var(--white);
+      background: var(--navy-900);
+      border-bottom: 1px solid var(--navy-800);
+      text-align: left;
+      white-space: nowrap;
+    }
+    .markdown-body td {
+      padding: 12px 14px;
+      border-bottom: 1px solid var(--slate-200);
+      vertical-align: top;
+    }
+    .markdown-body tbody tr:nth-child(even) td { background: var(--slate-50); }
+    .markdown-body tbody tr:hover td { background: var(--orange-50); }
+    .markdown-body tbody tr:last-child td { border-bottom: 0; }
+    .markdown-body td img { display: block; width: 36px; height: 36px; max-width: none; }
+    .markdown-body pre {
+      position: relative;
+      margin: 16px 0 24px;
+      padding: 18px 20px;
+      overflow: auto;
+      border: 1px solid #ffd3bd;
+      border-radius: 14px;
+      color: #fff7ed;
+      background: linear-gradient(145deg, #172033, #222f48);
+      box-shadow: var(--shadow-sm);
+      font: 13px/1.75 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    }
+    .markdown-body pre code { padding: 0; border: 0; color: inherit; background: none; font: inherit; }
+    .markdown-body blockquote {
+      margin: 18px 0;
+      padding: 13px 16px;
+      border-left: 4px solid var(--orange-500);
+      border-radius: 0 12px 12px 0;
+      color: var(--slate-700);
+      background: var(--orange-50);
+    }
+    .case-tools {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 10px;
+      margin: 12px 0 14px;
+      padding: 13px;
+      border: 1px solid var(--slate-200);
+      border-radius: 13px;
+      background: var(--slate-50);
+    }
+    .case-tools input {
+      flex: 1 1 280px;
+      height: 42px;
+      padding: 0 13px;
+      border: 1px solid var(--slate-300);
+      border-radius: 10px;
+      outline: none;
+    }
+    .case-tools input:focus { border-color: var(--orange-500); box-shadow: 0 0 0 4px rgba(244,91,10,.12); }
+    .case-count { color: var(--orange-700); font-weight: 800; white-space: nowrap; }
+    .testcase-table table { min-width: 1500px; }
+    .testcase-table th:first-child, .testcase-table td:first-child {
+      position: sticky;
+      left: 0;
+      z-index: 1;
+      min-width: 230px;
+      box-shadow: 1px 0 0 var(--slate-200);
+    }
+    .testcase-table th:first-child { z-index: 3; background: var(--navy-900); }
+    .testcase-table td:first-child { background: var(--white); font-weight: 750; }
+    .testcase-table tbody tr:nth-child(even) td:first-child { background: var(--slate-50); }
+    .testcase-table tbody tr:hover td:first-child { background: var(--orange-50); }
+    .source-note {
+      margin-top: 18px;
+      color: var(--slate-500);
+      text-align: center;
+      font-size: 12px;
+    }
+    @media (max-width: 780px) {
+      .doc-toolbar { align-items: flex-start; flex-direction: column; }
+      .markdown-body { padding: 20px 16px; border-radius: 16px; }
+      .markdown-body > h1 { margin: -20px -16px 32px; padding: 40px 20px 34px; }
+      .markdown-body h2 { margin-top: 48px; }
+      .markdown-body table { font-size: 13px; }
+    }
+    @media print {
+      .doc-toolbar, .case-tools { display: none !important; }
+      .markdown-body { padding: 0; border: 0; box-shadow: none; overflow: visible; }
+      .markdown-body > h1 { margin: 0 0 32px; padding: 30px; color: #111; background: #fff; border: 2px solid #111; }
+      .table-wrap { overflow: visible; box-shadow: none; }
+      .markdown-body table { min-width: 0 !important; font-size: 9px; }
+      .markdown-body th { position: static; color: #111; background: #eee; }
+      .testcase-table th:first-child, .testcase-table td:first-child { position: static; }
+    }
+</style>
+</head>
+<body>
+  <a class="skip-link" href="#document">Đi đến nội dung chính</a>
+  <aside class="sidebar" aria-label="Mục lục requirement">
+    <div class="brand">
+      <div class="brand-mark">ics</div>
+      <div><strong>ICS Requirement</strong><small>Requirement UI, kết quả BTVN/Kiểm tra, tỷ lệ chấm và reset học viên</small></div>
+    </div>
+    <div class="nav-title">Nội dung Markdown</div>
+    <nav id="docNav" class="nav"></nav>
+    <div class="sidebar-footer">
+      HTML được render trực tiếp từ Markdown nguồn.<br>
+      <a href="./class_detail_homework_tests_requirements.md">Mở file Markdown</a>
+    </div>
+  </aside>
+  <main class="doc-shell">
+    <div class="doc-toolbar">
+      <div class="doc-toolbar-left">
+        <span class="sync-badge">Đồng bộ 100% từ Markdown</span>
+        <span class="hash">SHA-256: 8e46f4cc9154…</span>
+      </div>
+      <div class="doc-toolbar-right">
+        <a class="button ghost small" href="./class_detail_homework_tests_requirements.md">Xem Markdown</a>
+        <button class="button small" type="button" onclick="window.print()">In / Lưu PDF</button>
+      </div>
+    </div>
+    <article id="document" class="markdown-body" data-source-sha256="8e46f4cc9154e516fe7855d13a0b956d7f6206e290d84644f816772f94af749d">
+<h1 id="chi-tiet-lop-hoc-menu-bai-tap-va-kiem-tra">Chi tiết lớp học — Menu Bài tập và kiểm tra</h1>
+<blockquote>
+<p>Đặc tả theo UI ngày 29/09/2026. <strong>Admin, Class Handler và Support có quyền lớp được xem kết quả và reset BTVN/Kiểm tra cho từng học viên</strong>, không mở chi tiết để chấm như giáo viên. Badge tab BTVN/Kiểm tra là <strong>số bài chưa chấm</strong>; số trên card là <strong>đã nộp / chưa nộp</strong>, ví dụ 3/15 = 3 đã nộp và 15 chưa nộp; vòng % là <strong>tỷ lệ đã chấm trong số bài học viên đã nộp</strong>. Ví dụ có 3 học viên đã nộp, cả 3 được chấm → <strong>100%</strong>, dù còn học viên chưa nộp. Đây là tỷ lệ chấm, khác tỷ lệ nộp BTVN ở <a href="./class_detail_lessons_requirements.md">menu Bài học</a>.</p>
+</blockquote>
+<h2 id="1-ui">1. UI</h2>
+<h3 id="khung-menu-bai-tap-va-kiem-tra">Khung menu Bài tập và kiểm tra</h3>
+<p align="center">
+  <a href="./images/59-class-homework-list.png"><img src="./images/59-class-homework-list.png" alt="Menu Bài tập và kiểm tra — Tab BTVN" width="1050" title="Nhấn để xem ảnh gốc"></a><br>
+  <em>Menu Bài tập và kiểm tra — Tab BTVN — nhấn để xem ảnh gốc</em>
+</p>
+
+<p align="center">
+  <a href="./images/60-class-tests-list.png"><img src="./images/60-class-tests-list.png" alt="Menu Bài tập và kiểm tra — Tab Kiểm tra" width="1050" title="Nhấn để xem ảnh gốc"></a><br>
+  <em>Menu Bài tập và kiểm tra — Tab Kiểm tra — nhấn để xem ảnh gốc</em>
+</p>
+
+<p><strong>Mô tả:</strong></p>
+<p>Phía trên là khối Tổng Quan. Vùng trái hiển thị tên bài đang chọn và bảng kết quả từng học viên; vùng phải có Search, tab BTVN/Kiểm tra và danh sách card bài.</p>
+<p><strong>Giải thích field/thành phần:</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Thành phần</th>
+<th>Yêu cầu</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Chọn tab</td>
+<td>BTVN và Kiểm tra có danh sách/badge riêng. Chuyển tab hiển thị dữ liệu đúng loại; không trộn điểm hoặc bài nộp giữa hai loại.</td>
+</tr>
+<tr>
+<td>Chọn card</td>
+<td>Viền cam và tên bài vùng trái đồng bộ; bấm card chỉ chọn bảng kết quả, không mở trang chi tiết bài làm/chấm bài.</td>
+</tr>
+<tr>
+<td>Search</td>
+<td>Ô Tìm kiếm ở phía danh sách bài như ảnh. <strong>Search theo tên bài học/bài đang hiển thị trong danh sách</strong>, không theo tên học viên. Thời điểm kích hoạt search và cách xử lý khi đổi tab còn cần chốt.</td>
+</tr>
+<tr>
+<td>Thêm bài kiểm tra</td>
+<td>Ảnh nguồn có nút Thêm bài kiểm tra nhưng phạm vi <strong>Admin/Class Handler/Support chỉ xem và reset</strong>: không cấp quyền thêm/giao bài ở menu quản trị này. Danh sách Kiểm tra gồm bài kiểm tra của khoá học và bài kiểm tra bổ sung được thêm ở chức năng riêng. <strong>Giáo viên không thêm bài kiểm tra</strong>; Giáo viên phụ trách chính chỉ <code>Giao bài</code> và <code>Thu hồi</code> bài kiểm tra. BTVN tự giao khi bài học mở, giáo viên không giao/thu hồi BTVN. Không tạo Kiểm tra theo số bài học/BTVN.</td>
+</tr>
+<tr>
+<td>Loading/rỗng/lỗi</td>
+<td>Hiển thị riêng theo vùng, có Thử lại khi lỗi; không biến lỗi thành danh sách rỗng, số 0 hoặc Chưa nộp. Response lớp/tab/bài cũ không ghi đè lựa chọn hiện tại.</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Điểm cần lưu ý:</strong></p>
+<ul>
+<li>Bảng hiện kết quả từ chức năng nộp/chấm của học viên/giáo viên; Admin/Class Handler/Support không nhập điểm, nhận xét chấm hoặc sửa đề. <strong>BTVN liên kết 1–1 với bài học của lớp: bao nhiêu bài học thì bấy nhiêu BTVN</strong>. Bài tự học không góp vào danh sách này; Kiểm tra gồm bài của khoá học và bài bổ sung, giáo viên không thêm.</li>
+<li><strong>Tải full danh sách bài và học viên hợp lệ, không phân trang/load-more</strong>. Mặc định tab/bài và thứ tự cần chốt; không tự kế thừa lựa chọn mặc định từ menu khác.</li>
+</ul>
+<h4 id="testcase-khung-menu-bai-tap-va-kiem-tra">Testcase — Khung menu Bài tập và kiểm tra</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 1: Chọn tab/card chỉ xem bảng</td>
+<td>High</td>
+<td>Smoke</td>
+<td>Flow 1 / REQ01</td>
+<td>Admin / Class Handler / Support có quyền lớp</td>
+<td>Có BTVN và Kiểm tra với kết quả khác</td>
+<td><strong>Given</strong> chuyển tab và bấm card<br><strong>When</strong> tải kết quả<br><strong>Then</strong> tên/viền/bảng thuộc đúng lớp–loại–bài</td>
+<td>- Không mở chi tiết chấm bài<br>- Không trộn dữ liệu</td>
+</tr>
+<tr>
+<td>Case 2: Ba role quản trị không thêm/giao/chấm</td>
+<td>High</td>
+<td></td>
+<td>EX01 / REQ07</td>
+<td>Admin / Class Handler / Support có quyền lớp</td>
+<td>Ảnh tham chiếu có Thêm bài kiểm tra</td>
+<td><strong>Given</strong> kiểm tra nút hoặc gọi thao tác trực tiếp<br><strong>When</strong> kiểm tra quyền<br><strong>Then</strong> không được thêm/giao/chấm qua menu này</td>
+<td>- Không nút chấm/nhập điểm<br>- Reset không cấp quyền giáo viên</td>
+</tr>
+<tr>
+<td>Case 3: Lỗi/rỗng/response cũ</td>
+<td>High</td>
+<td></td>
+<td>EX02 / EX03 / REQ01</td>
+<td>Admin / Class Handler / Support có quyền lớp</td>
+<td>Đổi lớp/tab/bài khi request chậm hoặc lỗi</td>
+<td><strong>Given</strong> mở/chuyển ngữ cảnh<br><strong>When</strong> response về<br><strong>Then</strong> chỉ dữ liệu đúng lựa chọn hiển thị</td>
+<td>- Lỗi có Thử lại<br>- Không dựng Chưa nộp/0 giả</td>
+</tr>
+<tr>
+<td>Case 4: Full danh sách và search bài</td>
+<td>High</td>
+<td></td>
+<td>REQ01</td>
+<td>Admin / Class Handler / Support có quyền lớp</td>
+<td>Có hơn 20 bài và 20 học viên hợp lệ, tên bài khác tên học viên</td>
+<td><strong>Given</strong> mở menu và tìm theo tên bài<br><strong>When</strong> lấy danh sách/kết quả tìm<br><strong>Then</strong> full dữ liệu không phân trang, search khớp bài học/bài danh sách</td>
+<td>- Không tìm theo tên học viên<br>- Không đổi Tổng Quan lớp khi search</td>
+</tr>
+<tr>
+<td>Case 5: BTVN theo bài học, Kiểm tra thêm riêng</td>
+<td>High</td>
+<td></td>
+<td>REQ01 / REQ11</td>
+<td>Admin / Class Handler / Support có quyền lớp</td>
+<td>Lớp có 8 bài học, Tự học có 20 bài, khoá học có 3 bài kiểm tra</td>
+<td><strong>Given</strong> mở hai tab<br><strong>When</strong> tải dữ liệu nguồn<br><strong>Then</strong> BTVN có 8 bài liên kết bài học lớp, Kiểm tra có 3 bài của khoá học</td>
+<td>- Không cộng 20 bài Tự học<br>- Không tự tạo 8 bài Kiểm tra</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="khoi-tong-quan">Khối Tổng Quan</h3>
+<p align="center">
+  <a href="./images/59-class-homework-list.png"><img src="./images/59-class-homework-list.png" alt="Sáu thẻ Tổng Quan của menu" width="1050" title="Nhấn để xem ảnh gốc"></a><br>
+  <em>Sáu thẻ Tổng Quan của menu — nhấn để xem ảnh gốc</em>
+</p>
+
+<p><strong>Mô tả:</strong></p>
+<p>Sáu thẻ thống kê toàn lớp: Đã chấm kiểm tra, Kiểm tra đã giao, Điểm KT, Đã chấm BTVN, Tỉ lệ làm BTVN và Điểm BTVN. Chevron mở/thu gọn khối như ảnh.</p>
+<p><strong>Giải thích field/thành phần:</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Thành phần</th>
+<th>Yêu cầu</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Đã chấm kiểm tra</td>
+<td>Hiển thị dạng A/B như 01/12, lấy số đã chấm/tổng Kiểm tra theo <strong>cùng nguồn và công thức Tổng quan lớp</strong>. Không tự thay bằng cặp số đã nộp/chưa nộp hoặc % chấm của card.</td>
+</tr>
+<tr>
+<td>Kiểm tra đã giao</td>
+<td>Hiển thị số bài kiểm tra đã giao/tổng bài của lớp như 04/12; lấy trạng thái giao từ nguồn, không dựa vào có người nộp mới coi đã giao.</td>
+</tr>
+<tr>
+<td>Điểm KT</td>
+<td>Điểm trung bình KT của lớp theo quy tắc đã chốt ở Tổng quan lớp: cộng điểm các bài học viên đã chấm/chia số bài đã chấm, giữ kết quả lịch sử; làm tròn 1 chữ số thập phân. Chưa nộp/chưa chấm không tham gia, điểm 0 đã chấm vẫn tính.</td>
+</tr>
+<tr>
+<td>Đã chấm BTVN</td>
+<td>Dạng A/B như 03/18, tính riêng BTVN theo <strong>cùng nguồn và công thức Tổng quan lớp</strong>; tập bài BTVN gắn với bài học lớp, không cộng Tự học hoặc Kiểm tra.</td>
+</tr>
+<tr>
+<td>Tỉ lệ làm BTVN</td>
+<td>Trung bình cộng tỷ lệ làm/nộp BTVN của các học viên có dữ liệu, cùng nguồn và công thức Tổng quan lớp; không có dữ liệu thì để trống. Không dùng tỷ lệ chấm C/S của card để thay Tỉ lệ làm BTVN.</td>
+</tr>
+<tr>
+<td>Điểm BTVN</td>
+<td>Điểm trung bình các bài BTVN học viên đã được chấm, tách KT; cùng quy tắc trung bình theo bài/làm tròn 1 chữ số thập phân. Không có bài đã chấm thì để trống, không tự tạo 0.</td>
+</tr>
+<tr>
+<td>Chevron</td>
+<td>Chỉ mở/thu gọn vùng Tổng Quan; không đổi dữ liệu hay reset.</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Điểm cần lưu ý:</strong></p>
+<ul>
+<li>Đọc thống kê lớp và kết quả hiện tại từ nguồn thống nhất; chọn card/Search không được âm thầm đổi thống kê toàn lớp thành thống kê bài đang chọn.</li>
+<li>Reset thành công phải cập nhật các chỉ số liên quan theo trạng thái/kết quả sau reset; kết quả bị reset không còn dùng như bài nộp/điểm hiện hành. Việc giữ kết quả khi Rời lớp/Xóa không có nghĩa tiếp tục dùng điểm đã chủ động reset.</li>
+</ul>
+<h4 id="testcase-khoi-tong-quan">Testcase — Khối Tổng Quan</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 6: Đủ sáu thẻ, phạm vi toàn lớp</td>
+<td>High</td>
+<td>Smoke</td>
+<td>REQ02</td>
+<td>Admin / Class Handler / Support có quyền lớp</td>
+<td>Lớp có thống kê, nhiều bài khác nhau</td>
+<td><strong>Given</strong> chọn các card và thu gọn/mở Tổng Quan<br><strong>When</strong> render<br><strong>Then</strong> sáu thẻ đúng nguồn lớp</td>
+<td>- Không đổi thành KPI của một bài<br>- Không gọi reset từ chevron</td>
+</tr>
+<tr>
+<td>Case 7: Điểm trung bình không bỏ điểm 0</td>
+<td>High</td>
+<td></td>
+<td>REQ02</td>
+<td>Admin / Class Handler / Support có quyền lớp</td>
+<td>KT đã chấm có điểm 8, 0; một Chưa nộp và một Chưa chấm</td>
+<td><strong>Given</strong> xem Điểm KT<br><strong>When</strong> tổng hợp<br><strong>Then</strong> 4.0</td>
+<td>- Chưa nộp/chưa chấm không vào mẫu<br>- KT không trộn BTVN<br>- Chỉ làm tròn kết quả cuối</td>
+</tr>
+<tr>
+<td>Case 8: Không lấy tỷ lệ chấm thay tỷ lệ làm</td>
+<td>High</td>
+<td></td>
+<td>REQ02 / REQ05</td>
+<td>Admin / Class Handler / Support có quyền lớp</td>
+<td>Chỉ một phần học viên nộp nhưng tất cả bài nộp đã chấm</td>
+<td><strong>Given</strong> xem Tổng Quan và card<br><strong>When</strong> render<br><strong>Then</strong> card chấm 100%, Tỉ lệ làm BTVN vẫn theo dữ liệu nộp toàn lớp</td>
+<td>- Hai chỉ số giữ đúng nghĩa<br>- Không thay toàn bộ thành 100%</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="tab-btvnkiem-tra-badge-va-card-bai">Tab BTVN/Kiểm tra, badge và card bài</h3>
+<p align="center">
+  <a href="./images/60-class-tests-list.png"><img src="./images/60-class-tests-list.png" alt="Badge tab và card Kiểm tra" width="1050" title="Nhấn để xem ảnh gốc"></a><br>
+  <em>Badge tab và card Kiểm tra — nhấn để xem ảnh gốc</em>
+</p>
+
+<p><strong>Mô tả:</strong></p>
+<p>Badge cạnh mỗi tab là <strong>số bài chưa chấm</strong>, không phải số học viên hoặc số bài nộp. Mỗi card hiển thị số thứ tự, tiêu đề, mô tả nếu có, nhãn trạng thái, số nộp bài và vòng tỷ lệ chấm.</p>
+<p><strong>Giải thích field/thành phần:</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Thành phần</th>
+<th>Yêu cầu</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Badge tab</td>
+<td>Đếm số bài thuộc nhóm chưa chấm của đúng loại BTVN hoặc Kiểm tra; mỗi bài chỉ đếm một lần dù có nhiều bài nộp chưa chấm. Không cộng bài của tab còn lại.</td>
+</tr>
+<tr>
+<td>Trạng thái card</td>
+<td>Kiểm tra có 4 nhãn: <strong>Đã chấm / Chưa chấm / Đang đợi nộp bài / Chưa giao</strong>. <strong>Chưa giao</strong>: giáo viên chưa giao; <strong>Đang đợi nộp bài</strong>: đã giao, chưa có bài nộp; <strong>Chưa chấm</strong>: có bài nộp còn chưa được chấm; <strong>Đã chấm</strong>: giáo viên đã chấm xong các bài đã nộp. Có người chưa nộp không ngăn trạng thái Đã chấm nếu toàn bộ bài đã nộp đã chấm. Chỉ đọc; không có dropdown quản trị đổi trạng thái.</td>
+</tr>
+<tr>
+<td>Số nộp bài</td>
+<td><strong>S / U = số học viên đã nộp / số học viên chưa nộp</strong> của bài, chỉ trong tập học viên <strong>Đang học hoặc Dự thính</strong>. Ví dụ 3/15 là 3 đã nộp và 15 chưa nộp, tổng tập là 18; <strong>không phải 3 trên tổng 15</strong>. U = N − S; người đã chấm vẫn nằm trong S.</td>
+</tr>
+<tr>
+<td>Vòng %</td>
+<td>Tỷ lệ đã chấm trong số bài học viên đã nộp của card; công thức ở UI riêng bên dưới.</td>
+</tr>
+<tr>
+<td>Card Chưa giao</td>
+<td>Hiển thị nhãn xám như ảnh, không giả có người nộp hoặc 0 điểm. Chọn để xem trạng thái nếu nguồn cho phép, không tự giao đề.</td>
+</tr>
+<tr>
+<td>Mô tả</td>
+<td>Hiển thị mô tả bài nguồn nếu có, không thay bằng nội dung câu trả lời của học viên.</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Điểm cần lưu ý:</strong></p>
+<ul>
+<li>Nhãn trạng thái, badge và % chấm cùng lấy dữ liệu hiện hành: còn bài nộp chưa chấm thì Chưa chấm; tất cả bài đã nộp được chấm thì Đã chấm. Không dùng điểm &gt; 0 làm điều kiện đã chấm.</li>
+<li>Reset không thu hồi việc giao bài. Reset hết bài nộp hiện hành khiến bài đã giao trở về Đang đợi nộp bài; khi học viên nộp lại chưa được chấm thì Chưa chấm. Badge tab chỉ đếm bài Chưa chấm, không cộng Chưa giao/Đang đợi nộp bài.</li>
+</ul>
+<h4 id="testcase-tab-btvnkiem-tra-badge-va-card-bai">Testcase — Tab BTVN/Kiểm tra, badge và card bài</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 9: Badge đếm bài, không đếm bài nộp</td>
+<td>High</td>
+<td></td>
+<td>REQ03</td>
+<td>Admin / Class Handler / Support có quyền lớp</td>
+<td>BTVN có 2 bài nhóm chưa chấm, mỗi bài có 5 bài nộp chưa chấm; KT có 1 bài nhóm chưa chấm</td>
+<td><strong>Given</strong> xem hai badge<br><strong>When</strong> tổng hợp<br><strong>Then</strong> BTVN 2, Kiểm tra 1</td>
+<td>- Không hiện 10 hoặc gộp 3 vào một tab<br>- Một bài đếm một lần</td>
+</tr>
+<tr>
+<td>Case 10: Đủ bốn nhãn Kiểm tra và chỉ đọc</td>
+<td>High</td>
+<td></td>
+<td>REQ04</td>
+<td>Admin / Class Handler / Support có quyền lớp</td>
+<td>Nguồn có bài ở từng trạng thái</td>
+<td><strong>Given</strong> xem danh sách Kiểm tra<br><strong>When</strong> render<br><strong>Then</strong> đúng bốn nhãn đã chốt</td>
+<td>- Không dùng Đã nộp thay trạng thái card<br>- Không dropdown quản trị đổi trạng thái</td>
+</tr>
+<tr>
+<td>Case 11: Card không mở chức năng chấm</td>
+<td>High</td>
+<td></td>
+<td>REQ01 / REQ07</td>
+<td>Admin / Class Handler / Support có quyền lớp</td>
+<td>Card có bài nộp/điểm</td>
+<td><strong>Given</strong> bấm tên/card hoặc điểm/vòng %<br><strong>When</strong> xử lý<br><strong>Then</strong> chỉ chọn bảng của bài, không vào chi tiết chấm</td>
+<td>- Không sửa đề/kết quả giáo viên<br>- Không tạo bài nộp từ thao tác xem</td>
+</tr>
+<tr>
+<td>Case 12: Card 3/15 là 3 đã nộp và 15 chưa nộp</td>
+<td>High</td>
+<td></td>
+<td>REQ03 / REQ05 / REQ06</td>
+<td>Admin / Class Handler / Support có quyền lớp</td>
+<td>18 học viên Đang học/Dự thính: 3 đã nộp, 15 chưa nộp; 3 bài nộp đều đã chấm</td>
+<td><strong>Given</strong> xem card<br><strong>When</strong> tính S/U và C/S<br><strong>Then</strong> cặp số 3/15 và vòng chấm 100%</td>
+<td>- Không diễn giải tổng học viên là 15<br>- Người đã chấm vẫn tính đã nộp</td>
+</tr>
+<tr>
+<td>Case 13: Nhãn trạng thái theo giao/nộp/chấm</td>
+<td>High</td>
+<td></td>
+<td>REQ04</td>
+<td>Admin / Class Handler / Support có quyền lớp</td>
+<td>Có bài chưa giao; đã giao/S=0; S=3/C=2; S=3/C=3 và còn người chưa nộp</td>
+<td><strong>Given</strong> xem bốn card<br><strong>When</strong> xác định nhãn<br><strong>Then</strong> lần lượt Chưa giao, Đang đợi nộp bài, Chưa chấm, Đã chấm</td>
+<td>- Badge chỉ đếm Chưa chấm<br>- Đã chấm không đợi tất cả học viên nộp</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="ty-le-cham-bai-tren-tung-card">Tỷ lệ chấm bài trên từng card</h3>
+<p><strong>Mô tả:</strong></p>
+<p><strong>C là số bài học viên đã nộp được chấm xong; S là số bài học viên đã nộp của đúng card. Tỷ lệ = C / S × 100.</strong> Học viên chưa nộp không tham gia mẫu số S.</p>
+<p><strong>Giải thích field/thành phần:</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Thành phần</th>
+<th>Yêu cầu</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Số đã nộp S</td>
+<td>Đếm bài nộp hiện hành của học viên <strong>Đang học/Dự thính</strong> ở đúng lớp–loại BTVN/KT–bài; cùng học viên nộp nhiều lần không cộng nhiều người. Sau reset người đó về Chưa nộp, không tính phiên/điểm cũ vào S/C; nộp lại thì được tính lại.</td>
+</tr>
+<tr>
+<td>Số đã chấm C</td>
+<td>Trong tập S, đếm bài đã chấm hoàn tất; dựa vào trạng thái đã chấm, không dùng điểm &gt; 0. Điểm 0 được chấm vẫn tính vào C.</td>
+</tr>
+<tr>
+<td>Ví dụ 3/3</td>
+<td>3 học viên đã nộp và cả 3 được giáo viên chấm → <strong>100%</strong>, bất kể còn bao nhiêu học viên chưa nộp. Không lấy C chia sĩ số toàn lớp.</td>
+</tr>
+<tr>
+<td>Ví dụ 0/3</td>
+<td>3 học viên đã nộp nhưng chưa bài nào chấm → <strong>0%</strong>.</td>
+</tr>
+<tr>
+<td>S = 0</td>
+<td>Không chia cho 0, không tự báo 100% vì không có việc chấm. Hiển thị trống/0% khi chưa có bài nộp và cách làm tròn tỷ lệ cần chốt.</td>
+</tr>
+<tr>
+<td>Sau khi dữ liệu thay đổi</td>
+<td>Nhận bài nộp/chấm/reset từ nguồn thì tính lại C/S của đúng card; cập nhật badge/trạng thái theo dữ liệu thống nhất, không đổi card khác không liên quan.</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Điểm cần lưu ý:</strong></p>
+<ul>
+<li>Không dùng % nộp BTVN ở menu Bài học hoặc điểm trung bình của bài thay tỷ lệ chấm.</li>
+<li>Tỷ lệ 100% chỉ nói tất cả bài đã nộp trong tập S đã chấm; không chứng minh tất cả học viên đã nộp.</li>
+</ul>
+<h4 id="testcase-ty-le-cham-bai-tren-tung-card">Testcase — Tỷ lệ chấm bài trên từng card</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 14: Ba bài nộp đều chấm là 100%</td>
+<td>High</td>
+<td></td>
+<td>Flow 3 / REQ05</td>
+<td>Admin / Class Handler / Support có quyền lớp</td>
+<td>3 học viên đã nộp, nhiều học viên khác chưa nộp</td>
+<td><strong>Given</strong> giáo viên chấm xong cả 3<br><strong>When</strong> xem card<br><strong>Then</strong> 3/3 × 100 = 100%</td>
+<td>- Không chia cho tổng học viên<br>- Không đợi người chưa nộp</td>
+</tr>
+<tr>
+<td>Case 15: Chưa chấm 3 bài nộp là 0%</td>
+<td>High</td>
+<td></td>
+<td>REQ05</td>
+<td>Admin / Class Handler / Support có quyền lớp</td>
+<td>S=3, C=0</td>
+<td><strong>Given</strong> xem card<br><strong>When</strong> tính tỷ lệ<br><strong>Then</strong> 0%</td>
+<td>- Không lấy tỷ lệ đã nộp/tổng học viên<br>- Không lấy số câu trả lời</td>
+</tr>
+<tr>
+<td>Case 16: Điểm 0 và nộp lại không cộng người</td>
+<td>High</td>
+<td></td>
+<td>REQ05</td>
+<td>Admin / Class Handler / Support có quyền lớp</td>
+<td>A chấm điểm 0, B chấm điểm 8; A có lịch sử nhiều phiên nộp</td>
+<td><strong>Given</strong> tổng hợp hiện hành của đúng bài<br><strong>When</strong> đếm C/S<br><strong>Then</strong> 2/2 = 100%</td>
+<td>- Điểm 0 tính đã chấm<br>- Không cộng lịch sử A thành nhiều người</td>
+</tr>
+<tr>
+<td>Case 17: Không có bài nộp</td>
+<td>High</td>
+<td></td>
+<td>EX04 / REQ05</td>
+<td>Admin / Class Handler / Support có quyền lớp</td>
+<td>S=0</td>
+<td><strong>Given</strong> tính tỷ lệ<br><strong>When</strong> xử lý mẫu số 0<br><strong>Then</strong> không chia 0 hoặc 100% giả</td>
+<td>- Giá trị hiển thị theo rule chốt mục 3<br>- Không biến tải lỗi thành S=0</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="bang-trang-thaiket-qua-cua-tung-hoc-vien">Bảng trạng thái/kết quả của từng học viên</h3>
+<p align="center">
+  <a href="./images/59-class-homework-list.png"><img src="./images/59-class-homework-list.png" alt="Bảng BTVN theo học viên và icon reset" width="1050" title="Nhấn để xem ảnh gốc"></a><br>
+  <em>Bảng BTVN theo học viên và icon reset — nhấn để xem ảnh gốc</em>
+</p>
+
+<p align="center">
+  <a href="./images/60-class-tests-list.png"><img src="./images/60-class-tests-list.png" alt="Bảng Kiểm tra với người chưa nộp/đã nộp chưa chấm" width="1050" title="Nhấn để xem ảnh gốc"></a><br>
+  <em>Bảng Kiểm tra với người chưa nộp/đã nộp chưa chấm — nhấn để xem ảnh gốc</em>
+</p>
+
+<p><strong>Mô tả:</strong></p>
+<p>Bảng vùng trái có <strong>Điểm số / Tên học viên / Thời gian làm bài / Nộp bài / Số câu bỏ qua</strong> và icon reset theo dòng. Admin/Class Handler/Support có quyền lớp xem trạng thái <strong>Đã nộp, Chưa nộp hoặc Điểm khi giáo viên đã chấm xong</strong>.</p>
+<p><strong>Giải thích field/thành phần:</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Thành phần</th>
+<th>Yêu cầu</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Tên học viên</td>
+<td>Dòng thuộc đúng lớp/bài đang chọn, theo định danh học viên. <strong>Chỉ học viên Đang học hoặc Dự thính</strong> trong bảng/count hiện hành; đây là trạng thái <strong>học viên</strong>, không phải trạng thái bài học. <strong>Giữ kết quả đã làm khi học viên Rời lớp/Xóa</strong>, không xóa điểm/bài nộp lịch sử vì đổi trạng thái. Thứ tự hiển thị còn cần chốt; không dùng full trạng thái của Tự học.</td>
+</tr>
+<tr>
+<td>Chưa nộp</td>
+<td>Hiển thị badge Chưa nộp ở cột Nộp bài như ảnh; không dựng điểm/thời gian/số câu bỏ qua của bài khác.</td>
+</tr>
+<tr>
+<td>Đã nộp chưa chấm</td>
+<td>Thể hiện trạng thái Đã nộp; điểm để trống/chưa có điểm, không tự lấy 0. Thời gian/số câu bỏ qua lấy dữ liệu phiên nộp nếu có.</td>
+</tr>
+<tr>
+<td>Đã chấm</td>
+<td>Hiển thị điểm giáo viên đã chấm ở cột Điểm số. Điểm 0 hợp lệ phải hiện 0; trạng thái nộp vẫn là đã nộp.</td>
+</tr>
+<tr>
+<td>Thời gian làm bài</td>
+<td>Thời gian thực làm bài từ nguồn app, dạng HH:mm:ss như ảnh; không lấy thời gian tự học, lịch dạy hoặc thời gian từ khi Admin mở bảng. Giới hạn hiển thị <strong>giống Tự học: vượt 24 giờ hiển thị tối đa 23:59:59</strong>, không quay về 00:00:00; vẫn giữ thời gian thực đã ghi nhận. Chỉ kế thừa cách hiển thị thời gian, không lấy dữ liệu thời gian ôn tập.</td>
+</tr>
+<tr>
+<td>Số câu bỏ qua</td>
+<td>Số câu bỏ qua của phiên bài nộp đang hiển thị, 0 hợp lệ. Không tự quy đổi thành câu sai/điểm trừ khi chưa có rule.</td>
+</tr>
+<tr>
+<td>Reset từng dòng</td>
+<td>Icon vòng mũi tên theo ảnh, thao tác đúng một học viên–loại bài–bài. Không reset cả lớp hoặc đưa user vào trang chấm.</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Điểm cần lưu ý:</strong></p>
+<ul>
+<li>Admin/Class Handler/Support không click điểm/dòng để mở bài làm chi tiết; không có form chấm/sửa nhận xét như Teacher.</li>
+<li>Đã nộp và Điểm là hai mức dữ liệu khác nhau: có bài nộp không đồng nghĩa đã chấm; điểm chưa có khác điểm 0.</li>
+</ul>
+<h4 id="testcase-bang-trang-thaiket-qua-cua-tung-hoc-vien">Testcase — Bảng trạng thái/kết quả của từng học viên</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 18: Ba trạng thái học viên không bị gộp</td>
+<td>High</td>
+<td>Smoke</td>
+<td>Flow 2 / REQ06</td>
+<td>Admin / Class Handler / Support có quyền lớp</td>
+<td>A chưa nộp, B nộp chưa chấm, C được chấm 0</td>
+<td><strong>Given</strong> xem bảng<br><strong>When</strong> render<br><strong>Then</strong> A Chưa nộp, B Đã nộp không điểm, C hiện điểm 0</td>
+<td>- Không dùng 0 cho B<br>- Không giấu điểm 0 của C</td>
+</tr>
+<tr>
+<td>Case 19: Thời gian và bỏ qua đúng phiên</td>
+<td>High</td>
+<td></td>
+<td>REQ06 / REQ09</td>
+<td>Admin / Class Handler / Support có quyền lớp</td>
+<td>A có thời gian 00:14:52 và số bỏ qua 0</td>
+<td><strong>Given</strong> chọn đúng bài<br><strong>When</strong> xem A<br><strong>Then</strong> đúng thời gian/bỏ qua từ bài nộp</td>
+<td>- Không dùng thời gian toàn lớp/Tự học<br>- Không lấy phiên học viên B</td>
+</tr>
+<tr>
+<td>Case 20: Không vào bài làm chi tiết để chấm</td>
+<td>High</td>
+<td></td>
+<td>EX01 / REQ07</td>
+<td>Admin / Class Handler / Support có quyền lớp</td>
+<td>Có điểm/bài nộp</td>
+<td><strong>Given</strong> bấm dòng/điểm/trạng thái<br><strong>When</strong> xử lý<br><strong>Then</strong> không mở chi tiết chấm hoặc form đổi điểm</td>
+<td>- Vẫn có reset theo quyền<br>- Không thay dữ liệu khi chỉ xem</td>
+</tr>
+<tr>
+<td>Case 21: Reset gắn đúng dòng</td>
+<td>High</td>
+<td></td>
+<td>Flow 4 / REQ08 / REQ09</td>
+<td>Admin / Class Handler / Support có quyền lớp</td>
+<td>Có BTVN/KT và A/B</td>
+<td><strong>Given</strong> bấm reset của A ở KT đang chọn<br><strong>When</strong> xác định đối tượng<br><strong>Then</strong> đúng A–KT–bài–lớp</td>
+<td>- Không reset B hoặc BTVN<br>- Không dựa vào số thứ tự/tên</td>
+</tr>
+<tr>
+<td>Case 22: Tập trạng thái học viên và giữ kết quả lịch sử</td>
+<td>High</td>
+<td></td>
+<td>REQ02 / REQ06 / REQ09</td>
+<td>Admin / Class Handler / Support có quyền lớp</td>
+<td>Có Đang học/Dự thính và học viên đã Rời lớp/Xóa có kết quả cũ</td>
+<td><strong>Given</strong> mở bảng/count hiện hành và lấy thống kê điểm theo Tổng quan lớp<br><strong>When</strong> kiểm tra tập tính và dữ liệu lịch sử<br><strong>Then</strong> bảng/count dùng Đang học/Dự thính, kết quả cũ không bị xóa và thống kê điểm giữ theo nguồn Tổng quan</td>
+<td>- Không dùng trạng thái bài học làm trạng thái học viên<br>- Không áp dụng full trạng thái Tự học</td>
+</tr>
+<tr>
+<td>Case 23: Thời gian vượt 24 giờ giống Tự học</td>
+<td>High</td>
+<td></td>
+<td>REQ06</td>
+<td>Admin / Class Handler / Support có quyền lớp</td>
+<td>Bài nộp có thời gian 25:30:00</td>
+<td><strong>Given</strong> xem Thời gian làm bài<br><strong>When</strong> định dạng<br><strong>Then</strong> hiển thị 23:59:59</td>
+<td>- Giữ thời gian thực ở dữ liệu<br>- Không lấy thời gian ôn tập hoặc quay về 00:00:00</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="reset-btvnkiem-tra-cho-hoc-vien">Reset BTVN/Kiểm tra cho học viên</h3>
+<p><strong>Mô tả:</strong></p>
+<p><strong>Admin, Class Handler và Support</strong> có quyền lớp bấm <strong>icon mũi tên xoay vòng ở từng học viên</strong> để mở <strong>popup xác nhận reset</strong>. Xác nhận sẽ reset toàn bộ bài làm/kết quả của đúng học viên ở bài đó để học viên làm lại. Popup dùng component xác nhận chung; chưa có ảnh riêng.</p>
+<p><strong>Giải thích field/thành phần:</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Thành phần</th>
+<th>Yêu cầu</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Phạm vi</td>
+<td>Reset đúng một học viên và một BTVN hoặc Kiểm tra của lớp đang xem. Kiểm tra quyền và liên kết bài nộp trước khi lưu.</td>
+</tr>
+<tr>
+<td>Xác nhận</td>
+<td>Popup <code>Xác nhận reset BTVN</code> hoặc <code>Xác nhận reset bài kiểm tra</code>, hiển thị tên học viên/tên bài. Nội dung: <code>Bạn có muốn reset [BTVN/bài kiểm tra] của [Tên học viên]? Toàn bộ bài làm và kết quả của bài này sẽ được reset để học viên làm lại.</code> Nút <strong>Hủy</strong> / <strong>Reset</strong>. Mở popup chưa reset dữ liệu; Hủy chỉ đóng, không Toast CRUD.</td>
+</tr>
+<tr>
+<td>Kết quả reset</td>
+<td><strong>Toàn bộ dữ liệu bài làm/kết quả hiện hành của bài đó được reset</strong>: nội dung/câu trả lời/tệp bài nộp, điểm, nhận xét chấm, trạng thái/thời điểm nộp, thời gian làm bài và số câu bỏ qua. Về <strong>Chưa nộp</strong>, không còn điểm/kết quả cũ; thời gian/số câu bỏ qua trở về dữ liệu ban đầu. <strong>Học viên được làm và nộp lại</strong>. Không xóa đề, bài được giao hoặc bài của học viên khác. Cách lưu audit/lịch sử ở DB còn cần chốt riêng.</td>
+</tr>
+<tr>
+<td>Thành công</td>
+<td>Cập nhật lại dòng và các count/%/badge/Tổng Quan bị ảnh hưởng theo dữ liệu mới. Toast <code>Reset BTVN thành công.</code> / <code>Reset bài kiểm tra thành công.</code>; không đổi học viên hoặc bài khác.</td>
+</tr>
+<tr>
+<td>Lỗi/chống lặp</td>
+<td>Khóa thao tác khi đang lưu, không thực hiện hai reset từ một thao tác; lỗi giữ kết quả cũ và một Toast lỗi. Kiểm tra lại quyền ở backend.</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Điểm cần lưu ý:</strong></p>
+<ul>
+<li>Reset bài làm là thay dữ liệu, không phải thao tác chỉ đọc; đây là thao tác Admin/Class Handler/Support được phép trong menu.</li>
+<li>Không cho nhập điểm mới hoặc chấm câu trả lời thông qua reset; khả năng reset bài chưa nộp và nhiều phiên đồng thời cần chốt.</li>
+</ul>
+<h4 id="testcase-reset-btvnkiem-tra-cho-hoc-vien">Testcase — Reset BTVN/Kiểm tra cho học viên</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 24: Reset đúng một bài/học viên và cập nhật UI</td>
+<td>High</td>
+<td>Smoke</td>
+<td>Flow 4 / REQ08 / REQ09</td>
+<td>Admin / Class Handler / Support có quyền lớp</td>
+<td>Có quyền; điều kiện reset hợp lệ theo rule chốt</td>
+<td><strong>Given</strong> thực hiện reset A ở bài KT<br><strong>When</strong> backend thành công<br><strong>Then</strong> UI phản ánh đúng kết quả sau reset của A</td>
+<td>- Dòng/count/%/badge liên quan đồng bộ<br>- Một Toast thành công<br>- Không sửa đề/chấm bài</td>
+</tr>
+<tr>
+<td>Case 25: Reset lỗi/thiếu quyền/chống lặp</td>
+<td>High</td>
+<td></td>
+<td>EX05 / EX06 / REQ08</td>
+<td>Admin / Class Handler / Support có quyền lớp</td>
+<td>Backend lỗi, request đang lưu hoặc không có quyền lớp</td>
+<td><strong>Given</strong> gửi reset lặp/ngoài quyền<br><strong>When</strong> backend kiểm tra<br><strong>Then</strong> không reset lặp hoặc ngoài phạm vi</td>
+<td>- Lỗi giữ dữ liệu cũ<br>- Một Toast lỗi<br>- Không reset cả lớp</td>
+</tr>
+<tr>
+<td>Case 26: Popup reset và Hủy không thay dữ liệu</td>
+<td>High</td>
+<td></td>
+<td>Flow 4 / REQ08</td>
+<td>Admin / Class Handler / Support có quyền lớp</td>
+<td>A có bài KT đã nộp, điểm/thời gian/câu trả lời</td>
+<td><strong>Given</strong> click icon mũi tên xoay vòng của A<br><strong>When</strong> popup hiện rồi bấm Hủy<br><strong>Then</strong> đúng A/bài/loại, dữ liệu giữ nguyên</td>
+<td>- Chưa reset khi mở popup<br>- Hủy không Toast CRUD</td>
+</tr>
+<tr>
+<td>Case 27: Reset toàn bộ và học viên làm lại</td>
+<td>High</td>
+<td></td>
+<td>Flow 4 / REQ08 / REQ09</td>
+<td>Admin / Class Handler / Support có quyền lớp</td>
+<td>A có điểm, nhận xét, câu trả lời/tệp, thời gian và số câu bỏ qua</td>
+<td><strong>Given</strong> mở popup rồi bấm Reset<br><strong>When</strong> lưu thành công<br><strong>Then</strong> A về Chưa nộp/không điểm, toàn bộ bài làm/kết quả hiện hành reset và được làm lại</td>
+<td>- Không còn điểm/đáp án/thời gian cũ hiện hành<br>- Không xóa đề hoặc reset B/bài khác<br>- Một Toast đúng loại</td>
+</tr>
+<tr>
+<td>Case 28: Reset đổi count và tỷ lệ trên tập đã nộp</td>
+<td>High</td>
+<td></td>
+<td>REQ03 / REQ04 / REQ05 / REQ09</td>
+<td>Admin / Class Handler / Support có quyền lớp</td>
+<td>S=3/U=15/C=3; A đã chấm thuộc S</td>
+<td><strong>Given</strong> reset A thành công<br><strong>When</strong> tải lại card/bảng<br><strong>Then</strong> S=2/U=16/C=2, card 2/16, chấm vẫn 100%</td>
+<td>- Không tính phiên cũ của A<br>- A nộp lại chưa chấm thì S=3/C=2 và nhãn Chưa chấm<br>- Badge/Tổng Quan liên quan cập nhật</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="toast-phan-hoi-reset">Toast phản hồi reset</h3>
+<p><strong>Mô tả:</strong></p>
+<p>Reset BTVN và Kiểm tra dùng Toast chung sau khi backend xác nhận kết quả. Thông báo dưới đây là nội dung đề xuất cho nghiệp vụ reset.</p>
+<p><strong>Giải thích field/thành phần:</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Thành phần</th>
+<th>Yêu cầu</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Thành Công</td>
+<td><code>Reset BTVN thành công.</code> / <code>Reset bài kiểm tra thành công.</code> đúng loại thao tác.</td>
+</tr>
+<tr>
+<td>Có Lỗi Xảy Ra</td>
+<td><code>Không thể reset BTVN. Vui lòng thử lại.</code> / <code>Không thể reset bài kiểm tra. Vui lòng thử lại.</code> khi thất bại.</td>
+</tr>
+<tr>
+<td>Cảnh Báo</td>
+<td>Khi bài/phiên không còn đủ điều kiện hoặc không có quyền, báo lý do nghiệp vụ; điều kiện reset chi tiết theo mục 3.</td>
+</tr>
+<tr>
+<td>Thông Báo</td>
+<td>Chỉ sử dụng khi có trạng thái đồng bộ thực tế, không báo thành công sớm.</td>
+</tr>
+<tr>
+<td>Component</td>
+<td><a href="../../images/01-toast-crud.png">Toast chung</a>, icon/màu/tiêu đề/nút × theo component chuẩn; vị trí/thời lượng theo chức năng dùng chung.</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Điểm cần lưu ý:</strong></p>
+<ul>
+<li>Một thao tác logic có một Toast kết quả; đọc bảng/chọn tab/card/search không Toast CRUD.</li>
+<li>Hủy trong popup xác nhận chỉ đóng, không reset/Toast thành công.</li>
+</ul>
+<h4 id="testcase-toast-phan-hoi-reset">Testcase — Toast phản hồi reset</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 29: Toast đúng loại reset</td>
+<td>High</td>
+<td></td>
+<td>REQ10</td>
+<td>Admin / Class Handler / Support có quyền lớp</td>
+<td>Request reset lưu thành công</td>
+<td><strong>Given</strong> reset BTVN hoặc KT<br><strong>When</strong> backend trả kết quả<br><strong>Then</strong> một Toast thành công đúng loại</td>
+<td>- Không báo trước lưu<br>- Không báo đã chấm bài</td>
+</tr>
+<tr>
+<td>Case 30: Lỗi/chỉ xem/đóng Toast</td>
+<td>Medium</td>
+<td></td>
+<td>EX06 / REQ10</td>
+<td>Admin / Class Handler / Support có quyền lớp</td>
+<td>Reset lỗi hoặc chỉ xem bảng</td>
+<td><strong>Given</strong> thực hiện thao tác/callback lặp<br><strong>When</strong> xử lý<br><strong>Then</strong> một Toast lỗi khi reset lỗi; chỉ xem không Toast CRUD</td>
+<td>- Đóng × không hoàn tác kết quả<br>- Không nhân đôi Toast</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="2-yeu-cau">2. Yêu cầu</h2>
+<h3 id="21-flow-chinh">2.1. Flow chính</h3>
+<p><strong>Flow 1 / REQ01 / REQ03: Mở menu và chọn loại bài</strong></p>
+<pre><code class="language-text">Admin hoặc Class Handler/Support được add vào lớp mở Bài tập và kiểm tra
+      → Tải full Tổng Quan lớp + tab BTVN/Kiểm tra và danh sách bài/học viên; không phân trang
+      → BTVN 1–1 với bài học lớp; Kiểm tra lấy từ khoá học và bài bổ sung, không lấy Tự học
+      → Badge tab đếm bài chưa chấm, tách riêng từng loại
+      → Chọn card: bảng kết quả đúng lớp–bài–loại, không vào trang chấm
+</code></pre>
+<p><strong>Flow 2 / REQ06 / REQ07: Xem kết quả học viên</strong></p>
+<pre><code class="language-text">Chọn BTVN hoặc Kiểm tra
+      → Bảng/count chỉ tập học viên Đang học hoặc Dự thính
+      → Giữ kết quả lịch sử khi Rời lớp/Xóa, không tự xóa do đổi trạng thái
+      → Mỗi học viên: Chưa nộp / Đã nộp / Điểm khi đã chấm
+      → Hiện thời gian làm bài và số câu bỏ qua từ đúng phiên nếu có; vượt 24 giờ hiện max 23:59:59
+      → Điểm 0 đã chấm là dữ liệu thật; chưa chấm không tạo điểm 0
+      → Chỉ xem, không mở bài làm chi tiết để chấm
+</code></pre>
+<p><strong>Flow 3 / REQ05: Tính tỷ lệ chấm của card</strong></p>
+<pre><code class="language-text">S = số bài nộp hiện hành của học viên Đang học/Dự thính thuộc card
+      → C = số bài trong S đã được chấm xong, kể cả điểm 0
+      → S &gt; 0: C/S × 100; 3 đã nộp, 3 đã chấm → 100%
+      → Người chưa nộp không vào mẫu S; không chia cho sĩ số toàn lớp
+      → S = 0: không chia 0, hiển thị theo rule cần chốt
+</code></pre>
+<p><strong>Flow 4 / REQ08 / REQ09 / REQ10: Reset một học viên</strong></p>
+<pre><code class="language-text">Admin/Class Handler/Support có quyền lớp bấm icon mũi tên xoay vòng của học viên tại BTVN/KT đang chọn
+      → Xác định đúng lớp–loại–bài–học viên–phiên, kiểm tra quyền
+      → Popup xác nhận đúng loại bài/học viên, cảnh báo reset toàn bộ bài làm/kết quả
+      → Hủy: không thay dữ liệu/Toast CRUD; Reset: kiểm tra lại quyền, chống lặp
+      → Reset toàn bộ bài làm/kết quả hiện hành, về Chưa nộp/không điểm để học viên làm lại
+      → UI lấy lại dòng/count/%/badge/Tổng Quan liên quan: S giảm, U tăng, C giảm nếu bài đã chấm
+      → Không thu hồi giao bài hoặc sửa đề, không tác động bài/người khác
+      → Thành công: một Toast Reset BTVN thành công. hoặc Reset bài kiểm tra thành công.
+      → Lỗi: giữ dữ liệu cũ, một Toast lỗi, không reset nhầm/lặp
+</code></pre>
+<h3 id="22-ngoai-le">2.2. Ngoại lệ</h3>
+<ul>
+<li><strong>EX01:</strong> Admin/Class Handler/Support thử thêm/giao bài, sửa đề/điểm/chấm hoặc mở chức năng Teacher → không được phép; reset không cấp quyền chấm.</li>
+<li><strong>EX02:</strong> Tải lỗi → báo lỗi/Thử lại, không dựng số 0, Chưa nộp hoặc danh sách rỗng giả.</li>
+<li><strong>EX03:</strong> Response lớp/tab/bài cũ → không ghi đè ngữ cảnh hiện tại.</li>
+<li><strong>EX04:</strong> Số đã nộp S = 0 → không chia 0 hoặc dựng 100%; cách hiển thị cần chốt.</li>
+<li><strong>EX05:</strong> Sai quyền/liên kết lớp–học viên–loại–bài–phiên → không đọc/reset ngoài phạm vi.</li>
+<li><strong>EX06:</strong> Reset lỗi/lặp hoặc dữ liệu đã đổi → không thay dữ liệu một phần, giữ/tải lại kết quả phù hợp và một Toast kết quả.</li>
+</ul>
+<h3 id="23-yeu-cau-khac">2.3. Yêu cầu khác</h3>
+<ul>
+<li><strong>REQ01 – Khung:</strong> Tab/card/bảng đồng bộ theo lớp–loại bài–bài. Click chỉ chọn bảng, không vào chi tiết chấm. Tải full không phân trang; search theo tên bài học/bài danh sách. Mặc định tab/bài, thứ tự và thời điểm search cần chốt.</li>
+<li><strong>REQ02 – Tổng Quan:</strong> Sáu thẻ đúng UI, phạm vi toàn lớp, <strong>cùng nguồn/công thức Tổng quan lớp</strong>; điểm BTVN/KT trung bình theo bài học viên đã chấm, làm tròn 1 chữ số thập phân, điểm 0 vẫn tính. Không trộn tỷ lệ làm với tỷ lệ chấm card.</li>
+<li><strong>REQ03 – Badge/count:</strong> Badge là số bài Chưa chấm của từng tab, mỗi bài đếm một lần; card là S/U (đã nộp/chưa nộp) của học viên Đang học/Dự thính, 3/15 = tổng 18 người. Không lấy U làm mẫu số % chấm.</li>
+<li><strong>REQ04 – Trạng thái bài:</strong> Kiểm tra có Đã chấm / Chưa chấm / Đang đợi nộp bài / Chưa giao; chỉ đọc. Chưa giao là chưa được giáo viên giao; đã giao/S=0 là Đang đợi nộp bài; có bài nộp chưa chấm là Chưa chấm; chấm xong mọi bài đã nộp là Đã chấm, không đợi người chưa nộp.</li>
+<li><strong>REQ05 – Tỷ lệ chấm:</strong> C/S × 100 trên từng card, S chỉ bài học viên đã nộp, C bài đã chấm trong S; 3/3 là 100% dù còn người chưa nộp. Điểm 0 tính đã chấm, không cộng trùng lịch sử nộp; S=0 không chia 0.</li>
+<li><strong>REQ06 – Học viên:</strong> Chưa nộp, Đã nộp hoặc điểm khi đã chấm; bảng/count chỉ học viên Đang học/Dự thính, giữ kết quả khi Rời lớp/Xóa. Thời gian HH:mm:ss, vượt 24 giờ max 23:59:59, số câu bỏ qua đúng phiên; chưa có điểm khác điểm 0.</li>
+<li><strong>REQ07 – Quyền:</strong> Admin và Class Handler/Support được add vào lớp được xem/reset BTVN/KT từng học viên; không thêm/giao/chấm/sửa nội dung hoặc mở chi tiết chấm của giáo viên ở menu quản trị này.</li>
+<li><strong>REQ08 – Reset:</strong> Đúng một học viên–loại–bài–phiên; kiểm tra quyền, chống lặp. Click icon từng học viên mở popup xác nhận; Hủy không lưu; xác nhận reset toàn bộ bài làm/kết quả hiện hành về Chưa nộp/không điểm để học viên làm lại. Không reset đề hoặc người/bài khác.</li>
+<li><strong>REQ09 – Đồng bộ:</strong> Kết quả reset/thay đổi nộp/chấm phản ánh dòng, count, % chấm, badge và thống kê liên quan từ cùng dữ liệu; không ảnh hưởng người/bài/lớp khác.</li>
+<li><strong>REQ10 – Toast:</strong> Reset có một Toast kết quả sau backend; chỉ xem/search/chọn tab/card không Toast CRUD.</li>
+<li><strong>REQ11 – Liên kết bài:</strong> Bao nhiêu bài học lớp thì bấy nhiêu BTVN, liên kết 1–1; Kiểm tra lấy từ khoá học và bài bổ sung, giáo viên không thêm; giáo viên chỉ giao/thu hồi bài kiểm tra, BTVN tự giao khi bài học mở và không thu hồi. Tự học không liên quan tập bài này.</li>
+</ul>
+<h3 id="24-rang-buoc">2.4. Ràng buộc</h3>
+<h4 id="quyen">Quyền</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Role/Phạm vi</th>
+<th style="text-align: center;">Xem danh sách/kết quả</th>
+<th style="text-align: center;">Reset BTVN/Kiểm tra từng học viên</th>
+<th style="text-align: center;">Thêm/giao/chấm/sửa đề/điểm qua menu này</th>
+<th style="text-align: center;">Vào chi tiết chấm Teacher</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Admin trong phạm vi quản trị lớp</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+</tr>
+<tr>
+<td>Class Handler được add vào lớp</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+</tr>
+<tr>
+<td>Support được add vào lớp</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+</tr>
+<tr>
+<td>User không có quyền lớp/thao tác</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+</tr>
+</tbody>
+</table></div>
+<ul>
+<li>Admin và Class Handler/Support được add vào lớp đều được xem/reset; kiểm tra lại quyền lớp khi xác nhận. Không cấp quyền Teacher chấm bài qua chức năng reset.</li>
+<li>Teacher dùng chức năng nghiệp vụ riêng để giao/nộp/chấm theo quyền riêng; bảng này không thay quyền Teacher ở chức năng đó.</li>
+</ul>
+<h4 id="pham-vi-du-lieu">Phạm vi dữ liệu</h4>
+<ul>
+<li>Tách BTVN và Kiểm tra; dữ liệu gắn đúng lớp–bài–loại–học viên–phiên hiện hành.</li>
+<li>Badge tab, cặp số nộp trên card, % chấm card và các thẻ Tổng Quan là các chỉ số riêng; không lấy một giá trị thay tất cả.</li>
+<li>BTVN 1–1 với bài học lớp; Kiểm tra lấy từ khoá học và bài bổ sung, Tự học không tham gia. S/U là đã nộp/chưa nộp trong tập học viên Đang học/Dự thính; trạng thái bài là bộ giao/nộp/chấm riêng.</li>
+<li>Giữ kết quả khi học viên Rời lớp/Xóa; reset chủ động thì toàn bộ bài làm/kết quả hiện hành của bài được chọn trở về ban đầu, không dùng điểm/phiên cũ để tính kết quả hiện hành. Cách lưu lịch sử/audit hoặc xóa vật lý là quy tắc DB riêng chưa chốt.</li>
+</ul>
+<h2 id="3-can-xac-nhan">3. Cần xác nhận</h2>
+<ul>
+<li>Khi chưa có bài nộp/S=0 hiển thị vòng % trống hay 0%; tỷ lệ chấm làm tròn mấy chữ số? Ý nghĩa bốn nhãn giao/nộp/chấm đã chốt.</li>
+<li>Search theo tên bài đã chốt; kích hoạt khi nhập, Enter hay debounce? Mặc định tab/bài, thứ tự học viên/bài và giữ lựa chọn khi tìm kiếm thế nào? Tải full không phân trang đã chốt.</li>
+<li>Tập Đang học/Dự thính áp dụng theo thời điểm hiện tại hay từng bài/buổi khi tính count? Kết quả sau Rời lớp/Xóa vẫn giữ đã chốt; không tự xóa lịch sử.</li>
+<li>Audit/lịch sử reset, xóa mềm/cứng dữ liệu cũ ở DB và xử lý khi reset đồng thời với học viên đang làm/nộp bài? Reset toàn bộ kết quả hiện hành để làm lại và popup xác nhận đã chốt; không tự dùng lại phiên cũ trong điểm/count hiện hành.</li>
+<li>Có cho reset học viên chưa có bài làm hay chỉ dòng đã làm/đã nộp? Điều kiện giao/hạn nộp của giáo viên áp dụng thế nào khi học viên làm lại?</li>
+</ul>
+</article>
+    <p class="source-note">Nguồn: class_detail_homework_tests_requirements.md · SHA-256 8e46f4cc9154e516fe7855d13a0b956d7f6206e290d84644f816772f94af749d</p>
+  </main>
+  <script>
+    const article = document.getElementById('document');
+    const nav = document.getElementById('docNav');
+    const headings = [...article.querySelectorAll('h2')];
+    headings.forEach((heading, index) => {
+      const link = document.createElement('a');
+      link.href = `#${heading.id}`;
+      const number = document.createElement('span');
+      number.className = 'nav-num';
+      number.textContent = String(index + 1).padStart(2, '0');
+      link.append(number, document.createTextNode(heading.textContent));
+      nav.append(link);
+    });
+
+    const navLinks = [...nav.querySelectorAll('a')];
+    const observer = new IntersectionObserver(entries => {
+      const current = entries.filter(item => item.isIntersecting).sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
+      if (!current) return;
+      navLinks.forEach(link => link.classList.toggle('active', link.hash === `#${current.target.id}`));
+    }, {rootMargin: '-18% 0px -68% 0px', threshold: [0, .2, .5]});
+    headings.forEach(heading => observer.observe(heading));
+    if (navLinks[0]) navLinks[0].classList.add('active');
+
+    const testcaseHeadings = [...article.querySelectorAll('h4, h5')]
+      .filter(heading => heading.textContent.trim().startsWith('Testcase'));
+    const testcaseGroups = testcaseHeadings
+      .map(heading => ({heading, tableWrap: heading.nextElementSibling}))
+      .filter(group => group.tableWrap?.classList.contains('table-wrap'));
+    if (testcaseGroups.length) {
+        const tableWraps = testcaseGroups.map(group => group.tableWrap);
+        tableWraps.forEach(tableWrap => tableWrap.classList.add('testcase-table'));
+        const rows = tableWraps.flatMap(tableWrap => [...tableWrap.querySelectorAll('tbody tr')]);
+        const tools = document.createElement('div');
+        tools.className = 'case-tools';
+        const input = document.createElement('input');
+        input.type = 'search';
+        input.placeholder = 'Tìm testcase, Flow, REQ, EX hoặc nội dung…';
+        input.setAttribute('aria-label', 'Tìm testcase');
+        const count = document.createElement('span');
+        count.className = 'case-count';
+        tools.append(input, count);
+        testcaseGroups[0].heading.before(tools);
+        const filterRows = () => {
+          const query = input.value.trim().toLocaleLowerCase('vi');
+          let visible = 0;
+          rows.forEach(row => {
+            const match = !query || row.textContent.toLocaleLowerCase('vi').includes(query);
+            row.hidden = !match;
+            if (match) visible += 1;
+          });
+          testcaseGroups.forEach(({heading, tableWrap}) => {
+            const hasVisibleRow = [...tableWrap.querySelectorAll('tbody tr')]
+              .some(row => !row.hidden);
+            heading.hidden = !hasVisibleRow;
+            tableWrap.hidden = !hasVisibleRow;
+          });
+          count.textContent = `${visible}/${rows.length} testcase`;
+        };
+        input.addEventListener('input', filterRows);
+        filterRows();
+    }
+  </script>
+</body>
+</html>

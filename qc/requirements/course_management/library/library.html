@@ -1,0 +1,1555 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Requirement [CD] Thư viện">
+  <link rel="icon" href="data:,">
+  <title>[CD] Thư viện — Requirement</title>
+  <style>
+    :root {
+      --orange-700: #c83f00;
+      --orange-600: #e84c00;
+      --orange-500: #f45b0a;
+      --orange-400: #ff7a32;
+      --orange-100: #fff0e8;
+      --orange-50: #fff8f4;
+      --navy-950: #101828;
+      --navy-900: #172033;
+      --navy-800: #243047;
+      --slate-700: #344054;
+      --slate-600: #475467;
+      --slate-500: #667085;
+      --slate-400: #98a2b3;
+      --slate-300: #d0d5dd;
+      --slate-200: #e4e7ec;
+      --slate-100: #f2f4f7;
+      --slate-50: #f8fafc;
+      --white: #ffffff;
+      --green: #159447;
+      --blue: #2154c5;
+      --yellow: #b77900;
+      --red: #c92a2a;
+      --purple: #6941c6;
+      --shadow-sm: 0 1px 2px rgba(16, 24, 40, .06);
+      --shadow-md: 0 12px 32px rgba(16, 24, 40, .10);
+      --shadow-lg: 0 24px 64px rgba(16, 24, 40, .16);
+      --radius-sm: 10px;
+      --radius: 16px;
+      --radius-lg: 24px;
+      --sidebar: 286px;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      color: var(--navy-950);
+      background:
+        radial-gradient(circle at 88% 5%, rgba(244, 91, 10, .10), transparent 24rem),
+        var(--slate-50);
+      font: 15px/1.65 Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      text-rendering: optimizeLegibility;
+    }
+    a { color: inherit; }
+    img { max-width: 100%; }
+    button, input, select { font: inherit; }
+    code {
+      padding: .12rem .38rem;
+      border: 1px solid #fed7c3;
+      border-radius: 6px;
+      color: var(--orange-700);
+      background: var(--orange-50);
+      font: 600 .9em ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    }
+
+    .skip-link {
+      position: fixed;
+      z-index: 999;
+      top: 12px;
+      left: 12px;
+      padding: 10px 14px;
+      border-radius: 9px;
+      color: var(--white);
+      background: var(--navy-950);
+      transform: translateY(-150%);
+    }
+    .skip-link:focus { transform: none; }
+
+    .sidebar {
+      position: fixed;
+      z-index: 30;
+      inset: 0 auto 0 0;
+      width: var(--sidebar);
+      padding: 22px 18px;
+      overflow-y: auto;
+      color: #f8fafc;
+      background:
+        linear-gradient(155deg, rgba(255, 122, 50, .24), transparent 26%),
+        linear-gradient(180deg, #192338 0%, #111827 100%);
+      border-right: 1px solid rgba(255, 255, 255, .08);
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 4px 8px 22px;
+      border-bottom: 1px solid rgba(255, 255, 255, .10);
+    }
+    .brand-mark {
+      display: grid;
+      width: 44px;
+      height: 44px;
+      place-items: center;
+      border-radius: 14px;
+      color: var(--white);
+      background: linear-gradient(135deg, var(--orange-400), var(--orange-600));
+      box-shadow: 0 10px 26px rgba(244, 91, 10, .35);
+      font-weight: 900;
+      letter-spacing: -.06em;
+    }
+    .brand strong { display: block; font-size: 16px; }
+    .brand small { color: #aeb8c9; }
+    .nav-title {
+      margin: 24px 10px 8px;
+      color: #8f9aae;
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+    .nav { display: grid; gap: 4px; }
+    .nav a {
+      display: flex;
+      align-items: center;
+      gap: 11px;
+      padding: 10px 12px;
+      border-radius: 10px;
+      color: #cbd5e1;
+      text-decoration: none;
+      transition: .18s ease;
+    }
+    .nav a:hover, .nav a.active {
+      color: var(--white);
+      background: rgba(255, 255, 255, .09);
+    }
+    .nav a.active { box-shadow: inset 3px 0 var(--orange-400); }
+    .nav-num {
+      display: grid;
+      width: 25px;
+      height: 25px;
+      flex: 0 0 auto;
+      place-items: center;
+      border: 1px solid rgba(255, 255, 255, .15);
+      border-radius: 8px;
+      font-size: 11px;
+      font-weight: 800;
+    }
+    .sidebar-footer {
+      margin-top: 26px;
+      padding: 14px;
+      border: 1px solid rgba(255, 255, 255, .10);
+      border-radius: 14px;
+      color: #aeb8c9;
+      background: rgba(255, 255, 255, .04);
+      font-size: 12px;
+    }
+    .sidebar-footer a { color: #ffd8c5; }
+
+    main {
+      width: min(1500px, calc(100% - var(--sidebar)));
+      margin-left: var(--sidebar);
+      padding: 34px clamp(24px, 4vw, 64px) 80px;
+    }
+    section { scroll-margin-top: 24px; }
+    .hero {
+      position: relative;
+      padding: clamp(30px, 5vw, 56px);
+      overflow: hidden;
+      border: 1px solid rgba(255, 255, 255, .08);
+      border-radius: var(--radius-lg);
+      color: var(--white);
+      background:
+        linear-gradient(105deg, rgba(16, 24, 40, .97) 0%, rgba(23, 32, 51, .94) 62%, rgba(109, 45, 9, .90) 100%);
+      box-shadow: var(--shadow-lg);
+    }
+    .hero::after {
+      content: "";
+      position: absolute;
+      width: 360px;
+      height: 360px;
+      top: -190px;
+      right: -80px;
+      border: 70px solid rgba(255, 122, 50, .15);
+      border-radius: 50%;
+    }
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 10px;
+      border: 1px solid rgba(255, 255, 255, .15);
+      border-radius: 999px;
+      color: #ffd8c5;
+      background: rgba(255, 255, 255, .06);
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+    .hero h1 {
+      max-width: 900px;
+      margin: 18px 0 12px;
+      font-size: clamp(34px, 5vw, 64px);
+      line-height: 1.03;
+      letter-spacing: -.045em;
+    }
+    .hero p { max-width: 780px; margin: 0; color: #cbd5e1; font-size: 17px; }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 25px; }
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      min-height: 42px;
+      padding: 9px 14px;
+      border: 1px solid transparent;
+      border-radius: 10px;
+      color: var(--white);
+      background: var(--orange-500);
+      text-decoration: none;
+      cursor: pointer;
+      transition: .18s ease;
+    }
+    .button:hover { transform: translateY(-1px); background: var(--orange-600); }
+    .button.secondary { border-color: rgba(255, 255, 255, .15); background: rgba(255, 255, 255, .07); }
+    .button.ghost { color: var(--slate-700); border-color: var(--slate-300); background: var(--white); }
+    .button.small { min-height: 36px; padding: 7px 11px; font-size: 13px; }
+
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 14px;
+      margin-top: 18px;
+    }
+    .stat {
+      padding: 18px;
+      border: 1px solid var(--slate-200);
+      border-radius: var(--radius);
+      background: rgba(255, 255, 255, .86);
+      box-shadow: var(--shadow-sm);
+    }
+    .stat strong { display: block; color: var(--orange-600); font-size: 30px; line-height: 1; }
+    .stat span { display: block; margin-top: 7px; color: var(--slate-600); font-weight: 650; }
+
+    .section-head {
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 24px;
+      margin: 64px 0 20px;
+    }
+    .section-kicker {
+      margin: 0 0 6px;
+      color: var(--orange-600);
+      font-size: 12px;
+      font-weight: 850;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+    .section-head h2 { margin: 0; font-size: clamp(27px, 4vw, 40px); letter-spacing: -.035em; }
+    .section-head p { max-width: 600px; margin: 8px 0 0; color: var(--slate-600); }
+
+    .panel {
+      padding: clamp(20px, 3vw, 30px);
+      border: 1px solid var(--slate-200);
+      border-radius: var(--radius-lg);
+      background: var(--white);
+      box-shadow: var(--shadow-sm);
+    }
+    .panel + .panel { margin-top: 18px; }
+    .panel h3 { margin: 0 0 14px; font-size: 21px; letter-spacing: -.02em; }
+    .panel h4 { margin: 26px 0 10px; }
+    .muted { color: var(--slate-600); }
+    .note {
+      padding: 15px 17px;
+      border-left: 4px solid var(--orange-500);
+      border-radius: 0 12px 12px 0;
+      color: var(--slate-700);
+      background: var(--orange-50);
+    }
+
+    .mockup {
+      position: relative;
+      padding: 12px;
+      border: 1px solid var(--slate-200);
+      border-radius: 18px;
+      background: linear-gradient(145deg, #fff, #f4f6f9);
+      box-shadow: var(--shadow-md);
+    }
+    .mockup a { display: block; overflow: hidden; border-radius: 12px; }
+    .mockup img { display: block; width: 100%; transition: transform .3s ease; }
+    .mockup a:hover img { transform: scale(1.01); }
+    .mockup figcaption { padding: 12px 4px 2px; color: var(--slate-600); font-size: 13px; }
+
+    .grid-2 { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
+    .grid-3 { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+    .grid-4 { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 14px; }
+    .card {
+      padding: 18px;
+      border: 1px solid var(--slate-200);
+      border-radius: var(--radius);
+      background: var(--white);
+      box-shadow: var(--shadow-sm);
+    }
+    .card h3, .card h4 { margin: 0 0 8px; }
+    .card p { margin: 0; color: var(--slate-600); }
+    .card-accent { border-top: 4px solid var(--orange-500); }
+
+    .column-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+    .column-item {
+      min-height: 124px;
+      padding: 15px;
+      border: 1px solid var(--slate-200);
+      border-radius: 14px;
+      background: var(--slate-50);
+    }
+    .column-item strong { display: block; margin-bottom: 5px; color: var(--navy-900); }
+    .column-item span { color: var(--slate-600); font-size: 13px; }
+
+    .status-card { display: flex; align-items: center; gap: 12px; }
+    .status-card img { width: 42px; height: 42px; }
+    .status-card small { display: block; color: var(--slate-500); }
+
+    .tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      padding: 4px 9px;
+      border-radius: 999px;
+      color: var(--orange-700);
+      background: var(--orange-100);
+      font-size: 12px;
+      font-weight: 800;
+    }
+    .tag.high { color: #9d174d; background: #fce7f3; }
+    .tag.medium { color: #92400e; background: #fef3c7; }
+    .tag.req { color: #3730a3; background: #e0e7ff; }
+    .tag.ex { color: #b42318; background: #fee4e2; }
+
+    .flow-list { display: grid; gap: 14px; counter-reset: flow; }
+    .flow {
+      position: relative;
+      padding: 22px 22px 22px 68px;
+      border: 1px solid var(--slate-200);
+      border-radius: var(--radius);
+      background: var(--white);
+    }
+    .flow::before {
+      counter-increment: flow;
+      content: counter(flow, decimal-leading-zero);
+      position: absolute;
+      top: 20px;
+      left: 18px;
+      display: grid;
+      width: 36px;
+      height: 36px;
+      place-items: center;
+      border-radius: 11px;
+      color: var(--white);
+      background: var(--orange-500);
+      font-weight: 900;
+    }
+    .flow h3 { margin: 0 0 8px; }
+    .flow ol { margin: 0; padding-left: 20px; color: var(--slate-700); }
+
+    .exception { border-left: 4px solid #ef4444; }
+    .exception strong { color: var(--red); }
+
+    .formula-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; }
+    .formula {
+      padding: 18px;
+      border: 1px solid #ffd6c2;
+      border-radius: 16px;
+      background: linear-gradient(160deg, #fff, var(--orange-50));
+    }
+    .formula h4 { margin: 0 0 12px; color: var(--orange-700); }
+    .fraction { display: grid; justify-items: center; color: var(--navy-900); font-weight: 720; text-align: center; }
+    .fraction .top { padding: 0 10px 7px; border-bottom: 2px solid var(--navy-800); }
+    .fraction .bottom { padding-top: 7px; }
+    .formula .teacher { margin-top: 16px; padding-top: 12px; border-top: 1px dashed #f5b896; color: var(--slate-600); font-size: 13px; }
+
+    .filters {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      align-items: center;
+      padding: 14px;
+      border: 1px solid var(--slate-200);
+      border-radius: 14px;
+      background: var(--white);
+      position: sticky;
+      top: 10px;
+      z-index: 10;
+      box-shadow: var(--shadow-md);
+    }
+    .search {
+      min-width: min(100%, 320px);
+      flex: 1 1 260px;
+      height: 42px;
+      padding: 0 13px;
+      border: 1px solid var(--slate-300);
+      border-radius: 10px;
+      color: var(--navy-950);
+      background: var(--white);
+      outline: none;
+    }
+    .search:focus { border-color: var(--orange-500); box-shadow: 0 0 0 4px rgba(244, 91, 10, .12); }
+    .testcases { display: grid; gap: 10px; margin-top: 16px; }
+    .testcase {
+      border: 1px solid var(--slate-200);
+      border-radius: 14px;
+      background: var(--white);
+      overflow: clip;
+    }
+    .testcase[hidden] { display: none; }
+    .testcase summary {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 15px 17px;
+      cursor: pointer;
+      list-style: none;
+    }
+    .testcase summary::-webkit-details-marker { display: none; }
+    .testcase summary::after { content: "+"; margin-left: auto; color: var(--orange-600); font-size: 22px; font-weight: 700; }
+    .testcase[open] summary::after { content: "−"; }
+    .testcase-title { min-width: 0; font-weight: 780; }
+    .case-body {
+      display: grid;
+      grid-template-columns: minmax(180px, .7fr) minmax(0, 1.3fr);
+      gap: 18px;
+      padding: 18px;
+      border-top: 1px solid var(--slate-200);
+      background: var(--slate-50);
+    }
+    .case-meta { color: var(--slate-600); }
+    .case-meta div + div { margin-top: 8px; }
+    .case-steps { display: grid; gap: 10px; }
+    .step { padding: 10px 12px; border-left: 3px solid var(--orange-400); background: var(--white); }
+    .expected { margin: 14px 0 0; padding-left: 20px; }
+    .expected li + li { margin-top: 4px; }
+    .empty-filter { display: none; padding: 28px; color: var(--slate-600); text-align: center; }
+
+    .question-list { display: grid; gap: 10px; margin: 0; padding: 0; counter-reset: question; list-style: none; }
+    .question-list li {
+      position: relative;
+      padding: 14px 16px 14px 54px;
+      border: 1px solid #f4d8a4;
+      border-radius: 13px;
+      background: #fffbeb;
+      color: #664d03;
+    }
+    .question-list li::before {
+      counter-increment: question;
+      content: counter(question);
+      position: absolute;
+      top: 12px;
+      left: 14px;
+      display: grid;
+      width: 28px;
+      height: 28px;
+      place-items: center;
+      border-radius: 9px;
+      color: #fff;
+      background: #d99100;
+      font-weight: 850;
+    }
+
+    .footer {
+      margin-top: 64px;
+      padding-top: 24px;
+      border-top: 1px solid var(--slate-200);
+      color: var(--slate-500);
+      text-align: center;
+    }
+
+    @media (max-width: 1120px) {
+      :root { --sidebar: 244px; }
+      .column-grid, .grid-3, .formula-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .stats { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
+    @media (max-width: 780px) {
+      .sidebar { position: static; width: auto; padding: 14px; }
+      .brand { padding-bottom: 12px; }
+      .nav-title, .sidebar-footer { display: none; }
+      .nav { display: flex; overflow-x: auto; padding-top: 10px; }
+      .nav a { flex: 0 0 auto; }
+      main { width: 100%; margin: 0; padding: 18px 14px 60px; }
+      .hero { border-radius: 18px; }
+      .grid-2, .grid-3, .grid-4, .column-grid, .formula-grid, .case-body { grid-template-columns: 1fr; }
+      .section-head { align-items: start; flex-direction: column; }
+      .filters { position: static; }
+    }
+    @media print {
+      body { background: #fff; font-size: 11px; }
+      .sidebar, .hero-actions, .filters, .skip-link { display: none !important; }
+      main { width: 100%; margin: 0; padding: 0; }
+      .hero { color: #111; background: #fff; border: 2px solid #111; box-shadow: none; }
+      .hero p { color: #333; }
+      .panel, .card, .stat, .mockup, .testcase { break-inside: avoid; box-shadow: none; }
+      .section-head { margin-top: 32px; }
+      .testcase { display: block !important; }
+      .testcase summary::after { display: none; }
+      .testcase:not([open]) .case-body { display: grid; }
+    }
+
+    .doc-shell { min-width: 0; }
+    .doc-toolbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      margin-bottom: 18px;
+      padding: 14px 16px;
+      border: 1px solid var(--slate-200);
+      border-radius: 14px;
+      background: rgba(255,255,255,.92);
+      box-shadow: var(--shadow-sm);
+    }
+    .doc-toolbar-left, .doc-toolbar-right { display: flex; flex-wrap: wrap; align-items: center; gap: 9px; }
+    .sync-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      padding: 6px 10px;
+      border-radius: 999px;
+      color: #067647;
+      background: #ecfdf3;
+      border: 1px solid #abefc6;
+      font-size: 12px;
+      font-weight: 800;
+    }
+    .sync-badge::before { content: "✓"; }
+    .hash { color: var(--slate-500); font: 12px ui-monospace, SFMono-Regular, Menlo, monospace; }
+    .markdown-body {
+      padding: clamp(24px, 4vw, 54px);
+      border: 1px solid var(--slate-200);
+      border-radius: var(--radius-lg);
+      background: var(--white);
+      box-shadow: var(--shadow-md);
+      overflow: hidden;
+    }
+    .markdown-body > h1 {
+      position: relative;
+      margin: -54px -54px 42px;
+      padding: 62px 54px 54px;
+      color: var(--white);
+      background:
+        radial-gradient(circle at 88% 10%, rgba(255,122,50,.36), transparent 20rem),
+        linear-gradient(115deg, var(--navy-950), #243047 68%, #713209);
+      font-size: clamp(34px, 5vw, 62px);
+      line-height: 1.05;
+      letter-spacing: -.045em;
+    }
+    .markdown-body h2 {
+      margin: 70px 0 24px;
+      padding: 0 0 13px;
+      border-bottom: 2px solid var(--slate-200);
+      font-size: clamp(27px, 4vw, 39px);
+      line-height: 1.15;
+      letter-spacing: -.035em;
+      scroll-margin-top: 24px;
+    }
+    .markdown-body h2::first-letter { color: var(--orange-600); }
+    .markdown-body h3 {
+      margin: 38px 0 16px;
+      color: var(--navy-900);
+      font-size: 23px;
+      line-height: 1.25;
+      letter-spacing: -.02em;
+      scroll-margin-top: 24px;
+    }
+    .markdown-body h4 {
+      margin: 28px 0 12px;
+      color: var(--orange-700);
+      font-size: 17px;
+      scroll-margin-top: 24px;
+    }
+    .markdown-body p { margin: 12px 0; }
+    .markdown-body strong { color: var(--navy-900); }
+    .markdown-body ul, .markdown-body ol { padding-left: 1.35rem; }
+    .markdown-body li { margin: 6px 0; }
+    .markdown-body li::marker { color: var(--orange-500); font-weight: 800; }
+    .markdown-body hr {
+      height: 1px;
+      margin: 48px 0;
+      border: 0;
+      background: linear-gradient(90deg, transparent, var(--slate-300), transparent);
+    }
+    .markdown-body > p[align="center"] {
+      margin: 22px 0 28px;
+      padding: 12px;
+      border: 1px solid var(--slate-200);
+      border-radius: 18px;
+      background: linear-gradient(145deg, #fff, #f5f7fa);
+      box-shadow: var(--shadow-md);
+    }
+    .markdown-body > p[align="center"] a { display: inline-block; max-width: 100%; }
+    .markdown-body > p[align="center"] img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+      margin: auto;
+      border-radius: 12px;
+    }
+    .markdown-body > p[align="center"] em {
+      display: block;
+      margin-top: 10px;
+      color: var(--slate-500);
+      font-size: 13px;
+    }
+    .table-wrap {
+      width: 100%;
+      margin: 18px 0 28px;
+      overflow: auto;
+      border: 1px solid var(--slate-200);
+      border-radius: 15px;
+      background: var(--white);
+      box-shadow: var(--shadow-sm);
+    }
+    .markdown-body table {
+      width: 100%;
+      min-width: 720px;
+      border-collapse: separate;
+      border-spacing: 0;
+      font-size: 14px;
+    }
+    .markdown-body th {
+      position: sticky;
+      top: 0;
+      z-index: 2;
+      padding: 12px 14px;
+      color: var(--white);
+      background: var(--navy-900);
+      border-bottom: 1px solid var(--navy-800);
+      text-align: left;
+      white-space: nowrap;
+    }
+    .markdown-body td {
+      padding: 12px 14px;
+      border-bottom: 1px solid var(--slate-200);
+      vertical-align: top;
+    }
+    .markdown-body tbody tr:nth-child(even) td { background: var(--slate-50); }
+    .markdown-body tbody tr:hover td { background: var(--orange-50); }
+    .markdown-body tbody tr:last-child td { border-bottom: 0; }
+    .markdown-body td img { display: block; width: 36px; height: 36px; max-width: none; }
+    .markdown-body pre {
+      position: relative;
+      margin: 16px 0 24px;
+      padding: 18px 20px;
+      overflow: auto;
+      border: 1px solid #ffd3bd;
+      border-radius: 14px;
+      color: #fff7ed;
+      background: linear-gradient(145deg, #172033, #222f48);
+      box-shadow: var(--shadow-sm);
+      font: 13px/1.75 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    }
+    .markdown-body pre code { padding: 0; border: 0; color: inherit; background: none; font: inherit; }
+    .markdown-body blockquote {
+      margin: 18px 0;
+      padding: 13px 16px;
+      border-left: 4px solid var(--orange-500);
+      border-radius: 0 12px 12px 0;
+      color: var(--slate-700);
+      background: var(--orange-50);
+    }
+    .case-tools {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 10px;
+      margin: 12px 0 14px;
+      padding: 13px;
+      border: 1px solid var(--slate-200);
+      border-radius: 13px;
+      background: var(--slate-50);
+    }
+    .case-tools input {
+      flex: 1 1 280px;
+      height: 42px;
+      padding: 0 13px;
+      border: 1px solid var(--slate-300);
+      border-radius: 10px;
+      outline: none;
+    }
+    .case-tools input:focus { border-color: var(--orange-500); box-shadow: 0 0 0 4px rgba(244,91,10,.12); }
+    .case-count { color: var(--orange-700); font-weight: 800; white-space: nowrap; }
+    .testcase-table table { min-width: 1500px; }
+    .testcase-table th:first-child, .testcase-table td:first-child {
+      position: sticky;
+      left: 0;
+      z-index: 1;
+      min-width: 230px;
+      box-shadow: 1px 0 0 var(--slate-200);
+    }
+    .testcase-table th:first-child { z-index: 3; background: var(--navy-900); }
+    .testcase-table td:first-child { background: var(--white); font-weight: 750; }
+    .testcase-table tbody tr:nth-child(even) td:first-child { background: var(--slate-50); }
+    .testcase-table tbody tr:hover td:first-child { background: var(--orange-50); }
+    .source-note {
+      margin-top: 18px;
+      color: var(--slate-500);
+      text-align: center;
+      font-size: 12px;
+    }
+    @media (max-width: 780px) {
+      .doc-toolbar { align-items: flex-start; flex-direction: column; }
+      .markdown-body { padding: 20px 16px; border-radius: 16px; }
+      .markdown-body > h1 { margin: -20px -16px 32px; padding: 40px 20px 34px; }
+      .markdown-body h2 { margin-top: 48px; }
+      .markdown-body table { font-size: 13px; }
+    }
+    @media print {
+      .doc-toolbar, .case-tools { display: none !important; }
+      .markdown-body { padding: 0; border: 0; box-shadow: none; overflow: visible; }
+      .markdown-body > h1 { margin: 0 0 32px; padding: 30px; color: #111; background: #fff; border: 2px solid #111; }
+      .table-wrap { overflow: visible; box-shadow: none; }
+      .markdown-body table { min-width: 0 !important; font-size: 9px; }
+      .markdown-body th { position: static; color: #111; background: #eee; }
+      .testcase-table th:first-child, .testcase-table td:first-child { position: static; }
+    }
+</style>
+</head>
+<body>
+  <a class="skip-link" href="#document">Đi đến nội dung chính</a>
+  <aside class="sidebar" aria-label="Mục lục requirement">
+    <div class="brand">
+      <div class="brand-mark">ics</div>
+      <div><strong>ICS Requirement</strong><small>CD Library</small></div>
+    </div>
+    <div class="nav-title">Nội dung Markdown</div>
+    <nav id="docNav" class="nav"></nav>
+    <div class="sidebar-footer">
+      HTML được render trực tiếp từ Markdown nguồn.<br>
+      <a href="./library.md">Mở file Markdown</a>
+    </div>
+  </aside>
+  <main class="doc-shell">
+    <div class="doc-toolbar">
+      <div class="doc-toolbar-left">
+        <span class="sync-badge">Đồng bộ 100% từ Markdown</span>
+        <span class="hash">SHA-256: e5592636e769…</span>
+      </div>
+      <div class="doc-toolbar-right">
+        <a class="button ghost small" href="./library.md">Xem Markdown</a>
+        <button class="button small" type="button" onclick="window.print()">In / Lưu PDF</button>
+      </div>
+    </div>
+    <article id="document" class="markdown-body" data-source-sha256="e5592636e7693b43f613a3d57e6be35ec8bd9b55c68e06af2e21a4600b78649d">
+<h1 id="cd-thu-vien">[CD] Thư viện</h1>
+<blockquote>
+<p>Menu <strong>Thư viện</strong> của role <strong>CD</strong> gồm 3 mục <strong>Kiến thức</strong>, <strong>Kỹ năng</strong>, <strong>Bài tập</strong>: kho dữ liệu dùng chung của các khoá học thuộc <strong>trung tâm</strong> CD đang chọn ở header (mỗi trung tâm một ngôn ngữ). Thư viện dùng để <strong>xem tập trung</strong>, tìm kiếm, lọc theo <strong>Cấp độ</strong>, <strong>đổi trạng thái</strong> và <strong>xoá mục chưa Công khai</strong>. Thêm và sửa nội dung không làm tại Thư viện: Kiến thức sửa ở <a href="../knowledge-s1/knowledge-s1.md">Kiến thức (S1)</a>, Kỹ năng sửa ở Kỹ năng (S6), câu hỏi sửa ở <a href="../homework-test/homework-test.md">Bài tập về nhà và Kiểm tra</a>.</p>
+<p>Ảnh lấy từ Figma <code>CD-KH-070100</code>, <code>CD-KH-070200</code>, <code>CD-KH-070210</code>, <code>CD-KH-070300</code>. Điểm khác Figma được ghi ngay dưới ảnh; phần chưa có thiết kế ghi rõ là <strong>UI cần bổ sung</strong>. Từ, câu, số liệu trong ảnh là dữ liệu mẫu.</p>
+</blockquote>
+<h2 id="1-ui">1. UI</h2>
+<h3 id="khung-chung-cua-thu-vien">Khung chung của Thư viện</h3>
+<p align="center">
+  <a href="./images/01-kien-thuc.png"><img src="./images/01-kien-thuc.png" alt="Thư viện kiến thức — tab Từ vựng" width="900" title="Nhấn để xem ảnh gốc"></a><br>
+  <em>Thư viện kiến thức, tab Từ vựng (Figma CD-KH-070100) — nhấn để xem ảnh gốc</em>
+</p>
+
+<p><strong>Mô tả:</strong></p>
+<ul>
+<li>Sidebar CD có nhóm <code>Thư Viện</code> với 3 mục <code>Kiến Thức</code>, <code>Kỹ Năng</code>, <code>Bài Tập</code>. Ba màn dùng chung bố cục: tiêu đề, mô tả ngắn, thanh tab loại dữ liệu, thanh tìm kiếm và lọc, bảng danh sách, phân trang.</li>
+</ul>
+<p><strong>Giải thích thành phần:</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Thành phần</th>
+<th>Yêu cầu</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Tiêu đề / mô tả</td>
+<td><code>Thư viện kiến thức</code>, <code>Thư viện kỹ năng</code>, <code>Thư viện bài tập</code> kèm một dòng mô tả như ảnh.</td>
+</tr>
+<tr>
+<td>Thanh tab</td>
+<td>Loại dữ liệu của từng thư viện (chi tiết ở khu vực tương ứng). Mặc định tab đầu tiên.</td>
+</tr>
+<tr>
+<td>Ô tìm kiếm</td>
+<td>Tìm theo nội dung chính của tab (chi tiết ở khu vực tương ứng), không phân biệt hoa thường, bỏ khoảng trắng thừa.</td>
+</tr>
+<tr>
+<td>Lọc <code>Cấp độ</code></td>
+<td>Một lựa chọn: <code>Tất cả</code> hoặc một cấp độ trong danh sách <a href="../../curriculum_management_requirement/level_management/level_management_requirements.md">Quản lý cấp độ</a> của trung tâm. Mặc định <code>Tất cả</code>.</td>
+</tr>
+<tr>
+<td>Badge tổng số</td>
+<td>Tổng số mục khớp tìm kiếm và lọc của tab đang mở (vd <code>1.240 từ vựng</code>, <code>96 bài nghe</code>, <code>248 câu hỏi</code>).</td>
+</tr>
+<tr>
+<td><code>Xoá bộ lọc</code></td>
+<td>Đưa ô tìm kiếm về trống và Cấp độ về <code>Tất cả</code>.</td>
+</tr>
+<tr>
+<td>Cột <code>Đang dùng ở</code></td>
+<td>Kỳ và số bài đang dùng mục (vd <code>HK I · 3 bài</code>, <code>HK II · Bài 5</code>); chưa gắn bài nào hiển thị <code>Chưa dùng</code> màu cam.</td>
+</tr>
+<tr>
+<td>Cột <code>Trạng thái</code></td>
+<td>Badge <code>Nháp</code> (cam), <code>Công khai</code> (xanh lá), <code>Vô hiệu</code> (xám). Quy tắc ở khu vực Trạng thái và xoá mục.</td>
+</tr>
+<tr>
+<td>Menu <code>⋮</code> cuối dòng</td>
+<td>Kiến thức, Kỹ năng: <code>Đổi trạng thái</code>, <code>Xoá</code>. Bài tập: không có (chỉ xem).</td>
+</tr>
+<tr>
+<td>Phân trang</td>
+<td>10 dòng/trang; dòng chú thích <code>Hiển thị 1–10 trong N …</code>; nút số trang, <code>…</code>, trang cuối.</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Điểm cần lưu ý:</strong></p>
+<ul>
+<li>Dữ liệu chỉ thuộc trung tâm CD đang chọn ở header; đổi trung tâm thì tải lại cả 3 thư viện theo ngôn ngữ mới.</li>
+<li>Tìm kiếm và lọc Cấp độ kết hợp với nhau; đổi tab giữ nguyên Cấp độ, xoá ô tìm kiếm.</li>
+<li>Ô field bắt buộc đang trống hiển thị <code>— trống —</code> màu cam (vd cột Nghĩa).</li>
+<li>Khác Figma CD-KH-070100 / 070200 / 070210 / 070300: bỏ các bộ lọc <code>Loại từ</code>, <code>Loại</code>, <code>Loại câu</code>, <code>Khoá học</code>, <code>Thời lượng</code>, <code>Độ dài</code>, <code>Trạng thái</code>; chỉ giữ ô tìm kiếm và <code>Cấp độ</code>. Figma chưa có menu <code>⋮</code> cuối dòng (<strong>UI cần bổ sung</strong>).</li>
+</ul>
+<h4 id="testcase-khung-chung-cua-thu-vien">Testcase — Khung chung của Thư viện</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 1: Mở Thư viện</td>
+<td>High</td>
+<td>Smoke</td>
+<td>Flow 1 / REQ01</td>
+<td>CD</td>
+<td>Trung tâm có dữ liệu kiến thức, kỹ năng, câu hỏi</td>
+<td><strong>Given</strong> CD bấm <code>Thư Viện</code> → <code>Kiến Thức</code><br><strong>When</strong> màn tải xong<br><strong>Then</strong> hiển thị tab đầu tiên, bảng trang 1 và badge tổng số</td>
+<td>- Chỉ dữ liệu trung tâm đang chọn<br>- Lọc Cấp độ mặc định <code>Tất cả</code></td>
+</tr>
+<tr>
+<td>Case 2: Tìm kiếm kết hợp Cấp độ</td>
+<td>High</td>
+<td></td>
+<td>Flow 1 / REQ02</td>
+<td>CD</td>
+<td>Có mục cấp độ HSK1 và HSK2 cùng chứa chữ <code>你</code></td>
+<td><strong>Given</strong> chọn Cấp độ <code>HSK1</code><br><strong>When</strong> nhập <code>你</code><br><strong>Then</strong> chỉ còn mục HSK1 chứa <code>你</code></td>
+<td>- Badge tổng số cập nhật<br>- Không còn bộ lọc Loại / Khoá học / Trạng thái</td>
+</tr>
+<tr>
+<td>Case 3: Xoá bộ lọc</td>
+<td>Medium</td>
+<td></td>
+<td>REQ02</td>
+<td>CD</td>
+<td>Đang tìm <code>你</code>, Cấp độ HSK1</td>
+<td><strong>Given</strong> bấm <code>Xoá bộ lọc</code><br><strong>When</strong> bảng tải lại<br><strong>Then</strong> ô tìm kiếm trống, Cấp độ <code>Tất cả</code></td>
+<td>- Về trang 1</td>
+</tr>
+<tr>
+<td>Case 4: Đổi trung tâm</td>
+<td>High</td>
+<td></td>
+<td>REQ01</td>
+<td>CD</td>
+<td>CD phụ trách 2 trung tâm khác ngôn ngữ</td>
+<td><strong>Given</strong> đổi trung tâm ở header<br><strong>When</strong> Thư viện tải lại<br><strong>Then</strong> dữ liệu và thanh tab theo ngôn ngữ trung tâm mới</td>
+<td>- Không còn dữ liệu trung tâm cũ</td>
+</tr>
+<tr>
+<td>Case 5: Mục chưa dùng</td>
+<td>Medium</td>
+<td></td>
+<td>REQ03</td>
+<td>CD</td>
+<td>Mục chưa gắn bài nào</td>
+<td><strong>Given</strong> xem bảng<br><strong>When</strong> render cột Đang dùng ở<br><strong>Then</strong> hiển thị <code>Chưa dùng</code> màu cam</td>
+<td>- Mục đang dùng hiển thị kỳ và số bài</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="trang-thai-va-xoa-muc">Trạng thái và xoá mục</h3>
+<p><strong>Mô tả:</strong></p>
+<ul>
+<li>Mỗi mục kiến thức, kỹ năng có trạng thái riêng <code>Nháp</code>, <code>Công khai</code>, <code>Vô hiệu</code>. CD đổi trạng thái và xoá mục chưa Công khai bằng menu <code>⋮</code>. Câu hỏi ở Thư viện bài tập không có trạng thái riêng (xem khu vực Thư viện bài tập).</li>
+</ul>
+<p><strong>Giải thích thành phần:</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Thành phần</th>
+<th>Yêu cầu</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Đổi trạng thái</code></td>
+<td>Menu con chỉ hiện các trạng thái được phép: <code>Nháp</code> → <code>Công khai</code> hoặc <code>Vô hiệu</code>; <code>Công khai</code> ↔ <code>Vô hiệu</code>. Không cho <code>Công khai</code> → <code>Nháp</code>, <code>Vô hiệu</code> → <code>Nháp</code>. Đổi xong Toast <code>Thành Công</code>.</td>
+</tr>
+<tr>
+<td><code>Xoá</code></td>
+<td>Chỉ hiện với mục <code>Nháp</code> hoặc <code>Vô hiệu</code> <strong>và</strong> <code>Chưa dùng</code>. Mở popup <code>Xoá mục khỏi thư viện?</code> (<code>Mục sẽ bị xoá khỏi thư viện và không còn tìm thấy.</code>, nút <code>Huỷ</code> / <code>Xoá</code>). Xoá mềm.</td>
+</tr>
+<tr>
+<td>Mục <code>Công khai</code></td>
+<td>Không có lựa chọn <code>Xoá</code>; muốn ngừng dùng thì chuyển <code>Vô hiệu</code>.</td>
+</tr>
+<tr>
+<td>Mục đang dùng</td>
+<td>Mục <code>Nháp</code> / <code>Vô hiệu</code> đang gắn bài không có <code>Xoá</code>; tooltip <code>Mục đang được dùng ở bài học, gỡ khỏi bài trước khi xoá</code>.</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Điểm cần lưu ý:</strong></p>
+<ul>
+<li>Quy tắc chung của role CD: <strong>mục đang <code>Công khai</code> không được xoá, chỉ chuyển <code>Vô hiệu</code></strong>; áp dụng cho kiến thức, kỹ năng, khoá học (<a href="../course_management.md">Quản lý khoá học</a>).</li>
+<li>Mục <code>Vô hiệu</code> không được thêm mới vào bài học hay S1; bài đã gắn mục trước khi vô hiệu vẫn dùng bình thường.</li>
+<li>Backend kiểm tra lại trạng thái và việc đang dùng khi nhận request đổi trạng thái hoặc xoá.</li>
+<li>Xoá mềm: mục không còn hiển thị, không tìm thấy ở Thư viện, S1, S6 và popup thêm từ thư viện.</li>
+</ul>
+<h4 id="testcase-trang-thai-va-xoa-muc">Testcase — Trạng thái và xoá mục</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 6: Đổi Nháp sang Công khai</td>
+<td>High</td>
+<td>Smoke</td>
+<td>Flow 2 / REQ04</td>
+<td>CD</td>
+<td>Mục <code>Nháp</code></td>
+<td><strong>Given</strong> mở menu <code>⋮</code> → <code>Đổi trạng thái</code><br><strong>When</strong> chọn <code>Công khai</code><br><strong>Then</strong> badge chuyển <code>Công khai</code></td>
+<td>- Một Toast <code>Thành Công</code></td>
+</tr>
+<tr>
+<td>Case 7: Chuyển trạng thái không hợp lệ</td>
+<td>High</td>
+<td></td>
+<td>EX01 / REQ04</td>
+<td>CD</td>
+<td>Mục <code>Công khai</code></td>
+<td><strong>Given</strong> mở <code>Đổi trạng thái</code><br><strong>When</strong> xem lựa chọn hoặc gửi request chuyển <code>Nháp</code><br><strong>Then</strong> không có <code>Nháp</code>; backend từ chối</td>
+<td>- Trạng thái giữ nguyên</td>
+</tr>
+<tr>
+<td>Case 8: Không xoá mục Công khai</td>
+<td>High</td>
+<td></td>
+<td>EX02 / REQ05</td>
+<td>CD</td>
+<td>Mục <code>Công khai</code></td>
+<td><strong>Given</strong> mở menu <code>⋮</code><br><strong>When</strong> xem lựa chọn hoặc gửi request xoá<br><strong>Then</strong> không có <code>Xoá</code>; backend từ chối</td>
+<td>- Gợi ý chuyển <code>Vô hiệu</code></td>
+</tr>
+<tr>
+<td>Case 9: Xoá mục Nháp chưa dùng</td>
+<td>High</td>
+<td>Smoke</td>
+<td>Flow 3 / REQ05</td>
+<td>CD</td>
+<td>Mục <code>Nháp</code>, <code>Chưa dùng</code></td>
+<td><strong>Given</strong> chọn <code>Xoá</code><br><strong>When</strong> bấm <code>Xoá</code> ở popup<br><strong>Then</strong> mục biến mất khỏi bảng</td>
+<td>- Toast <code>Thành Công</code><br>- Không tìm thấy ở S1 / S6 / popup thư viện</td>
+</tr>
+<tr>
+<td>Case 10: Không xoá mục đang dùng</td>
+<td>Medium</td>
+<td></td>
+<td>EX03 / REQ05</td>
+<td>CD</td>
+<td>Mục <code>Vô hiệu</code>, đang dùng ở 2 bài</td>
+<td><strong>Given</strong> mở menu <code>⋮</code><br><strong>When</strong> xem lựa chọn<br><strong>Then</strong> không có <code>Xoá</code>, có tooltip</td>
+<td>- Request xoá trực tiếp bị từ chối</td>
+</tr>
+<tr>
+<td>Case 11: Huỷ xoá</td>
+<td>Medium</td>
+<td></td>
+<td>Flow 3</td>
+<td>CD</td>
+<td>Popup xoá đang mở</td>
+<td><strong>Given</strong> bấm <code>Huỷ</code><br><strong>When</strong> popup đóng<br><strong>Then</strong> mục giữ nguyên</td>
+<td>- Không Toast</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="thu-vien-kien-thuc">Thư viện kiến thức</h3>
+<p><strong>Mô tả:</strong></p>
+<ul>
+<li>Kho kiến thức dùng chung: từ vựng, ngữ pháp, mẫu câu, chữ… Một mục là một bản ghi thư viện, được S1 của nhiều khoá học tham chiếu (<a href="../knowledge-s1/knowledge-s1.md">Kiến thức (S1)</a>).</li>
+</ul>
+<p><strong>Giải thích thành phần:</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Thành phần</th>
+<th>Yêu cầu</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Tab theo ngôn ngữ trung tâm</td>
+<td>Từ vựng, Ngữ pháp, Mẫu câu, Hán tự (Hanzi), Kanji, Bảng chữ, Phát âm; chỉ hiện loại có trong ngôn ngữ của trung tâm, giống thanh tab của S1 (tiếng Trung: Từ vựng, Ngữ pháp, Mẫu câu, Hán tự, Phát âm; tiếng Nhật: Từ vựng, Ngữ pháp, Mẫu câu, Kanji, Bảng chữ).</td>
+</tr>
+<tr>
+<td>Cột tab Từ vựng</td>
+<td><code>STT</code>, <code>Từ</code>, <code>Phiên âm</code>, <code>Nghĩa</code>, <code>Cụm</code>, <code>Đang dùng ở</code>, <code>Trạng thái</code>.</td>
+</tr>
+<tr>
+<td>Cột các tab khác</td>
+<td>Cột chính của tab tương ứng ở bảng S1 (vd Mẫu câu: Câu, Phiên âm, Nghĩa; Hán tự: Chữ, Phiên âm, Hán Việt, Nghĩa, Bộ thủ; Kanji: Chữ, Âm On, Âm Kun, Hán Việt, Nghĩa), thêm <code>Cụm</code>, <code>Đang dùng ở</code>, <code>Trạng thái</code>.</td>
+</tr>
+<tr>
+<td><code>Cụm</code></td>
+<td>Cụm kiến thức chứa mục trong khoá học đang dùng; nhiều cụm thì hiện cụm đầu kèm <code>+N</code>.</td>
+</tr>
+<tr>
+<td>Tìm kiếm</td>
+<td>Theo nội dung chính và phiên âm, nghĩa của mục (vd Từ / Câu / Chữ, Phiên âm, Nghĩa).</td>
+</tr>
+<tr>
+<td>Bấm dòng</td>
+<td>Không mở form sửa; chỉ menu <code>⋮</code> (Đổi trạng thái, Xoá).</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Điểm cần lưu ý:</strong></p>
+<ul>
+<li>Thêm và sửa kiến thức làm tại S1 của khoá học; S1 ghi thẳng vào bản ghi thư viện nên Thư viện luôn hiển thị dữ liệu mới nhất.</li>
+<li>Khác Figma CD-KH-070100: thanh tab trung tâm Đắc Nhân (tiếng Trung) đang có <code>Từ vựng</code>, <code>Ngữ Pháp</code>, <code>Mẫu Câu</code>, <code>Hanzi</code>, thiếu <code>Phát âm</code>; Figma mới có bảng tab Từ vựng (các tab khác <strong>UI cần bổ sung</strong>, cột theo S1).</li>
+</ul>
+<h4 id="testcase-thu-vien-kien-thuc">Testcase — Thư viện kiến thức</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 12: Tab theo ngôn ngữ trung tâm</td>
+<td>High</td>
+<td></td>
+<td>REQ06</td>
+<td>CD</td>
+<td>Trung tâm Đắc Nhân (tiếng Trung) và Sakumi (tiếng Nhật)</td>
+<td><strong>Given</strong> mở Thư viện kiến thức ở từng trung tâm<br><strong>When</strong> xem thanh tab<br><strong>Then</strong> Đắc Nhân có Hán tự, Phát âm; Sakumi có Kanji, Bảng chữ</td>
+<td>- Không hiện loại không thuộc ngôn ngữ</td>
+</tr>
+<tr>
+<td>Case 13: Cột tab Từ vựng</td>
+<td>Medium</td>
+<td></td>
+<td>REQ06</td>
+<td>CD</td>
+<td>Có từ vựng thiếu Nghĩa</td>
+<td><strong>Given</strong> xem tab Từ vựng<br><strong>When</strong> render bảng<br><strong>Then</strong> đủ 7 cột; ô Nghĩa trống hiện <code>— trống —</code></td>
+<td>- Mục nhiều cụm hiện <code>+N</code></td>
+</tr>
+<tr>
+<td>Case 14: Sửa ở S1 hiển thị ở Thư viện</td>
+<td>High</td>
+<td></td>
+<td>REQ06</td>
+<td>CD</td>
+<td>Từ <code>你好</code> dùng ở khoá HSK1</td>
+<td><strong>Given</strong> sửa Nghĩa của <code>你好</code> ở S1<br><strong>When</strong> mở Thư viện kiến thức<br><strong>Then</strong> dòng <code>你好</code> hiện Nghĩa mới</td>
+<td>- Thư viện không có form sửa</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="thu-vien-ky-nang">Thư viện kỹ năng</h3>
+<p align="center">
+  <a href="./images/02-ky-nang-nghe.png"><img src="./images/02-ky-nang-nghe.png" alt="Thư viện kỹ năng — tab Nghe" width="900" title="Nhấn để xem ảnh gốc"></a><br>
+  <em>Thư viện kỹ năng, tab Nghe (Figma CD-KH-070200) — nhấn để xem ảnh gốc</em>
+</p>
+
+<p align="center">
+  <a href="./images/03-ky-nang-doc.png"><img src="./images/03-ky-nang-doc.png" alt="Thư viện kỹ năng — tab Đọc" width="900" title="Nhấn để xem ảnh gốc"></a><br>
+  <em>Thư viện kỹ năng, tab Đọc (Figma CD-KH-070210) — nhấn để xem ảnh gốc</em>
+</p>
+
+<p><strong>Mô tả:</strong></p>
+<ul>
+<li>Kho bài kỹ năng dùng chung theo 4 tab <code>Nghe</code>, <code>Đọc</code>, <code>Viết</code>, <code>Nói</code>. Mỗi bài kỹ năng có nội dung và bộ câu hỏi đi kèm.</li>
+</ul>
+<p><strong>Giải thích thành phần:</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Thành phần</th>
+<th>Yêu cầu</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Cột tab Nghe</td>
+<td><code>STT</code>, <code>Bài nghe</code> (tiêu đề + mô tả), <code>Âm thanh</code> (nút phát, thanh tiến độ, thời lượng <code>mm:ss</code>; chưa có file hiển thị <code>— chưa có file âm thanh —</code>), <code>Số câu hỏi</code>, <code>Đang dùng ở</code>, <code>Trạng thái</code>.</td>
+</tr>
+<tr>
+<td>Cột tab Đọc</td>
+<td><code>STT</code>, <code>Bài đọc</code> (tiêu đề + mô tả), <code>Đoạn văn</code> (một dòng, dài thì cắt <code>…</code>; chưa có hiển thị <code>— chưa có đoạn văn —</code>), <code>Số câu hỏi</code>, <code>Đang dùng ở</code>, <code>Trạng thái</code>.</td>
+</tr>
+<tr>
+<td>Cột tab Viết, Nói</td>
+<td><code>STT</code>, <code>Bài viết</code> / <code>Bài nói</code> (tiêu đề + mô tả), <code>Đề bài</code>, <code>Số câu hỏi</code>, <code>Đang dùng ở</code>, <code>Trạng thái</code> (<strong>UI cần bổ sung</strong>).</td>
+</tr>
+<tr>
+<td><code>Số câu hỏi</code></td>
+<td>Số câu của bài kỹ năng; <code>0 câu</code> hiển thị màu cam.</td>
+</tr>
+<tr>
+<td>Phát âm thanh</td>
+<td>Bấm nút phát nghe ngay trong bảng; chỉ phát một bài tại một thời điểm.</td>
+</tr>
+<tr>
+<td>Tìm kiếm</td>
+<td>Theo tiêu đề, mô tả và nội dung (đoạn văn, đề bài).</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Điểm cần lưu ý:</strong></p>
+<ul>
+<li>Thêm và sửa bài kỹ năng làm tại Kỹ năng (S6) của khoá học.</li>
+<li>Kỹ năng theo source ICS cũ gồm Nghe, Đọc, Viết, Nói (<code>SkillLibraryType</code>).</li>
+<li>Khác Figma CD-KH-070200 / 070210: bỏ lọc <code>Thời lượng</code>, <code>Độ dài</code>, <code>Khoá học</code>, <code>Trạng thái</code>; Figma chưa có tab Viết, Nói.</li>
+</ul>
+<h4 id="testcase-thu-vien-ky-nang">Testcase — Thư viện kỹ năng</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 15: Bảng tab Nghe</td>
+<td>High</td>
+<td></td>
+<td>REQ07</td>
+<td>CD</td>
+<td>Có bài nghe có file và bài chưa có file</td>
+<td><strong>Given</strong> mở tab Nghe<br><strong>When</strong> render bảng<br><strong>Then</strong> bài có file có nút phát và thời lượng; bài chưa có file hiện <code>— chưa có file âm thanh —</code></td>
+<td>- <code>0 câu</code> màu cam</td>
+</tr>
+<tr>
+<td>Case 16: Phát một bài tại một thời điểm</td>
+<td>Medium</td>
+<td></td>
+<td>REQ07</td>
+<td>CD</td>
+<td>Đang phát bài 01</td>
+<td><strong>Given</strong> bấm phát bài 02<br><strong>When</strong> âm thanh chạy<br><strong>Then</strong> bài 01 dừng, bài 02 phát</td>
+<td>- Không đổi dữ liệu</td>
+</tr>
+<tr>
+<td>Case 17: Bảng tab Đọc</td>
+<td>Medium</td>
+<td></td>
+<td>REQ07</td>
+<td>CD</td>
+<td>Có bài đọc chưa có đoạn văn</td>
+<td><strong>Given</strong> mở tab Đọc<br><strong>When</strong> render bảng<br><strong>Then</strong> đoạn văn dài bị cắt <code>…</code>; bài chưa có đoạn văn hiện <code>— chưa có đoạn văn —</code></td>
+<td>- Tìm theo nội dung đoạn văn ra đúng bài</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="thu-vien-bai-tap">Thư viện bài tập</h3>
+<p align="center">
+  <a href="./images/04-bai-tap.png"><img src="./images/04-bai-tap.png" alt="Thư viện bài tập — Ngân hàng câu hỏi" width="900" title="Nhấn để xem ảnh gốc"></a><br>
+  <em>Thư viện bài tập, tab Ngân hàng câu hỏi (Figma CD-KH-070300) — nhấn để xem ảnh gốc</em>
+</p>
+
+<p><strong>Mô tả:</strong></p>
+<ul>
+<li>Kho câu hỏi dùng chung cho BTVN và Kiểm tra, gồm 3 tab <code>Ngân hàng câu hỏi</code>, <code>BTVN Mẫu</code>, <code>Kiểm Tra Mẫu</code>. Thư viện bài tập <strong>chỉ xem</strong>; thêm, sửa, xoá câu hỏi làm tại <a href="../homework-test/homework-test.md">Bài tập về nhà và Kiểm tra</a>.</li>
+</ul>
+<p><strong>Giải thích thành phần:</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Thành phần</th>
+<th>Yêu cầu</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Tab <code>Ngân hàng câu hỏi</code></td>
+<td>Mọi câu hỏi của các bộ câu hỏi BTVN và Kiểm tra thuộc trung tâm. Cột <code>STT</code>, <code>Câu hỏi</code> (nội dung + hướng dẫn), <code>Loại câu</code>, <code>Đáp án đúng</code>, <code>Kiến thức / Kỹ năng</code>, <code>Đang dùng ở</code>, <code>Trạng thái</code>.</td>
+</tr>
+<tr>
+<td><code>Loại câu</code></td>
+<td>Badge một trong 8 loại: <code>Trắc nghiệm</code>, <code>Sắp xếp</code>, <code>Nối từ</code>, <code>Nói</code>, <code>Đọc</code>, <code>Viết</code>, <code>Hình ảnh</code>, <code>Câu hỏi con</code>.</td>
+</tr>
+<tr>
+<td><code>Đáp án đúng</code></td>
+<td>Theo loại câu; <code>Đọc</code>, <code>Viết</code>, <code>Hình ảnh</code> hiển thị <code>Giáo viên chấm</code>; câu chưa có đáp án hiển thị <code>— chưa có đáp án —</code> màu cam; <code>Câu hỏi con</code> hiển thị <code>N câu con</code>.</td>
+</tr>
+<tr>
+<td><code>Kiến thức / Kỹ năng</code></td>
+<td>Cụm kiến thức (vd <code>Cụm 01. Chào hỏi</code>) hoặc kỹ năng (vd <code>Kỹ năng: Nghe</code>) đã gắn khi soạn câu.</td>
+</tr>
+<tr>
+<td>Câu hỏi con</td>
+<td>Dòng cha có mũi tên mở / thu các câu con đánh số <code>7.1</code>, <code>7.2</code>…; câu con có loại câu và đáp án riêng; chú thích dưới bảng như ảnh.</td>
+</tr>
+<tr>
+<td><code>Trạng thái</code></td>
+<td>Câu hỏi không có trạng thái riêng: hiển thị trạng thái <strong>khoá học</strong> chứa câu (<code>Nháp</code>, <code>Công khai</code>, <code>Vô hiệu</code>); câu chưa thuộc bài nào hiển thị <code>Chưa dùng</code>.</td>
+</tr>
+<tr>
+<td>Tag <code>AI</code></td>
+<td>Câu do Generate bằng AI tạo có tag <code>AI</code> cạnh nội dung; mất khi CD sửa và lưu câu.</td>
+</tr>
+<tr>
+<td>Tab <code>BTVN Mẫu</code> / <code>Kiểm Tra Mẫu</code></td>
+<td>Danh sách bộ câu hỏi BTVN / bài kiểm tra: <code>STT</code>, <code>Bài</code> (Khoá học · Kỳ · Bài, hoặc tên bài kiểm tra), <code>Số câu</code>, <code>Tổng điểm</code>, <code>Trạng thái</code> (theo khoá học). Bấm dòng mở bộ câu hỏi chỉ đọc (<strong>UI cần bổ sung</strong>).</td>
+</tr>
+<tr>
+<td>Tìm kiếm</td>
+<td>Ngân hàng câu hỏi: theo nội dung và hướng dẫn câu hỏi; hai tab mẫu: theo tên bài, tên khoá học.</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Điểm cần lưu ý:</strong></p>
+<ul>
+<li>Thư viện bài tập không có menu <code>⋮</code>, không đổi trạng thái, không xoá; muốn sửa hoặc xoá câu thì mở bộ câu hỏi ở menu Bài tập về nhà.</li>
+<li>Khác Figma CD-KH-070300: bỏ lọc <code>Loại</code>, <code>Loại câu</code>, <code>Khoá học</code>, <code>Trạng thái</code>; Figma chưa có bảng của 2 tab mẫu.</li>
+</ul>
+<h4 id="testcase-thu-vien-bai-tap">Testcase — Thư viện bài tập</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 18: Ngân hàng câu hỏi đủ cột</td>
+<td>High</td>
+<td>Smoke</td>
+<td>Flow 1 / REQ08</td>
+<td>CD</td>
+<td>Có câu thuộc khoá Công khai, câu chưa dùng, câu thiếu đáp án</td>
+<td><strong>Given</strong> mở Thư viện bài tập<br><strong>When</strong> tab Ngân hàng câu hỏi tải xong<br><strong>Then</strong> đủ 7 cột, trạng thái theo khoá học</td>
+<td>- Câu chưa dùng hiện <code>Chưa dùng</code><br>- Câu thiếu đáp án hiện <code>— chưa có đáp án —</code></td>
+</tr>
+<tr>
+<td>Case 19: Mở câu hỏi con</td>
+<td>Medium</td>
+<td></td>
+<td>REQ08</td>
+<td>CD</td>
+<td>Câu 07 có 3 câu con</td>
+<td><strong>Given</strong> bấm mũi tên dòng 07<br><strong>When</strong> dòng mở<br><strong>Then</strong> hiện 7.1, 7.2, 7.3 với loại câu và đáp án riêng</td>
+<td>- Bấm lại thì thu gọn</td>
+</tr>
+<tr>
+<td>Case 20: Trạng thái theo khoá học</td>
+<td>High</td>
+<td></td>
+<td>REQ08</td>
+<td>CD</td>
+<td>Câu thuộc khoá HSK1 đang <code>Công khai</code></td>
+<td><strong>Given</strong> chuyển khoá HSK1 sang <code>Vô hiệu</code><br><strong>When</strong> mở lại Ngân hàng câu hỏi<br><strong>Then</strong> câu hiển thị <code>Vô hiệu</code></td>
+<td>- Không đổi trạng thái tại Thư viện được</td>
+</tr>
+<tr>
+<td>Case 21: Chỉ xem</td>
+<td>High</td>
+<td></td>
+<td>EX04 / REQ08</td>
+<td>CD</td>
+<td>Đang ở Thư viện bài tập</td>
+<td><strong>Given</strong> xem dòng câu hỏi hoặc gửi request sửa / xoá từ Thư viện<br><strong>When</strong> hệ thống xử lý<br><strong>Then</strong> không có menu thao tác; request bị từ chối</td>
+<td>- Dữ liệu giữ nguyên</td>
+</tr>
+<tr>
+<td>Case 22: Tag AI</td>
+<td>Medium</td>
+<td></td>
+<td>REQ08</td>
+<td>CD</td>
+<td>Câu tạo bằng AI chưa sửa và câu AI đã sửa</td>
+<td><strong>Given</strong> xem bảng<br><strong>When</strong> render<br><strong>Then</strong> chỉ câu AI chưa sửa có tag <code>AI</code></td>
+<td>-</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="toast-phan-hoi-crud">Toast phản hồi CRUD</h3>
+<p align="center">
+  <a href="../../images/01-toast-crud.png"><img src="../../images/01-toast-crud.png" alt="Bốn trạng thái Toast CRUD" width="520" title="Nhấn để xem ảnh gốc"></a><br>
+  <em>Toast Thành Công, Thông Báo, Cảnh Báo và Có Lỗi Xảy Ra — nhấn để xem ảnh gốc</em>
+</p>
+
+<p><strong>Mô tả:</strong></p>
+<ul>
+<li>Phản hồi sau khi đổi trạng thái hoặc xoá mục kiến thức, kỹ năng.</li>
+</ul>
+<p><strong>Giải thích thành phần:</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Loại Toast</th>
+<th>Tiêu đề cố định</th>
+<th>Khi sử dụng</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Thành công</td>
+<td><code>Thành Công</code></td>
+<td><code>Đã đổi trạng thái.</code>; <code>Đã xoá mục khỏi thư viện.</code></td>
+</tr>
+<tr>
+<td>Cảnh báo</td>
+<td><code>Cảnh Báo</code></td>
+<td><code>Mục đang Công khai không thể xoá.</code>; <code>Mục đang được dùng ở bài học, gỡ khỏi bài trước khi xoá.</code> (khi request bị từ chối)</td>
+</tr>
+<tr>
+<td>Lỗi</td>
+<td><code>Có Lỗi Xảy Ra</code></td>
+<td>Đổi trạng thái hoặc xoá thất bại do backend / network.</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Điểm cần lưu ý:</strong></p>
+<ul>
+<li>Mỗi thao tác một Toast; tìm kiếm, lọc, phát âm thanh, <code>Huỷ</code> không có Toast CRUD.</li>
+</ul>
+<h4 id="testcase-toast-phan-hoi-crud">Testcase — Toast phản hồi CRUD</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Toast Case 1: Thành công</td>
+<td>High</td>
+<td></td>
+<td>Ràng buộc Toast CRUD</td>
+<td>CD</td>
+<td>Mục <code>Nháp</code></td>
+<td><strong>Given</strong> đổi trạng thái hoặc xoá<br><strong>When</strong> backend thành công<br><strong>Then</strong> Toast <code>Thành Công</code> đúng nội dung</td>
+<td>- Một Toast</td>
+</tr>
+<tr>
+<td>Toast Case 2: Lỗi</td>
+<td>High</td>
+<td></td>
+<td>Ràng buộc Toast CRUD</td>
+<td>CD</td>
+<td>Backend / network lỗi</td>
+<td><strong>Given</strong> đổi trạng thái hoặc xoá<br><strong>When</strong> thất bại<br><strong>Then</strong> Toast <code>Có Lỗi Xảy Ra</code></td>
+<td>- Trạng thái / dữ liệu giữ nguyên</td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2 id="2-yeu-cau">2. Yêu cầu</h2>
+<h3 id="21-flow-chinh">2.1. Flow chính</h3>
+<p><strong>Flow 1 / REQ01 / REQ02: Xem, tìm kiếm và lọc Thư viện</strong></p>
+<pre><code class="language-text">CD chọn Thư Viện → Kiến Thức / Kỹ Năng / Bài Tập
+      → Hệ thống tải dữ liệu thư viện của trung tâm đang chọn, tab đầu tiên, trang 1
+      → CD đổi tab / nhập tìm kiếm / chọn Cấp độ → bảng và badge tổng số cập nhật
+      → Xoá bộ lọc: tìm kiếm trống, Cấp độ Tất cả
+</code></pre>
+<p><strong>Flow 2 / REQ04: Đổi trạng thái mục kiến thức, kỹ năng</strong></p>
+<pre><code class="language-text">CD bấm ⋮ → Đổi trạng thái → chọn trạng thái được phép
+      → Backend kiểm tra chuyển trạng thái hợp lệ
+      → Hợp lệ: lưu, badge cập nhật, Toast &quot;Đã đổi trạng thái.&quot;
+      → Không hợp lệ: từ chối, trạng thái giữ nguyên
+</code></pre>
+<p><strong>Flow 3 / REQ05: Xoá mục kiến thức, kỹ năng</strong></p>
+<pre><code class="language-text">CD bấm ⋮ → Xoá (chỉ có với mục Nháp / Vô hiệu và Chưa dùng)
+      → Popup &quot;Xoá mục khỏi thư viện?&quot; → Huỷ: đóng, giữ nguyên
+      → Xoá: backend kiểm tra lại trạng thái và việc đang dùng → xoá mềm → Toast &quot;Đã xoá mục khỏi thư viện.&quot;
+</code></pre>
+<h3 id="22-ngoai-le">2.2. Ngoại lệ</h3>
+<ul>
+<li><strong>EX01:</strong> Request chuyển trạng thái không hợp lệ (<code>Công khai</code> → <code>Nháp</code>, <code>Vô hiệu</code> → <code>Nháp</code>) → backend từ chối; trạng thái giữ nguyên.</li>
+<li><strong>EX02:</strong> Request xoá mục <code>Công khai</code> → backend từ chối; Toast <code>Cảnh Báo</code> <code>Mục đang Công khai không thể xoá.</code></li>
+<li><strong>EX03:</strong> Request xoá mục đang dùng ở bài học → backend từ chối; Toast <code>Cảnh Báo</code> <code>Mục đang được dùng ở bài học, gỡ khỏi bài trước khi xoá.</code></li>
+<li><strong>EX04:</strong> Request sửa / xoá / đổi trạng thái câu hỏi từ Thư viện bài tập → backend từ chối.</li>
+<li><strong>EX05:</strong> Lỗi tải dữ liệu → vùng bảng báo lỗi và <code>Thử lại</code>; không hiển thị bảng rỗng giả.</li>
+</ul>
+<h3 id="23-yeu-cau-khac">2.3. Yêu cầu khác</h3>
+<ul>
+<li><strong>REQ01 – Phạm vi dữ liệu:</strong> Thư viện chỉ hiển thị dữ liệu của trung tâm CD đang chọn ở header; đổi trung tâm thì tải lại theo ngôn ngữ trung tâm mới.</li>
+<li><strong>REQ02 – Tìm kiếm và lọc:</strong> Chỉ có ô tìm kiếm và lọc <code>Cấp độ</code> (một lựa chọn, mặc định <code>Tất cả</code>), kết hợp với nhau; <code>Xoá bộ lọc</code> đưa về mặc định; phân trang 10 dòng/trang; badge tổng số theo kết quả.</li>
+<li><strong>REQ03 – Đang dùng ở:</strong> Hiển thị kỳ và số bài đang dùng mục; chưa gắn bài nào hiển thị <code>Chưa dùng</code>.</li>
+<li><strong>REQ04 – Trạng thái mục kiến thức, kỹ năng:</strong> <code>Nháp</code> → <code>Công khai</code> / <code>Vô hiệu</code>; <code>Công khai</code> ↔ <code>Vô hiệu</code>; không về <code>Nháp</code>. Mục <code>Vô hiệu</code> không được thêm mới vào bài; bài đã gắn trước đó vẫn dùng.</li>
+<li><strong>REQ05 – Xoá:</strong> Chỉ xoá mềm mục <code>Nháp</code> / <code>Vô hiệu</code> chưa dùng ở bài nào, qua popup xác nhận; mục <code>Công khai</code> không được xoá, chỉ chuyển <code>Vô hiệu</code>.</li>
+<li><strong>REQ06 – Thư viện kiến thức:</strong> Tab theo ngôn ngữ trung tâm (Từ vựng, Ngữ pháp, Mẫu câu, Hán tự, Kanji, Bảng chữ, Phát âm); cột theo bảng S1 kèm <code>Cụm</code>, <code>Đang dùng ở</code>, <code>Trạng thái</code>; thêm / sửa tại S1.</li>
+<li><strong>REQ07 – Thư viện kỹ năng:</strong> Tab Nghe, Đọc, Viết, Nói; cột nội dung, số câu hỏi, đang dùng ở, trạng thái; phát âm thanh trong bảng; thêm / sửa tại S6.</li>
+<li><strong>REQ08 – Thư viện bài tập:</strong> 3 tab Ngân hàng câu hỏi, BTVN Mẫu, Kiểm Tra Mẫu; chỉ xem; trạng thái câu hỏi lấy theo khoá học chứa câu (<code>Chưa dùng</code> khi chưa thuộc bài nào); tag <code>AI</code> cho câu AI chưa được sửa.</li>
+</ul>
+<h3 id="24-rang-buoc">2.4. Ràng buộc</h3>
+<h4 id="quyen">Quyền</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Role</th>
+<th style="text-align: center;">Xem Thư viện</th>
+<th style="text-align: center;">Đổi trạng thái kiến thức / kỹ năng</th>
+<th style="text-align: center;">Xoá kiến thức / kỹ năng chưa Công khai</th>
+<th style="text-align: center;">Sửa / xoá câu hỏi tại Thư viện bài tập</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CD</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">❌</td>
+</tr>
+<tr>
+<td>Các role khác</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+</tr>
+</tbody>
+</table></div>
+<h4 id="pham-vi-du-lieu">Phạm vi dữ liệu</h4>
+<ul>
+<li>Dữ liệu theo trung tâm (ngôn ngữ) CD đang chọn; không trả dữ liệu trung tâm khác.</li>
+<li>Mọi request đổi trạng thái, xoá được backend kiểm tra quyền, trạng thái và việc đang dùng; không dựa vào việc ẩn nút.</li>
+</ul>
+<hr />
+<h2 id="3-can-xac-nhan">3. Cần xác nhận</h2>
+<ul>
+<li>UI cần design bổ sung — bảng các tab chưa có thiết kế: Ngữ pháp, Mẫu câu, Hán tự, Kanji, Bảng chữ, Phát âm (Kiến thức); Viết, Nói (Kỹ năng); BTVN Mẫu, Kiểm Tra Mẫu (Bài tập).</li>
+</ul>
+</article>
+    <p class="source-note">Nguồn: library.md · SHA-256 e5592636e7693b43f613a3d57e6be35ec8bd9b55c68e06af2e21a4600b78649d</p>
+  </main>
+  <script>
+    const article = document.getElementById('document');
+    const nav = document.getElementById('docNav');
+    const headings = [...article.querySelectorAll('h2')];
+    headings.forEach((heading, index) => {
+      const link = document.createElement('a');
+      link.href = `#${heading.id}`;
+      const number = document.createElement('span');
+      number.className = 'nav-num';
+      number.textContent = String(index + 1).padStart(2, '0');
+      link.append(number, document.createTextNode(heading.textContent));
+      nav.append(link);
+    });
+
+    const navLinks = [...nav.querySelectorAll('a')];
+    const observer = new IntersectionObserver(entries => {
+      const current = entries.filter(item => item.isIntersecting).sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
+      if (!current) return;
+      navLinks.forEach(link => link.classList.toggle('active', link.hash === `#${current.target.id}`));
+    }, {rootMargin: '-18% 0px -68% 0px', threshold: [0, .2, .5]});
+    headings.forEach(heading => observer.observe(heading));
+    if (navLinks[0]) navLinks[0].classList.add('active');
+
+    const testcaseHeadings = [...article.querySelectorAll('h4, h5')]
+      .filter(heading => heading.textContent.trim().startsWith('Testcase'));
+    const testcaseGroups = testcaseHeadings
+      .map(heading => ({heading, tableWrap: heading.nextElementSibling}))
+      .filter(group => group.tableWrap?.classList.contains('table-wrap'));
+    if (testcaseGroups.length) {
+        const tableWraps = testcaseGroups.map(group => group.tableWrap);
+        tableWraps.forEach(tableWrap => tableWrap.classList.add('testcase-table'));
+        const rows = tableWraps.flatMap(tableWrap => [...tableWrap.querySelectorAll('tbody tr')]);
+        const tools = document.createElement('div');
+        tools.className = 'case-tools';
+        const input = document.createElement('input');
+        input.type = 'search';
+        input.placeholder = 'Tìm testcase, Flow, REQ, EX hoặc nội dung…';
+        input.setAttribute('aria-label', 'Tìm testcase');
+        const count = document.createElement('span');
+        count.className = 'case-count';
+        tools.append(input, count);
+        testcaseGroups[0].heading.before(tools);
+        const filterRows = () => {
+          const query = input.value.trim().toLocaleLowerCase('vi');
+          let visible = 0;
+          rows.forEach(row => {
+            const match = !query || row.textContent.toLocaleLowerCase('vi').includes(query);
+            row.hidden = !match;
+            if (match) visible += 1;
+          });
+          testcaseGroups.forEach(({heading, tableWrap}) => {
+            const hasVisibleRow = [...tableWrap.querySelectorAll('tbody tr')]
+              .some(row => !row.hidden);
+            heading.hidden = !hasVisibleRow;
+            tableWrap.hidden = !hasVisibleRow;
+          });
+          count.textContent = `${visible}/${rows.length} testcase`;
+        };
+        input.addEventListener('input', filterRows);
+        filterRows();
+    }
+  </script>
+</body>
+</html>

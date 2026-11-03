@@ -1,0 +1,1791 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Requirement Chi tiết lớp học — Hóa đơn">
+  <link rel="icon" href="data:,">
+  <title>Chi tiết lớp học — Hóa đơn — Requirement</title>
+  <style>
+    :root {
+      --orange-700: #c83f00;
+      --orange-600: #e84c00;
+      --orange-500: #f45b0a;
+      --orange-400: #ff7a32;
+      --orange-100: #fff0e8;
+      --orange-50: #fff8f4;
+      --navy-950: #101828;
+      --navy-900: #172033;
+      --navy-800: #243047;
+      --slate-700: #344054;
+      --slate-600: #475467;
+      --slate-500: #667085;
+      --slate-400: #98a2b3;
+      --slate-300: #d0d5dd;
+      --slate-200: #e4e7ec;
+      --slate-100: #f2f4f7;
+      --slate-50: #f8fafc;
+      --white: #ffffff;
+      --green: #159447;
+      --blue: #2154c5;
+      --yellow: #b77900;
+      --red: #c92a2a;
+      --purple: #6941c6;
+      --shadow-sm: 0 1px 2px rgba(16, 24, 40, .06);
+      --shadow-md: 0 12px 32px rgba(16, 24, 40, .10);
+      --shadow-lg: 0 24px 64px rgba(16, 24, 40, .16);
+      --radius-sm: 10px;
+      --radius: 16px;
+      --radius-lg: 24px;
+      --sidebar: 286px;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      color: var(--navy-950);
+      background:
+        radial-gradient(circle at 88% 5%, rgba(244, 91, 10, .10), transparent 24rem),
+        var(--slate-50);
+      font: 15px/1.65 Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      text-rendering: optimizeLegibility;
+    }
+    a { color: inherit; }
+    img { max-width: 100%; }
+    button, input, select { font: inherit; }
+    code {
+      padding: .12rem .38rem;
+      border: 1px solid #fed7c3;
+      border-radius: 6px;
+      color: var(--orange-700);
+      background: var(--orange-50);
+      font: 600 .9em ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    }
+
+    .skip-link {
+      position: fixed;
+      z-index: 999;
+      top: 12px;
+      left: 12px;
+      padding: 10px 14px;
+      border-radius: 9px;
+      color: var(--white);
+      background: var(--navy-950);
+      transform: translateY(-150%);
+    }
+    .skip-link:focus { transform: none; }
+
+    .sidebar {
+      position: fixed;
+      z-index: 30;
+      inset: 0 auto 0 0;
+      width: var(--sidebar);
+      padding: 22px 18px;
+      overflow-y: auto;
+      color: #f8fafc;
+      background:
+        linear-gradient(155deg, rgba(255, 122, 50, .24), transparent 26%),
+        linear-gradient(180deg, #192338 0%, #111827 100%);
+      border-right: 1px solid rgba(255, 255, 255, .08);
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 4px 8px 22px;
+      border-bottom: 1px solid rgba(255, 255, 255, .10);
+    }
+    .brand-mark {
+      display: grid;
+      width: 44px;
+      height: 44px;
+      place-items: center;
+      border-radius: 14px;
+      color: var(--white);
+      background: linear-gradient(135deg, var(--orange-400), var(--orange-600));
+      box-shadow: 0 10px 26px rgba(244, 91, 10, .35);
+      font-weight: 900;
+      letter-spacing: -.06em;
+    }
+    .brand strong { display: block; font-size: 16px; }
+    .brand small { color: #aeb8c9; }
+    .nav-title {
+      margin: 24px 10px 8px;
+      color: #8f9aae;
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+    .nav { display: grid; gap: 4px; }
+    .nav a {
+      display: flex;
+      align-items: center;
+      gap: 11px;
+      padding: 10px 12px;
+      border-radius: 10px;
+      color: #cbd5e1;
+      text-decoration: none;
+      transition: .18s ease;
+    }
+    .nav a:hover, .nav a.active {
+      color: var(--white);
+      background: rgba(255, 255, 255, .09);
+    }
+    .nav a.active { box-shadow: inset 3px 0 var(--orange-400); }
+    .nav-num {
+      display: grid;
+      width: 25px;
+      height: 25px;
+      flex: 0 0 auto;
+      place-items: center;
+      border: 1px solid rgba(255, 255, 255, .15);
+      border-radius: 8px;
+      font-size: 11px;
+      font-weight: 800;
+    }
+    .sidebar-footer {
+      margin-top: 26px;
+      padding: 14px;
+      border: 1px solid rgba(255, 255, 255, .10);
+      border-radius: 14px;
+      color: #aeb8c9;
+      background: rgba(255, 255, 255, .04);
+      font-size: 12px;
+    }
+    .sidebar-footer a { color: #ffd8c5; }
+
+    main {
+      width: min(1500px, calc(100% - var(--sidebar)));
+      margin-left: var(--sidebar);
+      padding: 34px clamp(24px, 4vw, 64px) 80px;
+    }
+    section { scroll-margin-top: 24px; }
+    .hero {
+      position: relative;
+      padding: clamp(30px, 5vw, 56px);
+      overflow: hidden;
+      border: 1px solid rgba(255, 255, 255, .08);
+      border-radius: var(--radius-lg);
+      color: var(--white);
+      background:
+        linear-gradient(105deg, rgba(16, 24, 40, .97) 0%, rgba(23, 32, 51, .94) 62%, rgba(109, 45, 9, .90) 100%);
+      box-shadow: var(--shadow-lg);
+    }
+    .hero::after {
+      content: "";
+      position: absolute;
+      width: 360px;
+      height: 360px;
+      top: -190px;
+      right: -80px;
+      border: 70px solid rgba(255, 122, 50, .15);
+      border-radius: 50%;
+    }
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 10px;
+      border: 1px solid rgba(255, 255, 255, .15);
+      border-radius: 999px;
+      color: #ffd8c5;
+      background: rgba(255, 255, 255, .06);
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+    .hero h1 {
+      max-width: 900px;
+      margin: 18px 0 12px;
+      font-size: clamp(34px, 5vw, 64px);
+      line-height: 1.03;
+      letter-spacing: -.045em;
+    }
+    .hero p { max-width: 780px; margin: 0; color: #cbd5e1; font-size: 17px; }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 25px; }
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      min-height: 42px;
+      padding: 9px 14px;
+      border: 1px solid transparent;
+      border-radius: 10px;
+      color: var(--white);
+      background: var(--orange-500);
+      text-decoration: none;
+      cursor: pointer;
+      transition: .18s ease;
+    }
+    .button:hover { transform: translateY(-1px); background: var(--orange-600); }
+    .button.secondary { border-color: rgba(255, 255, 255, .15); background: rgba(255, 255, 255, .07); }
+    .button.ghost { color: var(--slate-700); border-color: var(--slate-300); background: var(--white); }
+    .button.small { min-height: 36px; padding: 7px 11px; font-size: 13px; }
+
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 14px;
+      margin-top: 18px;
+    }
+    .stat {
+      padding: 18px;
+      border: 1px solid var(--slate-200);
+      border-radius: var(--radius);
+      background: rgba(255, 255, 255, .86);
+      box-shadow: var(--shadow-sm);
+    }
+    .stat strong { display: block; color: var(--orange-600); font-size: 30px; line-height: 1; }
+    .stat span { display: block; margin-top: 7px; color: var(--slate-600); font-weight: 650; }
+
+    .section-head {
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 24px;
+      margin: 64px 0 20px;
+    }
+    .section-kicker {
+      margin: 0 0 6px;
+      color: var(--orange-600);
+      font-size: 12px;
+      font-weight: 850;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+    .section-head h2 { margin: 0; font-size: clamp(27px, 4vw, 40px); letter-spacing: -.035em; }
+    .section-head p { max-width: 600px; margin: 8px 0 0; color: var(--slate-600); }
+
+    .panel {
+      padding: clamp(20px, 3vw, 30px);
+      border: 1px solid var(--slate-200);
+      border-radius: var(--radius-lg);
+      background: var(--white);
+      box-shadow: var(--shadow-sm);
+    }
+    .panel + .panel { margin-top: 18px; }
+    .panel h3 { margin: 0 0 14px; font-size: 21px; letter-spacing: -.02em; }
+    .panel h4 { margin: 26px 0 10px; }
+    .muted { color: var(--slate-600); }
+    .note {
+      padding: 15px 17px;
+      border-left: 4px solid var(--orange-500);
+      border-radius: 0 12px 12px 0;
+      color: var(--slate-700);
+      background: var(--orange-50);
+    }
+
+    .mockup {
+      position: relative;
+      padding: 12px;
+      border: 1px solid var(--slate-200);
+      border-radius: 18px;
+      background: linear-gradient(145deg, #fff, #f4f6f9);
+      box-shadow: var(--shadow-md);
+    }
+    .mockup a { display: block; overflow: hidden; border-radius: 12px; }
+    .mockup img { display: block; width: 100%; transition: transform .3s ease; }
+    .mockup a:hover img { transform: scale(1.01); }
+    .mockup figcaption { padding: 12px 4px 2px; color: var(--slate-600); font-size: 13px; }
+
+    .grid-2 { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
+    .grid-3 { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+    .grid-4 { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 14px; }
+    .card {
+      padding: 18px;
+      border: 1px solid var(--slate-200);
+      border-radius: var(--radius);
+      background: var(--white);
+      box-shadow: var(--shadow-sm);
+    }
+    .card h3, .card h4 { margin: 0 0 8px; }
+    .card p { margin: 0; color: var(--slate-600); }
+    .card-accent { border-top: 4px solid var(--orange-500); }
+
+    .column-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+    .column-item {
+      min-height: 124px;
+      padding: 15px;
+      border: 1px solid var(--slate-200);
+      border-radius: 14px;
+      background: var(--slate-50);
+    }
+    .column-item strong { display: block; margin-bottom: 5px; color: var(--navy-900); }
+    .column-item span { color: var(--slate-600); font-size: 13px; }
+
+    .status-card { display: flex; align-items: center; gap: 12px; }
+    .status-card img { width: 42px; height: 42px; }
+    .status-card small { display: block; color: var(--slate-500); }
+
+    .tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      padding: 4px 9px;
+      border-radius: 999px;
+      color: var(--orange-700);
+      background: var(--orange-100);
+      font-size: 12px;
+      font-weight: 800;
+    }
+    .tag.high { color: #9d174d; background: #fce7f3; }
+    .tag.medium { color: #92400e; background: #fef3c7; }
+    .tag.req { color: #3730a3; background: #e0e7ff; }
+    .tag.ex { color: #b42318; background: #fee4e2; }
+
+    .flow-list { display: grid; gap: 14px; counter-reset: flow; }
+    .flow {
+      position: relative;
+      padding: 22px 22px 22px 68px;
+      border: 1px solid var(--slate-200);
+      border-radius: var(--radius);
+      background: var(--white);
+    }
+    .flow::before {
+      counter-increment: flow;
+      content: counter(flow, decimal-leading-zero);
+      position: absolute;
+      top: 20px;
+      left: 18px;
+      display: grid;
+      width: 36px;
+      height: 36px;
+      place-items: center;
+      border-radius: 11px;
+      color: var(--white);
+      background: var(--orange-500);
+      font-weight: 900;
+    }
+    .flow h3 { margin: 0 0 8px; }
+    .flow ol { margin: 0; padding-left: 20px; color: var(--slate-700); }
+
+    .exception { border-left: 4px solid #ef4444; }
+    .exception strong { color: var(--red); }
+
+    .formula-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; }
+    .formula {
+      padding: 18px;
+      border: 1px solid #ffd6c2;
+      border-radius: 16px;
+      background: linear-gradient(160deg, #fff, var(--orange-50));
+    }
+    .formula h4 { margin: 0 0 12px; color: var(--orange-700); }
+    .fraction { display: grid; justify-items: center; color: var(--navy-900); font-weight: 720; text-align: center; }
+    .fraction .top { padding: 0 10px 7px; border-bottom: 2px solid var(--navy-800); }
+    .fraction .bottom { padding-top: 7px; }
+    .formula .teacher { margin-top: 16px; padding-top: 12px; border-top: 1px dashed #f5b896; color: var(--slate-600); font-size: 13px; }
+
+    .filters {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      align-items: center;
+      padding: 14px;
+      border: 1px solid var(--slate-200);
+      border-radius: 14px;
+      background: var(--white);
+      position: sticky;
+      top: 10px;
+      z-index: 10;
+      box-shadow: var(--shadow-md);
+    }
+    .search {
+      min-width: min(100%, 320px);
+      flex: 1 1 260px;
+      height: 42px;
+      padding: 0 13px;
+      border: 1px solid var(--slate-300);
+      border-radius: 10px;
+      color: var(--navy-950);
+      background: var(--white);
+      outline: none;
+    }
+    .search:focus { border-color: var(--orange-500); box-shadow: 0 0 0 4px rgba(244, 91, 10, .12); }
+    .testcases { display: grid; gap: 10px; margin-top: 16px; }
+    .testcase {
+      border: 1px solid var(--slate-200);
+      border-radius: 14px;
+      background: var(--white);
+      overflow: clip;
+    }
+    .testcase[hidden] { display: none; }
+    .testcase summary {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 15px 17px;
+      cursor: pointer;
+      list-style: none;
+    }
+    .testcase summary::-webkit-details-marker { display: none; }
+    .testcase summary::after { content: "+"; margin-left: auto; color: var(--orange-600); font-size: 22px; font-weight: 700; }
+    .testcase[open] summary::after { content: "−"; }
+    .testcase-title { min-width: 0; font-weight: 780; }
+    .case-body {
+      display: grid;
+      grid-template-columns: minmax(180px, .7fr) minmax(0, 1.3fr);
+      gap: 18px;
+      padding: 18px;
+      border-top: 1px solid var(--slate-200);
+      background: var(--slate-50);
+    }
+    .case-meta { color: var(--slate-600); }
+    .case-meta div + div { margin-top: 8px; }
+    .case-steps { display: grid; gap: 10px; }
+    .step { padding: 10px 12px; border-left: 3px solid var(--orange-400); background: var(--white); }
+    .expected { margin: 14px 0 0; padding-left: 20px; }
+    .expected li + li { margin-top: 4px; }
+    .empty-filter { display: none; padding: 28px; color: var(--slate-600); text-align: center; }
+
+    .question-list { display: grid; gap: 10px; margin: 0; padding: 0; counter-reset: question; list-style: none; }
+    .question-list li {
+      position: relative;
+      padding: 14px 16px 14px 54px;
+      border: 1px solid #f4d8a4;
+      border-radius: 13px;
+      background: #fffbeb;
+      color: #664d03;
+    }
+    .question-list li::before {
+      counter-increment: question;
+      content: counter(question);
+      position: absolute;
+      top: 12px;
+      left: 14px;
+      display: grid;
+      width: 28px;
+      height: 28px;
+      place-items: center;
+      border-radius: 9px;
+      color: #fff;
+      background: #d99100;
+      font-weight: 850;
+    }
+
+    .footer {
+      margin-top: 64px;
+      padding-top: 24px;
+      border-top: 1px solid var(--slate-200);
+      color: var(--slate-500);
+      text-align: center;
+    }
+
+    @media (max-width: 1120px) {
+      :root { --sidebar: 244px; }
+      .column-grid, .grid-3, .formula-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .stats { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
+    @media (max-width: 780px) {
+      .sidebar { position: static; width: auto; padding: 14px; }
+      .brand { padding-bottom: 12px; }
+      .nav-title, .sidebar-footer { display: none; }
+      .nav { display: flex; overflow-x: auto; padding-top: 10px; }
+      .nav a { flex: 0 0 auto; }
+      main { width: 100%; margin: 0; padding: 18px 14px 60px; }
+      .hero { border-radius: 18px; }
+      .grid-2, .grid-3, .grid-4, .column-grid, .formula-grid, .case-body { grid-template-columns: 1fr; }
+      .section-head { align-items: start; flex-direction: column; }
+      .filters { position: static; }
+    }
+    @media print {
+      body { background: #fff; font-size: 11px; }
+      .sidebar, .hero-actions, .filters, .skip-link { display: none !important; }
+      main { width: 100%; margin: 0; padding: 0; }
+      .hero { color: #111; background: #fff; border: 2px solid #111; box-shadow: none; }
+      .hero p { color: #333; }
+      .panel, .card, .stat, .mockup, .testcase { break-inside: avoid; box-shadow: none; }
+      .section-head { margin-top: 32px; }
+      .testcase { display: block !important; }
+      .testcase summary::after { display: none; }
+      .testcase:not([open]) .case-body { display: grid; }
+    }
+
+    .doc-shell { min-width: 0; }
+    .doc-toolbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      margin-bottom: 18px;
+      padding: 14px 16px;
+      border: 1px solid var(--slate-200);
+      border-radius: 14px;
+      background: rgba(255,255,255,.92);
+      box-shadow: var(--shadow-sm);
+    }
+    .doc-toolbar-left, .doc-toolbar-right { display: flex; flex-wrap: wrap; align-items: center; gap: 9px; }
+    .sync-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      padding: 6px 10px;
+      border-radius: 999px;
+      color: #067647;
+      background: #ecfdf3;
+      border: 1px solid #abefc6;
+      font-size: 12px;
+      font-weight: 800;
+    }
+    .sync-badge::before { content: "✓"; }
+    .hash { color: var(--slate-500); font: 12px ui-monospace, SFMono-Regular, Menlo, monospace; }
+    .markdown-body {
+      padding: clamp(24px, 4vw, 54px);
+      border: 1px solid var(--slate-200);
+      border-radius: var(--radius-lg);
+      background: var(--white);
+      box-shadow: var(--shadow-md);
+      overflow: hidden;
+    }
+    .markdown-body > h1 {
+      position: relative;
+      margin: -54px -54px 42px;
+      padding: 62px 54px 54px;
+      color: var(--white);
+      background:
+        radial-gradient(circle at 88% 10%, rgba(255,122,50,.36), transparent 20rem),
+        linear-gradient(115deg, var(--navy-950), #243047 68%, #713209);
+      font-size: clamp(34px, 5vw, 62px);
+      line-height: 1.05;
+      letter-spacing: -.045em;
+    }
+    .markdown-body h2 {
+      margin: 70px 0 24px;
+      padding: 0 0 13px;
+      border-bottom: 2px solid var(--slate-200);
+      font-size: clamp(27px, 4vw, 39px);
+      line-height: 1.15;
+      letter-spacing: -.035em;
+      scroll-margin-top: 24px;
+    }
+    .markdown-body h2::first-letter { color: var(--orange-600); }
+    .markdown-body h3 {
+      margin: 38px 0 16px;
+      color: var(--navy-900);
+      font-size: 23px;
+      line-height: 1.25;
+      letter-spacing: -.02em;
+      scroll-margin-top: 24px;
+    }
+    .markdown-body h4 {
+      margin: 28px 0 12px;
+      color: var(--orange-700);
+      font-size: 17px;
+      scroll-margin-top: 24px;
+    }
+    .markdown-body p { margin: 12px 0; }
+    .markdown-body strong { color: var(--navy-900); }
+    .markdown-body ul, .markdown-body ol { padding-left: 1.35rem; }
+    .markdown-body li { margin: 6px 0; }
+    .markdown-body li::marker { color: var(--orange-500); font-weight: 800; }
+    .markdown-body hr {
+      height: 1px;
+      margin: 48px 0;
+      border: 0;
+      background: linear-gradient(90deg, transparent, var(--slate-300), transparent);
+    }
+    .markdown-body > p[align="center"] {
+      margin: 22px 0 28px;
+      padding: 12px;
+      border: 1px solid var(--slate-200);
+      border-radius: 18px;
+      background: linear-gradient(145deg, #fff, #f5f7fa);
+      box-shadow: var(--shadow-md);
+    }
+    .markdown-body > p[align="center"] a { display: inline-block; max-width: 100%; }
+    .markdown-body > p[align="center"] img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+      margin: auto;
+      border-radius: 12px;
+    }
+    .markdown-body > p[align="center"] em {
+      display: block;
+      margin-top: 10px;
+      color: var(--slate-500);
+      font-size: 13px;
+    }
+    .table-wrap {
+      width: 100%;
+      margin: 18px 0 28px;
+      overflow: auto;
+      border: 1px solid var(--slate-200);
+      border-radius: 15px;
+      background: var(--white);
+      box-shadow: var(--shadow-sm);
+    }
+    .markdown-body table {
+      width: 100%;
+      min-width: 720px;
+      border-collapse: separate;
+      border-spacing: 0;
+      font-size: 14px;
+    }
+    .markdown-body th {
+      position: sticky;
+      top: 0;
+      z-index: 2;
+      padding: 12px 14px;
+      color: var(--white);
+      background: var(--navy-900);
+      border-bottom: 1px solid var(--navy-800);
+      text-align: left;
+      white-space: nowrap;
+    }
+    .markdown-body td {
+      padding: 12px 14px;
+      border-bottom: 1px solid var(--slate-200);
+      vertical-align: top;
+    }
+    .markdown-body tbody tr:nth-child(even) td { background: var(--slate-50); }
+    .markdown-body tbody tr:hover td { background: var(--orange-50); }
+    .markdown-body tbody tr:last-child td { border-bottom: 0; }
+    .markdown-body td img { display: block; width: 36px; height: 36px; max-width: none; }
+    .markdown-body pre {
+      position: relative;
+      margin: 16px 0 24px;
+      padding: 18px 20px;
+      overflow: auto;
+      border: 1px solid #ffd3bd;
+      border-radius: 14px;
+      color: #fff7ed;
+      background: linear-gradient(145deg, #172033, #222f48);
+      box-shadow: var(--shadow-sm);
+      font: 13px/1.75 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    }
+    .markdown-body pre code { padding: 0; border: 0; color: inherit; background: none; font: inherit; }
+    .markdown-body blockquote {
+      margin: 18px 0;
+      padding: 13px 16px;
+      border-left: 4px solid var(--orange-500);
+      border-radius: 0 12px 12px 0;
+      color: var(--slate-700);
+      background: var(--orange-50);
+    }
+    .case-tools {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 10px;
+      margin: 12px 0 14px;
+      padding: 13px;
+      border: 1px solid var(--slate-200);
+      border-radius: 13px;
+      background: var(--slate-50);
+    }
+    .case-tools input {
+      flex: 1 1 280px;
+      height: 42px;
+      padding: 0 13px;
+      border: 1px solid var(--slate-300);
+      border-radius: 10px;
+      outline: none;
+    }
+    .case-tools input:focus { border-color: var(--orange-500); box-shadow: 0 0 0 4px rgba(244,91,10,.12); }
+    .case-count { color: var(--orange-700); font-weight: 800; white-space: nowrap; }
+    .testcase-table table { min-width: 1500px; }
+    .testcase-table th:first-child, .testcase-table td:first-child {
+      position: sticky;
+      left: 0;
+      z-index: 1;
+      min-width: 230px;
+      box-shadow: 1px 0 0 var(--slate-200);
+    }
+    .testcase-table th:first-child { z-index: 3; background: var(--navy-900); }
+    .testcase-table td:first-child { background: var(--white); font-weight: 750; }
+    .testcase-table tbody tr:nth-child(even) td:first-child { background: var(--slate-50); }
+    .testcase-table tbody tr:hover td:first-child { background: var(--orange-50); }
+    .source-note {
+      margin-top: 18px;
+      color: var(--slate-500);
+      text-align: center;
+      font-size: 12px;
+    }
+    @media (max-width: 780px) {
+      .doc-toolbar { align-items: flex-start; flex-direction: column; }
+      .markdown-body { padding: 20px 16px; border-radius: 16px; }
+      .markdown-body > h1 { margin: -20px -16px 32px; padding: 40px 20px 34px; }
+      .markdown-body h2 { margin-top: 48px; }
+      .markdown-body table { font-size: 13px; }
+    }
+    @media print {
+      .doc-toolbar, .case-tools { display: none !important; }
+      .markdown-body { padding: 0; border: 0; box-shadow: none; overflow: visible; }
+      .markdown-body > h1 { margin: 0 0 32px; padding: 30px; color: #111; background: #fff; border: 2px solid #111; }
+      .table-wrap { overflow: visible; box-shadow: none; }
+      .markdown-body table { min-width: 0 !important; font-size: 9px; }
+      .markdown-body th { position: static; color: #111; background: #eee; }
+      .testcase-table th:first-child, .testcase-table td:first-child { position: static; }
+    }
+</style>
+</head>
+<body>
+  <a class="skip-link" href="#document">Đi đến nội dung chính</a>
+  <aside class="sidebar" aria-label="Mục lục requirement">
+    <div class="brand">
+      <div class="brand-mark">ics</div>
+      <div><strong>ICS Requirement</strong><small>Requirement UI, mẫu tin nhắn, biến CơmGao, nền tảng và gửi học viên</small></div>
+    </div>
+    <div class="nav-title">Nội dung Markdown</div>
+    <nav id="docNav" class="nav"></nav>
+    <div class="sidebar-footer">
+      HTML được render trực tiếp từ Markdown nguồn.<br>
+      <a href="./class_detail_messages_requirements.md">Mở file Markdown</a>
+    </div>
+  </aside>
+  <main class="doc-shell">
+    <div class="doc-toolbar">
+      <div class="doc-toolbar-left">
+        <span class="sync-badge">Đồng bộ 100% từ Markdown</span>
+        <span class="hash">SHA-256: 3d9a18c3414e…</span>
+      </div>
+      <div class="doc-toolbar-right">
+        <a class="button ghost small" href="./class_detail_messages_requirements.md">Xem Markdown</a>
+        <button class="button small" type="button" onclick="window.print()">In / Lưu PDF</button>
+      </div>
+    </div>
+    <article id="document" class="markdown-body" data-source-sha256="3d9a18c3414e203bd20cac9bd38d4a4cbd97b7d1a43d5e792d8c8d744d005784">
+<h1 id="chi-tiet-lop-hoc-menu-nhat-ky-tab-tin-nhan">Chi tiết lớp học — Menu Nhật ký — Tab Tin nhắn</h1>
+<blockquote>
+<p>Requirement <strong>Chi tiết lớp học → Nhật ký → Tin Nhắn</strong> theo ba ảnh người dùng cung cấp: thêm tin nhắn vào danh sách, chọn mẫu được định nghĩa sẵn, lấy các biến từ <strong>CơmGao</strong>, gửi toàn bộ học viên hoặc gửi từng học viên theo nền tảng đã chọn. Chức năng định nghĩa/quản lý mẫu tin nhắn được đặc tả riêng. Các tab <a href="./class_detail_journal_requirements.md">Nhật Ký</a>, <a href="./class_detail_notes_requirements.md">Ghi Chú</a>, <a href="./class_detail_appointments_requirements.md">Lịch Hẹn</a> có requirement riêng.</p>
+</blockquote>
+<h2 id="1-ui">1. UI</h2>
+<h3 id="tab-tin-nhan-danh-sach-tin-nhan">Tab Tin Nhắn — Danh sách tin nhắn</h3>
+<p align="center">
+  <a href="./images/44-class-detail-messages-list.png"><img src="./images/44-class-detail-messages-list.png" alt="Tab Tin Nhắn — Danh sách tin nhắn" width="1000" title="Nhấn để xem ảnh gốc"></a><br>
+  <em>UI do người dùng cung cấp — nhấn để xem ảnh gốc</em>
+</p>
+
+<p><strong>Mô tả:</strong></p>
+<ul>
+<li>Admin được thao tác theo quyền quản trị chung, không yêu cầu được add vào lớp. Class Handler và Support chỉ được xem/tạo/gửi/đổi mẫu/xóa khi đã được add vào chính lớp đang mở.</li>
+<li>Tiêu đề màn hình là <code>Danh sách tin nhắn</code>; mỗi item là một tin nhắn bán tự động của chính lớp, có thể mở/thu gọn danh sách học viên. Quyền thao tác không giới hạn theo người tạo item; mọi tài khoản đáp ứng role và điều kiện lớp nêu trên đều được thao tác.</li>
+</ul>
+<p><strong>Giải thích field/thành phần:</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Thành phần</th>
+<th>Yêu cầu</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Nút +</td>
+<td>Mở popup <code>Tạo tin nhắn bán tự động mới</code>; không gửi tin nhắn khi chỉ mở popup.</td>
+</tr>
+<tr>
+<td>Tiêu đề</td>
+<td>Hiển thị Tiêu đề và Mô tả ở đầu item như ảnh; các field là metadata của tin nhắn lớp, không tự thêm vào nội dung gửi.</td>
+</tr>
+<tr>
+<td>Tin nhắn</td>
+<td>Dropdown hiển thị tên mẫu đang dùng, không hiển thị placeholder mẫu như một tin nhắn đã gửi. Cho chọn mẫu theo quyền; đổi mẫu không reset count hoặc mở lại quyền gửi học viên đã thành công.</td>
+</tr>
+<tr>
+<td>Ngày tạo</td>
+<td>Ngày tạo item, định dạng <code>dd/MM/yyyy</code> như <code>28/09/2026</code> trong ảnh; không thay bằng ngày gửi của học viên.</td>
+</tr>
+<tr>
+<td>Số người đã gửi</td>
+<td>Hiển thị <code>S/T</code>: S là số học viên đã được xác nhận gửi thành công cho item này, T là tổng người nhận trong danh sách. Với 8 học viên chưa gửi hiển thị <code>0/8</code>. Gửi thất bại/đang chờ không tăng S; Không cho gửi lại học viên đã thành công trong cùng item.</td>
+</tr>
+<tr>
+<td>Gửi chung</td>
+<td>Nút cam <code>Gửi</code> ở đầu item dùng gửi cho toàn bộ danh sách người nhận đủ điều kiện của item, không áp dụng cho mọi item tin nhắn.</td>
+</tr>
+<tr>
+<td>Mở/Thu gọn</td>
+<td>Chevron bên phải cho mở/thu gọn các dòng học viên; không tạo/gửi/cập nhật dữ liệu nghiệp vụ.</td>
+</tr>
+<tr>
+<td>Nút × đỏ</td>
+<td>Hiện khi hover item; bấm × mở popup xác nhận xóa, chỉ thực hiện sau confirm. Khác với chevron thu gọn; Hủy không thay đổi danh sách.</td>
+</tr>
+<tr>
+<td>Tìm kiếm</td>
+<td>Ô <code>Tìm kiếm...</code> theo ảnh, <strong>chỉ search theo Tiêu đề tin nhắn</strong> trong lớp hiện tại. Không search Mô tả, tên mẫu, nội dung mẫu hoặc thông tin học viên. Thời điểm kích hoạt còn cần xác nhận. Không tự kế thừa debounce của Nhật Ký sang Tin Nhắn.</td>
+</tr>
+<tr>
+<td>Tải dữ liệu</td>
+<td>Có loading/rỗng/lỗi và Thử lại. Không trộn item hay số người đã gửi của lớp khác.</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Điểm cần lưu ý:</strong></p>
+<ul>
+<li>Tên mẫu, ngày, nội dung ví dụ và 0/8 trong ảnh là dữ liệu mẫu; hiển thị từ bản ghi thực tế.</li>
+<li>Chỉ tạo item vào danh sách khi thao tác Tạo mới thành công. Nhãn bán tự động không có nghĩa tự gửi ngay, chạy theo lịch hoặc gửi khi thay đổi dữ liệu CơmGao.</li>
+<li>Mở/thu gọn hay tải lại giữ đúng item và kết quả gửi đã lưu; không tự phát sinh lần gửi mới. Search theo Tiêu đề đã chốt; thời điểm kích hoạt, thứ tự và phân trang còn ghi tại mục 3.</li>
+</ul>
+<h4 id="testcase-tab-tin-nhan-danh-sach-tin-nhan">Testcase — Tab Tin Nhắn — Danh sách tin nhắn</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 1: Xem danh sách đúng lớp</td>
+<td>High</td>
+<td>Smoke</td>
+<td>Flow 1 / REQ01</td>
+<td>Admin / Class Handler / Support có quyền tương ứng</td>
+<td>Lớp A/B có item khác nhau</td>
+<td><strong>Given</strong> mở Chi tiết lớp A<br><strong>When</strong> chọn Tin Nhắn<br><strong>Then</strong> chỉ tải item A</td>
+<td>- Đúng Tiêu đề/Tin nhắn/Ngày tạo/Số người đã gửi<br>- Không trộn B</td>
+</tr>
+<tr>
+<td>Case 2: Mở và thu gọn học viên</td>
+<td>Medium</td>
+<td></td>
+<td>REQ01</td>
+<td>Admin / Class Handler / Support có quyền tương ứng</td>
+<td>Item có người nhận</td>
+<td><strong>Given</strong> item đang thu gọn<br><strong>When</strong> bấm mở rồi thu gọn<br><strong>Then</strong> chỉ thay đổi hiển thị</td>
+<td>- Không gửi tin nhắn<br>- Không đổi count/ngày tạo</td>
+</tr>
+<tr>
+<td>Case 3: Count người gửi thành công</td>
+<td>High</td>
+<td></td>
+<td>REQ06</td>
+<td>Admin / Class Handler / Support có quyền tương ứng</td>
+<td>Item có 8 học viên; 3 thành công, 2 đang chờ, 3 lỗi/chưa gửi</td>
+<td><strong>Given</strong> tải hoặc tải lại item<br><strong>When</strong> xem count<br><strong>Then</strong> hiển thị 3/8</td>
+<td>- Không tính đang chờ/lỗi<br>- Không đếm số lần gửi hoặc số nền tảng</td>
+</tr>
+<tr>
+<td>Case 4: Tải rỗng/lỗi và response cũ</td>
+<td>High</td>
+<td></td>
+<td>EX01 / EX02 / REQ08</td>
+<td>Admin / Class Handler / Support có quyền tương ứng</td>
+<td>Request chậm/lỗi hoặc chuyển lớp</td>
+<td><strong>Given</strong> mở tab A rồi chuyển B<br><strong>When</strong> response A về muộn hoặc tải B lỗi<br><strong>Then</strong> chỉ cập nhật đúng lớp và trạng thái</td>
+<td>- Không coi lỗi là rỗng<br>- Có Thử lại<br>- Không tự gửi lại</td>
+</tr>
+<tr>
+<td>Case 5: Quyền xem tab</td>
+<td>High</td>
+<td></td>
+<td>EX03 / REQ08</td>
+<td>Admin / Class Handler / Support / Sale và role khác</td>
+<td>Có tài khoản trong/ngoài phạm vi</td>
+<td><strong>Given</strong> mở tab hoặc request trực tiếp<br><strong>When</strong> kiểm tra quyền<br><strong>Then</strong> chỉ role và phạm vi được cấp quyền được xem</td>
+<td>- Sale/role khác không được xem tab<br>- Không trả người nhận/nội dung/count ngoài quyền</td>
+</tr>
+<tr>
+<td>Case 6: Search chỉ theo Tiêu đề tin nhắn</td>
+<td>High</td>
+<td></td>
+<td>Flow 1 / REQ01 / REQ08</td>
+<td>Admin / Class Handler / Support có quyền tương ứng</td>
+<td>Lớp A có item X chứa từ khóa trong Tiêu đề; item Y chỉ có từ khóa ở Mô tả/mẫu/thông tin học viên; lớp B có Tiêu đề trùng</td>
+<td><strong>Given</strong> đang mở Tin Nhắn lớp A<br><strong>When</strong> search từ khóa theo cơ chế kích hoạt được chốt<br><strong>Then</strong> chỉ trả item X của lớp A</td>
+<td>- Không trả Y do khớp field khác<br>- Không trả item lớp B<br>- Xóa từ khóa khôi phục danh sách trong phạm vi lớp/quyền<br>- Không tạo hoặc gửi tin nhắn khi search</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="popup-tao-tin-nhan-ban-tu-ong-moi">Popup Tạo tin nhắn bán tự động mới</h3>
+<p align="center">
+  <a href="./images/43-class-detail-message-create.png"><img src="./images/43-class-detail-message-create.png" alt="Popup Tạo tin nhắn bán tự động mới" width="900" title="Nhấn để xem ảnh gốc"></a><br>
+  <em>UI do người dùng cung cấp — nhấn để xem ảnh gốc</em>
+</p>
+
+<p><strong>Mô tả:</strong></p>
+<ul>
+<li>Bấm + để nhập metadata và chọn mẫu đã có. Tạo mới chỉ thêm một item vào danh sách của lớp; thao tác gửi là bước riêng.</li>
+</ul>
+<p><strong>Giải thích field/thành phần:</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Thành phần</th>
+<th>Yêu cầu</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Tiêu đề</td>
+<td><strong>Bắt buộc</strong>, không giới hạn ký tự; không chấp nhận rỗng/chỉ khoảng trắng. Hiển thị xuống dòng khi dài trên item, giữ toàn bộ giá trị đã lưu.</td>
+</tr>
+<tr>
+<td>Mô tả</td>
+<td><strong>Bắt buộc</strong>, không giới hạn ký tự; không chấp nhận rỗng/chỉ khoảng trắng. Là metadata bổ sung trên item, không tự thêm vào nội dung gửi.</td>
+</tr>
+<tr>
+<td>Chọn mẫu tin nhắn</td>
+<td>Bắt buộc (dấu * trong UI), chọn một mẫu đã định nghĩa ở chức năng riêng. Lấy danh sách mẫu được phép dùng; lưu đúng định danh mẫu, không dùng tên hiển thị làm khóa.</td>
+</tr>
+<tr>
+<td>Nội dung tin nhắn</td>
+<td>Hiển thị nội dung của mẫu đang chọn và các placeholder theo định nghĩa, giữ xuống dòng như ảnh. Nội dung <strong>chỉ đọc</strong> tại popup/tab, không tạo bản nội dung chỉnh riêng. Muốn sửa phải vào chức năng define mẫu; không sửa mẫu gốc qua tab này.</td>
+</tr>
+<tr>
+<td>Hủy</td>
+<td>Đóng popup, không thêm item và không gửi tới học viên; không Toast CRUD.</td>
+</tr>
+<tr>
+<td>Tạo mới</td>
+<td>Kiểm tra dữ liệu/quyền/mẫu rồi lưu item vào đúng lớp; chống gửi lặp. Thành công đóng popup, cập nhật danh sách và một Toast tạo thành công.</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Điểm cần lưu ý:</strong></p>
+<ul>
+<li>Chọn mẫu khác phải hiển thị nội dung của đúng mẫu mới; không giữ nội dung của mẫu trước dưới tên mới.</li>
+<li>Popup chung chưa chỉ định một học viên nên preview có thể còn các biến dạng {name}, {phone}... như ảnh. Nội dung thực tế cần thay biến riêng cho từng người nhận trước khi gửi.</li>
+<li>Danh sách mẫu và quy tắc biến thuộc chức năng nguồn; trường hợp không có mẫu hoặc mẫu không còn khả dụng phải báo rõ, không tạo item với mẫu không hợp lệ.</li>
+<li>Giữ dữ liệu nhập khi lưu lỗi để thử lại; không tạo nhiều item nếu bấm/callback lặp. Không tự thêm UI tạo mẫu ở đây.</li>
+</ul>
+<h4 id="testcase-popup-tao-tin-nhan-ban-tu-ong-moi">Testcase — Popup Tạo tin nhắn bán tự động mới</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 7: Mở popup từ +</td>
+<td>Medium</td>
+<td></td>
+<td>Flow 2 / REQ02</td>
+<td>Admin / Class Handler / Support có quyền tương ứng</td>
+<td>Có quyền tạo theo quy tắc chốt</td>
+<td><strong>Given</strong> đang xem danh sách lớp A<br><strong>When</strong> bấm +<br><strong>Then</strong> mở đúng popup</td>
+<td>- Có Tiêu đề/Mô tả/Mẫu/Nội dung/Hủy/Tạo mới<br>- Chưa gửi học viên</td>
+</tr>
+<tr>
+<td>Case 8: Đổi mẫu và preview</td>
+<td>High</td>
+<td></td>
+<td>REQ02 / REQ03</td>
+<td>Admin / Class Handler / Support có quyền tương ứng</td>
+<td>Có 2 mẫu khác nội dung</td>
+<td><strong>Given</strong> popup đang mở<br><strong>When</strong> chọn mẫu A rồi B<br><strong>Then</strong> preview thuộc B</td>
+<td>- Tên/định danh/nội dung khớp<br>- Giữ xuống dòng/placeholder từ nguồn</td>
+</tr>
+<tr>
+<td>Case 9: Tạo item thành công</td>
+<td>High</td>
+<td>Smoke</td>
+<td>Flow 2 / REQ02 / REQ07</td>
+<td>Admin / Class Handler / Support có quyền tương ứng</td>
+<td>Mẫu và metadata hợp lệ theo rule chốt</td>
+<td><strong>Given</strong> nhập dữ liệu và chọn mẫu<br><strong>When</strong> bấm Tạo mới<br><strong>Then</strong> tạo một item cho đúng lớp</td>
+<td>- Count ban đầu 0/T<br>- Không gửi tự động<br>- Một Toast Tạo tin nhắn thành công.</td>
+</tr>
+<tr>
+<td>Case 10: Chưa chọn hoặc mẫu hết hiệu lực</td>
+<td>High</td>
+<td></td>
+<td>EX04 / REQ02</td>
+<td>Admin / Class Handler / Support có quyền tương ứng</td>
+<td>Popup đang mở; mẫu trống hoặc không còn khả dụng</td>
+<td><strong>Given</strong> không chọn mẫu hợp lệ<br><strong>When</strong> bấm Tạo mới<br><strong>Then</strong> không tạo item</td>
+<td>- Lỗi field và Cảnh Báo<br>- Không tự chọn mẫu khác<br>- Không gửi học viên</td>
+</tr>
+<tr>
+<td>Case 11: Hủy và tạo lỗi/chống lặp</td>
+<td>High</td>
+<td></td>
+<td>EX05 / REQ02 / REQ07</td>
+<td>Admin / Class Handler / Support có quyền tương ứng</td>
+<td>Có dữ liệu chưa lưu hoặc backend lỗi</td>
+<td><strong>Given</strong> Hủy hoặc bấm Tạo mới lặp<br><strong>When</strong> xử lý đóng/lưu<br><strong>Then</strong> Hủy không lưu; lưu lỗi không thêm item</td>
+<td>- Hủy không Toast<br>- Lỗi giữ dữ liệu để thử lại<br>- Một thao tác logic chỉ tạo tối đa một item</td>
+</tr>
+<tr>
+<td>Case 12: Nội dung mẫu chỉ đọc</td>
+<td>High</td>
+<td></td>
+<td>REQ02 / EX04</td>
+<td>Admin / Class Handler / Support</td>
+<td>Có quyền tạo và mẫu hợp lệ</td>
+<td><strong>Given</strong> mẫu đang hiển thị trong popup<br><strong>When</strong> thử sửa nội dung tại tab hoặc gửi request nội dung tùy ý<br><strong>Then</strong> không cho sửa nội dung riêng, chỉ dùng nội dung mẫu nguồn</td>
+<td>- UI chỉ đọc<br>- Không ghi đè mẫu/bản nội dung riêng<br>- Muốn sửa vào define theo quyền chức năng riêng</td>
+</tr>
+<tr>
+<td>Case 13: Validation tiêu đề và mô tả bắt buộc</td>
+<td>High</td>
+<td></td>
+<td>EX04 / REQ02</td>
+<td>Admin / Class Handler / Support</td>
+<td>Có quyền tạo; mẫu hợp lệ</td>
+<td><strong>Given</strong> Tiêu đề hoặc Mô tả rỗng/chỉ khoảng trắng<br><strong>When</strong> bấm Tạo mới<br><strong>Then</strong> không tạo item, báo đúng field thiếu và Cảnh Báo</td>
+<td>- Hai field đều bắt buộc<br>- Không tạo/gửi bản ghi thiếu dữ liệu<br>- Giữ dữ liệu đã nhập để sửa</td>
+</tr>
+<tr>
+<td>Case 14: Tiêu đề và mô tả dài không giới hạn</td>
+<td>Medium</td>
+<td></td>
+<td>REQ01 / REQ02</td>
+<td>Admin / Class Handler / Support</td>
+<td>Có quyền tạo; mẫu hợp lệ</td>
+<td><strong>Given</strong> nhập Tiêu đề/Mô tả dài<br><strong>When</strong> tạo thành công và tải lại<br><strong>Then</strong> giữ toàn bộ giá trị, hiển thị phù hợp khi dài</td>
+<td>- Không cắt hoặc từ chối vì giới hạn ký tự<br>- Metadata không tự thêm vào nội dung gửi</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="danh-sach-hoc-vien-va-chon-nen-tang">Danh sách học viên và chọn nền tảng</h3>
+<p align="center">
+  <a href="./images/45-class-detail-message-platforms.png"><img src="./images/45-class-detail-message-platforms.png" alt="Danh sách học viên và chọn nền tảng" width="620" title="Nhấn để xem ảnh gốc"></a><br>
+  <em>UI do người dùng cung cấp — nhấn để xem ảnh gốc</em>
+</p>
+
+<p><strong>Mô tả:</strong></p>
+<ul>
+<li>Mở một item để xem các học viên nhận tin nhắn của lớp và chọn riêng nền tảng cho từng học viên. Danh sách nhận tin phải xuất phát từ học viên thuộc lớp, liên kết với dữ liệu CơmGao của chính học viên đó.</li>
+</ul>
+<p><strong>Giải thích field/thành phần:</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Thành phần</th>
+<th>Yêu cầu</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Học viên</td>
+<td>Mỗi dòng có icon/avatar, tên học viên và email như UI. Thông tin PH nếu có hiển thị từ dữ liệu nguồn; không mặc nhiên chuyển người nhận sang phụ huynh chỉ vì tên có PH.</td>
+</tr>
+<tr>
+<td>Nguồn người nhận</td>
+<td>Dựa trên <a href="./class_detail_students_requirements.md">Học viên của lớp</a> và liên kết sang đúng hồ sơ/cuộc hội thoại CơmGao. Cần chốt tập trạng thái học viên được nhận và danh sách có cố định lúc tạo hay cập nhật theo lớp.</td>
+</tr>
+<tr>
+<td>Dropdown nền tảng</td>
+<td>Có Facebook, Instagram, Zalo, TikTok, Website theo ảnh; chọn một nền tảng trên từng dòng, icon/nhãn đúng platform. Facebook trong ảnh không xác lập mặc định cho mọi học viên.</td>
+</tr>
+<tr>
+<td>Đích gửi</td>
+<td>Lấy tài khoản/cuộc hội thoại của đúng học viên trên nền tảng đã chọn từ CơmGao. Email trên UI là thông tin hiển thị, không phải đích gửi cho mọi nền tảng.</td>
+</tr>
+<tr>
+<td>Gửi từng học viên</td>
+<td>Nút Gửi riêng chỉ gửi nội dung của item này cho học viên cùng dòng bằng platform của dòng đó. Nút màu <strong>xám/disabled khi chưa liên kết nền tảng đang chọn</strong>; không suy ra đã gửi chỉ từ màu xám. Nút cam cho gửi khi có liên kết hợp lệ và đủ quyền/dữ liệu. Trong lúc gửi khóa thao tác để chống lặp.</td>
+</tr>
+<tr>
+<td>Thiếu liên kết nền tảng</td>
+<td>Không tự chuyển sang nền tảng khác hoặc user khác. Hiển thị lý do không gửi được; nút Gửi xám/disabled khi chưa liên kết platform đó. Học viên đã gửi thành công được đánh dấu đã gửi và chặn thao tác, không dùng màu xám trong ảnh để suy ra kết quả.</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Điểm cần lưu ý:</strong></p>
+<ul>
+<li>Lựa chọn platform của A không thay platform của B hoặc tự thay cho toàn lớp. Quy tắc lưu lựa chọn giữa các lần tải và sau đổi mẫu cần chốt.</li>
+<li>Chỉ hiển thị/cho dùng đích gửi được phép của học viên đúng lớp; không ghép hồ sơ dựa trên tên/email trùng. Nếu liên kết không xác định duy nhất, báo thiếu thông tin để xử lý, không đoán.</li>
+<li>Danh sách 5 nền tảng là thiết kế mục tiêu; không suy ra trạng thái tích hợp gửi từ chức năng mở link nền tảng trong CơmGao. Nền tảng chưa khả dụng phải có lý do rõ, không báo gửi thành công giả.</li>
+</ul>
+<h4 id="testcase-danh-sach-hoc-vien-va-chon-nen-tang">Testcase — Danh sách học viên và chọn nền tảng</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 15: Đúng học viên và dữ liệu hiển thị</td>
+<td>High</td>
+<td></td>
+<td>REQ04 / REQ08</td>
+<td>Admin / Class Handler / Support có quyền tương ứng</td>
+<td>Item có danh sách học viên của A</td>
+<td><strong>Given</strong> mở item<br><strong>When</strong> xem tên/email/avatar<br><strong>Then</strong> dữ liệu đúng người nhận</td>
+<td>- Không trộn học viên lớp B<br>- Không lấy tên/email làm định danh</td>
+</tr>
+<tr>
+<td>Case 16: Chọn nền tảng từng dòng</td>
+<td>High</td>
+<td></td>
+<td>REQ04</td>
+<td>Admin / Class Handler / Support có quyền tương ứng</td>
+<td>Học viên A/B có đích gửi phù hợp</td>
+<td><strong>Given</strong> A và B đang cùng platform<br><strong>When</strong> đổi A sang Zalo<br><strong>Then</strong> chỉ platform A đổi</td>
+<td>- Đủ 5 lựa chọn đúng icon/nhãn<br>- B không đổi<br>- Không gửi khi chỉ chọn</td>
+</tr>
+<tr>
+<td>Case 17: Đích gửi đúng CơmGao</td>
+<td>High</td>
+<td></td>
+<td>REQ03 / REQ04</td>
+<td>Admin / Class Handler / Support có quyền tương ứng</td>
+<td>A có nhiều platform; B trùng tên/email</td>
+<td><strong>Given</strong> chọn platform A<br><strong>When</strong> gửi hoặc chuẩn bị gửi<br><strong>Then</strong> dùng đúng hồ sơ và đích A trên platform đã chọn</td>
+<td>- Không dùng email như địa chỉ chung cho các kênh<br>- Không gửi cho B</td>
+</tr>
+<tr>
+<td>Case 18: Thiếu liên kết hoặc platform chưa khả dụng</td>
+<td>High</td>
+<td></td>
+<td>EX06 / REQ04</td>
+<td>Admin / Class Handler / Support có quyền tương ứng</td>
+<td>A thiếu tài khoản/cuộc hội thoại ở platform chọn</td>
+<td><strong>Given</strong> chọn platform đó<br><strong>When</strong> kiểm tra hoặc thử gửi<br><strong>Then</strong> không gửi sai đích và hiển thị lý do</td>
+<td>- Không fallback sang kênh khác<br>- Count không tăng<br>- Không báo thành công giả</td>
+</tr>
+<tr>
+<td>Case 19: Không gửi cho phụ huynh ngoài cấu hình</td>
+<td>High</td>
+<td></td>
+<td>REQ04 / REQ08</td>
+<td>Admin / Class Handler / Support có quyền tương ứng</td>
+<td>Tên học viên có thông tin PH</td>
+<td><strong>Given</strong> xem người nhận<br><strong>When</strong> chuẩn bị gửi<br><strong>Then</strong> dùng đích nhận được cấu hình cho học viên</td>
+<td>- Không suy ra đích PH từ chuỗi tên<br>- Không ghép hồ sơ bằng tên</td>
+</tr>
+<tr>
+<td>Case 20: Gửi xám do thiếu liên kết platform</td>
+<td>High</td>
+<td></td>
+<td>REQ04 / EX06</td>
+<td>Admin / Class Handler / Support</td>
+<td>A chưa liên kết Facebook nhưng có liên kết Zalo hợp lệ</td>
+<td><strong>Given</strong> A đang chọn Facebook<br><strong>When</strong> xem nút Gửi rồi đổi sang Zalo<br><strong>Then</strong> Facebook có nút xám/disabled và lý do; Zalo cho gửi khi đủ dữ liệu/quyền</td>
+<td>- Chọn kênh không tự gửi<br>- Không suy ra đã gửi từ màu xám<br>- Không tự fallback khi chọn Facebook</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="lay-bien-comgao-va-gui-tin-nhan">Lấy biến CơmGao và gửi tin nhắn</h3>
+<p><strong>Mô tả:</strong></p>
+<ul>
+<li>Gửi từng học viên hoặc toàn bộ danh sách nhận của một item. Nội dung được cá nhân hóa theo từng học viên, không dùng một nội dung đã thay biến của học viên A để gửi cho B.</li>
+</ul>
+<p><strong>Giải thích field/thành phần:</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Thành phần</th>
+<th>Yêu cầu</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Biến mẫu</td>
+<td>Danh sách biến/ý nghĩa do chức năng mẫu và CơmGao cung cấp. Ảnh có {khach}, {ad}, {name}, {address}, {phone}, {info} là ví dụ, không tự định nghĩa mapping trường nghiệp vụ tại tab này.</td>
+</tr>
+<tr>
+<td>Thay biến</td>
+<td>Trước khi gửi, lấy dữ liệu CơmGao của đúng người nhận theo mapping nguồn, tạo nội dung riêng và giữ văn bản/xuống dòng. Không tự điền giá trị giả hoặc gửi các biến chưa thay hợp lệ.</td>
+</tr>
+<tr>
+<td>Gửi một người</td>
+<td>Nút Gửi ở dòng chỉ xử lý một học viên của item; dùng template/nội dung và platform tương ứng.</td>
+</tr>
+<tr>
+<td>Gửi toàn bộ</td>
+<td>Nút Gửi ở đầu item xử lý các học viên đủ điều kiện trong danh sách nhận của item, dùng platform riêng của từng người. Không tự đổi mọi người sang platform của dòng đầu.</td>
+</tr>
+<tr>
+<td>Đang gửi</td>
+<td>Khóa/chống gửi lặp cùng item/người nhận khi thao tác đang xử lý; gửi chung và riêng đồng thời không tạo hai lần gửi ngoài ý muốn.</td>
+</tr>
+<tr>
+<td>Kết quả từng người</td>
+<td>Ghi nhận người nhận, platform, nội dung thực tế sau thay biến, thời điểm và kết quả đủ để hiển thị/reconcile đúng item; lỗi của một người không khiến những người đã gửi thành công bị ghi nhận thất bại.</td>
+</tr>
+<tr>
+<td>Số người đã gửi</td>
+<td>Chỉ tăng S sau xác nhận gửi thành công cho học viên chưa được tính; cập nhật đúng item và giữ qua tải lại. Không khẳng định học viên đã đọc/đã nhận chỉ dựa trên thao tác được tiếp nhận.</td>
+</tr>
+<tr>
+<td>Gửi lại</td>
+<td><strong>Không cho gửi lại</strong> người đã thành công trong cùng item, cả nút riêng và Gửi chung. Gửi chung bỏ qua người đã thành công; đổi platform/mẫu, refresh hoặc thao tác từ user khác không xóa trạng thái đã gửi hay mở lại quyền gửi. Người chưa gửi thành công còn được gửi sau xử lý lỗi/thiếu liên kết; timeout phải kiểm tra kết quả trước thử lại.</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Điểm cần lưu ý:</strong></p>
+<ul>
+<li>Biến và đích gửi phải thuộc cùng học viên/ngữ cảnh. Không dùng dữ liệu của người đang thao tác để thay mọi biến nếu mapping nguồn không quy định như vậy.</li>
+<li>Mẫu/biến/đích gửi không hợp lệ hoặc CơmGao lỗi: không gửi cho người đó, nêu lý do, count không tăng. Với gửi chung, ghi rõ kết quả từng người và số thành công/thất bại/bỏ qua/đang chờ; không báo toàn bộ thành công nếu có lỗi.</li>
+<li>Khi timeout chưa biết tin nhắn đã gửi hay chưa, giữ trạng thái chưa xác định để kiểm tra kết quả trước thử lại; không tự phát lại và gây trùng. Kết quả gửi ra nền tảng không được hoàn tác bằng cách xóa item trong ICS.</li>
+<li>Chỉ ghi nhận/lưu và gửi khi người dùng bấm thao tác được cấp quyền. Tạo item, chọn mẫu/platform hoặc mở tab không kích hoạt gửi.</li>
+</ul>
+<h4 id="testcase-lay-bien-comgao-va-gui-tin-nhan">Testcase — Lấy biến CơmGao và gửi tin nhắn</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 21: Thay biến riêng mỗi học viên</td>
+<td>High</td>
+<td></td>
+<td>Flow 3 / REQ03</td>
+<td>Admin / Class Handler / Support có quyền tương ứng</td>
+<td>A/B có name/address/phone khác nhau trong CơmGao</td>
+<td><strong>Given</strong> dùng cùng mẫu<br><strong>When</strong> chuẩn bị/gửi A và B<br><strong>Then</strong> nội dung từng người dùng dữ liệu của người đó</td>
+<td>- Không lẫn thông tin A/B<br>- Giữ xuống dòng theo mẫu<br>- Không gửi placeholder chưa thay</td>
+</tr>
+<tr>
+<td>Case 22: Thiếu biến hoặc CơmGao lỗi</td>
+<td>High</td>
+<td></td>
+<td>EX07 / REQ03</td>
+<td>Admin / Class Handler / Support có quyền tương ứng</td>
+<td>Biến cần dùng thiếu/không map hoặc nguồn lỗi</td>
+<td><strong>Given</strong> bấm gửi cho A<br><strong>When</strong> không thể hoàn tất nội dung<br><strong>Then</strong> không gửi A và báo lý do</td>
+<td>- Count A không tăng<br>- Không dùng dữ liệu giả/user khác</td>
+</tr>
+<tr>
+<td>Case 23: Gửi riêng đúng một người</td>
+<td>High</td>
+<td>Smoke</td>
+<td>Flow 3 / REQ05</td>
+<td>Admin / Class Handler / Support có quyền tương ứng</td>
+<td>A đủ điều kiện theo cấu hình</td>
+<td><strong>Given</strong> chọn platform A<br><strong>When</strong> bấm Gửi tại A<br><strong>Then</strong> chỉ gửi item này cho A</td>
+<td>- Không gửi B hoặc item khác<br>- Kết quả/count chỉ cập nhật đúng item</td>
+</tr>
+<tr>
+<td>Case 24: Gửi full theo platform mỗi người</td>
+<td>High</td>
+<td></td>
+<td>Flow 4 / REQ05</td>
+<td>Admin / Class Handler / Support có quyền tương ứng</td>
+<td>A chọn Facebook; B chọn Zalo; cả hai đủ điều kiện</td>
+<td><strong>Given</strong> item có A/B<br><strong>When</strong> bấm Gửi chung<br><strong>Then</strong> gửi A qua Facebook và B qua Zalo</td>
+<td>- Không đồng loạt dùng platform đầu<br>- Nội dung cá nhân hóa riêng</td>
+</tr>
+<tr>
+<td>Case 25: Gửi chung có thành công và lỗi</td>
+<td>High</td>
+<td></td>
+<td>REQ05 / REQ06 / REQ07</td>
+<td>Admin / Class Handler / Support có quyền tương ứng</td>
+<td>Có người hợp lệ và người gửi lỗi</td>
+<td><strong>Given</strong> gửi chung<br><strong>When</strong> nhận kết quả hỗn hợp<br><strong>Then</strong> giữ từng kết quả đúng người</td>
+<td>- Người thành công được tính S<br>- Người lỗi/đang chờ chưa tính<br>- Thông báo kết quả hỗn hợp, không báo tất cả thành công</td>
+</tr>
+<tr>
+<td>Case 26: Chống lặp gửi chung và riêng</td>
+<td>High</td>
+<td></td>
+<td>EX08 / REQ05</td>
+<td>Admin / Class Handler / Support có quyền tương ứng</td>
+<td>Cùng item/học viên đang gửi</td>
+<td><strong>Given</strong> bấm gửi lặp hoặc chung/riêng cùng lúc<br><strong>When</strong> xử lý thao tác<br><strong>Then</strong> chỉ một lần gửi logic cho cùng đích đang xử lý</td>
+<td>- Không tạo request gửi trùng ngoài ý muốn<br>- Count không tăng hai lần<br>- Một Toast kết quả logic</td>
+</tr>
+<tr>
+<td>Case 27: Timeout chưa rõ kết quả</td>
+<td>High</td>
+<td></td>
+<td>EX09 / REQ05</td>
+<td>Admin / Class Handler / Support có quyền tương ứng</td>
+<td>CơmGao/platform timeout sau tiếp nhận</td>
+<td><strong>Given</strong> request đã gửi<br><strong>When</strong> chưa xác định kết quả<br><strong>Then</strong> kiểm tra kết quả trước thử lại</td>
+<td>- Không tự gửi lại<br>- Không báo thất bại hoặc thành công chắc chắn khi chưa biết<br>- Count không tăng sớm</td>
+</tr>
+<tr>
+<td>Case 28: Lưu kết quả và đếm người duy nhất</td>
+<td>High</td>
+<td></td>
+<td>REQ06</td>
+<td>Admin / Class Handler / Support có quyền tương ứng</td>
+<td>A được xác nhận gửi thành công; có kết quả lưu</td>
+<td><strong>Given</strong> tải lại hoặc nhận callback trùng<br><strong>When</strong> tính S/T<br><strong>Then</strong> A chỉ được tính một người</td>
+<td>- Kết quả đúng item/người/platform<br>- Không biến số lượt gửi thành số người<br>- Không mất lịch sử nội dung đã gửi</td>
+</tr>
+<tr>
+<td>Case 29: Không gửi lại qua nút riêng và chung</td>
+<td>High</td>
+<td></td>
+<td>EX10 / REQ05</td>
+<td>Admin / Class Handler / Support</td>
+<td>A đã thành công, B chưa gửi; cả hai có liên kết</td>
+<td><strong>Given</strong> mở item với A/B<br><strong>When</strong> bấm Gửi chung hoặc thử Gửi riêng A/request trực tiếp<br><strong>Then</strong> chỉ B được gửi, A bị bỏ qua/chặn</td>
+<td>- Không tăng S do A<br>- Đổi platform/mẫu không mở lại quyền gửi A<br>- User khác thao tác vẫn không được gửi lại A</td>
+</tr>
+<tr>
+<td>Case 30: Không còn người gửi được</td>
+<td>Medium</td>
+<td></td>
+<td>REQ05 / REQ06</td>
+<td>Admin / Class Handler / Support</td>
+<td>Tất cả đã gửi hoặc chưa có liên kết nền tảng</td>
+<td><strong>Given</strong> mở item<br><strong>When</strong> kiểm tra Gửi chung/riêng<br><strong>Then</strong> không gửi request tới người đã gửi/không có liên kết</td>
+<td>- Không báo thành công cho 0 người giả<br>- Nêu đúng lý do không có người đủ điều kiện<br>- Count giữ nguyên</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="quan-ly-item-tin-nhan-a-tao">Quản lý item tin nhắn đã tạo</h3>
+<p><strong>Mô tả:</strong></p>
+<ul>
+<li>Admin hoặc Class Handler/Support đã được add vào lớp được quản lý item, kể cả do người khác tạo. Nội dung mẫu chỉ đọc; muốn sửa phải vào define ở chức năng riêng. Hover hiện ×, click mở popup xác nhận và confirm mới xóa item khỏi danh sách; không thu hồi tin đã gửi.</li>
+</ul>
+<p><strong>Giải thích field/thành phần:</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Thành phần</th>
+<th>Yêu cầu</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Dropdown mẫu trên item</td>
+<td>Cho Admin hoặc Class Handler/Support đã được add vào lớp chọn mẫu có sẵn. Khi đổi, nội dung chưa gửi phải khớp mẫu mới; không sửa định nghĩa mẫu gốc.</td>
+</tr>
+<tr>
+<td>Sửa Tiêu đề/Mô tả</td>
+<td>Ảnh chưa có editor hoặc cách mở sửa metadata; không tự thêm thao tác bấm dòng để sửa như Nhật Ký.</td>
+</tr>
+<tr>
+<td>Nút ×</td>
+<td>Admin hoặc Class Handler/Support đã được add vào lớp hover thấy ×; click mở popup có thông báo <code>Bạn có chắc muốn xóa tin nhắn này?</code>, nút <code>Hủy</code> / <code>Xóa</code>. Chỉ xác nhận Xóa mới xử lý. Xóa mềm/cứng và khả năng xóa sau gửi còn cần chốt. Không đồng nhất với thu gọn item.</td>
+</tr>
+<tr>
+<td>Tin nhắn đã gửi</td>
+<td>Thay mẫu/xóa item không thay nội dung thực tế đã gửi ra platform hoặc tự thu hồi tin nhắn.</td>
+</tr>
+<tr>
+<td>Xác nhận xóa</td>
+<td>Chọn Hủy đóng popup, không request/Toast CRUD. Chọn Xóa kiểm tra lại role/thành viên lớp/item, khóa chống lặp; chỉ bỏ item sau lưu thành công, một Toast <code>Xóa tin nhắn thành công.</code>. Lỗi giữ item và Toast <code>Không thể xóa tin nhắn. Vui lòng thử lại.</code>.</td>
+</tr>
+<tr>
+<td>Dữ liệu kết quả gửi</td>
+<td>Không làm mất/đổi kết quả gửi đã xác nhận của học viên khi đổi dữ liệu hiển thị. Đổi mẫu không mở đợt gửi mới cho học viên đã thành công trong item; người chưa gửi dùng mẫu đang chọn khi gửi. Thay đổi mẫu gốc ở define không viết lại nội dung đã gửi.</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Điểm cần lưu ý:</strong></p>
+<ul>
+<li>Kiểm tra quyền thao tác cả trên UI và backend, giữ đúng lớp và item. Chỉ người có quyền được thao tác, không dựa vào tên hiển thị.</li>
+<li>Không đặt count về 0 hoặc tự gửi lại khi đổi mẫu. Hủy popup xóa không thay đổi item/Toast CRUD; lưu xóa lỗi giữ item và cho thử lại.</li>
+</ul>
+<h4 id="testcase-quan-ly-item-tin-nhan-a-tao">Testcase — Quản lý item tin nhắn đã tạo</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 31: Kiểm tra quyền role và thành viên lớp</td>
+<td>High</td>
+<td></td>
+<td>EX03 / REQ08</td>
+<td>Admin / Class Handler / Support</td>
+<td>Admin chưa add vào lớp; Class Handler/Support có và không có trong lớp</td>
+<td><strong>Given</strong> kiểm tra UI hoặc request đổi mẫu/xóa<br><strong>When</strong> xác thực quyền<br><strong>Then</strong> Admin theo quyền quản trị được thao tác, Class Handler/Support chỉ được thao tác nếu đã add vào lớp</td>
+<td>- Backend kiểm tra lại khi lưu/gửi<br>- Gỡ khỏi lớp mất quyền<br>- Không giới hạn theo người tạo item</td>
+</tr>
+<tr>
+<td>Case 32: Đổi mẫu không sửa mẫu gốc/lịch sử gửi</td>
+<td>High</td>
+<td></td>
+<td>REQ02 / REQ06</td>
+<td>Admin / Class Handler / Support có quyền tương ứng</td>
+<td>Có quyền đổi mẫu theo rule chốt</td>
+<td><strong>Given</strong> item dùng mẫu A<br><strong>When</strong> đổi sang B nếu được phép<br><strong>Then</strong> item đổi mẫu, mẫu gốc và nội dung đã gửi giữ nguyên</td>
+<td>- Không tự thu hồi/gửi lại<br>- Không tự reset S/T</td>
+</tr>
+<tr>
+<td>Case 33: Hover ×, Hủy và xác nhận xóa</td>
+<td>High</td>
+<td></td>
+<td>REQ01 / REQ08</td>
+<td>Admin / Class Handler / Support có quyền tương ứng</td>
+<td>Item đủ điều kiện xóa theo nghiệp vụ</td>
+<td><strong>Given</strong> hover item và click ×<br><strong>When</strong> Hủy hoặc confirm Xóa<br><strong>Then</strong> Hủy giữ item; confirm thành công mới bỏ item</td>
+<td>- Không nhầm với thu gọn<br>- Không gửi thao tác ra platform để thu hồi<br>- Hủy không Toast CRUD</td>
+</tr>
+<tr>
+<td>Case 34: Quản lý item người khác tạo</td>
+<td>High</td>
+<td></td>
+<td>REQ08</td>
+<td>Admin / Class Handler / Support</td>
+<td>Item do A tạo; B là Class Handler/Support đã add vào lớp, C là Admin</td>
+<td><strong>Given</strong> B hoặc C mở item của A<br><strong>When</strong> tạo/gửi/chọn mẫu/thao tác × theo nghiệp vụ được phép<br><strong>Then</strong> không từ chối chỉ vì không phải người tạo</td>
+<td>- Admin không cần add vào lớp<br>- Class Handler/Support ngoài lớp bị chặn<br>- Nội dung mẫu vẫn chỉ đọc</td>
+</tr>
+<tr>
+<td>Case 35: Xóa lỗi và chống lặp confirm</td>
+<td>High</td>
+<td></td>
+<td>Flow 5 / EX11 / REQ09</td>
+<td>Admin / Class Handler / Support</td>
+<td>Popup xóa đang mở; backend lỗi hoặc confirm lặp</td>
+<td><strong>Given</strong> xác nhận Xóa<br><strong>When</strong> xử lý lỗi/lặp<br><strong>Then</strong> không xóa nhầm/nhân đôi thao tác</td>
+<td>- Lỗi giữ item và một Toast lỗi<br>- Thành công bỏ đúng item, một Toast thành công<br>- Không thu hồi tin nhắn trên platform</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="toast-phan-hoi-crud-va-gui-tin-nhan">Toast phản hồi CRUD và gửi tin nhắn</h3>
+<p align="center">
+  <a href="../../images/01-toast-crud.png"><img src="../../images/01-toast-crud.png" alt="Bốn trạng thái Toast dùng chung" width="520" title="Nhấn để xem ảnh gốc"></a><br>
+  <em>Toast Thành Công, Thông Báo, Cảnh Báo và Có Lỗi Xảy Ra — nhấn để xem ảnh gốc</em>
+</p>
+
+<p><strong>Mô tả:</strong></p>
+<ul>
+<li>Tạo/quản lý item và gửi có một Toast kết quả theo component dùng chung, tách rõ đã tạo item, đang gửi và gửi thành công.</li>
+</ul>
+<p><strong>Giải thích field/thành phần:</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Thành phần</th>
+<th>Yêu cầu</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Thành Công</td>
+<td>Tạo: <code>Tạo tin nhắn thành công.</code>; cập nhật: <code>Cập nhật tin nhắn thành công.</code>; xóa: <code>Xóa tin nhắn thành công.</code>. Gửi riêng khi xác nhận thành công: <code>Gửi tin nhắn thành công cho {Tên học viên}.</code>; gửi chung toàn bộ đủ điều kiện thành công: <code>Đã gửi tin nhắn thành công cho {Số người} học viên.</code>.</td>
+</tr>
+<tr>
+<td>Thông Báo</td>
+<td>Khi thực tế đang xử lý: <code>Đang gửi tin nhắn. Vui lòng chờ cập nhật kết quả.</code>; không coi là thành công hoặc tăng count.</td>
+</tr>
+<tr>
+<td>Cảnh Báo</td>
+<td>Thiếu Tiêu đề/Mô tả: <code>Vui lòng nhập đầy đủ tiêu đề và mô tả.</code>; chưa chọn mẫu: <code>Vui lòng chọn mẫu tin nhắn.</code>; thiếu biến/đích gửi nêu lý do của người nhận. Kết quả hỗn hợp: <code>Kết quả gửi: {S} thành công, {F} thất bại, {K} bỏ qua, {P} đang chờ.</code>.</td>
+</tr>
+<tr>
+<td>Có Lỗi Xảy Ra</td>
+<td>Tạo: <code>Không thể tạo tin nhắn. Vui lòng thử lại.</code>; xóa: <code>Không thể xóa tin nhắn. Vui lòng thử lại.</code>; gửi lỗi đã xác định: <code>Không thể gửi tin nhắn cho {Tên học viên}. Vui lòng kiểm tra và thử lại.</code>; tải/timeout chưa rõ kết quả không dùng thông báo khẳng định đã thất bại.</td>
+</tr>
+<tr>
+<td>Đóng và thời lượng</td>
+<td>Icon/màu/vị trí/thời gian tự đóng và nút × theo Toast dùng chung. Đóng Toast không hủy gửi hay hoàn tác dữ liệu.</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Điểm cần lưu ý:</strong></p>
+<ul>
+<li>Thông báo dùng đúng kết quả/người/item; một kết quả thao tác logic chỉ hiện một Toast, gửi chung không spam một Toast cho từng dòng. Cập nhật tiến trình/kết quả trên item vẫn được giữ.</li>
+<li>Nếu có bước đang gửi rồi kết quả cuối, đó là hai trạng thái của cùng thao tác, không phải báo thành công trước xác nhận. Không có Toast CRUD khi chỉ xem/chọn platform/mở hoặc hủy popup.</li>
+</ul>
+<h4 id="testcase-toast-phan-hoi-crud-va-gui-tin-nhan">Testcase — Toast phản hồi CRUD và gửi tin nhắn</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Toast Case 1: Toast tạo item khác Toast gửi</td>
+<td>High</td>
+<td></td>
+<td>REQ07</td>
+<td>Admin / Class Handler / Support có quyền tương ứng</td>
+<td>Dữ liệu tạo hợp lệ</td>
+<td><strong>Given</strong> bấm Tạo mới<br><strong>When</strong> backend lưu item<br><strong>Then</strong> chỉ Toast Tạo tin nhắn thành công.</td>
+<td>- Không báo đã gửi học viên<br>- Count vẫn 0/T</td>
+</tr>
+<tr>
+<td>Toast Case 2: Toast kết quả gửi riêng</td>
+<td>High</td>
+<td></td>
+<td>REQ07</td>
+<td>Admin / Class Handler / Support có quyền tương ứng</td>
+<td>Một lần gửi có kết quả xác định</td>
+<td><strong>Given</strong> gửi cho A<br><strong>When</strong> thành công hoặc lỗi<br><strong>Then</strong> Toast đúng trạng thái và tên A</td>
+<td>- Không dùng tên B<br>- Không tăng count khi lỗi</td>
+</tr>
+<tr>
+<td>Toast Case 3: Toast kết quả gửi chung hỗn hợp</td>
+<td>High</td>
+<td></td>
+<td>REQ07</td>
+<td>Admin / Class Handler / Support có quyền tương ứng</td>
+<td>Đợt chung có thành công/lỗi/bỏ qua/chờ</td>
+<td><strong>Given</strong> gửi chung<br><strong>When</strong> cập nhật kết quả<br><strong>Then</strong> hiển thị tổng kết số thực tế</td>
+<td>- Không báo tất cả thành công<br>- Không spam Toast mỗi học viên</td>
+</tr>
+<tr>
+<td>Toast Case 4: Đang gửi và đóng/chống trùng</td>
+<td>Medium</td>
+<td></td>
+<td>REQ07</td>
+<td>Admin / Class Handler / Support có quyền tương ứng</td>
+<td>Đang chờ kết quả hoặc callback trùng</td>
+<td><strong>Given</strong> Toast đang hiển thị<br><strong>When</strong> bấm × hoặc callback lặp<br><strong>Then</strong> đóng được và không nhân đôi thông báo</td>
+<td>- Đóng không hủy gửi<br>- Đang gửi không phải thành công<br>- Không lộ lỗi kỹ thuật</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="2-yeu-cau">2. Yêu cầu</h2>
+<h3 id="21-flow-chinh">2.1. Flow chính</h3>
+<p><strong>Flow 1 / REQ01 / REQ08: Xem tab Tin Nhắn</strong></p>
+<pre><code class="language-text">Admin/Class Handler/Support mở lớp → Nhật ký → Tin Nhắn
+      → Kiểm tra role và phạm vi lớp
+      → Tải item và kết quả gửi của đúng lớp
+      → Mở/thu gọn danh sách người nhận; hiển thị S/T và nền tảng từng người
+      → Tìm kiếm chỉ đối chiếu Tiêu đề tin nhắn trong lớp đang xem
+      → Không tự gửi khi xem/chuyển tab/tải lại
+</code></pre>
+<p><strong>Flow 2 / REQ02 / REQ07: Thêm tin nhắn từ mẫu sẵn có</strong></p>
+<pre><code class="language-text">Người có quyền tạo bấm +
+      → Nhập Tiêu đề/Mô tả bắt buộc, không giới hạn ký tự
+      → Chọn mẫu có sẵn, xem nội dung/biến nguồn
+      → Hủy: đóng, không lưu/không gửi
+      → Tạo mới: kiểm tra dữ liệu, quyền, mẫu và lớp; chống tạo lặp
+      → Thành công: thêm item, Toast Tạo tin nhắn thành công., chưa gửi học viên
+      → Lỗi: giữ input, không thêm item, một Toast lỗi/cảnh báo
+</code></pre>
+<p><strong>Flow 3 / REQ03 / REQ04 / REQ05 / REQ06 / REQ07: Gửi cho một học viên</strong></p>
+<pre><code class="language-text">Mở item → Chọn nền tảng tại dòng học viên
+      → Bấm Gửi ở cùng dòng
+      → Kiểm tra quyền, điều kiện gửi/gửi lại, mẫu, học viên và đích CơmGao
+      → Lấy biến từ CơmGao theo mapping, cá nhân hóa nội dung của người nhận
+      → Gửi qua platform đã chọn, chống request trùng
+      → Xác nhận thành công: lưu kết quả, tăng S nếu học viên chưa được tính, một Toast kết quả
+      → Thiếu dữ liệu/lỗi: không tăng S, nêu lý do; chưa rõ kết quả thì kiểm tra trước thử lại
+</code></pre>
+<p><strong>Flow 4 / REQ03 / REQ04 / REQ05 / REQ06 / REQ07: Gửi toàn bộ danh sách</strong></p>
+<pre><code class="language-text">Người có quyền bấm Gửi ở đầu một item
+      → Xác định các học viên đủ điều kiện trong danh sách nhận của item
+      → Kiểm tra mẫu/biến/đích và dùng platform đã chọn riêng của từng người
+      → Cá nhân hóa và gửi từng người; chống trùng với thao tác riêng đang chạy
+      → Ghi nhận thành công/thất bại/bỏ qua/đang chờ riêng từng người
+      → Cập nhật S/T đúng số người thành công, hiển thị một tổng kết kết quả
+      → Không gửi lại học viên đã thành công; bỏ qua trong gửi chung và chặn nút riêng
+</code></pre>
+<p><strong>Flow 5 / REQ01 / REQ07 / REQ08 / REQ09: Xác nhận xóa item</strong></p>
+<pre><code class="language-text">Admin hoặc Class Handler/Support đã add vào lớp hover item → Hiện ×
+      → Click ×: mở popup xác nhận, chưa xóa ngay
+      → Hủy: đóng popup, giữ item, không request/Toast CRUD
+      → Xóa: backend kiểm tra quyền và item, chống gửi lặp
+      → Thành công: bỏ item khỏi danh sách, một Toast Xóa tin nhắn thành công.
+      → Thất bại: giữ item, một Toast Không thể xóa tin nhắn. Vui lòng thử lại.
+      → Không thu hồi tin đã gửi trên nền tảng
+</code></pre>
+<h3 id="22-ngoai-le">2.2. Ngoại lệ</h3>
+<ul>
+<li><strong>EX01:</strong> Tải danh sách/người nhận/mẫu lỗi → trạng thái lỗi và Thử lại, không coi là rỗng hay dữ liệu hợp lệ để gửi.</li>
+<li><strong>EX02:</strong> Response thuộc lớp/item/tab cũ → không ghi đè giao diện hiện tại; kết quả đã gửi vẫn liên kết đúng item/người nhận gốc.</li>
+<li><strong>EX03:</strong> Thiếu quyền tab/lớp/thao tác → từ chối UI/request trực tiếp; không trả dữ liệu ngoài quyền và không gửi.</li>
+<li><strong>EX04:</strong> Mẫu trống/không tồn tại/không được dùng hoặc metadata vi phạm validation đã chốt → không tạo/cập nhật/gửi, báo field/lý do và Toast phù hợp.</li>
+<li><strong>EX05:</strong> Tạo/cập nhật item lỗi hoặc gửi lặp → không nhân bản item, không lưu một phần; giữ input để thử lại.</li>
+<li><strong>EX06:</strong> Thiếu liên kết CơmGao/đích platform hoặc platform chưa khả dụng → không tự chuyển đích/nền tảng, báo lý do của người nhận, không tăng S.</li>
+<li><strong>EX07:</strong> Thiếu mapping/biến hợp lệ hoặc nguồn CơmGao lỗi → không gửi nội dung sai/chưa thay biến; giữ kết quả riêng từng người.</li>
+<li><strong>EX08:</strong> Gửi chung/riêng hoặc callback trùng → chống gửi lặp cùng item/người nhận đang xử lý, không tính S hai lần. Học viên đã thành công không được gửi lại dù đổi mẫu/platform hay user thao tác.</li>
+<li><strong>EX09:</strong> Timeout chưa biết kết quả gửi → không tự gửi lại/đánh dấu chắc chắn thất bại, kiểm tra/reconcile kết quả trước thử lại.</li>
+<li><strong>EX10:</strong> Học viên đã gửi thành công → chặn gửi lại qua UI/request, kể cả đổi mẫu/platform, không gửi lần mới hoặc tăng count.</li>
+<li><strong>EX11:</strong> Xóa lỗi/gửi lặp hoặc item không còn hợp lệ → không xóa nhầm/nhân đôi thao tác; giữ dữ liệu hiển thị phù hợp, một Toast kết quả.</li>
+</ul>
+<h3 id="23-yeu-cau-khac">2.3. Yêu cầu khác</h3>
+<ul>
+<li><strong>REQ01 – Danh sách:</strong> Item thuộc lớp hiện tại, đủ Tiêu đề/Mô tả/Mẫu/Ngày tạo/Số người đã gửi, + tạo, Gửi chung, mở/thu gọn và <strong>search chỉ theo Tiêu đề tin nhắn</strong> trong lớp hiện tại. Không tự gửi khi tạo/xem/chọn dữ liệu.</li>
+<li><strong>REQ02 – Mẫu tin nhắn:</strong> Tiêu đề/Mô tả đều bắt buộc, không giới hạn ký tự, không chấp nhận chỉ khoảng trắng. Chọn một mẫu có sẵn bắt buộc; template/nội dung/biến từ chức năng nguồn. Tab này không định nghĩa hay sửa mẫu gốc. Metadata và preview theo popup; <strong>nội dung chỉ đọc</strong>, muốn sửa vào chức năng define mẫu. Đổi mẫu không reset count hoặc cho gửi lại người đã thành công; version mẫu khi sửa define còn cần chốt.</li>
+<li><strong>REQ03 – Biến CơmGao:</strong> Lấy các biến của đúng học viên theo mapping nguồn trước gửi; mỗi người có nội dung riêng. Không định nghĩa mapping từ ví dụ ảnh hoặc dùng dữ liệu giả. Lưu được kết quả/nội dung đã gửi mà thay mẫu sau này không viết lại lịch sử.</li>
+<li><strong>REQ04 – Người nhận và nền tảng:</strong> Học viên thuộc lớp, liên kết đúng CơmGao; mỗi dòng chọn Facebook/Instagram/Zalo/TikTok/Website theo UI. Đích gửi phụ thuộc platform đã chọn, không lấy email hiển thị làm địa chỉ chung hoặc tự fallback.</li>
+<li><strong>REQ05 – Gửi:</strong> Gửi một người bằng nút dòng hoặc toàn bộ người đủ điều kiện chưa thành công bằng nút đầu item. Không cho gửi lại học viên đã thành công trong cùng item, kể cả đổi mẫu/platform hoặc user thao tác. Cá nhân hóa theo người, dùng platform riêng, chống lặp chung/riêng. Kết quả hỗn hợp giữ từng kết quả; timeout cần xác định kết quả trước thử lại.</li>
+<li><strong>REQ06 – Kết quả và count:</strong> S/T đếm học viên duy nhất đã được xác nhận gửi thành công / tổng danh sách nhận của item. Không tăng khi đang chờ/lỗi hoặc đếm thêm vì cùng người gửi nhiều lần. Ghi nhận đúng item/người/platform/nội dung thực tế/thời điểm/kết quả; không suy ra đã đọc.</li>
+<li><strong>REQ07 – Notification:</strong> Tạo/quản lý/gửi có một Toast kết quả logic theo UI chung; gửi chung có tổng kết, không spam từng dòng. Chỉ báo thành công khi được xác nhận; Hủy/chỉ xem/chọn platform không Toast CRUD.</li>
+<li>
+<p><strong>REQ08 – Quyền và phạm vi:</strong> Admin theo quyền quản trị chung không cần add vào lớp; Class Handler/Support phải được add vào lớp mới được xem/tạo/gửi/đổi mẫu/xóa. Không giới hạn theo người tạo item và không kế thừa owner từ tab khác; Sale/role khác không vào tab. Kiểm tra lại quyền/người nhận/đích trước thay đổi và gửi, kể cả request trực tiếp.</p>
+</li>
+<li>
+<p><strong>REQ09 – Xóa có xác nhận:</strong> Hover item hiện ×; click mở popup, chưa xóa ngay. Hủy không đổi dữ liệu, confirm mới xóa sau kiểm tra quyền. Xóa thành công bỏ item và một Toast; lỗi giữ item. Không thu hồi tin đã gửi; cơ chế mềm/cứng và lưu kết quả còn cần xác nhận.</p>
+</li>
+</ul>
+<h3 id="24-rang-buoc">2.4. Ràng buộc</h3>
+<h4 id="quyen">Quyền</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Role/Điều kiện</th>
+<th style="text-align: center;">Xem item/người nhận/kết quả</th>
+<th style="text-align: center;">Tạo item</th>
+<th style="text-align: center;">Gửi chung/riêng</th>
+<th style="text-align: center;">Chọn/Đổi mẫu</th>
+<th style="text-align: center;">Thao tác ×</th>
+<th style="text-align: center;">Sửa nội dung mẫu ở tab</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Admin trong phạm vi quản trị</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">❌</td>
+</tr>
+<tr>
+<td>Class Handler đã được add vào lớp</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">❌</td>
+</tr>
+<tr>
+<td>Support đã được add vào lớp</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">❌</td>
+</tr>
+<tr>
+<td>Class Handler/Support chưa được add vào lớp</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+</tr>
+<tr>
+<td>Sale và các role khác</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+</tr>
+</tbody>
+</table></div>
+<ul>
+<li>Admin theo quyền quản trị chung; Class Handler/Support phải được add vào chính lớp. Được quản lý item của người khác trong phạm vi này, không kiểm tra owner như Ghi Chú/Lịch Hẹn. Gỡ khỏi lớp phải mất quyền ngay khi kiểm tra request.</li>
+<li>Chức năng quản lý mẫu là feature khác; quyền vào tab này không tự cấp quyền tạo/sửa định nghĩa mẫu.</li>
+</ul>
+<h4 id="pham-vi-du-lieu">Phạm vi dữ liệu</h4>
+<ul>
+<li>Dùng định danh lớp/item/mẫu/học viên/liên kết CơmGao/cuộc hội thoại và platform, không ghép theo tên/email hiển thị. Kết quả gửi vẫn thuộc đúng item/người nhận khi giao diện đã chuyển lớp/tab.</li>
+<li>Nguồn mẫu/biến và đích CơmGao phải được đối chiếu đúng người. Tab này chỉ sử dụng dữ liệu nguồn, không tự sửa hồ sơ CơmGao hay tạo tài khoản platform mới.</li>
+<li>Không tự gửi tới học viên lớp khác, mọi người trong CơmGao hoặc phụ huynh không được cấu hình làm đích nhận. Gửi full chỉ áp dụng danh sách của một item.</li>
+<li>Không thêm lịch gửi tự động, tạo mẫu mới, thu hồi tin đã gửi hay nhật ký Hệ thống tự ghi action gửi tin nhắn khi chưa có yêu cầu riêng.</li>
+</ul>
+<h2 id="3-can-xac-nhan">3. Cần xác nhận</h2>
+<ul>
+<li>× hiện khi hover, click mở popup và confirm mới xóa đã chốt. Cần xác nhận xóa mềm/cứng, quyền xóa item đã gửi và yêu cầu lưu kết quả gửi sau xóa.</li>
+<li>Thiết kế hiển thị Đã gửi và lý do không gửi được trên từng dòng chưa có ảnh chi tiết; không gửi lại đã chốt.</li>
+<li>Đổi mẫu chỉ ảnh hưởng lần gửi của người chưa gửi; không reset count/cho gửi lại. Khi sửa mẫu gốc tại define, item dùng bản mới nhất hay bản chụp lúc tạo cần chốt.</li>
+<li>Tập người nhận gồm những trạng thái học viên nào; cố định lúc tạo hay theo danh sách lớp hiện tại; học viên rời/thêm lớp có thay T không? Platform mặc định và việc lưu lựa chọn theo item/học viên.</li>
+<li>Danh sách mẫu/mapping biến và ý nghĩa các placeholder cụ thể do chức năng mẫu/CơmGao cung cấp; thời điểm lấy dữ liệu, field bắt buộc và xử lý biến tùy chọn trống. Chưa có requirement nguồn mẫu tương ứng trong repo để dẫn chiếu.</li>
+<li>Đích gửi và cấu hình khả dụng của từng nền tảng, đặc biệt Website; cách xác định thành công/tình trạng gửi từ nguồn. Dropdown trong ảnh không thay đặc tả tích hợp gửi của CơmGao.</li>
+<li>Thời điểm kích hoạt search (Enter/debounce); sắp xếp mặc định, phân trang/số item mỗi trang; UI kết quả/lỗi từng người và lịch sử lần gửi chưa thể hiện rõ trong ảnh.</li>
+</ul>
+</article>
+    <p class="source-note">Nguồn: class_detail_messages_requirements.md · SHA-256 3d9a18c3414e203bd20cac9bd38d4a4cbd97b7d1a43d5e792d8c8d744d005784</p>
+  </main>
+  <script>
+    const article = document.getElementById('document');
+    const nav = document.getElementById('docNav');
+    const headings = [...article.querySelectorAll('h2')];
+    headings.forEach((heading, index) => {
+      const link = document.createElement('a');
+      link.href = `#${heading.id}`;
+      const number = document.createElement('span');
+      number.className = 'nav-num';
+      number.textContent = String(index + 1).padStart(2, '0');
+      link.append(number, document.createTextNode(heading.textContent));
+      nav.append(link);
+    });
+
+    const navLinks = [...nav.querySelectorAll('a')];
+    const observer = new IntersectionObserver(entries => {
+      const current = entries.filter(item => item.isIntersecting).sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
+      if (!current) return;
+      navLinks.forEach(link => link.classList.toggle('active', link.hash === `#${current.target.id}`));
+    }, {rootMargin: '-18% 0px -68% 0px', threshold: [0, .2, .5]});
+    headings.forEach(heading => observer.observe(heading));
+    if (navLinks[0]) navLinks[0].classList.add('active');
+
+    const testcaseHeadings = [...article.querySelectorAll('h4, h5')]
+      .filter(heading => heading.textContent.trim().startsWith('Testcase'));
+    const testcaseGroups = testcaseHeadings
+      .map(heading => ({heading, tableWrap: heading.nextElementSibling}))
+      .filter(group => group.tableWrap?.classList.contains('table-wrap'));
+    if (testcaseGroups.length) {
+        const tableWraps = testcaseGroups.map(group => group.tableWrap);
+        tableWraps.forEach(tableWrap => tableWrap.classList.add('testcase-table'));
+        const rows = tableWraps.flatMap(tableWrap => [...tableWrap.querySelectorAll('tbody tr')]);
+        const tools = document.createElement('div');
+        tools.className = 'case-tools';
+        const input = document.createElement('input');
+        input.type = 'search';
+        input.placeholder = 'Tìm testcase, Flow, REQ, EX hoặc nội dung…';
+        input.setAttribute('aria-label', 'Tìm testcase');
+        const count = document.createElement('span');
+        count.className = 'case-count';
+        tools.append(input, count);
+        testcaseGroups[0].heading.before(tools);
+        const filterRows = () => {
+          const query = input.value.trim().toLocaleLowerCase('vi');
+          let visible = 0;
+          rows.forEach(row => {
+            const match = !query || row.textContent.toLocaleLowerCase('vi').includes(query);
+            row.hidden = !match;
+            if (match) visible += 1;
+          });
+          testcaseGroups.forEach(({heading, tableWrap}) => {
+            const hasVisibleRow = [...tableWrap.querySelectorAll('tbody tr')]
+              .some(row => !row.hidden);
+            heading.hidden = !hasVisibleRow;
+            tableWrap.hidden = !hasVisibleRow;
+          });
+          count.textContent = `${visible}/${rows.length} testcase`;
+        };
+        input.addEventListener('input', filterRows);
+        filterRows();
+    }
+  </script>
+</body>
+</html>

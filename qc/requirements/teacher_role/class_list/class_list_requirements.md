@@ -1,0 +1,202 @@
+# [Giáo viên] Lớp — Thống kê tổng quan
+
+> Tài liệu đặc tả menu **Lớp** của role Giáo viên: thống kê tổng quan các lớp giáo viên được phân công và danh sách lớp để vào Chi tiết lớp. UI tham chiếu: Figma `GV-LOP-010000 — Lớp / Thống kê tổng quan`. Số liệu trong ảnh là dữ liệu mẫu. Công thức chỉ số dùng chung với requirement Admin [Quản lý danh sách giáo viên](../../management_requirement/teacher_management/teacher_management_requirements.md), [Chi tiết giáo viên](../../management_requirement/teacher_management/teacher_detail_requirements.md) và [Chi tiết lớp học — Menu Tổng quan](../../management_requirement/class_management/class_detail_overview_requirements.md).
+
+## 1. UI
+
+### Trang 1: Thống kê tổng quan
+
+<p align="center">
+  <a href="./images/class-list.png"><img src="./images/class-list.png" alt="Lớp — Thống kê tổng quan" width="900" title="Nhấn để xem ảnh gốc"></a><br>
+  <em>Thống kê tổng quan: hàng thẻ chỉ số, khối lớp đang chọn bên trái, Danh sách lớp bên phải (Figma GV-LOP-010000) — nhấn để xem ảnh gốc</em>
+</p>
+
+**Mô tả:**
+
+- Giáo viên đăng nhập xem thống kê các lớp mình được phân công tại trung tâm đang chọn ở header, chọn một lớp để xem nhanh chỉ số lớp đó và bấm `>` để vào Chi tiết lớp.
+- Trang gồm: tiêu đề `Thống kê tổng quan`, ô `Tìm kiếm` và 3 bộ lọc; hàng 5 thẻ chỉ số và badge hạng; khối `Lớp <mã lớp>` bên trái; `Danh sách lớp` bên phải.
+
+**Giải thích thành phần:**
+
+| Thành phần | Yêu cầu |
+|---|---|
+| Trung tâm | Lấy theo trung tâm giáo viên đang chọn ở header; chỉ lớp của trung tâm đó. |
+| `Tìm kiếm` | Tìm theo mã lớp hoặc tên khoá học, không phân biệt hoa thường; áp dụng cho cả hàng thẻ chỉ số và Danh sách lớp. |
+| `Loại lớp` | Chọn một hoặc nhiều: `Lớp 1-1`, `Lớp chung`, `Lớp demo`. Mặc định tất cả. |
+| `Trạng thái` | Chọn một hoặc nhiều trong 7 trạng thái lớp: `Mới tạo`, `Trải nghiệm`, `Khai giảng`, `Đang học`, `Tạm ngưng`, `Hoàn thành`, `Huỷ bỏ`. **Mặc định `Đang học`**. |
+| `Trình độ` | Chọn một hoặc nhiều trình độ từ dữ liệu định nghĩa. Mặc định tất cả. |
+| Tập lớp thỏa bộ lọc | Lớp giáo viên được thêm vào (mọi trạng thái), thuộc trung tâm, khớp tìm kiếm và cả 3 bộ lọc. Hàng thẻ và Danh sách lớp cùng dùng tập này. |
+
+**Điểm cần lưu ý:**
+
+- Figma có badge `Q3/2026` cạnh tiêu đề: **không có kỳ thống kê**, bỏ badge này; thống kê tính trên toàn bộ dữ liệu của các lớp thỏa bộ lọc.
+- Đổi bộ lọc hoặc tìm kiếm thì tính lại hàng thẻ, tải lại Danh sách lớp và chọn lại lớp đầu tiên.
+- Không có lớp thỏa bộ lọc: hàng thẻ hiển thị `0/0`, `0%`, badge hạng trống; ẩn khối lớp bên trái; Danh sách lớp hiển thị `Bảng dữ liệu này đang trống`.
+
+#### Testcase — Thống kê tổng quan
+
+| Tên testcase | Priority | Loại test | Scenario | Role | Pre-condition | Given / When / Then | Expected Result |
+|---|---| --- |---|---|---|---|---|
+| Case 1: Mở menu Lớp | High | Smoke | Flow 1 / REQ01 | Giáo viên | Giáo viên có 6 lớp ở trung tâm, 4 lớp Đang học | **Given** đăng nhập, chọn trung tâm<br>**When** mở menu Lớp<br>**Then** bộ lọc Trạng thái = Đang học, hàng thẻ và danh sách tính trên 4 lớp | - Chọn sẵn lớp đầu tiên<br>- Không có badge kỳ thống kê |
+| Case 2: Đổi bộ lọc tính lại thẻ | High |  | Flow 2 / REQ01 / REQ02 | Giáo viên | Có lớp Đang học và Hoàn thành | **Given** thêm `Hoàn thành` vào bộ lọc Trạng thái<br>**When** áp dụng<br>**Then** hàng thẻ và danh sách tính lại trên cả hai nhóm | - Chọn lại lớp đầu tiên<br>- Lớp Huỷ bỏ không vào |
+| Case 3: Tìm theo mã lớp và tên khoá | Medium |  | REQ01 | Giáo viên | Có lớp BD105-I khoá Tiếng Đức A1 | **Given** nhập `a1`<br>**When** tìm<br>**Then** chỉ lớp có mã hoặc tên khoá chứa `a1` | - Hàng thẻ tính trên kết quả tìm |
+| Case 4: Không có lớp | Medium |  | EX01 | Giáo viên | Bộ lọc không ra lớp | **Given** áp dụng bộ lọc<br>**When** kết quả rỗng<br>**Then** thẻ `0/0`, `0%`, ẩn khối lớp, danh sách `Bảng dữ liệu này đang trống` | - Không lỗi, không NaN |
+| Case 5: Đổi trung tâm ở header | Medium |  | REQ01 | Giáo viên | Giáo viên dạy ở 2 trung tâm | **Given** đổi trung tâm<br>**When** trang tải lại<br>**Then** chỉ lớp của trung tâm mới | - Bộ lọc về mặc định |
+
+### Hàng thẻ chỉ số
+
+**Mô tả:**
+
+- Năm thẻ `Số lớp`, `Lên kỳ`, `Đi học`, `BTVN`, `Đạt KPI` và badge hạng, tính trên tập lớp thỏa bộ lọc.
+
+**Giải thích thành phần:**
+
+| Thẻ | Yêu cầu |
+|---|---|
+| `Số lớp` | `x/y`: x = số lớp ở trạng thái `Đang học`; y = tổng lớp trong tập thỏa bộ lọc. |
+| `Lên kỳ` | Tính trên học viên của các lớp trong tập: Lên kỳ mỗi học viên = `(Tỷ lệ đi học + Tỷ lệ BTVN) / 2`; thẻ = trung bình cộng Lên kỳ của mọi học viên. Làm tròn kết quả cuối 1 chữ số thập phân, hiển thị `%`. |
+| `Đi học` | Tỷ lệ đi học mỗi học viên = số lượt `Có mặt`, `Vào trễ`, `Ra sớm`, `Vào trễ & Ra sớm` / tổng lượt phải tham gia × 100; thẻ = trung bình cộng của mọi học viên trong tập. 1 chữ số thập phân. |
+| `BTVN` | Tỷ lệ BTVN mỗi học viên = số BTVN đã nộp / số BTVN được giao × 100; thẻ = trung bình cộng của mọi học viên trong tập. 1 chữ số thập phân. |
+| `Đạt KPI` | KPI lớp = trung bình cộng Lên kỳ của học viên **trong lớp đó**; thẻ = trung bình cộng KPI lớp của các lớp trong tập, mỗi lớp trọng số bằng nhau. 1 chữ số thập phân. |
+| Badge hạng | Hạng `A`–`F` tổng hợp của giáo viên theo nguồn dữ liệu đánh giá; chưa có công thức, hiển thị giá trị có sẵn, không có thì trống. |
+
+**Điểm cần lưu ý:**
+
+- Học viên không có mẫu số hợp lệ (chưa có buổi phải tham gia / chưa được giao BTVN) không tham gia trung bình của chỉ số đó; 0% hợp lệ vẫn tính.
+- Lớp không có học viên hợp lệ thì KPI lớp không tham gia thẻ `Đạt KPI`.
+- Không làm tròn từng học viên/lớp trước khi lấy trung bình; không chia 0, tập rỗng hiển thị `0%`.
+
+#### Testcase — Hàng thẻ chỉ số
+
+| Tên testcase | Priority | Loại test | Scenario | Role | Pre-condition | Given / When / Then | Expected Result |
+|---|---| --- |---|---|---|---|---|
+| Case 6: Số lớp | High |  | REQ02 | Giáo viên | Tập thỏa bộ lọc 6 lớp, 4 Đang học | **Given** xem thẻ Số lớp<br>**When** tính<br>**Then** `4/6` | - Đổi bộ lọc Trạng thái = Đang học thì `4/4` |
+| Case 7: Lên kỳ theo học viên | High |  | REQ02 | Giáo viên | Học viên A Đi học 80%, BTVN 90%; B 60%, 50% | **Given** tính Lên kỳ<br>**When** trung bình<br>**Then** A 85%, B 55%, thẻ 70.0% | - Không làm tròn từng học viên |
+| Case 8: Đạt KPI theo lớp | High |  | REQ02 | Giáo viên | Lớp X KPI 70%, lớp Y KPI 50% (Y có 3 học viên, X có 10) | **Given** tính thẻ Đạt KPI<br>**When** trung bình theo lớp<br>**Then** 60.0% | - Mỗi lớp trọng số bằng nhau |
+| Case 9: Học viên thiếu mẫu số | Medium |  | REQ02 | Giáo viên | C chưa được giao BTVN | **Given** tính BTVN<br>**When** lấy trung bình<br>**Then** C không tham gia | - Đi học của C vẫn tính nếu có buổi |
+
+### Khối lớp đang chọn
+
+**Mô tả:**
+
+- Khối `Lớp <mã lớp>` bên trái hiển thị nhanh thông tin và 6 chỉ số của lớp đang chọn trong Danh sách lớp. Mặc định chọn lớp đầu tiên; bấm card khác để đổi.
+
+**Giải thích thành phần:**
+
+| Thành phần | Yêu cầu |
+|---|---|
+| `Kết quả` | Badge hạng `A`–`F` của lớp theo nguồn đánh giá lớp; chưa có công thức. |
+| `Ngày bắt đầu` / `Ngày kết thúc` | `dd.MM.yyyy` theo Thông tin lớp. |
+| `Khung giờ học` | Các khung lịch cố định của lớp dạng `T2, 19h30`; không có thì ẩn. |
+| `Sĩ số` | `x/y`: x = học viên Đang học + Dự thính; y = tất cả học viên của lớp đủ 7 trạng thái (Đang học, Dự thính, Hoàn thành, Nghỉ học, Rời lớp, Chỉ xem, Xóa). |
+| `Đi học`, `BTVN` | Trung bình cộng tỷ lệ của học viên có dữ liệu trong lớp, hiển thị `%` số nguyên; không có dữ liệu thì trống. |
+| `Điểm KT`, `Điểm BTVN` | Cộng điểm các bài đã chấm chia số bài đã chấm (giữ bài của học viên đã Rời lớp/Xóa), 1 chữ số thập phân; không có bài đã chấm thì trống. |
+| `Thời gian học` | Trung bình tổng thời gian học viên–bài trên app, hiển thị `HH:mm:ss`. |
+| Biểu đồ nhỏ | Đường xu hướng chỉ số theo bài học của lớp, chỉ hiển thị. |
+
+**Điểm cần lưu ý:**
+
+- Sáu chỉ số dùng đúng công thức mục `Thống kê học tập trung bình của lớp` của Tổng quan lớp; không tính lại khác.
+- Không có lớp trong danh sách: ẩn toàn bộ khối.
+
+#### Testcase — Khối lớp đang chọn
+
+| Tên testcase | Priority | Loại test | Scenario | Role | Pre-condition | Given / When / Then | Expected Result |
+|---|---| --- |---|---|---|---|---|
+| Case 10: Mặc định lớp đầu tiên | High | Smoke | Flow 1 / REQ03 | Giáo viên | Danh sách có 6 lớp | **Given** mở menu<br>**When** tải xong<br>**Then** khối hiển thị lớp đầu tiên, card đầu viền cam | - Bấm card khác thì khối đổi theo |
+| Case 11: Sĩ số đủ 7 trạng thái | High |  | REQ03 | Giáo viên | Lớp có mỗi trạng thái 1 học viên | **Given** xem Sĩ số<br>**When** tính<br>**Then** `2/7` | - Không đổi sang % |
+| Case 12: Điểm trung bình giữ lịch sử | Medium |  | REQ03 | Giáo viên | KT đã chấm 8, 0 (học viên 0 điểm đã Rời lớp), 1 chưa chấm | **Given** xem Điểm KT<br>**When** tính<br>**Then** 4.0 | - Chưa chấm không vào mẫu |
+
+### Danh sách lớp
+
+**Mô tả:**
+
+- Danh sách card lớp thỏa bộ lọc, mỗi card một lớp; bấm card để chọn, bấm `>` để vào Chi tiết lớp.
+
+**Giải thích thành phần:**
+
+| Thành phần | Yêu cầu |
+|---|---|
+| Icon trạng thái lớp | Icon theo bộ 7 trạng thái lớp (Mới tạo, Trải nghiệm, Khai giảng, Đang học, Tạm ngưng, Hoàn thành, Huỷ bỏ); hover hiện tên trạng thái. |
+| Mã lớp | Cắt `…` khi dài; hover hiện đủ. |
+| Tên khoá học | Tên khoá học gắn với lớp. |
+| Thanh tiến độ `x/y Buổi` | x = số buổi của lớp đã học (lịch Hoàn thành); y = tổng số buổi của khoá học. Thanh tô theo x/y; x > y thì tô đầy. |
+| Badge hạng | Hạng `A`–`F` của lớp theo nguồn đánh giá; không có thì trống. |
+| Vòng `%` | KPI lớp = trung bình cộng Lên kỳ của học viên trong lớp, số nguyên `%`; không có học viên hợp lệ thì trống. |
+| `>` | Vào Chi tiết lớp của đúng lớp (menu Tổng quan). |
+| Card đang chọn | Viền cam. |
+| Sắp xếp | Theo mã lớp tăng dần; tải toàn bộ, không phân trang. |
+
+#### Testcase — Danh sách lớp
+
+| Tên testcase | Priority | Loại test | Scenario | Role | Pre-condition | Given / When / Then | Expected Result |
+|---|---| --- |---|---|---|---|---|
+| Case 13: Vào Chi tiết lớp | High | Smoke | Flow 3 / REQ04 | Giáo viên | Có lớp BD105-I | **Given** bấm `>` của BD105-I<br>**When** điều hướng<br>**Then** mở Chi tiết lớp BD105-I, menu Tổng quan | - Không vào lớp khác |
+| Case 14: Tiến độ buổi | Medium |  | REQ04 | Giáo viên | Lớp có 25 buổi Hoàn thành, khoá 26 buổi | **Given** xem card<br>**When** tính<br>**Then** `25/26 Buổi` | - 30/24 thì thanh tô đầy, số vẫn `30/24` |
+| Case 15: Vòng KPI lớp | Medium |  | REQ04 | Giáo viên | Lớp có học viên Lên kỳ 80%, 60% | **Given** xem vòng<br>**When** tính<br>**Then** `70%` | - Lớp không có học viên hợp lệ thì trống |
+
+---
+
+## 2. Yêu cầu
+
+### 2.1. Flow chính
+
+**Flow 1 / REQ01 / REQ03: Mở Thống kê tổng quan**
+
+```text
+Giáo viên đăng nhập → chọn trung tâm ở header → menu Lớp
+      → Hệ thống tải lớp giáo viên được thêm vào tại trung tâm, bộ lọc mặc định Trạng thái = Đang học
+      → Tính hàng thẻ chỉ số trên tập lớp thỏa bộ lọc; hiển thị Danh sách lớp; chọn lớp đầu tiên → khối lớp bên trái
+      → Không có lớp: thẻ 0/0, 0%; ẩn khối lớp; danh sách "Bảng dữ liệu này đang trống"
+```
+
+**Flow 2 / REQ01 / REQ02: Tìm kiếm và lọc**
+
+```text
+Giáo viên nhập Tìm kiếm hoặc đổi Loại lớp / Trạng thái / Trình độ
+      → Hệ thống tính lại tập lớp thỏa bộ lọc
+      → Tính lại hàng thẻ; tải lại Danh sách lớp; chọn lại lớp đầu tiên
+```
+
+**Flow 3 / REQ04: Vào Chi tiết lớp**
+
+```text
+Giáo viên bấm card → khối lớp bên trái đổi theo lớp đó
+      → Bấm ">" → mở Chi tiết lớp (menu Tổng quan) của đúng lớp
+```
+
+### 2.2. Ngoại lệ
+
+- **EX01:** Không có lớp thỏa bộ lọc → thẻ `0/0`, `0%`, badge trống; ẩn khối lớp; danh sách `Bảng dữ liệu này đang trống`; không lỗi.
+- **EX02:** Tải dữ liệu thất bại → vùng lỗi có `Thử lại`; không hiển thị số 0 giả.
+- **EX03:** Giáo viên không được thêm vào lớp nào tại trung tâm → như EX01.
+
+### 2.3. Yêu cầu khác
+
+- **REQ01 – Phạm vi và bộ lọc:** Lớp giáo viên được thêm vào tại trung tâm đang chọn. Tìm theo mã lớp/tên khoá; Loại lớp (`Lớp 1-1`, `Lớp chung`, `Lớp demo`), Trạng thái (7 trạng thái, mặc định `Đang học`), Trình độ; chọn nhiều, trong cùng bộ lọc là OR. Hàng thẻ và Danh sách lớp dùng cùng tập lớp thỏa bộ lọc. Không có kỳ thống kê.
+- **REQ02 – Hàng thẻ:** `Số lớp` = lớp Đang học / tổng lớp tập; `Đi học`, `BTVN` = trung bình tỷ lệ của mọi học viên trong tập; `Lên kỳ` = trung bình `(Đi học + BTVN)/2` của mọi học viên; `Đạt KPI` = trung bình KPI lớp (KPI lớp = trung bình Lên kỳ của học viên trong lớp), mỗi lớp trọng số bằng nhau; badge hạng theo nguồn. Làm tròn kết quả cuối 1 chữ số thập phân; học viên/lớp thiếu mẫu số không tham gia; tập rỗng `0%`.
+- **REQ03 – Khối lớp đang chọn:** Mặc định lớp đầu tiên; `Kết quả`, ngày bắt đầu/kết thúc, khung giờ học, 6 chỉ số theo công thức Tổng quan lớp; ẩn khi không có lớp.
+- **REQ04 – Danh sách lớp:** Card có icon trạng thái, mã lớp, tên khoá, tiến độ `x/y Buổi` (buổi Hoàn thành / tổng buổi khoá), badge hạng, vòng KPI lớp, `>` vào Chi tiết lớp; sắp theo mã lớp; không phân trang.
+- **REQ05 – Đồng bộ:** Số liệu lấy từ cùng nguồn với Tổng quan lớp và Danh sách giáo viên của Admin; đổi trung tâm thì bộ lọc về mặc định và tải lại.
+
+### 2.4. Ràng buộc
+
+#### Quyền
+
+| Role | Xem thống kê và danh sách lớp của mình | Vào Chi tiết lớp | Sửa dữ liệu |
+|---|:---:|:---:|:---:|
+| Giáo viên | ✅ | ✅ | ❌ |
+| Các role khác | ❌ (dùng menu riêng) | — | — |
+
+#### Phạm vi dữ liệu
+
+- Chỉ lớp giáo viên đang đăng nhập được thêm vào, tại trung tâm đang chọn; backend kiểm tra, không dựa vào ẩn ở client.
+- Không cho phép truy cập Chi tiết lớp không được phân công, kể cả bằng URL.
+
+---
+
+## 3. Cần xác nhận
+
+- Công thức và nguồn của badge hạng `A`–`F` (thẻ tổng của giáo viên, `Kết quả` của lớp, badge trên card); hiện chỉ hiển thị giá trị có sẵn.
+- Figma còn badge `Q3/2026` cạnh tiêu đề; cần bỏ khỏi thiết kế.
+- Nội dung biểu đồ nhỏ trong 6 thẻ của khối lớp (trục, số điểm dữ liệu) chưa được đặc tả.

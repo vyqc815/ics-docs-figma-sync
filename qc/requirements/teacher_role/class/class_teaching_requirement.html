@@ -1,0 +1,3942 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Requirement [Giáo viên] Chi tiết lớp — Giảng dạy">
+  <link rel="icon" href="data:,">
+  <title>[Giáo viên] Chi tiết lớp — Giảng dạy — Requirement</title>
+  <style>
+    :root {
+      --orange-700: #c83f00;
+      --orange-600: #e84c00;
+      --orange-500: #f45b0a;
+      --orange-400: #ff7a32;
+      --orange-100: #fff0e8;
+      --orange-50: #fff8f4;
+      --navy-950: #101828;
+      --navy-900: #172033;
+      --navy-800: #243047;
+      --slate-700: #344054;
+      --slate-600: #475467;
+      --slate-500: #667085;
+      --slate-400: #98a2b3;
+      --slate-300: #d0d5dd;
+      --slate-200: #e4e7ec;
+      --slate-100: #f2f4f7;
+      --slate-50: #f8fafc;
+      --white: #ffffff;
+      --green: #159447;
+      --blue: #2154c5;
+      --yellow: #b77900;
+      --red: #c92a2a;
+      --purple: #6941c6;
+      --shadow-sm: 0 1px 2px rgba(16, 24, 40, .06);
+      --shadow-md: 0 12px 32px rgba(16, 24, 40, .10);
+      --shadow-lg: 0 24px 64px rgba(16, 24, 40, .16);
+      --radius-sm: 10px;
+      --radius: 16px;
+      --radius-lg: 24px;
+      --sidebar: 286px;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      color: var(--navy-950);
+      background:
+        radial-gradient(circle at 88% 5%, rgba(244, 91, 10, .10), transparent 24rem),
+        var(--slate-50);
+      font: 15px/1.65 Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      text-rendering: optimizeLegibility;
+    }
+    a { color: inherit; }
+    img { max-width: 100%; }
+    button, input, select { font: inherit; }
+    code {
+      padding: .12rem .38rem;
+      border: 1px solid #fed7c3;
+      border-radius: 6px;
+      color: var(--orange-700);
+      background: var(--orange-50);
+      font: 600 .9em ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    }
+
+    .skip-link {
+      position: fixed;
+      z-index: 999;
+      top: 12px;
+      left: 12px;
+      padding: 10px 14px;
+      border-radius: 9px;
+      color: var(--white);
+      background: var(--navy-950);
+      transform: translateY(-150%);
+    }
+    .skip-link:focus { transform: none; }
+
+    .sidebar {
+      position: fixed;
+      z-index: 30;
+      inset: 0 auto 0 0;
+      width: var(--sidebar);
+      padding: 22px 18px;
+      overflow-y: auto;
+      color: #f8fafc;
+      background:
+        linear-gradient(155deg, rgba(255, 122, 50, .24), transparent 26%),
+        linear-gradient(180deg, #192338 0%, #111827 100%);
+      border-right: 1px solid rgba(255, 255, 255, .08);
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 4px 8px 22px;
+      border-bottom: 1px solid rgba(255, 255, 255, .10);
+    }
+    .brand-mark {
+      display: grid;
+      width: 44px;
+      height: 44px;
+      place-items: center;
+      border-radius: 14px;
+      color: var(--white);
+      background: linear-gradient(135deg, var(--orange-400), var(--orange-600));
+      box-shadow: 0 10px 26px rgba(244, 91, 10, .35);
+      font-weight: 900;
+      letter-spacing: -.06em;
+    }
+    .brand strong { display: block; font-size: 16px; }
+    .brand small { color: #aeb8c9; }
+    .nav-title {
+      margin: 24px 10px 8px;
+      color: #8f9aae;
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+    .nav { display: grid; gap: 4px; }
+    .nav a {
+      display: flex;
+      align-items: center;
+      gap: 11px;
+      padding: 10px 12px;
+      border-radius: 10px;
+      color: #cbd5e1;
+      text-decoration: none;
+      transition: .18s ease;
+    }
+    .nav a:hover, .nav a.active {
+      color: var(--white);
+      background: rgba(255, 255, 255, .09);
+    }
+    .nav a.active { box-shadow: inset 3px 0 var(--orange-400); }
+    .nav-num {
+      display: grid;
+      width: 25px;
+      height: 25px;
+      flex: 0 0 auto;
+      place-items: center;
+      border: 1px solid rgba(255, 255, 255, .15);
+      border-radius: 8px;
+      font-size: 11px;
+      font-weight: 800;
+    }
+    .sidebar-footer {
+      margin-top: 26px;
+      padding: 14px;
+      border: 1px solid rgba(255, 255, 255, .10);
+      border-radius: 14px;
+      color: #aeb8c9;
+      background: rgba(255, 255, 255, .04);
+      font-size: 12px;
+    }
+    .sidebar-footer a { color: #ffd8c5; }
+
+    main {
+      width: min(1500px, calc(100% - var(--sidebar)));
+      margin-left: var(--sidebar);
+      padding: 34px clamp(24px, 4vw, 64px) 80px;
+    }
+    section { scroll-margin-top: 24px; }
+    .hero {
+      position: relative;
+      padding: clamp(30px, 5vw, 56px);
+      overflow: hidden;
+      border: 1px solid rgba(255, 255, 255, .08);
+      border-radius: var(--radius-lg);
+      color: var(--white);
+      background:
+        linear-gradient(105deg, rgba(16, 24, 40, .97) 0%, rgba(23, 32, 51, .94) 62%, rgba(109, 45, 9, .90) 100%);
+      box-shadow: var(--shadow-lg);
+    }
+    .hero::after {
+      content: "";
+      position: absolute;
+      width: 360px;
+      height: 360px;
+      top: -190px;
+      right: -80px;
+      border: 70px solid rgba(255, 122, 50, .15);
+      border-radius: 50%;
+    }
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 10px;
+      border: 1px solid rgba(255, 255, 255, .15);
+      border-radius: 999px;
+      color: #ffd8c5;
+      background: rgba(255, 255, 255, .06);
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+    .hero h1 {
+      max-width: 900px;
+      margin: 18px 0 12px;
+      font-size: clamp(34px, 5vw, 64px);
+      line-height: 1.03;
+      letter-spacing: -.045em;
+    }
+    .hero p { max-width: 780px; margin: 0; color: #cbd5e1; font-size: 17px; }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 25px; }
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      min-height: 42px;
+      padding: 9px 14px;
+      border: 1px solid transparent;
+      border-radius: 10px;
+      color: var(--white);
+      background: var(--orange-500);
+      text-decoration: none;
+      cursor: pointer;
+      transition: .18s ease;
+    }
+    .button:hover { transform: translateY(-1px); background: var(--orange-600); }
+    .button.secondary { border-color: rgba(255, 255, 255, .15); background: rgba(255, 255, 255, .07); }
+    .button.ghost { color: var(--slate-700); border-color: var(--slate-300); background: var(--white); }
+    .button.small { min-height: 36px; padding: 7px 11px; font-size: 13px; }
+
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 14px;
+      margin-top: 18px;
+    }
+    .stat {
+      padding: 18px;
+      border: 1px solid var(--slate-200);
+      border-radius: var(--radius);
+      background: rgba(255, 255, 255, .86);
+      box-shadow: var(--shadow-sm);
+    }
+    .stat strong { display: block; color: var(--orange-600); font-size: 30px; line-height: 1; }
+    .stat span { display: block; margin-top: 7px; color: var(--slate-600); font-weight: 650; }
+
+    .section-head {
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 24px;
+      margin: 64px 0 20px;
+    }
+    .section-kicker {
+      margin: 0 0 6px;
+      color: var(--orange-600);
+      font-size: 12px;
+      font-weight: 850;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+    .section-head h2 { margin: 0; font-size: clamp(27px, 4vw, 40px); letter-spacing: -.035em; }
+    .section-head p { max-width: 600px; margin: 8px 0 0; color: var(--slate-600); }
+
+    .panel {
+      padding: clamp(20px, 3vw, 30px);
+      border: 1px solid var(--slate-200);
+      border-radius: var(--radius-lg);
+      background: var(--white);
+      box-shadow: var(--shadow-sm);
+    }
+    .panel + .panel { margin-top: 18px; }
+    .panel h3 { margin: 0 0 14px; font-size: 21px; letter-spacing: -.02em; }
+    .panel h4 { margin: 26px 0 10px; }
+    .muted { color: var(--slate-600); }
+    .note {
+      padding: 15px 17px;
+      border-left: 4px solid var(--orange-500);
+      border-radius: 0 12px 12px 0;
+      color: var(--slate-700);
+      background: var(--orange-50);
+    }
+
+    .mockup {
+      position: relative;
+      padding: 12px;
+      border: 1px solid var(--slate-200);
+      border-radius: 18px;
+      background: linear-gradient(145deg, #fff, #f4f6f9);
+      box-shadow: var(--shadow-md);
+    }
+    .mockup a { display: block; overflow: hidden; border-radius: 12px; }
+    .mockup img { display: block; width: 100%; transition: transform .3s ease; }
+    .mockup a:hover img { transform: scale(1.01); }
+    .mockup figcaption { padding: 12px 4px 2px; color: var(--slate-600); font-size: 13px; }
+
+    .grid-2 { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
+    .grid-3 { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+    .grid-4 { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 14px; }
+    .card {
+      padding: 18px;
+      border: 1px solid var(--slate-200);
+      border-radius: var(--radius);
+      background: var(--white);
+      box-shadow: var(--shadow-sm);
+    }
+    .card h3, .card h4 { margin: 0 0 8px; }
+    .card p { margin: 0; color: var(--slate-600); }
+    .card-accent { border-top: 4px solid var(--orange-500); }
+
+    .column-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+    .column-item {
+      min-height: 124px;
+      padding: 15px;
+      border: 1px solid var(--slate-200);
+      border-radius: 14px;
+      background: var(--slate-50);
+    }
+    .column-item strong { display: block; margin-bottom: 5px; color: var(--navy-900); }
+    .column-item span { color: var(--slate-600); font-size: 13px; }
+
+    .status-card { display: flex; align-items: center; gap: 12px; }
+    .status-card img { width: 42px; height: 42px; }
+    .status-card small { display: block; color: var(--slate-500); }
+
+    .tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      padding: 4px 9px;
+      border-radius: 999px;
+      color: var(--orange-700);
+      background: var(--orange-100);
+      font-size: 12px;
+      font-weight: 800;
+    }
+    .tag.high { color: #9d174d; background: #fce7f3; }
+    .tag.medium { color: #92400e; background: #fef3c7; }
+    .tag.req { color: #3730a3; background: #e0e7ff; }
+    .tag.ex { color: #b42318; background: #fee4e2; }
+
+    .flow-list { display: grid; gap: 14px; counter-reset: flow; }
+    .flow {
+      position: relative;
+      padding: 22px 22px 22px 68px;
+      border: 1px solid var(--slate-200);
+      border-radius: var(--radius);
+      background: var(--white);
+    }
+    .flow::before {
+      counter-increment: flow;
+      content: counter(flow, decimal-leading-zero);
+      position: absolute;
+      top: 20px;
+      left: 18px;
+      display: grid;
+      width: 36px;
+      height: 36px;
+      place-items: center;
+      border-radius: 11px;
+      color: var(--white);
+      background: var(--orange-500);
+      font-weight: 900;
+    }
+    .flow h3 { margin: 0 0 8px; }
+    .flow ol { margin: 0; padding-left: 20px; color: var(--slate-700); }
+
+    .exception { border-left: 4px solid #ef4444; }
+    .exception strong { color: var(--red); }
+
+    .formula-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; }
+    .formula {
+      padding: 18px;
+      border: 1px solid #ffd6c2;
+      border-radius: 16px;
+      background: linear-gradient(160deg, #fff, var(--orange-50));
+    }
+    .formula h4 { margin: 0 0 12px; color: var(--orange-700); }
+    .fraction { display: grid; justify-items: center; color: var(--navy-900); font-weight: 720; text-align: center; }
+    .fraction .top { padding: 0 10px 7px; border-bottom: 2px solid var(--navy-800); }
+    .fraction .bottom { padding-top: 7px; }
+    .formula .teacher { margin-top: 16px; padding-top: 12px; border-top: 1px dashed #f5b896; color: var(--slate-600); font-size: 13px; }
+
+    .filters {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      align-items: center;
+      padding: 14px;
+      border: 1px solid var(--slate-200);
+      border-radius: 14px;
+      background: var(--white);
+      position: sticky;
+      top: 10px;
+      z-index: 10;
+      box-shadow: var(--shadow-md);
+    }
+    .search {
+      min-width: min(100%, 320px);
+      flex: 1 1 260px;
+      height: 42px;
+      padding: 0 13px;
+      border: 1px solid var(--slate-300);
+      border-radius: 10px;
+      color: var(--navy-950);
+      background: var(--white);
+      outline: none;
+    }
+    .search:focus { border-color: var(--orange-500); box-shadow: 0 0 0 4px rgba(244, 91, 10, .12); }
+    .testcases { display: grid; gap: 10px; margin-top: 16px; }
+    .testcase {
+      border: 1px solid var(--slate-200);
+      border-radius: 14px;
+      background: var(--white);
+      overflow: clip;
+    }
+    .testcase[hidden] { display: none; }
+    .testcase summary {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 15px 17px;
+      cursor: pointer;
+      list-style: none;
+    }
+    .testcase summary::-webkit-details-marker { display: none; }
+    .testcase summary::after { content: "+"; margin-left: auto; color: var(--orange-600); font-size: 22px; font-weight: 700; }
+    .testcase[open] summary::after { content: "−"; }
+    .testcase-title { min-width: 0; font-weight: 780; }
+    .case-body {
+      display: grid;
+      grid-template-columns: minmax(180px, .7fr) minmax(0, 1.3fr);
+      gap: 18px;
+      padding: 18px;
+      border-top: 1px solid var(--slate-200);
+      background: var(--slate-50);
+    }
+    .case-meta { color: var(--slate-600); }
+    .case-meta div + div { margin-top: 8px; }
+    .case-steps { display: grid; gap: 10px; }
+    .step { padding: 10px 12px; border-left: 3px solid var(--orange-400); background: var(--white); }
+    .expected { margin: 14px 0 0; padding-left: 20px; }
+    .expected li + li { margin-top: 4px; }
+    .empty-filter { display: none; padding: 28px; color: var(--slate-600); text-align: center; }
+
+    .question-list { display: grid; gap: 10px; margin: 0; padding: 0; counter-reset: question; list-style: none; }
+    .question-list li {
+      position: relative;
+      padding: 14px 16px 14px 54px;
+      border: 1px solid #f4d8a4;
+      border-radius: 13px;
+      background: #fffbeb;
+      color: #664d03;
+    }
+    .question-list li::before {
+      counter-increment: question;
+      content: counter(question);
+      position: absolute;
+      top: 12px;
+      left: 14px;
+      display: grid;
+      width: 28px;
+      height: 28px;
+      place-items: center;
+      border-radius: 9px;
+      color: #fff;
+      background: #d99100;
+      font-weight: 850;
+    }
+
+    .footer {
+      margin-top: 64px;
+      padding-top: 24px;
+      border-top: 1px solid var(--slate-200);
+      color: var(--slate-500);
+      text-align: center;
+    }
+
+    @media (max-width: 1120px) {
+      :root { --sidebar: 244px; }
+      .column-grid, .grid-3, .formula-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .stats { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
+    @media (max-width: 780px) {
+      .sidebar { position: static; width: auto; padding: 14px; }
+      .brand { padding-bottom: 12px; }
+      .nav-title, .sidebar-footer { display: none; }
+      .nav { display: flex; overflow-x: auto; padding-top: 10px; }
+      .nav a { flex: 0 0 auto; }
+      main { width: 100%; margin: 0; padding: 18px 14px 60px; }
+      .hero { border-radius: 18px; }
+      .grid-2, .grid-3, .grid-4, .column-grid, .formula-grid, .case-body { grid-template-columns: 1fr; }
+      .section-head { align-items: start; flex-direction: column; }
+      .filters { position: static; }
+    }
+    @media print {
+      body { background: #fff; font-size: 11px; }
+      .sidebar, .hero-actions, .filters, .skip-link { display: none !important; }
+      main { width: 100%; margin: 0; padding: 0; }
+      .hero { color: #111; background: #fff; border: 2px solid #111; box-shadow: none; }
+      .hero p { color: #333; }
+      .panel, .card, .stat, .mockup, .testcase { break-inside: avoid; box-shadow: none; }
+      .section-head { margin-top: 32px; }
+      .testcase { display: block !important; }
+      .testcase summary::after { display: none; }
+      .testcase:not([open]) .case-body { display: grid; }
+    }
+
+    .doc-shell { min-width: 0; }
+    .doc-toolbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      margin-bottom: 18px;
+      padding: 14px 16px;
+      border: 1px solid var(--slate-200);
+      border-radius: 14px;
+      background: rgba(255,255,255,.92);
+      box-shadow: var(--shadow-sm);
+    }
+    .doc-toolbar-left, .doc-toolbar-right { display: flex; flex-wrap: wrap; align-items: center; gap: 9px; }
+    .sync-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      padding: 6px 10px;
+      border-radius: 999px;
+      color: #067647;
+      background: #ecfdf3;
+      border: 1px solid #abefc6;
+      font-size: 12px;
+      font-weight: 800;
+    }
+    .sync-badge::before { content: "✓"; }
+    .hash { color: var(--slate-500); font: 12px ui-monospace, SFMono-Regular, Menlo, monospace; }
+    .markdown-body {
+      padding: clamp(24px, 4vw, 54px);
+      border: 1px solid var(--slate-200);
+      border-radius: var(--radius-lg);
+      background: var(--white);
+      box-shadow: var(--shadow-md);
+      overflow: hidden;
+    }
+    .markdown-body > h1 {
+      position: relative;
+      margin: -54px -54px 42px;
+      padding: 62px 54px 54px;
+      color: var(--white);
+      background:
+        radial-gradient(circle at 88% 10%, rgba(255,122,50,.36), transparent 20rem),
+        linear-gradient(115deg, var(--navy-950), #243047 68%, #713209);
+      font-size: clamp(34px, 5vw, 62px);
+      line-height: 1.05;
+      letter-spacing: -.045em;
+    }
+    .markdown-body h2 {
+      margin: 70px 0 24px;
+      padding: 0 0 13px;
+      border-bottom: 2px solid var(--slate-200);
+      font-size: clamp(27px, 4vw, 39px);
+      line-height: 1.15;
+      letter-spacing: -.035em;
+      scroll-margin-top: 24px;
+    }
+    .markdown-body h2::first-letter { color: var(--orange-600); }
+    .markdown-body h3 {
+      margin: 38px 0 16px;
+      color: var(--navy-900);
+      font-size: 23px;
+      line-height: 1.25;
+      letter-spacing: -.02em;
+      scroll-margin-top: 24px;
+    }
+    .markdown-body h4 {
+      margin: 28px 0 12px;
+      color: var(--orange-700);
+      font-size: 17px;
+      scroll-margin-top: 24px;
+    }
+    .markdown-body p { margin: 12px 0; }
+    .markdown-body strong { color: var(--navy-900); }
+    .markdown-body ul, .markdown-body ol { padding-left: 1.35rem; }
+    .markdown-body li { margin: 6px 0; }
+    .markdown-body li::marker { color: var(--orange-500); font-weight: 800; }
+    .markdown-body hr {
+      height: 1px;
+      margin: 48px 0;
+      border: 0;
+      background: linear-gradient(90deg, transparent, var(--slate-300), transparent);
+    }
+    .markdown-body > p[align="center"] {
+      margin: 22px 0 28px;
+      padding: 12px;
+      border: 1px solid var(--slate-200);
+      border-radius: 18px;
+      background: linear-gradient(145deg, #fff, #f5f7fa);
+      box-shadow: var(--shadow-md);
+    }
+    .markdown-body > p[align="center"] a { display: inline-block; max-width: 100%; }
+    .markdown-body > p[align="center"] img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+      margin: auto;
+      border-radius: 12px;
+    }
+    .markdown-body > p[align="center"] em {
+      display: block;
+      margin-top: 10px;
+      color: var(--slate-500);
+      font-size: 13px;
+    }
+    .table-wrap {
+      width: 100%;
+      margin: 18px 0 28px;
+      overflow: auto;
+      border: 1px solid var(--slate-200);
+      border-radius: 15px;
+      background: var(--white);
+      box-shadow: var(--shadow-sm);
+    }
+    .markdown-body table {
+      width: 100%;
+      min-width: 720px;
+      border-collapse: separate;
+      border-spacing: 0;
+      font-size: 14px;
+    }
+    .markdown-body th {
+      position: sticky;
+      top: 0;
+      z-index: 2;
+      padding: 12px 14px;
+      color: var(--white);
+      background: var(--navy-900);
+      border-bottom: 1px solid var(--navy-800);
+      text-align: left;
+      white-space: nowrap;
+    }
+    .markdown-body td {
+      padding: 12px 14px;
+      border-bottom: 1px solid var(--slate-200);
+      vertical-align: top;
+    }
+    .markdown-body tbody tr:nth-child(even) td { background: var(--slate-50); }
+    .markdown-body tbody tr:hover td { background: var(--orange-50); }
+    .markdown-body tbody tr:last-child td { border-bottom: 0; }
+    .markdown-body td img { display: block; width: 36px; height: 36px; max-width: none; }
+    .markdown-body pre {
+      position: relative;
+      margin: 16px 0 24px;
+      padding: 18px 20px;
+      overflow: auto;
+      border: 1px solid #ffd3bd;
+      border-radius: 14px;
+      color: #fff7ed;
+      background: linear-gradient(145deg, #172033, #222f48);
+      box-shadow: var(--shadow-sm);
+      font: 13px/1.75 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    }
+    .markdown-body pre code { padding: 0; border: 0; color: inherit; background: none; font: inherit; }
+    .markdown-body blockquote {
+      margin: 18px 0;
+      padding: 13px 16px;
+      border-left: 4px solid var(--orange-500);
+      border-radius: 0 12px 12px 0;
+      color: var(--slate-700);
+      background: var(--orange-50);
+    }
+    .case-tools {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 10px;
+      margin: 12px 0 14px;
+      padding: 13px;
+      border: 1px solid var(--slate-200);
+      border-radius: 13px;
+      background: var(--slate-50);
+    }
+    .case-tools input {
+      flex: 1 1 280px;
+      height: 42px;
+      padding: 0 13px;
+      border: 1px solid var(--slate-300);
+      border-radius: 10px;
+      outline: none;
+    }
+    .case-tools input:focus { border-color: var(--orange-500); box-shadow: 0 0 0 4px rgba(244,91,10,.12); }
+    .case-count { color: var(--orange-700); font-weight: 800; white-space: nowrap; }
+    .testcase-table table { min-width: 1500px; }
+    .testcase-table th:first-child, .testcase-table td:first-child {
+      position: sticky;
+      left: 0;
+      z-index: 1;
+      min-width: 230px;
+      box-shadow: 1px 0 0 var(--slate-200);
+    }
+    .testcase-table th:first-child { z-index: 3; background: var(--navy-900); }
+    .testcase-table td:first-child { background: var(--white); font-weight: 750; }
+    .testcase-table tbody tr:nth-child(even) td:first-child { background: var(--slate-50); }
+    .testcase-table tbody tr:hover td:first-child { background: var(--orange-50); }
+    .source-note {
+      margin-top: 18px;
+      color: var(--slate-500);
+      text-align: center;
+      font-size: 12px;
+    }
+    @media (max-width: 780px) {
+      .doc-toolbar { align-items: flex-start; flex-direction: column; }
+      .markdown-body { padding: 20px 16px; border-radius: 16px; }
+      .markdown-body > h1 { margin: -20px -16px 32px; padding: 40px 20px 34px; }
+      .markdown-body h2 { margin-top: 48px; }
+      .markdown-body table { font-size: 13px; }
+    }
+    @media print {
+      .doc-toolbar, .case-tools { display: none !important; }
+      .markdown-body { padding: 0; border: 0; box-shadow: none; overflow: visible; }
+      .markdown-body > h1 { margin: 0 0 32px; padding: 30px; color: #111; background: #fff; border: 2px solid #111; }
+      .table-wrap { overflow: visible; box-shadow: none; }
+      .markdown-body table { min-width: 0 !important; font-size: 9px; }
+      .markdown-body th { position: static; color: #111; background: #eee; }
+      .testcase-table th:first-child, .testcase-table td:first-child { position: static; }
+    }
+</style>
+</head>
+<body>
+  <a class="skip-link" href="#document">Đi đến nội dung chính</a>
+  <aside class="sidebar" aria-label="Mục lục requirement">
+    <div class="brand">
+      <div class="brand-mark">ics</div>
+      <div><strong>ICS Requirement</strong><small>Teacher Detail</small></div>
+    </div>
+    <div class="nav-title">Nội dung Markdown</div>
+    <nav id="docNav" class="nav"></nav>
+    <div class="sidebar-footer">
+      HTML được render trực tiếp từ Markdown nguồn.<br>
+      <a href="./class_teaching_requirements.md">Mở file Markdown</a>
+    </div>
+  </aside>
+  <main class="doc-shell">
+    <div class="doc-toolbar">
+      <div class="doc-toolbar-left">
+        <span class="sync-badge">Đồng bộ 100% từ Markdown</span>
+        <span class="hash">SHA-256: 1c9524f2cfeb…</span>
+      </div>
+      <div class="doc-toolbar-right">
+        <a class="button ghost small" href="./class_teaching_requirements.md">Xem Markdown</a>
+        <button class="button small" type="button" onclick="window.print()">In / Lưu PDF</button>
+      </div>
+    </div>
+    <article id="document" class="markdown-body" data-source-sha256="1c9524f2cfeb474b6709d32a3de8602c43de46dafcfeaa18dd90745c4384c97b">
+<h1 id="giao-vien-chi-tiet-lop-giang-day">[Giáo viên] Chi tiết lớp — Giảng dạy</h1>
+<blockquote>
+<p>Tài liệu đặc tả nhóm menu <strong>Giảng dạy</strong> trong Chi tiết lớp của role Giáo viên: Bài học, Bài tập và Kiểm tra, Tự học. Gồm menu <strong>Bài học</strong> (dặn dò, bắt đầu buổi, điểm danh, hoàn thành buổi, các tab bài), menu <strong>Bài tập và Kiểm tra</strong> (danh sách, giao/thu hồi bài kiểm tra), <strong>màn chấm bài</strong> dùng chung cho BTVN và Kiểm tra, và menu <strong>Tự học</strong> (chỉ xem). Ảnh danh sách lấy từ Figma; ảnh trạng thái có dữ liệu của Tự học lấy từ requirement Admin; ảnh luồng dạy và màn chấm là UI ICS cũ, dùng làm tham chiếu bố cục và hành vi; tên học viên, điểm và nội dung câu hỏi trong ảnh là dữ liệu mẫu.</p>
+</blockquote>
+<h2 id="1-ui">1. UI</h2>
+<h3 id="bai-hoc-khung-menu-va-danh-sach-bai-hoc">Bài học — Khung menu và Danh sách bài học</h3>
+<p align="center">
+  <a href="./images/lesson-session.png"><img src="./images/lesson-session.png" alt="Menu Bài học — tab Buổi học và Danh sách bài học" width="900" title="Nhấn để xem ảnh gốc"></a><br>
+  <em>Menu Bài học: tab Buổi học của bài đã hoàn thành và Danh sách bài học (Figma GV-LOP-030100) — nhấn để xem ảnh gốc</em>
+</p>
+
+<p><strong>Mô tả:</strong></p>
+<ul>
+<li>Giáo viên của lớp dạy và xem từng bài học của lớp. Vùng trái là bài đang chọn với 5 tab <code>Buổi học</code>, <code>Thông tin</code>, <code>Nội dung</code>, <code>Tài nguyên</code>, <code>Kiến thức</code>; vùng phải là <code>Danh sách bài học</code>.</li>
+</ul>
+<p><strong>Giải thích thành phần:</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Thành phần</th>
+<th>Yêu cầu</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Tiêu đề bài</td>
+<td>Tên bài và mô tả ngắn của bài đang chọn.</td>
+</tr>
+<tr>
+<td>Card bài đã mở</td>
+<td>Số thứ tự; avatar và tên <strong>giáo viên của buổi</strong> (người bấm Bắt đầu buổi học); mốc mở bài <code>HH:mm - dd/MM/yyyy</code>; tên và mô tả bài; vòng <code>BTVN</code> và <code>Đi học</code> theo khu vực Chỉ số % BTVN và Đi học.</td>
+</tr>
+<tr>
+<td>Card bài chưa mở</td>
+<td>Số thứ tự nền xám, tên bài và mô tả chi tiết (các dòng nội dung bài); không có giáo viên, mốc mở và vòng tỷ lệ.</td>
+</tr>
+<tr>
+<td>Chọn bài</td>
+<td>Bấm card để chọn: viền cam, tiêu đề và các tab đổi theo bài. Mặc định chọn bài đầu tiên. Chọn bài hoặc đổi tab không tự bắt đầu buổi.</td>
+</tr>
+<tr>
+<td>Thứ tự</td>
+<td>Theo thứ tự bài của lớp, gồm cả bài học bổ sung; tải toàn bộ, không phân trang.</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Điểm cần lưu ý:</strong></p>
+<ul>
+<li>Trạng thái buổi của bài: <code>Chưa mở</code> (chưa ai bắt đầu), <code>Đang dạy</code> (đã bắt đầu, chưa kết thúc), <code>Chờ hoàn thành</code> (đã kết thúc buổi, chưa hoàn thành ghi chú), <code>Hoàn thành</code>.</li>
+<li>Giáo viên không có nút Thêm bài học, Sửa hoặc Xoá bài học.</li>
+<li>Figma đã có luồng bắt đầu buổi, điểm danh, ghi chú (GV-LOP-030110 → GV-LOP-030170) và 3 khối nhận xét ở bài đã hoàn thành (GV-LOP-030100); ảnh minh hoạ luồng ở các khu vực dưới vẫn là UI ICS cũ.</li>
+</ul>
+<h4 id="testcase-khung-menu-bai-hoc">Testcase — Khung menu Bài học</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 1: Mở menu Bài học</td>
+<td>High</td>
+<td>Smoke</td>
+<td>Flow 1 / REQ19</td>
+<td>Giáo viên</td>
+<td>Lớp có bài đã mở và chưa mở</td>
+<td><strong>Given</strong> mở menu Bài học<br><strong>When</strong> danh sách tải xong<br><strong>Then</strong> chọn sẵn bài đầu tiên, tab Buổi học</td>
+<td>- Card bài đã mở có giáo viên, mốc mở, vòng BTVN/Đi học<br>- Card bài chưa mở không có vòng tỷ lệ</td>
+</tr>
+<tr>
+<td>Case 2: Chọn bài không bắt đầu buổi</td>
+<td>Medium</td>
+<td></td>
+<td>REQ19</td>
+<td>Giáo viên</td>
+<td>Bài chưa mở</td>
+<td><strong>Given</strong> bấm card và đổi các tab<br><strong>When</strong> xem<br><strong>Then</strong> bài vẫn Chưa mở</td>
+<td>- Không tạo buổi, không tạo điểm danh</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="tab-buoi-hoc-dan-do-truoc-buoi-hoc">Tab Buổi học — Dặn dò trước buổi học</h3>
+<p align="center">
+  <a href="./images/lesson-advice-before.png"><img src="./images/lesson-advice-before.png" alt="Dặn dò trước buổi học và nút Bắt đầu buổi học" width="900" title="Nhấn để xem ảnh gốc"></a><br>
+  <em>Bài chưa mở: Dặn dò trước buổi học, checkbox Tôi đã đọc ghi chú và nút Bắt đầu buổi học (UI ICS cũ) — nhấn để xem ảnh gốc</em>
+</p>
+
+<p><strong>Mô tả:</strong></p>
+<ul>
+<li>Chọn bài <code>Chưa mở</code>, tab <code>Buổi học</code> hiển thị <code>Dặn dò trước buổi học</code> và nút <code>Bắt đầu buổi học</code>. Giáo viên phải xác nhận đã đọc dặn dò mới bắt đầu được.</li>
+</ul>
+<p><strong>Giải thích thành phần:</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Thành phần</th>
+<th>Yêu cầu</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Dặn dò trước buổi học</td>
+<td>5 dòng đánh số cố định: (1) Nhắc nhở học viên làm BTVN hàng ngày. Thời gian trên lớp không đủ để nhớ kiến thức 100%, cần có sự luyện tập. (2) App có rất nhiều chức năng hỗ trợ việc học, giáo viên cần cho học viên sử dụng trên lớp ít nhất 3 lần để HV quen việc sử dụng app, từ đó tận dụng app để học và làm bài. (3) Hỏi thăm học viên vắng học hôm trước. Động viên học viên không hiểu thì hỏi ngay. (4) Các phần quan trọng bắt phải dạy. Phần luyện tập lớp có thể luyện ngay ở trên ứng dụng. (5) Giáo viên nhớ bấm record và làm đúng QUY TRÌNH BUỔI HỌC.</td>
+</tr>
+<tr>
+<td>Checkbox <code>Tôi đã đọc ghi chú</code></td>
+<td>Bắt buộc tick.</td>
+</tr>
+<tr>
+<td>Nút <code>Bắt đầu buổi học</code></td>
+<td>Bị khoá cho đến khi tick <code>Tôi đã đọc ghi chú</code>. Bấm thì chạy luồng Chọn lịch dạy và Bắt đầu.</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Điểm cần lưu ý:</strong></p>
+<ul>
+<li>Mọi giáo viên của lớp được bắt đầu buổi; được bắt đầu <strong>bất kỳ bài chưa mở</strong>, không bắt buộc theo thứ tự.</li>
+<li>Chỉ bắt đầu khi lớp ở trạng thái <code>Đang học</code>, hoặc lớp không chính thức (Lớp demo); ngược lại hiển thị Toast <code>Cảnh Báo</code> <code>Lớp chưa bắt đầu!</code>.</li>
+<li>Trạng thái checkbox không lưu; rời tab rồi quay lại phải tick lại.</li>
+<li>Dặn dò không hiển thị ghi chú hay nhận xét của bài trước (<code>Giáo viên nhận xét lớp</code>, ghi chú gửi Support, ghi chú gửi giáo viên tiếp theo); các nội dung này chỉ xem ở tab Buổi học của bài đã hoàn thành.</li>
+</ul>
+<h4 id="testcase-dan-do-truoc-buoi-hoc">Testcase — Dặn dò trước buổi học</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 3: Khoá nút khi chưa đọc</td>
+<td>High</td>
+<td></td>
+<td>Flow 2 / REQ20</td>
+<td>Giáo viên</td>
+<td>Bài chưa mở</td>
+<td><strong>Given</strong> chưa tick <code>Tôi đã đọc ghi chú</code><br><strong>When</strong> xem nút<br><strong>Then</strong> nút Bắt đầu buổi học khoá</td>
+<td>- Tick <code>Tôi đã đọc ghi chú</code> thì nút mở</td>
+</tr>
+<tr>
+<td>Case 4: Không hiển thị ghi chú bài trước</td>
+<td>Medium</td>
+<td></td>
+<td>REQ20</td>
+<td>Giáo viên</td>
+<td>Bài trước đã hoàn thành, có ghi chú gửi giáo viên tiếp theo và gửi Support</td>
+<td><strong>Given</strong> chọn bài chưa mở kế tiếp<br><strong>When</strong> xem Dặn dò trước buổi học<br><strong>Then</strong> chỉ có 5 dòng dặn dò và checkbox <code>Tôi đã đọc ghi chú</code></td>
+<td>- Không có khối ghi chú của bài trước<br>- Tick một checkbox là nút mở</td>
+</tr>
+<tr>
+<td>Case 5: Lớp chưa bắt đầu</td>
+<td>High</td>
+<td></td>
+<td>EX12 / REQ20</td>
+<td>Giáo viên</td>
+<td>Lớp chính thức ở trạng thái Khai giảng</td>
+<td><strong>Given</strong> bấm Bắt đầu buổi học<br><strong>When</strong> hệ thống kiểm tra lớp<br><strong>Then</strong> Toast <code>Lớp chưa bắt đầu!</code></td>
+<td>- Bài vẫn Chưa mở</td>
+</tr>
+<tr>
+<td>Case 6: Bắt đầu bài không theo thứ tự</td>
+<td>Medium</td>
+<td></td>
+<td>REQ20</td>
+<td>Giáo viên</td>
+<td>Bài 3 đã hoàn thành, bài 4 và 5 chưa mở</td>
+<td><strong>Given</strong> chọn bài 5<br><strong>When</strong> bắt đầu<br><strong>Then</strong> bài 5 chuyển Đang dạy</td>
+<td>- Không cần mở bài 4 trước</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="popup-chon-lich-day-va-bat-dau-buoi-hoc">Popup Chọn lịch dạy và Bắt đầu buổi học</h3>
+<p align="center">
+  <a href="./images/lesson-start-popup.png"><img src="./images/lesson-start-popup.png" alt="Popup Bắt đầu buổi học" width="900" title="Nhấn để xem ảnh gốc"></a><br>
+  <em>Popup Bắt đầu buổi học sau khi chọn lịch (UI ICS cũ) — nhấn để xem ảnh gốc</em>
+</p>
+
+<p><strong>Mô tả:</strong></p>
+<ul>
+<li>Khi bắt đầu, giáo viên chọn lịch dạy tuần này để gắn buổi với lịch và tính lương; có thể không chọn lịch, khi đó buổi không được tính lương.</li>
+</ul>
+<p><strong>Giải thích thành phần:</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Thành phần</th>
+<th>Yêu cầu</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Lớp không có lịch tuần này</td>
+<td>Không hiện popup Chọn lịch dạy; hiện popup <code>Bắt đầu buổi học</code> (<code>Nhấn 'Xác nhận' để bắt đầu buổi học!</code>). Bắt đầu xong hiển thị Toast <code>Thông Báo</code> <code>Lớp không có lịch để tính lương buổi này</code>.</td>
+</tr>
+<tr>
+<td>Popup <code>Chọn lịch dạy</code></td>
+<td>Liệt kê lịch tuần hiện tại của lớp do <strong>chính giáo viên</strong> dạy (lịch cố định và linh hoạt): thứ, ngày, giờ. Lịch đã hoàn thành hoặc đã gắn với buổi khác hiển thị nhưng không chọn được; lịch huỷ không hiển thị. Không có lịch của giáo viên thì hiện <code>Không có lịch dạy tuần này</code>.</td>
+</tr>
+<tr>
+<td>Lựa chọn <code>Không chọn lịch</code></td>
+<td>Dòng phụ <code>Buổi học này sẽ không được tính lương</code>.</td>
+</tr>
+<tr>
+<td>Nút <code>Huỷ</code> / <code>Bắt đầu</code></td>
+<td><code>Huỷ</code> đóng popup, không bắt đầu. <code>Bắt đầu</code> cần đã chọn một lịch hoặc <code>Không chọn lịch</code>.</td>
+</tr>
+<tr>
+<td>Popup <code>Bắt đầu buổi học</code></td>
+<td>Sau khi chọn lịch: nội dung <code>Nhấn 'Xác nhận' để bắt đầu buổi học!</code>, nút <code>Huỷ</code> / <code>Xác nhận</code>.</td>
+</tr>
+<tr>
+<td>Bắt đầu với lịch</td>
+<td>Tạo buổi của bài (giáo viên của buổi, mốc mở = thời điểm máy chủ, trạng thái <code>Đang dạy</code>); <strong>gắn</strong> lịch được chọn với buổi và giáo viên, lịch <strong>giữ trạng thái <code>Đang đợi</code></strong> (chưa Hoàn thành, chưa phát sinh lương). Lịch cố định chưa có bản ghi ngày đó thì tạo bản ghi lịch <code>Đang đợi</code> theo giờ của lịch cố định. Chuyển sang Bước 1 — Điểm danh.</td>
+</tr>
+<tr>
+<td>Bắt đầu không chọn lịch</td>
+<td>Tạo buổi như trên, không đổi lịch, không phát sinh lương; Toast <code>Thông Báo</code> <code>Bạn đã bỏ qua chọn lịch, buổi học này sẽ không được tính lương</code>. Chuyển sang Bước 1.</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Điểm cần lưu ý:</strong></p>
+<ul>
+<li>Mỗi bài chỉ có một buổi; hai giáo viên bấm bắt đầu cùng lúc thì chỉ tạo một buổi, người sau vào tiếp tục buổi đã có.</li>
+<li>Lịch đã gắn chỉ chuyển <code>Hoàn thành</code> và <strong>phát sinh lương buổi dạy</strong> khi giáo viên bấm <code>Hoàn thành buổi học</code> ở Bước 2 (khác ICS cũ chuyển ngay khi bắt đầu); lương buổi dạy tính theo lương/giờ của giáo viên ở lớp.</li>
+<li><strong>Ngày tính lương là ngày của lịch đã chọn</strong>, không phải ngày bấm Hoàn thành: chọn lịch ngày 15 để bắt đầu, ngày 20 mới hoàn thành buổi thì lương thuộc ngày 15.</li>
+</ul>
+<h4 id="testcase-chon-lich-day-va-bat-dau">Testcase — Chọn lịch dạy và Bắt đầu</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 7: Bắt đầu với lịch</td>
+<td>High</td>
+<td>Smoke</td>
+<td>Flow 2 / REQ21</td>
+<td>Giáo viên</td>
+<td>Lớp Đang học; giáo viên có lịch Thứ 4 tuần này chưa hoàn thành</td>
+<td><strong>Given</strong> chọn lịch Thứ 4 rồi <code>Bắt đầu</code><br><strong>When</strong> bấm <code>Xác nhận</code><br><strong>Then</strong> bài chuyển Đang dạy, mở Bước 1</td>
+<td>- Lịch Thứ 4 được gắn buổi, vẫn Đang đợi<br>- Chưa phát sinh lương<br>- Card bài có tên giáo viên và mốc mở</td>
+</tr>
+<tr>
+<td>Case 8: Không chọn lịch</td>
+<td>High</td>
+<td></td>
+<td>Flow 2 / REQ21</td>
+<td>Giáo viên</td>
+<td>Có lịch tuần này</td>
+<td><strong>Given</strong> chọn <code>Không chọn lịch</code><br><strong>When</strong> xác nhận bắt đầu<br><strong>Then</strong> Toast <code>Bạn đã bỏ qua chọn lịch, buổi học này sẽ không được tính lương</code></td>
+<td>- Không đổi lịch nào<br>- Không phát sinh lương</td>
+</tr>
+<tr>
+<td>Case 9: Lớp không có lịch tuần này</td>
+<td>Medium</td>
+<td></td>
+<td>REQ21</td>
+<td>Giáo viên</td>
+<td>Lớp không có lịch trong tuần</td>
+<td><strong>Given</strong> bấm Bắt đầu buổi học<br><strong>When</strong> xác nhận<br><strong>Then</strong> Toast <code>Lớp không có lịch để tính lương buổi này</code></td>
+<td>- Không hiện popup Chọn lịch dạy</td>
+</tr>
+<tr>
+<td>Case 10: Lịch đã hoàn thành không chọn được</td>
+<td>Medium</td>
+<td></td>
+<td>REQ21</td>
+<td>Giáo viên</td>
+<td>Lịch Thứ 2 đã Hoàn thành, Thứ 6 chưa</td>
+<td><strong>Given</strong> mở popup Chọn lịch dạy<br><strong>When</strong> xem danh sách<br><strong>Then</strong> Thứ 2 không chọn được</td>
+<td>- Lịch huỷ không hiển thị<br>- Chỉ lịch của chính giáo viên</td>
+</tr>
+<tr>
+<td>Case 11: Huỷ không bắt đầu</td>
+<td>Medium</td>
+<td></td>
+<td>Flow 2</td>
+<td>Giáo viên</td>
+<td>Popup đang mở</td>
+<td><strong>Given</strong> bấm <code>Huỷ</code><br><strong>When</strong> popup đóng<br><strong>Then</strong> bài vẫn Chưa mở</td>
+<td>- Không đổi lịch</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="buoc-1-diem-danh-va-ghi-chu-cho-lop-hoc">Bước 1 — Điểm danh và Ghi chú cho lớp học</h3>
+<p align="center">
+  <a href="./images/lesson-attendance-status.png"><img src="./images/lesson-attendance-status.png" alt="Điểm danh: menu trạng thái và Ghi chú cho lớp học" width="900" title="Nhấn để xem ảnh gốc"></a><br>
+  <em>Bước 1: chọn trạng thái điểm danh từng học viên, Ghi chú cho lớp học và nút Kết thúc buổi học (UI ICS cũ) — nhấn để xem ảnh gốc</em>
+</p>
+
+<p><strong>Mô tả:</strong></p>
+<ul>
+<li>Sau khi bắt đầu, giáo viên điểm danh từng học viên và nhập ghi chú cho cả lớp, rồi <code>Kết thúc buổi học</code>.</li>
+</ul>
+<p><strong>Giải thích thành phần:</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Thành phần</th>
+<th>Yêu cầu</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Tiêu đề</td>
+<td>Icon <code>&lt;</code> và tên bài. Bấm <code>&lt;</code> quay về menu Bài học; dữ liệu đã nhập vẫn giữ trong nháp.</td>
+</tr>
+<tr>
+<td>Danh sách học viên</td>
+<td><code>Số thứ tự</code>, <code>Tên học viên</code>, <code>Trạng thái</code>. Gồm học viên trạng thái <code>Đang học</code>, <code>Dự thính</code>, <code>Hoàn thành</code> của lớp.</td>
+</tr>
+<tr>
+<td><code>Trạng thái</code></td>
+<td>Dropdown, mặc định <code>Chưa điểm danh</code>; chọn một trong <code>Có mặt</code>, <code>Vào trễ</code>, <code>Ra sớm</code>, <code>Vào trễ &amp; Ra sớm</code>, <code>Nghỉ CP</code>, <code>Nghỉ KP</code>. Lựa chọn và giá trị đã chọn chỉ hiển thị chữ, không có icon.</td>
+</tr>
+<tr>
+<td><code>Ghi chú cho lớp học</code></td>
+<td>Ô nhiều dòng, placeholder <code>Điền ghi chú của giáo viên dành cho học viên ( Gửi cho tất cả học viên )</code>. Lưu thành <code>Giáo viên nhận xét lớp</code> của buổi.</td>
+</tr>
+<tr>
+<td>Checkbox <code>Không có dặn dò cho học viên</code></td>
+<td>Tick khi không có ghi chú cho lớp.</td>
+</tr>
+<tr>
+<td>Nút <code>Kết thúc buổi học</code></td>
+<td>Khoá cho đến khi <strong>mọi học viên đã được điểm danh</strong> (không còn <code>Chưa điểm danh</code>) <strong>và</strong> có <code>Ghi chú cho lớp học</code> hoặc đã tick <code>Không có dặn dò cho học viên</code>.</td>
+</tr>
+<tr>
+<td>Popup <code>Kết thúc buổi học</code></td>
+<td>Nội dung <code>Giáo viên vui lòng tắt record Google Meet trước khi kết thúc buổi học</code>, nút <code>Huỷ</code> / <code>Xác nhận</code>.</td>
+</tr>
+<tr>
+<td>Xác nhận</td>
+<td>Lưu điểm danh của từng học viên và nhận xét lớp; buổi chuyển <code>Chờ hoàn thành</code>; cập nhật tỷ lệ Đi học; chuyển sang Bước 2.</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Điểm cần lưu ý:</strong></p>
+<ul>
+<li>Mỗi thay đổi được lưu nháp lên server ngay; đổi máy hoặc giáo viên khác của lớp bấm tiếp tục sẽ thấy đúng phần đã nhập.</li>
+<li>Sau khi Kết thúc buổi học, giáo viên không sửa điểm danh nữa.</li>
+</ul>
+<h4 id="testcase-buoc-1-diem-danh">Testcase — Bước 1 Điểm danh</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 12: Kết thúc buổi học</td>
+<td>High</td>
+<td>Smoke</td>
+<td>Flow 3 / REQ22</td>
+<td>Giáo viên</td>
+<td>Buổi Đang dạy, 2 học viên</td>
+<td><strong>Given</strong> điểm danh <code>Có mặt</code>, <code>Nghỉ CP</code> và nhập ghi chú lớp<br><strong>When</strong> bấm <code>Kết thúc buổi học</code> rồi <code>Xác nhận</code><br><strong>Then</strong> buổi chuyển Chờ hoàn thành, mở Bước 2</td>
+<td>- Điểm danh lưu đúng từng học viên<br>- Ghi chú lớp thành Giáo viên nhận xét lớp</td>
+</tr>
+<tr>
+<td>Case 13: Khoá nút khi còn chưa điểm danh</td>
+<td>High</td>
+<td></td>
+<td>REQ22</td>
+<td>Giáo viên</td>
+<td>1 học viên còn <code>Chưa điểm danh</code></td>
+<td><strong>Given</strong> đã nhập ghi chú lớp<br><strong>When</strong> xem nút<br><strong>Then</strong> <code>Kết thúc buổi học</code> khoá</td>
+<td>- Điểm danh đủ thì nút mở</td>
+</tr>
+<tr>
+<td>Case 14: Không có dặn dò</td>
+<td>Medium</td>
+<td></td>
+<td>REQ22</td>
+<td>Giáo viên</td>
+<td>Đã điểm danh đủ, ghi chú lớp trống</td>
+<td><strong>Given</strong> tick <code>Không có dặn dò cho học viên</code><br><strong>When</strong> xem nút<br><strong>Then</strong> nút mở</td>
+<td>- Nhận xét lớp lưu rỗng</td>
+</tr>
+<tr>
+<td>Case 15: Danh sách học viên điểm danh</td>
+<td>High</td>
+<td></td>
+<td>REQ22</td>
+<td>Giáo viên</td>
+<td>Lớp có học viên Đang học, Dự thính, Hoàn thành, Nghỉ học, Rời lớp, Chỉ xem, Xóa</td>
+<td><strong>Given</strong> mở Bước 1<br><strong>When</strong> danh sách tải<br><strong>Then</strong> chỉ có Đang học, Dự thính, Hoàn thành</td>
+<td>- Không hiển thị Nghỉ học, Rời lớp, Chỉ xem, Xóa</td>
+</tr>
+<tr>
+<td>Case 16: Nháp lưu trên server</td>
+<td>High</td>
+<td></td>
+<td>REQ24</td>
+<td>Giáo viên</td>
+<td>A đã điểm danh 1/2 học viên</td>
+<td><strong>Given</strong> giáo viên B của lớp mở bài và bấm <code>Vào điểm danh</code><br><strong>When</strong> Bước 1 tải<br><strong>Then</strong> B thấy đúng 1 học viên đã điểm danh</td>
+<td>- Giáo viên của buổi vẫn là A</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="buoc-2-ghi-chu-buoi-hoc-va-hoan-thanh">Bước 2 — Ghi chú buổi học và Hoàn thành</h3>
+<p align="center">
+  <a href="./images/lesson-notes-complete.png"><img src="./images/lesson-notes-complete.png" alt="Ghi chú từng học viên, ghi chú gửi Support và giáo viên tiếp theo" width="900" title="Nhấn để xem ảnh gốc"></a><br>
+  <em>Bước 2: ghi chú từng học viên, Ghi chú gửi Support, Ghi chú gửi Giáo viên tiếp theo và nút Hoàn thành buổi học (UI ICS cũ) — nhấn để xem ảnh gốc</em>
+</p>
+
+<p align="center">
+  <a href="./images/lesson-complete-popup.png"><img src="./images/lesson-complete-popup.png" alt="Popup Hoàn thành buổi học" width="760" title="Nhấn để xem ảnh gốc"></a><br>
+  <em>Popup Hoàn thành buổi học (UI ICS cũ) — nhấn để xem ảnh gốc</em>
+</p>
+
+<p><strong>Mô tả:</strong></p>
+<ul>
+<li>Giáo viên ghi chú cho từng học viên, cho Team Support và cho giáo viên tiếp theo, rồi <code>Hoàn thành buổi học</code>.</li>
+</ul>
+<p><strong>Giải thích thành phần:</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Thành phần</th>
+<th>Yêu cầu</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Bảng học viên</td>
+<td><code>Số thứ tự</code>, <code>Tên học viên</code>, <code>Ghi chú cho học viên (Gửi Support)</code>, <code>Ghi chú cho học viên (Gửi học viên)</code>. Hai ô nhập không bắt buộc, placeholder <code>Nhập ghi chú mô tả vào đây</code>.</td>
+</tr>
+<tr>
+<td><code>Ghi chú của Giáo viên gửi cho Support</code></td>
+<td>Ô nhiều dòng, placeholder <code>Điền ghi chú cho Team Support...</code>; checkbox <code>Không có dặn dò cho Team Support</code>.</td>
+</tr>
+<tr>
+<td><code>Ghi chú của Giáo viên gửi cho Giáo viên tiếp theo</code></td>
+<td>Ô nhiều dòng, placeholder <code>Điền ghi chú cho giáo viên tiếp theo...</code>; checkbox <code>Không có dặn dò cho giáo viên</code>.</td>
+</tr>
+<tr>
+<td>Nút <code>Hoàn thành buổi học</code></td>
+<td>Khoá cho đến khi mỗi khối ghi chú Support và giáo viên tiếp theo có nội dung hoặc đã tick checkbox tương ứng.</td>
+</tr>
+<tr>
+<td>Popup <code>Hoàn thành buổi học</code></td>
+<td>Nội dung <code>Giáo viên vui lòng kiểm tra các ghi chú và tắt record Google Meet trước khi hoàn thành buổi học</code>, nút <code>Huỷ</code> / <code>Xác nhận</code>.</td>
+</tr>
+<tr>
+<td>Xác nhận</td>
+<td>Lưu ghi chú từng học viên, ghi chú gửi Support, ghi chú gửi giáo viên tiếp theo; buổi chuyển <code>Hoàn thành</code>; <strong>lịch đã gắn lúc bắt đầu (nếu có) chuyển <code>Hoàn thành</code> và phát sinh lương buổi dạy cho giáo viên của buổi, ngày tính lương là ngày của lịch</strong>; xoá nháp; màn hiển thị <code>Buổi học đã kết thúc</code>.</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Điểm cần lưu ý:</strong></p>
+<ul>
+<li>Ghi chú gửi giáo viên tiếp theo, gửi Support và nhận xét lớp hiển thị chỉ đọc ở tab Buổi học của chính bài này khi đã hoàn thành; không hiển thị ở Dặn dò trước buổi học của bài kế tiếp.</li>
+<li>Sau khi Hoàn thành, giáo viên chỉ xem; không sửa điểm danh, nhận xét hoặc ghi chú.</li>
+<li>Mỗi thay đổi lưu nháp lên server như Bước 1.</li>
+</ul>
+<h4 id="testcase-buoc-2-hoan-thanh-buoi-hoc">Testcase — Bước 2 Hoàn thành buổi học</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 17: Hoàn thành buổi học</td>
+<td>High</td>
+<td>Smoke</td>
+<td>Flow 4 / REQ23</td>
+<td>Giáo viên</td>
+<td>Buổi Chờ hoàn thành</td>
+<td><strong>Given</strong> nhập ghi chú Support, tick <code>Không có dặn dò cho giáo viên</code><br><strong>When</strong> bấm <code>Hoàn thành buổi học</code> rồi <code>Xác nhận</code><br><strong>Then</strong> buổi Hoàn thành, hiện <code>Buổi học đã kết thúc</code></td>
+<td>- Ghi chú từng học viên lưu đúng<br>- Nháp bị xoá<br>- Lịch đã gắn chuyển Hoàn thành, phát sinh lương một lần, ngày lương = ngày lịch (chọn lịch ngày 15, hoàn thành ngày 20 → lương ngày 15)</td>
+</tr>
+<tr>
+<td>Case 18: Khoá nút khi thiếu ghi chú</td>
+<td>High</td>
+<td></td>
+<td>REQ23</td>
+<td>Giáo viên</td>
+<td>Chưa nhập và chưa tick khối giáo viên tiếp theo</td>
+<td><strong>Given</strong> đã nhập ghi chú Support<br><strong>When</strong> xem nút<br><strong>Then</strong> <code>Hoàn thành buổi học</code> khoá</td>
+<td>- Ghi chú từng học viên không bắt buộc</td>
+</tr>
+<tr>
+<td>Case 19: Ghi chú hiển thị ở bài đã hoàn thành</td>
+<td>High</td>
+<td></td>
+<td>REQ20 / REQ23 / REQ25</td>
+<td>Giáo viên</td>
+<td>Bài 4 hoàn thành có ghi chú gửi giáo viên tiếp theo và gửi Support</td>
+<td><strong>Given</strong> mở bài 4 rồi mở bài 5 chưa mở<br><strong>When</strong> xem tab Buổi học<br><strong>Then</strong> bài 4 hiện các khối ghi chú chỉ đọc; Dặn dò bài 5 không có ghi chú của bài 4</td>
+<td>- Không lấy ghi chú bài khác</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="tab-buoi-hoc-bai-dang-day-va-cho-hoan-thanh">Tab Buổi học — Bài đang dạy và chờ hoàn thành</h3>
+<p><strong>Mô tả:</strong></p>
+<ul>
+<li>Bài đã bắt đầu nhưng chưa hoàn thành: tab <code>Buổi học</code> hiển thị <code>Bài học đã mở</code> và nút tiếp tục.</li>
+</ul>
+<p><strong>Giải thích thành phần:</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Thành phần</th>
+<th>Yêu cầu</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Bài <code>Đang dạy</code></td>
+<td>Nút <code>Vào điểm danh</code>; bấm mở popup <code>Tiếp tục buổi học</code> (<code>Nhấn 'Xác nhận' để tiếp tục buổi học!</code>), xác nhận vào Bước 1 với nháp hiện có.</td>
+</tr>
+<tr>
+<td>Bài <code>Chờ hoàn thành</code></td>
+<td>Nút <code>Hoàn thành buổi học</code>; bấm vào Bước 2 với nháp hiện có.</td>
+</tr>
+<tr>
+<td>Người tiếp tục</td>
+<td>Mọi giáo viên của lớp; giáo viên của buổi vẫn là người đã bấm Bắt đầu.</td>
+</tr>
+</tbody>
+</table></div>
+<h4 id="testcase-tiep-tuc-buoi-hoc">Testcase — Tiếp tục buổi học</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 20: Tiếp tục buổi Đang dạy</td>
+<td>High</td>
+<td></td>
+<td>Flow 3 / REQ24</td>
+<td>Giáo viên</td>
+<td>Bài Đang dạy</td>
+<td><strong>Given</strong> bấm <code>Vào điểm danh</code><br><strong>When</strong> xác nhận popup Tiếp tục buổi học<br><strong>Then</strong> mở Bước 1 với dữ liệu nháp</td>
+<td>- Không tạo buổi mới<br>- Không chọn lịch lại</td>
+</tr>
+<tr>
+<td>Case 21: Tiếp tục buổi Chờ hoàn thành</td>
+<td>Medium</td>
+<td></td>
+<td>Flow 4 / REQ24</td>
+<td>Giáo viên</td>
+<td>Bài Chờ hoàn thành</td>
+<td><strong>Given</strong> bấm <code>Hoàn thành buổi học</code><br><strong>When</strong> màn mở<br><strong>Then</strong> vào Bước 2</td>
+<td>- Không sửa được điểm danh</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="tab-buoi-hoc-bai-da-hoan-thanh">Tab Buổi học — Bài đã hoàn thành</h3>
+<p align="center">
+  <a href="./images/lesson-session-completed.png"><img src="./images/lesson-session-completed.png" alt="Bài đã hoàn thành: nhận xét lớp, ghi chú và bảng học viên" width="900" title="Nhấn để xem ảnh gốc"></a><br>
+  <em>Bài đã hoàn thành: Giáo viên nhận xét lớp, Ghi chú gửi Support, Ghi chú gửi Giáo viên tiếp theo và bảng học viên (UI ICS cũ) — nhấn để xem ảnh gốc</em>
+</p>
+
+<p><strong>Mô tả:</strong></p>
+<ul>
+<li>Bài <code>Hoàn thành</code>: tab <code>Buổi học</code> hiển thị kết quả buổi, chỉ xem.</li>
+</ul>
+<p><strong>Giải thích thành phần:</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Thành phần</th>
+<th>Yêu cầu</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Giáo viên nhận xét lớp</code></td>
+<td>Ghi chú cho lớp học đã nhập ở Bước 1, chỉ đọc.</td>
+</tr>
+<tr>
+<td><code>Ghi chú của Giáo viên gửi cho Support</code></td>
+<td>Chỉ đọc.</td>
+</tr>
+<tr>
+<td><code>Ghi chú của Giáo viên gửi cho Giáo viên tiếp theo</code></td>
+<td>Chỉ đọc.</td>
+</tr>
+<tr>
+<td>Bảng học viên</td>
+<td><code>Số thứ tự</code>, <code>Họ và tên</code>, <code>Đi học</code> (icon trạng thái điểm danh theo khu vực Icon trạng thái điểm danh, hover hiện tên trạng thái), <code>BTVN</code> (<code>Chưa nộp</code> / <code>Chưa chấm</code> / điểm đã chấm), <code>Ghi chú</code> (icon).</td>
+</tr>
+<tr>
+<td>Icon <code>Ghi chú</code></td>
+<td>Mở popup <code>Ghi chú</code> hai vùng chỉ đọc <code>Ghi chú từ Giáo viên cho Học viên</code> và <code>Ghi chú từ Giáo viên cho Team Support</code> của đúng học viên ở bài; icon mờ khi không có ghi chú.</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Điểm cần lưu ý:</strong></p>
+<ul>
+<li>Giáo viên không sửa điểm danh, BTVN hoặc ghi chú tại đây; sửa điểm danh thuộc Admin, Class Handler, Support theo requirement Admin.</li>
+<li>Bấm BTVN hoặc điểm không mở màn chấm.</li>
+</ul>
+<h4 id="testcase-bai-da-hoan-thanh">Testcase — Bài đã hoàn thành</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 22: Xem kết quả buổi</td>
+<td>High</td>
+<td></td>
+<td>REQ25</td>
+<td>Giáo viên</td>
+<td>Bài Hoàn thành có ghi chú và điểm danh</td>
+<td><strong>Given</strong> chọn bài<br><strong>When</strong> tab Buổi học tải<br><strong>Then</strong> hiện 3 khối ghi chú và bảng học viên</td>
+<td>- Mọi phần chỉ đọc<br>- Popup Ghi chú đúng học viên</td>
+</tr>
+<tr>
+<td>Case 23: Không sửa sau hoàn thành</td>
+<td>High</td>
+<td></td>
+<td>EX13 / REQ25</td>
+<td>Giáo viên</td>
+<td>Bài Hoàn thành</td>
+<td><strong>Given</strong> gửi request sửa điểm danh hoặc ghi chú<br><strong>When</strong> backend kiểm tra<br><strong>Then</strong> bị từ chối</td>
+<td>- Dữ liệu giữ nguyên</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="icon-trang-thai-diem-danh">Icon trạng thái điểm danh</h3>
+<p align="center">
+  <a href="../../management_requirement/class_management/images/attendance-status-icons.png"><img src="../../management_requirement/class_management/images/attendance-status-icons.png" alt="Bộ icon trạng thái điểm danh" width="300" title="Nhấn để xem ảnh gốc"></a><br>
+  <em>Bộ icon `Trạng thái đi học` (Figma component 2456:110608) — nhấn để xem ảnh gốc</em>
+</p>
+
+<p><strong>Mô tả:</strong></p>
+<ul>
+<li>Bộ icon dùng chung cho mọi bảng hiển thị điểm danh: cột <code>Đi học</code> của bảng học viên ở tab Buổi học (bài đã hoàn thành, Figma GV-LOP-030100) và cột <code>Trạng thái</code> ở bảng bài học của <a href="./class_overview_requirements.md">Tổng quan</a>.</li>
+</ul>
+<p><strong>Giải thích thành phần:</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Trạng thái</th>
+<th>Icon</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Có mặt</code></td>
+<td>Ô viền xanh lá, dấu tick trắng nền xanh lá.</td>
+</tr>
+<tr>
+<td><code>Vào trễ</code></td>
+<td>Ô viền cam, lịch có dấu <code>!</code> màu cam.</td>
+</tr>
+<tr>
+<td><code>Ra sớm</code></td>
+<td>Ô viền cam, đồng hồ màu cam.</td>
+</tr>
+<tr>
+<td><code>Vào trễ &amp; Ra sớm</code></td>
+<td>Ô viền đỏ, đồng hồ có dấu <code>!</code> màu đỏ.</td>
+</tr>
+<tr>
+<td><code>Nghỉ CP</code> (Nghỉ có phép)</td>
+<td>Ô viền cam, lịch có bút màu cam.</td>
+</tr>
+<tr>
+<td><code>Nghỉ KP</code> (Nghỉ không phép)</td>
+<td>Ô viền đỏ, biểu tượng cấm màu đỏ.</td>
+</tr>
+<tr>
+<td><code>Chưa điểm danh</code></td>
+<td>Ô viền đỏ, lịch có dấu <code>x</code> màu đỏ.</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Điểm cần lưu ý:</strong></p>
+<ul>
+<li>Hover icon hiển thị tên trạng thái; mỗi học viên ở một bài chỉ có một icon.</li>
+<li>Dropdown điểm danh ở Bước 1 chỉ hiển thị chữ, không dùng icon.</li>
+<li>Icon chỉ để xem; bấm icon không mở menu sửa điểm danh với role Giáo viên.</li>
+</ul>
+<h4 id="testcase-icon-trang-thai-diem-danh">Testcase — Icon trạng thái điểm danh</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 24: Icon đúng trạng thái</td>
+<td>High</td>
+<td></td>
+<td>REQ30</td>
+<td>Giáo viên</td>
+<td>Bài Hoàn thành có học viên ở đủ 7 trạng thái điểm danh</td>
+<td><strong>Given</strong> xem bảng học viên tab Buổi học<br><strong>When</strong> render cột Đi học và hover<br><strong>Then</strong> mỗi học viên đúng icon và tên trạng thái theo bảng</td>
+<td>- Vào trễ khác Vào trễ &amp; Ra sớm<br>- Chưa điểm danh dùng icon lịch dấu x</td>
+</tr>
+<tr>
+<td>Case 25: Dropdown Bước 1 chỉ chữ</td>
+<td>Medium</td>
+<td></td>
+<td>REQ22 / REQ30</td>
+<td>Giáo viên</td>
+<td>Buổi Đang dạy</td>
+<td><strong>Given</strong> mở dropdown Trạng thái ở Bước 1<br><strong>When</strong> xem các lựa chọn<br><strong>Then</strong> chỉ có chữ, không có icon</td>
+<td>- Giá trị đã chọn cũng chỉ hiển thị chữ</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="tab-thong-tin-noi-dung-va-kien-thuc">Tab Thông tin, Nội dung và Kiến thức</h3>
+<p align="center">
+  <a href="./images/lesson-information.png"><img src="./images/lesson-information.png" alt="Bài học — Tab Thông tin" width="900" title="Nhấn để xem ảnh gốc"></a><br>
+  <em>Tab Thông tin chỉ đọc (Figma GV-LOP-030200) — nhấn để xem ảnh gốc</em>
+</p>
+
+<p><strong>Mô tả:</strong></p>
+<ul>
+<li>Ba tab hiển thị dữ liệu định nghĩa bài học, chỉ đọc, giống Admin.</li>
+</ul>
+<p><strong>Giải thích thành phần:</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tab</th>
+<th>Yêu cầu</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Thông tin</code></td>
+<td><code>Tiêu đề</code>, <code>Mô tả</code> (giữ xuống dòng), <code>Kỹ năng</code> (tag và số trong ngoặc do Curriculum Development Handler thiết lập). Ô xám chỉ đọc; không thêm/gỡ kỹ năng. Không có dữ liệu thì để trống theo dữ liệu thật.</td>
+</tr>
+<tr>
+<td><code>Nội dung</code></td>
+<td>Các khối nội dung/kế hoạch bài theo thứ tự đã lưu ở nguồn (vd 5p Sửa BTVN, Học từ mới, Ngữ pháp...), chỉ đọc. Không có dữ liệu thì hiện <code>Không có dữ liệu!</code> (ảnh Figma GV-LOP-030300 là trạng thái này).</td>
+</tr>
+<tr>
+<td><code>Kiến thức</code></td>
+<td>Để trống, hiện <code>Không có dữ liệu!</code> (Figma GV-LOP-030500).</td>
+</tr>
+</tbody>
+</table></div>
+<h4 id="testcase-thong-tin-noi-dung-kien-thuc">Testcase — Thông tin, Nội dung, Kiến thức</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 26: Thông tin đúng nguồn</td>
+<td>Medium</td>
+<td></td>
+<td>REQ26</td>
+<td>Giáo viên</td>
+<td>Bài có tiêu đề, mô tả, kỹ năng</td>
+<td><strong>Given</strong> chọn tab Thông tin<br><strong>When</strong> tải<br><strong>Then</strong> đúng dữ liệu bài nguồn</td>
+<td>- Không chỉnh sửa được</td>
+</tr>
+<tr>
+<td>Case 27: Nội dung theo thứ tự</td>
+<td>Medium</td>
+<td></td>
+<td>REQ26</td>
+<td>Giáo viên</td>
+<td>Bài có nhiều khối nội dung</td>
+<td><strong>Given</strong> chọn tab Nội dung<br><strong>When</strong> tải<br><strong>Then</strong> các khối đúng thứ tự</td>
+<td>- Bài không có nội dung hiện <code>Không có dữ liệu!</code></td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="tab-tai-nguyen-khoa-tai-theo-bai">Tab Tài nguyên — Khoá tải theo bài</h3>
+<p align="center">
+  <a href="./images/lesson-resources.png"><img src="./images/lesson-resources.png" alt="Bài học — Tab Tài nguyên" width="900" title="Nhấn để xem ảnh gốc"></a><br>
+  <em>Tab Tài nguyên: Bài giảng và Tài nguyên khác (Figma GV-LOP-030400) — nhấn để xem ảnh gốc</em>
+</p>
+
+<p><strong>Mô tả:</strong></p>
+<ul>
+<li>Hai nhóm <code>Bài giảng</code> và <code>Tài nguyên khác</code>; bấm file để tải ngay. Giáo viên <strong>chỉ tải được tài nguyên của 3 bài đã mở có số thứ tự lớn nhất</strong>.</li>
+</ul>
+<p><strong>Giải thích thành phần:</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Thành phần</th>
+<th>Yêu cầu</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Nhóm <code>Bài giảng</code> / <code>Tài nguyên khác</code></td>
+<td>Header có icon <code>⌃</code> thu gọn/mở; card file có tên và icon theo loại (video, PPT, Docs, Excel, âm thanh).</td>
+</tr>
+<tr>
+<td>Bài được tải</td>
+<td>Trong các bài đã mở (Đang dạy, Chờ hoàn thành, Hoàn thành), lấy 3 bài có số thứ tự lớn nhất. Bấm card tải ngay file gốc, không mở xem trước.</td>
+</tr>
+<tr>
+<td>Bài bị khoá</td>
+<td>Bài đã mở trước 3 bài trên, hoặc bài chưa mở: vẫn thấy danh sách file, mỗi card có icon khoá; bấm không tải, hiện Toast <code>Thông Báo</code> <code>Chỉ tải được tài nguyên của 3 bài đã mở gần nhất</code>. Áp dụng cả hai nhóm.</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Điểm cần lưu ý:</strong></p>
+<ul>
+<li>Ví dụ lớp đã mở bài 1–6: tải được bài 4, 5, 6; bài 1–3 và bài 7 trở đi bị khoá. Mở thêm bài 7 thì bài 4 bị khoá.</li>
+<li>Backend kiểm tra khoá khi tải bằng URL/request trực tiếp.</li>
+</ul>
+<h4 id="testcase-tai-nguyen">Testcase — Tài nguyên</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 28: Tải tài nguyên bài được phép</td>
+<td>High</td>
+<td></td>
+<td>REQ27</td>
+<td>Giáo viên</td>
+<td>Đã mở bài 1–6</td>
+<td><strong>Given</strong> chọn bài 5, tab Tài nguyên<br><strong>When</strong> bấm file PPT<br><strong>Then</strong> tải ngay file gốc</td>
+<td>- Không mở xem trước</td>
+</tr>
+<tr>
+<td>Case 29: Bài bị khoá</td>
+<td>High</td>
+<td></td>
+<td>EX14 / REQ27</td>
+<td>Giáo viên</td>
+<td>Đã mở bài 1–6</td>
+<td><strong>Given</strong> chọn bài 2 và bài 7<br><strong>When</strong> bấm file<br><strong>Then</strong> không tải, Toast <code>Chỉ tải được tài nguyên của 3 bài đã mở gần nhất</code></td>
+<td>- Card có icon khoá<br>- Request trực tiếp bị từ chối</td>
+</tr>
+<tr>
+<td>Case 30: Khoá dịch theo bài mới mở</td>
+<td>Medium</td>
+<td></td>
+<td>REQ27</td>
+<td>Giáo viên</td>
+<td>Đã mở bài 1–6</td>
+<td><strong>Given</strong> bắt đầu bài 7<br><strong>When</strong> quay lại bài 4<br><strong>Then</strong> bài 4 bị khoá</td>
+<td>- Bài 5, 6, 7 tải được</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="chi-so-btvn-va-di-hoc-theo-bai">Chỉ số % BTVN và Đi học theo bài</h3>
+<p><strong>Mô tả:</strong></p>
+<ul>
+<li>Hai vòng trên card bài đã mở, tính theo số học viên của đúng bài, giống Admin.</li>
+</ul>
+<p><strong>Giải thích thành phần:</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Thành phần</th>
+<th>Yêu cầu</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Tập tính</td>
+<td>Học viên <code>Đang học</code> hoặc <code>Dự thính</code> tại thời điểm của bài; đổi trạng thái ở bài sau không loại học viên khỏi bài trước.</td>
+</tr>
+<tr>
+<td>% BTVN</td>
+<td><code>Số học viên đã nộp BTVN của bài / Số học viên trong tập × 100</code>. Nộp chưa chấm hoặc điểm 0 vẫn tính đã nộp; một học viên nộp nhiều lần tính một người.</td>
+</tr>
+<tr>
+<td>% Đi học</td>
+<td><code>Số học viên Có mặt, Vào trễ, Ra sớm, Vào trễ &amp; Ra sớm / Số học viên trong tập đã được điểm danh × 100</code>. Nghỉ CP/KP vẫn ở mẫu số; Chưa điểm danh bị loại khỏi cả tử và mẫu.</td>
+</tr>
+<tr>
+<td>Làm tròn</td>
+<td>Chỉ làm tròn kết quả cuối; vòng hiển thị số nguyên <code>%</code>.</td>
+</tr>
+<tr>
+<td>Mẫu số bằng 0</td>
+<td>Để trống, không chia 0; tử số 0 với mẫu số &gt; 0 là <code>0%</code>.</td>
+</tr>
+</tbody>
+</table></div>
+<h4 id="testcase-chi-so-btvn-va-di-hoc">Testcase — Chỉ số % BTVN và Đi học</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 31: 7/10 nộp</td>
+<td>High</td>
+<td></td>
+<td>REQ28</td>
+<td>Giáo viên</td>
+<td>10 học viên trong tập, 7 đã nộp</td>
+<td><strong>Given</strong> xem card bài<br><strong>When</strong> tính BTVN<br><strong>Then</strong> 70%</td>
+<td>- Không đợi chấm</td>
+</tr>
+<tr>
+<td>Case 32: Nghỉ CP/KP trong mẫu</td>
+<td>High</td>
+<td></td>
+<td>REQ28</td>
+<td>Giáo viên</td>
+<td>10 học viên: 8 đi học, 1 Nghỉ CP, 1 Nghỉ KP</td>
+<td><strong>Given</strong> xem card bài<br><strong>When</strong> tính Đi học<br><strong>Then</strong> 80%</td>
+<td>- Không bỏ CP/KP khỏi mẫu</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="bai-tap-va-kiem-tra-khung-menu">Bài tập và Kiểm tra — Khung menu</h3>
+<p align="center">
+  <a href="./images/homework-list.png"><img src="./images/homework-list.png" alt="Menu Bài tập và Kiểm tra — Tab BTVN" width="900" title="Nhấn để xem ảnh gốc"></a><br>
+  <em>Menu Bài tập và Kiểm tra — Tab BTVN (Figma GV-LOP-040100) — nhấn để xem ảnh gốc</em>
+</p>
+
+<p><strong>Mô tả:</strong></p>
+<ul>
+<li>Giáo viên của lớp xem kết quả BTVN và Kiểm tra của học viên. <code>Giáo viên phụ trách chính</code> còn được giao/thu hồi bài kiểm tra và vào màn chấm bài.</li>
+<li>Phía trên là khối <code>Tổng Quan</code>; vùng trái là tên bài đang chọn và bảng kết quả học viên; vùng phải là tab <code>BTVN</code> / <code>Kiểm Tra</code>, ô <code>Tìm kiếm</code> và danh sách card bài.</li>
+</ul>
+<p><strong>Giải thích thành phần:</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Thành phần</th>
+<th>Yêu cầu</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Tab <code>BTVN</code> / <code>Kiểm Tra</code></td>
+<td>Hai danh sách riêng, mỗi tab có badge riêng. Chuyển tab hiển thị đúng loại bài, không trộn điểm hoặc bài nộp giữa hai loại.</td>
+</tr>
+<tr>
+<td>Ô <code>Tìm kiếm</code></td>
+<td>Tìm theo tên bài trong danh sách card của tab đang mở; không tìm theo tên học viên; không đổi số liệu khối Tổng Quan.</td>
+</tr>
+<tr>
+<td>Card bài</td>
+<td>Bấm card để chọn bài: viền cam, tên bài ở vùng trái và bảng kết quả đổi theo bài. Bấm card không mở màn chấm.</td>
+</tr>
+<tr>
+<td>Nút điều hướng chấm bài</td>
+<td>Trên card bài đã giao có học viên nộp; chỉ hiển thị với <code>Giáo viên phụ trách chính</code>; mở màn chấm bài (xem khu vực Màn chấm bài).</td>
+</tr>
+<tr>
+<td>Danh sách BTVN</td>
+<td>Mỗi bài học của lớp có một BTVN (liên kết 1–1), gồm cả bài học bổ sung; không gồm bài Tự học. BTVN tự giao cho học viên khi bài học mở; <strong>không có nút <code>Giao bài</code> / <code>Thu hồi</code></strong> ở tab BTVN.</td>
+</tr>
+<tr>
+<td>Danh sách Kiểm tra</td>
+<td>Bài kiểm tra của khoá học gắn với lớp và bài kiểm tra bổ sung do Admin thêm cho lớp. Giáo viên <strong>không có</strong> nút Thêm bài kiểm tra; <code>Giáo viên phụ trách chính</code> chỉ <code>Giao bài</code> và <code>Thu hồi</code> bài kiểm tra. Sắp theo ngày giao tăng dần; bài chưa giao xếp sau, theo thứ tự bài.</td>
+</tr>
+<tr>
+<td>Tải dữ liệu</td>
+<td>Tải toàn bộ bài và học viên hợp lệ, không phân trang. Loading/rỗng/lỗi hiển thị riêng từng vùng, lỗi có <code>Thử lại</code>.</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Điểm cần lưu ý:</strong></p>
+<ul>
+<li>Giáo viên khác của lớp (không phải phụ trách chính) chỉ xem: không có nút điều hướng chấm, <code>Giao bài</code>, <code>Thu hồi</code>; bấm dòng học viên không điều hướng.</li>
+<li>Giáo viên không có nút reset bài làm của học viên (reset là thao tác của Admin, Class Handler, Support).</li>
+<li>Mặc định mở tab <code>BTVN</code> và chọn card đầu tiên của danh sách.</li>
+<li>Khác Figma GV-LOP-040100: Figma chưa có nút điều hướng chấm bài trên card; requirement bổ sung nút này cho <code>Giáo viên phụ trách chính</code>.</li>
+</ul>
+<h4 id="testcase-khung-menu-bai-tap-va-kiem-tra">Testcase — Khung menu Bài tập và Kiểm tra</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 33: Mở menu và chọn bài</td>
+<td>High</td>
+<td>Smoke</td>
+<td>Flow 12 / REQ13</td>
+<td>Giáo viên</td>
+<td>Lớp có BTVN và Kiểm tra có kết quả</td>
+<td><strong>Given</strong> mở menu Bài tập và Kiểm tra<br><strong>When</strong> chuyển tab và bấm card<br><strong>Then</strong> tên bài và bảng kết quả đổi đúng bài</td>
+<td>- Mặc định tab BTVN, card đầu tiên<br>- Bấm card không mở màn chấm</td>
+</tr>
+<tr>
+<td>Case 34: Danh sách BTVN và Kiểm tra đúng nguồn</td>
+<td>High</td>
+<td></td>
+<td>REQ13</td>
+<td>Giáo viên</td>
+<td>Lớp có 8 bài học (1 bài bổ sung), 20 bài Tự học, khoá có 6 bài kiểm tra, Admin thêm 1 bài kiểm tra</td>
+<td><strong>Given</strong> mở hai tab<br><strong>When</strong> danh sách tải xong<br><strong>Then</strong> BTVN 8 card, Kiểm tra 7 card</td>
+<td>- Không cộng bài Tự học<br>- Không có nút Thêm bài kiểm tra<br>- Tab BTVN không có nút Giao bài / Thu hồi</td>
+</tr>
+<tr>
+<td>Case 35: Tìm theo tên bài</td>
+<td>Medium</td>
+<td></td>
+<td>REQ13</td>
+<td>Giáo viên</td>
+<td>Tab có nhiều bài</td>
+<td><strong>Given</strong> nhập tên bài<br><strong>When</strong> tìm<br><strong>Then</strong> chỉ còn card khớp tên</td>
+<td>- Không tìm theo tên học viên<br>- Khối Tổng Quan không đổi</td>
+</tr>
+<tr>
+<td>Case 36: Giáo viên không phải phụ trách chính chỉ xem</td>
+<td>High</td>
+<td></td>
+<td>EX01 / Ràng buộc quyền</td>
+<td>Giáo viên</td>
+<td>Giáo viên thuộc lớp, không phải phụ trách chính</td>
+<td><strong>Given</strong> mở menu<br><strong>When</strong> xem card và bảng<br><strong>Then</strong> không có nút điều hướng chấm, Giao bài, Thu hồi</td>
+<td>- Bấm dòng học viên không điều hướng<br>- Vẫn xem đủ kết quả</td>
+</tr>
+<tr>
+<td>Case 37: Lỗi tải dữ liệu</td>
+<td>Medium</td>
+<td></td>
+<td>REQ13</td>
+<td>Giáo viên</td>
+<td>Mất kết nối khi mở menu</td>
+<td><strong>Given</strong> mở menu<br><strong>When</strong> tải thất bại<br><strong>Then</strong> vùng lỗi có <code>Thử lại</code></td>
+<td>- Không hiển thị Chưa nộp hoặc 0 giả</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="khoi-tong-quan">Khối Tổng Quan</h3>
+<p><strong>Mô tả:</strong></p>
+<ul>
+<li>Sáu thẻ thống kê toàn lớp: <code>Đã Chấm K.Tra</code>, <code>K.Tra Đã Giao</code>, <code>Điểm K.Tra</code>, <code>Đã Chấm BTVN</code>, <code>Tỉ Lệ Làm BTVN</code>, <code>Điểm BTVN</code>. Icon <code>⌃</code> thu gọn hoặc mở khối.</li>
+</ul>
+<p><strong>Giải thích thành phần:</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Thẻ</th>
+<th>Yêu cầu</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Đã Chấm K.Tra</code></td>
+<td>Dạng <code>A/B bài</code>, số có 2 chữ số (vd <code>03/09</code>): A = số bài kiểm tra có trạng thái <code>Đã chấm</code>; B = tổng số bài kiểm tra của lớp.</td>
+</tr>
+<tr>
+<td><code>K.Tra Đã Giao</code></td>
+<td>Dạng <code>A/B bài</code>, số có 2 chữ số: A = số bài kiểm tra đã giao; B = tổng số bài kiểm tra của lớp. Trạng thái giao lấy theo việc giáo viên đã bấm Giao bài, không suy từ việc có người nộp.</td>
+</tr>
+<tr>
+<td><code>Điểm K.Tra</code></td>
+<td>Cộng điểm các bài kiểm tra học viên đã được chấm rồi chia số bài đã chấm; giữ kết quả của học viên đã Rời lớp/Xóa; làm tròn kết quả cuối 1 chữ số thập phân. Chưa nộp/chưa chấm không tham gia; điểm 0 đã chấm vẫn tính. Không có bài đã chấm thì để trống.</td>
+</tr>
+<tr>
+<td><code>Đã Chấm BTVN</code></td>
+<td>Dạng <code>A/B bài</code>, số có 2 chữ số: A = số BTVN có trạng thái <code>Đã chấm</code>; B = tổng số BTVN của lớp. Không cộng Tự học hoặc Kiểm tra.</td>
+</tr>
+<tr>
+<td><code>Tỉ Lệ Làm BTVN</code></td>
+<td>Chỉ tính trên các bài học đã mở (đang chờ hoặc đã hoàn thành). Trung bình cộng tỷ lệ nộp BTVN của các học viên hợp lệ có dữ liệu, hiển thị <code>%</code>; không có dữ liệu thì để trống. Không dùng tỷ lệ chấm của card thay thế.</td>
+</tr>
+<tr>
+<td><code>Điểm BTVN</code></td>
+<td>Chỉ tính trên các bài học đã mở. Cộng điểm các BTVN học viên đã được chấm rồi chia số bài đã chấm; làm tròn 1 chữ số thập phân; điểm 0 đã chấm vẫn tính; không có bài đã chấm thì để trống.</td>
+</tr>
+<tr>
+<td>Icon <code>⌃</code></td>
+<td>Chỉ thu gọn/mở khối, không đổi dữ liệu.</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Điểm cần lưu ý:</strong></p>
+<ul>
+<li>Sáu thẻ tính trên toàn lớp, không đổi theo card đang chọn hoặc ô tìm kiếm.</li>
+<li>Sau khi chấm, giao hoặc thu hồi bài, các thẻ liên quan cập nhật theo dữ liệu mới.</li>
+</ul>
+<h4 id="testcase-khoi-tong-quan">Testcase — Khối Tổng Quan</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 38: Đủ sáu thẻ phạm vi toàn lớp</td>
+<td>High</td>
+<td></td>
+<td>REQ14</td>
+<td>Giáo viên</td>
+<td>Lớp có nhiều bài khác nhau</td>
+<td><strong>Given</strong> chọn các card khác nhau<br><strong>When</strong> xem khối Tổng Quan<br><strong>Then</strong> sáu thẻ giữ nguyên số liệu toàn lớp</td>
+<td>- Không đổi theo card hoặc tìm kiếm</td>
+</tr>
+<tr>
+<td>Case 39: Điểm trung bình tính cả điểm 0</td>
+<td>High</td>
+<td></td>
+<td>REQ14</td>
+<td>Giáo viên</td>
+<td>Kiểm tra đã chấm điểm 8 và 0; một Chưa nộp, một Chưa chấm</td>
+<td><strong>Given</strong> xem <code>Điểm K.Tra</code><br><strong>When</strong> tổng hợp<br><strong>Then</strong> hiển thị 4.0</td>
+<td>- Chưa nộp/chưa chấm không vào mẫu<br>- Không trộn BTVN</td>
+</tr>
+<tr>
+<td>Case 40: K.Tra Đã Giao theo thao tác giao</td>
+<td>Medium</td>
+<td></td>
+<td>REQ14 / REQ17</td>
+<td>Giáo viên phụ trách chính</td>
+<td>Lớp có 9 bài kiểm tra, đã giao 3</td>
+<td><strong>Given</strong> giao thêm 1 bài<br><strong>When</strong> khối Tổng Quan cập nhật<br><strong>Then</strong> <code>K.Tra Đã Giao</code> là 04/09</td>
+<td>- Thu hồi 1 bài thì về 03/09<br>- <code>Đã Chấm K.Tra</code> vẫn chia cho tổng 09 bài</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="tab-badge-va-card-bai">Tab, badge và card bài</h3>
+<p align="center">
+  <a href="./images/test-list.png"><img src="./images/test-list.png" alt="Tab Kiểm tra với nút Thu hồi và card Chưa giao" width="900" title="Nhấn để xem ảnh gốc"></a><br>
+  <em>Tab Kiểm tra: nút Thu hồi của bài đã giao, card Đã chấm và Chưa giao (Figma GV-LOP-040200) — nhấn để xem ảnh gốc</em>
+</p>
+
+<p><strong>Mô tả:</strong></p>
+<ul>
+<li>Badge cạnh tab là số bài chưa chấm; mỗi card hiển thị số thứ tự, nhãn trạng thái, tên, mô tả, vòng số đã nộp và vòng tỷ lệ chấm.</li>
+</ul>
+<p><strong>Giải thích thành phần:</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Thành phần</th>
+<th>Yêu cầu</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Badge tab</td>
+<td>Số bài của tab có trạng thái <code>Chưa chấm</code>; mỗi bài đếm một lần dù có nhiều bài nộp chưa chấm; bằng 0 thì ẩn.</td>
+</tr>
+<tr>
+<td>Nhãn trạng thái BTVN</td>
+<td><code>Chưa giao</code>: bài học chưa mở. <code>Đang đợi nộp bài</code>: bài đã mở, chưa học viên hợp lệ nào nộp. <code>Chưa chấm</code>: còn bài nộp của học viên hợp lệ chưa có điểm. <code>Đã chấm</code>: mọi bài đã nộp đều có điểm.</td>
+</tr>
+<tr>
+<td>Nhãn trạng thái Kiểm tra</td>
+<td><code>Chưa giao</code>: giáo viên chưa giao. <code>Đang đợi nộp bài</code>: đã giao, chưa có bài nộp. <code>Chưa chấm</code>: còn bài nộp chưa có điểm. <code>Đã chấm</code>: mọi bài đã nộp đều có điểm.</td>
+</tr>
+<tr>
+<td>Vòng số đã nộp</td>
+<td>Dạng <code>S/N</code>: S = số học viên hợp lệ đã nộp; N = tổng học viên hợp lệ của bài (REQ02). Vòng tô theo tỷ lệ S/N. Bài chưa giao không hiển thị.</td>
+</tr>
+<tr>
+<td>Vòng tỷ lệ chấm</td>
+<td><code>C / S × 100</code>, làm tròn số nguyên <code>%</code>: C = số bài đã nộp có điểm, S = số bài đã nộp. S = 0 hiển thị <code>0%</code>. Điểm 0 vẫn tính là đã chấm.</td>
+</tr>
+<tr>
+<td>Mô tả</td>
+<td>Mô tả bài nguồn (nhiều dòng), không thay bằng nội dung bài làm.</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Điểm cần lưu ý:</strong></p>
+<ul>
+<li>Có học viên chưa nộp không ngăn trạng thái <code>Đã chấm</code> khi mọi bài đã nộp đều có điểm.</li>
+<li>Vòng tỷ lệ chấm 100% chỉ nghĩa là mọi bài đã nộp đã chấm, không nghĩa là mọi học viên đã nộp.</li>
+<li>Khác Figma GV-LOP-040200: Figma chưa có frame card <code>Chưa giao</code> đang chọn (xem trước đề) và nút <code>Giao bài</code>; hai thành phần này đặc tả theo ICS cũ.</li>
+<li>Vòng số đã nộp của role Giáo viên tính <code>đã nộp / tổng học viên hợp lệ</code> (theo ICS cũ), khác cách hiển thị <code>đã nộp / chưa nộp</code> của requirement Admin.</li>
+</ul>
+<h4 id="testcase-tab-badge-va-card">Testcase — Tab, badge và card</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 41: Badge đếm bài chưa chấm</td>
+<td>High</td>
+<td></td>
+<td>REQ15</td>
+<td>Giáo viên</td>
+<td>BTVN có 2 bài Chưa chấm, mỗi bài 5 bài nộp chưa chấm</td>
+<td><strong>Given</strong> xem tab BTVN<br><strong>When</strong> tính badge<br><strong>Then</strong> badge là 2</td>
+<td>- Không hiển thị 10<br>- Không cộng bài của tab Kiểm tra</td>
+</tr>
+<tr>
+<td>Case 42: Đủ bốn nhãn trạng thái</td>
+<td>High</td>
+<td></td>
+<td>REQ15</td>
+<td>Giáo viên</td>
+<td>Có bài ở mỗi trạng thái</td>
+<td><strong>Given</strong> xem danh sách<br><strong>When</strong> render card<br><strong>Then</strong> đúng Chưa giao, Đang đợi nộp bài, Chưa chấm, Đã chấm</td>
+<td>- BTVN Chưa giao là bài học chưa mở</td>
+</tr>
+<tr>
+<td>Case 43: Vòng đã nộp trên tổng</td>
+<td>High</td>
+<td></td>
+<td>REQ15</td>
+<td>Giáo viên</td>
+<td>Bài có 14 học viên hợp lệ, 12 đã nộp</td>
+<td><strong>Given</strong> xem card<br><strong>When</strong> tính vòng số đã nộp<br><strong>Then</strong> hiển thị <code>12/14</code></td>
+<td>- Không hiển thị 12/2</td>
+</tr>
+<tr>
+<td>Case 44: Tỷ lệ chấm trên bài đã nộp</td>
+<td>High</td>
+<td></td>
+<td>REQ15</td>
+<td>Giáo viên</td>
+<td>3 học viên đã nộp đều đã chấm, 15 chưa nộp</td>
+<td><strong>Given</strong> xem card<br><strong>When</strong> tính tỷ lệ chấm<br><strong>Then</strong> 100%</td>
+<td>- Không chia cho tổng học viên<br>- S = 0 hiển thị 0%</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="bang-ket-qua-hoc-vien">Bảng kết quả học viên</h3>
+<p><strong>Mô tả:</strong></p>
+<ul>
+<li>Bảng vùng trái của bài đang chọn gồm <code>ĐIỂM SỐ</code>, <code>TÊN HỌC VIÊN</code>, <code>THỜI GIAN LÀM BÀI</code>, <code>NỘP BÀI</code>, <code>SỐ CÂU BỎ QUA</code>.</li>
+</ul>
+<p><strong>Giải thích thành phần:</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Cột</th>
+<th>Yêu cầu</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>ĐIỂM SỐ</code></td>
+<td>Điểm bài đã chấm (REQ07), hiển thị 1 chữ số thập phân; điểm 0 hiển thị <code>0</code>. Đã nộp chưa chấm hoặc chưa nộp thì để trống, không hiển thị 0.</td>
+</tr>
+<tr>
+<td><code>TÊN HỌC VIÊN</code></td>
+<td>Avatar, tên, dòng <code>Học viên</code>. Danh sách là tập học viên hợp lệ của bài (REQ02).</td>
+</tr>
+<tr>
+<td><code>THỜI GIAN LÀM BÀI</code></td>
+<td>Thời gian làm bài trên app dạng <code>HH:mm:ss</code>; vượt 24 giờ hiển thị tối đa <code>23:59:59</code>. Chưa nộp để trống.</td>
+</tr>
+<tr>
+<td><code>NỘP BÀI</code></td>
+<td>Badge <code>Đã nộp</code> (xanh) hoặc <code>Chưa nộp</code> (đỏ).</td>
+</tr>
+<tr>
+<td><code>SỐ CÂU BỎ QUA</code></td>
+<td>Số câu học viên bỏ qua trong bài nộp; 0 hiển thị xám, lớn hơn 0 hiển thị cam. Chưa nộp để trống.</td>
+</tr>
+<tr>
+<td>Bấm dòng</td>
+<td>Dòng <code>Đã nộp</code>: <code>Giáo viên phụ trách chính</code> mở màn chấm bài, lọc sẵn học viên đó. Dòng <code>Chưa nộp</code> hoặc giáo viên khác: không điều hướng.</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Điểm cần lưu ý:</strong></p>
+<ul>
+<li><code>Đã nộp</code> và có điểm là hai mức khác nhau: đã nộp chưa chấm thì cột điểm trống.</li>
+<li>Kết quả của học viên đã Rời lớp/Xóa vẫn được giữ trong thống kê điểm; dòng của học viên chỉ hiển thị khi học viên thuộc tập hợp lệ của bài.</li>
+<li>Bài BTVN chưa mở hiển thị <code>Bài học chưa mở</code> thay cho bảng.</li>
+</ul>
+<h4 id="testcase-bang-ket-qua-hoc-vien">Testcase — Bảng kết quả học viên</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 45: Ba trạng thái dòng</td>
+<td>High</td>
+<td>Smoke</td>
+<td>Flow 12 / REQ16</td>
+<td>Giáo viên</td>
+<td>A chưa nộp, B nộp chưa chấm, C được chấm 0</td>
+<td><strong>Given</strong> xem bảng<br><strong>When</strong> render<br><strong>Then</strong> A Chưa nộp, B Đã nộp không điểm, C Đã nộp điểm 0</td>
+<td>- Không hiển thị 0 cho B<br>- Không ẩn điểm 0 của C</td>
+</tr>
+<tr>
+<td>Case 46: Thời gian vượt 24 giờ</td>
+<td>Medium</td>
+<td></td>
+<td>REQ16</td>
+<td>Giáo viên</td>
+<td>Bài nộp có thời gian 25:30:00</td>
+<td><strong>Given</strong> xem cột thời gian<br><strong>When</strong> định dạng<br><strong>Then</strong> hiển thị 23:59:59</td>
+<td>- Dữ liệu gốc giữ nguyên</td>
+</tr>
+<tr>
+<td>Case 47: BTVN bài chưa mở</td>
+<td>Medium</td>
+<td></td>
+<td>REQ16</td>
+<td>Giáo viên</td>
+<td>Bài học chưa mở</td>
+<td><strong>Given</strong> chọn card BTVN của bài<br><strong>When</strong> vùng trái hiển thị<br><strong>Then</strong> hiện <code>Bài học chưa mở</code></td>
+<td>- Không hiển thị bảng Chưa nộp giả</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="kiem-tra-chua-giao-xem-truoc-de-va-giao-bai">Kiểm tra chưa giao — Xem trước đề và Giao bài</h3>
+<p><strong>Mô tả:</strong></p>
+<ul>
+<li>Chọn card Kiểm tra <code>Chưa giao</code>: vùng trái hiển thị <strong>xem trước toàn bộ câu hỏi của đề</strong> để giáo viên xem đề trước khi giao; <code>Giáo viên phụ trách chính</code> có nút <code>Giao bài</code> cạnh tên bài (vị trí nút <code>Thu hồi</code>).</li>
+</ul>
+<p><strong>Giải thích thành phần:</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Thành phần</th>
+<th>Yêu cầu</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Xem trước đề</td>
+<td>Liệt kê lần lượt các câu: hướng dẫn, đề, đoạn văn, âm thanh (phát được), hình, đáp án <code>A</code>–<code>D</code>. Chỉ xem, không chọn đáp án. Đề không có câu thì hiển thị <code>Không có dữ liệu</code>.</td>
+</tr>
+<tr>
+<td>Nút <code>Giao bài</code></td>
+<td>Chỉ <code>Giáo viên phụ trách chính</code>. Bấm mở popup <code>Giao bài</code> với nội dung <code>Nhấn 'Xác nhận' để giao bài kiểm tra này</code>, nút <code>Huỷ</code> / <code>Xác nhận</code>.</td>
+</tr>
+<tr>
+<td>Điều kiện giao</td>
+<td>Lớp ở trạng thái <code>Đang học</code>, hoặc lớp không chính thức (Lớp demo). Không đạt thì không giao, hiển thị Toast <code>Cảnh Báo</code> <code>Lớp chưa bắt đầu!</code>.</td>
+</tr>
+<tr>
+<td>Giao thành công</td>
+<td>Lưu lượt giao: lớp, bài kiểm tra, giáo viên giao, ngày giao. Card chuyển <code>Đang đợi nộp bài</code>; nút đổi thành <code>Thu hồi</code>; vùng trái chuyển sang bảng kết quả. Học viên hợp lệ thấy bài trên app.</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Điểm cần lưu ý:</strong></p>
+<ul>
+<li>Tập học viên hợp lệ của bài kiểm tra xác định theo ngày giao (REQ02).</li>
+<li>Giáo viên khác của lớp vẫn xem trước đề nhưng không có nút <code>Giao bài</code>.</li>
+</ul>
+<h4 id="testcase-xem-truoc-de-va-giao-bai">Testcase — Xem trước đề và Giao bài</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 48: Xem trước đề chưa giao</td>
+<td>High</td>
+<td></td>
+<td>REQ17</td>
+<td>Giáo viên</td>
+<td>Bài kiểm tra Chưa giao có 10 câu</td>
+<td><strong>Given</strong> chọn card<br><strong>When</strong> vùng trái tải xong<br><strong>Then</strong> hiển thị đủ 10 câu xem trước</td>
+<td>- Phát được âm thanh câu<br>- Không có bảng học viên</td>
+</tr>
+<tr>
+<td>Case 49: Giao bài thành công</td>
+<td>High</td>
+<td>Smoke</td>
+<td>Flow 13 / REQ17</td>
+<td>Giáo viên phụ trách chính</td>
+<td>Lớp Đang học, bài Chưa giao</td>
+<td><strong>Given</strong> bấm <code>Giao bài</code><br><strong>When</strong> bấm <code>Xác nhận</code><br><strong>Then</strong> bài chuyển Đang đợi nộp bài</td>
+<td>- Nút đổi thành Thu hồi<br>- Toast <code>Giao bài kiểm tra thành công.</code><br>- <code>K.Tra Đã Giao</code> tăng 1</td>
+</tr>
+<tr>
+<td>Case 50: Lớp chưa bắt đầu</td>
+<td>High</td>
+<td></td>
+<td>EX10 / REQ17</td>
+<td>Giáo viên phụ trách chính</td>
+<td>Lớp chính thức ở trạng thái Khai giảng</td>
+<td><strong>Given</strong> bấm <code>Giao bài</code> rồi <code>Xác nhận</code><br><strong>When</strong> hệ thống kiểm tra trạng thái lớp<br><strong>Then</strong> Toast <code>Lớp chưa bắt đầu!</code></td>
+<td>- Bài vẫn Chưa giao</td>
+</tr>
+<tr>
+<td>Case 51: Huỷ giao bài</td>
+<td>Medium</td>
+<td></td>
+<td>Flow 13 / REQ17</td>
+<td>Giáo viên phụ trách chính</td>
+<td>Popup Giao bài đang mở</td>
+<td><strong>Given</strong> bấm <code>Huỷ</code><br><strong>When</strong> popup đóng<br><strong>Then</strong> bài vẫn Chưa giao</td>
+<td>- Không Toast</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="thu-hoi-bai-kiem-tra">Thu hồi bài kiểm tra</h3>
+<p><strong>Mô tả:</strong></p>
+<ul>
+<li>Bài kiểm tra đã giao có nút <code>Thu hồi</code> cạnh tên bài, chỉ hiển thị với <code>Giáo viên phụ trách chính</code>.</li>
+</ul>
+<p><strong>Giải thích thành phần:</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Thành phần</th>
+<th>Yêu cầu</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Nút <code>Thu hồi</code></td>
+<td>Bấm mở popup <code>Thu hồi</code>, nội dung <code>Bạn muốn thu hồi bài kiểm tra này? Toàn bộ bài làm và điểm của học viên sẽ bị xoá.</code>, nút <code>Huỷ</code> / <code>Xác nhận</code>.</td>
+</tr>
+<tr>
+<td>Thu hồi thành công</td>
+<td>Xoá lượt giao và <strong>toàn bộ bài làm, điểm, nhận xét chấm</strong> của học viên ở bài này; bài về <code>Chưa giao</code>; nút đổi thành <code>Giao bài</code>; vùng trái về xem trước đề. Học viên không còn thấy bài trên app.</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Điểm cần lưu ý:</strong></p>
+<ul>
+<li>Thu hồi không xoá đề và không ảnh hưởng bài kiểm tra khác.</li>
+<li>Sau khi thu hồi, các thẻ <code>Đã Chấm K.Tra</code>, <code>K.Tra Đã Giao</code>, <code>Điểm K.Tra</code> và badge tab cập nhật lại.</li>
+<li>Giao lại sau khi thu hồi là lượt giao mới, học viên làm lại từ đầu.</li>
+</ul>
+<h4 id="testcase-thu-hoi-bai-kiem-tra">Testcase — Thu hồi bài kiểm tra</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 52: Thu hồi xoá bài làm và điểm</td>
+<td>High</td>
+<td></td>
+<td>Flow 14 / REQ18</td>
+<td>Giáo viên phụ trách chính</td>
+<td>Bài đã giao, 5 học viên đã nộp, 3 đã chấm</td>
+<td><strong>Given</strong> bấm <code>Thu hồi</code><br><strong>When</strong> bấm <code>Xác nhận</code><br><strong>Then</strong> bài về Chưa giao</td>
+<td>- Không còn bài làm/điểm/nhận xét của 5 học viên<br>- Toast <code>Thu hồi bài kiểm tra thành công.</code><br>- Khối Tổng Quan cập nhật</td>
+</tr>
+<tr>
+<td>Case 53: Huỷ thu hồi</td>
+<td>Medium</td>
+<td></td>
+<td>Flow 14 / REQ18</td>
+<td>Giáo viên phụ trách chính</td>
+<td>Popup Thu hồi đang mở</td>
+<td><strong>Given</strong> bấm <code>Huỷ</code><br><strong>When</strong> popup đóng<br><strong>Then</strong> dữ liệu giữ nguyên</td>
+<td>- Không Toast</td>
+</tr>
+<tr>
+<td>Case 54: Giao lại sau thu hồi</td>
+<td>Medium</td>
+<td></td>
+<td>REQ17 / REQ18</td>
+<td>Giáo viên phụ trách chính</td>
+<td>Bài vừa thu hồi</td>
+<td><strong>Given</strong> bấm <code>Giao bài</code> và xác nhận<br><strong>When</strong> học viên mở app<br><strong>Then</strong> học viên làm lại từ đầu</td>
+<td>- Không khôi phục bài làm cũ</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="man-cham-bai-khung-man-va-dieu-huong">Màn chấm bài — Khung màn và điều hướng</h3>
+<p align="center">
+  <a href="./images/grading-record-reviewed.png"><img src="./images/grading-record-reviewed.png" alt="Màn chấm bài BTVN đã bấm Đã Chấm và Sửa Bài Trên Lớp" width="900" title="Nhấn để xem ảnh gốc"></a><br>
+  <em>Màn chấm bài: chi tiết câu bên trái, danh sách Câu hỏi bên phải, nút Đã Chấm và Sửa Bài Trên Lớp kèm avatar và thời điểm của người bấm (UI ICS cũ) — nhấn để xem ảnh gốc</em>
+</p>
+
+<p><strong>Mô tả:</strong></p>
+<ul>
+<li><code>Giáo viên phụ trách chính</code> của lớp dùng màn này để chấm điểm và nhận xét bài BTVN hoặc bài Kiểm tra mà học viên đã nộp.</li>
+<li>Màn chấm theo <strong>một bài</strong> (một BTVN hoặc một bài Kiểm tra) cho <strong>mọi học viên hợp lệ</strong>, chấm lần lượt <strong>từng câu hỏi</strong>.</li>
+<li>Vùng trái là chi tiết câu đang chọn và danh sách thẻ học viên; vùng phải là danh sách <code>Câu hỏi</code> của bài.</li>
+</ul>
+<p><strong>Giải thích thành phần:</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Thành phần</th>
+<th>Yêu cầu</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Điểm vào từ card bài</td>
+<td>Card BTVN/Kiểm tra trong menu Bài tập và Kiểm tra có nút điều hướng sang màn chấm. Nút chỉ hiển thị với <code>Giáo viên phụ trách chính</code>.</td>
+</tr>
+<tr>
+<td>Điểm vào từ dòng học viên</td>
+<td>Bấm dòng học viên <strong>đã nộp</strong> trong bảng của bài đang chọn mở cùng màn chấm của bài, bộ lọc <code>Học Viên</code> được chọn sẵn học viên đó. Dòng học viên chưa nộp không điều hướng.</td>
+</tr>
+<tr>
+<td>Bài bổ sung nhiều bài nguồn</td>
+<td>BTVN của bài học bổ sung gồm nhiều bài nguồn: trước khi vào màn chấm hiển thị popup chọn một bài nguồn; màn chấm mở đúng bài nguồn được chọn.</td>
+</tr>
+<tr>
+<td>Tiêu đề</td>
+<td>Icon <code>&lt;</code> và tên bài: BTVN dùng tên bài học, Kiểm tra dùng tên bài kiểm tra. Bấm <code>&lt;</code> quay về menu Bài tập và Kiểm tra.</td>
+</tr>
+<tr>
+<td>Đã Chấm và Sửa Bài Trên Lớp</td>
+<td>Nút cam ở góc phải; chi tiết tại khu vực Nút Đã Chấm và Sửa Bài Trên Lớp.</td>
+</tr>
+<tr>
+<td>Vùng trái</td>
+<td>Chi tiết câu đang chọn, bộ lọc học viên, <code>Nhận xét chung</code> và danh sách thẻ học viên.</td>
+</tr>
+<tr>
+<td>Vùng phải</td>
+<td>Danh sách <code>Câu hỏi</code> của bài với trạng thái chấm, nhãn loại câu và tỷ lệ điểm.</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Điểm cần lưu ý:</strong></p>
+<ul>
+<li>Khi mở màn, mặc định chọn câu đầu tiên của danh sách <code>Câu hỏi</code>.</li>
+<li>Quay về menu Bài tập và Kiểm tra sau khi có thay đổi điểm thì tải lại dữ liệu bài, bảng học viên, các thẻ Tổng Quan và badge liên quan.</li>
+<li>Giáo viên khác của lớp (không phải <code>Giáo viên phụ trách chính</code>) không thấy nút điều hướng và không mở được màn chấm, kể cả bằng URL.</li>
+<li>Ảnh UI Giáo viên trên Figma (GV-LOP-040100, GV-LOP-040200) chưa có nút điều hướng trên card và chưa có màn chấm; dùng ảnh UI ICS cũ làm tham chiếu.</li>
+</ul>
+<h4 id="testcase-khung-man-va-dieu-huong">Testcase — Khung màn và điều hướng</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 55: Mở màn chấm từ card bài</td>
+<td>High</td>
+<td>Smoke</td>
+<td>Flow 5 / REQ01</td>
+<td>Giáo viên phụ trách chính</td>
+<td>Bài BTVN có học viên đã nộp</td>
+<td><strong>Given</strong> đang ở menu Bài tập và Kiểm tra<br><strong>When</strong> bấm nút điều hướng trên card bài<br><strong>Then</strong> mở màn chấm của đúng bài</td>
+<td>- Tiêu đề đúng tên bài<br>- Chọn sẵn câu đầu tiên<br>- Danh sách Câu hỏi đủ câu của bài</td>
+</tr>
+<tr>
+<td>Case 56: Mở màn chấm từ dòng học viên đã nộp</td>
+<td>High</td>
+<td></td>
+<td>Flow 5 / REQ01 / REQ04</td>
+<td>Giáo viên phụ trách chính</td>
+<td>Học viên A đã nộp bài</td>
+<td><strong>Given</strong> đang xem bảng học viên của bài<br><strong>When</strong> bấm dòng A<br><strong>Then</strong> mở màn chấm của bài, lọc sẵn A</td>
+<td>- Bộ lọc Học Viên chọn A<br>- Chỉ thẻ A hiển thị ở câu đang chọn<br>- Có thể bỏ lọc để xem mọi học viên</td>
+</tr>
+<tr>
+<td>Case 57: Dòng học viên chưa nộp không điều hướng</td>
+<td>Medium</td>
+<td></td>
+<td>REQ01</td>
+<td>Giáo viên phụ trách chính</td>
+<td>Học viên B chưa nộp</td>
+<td><strong>Given</strong> đang xem bảng học viên<br><strong>When</strong> bấm dòng B<br><strong>Then</strong> không mở màn chấm</td>
+<td>- Không lỗi<br>- Không tạo dữ liệu chấm</td>
+</tr>
+<tr>
+<td>Case 58: Bài bổ sung chọn bài nguồn</td>
+<td>High</td>
+<td></td>
+<td>Flow 5 / REQ01</td>
+<td>Giáo viên phụ trách chính</td>
+<td>BTVN của bài bổ sung gồm 2 bài nguồn</td>
+<td><strong>Given</strong> bấm nút điều hướng<br><strong>When</strong> popup chọn bài nguồn hiện và chọn bài thứ hai<br><strong>Then</strong> mở màn chấm của bài nguồn thứ hai</td>
+<td>- Câu hỏi thuộc đúng bài nguồn đã chọn<br>- Không trộn câu của bài nguồn khác</td>
+</tr>
+<tr>
+<td>Case 59: Giáo viên không phải phụ trách chính</td>
+<td>High</td>
+<td></td>
+<td>EX01 / Ràng buộc quyền</td>
+<td>Giáo viên</td>
+<td>Giáo viên thuộc lớp nhưng không phải phụ trách chính</td>
+<td><strong>Given</strong> mở menu Bài tập và Kiểm tra<br><strong>When</strong> xem card bài và thử mở URL màn chấm<br><strong>Then</strong> không có nút và bị chặn truy cập</td>
+<td>- Không hiển thị nút điều hướng<br>- Request chấm bị từ chối ở backend</td>
+</tr>
+<tr>
+<td>Case 60: Quay về sau khi chấm</td>
+<td>Medium</td>
+<td></td>
+<td>Flow 6 / REQ12</td>
+<td>Giáo viên phụ trách chính</td>
+<td>Đã chấm thêm điểm trong màn chấm</td>
+<td><strong>Given</strong> bấm <code>&lt;</code><br><strong>When</strong> quay về menu Bài tập và Kiểm tra<br><strong>Then</strong> dữ liệu bài được tải lại</td>
+<td>- Điểm, trạng thái và các thẻ Tổng Quan cập nhật<br>- Không hiển thị số liệu cũ</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="danh-sach-cau-hoi-va-trang-thai-cham">Danh sách Câu hỏi và trạng thái chấm</h3>
+<p align="center">
+  <a href="./images/grading-multiple-choice.png"><img src="./images/grading-multiple-choice.png" alt="Danh sách Câu hỏi với nhãn loại câu và tỷ lệ điểm" width="900" title="Nhấn để xem ảnh gốc"></a><br>
+  <em>Danh sách Câu hỏi bên phải: icon trạng thái chấm, nhãn loại câu, đề bài và vòng tỷ lệ điểm (UI ICS cũ) — nhấn để xem ảnh gốc</em>
+</p>
+
+<p><strong>Mô tả:</strong></p>
+<ul>
+<li>Liệt kê toàn bộ câu hỏi của bài theo thứ tự đề; bấm một câu để chấm câu đó ở vùng trái.</li>
+</ul>
+<p><strong>Giải thích thành phần:</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Thành phần</th>
+<th>Yêu cầu</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Icon trạng thái</td>
+<td><code>Đã chấm</code>: ô tick nền cam nhạt, dấu tick cam. <code>Đang chấm</code>: câu đang chọn, viền cam. <code>Chưa chấm</code>: ô tick xám. Hover hiển thị tên trạng thái.</td>
+</tr>
+<tr>
+<td>Nhãn loại câu</td>
+<td>Một trong <code>Trắc nghiệm</code>, <code>Hình ảnh</code>, <code>Viết</code>, <code>Đọc</code>, <code>Sắp xếp</code>, <code>Nối từ</code>, <code>Nói</code>, <code>Câu hỏi con</code> theo bảng Loại câu ở REQ05.</td>
+</tr>
+<tr>
+<td>Đề bài</td>
+<td>Hướng dẫn của câu và nội dung câu hỏi, tối đa 2 dòng mỗi phần.</td>
+</tr>
+<tr>
+<td>Vòng tỷ lệ điểm</td>
+<td><code>Tổng điểm các câu trả lời đã chấm / (số câu trả lời đã chấm × 10)</code>, hiển thị <code>%</code> làm tròn số nguyên. Chỉ hiển thị khi câu ở trạng thái <code>Đã chấm</code> hoặc đang được chọn.</td>
+</tr>
+<tr>
+<td>Bộ lọc <code>Trạng Thái</code></td>
+<td>Chọn một hoặc nhiều giá trị <code>Chưa chấm</code>, <code>Đã chấm</code>; không chọn thì hiển thị mọi câu.</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Điểm cần lưu ý:</strong></p>
+<ul>
+<li>Câu <code>Đã chấm</code> khi mọi câu trả lời của học viên đã nộp trong câu đó đều có điểm (0–10).</li>
+<li>Câu không có câu trả lời nào nhưng bài có học viên đã nộp được coi là <code>Đã chấm</code>, vòng tỷ lệ hiển thị <code>100%</code>, vùng trái hiển thị <code>Bạn không cần chấm câu hỏi này!</code>.</li>
+<li>Điểm 0 đã chấm vẫn tính vào tỷ lệ; câu trả lời chưa chấm không tham gia tỷ lệ.</li>
+<li>Trạng thái và tỷ lệ cập nhật ngay sau mỗi lần chấm điểm, không cần tải lại màn.</li>
+</ul>
+<h4 id="testcase-danh-sach-cau-hoi">Testcase — Danh sách Câu hỏi</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 61: Hiển thị đủ câu và nhãn loại</td>
+<td>High</td>
+<td></td>
+<td>REQ03 / REQ05</td>
+<td>Giáo viên phụ trách chính</td>
+<td>Bài có câu Trắc nghiệm, Đọc, Nối từ, Câu hỏi con</td>
+<td><strong>Given</strong> mở màn chấm<br><strong>When</strong> danh sách tải xong<br><strong>Then</strong> hiển thị đủ câu theo thứ tự đề</td>
+<td>- Nhãn loại đúng bảng REQ05<br>- Câu có câu con hiển thị nhãn Câu hỏi con</td>
+</tr>
+<tr>
+<td>Case 62: Trạng thái Đã chấm và tỷ lệ điểm</td>
+<td>High</td>
+<td></td>
+<td>REQ03</td>
+<td>Giáo viên phụ trách chính</td>
+<td>Câu có 3 học viên đã nộp, điểm 10, 8, 0</td>
+<td><strong>Given</strong> cả 3 câu trả lời đã có điểm<br><strong>When</strong> xem câu trong danh sách<br><strong>Then</strong> trạng thái Đã chấm, tỷ lệ 60%</td>
+<td>- Tính <code>(10 + 8 + 0) / 30</code><br>- Điểm 0 vẫn tính</td>
+</tr>
+<tr>
+<td>Case 63: Câu còn câu trả lời chưa chấm</td>
+<td>High</td>
+<td></td>
+<td>REQ03</td>
+<td>Giáo viên phụ trách chính</td>
+<td>Câu có 1 câu trả lời chưa chấm</td>
+<td><strong>Given</strong> câu không ở trạng thái đang chọn<br><strong>When</strong> xem danh sách<br><strong>Then</strong> trạng thái Chưa chấm</td>
+<td>- Không hiển thị vòng tỷ lệ<br>- Chấm xong câu trả lời cuối thì chuyển Đã chấm ngay</td>
+</tr>
+<tr>
+<td>Case 64: Câu không cần chấm</td>
+<td>Medium</td>
+<td></td>
+<td>REQ03</td>
+<td>Giáo viên phụ trách chính</td>
+<td>Câu không có câu trả lời, bài có học viên đã nộp</td>
+<td><strong>Given</strong> chọn câu<br><strong>When</strong> vùng trái hiển thị<br><strong>Then</strong> hiện <code>Bạn không cần chấm câu hỏi này!</code></td>
+<td>- Câu tính Đã chấm, tỷ lệ 100%<br>- Không chặn nút Đã Chấm và Sửa Bài Trên Lớp</td>
+</tr>
+<tr>
+<td>Case 65: Lọc theo Trạng Thái</td>
+<td>Medium</td>
+<td></td>
+<td>REQ03</td>
+<td>Giáo viên phụ trách chính</td>
+<td>Bài có câu Đã chấm và Chưa chấm</td>
+<td><strong>Given</strong> chọn <code>Chưa chấm</code> ở bộ lọc<br><strong>When</strong> áp dụng<br><strong>Then</strong> chỉ còn câu Chưa chấm</td>
+<td>- Bỏ chọn hiển thị lại mọi câu<br>- Không đổi dữ liệu chấm</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="chi-tiet-cau-hoi-va-bo-loc-hoc-vien">Chi tiết câu hỏi và bộ lọc học viên</h3>
+<p><strong>Mô tả:</strong></p>
+<ul>
+<li>Vùng trái hiển thị nội dung câu đang chọn và danh sách thẻ học viên có câu trả lời của câu đó.</li>
+</ul>
+<p><strong>Giải thích thành phần:</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Thành phần</th>
+<th>Yêu cầu</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Câu N</code></td>
+<td>Chip số thứ tự câu trong bài, kèm hướng dẫn của câu.</td>
+</tr>
+<tr>
+<td>Nội dung câu</td>
+<td>Đề bài, đoạn văn (nếu có), trình phát âm thanh <code>00:00 / 00:00</code> (nếu có), hình ảnh (nếu có) và các đáp án <code>A</code>–<code>D</code> (chữ hoặc hình) theo dữ liệu câu.</td>
+</tr>
+<tr>
+<td><code>Chưa Chấm</code></td>
+<td>Checkbox. Bật thì chỉ hiển thị học viên chưa có điểm ở câu này; học viên vừa được chấm trong lúc lọc vẫn hiển thị đến khi đổi câu. Mặc định tắt.</td>
+</tr>
+<tr>
+<td><code>Hiện Tên</code></td>
+<td>Checkbox, mặc định bật. Tắt thì ẩn tên học viên trên thẻ, chỉ giữ số thứ tự, để chấm khách quan.</td>
+</tr>
+<tr>
+<td><code>Học Viên</code></td>
+<td>Dropdown chọn một hoặc nhiều học viên có câu trả lời ở câu này; không chọn thì hiển thị mọi học viên.</td>
+</tr>
+<tr>
+<td>Thẻ học viên</td>
+<td>Chi tiết tại khu vực Thẻ học viên. Thứ tự thẻ đánh số từ 1 theo danh sách sau lọc.</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Điểm cần lưu ý:</strong></p>
+<ul>
+<li>Ba bộ lọc chỉ áp dụng cho thẻ học viên của câu đang chọn; đổi câu thì trạng thái <code>Chưa Chấm</code> và <code>Học Viên</code> được áp dụng lại cho câu mới.</li>
+<li>Tập học viên hiển thị theo REQ02; không hiển thị tài khoản không phải học viên.</li>
+<li>Không có học viên nộp bài: vùng thẻ hiển thị <code>Chưa có học sinh nộp bài</code>.</li>
+</ul>
+<h4 id="testcase-chi-tiet-cau-va-bo-loc">Testcase — Chi tiết câu và bộ lọc</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 66: Hiển thị nội dung câu</td>
+<td>High</td>
+<td></td>
+<td>REQ03</td>
+<td>Giáo viên phụ trách chính</td>
+<td>Câu có đề, âm thanh, hình và 4 đáp án</td>
+<td><strong>Given</strong> chọn câu<br><strong>When</strong> vùng trái tải xong<br><strong>Then</strong> hiển thị đủ đề, trình phát, hình và A–D</td>
+<td>- Phát được âm thanh<br>- Đáp án hình hiển thị đúng ảnh</td>
+</tr>
+<tr>
+<td>Case 67: Lọc Chưa Chấm</td>
+<td>High</td>
+<td></td>
+<td>REQ04</td>
+<td>Giáo viên phụ trách chính</td>
+<td>Câu có A đã chấm, B và C chưa chấm</td>
+<td><strong>Given</strong> bật <code>Chưa Chấm</code><br><strong>When</strong> chấm B<br><strong>Then</strong> còn B và C; B vẫn hiển thị đến khi đổi câu</td>
+<td>- Không hiển thị A<br>- Đổi câu rồi quay lại thì B không còn trong lọc</td>
+</tr>
+<tr>
+<td>Case 68: Ẩn tên học viên</td>
+<td>Medium</td>
+<td></td>
+<td>REQ04</td>
+<td>Giáo viên phụ trách chính</td>
+<td>Câu có nhiều học viên</td>
+<td><strong>Given</strong> tắt <code>Hiện Tên</code><br><strong>When</strong> xem thẻ<br><strong>Then</strong> thẻ chỉ còn số thứ tự</td>
+<td>- Vẫn chấm và nhận xét được<br>- Bật lại hiển thị đúng tên từng thẻ</td>
+</tr>
+<tr>
+<td>Case 69: Lọc Học Viên</td>
+<td>Medium</td>
+<td></td>
+<td>REQ04</td>
+<td>Giáo viên phụ trách chính</td>
+<td>Câu có A, B, C</td>
+<td><strong>Given</strong> chọn A và C ở <code>Học Viên</code><br><strong>When</strong> áp dụng<br><strong>Then</strong> chỉ còn thẻ A và C</td>
+<td>- Dropdown chỉ liệt kê học viên có câu trả lời<br>- Bỏ chọn hiển thị lại đủ</td>
+</tr>
+<tr>
+<td>Case 70: Không có học viên nộp</td>
+<td>Medium</td>
+<td></td>
+<td>EX08</td>
+<td>Giáo viên phụ trách chính</td>
+<td>Bài chưa có học viên nộp</td>
+<td><strong>Given</strong> mở màn chấm<br><strong>When</strong> chọn câu bất kỳ<br><strong>Then</strong> hiển thị <code>Chưa có học sinh nộp bài</code></td>
+<td>- Không tạo thẻ giả<br>- Không lỗi</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="the-hoc-vien-diem-va-dap-an">Thẻ học viên — điểm và đáp án</h3>
+<p align="center">
+  <a href="./images/grading-match-column.png"><img src="./images/grading-match-column.png" alt="Thẻ học viên câu Nối từ với dãy điểm 0–10" width="900" title="Nhấn để xem ảnh gốc"></a><br>
+  <em>Thẻ học viên câu Nối từ: số thứ tự, tên, dãy điểm 0–10, Đáp án của học viên và Nhận xét của giáo viên (UI ICS cũ) — nhấn để xem ảnh gốc</em>
+</p>
+
+<p><strong>Mô tả:</strong></p>
+<ul>
+<li>Mỗi học viên có câu trả lời ở câu đang chọn có một thẻ để xem đáp án và chấm điểm.</li>
+</ul>
+<p><strong>Giải thích thành phần:</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Thành phần</th>
+<th>Yêu cầu</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Số thứ tự</td>
+<td>Số thứ tự thẻ trong danh sách sau lọc.</td>
+</tr>
+<tr>
+<td>Tên học viên</td>
+<td>Hiển thị khi <code>Hiện Tên</code> bật, tối đa 2 dòng.</td>
+</tr>
+<tr>
+<td>Nhãn <code>Chỉ xem</code></td>
+<td>Hiển thị trên thẻ của học viên có câu trả lời nhưng <strong>chưa nộp bài</strong>; thẻ không bấm điểm, không nhận xét được.</td>
+</tr>
+<tr>
+<td>Dãy điểm <code>0</code>–<code>10</code></td>
+<td>11 nút số nguyên; điểm đã lưu được viền và chữ cam. Câu trả lời chưa chấm không có nút nào được chọn. Bấm một số để lưu ngay điểm đó. Không hiển thị với câu có câu con (điểm chấm ở từng câu con).</td>
+</tr>
+<tr>
+<td>Thu gọn / mở rộng</td>
+<td>Icon <code>⌃</code> thu gọn hoặc mở thẻ; mặc định mở.</td>
+</tr>
+<tr>
+<td><code>Đáp án của học viên</code></td>
+<td>Hiển thị theo loại câu ở bảng dưới.</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Hiển thị đáp án theo loại câu:</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Loại câu (mã)</th>
+<th>Hiển thị đáp án</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Trắc nghiệm từ vựng (1), Trắc nghiệm câu (5), Văn bản (6)</td>
+<td>Ô chữ chứa đáp án học viên chọn hoặc nhập.</td>
+</tr>
+<tr>
+<td>Sắp xếp (7)</td>
+<td>Ô chữ chứa các từ học viên sắp xếp, nối bằng dấu cách.</td>
+</tr>
+<tr>
+<td>Nối cột (8)</td>
+<td>Ô chữ, mỗi cặp nối một dòng dạng <code>vế trái-vế phải</code>.</td>
+</tr>
+<tr>
+<td>Nói (22), Viết dạng chữ (44)</td>
+<td>Ô chữ chứa nội dung học viên nói (nhận diện lời nói) hoặc viết.</td>
+</tr>
+<tr>
+<td>Vẽ (4), Chọn ảnh (2), Trắc nghiệm hình ảnh (11)</td>
+<td>Ảnh bài làm hoặc ảnh đáp án học viên chọn.</td>
+</tr>
+<tr>
+<td>Ghi âm (3), Nhập vai (10)</td>
+<td>Danh sách chip <code>File ghi âm N</code>; bấm chip để nghe.</td>
+</tr>
+<tr>
+<td>Học viên bỏ qua câu</td>
+<td>Ô chữ <code>Học viên đã bỏ qua câu này!</code>; vẫn chấm được.</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Điểm cần lưu ý:</strong></p>
+<ul>
+<li>Câu do app tự chấm đã có điểm sẵn khi học viên nộp; giáo viên vẫn được bấm điểm khác để sửa đè (REQ05, REQ06).</li>
+<li>Mỗi lần bấm điểm chỉ cập nhật câu trả lời của đúng học viên–câu–bài–lớp; không đổi điểm câu khác.</li>
+<li>Khi mọi câu của học viên trong bài đã có điểm, hệ thống tính lại điểm bài theo REQ07.</li>
+</ul>
+<h4 id="testcase-the-hoc-vien">Testcase — Thẻ học viên</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 71: Chấm điểm câu giáo viên chấm</td>
+<td>High</td>
+<td>Smoke</td>
+<td>Flow 6 / REQ06</td>
+<td>Giáo viên phụ trách chính</td>
+<td>Câu Đọc, học viên A đã nộp, chưa chấm</td>
+<td><strong>Given</strong> xem thẻ A<br><strong>When</strong> bấm <code>8</code><br><strong>Then</strong> lưu điểm 8 cho A ở câu này</td>
+<td>- Nút 8 được tô cam<br>- Trạng thái câu cập nhật ngay<br>- Không đổi điểm học viên khác</td>
+</tr>
+<tr>
+<td>Case 72: Sửa đè điểm app chấm</td>
+<td>High</td>
+<td></td>
+<td>Flow 6 / REQ05 / REQ06</td>
+<td>Giáo viên phụ trách chính</td>
+<td>Câu Trắc nghiệm, app đã chấm A 10 điểm</td>
+<td><strong>Given</strong> thẻ A hiển thị điểm 10<br><strong>When</strong> bấm <code>5</code><br><strong>Then</strong> điểm câu của A thành 5</td>
+<td>- Điểm bài tính lại theo điểm mới<br>- Tỷ lệ của câu cập nhật</td>
+</tr>
+<tr>
+<td>Case 73: Đáp án đúng theo loại câu</td>
+<td>High</td>
+<td></td>
+<td>REQ05</td>
+<td>Giáo viên phụ trách chính</td>
+<td>Bài có câu Ghi âm, Nối cột, Vẽ, Sắp xếp</td>
+<td><strong>Given</strong> xem thẻ học viên ở từng câu<br><strong>When</strong> đáp án hiển thị<br><strong>Then</strong> đúng dạng theo bảng</td>
+<td>- Ghi âm là chip nghe được<br>- Nối cột mỗi cặp một dòng<br>- Vẽ là ảnh</td>
+</tr>
+<tr>
+<td>Case 74: Học viên bỏ qua câu</td>
+<td>Medium</td>
+<td></td>
+<td>REQ05</td>
+<td>Giáo viên phụ trách chính</td>
+<td>A nộp bài nhưng bỏ trống câu</td>
+<td><strong>Given</strong> xem thẻ A<br><strong>When</strong> đáp án hiển thị<br><strong>Then</strong> hiện <code>Học viên đã bỏ qua câu này!</code></td>
+<td>- Vẫn chấm được điểm 0–10<br>- Không lỗi hiển thị</td>
+</tr>
+<tr>
+<td>Case 75: Học viên chưa nộp chỉ xem</td>
+<td>High</td>
+<td></td>
+<td>EX07 / REQ02</td>
+<td>Giáo viên phụ trách chính</td>
+<td>B có câu trả lời đã lưu nhưng chưa nộp bài</td>
+<td><strong>Given</strong> xem thẻ B<br><strong>When</strong> thử bấm điểm hoặc nhận xét<br><strong>Then</strong> không thao tác được</td>
+<td>- Thẻ có nhãn <code>Chỉ xem</code><br>- Backend từ chối request chấm cho B</td>
+</tr>
+<tr>
+<td>Case 76: Lưu điểm lỗi</td>
+<td>High</td>
+<td></td>
+<td>EX04</td>
+<td>Giáo viên phụ trách chính</td>
+<td>Mất kết nối khi bấm điểm</td>
+<td><strong>Given</strong> bấm <code>7</code><br><strong>When</strong> lưu thất bại<br><strong>Then</strong> hiển thị Toast <code>Có Lỗi Xảy Ra</code></td>
+<td>- Giữ điểm cũ sau khi tải lại<br>- Không tính lại điểm bài</td>
+</tr>
+<tr>
+<td>Case 77: Loại học viên theo khoảng trạng thái</td>
+<td>High</td>
+<td></td>
+<td>REQ02</td>
+<td>Giáo viên phụ trách chính</td>
+<td>A chuyển <code>Nghỉ học</code> ngày 10, quay lại <code>Đang học</code> ngày 20; bài 5 mở ngày 15, bài 6 mở ngày 22; cả hai bài A đều được điểm danh</td>
+<td><strong>Given</strong> mở màn chấm BTVN bài 5 và bài 6<br><strong>When</strong> xem danh sách học viên<br><strong>Then</strong> A không có ở bài 5, có ở bài 6</td>
+<td>- Áp dụng tương tự <code>Rời lớp</code>, <code>Xóa</code><br>- <code>Chỉ xem</code>, <code>Dự thính</code> không bị loại</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="nhan-xet-cua-giao-vien">Nhận xét của giáo viên</h3>
+<p align="center">
+  <a href="./images/grading-teacher-comment-audio.png"><img src="./images/grading-teacher-comment-audio.png" alt="Nhận xét của giáo viên kèm file ghi âm" width="900" title="Nhấn để xem ảnh gốc"></a><br>
+  <em>Nhận xét của giáo viên: ô nhập, icon micro, icon tài liệu, chip File ghi âm có nút ×, icon sao chép và dán (UI ICS cũ) — nhấn để xem ảnh gốc</em>
+</p>
+
+<p><strong>Mô tả:</strong></p>
+<ul>
+<li>Mỗi thẻ học viên có khu vực <code>Nhận xét của giáo viên</code> gồm nội dung chữ, file ghi âm và file ảnh dành cho đúng học viên ở câu đó.</li>
+</ul>
+<p><strong>Giải thích thành phần:</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Thành phần</th>
+<th>Yêu cầu</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Ô <code>Nhận xét của giáo viên</code></td>
+<td>Nhập nhiều dòng; lưu khi giáo viên xác nhận nhập (rời ô hoặc Enter theo component nhập chung). Rỗng là chưa có nhận xét.</td>
+</tr>
+<tr>
+<td>Icon micro</td>
+<td>Mở popup ghi âm. Ghi xong thì tải file lên (tối đa 25MB mỗi file), trong lúc tải hiển thị chip <code>Đang tải...</code>; tải xong thêm chip <code>File ghi âm N</code> vào nhận xét.</td>
+</tr>
+<tr>
+<td>Icon tài liệu</td>
+<td>Mở popup tải ảnh lên, chỉ nhận định dạng ảnh, tối đa 25MB mỗi file. Tải xong thêm chip <code>File ảnh N</code>.</td>
+</tr>
+<tr>
+<td>Chip <code>File ghi âm N</code> / <code>File ảnh N</code></td>
+<td>Bấm để nghe hoặc xem ảnh; <code>×</code> xoá file khỏi nhận xét. Đánh số theo thứ tự thêm.</td>
+</tr>
+<tr>
+<td>Icon sao chép</td>
+<td>Sao chép nhận xét của thẻ (chữ, ảnh, ghi âm) vào bộ nhớ tạm; hiển thị Toast <code>Thông Báo</code> với nội dung <code>Đã sao chép</code>.</td>
+</tr>
+<tr>
+<td>Icon dán</td>
+<td>Dán nhận xét đã sao chép vào thẻ hiện tại, thay nội dung chữ, ảnh và ghi âm hiện có của thẻ. Dữ liệu bộ nhớ tạm không đúng định dạng thì hiển thị Toast <code>Thông Báo</code> với nội dung <code>Dữ liệu không hợp lệ</code>.</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Điểm cần lưu ý:</strong></p>
+<ul>
+<li>Nhận xét gắn đúng học viên–câu–bài–lớp; sao chép/dán dùng để áp nhanh cùng nhận xét cho nhiều học viên.</li>
+<li>Thêm hoặc xoá file lưu ngay; lỗi tải file không thêm chip. File ghi âm hoặc ảnh vượt 25MB bị từ chối trước khi tải, hiển thị Toast <code>Cảnh Báo</code> <code>File vượt quá dung lượng cho phép (25MB).</code></li>
+<li>Nhận xét độc lập với điểm: có thể nhận xét trước khi chấm và ngược lại.</li>
+<li>Nội dung chữ hiển thị dạng văn bản thuần, không thực thi HTML/script.</li>
+</ul>
+<h4 id="testcase-nhan-xet-cua-giao-vien">Testcase — Nhận xét của giáo viên</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 78: Nhập nhận xét chữ</td>
+<td>High</td>
+<td>Smoke</td>
+<td>Flow 8 / REQ08</td>
+<td>Giáo viên phụ trách chính</td>
+<td>Thẻ A đang mở</td>
+<td><strong>Given</strong> nhập <code>Biến điệu thanh 3 chị lưu ý</code><br><strong>When</strong> xác nhận nhập<br><strong>Then</strong> lưu nhận xét cho A ở câu này</td>
+<td>- Tải lại vẫn còn nội dung<br>- Không ghi vào học viên khác</td>
+</tr>
+<tr>
+<td>Case 79: Ghi âm nhận xét</td>
+<td>High</td>
+<td></td>
+<td>Flow 8 / REQ08</td>
+<td>Giáo viên phụ trách chính</td>
+<td>Thiết bị có micro</td>
+<td><strong>Given</strong> bấm icon micro và ghi âm<br><strong>When</strong> tải file xong<br><strong>Then</strong> thêm chip <code>File ghi âm 1</code></td>
+<td>- Trong lúc tải hiện <code>Đang tải...</code><br>- Bấm chip nghe được<br>- <code>×</code> xoá đúng file</td>
+</tr>
+<tr>
+<td>Case 80: Tải ảnh nhận xét</td>
+<td>Medium</td>
+<td></td>
+<td>Flow 8 / REQ08</td>
+<td>Giáo viên phụ trách chính</td>
+<td>Có file ảnh hợp lệ</td>
+<td><strong>Given</strong> bấm icon tài liệu và chọn ảnh<br><strong>When</strong> tải xong<br><strong>Then</strong> thêm chip <code>File ảnh 1</code></td>
+<td>- Không nhận file không phải ảnh<br>- Bấm chip xem được ảnh</td>
+</tr>
+<tr>
+<td>Case 81: Sao chép và dán nhận xét</td>
+<td>Medium</td>
+<td></td>
+<td>Flow 8 / REQ08</td>
+<td>Giáo viên phụ trách chính</td>
+<td>Thẻ A có chữ và 1 ghi âm; thẻ B trống</td>
+<td><strong>Given</strong> sao chép ở A<br><strong>When</strong> dán ở B<br><strong>Then</strong> B có cùng chữ và ghi âm</td>
+<td>- Toast <code>Đã sao chép</code> khi sao chép<br>- Nhận xét A giữ nguyên</td>
+</tr>
+<tr>
+<td>Case 82: Dán dữ liệu không hợp lệ</td>
+<td>Low</td>
+<td></td>
+<td>EX03</td>
+<td>Giáo viên phụ trách chính</td>
+<td>Bộ nhớ tạm chứa chữ thường</td>
+<td><strong>Given</strong> bấm icon dán ở B<br><strong>When</strong> dữ liệu không đúng định dạng<br><strong>Then</strong> Toast <code>Dữ liệu không hợp lệ</code></td>
+<td>- Không đổi nhận xét của B</td>
+</tr>
+<tr>
+<td>Case 83: Tải file lỗi</td>
+<td>Medium</td>
+<td></td>
+<td>EX05</td>
+<td>Giáo viên phụ trách chính</td>
+<td>Mất kết nối khi tải ghi âm</td>
+<td><strong>Given</strong> ghi âm xong<br><strong>When</strong> tải file thất bại<br><strong>Then</strong> chip <code>Đang tải...</code> biến mất, không thêm file</td>
+<td>- Toast <code>Có Lỗi Xảy Ra</code><br>- Nhận xét giữ nguyên</td>
+</tr>
+<tr>
+<td>Case 84: File vượt 25MB</td>
+<td>Medium</td>
+<td></td>
+<td>EX09 / REQ08</td>
+<td>Giáo viên phụ trách chính</td>
+<td>Có file ghi âm 30MB</td>
+<td><strong>Given</strong> chọn tải file ghi âm 30MB<br><strong>When</strong> hệ thống kiểm tra dung lượng<br><strong>Then</strong> Toast <code>Cảnh Báo</code> <code>File vượt quá dung lượng cho phép (25MB).</code></td>
+<td>- Không thêm chip<br>- File 25MB trở xuống tải bình thường</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="nhan-xet-chung-cua-cau">Nhận xét chung của câu</h3>
+<p><strong>Mô tả:</strong></p>
+<ul>
+<li>Ô <code>Nhận xét chung</code> phía trên danh sách thẻ dùng để áp <strong>một nhận xét chữ cho mọi học viên</strong> có câu trả lời ở câu đang chọn.</li>
+</ul>
+<p><strong>Giải thích thành phần:</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Thành phần</th>
+<th>Yêu cầu</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Ô <code>Nhận xét chung</code></td>
+<td>Nhập nhiều dòng; chỉ hiển thị khi câu có ít nhất một học viên có câu trả lời. Mặc định trống mỗi lần mở câu.</td>
+</tr>
+<tr>
+<td>Xác nhận nhập</td>
+<td>Mở popup xác nhận trước khi áp dụng.</td>
+</tr>
+<tr>
+<td>Popup xác nhận</td>
+<td>Tiêu đề <code>Áp dụng nhận xét chung</code>; nội dung <code>Nhận xét này sẽ thay thế nhận xét của giáo viên cho tất cả học viên trong câu này. Bạn có muốn tiếp tục?</code>; nút <code>Huỷ</code> / <code>Xác nhận</code>.</td>
+</tr>
+<tr>
+<td>Xác nhận</td>
+<td>Ghi đè nội dung chữ <code>Nhận xét của giáo viên</code> của mọi học viên có câu trả lời ở câu này; hiển thị tiến độ cập nhật cho đến khi xong.</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Điểm cần lưu ý:</strong></p>
+<ul>
+<li>Chỉ ghi đè phần chữ; file ghi âm và file ảnh đã có của từng học viên giữ nguyên.</li>
+<li>Sau khi áp dụng, giáo viên vẫn sửa riêng nhận xét của từng học viên được.</li>
+<li><code>Huỷ</code> đóng popup, không đổi nhận xét nào, không hiển thị Toast.</li>
+<li>Áp dụng cho mọi học viên có câu trả lời của câu, không phụ thuộc bộ lọc đang bật.</li>
+</ul>
+<h4 id="testcase-nhan-xet-chung">Testcase — Nhận xét chung</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 85: Áp dụng nhận xét chung</td>
+<td>High</td>
+<td></td>
+<td>Flow 9 / REQ09</td>
+<td>Giáo viên phụ trách chính</td>
+<td>Câu có A (đã có nhận xét riêng và 1 ghi âm), B (trống)</td>
+<td><strong>Given</strong> nhập nhận xét chung<br><strong>When</strong> bấm <code>Xác nhận</code> trên popup<br><strong>Then</strong> nhận xét chữ của A và B bằng nội dung chung</td>
+<td>- Ghi âm của A giữ nguyên<br>- Một Toast <code>Thành Công</code></td>
+</tr>
+<tr>
+<td>Case 86: Huỷ áp dụng</td>
+<td>Medium</td>
+<td></td>
+<td>Flow 9 / REQ09</td>
+<td>Giáo viên phụ trách chính</td>
+<td>Popup xác nhận đang mở</td>
+<td><strong>Given</strong> bấm <code>Huỷ</code><br><strong>When</strong> popup đóng<br><strong>Then</strong> không học viên nào bị đổi nhận xét</td>
+<td>- Không Toast</td>
+</tr>
+<tr>
+<td>Case 87: Áp dụng khi đang lọc</td>
+<td>Medium</td>
+<td></td>
+<td>REQ09</td>
+<td>Giáo viên phụ trách chính</td>
+<td>Bật lọc chỉ thấy A; câu có A, B</td>
+<td><strong>Given</strong> áp dụng nhận xét chung<br><strong>When</strong> bỏ lọc<br><strong>Then</strong> B cũng có nhận xét chung</td>
+<td>- Popup nêu rõ áp dụng cho tất cả học viên trong câu</td>
+</tr>
+<tr>
+<td>Case 88: Lỗi giữa chừng</td>
+<td>Medium</td>
+<td></td>
+<td>EX04 / REQ09</td>
+<td>Giáo viên phụ trách chính</td>
+<td>Mất kết nối khi đang cập nhật</td>
+<td><strong>Given</strong> đang áp dụng cho nhiều học viên<br><strong>When</strong> một lần lưu lỗi<br><strong>Then</strong> hiển thị Toast <code>Có Lỗi Xảy Ra</code></td>
+<td>- Tải lại thể hiện đúng nhận xét đã lưu thực tế của từng học viên</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="cau-hoi-con">Câu hỏi con</h3>
+<p><strong>Mô tả:</strong></p>
+<ul>
+<li>Câu có nhiều câu nhỏ (<code>Câu hỏi con</code>) được chấm theo từng câu con trong thẻ học viên.</li>
+</ul>
+<p><strong>Giải thích thành phần:</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Thành phần</th>
+<th>Yêu cầu</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Tab <code>Câu hỏi N</code></td>
+<td>Mỗi câu con một tab trong thẻ học viên, đánh số từ 1.</td>
+</tr>
+<tr>
+<td>Nội dung câu con</td>
+<td>Đề, đáp án <code>A</code>–<code>D</code> (nếu có) và phần giải thích (nếu có) của câu con.</td>
+</tr>
+<tr>
+<td>Đáp án của học viên</td>
+<td>Theo bảng hiển thị đáp án ở khu vực Thẻ học viên, theo loại của câu con.</td>
+</tr>
+<tr>
+<td>Dãy điểm <code>0</code>–<code>10</code></td>
+<td>Chấm từng câu con. Câu con thuộc loại app chấm đã có điểm sẵn, giáo viên được sửa đè.</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Điểm cần lưu ý:</strong></p>
+<ul>
+<li>Điểm câu cha = trung bình cộng điểm các câu con, chỉ tính khi mọi câu con đã có điểm; trước đó câu cha giữ trạng thái chưa chấm.</li>
+<li>Thẻ học viên của câu cha không hiển thị dãy điểm chung.</li>
+<li>Câu con ghép đáp án theo mã câu con; dữ liệu cũ không có mã thì ghép theo thứ tự câu con.</li>
+</ul>
+<h4 id="testcase-cau-hoi-con">Testcase — Câu hỏi con</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 89: Chấm đủ câu con</td>
+<td>High</td>
+<td></td>
+<td>Flow 10 / REQ10</td>
+<td>Giáo viên phụ trách chính</td>
+<td>Câu cha có 3 câu con, A chưa chấm</td>
+<td><strong>Given</strong> chấm câu con 10, 8, 6<br><strong>When</strong> câu con cuối được lưu<br><strong>Then</strong> điểm câu cha của A là 8</td>
+<td>- Câu cha chuyển Đã chấm nếu mọi học viên đã đủ<br>- Điểm bài tính lại</td>
+</tr>
+<tr>
+<td>Case 90: Chưa đủ câu con</td>
+<td>High</td>
+<td></td>
+<td>REQ10</td>
+<td>Giáo viên phụ trách chính</td>
+<td>A mới chấm 2/3 câu con</td>
+<td><strong>Given</strong> xem câu cha<br><strong>When</strong> kiểm tra trạng thái<br><strong>Then</strong> câu cha của A vẫn chưa chấm</td>
+<td>- Không tính điểm câu cha từ 2 câu con</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="nut-da-cham-va-sua-bai-tren-lop">Nút Đã Chấm và Sửa Bài Trên Lớp</h3>
+<p><strong>Mô tả:</strong></p>
+<ul>
+<li>Giáo viên bấm nút sau khi đã chấm xong và sửa bài cho học viên trên lớp. Hệ thống ghi nhận người bấm và thời điểm của <strong>lần bấm gần nhất</strong>; bài đã được ghi nhận (BTVN hoặc Kiểm tra) được tính một lần vào thẻ <code>Đã chấm và sửa bài</code> ở <a href="./class_overview_requirements.md">Tổng quan lớp</a>.</li>
+</ul>
+<p><strong>Giải thích thành phần:</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Thành phần</th>
+<th>Yêu cầu</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Nút <code>Đã Chấm và Sửa Bài Trên Lớp</code></td>
+<td>Luôn hiển thị khi bài tải xong. Chỉ ghi nhận khi <strong>mọi câu</strong> có <strong>mọi câu trả lời của học viên đã nộp</strong> đều có điểm.</td>
+</tr>
+<tr>
+<td>Chưa chấm hết</td>
+<td>Không ghi nhận; hiển thị Toast <code>Thông Báo</code> với nội dung <code>Vui lòng chấm hết bài cho học viên!</code>.</td>
+</tr>
+<tr>
+<td>Ghi nhận</td>
+<td>Mỗi lần bấm hợp lệ <strong>ghi đè</strong> bản ghi của bài bằng người bấm và thời điểm máy chủ của lần bấm đó. Chỉ lưu lần bấm gần nhất, không lưu danh sách các lần bấm trước.</td>
+</tr>
+<tr>
+<td>Chip người bấm</td>
+<td>Dưới nút: avatar, tên và thời điểm cập nhật dạng <code>HH:mm - dd/MM/yyyy</code> của giáo viên bấm gần nhất. Chưa ai bấm thì không hiển thị.</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Điểm cần lưu ý:</strong></p>
+<ul>
+<li>Bấm bao nhiêu lần cũng được, bấm lại khi đã ghi nhận vẫn hợp lệ; chip đổi sang người bấm và thời điểm của lần bấm mới nhất.</li>
+<li>Bản ghi tách riêng BTVN và Kiểm tra, theo bài và lớp. Thẻ <code>Đã chấm và sửa bài</code> ở Tổng quan lớp đếm số bài BTVN + Kiểm tra đã có bản ghi; bấm lại cùng bài không tăng thẻ.</li>
+<li>Ghi nhận không khoá chấm: giáo viên vẫn sửa điểm và nhận xét sau khi bấm.</li>
+</ul>
+<h4 id="testcase-da-cham-va-sua-bai-tren-lop">Testcase — Đã Chấm và Sửa Bài Trên Lớp</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 91: Ghi nhận khi đã chấm hết</td>
+<td>High</td>
+<td>Smoke</td>
+<td>Flow 11 / REQ11</td>
+<td>Giáo viên phụ trách chính</td>
+<td>Mọi câu trả lời của học viên đã nộp đã có điểm</td>
+<td><strong>Given</strong> bấm nút<br><strong>When</strong> lưu thành công<br><strong>Then</strong> hiện chip avatar và thời điểm</td>
+<td>- Một Toast <code>Thành Công</code><br>- Thẻ Đã chấm và sửa bài ở Tổng quan lớp tăng đúng 1 bài, kể cả khi là bài Kiểm tra</td>
+</tr>
+<tr>
+<td>Case 92: Chưa chấm hết</td>
+<td>High</td>
+<td></td>
+<td>EX02 / REQ11</td>
+<td>Giáo viên phụ trách chính</td>
+<td>Còn 1 câu trả lời chưa chấm</td>
+<td><strong>Given</strong> bấm nút<br><strong>When</strong> hệ thống kiểm tra<br><strong>Then</strong> Toast <code>Vui lòng chấm hết bài cho học viên!</code></td>
+<td>- Không ghi nhận<br>- Chip giữ nguyên</td>
+</tr>
+<tr>
+<td>Case 93: Giáo viên khác bấm lại</td>
+<td>Medium</td>
+<td></td>
+<td>REQ11</td>
+<td>Giáo viên phụ trách chính</td>
+<td>Bài đã được giáo viên X ghi nhận lúc 22:14; Y là Giáo viên phụ trách chính hiện tại</td>
+<td><strong>Given</strong> Y bấm nút lúc 22:30<br><strong>When</strong> lưu thành công<br><strong>Then</strong> chip hiện avatar, tên Y và <code>22:30</code></td>
+<td>- Không còn hiển thị X và 22:14<br>- Không tính thêm bài ở Tổng quan lớp</td>
+</tr>
+<tr>
+<td>Case 94: Học viên chỉ xem không chặn ghi nhận</td>
+<td>Medium</td>
+<td></td>
+<td>REQ02 / REQ11</td>
+<td>Giáo viên phụ trách chính</td>
+<td>Học viên đã nộp đều đã chấm; B chưa nộp có câu trả lời chưa chấm</td>
+<td><strong>Given</strong> bấm nút<br><strong>When</strong> hệ thống kiểm tra<br><strong>Then</strong> ghi nhận thành công</td>
+<td>- Câu trả lời của B không tính vào điều kiện</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="tu-hoc-danh-sach-bai-va-bang-thoi-gian">Tự học — Danh sách bài và bảng thời gian</h3>
+<p align="center">
+  <a href="./images/self-study-empty.png"><img src="./images/self-study-empty.png" alt="Menu Tự học — chưa có khóa tự học" width="900" title="Nhấn để xem ảnh gốc"></a><br>
+  <em>Menu Tự học khi lớp chưa có khóa tự học (Figma GV-LOP-050100) — nhấn để xem ảnh gốc</em>
+</p>
+
+<p align="center">
+  <a href="../../management_requirement/class_management/images/58-class-self-study-times.png"><img src="../../management_requirement/class_management/images/58-class-self-study-times.png" alt="Danh sách bài tự học và bảng thời gian từng học viên" width="900" title="Nhấn để xem ảnh gốc"></a><br>
+  <em>Trạng thái có dữ liệu: Danh sách bài tự học và bảng thời gian (ảnh requirement Admin, Giáo viên không có nút thêm) — nhấn để xem ảnh gốc</em>
+</p>
+
+<p><strong>Mô tả:</strong></p>
+<ul>
+<li>Mọi giáo viên của lớp xem khóa tự học của lớp do Admin, Class Handler hoặc Support gán theo requirement Admin <a href="../../management_requirement/class_management/class_detail_self_study_requirements.md">Chi tiết lớp học — Menu Tự học</a>. Vùng trái <code>Chi Tiết Buổi Học</code> là bảng thời gian học trên app của từng học viên ở bài đang chọn; vùng phải <code>Danh Sách Bài Học</code> là các bài tự học. Màn chỉ để xem.</li>
+</ul>
+<p><strong>Giải thích thành phần:</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Thành phần</th>
+<th>Yêu cầu</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Chưa có khóa tự học</td>
+<td>Cả hai vùng hiển thị icon rỗng và <code>Bảng dữ liệu này đang trống</code>; không có nút <code>Thêm khóa tự học</code>.</td>
+</tr>
+<tr>
+<td>Card bài</td>
+<td>Số thứ tự và tên bài theo danh sách tự học của lớp (bài của khóa tự học và bài bổ sung), giữ thứ tự đã lưu. Bấm card để chọn: viền cam, bảng thời gian đổi theo bài.</td>
+</tr>
+<tr>
+<td>Tải dữ liệu</td>
+<td>Tải toàn bộ bài và học viên, không phân trang; có dữ liệu thì mặc định chọn bài 1.</td>
+</tr>
+<tr>
+<td>Bảng thời gian</td>
+<td>Cột <code>Số thứ tự</code>, <code>Tên học viên</code> và 8 cột <code>Học Flashcard</code>, <code>Bài tập</code>, <code>Từ vựng</code>, <code>Ngữ pháp</code>, <code>Đọc</code>, <code>Kanji</code>, <code>Nghe</code>, <code>Bảng chữ</code>. Mỗi ô là tổng thời gian app ghi nhận của đúng học viên–bài–phần, <code>HH:mm:ss</code>.</td>
+</tr>
+<tr>
+<td>Học viên trong bảng</td>
+<td>Toàn bộ học viên của lớp ở đủ 7 trạng thái <code>Đang học</code>, <code>Dự thính</code>, <code>Hoàn thành</code>, <code>Nghỉ học</code>, <code>Rời lớp</code>, <code>Chỉ xem</code>, <code>Xóa</code>; học viên rời lớp vẫn giữ thời gian cũ.</td>
+</tr>
+<tr>
+<td>Vượt 24 giờ</td>
+<td>Ô có tổng thời gian vượt 24 giờ hiển thị tối đa <code>23:59:59</code>; dữ liệu gốc giữ nguyên.</td>
+</tr>
+<tr>
+<td><code>00:00:00</code></td>
+<td>Chưa có thời gian học hoặc tổng bằng 0. Tải lỗi không hiển thị thành <code>00:00:00</code>; vùng lỗi có <code>Thử lại</code>.</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Điểm cần lưu ý:</strong></p>
+<ul>
+<li>Giáo viên không có nút <code>Thêm khóa tự học</code>, <code>Thêm bài học mới</code>; không sửa thời gian; không bấm ô để mở popup.</li>
+<li>Giáo viên mở bảng hoặc bấm card không tạo thời gian học cho học viên.</li>
+<li>Tự học tách khỏi bài học chính: không có buổi học, điểm danh, BTVN; không đổi % BTVN/Đi học của menu Bài học và không vào danh sách BTVN.</li>
+<li>Khác Figma GV-LOP-050100: Figma chỉ có trạng thái chưa có khóa tự học; trạng thái có dữ liệu theo UI của requirement Admin, bỏ các nút thêm.</li>
+</ul>
+<h4 id="testcase-tu-hoc">Testcase — Tự học</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 95: Lớp chưa có khóa tự học</td>
+<td>Medium</td>
+<td></td>
+<td>Flow 15 / REQ29</td>
+<td>Giáo viên</td>
+<td>Lớp chưa được gán khóa tự học</td>
+<td><strong>Given</strong> mở menu Tự học<br><strong>When</strong> tải thành công<br><strong>Then</strong> hai vùng hiển thị <code>Bảng dữ liệu này đang trống</code></td>
+<td>- Không có nút <code>Thêm khóa tự học</code><br>- Không có bài hoặc thời gian giả</td>
+</tr>
+<tr>
+<td>Case 96: Xem bảng thời gian bài tự học</td>
+<td>High</td>
+<td>Smoke</td>
+<td>Flow 15 / REQ29</td>
+<td>Giáo viên</td>
+<td>Lớp có khóa tự học 35 bài, 25 học viên</td>
+<td><strong>Given</strong> mở menu Tự học<br><strong>When</strong> tải xong rồi bấm card bài 3<br><strong>Then</strong> bài 1 được chọn mặc định; sau đó bảng đổi sang bài 3</td>
+<td>- Đủ 35 bài, 25 học viên, không phân trang<br>- Đủ 8 cột thời gian</td>
+</tr>
+<tr>
+<td>Case 97: Đủ học viên mọi trạng thái</td>
+<td>High</td>
+<td></td>
+<td>REQ29</td>
+<td>Giáo viên</td>
+<td>Lớp có học viên ở đủ 7 trạng thái; A đã học 00:10:00 rồi Rời lớp</td>
+<td><strong>Given</strong> xem bảng thời gian<br><strong>When</strong> render<br><strong>Then</strong> có đủ học viên, A vẫn 00:10:00</td>
+<td>- Không lọc Rời lớp/Xóa/Chỉ xem</td>
+</tr>
+<tr>
+<td>Case 98: Vượt 24 giờ và zero thật</td>
+<td>Medium</td>
+<td></td>
+<td>REQ29</td>
+<td>Giáo viên</td>
+<td>A có Nghe 25:30:00, Đọc 00:00:00</td>
+<td><strong>Given</strong> xem dòng A<br><strong>When</strong> định dạng ô<br><strong>Then</strong> Nghe <code>23:59:59</code>, Đọc <code>00:00:00</code></td>
+<td>- Dữ liệu gốc giữ nguyên</td>
+</tr>
+<tr>
+<td>Case 99: Không thêm khóa/bài</td>
+<td>High</td>
+<td></td>
+<td>EX17 / REQ29</td>
+<td>Giáo viên</td>
+<td>Lớp đã có hoặc chưa có khóa tự học</td>
+<td><strong>Given</strong> gửi request thêm khóa tự học hoặc thêm bài tự học<br><strong>When</strong> backend kiểm tra quyền<br><strong>Then</strong> từ chối</td>
+<td>- Không có nút thêm trên giao diện<br>- Danh sách giữ nguyên</td>
+</tr>
+<tr>
+<td>Case 100: Lỗi tải bảng thời gian</td>
+<td>Medium</td>
+<td></td>
+<td>EX18 / REQ29</td>
+<td>Giáo viên</td>
+<td>API bảng thời gian lỗi</td>
+<td><strong>Given</strong> bấm card bài<br><strong>When</strong> tải thất bại<br><strong>Then</strong> vùng trái có lỗi và <code>Thử lại</code></td>
+<td>- Không hiển thị <code>00:00:00</code> giả</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="toast-phan-hoi-crud">Toast phản hồi CRUD</h3>
+<p align="center">
+  <a href="../../images/01-toast-crud.png"><img src="../../images/01-toast-crud.png" alt="Bốn trạng thái Toast CRUD" width="520" title="Nhấn để xem ảnh gốc"></a><br>
+  <em>Toast Thành Công, Thông Báo, Cảnh Báo và Có Lỗi Xảy Ra — nhấn để xem ảnh gốc</em>
+</p>
+
+<p><strong>Mô tả:</strong></p>
+<ul>
+<li>Phản hồi sau các thao tác thay đổi dữ liệu: bắt đầu, kết thúc, hoàn thành buổi học, giao bài, thu hồi bài kiểm tra, lưu điểm, lưu nhận xét, áp dụng nhận xét chung, ghi nhận Đã chấm và sửa bài.</li>
+</ul>
+<p><strong>Giải thích thành phần:</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Loại Toast</th>
+<th>Tiêu đề cố định</th>
+<th>Khi sử dụng trong màn chấm</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Thành công</td>
+<td><code>Thành Công</code></td>
+<td>Giao bài: <code>Giao bài kiểm tra thành công.</code>; thu hồi: <code>Thu hồi bài kiểm tra thành công.</code>; áp dụng nhận xét chung xong: <code>Đã cập nhật nhận xét chung.</code>; ghi nhận nút: <code>Đã ghi nhận chấm và sửa bài trên lớp.</code></td>
+</tr>
+<tr>
+<td>Thông tin</td>
+<td><code>Thông Báo</code></td>
+<td><code>Lớp không có lịch để tính lương buổi này</code>; <code>Bạn đã bỏ qua chọn lịch, buổi học này sẽ không được tính lương</code>; <code>Chỉ tải được tài nguyên của 3 bài đã mở gần nhất</code>; <code>Đã sao chép</code>; <code>Dữ liệu không hợp lệ</code>; <code>Vui lòng chấm hết bài cho học viên!</code></td>
+</tr>
+<tr>
+<td>Cảnh báo</td>
+<td><code>Cảnh Báo</code></td>
+<td><code>Lớp chưa bắt đầu!</code> khi bắt đầu buổi học hoặc giao bài kiểm tra lúc lớp chưa ở trạng thái Đang học; <code>File vượt quá dung lượng cho phép (25MB).</code> khi file ghi âm hoặc ảnh nhận xét lớn hơn 25MB.</td>
+</tr>
+<tr>
+<td>Lỗi</td>
+<td><code>Có Lỗi Xảy Ra</code></td>
+<td>Bắt đầu, kết thúc, hoàn thành buổi học; lưu điểm, nhận xét, tải file, nhận xét chung hoặc ghi nhận nút thất bại.</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Điểm cần lưu ý:</strong></p>
+<ul>
+<li>Bấm điểm và lưu nhận xét từng thẻ lưu ngay, không hiển thị Toast thành công để tránh lặp Toast khi chấm nhiều học viên; thành công thể hiện bằng điểm/nhận xét được cập nhật trên thẻ.</li>
+<li>Bắt đầu, Kết thúc, Hoàn thành buổi học thành công không hiển thị Toast thành công; kết quả thể hiện bằng việc chuyển bước và màn <code>Buổi học đã kết thúc</code>.</li>
+<li>Mỗi thao tác logic chỉ hiển thị một Toast kết quả; <code>Huỷ</code> và thao tác chỉ đọc không hiển thị Toast CRUD.</li>
+<li>Toast không chứa thông tin kỹ thuật, token hoặc stack trace.</li>
+</ul>
+<h4 id="testcase-toast-phan-hoi-crud">Testcase — Toast phản hồi CRUD</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Toast Case 1: Thành công</td>
+<td>High</td>
+<td></td>
+<td>Ràng buộc Toast CRUD</td>
+<td>Giáo viên phụ trách chính</td>
+<td>Dữ liệu hợp lệ</td>
+<td><strong>Given</strong> áp dụng nhận xét chung hoặc bấm nút Đã Chấm và Sửa Bài Trên Lớp<br><strong>When</strong> backend xử lý thành công<br><strong>Then</strong> hiển thị Toast <code>Thành Công</code></td>
+<td>- Đúng nội dung theo bảng<br>- Chỉ hiển thị sau khi backend xác nhận<br>- Đúng một Toast</td>
+</tr>
+<tr>
+<td>Toast Case 2: Thông báo</td>
+<td>Medium</td>
+<td></td>
+<td>Ràng buộc Toast CRUD</td>
+<td>Giáo viên phụ trách chính</td>
+<td>Còn câu chưa chấm hoặc thao tác sao chép/dán</td>
+<td><strong>Given</strong> bấm nút Đã Chấm khi chưa chấm hết, hoặc sao chép/dán<br><strong>When</strong> hệ thống xử lý<br><strong>Then</strong> hiển thị Toast <code>Thông Báo</code></td>
+<td>- Đúng nội dung theo bảng<br>- Không lưu dữ liệu khi chưa chấm hết</td>
+</tr>
+<tr>
+<td>Toast Case 3: Lỗi xử lý</td>
+<td>High</td>
+<td></td>
+<td>Ràng buộc Toast CRUD</td>
+<td>Giáo viên phụ trách chính</td>
+<td>Backend/network lỗi</td>
+<td><strong>Given</strong> lưu điểm, nhận xét hoặc file<br><strong>When</strong> thao tác không hoàn tất<br><strong>Then</strong> hiển thị Toast <code>Có Lỗi Xảy Ra</code></td>
+<td>- Dữ liệu không cập nhật một phần cho cùng học viên–câu<br>- Không lộ thông tin kỹ thuật</td>
+</tr>
+<tr>
+<td>Toast Case 4: Không lặp Toast khi chấm</td>
+<td>Medium</td>
+<td></td>
+<td>Ràng buộc Toast CRUD</td>
+<td>Giáo viên phụ trách chính</td>
+<td>Chấm liên tiếp nhiều học viên</td>
+<td><strong>Given</strong> bấm điểm cho 10 học viên<br><strong>When</strong> lưu thành công<br><strong>Then</strong> không hiển thị Toast thành công</td>
+<td>- Điểm cập nhật trên từng thẻ<br>- Không chồng nhiều Toast</td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2 id="2-yeu-cau">2. Yêu cầu</h2>
+<h3 id="21-flow-chinh">2.1. Flow chính</h3>
+<p><strong>Flow 1 / REQ19: Xem bài học</strong></p>
+<pre><code class="language-text">Giáo viên vào Chi tiết lớp → Giảng dạy → Bài học
+      → Hệ thống tải Danh sách bài học (giáo viên của buổi, mốc mở, vòng BTVN/Đi học), chọn bài đầu tiên
+      → Giáo viên chọn bài / tab: Buổi học, Thông tin, Nội dung, Tài nguyên, Kiến thức
+      → Tab Buổi học hiển thị theo trạng thái buổi: Chưa mở (Dặn dò), Đang dạy / Chờ hoàn thành (tiếp tục), Hoàn thành (kết quả)
+</code></pre>
+<p><strong>Flow 2 / REQ20 / REQ21: Bắt đầu buổi học</strong></p>
+<pre><code class="language-text">Giáo viên chọn bài Chưa mở → tab Buổi học hiển thị Dặn dò trước buổi học
+      → Tick &quot;Tôi đã đọc ghi chú&quot; → nút &quot;Bắt đầu buổi học&quot; mở
+      → Lớp không Đang học và không phải lớp demo: Toast &quot;Lớp chưa bắt đầu!&quot;, dừng
+      → Lớp không có lịch tuần này: popup &quot;Bắt đầu buổi học&quot; → Xác nhận → tạo buổi Đang dạy; Toast &quot;Lớp không có lịch để tính lương buổi này&quot;
+      → Có lịch: popup &quot;Chọn lịch dạy&quot; (lịch tuần này của chính giáo viên)
+            → Chọn lịch → popup &quot;Bắt đầu buổi học&quot; → Xác nhận → tạo buổi Đang dạy; gắn lịch (lịch vẫn Đang đợi)
+            → &quot;Không chọn lịch&quot; → Xác nhận → tạo buổi Đang dạy; Toast &quot;Bạn đã bỏ qua chọn lịch, buổi học này sẽ không được tính lương&quot;
+      → Chuyển sang Bước 1 — Điểm danh
+</code></pre>
+<p><strong>Flow 3 / REQ22: Điểm danh và Kết thúc buổi học</strong></p>
+<pre><code class="language-text">Giáo viên ở Bước 1 (hoặc bấm &quot;Vào điểm danh&quot; ở bài Đang dạy → popup Tiếp tục buổi học → Xác nhận)
+      → Chọn trạng thái điểm danh cho từng học viên; nhập Ghi chú cho lớp học hoặc tick &quot;Không có dặn dò cho học viên&quot;
+      → Mỗi thay đổi lưu nháp lên server
+      → Đủ điều kiện: bấm &quot;Kết thúc buổi học&quot; → popup nhắc tắt record → Xác nhận
+      → Lưu điểm danh và nhận xét lớp; buổi Chờ hoàn thành; chuyển Bước 2
+</code></pre>
+<p><strong>Flow 4 / REQ23: Ghi chú và Hoàn thành buổi học</strong></p>
+<pre><code class="language-text">Giáo viên ở Bước 2 (hoặc bấm &quot;Hoàn thành buổi học&quot; ở bài Chờ hoàn thành)
+      → Nhập ghi chú từng học viên (không bắt buộc), ghi chú gửi Support và gửi giáo viên tiếp theo (hoặc tick &quot;Không có dặn dò&quot;)
+      → Bấm &quot;Hoàn thành buổi học&quot; → popup nhắc kiểm tra ghi chú và tắt record → Xác nhận
+      → Lưu ghi chú; buổi Hoàn thành; lịch đã gắn chuyển Hoàn thành và phát sinh lương; xoá nháp; hiển thị &quot;Buổi học đã kết thúc&quot;
+</code></pre>
+<p><strong>Flow 5 / REQ01: Mở màn chấm bài</strong></p>
+<pre><code class="language-text">Giáo viên phụ trách chính vào Chi tiết lớp → Bài tập và Kiểm tra, chọn tab BTVN hoặc Kiểm tra
+      → Bấm nút điều hướng trên card bài, hoặc bấm dòng học viên đã nộp trong bảng của bài
+      → Bài bổ sung nhiều bài nguồn: hiển thị popup chọn bài nguồn
+      → Hệ thống kiểm tra quyền chấm của giáo viên với lớp
+      → Mở màn chấm của bài; chọn câu đầu tiên; nếu vào từ dòng học viên thì lọc sẵn học viên đó
+</code></pre>
+<p><strong>Flow 6 / REQ06: Chấm điểm một câu cho một học viên</strong></p>
+<pre><code class="language-text">Giáo viên chọn câu trong danh sách Câu hỏi
+      → Hệ thống tải câu trả lời của học viên hợp lệ (REQ02) cho câu đó
+      → Giáo viên bấm điểm 0–10 trên thẻ học viên đã nộp
+      → Hệ thống lưu điểm cho đúng học viên–câu–bài–lớp
+      → Thành công: thẻ, trạng thái và tỷ lệ của câu cập nhật; kiểm tra điều kiện tính điểm bài (Flow 7)
+      → Thất bại: giữ điểm cũ; Toast &quot;Có Lỗi Xảy Ra&quot;
+</code></pre>
+<p><strong>Flow 7 / REQ07: Tính điểm bài của học viên</strong></p>
+<pre><code class="language-text">Sau mỗi lần lưu điểm câu của học viên A
+      → Hệ thống lấy điểm mọi câu A có câu trả lời trong bài
+      → Nếu mọi câu đó đã có điểm (0–10): điểm bài = trung bình cộng điểm các câu
+      → Lưu điểm bài vào điểm BTVN (bài chính hoặc đúng bài nguồn của bài bổ sung) hoặc điểm Kiểm tra của A
+      → Nếu còn câu chưa chấm: chưa tính điểm bài, bài của A giữ trạng thái chưa chấm
+</code></pre>
+<p><strong>Flow 8 / REQ08: Nhận xét học viên</strong></p>
+<pre><code class="language-text">Giáo viên nhập chữ, ghi âm (micro) hoặc tải ảnh (icon tài liệu) trên thẻ học viên
+      → Hệ thống lưu nhận xét cho đúng học viên–câu–bài–lớp
+      → Sao chép: lưu chữ + ảnh + ghi âm vào bộ nhớ tạm; Toast &quot;Đã sao chép&quot;
+      → Dán: thay nhận xét của thẻ đích bằng dữ liệu đã sao chép; dữ liệu sai định dạng thì Toast &quot;Dữ liệu không hợp lệ&quot;
+</code></pre>
+<p><strong>Flow 9 / REQ09: Nhận xét chung</strong></p>
+<pre><code class="language-text">Giáo viên nhập Nhận xét chung của câu và xác nhận
+      → Popup &quot;Áp dụng nhận xét chung&quot;
+      → Huỷ: đóng popup, không đổi dữ liệu
+      → Xác nhận: ghi đè phần chữ nhận xét của mọi học viên có câu trả lời ở câu, hiển thị tiến độ
+      → Thành công: Toast &quot;Đã cập nhật nhận xét chung.&quot;; thất bại: Toast &quot;Có Lỗi Xảy Ra&quot;
+</code></pre>
+<p><strong>Flow 10 / REQ10: Chấm câu hỏi con</strong></p>
+<pre><code class="language-text">Giáo viên mở tab Câu hỏi N trong thẻ học viên của câu cha
+      → Bấm điểm 0–10 cho câu con
+      → Khi mọi câu con đã có điểm: điểm câu cha = trung bình câu con, lưu cho câu cha
+      → Tiếp tục Flow 7
+</code></pre>
+<p><strong>Flow 11 / REQ11: Ghi nhận Đã chấm và sửa bài trên lớp</strong></p>
+<pre><code class="language-text">Giáo viên bấm &quot;Đã Chấm và Sửa Bài Trên Lớp&quot;
+      → Hệ thống kiểm tra mọi câu trả lời của học viên đã nộp đều có điểm
+      → Chưa đủ: Toast &quot;Vui lòng chấm hết bài cho học viên!&quot;, không lưu
+      → Đủ: ghi đè bản ghi của bài bằng người bấm và thời điểm máy chủ của lần bấm này
+      → Chip hiển thị avatar, tên và thời điểm của người bấm gần nhất; Toast &quot;Đã ghi nhận chấm và sửa bài trên lớp.&quot;
+</code></pre>
+<p><strong>Flow 12 / REQ13: Xem kết quả Bài tập và Kiểm tra</strong></p>
+<pre><code class="language-text">Giáo viên vào Chi tiết lớp → Giảng dạy → Bài tập và Kiểm tra
+      → Hệ thống tải khối Tổng Quan, danh sách BTVN, danh sách Kiểm tra và học viên hợp lệ
+      → Mặc định tab BTVN, chọn card đầu tiên
+      → Giáo viên đổi tab / tìm theo tên bài / bấm card
+      → Vùng trái hiển thị bảng kết quả của bài (BTVN chưa mở: &quot;Bài học chưa mở&quot;; Kiểm tra chưa giao: xem trước đề)
+</code></pre>
+<p><strong>Flow 13 / REQ17: Giao bài kiểm tra</strong></p>
+<pre><code class="language-text">Giáo viên phụ trách chính chọn card Kiểm tra &quot;Chưa giao&quot; → xem trước đề
+      → Bấm &quot;Giao bài&quot; → popup &quot;Nhấn 'Xác nhận' để giao bài kiểm tra này&quot;
+      → Huỷ: đóng popup, không đổi dữ liệu
+      → Xác nhận: kiểm tra lớp Đang học hoặc lớp không chính thức
+      → Không đạt: Toast &quot;Lớp chưa bắt đầu!&quot;, bài vẫn Chưa giao
+      → Đạt: lưu lượt giao (lớp, bài, giáo viên, ngày giao); card &quot;Đang đợi nộp bài&quot;; nút đổi thành &quot;Thu hồi&quot;; Toast &quot;Giao bài kiểm tra thành công.&quot;
+</code></pre>
+<p><strong>Flow 14 / REQ18: Thu hồi bài kiểm tra</strong></p>
+<pre><code class="language-text">Giáo viên phụ trách chính chọn card Kiểm tra đã giao → bấm &quot;Thu hồi&quot;
+      → Popup &quot;Bạn muốn thu hồi bài kiểm tra này? Toàn bộ bài làm và điểm của học viên sẽ bị xoá.&quot;
+      → Huỷ: đóng popup, không đổi dữ liệu
+      → Xác nhận: xoá lượt giao và toàn bộ bài làm, điểm, nhận xét chấm của bài
+      → Bài về &quot;Chưa giao&quot;, vùng trái về xem trước đề; Toast &quot;Thu hồi bài kiểm tra thành công.&quot;
+</code></pre>
+<p><strong>Flow 15 / REQ29: Xem Tự học</strong></p>
+<pre><code class="language-text">Giáo viên vào Chi tiết lớp → Giảng dạy → Tự học
+      → Hệ thống kiểm tra giáo viên thuộc lớp
+      → Lớp chưa có khóa tự học: hai vùng &quot;Bảng dữ liệu này đang trống&quot;, không có nút thêm
+      → Có bài: tải toàn bộ bài và học viên (đủ 7 trạng thái), mặc định chọn bài 1
+      → Bấm card bài: bảng thời gian 8 phần của bài đó (HH:mm:ss, tối đa hiển thị 23:59:59); chỉ đọc
+</code></pre>
+<h3 id="22-ngoai-le">2.2. Ngoại lệ</h3>
+<ul>
+<li><strong>EX01:</strong> Giáo viên không phải <code>Giáo viên phụ trách chính</code> của lớp → không có nút điều hướng chấm, <code>Giao bài</code>, <code>Thu hồi</code>; mở URL hoặc gửi request chấm/giao/thu hồi bị backend từ chối, không lưu dữ liệu. Giáo viên không thuộc lớp không xem được menu.</li>
+<li><strong>EX02:</strong> Bấm <code>Đã Chấm và Sửa Bài Trên Lớp</code> khi còn câu trả lời chưa chấm → Toast <code>Thông Báo</code> <code>Vui lòng chấm hết bài cho học viên!</code>; không ghi nhận, chip giữ nguyên.</li>
+<li><strong>EX03:</strong> Dán nhận xét với dữ liệu bộ nhớ tạm sai định dạng → Toast <code>Thông Báo</code> <code>Dữ liệu không hợp lệ</code>; nhận xét giữ nguyên.</li>
+<li><strong>EX04:</strong> Lưu điểm, nhận xét hoặc nhận xét chung thất bại → Toast <code>Có Lỗi Xảy Ra</code>; không tính lại điểm bài từ dữ liệu chưa lưu.</li>
+<li><strong>EX05:</strong> Tải file ghi âm hoặc ảnh thất bại → bỏ chip <code>Đang tải...</code>, không thêm file; Toast <code>Có Lỗi Xảy Ra</code>.</li>
+<li><strong>EX06:</strong> Bài Kiểm tra bị <code>Thu hồi</code> trong lúc đang chấm → request chấm tiếp theo bị từ chối vì bài làm đã bị xoá; giáo viên quay lại menu Bài tập và Kiểm tra để tải dữ liệu mới.</li>
+<li><strong>EX07:</strong> Học viên có câu trả lời nhưng chưa nộp bài → thẻ <code>Chỉ xem</code>; backend từ chối request chấm/nhận xét cho học viên đó.</li>
+<li><strong>EX08:</strong> Bài chưa có học viên nộp → vùng thẻ hiển thị <code>Chưa có học sinh nộp bài</code>; không có thẻ để chấm.</li>
+<li><strong>EX09:</strong> File ghi âm hoặc ảnh nhận xét lớn hơn 25MB → không tải lên, không thêm chip; Toast <code>Cảnh Báo</code> <code>File vượt quá dung lượng cho phép (25MB).</code></li>
+<li><strong>EX10:</strong> Giao bài kiểm tra khi lớp chính thức chưa ở trạng thái <code>Đang học</code> → Toast <code>Cảnh Báo</code> <code>Lớp chưa bắt đầu!</code>; bài vẫn <code>Chưa giao</code>.</li>
+<li><strong>EX11:</strong> Giao hoặc thu hồi thất bại do backend/network → Toast <code>Có Lỗi Xảy Ra</code>; trạng thái bài và dữ liệu bài làm giữ nguyên.</li>
+<li><strong>EX12:</strong> Bắt đầu buổi học khi lớp chính thức chưa ở trạng thái <code>Đang học</code> → Toast <code>Cảnh Báo</code> <code>Lớp chưa bắt đầu!</code>; không tạo buổi, không đổi lịch.</li>
+<li><strong>EX13:</strong> Sửa điểm danh hoặc ghi chú sau khi buổi đã <code>Hoàn thành</code>, hoặc sửa điểm danh khi buổi đã <code>Chờ hoàn thành</code> → backend từ chối; dữ liệu giữ nguyên.</li>
+<li><strong>EX14:</strong> Tải tài nguyên của bài bị khoá → không tải; Toast <code>Thông Báo</code> <code>Chỉ tải được tài nguyên của 3 bài đã mở gần nhất</code>; request trực tiếp bị từ chối.</li>
+<li><strong>EX15:</strong> Hai giáo viên cùng bắt đầu một bài → chỉ tạo một buổi; người sau vào tiếp tục buổi đã có, không chọn lịch lần hai; mỗi buổi phát sinh lương tối đa một lần khi Hoàn thành.</li>
+<li><strong>EX16:</strong> Bắt đầu, Kết thúc hoặc Hoàn thành buổi thất bại do backend/network → Toast <code>Có Lỗi Xảy Ra</code>; trạng thái buổi giữ nguyên, nháp không mất.</li>
+<li><strong>EX17:</strong> Giáo viên gửi request thêm khóa tự học hoặc thêm bài tự học → backend từ chối; danh sách Tự học giữ nguyên.</li>
+<li><strong>EX18:</strong> Tải danh sách bài hoặc bảng thời gian Tự học lỗi → vùng lỗi có <code>Thử lại</code>; không hiển thị rỗng hoặc <code>00:00:00</code> giả.</li>
+</ul>
+<h3 id="23-yeu-cau-khac">2.3. Yêu cầu khác</h3>
+<ul>
+<li><strong>REQ01 – Quyền và điểm vào:</strong> Chỉ <code>Giáo viên phụ trách chính</code> của lớp được mở màn chấm và chấm điểm/nhận xét BTVN, Kiểm tra. Điểm vào là nút điều hướng trên card bài và dòng học viên đã nộp (lọc sẵn học viên). Bài bổ sung nhiều bài nguồn chọn bài nguồn qua popup trước khi vào.</li>
+<li><strong>REQ02 – Tập học viên hợp lệ:</strong> Chỉ tài khoản role học viên của lớp. BTVN: học viên đã được điểm danh (khác <code>Chưa điểm danh</code>) ở buổi của bài đã mở, và <strong>thời điểm mở bài không nằm trong khoảng học viên ở trạng thái <code>Nghỉ học</code>, <code>Rời lớp</code> hoặc <code>Xóa</code></strong>. Khoảng tính từ lúc học viên chuyển sang một trong ba trạng thái này đến lúc chuyển sang trạng thái khác (chưa chuyển thì đến hiện tại). Bài mở trước hoặc sau khoảng đó vẫn được chấm; <code>Chỉ xem</code>, <code>Dự thính</code>, <code>Đang học</code>, <code>Hoàn thành</code> không bị loại. Kiểm tra: học viên hợp lệ theo lượt giao bài kiểm tra. Trong tập này, học viên <strong>đã nộp</strong> được chấm; học viên có câu trả lời nhưng chưa nộp hiển thị <code>Chỉ xem</code>.</li>
+<li><strong>REQ03 – Danh sách câu và trạng thái:</strong> Liệt kê mọi câu của bài theo thứ tự đề. Câu <code>Đã chấm</code> khi mọi câu trả lời của học viên đã nộp có điểm, hoặc câu không có câu trả lời nhưng bài có học viên đã nộp (<code>Bạn không cần chấm câu hỏi này!</code>, tỷ lệ 100%). Câu đang chọn là <code>Đang chấm</code>. Tỷ lệ điểm = tổng điểm câu trả lời đã chấm / (số câu trả lời đã chấm × 10), làm tròn số nguyên phần trăm. Bộ lọc <code>Trạng Thái</code> gồm <code>Chưa chấm</code>, <code>Đã chấm</code>.</li>
+<li><strong>REQ04 – Bộ lọc học viên:</strong> <code>Chưa Chấm</code> (mặc định tắt) giữ lại học viên chưa có điểm ở câu và học viên vừa chấm trong lúc lọc cho đến khi đổi câu; <code>Hiện Tên</code> (mặc định bật) ẩn/hiện tên; <code>Học Viên</code> chọn nhiều học viên có câu trả lời. Bộ lọc chỉ áp dụng cho câu đang chọn.</li>
+<li><strong>REQ05 – Loại câu và người chấm:</strong></li>
+</ul>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Nhãn</th>
+<th>Mã loại câu</th>
+<th>Người chấm</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Trắc nghiệm</td>
+<td>1 (từ vựng), 5 (câu), 11 (hình ảnh)</td>
+<td>App tự chấm</td>
+</tr>
+<tr>
+<td>Sắp xếp</td>
+<td>7</td>
+<td>App tự chấm</td>
+</tr>
+<tr>
+<td>Nối từ</td>
+<td>8 (nối cột)</td>
+<td>App tự chấm</td>
+</tr>
+<tr>
+<td>Nói</td>
+<td>22 (nhận diện lời nói)</td>
+<td>App tự chấm</td>
+</tr>
+<tr>
+<td>Đọc</td>
+<td>3 (ghi âm), 10 (nhập vai)</td>
+<td>Giáo viên chấm</td>
+</tr>
+<tr>
+<td>Viết</td>
+<td>4, 44 (vẽ/viết), 6 (văn bản)</td>
+<td>Giáo viên chấm</td>
+</tr>
+<tr>
+<td>Hình ảnh</td>
+<td>2 (tải/chụp ảnh)</td>
+<td>Giáo viên chấm</td>
+</tr>
+<tr>
+<td>Câu hỏi con</td>
+<td>Câu có danh sách câu con</td>
+<td>Theo loại từng câu con</td>
+</tr>
+</tbody>
+</table></div>
+<p>Câu app tự chấm có điểm sẵn khi học viên nộp; <code>Giáo viên phụ trách chính</code> được sửa đè. Câu giáo viên chấm ở trạng thái chưa chấm đến khi giáo viên bấm điểm.
+- <strong>REQ06 – Lưu điểm câu:</strong> Điểm câu là số nguyên 0–10, lưu ngay khi bấm cho đúng học viên–câu–bài–lớp; được đổi điểm và nhận xét bất kỳ lúc nào, <strong>không có mốc khoá</strong> (kể cả sau khi đã ghi nhận <code>Đã Chấm và Sửa Bài Trên Lớp</code> hoặc lớp đã Hoàn thành).
+- <strong>REQ07 – Điểm bài:</strong> Điểm BTVN/Kiểm tra của học viên = trung bình cộng điểm các câu học viên có câu trả lời trong bài, chỉ tính khi mọi câu đó đã có điểm; lưu giá trị gốc, hiển thị làm tròn 1 chữ số thập phân theo menu Bài tập và Kiểm tra. BTVN của bài bổ sung lưu điểm theo từng bài nguồn; điểm BTVN của bài = trung bình các bài nguồn, chỉ khi mọi bài nguồn đã chấm.
+- <strong>REQ08 – Nhận xét học viên:</strong> Gồm chữ, danh sách file ghi âm, danh sách file ảnh (mỗi file tối đa 25MB), gắn đúng học viên–câu–bài–lớp; thêm/xoá file lưu ngay. Sao chép/dán chuyển cả ba phần; dán thay nội dung hiện có của thẻ đích.
+- <strong>REQ09 – Nhận xét chung:</strong> Xác nhận qua popup; ghi đè phần chữ nhận xét của mọi học viên có câu trả lời ở câu, không phụ thuộc bộ lọc, giữ nguyên file ghi âm/ảnh.
+- <strong>REQ10 – Câu hỏi con:</strong> Chấm từng câu con; điểm câu cha = trung bình câu con khi mọi câu con có điểm. Đáp án câu con ghép theo mã câu con, thiếu mã thì theo thứ tự.
+- <strong>REQ11 – Đã chấm và sửa bài trên lớp:</strong> Chỉ ghi nhận khi mọi câu trả lời của học viên đã nộp có điểm. Bấm không giới hạn số lần; mỗi lần ghi đè người bấm và thời điểm máy chủ, chỉ lưu lần bấm gần nhất. Chip hiển thị avatar, tên và thời điểm của người bấm gần nhất. Bản ghi tách BTVN/Kiểm tra theo bài và lớp. Thẻ <code>Đã chấm và sửa bài</code> ở Tổng quan lớp = số bài BTVN + Kiểm tra đã có bản ghi, mỗi bài tính một lần dù bấm nhiều lần.
+- <strong>REQ12 – Đồng bộ dữ liệu:</strong> Thay đổi điểm/nhận xét được phản ánh ở bảng học viên, card bài, khối Tổng Quan của menu Bài tập và Kiểm tra và các chỉ số Điểm BTVN, Điểm KT, Đã chấm và sửa bài ở Tổng quan lớp sau khi quay lại hoặc tải lại.</p>
+<ul>
+<li><strong>REQ13 – Danh sách bài:</strong> Tab <code>BTVN</code> gồm một BTVN cho mỗi bài học của lớp (kể cả bài bổ sung, không gồm Tự học); tab <code>Kiểm Tra</code> gồm bài kiểm tra của khoá học và bài kiểm tra bổ sung do Admin thêm, sắp theo ngày giao tăng dần, bài chưa giao xếp sau. Giáo viên không thêm bài kiểm tra. BTVN tự giao khi bài học mở, giáo viên không giao/thu hồi BTVN; chỉ bài kiểm tra có Giao bài/Thu hồi. Tìm theo tên bài; tải toàn bộ, không phân trang; mặc định tab BTVN và card đầu tiên.</li>
+<li><strong>REQ14 – Khối Tổng Quan:</strong> <code>Đã Chấm K.Tra</code> = bài kiểm tra Đã chấm / tổng bài kiểm tra; <code>K.Tra Đã Giao</code> = bài đã giao / tổng bài kiểm tra; <code>Đã Chấm BTVN</code> = BTVN Đã chấm / tổng BTVN; <code>Điểm K.Tra</code>, <code>Điểm BTVN</code> = trung bình điểm các bài đã chấm (điểm 0 vẫn tính), làm tròn 1 chữ số thập phân, không có thì trống; <code>Tỉ Lệ Làm BTVN</code> = trung bình tỷ lệ nộp BTVN của học viên hợp lệ trên các bài đã mở. Tính toàn lớp, không đổi theo card hoặc tìm kiếm.</li>
+<li><strong>REQ15 – Badge và card:</strong> Badge = số bài Chưa chấm của tab. Bốn nhãn <code>Chưa giao</code>, <code>Đang đợi nộp bài</code>, <code>Chưa chấm</code>, <code>Đã chấm</code> theo dữ liệu giao/nộp/chấm (BTVN Chưa giao = bài học chưa mở). Vòng số đã nộp <code>S/N</code> = học viên hợp lệ đã nộp / tổng học viên hợp lệ. Vòng tỷ lệ chấm = C/S × 100, S = 0 là 0%.</li>
+<li><strong>REQ16 – Bảng kết quả học viên:</strong> Gồm tập học viên hợp lệ (REQ02) với Điểm số (trống khi chưa chấm, 0 hợp lệ), tên, thời gian làm bài (tối đa hiển thị 23:59:59), trạng thái nộp và số câu bỏ qua. Bấm dòng Đã nộp mở màn chấm (chỉ Giáo viên phụ trách chính). Không có reset.</li>
+<li><strong>REQ17 – Giao bài kiểm tra:</strong> Chỉ <code>Giáo viên phụ trách chính</code>, qua popup xác nhận; lớp phải <code>Đang học</code> hoặc là lớp không chính thức. Thành công lưu lượt giao với ngày giao; bài chưa giao hiển thị xem trước đề.</li>
+<li>
+<p><strong>REQ18 – Thu hồi bài kiểm tra:</strong> Chỉ <code>Giáo viên phụ trách chính</code>, qua popup có cảnh báo xoá dữ liệu. Thành công xoá lượt giao và toàn bộ bài làm, điểm, nhận xét chấm của bài; bài về Chưa giao; giao lại là lượt mới.</p>
+</li>
+<li>
+<p><strong>REQ19 – Danh sách bài học:</strong> Toàn bộ bài của lớp theo thứ tự (gồm bài bổ sung), mặc định chọn bài đầu. Card bài đã mở có giáo viên của buổi (người bắt đầu), mốc mở <code>HH:mm - dd/MM/yyyy</code>, vòng BTVN/Đi học; card chưa mở chỉ có số thứ tự xám, tên, mô tả. Giáo viên không thêm/sửa/xoá bài.</p>
+</li>
+<li><strong>REQ20 – Dặn dò trước buổi học:</strong> Bài Chưa mở hiển thị 5 dòng dặn dò cố định và checkbox <code>Tôi đã đọc ghi chú</code>; phải tick mới bắt đầu được. Không hiển thị ghi chú hay nhận xét của bài trước (chỉ xem ở bài đã hoàn thành). Mọi giáo viên của lớp được bắt đầu bất kỳ bài chưa mở; lớp phải <code>Đang học</code> hoặc là lớp không chính thức.</li>
+<li><strong>REQ21 – Chọn lịch và lương buổi:</strong> Lớp có lịch tuần này thì hiện popup <code>Chọn lịch dạy</code> gồm lịch tuần này của chính giáo viên (lịch Hoàn thành không chọn được, lịch huỷ ẩn) và <code>Không chọn lịch</code>. Chọn lịch: gắn lịch với buổi và giáo viên, lịch giữ <code>Đang đợi</code> (lịch cố định chưa có bản ghi thì tạo bản ghi Đang đợi); lịch đã gắn không chọn được cho buổi khác. Lịch chỉ chuyển <code>Hoàn thành</code> và phát sinh lương buổi dạy (một lần) khi bấm <code>Hoàn thành buổi học</code>; ngày tính lương là ngày của lịch, không phải ngày hoàn thành. Không chọn lịch hoặc lớp không có lịch tuần này: không phát sinh lương, có Toast <code>Thông Báo</code> tương ứng. Mỗi bài một buổi.</li>
+<li><strong>REQ22 – Điểm danh:</strong> Danh sách gồm học viên <code>Đang học</code>, <code>Dự thính</code>, <code>Hoàn thành</code>. Mỗi học viên một trạng thái trong <code>Có mặt</code>, <code>Vào trễ</code>, <code>Ra sớm</code>, <code>Vào trễ &amp; Ra sớm</code>, <code>Nghỉ CP</code>, <code>Nghỉ KP</code> (mặc định <code>Chưa điểm danh</code>). Kết thúc buổi học khi điểm danh đủ và có ghi chú lớp hoặc tick <code>Không có dặn dò cho học viên</code>; lưu điểm danh và <code>Giáo viên nhận xét lớp</code>, buổi chuyển <code>Chờ hoàn thành</code>.</li>
+<li><strong>REQ23 – Hoàn thành buổi học:</strong> Ghi chú từng học viên (gửi Support, gửi học viên) không bắt buộc. Ghi chú gửi Support và gửi giáo viên tiếp theo phải có nội dung hoặc tick checkbox <code>Không có dặn dò</code> tương ứng. Hoàn thành lưu ghi chú, buổi chuyển <code>Hoàn thành</code>, lịch đã gắn chuyển <code>Hoàn thành</code> và phát sinh lương, xoá nháp.</li>
+<li><strong>REQ24 – Nháp và tiếp tục:</strong> Dữ liệu Bước 1/Bước 2 lưu nháp trên server sau mỗi thay đổi, theo lớp–bài. Mọi giáo viên của lớp tiếp tục được buổi <code>Đang dạy</code> (<code>Vào điểm danh</code>) hoặc <code>Chờ hoàn thành</code> (<code>Hoàn thành buổi học</code>) và thấy đúng nháp; giáo viên của buổi giữ nguyên là người bắt đầu.</li>
+<li><strong>REQ25 – Bài đã hoàn thành:</strong> Hiển thị <code>Giáo viên nhận xét lớp</code>, ghi chú gửi Support, ghi chú gửi giáo viên tiếp theo và bảng học viên (Đi học, BTVN, Ghi chú) chỉ đọc. Giáo viên không sửa sau khi hoàn thành.</li>
+<li><strong>REQ26 – Thông tin, Nội dung, Kiến thức:</strong> Dữ liệu định nghĩa bài học chỉ đọc giống Admin; Kiến thức để trống.</li>
+<li><strong>REQ27 – Tài nguyên:</strong> Bấm file tải ngay. Chỉ tải được tài nguyên của 3 bài đã mở có số thứ tự lớn nhất; bài khác (đã mở trước đó hoặc chưa mở) hiển thị file kèm icon khoá, bấm không tải; áp dụng cả Bài giảng và Tài nguyên khác; backend kiểm tra khi tải.</li>
+<li><strong>REQ28 – % BTVN và Đi học theo bài:</strong> Tính theo số học viên <code>Đang học</code>/<code>Dự thính</code> của đúng bài: % BTVN = đã nộp / tập; % Đi học = đi học (Có mặt, Vào trễ, Ra sớm, Vào trễ &amp; Ra sớm) / số đã điểm danh trong tập (Nghỉ CP/KP trong mẫu, Chưa điểm danh loại khỏi tử và mẫu). Mẫu số 0 để trống.</li>
+<li><strong>REQ29 – Tự học:</strong> Mọi giáo viên của lớp xem danh sách bài tự học (giữ thứ tự đã lưu, tải toàn bộ, mặc định bài 1) và bảng thời gian app của toàn bộ học viên đủ 7 trạng thái theo 8 phần <code>Học Flashcard</code>, <code>Bài tập</code>, <code>Từ vựng</code>, <code>Ngữ pháp</code>, <code>Đọc</code>, <code>Kanji</code>, <code>Nghe</code>, <code>Bảng chữ</code>; <code>HH:mm:ss</code>, ô vượt 24 giờ hiển thị <code>23:59:59</code>. Chỉ đọc: không thêm khóa/bài, không sửa thời gian; xem bảng không tạo thời gian học; Tự học không ảnh hưởng điểm danh, BTVN của bài học chính.</li>
+<li><strong>REQ30 – Icon trạng thái điểm danh:</strong> Bảng hiển thị điểm danh (cột Đi học ở tab Buổi học, cột Trạng thái ở Tổng quan) dùng bộ icon <code>Trạng thái đi học</code> theo bảng ghép 7 trạng thái; hover hiện tên trạng thái. Dropdown điểm danh ở Bước 1 chỉ hiển thị chữ.</li>
+</ul>
+<h3 id="24-rang-buoc">2.4. Ràng buộc</h3>
+<h4 id="quyen">Quyền</h4>
+<p><strong>Bài học</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Role</th>
+<th style="text-align: center;">Xem bài, tab, kết quả buổi</th>
+<th style="text-align: center;">Bắt đầu / tiếp tục buổi, điểm danh, ghi chú buổi</th>
+<th style="text-align: center;">Tải tài nguyên 3 bài đã mở gần nhất</th>
+<th style="text-align: center;">Sửa sau khi Hoàn thành</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Giáo viên của lớp (mọi giáo viên)</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">❌</td>
+</tr>
+<tr>
+<td>Các role khác</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Bài tập và Kiểm tra, màn chấm bài</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Role</th>
+<th style="text-align: center;">Xem danh sách, kết quả, xem trước đề</th>
+<th style="text-align: center;">Giao / Thu hồi bài kiểm tra</th>
+<th style="text-align: center;">Mở màn chấm</th>
+<th style="text-align: center;">Chấm điểm / sửa đè điểm app</th>
+<th style="text-align: center;">Nhận xét / Nhận xét chung</th>
+<th style="text-align: center;">Đã Chấm và Sửa Bài Trên Lớp</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Giáo viên phụ trách chính của lớp</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+</tr>
+<tr>
+<td>Giáo viên khác của lớp</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+</tr>
+<tr>
+<td>Các role khác</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+</tr>
+</tbody>
+</table></div>
+<ul>
+<li>Giáo viên khác của lớp xem kết quả chấm (điểm, trạng thái nộp) ở bảng học viên của menu Bài tập và Kiểm tra, không vào màn chấm, không giao/thu hồi.</li>
+<li>Không role nào có nút Thêm bài kiểm tra trong menu này; bài kiểm tra bổ sung do Admin thêm ở chức năng riêng.</li>
+<li>Các role quản lý (Admin, Class Handler, Support) thao tác BTVN/Kiểm tra theo requirement Admin <a href="../../management_requirement/class_management/class_detail_homework_tests_requirements.md">Chi tiết lớp học — Menu Bài tập và kiểm tra</a>; tài liệu này không cấp thêm quyền chấm cho các role đó.</li>
+</ul>
+<p><strong>Tự học</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Role</th>
+<th style="text-align: center;">Xem danh sách bài và bảng thời gian</th>
+<th style="text-align: center;">Thêm khóa tự học / Thêm bài</th>
+<th style="text-align: center;">Sửa thời gian</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Giáo viên của lớp (mọi giáo viên)</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+</tr>
+<tr>
+<td>Các role khác</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+</tr>
+</tbody>
+</table></div>
+<ul>
+<li>Admin, Class Handler, Support xem và thêm khóa/bài Tự học theo requirement Admin <a href="../../management_requirement/class_management/class_detail_self_study_requirements.md">Chi tiết lớp học — Menu Tự học</a>.</li>
+</ul>
+<h4 id="pham-vi-du-lieu">Phạm vi dữ liệu</h4>
+<ul>
+<li>Giáo viên chỉ chấm bài của lớp mà mình là <code>Giáo viên phụ trách chính</code> tại thời điểm thao tác; đổi phụ trách chính thì giáo viên cũ mất quyền ngay.</li>
+<li>Mọi request chấm/nhận xét được backend kiểm tra quyền, lớp, bài, học viên và trạng thái nộp; không dựa vào việc ẩn nút trên giao diện.</li>
+<li>Không cho phép truy cập hoặc thực hiện hành động bị đánh dấu <code>❌</code>, kể cả khi gọi trực tiếp bằng URL hoặc request.</li>
+</ul>
+<hr />
+<h2 id="3-can-xac-nhan">3. Cần xác nhận</h2>
+<ul>
+<li>Không còn mục cần xác nhận.</li>
+</ul>
+</article>
+    <p class="source-note">Nguồn: class_teaching_requirements.md · SHA-256 1c9524f2cfeb474b6709d32a3de8602c43de46dafcfeaa18dd90745c4384c97b</p>
+  </main>
+  <script>
+    const article = document.getElementById('document');
+    const nav = document.getElementById('docNav');
+    const headings = [...article.querySelectorAll('h2')];
+    headings.forEach((heading, index) => {
+      const link = document.createElement('a');
+      link.href = `#${heading.id}`;
+      const number = document.createElement('span');
+      number.className = 'nav-num';
+      number.textContent = String(index + 1).padStart(2, '0');
+      link.append(number, document.createTextNode(heading.textContent));
+      nav.append(link);
+    });
+
+    const navLinks = [...nav.querySelectorAll('a')];
+    const observer = new IntersectionObserver(entries => {
+      const current = entries.filter(item => item.isIntersecting).sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
+      if (!current) return;
+      navLinks.forEach(link => link.classList.toggle('active', link.hash === `#${current.target.id}`));
+    }, {rootMargin: '-18% 0px -68% 0px', threshold: [0, .2, .5]});
+    headings.forEach(heading => observer.observe(heading));
+    if (navLinks[0]) navLinks[0].classList.add('active');
+
+    const testcaseHeadings = [...article.querySelectorAll('h4, h5')]
+      .filter(heading => heading.textContent.trim().startsWith('Testcase'));
+    const testcaseGroups = testcaseHeadings
+      .map(heading => ({heading, tableWrap: heading.nextElementSibling}))
+      .filter(group => group.tableWrap?.classList.contains('table-wrap'));
+    if (testcaseGroups.length) {
+        const tableWraps = testcaseGroups.map(group => group.tableWrap);
+        tableWraps.forEach(tableWrap => tableWrap.classList.add('testcase-table'));
+        const rows = tableWraps.flatMap(tableWrap => [...tableWrap.querySelectorAll('tbody tr')]);
+        const tools = document.createElement('div');
+        tools.className = 'case-tools';
+        const input = document.createElement('input');
+        input.type = 'search';
+        input.placeholder = 'Tìm testcase, Flow, REQ, EX hoặc nội dung…';
+        input.setAttribute('aria-label', 'Tìm testcase');
+        const count = document.createElement('span');
+        count.className = 'case-count';
+        tools.append(input, count);
+        testcaseGroups[0].heading.before(tools);
+        const filterRows = () => {
+          const query = input.value.trim().toLocaleLowerCase('vi');
+          let visible = 0;
+          rows.forEach(row => {
+            const match = !query || row.textContent.toLocaleLowerCase('vi').includes(query);
+            row.hidden = !match;
+            if (match) visible += 1;
+          });
+          testcaseGroups.forEach(({heading, tableWrap}) => {
+            const hasVisibleRow = [...tableWrap.querySelectorAll('tbody tr')]
+              .some(row => !row.hidden);
+            heading.hidden = !hasVisibleRow;
+            tableWrap.hidden = !hasVisibleRow;
+          });
+          count.textContent = `${visible}/${rows.length} testcase`;
+        };
+        input.addEventListener('input', filterRows);
+        filterRows();
+    }
+  </script>
+</body>
+</html>

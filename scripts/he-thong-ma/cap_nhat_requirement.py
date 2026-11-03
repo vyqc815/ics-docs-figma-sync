@@ -1,10 +1,15 @@
 #!/usr/bin/env python3
-"""Một lệnh: bộ requirement mới của QC (zip) -> docs/requirements theo template, gắn mã, ảnh Figma, zip gửi QC.
+"""Một lệnh: bộ requirement gốc của QC -> docs/requirements theo template, gắn mã, ảnh Figma, zip gửi QC.
 
-  cap_nhat_requirement.py <requirements.zip của QC> [--work .] [--out file.zip]
+  cap_nhat_requirement.py <requirements.zip của QC>      # bản gốc mới: chép vào qc/requirements rồi chạy
+  cap_nhat_requirement.py qc/requirements --no-zip       # bản gốc trong repo (GitHub Actions dùng cách này)
+  thêm: [--work .] [--out file.zip] [--summary tom-tat.md]
+
+Bản gốc QC luôn nằm ở qc/requirements trong repo; QC sửa ở đó (GitHub web) thì
+.github/workflows/requirements.yml tự chạy lệnh này, commit, deploy và báo Google Chat.
 
 Các bước:
-  1. Giải nén; bỏ file đã được thay (requirements-map.json "replaced"); file mẫu/audit chỉ chép nguyên vào zip.
+  1. Đọc bản gốc; bỏ file đã được thay (requirements-map.json "replaced"); file mẫu/audit chỉ chép nguyên vào zip.
   2. File requirement mới chưa có trong requirements-map.json: tự thêm, màn lấy theo mã màn file nhắc tới.
   3. Chuyển template (req_to_template.py, mã item đã khoá) và kiểm từng file đủ nội dung + đủ testcase
      (kiem_noi_dung.py). Thiếu ở bất kỳ file nào thì dừng, không đụng docs/requirements.
@@ -56,13 +61,23 @@ def out_path(work, given):
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("zip")
+    ap.add_argument("source", help="zip của QC, hoặc thư mục requirements gốc")
     ap.add_argument("--work", default=os.path.abspath(os.path.join(HERE, "..", "..")))
     ap.add_argument("--out")
+    ap.add_argument("--no-zip", action="store_true", help="không đóng zip gửi QC (web QC đọc qua /api/qc)")
+    ap.add_argument("--summary", help="ghi tóm tắt Markdown (cho tin báo Google Chat)")
     args = ap.parse_args()
     w = args.work
     tmp = tempfile.mkdtemp(prefix="cap-nhat-req-")
-    src = extract(os.path.expanduser(args.zip), os.path.join(tmp, "qc"))
+    source = os.path.abspath(os.path.expanduser(args.source))
+    originals = f"{w}/qc/requirements"
+    if os.path.isdir(source):
+        src = source
+    else:  # zip mới: thay bản gốc trong repo để lần sau sửa tiếp ở đó
+        src = extract(source, os.path.join(tmp, "qc"))
+        if os.path.abspath(src) != os.path.abspath(originals):
+            shutil.rmtree(originals, ignore_errors=True)
+            shutil.copytree(src, originals, ignore=shutil.ignore_patterns(".DS_Store", "__MACOSX"))
     names = sorted(os.path.relpath(os.path.join(d, f), src) for d, _, fs in os.walk(src) for f in fs if f.endswith(".md"))
 
     # 1-2. chọn file, map file mới
@@ -127,24 +142,31 @@ def main():
     run(f"{HERE}/qc_index.py", "--work", w)
 
     # 6. zip gửi QC
-    out = out_path(w, args.out)
-    with zipfile.ZipFile(out, "w", zipfile.ZIP_DEFLATED) as z:
-        for d, _, fs in os.walk(f"{w}/docs/requirements"):
-            for f in fs:
-                if f != ".DS_Store":
-                    p = os.path.join(d, f)
-                    z.write(p, os.path.join("requirements", os.path.relpath(p, f"{w}/docs/requirements")))
-        for rel in raw:
-            z.write(os.path.join(src, rel), os.path.join("requirements", rel))
+    out = None if args.no_zip else out_path(w, args.out)
+    if out:
+        with zipfile.ZipFile(out, "w", zipfile.ZIP_DEFLATED) as z:
+            for d, _, fs in os.walk(f"{w}/docs/requirements"):
+                for f in fs:
+                    if f != ".DS_Store":
+                        p = os.path.join(d, f)
+                        z.write(p, os.path.join("requirements", os.path.relpath(p, f"{w}/docs/requirements")))
+            for rel in raw:
+                z.write(os.path.join(src, rel), os.path.join("requirements", rel))
     shutil.rmtree(tmp, ignore_errors=True)
 
     now = set(feats)
-    print(f"\nXong: {len(feats)} file requirement, đủ nội dung và testcase.")
+    unmapped = sum(1 for l in open(f"{w}/docs/he-thong-ma/trang-chua-gan-ma.md", encoding="utf-8") if l.startswith("| `"))
+    lines = [f"{len(feats)} file requirement, đủ nội dung và testcase."]
     for label, items in (("File mới", sorted(now - before)), ("File bỏ", sorted(before - now)), ("Tự thêm vào requirements-map", added)):
         if items:
-            print(f"{label}: " + "; ".join(items))
-    print(f"Zip gửi QC: {out}")
-    print("Trang chưa gắn mã: docs/he-thong-ma/trang-chua-gan-ma.md. Xem git diff rồi commit.")
+            lines.append(f"{label}: " + "; ".join(items))
+    lines.append(f"Trang chưa gắn mã màn: {unmapped} (docs/he-thong-ma/trang-chua-gan-ma.md)")
+    print("\nXong: " + "\n".join(lines))
+    if out:
+        print(f"Zip gửi QC: {out}")
+    if args.summary:
+        open(args.summary, "w", encoding="utf-8").write("\n".join(lines) + "\n")
+    print("Xem git diff rồi commit.")
 
 
 if __name__ == "__main__":

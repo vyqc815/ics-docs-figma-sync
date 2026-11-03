@@ -1,0 +1,50 @@
+# Deploy demo lên Vercel từ GitHub: build trên máy GitHub (máy build gói Hobby của Vercel thiếu RAM) rồi đẩy bản đã build.
+# Chạy khi push lên main, khi requirement QC vừa cập nhật (requirements.yml gọi), hoặc bấm tay.
+# Cần secret VERCEL_TOKEN (vercel.com → Account Settings → Tokens).
+name: Deploy demo
+
+on:
+  push:
+    branches: [main]
+    paths-ignore: ["qc/**", ".figma/**"]
+  workflow_call:
+  workflow_dispatch:
+
+concurrency:
+  group: deploy
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    env:
+      VERCEL_ORG_ID: team_sFEtj8U8fk5SoT0J4eNhlqEX
+      VERCEL_PROJECT_ID: prj_uuVtVRFOVUGPxz7YkCEI4d491c6P
+      VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+      NODE_OPTIONS: --max-old-space-size=6144
+    steps:
+      - name: Need VERCEL_TOKEN
+        if: env.VERCEL_TOKEN == ''
+        run: |
+          echo "::error::Chưa có secret VERCEL_TOKEN, bỏ qua deploy."
+          exit 1
+
+      - uses: actions/checkout@v4
+        with:
+          ref: main # requirements.yml vừa commit lên main
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+
+      - name: Build
+        run: |
+          npx vercel pull --yes --environment=production --token="$VERCEL_TOKEN"
+          npx vercel build --prod --token="$VERCEL_TOKEN"
+
+      - name: Deploy
+        run: npx vercel deploy --prebuilt --prod --archive=tgz --token="$VERCEL_TOKEN"

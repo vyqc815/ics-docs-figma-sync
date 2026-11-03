@@ -1,0 +1,1578 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Requirement Chi tiết lớp học — Tab OT">
+  <link rel="icon" href="data:,">
+  <title>Chi tiết lớp học — Tab OT — Requirement</title>
+  <style>
+    :root {
+      --orange-700: #c83f00;
+      --orange-600: #e84c00;
+      --orange-500: #f45b0a;
+      --orange-400: #ff7a32;
+      --orange-100: #fff0e8;
+      --orange-50: #fff8f4;
+      --navy-950: #101828;
+      --navy-900: #172033;
+      --navy-800: #243047;
+      --slate-700: #344054;
+      --slate-600: #475467;
+      --slate-500: #667085;
+      --slate-400: #98a2b3;
+      --slate-300: #d0d5dd;
+      --slate-200: #e4e7ec;
+      --slate-100: #f2f4f7;
+      --slate-50: #f8fafc;
+      --white: #ffffff;
+      --green: #159447;
+      --blue: #2154c5;
+      --yellow: #b77900;
+      --red: #c92a2a;
+      --purple: #6941c6;
+      --shadow-sm: 0 1px 2px rgba(16, 24, 40, .06);
+      --shadow-md: 0 12px 32px rgba(16, 24, 40, .10);
+      --shadow-lg: 0 24px 64px rgba(16, 24, 40, .16);
+      --radius-sm: 10px;
+      --radius: 16px;
+      --radius-lg: 24px;
+      --sidebar: 286px;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      color: var(--navy-950);
+      background:
+        radial-gradient(circle at 88% 5%, rgba(244, 91, 10, .10), transparent 24rem),
+        var(--slate-50);
+      font: 15px/1.65 Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      text-rendering: optimizeLegibility;
+    }
+    a { color: inherit; }
+    img { max-width: 100%; }
+    button, input, select { font: inherit; }
+    code {
+      padding: .12rem .38rem;
+      border: 1px solid #fed7c3;
+      border-radius: 6px;
+      color: var(--orange-700);
+      background: var(--orange-50);
+      font: 600 .9em ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    }
+
+    .skip-link {
+      position: fixed;
+      z-index: 999;
+      top: 12px;
+      left: 12px;
+      padding: 10px 14px;
+      border-radius: 9px;
+      color: var(--white);
+      background: var(--navy-950);
+      transform: translateY(-150%);
+    }
+    .skip-link:focus { transform: none; }
+
+    .sidebar {
+      position: fixed;
+      z-index: 30;
+      inset: 0 auto 0 0;
+      width: var(--sidebar);
+      padding: 22px 18px;
+      overflow-y: auto;
+      color: #f8fafc;
+      background:
+        linear-gradient(155deg, rgba(255, 122, 50, .24), transparent 26%),
+        linear-gradient(180deg, #192338 0%, #111827 100%);
+      border-right: 1px solid rgba(255, 255, 255, .08);
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 4px 8px 22px;
+      border-bottom: 1px solid rgba(255, 255, 255, .10);
+    }
+    .brand-mark {
+      display: grid;
+      width: 44px;
+      height: 44px;
+      place-items: center;
+      border-radius: 14px;
+      color: var(--white);
+      background: linear-gradient(135deg, var(--orange-400), var(--orange-600));
+      box-shadow: 0 10px 26px rgba(244, 91, 10, .35);
+      font-weight: 900;
+      letter-spacing: -.06em;
+    }
+    .brand strong { display: block; font-size: 16px; }
+    .brand small { color: #aeb8c9; }
+    .nav-title {
+      margin: 24px 10px 8px;
+      color: #8f9aae;
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+    .nav { display: grid; gap: 4px; }
+    .nav a {
+      display: flex;
+      align-items: center;
+      gap: 11px;
+      padding: 10px 12px;
+      border-radius: 10px;
+      color: #cbd5e1;
+      text-decoration: none;
+      transition: .18s ease;
+    }
+    .nav a:hover, .nav a.active {
+      color: var(--white);
+      background: rgba(255, 255, 255, .09);
+    }
+    .nav a.active { box-shadow: inset 3px 0 var(--orange-400); }
+    .nav-num {
+      display: grid;
+      width: 25px;
+      height: 25px;
+      flex: 0 0 auto;
+      place-items: center;
+      border: 1px solid rgba(255, 255, 255, .15);
+      border-radius: 8px;
+      font-size: 11px;
+      font-weight: 800;
+    }
+    .sidebar-footer {
+      margin-top: 26px;
+      padding: 14px;
+      border: 1px solid rgba(255, 255, 255, .10);
+      border-radius: 14px;
+      color: #aeb8c9;
+      background: rgba(255, 255, 255, .04);
+      font-size: 12px;
+    }
+    .sidebar-footer a { color: #ffd8c5; }
+
+    main {
+      width: min(1500px, calc(100% - var(--sidebar)));
+      margin-left: var(--sidebar);
+      padding: 34px clamp(24px, 4vw, 64px) 80px;
+    }
+    section { scroll-margin-top: 24px; }
+    .hero {
+      position: relative;
+      padding: clamp(30px, 5vw, 56px);
+      overflow: hidden;
+      border: 1px solid rgba(255, 255, 255, .08);
+      border-radius: var(--radius-lg);
+      color: var(--white);
+      background:
+        linear-gradient(105deg, rgba(16, 24, 40, .97) 0%, rgba(23, 32, 51, .94) 62%, rgba(109, 45, 9, .90) 100%);
+      box-shadow: var(--shadow-lg);
+    }
+    .hero::after {
+      content: "";
+      position: absolute;
+      width: 360px;
+      height: 360px;
+      top: -190px;
+      right: -80px;
+      border: 70px solid rgba(255, 122, 50, .15);
+      border-radius: 50%;
+    }
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 10px;
+      border: 1px solid rgba(255, 255, 255, .15);
+      border-radius: 999px;
+      color: #ffd8c5;
+      background: rgba(255, 255, 255, .06);
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+    .hero h1 {
+      max-width: 900px;
+      margin: 18px 0 12px;
+      font-size: clamp(34px, 5vw, 64px);
+      line-height: 1.03;
+      letter-spacing: -.045em;
+    }
+    .hero p { max-width: 780px; margin: 0; color: #cbd5e1; font-size: 17px; }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 25px; }
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      min-height: 42px;
+      padding: 9px 14px;
+      border: 1px solid transparent;
+      border-radius: 10px;
+      color: var(--white);
+      background: var(--orange-500);
+      text-decoration: none;
+      cursor: pointer;
+      transition: .18s ease;
+    }
+    .button:hover { transform: translateY(-1px); background: var(--orange-600); }
+    .button.secondary { border-color: rgba(255, 255, 255, .15); background: rgba(255, 255, 255, .07); }
+    .button.ghost { color: var(--slate-700); border-color: var(--slate-300); background: var(--white); }
+    .button.small { min-height: 36px; padding: 7px 11px; font-size: 13px; }
+
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 14px;
+      margin-top: 18px;
+    }
+    .stat {
+      padding: 18px;
+      border: 1px solid var(--slate-200);
+      border-radius: var(--radius);
+      background: rgba(255, 255, 255, .86);
+      box-shadow: var(--shadow-sm);
+    }
+    .stat strong { display: block; color: var(--orange-600); font-size: 30px; line-height: 1; }
+    .stat span { display: block; margin-top: 7px; color: var(--slate-600); font-weight: 650; }
+
+    .section-head {
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 24px;
+      margin: 64px 0 20px;
+    }
+    .section-kicker {
+      margin: 0 0 6px;
+      color: var(--orange-600);
+      font-size: 12px;
+      font-weight: 850;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+    .section-head h2 { margin: 0; font-size: clamp(27px, 4vw, 40px); letter-spacing: -.035em; }
+    .section-head p { max-width: 600px; margin: 8px 0 0; color: var(--slate-600); }
+
+    .panel {
+      padding: clamp(20px, 3vw, 30px);
+      border: 1px solid var(--slate-200);
+      border-radius: var(--radius-lg);
+      background: var(--white);
+      box-shadow: var(--shadow-sm);
+    }
+    .panel + .panel { margin-top: 18px; }
+    .panel h3 { margin: 0 0 14px; font-size: 21px; letter-spacing: -.02em; }
+    .panel h4 { margin: 26px 0 10px; }
+    .muted { color: var(--slate-600); }
+    .note {
+      padding: 15px 17px;
+      border-left: 4px solid var(--orange-500);
+      border-radius: 0 12px 12px 0;
+      color: var(--slate-700);
+      background: var(--orange-50);
+    }
+
+    .mockup {
+      position: relative;
+      padding: 12px;
+      border: 1px solid var(--slate-200);
+      border-radius: 18px;
+      background: linear-gradient(145deg, #fff, #f4f6f9);
+      box-shadow: var(--shadow-md);
+    }
+    .mockup a { display: block; overflow: hidden; border-radius: 12px; }
+    .mockup img { display: block; width: 100%; transition: transform .3s ease; }
+    .mockup a:hover img { transform: scale(1.01); }
+    .mockup figcaption { padding: 12px 4px 2px; color: var(--slate-600); font-size: 13px; }
+
+    .grid-2 { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
+    .grid-3 { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+    .grid-4 { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 14px; }
+    .card {
+      padding: 18px;
+      border: 1px solid var(--slate-200);
+      border-radius: var(--radius);
+      background: var(--white);
+      box-shadow: var(--shadow-sm);
+    }
+    .card h3, .card h4 { margin: 0 0 8px; }
+    .card p { margin: 0; color: var(--slate-600); }
+    .card-accent { border-top: 4px solid var(--orange-500); }
+
+    .column-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+    .column-item {
+      min-height: 124px;
+      padding: 15px;
+      border: 1px solid var(--slate-200);
+      border-radius: 14px;
+      background: var(--slate-50);
+    }
+    .column-item strong { display: block; margin-bottom: 5px; color: var(--navy-900); }
+    .column-item span { color: var(--slate-600); font-size: 13px; }
+
+    .status-card { display: flex; align-items: center; gap: 12px; }
+    .status-card img { width: 42px; height: 42px; }
+    .status-card small { display: block; color: var(--slate-500); }
+
+    .tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      padding: 4px 9px;
+      border-radius: 999px;
+      color: var(--orange-700);
+      background: var(--orange-100);
+      font-size: 12px;
+      font-weight: 800;
+    }
+    .tag.high { color: #9d174d; background: #fce7f3; }
+    .tag.medium { color: #92400e; background: #fef3c7; }
+    .tag.req { color: #3730a3; background: #e0e7ff; }
+    .tag.ex { color: #b42318; background: #fee4e2; }
+
+    .flow-list { display: grid; gap: 14px; counter-reset: flow; }
+    .flow {
+      position: relative;
+      padding: 22px 22px 22px 68px;
+      border: 1px solid var(--slate-200);
+      border-radius: var(--radius);
+      background: var(--white);
+    }
+    .flow::before {
+      counter-increment: flow;
+      content: counter(flow, decimal-leading-zero);
+      position: absolute;
+      top: 20px;
+      left: 18px;
+      display: grid;
+      width: 36px;
+      height: 36px;
+      place-items: center;
+      border-radius: 11px;
+      color: var(--white);
+      background: var(--orange-500);
+      font-weight: 900;
+    }
+    .flow h3 { margin: 0 0 8px; }
+    .flow ol { margin: 0; padding-left: 20px; color: var(--slate-700); }
+
+    .exception { border-left: 4px solid #ef4444; }
+    .exception strong { color: var(--red); }
+
+    .formula-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; }
+    .formula {
+      padding: 18px;
+      border: 1px solid #ffd6c2;
+      border-radius: 16px;
+      background: linear-gradient(160deg, #fff, var(--orange-50));
+    }
+    .formula h4 { margin: 0 0 12px; color: var(--orange-700); }
+    .fraction { display: grid; justify-items: center; color: var(--navy-900); font-weight: 720; text-align: center; }
+    .fraction .top { padding: 0 10px 7px; border-bottom: 2px solid var(--navy-800); }
+    .fraction .bottom { padding-top: 7px; }
+    .formula .teacher { margin-top: 16px; padding-top: 12px; border-top: 1px dashed #f5b896; color: var(--slate-600); font-size: 13px; }
+
+    .filters {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      align-items: center;
+      padding: 14px;
+      border: 1px solid var(--slate-200);
+      border-radius: 14px;
+      background: var(--white);
+      position: sticky;
+      top: 10px;
+      z-index: 10;
+      box-shadow: var(--shadow-md);
+    }
+    .search {
+      min-width: min(100%, 320px);
+      flex: 1 1 260px;
+      height: 42px;
+      padding: 0 13px;
+      border: 1px solid var(--slate-300);
+      border-radius: 10px;
+      color: var(--navy-950);
+      background: var(--white);
+      outline: none;
+    }
+    .search:focus { border-color: var(--orange-500); box-shadow: 0 0 0 4px rgba(244, 91, 10, .12); }
+    .testcases { display: grid; gap: 10px; margin-top: 16px; }
+    .testcase {
+      border: 1px solid var(--slate-200);
+      border-radius: 14px;
+      background: var(--white);
+      overflow: clip;
+    }
+    .testcase[hidden] { display: none; }
+    .testcase summary {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 15px 17px;
+      cursor: pointer;
+      list-style: none;
+    }
+    .testcase summary::-webkit-details-marker { display: none; }
+    .testcase summary::after { content: "+"; margin-left: auto; color: var(--orange-600); font-size: 22px; font-weight: 700; }
+    .testcase[open] summary::after { content: "−"; }
+    .testcase-title { min-width: 0; font-weight: 780; }
+    .case-body {
+      display: grid;
+      grid-template-columns: minmax(180px, .7fr) minmax(0, 1.3fr);
+      gap: 18px;
+      padding: 18px;
+      border-top: 1px solid var(--slate-200);
+      background: var(--slate-50);
+    }
+    .case-meta { color: var(--slate-600); }
+    .case-meta div + div { margin-top: 8px; }
+    .case-steps { display: grid; gap: 10px; }
+    .step { padding: 10px 12px; border-left: 3px solid var(--orange-400); background: var(--white); }
+    .expected { margin: 14px 0 0; padding-left: 20px; }
+    .expected li + li { margin-top: 4px; }
+    .empty-filter { display: none; padding: 28px; color: var(--slate-600); text-align: center; }
+
+    .question-list { display: grid; gap: 10px; margin: 0; padding: 0; counter-reset: question; list-style: none; }
+    .question-list li {
+      position: relative;
+      padding: 14px 16px 14px 54px;
+      border: 1px solid #f4d8a4;
+      border-radius: 13px;
+      background: #fffbeb;
+      color: #664d03;
+    }
+    .question-list li::before {
+      counter-increment: question;
+      content: counter(question);
+      position: absolute;
+      top: 12px;
+      left: 14px;
+      display: grid;
+      width: 28px;
+      height: 28px;
+      place-items: center;
+      border-radius: 9px;
+      color: #fff;
+      background: #d99100;
+      font-weight: 850;
+    }
+
+    .footer {
+      margin-top: 64px;
+      padding-top: 24px;
+      border-top: 1px solid var(--slate-200);
+      color: var(--slate-500);
+      text-align: center;
+    }
+
+    @media (max-width: 1120px) {
+      :root { --sidebar: 244px; }
+      .column-grid, .grid-3, .formula-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .stats { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
+    @media (max-width: 780px) {
+      .sidebar { position: static; width: auto; padding: 14px; }
+      .brand { padding-bottom: 12px; }
+      .nav-title, .sidebar-footer { display: none; }
+      .nav { display: flex; overflow-x: auto; padding-top: 10px; }
+      .nav a { flex: 0 0 auto; }
+      main { width: 100%; margin: 0; padding: 18px 14px 60px; }
+      .hero { border-radius: 18px; }
+      .grid-2, .grid-3, .grid-4, .column-grid, .formula-grid, .case-body { grid-template-columns: 1fr; }
+      .section-head { align-items: start; flex-direction: column; }
+      .filters { position: static; }
+    }
+    @media print {
+      body { background: #fff; font-size: 11px; }
+      .sidebar, .hero-actions, .filters, .skip-link { display: none !important; }
+      main { width: 100%; margin: 0; padding: 0; }
+      .hero { color: #111; background: #fff; border: 2px solid #111; box-shadow: none; }
+      .hero p { color: #333; }
+      .panel, .card, .stat, .mockup, .testcase { break-inside: avoid; box-shadow: none; }
+      .section-head { margin-top: 32px; }
+      .testcase { display: block !important; }
+      .testcase summary::after { display: none; }
+      .testcase:not([open]) .case-body { display: grid; }
+    }
+
+    .doc-shell { min-width: 0; }
+    .doc-toolbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      margin-bottom: 18px;
+      padding: 14px 16px;
+      border: 1px solid var(--slate-200);
+      border-radius: 14px;
+      background: rgba(255,255,255,.92);
+      box-shadow: var(--shadow-sm);
+    }
+    .doc-toolbar-left, .doc-toolbar-right { display: flex; flex-wrap: wrap; align-items: center; gap: 9px; }
+    .sync-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      padding: 6px 10px;
+      border-radius: 999px;
+      color: #067647;
+      background: #ecfdf3;
+      border: 1px solid #abefc6;
+      font-size: 12px;
+      font-weight: 800;
+    }
+    .sync-badge::before { content: "✓"; }
+    .hash { color: var(--slate-500); font: 12px ui-monospace, SFMono-Regular, Menlo, monospace; }
+    .markdown-body {
+      padding: clamp(24px, 4vw, 54px);
+      border: 1px solid var(--slate-200);
+      border-radius: var(--radius-lg);
+      background: var(--white);
+      box-shadow: var(--shadow-md);
+      overflow: hidden;
+    }
+    .markdown-body > h1 {
+      position: relative;
+      margin: -54px -54px 42px;
+      padding: 62px 54px 54px;
+      color: var(--white);
+      background:
+        radial-gradient(circle at 88% 10%, rgba(255,122,50,.36), transparent 20rem),
+        linear-gradient(115deg, var(--navy-950), #243047 68%, #713209);
+      font-size: clamp(34px, 5vw, 62px);
+      line-height: 1.05;
+      letter-spacing: -.045em;
+    }
+    .markdown-body h2 {
+      margin: 70px 0 24px;
+      padding: 0 0 13px;
+      border-bottom: 2px solid var(--slate-200);
+      font-size: clamp(27px, 4vw, 39px);
+      line-height: 1.15;
+      letter-spacing: -.035em;
+      scroll-margin-top: 24px;
+    }
+    .markdown-body h2::first-letter { color: var(--orange-600); }
+    .markdown-body h3 {
+      margin: 38px 0 16px;
+      color: var(--navy-900);
+      font-size: 23px;
+      line-height: 1.25;
+      letter-spacing: -.02em;
+      scroll-margin-top: 24px;
+    }
+    .markdown-body h4 {
+      margin: 28px 0 12px;
+      color: var(--orange-700);
+      font-size: 17px;
+      scroll-margin-top: 24px;
+    }
+    .markdown-body p { margin: 12px 0; }
+    .markdown-body strong { color: var(--navy-900); }
+    .markdown-body ul, .markdown-body ol { padding-left: 1.35rem; }
+    .markdown-body li { margin: 6px 0; }
+    .markdown-body li::marker { color: var(--orange-500); font-weight: 800; }
+    .markdown-body hr {
+      height: 1px;
+      margin: 48px 0;
+      border: 0;
+      background: linear-gradient(90deg, transparent, var(--slate-300), transparent);
+    }
+    .markdown-body > p[align="center"] {
+      margin: 22px 0 28px;
+      padding: 12px;
+      border: 1px solid var(--slate-200);
+      border-radius: 18px;
+      background: linear-gradient(145deg, #fff, #f5f7fa);
+      box-shadow: var(--shadow-md);
+    }
+    .markdown-body > p[align="center"] a { display: inline-block; max-width: 100%; }
+    .markdown-body > p[align="center"] img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+      margin: auto;
+      border-radius: 12px;
+    }
+    .markdown-body > p[align="center"] em {
+      display: block;
+      margin-top: 10px;
+      color: var(--slate-500);
+      font-size: 13px;
+    }
+    .table-wrap {
+      width: 100%;
+      margin: 18px 0 28px;
+      overflow: auto;
+      border: 1px solid var(--slate-200);
+      border-radius: 15px;
+      background: var(--white);
+      box-shadow: var(--shadow-sm);
+    }
+    .markdown-body table {
+      width: 100%;
+      min-width: 720px;
+      border-collapse: separate;
+      border-spacing: 0;
+      font-size: 14px;
+    }
+    .markdown-body th {
+      position: sticky;
+      top: 0;
+      z-index: 2;
+      padding: 12px 14px;
+      color: var(--white);
+      background: var(--navy-900);
+      border-bottom: 1px solid var(--navy-800);
+      text-align: left;
+      white-space: nowrap;
+    }
+    .markdown-body td {
+      padding: 12px 14px;
+      border-bottom: 1px solid var(--slate-200);
+      vertical-align: top;
+    }
+    .markdown-body tbody tr:nth-child(even) td { background: var(--slate-50); }
+    .markdown-body tbody tr:hover td { background: var(--orange-50); }
+    .markdown-body tbody tr:last-child td { border-bottom: 0; }
+    .markdown-body td img { display: block; width: 36px; height: 36px; max-width: none; }
+    .markdown-body pre {
+      position: relative;
+      margin: 16px 0 24px;
+      padding: 18px 20px;
+      overflow: auto;
+      border: 1px solid #ffd3bd;
+      border-radius: 14px;
+      color: #fff7ed;
+      background: linear-gradient(145deg, #172033, #222f48);
+      box-shadow: var(--shadow-sm);
+      font: 13px/1.75 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    }
+    .markdown-body pre code { padding: 0; border: 0; color: inherit; background: none; font: inherit; }
+    .markdown-body blockquote {
+      margin: 18px 0;
+      padding: 13px 16px;
+      border-left: 4px solid var(--orange-500);
+      border-radius: 0 12px 12px 0;
+      color: var(--slate-700);
+      background: var(--orange-50);
+    }
+    .case-tools {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 10px;
+      margin: 12px 0 14px;
+      padding: 13px;
+      border: 1px solid var(--slate-200);
+      border-radius: 13px;
+      background: var(--slate-50);
+    }
+    .case-tools input {
+      flex: 1 1 280px;
+      height: 42px;
+      padding: 0 13px;
+      border: 1px solid var(--slate-300);
+      border-radius: 10px;
+      outline: none;
+    }
+    .case-tools input:focus { border-color: var(--orange-500); box-shadow: 0 0 0 4px rgba(244,91,10,.12); }
+    .case-count { color: var(--orange-700); font-weight: 800; white-space: nowrap; }
+    .testcase-table table { min-width: 1500px; }
+    .testcase-table th:first-child, .testcase-table td:first-child {
+      position: sticky;
+      left: 0;
+      z-index: 1;
+      min-width: 230px;
+      box-shadow: 1px 0 0 var(--slate-200);
+    }
+    .testcase-table th:first-child { z-index: 3; background: var(--navy-900); }
+    .testcase-table td:first-child { background: var(--white); font-weight: 750; }
+    .testcase-table tbody tr:nth-child(even) td:first-child { background: var(--slate-50); }
+    .testcase-table tbody tr:hover td:first-child { background: var(--orange-50); }
+    .source-note {
+      margin-top: 18px;
+      color: var(--slate-500);
+      text-align: center;
+      font-size: 12px;
+    }
+    @media (max-width: 780px) {
+      .doc-toolbar { align-items: flex-start; flex-direction: column; }
+      .markdown-body { padding: 20px 16px; border-radius: 16px; }
+      .markdown-body > h1 { margin: -20px -16px 32px; padding: 40px 20px 34px; }
+      .markdown-body h2 { margin-top: 48px; }
+      .markdown-body table { font-size: 13px; }
+    }
+    @media print {
+      .doc-toolbar, .case-tools { display: none !important; }
+      .markdown-body { padding: 0; border: 0; box-shadow: none; overflow: visible; }
+      .markdown-body > h1 { margin: 0 0 32px; padding: 30px; color: #111; background: #fff; border: 2px solid #111; }
+      .table-wrap { overflow: visible; box-shadow: none; }
+      .markdown-body table { min-width: 0 !important; font-size: 9px; }
+      .markdown-body th { position: static; color: #111; background: #eee; }
+      .testcase-table th:first-child, .testcase-table td:first-child { position: static; }
+    }
+</style>
+</head>
+<body>
+  <a class="skip-link" href="#document">Đi đến nội dung chính</a>
+  <aside class="sidebar" aria-label="Mục lục requirement">
+    <div class="brand">
+      <div class="brand-mark">ics</div>
+      <div><strong>ICS Requirement</strong><small>OT của Phụ trách lớp</small></div>
+    </div>
+    <div class="nav-title">Nội dung Markdown</div>
+    <nav id="docNav" class="nav"></nav>
+    <div class="sidebar-footer">
+      HTML được render trực tiếp từ Markdown nguồn.<br>
+      <a href="./class_detail_ot_requirements.md">Mở file Markdown</a>
+    </div>
+  </aside>
+  <main class="doc-shell">
+    <div class="doc-toolbar">
+      <div class="doc-toolbar-left">
+        <span class="sync-badge">Đồng bộ 100% từ Markdown</span>
+        <span class="hash">SHA-256: e7e6cd4822e8…</span>
+      </div>
+      <div class="doc-toolbar-right">
+        <a class="button ghost small" href="./class_detail_ot_requirements.md">Xem Markdown</a>
+        <button class="button small" type="button" onclick="window.print()">In / Lưu PDF</button>
+      </div>
+    </div>
+    <article id="document" class="markdown-body" data-source-sha256="e7e6cd4822e8c099477836845cf7417d3accc807f2a7add984adef15153e0fb4">
+<h1 id="chi-tiet-lop-hoc-tab-ot-cua-phu-trach-lop">Chi tiết lớp học — Tab OT của Phụ trách lớp</h1>
+<blockquote>
+<p>Tab OT dùng cùng logic phân quyền, người nhận, trạng thái và ghi chú của <a href="./class_detail_kpi_requirements.md">Tab KPI</a>, theo xác nhận “OT cũng vậy” của người dùng. Khác biệt: OT quản lý riêng, không hiển thị hoặc cộng vào Chi phí PTL/Tổng chi PTL tại <a href="./class_management_requirements.md">Danh sách lớp</a>. Ba ảnh dưới đây là UI tham chiếu cho OT. Tên người nhận và thông tin OT hiển thị theo dữ liệu thực tế; nội dung mẫu nhắc Giáo viên/KPI không thay đổi quyền hoặc tự sinh khoản KPI.</p>
+</blockquote>
+<h2 id="1-ui">1. UI</h2>
+<h3 id="tab-ot-danh-sach-va-tim-kiem">Tab OT — Danh sách và tìm kiếm</h3>
+<p align="center">
+  <a href="./images/34-class-detail-ot.png"><img src="./images/34-class-detail-ot.png" alt="Tab OT của Phụ trách lớp" width="900" title="Nhấn để xem ảnh gốc"></a><br>
+  <em>Danh sách OT — nhấn để xem ảnh gốc</em>
+</p>
+
+<p><strong>Mô tả:</strong> Admin và Class Handler được xem, thêm, sửa, xóa và xác nhận OT trong phạm vi lớp. Handler được xác nhận khoản của chính mình.</p>
+<p><strong>Giải thích field/thành phần:</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Thành phần</th>
+<th>Yêu cầu</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Cài đặt OT và +</td>
+<td>Mở popup <code>Gắn OT</code>.</td>
+</tr>
+<tr>
+<td>Tìm kiếm</td>
+<td>Theo tên Handler nhận OT; tìm toàn bộ dữ liệu lớp, không chỉ dòng đã tải.</td>
+</tr>
+<tr>
+<td>Tên</td>
+<td>Người nhận của khoản OT; mỗi khoản đúng một Handler.</td>
+</tr>
+<tr>
+<td>Ngày ghi nhận</td>
+<td>Ngày của Thời gian thực hiện nhập trong popup; lưu cả giờ.</td>
+</tr>
+<tr>
+<td>Trạng thái</td>
+<td>Mới, Đã xác nhận, Đã hủy; Đã xóa không hiển thị trong bảng.</td>
+</tr>
+<tr>
+<td>Số tiền</td>
+<td>Tiền thực tế đã lưu, định dạng VND và dấu phân cách hàng nghìn.</td>
+</tr>
+<tr>
+<td>Ghi chú</td>
+<td>Mở ghi chú/lịch sử của đúng khoản OT.</td>
+</tr>
+<tr>
+<td>Ngày cập nhật</td>
+<td>Lần cập nhật gần nhất do máy chủ ghi.</td>
+</tr>
+<tr>
+<td>X</td>
+<td>Popup xác nhận xóa khoản chưa xác nhận.</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Điểm cần lưu ý:</strong></p>
+<ul>
+<li>Chỉ Admin/Class Handler được truy cập. Support, Teacher và role khác không xem hoặc CRUD, kể cả gọi API trực tiếp.</li>
+<li>Một Handler có thể có nhiều khoản OT trong cùng lớp; không gộp khoản chỉ vì trùng tên.</li>
+<li>Đã hủy vẫn hiển thị và được tìm kiếm; Đã xóa ẩn khỏi danh sách, giữ audit.</li>
+<li>Bấm tên/vùng thông tin mở popup sửa hoặc xem; thao tác trạng thái, ghi chú và X không đồng thời mở form sửa.</li>
+</ul>
+<h4 id="testcase-danh-sach-va-tim-kiem">Testcase — Danh sách và tìm kiếm</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 1: Mở đúng lớp và quyền</td>
+<td>High</td>
+<td>Smoke</td>
+<td>Flow 1 / REQ01</td>
+<td>Admin/Class Handler</td>
+<td>Có OT ở nhiều lớp</td>
+<td><strong>Given</strong> mở lớp A<br><strong>When</strong> chọn OT<br><strong>Then</strong> tải đúng class_id</td>
+<td>- Đúng các cột<br>- Không trộn lớp B<br>- Không trả Đã xóa</td>
+</tr>
+<tr>
+<td>Case 2: Chặn role khác</td>
+<td>High</td>
+<td></td>
+<td>EX01 / REQ01</td>
+<td>Support/Teacher/role khác</td>
+<td>Có ID lớp</td>
+<td><strong>Given</strong> truy cập tab/API<br><strong>When</strong> kiểm tra quyền<br><strong>Then</strong> từ chối</td>
+<td>- Không trả tiền hoặc người nhận<br>- Không ghi dữ liệu</td>
+</tr>
+<tr>
+<td>Case 3: Search tên Handler</td>
+<td>High</td>
+<td></td>
+<td>REQ02</td>
+<td>Role có quyền</td>
+<td>Nhiều Handler có OT</td>
+<td><strong>Given</strong> nhập tên<br><strong>When</strong> tìm<br><strong>Then</strong> lọc theo người nhận</td>
+<td>- Tìm toàn bộ dữ liệu<br>- Giữ Đã hủy, loại Đã xóa<br>- Không search tên mẫu thay cho tên Handler</td>
+</tr>
+<tr>
+<td>Case 4: Nhiều khoản cho một người</td>
+<td>High</td>
+<td></td>
+<td>REQ02</td>
+<td>Role có quyền</td>
+<td>Một người có hai khoản</td>
+<td><strong>Given</strong> tải bảng<br><strong>When</strong> render<br><strong>Then</strong> có hai dòng độc lập</td>
+<td>- Không gộp theo tên<br>- Tiền/trạng thái đúng từng ID</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="popup-them-va-chinh-sua-ot">Popup thêm và chỉnh sửa OT</h3>
+<p align="center">
+  <a href="./images/35-class-ot-edit-popup.png"><img src="./images/35-class-ot-edit-popup.png" alt="Popup chỉnh sửa OT" width="600" title="Nhấn để xem ảnh gốc"></a><br>
+  <em>Form thêm dùng cùng field với form chỉnh sửa — nhấn để xem ảnh gốc</em>
+</p>
+
+<p><strong>Mô tả:</strong> Nút + mở <code>Gắn OT</code>; mở khoản Mới để <code>Chỉnh sửa OT</code>. Khoản xác nhận chỉ đọc; khả năng sửa/phục hồi khoản Đã hủy cần chốt riêng. Hai chế độ dùng cùng field; ảnh dropdown mở có tiêu đề Gắn OT dù tên file là Chỉnh sửa OT.</p>
+<p><strong>Giải thích field/thành phần:</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Field/thành phần</th>
+<th>Yêu cầu</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Người nhận</td>
+<td>Bắt buộc một Class Handler, không multi-select và không chọn role khác.</td>
+</tr>
+<tr>
+<td>Số tiền</td>
+<td>Nhập tùy ý, không ép bằng giá trị gốc, không áp trần mẫu hoặc kiểm tra tự động điều kiện trong mô tả. Phải là giá trị số có thể đọc/lưu được.</td>
+</tr>
+<tr>
+<td>Thời gian thực hiện</td>
+<td>Ngày và giờ ghi nhận người dùng nhập.</td>
+</tr>
+<tr>
+<td>Trạng thái</td>
+<td>Mặc định Mới khi thêm; chọn theo rule trạng thái bên dưới.</td>
+</tr>
+<tr>
+<td>Thông tin OT</td>
+<td>Khối chỉ đọc gồm Tên, Mô tả và Giá trị gốc của cấu hình OT. Giá trị gốc chỉ để tham chiếu, không ép số tiền nhập.</td>
+</tr>
+<tr>
+<td>Hủy bỏ</td>
+<td>Đóng form và bỏ draft; không chuyển trạng thái Đã hủy.</td>
+</tr>
+<tr>
+<td>Cập nhật</td>
+<td>Nút lưu theo ảnh; validate rồi lưu khoản được gắn/chỉnh và cập nhật danh sách OT sau thành công.</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Điểm cần lưu ý:</strong></p>
+<ul>
+<li>Không tự tính tiền theo số học viên lên kỳ hoặc chặn vì chưa đạt mô tả mẫu. Người dùng quyết định giá trị thực tế.</li>
+<li>Popup OT không có nút <code>Dùng giá trị gốc</code> như KPI; không tự thêm nút này. Không tự sinh KPI từ mô tả mẫu trong khối Thông tin OT.</li>
+<li>Rule tiền âm/0/phần lẻ chưa chốt; không tự đặt giới hạn nghiệp vụ ngoài khả năng parse/lưu số tiền.</li>
+<li>Một người được thêm nhiều khoản độc lập; bấm lặp cùng request tạo chỉ một khoản.</li>
+<li>Ngày cập nhật lấy máy chủ khi tạo/sửa/trạng thái/ghi chú thành công; xem/search/Hủy draft không đổi mốc này.</li>
+<li>Khoản xác nhận khóa người nhận, tiền, thời gian, ghi chú và trạng thái. Không có flow mở lại/đảo OT.</li>
+</ul>
+<h4 id="testcase-popup-them-va-chinh-sua">Testcase — Popup thêm và chỉnh sửa</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 5: Gắn OT với một Handler</td>
+<td>High</td>
+<td>Smoke</td>
+<td>Flow 2 / REQ03</td>
+<td>Role có quyền</td>
+<td>Dữ liệu hợp lệ</td>
+<td><strong>Given</strong> + mở Gắn OT và chọn một người<br><strong>When</strong> Cập nhật với trạng thái Mới<br><strong>Then</strong> tạo khoản OT</td>
+<td>- Một người nhận<br>- Cho tạo khoản khác cho cùng người<br>- Không thay đổi chi PTL</td>
+</tr>
+<tr>
+<td>Case 6: Chặn nhiều người hoặc role sai</td>
+<td>High</td>
+<td></td>
+<td>EX02 / REQ03</td>
+<td>Role có quyền</td>
+<td>Request bị sửa</td>
+<td><strong>Given</strong> gửi nhiều người/Support/Teacher<br><strong>When</strong> lưu<br><strong>Then</strong> từ chối</td>
+<td>- Không lưu một phần<br>- Không tin role client</td>
+</tr>
+<tr>
+<td>Case 7: Tiền khác giá trị gốc</td>
+<td>High</td>
+<td></td>
+<td>REQ03</td>
+<td>Role có quyền</td>
+<td>Giá trị gốc 1.200.000đ</td>
+<td><strong>Given</strong> nhập 800.000đ hoặc 1.500.000đ<br><strong>When</strong> lưu<br><strong>Then</strong> giữ đúng tiền nhập</td>
+<td>- Không ép tiền gốc<br>- Không áp trần mẫu<br>- Không kiểm tra điều kiện mô tả</td>
+</tr>
+<tr>
+<td>Case 8: Đúng UI OT và Hủy bỏ draft</td>
+<td>Medium</td>
+<td></td>
+<td>REQ03</td>
+<td>Role có quyền</td>
+<td>Popup Gắn/Chỉnh sửa OT mở</td>
+<td><strong>Given</strong> khối Thông tin OT và số tiền nhập khác giá trị gốc<br><strong>When</strong> Hủy bỏ<br><strong>Then</strong> bỏ draft</td>
+<td>- Không có nút Dùng giá trị gốc<br>- Không lưu backend<br>- Không chuyển Đã hủy<br>- Không tự sinh khoản KPI</td>
+</tr>
+<tr>
+<td>Case 9: Hai mốc ngày độc lập</td>
+<td>High</td>
+<td></td>
+<td>REQ03</td>
+<td>Role có quyền</td>
+<td>Thời gian thực hiện khác ngày hiện tại</td>
+<td><strong>Given</strong> nhập ngày/giờ<br><strong>When</strong> lưu<br><strong>Then</strong> giữ riêng hai mốc</td>
+<td>- Ghi nhận theo input<br>- Cập nhật theo máy chủ<br>- Xem không đổi thời gian</td>
+</tr>
+<tr>
+<td>Case 10: Khóa khoản xác nhận</td>
+<td>High</td>
+<td></td>
+<td>EX03 / REQ04</td>
+<td>Role có quyền</td>
+<td>OT Đã xác nhận</td>
+<td><strong>Given</strong> mở form hoặc gửi request sửa tiền/người/ngày/ghi chú<br><strong>When</strong> xử lý<br><strong>Then</strong> từ chối</td>
+<td>- Form chỉ đọc<br>- Tiền và chi PTL giữ nguyên</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="dropdown-trang-thai-va-xac-nhan">Dropdown trạng thái và xác nhận</h3>
+<p align="center">
+  <a href="./images/36-class-ot-status-popup.png"><img src="./images/36-class-ot-status-popup.png" alt="Trạng thái OT" width="600" title="Nhấn để xem ảnh gốc"></a><br>
+  <em>Bốn trạng thái OT — nhấn để xem ảnh gốc</em>
+</p>
+
+<p><strong>Mô tả:</strong> Trạng thái quyết định khả năng sửa và hiển thị khoản OT; mọi trạng thái OT đều không tính vào chi PTL trên danh sách lớp.</p>
+<p><strong>Giải thích field/thành phần:</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Trạng thái</th>
+<th>Hiển thị</th>
+<th>Tính chi PTL ở danh sách lớp</th>
+<th>Quy tắc</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Mới</td>
+<td>Có</td>
+<td>Không</td>
+<td>Sửa, xác nhận, hủy hoặc xóa.</td>
+</tr>
+<tr>
+<td>Đã xác nhận</td>
+<td>Có</td>
+<td>Không</td>
+<td>Khóa mọi thay đổi; Handler được tự xác nhận khoản của mình.</td>
+</tr>
+<tr>
+<td>Đã hủy</td>
+<td>Có</td>
+<td>Không</td>
+<td>Giữ để xem; có thể xóa nếu chưa xác nhận. Phục hồi chưa chốt.</td>
+</tr>
+<tr>
+<td>Đã xóa</td>
+<td>Không</td>
+<td>Không</td>
+<td>Xóa mềm; giữ audit.</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Điểm cần lưu ý:</strong></p>
+<ul>
+<li>Dropdown tại dòng lưu sau khi chọn và backend thành công; trong popup chỉ là draft đến Cập nhật.</li>
+<li>Đã xác nhận không được sửa tiền/người, về Mới, hủy hoặc xóa. Không tự tạo điều chỉnh bảng lương.</li>
+<li>Chọn Đã xóa trong dropdown phải dùng cùng popup xác nhận như X.</li>
+<li>Xác nhận khoản OT không đồng nghĩa đã thanh toán cho Handler, không cộng vào chỉ số chi PTL hoặc tự tạo KPI.</li>
+</ul>
+<h4 id="testcase-dropdown-trang-thai">Testcase — Dropdown trạng thái</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 11: Tự xác nhận OT</td>
+<td>High</td>
+<td></td>
+<td>Flow 3 / REQ04</td>
+<td>Class Handler</td>
+<td>Khoản Mới của chính mình</td>
+<td><strong>Given</strong> chọn Đã xác nhận<br><strong>When</strong> lưu thành công<br><strong>Then</strong> xác nhận được</td>
+<td>- Audit người/thời điểm<br>- Khóa khoản<br>- Chi phí PTL/Tổng chi PTL giữ nguyên</td>
+</tr>
+<tr>
+<td>Case 12: Đã hủy vẫn hiển thị</td>
+<td>High</td>
+<td></td>
+<td>REQ04</td>
+<td>Role có quyền</td>
+<td>OT Mới</td>
+<td><strong>Given</strong> chuyển Đã hủy<br><strong>When</strong> lưu<br><strong>Then</strong> dòng vẫn hiện</td>
+<td>- Không tính chi PTL<br>- Không xóa dòng</td>
+</tr>
+<tr>
+<td>Case 13: Không mở lại khoản xác nhận</td>
+<td>High</td>
+<td></td>
+<td>EX03 / REQ04</td>
+<td>Admin/Class Handler</td>
+<td>Đã xác nhận</td>
+<td><strong>Given</strong> gửi chuyển Mới/Hủy/Xóa<br><strong>When</strong> xử lý<br><strong>Then</strong> từ chối</td>
+<td>- Tiền/trạng thái giữ nguyên<br>- Không đảo OT</td>
+</tr>
+<tr>
+<td>Case 14: Sửa đồng thời với xác nhận</td>
+<td>High</td>
+<td></td>
+<td>EX04 / REQ04</td>
+<td>Hai role có quyền</td>
+<td>Cùng bản dữ liệu</td>
+<td><strong>Given</strong> A xác nhận trước<br><strong>When</strong> B sửa từ bản cũ<br><strong>Then</strong> từ chối và tải lại</td>
+<td>- Không sửa khoản khóa<br>- Không tạo trùng OT/audit xác nhận<br>- Không đổi chi PTL</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="xoa-khoan-ot">Xóa khoản OT</h3>
+<p><strong>Mô tả:</strong> X hoặc Đã xóa mở popup xác nhận cho khoản chưa xác nhận.</p>
+<p><strong>Giải thích field/thành phần:</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Thành phần</th>
+<th>Yêu cầu</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Popup</td>
+<td><code>Xóa khoản OT?</code> — <code>Khoản OT của {Handler} với số tiền {tiền} sẽ được ẩn khỏi danh sách. Lịch sử vẫn được lưu.</code></td>
+</tr>
+<tr>
+<td>Hủy bỏ</td>
+<td>Đóng, giữ dữ liệu.</td>
+</tr>
+<tr>
+<td>Xác nhận xóa</td>
+<td>Kiểm tra quyền/trạng thái mới nhất, chuyển Đã xóa rồi ẩn dòng.</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Điểm cần lưu ý:</strong></p>
+<ul>
+<li>Không xóa tài khoản, cấu hình mẫu hoặc audit.</li>
+<li>Không có X hoạt động trên khoản xác nhận; API cũng chặn.</li>
+<li>Xóa lặp không tạo nhiều thao tác logic.</li>
+</ul>
+<h4 id="testcase-xoa-khoan-ot">Testcase — Xóa khoản OT</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 15: Hủy popup xóa</td>
+<td>Medium</td>
+<td></td>
+<td>Flow 4 / REQ05</td>
+<td>Role có quyền</td>
+<td>Khoản chưa xác nhận</td>
+<td><strong>Given</strong> bấm X<br><strong>When</strong> Hủy bỏ<br><strong>Then</strong> giữ khoản</td>
+<td>- Không đổi trạng thái<br>- Không Toast thành công</td>
+</tr>
+<tr>
+<td>Case 16: Xóa mềm và ẩn</td>
+<td>High</td>
+<td></td>
+<td>Flow 4 / REQ05</td>
+<td>Role có quyền</td>
+<td>Mới hoặc Đã hủy</td>
+<td><strong>Given</strong> X hoặc Đã xóa<br><strong>When</strong> xác nhận<br><strong>Then</strong> ẩn dòng</td>
+<td>- Không hiện khi search/tải lại<br>- Audit/tài khoản còn<br>- Không tính chi PTL</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="ghi-chu-lich-su-va-copy">Ghi chú, lịch sử và Copy</h3>
+<p align="center">
+  <a href="./images/16-class-detail-student-note.png"><img src="./images/16-class-detail-student-note.png" alt="UI tham chiếu ô nhập ghi chú OT từ tab Học viên" width="650" title="Nhấn để xem ảnh gốc"></a><br>
+  <em>Dùng lại UI popup ghi chú của tab Học viên; tiêu đề khi dùng cho OT là Ghi chú OT.</em>
+</p>
+
+<p align="center">
+  <a href="./images/19-class-detail-student-note-history.png"><img src="./images/19-class-detail-student-note-history.png" alt="UI tham chiếu lịch sử chỉnh sửa ghi chú OT" width="540" title="Nhấn để xem ảnh gốc"></a><br>
+  <em>Dùng lại UI Lịch sử ghi chú: nội dung, người chỉnh sửa, thời điểm và Copy từng phiên bản.</em>
+</p>
+
+<p><strong>Mô tả:</strong> Click icon ghi chú tại dòng OT mở popup/popover giống <a href="./class_detail_students_requirements.md">Tab Học viên</a>: có ô nhập văn bản để gõ/chỉnh nội dung và icon xem lịch sử chỉnh sửa ngay cạnh tiêu đề. Nội dung và lịch sử thuộc đúng khoản OT, không phải ghi chú học viên.</p>
+<p><strong>Giải thích field/thành phần:</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Thành phần</th>
+<th>Yêu cầu</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Popup ghi chú</td>
+<td>Dùng bố cục của tab Học viên; tiêu đề <code>Ghi chú OT</code> và icon lịch sử cạnh tiêu đề. Click không mở đồng thời form chỉnh sửa OT.</td>
+</tr>
+<tr>
+<td>Ô nhập nội dung (textarea)</td>
+<td>Hiển thị nội dung hiện tại; cho gõ/chỉnh văn bản nhiều dòng ở khoản Mới. Nếu chưa có ghi chú, ô nhập trống. Không thêm dropdown loại ghi chú.</td>
+</tr>
+<tr>
+<td>Lưu nội dung</td>
+<td>Theo cơ chế lưu ghi chú của tab Học viên; lưu phiên bản và cập nhật Ngày cập nhật sau backend thành công. Quyền sửa khoản Đã hủy cần chốt riêng.</td>
+</tr>
+<tr>
+<td>Icon lịch sử</td>
+<td>Click mở popup <code>Lịch sử ghi chú</code> của đúng khoản OT trong lớp, giống UI lịch sử của tab Học viên.</td>
+</tr>
+<tr>
+<td>Mỗi phiên bản</td>
+<td>Nội dung đầy đủ, avatar/tên người tạo hoặc chỉnh sửa, thời điểm máy chủ; mới nhất trước. Không ghi đè phiên bản cũ.</td>
+</tr>
+<tr>
+<td>Copy</td>
+<td>Icon ở từng bản ghi; copy đúng nội dung của phiên bản được bấm, không kèm metadata.</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Điểm cần lưu ý:</strong></p>
+<ul>
+<li>Đã xác nhận chỉ xem/Copy; không sửa ghi chú.</li>
+<li>Chỉ Admin/Class Handler dùng phần ghi chú OT; tái sử dụng UI không kế thừa quyền Support của tab Học viên.</li>
+<li>Ghi chú và lịch sử lưu theo <code>class_id + ot_id</code>; không dùng <code>student_id</code> hoặc chỉ tên Handler để xác định bản ghi.</li>
+<li>Gõ/chỉnh chỉ thay đổi draft; mỗi lần lưu nội dung mới thành công mới tạo phiên bản. Không tạo lịch sử sau từng phím gõ hoặc khi chỉ mở popup.</li>
+<li>Không sửa/xóa lịch sử; không thực thi HTML/script.</li>
+<li>Copy không tạo phiên bản hoặc đổi ngày cập nhật.</li>
+<li>Không âm thầm ghi đè khi hai người sửa cùng phiên bản; cảnh báo xung đột và cho tải lại. Lưu lỗi giữ draft, không tạo lịch sử thành công giả.</li>
+<li>Sửa ghi chú không thay đổi tiền, trạng thái OT hoặc Tổng chi PTL.</li>
+</ul>
+<h4 id="testcase-ghi-chu">Testcase — Ghi chú</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 17: Sửa ghi chú đúng khoản</td>
+<td>High</td>
+<td></td>
+<td>Flow 5 / REQ06</td>
+<td>Role có quyền</td>
+<td>OT Mới</td>
+<td><strong>Given</strong> mở icon<br><strong>When</strong> sửa/lưu<br><strong>Then</strong> ghi đúng OT</td>
+<td>- Có lịch sử người/thời điểm<br>- Cập nhật mốc sửa</td>
+</tr>
+<tr>
+<td>Case 18: Lịch sử và Copy</td>
+<td>Medium</td>
+<td></td>
+<td>REQ06</td>
+<td>Admin/Class Handler</td>
+<td>Nhiều phiên bản</td>
+<td><strong>Given</strong> popup ghi chú đang mở<br><strong>When</strong> click icon lịch sử cạnh tiêu đề và Copy bản chọn<br><strong>Then</strong> mở lịch sử đúng OT và sao chép đúng nội dung</td>
+<td>- Nội dung, avatar/tên người và thời điểm đầy đủ<br>- Mới nhất trước<br>- Không trộn khoản hoặc kèm metadata khi Copy<br>- Không thêm phiên bản<br>- Khoản xác nhận vẫn xem/Copy</td>
+</tr>
+<tr>
+<td>Case 25: Popup và ô gõ giống tab Học viên</td>
+<td>High</td>
+<td></td>
+<td>Flow 5 / REQ06</td>
+<td>Admin/Class Handler</td>
+<td>Có OT Mới, có hoặc chưa có ghi chú</td>
+<td><strong>Given</strong> danh sách OT<br><strong>When</strong> click icon ghi chú rồi gõ nhiều dòng<br><strong>Then</strong> popup đúng UI tham chiếu, có ô nhập và icon lịch sử</td>
+<td>- Tiêu đề Ghi chú OT<br>- Hiển thị nội dung hiện tại hoặc ô trống<br>- Không mở form sửa OT đồng thời<br>- Chưa lưu thì không tạo phiên bản hoặc đổi Ngày cập nhật<br>- Không thêm dropdown loại ghi chú</td>
+</tr>
+<tr>
+<td>Case 26: Xung đột hoặc lỗi lưu ghi chú</td>
+<td>High</td>
+<td></td>
+<td>EX04–EX05 / REQ06</td>
+<td>Admin/Class Handler</td>
+<td>Hai người mở cùng phiên bản hoặc backend lỗi</td>
+<td><strong>Given</strong> A lưu trước B hoặc lưu thất bại<br><strong>When</strong> B gửi nội dung draft<br><strong>Then</strong> cảnh báo xung đột/lỗi, không âm thầm ghi đè</td>
+<td>- Giữ draft để xử lý/thử lại<br>- Giữ các phiên bản thành công trước đó<br>- Không tạo lịch sử thành công giả<br>- Tiền/trạng thái/Tổng chi PTL không đổi</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="tach-ot-khoi-chi-phi-ptl-tren-danh-sach-lop">Tách OT khỏi Chi phí PTL trên danh sách lớp</h3>
+<p><strong>Mô tả:</strong> Tab OT chỉ hiển thị/quản lý khoản OT của lớp. Không đưa OT vào Chi phí PTL hoặc Tổng chi PTL trên danh sách lớp như KPI.</p>
+<p><strong>Giải thích field/thành phần:</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Giá trị</th>
+<th>Cách tính</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Chi phí PTL của lớp</td>
+<td>Giữ công thức chỉ cộng KPI Đã xác nhận; không cộng bất kỳ khoản OT nào.</td>
+</tr>
+<tr>
+<td>Tổng chi PTL</td>
+<td>Giữ tổng từ KPI của tập lớp thỏa filter; OT không tác động số tiền.</td>
+</tr>
+<tr>
+<td>Chỉ số OT tại danh sách lớp</td>
+<td>Không thêm cột/thẻ tổng chi OT vào danh sách lớp trong phạm vi requirement này.</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Điểm cần lưu ý:</strong></p>
+<ul>
+<li>Mới/Đã xác nhận/Đã hủy/Đã xóa của OT đều không tham gia các chỉ số chi PTL.</li>
+<li>Tạo/sửa/xác nhận/hủy/xóa/ghi chú/search OT không thay đổi KPI hay các tổng KPI đã chốt.</li>
+<li>Ví dụ lớp có KPI Đã xác nhận 500.000đ và OT Đã xác nhận 200.000đ → Chi phí PTL trên list vẫn 500.000đ, không phải 700.000đ.</li>
+<li>OT có định danh và loại khoản riêng; không dùng chung bản ghi KPI rồi thay nhãn hiển thị.</li>
+<li>Nghiệp vụ tổng hợp/chi trả OT ở màn khác nằm ngoài phạm vi; không suy diễn OT không được thanh toán.</li>
+</ul>
+<h4 id="testcase-khong-cong-ot-vao-chi-ptl">Testcase — Không cộng OT vào chi PTL</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 19: OT xác nhận không cộng chi PTL</td>
+<td>High</td>
+<td></td>
+<td>REQ07</td>
+<td>Role xem thống kê</td>
+<td>KPI xác nhận 500.000đ, OT xác nhận 200.000đ cùng lớp</td>
+<td><strong>Given</strong> mở danh sách lớp<br><strong>When</strong> tải Chi phí PTL<br><strong>Then</strong> chỉ lấy KPI 500.000đ</td>
+<td>- Không thành 700.000đ<br>- Không thêm cột/thẻ chi OT</td>
+</tr>
+<tr>
+<td>Case 20: CRUD OT không đổi tổng theo filter</td>
+<td>High</td>
+<td></td>
+<td>REQ07</td>
+<td>Admin/Class Handler</td>
+<td>Chi PTL từ KPI của A/B là 1.200.000đ</td>
+<td><strong>Given</strong> tạo/sửa/hủy/xóa OT và tìm kiếm OT<br><strong>When</strong> tải lại danh sách lớp với filter A/B<br><strong>Then</strong> Tổng chi PTL vẫn 1.200.000đ</td>
+<td>- Không trộn OT vào tổng<br>- Bản ghi KPI không đổi</td>
+</tr>
+<tr>
+<td>Case 21: Xác nhận OT lặp</td>
+<td>High</td>
+<td></td>
+<td>EX04 / REQ07</td>
+<td>Role có quyền</td>
+<td>Khoản OT 200.000đ</td>
+<td><strong>Given</strong> request xác nhận lặp<br><strong>When</strong> xử lý<br><strong>Then</strong> một xác nhận OT</td>
+<td>- Không nhân khoản/audit xác nhận<br>- Không cộng chi PTL<br>- Không tự sinh KPI</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="toast-va-trang-thai-tai">Toast và trạng thái tải</h3>
+<p align="center"><a href="../../images/01-toast-crud.png"><img src="../../images/01-toast-crud.png" alt="Toast CRUD OT" width="520" title="Nhấn để xem ảnh gốc"></a></p>
+
+<p><strong>Mô tả:</strong> CRUD có Toast sau backend; loading/rỗng/lỗi tại bảng.</p>
+<p><strong>Giải thích field/thành phần:</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Thành phần</th>
+<th>Yêu cầu</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Loading/rỗng/lỗi</td>
+<td>Loading khi tải; <code>Chưa có khoản OT.</code> nếu rỗng; lỗi có Thử lại.</td>
+</tr>
+<tr>
+<td>Thành Công</td>
+<td><code>Đã thêm OT.</code>, <code>Đã cập nhật OT.</code>, <code>Đã xác nhận OT.</code>, <code>Đã xóa OT.</code></td>
+</tr>
+<tr>
+<td>Cảnh Báo</td>
+<td><code>OT đã được xác nhận và không thể chỉnh sửa.</code> hoặc lỗi field.</td>
+</tr>
+<tr>
+<td>Có Lỗi Xảy Ra</td>
+<td><code>Không thể cập nhật OT. Vui lòng thử lại.</code></td>
+</tr>
+<tr>
+<td>Thông Báo</td>
+<td>Chỉ khi chờ đồng bộ thực tế.</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Điểm cần lưu ý:</strong></p>
+<ul>
+<li>Một thao tác một kết quả; không báo thành công sớm.</li>
+<li>Mở form/Hủy draft/search/Copy không có Toast CRUD thành công.</li>
+<li>Lỗi lưu giữ draft và tiền/trạng thái cũ; lỗi tải không biến thành 0 khoản.</li>
+</ul>
+<h4 id="testcase-toast-va-tai">Testcase — Toast và tải</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 22: Toast thành công</td>
+<td>Medium</td>
+<td></td>
+<td>REQ08</td>
+<td>Role có quyền</td>
+<td>CRUD hợp lệ</td>
+<td><strong>Given</strong> lưu<br><strong>When</strong> backend thành công<br><strong>Then</strong> một Toast đúng thao tác</td>
+<td>- Danh sách OT đồng bộ<br>- Không đổi tổng chi PTL<br>- Không nhân Toast</td>
+</tr>
+<tr>
+<td>Case 23: Lưu lỗi</td>
+<td>High</td>
+<td></td>
+<td>EX05 / REQ08</td>
+<td>Role có quyền</td>
+<td>Backend lỗi</td>
+<td><strong>Given</strong> lưu<br><strong>When</strong> thất bại<br><strong>Then</strong> lỗi và giữ draft</td>
+<td>- Không đổi tiền/trạng thái/tổng<br>- Thử lại được</td>
+</tr>
+<tr>
+<td>Case 24: Search response cũ</td>
+<td>High</td>
+<td></td>
+<td>EX06 / REQ02</td>
+<td>Role có quyền</td>
+<td>Search liên tục</td>
+<td><strong>Given</strong> response cũ về sau<br><strong>When</strong> render<br><strong>Then</strong> giữ search mới</td>
+<td>- Không trộn kết quả</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="2-yeu-cau">2. Yêu cầu</h2>
+<h3 id="21-flow-chinh">2.1. Flow chính</h3>
+<ul>
+<li><strong>Flow 1 / REQ01–REQ02:</strong> Mở lớp → kiểm tra Admin/Class Handler và phạm vi → tải OT chưa xóa → tìm theo tên Handler.</li>
+<li><strong>Flow 2 / REQ03:</strong> + mở Gắn OT hoặc khoản Mới mở Chỉnh sửa OT → một Handler, tiền/ngày/giờ/trạng thái → Cập nhật → lưu và Toast.</li>
+<li><strong>Flow 3 / REQ04, REQ07:</strong> Đã xác nhận → kiểm tra phiên bản/quyền → audit → khóa khoản OT → cập nhật danh sách OT, không thay đổi chi PTL.</li>
+<li><strong>Flow 4 / REQ05:</strong> X/Đã xóa → xác nhận → kiểm tra chưa xác nhận → xóa mềm → ẩn → Toast.</li>
+<li><strong>Flow 5 / REQ06:</strong> Click icon ghi chú → popup giống tab Học viên → gõ/chỉnh trong ô văn bản nếu khoản Mới → lưu nội dung và phiên bản → icon lịch sử cạnh tiêu đề → xem/Copy từng bản; Đã xác nhận chỉ đọc, quyền sửa Đã hủy cần chốt riêng.</li>
+</ul>
+<h3 id="22-ngoai-le">2.2. Ngoại lệ</h3>
+<ul>
+<li><strong>EX01:</strong> Sai role/ngoài phạm vi → chặn API/dữ liệu.</li>
+<li><strong>EX02:</strong> Thiếu/sai người nhận, nhiều người, tiền hoặc ngày/giờ không đọc/lưu được → lỗi đúng field, không lưu một phần.</li>
+<li><strong>EX03:</strong> Đã xác nhận bị sửa/hủy/xóa → từ chối; không đảo OT/bảng lương.</li>
+<li><strong>EX04:</strong> Request lặp hoặc xung đột version → một kết quả; không sửa khoản vừa khóa hoặc tạo trùng OT/audit.</li>
+<li><strong>EX05:</strong> Lỗi lưu → giữ dữ liệu cũ/draft, cho thử lại.</li>
+<li><strong>EX06:</strong> Response search/lớp cũ → bỏ qua.</li>
+</ul>
+<h3 id="23-yeu-cau-khac">2.3. Yêu cầu khác</h3>
+<ul>
+<li><strong>REQ01:</strong> Chỉ Admin/Class Handler xem và CRUD/xác nhận; tự xác nhận OT được phép.</li>
+<li><strong>REQ02:</strong> Mỗi khoản một dòng; search tên Handler; giữ Hủy, ẩn Xóa.</li>
+<li><strong>REQ03:</strong> Một người mỗi khoản; nhiều khoản/người; tiền tùy ý, khối Thông tin OT chỉ đọc với giá trị gốc, không có nút Dùng giá trị gốc; ngày thực hiện và ngày cập nhật riêng.</li>
+<li><strong>REQ04:</strong> Bốn trạng thái; xác nhận khóa khoản, không mở lại/đảo.</li>
+<li><strong>REQ05:</strong> Xóa có xác nhận, xóa mềm khoản chưa xác nhận.</li>
+<li><strong>REQ06:</strong> UI ghi chú giống tab Học viên: click icon mở popup có ô gõ/chỉnh nhiều dòng và icon lịch sử; dữ liệu theo class_id + ot_id, lịch sử người/thời điểm và Copy từng bản; chỉ Admin/Class Handler, khoản xác nhận chỉ đọc.</li>
+<li><strong>REQ07:</strong> Tách OT khỏi KPI; không hiển thị/cộng OT vào Chi phí PTL/Tổng chi PTL ở danh sách lớp, bất kể trạng thái.</li>
+<li><strong>REQ08:</strong> Toast CRUD, tải/rỗng/lỗi rõ ràng.</li>
+</ul>
+<h3 id="24-rang-buoc">2.4. Ràng buộc</h3>
+<ul>
+<li>Dùng ot_id, class_id, handler_id; không cập nhật theo tên/vị trí dòng.</li>
+<li>Backend kiểm tra quyền/phạm vi, trạng thái/version tại thời điểm lưu.</li>
+<li>Audit người tạo/sửa/xác nhận/xóa và thời điểm máy chủ; lịch sử bất biến.</li>
+<li>Một request tạo lặp chỉ một khoản; hai thao tác tạo độc lập cho cùng Handler được phép.</li>
+<li>Không bỏ khóa khoản xác nhận qua request trực tiếp hoặc lớp test.</li>
+<li>Đã xác nhận không đồng nghĩa đã thanh toán; trả lương thuộc function khác.</li>
+</ul>
+<h2 id="3-can-xac-nhan">3. Cần xác nhận</h2>
+<ul>
+<li>Nguồn cấu hình Tên/Mô tả/Giá trị gốc và cách chọn mẫu OT chưa rõ trong ảnh; người nhận đã chốt là một Handler.</li>
+<li>Picker giới hạn ở Handler đã thêm vào lớp hay từ danh sách hệ thống?</li>
+<li>Tiền âm/0/phần lẻ: hiện chỉ chốt nhập tùy ý, không kiểm tra điều kiện mẫu.</li>
+<li>Đã hủy được sửa/phục hồi về Mới hoặc xác nhận không? Hiện chỉ chốt giữ hiển thị và xóa khi chưa xác nhận.</li>
+<li>Danh sách OT dùng load-more hay phân trang? Search theo tên Handler đã chốt, cơ chế tải thêm chưa có câu trả lời.</li>
+</ul>
+</article>
+    <p class="source-note">Nguồn: class_detail_ot_requirements.md · SHA-256 e7e6cd4822e8c099477836845cf7417d3accc807f2a7add984adef15153e0fb4</p>
+  </main>
+  <script>
+    const article = document.getElementById('document');
+    const nav = document.getElementById('docNav');
+    const headings = [...article.querySelectorAll('h2')];
+    headings.forEach((heading, index) => {
+      const link = document.createElement('a');
+      link.href = `#${heading.id}`;
+      const number = document.createElement('span');
+      number.className = 'nav-num';
+      number.textContent = String(index + 1).padStart(2, '0');
+      link.append(number, document.createTextNode(heading.textContent));
+      nav.append(link);
+    });
+
+    const navLinks = [...nav.querySelectorAll('a')];
+    const observer = new IntersectionObserver(entries => {
+      const current = entries.filter(item => item.isIntersecting).sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
+      if (!current) return;
+      navLinks.forEach(link => link.classList.toggle('active', link.hash === `#${current.target.id}`));
+    }, {rootMargin: '-18% 0px -68% 0px', threshold: [0, .2, .5]});
+    headings.forEach(heading => observer.observe(heading));
+    if (navLinks[0]) navLinks[0].classList.add('active');
+
+    const testcaseHeadings = [...article.querySelectorAll('h4, h5')]
+      .filter(heading => heading.textContent.trim().startsWith('Testcase'));
+    const testcaseGroups = testcaseHeadings
+      .map(heading => ({heading, tableWrap: heading.nextElementSibling}))
+      .filter(group => group.tableWrap?.classList.contains('table-wrap'));
+    if (testcaseGroups.length) {
+        const tableWraps = testcaseGroups.map(group => group.tableWrap);
+        tableWraps.forEach(tableWrap => tableWrap.classList.add('testcase-table'));
+        const rows = tableWraps.flatMap(tableWrap => [...tableWrap.querySelectorAll('tbody tr')]);
+        const tools = document.createElement('div');
+        tools.className = 'case-tools';
+        const input = document.createElement('input');
+        input.type = 'search';
+        input.placeholder = 'Tìm testcase, Flow, REQ, EX hoặc nội dung…';
+        input.setAttribute('aria-label', 'Tìm testcase');
+        const count = document.createElement('span');
+        count.className = 'case-count';
+        tools.append(input, count);
+        testcaseGroups[0].heading.before(tools);
+        const filterRows = () => {
+          const query = input.value.trim().toLocaleLowerCase('vi');
+          let visible = 0;
+          rows.forEach(row => {
+            const match = !query || row.textContent.toLocaleLowerCase('vi').includes(query);
+            row.hidden = !match;
+            if (match) visible += 1;
+          });
+          testcaseGroups.forEach(({heading, tableWrap}) => {
+            const hasVisibleRow = [...tableWrap.querySelectorAll('tbody tr')]
+              .some(row => !row.hidden);
+            heading.hidden = !hasVisibleRow;
+            tableWrap.hidden = !hasVisibleRow;
+          });
+          count.textContent = `${visible}/${rows.length} testcase`;
+        };
+        input.addEventListener('input', filterRows);
+        filterRows();
+    }
+  </script>
+</body>
+</html>

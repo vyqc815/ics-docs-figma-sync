@@ -1,0 +1,2196 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Requirement Chi tiết lớp học — Tab Cuộc họp">
+  <link rel="icon" href="data:,">
+  <title>Chi tiết lớp học — Cuộc họp — Requirement</title>
+  <style>
+    :root {
+      --orange-700: #c83f00;
+      --orange-600: #e84c00;
+      --orange-500: #f45b0a;
+      --orange-400: #ff7a32;
+      --orange-100: #fff0e8;
+      --orange-50: #fff8f4;
+      --navy-950: #101828;
+      --navy-900: #172033;
+      --navy-800: #243047;
+      --slate-700: #344054;
+      --slate-600: #475467;
+      --slate-500: #667085;
+      --slate-400: #98a2b3;
+      --slate-300: #d0d5dd;
+      --slate-200: #e4e7ec;
+      --slate-100: #f2f4f7;
+      --slate-50: #f8fafc;
+      --white: #ffffff;
+      --green: #159447;
+      --blue: #2154c5;
+      --yellow: #b77900;
+      --red: #c92a2a;
+      --purple: #6941c6;
+      --shadow-sm: 0 1px 2px rgba(16, 24, 40, .06);
+      --shadow-md: 0 12px 32px rgba(16, 24, 40, .10);
+      --shadow-lg: 0 24px 64px rgba(16, 24, 40, .16);
+      --radius-sm: 10px;
+      --radius: 16px;
+      --radius-lg: 24px;
+      --sidebar: 286px;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      color: var(--navy-950);
+      background:
+        radial-gradient(circle at 88% 5%, rgba(244, 91, 10, .10), transparent 24rem),
+        var(--slate-50);
+      font: 15px/1.65 Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      text-rendering: optimizeLegibility;
+    }
+    a { color: inherit; }
+    img { max-width: 100%; }
+    button, input, select { font: inherit; }
+    code {
+      padding: .12rem .38rem;
+      border: 1px solid #fed7c3;
+      border-radius: 6px;
+      color: var(--orange-700);
+      background: var(--orange-50);
+      font: 600 .9em ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    }
+
+    .skip-link {
+      position: fixed;
+      z-index: 999;
+      top: 12px;
+      left: 12px;
+      padding: 10px 14px;
+      border-radius: 9px;
+      color: var(--white);
+      background: var(--navy-950);
+      transform: translateY(-150%);
+    }
+    .skip-link:focus { transform: none; }
+
+    .sidebar {
+      position: fixed;
+      z-index: 30;
+      inset: 0 auto 0 0;
+      width: var(--sidebar);
+      padding: 22px 18px;
+      overflow-y: auto;
+      color: #f8fafc;
+      background:
+        linear-gradient(155deg, rgba(255, 122, 50, .24), transparent 26%),
+        linear-gradient(180deg, #192338 0%, #111827 100%);
+      border-right: 1px solid rgba(255, 255, 255, .08);
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 4px 8px 22px;
+      border-bottom: 1px solid rgba(255, 255, 255, .10);
+    }
+    .brand-mark {
+      display: grid;
+      width: 44px;
+      height: 44px;
+      place-items: center;
+      border-radius: 14px;
+      color: var(--white);
+      background: linear-gradient(135deg, var(--orange-400), var(--orange-600));
+      box-shadow: 0 10px 26px rgba(244, 91, 10, .35);
+      font-weight: 900;
+      letter-spacing: -.06em;
+    }
+    .brand strong { display: block; font-size: 16px; }
+    .brand small { color: #aeb8c9; }
+    .nav-title {
+      margin: 24px 10px 8px;
+      color: #8f9aae;
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+    .nav { display: grid; gap: 4px; }
+    .nav a {
+      display: flex;
+      align-items: center;
+      gap: 11px;
+      padding: 10px 12px;
+      border-radius: 10px;
+      color: #cbd5e1;
+      text-decoration: none;
+      transition: .18s ease;
+    }
+    .nav a:hover, .nav a.active {
+      color: var(--white);
+      background: rgba(255, 255, 255, .09);
+    }
+    .nav a.active { box-shadow: inset 3px 0 var(--orange-400); }
+    .nav-num {
+      display: grid;
+      width: 25px;
+      height: 25px;
+      flex: 0 0 auto;
+      place-items: center;
+      border: 1px solid rgba(255, 255, 255, .15);
+      border-radius: 8px;
+      font-size: 11px;
+      font-weight: 800;
+    }
+    .sidebar-footer {
+      margin-top: 26px;
+      padding: 14px;
+      border: 1px solid rgba(255, 255, 255, .10);
+      border-radius: 14px;
+      color: #aeb8c9;
+      background: rgba(255, 255, 255, .04);
+      font-size: 12px;
+    }
+    .sidebar-footer a { color: #ffd8c5; }
+
+    main {
+      width: min(1500px, calc(100% - var(--sidebar)));
+      margin-left: var(--sidebar);
+      padding: 34px clamp(24px, 4vw, 64px) 80px;
+    }
+    section { scroll-margin-top: 24px; }
+    .hero {
+      position: relative;
+      padding: clamp(30px, 5vw, 56px);
+      overflow: hidden;
+      border: 1px solid rgba(255, 255, 255, .08);
+      border-radius: var(--radius-lg);
+      color: var(--white);
+      background:
+        linear-gradient(105deg, rgba(16, 24, 40, .97) 0%, rgba(23, 32, 51, .94) 62%, rgba(109, 45, 9, .90) 100%);
+      box-shadow: var(--shadow-lg);
+    }
+    .hero::after {
+      content: "";
+      position: absolute;
+      width: 360px;
+      height: 360px;
+      top: -190px;
+      right: -80px;
+      border: 70px solid rgba(255, 122, 50, .15);
+      border-radius: 50%;
+    }
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 10px;
+      border: 1px solid rgba(255, 255, 255, .15);
+      border-radius: 999px;
+      color: #ffd8c5;
+      background: rgba(255, 255, 255, .06);
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+    .hero h1 {
+      max-width: 900px;
+      margin: 18px 0 12px;
+      font-size: clamp(34px, 5vw, 64px);
+      line-height: 1.03;
+      letter-spacing: -.045em;
+    }
+    .hero p { max-width: 780px; margin: 0; color: #cbd5e1; font-size: 17px; }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 25px; }
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      min-height: 42px;
+      padding: 9px 14px;
+      border: 1px solid transparent;
+      border-radius: 10px;
+      color: var(--white);
+      background: var(--orange-500);
+      text-decoration: none;
+      cursor: pointer;
+      transition: .18s ease;
+    }
+    .button:hover { transform: translateY(-1px); background: var(--orange-600); }
+    .button.secondary { border-color: rgba(255, 255, 255, .15); background: rgba(255, 255, 255, .07); }
+    .button.ghost { color: var(--slate-700); border-color: var(--slate-300); background: var(--white); }
+    .button.small { min-height: 36px; padding: 7px 11px; font-size: 13px; }
+
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 14px;
+      margin-top: 18px;
+    }
+    .stat {
+      padding: 18px;
+      border: 1px solid var(--slate-200);
+      border-radius: var(--radius);
+      background: rgba(255, 255, 255, .86);
+      box-shadow: var(--shadow-sm);
+    }
+    .stat strong { display: block; color: var(--orange-600); font-size: 30px; line-height: 1; }
+    .stat span { display: block; margin-top: 7px; color: var(--slate-600); font-weight: 650; }
+
+    .section-head {
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 24px;
+      margin: 64px 0 20px;
+    }
+    .section-kicker {
+      margin: 0 0 6px;
+      color: var(--orange-600);
+      font-size: 12px;
+      font-weight: 850;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+    .section-head h2 { margin: 0; font-size: clamp(27px, 4vw, 40px); letter-spacing: -.035em; }
+    .section-head p { max-width: 600px; margin: 8px 0 0; color: var(--slate-600); }
+
+    .panel {
+      padding: clamp(20px, 3vw, 30px);
+      border: 1px solid var(--slate-200);
+      border-radius: var(--radius-lg);
+      background: var(--white);
+      box-shadow: var(--shadow-sm);
+    }
+    .panel + .panel { margin-top: 18px; }
+    .panel h3 { margin: 0 0 14px; font-size: 21px; letter-spacing: -.02em; }
+    .panel h4 { margin: 26px 0 10px; }
+    .muted { color: var(--slate-600); }
+    .note {
+      padding: 15px 17px;
+      border-left: 4px solid var(--orange-500);
+      border-radius: 0 12px 12px 0;
+      color: var(--slate-700);
+      background: var(--orange-50);
+    }
+
+    .mockup {
+      position: relative;
+      padding: 12px;
+      border: 1px solid var(--slate-200);
+      border-radius: 18px;
+      background: linear-gradient(145deg, #fff, #f4f6f9);
+      box-shadow: var(--shadow-md);
+    }
+    .mockup a { display: block; overflow: hidden; border-radius: 12px; }
+    .mockup img { display: block; width: 100%; transition: transform .3s ease; }
+    .mockup a:hover img { transform: scale(1.01); }
+    .mockup figcaption { padding: 12px 4px 2px; color: var(--slate-600); font-size: 13px; }
+
+    .grid-2 { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
+    .grid-3 { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+    .grid-4 { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 14px; }
+    .card {
+      padding: 18px;
+      border: 1px solid var(--slate-200);
+      border-radius: var(--radius);
+      background: var(--white);
+      box-shadow: var(--shadow-sm);
+    }
+    .card h3, .card h4 { margin: 0 0 8px; }
+    .card p { margin: 0; color: var(--slate-600); }
+    .card-accent { border-top: 4px solid var(--orange-500); }
+
+    .column-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+    .column-item {
+      min-height: 124px;
+      padding: 15px;
+      border: 1px solid var(--slate-200);
+      border-radius: 14px;
+      background: var(--slate-50);
+    }
+    .column-item strong { display: block; margin-bottom: 5px; color: var(--navy-900); }
+    .column-item span { color: var(--slate-600); font-size: 13px; }
+
+    .status-card { display: flex; align-items: center; gap: 12px; }
+    .status-card img { width: 42px; height: 42px; }
+    .status-card small { display: block; color: var(--slate-500); }
+
+    .tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      padding: 4px 9px;
+      border-radius: 999px;
+      color: var(--orange-700);
+      background: var(--orange-100);
+      font-size: 12px;
+      font-weight: 800;
+    }
+    .tag.high { color: #9d174d; background: #fce7f3; }
+    .tag.medium { color: #92400e; background: #fef3c7; }
+    .tag.req { color: #3730a3; background: #e0e7ff; }
+    .tag.ex { color: #b42318; background: #fee4e2; }
+
+    .flow-list { display: grid; gap: 14px; counter-reset: flow; }
+    .flow {
+      position: relative;
+      padding: 22px 22px 22px 68px;
+      border: 1px solid var(--slate-200);
+      border-radius: var(--radius);
+      background: var(--white);
+    }
+    .flow::before {
+      counter-increment: flow;
+      content: counter(flow, decimal-leading-zero);
+      position: absolute;
+      top: 20px;
+      left: 18px;
+      display: grid;
+      width: 36px;
+      height: 36px;
+      place-items: center;
+      border-radius: 11px;
+      color: var(--white);
+      background: var(--orange-500);
+      font-weight: 900;
+    }
+    .flow h3 { margin: 0 0 8px; }
+    .flow ol { margin: 0; padding-left: 20px; color: var(--slate-700); }
+
+    .exception { border-left: 4px solid #ef4444; }
+    .exception strong { color: var(--red); }
+
+    .formula-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; }
+    .formula {
+      padding: 18px;
+      border: 1px solid #ffd6c2;
+      border-radius: 16px;
+      background: linear-gradient(160deg, #fff, var(--orange-50));
+    }
+    .formula h4 { margin: 0 0 12px; color: var(--orange-700); }
+    .fraction { display: grid; justify-items: center; color: var(--navy-900); font-weight: 720; text-align: center; }
+    .fraction .top { padding: 0 10px 7px; border-bottom: 2px solid var(--navy-800); }
+    .fraction .bottom { padding-top: 7px; }
+    .formula .teacher { margin-top: 16px; padding-top: 12px; border-top: 1px dashed #f5b896; color: var(--slate-600); font-size: 13px; }
+
+    .filters {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      align-items: center;
+      padding: 14px;
+      border: 1px solid var(--slate-200);
+      border-radius: 14px;
+      background: var(--white);
+      position: sticky;
+      top: 10px;
+      z-index: 10;
+      box-shadow: var(--shadow-md);
+    }
+    .search {
+      min-width: min(100%, 320px);
+      flex: 1 1 260px;
+      height: 42px;
+      padding: 0 13px;
+      border: 1px solid var(--slate-300);
+      border-radius: 10px;
+      color: var(--navy-950);
+      background: var(--white);
+      outline: none;
+    }
+    .search:focus { border-color: var(--orange-500); box-shadow: 0 0 0 4px rgba(244, 91, 10, .12); }
+    .testcases { display: grid; gap: 10px; margin-top: 16px; }
+    .testcase {
+      border: 1px solid var(--slate-200);
+      border-radius: 14px;
+      background: var(--white);
+      overflow: clip;
+    }
+    .testcase[hidden] { display: none; }
+    .testcase summary {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 15px 17px;
+      cursor: pointer;
+      list-style: none;
+    }
+    .testcase summary::-webkit-details-marker { display: none; }
+    .testcase summary::after { content: "+"; margin-left: auto; color: var(--orange-600); font-size: 22px; font-weight: 700; }
+    .testcase[open] summary::after { content: "−"; }
+    .testcase-title { min-width: 0; font-weight: 780; }
+    .case-body {
+      display: grid;
+      grid-template-columns: minmax(180px, .7fr) minmax(0, 1.3fr);
+      gap: 18px;
+      padding: 18px;
+      border-top: 1px solid var(--slate-200);
+      background: var(--slate-50);
+    }
+    .case-meta { color: var(--slate-600); }
+    .case-meta div + div { margin-top: 8px; }
+    .case-steps { display: grid; gap: 10px; }
+    .step { padding: 10px 12px; border-left: 3px solid var(--orange-400); background: var(--white); }
+    .expected { margin: 14px 0 0; padding-left: 20px; }
+    .expected li + li { margin-top: 4px; }
+    .empty-filter { display: none; padding: 28px; color: var(--slate-600); text-align: center; }
+
+    .question-list { display: grid; gap: 10px; margin: 0; padding: 0; counter-reset: question; list-style: none; }
+    .question-list li {
+      position: relative;
+      padding: 14px 16px 14px 54px;
+      border: 1px solid #f4d8a4;
+      border-radius: 13px;
+      background: #fffbeb;
+      color: #664d03;
+    }
+    .question-list li::before {
+      counter-increment: question;
+      content: counter(question);
+      position: absolute;
+      top: 12px;
+      left: 14px;
+      display: grid;
+      width: 28px;
+      height: 28px;
+      place-items: center;
+      border-radius: 9px;
+      color: #fff;
+      background: #d99100;
+      font-weight: 850;
+    }
+
+    .footer {
+      margin-top: 64px;
+      padding-top: 24px;
+      border-top: 1px solid var(--slate-200);
+      color: var(--slate-500);
+      text-align: center;
+    }
+
+    @media (max-width: 1120px) {
+      :root { --sidebar: 244px; }
+      .column-grid, .grid-3, .formula-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .stats { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
+    @media (max-width: 780px) {
+      .sidebar { position: static; width: auto; padding: 14px; }
+      .brand { padding-bottom: 12px; }
+      .nav-title, .sidebar-footer { display: none; }
+      .nav { display: flex; overflow-x: auto; padding-top: 10px; }
+      .nav a { flex: 0 0 auto; }
+      main { width: 100%; margin: 0; padding: 18px 14px 60px; }
+      .hero { border-radius: 18px; }
+      .grid-2, .grid-3, .grid-4, .column-grid, .formula-grid, .case-body { grid-template-columns: 1fr; }
+      .section-head { align-items: start; flex-direction: column; }
+      .filters { position: static; }
+    }
+    @media print {
+      body { background: #fff; font-size: 11px; }
+      .sidebar, .hero-actions, .filters, .skip-link { display: none !important; }
+      main { width: 100%; margin: 0; padding: 0; }
+      .hero { color: #111; background: #fff; border: 2px solid #111; box-shadow: none; }
+      .hero p { color: #333; }
+      .panel, .card, .stat, .mockup, .testcase { break-inside: avoid; box-shadow: none; }
+      .section-head { margin-top: 32px; }
+      .testcase { display: block !important; }
+      .testcase summary::after { display: none; }
+      .testcase:not([open]) .case-body { display: grid; }
+    }
+
+    .doc-shell { min-width: 0; }
+    .doc-toolbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      margin-bottom: 18px;
+      padding: 14px 16px;
+      border: 1px solid var(--slate-200);
+      border-radius: 14px;
+      background: rgba(255,255,255,.92);
+      box-shadow: var(--shadow-sm);
+    }
+    .doc-toolbar-left, .doc-toolbar-right { display: flex; flex-wrap: wrap; align-items: center; gap: 9px; }
+    .sync-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      padding: 6px 10px;
+      border-radius: 999px;
+      color: #067647;
+      background: #ecfdf3;
+      border: 1px solid #abefc6;
+      font-size: 12px;
+      font-weight: 800;
+    }
+    .sync-badge::before { content: "✓"; }
+    .hash { color: var(--slate-500); font: 12px ui-monospace, SFMono-Regular, Menlo, monospace; }
+    .markdown-body {
+      padding: clamp(24px, 4vw, 54px);
+      border: 1px solid var(--slate-200);
+      border-radius: var(--radius-lg);
+      background: var(--white);
+      box-shadow: var(--shadow-md);
+      overflow: hidden;
+    }
+    .markdown-body > h1 {
+      position: relative;
+      margin: -54px -54px 42px;
+      padding: 62px 54px 54px;
+      color: var(--white);
+      background:
+        radial-gradient(circle at 88% 10%, rgba(255,122,50,.36), transparent 20rem),
+        linear-gradient(115deg, var(--navy-950), #243047 68%, #713209);
+      font-size: clamp(34px, 5vw, 62px);
+      line-height: 1.05;
+      letter-spacing: -.045em;
+    }
+    .markdown-body h2 {
+      margin: 70px 0 24px;
+      padding: 0 0 13px;
+      border-bottom: 2px solid var(--slate-200);
+      font-size: clamp(27px, 4vw, 39px);
+      line-height: 1.15;
+      letter-spacing: -.035em;
+      scroll-margin-top: 24px;
+    }
+    .markdown-body h2::first-letter { color: var(--orange-600); }
+    .markdown-body h3 {
+      margin: 38px 0 16px;
+      color: var(--navy-900);
+      font-size: 23px;
+      line-height: 1.25;
+      letter-spacing: -.02em;
+      scroll-margin-top: 24px;
+    }
+    .markdown-body h4 {
+      margin: 28px 0 12px;
+      color: var(--orange-700);
+      font-size: 17px;
+      scroll-margin-top: 24px;
+    }
+    .markdown-body p { margin: 12px 0; }
+    .markdown-body strong { color: var(--navy-900); }
+    .markdown-body ul, .markdown-body ol { padding-left: 1.35rem; }
+    .markdown-body li { margin: 6px 0; }
+    .markdown-body li::marker { color: var(--orange-500); font-weight: 800; }
+    .markdown-body hr {
+      height: 1px;
+      margin: 48px 0;
+      border: 0;
+      background: linear-gradient(90deg, transparent, var(--slate-300), transparent);
+    }
+    .markdown-body > p[align="center"] {
+      margin: 22px 0 28px;
+      padding: 12px;
+      border: 1px solid var(--slate-200);
+      border-radius: 18px;
+      background: linear-gradient(145deg, #fff, #f5f7fa);
+      box-shadow: var(--shadow-md);
+    }
+    .markdown-body > p[align="center"] a { display: inline-block; max-width: 100%; }
+    .markdown-body > p[align="center"] img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+      margin: auto;
+      border-radius: 12px;
+    }
+    .markdown-body > p[align="center"] em {
+      display: block;
+      margin-top: 10px;
+      color: var(--slate-500);
+      font-size: 13px;
+    }
+    .table-wrap {
+      width: 100%;
+      margin: 18px 0 28px;
+      overflow: auto;
+      border: 1px solid var(--slate-200);
+      border-radius: 15px;
+      background: var(--white);
+      box-shadow: var(--shadow-sm);
+    }
+    .markdown-body table {
+      width: 100%;
+      min-width: 720px;
+      border-collapse: separate;
+      border-spacing: 0;
+      font-size: 14px;
+    }
+    .markdown-body th {
+      position: sticky;
+      top: 0;
+      z-index: 2;
+      padding: 12px 14px;
+      color: var(--white);
+      background: var(--navy-900);
+      border-bottom: 1px solid var(--navy-800);
+      text-align: left;
+      white-space: nowrap;
+    }
+    .markdown-body td {
+      padding: 12px 14px;
+      border-bottom: 1px solid var(--slate-200);
+      vertical-align: top;
+    }
+    .markdown-body tbody tr:nth-child(even) td { background: var(--slate-50); }
+    .markdown-body tbody tr:hover td { background: var(--orange-50); }
+    .markdown-body tbody tr:last-child td { border-bottom: 0; }
+    .markdown-body td img { display: block; width: 36px; height: 36px; max-width: none; }
+    .markdown-body pre {
+      position: relative;
+      margin: 16px 0 24px;
+      padding: 18px 20px;
+      overflow: auto;
+      border: 1px solid #ffd3bd;
+      border-radius: 14px;
+      color: #fff7ed;
+      background: linear-gradient(145deg, #172033, #222f48);
+      box-shadow: var(--shadow-sm);
+      font: 13px/1.75 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    }
+    .markdown-body pre code { padding: 0; border: 0; color: inherit; background: none; font: inherit; }
+    .markdown-body blockquote {
+      margin: 18px 0;
+      padding: 13px 16px;
+      border-left: 4px solid var(--orange-500);
+      border-radius: 0 12px 12px 0;
+      color: var(--slate-700);
+      background: var(--orange-50);
+    }
+    .case-tools {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 10px;
+      margin: 12px 0 14px;
+      padding: 13px;
+      border: 1px solid var(--slate-200);
+      border-radius: 13px;
+      background: var(--slate-50);
+    }
+    .case-tools input {
+      flex: 1 1 280px;
+      height: 42px;
+      padding: 0 13px;
+      border: 1px solid var(--slate-300);
+      border-radius: 10px;
+      outline: none;
+    }
+    .case-tools input:focus { border-color: var(--orange-500); box-shadow: 0 0 0 4px rgba(244,91,10,.12); }
+    .case-count { color: var(--orange-700); font-weight: 800; white-space: nowrap; }
+    .testcase-table table { min-width: 1500px; }
+    .testcase-table th:first-child, .testcase-table td:first-child {
+      position: sticky;
+      left: 0;
+      z-index: 1;
+      min-width: 230px;
+      box-shadow: 1px 0 0 var(--slate-200);
+    }
+    .testcase-table th:first-child { z-index: 3; background: var(--navy-900); }
+    .testcase-table td:first-child { background: var(--white); font-weight: 750; }
+    .testcase-table tbody tr:nth-child(even) td:first-child { background: var(--slate-50); }
+    .testcase-table tbody tr:hover td:first-child { background: var(--orange-50); }
+    .source-note {
+      margin-top: 18px;
+      color: var(--slate-500);
+      text-align: center;
+      font-size: 12px;
+    }
+    @media (max-width: 780px) {
+      .doc-toolbar { align-items: flex-start; flex-direction: column; }
+      .markdown-body { padding: 20px 16px; border-radius: 16px; }
+      .markdown-body > h1 { margin: -20px -16px 32px; padding: 40px 20px 34px; }
+      .markdown-body h2 { margin-top: 48px; }
+      .markdown-body table { font-size: 13px; }
+    }
+    @media print {
+      .doc-toolbar, .case-tools { display: none !important; }
+      .markdown-body { padding: 0; border: 0; box-shadow: none; overflow: visible; }
+      .markdown-body > h1 { margin: 0 0 32px; padding: 30px; color: #111; background: #fff; border: 2px solid #111; }
+      .table-wrap { overflow: visible; box-shadow: none; }
+      .markdown-body table { min-width: 0 !important; font-size: 9px; }
+      .markdown-body th { position: static; color: #111; background: #eee; }
+      .testcase-table th:first-child, .testcase-table td:first-child { position: static; }
+    }
+</style>
+</head>
+<body>
+  <a class="skip-link" href="#document">Đi đến nội dung chính</a>
+  <aside class="sidebar" aria-label="Mục lục requirement">
+    <div class="brand">
+      <div class="brand-mark">ics</div>
+      <div><strong>ICS Requirement</strong><small>Cuộc họp lớp: quyền tham gia, quy trình, trạng thái và lịch sử</small></div>
+    </div>
+    <div class="nav-title">Nội dung Markdown</div>
+    <nav id="docNav" class="nav"></nav>
+    <div class="sidebar-footer">
+      HTML được render trực tiếp từ Markdown nguồn.<br>
+      <a href="./class_detail_meetings_requirements.md">Mở file Markdown</a>
+    </div>
+  </aside>
+  <main class="doc-shell">
+    <div class="doc-toolbar">
+      <div class="doc-toolbar-left">
+        <span class="sync-badge">Đồng bộ 100% từ Markdown</span>
+        <span class="hash">SHA-256: 6e35a023a4e3…</span>
+      </div>
+      <div class="doc-toolbar-right">
+        <a class="button ghost small" href="./class_detail_meetings_requirements.md">Xem Markdown</a>
+        <button class="button small" type="button" onclick="window.print()">In / Lưu PDF</button>
+      </div>
+    </div>
+    <article id="document" class="markdown-body" data-source-sha256="6e35a023a4e3ff2b4474415d7e948418cb444949d6752239cd109cf685ed6a90">
+<h1 id="chi-tiet-lop-hoc-tab-cuoc-hop">Chi tiết lớp học — Tab Cuộc họp</h1>
+<blockquote>
+<p>Ngày ghi nhận: <strong>29/09/2026</strong>; cập nhật quyền, người tham gia và Action Board <strong>30/09/2026</strong>. Nguồn: yêu cầu Cuộc họp lớp, bổ sung của người dùng và 8 ảnh tham chiếu; đối chiếu <a href="./class_management_requirements.md">Requirement Manage Class</a>, <a href="../../action_board_requirement/action_board_requirements.md">Action Board</a> và <a href="../../requirement_template.md">template requirement</a>. Tài liệu lưu đủ context để tiếp tục ở conversation khác. Quy tắc được nói rõ trong yêu cầu có ưu tiên hơn ảnh tham chiếu.</p>
+<p><strong>Context đã chốt:</strong> Cuộc họp thuộc một lớp cụ thể, lấy nội dung từ <strong>Action Board của Quy trình lớp</strong> theo thứ tự <strong>Package → Category → Action Item</strong>. <strong>Mỗi cuộc họp có Result riêng</strong> cho các Action Item đã chọn; chỉ <strong>người tạo cuộc họp</strong> được cập nhật các Result đó. <strong>Admin, Class Handler và Support đều được CRUD thông tin cuộc họp</strong> trong phạm vi lớp được quản lý, kể cả chọn người tham gia và nội dung quy trình; quyền CRUD không tự cấp quyền đổi trạng thái/Result của buổi do người khác tạo. Chỉ được thêm <strong>người đã được add vào chính lớp đó</strong>, có role trong lớp <strong>khác Học viên</strong>, vào cuộc họp. Các role này truy cập menu <strong>Cuộc họp</strong> trong Chi tiết lớp; người không có quyền quản lý lớp chỉ xem những buổi có mình trong danh sách tham gia. Giáo viên và Trợ giảng chỉ xem, không CRUD. Có đúng 4 trạng thái: <strong>Mới tạo, Đang tham gia, Hoàn thành, Đang chờ</strong>; mặc định <strong>Mới tạo</strong>. <strong>Người tạo tự đổi trạng thái</strong> khi buổi họp đã có ít nhất một người tham gia và đã set ngày giờ họp; hệ thống không tự đổi theo thời gian. Cho phép nhiều cuộc họp cùng ngày giờ bắt đầu (đến phút), hiển thị số lượng và popup danh sách. Yêu cầu thông báo quá hạn và xem Log vẫn áp dụng riêng.</p>
+<p><strong>Lưu ý từ ảnh:</strong> Ảnh có người tham gia là Học viên nhưng role Học viên không được add vào cuộc họp theo yêu cầu đã chốt. Biên bản và tay nắm kéo chưa đủ để xác định quyền sửa biên bản hoặc kéo sắp xếp. Badge tiến độ thuộc Action Board, không phải số cuộc họp cùng giờ. Không lấy quyền của các tab khác để tự cấp các quyền này.</p>
+</blockquote>
+<h2 id="1-ui">1. UI</h2>
+<h3 id="khung-tab-cuoc-hop-va-danh-sach-buoi-hop">Khung tab Cuộc họp và danh sách buổi họp</h3>
+<p align="center">
+  <a href="./images/61-class-meeting-main-status.png"><img src="./images/61-class-meeting-main-status.png" alt="Tab Cuộc họp với danh sách buổi họp và menu trạng thái" width="1050" title="Nhấn để xem ảnh gốc"></a><br>
+  <em>Ảnh 6 — khung tab và menu trạng thái; ảnh chỉ có 3 trạng thái, yêu cầu phải có thêm Đang chờ</em>
+</p>
+
+<p><strong>Mô tả:</strong></p>
+<ul>
+<li>Truy cập Chi tiết lớp → <strong>Cuộc họp</strong>. Vùng trái là Nội dung buổi họp đang chọn; vùng phải là Danh sách buổi họp. Các role đã được add vào lớp và được phép tham gia có menu <strong>Cuộc họp</strong> trong Chi tiết lớp. Giáo viên/Trợ giảng được mời có giao diện chỉ đọc; người chưa được add vào lớp không được chọn hoặc xem buổi họp.</li>
+<li>Đây là cuộc họp của lớp, khác bản ghi <strong>Lịch hẹn</strong> chăm sóc/công việc ở <a href="./class_detail_appointments_requirements.md">Tab Lịch Hẹn</a>. Không tự cộng số cuộc họp vào badge lịch hẹn tại Mã lớp.</li>
+</ul>
+<p><strong>Giải thích field/thành phần:</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Thành phần</th>
+<th>Yêu cầu</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Danh sách buổi họp</td>
+<td>Chỉ dữ liệu thuộc lớp hiện tại và quyền hiện tại. Admin/Class Handler/Support quản lý lớp xem đầy đủ; Giáo viên/Trợ giảng chỉ xem buổi có mình được add tham gia, kể cả khi không thuộc lớp.</td>
+</tr>
+<tr>
+<td>Card buổi họp</td>
+<td>Hiển thị tiêu đề, số người tham gia, ngày, giờ và trạng thái. Nhấn chọn card để xem đúng nội dung cuộc họp đó.</td>
+</tr>
+<tr>
+<td>Số người tham gia</td>
+<td>Số user khác nhau trong danh sách đã lưu của buổi họp; không phải sĩ số lớp hoặc số cuộc họp trùng giờ.</td>
+</tr>
+<tr>
+<td>Dấu + cạnh người tham gia</td>
+<td>Mở popup chọn nhiều user, chỉ Admin/Class Handler/Support được thao tác.</td>
+</tr>
+<tr>
+<td>Ngày/giờ/trạng thái</td>
+<td>Admin/Class Handler/Support có quyền quản lý lớp được sửa ngày giờ. <strong>Chỉ người tạo</strong> được đổi trạng thái khi đã có ≥1 người tham gia và lịch họp; người khác chỉ xem trạng thái.</td>
+</tr>
+<tr>
+<td>Thêm buổi họp / Thêm buổi họp mới</td>
+<td>Nút tạo mới chỉ cho Admin/Class Handler/Support có quyền quản lý lớp. Ảnh thể hiện ô thêm ở cuối danh sách; bố trí form đầy đủ chưa có ảnh.</td>
+</tr>
+<tr>
+<td>Số lượng cuộc họp cùng thời gian</td>
+<td>Gom theo <strong>cùng ngày và cùng giờ:phút bắt đầu</strong> của lớp. Ô <code>1</code> trên card là số buổi trong nhóm khi chỉ có một buổi; nếu nhóm có hai buổi thì hiển thị <code>2</code>, nhấn để mở danh sách chi tiết. Chỉ đếm buổi người đang xem có quyền thấy.</td>
+</tr>
+<tr>
+<td>Loading/rỗng/lỗi</td>
+<td>Phân biệt đang tải, không có cuộc họp được phép xem và lỗi tải; lỗi có thể thử lại, không dựng dữ liệu 0/rỗng giả.</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Điểm cần lưu ý:</strong></p>
+<ul>
+<li>Ô <code>1</code>/<code>2</code> của nhóm lịch khác số người tham gia trên card và khác badge tiến độ <code>0/7</code> của Action Board.</li>
+<li>Mặc định chọn cuộc họp nào, thứ tự danh sách, phân trang/search/filter và việc có lịch dạng tháng/tuần chưa được cung cấp; không kế thừa phân trang 10 lớp của Manage Class.</li>
+<li>Việc chọn/đổi cuộc họp chỉ đọc dữ liệu, không tự đổi trạng thái thành Đang tham gia.</li>
+</ul>
+<h4 id="testcase-khung-tab-va-danh-sach-buoi-hop">Testcase — Khung tab và danh sách buổi họp</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 1: Danh sách theo quyền và người được mời chỉ đọc</td>
+<td>High</td>
+<td>Smoke</td>
+<td>Flow 1 / REQ01 / REQ02 / EX01</td>
+<td>Admin / Class Handler / Support / Giáo viên / Trợ giảng</td>
+<td>Lớp có M1/M2; G là Giáo viên và T là Trợ giảng đã thuộc lớp, được mời M1 nhưng không mời M2</td>
+<td><strong>Given</strong> ba role quản lý mở lớp, G/T vào đúng buổi được mời<br><strong>When</strong> tải danh sách và thử đọc/sửa bằng request trực tiếp<br><strong>Then</strong> Admin/Class Handler/Support trong phạm vi thấy cả hai; G/T chỉ thấy M1 và không được sửa</td>
+<td>Không lộ M2 qua URL, count hoặc Log; người ngoài lớp không được mở menu hay xem buổi họp.</td>
+</tr>
+<tr>
+<td>Case 2: Chọn buổi và hiển thị đúng dữ liệu</td>
+<td>High</td>
+<td></td>
+<td>Flow 2 / REQ03 / REQ05 / REQ13</td>
+<td>Người có quyền xem</td>
+<td>M1/M2 có dữ liệu khác nhau, M1 có hai user duy nhất</td>
+<td><strong>Given</strong> chọn lần lượt M1/M2<br><strong>When</strong> tải card và chi tiết<br><strong>Then</strong> title, mô tả, quy trình, ngày giờ, trạng thái thuộc đúng buổi</td>
+<td>Count người tham gia đếm user duy nhất, không lấy sĩ số; chọn buổi không đổi trạng thái.</td>
+</tr>
+<tr>
+<td>Case 3: Rỗng, lỗi tải và response cũ</td>
+<td>High</td>
+<td></td>
+<td>EX02 / EX03 / REQ13</td>
+<td>Người có quyền xem</td>
+<td>Có kết quả rỗng, lỗi tải hoặc request chậm khi đổi lớp/buổi</td>
+<td><strong>Given</strong> mở tab hoặc đổi ngữ cảnh<br><strong>When</strong> nhận kết quả tải<br><strong>Then</strong> phân biệt rỗng/lỗi và chỉ render response đúng ngữ cảnh hiện tại</td>
+<td>Lỗi có Thử lại; không dựng dữ liệu giả hoặc khôi phục nội dung đã mất quyền.</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="tao-moi-va-chinh-sua-thong-tin-buoi-hop">Tạo mới và chỉnh sửa thông tin buổi họp</h3>
+<p><strong>Mô tả:</strong></p>
+<p>Admin/Class Handler/Support nhấn <strong>Thêm buổi họp</strong>, nhập thông tin, chọn người tham gia và thêm quy trình từ lớp, sau đó nhấn <strong>Thêm</strong>. Khi sửa, tải dữ liệu hiện có, thay đổi các field rồi <strong>Lưu</strong>. Chưa có ảnh toàn bộ form; bảng dưới đặc tả theo lời người dùng, không khẳng định thiết kế popup hay lưu trực tiếp trên card.</p>
+<p><strong>Giải thích field/thành phần:</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Yêu cầu</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Tiêu đề cuộc họp</td>
+<td>Văn bản tên cuộc họp, hiển thị tại card và danh sách trùng thời gian. Bắt buộc/giới hạn ký tự cần xác nhận.</td>
+</tr>
+<tr>
+<td>Người tham gia</td>
+<td>Multiselect user qua popup, có thể thêm/bỏ lựa chọn khi sửa. Chỉ chọn user <strong>đã được add vào lớp hiện tại</strong> với role trong lớp <strong>khác Học viên</strong>; không chọn người ngoài lớp.</td>
+</tr>
+<tr>
+<td>Thời gian họp</td>
+<td>Chọn ngày và giờ; ảnh có date picker và time picker riêng. Chưa có thời lượng/giờ kết thúc.</td>
+</tr>
+<tr>
+<td>Trạng thái</td>
+<td>Mới tạo mặc định khi tạo. Chỉ người tạo được chọn Mới tạo, Đang tham gia, Hoàn thành hoặc Đang chờ <strong>sau khi</strong> cuộc họp có ít nhất một người tham gia và ngày giờ họp. Khi sửa hiển thị giá trị đã lưu, không reset về mặc định.</td>
+</tr>
+<tr>
+<td>Mô tả cuộc họp</td>
+<td>Nội dung mô tả riêng của buổi họp. Không phải ghi chú lớp, nội dung quy trình hoặc biên bản. Kiểu soạn thảo/bắt buộc/giới hạn cần chốt.</td>
+</tr>
+<tr>
+<td>Thêm quy trình / Thêm nội dung buổi họp</td>
+<td>Mở Action Board của Quy trình lớp, chọn một hoặc nhiều <strong>Package</strong>, sau đó <strong>Category</strong> và <strong>Action Item</strong> muốn đưa vào cuộc họp. Hai nhãn mô tả cùng chức năng trong yêu cầu và ảnh.</td>
+</tr>
+<tr>
+<td>Thêm / Lưu</td>
+<td>Kiểm tra quyền, dữ liệu và liên kết; lưu đầy đủ thay đổi. Không tạo cuộc họp từ thao tác mở popup hoặc chọn dữ liệu chưa xác nhận.</td>
+</tr>
+<tr>
+<td>Hủy</td>
+<td>Bỏ thay đổi chưa lưu; không thay dữ liệu chính thức, không Toast CRUD. Quy tắc cảnh báo rời form có thay đổi cần chốt.</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Điểm cần lưu ý:</strong></p>
+<ul>
+<li>Admin/Class Handler/Support có quyền tạo/sửa/xóa <strong>thông tin</strong> cuộc họp trong phạm vi lớp được quản lý. Riêng trạng thái và Result của buổi đã tạo chỉ <strong>người tạo</strong> được cập nhật; backend kiểm tra cả điều kiện người tham gia/lịch họp khi đổi trạng thái. Giáo viên/Trợ giảng được mời vẫn không sửa. Admin/Class Handler/Support là thành viên lớp nhưng không có quyền quản lý lớp đó chỉ xem buổi được mời; lời mời không mở rộng quyền CRUD.</li>
+<li>Trùng thời gian <strong>được phép</strong>; không áp dụng quy tắc chống trùng lịch dạy vào cuộc họp.</li>
+<li>Không tự gán người tạo làm người tham gia hoặc bắt buộc chọn ít nhất một user/quy trình khi chưa được xác nhận. Quyền Admin/Class Handler/Support xem vẫn áp dụng độc lập với danh sách tham gia.</li>
+<li>Nút lưu chống bấm lặp; lỗi không để một buổi mới chỉ có title nhưng thiếu phần người tham gia/quy trình đã gửi.</li>
+</ul>
+<h4 id="testcase-tao-moi-va-chinh-sua">Testcase — Tạo mới và chỉnh sửa</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 4: Tạo buổi họp đầy đủ</td>
+<td>High</td>
+<td>Smoke</td>
+<td>Flow 3 / REQ04 / REQ05 / REQ07 / REQ08</td>
+<td>Admin / Class Handler / Support</td>
+<td>Có quyền lớp, dữ liệu hợp lệ theo rule đã chốt</td>
+<td><strong>Given</strong> mở Thêm buổi họp, trạng thái mặc định Mới tạo<br><strong>When</strong> nhập các field, chọn người/quy trình rồi Thêm<br><strong>Then</strong> tạo đúng một buổi với toàn bộ dữ liệu đã nhập</td>
+<td>Tải lại giữ đúng dữ liệu; người được mời có quyền xem; có Log và một Toast.</td>
+</tr>
+<tr>
+<td>Case 5: Sửa và đồng bộ thông tin buổi họp</td>
+<td>High</td>
+<td></td>
+<td>Flow 7 / REQ04 / REQ13</td>
+<td>Admin / Class Handler / Support có quyền quản lý lớp</td>
+<td>M1 đã có thông tin/người/quy trình</td>
+<td><strong>Given</strong> đổi title, người tham gia, thời gian, mô tả và phần quy trình<br><strong>When</strong> Lưu thành công<br><strong>Then</strong> cập nhật đúng M1</td>
+<td>List/card/chi tiết/count/quyền/nhóm giờ cùng cập nhật; không đổi trạng thái/Result nếu người sửa không phải người tạo.</td>
+</tr>
+<tr>
+<td>Case 6: Hủy và validation tạo/sửa</td>
+<td>High</td>
+<td></td>
+<td>Flow 3 / Flow 7 / EX04 / REQ04</td>
+<td>Admin / Class Handler / Support</td>
+<td>Form có nháp hoặc field sai theo rule đã chốt</td>
+<td><strong>Given</strong> soạn form hoặc nhập dữ liệu lỗi<br><strong>When</strong> Hủy hoặc Thêm/Lưu dữ liệu lỗi<br><strong>Then</strong> Hủy không lưu; dữ liệu lỗi bị từ chối tại field</td>
+<td>Không đổi dữ liệu/quyền; Hủy không Toast, validation có một phản hồi phù hợp.</td>
+</tr>
+<tr>
+<td>Case 7: Lưu lỗi và chống gửi lặp</td>
+<td>High</td>
+<td></td>
+<td>EX05 / REQ13 / REQ14</td>
+<td>Admin / Class Handler / Support</td>
+<td>Request đang xử lý hoặc backend/network lỗi</td>
+<td><strong>Given</strong> gửi tạo/sửa và bấm lặp<br><strong>When</strong> hệ thống xử lý kết quả<br><strong>Then</strong> không tạo/cập nhật lặp hoặc lưu một phần</td>
+<td>Lỗi giữ nháp phù hợp để thử lại, không thành công giả; một Toast kết quả.</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="popup-chon-nguoi-tham-gia">Popup chọn người tham gia</h3>
+<p align="center">
+  <a href="./images/62-class-meeting-participants.png"><img src="./images/62-class-meeting-participants.png" alt="Popup thêm người tham gia vào cuộc họp" width="1000" title="Nhấn để xem ảnh gốc"></a><br>
+  <em>Ảnh 3 — tìm thành viên, chọn nhiều và xác nhận Thêm</em>
+</p>
+
+<p><strong>Mô tả:</strong></p>
+<p>Popup <strong>Thêm người tham gia vào cuộc họp</strong> dùng chọn nhiều user. Ảnh thể hiện ô tìm kiếm, avatar, tên/mã, email, nhãn role, các dòng đang chọn có viền cam và nút <strong>Hủy / Thêm</strong>.</p>
+<p><strong>Giải thích field/thành phần:</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Thành phần</th>
+<th>Yêu cầu</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Tìm kiếm</td>
+<td>Ảnh ghi tìm theo tên thành viên. Tìm theo email/mã, bỏ dấu, thời điểm kích hoạt và phân trang chưa chốt.</td>
+</tr>
+<tr>
+<td>Dòng user</td>
+<td>Phân biệt user bằng định danh; tên/email/role hỗ trợ nhận biết. Chỉ trả user đang là thành viên <strong>lớp hiện tại</strong> và có role trong lớp <strong>khác Học viên</strong>. Không trả người ngoài lớp hoặc thành viên chỉ có role Học viên; nhãn role trên ảnh không thay thế kiểm tra dữ liệu lớp.</td>
+</tr>
+<tr>
+<td>Chọn nhiều</td>
+<td>Giữ nhiều lựa chọn, kể cả khi đổi từ khóa; không trùng user.</td>
+</tr>
+<tr>
+<td>Thêm</td>
+<td>Xác nhận lựa chọn. Khi đang tạo/sửa form, lựa chọn là dữ liệu nháp cho tới Thêm/Lưu buổi họp. Cách lưu nhanh từ dấu + của card cần xác nhận.</td>
+</tr>
+<tr>
+<td>Hủy</td>
+<td>Đóng popup, không áp dụng thay đổi chưa xác nhận vào buổi họp.</td>
+</tr>
+<tr>
+<td>Bỏ người tham gia</td>
+<td>Admin/Class Handler/Support được sửa danh sách tham gia; không tự loại người cũ chỉ vì danh sách tìm kiếm đang ẩn họ.</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Điểm cần lưu ý:</strong></p>
+<ul>
+<li>Sau khi lưu, thành viên lớp được add vào buổi họp sẽ xem được buổi đó qua menu <strong>Cuộc họp</strong> của lớp. Giáo viên/Trợ giảng bị bỏ khỏi danh sách mất quyền xem; Admin/Class Handler/Support còn quyền quản trị chỉ khi có quyền quản lý lớp tương ứng.</li>
+<li>Ảnh có Học viên nhưng user chỉ tham gia lớp với role Học viên không được add vào cuộc họp. Không loại các role khác, như Sale, chỉ dựa vào tên role: điều kiện là đã thuộc lớp với vai trò hợp lệ khác Học viên; với user nhiều role, kiểm tra vai trò gắn với lớp, không dựa vào nhãn duy nhất trên ảnh.</li>
+<li>Khi user không còn thuộc lớp, quyền xem cuộc họp theo danh sách tham gia phải bị thu hồi; danh sách/count không tiếp tục coi user đó là người tham gia hợp lệ. Backend kiểm tra lại quan hệ user–lớp khi lưu và khi đọc.</li>
+<li>Phân biệt <strong>được add vào lớp</strong> và <strong>được add vào cuộc họp</strong>. Phải thuộc lớp trước khi được chọn vào buổi họp; lời mời chỉ cấp quyền xem buổi họp cụ thể và không mở rộng quyền CRUD.</li>
+</ul>
+<h4 id="testcase-nguoi-tham-gia">Testcase — Người tham gia</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 8: Chỉ chọn thành viên lớp không phải Học viên</td>
+<td>High</td>
+<td></td>
+<td>Flow 4 / REQ05 / EX06</td>
+<td>Admin / Class Handler / Support</td>
+<td>Lớp có A/B là thành viên không phải Học viên, H là Học viên; N chưa thuộc lớp</td>
+<td><strong>Given</strong> chọn A/B trong lớp và chọn lại A<br><strong>When</strong> xác nhận/lưu, thử gán H/N bằng request trực tiếp rồi bỏ B khỏi lớp<br><strong>Then</strong> giữ A một lần, từ chối H/N và thu hồi quyền xem của B</td>
+<td>Count/danh sách đồng bộ theo thành viên hợp lệ; không mất lựa chọn khi search; B không đọc được buổi cũ.</td>
+</tr>
+<tr>
+<td>Case 9: Hủy chọn người tham gia</td>
+<td>Medium</td>
+<td></td>
+<td>Flow 4 / REQ05</td>
+<td>Admin / Class Handler / Support</td>
+<td>Buổi đã có A, popup đang chọn thêm B</td>
+<td><strong>Given</strong> thay lựa chọn trong popup<br><strong>When</strong> Hủy<br><strong>Then</strong> giữ danh sách chính thức trước đó</td>
+<td>B chưa được cấp quyền; không Toast CRUD.</td>
+</tr>
+<tr>
+<td>Case 10: Thêm/bỏ Giáo viên hoặc Trợ giảng cập nhật quyền</td>
+<td>High</td>
+<td></td>
+<td>Flow 4 / REQ02 / REQ05 / REQ13</td>
+<td>Admin / Class Handler / Support và Giáo viên / Trợ giảng</td>
+<td>G/T đã thuộc lớp, chưa được mời hoặc đang xem M1</td>
+<td><strong>Given</strong> thêm G/T rồi lưu, sau đó bỏ G/T và lưu<br><strong>When</strong> họ tải lại hoặc đọc bằng URL/request cũ<br><strong>Then</strong> được xem sau khi thêm, mất quyền sau khi bỏ</td>
+<td>Hai role này chỉ đọc; list/count/nhóm giờ đồng bộ; response cũ không khôi phục quyền.</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="chon-ngay-va-gio-hop">Chọn ngày và giờ họp</h3>
+<p align="center">
+  <a href="./images/63-class-meeting-date-picker.png"><img src="./images/63-class-meeting-date-picker.png" alt="Popup chọn ngày họp" width="950" title="Nhấn để xem ảnh gốc"></a><br>
+  <em>Ảnh 4 — lịch tháng, chuyển tháng, chọn ngày và Hủy / OK</em>
+</p>
+
+<p align="center">
+  <a href="./images/64-class-meeting-time-picker.png"><img src="./images/64-class-meeting-time-picker.png" alt="Popup chọn giờ và phút họp" width="950" title="Nhấn để xem ảnh gốc"></a><br>
+  <em>Ảnh 5 — chọn giờ/phút và Hủy / OK</em>
+</p>
+
+<p><strong>Mô tả:</strong></p>
+<p>Chọn ngày bằng lịch tháng; chọn giờ/phút bằng popup <strong>Chọn giờ</strong>. Thao tác OK xác nhận giá trị đang chọn; Hủy giữ giá trị trước đó.</p>
+<p><strong>Giải thích field/thành phần:</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Thành phần</th>
+<th>Yêu cầu</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Ngày</td>
+<td>Lịch đúng tháng/năm, cho chuyển tháng trước/sau, đánh dấu ngày đang chọn. Ảnh hiển thị ngày theo <code>dd/MM/yyyy</code>.</td>
+</tr>
+<tr>
+<td>Giờ/phút</td>
+<td>Chọn giờ và phút hợp lệ, ảnh hiển thị <code>HH:mm</code>. Giới hạn bước phút và thời điểm mặc định chưa chốt.</td>
+</tr>
+<tr>
+<td>OK / Hủy</td>
+<td>OK áp dụng vào dữ liệu đang soạn; Hủy không áp dụng. Việc OK trên card có lưu ngay hay chờ Lưu cần chốt.</td>
+</tr>
+<tr>
+<td>Thời điểm cuộc họp</td>
+<td>Kết hợp ngày/giờ theo cùng múi giờ nghiệp vụ. Múi giờ chính thức cần xác nhận; không dùng timezone thiết bị tùy ý.</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Điểm cần lưu ý:</strong></p>
+<ul>
+<li>Cuộc họp hiện chỉ có ngày/giờ bắt đầu; để gom lịch, dùng <strong>cùng ngày và cùng giờ:phút đã chọn</strong>. Không suy ra trùng theo khoảng giao nhau. Quy tắc chọn thời điểm quá khứ chưa được cung cấp.</li>
+<li>Sửa thời gian phải cập nhật nhóm cuộc họp cũ/mới sau khi lưu thành công. Không đổi thời gian lịch dạy lớp.</li>
+</ul>
+<h4 id="testcase-ngay-va-gio">Testcase — Ngày và giờ</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 11: Chọn ngày/giờ và chuyển nhóm lịch</td>
+<td>High</td>
+<td></td>
+<td>Flow 5 / REQ06 / REQ09 / REQ13</td>
+<td>Admin / Class Handler / Support</td>
+<td>M1/M2 cùng T, M3 ở U; múi giờ đã chốt</td>
+<td><strong>Given</strong> chọn ngày/giờ mới cho M2 thành U<br><strong>When</strong> OK rồi Lưu thành công<br><strong>Then</strong> M2 giữ đúng ngày giờ và nhóm T/U tính lại</td>
+<td>T còn M1, U có M2/M3; không đổi lịch dạy hoặc lệch thời gian khi tải lại.</td>
+</tr>
+<tr>
+<td>Case 12: Hủy picker giữ thời gian cũ</td>
+<td>Medium</td>
+<td></td>
+<td>Flow 5 / REQ06</td>
+<td>Admin / Class Handler / Support</td>
+<td>Buổi có ngày/giờ hiện tại</td>
+<td><strong>Given</strong> đổi lựa chọn trong date/time picker<br><strong>When</strong> Hủy<br><strong>Then</strong> giữ giá trị trước khi mở</td>
+<td>Không ghi thời gian mới, không Toast CRUD; Giáo viên/Trợ giảng không được đổi thời gian theo Case 1.</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="trang-thai-cuoc-hop">Trạng thái cuộc họp</h3>
+<p><strong>Mô tả:</strong></p>
+<p><strong>Người tạo cuộc họp</strong> tự chọn trạng thái. Ảnh 6 có Mới tạo, Hoàn thành, Đang tham gia; <strong>Đang chờ</strong> có trong yêu cầu và bắt buộc bổ sung. Trạng thái cuộc họp độc lập với trạng thái lớp/học viên/buổi học.</p>
+<p><strong>Giải thích field/thành phần:</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Trạng thái</th>
+<th>Yêu cầu</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Mới tạo</td>
+<td>Mặc định khi tạo buổi mới; ảnh có icon đồng hồ tông cam.</td>
+</tr>
+<tr>
+<td>Đang tham gia</td>
+<td>Trạng thái cuộc họp đang diễn ra/tham gia theo dữ liệu đã lưu; ảnh có icon tông xanh tím. Không suy ra từ việc user mở tab.</td>
+</tr>
+<tr>
+<td>Hoàn thành</td>
+<td>Buổi được đánh dấu hoàn thành; ảnh có dấu kiểm xanh. Không mặc định đổi chỉ vì qua giờ bắt đầu.</td>
+</tr>
+<tr>
+<td>Đang chờ</td>
+<td>Một trong bốn trạng thái được chọn; icon/màu theo thiết kế cuối.</td>
+</tr>
+<tr>
+<td>Người đổi</td>
+<td>Chỉ <strong>người tạo cuộc họp</strong>; Admin/Class Handler/Support khác dù được sửa thông tin buổi họp vẫn không được set trạng thái.</td>
+</tr>
+<tr>
+<td>Điều kiện đổi</td>
+<td>Tại thời điểm lưu, buổi họp phải có <strong>ít nhất 1 người tham gia đã được add</strong> và <strong>ngày giờ họp đã được set</strong>. Thiếu một trong hai thì không đổi, giữ trạng thái cũ.</td>
+</tr>
+<tr>
+<td>Thay đổi theo thời gian</td>
+<td>Không tự chuyển Mới tạo → Đang tham gia hoặc tự Hoàn thành; tới giờ họp không phải thao tác set trạng thái.</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Điểm cần lưu ý:</strong></p>
+<ul>
+<li>Hiển thị nhãn/tooltip trạng thái để nhận biết ngoài màu sắc. Giáo viên/Trợ giảng chỉ đọc.</li>
+<li>Không thêm trạng thái Quá hạn/Hủy/Xóa vào bộ trạng thái cuộc họp. Quá hạn hiện là điều kiện gửi thông báo, không được nêu là trạng thái thứ năm.</li>
+<li>Mới tạo là <strong>giá trị mặc định</strong> khi tạo, không phải thao tác đổi trạng thái thủ công. Nếu form cho phép tạo bản ghi chưa có người tham gia/lịch, trạng thái vẫn là Mới tạo và control đổi trạng thái khóa cho tới khi đủ cả hai điều kiện.</li>
+<li>Backend kiểm tra lại người tạo, số người tham gia đã lưu và ngày giờ họp khi xác nhận. Chỉ đổi UI/giờ hiện tại không đủ để vượt điều kiện. Xóa người tham gia hoặc bỏ lịch về sau không tự chuyển ngược trạng thái đã lưu.</li>
+</ul>
+<h4 id="testcase-trang-thai">Testcase — Trạng thái</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 13: Người tạo chỉ đổi trạng thái khi đủ điều kiện</td>
+<td>High</td>
+<td></td>
+<td>Flow 6 / REQ08 / REQ12 / EX04</td>
+<td>Admin / Class Handler / Support là người tạo</td>
+<td>M1 mặc định Mới tạo; lần lượt thiếu người tham gia, thiếu lịch, rồi có đủ cả hai</td>
+<td><strong>Given</strong> người tạo chọn một trong bốn trạng thái<br><strong>When</strong> lưu ở từng điều kiện<br><strong>Then</strong> chỉ lần có ≥1 người tham gia và ngày giờ họp hợp lệ được đổi</td>
+<td>Backend từ chối hai lần thiếu điều kiện và giá trị ngoài bốn trạng thái; thành công đồng bộ card/chi tiết/Log/Toast.</td>
+</tr>
+<tr>
+<td>Case 14: Người khác và thời gian không tự đổi trạng thái</td>
+<td>High</td>
+<td></td>
+<td>Flow 2 / REQ02 / REQ08 / EX01</td>
+<td>Admin / Class Handler / Support không tạo, Giáo viên hoặc Trợ giảng</td>
+<td>M1 đang Mới tạo, có hoặc chưa có lịch</td>
+<td><strong>Given</strong> người không tạo mở M1/gửi request set, hoặc thời gian đi qua giờ họp<br><strong>When</strong> kiểm tra trạng thái<br><strong>Then</strong> không đổi trạng thái</td>
+<td>Quyền CRUD thông tin/lời mời không cấp quyền set; không tự chuyển do mở tab hoặc tới giờ.</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="popup-them-quy-trinh-va-noi-dung-buoi-hop">Popup thêm quy trình và nội dung buổi họp</h3>
+<p align="center">
+  <a href="./images/65-class-meeting-process-picker.png"><img src="./images/65-class-meeting-process-picker.png" alt="Popup chọn các quy trình từ lớp" width="1000" title="Nhấn để xem ảnh gốc"></a><br>
+  <em>Ảnh 2 — danh sách nhiều quy trình có checkbox và mở rộng</em>
+</p>
+
+<p align="center">
+  <a href="./images/66-class-meeting-process-expanded.png"><img src="./images/66-class-meeting-process-expanded.png" alt="Quy trình mở rộng đến danh mục BTVN và nội dung" width="1000" title="Nhấn để xem ảnh gốc"></a><br>
+  <em>Ảnh 1 — chọn theo cấu trúc Package → Category → Action Item của Action Board lớp</em>
+</p>
+
+<p><strong>Mô tả:</strong></p>
+<p>Nhấn <strong>Thêm quy trình</strong> hoặc <strong>Thêm nội dung buổi họp</strong> mở <strong>Action Board của Quy trình lớp hiện tại</strong>. Quy trình lớp này lấy nội dung đã gắn vào lớp từ <a href="./class_detail_processes_requirements.md">menu Quy trình lớp</a>; định nghĩa gốc nằm ngoài lớp. Người tạo/chỉnh sửa cuộc họp chọn theo thứ tự <strong>Package → Category → Action Item</strong>; có thể chọn nhiều nhánh và nhiều Action Item. Các tên Tiêu Chuẩn Chung, BTVN, các Meeting cố định/ngoại lệ là dữ liệu minh họa, không hard-code. Quy tắc Result theo <a href="../../action_board_requirement/action_board_requirements.md">Action Board</a>, còn quyền cập nhật trong cuộc họp theo requirement này.</p>
+<p><strong>Giải thích field/thành phần:</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Thành phần</th>
+<th>Yêu cầu</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Nguồn</td>
+<td>Action Board của <strong>Quy trình lớp đang mở</strong>. Không lấy board của lớp khác.</td>
+</tr>
+<tr>
+<td>Package</td>
+<td>Cấp đầu tiên để chọn một hoặc nhiều nhánh quy trình; chevron mở Category.</td>
+</tr>
+<tr>
+<td>Category</td>
+<td>Cấp thuộc Package đã chọn; mở danh sách Action Item. Badge như <code>0/7</code> là tiến độ theo dữ liệu Action Board, không phải số người tham gia/lịch trùng.</td>
+</tr>
+<tr>
+<td>Action Item</td>
+<td>Chọn một hoặc nhiều item thuộc Category đã chọn; đây là tập nội dung được gắn vào cuộc họp và được hiển thị để cập nhật Result.</td>
+</tr>
+<tr>
+<td>Checkbox cha/con</td>
+<td>Dùng để chọn đúng Package, Category và Action Item. Không coi việc chọn nhánh là đã hoàn thành các item hoặc đã cập nhật Result.</td>
+</tr>
+<tr>
+<td>Thêm / Hủy</td>
+<td>Thêm xác nhận phần chọn; Hủy không áp dụng nháp. Khi nằm trong form tạo/sửa, chưa ghi dữ liệu chính thức trước Thêm/Lưu buổi họp.</td>
+</tr>
+<tr>
+<td>Sửa danh sách quy trình</td>
+<td>Admin/Class Handler/Support quản lý lớp được thêm/bỏ phần Action Board gắn với buổi họp; không sửa định nghĩa Package/Category/Action Item qua popup này. Quyền sửa danh sách này khác quyền cập nhật Result.</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Điểm cần lưu ý:</strong></p>
+<ul>
+<li>Giữ định danh/quan hệ <strong>Package–Category–Action Item</strong> để không nhầm hai item cùng tên; không gắn trùng cùng item trong một buổi họp.</li>
+<li>Checkbox popup là <strong>chọn đưa vào cuộc họp</strong>, không phải Result <code>check</code> của Action Board. Chỉ khi người tạo chủ động lưu Result thì <strong>Result và tiến độ của cuộc họp đó</strong> mới cập nhật theo quy tắc Action Board.</li>
+<li><strong>Mỗi cuộc họp có Result riêng</strong> cho Action Item đã chọn. Hai buổi của cùng lớp chọn cùng một Action Item vẫn có hai Result độc lập; cập nhật buổi A không ghi đè Result/tiến độ buổi B hoặc Result trực tiếp của Action Board lớp.</li>
+</ul>
+<h4 id="testcase-chon-quy-trinh">Testcase — Chọn quy trình</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 15: Chọn Package → Category → Action Item của lớp</td>
+<td>High</td>
+<td></td>
+<td>Flow 8 / REQ07</td>
+<td>Admin / Class Handler / Support</td>
+<td>Lớp A có nhiều Package/Category/Action Item, lớp B có board khác</td>
+<td><strong>Given</strong> mở Action Board Quy trình lớp A<br><strong>When</strong> chọn nhiều Package, Category rồi các Action Item và Thêm/Lưu<br><strong>Then</strong> giữ đúng nhánh/item của A, không trùng item</td>
+<td>Không lấy nguồn lớp B hoặc nhầm item cùng tên; chọn nội dung không tự cập nhật Result.</td>
+</tr>
+<tr>
+<td>Case 16: Hủy và nguồn không còn hợp lệ</td>
+<td>High</td>
+<td></td>
+<td>Flow 8 / EX07 / REQ07</td>
+<td>Admin / Class Handler / Support</td>
+<td>Nháp thêm Q2 hoặc nguồn đã bị xóa/thay quyền</td>
+<td><strong>Given</strong> chọn quy trình<br><strong>When</strong> Hủy hoặc lưu nguồn không hợp lệ<br><strong>Then</strong> Hủy không áp dụng; nguồn lỗi được kiểm tra lại và từ chối</td>
+<td>Không bỏ mục âm thầm/lưu một phần; không Toast khi Hủy.</td>
+</tr>
+<tr>
+<td>Case 17: Chọn cùng Action Item ở hai buổi không chia sẻ Result</td>
+<td>High</td>
+<td></td>
+<td>REQ02 / REQ07 / REQ10</td>
+<td>Admin / Class Handler / Support / Giáo viên / Trợ giảng được mời</td>
+<td>M1/M2 cùng chọn Action Item A</td>
+<td><strong>Given</strong> gắn A vào M1/M2 rồi người tạo M1 cập nhật Result A<br><strong>When</strong> tải chi tiết hai buổi<br><strong>Then</strong> Result M1 thay đổi, Result M2 giữ nguyên</td>
+<td>Chọn item chưa tự hoàn thành; không sửa định nghĩa hoặc Result nguồn Action Board lớp.</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="noi-dung-va-bien-ban-cuoc-hop">Nội dung và biên bản cuộc họp</h3>
+<p align="center">
+  <a href="./images/67-class-meeting-minutes-editor.png"><img src="./images/67-class-meeting-minutes-editor.png" alt="Nội dung mô tả và vùng biên bản có trình soạn thảo" width="1050" title="Nhấn để xem ảnh gốc"></a><br>
+  <em>Ảnh 7 — mô tả buổi họp và Biên bản cuộc họp đang mở trình soạn thảo</em>
+</p>
+
+<p align="center">
+  <a href="./images/68-class-meeting-content-minutes.png"><img src="./images/68-class-meeting-content-minutes.png" alt="Nội dung quy trình đã thêm và biên bản cuộc họp" width="1050" title="Nhấn để xem ảnh gốc"></a><br>
+  <em>Ảnh 8 — danh mục quy trình, badge số và biên bản dạng hiển thị</em>
+</p>
+
+<p><strong>Mô tả:</strong></p>
+<p>Vùng Nội dung buổi họp hiển thị mô tả và <strong>Package → Category → Action Item</strong> đã chọn từ Action Board Quy trình lớp. Khi hiển thị Action Item, <strong>chỉ người tạo cuộc họp được cập nhật Result</strong> của item đã gắn; mọi người khác có quyền xem buổi họp chỉ đọc Result. Hai ảnh cuối còn có vùng <strong>Biên bản cuộc họp</strong> mở/thu gọn bằng chevron; quyền/cách lưu biên bản chưa được xác định.</p>
+<p><strong>Giải thích field/thành phần:</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Thành phần</th>
+<th>Yêu cầu</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Mô tả</td>
+<td>Nội dung của đúng buổi họp đang chọn; placeholder Nhập mô tả khi chưa có theo ảnh. Không dùng Lorem Ipsum làm dữ liệu mặc định.</td>
+</tr>
+<tr>
+<td>Nội dung Action Board đã gắn</td>
+<td>Hiển thị Package, Category, Action Item và chevron mở/thu gọn. Badge như <code>0/7</code> dùng tiến độ Action Board tương ứng; không lấy làm số lịch trùng hoặc số người tham gia.</td>
+</tr>
+<tr>
+<td>Result của Action Item</td>
+<td>Hiển thị <strong>Result riêng của cuộc họp đang chọn</strong> cho đúng item được gắn. <strong>Người tạo cuộc họp</strong> dùng control phù hợp loại Action (ví dụ check/đánh giá/task theo Action Board) để lưu Result; người khác chỉ xem. Không sửa định nghĩa Package/Category/Action Item hoặc Result của buổi khác.</td>
+</tr>
+<tr>
+<td>Tay nắm chấm</td>
+<td>Có trên ảnh; quyền kéo sắp xếp, thứ tự lưu và phạm vi đổi thứ tự chưa chốt.</td>
+</tr>
+<tr>
+<td>Biên bản</td>
+<td>Nội dung riêng của từng buổi, không thay cho mô tả hoặc nhật ký lớp. Chevron mở/thu gọn vùng.</td>
+</tr>
+<tr>
+<td>Toolbar biên bản</td>
+<td>Ảnh có đậm, nghiêng, gạch chân, công cụ định dạng, màu và liên kết; tập công cụ hỗ trợ cuối cùng cần chốt.</td>
+</tr>
+<tr>
+<td>Lưu biên bản</td>
+<td>Chưa thấy nút lưu/auto-save và chưa chốt ai được sửa, khi nào được sửa, bắt buộc trước Hoàn thành hay không. Không tự cấp quyền sửa cho Giáo viên.</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Điểm cần lưu ý:</strong></p>
+<ul>
+<li>Quyền cập nhật Result dựa trên <strong>người tạo được lưu của cuộc họp</strong>, không dựa vào việc đang là người tham gia, role Admin/Class Handler/Support hay người chỉnh sửa gần nhất. Admin/Class Handler/Support khác vẫn được CRUD thông tin cuộc họp trong phạm vi lớp nhưng <strong>không được cập nhật Result</strong> nếu không phải người tạo.</li>
+<li>Khi người tạo cập nhật Result, backend kiểm tra quyền, đúng cuộc họp và đúng Action Item đã gắn; lưu <strong>Result theo cuộc họp–Action Item</strong>, hiển thị lại giá trị mới và ghi Log. Không tự đổi Result khi chỉ chọn item hoặc mở/đóng nội dung. Tiến độ của <strong>cuộc họp này</strong> được tính lại theo quy tắc Action Board, không thay Result/tiến độ cuộc họp khác.</li>
+<li>Giáo viên/Trợ giảng được mời chỉ đọc Result, <strong>trừ</strong> Action Item loại <code>verify</code> có Giáo viên trong danh sách người xác nhận (assignee): Giáo viên được tick xác nhận một lần cho Result của buổi đó, không bỏ tick (chi tiết tại <a href="../../teacher_role/class/class_process_requirements.md">requirement Giáo viên — Quy trình / Cuộc họp</a>). Ảnh editor biên bản không mở quyền viết biên bản. Quyền đọc/lưu biên bản vẫn tách riêng.</li>
+<li>Badge nội dung là tiến độ Action Board, không phải số người tham gia hoặc số buổi trùng giờ. Kết quả hiển thị phải lấy cùng nguồn/quy tắc với Action Board, không tự đặt công thức mới cho cuộc họp.</li>
+<li>Văn bản/liên kết phải hiển thị an toàn, không thực thi script. Đổi cuộc họp không dùng biên bản/mô tả của buổi cũ.</li>
+</ul>
+<h4 id="testcase-noi-dung-va-bien-ban">Testcase — Nội dung và biên bản</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 18: Người tạo cập nhật Result riêng của buổi</td>
+<td>High</td>
+<td></td>
+<td>Flow 13 / REQ10 / REQ12</td>
+<td>Admin / Class Handler / Support là người tạo</td>
+<td>M1/M2 cùng gắn Action Item A từ đúng Package/Category</td>
+<td><strong>Given</strong> người tạo M1 chọn Result hợp lệ của A<br><strong>When</strong> Lưu thành công và tải lại M1/M2<br><strong>Then</strong> chỉ Result/tiến độ M1 cập nhật</td>
+<td>M2 và Result Action Board lớp giữ nguyên; áp dụng control/validation theo loại Action, có Log và một Toast.</td>
+</tr>
+<tr>
+<td>Case 19: Người không tạo chỉ xem Result</td>
+<td>High</td>
+<td></td>
+<td>Flow 13 / REQ02 / REQ10 / EX01</td>
+<td>Admin / Class Handler / Support khác, Giáo viên hoặc Trợ giảng được mời</td>
+<td>M1 có Action Item A; user hiện tại không phải người tạo</td>
+<td><strong>Given</strong> xem A hoặc gửi request cập nhật Result trực tiếp<br><strong>When</strong> kiểm tra quyền và liên kết M1–A<br><strong>Then</strong> chỉ đọc được Result thuộc quyền xem; request sửa bị từ chối</td>
+<td>Không cấp quyền Result theo role CRUD cuộc họp hoặc lời mời; ngoại lệ duy nhất là Giáo viên tick <code>verify</code> được gán; nội dung/biên bản hiển thị an toàn, không lộ dữ liệu ngoài buổi.</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="popup-danh-sach-cuoc-hop-cung-thoi-gian">Popup danh sách cuộc họp cùng thời gian</h3>
+<p><strong>Mô tả:</strong></p>
+<p>Khi cùng thời gian có nhiều cuộc họp, hiển thị số lượng, ví dụ <strong>2</strong>. Nhấn số lượng mở popup danh sách chi tiết. Chưa có ảnh popup này; chức năng được yêu cầu bằng lời và vẫn thuộc phạm vi bắt buộc.</p>
+<p><strong>Giải thích field/thành phần:</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Thành phần</th>
+<th>Yêu cầu</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Badge số lượng</td>
+<td>Số cuộc họp cùng thời gian mà người xem có quyền thấy. Hai buổi không được gộp thành một bản ghi.</td>
+</tr>
+<tr>
+<td>Mỗi dòng popup</td>
+<td>Đủ <strong>Số lượng người tham gia, Ngày giờ, Trạng thái, Tiêu đề cuộc họp</strong>.</td>
+</tr>
+<tr>
+<td>Chọn một cuộc họp</td>
+<td>Cho xem chi tiết buổi thuộc quyền. Quyền chỉnh sửa vẫn kiểm tra theo role.</td>
+</tr>
+<tr>
+<td>Đóng popup</td>
+<td>Chỉ đóng vùng hiển thị, không thay đổi dữ liệu/Toast CRUD.</td>
+</tr>
+<tr>
+<td>Trùng thời gian</td>
+<td>Hai buổi cùng <strong>ngày và giờ:phút bắt đầu</strong> trong cùng lớp. Chưa có giờ kết thúc nên không gom theo các khoảng giao nhau.</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Điểm cần lưu ý:</strong></p>
+<ul>
+<li><strong>Lọc quyền trước khi gom/count.</strong> Ví dụ M1/M2 cùng T, G là Giáo viên/Trợ giảng thuộc lớp, chỉ được mời M1: G chỉ thấy M1, không được thấy <code>2</code> hoặc dòng M2. Admin/Class Handler/Support có quyền quản lý lớp thấy cả hai.</li>
+<li>Count phải cập nhật sau tạo/sửa/xóa hoặc thay người tham gia. Một buổi hiện <code>1</code> như card tham chiếu; từ hai buổi cùng ngày giờ trở lên badge hiện số lượng và mở popup. Trùng giờ giữa các lớp không tự gộp vào tab của lớp hiện tại.</li>
+</ul>
+<h4 id="testcase-cuoc-hop-cung-thoi-gian">Testcase — Cuộc họp cùng thời gian</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 20: Cho tạo trùng giờ và xem popup</td>
+<td>High</td>
+<td></td>
+<td>Flow 3 / Flow 9 / REQ09</td>
+<td>Admin / Class Handler / Support / Giáo viên được mời cả hai</td>
+<td>M1 đã có ở T; có quyền tạo/xem tương ứng</td>
+<td><strong>Given</strong> Admin/Class Handler/Support tạo M2 cũng T rồi người có quyền nhấn 2<br><strong>When</strong> lưu và mở popup<br><strong>Then</strong> cả hai buổi tồn tại, popup đủ số người/ngày giờ/trạng thái/title từng buổi</td>
+<td>Chọn dòng mở đúng chi tiết; Giáo viên chỉ đọc.</td>
+</tr>
+<tr>
+<td>Case 21: Gom/count sau lọc quyền và đúng lớp</td>
+<td>High</td>
+<td></td>
+<td>Flow 9 / REQ01 / REQ02 / REQ09</td>
+<td>Giáo viên / Trợ giảng / Admin / Class Handler / Support</td>
+<td>A có M1/M2 cùng ngày giờ:phút; G là thành viên lớp chỉ được mời M1; B cũng có buổi ở giờ đó</td>
+<td><strong>Given</strong> G mở menu Cuộc họp của lớp A<br><strong>When</strong> gom/count và mở danh sách<br><strong>Then</strong> G thấy badge 1/M1; Admin/Class Handler/Support quản lý A thấy badge 2/M1 và M2</td>
+<td>Không lộ M2 cho G hoặc gộp cuộc họp lớp B.</td>
+</tr>
+<tr>
+<td>Case 22: Count cập nhật sau thay đổi</td>
+<td>High</td>
+<td></td>
+<td>Flow 7 / Flow 11 / REQ09 / REQ13</td>
+<td>Admin / Class Handler / Support</td>
+<td>M1/M2 cùng T</td>
+<td><strong>Given</strong> đổi giờ M2 hoặc xóa M2 thành công<br><strong>When</strong> tải lại nhóm/popup<br><strong>Then</strong> nhóm cũ chỉ còn M1 và nhóm mới đúng dữ liệu nếu đổi giờ</td>
+<td>Không giữ badge 2/dòng đã xóa; không thay count người tham gia M1.</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="xac-nhan-xoa-buoi-hop">Xác nhận xóa buổi họp</h3>
+<p><strong>Mô tả:</strong></p>
+<p>Admin/Class Handler/Support chọn buổi họp, thực hiện Xóa và xác nhận. Chưa có ảnh nút/popup xóa; không áp dụng xác nhận hai lần của Xóa lớp vào cuộc họp.</p>
+<p><strong>Giải thích field/thành phần:</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Thành phần</th>
+<th>Yêu cầu</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Đối tượng</td>
+<td>Hiển thị tiêu đề/ngày giờ để nhận biết đúng buổi đang xóa.</td>
+</tr>
+<tr>
+<td>Hủy</td>
+<td>Đóng, giữ nguyên buổi và quyền xem.</td>
+</tr>
+<tr>
+<td>Xác nhận xóa</td>
+<td>Chỉ xóa sau xác nhận, kiểm tra lại quyền và liên kết lớp–buổi.</td>
+</tr>
+<tr>
+<td>Thành công</td>
+<td>Bỏ buổi khỏi danh sách người dùng, cập nhật nhóm trùng giờ và vùng chi tiết; ghi Log. Chọn buổi kế tiếp/hiển thị rỗng cần chốt.</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Điểm cần lưu ý:</strong></p>
+<ul>
+<li>Xóa mềm/cứng, giữ biên bản/quy trình gắn và thời hạn lưu lịch sử chưa chốt. Không xóa quy trình nguồn của lớp hoặc các cuộc họp khác dùng cùng nguồn.</li>
+<li>Giáo viên/Trợ giảng không được xóa dù là người tham gia; người có role quản lý nhưng không có quyền quản lý lớp này cũng không có quyền xóa. Mở popup hoặc Hủy chưa gửi thao tác xóa.</li>
+</ul>
+<h4 id="testcase-xoa">Testcase — Xóa</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 23: Xác nhận xóa hoặc Hủy</td>
+<td>High</td>
+<td>Smoke</td>
+<td>Flow 11 / REQ04 / REQ09 / REQ12</td>
+<td>Admin / Class Handler / Support</td>
+<td>M1/M2 cùng dùng Q1</td>
+<td><strong>Given</strong> mở xác nhận Xóa M1<br><strong>When</strong> Hủy hoặc xác nhận và backend thành công<br><strong>Then</strong> Hủy giữ M1; xác nhận thành công bỏ đúng M1 khỏi danh sách</td>
+<td>Xóa cập nhật count/chi tiết, có Log/Toast; không xóa M2/nguồn Q1; Hủy không Toast.</td>
+</tr>
+<tr>
+<td>Case 24: Xóa lỗi, ngoài quyền hoặc buổi đã xóa</td>
+<td>High</td>
+<td></td>
+<td>EX01 / EX05 / EX09 / REQ13</td>
+<td>Giáo viên / Admin / Class Handler / Support</td>
+<td>Request lỗi, thiếu quyền hoặc M1 không còn tồn tại</td>
+<td><strong>Given</strong> gửi thao tác xóa/đọc/sửa M1<br><strong>When</strong> hệ thống kiểm tra<br><strong>Then</strong> không thay dữ liệu ngoài quyền hoặc tạo lại buổi đã xóa</td>
+<td>Lỗi không giảm count/báo thành công; cập nhật list phù hợp khi buổi không còn tồn tại.</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="thong-bao-qua-han">Thông báo quá hạn</h3>
+<p><strong>Mô tả:</strong></p>
+<p>Hệ thống có thể kiểm tra lịch họp để gửi thông báo quá hạn theo yêu cầu ban đầu, nhưng <strong>không tự đổi trạng thái</strong>. Người tạo quyết định khi nào đổi trạng thái sau khi buổi họp có ít nhất một người tham gia và ngày giờ họp. Mốc quá hạn, người nhận và kênh thông báo chưa được nêu rõ.</p>
+<p><strong>Giải thích field/thành phần:</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Thành phần</th>
+<th>Yêu cầu</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Trạng thái khi tới giờ/quá hạn</td>
+<td>Giữ nguyên trạng thái đã lưu; không tự chuyển Mới tạo → Đang tham gia hoặc Hoàn thành.</td>
+</tr>
+<tr>
+<td>Quá hạn</td>
+<td>Chưa chốt tính từ giờ bắt đầu, giờ kết thúc, thời lượng hay mốc hoàn thành khác; chưa chốt trạng thái nào được nhắc.</td>
+</tr>
+<tr>
+<td>Thông báo</td>
+<td>Có yêu cầu gửi khi quá hạn; người nhận/kênh/nội dung/nhắc lại cần chốt. Không mặc định gửi email/SMS hoặc gửi cho toàn lớp.</td>
+</tr>
+<tr>
+<td>Đồng bộ</td>
+<td>Sau khi người tạo đổi thủ công, card/chi tiết/popup hiển thị trạng thái mới; thông báo quá hạn không tự đổi trạng thái hoặc Result.</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Điểm cần lưu ý:</strong></p>
+<ul>
+<li>Thông báo nghiệp vụ quá hạn khác Toast CRUD sau người dùng lưu. Không tự thêm thông báo mời họp/nhắc trước giờ/chỉnh lịch khi yêu cầu chưa có.</li>
+<li>Không làm lộ chi tiết cuộc họp cho người không có quyền nhận/xem. Tác vụ gửi thông báo cần tránh gửi lặp cùng một lần nhắc.</li>
+</ul>
+<h4 id="testcase-thong-bao-qua-han">Testcase — Thông báo quá hạn</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 25: Tới giờ/quá hạn không tự đổi trạng thái</td>
+<td>High</td>
+<td></td>
+<td>Flow 10 / REQ08 / REQ11</td>
+<td>Hệ thống</td>
+<td>M1 có lịch, có người tham gia và đang Mới tạo</td>
+<td><strong>Given</strong> người tạo chưa đổi trạng thái<br><strong>When</strong> tới hoặc qua giờ họp và tải lại card/chi tiết<br><strong>Then</strong> M1 vẫn Mới tạo</td>
+<td>Không có Log đổi trạng thái tự động; thông báo quá hạn nếu đủ điều kiện là thao tác riêng.</td>
+</tr>
+<tr>
+<td>Case 26: Thông báo quá hạn đúng người, không trùng</td>
+<td>High</td>
+<td></td>
+<td>Flow 10 / REQ02 / REQ11 / EX08</td>
+<td>Hệ thống</td>
+<td>Đã chốt quá hạn/người nhận/kênh/tần suất; M1 quá hạn, M2 chưa</td>
+<td><strong>Given</strong> kiểm tra các buổi<br><strong>When</strong> gửi và chạy lại cùng lần nhắc<br><strong>Then</strong> chỉ nhắc M1 đến tập người nhận được phép, không gửi trùng</td>
+<td>Không lộ dữ liệu ngoài quyền; nhắc lại theo chính sách, không tự thêm kênh/nội dung.</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="log-hoat-dong-cuoc-hop">Log hoạt động cuộc họp</h3>
+<p><strong>Mô tả:</strong></p>
+<p>Nhấn <strong>Log</strong> để xem lịch sử thay đổi cuộc họp. Yêu cầu có nút Log nhưng ảnh không thể hiện vị trí; bố trí popup/trang, Log theo một buổi hay toàn tab và quyền xem Log của Giáo viên cần chốt.</p>
+<p><strong>Giải thích field/thành phần:</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Thành phần</th>
+<th>Yêu cầu</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Lịch sử</td>
+<td>Ghi nhận tạo, sửa thông tin, thay người tham gia, <strong>người tạo đổi trạng thái</strong>, thay nội dung Action Board/Result và xóa đã thành công. Lưu biên bản chỉ bổ sung khi chốt chức năng.</td>
+</tr>
+<tr>
+<td>Dữ liệu mỗi thay đổi</td>
+<td>Xác định cuộc họp/lớp, hành động, người thực hiện hoặc Hệ thống, thời điểm và thông tin thay đổi phù hợp để truy vết. Bố trí cột/mức chi tiết trước–sau cần chốt.</td>
+</tr>
+<tr>
+<td>Phạm vi</td>
+<td>Chỉ dữ liệu lịch sử được phép xem. Log không phải đường vòng để đọc nội dung/người tham gia của buổi ngoài quyền.</td>
+</tr>
+<tr>
+<td>Chỉ đọc</td>
+<td>Mở/đóng Log không thay dữ liệu và không Toast CRUD.</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Điểm cần lưu ý:</strong></p>
+<ul>
+<li>Không gộp Log với <strong>Biên bản</strong>. Log hệ thống không phải nhật ký viết tay của Class Handler/Support và không tự cập nhật chỉ số <strong>Follow</strong> tại Manage Class.</li>
+<li>Hủy form/đọc dữ liệu không là thay đổi thành công. Log truy cập/lỗi, thời hạn giữ và cách xem Log buổi đã xóa cần chốt.</li>
+</ul>
+<h4 id="testcase-log">Testcase — Log</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 27: Log truy vết đúng thay đổi đã lưu</td>
+<td>High</td>
+<td></td>
+<td>Flow 12 / REQ12 / EX05</td>
+<td>Admin / Class Handler / Support</td>
+<td>Có CRUD/user/trạng thái/Action Item/Result thành công, Hủy và lỗi</td>
+<td><strong>Given</strong> mở Log<br><strong>When</strong> đối chiếu sự kiện với dữ liệu chính thức<br><strong>Then</strong> đúng buổi/lớp/tác nhân/thời điểm/thay đổi</td>
+<td>Trạng thái/Result ghi đúng người tạo; không có Log trạng thái tự đổi; Hủy/lỗi không thành thay đổi thành công.</td>
+</tr>
+<tr>
+<td>Case 28: Log không vượt quyền</td>
+<td>High</td>
+<td></td>
+<td>Flow 12 / REQ02 / REQ12 / EX01</td>
+<td>Người có/không có quyền Log</td>
+<td>Có buổi ngoài quyền; quyền Log Giáo viên cần chốt</td>
+<td><strong>Given</strong> mở/đóng Log hoặc đọc bằng URL/request trực tiếp<br><strong>When</strong> kiểm tra quyền<br><strong>Then</strong> chỉ trả lịch sử thuộc phạm vi được cấp</td>
+<td>Không lộ title/user/biên bản buổi ngoài quyền; xem/đóng Log không Toast CRUD.</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="toast-phan-hoi-crud">Toast phản hồi CRUD</h3>
+<p align="center">
+  <a href="../../images/01-toast-crud.png"><img src="../../images/01-toast-crud.png" alt="Bốn biến thể Toast CRUD chuẩn" width="520" title="Nhấn để xem ảnh gốc"></a><br>
+  <em>Component phản hồi dùng chung với Manage Class</em>
+</p>
+
+<p><strong>Mô tả:</strong></p>
+<p>Các thao tác tạo/sửa/xóa/đổi trạng thái/lưu người tham gia/lưu quy trình có một phản hồi sau kết quả xử lý, theo chuẩn Manage Class. Câu chữ dòng hai bên dưới là <strong>đề xuất</strong>, cần xác nhận; biên bản chỉ áp dụng nếu chốt lưu.</p>
+<p><strong>Giải thích field/thành phần:</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Biến thể</th>
+<th>Tiêu đề</th>
+<th>Nội dung đề xuất / Điều kiện</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Thành công</td>
+<td><code>Thành Công</code></td>
+<td><code>Thêm buổi họp thành công.</code> / <code>Cập nhật buổi họp thành công.</code> / <code>Xóa buổi họp thành công.</code> / <code>Cập nhật trạng thái cuộc họp thành công.</code> / <code>Cập nhật kết quả Action Item thành công.</code> theo đúng thao tác đã lưu.</td>
+</tr>
+<tr>
+<td>Thành công lưu riêng</td>
+<td><code>Thành Công</code></td>
+<td><code>Cập nhật người tham gia thành công.</code> / <code>Cập nhật nội dung quy trình của cuộc họp thành công.</code> chỉ khi được chốt lưu riêng trên card; nếu nằm trong form thì chỉ một Toast cho Thêm/Lưu cuối.</td>
+</tr>
+<tr>
+<td>Validation</td>
+<td><code>Cảnh Báo</code></td>
+<td><code>Vui lòng kiểm tra thông tin cuộc họp.</code> kèm lỗi tại field; không lưu khi dữ liệu sai/không đủ điều kiện.</td>
+</tr>
+<tr>
+<td>Lỗi</td>
+<td><code>Có Lỗi Xảy Ra</code></td>
+<td><code>Không thể thêm/cập nhật/xóa buổi họp. Vui lòng thử lại.</code> diễn đạt đúng thao tác; không hiển thị nguyên lỗi kỹ thuật.</td>
+</tr>
+<tr>
+<td>Đồng bộ</td>
+<td><code>Thông Báo</code></td>
+<td>Chỉ khi hệ thống thực sự đã tiếp nhận và còn đang đồng bộ; không báo thành công sớm. Nội dung cụ thể chưa chốt.</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Điểm cần lưu ý:</strong></p>
+<ul>
+<li>Một thao tác logic chỉ một Toast kết quả. Chọn nháp người tham gia/quy trình rồi lưu cả form không tạo nhiều Toast cho từng phần.</li>
+<li>Hủy, xem chi tiết, mở picker/Log/popup trùng giờ không có Toast CRUD. Thông báo quá hạn theo flow riêng.</li>
+<li>Icon/màu/nút × theo component chung; đóng Toast không hoàn tác dữ liệu. Vị trí/thời lượng tự đóng theo cấu hình được chốt.</li>
+</ul>
+<h4 id="testcase-toast-phan-hoi-crud">Testcase — Toast phản hồi CRUD</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 29: Toast đúng kết quả và một lần</td>
+<td>High</td>
+<td></td>
+<td>REQ14 / EX04 / EX05</td>
+<td>Admin / Class Handler / Support</td>
+<td>Thao tác có kết quả thành công/validation/lỗi/đang đồng bộ thực tế</td>
+<td><strong>Given</strong> Thêm/Lưu/Xóa/set trạng thái hoặc người tạo lưu Result<br><strong>When</strong> nhận kết quả xử lý, kể cả callback lặp<br><strong>Then</strong> một Toast đúng loại Thành Công/Cảnh Báo/Có Lỗi Xảy Ra/Thông Báo</td>
+<td>Không báo thành công sớm; đánh dấu field lỗi; nháp trong form không tạo Toast cho từng phần.</td>
+</tr>
+<tr>
+<td>Case 30: Chỉ đọc/Hủy không Toast, đóng không hoàn tác</td>
+<td>Medium</td>
+<td></td>
+<td>REQ14</td>
+<td>Người có quyền thao tác tương ứng</td>
+<td>Đang xem/chọn nháp hoặc có Toast hiển thị</td>
+<td><strong>Given</strong> mở/đóng popup/picker/Log, Hủy hoặc bấm × Toast<br><strong>When</strong> thao tác kết thúc<br><strong>Then</strong> chỉ đọc/Hủy không Toast CRUD; × chỉ đóng Toast</td>
+<td>Không hoàn tác dữ liệu; thông báo quá hạn tách khỏi Toast.</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="2-yeu-cau">2. Yêu cầu</h2>
+<h3 id="21-flow-chinh">2.1. Flow chính</h3>
+<p><strong>Flow 1 / REQ01 / REQ02: Truy cập danh sách theo quyền</strong></p>
+<pre><code class="language-text">Người dùng mở Chi tiết lớp → Cuộc họp
+      → Kiểm tra quyền quản lý lớp hoặc quyền tham gia buổi cụ thể
+      → Admin/Class Handler/Support quản lý lớp: đầy đủ cuộc họp trong phạm vi lớp được phép
+      → Thành viên lớp có role khác Học viên: mở menu Cuộc họp và chỉ thấy buổi có mình trong danh sách tham gia đã lưu
+      → Giáo viên/Trợ giảng: chỉ đọc; thành viên khác không có quyền quản lý lớp cũng chỉ đọc buổi được mời
+      → Lọc quyền trước khi gom lịch và tính số lượng
+      → Tải danh sách; rỗng/lỗi/loading hiển thị riêng
+      → Không mở rộng quyền xem các dữ liệu lớp khác chỉ vì được mời vào cuộc họp
+</code></pre>
+<p><strong>Flow 2 / REQ03 / REQ10 / REQ13: Xem chi tiết</strong></p>
+<pre><code class="language-text">Chọn card hoặc một dòng trong popup trùng thời gian
+      → Kiểm tra quyền buổi cụ thể
+      → Hiển thị title, người tham gia theo quyền, thời gian, trạng thái, mô tả và Package/Category/Action Item đã gắn cùng Result hiện có
+      → Biên bản hiển thị theo quyền riêng khi được chốt
+      → Giáo viên/Trợ giảng và thành viên lớp không có quyền quản lý chỉ xem; không đổi trạng thái do mở tab
+      → Chỉ response của lớp/buổi/quyền hiện tại được render
+</code></pre>
+<p><strong>Flow 3 / REQ04 / REQ05 / REQ06 / REQ07 / REQ08 / REQ14: Tạo buổi họp</strong></p>
+<pre><code class="language-text">Admin/Class Handler/Support nhấn Thêm buổi họp
+      → Nhập title, chọn nhiều thành viên đã được add vào lớp, trừ role Học viên; chọn ngày/giờ
+      → Trạng thái mặc định Mới tạo; chỉ người tạo được chọn trạng thái khác khi đã thêm ≥1 người tham gia và set ngày giờ họp
+      → Nhập mô tả; Thêm quy trình mở Action Board Quy trình lớp, chọn Package → Category → Action Item
+      → Các popup xác nhận phần chọn trong nháp; Hủy form không tạo dữ liệu
+      → Nhấn Thêm: kiểm tra field theo rule đã chốt, role, lớp, user và nguồn quy trình; chống gửi lặp
+      → Thành công: tạo đầy đủ một buổi, cập nhật list/count/quyền xem, ghi Log và một Toast
+      → Lỗi: không tạo một phần; giữ dữ liệu phù hợp để sửa/thử lại, một phản hồi lỗi
+</code></pre>
+<p><strong>Flow 4 / REQ02 / REQ05 / REQ13: Chọn/sửa người tham gia</strong></p>
+<pre><code class="language-text">Admin/Class Handler/Support mở multiselect hoặc dấu + trên card
+      → Tìm thành viên thuộc lớp hiện tại, trừ role Học viên; chọn/bỏ nhiều user, không trùng
+      → Hủy: không áp dụng thay đổi
+      → Xác nhận: cập nhật nháp form; lưu riêng trên card chỉ khi cơ chế đó được chốt
+      → Khi buổi họp được lưu: count cập nhật, người mới được mời xem được buổi cụ thể
+      → Người bị bỏ khỏi danh sách và không có quyền quản lý lớp mất quyền xem/đọc trực tiếp
+      → Admin/Class Handler/Support có quyền quản lý lớp vẫn xem đầy đủ; ghi Log thay đổi đã lưu
+</code></pre>
+<p><strong>Flow 5 / REQ06 / REQ09: Chọn/sửa thời gian</strong></p>
+<pre><code class="language-text">Admin/Class Handler/Support mở date picker/time picker
+      → Chọn ngày, giờ, phút; Hủy giữ giá trị trước
+      → OK xác nhận giá trị đang soạn theo cơ chế lưu được chốt
+      → Lưu buổi: ngày/giờ nhất quán với múi giờ nghiệp vụ
+      → Trùng thời gian được phép; tính lại nhóm cũ/nhóm mới theo quyền
+      → Không thay lịch dạy hoặc các mốc thời gian của lớp
+</code></pre>
+<p><strong>Flow 6 / REQ08 / REQ12 / REQ14: Set trạng thái thủ công</strong></p>
+<pre><code class="language-text">Người tạo cuộc họp chọn Mới tạo / Đang tham gia / Hoàn thành / Đang chờ
+      → Kiểm tra buổi có ít nhất một người tham gia đã lưu và đã set ngày giờ họp
+      → Backend kiểm tra lại người tạo, hai điều kiện và giá trị trạng thái
+      → Lưu thành công: card/chi tiết/popup phản ánh trạng thái, Log trước/sau, một Toast
+      → Thiếu người tham gia/lịch hoặc không phải người tạo: giữ trạng thái cũ, phản hồi lỗi phù hợp
+      → Tới giờ họp hoặc mở tab không tự đổi trạng thái
+</code></pre>
+<p><strong>Flow 7 / REQ04 / REQ13 / REQ14: Chỉnh sửa buổi họp</strong></p>
+<pre><code class="language-text">Admin/Class Handler/Support chọn buổi → tải dữ liệu hiện hành
+      → Cập nhật title, người tham gia, thời gian, mô tả, phần Action Board đã chọn
+      → Hủy không lưu; Lưu kiểm tra quyền và dữ liệu mới nhất
+      → Thành công: cập nhật đúng buổi, đồng bộ count/quyền/nhóm giờ/nội dung, ghi Log, một Toast; không thay trạng thái/Result nếu người sửa không phải người tạo
+      → Lỗi: không thay một phần, giữ nháp phù hợp và cho thử lại
+</code></pre>
+<p><strong>Flow 8 / REQ07 / REQ10: Thêm/sửa phần quy trình</strong></p>
+<pre><code class="language-text">Admin/Class Handler/Support nhấn Thêm quy trình / Thêm nội dung buổi họp
+      → Tải Action Board Quy trình của đúng lớp
+      → Chọn Package → Category → Action Item; có thể chọn nhiều nhánh/item
+      → Hủy không áp dụng; Thêm xác nhận phần chọn, không trùng Action Item
+      → Lưu buổi: gắn phần đã chọn và ghi Log thay đổi
+      → Hiển thị Package/Category/Action Item và Result hiện có tại vùng trái
+      → Không tự cập nhật Result khi chọn item, không thay định nghĩa Action Board nguồn
+</code></pre>
+<p><strong>Flow 9 / REQ02 / REQ09: Xem lịch trùng thời gian</strong></p>
+<pre><code class="language-text">Sau lọc quyền, gom cuộc họp cùng lớp, cùng ngày và giờ:phút bắt đầu
+      → Một buổi: hiện 1 trên card; nhiều buổi: hiện số lượng, ví dụ 2
+      → Nhấn 2: popup danh sách với số người tham gia, ngày giờ, trạng thái, tiêu đề từng buổi
+      → Chọn dòng: xem đúng buổi thuộc quyền
+      → Không trả hoặc đếm buổi ngoài quyền; không gộp lớp khác
+</code></pre>
+<p><strong>Flow 10 / REQ11: Nhắc quá hạn, giữ trạng thái thủ công</strong></p>
+<pre><code class="language-text">Hệ thống kiểm tra buổi đã set lịch và điều kiện quá hạn theo chính sách sẽ chốt
+      → Nếu đủ điều kiện: gửi thông báo theo tập người nhận/kênh/tần suất đã chốt
+      → Không gửi trùng cùng lần nhắc khi tác vụ chạy lại
+      → Không tự đổi trạng thái hoặc Result; người tạo tự đổi trạng thái khi đủ điều kiện
+</code></pre>
+<p><strong>Flow 11 / REQ04 / REQ09 / REQ12 / REQ14: Xóa buổi họp</strong></p>
+<pre><code class="language-text">Admin/Class Handler/Support chọn Xóa đúng buổi
+      → Hiển thị xác nhận nhận biết title/ngày giờ
+      → Hủy: không xóa, không Toast
+      → Xác nhận: kiểm tra lại quyền/lớp/buổi, chống lặp
+      → Thành công: bỏ buổi khỏi danh sách, cập nhật nhóm/count/chi tiết, Log và một Toast
+      → Không xóa nguồn quy trình lớp hoặc buổi khác
+      → Lỗi: giữ buổi/count chính thức và một Toast lỗi
+</code></pre>
+<p><strong>Flow 12 / REQ02 / REQ12: Xem Log</strong></p>
+<pre><code class="language-text">Người có quyền Log nhấn Log
+      → Kiểm tra phạm vi lớp/buổi và quyền Log
+      → Hiển thị lịch sử thay đổi đã lưu, người thực hiện và thời điểm; không có sự kiện đổi trạng thái tự động
+      → Không dùng Log để xem buổi ngoài quyền
+      → Đóng Log không thay dữ liệu/Toast CRUD
+</code></pre>
+<p><strong>Flow 13 / REQ10 / REQ12 / REQ14: Người tạo cập nhật Result Action Item</strong></p>
+<pre><code class="language-text">Người tạo cuộc họp mở buổi có Action Item đã gắn
+      → Hệ thống hiển thị Result **riêng của cuộc họp này** và control phù hợp loại Action
+      → Người tạo nhập/chọn Result rồi Lưu
+      → Backend kiểm tra chính người tạo, đúng cuộc họp, đúng item đã gắn và dữ liệu hợp lệ
+      → Thành công: cập nhật Result/tiến độ của buổi này theo quy tắc Action Board, Log và một Toast
+      → Result/tiến độ buổi khác và Result Action Board lớp không bị ghi đè
+      → Lỗi/không phải người tạo: giữ Result cũ, không cập nhật một phần
+      → Người tham gia và Admin/Class Handler/Support khác chỉ xem Result nếu có quyền xem buổi
+      → Ngoại lệ: Giáo viên được mời và nằm trong assignee của Action Item verify được tick xác nhận Result của buổi đó
+</code></pre>
+<h3 id="22-ngoai-le">2.2. Ngoại lệ</h3>
+<ul>
+<li><strong>EX01 – Thiếu quyền:</strong> Không được mời và không có quyền quản lý lớp, hoặc không có quyền hành động → từ chối đọc/thay đổi tương ứng, kể cả URL/request trực tiếp. Người ngoài lớp không được chọn vào buổi họp hay đọc dữ liệu cuộc họp; không trả chi tiết/count/Log ngoài quyền. Admin/Class Handler/Support có quyền quản lý lớp được miễn điều kiện tham gia trong phạm vi lớp đó. <strong>Chỉ người tạo cuộc họp</strong> được đổi trạng thái và cập nhật Result, kể cả khi người khác có quyền CRUD thông tin cuộc họp.</li>
+<li><strong>EX02 – Lỗi tải:</strong> Tải list/chi tiết/user/quy trình/Log thất bại → hiển thị lỗi và thử lại; không dùng danh sách rỗng, số 0 hoặc dữ liệu cũ như kết quả thành công mới.</li>
+<li><strong>EX03 – Response cũ:</strong> Đổi lớp/buổi/quyền trong khi tải → response cũ không ghi đè hoặc khôi phục nội dung đã bị thu hồi quyền.</li>
+<li><strong>EX04 – Validation:</strong> Field bắt buộc theo rule đã chốt thiếu, ngày/giờ sai hoặc trạng thái ngoài bốn giá trị → đánh dấu lỗi, không lưu và một phản hồi Cảnh Báo theo flow. Đổi trạng thái khi chưa có ít nhất một người tham gia <strong>hoặc</strong> chưa set ngày giờ họp cũng bị từ chối, giữ trạng thái cũ. Không tự đặt giới hạn chưa được yêu cầu.</li>
+<li><strong>EX05 – Lỗi thay đổi/gửi lặp:</strong> Tạo/sửa/xóa/set trạng thái thất bại hoặc gửi lặp → không lưu một phần/nhân đôi; không báo thành công giả; một Toast kết quả phù hợp. Cơ chế xử lý bản ghi bị sửa đồng thời cần chốt.</li>
+<li><strong>EX06 – User không hợp lệ:</strong> User không còn tồn tại, chưa được add vào lớp hiện tại hoặc chỉ có role Học viên trong lớp → từ chối thêm vào buổi họp và báo lựa chọn cần kiểm tra. Kiểm tra lại cả khi lưu request trực tiếp.</li>
+<li><strong>EX07 – Quy trình không hợp lệ:</strong> Package/Category/Action Item không thuộc Action Board Quy trình lớp, item chưa gắn với buổi hoặc không còn hợp lệ tại thời điểm lưu → không gán nhầm lớp/buổi hoặc bỏ mục âm thầm.</li>
+<li><strong>EX08 – Tác vụ thông báo:</strong> Chạy lại/lỗi xử lý nhắc quá hạn → không gửi trùng cùng lần nhắc; không tự đổi trạng thái hoặc Result.</li>
+<li><strong>EX09 – Buổi đã bị xóa:</strong> Khi mở/sửa buổi không còn tồn tại → không trả nội dung cũ như hiện hành hoặc tạo lại ngoài ý muốn; cập nhật list/count và báo trạng thái phù hợp.</li>
+</ul>
+<h3 id="23-yeu-cau-khac">2.3. Yêu cầu khác</h3>
+<ul>
+<li><strong>REQ01 – Phạm vi lớp:</strong> Mỗi buổi thuộc một lớp cụ thể. Cuộc họp không phải Lịch hẹn; không tự thay badge lịch hẹn, lịch dạy, trạng thái lớp hay Follow.</li>
+<li><strong>REQ02 – Quyền xem/sửa:</strong> Admin/Class Handler/Support có quyền quản lý lớp xem đầy đủ và CRUD <strong>thông tin buổi họp</strong> trong phạm vi lớp đó; chỉ <strong>người tạo</strong> được đổi trạng thái và cập nhật Result. Thành viên lớp có role khác Học viên được mời xem đúng buổi họp qua menu <strong>Cuộc họp</strong> của lớp. Giáo viên/Trợ giảng chỉ đọc, trừ Giáo viên tick Action Item <code>verify</code> được gán; thành viên không có quyền quản lý lớp không có CRUD chỉ nhờ lời mời. Lọc quyền trước list/count/gom lịch/chi tiết và kiểm tra lại tại backend.</li>
+<li><strong>REQ03 – Danh sách/chi tiết:</strong> Card có title, số người tham gia, ngày giờ, trạng thái; chi tiết có mô tả và phần quy trình đã gắn của đúng buổi. Số người tham gia đếm user duy nhất; không lấy sĩ số hoặc số lịch trùng.</li>
+<li><strong>REQ04 – CRUD buổi họp:</strong> Admin/Class Handler/Support được tạo/sửa/xóa <strong>thông tin</strong> buổi họp. Form có title, multiselect người tham gia, thời gian, trạng thái, mô tả, phần quy trình. Trạng thái Mới tạo mặc định; chỉ người tạo được set giá trị khác sau khi có ≥1 người tham gia và lịch họp. Thêm/Lưu/Xác nhận xóa mới ghi thay đổi; Hủy không lưu.</li>
+<li><strong>REQ05 – Người tham gia:</strong> Hỗ trợ nhiều user, tìm kiếm theo tên như ảnh, không trùng định danh. Chỉ user <strong>đã được add vào lớp hiện tại</strong> và có role trong lớp <strong>khác Học viên</strong> được chọn; không chọn người ngoài lớp. Danh sách tham gia còn hợp lệ quyết định quyền xem buổi cụ thể của thành viên không có quyền quản lý lớp; thêm/bỏ hoặc mất tư cách thành viên lớp phải đồng bộ quyền và count. Không loại Sale nếu họ là thành viên lớp với role không phải Học viên.</li>
+<li><strong>REQ06 – Thời gian:</strong> Chọn ngày/giờ/phút, Hủy giữ giá trị cũ. Ngày giờ hiển thị, lưu, gom lịch và xác định quá hạn dùng cùng múi giờ nghiệp vụ; giờ kết thúc/thời lượng/ngày quá khứ chưa chốt.</li>
+<li><strong>REQ07 – Action Board Quy trình lớp:</strong> Chọn nội dung theo <strong>Package → Category → Action Item</strong> của đúng lớp, hỗ trợ nhiều nhánh/item, không trùng cùng Action Item trong buổi. Việc chọn đưa item vào cuộc họp không tự thay Result; không sửa định nghĩa Action Board tại đây.</li>
+<li><strong>REQ08 – Trạng thái:</strong> Đúng bốn trạng thái Mới tạo, Đang tham gia, Hoàn thành, Đang chờ; Mới tạo mặc định khi tạo. <strong>Chỉ người tạo cuộc họp</strong> được đổi trạng thái sau khi buổi họp đã có ít nhất một người tham gia và đã set ngày giờ họp; backend kiểm tra lại điều kiện khi lưu. Người khác chỉ xem trạng thái. Không tự đổi theo thời gian, khi mở tab hoặc khi Result thay đổi.</li>
+<li><strong>REQ09 – Cùng thời gian:</strong> Gom các buổi <strong>cùng ngày và giờ:phút bắt đầu</strong> trong một lớp; một buổi hiện <code>1</code>, từ hai buổi hiện số lượng và mở popup đủ số người tham gia/ngày giờ/trạng thái/title. Count chỉ tập buổi thuộc quyền; không gom theo khoảng giao nhau khi chưa có giờ kết thúc.</li>
+<li><strong>REQ10 – Nội dung, Result và biên bản:</strong> Mô tả, Package/Category/Action Item và <strong>Result riêng của buổi họp</strong> hiển thị đúng buổi. Cùng một Action Item ở hai buổi có hai Result độc lập. <strong>Chỉ người tạo cuộc họp</strong> được cập nhật Result của item đã chọn, theo control/validation/tiến độ của Action Board <strong>trong buổi đó</strong>; người có quyền CRUD cuộc họp khác và người được mời chỉ xem Result, trừ Giáo viên được mời tick Action Item <code>verify</code> có mình trong assignee. Không sửa định nghĩa hoặc Result Action Board lớp. Biên bản/tay nắm kéo được ghi nhận từ ảnh; quyền/cách lưu/sắp xếp riêng của chúng chưa được xác nhận. Nội dung hiển thị an toàn.</li>
+<li><strong>REQ11 – Thông báo quá hạn:</strong> Hệ thống gửi thông báo nếu đủ điều kiện quá hạn theo chính sách được chốt, nhưng không tự đổi trạng thái/Result. Mốc quá hạn, người nhận, kênh và tần suất chưa được cung cấp; không tự thêm loại thông báo khác.</li>
+<li><strong>REQ12 – Log:</strong> Có nút xem lịch sử và ghi nhận thay đổi đã lưu gồm CRUD/user/trạng thái/phần Action Board/Result, tác nhân và thời điểm. Đổi trạng thái và cập nhật Result ghi nhận đúng <strong>người tạo cuộc họp</strong>; không có sự kiện đổi trạng thái tự động. Quyền Giáo viên xem Log và phạm vi/giao diện/lưu lịch sử cần chốt.</li>
+<li><strong>REQ13 – Đồng bộ:</strong> Sau lưu cập nhật list/card/chi tiết/count/nhóm trùng giờ/quyền tương ứng; không trộn lớp/buổi/response cũ. Không gửi lặp hoặc ghi một phần. Nội dung đã bị thu hồi quyền không được khôi phục từ response cũ.</li>
+<li><strong>REQ14 – Toast:</strong> Chuẩn bốn biến thể Thành Công/Thông Báo/Cảnh Báo/Có Lỗi Xảy Ra; một thao tác logic có một phản hồi. Chỉ đọc/Hủy/chọn nháp không Toast CRUD; câu chữ cụ thể là đề xuất cần chốt.</li>
+</ul>
+<h3 id="24-rang-buoc">2.4. Ràng buộc</h3>
+<h4 id="quyen-da-duoc-neu-ro">Quyền đã được nêu rõ</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Role/Phạm vi</th>
+<th style="text-align: center;">Xem list/chi tiết/nhóm cùng giờ</th>
+<th style="text-align: center;">Tạo</th>
+<th style="text-align: center;">Sửa thông tin/người tham gia/thời gian</th>
+<th style="text-align: center;">Thêm/sửa phần Action Board</th>
+<th style="text-align: center;">Xóa</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Admin có quyền quản trị lớp</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+</tr>
+<tr>
+<td>Class Handler có quyền quản lý lớp</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+</tr>
+<tr>
+<td>Support có quyền quản lý lớp</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+</tr>
+<tr>
+<td>Admin/Class Handler/Support được mời nhưng không có quyền quản lý lớp đó</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+</tr>
+<tr>
+<td>Giáo viên được add vào buổi cụ thể</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+</tr>
+<tr>
+<td>Trợ giảng được add vào buổi cụ thể</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+</tr>
+<tr>
+<td>Thành viên lớp có role khác Học viên được add vào buổi cụ thể, không có quyền quản lý lớp</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+</tr>
+<tr>
+<td>Giáo viên không được add vào buổi cụ thể</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+</tr>
+<tr>
+<td>Trợ giảng không được add vào buổi cụ thể</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+</tr>
+<tr>
+<td>Học viên hoặc người ngoài lớp</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+</tr>
+<tr>
+<td>Người không quản lý lớp và không được mời vào buổi cụ thể</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+</tr>
+</tbody>
+</table></div>
+<ul>
+<li>✅ xem của thành viên được mời chỉ áp dụng chính buổi được mời, không phải mọi buổi trong lớp.</li>
+<li>Admin/Class Handler/Support <strong>có quyền quản lý lớp</strong> không cần được add tham gia để xem đầy đủ và CRUD trong lớp đó. Cùng role nhưng là thành viên của lớp mà không có quyền quản lý thì chỉ được xem buổi được mời.</li>
+<li>Danh sách người có thể được mời lấy từ thành viên của lớp hiện tại có role khác Học viên. Học viên trong ảnh không là căn cứ để cho phép chọn role này. Quyền xem Log và biên bản tách riêng tại mục Cần xác nhận.</li>
+</ul>
+<p><strong>Quyền đổi trạng thái và cập nhật Result của Action Item đã gắn:</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Người dùng</th>
+<th style="text-align: center;">Đổi trạng thái khi có ≥1 người tham gia và lịch họp</th>
+<th style="text-align: center;">Cập nhật Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Người tạo cuộc họp (Admin/Class Handler/Support)</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+</tr>
+<tr>
+<td>Admin/Class Handler/Support khác, dù được CRUD thông tin buổi họp</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+</tr>
+<tr>
+<td>Giáo viên được mời, nằm trong assignee của Action Item <code>verify</code></td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">✅ chỉ tick <code>verify</code> đó</td>
+</tr>
+<tr>
+<td>Giáo viên/Trợ giảng hoặc người tham gia khác</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+</tr>
+</tbody>
+</table></div>
+<p>Backend kiểm tra định danh người tạo và điều kiện liên quan <strong>mỗi lần lưu</strong>. Quyền đổi trạng thái/Result không được cấp từ việc tham gia hoặc sửa thông tin cuộc họp.</p>
+<h4 id="pham-vi-du-lieu-va-lien-he-manage-class">Phạm vi dữ liệu và liên hệ Manage Class</h4>
+<ul>
+<li>Dùng định danh lớp/buổi/user/Package/Category/Action Item/Result để xác định liên kết và quyền; tên/mã/STT chỉ hỗ trợ hiển thị.</li>
+<li>Mọi dữ liệu list, chi tiết, nhóm trùng thời gian và Log phải áp dụng quyền tương ứng; không tải đầy đủ về client rồi chỉ ẩn card của Giáo viên/Trợ giảng hoặc thành viên không được mời.</li>
+<li>Quyền quản lý lớp là điều kiện để CRUD/xem toàn bộ cuộc họp. Chỉ thành viên lớp có role khác Học viên mới được add vào buổi họp và mở menu <strong>Cuộc họp</strong> của lớp. Quyền tham gia quyết định <strong>xem buổi cụ thể</strong> khi user không có quyền quản lý lớp; không mở quyền đọc các phần khác của lớp.</li>
+<li><strong>Chọn</strong> Action Item vào cuộc họp không đổi Result hoặc tiến độ. Mỗi buổi có Result/tiến độ riêng; khi <strong>người tạo lưu Result</strong>, hệ thống tính lại trong buổi đó theo quy tắc Action Board, không thay Result/tiến độ buổi khác hay của lớp. Trạng thái Hoàn thành của cuộc họp không tự hoàn tất mọi Action Item.</li>
+<li>Log cuộc họp và biên bản không phải nhật ký viết tay; không tự trở thành nguồn Follow của Manage Class.</li>
+<li>Thêm/xóa cuộc họp không thay số Lịch hẹn, lịch dạy, sĩ số, thống kê tài chính hoặc trạng thái vận hành lớp.</li>
+<li>Các testcase liên quan biên bản và tác vụ thời gian có điều kiện tiền đề phải được chốt trước khi dùng để nghiệm thu phần đó; không được diễn giải thành rule đã được xác nhận.</li>
+</ul>
+<h2 id="3-can-xac-nhan">3. Cần xác nhận</h2>
+<p>Điểm còn thiếu để triển khai đầy đủ:</p>
+<ol>
+<li><strong>Thông báo quá hạn:</strong> Mốc nào được tính là quá hạn và gửi cho ai?</li>
+</ol>
+</article>
+    <p class="source-note">Nguồn: class_detail_meetings_requirements.md · SHA-256 6e35a023a4e3ff2b4474415d7e948418cb444949d6752239cd109cf685ed6a90</p>
+  </main>
+  <script>
+    const article = document.getElementById('document');
+    const nav = document.getElementById('docNav');
+    const headings = [...article.querySelectorAll('h2')];
+    headings.forEach((heading, index) => {
+      const link = document.createElement('a');
+      link.href = `#${heading.id}`;
+      const number = document.createElement('span');
+      number.className = 'nav-num';
+      number.textContent = String(index + 1).padStart(2, '0');
+      link.append(number, document.createTextNode(heading.textContent));
+      nav.append(link);
+    });
+
+    const navLinks = [...nav.querySelectorAll('a')];
+    const observer = new IntersectionObserver(entries => {
+      const current = entries.filter(item => item.isIntersecting).sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
+      if (!current) return;
+      navLinks.forEach(link => link.classList.toggle('active', link.hash === `#${current.target.id}`));
+    }, {rootMargin: '-18% 0px -68% 0px', threshold: [0, .2, .5]});
+    headings.forEach(heading => observer.observe(heading));
+    if (navLinks[0]) navLinks[0].classList.add('active');
+
+    const testcaseHeadings = [...article.querySelectorAll('h4, h5')]
+      .filter(heading => heading.textContent.trim().startsWith('Testcase'));
+    const testcaseGroups = testcaseHeadings
+      .map(heading => ({heading, tableWrap: heading.nextElementSibling}))
+      .filter(group => group.tableWrap?.classList.contains('table-wrap'));
+    if (testcaseGroups.length) {
+        const tableWraps = testcaseGroups.map(group => group.tableWrap);
+        tableWraps.forEach(tableWrap => tableWrap.classList.add('testcase-table'));
+        const rows = tableWraps.flatMap(tableWrap => [...tableWrap.querySelectorAll('tbody tr')]);
+        const tools = document.createElement('div');
+        tools.className = 'case-tools';
+        const input = document.createElement('input');
+        input.type = 'search';
+        input.placeholder = 'Tìm testcase, Flow, REQ, EX hoặc nội dung…';
+        input.setAttribute('aria-label', 'Tìm testcase');
+        const count = document.createElement('span');
+        count.className = 'case-count';
+        tools.append(input, count);
+        testcaseGroups[0].heading.before(tools);
+        const filterRows = () => {
+          const query = input.value.trim().toLocaleLowerCase('vi');
+          let visible = 0;
+          rows.forEach(row => {
+            const match = !query || row.textContent.toLocaleLowerCase('vi').includes(query);
+            row.hidden = !match;
+            if (match) visible += 1;
+          });
+          testcaseGroups.forEach(({heading, tableWrap}) => {
+            const hasVisibleRow = [...tableWrap.querySelectorAll('tbody tr')]
+              .some(row => !row.hidden);
+            heading.hidden = !hasVisibleRow;
+            tableWrap.hidden = !hasVisibleRow;
+          });
+          count.textContent = `${visible}/${rows.length} testcase`;
+        };
+        input.addEventListener('input', filterRows);
+        filterRows();
+    }
+  </script>
+</body>
+</html>

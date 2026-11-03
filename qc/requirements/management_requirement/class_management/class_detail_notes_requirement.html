@@ -1,0 +1,1875 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Requirement Chi tiết lớp học — Hóa đơn">
+  <link rel="icon" href="data:,">
+  <title>Chi tiết lớp học — Hóa đơn — Requirement</title>
+  <style>
+    :root {
+      --orange-700: #c83f00;
+      --orange-600: #e84c00;
+      --orange-500: #f45b0a;
+      --orange-400: #ff7a32;
+      --orange-100: #fff0e8;
+      --orange-50: #fff8f4;
+      --navy-950: #101828;
+      --navy-900: #172033;
+      --navy-800: #243047;
+      --slate-700: #344054;
+      --slate-600: #475467;
+      --slate-500: #667085;
+      --slate-400: #98a2b3;
+      --slate-300: #d0d5dd;
+      --slate-200: #e4e7ec;
+      --slate-100: #f2f4f7;
+      --slate-50: #f8fafc;
+      --white: #ffffff;
+      --green: #159447;
+      --blue: #2154c5;
+      --yellow: #b77900;
+      --red: #c92a2a;
+      --purple: #6941c6;
+      --shadow-sm: 0 1px 2px rgba(16, 24, 40, .06);
+      --shadow-md: 0 12px 32px rgba(16, 24, 40, .10);
+      --shadow-lg: 0 24px 64px rgba(16, 24, 40, .16);
+      --radius-sm: 10px;
+      --radius: 16px;
+      --radius-lg: 24px;
+      --sidebar: 286px;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      color: var(--navy-950);
+      background:
+        radial-gradient(circle at 88% 5%, rgba(244, 91, 10, .10), transparent 24rem),
+        var(--slate-50);
+      font: 15px/1.65 Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      text-rendering: optimizeLegibility;
+    }
+    a { color: inherit; }
+    img { max-width: 100%; }
+    button, input, select { font: inherit; }
+    code {
+      padding: .12rem .38rem;
+      border: 1px solid #fed7c3;
+      border-radius: 6px;
+      color: var(--orange-700);
+      background: var(--orange-50);
+      font: 600 .9em ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    }
+
+    .skip-link {
+      position: fixed;
+      z-index: 999;
+      top: 12px;
+      left: 12px;
+      padding: 10px 14px;
+      border-radius: 9px;
+      color: var(--white);
+      background: var(--navy-950);
+      transform: translateY(-150%);
+    }
+    .skip-link:focus { transform: none; }
+
+    .sidebar {
+      position: fixed;
+      z-index: 30;
+      inset: 0 auto 0 0;
+      width: var(--sidebar);
+      padding: 22px 18px;
+      overflow-y: auto;
+      color: #f8fafc;
+      background:
+        linear-gradient(155deg, rgba(255, 122, 50, .24), transparent 26%),
+        linear-gradient(180deg, #192338 0%, #111827 100%);
+      border-right: 1px solid rgba(255, 255, 255, .08);
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 4px 8px 22px;
+      border-bottom: 1px solid rgba(255, 255, 255, .10);
+    }
+    .brand-mark {
+      display: grid;
+      width: 44px;
+      height: 44px;
+      place-items: center;
+      border-radius: 14px;
+      color: var(--white);
+      background: linear-gradient(135deg, var(--orange-400), var(--orange-600));
+      box-shadow: 0 10px 26px rgba(244, 91, 10, .35);
+      font-weight: 900;
+      letter-spacing: -.06em;
+    }
+    .brand strong { display: block; font-size: 16px; }
+    .brand small { color: #aeb8c9; }
+    .nav-title {
+      margin: 24px 10px 8px;
+      color: #8f9aae;
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+    .nav { display: grid; gap: 4px; }
+    .nav a {
+      display: flex;
+      align-items: center;
+      gap: 11px;
+      padding: 10px 12px;
+      border-radius: 10px;
+      color: #cbd5e1;
+      text-decoration: none;
+      transition: .18s ease;
+    }
+    .nav a:hover, .nav a.active {
+      color: var(--white);
+      background: rgba(255, 255, 255, .09);
+    }
+    .nav a.active { box-shadow: inset 3px 0 var(--orange-400); }
+    .nav-num {
+      display: grid;
+      width: 25px;
+      height: 25px;
+      flex: 0 0 auto;
+      place-items: center;
+      border: 1px solid rgba(255, 255, 255, .15);
+      border-radius: 8px;
+      font-size: 11px;
+      font-weight: 800;
+    }
+    .sidebar-footer {
+      margin-top: 26px;
+      padding: 14px;
+      border: 1px solid rgba(255, 255, 255, .10);
+      border-radius: 14px;
+      color: #aeb8c9;
+      background: rgba(255, 255, 255, .04);
+      font-size: 12px;
+    }
+    .sidebar-footer a { color: #ffd8c5; }
+
+    main {
+      width: min(1500px, calc(100% - var(--sidebar)));
+      margin-left: var(--sidebar);
+      padding: 34px clamp(24px, 4vw, 64px) 80px;
+    }
+    section { scroll-margin-top: 24px; }
+    .hero {
+      position: relative;
+      padding: clamp(30px, 5vw, 56px);
+      overflow: hidden;
+      border: 1px solid rgba(255, 255, 255, .08);
+      border-radius: var(--radius-lg);
+      color: var(--white);
+      background:
+        linear-gradient(105deg, rgba(16, 24, 40, .97) 0%, rgba(23, 32, 51, .94) 62%, rgba(109, 45, 9, .90) 100%);
+      box-shadow: var(--shadow-lg);
+    }
+    .hero::after {
+      content: "";
+      position: absolute;
+      width: 360px;
+      height: 360px;
+      top: -190px;
+      right: -80px;
+      border: 70px solid rgba(255, 122, 50, .15);
+      border-radius: 50%;
+    }
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 10px;
+      border: 1px solid rgba(255, 255, 255, .15);
+      border-radius: 999px;
+      color: #ffd8c5;
+      background: rgba(255, 255, 255, .06);
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+    .hero h1 {
+      max-width: 900px;
+      margin: 18px 0 12px;
+      font-size: clamp(34px, 5vw, 64px);
+      line-height: 1.03;
+      letter-spacing: -.045em;
+    }
+    .hero p { max-width: 780px; margin: 0; color: #cbd5e1; font-size: 17px; }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 25px; }
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      min-height: 42px;
+      padding: 9px 14px;
+      border: 1px solid transparent;
+      border-radius: 10px;
+      color: var(--white);
+      background: var(--orange-500);
+      text-decoration: none;
+      cursor: pointer;
+      transition: .18s ease;
+    }
+    .button:hover { transform: translateY(-1px); background: var(--orange-600); }
+    .button.secondary { border-color: rgba(255, 255, 255, .15); background: rgba(255, 255, 255, .07); }
+    .button.ghost { color: var(--slate-700); border-color: var(--slate-300); background: var(--white); }
+    .button.small { min-height: 36px; padding: 7px 11px; font-size: 13px; }
+
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 14px;
+      margin-top: 18px;
+    }
+    .stat {
+      padding: 18px;
+      border: 1px solid var(--slate-200);
+      border-radius: var(--radius);
+      background: rgba(255, 255, 255, .86);
+      box-shadow: var(--shadow-sm);
+    }
+    .stat strong { display: block; color: var(--orange-600); font-size: 30px; line-height: 1; }
+    .stat span { display: block; margin-top: 7px; color: var(--slate-600); font-weight: 650; }
+
+    .section-head {
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 24px;
+      margin: 64px 0 20px;
+    }
+    .section-kicker {
+      margin: 0 0 6px;
+      color: var(--orange-600);
+      font-size: 12px;
+      font-weight: 850;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+    .section-head h2 { margin: 0; font-size: clamp(27px, 4vw, 40px); letter-spacing: -.035em; }
+    .section-head p { max-width: 600px; margin: 8px 0 0; color: var(--slate-600); }
+
+    .panel {
+      padding: clamp(20px, 3vw, 30px);
+      border: 1px solid var(--slate-200);
+      border-radius: var(--radius-lg);
+      background: var(--white);
+      box-shadow: var(--shadow-sm);
+    }
+    .panel + .panel { margin-top: 18px; }
+    .panel h3 { margin: 0 0 14px; font-size: 21px; letter-spacing: -.02em; }
+    .panel h4 { margin: 26px 0 10px; }
+    .muted { color: var(--slate-600); }
+    .note {
+      padding: 15px 17px;
+      border-left: 4px solid var(--orange-500);
+      border-radius: 0 12px 12px 0;
+      color: var(--slate-700);
+      background: var(--orange-50);
+    }
+
+    .mockup {
+      position: relative;
+      padding: 12px;
+      border: 1px solid var(--slate-200);
+      border-radius: 18px;
+      background: linear-gradient(145deg, #fff, #f4f6f9);
+      box-shadow: var(--shadow-md);
+    }
+    .mockup a { display: block; overflow: hidden; border-radius: 12px; }
+    .mockup img { display: block; width: 100%; transition: transform .3s ease; }
+    .mockup a:hover img { transform: scale(1.01); }
+    .mockup figcaption { padding: 12px 4px 2px; color: var(--slate-600); font-size: 13px; }
+
+    .grid-2 { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
+    .grid-3 { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+    .grid-4 { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 14px; }
+    .card {
+      padding: 18px;
+      border: 1px solid var(--slate-200);
+      border-radius: var(--radius);
+      background: var(--white);
+      box-shadow: var(--shadow-sm);
+    }
+    .card h3, .card h4 { margin: 0 0 8px; }
+    .card p { margin: 0; color: var(--slate-600); }
+    .card-accent { border-top: 4px solid var(--orange-500); }
+
+    .column-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+    .column-item {
+      min-height: 124px;
+      padding: 15px;
+      border: 1px solid var(--slate-200);
+      border-radius: 14px;
+      background: var(--slate-50);
+    }
+    .column-item strong { display: block; margin-bottom: 5px; color: var(--navy-900); }
+    .column-item span { color: var(--slate-600); font-size: 13px; }
+
+    .status-card { display: flex; align-items: center; gap: 12px; }
+    .status-card img { width: 42px; height: 42px; }
+    .status-card small { display: block; color: var(--slate-500); }
+
+    .tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      padding: 4px 9px;
+      border-radius: 999px;
+      color: var(--orange-700);
+      background: var(--orange-100);
+      font-size: 12px;
+      font-weight: 800;
+    }
+    .tag.high { color: #9d174d; background: #fce7f3; }
+    .tag.medium { color: #92400e; background: #fef3c7; }
+    .tag.req { color: #3730a3; background: #e0e7ff; }
+    .tag.ex { color: #b42318; background: #fee4e2; }
+
+    .flow-list { display: grid; gap: 14px; counter-reset: flow; }
+    .flow {
+      position: relative;
+      padding: 22px 22px 22px 68px;
+      border: 1px solid var(--slate-200);
+      border-radius: var(--radius);
+      background: var(--white);
+    }
+    .flow::before {
+      counter-increment: flow;
+      content: counter(flow, decimal-leading-zero);
+      position: absolute;
+      top: 20px;
+      left: 18px;
+      display: grid;
+      width: 36px;
+      height: 36px;
+      place-items: center;
+      border-radius: 11px;
+      color: var(--white);
+      background: var(--orange-500);
+      font-weight: 900;
+    }
+    .flow h3 { margin: 0 0 8px; }
+    .flow ol { margin: 0; padding-left: 20px; color: var(--slate-700); }
+
+    .exception { border-left: 4px solid #ef4444; }
+    .exception strong { color: var(--red); }
+
+    .formula-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; }
+    .formula {
+      padding: 18px;
+      border: 1px solid #ffd6c2;
+      border-radius: 16px;
+      background: linear-gradient(160deg, #fff, var(--orange-50));
+    }
+    .formula h4 { margin: 0 0 12px; color: var(--orange-700); }
+    .fraction { display: grid; justify-items: center; color: var(--navy-900); font-weight: 720; text-align: center; }
+    .fraction .top { padding: 0 10px 7px; border-bottom: 2px solid var(--navy-800); }
+    .fraction .bottom { padding-top: 7px; }
+    .formula .teacher { margin-top: 16px; padding-top: 12px; border-top: 1px dashed #f5b896; color: var(--slate-600); font-size: 13px; }
+
+    .filters {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      align-items: center;
+      padding: 14px;
+      border: 1px solid var(--slate-200);
+      border-radius: 14px;
+      background: var(--white);
+      position: sticky;
+      top: 10px;
+      z-index: 10;
+      box-shadow: var(--shadow-md);
+    }
+    .search {
+      min-width: min(100%, 320px);
+      flex: 1 1 260px;
+      height: 42px;
+      padding: 0 13px;
+      border: 1px solid var(--slate-300);
+      border-radius: 10px;
+      color: var(--navy-950);
+      background: var(--white);
+      outline: none;
+    }
+    .search:focus { border-color: var(--orange-500); box-shadow: 0 0 0 4px rgba(244, 91, 10, .12); }
+    .testcases { display: grid; gap: 10px; margin-top: 16px; }
+    .testcase {
+      border: 1px solid var(--slate-200);
+      border-radius: 14px;
+      background: var(--white);
+      overflow: clip;
+    }
+    .testcase[hidden] { display: none; }
+    .testcase summary {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 15px 17px;
+      cursor: pointer;
+      list-style: none;
+    }
+    .testcase summary::-webkit-details-marker { display: none; }
+    .testcase summary::after { content: "+"; margin-left: auto; color: var(--orange-600); font-size: 22px; font-weight: 700; }
+    .testcase[open] summary::after { content: "−"; }
+    .testcase-title { min-width: 0; font-weight: 780; }
+    .case-body {
+      display: grid;
+      grid-template-columns: minmax(180px, .7fr) minmax(0, 1.3fr);
+      gap: 18px;
+      padding: 18px;
+      border-top: 1px solid var(--slate-200);
+      background: var(--slate-50);
+    }
+    .case-meta { color: var(--slate-600); }
+    .case-meta div + div { margin-top: 8px; }
+    .case-steps { display: grid; gap: 10px; }
+    .step { padding: 10px 12px; border-left: 3px solid var(--orange-400); background: var(--white); }
+    .expected { margin: 14px 0 0; padding-left: 20px; }
+    .expected li + li { margin-top: 4px; }
+    .empty-filter { display: none; padding: 28px; color: var(--slate-600); text-align: center; }
+
+    .question-list { display: grid; gap: 10px; margin: 0; padding: 0; counter-reset: question; list-style: none; }
+    .question-list li {
+      position: relative;
+      padding: 14px 16px 14px 54px;
+      border: 1px solid #f4d8a4;
+      border-radius: 13px;
+      background: #fffbeb;
+      color: #664d03;
+    }
+    .question-list li::before {
+      counter-increment: question;
+      content: counter(question);
+      position: absolute;
+      top: 12px;
+      left: 14px;
+      display: grid;
+      width: 28px;
+      height: 28px;
+      place-items: center;
+      border-radius: 9px;
+      color: #fff;
+      background: #d99100;
+      font-weight: 850;
+    }
+
+    .footer {
+      margin-top: 64px;
+      padding-top: 24px;
+      border-top: 1px solid var(--slate-200);
+      color: var(--slate-500);
+      text-align: center;
+    }
+
+    @media (max-width: 1120px) {
+      :root { --sidebar: 244px; }
+      .column-grid, .grid-3, .formula-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .stats { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
+    @media (max-width: 780px) {
+      .sidebar { position: static; width: auto; padding: 14px; }
+      .brand { padding-bottom: 12px; }
+      .nav-title, .sidebar-footer { display: none; }
+      .nav { display: flex; overflow-x: auto; padding-top: 10px; }
+      .nav a { flex: 0 0 auto; }
+      main { width: 100%; margin: 0; padding: 18px 14px 60px; }
+      .hero { border-radius: 18px; }
+      .grid-2, .grid-3, .grid-4, .column-grid, .formula-grid, .case-body { grid-template-columns: 1fr; }
+      .section-head { align-items: start; flex-direction: column; }
+      .filters { position: static; }
+    }
+    @media print {
+      body { background: #fff; font-size: 11px; }
+      .sidebar, .hero-actions, .filters, .skip-link { display: none !important; }
+      main { width: 100%; margin: 0; padding: 0; }
+      .hero { color: #111; background: #fff; border: 2px solid #111; box-shadow: none; }
+      .hero p { color: #333; }
+      .panel, .card, .stat, .mockup, .testcase { break-inside: avoid; box-shadow: none; }
+      .section-head { margin-top: 32px; }
+      .testcase { display: block !important; }
+      .testcase summary::after { display: none; }
+      .testcase:not([open]) .case-body { display: grid; }
+    }
+
+    .doc-shell { min-width: 0; }
+    .doc-toolbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      margin-bottom: 18px;
+      padding: 14px 16px;
+      border: 1px solid var(--slate-200);
+      border-radius: 14px;
+      background: rgba(255,255,255,.92);
+      box-shadow: var(--shadow-sm);
+    }
+    .doc-toolbar-left, .doc-toolbar-right { display: flex; flex-wrap: wrap; align-items: center; gap: 9px; }
+    .sync-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      padding: 6px 10px;
+      border-radius: 999px;
+      color: #067647;
+      background: #ecfdf3;
+      border: 1px solid #abefc6;
+      font-size: 12px;
+      font-weight: 800;
+    }
+    .sync-badge::before { content: "✓"; }
+    .hash { color: var(--slate-500); font: 12px ui-monospace, SFMono-Regular, Menlo, monospace; }
+    .markdown-body {
+      padding: clamp(24px, 4vw, 54px);
+      border: 1px solid var(--slate-200);
+      border-radius: var(--radius-lg);
+      background: var(--white);
+      box-shadow: var(--shadow-md);
+      overflow: hidden;
+    }
+    .markdown-body > h1 {
+      position: relative;
+      margin: -54px -54px 42px;
+      padding: 62px 54px 54px;
+      color: var(--white);
+      background:
+        radial-gradient(circle at 88% 10%, rgba(255,122,50,.36), transparent 20rem),
+        linear-gradient(115deg, var(--navy-950), #243047 68%, #713209);
+      font-size: clamp(34px, 5vw, 62px);
+      line-height: 1.05;
+      letter-spacing: -.045em;
+    }
+    .markdown-body h2 {
+      margin: 70px 0 24px;
+      padding: 0 0 13px;
+      border-bottom: 2px solid var(--slate-200);
+      font-size: clamp(27px, 4vw, 39px);
+      line-height: 1.15;
+      letter-spacing: -.035em;
+      scroll-margin-top: 24px;
+    }
+    .markdown-body h2::first-letter { color: var(--orange-600); }
+    .markdown-body h3 {
+      margin: 38px 0 16px;
+      color: var(--navy-900);
+      font-size: 23px;
+      line-height: 1.25;
+      letter-spacing: -.02em;
+      scroll-margin-top: 24px;
+    }
+    .markdown-body h4 {
+      margin: 28px 0 12px;
+      color: var(--orange-700);
+      font-size: 17px;
+      scroll-margin-top: 24px;
+    }
+    .markdown-body p { margin: 12px 0; }
+    .markdown-body strong { color: var(--navy-900); }
+    .markdown-body ul, .markdown-body ol { padding-left: 1.35rem; }
+    .markdown-body li { margin: 6px 0; }
+    .markdown-body li::marker { color: var(--orange-500); font-weight: 800; }
+    .markdown-body hr {
+      height: 1px;
+      margin: 48px 0;
+      border: 0;
+      background: linear-gradient(90deg, transparent, var(--slate-300), transparent);
+    }
+    .markdown-body > p[align="center"] {
+      margin: 22px 0 28px;
+      padding: 12px;
+      border: 1px solid var(--slate-200);
+      border-radius: 18px;
+      background: linear-gradient(145deg, #fff, #f5f7fa);
+      box-shadow: var(--shadow-md);
+    }
+    .markdown-body > p[align="center"] a { display: inline-block; max-width: 100%; }
+    .markdown-body > p[align="center"] img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+      margin: auto;
+      border-radius: 12px;
+    }
+    .markdown-body > p[align="center"] em {
+      display: block;
+      margin-top: 10px;
+      color: var(--slate-500);
+      font-size: 13px;
+    }
+    .table-wrap {
+      width: 100%;
+      margin: 18px 0 28px;
+      overflow: auto;
+      border: 1px solid var(--slate-200);
+      border-radius: 15px;
+      background: var(--white);
+      box-shadow: var(--shadow-sm);
+    }
+    .markdown-body table {
+      width: 100%;
+      min-width: 720px;
+      border-collapse: separate;
+      border-spacing: 0;
+      font-size: 14px;
+    }
+    .markdown-body th {
+      position: sticky;
+      top: 0;
+      z-index: 2;
+      padding: 12px 14px;
+      color: var(--white);
+      background: var(--navy-900);
+      border-bottom: 1px solid var(--navy-800);
+      text-align: left;
+      white-space: nowrap;
+    }
+    .markdown-body td {
+      padding: 12px 14px;
+      border-bottom: 1px solid var(--slate-200);
+      vertical-align: top;
+    }
+    .markdown-body tbody tr:nth-child(even) td { background: var(--slate-50); }
+    .markdown-body tbody tr:hover td { background: var(--orange-50); }
+    .markdown-body tbody tr:last-child td { border-bottom: 0; }
+    .markdown-body td img { display: block; width: 36px; height: 36px; max-width: none; }
+    .markdown-body pre {
+      position: relative;
+      margin: 16px 0 24px;
+      padding: 18px 20px;
+      overflow: auto;
+      border: 1px solid #ffd3bd;
+      border-radius: 14px;
+      color: #fff7ed;
+      background: linear-gradient(145deg, #172033, #222f48);
+      box-shadow: var(--shadow-sm);
+      font: 13px/1.75 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    }
+    .markdown-body pre code { padding: 0; border: 0; color: inherit; background: none; font: inherit; }
+    .markdown-body blockquote {
+      margin: 18px 0;
+      padding: 13px 16px;
+      border-left: 4px solid var(--orange-500);
+      border-radius: 0 12px 12px 0;
+      color: var(--slate-700);
+      background: var(--orange-50);
+    }
+    .case-tools {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 10px;
+      margin: 12px 0 14px;
+      padding: 13px;
+      border: 1px solid var(--slate-200);
+      border-radius: 13px;
+      background: var(--slate-50);
+    }
+    .case-tools input {
+      flex: 1 1 280px;
+      height: 42px;
+      padding: 0 13px;
+      border: 1px solid var(--slate-300);
+      border-radius: 10px;
+      outline: none;
+    }
+    .case-tools input:focus { border-color: var(--orange-500); box-shadow: 0 0 0 4px rgba(244,91,10,.12); }
+    .case-count { color: var(--orange-700); font-weight: 800; white-space: nowrap; }
+    .testcase-table table { min-width: 1500px; }
+    .testcase-table th:first-child, .testcase-table td:first-child {
+      position: sticky;
+      left: 0;
+      z-index: 1;
+      min-width: 230px;
+      box-shadow: 1px 0 0 var(--slate-200);
+    }
+    .testcase-table th:first-child { z-index: 3; background: var(--navy-900); }
+    .testcase-table td:first-child { background: var(--white); font-weight: 750; }
+    .testcase-table tbody tr:nth-child(even) td:first-child { background: var(--slate-50); }
+    .testcase-table tbody tr:hover td:first-child { background: var(--orange-50); }
+    .source-note {
+      margin-top: 18px;
+      color: var(--slate-500);
+      text-align: center;
+      font-size: 12px;
+    }
+    @media (max-width: 780px) {
+      .doc-toolbar { align-items: flex-start; flex-direction: column; }
+      .markdown-body { padding: 20px 16px; border-radius: 16px; }
+      .markdown-body > h1 { margin: -20px -16px 32px; padding: 40px 20px 34px; }
+      .markdown-body h2 { margin-top: 48px; }
+      .markdown-body table { font-size: 13px; }
+    }
+    @media print {
+      .doc-toolbar, .case-tools { display: none !important; }
+      .markdown-body { padding: 0; border: 0; box-shadow: none; overflow: visible; }
+      .markdown-body > h1 { margin: 0 0 32px; padding: 30px; color: #111; background: #fff; border: 2px solid #111; }
+      .table-wrap { overflow: visible; box-shadow: none; }
+      .markdown-body table { min-width: 0 !important; font-size: 9px; }
+      .markdown-body th { position: static; color: #111; background: #eee; }
+      .testcase-table th:first-child, .testcase-table td:first-child { position: static; }
+    }
+</style>
+</head>
+<body>
+  <a class="skip-link" href="#document">Đi đến nội dung chính</a>
+  <aside class="sidebar" aria-label="Mục lục requirement">
+    <div class="brand">
+      <div class="brand-mark">ics</div>
+      <div><strong>ICS Requirement</strong><small>Requirement UI, ghi chú lớp, quyền riêng tư, bình luận và testcase</small></div>
+    </div>
+    <div class="nav-title">Nội dung Markdown</div>
+    <nav id="docNav" class="nav"></nav>
+    <div class="sidebar-footer">
+      HTML được render trực tiếp từ Markdown nguồn.<br>
+      <a href="./class_detail_notes_requirements.md">Mở file Markdown</a>
+    </div>
+  </aside>
+  <main class="doc-shell">
+    <div class="doc-toolbar">
+      <div class="doc-toolbar-left">
+        <span class="sync-badge">Đồng bộ 100% từ Markdown</span>
+        <span class="hash">SHA-256: 570c0977a806…</span>
+      </div>
+      <div class="doc-toolbar-right">
+        <a class="button ghost small" href="./class_detail_notes_requirements.md">Xem Markdown</a>
+        <button class="button small" type="button" onclick="window.print()">In / Lưu PDF</button>
+      </div>
+    </div>
+    <article id="document" class="markdown-body" data-source-sha256="570c0977a8069d2ccfe30372aa8ef7b89779ae4f6593acbe77ff8dcede5deded">
+<h1 id="chi-tiet-lop-hoc-menu-nhat-ky-tab-ghi-chu">Chi tiết lớp học — Menu Nhật ký — Tab Ghi chú</h1>
+<blockquote>
+<p>Tab <strong>Chi tiết lớp học → Menu Nhật ký → Ghi Chú</strong> có chức năng giống <a href="../teacher_management/teacher_detail_requirements.md#tab-ghi-chu">Tab Ghi chú trong Chi tiết giáo viên</a>: chức năng, quyền owner và quyền riêng tư được kế thừa; UI theo ảnh Ghi Chú lớp và các điểm xác nhận trong tài liệu này; đối tượng liên kết là <strong>lớp đang xem</strong>. Đây là ghi chú của lớp, không phải ghi chú của giáo viên. Tab <a href="./class_detail_journal_requirements.md">Nhật Ký</a> được đặc tả riêng; tab <a href="./class_detail_appointments_requirements.md">Lịch Hẹn</a> có requirement riêng; tab <a href="./class_detail_messages_requirements.md">Tin Nhắn</a> có requirement riêng.</p>
+</blockquote>
+<h2 id="1-ui">1. UI</h2>
+<h3 id="tab-ghi-chu-danh-sach-va-bo-loc">Tab Ghi Chú — Danh sách và bộ lọc</h3>
+<p align="center">
+  <a href="./images/32-class-detail-notes.png"><img src="./images/32-class-detail-notes.png" alt="Chi tiết lớp học — Menu Nhật ký — Tab Ghi Chú" width="900" title="Nhấn để xem ảnh gốc"></a><br>
+  <em>UI Ghi Chú lớp do người dùng cung cấp — nhấn để xem ảnh gốc</em>
+</p>
+
+<p><strong>Mô tả:</strong></p>
+<ul>
+<li>Trong menu Nhật ký của Chi tiết lớp, chọn tab <code>Ghi Chú</code> để xem danh sách ghi chú độc lập của đúng lớp đang mở.</li>
+<li><code>Admin</code>, <code>Class Handler</code>, <code>Support</code> được truy cập/tạo ghi chú trong phạm vi lớp được phân quyền, theo cùng chức năng Ghi chú giáo viên.</li>
+<li>Owner là người tạo ghi chú, lấy từ danh tính đã xác thực. Người được phân công phụ trách lớp không mặc nhiên là owner của mọi ghi chú trong lớp.</li>
+</ul>
+<p><strong>Giải thích field/thành phần:</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Trường/Thành phần</th>
+<th>Yêu cầu</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Tiêu đề</td>
+<td>Bắt buộc, không giới hạn ký tự; hiển thị ở đầu card và xuống dòng khi dài, không cắt nội dung đã lưu.</td>
+</tr>
+<tr>
+<td>Nội dung</td>
+<td>Bắt buộc, không giới hạn ký tự; hỗ trợ xuống dòng và rich text theo toolbar UI, giữ đúng định dạng sau khi lưu/tải lại.</td>
+</tr>
+<tr>
+<td>Loại</td>
+<td>Gồm <code>Công khai</code>, <code>Riêng tư</code>; mặc định <code>Công khai</code>.</td>
+</tr>
+<tr>
+<td>Độ ưu tiên</td>
+<td>Gồm <code>Bình thường</code>, <code>Quan trọng</code>, <code>Rất quan trọng</code>; mặc định <code>Bình thường</code>.</td>
+</tr>
+<tr>
+<td>Trạng thái</td>
+<td>Gồm <code>Mới</code>, <code>Đóng</code>; ghi chú mới mặc định là <code>Mới</code>.</td>
+</tr>
+<tr>
+<td>Owner</td>
+<td>Hiển thị đúng người tạo theo chức năng nguồn; thời gian tạo dưới Tiêu đề có định dạng <code>hh:mm AM/PM, dd.MM.yyyy</code>, ví dụ <code>10:00 AM, 01.07.2024</code>.</td>
+</tr>
+<tr>
+<td>Bình luận</td>
+<td>Hiển thị số lượng; cho phép mở/ẩn danh sách bình luận.</td>
+</tr>
+<tr>
+<td>Hoạt động bình luận cuối</td>
+<td>Bên phải card hiển thị avatar người comment cuối và timestamp màu cam kèm icon đồng hồ, định dạng <code>hh:mm AM/PM, dd.MM.yyyy</code> như UI. Khi không có comment thì không hiển thị metadata comment cuối.</td>
+</tr>
+<tr>
+<td>Thời gian cập nhật</td>
+<td>Ghi chú/comment đã sửa có thời điểm cập nhật và nhãn <code>Đã chỉnh sửa</code>; timestamp theo cùng định dạng UI. Hiển thị bổ sung, giữ nguyên thời gian tạo.</td>
+</tr>
+<tr>
+<td>Control trên card</td>
+<td>Dropdown Độ ưu tiên, icon Công khai/Riêng tư và menu ba chấm theo UI; thao tác quản lý chỉ khả dụng cho owner.</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Điểm cần lưu ý:</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Điều kiện</th>
+<th>Owner</th>
+<th>Admin/Class Handler/Support khác</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Ghi chú <code>Công khai</code> + <code>Mới</code></td>
+<td>Xem, sửa, xóa, đóng, comment</td>
+<td>Xem và comment</td>
+</tr>
+<tr>
+<td>Ghi chú <code>Riêng tư</code> + <code>Mới</code></td>
+<td>Xem, sửa, xóa, đóng, comment</td>
+<td>Không nhìn thấy và không truy cập được</td>
+</tr>
+<tr>
+<td>Ghi chú <code>Công khai</code> + <code>Đóng</code></td>
+<td>Xem, sửa, xóa, mở lại; không comment khi đang đóng</td>
+<td>Không nhìn thấy và không truy cập được</td>
+</tr>
+<tr>
+<td>Ghi chú <code>Riêng tư</code> + <code>Đóng</code></td>
+<td>Xem, sửa, xóa, mở lại; không comment khi đang đóng</td>
+<td>Không nhìn thấy và không truy cập được</td>
+</tr>
+</tbody>
+</table></div>
+<ul>
+<li>Chỉ owner được cập nhật tiêu đề, nội dung, loại, độ ưu tiên và trạng thái; chỉ owner được xóa ghi chú.</li>
+<li>Chỉ owner được đóng ghi chú và mở lại ghi chú đã đóng.</li>
+<li>Trạng thái <code>Mới</code> là trạng thái hoạt động tương ứng với <code>Mở</code> trong chức năng Ghi chú giáo viên; ghi chú mới tạo mặc định Mới.</li>
+<li>Ghi chú đã đóng chỉ owner được xem; quy tắc này áp dụng cả khi Loại đang là <code>Công khai</code>.</li>
+<li>Người không phải owner chỉ được xem và comment ghi chú <code>Công khai</code> đang <code>Mới</code>.</li>
+<li>
+<p>Backend phải áp dụng điều kiện quyền và tính riêng tư trước khi trả dữ liệu; không chỉ ẩn thao tác ở UI.</p>
+</li>
+<li>
+<p>Mọi bản ghi, comment, bộ lọc và số lượng kết quả đều thuộc lớp đang xem. Ghi chú của giáo viên, học viên hoặc lớp khác không được đưa vào đây, kể cả cùng owner/tên hoặc cùng giáo viên dạy hai lớp.</p>
+</li>
+<li>Kế thừa validation của Ghi chú giáo viên: <strong>Tiêu đề và Nội dung đều bắt buộc</strong>. Field thời gian tạo không thay đổi khi sửa ghi chú; filter lấy thời gian tạo ghi chú, không lấy thời điểm sửa hoặc bình luận cuối.</li>
+<li>Control thêm/sửa/xóa/đóng/mở dùng cùng cách thao tác như Ghi chú giáo viên. Không áp dụng cơ chế nhập/sửa nhật ký viết tay của tab Nhật Ký cho tab này.</li>
+</ul>
+<p><strong>Bộ lọc và phân trang:</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Bộ lọc</th>
+<th>Giá trị và quy tắc</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Loại</td>
+<td><code>Công khai</code>, <code>Riêng tư</code>; trạng thái không chọn giá trị không giới hạn theo Loại. Kết quả vẫn phải tuân thủ quyền riêng tư.</td>
+</tr>
+<tr>
+<td>Độ ưu tiên</td>
+<td><code>Bình thường</code>, <code>Quan trọng</code>, <code>Rất quan trọng</code>; trạng thái không chọn giá trị không giới hạn theo độ ưu tiên.</td>
+</tr>
+<tr>
+<td>Trạng thái ghi chú</td>
+<td><code>Mới</code>, <code>Đóng</code>; trạng thái không chọn giá trị không giới hạn theo trạng thái. Ghi chú đóng vẫn chỉ owner được nhận trong kết quả.</td>
+</tr>
+<tr>
+<td>Thời gian</td>
+<td>Mặc định <code>Hôm nay</code>; lọc theo thời gian tạo ghi chú (<code>created_at</code>) trong múi giờ nghiệp vụ.</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Khoảng thời gian:</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Giá trị</th>
+<th>Phạm vi bao gồm</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Tới hạn</code></td>
+<td>Từ thời điểm bắt đầu lưu dữ liệu của hệ thống đến hết ngày hôm nay.</td>
+</tr>
+<tr>
+<td><code>Hôm nay</code></td>
+<td>Từ đầu ngày đến hết ngày hôm nay; là giá trị mặc định.</td>
+</tr>
+<tr>
+<td><code>Hôm qua</code></td>
+<td>Toàn bộ ngày liền trước hôm nay.</td>
+</tr>
+<tr>
+<td><code>Hôm nay và hôm qua</code></td>
+<td>Hợp của toàn bộ ngày hôm qua và ngày hôm nay.</td>
+</tr>
+<tr>
+<td><code>Tuần này</code></td>
+<td>Từ đầu Thứ 2 đến hết Chủ Nhật của tuần hiện tại.</td>
+</tr>
+<tr>
+<td><code>Tuần trước</code></td>
+<td>Từ đầu Thứ 2 đến hết Chủ Nhật của tuần liền trước.</td>
+</tr>
+<tr>
+<td><code>Tháng này</code></td>
+<td>Từ ngày đầu đến ngày cuối của tháng hiện tại.</td>
+</tr>
+<tr>
+<td><code>Tháng trước</code></td>
+<td>Từ ngày đầu đến ngày cuối của tháng liền trước.</td>
+</tr>
+<tr>
+<td><code>3 tháng trước</code></td>
+<td>Từ đầu ngày cách ngày hiện tại ba tháng đến thời điểm hiện tại.</td>
+</tr>
+<tr>
+<td><code>Năm nay</code></td>
+<td>Từ ngày 01/01 đến ngày 31/12 của năm hiện tại.</td>
+</tr>
+<tr>
+<td><code>Năm trước</code></td>
+<td>Từ ngày 01/01 đến ngày 31/12 của năm liền trước.</td>
+</tr>
+<tr>
+<td><code>Tùy chọn</code></td>
+<td>Người dùng chọn ngày bắt đầu và ngày kết thúc; bao gồm toàn bộ hai ngày biên.</td>
+</tr>
+</tbody>
+</table></div>
+<ul>
+<li>Loại, Độ ưu tiên và Trạng thái hỗ trợ chọn <strong>một hoặc nhiều giá trị trong cùng filter</strong>. Nhiều giá trị trong cùng filter kết hợp <strong>OR</strong>; giữa các filter áp dụng <strong>AND</strong>. Không chọn giá trị thì không giới hạn theo filter đó, nhưng vẫn kiểm tra quyền riêng tư/trạng thái. Thời gian chọn một khoảng tại một thời điểm.</li>
+<li>Thay đổi bất kỳ bộ lọc nào phải tải lại danh sách từ trang đầu và giữ nguyên các giá trị lọc còn lại.</li>
+<li>Điều kiện lọc không được làm lộ ghi chú riêng tư, ghi chú đóng hoặc dữ liệu ngoài phạm vi mà người dùng không có quyền xem.</li>
+<li>Chỉ response của tổ hợp bộ lọc mới nhất được phép cập nhật danh sách.</li>
+<li>Danh sách mặc định sắp xếp <strong>mới tạo trước</strong>, theo thời gian tạo giảm dần. Sửa ghi chú/comment không đưa ghi chú cũ lên đầu chỉ vì cập nhật mới.</li>
+<li>Mỗi trang hiển thị tối đa 10 ghi chú còn hoạt động sau khi loại bản ghi đã xóa mềm, áp dụng quyền riêng tư, trạng thái sở hữu và toàn bộ bộ lọc.</li>
+<li>Phân trang hiển thị khoảng dữ liệu đang xem, tổng số kết quả người dùng được phép xem, trang hiện tại, nút <code>Trước</code>, các số trang, dấu <code>...</code> khi cần và nút <code>Sau</code>; số lượng tổng không được làm lộ ghi chú Riêng tư/Đóng của người khác.</li>
+<li><code>Trước</code> bị vô hiệu hóa ở trang đầu; <code>Sau</code> bị vô hiệu hóa ở trang cuối. Chuyển trang giữ nguyên toàn bộ bộ lọc đang áp dụng.</li>
+<li>Sau khi tạo ghi chú thành công, danh sách trở về trang đầu để hiển thị bản ghi mới. Cập nhật/đóng/mở giữ trang nếu bản ghi vẫn phù hợp bộ lọc; nếu thao tác làm trang hiện tại không còn hợp lệ, chuyển đến trang hợp lệ gần nhất.</li>
+<li>Khi chuyển trang hoặc đổi filter liên tục, chỉ response của trang và tổ hợp filter mới nhất được phép cập nhật danh sách; không lặp hoặc bỏ sót ghi chú giữa các trang.</li>
+</ul>
+<h4 id="testcase-tab-ghi-chu-danh-sach-va-bo-loc">Testcase — Tab Ghi Chú — Danh sách và bộ lọc</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 1: Xem ghi chú Công khai đang Mới</td>
+<td>High</td>
+<td>Smoke</td>
+<td>Flow 1 / REQ01</td>
+<td>Admin / Class Handler / Support</td>
+<td>Có ghi chú Công khai đang Mới do nhiều người tạo</td>
+<td><strong>Given</strong> người dùng có quyền với lớp học<br><strong>When</strong> mở tab Ghi chú<br><strong>Then</strong> hệ thống hiển thị ghi chú công khai đang Mới</td>
+<td>- Hiển thị tiêu đề, nội dung, loại, ưu tiên, trạng thái, owner và thời gian tạo<br>- Không trộn dữ liệu lớp học khác</td>
+</tr>
+<tr>
+<td>Case 2: Bảo vệ ghi chú Riêng tư</td>
+<td>High</td>
+<td></td>
+<td>EX01 / REQ01</td>
+<td>Admin / Class Handler / Support</td>
+<td>Có ghi chú Riêng tư của người dùng hiện tại và người khác</td>
+<td><strong>Given</strong> người dùng mở danh sách hoặc gọi API trực tiếp<br><strong>When</strong> hệ thống xác định owner<br><strong>Then</strong> chỉ trả ghi chú Riêng tư của chính người dùng</td>
+<td>- Owner xem được ghi chú của mình<br>- Người khác không thấy và không truy cập được bằng ID<br>- Bộ lọc Riêng tư không làm lộ dữ liệu</td>
+</tr>
+<tr>
+<td>Case 3: Ghi chú Đóng chỉ owner được xem và mở lại</td>
+<td>High</td>
+<td></td>
+<td>Flow 1 / REQ01</td>
+<td>Admin / Class Handler / Support</td>
+<td>Có ghi chú đã Đóng</td>
+<td><strong>Given</strong> owner và người khác cùng truy cập tab Ghi chú<br><strong>When</strong> xem hoặc owner chọn mở lại<br><strong>Then</strong> áp dụng đúng quyền trạng thái</td>
+<td>- Chỉ owner xem được khi Đóng<br>- Không ai comment khi Đóng<br>- Chỉ owner mở lại được<br>- Sau khi mở lại, quyền xem/comment áp dụng theo Loại</td>
+</tr>
+<tr>
+<td>Case 4: Người khác không được quản lý ghi chú</td>
+<td>High</td>
+<td></td>
+<td>EX03 / REQ01</td>
+<td>Admin / Class Handler / Support</td>
+<td>Ghi chú Công khai đang Mới do người khác tạo</td>
+<td><strong>Given</strong> người dùng không phải owner<br><strong>When</strong> xem UI hoặc gọi API sửa/xóa/đóng/mở<br><strong>Then</strong> hệ thống chỉ cho xem và comment</td>
+<td>- UI không hiển thị thao tác quản lý<br>- Backend từ chối request trái quyền<br>- Ghi chú không thay đổi</td>
+</tr>
+<tr>
+<td>Case 5: Hiển thị người và thời gian đầy đủ</td>
+<td>High</td>
+<td></td>
+<td>REQ01 / REQ02</td>
+<td>Admin / Class Handler / Support</td>
+<td>Ghi chú có nhiều comment</td>
+<td><strong>Given</strong> dữ liệu có owner, người comment và timestamp khác nhau<br><strong>When</strong> card và danh sách comment hiển thị<br><strong>Then</strong> hệ thống hiển thị đúng metadata</td>
+<td>- Ghi chú có avatar/tên owner và ngày–tháng–năm–giờ–phút tạo<br>- Mỗi comment có avatar/tên người comment và timestamp<br>- Bên phải card dùng đúng avatar/timestamp comment mới nhất</td>
+</tr>
+<tr>
+<td>Case 6: Lọc theo Loại, Độ ưu tiên và Trạng thái</td>
+<td>High</td>
+<td></td>
+<td>Flow 1 / REQ01</td>
+<td>Admin / Class Handler / Support</td>
+<td>Có dữ liệu thuộc nhiều loại, ưu tiên và trạng thái</td>
+<td><strong>Given</strong> người dùng chọn một hoặc nhiều điều kiện lọc<br><strong>When</strong> hệ thống tải kết quả<br><strong>Then</strong> áp dụng giao các điều kiện</td>
+<td>- Chỉ trả dữ liệu phù hợp và người dùng có quyền xem<br>- Ghi chú đóng/riêng tư của người khác không xuất hiện<br>- Giữ các filter còn lại</td>
+</tr>
+<tr>
+<td>Case 7: Chọn nhiều giá trị trong cùng filter</td>
+<td>High</td>
+<td></td>
+<td>REQ09</td>
+<td>Admin / Class Handler / Support</td>
+<td>Có ghi chú Bình thường/Quan trọng/Rất quan trọng và các Loại/Trạng thái khác nhau</td>
+<td><strong>Given</strong> chọn Bình thường và Quan trọng cùng các filter khác<br><strong>When</strong> tải danh sách<br><strong>Then</strong> nhận ghi chú thuộc một trong hai mức và đồng thời thỏa các filter khác</td>
+<td>- OR trong một filter, AND giữa các filter<br>- Bỏ một giá trị vẫn giữ giá trị khác<br>- Không lộ ghi chú Riêng tư/Đóng của người khác</td>
+</tr>
+<tr>
+<td>Case 8: Filter thời gian mặc định Hôm nay</td>
+<td>High</td>
+<td></td>
+<td>Flow 1 / REQ01</td>
+<td>Admin / Class Handler / Support</td>
+<td>Có ghi chú tạo hôm nay và ngày khác</td>
+<td><strong>Given</strong> người dùng mở tab lần đầu<br><strong>When</strong> danh sách tải<br><strong>Then</strong> filter thời gian mặc định là Hôm nay</td>
+<td>- Lọc theo <code>created_at</code> từ đầu ngày đến hết ngày hôm nay<br>- Không dùng thời gian update hoặc comment cuối<br>- Đúng múi giờ nghiệp vụ</td>
+</tr>
+<tr>
+<td>Case 9: Filter Tới hạn và các khoảng thời gian định sẵn</td>
+<td>High</td>
+<td></td>
+<td>Flow 1 / REQ01</td>
+<td>Admin / Class Handler / Support</td>
+<td>Có ghi chú tại các mốc biên</td>
+<td><strong>Given</strong> người dùng lần lượt chọn Tới hạn, Hôm qua, Hôm nay và hôm qua, tuần/tháng/năm hiện tại hoặc trước đó, 3 tháng trước<br><strong>When</strong> danh sách tải<br><strong>Then</strong> hệ thống áp dụng đúng khoảng thời gian theo <code>created_at</code></td>
+<td>- Tới hạn lấy từ đầu hệ thống đến hết hôm nay<br>- Bao gồm đầy đủ các mốc biên<br>- Không dùng thời gian update/comment để lọc</td>
+</tr>
+<tr>
+<td>Case 10: Filter thời gian Tùy chọn</td>
+<td>High</td>
+<td></td>
+<td>Flow 1 / REQ01</td>
+<td>Admin / Class Handler / Support</td>
+<td>Có dữ liệu trong và ngoài khoảng chọn</td>
+<td><strong>Given</strong> người dùng chọn ngày bắt đầu và kết thúc hợp lệ<br><strong>When</strong> áp dụng filter Tùy chọn<br><strong>Then</strong> hệ thống lọc theo <code>created_at</code> trong khoảng</td>
+<td>- Bao gồm toàn bộ hai ngày biên<br>- Từ chối ngày bắt đầu sau ngày kết thúc<br>- Giữ các filter khác</td>
+</tr>
+<tr>
+<td>Case 11: Tải hoặc thay đổi bộ lọc thất bại</td>
+<td>High</td>
+<td></td>
+<td>EX06 / EX07 / REQ01</td>
+<td>Admin / Class Handler / Support</td>
+<td>API lỗi, hết thời gian chờ hoặc response trả sai thứ tự</td>
+<td><strong>Given</strong> người dùng mở tab hoặc đổi filter liên tục<br><strong>When</strong> request thất bại hoặc request cũ trả về sau<br><strong>Then</strong> hệ thống giữ đúng ngữ cảnh mới nhất</td>
+<td>- Không coi lỗi là danh sách rỗng<br>- Response cũ không ghi đè kết quả mới<br>- Không làm lộ ghi chú không có quyền<br>- Cho phép thử lại</td>
+</tr>
+<tr>
+<td>Case 12: Phân trang danh sách ghi chú</td>
+<td>High</td>
+<td></td>
+<td>Flow 1 / REQ01</td>
+<td>Admin / Class Handler / Support</td>
+<td>Có hơn 10 ghi chú mà người dùng được phép xem và phù hợp bộ lọc</td>
+<td><strong>Given</strong> danh sách Ghi chú đang có nhiều trang<br><strong>When</strong> người dùng chọn số trang, <code>Trước</code> hoặc <code>Sau</code><br><strong>Then</strong> hệ thống tải đúng tối đa 10 ghi chú của trang được chọn</td>
+<td>- Hiển thị đúng khoảng dữ liệu, tổng kết quả được phép xem và trang hiện tại<br>- Giữ nguyên filter khi chuyển trang; đổi filter về trang đầu<br>- <code>Trước</code>/<code>Sau</code> vô hiệu hóa đúng ở trang biên<br>- Không lộ số lượng ghi chú Riêng tư/Đóng của người khác<br>- Tạo mới về trang đầu; thao tác làm trang không hợp lệ chuyển đến trang hợp lệ gần nhất<br>- Chỉ response mới nhất được hiển thị</td>
+</tr>
+<tr>
+<td>Case 13: Mới tạo trước và trạng thái Mới theo UI</td>
+<td>High</td>
+<td></td>
+<td>REQ01 / REQ09</td>
+<td>Admin / Class Handler / Support</td>
+<td>Có ghi chú tạo ở các thời điểm khác nhau, một ghi chú cũ vừa sửa</td>
+<td><strong>Given</strong> mở tab Ghi Chú<br><strong>When</strong> tải danh sách hoặc tạo mới<br><strong>Then</strong> danh sách theo thời gian tạo giảm dần, ghi chú mới có trạng thái Mới</td>
+<td>- Sửa không tự đưa bản ghi cũ lên đầu<br>- Filter Trạng thái có Mới/Đóng, hỗ trợ chọn nhiều<br>- Mới giữ cùng quyền hoạt động của chức năng nguồn</td>
+</tr>
+<tr>
+<td>Case 14: Cách ly dữ liệu ghi chú theo lớp</td>
+<td>High</td>
+<td></td>
+<td>Flow 1 / REQ04</td>
+<td>Admin / Class Handler / Support</td>
+<td>Lớp A/B có cùng giáo viên và owner; có thêm ghi chú giáo viên/học viên</td>
+<td><strong>Given</strong> mở Ghi Chú của lớp A<br><strong>When</strong> tải danh sách, filter hoặc truy cập một ghi chú bằng ID<br><strong>Then</strong> chỉ trả dữ liệu của A mà user có quyền xem</td>
+<td>- Không lấy ghi chú của B/giáo viên/học viên<br>- Cùng giáo viên hoặc owner không làm trộn dữ liệu<br>- Số lượng/phân trang chỉ tính ghi chú được xem tại A</td>
+</tr>
+<tr>
+<td>Case 15: Giữ thời gian tạo khi sửa ghi chú</td>
+<td>High</td>
+<td></td>
+<td>REQ01 / REQ04</td>
+<td>Admin / Class Handler / Support</td>
+<td>Owner có ghi chú tạo hôm qua, sửa hôm nay</td>
+<td><strong>Given</strong> cập nhật ghi chú thành công<br><strong>When</strong> áp dụng Hôm nay theo thời gian tạo<br><strong>Then</strong> ghi chú không trở thành ghi chú tạo hôm nay</td>
+<td>- Giữ owner và thời gian tạo<br>- Không dùng thời điểm sửa như filter tab Nhật Ký</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="popup-tao-va-cap-nhat-ghi-chu-lop">Popup tạo và cập nhật ghi chú lớp</h3>
+<p align="center">
+  <a href="../teacher_management/images/teacher-detail-notes-create.png"><img src="../teacher_management/images/teacher-detail-notes-create.png" alt="UI tham chiếu popup tạo Ghi chú" width="900" title="Nhấn để xem ảnh gốc"></a><br>
+  <em>Ảnh tham chiếu chức năng Ghi chú tại Chi tiết giáo viên; triển khai tương tự cho lớp học — nhấn để xem ảnh gốc</em>
+</p>
+
+<p><strong>Mô tả:</strong> Nút <code>+</code> mở popup <code>Thêm</code> giống Ghi chú giáo viên. Owner dùng cùng chức năng cập nhật ghi chú của mình; ngữ cảnh lưu luôn là lớp hiện tại.</p>
+<p><strong>Giải thích field/thành phần:</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Thành phần</th>
+<th>Yêu cầu</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Tiêu đề</td>
+<td>Bắt buộc, không giới hạn ký tự; từ chối rỗng/chỉ có khoảng trắng.</td>
+</tr>
+<tr>
+<td>Nội dung</td>
+<td>Bắt buộc, không giới hạn ký tự; cho xuống dòng/rich text như UI. Từ chối nội dung chỉ có khoảng trắng, dòng trống hoặc chỉ chứa định dạng mà không có nội dung thực.</td>
+</tr>
+<tr>
+<td>Loại</td>
+<td>Công khai/Riêng tư; tạo mới mặc định Công khai.</td>
+</tr>
+<tr>
+<td>Độ ưu tiên</td>
+<td>Bình thường/Quan trọng/Rất quan trọng; tạo mới mặc định Bình thường.</td>
+</tr>
+<tr>
+<td>Trạng thái</td>
+<td>Tạo mới mặc định Mới; đóng/mở lại theo quyền owner.</td>
+</tr>
+<tr>
+<td>Owner và lớp</td>
+<td>Tự xác định từ tài khoản đăng nhập và lớp đang mở; không cho chuyển ghi chú sang user/lớp khác khi sửa.</td>
+</tr>
+<tr>
+<td>Thêm / Xác nhận cập nhật</td>
+<td>Kiểm tra quyền, field và lưu theo cùng chức năng Ghi chú giáo viên; thành công mới thông báo/cập nhật danh sách.</td>
+</tr>
+<tr>
+<td>Hủy / Đóng chưa lưu</td>
+<td>Đóng form, không tạo/cập nhật ghi chú; không có Toast thành công.</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Điểm cần lưu ý:</strong></p>
+<ul>
+<li>Nút dấu <code>+</code> mở popup <code>Thêm</code> gồm Tiêu đề, Nội dung, Loại và Độ ưu tiên; ghi chú mới tự nhận trạng thái <code>Mới</code> và owner là người dùng hiện tại.</li>
+<li>Tạo, cập nhật, xóa, đóng/mở ghi chú và tạo, cập nhật, xóa bình luận thành công hoặc thất bại đều phải có đúng một notification kết quả theo REQ03.</li>
+<li>Xóa ghi chú phải có bước xác nhận và không được xóa dữ liệu lớp học hoặc ghi chú khác.</li>
+<li>
+<p>Request thay đổi phải chống gửi lặp; backend phải kiểm tra lại role, phạm vi, owner, trạng thái và quyền xem tại thời điểm xử lý.</p>
+</li>
+<li>
+<p>Cập nhật ghi chú giữ nguyên owner, lớp liên kết và thời gian tạo. Thay đổi Loại/Trạng thái phải có hiệu lực ngay trên quyền xem/comment.</p>
+</li>
+<li>Tiêu đề/Nội dung ghi chú và comment <strong>không có giới hạn ký tự</strong>. Không cắt chuỗi hoặc từ chối dữ liệu chỉ vì dài. Dòng mới/định dạng được giữ khi lưu và đọc lại.</li>
+<li>Editor Nội dung dùng toolbar rich text trong UI: hoàn tác/làm lại, font/kiểu chữ, đậm/nghiêng/gạch chân, màu chữ/xóa định dạng, căn lề, danh sách và thụt lề. Thao tác định dạng không tạo comment hay thay đổi quyền sở hữu.</li>
+<li>Sau sửa, hiển thị <code>Đã chỉnh sửa</code> và thời điểm cập nhật theo UI; thời gian tạo không đổi, filter Thời gian vẫn dùng thời gian tạo.</li>
+</ul>
+<h4 id="testcase-popup-tao-va-cap-nhat-ghi-chu-lop">Testcase — Popup tạo và cập nhật ghi chú lớp</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 16: Tạo ghi chú mới</td>
+<td>High</td>
+<td>Smoke</td>
+<td>Flow 3 / REQ01 / REQ03</td>
+<td>Admin / Class Handler / Support</td>
+<td>Tab Ghi chú đã tải</td>
+<td><strong>Given</strong> người dùng nhập Tiêu đề, Nội dung và chọn Loại/Độ ưu tiên hợp lệ<br><strong>When</strong> chọn <code>Thêm</code><br><strong>Then</strong> hệ thống tạo ghi chú cho đúng lớp học</td>
+<td>- Owner lấy từ tài khoản đăng nhập<br>- Trạng thái mặc định Mới<br>- Mặc định Loại Công khai và Độ ưu tiên Bình thường nếu không đổi<br>- Hiển thị đúng một notification thành công</td>
+</tr>
+<tr>
+<td>Case 17: Validation nội dung ghi chú</td>
+<td>High</td>
+<td></td>
+<td>EX02 / REQ01</td>
+<td>Admin / Class Handler / Support</td>
+<td>Form tạo/cập nhật ghi chú đang mở</td>
+<td><strong>Given</strong> Tiêu đề hoặc Nội dung ghi chú rỗng/chỉ có khoảng trắng<br><strong>When</strong> xác nhận thao tác<br><strong>Then</strong> hệ thống từ chối lưu</td>
+<td>- Hiển thị lỗi tại trường liên quan và notification thất bại<br>- Không tạo/cập nhật bản ghi không hợp lệ<br>- Giữ dữ liệu để chỉnh sửa</td>
+</tr>
+<tr>
+<td>Case 18: Owner cập nhật ghi chú</td>
+<td>High</td>
+<td></td>
+<td>Flow 3 / REQ01 / REQ03</td>
+<td>Admin / Class Handler / Support</td>
+<td>Người dùng hiện tại là owner</td>
+<td><strong>Given</strong> owner thay đổi tiêu đề, nội dung, loại hoặc độ ưu tiên<br><strong>When</strong> xác nhận cập nhật<br><strong>Then</strong> hệ thống lưu thay đổi</td>
+<td>- Không thay đổi owner hoặc thời gian tạo<br>- Quyền xem mới có hiệu lực ngay theo Loại/Trạng thái<br>- Hiển thị đúng một notification thành công</td>
+</tr>
+<tr>
+<td>Case 19: Lưu nội dung dài, xuống dòng và rich text</td>
+<td>High</td>
+<td></td>
+<td>REQ06</td>
+<td>Admin / Class Handler / Support</td>
+<td>Owner đang tạo/sửa ghi chú</td>
+<td><strong>Given</strong> Tiêu đề/Nội dung dài, có dòng mới và định dạng đậm/nghiêng/màu/căn lề theo toolbar<br><strong>When</strong> lưu rồi mở lại<br><strong>Then</strong> giữ đầy đủ text, dòng mới và định dạng đã chọn</td>
+<td>- Không giới hạn hoặc cắt ký tự<br>- Toolbar tác động đúng vùng Nội dung<br>- Nội dung chỉ có định dạng trống vẫn bị validation bắt buộc</td>
+</tr>
+<tr>
+<td>Case 20: Hiển thị Đã chỉnh sửa và timestamp theo UI</td>
+<td>High</td>
+<td></td>
+<td>REQ08</td>
+<td>Admin / Class Handler / Support</td>
+<td>Owner sửa ghi chú tạo hôm qua</td>
+<td><strong>Given</strong> cập nhật thành công hôm nay<br><strong>When</strong> xem card và filter Thời gian<br><strong>Then</strong> có thời gian cập nhật/Đã chỉnh sửa, thời gian tạo giữ nguyên</td>
+<td>- Timestamp đúng hh:mm AM/PM, dd.MM.yyyy<br>- Filter Hôm nay không lấy dòng chỉ vì vừa sửa<br>- Lưu thất bại không hiển thị cập nhật thành công</td>
+</tr>
+<tr>
+<td>Case 21: Hủy tạo/cập nhật và chặn gửi lặp</td>
+<td>High</td>
+<td></td>
+<td>Flow 3 / REQ01 / REQ03</td>
+<td>Admin / Class Handler / Support</td>
+<td>Form đang có dữ liệu hoặc đang lưu</td>
+<td><strong>Given</strong> hủy form hoặc bấm xác nhận lặp<br><strong>When</strong> xử lý thao tác<br><strong>Then</strong> hủy không lưu, cùng thao tác tạo chỉ có một ghi chú</td>
+<td>- Không có Toast thành công khi hủy<br>- Lưu lỗi giữ dữ liệu để sửa/thử lại<br>- Không đổi lớp/owner theo request giả mạo</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="xoa-ong-va-mo-lai-ghi-chu-lop">Xóa, đóng và mở lại ghi chú lớp</h3>
+<p><strong>Mô tả:</strong> Owner quản lý ghi chú của mình bằng cùng thao tác/xác nhận như Ghi chú giáo viên. Xóa ghi chú có bước xác nhận.</p>
+<p><strong>Giải thích field/thành phần:</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Thao tác</th>
+<th>Yêu cầu</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Xóa</td>
+<td>Chỉ owner; yêu cầu xác nhận trước khi <strong>xóa mềm</strong>. Bản ghi vẫn được giữ trong DB; Hủy xác nhận giữ nguyên trạng thái hoạt động.</td>
+</tr>
+<tr>
+<td>Đóng</td>
+<td>Chỉ owner; sau khi đóng chỉ owner xem được, kể cả ghi chú Công khai.</td>
+</tr>
+<tr>
+<td>Mở lại</td>
+<td>Chỉ owner; khi mở lại, quyền xem/comment áp dụng lại theo Loại.</td>
+</tr>
+<tr>
+<td>Bình luận khi Đóng</td>
+<td>Chỉ đọc đối với owner; không ai được thêm/sửa/xóa comment cho đến khi owner mở lại ghi chú.</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Điểm cần lưu ý:</strong></p>
+<ul>
+<li>Role Admin không được bỏ qua owner để quản lý ghi chú người khác. Backend kiểm tra quyền/trạng thái tại thời điểm thao tác; không xóa lớp, nhật ký hoặc ghi chú khác khi xóa ghi chú được chọn.</li>
+<li>Ghi chú và comment đều xóa mềm; dữ liệu vẫn lưu trong DB, không bị xóa vật lý. Sau khi xóa mềm không trả bản ghi qua danh sách, filter, phân trang hoặc chức năng đọc thông thường bằng ID.</li>
+<li>Xóa mềm ghi chú làm ghi chú cùng phần comment của nó không còn truy cập qua tab; dữ liệu ghi chú/comment vẫn được giữ. Xóa mềm comment chỉ ẩn đúng comment đó, cập nhật count và metadata comment cuối từ các comment chưa xóa.</li>
+<li>Xóa mềm không tự cấp quyền khôi phục hoặc xem dữ liệu đã xóa qua UI; yêu cầu audit/khôi phục chưa được chốt.</li>
+</ul>
+<h4 id="testcase-xoa-ong-va-mo-lai-ghi-chu-lop">Testcase — Xóa, đóng và mở lại ghi chú lớp</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 22: Owner xóa ghi chú</td>
+<td>High</td>
+<td>Smoke</td>
+<td>Flow 3 / REQ01 / REQ03</td>
+<td>Admin / Class Handler / Support</td>
+<td>Người dùng hiện tại là owner</td>
+<td><strong>Given</strong> owner chọn xóa ghi chú<br><strong>When</strong> xác nhận xóa<br><strong>Then</strong> hệ thống xóa đúng ghi chú</td>
+<td>- Không xóa ghi chú khác hoặc dữ liệu lớp học<br>- Không còn truy cập được ghi chú đã xóa<br>- Hiển thị đúng một notification thành công</td>
+</tr>
+<tr>
+<td>Case 23: Xóa mềm ghi chú vẫn giữ DB</td>
+<td>High</td>
+<td></td>
+<td>REQ07</td>
+<td>Admin / Class Handler / Support</td>
+<td>Owner có ghi chú kèm comment</td>
+<td><strong>Given</strong> xác nhận xóa ghi chú<br><strong>When</strong> backend thành công<br><strong>Then</strong> dữ liệu ghi chú/comment vẫn lưu trong DB nhưng không trả qua tab</td>
+<td>- Không có dòng trong danh sách/filter/count/phân trang<br>- Đọc thông thường bằng ID không trả bản ghi đã xóa<br>- Không xóa lớp hoặc dữ liệu khác</td>
+</tr>
+<tr>
+<td>Case 24: Hủy xác nhận xóa</td>
+<td>Medium</td>
+<td></td>
+<td>Flow 3 / REQ01 / REQ03</td>
+<td>Admin / Class Handler / Support</td>
+<td>Owner đã mở xác nhận xóa</td>
+<td><strong>Given</strong> chưa xác nhận xóa<br><strong>When</strong> Hủy/Đóng<br><strong>Then</strong> ghi chú giữ nguyên</td>
+<td>- Không gửi yêu cầu xóa<br>- Không có Toast thành công</td>
+</tr>
+<tr>
+<td>Case 25: Đóng/mở lại theo đúng owner và Loại</td>
+<td>High</td>
+<td></td>
+<td>Flow 3 / REQ01</td>
+<td>Admin / Class Handler / Support</td>
+<td>Có ghi chú Công khai hoặc Riêng tư đang Mới</td>
+<td><strong>Given</strong> owner đóng ghi chú<br><strong>When</strong> người khác truy cập rồi owner mở lại<br><strong>Then</strong> khi Đóng chỉ owner xem, khi Mới áp dụng lại quyền theo Loại</td>
+<td>- Người khác không đóng/mở bằng request trực tiếp<br>- Đóng không cho comment<br>- Mỗi thao tác có một notification kết quả</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="binh-luan-ghi-chu-lop">Bình luận ghi chú lớp</h3>
+<p align="center">
+  <a href="./images/32-class-detail-notes.png"><img src="./images/32-class-detail-notes.png" alt="Chi tiết lớp học — Menu Nhật ký — Tab Ghi Chú" width="900" title="Nhấn để xem ảnh gốc"></a><br>
+  <em>Khu vực mở/ẩn bình luận và ô nhập bình luận theo UI Ghi Chú lớp — nhấn để xem ảnh gốc</em>
+</p>
+
+<p><strong>Mô tả:</strong> Người có quyền xem ghi chú đang Mới được bình luận. Chức năng bình luận giống Ghi chú giáo viên và gắn vào đúng ghi chú của lớp đang xem.</p>
+<p><strong>Giải thích field/thành phần:</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Thành phần</th>
+<th>Yêu cầu</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Ô bình luận</td>
+<td>Nội dung bắt buộc, không giới hạn ký tự, hỗ trợ xuống dòng; placeholder <code>Nhập bình luận của bạn</code>, nút gửi icon mũi tên như UI. Chỉ gửi khi ghi chú đang Mới và user có quyền xem.</td>
+</tr>
+<tr>
+<td>Danh sách bình luận</td>
+<td>Mỗi comment là card có avatar, tên người tạo, Nội dung và timestamp <code>hh:mm AM/PM, dd.MM.yyyy</code>, ví dụ <code>10:15 AM, 01.07.2024</code>, như UI.</td>
+</tr>
+<tr>
+<td>Trả lời</td>
+<td>Bấm <code>Trả lời</code> tại một comment để đưa con trỏ vào ô <code>Nhập bình luận của bạn</code> của chính ghi chú đó. Nhập và gửi như một bình luận thông thường trong cùng danh sách; không tạo luồng con. Áp dụng cùng quyền/trạng thái như thêm bình luận.</td>
+</tr>
+<tr>
+<td>Sửa/xóa</td>
+<td>Chỉ người tạo comment và ghi chú còn Mới được thao tác trên comment của mình. Xóa dùng icon thùng rác như UI và là xóa mềm.</td>
+</tr>
+<tr>
+<td>Mở/ẩn bình luận</td>
+<td><code>N bình luận</code> và <code>Ẩn bình luận</code> theo UI; count chỉ tính comment chưa xóa mềm.</td>
+</tr>
+<tr>
+<td>Comment cuối trên card</td>
+<td>Avatar/thời gian của comment mới nhất chưa xóa mềm theo thời gian tạo comment.</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Điểm cần lưu ý:</strong></p>
+<ul>
+<li>Ghi chú đang <code>Mới</code> cho phép những người có quyền xem thêm bình luận.</li>
+<li><code>Trả lời</code> dùng ô bình luận hiện tại của ghi chú; chỉ tập trung ô nhập, không tự gửi hay xóa nội dung đang nhập. Bình luận gửi từ đây có cùng quyền, validation, count và metadata như bình luận thông thường.</li>
+<li>Ghi chú đang <code>Đóng</code> không cho bất kỳ người dùng nào thêm, sửa hoặc xóa bình luận; owner phải mở lại ghi chú trước khi thao tác với bình luận.</li>
+<li>Mỗi bình luận hiển thị avatar, tên người comment và thời gian tạo theo <code>hh:mm AM/PM, dd.MM.yyyy</code> như ảnh; cùng múi giờ hiển thị dùng chung của hệ thống.</li>
+<li>Chỉ người tạo bình luận được sửa hoặc xóa bình luận của mình.</li>
+<li>Owner ghi chú không được sửa hoặc xóa bình luận của người khác.</li>
+<li>Sửa bình luận giữ nguyên người tạo/thời gian tạo; hiển thị thời gian cập nhật và nhãn <code>Đã chỉnh sửa</code>. Metadata comment cuối vẫn xác định theo thời gian <strong>tạo</strong> comment chưa xóa, không chuyển sang một comment cũ chỉ vì comment đó vừa sửa.</li>
+<li>Comment mới nhất được xác định theo thời gian tạo comment. Avatar và thời gian ở bên phải card phải cập nhật theo comment mới nhất chưa xóa mềm.</li>
+<li>
+<p>Nếu comment mới nhất bị xóa, metadata bên phải phải quay về comment mới nhất chưa xóa còn lại; nếu không còn comment thì không hiển thị avatar/thời gian comment cuối.</p>
+</li>
+<li>
+<p>Số lượng comment, danh sách comment và metadata cuối phải thuộc đúng ghi chú/lớp; kiểm tra lại trạng thái/quyền khi gửi request.</p>
+</li>
+</ul>
+<h4 id="testcase-binh-luan-ghi-chu-lop">Testcase — Bình luận ghi chú lớp</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 26: Thêm comment vào ghi chú đang Mới</td>
+<td>High</td>
+<td></td>
+<td>Flow 2 / REQ02 / REQ03</td>
+<td>Admin / Class Handler / Support</td>
+<td>Người dùng được xem ghi chú đang Mới</td>
+<td><strong>Given</strong> người dùng nhập comment hợp lệ<br><strong>When</strong> gửi comment<br><strong>Then</strong> hệ thống thêm comment</td>
+<td>- Hiển thị đúng người, ngày, tháng, năm và thời gian<br>- Số lượng comment tăng<br>- Metadata comment cuối bên phải cập nhật avatar và thời gian mới<br>- Hiển thị đúng một notification thành công</td>
+</tr>
+<tr>
+<td>Case 27: Người comment sửa/xóa comment của mình</td>
+<td>High</td>
+<td></td>
+<td>Flow 2 / REQ02 / REQ03</td>
+<td>Admin / Class Handler / Support</td>
+<td>Người dùng là người tạo comment và ghi chú đang Mới</td>
+<td><strong>Given</strong> người dùng chọn sửa hoặc xóa comment của mình<br><strong>When</strong> xác nhận thao tác<br><strong>Then</strong> hệ thống cập nhật đúng comment</td>
+<td>- Không thay đổi comment khác<br>- Metadata comment cuối được tính lại nếu cần<br>- Hiển thị đúng một notification kết quả</td>
+</tr>
+<tr>
+<td>Case 28: Owner ghi chú không được xóa comment người khác</td>
+<td>High</td>
+<td></td>
+<td>EX04 / REQ02</td>
+<td>Admin / Class Handler / Support</td>
+<td>Owner ghi chú không phải người tạo comment</td>
+<td><strong>Given</strong> owner xem comment của người khác<br><strong>When</strong> kiểm tra UI hoặc gọi API sửa/xóa comment<br><strong>Then</strong> hệ thống từ chối</td>
+<td>- Không hiển thị thao tác sửa/xóa comment đó<br>- Backend từ chối request<br>- Comment không thay đổi</td>
+</tr>
+<tr>
+<td>Case 29: Ghi chú Đóng chặn mọi thao tác comment</td>
+<td>High</td>
+<td></td>
+<td>EX05 / REQ02</td>
+<td>Admin / Class Handler / Support</td>
+<td>Ghi chú đang Đóng và có comment cũ</td>
+<td><strong>Given</strong> owner đang xem ghi chú Đóng<br><strong>When</strong> thử thêm/sửa/xóa comment<br><strong>Then</strong> hệ thống từ chối cho đến khi ghi chú được mở lại</td>
+<td>- Comment cũ chỉ đọc<br>- Không có dữ liệu comment bị thay đổi<br>- API trực tiếp cũng bị từ chối</td>
+</tr>
+<tr>
+<td>Case 30: Validation comment rỗng</td>
+<td>High</td>
+<td></td>
+<td>EX02 / REQ02</td>
+<td>Admin / Class Handler / Support</td>
+<td>Ghi chú đang Mới và user có quyền xem</td>
+<td><strong>Given</strong> Nội dung comment rỗng/chỉ có khoảng trắng<br><strong>When</strong> gửi hoặc cập nhật<br><strong>Then</strong> từ chối lưu</td>
+<td>- Báo lỗi tại ô comment và notification thất bại<br>- Không đổi số lượng hoặc metadata cuối</td>
+</tr>
+<tr>
+<td>Case 31: Xóa comment cuối và tính lại metadata</td>
+<td>High</td>
+<td></td>
+<td>Flow 2 / REQ02</td>
+<td>Admin / Class Handler / Support</td>
+<td>User là người tạo comment cuối, ghi chú đang Mới</td>
+<td><strong>Given</strong> xóa comment cuối của mình<br><strong>When</strong> thao tác thành công<br><strong>Then</strong> avatar/thời gian bên phải chuyển về comment mới nhất chưa xóa còn lại</td>
+<td>- Số lượng comment giảm đúng<br>- Nếu không còn comment thì không hiển thị metadata cuối</td>
+</tr>
+<tr>
+<td>Case 32: Comment dài/xuống dòng và xóa mềm</td>
+<td>High</td>
+<td></td>
+<td>REQ06 / REQ07</td>
+<td>Admin / Class Handler / Support</td>
+<td>User có quyền comment và ghi chú đang Mới</td>
+<td><strong>Given</strong> nhập comment dài, có nhiều dòng rồi xóa comment của mình<br><strong>When</strong> gửi/tải lại và xóa thành công<br><strong>Then</strong> giữ text/dòng mới khi còn hoạt động, sau xóa vẫn lưu bản ghi trong DB</td>
+<td>- Không giới hạn ký tự<br>- Comment đã xóa không xuất hiện hoặc tính trong count<br>- Metadata cuối bỏ qua comment xóa mềm</td>
+</tr>
+<tr>
+<td>Case 33: Sửa comment giữ metadata theo thời gian tạo</td>
+<td>High</td>
+<td></td>
+<td>REQ08</td>
+<td>Admin / Class Handler / Support</td>
+<td>A là comment cũ, B là comment tạo sau; user sở hữu A</td>
+<td><strong>Given</strong> sửa A thành công<br><strong>When</strong> xem A và metadata comment cuối<br><strong>Then</strong> A có thời gian cập nhật/Đã chỉnh sửa, metadata cuối vẫn theo B</td>
+<td>- Không đổi thời gian tạo A<br>- Timestamp đúng UI<br>- Owner ghi chú không được sửa A nếu không phải người viết</td>
+</tr>
+<tr>
+<td>Case 34: Trả lời bằng ô bình luận hiện tại</td>
+<td>High</td>
+<td></td>
+<td>Flow 2 / REQ02</td>
+<td>Admin / Class Handler / Support</td>
+<td>Ghi chú đang Mới, user có quyền xem và có comment</td>
+<td><strong>Given</strong> user bấm Trả lời tại một comment<br><strong>When</strong> nhập nội dung trong ô bình luận của ghi chú và gửi<br><strong>Then</strong> tạo một bình luận thông thường trong danh sách hiện tại</td>
+<td>- Focus đúng ô của ghi chú, giữ nội dung đang nhập<br>- Không tạo luồng con hoặc tự gửi lúc bấm Trả lời<br>- Count/metadata cuối cập nhật sau gửi thành công<br>- Ghi chú Đóng chặn gửi như bình thường</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="toast-phan-hoi-crud">Toast phản hồi CRUD</h3>
+<p align="center">
+  <a href="../../images/01-toast-crud.png"><img src="../../images/01-toast-crud.png" alt="Bốn trạng thái Toast CRUD" width="520" title="Nhấn để xem ảnh gốc"></a><br>
+  <em>Phản hồi ghi chú và bình luận — nhấn để xem ảnh gốc</em>
+</p>
+
+<p><strong>Mô tả:</strong> Kế thừa notification của Ghi chú giáo viên: tạo/cập nhật/xóa/đóng/mở ghi chú và tạo/cập nhật/xóa comment đều có đúng một notification thành công/thất bại.</p>
+<p><strong>Giải thích field/thành phần:</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Loại</th>
+<th>Tiêu đề</th>
+<th>Khi sử dụng</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Thành công</td>
+<td>Thành Công</td>
+<td>Sau khi backend xác nhận thao tác được lưu thành công.</td>
+</tr>
+<tr>
+<td>Thông tin</td>
+<td>Thông Báo</td>
+<td>Nếu chức năng nguồn có trạng thái tiếp nhận nhưng đang đồng bộ.</td>
+</tr>
+<tr>
+<td>Cảnh báo</td>
+<td>Cảnh Báo</td>
+<td>Dữ liệu chưa hợp lệ; đánh dấu đúng field liên quan.</td>
+</tr>
+<tr>
+<td>Lỗi</td>
+<td>Có Lỗi Xảy Ra</td>
+<td>Backend/network hoặc quyền không cho phép hoàn tất thao tác.</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Điểm cần lưu ý:</strong></p>
+<ul>
+<li>Màu, icon, nền, tiêu đề và nút <code>×</code> theo ảnh Toast chuẩn; vị trí và thời gian tự đóng/đóng thủ công dùng cùng Toast UI của chức năng Ghi chú giáo viên, không tạo cơ chế riêng cho lớp.</li>
+<li>Mỗi thao tác chỉ có một notification kết quả. Không có Toast CRUD khi chỉ đọc, filter, phân trang, mở/ẩn comment hay Hủy. Notification không chứa token/stack trace hoặc dữ liệu ngoài quyền.</li>
+<li>Nội dung dòng hai dùng ngữ cảnh ghi chú lớp/comment theo bảng dưới; không dùng câu chữ thao tác dữ liệu giáo viên.</li>
+</ul>
+<p><strong>Nội dung notification:</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Thao tác</th>
+<th>Thành công</th>
+<th>Thất bại</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Tạo ghi chú</td>
+<td><code>Đã thêm ghi chú lớp.</code></td>
+<td><code>Không thể thêm ghi chú lớp. Vui lòng thử lại.</code></td>
+</tr>
+<tr>
+<td>Cập nhật ghi chú</td>
+<td><code>Đã cập nhật ghi chú lớp.</code></td>
+<td><code>Không thể cập nhật ghi chú lớp. Vui lòng thử lại.</code></td>
+</tr>
+<tr>
+<td>Xóa ghi chú</td>
+<td><code>Đã xóa ghi chú lớp.</code></td>
+<td><code>Không thể xóa ghi chú lớp. Vui lòng thử lại.</code></td>
+</tr>
+<tr>
+<td>Đóng ghi chú</td>
+<td><code>Đã đóng ghi chú lớp.</code></td>
+<td><code>Không thể đóng ghi chú lớp. Vui lòng thử lại.</code></td>
+</tr>
+<tr>
+<td>Mở lại ghi chú</td>
+<td><code>Đã mở lại ghi chú lớp.</code></td>
+<td><code>Không thể mở lại ghi chú lớp. Vui lòng thử lại.</code></td>
+</tr>
+<tr>
+<td>Tạo comment</td>
+<td><code>Đã thêm bình luận.</code></td>
+<td><code>Không thể thêm bình luận. Vui lòng thử lại.</code></td>
+</tr>
+<tr>
+<td>Cập nhật comment</td>
+<td><code>Đã cập nhật bình luận.</code></td>
+<td><code>Không thể cập nhật bình luận. Vui lòng thử lại.</code></td>
+</tr>
+<tr>
+<td>Xóa comment</td>
+<td><code>Đã xóa bình luận.</code></td>
+<td><code>Không thể xóa bình luận. Vui lòng thử lại.</code></td>
+</tr>
+</tbody>
+</table></div>
+<ul>
+<li>Validation nêu đúng field: <code>Vui lòng nhập tiêu đề ghi chú.</code>, <code>Vui lòng nhập nội dung ghi chú.</code> hoặc <code>Vui lòng nhập nội dung bình luận.</code></li>
+<li>Thiếu quyền: <code>Bạn không có quyền thực hiện thao tác này.</code>; không hiện Toast thành công.</li>
+</ul>
+<h4 id="testcase-toast-phan-hoi-crud">Testcase — Toast phản hồi CRUD</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Toast Case 1: Kết quả lưu ghi chú/comment</td>
+<td>High</td>
+<td></td>
+<td>REQ03</td>
+<td>Admin / Class Handler / Support</td>
+<td>Thao tác có quyền và dữ liệu hợp lệ</td>
+<td><strong>Given</strong> tạo/sửa/xóa/đóng/mở ghi chú hoặc CUD comment<br><strong>When</strong> backend trả thành công/thất bại<br><strong>Then</strong> hiển thị đúng một notification tương ứng</td>
+<td>- Không báo thành công trước khi lưu<br>- Đúng ngữ cảnh ghi chú lớp/comment</td>
+</tr>
+<tr>
+<td>Toast Case 2: Validation và thao tác chỉ đọc</td>
+<td>High</td>
+<td></td>
+<td>EX02 / REQ03</td>
+<td>Admin / Class Handler / Support</td>
+<td>Form thiếu field hoặc user đang filter/phân trang/Hủy</td>
+<td><strong>Given</strong> kiểm tra validation hoặc thao tác không lưu<br><strong>When</strong> hệ thống phản hồi<br><strong>Then</strong> lỗi field có thông báo phù hợp; chỉ đọc/Hủy không có Toast CRUD</td>
+<td>- Không lưu dữ liệu rỗng<br>- Không tạo Toast trùng khi callback/gửi request lặp</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="2-yeu-cau">2. Yêu cầu</h2>
+<h3 id="21-flow-chinh">2.1. Flow chính</h3>
+<p><strong>Flow 1 / REQ01 / REQ04: Xem và lọc ghi chú lớp</strong></p>
+<pre><code class="language-text">Admin, Class Handler hoặc Support mở Chi tiết lớp → Nhật ký → Ghi Chú
+      → Xác định lớp hiện tại và quyền trong phạm vi lớp
+      → Áp dụng quyền owner/Loại/Trạng thái trước khi trả dữ liệu
+      → Mặc định Hôm nay theo thời gian tạo; kết hợp Loại, Độ ưu tiên, Trạng thái, Thời gian
+      → Mỗi trang tối đa 10 ghi chú được phép xem; giữ filter khi chuyển trang, đổi filter về trang đầu
+      → Hiển thị metadata ghi chú và comment cuối như Ghi chú giáo viên
+</code></pre>
+<p><strong>Flow 2 / REQ02 / REQ03 / REQ04: Bình luận ghi chú lớp</strong></p>
+<pre><code class="language-text">Người dùng mở bình luận của ghi chú đang Mới và có quyền xem trong lớp hiện tại
+      → Hiển thị đúng comment, người tạo và thời gian
+      → Bấm Trả lời tại comment để focus ô bình luận hiện tại, nhập như bình thường
+      → Gửi comment hợp lệ vào cùng danh sách; cập nhật count và metadata comment cuối
+      → Chỉ người tạo comment sửa/xóa comment của mình khi ghi chú còn Mới
+      → Ghi chú Đóng chặn mọi thao tác comment; chỉ owner ghi chú còn xem được
+      → Xóa comment cuối thì tính lại metadata từ comment mới nhất chưa xóa còn lại
+      → Thao tác lưu có đúng một notification thành công/thất bại
+</code></pre>
+<p><strong>Flow 3 / REQ01 / REQ03 / REQ04: Tạo và quản lý ghi chú lớp</strong></p>
+<pre><code class="language-text">Admin, Class Handler hoặc Support có quyền trên lớp bấm +
+      → Popup nhập Tiêu đề, Nội dung, Loại, Độ ưu tiên giống Ghi chú giáo viên
+      → Kiểm tra dữ liệu bắt buộc và quyền; tự lấy owner, lớp hiện tại, trạng thái Mới
+      → Lưu thành công: hiển thị ghi chú đúng lớp, về trang đầu và một notification thành công
+      → Owner có thể sửa/xóa mềm/đóng/mở lại ghi chú của mình; xóa có xác nhận
+      → Cập nhật giữ nguyên owner/lớp/thời gian tạo; hiển thị thời gian cập nhật và Đã chỉnh sửa
+      → Quyền xem/comment đổi theo Loại/Trạng thái; xóa mềm vẫn giữ dữ liệu trong DB
+      → Lỗi không lưu dữ liệu sai; Hủy không thay đổi dữ liệu
+</code></pre>
+<h3 id="22-ngoai-le">2.2. Ngoại lệ</h3>
+<ul>
+<li><strong>EX01:</strong> Người không phải owner truy cập ghi chú Riêng tư hoặc Đóng qua danh sách/filter/ID → không trả nội dung, metadata hoặc số lượng ngoài quyền.</li>
+<li><strong>EX02:</strong> Tiêu đề/Nội dung ghi chú hoặc Nội dung comment rỗng/chỉ có khoảng trắng → từ chối lưu, lỗi field và notification thất bại.</li>
+<li><strong>EX03:</strong> Người không phải owner gửi request sửa/xóa/đóng/mở ghi chú → từ chối, giữ nguyên dữ liệu.</li>
+<li><strong>EX04:</strong> User sửa/xóa comment người khác, kể cả owner ghi chú → từ chối, giữ nguyên comment.</li>
+<li><strong>EX05:</strong> Tạo/sửa/xóa comment khi ghi chú Đóng → từ chối cho đến khi owner mở lại.</li>
+<li><strong>EX06:</strong> Tải danh sách/trang lỗi → hiển thị lỗi, cho thử lại, không coi lỗi là danh sách rỗng.</li>
+<li><strong>EX07:</strong> Chuyển lớp/trang/filter khi request cũ chưa xong → chỉ response đúng lớp và điều kiện mới nhất được cập nhật.</li>
+<li><strong>EX08:</strong> Truy cập/thao tác ghi chú/comment sai lớp hoặc ngoài phạm vi → từ chối kể cả biết ID; không đổi lớp/owner theo request giả mạo.</li>
+<li><strong>EX09:</strong> Khoảng ngày Tùy chọn có ngày bắt đầu sau ngày kết thúc → không áp dụng, giữ điều kiện hợp lệ trước đó và cho chỉnh lại.</li>
+</ul>
+<h3 id="23-yeu-cau-khac">2.3. Yêu cầu khác</h3>
+<ul>
+<li><strong>REQ01 – Ghi chú lớp:</strong> Kế thừa đầy đủ chức năng Ghi chú giáo viên, áp dụng cho lớp hiện tại: Admin/Class Handler/Support được tạo và xem Công khai + Mới; Riêng tư hoặc Đóng chỉ owner xem. Owner quản lý ghi chú của mình. Tiêu đề/Nội dung bắt buộc; mặc định Công khai, Bình thường, Mới. Filter thời gian tạo mặc định Hôm nay, đủ 12 khoảng như nguồn; sắp xếp mới tạo trước và phân trang tối đa 10 ghi chú được phép xem/trang.</li>
+<li><strong>REQ02 – Bình luận:</strong> Nút Trả lời dùng ô bình luận hiện tại, gửi bình luận thông thường cùng danh sách, không tạo luồng con. Người được xem ghi chú Mới được comment; Đóng chặn mọi thao tác comment. Chỉ người viết comment sửa/xóa comment của mình. Metadata cuối xác định bằng comment mới nhất chưa xóa mềm theo thời gian tạo; không nhầm với owner ghi chú.</li>
+<li><strong>REQ03 – Notification:</strong> Mọi CUD ghi chú/comment và đóng/mở ghi chú có đúng một notification kết quả theo chức năng nguồn; chỉ hiển thị thành công khi backend đã lưu.</li>
+<li><strong>REQ04 – Đối tượng lớp:</strong> Ghi chú liên kết lớp, comment liên kết đúng ghi chú của lớp. Thay đối tượng từ giáo viên sang lớp không thay owner, quyền riêng tư, validation, bộ lọc, phân trang hoặc chức năng bình luận. Không trộn/sao chép tự động ghi chú giáo viên vào lớp hoặc giữa các lớp.</li>
+<li><strong>REQ05 – Kế thừa nguồn và xác nhận:</strong> Chức năng kế thừa <a href="../teacher_management/teacher_detail_requirements.md#tab-ghi-chu">Tab Ghi chú — Chi tiết giáo viên</a>; UI Ghi Chú lớp và các xác nhận trong tài liệu này là nguồn cụ thể để triển khai lớp. Không dùng danh sách điểm chưa chốt cũ để phủ nhận các điểm đã xác nhận ở đây.</li>
+<li><strong>REQ06 – Nội dung và định dạng:</strong> Tiêu đề/Nội dung ghi chú và comment không giới hạn ký tự; cho xuống dòng, Nội dung ghi chú hỗ trợ rich text theo toolbar UI. Validation bắt buộc kiểm tra nội dung thực, không coi định dạng trống là nội dung hợp lệ.</li>
+<li><strong>REQ07 – Xóa mềm:</strong> Xóa ghi chú/comment chỉ đánh dấu xóa, vẫn lưu dữ liệu trong DB. Loại bản ghi đã xóa khỏi chức năng đọc thông thường, danh sách/filter/count/phân trang và metadata comment cuối; không xóa vật lý hay tự tạo chức năng khôi phục.</li>
+<li><strong>REQ08 – Timestamp và chỉnh sửa:</strong> Ghi chú/comment hiển thị <code>hh:mm AM/PM, dd.MM.yyyy</code> như UI. Sửa giữ thời gian tạo, có thời gian cập nhật/Đã chỉnh sửa; filter dùng thời gian tạo. Metadata comment cuối lấy theo thời gian tạo của comment chưa xóa mềm.</li>
+<li><strong>REQ09 – Filter nhiều giá trị:</strong> Loại/Độ ưu tiên/Trạng thái cho chọn một hoặc nhiều; OR trong cùng filter, AND giữa các filter. Phân trang tối đa 10 ghi chú chưa xóa và có quyền xem/trang, không làm lộ dữ liệu ngoài quyền.</li>
+</ul>
+<h3 id="24-rang-buoc">2.4. Ràng buộc</h3>
+<h4 id="quyen">Quyền</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Role</th>
+<th style="text-align: center;">Xem Công khai + Mới</th>
+<th style="text-align: center;">Xem Riêng tư/Đóng của mình</th>
+<th style="text-align: center;">Xem Riêng tư/Đóng người khác</th>
+<th style="text-align: center;">Tạo ghi chú</th>
+<th style="text-align: center;">Quản lý ghi chú của mình</th>
+<th style="text-align: center;">Quản lý ghi chú người khác</th>
+<th style="text-align: center;">Comment ghi chú được xem + Mới</th>
+<th style="text-align: center;">Sửa/Xóa comment của mình</th>
+<th style="text-align: center;">Sửa/Xóa comment người khác</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Admin</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">❌</td>
+</tr>
+<tr>
+<td>Class Handler</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">❌</td>
+</tr>
+<tr>
+<td>Support</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">❌</td>
+</tr>
+<tr>
+<td>Các role khác</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+</tr>
+</tbody>
+</table></div>
+<ul>
+<li>Bảng quyền chỉ áp dụng trong phạm vi lớp được phân quyền và ghi chú người dùng có quyền xem; không cấp quyền ngoài lớp.</li>
+<li>Quyền quản lý ghi chú của mình gồm sửa/xóa/đóng/mở lại. Sửa/xóa comment của mình chỉ được khi ghi chú đang Mới; Đóng chặn cả owner ghi chú.</li>
+<li>Admin không được vượt qua owner để xem ghi chú Riêng tư/Đóng hoặc quản lý ghi chú/comment người khác.</li>
+</ul>
+<h4 id="pham-vi-du-lieu">Phạm vi dữ liệu</h4>
+<ul>
+<li>Dùng định danh nội bộ của lớp/ghi chú/comment và danh tính đã xác thực; không dùng mã lớp hoặc tên hiển thị làm khóa sở hữu/liên kết.</li>
+<li>Backend áp dụng quyền riêng tư, trạng thái và phạm vi trước khi trả dữ liệu và kiểm tra lại lúc lưu. Filter, tổng số, metadata và phân trang không được làm lộ ghi chú ngoài quyền.</li>
+<li>Response chỉ cập nhật đúng lớp/tab/trang/filter hiện tại. Không chuyển ghi chú hoặc comment sang lớp khác khi sửa.</li>
+<li>Thao tác ghi chú không tạo log Thêm Học Viên/Thêm Học Phí, không thay thế nhật ký viết tay dùng cho Follow và không làm thay đổi dữ liệu lớp/giáo viên/học viên.</li>
+</ul>
+<h2 id="3-can-xac-nhan">3. Cần xác nhận</h2>
+<ul>
+<li>Xóa mềm và giữ DB đã chốt; chưa có yêu cầu bổ sung UI khôi phục hoặc lịch sử audit.</li>
+</ul>
+</article>
+    <p class="source-note">Nguồn: class_detail_notes_requirements.md · SHA-256 570c0977a8069d2ccfe30372aa8ef7b89779ae4f6593acbe77ff8dcede5deded</p>
+  </main>
+  <script>
+    const article = document.getElementById('document');
+    const nav = document.getElementById('docNav');
+    const headings = [...article.querySelectorAll('h2')];
+    headings.forEach((heading, index) => {
+      const link = document.createElement('a');
+      link.href = `#${heading.id}`;
+      const number = document.createElement('span');
+      number.className = 'nav-num';
+      number.textContent = String(index + 1).padStart(2, '0');
+      link.append(number, document.createTextNode(heading.textContent));
+      nav.append(link);
+    });
+
+    const navLinks = [...nav.querySelectorAll('a')];
+    const observer = new IntersectionObserver(entries => {
+      const current = entries.filter(item => item.isIntersecting).sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
+      if (!current) return;
+      navLinks.forEach(link => link.classList.toggle('active', link.hash === `#${current.target.id}`));
+    }, {rootMargin: '-18% 0px -68% 0px', threshold: [0, .2, .5]});
+    headings.forEach(heading => observer.observe(heading));
+    if (navLinks[0]) navLinks[0].classList.add('active');
+
+    const testcaseHeadings = [...article.querySelectorAll('h4, h5')]
+      .filter(heading => heading.textContent.trim().startsWith('Testcase'));
+    const testcaseGroups = testcaseHeadings
+      .map(heading => ({heading, tableWrap: heading.nextElementSibling}))
+      .filter(group => group.tableWrap?.classList.contains('table-wrap'));
+    if (testcaseGroups.length) {
+        const tableWraps = testcaseGroups.map(group => group.tableWrap);
+        tableWraps.forEach(tableWrap => tableWrap.classList.add('testcase-table'));
+        const rows = tableWraps.flatMap(tableWrap => [...tableWrap.querySelectorAll('tbody tr')]);
+        const tools = document.createElement('div');
+        tools.className = 'case-tools';
+        const input = document.createElement('input');
+        input.type = 'search';
+        input.placeholder = 'Tìm testcase, Flow, REQ, EX hoặc nội dung…';
+        input.setAttribute('aria-label', 'Tìm testcase');
+        const count = document.createElement('span');
+        count.className = 'case-count';
+        tools.append(input, count);
+        testcaseGroups[0].heading.before(tools);
+        const filterRows = () => {
+          const query = input.value.trim().toLocaleLowerCase('vi');
+          let visible = 0;
+          rows.forEach(row => {
+            const match = !query || row.textContent.toLocaleLowerCase('vi').includes(query);
+            row.hidden = !match;
+            if (match) visible += 1;
+          });
+          testcaseGroups.forEach(({heading, tableWrap}) => {
+            const hasVisibleRow = [...tableWrap.querySelectorAll('tbody tr')]
+              .some(row => !row.hidden);
+            heading.hidden = !hasVisibleRow;
+            tableWrap.hidden = !hasVisibleRow;
+          });
+          count.textContent = `${visible}/${rows.length} testcase`;
+        };
+        input.addEventListener('input', filterRows);
+        filterRows();
+    }
+  </script>
+</body>
+</html>

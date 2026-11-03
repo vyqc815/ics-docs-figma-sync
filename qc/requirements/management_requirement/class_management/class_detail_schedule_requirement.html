@@ -1,0 +1,1998 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Requirement Chi tiết lớp học — Lịch dạy">
+  <link rel="icon" href="data:,">
+  <title>Chi tiết lớp học — Lịch dạy — Requirement</title>
+  <style>
+    :root {
+      --orange-700: #c83f00;
+      --orange-600: #e84c00;
+      --orange-500: #f45b0a;
+      --orange-400: #ff7a32;
+      --orange-100: #fff0e8;
+      --orange-50: #fff8f4;
+      --navy-950: #101828;
+      --navy-900: #172033;
+      --navy-800: #243047;
+      --slate-700: #344054;
+      --slate-600: #475467;
+      --slate-500: #667085;
+      --slate-400: #98a2b3;
+      --slate-300: #d0d5dd;
+      --slate-200: #e4e7ec;
+      --slate-100: #f2f4f7;
+      --slate-50: #f8fafc;
+      --white: #ffffff;
+      --green: #159447;
+      --blue: #2154c5;
+      --yellow: #b77900;
+      --red: #c92a2a;
+      --purple: #6941c6;
+      --shadow-sm: 0 1px 2px rgba(16, 24, 40, .06);
+      --shadow-md: 0 12px 32px rgba(16, 24, 40, .10);
+      --shadow-lg: 0 24px 64px rgba(16, 24, 40, .16);
+      --radius-sm: 10px;
+      --radius: 16px;
+      --radius-lg: 24px;
+      --sidebar: 286px;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      color: var(--navy-950);
+      background:
+        radial-gradient(circle at 88% 5%, rgba(244, 91, 10, .10), transparent 24rem),
+        var(--slate-50);
+      font: 15px/1.65 Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      text-rendering: optimizeLegibility;
+    }
+    a { color: inherit; }
+    img { max-width: 100%; }
+    button, input, select { font: inherit; }
+    code {
+      padding: .12rem .38rem;
+      border: 1px solid #fed7c3;
+      border-radius: 6px;
+      color: var(--orange-700);
+      background: var(--orange-50);
+      font: 600 .9em ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    }
+
+    .skip-link {
+      position: fixed;
+      z-index: 999;
+      top: 12px;
+      left: 12px;
+      padding: 10px 14px;
+      border-radius: 9px;
+      color: var(--white);
+      background: var(--navy-950);
+      transform: translateY(-150%);
+    }
+    .skip-link:focus { transform: none; }
+
+    .sidebar {
+      position: fixed;
+      z-index: 30;
+      inset: 0 auto 0 0;
+      width: var(--sidebar);
+      padding: 22px 18px;
+      overflow-y: auto;
+      color: #f8fafc;
+      background:
+        linear-gradient(155deg, rgba(255, 122, 50, .24), transparent 26%),
+        linear-gradient(180deg, #192338 0%, #111827 100%);
+      border-right: 1px solid rgba(255, 255, 255, .08);
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 4px 8px 22px;
+      border-bottom: 1px solid rgba(255, 255, 255, .10);
+    }
+    .brand-mark {
+      display: grid;
+      width: 44px;
+      height: 44px;
+      place-items: center;
+      border-radius: 14px;
+      color: var(--white);
+      background: linear-gradient(135deg, var(--orange-400), var(--orange-600));
+      box-shadow: 0 10px 26px rgba(244, 91, 10, .35);
+      font-weight: 900;
+      letter-spacing: -.06em;
+    }
+    .brand strong { display: block; font-size: 16px; }
+    .brand small { color: #aeb8c9; }
+    .nav-title {
+      margin: 24px 10px 8px;
+      color: #8f9aae;
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+    .nav { display: grid; gap: 4px; }
+    .nav a {
+      display: flex;
+      align-items: center;
+      gap: 11px;
+      padding: 10px 12px;
+      border-radius: 10px;
+      color: #cbd5e1;
+      text-decoration: none;
+      transition: .18s ease;
+    }
+    .nav a:hover, .nav a.active {
+      color: var(--white);
+      background: rgba(255, 255, 255, .09);
+    }
+    .nav a.active { box-shadow: inset 3px 0 var(--orange-400); }
+    .nav-num {
+      display: grid;
+      width: 25px;
+      height: 25px;
+      flex: 0 0 auto;
+      place-items: center;
+      border: 1px solid rgba(255, 255, 255, .15);
+      border-radius: 8px;
+      font-size: 11px;
+      font-weight: 800;
+    }
+    .sidebar-footer {
+      margin-top: 26px;
+      padding: 14px;
+      border: 1px solid rgba(255, 255, 255, .10);
+      border-radius: 14px;
+      color: #aeb8c9;
+      background: rgba(255, 255, 255, .04);
+      font-size: 12px;
+    }
+    .sidebar-footer a { color: #ffd8c5; }
+
+    main {
+      width: min(1500px, calc(100% - var(--sidebar)));
+      margin-left: var(--sidebar);
+      padding: 34px clamp(24px, 4vw, 64px) 80px;
+    }
+    section { scroll-margin-top: 24px; }
+    .hero {
+      position: relative;
+      padding: clamp(30px, 5vw, 56px);
+      overflow: hidden;
+      border: 1px solid rgba(255, 255, 255, .08);
+      border-radius: var(--radius-lg);
+      color: var(--white);
+      background:
+        linear-gradient(105deg, rgba(16, 24, 40, .97) 0%, rgba(23, 32, 51, .94) 62%, rgba(109, 45, 9, .90) 100%);
+      box-shadow: var(--shadow-lg);
+    }
+    .hero::after {
+      content: "";
+      position: absolute;
+      width: 360px;
+      height: 360px;
+      top: -190px;
+      right: -80px;
+      border: 70px solid rgba(255, 122, 50, .15);
+      border-radius: 50%;
+    }
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 10px;
+      border: 1px solid rgba(255, 255, 255, .15);
+      border-radius: 999px;
+      color: #ffd8c5;
+      background: rgba(255, 255, 255, .06);
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+    .hero h1 {
+      max-width: 900px;
+      margin: 18px 0 12px;
+      font-size: clamp(34px, 5vw, 64px);
+      line-height: 1.03;
+      letter-spacing: -.045em;
+    }
+    .hero p { max-width: 780px; margin: 0; color: #cbd5e1; font-size: 17px; }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 25px; }
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      min-height: 42px;
+      padding: 9px 14px;
+      border: 1px solid transparent;
+      border-radius: 10px;
+      color: var(--white);
+      background: var(--orange-500);
+      text-decoration: none;
+      cursor: pointer;
+      transition: .18s ease;
+    }
+    .button:hover { transform: translateY(-1px); background: var(--orange-600); }
+    .button.secondary { border-color: rgba(255, 255, 255, .15); background: rgba(255, 255, 255, .07); }
+    .button.ghost { color: var(--slate-700); border-color: var(--slate-300); background: var(--white); }
+    .button.small { min-height: 36px; padding: 7px 11px; font-size: 13px; }
+
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 14px;
+      margin-top: 18px;
+    }
+    .stat {
+      padding: 18px;
+      border: 1px solid var(--slate-200);
+      border-radius: var(--radius);
+      background: rgba(255, 255, 255, .86);
+      box-shadow: var(--shadow-sm);
+    }
+    .stat strong { display: block; color: var(--orange-600); font-size: 30px; line-height: 1; }
+    .stat span { display: block; margin-top: 7px; color: var(--slate-600); font-weight: 650; }
+
+    .section-head {
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 24px;
+      margin: 64px 0 20px;
+    }
+    .section-kicker {
+      margin: 0 0 6px;
+      color: var(--orange-600);
+      font-size: 12px;
+      font-weight: 850;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+    .section-head h2 { margin: 0; font-size: clamp(27px, 4vw, 40px); letter-spacing: -.035em; }
+    .section-head p { max-width: 600px; margin: 8px 0 0; color: var(--slate-600); }
+
+    .panel {
+      padding: clamp(20px, 3vw, 30px);
+      border: 1px solid var(--slate-200);
+      border-radius: var(--radius-lg);
+      background: var(--white);
+      box-shadow: var(--shadow-sm);
+    }
+    .panel + .panel { margin-top: 18px; }
+    .panel h3 { margin: 0 0 14px; font-size: 21px; letter-spacing: -.02em; }
+    .panel h4 { margin: 26px 0 10px; }
+    .muted { color: var(--slate-600); }
+    .note {
+      padding: 15px 17px;
+      border-left: 4px solid var(--orange-500);
+      border-radius: 0 12px 12px 0;
+      color: var(--slate-700);
+      background: var(--orange-50);
+    }
+
+    .mockup {
+      position: relative;
+      padding: 12px;
+      border: 1px solid var(--slate-200);
+      border-radius: 18px;
+      background: linear-gradient(145deg, #fff, #f4f6f9);
+      box-shadow: var(--shadow-md);
+    }
+    .mockup a { display: block; overflow: hidden; border-radius: 12px; }
+    .mockup img { display: block; width: 100%; transition: transform .3s ease; }
+    .mockup a:hover img { transform: scale(1.01); }
+    .mockup figcaption { padding: 12px 4px 2px; color: var(--slate-600); font-size: 13px; }
+
+    .grid-2 { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
+    .grid-3 { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+    .grid-4 { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 14px; }
+    .card {
+      padding: 18px;
+      border: 1px solid var(--slate-200);
+      border-radius: var(--radius);
+      background: var(--white);
+      box-shadow: var(--shadow-sm);
+    }
+    .card h3, .card h4 { margin: 0 0 8px; }
+    .card p { margin: 0; color: var(--slate-600); }
+    .card-accent { border-top: 4px solid var(--orange-500); }
+
+    .column-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+    .column-item {
+      min-height: 124px;
+      padding: 15px;
+      border: 1px solid var(--slate-200);
+      border-radius: 14px;
+      background: var(--slate-50);
+    }
+    .column-item strong { display: block; margin-bottom: 5px; color: var(--navy-900); }
+    .column-item span { color: var(--slate-600); font-size: 13px; }
+
+    .status-card { display: flex; align-items: center; gap: 12px; }
+    .status-card img { width: 42px; height: 42px; }
+    .status-card small { display: block; color: var(--slate-500); }
+
+    .tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      padding: 4px 9px;
+      border-radius: 999px;
+      color: var(--orange-700);
+      background: var(--orange-100);
+      font-size: 12px;
+      font-weight: 800;
+    }
+    .tag.high { color: #9d174d; background: #fce7f3; }
+    .tag.medium { color: #92400e; background: #fef3c7; }
+    .tag.req { color: #3730a3; background: #e0e7ff; }
+    .tag.ex { color: #b42318; background: #fee4e2; }
+
+    .flow-list { display: grid; gap: 14px; counter-reset: flow; }
+    .flow {
+      position: relative;
+      padding: 22px 22px 22px 68px;
+      border: 1px solid var(--slate-200);
+      border-radius: var(--radius);
+      background: var(--white);
+    }
+    .flow::before {
+      counter-increment: flow;
+      content: counter(flow, decimal-leading-zero);
+      position: absolute;
+      top: 20px;
+      left: 18px;
+      display: grid;
+      width: 36px;
+      height: 36px;
+      place-items: center;
+      border-radius: 11px;
+      color: var(--white);
+      background: var(--orange-500);
+      font-weight: 900;
+    }
+    .flow h3 { margin: 0 0 8px; }
+    .flow ol { margin: 0; padding-left: 20px; color: var(--slate-700); }
+
+    .exception { border-left: 4px solid #ef4444; }
+    .exception strong { color: var(--red); }
+
+    .formula-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; }
+    .formula {
+      padding: 18px;
+      border: 1px solid #ffd6c2;
+      border-radius: 16px;
+      background: linear-gradient(160deg, #fff, var(--orange-50));
+    }
+    .formula h4 { margin: 0 0 12px; color: var(--orange-700); }
+    .fraction { display: grid; justify-items: center; color: var(--navy-900); font-weight: 720; text-align: center; }
+    .fraction .top { padding: 0 10px 7px; border-bottom: 2px solid var(--navy-800); }
+    .fraction .bottom { padding-top: 7px; }
+    .formula .teacher { margin-top: 16px; padding-top: 12px; border-top: 1px dashed #f5b896; color: var(--slate-600); font-size: 13px; }
+
+    .filters {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      align-items: center;
+      padding: 14px;
+      border: 1px solid var(--slate-200);
+      border-radius: 14px;
+      background: var(--white);
+      position: sticky;
+      top: 10px;
+      z-index: 10;
+      box-shadow: var(--shadow-md);
+    }
+    .search {
+      min-width: min(100%, 320px);
+      flex: 1 1 260px;
+      height: 42px;
+      padding: 0 13px;
+      border: 1px solid var(--slate-300);
+      border-radius: 10px;
+      color: var(--navy-950);
+      background: var(--white);
+      outline: none;
+    }
+    .search:focus { border-color: var(--orange-500); box-shadow: 0 0 0 4px rgba(244, 91, 10, .12); }
+    .testcases { display: grid; gap: 10px; margin-top: 16px; }
+    .testcase {
+      border: 1px solid var(--slate-200);
+      border-radius: 14px;
+      background: var(--white);
+      overflow: clip;
+    }
+    .testcase[hidden] { display: none; }
+    .testcase summary {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 15px 17px;
+      cursor: pointer;
+      list-style: none;
+    }
+    .testcase summary::-webkit-details-marker { display: none; }
+    .testcase summary::after { content: "+"; margin-left: auto; color: var(--orange-600); font-size: 22px; font-weight: 700; }
+    .testcase[open] summary::after { content: "−"; }
+    .testcase-title { min-width: 0; font-weight: 780; }
+    .case-body {
+      display: grid;
+      grid-template-columns: minmax(180px, .7fr) minmax(0, 1.3fr);
+      gap: 18px;
+      padding: 18px;
+      border-top: 1px solid var(--slate-200);
+      background: var(--slate-50);
+    }
+    .case-meta { color: var(--slate-600); }
+    .case-meta div + div { margin-top: 8px; }
+    .case-steps { display: grid; gap: 10px; }
+    .step { padding: 10px 12px; border-left: 3px solid var(--orange-400); background: var(--white); }
+    .expected { margin: 14px 0 0; padding-left: 20px; }
+    .expected li + li { margin-top: 4px; }
+    .empty-filter { display: none; padding: 28px; color: var(--slate-600); text-align: center; }
+
+    .question-list { display: grid; gap: 10px; margin: 0; padding: 0; counter-reset: question; list-style: none; }
+    .question-list li {
+      position: relative;
+      padding: 14px 16px 14px 54px;
+      border: 1px solid #f4d8a4;
+      border-radius: 13px;
+      background: #fffbeb;
+      color: #664d03;
+    }
+    .question-list li::before {
+      counter-increment: question;
+      content: counter(question);
+      position: absolute;
+      top: 12px;
+      left: 14px;
+      display: grid;
+      width: 28px;
+      height: 28px;
+      place-items: center;
+      border-radius: 9px;
+      color: #fff;
+      background: #d99100;
+      font-weight: 850;
+    }
+
+    .footer {
+      margin-top: 64px;
+      padding-top: 24px;
+      border-top: 1px solid var(--slate-200);
+      color: var(--slate-500);
+      text-align: center;
+    }
+
+    @media (max-width: 1120px) {
+      :root { --sidebar: 244px; }
+      .column-grid, .grid-3, .formula-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .stats { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
+    @media (max-width: 780px) {
+      .sidebar { position: static; width: auto; padding: 14px; }
+      .brand { padding-bottom: 12px; }
+      .nav-title, .sidebar-footer { display: none; }
+      .nav { display: flex; overflow-x: auto; padding-top: 10px; }
+      .nav a { flex: 0 0 auto; }
+      main { width: 100%; margin: 0; padding: 18px 14px 60px; }
+      .hero { border-radius: 18px; }
+      .grid-2, .grid-3, .grid-4, .column-grid, .formula-grid, .case-body { grid-template-columns: 1fr; }
+      .section-head { align-items: start; flex-direction: column; }
+      .filters { position: static; }
+    }
+    @media print {
+      body { background: #fff; font-size: 11px; }
+      .sidebar, .hero-actions, .filters, .skip-link { display: none !important; }
+      main { width: 100%; margin: 0; padding: 0; }
+      .hero { color: #111; background: #fff; border: 2px solid #111; box-shadow: none; }
+      .hero p { color: #333; }
+      .panel, .card, .stat, .mockup, .testcase { break-inside: avoid; box-shadow: none; }
+      .section-head { margin-top: 32px; }
+      .testcase { display: block !important; }
+      .testcase summary::after { display: none; }
+      .testcase:not([open]) .case-body { display: grid; }
+    }
+
+    .doc-shell { min-width: 0; }
+    .doc-toolbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      margin-bottom: 18px;
+      padding: 14px 16px;
+      border: 1px solid var(--slate-200);
+      border-radius: 14px;
+      background: rgba(255,255,255,.92);
+      box-shadow: var(--shadow-sm);
+    }
+    .doc-toolbar-left, .doc-toolbar-right { display: flex; flex-wrap: wrap; align-items: center; gap: 9px; }
+    .sync-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      padding: 6px 10px;
+      border-radius: 999px;
+      color: #067647;
+      background: #ecfdf3;
+      border: 1px solid #abefc6;
+      font-size: 12px;
+      font-weight: 800;
+    }
+    .sync-badge::before { content: "✓"; }
+    .hash { color: var(--slate-500); font: 12px ui-monospace, SFMono-Regular, Menlo, monospace; }
+    .markdown-body {
+      padding: clamp(24px, 4vw, 54px);
+      border: 1px solid var(--slate-200);
+      border-radius: var(--radius-lg);
+      background: var(--white);
+      box-shadow: var(--shadow-md);
+      overflow: hidden;
+    }
+    .markdown-body > h1 {
+      position: relative;
+      margin: -54px -54px 42px;
+      padding: 62px 54px 54px;
+      color: var(--white);
+      background:
+        radial-gradient(circle at 88% 10%, rgba(255,122,50,.36), transparent 20rem),
+        linear-gradient(115deg, var(--navy-950), #243047 68%, #713209);
+      font-size: clamp(34px, 5vw, 62px);
+      line-height: 1.05;
+      letter-spacing: -.045em;
+    }
+    .markdown-body h2 {
+      margin: 70px 0 24px;
+      padding: 0 0 13px;
+      border-bottom: 2px solid var(--slate-200);
+      font-size: clamp(27px, 4vw, 39px);
+      line-height: 1.15;
+      letter-spacing: -.035em;
+      scroll-margin-top: 24px;
+    }
+    .markdown-body h2::first-letter { color: var(--orange-600); }
+    .markdown-body h3 {
+      margin: 38px 0 16px;
+      color: var(--navy-900);
+      font-size: 23px;
+      line-height: 1.25;
+      letter-spacing: -.02em;
+      scroll-margin-top: 24px;
+    }
+    .markdown-body h4 {
+      margin: 28px 0 12px;
+      color: var(--orange-700);
+      font-size: 17px;
+      scroll-margin-top: 24px;
+    }
+    .markdown-body p { margin: 12px 0; }
+    .markdown-body strong { color: var(--navy-900); }
+    .markdown-body ul, .markdown-body ol { padding-left: 1.35rem; }
+    .markdown-body li { margin: 6px 0; }
+    .markdown-body li::marker { color: var(--orange-500); font-weight: 800; }
+    .markdown-body hr {
+      height: 1px;
+      margin: 48px 0;
+      border: 0;
+      background: linear-gradient(90deg, transparent, var(--slate-300), transparent);
+    }
+    .markdown-body > p[align="center"] {
+      margin: 22px 0 28px;
+      padding: 12px;
+      border: 1px solid var(--slate-200);
+      border-radius: 18px;
+      background: linear-gradient(145deg, #fff, #f5f7fa);
+      box-shadow: var(--shadow-md);
+    }
+    .markdown-body > p[align="center"] a { display: inline-block; max-width: 100%; }
+    .markdown-body > p[align="center"] img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+      margin: auto;
+      border-radius: 12px;
+    }
+    .markdown-body > p[align="center"] em {
+      display: block;
+      margin-top: 10px;
+      color: var(--slate-500);
+      font-size: 13px;
+    }
+    .table-wrap {
+      width: 100%;
+      margin: 18px 0 28px;
+      overflow: auto;
+      border: 1px solid var(--slate-200);
+      border-radius: 15px;
+      background: var(--white);
+      box-shadow: var(--shadow-sm);
+    }
+    .markdown-body table {
+      width: 100%;
+      min-width: 720px;
+      border-collapse: separate;
+      border-spacing: 0;
+      font-size: 14px;
+    }
+    .markdown-body th {
+      position: sticky;
+      top: 0;
+      z-index: 2;
+      padding: 12px 14px;
+      color: var(--white);
+      background: var(--navy-900);
+      border-bottom: 1px solid var(--navy-800);
+      text-align: left;
+      white-space: nowrap;
+    }
+    .markdown-body td {
+      padding: 12px 14px;
+      border-bottom: 1px solid var(--slate-200);
+      vertical-align: top;
+    }
+    .markdown-body tbody tr:nth-child(even) td { background: var(--slate-50); }
+    .markdown-body tbody tr:hover td { background: var(--orange-50); }
+    .markdown-body tbody tr:last-child td { border-bottom: 0; }
+    .markdown-body td img { display: block; width: 36px; height: 36px; max-width: none; }
+    .markdown-body pre {
+      position: relative;
+      margin: 16px 0 24px;
+      padding: 18px 20px;
+      overflow: auto;
+      border: 1px solid #ffd3bd;
+      border-radius: 14px;
+      color: #fff7ed;
+      background: linear-gradient(145deg, #172033, #222f48);
+      box-shadow: var(--shadow-sm);
+      font: 13px/1.75 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    }
+    .markdown-body pre code { padding: 0; border: 0; color: inherit; background: none; font: inherit; }
+    .markdown-body blockquote {
+      margin: 18px 0;
+      padding: 13px 16px;
+      border-left: 4px solid var(--orange-500);
+      border-radius: 0 12px 12px 0;
+      color: var(--slate-700);
+      background: var(--orange-50);
+    }
+    .case-tools {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 10px;
+      margin: 12px 0 14px;
+      padding: 13px;
+      border: 1px solid var(--slate-200);
+      border-radius: 13px;
+      background: var(--slate-50);
+    }
+    .case-tools input {
+      flex: 1 1 280px;
+      height: 42px;
+      padding: 0 13px;
+      border: 1px solid var(--slate-300);
+      border-radius: 10px;
+      outline: none;
+    }
+    .case-tools input:focus { border-color: var(--orange-500); box-shadow: 0 0 0 4px rgba(244,91,10,.12); }
+    .case-count { color: var(--orange-700); font-weight: 800; white-space: nowrap; }
+    .testcase-table table { min-width: 1500px; }
+    .testcase-table th:first-child, .testcase-table td:first-child {
+      position: sticky;
+      left: 0;
+      z-index: 1;
+      min-width: 230px;
+      box-shadow: 1px 0 0 var(--slate-200);
+    }
+    .testcase-table th:first-child { z-index: 3; background: var(--navy-900); }
+    .testcase-table td:first-child { background: var(--white); font-weight: 750; }
+    .testcase-table tbody tr:nth-child(even) td:first-child { background: var(--slate-50); }
+    .testcase-table tbody tr:hover td:first-child { background: var(--orange-50); }
+    .source-note {
+      margin-top: 18px;
+      color: var(--slate-500);
+      text-align: center;
+      font-size: 12px;
+    }
+    @media (max-width: 780px) {
+      .doc-toolbar { align-items: flex-start; flex-direction: column; }
+      .markdown-body { padding: 20px 16px; border-radius: 16px; }
+      .markdown-body > h1 { margin: -20px -16px 32px; padding: 40px 20px 34px; }
+      .markdown-body h2 { margin-top: 48px; }
+      .markdown-body table { font-size: 13px; }
+    }
+    @media print {
+      .doc-toolbar, .case-tools { display: none !important; }
+      .markdown-body { padding: 0; border: 0; box-shadow: none; overflow: visible; }
+      .markdown-body > h1 { margin: 0 0 32px; padding: 30px; color: #111; background: #fff; border: 2px solid #111; }
+      .table-wrap { overflow: visible; box-shadow: none; }
+      .markdown-body table { min-width: 0 !important; font-size: 9px; }
+      .markdown-body th { position: static; color: #111; background: #eee; }
+      .testcase-table th:first-child, .testcase-table td:first-child { position: static; }
+    }
+</style>
+</head>
+<body>
+  <a class="skip-link" href="#document">Đi đến nội dung chính</a>
+  <aside class="sidebar" aria-label="Mục lục requirement">
+    <div class="brand">
+      <div class="brand-mark">ics</div>
+      <div><strong>ICS Requirement</strong><small>Requirement UI, trạng thái, nghiệp vụ và testcase</small></div>
+    </div>
+    <div class="nav-title">Nội dung Markdown</div>
+    <nav id="docNav" class="nav"></nav>
+    <div class="sidebar-footer">
+      HTML được render trực tiếp từ Markdown nguồn.<br>
+      <a href="./class_detail_schedule_requirements.md">Mở file Markdown</a>
+    </div>
+  </aside>
+  <main class="doc-shell">
+    <div class="doc-toolbar">
+      <div class="doc-toolbar-left">
+        <span class="sync-badge">Đồng bộ 100% từ Markdown</span>
+        <span class="hash">SHA-256: 98d34d1a19c6…</span>
+      </div>
+      <div class="doc-toolbar-right">
+        <a class="button ghost small" href="./class_detail_schedule_requirements.md">Xem Markdown</a>
+        <button class="button small" type="button" onclick="window.print()">In / Lưu PDF</button>
+      </div>
+    </div>
+    <article id="document" class="markdown-body" data-source-sha256="98d34d1a19c6d3bd9106b228002fef573efeaf7f40cf72d6666dfea9acb63d91">
+<h1 id="chi-tiet-lop-hoc-tab-lich-day">Chi tiết lớp học — Tab Lịch dạy</h1>
+<blockquote>
+<p>Requirement này đặc tả màn <strong>Chi tiết lớp học → Tab Lịch dạy</strong>. Quy tắc số buổi, ngày bắt đầu, ngày kết thúc dự kiến và tái sinh lịch khi đổi khóa học được dùng chung với <a href="./class_creation_requirements.md">Tạo lớp học</a> và <a href="./class_detail_information_requirements.md">Tab Thông tin</a>. Nhân sự giáo viên của lớp được đặc tả tại <a href="./class_detail_teachers_requirements.md">Tab Giáo viên</a>.</p>
+</blockquote>
+<h2 id="1-ui">1. UI</h2>
+<h3 id="tab-lich-day-lich-theo-tuan">Tab Lịch dạy — Lịch theo tuần</h3>
+<p align="center">
+  <a href="./images/26-class-detail-schedule.png"><img src="./images/26-class-detail-schedule.png" alt="Chi tiết lớp học - Tab Lịch dạy" width="900" title="Nhấn để xem ảnh gốc"></a><br>
+  <em>Lịch dạy theo tuần của lớp — nhấn để xem ảnh gốc</em>
+</p>
+
+<p><strong>Mô tả:</strong></p>
+<ul>
+<li>Hiển thị các lịch dạy của đúng lớp theo từng tuần từ Thứ 2 đến Chủ Nhật.</li>
+<li><code>Admin</code>, <code>Class Handler</code> và <code>Support</code> được xem và CRUD lịch trong phạm vi lớp được phân quyền.</li>
+<li><code>Teacher</code> được xem lịch của lớp mà giáo viên được phân công nhưng không được tạo, sửa, hoàn thành, hủy hoặc xóa lịch <strong>tại tab này</strong>. Lịch mà giáo viên đã chọn khi <code>Bắt đầu buổi học</code> sẽ tự chuyển <code>Hoàn thành</code> khi giáo viên bấm <code>Hoàn thành buổi học</code> (xem <a href="../../teacher_role/class/class_teaching_requirements.md">requirement Giáo viên — Bài học</a>); đây là hoàn thành qua luồng dạy, không phải thao tác tại tab Lịch dạy.</li>
+</ul>
+<p><strong>Giải thích field/thành phần:</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Thành phần</th>
+<th>Yêu cầu</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Khoảng tuần</td>
+<td>Hiển thị ngày đầu và ngày cuối tuần; nút trái/phải chuyển đúng một tuần.</td>
+</tr>
+<tr>
+<td>Cột ngày</td>
+<td>Hiển thị thứ, ngày/tháng và làm nổi bật ngày hiện tại nhưng không thay đổi dữ liệu lịch.</td>
+</tr>
+<tr>
+<td>Tag lịch cố định</td>
+<td>Hiển thị các khung lặp như <code>T2, 20:00</code>; <code>X</code> dùng để bỏ khung cố định theo quyền và rule tái sinh lịch.</td>
+</tr>
+<tr>
+<td>Nút <code>Thêm lịch dạy cố định</code></td>
+<td>Mở popup thêm lịch với tab <code>Thêm Lịch Dạy Cố Định</code> được chọn sẵn.</td>
+</tr>
+<tr>
+<td>Ô dấu <code>+</code> của ngày</td>
+<td>Mở popup thêm lịch với tab <code>Thêm Lịch Dạy Linh Hoạt</code> và tuần/ngày vừa bấm được chọn sẵn.</td>
+</tr>
+<tr>
+<td>Thẻ lịch</td>
+<td>Hiển thị tối thiểu giáo viên, mã lớp, giờ bắt đầu–kết thúc và màu/icon trạng thái.</td>
+</tr>
+<tr>
+<td>Vùng lịch</td>
+<td>Số hàng hiển thị phải mở rộng hoặc cuộn theo số lịch thực tế; ba hàng trong ảnh không phải giới hạn nghiệp vụ.</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Điểm cần lưu ý:</strong></p>
+<ul>
+<li>Dùng <code>schedule_id</code> và <code>class_id</code> để tải/thao tác; không dùng mã lớp, tên giáo viên hoặc vị trí ô làm khóa.</li>
+<li>Chuyển tuần chỉ thay phạm vi hiển thị, không tạo, sửa hoặc tự đổi trạng thái lịch.</li>
+<li>Lịch được tải theo timezone của cơ sở/lớp; thời điểm lưu ở backend phải có timezone rõ ràng để không lệch ngày.</li>
+<li>Nếu lớp <code>Mới tạo</code> có lịch hợp lệ đầu tiên thì tự chuyển sang <code>Khai giảng</code> theo requirement trạng thái lớp.</li>
+<li>Teacher chỉ thấy dữ liệu trong phạm vi lớp được phân công; việc ẩn nút CRUD không thay thế kiểm tra quyền backend.</li>
+</ul>
+<h4 id="testcase-tab-lich-day-lich-theo-tuan">Testcase — Tab Lịch dạy — Lịch theo tuần</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 1: Mở đúng lịch tuần của lớp</td>
+<td>High</td>
+<td>Smoke</td>
+<td>Flow 1 / REQ01</td>
+<td>Role có quyền xem</td>
+<td>Lớp có lịch ở nhiều tuần</td>
+<td><strong>Given</strong> mở tab Lịch dạy<br><strong>When</strong> dữ liệu tải thành công<br><strong>Then</strong> hiển thị đúng tuần và đúng class_id</td>
+<td>- Không trộn lớp khác<br>- Thẻ nằm đúng ngày/giờ<br>- Không thay đổi dữ liệu khi tải</td>
+</tr>
+<tr>
+<td>Case 2: Chuyển tuần trước và sau</td>
+<td>High</td>
+<td></td>
+<td>Flow 1 / REQ01</td>
+<td>Role có quyền xem</td>
+<td>Có lịch ở các tuần liền kề</td>
+<td><strong>Given</strong> tuần hiện tại đang hiển thị<br><strong>When</strong> bấm mũi tên trái/phải<br><strong>Then</strong> tải tuần tương ứng</td>
+<td>- Mỗi lần dịch đúng một tuần<br>- Header và dữ liệu cùng khoảng ngày<br>- Không nhân đôi thẻ lịch</td>
+</tr>
+<tr>
+<td>Case 3: Dấu cộng mở lịch linh hoạt đúng ngày</td>
+<td>High</td>
+<td></td>
+<td>Flow 3 / REQ04</td>
+<td><code>Admin</code>, <code>Class Handler</code> hoặc <code>Support</code></td>
+<td>Tuần đang mở</td>
+<td><strong>Given</strong> bấm <code>+</code> tại một ngày<br><strong>When</strong> popup mở<br><strong>Then</strong> chọn sẵn tab Linh hoạt và ngày/tuần đó</td>
+<td>- Không mở tab Cố định<br>- Giữ đúng class_id<br>- Chưa tạo lịch trước khi xác nhận</td>
+</tr>
+<tr>
+<td>Case 4: Nút thêm cố định mở đúng tab</td>
+<td>High</td>
+<td></td>
+<td>Flow 2 / REQ03</td>
+<td>Role CRUD</td>
+<td>Tab lịch đang mở</td>
+<td><strong>Given</strong> bấm <code>Thêm lịch dạy cố định</code><br><strong>When</strong> popup mở<br><strong>Then</strong> tab Cố định được chọn</td>
+<td>- Không tự lưu<br>- Giữ đúng lớp<br>- Hiển thị cấu hình cố định hiện tại nếu có</td>
+</tr>
+<tr>
+<td>Case 5: Teacher chỉ xem lịch</td>
+<td>High</td>
+<td></td>
+<td>REQ02 / Ràng buộc quyền</td>
+<td><code>Teacher</code></td>
+<td>Giáo viên được phân công lớp</td>
+<td><strong>Given</strong> Teacher mở tab<br><strong>When</strong> xem lịch và thử gọi API CRUD<br><strong>Then</strong> chỉ được đọc</td>
+<td>- Không có/disable nút thêm, X và hành động trạng thái<br>- Backend từ chối request thay đổi<br>- Không lộ lịch ngoài phạm vi</td>
+</tr>
+<tr>
+<td>Case 6: Hiển thị nhiều hơn ba lịch trong ngày</td>
+<td>Medium</td>
+<td></td>
+<td>REQ01</td>
+<td>Role có quyền xem</td>
+<td>Một ngày có trên ba lịch hợp lệ</td>
+<td><strong>Given</strong> tuần có nhiều lịch cùng ngày<br><strong>When</strong> render lịch<br><strong>Then</strong> hiển thị/truy cập được tất cả</td>
+<td>- Không mất lịch thứ tư trở đi<br>- Không chồng thẻ che nội dung<br>- Có scroll/mở rộng phù hợp</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="the-lich-va-bon-trang-thai-chinh-thuc">Thẻ lịch và bốn trạng thái chính thức</h3>
+<p align="center">
+  <img src="./images/schedule-status-fixed.png" alt="Lịch cố định" width="160">
+  <img src="./images/schedule-status-completed.png" alt="Lịch hoàn thành" width="160">
+  <img src="./images/schedule-status-flexible.png" alt="Lịch linh hoạt" width="160">
+  <img src="./images/schedule-status-cancelled.png" alt="Lịch hủy bỏ" width="160"><br>
+  <em>Bộ màu/icon trạng thái lịch chính thức</em>
+</p>
+
+<p><strong>Mô tả:</strong> Mỗi lịch có loại nguồn <code>Cố định</code> hoặc <code>Linh hoạt</code> và trạng thái xử lý. Khi hoàn thành hoặc hủy, màu hoàn thành/hủy được ưu tiên hiển thị nhưng loại nguồn vẫn được giữ trong dữ liệu/audit.</p>
+<p><strong>Giải thích field/thành phần:</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Hiển thị</th>
+<th>Màu</th>
+<th>Ý nghĩa nghiệp vụ</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Lịch cố định</td>
+<td>Cam</td>
+<td>Buổi chưa hoàn thành/chưa hủy, được sinh từ khung lịch cố định.</td>
+</tr>
+<tr>
+<td>Lịch linh hoạt</td>
+<td>Xanh dương</td>
+<td>Buổi chưa hoàn thành/chưa hủy, được thêm linh hoạt vào một ngày/giờ cụ thể.</td>
+</tr>
+<tr>
+<td>Lịch hoàn thành</td>
+<td>Xanh lá</td>
+<td>Buổi đã hoàn thành; được tính là một buổi học hợp lệ và phát sinh lương cho giáo viên của lịch.</td>
+</tr>
+<tr>
+<td>Lịch hủy bỏ</td>
+<td>Xám</td>
+<td>Buổi đã hủy; bị loại khỏi số buổi hợp lệ của khóa và không phát sinh lương. Hệ thống phải sinh một buổi bù ở cuối.</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Điểm cần lưu ý:</strong></p>
+<ul>
+<li><code>Hoàn thành</code> và <code>Hủy bỏ</code> là trạng thái, không phải loại lịch. Lịch hoàn thành/hủy vẫn phải lưu nguồn ban đầu là Cố định hay Linh hoạt.</li>
+<li>Tên/tooltip trạng thái phải có ngoài màu để hỗ trợ accessibility.</li>
+<li>Không thể đồng thời hoàn thành và hủy cùng một lịch. Backend phải kiểm tra trạng thái mới nhất và version khi cập nhật.</li>
+<li>Chỉ lịch ở trạng thái <code>Hoàn thành</code> mới được ghi nhận lương giáo viên; lịch cố định/linh hoạt chưa hoàn thành và lịch hủy không tính lương.</li>
+<li>Trong cùng một lần hoàn thành, request gửi lặp chỉ được tạo một khoản lương. Nếu lịch được Mở lại rồi hoàn thành lại, lần hoàn thành mới có thể tạo khoản lương mới nhưng tại một thời điểm chỉ một khoản của schedule có hiệu lực.</li>
+</ul>
+<h4 id="testcase-the-lich-va-bon-trang-thai-chinh-thuc">Testcase — Thẻ lịch và bốn trạng thái chính thức</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 7: Hiển thị đúng bốn trạng thái</td>
+<td>High</td>
+<td></td>
+<td>REQ05</td>
+<td>Role có quyền xem</td>
+<td>Có lịch thuộc đủ bốn trạng thái</td>
+<td><strong>Given</strong> tuần tải thành công<br><strong>When</strong> render các thẻ<br><strong>Then</strong> màu/icon/tên đúng mapping</td>
+<td>- Cố định cam<br>- Hoàn thành xanh lá<br>- Linh hoạt xanh dương<br>- Hủy bỏ xám</td>
+</tr>
+<tr>
+<td>Case 8: Trạng thái ghi đè màu nhưng giữ loại nguồn</td>
+<td>High</td>
+<td></td>
+<td>REQ05</td>
+<td>Role có quyền xem</td>
+<td>Có một lịch linh hoạt đã hoàn thành và một lịch cố định đã hủy</td>
+<td><strong>Given</strong> backend trả loại nguồn và trạng thái<br><strong>When</strong> render<br><strong>Then</strong> dùng màu trạng thái</td>
+<td>- Lịch linh hoạt hoàn thành hiển thị xanh lá nhưng audit vẫn là Linh hoạt<br>- Lịch cố định hủy hiển thị xám nhưng audit vẫn là Cố định</td>
+</tr>
+<tr>
+<td>Case 9: Không nhận biết chỉ bằng màu</td>
+<td>Medium</td>
+<td></td>
+<td>REQ05</td>
+<td>Role có quyền xem</td>
+<td>Có nhiều trạng thái</td>
+<td><strong>Given</strong> focus/hover thẻ lịch<br><strong>When</strong> xem nội dung hỗ trợ<br><strong>Then</strong> có tên trạng thái</td>
+<td>- Tooltip/aria-label đúng<br>- Không tráo tên với màu<br>- Có thể phân biệt khi không nhìn màu</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="popup-them-lich-day-co-dinh">Popup Thêm Lịch Dạy Cố Định</h3>
+<p align="center">
+  <a href="./images/27-class-schedule-add-fixed.png"><img src="./images/27-class-schedule-add-fixed.png" alt="Popup thêm lịch dạy cố định" width="780" title="Nhấn để xem ảnh gốc"></a><br>
+  <em>Thêm các khung lịch cố định — nhấn để xem ảnh gốc</em>
+</p>
+
+<p><strong>Mô tả:</strong> Cho phép role CRUD cấu hình một hoặc nhiều khung giờ lặp theo thứ. Hệ thống dùng các khung này để sinh lịch đến khi đủ đúng số buổi của khóa học.</p>
+<p><strong>Giải thích field/thành phần:</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Field/thành phần</th>
+<th>Yêu cầu</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Tab Cố định/Linh hoạt</td>
+<td>Chuyển đúng form; dữ liệu chưa xác nhận của tab kia không được tự lưu.</td>
+</tr>
+<tr>
+<td>Chọn ngày bắt đầu</td>
+<td>Ngày bắt đầu áp dụng của cấu hình; khi tạo lịch đầu tiên của lớp phải phù hợp để ngày bắt đầu lớp là buổi 1.</td>
+</tr>
+<tr>
+<td>Giờ bắt đầu/kết thúc</td>
+<td>Giờ kết thúc phải sau giờ bắt đầu; lưu cùng timezone lớp.</td>
+</tr>
+<tr>
+<td>Thứ 2–Chủ Nhật</td>
+<td>Mỗi dòng chọn ít nhất một ngày trong tuần.</td>
+</tr>
+<tr>
+<td><code>+ Thêm lịch dạy</code></td>
+<td>Thêm một dòng khung giờ; chưa lưu backend.</td>
+</tr>
+<tr>
+<td>Icon thùng rác</td>
+<td>Xóa dòng cấu hình chưa xác nhận hoặc bỏ một khung hiện có theo rule tái sinh lịch.</td>
+</tr>
+<tr>
+<td>Hủy</td>
+<td>Đóng mà không lưu thay đổi chưa xác nhận.</td>
+</tr>
+<tr>
+<td>Xác Nhận</td>
+<td>Validate toàn bộ, lưu cấu hình và sinh/tái sinh lịch tương lai nguyên tử.</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Điểm cần lưu ý:</strong></p>
+<ul>
+<li>Không cho hai khung của cùng lớp trùng thời gian. Đồng thời phải kiểm tra lịch của giáo viên được phân công trên <strong>tất cả lớp</strong>; nếu giáo viên đã có lịch giao nhau thì hiển thị cảnh báo và không cho xác nhận.</li>
+<li>Mỗi dòng phải có ít nhất một thứ; không cho giờ kết thúc bằng hoặc trước giờ bắt đầu.</li>
+<li>Khi thêm/sửa/bỏ khung, chỉ tái sinh phần lịch chưa mở/chưa hoàn thành. Không thay đổi lịch đã hoàn thành hoặc lịch hủy dùng làm lịch sử.</li>
+<li>Tổng lịch hợp lệ của chương trình luôn bằng <code>N</code> là số buổi khóa học. Các lịch tương lai được đánh số/tái sinh theo thứ tự thời gian đến đủ N.</li>
+<li>Nếu không còn khung cố định hợp lệ để sinh đủ N buổi thì không lưu một phần; giữ cấu hình/lịch cũ và trả lỗi xử lý được.</li>
+<li>Ngày kết thúc dự kiến là ngày của buổi hợp lệ thứ N sau khi sinh lịch; người dùng không sửa trực tiếp.</li>
+</ul>
+<h4 id="testcase-popup-them-lich-day-co-dinh">Testcase — Popup Thêm Lịch Dạy Cố Định</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 10: Thêm nhiều khung cố định hợp lệ</td>
+<td>High</td>
+<td>Smoke</td>
+<td>Flow 2 / REQ03</td>
+<td>Role CRUD</td>
+<td>Khóa học có N buổi</td>
+<td><strong>Given</strong> nhập nhiều khung hợp lệ<br><strong>When</strong> Xác Nhận<br><strong>Then</strong> lưu cấu hình và sinh lịch</td>
+<td>- Có đúng N lịch hợp lệ<br>- Sắp theo thời gian<br>- Ngày kết thúc là buổi N<br>- Toast thành công</td>
+</tr>
+<tr>
+<td>Case 11: Chặn giờ kết thúc không hợp lệ</td>
+<td>High</td>
+<td></td>
+<td>EX02 / REQ03</td>
+<td>Role CRUD</td>
+<td>Popup đang mở</td>
+<td><strong>Given</strong> giờ kết thúc bằng/trước giờ bắt đầu<br><strong>When</strong> xác nhận<br><strong>Then</strong> không lưu</td>
+<td>- Đánh dấu đúng dòng<br>- Giữ dữ liệu để sửa<br>- Không sinh lịch một phần</td>
+</tr>
+<tr>
+<td>Case 12: Chặn trùng lịch lớp hoặc lịch giáo viên ở lớp khác</td>
+<td>High</td>
+<td></td>
+<td>EX02 / REQ03</td>
+<td>Role CRUD</td>
+<td>Khung mới trùng lịch của lớp hoặc trùng lịch giáo viên đã được phân công ở một lớp khác</td>
+<td><strong>Given</strong> chọn khoảng thời gian giao nhau<br><strong>When</strong> validation chạy<br><strong>Then</strong> hiển thị cảnh báo trùng lịch và chặn xác nhận</td>
+<td>- Không tạo lịch trùng<br>- Nêu đúng giáo viên/ngày/khung giờ bị trùng<br>- Không ghi đè lịch cũ<br>- Backend kiểm tra lại trên toàn hệ thống khi commit</td>
+</tr>
+<tr>
+<td>Case 13: Thêm và xóa dòng trước khi xác nhận</td>
+<td>Medium</td>
+<td></td>
+<td>REQ03</td>
+<td>Role CRUD</td>
+<td>Popup đang mở</td>
+<td><strong>Given</strong> thêm rồi xóa một dòng<br><strong>When</strong> chưa Xác Nhận<br><strong>Then</strong> chỉ thay đổi draft</td>
+<td>- Backend chưa đổi<br>- Hủy trả về dữ liệu cũ<br>- Không có Toast CRUD</td>
+</tr>
+<tr>
+<td>Case 14: Bỏ khung cố định và tái sinh lịch tương lai</td>
+<td>High</td>
+<td></td>
+<td>Flow 2 / REQ03</td>
+<td>Role CRUD</td>
+<td>Lớp có lịch hoàn thành và lịch tương lai</td>
+<td><strong>Given</strong> bỏ một khung cố định<br><strong>When</strong> xác nhận<br><strong>Then</strong> tái sinh phần tương lai bằng các khung còn lại</td>
+<td>- Không đổi buổi hoàn thành/hủy lịch sử<br>- Tổng hợp lệ vẫn N<br>- Đánh số liên tục<br>- Cập nhật ngày kết thúc</td>
+</tr>
+<tr>
+<td>Case 15: Không thể sinh đủ lịch</td>
+<td>High</td>
+<td></td>
+<td>EX03 / REQ03</td>
+<td>Role CRUD</td>
+<td>Không còn khung hợp lệ</td>
+<td><strong>Given</strong> cấu hình không thể tạo đủ N buổi<br><strong>When</strong> xác nhận<br><strong>Then</strong> từ chối toàn bộ</td>
+<td>- Giữ cấu hình/lịch cũ<br>- Không có lịch nửa chừng<br>- Nêu rõ cần bổ sung khung</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="popup-them-lich-day-linh-hoat">Popup Thêm Lịch Dạy Linh Hoạt</h3>
+<p align="center">
+  <a href="./images/28-class-schedule-add-flexible.png"><img src="./images/28-class-schedule-add-flexible.png" alt="Popup thêm lịch dạy linh hoạt" width="780" title="Nhấn để xem ảnh gốc"></a><br>
+  <em>Thêm một hoặc nhiều lịch linh hoạt trong tuần được chọn — nhấn để xem ảnh gốc</em>
+</p>
+
+<p><strong>Mô tả:</strong> Cho phép thêm một hoặc nhiều lịch linh hoạt tại ngày/giờ cụ thể. Bấm dấu <code>+</code> ở một ngày trên lịch tuần mở trực tiếp form này và chọn sẵn ngày tương ứng.</p>
+<p><strong>Giải thích field/thành phần:</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Field/thành phần</th>
+<th>Yêu cầu</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Khoảng tuần</td>
+<td>Mũi tên chuyển tuần cần chọn; các checkbox thứ ánh xạ đúng ngày thực tế trong tuần đó.</td>
+</tr>
+<tr>
+<td>Giờ bắt đầu/kết thúc</td>
+<td>Áp dụng cho các ngày được chọn trên cùng dòng; giờ kết thúc phải sau giờ bắt đầu.</td>
+</tr>
+<tr>
+<td>Thứ trong tuần</td>
+<td>Mỗi checkbox tạo một lịch linh hoạt ở ngày tương ứng trong tuần đang chọn.</td>
+</tr>
+<tr>
+<td>Thêm lịch dạy</td>
+<td>Thêm dòng giờ khác để tạo nhiều lịch trong một lần.</td>
+</tr>
+<tr>
+<td>Xác Nhận</td>
+<td>Validate toàn bộ rồi chèn các lịch linh hoạt nguyên tử vào timeline lớp.</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Điểm cần lưu ý:</strong></p>
+<ul>
+<li>Lịch linh hoạt được tính vào tổng N buổi của khóa học. Khi chèn vào giữa timeline, hệ thống sắp xếp lại và điều chỉnh các lịch cố định phía sau để cuối cùng vẫn có đúng N buổi hợp lệ.</li>
+<li>Không được sửa hoặc đẩy lùi các lịch đã mở/hoàn thành. Chỉ điều chỉnh phần lịch tương lai chưa mở.</li>
+<li>Nhiều lịch linh hoạt trong một lần phải lưu nguyên tử; nếu một lịch trùng lịch lớp hoặc trùng lịch giáo viên ở bất kỳ lớp nào thì cảnh báo, chặn xác nhận và không thêm một phần.</li>
+<li>Lịch linh hoạt phải hiển thị xanh dương cho đến khi được hoàn thành hoặc hủy.</li>
+<li>Việc chèn có thể làm thay đổi buổi N và Ngày kết thúc dự kiến; hệ thống cập nhật sau khi commit thành công.</li>
+</ul>
+<h4 id="testcase-popup-them-lich-day-linh-hoat">Testcase — Popup Thêm Lịch Dạy Linh Hoạt</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 16: Tạo lịch linh hoạt từ dấu cộng</td>
+<td>High</td>
+<td>Smoke</td>
+<td>Flow 3 / REQ04</td>
+<td>Role CRUD</td>
+<td>Tuần đang hiển thị</td>
+<td><strong>Given</strong> bấm <code>+</code> tại ngày D<br><strong>When</strong> nhập giờ và xác nhận<br><strong>Then</strong> tạo lịch linh hoạt tại D</td>
+<td>- Thẻ xanh dương<br>- Đúng class_id/ngày/giờ<br>- Có Toast thành công</td>
+</tr>
+<tr>
+<td>Case 17: Thêm nhiều lịch linh hoạt nguyên tử</td>
+<td>High</td>
+<td></td>
+<td>Flow 3 / REQ04</td>
+<td>Role CRUD</td>
+<td>Các ngày/giờ hợp lệ</td>
+<td><strong>Given</strong> chọn nhiều ngày/dòng giờ<br><strong>When</strong> xác nhận<br><strong>Then</strong> thêm tất cả trong một giao dịch</td>
+<td>- Không mất lựa chọn<br>- Không tạo trùng<br>- Timeline sắp theo thời gian</td>
+</tr>
+<tr>
+<td>Case 18: Chèn lịch và cân bằng về đúng N buổi</td>
+<td>High</td>
+<td></td>
+<td>Flow 3 / REQ04</td>
+<td>Role CRUD</td>
+<td>Lớp đã có đủ N lịch, phần sau chưa mở</td>
+<td><strong>Given</strong> chèn lịch linh hoạt ở giữa<br><strong>When</strong> commit thành công<br><strong>Then</strong> điều chỉnh các lịch cố định sau đó</td>
+<td>- Tổng lịch hợp lệ vẫn N<br>- Không đổi lịch đã mở/hoàn thành<br>- Đánh số lại liên tục<br>- Ngày kết thúc cập nhật theo buổi N</td>
+</tr>
+<tr>
+<td>Case 19: Một lịch trong nhóm bị trùng lịch lớp hoặc lịch giáo viên</td>
+<td>High</td>
+<td></td>
+<td>EX04 / REQ04</td>
+<td>Role CRUD</td>
+<td>Chọn nhiều lịch, có một lịch trùng với lớp hiện tại hoặc lịch của giáo viên tại lớp khác</td>
+<td><strong>Given</strong> một phần tử không hợp lệ<br><strong>When</strong> xác nhận<br><strong>Then</strong> cảnh báo và từ chối toàn bộ nhóm</td>
+<td>- Không thêm một phần<br>- Chỉ rõ giáo viên/ngày/giờ trùng<br>- Không cho bỏ qua cảnh báo để vẫn tạo<br>- Cho phép sửa và thử lại</td>
+</tr>
+<tr>
+<td>Case 20: Hủy popup linh hoạt</td>
+<td>Medium</td>
+<td></td>
+<td>REQ04</td>
+<td>Role CRUD</td>
+<td>Có draft chưa lưu</td>
+<td><strong>Given</strong> đã nhập lịch<br><strong>When</strong> bấm Hủy<br><strong>Then</strong> đóng popup</td>
+<td>- Không tạo lịch<br>- Không cân bằng lại timeline<br>- Không có Toast thành công</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="popup-xemchinh-sua-khi-bam-the-lich">Popup xem/chỉnh sửa khi bấm thẻ lịch</h3>
+<p align="center">
+  <a href="./images/29-class-schedule-edit-popup.png"><img src="./images/29-class-schedule-edit-popup.png" alt="Popup chỉnh sửa một lịch dạy" width="900" title="Nhấn để xem ảnh gốc"></a><br>
+  <em>Bấm một thẻ lịch để xem hoặc chỉnh sửa đúng buổi học — nhấn để xem ảnh gốc</em>
+</p>
+
+<p><strong>Mô tả:</strong> Bấm vào một thẻ lịch mở popup của đúng <code>schedule_id</code>. <code>Admin</code>, <code>Class Handler</code> và <code>Support</code> được chỉnh lịch chưa hoàn thành; <code>Teacher</code> mở cùng popup ở chế độ chỉ xem.</p>
+<p><strong>Giải thích field/thành phần:</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Field/thành phần</th>
+<th>Yêu cầu</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Tiêu đề</td>
+<td>Lịch nguồn cố định hiển thị <code>Chỉnh sửa lịch cố định</code>; lịch nguồn linh hoạt hiển thị <code>Chỉnh sửa lịch linh hoạt</code>. Teacher hoặc lịch bị khóa hiển thị theo chế độ xem, không tạo cảm giác có thể sửa.</td>
+</tr>
+<tr>
+<td>Thời gian/Ngày</td>
+<td>Ngày diễn ra của đúng buổi; cho chỉnh khi lịch chưa hoàn thành/hủy.</td>
+</tr>
+<tr>
+<td>Giờ bắt đầu</td>
+<td>Giờ bắt đầu của buổi; phải kết hợp với Thời gian học để tính giờ kết thúc và kiểm tra trùng.</td>
+</tr>
+<tr>
+<td>Giáo viên</td>
+<td>Chọn trong các giáo viên hợp lệ đã được thêm vào lớp. Khi đổi phải kiểm tra lịch giáo viên trên tất cả lớp.</td>
+</tr>
+<tr>
+<td>Thời gian học</td>
+<td>Chọn thời lượng từ cấu hình cho phép, ví dụ <code>90 phút</code>; <code>Giờ kết thúc = Giờ bắt đầu + Thời gian học</code>. Không cho thời lượng bằng 0 hoặc âm.</td>
+</tr>
+<tr>
+<td>Trạng thái</td>
+<td>Với lịch chưa kết thúc, cho chọn <code>Đang đợi</code>, <code>Hoàn thành</code>, <code>Hủy bỏ</code>. Lịch <code>Hoàn thành</code> có flow <code>Mở lại</code> để trở về <code>Đang đợi</code>, đảo lương rồi mới cho sửa/hủy. <code>Đang đợi</code> giữ màu theo loại nguồn; hai trạng thái kết thúc kích hoạt nghiệp vụ tương ứng.</td>
+</tr>
+<tr>
+<td>Hủy</td>
+<td>Nút đóng popup, nhãn tiếng Việt là <code>Hủy</code>; bỏ thay đổi chưa xác nhận. Không phải hành động Hủy bỏ lịch.</td>
+</tr>
+<tr>
+<td>Xác nhận</td>
+<td>Validate phiên bản, quyền, field, trùng lịch và trạng thái; chỉ cập nhật UI sau khi backend commit.</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Điểm cần lưu ý:</strong></p>
+<ul>
+<li><code>Hủy</code> ở chân popup chỉ đóng form; <code>Hủy bỏ</code> trong dropdown Trạng thái mới là nghiệp vụ hủy lịch và sinh buổi bù. Hai hành động phải có câu chữ/thiết kế phân biệt rõ.</li>
+<li>Thay đổi ngày, giờ bắt đầu, thời lượng hoặc giáo viên phải kiểm tra cả trùng lịch của lớp hiện tại và trùng lịch giáo viên trên tất cả lớp. Có trùng thì cảnh báo và không cho xác nhận.</li>
+<li>Chỉnh một buổi cố định chỉ tạo override cho occurrence đó, không âm thầm sửa toàn bộ khung lặp phía trên. Nguồn lịch vẫn là <code>Cố định</code> để audit; các lần tái sinh sau không được ghi đè occurrence đã override.</li>
+<li>Chuyển <code>Đang đợi → Hoàn thành</code> phải tạo lương đúng một lần trong cùng giao dịch. Chuyển <code>Đang đợi → Hủy bỏ</code> phải loại buổi khỏi N, sinh bù và cập nhật ngày kết thúc trong cùng giao dịch.</li>
+<li>Lịch <code>Hủy bỏ</code> mở ở chế độ chỉ xem. Lịch <code>Hoàn thành</code> hiển thị dữ liệu khóa và hành động <code>Mở lại</code> cho Admin/Class Handler/Support; chỉ sau khi mở lại và đảo lương thành công mới cho sửa field hoặc hủy lịch.</li>
+<li>Teacher xem được toàn bộ field của lịch trong phạm vi nhưng các control là read-only; không gửi request cập nhật.</li>
+<li>Không dùng hover làm thao tác xóa trực tiếp. Hover chỉ được hiển thị tooltip/trạng thái hoặc affordance mở chi tiết; mọi cập nhật thực hiện trong popup.</li>
+</ul>
+<h4 id="testcase-popup-xemchinh-sua-khi-bam-the-lich">Testcase — Popup xem/chỉnh sửa khi bấm thẻ lịch</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 21: Mở đúng popup của thẻ được bấm</td>
+<td>High</td>
+<td></td>
+<td>Flow 4 / REQ10</td>
+<td>Role có quyền xem</td>
+<td>Tuần có nhiều lịch</td>
+<td><strong>Given</strong> bấm thẻ lịch A<br><strong>When</strong> popup mở<br><strong>Then</strong> tải theo schedule_id của A</td>
+<td>- Đúng ngày, giờ, giáo viên, thời lượng, trạng thái<br>- Không lấy dữ liệu lịch B<br>- Tiêu đề đúng loại nguồn</td>
+</tr>
+<tr>
+<td>Case 22: Teacher xem popup ở chế độ chỉ đọc</td>
+<td>High</td>
+<td></td>
+<td>REQ02 / Ràng buộc quyền</td>
+<td><code>Teacher</code></td>
+<td>Được phân công lớp</td>
+<td><strong>Given</strong> Teacher bấm một thẻ lịch<br><strong>When</strong> popup mở<br><strong>Then</strong> chỉ xem dữ liệu</td>
+<td>- Không sửa field/trạng thái<br>- Không có nút xác nhận cập nhật<br>- API sửa trực tiếp bị từ chối</td>
+</tr>
+<tr>
+<td>Case 23: Chỉnh ngày, giờ hoặc thời lượng hợp lệ</td>
+<td>High</td>
+<td></td>
+<td>REQ10</td>
+<td>Role CRUD</td>
+<td>Lịch đang Đang đợi</td>
+<td><strong>Given</strong> nhập giá trị mới không trùng<br><strong>When</strong> Xác nhận<br><strong>Then</strong> cập nhật đúng occurrence</td>
+<td>- Tính lại giờ kết thúc<br>- Không đổi khung lặp chung<br>- Không ghi đè lịch khác<br>- Toast thành công</td>
+</tr>
+<tr>
+<td>Case 24: Đổi giáo viên không bị trùng lịch</td>
+<td>High</td>
+<td></td>
+<td>REQ10</td>
+<td>Role CRUD</td>
+<td>Giáo viên mới thuộc lớp và rảnh</td>
+<td><strong>Given</strong> chọn giáo viên mới<br><strong>When</strong> Xác nhận<br><strong>Then</strong> cập nhật teacher_id của lịch</td>
+<td>- Kiểm tra lịch toàn hệ thống<br>- Thẻ hiển thị giáo viên mới<br>- Không tác động lịch khác</td>
+</tr>
+<tr>
+<td>Case 25: Chặn chỉnh sửa gây trùng lịch</td>
+<td>High</td>
+<td></td>
+<td>EX02 / REQ10</td>
+<td>Role CRUD</td>
+<td>Thời gian mới trùng lớp hoặc lịch giáo viên ở lớp khác</td>
+<td><strong>Given</strong> sửa field tạo khoảng giao nhau<br><strong>When</strong> Xác nhận<br><strong>Then</strong> cảnh báo và không lưu</td>
+<td>- Nêu đúng giáo viên/ngày/giờ trùng<br>- Không có lựa chọn bỏ qua<br>- Giữ dữ liệu cũ ở backend</td>
+</tr>
+<tr>
+<td>Case 26: Nút Hủy chỉ đóng popup</td>
+<td>Medium</td>
+<td></td>
+<td>REQ10</td>
+<td>Role CRUD</td>
+<td>Có thay đổi chưa xác nhận</td>
+<td><strong>Given</strong> đã sửa field<br><strong>When</strong> bấm <code>Hủy</code> ở chân popup<br><strong>Then</strong> đóng form</td>
+<td>- Không chuyển trạng thái Hủy bỏ<br>- Không sinh lịch bù<br>- Không lưu draft/Toast thành công</td>
+</tr>
+<tr>
+<td>Case 27: Đổi trạng thái từ popup</td>
+<td>High</td>
+<td></td>
+<td>Flow 4–5 / REQ06–REQ07 / REQ10</td>
+<td>Role CRUD</td>
+<td>Lịch đang Đang đợi</td>
+<td><strong>Given</strong> lần lượt chọn Hoàn thành và Hủy bỏ trên các lịch hợp lệ<br><strong>When</strong> Xác nhận<br><strong>Then</strong> chạy đúng nghiệp vụ trạng thái</td>
+<td>- Hoàn thành: xanh lá và tính lương một lần<br>- Hủy bỏ: xám, không lương, sinh bù và cập nhật ngày kết thúc<br>- Không chỉ đổi màu ở client</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="hoan-thanh-va-huy-lich">Hoàn thành và hủy lịch</h3>
+<p><strong>Mô tả:</strong> Role CRUD có thể cập nhật một lịch hợp lệ thành <code>Hoàn thành</code> hoặc <code>Hủy bỏ</code>. Hoàn thành làm phát sinh lương giáo viên; hủy loại buổi khỏi chương trình và tự sinh một buổi bù ở cuối theo lịch cố định. Lịch còn được <strong>Hoàn thành qua luồng dạy</strong> của giáo viên: giáo viên chọn lịch khi <code>Bắt đầu buổi học</code> (lịch được gắn buổi, giữ <code>Đang đợi</code>) và lịch chuyển <code>Hoàn thành</code> khi giáo viên bấm <code>Hoàn thành buổi học</code>.</p>
+<p><strong>Giải thích field/thành phần:</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Hành động</th>
+<th>Xử lý bắt buộc</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Hoàn thành</td>
+<td>Kiểm tra lịch/giáo viên → chuyển xanh lá → ghi nhận buổi hợp lệ → tạo lương giáo viên đúng một lần.</td>
+</tr>
+<tr>
+<td>Hoàn thành qua luồng dạy</td>
+<td>Khi giáo viên bấm <code>Hoàn thành buổi học</code> của bài đã gắn lịch: cùng xử lý như Hoàn thành ở trên (xanh lá, buổi hợp lệ, một khoản lương cho <strong>giáo viên của buổi</strong>), ghi audit nguồn là luồng dạy. Lịch đang gắn với buổi <code>Đang dạy</code> / <code>Chờ hoàn thành</code> vẫn ở <code>Đang đợi</code>, không chọn được cho buổi khác.</td>
+</tr>
+<tr>
+<td>Hủy bỏ</td>
+<td>Chuyển xám → loại khỏi số buổi hợp lệ → không tính lương → sinh một lịch cố định bù sau buổi hợp lệ cuối cùng → tăng Ngày kết thúc dự kiến.</td>
+</tr>
+<tr>
+<td>Sửa lịch chưa hoàn thành</td>
+<td>Cho phép role CRUD sửa ngày/giờ/giáo viên theo field UI chi tiết; phải kiểm tra trùng và cân bằng lịch.</td>
+</tr>
+<tr>
+<td>Xóa</td>
+<td>Không xóa vật lý lịch chương trình. Thao tác loại bỏ lịch phải dùng trạng thái Hủy bỏ để giữ audit và kích hoạt sinh bù.</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Điểm cần lưu ý:</strong></p>
+<ul>
+<li>Buổi hủy vẫn hiển thị màu xám trong tuần/lịch sử nhưng không nằm trong tập N buổi hợp lệ.</li>
+<li>Lịch bù được tạo tại khung cố định hợp lệ đầu tiên <strong>sau buổi hợp lệ cuối cùng hiện tại</strong>. Nếu khung đó trùng thì bỏ qua và tìm khung cố định kế tiếp.</li>
+<li>Mỗi lịch hủy tạo đúng một lịch bù. Request hủy gửi lặp không được tạo nhiều lịch bù hoặc kéo dài ngày kết thúc nhiều lần.</li>
+<li>Sau khi sinh bù, Ngày kết thúc dự kiến tự đổi thành ngày của buổi hợp lệ thứ N mới.</li>
+<li>Hoàn thành và tạo lương phải nhất quán: không được có trạng thái xanh lá nhưng thiếu khoản lương, hoặc tạo lương khi trạng thái chưa hoàn thành.</li>
+<li>Không cho hoàn thành lịch đã hủy. Lịch đã hoàn thành không được sửa/hủy trực tiếp; phải đi qua flow <code>Mở lại</code>, đảo lương và trở về <code>Đang đợi</code> trước.</li>
+<li>Lớp không chính thức được nới điều kiện nội dung/bài học để test nhưng vẫn phải chống ghi lương trùng, lưu audit và kiểm tra quyền.</li>
+</ul>
+<h4 id="testcase-hoan-thanh-va-huy-lich">Testcase — Hoàn thành và hủy lịch</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 28: Hoàn thành lịch cố định</td>
+<td>High</td>
+<td>Smoke</td>
+<td>Flow 4 / REQ06</td>
+<td>Role CRUD</td>
+<td>Lịch cố định hợp lệ, có giáo viên</td>
+<td><strong>Given</strong> lịch màu cam<br><strong>When</strong> đánh dấu Hoàn thành<br><strong>Then</strong> cập nhật trạng thái và lương</td>
+<td>- Thẻ xanh lá<br>- Vẫn lưu nguồn Cố định<br>- Lương đúng giáo viên/lịch<br>- Một audit và Toast</td>
+</tr>
+<tr>
+<td>Case 29: Hoàn thành lịch linh hoạt</td>
+<td>High</td>
+<td></td>
+<td>Flow 4 / REQ06</td>
+<td>Role CRUD</td>
+<td>Lịch linh hoạt hợp lệ, có giáo viên</td>
+<td><strong>Given</strong> lịch màu xanh dương<br><strong>When</strong> hoàn thành<br><strong>Then</strong> xử lý như buổi hợp lệ</td>
+<td>- Thẻ xanh lá<br>- Vẫn lưu nguồn Linh hoạt<br>- Tính lương đúng một lần</td>
+</tr>
+<tr>
+<td>Case 30: Gửi lặp hoàn thành</td>
+<td>High</td>
+<td></td>
+<td>EX05 / REQ06</td>
+<td>Role CRUD</td>
+<td>Lịch đã hoàn thành</td>
+<td><strong>Given</strong> request hoàn thành bị gửi lặp<br><strong>When</strong> backend xử lý<br><strong>Then</strong> kết quả idempotent</td>
+<td>- Một trạng thái hoàn thành<br>- Một khoản lương<br>- Không nhân đôi Toast/audit logic</td>
+</tr>
+<tr>
+<td>Case 31: Hủy lịch cố định và sinh buổi bù</td>
+<td>High</td>
+<td>Smoke</td>
+<td>Flow 5 / REQ07</td>
+<td>Role CRUD</td>
+<td>Có lịch cố định tương lai và khung cố định hợp lệ</td>
+<td><strong>Given</strong> hủy một lịch màu cam<br><strong>When</strong> backend commit<br><strong>Then</strong> chuyển xám và sinh bù ở cuối</td>
+<td>- Lịch hủy không tính trong N<br>- Lịch bù màu cam<br>- Tổng hợp lệ vẫn N<br>- Ngày kết thúc tăng theo buổi bù</td>
+</tr>
+<tr>
+<td>Case 32: Hủy lịch linh hoạt và sinh buổi bù cố định</td>
+<td>High</td>
+<td></td>
+<td>Flow 5 / REQ07</td>
+<td>Role CRUD</td>
+<td>Có lịch linh hoạt và cấu hình cố định</td>
+<td><strong>Given</strong> hủy lịch xanh dương<br><strong>When</strong> commit<br><strong>Then</strong> dùng khung cố định để bù ở cuối</td>
+<td>- Lịch cũ màu xám<br>- Không tính lương<br>- Chỉ một lịch bù<br>- Giữ nguồn Linh hoạt trong audit lịch hủy</td>
+</tr>
+<tr>
+<td>Case 33: Khung bù đầu tiên bị trùng</td>
+<td>High</td>
+<td></td>
+<td>EX06 / REQ07</td>
+<td>Role CRUD</td>
+<td>Khung cố định kế tiếp đã có lịch trùng</td>
+<td><strong>Given</strong> cần sinh bù<br><strong>When</strong> gặp thời gian trùng<br><strong>Then</strong> tìm khung hợp lệ tiếp theo</td>
+<td>- Không tạo lịch chồng<br>- Vẫn đủ N<br>- Ngày kết thúc theo lịch bù thực tế</td>
+</tr>
+<tr>
+<td>Case 34: Hủy lặp không sinh nhiều buổi bù</td>
+<td>High</td>
+<td></td>
+<td>EX07 / REQ07</td>
+<td>Role CRUD</td>
+<td>Lịch đã hủy và đã có compensation_schedule_id</td>
+<td><strong>Given</strong> request hủy gửi lại<br><strong>When</strong> backend xử lý<br><strong>Then</strong> trả trạng thái hiện tại</td>
+<td>- Không tạo lịch bù thứ hai<br>- Không tăng ngày kết thúc thêm lần nữa<br>- Không ghi lương</td>
+</tr>
+<tr>
+<td>Case 35: Chặn hoàn thành lịch hủy hoặc sửa trực tiếp lịch hoàn thành</td>
+<td>High</td>
+<td></td>
+<td>EX08 / REQ06 / REQ11</td>
+<td>Role CRUD</td>
+<td>Lịch đã ở trạng thái kết thúc</td>
+<td><strong>Given</strong> gửi thao tác hoàn thành lịch đã hủy hoặc sửa field lịch hoàn thành mà chưa Mở lại<br><strong>When</strong> backend kiểm tra version/trạng thái<br><strong>Then</strong> từ chối</td>
+<td>- Không đổi trạng thái<br>- Không thay lương<br>- Lịch hoàn thành phải đi qua flow Mở lại<br>- Yêu cầu tải lại dữ liệu mới nhất</td>
+</tr>
+<tr>
+<td>Case 36: Không thể sinh lịch bù</td>
+<td>High</td>
+<td></td>
+<td>EX06 / REQ07</td>
+<td>Role CRUD</td>
+<td>Không có khung cố định hợp lệ</td>
+<td><strong>Given</strong> yêu cầu hủy<br><strong>When</strong> backend không tìm được thời gian bù<br><strong>Then</strong> không commit nửa chừng</td>
+<td>- Giữ trạng thái lịch cũ<br>- Không thay N/ngày kết thúc<br>- Báo cần bổ sung lịch cố định</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="mo-lai-lich-da-hoan-thanh-va-dao-luong">Mở lại lịch đã hoàn thành và đảo lương</h3>
+<p><strong>Mô tả:</strong> Cho phép <code>Admin</code>, <code>Class Handler</code> và <code>Support</code> mở lại một lịch đã <code>Hoàn thành</code> để sửa hoặc hủy. Đây là nghiệp vụ điều chỉnh có ảnh hưởng tài chính nên phải đảo khoản lương hiệu lực và lưu toàn bộ audit trước khi lịch trở về <code>Đang đợi</code>.</p>
+<p><strong>Giải thích field/thành phần:</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Thành phần</th>
+<th>Yêu cầu</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Nút <code>Mở lại</code></td>
+<td>Chỉ hiển thị cho role CRUD khi lịch đang Hoàn thành; Teacher không thấy hành động này.</td>
+</tr>
+<tr>
+<td>Lý do điều chỉnh</td>
+<td>Bắt buộc nhập, không chỉ có khoảng trắng; lưu vào audit lịch và bút toán lương.</td>
+</tr>
+<tr>
+<td>Cảnh báo</td>
+<td>Nêu rõ lịch sẽ trở về Đang đợi và khoản lương đã phát sinh sẽ được đảo/điều chỉnh.</td>
+</tr>
+<tr>
+<td>Hủy</td>
+<td>Đóng popup, giữ nguyên lịch Hoàn thành và khoản lương hiện tại.</td>
+</tr>
+<tr>
+<td>Xác nhận mở lại</td>
+<td>Thực hiện đảo lương và đổi trạng thái trong một giao dịch; sau thành công mới mở khóa các field chỉnh sửa.</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Điểm cần lưu ý:</strong></p>
+<ul>
+<li>Không xóa vật lý khoản lương cũ. Phải tạo bút toán đảo/điều chỉnh liên kết với khoản lương gốc để lịch sử tài chính có thể truy vết.</li>
+<li>Sau khi mở lại thành công, lịch trở về <code>Đang đợi</code> và hiển thị màu theo nguồn ban đầu: cam nếu Cố định, xanh dương nếu Linh hoạt.</li>
+<li>Nếu người dùng tiếp tục chọn <code>Hủy bỏ</code>, hệ thống dùng flow hủy bình thường: loại khỏi N, không còn lương hiệu lực, sinh lịch bù ở cuối và cập nhật ngày kết thúc.</li>
+<li>Nếu lịch được hoàn thành lại, hệ thống tạo lần ghi nhận lương mới; tại một thời điểm chỉ có một khoản lương <strong>hiệu lực</strong> cho schedule. Khoản cũ và bút toán đảo vẫn giữ trong lịch sử.</li>
+<li>Điểm danh, bài học, BTVN, bài kiểm tra hoặc dữ liệu liên quan đã phát sinh không được xóa theo flow mở lại; phải giữ audit và hiển thị cảnh báo dữ liệu phụ thuộc.</li>
+<li>Nếu bảng lương đã khóa/chốt, không sửa trực tiếp kỳ cũ. Hệ thống tạo bút toán điều chỉnh ở kỳ cho phép gần nhất; nếu chưa thể tạo điều chỉnh thì không mở lại một phần.</li>
+<li>Request mở lại gửi lặp phải idempotent: chỉ một bút toán đảo và một lần chuyển về Đang đợi.</li>
+</ul>
+<h4 id="testcase-mo-lai-lich-da-hoan-thanh-va-dao-luong">Testcase — Mở lại lịch đã hoàn thành và đảo lương</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 37: Hiển thị hành động Mở lại đúng quyền</td>
+<td>High</td>
+<td></td>
+<td>Flow 6 / REQ11</td>
+<td>Kiểm thử role CRUD và Teacher</td>
+<td>Lịch đã Hoàn thành</td>
+<td><strong>Given</strong> mở popup thẻ lịch<br><strong>When</strong> kiểm tra action<br><strong>Then</strong> chỉ role CRUD thấy Mở lại</td>
+<td>- Admin/Class Handler/Support thấy action<br>- Teacher chỉ xem<br>- Backend vẫn kiểm tra quyền</td>
+</tr>
+<tr>
+<td>Case 38: Bắt buộc lý do khi mở lại</td>
+<td>High</td>
+<td></td>
+<td>REQ11</td>
+<td>Role CRUD</td>
+<td>Popup Mở lại đang mở</td>
+<td><strong>Given</strong> lý do trống/chỉ khoảng trắng<br><strong>When</strong> xác nhận<br><strong>Then</strong> không thực hiện</td>
+<td>- Báo lỗi đúng field<br>- Lịch vẫn Hoàn thành<br>- Lương vẫn hiệu lực</td>
+</tr>
+<tr>
+<td>Case 39: Mở lại và đảo lương thành công</td>
+<td>High</td>
+<td></td>
+<td>Flow 6 / REQ11</td>
+<td>Role CRUD</td>
+<td>Lịch Hoàn thành có một khoản lương hiệu lực</td>
+<td><strong>Given</strong> nhập lý do hợp lệ<br><strong>When</strong> xác nhận Mở lại<br><strong>Then</strong> đảo lương và đưa lịch về Đang đợi</td>
+<td>- Không xóa khoản lương gốc<br>- Có bút toán đảo liên kết<br>- Không còn lương hiệu lực cho lịch<br>- Thẻ trở về màu nguồn<br>- Có audit/Toast</td>
+</tr>
+<tr>
+<td>Case 40: Mở lại rồi hủy lịch</td>
+<td>High</td>
+<td></td>
+<td>Flow 6 → Flow 5 / REQ07 / REQ11</td>
+<td>Role CRUD</td>
+<td>Lịch đã mở lại thành Đang đợi</td>
+<td><strong>Given</strong> chọn Hủy bỏ<br><strong>When</strong> xác nhận<br><strong>Then</strong> chạy flow hủy</td>
+<td>- Lịch màu xám<br>- Không có lương hiệu lực<br>- Sinh đúng một lịch bù<br>- Cập nhật ngày kết thúc</td>
+</tr>
+<tr>
+<td>Case 41: Hoàn thành lại sau khi mở</td>
+<td>High</td>
+<td></td>
+<td>Flow 6 → Flow 4 / REQ06 / REQ11</td>
+<td>Role CRUD</td>
+<td>Lịch đã mở lại và chỉnh hợp lệ</td>
+<td><strong>Given</strong> chọn Hoàn thành lại<br><strong>When</strong> xác nhận<br><strong>Then</strong> tạo lần lương mới</td>
+<td>- Một khoản lương mới hiệu lực<br>- Lương gốc và bút toán đảo vẫn có audit<br>- Không tạo hai khoản hiệu lực cùng lúc</td>
+</tr>
+<tr>
+<td>Case 42: Bảng lương đã khóa</td>
+<td>High</td>
+<td></td>
+<td>EX10 / REQ11</td>
+<td>Role CRUD</td>
+<td>Khoản lương thuộc kỳ đã chốt</td>
+<td><strong>Given</strong> yêu cầu Mở lại<br><strong>When</strong> backend xử lý<br><strong>Then</strong> tạo điều chỉnh ở kỳ cho phép hoặc từ chối nguyên tử</td>
+<td>- Không sửa/xóa kỳ đã khóa<br>- Không đổi lịch nếu chưa xử lý được điều chỉnh<br>- Nêu rõ lý do và hướng xử lý</td>
+</tr>
+<tr>
+<td>Case 43: Gửi lặp yêu cầu Mở lại</td>
+<td>High</td>
+<td></td>
+<td>EX11 / REQ11</td>
+<td>Role CRUD</td>
+<td>Request đầu đã thành công hoặc đang xử lý</td>
+<td><strong>Given</strong> cùng idempotency key được gửi lại<br><strong>When</strong> backend xử lý<br><strong>Then</strong> trả kết quả hiện tại</td>
+<td>- Một bút toán đảo<br>- Một audit logic<br>- Không đảo lương hai lần</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="toast-phan-hoi-crud-lich">Toast phản hồi CRUD lịch</h3>
+<p align="center">
+  <a href="../../images/01-toast-crud.png"><img src="../../images/01-toast-crud.png" alt="Bốn trạng thái Toast CRUD" width="520" title="Nhấn để xem ảnh gốc"></a><br>
+  <em>Toast phản hồi tạo, cập nhật, hoàn thành và hủy lịch — nhấn để xem ảnh gốc</em>
+</p>
+
+<p><strong>Mô tả:</strong> Hiển thị kết quả CRUD sau phản hồi backend.</p>
+<p><strong>Giải thích thành phần:</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Loại</th>
+<th>Tiêu đề</th>
+<th>Ví dụ nội dung</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Thành công</td>
+<td><code>Thành Công</code></td>
+<td><code>Đã thêm lịch linh hoạt.</code>, <code>Đã hoàn thành buổi học.</code>, <code>Đã hủy lịch và tạo buổi bù.</code>, <code>Đã mở lại lịch và điều chỉnh lương.</code></td>
+</tr>
+<tr>
+<td>Thông tin</td>
+<td><code>Thông Báo</code></td>
+<td><code>Lịch đang được tái tạo, danh sách sẽ cập nhật sau ít phút.</code></td>
+</tr>
+<tr>
+<td>Cảnh báo</td>
+<td><code>Cảnh Báo</code></td>
+<td><code>Giáo viên đã có lịch trong khung giờ này. Vui lòng chọn thời gian khác.</code></td>
+</tr>
+<tr>
+<td>Lỗi</td>
+<td><code>Có Lỗi Xảy Ra</code></td>
+<td><code>Không thể cập nhật lịch. Vui lòng thử lại.</code></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Điểm cần lưu ý:</strong></p>
+<ul>
+<li>Chỉ báo thành công sau khi toàn bộ thay đổi liên quan đã commit, gồm lịch, lịch bù, ngày kết thúc và lương nếu có.</li>
+<li>Hủy popup, chuyển tuần, mở thẻ hoặc validation field chưa gửi backend không hiển thị Toast thành công.</li>
+<li>Không hiển thị stack trace, ID nội bộ nhạy cảm hoặc chi tiết tính lương trong Toast.</li>
+</ul>
+<h4 id="testcase-toast-phan-hoi-crud-lich">Testcase — Toast phản hồi CRUD lịch</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 44: Toast thành công đúng thao tác</td>
+<td>High</td>
+<td></td>
+<td>Ràng buộc Toast</td>
+<td>Role CRUD</td>
+<td>Backend commit thành công</td>
+<td><strong>Given</strong> tạo/sửa/hoàn thành/hủy/mở lại lịch<br><strong>When</strong> nhận kết quả thành công<br><strong>Then</strong> hiển thị một Toast</td>
+<td>- Nội dung đúng thao tác<br>- Không báo sớm<br>- UI đã đồng bộ dữ liệu</td>
+</tr>
+<tr>
+<td>Case 45: Toast cảnh báo trùng lịch</td>
+<td>High</td>
+<td></td>
+<td>Ràng buộc Toast</td>
+<td>Role CRUD</td>
+<td>Lịch trùng lớp hoặc trùng lịch giáo viên ở lớp khác</td>
+<td><strong>Given</strong> xác nhận lịch không hợp lệ<br><strong>When</strong> backend/validation từ chối<br><strong>Then</strong> hiển thị cảnh báo và không cho tạo</td>
+<td>- Không lưu một phần<br>- Nêu giáo viên/ngày/khung cần sửa<br>- Không có lựa chọn bỏ qua cảnh báo<br>- Không hiển thị thành công</td>
+</tr>
+<tr>
+<td>Case 46: Toast lỗi khi giao dịch thất bại</td>
+<td>High</td>
+<td></td>
+<td>Ràng buộc Toast</td>
+<td>Role CRUD</td>
+<td>Lỗi backend/network</td>
+<td><strong>Given</strong> thao tác đã gửi<br><strong>When</strong> giao dịch thất bại<br><strong>Then</strong> hiển thị lỗi</td>
+<td>- UI giữ/khôi phục trạng thái cũ<br>- Không có lương/lịch bù/bút toán đảo giả<br>- Cho phép thử lại an toàn</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="2-yeu-cau">2. Yêu cầu</h2>
+<h3 id="21-flow-chinh">2.1. Flow chính</h3>
+<p><strong>Flow 1 / REQ01–REQ02: Xem lịch theo tuần</strong></p>
+<pre><code class="language-text">Mở Chi tiết lớp → Tab Lịch dạy
+      → Backend kiểm tra quyền và phạm vi lớp
+      → Tải cấu hình cố định + lịch thuộc tuần
+      → Render đúng ngày/giờ/trạng thái
+      → Teacher chỉ xem; Admin/Class Handler/Support có control CRUD
+</code></pre>
+<p><strong>Flow 2 / REQ03: Thêm hoặc cập nhật lịch cố định</strong></p>
+<pre><code class="language-text">Bấm Thêm lịch dạy cố định
+      → Nhập ngày áp dụng, khung giờ và thứ
+      → Validate giờ, trùng lịch và khả năng sinh đủ N buổi
+      → Lưu cấu hình + tái sinh lịch tương lai nguyên tử
+      → Cập nhật ngày kết thúc dự kiến và Toast
+</code></pre>
+<p><strong>Flow 3 / REQ04: Thêm lịch linh hoạt</strong></p>
+<pre><code class="language-text">Bấm + tại ngày hoặc chọn tab Lịch Linh Hoạt
+      → Chọn tuần, ngày và giờ
+      → Validate toàn bộ nhóm lịch
+      → Chèn vào timeline, tính vào N
+      → Điều chỉnh lịch cố định phía sau để tổng vẫn đúng N
+      → Cập nhật buổi N/ngày kết thúc và Toast
+</code></pre>
+<p><strong>Flow 4 / REQ10, REQ06: Mở thẻ, chỉnh sửa hoặc hoàn thành lịch</strong></p>
+<pre><code class="language-text">Bấm thẻ lịch → tải popup theo schedule_id
+      → Teacher: chỉ xem
+      → Role CRUD: sửa field hoặc chọn trạng thái
+      → Backend kiểm tra version, quyền, trùng lịch và giáo viên
+      → Nếu Hoàn thành: cập nhật trạng thái + tạo khoản lương duy nhất gắn schedule_id
+      → Commit cùng giao dịch → cập nhật thẻ và Toast
+</code></pre>
+<p><strong>Flow 5 / REQ07: Hủy lịch và sinh buổi bù</strong></p>
+<pre><code class="language-text">Role CRUD chọn Hủy bỏ
+      → Backend kiểm tra lịch chưa hoàn thành
+      → Loại lịch khỏi tập N buổi hợp lệ, không tính lương
+      → Tìm khung cố định hợp lệ đầu tiên sau buổi cuối hiện tại
+      → Tạo đúng một lịch bù
+      → Ngày kết thúc dự kiến = ngày của buổi hợp lệ thứ N mới
+      → Commit nguyên tử → lịch cũ màu xám + Toast
+</code></pre>
+<p><strong>Flow 6 / REQ11: Mở lại lịch hoàn thành và đảo lương</strong></p>
+<pre><code class="language-text">Role CRUD mở lịch Hoàn thành → chọn Mở lại
+      → Nhập lý do bắt buộc → xác nhận
+      → Backend kiểm tra quyền, version và trạng thái bảng lương
+      → Tạo bút toán đảo/điều chỉnh liên kết khoản lương gốc
+      → Chuyển lịch về Đang đợi, giữ loại nguồn và toàn bộ audit
+      → Cho phép sửa hoặc chuyển sang Hủy bỏ
+      → Nếu Hoàn thành lại: tạo khoản lương mới, chỉ một khoản hiệu lực
+</code></pre>
+<h3 id="22-ngoai-le">2.2. Ngoại lệ</h3>
+<ul>
+<li><strong>EX01:</strong> Không có quyền hoặc ngoài phạm vi lớp → không trả control CRUD và backend từ chối request thay đổi.</li>
+<li><strong>EX02:</strong> Giờ kết thúc không sau giờ bắt đầu, dòng không chọn thứ, trùng lịch của lớp hoặc trùng lịch giáo viên tại bất kỳ lớp nào → cảnh báo, không cho tạo/lưu và đánh dấu đúng dòng/ngày.</li>
+<li><strong>EX03:</strong> Cấu hình cố định không thể sinh đủ N lịch hợp lệ → rollback toàn bộ cấu hình/lịch mới.</li>
+<li><strong>EX04:</strong> Một phần tử trong nhóm lịch linh hoạt không hợp lệ hoặc trùng lịch lớp/giáo viên → cảnh báo và không thêm một phần; trả danh sách cần sửa.</li>
+<li><strong>EX05:</strong> Request của cùng một lần hoàn thành gửi lặp/đồng thời → một trạng thái hoàn thành, một khoản lương hiệu lực cho completion version đó và một kết quả logic.</li>
+<li><strong>EX06:</strong> Không tìm được khung bù hoặc các khung tiếp theo bị trùng → tiếp tục tìm; nếu không thể xếp thì không commit hủy một phần.</li>
+<li><strong>EX07:</strong> Request hủy lặp → dùng quan hệ lịch hủy–lịch bù đã lưu, không tạo bù/lịch sử/ngày kết thúc lặp.</li>
+<li><strong>EX08:</strong> Lịch đã hoàn thành/hủy bị thao tác từ snapshot cũ → từ chối theo version/trạng thái mới nhất và yêu cầu tải lại.</li>
+<li><strong>EX09:</strong> Tạo/cập nhật lịch thành công nhưng bước liên quan lương, lịch bù hoặc ngày kết thúc lỗi → rollback giao dịch hoặc trả trạng thái phục hồi rõ ràng; không hiển thị thành công giả.</li>
+<li><strong>EX10:</strong> Khoản lương thuộc bảng lương đã khóa → không sửa/xóa kỳ cũ; tạo bút toán điều chỉnh ở kỳ cho phép hoặc từ chối toàn bộ thao tác Mở lại.</li>
+<li><strong>EX11:</strong> Request Mở lại gửi lặp/đồng thời → một bút toán đảo, một lần chuyển Đang đợi và một audit logic.</li>
+</ul>
+<h3 id="23-yeu-cau-khac">2.3. Yêu cầu khác</h3>
+<ul>
+<li><strong>REQ01 – Lịch tuần:</strong> Hiển thị đúng lịch của lớp theo tuần, ngày/giờ, giáo viên, mã lớp và trạng thái; số thẻ trong một ngày không bị giới hạn ở ba.</li>
+<li><strong>REQ02 – Phân quyền:</strong> Admin/Class Handler/Support được CRUD lịch trong phạm vi; Teacher chỉ xem lịch lớp được phân công tại tab. Lịch giáo viên đã chọn khi bắt đầu buổi học được hoàn thành gián tiếp qua <code>Hoàn thành buổi học</code> (requirement Giáo viên — Bài học).</li>
+<li><strong>REQ03 – Lịch cố định:</strong> Hỗ trợ nhiều khung giờ/ngày lặp; chặn trùng lịch lớp và trùng lịch giáo viên trên tất cả lớp; sinh/tái sinh lịch tương lai đến đủ đúng N buổi của khóa học.</li>
+<li><strong>REQ04 – Lịch linh hoạt:</strong> Dấu cộng tạo lịch linh hoạt; hỗ trợ một hoặc nhiều ngày/giờ trong tuần; chặn trùng lịch lớp/giáo viên; lịch chèn tính vào N và làm timeline tương lai tự cân bằng.</li>
+<li><strong>REQ05 – Trạng thái:</strong> Cố định màu cam, Linh hoạt xanh dương, Hoàn thành xanh lá, Hủy bỏ xám. Hoàn thành/Hủy bỏ là trạng thái ghi đè màu nhưng không làm mất loại nguồn.</li>
+<li><strong>REQ06 – Hoàn thành và lương:</strong> Mỗi lần chuyển hợp lệ từ Đang đợi sang Hoàn thành (tại tab hoặc qua luồng dạy) tạo một khoản lương giáo viên, <strong>ngày tính lương là ngày của lịch</strong>, không phải ngày hoàn thành. Chống lặp theo schedule_id và completion version; tại một thời điểm chỉ một khoản lương hiệu lực, không có trạng thái hoàn thành giả hoặc lương trùng.</li>
+<li><strong>REQ07 – Hủy và bù:</strong> Lịch hủy bị trừ khỏi N, không tính lương và tạo đúng một lịch bù ở cuối theo khung cố định; tự tăng ngày kết thúc dự kiến.</li>
+<li><strong>REQ08 – Audit/an toàn:</strong> Lưu người, thời điểm máy chủ, giá trị trước/sau, nguồn lịch, trạng thái và liên kết lịch bù; không tin role, class_id, teacher_id hoặc trạng thái do client tự khai.</li>
+<li><strong>REQ09 – Toast:</strong> Mọi CRUD có phản hồi đúng loại; chỉ thành công sau khi toàn bộ giao dịch liên quan đã hoàn tất.</li>
+<li><strong>REQ10 – Popup thẻ lịch:</strong> Bấm thẻ mở đúng schedule_id với Ngày, Giờ bắt đầu, Giáo viên, Thời gian học và Trạng thái. Role CRUD được sửa lịch Đang đợi; Teacher chỉ xem. Nút Hủy chỉ đóng form; trạng thái Hủy bỏ mới kích hoạt sinh bù.</li>
+<li><strong>REQ11 – Mở lại lịch hoàn thành:</strong> Admin/Class Handler/Support được mở lại lịch Hoàn thành khi nhập lý do. Hệ thống không xóa lương gốc mà tạo bút toán đảo/điều chỉnh, đưa lịch về Đang đợi rồi mới cho sửa/hủy. Hoàn thành lại tạo lần lương mới và chỉ một khoản lương có hiệu lực.</li>
+</ul>
+<h3 id="24-rang-buoc">2.4. Ràng buộc</h3>
+<h4 id="quyen-tai-tab-lich-day">Quyền tại tab Lịch dạy</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Role</th>
+<th style="text-align: center;">Xem lịch</th>
+<th style="text-align: center;">Tạo cố định/linh hoạt</th>
+<th style="text-align: center;">Sửa lịch</th>
+<th style="text-align: center;">Hoàn thành</th>
+<th style="text-align: center;">Hủy bỏ</th>
+<th style="text-align: center;">Mở lại hoàn thành</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Admin</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+</tr>
+<tr>
+<td>Class Handler</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+</tr>
+<tr>
+<td>Support</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+</tr>
+<tr>
+<td>Teacher được phân công</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+</tr>
+<tr>
+<td>Role khác</td>
+<td style="text-align: center;">Theo permission/phạm vi</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+</tr>
+</tbody>
+</table></div>
+<ul>
+<li>Teacher không hoàn thành lịch tại tab; lịch được hoàn thành gián tiếp khi giáo viên bấm <code>Hoàn thành buổi học</code> ở menu Bài học (lịch đã chọn lúc bắt đầu buổi).</li>
+</ul>
+<h4 id="so-buoi-va-ngay-ket-thuc">Số buổi và ngày kết thúc</h4>
+<ul>
+<li><code>N</code> lấy từ khóa học hiện tại của lớp.</li>
+<li>Tập N buổi hợp lệ gồm lịch Cố định/Linh hoạt chưa hủy và lịch Hoàn thành; không gồm lịch Hủy bỏ.</li>
+<li>Chèn lịch linh hoạt: tính vào N và cân bằng lại phần lịch cố định tương lai.</li>
+<li>Hủy bất kỳ lịch Cố định/Linh hoạt nào: trừ lịch đó khỏi N, giữ bản ghi xám và sinh một lịch cố định bù ở cuối.</li>
+<li>Ngày kết thúc dự kiến luôn bằng ngày của buổi hợp lệ thứ N; không lấy ngày của lịch hủy và không cho nhập thủ công.</li>
+<li>Không sửa, dời hoặc tái sinh đè lên lịch đã hoàn thành.</li>
+</ul>
+<h4 id="luong-giao-vien">Lương giáo viên</h4>
+<ul>
+<li>Chỉ lịch <code>Hoàn thành</code> mới phát sinh lương.</li>
+<li>Khoản lương gắn <code>schedule_id</code>, <code>teacher_id</code>, <code>class_id</code>, thời điểm hoàn thành và rule lương áp dụng; cách tính số tiền dẫn chiếu requirement lương giáo viên.</li>
+<li><strong>Ngày tính lương là ngày của lịch</strong>, không phải ngày bấm Hoàn thành. Ví dụ giáo viên chọn lịch ngày 15 để bắt đầu buổi, ngày 20 mới bấm <code>Hoàn thành buổi học</code> thì khoản lương thuộc ngày 15. Hoàn thành qua luồng dạy gắn <code>teacher_id</code> là giáo viên của buổi (người bấm Bắt đầu buổi học).</li>
+<li>Unique/idempotency bảo đảm một lịch chỉ có một khoản lương hiệu lực tại một thời điểm. Mở lại giữ khoản gốc, tạo bút toán đảo; hoàn thành lại có thể tạo khoản mới nhưng khoản cũ không còn hiệu lực.</li>
+<li>Lịch hủy không phát sinh lương. Nếu lịch đã có lương thì không được hủy theo flow thông thường trong requirement này.</li>
+<li>Muốn hủy lịch đã Hoàn thành phải Mở lại và đảo lương thành công trước, sau đó mới thực hiện Hủy bỏ.</li>
+</ul>
+<h4 id="tinh-toan-ven-va-dong-thoi">Tính toàn vẹn và đồng thời</h4>
+<ul>
+<li>Thêm nhóm lịch, tái sinh, hoàn thành + tính lương, hủy + sinh bù + đổi ngày kết thúc, và mở lại + đảo lương phải nguyên tử theo từng thao tác logic.</li>
+<li>Kiểm tra trùng lịch lớp và lịch của giáo viên trên toàn hệ thống ở backend tại thời điểm commit; validation client chỉ hỗ trợ trải nghiệm. Cảnh báo trùng là lỗi chặn, người dùng không được bỏ qua để tiếp tục tạo.</li>
+<li>Dùng version/updated_at hoặc cơ chế tương đương để ngăn snapshot cũ ghi đè trạng thái mới.</li>
+<li>Audit không bị xóa khi hủy lịch hoặc tái sinh timeline.</li>
+</ul>
+<hr />
+<h2 id="3-can-xac-nhan">3. Cần xác nhận</h2>
+<ul>
+<li>Admin/Class Handler/Support sửa hoặc hủy một lịch đang gắn với buổi học <code>Đang dạy</code> / <code>Chờ hoàn thành</code> (giáo viên đã chọn lúc bắt đầu) thì xử lý thế nào: chặn, hay cho phép và gỡ liên kết với buổi?</li>
+<li>Khi xóa một tag khung cố định bằng dấu <code>X</code>, có cần popup xác nhận không hay áp dụng ngay sau một lần bấm?</li>
+</ul>
+</article>
+    <p class="source-note">Nguồn: class_detail_schedule_requirements.md · SHA-256 98d34d1a19c6d3bd9106b228002fef573efeaf7f40cf72d6666dfea9acb63d91</p>
+  </main>
+  <script>
+    const article = document.getElementById('document');
+    const nav = document.getElementById('docNav');
+    const headings = [...article.querySelectorAll('h2')];
+    headings.forEach((heading, index) => {
+      const link = document.createElement('a');
+      link.href = `#${heading.id}`;
+      const number = document.createElement('span');
+      number.className = 'nav-num';
+      number.textContent = String(index + 1).padStart(2, '0');
+      link.append(number, document.createTextNode(heading.textContent));
+      nav.append(link);
+    });
+
+    const navLinks = [...nav.querySelectorAll('a')];
+    const observer = new IntersectionObserver(entries => {
+      const current = entries.filter(item => item.isIntersecting).sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
+      if (!current) return;
+      navLinks.forEach(link => link.classList.toggle('active', link.hash === `#${current.target.id}`));
+    }, {rootMargin: '-18% 0px -68% 0px', threshold: [0, .2, .5]});
+    headings.forEach(heading => observer.observe(heading));
+    if (navLinks[0]) navLinks[0].classList.add('active');
+
+    const testcaseHeadings = [...article.querySelectorAll('h4, h5')]
+      .filter(heading => heading.textContent.trim().startsWith('Testcase'));
+    const testcaseGroups = testcaseHeadings
+      .map(heading => ({heading, tableWrap: heading.nextElementSibling}))
+      .filter(group => group.tableWrap?.classList.contains('table-wrap'));
+    if (testcaseGroups.length) {
+        const tableWraps = testcaseGroups.map(group => group.tableWrap);
+        tableWraps.forEach(tableWrap => tableWrap.classList.add('testcase-table'));
+        const rows = tableWraps.flatMap(tableWrap => [...tableWrap.querySelectorAll('tbody tr')]);
+        const tools = document.createElement('div');
+        tools.className = 'case-tools';
+        const input = document.createElement('input');
+        input.type = 'search';
+        input.placeholder = 'Tìm testcase, Flow, REQ, EX hoặc nội dung…';
+        input.setAttribute('aria-label', 'Tìm testcase');
+        const count = document.createElement('span');
+        count.className = 'case-count';
+        tools.append(input, count);
+        testcaseGroups[0].heading.before(tools);
+        const filterRows = () => {
+          const query = input.value.trim().toLocaleLowerCase('vi');
+          let visible = 0;
+          rows.forEach(row => {
+            const match = !query || row.textContent.toLocaleLowerCase('vi').includes(query);
+            row.hidden = !match;
+            if (match) visible += 1;
+          });
+          testcaseGroups.forEach(({heading, tableWrap}) => {
+            const hasVisibleRow = [...tableWrap.querySelectorAll('tbody tr')]
+              .some(row => !row.hidden);
+            heading.hidden = !hasVisibleRow;
+            tableWrap.hidden = !hasVisibleRow;
+          });
+          count.textContent = `${visible}/${rows.length} testcase`;
+        };
+        input.addEventListener('input', filterRows);
+        filterRows();
+    }
+  </script>
+</body>
+</html>

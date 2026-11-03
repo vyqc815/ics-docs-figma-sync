@@ -1,0 +1,1753 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Requirement Chi tiết học viên">
+  <link rel="icon" href="data:,">
+  <title>Chi tiết học viên — Requirement</title>
+  <style>
+    :root {
+      --orange-700: #c83f00;
+      --orange-600: #e84c00;
+      --orange-500: #f45b0a;
+      --orange-400: #ff7a32;
+      --orange-100: #fff0e8;
+      --orange-50: #fff8f4;
+      --navy-950: #101828;
+      --navy-900: #172033;
+      --navy-800: #243047;
+      --slate-700: #344054;
+      --slate-600: #475467;
+      --slate-500: #667085;
+      --slate-400: #98a2b3;
+      --slate-300: #d0d5dd;
+      --slate-200: #e4e7ec;
+      --slate-100: #f2f4f7;
+      --slate-50: #f8fafc;
+      --white: #ffffff;
+      --green: #159447;
+      --blue: #2154c5;
+      --yellow: #b77900;
+      --red: #c92a2a;
+      --purple: #6941c6;
+      --shadow-sm: 0 1px 2px rgba(16, 24, 40, .06);
+      --shadow-md: 0 12px 32px rgba(16, 24, 40, .10);
+      --shadow-lg: 0 24px 64px rgba(16, 24, 40, .16);
+      --radius-sm: 10px;
+      --radius: 16px;
+      --radius-lg: 24px;
+      --sidebar: 286px;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      color: var(--navy-950);
+      background:
+        radial-gradient(circle at 88% 5%, rgba(244, 91, 10, .10), transparent 24rem),
+        var(--slate-50);
+      font: 15px/1.65 Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      text-rendering: optimizeLegibility;
+    }
+    a { color: inherit; }
+    img { max-width: 100%; }
+    button, input, select { font: inherit; }
+    code {
+      padding: .12rem .38rem;
+      border: 1px solid #fed7c3;
+      border-radius: 6px;
+      color: var(--orange-700);
+      background: var(--orange-50);
+      font: 600 .9em ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    }
+
+    .skip-link {
+      position: fixed;
+      z-index: 999;
+      top: 12px;
+      left: 12px;
+      padding: 10px 14px;
+      border-radius: 9px;
+      color: var(--white);
+      background: var(--navy-950);
+      transform: translateY(-150%);
+    }
+    .skip-link:focus { transform: none; }
+
+    .sidebar {
+      position: fixed;
+      z-index: 30;
+      inset: 0 auto 0 0;
+      width: var(--sidebar);
+      padding: 22px 18px;
+      overflow-y: auto;
+      color: #f8fafc;
+      background:
+        linear-gradient(155deg, rgba(255, 122, 50, .24), transparent 26%),
+        linear-gradient(180deg, #192338 0%, #111827 100%);
+      border-right: 1px solid rgba(255, 255, 255, .08);
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 4px 8px 22px;
+      border-bottom: 1px solid rgba(255, 255, 255, .10);
+    }
+    .brand-mark {
+      display: grid;
+      width: 44px;
+      height: 44px;
+      place-items: center;
+      border-radius: 14px;
+      color: var(--white);
+      background: linear-gradient(135deg, var(--orange-400), var(--orange-600));
+      box-shadow: 0 10px 26px rgba(244, 91, 10, .35);
+      font-weight: 900;
+      letter-spacing: -.06em;
+    }
+    .brand strong { display: block; font-size: 16px; }
+    .brand small { color: #aeb8c9; }
+    .nav-title {
+      margin: 24px 10px 8px;
+      color: #8f9aae;
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+    .nav { display: grid; gap: 4px; }
+    .nav a {
+      display: flex;
+      align-items: center;
+      gap: 11px;
+      padding: 10px 12px;
+      border-radius: 10px;
+      color: #cbd5e1;
+      text-decoration: none;
+      transition: .18s ease;
+    }
+    .nav a:hover, .nav a.active {
+      color: var(--white);
+      background: rgba(255, 255, 255, .09);
+    }
+    .nav a.active { box-shadow: inset 3px 0 var(--orange-400); }
+    .nav-num {
+      display: grid;
+      width: 25px;
+      height: 25px;
+      flex: 0 0 auto;
+      place-items: center;
+      border: 1px solid rgba(255, 255, 255, .15);
+      border-radius: 8px;
+      font-size: 11px;
+      font-weight: 800;
+    }
+    .sidebar-footer {
+      margin-top: 26px;
+      padding: 14px;
+      border: 1px solid rgba(255, 255, 255, .10);
+      border-radius: 14px;
+      color: #aeb8c9;
+      background: rgba(255, 255, 255, .04);
+      font-size: 12px;
+    }
+    .sidebar-footer a { color: #ffd8c5; }
+
+    main {
+      width: min(1500px, calc(100% - var(--sidebar)));
+      margin-left: var(--sidebar);
+      padding: 34px clamp(24px, 4vw, 64px) 80px;
+    }
+    section { scroll-margin-top: 24px; }
+    .hero {
+      position: relative;
+      padding: clamp(30px, 5vw, 56px);
+      overflow: hidden;
+      border: 1px solid rgba(255, 255, 255, .08);
+      border-radius: var(--radius-lg);
+      color: var(--white);
+      background:
+        linear-gradient(105deg, rgba(16, 24, 40, .97) 0%, rgba(23, 32, 51, .94) 62%, rgba(109, 45, 9, .90) 100%);
+      box-shadow: var(--shadow-lg);
+    }
+    .hero::after {
+      content: "";
+      position: absolute;
+      width: 360px;
+      height: 360px;
+      top: -190px;
+      right: -80px;
+      border: 70px solid rgba(255, 122, 50, .15);
+      border-radius: 50%;
+    }
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 10px;
+      border: 1px solid rgba(255, 255, 255, .15);
+      border-radius: 999px;
+      color: #ffd8c5;
+      background: rgba(255, 255, 255, .06);
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+    .hero h1 {
+      max-width: 900px;
+      margin: 18px 0 12px;
+      font-size: clamp(34px, 5vw, 64px);
+      line-height: 1.03;
+      letter-spacing: -.045em;
+    }
+    .hero p { max-width: 780px; margin: 0; color: #cbd5e1; font-size: 17px; }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 25px; }
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      min-height: 42px;
+      padding: 9px 14px;
+      border: 1px solid transparent;
+      border-radius: 10px;
+      color: var(--white);
+      background: var(--orange-500);
+      text-decoration: none;
+      cursor: pointer;
+      transition: .18s ease;
+    }
+    .button:hover { transform: translateY(-1px); background: var(--orange-600); }
+    .button.secondary { border-color: rgba(255, 255, 255, .15); background: rgba(255, 255, 255, .07); }
+    .button.ghost { color: var(--slate-700); border-color: var(--slate-300); background: var(--white); }
+    .button.small { min-height: 36px; padding: 7px 11px; font-size: 13px; }
+
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 14px;
+      margin-top: 18px;
+    }
+    .stat {
+      padding: 18px;
+      border: 1px solid var(--slate-200);
+      border-radius: var(--radius);
+      background: rgba(255, 255, 255, .86);
+      box-shadow: var(--shadow-sm);
+    }
+    .stat strong { display: block; color: var(--orange-600); font-size: 30px; line-height: 1; }
+    .stat span { display: block; margin-top: 7px; color: var(--slate-600); font-weight: 650; }
+
+    .section-head {
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 24px;
+      margin: 64px 0 20px;
+    }
+    .section-kicker {
+      margin: 0 0 6px;
+      color: var(--orange-600);
+      font-size: 12px;
+      font-weight: 850;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+    .section-head h2 { margin: 0; font-size: clamp(27px, 4vw, 40px); letter-spacing: -.035em; }
+    .section-head p { max-width: 600px; margin: 8px 0 0; color: var(--slate-600); }
+
+    .panel {
+      padding: clamp(20px, 3vw, 30px);
+      border: 1px solid var(--slate-200);
+      border-radius: var(--radius-lg);
+      background: var(--white);
+      box-shadow: var(--shadow-sm);
+    }
+    .panel + .panel { margin-top: 18px; }
+    .panel h3 { margin: 0 0 14px; font-size: 21px; letter-spacing: -.02em; }
+    .panel h4 { margin: 26px 0 10px; }
+    .muted { color: var(--slate-600); }
+    .note {
+      padding: 15px 17px;
+      border-left: 4px solid var(--orange-500);
+      border-radius: 0 12px 12px 0;
+      color: var(--slate-700);
+      background: var(--orange-50);
+    }
+
+    .mockup {
+      position: relative;
+      padding: 12px;
+      border: 1px solid var(--slate-200);
+      border-radius: 18px;
+      background: linear-gradient(145deg, #fff, #f4f6f9);
+      box-shadow: var(--shadow-md);
+    }
+    .mockup a { display: block; overflow: hidden; border-radius: 12px; }
+    .mockup img { display: block; width: 100%; transition: transform .3s ease; }
+    .mockup a:hover img { transform: scale(1.01); }
+    .mockup figcaption { padding: 12px 4px 2px; color: var(--slate-600); font-size: 13px; }
+
+    .grid-2 { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
+    .grid-3 { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+    .grid-4 { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 14px; }
+    .card {
+      padding: 18px;
+      border: 1px solid var(--slate-200);
+      border-radius: var(--radius);
+      background: var(--white);
+      box-shadow: var(--shadow-sm);
+    }
+    .card h3, .card h4 { margin: 0 0 8px; }
+    .card p { margin: 0; color: var(--slate-600); }
+    .card-accent { border-top: 4px solid var(--orange-500); }
+
+    .column-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+    .column-item {
+      min-height: 124px;
+      padding: 15px;
+      border: 1px solid var(--slate-200);
+      border-radius: 14px;
+      background: var(--slate-50);
+    }
+    .column-item strong { display: block; margin-bottom: 5px; color: var(--navy-900); }
+    .column-item span { color: var(--slate-600); font-size: 13px; }
+
+    .status-card { display: flex; align-items: center; gap: 12px; }
+    .status-card img { width: 42px; height: 42px; }
+    .status-card small { display: block; color: var(--slate-500); }
+
+    .tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      padding: 4px 9px;
+      border-radius: 999px;
+      color: var(--orange-700);
+      background: var(--orange-100);
+      font-size: 12px;
+      font-weight: 800;
+    }
+    .tag.high { color: #9d174d; background: #fce7f3; }
+    .tag.medium { color: #92400e; background: #fef3c7; }
+    .tag.req { color: #3730a3; background: #e0e7ff; }
+    .tag.ex { color: #b42318; background: #fee4e2; }
+
+    .flow-list { display: grid; gap: 14px; counter-reset: flow; }
+    .flow {
+      position: relative;
+      padding: 22px 22px 22px 68px;
+      border: 1px solid var(--slate-200);
+      border-radius: var(--radius);
+      background: var(--white);
+    }
+    .flow::before {
+      counter-increment: flow;
+      content: counter(flow, decimal-leading-zero);
+      position: absolute;
+      top: 20px;
+      left: 18px;
+      display: grid;
+      width: 36px;
+      height: 36px;
+      place-items: center;
+      border-radius: 11px;
+      color: var(--white);
+      background: var(--orange-500);
+      font-weight: 900;
+    }
+    .flow h3 { margin: 0 0 8px; }
+    .flow ol { margin: 0; padding-left: 20px; color: var(--slate-700); }
+
+    .exception { border-left: 4px solid #ef4444; }
+    .exception strong { color: var(--red); }
+
+    .formula-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; }
+    .formula {
+      padding: 18px;
+      border: 1px solid #ffd6c2;
+      border-radius: 16px;
+      background: linear-gradient(160deg, #fff, var(--orange-50));
+    }
+    .formula h4 { margin: 0 0 12px; color: var(--orange-700); }
+    .fraction { display: grid; justify-items: center; color: var(--navy-900); font-weight: 720; text-align: center; }
+    .fraction .top { padding: 0 10px 7px; border-bottom: 2px solid var(--navy-800); }
+    .fraction .bottom { padding-top: 7px; }
+    .formula .teacher { margin-top: 16px; padding-top: 12px; border-top: 1px dashed #f5b896; color: var(--slate-600); font-size: 13px; }
+
+    .filters {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      align-items: center;
+      padding: 14px;
+      border: 1px solid var(--slate-200);
+      border-radius: 14px;
+      background: var(--white);
+      position: sticky;
+      top: 10px;
+      z-index: 10;
+      box-shadow: var(--shadow-md);
+    }
+    .search {
+      min-width: min(100%, 320px);
+      flex: 1 1 260px;
+      height: 42px;
+      padding: 0 13px;
+      border: 1px solid var(--slate-300);
+      border-radius: 10px;
+      color: var(--navy-950);
+      background: var(--white);
+      outline: none;
+    }
+    .search:focus { border-color: var(--orange-500); box-shadow: 0 0 0 4px rgba(244, 91, 10, .12); }
+    .testcases { display: grid; gap: 10px; margin-top: 16px; }
+    .testcase {
+      border: 1px solid var(--slate-200);
+      border-radius: 14px;
+      background: var(--white);
+      overflow: clip;
+    }
+    .testcase[hidden] { display: none; }
+    .testcase summary {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 15px 17px;
+      cursor: pointer;
+      list-style: none;
+    }
+    .testcase summary::-webkit-details-marker { display: none; }
+    .testcase summary::after { content: "+"; margin-left: auto; color: var(--orange-600); font-size: 22px; font-weight: 700; }
+    .testcase[open] summary::after { content: "−"; }
+    .testcase-title { min-width: 0; font-weight: 780; }
+    .case-body {
+      display: grid;
+      grid-template-columns: minmax(180px, .7fr) minmax(0, 1.3fr);
+      gap: 18px;
+      padding: 18px;
+      border-top: 1px solid var(--slate-200);
+      background: var(--slate-50);
+    }
+    .case-meta { color: var(--slate-600); }
+    .case-meta div + div { margin-top: 8px; }
+    .case-steps { display: grid; gap: 10px; }
+    .step { padding: 10px 12px; border-left: 3px solid var(--orange-400); background: var(--white); }
+    .expected { margin: 14px 0 0; padding-left: 20px; }
+    .expected li + li { margin-top: 4px; }
+    .empty-filter { display: none; padding: 28px; color: var(--slate-600); text-align: center; }
+
+    .question-list { display: grid; gap: 10px; margin: 0; padding: 0; counter-reset: question; list-style: none; }
+    .question-list li {
+      position: relative;
+      padding: 14px 16px 14px 54px;
+      border: 1px solid #f4d8a4;
+      border-radius: 13px;
+      background: #fffbeb;
+      color: #664d03;
+    }
+    .question-list li::before {
+      counter-increment: question;
+      content: counter(question);
+      position: absolute;
+      top: 12px;
+      left: 14px;
+      display: grid;
+      width: 28px;
+      height: 28px;
+      place-items: center;
+      border-radius: 9px;
+      color: #fff;
+      background: #d99100;
+      font-weight: 850;
+    }
+
+    .footer {
+      margin-top: 64px;
+      padding-top: 24px;
+      border-top: 1px solid var(--slate-200);
+      color: var(--slate-500);
+      text-align: center;
+    }
+
+    @media (max-width: 1120px) {
+      :root { --sidebar: 244px; }
+      .column-grid, .grid-3, .formula-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .stats { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
+    @media (max-width: 780px) {
+      .sidebar { position: static; width: auto; padding: 14px; }
+      .brand { padding-bottom: 12px; }
+      .nav-title, .sidebar-footer { display: none; }
+      .nav { display: flex; overflow-x: auto; padding-top: 10px; }
+      .nav a { flex: 0 0 auto; }
+      main { width: 100%; margin: 0; padding: 18px 14px 60px; }
+      .hero { border-radius: 18px; }
+      .grid-2, .grid-3, .grid-4, .column-grid, .formula-grid, .case-body { grid-template-columns: 1fr; }
+      .section-head { align-items: start; flex-direction: column; }
+      .filters { position: static; }
+    }
+    @media print {
+      body { background: #fff; font-size: 11px; }
+      .sidebar, .hero-actions, .filters, .skip-link { display: none !important; }
+      main { width: 100%; margin: 0; padding: 0; }
+      .hero { color: #111; background: #fff; border: 2px solid #111; box-shadow: none; }
+      .hero p { color: #333; }
+      .panel, .card, .stat, .mockup, .testcase { break-inside: avoid; box-shadow: none; }
+      .section-head { margin-top: 32px; }
+      .testcase { display: block !important; }
+      .testcase summary::after { display: none; }
+      .testcase:not([open]) .case-body { display: grid; }
+    }
+
+    .doc-shell { min-width: 0; }
+    .doc-toolbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      margin-bottom: 18px;
+      padding: 14px 16px;
+      border: 1px solid var(--slate-200);
+      border-radius: 14px;
+      background: rgba(255,255,255,.92);
+      box-shadow: var(--shadow-sm);
+    }
+    .doc-toolbar-left, .doc-toolbar-right { display: flex; flex-wrap: wrap; align-items: center; gap: 9px; }
+    .sync-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      padding: 6px 10px;
+      border-radius: 999px;
+      color: #067647;
+      background: #ecfdf3;
+      border: 1px solid #abefc6;
+      font-size: 12px;
+      font-weight: 800;
+    }
+    .sync-badge::before { content: "✓"; }
+    .hash { color: var(--slate-500); font: 12px ui-monospace, SFMono-Regular, Menlo, monospace; }
+    .markdown-body {
+      padding: clamp(24px, 4vw, 54px);
+      border: 1px solid var(--slate-200);
+      border-radius: var(--radius-lg);
+      background: var(--white);
+      box-shadow: var(--shadow-md);
+      overflow: hidden;
+    }
+    .markdown-body > h1 {
+      position: relative;
+      margin: -54px -54px 42px;
+      padding: 62px 54px 54px;
+      color: var(--white);
+      background:
+        radial-gradient(circle at 88% 10%, rgba(255,122,50,.36), transparent 20rem),
+        linear-gradient(115deg, var(--navy-950), #243047 68%, #713209);
+      font-size: clamp(34px, 5vw, 62px);
+      line-height: 1.05;
+      letter-spacing: -.045em;
+    }
+    .markdown-body h2 {
+      margin: 70px 0 24px;
+      padding: 0 0 13px;
+      border-bottom: 2px solid var(--slate-200);
+      font-size: clamp(27px, 4vw, 39px);
+      line-height: 1.15;
+      letter-spacing: -.035em;
+      scroll-margin-top: 24px;
+    }
+    .markdown-body h2::first-letter { color: var(--orange-600); }
+    .markdown-body h3 {
+      margin: 38px 0 16px;
+      color: var(--navy-900);
+      font-size: 23px;
+      line-height: 1.25;
+      letter-spacing: -.02em;
+      scroll-margin-top: 24px;
+    }
+    .markdown-body h4 {
+      margin: 28px 0 12px;
+      color: var(--orange-700);
+      font-size: 17px;
+      scroll-margin-top: 24px;
+    }
+    .markdown-body p { margin: 12px 0; }
+    .markdown-body strong { color: var(--navy-900); }
+    .markdown-body ul, .markdown-body ol { padding-left: 1.35rem; }
+    .markdown-body li { margin: 6px 0; }
+    .markdown-body li::marker { color: var(--orange-500); font-weight: 800; }
+    .markdown-body hr {
+      height: 1px;
+      margin: 48px 0;
+      border: 0;
+      background: linear-gradient(90deg, transparent, var(--slate-300), transparent);
+    }
+    .markdown-body > p[align="center"] {
+      margin: 22px 0 28px;
+      padding: 12px;
+      border: 1px solid var(--slate-200);
+      border-radius: 18px;
+      background: linear-gradient(145deg, #fff, #f5f7fa);
+      box-shadow: var(--shadow-md);
+    }
+    .markdown-body > p[align="center"] a { display: inline-block; max-width: 100%; }
+    .markdown-body > p[align="center"] img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+      margin: auto;
+      border-radius: 12px;
+    }
+    .markdown-body > p[align="center"] em {
+      display: block;
+      margin-top: 10px;
+      color: var(--slate-500);
+      font-size: 13px;
+    }
+    .table-wrap {
+      width: 100%;
+      margin: 18px 0 28px;
+      overflow: auto;
+      border: 1px solid var(--slate-200);
+      border-radius: 15px;
+      background: var(--white);
+      box-shadow: var(--shadow-sm);
+    }
+    .markdown-body table {
+      width: 100%;
+      min-width: 720px;
+      border-collapse: separate;
+      border-spacing: 0;
+      font-size: 14px;
+    }
+    .markdown-body th {
+      position: sticky;
+      top: 0;
+      z-index: 2;
+      padding: 12px 14px;
+      color: var(--white);
+      background: var(--navy-900);
+      border-bottom: 1px solid var(--navy-800);
+      text-align: left;
+      white-space: nowrap;
+    }
+    .markdown-body td {
+      padding: 12px 14px;
+      border-bottom: 1px solid var(--slate-200);
+      vertical-align: top;
+    }
+    .markdown-body tbody tr:nth-child(even) td { background: var(--slate-50); }
+    .markdown-body tbody tr:hover td { background: var(--orange-50); }
+    .markdown-body tbody tr:last-child td { border-bottom: 0; }
+    .markdown-body td img { display: block; width: 36px; height: 36px; max-width: none; }
+    .markdown-body pre {
+      position: relative;
+      margin: 16px 0 24px;
+      padding: 18px 20px;
+      overflow: auto;
+      border: 1px solid #ffd3bd;
+      border-radius: 14px;
+      color: #fff7ed;
+      background: linear-gradient(145deg, #172033, #222f48);
+      box-shadow: var(--shadow-sm);
+      font: 13px/1.75 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    }
+    .markdown-body pre code { padding: 0; border: 0; color: inherit; background: none; font: inherit; }
+    .markdown-body blockquote {
+      margin: 18px 0;
+      padding: 13px 16px;
+      border-left: 4px solid var(--orange-500);
+      border-radius: 0 12px 12px 0;
+      color: var(--slate-700);
+      background: var(--orange-50);
+    }
+    .case-tools {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 10px;
+      margin: 12px 0 14px;
+      padding: 13px;
+      border: 1px solid var(--slate-200);
+      border-radius: 13px;
+      background: var(--slate-50);
+    }
+    .case-tools input {
+      flex: 1 1 280px;
+      height: 42px;
+      padding: 0 13px;
+      border: 1px solid var(--slate-300);
+      border-radius: 10px;
+      outline: none;
+    }
+    .case-tools input:focus { border-color: var(--orange-500); box-shadow: 0 0 0 4px rgba(244,91,10,.12); }
+    .case-count { color: var(--orange-700); font-weight: 800; white-space: nowrap; }
+    .testcase-table table { min-width: 1500px; }
+    .testcase-table th:first-child, .testcase-table td:first-child {
+      position: sticky;
+      left: 0;
+      z-index: 1;
+      min-width: 230px;
+      box-shadow: 1px 0 0 var(--slate-200);
+    }
+    .testcase-table th:first-child { z-index: 3; background: var(--navy-900); }
+    .testcase-table td:first-child { background: var(--white); font-weight: 750; }
+    .testcase-table tbody tr:nth-child(even) td:first-child { background: var(--slate-50); }
+    .testcase-table tbody tr:hover td:first-child { background: var(--orange-50); }
+    .source-note {
+      margin-top: 18px;
+      color: var(--slate-500);
+      text-align: center;
+      font-size: 12px;
+    }
+    @media (max-width: 780px) {
+      .doc-toolbar { align-items: flex-start; flex-direction: column; }
+      .markdown-body { padding: 20px 16px; border-radius: 16px; }
+      .markdown-body > h1 { margin: -20px -16px 32px; padding: 40px 20px 34px; }
+      .markdown-body h2 { margin-top: 48px; }
+      .markdown-body table { font-size: 13px; }
+    }
+    @media print {
+      .doc-toolbar, .case-tools { display: none !important; }
+      .markdown-body { padding: 0; border: 0; box-shadow: none; overflow: visible; }
+      .markdown-body > h1 { margin: 0 0 32px; padding: 30px; color: #111; background: #fff; border: 2px solid #111; }
+      .table-wrap { overflow: visible; box-shadow: none; }
+      .markdown-body table { min-width: 0 !important; font-size: 9px; }
+      .markdown-body th { position: static; color: #111; background: #eee; }
+      .testcase-table th:first-child, .testcase-table td:first-child { position: static; }
+    }
+</style>
+</head>
+<body>
+  <a class="skip-link" href="#document">Đi đến nội dung chính</a>
+  <aside class="sidebar" aria-label="Mục lục requirement">
+    <div class="brand">
+      <div class="brand-mark">ics</div>
+      <div><strong>ICS Requirement</strong><small>Student Management · Student Detail</small></div>
+    </div>
+    <div class="nav-title">Nội dung Markdown</div>
+    <nav id="docNav" class="nav"></nav>
+    <div class="sidebar-footer">
+      HTML được render trực tiếp từ Markdown nguồn.<br>
+      <a href="./student_detail_requirements.md">Mở file Markdown</a>
+    </div>
+  </aside>
+  <main class="doc-shell">
+    <div class="doc-toolbar">
+      <div class="doc-toolbar-left">
+        <span class="sync-badge">Đồng bộ 100% từ Markdown</span>
+        <span class="hash">SHA-256: 234ccea5d6e6…</span>
+      </div>
+      <div class="doc-toolbar-right">
+        <a class="button ghost small" href="./student_detail_requirements.md">Xem Markdown</a>
+        <button class="button small" type="button" onclick="window.print()">In / Lưu PDF</button>
+      </div>
+    </div>
+    <article id="document" class="markdown-body" data-source-sha256="234ccea5d6e63f2f440c3c0d65963bf591277e649cf8038ceaeac398d2c1c141">
+<h1 id="chi-tiet-hoc-vien">Chi tiết học viên</h1>
+<h2 id="1-ui">1. UI</h2>
+<h3 id="khung-chi-tiet-hoc-vien-va-dieu-huong">Khung Chi tiết học viên và điều hướng</h3>
+<ul>
+<li>Mở từ mũi tên cuối dòng Danh sách học viên; tiêu đề <code>Chi Tiết Học Viên</code> có nút quay lại danh sách.</li>
+<li>Sáu tab đúng thứ tự: <strong>Thông tin cá nhân → Danh sách lớp → Học phí → Log → Quy trình học viên → Ghi chú</strong>. Mặc định mở Thông tin cá nhân. Tab active dùng chữ cam, nền cam nhạt và vạch cam bên trái theo ảnh.</li>
+<li>Tất cả tab dùng cùng student_id đang chọn; chuyển tab không tạo tài khoản hoặc bản sao dữ liệu. Dữ liệu của các tab dùng chung phải đồng nhất với popup Lịch sử học viên và module nguồn.</li>
+<li>Danh sách lớp/Học phí <strong>phân trang từng trang</strong>; Ghi chú/Quy trình học viên/Log <strong>load more</strong>. Số dòng/lượt theo cấu hình chung; không lấy số mẫu trên ảnh làm quy định riêng. Thống kê/tổng tiến độ tính toàn bộ dữ liệu của học viên, không giới hạn trong trang/lượt đã tải.</li>
+<li>Chỉ tải tab trong phạm vi quyền; loading, rỗng và lỗi phân biệt rõ. Khi đổi học viên hoặc đổi điều kiện, response cũ không được ghi đè dữ liệu mới.</li>
+</ul>
+<h4 id="testcase-khung-chi-tiet-hoc-vien">Testcase — Khung Chi tiết học viên</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 12: Bộ sáu tab và tab mặc định</td>
+<td>High</td>
+<td></td>
+<td>REQ10</td>
+<td>User được xem học viên</td>
+<td>Danh sách có học viên A</td>
+<td><strong>Given</strong> User bấm mũi tên cuối dòng A<br><strong>When</strong> Mở Chi tiết học viên và chuyển các tab<br><strong>Then</strong> Đúng sáu tab, mặc định Thông tin cá nhân</td>
+<td>- Active theo màu/vạch cam<br>- Các tab tải theo A và quyền tương ứng<br>- Quay lại đúng Danh sách học viên, giữ điều kiện danh sách</td>
+</tr>
+<tr>
+<td>Case 13: Chuyển học viên không lẫn dữ liệu</td>
+<td>High</td>
+<td></td>
+<td>REQ10 / REQ16</td>
+<td>User được xem A và B</td>
+<td>A/B có thông tin, lớp, hóa đơn, note, quy trình và log khác nhau</td>
+<td><strong>Given</strong> A đang tải một tab<br><strong>When</strong> Chuyển sang B rồi response A về muộn<br><strong>Then</strong> Chỉ dữ liệu B được hiển thị</td>
+<td>- Cursor/page theo đúng student_id<br>- Không nối card/dòng A vào B<br>- Không cho thao tác bằng ID dữ liệu của A trên B</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="trang-1-chi-tiet-hoc-vien-thong-tin-ca-nhan">Trang 1: Chi tiết học viên — Thông tin cá nhân</h3>
+<p align="center">
+  <a href="./images/26-student-detail-personal.png"><img src="./images/26-student-detail-personal.png" alt="Chi tiết học viên - Thông tin cá nhân" width="760" title="Nhấn để xem ảnh gốc"></a><br>
+  <em>Chi tiết học viên — tab Thông tin cá nhân — nhấn để xem ảnh gốc</em>
+</p>
+
+<p><strong>Mô tả:</strong></p>
+<ul>
+<li>Màn hình hiển thị thông tin cá nhân của đúng học viên đang được chọn.</li>
+<li>User chỉ được xem và cập nhật học viên thuộc phạm vi dữ liệu mà role hiện tại được phép thao tác.</li>
+<li>Tab <code>Thông tin cá nhân</code> cho phép cập nhật ảnh đại diện, họ và tên, ngày sinh, giới tính, số điện thoại và ghi chú.</li>
+<li>UI mới có card ảnh/họ tên/mã bên trái và form hai cột bên phải: Mã người dùng/Gmail, Giới tính/Ngày sinh, Họ và tên/Số điện thoại; Ghi chú chiếm cả hàng cuối. Nút <code>Lấy lại tài khoản</code> và <code>Cập nhật tài khoản</code> ở dưới card trái.</li>
+<li><code>Mã người dùng</code> và <code>Email</code> chỉ đọc theo quy tắc đã chốt. Trạng thái tài khoản <code>Chính thức</code> vẫn được bảo vệ trong dữ liệu; ảnh mới không có control Trạng thái nên không thêm field này vào form. <code>TEST</code>, <code>Dương</code>, SĐT <code>1</code> trong ảnh là dữ liệu mẫu, không thay quy tắc Code/validation.</li>
+</ul>
+<p><strong>Field:</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Field</th>
+<th style="text-align: center;">Bắt buộc</th>
+<th style="text-align: center;">Cho phép cập nhật</th>
+<th>Yêu cầu</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Ảnh đại diện</td>
+<td style="text-align: center;">Không</td>
+<td style="text-align: center;">Có</td>
+<td>Cho phép tải ảnh mới có dung lượng tối đa <code>25 MB</code>. Khi chưa có ảnh cá nhân, hệ thống hiển thị avatar mặc định. Chọn ảnh mới chỉ tạo bản xem trước; ảnh được lưu khi user bấm <code>Cập nhật tài khoản</code>. Nếu không chọn ảnh mới thì giữ nguyên ảnh hiện tại.</td>
+</tr>
+<tr>
+<td>Họ và tên</td>
+<td style="text-align: center;">Có</td>
+<td style="text-align: center;">Có</td>
+<td>Hiển thị họ tên hiện tại; không được để trống hoặc chỉ chứa khoảng trắng.</td>
+</tr>
+<tr>
+<td>Ngày sinh</td>
+<td style="text-align: center;">Có</td>
+<td style="text-align: center;">Có</td>
+<td>Hiển thị ngày sinh hiện tại và cho phép chọn lại ngày.</td>
+</tr>
+<tr>
+<td>Giới tính</td>
+<td style="text-align: center;">Có</td>
+<td style="text-align: center;">Có</td>
+<td>Hiển thị giá trị hiện tại và cho phép chọn <code>Nam</code>, <code>Nữ</code> hoặc <code>Không xác định</code>.</td>
+</tr>
+<tr>
+<td>Mã người dùng</td>
+<td style="text-align: center;">Có</td>
+<td style="text-align: center;">Không</td>
+<td>Chính là <code>Code</code> 6 chữ số được hệ thống sinh tăng dần theo cấp độ 1..9 tại <a href="./student_management_requirements.html#dropdown-chon-cap-do-va-code-hoc-vien">Thêm học viên</a>, ví dụ Cấp độ 1 bắt đầu từ 100000. Field luôn ở trạng thái chỉ đọc; không được sinh lại hoặc thay đổi khi cập nhật chi tiết.</td>
+</tr>
+<tr>
+<td>Số điện thoại</td>
+<td style="text-align: center;">Có</td>
+<td style="text-align: center;">Có</td>
+<td>Cho phép thay đổi; số điện thoại phải đúng định dạng theo case tạo học viên và được phép trùng với học viên khác.</td>
+</tr>
+<tr>
+<td>Email</td>
+<td style="text-align: center;">Có</td>
+<td style="text-align: center;">Không</td>
+<td>Hiển thị email đã dùng khi tạo học viên. Field luôn ở trạng thái chỉ đọc và không được cập nhật tại màn hình chi tiết.</td>
+</tr>
+<tr>
+<td>Ghi chú</td>
+<td style="text-align: center;">Không</td>
+<td style="text-align: center;">Có</td>
+<td>Cho phép nhập, sửa hoặc xóa toàn bộ nội dung. Không áp dụng giới hạn nội dung hoặc độ dài ở tầng nghiệp vụ.</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Điểm cần lưu ý:</strong></p>
+<ul>
+<li>Nút <code>Cập nhật tài khoản</code> chỉ cập nhật các field được phép sửa: <code>Ảnh đại diện</code>, <code>Họ và tên</code>, <code>Ngày sinh</code>, <code>Giới tính</code>, <code>Số điện thoại</code>, <code>Ghi chú</code>.</li>
+<li>Backend phải kiểm soát field chỉ đọc; request cố thay đổi <code>Mã người dùng</code>, <code>Email</code> hoặc <code>Trạng thái</code> phải bị từ chối và không được làm thay đổi bất kỳ dữ liệu nào.</li>
+<li>Việc cập nhật phải có tính nguyên tử: hoặc toàn bộ dữ liệu hợp lệ được lưu, hoặc giữ nguyên toàn bộ dữ liệu trước đó nếu có lỗi.</li>
+<li>Khi cập nhật thành công, hệ thống hiển thị <code>Cập nhật thông tin học viên thành công.</code> và tải lại đúng dữ liệu vừa lưu.</li>
+<li>Khi cập nhật thất bại, hệ thống hiển thị <code>Không thể cập nhật thông tin học viên. Vui lòng thử lại.</code>, giữ dữ liệu đã nhập trên form để user sửa hoặc thử lại và không lưu thay đổi dở dang.</li>
+<li>Nút <code>Lấy lại tài khoản</code> là thao tác độc lập với <code>Cập nhật tài khoản</code>. Khi bấm nút, hệ thống phải mở popup xác nhận trước khi thực hiện. Khi xử lý thành công, mật khẩu đăng nhập của học viên được đặt lại chính xác thành <code>abc12345</code>; thao tác này không cập nhật các field thông tin cá nhân.</li>
+<li>Sau khi lấy lại mật khẩu thành công, hệ thống hiển thị <code>Đặt lại mật khẩu học viên thành công.</code>. Nếu thất bại, mật khẩu hiện tại phải được giữ nguyên và hiển thị <code>Không thể đặt lại mật khẩu học viên. Vui lòng thử lại.</code></li>
+</ul>
+<h4 id="testcase-chi-tiet-hoc-vien-thong-tin-ca-nhan">Testcase — Chi tiết học viên — Thông tin cá nhân</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 1: Hiển thị đúng chi tiết học viên</td>
+<td>High</td>
+<td>Smoke</td>
+<td>Flow 1 / REQ01</td>
+<td>Administrator</td>
+<td>Có học viên với đầy đủ thông tin cá nhân</td>
+<td><strong>Given</strong> User có quyền trên học viên A<br><strong>When</strong> Mở Chi tiết học viên A<br><strong>Then</strong> Hệ thống tải tab Thông tin cá nhân</td>
+<td>- Hiển thị đúng ảnh đại diện, họ tên, ngày sinh, giới tính, mã người dùng, số điện thoại, email và ghi chú của A<br>- Không lẫn dữ liệu học viên khác<br>- Không render control Trạng thái; dữ liệu tài khoản vẫn Chính thức</td>
+</tr>
+<tr>
+<td>Case 2: Cập nhật các field được phép sửa</td>
+<td>High</td>
+<td>Smoke</td>
+<td>Flow 1 / REQ02 / REQ07</td>
+<td>Administrator</td>
+<td>Màn Chi tiết học viên đang mở</td>
+<td><strong>Given</strong> Các field hiện tại đã được tải<br><strong>When</strong> User sửa Họ và tên, Ngày sinh, Giới tính, Số điện thoại, Ghi chú rồi bấm <code>Cập nhật tài khoản</code><br><strong>Then</strong> Hệ thống lưu cập nhật</td>
+<td>- Hiển thị <code>Cập nhật thông tin học viên thành công.</code><br>- Tải lại đúng toàn bộ giá trị mới<br>- Mã người dùng, Email và Trạng thái không thay đổi</td>
+</tr>
+<tr>
+<td>Case 3: Khóa Mã người dùng, Email và Trạng thái</td>
+<td>High</td>
+<td></td>
+<td>EX03 / REQ03 / REQ04</td>
+<td>Administrator</td>
+<td>Màn Chi tiết học viên đang mở</td>
+<td><strong>Given</strong> Mã người dùng, Email và Trạng thái đã có giá trị<br><strong>When</strong> User kiểm tra UI và gửi request trực tiếp cố thay đổi từng field<br><strong>Then</strong> Hệ thống không cho phép thay đổi</td>
+<td>- Mã/Email chỉ đọc trên UI; không có control Trạng thái<br>- Backend từ chối toàn bộ request sửa field chỉ đọc<br>- Không có dữ liệu nào của học viên bị thay đổi<br>- Trạng thái vẫn là <code>Chính thức</code></td>
+</tr>
+<tr>
+<td>Case 4: Cập nhật và xóa trắng Ghi chú</td>
+<td>High</td>
+<td></td>
+<td>Flow 1 / REQ05</td>
+<td>Administrator</td>
+<td>Học viên lần lượt có và chưa có ghi chú</td>
+<td><strong>Given</strong> Màn Chi tiết học viên đang mở<br><strong>When</strong> User nhập nội dung bất kỳ, cập nhật, sau đó xóa toàn bộ nội dung và cập nhật lần nữa<br><strong>Then</strong> Hệ thống chấp nhận cả hai thao tác</td>
+<td>- Lưu đúng nội dung khi có giá trị<br>- Cho phép lưu ghi chú rỗng<br>- Không áp dụng giới hạn nội dung hoặc độ dài nghiệp vụ</td>
+</tr>
+<tr>
+<td>Case 5: Upload ảnh đại diện</td>
+<td>High</td>
+<td></td>
+<td>Flow 1 / REQ06</td>
+<td>Administrator</td>
+<td>Màn Chi tiết học viên đang mở</td>
+<td><strong>Given</strong> Học viên đang dùng avatar mặc định hoặc ảnh đã có<br><strong>When</strong> User chọn ảnh mới và bấm <code>Cập nhật tài khoản</code><br><strong>Then</strong> Hệ thống cập nhật ảnh đại diện</td>
+<td>- Hiển thị bản xem trước trước khi lưu<br>- Thành công hiển thị lại ảnh mới<br>- Nếu không chọn ảnh mới thì giữ ảnh hiện tại</td>
+</tr>
+<tr>
+<td>Case 6: Cập nhật chi tiết thất bại không lưu dở dang</td>
+<td>High</td>
+<td></td>
+<td>EX02 / EX05 / REQ07</td>
+<td>Administrator</td>
+<td>User đã thay đổi nhiều field trên form</td>
+<td><strong>Given</strong> Dữ liệu cũ đã được lưu<br><strong>When</strong> Submit dữ liệu thiếu field bắt buộc hoặc hệ thống xử lý gặp lỗi<br><strong>Then</strong> Hệ thống từ chối cập nhật</td>
+<td>- Không field nào bị lưu riêng lẻ<br>- Dữ liệu persisted vẫn là dữ liệu cũ<br>- Form giữ nội dung user đã nhập để chỉnh sửa hoặc thử lại<br>- Lỗi hệ thống hiển thị <code>Không thể cập nhật thông tin học viên. Vui lòng thử lại.</code></td>
+</tr>
+<tr>
+<td>Case 9: Chặn truy cập chi tiết học viên ngoài phạm vi</td>
+<td>High</td>
+<td></td>
+<td>EX01 / REQ09</td>
+<td>Sale, Support, Class Handler</td>
+<td>User không được gán phụ trách hoặc theo dõi học viên A</td>
+<td><strong>Given</strong> User đã đăng nhập<br><strong>When</strong> Truy cập trực tiếp URL hoặc gửi request xem, cập nhật, lấy lại mật khẩu của A<br><strong>Then</strong> Hệ thống từ chối thao tác</td>
+<td>- Không trả về dữ liệu chi tiết của A<br>- Không cập nhật thông tin hoặc mật khẩu của A</td>
+</tr>
+<tr>
+<td>Case 10: Kiểm tra dung lượng ảnh đại diện tối đa</td>
+<td>High</td>
+<td></td>
+<td>EX04 / REQ06</td>
+<td>Administrator</td>
+<td>Màn Chi tiết học viên đang mở</td>
+<td><strong>Given</strong> User lần lượt chọn ảnh có dung lượng đúng 25 MB và lớn hơn 25 MB<br><strong>When</strong> Bấm <code>Cập nhật tài khoản</code><br><strong>Then</strong> Hệ thống kiểm tra giới hạn dung lượng</td>
+<td>- Ảnh đúng 25 MB được chấp nhận nếu thỏa các điều kiện upload còn lại<br>- Ảnh lớn hơn 25 MB bị từ chối<br>- Hiển thị <code>Ảnh đại diện không được vượt quá 25 MB.</code><br>- Không lưu thay đổi dở dang và giữ ảnh hiện tại khi bị từ chối</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="popup-xac-nhan-lay-lai-mat-khau-ui-can-bo-sung">Popup xác nhận lấy lại mật khẩu — UI cần bổ sung</h3>
+<ul>
+<li>UI hiện tại mới có nút <code>Lấy lại tài khoản</code> và chưa có popup xác nhận; sản phẩm hoàn chỉnh phải bổ sung popup này.</li>
+<li>Tiêu đề popup: <code>Xác nhận lấy lại mật khẩu</code>.</li>
+<li>Nội dung: <code>Bạn có chắc chắn muốn đặt lại mật khẩu học viên về abc12345 không?</code></li>
+<li>Nút <code>Hủy</code>: đóng popup, không gửi yêu cầu và không thay đổi mật khẩu.</li>
+<li>Nút <code>Xác nhận</code>: gửi yêu cầu đặt lại mật khẩu của đúng học viên đang xem.</li>
+<li>Trong thời gian xử lý, vô hiệu hóa nút <code>Xác nhận</code> để tránh gửi yêu cầu lặp.</li>
+</ul>
+<h4 id="testcase-popup-xac-nhan-lay-lai-mat-khau">Testcase — Popup xác nhận lấy lại mật khẩu</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 7: Lấy lại mật khẩu thành công</td>
+<td>High</td>
+<td>Smoke</td>
+<td>Flow 2 / REQ08</td>
+<td>Administrator</td>
+<td>User có quyền trên học viên và học viên có mật khẩu hiện tại khác <code>abc12345</code></td>
+<td><strong>Given</strong> Màn Chi tiết học viên đang mở<br><strong>When</strong> User bấm <code>Lấy lại tài khoản</code>, popup hiển thị và user bấm <code>Xác nhận</code><br><strong>Then</strong> Hệ thống đặt lại mật khẩu học viên</td>
+<td>- Popup có đúng tiêu đề, nội dung, nút Hủy và Xác nhận<br>- Mật khẩu mới chính xác là <code>abc12345</code><br>- Hiển thị <code>Đặt lại mật khẩu học viên thành công.</code><br>- Không thay đổi bất kỳ field thông tin cá nhân nào</td>
+</tr>
+<tr>
+<td>Case 8: Lấy lại mật khẩu thất bại</td>
+<td>High</td>
+<td></td>
+<td>Flow 2 / EX06 / REQ08</td>
+<td>Administrator</td>
+<td>Xử lý đặt lại mật khẩu gặp lỗi</td>
+<td><strong>Given</strong> Học viên có mật khẩu hiện tại<br><strong>When</strong> User bấm <code>Lấy lại tài khoản</code>, popup hiển thị và user bấm <code>Xác nhận</code><br><strong>Then</strong> Hệ thống không hoàn thành thao tác</td>
+<td>- Giữ nguyên mật khẩu hiện tại<br>- Hiển thị <code>Không thể đặt lại mật khẩu học viên. Vui lòng thử lại.</code><br>- Không thay đổi thông tin cá nhân</td>
+</tr>
+<tr>
+<td>Case 11: Hủy popup lấy lại mật khẩu</td>
+<td>High</td>
+<td></td>
+<td>Flow 2 / EX07 / REQ08</td>
+<td>Administrator</td>
+<td>Popup xác nhận lấy lại mật khẩu đang mở</td>
+<td><strong>Given</strong> Học viên có mật khẩu hiện tại<br><strong>When</strong> User bấm <code>Hủy</code> hoặc đóng popup<br><strong>Then</strong> Hệ thống dừng thao tác</td>
+<td>- Đóng popup<br>- Không gửi yêu cầu đặt lại mật khẩu<br>- Giữ nguyên mật khẩu hiện tại</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="trang-2-chi-tiet-hoc-vien-danh-sach-lop">Trang 2: Chi tiết học viên — Danh sách lớp</h3>
+<p align="center">
+  <a href="./images/27-student-detail-classes.png"><img src="./images/27-student-detail-classes.png" alt="UI chuẩn Chi tiết học viên — Danh sách lớp" width="1000" title="Nhấn để xem ảnh gốc"></a><br>
+  <em>Danh sách lớp — sáu thẻ thống kê và bảng lớp của học viên</em>
+</p>
+
+<ul>
+<li>Nội dung và nghiệp vụ giống <a href="./student_management_requirements.html#lich-su-lop">Lịch sử lớp trong Lịch sử học viên</a>, trình bày thành tab tại trang Chi tiết học viên.</li>
+<li>Sáu thẻ theo thứ tự: <strong>Số Lớp, Lên Kỳ, Đi Học, BTVN, Đạt Kpi, Đánh Giá</strong>. Dùng đúng công thức, tập lớp và cách làm tròn đã chốt ở Lịch sử lớp; thống kê trên toàn bộ lịch sử của học viên, không chỉ trang đang xem.</li>
+<li>Bảng gồm icon trạng thái lớp/mã lớp, khóa học, tiến độ cả lớp <code>x/N Buổi</code>, Đánh giá và vòng KPI. Icon lấy <strong>trạng thái lớp</strong> theo <a href="../class_management/class_management_requirements.md#trạng-thái-lớp">Trạng thái lớp</a>; không dùng trạng thái học viên trong lớp.</li>
+<li>Mũi tên cuối dòng mở Chi tiết lớp tương ứng. Vì đang ở trang chi tiết, điều hướng trực tiếp; không có bước đóng popup lịch sử.</li>
+<li><strong>Phân trang từng trang:</strong> footer có phạm vi đang hiển thị/tổng số <strong>lớp</strong>, Trước, số trang và Sau. Đổi trang thay tập dòng đang hiển thị, giữ đúng student_id; không nối thêm như load more. Trang đầu/cuối vô hiệu hóa Trước/Sau tương ứng. Ảnh chưa có footer nhưng phân trang vẫn phải có theo yêu cầu đã chốt; số dòng/trang theo cấu hình phân trang chung.</li>
+<li>Tên khóa rút gọn theo UI; số <code>7/7</code>, <code>45%</code>, <code>80</code>, <code>B</code>, mã lớp lặp trong ảnh là mẫu, không hard-code. BTVN vẫn hiển thị tỷ lệ theo requirement lịch sử.</li>
+</ul>
+<h4 id="testcase-tab-danh-sach-lop">Testcase — Tab Danh sách lớp</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 14: Đồng nhất Danh sách lớp và Lịch sử lớp</td>
+<td>High</td>
+<td></td>
+<td>REQ11</td>
+<td>User được xem học viên</td>
+<td>Học viên có lớp chính thức/không chính thức và nhiều trạng thái lớp</td>
+<td><strong>Given</strong> Mở Lịch sử lớp và tab Danh sách lớp của cùng học viên<br><strong>When</strong> Đối chiếu dữ liệu<br><strong>Then</strong> Cùng sáu thẻ, công thức và thông tin từng lớp</td>
+<td>- Thống kê không thay theo trang<br>- Status/icon theo lớp, tiến độ theo cả lớp<br>- Lên kỳ/KPI/Đánh giá và Đi học/BTVN theo requirement lịch sử</td>
+</tr>
+<tr>
+<td>Case 15: Phân trang lớp theo student_id</td>
+<td>High</td>
+<td></td>
+<td>REQ11 / REQ16</td>
+<td>User được xem học viên</td>
+<td>A có nhiều hơn một trang lớp; B có lớp khác</td>
+<td><strong>Given</strong> Mở Danh sách lớp A<br><strong>When</strong> Chọn trang 2, Trước/Sau rồi chuyển sang học viên B<br><strong>Then</strong> Mỗi trang chỉ chứa lớp của đúng học viên</td>
+<td>- Đổi trang thay dòng cũ, không nối danh sách<br>- Footer dùng đơn vị lớp; Trước/Sau đúng biên<br>- Response A về muộn không ghi đè B</td>
+</tr>
+<tr>
+<td>Case 16: Mở Chi tiết lớp từ học viên</td>
+<td>High</td>
+<td></td>
+<td>REQ11</td>
+<td>User có quyền xem học viên và lớp đích</td>
+<td>Tab có dòng lớp C</td>
+<td><strong>Given</strong> User xem dòng C<br><strong>When</strong> Bấm mũi tên cuối dòng<br><strong>Then</strong> Mở đúng Chi tiết lớp C theo quyền lớp</td>
+<td>- Không mở lớp trùng tên nhưng khác ID<br>- Không yêu cầu đóng popup<br>- Không mở rộng quyền xem lớp từ quyền xem học viên</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="trang-3-chi-tiet-hoc-vien-hoc-phi">Trang 3: Chi tiết học viên — Học phí</h3>
+<p align="center">
+  <a href="./images/28-student-detail-tuition.png"><img src="./images/28-student-detail-tuition.png" alt="UI chuẩn Chi tiết học viên — Học phí" width="1000" title="Nhấn để xem ảnh gốc"></a><br>
+  <em>Học phí — thẻ thống kê, hóa đơn và chi tiết phân bổ mở rộng</em>
+</p>
+
+<ul>
+<li>Giống <a href="./student_management_requirements.html#hoc-phi-danh-sach-hoa-don">tab Học phí trong Lịch sử học viên</a>, dùng cùng dữ liệu hóa đơn/học phí, công thức và toàn bộ thao tác đã chốt.</li>
+<li>Hai thẻ <strong>Số Hoá Đơn</strong> (số hóa đơn tạo cho học viên, mỗi hóa đơn một lần) và <strong>Tổng Học Phí</strong> (tổng Giá trị học phí đã dùng của học viên). Thẻ tổng hợp toàn bộ dữ liệu của học viên, không chỉ hóa đơn trên trang.</li>
+<li>Bảng 16 cột và menu theo lịch sử; bấm hóa đơn mở các phân bổ học phí của invoice_id đó; bảng con có Học viên, Mã, Lớp/kỳ, Số tiền, Ghi chú học phí và Ghi chú trong lớp. Nhãn Mới cạnh tên là tag của item học phí.</li>
+<li>Cho phép thao tác học phí/hóa đơn hiện có như lịch sử: Thêm học phí hai bước, chỉnh sửa, Copy tên, Xóa có xác nhận; các mục đang disable giữ nguyên theo requirement Hóa đơn. <strong>Không tạo hóa đơn mới</strong> tại tab này. Xóa hóa đơn đồng bộ học phí/số dư mọi học viên liên kết theo requirement Hóa đơn; Hủy/lỗi không lưu dở dang.</li>
+<li><strong>Phân trang từng trang theo hóa đơn</strong>, không phân trang từng phân bổ học phí. Footer dùng số/tổng <strong>hóa đơn</strong>, sửa nhãn mẫu <code>lớp học</code> trong ảnh thành <code>hóa đơn</code>. Cuộn ngang để xem đủ cột; đổi trang thay các dòng hóa đơn, không nối thêm. Thẻ thống kê vẫn lấy toàn bộ dữ liệu.</li>
+</ul>
+<h4 id="testcase-tab-hoc-phi">Testcase — Tab Học phí</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 17: Đồng nhất Học phí với popup lịch sử</td>
+<td>High</td>
+<td></td>
+<td>REQ12</td>
+<td>User được xem học viên</td>
+<td>Có nhiều hóa đơn/phân bổ cho học viên A</td>
+<td><strong>Given</strong> Mở Học phí A ở hai vị trí<br><strong>When</strong> Đối chiếu thẻ và bảng<br><strong>Then</strong> Cùng công thức và dữ liệu đã lưu</td>
+<td>- Đủ 16 cột, cuộn ngang<br>- Nhãn Mới là tag item<br>- Mỗi phân bổ giữ ID, không gộp vì cùng tên/mã</td>
+</tr>
+<tr>
+<td>Case 18: Phân trang hóa đơn không làm đổi thẻ tổng</td>
+<td>High</td>
+<td></td>
+<td>REQ12 / REQ16</td>
+<td>User được xem học viên</td>
+<td>Có đủ hóa đơn cho nhiều trang, một hóa đơn có nhiều phân bổ</td>
+<td><strong>Given</strong> Mở trang 1 rồi trang 2<br><strong>When</strong> Mở/thu gọn bảng con và cuộn ngang<br><strong>Then</strong> Đổi tập hóa đơn nhưng tổng toàn học viên không đổi</td>
+<td>- Footer đếm hóa đơn, không đếm phân bổ/lớp<br>- Bảng con đúng invoice_id<br>- Trước/Sau đúng biên, không nối dòng cũ</td>
+</tr>
+<tr>
+<td>Case 19: Thao tác học phí của hóa đơn hiện có</td>
+<td>High</td>
+<td></td>
+<td>REQ12</td>
+<td>User có quyền học phí</td>
+<td>Hóa đơn còn số dư</td>
+<td><strong>Given</strong> Mở menu hóa đơn từ tab Học phí<br><strong>When</strong> Thêm học phí, chỉnh sửa hoặc Copy tên<br><strong>Then</strong> Áp dụng form/quy tắc Hóa đơn như lịch sử</td>
+<td>- Thêm học phí hai bước, giá trị không vượt Còn lại<br>- Không có tạo hóa đơn mới<br>- Copy tên không tạo bản sao hóa đơn<br>- Tải lại cùng dữ liệu ở lịch sử và chi tiết</td>
+</tr>
+<tr>
+<td>Case 20: Xóa hóa đơn đồng bộ học phí</td>
+<td>High</td>
+<td></td>
+<td>REQ12</td>
+<td>User có quyền xóa hóa đơn</td>
+<td>Hóa đơn đã dùng liên kết nhiều học viên</td>
+<td><strong>Given</strong> Mở popup xác nhận xóa<br><strong>When</strong> Lần lượt Hủy, gặp lỗi và xác nhận thành công<br><strong>Then</strong> Hủy/lỗi giữ nguyên; thành công cập nhật hóa đơn/học phí/số dư</td>
+<td>- Tính lại thẻ theo dữ liệu còn hiệu lực<br>- Đồng bộ mọi học viên liên kết<br>- Không còn học phí hiệu lực từ hóa đơn đã xóa<br>- Không tự hoàn tiền hoặc xóa quan hệ học viên–lớp</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="trang-4-chi-tiet-hoc-vien-log">Trang 4: Chi tiết học viên — Log</h3>
+<p align="center">
+  <a href="./images/29-student-detail-log.png"><img src="./images/29-student-detail-log.png" alt="UI chuẩn Chi tiết học viên — Log" width="1000" title="Nhấn để xem ảnh gốc"></a><br>
+  <em>Log — tìm kiếm, bộ lọc và nhật ký của học viên</em>
+</p>
+
+<ul>
+<li>Áp dụng cùng chức năng <a href="../class_management/class_detail_journal_requirements.md">Chi tiết lớp → Menu Nhật ký → Tab Nhật ký</a>, đổi đối tượng dữ liệu từ <strong>lớp</strong> sang <strong>học viên đang mở</strong>. Không đưa các tab Ghi Chú/Lịch Hẹn/Tin Nhắn của menu Nhật ký lớp vào Log học viên.</li>
+<li>UI có search bên trái, filter <strong>Đối tượng/Thời gian</strong> bên phải; bảng <strong>Tiêu đề, Mô tả, Giờ log, Ngày log, Đối tượng, Thao tác</strong> theo ảnh. Placeholder search là <code>Tìm kiếm nhật ký</code> cho đúng ngữ cảnh; <code>Tìm kiếm lớp học</code> trên ảnh là nhãn mẫu.</li>
+<li>Search chỉ theo Tiêu đề, Enter ngay hoặc debounce 2 giây từ ký tự cuối; Đối tượng lấy user đã viết nhật ký của học viên và Hệ thống, lọc theo ID người tạo/nguồn. Không lấy người chỉ được nhắc trong mô tả làm chủ log. Search/filter kết hợp AND.</li>
+<li>Thời gian mặc định <strong>Hôm nay</strong>; đủ 12 lựa chọn và quy tắc khoảng ngày theo Nhật ký lớp. Giờ/Ngày log lấy thời điểm tạo nếu chưa sửa, thời điểm sửa thành công gần nhất nếu đã sửa; filter dùng cùng thời điểm và múi giờ.</li>
+<li>Log viết tay hiển thị avatar/tên người tạo; log tự động hiển thị Hệ thống. Mô tả rỗng là <code>Trống</code>, không giới hạn độ dài; mở rộng/thu gọn chỉ thay trình bày. Checklist trong mô tả mẫu không tự tạo thao tác cập nhật Result của quy trình.</li>
+<li>Quyền giống Nhật ký lớp, xét <strong>phạm vi học viên</strong>: Admin/Class Handler/Support được xem trong phạm vi được cấp; chỉ Class Handler/Support được tạo viết tay và sửa/xóa log mình tạo. Sale không được xem/thao tác Log nếu không đồng thời có role phù hợp. Admin không có quyền sửa/xóa log người khác; log Hệ thống chỉ đọc.</li>
+<li>Tạo trực tiếp cuối bảng: nhập Tiêu đề rồi Nội dung, <code>+</code> xác nhận; Tiêu đề bắt buộc, Nội dung được trống, không giới hạn ký tự. Sửa trực tiếp dòng của mình, Enter hoặc đưa chuột ra ngoài vùng sửa để lưu một lần. Xóa mở popup xác nhận; Hủy giữ nguyên. Toast dùng đúng thông báo Nhật ký lớp.</li>
+<li>Với sự kiện thêm học viên vào lớp/đóng tiền đã chốt ở Nhật ký lớp, Log học viên hiển thị sự kiện liên quan <strong>đúng student_id</strong>; tên người thực hiện/lớp/hóa đơn/số tiền theo action nguồn. Cùng sự kiện không tạo trùng log khi retry; không đưa log của học viên khác trong cùng lớp vào. Không tự mở rộng action tự ghi từ các dòng mẫu trong ảnh.</li>
+<li><strong>Load more</strong> theo log: tải tiếp nối dòng mới, không lặp log_id; giữ dòng/mô tả đã mở, lỗi giữ dữ liệu cũ và cho thử lại, hết dữ liệu dừng tải. Đổi search/filter hoặc học viên bắt đầu lại từ lượt đầu. Những phần chưa chốt ở Nhật ký lớp (thứ tự, chọn một/nhiều Đối tượng, editor) vẫn kế thừa trạng thái cần xác nhận của nguồn.</li>
+</ul>
+<h4 id="testcase-tab-log">Testcase — Tab Log</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 21: Log giới hạn đúng học viên</td>
+<td>High</td>
+<td></td>
+<td>REQ13</td>
+<td>Admin/Class Handler/Support có quyền</td>
+<td>Hai học viên A/B cùng lớp, có log riêng và log Hệ thống</td>
+<td><strong>Given</strong> Mở Log A rồi B<br><strong>When</strong> Tải danh sách<br><strong>Then</strong> Chỉ log liên quan student_id hiện tại</td>
+<td>- Đủ cột theo UI<br>- Viết tay là người tạo, tự động là Hệ thống<br>- Không đưa toàn bộ nhật ký lớp vào Log học viên<br>- Response cũ về muộn không ghi đè học viên mới</td>
+</tr>
+<tr>
+<td>Case 22: Search/filter Log kế thừa Nhật ký lớp</td>
+<td>High</td>
+<td></td>
+<td>REQ13</td>
+<td>User được xem Log</td>
+<td>Tiêu đề và mô tả có từ khóa khác nhau; có user trùng tên</td>
+<td><strong>Given</strong> Mở Log, mặc định Hôm nay<br><strong>When</strong> Search rồi Enter hoặc dừng 2 giây, chọn Đối tượng/Thời gian<br><strong>Then</strong> Chỉ trả kết quả đồng thời khớp điều kiện</td>
+<td>- Chỉ search Tiêu đề; Enter không gửi lặp sau 2 giây<br>- User theo ID, nguồn Hệ thống không thuộc user nhắc trong mô tả<br>- Tùy chọn bao gồm hai ngày biên, chặn khoảng sai</td>
+</tr>
+<tr>
+<td>Case 23: Quyền CRUD nhật ký viết tay</td>
+<td>High</td>
+<td></td>
+<td>REQ13</td>
+<td>Owner Class Handler/Support; user khác; Admin/Sale</td>
+<td>A có log viết tay</td>
+<td><strong>Given</strong> A tạo trực tiếp cuối bảng rồi sửa tại dòng<br><strong>When</strong> Enter/ra ngoài vùng sửa; B hoặc Admin thử sửa/xóa A; Sale thử mở Log<br><strong>Then</strong> Chỉ A với role/phạm vi phù hợp lưu được</td>
+<td>- Giờ/ngày cập nhật theo lần sửa thành công<br>- Xóa cần xác nhận, Hủy/lỗi giữ dữ liệu<br>- Không giả mạo tác giả qua request<br>- Role không hợp lệ bị chặn</td>
+</tr>
+<tr>
+<td>Case 24: Log Hệ thống chỉ đọc và không trùng sự kiện</td>
+<td>High</td>
+<td></td>
+<td>REQ13</td>
+<td>User được xem Log</td>
+<td>A có sự kiện thêm vào lớp/đóng học phí đã thành công</td>
+<td><strong>Given</strong> Cùng sự kiện được xử lý lại<br><strong>When</strong> Xem Log và thử sửa/xóa log Hệ thống<br><strong>Then</strong> Một log đúng sự kiện, request sửa/xóa bị chặn</td>
+<td>- Mô tả đúng người thực hiện/học viên/lớp/hóa đơn/tiền của lần đóng<br>- Hủy/thất bại không có log thành công<br>- Hai action độc lập vẫn có hai log</td>
+</tr>
+<tr>
+<td>Case 25: Nội dung Log và phản hồi lỗi</td>
+<td>Medium</td>
+<td></td>
+<td>REQ13</td>
+<td>User được xem/ghi Log</td>
+<td>Có log rỗng và mô tả dài; API có thể lỗi</td>
+<td><strong>Given</strong> User mở rộng/thu gọn, tạo thiếu tiêu đề hoặc lưu lỗi<br><strong>When</strong> UI xử lý<br><strong>Then</strong> Trống/chi tiết/validation hiển thị như Nhật ký lớp</td>
+<td>- Chỉ mở rộng không đổi dữ liệu/Result<br>- Tạo/sửa lỗi giữ nội dung và dữ liệu cũ<br>- Một Toast đúng kết quả, không báo thành công sớm</td>
+</tr>
+<tr>
+<td>Case 35: Load more Log và đổi điều kiện</td>
+<td>High</td>
+<td></td>
+<td>REQ13 / REQ16</td>
+<td>User được xem Log</td>
+<td>Có nhiều lượt log thuộc các điều kiện khác nhau</td>
+<td><strong>Given</strong> Đã tải lượt đầu và mở mô tả<br><strong>When</strong> Tải thêm, retry lỗi rồi đổi search/filter<br><strong>Then</strong> Nối log mới không trùng; đổi điều kiện tải từ đầu</td>
+<td>- Giữ dòng cũ khi lỗi, hết dữ liệu dừng tải<br>- Không lẫn response điều kiện cũ<br>- Dòng Log luôn tuân quyền và đúng student_id</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="trang-5-chi-tiet-hoc-vien-quy-trinh-hoc-vien">Trang 5: Chi tiết học viên — Quy trình học viên</h3>
+<p align="center">
+  <a href="./images/30-student-detail-processes.png"><img src="./images/30-student-detail-processes.png" alt="UI chuẩn Chi tiết học viên — Quy trình học viên" width="1000" title="Nhấn để xem ảnh gốc"></a><br>
+  <em>Quy trình học viên — Package, Category và Action Item</em>
+</p>
+
+<ul>
+<li>Áp dụng cây và hành vi <a href="../class_management/class_detail_processes_requirements.md">Thêm quy trình trong lớp</a>, cùng <a href="../../action_board_requirement/action_board_requirements.md">Action Board</a>. Quy trình nguồn được định nghĩa ở <a href="../../process_definition_requirement/process_definition_requirements.md">Define quy trình</a>.</li>
+<li>Tab chỉ lấy loại quy trình <strong>Học viên</strong>, cùng center với học viên. Không lấy loại Lớp học/Lớp - Giáo viên/CSKH chỉ vì tên Package có chữ Support. Tên <code>[V10.25] QUY TRÌNH SUPPORT HỌC VIÊN</code> và nội dung các task trong ảnh là mẫu.</li>
+<li>Header <code>Quy trình học viên</code>, nút <strong>Thêm quy trình</strong>; cây Package → Category → Action Item có checkbox, mở/thu gọn, tiến độ Category như <code>0/7</code> và control Result theo loại Action. Số hoàn thành tính từ Result đã lưu, không hard-code hoặc tăng chỉ vì thêm item.</li>
+<li><strong>Load more</strong> cho danh sách quy trình đã gắn vào học viên; tải lần tiếp nối thêm vào danh sách, giữ cây và Result đã tải, không thay toàn bộ như phân trang. Không chia/nhân đôi cùng một bản ghi hoặc làm reset trạng thái mở/thu gọn khi tải tiếp.</li>
+<li>Result và lựa chọn đã gắn lưu riêng theo <strong>student_id + loại Học viên + Action Item</strong>. Cập nhật của A không thay học viên B, Result lớp hoặc định nghĩa nguồn. Số tiến độ phản ánh toàn bộ dữ liệu đã lưu, không lấy riêng phần đã load làm tổng tiến độ.</li>
+<li>Chỉ nội dung nguồn Công khai được thêm; Nháp/Vô hiệu không xuất hiện trong nguồn chọn mới. Quy trình đã gắn chuyển Vô hiệu vẫn hiện nội dung/Result cũ nhưng chỉ xem; khi Công khai lại áp dụng quyền cập nhật tương ứng.</li>
+<li><strong>Admin và các user được gán cho học viên</strong> được Thêm quy trình và cập nhật Result trong phạm vi học viên đó. User được gán là Người phụ trách hoặc Người theo dõi theo quyền học viên đã chốt; không phụ thuộc người đã thêm item. Backend kiểm tra quyền này cùng trạng thái nguồn lúc lưu; không dùng quan hệ thành viên lớp thay cho quan hệ với học viên.</li>
+</ul>
+<h4 id="testcase-tab-quy-trinh-hoc-vien">Testcase — Tab Quy trình học viên</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 26: Quy trình và Result riêng cho học viên</td>
+<td>High</td>
+<td></td>
+<td>REQ14</td>
+<td>User được xem học viên</td>
+<td>A/B có quy trình cùng item nguồn; lớp có Result khác</td>
+<td><strong>Given</strong> Mở Quy trình A và B<br><strong>When</strong> Đối chiếu nội dung và Result<br><strong>Then</strong> Dữ liệu tách theo student_id</td>
+<td>- Không lẫn Result học viên/lớp/nguồn<br>- Cây và control theo Action Board<br>- Tiến độ dùng Result, không dùng checkbox lựa chọn của popup</td>
+</tr>
+<tr>
+<td>Case 27: Load more quy trình</td>
+<td>High</td>
+<td></td>
+<td>REQ14 / REQ16</td>
+<td>User được xem học viên</td>
+<td>Có nhiều lượt quy trình đã gắn</td>
+<td><strong>Given</strong> Đã tải lượt đầu và mở một Category<br><strong>When</strong> Bấm tải thêm, retry khi lỗi và tải đến hết<br><strong>Then</strong> Nối lượt mới, không trùng bản ghi</td>
+<td>- Giữ nội dung/Result/trạng thái cây đã tải<br>- Lỗi giữ danh sách cũ, cho thử lại<br>- Hết dữ liệu không tiếp tục tải hoặc hiển thị nút tải thêm<br>- Tổng tiến độ không đổi do chỉ tải thêm</td>
+</tr>
+<tr>
+<td>Case 28: Nguồn Vô hiệu chỉ xem</td>
+<td>High</td>
+<td></td>
+<td>REQ14</td>
+<td>Admin hoặc user được gán cho học viên</td>
+<td>Quy trình Công khai đã gắn, có Result</td>
+<td><strong>Given</strong> Nguồn chuyển Vô hiệu<br><strong>When</strong> Xem và thử lưu Result qua UI/request<br><strong>Then</strong> Giữ nội dung/kết quả cũ, chặn lưu</td>
+<td>- Không mất Result<br>- Công khai lại áp dụng quyền cập nhật<br>- Quyền phải kiểm tra lại lúc lưu</td>
+</tr>
+</tbody>
+</table></div>
+<h4 id="popup-them-quy-trinh-hoc-vien">Popup Thêm quy trình học viên</h4>
+<ul>
+<li>Dùng bố cục/bộ chọn Package → Category → Action Item của <a href="../class_management/class_detail_processes_requirements.md#popup-thêm-nội-dung">Popup Thêm nội dung trong lớp</a>, giới hạn loại <strong>Học viên</strong> và center hiện tại.</li>
+<li>Checkbox chọn nhiều cấp: chọn cha chọn con, được bỏ chọn từng con; mở/thu gọn cây và nhãn loại Action theo nguồn. <strong>Thêm (n)</strong> xác nhận lựa chọn; Hủy đóng không lưu.</li>
+<li>Kiểm tra lại quyền, center, loại nguồn và nguồn vẫn Công khai lúc lưu. Không gắn trùng Action Item; thêm không tự ghi Result/hoàn thành item hoặc sửa định nghĩa nguồn. Lưu lỗi giữ lựa chọn để thử lại và không thêm dở dang.</li>
+</ul>
+<h5 id="testcase-popup-them-quy-trinh-hoc-vien">Testcase — Popup Thêm quy trình học viên</h5>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 29: Chọn quy trình đúng loại và center</td>
+<td>High</td>
+<td></td>
+<td>REQ14</td>
+<td>Admin hoặc user được gán cho học viên</td>
+<td>Có nguồn 5 loại và nhiều center/trạng thái</td>
+<td><strong>Given</strong> Bấm Thêm quy trình của A<br><strong>When</strong> Chọn cha/con rồi xác nhận<br><strong>Then</strong> Chỉ thêm item Công khai thuộc loại Học viên trong center A</td>
+<td>- Không chọn nguồn CSKH chỉ vì tên Support<br>- Chọn/bỏ chọn cha/con theo popup lớp<br>- Không thêm trùng, không tự hoàn thành hoặc đổi nguồn</td>
+</tr>
+<tr>
+<td>Case 30: Hủy, đổi trạng thái nguồn và request sai quyền</td>
+<td>High</td>
+<td></td>
+<td>REQ14</td>
+<td>User có/không có quyền thêm</td>
+<td>Popup có lựa chọn nháp</td>
+<td><strong>Given</strong> User Hủy hoặc nguồn đổi Vô hiệu trước lúc lưu, hoặc request khác center/sai loại/vượt quyền<br><strong>When</strong> Xử lý lưu<br><strong>Then</strong> Không gắn nội dung sai hoặc lưu một phần</td>
+<td>- Hủy không Toast CRUD<br>- Lỗi giữ lựa chọn và phản hồi đúng<br>- Backend kiểm tra lại quyền và trạng thái nguồn<br>- Admin/user được gán được lưu; user không được gán bị chặn, kể cả gọi trực tiếp</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="trang-6-chi-tiet-hoc-vien-ghi-chu">Trang 6: Chi tiết học viên — Ghi chú</h3>
+<p align="center">
+  <a href="./images/31-student-detail-notes.png"><img src="./images/31-student-detail-notes.png" alt="UI chuẩn Chi tiết học viên — Ghi chú" width="850" title="Nhấn để xem ảnh gốc"></a><br>
+  <em>Ghi chú — danh sách card, bộ lọc và bình luận</em>
+</p>
+
+<ul>
+<li>Nghiệp vụ giống <a href="./student_management_requirements.html#ghi-chu-danh-sach-binh-luan-va-popup-them">Ghi chú trong Lịch sử học viên</a>, cùng các bản ghi note_id/student_id và quyền owner đã chốt. Phần nhãn <code>Lịch Dạy/Quản Lý Đăng Ký Lịch</code> trong ảnh Ghi chú là nhãn mẫu cũ; bộ sáu tab chính dùng thứ tự nêu đầu tài liệu.</li>
+<li>Mở tab mặc định <strong>Mới + Tuần này</strong>, Loại/Độ ưu tiên chưa chọn. Filter kết hợp AND với quyền xem; đổi filter tải lại từ lượt đầu, không nối kết quả cũ vào tập mới.</li>
+<li>Card dùng UI Ghi chú mới ở lịch sử: dưới tiêu đề có avatar/tên/ngày tạo note (Bạn nếu là tài khoản hiện tại), nhãn Đã chỉnh sửa khi có sửa. Góc phải có avatar/tên/thời gian bình luận gần nhất kèm icon đồng hồ cam, badge ưu tiên/icon loại/menu; chưa có bình luận thì ẩn cụm bên phải, metadata người tạo bên trái vẫn hiện. Làm mới bình luận theo đúng note, giữ bản nháp.</li>
+<li>Ảnh toàn trang phía trên chỉ tham chiếu vị trí tab; bố cục card/ô bình luận lấy theo ảnh chuẩn mới dưới đây.</li>
+</ul>
+<p align="center"><a href="./images/23-student-notes-history.png"><img src="./images/23-student-notes-history.png" alt="UI Ghi chú mới dùng chung lịch sử và chi tiết học viên" width="900"></a></p>
+<ul>
+<li>Chỉ owner ghi chú đổi Loại/Độ ưu tiên, đóng/mở lại/sửa/xóa ghi chú. Ghi chú Riêng tư hoặc đã Đóng chỉ owner thấy cả nội dung và bình luận. Chỉ người tạo bình luận sửa/xóa bình luận đó; Trả lời ghi chú là bình luận trong cùng danh sách.</li>
+<li>Nút <code>+</code> mở cùng popup Thêm ghi chú; Tiêu đề/Nội dung bắt buộc, văn bản thuần, không giới hạn độ dài. Ô bình luận văn bản thuần, không có toolbar theo UI mới; bình luận không giới hạn độ dài, không gửi rỗng. Field ghi chú trong Thông tin cá nhân là dữ liệu riêng.</li>
+<li><strong>Load more theo ghi chú</strong>: tải thêm nối các card, giữ bình luận/card đã mở và dữ liệu đang nhập, không nhân đôi note_id. Đang tải chặn yêu cầu tải thêm lặp; lỗi giữ card cũ và cho thử lại; hết dữ liệu ẩn/vô hiệu hóa tải thêm. Danh sách luôn tuân filter và quyền owner, kể cả kết quả tải tiếp.</li>
+</ul>
+<h4 id="testcase-tab-ghi-chu">Testcase — Tab Ghi chú</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 31: Ghi chú đồng nhất hai vị trí</td>
+<td>High</td>
+<td></td>
+<td>REQ15</td>
+<td>User được xem học viên</td>
+<td>A có ghi chú và bình luận</td>
+<td><strong>Given</strong> Mở tab Ghi chú ở lịch sử và chi tiết A<br><strong>When</strong> Thêm note/bình luận hoặc owner đổi Loại/Độ ưu tiên<br><strong>Then</strong> Hai vị trí tải lại cùng dữ liệu</td>
+<td>- Mặc định Mới + Tuần này, hai filter khác chưa chọn<br>- Metadata cam theo bình luận gần nhất, chưa có thì ẩn<br>- Ghi chú cá nhân không bị thay thế</td>
+</tr>
+<tr>
+<td>Case 32: Load more và đổi filter Ghi chú</td>
+<td>High</td>
+<td></td>
+<td>REQ15 / REQ16</td>
+<td>User được xem học viên</td>
+<td>Có nhiều lượt ghi chú thuộc các filter</td>
+<td><strong>Given</strong> Mở card/bình luận ở lượt đầu<br><strong>When</strong> Tải tiếp, retry lỗi rồi đổi filter<br><strong>Then</strong> Nối đúng tập ban đầu; đổi filter thay tập và cursor từ đầu</td>
+<td>- Không trùng note_id<br>- Giữ card cũ khi lỗi<br>- Không trộn response filter/học viên cũ về muộn<br>- Hết dữ liệu không tải thêm</td>
+</tr>
+<tr>
+<td>Case 33: Quyền owner trên mọi lượt ghi chú</td>
+<td>High</td>
+<td></td>
+<td>REQ15</td>
+<td>Owner và user khác cùng quyền học viên</td>
+<td>Có note Công khai Mới, Riêng tư và Đóng ở nhiều lượt</td>
+<td><strong>Given</strong> Hai user xem/tải thêm<br><strong>When</strong> Non-owner thử đọc hoặc đổi note hạn chế<br><strong>Then</strong> Chỉ owner xem Riêng tư/Đóng và thao tác quản lý note</td>
+<td>- Không lộ nội dung/bình luận qua tải thêm hay request<br>- Không sửa/xóa bình luận người khác<br>- Mở lại áp dụng lại quyền Loại</td>
+</tr>
+<tr>
+<td>Case 34: Thêm ghi chú và bình luận từ chi tiết</td>
+<td>High</td>
+<td></td>
+<td>REQ15</td>
+<td>User được phép thao tác</td>
+<td>Tab Ghi chú A đang mở</td>
+<td><strong>Given</strong> Mở +, nhập note dài rồi gửi bình luận ở cuối danh sách<br><strong>When</strong> Lưu và tải lại<br><strong>Then</strong> Dữ liệu gắn đúng A và note</td>
+<td>- Form Nội dung văn bản thuần, bình luận văn bản thuần theo ảnh mới<br>- Không giới hạn độ dài, không gửi bình luận rỗng<br>- Bình luận vào cùng danh sách, không tạo thread riêng; icon làm mới giữ bản nháp và chỉ tải đúng note<br>- Hủy không tạo note hoặc Toast CRUD</td>
+</tr>
+</tbody>
+</table></div>
+<hr>
+<h3 id="toast-phan-hoi-crud">Toast phản hồi CRUD</h3>
+<p align="center">
+  <a href="../../images/01-toast-crud.png"><img src="../../images/01-toast-crud.png" alt="Bốn trạng thái Toast CRUD" width="520" title="Nhấn để xem ảnh gốc"></a><br>
+  <em>Toast phản hồi Create, Update, Delete và đổi trạng thái — nhấn để xem ảnh gốc</em>
+</p>
+
+<p><strong>Mô tả:</strong> Toast phản hồi kết quả các thao tác thay đổi dữ liệu trong requirement này.</p>
+<p><strong>Giải thích thành phần:</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Loại</th>
+<th>Tiêu đề</th>
+<th>Khi sử dụng</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Thành công</td>
+<td><code>Thành Công</code></td>
+<td>Backend xác nhận thao tác thành công.</td>
+</tr>
+<tr>
+<td>Thông tin</td>
+<td><code>Thông Báo</code></td>
+<td>Thao tác đã tiếp nhận nhưng dữ liệu cần thời gian đồng bộ.</td>
+</tr>
+<tr>
+<td>Cảnh báo</td>
+<td><code>Cảnh Báo</code></td>
+<td>Dữ liệu/điều kiện cần người dùng kiểm tra.</td>
+</tr>
+<tr>
+<td>Lỗi</td>
+<td><code>Có Lỗi Xảy Ra</code></td>
+<td>Backend/network không hoàn tất thao tác.</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Điểm cần lưu ý:</strong> Nội dung dòng hai lấy từ flow CRUD tương ứng; mỗi thao tác chỉ có một Toast; Hủy/chỉ đọc không có Toast CRUD; nút <code>×</code> đóng thủ công; không hiển thị dữ liệu nhạy cảm.</p>
+<h4 id="testcase-toast-phan-hoi-crud">Testcase — Toast phản hồi CRUD</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Toast Case 1: Thành công</td>
+<td>High</td>
+<td></td>
+<td>Ràng buộc Toast CRUD</td>
+<td>Role có quyền CRUD</td>
+<td>Dữ liệu hợp lệ</td>
+<td><strong>Given</strong> người dùng xác nhận thay đổi<br><strong>When</strong> backend thành công<br><strong>Then</strong> hiển thị Toast <code>Thành Công</code></td>
+<td>- Đúng nội dung nghiệp vụ<br>- Đúng một Toast<br>- Chỉ hiện sau khi backend xác nhận</td>
+</tr>
+<tr>
+<td>Toast Case 2: Cảnh báo</td>
+<td>High</td>
+<td></td>
+<td>Ràng buộc Toast CRUD</td>
+<td>Role có quyền CRUD</td>
+<td>Dữ liệu/điều kiện chưa hợp lệ</td>
+<td><strong>Given</strong> thao tác chưa đủ điều kiện<br><strong>When</strong> người dùng xác nhận<br><strong>Then</strong> hiển thị Toast <code>Cảnh Báo</code> nếu flow có Toast validation</td>
+<td>- Không lưu dữ liệu sai<br>- Vẫn đánh dấu field lỗi<br>- Không hiện thành công</td>
+</tr>
+<tr>
+<td>Toast Case 3: Lỗi</td>
+<td>High</td>
+<td></td>
+<td>Ràng buộc Toast CRUD</td>
+<td>Role có quyền CRUD</td>
+<td>Backend/network lỗi</td>
+<td><strong>Given</strong> request hợp lệ đã gửi<br><strong>When</strong> xử lý thất bại<br><strong>Then</strong> hiển thị Toast <code>Có Lỗi Xảy Ra</code></td>
+<td>- Không cập nhật một phần<br>- Cho phép thử lại<br>- Không lộ lỗi kỹ thuật</td>
+</tr>
+<tr>
+<td>Toast Case 4: Thông tin, đóng và chống lặp</td>
+<td>Medium</td>
+<td></td>
+<td>Ràng buộc Toast CRUD</td>
+<td>Role có quyền CRUD</td>
+<td>Đang đồng bộ hoặc Toast đang hiển thị</td>
+<td><strong>Given</strong> thao tác xử lý bất đồng bộ hoặc callback lặp<br><strong>When</strong> UI nhận trạng thái hoặc người dùng bấm <code>×</code><br><strong>Then</strong> hiển thị tối đa một Toast <code>Thông Báo</code> và cho đóng thủ công</td>
+<td>- Không báo thành công sớm<br>- Không nhân đôi Toast<br>- Đóng không hoàn tác dữ liệu</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="2-yeu-cau">2. Yêu cầu</h2>
+<h3 id="21-flow-chinh">2.1. Flow chính</h3>
+<p><strong>Flow 1: Xem và cập nhật chi tiết học viên</strong></p>
+<pre><code class="language-text">User có quyền mở Chi tiết học viên
+      → Hệ thống tải đúng thông tin của học viên được chọn
+      → Hiển thị Mã người dùng/Email chỉ đọc; không render control Trạng thái
+      → Dữ liệu tài khoản vẫn Chính thức, không cho sửa qua request
+      → User có thể chọn ảnh đại diện mới và chỉnh sửa Họ và tên, Ngày sinh, Giới tính, Số điện thoại, Ghi chú
+      → User bấm &quot;Cập nhật tài khoản&quot;
+      → Hệ thống kiểm tra các field bắt buộc và kiểm tra request không thay đổi field chỉ đọc
+      → Thành công: lưu toàn bộ dữ liệu hợp lệ, tải lại chi tiết và hiển thị &quot;Cập nhật thông tin học viên thành công.&quot;
+      → Thất bại: không lưu thay đổi dở dang, giữ dữ liệu trên form và hiển thị &quot;Không thể cập nhật thông tin học viên. Vui lòng thử lại.&quot;
+</code></pre>
+<p><strong>Flow 2: Lấy lại mật khẩu học viên</strong></p>
+<pre><code class="language-text">User có quyền mở Chi tiết học viên
+      → User bấm &quot;Lấy lại tài khoản&quot;
+      → Hệ thống mở popup &quot;Xác nhận lấy lại mật khẩu&quot;
+      → Nếu user bấm &quot;Hủy&quot;: đóng popup, không gửi yêu cầu và giữ nguyên mật khẩu
+      → Nếu user bấm &quot;Xác nhận&quot;: hệ thống gửi yêu cầu đặt lại mật khẩu
+      → Hệ thống đặt lại mật khẩu của đúng học viên đang xem thành &quot;abc12345&quot;
+      → Thành công: không thay đổi thông tin cá nhân và hiển thị &quot;Đặt lại mật khẩu học viên thành công.&quot;
+      → Thất bại: giữ nguyên mật khẩu hiện tại và hiển thị &quot;Không thể đặt lại mật khẩu học viên. Vui lòng thử lại.&quot;
+</code></pre>
+<p><strong>Flow 3: Xem các tab dùng chung với lịch sử</strong></p>
+<pre><code class="language-text">Mở học viên → Danh sách lớp / Học phí / Ghi chú
+      → Kiểm tra student_id và quyền, tải dữ liệu nguồn dùng chung
+      → Lớp/Học phí: chuyển từng trang; thẻ tổng lấy toàn bộ học viên
+      → Ghi chú: tải thêm card, đổi filter thì tải lại từ lượt đầu
+      → Thao tác lưu dùng đúng quy tắc lịch sử, tải lại hai vị trí cùng dữ liệu
+</code></pre>
+<p><strong>Flow 4: Log học viên</strong></p>
+<pre><code class="language-text">Admin/Class Handler/Support có quyền trên học viên mở Log
+      → Search Tiêu đề, Đối tượng, Thời gian mặc định Hôm nay như Nhật ký lớp
+      → Load more log của đúng học viên; đổi điều kiện bắt đầu lại
+      → Class Handler/Support tạo trực tiếp cuối bảng hoặc sửa/xóa log mình tạo
+      → Log Hệ thống chỉ đọc; phản hồi CRUD như Nhật ký lớp
+</code></pre>
+<p><strong>Flow 5: Thêm quy trình và cập nhật Result học viên</strong></p>
+<pre><code class="language-text">Admin/user được gán mở Quy trình học viên → Thêm quy trình
+      → Chọn Package/Category/Action Item Công khai, loại Học viên, cùng center
+      → Hủy không lưu; Thêm kiểm tra lại quyền/trạng thái/loại/center/trùng item
+      → Gắn nội dung cho student_id; không tự ghi Result
+      → Cập nhật Result theo Action Board khi nguồn Công khai; Vô hiệu chỉ xem
+      → Load more giữ cây/Result, không sửa định nghĩa nguồn hoặc Result lớp/học viên khác
+</code></pre>
+<h3 id="22-ngoai-le">2.2. Ngoại lệ</h3>
+<ul>
+<li><strong>EX01:</strong> Không tìm thấy học viên hoặc user không có quyền trên học viên được yêu cầu → không hiển thị dữ liệu chi tiết và không cho phép cập nhật hoặc lấy lại mật khẩu.</li>
+<li><strong>EX02:</strong> Họ và tên, Ngày sinh, Giới tính hoặc Số điện thoại bị để trống; Họ và tên chỉ chứa khoảng trắng → chặn cập nhật, giữ dữ liệu trên form và hiển thị lỗi tại field tương ứng.</li>
+<li><strong>EX03:</strong> Request cập nhật có thay đổi <code>Mã người dùng</code>, <code>Email</code> hoặc <code>Trạng thái</code> → backend từ chối toàn bộ request; giữ nguyên mọi dữ liệu của học viên.</li>
+<li><strong>EX04:</strong> Ảnh đại diện vượt quá <code>25 MB</code> hoặc không đáp ứng định dạng upload của hệ thống → chặn toàn bộ thao tác cập nhật, không tải ảnh lên, giữ ảnh hiện tại và hiển thị lỗi upload. Riêng trường hợp vượt dung lượng, hiển thị <code>Ảnh đại diện không được vượt quá 25 MB.</code></li>
+<li><strong>EX05:</strong> Cập nhật chi tiết thất bại → không lưu bất kỳ field nào, giữ dữ liệu user đã nhập trên form và hiển thị <code>Không thể cập nhật thông tin học viên. Vui lòng thử lại.</code></li>
+<li><strong>EX06:</strong> Lấy lại mật khẩu thất bại → không thay đổi mật khẩu hiện tại và hiển thị <code>Không thể đặt lại mật khẩu học viên. Vui lòng thử lại.</code></li>
+<li>
+<p><strong>EX07:</strong> User bấm <code>Hủy</code> hoặc đóng popup xác nhận lấy lại mật khẩu → không gửi yêu cầu đặt lại và giữ nguyên mật khẩu hiện tại.</p>
+</li>
+<li>
+<p><strong>EX08:</strong> Tải trang/lượt tiếp lỗi hoặc response cũ về muộn → không mất dữ liệu đang có hoặc trộn học viên/điều kiện; cho thử lại.</p>
+</li>
+<li><strong>EX09:</strong> Quy trình sai loại/center, nguồn không Công khai, item trùng hoặc user không được phép → chặn thêm/cập nhật, không lưu một phần.</li>
+<li><strong>EX10:</strong> Học phí/ghi chú/Log kế thừa ngoại lệ và bảo vệ quyền của requirement nguồn; truy cập tab không mở rộng quyền CRUD.</li>
+</ul>
+<h3 id="23-yeu-cau-khac">2.3. Yêu cầu khác</h3>
+<ul>
+<li><strong>REQ01:</strong> Chi tiết học viên phải tải và hiển thị đúng học viên được chọn, gồm <code>Ảnh đại diện</code>, <code>Họ và tên</code>, <code>Ngày sinh</code>, <code>Giới tính</code>, <code>Mã người dùng</code>, <code>Số điện thoại</code>, <code>Email</code>, <code>Ghi chú</code>; trạng thái Chính thức được giữ trong dữ liệu, không có control ở UI mới.</li>
+<li><strong>REQ02:</strong> Chỉ <code>Ảnh đại diện</code>, <code>Họ và tên</code>, <code>Ngày sinh</code>, <code>Giới tính</code>, <code>Số điện thoại</code>, <code>Ghi chú</code> được phép cập nhật. Họ và tên, Ngày sinh, Giới tính và Số điện thoại là các field bắt buộc.</li>
+<li><strong>REQ03:</strong> <code>Mã người dùng</code> chính là Code được sinh theo Level tại case tạo học viên. <code>Mã người dùng</code>, <code>Email</code> và <code>Trạng thái</code> phải chỉ đọc trên UI và được bảo vệ ở backend; không được thay đổi bằng request trực tiếp.</li>
+<li><strong>REQ04:</strong> Trạng thái tài khoản chỉ có giá trị <code>Chính thức</code> và không có thao tác thay đổi; UI mới không render control Trạng thái.</li>
+<li><strong>REQ05:</strong> Ghi chú là field không bắt buộc; cho phép thêm, sửa, xóa trắng và không áp dụng giới hạn nội dung hoặc độ dài ở tầng nghiệp vụ.</li>
+<li><strong>REQ06:</strong> Ảnh đại diện có dung lượng tối đa <code>25 MB</code>; ảnh đúng <code>25 MB</code> được chấp nhận, ảnh lớn hơn <code>25 MB</code> bị từ chối. Khi chọn ảnh hợp lệ, hệ thống hiển thị bản xem trước. Ảnh mới chỉ được lưu cùng thao tác <code>Cập nhật tài khoản</code>; không chọn ảnh mới thì giữ ảnh hiện tại, chưa có ảnh thì hiển thị avatar mặc định.</li>
+<li><strong>REQ07:</strong> Cập nhật chi tiết phải có tính nguyên tử. Thành công lưu toàn bộ field hợp lệ và hiển thị notification thành công; thất bại không lưu thay đổi dở dang, giữ dữ liệu trên form và hiển thị notification lỗi trong Flow 1.</li>
+<li><strong>REQ08:</strong> <code>Lấy lại tài khoản</code> bắt buộc mở popup xác nhận trước khi gửi yêu cầu. Chỉ khi user bấm <code>Xác nhận</code>, hệ thống mới đặt mật khẩu của đúng học viên thành chính xác <code>abc12345</code>; thao tác không làm thay đổi field thông tin cá nhân và phải trả về notification thành công hoặc thất bại theo Flow 2.</li>
+<li>
+<p><strong>REQ09:</strong> Quyền xem, cập nhật chi tiết và lấy lại mật khẩu phải tuân theo cùng phạm vi dữ liệu học viên của role hiện tại; không được truy cập hoặc thao tác trực tiếp với học viên ngoài phạm vi.</p>
+</li>
+<li>
+<p><strong>REQ10:</strong> Khung gồm sáu tab đúng thứ tự UI, mặc định Thông tin cá nhân; tab dùng chung student_id, dữ liệu tải/rỗng/lỗi tách biệt. Quay lại danh sách giữ điều kiện trước đó.</p>
+</li>
+<li><strong>REQ11:</strong> Danh sách lớp giống Lịch sử lớp: cùng sáu thẻ/công thức, trạng thái lớp, tiến độ cả lớp và vòng getUpTerm. Thống kê toàn học viên; bảng phân trang từng trang; mũi tên mở Chi tiết lớp theo quyền.</li>
+<li><strong>REQ12:</strong> Học phí giống tab Học phí của lịch sử, cùng hai thẻ/toàn bộ nghiệp vụ Hóa đơn hiện có, không tạo hóa đơn mới. Phân trang theo hóa đơn, không theo phân bổ; footer đơn vị hóa đơn. Thẻ lấy toàn dữ liệu, xóa đồng bộ mọi học viên liên kết.</li>
+<li><strong>REQ13:</strong> Log giống Menu Nhật ký → Tab Nhật ký lớp, đổi phạm vi sang học viên. Search Tiêu đề Enter/2 giây; Đối tượng theo tác giả/nguồn, Thời gian mặc định Hôm nay. Admin/Class Handler/Support xem trong phạm vi; chỉ Class Handler/Support tạo và sửa/xóa log mình tạo; Hệ thống chỉ đọc. Load more; các phần chưa chốt tại nguồn vẫn cần xác nhận.</li>
+<li><strong>REQ14:</strong> Quy trình học viên dùng Action Board và popup chọn như lớp, chỉ loại Học viên, nguồn Công khai cùng center. Admin/user được gán được Thêm/cập nhật Result; Vô hiệu chỉ xem Result cũ. Không gắn trùng, không tự hoàn thành hoặc sửa nguồn. Result theo student_id, không lẫn lớp/học viên khác. Danh sách dùng load more.</li>
+<li><strong>REQ15:</strong> Ghi chú giống lịch sử, cùng note_id/student_id, mặc định Mới + Tuần này; Loại/Độ ưu tiên chưa chọn, metadata từ bình luận gần nhất. Quyền owner, văn bản thuần form thêm và bình luận văn bản thuần theo lịch sử. Load more card, đổi filter tải lại từ đầu.</li>
+<li><strong>REQ16:</strong> Phân trang lớp/hóa đơn thay tập dòng; load more note/quy trình/log nối dữ liệu không trùng ID, giữ dữ liệu cũ khi lỗi và dừng khi hết. Đổi học viên/điều kiện reset page/cursor, bỏ response cũ. Thống kê/tổng tiến độ không chỉ tính phần đã tải.</li>
+</ul>
+<h3 id="24-rang-buoc">2.4. Ràng buộc</h3>
+<h4 id="quyen">Quyền</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Role</th>
+<th style="text-align: center;">Xem chi tiết</th>
+<th style="text-align: center;">Cập nhật chi tiết</th>
+<th style="text-align: center;">Lấy lại mật khẩu</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Administrator</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+</tr>
+<tr>
+<td>Sale</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+</tr>
+<tr>
+<td>Support</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+</tr>
+<tr>
+<td>Class Handler</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+</tr>
+<tr>
+<td>Các role khác</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+</tr>
+</tbody>
+</table></div>
+<h4 id="pham-vi-du-lieu">Phạm vi dữ liệu</h4>
+<ul>
+<li>Administrator xem và thao tác trên toàn bộ học viên.</li>
+<li>Sale, Support và Class Handler chỉ xem, cập nhật và lấy lại mật khẩu của học viên mà chính user đó được gán làm Người phụ trách hoặc Người theo dõi.</li>
+<li>Bảng quyền thông tin cá nhân không tự cấp quyền cho mọi thao tác tab khác. Học phí/ghi chú theo lịch sử; Log theo role/quyền owner Nhật ký lớp; Quy trình cho Admin và user được gán như REQ14.</li>
+<li>Không cho phép truy cập hoặc thực hiện hành động bị đánh dấu <code>❌</code>, kể cả khi gọi trực tiếp bằng URL hoặc request.</li>
+</ul>
+<hr>
+<h2 id="3-can-xac-nhan">3. Cần xác nhận</h2>
+<ul>
+<li>Ảnh đại diện nhận định dạng nào? Có giới hạn chiều rộng/cao hoặc cần cắt ảnh trước khi lưu không?</li>
+<li>
+<p>Sau khi đặt lại mật khẩu về <code>abc12345</code>, học viên có phải đổi mật khẩu ở lần đăng nhập tiếp theo không?</p>
+</li>
+<li>
+<p>Tab Log kế thừa những phần Nhật ký lớp chưa chốt: thứ tự, chọn một/nhiều Đối tượng và định dạng editor. Log học viên đã chốt load more.</p>
+</li>
+</ul>
+</article>
+    <p class="source-note">Nguồn: student_detail_requirements.md · SHA-256 234ccea5d6e63f2f440c3c0d65963bf591277e649cf8038ceaeac398d2c1c141</p>
+  </main>
+  <script>
+    const article = document.getElementById('document');
+    const nav = document.getElementById('docNav');
+    const headings = [...article.querySelectorAll('h2')];
+    headings.forEach((heading, index) => {
+      const link = document.createElement('a');
+      link.href = `#${heading.id}`;
+      const number = document.createElement('span');
+      number.className = 'nav-num';
+      number.textContent = String(index + 1).padStart(2, '0');
+      link.append(number, document.createTextNode(heading.textContent));
+      nav.append(link);
+    });
+
+    const navLinks = [...nav.querySelectorAll('a')];
+    const observer = new IntersectionObserver(entries => {
+      const current = entries.filter(item => item.isIntersecting).sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
+      if (!current) return;
+      navLinks.forEach(link => link.classList.toggle('active', link.hash === `#${current.target.id}`));
+    }, {rootMargin: '-18% 0px -68% 0px', threshold: [0, .2, .5]});
+    headings.forEach(heading => observer.observe(heading));
+    if (navLinks[0]) navLinks[0].classList.add('active');
+
+    const testcaseHeadings = [...article.querySelectorAll('h2, h3, h4, h5')]
+      .filter(heading => /^(Testcase|Feature:)/.test(heading.textContent.trim()));
+    const testcaseGroups = testcaseHeadings
+      .map(heading => ({heading, tableWrap: heading.nextElementSibling}))
+      .filter(group => group.tableWrap?.classList.contains('table-wrap'));
+    if (testcaseGroups.length) {
+        const tableWraps = testcaseGroups.map(group => group.tableWrap);
+        tableWraps.forEach(tableWrap => tableWrap.classList.add('testcase-table'));
+        const rows = tableWraps.flatMap(tableWrap => [...tableWrap.querySelectorAll('tbody tr')]);
+        const tools = document.createElement('div');
+        tools.className = 'case-tools';
+        const input = document.createElement('input');
+        input.type = 'search';
+        input.placeholder = 'Tìm testcase, Flow, REQ, EX hoặc nội dung…';
+        input.setAttribute('aria-label', 'Tìm testcase');
+        const count = document.createElement('span');
+        count.className = 'case-count';
+        tools.append(input, count);
+        testcaseGroups[0].heading.before(tools);
+        const filterRows = () => {
+          const query = input.value.trim().toLocaleLowerCase('vi');
+          let visible = 0;
+          rows.forEach(row => {
+            const match = !query || row.textContent.toLocaleLowerCase('vi').includes(query);
+            row.hidden = !match;
+            if (match) visible += 1;
+          });
+          testcaseGroups.forEach(({heading, tableWrap}) => {
+            const hasVisibleRow = [...tableWrap.querySelectorAll('tbody tr')]
+              .some(row => !row.hidden);
+            heading.hidden = !hasVisibleRow;
+            tableWrap.hidden = !hasVisibleRow;
+          });
+          count.textContent = `${visible}/${rows.length} testcase`;
+        };
+        input.addEventListener('input', filterRows);
+        filterRows();
+    }
+  </script>
+</body>
+</html>

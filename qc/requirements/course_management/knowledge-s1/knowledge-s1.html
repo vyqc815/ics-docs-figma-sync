@@ -1,0 +1,3820 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Requirement Kiến thức (S1) — định nghĩa kiến thức của khoá học cho role CD">
+  <link rel="icon" href="data:,">
+  <title>Kiến thức (S1) — Requirement</title>
+  <style>
+    :root {
+      --orange-700: #c83f00;
+      --orange-600: #e84c00;
+      --orange-500: #f45b0a;
+      --orange-400: #ff7a32;
+      --orange-100: #fff0e8;
+      --orange-50: #fff8f4;
+      --navy-950: #101828;
+      --navy-900: #172033;
+      --navy-800: #243047;
+      --slate-700: #344054;
+      --slate-600: #475467;
+      --slate-500: #667085;
+      --slate-400: #98a2b3;
+      --slate-300: #d0d5dd;
+      --slate-200: #e4e7ec;
+      --slate-100: #f2f4f7;
+      --slate-50: #f8fafc;
+      --white: #ffffff;
+      --green: #159447;
+      --blue: #2154c5;
+      --yellow: #b77900;
+      --red: #c92a2a;
+      --purple: #6941c6;
+      --shadow-sm: 0 1px 2px rgba(16, 24, 40, .06);
+      --shadow-md: 0 12px 32px rgba(16, 24, 40, .10);
+      --shadow-lg: 0 24px 64px rgba(16, 24, 40, .16);
+      --radius-sm: 10px;
+      --radius: 16px;
+      --radius-lg: 24px;
+      --sidebar: 286px;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      color: var(--navy-950);
+      background:
+        radial-gradient(circle at 88% 5%, rgba(244, 91, 10, .10), transparent 24rem),
+        var(--slate-50);
+      font: 15px/1.65 Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      text-rendering: optimizeLegibility;
+    }
+    a { color: inherit; }
+    img { max-width: 100%; }
+    button, input, select { font: inherit; }
+    code {
+      padding: .12rem .38rem;
+      border: 1px solid #fed7c3;
+      border-radius: 6px;
+      color: var(--orange-700);
+      background: var(--orange-50);
+      font: 600 .9em ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    }
+
+    .skip-link {
+      position: fixed;
+      z-index: 999;
+      top: 12px;
+      left: 12px;
+      padding: 10px 14px;
+      border-radius: 9px;
+      color: var(--white);
+      background: var(--navy-950);
+      transform: translateY(-150%);
+    }
+    .skip-link:focus { transform: none; }
+
+    .sidebar {
+      position: fixed;
+      z-index: 30;
+      inset: 0 auto 0 0;
+      width: var(--sidebar);
+      padding: 22px 18px;
+      overflow-y: auto;
+      color: #f8fafc;
+      background:
+        linear-gradient(155deg, rgba(255, 122, 50, .24), transparent 26%),
+        linear-gradient(180deg, #192338 0%, #111827 100%);
+      border-right: 1px solid rgba(255, 255, 255, .08);
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 4px 8px 22px;
+      border-bottom: 1px solid rgba(255, 255, 255, .10);
+    }
+    .brand-mark {
+      display: grid;
+      width: 44px;
+      height: 44px;
+      place-items: center;
+      border-radius: 14px;
+      color: var(--white);
+      background: linear-gradient(135deg, var(--orange-400), var(--orange-600));
+      box-shadow: 0 10px 26px rgba(244, 91, 10, .35);
+      font-weight: 900;
+      letter-spacing: -.06em;
+    }
+    .brand strong { display: block; font-size: 16px; }
+    .brand small { color: #aeb8c9; }
+    .nav-title {
+      margin: 24px 10px 8px;
+      color: #8f9aae;
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+    .nav { display: grid; gap: 4px; }
+    .nav a {
+      display: flex;
+      align-items: center;
+      gap: 11px;
+      padding: 10px 12px;
+      border-radius: 10px;
+      color: #cbd5e1;
+      text-decoration: none;
+      transition: .18s ease;
+    }
+    .nav a:hover, .nav a.active {
+      color: var(--white);
+      background: rgba(255, 255, 255, .09);
+    }
+    .nav a.active { box-shadow: inset 3px 0 var(--orange-400); }
+    .nav-num {
+      display: grid;
+      width: 25px;
+      height: 25px;
+      flex: 0 0 auto;
+      place-items: center;
+      border: 1px solid rgba(255, 255, 255, .15);
+      border-radius: 8px;
+      font-size: 11px;
+      font-weight: 800;
+    }
+    .sidebar-footer {
+      margin-top: 26px;
+      padding: 14px;
+      border: 1px solid rgba(255, 255, 255, .10);
+      border-radius: 14px;
+      color: #aeb8c9;
+      background: rgba(255, 255, 255, .04);
+      font-size: 12px;
+    }
+    .sidebar-footer a { color: #ffd8c5; }
+
+    main {
+      width: min(1500px, calc(100% - var(--sidebar)));
+      margin-left: var(--sidebar);
+      padding: 34px clamp(24px, 4vw, 64px) 80px;
+    }
+    section { scroll-margin-top: 24px; }
+    .hero {
+      position: relative;
+      padding: clamp(30px, 5vw, 56px);
+      overflow: hidden;
+      border: 1px solid rgba(255, 255, 255, .08);
+      border-radius: var(--radius-lg);
+      color: var(--white);
+      background:
+        linear-gradient(105deg, rgba(16, 24, 40, .97) 0%, rgba(23, 32, 51, .94) 62%, rgba(109, 45, 9, .90) 100%);
+      box-shadow: var(--shadow-lg);
+    }
+    .hero::after {
+      content: "";
+      position: absolute;
+      width: 360px;
+      height: 360px;
+      top: -190px;
+      right: -80px;
+      border: 70px solid rgba(255, 122, 50, .15);
+      border-radius: 50%;
+    }
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 10px;
+      border: 1px solid rgba(255, 255, 255, .15);
+      border-radius: 999px;
+      color: #ffd8c5;
+      background: rgba(255, 255, 255, .06);
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+    .hero h1 {
+      max-width: 900px;
+      margin: 18px 0 12px;
+      font-size: clamp(34px, 5vw, 64px);
+      line-height: 1.03;
+      letter-spacing: -.045em;
+    }
+    .hero p { max-width: 780px; margin: 0; color: #cbd5e1; font-size: 17px; }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 25px; }
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      min-height: 42px;
+      padding: 9px 14px;
+      border: 1px solid transparent;
+      border-radius: 10px;
+      color: var(--white);
+      background: var(--orange-500);
+      text-decoration: none;
+      cursor: pointer;
+      transition: .18s ease;
+    }
+    .button:hover { transform: translateY(-1px); background: var(--orange-600); }
+    .button.secondary { border-color: rgba(255, 255, 255, .15); background: rgba(255, 255, 255, .07); }
+    .button.ghost { color: var(--slate-700); border-color: var(--slate-300); background: var(--white); }
+    .button.small { min-height: 36px; padding: 7px 11px; font-size: 13px; }
+
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 14px;
+      margin-top: 18px;
+    }
+    .stat {
+      padding: 18px;
+      border: 1px solid var(--slate-200);
+      border-radius: var(--radius);
+      background: rgba(255, 255, 255, .86);
+      box-shadow: var(--shadow-sm);
+    }
+    .stat strong { display: block; color: var(--orange-600); font-size: 30px; line-height: 1; }
+    .stat span { display: block; margin-top: 7px; color: var(--slate-600); font-weight: 650; }
+
+    .section-head {
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 24px;
+      margin: 64px 0 20px;
+    }
+    .section-kicker {
+      margin: 0 0 6px;
+      color: var(--orange-600);
+      font-size: 12px;
+      font-weight: 850;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+    .section-head h2 { margin: 0; font-size: clamp(27px, 4vw, 40px); letter-spacing: -.035em; }
+    .section-head p { max-width: 600px; margin: 8px 0 0; color: var(--slate-600); }
+
+    .panel {
+      padding: clamp(20px, 3vw, 30px);
+      border: 1px solid var(--slate-200);
+      border-radius: var(--radius-lg);
+      background: var(--white);
+      box-shadow: var(--shadow-sm);
+    }
+    .panel + .panel { margin-top: 18px; }
+    .panel h3 { margin: 0 0 14px; font-size: 21px; letter-spacing: -.02em; }
+    .panel h4 { margin: 26px 0 10px; }
+    .muted { color: var(--slate-600); }
+    .note {
+      padding: 15px 17px;
+      border-left: 4px solid var(--orange-500);
+      border-radius: 0 12px 12px 0;
+      color: var(--slate-700);
+      background: var(--orange-50);
+    }
+
+    .mockup {
+      position: relative;
+      padding: 12px;
+      border: 1px solid var(--slate-200);
+      border-radius: 18px;
+      background: linear-gradient(145deg, #fff, #f4f6f9);
+      box-shadow: var(--shadow-md);
+    }
+    .mockup a { display: block; overflow: hidden; border-radius: 12px; }
+    .mockup img { display: block; width: 100%; transition: transform .3s ease; }
+    .mockup a:hover img { transform: scale(1.01); }
+    .mockup figcaption { padding: 12px 4px 2px; color: var(--slate-600); font-size: 13px; }
+
+    .grid-2 { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
+    .grid-3 { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+    .grid-4 { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 14px; }
+    .card {
+      padding: 18px;
+      border: 1px solid var(--slate-200);
+      border-radius: var(--radius);
+      background: var(--white);
+      box-shadow: var(--shadow-sm);
+    }
+    .card h3, .card h4 { margin: 0 0 8px; }
+    .card p { margin: 0; color: var(--slate-600); }
+    .card-accent { border-top: 4px solid var(--orange-500); }
+
+    .column-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+    .column-item {
+      min-height: 124px;
+      padding: 15px;
+      border: 1px solid var(--slate-200);
+      border-radius: 14px;
+      background: var(--slate-50);
+    }
+    .column-item strong { display: block; margin-bottom: 5px; color: var(--navy-900); }
+    .column-item span { color: var(--slate-600); font-size: 13px; }
+
+    .status-card { display: flex; align-items: center; gap: 12px; }
+    .status-card img { width: 42px; height: 42px; }
+    .status-card small { display: block; color: var(--slate-500); }
+
+    .tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      padding: 4px 9px;
+      border-radius: 999px;
+      color: var(--orange-700);
+      background: var(--orange-100);
+      font-size: 12px;
+      font-weight: 800;
+    }
+    .tag.high { color: #9d174d; background: #fce7f3; }
+    .tag.medium { color: #92400e; background: #fef3c7; }
+    .tag.req { color: #3730a3; background: #e0e7ff; }
+    .tag.ex { color: #b42318; background: #fee4e2; }
+
+    .flow-list { display: grid; gap: 14px; counter-reset: flow; }
+    .flow {
+      position: relative;
+      padding: 22px 22px 22px 68px;
+      border: 1px solid var(--slate-200);
+      border-radius: var(--radius);
+      background: var(--white);
+    }
+    .flow::before {
+      counter-increment: flow;
+      content: counter(flow, decimal-leading-zero);
+      position: absolute;
+      top: 20px;
+      left: 18px;
+      display: grid;
+      width: 36px;
+      height: 36px;
+      place-items: center;
+      border-radius: 11px;
+      color: var(--white);
+      background: var(--orange-500);
+      font-weight: 900;
+    }
+    .flow h3 { margin: 0 0 8px; }
+    .flow ol { margin: 0; padding-left: 20px; color: var(--slate-700); }
+
+    .exception { border-left: 4px solid #ef4444; }
+    .exception strong { color: var(--red); }
+
+    .formula-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; }
+    .formula {
+      padding: 18px;
+      border: 1px solid #ffd6c2;
+      border-radius: 16px;
+      background: linear-gradient(160deg, #fff, var(--orange-50));
+    }
+    .formula h4 { margin: 0 0 12px; color: var(--orange-700); }
+    .fraction { display: grid; justify-items: center; color: var(--navy-900); font-weight: 720; text-align: center; }
+    .fraction .top { padding: 0 10px 7px; border-bottom: 2px solid var(--navy-800); }
+    .fraction .bottom { padding-top: 7px; }
+    .formula .teacher { margin-top: 16px; padding-top: 12px; border-top: 1px dashed #f5b896; color: var(--slate-600); font-size: 13px; }
+
+    .filters {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      align-items: center;
+      padding: 14px;
+      border: 1px solid var(--slate-200);
+      border-radius: 14px;
+      background: var(--white);
+      position: sticky;
+      top: 10px;
+      z-index: 10;
+      box-shadow: var(--shadow-md);
+    }
+    .search {
+      min-width: min(100%, 320px);
+      flex: 1 1 260px;
+      height: 42px;
+      padding: 0 13px;
+      border: 1px solid var(--slate-300);
+      border-radius: 10px;
+      color: var(--navy-950);
+      background: var(--white);
+      outline: none;
+    }
+    .search:focus { border-color: var(--orange-500); box-shadow: 0 0 0 4px rgba(244, 91, 10, .12); }
+    .testcases { display: grid; gap: 10px; margin-top: 16px; }
+    .testcase {
+      border: 1px solid var(--slate-200);
+      border-radius: 14px;
+      background: var(--white);
+      overflow: clip;
+    }
+    .testcase[hidden] { display: none; }
+    .testcase summary {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 15px 17px;
+      cursor: pointer;
+      list-style: none;
+    }
+    .testcase summary::-webkit-details-marker { display: none; }
+    .testcase summary::after { content: "+"; margin-left: auto; color: var(--orange-600); font-size: 22px; font-weight: 700; }
+    .testcase[open] summary::after { content: "−"; }
+    .testcase-title { min-width: 0; font-weight: 780; }
+    .case-body {
+      display: grid;
+      grid-template-columns: minmax(180px, .7fr) minmax(0, 1.3fr);
+      gap: 18px;
+      padding: 18px;
+      border-top: 1px solid var(--slate-200);
+      background: var(--slate-50);
+    }
+    .case-meta { color: var(--slate-600); }
+    .case-meta div + div { margin-top: 8px; }
+    .case-steps { display: grid; gap: 10px; }
+    .step { padding: 10px 12px; border-left: 3px solid var(--orange-400); background: var(--white); }
+    .expected { margin: 14px 0 0; padding-left: 20px; }
+    .expected li + li { margin-top: 4px; }
+    .empty-filter { display: none; padding: 28px; color: var(--slate-600); text-align: center; }
+
+    .question-list { display: grid; gap: 10px; margin: 0; padding: 0; counter-reset: question; list-style: none; }
+    .question-list li {
+      position: relative;
+      padding: 14px 16px 14px 54px;
+      border: 1px solid #f4d8a4;
+      border-radius: 13px;
+      background: #fffbeb;
+      color: #664d03;
+    }
+    .question-list li::before {
+      counter-increment: question;
+      content: counter(question);
+      position: absolute;
+      top: 12px;
+      left: 14px;
+      display: grid;
+      width: 28px;
+      height: 28px;
+      place-items: center;
+      border-radius: 9px;
+      color: #fff;
+      background: #d99100;
+      font-weight: 850;
+    }
+
+    .footer {
+      margin-top: 64px;
+      padding-top: 24px;
+      border-top: 1px solid var(--slate-200);
+      color: var(--slate-500);
+      text-align: center;
+    }
+
+    @media (max-width: 1120px) {
+      :root { --sidebar: 244px; }
+      .column-grid, .grid-3, .formula-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .stats { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
+    @media (max-width: 780px) {
+      .sidebar { position: static; width: auto; padding: 14px; }
+      .brand { padding-bottom: 12px; }
+      .nav-title, .sidebar-footer { display: none; }
+      .nav { display: flex; overflow-x: auto; padding-top: 10px; }
+      .nav a { flex: 0 0 auto; }
+      main { width: 100%; margin: 0; padding: 18px 14px 60px; }
+      .hero { border-radius: 18px; }
+      .grid-2, .grid-3, .grid-4, .column-grid, .formula-grid, .case-body { grid-template-columns: 1fr; }
+      .section-head { align-items: start; flex-direction: column; }
+      .filters { position: static; }
+    }
+    @media print {
+      body { background: #fff; font-size: 11px; }
+      .sidebar, .hero-actions, .filters, .skip-link { display: none !important; }
+      main { width: 100%; margin: 0; padding: 0; }
+      .hero { color: #111; background: #fff; border: 2px solid #111; box-shadow: none; }
+      .hero p { color: #333; }
+      .panel, .card, .stat, .mockup, .testcase { break-inside: avoid; box-shadow: none; }
+      .section-head { margin-top: 32px; }
+      .testcase { display: block !important; }
+      .testcase summary::after { display: none; }
+      .testcase:not([open]) .case-body { display: grid; }
+    }
+
+    .doc-shell { min-width: 0; }
+    .doc-toolbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      margin-bottom: 18px;
+      padding: 14px 16px;
+      border: 1px solid var(--slate-200);
+      border-radius: 14px;
+      background: rgba(255,255,255,.92);
+      box-shadow: var(--shadow-sm);
+    }
+    .doc-toolbar-left, .doc-toolbar-right { display: flex; flex-wrap: wrap; align-items: center; gap: 9px; }
+    .sync-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      padding: 6px 10px;
+      border-radius: 999px;
+      color: #067647;
+      background: #ecfdf3;
+      border: 1px solid #abefc6;
+      font-size: 12px;
+      font-weight: 800;
+    }
+    .sync-badge::before { content: "✓"; }
+    .hash { color: var(--slate-500); font: 12px ui-monospace, SFMono-Regular, Menlo, monospace; }
+    .markdown-body {
+      padding: clamp(24px, 4vw, 54px);
+      border: 1px solid var(--slate-200);
+      border-radius: var(--radius-lg);
+      background: var(--white);
+      box-shadow: var(--shadow-md);
+      overflow: hidden;
+    }
+    .markdown-body > h1 {
+      position: relative;
+      margin: -54px -54px 42px;
+      padding: 62px 54px 54px;
+      color: var(--white);
+      background:
+        radial-gradient(circle at 88% 10%, rgba(255,122,50,.36), transparent 20rem),
+        linear-gradient(115deg, var(--navy-950), #243047 68%, #713209);
+      font-size: clamp(34px, 5vw, 62px);
+      line-height: 1.05;
+      letter-spacing: -.045em;
+    }
+    .markdown-body h2 {
+      margin: 70px 0 24px;
+      padding: 0 0 13px;
+      border-bottom: 2px solid var(--slate-200);
+      font-size: clamp(27px, 4vw, 39px);
+      line-height: 1.15;
+      letter-spacing: -.035em;
+      scroll-margin-top: 24px;
+    }
+    .markdown-body h2::first-letter { color: var(--orange-600); }
+    .markdown-body h3 {
+      margin: 38px 0 16px;
+      color: var(--navy-900);
+      font-size: 23px;
+      line-height: 1.25;
+      letter-spacing: -.02em;
+      scroll-margin-top: 24px;
+    }
+    .markdown-body h4 {
+      margin: 28px 0 12px;
+      color: var(--orange-700);
+      font-size: 17px;
+      scroll-margin-top: 24px;
+    }
+    .markdown-body p { margin: 12px 0; }
+    .markdown-body strong { color: var(--navy-900); }
+    .markdown-body ul, .markdown-body ol { padding-left: 1.35rem; }
+    .markdown-body li { margin: 6px 0; }
+    .markdown-body li::marker { color: var(--orange-500); font-weight: 800; }
+    .markdown-body hr {
+      height: 1px;
+      margin: 48px 0;
+      border: 0;
+      background: linear-gradient(90deg, transparent, var(--slate-300), transparent);
+    }
+    .markdown-body > p[align="center"] {
+      margin: 22px 0 28px;
+      padding: 12px;
+      border: 1px solid var(--slate-200);
+      border-radius: 18px;
+      background: linear-gradient(145deg, #fff, #f5f7fa);
+      box-shadow: var(--shadow-md);
+    }
+    .markdown-body > p[align="center"] a { display: inline-block; max-width: 100%; }
+    .markdown-body > p[align="center"] img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+      margin: auto;
+      border-radius: 12px;
+    }
+    .markdown-body > p[align="center"] em {
+      display: block;
+      margin-top: 10px;
+      color: var(--slate-500);
+      font-size: 13px;
+    }
+    .table-wrap {
+      width: 100%;
+      margin: 18px 0 28px;
+      overflow: auto;
+      border: 1px solid var(--slate-200);
+      border-radius: 15px;
+      background: var(--white);
+      box-shadow: var(--shadow-sm);
+    }
+    .markdown-body table {
+      width: 100%;
+      min-width: 720px;
+      border-collapse: separate;
+      border-spacing: 0;
+      font-size: 14px;
+    }
+    .markdown-body th {
+      position: sticky;
+      top: 0;
+      z-index: 2;
+      padding: 12px 14px;
+      color: var(--white);
+      background: var(--navy-900);
+      border-bottom: 1px solid var(--navy-800);
+      text-align: left;
+      white-space: nowrap;
+    }
+    .markdown-body td {
+      padding: 12px 14px;
+      border-bottom: 1px solid var(--slate-200);
+      vertical-align: top;
+    }
+    .markdown-body tbody tr:nth-child(even) td { background: var(--slate-50); }
+    .markdown-body tbody tr:hover td { background: var(--orange-50); }
+    .markdown-body tbody tr:last-child td { border-bottom: 0; }
+    .markdown-body td img { display: block; width: 36px; height: 36px; max-width: none; }
+    .markdown-body pre {
+      position: relative;
+      margin: 16px 0 24px;
+      padding: 18px 20px;
+      overflow: auto;
+      border: 1px solid #ffd3bd;
+      border-radius: 14px;
+      color: #fff7ed;
+      background: linear-gradient(145deg, #172033, #222f48);
+      box-shadow: var(--shadow-sm);
+      font: 13px/1.75 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    }
+    .markdown-body pre code { padding: 0; border: 0; color: inherit; background: none; font: inherit; }
+    .markdown-body blockquote {
+      margin: 18px 0;
+      padding: 13px 16px;
+      border-left: 4px solid var(--orange-500);
+      border-radius: 0 12px 12px 0;
+      color: var(--slate-700);
+      background: var(--orange-50);
+    }
+    .case-tools {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 10px;
+      margin: 12px 0 14px;
+      padding: 13px;
+      border: 1px solid var(--slate-200);
+      border-radius: 13px;
+      background: var(--slate-50);
+    }
+    .case-tools input {
+      flex: 1 1 280px;
+      height: 42px;
+      padding: 0 13px;
+      border: 1px solid var(--slate-300);
+      border-radius: 10px;
+      outline: none;
+    }
+    .case-tools input:focus { border-color: var(--orange-500); box-shadow: 0 0 0 4px rgba(244,91,10,.12); }
+    .case-count { color: var(--orange-700); font-weight: 800; white-space: nowrap; }
+    .testcase-table table { min-width: 1500px; }
+    .testcase-table th:first-child, .testcase-table td:first-child {
+      position: sticky;
+      left: 0;
+      z-index: 1;
+      min-width: 230px;
+      box-shadow: 1px 0 0 var(--slate-200);
+    }
+    .testcase-table th:first-child { z-index: 3; background: var(--navy-900); }
+    .testcase-table td:first-child { background: var(--white); font-weight: 750; }
+    .testcase-table tbody tr:nth-child(even) td:first-child { background: var(--slate-50); }
+    .testcase-table tbody tr:hover td:first-child { background: var(--orange-50); }
+    .source-note {
+      margin-top: 18px;
+      color: var(--slate-500);
+      text-align: center;
+      font-size: 12px;
+    }
+    @media (max-width: 780px) {
+      .doc-toolbar { align-items: flex-start; flex-direction: column; }
+      .markdown-body { padding: 20px 16px; border-radius: 16px; }
+      .markdown-body > h1 { margin: -20px -16px 32px; padding: 40px 20px 34px; }
+      .markdown-body h2 { margin-top: 48px; }
+      .markdown-body table { font-size: 13px; }
+    }
+    @media print {
+      .doc-toolbar, .case-tools { display: none !important; }
+      .markdown-body { padding: 0; border: 0; box-shadow: none; overflow: visible; }
+      .markdown-body > h1 { margin: 0 0 32px; padding: 30px; color: #111; background: #fff; border: 2px solid #111; }
+      .table-wrap { overflow: visible; box-shadow: none; }
+      .markdown-body table { min-width: 0 !important; font-size: 9px; }
+      .markdown-body th { position: static; color: #111; background: #eee; }
+      .testcase-table th:first-child, .testcase-table td:first-child { position: static; }
+    }
+</style>
+</head>
+<body>
+  <a class="skip-link" href="#document">Đi đến nội dung chính</a>
+  <aside class="sidebar" aria-label="Mục lục requirement">
+    <div class="brand">
+      <div class="brand-mark">ics</div>
+      <div><strong>ICS Requirement</strong><small>Kiến thức khoá học, cụm và AI</small></div>
+    </div>
+    <div class="nav-title">Nội dung Markdown</div>
+    <nav id="docNav" class="nav"></nav>
+    <div class="sidebar-footer">
+      HTML được render trực tiếp từ Markdown nguồn.<br>
+      <a href="./knowledge-s1.md">Mở file Markdown</a>
+    </div>
+  </aside>
+  <main class="doc-shell">
+    <div class="doc-toolbar">
+      <div class="doc-toolbar-left">
+        <span class="sync-badge">Đồng bộ 100% từ Markdown</span>
+        <span class="hash">SHA-256: 5d35162ac8a5…</span>
+      </div>
+      <div class="doc-toolbar-right">
+        <a class="button ghost small" href="./knowledge-s1.md">Xem Markdown</a>
+        <button class="button small" type="button" onclick="window.print()">In / Lưu PDF</button>
+      </div>
+    </div>
+    <article id="document" class="markdown-body" data-source-sha256="5d35162ac8a5c299af02feadd0ac2aa39d5e1efbcfe435a24f2a531638806d1a">
+<h1 id="kien-thuc-s1">Kiến thức (S1)</h1>
+<blockquote>
+<p>Màn <strong>Kiến thức (S1)</strong> nằm trong từng <strong>khoá học</strong> của role <strong>CD</strong>, dùng để định nghĩa toàn bộ kiến thức của khoá theo
+từng loại: Từ vựng, Ngữ pháp, Mẫu câu, Hán tự (Hanzi), Kanji, Bảng chữ, Phát âm — chỉ hiện các loại đúng với ngôn ngữ
+của <strong>trung tâm</strong> (mỗi trung tâm dạy 1 ngôn ngữ). Dữ liệu theo trung tâm CD đang chọn ở header (CD và Giáo viên
+được chia theo trung tâm).
+Mỗi mục kiến thức là <strong>bản ghi của Thư viện dữ liệu</strong>: S1 tham chiếu bản ghi thư viện; thêm mới hoặc sửa tại S1 ghi
+thẳng vào thư viện. Kiến thức chỉ được sửa tại S1; Chi tiết bài học chỉ <strong>thêm / gỡ</strong> kiến thức đã có trong S1.</p>
+<p>Ảnh là Figma <code>CD-KH-030400</code> → <code>CD-KH-030540</code> và <code>CD-KH-030270</code>. Những chỗ chưa có thiết kế được ghi rõ là
+<strong>UI cần bổ sung</strong> ngay tại khu vực tương ứng. Bản đồ field ↔ cột sheet dữ liệu gốc: xem Phụ lục A.</p>
+</blockquote>
+<h2 id="1-ui">1. UI</h2>
+<h3 id="khung-man-hinh-va-tab-loai-kien-thuc">Khung màn hình và tab loại kiến thức</h3>
+<p align="center">
+  <a href="./images/01-tu-vung.png"><img src="./images/01-tu-vung.png" alt="Kiến thức (S1) — Từ vựng" width="900" title="Nhấn để xem ảnh gốc"></a><br>
+  <em>Kiến thức (S1) — tab Từ vựng, menu Thêm từ đang mở — nhấn để xem ảnh gốc</em>
+</p>
+
+<p align="center">
+  <a href="./images/08-ngu-phap.png"><img src="./images/08-ngu-phap.png" alt="Kiến thức (S1) — Ngữ pháp" width="900" title="Nhấn để xem ảnh gốc"></a><br>
+  <em>Tab Ngữ pháp: bảng dùng cột Cụm; chưa có cụm thì panel gợi ý nhập Số cụm — nhấn để xem ảnh gốc</em>
+</p>
+
+<p><strong>Mô tả:</strong></p>
+<ul>
+<li>CD chọn trung tâm ở header (<code>Switch Center</code>), vào khoá học, chọn <code>Kiến thức (S1)</code> trong menu của khoá để xem và định
+  nghĩa kiến thức của khoá học đó.</li>
+<li>Mỗi loại kiến thức là <strong>một tab riêng</strong> ở đầu màn; tab chỉ hiện các loại áp dụng cho ngôn ngữ của trung tâm
+  đang chọn (khoá học không có field ngôn ngữ riêng).</li>
+<li>Mỗi tab gồm: bảng danh sách mục của loại đó (bên trái) và panel <strong>Cụm</strong> của loại đó (bên phải).</li>
+</ul>
+<p><strong>Giải thích thành phần:</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Thành phần</th>
+<th>Yêu cầu</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Switch Center (header)</td>
+<td>Trung tâm CD đang làm việc (vd <code>Đắc Nhân</code>); đổi trung tâm thì toàn bộ dữ liệu khoá học và S1 tải lại theo trung tâm mới, kể cả bộ tab và danh sách Từ loại theo ngôn ngữ.</td>
+</tr>
+<tr>
+<td>Tab loại kiến thức</td>
+<td>Mỗi loại 1 tab, thứ tự: Từ vựng, Ngữ pháp, Mẫu câu, Hán tự / Kanji, Bảng chữ, Phát âm. Chỉ hiện các loại theo bảng ngôn ngữ bên dưới.</td>
+</tr>
+<tr>
+<td>Tiêu đề bảng</td>
+<td>Tên loại (hoặc tên cụm đang chọn) + badge số mục (vd <code>398 từ vựng</code>) + badge số mục thiếu thông tin (vd <code>2 thiếu thông tin</code>).</td>
+</tr>
+<tr>
+<td><code>Preview mobile</code></td>
+<td>Mở panel xem trước trên điện thoại của mục đang chọn (xem khu vực Preview mobile).</td>
+</tr>
+<tr>
+<td><code>+ Thêm …</code></td>
+<td>Mở menu thêm mục: <code>Thêm từ thư viện</code>, <code>Thêm theo list</code>. Tên nút theo loại (vd <code>Thêm từ</code>, <code>Thêm kiến thức</code>).</td>
+</tr>
+<tr>
+<td>Thanh công cụ</td>
+<td>Tìm kiếm, Sắp xếp, Trạng thái, <code>Điền thiếu bằng AI</code>, <code>Soát lỗi bằng AI</code> (xem khu vực Bảng danh sách và khu vực AI).</td>
+</tr>
+<tr>
+<td>Panel Cụm</td>
+<td>Danh sách cụm của loại đang mở, <code>Số cụm</code>, <code>Chia cụm bằng AI</code> (xem khu vực Panel Cụm).</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Loại kiến thức theo ngôn ngữ của trung tâm:</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Trung tâm</th>
+<th>Ngôn ngữ</th>
+<th>Các tab hiển thị</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Đắc Nhân</td>
+<td>Tiếng Trung</td>
+<td>Từ vựng, Ngữ pháp, Mẫu câu, Hán tự (Hanzi), Phát âm (pinyin) — không có Bảng chữ</td>
+</tr>
+<tr>
+<td>Sakumi</td>
+<td>Tiếng Nhật</td>
+<td>Từ vựng, Ngữ pháp, Mẫu câu, Kanji, Bảng chữ (Hiragana / Katakana) — không có Phát âm</td>
+</tr>
+<tr>
+<td>Saechang</td>
+<td>Tiếng Hàn</td>
+<td>Từ vựng, Ngữ pháp, Mẫu câu, Bảng chữ (Hangul), Phát âm</td>
+</tr>
+<tr>
+<td>Creative English / Betreux / Créatis</td>
+<td>Tiếng Anh / Đức / Pháp</td>
+<td>Từ vựng, Ngữ pháp, Mẫu câu, Bảng chữ (Alphabet), Phát âm</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Điểm cần lưu ý:</strong></p>
+<ul>
+<li>Góc phải thanh tab hiện khoá học đang mở, vd <code>Khoá học: Nhập Môn Tiếng Trung Kỳ I · HSK1</code>.</li>
+<li>Ngôn ngữ lấy theo <strong>trung tâm</strong> CD đang chọn ở header (Đắc Nhân = Trung, Sakumi = Nhật, Saechang = Hàn,
+  Créatis = Pháp, Creative English = Anh, Betreux = Đức); không suy từ Danh mục hay Cấp độ của khoá.</li>
+<li>Loại không áp dụng cho ngôn ngữ của trung tâm không hiện tab.</li>
+<li>Cột phiên âm dùng chung tên <code>Phiên âm</code> cho mọi ngôn ngữ (không dùng <code>Pinyin</code>).</li>
+<li>Bảng chữ và Phát âm giữ <strong>đúng cấu trúc dữ liệu app học viên đang dùng</strong> (Phụ lục A.6, A.7): tiếng Trung chỉ có
+  Phát âm (bảng pinyin, file <code>Phát Âm Final</code>); tiếng Nhật chỉ có Bảng chữ (Hiragana / Katakana). Mỗi loại có dữ liệu
+  và audio riêng, không loại nào lấy dữ liệu của loại kia.</li>
+</ul>
+<h4 id="testcase-khung-man-hinh-va-tab-loai-kien-thuc">Testcase — Khung màn hình và tab loại kiến thức</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 1: Mở Kiến thức (S1) của khoá học</td>
+<td>High</td>
+<td>Smoke</td>
+<td>Flow 1 / REQ01 / REQ02</td>
+<td>CD</td>
+<td>Đang chọn trung tâm Đắc Nhân; khoá có dữ liệu</td>
+<td><strong>Given</strong> CD đang ở khoá học<br><strong>When</strong> chọn <code>Kiến thức (S1)</code><br><strong>Then</strong> hiển thị tab Từ vựng và danh sách của đúng khoá</td>
+<td>- Có 5 tab theo bảng tiếng Trung<br>- Dữ liệu đúng khoá và trung tâm đang chọn</td>
+</tr>
+<tr>
+<td>Case 2: Tab theo ngôn ngữ trung tâm</td>
+<td>High</td>
+<td></td>
+<td>REQ02</td>
+<td>CD</td>
+<td>CD được gán Đắc Nhân và Sakumi</td>
+<td><strong>Given</strong> mở S1 của 1 khoá ở từng trung tâm<br><strong>When</strong> xem thanh tab<br><strong>Then</strong> tab đúng bảng ngôn ngữ</td>
+<td>- Đắc Nhân có Hán tự (Hanzi), Phát âm, không có Kanji, Bảng chữ<br>- Sakumi có Kanji, Bảng chữ (ảnh <code>17-kanji.png</code>), không có Phát âm</td>
+</tr>
+<tr>
+<td>Case 3: Đổi trung tâm</td>
+<td>High</td>
+<td></td>
+<td>REQ01</td>
+<td>CD</td>
+<td>CD được gán 2 trung tâm</td>
+<td><strong>Given</strong> đang ở S1 trung tâm A<br><strong>When</strong> đổi sang trung tâm B ở header<br><strong>Then</strong> dữ liệu tải lại theo trung tâm B</td>
+<td>- Không còn dữ liệu của trung tâm A</td>
+</tr>
+<tr>
+<td>Case 4: Đổi tab</td>
+<td>Medium</td>
+<td></td>
+<td>Flow 1 / REQ02</td>
+<td>CD</td>
+<td>Đang ở tab Từ vựng</td>
+<td><strong>Given</strong> S1 đang mở<br><strong>When</strong> chọn tab Ngữ pháp<br><strong>Then</strong> bảng và panel Cụm đổi theo Ngữ pháp</td>
+<td>- Cột bảng đúng field Ngữ pháp<br>- Panel Cụm là cụm của Ngữ pháp</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="field-cua-tung-loai-kien-thuc">Field của từng loại kiến thức</h3>
+<p><strong>Mô tả:</strong></p>
+<ul>
+<li>Mỗi loại có bộ field riêng (theo dữ liệu <code>HSK1 - DATA</code>, sheet <code>kanji</code> khoá N5, <code>BẢNG CHỮ - N5 (ver 2.2)</code> và
+  <code>Phát Âm Final</code>). Không có field Bài học / Khoá học:
+  kiến thức gắn vào khoá qua S1 và gắn vào bài ở Chi tiết bài học.</li>
+<li>Mục <strong>thiếu thông tin</strong> khi trống <strong>bất kỳ field bắt buộc</strong> nào của loại đó. Field không bắt buộc trống vẫn tính là
+  đủ.</li>
+</ul>
+<p><strong>Giải thích field/thành phần:</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Loại</th>
+<th>Field bắt buộc</th>
+<th>Field không bắt buộc</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Từ vựng</td>
+<td>Từ, Phiên âm, Nghĩa, Từ loại, Hán Việt (chỉ tiếng Trung), Ví dụ (≥ 1; mỗi ví dụ gồm câu, phiên âm, nghĩa)</td>
+<td>Mở rộng, Audio</td>
+</tr>
+<tr>
+<td>Ngữ pháp</td>
+<td>Tên điểm ngữ pháp, Ý nghĩa, Cấu trúc, Cách dùng, Ví dụ (≥ 1; mỗi ví dụ gồm câu, phiên âm, nghĩa)</td>
+<td>Lưu ý, Video, Mở rộng</td>
+</tr>
+<tr>
+<td>Mẫu câu</td>
+<td>Câu, Phiên âm, Nghĩa</td>
+<td>Audio</td>
+</tr>
+<tr>
+<td>Hán tự (Hanzi)</td>
+<td>Chữ, Phiên âm, Âm Hán Việt, Nghĩa (ít nhất 1), Bộ thủ, Thành phần, Thứ tự nét</td>
+<td>Mẹo nhớ, Chữ giống, Từ liên quan, Nét viết (SVG), Mở rộng</td>
+</tr>
+<tr>
+<td>Kanji</td>
+<td>Chữ, Âm On hoặc Âm Kun (ít nhất 1), Âm Hán Việt, Nghĩa, Bộ thủ, Thành phần</td>
+<td>Mẹo nhớ, Từ liên quan, Nét viết (SVG)</td>
+</tr>
+<tr>
+<td>Phát âm — tiếng Trung (pinyin)</td>
+<td>Âm, Loại âm; Nhóm và Hướng dẫn phát âm (khi Loại = Thanh mẫu / Vận mẫu); Thanh mẫu và Vận mẫu thành phần (khi Loại = Âm tiết)</td>
+<td>Cách đọc, Âm dễ nhầm, Audio theo thanh, Video hướng dẫn</td>
+</tr>
+<tr>
+<td>Bảng chữ — tiếng Nhật (Kana)</td>
+<td>Chữ, Romaji, Bộ chữ, Bảng con, Vị trí trong bảng</td>
+<td>Chữ dễ nhầm, Mẹo nhớ, Từ ví dụ, Audio</td>
+</tr>
+<tr>
+<td>Bảng chữ — tiếng Hàn, Anh, Đức, Pháp</td>
+<td>Cần xác nhận (mục 3)</td>
+<td>Cần xác nhận</td>
+</tr>
+</tbody>
+</table></div>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Quy tắc</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Từ loại</td>
+<td>Chọn <strong>1 hoặc nhiều</strong> giá trị từ <strong>danh sách cố định theo ngôn ngữ</strong> (Phụ lục A), không nhập tự do. Mục dạng câu / cụm (vd <code>はじめまして。</code>) vẫn là Từ vựng, nhận biết bằng Từ loại <code>Câu</code>.</td>
+</tr>
+<tr>
+<td>Phiên âm từng chữ (furigana)</td>
+<td>Dạng <code>{chữ|phiên âm}</code>; hệ thống tự sinh từ Từ / Câu và Phiên âm, CD không nhập.</td>
+</tr>
+<tr>
+<td>Ví dụ</td>
+<td><strong>Danh sách ví dụ</strong>, mỗi ví dụ gồm câu, phiên âm, nghĩa; tối thiểu 1, thêm bằng <code>+ Thêm ví dụ</code> ở Chi tiết mục. Bảng hiện ví dụ đầu, nhiều hơn thì thêm nhãn <code>+N</code> (ảnh <code>08-ngu-phap.png</code>). Cho phép đánh dấu từ đang học bằng <code>&lt;...&gt;</code> (vd <code>&lt;{你|nǐ}&gt;{好|hǎo}{吗|ma}？</code>). Dữ liệu cũ gộp nhiều ví dụ trong 1 ô thì import tách theo dòng trống.</td>
+</tr>
+<tr>
+<td>Cách dùng / Lưu ý (Ngữ pháp)</td>
+<td>Nội dung nhiều đoạn, có ví dụ kèm phiên âm và nghĩa theo định dạng dữ liệu hiện có.</td>
+</tr>
+<tr>
+<td>Mở rộng</td>
+<td><code>Không</code> (mặc định) = đẩy lên 3 bước học; <code>Có</code> = không đẩy lên 3 bước nhưng vẫn hiện trong danh sách.</td>
+</tr>
+<tr>
+<td>Nghĩa (Hán tự)</td>
+<td>Một chữ có nhiều nghĩa tiếng Việt; bắt buộc ít nhất 1.</td>
+</tr>
+<tr>
+<td>Bộ thủ (Kanji, Hán tự)</td>
+<td>Chọn <strong>1 bộ</strong> trong <strong>214 bộ thủ Khang Hy</strong> (có số thứ tự 1–214, chữ bộ, tên Hán Việt, số nét và các biến thể viết như <code>亻</code>, <code>氵</code>, <code>讠</code>, <code>⺮</code>); dùng chung Hán tự và Kanji; hằng số hệ thống.</td>
+</tr>
+<tr>
+<td>Chuỗi tìm kiếm (Kanji)</td>
+<td>Hệ thống tự sinh từ Âm On / Âm Kun (romaji, kana), CD không nhập.</td>
+</tr>
+<tr>
+<td>Audio</td>
+<td>Không bắt buộc; CD tải file âm thanh. Không có file thì app đọc bằng TTS.</td>
+</tr>
+<tr>
+<td>Phiên âm</td>
+<td>Tiếng Trung: pinyin có dấu thanh (<code>nǐ</code>); tiếng Nhật: romaji (<code>hajimemashite</code>); ngôn ngữ khác theo IPA hoặc cách đọc quy ước của trung tâm.</td>
+</tr>
+<tr>
+<td>Video (Ngữ pháp)</td>
+<td>Link video (vd YouTube), không bắt buộc.</td>
+</tr>
+<tr>
+<td>Bộ chữ, Bảng con (Bảng chữ Nhật)</td>
+<td>Chọn từ danh sách cố định: Bộ chữ <code>Hiragana</code> / <code>Katakana</code>; Bảng con theo bộ chữ (<code>Bảng Chữ Chính</code>, <code>Tenten</code>, <code>Maru</code>, <code>Ảo âm</code>, <code>Ảo âm - hiếm gặp</code>) — Phụ lục A.7.</td>
+</tr>
+<tr>
+<td>Vị trí trong bảng (Bảng chữ Nhật)</td>
+<td>Hàng + cột của chữ trong lưới bảng chữ, định dạng dữ liệu <code>_k_a</code> (hàng <code>k</code>, cột <code>a</code>), <code>___a</code> (hàng nguyên âm), <code>_kya</code> (ảo âm).</td>
+</tr>
+<tr>
+<td>Loại âm, Nhóm, Thanh điệu (Phát âm)</td>
+<td>Chọn từ danh sách cố định: Loại <code>Thanh mẫu</code> / <code>Vận mẫu</code> / <code>Âm tiết</code>; 12 Nhóm (6 nhóm thanh mẫu, 6 nhóm vận mẫu); 4 thanh <code>ˉ ˊ ˇ ˋ</code> — Phụ lục A.7.</td>
+</tr>
+<tr>
+<td>Audio (Phát âm)</td>
+<td>Audio riêng của Phát âm. Thanh mẫu 1 file; Vận mẫu và Âm tiết mỗi thanh 1 file; tên file theo quy ước app <code>pinyin_&lt;thanh&gt;.mp3</code> (vd <code>ba_1.mp3</code>), thanh mẫu <code>b.mp3</code>. Không có file thì TTS.</td>
+</tr>
+<tr>
+<td>Cụm</td>
+<td>Không phải field nhập; mục thuộc 0, 1 hoặc nhiều cụm (xem Panel Cụm).</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Điểm cần lưu ý:</strong></p>
+<ul>
+<li>Bảng chỉ hiện field chính của từng tab (xem khu vực Bảng danh sách). Các field còn lại (Hán Việt, Mở rộng, Cách
+  dùng, Lưu ý, Audio, Thành phần, Thứ tự nét…) nhập / sửa ở drawer <code>Chi tiết mục</code> (menu dòng <code>Mở chi tiết …</code>, xem
+  khu vực Chi tiết mục).</li>
+<li>Từ loại và Bộ thủ là <strong>hằng số hệ thống</strong>, chưa có màn quản lý; danh sách và cách map dữ liệu cũ ở Phụ lục A.</li>
+<li>Ô field bắt buộc đang trống hiển thị <code>— trống —</code> trên bảng; Preview mobile ghi rõ số field trống (vd
+  <code>1 trường trống · Từ loại</code>).</li>
+<li>Badge <code>N thiếu thông tin</code> và bộ lọc Trạng thái tính theo field bắt buộc của bảng trên.</li>
+</ul>
+<h4 id="testcase-field-cua-tung-loai-kien-thuc">Testcase — Field của từng loại kiến thức</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 5: Tính thiếu thông tin</td>
+<td>High</td>
+<td></td>
+<td>REQ03</td>
+<td>CD</td>
+<td>Từ <code>好</code> có đủ field trừ Từ loại</td>
+<td><strong>Given</strong> tab Từ vựng<br><strong>When</strong> xem dòng <code>好</code> và badge<br><strong>Then</strong> dòng tính là thiếu</td>
+<td>- Ô Từ loại hiện <code>— trống —</code><br>- Được đếm vào <code>N thiếu thông tin</code><br>- Có trong lọc <code>Thiếu thông tin</code></td>
+</tr>
+<tr>
+<td>Case 6: Field không bắt buộc trống</td>
+<td>Medium</td>
+<td></td>
+<td>REQ03</td>
+<td>CD</td>
+<td>Từ đủ field bắt buộc, không có Audio</td>
+<td><strong>Given</strong> tab Từ vựng<br><strong>When</strong> xem trạng thái của từ<br><strong>Then</strong> từ tính là đủ thông tin</td>
+<td>- Không đếm vào thiếu thông tin</td>
+</tr>
+<tr>
+<td>Case 7: Từ loại chọn từ danh sách</td>
+<td>Medium</td>
+<td></td>
+<td>REQ03</td>
+<td>CD</td>
+<td>Đang sửa một từ ở trung tâm Đắc Nhân</td>
+<td><strong>Given</strong> ô Từ loại đang sửa<br><strong>When</strong> nhập giá trị<br><strong>Then</strong> chỉ chọn được giá trị trong danh sách tiếng Trung, chọn được nhiều giá trị</td>
+<td>- Không lưu được giá trị gõ tự do<br>- Từ <code>会</code> chọn <code>Động từ</code> + <code>Động từ năng nguyện</code> thì cột Từ loại hiện cả 2</td>
+</tr>
+<tr>
+<td>Case 7a: Ví dụ nhiều mục</td>
+<td>Medium</td>
+<td></td>
+<td>REQ03</td>
+<td>CD</td>
+<td>Điểm ngữ pháp có 3 ví dụ</td>
+<td><strong>Given</strong> tab Ngữ pháp<br><strong>When</strong> xem cột Ví dụ<br><strong>Then</strong> hiện ví dụ đầu kèm <code>+2</code></td>
+<td>- Chi tiết mục liệt kê đủ 3 ví dụ, mỗi ví dụ có câu, phiên âm, nghĩa</td>
+</tr>
+<tr>
+<td>Case 8: Kanji cần ít nhất 1 âm</td>
+<td>Medium</td>
+<td></td>
+<td>REQ03</td>
+<td>CD</td>
+<td>Khoá tiếng Nhật; chữ Kanji có Âm Kun, không có Âm On</td>
+<td><strong>Given</strong> tab Kanji<br><strong>When</strong> xem trạng thái chữ<br><strong>Then</strong> không tính thiếu vì Âm On / Âm Kun</td>
+<td>- Chỉ tính thiếu khi trống cả Âm On và Âm Kun</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="bang-danh-sach-tim-kiem-sap-xep-va-loc">Bảng danh sách, tìm kiếm, sắp xếp và lọc</h3>
+<p align="center">
+  <a href="./images/02-menu-dong.png"><img src="./images/02-menu-dong.png" alt="Đang xem cụm 01. Gia đình và menu dòng" width="900" title="Nhấn để xem ảnh gốc"></a><br>
+  <em>Đang xem cụm `01. Gia đình`, sửa nhanh dòng 03 và menu ⋮ của một dòng — nhấn để xem ảnh gốc</em>
+</p>
+
+<p align="center">
+  <a href="./images/14-mau-cau.png"><img src="./images/14-mau-cau.png" alt="Tab Mẫu câu" width="900" title="Nhấn để xem ảnh gốc"></a><br>
+  <em>Tab Mẫu câu: cột Câu, Phiên âm, Nghĩa, Cụm — nhấn để xem ảnh gốc</em>
+</p>
+
+<p align="center">
+  <a href="./images/15-han-tu.png"><img src="./images/15-han-tu.png" alt="Tab Hán tự" width="900" title="Nhấn để xem ảnh gốc"></a><br>
+  <em>Tab Hán tự (Hanzi): cột Chữ, Phiên âm, Hán Việt, Nghĩa, Bộ thủ, Cụm — nhấn để xem ảnh gốc</em>
+</p>
+
+<p align="center">
+  <a href="./images/16-phat-am.png"><img src="./images/16-phat-am.png" alt="Tab Phát âm" width="900" title="Nhấn để xem ảnh gốc"></a><br>
+  <em>Tab Phát âm: cột Phiên âm, Audio, Cụm — nhấn để xem ảnh gốc</em>
+</p>
+
+<p align="center">
+  <a href="./images/17-kanji.png"><img src="./images/17-kanji.png" alt="Tab Kanji ở trung tâm Sakumi" width="900" title="Nhấn để xem ảnh gốc"></a><br>
+  <em>Tab Kanji (trung tâm Sakumi, khoá N5): cột Chữ, Âm On, Âm Kun, Hán Việt, Nghĩa, Cụm — nhấn để xem ảnh gốc</em>
+</p>
+
+<ul>
+<li><strong>UI cần sửa:</strong> thanh tab ở trung tâm Sakumi (ảnh <code>17-kanji.png</code>) còn tab <code>Phát âm</code> — tiếng Nhật không có Phát âm.</li>
+<li><strong>UI cần sửa:</strong> tab Phát âm (ảnh <code>16-phat-am.png</code>): thanh tab Đắc Nhân còn <code>Bảng chữ</code> — tiếng Trung không có Bảng
+  chữ; bảng mới có cột Phiên âm, Audio — cần đủ cột theo bảng pinyin (khu vực Bảng danh sách); badge <code>1052 phát âm</code>
+  là số dòng sheet HSK1, dữ liệu gộp mỗi âm 1 mục (Phụ lục A.6).</li>
+<li><strong>UI cần bổ sung:</strong> bảng của tab Bảng chữ tiếng Nhật (lưới kana theo Bảng con, hàng × cột, Phụ lục A.7); dạng lưới
+  thanh mẫu / vận mẫu theo Nhóm cho tab Phát âm (tham khảo sheet <code>mẫu UI pinyin</code>, Phụ lục A.6).</li>
+</ul>
+<p><strong>Mô tả:</strong></p>
+<ul>
+<li>Bảng liệt kê các mục của loại đang mở trong khoá học; chọn <code>Tất cả</code> hoặc một cụm ở panel Cụm để lọc theo cụm.</li>
+<li>Mỗi tab có bộ cột riêng theo field chính của loại (bảng dưới); cấu trúc toolbar, thanh hàng loạt, Nhập nhanh,
+  phân trang và panel Cụm giống nhau ở mọi tab.</li>
+</ul>
+<p><strong>Giải thích thành phần:</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Thành phần</th>
+<th>Yêu cầu</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Checkbox</td>
+<td>Chọn dòng để thao tác hàng loạt; checkbox ở header chọn / bỏ chọn các dòng của trang.</td>
+</tr>
+<tr>
+<td>STT + tay nắm kéo thả</td>
+<td>STT theo thứ tự hiển thị; tay nắm chỉ hiện khi đang xem 1 cụm và Sắp xếp = <code>Thứ tự trong cụm</code>.</td>
+</tr>
+<tr>
+<td>Cột field</td>
+<td>Các field chính của loại. Từ vựng: Từ vựng, Phiên âm, Nghĩa, Từ loại · Ngữ pháp: Tên điểm ngữ pháp, Ý nghĩa, Ví dụ · Mẫu câu: Câu, Phiên âm, Nghĩa · Hán tự: Chữ, Phiên âm, Hán Việt, Nghĩa, Bộ thủ · Kanji: Chữ, Âm On, Âm Kun, Hán Việt, Nghĩa · Phát âm (tiếng Trung): Âm, Loại âm, Nhóm, Thanh mẫu, Vận mẫu, Âm dễ nhầm, Audio (<code>tên file · đã tải lên</code> hoặc <code>Chưa có file · app đọc bằng TTS</code>) · Bảng chữ Nhật: Chữ, Romaji, Bảng con, Vị trí, Chữ dễ nhầm · Bảng chữ Hàn / Alphabet: cần xác nhận (mục 3).</td>
+</tr>
+<tr>
+<td>Cụm</td>
+<td>Nhãn cụm đầu tiên của mục, thuộc nhiều cụm thì thêm nhãn <code>+N</code> (N = số cụm còn lại, vd <code>01. Gia đình</code> <code>+1</code>); không thuộc cụm nào hiện <code>Chưa phân cụm</code>. Hover <code>+N</code> hiện tooltip liệt kê đủ tên cụm (<code>Thuộc 2 cụm: 01. Gia đình · 02. Học tập</code>, ảnh <code>01-tu-vung.png</code>); bấm <code>+N</code> mở popup Thêm vào cụm / Gỡ khỏi cụm của mục đó.</td>
+</tr>
+<tr>
+<td>⋮</td>
+<td>Menu thao tác dòng (xem khu vực Menu thao tác dòng).</td>
+</tr>
+<tr>
+<td>Tìm kiếm</td>
+<td>Tìm theo các field chính của loại (Từ vựng: chữ, phiên âm, nghĩa; Ngữ pháp: tên, ý nghĩa; Hán tự: chữ, phiên âm, Hán Việt; Kanji: chữ, âm On / Kun, nghĩa; Phát âm: âm, thanh mẫu, vận mẫu; Bảng chữ Nhật: chữ, romaji).</td>
+</tr>
+<tr>
+<td>Sắp xếp</td>
+<td><code>Thứ tự thêm</code> (mặc định), <code>A–Z</code>, <code>Mới cập nhật</code>, <code>Thứ tự trong cụm</code> (chỉ khi đang xem 1 cụm).</td>
+</tr>
+<tr>
+<td>Trạng thái</td>
+<td>Chọn 1: <code>Tất cả</code>, <code>Đủ thông tin</code>, <code>Thiếu thông tin</code>, <code>AI chờ duyệt</code>, <code>AI nghi sai</code>.</td>
+</tr>
+<tr>
+<td>Phân trang</td>
+<td><code>Hiển thị a–b trong N …</code> và Trước / số trang / Sau; theo UI mỗi trang 8 dòng.</td>
+</tr>
+<tr>
+<td>Nhập nhanh</td>
+<td>Dòng cuối bảng (xem khu vực Nhập nhanh).</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Điểm cần lưu ý:</strong></p>
+<ul>
+<li>Tìm kiếm, Trạng thái, cụm đang chọn kết hợp với nhau; đổi điều kiện thì về trang 1, badge và tổng số cập nhật theo.</li>
+<li>Kéo thả chỉ đổi <strong>thứ tự mục trong cụm</strong> (dùng khi thêm cụm vào bài học); các kiểu sắp xếp khác chỉ để xem.</li>
+<li>Bảng mọi tab dùng cột <code>Cụm</code> (không có cột <code>Bài học</code>).</li>
+</ul>
+<h4 id="testcase-bang-danh-sach-tim-kiem-sap-xep-va-loc">Testcase — Bảng danh sách, tìm kiếm, sắp xếp và lọc</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 9: Xem danh sách theo cụm</td>
+<td>High</td>
+<td>Smoke</td>
+<td>Flow 1 / REQ11</td>
+<td>CD</td>
+<td>Cụm <code>Gia đình</code> có 16 từ</td>
+<td><strong>Given</strong> tab Từ vựng<br><strong>When</strong> chọn cụm <code>Gia đình</code><br><strong>Then</strong> bảng chỉ hiện 16 từ của cụm</td>
+<td>- Tiêu đề <code>Gia đình</code> + <code>16 từ vựng</code><br>- Badge thiếu thông tin tính trong cụm</td>
+</tr>
+<tr>
+<td>Case 10: Tìm kiếm và lọc kết hợp</td>
+<td>High</td>
+<td></td>
+<td>REQ11</td>
+<td>CD</td>
+<td>Có từ thiếu và đủ thông tin</td>
+<td><strong>Given</strong> tab Từ vựng<br><strong>When</strong> nhập từ khoá và chọn <code>Thiếu thông tin</code><br><strong>Then</strong> chỉ hiện từ khớp cả hai điều kiện</td>
+<td>- Về trang 1<br>- Tổng số đúng kết quả lọc</td>
+</tr>
+<tr>
+<td>Case 11: Kéo thả thứ tự trong cụm</td>
+<td>Medium</td>
+<td></td>
+<td>REQ11</td>
+<td>CD</td>
+<td>Đang xem 1 cụm, Sắp xếp = <code>Thứ tự trong cụm</code></td>
+<td><strong>Given</strong> bảng của cụm<br><strong>When</strong> kéo dòng 3 lên vị trí 1<br><strong>Then</strong> thứ tự trong cụm được lưu</td>
+<td>- Tải lại vẫn giữ thứ tự<br>- Thứ tự ở cụm khác không đổi</td>
+</tr>
+<tr>
+<td>Case 12: Không kéo thả khi sắp xếp khác</td>
+<td>Low</td>
+<td></td>
+<td>REQ11</td>
+<td>CD</td>
+<td>Sắp xếp = <code>A–Z</code></td>
+<td><strong>Given</strong> bảng đang sắp xếp A–Z<br><strong>When</strong> thử kéo dòng<br><strong>Then</strong> không cho kéo</td>
+<td>- Thứ tự đã lưu không đổi</td>
+</tr>
+<tr>
+<td>Case 12a: Xem đủ cụm của mục qua <code>+N</code></td>
+<td>Medium</td>
+<td></td>
+<td>REQ08 / REQ11</td>
+<td>CD</td>
+<td>Từ <code>爸爸</code> thuộc 2 cụm</td>
+<td><strong>Given</strong> cột Cụm hiện <code>01. Gia đình</code> <code>+1</code><br><strong>When</strong> hover rồi bấm <code>+1</code><br><strong>Then</strong> tooltip liệt kê 2 cụm; bấm mở popup <code>Cụm của 1 mục</code></td>
+<td>- Popup tick sẵn 2 cụm đang thuộc</td>
+</tr>
+<tr>
+<td>Case 12b: Cột bảng theo tab</td>
+<td>Medium</td>
+<td></td>
+<td>REQ02 / REQ03</td>
+<td>CD</td>
+<td>Trung tâm Đắc Nhân</td>
+<td><strong>Given</strong> lần lượt mở tab Mẫu câu, Hán tự, Phát âm<br><strong>When</strong> xem header bảng<br><strong>Then</strong> cột đúng bảng Cột field</td>
+<td>- Hán tự có cột Bộ thủ, Phát âm có cột Audio</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="menu-them-popup-them-tu-thu-vien-du-lieu">Menu thêm, Popup Thêm từ thư viện dữ liệu</h3>
+<p align="center">
+  <a href="./images/09-popup-thu-vien.png"><img src="./images/09-popup-thu-vien.png" alt="Popup Thêm từ thư viện dữ liệu" width="700" title="Nhấn để xem ảnh gốc"></a><br>
+  <em>Popup Thêm từ thư viện dữ liệu — nhấn để xem ảnh gốc</em>
+</p>
+
+<p><strong>Mô tả:</strong></p>
+<ul>
+<li>Nút <code>+ Thêm …</code> mở menu 2 mục: <code>Thêm từ thư viện</code> (chọn từ có sẵn trong kho dữ liệu) và <code>Thêm theo list</code>.</li>
+<li>Popup thư viện cho CD chọn nhiều mục có sẵn trong Thư viện dữ liệu để gắn vào S1 của khoá học. Khoá học <strong>tham chiếu</strong>
+  bản ghi thư viện, không sao chép.</li>
+</ul>
+<p><strong>Giải thích field/thành phần:</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Thành phần</th>
+<th>Yêu cầu</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Tiêu đề / mô tả</td>
+<td><code>Thêm từ thư viện dữ liệu</code>; mô tả ghi khoá đang thêm (vd <code>Kiến thức (S1) · HSK1</code>) và <code>Từ đã có sẽ bị khoá</code>.</td>
+</tr>
+<tr>
+<td>Tìm kiếm</td>
+<td>Tìm theo chữ, phiên âm, nghĩa.</td>
+</tr>
+<tr>
+<td>Kho</td>
+<td>Chọn 1: <code>Tất cả</code> (mặc định), <code>Từ điển</code> (dữ liệu import sẵn theo ngôn ngữ, vd sheet <code>relation</code> của HSK1 / N5), <code>Khoá học</code> (bản ghi tạo từ S1 của các khoá trong trung tâm; dòng hiện tên khoá gốc).</td>
+</tr>
+<tr>
+<td>Cấp độ, Từ loại</td>
+<td>Lọc danh sách thư viện.</td>
+</tr>
+<tr>
+<td>Danh sách</td>
+<td>Checkbox, các field chính; bản ghi <strong>đã gắn vào khoá</strong> hiện mờ, nhãn <code>Đã có</code>, không chọn được.</td>
+</tr>
+<tr>
+<td>Thêm vào cụm</td>
+<td>Mặc định là cụm đang chọn ở panel Cụm; chọn được <code>Chưa phân cụm</code>.</td>
+</tr>
+<tr>
+<td>Chân popup</td>
+<td><code>Đã chọn N từ · M từ đã có</code>; <code>Huỷ</code>; <code>Thêm N từ</code> (N là số mục đang chọn).</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Điểm cần lưu ý:</strong></p>
+<ul>
+<li>Một bản ghi thư viện chỉ gắn vào một khoá <strong>một lần</strong>; bản ghi khác có nội dung giống vẫn được thêm (cho phép trùng
+  nội dung — xem Popup Thêm theo list).</li>
+<li>Sửa mục sau khi thêm là sửa bản ghi thư viện, mọi khoá đang dùng bản ghi đó thấy thay đổi.</li>
+<li><code>Thêm N từ</code> chỉ bấm được khi N ≥ 1.</li>
+<li>Thư viện dữ liệu chỉ chứa bản ghi cùng <strong>ngôn ngữ</strong> với trung tâm đang chọn.</li>
+<li>Thư viện có màn quản lý riêng (menu CD <code>Thư Viện Kiến Thức</code>: Từ Vựng, Ngữ Pháp, Hanzi, Ký Tự, Phát Âm) — thuộc
+  requirement riêng, ngoài phạm vi tài liệu này.</li>
+</ul>
+<h4 id="testcase-popup-them-tu-thu-vien-du-lieu">Testcase — Popup Thêm từ thư viện dữ liệu</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 13: Thêm nhiều mục từ thư viện</td>
+<td>High</td>
+<td>Smoke</td>
+<td>Flow 2 / REQ04 / REQ05</td>
+<td>CD</td>
+<td>Thư viện có từ chưa gắn khoá</td>
+<td><strong>Given</strong> popup thư viện đang mở<br><strong>When</strong> chọn 5 từ, cụm <code>Chưa phân cụm</code>, bấm <code>Thêm 5 từ</code><br><strong>Then</strong> 5 từ xuất hiện trong S1</td>
+<td>- Là tham chiếu bản ghi thư viện<br>- Thuộc <code>Chưa phân cụm</code><br>- Toast <code>Thành Công</code></td>
+</tr>
+<tr>
+<td>Case 14: Bản ghi đã có bị khoá</td>
+<td>High</td>
+<td></td>
+<td>REQ04 / EX03</td>
+<td>CD</td>
+<td>Từ <code>爸爸</code> đã gắn khoá</td>
+<td><strong>Given</strong> popup thư viện<br><strong>When</strong> tìm <code>爸爸</code><br><strong>Then</strong> dòng mờ, nhãn <code>Đã có</code>, không tick được</td>
+<td>- Không gắn trùng bản ghi</td>
+</tr>
+<tr>
+<td>Case 15: Thêm vào cụm đang chọn</td>
+<td>Medium</td>
+<td></td>
+<td>REQ04 / REQ08</td>
+<td>CD</td>
+<td>Đang chọn cụm <code>Gia đình</code></td>
+<td><strong>Given</strong> mở popup từ cụm <code>Gia đình</code><br><strong>When</strong> xem ô Thêm vào cụm<br><strong>Then</strong> mặc định <code>Gia đình</code></td>
+<td>- Từ thêm vào thuộc cụm <code>Gia đình</code></td>
+</tr>
+<tr>
+<td>Case 15a: Lọc theo kho</td>
+<td>Medium</td>
+<td></td>
+<td>REQ04</td>
+<td>CD</td>
+<td>Thư viện có từ của Từ điển và từ tạo từ khoá khác</td>
+<td><strong>Given</strong> popup thư viện<br><strong>When</strong> chọn <code>Kho: Khoá học</code><br><strong>Then</strong> chỉ hiện bản ghi tạo từ S1 các khoá, kèm tên khoá gốc</td>
+<td>- <code>Kho: Từ điển</code> chỉ hiện dữ liệu import sẵn</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="popup-them-theo-list">Popup Thêm theo list</h3>
+<p align="center">
+  <a href="./images/10-popup-theo-list.png"><img src="./images/10-popup-theo-list.png" alt="Popup Thêm từ vựng theo list" width="700" title="Nhấn để xem ảnh gốc"></a><br>
+  <em>Popup Thêm theo list — dán / nhập, mỗi dòng 1 mục — nhấn để xem ảnh gốc</em>
+</p>
+
+<p><strong>Mô tả:</strong></p>
+<ul>
+<li>CD dán hoặc tự gõ danh sách vào ô văn bản, <strong>mỗi dòng 1 mục</strong>; hệ thống tách cột, xem trước rồi tạo mới bản ghi thư
+  viện và gắn vào khoá.</li>
+</ul>
+<p><strong>Giải thích field/thành phần:</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Thành phần</th>
+<th>Yêu cầu</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Tiêu đề / mô tả</td>
+<td><code>Thêm từ vựng theo list</code>; <code>Dán hoặc nhập danh sách. Mỗi dòng 1 từ: chữ, phiên âm, nghĩa (chỉ cột đầu bắt buộc).</code></td>
+</tr>
+<tr>
+<td>Ô văn bản</td>
+<td>Mỗi dòng = các field chính theo thứ tự cố định của loại (bảng Thứ tự cột bên dưới), tách bằng dấu phẩy. Chỉ cột đầu bắt buộc; cột sau được để trống. Field nhiều giá trị (Nghĩa Hán tự, Âm On / Kun) tách bằng <code>;</code> trong cùng cột.</td>
+</tr>
+<tr>
+<td>Tách cột bằng</td>
+<td>Mặc định <code>dấu phẩy</code>.</td>
+</tr>
+<tr>
+<td><code>AI tự điền … còn thiếu</code></td>
+<td>Tick thì AI điền các cột trống của dòng (giá trị AI điền ở trạng thái chờ duyệt).</td>
+</tr>
+<tr>
+<td><code>Tự chia cụm bằng AI sau khi import</code></td>
+<td>Tick thì sau khi thêm mở luồng Chia cụm bằng AI cho các mục vừa thêm.</td>
+</tr>
+<tr>
+<td>Xem trước</td>
+<td>Bảng các dòng đã tách, nhãn từng dòng: <code>Hợp lệ</code>, <code>AI điền …</code>, <code>Trùng</code> (cảnh báo).</td>
+</tr>
+<tr>
+<td>Thêm vào cụm</td>
+<td>Mục mới vào cụm đang chọn ở panel Cụm (nếu đang chọn cụm).</td>
+</tr>
+<tr>
+<td>Chân popup</td>
+<td>Tổng <code>N dòng · a hợp lệ · b AI điền · c trùng</code>; <code>Huỷ</code>; <code>Thêm N từ</code>.</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Điểm cần lưu ý:</strong></p>
+<ul>
+<li>Không có tải file Excel / CSV; menu <code>Thêm theo list</code> ghi <code>Dán hoặc nhập danh sách, mỗi dòng 1 từ</code>.</li>
+<li>Dòng trùng nội dung với mục đã có trong khoá: nhãn <code>Trùng</code> chỉ <strong>cảnh báo</strong>; CD giữ dòng thì vẫn tạo bản ghi mới
+  (nút <code>Thêm N từ</code> tính cả dòng trùng). CD bỏ được từng dòng khỏi danh sách trước khi thêm.</li>
+<li>Thứ tự cột theo loại (chỉ cột 1 bắt buộc):</li>
+</ul>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Loại</th>
+<th>Thứ tự cột trên mỗi dòng</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Từ vựng</td>
+<td><code>chữ, phiên âm, nghĩa</code></td>
+</tr>
+<tr>
+<td>Ngữ pháp</td>
+<td><code>tên điểm ngữ pháp, ý nghĩa, cấu trúc</code></td>
+</tr>
+<tr>
+<td>Mẫu câu</td>
+<td><code>câu, phiên âm, nghĩa</code></td>
+</tr>
+<tr>
+<td>Hán tự</td>
+<td><code>chữ, phiên âm, âm Hán Việt, nghĩa</code> (nhiều nghĩa tách <code>;</code>)</td>
+</tr>
+<tr>
+<td>Kanji</td>
+<td><code>chữ, âm On, âm Kun, âm Hán Việt, nghĩa</code> (nhiều âm tách <code>;</code>)</td>
+</tr>
+<tr>
+<td>Phát âm (tiếng Trung)</td>
+<td><code>âm, loại âm</code> (<code>Thanh mẫu</code> / <code>Vận mẫu</code> / <code>Âm tiết</code>; Âm tiết tự tách Thanh mẫu + Vận mẫu nếu khớp)</td>
+</tr>
+<tr>
+<td>Bảng chữ — tiếng Nhật</td>
+<td><code>chữ, romaji</code> (Bộ chữ, Bảng con theo bảng con đang chọn ở panel; Vị trí nhập ở Chi tiết mục)</td>
+</tr>
+<tr>
+<td>Bảng chữ — tiếng Hàn, Anh, Đức, Pháp</td>
+<td>Cần xác nhận (mục 3)</td>
+</tr>
+</tbody>
+</table></div>
+<ul>
+<li>Field dài (Cách dùng, Ví dụ, Thành phần, Thứ tự nét…) không nhập qua list; để AI điền hoặc nhập ở Chi tiết mục.</li>
+<li>Dòng trống không tạo mục.</li>
+</ul>
+<h4 id="testcase-popup-them-theo-list">Testcase — Popup Thêm theo list</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 16: Thêm theo list</td>
+<td>High</td>
+<td>Smoke</td>
+<td>Flow 3 / REQ05</td>
+<td>CD</td>
+<td>Popup Thêm theo list đang mở</td>
+<td><strong>Given</strong> dán 3 dòng <code>chữ, phiên âm, nghĩa</code> hợp lệ<br><strong>When</strong> bấm <code>Thêm 3 từ</code><br><strong>Then</strong> tạo 3 bản ghi thư viện và gắn vào khoá</td>
+<td>- 3 dòng mới trong bảng<br>- Toast <code>Thành Công</code></td>
+</tr>
+<tr>
+<td>Case 17: Cột trống và AI điền</td>
+<td>High</td>
+<td></td>
+<td>Flow 3 / REQ10</td>
+<td>CD</td>
+<td>Tick <code>AI tự điền …</code></td>
+<td><strong>Given</strong> dòng <code>大学, , đại học</code><br><strong>When</strong> xem trước<br><strong>Then</strong> nhãn <code>AI điền phiên âm</code> và giá trị AI đề xuất</td>
+<td>- Sau khi thêm, phiên âm ở trạng thái <code>AI chờ duyệt</code></td>
+</tr>
+<tr>
+<td>Case 18: Dòng trùng chỉ cảnh báo</td>
+<td>Medium</td>
+<td></td>
+<td>REQ05</td>
+<td>CD</td>
+<td>Khoá đã có <code>妈妈, māma, mẹ</code></td>
+<td><strong>Given</strong> dán lại dòng đó<br><strong>When</strong> xem trước và bấm Thêm<br><strong>Then</strong> dòng có nhãn <code>Trùng</code> nhưng vẫn được tạo nếu giữ</td>
+<td>- Có 2 bản ghi <code>妈妈</code> khác nhau</td>
+</tr>
+<tr>
+<td>Case 19: Thiếu cột đầu</td>
+<td>Medium</td>
+<td></td>
+<td>EX01</td>
+<td>CD</td>
+<td>Popup đang mở</td>
+<td><strong>Given</strong> dòng <code>, māma, mẹ</code><br><strong>When</strong> xem trước<br><strong>Then</strong> dòng báo lỗi, không tạo</td>
+<td>- Các dòng hợp lệ khác vẫn thêm được</td>
+</tr>
+<tr>
+<td>Case 19a: Thứ tự cột của Hán tự</td>
+<td>Medium</td>
+<td></td>
+<td>REQ05</td>
+<td>CD</td>
+<td>Tab Hán tự, popup Thêm theo list</td>
+<td><strong>Given</strong> dòng <code>好, hǎo; hào, HẢO, Tốt; Thích</code><br><strong>When</strong> xem trước<br><strong>Then</strong> tách đúng 4 cột, Nghĩa có 2 giá trị</td>
+<td>- Mô tả popup ghi <code>chữ, phiên âm, âm Hán Việt, nghĩa</code></td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="nhap-nhanh-cuoi-bang">Nhập nhanh cuối bảng</h3>
+<p align="center">
+  <a href="./images/05-nhap-nhanh.png"><img src="./images/05-nhap-nhanh.png" alt="Nhập nhanh cuối bảng" width="900" title="Nhấn để xem ảnh gốc"></a><br>
+  <em>Ô nhập nhanh cuối bảng, đang gõ `电影` — nhấn để xem ảnh gốc</em>
+</p>
+
+<p><strong>Mô tả:</strong></p>
+<ul>
+<li>Dòng <code>Nhập nhanh … — nhấn Enter để thêm</code> ở cuối bảng để thêm nhanh 1 mục chỉ với field đầu (vd Từ).</li>
+</ul>
+<p><strong>Giải thích field/thành phần:</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Thành phần</th>
+<th>Yêu cầu</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Ô nhập</td>
+<td>Nhập field đầu của loại (Từ vựng: Từ; Ngữ pháp: Tên điểm ngữ pháp…).</td>
+</tr>
+<tr>
+<td>Enter / <code>+</code></td>
+<td>Tạo bản ghi thư viện mới, gắn vào khoá, thêm dòng vào cuối bảng; ô nhập xoá trống để nhập tiếp; Toast <code>Thành Công</code> — <code>Đã thêm 1 từ vào &lt;tên cụm&gt;.</code> (vd <code>Đã thêm 1 từ vào Chưa phân cụm.</code>).</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Điểm cần lưu ý:</strong></p>
+<ul>
+<li>Mục mới thiếu các field bắt buộc còn lại nên tính là <code>Thiếu thông tin</code>; CD sửa hoặc dùng <code>Điền thiếu bằng AI</code>.</li>
+<li>Đang chọn cụm thì mục mới thuộc cụm đó; đang ở <code>Tất cả</code> thì thuộc <code>Chưa phân cụm</code>.</li>
+<li>Ô trống hoặc chỉ khoảng trắng: không tạo mục.</li>
+</ul>
+<h4 id="testcase-nhap-nhanh-cuoi-bang">Testcase — Nhập nhanh cuối bảng</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 20: Nhập nhanh một từ</td>
+<td>High</td>
+<td>Smoke</td>
+<td>Flow 4 / REQ05</td>
+<td>CD</td>
+<td>Tab Từ vựng, đang ở <code>Tất cả</code></td>
+<td><strong>Given</strong> gõ <code>电影</code><br><strong>When</strong> nhấn Enter<br><strong>Then</strong> thêm dòng <code>电影</code> cuối bảng</td>
+<td>- Thuộc <code>Chưa phân cụm</code><br>- Tính là thiếu thông tin<br>- Ô nhập trống lại<br>- Toast <code>Đã thêm 1 từ vào Chưa phân cụm.</code></td>
+</tr>
+<tr>
+<td>Case 21: Nhập nhanh trong cụm</td>
+<td>Medium</td>
+<td></td>
+<td>REQ05 / REQ08</td>
+<td>CD</td>
+<td>Đang chọn cụm <code>Gia đình</code></td>
+<td><strong>Given</strong> gõ <code>哥哥</code><br><strong>When</strong> nhấn Enter<br><strong>Then</strong> từ mới thuộc cụm <code>Gia đình</code></td>
+<td>- Số từ của cụm tăng 1</td>
+</tr>
+<tr>
+<td>Case 22: Ô trống</td>
+<td>Low</td>
+<td></td>
+<td>EX02</td>
+<td>CD</td>
+<td>Ô nhập trống</td>
+<td><strong>Given</strong> ô chỉ có khoảng trắng<br><strong>When</strong> nhấn Enter<br><strong>Then</strong> không tạo mục</td>
+<td>- Không có Toast thành công</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="menu-thao-tac-dong-va-sua-muc">Menu thao tác dòng và sửa mục</h3>
+<p><strong>Mô tả:</strong></p>
+<ul>
+<li>Menu ⋮ của mỗi dòng (ảnh <code>02-menu-dong.png</code> ở khu vực Bảng danh sách) gồm các thao tác trên 1 mục.</li>
+</ul>
+<p><strong>Giải thích thành phần:</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Thao tác</th>
+<th>Yêu cầu</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Sửa nhanh (inline)</code></td>
+<td>Sửa trực tiếp các ô field chính trên dòng; Enter / rời dòng thì lưu, Esc thì huỷ.</td>
+</tr>
+<tr>
+<td><code>Mở chi tiết …</code></td>
+<td>Mở drawer <code>Chi tiết mục</code> (xem khu vực Chi tiết mục) để xem / sửa <strong>đầy đủ</strong> field của loại.</td>
+</tr>
+<tr>
+<td><code>Điền thiếu bằng AI</code></td>
+<td>AI điền các field bắt buộc đang trống của mục (xem khu vực AI).</td>
+</tr>
+<tr>
+<td><code>Thêm vào cụm / Gỡ khỏi cụm</code></td>
+<td>Mở popup chọn cụm (xem Popup Thêm vào cụm / Gỡ khỏi cụm).</td>
+</tr>
+<tr>
+<td><code>Nhân bản</code></td>
+<td>Tạo bản ghi thư viện mới có cùng nội dung, gắn vào khoá, cùng cụm với mục gốc.</td>
+</tr>
+<tr>
+<td><code>Xoá khỏi danh sách</code></td>
+<td>Gỡ mục khỏi khoá (xem Popup xác nhận gỡ mục khỏi khoá).</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Điểm cần lưu ý:</strong></p>
+<ul>
+<li>Sửa ở S1 là sửa <strong>bản ghi thư viện</strong>; mọi khoá và bài học đang dùng mục thấy nội dung mới.</li>
+<li>Sắp xếp thứ tự dùng tay nắm kéo thả trên dòng, không có mục riêng trong menu.</li>
+</ul>
+<h4 id="testcase-menu-thao-tac-dong-va-sua-muc">Testcase — Menu thao tác dòng và sửa mục</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 23: Sửa nhanh inline</td>
+<td>High</td>
+<td>Smoke</td>
+<td>Flow 5 / REQ06</td>
+<td>CD</td>
+<td>Có từ <code>爸爸</code></td>
+<td><strong>Given</strong> chọn <code>Sửa nhanh (inline)</code><br><strong>When</strong> sửa Nghĩa và nhấn Enter<br><strong>Then</strong> lưu nghĩa mới</td>
+<td>- Toast <code>Thành Công</code><br>- Khoá khác dùng cùng bản ghi thấy nghĩa mới</td>
+</tr>
+<tr>
+<td>Case 24: Huỷ sửa inline</td>
+<td>Medium</td>
+<td></td>
+<td>REQ06</td>
+<td>CD</td>
+<td>Đang sửa inline</td>
+<td><strong>Given</strong> đã đổi giá trị ô<br><strong>When</strong> nhấn Esc<br><strong>Then</strong> giữ giá trị cũ</td>
+<td>- Không có Toast CRUD</td>
+</tr>
+<tr>
+<td>Case 25: Nhân bản</td>
+<td>Medium</td>
+<td></td>
+<td>REQ06</td>
+<td>CD</td>
+<td>Từ <code>弟弟</code> thuộc cụm <code>Gia đình</code></td>
+<td><strong>Given</strong> chọn <code>Nhân bản</code><br><strong>When</strong> hệ thống xử lý<br><strong>Then</strong> có thêm 1 dòng <code>弟弟</code></td>
+<td>- Là bản ghi thư viện mới<br>- Thuộc cụm <code>Gia đình</code></td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="chi-tiet-muc-drawer">Chi tiết mục (drawer)</h3>
+<p align="center">
+  <a href="./images/18-chi-tiet-muc.png"><img src="./images/18-chi-tiet-muc.png" alt="Drawer Chi tiết từ vựng" width="900" title="Nhấn để xem ảnh gốc"></a><br>
+  <em>Drawer Chi tiết từ vựng của `爸爸`: đủ field, Hán Việt do AI điền chờ duyệt, danh sách ví dụ — nhấn để xem ảnh gốc</em>
+</p>
+
+<p><strong>Mô tả:</strong></p>
+<ul>
+<li>Mở từ menu dòng <code>Mở chi tiết …</code> (hoặc bấm vào tên mục). Drawer trượt từ phải, phủ lên panel Cụm; bảng bên trái
+  vẫn hiện, dòng đang mở được tô sáng. Mỗi loại có form riêng theo bảng Field (Phụ lục A); ảnh minh hoạ Từ vựng.</li>
+<li>Lưu = sửa <strong>bản ghi thư viện</strong>; mọi khoá và bài học dùng mục đó thấy nội dung mới.</li>
+</ul>
+<p><strong>Giải thích thành phần:</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Thành phần</th>
+<th>Yêu cầu</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Tiêu đề</td>
+<td><code>Chi tiết &lt;loại&gt;</code> + dòng phụ <code>Bản ghi thư viện · đang dùng ở N khoá · M bài học</code>; <code>×</code> đóng (hỏi xác nhận nếu có thay đổi chưa lưu).</td>
+</tr>
+<tr>
+<td>Field bắt buộc</td>
+<td>Đánh dấu <code>*</code>; trống thì viền đỏ khi Lưu và mục vẫn tính thiếu thông tin.</td>
+</tr>
+<tr>
+<td>Từ loại</td>
+<td>Chọn nhiều chip từ danh sách theo ngôn ngữ; <code>×</code> trên chip để bỏ; <code>+ Chọn từ loại</code>.</td>
+</tr>
+<tr>
+<td>Hán Việt</td>
+<td>Chỉ hiện ở trung tâm tiếng Trung.</td>
+</tr>
+<tr>
+<td>Ô có giá trị AI</td>
+<td>Viền nét đứt cam, nhãn <code>AI · chờ duyệt</code>, nút <code>✓ Duyệt</code> / <code>↺ Hoàn tác</code> ngay trong ô (giống Điền thiếu trên bảng).</td>
+</tr>
+<tr>
+<td>Mở rộng</td>
+<td>Toggle <code>Không · đẩy lên 3 bước học</code> (mặc định) / <code>Có · không đẩy lên 3 bước</code>.</td>
+</tr>
+<tr>
+<td>Audio</td>
+<td><code>Chưa có file · TTS</code> + <code>Tải lên</code>; có file thì hiện tên file, nút nghe, <code>Thay</code>, <code>Xoá</code>.</td>
+</tr>
+<tr>
+<td>Ví dụ</td>
+<td>Danh sách thẻ <code>Ví dụ n</code> gồm câu, phiên âm, nghĩa; <code>Xoá</code> từng ví dụ (không xoá được khi chỉ còn 1); <code>+ Thêm ví dụ</code>.</td>
+</tr>
+<tr>
+<td>Cụm</td>
+<td>Chỉ đọc: chip các cụm đang thuộc; <code>Sửa cụm</code> mở popup Thêm vào cụm / Gỡ khỏi cụm.</td>
+</tr>
+<tr>
+<td>Chân drawer</td>
+<td>Ghi chú <code>Lưu = sửa bản ghi thư viện; mọi khoá dùng từ này thấy nội dung mới</code>; <code>Huỷ</code>; <code>Lưu</code>.</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Điểm cần lưu ý:</strong></p>
+<ul>
+<li>Field theo loại: Ngữ pháp có Cấu trúc, Cách dùng, Lưu ý (ô nhiều dòng), Video, Mở rộng; Hán tự có Thành phần,
+  Thứ tự nét, Mẹo nhớ, Chữ giống, Từ liên quan (chọn từ S1), Nét viết SVG; Kanji có Âm On, Âm Kun, Bộ thủ,
+  Thành phần, Mẹo nhớ, Từ liên quan, Nét viết SVG; Phát âm (tiếng Trung) có Loại âm, Nhóm, Thanh mẫu, Vận mẫu,
+  Cách đọc, Hướng dẫn phát âm, Âm dễ nhầm, Audio theo 4 thanh, Video hướng dẫn; Bảng chữ Nhật có Bộ chữ, Bảng con,
+  Vị trí, Chữ dễ nhầm, Mẹo nhớ, Từ ví dụ (danh sách từ, romaji, nghĩa), Audio.</li>
+<li>Field hệ thống tự sinh (Phiên âm từng chữ, Chuỗi tìm kiếm Kanji) không hiện để sửa.</li>
+<li>Mục đang được AI xử lý thì drawer chỉ đọc (xem khu vực AI).</li>
+</ul>
+<h4 id="testcase-chi-tiet-muc-drawer">Testcase — Chi tiết mục (drawer)</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 25a: Sửa đủ field ở Chi tiết mục</td>
+<td>High</td>
+<td>Smoke</td>
+<td>Flow 5 / REQ06</td>
+<td>CD</td>
+<td>Từ <code>爸爸</code> thiếu Ví dụ</td>
+<td><strong>Given</strong> mở <code>Mở chi tiết …</code><br><strong>When</strong> thêm 1 ví dụ (câu, phiên âm, nghĩa), bấm <code>Lưu</code><br><strong>Then</strong> bản ghi thư viện cập nhật</td>
+<td>- Toast <code>Thành Công</code><br>- Mục hết thiếu thông tin<br>- Khoá khác dùng <code>爸爸</code> thấy ví dụ mới</td>
+</tr>
+<tr>
+<td>Case 25b: Thêm và xoá ví dụ</td>
+<td>Medium</td>
+<td></td>
+<td>REQ03 / REQ06</td>
+<td>CD</td>
+<td>Mục có 2 ví dụ</td>
+<td><strong>Given</strong> drawer đang mở<br><strong>When</strong> <code>Xoá</code> ví dụ 2 rồi Lưu<br><strong>Then</strong> còn 1 ví dụ</td>
+<td>- Không xoá được ví dụ cuối cùng</td>
+</tr>
+<tr>
+<td>Case 25c: Duyệt giá trị AI trong drawer</td>
+<td>Medium</td>
+<td></td>
+<td>REQ10</td>
+<td>CD</td>
+<td>Hán Việt do AI điền chờ duyệt</td>
+<td><strong>Given</strong> ô Hán Việt có nhãn <code>AI · chờ duyệt</code><br><strong>When</strong> bấm <code>✓ Duyệt</code><br><strong>Then</strong> giá trị thành chính thức</td>
+<td>- Nhãn AI mất<br>- Lọc <code>AI chờ duyệt</code> không còn mục</td>
+</tr>
+<tr>
+<td>Case 25d: Đóng khi chưa lưu</td>
+<td>Low</td>
+<td></td>
+<td>REQ06</td>
+<td>CD</td>
+<td>Đã sửa Nghĩa</td>
+<td><strong>Given</strong> bấm <code>×</code><br><strong>When</strong> xác nhận bỏ thay đổi<br><strong>Then</strong> drawer đóng, dữ liệu cũ giữ nguyên</td>
+<td>- Không có Toast CRUD</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="chon-nhieu-va-thao-tac-hang-loat">Chọn nhiều và thao tác hàng loạt</h3>
+<p align="center">
+  <a href="./images/03-chon-nhieu.png"><img src="./images/03-chon-nhieu.png" alt="Chọn nhiều — thao tác hàng loạt" width="900" title="Nhấn để xem ảnh gốc"></a><br>
+  <em>Thanh thao tác khi chọn 3 từ — nhấn để xem ảnh gốc</em>
+</p>
+
+<p><strong>Mô tả:</strong></p>
+<ul>
+<li>Tick ít nhất 1 dòng thì thanh công cụ đổi thành thanh thao tác hàng loạt.</li>
+</ul>
+<p><strong>Giải thích thành phần:</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Thành phần</th>
+<th>Yêu cầu</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Đã chọn N từ</code></td>
+<td>Số mục đang chọn.</td>
+</tr>
+<tr>
+<td><code>Chọn tất cả N từ</code></td>
+<td>Chọn toàn bộ mục thoả bộ lọc hiện tại (mọi trang).</td>
+</tr>
+<tr>
+<td><code>Điền thiếu bằng AI (k)</code></td>
+<td>k = số mục đang chọn <strong>đang thiếu</strong> thông tin; k = 0 thì không bấm được.</td>
+</tr>
+<tr>
+<td><code>Soát lỗi bằng AI</code></td>
+<td>AI soát lỗi các mục đang chọn (xem khu vực AI).</td>
+</tr>
+<tr>
+<td><code>Thêm vào cụm / Gỡ khỏi cụm</code></td>
+<td>Mở popup chọn cụm cho các mục đang chọn.</td>
+</tr>
+<tr>
+<td><code>Xoá (N)</code></td>
+<td>Gỡ N mục khỏi khoá (xem Popup xác nhận gỡ mục khỏi khoá).</td>
+</tr>
+<tr>
+<td><code>Bỏ chọn</code></td>
+<td>Bỏ chọn toàn bộ.</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Điểm cần lưu ý:</strong></p>
+<ul>
+<li>Checkbox header ở trạng thái chọn một phần khi chỉ một số dòng của trang được chọn.</li>
+<li>Khi đã chọn toàn bộ mục thoả bộ lọc thì không hiện <code>Chọn tất cả N từ</code>.</li>
+<li>Khi AI đang xử lý các mục đang chọn, thanh hàng loạt chỉ còn <code>Đang điền x/N · Dừng</code> và <code>Bỏ chọn</code>; <code>Soát lỗi bằng
+  AI</code>, <code>Thêm vào cụm / Gỡ khỏi cụm</code>, <code>Xoá (N)</code> mờ (ảnh <code>07-ai-dien-thieu.png</code>).</li>
+</ul>
+<h4 id="testcase-chon-nhieu-va-thao-tac-hang-loat">Testcase — Chọn nhiều và thao tác hàng loạt</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 26: Đếm mục thiếu khi chọn nhiều</td>
+<td>High</td>
+<td></td>
+<td>REQ10</td>
+<td>CD</td>
+<td>Chọn 3 từ, 1 từ thiếu thông tin</td>
+<td><strong>Given</strong> thanh hàng loạt hiện<br><strong>When</strong> xem nút AI<br><strong>Then</strong> hiện <code>Điền thiếu bằng AI (1)</code></td>
+<td>- AI chỉ chạy cho 1 từ thiếu</td>
+</tr>
+<tr>
+<td>Case 27: Chọn tất cả theo bộ lọc</td>
+<td>Medium</td>
+<td></td>
+<td>REQ11</td>
+<td>CD</td>
+<td>Lọc <code>Thiếu thông tin</code> có 2 từ</td>
+<td><strong>Given</strong> đã chọn 1 từ<br><strong>When</strong> bấm <code>Chọn tất cả 2 từ</code><br><strong>Then</strong> cả 2 từ được chọn</td>
+<td>- Chỉ chọn mục thoả bộ lọc</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="popup-them-vao-cum-go-khoi-cum">Popup Thêm vào cụm / Gỡ khỏi cụm</h3>
+<p align="center">
+  <a href="./images/04-them-go-cum.png"><img src="./images/04-them-go-cum.png" alt="Popup Cụm của 3 mục" width="900" title="Nhấn để xem ảnh gốc"></a><br>
+  <em>Popup `Cụm của 3 mục` — tick nhiều cụm rồi Lưu — nhấn để xem ảnh gốc</em>
+</p>
+
+<p><strong>Mô tả:</strong></p>
+<ul>
+<li>Gán các mục đang chọn vào một hoặc nhiều cụm, hoặc gỡ khỏi cụm. Một mục thuộc 0, 1 hoặc nhiều cụm.</li>
+</ul>
+<p><strong>Giải thích field/thành phần:</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Thành phần</th>
+<th>Yêu cầu</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Tiêu đề</td>
+<td><code>Cụm của N mục</code> (N mục đang chọn).</td>
+</tr>
+<tr>
+<td>Tìm cụm</td>
+<td>Tìm theo tên cụm.</td>
+</tr>
+<tr>
+<td>Danh sách cụm</td>
+<td>Checkbox từng cụm + số mục của cụm; cụm mà <strong>mọi</strong> mục đang chọn đều thuộc thì tick sẵn, chỉ một phần thuộc thì ở trạng thái chọn một phần.</td>
+</tr>
+<tr>
+<td><code>Huỷ</code> / <code>Lưu</code></td>
+<td>Lưu: tick thì thêm các mục vào cụm, bỏ tick thì gỡ các mục khỏi cụm.</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Điểm cần lưu ý:</strong></p>
+<ul>
+<li>Popup không tạo cụm mới (cụm tạo bằng <code>Số cụm</code> / <code>Thêm cụm mới</code> ở panel Cụm).</li>
+<li>Mục bị gỡ khỏi mọi cụm thì về <code>Chưa phân cụm</code>.</li>
+<li>Thay đổi cụm không ảnh hưởng bài học đã thêm mục trước đó.</li>
+</ul>
+<h4 id="testcase-popup-them-vao-cum-go-khoi-cum">Testcase — Popup Thêm vào cụm / Gỡ khỏi cụm</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 28: Thêm mục vào nhiều cụm</td>
+<td>High</td>
+<td>Smoke</td>
+<td>Flow 9 / REQ08</td>
+<td>CD</td>
+<td>Chọn 3 từ chưa phân cụm</td>
+<td><strong>Given</strong> popup cụm đang mở<br><strong>When</strong> tick <code>Gia đình</code> và <code>Học tập</code>, bấm Lưu<br><strong>Then</strong> 3 từ thuộc cả 2 cụm</td>
+<td>- Cột Cụm hiện <code>01. Gia đình</code> <code>+1</code><br>- Số mục 2 cụm tăng 3</td>
+</tr>
+<tr>
+<td>Case 29: Gỡ khỏi cụm cuối cùng</td>
+<td>Medium</td>
+<td></td>
+<td>REQ08</td>
+<td>CD</td>
+<td>Từ chỉ thuộc cụm <code>Gia đình</code></td>
+<td><strong>Given</strong> popup cụm<br><strong>When</strong> bỏ tick <code>Gia đình</code>, Lưu<br><strong>Then</strong> từ về <code>Chưa phân cụm</code></td>
+<td>- Từ vẫn còn trong khoá</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="panel-cum-va-so-cum">Panel Cụm và Số cụm</h3>
+<p><strong>Mô tả:</strong></p>
+<ul>
+<li>Panel bên phải của mỗi tab quản lý cụm của <strong>loại đó</strong> (mỗi loại có bộ cụm riêng): xem số mục mỗi cụm, chọn cụm để
+  lọc bảng, tạo cụm theo Số cụm, thêm / đổi tên / xoá cụm, Chia cụm bằng AI.</li>
+</ul>
+<p><strong>Giải thích thành phần:</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Thành phần</th>
+<th>Yêu cầu</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Tất cả cụm</code> + badge <code>N cụm</code></td>
+<td>Tiêu đề panel và số cụm hiện có.</td>
+</tr>
+<tr>
+<td><code>Số cụm</code></td>
+<td>Mặc định <code>0</code>. <strong>Chỉ nhập được khi chưa có cụm</strong>: CD nhập N thì hệ thống tạo N cụm rỗng tên <code>Chủ đề 1</code> … <code>Chủ đề N</code>. Chưa có cụm thì panel hiện <code>Chưa có cụm. Nhập Số cụm để tạo các cụm rỗng "Chủ đề 1 … N".</code> (ảnh <code>08-ngu-phap.png</code>). Đã có cụm thì ô <strong>chỉ đọc</strong>, hiện số cụm hiện tại (ảnh <code>01-tu-vung.png</code>); thêm / bớt cụm bằng <code>Thêm cụm mới</code> và menu ⋮ của cụm.</td>
+</tr>
+<tr>
+<td><code>Chia cụm bằng AI</code></td>
+<td>Mở popup Chia cụm bằng AI.</td>
+</tr>
+<tr>
+<td>Tìm cụm</td>
+<td>Tìm theo tên cụm.</td>
+</tr>
+<tr>
+<td><code>Tất cả</code></td>
+<td>Hiện mọi mục của loại; badge tổng số mục.</td>
+</tr>
+<tr>
+<td><code>Chưa phân cụm</code></td>
+<td>Mục không thuộc cụm nào; icon cảnh báo + số mục.</td>
+</tr>
+<tr>
+<td>Dòng cụm</td>
+<td>Số thứ tự + tên + số mục; menu ⋮: <code>Đổi tên</code>, <code>Xoá cụm</code>.</td>
+</tr>
+<tr>
+<td><code>Thêm cụm mới</code></td>
+<td>Thêm 1 cụm <strong>rỗng</strong> vào cuối danh sách.</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Điểm cần lưu ý:</strong></p>
+<ul>
+<li><strong>Xoá cụm</strong> (kể cả cụm có dữ liệu): cụm bị xoá, các mục <strong>chỉ mất gán cụm đó</strong>, vẫn còn trong khoá; mục không còn
+  cụm nào về <code>Chưa phân cụm</code>. Muốn làm lại thì thêm cụm mới rồi chia bằng AI hoặc chọn tay.</li>
+<li>Cụm không gắn với bài học; một cụm dùng được cho nhiều bài (thêm ở Chi tiết bài học).</li>
+<li>Xoá hết cụm (badge <code>0 cụm</code>) thì ô <code>Số cụm</code> nhập lại được.</li>
+</ul>
+<h4 id="testcase-panel-cum-va-so-cum">Testcase — Panel Cụm và Số cụm</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 30: Tạo cụm theo Số cụm</td>
+<td>High</td>
+<td>Smoke</td>
+<td>Flow 8 / REQ08</td>
+<td>CD</td>
+<td>Tab Từ vựng, Số cụm = 0</td>
+<td><strong>Given</strong> panel Cụm<br><strong>When</strong> nhập Số cụm <code>24</code><br><strong>Then</strong> tạo 24 cụm rỗng</td>
+<td>- Tên <code>Chủ đề 1</code> … <code>Chủ đề 24</code><br>- Badge <code>24 cụm</code></td>
+</tr>
+<tr>
+<td>Case 31: Thêm cụm mới</td>
+<td>Medium</td>
+<td></td>
+<td>REQ08</td>
+<td>CD</td>
+<td>Có 24 cụm</td>
+<td><strong>Given</strong> panel Cụm<br><strong>When</strong> thêm cụm mới<br><strong>Then</strong> có 25 cụm, cụm mới rỗng</td>
+<td>- Cụm mới ở cuối danh sách</td>
+</tr>
+<tr>
+<td>Case 32: Xoá cụm có dữ liệu</td>
+<td>High</td>
+<td>Smoke</td>
+<td>Flow 8 / REQ08</td>
+<td>CD</td>
+<td>Cụm <code>Chủ đề 24</code> có 20 từ, 5 từ còn thuộc cụm khác</td>
+<td><strong>Given</strong> menu ⋮ của cụm<br><strong>When</strong> chọn <code>Xoá cụm</code> và xác nhận<br><strong>Then</strong> còn 23 cụm</td>
+<td>- 15 từ về <code>Chưa phân cụm</code><br>- 5 từ vẫn ở cụm khác<br>- Không mục nào bị gỡ khỏi khoá</td>
+</tr>
+<tr>
+<td>Case 30a: Số cụm chỉ đọc khi đã có cụm</td>
+<td>Medium</td>
+<td></td>
+<td>REQ08 / EX11</td>
+<td>CD</td>
+<td>Có 10 cụm</td>
+<td><strong>Given</strong> panel Cụm<br><strong>When</strong> bấm vào ô <code>Số cụm</code><br><strong>Then</strong> ô chỉ đọc, hiện <code>10</code></td>
+<td>- API đổi Số cụm bị từ chối<br>- Xoá hết 10 cụm thì ô nhập lại được</td>
+</tr>
+<tr>
+<td>Case 33: Cụm riêng theo loại</td>
+<td>Medium</td>
+<td></td>
+<td>REQ08</td>
+<td>CD</td>
+<td>Từ vựng có 24 cụm</td>
+<td><strong>Given</strong> tab Ngữ pháp<br><strong>When</strong> xem panel Cụm<br><strong>Then</strong> hiện cụm của Ngữ pháp</td>
+<td>- Không lẫn cụm của Từ vựng</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="popup-chia-cum-bang-ai">Popup Chia cụm bằng AI</h3>
+<p align="center">
+  <a href="./images/11-popup-chia-cum-ai.png"><img src="./images/11-popup-chia-cum-ai.png" alt="Popup Chia cụm bằng AI" width="900" title="Nhấn để xem ảnh gốc"></a><br>
+  <em>Popup Chia cụm bằng AI — AI đưa từ vào các cụm đang có — nhấn để xem ảnh gốc</em>
+</p>
+
+<p><strong>Mô tả:</strong></p>
+<ul>
+<li>AI đề xuất cách đưa các mục vào <strong>các cụm đang có</strong> của loại theo chủ đề và prompt của CD; CD xem trước, chỉnh rồi
+  áp dụng. Ví dụ 500 từ vựng, 24 cụm: AI chia 500 từ vào 24 cụm và đặt tên cụm theo chủ đề.</li>
+</ul>
+<p><strong>Giải thích field/thành phần:</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Thành phần</th>
+<th>Yêu cầu</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Tiêu đề / mô tả</td>
+<td><code>Chia cụm bằng AI</code>; <code>AI đưa từ vựng vào các cụm đang có và đặt tên cụm theo chủ đề. Xem trước và chỉnh trước khi áp dụng.</code></td>
+</tr>
+<tr>
+<td>Phạm vi chia cụm</td>
+<td>Chọn 1: <code>Tất cả N từ (chia lại toàn bộ)</code>, <code>Chỉ M từ chưa phân cụm (giữ cụm cũ)</code>, <code>Mục đang chọn</code> (mờ, ghi <code>chưa chọn mục nào</code> khi chưa chọn).</td>
+</tr>
+<tr>
+<td>Số từ / cụm</td>
+<td>Khoảng số mục mỗi cụm để AI tham khảo (vd <code>10 – 25</code>); <strong>không bắt buộc</strong>, trống thì AI tự cân đối.</td>
+</tr>
+<tr>
+<td>Gợi ý nhanh</td>
+<td>Mẫu tiêu chí điền nhanh vào prompt: <code>Theo chủ đề giao tiếp</code>, <code>Theo từ loại</code>, <code>Theo độ khó</code>, <code>Theo bộ thủ</code>. Không có gợi ý theo bài học (cụm không gắn bài học).</td>
+</tr>
+<tr>
+<td>Yêu cầu thêm cho AI (prompt)</td>
+<td>Ô nhập, tối đa 500 ký tự (bộ đếm <code>x/500</code>).</td>
+</tr>
+<tr>
+<td><code>Tạo đề xuất</code></td>
+<td>Gửi yêu cầu cho AI.</td>
+</tr>
+<tr>
+<td>Đề xuất của AI</td>
+<td>Badge <code>N mục → M cụm</code>; mỗi cụm 1 thẻ: tên cụm (AI đặt theo chủ đề, sửa được bằng icon bút), nhãn <code>Cụm cũ</code>, <code>+k từ</code>, danh sách mục. Kéo thả mục giữa các cụm để chỉnh.</td>
+</tr>
+<tr>
+<td>Ghi chú phạm vi</td>
+<td>Vd <code>Chỉ thêm từ vào cụm, không đổi cụm của 16 từ đã phân cụm</code>.</td>
+</tr>
+<tr>
+<td><code>Huỷ</code> / <code>Tạo lại</code> / <code>Áp dụng M cụm</code></td>
+<td>Huỷ: không đổi gì; Tạo lại: AI đề xuất lại; Áp dụng: lưu phân bổ và tên cụm, ghi 1 dòng <code>Chia cụm bằng AI: N mục → M cụm</code> vào Log cập nhật.</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Điểm cần lưu ý:</strong></p>
+<ul>
+<li>AI <strong>không tạo cụm mới, không tạo cụm con</strong>; chỉ dùng các cụm đang có (Số cụm); mọi thẻ đề xuất mang nhãn <code>Cụm cũ</code>.
+  Chưa có cụm (Số cụm = 0) thì chưa chia được: Toast <code>Cảnh Báo</code> — <code>Nhập Số cụm trước khi chia cụm bằng AI.</code></li>
+<li>Áp dụng với phạm vi <code>Chỉ M mục chưa phân cụm</code> chỉ <strong>thêm</strong> mục vào cụm, không đổi cụm của mục đã phân cụm.</li>
+<li>Vì một mục được thuộc nhiều cụm, AI có thể đưa 1 mục vào nhiều cụm nếu hợp chủ đề.</li>
+<li>Hoàn tác sau khi áp dụng là chức năng của <code>Log cập nhật</code> (requirement riêng), không nằm trong S1; dòng ghi chú
+  <code>Có thể hoàn tác trong Log cập nhật</code> trên popup chỉ dẫn sang đó.</li>
+</ul>
+<h4 id="testcase-popup-chia-cum-bang-ai">Testcase — Popup Chia cụm bằng AI</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 34: Chia cụm bằng AI</td>
+<td>High</td>
+<td>Smoke</td>
+<td>Flow 10 / REQ09</td>
+<td>CD</td>
+<td>500 từ chưa phân cụm, 24 cụm rỗng</td>
+<td><strong>Given</strong> popup, phạm vi <code>Chỉ 500 mục chưa phân cụm</code>, nhập prompt<br><strong>When</strong> <code>Tạo đề xuất</code> rồi <code>Áp dụng 24 cụm</code><br><strong>Then</strong> 500 từ được đưa vào 24 cụm</td>
+<td>- Tên cụm đổi theo chủ đề<br>- Không có cụm mới<br>- Toast <code>Thành Công</code></td>
+</tr>
+<tr>
+<td>Case 35: Giữ cụm cũ</td>
+<td>High</td>
+<td></td>
+<td>REQ09</td>
+<td>CD</td>
+<td>16 từ đã ở cụm <code>Gia đình</code></td>
+<td><strong>Given</strong> phạm vi <code>Chỉ … chưa phân cụm</code><br><strong>When</strong> áp dụng<br><strong>Then</strong> 16 từ giữ nguyên cụm</td>
+<td>- Chỉ từ chưa phân cụm được thêm vào cụm</td>
+</tr>
+<tr>
+<td>Case 36: Chỉnh đề xuất trước khi áp dụng</td>
+<td>Medium</td>
+<td></td>
+<td>REQ09</td>
+<td>CD</td>
+<td>Đã có đề xuất</td>
+<td><strong>Given</strong> đề xuất AI<br><strong>When</strong> kéo 1 từ sang cụm khác và sửa tên cụm<br><strong>Then</strong> áp dụng đúng theo bản đã chỉnh</td>
+<td>- Tên cụm theo bản sửa</td>
+</tr>
+<tr>
+<td>Case 37: Chưa có cụm</td>
+<td>Medium</td>
+<td></td>
+<td>EX05</td>
+<td>CD</td>
+<td>Số cụm = 0</td>
+<td><strong>Given</strong> panel Cụm<br><strong>When</strong> bấm <code>Chia cụm bằng AI</code><br><strong>Then</strong> Toast <code>Cảnh Báo</code> — <code>Nhập Số cụm trước khi chia cụm bằng AI.</code></td>
+<td>- Không gửi yêu cầu AI<br>- Panel gợi ý nhập Số cụm</td>
+</tr>
+<tr>
+<td>Case 38: Huỷ</td>
+<td>Low</td>
+<td></td>
+<td>REQ09</td>
+<td>CD</td>
+<td>Đã có đề xuất</td>
+<td><strong>Given</strong> popup<br><strong>When</strong> bấm <code>Huỷ</code><br><strong>Then</strong> đóng popup</td>
+<td>- Cụm không thay đổi<br>- Không có Toast CRUD</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="ai-dien-thieu-va-soat-loi">AI Điền thiếu và Soát lỗi</h3>
+<p align="center">
+  <a href="./images/07-ai-dien-thieu.png"><img src="./images/07-ai-dien-thieu.png" alt="Điền thiếu bằng AI" width="900" title="Nhấn để xem ảnh gốc"></a><br>
+  <em>Điền thiếu bằng AI đang chạy, ô do AI điền có Duyệt / Hoàn tác — nhấn để xem ảnh gốc</em>
+</p>
+
+<p align="center">
+  <a href="./images/12-soat-loi-ai.png"><img src="./images/12-soat-loi-ai.png" alt="Soát lỗi bằng AI" width="900" title="Nhấn để xem ảnh gốc"></a><br>
+  <em>Soát lỗi bằng AI: ô nghi sai viền nét đứt, popover Hiện tại / Đề xuất / lý do — nhấn để xem ảnh gốc</em>
+</p>
+
+<p><strong>Mô tả:</strong></p>
+<ul>
+<li><strong>Điền thiếu bằng AI:</strong> AI điền các field bắt buộc <strong>đang trống</strong>, giữ nguyên dữ liệu đã có.</li>
+<li><strong>Soát lỗi bằng AI:</strong> AI kiểm tra các field <strong>đã có dữ liệu</strong> (vd phiên âm sai thanh điệu, nghĩa không khớp, từ loại
+  sai), đánh dấu ô nghi sai, đề xuất sửa kèm lý do.</li>
+<li>Mọi giá trị AI điền / đề xuất đều ở trạng thái <strong>chờ duyệt</strong> cho tới khi CD duyệt.</li>
+</ul>
+<p><strong>Giải thích thành phần:</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Thành phần</th>
+<th>Yêu cầu</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Điểm gọi Điền thiếu</td>
+<td>Nút thanh công cụ (các mục thiếu trong phạm vi đang xem); menu dòng (1 mục); thanh hàng loạt <code>Điền thiếu bằng AI (k)</code>; Preview mobile <code>Điền thiếu từ này</code>.</td>
+</tr>
+<tr>
+<td>Điểm gọi Soát lỗi</td>
+<td>Nút <code>Soát lỗi bằng AI</code> ở thanh công cụ và thanh hàng loạt.</td>
+</tr>
+<tr>
+<td>Thanh tiến độ Điền thiếu</td>
+<td><code>Đang điền thông tin còn thiếu cho N từ · Chỉ điền ô trống · dữ liệu cũ giữ nguyên</code>, thanh <code>x/N từ</code>, <code>Duyệt tất cả (k)</code>; nút <code>Đang điền x/N · Dừng</code> trên thanh hàng loạt. Toast <code>Thông Báo</code> — <code>AI đang điền thông tin cho N từ.</code></td>
+</tr>
+<tr>
+<td>Ô AI điền</td>
+<td>Nhãn <code>AI</code>; bấm ô hiện <code>Do AI điền · ✓ Duyệt · ↺ Hoàn tác</code>.</td>
+</tr>
+<tr>
+<td>Thanh kết quả Soát lỗi</td>
+<td><code>Soát lỗi xong · N ô nghi sai · Giá trị cũ giữ nguyên tới khi duyệt</code>, <code>Duyệt tất cả (N)</code>; bảng lọc <code>AI nghi sai</code>.</td>
+</tr>
+<tr>
+<td>Ô AI nghi sai</td>
+<td>Viền nét đứt; bấm ô hiện popover <code>Nghi sai · &lt;tên field&gt;</code>: <code>Hiện tại</code> (gạch ngang), <code>Đề xuất</code>, lý do (vd <code>"和" dùng để nối hai danh từ nên là liên từ.</code>); <code>Bỏ qua</code> / <code>Duyệt</code> (thay bằng đề xuất).</td>
+</tr>
+<tr>
+<td><code>Duyệt tất cả (k)</code></td>
+<td>Duyệt mọi giá trị AI đang chờ trong phạm vi đang xem; k = số giá trị chờ duyệt.</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Điểm cần lưu ý:</strong></p>
+<ul>
+<li>Giá trị chờ duyệt được <strong>lưu nháp</strong> kèm cờ <code>AI · chờ duyệt</code>; mục vẫn tính là <strong>thiếu / chưa đủ</strong> cho tới khi duyệt.
+  Học viên chỉ thấy giá trị đã duyệt.</li>
+<li>Đề xuất sửa của Soát lỗi <strong>không ghi đè</strong> giá trị cũ cho tới khi duyệt.</li>
+<li><code>Hoàn tác</code> trả ô về giá trị trước khi AI điền (trống). <code>Dừng</code>: các mục chưa xử lý giữ nguyên; mục đã điền giữ trạng
+  thái chờ duyệt.</li>
+<li>Lọc Trạng thái <code>AI chờ duyệt</code> / <code>AI nghi sai</code> để duyệt nhanh.</li>
+<li><strong>Khoá mục AI đang xử lý:</strong> trong lúc Điền thiếu / Soát lỗi chạy, các mục đang xử lý không sửa inline được, không
+  mở Chi tiết mục để sửa, <code>Xoá</code>, <code>Thêm vào cụm / Gỡ khỏi cụm</code> mờ; thanh hàng loạt chỉ còn <code>Dừng</code>, <code>Bỏ chọn</code>. Mục khác
+  và Nhập nhanh vẫn thao tác bình thường. API thay đổi mục đang xử lý bị từ chối (EX10).</li>
+</ul>
+<h4 id="testcase-ai-dien-thieu-va-soat-loi">Testcase — AI Điền thiếu và Soát lỗi</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 39: Điền thiếu và duyệt</td>
+<td>High</td>
+<td>Smoke</td>
+<td>Flow 6 / REQ10</td>
+<td>CD</td>
+<td>Từ <code>好</code> thiếu Từ loại</td>
+<td><strong>Given</strong> menu dòng của <code>好</code><br><strong>When</strong> chọn <code>Điền thiếu bằng AI</code> rồi <code>Duyệt</code><br><strong>Then</strong> Từ loại được lưu</td>
+<td>- Trước khi duyệt: lọc <code>AI chờ duyệt</code> có <code>好</code><br>- Sau khi duyệt: tính là đủ thông tin</td>
+</tr>
+<tr>
+<td>Case 40: Chỉ điền ô trống</td>
+<td>High</td>
+<td></td>
+<td>REQ10</td>
+<td>CD</td>
+<td>Từ có Nghĩa, thiếu Phiên âm</td>
+<td><strong>Given</strong> chạy Điền thiếu<br><strong>When</strong> AI xử lý xong<br><strong>Then</strong> chỉ ô Phiên âm có nhãn AI</td>
+<td>- Nghĩa giữ nguyên</td>
+</tr>
+<tr>
+<td>Case 41: Hoàn tác</td>
+<td>Medium</td>
+<td></td>
+<td>REQ10</td>
+<td>CD</td>
+<td>Ô có giá trị AI chờ duyệt</td>
+<td><strong>Given</strong> bấm ô AI<br><strong>When</strong> chọn <code>Hoàn tác</code><br><strong>Then</strong> ô trở lại trống</td>
+<td>- Mục vẫn thiếu thông tin</td>
+</tr>
+<tr>
+<td>Case 42: Dừng giữa chừng</td>
+<td>Medium</td>
+<td></td>
+<td>REQ10 / EX04</td>
+<td>CD</td>
+<td>Đang điền 1/2 từ</td>
+<td><strong>Given</strong> thanh tiến độ<br><strong>When</strong> bấm <code>Dừng</code><br><strong>Then</strong> từ thứ 2 không được điền</td>
+<td>- Từ thứ 1 giữ giá trị chờ duyệt</td>
+</tr>
+<tr>
+<td>Case 43a: Khoá mục đang AI xử lý</td>
+<td>High</td>
+<td></td>
+<td>REQ10 / EX10</td>
+<td>CD</td>
+<td>Đang điền 1/2 từ</td>
+<td><strong>Given</strong> thanh hàng loạt<br><strong>When</strong> xem nút và thử sửa inline mục đang xử lý<br><strong>Then</strong> <code>Xoá (2)</code>, <code>Thêm vào cụm / Gỡ khỏi cụm</code> mờ, không sửa được</td>
+<td>- Mục khác và Nhập nhanh vẫn dùng được<br>- Gọi API xoá mục đang xử lý bị từ chối</td>
+</tr>
+<tr>
+<td>Case 43: Soát lỗi dữ liệu đã có</td>
+<td>High</td>
+<td></td>
+<td>Flow 7 / REQ10</td>
+<td>CD</td>
+<td>Từ có phiên âm sai thanh điệu</td>
+<td><strong>Given</strong> chọn từ<br><strong>When</strong> chạy <code>Soát lỗi bằng AI</code><br><strong>Then</strong> ô phiên âm đánh dấu nghi sai kèm đề xuất</td>
+<td>- Giá trị cũ giữ nguyên tới khi duyệt<br>- Có trong lọc <code>AI nghi sai</code></td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="preview-mobile">Preview mobile</h3>
+<p align="center">
+  <a href="./images/06-preview-mobile.png"><img src="./images/06-preview-mobile.png" alt="Preview mobile" width="900" title="Nhấn để xem ảnh gốc"></a><br>
+  <em>Preview mobile theo từ đang chọn — nhấn để xem ảnh gốc</em>
+</p>
+
+<p><strong>Mô tả:</strong></p>
+<ul>
+<li>Xem trước mục đang chọn như trên app học viên; panel Preview thay chỗ panel Cụm. Mọi loại kiến thức đều có Preview,
+  mỗi loại 1 dạng thẻ riêng.</li>
+</ul>
+<p><strong>Giải thích thành phần:</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Thành phần</th>
+<th>Yêu cầu</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Nút</td>
+<td><code>Preview mobile</code> đổi thành <code>Đang preview</code> khi panel mở; <code>×</code> đóng panel.</td>
+</tr>
+<tr>
+<td>Thiết bị</td>
+<td>Chọn kích thước máy (vd <code>iPhone 15</code>).</td>
+</tr>
+<tr>
+<td>Tab dạng thẻ</td>
+<td>Từ vựng: <code>Thẻ từ</code>, <code>Flashcard</code>, <code>Luyện tập</code>. Loại khác: tái hiện đúng <strong>màn học thật của app học viên</strong> cho loại đó (danh sách thẻ từng loại — mục 3, chờ ảnh màn app).</td>
+</tr>
+<tr>
+<td>Thẻ</td>
+<td>Vị trí <code>Tất cả · 3/398</code>; nội dung theo field của mục; icon loa phát Audio (không có file thì TTS).</td>
+</tr>
+<tr>
+<td>Thông tin thiếu</td>
+<td><code>N trường trống</code> + tên field + <code>Điền thiếu từ này</code>.</td>
+</tr>
+<tr>
+<td>Điều hướng</td>
+<td>Nút mục trước / sau, phím ↑ ↓ để chuyển.</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Điểm cần lưu ý:</strong></p>
+<ul>
+<li>Preview chỉ hiển thị, nút học viên trên thẻ (<code>Ôn lại</code>, <code>Đã thuộc</code>) không ghi dữ liệu học.</li>
+<li>Giá trị AI chờ duyệt không hiển thị như giá trị chính thức (học viên chỉ thấy giá trị đã duyệt).</li>
+<li><strong>UI cần bổ sung:</strong> Preview cho Ngữ pháp, Mẫu câu, Hán tự, Kanji, Bảng chữ, Phát âm — vẽ theo màn app học viên
+  sau khi có ảnh / mô tả màn app (mục 3).</li>
+</ul>
+<h4 id="testcase-preview-mobile">Testcase — Preview mobile</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 44: Xem trước từ đang chọn</td>
+<td>Medium</td>
+<td></td>
+<td>Flow 13 / REQ12</td>
+<td>CD</td>
+<td>Đang chọn từ <code>好</code></td>
+<td><strong>Given</strong> bấm <code>Preview mobile</code><br><strong>When</strong> panel mở<br><strong>Then</strong> hiện thẻ của <code>好</code></td>
+<td>- Vị trí <code>3/398</code><br>- Hiện <code>1 trường trống · Từ loại</code></td>
+</tr>
+<tr>
+<td>Case 45: Chuyển mục bằng phím</td>
+<td>Low</td>
+<td></td>
+<td>REQ12</td>
+<td>CD</td>
+<td>Panel Preview đang mở</td>
+<td><strong>Given</strong> đang xem <code>好</code><br><strong>When</strong> nhấn ↓<br><strong>Then</strong> chuyển sang mục kế tiếp</td>
+<td>- Dòng tương ứng trên bảng được chọn</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="popup-xac-nhan-go-muc-khoi-khoa">Popup xác nhận gỡ mục khỏi khoá</h3>
+<p align="center">
+  <a href="./images/13-popup-go-muc.png"><img src="./images/13-popup-go-muc.png" alt="Popup gỡ mục khỏi khoá học" width="600" title="Nhấn để xem ảnh gốc"></a><br>
+  <em>Popup gỡ mục khỏi khoá học, liệt kê bài đang dùng — nhấn để xem ảnh gốc</em>
+</p>
+
+<p><strong>Mô tả:</strong></p>
+<ul>
+<li><code>Xoá khỏi danh sách</code> (1 mục) hoặc <code>Xoá (N)</code> (hàng loạt) <strong>gỡ mục khỏi khoá học</strong>; bản ghi thư viện vẫn còn.</li>
+</ul>
+<p><strong>Giải thích thành phần:</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Thành phần</th>
+<th>Yêu cầu</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Tiêu đề</td>
+<td><code>Gỡ N mục khỏi khoá học?</code></td>
+</tr>
+<tr>
+<td>Nội dung</td>
+<td>Vd <code>Từ 你 · nǐ sẽ bị gỡ khỏi Kiến thức (S1), khỏi mọi cụm và khỏi các bài học đang dùng:</code> + danh sách <strong>các bài đang dùng</strong> (vd <code>Bài 1 · PHÁT ÂM: Thanh Điệu và Vận Mẫu</code>).</td>
+</tr>
+<tr>
+<td>Ghi chú</td>
+<td><code>Bản ghi trong Thư viện dữ liệu vẫn còn; khoá khác đang dùng không bị ảnh hưởng.</code></td>
+</tr>
+<tr>
+<td><code>Huỷ</code></td>
+<td>Đóng popup, không thay đổi.</td>
+</tr>
+<tr>
+<td><code>Xác nhận gỡ</code></td>
+<td>Gỡ mục khỏi khoá, gỡ khỏi mọi cụm của khoá và <strong>gỡ luôn khỏi các bài học</strong> đã liệt kê.</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Điểm cần lưu ý:</strong></p>
+<ul>
+<li>Gỡ không xoá bản ghi thư viện; khoá khác đang dùng bản ghi không bị ảnh hưởng.</li>
+</ul>
+<h4 id="testcase-popup-xac-nhan-go-muc-khoi-khoa">Testcase — Popup xác nhận gỡ mục khỏi khoá</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 46: Gỡ mục đang dùng ở bài học</td>
+<td>High</td>
+<td>Smoke</td>
+<td>Flow 11 / REQ07</td>
+<td>CD</td>
+<td>Từ <code>你</code> đang dùng ở Bài 1, Bài 2</td>
+<td><strong>Given</strong> menu dòng <code>Xoá khỏi danh sách</code><br><strong>When</strong> popup <code>Gỡ 1 mục khỏi khoá học?</code> liệt kê Bài 1, Bài 2 và CD bấm <code>Xác nhận gỡ</code><br><strong>Then</strong> từ bị gỡ khỏi khoá và 2 bài</td>
+<td>- Bản ghi thư viện vẫn còn<br>- Toast <code>Thành Công</code></td>
+</tr>
+<tr>
+<td>Case 47: Huỷ gỡ</td>
+<td>Medium</td>
+<td></td>
+<td>REQ07</td>
+<td>CD</td>
+<td>Popup đang mở</td>
+<td><strong>Given</strong> popup xác nhận<br><strong>When</strong> bấm <code>Huỷ</code><br><strong>Then</strong> không thay đổi</td>
+<td>- Không có Toast CRUD</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="them-go-kien-thuc-trong-chi-tiet-bai-hoc">Thêm / gỡ kiến thức trong Chi tiết bài học</h3>
+<p align="center">
+  <a href="./images/19-popup-them-vao-bai.png"><img src="./images/19-popup-them-vao-bai.png" alt="Popup Thêm kiến thức vào bài học" width="700" title="Nhấn để xem ảnh gốc"></a><br>
+  <em>Popup Thêm kiến thức vào bài học (Figma `CD-KH-030270`): tab theo loại, tick cụm hoặc từng mục — nhấn để xem ảnh gốc</em>
+</p>
+
+<p><strong>Mô tả:</strong></p>
+<ul>
+<li>Tại Chi tiết bài học (Học kỳ → bài học) của khoá, tab <code>Kiến thức</code> → <code>+ Thêm</code> để thêm kiến thức đã có trong S1 của
+  <strong>chính khoá đó</strong> vào bài; không sửa nội dung kiến thức tại đây. Phần <code>Kỹ năng</code> của tab giữ nguyên theo requirement
+  Học kỳ — Bài học.</li>
+</ul>
+<p><strong>Giải thích thành phần:</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Thành phần</th>
+<th>Yêu cầu</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Popup <code>+ Thêm</code></td>
+<td>Tiêu đề <code>Thêm kiến thức vào bài học</code> + tên bài; tab theo loại kiến thức (đúng ngôn ngữ trung tâm); ô tìm kiếm, lọc <code>Cụm</code>, <code>Trạng thái</code>; bảng <strong>Mục</strong> có checkbox, field chính, cột Cụm, cột <code>Trong bài</code>; dòng <code>Chọn theo cụm</code> để tick <strong>Cụm</strong>; chân popup <code>Đã chọn cụm … (k từ) + N từ · M từ đã có trong bài</code>, <code>Huỷ</code>, <code>Thêm N mục vào bài</code>.</td>
+</tr>
+<tr>
+<td>Tick Cụm</td>
+<td>Thêm các mục <strong>đang có</strong> trong cụm (theo thứ tự trong cụm).</td>
+</tr>
+<tr>
+<td>Tick Mục</td>
+<td>Thêm từng mục. Mục đã có trong bài mờ, tick sẵn, nhãn <code>Đã có trong bài</code>.</td>
+</tr>
+<tr>
+<td>Danh sách trong bài</td>
+<td>Nhóm theo loại; mỗi mục có <code>×</code> để gỡ khỏi bài; không có nút sửa.</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Điểm cần lưu ý:</strong></p>
+<ul>
+<li>Chọn cụm là <strong>thêm một lần</strong> các mục đang có: sau đó cụm thêm / bớt mục hoặc bị xoá thì bài <strong>không tự đổi</strong>; gỡ được
+  từng mục trong bài.</li>
+<li>Một mục nằm trong nhiều cụm được chọn chỉ thêm vào bài <strong>1 lần</strong>. Một cụm dùng được cho nhiều bài.</li>
+<li>Nội dung mục trong bài luôn là nội dung hiện tại của bản ghi thư viện (sửa ở S1 thì bài thấy nội dung mới).</li>
+</ul>
+<h4 id="testcase-them-go-kien-thuc-trong-chi-tiet-bai-hoc">Testcase — Thêm / gỡ kiến thức trong Chi tiết bài học</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 48: Thêm cụm vào bài</td>
+<td>High</td>
+<td>Smoke</td>
+<td>Flow 12 / REQ13</td>
+<td>CD</td>
+<td>Cụm <code>Gia đình</code> có 16 từ</td>
+<td><strong>Given</strong> popup <code>+ Thêm</code>, tab Từ vựng<br><strong>When</strong> tick cụm <code>Gia đình</code>, xác nhận<br><strong>Then</strong> bài có 16 từ</td>
+<td>- Đúng thứ tự trong cụm<br>- Toast <code>Thành Công</code></td>
+</tr>
+<tr>
+<td>Case 49: Gỡ một mục khỏi bài</td>
+<td>High</td>
+<td>Smoke</td>
+<td>Flow 12 / REQ13</td>
+<td>CD</td>
+<td>Bài có 16 từ</td>
+<td><strong>Given</strong> danh sách kiến thức của bài<br><strong>When</strong> bấm <code>×</code> ở 1 từ<br><strong>Then</strong> bài còn 15 từ</td>
+<td>- Từ vẫn còn trong S1 và cụm</td>
+</tr>
+<tr>
+<td>Case 50: Cụm đổi sau khi thêm</td>
+<td>Medium</td>
+<td></td>
+<td>REQ13</td>
+<td>CD</td>
+<td>Đã thêm cụm <code>Gia đình</code> vào bài</td>
+<td><strong>Given</strong> thêm 1 từ mới vào cụm ở S1<br><strong>When</strong> mở lại bài<br><strong>Then</strong> bài không tự có từ mới</td>
+<td>- Bài giữ 16 từ</td>
+</tr>
+<tr>
+<td>Case 51: Không sửa tại bài học</td>
+<td>Medium</td>
+<td></td>
+<td>REQ13</td>
+<td>CD</td>
+<td>Bài có kiến thức</td>
+<td><strong>Given</strong> danh sách kiến thức của bài<br><strong>When</strong> xem thao tác<br><strong>Then</strong> không có thao tác sửa</td>
+<td>- Chỉ có <code>+ Thêm</code> và <code>×</code></td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="toast-phan-hoi-crud">Toast phản hồi CRUD</h3>
+<p align="center">
+  <a href="../../images/01-toast-crud.png"><img src="../../images/01-toast-crud.png" alt="Bốn trạng thái Toast CRUD" width="520" title="Nhấn để xem ảnh gốc"></a><br>
+  <em>Toast Thành Công, Thông Báo, Cảnh Báo và Có Lỗi Xảy Ra — nhấn để xem ảnh gốc</em>
+</p>
+
+<p><strong>Mô tả:</strong></p>
+<ul>
+<li>Phản hồi sau thêm / sửa / nhân bản / gỡ mục, thao tác cụm, áp dụng AI và thêm / gỡ kiến thức trong bài học.</li>
+</ul>
+<p><strong>Giải thích thành phần:</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Loại Toast</th>
+<th>Tiêu đề cố định</th>
+<th>Khi sử dụng</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Thành công</td>
+<td><code>Thành Công</code></td>
+<td>Backend đã xác nhận thao tác thay đổi dữ liệu thành công (vd <code>Đã thêm 1 từ vào Chưa phân cụm.</code>).</td>
+</tr>
+<tr>
+<td>Thông tin</td>
+<td><code>Thông Báo</code></td>
+<td>Thao tác đã được tiếp nhận nhưng cần thời gian xử lý (vd <code>AI đang điền thông tin cho 2 từ.</code>).</td>
+</tr>
+<tr>
+<td>Cảnh báo</td>
+<td><code>Cảnh Báo</code></td>
+<td>Dữ liệu chưa hợp lệ hoặc điều kiện cần kiểm tra (vd <code>Nhập Số cụm trước khi chia cụm bằng AI.</code>).</td>
+</tr>
+<tr>
+<td>Lỗi</td>
+<td><code>Có Lỗi Xảy Ra</code></td>
+<td>Backend / network / AI không hoàn tất thao tác.</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Điểm cần lưu ý:</strong></p>
+<ul>
+<li>Mỗi thao tác logic chỉ một Toast kết quả; Huỷ, tìm kiếm, lọc, đổi tab, Preview không có Toast CRUD.</li>
+<li>Toast không thay thế lỗi tại field; không chứa thông tin kỹ thuật.</li>
+</ul>
+<h4 id="testcase-toast-phan-hoi-crud">Testcase — Toast phản hồi CRUD</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Toast Case 1: Thành công</td>
+<td>High</td>
+<td></td>
+<td>REQ15</td>
+<td>CD</td>
+<td>Dữ liệu hợp lệ</td>
+<td><strong>Given</strong> CD xác nhận thao tác thay đổi<br><strong>When</strong> backend xử lý thành công<br><strong>Then</strong> hiển thị <code>Thành Công</code></td>
+<td>- Chỉ sau khi backend xác nhận<br>- Đúng một Toast</td>
+</tr>
+<tr>
+<td>Toast Case 2: Cảnh báo</td>
+<td>High</td>
+<td></td>
+<td>REQ15</td>
+<td>CD</td>
+<td>Điều kiện chưa đủ</td>
+<td><strong>Given</strong> chia cụm AI khi Số cụm = 0<br><strong>When</strong> bấm <code>Chia cụm bằng AI</code><br><strong>Then</strong> hiển thị <code>Cảnh Báo</code> — <code>Nhập Số cụm trước khi chia cụm bằng AI.</code></td>
+<td>- Không gửi yêu cầu</td>
+</tr>
+<tr>
+<td>Toast Case 3: Lỗi xử lý</td>
+<td>High</td>
+<td></td>
+<td>REQ15</td>
+<td>CD</td>
+<td>Backend / AI lỗi</td>
+<td><strong>Given</strong> đã gửi thao tác hợp lệ<br><strong>When</strong> xử lý thất bại<br><strong>Then</strong> hiển thị <code>Có Lỗi Xảy Ra</code></td>
+<td>- Dữ liệu không cập nhật một phần</td>
+</tr>
+<tr>
+<td>Toast Case 4: Đang xử lý</td>
+<td>Medium</td>
+<td></td>
+<td>REQ15</td>
+<td>CD</td>
+<td>AI chạy cho nhiều mục</td>
+<td><strong>Given</strong> đã bấm Điền thiếu cho nhiều mục<br><strong>When</strong> AI đang chạy<br><strong>Then</strong> hiển thị <code>Thông Báo</code> nếu cần</td>
+<td>- Không báo thành công sớm</td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2 id="2-yeu-cau">2. Yêu cầu</h2>
+<h3 id="21-flow-chinh">2.1. Flow chính</h3>
+<p><strong>Flow 1 / REQ01 / REQ02 / REQ11: Mở Kiến thức (S1) và xem danh sách</strong></p>
+<pre><code class="language-text">CD chọn trung tâm ở header → vào khoá học → Kiến thức (S1)
+      → Hệ thống lấy ngôn ngữ theo trung tâm đang chọn → hiện các tab loại kiến thức tương ứng
+      → Mở tab đầu (Từ vựng): bảng mục của khoá + panel Cụm của Từ vựng
+      → CD tìm kiếm / sắp xếp / lọc Trạng thái / chọn cụm → bảng, badge, phân trang cập nhật
+</code></pre>
+<p><strong>Flow 2 / REQ04 / REQ05: Thêm từ thư viện dữ liệu</strong></p>
+<pre><code class="language-text">CD bấm + Thêm → Thêm từ thư viện → popup thư viện
+      → Lọc Kho (Tất cả / Từ điển / Khoá học), Cấp độ, Từ loại, tìm kiếm → tick các mục (mục đã gắn khoá bị khoá)
+      → Chọn Thêm vào cụm (mặc định cụm đang chọn) → Thêm N
+      → Thành công: gắn tham chiếu bản ghi thư viện vào khoá, thêm vào cụm đã chọn, Toast Thành Công
+      → Thất bại: không gắn mục nào, Toast Có Lỗi Xảy Ra
+</code></pre>
+<p><strong>Flow 3 / REQ05 / REQ10: Thêm theo list</strong></p>
+<pre><code class="language-text">CD bấm + Thêm → Thêm theo list → dán / nhập mỗi dòng 1 mục, các field tách dấu phẩy
+      → Hệ thống tách cột, xem trước: Hợp lệ / AI điền … / Trùng (cảnh báo) / lỗi thiếu cột đầu
+      → (Tuỳ chọn) AI tự điền cột trống — giá trị ở trạng thái chờ duyệt
+      → Thêm N → tạo N bản ghi thư viện mới, gắn vào khoá (và cụm đang chọn)
+      → (Tuỳ chọn) Tự chia cụm bằng AI → mở Flow 10 cho các mục vừa thêm
+</code></pre>
+<p><strong>Flow 4 / REQ05: Nhập nhanh</strong></p>
+<pre><code class="language-text">CD gõ field đầu vào ô Nhập nhanh → Enter / +   (Thêm theo list: mỗi dòng theo thứ tự cột của loại)
+      → Tạo bản ghi thư viện mới, gắn vào khoá, thêm dòng cuối bảng (vào cụm đang chọn nếu có)
+      → Mục tính là Thiếu thông tin cho tới khi đủ field bắt buộc
+</code></pre>
+<p><strong>Flow 5 / REQ06: Sửa và nhân bản mục</strong></p>
+<pre><code class="language-text">CD chọn Sửa nhanh (inline) hoặc Mở chi tiết (drawer đủ field, danh sách ví dụ, audio) → sửa field → lưu
+      → Lưu vào bản ghi thư viện → mọi khoá / bài học dùng bản ghi thấy nội dung mới
+CD chọn Nhân bản → tạo bản ghi thư viện mới cùng nội dung, gắn vào khoá, cùng cụm
+</code></pre>
+<p><strong>Flow 6 / REQ10: Điền thiếu bằng AI</strong></p>
+<pre><code class="language-text">CD gọi Điền thiếu (1 mục / nhiều mục / các mục thiếu trong phạm vi đang xem)
+      → AI chỉ điền field bắt buộc đang trống; thanh tiến độ x/N, có Dừng; mục đang xử lý bị khoá thao tác
+      → Giá trị lưu nháp với cờ AI · chờ duyệt (mục vẫn tính thiếu)
+      → CD Duyệt / Duyệt tất cả → giá trị chính thức; Hoàn tác → ô trống lại
+</code></pre>
+<p><strong>Flow 7 / REQ10: Soát lỗi bằng AI</strong></p>
+<pre><code class="language-text">CD gọi Soát lỗi (mục đang chọn / phạm vi đang xem)
+      → AI kiểm tra field đã có dữ liệu → đánh dấu ô nghi sai + giá trị đề xuất
+      → CD Duyệt (thay bằng đề xuất) hoặc Bỏ qua; giá trị cũ giữ nguyên tới khi duyệt
+</code></pre>
+<p><strong>Flow 8 / REQ08: Số cụm, thêm và xoá cụm</strong></p>
+<pre><code class="language-text">Loại kiến thức có Số cụm = 0 → CD nhập N → tạo N cụm rỗng Chủ đề 1 … Chủ đề N (đã có cụm thì Số cụm chỉ đọc)
+CD Thêm cụm mới → thêm 1 cụm rỗng cuối danh sách
+CD Đổi tên cụm → lưu tên mới
+CD Xoá cụm → cụm bị xoá; các mục chỉ mất gán cụm đó, mục không còn cụm nào về Chưa phân cụm
+</code></pre>
+<p><strong>Flow 9 / REQ08: Thêm vào cụm / Gỡ khỏi cụm</strong></p>
+<pre><code class="language-text">CD chọn 1 hoặc nhiều mục → Thêm vào cụm / Gỡ khỏi cụm
+      → Tick / bỏ tick các cụm → Lưu
+      → Mục được thêm vào / gỡ khỏi các cụm; mục không còn cụm nào về Chưa phân cụm
+</code></pre>
+<p><strong>Flow 10 / REQ09: Chia cụm bằng AI</strong></p>
+<pre><code class="language-text">CD bấm Chia cụm bằng AI (loại đã có ≥ 1 cụm)
+      → Chọn phạm vi, Số từ / cụm (tuỳ chọn), gợi ý nhanh, nhập prompt → Tạo đề xuất
+      → AI đưa mục vào các cụm đang có, đặt tên cụm theo chủ đề (không tạo cụm mới / cụm con)
+      → CD kéo thả mục giữa cụm, sửa tên cụm; Tạo lại nếu cần
+      → Áp dụng: lưu phân bổ + tên cụm, ghi Log cập nhật, Toast Thành Công; Huỷ: không đổi
+</code></pre>
+<p><strong>Flow 11 / REQ07: Gỡ mục khỏi khoá</strong></p>
+<pre><code class="language-text">CD chọn Xoá khỏi danh sách (1 mục) hoặc Xoá (N)
+      → Popup xác nhận: số mục + các bài học đang dùng mục
+      → Xác nhận: gỡ mục khỏi khoá, khỏi các cụm và khỏi các bài học; bản ghi thư viện vẫn còn
+      → Huỷ: không thay đổi
+</code></pre>
+<p><strong>Flow 12 / REQ13: Thêm / gỡ kiến thức trong Chi tiết bài học</strong></p>
+<pre><code class="language-text">CD mở Chi tiết bài học → tab Kiến thức → + Thêm
+      → Popup tab theo loại → tick Cụm ở dòng Chọn theo cụm (thêm các mục đang có) và / hoặc tick Mục → Thêm N mục vào bài
+      → Bài có thêm các mục (mục trùng giữa các cụm chỉ thêm 1 lần)
+CD bấm × ở một mục trong bài → gỡ mục khỏi bài; mục vẫn còn trong S1
+</code></pre>
+<p><strong>Flow 13 / REQ12: Preview mobile</strong></p>
+<pre><code class="language-text">CD chọn mục → Preview mobile → panel hiện thẻ theo màn học của app học viên cho loại đó
+      → Chuyển mục bằng nút / ↑ ↓; mục thiếu thì hiện field trống + Điền thiếu từ này
+</code></pre>
+<h3 id="22-ngoai-le">2.2. Ngoại lệ</h3>
+<ul>
+<li><strong>EX01:</strong> Dòng Thêm theo list thiếu cột đầu → dòng báo lỗi, không tạo; các dòng hợp lệ khác vẫn thêm được.</li>
+<li><strong>EX02:</strong> Nhập nhanh rỗng hoặc chỉ khoảng trắng → không tạo mục.</li>
+<li><strong>EX03:</strong> Gắn bản ghi thư viện đã có trong khoá → không cho chọn (khoá <code>Đã có</code>), không gắn trùng.</li>
+<li><strong>EX04:</strong> AI lỗi hoặc CD bấm <code>Dừng</code> → mục chưa xử lý giữ nguyên; mục đã điền giữ trạng thái chờ duyệt; báo lỗi nếu AI
+  lỗi.</li>
+<li><strong>EX05:</strong> Chia cụm bằng AI khi loại chưa có cụm (Số cụm = 0) → không gửi yêu cầu, nhắc nhập Số cụm.</li>
+<li><strong>EX06:</strong> Role khác CD truy cập S1 hoặc gọi API thay đổi kiến thức → từ chối, không thay đổi dữ liệu.</li>
+<li><strong>EX07:</strong> Truy cập loại kiến thức không áp dụng cho ngôn ngữ khoá học (qua URL / API) → từ chối.</li>
+<li><strong>EX08:</strong> Truy cập khoá học / kiến thức của trung tâm khác trung tâm đang chọn → từ chối.</li>
+<li><strong>EX09:</strong> Lưu thất bại (sửa, cụm, áp dụng AI, thêm / gỡ ở bài học) → giữ dữ liệu cũ, Toast <code>Có Lỗi Xảy Ra</code>.</li>
+<li><strong>EX10:</strong> Sửa / xoá / đổi cụm mục đang được AI xử lý → UI mờ thao tác; API từ chối, dữ liệu không đổi.</li>
+<li><strong>EX11:</strong> Đổi <code>Số cụm</code> khi loại đã có cụm → ô chỉ đọc; API từ chối.</li>
+<li><strong>EX12:</strong> Lưu Chi tiết mục với Ví dụ rỗng (0 ví dụ) hoặc Từ loại ngoài danh sách → báo lỗi tại field, không lưu.</li>
+</ul>
+<h3 id="23-yeu-cau-khac">2.3. Yêu cầu khác</h3>
+<ul>
+<li><strong>REQ01 – Phạm vi:</strong> Mỗi khoá học có danh sách Kiến thức (S1) riêng; dữ liệu theo trung tâm CD đang chọn ở header.</li>
+<li><strong>REQ02 – Tab theo loại và ngôn ngữ:</strong> Mỗi loại kiến thức 1 tab; chỉ hiện loại áp dụng cho ngôn ngữ của <strong>trung tâm</strong>
+  đang chọn (Đắc Nhân Trung, Sakumi Nhật, Saechang Hàn, Créatis Pháp, Creative English Anh, Betreux Đức) theo bảng
+  ở khu vực Khung màn hình; khoá học không có field ngôn ngữ.</li>
+<li><strong>REQ03 – Field và thiếu thông tin:</strong> Mỗi loại có bộ field theo bảng Field và Phụ lục A; mục thiếu thông tin khi trống
+  bất kỳ field bắt buộc; Từ loại chọn 1 hoặc nhiều giá trị từ danh sách cố định theo ngôn ngữ; Bộ thủ chọn 1 trong 214
+  bộ Khang Hy; Ví dụ của Từ vựng / Ngữ pháp là danh sách ≥ 1 (câu, phiên âm, nghĩa); furigana và chuỗi tìm kiếm
+  Kanji do hệ thống sinh.</li>
+<li><strong>REQ04 – Thư viện dữ liệu:</strong> Mục của S1 là tham chiếu bản ghi thư viện; một bản ghi gắn vào một khoá tối đa 1 lần. Thêm
+  mới tại S1 tạo bản ghi thư viện; sửa tại S1 sửa bản ghi thư viện (mọi khoá dùng bản ghi đổi theo). Thư viện theo
+  ngôn ngữ, có 2 kho <code>Từ điển</code> (import sẵn) và <code>Khoá học</code> (tạo từ S1); màn quản lý thư viện là requirement riêng.</li>
+<li><strong>REQ05 – Thêm mục:</strong> Thêm từ thư viện, Thêm theo list (mỗi dòng 1 mục theo thứ tự cột của loại, tách dấu phẩy, chỉ cột
+  đầu bắt buộc, nhiều giá trị trong 1 cột tách <code>;</code>), Nhập nhanh.
+  Cho phép trùng nội dung: Thêm theo list chỉ cảnh báo dòng trùng, vẫn tạo bản ghi mới. Không có tải file Excel / CSV.</li>
+<li><strong>REQ06 – Sửa và nhân bản:</strong> Sửa nhanh inline và drawer Chi tiết mục (đủ field, danh sách ví dụ, audio, duyệt giá trị
+  AI); Nhân bản tạo bản ghi thư viện mới cùng nội dung, cùng cụm.</li>
+<li><strong>REQ07 – Gỡ khỏi khoá:</strong> Xoá ở S1 là gỡ mục khỏi khoá (bản ghi thư viện còn); có xác nhận, liệt kê bài đang dùng; xác
+  nhận thì gỡ luôn khỏi các bài đó.</li>
+<li><strong>REQ08 – Cụm:</strong> Mỗi loại có bộ cụm riêng; Số cụm mặc định 0, chỉ nhập khi chưa có cụm, nhập N tạo <code>Chủ đề 1…N</code> rỗng;
+  đã có cụm thì Số cụm chỉ đọc, thêm cụm rỗng, đổi tên, xoá cụm (mục chỉ mất gán) bằng panel. Mục thuộc 0, 1 hoặc
+  nhiều cụm; cột Cụm hiện <code>+N</code>, hover xem đủ, bấm mở popup cụm. Cụm không gắn bài học.</li>
+<li><strong>REQ09 – Chia cụm bằng AI:</strong> AI chia mục vào các cụm đang có theo chủ đề và prompt, đặt tên cụm theo chủ đề; không tạo
+  cụm mới / cụm con; <code>Số từ / cụm</code> là gợi ý không bắt buộc; có xem trước, chỉnh, tạo lại, áp dụng; phạm vi <code>Chỉ … chưa
+  phân cụm</code> giữ cụm cũ; áp dụng ghi Log cập nhật (hoàn tác thuộc Log cập nhật).</li>
+<li><strong>REQ10 – AI điền thiếu và soát lỗi:</strong> Điền thiếu chỉ điền field bắt buộc trống; Soát lỗi đề xuất sửa field đã có. Giá
+  trị AI lưu nháp chờ duyệt, vẫn tính thiếu tới khi duyệt, không ghi đè giá trị cũ; có Duyệt, Duyệt tất cả, Hoàn tác,
+  Dừng. Mục đang được AI xử lý bị khoá sửa / xoá / đổi cụm tới khi xong hoặc Dừng.</li>
+<li><strong>REQ11 – Tìm kiếm, lọc, sắp xếp, kéo thả:</strong> Tìm theo field chính; Trạng thái <code>Tất cả / Đủ thông tin / Thiếu thông tin /
+  AI chờ duyệt / AI nghi sai</code>; Sắp xếp <code>Thứ tự thêm / A–Z / Mới cập nhật / Thứ tự trong cụm</code>; kéo thả chỉ đổi thứ tự trong
+  cụm; điều kiện kết hợp, đổi điều kiện về trang 1.</li>
+<li><strong>REQ12 – Preview và âm thanh:</strong> Mọi loại có Preview mobile tái hiện màn học của app học viên cho loại đó; Audio không
+  bắt buộc, không có file thì TTS; Preview không ghi dữ liệu học.</li>
+<li><strong>REQ13 – Kiến thức trong bài học:</strong> Chi tiết bài học chỉ thêm / gỡ kiến thức từ S1 của chính khoá qua popup <code>Thêm kiến
+  thức vào bài học</code> (tab theo loại, tick cụm hoặc từng mục); chọn cụm là thêm một lần các mục đang có; không sửa nội
+  dung tại bài.</li>
+<li><strong>REQ14 – Quyền:</strong> Chỉ CD được truy cập và thao tác S1 trong trung tâm đang chọn; kiểm tra cả UI và API.</li>
+<li><strong>REQ15 – Phản hồi:</strong> Thao tác thay đổi dữ liệu có đúng một Toast theo kết quả; không báo thành công trước khi lưu xong.</li>
+</ul>
+<h3 id="24-rang-buoc">2.4. Ràng buộc</h3>
+<h4 id="quyen">Quyền</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Role</th>
+<th style="text-align: center;">Xem S1</th>
+<th style="text-align: center;">Thêm / Sửa / Nhân bản</th>
+<th style="text-align: center;">Gỡ khỏi khoá</th>
+<th style="text-align: center;">Quản lý cụm</th>
+<th style="text-align: center;">Dùng AI</th>
+<th style="text-align: center;">Thêm / gỡ kiến thức trong bài học</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CD</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+</tr>
+<tr>
+<td>Các role khác</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+</tr>
+</tbody>
+</table></div>
+<h4 id="pham-vi-du-lieu">Phạm vi dữ liệu</h4>
+<ul>
+<li>CD chỉ thao tác trên khoá học thuộc trung tâm đang chọn ở header; đổi trung tâm thì dữ liệu tải lại.</li>
+<li>Mục S1 tham chiếu bản ghi thư viện; sửa ở S1 ảnh hưởng mọi khoá đang dùng bản ghi — dùng định danh bản ghi, không dùng
+  nội dung (chữ / nghĩa) làm khoá liên kết.</li>
+<li>Bài học chỉ chọn được mục trong S1 của chính khoá học đó.</li>
+<li>Không cho phép truy cập hoặc thực hiện hành động bị đánh dấu <code>❌</code>, kể cả khi gọi trực tiếp bằng URL hoặc request.</li>
+</ul>
+<hr />
+<h2 id="3-can-xac-nhan">3. Cần xác nhận</h2>
+<ul>
+<li><strong>Bảng chữ tiếng Hàn (Hangul) và Alphabet (Anh / Đức / Pháp):</strong> field và field bắt buộc — chưa có sheet dữ liệu
+  (tiếng Nhật đã có ở Phụ lục A.7). Tham khảo: app hiện có <code>CharacterModel</code> (ký tự, cách đọc, nghĩa,
+  audio, hàng / cột, mẹo nhớ ảnh / chữ, chữ giống).</li>
+<li><strong>Phát âm tiếng Anh / Đức / Pháp / Hàn:</strong> có dùng tab Phát âm (vd phiên âm IPA) hay như tiếng Nhật chỉ có Bảng chữ.</li>
+<li><strong>Dạng thẻ Preview</strong> của Ngữ pháp, Mẫu câu, Hán tự, Kanji, Bảng chữ, Phát âm: tái hiện màn học của app học viên — chờ
+  ảnh / mô tả màn app để ghi nội dung thẻ và vẽ Figma.</li>
+<li><strong>Danh sách Từ loại</strong> tiếng Hàn, Anh, Đức, Pháp: chưa có dữ liệu mẫu (Phụ lục A mới có tiếng Trung và tiếng Nhật).</li>
+</ul>
+<hr />
+<h2 id="phu-luc-a-ban-do-field-cot-du-lieu">Phụ lục A — Bản đồ field ↔ cột dữ liệu</h2>
+<p>Nguồn: <code>HSK1 - DATA (3_2026_2)</code> (khoá tiếng Trung, HSK1), <code>KHOÁ N5 THƯỜNG (2.3)</code> (khoá tiếng Nhật, N5),
+<code>BẢNG CHỮ - N5 (ver 2.2)</code> (bảng chữ Nhật) và <code>Phát Âm Final</code> (Phát âm tiếng Trung — bảng pinyin). Cột <code>Nhập ở đâu</code>:
+<strong>Bảng</strong> = cột trên bảng và sửa inline · <strong>List n</strong> = cột thứ n khi Thêm theo list · <strong>Nhanh</strong> = ô Nhập nhanh ·
+<strong>Chi tiết</strong> = drawer Chi tiết mục · <strong>AI</strong> = Điền thiếu bằng AI điền được · <strong>Hệ thống</strong> = tự sinh, CD không nhập.</p>
+<h3 id="a1-tu-vung-vocabulary">A.1. Từ vựng (<code>vocabulary</code>)</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Cột sheet HSK1 / N5</th>
+<th>Kiểu</th>
+<th>Định dạng / ví dụ dữ liệu</th>
+<th style="text-align: center;">Bắt buộc</th>
+<th>Nhập ở đâu</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Từ</td>
+<td><code>word</code> / <code>word</code></td>
+<td>text</td>
+<td><code>你</code>; N5 <code>はじめまして。</code></td>
+<td style="text-align: center;">✅</td>
+<td>Bảng, List 1, Nhanh, Chi tiết</td>
+</tr>
+<tr>
+<td>Phiên âm</td>
+<td><code>phonetic</code> / <code>phonetic</code></td>
+<td>text</td>
+<td>TQ pinyin <code>nǐ</code>; Nhật romaji <code>hajimemashite</code></td>
+<td style="text-align: center;">✅</td>
+<td>Bảng, List 2, Chi tiết, AI</td>
+</tr>
+<tr>
+<td>Nghĩa</td>
+<td><code>mean</code> / <code>mean</code></td>
+<td>text</td>
+<td><code>Bạn, anh, chị,...(số ít)</code></td>
+<td style="text-align: center;">✅</td>
+<td>Bảng, List 3, Chi tiết, AI</td>
+</tr>
+<tr>
+<td>Từ loại</td>
+<td><code>type</code> / <code>type</code></td>
+<td>1..n giá trị danh sách theo ngôn ngữ</td>
+<td><code>Đại từ</code>; N5 <code>Câu</code> cho mục dạng câu</td>
+<td style="text-align: center;">✅</td>
+<td>Bảng, Chi tiết, AI</td>
+</tr>
+<tr>
+<td>Hán Việt</td>
+<td><code>Hán việt</code> / —</td>
+<td>text</td>
+<td><code>Nhĩ</code>; chỉ có ở tiếng Trung</td>
+<td style="text-align: center;">✅ (TQ)</td>
+<td>Chi tiết, AI</td>
+</tr>
+<tr>
+<td>Phiên âm từng chữ</td>
+<td><code>furigana</code> / <code>furigana</code></td>
+<td>markup <code>{chữ|âm}</code></td>
+<td><code>{你|nǐ}</code>; N5 <code>お{名前|なまえ}は？</code> (182/723 có)</td>
+<td style="text-align: center;">—</td>
+<td>Hệ thống</td>
+</tr>
+<tr>
+<td>Ví dụ · câu (danh sách ≥ 1)</td>
+<td><code>example</code> / <code>example</code></td>
+<td>text markup <code>&lt;…&gt;</code></td>
+<td><code>&lt;{你|nǐ}&gt;{好|hǎo}{吗|ma}？</code>; N5 <code>&lt;はじめまして&gt;。</code></td>
+<td style="text-align: center;">✅</td>
+<td>Chi tiết, AI</td>
+</tr>
+<tr>
+<td>Ví dụ · phiên âm</td>
+<td><code>example_pinyin</code> / —</td>
+<td>text</td>
+<td><code>&lt;Nǐ&gt; hǎo ma?</code>; N5 không có cột → AI / hệ thống sinh</td>
+<td style="text-align: center;">✅ (TQ)</td>
+<td>Chi tiết, AI</td>
+</tr>
+<tr>
+<td>Ví dụ · nghĩa</td>
+<td><code>example_mean</code> / <code>example_mean</code></td>
+<td>text</td>
+<td><code>&lt;Bạn&gt; khỏe không?</code></td>
+<td style="text-align: center;">✅</td>
+<td>Chi tiết, AI</td>
+</tr>
+<tr>
+<td>Mở rộng</td>
+<td><code>advanced</code> / <code>advanced</code></td>
+<td>boolean</td>
+<td><code>0</code> = Không (đẩy lên 3 bước học), <code>1</code> = Có; HSK1 27/398 = 1, N5 trống</td>
+<td style="text-align: center;">❌</td>
+<td>Chi tiết</td>
+</tr>
+<tr>
+<td>Audio</td>
+<td>— / —</td>
+<td>file</td>
+<td>mp3; không có thì app đọc TTS</td>
+<td style="text-align: center;">❌</td>
+<td>Chi tiết</td>
+</tr>
+</tbody>
+</table></div>
+<p>Cột không thành field: <code>id</code>, <code>lesson_id</code> (gắn ở bài học), <code>QT</code>, <code>note lỗi</code>, <code>status</code> (cột làm việc nội bộ), <code>sentence</code>
+(cờ <code>x</code> của N5 → map sang Từ loại <code>Câu</code>). Dữ liệu HSK1 có 398 dòng nhưng 279 từ khác nhau (1 từ lặp ở nhiều bài) →
+import gộp thành 1 bản ghi thư viện, gắn vào các bài tương ứng.</p>
+<h3 id="a2-ngu-phap-grammar">A.2. Ngữ pháp (<code>grammar</code>)</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Cột sheet HSK1 / N5</th>
+<th>Kiểu</th>
+<th>Định dạng / ví dụ dữ liệu</th>
+<th style="text-align: center;">Bắt buộc</th>
+<th>Nhập ở đâu</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Tên điểm ngữ pháp</td>
+<td><code>title</code> / <code>title</code></td>
+<td>text markup</td>
+<td><code>{用&lt;吗&gt; 的疑问句}</code>; N5 <code>N1はN2です</code></td>
+<td style="text-align: center;">✅</td>
+<td>Bảng, List 1, Nhanh, Chi tiết</td>
+</tr>
+<tr>
+<td>Ý nghĩa</td>
+<td><code>mean</code> / <code>mean</code></td>
+<td>text</td>
+<td><code>{Câu hỏi có từ &lt;吗&gt;}</code>; N5 <code>N1 là N2</code></td>
+<td style="text-align: center;">✅</td>
+<td>Bảng, List 2, Chi tiết, AI</td>
+</tr>
+<tr>
+<td>Cấu trúc</td>
+<td><code>structures</code> / cột không tên (sau <code>mean</code>)</td>
+<td>text nhiều dòng, markup <code>&lt;&gt;</code></td>
+<td><code>Chủ ngữ + Động từ + Tân ngữ + &lt;吗&gt;？</code></td>
+<td style="text-align: center;">✅</td>
+<td>List 3, Chi tiết, AI</td>
+</tr>
+<tr>
+<td>Cách dùng</td>
+<td><code>uses</code> / <code>uses</code></td>
+<td>rich text nhiều đoạn, markup <code>[[ … &gt;&gt;</code>, <code>{Ví dụ:}</code>, <code>&lt;&lt;&lt; … &gt;&gt;&gt;</code></td>
+<td>đoạn giải thích + ví dụ kèm phiên âm, nghĩa</td>
+<td style="text-align: center;">✅</td>
+<td>Chi tiết, AI</td>
+</tr>
+<tr>
+<td>Lưu ý</td>
+<td><code>note</code> / <code>note</code></td>
+<td>rich text</td>
+<td>HSK1 6/59, N5 43/107 có</td>
+<td style="text-align: center;">❌</td>
+<td>Chi tiết</td>
+</tr>
+<tr>
+<td>Ví dụ · câu + phiên âm (danh sách ≥ 1)</td>
+<td><code>example</code> / <code>example</code></td>
+<td>text; nhiều ví dụ cách nhau <strong>dòng trống</strong>; HSK1 mỗi ví dụ 2 dòng (câu, pinyin), N5 1 dòng câu có furigana</td>
+<td><code>你有弟弟吗？⏎Nǐ yǒu dìdi ma?⏎⏎她是老师吗？…</code></td>
+<td style="text-align: center;">✅</td>
+<td>Chi tiết, AI; import tách theo dòng trống</td>
+</tr>
+<tr>
+<td>Ví dụ · nghĩa</td>
+<td><code>example_mean</code> / <code>example_mean</code></td>
+<td>text, cùng thứ tự ví dụ</td>
+<td><code>Bạn có em trai không?⏎⏎Cô ấy là giáo viên phải không?</code></td>
+<td style="text-align: center;">✅</td>
+<td>Chi tiết, AI</td>
+</tr>
+<tr>
+<td>Video</td>
+<td><code>video</code> / <code>video</code></td>
+<td>URL</td>
+<td>N5 <code>https://youtu.be/…</code> (102/107); HSK1 trống</td>
+<td style="text-align: center;">❌</td>
+<td>Chi tiết</td>
+</tr>
+<tr>
+<td>Mở rộng</td>
+<td><code>advanced</code> / —</td>
+<td>boolean</td>
+<td>HSK1 toàn <code>0</code>; N5 không có cột</td>
+<td style="text-align: center;">❌</td>
+<td>Chi tiết</td>
+</tr>
+</tbody>
+</table></div>
+<p>Cột không thành field: <code>signal</code>, <code>order2</code> (trống ở cả 2 file), <code>id</code>, <code>lesson_id</code>, <code>QT</code>, <code>note lỗi</code>.</p>
+<h3 id="a3-mau-cau-sentence">A.3. Mẫu câu (<code>sentence</code>)</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Cột sheet HSK1 / N5</th>
+<th>Kiểu</th>
+<th>Định dạng / ví dụ dữ liệu</th>
+<th style="text-align: center;">Bắt buộc</th>
+<th>Nhập ở đâu</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Câu</td>
+<td><code>sentence</code> / <code>sentence</code></td>
+<td>text</td>
+<td><code>你好！</code>; N5 <code>おはようございます。</code></td>
+<td style="text-align: center;">✅</td>
+<td>Bảng, List 1, Nhanh, Chi tiết</td>
+</tr>
+<tr>
+<td>Phiên âm</td>
+<td><code>phonetic</code> / <code>phonetic</code></td>
+<td>text</td>
+<td>trống ở cả 2 file → AI điền hoặc sinh từ furigana (<code>Nǐ hǎo!</code>)</td>
+<td style="text-align: center;">✅</td>
+<td>Bảng, List 2, Chi tiết, AI</td>
+</tr>
+<tr>
+<td>Nghĩa</td>
+<td><code>mean</code> / <code>mean</code></td>
+<td>text</td>
+<td><code>Xin chào!</code></td>
+<td style="text-align: center;">✅</td>
+<td>Bảng, List 3, Chi tiết, AI</td>
+</tr>
+<tr>
+<td>Phiên âm từng chữ</td>
+<td><code>furigana</code> / <code>furigana</code></td>
+<td>markup <code>{chữ|âm}</code></td>
+<td><code>{你|Nǐ}{好|hǎo}！</code></td>
+<td style="text-align: center;">—</td>
+<td>Hệ thống</td>
+</tr>
+<tr>
+<td>Audio</td>
+<td>— / —</td>
+<td>file</td>
+<td>mp3; không có thì TTS</td>
+<td style="text-align: center;">❌</td>
+<td>Chi tiết</td>
+</tr>
+</tbody>
+</table></div>
+<p>Cột không thành field: <code>id</code>, <code>id_</code>, <code>lesson_id</code>.</p>
+<h3 id="a4-han-tu-hanzi-hanzi_mean-khoa-tieng-trung">A.4. Hán tự (<code>hanzi</code> + <code>hanzi_mean</code>, khoá tiếng Trung)</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Cột sheet HSK1</th>
+<th>Kiểu</th>
+<th>Định dạng / ví dụ dữ liệu</th>
+<th style="text-align: center;">Bắt buộc</th>
+<th>Nhập ở đâu</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Chữ</td>
+<td><code>hanzi</code></td>
+<td>text</td>
+<td><code>你</code></td>
+<td style="text-align: center;">✅</td>
+<td>Bảng, List 1, Nhanh, Chi tiết</td>
+</tr>
+<tr>
+<td>Phiên âm</td>
+<td><code>pinyin</code></td>
+<td>text, nhiều âm tách <code>,</code></td>
+<td><code>hǎo, hào</code></td>
+<td style="text-align: center;">✅</td>
+<td>Bảng, List 2, Chi tiết, AI</td>
+</tr>
+<tr>
+<td>Âm Hán Việt</td>
+<td><code>mean</code></td>
+<td>text in hoa</td>
+<td><code>NHĨ</code></td>
+<td style="text-align: center;">✅</td>
+<td>Bảng, List 3, Chi tiết, AI</td>
+</tr>
+<tr>
+<td>Nghĩa (danh sách ≥ 1)</td>
+<td><code>hanzi_mean.mean</code> (sheet riêng, nhiều dòng / chữ, 534 dòng)</td>
+<td>danh sách text</td>
+<td><code>Bạn, anh, chị, em… (ngôi thứ hai số ít)</code></td>
+<td style="text-align: center;">✅</td>
+<td>Bảng (nghĩa đầu), List 4 tách <code>;</code>, Chi tiết, AI</td>
+</tr>
+<tr>
+<td>Bộ thủ</td>
+<td><code>radicals</code></td>
+<td>1 giá trị trong 214 bộ Khang Hy</td>
+<td><code>亻</code> (119 giá trị trong dữ liệu; <code>竹 （⺮）</code> map về bộ 118 竹)</td>
+<td style="text-align: center;">✅</td>
+<td>Bảng, Chi tiết</td>
+</tr>
+<tr>
+<td>Thành phần</td>
+<td><code>parts</code></td>
+<td>text, tách khoảng trắng</td>
+<td><code>亻 ⺈ 小</code></td>
+<td style="text-align: center;">✅</td>
+<td>Chi tiết, AI</td>
+</tr>
+<tr>
+<td>Thứ tự nét</td>
+<td><code>graphical</code></td>
+<td>text</td>
+<td><code>ノ丨ノフ丨ノ丶</code></td>
+<td style="text-align: center;">✅</td>
+<td>Chi tiết, AI</td>
+</tr>
+<tr>
+<td>Mẹo nhớ</td>
+<td><code>tips</code></td>
+<td>text</td>
+<td><code>BẠN 尔 là người nhỏ bé 小 cần được che chở 冖</code> (446/458)</td>
+<td style="text-align: center;">❌</td>
+<td>Chi tiết</td>
+</tr>
+<tr>
+<td>Chữ giống</td>
+<td><code>similar</code></td>
+<td>danh sách chữ tách <code>;</code></td>
+<td><code>您; 尔</code></td>
+<td style="text-align: center;">❌</td>
+<td>Chi tiết</td>
+</tr>
+<tr>
+<td>Từ liên quan</td>
+<td><code>vocabularies</code></td>
+<td>danh sách id Từ vựng tách <code>;</code></td>
+<td><code>1; 4</code> → chọn từ S1 Từ vựng</td>
+<td style="text-align: center;">❌</td>
+<td>Chi tiết</td>
+</tr>
+<tr>
+<td>Nét viết (SVG)</td>
+<td><code>path</code></td>
+<td>SVG</td>
+<td><code>&lt;svg width="200" height="200"&gt;…</code></td>
+<td style="text-align: center;">❌</td>
+<td>Chi tiết (tải / dán)</td>
+</tr>
+<tr>
+<td>Mở rộng</td>
+<td><code>advanced</code></td>
+<td>boolean</td>
+<td>182/458 = <code>1</code></td>
+<td style="text-align: center;">❌</td>
+<td>Chi tiết</td>
+</tr>
+</tbody>
+</table></div>
+<p>Cột không thành field: <code>level</code> (= cấp độ khoá), <code>explanation</code>, <code>search</code> (trống), <code>id</code>, <code>lesson_id</code>.</p>
+<h3 id="a5-kanji-kanji-khoa-tieng-nhat">A.5. Kanji (<code>kanji</code>, khoá tiếng Nhật)</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Cột sheet N5</th>
+<th>Kiểu</th>
+<th>Định dạng / ví dụ dữ liệu</th>
+<th style="text-align: center;">Bắt buộc</th>
+<th>Nhập ở đâu</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Chữ</td>
+<td>cột A (tiêu đề <code>年</code>)</td>
+<td>text</td>
+<td><code>一</code></td>
+<td style="text-align: center;">✅</td>
+<td>Bảng, List 1, Nhanh, Chi tiết</td>
+</tr>
+<tr>
+<td>Âm On</td>
+<td><code>onyomi</code></td>
+<td>text, nhiều âm tách <code>/</code></td>
+<td><code>イチ/イツ</code></td>
+<td style="text-align: center;">✅ ít nhất 1 trong On / Kun</td>
+<td>Bảng, List 2, Chi tiết, AI</td>
+</tr>
+<tr>
+<td>Âm Kun</td>
+<td><code>kunyomi</code></td>
+<td>text, nhiều âm tách <code>/</code>, dấu <code>.</code> ngăn okurigana</td>
+<td><code>ふた.つ/ふた</code></td>
+<td style="text-align: center;">(cùng trên)</td>
+<td>Bảng, List 3, Chi tiết, AI</td>
+</tr>
+<tr>
+<td>Âm Hán Việt</td>
+<td><code>mean</code></td>
+<td>text</td>
+<td><code>Nhất</code></td>
+<td style="text-align: center;">✅</td>
+<td>Bảng, List 4, Chi tiết, AI</td>
+</tr>
+<tr>
+<td>Nghĩa</td>
+<td><code>explanation</code></td>
+<td>text</td>
+<td><code>Một</code></td>
+<td style="text-align: center;">✅</td>
+<td>Bảng, List 5, Chi tiết, AI</td>
+</tr>
+<tr>
+<td>Bộ thủ</td>
+<td><code>radical_id</code> + <code>radical</code></td>
+<td>số thứ tự Khang Hy + chữ</td>
+<td><code>1 / 一</code>, <code>9 / 人 (亻)</code>, <code>88 / 水 (氵, 氺)</code></td>
+<td style="text-align: center;">✅</td>
+<td>Chi tiết</td>
+</tr>
+<tr>
+<td>Thành phần</td>
+<td><code>parts</code></td>
+<td>text, tách khoảng trắng</td>
+<td><code>一 二</code></td>
+<td style="text-align: center;">✅</td>
+<td>Chi tiết, AI</td>
+</tr>
+<tr>
+<td>Mẹo nhớ</td>
+<td><code>look_and_learn</code> (+ <code>look_and_learn_id</code>)</td>
+<td>text</td>
+<td><code>Một được biểu hiện bằng một ngón tay.</code></td>
+<td style="text-align: center;">❌</td>
+<td>Chi tiết</td>
+</tr>
+<tr>
+<td>Từ liên quan</td>
+<td><code>vocabularies</code></td>
+<td>danh sách id Từ vựng tách <code>;</code></td>
+<td><code>7420; 14207; …</code> → chọn từ S1 Từ vựng</td>
+<td style="text-align: center;">❌</td>
+<td>Chi tiết</td>
+</tr>
+<tr>
+<td>Nét viết (SVG)</td>
+<td><code>path</code></td>
+<td>SVG path</td>
+<td><code>&lt;path d="M11,54.25c…"&gt;</code></td>
+<td style="text-align: center;">❌</td>
+<td>Chi tiết (tải / dán)</td>
+</tr>
+<tr>
+<td>Chuỗi tìm kiếm</td>
+<td><code>search</code></td>
+<td>text</td>
+<td><code>hito - tsu|ヒト - ツ|ichi|いち</code></td>
+<td style="text-align: center;">—</td>
+<td>Hệ thống (sinh từ On / Kun)</td>
+</tr>
+</tbody>
+</table></div>
+<p>Cột không thành field: <code>QT</code>, <code>lesson_id</code>, <code>id</code>, <code>note lỗi</code>, <code>status</code>.</p>
+<h3 id="a6-phat-am-pronunciation-chi-tieng-trung-file-phat-am-final">A.6. Phát âm (<code>pronunciation</code>, chỉ tiếng Trung — file <code>Phát Âm Final</code>)</h3>
+<p>Dữ liệu: bảng âm (<code>pinyin</code>, 431 dòng + 3 dạng <code>iou</code>, <code>uei</code>, <code>uen</code> bổ sung), nhóm (<code>group</code>), thanh điệu (<code>tone</code>).</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Cột sheet</th>
+<th>Kiểu</th>
+<th>Định dạng / ví dụ dữ liệu</th>
+<th style="text-align: center;">Bắt buộc</th>
+<th>Nhập ở đâu</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Âm</td>
+<td><code>pinyin.pinyin</code></td>
+<td>text không dấu thanh</td>
+<td><code>b</code>, <code>a</code>, <code>ai</code>, <code>mao</code>, <code>ü</code></td>
+<td style="text-align: center;">✅</td>
+<td>Bảng, List 1, Nhanh, Chi tiết</td>
+</tr>
+<tr>
+<td>Loại âm</td>
+<td>(suy từ dữ liệu)</td>
+<td>danh sách cố định</td>
+<td><code>Thanh mẫu</code> (21: id 2–22), <code>Vận mẫu</code> (36), <code>Âm tiết</code> (còn lại)</td>
+<td style="text-align: center;">✅</td>
+<td>Bảng, List 2, Chi tiết</td>
+</tr>
+<tr>
+<td>Nhóm</td>
+<td><code>pinyin.group</code> → <code>group</code></td>
+<td>danh sách cố định</td>
+<td>Thanh mẫu: <code>Âm Môi</code>, <code>Âm Đầu Lưỡi</code>, <code>Nhóm âm cuống lưỡi</code>, <code>Âm mặt lưỡi</code>, <code>Nhóm âm đầu lưỡi trước</code>, <code>Nhóm âm đầu lưỡi sau</code>; Vận mẫu: <code>Vận mẫu đơn</code>, <code>Vận mẫu kép</code>, <code>Vận mẫu mũi</code>, <code>Vận mẫu kép có i</code>, <code>Vận mẫu có u</code>, <code>Vận mẫu có ü</code></td>
+<td style="text-align: center;">✅ khi Thanh mẫu / Vận mẫu</td>
+<td>Bảng, Chi tiết</td>
+</tr>
+<tr>
+<td>Thanh mẫu thành phần</td>
+<td><code>pinyin.initial ( thanh mẫu )</code></td>
+<td>chọn 1 Thanh mẫu</td>
+<td><code>mao</code> → <code>m</code></td>
+<td style="text-align: center;">✅ khi Âm tiết</td>
+<td>Bảng, Chi tiết, AI</td>
+</tr>
+<tr>
+<td>Vận mẫu thành phần</td>
+<td><code>pinyin.final (vận mẫu)</code></td>
+<td>chọn 1 Vận mẫu</td>
+<td><code>mao</code> → <code>ao</code></td>
+<td style="text-align: center;">✅ khi Âm tiết</td>
+<td>Bảng, Chi tiết, AI</td>
+</tr>
+<tr>
+<td>Hướng dẫn phát âm</td>
+<td><code>pinyin.guide</code></td>
+<td>text</td>
+<td><code>Hai môi dính lại rồi tách ra, luồng không khí thoát ra không bật hơi.</code> (73 dòng có)</td>
+<td style="text-align: center;">✅ khi Thanh mẫu / Vận mẫu</td>
+<td>Chi tiết, AI</td>
+</tr>
+<tr>
+<td>Cách đọc</td>
+<td><code>pinyin.sound</code></td>
+<td>text</td>
+<td><code>ü</code> đọc <code>uu</code>, <code>nü</code> đọc <code>nuu</code> (20 dòng; dạng hiện trên văn bản đặt trước, cách đọc trong ngoặc)</td>
+<td style="text-align: center;">❌</td>
+<td>Chi tiết</td>
+</tr>
+<tr>
+<td>Âm dễ nhầm</td>
+<td><code>pinyin.similar</code></td>
+<td>text</td>
+<td><code>b</code> ↔ <code>p</code>; <code>mao</code> ↔ <code>mou</code> (271 dòng có)</td>
+<td style="text-align: center;">❌</td>
+<td>Bảng, Chi tiết</td>
+</tr>
+<tr>
+<td>Thanh điệu / Audio</td>
+<td><code>tone</code> + quy ước tên file</td>
+<td>4 thanh <code>ˉ ˊ ˇ ˋ</code>; mỗi thanh 1 file</td>
+<td><code>ba_1.mp3</code> … <code>ba_4.mp3</code>; thanh mẫu không có thanh điệu, 1 file <code>b.mp3</code>. Hệ thống sinh 4 dạng có dấu (<code>bā bá bǎ bà</code>) để hiển thị</td>
+<td style="text-align: center;">❌</td>
+<td>Chi tiết (tải 1–4 file)</td>
+</tr>
+<tr>
+<td>Video hướng dẫn</td>
+<td>—</td>
+<td>URL</td>
+<td>Chưa có video (ghi chú trong file)</td>
+<td style="text-align: center;">❌</td>
+<td>Chi tiết</td>
+</tr>
+</tbody>
+</table></div>
+<p>Cột không thành field: <code>pinyin.id</code>, sheet <code>Note</code> (ghi chú quy ước), sheet ẩn <code>mẫu UI pinyin</code> (mẫu lưới thanh mẫu ×
+vận mẫu cho UI — tham khảo khi vẽ bảng Phát âm dạng lưới).</p>
+<p>Sheet <code>pronunciation</code> của HSK1 (1052 dòng, 434 âm khác nhau, cột <code>pinyin</code>, <code>lesson_id</code>) chỉ cho biết âm nào học
+ở bài nào → không thành field; import gộp mỗi âm 1 mục và gắn vào các bài tương ứng. 431/434 âm có sẵn trong
+bảng pinyin; 3 dạng viết đầy đủ <code>iou</code>, <code>uei</code>, <code>uen</code> (dạng rút gọn <code>iu</code>, <code>ui</code>, <code>un</code>) bổ sung vào bảng. Khoá tiếng
+Nhật không có Phát âm (phát âm nằm trong Bảng chữ kana: romaji + audio).</p>
+<p>Dữ liệu BE hiện có (<code>PronunciationDetail</code>): <code>guild</code> (Hướng dẫn phát âm), <code>audio</code> (1 file), <code>col</code>, <code>row</code>,
+<code>similar_words</code>, <code>vocabularies</code> — chưa có Loại âm, Nhóm, Thanh mẫu / Vận mẫu thành phần, Cách đọc, Video, audio
+theo từng thanh. Requirement giữ theo sheet; BE cần bổ sung field.</p>
+<h3 id="a7-bang-chu">A.7. Bảng chữ</h3>
+<p>Giữ đúng cấu trúc dữ liệu app học viên đang dùng.</p>
+<h4 id="a71-tieng-nhat-hiragana-katakana-file-bang-chu-n5-ver-22">A.7.1. Tiếng Nhật — Hiragana / Katakana (file <code>BẢNG CHỮ - N5 (ver 2.2)</code>)</h4>
+<p>Dữ liệu 4 tầng: Bộ chữ (<code>level</code>) → Bảng con (<code>type</code>) → Chữ (<code>character</code>) → Từ ví dụ (<code>chara_voca</code>).</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Cột sheet</th>
+<th>Kiểu</th>
+<th>Định dạng / ví dụ dữ liệu</th>
+<th style="text-align: center;">Bắt buộc</th>
+<th>Nhập ở đâu</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Chữ</td>
+<td><code>character</code> cột A</td>
+<td>text</td>
+<td><code>あ</code>, <code>カ</code>, <code>きゃ</code> (225 chữ)</td>
+<td style="text-align: center;">✅</td>
+<td>Bảng, List 1, Nhanh, Chi tiết</td>
+</tr>
+<tr>
+<td>Romaji</td>
+<td><code>character.romaji</code></td>
+<td>text</td>
+<td><code>a</code>, <code>ka</code>, <code>kya</code></td>
+<td style="text-align: center;">✅</td>
+<td>Bảng, List 2, Chi tiết, AI</td>
+</tr>
+<tr>
+<td>Bộ chữ</td>
+<td><code>type.type</code> → <code>level</code></td>
+<td>danh sách cố định</td>
+<td><code>Hiragana</code>, <code>Katakana</code> (mỗi bộ có đoạn giới thiệu <code>intro_vi</code>)</td>
+<td style="text-align: center;">✅</td>
+<td>Chi tiết (mặc định theo bảng con đang chọn)</td>
+</tr>
+<tr>
+<td>Bảng con</td>
+<td><code>character.table_id</code> → <code>type</code></td>
+<td>danh sách cố định</td>
+<td>Hiragana: <code>Bảng Chữ Chính</code> (46), <code>Tenten</code> (20), <code>Maru</code> (5), <code>Ảo âm</code> (33); Katakana: như Hiragana + <code>Ảo âm - hiếm gặp</code> (17). Nhóm bài: <code>Cơ bản</code> / <code>Biến âm</code> / <code>Kết hợp</code> (<code>lesson_vi</code>)</td>
+<td style="text-align: center;">✅</td>
+<td>Bảng, Chi tiết</td>
+</tr>
+<tr>
+<td>Vị trí trong bảng</td>
+<td><code>character.position</code></td>
+<td>hàng + cột</td>
+<td><code>___a</code> (hàng nguyên âm, cột a), <code>_k_a</code> (hàng k, cột a), <code>_kya</code> (ảo âm)</td>
+<td style="text-align: center;">✅</td>
+<td>Bảng, Chi tiết</td>
+</tr>
+<tr>
+<td>Chữ dễ nhầm</td>
+<td><code>character.similar</code></td>
+<td>danh sách chữ tách <code>;</code></td>
+<td><code>お; め</code> (135/225 có)</td>
+<td style="text-align: center;">❌</td>
+<td>Bảng, Chi tiết</td>
+</tr>
+<tr>
+<td>Mẹo nhớ</td>
+<td><code>character.vi</code></td>
+<td>text, markup <code>&lt;…&gt;</code> tô âm</td>
+<td><code>Có một con rắn cuốn vào người, sợ quá nên la &lt;A&gt;aa</code> (92/225 có)</td>
+<td style="text-align: center;">❌</td>
+<td>Chi tiết</td>
+</tr>
+<tr>
+<td>Từ ví dụ (danh sách)</td>
+<td><code>chara_voca</code>: <code>word</code>, <code>romaji</code>, <code>mean</code></td>
+<td>danh sách: từ + romaji + nghĩa</td>
+<td><code>あお · ao · Màu xanh</code> (1001 từ, 1–10 từ / chữ)</td>
+<td style="text-align: center;">❌</td>
+<td>Chi tiết, AI</td>
+</tr>
+<tr>
+<td>Audio</td>
+<td>—</td>
+<td>file</td>
+<td>mp3; không có thì TTS</td>
+<td style="text-align: center;">❌</td>
+<td>Chi tiết</td>
+</tr>
+</tbody>
+</table></div>
+<p>Cột không thành field: <code>character.id</code>, <code>character.lesson_id</code> (gắn ở bài học), <code>type.id</code>, <code>type.table</code> (mã nội bộ, vd
+<code>hira_basic</code>), <code>chara_voca.id</code>, <code>chara_voca.character_id</code>, <code>chara_voca.lesson</code>, <code>chara_voca.note</code> (trống).</p>
+<h4 id="a72-tieng-han-hangul-anh-duc-phap-alphabet">A.7.2. Tiếng Hàn (Hangul), Anh / Đức / Pháp (Alphabet)</h4>
+<p>Chưa có dữ liệu — mục 3.</p>
+<h3 id="a8-danh-sach-tu-loai-co-dinh-theo-ngon-ngu">A.8. Danh sách Từ loại cố định theo ngôn ngữ</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Ngôn ngữ</th>
+<th>Danh sách cố định</th>
+<th>Map dữ liệu cũ</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Tiếng Trung (Đắc Nhân)</td>
+<td>Danh từ, Danh từ riêng, Động từ, Động từ năng nguyện, Tính từ, Đại từ, Đại từ nghi vấn, Đại từ chỉ thị, Số từ, Lượng từ, Phó từ, Giới từ, Liên từ, Trợ từ, Hậu tố, Cụm từ (16)</td>
+<td><code>Liên Từ</code> → Liên từ; <code>Danh từ</code> (thừa khoảng trắng) → Danh từ; <code>Danh từ / Số từ</code>, <code>Danh từ; động từ</code>, <code>Động từ / Danh từ</code>, <code>Lượng từ / Danh từ</code>, <code>Danh từ / Giới từ</code>, <code>Đại từ chỉ thị + Động từ</code> → chọn <strong>2 từ loại</strong>; <code>Cụm động từ</code>, <code>Cụm tính từ</code>, <code>Câu chào</code>, <code>Cụm từ kính ngữ</code>, <code>Cụm từ hỏi</code> → Cụm từ; trống (<code>好</code>, <code>件</code>) → thiếu thông tin</td>
+</tr>
+<tr>
+<td>Tiếng Nhật (Sakumi)</td>
+<td>Danh từ, Động từ, Tính từ, Phó từ, Trạng từ, Số đếm, Trợ từ đếm, Trợ từ, Liên từ, Câu, Mẫu câu, Cụm từ (12)</td>
+<td><code>Tính từ/Danh từ</code> → 2 từ loại; cờ <code>sentence = x</code> → Câu; sheet <code>relation</code> dùng mã <code>N</code>, <code>V</code>, <code>A</code>, <code>adv</code>, <code>Conj</code> → Danh từ, Động từ, Tính từ, Phó từ, Liên từ</td>
+</tr>
+<tr>
+<td>Tiếng Hàn, Anh, Đức, Pháp</td>
+<td>Chưa có dữ liệu — mục 3</td>
+<td>—</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="a9-bo-thu">A.9. Bộ thủ</h3>
+<ul>
+<li>Danh sách cố định <strong>214 bộ thủ Khang Hy</strong>: số thứ tự 1–214, chữ bộ, tên Hán Việt, số nét, các biến thể viết (vd
+  <code>9 人 (亻)</code>, <code>61 心 (忄, ⺗)</code>, <code>85 水 (氵, 氺)</code>, <code>118 竹 (⺮)</code>, <code>149 言 (讠, 訁)</code>, <code>162 辵 (辶, ⻌, ⻍)</code>, <code>170 阜 (阝)</code>).</li>
+<li>Dùng chung cho Hán tự (tiếng Trung) và Kanji (tiếng Nhật); mỗi chữ chọn <strong>1 bộ</strong>. Hiển thị trên bảng bằng chữ bộ
+  hoặc biến thể đúng với chữ (vd <code>你</code> → <code>亻</code>).</li>
+<li>Import: HSK1 <code>radicals</code> (119 giá trị, gồm biến thể và dạng <code>竹 （⺮）</code>) và N5 <code>radical_id</code> / <code>radical</code> map về số thứ
+  tự Khang Hy; giá trị không map được → thiếu thông tin để CD chọn lại.</li>
+</ul>
+</article>
+    <p class="source-note">Nguồn: knowledge-s1.md · SHA-256 5d35162ac8a5c299af02feadd0ac2aa39d5e1efbcfe435a24f2a531638806d1a</p>
+  </main>
+  <script>
+    const article = document.getElementById('document');
+    const nav = document.getElementById('docNav');
+    const headings = [...article.querySelectorAll('h2')];
+    headings.forEach((heading, index) => {
+      const link = document.createElement('a');
+      link.href = `#${heading.id}`;
+      const number = document.createElement('span');
+      number.className = 'nav-num';
+      number.textContent = String(index + 1).padStart(2, '0');
+      link.append(number, document.createTextNode(heading.textContent));
+      nav.append(link);
+    });
+
+    const navLinks = [...nav.querySelectorAll('a')];
+    const observer = new IntersectionObserver(entries => {
+      const current = entries.filter(item => item.isIntersecting).sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
+      if (!current) return;
+      navLinks.forEach(link => link.classList.toggle('active', link.hash === `#${current.target.id}`));
+    }, {rootMargin: '-18% 0px -68% 0px', threshold: [0, .2, .5]});
+    headings.forEach(heading => observer.observe(heading));
+    if (navLinks[0]) navLinks[0].classList.add('active');
+
+    const testcaseHeadings = [...article.querySelectorAll('h4, h5')]
+      .filter(heading => heading.textContent.trim().startsWith('Testcase'));
+    const testcaseGroups = testcaseHeadings
+      .map(heading => ({heading, tableWrap: heading.nextElementSibling}))
+      .filter(group => group.tableWrap?.classList.contains('table-wrap'));
+    if (testcaseGroups.length) {
+        const tableWraps = testcaseGroups.map(group => group.tableWrap);
+        tableWraps.forEach(tableWrap => tableWrap.classList.add('testcase-table'));
+        const rows = tableWraps.flatMap(tableWrap => [...tableWrap.querySelectorAll('tbody tr')]);
+        const tools = document.createElement('div');
+        tools.className = 'case-tools';
+        const input = document.createElement('input');
+        input.type = 'search';
+        input.placeholder = 'Tìm testcase, Flow, REQ, EX hoặc nội dung…';
+        input.setAttribute('aria-label', 'Tìm testcase');
+        const count = document.createElement('span');
+        count.className = 'case-count';
+        tools.append(input, count);
+        testcaseGroups[0].heading.before(tools);
+        const filterRows = () => {
+          const query = input.value.trim().toLocaleLowerCase('vi');
+          let visible = 0;
+          rows.forEach(row => {
+            const match = !query || row.textContent.toLocaleLowerCase('vi').includes(query);
+            row.hidden = !match;
+            if (match) visible += 1;
+          });
+          testcaseGroups.forEach(({heading, tableWrap}) => {
+            const hasVisibleRow = [...tableWrap.querySelectorAll('tbody tr')]
+              .some(row => !row.hidden);
+            heading.hidden = !hasVisibleRow;
+            tableWrap.hidden = !hasVisibleRow;
+          });
+          count.textContent = `${visible}/${rows.length} testcase`;
+        };
+        input.addEventListener('input', filterRows);
+        filterRows();
+    }
+  </script>
+</body>
+</html>

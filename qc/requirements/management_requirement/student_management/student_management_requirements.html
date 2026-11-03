@@ -1,0 +1,3310 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Requirement Quản lý học viên">
+  <link rel="icon" href="data:,">
+  <title>Quản lý học viên — Requirement</title>
+  <style>
+    :root {
+      --orange-700: #c83f00;
+      --orange-600: #e84c00;
+      --orange-500: #f45b0a;
+      --orange-400: #ff7a32;
+      --orange-100: #fff0e8;
+      --orange-50: #fff8f4;
+      --navy-950: #101828;
+      --navy-900: #172033;
+      --navy-800: #243047;
+      --slate-700: #344054;
+      --slate-600: #475467;
+      --slate-500: #667085;
+      --slate-400: #98a2b3;
+      --slate-300: #d0d5dd;
+      --slate-200: #e4e7ec;
+      --slate-100: #f2f4f7;
+      --slate-50: #f8fafc;
+      --white: #ffffff;
+      --green: #159447;
+      --blue: #2154c5;
+      --yellow: #b77900;
+      --red: #c92a2a;
+      --purple: #6941c6;
+      --shadow-sm: 0 1px 2px rgba(16, 24, 40, .06);
+      --shadow-md: 0 12px 32px rgba(16, 24, 40, .10);
+      --shadow-lg: 0 24px 64px rgba(16, 24, 40, .16);
+      --radius-sm: 10px;
+      --radius: 16px;
+      --radius-lg: 24px;
+      --sidebar: 286px;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      color: var(--navy-950);
+      background:
+        radial-gradient(circle at 88% 5%, rgba(244, 91, 10, .10), transparent 24rem),
+        var(--slate-50);
+      font: 15px/1.65 Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      text-rendering: optimizeLegibility;
+    }
+    a { color: inherit; }
+    img { max-width: 100%; }
+    button, input, select { font: inherit; }
+    code {
+      padding: .12rem .38rem;
+      border: 1px solid #fed7c3;
+      border-radius: 6px;
+      color: var(--orange-700);
+      background: var(--orange-50);
+      font: 600 .9em ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    }
+
+    .skip-link {
+      position: fixed;
+      z-index: 999;
+      top: 12px;
+      left: 12px;
+      padding: 10px 14px;
+      border-radius: 9px;
+      color: var(--white);
+      background: var(--navy-950);
+      transform: translateY(-150%);
+    }
+    .skip-link:focus { transform: none; }
+
+    .sidebar {
+      position: fixed;
+      z-index: 30;
+      inset: 0 auto 0 0;
+      width: var(--sidebar);
+      padding: 22px 18px;
+      overflow-y: auto;
+      color: #f8fafc;
+      background:
+        linear-gradient(155deg, rgba(255, 122, 50, .24), transparent 26%),
+        linear-gradient(180deg, #192338 0%, #111827 100%);
+      border-right: 1px solid rgba(255, 255, 255, .08);
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 4px 8px 22px;
+      border-bottom: 1px solid rgba(255, 255, 255, .10);
+    }
+    .brand-mark {
+      display: grid;
+      width: 44px;
+      height: 44px;
+      place-items: center;
+      border-radius: 14px;
+      color: var(--white);
+      background: linear-gradient(135deg, var(--orange-400), var(--orange-600));
+      box-shadow: 0 10px 26px rgba(244, 91, 10, .35);
+      font-weight: 900;
+      letter-spacing: -.06em;
+    }
+    .brand strong { display: block; font-size: 16px; }
+    .brand small { color: #aeb8c9; }
+    .nav-title {
+      margin: 24px 10px 8px;
+      color: #8f9aae;
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+    .nav { display: grid; gap: 4px; }
+    .nav a {
+      display: flex;
+      align-items: center;
+      gap: 11px;
+      padding: 10px 12px;
+      border-radius: 10px;
+      color: #cbd5e1;
+      text-decoration: none;
+      transition: .18s ease;
+    }
+    .nav a:hover, .nav a.active {
+      color: var(--white);
+      background: rgba(255, 255, 255, .09);
+    }
+    .nav a.active { box-shadow: inset 3px 0 var(--orange-400); }
+    .nav-num {
+      display: grid;
+      width: 25px;
+      height: 25px;
+      flex: 0 0 auto;
+      place-items: center;
+      border: 1px solid rgba(255, 255, 255, .15);
+      border-radius: 8px;
+      font-size: 11px;
+      font-weight: 800;
+    }
+    .sidebar-footer {
+      margin-top: 26px;
+      padding: 14px;
+      border: 1px solid rgba(255, 255, 255, .10);
+      border-radius: 14px;
+      color: #aeb8c9;
+      background: rgba(255, 255, 255, .04);
+      font-size: 12px;
+    }
+    .sidebar-footer a { color: #ffd8c5; }
+
+    main {
+      width: min(1500px, calc(100% - var(--sidebar)));
+      margin-left: var(--sidebar);
+      padding: 34px clamp(24px, 4vw, 64px) 80px;
+    }
+    section { scroll-margin-top: 24px; }
+    .hero {
+      position: relative;
+      padding: clamp(30px, 5vw, 56px);
+      overflow: hidden;
+      border: 1px solid rgba(255, 255, 255, .08);
+      border-radius: var(--radius-lg);
+      color: var(--white);
+      background:
+        linear-gradient(105deg, rgba(16, 24, 40, .97) 0%, rgba(23, 32, 51, .94) 62%, rgba(109, 45, 9, .90) 100%);
+      box-shadow: var(--shadow-lg);
+    }
+    .hero::after {
+      content: "";
+      position: absolute;
+      width: 360px;
+      height: 360px;
+      top: -190px;
+      right: -80px;
+      border: 70px solid rgba(255, 122, 50, .15);
+      border-radius: 50%;
+    }
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 10px;
+      border: 1px solid rgba(255, 255, 255, .15);
+      border-radius: 999px;
+      color: #ffd8c5;
+      background: rgba(255, 255, 255, .06);
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+    .hero h1 {
+      max-width: 900px;
+      margin: 18px 0 12px;
+      font-size: clamp(34px, 5vw, 64px);
+      line-height: 1.03;
+      letter-spacing: -.045em;
+    }
+    .hero p { max-width: 780px; margin: 0; color: #cbd5e1; font-size: 17px; }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 25px; }
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      min-height: 42px;
+      padding: 9px 14px;
+      border: 1px solid transparent;
+      border-radius: 10px;
+      color: var(--white);
+      background: var(--orange-500);
+      text-decoration: none;
+      cursor: pointer;
+      transition: .18s ease;
+    }
+    .button:hover { transform: translateY(-1px); background: var(--orange-600); }
+    .button.secondary { border-color: rgba(255, 255, 255, .15); background: rgba(255, 255, 255, .07); }
+    .button.ghost { color: var(--slate-700); border-color: var(--slate-300); background: var(--white); }
+    .button.small { min-height: 36px; padding: 7px 11px; font-size: 13px; }
+
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 14px;
+      margin-top: 18px;
+    }
+    .stat {
+      padding: 18px;
+      border: 1px solid var(--slate-200);
+      border-radius: var(--radius);
+      background: rgba(255, 255, 255, .86);
+      box-shadow: var(--shadow-sm);
+    }
+    .stat strong { display: block; color: var(--orange-600); font-size: 30px; line-height: 1; }
+    .stat span { display: block; margin-top: 7px; color: var(--slate-600); font-weight: 650; }
+
+    .section-head {
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 24px;
+      margin: 64px 0 20px;
+    }
+    .section-kicker {
+      margin: 0 0 6px;
+      color: var(--orange-600);
+      font-size: 12px;
+      font-weight: 850;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+    .section-head h2 { margin: 0; font-size: clamp(27px, 4vw, 40px); letter-spacing: -.035em; }
+    .section-head p { max-width: 600px; margin: 8px 0 0; color: var(--slate-600); }
+
+    .panel {
+      padding: clamp(20px, 3vw, 30px);
+      border: 1px solid var(--slate-200);
+      border-radius: var(--radius-lg);
+      background: var(--white);
+      box-shadow: var(--shadow-sm);
+    }
+    .panel + .panel { margin-top: 18px; }
+    .panel h3 { margin: 0 0 14px; font-size: 21px; letter-spacing: -.02em; }
+    .panel h4 { margin: 26px 0 10px; }
+    .muted { color: var(--slate-600); }
+    .note {
+      padding: 15px 17px;
+      border-left: 4px solid var(--orange-500);
+      border-radius: 0 12px 12px 0;
+      color: var(--slate-700);
+      background: var(--orange-50);
+    }
+
+    .mockup {
+      position: relative;
+      padding: 12px;
+      border: 1px solid var(--slate-200);
+      border-radius: 18px;
+      background: linear-gradient(145deg, #fff, #f4f6f9);
+      box-shadow: var(--shadow-md);
+    }
+    .mockup a { display: block; overflow: hidden; border-radius: 12px; }
+    .mockup img { display: block; width: 100%; transition: transform .3s ease; }
+    .mockup a:hover img { transform: scale(1.01); }
+    .mockup figcaption { padding: 12px 4px 2px; color: var(--slate-600); font-size: 13px; }
+
+    .grid-2 { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
+    .grid-3 { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+    .grid-4 { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 14px; }
+    .card {
+      padding: 18px;
+      border: 1px solid var(--slate-200);
+      border-radius: var(--radius);
+      background: var(--white);
+      box-shadow: var(--shadow-sm);
+    }
+    .card h3, .card h4 { margin: 0 0 8px; }
+    .card p { margin: 0; color: var(--slate-600); }
+    .card-accent { border-top: 4px solid var(--orange-500); }
+
+    .column-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+    .column-item {
+      min-height: 124px;
+      padding: 15px;
+      border: 1px solid var(--slate-200);
+      border-radius: 14px;
+      background: var(--slate-50);
+    }
+    .column-item strong { display: block; margin-bottom: 5px; color: var(--navy-900); }
+    .column-item span { color: var(--slate-600); font-size: 13px; }
+
+    .status-card { display: flex; align-items: center; gap: 12px; }
+    .status-card img { width: 42px; height: 42px; }
+    .status-card small { display: block; color: var(--slate-500); }
+
+    .tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      padding: 4px 9px;
+      border-radius: 999px;
+      color: var(--orange-700);
+      background: var(--orange-100);
+      font-size: 12px;
+      font-weight: 800;
+    }
+    .tag.high { color: #9d174d; background: #fce7f3; }
+    .tag.medium { color: #92400e; background: #fef3c7; }
+    .tag.req { color: #3730a3; background: #e0e7ff; }
+    .tag.ex { color: #b42318; background: #fee4e2; }
+
+    .flow-list { display: grid; gap: 14px; counter-reset: flow; }
+    .flow {
+      position: relative;
+      padding: 22px 22px 22px 68px;
+      border: 1px solid var(--slate-200);
+      border-radius: var(--radius);
+      background: var(--white);
+    }
+    .flow::before {
+      counter-increment: flow;
+      content: counter(flow, decimal-leading-zero);
+      position: absolute;
+      top: 20px;
+      left: 18px;
+      display: grid;
+      width: 36px;
+      height: 36px;
+      place-items: center;
+      border-radius: 11px;
+      color: var(--white);
+      background: var(--orange-500);
+      font-weight: 900;
+    }
+    .flow h3 { margin: 0 0 8px; }
+    .flow ol { margin: 0; padding-left: 20px; color: var(--slate-700); }
+
+    .exception { border-left: 4px solid #ef4444; }
+    .exception strong { color: var(--red); }
+
+    .formula-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; }
+    .formula {
+      padding: 18px;
+      border: 1px solid #ffd6c2;
+      border-radius: 16px;
+      background: linear-gradient(160deg, #fff, var(--orange-50));
+    }
+    .formula h4 { margin: 0 0 12px; color: var(--orange-700); }
+    .fraction { display: grid; justify-items: center; color: var(--navy-900); font-weight: 720; text-align: center; }
+    .fraction .top { padding: 0 10px 7px; border-bottom: 2px solid var(--navy-800); }
+    .fraction .bottom { padding-top: 7px; }
+    .formula .teacher { margin-top: 16px; padding-top: 12px; border-top: 1px dashed #f5b896; color: var(--slate-600); font-size: 13px; }
+
+    .filters {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      align-items: center;
+      padding: 14px;
+      border: 1px solid var(--slate-200);
+      border-radius: 14px;
+      background: var(--white);
+      position: sticky;
+      top: 10px;
+      z-index: 10;
+      box-shadow: var(--shadow-md);
+    }
+    .search {
+      min-width: min(100%, 320px);
+      flex: 1 1 260px;
+      height: 42px;
+      padding: 0 13px;
+      border: 1px solid var(--slate-300);
+      border-radius: 10px;
+      color: var(--navy-950);
+      background: var(--white);
+      outline: none;
+    }
+    .search:focus { border-color: var(--orange-500); box-shadow: 0 0 0 4px rgba(244, 91, 10, .12); }
+    .testcases { display: grid; gap: 10px; margin-top: 16px; }
+    .testcase {
+      border: 1px solid var(--slate-200);
+      border-radius: 14px;
+      background: var(--white);
+      overflow: clip;
+    }
+    .testcase[hidden] { display: none; }
+    .testcase summary {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 15px 17px;
+      cursor: pointer;
+      list-style: none;
+    }
+    .testcase summary::-webkit-details-marker { display: none; }
+    .testcase summary::after { content: "+"; margin-left: auto; color: var(--orange-600); font-size: 22px; font-weight: 700; }
+    .testcase[open] summary::after { content: "−"; }
+    .testcase-title { min-width: 0; font-weight: 780; }
+    .case-body {
+      display: grid;
+      grid-template-columns: minmax(180px, .7fr) minmax(0, 1.3fr);
+      gap: 18px;
+      padding: 18px;
+      border-top: 1px solid var(--slate-200);
+      background: var(--slate-50);
+    }
+    .case-meta { color: var(--slate-600); }
+    .case-meta div + div { margin-top: 8px; }
+    .case-steps { display: grid; gap: 10px; }
+    .step { padding: 10px 12px; border-left: 3px solid var(--orange-400); background: var(--white); }
+    .expected { margin: 14px 0 0; padding-left: 20px; }
+    .expected li + li { margin-top: 4px; }
+    .empty-filter { display: none; padding: 28px; color: var(--slate-600); text-align: center; }
+
+    .question-list { display: grid; gap: 10px; margin: 0; padding: 0; counter-reset: question; list-style: none; }
+    .question-list li {
+      position: relative;
+      padding: 14px 16px 14px 54px;
+      border: 1px solid #f4d8a4;
+      border-radius: 13px;
+      background: #fffbeb;
+      color: #664d03;
+    }
+    .question-list li::before {
+      counter-increment: question;
+      content: counter(question);
+      position: absolute;
+      top: 12px;
+      left: 14px;
+      display: grid;
+      width: 28px;
+      height: 28px;
+      place-items: center;
+      border-radius: 9px;
+      color: #fff;
+      background: #d99100;
+      font-weight: 850;
+    }
+
+    .footer {
+      margin-top: 64px;
+      padding-top: 24px;
+      border-top: 1px solid var(--slate-200);
+      color: var(--slate-500);
+      text-align: center;
+    }
+
+    @media (max-width: 1120px) {
+      :root { --sidebar: 244px; }
+      .column-grid, .grid-3, .formula-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .stats { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
+    @media (max-width: 780px) {
+      .sidebar { position: static; width: auto; padding: 14px; }
+      .brand { padding-bottom: 12px; }
+      .nav-title, .sidebar-footer { display: none; }
+      .nav { display: flex; overflow-x: auto; padding-top: 10px; }
+      .nav a { flex: 0 0 auto; }
+      main { width: 100%; margin: 0; padding: 18px 14px 60px; }
+      .hero { border-radius: 18px; }
+      .grid-2, .grid-3, .grid-4, .column-grid, .formula-grid, .case-body { grid-template-columns: 1fr; }
+      .section-head { align-items: start; flex-direction: column; }
+      .filters { position: static; }
+    }
+    @media print {
+      body { background: #fff; font-size: 11px; }
+      .sidebar, .hero-actions, .filters, .skip-link { display: none !important; }
+      main { width: 100%; margin: 0; padding: 0; }
+      .hero { color: #111; background: #fff; border: 2px solid #111; box-shadow: none; }
+      .hero p { color: #333; }
+      .panel, .card, .stat, .mockup, .testcase { break-inside: avoid; box-shadow: none; }
+      .section-head { margin-top: 32px; }
+      .testcase { display: block !important; }
+      .testcase summary::after { display: none; }
+      .testcase:not([open]) .case-body { display: grid; }
+    }
+
+    .doc-shell { min-width: 0; }
+    .doc-toolbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      margin-bottom: 18px;
+      padding: 14px 16px;
+      border: 1px solid var(--slate-200);
+      border-radius: 14px;
+      background: rgba(255,255,255,.92);
+      box-shadow: var(--shadow-sm);
+    }
+    .doc-toolbar-left, .doc-toolbar-right { display: flex; flex-wrap: wrap; align-items: center; gap: 9px; }
+    .sync-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      padding: 6px 10px;
+      border-radius: 999px;
+      color: #067647;
+      background: #ecfdf3;
+      border: 1px solid #abefc6;
+      font-size: 12px;
+      font-weight: 800;
+    }
+    .sync-badge::before { content: "✓"; }
+    .hash { color: var(--slate-500); font: 12px ui-monospace, SFMono-Regular, Menlo, monospace; }
+    .markdown-body {
+      padding: clamp(24px, 4vw, 54px);
+      border: 1px solid var(--slate-200);
+      border-radius: var(--radius-lg);
+      background: var(--white);
+      box-shadow: var(--shadow-md);
+      overflow: hidden;
+    }
+    .markdown-body > h1 {
+      position: relative;
+      margin: -54px -54px 42px;
+      padding: 62px 54px 54px;
+      color: var(--white);
+      background:
+        radial-gradient(circle at 88% 10%, rgba(255,122,50,.36), transparent 20rem),
+        linear-gradient(115deg, var(--navy-950), #243047 68%, #713209);
+      font-size: clamp(34px, 5vw, 62px);
+      line-height: 1.05;
+      letter-spacing: -.045em;
+    }
+    .markdown-body h2 {
+      margin: 70px 0 24px;
+      padding: 0 0 13px;
+      border-bottom: 2px solid var(--slate-200);
+      font-size: clamp(27px, 4vw, 39px);
+      line-height: 1.15;
+      letter-spacing: -.035em;
+      scroll-margin-top: 24px;
+    }
+    .markdown-body h2::first-letter { color: var(--orange-600); }
+    .markdown-body h3 {
+      margin: 38px 0 16px;
+      color: var(--navy-900);
+      font-size: 23px;
+      line-height: 1.25;
+      letter-spacing: -.02em;
+      scroll-margin-top: 24px;
+    }
+    .markdown-body h4 {
+      margin: 28px 0 12px;
+      color: var(--orange-700);
+      font-size: 17px;
+      scroll-margin-top: 24px;
+    }
+    .markdown-body p { margin: 12px 0; }
+    .markdown-body strong { color: var(--navy-900); }
+    .markdown-body ul, .markdown-body ol { padding-left: 1.35rem; }
+    .markdown-body li { margin: 6px 0; }
+    .markdown-body li::marker { color: var(--orange-500); font-weight: 800; }
+    .markdown-body hr {
+      height: 1px;
+      margin: 48px 0;
+      border: 0;
+      background: linear-gradient(90deg, transparent, var(--slate-300), transparent);
+    }
+    .markdown-body > p[align="center"] {
+      margin: 22px 0 28px;
+      padding: 12px;
+      border: 1px solid var(--slate-200);
+      border-radius: 18px;
+      background: linear-gradient(145deg, #fff, #f5f7fa);
+      box-shadow: var(--shadow-md);
+    }
+    .markdown-body > p[align="center"] a { display: inline-block; max-width: 100%; }
+    .markdown-body > p[align="center"] img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+      margin: auto;
+      border-radius: 12px;
+    }
+    .markdown-body > p[align="center"] em {
+      display: block;
+      margin-top: 10px;
+      color: var(--slate-500);
+      font-size: 13px;
+    }
+    .table-wrap {
+      width: 100%;
+      margin: 18px 0 28px;
+      overflow: auto;
+      border: 1px solid var(--slate-200);
+      border-radius: 15px;
+      background: var(--white);
+      box-shadow: var(--shadow-sm);
+    }
+    .markdown-body table {
+      width: 100%;
+      min-width: 720px;
+      border-collapse: separate;
+      border-spacing: 0;
+      font-size: 14px;
+    }
+    .markdown-body th {
+      position: sticky;
+      top: 0;
+      z-index: 2;
+      padding: 12px 14px;
+      color: var(--white);
+      background: var(--navy-900);
+      border-bottom: 1px solid var(--navy-800);
+      text-align: left;
+      white-space: nowrap;
+    }
+    .markdown-body td {
+      padding: 12px 14px;
+      border-bottom: 1px solid var(--slate-200);
+      vertical-align: top;
+    }
+    .markdown-body tbody tr:nth-child(even) td { background: var(--slate-50); }
+    .markdown-body tbody tr:hover td { background: var(--orange-50); }
+    .markdown-body tbody tr:last-child td { border-bottom: 0; }
+    .markdown-body td img { display: block; width: 36px; height: 36px; max-width: none; }
+    .markdown-body pre {
+      position: relative;
+      margin: 16px 0 24px;
+      padding: 18px 20px;
+      overflow: auto;
+      border: 1px solid #ffd3bd;
+      border-radius: 14px;
+      color: #fff7ed;
+      background: linear-gradient(145deg, #172033, #222f48);
+      box-shadow: var(--shadow-sm);
+      font: 13px/1.75 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    }
+    .markdown-body pre code { padding: 0; border: 0; color: inherit; background: none; font: inherit; }
+    .markdown-body blockquote {
+      margin: 18px 0;
+      padding: 13px 16px;
+      border-left: 4px solid var(--orange-500);
+      border-radius: 0 12px 12px 0;
+      color: var(--slate-700);
+      background: var(--orange-50);
+    }
+    .case-tools {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 10px;
+      margin: 12px 0 14px;
+      padding: 13px;
+      border: 1px solid var(--slate-200);
+      border-radius: 13px;
+      background: var(--slate-50);
+    }
+    .case-tools input {
+      flex: 1 1 280px;
+      height: 42px;
+      padding: 0 13px;
+      border: 1px solid var(--slate-300);
+      border-radius: 10px;
+      outline: none;
+    }
+    .case-tools input:focus { border-color: var(--orange-500); box-shadow: 0 0 0 4px rgba(244,91,10,.12); }
+    .case-count { color: var(--orange-700); font-weight: 800; white-space: nowrap; }
+    .testcase-table table { min-width: 1500px; }
+    .testcase-table th:first-child, .testcase-table td:first-child {
+      position: sticky;
+      left: 0;
+      z-index: 1;
+      min-width: 230px;
+      box-shadow: 1px 0 0 var(--slate-200);
+    }
+    .testcase-table th:first-child { z-index: 3; background: var(--navy-900); }
+    .testcase-table td:first-child { background: var(--white); font-weight: 750; }
+    .testcase-table tbody tr:nth-child(even) td:first-child { background: var(--slate-50); }
+    .testcase-table tbody tr:hover td:first-child { background: var(--orange-50); }
+    .source-note {
+      margin-top: 18px;
+      color: var(--slate-500);
+      text-align: center;
+      font-size: 12px;
+    }
+    @media (max-width: 780px) {
+      .doc-toolbar { align-items: flex-start; flex-direction: column; }
+      .markdown-body { padding: 20px 16px; border-radius: 16px; }
+      .markdown-body > h1 { margin: -20px -16px 32px; padding: 40px 20px 34px; }
+      .markdown-body h2 { margin-top: 48px; }
+      .markdown-body table { font-size: 13px; }
+    }
+    @media print {
+      .doc-toolbar, .case-tools { display: none !important; }
+      .markdown-body { padding: 0; border: 0; box-shadow: none; overflow: visible; }
+      .markdown-body > h1 { margin: 0 0 32px; padding: 30px; color: #111; background: #fff; border: 2px solid #111; }
+      .table-wrap { overflow: visible; box-shadow: none; }
+      .markdown-body table { min-width: 0 !important; font-size: 9px; }
+      .markdown-body th { position: static; color: #111; background: #eee; }
+      .testcase-table th:first-child, .testcase-table td:first-child { position: static; }
+    }
+</style>
+</head>
+<body>
+  <a class="skip-link" href="#document">Đi đến nội dung chính</a>
+  <aside class="sidebar" aria-label="Mục lục requirement">
+    <div class="brand">
+      <div class="brand-mark">ics</div>
+      <div><strong>ICS Requirement</strong><small>Student Management · Student List</small></div>
+    </div>
+    <div class="nav-title">Nội dung Markdown</div>
+    <nav id="docNav" class="nav"></nav>
+    <div class="sidebar-footer">
+      HTML được render trực tiếp từ Markdown nguồn.<br>
+      <a href="./student_management_requirements.md">Mở file Markdown</a>
+    </div>
+  </aside>
+  <main class="doc-shell">
+    <div class="doc-toolbar">
+      <div class="doc-toolbar-left">
+        <span class="sync-badge">Đồng bộ 100% từ Markdown</span>
+        <span class="hash">SHA-256: c794e582b4c7…</span>
+      </div>
+      <div class="doc-toolbar-right">
+        <a class="button ghost small" href="./student_management_requirements.md">Xem Markdown</a>
+        <button class="button small" type="button" onclick="window.print()">In / Lưu PDF</button>
+      </div>
+    </div>
+    <article id="document" class="markdown-body" data-source-sha256="c794e582b4c7232e641193ee0cbab6a44872b95f7d2ab5ad704db4dd94a6c4f6">
+<h1 id="quan-ly-hoc-vien">Quản lý học viên</h1>
+<blockquote>
+<p>Requirement sáu tab Chi tiết học viên được tách riêng tại <a href="./student_detail_requirements.html">Chi tiết học viên</a>. Danh sách lớp/Học phí/Ghi chú dùng chung nghiệp vụ ba tab lịch sử; cách phân trang và quyền Quy trình/Log đặc tả tại màn chi tiết.</p>
+</blockquote>
+<h2 id="1-ui">1. UI</h2>
+<h3 id="trang-1-danh-sach-hoc-vien">Trang 1: Danh sách học viên</h3>
+<p align="center">
+  <a href="./images/01-student-list.png"><img src="./images/01-student-list.png" alt="Danh sách học viên" width="760" title="Nhấn để xem ảnh gốc"></a><br>
+  <em>Danh sách học viên — nhấn để xem ảnh gốc</em>
+</p>
+
+<p><strong>Mô tả:</strong></p>
+<ul>
+<li>Administrator, Sale, Support và Class Handler xem và thao tác trên danh sách học viên theo phạm vi dữ liệu được cấp.</li>
+</ul>
+<p><strong>Điểm cần lưu ý:</strong></p>
+<ul>
+<li>Ảnh danh sách chuẩn mới nhất là <code>01-student-list.png</code> được người dùng cập nhật. Ảnh hover/menu bên dưới chỉ tham chiếu thao tác; bố cục hàng/cột lấy theo ảnh chuẩn này.</li>
+<li>Bảng gồm các cột theo thứ tự: <code>Tên &amp; mã học viên</code>, <code>Gmail</code>, <code>Ngày chốt đơn</code>, <code>Số lớp</code>, <code>Số bill</code>, <code>Lớp hiện tại</code>, <code>Ghi chú</code>, <code>Tổng doanh thu</code>, <code>Hoàn tiền</code>; cuối dòng có mũi tên mở Chi tiết học viên.</li>
+<li>Ô Tên &amp; mã học viên theo ảnh chuẩn mới: icon trạng thái bên trái, avatar, tên học viên và <code>Mã HV</code> ở dòng dưới; badge lịch hẹn cạnh tên khi có dữ liệu. Không thêm hàng nhãn tag phía trên tên trong bố cục danh sách này. Bộ lọc Tag vẫn dùng dữ liệu tag do user định nghĩa. Badge cạnh tên là số lịch hẹn hiện có của học viên.</li>
+<li>Có ô tìm kiếm, bộ lọc <code>Trạng thái</code>, bộ lọc <code>Tag</code> và nút <code>+</code> tạo tài khoản cạnh tiêu đề. Nút Excel xuất danh sách nằm ở góc dưới bên phải bảng, cùng hàng với phần phân trang.</li>
+<li>Search chỉ áp dụng trên <code>Tên học viên</code>, khớp chứa từ khóa; sau 2 giây kể từ lần nhập cuối tự tìm kiếm. Giữ thao tác Enter tìm ngay theo requirement hiện có.</li>
+<li>Danh sách sắp xếp theo <strong>ngày tạo học viên giảm dần, mới nhất trước</strong>; áp dụng cả khi tìm kiếm, lọc và phân trang.</li>
+<li>Trạng thái học viên thuộc từng quan hệ học viên–lớp và khác trạng thái của lớp học. Học viên có 3 lớp có 3 trạng thái học viên riêng, có thể khác nhau; không tổng hợp thành một status chung và không tự lấy status của lớp làm status học viên.</li>
+<li>Danh sách tổng chỉ hiển thị status theo lớp; chỉ được chỉnh tại <code>Cài đặt lớp → Học viên → Chọn trạng thái</code>, mở dropdown 7 trạng thái đã duyệt. Bấm icon status trên danh sách tổng không được đổi trạng thái.</li>
+<li>Lịch sử lớp hiển thị icon trạng thái của từng lớp theo <a href="../class_management/class_management_requirements.md#trạng-thái-lớp">Trạng thái lớp</a>. Khi chưa có lớp hiện tại, cột đó hiển thị <code>Chưa có</code>. Bộ lọc Trạng thái có ba checkbox <code>Mới [0] / Đang học [1] / Đợi lớp [2]</code>, chọn nhiều; logic phân loại do BE xử lý, độc lập với status học viên trong lớp.</li>
+<li>Các tên, số tiền, tag và mã trong ảnh là dữ liệu minh họa. <code>Mã HV: 00001</code> và Code <code>173201</code> trong popup không thay thế quy tắc Code 6 chữ số theo cấp độ đã xác nhận bên dưới.</li>
+</ul>
+<p><strong>Ý nghĩa cột và thao tác:</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Thành phần</th>
+<th>Dữ liệu / hành vi</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Tên học viên</td>
+<td>Bấm tên mở menu <code>Thêm lịch hẹn</code> / <code>Xem lịch sử</code>.</td>
+</tr>
+<tr>
+<td>Mũi tên cuối dòng</td>
+<td>Mở Chi tiết của đúng học viên trên dòng theo <a href="./student_detail_requirements.html">Requirement Chi tiết học viên</a>.</td>
+</tr>
+<tr>
+<td>Gmail</td>
+<td>Hiển thị email học viên; nhãn Gmail không giới hạn domain <code>@gmail.com</code>.</td>
+</tr>
+<tr>
+<td>Ngày chốt đơn</td>
+<td>Hiển thị ngày chốt đơn của học viên theo định dạng trong UI; không dùng Ngày chốt đơn để sắp xếp danh sách; thứ tự lấy theo ngày tạo học viên.</td>
+</tr>
+<tr>
+<td>Số lớp</td>
+<td>Tổng tất cả lớp học viên đã được thêm vào, không chỉ lớp hiện tại. Hover/bấm badge để xem mã các lớp tương ứng. Giá trị 0 dùng badge xám, không mở danh sách rỗng.</td>
+</tr>
+<tr>
+<td>Số bill</td>
+<td>Số hóa đơn được thêm/liên kết với học viên. Chỉ hiển thị số; bấm hoặc hover không mở danh sách, popup hay điều hướng. Giá trị 0 dùng badge xám.</td>
+</tr>
+<tr>
+<td>Lớp hiện tại</td>
+<td>Chỉ gồm lớp mà <strong>đồng thời</strong> status học viên trong lớp là <code>Đang học</code> và trạng thái của lớp cũng là <code>Đang học</code>. Badge đỏ là số lớp đáp ứng cả hai điều kiện; hover icon chỉ hiển thị mã lớp, ví dụ <code>DN1-122</code>, không hiển thị tên lớp. Không có lớp đáp ứng thì hiển thị text <code>Chưa có</code>.</td>
+</tr>
+<tr>
+<td>Ghi chú</td>
+<td>Hover/bấm icon mở nội dung ghi chú của đúng học viên theo popup <code>Ghi Chú Chi Tiết</code> trong ảnh. Màu cam khi có ghi chú, xám khi không có; không dùng màu cam để biểu thị chưa xử lý. Không hiển thị ghi chú ngoài quyền truy cập.</td>
+</tr>
+<tr>
+<td>Tổng doanh thu</td>
+<td>Tổng số tiền các hóa đơn của học viên trừ tổng số tiền hóa đơn có trạng thái <code>Hoàn tiền</code>; hiển thị badge cam như UI.</td>
+</tr>
+<tr>
+<td>Hoàn tiền</td>
+<td>Tổng số tiền của các bill có trạng thái <code>Hoàn tiền</code>, xác định theo trạng thái bill. Khi có giá trị hiển thị số đỏ/viền đỏ; không có hoàn tiền hiển thị <code>0 đ</code> nền xám.</td>
+</tr>
+</tbody>
+</table></div>
+<p align="center">
+  <a href="./images/19-student-list-hover-actions.png"><img src="./images/19-student-list-hover-actions.png" alt="Menu tên học viên, tooltip mã lớp và ghi chú chi tiết" width="760" title="Nhấn để xem ảnh gốc"></a><br>
+  <em>UI mới — menu thao tác, mã các lớp và ghi chú của học viên</em>
+</p>
+
+<p><strong>Công thức doanh thu và hoàn tiền:</strong></p>
+<ul>
+<li><code>Hoàn tiền = Σ số tiền bill có trạng thái Hoàn tiền</code>.</li>
+<li><code>Tổng doanh thu = Σ số tiền tất cả bill của học viên − Hoàn tiền</code>. Không lấy tổng các lần thực thu làm cơ sở cho cột này và không trừ cùng một bill hoàn tiền hai lần.</li>
+<li>Ví dụ học viên có 3 bill <code>1.000.000</code>, <code>2.000.000</code>, <code>3.000.000 đ</code>: ban đầu doanh thu <code>6.000.000 đ</code>. Khi bill <code>3.000.000 đ</code> có trạng thái <code>Hoàn tiền</code>, cột Hoàn tiền là <code>3.000.000 đ</code>, cột Tổng doanh thu còn <code>3.000.000 đ</code>; Số bill vẫn là 3 vì vẫn có 3 hóa đơn liên kết.</li>
+<li>Sau khi thêm/liên kết, chỉnh sửa số tiền hoặc đổi trạng thái bill thành công, tải lại các số liệu của đúng học viên từ dữ liệu hóa đơn đã lưu; không dùng số tiền mẫu trong ảnh.</li>
+</ul>
+<h4 id="testcase-danh-sach-hoc-vien-thao-tac-dong-va-pham-vi-du-lieu">Testcase — Danh sách học viên, thao tác dòng và phạm vi dữ liệu</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 1: Hiển thị danh sách học viên</td>
+<td>High</td>
+<td>Smoke</td>
+<td>Flow 1 / REQ30</td>
+<td>Administrator</td>
+<td>Có dữ liệu học viên</td>
+<td><strong>Given</strong> Administrator đã đăng nhập<br><strong>When</strong> Mở Quản lý → Học viên<br><strong>Then</strong> Hệ thống hiển thị danh sách theo UI mới</td>
+<td>- Đúng thứ tự Tên &amp; mã học viên, Gmail, Ngày chốt đơn, Số lớp, Số bill, Lớp hiện tại, Ghi chú, Tổng doanh thu, Hoàn tiền và mũi tên chi tiết<br>- Có avatar, tên/Mã HV hai dòng, badge lịch hẹn và status theo lớp; không thêm hàng tag phía trên tên<br>- Sắp ngày tạo học viên mới nhất trước<br>- Excel góc dưới bên phải bảng</td>
+</tr>
+<tr>
+<td>Case 20: Mở menu thao tác học viên</td>
+<td>High</td>
+<td></td>
+<td>REQ11</td>
+<td>Administrator</td>
+<td>Học viên có lịch hẹn</td>
+<td><strong>Given</strong> Danh sách học viên đang mở<br><strong>When</strong> Click tên học viên<br><strong>Then</strong> Hệ thống mở menu thao tác</td>
+<td>- Badge bằng tổng số lịch hẹn<br>- Có <code>Thêm Lịch Hẹn</code> và <code>Xem Lịch sử</code></td>
+</tr>
+<tr>
+<td>Case 25: Phạm vi học viên theo người được gán</td>
+<td>High</td>
+<td></td>
+<td>REQ15 / REQ16</td>
+<td>Sale, Support, Class Handler</td>
+<td>User được gán vào một số học viên</td>
+<td><strong>Given</strong> User đăng nhập và mở danh sách học viên<br><strong>When</strong> Hệ thống tải dữ liệu<br><strong>Then</strong> Chỉ hiển thị học viên user được gán phụ trách hoặc theo dõi</td>
+<td>- Không hiển thị học viên chưa được gán<br>- Một học viên chỉ xuất hiện một lần dù user được gán cả hai vai trò</td>
+</tr>
+<tr>
+<td>Case 31: Sale, Support và Class Handler có đầy đủ quyền thao tác</td>
+<td>High</td>
+<td></td>
+<td>REQ01 / Ràng buộc quyền</td>
+<td>Sale, Support, Class Handler</td>
+<td>User có ít nhất một học viên được gán</td>
+<td><strong>Given</strong> User đăng nhập bằng từng role và mở một học viên thuộc phạm vi được gán<br><strong>When</strong> Lần lượt thực hiện các chức năng trong màn hình Quản lý học viên<br><strong>Then</strong> Hệ thống cho phép thao tác như Administrator</td>
+<td>- Được search, filter, phân trang, xuất Excel, tạo tài khoản, thêm lịch hẹn, xem lịch sử, thao tác hóa đơn và thêm/lọc ghi chú<br>- Dữ liệu ngoài phạm vi được gán không hiển thị và không thể thao tác trực tiếp</td>
+</tr>
+<tr>
+<td>Case 50: Sắp xếp ngày tạo học viên mới nhất trước</td>
+<td>High</td>
+<td></td>
+<td>REQ30</td>
+<td>Administrator</td>
+<td>Có hơn 10 học viên với ngày tạo khác nhau; Ngày chốt đơn có thể trùng hoặc khác thứ tự ngày tạo</td>
+<td><strong>Given</strong> User mở danh sách<br><strong>When</strong> Xem nhiều trang, search/filter và tải lại sau khi tạo<br><strong>Then</strong> Danh sách luôn sắp ngày tạo giảm dần</td>
+<td>- Học viên tạo gần nhất đứng trước học viên tạo cũ hơn<br>- Không lấy Ngày chốt đơn làm khóa sắp xếp, kể cả khi hai học viên trùng ngày này<br>- Học viên vừa tạo đứng theo ngày tạo trong tập kết quả đang lọc<br>- Search/filter/phân trang giữ thứ tự, footer dùng đơn vị học viên</td>
+</tr>
+<tr>
+<td>Case 52: Số bill chỉ hiển thị</td>
+<td>Medium</td>
+<td></td>
+<td>REQ12</td>
+<td>Administrator</td>
+<td>Học viên có số bill 0 hoặc lớn hơn 0</td>
+<td><strong>Given</strong> User quan sát cột Số bill<br><strong>When</strong> Hover/bấm badge<br><strong>Then</strong> Không mở nội dung</td>
+<td>- Số đúng số hóa đơn được thêm/liên kết<br>- Không mở popup danh sách, tooltip bill hoặc điều hướng</td>
+</tr>
+<tr>
+<td>Case 53: Màu và nội dung Ghi chú</td>
+<td>High</td>
+<td></td>
+<td>REQ32</td>
+<td>Administrator, Sale, Support, Class Handler</td>
+<td>Có học viên có và chưa có ghi chú trong phạm vi user</td>
+<td><strong>Given</strong> Danh sách đang mở<br><strong>When</strong> Hover/bấm icon Ghi chú<br><strong>Then</strong> Mở nội dung đúng học viên</td>
+<td>- Có ghi chú: icon cam, nội dung khớp dữ liệu<br>- Chưa có: icon xám<br>- Không dùng màu cam để chỉ ghi chú chưa xử lý<br>- Không lộ ghi chú ngoài quyền truy cập</td>
+</tr>
+<tr>
+<td>Case 54: Menu tên và mũi tên chi tiết</td>
+<td>High</td>
+<td></td>
+<td>REQ32</td>
+<td>Administrator</td>
+<td>Có nhiều học viên</td>
+<td><strong>Given</strong> User thao tác dòng học viên A<br><strong>When</strong> Lần lượt bấm tên và mũi tên cuối dòng<br><strong>Then</strong> Mở đúng đích</td>
+<td>- Tên mở menu Thêm lịch hẹn/Xem lịch sử<br>- Mũi tên mở Chi tiết học viên A<br>- Không lẫn học viên hoặc đích thao tác</td>
+</tr>
+<tr>
+<td>Case 55: Doanh thu trừ bill Hoàn tiền</td>
+<td>High</td>
+<td></td>
+<td>REQ31</td>
+<td>Administrator</td>
+<td>Học viên có 3 bill 1, 2 và 3 triệu</td>
+<td><strong>Given</strong> Doanh thu ban đầu là 6 triệu, hoàn tiền 0<br><strong>When</strong> Bill 3 triệu được lưu trạng thái Hoàn tiền<br><strong>Then</strong> Tải lại số liệu</td>
+<td>- Doanh thu 3 triệu, Hoàn tiền 3 triệu, Số bill 3<br>- Hoàn tiền hiển thị đỏ/viền đỏ<br>- Tải lại trang không trừ thêm lần nữa<br>- Không đổi số liệu học viên khác</td>
+</tr>
+</tbody>
+</table></div>
+<h4 id="tim-kiem-theo-ten-va-ket-hop-dieu-kien">Tìm kiếm theo tên và kết hợp điều kiện</h4>
+<ul>
+<li>Tìm theo Tên học viên, khớp chứa từ khóa; tự tìm sau 2 giây từ lần nhập cuối, Enter tìm ngay và hủy lượt đang chờ.</li>
+<li>Search, Trạng thái và Tag kết hợp bằng AND; thay đổi điều kiện về trang 1, giữ thứ tự ngày tạo học viên giảm dần (mới nhất trước).</li>
+</ul>
+<h5 id="testcase-tim-kiem-theo-ten-va-ket-hop-dieu-kien">Testcase — Tìm kiếm theo tên và kết hợp điều kiện</h5>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 3: Thay đổi điều kiện khi đang ở trang sau</td>
+<td>Medium</td>
+<td></td>
+<td>REQ04</td>
+<td>Administrator</td>
+<td>User đang ở trang lớn hơn 1</td>
+<td><strong>Given</strong> Danh sách đang có search hoặc filter<br><strong>When</strong> User thay đổi một điều kiện<br><strong>Then</strong> Hệ thống tải kết quả mới từ trang 1</td>
+<td>- Trang 1 active<br>- Kết quả đúng điều kiện mới</td>
+</tr>
+<tr>
+<td>Case 14: Search tương đối theo tên sau 2 giây</td>
+<td>High</td>
+<td>Smoke</td>
+<td>Flow 2 / REQ03</td>
+<td>Administrator</td>
+<td>Có học viên tên <code>Quỳnh Nhi</code> và các field khác chứa từ khóa</td>
+<td><strong>Given</strong> User nhập <code>Nhi</code> và dừng nhập<br><strong>When</strong> Đủ 2 giây từ ký tự cuối<br><strong>Then</strong> Hệ thống tìm một lần theo Tên học viên bằng khớp chứa</td>
+<td>- Hiển thị <code>Quỳnh Nhi</code> dù từ khóa không phải toàn bộ tên<br>- Không search theo code, email hoặc số điện thoại<br>- Không tìm kiếm trước 2 giây</td>
+</tr>
+<tr>
+<td>Case 15: Nhập tiếp trước thời gian auto search</td>
+<td>Medium</td>
+<td></td>
+<td>EX06</td>
+<td>Administrator</td>
+<td>Bộ đếm 2 giây đang chạy</td>
+<td><strong>Given</strong> User vừa nhập một phần từ khóa<br><strong>When</strong> Nhập thêm trước khi đủ 2 giây<br><strong>Then</strong> Hệ thống hủy bộ đếm cũ và tính lại từ ký tự mới nhất</td>
+<td>- Chỉ tìm kiếm sau 2 giây kể từ lần nhập cuối</td>
+</tr>
+<tr>
+<td>Case 16: Search ngay bằng Enter</td>
+<td>High</td>
+<td></td>
+<td>Flow 2 / EX07</td>
+<td>Administrator</td>
+<td>Ô search có từ khóa và đang chờ auto search</td>
+<td><strong>Given</strong> Chưa đủ 2 giây<br><strong>When</strong> User nhấn Enter<br><strong>Then</strong> Hệ thống tìm kiếm ngay một lần</td>
+<td>- Hủy lượt auto search đang chờ<br>- Không gửi request tìm kiếm lặp</td>
+</tr>
+<tr>
+<td>Case 17: Xóa từ khóa tìm kiếm</td>
+<td>Medium</td>
+<td></td>
+<td>Flow 2</td>
+<td>Administrator</td>
+<td>Danh sách đang có kết quả search</td>
+<td><strong>Given</strong> Ô search có từ khóa<br><strong>When</strong> User xóa hết từ khóa và chờ 2 giây hoặc nhấn Enter<br><strong>Then</strong> Hệ thống hiển thị lại danh sách theo filter còn lại từ trang 1</td>
+<td>- Không còn áp dụng điều kiện từ khóa</td>
+</tr>
+</tbody>
+</table></div>
+<h4 id="bo-loc-trang-thai-logic-hoc-vien-do-be-xu-ly">Bộ lọc Trạng thái — logic học viên do BE xử lý</h4>
+<p align="center">
+  <a href="./images/21-student-status-filter.png"><img src="./images/21-student-status-filter.png" alt="Bộ lọc Trạng thái: checkbox Mới, Đang học, Đợi lớp" width="400" title="Nhấn để xem ảnh gốc"></a><br>
+  <em>UI mới — dropdown Trạng thái chọn nhiều bằng checkbox</em>
+</p>
+
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Giá trị logic gửi BE</th>
+<th>Nhãn checkbox trên UI</th>
+<th>Ý nghĩa nghiệp vụ đã chốt</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>[0]</code></td>
+<td>Mới</td>
+<td>Chỉ học viên chưa vào lớp, theo logic BE.</td>
+</tr>
+<tr>
+<td><code>[1]</code></td>
+<td>Đang học</td>
+<td>Chỉ học viên đang học, theo logic BE.</td>
+</tr>
+<tr>
+<td><code>[2]</code></td>
+<td>Đợi lớp</td>
+<td>Học viên đã ở trong lớp, gồm đang học và các trạng thái khác, theo logic BE đã xác nhận.</td>
+</tr>
+</tbody>
+</table></div>
+<ul>
+<li>Bấm nút <code>Trạng thái</code> mở dropdown ba checkbox theo đúng thứ tự <code>Mới</code>, <code>Đang học</code>, <code>Đợi lớp</code>. Cho chọn nhiều giá trị; mỗi checkbox có thể chọn/bỏ chọn độc lập, không dùng radio hoặc dropdown chỉ chọn một.</li>
+<li>Khi chọn nhiều trạng thái, dùng OR giữa các nhóm logic được chọn: học viên thuộc ít nhất một nhóm theo BE là phù hợp. Học viên thuộc nhiều nhóm vẫn chỉ xuất hiện một lần. Bỏ chọn toàn bộ thì không áp dụng điều kiện Trạng thái, vẫn giữ keyword/Tag và phạm vi quyền.</li>
+<li>FE gửi tập giá trị <code>0/1/2</code> đã chọn theo hợp đồng API để BE phân loại/lọc và trả danh sách cùng tổng số kết quả. Không tự suy ra nhóm từ icon/status học viên từng lớp hoặc lọc lại riêng trên các dòng của trang hiện tại.</li>
+<li>Nhãn <code>Đợi lớp</code> là nhãn hiển thị của giá trị logic <code>[2]</code>; vẫn giữ định nghĩa BE đã chốt là học viên đã ở trong lớp. Không diễn giải lại thành chỉ học viên thuộc lớp <code>Khai giảng</code> theo requirement cũ.</li>
+<li>Filter này độc lập với 7 status quan hệ học viên–lớp, status lớp học và status tài khoản. Nhãn <code>Đang học</code> trùng chữ nhưng không dùng chung enum hoặc tự ánh xạ nghiệp vụ.</li>
+<li>Checkbox cập nhật điều kiện lọc khi chọn/bỏ chọn, kết hợp với keyword tên và Tag bằng AND; tải lại từ trang 1, giữ thứ tự ngày tạo học viên giảm dần (mới nhất trước) và dùng tổng kết quả do BE trả để phân trang.</li>
+</ul>
+<h5 id="testcase-bo-loc-trang-thai">Testcase — Bộ lọc Trạng thái</h5>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 11: Nhãn UI và mapping filter logic 0/1/2</td>
+<td>High</td>
+<td></td>
+<td>Flow 3 / REQ05</td>
+<td>Administrator</td>
+<td>BE có dữ liệu cho ba nhóm filter học viên</td>
+<td><strong>Given</strong> User mở dropdown Trạng thái<br><strong>When</strong> Lần lượt tick Mới, Đang học, Đợi lớp<br><strong>Then</strong> FE gửi đúng giá trị 0, 1, 2 và render kết quả BE trả</td>
+<td>- Ba checkbox đúng thứ tự và nhãn UI mới<br>- Mới=[0] chưa vào lớp; Đang học=[1] đang học; Đợi lớp=[2] đã ở trong lớp gồm đang học và các trạng thái khác<br>- Không diễn giải Đợi lớp theo trạng thái lớp Khai giảng<br>- Không tự lọc lại theo 7 status trong lớp</td>
+</tr>
+<tr>
+<td>Case 59: Filter logic độc lập với status học viên trong lớp</td>
+<td>High</td>
+<td></td>
+<td>REQ05</td>
+<td>Administrator</td>
+<td>BE trả kết quả nhóm [2] gồm học viên Đang học và học viên có status khác trong lớp</td>
+<td><strong>Given</strong> User chọn filter [2]<br><strong>When</strong> BE trả danh sách và tổng kết quả<br><strong>Then</strong> FE render đầy đủ dữ liệu đúng response</td>
+<td>- Không loại học viên theo icon 7 status<br>- Không tự thay [2] bằng enum lớp hoặc enum học viên trong lớp<br>- Phân trang theo tổng kết quả BE trả</td>
+</tr>
+<tr>
+<td>Case 60: Chọn nhiều trạng thái theo OR</td>
+<td>High</td>
+<td></td>
+<td>REQ05</td>
+<td>Administrator</td>
+<td>BE có nhóm [1]/[2] và học viên thuộc cả hai nhóm</td>
+<td><strong>Given</strong> User tick Đang học và Đợi lớp<br><strong>When</strong> FE gửi tập [1,2] theo hợp đồng API<br><strong>Then</strong> BE trả hợp kết quả và FE hiển thị đúng</td>
+<td>- Học viên thuộc ít nhất một nhóm được chọn xuất hiện<br>- Không nhân đôi học viên khớp cả hai nhóm<br>- Giữ keyword/Tag và sắp ngày tạo học viên giảm dần (mới nhất trước)<br>- Quay về trang 1</td>
+</tr>
+</tbody>
+</table></div>
+<h4 id="phan-trang">Phân trang</h4>
+<p align="center">
+  <a href="./images/14-student-pagination.png"><img src="./images/14-student-pagination.png" alt="Phân trang danh sách học viên" width="600" title="Nhấn để xem ảnh gốc"></a><br>
+  <em>Phân trang danh sách học viên — nhấn để xem ảnh gốc</em>
+</p>
+
+<ul>
+<li>Phân trang nằm cuối danh sách, gồm nút Trang trước, các số trang, dấu <code>...</code>, các trang cuối và nút Trang sau như hình.</li>
+<li>Mỗi trang hiển thị tối đa 10 học viên.</li>
+<li>Trang hiện tại được đánh dấu; nút Trang trước bị vô hiệu hóa tại trang đầu và nút Trang sau bị vô hiệu hóa tại trang cuối.</li>
+<li>Khi chuyển trang, hệ thống giữ nguyên điều kiện search/filter đang áp dụng và thứ tự ngày tạo học viên giảm dần (mới nhất trước).</li>
+<li>Footer hiển thị <code>Hiển thị a - b trong tổng số N học viên</code>; chữ <code>lớp học</code> trong ảnh là nhãn cần sửa thành <code>học viên</code>.</li>
+</ul>
+<h5 id="testcase-phan-trang-danh-sach-hoc-vien">Testcase — Phân trang danh sách học viên</h5>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 2: Phân trang bằng số</td>
+<td>High</td>
+<td></td>
+<td>Flow 1 / REQ02</td>
+<td>Administrator</td>
+<td>Danh sách có nhiều hơn 10 học viên</td>
+<td><strong>Given</strong> Trang đầu đang được chọn và danh sách có search/filter<br><strong>When</strong> User chọn số trang hoặc Trang trước/Trang sau<br><strong>Then</strong> Hệ thống tải trang được chọn</td>
+<td>- Mỗi trang có tối đa 10 học viên<br>- Hiển thị số trang, dấu <code>...</code>, các trang cuối và hai nút điều hướng như UI<br>- Chỉ trang hiện tại active<br>- Vô hiệu hóa đúng nút tại trang đầu/trang cuối<br>- Giữ nguyên search/filter<br>- Không lặp/mất dữ liệu giữa các trang</td>
+</tr>
+</tbody>
+</table></div>
+<h4 id="xuat-excel">Xuất Excel</h4>
+<ul>
+<li>Nút Excel ở góc dưới bên phải bảng theo ảnh danh sách; xuất toàn bộ kết quả thuộc phạm vi quyền và search/filter, gồm tất cả trang.</li>
+<li>Cột file theo thứ tự Tên học viên, Số điện thoại, Email, Ngày tạo; phản hồi thành công/lỗi theo Flow 4 và REQ07.</li>
+</ul>
+<h5 id="testcase-xuat-excel">Testcase — Xuất Excel</h5>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 4: Xuất Excel thành công</td>
+<td>High</td>
+<td>Smoke</td>
+<td>Flow 4 / REQ07</td>
+<td>Administrator</td>
+<td>Có dữ liệu học viên trên nhiều trang</td>
+<td><strong>Given</strong> Danh sách đang mở, lần lượt không có và có search/filter<br><strong>When</strong> User bấm nút Excel<br><strong>Then</strong> Hệ thống tạo và tải file theo điều kiện hiện tại</td>
+<td>- Hiển thị <code>Xuất danh sách học viên thành công.</code><br>- Không có search/filter: xuất toàn bộ danh sách trên tất cả trang<br>- Có search/filter: xuất toàn bộ kết quả thỏa điều kiện trên tất cả trang<br>- Không giới hạn ở trang đang xem<br>- Có đúng thứ tự cột Tên học viên, Số điện thoại, Email, Ngày tạo</td>
+</tr>
+<tr>
+<td>Case 5: Xuất Excel thất bại</td>
+<td>Medium</td>
+<td></td>
+<td>Flow 4 / EX05</td>
+<td>Administrator</td>
+<td>Xử lý export gặp lỗi</td>
+<td><strong>Given</strong> Danh sách học viên đang mở<br><strong>When</strong> User bấm nút Excel<br><strong>Then</strong> Hệ thống không hoàn thành export</td>
+<td>- Hiển thị <code>Không thể xuất danh sách học viên. Vui lòng thử lại.</code><br>- Không tải file lỗi/rỗng</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="popup-them-hoc-vien">Popup Thêm học viên</h3>
+<p align="center">
+  <a href="./images/02-create-student-account.png"><img src="./images/02-create-student-account.png" alt="Popup Thêm học viên" width="760" title="Nhấn để xem ảnh gốc"></a><br>
+  <em>Popup Thêm học viên — UI mới</em>
+</p>
+
+<ul>
+<li>Mở bằng nút <code>+</code> cạnh tiêu đề Danh sách học viên; tiêu đề popup và nút submit là <code>Thêm học viên</code>, nút đóng là <code>Hủy</code>.</li>
+<li>Form hai cột: bên trái Họ và tên / Ngày sinh / Vai trò / Mật khẩu / Chọn cấp độ; bên phải Giới tính / Số điện thoại / Gmail / Ngày chốt đơn / Code.</li>
+<li>Tất cả field đều bắt buộc, kể cả Vai trò và Code do hệ thống điền. Mật khẩu mặc định được che và có nút hiện/ẩn; Hủy đóng popup mà không tạo tài khoản.</li>
+</ul>
+<p><strong>Field:</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Yêu cầu</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Họ và tên</td>
+<td>Bắt buộc, không được để trống hoặc chỉ có khoảng trắng.</td>
+</tr>
+<tr>
+<td>Giới tính</td>
+<td>Bắt buộc chọn giá trị; placeholder <code>Chọn</code> không phải dữ liệu hợp lệ.</td>
+</tr>
+<tr>
+<td>Ngày sinh</td>
+<td>Bắt buộc; nhập/chọn ngày bằng date picker theo UI.</td>
+</tr>
+<tr>
+<td>Số điện thoại</td>
+<td>Bắt buộc, đúng định dạng số điện thoại; được phép trùng với học viên khác.</td>
+</tr>
+<tr>
+<td>Vai trò</td>
+<td>Bắt buộc, hệ thống điền <code>Student</code>, nhãn UI là <code>Học viên</code>.</td>
+</tr>
+<tr>
+<td>Gmail/Email</td>
+<td>Bắt buộc, đúng định dạng email; nhận cả email ngoài <code>@gmail.com</code>; không được trùng trong cùng trung tâm, được phép trùng giữa các trung tâm khác nhau.</td>
+</tr>
+<tr>
+<td>Mật khẩu</td>
+<td>Bắt buộc, tối thiểu <strong>8 ký tự</strong>; hiển thị che ký tự và cho bật/tắt hiện mật khẩu.</td>
+</tr>
+<tr>
+<td>Ngày chốt đơn</td>
+<td>Bắt buộc, mặc định ngày hiện tại; cho phép chọn ngày quá khứ, hiện tại hoặc tương lai.</td>
+</tr>
+<tr>
+<td>Chọn cấp độ (Level)</td>
+<td>Bắt buộc, chỉ chọn một trong <code>Cấp độ 1</code> đến <code>Cấp độ 9</code>; placeholder <code>Chọn</code> không hợp lệ.</td>
+</tr>
+<tr>
+<td>Code</td>
+<td>Bắt buộc, hệ thống tự tìm mã và hiển thị sau khi chọn cấp độ, chỉ đọc; đúng 6 chữ số, tăng dần theo cấp độ và duy nhất trong cùng center. Được trùng giữa các center khác nhau; kiểm tra lại khi lưu.</td>
+</tr>
+</tbody>
+</table></div>
+<h4 id="testcase-popup-them-hoc-vien">Testcase — Popup Thêm học viên</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 6: Mở popup tạo tài khoản</td>
+<td>High</td>
+<td></td>
+<td>Flow 5 / REQ10</td>
+<td>Administrator</td>
+<td>Danh sách học viên đang mở</td>
+<td><strong>Given</strong> User có quyền tạo học viên<br><strong>When</strong> Bấm <code>+</code> cạnh tiêu đề Danh sách học viên<br><strong>Then</strong> Hệ thống mở popup tạo tài khoản</td>
+<td>- Có đủ field bắt buộc<br>- Vai trò mặc định là Student<br>- Ngày chốt đơn mặc định là ngày hiện tại và cho sửa<br>- Level gồm 1 đến 9<br>- Code không cho nhập tay</td>
+</tr>
+<tr>
+<td>Case 7: Chặn tạo tài khoản khi thiếu field</td>
+<td>High</td>
+<td></td>
+<td>EX01 / REQ10</td>
+<td>Administrator</td>
+<td>Popup tạo tài khoản đang mở</td>
+<td><strong>Given</strong> Ít nhất một field bắt buộc chưa có giá trị<br><strong>When</strong> Bấm <code>Thêm học viên</code><br><strong>Then</strong> Hệ thống chặn submit</td>
+<td>- Hiển thị <code>Vui lòng nhập đầy đủ thông tin bắt buộc.</code><br>- Không tạo học viên<br>- Giữ popup và dữ liệu đã nhập</td>
+</tr>
+<tr>
+<td>Case 10: Tạo tài khoản học viên thành công</td>
+<td>High</td>
+<td>Smoke</td>
+<td>Flow 5</td>
+<td>Administrator</td>
+<td>Tất cả field hợp lệ</td>
+<td><strong>Given</strong> Popup có đầy đủ dữ liệu và Level hợp lệ<br><strong>When</strong> Bấm <code>Thêm học viên</code><br><strong>Then</strong> Hệ thống tạo học viên</td>
+<td>- Hiển thị <code>Tạo tài khoản học viên thành công.</code><br>- Đóng popup<br>- Học viên xuất hiện trong danh sách với đúng thông tin và Code đã sinh</td>
+</tr>
+<tr>
+<td>Case 32: Chặn email trùng trong cùng trung tâm</td>
+<td>High</td>
+<td></td>
+<td>Flow 5 / EX10 / REQ21</td>
+<td>Administrator</td>
+<td>Email <code>student@example.com</code> đã thuộc một học viên trong trung tâm A</td>
+<td><strong>Given</strong> User mở popup tạo học viên tại trung tâm A<br><strong>When</strong> Nhập lại email đó và bấm <code>Thêm học viên</code><br><strong>Then</strong> Hệ thống từ chối tạo</td>
+<td>- Hiển thị <code>Email đã được sử dụng.</code><br>- Không tạo thêm học viên</td>
+</tr>
+<tr>
+<td>Case 33: Cho phép email trùng ở trung tâm khác</td>
+<td>High</td>
+<td></td>
+<td>REQ21</td>
+<td>Administrator</td>
+<td>Email <code>student@example.com</code> đã tồn tại tại trung tâm A</td>
+<td><strong>Given</strong> User mở popup tạo học viên tại trung tâm B<br><strong>When</strong> Nhập cùng email và đầy đủ dữ liệu hợp lệ rồi bấm <code>Thêm học viên</code><br><strong>Then</strong> Hệ thống tạo học viên tại trung tâm B</td>
+<td>- Tạo thành công<br>- Hai học viên thuộc đúng hai trung tâm khác nhau</td>
+</tr>
+<tr>
+<td>Case 41: Cho phép trùng số điện thoại</td>
+<td>High</td>
+<td></td>
+<td>REQ24</td>
+<td>Administrator</td>
+<td>Học viên A trong cùng trung tâm đã dùng một số điện thoại</td>
+<td><strong>Given</strong> User mở popup tạo học viên B<br><strong>When</strong> Nhập cùng số điện thoại với A, email khác và đầy đủ dữ liệu hợp lệ<br><strong>Then</strong> Hệ thống tạo học viên B</td>
+<td>- Tạo thành công<br>- A và B có cùng số điện thoại<br>- Chỉ email bị kiểm tra trùng trong cùng trung tâm</td>
+</tr>
+<tr>
+<td>Case 56: Gmail nhận email ngoài Gmail</td>
+<td>High</td>
+<td></td>
+<td>REQ10 / REQ21</td>
+<td>Administrator</td>
+<td>Có địa chỉ student@example.com chưa trùng trong trung tâm</td>
+<td><strong>Given</strong> Các field còn lại hợp lệ<br><strong>When</strong> Nhập email ngoài @gmail.com và bấm Thêm học viên<br><strong>Then</strong> Chấp nhận tạo</td>
+<td>- Không chặn theo domain Gmail<br>- Vẫn kiểm tra email duy nhất trong cùng trung tâm</td>
+</tr>
+<tr>
+<td>Case 88: Ngày chốt đơn quá khứ và tương lai</td>
+<td>High</td>
+<td></td>
+<td>REQ10</td>
+<td>Administrator</td>
+<td>Popup Thêm học viên có đủ dữ liệu hợp lệ</td>
+<td><strong>Given</strong> Ngày chốt đơn mặc định hôm nay<br><strong>When</strong> Lần lượt tạo học viên với ngày quá khứ và ngày tương lai<br><strong>Then</strong> Cả hai được tạo thành công</td>
+<td>- Lưu đúng ngày đã chọn<br>- Không chặn vì ngày trước/sau hôm nay<br>- Thứ tự danh sách vẫn theo ngày tạo mới nhất trước</td>
+</tr>
+<tr>
+<td>Case 89: Email/SĐT đúng định dạng và mật khẩu tối thiểu 8 ký tự</td>
+<td>High</td>
+<td></td>
+<td>REQ10</td>
+<td>Administrator</td>
+<td>Popup Thêm học viên có các field bắt buộc</td>
+<td><strong>Given</strong> User nhập email sai định dạng hoặc SĐT chứa chữ; lần khác nhập mật khẩu 7 ký tự<br><strong>When</strong> Bấm Thêm học viên<br><strong>Then</strong> Chặn từng dữ liệu không hợp lệ và giữ form</td>
+<td>- Không tạo tài khoản với email/SĐT sai định dạng hoặc mật khẩu dưới 8 ký tự<br>- Email hợp lệ ngoài Gmail, SĐT hợp lệ và mật khẩu đúng 8 hoặc hơn 8 ký tự được chấp nhận khi các field khác hợp lệ<br>- Không tự yêu cầu chữ hoa/ký tự đặc biệt nếu chưa có quy tắc đó</td>
+</tr>
+</tbody>
+</table></div>
+<h4 id="dropdown-chon-cap-do-va-code-hoc-vien">Dropdown chọn cấp độ và Code học viên</h4>
+<p align="center">
+  <a href="./images/20-student-level-dropdown.png"><img src="./images/20-student-level-dropdown.png" alt="Dropdown Cấp độ 1 đến Cấp độ 9" width="220" title="Nhấn để xem ảnh gốc"></a><br>
+  <em>Dropdown chọn cấp độ — giá trị đang chọn được đánh dấu theo UI</em>
+</p>
+
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Cấp độ</th>
+<th>Dải Code 6 chữ số</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><code>100000</code> → <code>199999</code></td>
+</tr>
+<tr>
+<td>2</td>
+<td><code>200000</code> → <code>299999</code></td>
+</tr>
+<tr>
+<td>3</td>
+<td><code>300000</code> → <code>399999</code></td>
+</tr>
+<tr>
+<td>4</td>
+<td><code>400000</code> → <code>499999</code></td>
+</tr>
+<tr>
+<td>5</td>
+<td><code>500000</code> → <code>599999</code></td>
+</tr>
+<tr>
+<td>6</td>
+<td><code>600000</code> → <code>699999</code></td>
+</tr>
+<tr>
+<td>7</td>
+<td><code>700000</code> → <code>799999</code></td>
+</tr>
+<tr>
+<td>8</td>
+<td><code>800000</code> → <code>899999</code></td>
+</tr>
+<tr>
+<td>9</td>
+<td><code>900000</code> → <code>999999</code></td>
+</tr>
+</tbody>
+</table></div>
+<ul>
+<li>Với cấp độ <code>L</code>, mã đầu tiên là <code>L × 100000</code>, các mã tiếp theo tăng dần trong đúng dải của cấp độ đó. Ví dụ cấp độ 1: <code>100000</code>, <code>100001</code>, …; cấp độ 2: <code>200000</code>, <code>200001</code>, ….</li>
+<li>Sau khi chọn cấp độ, hệ thống tìm Code tiếp theo chưa dùng <strong>trong center đang tạo</strong> rồi hiển thị trên form trước khi lưu; chọn cấp độ khác thì tìm lại mã trong dải mới. Backend kiểm tra lại tính duy nhất khi lưu, kể cả request đồng thời. Nếu mã xem trước bị chiếm, cấp mã tiếp theo hợp lệ trong cùng center/cấp độ và trả Code cuối cùng đã lưu.</li>
+<li>Không cho nhập/sửa Code bằng tay; không cấp mã 5/7 chữ số hoặc vượt sang dải của cấp độ khác. Nếu không còn mã hợp lệ, không tạo tài khoản và phản hồi theo ngoại lệ sinh Code.</li>
+<li>Code chỉ cần duy nhất trong cùng center; các center khác nhau được dùng cùng Code. Bộ đếm/tìm mã theo center và cấp độ, không lấy mã đã dùng ở center khác để chặn hoặc tăng mã của center hiện tại.</li>
+</ul>
+<h5 id="testcase-cap-do-va-code-hoc-vien">Testcase — Cấp độ và Code học viên</h5>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 8: Danh sách Level</td>
+<td>High</td>
+<td></td>
+<td>REQ08</td>
+<td>Administrator</td>
+<td>Popup tạo tài khoản đang mở</td>
+<td><strong>Given</strong> User mở field Level<br><strong>When</strong> Quan sát và lần lượt chọn Level<br><strong>Then</strong> Hệ thống chỉ cho chọn Level hợp lệ</td>
+<td>- Có Level 1 đến Level 9<br>- Không có Level ngoài khoảng này</td>
+</tr>
+<tr>
+<td>Case 9: Code 6 chữ số theo cấp độ và duy nhất khi tạo đồng thời</td>
+<td>High</td>
+<td></td>
+<td>EX02 / REQ09</td>
+<td>Administrator</td>
+<td>Hai request tạo học viên cùng center/cấp độ diễn ra đồng thời</td>
+<td><strong>Given</strong> Hai học viên cùng chọn Cấp độ 1 và mã gần nhất là 100000<br><strong>When</strong> Hai request được lưu đồng thời<br><strong>Then</strong> Backend cấp mã tăng dần không trùng trong đúng dải cấp độ</td>
+<td>- Mã 6 chữ số, đầu là 1; hai mã kế tiếp là 100001 và 100002, không quy định request nào nhận trước<br>- Chỉ lưu một tài khoản trên mỗi mã trong cùng center<br>- User không sửa được Code</td>
+</tr>
+<tr>
+<td>Case 57: Dải mã từng cấp độ</td>
+<td>High</td>
+<td></td>
+<td>REQ08 / REQ09</td>
+<td>Administrator</td>
+<td>Có thể tạo học viên Cấp độ 1..9</td>
+<td><strong>Given</strong> Từng cấp độ chưa có mã<br><strong>When</strong> Tạo lần lượt hai học viên mỗi cấp độ<br><strong>Then</strong> Mã bắt đầu và tăng theo đúng dải</td>
+<td>- Cấp độ 1: 100000, 100001; cấp độ 2: 200000, 200001; tương tự tới cấp độ 9: 900000, 900001<br>- Mỗi mã đúng 6 chữ số và đúng chữ số cấp độ<br>- Không cấp mã vượt dải nếu đã hết mã</td>
+</tr>
+<tr>
+<td>Case 90: Code hiển thị ngay sau chọn cấp độ</td>
+<td>High</td>
+<td></td>
+<td>REQ09</td>
+<td>Administrator</td>
+<td>Center A có Level 1 đã dùng 100000/100001; Level 2 chưa có mã</td>
+<td><strong>Given</strong> Popup chưa chọn cấp độ<br><strong>When</strong> Chọn Level 1 rồi đổi Level 2 trước khi lưu<br><strong>Then</strong> Code lần lượt 100002 và 200000</td>
+<td>- Hệ thống tìm mã trong đúng center/cấp độ, hiển thị trước khi submit<br>- Code chỉ đọc<br>- Nếu mã bị request khác chiếm trước khi lưu, backend cấp mã hợp lệ tiếp theo và trả mã cuối cùng</td>
+</tr>
+<tr>
+<td>Case 91: Cho phép Code trùng giữa center</td>
+<td>High</td>
+<td></td>
+<td>REQ09</td>
+<td>Administrator</td>
+<td>Center A đã có Code 100000; center B chưa có Code Level 1</td>
+<td><strong>Given</strong> User tạo học viên Level 1 ở center B<br><strong>When</strong> Chọn cấp độ và lưu dữ liệu hợp lệ<br><strong>Then</strong> Center B được dùng Code 100000</td>
+<td>- Không bị chặn do Code 100000 của center A<br>- Trong center B, học viên tiếp theo dùng 100001<br>- Mã duy nhất theo center, không duy nhất toàn hệ thống</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="bo-loc-tag">Bộ lọc Tag</h3>
+<p align="center">
+  <a href="./images/03-tag-filter.png"><img src="./images/03-tag-filter.png" alt="Bộ lọc Tag có tìm kiếm, nhóm thu gọn và checkbox chọn nhiều" width="360" title="Nhấn để xem ảnh gốc"></a><br>
+  <em>UI mới — tìm kiếm tag và các nhóm thu gọn/mở rộng</em>
+</p>
+
+<ul>
+<li>Bấm nút <code>Tag</code> mở popup. Ô tìm kiếm nằm đầu popup, có icon kính lúp và placeholder <code>Tìm kiếm...</code>.</li>
+<li>Nhóm và tag lấy động từ dữ liệu do user định nghĩa. Nhóm trong ảnh (<code>Nghỉ học</code>, <code>Học tiếp kì/khoá</code>, <code>Học phí</code>, <code>Follow học viên</code>, <code>Tình trạng xử lí</code>) và các tag BL/BC/CL/KLK/KKH chỉ minh họa bố cục, không hard-code danh sách này.</li>
+<li>Mỗi nhóm có tiêu đề và chevron để thu gọn/mở rộng. Nhóm mở hiển thị tag với checkbox; nhãn tag theo dữ liệu thực tế, dạng mã và tên như <code>BL - Bảo Lưu Nghỉ Học</code> trong ảnh. Nhóm đóng chỉ hiển thị tiêu đề và chevron.</li>
+<li>Tìm kiếm theo nhãn tag (mã/tên) trong popup; đây là tìm tag để chọn, không thay thế keyword tìm tên học viên trên danh sách.</li>
+<li>Hỗ trợ chọn nhiều tag trong cùng nhóm hoặc khác nhóm. Dùng OR giữa các tag đã chọn: học viên có ít nhất một tag được chọn thì thỏa filter Tag.</li>
+<li>Thu gọn nhóm hoặc đổi keyword tìm tag không làm mất các tag đã chọn; không bỏ chọn tag chỉ vì tag đó tạm không xuất hiện trong kết quả tìm kiếm. Mở lại nhóm/popup phản ánh các checkbox đang chọn của điều kiện lọc hiện tại.</li>
+<li>Chọn/bỏ chọn checkbox cập nhật bộ lọc danh sách; Tag kết hợp bằng AND với filter logic Trạng thái và keyword tên học viên. Bỏ chọn hết tag thì không áp dụng điều kiện Tag, vẫn giữ các điều kiện còn lại.</li>
+</ul>
+<h4 id="testcase-bo-loc-tag">Testcase — Bộ lọc Tag</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 12: Tìm tag theo mã/tên trong popup nhóm</td>
+<td>High</td>
+<td></td>
+<td>REQ06</td>
+<td>Administrator</td>
+<td>Hệ thống có tag/nhóm do user định nghĩa</td>
+<td><strong>Given</strong> User mở bộ lọc Tag<br><strong>When</strong> Nhập mã hoặc tên tag vào ô Tìm kiếm...<br><strong>Then</strong> Popup hiển thị tag phù hợp từ dữ liệu thực tế</td>
+<td>- Search nằm đầu popup<br>- Nhóm có chevron mở/đóng và tag có checkbox<br>- Không hard-code nhóm/tag trong ảnh<br>- Không đổi keyword tên học viên của main list</td>
+</tr>
+<tr>
+<td>Case 13: Chọn nhiều Tag và kết hợp điều kiện</td>
+<td>High</td>
+<td></td>
+<td>Flow 3 / REQ04 / REQ06</td>
+<td>Administrator</td>
+<td>Học viên A có Tag X; học viên B có Tag Y; học viên C có cả X và Y</td>
+<td><strong>Given</strong> User đã nhập từ khóa và chọn Trạng thái<br><strong>When</strong> Chọn đồng thời Tag X và Tag Y<br><strong>Then</strong> Hệ thống áp dụng điều kiện OR giữa các Tag và kết hợp với các điều kiện khác</td>
+<td>- A, B và C đều xuất hiện nếu thỏa từ khóa và Trạng thái<br>- Học viên không có X hoặc Y không xuất hiện<br>- Trở về trang 1</td>
+</tr>
+<tr>
+<td>Case 61: Bỏ chọn toàn bộ checkbox filter</td>
+<td>Medium</td>
+<td></td>
+<td>REQ05 / REQ06</td>
+<td>Administrator</td>
+<td>Danh sách đang có keyword, Trạng thái và Tag</td>
+<td><strong>Given</strong> User lần lượt bỏ hết checkbox Trạng thái rồi bỏ hết checkbox Tag<br><strong>When</strong> Điều kiện được cập nhật<br><strong>Then</strong> Chỉ bỏ loại điều kiện vừa được xóa hết</td>
+<td>- Bỏ hết Trạng thái vẫn giữ Tag/keyword<br>- Bỏ hết Tag vẫn giữ Trạng thái/keyword nếu còn chọn<br>- Không vượt phạm vi dữ liệu user<br>- Kết quả/tổng số theo BE</td>
+</tr>
+<tr>
+<td>Case 62: Giữ checkbox Tag khi tìm kiếm và thu gọn nhóm</td>
+<td>High</td>
+<td></td>
+<td>REQ06</td>
+<td>Administrator</td>
+<td>Có tag ở nhiều nhóm</td>
+<td><strong>Given</strong> User chọn tag X/Y thuộc hai nhóm<br><strong>When</strong> Thu gọn nhóm, tìm tag khác, xóa search rồi mở lại nhóm/popup<br><strong>Then</strong> X/Y vẫn được chọn</td>
+<td>- Không mất lựa chọn khi tag bị ẩn khỏi UI<br>- Checkbox khớp điều kiện lọc hiện tại<br>- Không tự gán hoặc bỏ tag trên hồ sơ học viên<br>- OR giữa tag khác nhóm, AND với status/keyword</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="so-lop-va-lop-hien-tai">Số lớp và Lớp hiện tại</h3>
+<ul>
+<li><code>Số lớp</code> đếm tất cả lớp học viên đã được thêm; hover/bấm badge hiển thị mã các lớp này theo ảnh hover mới phía trên.</li>
+<li><code>Lớp hiện tại</code> chỉ gồm các lớp đồng thời có status học viên trong lớp <code>Đang học</code> <strong>và</strong> status lớp <code>Đang học</code>. Hover icon chỉ hiển thị mã lớp; badge là số lớp thỏa cả hai điều kiện, không lấy toàn bộ Số lớp.</li>
+<li>Học viên không có lớp hiện tại hiển thị <code>Chưa có</code> theo requirement hiện có, không mở tooltip/popup danh sách lớp rỗng.</li>
+<li><code>Số bill</code> chỉ hiển thị số hóa đơn, không có thao tác mở danh sách khi hover/bấm.</li>
+</ul>
+<h4 id="testcase-so-lop-va-lop-hien-tai">Testcase — Số lớp và Lớp hiện tại</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 18: Hover mã lớp hiện tại</td>
+<td>High</td>
+<td></td>
+<td>Flow 6 / REQ12</td>
+<td>Administrator</td>
+<td>Học viên có nhiều lớp đồng thời có status học viên Đang học và status lớp Đang học</td>
+<td><strong>Given</strong> Badge hiển thị số lớp hiện tại<br><strong>When</strong> User hover icon Lớp hiện tại<br><strong>Then</strong> Hiển thị mã các lớp thỏa cả hai điều kiện</td>
+<td>- Badge bằng số lớp đủ điều kiện<br>- Tooltip chỉ có mã lớp, ví dụ DN1-122, không thêm tên lớp<br>- Không chứa lớp mà học viên đã Nghỉ học/Rời lớp hoặc lớp đã Hoàn thành/Tạm dừng</td>
+</tr>
+<tr>
+<td>Case 19: Học viên chưa có lớp hiện tại</td>
+<td>Medium</td>
+<td></td>
+<td>EX09</td>
+<td>Administrator</td>
+<td>Học viên không có lớp hiện tại</td>
+<td><strong>Given</strong> Dòng học viên đang hiển thị<br><strong>When</strong> User quan sát/hover cột Lớp hiện tại<br><strong>Then</strong> Hệ thống hiển thị trạng thái không có lớp</td>
+<td>- Hiển thị <code>Chưa có</code><br>- Không mở popup lớp rỗng</td>
+</tr>
+<tr>
+<td>Case 51: Số lớp và Lớp hiện tại hiển thị mã lớp</td>
+<td>High</td>
+<td></td>
+<td>REQ12</td>
+<td>Administrator</td>
+<td>Học viên được thêm vào 3 lớp; chỉ một lớp có cả status học viên Đang học và status lớp Đang học</td>
+<td><strong>Given</strong> Dòng học viên đang hiển thị<br><strong>When</strong> Hover/bấm Số lớp và hover Lớp hiện tại<br><strong>Then</strong> Hiển thị hai tập mã lớp tương ứng</td>
+<td>- Số lớp 3, tooltip chỉ hiển thị đủ 3 mã lớp<br>- Badge Lớp hiện tại 1, tooltip chỉ hiển thị mã lớp thỏa cả hai điều kiện<br>- Không hiển thị tên lớp</td>
+</tr>
+<tr>
+<td>Case 58: Cả status học viên và status lớp phải Đang học</td>
+<td>High</td>
+<td></td>
+<td>REQ12</td>
+<td>Administrator</td>
+<td>Lớp A: học viên Đang học/lớp Hoàn thành; B: học viên Nghỉ học/lớp Đang học; C: cả hai Đang học</td>
+<td><strong>Given</strong> Học viên đã được thêm vào A/B/C<br><strong>When</strong> Xem cột Lớp hiện tại<br><strong>Then</strong> Chỉ C đủ điều kiện</td>
+<td>- Badge bằng 1<br>- Tooltip chỉ có mã C<br>- Số lớp vẫn là 3<br>- A/B không xuất hiện trong Lớp hiện tại</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="them-lich-hen">Thêm lịch hẹn</h3>
+<p align="center">
+  <a href="./images/05-add-appointment.png"><img src="./images/05-add-appointment.png" alt="UI chuẩn popup Thêm lịch hẹn từ học viên" width="760" title="Nhấn để xem ảnh gốc"></a><br>
+  <em>Popup Thêm lịch hẹn — UI chuẩn mới</em>
+</p>
+
+<ul>
+<li>Bấm tên học viên mở menu <code>Thêm lịch hẹn</code> / <code>Xem lịch sử</code>; mũi tên cuối dòng mở Chi tiết học viên theo ảnh hover chuẩn ở phần danh sách.</li>
+<li>Tiêu đề popup là <code>Thêm lịch hẹn</code>. Nội dung nằm toàn chiều rộng; hàng kế tiếp gồm Thời gian bên trái và Độ ưu tiên bên phải. Bên dưới là Người phụ trách, Theo dõi và ô Ghi chú nhiều dòng. Cuối popup có <code>Hủy</code> và <code>Xác nhận</code>.</li>
+</ul>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Thành phần trên ảnh chuẩn</th>
+<th>Yêu cầu UI và quy tắc đã có</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Nội dung</td>
+<td>Ô nhập tự do toàn chiều rộng, placeholder <code>Tìm nội dung...</code>; không suy ra là dropdown tìm nội dung cố định. Bắt buộc theo requirement Lịch Hẹn.</td>
+</tr>
+<tr>
+<td>Thời gian</td>
+<td>Bắt buộc chọn ngày, <strong>không chọn giờ</strong>; có icon lịch và định dạng <code>dd.MM.yyyy</code> trên ảnh. Không giới hạn mốc quá khứ/tương lai theo requirement hiện có; <code>01.01.2000</code> là dữ liệu mẫu.</td>
+</tr>
+<tr>
+<td>Độ ưu tiên</td>
+<td>Dropdown bắt buộc, mặc định placeholder <code>Chọn</code>, không chọn sẵn mức ưu tiên; người dùng phải tự chọn trước khi lưu. Bộ bốn mức <code>Ưu tiên thấp</code>, <code>Bình thường</code>, <code>Quan trọng</code>, <code>Ưu tiên cao</code> theo requirement Lịch Hẹn. Placeholder không phải lựa chọn hợp lệ.</td>
+</tr>
+<tr>
+<td>Người phụ trách</td>
+<td>Nút <code>+</code> bên cạnh nhãn mở bộ chọn; người đã chọn hiển thị chip avatar + họ tên. Chip có nút <code>×</code> để gỡ. Cho nhiều người; trước khi lưu phải còn ít nhất một người phụ trách.</td>
+</tr>
+<tr>
+<td>Theo dõi</td>
+<td>Nút <code>+</code> và chip avatar + tên theo cùng cách chọn người; không bắt buộc, cho nhiều người. Cùng user được phép có ở cả Người phụ trách và Theo dõi.</td>
+</tr>
+<tr>
+<td>Ghi chú</td>
+<td>Textarea nhiều dòng, placeholder <code>Ghi chú</code>; bắt buộc, không giới hạn độ dài theo requirement Lịch Hẹn hiện có.</td>
+</tr>
+<tr>
+<td>Hủy</td>
+<td>Đóng popup mà không tạo lịch hẹn và không tăng badge lịch hẹn.</td>
+</tr>
+<tr>
+<td>Xác nhận</td>
+<td>Submit lịch hẹn của đúng học viên; validation và phản hồi theo requirement Lịch Hẹn.</td>
+</tr>
+</tbody>
+</table></div>
+<h4 id="testcase-popup-them-lich-hen">Testcase — Popup Thêm lịch hẹn</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 21: UI chuẩn popup lịch hẹn từ học viên</td>
+<td>High</td>
+<td></td>
+<td>Flow 7 / REQ13 / REQ14</td>
+<td>Administrator</td>
+<td>Menu thao tác học viên đang mở</td>
+<td><strong>Given</strong> User chọn Thêm lịch hẹn<br><strong>When</strong> Popup mở<br><strong>Then</strong> Hiển thị đúng bố cục ảnh chuẩn</td>
+<td>- Nội dung; ngày hẹn không có giờ/Độ ưu tiên; Người phụ trách/Theo dõi; Ghi chú nhiều dòng<br>- Hủy/Xác nhận; + và chip avatar+tên/nút gỡ<br>- Đối tượng đúng học viên, Trạng thái tự Mới, không có control cho hai field<br>- Picker chỉ có Trợ giảng/Support/Nhân viên kinh doanh<br>- Độ ưu tiên hiển thị Chọn, chưa có giá trị mặc định</td>
+</tr>
+<tr>
+<td>Case 22: Chặn lịch hẹn thiếu field</td>
+<td>High</td>
+<td></td>
+<td>EX04 / REQ13</td>
+<td>Administrator</td>
+<td>Popup lịch hẹn đang mở</td>
+<td><strong>Given</strong> Thiếu một field bắt buộc trừ Theo dõi; thử riêng trường hợp Độ ưu tiên vẫn là Chọn<br><strong>When</strong> Bấm <code>Xác nhận</code><br><strong>Then</strong> Hệ thống chặn tạo lịch hẹn</td>
+<td>- Hiển thị <code>Vui lòng nhập đầy đủ thông tin bắt buộc.</code><br>- Giữ popup và dữ liệu đã nhập</td>
+</tr>
+<tr>
+<td>Case 24: Thêm lịch hẹn thành công</td>
+<td>High</td>
+<td>Smoke</td>
+<td>Flow 7 / REQ11</td>
+<td>Administrator</td>
+<td>Tất cả field lịch hẹn hợp lệ</td>
+<td><strong>Given</strong> Popup có đầy đủ dữ liệu<br><strong>When</strong> Bấm <code>Xác nhận</code><br><strong>Then</strong> Hệ thống tạo lịch hẹn</td>
+<td>- Hiển thị <code>Thêm lịch hẹn thành công.</code><br>- Đóng popup<br>- Badge lịch hẹn của học viên tăng 1</td>
+</tr>
+<tr>
+<td>Case 35: Cho phép thời gian lịch hẹn trong quá khứ</td>
+<td>High</td>
+<td></td>
+<td>Flow 7 / REQ13</td>
+<td>Administrator</td>
+<td>Popup thêm lịch hẹn đang mở</td>
+<td><strong>Given</strong> Các field bắt buộc khác hợp lệ<br><strong>When</strong> User chọn thời gian trong quá khứ và bấm <code>Thêm</code><br><strong>Then</strong> Hệ thống tạo lịch hẹn</td>
+<td>- Không chặn chỉ vì mốc thời gian<br>- Đúng học viên/người phụ trách</td>
+</tr>
+</tbody>
+</table></div>
+<h4 id="bo-chon-nguoi-phu-trach-theo-doi-trang-thai-dang-mo">Bộ chọn Người phụ trách / Theo dõi — trạng thái đang mở</h4>
+<p align="center">
+  <a href="./images/24-appointment-user-picker.png"><img src="./images/24-appointment-user-picker.png" alt="Bộ chọn người lịch hẹn có search, nhóm role và checkbox" width="760" title="Nhấn để xem ảnh gốc"></a><br>
+  <em>Nút + mở bộ chọn người; tìm kiếm, nhóm thu gọn và checkbox nhiều lựa chọn</em>
+</p>
+
+<ul>
+<li>Bộ chọn có ô <code>Tìm kiếm...</code> ở đầu, các nhóm role thu gọn/mở rộng bằng chevron; mỗi user có checkbox, avatar và họ tên. Checkbox chọn có nền cam/dấu tick trắng.</li>
+<li>Lưu lựa chọn theo user ID, không theo họ tên: các tên trùng nhau trên ảnh chỉ là minh họa. Trong một field không thêm trùng một user; search/thu gọn nhóm không tự xóa lựa chọn đã chọn. Chip và checkbox phản ánh cùng tập lựa chọn của field đang thao tác.</li>
+<li>Người tạo có role hợp lệ được chọn sẵn ở Người phụ trách; có thể gỡ mình/thêm người khác, khi lưu vẫn cần ít nhất một người. Tên/avatar <code>Thái Bình Dương</code>, <code>Trần Phương Nguyên</code> là dữ liệu mẫu, không phải mặc định.</li>
+<li><strong>Role đã chốt theo ảnh chuẩn:</strong> Người phụ trách và Theo dõi chỉ chọn <code>Trợ giảng</code> (Teaching Assistant), <code>Support</code>, <code>Nhân viên kinh doanh</code> (Sale); áp dụng cùng ba nhóm cho cả hai field. Người không thuộc các role này không được gán, kể cả bằng request trực tiếp. Bộ Admin/Class Handler/Support của form lịch hẹn chung không áp dụng cho flow tạo lịch hẹn từ học viên này.</li>
+<li><strong>Field tự điền theo flow:</strong> Đối tượng tự gắn đúng học viên đang chọn; Trạng thái tự mặc định <code>Mới</code>. Popup không có control Đối tượng/Trạng thái, user không phải chọn hai field này để tạo. Trạng thái nghiệp vụ sau khi tạo vẫn theo bộ bốn trạng thái của requirement Lịch Hẹn.</li>
+<li>Độ ưu tiên mặc định <code>Chọn</code>, user tự chọn một mức hợp lệ trước khi lưu; không tự điền Bình thường. Trạng thái mặc định Mới và Thời gian chỉ ngày. Không thêm control giờ; không dùng dữ liệu mẫu trong ảnh làm ngày/ưu tiên mặc định. SOS vẫn theo nghiệp vụ lịch hẹn hiện có.</li>
+</ul>
+<h5 id="testcase-bo-chon-nguoi-phu-trach-theo-doi">Testcase — Bộ chọn Người phụ trách / Theo dõi</h5>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 23: Role picker lịch hẹn học viên theo UI chuẩn</td>
+<td>High</td>
+<td></td>
+<td>EX08 / REQ14</td>
+<td>Administrator</td>
+<td>Có user thuộc các role khác nhau</td>
+<td><strong>Given</strong> Mở + Người phụ trách hoặc Theo dõi<br><strong>When</strong> Xem/chọn người và thử gán trực tiếp role không hợp lệ<br><strong>Then</strong> Chỉ gán user thuộc Trợ giảng/Support/Nhân viên kinh doanh</td>
+<td>- Đúng ba nhóm ở cả hai field<br>- Admin/Class Handler không xuất hiện chỉ vì thuộc role của form chung<br>- Request gán role ngoài ba nhóm bị từ chối<br>- Không lẫn quyền tạo với quyền được gán</td>
+</tr>
+<tr>
+<td>Case 34: Chọn nhiều user và trùng giữa hai field lịch hẹn</td>
+<td>High</td>
+<td></td>
+<td>REQ14</td>
+<td>Administrator</td>
+<td>Có các user hợp lệ A, B, C</td>
+<td><strong>Given</strong> Popup thêm lịch hẹn đang mở<br><strong>When</strong> Chọn A và B làm Người phụ trách; chọn A và C làm Người theo dõi<br><strong>Then</strong> Hệ thống chấp nhận các lựa chọn</td>
+<td>- Mỗi field lưu được nhiều user<br>- User A xuất hiện được ở cả hai field<br>- Không tự động xóa hoặc gộp sai dữ liệu</td>
+</tr>
+<tr>
+<td>Case 68: Bộ chọn người bằng user ID và chip</td>
+<td>High</td>
+<td></td>
+<td>REQ14</td>
+<td>Người tạo lịch hẹn</td>
+<td>Có user hợp lệ trùng tên; user thuộc ba nhóm role đã chốt</td>
+<td><strong>Given</strong> User mở + Người phụ trách/Theo dõi<br><strong>When</strong> Chọn nhiều người, đổi search, thu gọn nhóm và gỡ chip<br><strong>Then</strong> Checkbox/chip phản ánh đúng lựa chọn</td>
+<td>- Có search/nhóm/checkbox/avatar/tên theo ảnh<br>- Phân biệt user ID dù cùng tên, không lặp trong cùng field<br>- Search/thu gọn không xóa người đã chọn<br>- Một user được ở cả hai field<br>- Trước lưu có ít nhất một người phụ trách</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="lich-su-hoc-vien">Lịch sử học viên</h3>
+<ul>
+<li>Từ menu tên học viên, chọn <code>Xem lịch sử</code> mở popup <code>Lịch sử học viên</code> của đúng học viên.</li>
+<li>Popup có ba tab theo thứ tự: <code>Học phí</code>, <code>Lịch sử lớp</code>, <code>Ghi chú</code>. Mặc định mở <code>Học phí</code> (nghiệp vụ hóa đơn), thay nhãn UI cũ <code>Lịch sử hóa đơn</code>.</li>
+<li>Tab active có chữ cam, nền cam nhạt, thanh chỉ báo cam bên trái theo ảnh; chuyển tab giữ ngữ cảnh học viên đang xem.</li>
+<li>UI chuẩn cho từng tab được gắn bên dưới; tên, số tiền, mã lớp, ngày giờ, người và các tỷ lệ trong ảnh chỉ là dữ liệu minh họa.</li>
+</ul>
+<h4 id="testcase-mo-popup-lich-su-hoc-vien">Testcase — Mở popup Lịch sử học viên</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 26: Mở lịch sử đúng học viên</td>
+<td>High</td>
+<td></td>
+<td>Flow 8 / REQ17</td>
+<td>Administrator</td>
+<td>Danh sách có nhiều học viên</td>
+<td><strong>Given</strong> User mở menu của học viên A<br><strong>When</strong> Chọn <code>Xem Lịch sử</code><br><strong>Then</strong> Hệ thống mở lịch sử của A</td>
+<td>- Mặc định ở Học phí<br>- Có đủ 3 tab<br>- Không lẫn dữ liệu học viên khác</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="hoc-phi-danh-sach-hoa-don">Học phí — danh sách hóa đơn</h3>
+<p align="center">
+  <a href="./images/08-invoice-history-expanded.png"><img src="./images/08-invoice-history-expanded.png" alt="Tab Học phí và bảng phân bổ hóa đơn mở rộng" width="1000" title="Nhấn để xem ảnh gốc"></a><br>
+  <em>UI chuẩn tab Học phí — thẻ tổng hợp, bảng hóa đơn và chi tiết phân bổ</em>
+</p>
+
+<p><a href="./images/25-tuition-history-reference.png">Tham chiếu Học phí bổ sung do user gửi</a>.</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Thành phần</th>
+<th>Mô tả theo UI chuẩn</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Thẻ Số Hoá Đơn</td>
+<td>Nằm đầu tab, có nhãn và icon; đếm số hóa đơn được tạo cho học viên đang xem. Mỗi hóa đơn tính một lần, dù có nhiều dòng sử dụng/phân bổ trong hóa đơn.</td>
+</tr>
+<tr>
+<td>Thẻ Tổng Học Phí</td>
+<td>Nằm cạnh Số Hoá Đơn, có icon tiền và giá trị tiền Việt Nam; bằng tổng số tiền <strong>đã dùng</strong> trong các hóa đơn của học viên đang xem. Cộng đúng phần tiền đã dùng của học viên, không lấy toàn bộ giá trị hóa đơn hoặc Số tiền đã đóng; đây là chỉ số riêng với Tổng doanh thu ở danh sách.</td>
+</tr>
+<tr>
+<td>Bảng hóa đơn</td>
+<td>Thứ tự cột: Tên hoá đơn, Trạng thái, Loại hoá đơn, Học viên, Mã học viên, Hiếu khách, Ghi chú, Ghi nhận, Ngày hẹn, Lớp dự kiến, Số tiền đã đóng, KPI, Học phí, Hình, Phụ trách, Liên kết; cuối dòng có menu <code>⋮</code>.</td>
+</tr>
+<tr>
+<td>Tên hóa đơn</td>
+<td>Tên tự sinh theo Hóa đơn REQ01; dưới tên có checkbox Đã nhận tiền/Chưa nhận tiền dùng chung dữ liệu với form chỉnh sửa. Bấm dòng mở/thu gọn học phí, không mở Chỉnh sửa.</td>
+</tr>
+<tr>
+<td>Trạng thái / Loại</td>
+<td>Trạng thái dùng icon trong ô riêng; Loại dùng badge text, ví dụ <code>[SALE] Cọc</code>. Giá trị lấy từ đúng hóa đơn theo nghiệp vụ đã có.</td>
+</tr>
+<tr>
+<td>Hiếu khách / Ghi chú</td>
+<td>Hai icon nội dung riêng của hóa đơn (nguồn gọi Hiểu khách); hover xem nội dung, cam khi có nội dung và xám khi trống theo Hóa đơn.</td>
+</tr>
+<tr>
+<td>Ghi nhận / Ngày hẹn</td>
+<td>Hiển thị ngày; khi không có Ngày hẹn hiển thị <code>(Không có)</code> như UI. Không lấy ngày mẫu làm mặc định.</td>
+</tr>
+<tr>
+<td>Lớp dự kiến</td>
+<td>Hiển thị mã lớp dự kiến của hóa đơn.</td>
+</tr>
+<tr>
+<td>Số tiền đã đóng</td>
+<td>Theo Hóa đơn: số tiền làm hóa đơn bên CG; bên dưới Còn lại = Số tiền đã đóng − tổng Giá trị học phí đã thêm của toàn hóa đơn. Giá trị học phí mới không vượt Còn lại.</td>
+</tr>
+<tr>
+<td>KPI / Học phí</td>
+<td>KPI là tổng KPI các người phụ trách hóa đơn; Học phí là số lượng khoản học phí, phải khớp số dòng trong chi tiết xổ xuống của hóa đơn. Không nhầm số lượng này với tiền ở thẻ Tổng Học Phí.</td>
+</tr>
+<tr>
+<td>Hình</td>
+<td>Tệp đính kèm hóa đơn, dùng hành vi xem/tải chung của màn Hóa đơn. Hỗ trợ PDF/DOC/DOCX/PPT/PPTX, tối đa 20MB mỗi file.</td>
+</tr>
+<tr>
+<td>Phụ trách / Liên kết</td>
+<td>Phụ trách là avatar/số lượng người phụ trách, hover danh sách tên. Liên kết là học viên đã liên kết hóa đơn, kèm số lượng và hover Tên/Email/SĐT có icon copy theo Hóa đơn. Thiếu dữ liệu hiển thị — như ảnh chuẩn.</td>
+</tr>
+<tr>
+<td>Cuộn ngang</td>
+<td>Bảng rộng có thanh cuộn ngang trong vùng nội dung popup. Giữ bảng/chi tiết trong vùng cuộn của popup, không cho tràn ra ngoài cửa sổ như phần ghép ảnh minh họa.</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Chi tiết phân bổ dưới một hóa đơn mở rộng:</strong></p>
+<ul>
+<li>Hiển thị khối bảng con gắn với đúng hóa đơn, gồm <code>#</code>, <code>Học viên</code>, <code>Mã học viên</code>, <code>Lớp</code>, <code>Số tiền</code>, <code>Ghi chú học phí</code>, <code>Ghi chú trong lớp</code>.</li>
+<li>Ô Học viên có tag theo dữ liệu của item học phí, tên và email có kiểu link. Nhãn <code>Mới</code> cạnh tên học viên trong chi tiết hóa đơn là <strong>tag</strong>, hiển thị theo quy tắc tag của item học phí đã có.</li>
+<li>Ô Lớp hiển thị badge kỳ như <code>Kì 1</code> và badge mã lớp như <code>DN3CT2-I</code>. Số tiền dùng badge cam nhạt; ghi chú học phí và ghi chú trong lớp hiển thị ở hai cột riêng, rỗng hiển thị <code>(Trống)</code>.</li>
+<li>Có thể có nhiều dòng phân bổ của cùng học viên cho nhiều lớp; phân biệt bằng bản ghi phân bổ, không gộp chỉ vì cùng tên/email/mã học viên.</li>
+<li>Công thức đã chốt: <code>Số Hoá Đơn = số hóa đơn tạo cho học viên</code>; <code>Tổng Học Phí = tổng số tiền đã dùng trong các hóa đơn của học viên</code>. Các con số trên ảnh chỉ minh họa bố cục; dùng dữ liệu thực tế theo hai công thức này.</li>
+</ul>
+<h4 id="testcase-tab-hoc-phi-bang-phan-bo-va-the-tong-hop">Testcase — Tab Học phí — bảng, phân bổ và thẻ tổng hợp</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 27: Xem và thao tác tab Học phí</td>
+<td>High</td>
+<td>Smoke</td>
+<td>Flow 9 / REQ17 / REQ33</td>
+<td>Administrator</td>
+<td>Học viên có hóa đơn và phân bổ</td>
+<td><strong>Given</strong> Tab Học phí đang mở<br><strong>When</strong> Xem bảng, mở rộng hóa đơn hoặc chọn thao tác đã có<br><strong>Then</strong> Hiển thị đúng hóa đơn/học viên</td>
+<td>- Số Hoá Đơn đếm hóa đơn tạo cho học viên; Tổng Học Phí cộng tiền đã dùng trong các hóa đơn của học viên<br>- Đủ 16 cột, cuộn ngang nằm trong popup<br>- Bảng con gắn đúng hóa đơn, không gộp các phân bổ cùng học viên<br>- Thao tác hóa đơn theo rule đã có; xóa luôn yêu cầu xác nhận</td>
+</tr>
+<tr>
+<td>Case 63: Phân bổ hóa đơn mở rộng và cuộn ngang</td>
+<td>High</td>
+<td></td>
+<td>REQ33</td>
+<td>Administrator</td>
+<td>Một hóa đơn có hai phân bổ cùng học viên cho hai lớp</td>
+<td><strong>Given</strong> Học phí mở rộng hóa đơn<br><strong>When</strong> Xem chi tiết và cuộn ngang<br><strong>Then</strong> Giữ đúng hai bản ghi phân bổ</td>
+<td>- Hai mã lớp/kỳ, số tiền và hai loại ghi chú ở đúng dòng<br>- Nhãn Mới là tag của item học phí; hiển thị theo dữ liệu tag, không theo status học viên trong lớp hoặc filter logic<br>- Không gộp theo tên/email học viên<br>- Không tràn bảng khỏi popup, không lẫn hóa đơn</td>
+</tr>
+<tr>
+<td>Case 69: Số hóa đơn và tổng tiền đã dùng của học viên</td>
+<td>High</td>
+<td></td>
+<td>REQ33</td>
+<td>Administrator</td>
+<td>Học viên A có 3 hóa đơn, số tiền đã dùng tương ứng 1.000.000 đ, 500.000 đ và 0 đ; có thêm hóa đơn của học viên B</td>
+<td><strong>Given</strong> User mở Học phí của A<br><strong>When</strong> Dữ liệu được tải<br><strong>Then</strong> Số Hoá Đơn là 3, Tổng Học Phí là 1.500.000 đ</td>
+<td>- Không cộng hóa đơn hoặc tiền của B<br>- Một hóa đơn có nhiều dòng sử dụng/phân bổ vẫn chỉ tăng Số Hoá Đơn một lần<br>- Cộng tiền đã dùng của A, không thay bằng toàn bộ giá trị hóa đơn hay tiền đã đóng</td>
+</tr>
+</tbody>
+</table></div>
+<h4 id="thao-tac-hoc-phi-va-hoa-don-hien-co">Thao tác học phí và hóa đơn hiện có</h4>
+<p>Nghiệp vụ dùng chung với <a href="../../receipt_management/receipt/receipt.md">Hóa đơn</a>, nhất là Trang 1–4, Flow 4–8 và REQ01–REQ17; thao tác trên từng item học phí theo <a href="../../receipt_management/tuition_detail/tuition_detail.md">Chi tiết học phí</a>. UI popup lịch sử dùng ảnh chuẩn mới phía trên.</p>
+<ul>
+<li>Tab Học phí cho phép đầy đủ các thao tác đã được đặc tả đối với học phí và hóa đơn hiện có. <strong>Không có nút + tạo hóa đơn, không mở popup Thêm hóa đơn hoặc gửi thao tác tạo hóa đơn mới từ tab này.</strong> Thêm học phí là thêm khoản sử dụng vào hóa đơn đã có, không tạo hóa đơn khác.</li>
+<li>Menu <code>⋮</code> gồm <code>Thêm học phí</code>, <code>Chỉnh sửa</code>, <code>Copy</code>, <code>Lịch sử hành động</code>, <code>Xuất hóa đơn</code>, <code>Xóa hóa đơn</code>. Giai đoạn hiện tại, bốn mục Thêm học phí/Chỉnh sửa/Copy/Xóa hóa đơn hoạt động; Lịch sử hành động và Xuất hóa đơn hiển thị nhưng disable theo REQ05 của Hóa đơn.</li>
+<li><code>Copy</code> <strong>chỉ sao chép tên hóa đơn vào clipboard</strong>, thông báo kết quả copy; không tạo bản sao hóa đơn, không tăng Số Hoá Đơn/Số bill và không thay đổi tiền.</li>
+<li>Bấm dòng hóa đơn mở/thu gọn bảng học phí; popup Chỉnh sửa chỉ mở từ menu <code>⋮</code>. Chi tiết xổ xuống dùng cùng dữ liệu của hóa đơn ở màn Hóa đơn, có thể có nhiều khoản và nhiều học viên; không coi việc hiển thị các khoản thuộc cùng invoice_id là trộn hóa đơn khác. Hai thẻ thống kê vẫn tính riêng học viên đang xem.</li>
+<li>Dropdown status, checkbox Đã nhận tiền, Ghi chú/Hiểu khách, tệp đính kèm, Phụ trách và Liên kết dùng cùng dữ liệu/hành vi như màn Hóa đơn. Không tạo bản ghi hoặc trạng thái tài chính riêng cho lịch sử học viên.</li>
+<li>Hover học viên trong item học phí có Tên/SĐT/Email và icon copy; hover Lớp có tooltip Thông tin lớp (Sĩ số, Buổi học, Khai giảng, Lịch học, SP, CSKH, Giáo viên). Menu tên học viên trong <strong>item học phí</strong> có Thêm tag/Thêm lịch hẹn/Xem lịch sử; tag thuộc riêng item học phí, không thay tag của hồ sơ học viên. Menu tên học viên ở <strong>danh sách tổng</strong> vẫn chỉ có hai mục đã chốt.</li>
+</ul>
+<h5 id="testcase-menu-hoa-don-va-thao-tac-item-hoc-phi">Testcase — Menu hóa đơn và thao tác item học phí</h5>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 70: Lịch sử không tạo hóa đơn và menu đúng giai đoạn</td>
+<td>High</td>
+<td></td>
+<td>REQ36 / REQ25</td>
+<td>Administrator, Sale, Support, Class Handler</td>
+<td>Có hóa đơn thuộc phạm vi thao tác</td>
+<td><strong>Given</strong> Mở tab Học phí<br><strong>When</strong> Kiểm tra control/menu và chọn Copy<br><strong>Then</strong> Chỉ thao tác hóa đơn hiện có</td>
+<td>- Không có nút +/form tạo hóa đơn<br>- Menu hoạt động Thêm học phí/Chỉnh sửa/Copy/Xóa hóa đơn<br>- Lịch sử hành động/Xuất hóa đơn disable<br>- Copy chỉ đưa tên vào clipboard, không request tạo hoặc tăng số liệu</td>
+</tr>
+<tr>
+<td>Case 72: Hành vi cột và item học phí dùng chung</td>
+<td>Medium</td>
+<td></td>
+<td>REQ33 / REQ36</td>
+<td>Administrator</td>
+<td>Hóa đơn có ghi chú, tệp, người phụ trách, học viên liên kết và khoản học phí</td>
+<td><strong>Given</strong> Mở Học phí và xổ một hóa đơn<br><strong>When</strong> Hover các cột/Học viên/Lớp, mở menu tên học viên của item<br><strong>Then</strong> Dùng nội dung và thao tác theo nguồn</td>
+<td>- Học phí bằng số dòng, KPI bằng tổng KPI phụ trách<br>- Hiểu khách/Ghi chú hover đúng nội dung, cam/xám đúng trạng thái có/rỗng<br>- Tooltip phụ trách/liên kết và icon copy đúng dữ liệu<br>- Tag thêm cho riêng item học phí; menu danh sách tổng vẫn hai mục</td>
+</tr>
+</tbody>
+</table></div>
+<h4 id="popup-them-hoc-phi-hai-buoc-theo-hoa-don">Popup Thêm học phí — hai bước theo Hóa đơn</h4>
+<p align="center">
+  <a href="../../receipt_management/receipt/image-5.png"><img src="../../receipt_management/receipt/image-5.png" alt="Chọn học viên đã liên kết hóa đơn để thêm học phí" width="650" title="Nhấn để xem ảnh gốc"></a><br>
+  <em>Bước 1: chọn học viên đã liên kết; nút Thêm học viên đi tới form học phí cho học viên mới</em>
+</p>
+<p align="center">
+  <a href="../../receipt_management/receipt/image-6.png"><img src="../../receipt_management/receipt/image-6.png" alt="Form thêm học phí theo requirement Hóa đơn" width="700" title="Nhấn để xem ảnh gốc"></a><br>
+  <a href="../../receipt_management/receipt/image-7.png"><img src="../../receipt_management/receipt/image-7.png" alt="Form thêm học phí với các chế độ chọn học viên" width="700" title="Nhấn để xem ảnh gốc"></a><br>
+  <em>Bước 2: thêm học phí vào hóa đơn hiện có</em>
+</p>
+
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Thành phần</th>
+<th>Quy tắc theo Hóa đơn</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Chọn học viên liên kết</td>
+<td>Menu Thêm học phí mở danh sách học viên đã liên kết đúng hóa đơn; chọn một người để mở form. Danh sách rỗng vẫn có nút Thêm học viên.</td>
+</tr>
+<tr>
+<td>Chọn học viên có sẵn</td>
+<td>Khi tick: Tên và Mã học viên là dropdown tìm kiếm, đồng bộ hai chiều; Email tự điền, chỉ đọc. Tên/Mã bắt buộc.</td>
+</tr>
+<tr>
+<td>Học viên mới</td>
+<td>Nút Thêm học viên hoặc bỏ tick mở chế độ nhập Tên/Email, chọn Level 1..9; ẩn field Mã học viên. Tên và Level bắt buộc, Email phải đúng định dạng theo ngoại lệ Hóa đơn. Hệ thống sinh Code 6 số theo Level, kiểm tra trùng và tăng tới mã hợp lệ; học viên mới được liên kết hóa đơn hiện có. Đây là flow học phí, không phải popup Thêm học viên của danh sách tổng.</td>
+</tr>
+<tr>
+<td>Lớp học</td>
+<td>Dropdown bắt buộc chọn lớp để ghi nhận khoản học phí.</td>
+</tr>
+<tr>
+<td>Giá trị</td>
+<td>Bắt buộc, mặc định 0 đ; <strong>không được lớn hơn Còn lại</strong> của hóa đơn. Còn lại = Số tiền đã đóng − tổng Giá trị các học phí đã thêm của toàn hóa đơn, không chỉ của học viên đang xem.</td>
+</tr>
+<tr>
+<td>Ghi chú học phí / Ghi chú trong lớp</td>
+<td>Hai field không bắt buộc; hiển thị đúng hai cột trong chi tiết xổ xuống.</td>
+</tr>
+<tr>
+<td>Thêm / Hủy</td>
+<td>Thêm validate rồi lưu khoản học phí vào invoice_id đang thao tác; Hủy không lưu. Lưu thành công cập nhật chi tiết, số lượng Học phí, Còn lại và thẻ tổng hợp theo dữ liệu đã lưu.</td>
+</tr>
+</tbody>
+</table></div>
+<h5 id="testcase-popup-them-hoc-phi">Testcase — Popup Thêm học phí</h5>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 43: Học phí trên nhiều hóa đơn hiện có</td>
+<td>High</td>
+<td></td>
+<td>REQ24 / REQ28 / REQ37</td>
+<td>Administrator</td>
+<td>Học viên liên kết 2 hóa đơn có số dư và đủ quyền</td>
+<td><strong>Given</strong> Mở lần lượt hai hóa đơn trong Học phí<br><strong>When</strong> Thêm khoản học phí hợp lệ, thử Giá trị 0 và Giá trị vượt Còn lại<br><strong>Then</strong> Lưu đúng hóa đơn theo validation</td>
+<td>- Giá trị 0 có giá trị nhập, không bị coi là bỏ trống<br>- Giá trị vượt Còn lại bị chặn<br>- Một học viên liên kết nhiều hóa đơn được<br>- Không tạo hóa đơn khác</td>
+</tr>
+<tr>
+<td>Case 46: Thêm học phí cho học viên có sẵn</td>
+<td>High</td>
+<td></td>
+<td>Flow 9 / REQ28</td>
+<td>Administrator</td>
+<td>Hóa đơn đã liên kết học viên</td>
+<td><strong>Given</strong> Menu ⋮ → Thêm học phí<br><strong>When</strong> Chọn học viên liên kết rồi chọn Tên/Mã trong form<br><strong>Then</strong> Đồng bộ dữ liệu và thêm khoản học phí</td>
+<td>- Có đủ hai bước<br>- Tên/Mã dropdown đồng bộ hai chiều, Email tự điền chỉ đọc<br>- Bắt buộc Lớp/Giá trị, hai ghi chú không bắt buộc<br>- Thành công cập nhật số lượng học phí và Còn lại của hóa đơn hiện có</td>
+</tr>
+<tr>
+<td>Case 47: Tạo học viên qua học phí của hóa đơn hiện có</td>
+<td>High</td>
+<td></td>
+<td>Flow 9 / REQ28</td>
+<td>Administrator</td>
+<td>Hóa đơn có số dư; popup chọn học viên đang mở</td>
+<td><strong>Given</strong> Chọn Thêm học viên hoặc bỏ tick Chọn học viên có sẵn<br><strong>When</strong> Nhập Tên/Email, chọn Level 1..9, Lớp và Giá trị hợp lệ rồi Thêm<br><strong>Then</strong> Tạo học viên/liên kết/khoản học phí theo Hóa đơn</td>
+<td>- Không có field Mã nhập tay; hệ thống sinh Code 6 số không trùng theo Level<br>- Email sai/thiếu field bắt buộc chặn lưu<br>- Không tạo hóa đơn mới<br>- Không ép các field của popup Thêm học viên danh sách tổng vào form học phí</td>
+</tr>
+<tr>
+<td>Case 71: Giới hạn Còn lại và cập nhật số học phí</td>
+<td>High</td>
+<td></td>
+<td>REQ28 / REQ37</td>
+<td>Administrator</td>
+<td>Số tiền đã đóng 1.000.000 đ; toàn hóa đơn đã dùng 400.000 đ cho A và 300.000 đ cho B</td>
+<td><strong>Given</strong> Mở lịch sử A và thêm học phí từ hóa đơn này<br><strong>When</strong> Thử Giá trị 300.001 đ rồi 300.000 đ<br><strong>Then</strong> Chặn vượt số dư, cho lưu giá trị bằng số dư</td>
+<td>- Còn lại ban đầu 300.000 đ, tính cả học phí B<br>- Lần vượt không tạo khoản<br>- Lần hợp lệ Còn lại 0, số lượng học phí tăng 1<br>- Tổng Học Phí A cập nhật theo khoản đúng A, số hóa đơn không tăng</td>
+</tr>
+</tbody>
+</table></div>
+<h4 id="popup-chinh-sua-hoa-don-hien-co">Popup Chỉnh sửa hóa đơn hiện có</h4>
+<ul>
+<li>Form điền sẵn dữ liệu, tiêu đề Chỉnh sửa hóa đơn, nút Cập nhật; dùng field/validation từ Trang 2 của Hóa đơn. <strong>Tên hóa đơn chỉ đọc</strong>, tự tạo lại theo REQ01; không phải mọi field đều nhập tay.</li>
+<li>Bắt buộc Trạng thái, Ngày ghi nhận, Tên học viên, Mã học viên, Loại hóa đơn, Số tiền, Tài khoản nhận; bắt buộc nhập tay Quy đổi VND khi đơn vị khác VND. Khi tick Chọn học viên có sẵn, Tên/Mã đồng bộ hai chiều; bỏ tick nhập tay Tên/Mã của thông tin hóa đơn theo form chung.</li>
+<li>Loại hóa đơn dùng đúng 22 lựa chọn ở Hóa đơn, không dùng danh sách loại cũ trong ảnh học viên. Trạng thái gồm Mới/Xác nhận/Đợi lớp/Học trước/Dời lịch/Hoàn tiền/Hủy đơn/Hỗ trợ sau chốt. Tài khoản nhận gồm Tài khoản cá nhân/Tài khoản công ty/Tiền mặt/Khác.</li>
+<li>Tiền tệ gồm VND/USD/EUR/JPY/CNY/KRW/GBP. VND tự điền Quy đổi bằng Số tiền và vẫn cho sửa; ngoại tệ không tự quy đổi. KPI cạnh từng người phụ trách cho sửa từ −5 đến 5, bước 0.05; cột KPI bằng tổng KPI các người phụ trách, trạng thái người phụ trách chỉ để ghi nhận.</li>
+<li>Tệp đính kèm hỗ trợ PDF/DOC/DOCX/PPT/PPTX, tối đa 20MB mỗi file. Ghi chú/Email/SĐT/Lớp dự kiến/Thông tin/Hiểu khách/Ngày hẹn/Giờ ghi nhận là thông tin thêm, không bắt buộc theo form nguồn.</li>
+<li>Đồng bộ ICS/CG theo Hóa đơn: bên lưu trước được ưu tiên; bên lưu sau không ghi đè và nhận <code>đã có dữ liệu mới, vui lòng reload trang</code>. Quyền thao tác từ màn học viên vẫn theo bảng quyền/phạm vi học viên của tài liệu này; không lấy quyền Admin-only của menu Hóa đơn để thay thế quyền đã chốt cho màn học viên.</li>
+</ul>
+<h5 id="testcase-popup-chinh-sua-hoa-don">Testcase — Popup Chỉnh sửa hóa đơn</h5>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 42: Dropdown chỉnh sửa theo Hóa đơn</td>
+<td>High</td>
+<td></td>
+<td>REQ27</td>
+<td>Administrator</td>
+<td>Popup Chỉnh sửa hóa đơn hiện có đang mở</td>
+<td><strong>Given</strong> User có quyền<br><strong>When</strong> Mở Loại/Trạng thái/Tài khoản nhận/Tiền tệ<br><strong>Then</strong> Dùng lựa chọn nguồn</td>
+<td>- Đủ 22 loại theo Hóa đơn<br>- Đủ trạng thái và tài khoản nhận nguồn<br>- VND tự điền Quy đổi và cho sửa; ngoại tệ bắt buộc nhập tay Quy đổi</td>
+</tr>
+<tr>
+<td>Case 44: Chỉnh sửa và Copy tên hóa đơn</td>
+<td>High</td>
+<td></td>
+<td>Flow 9 / REQ24 / REQ25</td>
+<td>Administrator</td>
+<td>Có hóa đơn và KPI người phụ trách</td>
+<td><strong>Given</strong> Mở menu ⋮<br><strong>When</strong> Chỉnh sửa dữ liệu/KPI rồi Cập nhật; chọn Copy và dán clipboard<br><strong>Then</strong> Lưu hóa đơn hiện có và copy đúng tên</td>
+<td>- Tên hóa đơn chỉ đọc, tự cập nhật theo rule nguồn<br>- KPI nhận −5..5 bước 0.05<br>- Clipboard đúng tên hiện tại<br>- Copy không tạo bản sao, không tăng Số Hoá Đơn/Số bill/tiền</td>
+</tr>
+<tr>
+<td>Case 73: Xung đột chỉnh sửa ICS/CG</td>
+<td>High</td>
+<td></td>
+<td>REQ38</td>
+<td>Administrator</td>
+<td>Cùng hóa đơn bị sửa ở hai bên</td>
+<td><strong>Given</strong> Bên thứ nhất đã lưu dữ liệu mới<br><strong>When</strong> Bên còn lại lưu bản cũ từ popup Chỉnh sửa<br><strong>Then</strong> Không ghi đè bản mới</td>
+<td>- Giữ bản lưu trước<br>- Thông báo đã có dữ liệu mới, vui lòng reload trang<br>- Reload đọc lại đúng hóa đơn và thẻ thống kê</td>
+</tr>
+</tbody>
+</table></div>
+<h4 id="popup-xac-nhan-xoa-hoa-don">Popup xác nhận Xóa hóa đơn</h4>
+<ul>
+<li>Xóa hóa đơn phải qua xác nhận, là <strong>xóa mềm</strong>. Hóa đơn và học phí dùng chung dữ liệu, nên xóa hóa đơn phải đồng bộ các khoản học phí, số dư của <strong>tất cả học viên liên kết hóa đơn</strong>, kể cả khi thao tác từ lịch sử của một học viên.</li>
+<li>Sau xóa thành công, các khoản học phí của hóa đơn đã xóa không còn đóng góp vào học phí sử dụng và số dư khả dụng của học viên liên kết; dữ liệu học phí theo lớp liên quan cũng cập nhật tương ứng. Backend tính lại theo các hóa đơn và khoản học phí còn hiệu lực; không chỉ ẩn dòng hóa đơn ở giao diện rồi giữ số liệu cũ.</li>
+<li>Tải lại bảng lịch sử, Số Hoá Đơn/Tổng Học Phí, số dư học viên và các số liệu Số bill/Hoàn tiền/Tổng doanh thu liên quan theo dữ liệu đã đồng bộ. Khoản học phí từ hóa đơn khác giữ đúng đóng góp của nó.</li>
+<li>Hủy hoặc lỗi giữ nguyên cả hóa đơn, học phí và số dư. Chỉ báo thành công khi cập nhật đồng bộ hoàn tất; không để trạng thái hóa đơn đã xóa nhưng học phí/số dư vẫn còn hiệu lực. Xóa mềm giữ lịch sử, không tự tạo giao dịch hoàn tiền.</li>
+</ul>
+<h5 id="testcase-xoa-hoa-don-va-loi-thao-tac-hoc-phi">Testcase — Xóa hóa đơn và lỗi thao tác học phí</h5>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 36: Xác nhận xóa mềm hóa đơn</td>
+<td>High</td>
+<td></td>
+<td>Flow 9 / EX12 / REQ22</td>
+<td>Administrator</td>
+<td>Học viên có hóa đơn</td>
+<td><strong>Given</strong> Tab Học phí đang mở<br><strong>When</strong> Chọn Xóa hóa đơn, thử Hủy rồi Xác nhận<br><strong>Then</strong> Chỉ xóa mềm khi xác nhận thành công</td>
+<td>- Có popup xác nhận<br>- Hủy giữ nguyên hóa đơn, học phí và số dư<br>- Thành công đồng bộ học phí/số dư của mọi học viên liên kết, tải lại bảng/các số liệu<br>- Giữ lịch sử xóa mềm; không tự tạo giao dịch hoàn tiền</td>
+</tr>
+<tr>
+<td>Case 37: Xóa hóa đơn thất bại</td>
+<td>High</td>
+<td></td>
+<td>Flow 9 / EX13 / REQ22</td>
+<td>Administrator</td>
+<td>Popup xác nhận xóa đang mở và xử lý xóa gặp lỗi</td>
+<td><strong>Given</strong> User đã chọn đúng hóa đơn<br><strong>When</strong> Xác nhận xóa<br><strong>Then</strong> Hệ thống không hoàn thành thao tác</td>
+<td>- Giữ nguyên hóa đơn, các khoản học phí và số dư của học viên liên kết; không cập nhật dở dang<br>- Hiển thị <code>Không thể xóa hóa đơn. Vui lòng thử lại.</code></td>
+</tr>
+<tr>
+<td>Case 40: Lỗi thao tác học phí và hóa đơn hiện có</td>
+<td>High</td>
+<td></td>
+<td>Flow 9 / EX16 / REQ23</td>
+<td>Administrator</td>
+<td>Thao tác thêm học phí/cập nhật gặp lỗi, clipboard copy không thành công</td>
+<td><strong>Given</strong> User thực hiện từng thao tác<br><strong>When</strong> Xử lý lỗi<br><strong>Then</strong> Không báo thành công hoặc lưu dở dang</td>
+<td>- Giữ dữ liệu đã lưu trước<br>- Phản hồi lỗi theo Hóa đơn/Toast chung<br>- Copy tên không gửi request tạo hóa đơn</td>
+</tr>
+<tr>
+<td>Case 76: Xóa hóa đơn đồng bộ mọi học viên liên kết</td>
+<td>High</td>
+<td></td>
+<td>Flow 9 / REQ22 / REQ33</td>
+<td>Administrator</td>
+<td>Hóa đơn X có học phí 400.000 đ của A và 300.000 đ của B; các hóa đơn khác còn hiệu lực có học phí A 200.000 đ, B 100.000 đ; cả A/B có số dư từ X</td>
+<td><strong>Given</strong> Mở lịch sử A và chọn xóa X<br><strong>When</strong> Xác nhận và xử lý đồng bộ thành công<br><strong>Then</strong> Xóa mềm X, cập nhật học phí và số dư của cả A/B</td>
+<td>- Tổng Học Phí A còn 200.000 đ, B còn 100.000 đ<br>- Số hóa đơn/Số bill tính lại, không tính X đã xóa<br>- Số dư A/B tính lại từ dữ liệu còn hiệu lực, không giữ đóng góp từ X<br>- Khoản học phí liên kết X không còn hiệu lực cả ở lịch sử học viên và học phí trong lớp<br>- Mở lại/tải lại các màn đều thấy cùng dữ liệu<br>- Không xóa khoản học phí thuộc hóa đơn khác hoặc tự tạo hoàn tiền</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="lich-su-lop">Lịch sử lớp</h3>
+<p align="center">
+  <a href="./images/22-student-class-history.png"><img src="./images/22-student-class-history.png" alt="UI chuẩn Lịch sử lớp: thẻ tổng hợp và tiến độ từng khóa" width="1000" title="Nhấn để xem ảnh gốc"></a><br>
+  <em>Tab Lịch sử lớp — 6 thẻ tổng hợp, tiến độ khóa học, đánh giá và KPI</em>
+</p>
+
+<ul>
+<li>Hiển thị tất cả lớp học viên đã từng được thêm, không chỉ Lớp hiện tại.</li>
+<li>Đầu tab có 6 thẻ theo thứ tự <code>Số Lớp</code>, <code>Lên Kỳ</code>, <code>Đi Học</code>, <code>BTVN</code>, <code>Đạt Kpi</code>, <code>Đánh Giá</code>. Các số trên ảnh là dữ liệu mẫu; quy tắc hiện tại như sau.</li>
+</ul>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Thẻ tổng hợp</th>
+<th>Quy tắc hiện tại</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Số Lớp</td>
+<td><code>Số lớp chính thức / tổng số lớp trong lịch sử học viên</code>. Ví dụ có 1 lớp chính thức trong 6 lớp thì hiển thị <code>1/6</code>. Lớp chính thức là lớp không tick Lớp không chính thức, theo <a href="../class_management/class_creation_requirements.md#lớp-không-chính-thức">Tạo lớp học</a>. Mỗi class_id được đếm một lần.</td>
+</tr>
+<tr>
+<td>Lên Kỳ</td>
+<td>Trung bình <code>getUpTerm()</code> của các lớp <strong>chính thức đã Hoàn thành</strong> trong lịch sử học viên. Mỗi lớp có trọng số bằng nhau.</td>
+</tr>
+<tr>
+<td>Đi Học</td>
+<td>Tính tỷ lệ Đi học của học viên trong từng lớp trên <strong>các buổi đã được điểm danh</strong>, rồi lấy trung bình cộng các tỷ lệ có dữ liệu. Mỗi lớp có trọng số bằng nhau.</td>
+</tr>
+<tr>
+<td>BTVN</td>
+<td>Tính tỷ lệ nộp BTVN của học viên trong từng lớp trên <strong>các bài đã nộp hoặc đã chuyển qua bài mới mà chưa nộp</strong>, rồi lấy trung bình cộng các tỷ lệ có dữ liệu. Mỗi lớp có trọng số bằng nhau.</td>
+</tr>
+<tr>
+<td>Đạt Kpi</td>
+<td>Trung bình <code>getUpTerm()</code> của <strong>tất cả lớp chính thức</strong> trong lịch sử học viên, gồm cả chưa Hoàn thành. Không phải số/tỷ lệ lớp đạt ngưỡng 80%.</td>
+</tr>
+<tr>
+<td>Đánh Giá</td>
+<td>Trung bình <strong>điểm số</strong> <code>scoreEvaluateClass()</code> của các lớp chính thức, rồi đổi điểm trung bình sang A–F. Không đổi các chữ A–F thành điểm để lấy trung bình.</td>
+</tr>
+</tbody>
+</table></div>
+<ul>
+<li><strong>Quy tắc tổng hợp:</strong> tính chỉ số ở từng lớp trước rồi lấy trung bình cộng, mỗi lớp trọng số bằng nhau. Lên Kỳ chỉ lấy lớp chính thức đã Hoàn thành; Đạt Kpi và Đánh Giá lấy tất cả lớp chính thức. Đi Học/BTVN giữ phạm vi lớp và điều kiện buổi/bài đã chốt bên dưới.</li>
+<li>Đi Học/BTVN lấy trên các lớp trong lịch sử, không giới hạn riêng lớp chính thức hoặc lớp hiện tại. Đây là chỉ số của <strong>học viên qua các lớp</strong>, không lấy tỷ lệ chung của cả lớp thay thế.</li>
+<li><strong>Đi học từng lớp:</strong> <code>số buổi được tính đi học / số buổi đã có điểm danh × 100</code>. Có mặt, Vào trễ, Ra sớm, Vào trễ &amp; Ra sớm tính đi học; Nghỉ CP/KP vẫn có trong mẫu số nhưng không tính đi học. Chưa điểm danh loại khỏi cả tử số và mẫu số, theo <a href="../class_management/class_detail_lessons_requirements.md#chỉ-số--btvn-và-đi-học-theo-bài">quy tắc điểm danh</a>.</li>
+<li><strong>BTVN từng lớp:</strong> <code>số bài đã nộp / số bài đủ điều kiện tính × 100</code>. Đã nộp chưa chấm và đã chấm 0 đều tính đã nộp; nộp nhiều lần một bài chỉ tính một lần. Bài chưa nộp chỉ vào mẫu số khi lớp đã chuyển qua bài mới, khi đó đóng góp 0 vào tử số. Bài hiện tại chưa nộp và bài tương lai chưa nộp chưa tính; không đợi điểm chấm để ghi nhận bài đã nộp.</li>
+<li><strong>Trung bình:</strong> <code>tổng tỷ lệ từng lớp đủ dữ liệu / số lớp đủ dữ liệu</code>. Tập lớp đủ dữ liệu xác định riêng cho Đi Học và BTVN. Lớp chưa có buổi/bài đủ điều kiện không tính vào trung bình của chỉ số đó; tỷ lệ 0% với mẫu số lớn hơn 0 vẫn phải tính.</li>
+<li>Đi Học/BTVN chỉ làm tròn kết quả cuối đến <strong>1 chữ số thập phân</strong>, hiển thị dạng <code>70.0%</code>, <code>58.3%</code>; không làm tròn tỷ lệ từng lớp trước khi lấy trung bình. Ví dụ Đi học 80% và 60% → 70.0%; BTVN 90% và 50% → 70.0%.</li>
+<li>Không có lớp thì Số Lớp hiển thị <code>0/0</code>; Đi Học/BTVN trống, Lên Kỳ/Đạt Kpi <code>0%</code>, Đánh Giá trống. Đi Học/BTVN chưa có lớp đủ dữ liệu thì trống; hai thẻ dùng <code>getUpTerm()</code> có tập lớp tính rỗng thì <code>0%</code> theo source. Dữ liệu chưa tải không hiển thị 0% giả.</li>
+</ul>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Thành phần dòng lớp</th>
+<th>Mô tả UI</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td># / Mã lớp</td>
+<td>Cột đầu có icon <strong>trạng thái lớp</strong> và mã lớp; dùng đầy đủ mapping icon/tên theo <a href="../class_management/class_management_requirements.md#trạng-thái-lớp">Trạng thái lớp</a>. Mũ tốt nghiệp xanh là lớp <strong>Hoàn thành</strong> theo UI chuẩn; tooltip ghi Hoàn thành. Không dùng trạng thái học viên trong lớp để chọn icon này.</td>
+</tr>
+<tr>
+<td>Khoá học</td>
+<td>Tên khóa học, thanh tiến độ và số <code>x/N Buổi</code> là <strong>tiến độ của cả lớp</strong>. Ví dụ lớp đã học 6/20 buổi thì mọi học viên xem lớp này đều thấy 6/20, dù số buổi đi học của từng người khác nhau. Không dùng số buổi học viên đã điểm danh làm x.</td>
+</tr>
+<tr>
+<td>Đánh giá</td>
+<td>Badge chữ A–F của lớp, lấy <code>ClassInfoModel.getEvaluate</code> từ điểm <code>scoreEvaluateClass()</code> và bảng ngưỡng bên dưới. Màu A xanh lá, B xanh dương, C cam, D vàng, E đỏ, F đỏ đậm theo nguồn và UI chuẩn.</td>
+</tr>
+<tr>
+<td>KPI</td>
+<td>Vòng tròn % cuối dòng lấy <strong>getUpTerm() của cả lớp</strong>, theo nhánh Hoàn thành/chưa Hoàn thành bên dưới. Vẫn tính và hiển thị ở dòng lớp không chính thức, nhưng lớp đó không tham gia ba thẻ Lên Kỳ/Đạt Kpi/Đánh Giá.</td>
+</tr>
+<tr>
+<td>Mũi tên cuối dòng</td>
+<td>Mở Chi tiết lớp của dòng đang chọn ở trang phía dưới popup; tắt popup sẽ thấy lớp đó, theo <a href="../../receipt_management/tuition_detail/tuition_detail.md#trang-6-popup-hồ-sơ-học-viên---tab-lịch-sử-lớp">Hồ sơ học viên — Lịch sử lớp</a>.</td>
+</tr>
+</tbody>
+</table></div>
+<ul>
+<li>Tên khóa dài được rút gọn theo bố cục ảnh; không làm thay đổi nội dung đã lưu. Các mã lớp trùng nhau trong ảnh là dữ liệu mẫu, không dùng mã/tên hiển thị để gộp các bản ghi lớp khác nhau.</li>
+<li>Tiến độ/KPI/Đánh giá trên tab này không tạo thêm trạng thái học viên. Chỉ đổi status học viên trong Cài đặt lớp như quy tắc đã chốt bên dưới.</li>
+<li>Đã đối chiếu cả frontend ICS cũ do người dùng cung cấp. Công thức dưới đây dùng các mã trạng thái trong dữ liệu thống kê lớp; không tự thêm các mã cũ vào dropdown 7 trạng thái học viên đã chốt. Nguồn hàm, cách lọc và định dạng tại <a href="./legacy_source_review.md">Đối chiếu source ICS cũ</a>.</li>
+</ul>
+<h4 id="cong-thuc-len-ky-va-dat-kpi">Công thức Lên kỳ và Đạt KPI</h4>
+<p>Gọi <code>r_lớp = getUpTerm() × 100%</code>. Đây là tỷ lệ tính trên <strong>danh sách học viên của cả lớp</strong>, không chỉ học viên đang mở popup. Một lớp xuất hiện trong lịch sử của hai học viên có cùng r_lớp.</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Trạng thái lớp</th>
+<th>Tử số</th>
+<th>Mẫu số</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Hoàn thành</td>
+<td>Số HV có mã <code>UpSale</code>, <code>Force</code>, <code>SuperUpSale</code>, <code>Completed</code> (Lên kỳ, Bắt buộc lên kỳ, Lên khóa, Hoàn thành).</td>
+<td>Tổng HV sau khi loại <code>Remove</code>, <code>Moved</code>, <code>Audit</code>, <code>Testing</code>, <code>Viewer</code>. Nghỉ học/Bảo lưu/Bỏ cọc/Rời lớp vẫn trong mẫu số.</td>
+</tr>
+<tr>
+<td>Chưa Hoàn thành</td>
+<td>Số HV sau khi loại <code>Dropped</code>, <code>Exit</code>, <code>Viewer</code>, <code>Remove</code>, <code>Deposit</code>, <code>Moved</code>, <code>Retained</code> (Nghỉ học, Rời lớp, Chỉ xem, Xóa, Bỏ cọc, Chuyển lớp, Bảo lưu). <code>Audit</code>/<code>Testing</code> không bị loại ở nhánh này.</td>
+<td>Tổng HV trừ số HV <code>Moved</code> (Chuyển lớp); các nhóm còn lại vẫn trong mẫu số.</td>
+</tr>
+</tbody>
+</table></div>
+<ul>
+<li><strong>Lên Kỳ:</strong> <code>tổng r_lớp chính thức đã Hoàn thành / số lớp chính thức đã Hoàn thành</code>.</li>
+<li><strong>Đạt Kpi:</strong> <code>tổng r_lớp chính thức / số lớp chính thức</code>, gồm cả lớp chưa Hoàn thành. Biến đếm lớp đạt ngưỡng ≥ 80% trong source không dùng để hiển thị thẻ này.</li>
+<li>Loại giá trị chưa sẵn sàng/không hợp lệ khỏi phép trung bình; 0% hợp lệ vẫn tính. Không có lớp trong tập tính thì hiển thị 0%. Với mẫu số HV bằng 0, r_lớp trả 0%, không chia 0 hoặc hiển thị NaN/vô cực.</li>
+<li>Giữ tỷ lệ gốc khi lấy trung bình. Hai thẻ và vòng % từng dòng định dạng theo <code>convertProgressLoading</code> → <code>convertDouble(pre: 2)</code> của ICS cũ: <strong>2 chữ số có nghĩa</strong>, không phải cố định 2 chữ số thập phân. Ví dụ 44.6% → 45%, 1.234% → 1.2%. Quy tắc 1 chữ số thập phân đã chốt riêng cho Đi Học/BTVN vẫn áp dụng.</li>
+<li>Ví dụ 4 lớp chính thức đã Hoàn thành có r_lớp 0%, 77%, 75%, 12% và 1 lớp chính thức chưa Hoàn thành có 59%: Lên Kỳ = 41%; Đạt Kpi = 44.6%, hiển thị 45%.</li>
+</ul>
+<h4 id="cong-thuc-danh-gia-theo-ics-cu">Công thức Đánh giá theo ICS cũ</h4>
+<p>Áp dụng <code>scoreEvaluateClass()</code> cho từng lớp, rồi lấy trung bình điểm của các lớp chính thức. Dữ liệu tính điểm là dữ liệu <strong>cả lớp</strong>, không chỉ học viên đang mở popup.</p>
+<ol>
+<li>Đếm <code>D</code> = số HV có mã <code>Dropped</code>, <code>Deposit</code>, <code>Retained</code>, <code>Moved</code>; <code>N</code> = tổng HV của lớp. Điểm trừ <code>P = D/N × 10</code> (N = 0 thì P = 0).</li>
+<li>Tập HV tính điểm loại <code>Remove</code>, <code>Dropped</code>, <code>Deposit</code>, <code>Retained</code>, <code>Moved</code>, <code>Viewer</code>.</li>
+<li>Với mỗi HV trong tập, lấy dữ liệu hợp lệ theo các helper ICS cũ: <code>X = tỷ lệ Đi học × 10</code>, <code>Y = tỷ lệ nộp BTVN × 10</code>; <code>z1 = điểm BTVN trung bình</code>, <code>z2 = điểm kiểm tra trung bình</code>, <code>z3/z4 = điểm Năng lực/Thái độ</code>. Các helper X/Y/z1/z2 trả số âm thì dùng 0 trong công thức lớp. Năng lực/Thái độ đổi A→10, B→8, C→6, D→4, E→2 theo <code>convertToPoint()</code>; giá trị khác dùng 10 theo nhánh mặc định của source.</li>
+<li><code>Z = (z1 + z2 + z3 + z4)/4</code>; <code>R = (X + Y + Z)/3</code>. Khi <code>R − min(X,Y,Z) &gt; 2</code>, trừ R đi 1 và kiểm tra lại cho đến khi điều kiện không còn đúng.</li>
+<li>Điểm lớp <code>Q = trung bình R của tập HV − P</code>; tập HV rỗng thì trung bình R = 0. Badge từng lớp = <code>getEvaluate(Q)</code>.</li>
+<li>Thẻ Đánh Giá = <code>getEvaluate(trung bình Q của các lớp chính thức)</code>. Trung bình theo <code>getAverage()</code> chỉ lấy Q ≥ 0; không lấy chữ đánh giá từng lớp rồi quy đổi lại. Không có lớp chính thức thì thẻ trống. Dữ liệu chưa tải đủ thì chưa tính/không hiển thị điểm giả.</li>
+</ol>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Điểm dùng đổi hạng</th>
+<th>Hạng</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>≥ 8.5</td>
+<td>A</td>
+</tr>
+<tr>
+<td>≥ 7 và &lt; 8.5</td>
+<td>B</td>
+</tr>
+<tr>
+<td>≥ 5.5 và &lt; 7</td>
+<td>C</td>
+</tr>
+<tr>
+<td>≥ 4 và &lt; 5.5</td>
+<td>D</td>
+</tr>
+<tr>
+<td>≥ 2 và &lt; 4</td>
+<td>E</td>
+</tr>
+<tr>
+<td>&lt; 2</td>
+<td>F</td>
+</tr>
+</tbody>
+</table></div>
+<ul>
+<li>Điểm lớp Q = -1 thì badge dòng trống theo <code>getEvaluate()</code>. Thẻ tổng hợp trống khi đang tải hoặc không có lớp chính thức; có lớp chính thức nhưng không còn Q ≥ 0 sau lọc thì <code>getAverage()</code> trả 0, thẻ là F theo source.</li>
+<li>Các helper dữ liệu hợp lệ/điểm BTVN/điểm kiểm tra của công thức Đánh giá theo source ICS cũ được ghi trong file đối chiếu. Việc áp dụng công thức Đánh giá không thay phạm vi hoặc độ chính xác của hai thẻ Đi Học/BTVN đã chốt.</li>
+</ul>
+<h4 id="testcase-tab-lich-su-lop">Testcase — Tab Lịch sử lớp</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 28: UI chuẩn Lịch sử lớp</td>
+<td>High</td>
+<td></td>
+<td>REQ18 / REQ34</td>
+<td>Administrator</td>
+<td>Học viên đã từng thuộc nhiều lớp</td>
+<td><strong>Given</strong> Popup lịch sử đang mở<br><strong>When</strong> Chọn Lịch sử lớp<br><strong>Then</strong> Hiển thị đúng dữ liệu và cấu trúc đã chốt</td>
+<td>- Đủ 6 thẻ đúng thứ tự<br>- Mũ tốt nghiệp xanh là lớp Hoàn thành, không lấy status học viên<br>- Lên Kỳ/Đạt Kpi lấy getUpTerm theo đúng hai tập lớp; Đánh Giá lấy trung bình điểm lớp chính thức rồi đổi A–F<br>- Có mã lớp, khóa học, tiến độ cả lớp x/N Buổi, đánh giá, KPI của từng lớp theo dữ liệu nguồn<br>- Mũi tên mở Chi tiết lớp phía dưới popup<br>- Gồm cả lớp không còn hiện tại; không lấy số mẫu làm mặc định</td>
+</tr>
+<tr>
+<td>Case 64: Công thức thẻ tổng hợp Lịch sử lớp</td>
+<td>High</td>
+<td></td>
+<td>REQ34</td>
+<td>Administrator</td>
+<td>Có 6 lớp: 1 chính thức, 5 không chính thức; Đi học lần lượt 80%, 60%, 70%, 90%, 50%, 70%; BTVN 100%, 80%, 60%, 40%, 20%, 0%; mọi tỷ lệ đều có mẫu số hợp lệ; lớp chính thức đã Hoàn thành có getUpTerm 60% và Q = 7.2</td>
+<td><strong>Given</strong> User mở Lịch sử lớp<br><strong>When</strong> Tải dữ liệu các lớp<br><strong>Then</strong> Hiển thị Số Lớp 1/6, Đi Học 70.0%, BTVN 50.0%</td>
+<td>- Trung bình cộng đủ 6 lớp, mỗi lớp trọng số bằng nhau<br>- BTVN 0% có mẫu số hợp lệ vẫn tính vào trung bình<br>- Lên Kỳ 60%, Đạt Kpi 60%, Đánh Giá B; 5 lớp không chính thức không tham gia ba thẻ này<br>- Không có lớp: Số Lớp 0/0, Đi Học/BTVN trống, Lên Kỳ/Đạt Kpi 0%, Đánh Giá trống, không NaN/vô cực</td>
+</tr>
+<tr>
+<td>Case 74: Chỉ tính buổi đủ điều kiện và làm tròn trung bình</td>
+<td>High</td>
+<td></td>
+<td>REQ34</td>
+<td>Administrator</td>
+<td>Lớp A: đi học 2/3 buổi đã điểm danh, thêm 2 buổi chưa điểm danh; B: đi học 1/2; C: chưa điểm danh. BTVN A: 2 bài đã nộp (1 chưa chấm, 1 chấm 0), 1 bài chưa nộp đã qua bài mới, 1 bài hiện tại và 1 bài tương lai chưa nộp; B: 1 bài đã nộp, 1 bài chưa nộp đã qua bài mới; C: chưa có bài đủ điều kiện</td>
+<td><strong>Given</strong> User mở Lịch sử lớp<br><strong>When</strong> Tính riêng hai chỉ số<br><strong>Then</strong> Đi Học và BTVN đều là ((2/3 × 100) + (1/2 × 100))/2 = 58.3%</td>
+<td>- C không vào mẫu số trung bình của hai chỉ số<br>- Chưa điểm danh không tính vắng<br>- Đã nộp chưa chấm/điểm 0 vẫn tính đã nộp<br>- Chưa nộp chỉ tính khi đã qua bài mới<br>- Nộp lại một bài không tăng số bài<br>- Chỉ làm tròn kết quả cuối; nếu bài hiện tại của A vẫn chưa nộp khi chuyển sang bài mới, BTVN A thành 2/4 và thẻ BTVN thành 50.0%<br>- Nếu C có điểm danh nhưng chưa có BTVN đủ điều kiện, C chỉ tham gia trung bình Đi Học</td>
+</tr>
+<tr>
+<td>Case 75: Tiến độ buổi là của cả lớp</td>
+<td>High</td>
+<td></td>
+<td>REQ34</td>
+<td>Administrator</td>
+<td>Cùng lớp có tiến độ 6/20; học viên A đi học 2 buổi, B đi học 5 buổi</td>
+<td><strong>Given</strong> Lần lượt mở Lịch sử lớp của A và B<br><strong>When</strong> Xem dòng lớp này<br><strong>Then</strong> Cả hai đều thấy 6/20 Buổi và thanh tiến độ 30%</td>
+<td>- Không thay x bằng 2 hoặc 5<br>- Tiến độ cập nhật theo dữ liệu cả lớp<br>- Đi học/BTVN vẫn tính theo dữ liệu của từng học viên</td>
+</tr>
+<tr>
+<td>Case 77: getUpTerm của lớp Hoàn thành</td>
+<td>High</td>
+<td></td>
+<td>REQ34</td>
+<td>Administrator</td>
+<td>Lớp Hoàn thành có 13 HV: 4 mã UpSale/Force/SuperUpSale/Completed; 4 mã Dropped/Retained/Deposit/Exit; 5 mã Remove/Moved/Audit/Testing/Viewer</td>
+<td><strong>Given</strong> Xem dòng lớp trong Lịch sử lớp<br><strong>When</strong> Tính getUpTerm<br><strong>Then</strong> 4/(13−5) = 50%</td>
+<td>- Vòng % là 50%, icon mũ xanh/tooltip Hoàn thành<br>- 4 nhóm Nghỉ học/Bảo lưu/Bỏ cọc/Rời lớp vẫn ở mẫu số<br>- Không chỉ đếm status Đang học hoặc dùng số lớp đạt ≥ 80%</td>
+</tr>
+<tr>
+<td>Case 78: getUpTerm của lớp chưa Hoàn thành</td>
+<td>High</td>
+<td></td>
+<td>REQ34</td>
+<td>Administrator</td>
+<td>Lớp chưa Hoàn thành có 15 HV, mỗi mã một người: Completed/InProgress/Moved/Retained/UpSale/SuperUpSale/ReNew/Dropped/Remove/Viewer/Deposit/Force/Audit/Exit/Testing</td>
+<td><strong>Given</strong> Xem dòng lớp<br><strong>When</strong> Lọc tập HV theo nhánh chưa Hoàn thành<br><strong>Then</strong> Tử số 8, mẫu số 14, r_lớp = 57.142857…%, hiển thị 57%</td>
+<td>- Chỉ Moved bị loại khỏi mẫu số<br>- Audit/Testing vẫn có trong tử số nhánh này<br>- Không dùng nhánh lớp Hoàn thành</td>
+</tr>
+<tr>
+<td>Case 79: Phạm vi và trung bình Lên kỳ/Đạt KPI</td>
+<td>High</td>
+<td></td>
+<td>REQ34</td>
+<td>Administrator</td>
+<td>4 lớp chính thức Hoàn thành có r_lớp 0/77/75/12%; 1 lớp chính thức chưa Hoàn thành 59%; thêm 1 lớp không chính thức 100%</td>
+<td><strong>Given</strong> Học viên có cả 6 lớp trong lịch sử<br><strong>When</strong> Tính hai thẻ<br><strong>Then</strong> Lên Kỳ 41%, Đạt Kpi 45% (giá trị gốc 44.6%)</td>
+<td>- Lên Kỳ chỉ trung bình 4 lớp chính thức Hoàn thành<br>- Đạt Kpi trung bình đủ 5 lớp chính thức<br>- Lớp không chính thức vẫn ở bảng nhưng không vào hai thẻ<br>- 0% hợp lệ vẫn tính; không lấy số lớp đạt ngưỡng ≥ 80%<br>- Không làm tròn từng lớp trước khi lấy trung bình; 1.234% hiển thị 1.2% theo source</td>
+</tr>
+<tr>
+<td>Case 80: Tính điểm lớp trước khi đổi Đánh giá</td>
+<td>High</td>
+<td></td>
+<td>REQ34</td>
+<td>Administrator</td>
+<td>Lớp có 3 HV: 2 trong tập tính điểm, 1 Dropped. HV1: X=8, Y=6, z1=7, z2=9, Năng lực B, Thái độ C. HV2: X=10, Y=2, z1=z2=10, Năng lực/Thái độ A</td>
+<td><strong>Given</strong> Dữ liệu helper hợp lệ<br><strong>When</strong> Tính scoreEvaluateClass<br><strong>Then</strong> Z1=7.5, R1=43/6; Z2=10, R2 từ 22/3 trừ 1 bốn lần còn 10/3; Q=(R1+R2)/2−10/3=23/12</td>
+<td>- Q ≈ 1.9167, badge lớp F<br>- Người Dropped không vào trung bình R nhưng góp điểm trừ 1/3×10<br>- Điều kiện trừ R được lặp, không chỉ trừ một lần<br>- Không lấy rate của UserClassModel thay Q</td>
+</tr>
+<tr>
+<td>Case 81: Trung bình điểm Đánh giá rồi đổi chữ</td>
+<td>High</td>
+<td></td>
+<td>REQ34</td>
+<td>Administrator</td>
+<td>2 lớp chính thức có Q=8.5 (A), Q=7 (B); thêm lớp chính thức Q=-1 chưa đủ dữ liệu và lớp không chính thức Q=10</td>
+<td><strong>Given</strong> Dữ liệu hợp lệ được tổng hợp<br><strong>When</strong> Lấy trung bình Q theo source<br><strong>Then</strong> Trung bình 7.75, thẻ Đánh Giá B</td>
+<td>- Không trung bình điểm quy đổi từ chữ A/B thành 9 rồi hiển thị A<br>- Q âm không tham gia trung bình<br>- Lớp không chính thức không tham gia thẻ<br>- Badge từng dòng vẫn theo Q riêng</td>
+</tr>
+<tr>
+<td>Case 82: Ngưỡng Đánh giá A–F</td>
+<td>High</td>
+<td></td>
+<td>REQ34</td>
+<td>Administrator</td>
+<td>Có các điểm Q ở hai phía của ngưỡng</td>
+<td><strong>Given</strong> Q lần lượt 8.5/8.499/7/6.999/5.5/5.499/4/3.999/2/1.999 và -1<br><strong>When</strong> Đổi hạng không làm tròn Q trước<br><strong>Then</strong> A/B/B/C/C/D/D/E/E/F và trống</td>
+<td>- Ngưỡng dưới lấy dấu ≥ đúng source<br>- Không làm tròn 8.499 thành 8.5 rồi đổi A<br>- -1 chưa sẵn sàng khác điểm 0 đã tính (F)</td>
+</tr>
+<tr>
+<td>Case 83: Tập lớp rỗng và mẫu số HV bằng 0</td>
+<td>High</td>
+<td></td>
+<td>REQ34</td>
+<td>Administrator</td>
+<td>Học viên A không có lớp chính thức; B chỉ có lớp chính thức chưa Hoàn thành; C có lớp không có HV hoặc toàn Moved</td>
+<td><strong>Given</strong> Dữ liệu đã tải xong<br><strong>When</strong> Tính chỉ số<br><strong>Then</strong> Không chia 0/NaN/vô cực</td>
+<td>- A: Lên Kỳ/Đạt Kpi 0%, Đánh Giá trống<br>- B: Lên Kỳ 0%, Đạt Kpi vẫn lấy lớp chính thức chưa Hoàn thành<br>- C: r_lớp 0% khi mẫu số HV 0<br>- Không có lớp nào: Số Lớp 0/0, Đi Học/BTVN và Đánh Giá trống, Lên Kỳ/Đạt Kpi 0%<br>- Đang tải không hiển thị số 0 giả</td>
+</tr>
+</tbody>
+</table></div>
+<h4 id="ui-chuan-trang-thai-hoc-vien-trong-lop">UI chuẩn trạng thái học viên trong lớp</h4>
+<p>Bộ 7 icon dưới đây là UI chuẩn cho trạng thái của <strong>quan hệ học viên–lớp</strong>, áp dụng khi hiển thị trạng thái theo từng lớp ở Danh sách học viên và tab Học viên trong Chi tiết lớp. Lịch sử lớp lấy icon <strong>trạng thái lớp</strong> theo <a href="../class_management/class_management_requirements.md#trạng-thái-lớp">requirement Trạng thái lớp</a>. Mỗi quan hệ có status riêng; ví dụ học viên có 3 lớp có 3 status độc lập. Trạng thái của lớp là dữ liệu khác. Chỉ được đổi status học viên tại <code>Cài đặt lớp → Học viên → Chọn trạng thái</code>; danh sách tổng chỉ hiển thị. Lịch sử lớp không dùng 7 icon status học viên làm trạng thái dòng lớp.</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Trạng thái</th>
+<th style="text-align: center;">Icon chính thức</th>
+<th>Quy tắc hiển thị</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Chỉ xem</td>
+<td style="text-align: center;"><img src="../class_management/images/student-status-view-only.png" alt="Chỉ xem" width="60" height="60"></td>
+<td>Bong bóng hội thoại có mắt trắng trên nền xám.</td>
+</tr>
+<tr>
+<td>Dự thính</td>
+<td style="text-align: center;"><img src="../class_management/images/student-status-auditing.png" alt="Dự thính" width="60" height="60"></td>
+<td>Tai trắng trên nền xanh dương.</td>
+</tr>
+<tr>
+<td>Đang học</td>
+<td style="text-align: center;"><img src="../class_management/images/student-status-studying.png" alt="Đang học" width="60" height="60"></td>
+<td>Bút trắng trên nền cam.</td>
+</tr>
+<tr>
+<td>Hoàn thành</td>
+<td style="text-align: center;"><img src="../class_management/images/student-status-completed.png" alt="Hoàn thành" width="60" height="60"></td>
+<td>Bục có ngôi sao trắng trên nền xanh lá.</td>
+</tr>
+<tr>
+<td>Nghỉ học</td>
+<td style="text-align: center;"><img src="../class_management/images/student-status-stopped.png" alt="Nghỉ học" width="60" height="60"></td>
+<td>Lịch có dấu X trắng trên nền cam.</td>
+</tr>
+<tr>
+<td>Rời lớp</td>
+<td style="text-align: center;"><img src="../class_management/images/student-status-left.png" alt="Rời lớp" width="60" height="60"></td>
+<td>Cửa và mũi tên trắng trên nền đỏ đậm.</td>
+</tr>
+<tr>
+<td>Xóa</td>
+<td style="text-align: center;"><img src="../class_management/images/student-status-deleted.png" alt="Xóa" width="60" height="60"></td>
+<td>Túi có dấu X trắng trên nền đỏ tươi.</td>
+</tr>
+</tbody>
+</table></div>
+<ul>
+<li>Dùng đúng 7 PNG chuẩn do user cung cấp (mỗi ảnh gốc <code>60 × 60 px</code>), giữ nguyên tỷ lệ, nền màu, icon trắng, viền trắng, góc bo và bóng đổ của mẫu; không kéo giãn hoặc dựng icon thay thế.</li>
+<li>Hiển thị nhất quán trên danh sách học viên trong lớp, menu đổi trạng thái và lịch sử trạng thái/lớp khi có hiển thị trạng thái. Menu và lịch sử có tên trạng thái đi kèm; icon trên danh sách có tooltip khi hover/focus và tên truy cập được cho trình đọc màn hình.</li>
+<li><code>Đang học</code> và <code>Nghỉ học</code> cùng có nền cam nhưng khác biểu tượng (bút / lịch có dấu X); <code>Rời lớp</code> dùng đỏ đậm, <code>Xóa</code> dùng đỏ tươi. Không nhận diện trạng thái chỉ bằng màu.</li>
+<li>Ảnh chụp danh sách/menu cũ chỉ minh họa bố cục và thao tác; nếu icon trong ảnh khác bảng chuẩn này thì dùng 7 asset chuẩn ở bảng trên.</li>
+<li>Status học viên theo lớp dùng bộ 7 icon này; status lớp, status tài khoản <code>Chính thức</code> và bộ lọc logic <code>[0] / [1] / [2]</code> của học viên là các phạm vi độc lập. Bộ lọc logic do BE xác định và lọc; FE chỉ gửi giá trị đã chọn, không ánh xạ từ 7 status trong lớp hoặc trạng thái lớp.</li>
+<li>Quyền đổi trạng thái, điều kiện học phí, xóa mềm và lịch sử thay đổi tuân theo <a href="../class_management/class_detail_students_requirements.md#trạng-thái-học-viên-và-lịch-sử-thay-đổi-trạng-thái">Trạng thái học viên trong lớp</a>.</li>
+</ul>
+<h5 id="testcase-status-hoc-vien-theo-lop">Testcase — Status học viên theo lớp</h5>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 48: Hiển thị UI chuẩn trạng thái học viên trong lớp</td>
+<td>High</td>
+<td></td>
+<td>REQ29</td>
+<td>Administrator, Sale, Support, Class Handler</td>
+<td>Lớp có học viên thuộc đủ 7 trạng thái trong phạm vi được xem</td>
+<td><strong>Given</strong> User mở danh sách Học viên trong lớp<br><strong>When</strong> Đối chiếu các status học viên<br><strong>Then</strong> Tên và icon khớp 7 mẫu đã duyệt</td>
+<td>- Mapping đúng asset, giữ tỷ lệ/viền/góc bo/bóng đổ<br>- Đang học bút/cam, Nghỉ học lịch X/cam; Rời lớp đỏ đậm, Xóa đỏ tươi<br>- Có tooltip/tên khi hover/focus<br>- Dòng Lịch sử lớp lấy trạng thái lớp theo requirement lớp</td>
+</tr>
+<tr>
+<td>Case 49: Phân biệt status học viên và status lớp</td>
+<td>High</td>
+<td></td>
+<td>REQ29 / REQ34</td>
+<td>Administrator, Sale, Support, Class Handler</td>
+<td>Học viên thuộc 3 lớp có status học viên khác nhau và status lớp khác nhau</td>
+<td><strong>Given</strong> User xem quan hệ học viên–lớp và Lịch sử lớp<br><strong>When</strong> Đối chiếu icon từng dòng lớp, rồi đổi status học viên trong lớp A với quyền hợp lệ<br><strong>Then</strong> Icon Lịch sử lớp luôn theo trạng thái của lớp</td>
+<td>- Status học viên chỉ đổi tại Cài đặt lớp → Học viên → Chọn trạng thái<br>- Đổi status học viên lớp A không đổi status của quan hệ B/C hoặc status lớp A<br>- Mỗi dòng Lịch sử lớp theo icon/tên trạng thái lớp tương ứng<br>- Field tài khoản Chính thức vẫn chỉ đọc</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="ghi-chu-danh-sach-binh-luan-va-popup-them">Ghi chú — danh sách, bình luận và popup thêm</h3>
+<p align="center">
+  <a href="./images/23-student-notes-history.png"><img src="./images/23-student-notes-history.png" alt="UI mới tab Ghi chú học viên — người tạo, menu thao tác và bình luận" width="1000" title="Nhấn để xem ảnh gốc"></a><br>
+  <em>UI Ghi chú mới — metadata người tạo/bình luận, menu và ô nhập bình luận</em>
+</p>
+
+<ul>
+<li>Đầu tab là <code>Danh sách ghi chú</code> và nút <code>+</code>; bên phải có bốn dropdown theo thứ tự <code>Loại</code>, <code>Độ ưu tiên</code>, <code>Trạng thái</code>, <code>Thời gian</code>. Khi mở tab, mặc định Trạng thái = <code>Mới</code>, Thời gian = <code>Tuần này</code>; Loại và Độ ưu tiên không chọn giá trị, không giới hạn kết quả theo hai bộ lọc này.</li>
+<li>Mỗi card có tiêu đề; dưới tiêu đề là <strong>avatar người tạo ghi chú, tên và ngày giờ tạo</strong>. Nếu người tạo là tài khoản đang đăng nhập thì hiển thị <code>Bạn</code>. Khi ghi chú đã sửa thành công, thêm nhãn <code>Đã chỉnh sửa</code> dưới thông tin người tạo; không dùng thời gian sửa thay thời gian tạo tại đây. Nội dung nằm trong khung riêng bên dưới. Góc phải là thông tin bình luận gần nhất (khi có), badge Độ ưu tiên, icon Loại và menu <code>⋮</code>.</li>
+<li>Thông tin góc phải lấy <strong>avatar, tên và ngày giờ tạo bình luận gần nhất</strong>, kèm icon đồng hồ cam. Chưa có bình luận thì ẩn cả cụm này; avatar/ngày giờ người tạo ghi chú bên trái vẫn hiển thị. Không thay metadata bình luận bằng ngày tạo/sửa ghi chú.</li>
+<li>Độ ưu tiên hiển thị <strong>badge</strong>: Bình thường xanh dương, Quan trọng cam, Rất quan trọng đỏ. Loại Riêng tư dùng icon ẩn danh trên nền cam; Công khai dùng icon địa cầu nền nhạt theo ảnh. Card Riêng tư có nền/viền cam nhạt, card Công khai nền trắng theo mẫu; quyền xem vẫn theo rule owner.</li>
+<li>Menu <code>⋮</code> của owner có <strong>Chỉnh sửa / Đóng / Xóa</strong> theo ảnh. Chỉnh sửa mở lại form ghi chú với dữ liệu hiện có, cho owner sửa Loại/Độ ưu tiên theo rule đã chốt; badge trên card không còn là dropdown chọn trực tiếp. Đóng/Xóa vẫn tuân quyền và xác nhận đã có; ghi chú đã Đóng chỉ owner thấy, có thể Mở lại theo rule hiện có.</li>
+<li>Nội dung/ghi chú trong tab lịch sử là các bản ghi ghi chú có Tiêu đề/Loại/Độ ưu tiên/Trạng thái; không tự thay thế field ghi chú cá nhân ở Chi tiết học viên hoặc ghi chú học phí/ghi chú trong lớp.</li>
+</ul>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Thành phần bình luận</th>
+<th>Mô tả UI chuẩn</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Editor</td>
+<td>Ô văn bản thuần đặt dưới danh sách bình luận khi mở, placeholder <code>Nhập bình luận của bạn</code>, nút gửi cam/mũi tên trắng ở bên phải. UI mới không có toolbar rich text.</td>
+</tr>
+<tr>
+<td>Gửi</td>
+<td>Nút cam/mũi tên trắng ở bên phải ô nhập. User được xem ghi chú gửi bình luận không rỗng vào đúng note; không giới hạn độ dài.</td>
+</tr>
+<tr>
+<td>Số bình luận</td>
+<td>Link <code>n bình luận</code> bên dưới nội dung mở danh sách của đúng ghi chú, gồm cả <code>0 bình luận</code>; khi mở hiển thị <code>Ẩn bình luận</code> để thu gọn. Ô nhập ở cuối danh sách khi mở.</td>
+</tr>
+<tr>
+<td>Card bình luận</td>
+<td>Mỗi khung có avatar, tên người viết, ngày giờ và nội dung. UI mới không có nút Trả lời hoặc icon xóa riêng trên card như ảnh cũ; quyền owner sửa/xóa bình luận vẫn giữ, không tự cấp quyền theo bố cục ảnh.</td>
+</tr>
+<tr>
+<td>Bình luận ghi chú</td>
+<td>Trả lời ghi chú là nhập/gửi tại ô bình luận của cùng ghi chú, không tạo thread dưới bình luận gốc hoặc yêu cầu nút Trả lời riêng. Áp dụng cùng quyền xem/gửi.</td>
+</tr>
+<tr>
+<td>Làm mới bình luận</td>
+<td>Icon mũi tên vòng cạnh link bình luận tải lại danh sách/số bình luận và metadata gần nhất của đúng note. Không tạo/sửa note hoặc gửi nội dung đang nhập. Giữ bản nháp khi làm mới; lỗi không xóa dữ liệu đang có.</td>
+</tr>
+</tbody>
+</table></div>
+<ul>
+<li><strong>Owner ghi chú</strong> là người tạo ghi chú: chỉ owner được đổi Loại/Độ ưu tiên, đóng, mở lại, chỉnh sửa và xóa ghi chú theo quy tắc hồ sơ học viên. Quyền sửa/xóa bình luận thuộc người tạo bình luận. Quyền role trên học viên vẫn là điều kiện truy cập, không thay thế quyền owner.</li>
+</ul>
+<h4 id="quy-tac-ghi-chu-da-co">Quy tắc ghi chú đã có</h4>
+<p align="center">
+  <a href="./images/13-note-time-filter.png"><img src="./images/13-note-time-filter.png" alt="Các lựa chọn thời gian ghi chú theo requirement hiện có" width="260" title="Nhấn để xem ảnh gốc"></a><br>
+  <em>Tham chiếu các lựa chọn thời gian hiện có; UI chính dùng ảnh tab Ghi chú phía trên</em>
+</p>
+
+<ul>
+<li>Ghi chú gồm <code>Tiêu đề</code>, <code>Nội dung</code>, <code>Loại</code>, <code>Độ ưu tiên</code>.</li>
+<li>Loại gồm <code>Công khai</code>, <code>Riêng tư</code>.</li>
+<li>Độ ưu tiên gồm <code>Bình thường</code>, <code>Quan trọng</code>, <code>Rất quan trọng</code>.</li>
+<li>Trạng thái ghi chú gồm <code>Mới</code>, <code>Đóng</code>.</li>
+<li>Bộ lọc kết hợp đồng thời Loại, Độ ưu tiên, Trạng thái và Thời gian; danh sách/card/bình luận phải thuộc đúng học viên và ghi chú được phép xem.</li>
+<li>Thời gian gồm: <code>Tới hạn</code>, <code>Hôm nay</code>, <code>Hôm qua</code>, <code>Tuần này</code>, <code>Tuần trước</code>, <code>Tháng này</code>, <code>Tháng trước</code>, <code>3 tháng trước</code>, <code>Năm nay</code>, <code>Năm trước</code>, <code>Tùy chọn</code>, <code>Hôm nay và hôm qua</code>.</li>
+<li>Ghi chú <code>Riêng tư</code> chỉ user tạo ghi chú được xem; bình luận của ghi chú cũng không được lộ cho người không có quyền xem ghi chú.</li>
+<li>Chỉ owner ghi chú được chuyển <code>Mới</code> sang <code>Đóng</code>. Khi đã Đóng, chỉ owner còn được xem ghi chú và bình luận, kể cả ghi chú Công khai; user khác không nhận dữ liệu ghi chú/bình luận qua danh sách hoặc truy cập trực tiếp. Owner xem lại bằng bộ lọc Đóng và có thể mở lại theo quy tắc hồ sơ học viên.</li>
+<li>Loại/Độ ưu tiên trên card chỉ owner ghi chú được đổi. Sửa/xóa bình luận chỉ người tạo bình luận được làm; không cấp quyền cho người khác chỉ vì là Administrator hoặc owner ghi chú.</li>
+<li>Tiêu đề, nội dung ghi chú và bình luận không giới hạn độ dài ở tầng nghiệp vụ. Nội dung trong popup Thêm ghi chú là văn bản thuần, không có toolbar hoặc định dạng chữ; ô bình luận cũng dùng văn bản thuần theo UI mới, không có toolbar định dạng.</li>
+<li>Chọn <code>Tùy chọn</code> hiển thị khoảng <code>Từ ngày</code> và <code>Đến ngày</code> để user chọn ngày/tháng/năm.</li>
+</ul>
+<h4 id="testcase-tab-ghi-chu-bo-loc-quyen-va-binh-luan">Testcase — Tab Ghi chú — bộ lọc, quyền và bình luận</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 30: Lọc ghi chú kết hợp</td>
+<td>High</td>
+<td></td>
+<td>Flow 10 / REQ20</td>
+<td>Administrator</td>
+<td>Có ghi chú thuộc nhiều điều kiện và ngày tạo khác nhau</td>
+<td><strong>Given</strong> Tab Ghi chú đang mở<br><strong>When</strong> Chọn Loại, Độ ưu tiên, Trạng thái và Thời gian; với Tùy chọn nhập Từ ngày/Đến ngày<br><strong>Then</strong> Hệ thống lọc đồng thời</td>
+<td>- Chỉ hiển thị ghi chú thỏa tất cả điều kiện<br>- Có đủ các lựa chọn thời gian theo UI<br>- Tùy chọn lấy đúng dữ liệu trong khoảng ngày được chọn</td>
+</tr>
+<tr>
+<td>Case 38: Chỉ người tạo xem được ghi chú Riêng tư</td>
+<td>High</td>
+<td></td>
+<td>EX14 / REQ19</td>
+<td>Administrator, Sale, Support, Class Handler</td>
+<td>User A tạo ghi chú Riêng tư; User B cùng có quyền trên học viên</td>
+<td><strong>Given</strong> Ghi chú Riêng tư đã được tạo<br><strong>When</strong> User A và User B lần lượt mở tab Ghi chú<br><strong>Then</strong> Chỉ User A nhìn thấy ghi chú</td>
+<td>- User A xem được đầy đủ nội dung<br>- User B không thấy ghi chú trong danh sách và không thể mở trực tiếp</td>
+</tr>
+<tr>
+<td>Case 39: Chặn khoảng ngày Tùy chọn không hợp lệ</td>
+<td>Medium</td>
+<td></td>
+<td>EX15 / REQ20</td>
+<td>Administrator</td>
+<td>Bộ lọc thời gian đang chọn Tùy chọn</td>
+<td><strong>Given</strong> User chọn Từ ngày sau Đến ngày<br><strong>When</strong> Áp dụng bộ lọc<br><strong>Then</strong> Hệ thống chặn lọc</td>
+<td>- Không áp dụng khoảng ngày không hợp lệ<br>- Giữ form để user chỉnh lại</td>
+</tr>
+<tr>
+<td>Case 45: Chỉ owner đóng ghi chú và xem ghi chú đã đóng</td>
+<td>High</td>
+<td></td>
+<td>REQ26 / REQ19</td>
+<td>Owner ghi chú, user khác cùng quyền trên học viên</td>
+<td>A tạo ghi chú Công khai Mới; B có quyền xem cùng học viên</td>
+<td><strong>Given</strong> A và B đều xem được ghi chú Mới<br><strong>When</strong> B thử đóng ghi chú, sau đó A đóng<br><strong>Then</strong> B bị chặn; A đóng thành công</td>
+<td>- Sau khi đóng, B không thấy ghi chú/bình luận dù chọn Đóng hoặc truy cập trực tiếp<br>- A xem được khi lọc Đóng và đúng thời gian<br>- A mở lại thì trạng thái Mới và áp dụng lại quyền xem theo Loại<br>- Quyền role không thay quyền owner</td>
+</tr>
+<tr>
+<td>Case 66: Mở và ẩn bình luận đúng ghi chú</td>
+<td>High</td>
+<td></td>
+<td>REQ35</td>
+<td>User được xem ghi chú</td>
+<td>Hai ghi chú có các bình luận khác nhau</td>
+<td><strong>Given</strong> User xem tab Ghi chú<br><strong>When</strong> Bấm n bình luận rồi Ẩn bình luận trên note A<br><strong>Then</strong> Mở/ẩn danh sách bình luận của A</td>
+<td>- Card đúng tác giả, ngày giờ, nội dung<br>- Không lẫn bình luận note B/học viên khác<br>- Không lộ bình luận của ghi chú không được phép xem</td>
+</tr>
+<tr>
+<td>Case 67: Bình luận văn bản thuần và quyền owner</td>
+<td>High</td>
+<td></td>
+<td>REQ35</td>
+<td>User được xem ghi chú, owner bình luận</td>
+<td>A và B cùng được xem ghi chú; A đã tạo bình luận</td>
+<td><strong>Given</strong> Mở danh sách bình luận<br><strong>When</strong> Gửi tại ô Nhập bình luận của bạn; A sửa/xóa bình luận mình, B thử sửa/xóa bình luận A<br><strong>Then</strong> Lưu bình luận vào đúng ghi chú và áp dụng quyền owner</td>
+<td>- Ô nhập dưới danh sách, nút gửi cam; không có toolbar hoặc nút Trả lời riêng<br>- Nội dung văn bản thuần, không tạo thread riêng<br>- Chỉ A sửa/xóa bình luận A; B bị chặn request<br>- Bình luận rỗng không gửi, số bình luận/metadata gần nhất cập nhật</td>
+</tr>
+<tr>
+<td>Case 84: Bộ lọc mặc định khi mở tab Ghi chú</td>
+<td>High</td>
+<td></td>
+<td>REQ20</td>
+<td>User được xem ghi chú</td>
+<td>Có ghi chú Mới/Đóng ở tuần này/tuần trước, nhiều Loại và Độ ưu tiên</td>
+<td><strong>Given</strong> User mở tab Ghi chú<br><strong>When</strong> Quan sát bộ lọc và kết quả<br><strong>Then</strong> Trạng thái Mới, Thời gian Tuần này; Loại/Độ ưu tiên chưa chọn</td>
+<td>- Hiển thị ghi chú Mới trong Tuần này thuộc quyền xem<br>- Không giới hạn Loại hoặc Độ ưu tiên khi chưa chọn<br>- Không hiện ghi chú Đóng/ngoài tuần này trong kết quả mặc định</td>
+</tr>
+<tr>
+<td>Case 85: Thông tin bình luận gần nhất trên card</td>
+<td>High</td>
+<td></td>
+<td>REQ35</td>
+<td>User được xem ghi chú</td>
+<td>Note A chưa có bình luận; note B có bình luận của X lúc t1 và Y lúc t2 &gt; t1</td>
+<td><strong>Given</strong> User xem hai card<br><strong>When</strong> Quan sát avatar/timestamp cam, rồi X gửi bình luận lúc t3 &gt; t2<br><strong>Then</strong> A không có avatar/timestamp cam; B ban đầu hiện Y/t2, sau đó X/t3</td>
+<td>- Thời gian cam lấy lúc tạo bình luận gần nhất<br>- Không dùng tác giả/ngày tạo hoặc cập nhật ghi chú thay thế<br>- Avatar/tên/ngày tạo ghi chú dưới tiêu đề vẫn hiện khi chưa có bình luận; nếu owner là tài khoản hiện tại tên hiển thị Bạn</td>
+</tr>
+<tr>
+<td>Case 86: Chỉ owner đổi Loại và Độ ưu tiên</td>
+<td>High</td>
+<td></td>
+<td>REQ19 / REQ35</td>
+<td>Owner ghi chú, user khác cùng quyền trên học viên</td>
+<td>A tạo ghi chú Công khai; B được xem học viên</td>
+<td><strong>Given</strong> A và B xem cùng ghi chú<br><strong>When</strong> A mở Chỉnh sửa từ menu để đổi Loại/Độ ưu tiên; B thử đổi trên UI hoặc request<br><strong>Then</strong> A được lưu, B bị chặn</td>
+<td>- Không cho B sửa dữ liệu dù cùng role hoặc là Administrator<br>- Chuyển Riêng tư thì chỉ A thấy ghi chú và bình luận<br>- Tải lại giữ giá trị owner đã lưu</td>
+</tr>
+<tr>
+<td>Case 92: Bố cục card và menu Ghi chú mới</td>
+<td>High</td>
+<td></td>
+<td>REQ35</td>
+<td>Owner và user được xem note</td>
+<td>Có note Riêng tư/Công khai, đã sửa/chưa sửa, có/chưa có bình luận</td>
+<td><strong>Given</strong> Mở Ghi chú<br><strong>When</strong> Đối chiếu card và mở menu owner<br><strong>Then</strong> Đúng ảnh mới</td>
+<td>- Metadata người tạo dưới tiêu đề; tên Bạn cho tài khoản hiện tại<br>- Đã chỉnh sửa chỉ ở note đã sửa; nội dung trong khung riêng<br>- Badge Bình thường/Quan trọng/Rất quan trọng đúng màu; Riêng tư icon ẩn danh/cam, Công khai địa cầu<br>- Menu Chỉnh sửa/Đóng/Xóa; ưu tiên không là dropdown trực tiếp<br>- Cụm bình luận gần nhất có avatar/tên/ngày giờ, chưa có thì ẩn</td>
+</tr>
+<tr>
+<td>Case 93: Mở 0 bình luận và làm mới đúng note</td>
+<td>High</td>
+<td></td>
+<td>REQ35</td>
+<td>User được xem note</td>
+<td>Note A chưa có bình luận, note B có dữ liệu khác</td>
+<td><strong>Given</strong> Mở 0 bình luận của A và nhập bản nháp<br><strong>When</strong> User khác gửi bình luận vào A, rồi bấm icon làm mới A<br><strong>Then</strong> Tải lại A, cập nhật số/metadata, giữ bản nháp</td>
+<td>- Không tải/gắn dữ liệu B<br>- Không tự gửi bản nháp hoặc tạo note mới<br>- Ẩn bình luận thu gọn danh sách<br>- Lỗi làm mới giữ dữ liệu/bản nháp, cho thử lại<br>- Chỉ dữ liệu còn trong quyền xem được trả về</td>
+</tr>
+</tbody>
+</table></div>
+<h4 id="popup-them-ghi-chu">Popup Thêm ghi chú</h4>
+<p align="center">
+  <a href="./images/12-add-note.png"><img src="./images/12-add-note.png" alt="UI chuẩn popup Thêm ghi chú của học viên" width="700" title="Nhấn để xem ảnh gốc"></a><br>
+  <em>Popup Thêm ghi chú — Tiêu đề, Nội dung, Loại ghi chú, Độ ưu tiên</em>
+</p>
+
+<ul>
+<li>Nút <code>+</code> ở Danh sách ghi chú mở popup <code>Thêm ghi chú</code> cho đúng học viên.</li>
+<li>Tiêu đề và Nội dung mỗi field chiếm một hàng toàn chiều rộng; bên dưới là <code>Loại ghi chú</code> bên trái và <code>Độ ưu tiên</code> bên phải, mỗi dropdown có placeholder <code>Chọn</code>.</li>
+<li>Cuối popup có nút <code>Hủy</code> và <code>Thêm ghi chú</code>. Hủy đóng popup, không lưu hoặc tạo ghi chú; submit thành công theo flow đã có.</li>
+<li>Tên <code>Nguyễn Văn An</code> trong các ô Tiêu đề/Nội dung là dữ liệu mẫu, không tự điền họ tên học viên vào ghi chú mới. Tiêu đề/Nội dung bắt buộc theo quy tắc hồ sơ học viên; không giới hạn độ dài. Ô Nội dung là văn bản thuần, không hỗ trợ định dạng chữ. Loại/Độ ưu tiên của form theo quy tắc tạo ghi chú hiện có; không dùng trạng thái bộ lọc làm giá trị form.</li>
+</ul>
+<h5 id="testcase-popup-them-ghi-chu">Testcase — Popup Thêm ghi chú</h5>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 29: Thêm ghi chú</td>
+<td>High</td>
+<td>Smoke</td>
+<td>Flow 10 / REQ19</td>
+<td>Administrator</td>
+<td>Tab Ghi chú đang mở</td>
+<td><strong>Given</strong> User mở form thêm ghi chú<br><strong>When</strong> Nhập Tiêu đề, Nội dung, Loại, Độ ưu tiên và bấm <code>Thêm ghi chú</code><br><strong>Then</strong> Hệ thống tạo ghi chú</td>
+<td>- Hiển thị <code>Thêm ghi chú thành công.</code><br>- Ghi chú xuất hiện đúng học viên với giá trị đã chọn</td>
+</tr>
+<tr>
+<td>Case 65: Popup Thêm ghi chú chuẩn và Hủy</td>
+<td>Medium</td>
+<td></td>
+<td>REQ35</td>
+<td>Administrator</td>
+<td>Tab Ghi chú của học viên A đang mở</td>
+<td><strong>Given</strong> User bấm +<br><strong>When</strong> Nhập dữ liệu rồi bấm Hủy hoặc submit theo rule đã chốt<br><strong>Then</strong> Thao tác đúng học viên</td>
+<td>- Hai hàng Tiêu đề/Nội dung và hàng Loại ghi chú/Độ ưu tiên<br>- Nút Hủy/Thêm ghi chú<br>- Không tự điền Nguyễn Văn An theo ảnh<br>- Hủy không tạo note/Toast CRUD</td>
+</tr>
+<tr>
+<td>Case 87: Nội dung thêm ghi chú là văn bản thuần và không giới hạn độ dài</td>
+<td>Medium</td>
+<td></td>
+<td>REQ19 / REQ35</td>
+<td>User có quyền thêm ghi chú</td>
+<td>Popup Thêm ghi chú đang mở</td>
+<td><strong>Given</strong> User nhập Tiêu đề/Nội dung dài và nội dung nhiều dòng<br><strong>When</strong> Lưu rồi xem lại; gửi bình luận dài vào ghi chú<br><strong>Then</strong> Lưu đầy đủ các nội dung</td>
+<td>- Không có giới hạn ký tự nghiệp vụ, không tự cắt nội dung<br>- Ô Nội dung Thêm ghi chú không có toolbar định dạng chữ<br>- Văn bản có ký tự giống markup được hiển thị như văn bản thuần<br>- Giữ quy tắc Tiêu đề/Nội dung bắt buộc và không gửi bình luận rỗng</td>
+</tr>
+</tbody>
+</table></div>
+<hr>
+<h3 id="toast-phan-hoi-crud">Toast phản hồi CRUD</h3>
+<p align="center">
+  <a href="../../images/01-toast-crud.png"><img src="../../images/01-toast-crud.png" alt="Bốn trạng thái Toast CRUD" width="520" title="Nhấn để xem ảnh gốc"></a><br>
+  <em>Toast phản hồi Create, Update, Delete và đổi trạng thái — nhấn để xem ảnh gốc</em>
+</p>
+
+<p><strong>Mô tả:</strong> Toast phản hồi kết quả các thao tác thay đổi dữ liệu trong requirement này.</p>
+<p><strong>Giải thích thành phần:</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Loại</th>
+<th>Tiêu đề</th>
+<th>Khi sử dụng</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Thành công</td>
+<td><code>Thành Công</code></td>
+<td>Backend xác nhận thao tác thành công.</td>
+</tr>
+<tr>
+<td>Thông tin</td>
+<td><code>Thông Báo</code></td>
+<td>Thao tác đã tiếp nhận nhưng dữ liệu cần thời gian đồng bộ.</td>
+</tr>
+<tr>
+<td>Cảnh báo</td>
+<td><code>Cảnh Báo</code></td>
+<td>Dữ liệu/điều kiện cần người dùng kiểm tra.</td>
+</tr>
+<tr>
+<td>Lỗi</td>
+<td><code>Có Lỗi Xảy Ra</code></td>
+<td>Backend/network không hoàn tất thao tác.</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Điểm cần lưu ý:</strong> Nội dung dòng hai lấy từ flow CRUD tương ứng; mỗi thao tác chỉ có một Toast; Hủy/chỉ đọc không có Toast CRUD; nút <code>×</code> đóng thủ công; không hiển thị dữ liệu nhạy cảm.</p>
+<h4 id="testcase-toast-phan-hoi-crud">Testcase — Toast phản hồi CRUD</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Toast Case 1: Thành công</td>
+<td>High</td>
+<td></td>
+<td>Ràng buộc Toast CRUD</td>
+<td>Role có quyền CRUD</td>
+<td>Dữ liệu hợp lệ</td>
+<td><strong>Given</strong> người dùng xác nhận thay đổi<br><strong>When</strong> backend thành công<br><strong>Then</strong> hiển thị Toast <code>Thành Công</code></td>
+<td>- Đúng nội dung nghiệp vụ<br>- Đúng một Toast<br>- Chỉ hiện sau khi backend xác nhận</td>
+</tr>
+<tr>
+<td>Toast Case 2: Cảnh báo</td>
+<td>High</td>
+<td></td>
+<td>Ràng buộc Toast CRUD</td>
+<td>Role có quyền CRUD</td>
+<td>Dữ liệu/điều kiện chưa hợp lệ</td>
+<td><strong>Given</strong> thao tác chưa đủ điều kiện<br><strong>When</strong> người dùng xác nhận<br><strong>Then</strong> hiển thị Toast <code>Cảnh Báo</code> nếu flow có Toast validation</td>
+<td>- Không lưu dữ liệu sai<br>- Vẫn đánh dấu field lỗi<br>- Không hiện thành công</td>
+</tr>
+<tr>
+<td>Toast Case 3: Lỗi</td>
+<td>High</td>
+<td></td>
+<td>Ràng buộc Toast CRUD</td>
+<td>Role có quyền CRUD</td>
+<td>Backend/network lỗi</td>
+<td><strong>Given</strong> request hợp lệ đã gửi<br><strong>When</strong> xử lý thất bại<br><strong>Then</strong> hiển thị Toast <code>Có Lỗi Xảy Ra</code></td>
+<td>- Không cập nhật một phần<br>- Cho phép thử lại<br>- Không lộ lỗi kỹ thuật</td>
+</tr>
+<tr>
+<td>Toast Case 4: Thông tin, đóng và chống lặp</td>
+<td>Medium</td>
+<td></td>
+<td>Ràng buộc Toast CRUD</td>
+<td>Role có quyền CRUD</td>
+<td>Đang đồng bộ hoặc Toast đang hiển thị</td>
+<td><strong>Given</strong> thao tác xử lý bất đồng bộ hoặc callback lặp<br><strong>When</strong> UI nhận trạng thái hoặc người dùng bấm <code>×</code><br><strong>Then</strong> hiển thị tối đa một Toast <code>Thông Báo</code> và cho đóng thủ công</td>
+<td>- Không báo thành công sớm<br>- Không nhân đôi Toast<br>- Đóng không hoàn tác dữ liệu</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="2-yeu-cau">2. Yêu cầu</h2>
+<h3 id="21-flow-chinh">2.1. Flow chính</h3>
+<p><strong>Flow 1: Xem danh sách và phân trang</strong></p>
+<pre><code class="language-text">User có quyền mở Quản lý → Học viên
+      → Hệ thống tải danh sách học viên trong phạm vi user, sắp ngày tạo học viên giảm dần (mới nhất trước)
+      → Hiển thị dữ liệu các cột, số liệu hóa đơn, status riêng theo từng lớp và tổng số trang
+      → Hiển thị Trang trước + số trang + dấu &quot;...&quot; + các trang cuối + Trang sau như UI
+      → User chọn số trang hoặc Trang trước/Trang sau
+      → Hệ thống giữ search/filter, tải đúng dữ liệu và đánh dấu trang hiện tại
+</code></pre>
+<p><strong>Flow 2: Tìm kiếm học viên</strong></p>
+<pre><code class="language-text">User nhập từ khóa vào ô tìm kiếm
+      → Không nhập thêm trong 2 giây: hệ thống tự tìm kiếm
+      → Hoặc user nhấn Enter: hệ thống tìm kiếm ngay, không chờ đủ 2 giây
+      → Hệ thống tìm theo Tên học viên bằng cách khớp chứa từ khóa, không yêu cầu khớp toàn bộ tên
+      → Kết quả phù hợp được hiển thị từ trang 1
+</code></pre>
+<p><strong>Flow 3: Lọc học viên</strong></p>
+<pre><code class="language-text">User mở Trạng thái và tick/bỏ tick một hoặc nhiều checkbox Mới [0] / Đang học [1] / Đợi lớp [2]
+      → Nhiều trạng thái: OR giữa các nhóm logic BE; không chọn trạng thái: bỏ điều kiện Trạng thái
+      → User mở Tag, tìm theo mã/tên tag, mở nhóm và chọn một hoặc nhiều tag
+      → Nhiều Tag: OR giữa các tag; thu gọn/tìm lại tag không làm mất lựa chọn
+      → FE gửi tập giá trị filter logic 0/1/2 + Tag + keyword tên tới BE, kết hợp ba loại điều kiện bằng AND
+      → BE lọc theo logic học viên riêng và trả dữ liệu cùng tổng kết quả; FE không tự suy ra từ status trong lớp
+      → Hiển thị kết quả từ trang 1 theo ngày tạo học viên giảm dần (mới nhất trước)
+</code></pre>
+<p><strong>Flow 4: Xuất Excel</strong></p>
+<pre><code class="language-text">User bấm nút Excel
+      → Không có search/filter: xuất toàn bộ danh sách thuộc phạm vi dữ liệu của user trên tất cả trang
+      → Có search/filter: xuất toàn bộ kết quả thỏa điều kiện trên tất cả trang, không chỉ trang đang xem
+      → File gồm đúng 4 cột: Tên học viên, Số điện thoại, Email, Ngày tạo
+      → Thành công: tải file và hiển thị &quot;Xuất danh sách học viên thành công.&quot;
+      → Thất bại: không tải file và hiển thị &quot;Không thể xuất danh sách học viên. Vui lòng thử lại.&quot;
+</code></pre>
+<p><strong>Flow 5: Tạo tài khoản học viên</strong></p>
+<pre><code class="language-text">User có quyền bấm &quot;+&quot; tại Danh sách học viên
+      → Hệ thống mở popup; Vai trò mặc định là Student; Ngày chốt đơn mặc định là ngày hiện tại và cho sửa
+      → User nhập/chọn đầy đủ field bắt buộc và chọn Cấp độ 1 đến Cấp độ 9
+      → Sau khi chọn cấp độ, hệ thống hiển thị Code 6 chữ số tiếp theo chưa dùng trong center/cấp độ; user không được sửa Code
+      → Kiểm tra email/SĐT đúng định dạng, mật khẩu tối thiểu 8 ký tự; ngày chốt đơn được ở quá khứ hoặc tương lai
+      → Backend kiểm tra trùng và cấp mã hợp lệ cùng cấp độ ngay cả khi nhiều request đồng thời
+      → Bấm &quot;Thêm học viên&quot;
+      → Thiếu field: hiển thị &quot;Vui lòng nhập đầy đủ thông tin bắt buộc.&quot;
+      → Email đã tồn tại trong cùng trung tâm: hiển thị &quot;Email đã được sử dụng.&quot;
+      → Thành công: tạo tài khoản, đóng popup, tải lại danh sách theo ngày tạo học viên giảm dần (mới nhất trước) và các điều kiện hiện tại; hiển thị &quot;Tạo tài khoản học viên thành công.&quot;
+      → Không thể sinh Code duy nhất: giữ popup và hiển thị &quot;Không thể tạo mã học viên. Vui lòng thử lại.&quot;
+</code></pre>
+<p><strong>Flow 6: Xem mã lớp và ghi chú, mở Chi tiết học viên</strong></p>
+<pre><code class="language-text">User hover/bấm Số lớp của học viên
+      → Hiển thị mã tất cả lớp học viên đã được thêm
+User hover/bấm icon Lớp hiện tại
+      → Chỉ hiển thị mã các lớp có status học viên Đang học và status lớp Đang học
+      → Không có lớp đáp ứng: hiển thị text Chưa có, không mở tooltip/popup lớp rỗng
+User hover/bấm Số bill
+      → Chỉ giữ số đang hiển thị, không mở popup hoặc điều hướng
+User hover/bấm icon Ghi chú
+      → Mở nội dung ghi chú của đúng học viên; icon cam nghĩa là có ghi chú
+User bấm mũi tên cuối dòng
+      → Mở Chi tiết học viên đúng dòng theo requirement chi tiết
+</code></pre>
+<p><strong>Flow 7: Thêm lịch hẹn</strong></p>
+<pre><code class="language-text">User click tên học viên
+      → Chọn &quot;Thêm Lịch Hẹn&quot;
+      → Đối tượng tự gắn học viên đang chọn, Trạng thái tự mặc định Mới
+      → Người tạo có role Trợ giảng/Support/Nhân viên kinh doanh được chọn sẵn làm Người phụ trách; role khác phải chọn người hợp lệ
+      → Độ ưu tiên ban đầu là Chọn; user phải tự chọn mức hợp lệ
+      → Nhập Nội dung, ngày hẹn (không có giờ), Độ ưu tiên, Ghi chú và chỉnh Người phụ trách/Theo dõi qua nút +/chip nếu cần
+      → Người phụ trách/Người theo dõi chỉ gồm Trợ giảng, Support, Nhân viên kinh doanh
+      → Mỗi field cho phép chọn nhiều user; cùng một user có thể nằm ở cả hai field
+      → Bấm &quot;Xác nhận&quot;
+      → Thiếu field bắt buộc (trừ Theo dõi): hiển thị &quot;Vui lòng nhập đầy đủ thông tin bắt buộc.&quot;
+      → Thời gian trong quá khứ vẫn hợp lệ nếu các field bắt buộc khác hợp lệ
+      → Thành công: đóng popup, tăng số lịch hẹn cạnh tên học viên và hiển thị &quot;Thêm lịch hẹn thành công.&quot;
+</code></pre>
+<p><strong>Flow 8: Xem lịch sử học viên</strong></p>
+<pre><code class="language-text">User click tên học viên
+      → Chọn &quot;Xem Lịch sử&quot;
+      → Hệ thống mở popup tại tab Học phí
+      → User chuyển giữa Học phí / Lịch sử lớp / Ghi chú
+      → Hiển thị dữ liệu đúng học viên đang chọn
+</code></pre>
+<p><strong>Flow 9: Học phí trên hóa đơn hiện có trong lịch sử học viên</strong></p>
+<pre><code class="language-text">User mở tab Học phí của học viên
+      → Xem hóa đơn hiện có, bấm dòng để xổ/thu gọn chi tiết học phí
+      → Không có flow tạo hóa đơn mới
+      → Mở menu ⋮ trên hóa đơn
+          ├─ Thêm học phí → chọn học viên đã liên kết hóa đơn
+          │     ├─ Chọn học viên có sẵn → Tên/Mã đồng bộ hai chiều, Email chỉ đọc
+          │     └─ Thêm học viên/bỏ tick → nhập Tên/Email, chọn Level; ẩn Mã, hệ thống sinh Code
+          │     → Chọn lớp, nhập Giá trị và ghi chú
+          │     → Validate field bắt buộc và Giá trị ≤ Còn lại của toàn hóa đơn
+          │     → Thêm thành công: cập nhật chi tiết, số lượng Học phí và Còn lại
+          ├─ Chỉnh sửa → form điền sẵn, Tên hóa đơn chỉ đọc, sửa dữ liệu/KPI → Cập nhật
+          ├─ Copy → copy tên vào clipboard; không tạo hóa đơn
+          ├─ Xóa hóa đơn → popup xác nhận
+          │     ├─ Hủy bỏ → không thay đổi
+          │     └─ Xác nhận → xóa mềm và đồng bộ học phí/số dư của mọi học viên liên kết; lỗi giữ nguyên toàn bộ
+          └─ Lịch sử hành động / Xuất hóa đơn → hiển thị disable theo Hóa đơn hiện tại
+      → Sau lưu/xóa thành công: tải lại hai thẻ Học phí và Số bill/Hoàn tiền/Tổng doanh thu
+      → Bill có trạng thái Hoàn tiền: áp dụng công thức danh sách tổng đã chốt, không trừ lặp
+      → Lưu đồng thời ICS/CG: không ghi đè bản đã lưu trước; yêu cầu reload theo Hóa đơn
+      → Thiếu field / học phí vượt Còn lại / email sai / file sai: báo lỗi, không lưu
+      → Thành công/lỗi của Thêm học phí, Cập nhật, Xóa dùng thông báo tương ứng đã có
+</code></pre>
+<p><strong>Flow 10: Thêm và lọc ghi chú</strong></p>
+<pre><code class="language-text">User mở tab Ghi chú
+      → Mặc định Mới + Tuần này; Loại/Độ ưu tiên chưa chọn
+      → Bấm &quot;+&quot; và nhập Tiêu đề, Nội dung, Loại, Độ ưu tiên
+      → Bấm &quot;Thêm ghi chú&quot;
+      → Thành công: thêm ghi chú vào danh sách và hiển thị &quot;Thêm ghi chú thành công.&quot;
+      → Ghi chú Riêng tư chỉ hiển thị với đúng user đã tạo
+      → Chỉ owner ghi chú đổi Loại/Độ ưu tiên hoặc đóng ghi chú
+      → Đã Đóng: chỉ owner xem được ghi chú và bình luận; owner có thể mở lại
+      → User lọc theo Loại + Độ ưu tiên + Trạng thái + Thời gian
+      → Nếu chọn Tùy chọn: user chọn Từ ngày và Đến ngày
+      → Hệ thống hiển thị các ghi chú thỏa tất cả điều kiện
+</code></pre>
+<h3 id="22-ngoai-le">2.2. Ngoại lệ</h3>
+<ul>
+<li><strong>EX01:</strong> Tạo tài khoản thiếu bất kỳ field bắt buộc nào → hiển thị <code>Vui lòng nhập đầy đủ thông tin bắt buộc.</code>, không tạo tài khoản.</li>
+<li><strong>EX02:</strong> Code vừa sinh bị trùng do nhiều request đồng thời → hệ thống phải sinh lại Code trước khi lưu; không được tạo hai học viên cùng Code trong cùng center; center khác được trùng Code.</li>
+<li><strong>EX03:</strong> Không thể tạo Code duy nhất trong center hiện tại → hiển thị <code>Không thể tạo mã học viên. Vui lòng thử lại.</code>, không tạo tài khoản.</li>
+<li><strong>EX04:</strong> Thêm lịch hẹn thiếu bất kỳ field bắt buộc nào → hiển thị <code>Vui lòng nhập đầy đủ thông tin bắt buộc.</code>, không tạo lịch hẹn.</li>
+<li><strong>EX05:</strong> Export lỗi → hiển thị <code>Không thể xuất danh sách học viên. Vui lòng thử lại.</code>, không tải file lỗi/rỗng xuống thiết bị.</li>
+<li><strong>EX06:</strong> Search nhận thêm ký tự trước khi đủ 2 giây → hủy thời gian chờ cũ và tính lại 2 giây từ ký tự mới nhất.</li>
+<li><strong>EX07:</strong> Search đang chờ nhưng user nhấn Enter → tìm kiếm ngay một lần và hủy lượt tự tìm kiếm đang chờ.</li>
+<li><strong>EX08:</strong> User không thuộc role được phép xuất hiện trong Người phụ trách/Người theo dõi → không hiển thị trong danh sách chọn và không thể gán bằng request trực tiếp.</li>
+<li><strong>EX09:</strong> Học viên không có lớp hiện tại → hiển thị <code>Chưa có</code>, không hiển thị popup lớp khi hover.</li>
+<li><strong>EX10:</strong> Email đã tồn tại trong cùng trung tâm → hiển thị <code>Email đã được sử dụng.</code>, không tạo tài khoản; email giống nhau ở hai trung tâm khác nhau vẫn được phép.</li>
+<li><strong>EX11:</strong> Người phụ trách rỗng sau khi người tạo tự gỡ mình → chặn tạo và yêu cầu chọn ít nhất một người phụ trách; Theo dõi được để trống.</li>
+<li><strong>EX12:</strong> User hủy popup xác nhận xóa hóa đơn → đóng popup, không xóa và không thay đổi dữ liệu.</li>
+<li><strong>EX13:</strong> Xóa hóa đơn thất bại → giữ nguyên hóa đơn, học phí và số dư liên kết, không cập nhật dở dang; hiển thị <code>Không thể xóa hóa đơn. Vui lòng thử lại.</code></li>
+<li><strong>EX14:</strong> User không phải người tạo cố xem ghi chú Riêng tư → không trả về và không hiển thị nội dung ghi chú.</li>
+<li><strong>EX15:</strong> Khoảng thời gian Tùy chọn có Từ ngày sau Đến ngày → chặn áp dụng bộ lọc.</li>
+<li>
+<p><strong>EX16:</strong> Thêm học phí, copy tên hoặc chỉnh sửa hóa đơn thất bại → không báo thành công, không lưu dữ liệu dở dang; copy tên không gọi tạo hóa đơn. Lỗi lưu/đồng bộ theo Hóa đơn và Toast chung.</p>
+</li>
+<li>
+<p><strong>EX17:</strong> Không còn Code hợp lệ trong dải cấp độ đã chọn → không cấp mã vượt dải/khác 6 chữ số, không tạo tài khoản, giữ popup và hiển thị <code>Không thể tạo mã học viên. Vui lòng thử lại.</code></p>
+</li>
+<li><strong>EX18:</strong> Email/SĐT sai định dạng hoặc mật khẩu dưới 8 ký tự → chặn tạo tài khoản, hiển thị lỗi ở field tương ứng và giữ dữ liệu trên form để chỉnh sửa; không lưu tài khoản dở dang.</li>
+</ul>
+<h3 id="23-yeu-cau-khac">2.3. Yêu cầu khác</h3>
+<ul>
+<li><strong>REQ01:</strong> Chức năng Quản lý học viên đầy đủ thuộc các role <code>Administrator</code>, <code>Sale</code>, <code>Support</code>, <code>Class Handler</code>.</li>
+<li><strong>REQ02:</strong> Mỗi trang hiển thị tối đa 10 học viên. Phân trang hiển thị Trang trước, các số trang, dấu <code>...</code>, các trang cuối và Trang sau như UI; chỉ một trang được đánh dấu đang chọn. Trang trước bị vô hiệu hóa tại trang đầu, Trang sau bị vô hiệu hóa tại trang cuối; chuyển trang giữ nguyên search/filter.</li>
+<li><strong>REQ03:</strong> Search chỉ áp dụng trên <code>Tên học viên</code> theo kiểu khớp chứa từ khóa, không yêu cầu khớp chính xác toàn bộ tên; tự chạy sau 2 giây kể từ lần nhập cuối hoặc chạy ngay khi nhấn Enter.</li>
+<li><strong>REQ04:</strong> Search, Trạng thái và Tag được kết hợp đồng thời; thay đổi điều kiện đưa danh sách về trang 1.</li>
+<li><strong>REQ05:</strong> Dropdown Trạng thái dùng checkbox chọn nhiều với mapping nhãn UI <code>Mới → [0]</code>, <code>Đang học → [1]</code>, <code>Đợi lớp → [2]</code>. Logic BE lần lượt là chưa vào lớp / đang học / đã ở trong lớp (đang học + các trạng thái khác). Nhiều trạng thái dùng OR, không trùng dòng học viên; không chọn trạng thái thì bỏ điều kiện này. FE gửi tập giá trị đã chọn theo hợp đồng API để BE lọc, không tự ánh xạ từ 7 status trong lớp. Kết hợp keyword tên/Tag bằng AND và dùng tổng kết quả BE trả để phân trang.</li>
+<li><strong>REQ06:</strong> Filter Tag có search ở đầu popup, nhóm thu gọn/mở rộng bằng chevron và checkbox tag chọn nhiều. Nhóm/tag lấy động từ dữ liệu user định nghĩa; tìm theo mã/tên tag, giữ checkbox đang chọn khi tìm kiếm, thu gọn hoặc mở lại. Nhiều tag dùng OR kể cả khác nhóm; không chọn tag thì bỏ điều kiện Tag. Kết hợp bằng AND với Trạng thái/keyword tên, đổi lựa chọn đưa danh sách về trang 1.</li>
+<li><strong>REQ07:</strong> Nút Excel nằm ở góc dưới bên phải bảng, cùng hàng với phần phân trang theo UI chuẩn. File Excel có đúng thứ tự cột: <code>Tên học viên</code>, <code>Số điện thoại</code>, <code>Email</code>, <code>Ngày tạo</code>. Không có search/filter thì xuất toàn bộ danh sách thuộc phạm vi dữ liệu của user; có search/filter thì xuất toàn bộ kết quả thỏa điều kiện. Luôn xuất tất cả trang, không chỉ trang đang xem.</li>
+<li><strong>REQ08:</strong> Dropdown <code>Chọn cấp độ</code> có đúng 9 lựa chọn từ <code>Cấp độ 1</code> đến <code>Cấp độ 9</code>, chọn một giá trị; placeholder <code>Chọn</code> không được tính là lựa chọn hợp lệ.</li>
+<li><strong>REQ09:</strong> Code do backend tự sinh, đúng 6 chữ số và chỉ đọc. Với cấp độ L từ 1 đến 9, mã bắt đầu ở <code>L × 100000</code>, tăng dần trong dải <code>L00000..L99999</code> và phải duy nhất trong cùng center kể cả khi tạo đồng thời; các center khác nhau được trùng Code. Mã hiển thị sau khi chọn cấp độ; backend tìm mã chưa dùng và kiểm tra lại khi lưu. Ví dụ cấp độ 1: 100000, 100001, …; cấp độ 2: 200000, 200001, …. Không cấp mã vượt dải cấp độ.</li>
+<li><strong>REQ10:</strong> Mọi field trong popup <code>Thêm học viên</code> đều bắt buộc, kể cả field hệ thống điền. Vai trò là <code>Student</code> (nhãn Học viên); Ngày chốt đơn mặc định ngày hiện tại và cho chọn ngày quá khứ/hiện tại/tương lai; Email/SĐT phải đúng định dạng, mật khẩu tối thiểu 8 ký tự; Gmail nhận email ở các domain khác; cấp độ bắt buộc chọn 1..9; Code tuân REQ09. Nút Hủy không tạo tài khoản; mật khẩu có nút hiện/ẩn.</li>
+<li><strong>REQ11:</strong> Badge cạnh tên học viên bằng số lịch hẹn hiện có của học viên đó; xóa thành công cập nhật lại số này.</li>
+<li><strong>REQ12:</strong> Số lớp tính tất cả lớp đã được thêm cho học viên và hover/bấm chỉ hiển thị mã các lớp. Lớp hiện tại gồm những lớp đồng thời có status học viên trong lớp <code>Đang học</code> và trạng thái lớp <code>Đang học</code>; badge bằng số lớp thỏa cả hai điều kiện, hover chỉ hiển thị mã lớp. Không có lớp hiện tại thì hiển thị text <code>Chưa có</code>, không mở danh sách rỗng. Số bill là số hóa đơn được thêm/liên kết với học viên, chỉ hiển thị số và không mở nội dung khi hover/bấm.</li>
+<li><strong>REQ13:</strong> Popup lịch hẹn học viên có Nội dung, Thời gian chỉ ngày (không giờ), Độ ưu tiên, Người phụ trách, Theo dõi, Ghi chú và Hủy/Xác nhận. Đối tượng tự gắn học viên đang chọn, Trạng thái tự mặc định Mới; không render control Đối tượng/Trạng thái. Nội dung/Ghi chú/ngày hẹn/Độ ưu tiên và ít nhất một Người phụ trách bắt buộc; Theo dõi được để trống. Bộ bốn mức ưu tiên và trạng thái nghiệp vụ theo requirement Lịch Hẹn; Độ ưu tiên mặc định <code>Chọn</code>, bắt buộc user tự chọn, không tự điền Bình thường.</li>
+<li><strong>REQ14:</strong> Cả Người phụ trách và Theo dõi chỉ chọn Trợ giảng (Teaching Assistant), Support, Nhân viên kinh doanh (Sale) theo UI chuẩn. Chọn nhiều qua +, search/nhóm/checkbox và chip avatar+tên; cùng user được ở cả hai field, không trùng trong cùng field. Người tạo chỉ được chọn sẵn làm Người phụ trách nếu có role hợp lệ; trước lưu cần ít nhất một người. Không gán role ngoài ba nhóm, kể cả request trực tiếp.</li>
+<li><strong>REQ15:</strong> Danh sách học viên của Sale, Support và Class Handler chỉ hiển thị học viên mà user đó được gán làm Người phụ trách hoặc Người theo dõi.</li>
+<li><strong>REQ16:</strong> Một học viên được gán cho cùng user ở cả hai vai trò chỉ xuất hiện một lần trong danh sách của user đó.</li>
+<li><strong>REQ17:</strong> Popup Lịch sử học viên tải đúng học viên, có ba tab Học phí / Lịch sử lớp / Ghi chú; mặc định Học phí. Tab active theo màu/chỉ báo cam của ảnh chuẩn. Giữ ngữ cảnh khi đổi tab, không trộn hóa đơn, lớp, ghi chú hoặc bình luận của học viên khác.</li>
+<li><strong>REQ18:</strong> Lịch sử lớp gồm tất cả lớp học viên đã từng được thêm, không chỉ lớp hiện tại. Mỗi lớp hiển thị status riêng của học viên trong lớp đó; không đổi status học viên ở popup lịch sử.</li>
+<li><strong>REQ19:</strong> Ghi chú có Loại <code>Công khai</code>/<code>Riêng tư</code>, Độ ưu tiên <code>Bình thường</code>/<code>Quan trọng</code>/<code>Rất quan trọng</code>, Trạng thái <code>Mới</code>/<code>Đóng</code>. Owner là người tạo ghi chú; chỉ owner đổi Loại/Độ ưu tiên. Ghi chú Riêng tư hoặc đã Đóng chỉ owner xem được, gồm cả bình luận. Tiêu đề/Nội dung bắt buộc và không giới hạn độ dài; Nội dung trong form thêm là văn bản thuần.</li>
+<li><strong>REQ20:</strong> Filter ghi chú kết hợp đồng thời Loại, Độ ưu tiên, Trạng thái và Thời gian. Mở tab mặc định Mới + Tuần này; Loại/Độ ưu tiên chưa chọn và không giới hạn kết quả theo hai bộ lọc đó. <code>Tùy chọn</code> cho phép chọn <code>Từ ngày</code>/<code>Đến ngày</code>, Từ ngày không được sau Đến ngày. Mọi kết quả phải tuân quyền xem ghi chú.</li>
+<li><strong>REQ21:</strong> Email học viên phải duy nhất trong từng trung tâm. Trùng email trong cùng trung tâm bị từ chối; trùng email giữa các trung tâm khác nhau được phép.</li>
+<li><strong>REQ22:</strong> Xóa hóa đơn hiện có bắt buộc xác nhận và là xóa mềm theo Hóa đơn. Đồng bộ các khoản học phí, số dư của tất cả học viên liên kết hóa đơn; khoản học phí thuộc hóa đơn đã xóa không còn hiệu lực trong thống kê học viên/lớp liên kết. Tính lại từ hóa đơn/học phí còn hiệu lực và tải lại các màn liên quan; chỉ báo thành công khi đồng bộ hoàn tất. Hủy/lỗi giữ nguyên toàn bộ, không cập nhật dở dang hoặc tự tạo hoàn tiền.</li>
+<li><strong>REQ23:</strong> Thêm học phí, cập nhật hoặc xóa hóa đơn thất bại không lưu thay đổi dở dang; lỗi validation/đồng bộ dùng rule Hóa đơn và Toast chung. Copy chỉ thao tác clipboard và thông báo kết quả, không ghi dữ liệu tài chính.</li>
+<li><strong>REQ24:</strong> Không kiểm tra trùng số điện thoại học viên; một học viên được liên kết nhiều hóa đơn. Form chỉnh sửa hóa đơn theo Hóa đơn Trang 2; Tên hóa đơn chỉ đọc, các field còn lại theo validation nguồn, KPI sửa được. Không tạo hóa đơn mới tại tab Học phí.</li>
+<li><strong>REQ25:</strong> Copy sao chép chính xác tên hóa đơn hiện có vào clipboard theo Hóa đơn REQ06, không tạo bản sao hóa đơn và không tăng Số Hoá Đơn/Số bill hoặc số tiền.</li>
+<li><strong>REQ26:</strong> Chỉ owner ghi chú được đóng/mở lại ghi chú trong phạm vi học viên được truy cập. Đã Đóng chỉ owner thấy ghi chú/bình luận; user khác không được xem cả qua request trực tiếp. Quyền role không thay quyền owner.</li>
+<li><strong>REQ27:</strong> Loại hóa đơn gồm đúng 22 lựa chọn theo Hóa đơn; Trạng thái/Tài khoản nhận/Tiền tệ và rule Quy đổi VND theo form nguồn. Không lấy danh sách loại cũ từ ảnh học viên thay cho Hóa đơn.</li>
+<li><strong>REQ28:</strong> Thêm học phí dùng hai bước theo Hóa đơn: chọn học viên liên kết rồi mở form. Tick Chọn học viên có sẵn đồng bộ Tên/Mã hai chiều, Email chỉ đọc; bỏ tick/Thêm học viên nhập Tên/Email/Level 1..9, ẩn Mã và sinh Code không trùng. Lớp học/Giá trị bắt buộc; Giá trị mặc định 0, không vượt Còn lại; hai ghi chú không bắt buộc. Không tạo hóa đơn mới trong flow này.</li>
+<li>
+<p><strong>REQ29:</strong> Status học viên gắn với từng quan hệ học viên–lớp và độc lập với status lớp; học viên có 3 lớp có 3 status riêng. Dùng đúng 7 PNG chuẩn trong bảng UI. Chỉ chỉnh tại <code>Cài đặt lớp → Học viên → Chọn trạng thái</code> bằng dropdown 7 status, không chỉnh tại Danh sách học viên. Lịch sử lớp dùng icon/tên trạng thái lớp theo requirement lớp; không dùng bộ 7 icon học viên làm status dòng lớp. Status tài khoản Chính thức vẫn chỉ đọc theo requirement chi tiết.</p>
+</li>
+<li>
+<p><strong>REQ30:</strong> Danh sách, kết quả search/filter và mọi trang sắp theo ngày tạo học viên giảm dần, mới nhất trước. Ngày chốt đơn chỉ là dữ liệu hiển thị/nhập, không dùng để sắp xếp; trùng Ngày chốt đơn vẫn theo ngày tạo học viên.</p>
+</li>
+<li><strong>REQ31:</strong> Tổng doanh thu bằng tổng số tiền hóa đơn học viên trừ số tiền bill có trạng thái Hoàn tiền. Hoàn tiền bằng tổng số tiền bill có trạng thái Hoàn tiền; không yêu cầu thêm trạng thái xử lý hoàn thành riêng. Ví dụ bill 1/2/3 triệu, bill 3 triệu Hoàn tiền: doanh thu 3 triệu, hoàn tiền 3 triệu, Số bill 3.</li>
+<li>
+<p><strong>REQ32:</strong> Tên học viên mở menu Thêm lịch hẹn/Xem lịch sử; mũi tên cuối dòng mở Chi tiết học viên. Ghi chú mở nội dung đúng học viên, màu cam nghĩa là có ghi chú, xám là chưa có; không trộn với status ghi chú Mới/Đóng.</p>
+</li>
+<li>
+<p><strong>REQ33:</strong> Tab Học phí có hai thẻ Số Hoá Đơn/Tổng Học Phí và bảng 16 cột, cuộn ngang theo ảnh chuẩn. Số Hoá Đơn đếm hóa đơn tạo cho học viên mỗi hóa đơn một lần; Tổng Học Phí cộng tiền đã dùng của đúng học viên. Bảng con hiển thị các khoản học phí thuộc invoice_id đang mở, gồm Học viên/Mã/Lớp-kỳ/Số tiền/hai ghi chú; không gộp các khoản chỉ vì cùng học viên. Nhãn Mới cạnh tên học viên trong bảng con là tag của item học phí. Hành vi các cột/menu theo Hóa đơn.</p>
+</li>
+<li><strong>REQ34:</strong> Lịch sử lớp có 6 thẻ và bảng theo UI chuẩn. Số Lớp = lớp chính thức/tổng lớp lịch sử, mỗi class_id một lần. Đi Học/BTVN giữ công thức từng học viên/lớp đủ dữ liệu và làm tròn kết quả cuối 1 chữ số thập phân. getUpTerm tính trên cả lớp theo hai nhánh Hoàn thành/chưa Hoàn thành; vòng % dòng lớp dùng giá trị này. Lên Kỳ trung bình lớp chính thức đã Hoàn thành; Đạt Kpi trung bình tất cả lớp chính thức, không đếm lớp đạt ≥ 80%. Hai thẻ/vòng % định dạng 2 chữ số có nghĩa theo source. Đánh Giá lấy trung bình Q=scoreEvaluateClass của lớp chính thức rồi đổi A–F theo ngưỡng nguồn, không trung bình chữ. Tập tính rỗng: Lên Kỳ/Đạt Kpi 0%, Đánh Giá trống nếu không có lớp chính thức; Đi Học/BTVN chưa có dữ liệu hợp lệ thì trống. Mẫu số HV bằng 0 trả r_lớp 0%. Mũ xanh = trạng thái lớp Hoàn thành; x/N Buổi là tiến độ cả lớp; mũi tên mở Chi tiết lớp phía dưới popup.</li>
+<li>
+<p><strong>REQ35:</strong> Tab Ghi chú có card, bốn bộ lọc, nút +, popup Thêm ghi chú văn bản thuần và ô bình luận văn bản thuần theo ảnh mới. Metadata góc phải gồm avatar/tên/ngày giờ tạo bình luận gần nhất và icon đồng hồ cam; chưa có bình luận thì ẩn cụm này. Avatar/tên/ngày tạo ghi chú nằm dưới tiêu đề, tên Bạn nếu tài khoản hiện tại là người tạo; Đã chỉnh sửa khi note đã sửa. Badge ưu tiên và icon loại theo ảnh; menu owner Chỉnh sửa/Đóng/Xóa. Nhập/gửi bình luận ở cuối danh sách, không có toolbar/nút Trả lời riêng; không tạo thread. Làm mới chỉ tải lại bình luận và metadata của note hiện tại. Người tạo bình luận được sửa/xóa bình luận của mình; user có quyền xem ghi chú được gửi bình luận không rỗng. Tiêu đề/nội dung/bình luận không giới hạn độ dài nghiệp vụ; dữ liệu gắn đúng học viên và note.</p>
+</li>
+<li>
+<p><strong>REQ36:</strong> Lịch sử hóa đơn (tab Học phí) cho đầy đủ thao tác học phí và hóa đơn hiện có theo Hóa đơn/Chi tiết học phí; không có nút/form/request tạo hóa đơn mới. Menu hoạt động: Thêm học phí, Chỉnh sửa, Copy tên, Xóa mềm; Lịch sử hành động/Xuất hóa đơn hiển thị disable theo giai đoạn của nguồn.</p>
+</li>
+<li><strong>REQ37:</strong> Giá trị khoản học phí không vượt Còn lại của toàn hóa đơn; Còn lại bằng Số tiền đã đóng trừ tổng học phí đã thêm, không âm. Thêm thành công cập nhật phần xổ xuống/số lượng học phí/Còn lại và số liệu học viên từ dữ liệu đã lưu.</li>
+<li><strong>REQ38:</strong> Chỉnh sửa dùng cùng hóa đơn với ICS/CG và màn Hóa đơn, không tạo bản dữ liệu riêng; giữ bản lưu trước và yêu cầu reload khi xung đột. Role/phạm vi thao tác tại màn học viên theo REQ01/REQ15, không kế thừa giới hạn chỉ Admin của menu Hóa đơn.</li>
+</ul>
+<h3 id="24-rang-buoc">2.4. Ràng buộc</h3>
+<h4 id="quyen">Quyền</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Role</th>
+<th style="text-align: center;">Xem danh sách</th>
+<th style="text-align: center;">Search / Filter / Phân trang</th>
+<th style="text-align: center;">Xuất Excel</th>
+<th style="text-align: center;">Tạo tài khoản</th>
+<th style="text-align: center;">Thêm lịch hẹn</th>
+<th style="text-align: center;">Xem lịch sử</th>
+<th style="text-align: center;">Học phí / hóa đơn hiện có</th>
+<th style="text-align: center;">Thêm / lọc / đóng ghi chú</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Administrator</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+</tr>
+<tr>
+<td>Sale</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+</tr>
+<tr>
+<td>Support</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+</tr>
+<tr>
+<td>Class Handler</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+</tr>
+<tr>
+<td>Các role khác</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+</tr>
+</tbody>
+</table></div>
+<h4 id="pham-vi-du-lieu">Phạm vi dữ liệu</h4>
+<ul>
+<li>Administrator xem và thao tác trên toàn bộ học viên.</li>
+<li>Sale, Support và Class Handler có đầy đủ quyền thao tác giống Administrator, nhưng chỉ trên học viên mà chính user đó được gán làm Người phụ trách hoặc Người theo dõi.</li>
+<li>Nếu cùng một user được gán ở cả Người phụ trách và Người theo dõi của một học viên, học viên chỉ xuất hiện một lần.</li>
+<li>Mọi quyền của Sale, Support và Class Handler chỉ áp dụng trong phạm vi học viên được gán.</li>
+<li>Quyền Thêm/lọc ghi chú trong bảng không cấp quyền đóng hoặc sửa ghi chú của người khác. Các thao tác trên ghi chú/bình luận còn phải tuân quyền owner; ghi chú đã Đóng chỉ owner xem được.</li>
+<li>Quyền Học phí/hóa đơn hiện có không bao gồm tạo hóa đơn mới tại lịch sử học viên. Chọn invoice_id/student_id/lớp phải tuân phạm vi dữ liệu được cấp; menu/form dùng lại không mở rộng quyền.</li>
+<li>Không cho phép truy cập hoặc thực hiện hành động bị đánh dấu <code>❌</code>, kể cả khi gọi trực tiếp bằng URL hoặc request.</li>
+</ul>
+<hr>
+<h2 id="3-can-xac-nhan">3. Cần xác nhận</h2>
+<p>Không còn câu hỏi cần xác nhận trong requirement này.</p>
+</article>
+    <p class="source-note">Nguồn: student_management_requirements.md · SHA-256 c794e582b4c7232e641193ee0cbab6a44872b95f7d2ab5ad704db4dd94a6c4f6</p>
+  </main>
+  <script>
+    const article = document.getElementById('document');
+    const nav = document.getElementById('docNav');
+    const headings = [...article.querySelectorAll('h2')];
+    headings.forEach((heading, index) => {
+      const link = document.createElement('a');
+      link.href = `#${heading.id}`;
+      const number = document.createElement('span');
+      number.className = 'nav-num';
+      number.textContent = String(index + 1).padStart(2, '0');
+      link.append(number, document.createTextNode(heading.textContent));
+      nav.append(link);
+    });
+
+    const navLinks = [...nav.querySelectorAll('a')];
+    const observer = new IntersectionObserver(entries => {
+      const current = entries.filter(item => item.isIntersecting).sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
+      if (!current) return;
+      navLinks.forEach(link => link.classList.toggle('active', link.hash === `#${current.target.id}`));
+    }, {rootMargin: '-18% 0px -68% 0px', threshold: [0, .2, .5]});
+    headings.forEach(heading => observer.observe(heading));
+    if (navLinks[0]) navLinks[0].classList.add('active');
+
+    const testcaseHeadings = [...article.querySelectorAll('h2, h3, h4, h5')]
+      .filter(heading => /^(Testcase|Feature:)/.test(heading.textContent.trim()));
+    const testcaseGroups = testcaseHeadings
+      .map(heading => ({heading, tableWrap: heading.nextElementSibling}))
+      .filter(group => group.tableWrap?.classList.contains('table-wrap'));
+    if (testcaseGroups.length) {
+        const tableWraps = testcaseGroups.map(group => group.tableWrap);
+        tableWraps.forEach(tableWrap => tableWrap.classList.add('testcase-table'));
+        const rows = tableWraps.flatMap(tableWrap => [...tableWrap.querySelectorAll('tbody tr')]);
+        const tools = document.createElement('div');
+        tools.className = 'case-tools';
+        const input = document.createElement('input');
+        input.type = 'search';
+        input.placeholder = 'Tìm testcase, Flow, REQ, EX hoặc nội dung…';
+        input.setAttribute('aria-label', 'Tìm testcase');
+        const count = document.createElement('span');
+        count.className = 'case-count';
+        tools.append(input, count);
+        testcaseGroups[0].heading.before(tools);
+        const filterRows = () => {
+          const query = input.value.trim().toLocaleLowerCase('vi');
+          let visible = 0;
+          rows.forEach(row => {
+            const match = !query || row.textContent.toLocaleLowerCase('vi').includes(query);
+            row.hidden = !match;
+            if (match) visible += 1;
+          });
+          testcaseGroups.forEach(({heading, tableWrap}) => {
+            const hasVisibleRow = [...tableWrap.querySelectorAll('tbody tr')]
+              .some(row => !row.hidden);
+            heading.hidden = !hasVisibleRow;
+            tableWrap.hidden = !hasVisibleRow;
+          });
+          count.textContent = `${visible}/${rows.length} testcase`;
+        };
+        input.addEventListener('input', filterRows);
+        filterRows();
+    }
+  </script>
+</body>
+</html>

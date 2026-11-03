@@ -1,0 +1,1480 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Requirement Chi tiết lớp học — Hóa đơn">
+  <link rel="icon" href="data:,">
+  <title>Chi tiết lớp học — Hóa đơn — Requirement</title>
+  <style>
+    :root {
+      --orange-700: #c83f00;
+      --orange-600: #e84c00;
+      --orange-500: #f45b0a;
+      --orange-400: #ff7a32;
+      --orange-100: #fff0e8;
+      --orange-50: #fff8f4;
+      --navy-950: #101828;
+      --navy-900: #172033;
+      --navy-800: #243047;
+      --slate-700: #344054;
+      --slate-600: #475467;
+      --slate-500: #667085;
+      --slate-400: #98a2b3;
+      --slate-300: #d0d5dd;
+      --slate-200: #e4e7ec;
+      --slate-100: #f2f4f7;
+      --slate-50: #f8fafc;
+      --white: #ffffff;
+      --green: #159447;
+      --blue: #2154c5;
+      --yellow: #b77900;
+      --red: #c92a2a;
+      --purple: #6941c6;
+      --shadow-sm: 0 1px 2px rgba(16, 24, 40, .06);
+      --shadow-md: 0 12px 32px rgba(16, 24, 40, .10);
+      --shadow-lg: 0 24px 64px rgba(16, 24, 40, .16);
+      --radius-sm: 10px;
+      --radius: 16px;
+      --radius-lg: 24px;
+      --sidebar: 286px;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      color: var(--navy-950);
+      background:
+        radial-gradient(circle at 88% 5%, rgba(244, 91, 10, .10), transparent 24rem),
+        var(--slate-50);
+      font: 15px/1.65 Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      text-rendering: optimizeLegibility;
+    }
+    a { color: inherit; }
+    img { max-width: 100%; }
+    button, input, select { font: inherit; }
+    code {
+      padding: .12rem .38rem;
+      border: 1px solid #fed7c3;
+      border-radius: 6px;
+      color: var(--orange-700);
+      background: var(--orange-50);
+      font: 600 .9em ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    }
+
+    .skip-link {
+      position: fixed;
+      z-index: 999;
+      top: 12px;
+      left: 12px;
+      padding: 10px 14px;
+      border-radius: 9px;
+      color: var(--white);
+      background: var(--navy-950);
+      transform: translateY(-150%);
+    }
+    .skip-link:focus { transform: none; }
+
+    .sidebar {
+      position: fixed;
+      z-index: 30;
+      inset: 0 auto 0 0;
+      width: var(--sidebar);
+      padding: 22px 18px;
+      overflow-y: auto;
+      color: #f8fafc;
+      background:
+        linear-gradient(155deg, rgba(255, 122, 50, .24), transparent 26%),
+        linear-gradient(180deg, #192338 0%, #111827 100%);
+      border-right: 1px solid rgba(255, 255, 255, .08);
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 4px 8px 22px;
+      border-bottom: 1px solid rgba(255, 255, 255, .10);
+    }
+    .brand-mark {
+      display: grid;
+      width: 44px;
+      height: 44px;
+      place-items: center;
+      border-radius: 14px;
+      color: var(--white);
+      background: linear-gradient(135deg, var(--orange-400), var(--orange-600));
+      box-shadow: 0 10px 26px rgba(244, 91, 10, .35);
+      font-weight: 900;
+      letter-spacing: -.06em;
+    }
+    .brand strong { display: block; font-size: 16px; }
+    .brand small { color: #aeb8c9; }
+    .nav-title {
+      margin: 24px 10px 8px;
+      color: #8f9aae;
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+    .nav { display: grid; gap: 4px; }
+    .nav a {
+      display: flex;
+      align-items: center;
+      gap: 11px;
+      padding: 10px 12px;
+      border-radius: 10px;
+      color: #cbd5e1;
+      text-decoration: none;
+      transition: .18s ease;
+    }
+    .nav a:hover, .nav a.active {
+      color: var(--white);
+      background: rgba(255, 255, 255, .09);
+    }
+    .nav a.active { box-shadow: inset 3px 0 var(--orange-400); }
+    .nav-num {
+      display: grid;
+      width: 25px;
+      height: 25px;
+      flex: 0 0 auto;
+      place-items: center;
+      border: 1px solid rgba(255, 255, 255, .15);
+      border-radius: 8px;
+      font-size: 11px;
+      font-weight: 800;
+    }
+    .sidebar-footer {
+      margin-top: 26px;
+      padding: 14px;
+      border: 1px solid rgba(255, 255, 255, .10);
+      border-radius: 14px;
+      color: #aeb8c9;
+      background: rgba(255, 255, 255, .04);
+      font-size: 12px;
+    }
+    .sidebar-footer a { color: #ffd8c5; }
+
+    main {
+      width: min(1500px, calc(100% - var(--sidebar)));
+      margin-left: var(--sidebar);
+      padding: 34px clamp(24px, 4vw, 64px) 80px;
+    }
+    section { scroll-margin-top: 24px; }
+    .hero {
+      position: relative;
+      padding: clamp(30px, 5vw, 56px);
+      overflow: hidden;
+      border: 1px solid rgba(255, 255, 255, .08);
+      border-radius: var(--radius-lg);
+      color: var(--white);
+      background:
+        linear-gradient(105deg, rgba(16, 24, 40, .97) 0%, rgba(23, 32, 51, .94) 62%, rgba(109, 45, 9, .90) 100%);
+      box-shadow: var(--shadow-lg);
+    }
+    .hero::after {
+      content: "";
+      position: absolute;
+      width: 360px;
+      height: 360px;
+      top: -190px;
+      right: -80px;
+      border: 70px solid rgba(255, 122, 50, .15);
+      border-radius: 50%;
+    }
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 10px;
+      border: 1px solid rgba(255, 255, 255, .15);
+      border-radius: 999px;
+      color: #ffd8c5;
+      background: rgba(255, 255, 255, .06);
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+    .hero h1 {
+      max-width: 900px;
+      margin: 18px 0 12px;
+      font-size: clamp(34px, 5vw, 64px);
+      line-height: 1.03;
+      letter-spacing: -.045em;
+    }
+    .hero p { max-width: 780px; margin: 0; color: #cbd5e1; font-size: 17px; }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 25px; }
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      min-height: 42px;
+      padding: 9px 14px;
+      border: 1px solid transparent;
+      border-radius: 10px;
+      color: var(--white);
+      background: var(--orange-500);
+      text-decoration: none;
+      cursor: pointer;
+      transition: .18s ease;
+    }
+    .button:hover { transform: translateY(-1px); background: var(--orange-600); }
+    .button.secondary { border-color: rgba(255, 255, 255, .15); background: rgba(255, 255, 255, .07); }
+    .button.ghost { color: var(--slate-700); border-color: var(--slate-300); background: var(--white); }
+    .button.small { min-height: 36px; padding: 7px 11px; font-size: 13px; }
+
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 14px;
+      margin-top: 18px;
+    }
+    .stat {
+      padding: 18px;
+      border: 1px solid var(--slate-200);
+      border-radius: var(--radius);
+      background: rgba(255, 255, 255, .86);
+      box-shadow: var(--shadow-sm);
+    }
+    .stat strong { display: block; color: var(--orange-600); font-size: 30px; line-height: 1; }
+    .stat span { display: block; margin-top: 7px; color: var(--slate-600); font-weight: 650; }
+
+    .section-head {
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 24px;
+      margin: 64px 0 20px;
+    }
+    .section-kicker {
+      margin: 0 0 6px;
+      color: var(--orange-600);
+      font-size: 12px;
+      font-weight: 850;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+    .section-head h2 { margin: 0; font-size: clamp(27px, 4vw, 40px); letter-spacing: -.035em; }
+    .section-head p { max-width: 600px; margin: 8px 0 0; color: var(--slate-600); }
+
+    .panel {
+      padding: clamp(20px, 3vw, 30px);
+      border: 1px solid var(--slate-200);
+      border-radius: var(--radius-lg);
+      background: var(--white);
+      box-shadow: var(--shadow-sm);
+    }
+    .panel + .panel { margin-top: 18px; }
+    .panel h3 { margin: 0 0 14px; font-size: 21px; letter-spacing: -.02em; }
+    .panel h4 { margin: 26px 0 10px; }
+    .muted { color: var(--slate-600); }
+    .note {
+      padding: 15px 17px;
+      border-left: 4px solid var(--orange-500);
+      border-radius: 0 12px 12px 0;
+      color: var(--slate-700);
+      background: var(--orange-50);
+    }
+
+    .mockup {
+      position: relative;
+      padding: 12px;
+      border: 1px solid var(--slate-200);
+      border-radius: 18px;
+      background: linear-gradient(145deg, #fff, #f4f6f9);
+      box-shadow: var(--shadow-md);
+    }
+    .mockup a { display: block; overflow: hidden; border-radius: 12px; }
+    .mockup img { display: block; width: 100%; transition: transform .3s ease; }
+    .mockup a:hover img { transform: scale(1.01); }
+    .mockup figcaption { padding: 12px 4px 2px; color: var(--slate-600); font-size: 13px; }
+
+    .grid-2 { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
+    .grid-3 { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+    .grid-4 { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 14px; }
+    .card {
+      padding: 18px;
+      border: 1px solid var(--slate-200);
+      border-radius: var(--radius);
+      background: var(--white);
+      box-shadow: var(--shadow-sm);
+    }
+    .card h3, .card h4 { margin: 0 0 8px; }
+    .card p { margin: 0; color: var(--slate-600); }
+    .card-accent { border-top: 4px solid var(--orange-500); }
+
+    .column-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+    .column-item {
+      min-height: 124px;
+      padding: 15px;
+      border: 1px solid var(--slate-200);
+      border-radius: 14px;
+      background: var(--slate-50);
+    }
+    .column-item strong { display: block; margin-bottom: 5px; color: var(--navy-900); }
+    .column-item span { color: var(--slate-600); font-size: 13px; }
+
+    .status-card { display: flex; align-items: center; gap: 12px; }
+    .status-card img { width: 42px; height: 42px; }
+    .status-card small { display: block; color: var(--slate-500); }
+
+    .tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      padding: 4px 9px;
+      border-radius: 999px;
+      color: var(--orange-700);
+      background: var(--orange-100);
+      font-size: 12px;
+      font-weight: 800;
+    }
+    .tag.high { color: #9d174d; background: #fce7f3; }
+    .tag.medium { color: #92400e; background: #fef3c7; }
+    .tag.req { color: #3730a3; background: #e0e7ff; }
+    .tag.ex { color: #b42318; background: #fee4e2; }
+
+    .flow-list { display: grid; gap: 14px; counter-reset: flow; }
+    .flow {
+      position: relative;
+      padding: 22px 22px 22px 68px;
+      border: 1px solid var(--slate-200);
+      border-radius: var(--radius);
+      background: var(--white);
+    }
+    .flow::before {
+      counter-increment: flow;
+      content: counter(flow, decimal-leading-zero);
+      position: absolute;
+      top: 20px;
+      left: 18px;
+      display: grid;
+      width: 36px;
+      height: 36px;
+      place-items: center;
+      border-radius: 11px;
+      color: var(--white);
+      background: var(--orange-500);
+      font-weight: 900;
+    }
+    .flow h3 { margin: 0 0 8px; }
+    .flow ol { margin: 0; padding-left: 20px; color: var(--slate-700); }
+
+    .exception { border-left: 4px solid #ef4444; }
+    .exception strong { color: var(--red); }
+
+    .formula-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; }
+    .formula {
+      padding: 18px;
+      border: 1px solid #ffd6c2;
+      border-radius: 16px;
+      background: linear-gradient(160deg, #fff, var(--orange-50));
+    }
+    .formula h4 { margin: 0 0 12px; color: var(--orange-700); }
+    .fraction { display: grid; justify-items: center; color: var(--navy-900); font-weight: 720; text-align: center; }
+    .fraction .top { padding: 0 10px 7px; border-bottom: 2px solid var(--navy-800); }
+    .fraction .bottom { padding-top: 7px; }
+    .formula .teacher { margin-top: 16px; padding-top: 12px; border-top: 1px dashed #f5b896; color: var(--slate-600); font-size: 13px; }
+
+    .filters {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      align-items: center;
+      padding: 14px;
+      border: 1px solid var(--slate-200);
+      border-radius: 14px;
+      background: var(--white);
+      position: sticky;
+      top: 10px;
+      z-index: 10;
+      box-shadow: var(--shadow-md);
+    }
+    .search {
+      min-width: min(100%, 320px);
+      flex: 1 1 260px;
+      height: 42px;
+      padding: 0 13px;
+      border: 1px solid var(--slate-300);
+      border-radius: 10px;
+      color: var(--navy-950);
+      background: var(--white);
+      outline: none;
+    }
+    .search:focus { border-color: var(--orange-500); box-shadow: 0 0 0 4px rgba(244, 91, 10, .12); }
+    .testcases { display: grid; gap: 10px; margin-top: 16px; }
+    .testcase {
+      border: 1px solid var(--slate-200);
+      border-radius: 14px;
+      background: var(--white);
+      overflow: clip;
+    }
+    .testcase[hidden] { display: none; }
+    .testcase summary {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 15px 17px;
+      cursor: pointer;
+      list-style: none;
+    }
+    .testcase summary::-webkit-details-marker { display: none; }
+    .testcase summary::after { content: "+"; margin-left: auto; color: var(--orange-600); font-size: 22px; font-weight: 700; }
+    .testcase[open] summary::after { content: "−"; }
+    .testcase-title { min-width: 0; font-weight: 780; }
+    .case-body {
+      display: grid;
+      grid-template-columns: minmax(180px, .7fr) minmax(0, 1.3fr);
+      gap: 18px;
+      padding: 18px;
+      border-top: 1px solid var(--slate-200);
+      background: var(--slate-50);
+    }
+    .case-meta { color: var(--slate-600); }
+    .case-meta div + div { margin-top: 8px; }
+    .case-steps { display: grid; gap: 10px; }
+    .step { padding: 10px 12px; border-left: 3px solid var(--orange-400); background: var(--white); }
+    .expected { margin: 14px 0 0; padding-left: 20px; }
+    .expected li + li { margin-top: 4px; }
+    .empty-filter { display: none; padding: 28px; color: var(--slate-600); text-align: center; }
+
+    .question-list { display: grid; gap: 10px; margin: 0; padding: 0; counter-reset: question; list-style: none; }
+    .question-list li {
+      position: relative;
+      padding: 14px 16px 14px 54px;
+      border: 1px solid #f4d8a4;
+      border-radius: 13px;
+      background: #fffbeb;
+      color: #664d03;
+    }
+    .question-list li::before {
+      counter-increment: question;
+      content: counter(question);
+      position: absolute;
+      top: 12px;
+      left: 14px;
+      display: grid;
+      width: 28px;
+      height: 28px;
+      place-items: center;
+      border-radius: 9px;
+      color: #fff;
+      background: #d99100;
+      font-weight: 850;
+    }
+
+    .footer {
+      margin-top: 64px;
+      padding-top: 24px;
+      border-top: 1px solid var(--slate-200);
+      color: var(--slate-500);
+      text-align: center;
+    }
+
+    @media (max-width: 1120px) {
+      :root { --sidebar: 244px; }
+      .column-grid, .grid-3, .formula-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .stats { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
+    @media (max-width: 780px) {
+      .sidebar { position: static; width: auto; padding: 14px; }
+      .brand { padding-bottom: 12px; }
+      .nav-title, .sidebar-footer { display: none; }
+      .nav { display: flex; overflow-x: auto; padding-top: 10px; }
+      .nav a { flex: 0 0 auto; }
+      main { width: 100%; margin: 0; padding: 18px 14px 60px; }
+      .hero { border-radius: 18px; }
+      .grid-2, .grid-3, .grid-4, .column-grid, .formula-grid, .case-body { grid-template-columns: 1fr; }
+      .section-head { align-items: start; flex-direction: column; }
+      .filters { position: static; }
+    }
+    @media print {
+      body { background: #fff; font-size: 11px; }
+      .sidebar, .hero-actions, .filters, .skip-link { display: none !important; }
+      main { width: 100%; margin: 0; padding: 0; }
+      .hero { color: #111; background: #fff; border: 2px solid #111; box-shadow: none; }
+      .hero p { color: #333; }
+      .panel, .card, .stat, .mockup, .testcase { break-inside: avoid; box-shadow: none; }
+      .section-head { margin-top: 32px; }
+      .testcase { display: block !important; }
+      .testcase summary::after { display: none; }
+      .testcase:not([open]) .case-body { display: grid; }
+    }
+
+    .doc-shell { min-width: 0; }
+    .doc-toolbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      margin-bottom: 18px;
+      padding: 14px 16px;
+      border: 1px solid var(--slate-200);
+      border-radius: 14px;
+      background: rgba(255,255,255,.92);
+      box-shadow: var(--shadow-sm);
+    }
+    .doc-toolbar-left, .doc-toolbar-right { display: flex; flex-wrap: wrap; align-items: center; gap: 9px; }
+    .sync-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      padding: 6px 10px;
+      border-radius: 999px;
+      color: #067647;
+      background: #ecfdf3;
+      border: 1px solid #abefc6;
+      font-size: 12px;
+      font-weight: 800;
+    }
+    .sync-badge::before { content: "✓"; }
+    .hash { color: var(--slate-500); font: 12px ui-monospace, SFMono-Regular, Menlo, monospace; }
+    .markdown-body {
+      padding: clamp(24px, 4vw, 54px);
+      border: 1px solid var(--slate-200);
+      border-radius: var(--radius-lg);
+      background: var(--white);
+      box-shadow: var(--shadow-md);
+      overflow: hidden;
+    }
+    .markdown-body > h1 {
+      position: relative;
+      margin: -54px -54px 42px;
+      padding: 62px 54px 54px;
+      color: var(--white);
+      background:
+        radial-gradient(circle at 88% 10%, rgba(255,122,50,.36), transparent 20rem),
+        linear-gradient(115deg, var(--navy-950), #243047 68%, #713209);
+      font-size: clamp(34px, 5vw, 62px);
+      line-height: 1.05;
+      letter-spacing: -.045em;
+    }
+    .markdown-body h2 {
+      margin: 70px 0 24px;
+      padding: 0 0 13px;
+      border-bottom: 2px solid var(--slate-200);
+      font-size: clamp(27px, 4vw, 39px);
+      line-height: 1.15;
+      letter-spacing: -.035em;
+      scroll-margin-top: 24px;
+    }
+    .markdown-body h2::first-letter { color: var(--orange-600); }
+    .markdown-body h3 {
+      margin: 38px 0 16px;
+      color: var(--navy-900);
+      font-size: 23px;
+      line-height: 1.25;
+      letter-spacing: -.02em;
+      scroll-margin-top: 24px;
+    }
+    .markdown-body h4 {
+      margin: 28px 0 12px;
+      color: var(--orange-700);
+      font-size: 17px;
+      scroll-margin-top: 24px;
+    }
+    .markdown-body p { margin: 12px 0; }
+    .markdown-body strong { color: var(--navy-900); }
+    .markdown-body ul, .markdown-body ol { padding-left: 1.35rem; }
+    .markdown-body li { margin: 6px 0; }
+    .markdown-body li::marker { color: var(--orange-500); font-weight: 800; }
+    .markdown-body hr {
+      height: 1px;
+      margin: 48px 0;
+      border: 0;
+      background: linear-gradient(90deg, transparent, var(--slate-300), transparent);
+    }
+    .markdown-body > p[align="center"] {
+      margin: 22px 0 28px;
+      padding: 12px;
+      border: 1px solid var(--slate-200);
+      border-radius: 18px;
+      background: linear-gradient(145deg, #fff, #f5f7fa);
+      box-shadow: var(--shadow-md);
+    }
+    .markdown-body > p[align="center"] a { display: inline-block; max-width: 100%; }
+    .markdown-body > p[align="center"] img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+      margin: auto;
+      border-radius: 12px;
+    }
+    .markdown-body > p[align="center"] em {
+      display: block;
+      margin-top: 10px;
+      color: var(--slate-500);
+      font-size: 13px;
+    }
+    .table-wrap {
+      width: 100%;
+      margin: 18px 0 28px;
+      overflow: auto;
+      border: 1px solid var(--slate-200);
+      border-radius: 15px;
+      background: var(--white);
+      box-shadow: var(--shadow-sm);
+    }
+    .markdown-body table {
+      width: 100%;
+      min-width: 720px;
+      border-collapse: separate;
+      border-spacing: 0;
+      font-size: 14px;
+    }
+    .markdown-body th {
+      position: sticky;
+      top: 0;
+      z-index: 2;
+      padding: 12px 14px;
+      color: var(--white);
+      background: var(--navy-900);
+      border-bottom: 1px solid var(--navy-800);
+      text-align: left;
+      white-space: nowrap;
+    }
+    .markdown-body td {
+      padding: 12px 14px;
+      border-bottom: 1px solid var(--slate-200);
+      vertical-align: top;
+    }
+    .markdown-body tbody tr:nth-child(even) td { background: var(--slate-50); }
+    .markdown-body tbody tr:hover td { background: var(--orange-50); }
+    .markdown-body tbody tr:last-child td { border-bottom: 0; }
+    .markdown-body td img { display: block; width: 36px; height: 36px; max-width: none; }
+    .markdown-body pre {
+      position: relative;
+      margin: 16px 0 24px;
+      padding: 18px 20px;
+      overflow: auto;
+      border: 1px solid #ffd3bd;
+      border-radius: 14px;
+      color: #fff7ed;
+      background: linear-gradient(145deg, #172033, #222f48);
+      box-shadow: var(--shadow-sm);
+      font: 13px/1.75 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    }
+    .markdown-body pre code { padding: 0; border: 0; color: inherit; background: none; font: inherit; }
+    .markdown-body blockquote {
+      margin: 18px 0;
+      padding: 13px 16px;
+      border-left: 4px solid var(--orange-500);
+      border-radius: 0 12px 12px 0;
+      color: var(--slate-700);
+      background: var(--orange-50);
+    }
+    .case-tools {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 10px;
+      margin: 12px 0 14px;
+      padding: 13px;
+      border: 1px solid var(--slate-200);
+      border-radius: 13px;
+      background: var(--slate-50);
+    }
+    .case-tools input {
+      flex: 1 1 280px;
+      height: 42px;
+      padding: 0 13px;
+      border: 1px solid var(--slate-300);
+      border-radius: 10px;
+      outline: none;
+    }
+    .case-tools input:focus { border-color: var(--orange-500); box-shadow: 0 0 0 4px rgba(244,91,10,.12); }
+    .case-count { color: var(--orange-700); font-weight: 800; white-space: nowrap; }
+    .testcase-table table { min-width: 1500px; }
+    .testcase-table th:first-child, .testcase-table td:first-child {
+      position: sticky;
+      left: 0;
+      z-index: 1;
+      min-width: 230px;
+      box-shadow: 1px 0 0 var(--slate-200);
+    }
+    .testcase-table th:first-child { z-index: 3; background: var(--navy-900); }
+    .testcase-table td:first-child { background: var(--white); font-weight: 750; }
+    .testcase-table tbody tr:nth-child(even) td:first-child { background: var(--slate-50); }
+    .testcase-table tbody tr:hover td:first-child { background: var(--orange-50); }
+    .source-note {
+      margin-top: 18px;
+      color: var(--slate-500);
+      text-align: center;
+      font-size: 12px;
+    }
+    @media (max-width: 780px) {
+      .doc-toolbar { align-items: flex-start; flex-direction: column; }
+      .markdown-body { padding: 20px 16px; border-radius: 16px; }
+      .markdown-body > h1 { margin: -20px -16px 32px; padding: 40px 20px 34px; }
+      .markdown-body h2 { margin-top: 48px; }
+      .markdown-body table { font-size: 13px; }
+    }
+    @media print {
+      .doc-toolbar, .case-tools { display: none !important; }
+      .markdown-body { padding: 0; border: 0; box-shadow: none; overflow: visible; }
+      .markdown-body > h1 { margin: 0 0 32px; padding: 30px; color: #111; background: #fff; border: 2px solid #111; }
+      .table-wrap { overflow: visible; box-shadow: none; }
+      .markdown-body table { min-width: 0 !important; font-size: 9px; }
+      .markdown-body th { position: static; color: #111; background: #eee; }
+      .testcase-table th:first-child, .testcase-table td:first-child { position: static; }
+    }
+</style>
+</head>
+<body>
+  <a class="skip-link" href="#document">Đi đến nội dung chính</a>
+  <aside class="sidebar" aria-label="Mục lục requirement">
+    <div class="brand">
+      <div class="brand-mark">ics</div>
+      <div><strong>ICS Requirement</strong><small>Requirement UI, lịch hẹn lớp, quyền người phụ trách và testcase</small></div>
+    </div>
+    <div class="nav-title">Nội dung Markdown</div>
+    <nav id="docNav" class="nav"></nav>
+    <div class="sidebar-footer">
+      HTML được render trực tiếp từ Markdown nguồn.<br>
+      <a href="./class_detail_appointments_requirements.md">Mở file Markdown</a>
+    </div>
+  </aside>
+  <main class="doc-shell">
+    <div class="doc-toolbar">
+      <div class="doc-toolbar-left">
+        <span class="sync-badge">Đồng bộ 100% từ Markdown</span>
+        <span class="hash">SHA-256: adc60069de74…</span>
+      </div>
+      <div class="doc-toolbar-right">
+        <a class="button ghost small" href="./class_detail_appointments_requirements.md">Xem Markdown</a>
+        <button class="button small" type="button" onclick="window.print()">In / Lưu PDF</button>
+      </div>
+    </div>
+    <article id="document" class="markdown-body" data-source-sha256="adc60069de7484d4c5dc0b6ae7960dd2c91a9b7d39519edec9b0585f52374ef2">
+<h1 id="chi-tiet-lop-hoc-menu-nhat-ky-tab-lich-hen">Chi tiết lớp học — Menu Nhật ký — Tab Lịch hẹn</h1>
+<blockquote>
+<p>Tab <strong>Chi tiết lớp học → Menu Nhật ký → Lịch Hẹn</strong> hiển thị cùng bản ghi lịch hẹn lớp từ <a href="./class_management_requirements.md#popup-them-lich-hen-cho-lop">Danh sách lớp</a> và <a href="../../appointment_requirement/appointment_requirements.md">menu Lịch Hẹn</a>. Đối tượng của tab Hẹn lớp là <strong>lớp</strong>, không phải học viên/học phí. Người trong <code>Người phụ trách</code> được sửa; <code>Theo dõi</code> chỉ xem. Quy tắc trạng thái, ưu tiên và xóa theo requirement Lịch Hẹn mới. Tab <a href="./class_detail_journal_requirements.md">Nhật Ký</a> và <a href="./class_detail_notes_requirements.md">Ghi Chú</a> có requirement riêng.</p>
+</blockquote>
+<h2 id="1-ui">1. UI</h2>
+<h3 id="tab-lich-hen-danh-sach-lich-hen-cua-lop">Tab Lịch Hẹn — Danh sách lịch hẹn của lớp</h3>
+<p align="center">
+  <a href="./images/42-class-detail-appointments.png"><img src="./images/42-class-detail-appointments.png" alt="Bảng lịch hẹn tham chiếu cho tab Lịch Hẹn trong Chi tiết lớp" width="1000" title="Nhấn để xem ảnh gốc"></a><br>
+  <em>Ảnh tham chiếu bảng Lịch Hẹn do người dùng cung cấp — nhấn để xem ảnh gốc</em>
+</p>
+
+<p><strong>Mô tả:</strong></p>
+<ul>
+<li>Chọn tab <code>Lịch Hẹn</code> trong menu Nhật ký để xem các lịch hẹn đã thêm cho chính lớp đang mở ở Danh sách lớp học.</li>
+<li>Danh sách phản ánh dữ liệu đã lưu của lịch hẹn: Nội dung, Thời gian, Ghi chú, Người phụ trách, Đối tượng, Độ ưu tiên và Trạng thái.</li>
+<li>Admin, Class Handler và Support có quyền trên lớp được xem tab theo quyền menu Nhật ký đã chốt. Sale không được vào tab, kể cả có quyền lịch hẹn tại Danh sách lớp hoặc được gán phụ trách/Theo dõi.</li>
+</ul>
+<p><strong>Giải thích field/thành phần:</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Thành phần</th>
+<th>Yêu cầu</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Tab Lịch Hẹn</td>
+<td>Hiển thị trạng thái đang chọn trong nhóm Nhật Ký / Ghi Chú / Lịch Hẹn / Tin Nhắn. Chuyển tab không tạo lịch hẹn mới.</td>
+</tr>
+<tr>
+<td>Thời gian</td>
+<td>Ngày thực hiện lịch hẹn, lấy từ field Thời gian đã lưu; không lấy ngày tạo/cập nhật. Ngày trùng ngày hiện tại hiển thị <code>Hôm nay</code>, ngày liền sau hiển thị <code>Ngày mai</code>; các ngày khác hiển thị <code>dd.MM.yyyy</code> theo ảnh. Giữ nguyên dữ liệu giờ đã lưu ở nguồn. Quy tắc màu và hiển thị giờ cần chốt riêng.</td>
+</tr>
+<tr>
+<td>Nội dung</td>
+<td>Hiển thị nội dung đã nhập; dài thì xuống dòng. <code>SOS</code> là cờ riêng hiển thị khi lịch hẹn được đánh dấu Rất quan trọng, không phải mức ưu tiên thứ năm hay trạng thái xử lý.</td>
+</tr>
+<tr>
+<td>Ghi chú</td>
+<td>Hiển thị Ghi chú đã lưu; giữ xuống dòng và bố cục nội dung. Nội dung dài cho mở rộng/<code>Thu gọn</code> ngay trong dòng như ảnh, không làm thay đổi dữ liệu.</td>
+</tr>
+<tr>
+<td>Người phụ trách</td>
+<td>Hiển thị đúng các user được chọn ở field Người phụ trách của lịch hẹn; nhiều người dùng nhóm avatar và <code>+N</code> cho số người còn lại như ảnh. Không thay bằng người tạo hoặc người phụ trách chính của lớp.</td>
+</tr>
+<tr>
+<td>Đối tượng</td>
+<td>Hiển thị <strong>lớp</strong> được gắn với lịch hẹn, dùng mã lớp/tên lớp đúng nguồn; không thay bằng học viên, học phí hoặc người phụ trách.</td>
+</tr>
+<tr>
+<td>Độ ưu tiên</td>
+<td>Bốn mức chính thức: <code>Ưu tiên thấp</code>, <code>Bình thường</code>, <code>Quan trọng</code>, <code>Ưu tiên cao</code>. Chỉ owner được đổi trực tiếp; người khác chỉ xem.</td>
+</tr>
+<tr>
+<td>Trạng thái</td>
+<td>Có <code>Mới</code>, <code>Chưa xử lý</code>, <code>Đang xử lý</code>, <code>Đã xử lý</code> với icon/màu theo UI mới. Không có <code>Đã xoá</code>; xóa dùng biểu tượng thùng rác ở cuối hàng và popup xác nhận tại menu Lịch Hẹn.</td>
+</tr>
+<tr>
+<td>Người theo dõi</td>
+<td>Giữ dữ liệu đã chọn ở nguồn; ảnh bảng chưa thể hiện cột Theo dõi riêng. Không gộp user Theo dõi vào Người phụ trách; vị trí hiển thị Theo dõi cần xác nhận.</td>
+</tr>
+<tr>
+<td>Trạng thái tải</td>
+<td>Phân biệt đang tải, không có lịch hẹn và tải lỗi. Lỗi cho thử lại, không hiển thị dữ liệu lớp cũ như của lớp mới.</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Điểm cần lưu ý:</strong></p>
+<ul>
+<li>Lịch hẹn tạo thành công ở Danh sách lớp phải xuất hiện khi tải lại tab của đúng lớp; hủy hoặc tạo thất bại không sinh dòng mới.</li>
+<li>Cùng một lịch hẹn có cùng định danh, nội dung, thời gian, phân công, độ ưu tiên và trạng thái giữa các màn hình. Không sao chép sang bản ghi khác hoặc ghi đè người tạo lúc xem tab.</li>
+<li>Việc phân công Người phụ trách/Theo dõi vẫn theo nguồn: mỗi field cho nhiều user thuộc Class Handler, Support, Sale. Có người được gán không tự cấp quyền vào menu ngoài phạm vi đã chốt.</li>
+<li>Ngày tương đối dùng cùng múi giờ nghiệp vụ của hệ thống; đổi ngày hiện tại hoặc tải lại sẽ tính lại Hôm nay/Ngày mai. Ngày không bị đổi theo ngày tạo/cập nhật.</li>
+<li>Bấm mở rộng/Thu gọn hoặc xem avatar/Đối tượng chỉ thay đổi hiển thị. Dropdown ưu tiên/trạng thái cho owner chỉnh trực tiếp; ảnh chưa có editor Nội dung/Thời gian/Phân công nên cách chỉnh các field này cần chốt riêng.</li>
+<li>Tab này không tự thêm trạng thái <code>Đã xoá</code>; người có quyền xóa thực hiện qua danh sách ở menu Lịch Hẹn theo requirement mới.</li>
+</ul>
+<h4 id="testcase-tab-lich-hen-danh-sach-lich-hen-cua-lop">Testcase — Tab Lịch Hẹn — Danh sách lịch hẹn của lớp</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 1: Hiển thị lịch hẹn đã thêm ở Danh sách lớp</td>
+<td>High</td>
+<td>Smoke</td>
+<td>Flow 1 / REQ01</td>
+<td>Admin / Class Handler / Support</td>
+<td>Lớp A có lịch hẹn tạo thành công từ Danh sách lớp</td>
+<td><strong>Given</strong> mở Chi tiết lớp A<br><strong>When</strong> chọn Lịch Hẹn<br><strong>Then</strong> tải lịch hẹn đã tạo cho A</td>
+<td>- Hiển thị đúng 7 cột theo ảnh<br>- Dữ liệu đúng lịch hẹn đã lưu</td>
+</tr>
+<tr>
+<td>Case 2: Không trộn lịch hẹn lớp khác</td>
+<td>High</td>
+<td></td>
+<td>REQ01 / REQ04</td>
+<td>Admin / Class Handler / Support</td>
+<td>Có lịch hẹn lớp A và B</td>
+<td><strong>Given</strong> đang xem A<br><strong>When</strong> tải danh sách/trang tiếp theo<br><strong>Then</strong> chỉ trả lịch hẹn thuộc A và phạm vi quyền</td>
+<td>- Không trộn B<br>- Không dùng tên/mã hiển thị làm khóa liên kết</td>
+</tr>
+<tr>
+<td>Case 3: Tạo thất bại hoặc hủy không thêm dòng</td>
+<td>High</td>
+<td></td>
+<td>REQ01</td>
+<td>Admin / Class Handler / Support</td>
+<td>Popup thêm lịch hẹn ở Danh sách lớp</td>
+<td><strong>Given</strong> hủy hoặc lưu lịch hẹn thất bại<br><strong>When</strong> mở/tải lại tab Lịch Hẹn<br><strong>Then</strong> không có lịch hẹn chưa được lưu</td>
+<td>- Không có dòng ảo/trùng<br>- Badge không tăng sai</td>
+</tr>
+<tr>
+<td>Case 4: Nhiều người phụ trách</td>
+<td>High</td>
+<td></td>
+<td>REQ02</td>
+<td>Admin / Class Handler / Support</td>
+<td>Lịch hẹn có nhiều user phụ trách và Theo dõi khác nhau</td>
+<td><strong>Given</strong> danh sách tải xong<br><strong>When</strong> xem Người phụ trách<br><strong>Then</strong> nhóm avatar đúng danh sách được gán</td>
+<td>- +N đúng số còn lại<br>- Không nhầm người tạo/owner lớp/Theo dõi</td>
+</tr>
+<tr>
+<td>Case 5: Ngày tương đối và ngày cụ thể</td>
+<td>Medium</td>
+<td></td>
+<td>REQ02</td>
+<td>Admin / Class Handler / Support</td>
+<td>Có lịch hẹn hôm nay, ngày mai và ngày khác</td>
+<td><strong>Given</strong> xem theo múi giờ dùng chung<br><strong>When</strong> hiển thị Thời gian<br><strong>Then</strong> dùng Hôm nay/Ngày mai hoặc dd.MM.yyyy phù hợp</td>
+<td>- Dựa vào thời gian thực hiện đã lưu<br>- Không lấy ngày tạo/sửa<br>- Không mất dữ liệu giờ nguồn</td>
+</tr>
+<tr>
+<td>Case 6: Ghi chú dài và Thu gọn</td>
+<td>Medium</td>
+<td></td>
+<td>REQ02</td>
+<td>Admin / Class Handler / Support</td>
+<td>Có ghi chú nhiều dòng và dài</td>
+<td><strong>Given</strong> dòng đang thu gọn<br><strong>When</strong> mở rộng rồi Thu gọn<br><strong>Then</strong> xem đúng nội dung đã lưu</td>
+<td>- Giữ xuống dòng<br>- Không sửa dữ liệu/ngày giờ<br>- Không có Toast CRUD</td>
+</tr>
+<tr>
+<td>Case 7: Nhãn SOS dùng cờ riêng</td>
+<td>Medium</td>
+<td></td>
+<td>REQ02</td>
+<td>Admin / Class Handler / Support</td>
+<td>Có lịch hẹn có/không có cờ SOS</td>
+<td><strong>Given</strong> tải danh sách<br><strong>When</strong> xem Nội dung<br><strong>Then</strong> chỉ dòng có cờ SOS mới hiện nhãn</td>
+<td>- Không tự suy ra SOS từ ngày hay bốn mức ưu tiên</td>
+</tr>
+<tr>
+<td>Case 8: Hiển thị trạng thái và độ ưu tiên đã lưu</td>
+<td>High</td>
+<td></td>
+<td>REQ02</td>
+<td>Admin / Class Handler / Support</td>
+<td>Lịch hẹn có giá trị hợp lệ theo bộ thống nhất</td>
+<td><strong>Given</strong> danh sách tải xong<br><strong>When</strong> xem các nhãn<br><strong>Then</strong> hiển thị đúng giá trị/màu/icon</td>
+<td>- Không đổi giá trị khi chỉ xem<br>- Đúng 4 mức ưu tiên đã chốt; dữ liệu cũ cần quy tắc chuyển đổi riêng</td>
+</tr>
+<tr>
+<td>Case 9: Loading, rỗng và lỗi tải</td>
+<td>High</td>
+<td></td>
+<td>EX02 / REQ01</td>
+<td>Admin / Class Handler / Support</td>
+<td>Chưa có lịch hẹn hoặc request tải lỗi</td>
+<td><strong>Given</strong> mở tab<br><strong>When</strong> tải chậm/rỗng/lỗi rồi thử lại<br><strong>Then</strong> hiển thị đúng trạng thái và tải lại khi được yêu cầu</td>
+<td>- Lỗi không bị coi là rỗng<br>- Không hiển thị dữ liệu giả<br>- Không có Toast CRUD khi chỉ đọc</td>
+</tr>
+<tr>
+<td>Case 10: Response lớp cũ không ghi đè</td>
+<td>High</td>
+<td></td>
+<td>EX03 / REQ04</td>
+<td>Admin / Class Handler / Support</td>
+<td>Request A chậm; chuyển sang B hoặc tab khác</td>
+<td><strong>Given</strong> có nhiều request đang chạy<br><strong>When</strong> response A về sau B<br><strong>Then</strong> chỉ cập nhật đúng lớp/tab hiện tại</td>
+<td>- Không ghi đè dữ liệu B bằng A<br>- Không trộn tổng số/phân trang</td>
+</tr>
+<tr>
+<td>Case 11: Kiểm tra quyền xem tab</td>
+<td>High</td>
+<td></td>
+<td>EX01 / Ràng buộc quyền</td>
+<td>Admin / Class Handler / Support và role khác</td>
+<td>Có tài khoản trong/ngoài phạm vi lớp</td>
+<td><strong>Given</strong> mở tab hoặc gọi request trực tiếp<br><strong>When</strong> kiểm tra quyền<br><strong>Then</strong> chỉ tài khoản được cấp quyền tab và lớp được xem</td>
+<td>- Không trả dữ liệu ngoài phạm vi<br>- Sale không được xem tab, kể cả biết URL/ID</td>
+</tr>
+<tr>
+<td>Case 12: Đối tượng là lớp</td>
+<td>High</td>
+<td></td>
+<td>REQ02 / REQ04</td>
+<td>Admin / Class Handler / Support</td>
+<td>Lịch hẹn gắn lớp A</td>
+<td><strong>Given</strong> xem Đối tượng của lịch hẹn lớp A<br><strong>When</strong> đối chiếu với lớp nguồn<br><strong>Then</strong> hiển thị đúng lớp A</td>
+<td>- Không thay bằng avatar học viên, học phí hoặc lớp B</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="phan-trang-danh-sach-lich-hen">Phân trang danh sách lịch hẹn</h3>
+<p><strong>Mô tả:</strong> Xem danh sách theo từng trang, footer và nút chuyển trang theo ảnh.</p>
+<p><strong>Giải thích field/thành phần:</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Thành phần</th>
+<th>Yêu cầu</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Số dòng mỗi trang</td>
+<td>10 lịch hẹn/trang theo footer ảnh; trang cuối có thể ít hơn.</td>
+</tr>
+<tr>
+<td>Tổng số</td>
+<td>Tổng lịch hẹn được phép xem của lớp hiện tại; ảnh mẫu ghi lớp học nhưng ngữ cảnh này dùng <code>lịch hẹn</code>. Lịch hẹn đã xóa không còn trong danh sách/tổng.</td>
+</tr>
+<tr>
+<td>Khoảng đang xem</td>
+<td><code>Hiển thị 1 – 10 trong tổng số N lịch hẹn</code>, cập nhật theo trang thực tế; danh sách rỗng không hiển thị khoảng 1 – 10 giả.</td>
+</tr>
+<tr>
+<td>Điều hướng</td>
+<td>Trước / số trang / dấu … / Sau theo UI; trang hiện tại nổi bật. Không cho chuyển ra ngoài phạm vi trang hợp lệ.</td>
+</tr>
+<tr>
+<td>Thứ tự</td>
+<td>Giữ một thứ tự ổn định khi chuyển trang; tiêu chí thứ tự mặc định cần xác nhận.</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Điểm cần lưu ý:</strong></p>
+<ul>
+<li>Tổng số/trang chỉ tính dữ liệu đúng lớp và quyền xem. Chuyển sang lớp khác bắt đầu từ trang đầu.</li>
+<li>Chuyển trang không tạo/sửa/xóa lịch hẹn, không phát sinh Toast CRUD. Response của trang cũ không ghi đè trang vừa chọn.</li>
+<li>Nếu số trang giảm sau dữ liệu thay đổi, tải trang hợp lệ gần nhất; không để số trang đang chọn vượt quá tổng trang.</li>
+</ul>
+<h4 id="testcase-phan-trang-danh-sach-lich-hen">Testcase — Phân trang danh sách lịch hẹn</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 13: Trang 10 dòng và trang cuối</td>
+<td>High</td>
+<td></td>
+<td>Flow 2 / REQ03</td>
+<td>Admin / Class Handler / Support</td>
+<td>Lớp có 23 lịch hẹn được phép xem</td>
+<td><strong>Given</strong> mở trang 1<br><strong>When</strong> chuyển trang 2 rồi trang 3<br><strong>Then</strong> số dòng lần lượt 10, 10, 3</td>
+<td>- Footer lần lượt 1–10, 11–20, 21–23 trên tổng 23 lịch hẹn<br>- Không dùng đơn vị lớp học</td>
+</tr>
+<tr>
+<td>Case 14: Trước/Sau và biên trang</td>
+<td>Medium</td>
+<td></td>
+<td>Flow 2 / REQ03</td>
+<td>Admin / Class Handler / Support</td>
+<td>Danh sách có nhiều trang</td>
+<td><strong>Given</strong> đang ở trang đầu/cuối<br><strong>When</strong> kiểm tra hoặc chọn Trước/Sau<br><strong>Then</strong> chỉ chuyển trang hợp lệ</td>
+<td>- Trang đang chọn đúng<br>- Không yêu cầu trang 0 hoặc vượt tổng</td>
+</tr>
+<tr>
+<td>Case 15: Tổng số và danh sách rỗng theo quyền</td>
+<td>High</td>
+<td></td>
+<td>REQ03 / REQ04</td>
+<td>Admin / Class Handler / Support</td>
+<td>Lớp A không có lịch hẹn; B có nhiều lịch hẹn</td>
+<td><strong>Given</strong> đang mở A<br><strong>When</strong> xem footer và bảng<br><strong>Then</strong> hiển thị rỗng và tổng 0 của A</td>
+<td>- Không tính lịch hẹn B<br>- Không có số trang/khoảng dòng giả</td>
+</tr>
+<tr>
+<td>Case 16: Response trang cũ và giảm số trang</td>
+<td>High</td>
+<td></td>
+<td>EX03 / REQ03</td>
+<td>Admin / Class Handler / Support</td>
+<td>Chuyển trang khi đang tải hoặc số dòng nguồn giảm</td>
+<td><strong>Given</strong> request cũ chưa hoàn tất<br><strong>When</strong> chọn trang khác hoặc tải lại<br><strong>Then</strong> chỉ hiển thị trang hiện tại còn hợp lệ</td>
+<td>- Không ghi đè bởi request cũ<br>- Không để trang vượt tổng<br>- Không trùng dòng do thứ tự không ổn định</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="chinh-sua-lich-hen-chi-owner">Chỉnh sửa lịch hẹn — Chỉ owner</h3>
+<p><strong>Mô tả:</strong> Owner được chỉnh lịch hẹn; Người theo dõi chỉ được xem trong phạm vi quyền, không có quyền sửa chỉ vì được gán Theo dõi.</p>
+<p><strong>Giải thích field/thành phần:</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Thành phần</th>
+<th>Yêu cầu</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Dropdown Độ ưu tiên</td>
+<td>Owner chọn một trong 4 mức theo ảnh; lưu khi chọn giá trị mới. Người khác hiển thị giá trị chỉ đọc.</td>
+</tr>
+<tr>
+<td>Dropdown Trạng thái</td>
+<td>Owner chọn <code>Mới</code>, <code>Chưa xử lý</code>, <code>Đang xử lý</code>, <code>Đã xử lý</code>; không có lựa chọn <code>Đã xoá</code>.</td>
+</tr>
+<tr>
+<td>Quyền chỉnh</td>
+<td>Kiểm tra owner của chính lịch hẹn và quyền trên lớp; được gán Theo dõi hoặc có cùng role không tự được sửa. <strong>Owner là các user được chọn ở Người phụ trách</strong>, mỗi người có quyền sửa nếu đồng thời có role/phạm vi truy cập tab. Người tạo không tự có quyền sửa khi không ở Người phụ trách.</td>
+</tr>
+<tr>
+<td>Đang lưu</td>
+<td>Chống thao tác/gửi lặp trên cùng field; chỉ cập nhật dữ liệu đã lưu sau phản hồi thành công.</td>
+</tr>
+<tr>
+<td>Kết quả</td>
+<td>Thành công hiển thị một Toast <code>Thành Công</code> với <code>Cập nhật lịch hẹn thành công.</code>; thất bại một Toast <code>Có Lỗi Xảy Ra</code> với <code>Không thể cập nhật lịch hẹn. Vui lòng thử lại.</code>.</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Điểm cần lưu ý:</strong></p>
+<ul>
+<li>Request sửa phải kiểm tra lại owner, lớp và bản ghi tại backend. Giao diện chỉ đọc không thay thế việc kiểm tra quyền.</li>
+<li>Cập nhật dùng cùng bản ghi với lịch hẹn ở Danh sách lớp; không đổi người tạo, liên kết lớp, Người phụ trách/Theo dõi hoặc field khác khi chỉ đổi ưu tiên/trạng thái.</li>
+<li>Chọn lại giá trị hiện có không tạo thao tác cập nhật hoặc Toast mới. Lưu thất bại giữ/trả lại giá trị đã lưu, không báo thành công sớm.</li>
+<li>Mọi user trong Người phụ trách đều là owner, không chỉ người đầu tiên. Người theo dõi chỉ được sửa nếu đồng thời có trong Người phụ trách và có quyền vào tab; quyền sửa đến từ Người phụ trách. Người tạo/Admin không được vượt quy tắc owner.</li>
+</ul>
+<h4 id="testcase-chinh-sua-lich-hen">Testcase — Chỉnh sửa lịch hẹn</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 17: Owner cập nhật độ ưu tiên</td>
+<td>High</td>
+<td>Smoke</td>
+<td>Flow 3 / REQ05</td>
+<td>Admin / Class Handler / Support (thuộc Người phụ trách)</td>
+<td>User có trong Người phụ trách</td>
+<td><strong>Given</strong> owner mở lịch hẹn của mình<br><strong>When</strong> chọn mức ưu tiên mới<br><strong>Then</strong> cập nhật cùng bản ghi và hiển thị sau lưu thành công</td>
+<td>- Đủ 4 lựa chọn mới<br>- Tải lại giữ giá trị mới<br>- Một Toast Cập nhật lịch hẹn thành công.</td>
+</tr>
+<tr>
+<td>Case 18: Owner cập nhật trạng thái</td>
+<td>High</td>
+<td></td>
+<td>Flow 3 / REQ05</td>
+<td>Admin / Class Handler / Support (thuộc Người phụ trách)</td>
+<td>Lịch hẹn và chuyển trạng thái được phép theo quy tắc đã chốt</td>
+<td><strong>Given</strong> owner chọn trạng thái mới<br><strong>When</strong> backend lưu thành công<br><strong>Then</strong> hiển thị nhãn/icon/màu tương ứng</td>
+<td>- Đúng bản ghi/lớp<br>- Không đổi phân công/người tạo<br>- Một Toast thành công</td>
+</tr>
+<tr>
+<td>Case 19: Người theo dõi không được chỉnh</td>
+<td>High</td>
+<td></td>
+<td>EX05 / REQ05</td>
+<td>Admin / Class Handler / Support (chỉ Theo dõi)</td>
+<td>User được xem và được gán Theo dõi</td>
+<td><strong>Given</strong> user mở lịch hẹn<br><strong>When</strong> kiểm tra UI hoặc gửi request cập nhật trực tiếp<br><strong>Then</strong> không được thay đổi lịch hẹn</td>
+<td>- Dropdown chỉ đọc<br>- Backend từ chối request<br>- Không đổi ưu tiên/trạng thái</td>
+</tr>
+<tr>
+<td>Case 20: Người khác không được chỉnh</td>
+<td>High</td>
+<td></td>
+<td>EX05 / REQ05</td>
+<td>Admin / Class Handler / Support không phải owner</td>
+<td>User được xem nhưng không phải owner</td>
+<td><strong>Given</strong> user cùng role/lớp xem lịch hẹn<br><strong>When</strong> thử cập nhật bằng UI/request<br><strong>Then</strong> từ chối</td>
+<td>- Role Admin không tự thay thế owner<br>- Các user trong Người phụ trách là owner; người tạo không thuộc danh sách vẫn bị chặn</td>
+</tr>
+<tr>
+<td>Case 21: Cập nhật lỗi và chống lặp</td>
+<td>High</td>
+<td></td>
+<td>EX06 / REQ05 / REQ06</td>
+<td>Admin / Class Handler / Support (thuộc Người phụ trách)</td>
+<td>Backend lỗi hoặc user chọn lặp lúc lưu</td>
+<td><strong>Given</strong> gửi một cập nhật hợp lệ<br><strong>When</strong> xử lý lỗi hoặc callback lặp<br><strong>Then</strong> không lưu một phần/nhân bản thao tác</td>
+<td>- Giữ/trả giá trị đã lưu để thử lại<br>- Đúng một Toast thất bại<br>- Không báo thành công sớm</td>
+</tr>
+<tr>
+<td>Case 22: Chọn lại giá trị và chuyển lớp</td>
+<td>Medium</td>
+<td></td>
+<td>EX03 / REQ04 / REQ05</td>
+<td>Admin / Class Handler / Support (thuộc Người phụ trách)</td>
+<td>Đang xem lịch hẹn A hoặc cập nhật A chưa hoàn tất</td>
+<td><strong>Given</strong> chọn lại giá trị hiện tại hoặc chuyển sang lớp B<br><strong>When</strong> control/response được xử lý<br><strong>Then</strong> không gửi cập nhật thừa và không ghi dữ liệu A vào B</td>
+<td>- Chọn giá trị cũ không tạo Toast<br>- Không đổi liên kết lịch hẹn/lớp</td>
+</tr>
+<tr>
+<td>Case 23: Mỗi người phụ trách đều là owner</td>
+<td>High</td>
+<td></td>
+<td>REQ05</td>
+<td>Admin / Class Handler / Support</td>
+<td>Lịch hẹn có phụ trách A và B; người tạo C không ở Người phụ trách</td>
+<td><strong>Given</strong> A/B/C cùng có quyền xem tab<br><strong>When</strong> kiểm tra và thử cập nhật<br><strong>Then</strong> A và B được sửa, C không được sửa</td>
+<td>- Không chỉ cấp cho người đầu tiên<br>- Người vừa phụ trách vừa Theo dõi được sửa do vai trò phụ trách<br>- Sale không thuộc role được gán phụ trách cho lịch hẹn mới</td>
+</tr>
+<tr>
+<td>Case 24: Không có trạng thái Đã xoá</td>
+<td>High</td>
+<td></td>
+<td>EX07 / REQ05</td>
+<td>Admin / Class Handler / Support (thuộc Người phụ trách)</td>
+<td>Có lịch hẹn đang hoạt động</td>
+<td><strong>Given</strong> owner mở dropdown Trạng thái<br><strong>When</strong> xem lựa chọn hoặc gửi request đặt <code>Đã xoá</code><br><strong>Then</strong> hệ thống từ chối giá trị này</td>
+<td>- Chỉ chọn Mới/Chưa xử lý/Đang xử lý/Đã xử lý<br>- Xóa là thao tác riêng có xác nhận ở menu Lịch Hẹn</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="toast-phan-hoi-crud">Toast phản hồi CRUD</h3>
+<p align="center">
+  <a href="../../images/01-toast-crud.png"><img src="../../images/01-toast-crud.png" alt="Toast phản hồi cập nhật lịch hẹn" width="520" title="Nhấn để xem ảnh gốc"></a><br>
+  <em>Toast theo UI dùng chung — nhấn để xem ảnh gốc</em>
+</p>
+
+<p><strong>Mô tả:</strong> Phản hồi sau thay đổi lịch hẹn, dùng component Toast chung.</p>
+<p><strong>Giải thích field/thành phần:</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Loại</th>
+<th>Tiêu đề</th>
+<th>Nội dung/hành vi</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Thành công</td>
+<td><code>Thành Công</code></td>
+<td><code>Cập nhật lịch hẹn thành công.</code> sau backend lưu.</td>
+</tr>
+<tr>
+<td>Lỗi</td>
+<td><code>Có Lỗi Xảy Ra</code></td>
+<td><code>Không thể cập nhật lịch hẹn. Vui lòng thử lại.</code> khi lưu lỗi.</td>
+</tr>
+<tr>
+<td>Cảnh báo</td>
+<td><code>Cảnh Báo</code></td>
+<td><code>Bạn không có quyền chỉnh sửa lịch hẹn này.</code> khi quyền owner bị từ chối lúc cập nhật.</td>
+</tr>
+<tr>
+<td>Thông tin</td>
+<td><code>Thông Báo</code></td>
+<td>Chỉ dùng nếu có trạng thái đồng bộ bất đồng bộ thực tế theo component chung; không tạo thông báo khi chỉ xem.</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Điểm cần lưu ý:</strong></p>
+<ul>
+<li>Một thao tác logic có đúng một Toast kết quả, kể cả callback/gửi lặp; màu/icon/nút ×, vị trí và tự đóng theo component dùng chung.</li>
+<li>Toast không thay kiểm tra quyền/field. Đóng Toast không hoàn tác bản ghi; không lộ stack trace/thông tin kỹ thuật.</li>
+<li>Chỉ xem/chuyển trang/chọn lại giá trị cũ không tạo Toast CRUD. Tab không cho xóa hoặc khôi phục nên không có Toast xóa/khôi phục.</li>
+</ul>
+<h4 id="testcase-toast-phan-hoi-crud">Testcase — Toast phản hồi CRUD</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Toast Case 1: Thành công sau lưu</td>
+<td>High</td>
+<td></td>
+<td>REQ06</td>
+<td>Admin / Class Handler / Support (thuộc Người phụ trách)</td>
+<td>Dữ liệu hợp lệ</td>
+<td><strong>Given</strong> owner cập nhật<br><strong>When</strong> backend lưu thành công<br><strong>Then</strong> hiển thị Thành Công</td>
+<td>- Đúng nội dung<br>- Không báo thành công trước phản hồi</td>
+</tr>
+<tr>
+<td>Toast Case 2: Lỗi lưu</td>
+<td>High</td>
+<td></td>
+<td>EX06 / REQ06</td>
+<td>Admin / Class Handler / Support (thuộc Người phụ trách)</td>
+<td>Network/backend lỗi</td>
+<td><strong>Given</strong> gửi cập nhật<br><strong>When</strong> không hoàn tất<br><strong>Then</strong> hiển thị Có Lỗi Xảy Ra</td>
+<td>- Đúng nội dung thử lại<br>- Không đổi dữ liệu đã lưu</td>
+</tr>
+<tr>
+<td>Toast Case 3: Mất quyền owner</td>
+<td>High</td>
+<td></td>
+<td>EX05 / REQ06</td>
+<td>Admin / Class Handler / Support (mất quyền sửa)</td>
+<td>User có dữ liệu cũ trên UI</td>
+<td><strong>Given</strong> gửi request cập nhật<br><strong>When</strong> backend từ chối quyền<br><strong>Then</strong> hiển thị Cảnh Báo</td>
+<td>- Nêu không có quyền<br>- Không cập nhật bản ghi</td>
+</tr>
+<tr>
+<td>Toast Case 4: Đóng và chống trùng</td>
+<td>Medium</td>
+<td></td>
+<td>REQ06</td>
+<td>Admin / Class Handler / Support (thuộc Người phụ trách)</td>
+<td>Một thao tác có nhiều callback</td>
+<td><strong>Given</strong> kết quả đã hiển thị<br><strong>When</strong> callback lặp hoặc bấm ×<br><strong>Then</strong> chỉ một Toast và cho đóng thủ công</td>
+<td>- Đóng không hoàn tác dữ liệu<br>- Chỉ xem không có Toast CRUD</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="2-yeu-cau">2. Yêu cầu</h2>
+<h3 id="21-flow-chinh">2.1. Flow chính</h3>
+<p><strong>Flow 1 / REQ01 / REQ02 / REQ04: Xem lịch hẹn đã thêm cho lớp</strong></p>
+<pre><code class="language-text">Người có quyền mở Chi tiết lớp → Nhật ký → Lịch Hẹn
+      → Kiểm tra quyền tab và phạm vi lớp
+      → Tải cùng các bản ghi lịch hẹn đã tạo cho lớp ở Danh sách lớp học
+      → Hiển thị đúng Nội dung, Thời gian, Ghi chú, phân công, Đối tượng, ưu tiên và trạng thái
+      → Mở rộng/Thu gọn chỉ thay đổi hiển thị
+      → Tải lỗi cho thử lại; không tạo bản ghi hoặc Toast CRUD khi xem
+</code></pre>
+<p><strong>Flow 2 / REQ03 / REQ04: Chuyển trang</strong></p>
+<pre><code class="language-text">Danh sách lịch hẹn của lớp tải xong
+      → Hiển thị 10 dòng/trang, tổng số theo đúng lớp/quyền
+      → Người dùng chọn Trước/Sau/số trang hợp lệ
+      → Tải và hiển thị trang đã chọn theo thứ tự ổn định
+      → Chỉ nhận response đúng lớp/tab/trang hiện tại
+</code></pre>
+<p><strong>Flow 3 / REQ05 / REQ06: Owner chỉnh lịch hẹn</strong></p>
+<pre><code class="language-text">Owner có quyền trên lớp mở lịch hẹn của mình
+      → Chọn độ ưu tiên hoặc trạng thái mới bằng dropdown
+      → Kiểm tra role/phạm vi và user thuộc Người phụ trách của lịch hẹn
+      → Chỉ cho 4 mức ưu tiên và Mới/Chưa xử lý/Đang xử lý/Đã xử lý; không có trạng thái Đã xoá
+      → Kiểm tra lớp/bản ghi; chống gửi lặp
+      → Thành công: lưu cùng bản ghi, cập nhật hiển thị và Toast Cập nhật lịch hẹn thành công.
+      → Thất bại: giữ/trả giá trị đã lưu, một Toast lỗi; không đổi dữ liệu khác
+      → Người theo dõi không phải owner chỉ xem, request sửa bị từ chối
+</code></pre>
+<h3 id="22-ngoai-le">2.2. Ngoại lệ</h3>
+<ul>
+<li><strong>EX01:</strong> Không có quyền tab hoặc lớp → từ chối xem kể cả URL/request trực tiếp, không trả dữ liệu hoặc tổng số ngoài quyền.</li>
+<li><strong>EX02:</strong> Tải danh sách/trang lỗi → hiển thị lỗi và Thử lại, không coi dữ liệu là rỗng hoặc tạo dòng thay thế.</li>
+<li><strong>EX03:</strong> Response thuộc lớp/tab/trang cũ → không cập nhật vào màn hiện tại.</li>
+<li><strong>EX05:</strong> Không phải owner hoặc mất quyền sửa lúc lưu → từ chối request, dữ liệu không đổi, Toast Cảnh Báo; làm mới quyền control.</li>
+<li><strong>EX06:</strong> Cập nhật thất bại/lặp → không lưu một phần; giữ giá trị đã lưu và một Toast lỗi, cho thử lại.</li>
+<li><strong>EX07:</strong> Request đặt trạng thái <code>Đã xoá</code> → từ chối; xóa lịch hẹn thực hiện bằng thao tác riêng có xác nhận ở menu Lịch Hẹn.</li>
+<li><strong>EX04:</strong> Dữ liệu enum ưu tiên/trạng thái chưa thống nhất giữa nguồn và tab → không tự ánh xạ hoặc cập nhật bản ghi sang giá trị khác; thống nhất bộ dữ liệu trước triển khai.</li>
+</ul>
+<h3 id="23-yeu-cau-khac">2.3. Yêu cầu khác</h3>
+<ul>
+<li><strong>REQ01 – Cùng dữ liệu lịch hẹn lớp:</strong> Tab hiển thị các lịch hẹn đã lưu từ popup tại Danh sách lớp, liên kết đúng lớp và định danh bản ghi. Tạo thành công được nhìn thấy khi tải lại; hủy/thất bại không thêm dòng. Không phát sinh lịch hẹn mới khi xem hoặc chuyển tab.</li>
+<li><strong>REQ02 – Hiển thị theo UI:</strong> Đủ 7 cột; Nội dung/Ghi chú giữ text và xuống dòng; Người phụ trách đúng danh sách đã gán; ngày lấy thời gian hẹn, hiển thị Hôm nay/Ngày mai hoặc dd.MM.yyyy và chuyển đỏ khi tới hạn. Ưu tiên có bốn mức mới, trạng thái có Mới/Chưa xử lý/Đang xử lý/Đã xử lý. Đối tượng là lớp liên kết; SOS hiển thị khi lịch hẹn được đánh dấu Rất quan trọng.</li>
+<li><strong>REQ03 – Phân trang:</strong> 10 lịch hẹn/trang, footer dùng đơn vị lịch hẹn, tổng số và trang trong phạm vi dữ liệu được phép xem. Giữ thứ tự ổn định, không vượt biên, response cũ không ghi đè.</li>
+<li><strong>REQ04 – Quyền và liên kết:</strong> Kiểm tra quyền tab, lớp và bản ghi trên UI/backend; giữ người tạo thực tế, Người phụ trách và Người theo dõi như nguồn. Thay đổi màn hiển thị không tự thay đổi quyền, lớp liên kết hoặc owner.</li>
+<li><strong>REQ05 – Chỉ owner chỉnh:</strong> Owner là các user ở Người phụ trách; Người theo dõi chỉ xem, người tạo không mặc nhiên được sửa nếu tự gỡ khỏi Người phụ trách. Dropdown Ưu tiên/Trạng thái cập nhật cùng bản ghi và kiểm tra quyền ở UI/backend; không có trạng thái <code>Đã xoá</code>. Xóa bằng biểu tượng thùng rác cố định ở cuối hàng, không cần hover, và xác nhận ở menu Lịch Hẹn.</li>
+<li><strong>REQ06 – Notification:</strong> Cập nhật có đúng một Toast kết quả theo khu vực Toast; chỉ thành công sau lưu. Chỉ đọc/chọn lại giá trị không có Toast CRUD; lỗi giữ dữ liệu đã lưu để thử lại.</li>
+</ul>
+<h3 id="24-rang-buoc">2.4. Ràng buộc</h3>
+<h4 id="quyen">Quyền</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Role</th>
+<th style="text-align: center;">Xem tab trong phạm vi lớp</th>
+<th style="text-align: center;">Mở rộng/Thu gọn và phân trang</th>
+<th style="text-align: center;">Chỉnh khi thuộc Người phụ trách</th>
+<th style="text-align: center;">Chỉnh nếu chỉ Theo dõi</th>
+<th style="text-align: center;">Xóa/Khôi phục tại tab</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Admin</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+</tr>
+<tr>
+<td>Class Handler</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+</tr>
+<tr>
+<td>Support</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+</tr>
+<tr>
+<td>Sale và các role khác</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+</tr>
+</tbody>
+</table></div>
+<ul>
+<li>Sale vẫn theo quyền riêng tại Danh sách lớp, không được vào tab Lịch Hẹn trong menu Nhật ký; được gán phụ trách/Theo dõi không vượt quyền tab.</li>
+<li>Role có quyền xem chỉ được chỉnh khi đồng thời là owner lịch hẹn. Người theo dõi không phải owner chỉ xem; Admin không tự có quyền sửa lịch hẹn người khác. Tab không cấp quyền xóa/khôi phục.</li>
+</ul>
+<h4 id="pham-vi-du-lieu">Phạm vi dữ liệu</h4>
+<ul>
+<li>Chỉ trả lịch hẹn thuộc lớp hiện tại trong phạm vi người dùng được phân quyền. Không lấy toàn bộ lịch hẹn học viên để thay danh sách lịch hẹn lớp.</li>
+<li>Liên kết bằng định danh nội bộ; không dùng tên học viên/mã lớp hiển thị làm khóa dữ liệu hoặc phân quyền.</li>
+<li>Người theo dõi vẫn được giữ theo source dù chưa có cột riêng trong ảnh. Không gộp với Người phụ trách hoặc làm mất dữ liệu khi tải lại.</li>
+<li>Badge lịch hẹn ở Danh sách lớp dùng cùng dữ liệu nguồn; tiêu chí tính badge còn chờ xác nhận trong requirement nguồn, không tự quyết định lại tại tab.</li>
+</ul>
+<h2 id="3-can-xac-nhan">3. Cần xác nhận</h2>
+<ul>
+<li>Đối tượng của lịch hẹn lớp là lớp; cách hiển thị mã/tên lớp chi tiết theo nguồn lớp.</li>
+<li>Bộ ưu tiên bốn mức và bốn trạng thái mới áp dụng từ <a href="../../appointment_requirement/appointment_requirements.md">Requirement Lịch Hẹn</a>; giá trị mặc định và cách chuyển dữ liệu lịch hẹn cũ còn cần chốt.</li>
+<li>Thứ tự mặc định của danh sách; giờ lịch hẹn có hiển thị trong cột Thời gian hay không. SOS hiển thị theo dấu Rất quan trọng của lịch hẹn.</li>
+<li>Số avatar phụ trách hiển thị trước +N; cách xem đầy đủ danh sách Người phụ trách và Người theo dõi. Ảnh chưa có cột Theo dõi riêng.</li>
+<li>Tiêu chí badge lịch hẹn tại Danh sách lớp đang chờ xác nhận; xóa thành công ở menu Lịch Hẹn phải cập nhật cùng bản ghi và tổng số.</li>
+</ul>
+</article>
+    <p class="source-note">Nguồn: class_detail_appointments_requirements.md · SHA-256 2aa69f30dd5153751a59a2f6fe85ad00a72c793ccb2fbc71f2859d97739039e8</p>
+  </main>
+  <script>
+    const article = document.getElementById('document');
+    const nav = document.getElementById('docNav');
+    const headings = [...article.querySelectorAll('h2')];
+    headings.forEach((heading, index) => {
+      const link = document.createElement('a');
+      link.href = `#${heading.id}`;
+      const number = document.createElement('span');
+      number.className = 'nav-num';
+      number.textContent = String(index + 1).padStart(2, '0');
+      link.append(number, document.createTextNode(heading.textContent));
+      nav.append(link);
+    });
+
+    const navLinks = [...nav.querySelectorAll('a')];
+    const observer = new IntersectionObserver(entries => {
+      const current = entries.filter(item => item.isIntersecting).sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
+      if (!current) return;
+      navLinks.forEach(link => link.classList.toggle('active', link.hash === `#${current.target.id}`));
+    }, {rootMargin: '-18% 0px -68% 0px', threshold: [0, .2, .5]});
+    headings.forEach(heading => observer.observe(heading));
+    if (navLinks[0]) navLinks[0].classList.add('active');
+
+    const testcaseHeadings = [...article.querySelectorAll('h4, h5')]
+      .filter(heading => heading.textContent.trim().startsWith('Testcase'));
+    const testcaseGroups = testcaseHeadings
+      .map(heading => ({heading, tableWrap: heading.nextElementSibling}))
+      .filter(group => group.tableWrap?.classList.contains('table-wrap'));
+    if (testcaseGroups.length) {
+        const tableWraps = testcaseGroups.map(group => group.tableWrap);
+        tableWraps.forEach(tableWrap => tableWrap.classList.add('testcase-table'));
+        const rows = tableWraps.flatMap(tableWrap => [...tableWrap.querySelectorAll('tbody tr')]);
+        const tools = document.createElement('div');
+        tools.className = 'case-tools';
+        const input = document.createElement('input');
+        input.type = 'search';
+        input.placeholder = 'Tìm testcase, Flow, REQ, EX hoặc nội dung…';
+        input.setAttribute('aria-label', 'Tìm testcase');
+        const count = document.createElement('span');
+        count.className = 'case-count';
+        tools.append(input, count);
+        testcaseGroups[0].heading.before(tools);
+        const filterRows = () => {
+          const query = input.value.trim().toLocaleLowerCase('vi');
+          let visible = 0;
+          rows.forEach(row => {
+            const match = !query || row.textContent.toLocaleLowerCase('vi').includes(query);
+            row.hidden = !match;
+            if (match) visible += 1;
+          });
+          testcaseGroups.forEach(({heading, tableWrap}) => {
+            const hasVisibleRow = [...tableWrap.querySelectorAll('tbody tr')]
+              .some(row => !row.hidden);
+            heading.hidden = !hasVisibleRow;
+            tableWrap.hidden = !hasVisibleRow;
+          });
+          count.textContent = `${visible}/${rows.length} testcase`;
+        };
+        input.addEventListener('input', filterRows);
+        filterRows();
+    }
+  </script>
+</body>
+</html>

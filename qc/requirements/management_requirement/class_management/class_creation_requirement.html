@@ -1,0 +1,1639 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Requirement Tạo lớp học">
+  <link rel="icon" href="data:,">
+  <title>Tạo lớp học — Requirement</title>
+  <style>
+    :root {
+      --orange-700: #c83f00;
+      --orange-600: #e84c00;
+      --orange-500: #f45b0a;
+      --orange-400: #ff7a32;
+      --orange-100: #fff0e8;
+      --orange-50: #fff8f4;
+      --navy-950: #101828;
+      --navy-900: #172033;
+      --navy-800: #243047;
+      --slate-700: #344054;
+      --slate-600: #475467;
+      --slate-500: #667085;
+      --slate-400: #98a2b3;
+      --slate-300: #d0d5dd;
+      --slate-200: #e4e7ec;
+      --slate-100: #f2f4f7;
+      --slate-50: #f8fafc;
+      --white: #ffffff;
+      --green: #159447;
+      --blue: #2154c5;
+      --yellow: #b77900;
+      --red: #c92a2a;
+      --purple: #6941c6;
+      --shadow-sm: 0 1px 2px rgba(16, 24, 40, .06);
+      --shadow-md: 0 12px 32px rgba(16, 24, 40, .10);
+      --shadow-lg: 0 24px 64px rgba(16, 24, 40, .16);
+      --radius-sm: 10px;
+      --radius: 16px;
+      --radius-lg: 24px;
+      --sidebar: 286px;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      color: var(--navy-950);
+      background:
+        radial-gradient(circle at 88% 5%, rgba(244, 91, 10, .10), transparent 24rem),
+        var(--slate-50);
+      font: 15px/1.65 Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      text-rendering: optimizeLegibility;
+    }
+    a { color: inherit; }
+    img { max-width: 100%; }
+    button, input, select { font: inherit; }
+    code {
+      padding: .12rem .38rem;
+      border: 1px solid #fed7c3;
+      border-radius: 6px;
+      color: var(--orange-700);
+      background: var(--orange-50);
+      font: 600 .9em ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    }
+
+    .skip-link {
+      position: fixed;
+      z-index: 999;
+      top: 12px;
+      left: 12px;
+      padding: 10px 14px;
+      border-radius: 9px;
+      color: var(--white);
+      background: var(--navy-950);
+      transform: translateY(-150%);
+    }
+    .skip-link:focus { transform: none; }
+
+    .sidebar {
+      position: fixed;
+      z-index: 30;
+      inset: 0 auto 0 0;
+      width: var(--sidebar);
+      padding: 22px 18px;
+      overflow-y: auto;
+      color: #f8fafc;
+      background:
+        linear-gradient(155deg, rgba(255, 122, 50, .24), transparent 26%),
+        linear-gradient(180deg, #192338 0%, #111827 100%);
+      border-right: 1px solid rgba(255, 255, 255, .08);
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 4px 8px 22px;
+      border-bottom: 1px solid rgba(255, 255, 255, .10);
+    }
+    .brand-mark {
+      display: grid;
+      width: 44px;
+      height: 44px;
+      place-items: center;
+      border-radius: 14px;
+      color: var(--white);
+      background: linear-gradient(135deg, var(--orange-400), var(--orange-600));
+      box-shadow: 0 10px 26px rgba(244, 91, 10, .35);
+      font-weight: 900;
+      letter-spacing: -.06em;
+    }
+    .brand strong { display: block; font-size: 16px; }
+    .brand small { color: #aeb8c9; }
+    .nav-title {
+      margin: 24px 10px 8px;
+      color: #8f9aae;
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+    .nav { display: grid; gap: 4px; }
+    .nav a {
+      display: flex;
+      align-items: center;
+      gap: 11px;
+      padding: 10px 12px;
+      border-radius: 10px;
+      color: #cbd5e1;
+      text-decoration: none;
+      transition: .18s ease;
+    }
+    .nav a:hover, .nav a.active {
+      color: var(--white);
+      background: rgba(255, 255, 255, .09);
+    }
+    .nav a.active { box-shadow: inset 3px 0 var(--orange-400); }
+    .nav-num {
+      display: grid;
+      width: 25px;
+      height: 25px;
+      flex: 0 0 auto;
+      place-items: center;
+      border: 1px solid rgba(255, 255, 255, .15);
+      border-radius: 8px;
+      font-size: 11px;
+      font-weight: 800;
+    }
+    .sidebar-footer {
+      margin-top: 26px;
+      padding: 14px;
+      border: 1px solid rgba(255, 255, 255, .10);
+      border-radius: 14px;
+      color: #aeb8c9;
+      background: rgba(255, 255, 255, .04);
+      font-size: 12px;
+    }
+    .sidebar-footer a { color: #ffd8c5; }
+
+    main {
+      width: min(1500px, calc(100% - var(--sidebar)));
+      margin-left: var(--sidebar);
+      padding: 34px clamp(24px, 4vw, 64px) 80px;
+    }
+    section { scroll-margin-top: 24px; }
+    .hero {
+      position: relative;
+      padding: clamp(30px, 5vw, 56px);
+      overflow: hidden;
+      border: 1px solid rgba(255, 255, 255, .08);
+      border-radius: var(--radius-lg);
+      color: var(--white);
+      background:
+        linear-gradient(105deg, rgba(16, 24, 40, .97) 0%, rgba(23, 32, 51, .94) 62%, rgba(109, 45, 9, .90) 100%);
+      box-shadow: var(--shadow-lg);
+    }
+    .hero::after {
+      content: "";
+      position: absolute;
+      width: 360px;
+      height: 360px;
+      top: -190px;
+      right: -80px;
+      border: 70px solid rgba(255, 122, 50, .15);
+      border-radius: 50%;
+    }
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 10px;
+      border: 1px solid rgba(255, 255, 255, .15);
+      border-radius: 999px;
+      color: #ffd8c5;
+      background: rgba(255, 255, 255, .06);
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+    .hero h1 {
+      max-width: 900px;
+      margin: 18px 0 12px;
+      font-size: clamp(34px, 5vw, 64px);
+      line-height: 1.03;
+      letter-spacing: -.045em;
+    }
+    .hero p { max-width: 780px; margin: 0; color: #cbd5e1; font-size: 17px; }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 25px; }
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      min-height: 42px;
+      padding: 9px 14px;
+      border: 1px solid transparent;
+      border-radius: 10px;
+      color: var(--white);
+      background: var(--orange-500);
+      text-decoration: none;
+      cursor: pointer;
+      transition: .18s ease;
+    }
+    .button:hover { transform: translateY(-1px); background: var(--orange-600); }
+    .button.secondary { border-color: rgba(255, 255, 255, .15); background: rgba(255, 255, 255, .07); }
+    .button.ghost { color: var(--slate-700); border-color: var(--slate-300); background: var(--white); }
+    .button.small { min-height: 36px; padding: 7px 11px; font-size: 13px; }
+
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 14px;
+      margin-top: 18px;
+    }
+    .stat {
+      padding: 18px;
+      border: 1px solid var(--slate-200);
+      border-radius: var(--radius);
+      background: rgba(255, 255, 255, .86);
+      box-shadow: var(--shadow-sm);
+    }
+    .stat strong { display: block; color: var(--orange-600); font-size: 30px; line-height: 1; }
+    .stat span { display: block; margin-top: 7px; color: var(--slate-600); font-weight: 650; }
+
+    .section-head {
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 24px;
+      margin: 64px 0 20px;
+    }
+    .section-kicker {
+      margin: 0 0 6px;
+      color: var(--orange-600);
+      font-size: 12px;
+      font-weight: 850;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+    .section-head h2 { margin: 0; font-size: clamp(27px, 4vw, 40px); letter-spacing: -.035em; }
+    .section-head p { max-width: 600px; margin: 8px 0 0; color: var(--slate-600); }
+
+    .panel {
+      padding: clamp(20px, 3vw, 30px);
+      border: 1px solid var(--slate-200);
+      border-radius: var(--radius-lg);
+      background: var(--white);
+      box-shadow: var(--shadow-sm);
+    }
+    .panel + .panel { margin-top: 18px; }
+    .panel h3 { margin: 0 0 14px; font-size: 21px; letter-spacing: -.02em; }
+    .panel h4 { margin: 26px 0 10px; }
+    .muted { color: var(--slate-600); }
+    .note {
+      padding: 15px 17px;
+      border-left: 4px solid var(--orange-500);
+      border-radius: 0 12px 12px 0;
+      color: var(--slate-700);
+      background: var(--orange-50);
+    }
+
+    .mockup {
+      position: relative;
+      padding: 12px;
+      border: 1px solid var(--slate-200);
+      border-radius: 18px;
+      background: linear-gradient(145deg, #fff, #f4f6f9);
+      box-shadow: var(--shadow-md);
+    }
+    .mockup a { display: block; overflow: hidden; border-radius: 12px; }
+    .mockup img { display: block; width: 100%; transition: transform .3s ease; }
+    .mockup a:hover img { transform: scale(1.01); }
+    .mockup figcaption { padding: 12px 4px 2px; color: var(--slate-600); font-size: 13px; }
+
+    .grid-2 { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
+    .grid-3 { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+    .grid-4 { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 14px; }
+    .card {
+      padding: 18px;
+      border: 1px solid var(--slate-200);
+      border-radius: var(--radius);
+      background: var(--white);
+      box-shadow: var(--shadow-sm);
+    }
+    .card h3, .card h4 { margin: 0 0 8px; }
+    .card p { margin: 0; color: var(--slate-600); }
+    .card-accent { border-top: 4px solid var(--orange-500); }
+
+    .column-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+    .column-item {
+      min-height: 124px;
+      padding: 15px;
+      border: 1px solid var(--slate-200);
+      border-radius: 14px;
+      background: var(--slate-50);
+    }
+    .column-item strong { display: block; margin-bottom: 5px; color: var(--navy-900); }
+    .column-item span { color: var(--slate-600); font-size: 13px; }
+
+    .status-card { display: flex; align-items: center; gap: 12px; }
+    .status-card img { width: 42px; height: 42px; }
+    .status-card small { display: block; color: var(--slate-500); }
+
+    .tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      padding: 4px 9px;
+      border-radius: 999px;
+      color: var(--orange-700);
+      background: var(--orange-100);
+      font-size: 12px;
+      font-weight: 800;
+    }
+    .tag.high { color: #9d174d; background: #fce7f3; }
+    .tag.medium { color: #92400e; background: #fef3c7; }
+    .tag.req { color: #3730a3; background: #e0e7ff; }
+    .tag.ex { color: #b42318; background: #fee4e2; }
+
+    .flow-list { display: grid; gap: 14px; counter-reset: flow; }
+    .flow {
+      position: relative;
+      padding: 22px 22px 22px 68px;
+      border: 1px solid var(--slate-200);
+      border-radius: var(--radius);
+      background: var(--white);
+    }
+    .flow::before {
+      counter-increment: flow;
+      content: counter(flow, decimal-leading-zero);
+      position: absolute;
+      top: 20px;
+      left: 18px;
+      display: grid;
+      width: 36px;
+      height: 36px;
+      place-items: center;
+      border-radius: 11px;
+      color: var(--white);
+      background: var(--orange-500);
+      font-weight: 900;
+    }
+    .flow h3 { margin: 0 0 8px; }
+    .flow ol { margin: 0; padding-left: 20px; color: var(--slate-700); }
+
+    .exception { border-left: 4px solid #ef4444; }
+    .exception strong { color: var(--red); }
+
+    .formula-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; }
+    .formula {
+      padding: 18px;
+      border: 1px solid #ffd6c2;
+      border-radius: 16px;
+      background: linear-gradient(160deg, #fff, var(--orange-50));
+    }
+    .formula h4 { margin: 0 0 12px; color: var(--orange-700); }
+    .fraction { display: grid; justify-items: center; color: var(--navy-900); font-weight: 720; text-align: center; }
+    .fraction .top { padding: 0 10px 7px; border-bottom: 2px solid var(--navy-800); }
+    .fraction .bottom { padding-top: 7px; }
+    .formula .teacher { margin-top: 16px; padding-top: 12px; border-top: 1px dashed #f5b896; color: var(--slate-600); font-size: 13px; }
+
+    .filters {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      align-items: center;
+      padding: 14px;
+      border: 1px solid var(--slate-200);
+      border-radius: 14px;
+      background: var(--white);
+      position: sticky;
+      top: 10px;
+      z-index: 10;
+      box-shadow: var(--shadow-md);
+    }
+    .search {
+      min-width: min(100%, 320px);
+      flex: 1 1 260px;
+      height: 42px;
+      padding: 0 13px;
+      border: 1px solid var(--slate-300);
+      border-radius: 10px;
+      color: var(--navy-950);
+      background: var(--white);
+      outline: none;
+    }
+    .search:focus { border-color: var(--orange-500); box-shadow: 0 0 0 4px rgba(244, 91, 10, .12); }
+    .testcases { display: grid; gap: 10px; margin-top: 16px; }
+    .testcase {
+      border: 1px solid var(--slate-200);
+      border-radius: 14px;
+      background: var(--white);
+      overflow: clip;
+    }
+    .testcase[hidden] { display: none; }
+    .testcase summary {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 15px 17px;
+      cursor: pointer;
+      list-style: none;
+    }
+    .testcase summary::-webkit-details-marker { display: none; }
+    .testcase summary::after { content: "+"; margin-left: auto; color: var(--orange-600); font-size: 22px; font-weight: 700; }
+    .testcase[open] summary::after { content: "−"; }
+    .testcase-title { min-width: 0; font-weight: 780; }
+    .case-body {
+      display: grid;
+      grid-template-columns: minmax(180px, .7fr) minmax(0, 1.3fr);
+      gap: 18px;
+      padding: 18px;
+      border-top: 1px solid var(--slate-200);
+      background: var(--slate-50);
+    }
+    .case-meta { color: var(--slate-600); }
+    .case-meta div + div { margin-top: 8px; }
+    .case-steps { display: grid; gap: 10px; }
+    .step { padding: 10px 12px; border-left: 3px solid var(--orange-400); background: var(--white); }
+    .expected { margin: 14px 0 0; padding-left: 20px; }
+    .expected li + li { margin-top: 4px; }
+    .empty-filter { display: none; padding: 28px; color: var(--slate-600); text-align: center; }
+
+    .question-list { display: grid; gap: 10px; margin: 0; padding: 0; counter-reset: question; list-style: none; }
+    .question-list li {
+      position: relative;
+      padding: 14px 16px 14px 54px;
+      border: 1px solid #f4d8a4;
+      border-radius: 13px;
+      background: #fffbeb;
+      color: #664d03;
+    }
+    .question-list li::before {
+      counter-increment: question;
+      content: counter(question);
+      position: absolute;
+      top: 12px;
+      left: 14px;
+      display: grid;
+      width: 28px;
+      height: 28px;
+      place-items: center;
+      border-radius: 9px;
+      color: #fff;
+      background: #d99100;
+      font-weight: 850;
+    }
+
+    .footer {
+      margin-top: 64px;
+      padding-top: 24px;
+      border-top: 1px solid var(--slate-200);
+      color: var(--slate-500);
+      text-align: center;
+    }
+
+    @media (max-width: 1120px) {
+      :root { --sidebar: 244px; }
+      .column-grid, .grid-3, .formula-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .stats { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
+    @media (max-width: 780px) {
+      .sidebar { position: static; width: auto; padding: 14px; }
+      .brand { padding-bottom: 12px; }
+      .nav-title, .sidebar-footer { display: none; }
+      .nav { display: flex; overflow-x: auto; padding-top: 10px; }
+      .nav a { flex: 0 0 auto; }
+      main { width: 100%; margin: 0; padding: 18px 14px 60px; }
+      .hero { border-radius: 18px; }
+      .grid-2, .grid-3, .grid-4, .column-grid, .formula-grid, .case-body { grid-template-columns: 1fr; }
+      .section-head { align-items: start; flex-direction: column; }
+      .filters { position: static; }
+    }
+    @media print {
+      body { background: #fff; font-size: 11px; }
+      .sidebar, .hero-actions, .filters, .skip-link { display: none !important; }
+      main { width: 100%; margin: 0; padding: 0; }
+      .hero { color: #111; background: #fff; border: 2px solid #111; box-shadow: none; }
+      .hero p { color: #333; }
+      .panel, .card, .stat, .mockup, .testcase { break-inside: avoid; box-shadow: none; }
+      .section-head { margin-top: 32px; }
+      .testcase { display: block !important; }
+      .testcase summary::after { display: none; }
+      .testcase:not([open]) .case-body { display: grid; }
+    }
+
+    .doc-shell { min-width: 0; }
+    .doc-toolbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      margin-bottom: 18px;
+      padding: 14px 16px;
+      border: 1px solid var(--slate-200);
+      border-radius: 14px;
+      background: rgba(255,255,255,.92);
+      box-shadow: var(--shadow-sm);
+    }
+    .doc-toolbar-left, .doc-toolbar-right { display: flex; flex-wrap: wrap; align-items: center; gap: 9px; }
+    .sync-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      padding: 6px 10px;
+      border-radius: 999px;
+      color: #067647;
+      background: #ecfdf3;
+      border: 1px solid #abefc6;
+      font-size: 12px;
+      font-weight: 800;
+    }
+    .sync-badge::before { content: "✓"; }
+    .hash { color: var(--slate-500); font: 12px ui-monospace, SFMono-Regular, Menlo, monospace; }
+    .markdown-body {
+      padding: clamp(24px, 4vw, 54px);
+      border: 1px solid var(--slate-200);
+      border-radius: var(--radius-lg);
+      background: var(--white);
+      box-shadow: var(--shadow-md);
+      overflow: hidden;
+    }
+    .markdown-body > h1 {
+      position: relative;
+      margin: -54px -54px 42px;
+      padding: 62px 54px 54px;
+      color: var(--white);
+      background:
+        radial-gradient(circle at 88% 10%, rgba(255,122,50,.36), transparent 20rem),
+        linear-gradient(115deg, var(--navy-950), #243047 68%, #713209);
+      font-size: clamp(34px, 5vw, 62px);
+      line-height: 1.05;
+      letter-spacing: -.045em;
+    }
+    .markdown-body h2 {
+      margin: 70px 0 24px;
+      padding: 0 0 13px;
+      border-bottom: 2px solid var(--slate-200);
+      font-size: clamp(27px, 4vw, 39px);
+      line-height: 1.15;
+      letter-spacing: -.035em;
+      scroll-margin-top: 24px;
+    }
+    .markdown-body h2::first-letter { color: var(--orange-600); }
+    .markdown-body h3 {
+      margin: 38px 0 16px;
+      color: var(--navy-900);
+      font-size: 23px;
+      line-height: 1.25;
+      letter-spacing: -.02em;
+      scroll-margin-top: 24px;
+    }
+    .markdown-body h4 {
+      margin: 28px 0 12px;
+      color: var(--orange-700);
+      font-size: 17px;
+      scroll-margin-top: 24px;
+    }
+    .markdown-body p { margin: 12px 0; }
+    .markdown-body strong { color: var(--navy-900); }
+    .markdown-body ul, .markdown-body ol { padding-left: 1.35rem; }
+    .markdown-body li { margin: 6px 0; }
+    .markdown-body li::marker { color: var(--orange-500); font-weight: 800; }
+    .markdown-body hr {
+      height: 1px;
+      margin: 48px 0;
+      border: 0;
+      background: linear-gradient(90deg, transparent, var(--slate-300), transparent);
+    }
+    .markdown-body > p[align="center"] {
+      margin: 22px 0 28px;
+      padding: 12px;
+      border: 1px solid var(--slate-200);
+      border-radius: 18px;
+      background: linear-gradient(145deg, #fff, #f5f7fa);
+      box-shadow: var(--shadow-md);
+    }
+    .markdown-body > p[align="center"] a { display: inline-block; max-width: 100%; }
+    .markdown-body > p[align="center"] img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+      margin: auto;
+      border-radius: 12px;
+    }
+    .markdown-body > p[align="center"] em {
+      display: block;
+      margin-top: 10px;
+      color: var(--slate-500);
+      font-size: 13px;
+    }
+    .table-wrap {
+      width: 100%;
+      margin: 18px 0 28px;
+      overflow: auto;
+      border: 1px solid var(--slate-200);
+      border-radius: 15px;
+      background: var(--white);
+      box-shadow: var(--shadow-sm);
+    }
+    .markdown-body table {
+      width: 100%;
+      min-width: 720px;
+      border-collapse: separate;
+      border-spacing: 0;
+      font-size: 14px;
+    }
+    .markdown-body th {
+      position: sticky;
+      top: 0;
+      z-index: 2;
+      padding: 12px 14px;
+      color: var(--white);
+      background: var(--navy-900);
+      border-bottom: 1px solid var(--navy-800);
+      text-align: left;
+      white-space: nowrap;
+    }
+    .markdown-body td {
+      padding: 12px 14px;
+      border-bottom: 1px solid var(--slate-200);
+      vertical-align: top;
+    }
+    .markdown-body tbody tr:nth-child(even) td { background: var(--slate-50); }
+    .markdown-body tbody tr:hover td { background: var(--orange-50); }
+    .markdown-body tbody tr:last-child td { border-bottom: 0; }
+    .markdown-body td img { display: block; width: 36px; height: 36px; max-width: none; }
+    .markdown-body pre {
+      position: relative;
+      margin: 16px 0 24px;
+      padding: 18px 20px;
+      overflow: auto;
+      border: 1px solid #ffd3bd;
+      border-radius: 14px;
+      color: #fff7ed;
+      background: linear-gradient(145deg, #172033, #222f48);
+      box-shadow: var(--shadow-sm);
+      font: 13px/1.75 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    }
+    .markdown-body pre code { padding: 0; border: 0; color: inherit; background: none; font: inherit; }
+    .markdown-body blockquote {
+      margin: 18px 0;
+      padding: 13px 16px;
+      border-left: 4px solid var(--orange-500);
+      border-radius: 0 12px 12px 0;
+      color: var(--slate-700);
+      background: var(--orange-50);
+    }
+    .case-tools {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 10px;
+      margin: 12px 0 14px;
+      padding: 13px;
+      border: 1px solid var(--slate-200);
+      border-radius: 13px;
+      background: var(--slate-50);
+    }
+    .case-tools input {
+      flex: 1 1 280px;
+      height: 42px;
+      padding: 0 13px;
+      border: 1px solid var(--slate-300);
+      border-radius: 10px;
+      outline: none;
+    }
+    .case-tools input:focus { border-color: var(--orange-500); box-shadow: 0 0 0 4px rgba(244,91,10,.12); }
+    .case-count { color: var(--orange-700); font-weight: 800; white-space: nowrap; }
+    .testcase-table table { min-width: 1500px; }
+    .testcase-table th:first-child, .testcase-table td:first-child {
+      position: sticky;
+      left: 0;
+      z-index: 1;
+      min-width: 230px;
+      box-shadow: 1px 0 0 var(--slate-200);
+    }
+    .testcase-table th:first-child { z-index: 3; background: var(--navy-900); }
+    .testcase-table td:first-child { background: var(--white); font-weight: 750; }
+    .testcase-table tbody tr:nth-child(even) td:first-child { background: var(--slate-50); }
+    .testcase-table tbody tr:hover td:first-child { background: var(--orange-50); }
+    .source-note {
+      margin-top: 18px;
+      color: var(--slate-500);
+      text-align: center;
+      font-size: 12px;
+    }
+    @media (max-width: 780px) {
+      .doc-toolbar { align-items: flex-start; flex-direction: column; }
+      .markdown-body { padding: 20px 16px; border-radius: 16px; }
+      .markdown-body > h1 { margin: -20px -16px 32px; padding: 40px 20px 34px; }
+      .markdown-body h2 { margin-top: 48px; }
+      .markdown-body table { font-size: 13px; }
+    }
+    @media print {
+      .doc-toolbar, .case-tools { display: none !important; }
+      .markdown-body { padding: 0; border: 0; box-shadow: none; overflow: visible; }
+      .markdown-body > h1 { margin: 0 0 32px; padding: 30px; color: #111; background: #fff; border: 2px solid #111; }
+      .table-wrap { overflow: visible; box-shadow: none; }
+      .markdown-body table { min-width: 0 !important; font-size: 9px; }
+      .markdown-body th { position: static; color: #111; background: #eee; }
+      .testcase-table th:first-child, .testcase-table td:first-child { position: static; }
+    }
+</style>
+</head>
+<body>
+  <a class="skip-link" href="#document">Đi đến nội dung chính</a>
+  <aside class="sidebar" aria-label="Mục lục requirement">
+    <div class="brand">
+      <div class="brand-mark">ics</div>
+      <div><strong>ICS Requirement</strong><small>Requirement UI, nghiệp vụ và testcase</small></div>
+    </div>
+    <div class="nav-title">Nội dung Markdown</div>
+    <nav id="docNav" class="nav"></nav>
+    <div class="sidebar-footer">
+      HTML được render trực tiếp từ Markdown nguồn.<br>
+      <a href="./class_creation_requirements.md">Mở file Markdown</a>
+    </div>
+  </aside>
+  <main class="doc-shell">
+    <div class="doc-toolbar">
+      <div class="doc-toolbar-left">
+        <span class="sync-badge">Đồng bộ 100% từ Markdown</span>
+        <span class="hash">SHA-256: 45f907e912a6…</span>
+      </div>
+      <div class="doc-toolbar-right">
+        <a class="button ghost small" href="./class_creation_requirements.md">Xem Markdown</a>
+        <button class="button small" type="button" onclick="window.print()">In / Lưu PDF</button>
+      </div>
+    </div>
+    <article id="document" class="markdown-body" data-source-sha256="45f907e912a643b2f7feb3b0258a66f8447e293218fa131eada5520e28ed4eb8">
+<h1 id="tao-lop-hoc">Tạo lớp học</h1>
+<blockquote>
+<p>Requirement này đặc tả popup tạo lớp, lịch dạy cố định và trạng thái ban đầu của lớp. Màn danh sách được đặc tả riêng tại <a href="./class_management_requirements.md">Quản lý danh sách lớp học</a>. Các thao tác sau khi tạo được đặc tả tại <a href="./class_detail_information_requirements.md">Chi tiết lớp học — Tab Thông tin</a>, <a href="./class_detail_students_requirements.md">Tab Học viên</a>, <a href="./class_detail_teachers_requirements.md">Tab Giáo viên</a>, <a href="./class_detail_support_handlers_requirements.md">Tab Trợ giảng &amp; Phụ trách lớp</a> và <a href="./class_detail_schedule_requirements.md">Tab Lịch dạy</a>.</p>
+</blockquote>
+<h2 id="1-ui">1. UI</h2>
+<h3 id="popup-them-lop-hoc">Popup Thêm lớp học</h3>
+<p align="center">
+  <a href="./images/06-add-class.png"><img src="./images/06-add-class.png" alt="Popup Thêm Lớp Học" width="900" title="Nhấn để xem ảnh gốc"></a><br>
+  <em>Popup Thêm Lớp Học — nhấn để xem ảnh gốc</em>
+</p>
+
+<p><strong>Mô tả:</strong></p>
+<p>Chỉ người dùng có role <code>Admin</code> hoặc <code>Class Handler</code> được bấm nút <code>+</code> tại Danh sách lớp để mở popup <code>Thêm Lớp Học</code> và tạo lớp.</p>
+<p><strong>Giải thích field/thành phần:</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Thành phần</th>
+<th>Yêu cầu</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Lớp không chính thức</td>
+<td>Chỉ <code>Admin</code> được tick để tạo lớp test. <code>Class Handler</code> có thể tạo lớp nhưng không được tick field này. Lớp test mở toàn bộ bài học/bài kiểm tra và bỏ qua điều kiện nghiệp vụ khi đổi trạng thái; quyền người dùng vẫn được kiểm tra.</td>
+</tr>
+<tr>
+<td>Khóa học</td>
+<td><strong>Bắt buộc.</strong> Chỉ cho chọn từ danh sách khóa học đã được define sẵn; không nhập tên khóa học tự do.</td>
+</tr>
+<tr>
+<td>Số buổi</td>
+<td>Sau khi chọn khóa học, hiển thị đúng tổng số buổi đã define của khóa học đó. Người dùng không tự nhập một số buổi khác. Lịch dạy cố định phải sinh đủ đúng số buổi này.</td>
+</tr>
+<tr>
+<td>Loại lớp</td>
+<td><strong>Bắt buộc.</strong> Chỉ có hai giá trị: <code>Lớp chung</code> và <code>Lớp 1-1</code>. Không hiển thị hoặc chấp nhận loại lớp khác. <code>Lớp 1-1</code> không giới hạn một học viên và có thể được thêm nhiều học viên sau khi tạo.</td>
+</tr>
+<tr>
+<td>Mã lớp</td>
+<td><strong>Bắt buộc.</strong> Hệ thống chuẩn hóa và lưu bằng chữ in hoa, sau đó kiểm tra duy nhất toàn hệ thống không phân biệt hoa/thường. Không được rỗng/chỉ chứa khoảng trắng và không giới hạn số ký tự theo nghiệp vụ.</td>
+</tr>
+<tr>
+<td>Ngày bắt đầu / Ngày kết thúc</td>
+<td>Người dùng nhập <code>Ngày bắt đầu</code>. <code>Ngày kết thúc</code> là field chỉ đọc, tự lấy ngày của buổi cuối cùng sau khi sinh đủ lịch; nếu chưa có lịch thì để trống.</td>
+</tr>
+<tr>
+<td>Mô tả</td>
+<td><strong>Bắt buộc.</strong> Không chấp nhận giá trị rỗng hoặc chỉ chứa khoảng trắng; không giới hạn số ký tự theo nghiệp vụ.</td>
+</tr>
+<tr>
+<td>Ghi chú</td>
+<td>Không bắt buộc và không giới hạn số ký tự theo nghiệp vụ.</td>
+</tr>
+<tr>
+<td>Link Google Meet</td>
+<td>Cho nhập link Meet ngay khi tạo lớp. Nếu có thì phải là URL HTTP(S) hợp lệ. Link không bắt buộc để tạo lớp hoặc để lớp ở trạng thái <code>Khai giảng</code>, nhưng bắt buộc trước khi chuyển sang <code>Đang học</code>.</td>
+</tr>
+<tr>
+<td>Phụ trách chính</td>
+<td><strong>Bắt buộc.</strong> Chỉ cho chọn người dùng có role <code>Class Handler</code>.</td>
+</tr>
+<tr>
+<td>CSKH chính</td>
+<td><strong>Bắt buộc.</strong> Chỉ cho chọn người dùng có role <code>Support</code>.</td>
+</tr>
+<tr>
+<td>Thêm lịch dạy</td>
+<td>Nút <code>+</code> mở popup <code>Thêm Lịch Dạy Cố Định</code>. Lịch đã xác nhận hiển thị thành các chip trong popup tạo lớp và có thể xóa trước khi lưu.</td>
+</tr>
+<tr>
+<td>Hủy</td>
+<td>Đóng popup, không tạo lớp và không lưu dữ liệu đang nhập.</td>
+</tr>
+<tr>
+<td>Xác Nhận</td>
+<td>Kiểm tra dữ liệu, tạo đúng một lớp và xác định trạng thái ban đầu theo quy tắc lịch dạy.</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Điểm cần lưu ý:</strong></p>
+<ul>
+<li>Sáu field bắt buộc phải được đánh dấu và báo lỗi tại đúng field khi thiếu dữ liệu.</li>
+<li>Đổi <code>Khóa học</code> phải cập nhật lại <code>Số buổi</code> theo khóa học được chọn; người dùng không được sửa trực tiếp Số buổi.</li>
+<li><code>Ngày kết thúc</code> không cho nhập thủ công; tự cập nhật bằng ngày của buổi cuối sau khi lịch được sinh hoặc thay đổi.</li>
+<li>Chỉ <code>Admin</code> được tick <code>Lớp không chính thức</code>. Class Handler tạo lớp chính thức và backend phải từ chối nếu sửa request để tạo lớp test.</li>
+<li>Bấm <code>Hủy</code> không lưu dữ liệu; bấm <code>Xác Nhận</code> nhiều lần hoặc gửi lặp không được tạo lớp trùng.</li>
+</ul>
+<h4 id="testcase-popup-them-lop-hoc">Testcase — Popup Thêm lớp học</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 1: Mở và hủy popup Thêm lớp học</td>
+<td>High</td>
+<td></td>
+<td>REQ01 / REQ08</td>
+<td><code>Admin</code> hoặc <code>Class Handler</code></td>
+<td>Người dùng đang ở Danh sách lớp</td>
+<td><strong>Given</strong> người dùng bấm nút <code>+</code><br><strong>When</strong> popup hiển thị rồi chọn <code>Hủy</code><br><strong>Then</strong> đóng popup mà không tạo lớp</td>
+<td>- Hiển thị đủ field<br>- Không gửi request tạo lớp<br>- Dữ liệu không thay đổi</td>
+</tr>
+<tr>
+<td>Case 20: Tự tính Ngày kết thúc theo buổi cuối</td>
+<td>High</td>
+<td></td>
+<td>REQ03 / REQ10</td>
+<td><code>Admin</code> hoặc <code>Class Handler</code></td>
+<td>Popup tạo lớp đang mở; khóa học và lịch dạy hợp lệ</td>
+<td><strong>Given</strong> người dùng nhập Ngày bắt đầu và chọn lịch cố định<br><strong>When</strong> hệ thống sinh đủ N buổi<br><strong>Then</strong> Ngày kết thúc bằng ngày của buổi N</td>
+<td>- Field Ngày kết thúc chỉ đọc<br>- Đổi Khóa học/lịch sẽ tính lại ngày kết thúc<br>- Không nhận giá trị ngày kết thúc do client tự gửi</td>
+</tr>
+<tr>
+<td>Case 23: Tạo lớp thất bại hoặc gửi request lặp</td>
+<td>High</td>
+<td></td>
+<td>EX04 / REQ06 / Ràng buộc tính toàn vẹn</td>
+<td><code>Admin</code> hoặc <code>Class Handler</code></td>
+<td>Dữ liệu hợp lệ; mô phỏng backend thất bại hoặc người dùng bấm Xác Nhận nhiều lần</td>
+<td><strong>Given</strong> một thao tác tạo lớp đang được xử lý<br><strong>When</strong> request thất bại hoặc cùng thao tác được gửi lặp<br><strong>Then</strong> hệ thống không tạo dữ liệu một phần hoặc nhiều lớp trùng</td>
+<td>- Thất bại không tạo lớp và không lưu lịch dở dang<br>- Request lặp chỉ tạo tối đa một lớp<br>- Hiển thị đúng một notification kết quả<br>- Notification không chứa thông tin kỹ thuật nhạy cảm</td>
+</tr>
+<tr>
+<td>Case 24: Validation dữ liệu text, Mã lớp và URL Meet</td>
+<td>High</td>
+<td></td>
+<td>EX07 / EX09 / EX11 / REQ01</td>
+<td><code>Admin</code> hoặc <code>Class Handler</code></td>
+<td>Popup tạo lớp đang mở</td>
+<td><strong>Given</strong> Mã lớp/Mô tả rỗng, Mã lớp trùng khác kiểu hoa/thường hoặc Meet không phải URL HTTP(S)<br><strong>When</strong> bấm <code>Xác Nhận</code><br><strong>Then</strong> hệ thống chuẩn hóa và validate tại đúng field</td>
+<td>- Mã hợp lệ được lưu in hoa<br>- Mã trùng toàn hệ thống bị từ chối<br>- Rỗng/URL sai thì không tạo lớp<br>- Không giới hạn số ký tự text theo nghiệp vụ</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="lop-khong-chinh-thuc">Lớp không chính thức</h3>
+<p><strong>Mô tả:</strong></p>
+<p><code>Lớp không chính thức</code> là checkbox chỉ <code>Admin</code> được dùng để tạo lớp phục vụ test.</p>
+<p><strong>Giải thích:</strong></p>
+<ul>
+<li>Ngay sau khi tạo, toàn bộ bài học và bài kiểm tra của khóa học phải ở trạng thái có thể mở/truy cập; không khóa theo tiến độ, lịch học, bài học trước hoặc điều kiện hoàn thành trước đó.</li>
+<li>Cho phép người dùng có quyền thay đổi tự do trạng thái lớp, trạng thái học viên, trạng thái bài học và trạng thái bài kiểm tra trong phạm vi lớp test.</li>
+<li>Các điều kiện chuyển trạng thái dành cho lớp chính thức không áp dụng cho lớp test, gồm điều kiện lịch dạy, Link Meet, Tiêu chuẩn GV, Quy trình lớp và hóa đơn học phí.</li>
+<li>Trạng thái ban đầu khi tạo vẫn được xác định theo lịch dạy (<code>Mới tạo</code> hoặc <code>Khai giảng</code>), nhưng sau khi tạo có thể đổi sang trạng thái khác mà không cần thỏa các điều kiện chuyển trạng thái.</li>
+</ul>
+<p><strong>Điểm cần lưu ý:</strong></p>
+<ul>
+<li>“Không bị hạn chế” chỉ bỏ qua ràng buộc nghiệp vụ phục vụ test; hệ thống vẫn phải kiểm tra quyền người dùng, phạm vi dữ liệu, định dạng dữ liệu và ghi nhận thay đổi đúng lớp.</li>
+<li>Lớp không tick <code>Lớp không chính thức</code> là lớp chính thức và phải áp dụng toàn bộ điều kiện nghiệp vụ được mô tả trong requirement này và các requirement liên quan.</li>
+<li><code>Class Handler</code> không được tick checkbox khi tạo hoặc sửa request trực tiếp; quyền đổi trạng thái lớp test sau khi tạo vẫn tuân theo requirement Chi tiết lớp.</li>
+<li>Sau khi lớp đã được tạo là lớp không chính thức, không cho phép chuyển ngược lại thành lớp chính thức.</li>
+</ul>
+<h4 id="testcase-lop-khong-chinh-thuc">Testcase — Lớp không chính thức</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 15: Admin tạo lớp không chính thức</td>
+<td>High</td>
+<td></td>
+<td>REQ07</td>
+<td><code>Admin</code></td>
+<td>Admin tick <code>Lớp không chính thức</code>; lớp chưa có Meet, Tiêu chuẩn GV, Quy trình hoặc học phí</td>
+<td><strong>Given</strong> lớp test được tạo thành công<br><strong>When</strong> mở nội dung và Class Handler đổi trạng thái trong Chi tiết lớp<br><strong>Then</strong> hệ thống bỏ qua điều kiện nghiệp vụ của lớp chính thức</td>
+<td>- Toàn bộ bài học/bài kiểm tra mở ngay<br>- Không khóa theo tiến độ hoặc bài trước<br>- Không yêu cầu lịch, Meet, tiêu chuẩn, quy trình hoặc học phí để đổi trạng thái<br>- Vẫn kiểm tra quyền từng hành động</td>
+</tr>
+<tr>
+<td>Case 16: Chặn Class Handler tạo lớp không chính thức</td>
+<td>High</td>
+<td></td>
+<td>EX06 / REQ07 / Ràng buộc quyền</td>
+<td><code>Class Handler</code></td>
+<td>Popup tạo lớp đang mở</td>
+<td><strong>Given</strong> checkbox không khả dụng với Class Handler<br><strong>When</strong> sửa request để gửi cờ lớp test<br><strong>Then</strong> backend từ chối</td>
+<td>- Không tạo lớp test<br>- Không tạo lớp một phần<br>- Không cho client giả lập quyền Admin</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="khoa-hoc-so-buoi-va-lich-uoc-sinh">Khóa học, Số buổi và lịch được sinh</h3>
+<p><strong>Mô tả:</strong></p>
+<p>Giải thích quan hệ giữa khóa học đã define, tổng Số buổi và lịch dạy được sinh cho lớp.</p>
+<p><strong>Giải thích:</strong></p>
+<ul>
+<li>Danh sách Khóa học lấy từ dữ liệu define hiện hành của hệ thống.</li>
+<li>Mỗi khóa học phải có tổng số buổi đã define. Khi đổi Khóa học, Số buổi phải cập nhật theo khóa học mới.</li>
+<li>Số buổi của lớp phải bằng Số buổi của khóa học được chọn; không dùng số khung giờ lịch dạy để thay thế Số buổi của khóa học.</li>
+<li>Lịch dạy cố định dùng Số buổi của khóa học làm tổng số lần học cần sinh.</li>
+<li>Ngày bắt đầu của lớp được tính là buổi 1. Các buổi tiếp theo chạy theo thứ/ngày và khung giờ cố định đã chọn cho đến khi đủ số buổi.</li>
+<li>Khi đã đủ số buổi, lịch phải dừng. Không sinh thêm buổi ngoài số lượng đã define và không được dừng trước khi đủ số buổi.</li>
+<li>Ví dụ: khóa học có <code>24</code> buổi thì Ngày bắt đầu là buổi 1; hệ thống tiếp tục xếp lịch theo lịch cố định cho đến buổi 24 và buổi 24 là buổi cuối cùng.</li>
+</ul>
+<p><strong>Điểm cần lưu ý:</strong></p>
+<ul>
+<li>Nếu không tải được danh sách Khóa học hoặc khóa học không có cấu hình Số buổi, không được tạo lớp với dữ liệu thiếu/sai.</li>
+<li><code>Ngày kết thúc</code> luôn được tính từ ngày của buổi cuối. Nếu lịch được sinh lại do đổi khóa học, ngày bắt đầu hoặc mẫu lịch, field này phải cập nhật trong cùng giao dịch.</li>
+</ul>
+<h4 id="testcase-khoa-hoc-so-buoi-va-lich-uoc-sinh">Testcase — Khóa học, Số buổi và lịch được sinh</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 2: Khóa học define quyết định Số buổi</td>
+<td>High</td>
+<td></td>
+<td>REQ02</td>
+<td><code>Admin</code> hoặc <code>Class Handler</code></td>
+<td>Khóa học A có 24 buổi, khóa học B có 36 buổi</td>
+<td><strong>Given</strong> popup đang mở<br><strong>When</strong> chọn A rồi đổi sang B<br><strong>Then</strong> Số buổi lần lượt là 24 rồi 36</td>
+<td>- Chỉ hiển thị khóa học đã define<br>- Số buổi cập nhật theo khóa học<br>- Không cho nhập số khác</td>
+</tr>
+<tr>
+<td>Case 3: Không tạo lớp khi cấu hình khóa học lỗi</td>
+<td>High</td>
+<td></td>
+<td>EX02 / REQ02</td>
+<td><code>Admin</code> hoặc <code>Class Handler</code></td>
+<td>Danh sách khóa học tải lỗi hoặc khóa học thiếu Số buổi</td>
+<td><strong>Given</strong> dữ liệu Khóa học/Số buổi không đầy đủ<br><strong>When</strong> xác nhận tạo lớp<br><strong>Then</strong> hệ thống từ chối</td>
+<td>- Không tạo dữ liệu sai<br>- Hiển thị lỗi phù hợp<br>- Cho phép thử lại</td>
+</tr>
+<tr>
+<td>Case 5: Sinh đủ lịch cố định theo Số buổi</td>
+<td>High</td>
+<td></td>
+<td>REQ03</td>
+<td><code>Admin</code> hoặc <code>Class Handler</code></td>
+<td>Khóa học có 24 buổi; Ngày bắt đầu phù hợp lịch đã chọn</td>
+<td><strong>Given</strong> Ngày bắt đầu là buổi 1<br><strong>When</strong> sinh lịch theo mẫu lặp<br><strong>Then</strong> xếp lịch đến đủ buổi 24</td>
+<td>- Đúng 24 buổi<br>- Buổi 24 là buổi cuối<br>- Không bỏ qua ngày bắt đầu<br>- Không dừng ở 23 hoặc sinh buổi 25</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="loai-lop">Loại lớp</h3>
+<p><strong>Mô tả:</strong></p>
+<p>Field <code>Loại lớp</code> xác định lớp học chung hay lớp chỉ có một học viên.</p>
+<p><strong>Giải thích:</strong></p>
+<ul>
+<li>Hệ thống chỉ có hai loại lớp: <code>Lớp chung</code> và <code>Lớp 1-1</code>.</li>
+<li>Không hiển thị loại lớp khác trong danh sách chọn.</li>
+</ul>
+<p><strong>Điểm cần lưu ý:</strong></p>
+<ul>
+<li>Backend chỉ chấp nhận một trong hai giá trị hợp lệ; request gửi loại lớp khác phải bị từ chối.</li>
+<li><code>Lớp 1-1</code> là một giá trị phân loại lớp, không phải điều kiện sĩ số. Lớp 1-1 có thể có 0, 1 hoặc nhiều học viên.</li>
+</ul>
+<h4 id="testcase-loai-lop">Testcase — Loại lớp</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 21: Chỉ chấp nhận hai loại lớp</td>
+<td>High</td>
+<td></td>
+<td>EX09 / REQ11</td>
+<td><code>Admin</code> hoặc <code>Class Handler</code></td>
+<td>Popup tạo lớp đang mở</td>
+<td><strong>Given</strong> người dùng mở danh sách Loại lớp<br><strong>When</strong> xem lựa chọn hoặc gửi request tạo lớp<br><strong>Then</strong> hệ thống chỉ chấp nhận <code>Lớp chung</code> hoặc <code>Lớp 1-1</code></td>
+<td>- UI chỉ hiển thị hai loại lớp<br>- Backend từ chối giá trị khác<br>- Không gắn giới hạn sĩ số bằng 1 cho Lớp 1-1</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="popup-them-lich-day-co-inh">Popup Thêm Lịch Dạy Cố Định</h3>
+<p align="center">
+  <a href="./images/07-add-fixed-schedule.png"><img src="./images/07-add-fixed-schedule.png" alt="Popup Thêm Lịch Dạy Cố Định" width="785" title="Nhấn để xem ảnh gốc"></a><br>
+  <em>Popup Thêm Lịch Dạy Cố Định — nhấn để xem ảnh gốc</em>
+</p>
+
+<p><strong>Mô tả:</strong></p>
+<p>Popup dùng để khai báo mẫu lịch lặp và sinh đủ số buổi của khóa học.</p>
+<p><strong>Giải thích field/thành phần:</strong></p>
+<ul>
+<li>Chọn ngày bắt đầu áp dụng lịch dạy.</li>
+<li>Cho thêm một hoặc nhiều khung giờ. Mỗi khung giờ gồm Giờ bắt đầu, Giờ kết thúc và ít nhất một ngày trong tuần từ Thứ 2 đến Chủ Nhật.</li>
+<li>Cho xóa từng khung giờ và thêm khung giờ mới trước khi xác nhận.</li>
+<li><code>Hủy</code> không đưa lịch đang nhập về popup tạo lớp.</li>
+<li><code>Xác Nhận</code> đưa lịch hợp lệ về popup tạo lớp nhưng chưa tạo lớp cho đến khi người dùng xác nhận popup chính.</li>
+</ul>
+<p><strong>Điểm cần lưu ý:</strong></p>
+<ul>
+<li>Ngày bắt đầu phải được tính là buổi học đầu tiên. Thứ/ngày được chọn trong lịch cố định phải phù hợp để Ngày bắt đầu có một buổi học.</li>
+<li>Lịch cố định lặp theo các ngày/khung giờ đã chọn và sinh đủ đúng Số buổi của Khóa học.</li>
+<li>Giờ kết thúc phải sau Giờ bắt đầu.</li>
+<li>Không cho xác nhận khi các khung giờ bị trùng theo quy tắc lịch của hệ thống; hiển thị lỗi tại khung giờ liên quan.</li>
+</ul>
+<h4 id="testcase-popup-them-lich-day-co-inh">Testcase — Popup Thêm Lịch Dạy Cố Định</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 4: Kiểm tra khung giờ lịch cố định</td>
+<td>High</td>
+<td></td>
+<td>EX03 / REQ03</td>
+<td><code>Admin</code> hoặc <code>Class Handler</code></td>
+<td>Popup lịch đang mở</td>
+<td><strong>Given</strong> người dùng thêm nhiều khung giờ<br><strong>When</strong> giờ bị trùng hoặc Giờ kết thúc không sau Giờ bắt đầu<br><strong>Then</strong> không cho xác nhận</td>
+<td>- Lỗi hiển thị đúng khung giờ<br>- Lịch lỗi không về popup chính<br>- Hủy không lưu lịch</td>
+</tr>
+<tr>
+<td>Case 6: Từ chối lịch không chứa Ngày bắt đầu</td>
+<td>High</td>
+<td></td>
+<td>EX03 / REQ03</td>
+<td><code>Admin</code> hoặc <code>Class Handler</code></td>
+<td>Thứ/ngày đã chọn không tạo buổi học vào Ngày bắt đầu</td>
+<td><strong>Given</strong> Ngày bắt đầu không khớp lịch cố định<br><strong>When</strong> xác nhận lịch<br><strong>Then</strong> hệ thống từ chối</td>
+<td>- Không tự lấy ngày sau làm buổi 1<br>- Yêu cầu chỉnh Ngày bắt đầu hoặc lịch<br>- Không tạo lớp với lịch sai</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="bo-chon-phu-trach-chinh-cskh-chinh">Bộ chọn Phụ trách chính / CSKH chính</h3>
+<p align="center">
+  <a href="./images/08-class-user-picker.png"><img src="./images/08-class-user-picker.png" alt="Bộ chọn người dùng theo role" width="446" title="Nhấn để xem ảnh gốc"></a><br>
+  <em>Bộ chọn người dùng có tìm kiếm và nhóm theo role — nhấn để xem ảnh gốc</em>
+</p>
+
+<p><strong>Mô tả:</strong></p>
+<p>Bộ chọn dùng để gán đúng người chịu trách nhiệm chính và CSKH chính cho lớp.</p>
+<p><strong>Giải thích field/thành phần:</strong></p>
+<ul>
+<li>Hỗ trợ tìm kiếm người dùng theo tên hoặc thông tin định danh được hệ thống hỗ trợ.</li>
+<li>Khi chọn <code>Phụ trách chính</code>, chỉ hiển thị và cho chọn người dùng đang hoạt động có role <code>Class Handler</code>.</li>
+<li>Khi chọn <code>CSKH chính</code>, chỉ hiển thị và cho chọn người dùng đang hoạt động có role <code>Support</code>.</li>
+</ul>
+<p><strong>Điểm cần lưu ý:</strong></p>
+<ul>
+<li>Không cho chọn người dùng sai role bằng thao tác trên UI hoặc bằng request trực tiếp.</li>
+<li>Chỉ lưu người dùng đã chọn vào đúng field đang thao tác; không tự gán cùng một lựa chọn cho field khác.</li>
+</ul>
+<h4 id="testcase-bo-chon-phu-trach-chinh-cskh-chinh">Testcase — Bộ chọn Phụ trách chính / CSKH chính</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 14: Chọn đúng Phụ trách chính và CSKH chính</td>
+<td>High</td>
+<td></td>
+<td>REQ01 / REQ09</td>
+<td><code>Admin</code> hoặc <code>Class Handler</code></td>
+<td>Có người dùng thuộc các role <code>Class Handler</code>, <code>Support</code> và role khác</td>
+<td><strong>Given</strong> mở bộ chọn ở từng field<br><strong>When</strong> tìm kiếm và chọn người phụ trách<br><strong>Then</strong> mỗi field chỉ cho chọn đúng role và chỉ cập nhật field đang thao tác</td>
+<td>- <code>Phụ trách chính</code> chỉ có <code>Class Handler</code><br>- <code>CSKH chính</code> chỉ có <code>Support</code><br>- Không hiển thị/cho chọn người sai role<br>- Không sao chép lựa chọn giữa hai field</td>
+</tr>
+<tr>
+<td>Case 19: Backend từ chối người phụ trách sai role</td>
+<td>High</td>
+<td></td>
+<td>EX08 / REQ09</td>
+<td><code>Admin</code> hoặc <code>Class Handler</code></td>
+<td>Có ID người dùng thuộc role không hợp lệ</td>
+<td><strong>Given</strong> client sửa request để gán sai role<br><strong>When</strong> gửi request tạo lớp<br><strong>Then</strong> backend từ chối toàn bộ request</td>
+<td>- Phụ trách chính phải là Class Handler<br>- CSKH chính phải là Support<br>- Không tạo lớp một phần<br>- Trả lỗi xác định đúng field sai role</td>
+</tr>
+<tr>
+<td>Case 22: Từ chối dữ liệu ngoài phạm vi hoặc không còn hoạt động</td>
+<td>High</td>
+<td></td>
+<td>EX10 / Ràng buộc phạm vi dữ liệu</td>
+<td><code>Admin</code> hoặc <code>Class Handler</code></td>
+<td>Khóa học, Class Handler hoặc Support đã ngừng hoạt động, bị xóa hoặc ngoài phạm vi trước khi xác nhận</td>
+<td><strong>Given</strong> popup vẫn đang giữ dữ liệu đã chọn trước đó<br><strong>When</strong> người dùng xác nhận tạo lớp<br><strong>Then</strong> backend từ chối toàn bộ request và yêu cầu chọn lại dữ liệu hợp lệ</td>
+<td>- Không tạo lớp một phần<br>- Không làm lộ dữ liệu ngoài phạm vi<br>- Chỉ báo lỗi tại dữ liệu không còn hợp lệ<br>- Người dùng có thể chọn lại và thử lại</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="phan-quyen-tao-lop-va-du-lieu-bat-buoc">Phân quyền tạo lớp và dữ liệu bắt buộc</h3>
+<p><strong>Mô tả:</strong></p>
+<p>Quy định người được mở popup/tạo lớp và validation bắt buộc trước khi lưu.</p>
+<p><strong>Giải thích:</strong></p>
+<ul>
+<li>Chỉ role <code>Admin</code> và <code>Class Handler</code> được tạo lớp. Các role khác không hiển thị thao tác tạo lớp và không được tạo lớp bằng request trực tiếp.</li>
+<li>Sáu field bắt buộc khi tạo lớp gồm: <code>Khóa học</code>, <code>Loại lớp</code>, <code>Mã lớp</code>, <code>Phụ trách chính</code>, <code>CSKH chính</code> và <code>Mô tả</code>.</li>
+</ul>
+<p><strong>Điểm cần lưu ý:</strong></p>
+<ul>
+<li>Nếu thiếu một trong sáu field, hoặc giá trị text bắt buộc chỉ chứa khoảng trắng, hệ thống không gửi/lưu lớp và hiển thị lỗi tại đúng field.</li>
+<li>Backend phải kiểm tra lại toàn bộ field bắt buộc và role của người được gán; không chỉ dựa vào validation phía giao diện.</li>
+</ul>
+<h4 id="testcase-phan-quyen-tao-lop-va-du-lieu-bat-buoc">Testcase — Phân quyền tạo lớp và dữ liệu bắt buộc</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 17: Chỉ Admin và Class Handler được tạo lớp</td>
+<td>High</td>
+<td></td>
+<td>EX01 / REQ08 / Ràng buộc quyền</td>
+<td>Kiểm thử lần lượt nhiều role</td>
+<td>Tài khoản <code>Admin</code>, <code>Class Handler</code>, <code>Support</code> và role khác đang hoạt động</td>
+<td><strong>Given</strong> người dùng truy cập Danh sách lớp<br><strong>When</strong> kiểm tra nút tạo lớp và gửi request tạo lớp<br><strong>Then</strong> chỉ <code>Admin</code> và <code>Class Handler</code> được phép tạo</td>
+<td>- Admin và Class Handler thấy nút <code>+</code> và tạo được lớp hợp lệ<br>- Role khác không thấy thao tác tạo<br>- Backend từ chối request trực tiếp của role khác<br>- Không phát sinh dữ liệu khi bị từ chối</td>
+</tr>
+<tr>
+<td>Case 18: Kiểm tra sáu field bắt buộc</td>
+<td>High</td>
+<td></td>
+<td>EX07 / REQ01</td>
+<td><code>Admin</code> hoặc <code>Class Handler</code></td>
+<td>Popup tạo lớp đang mở</td>
+<td><strong>Given</strong> lần lượt bỏ trống từng field bắt buộc hoặc nhập text chỉ có khoảng trắng<br><strong>When</strong> bấm <code>Xác Nhận</code><br><strong>Then</strong> hệ thống không tạo lớp và báo lỗi tại field tương ứng</td>
+<td>- Kiểm tra đủ Khóa học, Loại lớp, Mã lớp, Phụ trách chính, CSKH chính, Mô tả<br>- Không gửi request khi lỗi được phát hiện ở UI<br>- Backend vẫn từ chối nếu request thiếu field<br>- Các field hợp lệ không bị báo lỗi sai</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="trang-thai-sau-khi-tao-lop">Trạng thái sau khi tạo lớp</h3>
+<p><strong>Mô tả:</strong></p>
+<p>Giải thích trạng thái ban đầu của lớp sau khi người dùng xác nhận tạo lớp.</p>
+<p><strong>Giải thích:</strong></p>
+<p>Tên trạng thái chính thức dùng trong requirement là <code>Mới tạo</code>, <code>Khai giảng</code>, <code>Đang học</code>. Hành động “Bắt đầu lớp” chuyển lớp từ <code>Khai giảng</code> sang <code>Đang học</code>.</p>
+<ul>
+<li>Tạo lớp <strong>không có lịch dạy</strong>: trạng thái ban đầu là <code>Mới tạo</code>.</li>
+<li>Tạo lớp <strong>có ít nhất một lịch dạy hợp lệ</strong>: trạng thái ban đầu tự động là <code>Khai giảng</code>.</li>
+<li>Lớp <code>Mới tạo</code> được thêm lịch dạy hợp lệ sau khi tạo: tự động chuyển sang <code>Khai giảng</code>.</li>
+</ul>
+<p><strong>Điểm cần lưu ý:</strong></p>
+<ul>
+<li>Không cho chuyển <code>Mới tạo</code> sang <code>Khai giảng</code> khi chưa có lịch dạy.</li>
+<li>Link Meet không quyết định trạng thái <code>Mới tạo</code> hay <code>Khai giảng</code>; điều kiện phân biệt là lớp có lịch dạy hay chưa.</li>
+</ul>
+<h4 id="testcase-trang-thai-sau-khi-tao-lop">Testcase — Trạng thái sau khi tạo lớp</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 7: Tạo lớp không có lịch dạy</td>
+<td>High</td>
+<td>Smoke</td>
+<td>REQ04</td>
+<td><code>Admin</code> hoặc <code>Class Handler</code></td>
+<td>Dữ liệu bắt buộc hợp lệ; không thêm lịch</td>
+<td><strong>Given</strong> lớp có hoặc không có Meet nhưng chưa có lịch<br><strong>When</strong> tạo thành công<br><strong>Then</strong> trạng thái là <code>Mới tạo</code></td>
+<td>- Meet không tự làm lớp thành <code>Khai giảng</code><br>- Số buổi vẫn lấy theo Khóa học<br>- Một notification thành công</td>
+</tr>
+<tr>
+<td>Case 8: Tạo lớp có lịch dạy</td>
+<td>High</td>
+<td>Smoke</td>
+<td>REQ03 / REQ04</td>
+<td><code>Admin</code> hoặc <code>Class Handler</code></td>
+<td>Có ít nhất một lịch hợp lệ</td>
+<td><strong>Given</strong> popup chính chứa lịch đã xác nhận<br><strong>When</strong> tạo thành công<br><strong>Then</strong> trạng thái tự động là <code>Khai giảng</code></td>
+<td>- Không cần chuyển trạng thái riêng<br>- Meet chưa có không làm lớp quay về <code>Mới tạo</code><br>- Lịch lưu đúng lớp</td>
+</tr>
+<tr>
+<td>Case 9: Thêm lịch cho lớp Mới tạo</td>
+<td>High</td>
+<td></td>
+<td>REQ04</td>
+<td>Role được cấp quyền sửa lớp</td>
+<td>Lớp <code>Mới tạo</code> chưa có lịch</td>
+<td><strong>Given</strong> thêm lịch hợp lệ sau khi tạo lớp<br><strong>When</strong> backend lưu thành công<br><strong>Then</strong> tự chuyển sang <code>Khai giảng</code></td>
+<td>- Lịch và trạng thái cập nhật cùng lớp<br>- Lưu lỗi vẫn giữ <code>Mới tạo</code></td>
+</tr>
+<tr>
+<td>Case 10: Không cho Khai giảng khi chưa có lịch</td>
+<td>High</td>
+<td></td>
+<td>REQ04</td>
+<td>Role được cấp quyền sửa lớp</td>
+<td>Lớp <code>Mới tạo</code> chưa có lịch</td>
+<td><strong>Given</strong> request chuyển trực tiếp sang <code>Khai giảng</code><br><strong>When</strong> backend kiểm tra<br><strong>Then</strong> từ chối</td>
+<td>- Vẫn là <code>Mới tạo</code><br>- Không thay đổi một phần<br>- Báo thiếu lịch dạy</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="rang-buoc-lien-quan-en-trang-thai-ang-hoc">Ràng buộc liên quan đến trạng thái Đang học</h3>
+<p><strong>Mô tả:</strong></p>
+<p>Thao tác chuyển trạng thái được thực hiện tại màn Chi tiết lớp và sẽ được đặc tả đầy đủ trong requirement Chi tiết lớp. Requirement này ghi nhận các ràng buộc nghiệp vụ dùng chung:</p>
+<p><strong>Giải thích:</strong></p>
+<ul>
+<li>Chỉ cho chuyển <code>Khai giảng</code> sang <code>Đang học</code> khi đồng thời thỏa tất cả điều kiện:<ul>
+<li>Lớp đã có Link Google Meet.</li>
+<li>Đã đạt Tiêu chuẩn GV.</li>
+<li>Đã hoàn tất đúng Quy trình lớp.</li>
+<li>Có ít nhất 1 học viên ở trạng thái <code>Đang học</code> và tất cả học viên ở trạng thái này đã đáp ứng điều kiện học phí theo requirement riêng.</li>
+</ul>
+</li>
+<li>Thiếu bất kỳ điều kiện nào thì lớp vẫn ở <code>Khai giảng</code> và hệ thống phải cho biết điều kiện còn thiếu.</li>
+<li>Khi chuyển một học viên sang <code>Đang học</code>, hồ sơ học viên đó bắt buộc đã có hóa đơn học phí. Chưa có hóa đơn thì không cho chuyển.</li>
+</ul>
+<p><strong>Điểm cần lưu ý:</strong></p>
+<ul>
+<li>Cách xác định học viên “đã đóng học phí” tuân theo requirement học phí riêng và không được tự định nghĩa trong requirement lớp.</li>
+<li>Các điều kiện nghiệp vụ trong mục này không áp dụng cho lớp đã tick <code>Lớp không chính thức</code>, nhưng quyền và phạm vi dữ liệu vẫn phải được kiểm tra.</li>
+</ul>
+<h4 id="testcase-rang-buoc-lien-quan-en-trang-thai-ang-hoc">Testcase — Ràng buộc liên quan đến trạng thái Đang học</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Case 11: Chuyển lớp sang Đang học</td>
+<td>High</td>
+<td>Smoke</td>
+<td>REQ05</td>
+<td><code>Class Handler</code></td>
+<td>Có Meet, đạt Tiêu chuẩn GV, hoàn tất Quy trình; có ít nhất 1 học viên Đang học và toàn bộ nhóm này đủ học phí</td>
+<td><strong>Given</strong> tất cả điều kiện đều thỏa<br><strong>When</strong> Bắt đầu lớp<br><strong>Then</strong> chuyển sang <code>Đang học</code></td>
+<td>- Backend kiểm tra từng học viên Đang học<br>- Không yêu cầu học phí của học viên chưa ở trạng thái Đang học<br>- Cập nhật đúng lớp</td>
+</tr>
+<tr>
+<td>Case 12: Chặn Đang học khi thiếu điều kiện</td>
+<td>High</td>
+<td></td>
+<td>EX05 / REQ05</td>
+<td><code>Class Handler</code></td>
+<td>Thiếu ít nhất một điều kiện</td>
+<td><strong>Given</strong> thiếu Meet, Tiêu chuẩn GV, Quy trình, không có học viên Đang học hoặc có học viên Đang học chưa đủ học phí<br><strong>When</strong> Bắt đầu lớp<br><strong>Then</strong> hệ thống từ chối</td>
+<td>- Vẫn ở <code>Khai giảng</code><br>- Báo đúng điều kiện/học viên chưa đạt<br>- Không cập nhật một phần</td>
+</tr>
+<tr>
+<td>Case 13: Chặn học viên Đang học khi chưa có hóa đơn</td>
+<td>High</td>
+<td></td>
+<td>EX05 / REQ05</td>
+<td>Role được cấp quyền tại Chi tiết lớp</td>
+<td>Học viên chưa có hóa đơn</td>
+<td><strong>Given</strong> chọn trạng thái <code>Đang học</code> cho học viên<br><strong>When</strong> xác nhận<br><strong>Then</strong> hệ thống từ chối</td>
+<td>- Trạng thái không đổi<br>- Yêu cầu thêm hóa đơn trước<br>- Không dùng hóa đơn của học viên khác</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="toast-phan-hoi-crud">Toast phản hồi CRUD</h3>
+<p align="center">
+  <a href="../../images/01-toast-crud.png"><img src="../../images/01-toast-crud.png" alt="Bốn trạng thái Toast CRUD" width="520" title="Nhấn để xem ảnh gốc"></a><br>
+  <em>Toast phản hồi Create, Update, Delete và đổi trạng thái — nhấn để xem ảnh gốc</em>
+</p>
+
+<p><strong>Mô tả:</strong> Toast phản hồi kết quả các thao tác thay đổi dữ liệu trong requirement này.</p>
+<p><strong>Giải thích thành phần:</strong></p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Loại</th>
+<th>Tiêu đề</th>
+<th>Khi sử dụng</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Thành công</td>
+<td><code>Thành Công</code></td>
+<td>Backend xác nhận thao tác thành công.</td>
+</tr>
+<tr>
+<td>Thông tin</td>
+<td><code>Thông Báo</code></td>
+<td>Thao tác đã tiếp nhận nhưng dữ liệu cần thời gian đồng bộ.</td>
+</tr>
+<tr>
+<td>Cảnh báo</td>
+<td><code>Cảnh Báo</code></td>
+<td>Dữ liệu/điều kiện cần người dùng kiểm tra.</td>
+</tr>
+<tr>
+<td>Lỗi</td>
+<td><code>Có Lỗi Xảy Ra</code></td>
+<td>Backend/network không hoàn tất thao tác.</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Điểm cần lưu ý:</strong> Nội dung dòng hai lấy từ flow CRUD tương ứng; mỗi thao tác chỉ có một Toast; Hủy/chỉ đọc không có Toast CRUD; nút <code>×</code> đóng thủ công; không hiển thị dữ liệu nhạy cảm.</p>
+<h4 id="testcase-toast-phan-hoi-crud">Testcase — Toast phản hồi CRUD</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tên testcase</th>
+<th>Priority</th>
+<th>Loại test</th>
+<th>Scenario</th>
+<th>Role</th>
+<th>Pre-condition</th>
+<th>Given / When / Then</th>
+<th>Expected Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Toast Case 1: Thành công</td>
+<td>High</td>
+<td></td>
+<td>Ràng buộc Toast CRUD</td>
+<td>Role có quyền CRUD</td>
+<td>Dữ liệu hợp lệ</td>
+<td><strong>Given</strong> người dùng xác nhận thay đổi<br><strong>When</strong> backend thành công<br><strong>Then</strong> hiển thị Toast <code>Thành Công</code></td>
+<td>- Đúng nội dung nghiệp vụ<br>- Đúng một Toast<br>- Chỉ hiện sau khi backend xác nhận</td>
+</tr>
+<tr>
+<td>Toast Case 2: Cảnh báo</td>
+<td>High</td>
+<td></td>
+<td>Ràng buộc Toast CRUD</td>
+<td>Role có quyền CRUD</td>
+<td>Dữ liệu/điều kiện chưa hợp lệ</td>
+<td><strong>Given</strong> thao tác chưa đủ điều kiện<br><strong>When</strong> người dùng xác nhận<br><strong>Then</strong> hiển thị Toast <code>Cảnh Báo</code> nếu flow có Toast validation</td>
+<td>- Không lưu dữ liệu sai<br>- Vẫn đánh dấu field lỗi<br>- Không hiện thành công</td>
+</tr>
+<tr>
+<td>Toast Case 3: Lỗi</td>
+<td>High</td>
+<td></td>
+<td>Ràng buộc Toast CRUD</td>
+<td>Role có quyền CRUD</td>
+<td>Backend/network lỗi</td>
+<td><strong>Given</strong> request hợp lệ đã gửi<br><strong>When</strong> xử lý thất bại<br><strong>Then</strong> hiển thị Toast <code>Có Lỗi Xảy Ra</code></td>
+<td>- Không cập nhật một phần<br>- Cho phép thử lại<br>- Không lộ lỗi kỹ thuật</td>
+</tr>
+<tr>
+<td>Toast Case 4: Thông tin, đóng và chống lặp</td>
+<td>Medium</td>
+<td></td>
+<td>Ràng buộc Toast CRUD</td>
+<td>Role có quyền CRUD</td>
+<td>Đang đồng bộ hoặc Toast đang hiển thị</td>
+<td><strong>Given</strong> thao tác xử lý bất đồng bộ hoặc callback lặp<br><strong>When</strong> UI nhận trạng thái hoặc người dùng bấm <code>×</code><br><strong>Then</strong> hiển thị tối đa một Toast <code>Thông Báo</code> và cho đóng thủ công</td>
+<td>- Không báo thành công sớm<br>- Không nhân đôi Toast<br>- Đóng không hoàn tác dữ liệu</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="2-yeu-cau">2. Yêu cầu</h2>
+<h3 id="21-flow-chinh">2.1. Flow chính</h3>
+<p><strong>Flow 1 / REQ01–REQ04: Tạo lớp học</strong></p>
+<pre><code class="language-text">Admin hoặc Class Handler bấm nút + tại Danh sách lớp
+      → Popup tải danh sách Khóa học đã define
+      → Chọn Khóa học; hệ thống hiển thị đúng Số buổi
+      → Nếu là Admin, có thể tick Lớp không chính thức để tạo lớp test; Class Handler chỉ tạo lớp chính thức
+      → Nhập đủ Khóa học, Loại lớp, Mã lớp, Phụ trách chính, CSKH chính và Mô tả
+      → Phụ trách chính chỉ chọn Class Handler; CSKH chính chỉ chọn Support
+      → Có thể thêm lịch dạy cố định
+      → Hủy: đóng popup, không tạo lớp
+      → Xác Nhận: backend kiểm tra quyền, dữ liệu, Khóa học, Số buổi và lịch dạy
+      → Không có lịch dạy: tạo lớp ở trạng thái Mới tạo
+      → Có lịch dạy hợp lệ: tạo lớp ở trạng thái Khai giảng
+      → Thành công: thêm lớp vào danh sách và hiển thị notification thành công
+      → Thất bại: không tạo lớp một phần hoặc tạo trùng do gửi lặp
+</code></pre>
+<h3 id="22-ngoai-le">2.2. Ngoại lệ</h3>
+<ul>
+<li><strong>EX01:</strong> Người dùng không có role <code>Admin</code> hoặc <code>Class Handler</code> gửi request tạo lớp trực tiếp → backend từ chối và không tạo dữ liệu.</li>
+<li><strong>EX02:</strong> Danh sách Khóa học tải lỗi hoặc khóa học thiếu cấu hình Số buổi → không cho tạo lớp; hiển thị lỗi và cho phép thử lại.</li>
+<li><strong>EX03:</strong> Lịch dạy có giờ không hợp lệ, không bao gồm Ngày bắt đầu hoặc bị trùng → không đưa lịch lỗi về popup chính và không tạo lớp.</li>
+<li><strong>EX04:</strong> Request tạo lớp thất bại hoặc bị gửi lặp → không tạo lớp một phần hoặc nhiều lớp trùng nhau; hiển thị đúng một notification kết quả.</li>
+<li><strong>EX05:</strong> Request chuyển trạng thái lớp/học viên không thỏa điều kiện → backend từ chối, giữ nguyên trạng thái và trả đúng điều kiện còn thiếu.</li>
+<li><strong>EX06:</strong> Người không có role <code>Admin</code> gửi cờ <code>Lớp không chính thức</code>, hoặc client cố giả lập lớp test → backend từ chối; không tạo lớp test hoặc dữ liệu một phần.</li>
+<li><strong>EX07:</strong> Thiếu <code>Khóa học</code>, <code>Loại lớp</code>, <code>Mã lớp</code>, <code>Phụ trách chính</code>, <code>CSKH chính</code> hoặc <code>Mô tả</code> → không tạo lớp và trả lỗi đúng field thiếu.</li>
+<li><strong>EX08:</strong> Request gán <code>Phụ trách chính</code> không có role <code>Class Handler</code>, hoặc <code>CSKH chính</code> không có role <code>Support</code> → backend từ chối và không tạo lớp.</li>
+<li><strong>EX09:</strong> Request gửi loại lớp ngoài <code>Lớp chung</code>/<code>Lớp 1-1</code>, gửi Link Google Meet không phải URL HTTP(S), hoặc cố ghi đè Ngày kết thúc → backend từ chối dữ liệu không hợp lệ và không tạo lớp.</li>
+<li><strong>EX10:</strong> Khóa học hoặc người dùng được chọn đã ngừng hoạt động, không còn tồn tại hoặc nằm ngoài phạm vi của người tạo tại thời điểm xác nhận → backend từ chối toàn bộ request, không tạo lớp một phần và yêu cầu chọn lại dữ liệu hợp lệ.</li>
+<li><strong>EX11:</strong> Mã lớp sau khi trim và chuẩn hóa in hoa trùng với một lớp đã tồn tại → backend từ chối tạo và báo lỗi tại Mã lớp.</li>
+</ul>
+<h3 id="23-yeu-cau-khac">2.3. Yêu cầu khác</h3>
+<ul>
+<li><strong>REQ01 – Dữ liệu tạo lớp:</strong> Popup hiển thị các field và popup con đã mô tả. <code>Khóa học</code>, <code>Loại lớp</code>, <code>Mã lớp</code>, <code>Phụ trách chính</code>, <code>CSKH chính</code> và <code>Mô tả</code> là bắt buộc. Mã lớp được trim, chuẩn hóa in hoa và kiểm tra duy nhất toàn hệ thống không phân biệt hoa/thường. Backend kiểm tra lại dữ liệu, không tin cậy trạng thái, Số buổi hoặc người phụ trách do client tự gán.</li>
+<li><strong>REQ02 – Khóa học và Số buổi:</strong> Khóa học chỉ lấy từ dữ liệu define. Số buổi của lớp bằng Số buổi của khóa học; người dùng không tự nhập giá trị khác.</li>
+<li><strong>REQ03 – Lịch dạy cố định:</strong> Ngày bắt đầu là buổi 1. Hệ thống sinh các buổi tiếp theo theo lịch cố định, đủ đúng Số buổi của khóa học rồi dừng.</li>
+<li><strong>REQ04 – Trạng thái ban đầu:</strong> Không có lịch dạy tạo trạng thái <code>Mới tạo</code>; có lịch dạy hợp lệ tạo trạng thái <code>Khai giảng</code>. Thêm lịch hợp lệ cho lớp <code>Mới tạo</code> tự chuyển lớp sang <code>Khai giảng</code>.</li>
+<li><strong>REQ05 – Điều kiện Đang học:</strong> Chỉ <code>Class Handler</code> được đổi trạng thái lớp. Chuyển sang <code>Đang học</code> cần Meet, Tiêu chuẩn GV, Quy trình lớp, ít nhất 1 học viên ở trạng thái <code>Đang học</code> và toàn bộ nhóm học viên đó đáp ứng điều kiện học phí. Học viên chỉ được chuyển sang <code>Đang học</code> khi hồ sơ đáp ứng requirement học phí riêng.</li>
+<li><strong>REQ06 – Notification:</strong> Tạo lớp, thêm lịch và chuyển trạng thái thành công/thất bại phải hiển thị đúng một notification sau kết quả backend. Hủy popup không hiển thị notification CUD.</li>
+<li><strong>REQ07 – Lớp không chính thức:</strong> Chỉ <code>Admin</code> được tick để tạo lớp test. Lớp test mở toàn bộ bài học/bài kiểm tra và bỏ qua điều kiện nghiệp vụ khi đổi trạng thái. Class Handler không được tự gán cờ lớp test. Lớp không chính thức không được chuyển ngược thành lớp chính thức.</li>
+<li><strong>REQ08 – Phân quyền tạo lớp:</strong> Chỉ <code>Admin</code> và <code>Class Handler</code> được tạo lớp. Backend phải từ chối request tạo lớp của mọi role khác.</li>
+<li><strong>REQ09 – Role phụ trách:</strong> <code>Phụ trách chính</code> bắt buộc là người dùng có role <code>Class Handler</code>; <code>CSKH chính</code> bắt buộc là người dùng có role <code>Support</code>.</li>
+<li><strong>REQ10 – Ngày kết thúc:</strong> Field chỉ đọc, tự lấy ngày của buổi cuối sau khi sinh đủ số buổi. Không có lịch thì để trống; không nhận giá trị do client tự gửi.</li>
+<li><strong>REQ11 – Loại lớp:</strong> Chỉ chấp nhận <code>Lớp chung</code> và <code>Lớp 1-1</code>. Đây là giá trị phân loại được lưu độc lập với sĩ số; <code>Lớp 1-1</code> có thể có nhiều học viên.</li>
+</ul>
+<h3 id="24-rang-buoc">2.4. Ràng buộc</h3>
+<h4 id="quyen">Quyền</h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Role</th>
+<th style="text-align: center;">Mở popup tạo lớp</th>
+<th style="text-align: center;">Tạo lớp chính thức</th>
+<th style="text-align: center;">Tạo lớp không chính thức</th>
+<th style="text-align: center;">Chọn Phụ trách chính/CSKH chính</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Admin</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+</tr>
+<tr>
+<td>Class Handler</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">✅</td>
+</tr>
+<tr>
+<td>Các role khác</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+</tr>
+</tbody>
+</table></div>
+<ul>
+<li>Không cho phép role bị đánh dấu <code>❌</code> thực hiện hành động bằng cách mở URL, sửa giao diện hoặc gửi request trực tiếp.</li>
+<li>Quyền tạo lớp test không làm mất yêu cầu kiểm tra role và phạm vi dữ liệu.</li>
+</ul>
+<h4 id="pham-vi-va-bao-mat-du-lieu">Phạm vi và bảo mật dữ liệu</h4>
+<ul>
+<li>Backend phải kiểm tra role tạo lớp (<code>Admin</code> hoặc <code>Class Handler</code>), chỉ cho <code>Admin</code> gán cờ <code>Lớp không chính thức</code>, và kiểm tra phạm vi dữ liệu trước khi lưu.</li>
+<li>Khóa học, người dùng được chọn và dữ liệu liên quan phải thuộc phạm vi mà người tạo được phép sử dụng.</li>
+<li>Khóa học, lớp, lịch dạy, người phụ trách, CSKH và học viên phải liên kết bằng định danh nội bộ.</li>
+<li>Không dùng tên hoặc mã hiển thị làm khóa phân quyền/cập nhật.</li>
+<li>Nội dung Mô tả/Ghi chú phải được lưu và hiển thị an toàn, không thực thi HTML/script.</li>
+</ul>
+<h4 id="tinh-toan-ven-du-lieu-va-notification">Tính toàn vẹn dữ liệu và notification</h4>
+<ul>
+<li>Chỉ thông báo thành công sau khi backend xác nhận toàn bộ lớp và lịch hợp lệ đã được lưu.</li>
+<li>Không lưu lớp một phần nếu tạo lớp hoặc lưu lịch thất bại.</li>
+<li>Mỗi thao tác tạo lớp chỉ hiển thị một notification kết quả; request gửi lặp không được tạo lớp hoặc notification thành công trùng.</li>
+<li>Notification không được chứa stack trace, token, định danh nội bộ hoặc thông tin kỹ thuật nhạy cảm.</li>
+</ul>
+<h2 id="3-can-xac-nhan">3. Cần xác nhận</h2>
+<ul>
+<li>Giá trị mặc định của checkbox <code>Lớp không chính thức</code>.</li>
+<li>Nội dung chính xác của notification khi tạo lớp thành công hoặc thất bại.</li>
+</ul>
+</article>
+    <p class="source-note">Nguồn: class_creation_requirements.md · SHA-256 45f907e912a643b2f7feb3b0258a66f8447e293218fa131eada5520e28ed4eb8</p>
+  </main>
+  <script>
+    const article = document.getElementById('document');
+    const nav = document.getElementById('docNav');
+    const headings = [...article.querySelectorAll('h2')];
+    headings.forEach((heading, index) => {
+      const link = document.createElement('a');
+      link.href = `#${heading.id}`;
+      const number = document.createElement('span');
+      number.className = 'nav-num';
+      number.textContent = String(index + 1).padStart(2, '0');
+      link.append(number, document.createTextNode(heading.textContent));
+      nav.append(link);
+    });
+
+    const navLinks = [...nav.querySelectorAll('a')];
+    const observer = new IntersectionObserver(entries => {
+      const current = entries.filter(item => item.isIntersecting).sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
+      if (!current) return;
+      navLinks.forEach(link => link.classList.toggle('active', link.hash === `#${current.target.id}`));
+    }, {rootMargin: '-18% 0px -68% 0px', threshold: [0, .2, .5]});
+    headings.forEach(heading => observer.observe(heading));
+    if (navLinks[0]) navLinks[0].classList.add('active');
+
+    const testcaseHeadings = [...article.querySelectorAll('h4, h5')]
+      .filter(heading => heading.textContent.trim().startsWith('Testcase'));
+    const testcaseGroups = testcaseHeadings
+      .map(heading => ({heading, tableWrap: heading.nextElementSibling}))
+      .filter(group => group.tableWrap?.classList.contains('table-wrap'));
+    if (testcaseGroups.length) {
+        const tableWraps = testcaseGroups.map(group => group.tableWrap);
+        tableWraps.forEach(tableWrap => tableWrap.classList.add('testcase-table'));
+        const rows = tableWraps.flatMap(tableWrap => [...tableWrap.querySelectorAll('tbody tr')]);
+        const tools = document.createElement('div');
+        tools.className = 'case-tools';
+        const input = document.createElement('input');
+        input.type = 'search';
+        input.placeholder = 'Tìm testcase, Flow, REQ, EX hoặc nội dung…';
+        input.setAttribute('aria-label', 'Tìm testcase');
+        const count = document.createElement('span');
+        count.className = 'case-count';
+        tools.append(input, count);
+        testcaseGroups[0].heading.before(tools);
+        const filterRows = () => {
+          const query = input.value.trim().toLocaleLowerCase('vi');
+          let visible = 0;
+          rows.forEach(row => {
+            const match = !query || row.textContent.toLocaleLowerCase('vi').includes(query);
+            row.hidden = !match;
+            if (match) visible += 1;
+          });
+          testcaseGroups.forEach(({heading, tableWrap}) => {
+            const hasVisibleRow = [...tableWrap.querySelectorAll('tbody tr')]
+              .some(row => !row.hidden);
+            heading.hidden = !hasVisibleRow;
+            tableWrap.hidden = !hasVisibleRow;
+          });
+          count.textContent = `${visible}/${rows.length} testcase`;
+        };
+        input.addEventListener('input', filterRows);
+        filterRows();
+    }
+  </script>
+</body>
+</html>
