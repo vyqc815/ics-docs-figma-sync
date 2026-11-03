@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { BookOpenText, CircleAlert, FileText, Layers, LayoutGrid, MonitorSmartphone } from "lucide-react";
+import { BookOpenText, CircleAlert, Layers, LayoutGrid, MonitorSmartphone } from "lucide-react";
 
 const ITEMS = [
   { href: "/hub", label: "Tổng quan", icon: LayoutGrid, exact: true },
@@ -10,7 +10,6 @@ const ITEMS = [
   { href: "/hub/requirement", label: "Requirement", icon: BookOpenText },
   { href: "/hub/man", label: "Màn hình", icon: MonitorSmartphone },
   { href: "/hub/chua-gan-ma", label: "Chưa gắn mã", icon: CircleAlert },
-  { href: "/hub/quy-uoc", label: "Quy ước mã", icon: FileText },
 ];
 
 /** Sidebar links; the active one gets the violet bar like the reference design. */
