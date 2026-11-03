@@ -21,14 +21,17 @@ const RequirementsPage = (): React.JSX.Element => {
                   ? `/hub/cum/${cluster}?tab=requirement&file=${encodeURIComponent(f.path)}`
                   : `/hub/requirement/xem?f=${encodeURIComponent(f.path)}`;
                 return (
-                  <li key={f.path}>
-                    <Link href={href} className="flex items-center gap-3 py-2.5 hover:text-(--hub-accent)">
+                  <li key={f.path} className="flex items-center gap-3">
+                    <Link href={href} className="flex min-w-0 flex-1 items-center gap-3 py-2.5 hover:text-(--hub-accent)">
                       <span className="w-[90px] shrink-0 font-mono text-(--hub-accent)">{f.prefix || "—"}</span>
                       <span className="min-w-0 flex-1 truncate">{f.title}</span>
                       <span className="hidden text-xs text-(--hub-faint) md:block">
                         {mapped}/{f.pages.length} trang có mã màn
                       </span>
                       {!cluster && <Tag tone="gray">Chưa có màn Figma</Tag>}
+                    </Link>
+                    <Link href={`/hub/requirement/sua?f=${encodeURIComponent(f.path)}`} className="rounded-lg bg-(--hub-panel-2) px-3 py-1 text-xs hover:text-(--hub-accent)">
+                      Sửa
                     </Link>
                   </li>
                 );

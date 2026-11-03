@@ -107,9 +107,14 @@ function Requirement({ r, base, file }: { r: Registry; base: string; file?: stri
             ))}
           </div>
         )}
-        <p className="mb-4 font-mono text-xs text-(--hub-faint)">
-          {current.prefix} · docs/requirements/{current.file}
-        </p>
+        <div className="mb-4 flex items-center justify-between gap-3">
+          <p className="font-mono text-xs text-(--hub-faint)">
+            {current.prefix} · docs/requirements/{current.file}
+          </p>
+          <Link href={`/hub/requirement/sua?f=${encodeURIComponent(current.file)}`} className="rounded-lg bg-(--hub-panel-2) px-3 py-1.5 text-xs hover:text-(--hub-accent)">
+            Sửa requirement
+          </Link>
+        </div>
         {text ? <RequirementMarkdown file={current.file} text={text} /> : <p>Không đọc được file.</p>}
       </Panel>
       <aside className="hidden xl:block">
