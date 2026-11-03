@@ -12,6 +12,7 @@ const FRAME_NAME = /^(?:[①-⑳] \S+ · )?([A-Z]{2,4}(?:-[A-Z]{1,4})+-\d{6}(?:-
 
 /** Frames found on Figma after the last deploy, kept while this instance is warm. */
 const found = new Map<string, string>();
+const NO_STORE = { "Cache-Control": "no-store" };
 
 type SectionNodes = { nodes?: Record<string, { document?: { children?: { id: string; name: string; type: string }[] } } | null> };
 
@@ -54,7 +55,8 @@ function notDrawn(code: string): Response {
 /**
  * GET /api/figma-frame/<MÃ>.png → the frame's current render on Figma, so a requirement
  * that embeds this URL always shows the latest design. Rendered through the Figma REST API
- * (no plugin); the CDN keeps it a minute, then asks Figma again. A code not drawn yet shows
+ * (no plugin); the CDN keeps it 5 minutes, then refreshes it in the background. Errors are never cached,
+ * so a busy Figma API leaves the last good image in place. A code not drawn yet shows
  * a "Chưa có thiết kế" card and turns into the real image once design draws the frame.
  */
 export async function GET(_req: Request, { params }: { params: Promise<{ code: string }> }): Promise<Response> {
@@ -68,14 +70,15 @@ export async function GET(_req: Request, { params }: { params: Promise<{ code: s
   const api = `https://api.figma.com/v1/images/${config.fileKey}?ids=${encodeURIComponent(nodeId)}&format=png&scale=1`;
   const rendered = await fetch(api, { headers: { "X-Figma-Token": token }, cache: "no-store" });
   const url = rendered.ok ? ((await rendered.json()) as { images?: Record<string, string | null> }).images?.[nodeId] : null;
-  if (!url) return new Response(`Figma không trả ảnh cho ${code} (${rendered.status}).`, { status: 502 });
+  if (!url) return new Response(`Figma không trả ảnh cho ${code} (${rendered.status}).`, { status: 502, headers: NO_STORE });
 
   const png = await fetch(url, { cache: "no-store" });
-  if (!png.ok || !png.body) return new Response("Không tải được ảnh từ Figma.", { status: 502 });
+  if (!png.ok || !png.body) return new Response("Không tải được ảnh từ Figma.", { status: 502, headers: NO_STORE });
   return new Response(png.body, {
     headers: {
       "Content-Type": "image/png",
-      "Cache-Control": "public, max-age=60, s-maxage=60, stale-while-revalidate=300",
+      // 5 minutes fresh; after that the CDN serves the cached image at once and refreshes it in the background
+      "Cache-Control": "public, max-age=300, s-maxage=300, stale-while-revalidate=86400",
     },
   });
 }
