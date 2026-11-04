@@ -88,7 +88,10 @@ const SyncPage = async ({ searchParams }: { searchParams: Promise<{ tt?: string 
                         <Link href={`/hub/man/${c.code.replace(/-DK$/, "")}`} className="font-mono text-(--hub-accent) hover:underline">
                           {c.code}
                         </Link>{" "}
-                        {c.what} · {time(c.at)}
+                        {c.what} · {time(c.at)} ·{" "}
+                        <Link href={`/hub/man/${c.code.replace(/-DK$/, "")}?xem=so-sanh`} className="hover:text-(--hub-accent)">
+                          trước / sau
+                        </Link>
                       </li>
                     ))}
                     {r.changes.length > 4 && <li>… và {r.changes.length - 4} lần đổi khác</li>}

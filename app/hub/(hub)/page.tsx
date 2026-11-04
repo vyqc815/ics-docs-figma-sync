@@ -5,7 +5,7 @@ import { ClusterGrid } from "@/components/qc/cluster-grid";
 import { PageHead, Panel, SearchBox, Stat, Tag } from "@/components/qc/ui";
 import { clusters, frames, registry, requirementFiles, reserved, search, stats, unmappedPages } from "@/lib/qc/data";
 
-const KIND_TONE = { "màn": "violet", "cụm": "gray", "item": "green", "yêu cầu": "amber", testcase: "red" } as const;
+const KIND_TONE = { "màn": "violet", "cụm": "gray", "item": "green", "yêu cầu": "amber", testcase: "red", "tài liệu": "violet" } as const;
 
 /** Overview: totals, search across every code, and the clusters. */
 const Overview = async ({ searchParams }: { searchParams: Promise<{ q?: string }> }): Promise<React.JSX.Element> => {
@@ -20,7 +20,7 @@ const Overview = async ({ searchParams }: { searchParams: Promise<{ q?: string }
   return (
     <>
       <PageHead title="Tổng quan" sub="Mọi màn Figma, requirement QC và testcase nối bằng cùng một mã · cập nhật tự động từ main">
-        <SearchBox defaultValue={q} placeholder="Tìm mã màn, item (A03.07), REQ, testcase, tên màn…" />
+        <SearchBox defaultValue={q} placeholder="Tìm mã màn, item (A03.07), REQ, testcase, tên màn, chữ trong tài liệu…" />
       </PageHead>
 
       {q && (

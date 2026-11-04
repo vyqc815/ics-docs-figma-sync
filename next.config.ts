@@ -6,6 +6,9 @@ const figmaSources = ["./figma.pages.json", "./docs/pages/**/*", "./components/f
 const qcSources = ["./figma.pages.json", "./docs/requirements/**/*", "./docs/he-thong-ma/**/*", "./scripts/figma/screen-requirements.json"];
 
 const nextConfig: NextConfig = {
+  // NEXT_OUTPUT=standalone: a self-contained server bundle for the company server (deploy.yml, job "server");
+  // Vercel builds leave it unset.
+  ...(process.env.NEXT_OUTPUT === "standalone" ? { output: "standalone" as const } : {}),
   outputFileTracingIncludes: {
     "/figma/[name]/spec": figmaSources,
     "/figma/[name]/code": figmaSources,

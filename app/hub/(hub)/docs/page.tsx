@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { History, PencilLine } from "lucide-react";
+import { Download, History, PencilLine } from "lucide-react";
 
 import { FigmaPanel, type PanelScreen } from "@/components/qc/figma-panel";
 import { RequirementMarkdown } from "@/components/qc/markdown";
@@ -10,6 +10,8 @@ import { STATES, syncRowsCached } from "@/lib/qc/dong-bo";
 import { clusterOfFile, figmaUrl, frames, requirementFiles, requirementMarkdown } from "@/lib/qc/data";
 
 import { markSynced } from "../dong-bo/actions";
+import { saveTags } from "./actions";
+import { DOC_META, readJson, type DocMeta } from "@/lib/qc/store";
 
 export const dynamic = "force-dynamic";
 
@@ -36,6 +38,7 @@ const DocPage = async ({ searchParams }: { searchParams: Promise<{ f?: string }>
     .sort((a, b) => (text.indexOf(a.code) + 1 || Infinity) - (text.indexOf(b.code) + 1 || Infinity));
   const cluster = clusterOfFile(f);
   const back = `/hub/docs?f=${encodeURIComponent(f)}`;
+  const tags = (await readJson<DocMeta>(DOC_META, {}).catch((): DocMeta => ({})))[f]?.tags ?? [];
 
   return (
     <div className="flex items-start">
@@ -61,6 +64,9 @@ const DocPage = async ({ searchParams }: { searchParams: Promise<{ f?: string }>
               <PencilLine className="size-4" />
             </Link>
           )}
+          <a href={`/hub/tai-md?f=${encodeURIComponent(f)}`} title="Tải file MD" className="rounded-lg p-2 text-(--hub-muted) hover:bg-(--hub-panel-2) hover:text-(--hub-text)">
+            <Download className="size-4" />
+          </a>
           <Link href="/hub/dong-bo" title="Lịch sử đồng bộ" className="rounded-lg p-2 text-(--hub-muted) hover:bg-(--hub-panel-2) hover:text-(--hub-text)">
             <History className="size-4" />
           </Link>
@@ -79,6 +85,28 @@ const DocPage = async ({ searchParams }: { searchParams: Promise<{ f?: string }>
         <article className="rounded-[20px] bg-(--hub-panel) px-6 py-6">
           <div className="mb-4 flex flex-wrap items-center gap-2">
             {info?.prefix && <Tag tone="violet">{info.prefix}</Tag>}
+            {tags.map((t) => (
+              <Link key={t} href={`/hub/tag?t=${encodeURIComponent(t)}`} className="rounded-full bg-(--hub-panel-2) px-2.5 py-0.5 text-xs text-(--hub-muted) hover:text-(--hub-accent)">
+                #{t}
+              </Link>
+            ))}
+            {can(me, "edit") && (
+              <details className="relative">
+                <summary className="cursor-pointer list-none rounded-full px-2 py-0.5 text-xs text-(--hub-faint) hover:text-(--hub-accent) [&::-webkit-details-marker]:hidden">
+                  {tags.length ? "Sửa tag" : "+ Tag"}
+                </summary>
+                <form action={saveTags} className="absolute z-10 mt-1 flex w-72 gap-2 rounded-xl border border-(--hub-line) bg-(--hub-panel-2) p-2">
+                  <input type="hidden" name="file" value={f} />
+                  <input
+                    name="tags"
+                    defaultValue={tags.join(", ")}
+                    placeholder="course, homework"
+                    className="min-w-0 flex-1 rounded-lg border border-(--hub-line) bg-(--hub-panel) px-2 py-1 text-xs outline-none focus:border-(--hub-accent)"
+                  />
+                  <button className="rounded-lg bg-(--hub-accent-strong) px-2.5 text-xs font-semibold text-white">Lưu</button>
+                </form>
+              </details>
+            )}
             {cluster && (
               <Link href={`/hub/cum/${cluster}`} className="text-xs text-(--hub-muted) hover:text-(--hub-accent)">
                 Item, testcase của cụm →

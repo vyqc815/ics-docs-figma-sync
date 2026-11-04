@@ -18,7 +18,7 @@ export function DocTree({ groups }: { groups: TreeGroup[] }): React.JSX.Element 
   const f = useSearchParams().get("f") ?? "";
   const open = path === "/hub/docs" ? f : "";
   return (
-    <div className="mt-6 border-t border-(--hub-line) pt-5">
+    <div className="mt-6 hidden border-t border-(--hub-line) pt-5 lg:block">
       <p className="mb-2 px-4 text-[11px] font-semibold tracking-wider text-(--hub-faint) uppercase">Tài liệu</p>
       <div className="space-y-0.5">
         {groups.map((g) => (

@@ -1,0 +1,41 @@
+{
+ "account_management/account_management.md": {
+  "tags": [
+   "master"
+  ]
+ },
+ "course_management/course_management.md": {
+  "tags": [
+   "course",
+   "cd"
+  ]
+ },
+ "course_management/homework-test/homework-test.md": {
+  "tags": [
+   "course",
+   "homework",
+   "test",
+   "cd"
+  ]
+ },
+ "course_management/knowledge-s1/knowledge-s1.md": {
+  "tags": [
+   "course",
+   "knowledge",
+   "cd"
+  ]
+ },
+ "curriculum_management_requirement/level_management/level_management.md": {
+  "tags": [
+   "curriculum",
+   "level"
+  ]
+ },
+ "meeting_schedule/meeting_schedule.md": {
+  "tags": [
+   "meeting",
+   "class-handler",
+   "admin"
+  ]
+ }
+}

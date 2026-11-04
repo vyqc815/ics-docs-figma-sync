@@ -184,7 +184,7 @@ export function unmappedPages(): { file: string; page: string; reason: string; c
     });
 }
 
-export type Hit = { kind: "cụm" | "màn" | "item" | "yêu cầu" | "testcase"; code: string; title: string; href: string; sub?: string };
+export type Hit = { kind: "cụm" | "màn" | "item" | "yêu cầu" | "testcase" | "tài liệu"; code: string; title: string; href: string; sub?: string };
 
 /** Search codes and names across every cluster: screens, items, REQ/EX and testcases. */
 export function search(q: string, limit = 60): Hit[] {
@@ -211,6 +211,15 @@ export function search(q: string, limit = 60): Hit[] {
       if (hit(t.id) || hit(t.title)) out.push({ kind: "testcase", code: t.id, title: t.title, href: `/hub/cum/${c.name}?tab=testcase#${t.id}`, sub: c.title });
     if (out.length >= limit * 3) break;
   }
-  const order = { "màn": 0, "cụm": 1, "yêu cầu": 2, "item": 3, "testcase": 4 };
+  // full text of the documents: one hit per file, the first matching line as the snippet
+  if (needle.length >= 3)
+    for (const f of requirementFiles()) {
+      const text = requirementMarkdown(f.path);
+      const at = text?.toLowerCase().indexOf(needle) ?? -1;
+      if (!text || at < 0) continue;
+      const line = text.slice(text.lastIndexOf("\n", at) + 1, (text.indexOf("\n", at) + 1 || text.length + 1) - 1).replace(/[#*`>|_[\]]/g, " ").replace(/\s+/g, " ").trim();
+      out.push({ kind: "tài liệu", code: f.prefix || "—", title: f.title, href: `/hub/docs?f=${encodeURIComponent(f.path)}`, sub: line.slice(0, 160) });
+    }
+  const order = { "màn": 0, "tài liệu": 1, "cụm": 2, "yêu cầu": 3, "item": 4, "testcase": 5 };
   return out.sort((a, b) => order[a.kind] - order[b.kind]).slice(0, limit);
 }

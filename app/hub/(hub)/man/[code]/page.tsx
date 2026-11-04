@@ -3,6 +3,9 @@ import { notFound } from "next/navigation";
 import { Code2, PenTool } from "lucide-react";
 
 import { KindTag, LiveShot, PageHead, Panel, PriorityTag, StatusTag, TabBar, Tag } from "@/components/qc/ui";
+import { session } from "@/lib/qc/auth";
+import { PROGRESS, PROGRESS_LABEL, readJson, type Progress } from "@/lib/qc/store";
+import { setProgress } from "../../docs/actions";
 import { builtPage, clusterOfFile, clustersOf, figmaUrl, frames, navRow, registry, requirementPages, reserved } from "@/lib/qc/data";
 
 /** Site of vyqc815/ics-docs-figma-sync (BA docs ↔ Figma), opened on the screen's code. */
@@ -48,8 +51,12 @@ const ScreenPage = async ({ params, searchParams }: { params: Promise<{ code: st
     { key: "figma", label: "Figma", href: `${base}figma` },
     ...(demo ? [{ key: "demo", label: "Demo thật", href: `${base}demo` }] : []),
     ...(built ? [{ key: "spec", label: "Spec MD", href: `${base}spec` }] : []),
+    ...(built && frame ? [{ key: "so-sanh", label: "Trước / sau", href: `${base}so-sanh` }] : []),
   ];
-  const view = xem === "demo" && demo ? "demo" : xem === "spec" && built ? "spec" : "figma";
+  const view = xem === "demo" && demo ? "demo" : xem === "spec" && built ? "spec" : xem === "so-sanh" && built && frame ? "so-sanh" : "figma";
+  const me = await session();
+  const progress = (await readJson<Progress>(PROGRESS, {}).catch((): Progress => ({})))[code] ?? {};
+  const mine = me ? progress[me.name]?.s : undefined;
 
   return (
     <>
@@ -63,12 +70,48 @@ const ScreenPage = async ({ params, searchParams }: { params: Promise<{ code: st
           <NavTags code={code} />
           {!frame && <Tag tone="gray">Chưa có thiết kế</Tag>}
         </div>
+        {me && frame && (
+          <form action={setProgress} className="flex items-center gap-1 rounded-xl bg-(--hub-panel) p-1 text-xs" title="Tiến độ của bạn ở màn này">
+            <input type="hidden" name="code" value={code} />
+            <span className="px-2 text-(--hub-muted)">Tôi:</span>
+            {(["", "dang", "xong"] as const).map((v) => (
+              <button
+                key={v}
+                name="s"
+                value={v}
+                className={`rounded-lg px-2.5 py-1 ${(mine ?? "") === v ? "bg-(--hub-accent-strong) text-white" : "text-(--hub-muted) hover:text-(--hub-text)"}`}
+              >
+                {v ? PROGRESS_LABEL[v] : "Chưa làm"}
+              </button>
+            ))}
+          </form>
+        )}
+        {Object.keys(progress).length > 0 && (
+          <p className="w-full text-xs text-(--hub-muted)">
+            {Object.entries(progress)
+              .map(([name, p]) => `${name}: ${PROGRESS_LABEL[p.s]}`)
+              .join(" · ")}
+          </p>
+        )}
       </PageHead>
       <Panel className="mb-6">
         <div className="mb-4">
           <TabBar tabs={views} active={view} />
         </div>
         {view === "figma" && <LiveShot code={code} className="min-h-[260px]" live />}
+        {view === "so-sanh" && (
+          <div className="grid gap-3 lg:grid-cols-2">
+            <figure>
+              <figcaption className="mb-1.5 text-xs text-(--hub-muted)">Trước · bản export lúc sinh code gần nhất</figcaption>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src={`/figma-ref/${code}.png`} alt={`${code} trước`} className="w-full rounded-xl border border-(--hub-line)" />
+            </figure>
+            <figure>
+              <figcaption className="mb-1.5 text-xs text-(--hub-muted)">Sau · Figma hiện tại</figcaption>
+              <LiveShot code={code} live />
+            </figure>
+          </div>
+        )}
         {view === "demo" && demo && (
           <>
             <iframe src={demo} title={`${code} · demo`} className="h-[78vh] min-h-[560px] w-full rounded-xl border border-(--hub-line) bg-white" />
