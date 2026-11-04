@@ -24,6 +24,7 @@ jobs:
           ssh -i ~/.ssh/id_deploy -p "${PORT:-22}" -o StrictHostKeyChecking=accept-new "$USER@$HOST" '
             set -e
             cd /opt/docs-figma/app
+            git fetch -q origin web-cu && git checkout -q web-cu && git pull -q --ff-only origin web-cu
             set -a; [ -f .env ] && . ./.env; set +a
             .venv/bin/python scripts/figma_check.py --thumbs
             .venv/bin/mkdocs build -q

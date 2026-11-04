@@ -1,10 +1,12 @@
-name: Deploy
+name: Deploy web cũ (MkDocs)
+
+# Web cũ ở nhánh web-cu (main giờ là web gộp QC Hub). Push vào web-cu thì server pull nhánh này rồi restart.
 
 # Push code lên main thì server tự git pull rồi restart (dev.sh build lại site khi khởi động).
 # Cần secrets: DEPLOY_HOST, DEPLOY_USER, DEPLOY_SSH_KEY, DEPLOY_PORT nếu SSH không ở port 22 (private key, public key đã nằm trong ~/.ssh/authorized_keys của server).
 on:
   push:
-    branches: [main]
+    branches: [web-cu]
     paths-ignore: ["sync/**", "**.md"]   # commit snapshot của Figma check không cần deploy
   workflow_dispatch:
 
@@ -25,7 +27,7 @@ jobs:
           ssh -i ~/.ssh/id_deploy -p "${PORT:-22}" -o StrictHostKeyChecking=accept-new "$USER@$HOST" '
             set -e
             cd /opt/docs-figma/app
-            git pull --ff-only
+            git fetch -q origin web-cu && git checkout -q web-cu && git pull --ff-only origin web-cu
             .venv/bin/pip install -q -r requirements.txt
             sudo systemctl restart docs-figma
             sleep 5 && systemctl is-active docs-figma
