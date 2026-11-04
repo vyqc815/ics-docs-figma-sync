@@ -19,9 +19,7 @@ const RequirementsPage = async (): Promise<React.JSX.Element> => {
               {list.map((f) => {
                 const cluster = clusterOfFile(f.path);
                 const mapped = f.pages.filter((p) => p.screens.length).length;
-                const href = cluster
-                  ? `/hub/cum/${cluster}?tab=requirement&file=${encodeURIComponent(f.path)}`
-                  : `/hub/requirement/xem?f=${encodeURIComponent(f.path)}`;
+                const href = `/hub/docs?f=${encodeURIComponent(f.path)}`;
                 return (
                   <li key={f.path} className="flex items-center gap-3">
                     <Link href={href} className="flex min-w-0 flex-1 items-center gap-3 py-2.5 hover:text-(--hub-accent)">

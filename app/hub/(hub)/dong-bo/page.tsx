@@ -3,7 +3,6 @@ import Link from "next/link";
 import { PageHead, Panel, Tag } from "@/components/qc/ui";
 import { can, session } from "@/lib/qc/auth";
 import { STATES, syncRows, type State } from "@/lib/qc/dong-bo";
-import { clusterOfFile } from "@/lib/qc/data";
 
 import { markAllUnmarked, markSynced } from "./actions";
 
@@ -59,8 +58,7 @@ const SyncPage = async ({ searchParams }: { searchParams: Promise<{ tt?: string 
       <Panel>
         <ul className="divide-y divide-(--hub-line)/60 text-[13px]">
           {list.map((r) => {
-            const cluster = clusterOfFile(r.file);
-            const href = cluster ? `/hub/cum/${cluster}?tab=requirement&file=${encodeURIComponent(r.file)}` : `/hub/requirement/xem?f=${encodeURIComponent(r.file)}`;
+            const href = `/hub/docs?f=${encodeURIComponent(r.file)}`;
             const s = STATES[r.state];
             return (
               <li key={r.file} className="py-3">

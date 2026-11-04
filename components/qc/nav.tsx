@@ -18,7 +18,7 @@ const ITEMS = [
 export function QcNav(): React.JSX.Element {
   const path = usePathname();
   return (
-    <nav className="hub-scroll flex gap-1 overflow-x-auto lg:mt-10 lg:flex-col lg:overflow-visible">
+    <nav className="hub-scroll flex gap-1 overflow-x-auto lg:flex-col lg:overflow-visible">
       {ITEMS.map(({ href, label, icon: Icon, exact }) => {
         // a cluster page (/hub/cum/…) belongs to the overview, where the clusters are listed
         const active = exact ? path === href || path.startsWith("/hub/cum/") : path === href || path.startsWith(`${href}/`);
@@ -26,13 +26,13 @@ export function QcNav(): React.JSX.Element {
           <Link
             key={href}
             href={href}
-            className={`relative flex shrink-0 items-center gap-3 rounded-xl px-4 py-3 text-[15px] whitespace-nowrap transition-colors ${
+            className={`relative flex shrink-0 items-center gap-3 rounded-xl px-4 py-2.5 text-[14px] whitespace-nowrap transition-colors ${
               active ? "text-(--hub-accent)" : "text-(--hub-muted) hover:bg-(--hub-panel) hover:text-(--hub-text)"
             }`}
           >
             <Icon className="size-[18px]" />
             {label}
-            {active && <span className="absolute top-1.5 -right-[17px] bottom-1.5 hidden w-[3px] rounded-full bg-(--hub-accent) lg:block" />}
+            {active && <span className="absolute top-1.5 -right-[13px] bottom-1.5 hidden w-[3px] rounded-full bg-(--hub-accent) lg:block" />}
           </Link>
         );
       })}

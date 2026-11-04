@@ -153,3 +153,22 @@
 .hub-md .hub-qc-shot:hover {
   color: var(--hub-accent);
 }
+
+/* Screen codes in a document (/hub/docs): open their screen in the Figma panel */
+.hub .hub-fcode {
+  font-family: var(--font-mono, ui-monospace, monospace);
+  font-size: 0.92em;
+  padding: 0 0.3rem;
+  border-radius: 6px;
+  background: var(--hub-accent-soft);
+  color: var(--hub-accent);
+  cursor: pointer;
+  white-space: nowrap;
+}
+.hub .hub-fcode:hover {
+  outline: 1px solid var(--hub-accent);
+}
+.hub .hub-fcode.is-current {
+  background: var(--hub-accent-strong);
+  color: #fff;
+}

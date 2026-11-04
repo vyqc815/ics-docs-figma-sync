@@ -44,6 +44,19 @@ export async function readMarks(): Promise<{ marks: Record<string, Mark>; sha?: 
   return f ? { marks: JSON.parse(f.text), sha: f.sha } : { marks: {} };
 }
 
+/** Short cache: the menu shows a dot per file on every page, two GitHub reads each time would be slow. */
+let cached: { at: number; rows: SyncRow[] } | null = null;
+export const forgetSync = (): void => {
+  cached = null;
+};
+
+export async function syncRowsCached(maxAgeMs = 60_000): Promise<SyncRow[]> {
+  if (cached && Date.now() - cached.at < maxAgeMs) return cached.rows;
+  const rows = await syncRows();
+  cached = { at: Date.now(), rows };
+  return rows;
+}
+
 export async function syncRows(): Promise<SyncRow[]> {
   const [{ marks }, doi] = await Promise.all([readMarks(), readFile(DOI)]);
   const log = (doi ? JSON.parse(doi.text) : {}) as Record<string, { at: string; what: string }[]>;
