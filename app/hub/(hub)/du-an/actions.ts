@@ -1,6 +1,7 @@
 "use server";
 
 import { signedIn } from "@/lib/qc/auth";
+import { readFile, startWorkflow, workflowRuns, writeFile } from "@/lib/qc/github";
 
 /**
  * Reading a Figma file for the "Dự án" page: its pages and sections, then the screens in the parts the
@@ -76,4 +77,88 @@ export async function scanFigmaFile(fileKey: string, pageIds: string[], sectionI
     for (const c of res.nodes[page.id]?.document.children ?? []) visit(c, null, whole);
   }
   return out;
+}
+
+// ---------------------------------------------------------------- projects saved in the repo (docs/du-an)
+
+export type ProjectInfo = { slug: string; name: string; code: string; fileKey: string; fileName: string; pages: string[]; scannedAt: string; count: number };
+export type ProposalRow = {
+  nodeId: string;
+  page: string;
+  section: string;
+  tenHienTai: string;
+  loai: string;
+  maDeXuat: string;
+  tenMoi: string;
+  manGoc: string;
+  mucTin: string;
+  goiYKhac: string;
+  link: string;
+  duyet?: boolean;
+};
+export type Proposal = { project: string; fileKey: string; fileName: string; frames: ProposalRow[] };
+
+const LIST = "docs/du-an/projects.json";
+const slugOf = (name: string) =>
+  name
+    .normalize("NFD")
+    .replace(/[̀-ͯ]/g, "")
+    .replace(/đ/gi, "d")
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-|-$/g, "")
+    .slice(0, 40) || "du-an";
+
+export async function listProjects(): Promise<ProjectInfo[]> {
+  const f = await readFile(LIST);
+  return f ? (JSON.parse(f.text) as ProjectInfo[]) : [];
+}
+
+export async function saveProject(p: Omit<ProjectInfo, "slug" | "count">, screens: Screen[]): Promise<string> {
+  const current = await readFile(LIST);
+  const list: ProjectInfo[] = current ? JSON.parse(current.text) : [];
+  const slug = list.find((x) => x.fileKey === p.fileKey)?.slug ?? slugOf(p.name);
+  const old = await readFile(`docs/du-an/${slug}/screens.json`);
+  await writeFile(`docs/du-an/${slug}/screens.json`, `${JSON.stringify(screens, null, 1)}\n`, `Dự án ${p.name}: ${screens.length} màn quét từ Figma`, old?.sha);
+  const next = [{ ...p, slug, count: screens.length }, ...list.filter((x) => x.slug !== slug)];
+  await writeFile(LIST, `${JSON.stringify(next, null, 1)}\n`, `Dự án ${p.name}: lưu`, current?.sha);
+  return slug;
+}
+
+export async function deleteProject(slug: string): Promise<void> {
+  const current = await readFile(LIST);
+  if (!current) return;
+  const list = (JSON.parse(current.text) as ProjectInfo[]).filter((x) => x.slug !== slug);
+  await writeFile(LIST, `${JSON.stringify(list, null, 1)}\n`, `Dự án ${slug}: bỏ khỏi danh sách`, current.sha);
+}
+
+export async function projectScreens(slug: string): Promise<Screen[]> {
+  const f = await readFile(`docs/du-an/${slug}/screens.json`);
+  return f ? JSON.parse(f.text) : [];
+}
+
+export async function startProposal(slug: string): Promise<void> {
+  const p = (await listProjects()).find((x) => x.slug === slug);
+  if (!p) throw new Error("Không thấy dự án.");
+  await startWorkflow("de-xuat-ma.yml", { slug, file: p.fileKey, project: p.code, pages: p.pages.join(",") });
+}
+
+/** Whether a proposal run is going, and the proposal itself once it exists. */
+export async function proposalState(slug: string): Promise<{ running: boolean; lastRun: string | null; proposal: Proposal | null; sha: string | null }> {
+  const runs = await workflowRuns("de-xuat-ma.yml", 5);
+  const f = await readFile(`docs/du-an/${slug}/de-xuat-ma.json`);
+  return {
+    running: runs.some((r) => r.status !== "completed"),
+    lastRun: runs[0]?.createdAt ?? null,
+    proposal: f ? (JSON.parse(f.text) as Proposal) : null,
+    sha: f?.sha ?? null,
+  };
+}
+
+export async function saveProposal(slug: string, proposal: Proposal, sha: string): Promise<string> {
+  return writeFile(`docs/du-an/${slug}/de-xuat-ma.json`, `${JSON.stringify(proposal, null, 1)}\n`, `Đề xuất mã ${slug}: design duyệt`, sha);
+}
+
+export async function sendToDesign(slug: string, text: string): Promise<void> {
+  await startWorkflow("chat-message.yml", { thread: `design-${slug}`, text });
 }

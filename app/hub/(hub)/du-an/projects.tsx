@@ -1,64 +1,45 @@
 "use client";
 
 import Link from "next/link";
-import { useEffect, useMemo, useState, useTransition } from "react";
+import { useRouter } from "next/navigation";
+import { useState, useTransition } from "react";
 import { ChevronLeft, FolderPlus, Loader2, ScanSearch, Trash2 } from "lucide-react";
 
-import { type Outline, readFigmaFile, type Screen, scanFigmaFile } from "./actions";
+import { deleteProject, type Outline, type ProjectInfo, readFigmaFile, saveProject, type Screen, scanFigmaFile } from "./actions";
 
 /**
- * Projects page (demo): ICS is built in; other projects come from a Figma link → pick pages/sections →
- * scan → screens with live renders. Saved in this browser (localStorage) for the demo; the full version
- * stores them in the repo so the whole team shares them.
+ * Projects page: ICS is built in; other projects come from a Figma link → pick pages/sections → scan →
+ * screens with live renders. Saved in the repo (docs/du-an), shared by the whole team.
  */
-type Project = { id: string; name: string; fileKey: string; fileName: string; scannedAt: string; screens: Screen[] };
-const KEY = "hub-projects";
-const load = (): Project[] => {
-  try {
-    return JSON.parse(localStorage.getItem(KEY) ?? "[]");
-  } catch {
-    return [];
-  }
-};
-const save = (list: Project[]) => {
-  try {
-    localStorage.setItem(KEY, JSON.stringify(list));
-  } catch {
-    // private window: the project lives until the tab closes
-  }
-};
+type Project = { fileKey: string };
 
 const btn = "flex items-center gap-1.5 rounded-xl px-4 py-2.5 text-sm font-medium disabled:opacity-50";
 const primary = `${btn} bg-(--hub-accent-strong) text-white hover:bg-(--hub-accent)`;
 const ghost = `${btn} bg-(--hub-panel-2) hover:text-(--hub-accent)`;
+const initials = (name: string) =>
+  name
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .split(/[^A-Za-z0-9]+/)
+    .filter(Boolean)
+    .map((w) => w[0])
+    .join("")
+    .toUpperCase()
+    .slice(0, 4);
 const thumb = (p: Pick<Project, "fileKey">, s: Screen) => `/hub/node-anh?file=${p.fileKey}&node=${encodeURIComponent(s.id)}&scale=0.25`;
 
-export function Projects({ ics }: { ics: { screens: number; clusters: number } }): React.JSX.Element {
-  const [list, setList] = useState<Project[]>([]);
-  const [view, setView] = useState<{ mode: "list" } | { mode: "new" } | { mode: "open"; id: string }>({ mode: "list" });
-  useEffect(() => setList(load()), []);
-  const update = (next: Project[]) => {
-    setList(next);
-    save(next);
-  };
+export function Projects({ ics, initial }: { ics: { screens: number; clusters: number }; initial: ProjectInfo[] }): React.JSX.Element {
+  const router = useRouter();
+  const [list, setList] = useState(initial);
+  const [adding, setAdding] = useState(false);
+  const [busy, start] = useTransition();
 
-  if (view.mode === "new")
-    return (
-      <NewProject
-        onCancel={() => setView({ mode: "list" })}
-        onSaved={(p) => {
-          update([p, ...list.filter((x) => x.fileKey !== p.fileKey)]);
-          setView({ mode: "open", id: p.id });
-        }}
-      />
-    );
-  const open = view.mode === "open" ? list.find((p) => p.id === view.id) : undefined;
-  if (open) return <ProjectScreens project={open} onBack={() => setView({ mode: "list" })} />;
+  if (adding) return <NewProject onCancel={() => setAdding(false)} onSaved={(slug) => router.push(`/hub/du-an/${slug}`)} />;
 
   return (
     <div className="space-y-4">
       <div className="flex justify-end">
-        <button type="button" className={primary} onClick={() => setView({ mode: "new" })}>
+        <button type="button" className={primary} onClick={() => setAdding(true)}>
           <FolderPlus className="size-4" /> Dự án mới
         </button>
       </div>
@@ -71,32 +52,39 @@ export function Projects({ ics }: { ics: { screens: number; clusters: number } }
           <p className="mt-3 text-xs text-(--hub-green)">● Đang chạy tự động</p>
         </Link>
         {list.map((p) => (
-          <div key={p.id} className="relative rounded-2xl bg-(--hub-panel) p-5 hover:bg-(--hub-panel-2)">
-            <button type="button" className="block w-full text-left" onClick={() => setView({ mode: "open", id: p.id })}>
+          <div key={p.slug} className="relative rounded-2xl bg-(--hub-panel) p-5 hover:bg-(--hub-panel-2)">
+            <Link href={`/hub/du-an/${p.slug}`} className="block">
               <p className="text-lg font-semibold">{p.name}</p>
               <p className="mt-1 text-sm text-(--hub-muted)">
-                {p.screens.length} màn · file “{p.fileName}”
+                {p.count} màn · mã <span className="font-mono">{p.code}</span> · file “{p.fileName}”
               </p>
               <p className="mt-3 text-xs text-(--hub-faint)">Quét lúc {new Date(p.scannedAt).toLocaleString("vi-VN")}</p>
-            </button>
+            </Link>
             <button
               type="button"
-              aria-label="Xoá dự án"
+              aria-label="Bỏ dự án"
+              disabled={busy}
               className="absolute top-4 right-4 text-(--hub-faint) hover:text-(--hub-red)"
-              onClick={() => update(list.filter((x) => x.id !== p.id))}
+              onClick={() =>
+                confirm(`Bỏ dự án “${p.name}” khỏi danh sách?`) &&
+                start(async () => {
+                  await deleteProject(p.slug);
+                  setList(list.filter((x) => x.slug !== p.slug));
+                })
+              }
             >
               <Trash2 className="size-4" />
             </button>
           </div>
         ))}
       </div>
-      <p className="text-xs text-(--hub-faint)">Bản demo: dự án thêm mới lưu trên trình duyệt này. Bản đầy đủ lưu vào repo cho cả team và tự sinh code, registry như ICS.</p>
     </div>
   );
 }
 
-function NewProject({ onCancel, onSaved }: { onCancel: () => void; onSaved: (p: Project) => void }): React.JSX.Element {
+function NewProject({ onCancel, onSaved }: { onCancel: () => void; onSaved: (slug: string) => void }): React.JSX.Element {
   const [name, setName] = useState("");
+  const [code, setCode] = useState("");
   const [link, setLink] = useState("");
   const [outline, setOutline] = useState<Outline | null>(null);
   const [pages, setPages] = useState<Set<string>>(new Set());
@@ -137,7 +125,16 @@ function NewProject({ onCancel, onSaved }: { onCancel: () => void; onSaved: (p: 
 
       <section className="space-y-3 rounded-3xl bg-(--hub-panel) p-5">
         <div className="grid gap-3 md:grid-cols-[1fr_2fr_auto]">
-          <input value={name} onChange={(e) => setName(e.target.value)} placeholder="Tên dự án" className="rounded-xl border border-(--hub-line) bg-(--hub-panel-2) px-4 py-2.5 text-sm outline-none focus:border-(--hub-accent)" />
+          <div className="flex gap-2">
+            <input value={name} onChange={(e) => setName(e.target.value)} placeholder="Tên dự án" className="min-w-0 flex-1 rounded-xl border border-(--hub-line) bg-(--hub-panel-2) px-4 py-2.5 text-sm outline-none focus:border-(--hub-accent)" />
+            <input
+              value={code}
+              onChange={(e) => setCode(e.target.value.toUpperCase().replace(/[^A-Z]/g, "").slice(0, 4))}
+              placeholder="MÃ"
+              title="Tiền tố mã của dự án (2–4 chữ in hoa), VD: ICS"
+              className="w-20 rounded-xl border border-(--hub-line) bg-(--hub-panel-2) px-3 py-2.5 font-mono text-sm outline-none focus:border-(--hub-accent)"
+            />
+          </div>
           <input value={link} onChange={(e) => setLink(e.target.value)} placeholder="Link file Figma: https://www.figma.com/design/…" className="rounded-xl border border-(--hub-line) bg-(--hub-panel-2) px-4 py-2.5 text-sm outline-none focus:border-(--hub-accent)" />
           <button
             type="button"
@@ -151,6 +148,7 @@ function NewProject({ onCancel, onSaved }: { onCancel: () => void; onSaved: (p: 
                 setPages(new Set());
                 setSections(new Set());
                 if (!name) setName(o.name);
+                if (!code) setCode(initials(name || o.name));
               })
             }
           >
@@ -206,10 +204,20 @@ function NewProject({ onCancel, onSaved }: { onCancel: () => void; onSaved: (p: 
             <button
               type="button"
               className={primary}
-              disabled={!screens.length}
-              onClick={() => onSaved({ id: `${outline.fileKey}-${Date.now()}`, name: name || outline.name, fileKey: outline.fileKey, fileName: outline.name, scannedAt: new Date().toISOString(), screens })}
+              disabled={busy || !screens.length || code.length < 2}
+              onClick={() =>
+                run(async () => {
+                  const picked = outline.pages.filter((p) => pages.has(p.id) || p.sections.some((x) => sections.has(x.id))).map((p) => p.name);
+                  onSaved(
+                    await saveProject(
+                      { name: name || outline.name, code, fileKey: outline.fileKey, fileName: outline.name, pages: picked, scannedAt: new Date().toISOString() },
+                      screens,
+                    ),
+                  );
+                })
+              }
             >
-              Lưu dự án
+              {busy ? <Loader2 className="size-4 animate-spin" /> : null} Lưu dự án
             </button>
           </div>
           <Grid project={{ fileKey: outline.fileKey }} screens={screens.slice(0, 24)} />
@@ -220,7 +228,7 @@ function NewProject({ onCancel, onSaved }: { onCancel: () => void; onSaved: (p: 
   );
 }
 
-function Grid({ project, screens }: { project: Pick<Project, "fileKey">; screens: Screen[] }): React.JSX.Element {
+export function Grid({ project, screens }: { project: Pick<Project, "fileKey">; screens: Screen[] }): React.JSX.Element {
   return (
     <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4">
       {screens.map((s) => (
@@ -239,33 +247,6 @@ function Grid({ project, screens }: { project: Pick<Project, "fileKey">; screens
           </span>
         </a>
       ))}
-    </div>
-  );
-}
-
-function ProjectScreens({ project, onBack }: { project: Project; onBack: () => void }): React.JSX.Element {
-  const [kind, setKind] = useState("Tất cả");
-  const [q, setQ] = useState("");
-  const kinds = useMemo(() => ["Tất cả", ...new Set(project.screens.map((s) => s.kind))], [project]);
-  const shown = project.screens.filter((s) => (kind === "Tất cả" || s.kind === kind) && (!q || `${s.code} ${s.name}`.toLowerCase().includes(q.toLowerCase())));
-  return (
-    <div className="space-y-4">
-      <div className="flex flex-wrap items-center gap-3">
-        <button type="button" className={ghost} onClick={onBack}>
-          <ChevronLeft className="size-4" /> Dự án
-        </button>
-        <p className="text-xl font-semibold">{project.name}</p>
-        <span className="text-sm text-(--hub-muted)">{project.screens.length} màn · file “{project.fileName}”</span>
-        <input value={q} onChange={(e) => setQ(e.target.value)} placeholder="Lọc mã hoặc tên…" className="ml-auto w-64 rounded-xl border border-(--hub-line) bg-(--hub-panel) px-4 py-2 text-sm outline-none focus:border-(--hub-accent)" />
-      </div>
-      <div className="flex flex-wrap gap-1.5">
-        {kinds.map((k) => (
-          <button key={k} type="button" onClick={() => setKind(k)} className={`rounded-full px-3 py-1 text-xs ${k === kind ? "bg-(--hub-accent-strong) text-white" : "bg-(--hub-panel-2) text-(--hub-muted)"}`}>
-            {k}
-          </button>
-        ))}
-      </div>
-      <Grid project={project} screens={shown} />
     </div>
   );
 }

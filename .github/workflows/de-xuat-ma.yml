@@ -1,0 +1,50 @@
+# Đề xuất mã cho một dự án Figma chưa có mã (Hub › Dự án › Đề xuất mã gọi workflow này).
+# de_xuat_ma.py đọc file qua REST → docs/du-an/<slug>/de-xuat-ma.{json,csv,md} → commit → báo Chat (luồng design-<dự án>).
+name: Đề xuất mã
+
+on:
+  workflow_dispatch:
+    inputs:
+      slug: { description: "Thư mục dự án (docs/du-an/<slug>)", required: true }
+      file: { description: "fileKey hoặc link Figma", required: true }
+      project: { description: "Tiền tố mã dự án (VD: ABC)", required: true }
+      pages: { description: "Trang Figma, cách nhau dấu phẩy (trống = mọi trang)", required: false, default: "" }
+
+permissions:
+  contents: write
+
+concurrency:
+  group: de-xuat-ma-${{ inputs.slug }}
+  cancel-in-progress: true
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    env:
+      FIGMA_ACCESS_TOKEN: ${{ secrets.FIGMA_ACCESS_TOKEN }}
+      SLUG: ${{ inputs.slug }}
+      FILE: ${{ inputs.file }}
+      PROJECT: ${{ inputs.project }}
+      PAGES: ${{ inputs.pages }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Đề xuất
+        run: |
+          case "$SLUG" in *[!a-z0-9-]*|"") echo "slug không hợp lệ"; exit 1;; esac
+          python3 scripts/he-thong-ma/de_xuat_ma.py de-xuat --file "$FILE" --project "$PROJECT" --pages "$PAGES" --out "docs/du-an/$SLUG" | tail -5
+
+      - name: Commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add "docs/du-an/$SLUG"
+          git diff --cached --quiet && exit 0
+          git commit -m "Đề xuất mã: $SLUG"
+          for i in 1 2 3; do git pull --rebase -q && git push && break; sleep 5; done
+
+      - name: Báo design
+        env:
+          GOOGLE_CHAT_WEBHOOK_URL: ${{ secrets.GOOGLE_CHAT_WEBHOOK_URL }}
+        run: python3 scripts/he-thong-ma/chat_text.py "design-$SLUG" "$(python3 scripts/he-thong-ma/tin_de_xuat.py "$SLUG")"
