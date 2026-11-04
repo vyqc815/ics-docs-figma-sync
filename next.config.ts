@@ -13,6 +13,8 @@ const nextConfig: NextConfig = {
   ...(process.env.NEXT_PUBLIC_BASE_PATH
     ? {
         basePath: process.env.NEXT_PUBLIC_BASE_PATH.replace(/\/$/, ""),
+        // nginx sends /docs-figma to /docs-figma/; stripping that slash again would loop
+        skipTrailingSlashRedirect: true,
         // the sub-path opens the hub (icstestsapi.pls.edu.vn/docs-figma → /docs-figma/hub)
         redirects: async () => [{ source: "/", destination: "/hub", permanent: false }],
       }
