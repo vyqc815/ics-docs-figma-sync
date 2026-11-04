@@ -2,7 +2,8 @@
 # gộp 30 phút (deploy.yml). Đọc Figma qua REST (figma-page export --rest): không cần Figma Desktop.
 #   changes → export --rest + build các màn đổi → nén page-spec → commit → deploy lượt kế tiếp đưa lên demo/Hub.
 # Màn mới vẽ (frame có mã trong phạm vi "scan") được tự đăng ký trước khi so.
-# Cần secret PIPELINE_TOKEN (đọc repo figma-console-mcp-pls) và FIGMA_ACCESS_TOKEN.
+# Cần secret PIPELINE_TOKEN (đọc repo công cụ) và FIGMA_ACCESS_TOKEN. Repo công cụ: biến PIPELINE_REPO / PIPELINE_REF
+# (Settings → Variables), mặc định khanhtruongds-del/figma-console-mcp-pls @ main.
 name: Figma codegen
 
 on:
@@ -29,8 +30,8 @@ jobs:
 
       - uses: actions/checkout@v4
         with:
-          repository: khanhtruongds-del/figma-console-mcp-pls
-          ref: main
+          repository: ${{ vars.PIPELINE_REPO || 'khanhtruongds-del/figma-console-mcp-pls' }}
+          ref: ${{ vars.PIPELINE_REF || 'main' }}
           token: ${{ secrets.PIPELINE_TOKEN }}
           path: .pipeline
 

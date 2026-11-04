@@ -5,7 +5,12 @@ import { signedIn } from "@/lib/qc/auth";
  * files on main, start workflows, read their runs. Data saved here (projects, code proposals) is shared by
  * the whole team and read live, without a deploy.
  */
-const REPO = process.env.GITHUB_REPO ?? "khanhtruongds-del/ics-figma-demo";
+/** This repository: GITHUB_REPO, else the repo Vercel deployed from, else the original one. */
+export const REPO =
+  process.env.GITHUB_REPO ??
+  (process.env.VERCEL_GIT_REPO_OWNER && process.env.VERCEL_GIT_REPO_SLUG
+    ? `${process.env.VERCEL_GIT_REPO_OWNER}/${process.env.VERCEL_GIT_REPO_SLUG}`
+    : "khanhtruongds-del/ics-figma-demo");
 
 async function gh(path: string, init?: RequestInit): Promise<Response> {
   if (!(await signedIn())) throw new Error("Cần đăng nhập Hub.");

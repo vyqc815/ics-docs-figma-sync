@@ -1,14 +1,13 @@
 "use server";
 
 import { signedIn } from "@/lib/qc/auth";
+import { REPO } from "@/lib/qc/github";
 
 /**
  * Editing a QC requirement from the hub: the original file in qc/requirements is read from and committed to
  * GitHub (GITHUB_WRITE_TOKEN: Contents + Actions read/write on this repo). The commit starts requirements.yml
  * (template, codes, registry, Chat); deploy.yml puts it on the hub.
  */
-const REPO = process.env.GITHUB_REPO ?? "khanhtruongds-del/ics-figma-demo";
-
 async function gh(path: string, init?: RequestInit): Promise<Response> {
   if (!(await signedIn())) throw new Error("Cần đăng nhập Hub.");
   const token = process.env.GITHUB_WRITE_TOKEN;
