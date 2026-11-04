@@ -1,24 +1,33 @@
 /* ================= Tokens (light / dark) ================= */
 :root, [data-md-color-scheme="default"] {
-  --bg: #f3f4f7; --card: #ffffff; --line: #eceef3; --fg: #0f172a; --muted: #64748b; --soft: #f6f7fa;
-  --accent: #2563eb; --accent-soft: #eef3ff; --accent-fg: #1d4ed8;
-  --sync-green: #16a34a; --sync-orange: #ea580c; --sync-blue: #2563eb; --sync-red: #dc2626; --sync-gray: #94a3b8;
+  /* Bảng màu QC Hub (tím, kiểu Shield Swap), bản sáng */
+  --bg: #f4f3fa; --card: #ffffff; --line: #e7e5f2; --fg: #14121f; --muted: #6b6880; --soft: #f5f3ff;
+  --accent: #8572ff; --accent-soft: #efecff; --accent-fg: #6a55f0;
+  --sync-green: #16a34a; --sync-orange: #d97706; --sync-blue: #7c6cf5; --sync-red: #dc2626; --sync-gray: #9a98ab;
   --md-default-bg-color: var(--bg); --md-default-fg-color: var(--fg);
-  --md-default-fg-color--light: var(--muted); --md-default-fg-color--lighter: #94a3b8;
+  --md-default-fg-color--light: var(--muted); --md-default-fg-color--lighter: #a3a1b5;
   --md-default-fg-color--lightest: var(--line);
   --md-primary-fg-color: var(--card); --md-primary-bg-color: var(--fg);
-  --md-accent-fg-color: var(--accent); --md-typeset-a-color: var(--accent);
-  --radius: 16px;
+  --md-accent-fg-color: var(--accent); --md-typeset-a-color: var(--accent-fg);
+  --radius: 20px;
 }
 [data-md-color-scheme="slate"] {
-  --bg: #0b1020; --card: #121a2e; --line: #1f2a44; --fg: #e5e7eb; --muted: #94a3b8; --soft: #18223a;
-  --accent: #3b82f6; --accent-soft: #172554; --accent-fg: #93c5fd;
+  /* Bảng màu QC Hub, bản tối (mặc định): nền gần đen, panel xám xanh, nhấn tím */
+  --bg: #05060a; --card: #141720; --line: #252a38; --fg: #e8eaf0; --muted: #8b91a3; --soft: #1a1e29;
+  --accent: #8572ff; --accent-soft: rgb(155 140 255 / .14); --accent-fg: #9b8cff;
+  --sync-green: #4ade80; --sync-orange: #f5a524; --sync-blue: #9b8cff; --sync-red: #f87171; --sync-gray: #5d6375;
   --md-default-bg-color: var(--bg); --md-default-fg-color: var(--fg);
-  --md-default-fg-color--light: var(--muted); --md-default-fg-color--lightest: var(--line);
-  --md-primary-fg-color: var(--card); --md-primary-bg-color: var(--fg);
+  --md-default-fg-color--light: var(--muted); --md-default-fg-color--lighter: #5d6375;
+  --md-default-fg-color--lightest: var(--line);
+  --md-primary-fg-color: #0d0f15; --md-primary-bg-color: var(--fg);
   --md-accent-fg-color: var(--accent); --md-typeset-a-color: var(--accent-fg);
   --md-code-bg-color: var(--soft);
+  --md-footer-bg-color: #0d0f15;
 }
+[data-md-color-scheme="slate"] .md-header { background: #0d0f15; }
+[data-md-color-scheme="slate"] .card,
+[data-md-color-scheme="slate"] .md-sidebar--primary .md-sidebar__scrollwrap { box-shadow: 0 40px 120px -60px rgb(133 114 255 / .35); }
+::selection { background: var(--accent-soft); }
 body { background: var(--bg); }
 .md-grid { max-width: 100%; }
 .md-main__inner { margin-top: 1rem; }
@@ -162,6 +171,8 @@ a.fcode { font-family: var(--md-code-font-family); font-size: .92em; padding: 0 
   background: var(--accent-soft); color: var(--accent-fg); text-decoration: none; white-space: nowrap; }
 a.fcode:hover { outline: 1px solid var(--accent); }
 a.fcode.is-current { background: var(--accent); color: #fff; }
+a.fcode-hub { font-size: .8em; margin-left: .1rem; opacity: .6; text-decoration: none; }
+a.fcode-hub:hover { opacity: 1; }
 code a.fcode { background: none; padding: 0; }
 
 /* ================= Screen browser ================= */

@@ -6,7 +6,7 @@ theme:
   name: material
   language: vi
   custom_dir: overrides
-  font: { text: Inter, code: JetBrains Mono }
+  font: { text: Be Vietnam Pro, code: JetBrains Mono }   # cùng font với QC Hub
   features:
     - navigation.sections
     - navigation.indexes
@@ -14,14 +14,14 @@ theme:
     - search.highlight
     - search.suggest
   palette:
+    - scheme: slate   # mặc định tối như QC Hub
+      primary: custom
+      accent: custom
+      toggle: { icon: material/weather-sunny, name: Chế độ sáng }
     - scheme: default
       primary: custom
       accent: custom
       toggle: { icon: material/weather-night, name: Chế độ tối }
-    - scheme: slate
-      primary: custom
-      accent: custom
-      toggle: { icon: material/weather-sunny, name: Chế độ sáng }
 
 extra_css: [assets/sync.css]
 extra_javascript: [assets/sync.js, assets/search.js, assets/dev.js, assets/screens.js, assets/account.js, assets/tags.js]
