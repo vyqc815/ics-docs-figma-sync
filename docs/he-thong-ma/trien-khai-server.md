@@ -1,13 +1,13 @@
 # Chuyển QC Hub từ Vercel lên server công ty
 
-Server chỉ chạy Node. Code build trên GitHub Actions rồi copy sang qua SSH (server không phải build, khỏi lo thiếu RAM).
+Server chỉ chạy Node. Code build trên GitHub Actions rồi gửi sang qua rsync/SSH (server không phải build, khỏi lo thiếu RAM). Bản build khoảng 1,3 GB (930 màn demo dựng sẵn, ảnh, code sinh): lần đầu gửi đủ, các lần sau chỉ gửi phần đổi. Cần trống khoảng 5 GB.
 Làm một lần, khoảng 20 phút, người có quyền root trên server làm.
 
 ## 1. Trên server
 
 ```bash
 # Node 22
-curl -fsSL https://deb.nodesource.com/setup_22.x | sudo -E bash - && sudo apt-get install -y nodejs
+curl -fsSL https://deb.nodesource.com/setup_22.x | sudo -E bash - && sudo apt-get install -y nodejs rsync
 
 # user chạy Hub + thư mục
 sudo useradd --system --create-home qchub
