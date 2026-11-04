@@ -3,5 +3,385 @@
   "docs": "88e17b2ee089d07b",
   "at": "2026-11-04T04:35:57.007Z",
   "by": "admin"
+ },
+ "account_management/account_management.md": {
+  "docs": "6d34b9e5da0b143d",
+  "at": "2026-11-04T04:38:13.684Z",
+  "by": "admin"
+ },
+ "action_board_requirement/action_board_requirements.md": {
+  "docs": "5091817b993fa97f",
+  "at": "2026-11-04T04:38:13.684Z",
+  "by": "admin"
+ },
+ "appointment_requirement/appointment_requirements.md": {
+  "docs": "405e52075136cc9c",
+  "at": "2026-11-04T04:38:13.684Z",
+  "by": "admin"
+ },
+ "class_handler_support/overview/overview.md": {
+  "docs": "1b3112f3da66172f",
+  "at": "2026-11-04T04:38:13.684Z",
+  "by": "admin"
+ },
+ "class_handler_support/process/process.md": {
+  "docs": "57e1155798259cb8",
+  "at": "2026-11-04T04:38:13.684Z",
+  "by": "admin"
+ },
+ "class_handler_support/statistics/statistics.md": {
+  "docs": "83ad0f8ed699a2f9",
+  "at": "2026-11-04T04:38:13.684Z",
+  "by": "admin"
+ },
+ "course_management/course_management.md": {
+  "docs": "68cad912cd63dcf1",
+  "at": "2026-11-04T04:38:13.684Z",
+  "by": "admin"
+ },
+ "course_management/homework-test/homework-test.md": {
+  "docs": "ede9baa481b9ac28",
+  "at": "2026-11-04T04:38:13.684Z",
+  "by": "admin"
+ },
+ "course_management/knowledge-s1/knowledge-s1.md": {
+  "docs": "4043c3dea0527ea7",
+  "at": "2026-11-04T04:38:13.684Z",
+  "by": "admin"
+ },
+ "course_management/learning-path-s2/learning-path-s2.md": {
+  "docs": "1ef4bce4a9f05006",
+  "at": "2026-11-04T04:38:13.684Z",
+  "by": "admin"
+ },
+ "course_management/library/library.md": {
+  "docs": "d97f7cd8faecf4eb",
+  "at": "2026-11-04T04:38:13.684Z",
+  "by": "admin"
+ },
+ "course_management/overview-s1/overview-s1.md": {
+  "docs": "4fab9cdab70ddb63",
+  "at": "2026-11-04T04:38:13.684Z",
+  "by": "admin"
+ },
+ "course_management/semester/information/information.md": {
+  "docs": "7d0f39e5f8cb6ce6",
+  "at": "2026-11-04T04:38:13.684Z",
+  "by": "admin"
+ },
+ "course_management/semester/lesson/lesson.md": {
+  "docs": "c896076f9528af32",
+  "at": "2026-11-04T04:38:13.684Z",
+  "by": "admin"
+ },
+ "course_management/semester/test/test.md": {
+  "docs": "14373901bf54063a",
+  "at": "2026-11-04T04:38:13.684Z",
+  "by": "admin"
+ },
+ "course_management/skill-s6/skill-s6.md": {
+  "docs": "073851fa98c99ea2",
+  "at": "2026-11-04T04:38:13.684Z",
+  "by": "admin"
+ },
+ "curriculum_management_requirement/category_management/category_management_requirements.md": {
+  "docs": "82aaf1a90278f8c7",
+  "at": "2026-11-04T04:38:13.684Z",
+  "by": "admin"
+ },
+ "curriculum_management_requirement/category_management/detail_category.md": {
+  "docs": "fd8941c38d9d74e7",
+  "at": "2026-11-04T04:38:13.684Z",
+  "by": "admin"
+ },
+ "curriculum_management_requirement/level_management/level_management.md": {
+  "docs": "0778e0e14f394dd7",
+  "at": "2026-11-04T04:38:13.684Z",
+  "by": "admin"
+ },
+ "curriculum_management_requirement/level_management/level_management_requirements.md": {
+  "docs": "36fa3a2016e05473",
+  "at": "2026-11-04T04:38:13.684Z",
+  "by": "admin"
+ },
+ "login_ics/login_requirements.md": {
+  "docs": "7bc983cffa83f2b9",
+  "at": "2026-11-04T04:38:13.684Z",
+  "by": "admin"
+ },
+ "management_requirement/class_management/class_creation_requirements.md": {
+  "docs": "8e869768de0aa33d",
+  "at": "2026-11-04T04:38:13.684Z",
+  "by": "admin"
+ },
+ "management_requirement/class_management/class_detail_appointments_requirements.md": {
+  "docs": "5eb75b8d5523a8bf",
+  "at": "2026-11-04T04:38:13.684Z",
+  "by": "admin"
+ },
+ "management_requirement/class_management/class_detail_homework_tests_requirements.md": {
+  "docs": "0784d7df5afa5b41",
+  "at": "2026-11-04T04:38:13.684Z",
+  "by": "admin"
+ },
+ "management_requirement/class_management/class_detail_information_requirements.md": {
+  "docs": "a6689181aab1fdaf",
+  "at": "2026-11-04T04:38:13.684Z",
+  "by": "admin"
+ },
+ "management_requirement/class_management/class_detail_invoices_requirements.md": {
+  "docs": "28b45cc5ca5a3b9a",
+  "at": "2026-11-04T04:38:13.684Z",
+  "by": "admin"
+ },
+ "management_requirement/class_management/class_detail_journal_requirements.md": {
+  "docs": "926f7ce086cf3db9",
+  "at": "2026-11-04T04:38:13.684Z",
+  "by": "admin"
+ },
+ "management_requirement/class_management/class_detail_kpi_requirements.md": {
+  "docs": "ef24c7a51b622e72",
+  "at": "2026-11-04T04:38:13.684Z",
+  "by": "admin"
+ },
+ "management_requirement/class_management/class_detail_lessons_requirements.md": {
+  "docs": "0db1accc11bbbef2",
+  "at": "2026-11-04T04:38:13.684Z",
+  "by": "admin"
+ },
+ "management_requirement/class_management/class_detail_meetings_requirements.md": {
+  "docs": "674d2544774174c3",
+  "at": "2026-11-04T04:38:13.684Z",
+  "by": "admin"
+ },
+ "management_requirement/class_management/class_detail_messages_requirements.md": {
+  "docs": "6e62e7b06212d3e9",
+  "at": "2026-11-04T04:38:13.684Z",
+  "by": "admin"
+ },
+ "management_requirement/class_management/class_detail_notes_requirements.md": {
+  "docs": "dccbde241226660a",
+  "at": "2026-11-04T04:38:13.684Z",
+  "by": "admin"
+ },
+ "management_requirement/class_management/class_detail_ot_requirements.md": {
+  "docs": "0e9e659b4dcc8ce4",
+  "at": "2026-11-04T04:38:13.684Z",
+  "by": "admin"
+ },
+ "management_requirement/class_management/class_detail_overview_requirements.md": {
+  "docs": "ede391e45c33c0d8",
+  "at": "2026-11-04T04:38:13.684Z",
+  "by": "admin"
+ },
+ "management_requirement/class_management/class_detail_processes_requirements.md": {
+  "docs": "28baa9cb851cfaa2",
+  "at": "2026-11-04T04:38:13.684Z",
+  "by": "admin"
+ },
+ "management_requirement/class_management/class_detail_schedule_requirements.md": {
+  "docs": "f8ff25d7d2617ed1",
+  "at": "2026-11-04T04:38:13.684Z",
+  "by": "admin"
+ },
+ "management_requirement/class_management/class_detail_self_study_requirements.md": {
+  "docs": "37cbf68613f0581c",
+  "at": "2026-11-04T04:38:13.684Z",
+  "by": "admin"
+ },
+ "management_requirement/class_management/class_detail_students_requirements.md": {
+  "docs": "cdefb7bb681c50b8",
+  "at": "2026-11-04T04:38:13.684Z",
+  "by": "admin"
+ },
+ "management_requirement/class_management/class_detail_support_handlers_requirements.md": {
+  "docs": "4bd7b3710bcb4d13",
+  "at": "2026-11-04T04:38:13.684Z",
+  "by": "admin"
+ },
+ "management_requirement/class_management/class_detail_teachers_requirements.md": {
+  "docs": "750e0212d8234e0c",
+  "at": "2026-11-04T04:38:13.684Z",
+  "by": "admin"
+ },
+ "management_requirement/class_management/class_management_requirements.md": {
+  "docs": "5f2afe0b403333c6",
+  "at": "2026-11-04T04:38:13.684Z",
+  "by": "admin"
+ },
+ "management_requirement/salary_management/teacher_salary_requirements.md": {
+  "docs": "f1eb4064bae0f42b",
+  "at": "2026-11-04T04:38:13.684Z",
+  "by": "admin"
+ },
+ "management_requirement/schedule_management/teaching_schedule_requirements.md": {
+  "docs": "f260245babfb3d4d",
+  "at": "2026-11-04T04:38:13.684Z",
+  "by": "admin"
+ },
+ "management_requirement/student_management/student_detail_requirements.md": {
+  "docs": "4d7a0e202b627e0e",
+  "at": "2026-11-04T04:38:13.684Z",
+  "by": "admin"
+ },
+ "management_requirement/student_management/student_management_requirements.md": {
+  "docs": "2ed8b0cc9ec27f9d",
+  "at": "2026-11-04T04:38:13.684Z",
+  "by": "admin"
+ },
+ "management_requirement/teacher_management/teacher_detail_requirements.md": {
+  "docs": "8f23c15b6258471c",
+  "at": "2026-11-04T04:38:13.684Z",
+  "by": "admin"
+ },
+ "management_requirement/teacher_management/teacher_management_requirements.md": {
+  "docs": "323936ec8b8bbf8e",
+  "at": "2026-11-04T04:38:13.684Z",
+  "by": "admin"
+ },
+ "meeting_schedule/meeting_schedule.md": {
+  "docs": "76385a85587ab2ee",
+  "at": "2026-11-04T04:38:13.684Z",
+  "by": "admin"
+ },
+ "process_definition_requirement/process_definition_requirements.md": {
+  "docs": "b2d596f030f7869b",
+  "at": "2026-11-04T04:38:13.684Z",
+  "by": "admin"
+ },
+ "receipt_management/receipt/receipt.md": {
+  "docs": "853720885b6a8b88",
+  "at": "2026-11-04T04:38:13.684Z",
+  "by": "admin"
+ },
+ "receipt_management/tuition_detail/tuition_detail.md": {
+  "docs": "d3f53ea25ab77786",
+  "at": "2026-11-04T04:38:13.684Z",
+  "by": "admin"
+ },
+ "ship_books/message_template/message_template.md": {
+  "docs": "e261b113c5c62b8e",
+  "at": "2026-11-04T04:38:13.684Z",
+  "by": "admin"
+ },
+ "ship_books/ship_books/ship_books.md": {
+  "docs": "3ff52c346c7b6ca5",
+  "at": "2026-11-04T04:38:13.684Z",
+  "by": "admin"
+ },
+ "student_app/account/account.md": {
+  "docs": "c241709a2a2fb160",
+  "at": "2026-11-04T04:38:13.684Z",
+  "by": "admin"
+ },
+ "student_app/alphabet/alphabet.md": {
+  "docs": "26d9226232c2880d",
+  "at": "2026-11-04T04:38:13.684Z",
+  "by": "admin"
+ },
+ "student_app/course/course.md": {
+  "docs": "1f0a0e0dfbd65b09",
+  "at": "2026-11-04T04:38:13.684Z",
+  "by": "admin"
+ },
+ "student_app/home_trial/home_trial.md": {
+  "docs": "6e0d2192aa88dac1",
+  "at": "2026-11-04T04:38:13.684Z",
+  "by": "admin"
+ },
+ "student_app/knowledge/knowledge.md": {
+  "docs": "48d62c401e99c531",
+  "at": "2026-11-04T04:38:13.684Z",
+  "by": "admin"
+ },
+ "student_app/lesson/lesson.md": {
+  "docs": "38772dbe50861d39",
+  "at": "2026-11-04T04:38:13.684Z",
+  "by": "admin"
+ },
+ "student_app/library/library.md": {
+  "docs": "182cfe80f26d74ba",
+  "at": "2026-11-04T04:38:13.684Z",
+  "by": "admin"
+ },
+ "student_app/skill/skill.md": {
+  "docs": "fc4c78e106e02c58",
+  "at": "2026-11-04T04:38:13.684Z",
+  "by": "admin"
+ },
+ "student_app/test/test.md": {
+  "docs": "034b6cc843e8f0bb",
+  "at": "2026-11-04T04:38:13.684Z",
+  "by": "admin"
+ },
+ "survey_bug/survey/01-create-survey/01-create-survey.md": {
+  "docs": "29223c10581277dc",
+  "at": "2026-11-04T04:38:13.684Z",
+  "by": "admin"
+ },
+ "survey_bug/survey/02-assign-survey/02-assign-survey.md": {
+  "docs": "4be9cb82f14b769e",
+  "at": "2026-11-04T04:38:13.684Z",
+  "by": "admin"
+ },
+ "survey_bug/survey/03-take-survey/03-take-survey.md": {
+  "docs": "2ab78e080978bfeb",
+  "at": "2026-11-04T04:38:13.684Z",
+  "by": "admin"
+ },
+ "tag_definition_requirement/tag_definition_requirements.md": {
+  "docs": "a2547dbd0a0efd3a",
+  "at": "2026-11-04T04:38:13.684Z",
+  "by": "admin"
+ },
+ "teacher_role/class/class_course_requirements.md": {
+  "docs": "d182633181b883a2",
+  "at": "2026-11-04T04:38:13.684Z",
+  "by": "admin"
+ },
+ "teacher_role/class/class_evaluation_requirements.md": {
+  "docs": "653e657b3995468f",
+  "at": "2026-11-04T04:38:13.684Z",
+  "by": "admin"
+ },
+ "teacher_role/class/class_information_requirements.md": {
+  "docs": "96a249f78d31b757",
+  "at": "2026-11-04T04:38:13.684Z",
+  "by": "admin"
+ },
+ "teacher_role/class/class_overview_requirements.md": {
+  "docs": "ebeb4b1b22f537e4",
+  "at": "2026-11-04T04:38:13.684Z",
+  "by": "admin"
+ },
+ "teacher_role/class/class_process_requirements.md": {
+  "docs": "aa83d502fe5ab311",
+  "at": "2026-11-04T04:38:13.684Z",
+  "by": "admin"
+ },
+ "teacher_role/class/class_teaching_requirements.md": {
+  "docs": "96348a1569fd6ef1",
+  "at": "2026-11-04T04:38:13.684Z",
+  "by": "admin"
+ },
+ "teacher_role/class_list/class_list_requirements.md": {
+  "docs": "3e0d23b193f6d4b3",
+  "at": "2026-11-04T04:38:13.684Z",
+  "by": "admin"
+ },
+ "teacher_role/history_and_salary/history_and_salary_requirements.md": {
+  "docs": "8aad7c40157edadb",
+  "at": "2026-11-04T04:38:13.684Z",
+  "by": "admin"
+ },
+ "teacher_role/teaching_schedule/teaching_schedule_requirements.md": {
+  "docs": "df891278e9a763f7",
+  "at": "2026-11-04T04:38:13.684Z",
+  "by": "admin"
+ },
+ "tools/move_video/move_video.md": {
+  "docs": "66a0c720f6848a2d",
+  "at": "2026-11-04T04:38:13.684Z",
+  "by": "admin"
  }
 }
