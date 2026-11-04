@@ -12,6 +12,9 @@
   "sourceViewer": true,
   "baseUrl": "http://localhost:3000",
   "thresholds": {},
+  "scan": {
+    "match": "^[A-Z]{2,4}(-[A-Z]{1,4})+-\\d{6}(-DK)?\\s*[—–-]"
+  },
   "pages": [
     {
       "name": "thu-vien-kien-thuc",
@@ -4658,8 +4661,5 @@
       "nodeId": "4885:105184",
       "route": "/frames/gv-ks-010003-dk"
     }
-  ],
-  "scan": {
-    "match": "^[A-Z]{2,4}(-[A-Z]{1,4})+-\\d{6}(-DK)?\\s*[—–-]"
-  }
+  ]
 }
