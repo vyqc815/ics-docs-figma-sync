@@ -165,7 +165,8 @@ class Handler(BaseHTTPRequestHandler):
         self.send_header("Content-Type", mimetypes.guess_type(str(path))[0] or "application/octet-stream")
         if download_name:
             self.send_header("Content-Disposition", "attachment; filename*=UTF-8''" + quote(download_name))
-        self.send_header("Cache-Control", "no-cache")
+        # html/json đổi sau mỗi build mà URL giữ nguyên: không cho trình duyệt giữ bản cũ
+        self.send_header("Cache-Control", "no-store" if path.suffix in (".html", ".json") else "no-cache")
         self.end_headers()
         self.wfile.write(path.read_bytes())
 

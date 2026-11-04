@@ -8,3 +8,4 @@ users.yml
 docs
 sync/dev_marks.json
 sessions.json
+.DS_Store

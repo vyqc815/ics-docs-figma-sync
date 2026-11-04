@@ -3,6 +3,7 @@ import html as html_lib
 import json
 import re
 import sys
+import time
 from pathlib import Path
 
 from mkdocs.plugins import event_priority
@@ -206,6 +207,15 @@ def _code_link(code, frames):
 
 def on_page_content(html, page, config, files):
     return linkify_codes(html)
+
+
+_BUILD_ID = str(int(time.time()))
+_OWN_ASSET = re.compile(r'((?:href|src)="[^"]*assets/(?:sync|search|dev|screens|account|tags)\.(?:css|js))"')
+
+
+def on_post_page(output, page, config):
+    """Version our own css/js per build so browsers never keep the old file after a deploy."""
+    return _OWN_ASSET.sub(rf'\1?v={_BUILD_ID}"', output)
 
 
 def on_page_context(context, page, config, nav):
