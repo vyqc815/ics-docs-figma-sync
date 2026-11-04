@@ -1,6 +1,4 @@
 @import "tailwindcss";
-/* the figma-page pipeline in tools/ is not part of the app */
-@source not "../tools";
 @import "tw-animate-css";
 
 @custom-variant dark (&:is(.dark *));

@@ -2,7 +2,7 @@
 # gộp 30 phút (deploy.yml). Đọc Figma qua REST (figma-page export --rest): không cần Figma Desktop.
 #   changes → export --rest + build các màn đổi → nén page-spec → commit → deploy lượt kế tiếp đưa lên demo/Hub.
 # Màn mới vẽ (frame có mã trong phạm vi "scan") được tự đăng ký trước khi so.
-# Công cụ figma-page nằm trong repo (tools/figma-console-mcp). Cần secret FIGMA_ACCESS_TOKEN.
+# Cần secret PIPELINE_TOKEN (đọc repo figma-console-mcp-pls) và FIGMA_ACCESS_TOKEN.
 name: Figma codegen
 
 on:
@@ -23,18 +23,25 @@ jobs:
     timeout-minutes: 60
     env:
       FIGMA_ACCESS_TOKEN: ${{ secrets.FIGMA_ACCESS_TOKEN }}
-      FIGMA_PAGE: node tools/figma-console-mcp/dist/figma-page.js
+      FIGMA_PAGE: node .pipeline/dist/figma-page.js
     steps:
       - uses: actions/checkout@v4
+
+      - uses: actions/checkout@v4
+        with:
+          repository: khanhtruongds-del/figma-console-mcp-pls
+          ref: feat/screen-registry
+          token: ${{ secrets.PIPELINE_TOKEN }}
+          path: .pipeline
 
       - uses: actions/setup-node@v4
         with:
           node-version: 22
           cache: npm
-          cache-dependency-path: tools/figma-console-mcp/package-lock.json
+          cache-dependency-path: .pipeline/package-lock.json
 
       - name: Build figma-page
-        working-directory: tools/figma-console-mcp
+        working-directory: .pipeline
         run: npm ci --ignore-scripts && npm run build:local
 
       - name: Restore snapshot
