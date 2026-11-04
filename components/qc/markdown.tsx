@@ -3,6 +3,7 @@ import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 
 import { FigmaShot } from "@/components/qc/figma-shot";
+import { BASE, withBase } from "@/lib/base-path";
 
 const QC_SHOT = "qc-shot:";
 
@@ -33,7 +34,9 @@ export function RequirementMarkdown({ file, text }: { file: string; text: string
       <ReactMarkdown
         remarkPlugins={[remarkGfm]}
         urlTransform={(url) =>
-          /^figma:/i.test(url) ? `/api/figma-frame/${url.slice(6).trim().toUpperCase()}.png` : /^(https?:|\/|#|mailto:)/.test(url) ? url : `/hub/anh/${posix.normalize(posix.join(dir, url))}`
+          withBase(
+            /^figma:/i.test(url) ? `/api/figma-frame/${url.slice(6).trim().toUpperCase()}.png` : /^(https?:|\/|#|mailto:)/.test(url) ? url : `/hub/anh/${posix.normalize(posix.join(dir, url))}`,
+          )
         }
         components={{
           h3: ({ children }) => {
@@ -46,7 +49,7 @@ export function RequirementMarkdown({ file, text }: { file: string; text: string
             if (alt?.startsWith(QC_SHOT)) return null;
             // ![](figma:MÃ) in a requirement, or the live image line the conversion adds
             const code = url?.match(/\/api\/figma-frame\/([A-Z0-9-]+)\.png$/)?.[1];
-            if (code) return <FigmaShot code={code} live liveBase={url?.split("/api/")[0] ?? ""} className="my-2.5" />;
+            if (code) return <FigmaShot code={code} live liveBase={url?.split("/api/")[0] ?? BASE} className="my-2.5" />;
             // eslint-disable-next-line @next/next/no-img-element
             return <img src={url} alt={alt ?? ""} loading="lazy" />;
           },

@@ -2,15 +2,17 @@
 
 import { useEffect, useState } from "react";
 
+import { BASE, withBase } from "@/lib/base-path";
+
 /**
  * A screen's Figma image: the render saved at the last export (public/figma-ref, from the CDN, instant)
  * first; with `live`, the current render from Figma is fetched in the background and swapped in when it
  * arrives, so the page is fast and still shows edits made since the last export. A span (block) so it can
  * sit inside the paragraph Markdown puts an image in.
  */
-export function FigmaShot({ code, liveBase = "", live = false, className = "" }: { code: string; liveBase?: string; live?: boolean; className?: string }): React.JSX.Element {
+export function FigmaShot({ code, liveBase = BASE, live = false, className = "" }: { code: string; liveBase?: string; live?: boolean; className?: string }): React.JSX.Element {
 	const liveUrl = `${liveBase}/api/figma-frame/${code}.png`;
-	const [src, setSrc] = useState(`/figma-ref/${code}.png`);
+	const [src, setSrc] = useState(withBase(`/figma-ref/${code}.png`));
 	const [fresh, setFresh] = useState(false);
 	useEffect(() => {
 		if (!live) return;

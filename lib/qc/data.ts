@@ -1,5 +1,6 @@
 import { existsSync, readFileSync } from "node:fs";
 import { join } from "node:path";
+import { withBase } from "@/lib/base-path";
 
 /**
  * Read-only access to the code system for the QC hub (/hub): clusters, registries, requirement
@@ -136,7 +137,7 @@ export function builtPage(code: string): { code: string; spec: string; route: st
   const route = load().pages.get(name);
   return route ? { code: `/figma/${name}/code`, spec: `/figma/${name}/spec`, route } : null;
 }
-export const liveImage = (code: string): string => `/api/figma-frame/${code}.png`;
+export const liveImage = (code: string): string => withBase(`/api/figma-frame/${code}.png`);
 
 export type ClusterStats = { screens: number; files: number; items: number; testcases: number; matched: number; issues: number };
 

@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import { ChevronRight, ChevronsRight, Code2, ExternalLink, MonitorPlay, PanelRightOpen } from "lucide-react";
 
 import { FigmaShot } from "@/components/qc/figma-shot";
+import { BASE } from "@/lib/base-path";
 
 export type PanelScreen = { code: string; title: string; figma?: string; demo?: string; source?: string };
 
@@ -47,7 +48,7 @@ function Fold({ icon, label, src, desktop = false }: { icon: React.ReactNode; la
  * mentions, one at a time as a live Figma image (no Figma sign-in needed). Screen codes in the document text
  * become buttons that open their screen here. The panel is resized by dragging its left edge and can be folded.
  */
-export function FigmaPanel({ screens, docId, liveBase = "" }: { screens: PanelScreen[]; docId: string; liveBase?: string }): React.JSX.Element {
+export function FigmaPanel({ screens, docId, liveBase = BASE }: { screens: PanelScreen[]; docId: string; liveBase?: string }): React.JSX.Element {
   const [code, setCode] = useState(screens[0]?.code ?? "");
   const [width, setWidth] = useState(46);
   const [folded, setFolded] = useState(false);

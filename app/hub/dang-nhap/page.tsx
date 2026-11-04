@@ -6,6 +6,7 @@ import { Logo } from "@/components/qc/logo";
 import { COOKIE, MAX_AGE, checkLogin, passwordSet, token } from "@/lib/qc/auth";
 import { readUsers } from "@/lib/qc/users";
 import "../hub.css";
+import { withBase } from "@/lib/base-path";
 
 export const metadata = { title: "Đăng nhập · QC PLS" };
 
@@ -18,7 +19,7 @@ async function login(form: FormData): Promise<void> {
   const users = name.trim() && name.trim().toLowerCase() !== "admin" ? (await readUsers().catch(() => ({ users: [] }))).users : [];
   const who = checkLogin(name, password, users);
   if (!who) redirect(`/hub/dang-nhap?sai=1&next=${encodeURIComponent(next)}`);
-  (await cookies()).set(COOKIE, token(who), { httpOnly: true, secure: true, sameSite: "lax", path: "/hub", maxAge: MAX_AGE });
+  (await cookies()).set(COOKIE, token(who), { httpOnly: true, secure: true, sameSite: "lax", path: withBase("/hub"), maxAge: MAX_AGE });
   redirect(next.startsWith("/hub") ? next : "/hub");
 }
 

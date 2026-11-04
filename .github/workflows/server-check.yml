@@ -1,0 +1,32 @@
+name: Server check
+
+# Chỉ đọc: xem server công ty (web docs-figma) đang chạy thế nào trước khi đưa Hub lên thay. Không sửa gì.
+# Dùng secrets SSH sẵn có của repo: DEPLOY_HOST, DEPLOY_USER, DEPLOY_SSH_KEY, DEPLOY_PORT (tuỳ chọn).
+on:
+  workflow_dispatch:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Thông tin server
+        env:
+          SSH_KEY: ${{ secrets.DEPLOY_SSH_KEY }}
+          HOST: ${{ secrets.DEPLOY_HOST }}
+          USER: ${{ secrets.DEPLOY_USER }}
+          PORT: ${{ secrets.DEPLOY_PORT }}
+        run: |
+          mkdir -p ~/.ssh && echo "$SSH_KEY" > ~/.ssh/id_deploy && chmod 600 ~/.ssh/id_deploy
+          ssh -i ~/.ssh/id_deploy -p "${PORT:-22}" -o StrictHostKeyChecking=accept-new "$USER@$HOST" '
+            echo "== user: $(whoami) · $(uname -sm) · $(. /etc/os-release 2>/dev/null; echo $PRETTY_NAME)"
+            echo "== node: $(command -v node && node -v || echo không có) · rsync: $(command -v rsync || echo không có)"
+            echo "== đĩa trống:"; df -h /opt | tail -1
+            echo "== RAM:"; free -h | head -2
+            echo "== /opt/docs-figma:"; ls -la /opt/docs-figma 2>&1 | head
+            echo "== dịch vụ docs-figma:"; systemctl cat docs-figma 2>/dev/null | grep -E "^(User|WorkingDirectory|ExecStart|EnvironmentFile)=" ; systemctl is-active docs-figma
+            echo "== cổng web cũ (.env, chỉ tên biến không bí mật):"; grep -E "^(PORT|BASE_PATH|COOKIE_SECURE|DOCS_PULL)=" /opt/docs-figma/app/.env 2>/dev/null
+            echo "== nhánh web cũ:"; git -C /opt/docs-figma/app branch --show-current; git -C /opt/docs-figma/app remote get-url origin
+            echo "== sudo được phép:"; sudo -n -l 2>/dev/null | tail -5 || echo "(không xem được)"
+            echo "== nghe cổng:"; (ss -ltnp 2>/dev/null || netstat -ltn 2>/dev/null) | grep -E ":(8000|8010|8030|3200) " || true
+          '

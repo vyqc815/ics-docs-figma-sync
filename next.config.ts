@@ -9,6 +9,14 @@ const nextConfig: NextConfig = {
   // NEXT_OUTPUT=standalone: a self-contained server bundle for the company server (deploy.yml, job "server");
   // Vercel builds leave it unset.
   ...(process.env.NEXT_OUTPUT === "standalone" ? { output: "standalone" as const } : {}),
+  // NEXT_PUBLIC_BASE_PATH=/docs-figma: served under a sub-path of the company domain (lib/base-path.ts)
+  ...(process.env.NEXT_PUBLIC_BASE_PATH
+    ? {
+        basePath: process.env.NEXT_PUBLIC_BASE_PATH.replace(/\/$/, ""),
+        // the sub-path opens the hub (icstestsapi.pls.edu.vn/docs-figma → /docs-figma/hub)
+        redirects: async () => [{ source: "/", destination: "/hub", permanent: false }],
+      }
+    : {}),
   outputFileTracingIncludes: {
     "/figma/[name]/spec": figmaSources,
     "/figma/[name]/code": figmaSources,

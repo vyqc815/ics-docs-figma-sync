@@ -7,6 +7,7 @@ import { session } from "@/lib/qc/auth";
 import { PROGRESS, PROGRESS_LABEL, readJson, type Progress } from "@/lib/qc/store";
 import { setProgress } from "../../docs/actions";
 import { builtPage, clusterOfFile, clustersOf, figmaUrl, frames, navRow, registry, requirementPages, reserved } from "@/lib/qc/data";
+import { withBase } from "@/lib/base-path";
 
 /** Site of vyqc815/ics-docs-figma-sync (BA docs ↔ Figma), opened on the screen's code. */
 const DOCS_BA = (process.env.DOCS_FIGMA_URL ?? "https://icstestsapi.pls.edu.vn/docs-figma").replace(/\/$/, "");
@@ -104,7 +105,7 @@ const ScreenPage = async ({ params, searchParams }: { params: Promise<{ code: st
             <figure>
               <figcaption className="mb-1.5 text-xs text-(--hub-muted)">Trước · bản export lúc sinh code gần nhất</figcaption>
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src={`/figma-ref/${code}.png`} alt={`${code} trước`} className="w-full rounded-xl border border-(--hub-line)" />
+              <img src={withBase(`/figma-ref/${code}.png`)} alt={`${code} trước`} className="w-full rounded-xl border border-(--hub-line)" />
             </figure>
             <figure>
               <figcaption className="mb-1.5 text-xs text-(--hub-muted)">Sau · Figma hiện tại</figcaption>
@@ -114,11 +115,11 @@ const ScreenPage = async ({ params, searchParams }: { params: Promise<{ code: st
         )}
         {view === "demo" && demo && (
           <>
-            <iframe src={demo} title={`${code} · demo`} className="h-[78vh] min-h-[560px] w-full rounded-xl border border-(--hub-line) bg-white" />
+            <iframe src={withBase(demo)} title={`${code} · demo`} className="h-[78vh] min-h-[560px] w-full rounded-xl border border-(--hub-line) bg-white" />
           </>
         )}
         {view === "spec" && built && (
-          <iframe src={`${built.spec}?embed=1`} title={`${code} · spec`} className="h-[78vh] min-h-[560px] w-full rounded-xl border border-(--hub-line) bg-white" />
+          <iframe src={withBase(`${built.spec}?embed=1`)} title={`${code} · spec`} className="h-[78vh] min-h-[560px] w-full rounded-xl border border-(--hub-line) bg-white" />
         )}
         {(frame || built) && (
           <details className="group mt-3">
@@ -145,7 +146,7 @@ const ScreenPage = async ({ params, searchParams }: { params: Promise<{ code: st
                 </span>
               )}
             </summary>
-            {built && <iframe src={`${built.code}?embed=1`} title={`${code} · code`} loading="lazy" className="mt-3 h-[70vh] w-full rounded-xl bg-white" />}
+            {built && <iframe src={withBase(`${built.code}?embed=1`)} title={`${code} · code`} loading="lazy" className="mt-3 h-[70vh] w-full rounded-xl bg-white" />}
           </details>
         )}
       </Panel>

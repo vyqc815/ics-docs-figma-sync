@@ -137,8 +137,12 @@ jobs:
           restore-keys: next-server-${{ hashFiles('package-lock.json') }}-
 
       - name: Build
+        env:
+          # vars.HUB_BASE_PATH=/docs-figma: the hub answers at https://icstestsapi.pls.edu.vn/docs-figma
+          NEXT_PUBLIC_BASE_PATH: ${{ vars.HUB_BASE_PATH }}
         run: |
           node scripts/figma/copy-refs.mjs
+          node scripts/figma/base-path.mjs
           NEXT_OUTPUT=standalone npx next build
           cp -r public .next/standalone/
           cp -r .next/static .next/standalone/.next/

@@ -6,6 +6,7 @@ import remarkGfm from "remark-gfm";
 import { Loader2, Rocket, Save } from "lucide-react";
 
 import { deployNow, loadOriginal, saveOriginal } from "./actions";
+import { withBase } from "@/lib/base-path";
 
 /** QC edits the original requirement (left) with a live preview (right); saving commits it to GitHub. */
 export function Editor({ file }: { file: string }): React.JSX.Element {
@@ -83,7 +84,7 @@ export function Editor({ file }: { file: string }): React.JSX.Element {
         <div className="hub-scroll hub-md h-[72vh] overflow-y-auto rounded-2xl bg-(--hub-panel) p-5">
           <ReactMarkdown
             remarkPlugins={[remarkGfm]}
-            urlTransform={(u) => (/^figma:/i.test(u) ? `/api/figma-frame/${u.slice(6).trim().toUpperCase()}.png` : /^(https?:|\/|#)/.test(u) ? u : "")}
+            urlTransform={(u) => (/^figma:/i.test(u) ? withBase(`/api/figma-frame/${u.slice(6).trim().toUpperCase()}.png`) : /^(https?:|\/|#)/.test(u) ? u : "")}
           >
             {text}
           </ReactMarkdown>

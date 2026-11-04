@@ -3,6 +3,7 @@ import type { ReactNode } from "react";
 
 import { BackButton } from "@/components/qc/back-button";
 import { FigmaShot } from "@/components/qc/figma-shot";
+import { BASE, withBase } from "@/lib/base-path";
 
 /** Small building blocks of the QC hub, all on the dark panel palette from app/qc/qc.css. */
 
@@ -186,7 +187,7 @@ export function LiveShot({
       code={code}
       className={className}
       live={live}
-      liveBase={process.env.QC_IMAGE_BASE ?? ""}
+      liveBase={process.env.QC_IMAGE_BASE ?? BASE}
     />
   );
 }
@@ -199,7 +200,7 @@ export function SearchBox({
   placeholder: string;
 }): React.JSX.Element {
   return (
-    <form action="/hub" className="w-full max-w-md">
+    <form action={withBase("/hub")} className="w-full max-w-md">
       <input
         name="q"
         defaultValue={defaultValue}

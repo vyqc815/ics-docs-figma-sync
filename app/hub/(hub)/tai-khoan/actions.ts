@@ -5,6 +5,7 @@ import { redirect } from "next/navigation";
 
 import { COOKIE, ROLES, hashPassword, requireRole, session, type Role, type User } from "@/lib/qc/auth";
 import { readUsers, writeUsers } from "@/lib/qc/users";
+import { withBase } from "@/lib/base-path";
 
 /** Account management of the hub: admin adds, changes, removes accounts; everyone changes their own password. */
 const back = (q: string): never => redirect(`/hub/tai-khoan?${q}`);
@@ -65,6 +66,6 @@ export async function changeOwnPassword(form: FormData): Promise<void> {
 }
 
 export async function logout(): Promise<void> {
-  (await cookies()).delete({ name: COOKIE, path: "/hub" });
+  (await cookies()).delete({ name: COOKIE, path: withBase("/hub") });
   redirect("/hub/dang-nhap");
 }

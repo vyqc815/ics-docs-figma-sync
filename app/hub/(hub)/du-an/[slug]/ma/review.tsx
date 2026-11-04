@@ -4,6 +4,7 @@ import { useMemo, useState, useTransition } from "react";
 import { Download, Loader2, Save, Send } from "lucide-react";
 
 import { type Proposal, type ProposalRow, saveProposal, sendToDesign } from "../../actions";
+import { withBase } from "@/lib/base-path";
 
 const CODE = /[A-Z]{2,4}(?:-[A-Z0-9]{1,4})+-\d{6}(?:-DK)?/g;
 
@@ -56,7 +57,7 @@ export function Review({ slug, initial, sha: firstSha }: { slug: string; initial
         >
           {busy ? <Loader2 className="size-4 animate-spin" /> : <Save className="size-4" />} Lưu
         </button>
-        <a href={`/hub/du-an-csv/${slug}`} className="flex items-center gap-1.5 rounded-xl bg-(--hub-panel-2) px-4 py-2.5 text-sm hover:text-(--hub-accent)">
+        <a href={withBase(`/hub/du-an-csv/${slug}`)} className="flex items-center gap-1.5 rounded-xl bg-(--hub-panel-2) px-4 py-2.5 text-sm hover:text-(--hub-accent)">
           <Download className="size-4" /> Tải Excel
         </a>
         <button
@@ -100,7 +101,7 @@ export function Review({ slug, initial, sha: firstSha }: { slug: string; initial
                   <td className="py-2.5 pr-3">
                     <a href={r.link} target="_blank" rel="noreferrer" className="flex items-start gap-3 hover:text-(--hub-accent)">
                       {/* eslint-disable-next-line @next/next/no-img-element */}
-                      <img src={`/hub/node-anh?file=${initial.fileKey}&node=${encodeURIComponent(r.nodeId)}&scale=0.25`} alt="" loading="lazy" className="h-16 w-28 shrink-0 rounded-lg bg-(--hub-panel-3) object-cover object-top" />
+                      <img src={withBase(`/hub/node-anh?file=${initial.fileKey}&node=${encodeURIComponent(r.nodeId)}&scale=0.25`)} alt="" loading="lazy" className="h-16 w-28 shrink-0 rounded-lg bg-(--hub-panel-3) object-cover object-top" />
                       <span className="min-w-0">
                         <span className="line-clamp-2">{r.tenHienTai}</span>
                         <span className="text-[11px] text-(--hub-faint)">{r.section || r.page}</span>

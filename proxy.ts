@@ -28,7 +28,10 @@ export async function proxy(req: NextRequest): Promise<NextResponse> {
   const value = req.cookies.get(COOKIE)?.value;
   if (password && value && (await valid(value, password))) return NextResponse.next();
   if (req.nextUrl.pathname.startsWith("/hub/anh/")) return new NextResponse("Cần đăng nhập.", { status: 401 });
-  const login = new URL("/hub/dang-nhap", req.url);
+  // nextUrl keeps the basePath (/docs-figma on the company server); pathname is without it
+  const login = req.nextUrl.clone();
+  login.pathname = "/hub/dang-nhap";
+  login.search = "";
   login.searchParams.set("next", req.nextUrl.pathname + req.nextUrl.search);
   return NextResponse.redirect(login);
 }

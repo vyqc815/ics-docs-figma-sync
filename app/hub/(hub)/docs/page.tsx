@@ -12,6 +12,7 @@ import { builtPage, clusterOfFile, figmaUrl, frames, requirementFiles, requireme
 import { markSynced } from "../dong-bo/actions";
 import { saveTags } from "./actions";
 import { DOC_META, readJson, type DocMeta } from "@/lib/qc/store";
+import { BASE, withBase } from "@/lib/base-path";
 
 export const dynamic = "force-dynamic";
 
@@ -35,7 +36,7 @@ const DocPage = async ({ searchParams }: { searchParams: Promise<{ f?: string }>
     .filter((c) => all[c])
     .map((c) => {
       const built = builtPage(c);
-      return { code: c, title: all[c].title, figma: figmaUrl(all[c].id), demo: built?.route, source: built ? `${built.code}?embed=1` : undefined };
+      return { code: c, title: all[c].title, figma: figmaUrl(all[c].id), demo: built ? withBase(built.route) : undefined, source: built ? withBase(`${built.code}?embed=1`) : undefined };
     })
     // in the order the document mentions them, so the panel opens on the first screen of the text
     .sort((a, b) => (text.indexOf(a.code) + 1 || Infinity) - (text.indexOf(b.code) + 1 || Infinity));
@@ -67,7 +68,7 @@ const DocPage = async ({ searchParams }: { searchParams: Promise<{ f?: string }>
               <PencilLine className="size-4" />
             </Link>
           )}
-          <a href={`/hub/tai-md?f=${encodeURIComponent(f)}`} title="Tải file MD" className="rounded-lg p-2 text-(--hub-muted) hover:bg-(--hub-panel-2) hover:text-(--hub-text)">
+          <a href={withBase(`/hub/tai-md?f=${encodeURIComponent(f)}`)} title="Tải file MD" className="rounded-lg p-2 text-(--hub-muted) hover:bg-(--hub-panel-2) hover:text-(--hub-text)">
             <Download className="size-4" />
           </a>
           <Link href="/hub/dong-bo" title="Lịch sử đồng bộ" className="rounded-lg p-2 text-(--hub-muted) hover:bg-(--hub-panel-2) hover:text-(--hub-text)">
@@ -122,7 +123,7 @@ const DocPage = async ({ searchParams }: { searchParams: Promise<{ f?: string }>
           </div>
         </article>
       </div>
-      <FigmaPanel screens={screens} docId="doc-body" liveBase={process.env.QC_IMAGE_BASE ?? ""} />
+      <FigmaPanel screens={screens} docId="doc-body" liveBase={process.env.QC_IMAGE_BASE ?? BASE} />
     </div>
   );
 };
