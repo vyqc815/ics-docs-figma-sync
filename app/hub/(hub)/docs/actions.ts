@@ -3,7 +3,9 @@
 import { redirect } from "next/navigation";
 
 import { requireRole, session } from "@/lib/qc/auth";
-import { DOC_META, PROGRESS, updateJson, type DocMeta, type Progress, type ProgressState } from "@/lib/qc/store";
+import { randomBytes } from "node:crypto";
+
+import { COMMENTS, DOC_META, PROGRESS, updateJson, type Comments, type DocMeta, type Progress, type ProgressState } from "@/lib/qc/store";
 
 const tagOf = (s: string): string =>
   s
@@ -42,4 +44,34 @@ export async function setProgress(form: FormData): Promise<void> {
   );
   const back = String(form.get("back") ?? "");
   redirect(back.startsWith("/hub/") ? back : `/hub/man/${code}`);
+}
+
+/** A comment on a requirement for the BA (anyone signed in). */
+export async function addComment(form: FormData): Promise<void> {
+  const me = await session();
+  if (!me) redirect("/hub/dang-nhap");
+  const file = String(form.get("file"));
+  const text = String(form.get("text") ?? "").trim().slice(0, 4000);
+  if (text)
+    await updateJson<Comments>(
+      COMMENTS,
+      {},
+      (c) => ({ ...c, [file]: [...(c[file] ?? []), { id: randomBytes(4).toString("hex"), by: me.name, at: new Date().toISOString(), text }] }),
+      `Góp ý ${file} · ${me.name}`,
+    );
+  redirect(`/hub/docs?f=${encodeURIComponent(file)}#gop-y`);
+}
+
+/** Mark a comment as handled (QC / admin), once the BA changed the doc. */
+export async function resolveComment(form: FormData): Promise<void> {
+  const me = await requireRole("edit");
+  const file = String(form.get("file"));
+  const id = String(form.get("id"));
+  await updateJson<Comments>(
+    COMMENTS,
+    {},
+    (c) => ({ ...c, [file]: (c[file] ?? []).map((x) => (x.id === id ? { ...x, done: { by: me.name, at: new Date().toISOString() } } : x)) }),
+    `Góp ý ${file}: đã xử lý · ${me.name}`,
+  );
+  redirect(`/hub/docs?f=${encodeURIComponent(file)}#gop-y`);
 }

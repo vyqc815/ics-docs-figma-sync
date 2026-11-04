@@ -32,3 +32,12 @@ export const PROGRESS = "docs/hub/tien-do.json";
 export type ProgressState = "dang" | "xong";
 export type Progress = Record<string, Record<string, { s: ProgressState; at: string }>>;
 export const PROGRESS_LABEL: Record<ProgressState, string> = { dang: "Đang làm", xong: "Xong" };
+
+/**
+ * docs/hub/gop-y.json: comments on a requirement file. Where BA docs are the source (DOCS_BA_DIR set, company
+ * server), the hub does not edit requirements; QC and dev leave comments here for the BA to apply on stable.
+ */
+export const COMMENTS = "docs/hub/gop-y.json";
+export type Comment = { id: string; by: string; at: string; text: string; done?: { by: string; at: string } };
+export type Comments = Record<string, Comment[]>;
+export const baDocsMode = (): boolean => !!process.env.DOCS_BA_DIR;
