@@ -141,6 +141,8 @@ jobs:
       - name: Build
         env:
           NEXT_PUBLIC_BASE_PATH: ${{ vars.HUB_BASE_PATH }}
+          # first build without cache (930 screens + standalone tracing) passes Node's ~4GB default heap
+          NODE_OPTIONS: --max-old-space-size=10240
         run: |
           node scripts/figma/copy-refs.mjs
           node scripts/figma/base-path.mjs
