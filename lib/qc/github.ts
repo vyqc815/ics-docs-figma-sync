@@ -10,7 +10,7 @@ export const REPO =
   process.env.GITHUB_REPO ??
   (process.env.VERCEL_GIT_REPO_OWNER && process.env.VERCEL_GIT_REPO_SLUG
     ? `${process.env.VERCEL_GIT_REPO_OWNER}/${process.env.VERCEL_GIT_REPO_SLUG}`
-    : "khanhtruongds-del/ics-figma-demo");
+    : "vyqc815/ics-docs-figma-sync");
 
 async function gh(path: string, init?: RequestInit): Promise<Response> {
   if (!(await signedIn())) throw new Error("Cần đăng nhập Hub.");
