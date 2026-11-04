@@ -7,7 +7,7 @@ import { RequirementMarkdown } from "@/components/qc/markdown";
 import { Tag } from "@/components/qc/ui";
 import { can, session } from "@/lib/qc/auth";
 import { STATES, syncRowsCached } from "@/lib/qc/dong-bo";
-import { clusterOfFile, figmaUrl, frames, requirementFiles, requirementMarkdown } from "@/lib/qc/data";
+import { builtPage, clusterOfFile, figmaUrl, frames, requirementFiles, requirementMarkdown } from "@/lib/qc/data";
 
 import { markSynced } from "../dong-bo/actions";
 import { saveTags } from "./actions";
@@ -33,7 +33,10 @@ const DocPage = async ({ searchParams }: { searchParams: Promise<{ f?: string }>
   const all = frames();
   const screens: PanelScreen[] = (info?.screens ?? [])
     .filter((c) => all[c])
-    .map((c) => ({ code: c, title: all[c].title, figma: figmaUrl(all[c].id) }))
+    .map((c) => {
+      const built = builtPage(c);
+      return { code: c, title: all[c].title, figma: figmaUrl(all[c].id), demo: built?.route, source: built ? `${built.code}?embed=1` : undefined };
+    })
     // in the order the document mentions them, so the panel opens on the first screen of the text
     .sort((a, b) => (text.indexOf(a.code) + 1 || Infinity) - (text.indexOf(b.code) + 1 || Infinity));
   const cluster = clusterOfFile(f);

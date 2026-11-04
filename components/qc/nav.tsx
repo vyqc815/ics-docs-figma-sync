@@ -2,14 +2,13 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { BookOpenText, CircleAlert, CircleHelp, FolderKanban, Hash, LayoutGrid, ListChecks, MonitorSmartphone, RefreshCcw, UserRound } from "lucide-react";
+import { BookOpenText, CircleAlert, CircleHelp, FolderKanban, Hash, LayoutGrid, ListChecks, MonitorSmartphone, UserRound } from "lucide-react";
 
 const ITEMS = [
   { href: "/hub/du-an", label: "Dự án", icon: FolderKanban },
   { href: "/hub", label: "Tổng quan", icon: LayoutGrid, exact: true },
   { href: "/hub/requirement", label: "Requirement", icon: BookOpenText },
   { href: "/hub/man", label: "Màn hình", icon: MonitorSmartphone },
-  { href: "/hub/dong-bo", label: "Đồng bộ", icon: RefreshCcw },
   { href: "/hub/tien-do", label: "Tiến độ dev", icon: ListChecks },
   { href: "/hub/tag", label: "Tag", icon: Hash },
   { href: "/hub/chua-gan-ma", label: "Chưa gắn mã", icon: CircleAlert },

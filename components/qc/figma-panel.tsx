@@ -1,15 +1,46 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import Link from "next/link";
-import { ChevronsRight, ExternalLink, MonitorSmartphone, PanelRightOpen } from "lucide-react";
+import { ChevronRight, ChevronsRight, Code2, ExternalLink, MonitorPlay, PanelRightOpen } from "lucide-react";
 
 import { FigmaShot } from "@/components/qc/figma-shot";
 
-export type PanelScreen = { code: string; title: string; figma?: string };
+export type PanelScreen = { code: string; title: string; figma?: string; demo?: string; source?: string };
 
 const CODE = /\b[A-Z]{2,4}(?:-[A-Z]{1,5})+-\d{6}(?:-DK)?\b/g;
 const WIDTH_KEY = "hub-figma-panel-w";
+
+/** A folded section under the image; the page inside loads only when opened. */
+function Fold({ icon, label, src, desktop = false }: { icon: React.ReactNode; label: string; src: string; desktop?: boolean }): React.JSX.Element {
+  const [open, setOpen] = useState(false);
+  const [scale, setScale] = useState(0.4);
+  const box = useRef<HTMLDivElement>(null);
+  // the demo is laid out at desktop width (1440) and scaled down to the panel, so it looks like the design
+  useEffect(() => {
+    if (!open || !desktop || !box.current) return;
+    const el = box.current;
+    const ro = new ResizeObserver(() => setScale(el.clientWidth / 1440));
+    ro.observe(el);
+    return () => ro.disconnect();
+  }, [open, desktop]);
+  return (
+    <div className="rounded-xl bg-(--hub-panel-2)">
+      <button type="button" onClick={() => setOpen((o) => !o)} className="flex w-full items-center gap-2 px-3 py-2.5 text-[13px] hover:text-(--hub-accent)">
+        <ChevronRight className={`size-4 text-(--hub-faint) transition-transform ${open ? "rotate-90" : ""}`} />
+        {icon}
+        {label}
+      </button>
+      {open &&
+        (desktop ? (
+          <div ref={box} className="overflow-hidden rounded-b-xl border-t border-(--hub-line) bg-white" style={{ height: 900 * scale }}>
+            <iframe src={src} title={label} style={{ width: 1440, height: 900, transform: `scale(${scale})`, transformOrigin: "0 0" }} />
+          </div>
+        ) : (
+          <iframe src={src} title={label} className="h-[70vh] w-full rounded-b-xl border-t border-(--hub-line) bg-white" />
+        ))}
+    </div>
+  );
+}
 
 /**
  * Right-hand Figma panel of a document, like the docs site of ics-docs-figma-sync: the screens the document
@@ -128,13 +159,12 @@ export function FigmaPanel({ screens, docId, liveBase = "" }: { screens: PanelSc
             <ChevronsRight className="size-4" />
           </button>
         </div>
-        <div className="hub-scroll min-h-0 flex-1 overflow-y-auto p-3">
+        <div className="hub-scroll min-h-0 flex-1 space-y-2 overflow-y-auto p-3">
           <FigmaShot key={current.code} code={current.code} live liveBase={liveBase} />
+          {current.demo && <Fold key={`d-${current.code}`} icon={<MonitorPlay className="size-4" />} label="Demo thật" src={current.demo} desktop />}
+          {current.source && <Fold key={`c-${current.code}`} icon={<Code2 className="size-4" />} label="Code" src={current.source} />}
         </div>
         <div className="flex gap-2 border-t border-(--hub-line) p-3 text-[13px]">
-          <Link href={`/hub/man/${current.code}`} className="flex items-center gap-1.5 rounded-xl bg-(--hub-panel-2) px-3 py-2 hover:text-(--hub-accent)">
-            <MonitorSmartphone className="size-4" /> Màn, demo, code
-          </Link>
           {current.figma && (
             <a href={current.figma} target="_blank" rel="noreferrer" className="flex items-center gap-1.5 rounded-xl bg-(--hub-panel-2) px-3 py-2 hover:text-(--hub-accent)">
               <ExternalLink className="size-4" /> Mở Figma
