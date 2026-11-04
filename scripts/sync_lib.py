@@ -40,6 +40,8 @@ CONFIG = yaml.safe_load((SYNC / "config.yml").read_text(encoding="utf-8")) if (S
 FIGMA_FILE_KEY = CONFIG.get("figma_file_key")
 FIGMA_FILE_SLUG = CONFIG.get("figma_file_slug", "file")
 NAV_NODE = CONFIG.get("navigation_node")
+# QC Hub (ics-figma-demo): demo thật, code sinh từ Figma, requirement QC của từng mã màn. Bỏ trống thì không hiện link.
+QC_HUB_URL = (CONFIG.get("qc_hub_url") or "").rstrip("/")
 
 CODE = re.compile(r"\b([A-Z]{2,4}-[A-Z]{2,5})-(\d{6})(-DK)?\b")  # -DK = dark-mode frame
 CODE_RANGE = re.compile(r"\b([A-Z]{2,4}-[A-Z]{2,5})-(\d{6})`?\s*(?:–|—|→|->|đến)\s*`?(?:[A-Z]{2,4}-[A-Z]{2,5}-)?(\d{6})\b")

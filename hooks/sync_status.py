@@ -202,7 +202,12 @@ def _code_link(code, frames):
     if not f.get("url"):
         return f'<span class="fcode is-missing" title="Chưa có frame trên Figma">{code}</span>'
     title = f["title"].replace('"', "&quot;")
-    return f'<a class="fcode" href="{f["url"]}" data-code="{code}" title="{title}">{code}</a>'
+    link = f'<a class="fcode" href="{f["url"]}" data-code="{code}" title="{title}">{code}</a>'
+    if lib.QC_HUB_URL:
+        base = code[:-3] if code.endswith("-DK") else code
+        link += (f'<a class="fcode-hub" href="{lib.QC_HUB_URL}/hub/man/{base}" target="_blank" rel="noopener"'
+                 f' title="Mở trên QC Hub: demo thật, code, requirement QC">↗</a>')
+    return link
 
 
 def on_page_content(html, page, config, files):

@@ -2,3 +2,5 @@
 figma_file_key: rRVs5HX0kIHffbS0V40djG
 figma_file_slug: PLS-ICS-T8-2026
 navigation_node: "2553:193020"   # frame "Danh sách màn hình" trên trang NAVIGATION
+# QC Hub: mỗi mã màn trong docs có thêm nút ↗ mở màn đó trên Hub (demo thật, code, requirement QC). Bỏ dòng này để tắt.
+qc_hub_url: https://ics-figma-demo.vercel.app
