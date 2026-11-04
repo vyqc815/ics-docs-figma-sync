@@ -26,3 +26,7 @@ __pycache__/
 
 # figma-ref: copied from .figma/pages/*/reference@1x.png at build (scripts/figma/copy-refs.mjs)
 public/figma-ref/
+
+# figma-page pipeline (tools/figma-console-mcp): build output and its own dependencies
+tools/*/node_modules/
+tools/*/dist/
