@@ -4,5 +4,11 @@
   "role": "admin",
   "salt": "ade7039f929e8f327cf50ca2cf209182",
   "hash": "03e34e31b2c8a7e821946708061d202caac17e8741eb87cba058adbde9029a68"
+ },
+ {
+  "name": "khanh.ds",
+  "role": "admin",
+  "salt": "63d3946a4284d692ec6f9bc8908ab01e",
+  "hash": "c7df4f4e4298127cf3887e7cb372eadf02e46d45b33de1b45a2e667136ecf46e"
  }
 ]
