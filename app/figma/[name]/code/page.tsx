@@ -27,7 +27,21 @@ const CodePage = async ({ params, searchParams }: Props): Promise<React.JSX.Elem
 
   return (
     <ViewerShell page={page} active="code" hasCode={src.files.length > 0} embed={embed === "1"}>
-      {file ? (
+      {embed === "1" && file ? (
+        // inside the hub: every file of this one screen, stacked; the main file open, the parts folded (no tabs to switch)
+        src.files.map((f, i) => (
+          <details key={f.path} className="fv-file" open={i === 0}>
+            <summary>
+              <b>{i === 0 ? "Màn chính" : "Phần con"}</b> {f.path.split("/").pop()} · {f.code.split("\n").length} dòng
+              <span className="fv-copy">
+                <CopyButton text={f.code} />
+              </span>
+            </summary>
+            {/* biome-ignore lint/security/noDangerouslySetInnerHtml: the project's own code, escaped by highlightTsx. */}
+            <pre dangerouslySetInnerHTML={{ __html: highlightTsx(f.code) }} />
+          </details>
+        ))
+      ) : file ? (
         <>
           <nav className="fv-files">
             {src.files.map((f) => (

@@ -22,6 +22,14 @@ const STYLES = `
 .fv-files { display:flex; flex-wrap:wrap; gap:6px; padding:12px 0 4px; }
 .fv-chip { border:1px solid var(--line); border-radius:999px; padding:2px 10px; color:var(--fg2); text-decoration:none; font:12px ui-monospace,Menlo,monospace; }
 .fv-chip[aria-current="page"] { background:var(--accent); border-color:var(--accent); color:#fff; }
+.fv-file { border:1px solid var(--line); border-radius:10px; margin:10px 0; }
+.fv-file > summary { display:flex; align-items:center; gap:8px; padding:10px 12px; cursor:pointer; list-style:none; color:var(--fg2); font:12px ui-monospace,Menlo,monospace; }
+.fv-file > summary::-webkit-details-marker { display:none; }
+.fv-file > summary::before { content:"▸"; transition:transform .15s; }
+.fv-file[open] > summary::before { transform:rotate(90deg); }
+.fv-file > summary b { color:var(--fg); font-weight:600; }
+.fv-file > summary .fv-copy { margin-left:auto; }
+.fv-file pre { margin:0 12px 12px; }
 .fv pre { margin:0 0 24px; padding:12px; background:var(--bg2); border-radius:10px; overflow:auto; font:12px/1.6 ui-monospace,Menlo,monospace; tab-size:2; }
 .fv .kw{color:var(--kw)} .fv .str{color:var(--str)} .fv .tag{color:var(--tag)} .fv .attr{color:var(--attr)} .fv .com{color:var(--com)}
 .fv-md { padding-bottom:40px; }
