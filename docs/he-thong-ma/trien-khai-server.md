@@ -1,58 +1,40 @@
-# Chuyển QC Hub từ Vercel lên server công ty
+# QC Hub trên server công ty: icstestsapi.pls.edu.vn/docs-figma
 
-Server chỉ chạy Node. Code build trên GitHub Actions rồi gửi sang qua rsync/SSH (server không phải build, khỏi lo thiếu RAM). Bản build khoảng 1,3 GB (930 màn demo dựng sẵn, ảnh, code sinh): lần đầu gửi đủ, các lần sau chỉ gửi phần đổi. Cần trống khoảng 5 GB.
-Làm một lần, khoảng 20 phút, người có quyền root trên server làm.
+Hub thay web docs cũ (MkDocs) ngay tại `https://icstestsapi.pls.edu.vn/docs-figma`. **Không cần root, không sửa nginx,
+không cài Node**: dùng lại đúng những gì web cũ đã có.
 
-## 1. Trên server
+- nginx đã chuyển `/docs-figma/` vào `127.0.0.1:8030` (cổng trong `/opt/docs-figma/app/.env`).
+- Dịch vụ `docs-figma` chạy `/opt/docs-figma/app/scripts/dev.sh`; user SSH của deploy được `sudo systemctl restart docs-figma`.
+- Workflow **Deploy demo** (job `server`) build trên GitHub Actions (kèm sẵn Node), gửi sang `/opt/docs-figma/hub`
+  bằng rsync (lần đầu ~1,3 GB, sau đó chỉ phần đổi), đổi `dev.sh` để dịch vụ chạy Hub, khởi động lại, kiểm tra.
+  Hub không lên thì tự trả lại web cũ và báo lỗi.
 
-```bash
-# Node 22
-curl -fsSL https://deb.nodesource.com/setup_22.x | sudo -E bash - && sudo apt-get install -y nodejs rsync
+## Bật (một lần)
 
-# user chạy Hub + thư mục
-sudo useradd --system --create-home qchub
-sudo mkdir -p /opt/qc-hub/releases && sudo chown -R qchub /opt/qc-hub
+Repo `vyqc815/ics-docs-figma-sync` → Settings → Secrets and variables → Actions:
 
-# biến môi trường: chép ops/server/env.example thành /opt/qc-hub/.env rồi điền
-sudo -u qchub nano /opt/qc-hub/.env && sudo chmod 600 /opt/qc-hub/.env
+| Loại | Tên | Giá trị |
+|---|---|---|
+| Secret | `HUB_QC_WEB_PASSWORD` | mật khẩu team của Hub (như `QC_WEB_PASSWORD` trên Vercel) |
+| Secret | `HUB_GITHUB_WRITE_TOKEN` | token classic quyền `repo` (như `GITHUB_WRITE_TOKEN` trên Vercel) |
+| Variable | `DEPLOY_TARGET` | `both` (Vercel + server) hoặc `server` (chỉ server) |
+| Variable | `HUB_BASE_PATH` | `/docs-figma` |
 
-# dịch vụ
-sudo cp ops/server/qc-hub.service /etc/systemd/system/ && sudo systemctl daemon-reload && sudo systemctl enable qc-hub
+`DEPLOY_HOST`, `DEPLOY_USER`, `DEPLOY_SSH_KEY`, `FIGMA_ACCESS_TOKEN` đã có sẵn.
+
+Rồi Actions → **Deploy demo** → Run workflow. Dòng `Hub chạy rồi` ở job `server` là xong.
+
+## Trên server sau khi chạy
+
+```
+/opt/docs-figma/hub/current      bản đang chạy (link tới releases/<commit>, giữ 3 bản)
+/opt/docs-figma/hub/.env         mật khẩu + token (chỉ user deploy đọc được)
+/opt/docs-figma/hub/start.sh     chạy Hub ở cổng của web cũ
+/opt/docs-figma/app/scripts/dev.sh         giờ gọi start.sh
+/opt/docs-figma/app/scripts/dev.sh.mkdocs  launcher web cũ
 ```
 
-User SSH mà GitHub Actions dùng phải ghi được `/opt/qc-hub` và chạy `sudo systemctl restart qc-hub` không cần mật khẩu:
+**Quay lại web cũ:** `cp /opt/docs-figma/app/scripts/dev.sh.mkdocs /opt/docs-figma/app/scripts/dev.sh && sudo systemctl restart docs-figma`
+(hoặc đặt `DEPLOY_TARGET` về trống để các lần sau chỉ deploy Vercel).
 
-```bash
-echo "<user-ssh> ALL=(root) NOPASSWD: /bin/systemctl restart qc-hub" | sudo tee /etc/sudoers.d/qc-hub
-sudo usermod -aG qchub <user-ssh> && sudo chmod -R g+w /opt/qc-hub
-```
-
-## 2. Tên miền + nginx
-
-Hub dùng đường dẫn gốc (`/hub`, `/api`, `/figma`…), nên cần **tên miền con riêng**, ví dụ `qchub.pls.edu.vn`
-(không đặt dưới `/qc-hub/` của `icstestsapi.pls.edu.vn` được).
-
-1. Trỏ DNS `qchub.pls.edu.vn` về IP server.
-2. Thêm `ops/server/nginx-qc-hub.conf` vào nginx: `sudo nginx -t && sudo systemctl reload nginx`.
-3. HTTPS (bắt buộc, cookie đăng nhập chỉ gửi qua HTTPS): `sudo certbot --nginx -d qchub.pls.edu.vn`.
-
-Nếu nginx của domain do script deploy BE sinh lại (như web docs-figma), thêm block vào template của repo BE thay vì sửa tay.
-
-## 3. Trên GitHub (repo vyqc815/ics-docs-figma-sync)
-
-Repo đã có sẵn secrets SSH tới server (`DEPLOY_HOST`, `DEPLOY_USER`, `DEPLOY_SSH_KEY`, dùng chung với web cũ). Chỉ cần:
-
-- Settings → Secrets and variables → Actions → tab **Variables** → New variable: `DEPLOY_TARGET` = `server`.
-- Nếu SSH không ở cổng 22: thêm secret `DEPLOY_PORT`.
-
-## 4. Deploy lần đầu và chuyển hẳn
-
-1. Actions → **Deploy demo** → Run workflow. Job `server` build, copy, khởi động lại; dòng cuối in `Hub chạy rồi`.
-2. Mở `https://qchub.pls.edu.vn/hub`, đăng nhập, kiểm tra.
-3. Ổn thì báo team link mới. Bản Vercel có thể giữ thêm ít hôm rồi xoá project trên Vercel.
-
-Từ đó, lịch deploy (9h, 13h, 17h) và nút "Đưa lên Hub ngay" khi sửa requirement đều đi lên server.
-Mỗi lần deploy giữ 3 bản gần nhất trong `/opt/qc-hub/releases`; quay lại bản trước:
-`ln -sfn /opt/qc-hub/releases/<bản cũ> /opt/qc-hub/current && sudo systemctl restart qc-hub`.
-
-Muốn quay về Vercel: xoá biến `DEPLOY_TARGET`.
+**Quay lại bản Hub trước:** `ln -sfn /opt/docs-figma/hub/releases/<bản cũ> /opt/docs-figma/hub/current && sudo systemctl restart docs-figma`.

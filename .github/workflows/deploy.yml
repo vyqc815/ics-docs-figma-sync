@@ -47,7 +47,7 @@ jobs:
 
   deploy:
     needs: news
-    # repo variable DEPLOY_TARGET=server: deploy to the company server (job "server") instead of Vercel
+    # repo variable DEPLOY_TARGET: empty/vercel = Vercel only, server = company server only, both = both
     if: needs.news.outputs.deploy == 'true' && vars.DEPLOY_TARGET != 'server'
     runs-on: ubuntu-latest
     timeout-minutes: 45
@@ -101,12 +101,14 @@ jobs:
       - name: Deploy
         run: npx vercel deploy --prebuilt --prod --archive=tgz --token="$VERCEL_TOKEN"
 
-  # Company server (docs/he-thong-ma/trien-khai-server.md): build here, copy the self-contained bundle over SSH,
-  # switch the "current" link, restart the service. The server only runs Node, it never builds (not enough RAM).
-  # Secrets: DEPLOY_HOST, DEPLOY_USER, DEPLOY_SSH_KEY, DEPLOY_PORT (optional). Variable: DEPLOY_TARGET=server.
+  # Company server icstestsapi.pls.edu.vn/docs-figma (docs/he-thong-ma/trien-khai-server.md). No root needed: the
+  # hub, with its own Node binary, goes to /opt/docs-figma/hub over rsync; the existing service "docs-figma" (port
+  # and nginx route already set up for the old docs site) starts it instead of MkDocs. Old launcher kept for rollback.
+  # Secrets: DEPLOY_HOST/USER/SSH_KEY(/PORT), HUB_QC_WEB_PASSWORD, HUB_GITHUB_WRITE_TOKEN, FIGMA_ACCESS_TOKEN.
+  # Variables: DEPLOY_TARGET=server|both, HUB_BASE_PATH=/docs-figma.
   server:
     needs: news
-    if: needs.news.outputs.deploy == 'true' && vars.DEPLOY_TARGET == 'server'
+    if: needs.news.outputs.deploy == 'true' && (vars.DEPLOY_TARGET == 'server' || vars.DEPLOY_TARGET == 'both')
     runs-on: ubuntu-latest
     timeout-minutes: 60
     steps:
@@ -138,7 +140,6 @@ jobs:
 
       - name: Build
         env:
-          # vars.HUB_BASE_PATH=/docs-figma: the hub answers at https://icstestsapi.pls.edu.vn/docs-figma
           NEXT_PUBLIC_BASE_PATH: ${{ vars.HUB_BASE_PATH }}
         run: |
           node scripts/figma/copy-refs.mjs
@@ -146,26 +147,59 @@ jobs:
           NEXT_OUTPUT=standalone npx next build
           cp -r public .next/standalone/
           cp -r .next/static .next/standalone/.next/
+          # the server has no Node: ship the same version the build used
+          v=$(node -v)
+          curl -fsSL "https://nodejs.org/dist/$v/node-$v-linux-x64.tar.xz" | tar xJ -C "$RUNNER_TEMP"
+          mkdir -p .next/standalone/.node && cp "$RUNNER_TEMP/node-$v-linux-x64/bin/node" .next/standalone/.node/node
           du -sh .next/standalone
 
-      - name: Copy and restart
+      - name: Copy and switch
         env:
           SSH_KEY: ${{ secrets.DEPLOY_SSH_KEY }}
           HOST: ${{ secrets.DEPLOY_HOST }}
           USER: ${{ secrets.DEPLOY_USER }}
           PORT: ${{ secrets.DEPLOY_PORT }}
+          QC_WEB_PASSWORD: ${{ secrets.HUB_QC_WEB_PASSWORD }}
+          GITHUB_WRITE_TOKEN: ${{ secrets.HUB_GITHUB_WRITE_TOKEN }}
+          FIGMA_ACCESS_TOKEN: ${{ secrets.FIGMA_ACCESS_TOKEN }}
         run: |
+          [ -n "$QC_WEB_PASSWORD" ] || { echo "::error::Thiếu secret HUB_QC_WEB_PASSWORD"; exit 1; }
           mkdir -p ~/.ssh && echo "$SSH_KEY" > ~/.ssh/id_deploy && chmod 600 ~/.ssh/id_deploy
           ssh_cmd="ssh -i $HOME/.ssh/id_deploy -o StrictHostKeyChecking=accept-new -p ${PORT:-22}"
-          rel="/opt/qc-hub/releases/${GITHUB_SHA::12}"
-          # ~1.3GB bundle (930 prerendered demo screens, images, generated code): rsync sends only what changed
-          rsync -az --delete -e "$ssh_cmd" .next/standalone/ "$USER@$HOST:/opt/qc-hub/staging/"
-          $ssh_cmd "$USER@$HOST" "
-            set -e
-            rm -rf $rel && cp -al /opt/qc-hub/staging $rel        # hard links: a full release in seconds, no extra disk
-            ln -sfn $rel /opt/qc-hub/current
-            sudo systemctl restart qc-hub
-            sleep 5
-            curl -fsS -o /dev/null http://127.0.0.1:3200/hub/dang-nhap && echo 'Hub chạy rồi'
-            ls -1dt /opt/qc-hub/releases/* | tail -n +4 | xargs -r rm -rf   # giữ 3 bản gần nhất để quay lại
-          "
+          H=/opt/docs-figma/hub
+          rel="$H/releases/${GITHUB_SHA::12}"
+          $ssh_cmd "$USER@$HOST" "mkdir -p $H/staging $H/releases"
+          # ~1.3GB (930 prerendered demo screens, images, generated code): rsync sends only what changed
+          rsync -az --delete -e "$ssh_cmd" .next/standalone/ "$USER@$HOST:$H/staging/"
+          # secrets go over stdin into a file only this user reads, never on a command line
+          printf 'QC_WEB_PASSWORD=%s\nGITHUB_WRITE_TOKEN=%s\nFIGMA_ACCESS_TOKEN=%s\nGITHUB_REPO=%s\n' \
+            "$QC_WEB_PASSWORD" "$GITHUB_WRITE_TOKEN" "$FIGMA_ACCESS_TOKEN" "$GITHUB_REPOSITORY" \
+            | $ssh_cmd "$USER@$HOST" "umask 077 && cat > $H/.env"
+          $ssh_cmd "$USER@$HOST" bash -s <<EOS
+          set -e
+          rm -rf $rel && cp -al $H/staging $rel        # hard links: a full release in seconds
+          ln -sfn $rel $H/current
+          # launcher: port from the old site's .env (nginx /docs-figma already points there)
+          cat > $H/start.sh <<'SH'
+          #!/bin/bash
+          set -a; . /opt/docs-figma/app/.env; . /opt/docs-figma/hub/.env; set +a
+          cd /opt/docs-figma/hub/current
+          export NODE_ENV=production HOSTNAME=127.0.0.1 PORT="\${PORT:-8030}"
+          exec ./.node/node server.js
+          SH
+          chmod +x $H/start.sh
+          app=/opt/docs-figma/app/scripts
+          [ -f \$app/dev.sh.mkdocs ] || cp \$app/dev.sh \$app/dev.sh.mkdocs   # keep the old launcher once
+          printf '#!/bin/bash\n# QC Hub thay web MkDocs. Quay lại web cũ: cp dev.sh.mkdocs dev.sh && sudo systemctl restart docs-figma\nexec /opt/docs-figma/hub/start.sh\n' > \$app/dev.sh
+          chmod +x \$app/dev.sh
+          sudo systemctl restart docs-figma
+          ok=0
+          for i in 1 2 3 4 5 6 7 8; do sleep 5; curl -fsS -o /dev/null http://127.0.0.1:8030/docs-figma/hub/dang-nhap && { ok=1; break; }; done
+          if [ \$ok = 1 ]; then echo "Hub chạy rồi"; else
+            # never leave /docs-figma down: back to the old docs site, fail the job
+            cp \$app/dev.sh.mkdocs \$app/dev.sh && sudo systemctl restart docs-figma
+            journalctl -u docs-figma -n 30 --no-pager 2>/dev/null || true
+            echo "Hub không lên, đã trả lại web cũ"; exit 1
+          fi
+          ls -1dt $H/releases/* | tail -n +4 | xargs -r rm -rf     # keep 3 releases
+          EOS
