@@ -34,7 +34,7 @@
   {
    "id": "M-TD.REQ05",
    "name": "Lịch dạy chỉ đọc",
-   "text": "Tab chỉ hiển thị các buổi dạy của đúng giáo viên trong tuần được chọn, không hiển thị lịch đăng ký làm việc và không cho CUD lịch. Hỗ trợ chuyển/chọn tuần (`dd.MM.yyyy`), bật `Theo lớp` để nhóm theo lớp hoặc tắt để gom theo ngày; cả hai chế độ biểu diễn cùng một tập buổi dạy. Hàng chip cạnh thanh tuần tóm tắt lịch đăng ký của giáo viên (chỉ đọc, chip của ngày hiện tại tô sáng); màu viền card theo mốc thời gian: xanh lá đã dạy, cam hôm nay, xanh dương sắp dạy.",
+   "text": "Tab chỉ hiển thị các buổi dạy của đúng giáo viên trong tuần được chọn, không hiển thị lịch đăng ký làm việc và không cho CUD lịch. Hỗ trợ chuyển/chọn tuần (`dd.MM.yyyy`), bật `Theo lớp` để nhóm theo lớp hoặc tắt để gom theo ngày; cả hai chế độ biểu diễn cùng một tập buổi dạy. Hàng chip cạnh thanh tuần tóm tắt lịch đăng ký của giáo viên (chỉ đọc, chip của ngày hiện tại tô sáng); màu viền card theo trạng thái lịch (cố định cam, linh hoạt xanh dương, hoàn thành xanh lá, hủy bỏ xám), cùng bộ với Lịch dạy tổng.",
    "source": "qc",
    "content": "qc"
   },
@@ -4507,7 +4507,7 @@
   },
   {
    "id": "M-TD.TC36b",
-   "title": "Case 36b: Màu card theo mốc thời gian",
+   "title": "Case 36b: Màu card theo trạng thái lịch",
    "priority": "Medium",
    "smoke": false,
    "region": "M-TD.A04",
