@@ -38,19 +38,12 @@ Hub dùng đường dẫn gốc (`/hub`, `/api`, `/figma`…), nên cần **tên
 
 Nếu nginx của domain do script deploy BE sinh lại (như web docs-figma), thêm block vào template của repo BE thay vì sửa tay.
 
-## 3. Trên GitHub (repo ics-figma-demo)
+## 3. Trên GitHub (repo vyqc815/ics-docs-figma-sync)
 
-Settings → Secrets and variables → Actions:
+Repo đã có sẵn secrets SSH tới server (`DEPLOY_HOST`, `DEPLOY_USER`, `DEPLOY_SSH_KEY`, dùng chung với web cũ). Chỉ cần:
 
-| Loại | Tên | Giá trị |
-|---|---|---|
-| Secret | `DEPLOY_HOST` | IP / tên server |
-| Secret | `DEPLOY_USER` | user SSH ở bước 1 |
-| Secret | `DEPLOY_SSH_KEY` | private key (public key đã nằm trong `~/.ssh/authorized_keys` của user đó) |
-| Secret | `DEPLOY_PORT` | chỉ khi SSH không ở cổng 22 |
-| Variable | `DEPLOY_TARGET` | `server` |
-
-Có thể dùng chung bộ secrets SSH với repo `ics-docs-figma-sync` (cùng server).
+- Settings → Secrets and variables → Actions → tab **Variables** → New variable: `DEPLOY_TARGET` = `server`.
+- Nếu SSH không ở cổng 22: thêm secret `DEPLOY_PORT`.
 
 ## 4. Deploy lần đầu và chuyển hẳn
 
