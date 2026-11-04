@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 import { KindTag, PageHead, Panel, Tag } from "@/components/qc/ui";
-import { frames, requirementPages, reserved } from "@/lib/qc/data";
+import { frames, navRow, requirementPages, reserved } from "@/lib/qc/data";
 
 const KINDS = [
   ["", "Tất cả"],
@@ -10,6 +10,8 @@ const KINDS = [
   ["trang-thai", "Trạng thái"],
   ["dropdown", "Dropdown"],
   ["du-kien", "Mã dự kiến"],
+  ["final", "Final"],
+  ["ngoai-nav", "Chưa có trong NAVIGATION"],
 ] as const;
 
 /** Every screen code, filterable by kind; dark variants are left out (they are themes of the same screen). */
@@ -22,7 +24,8 @@ const ScreensPage = async ({ searchParams }: { searchParams: Promise<{ loai?: st
           .filter(([c]) => !frames()[c])
           .map(([code, r]) => ({ code, title: r.title ?? r.pages?.[0] ?? "", kind: "du-kien" }))
       : Object.entries(frames())
-          .filter(([c, f]) => !c.endsWith("-DK") && (!loai || f.loai === loai))
+          .filter(([c]) => !c.endsWith("-DK"))
+          .filter(([c, f]) => !loai || (loai === "final" ? navRow(c)?.final : loai === "ngoai-nav" ? !navRow(c) : f.loai === loai))
           .map(([code, f]) => ({ code, title: f.title, kind: f.loai }));
   const list = rows.filter((r) => !needle || r.code.toLowerCase().includes(needle) || r.title.toLowerCase().includes(needle)).sort((a, b) => a.code.localeCompare(b.code));
 
@@ -57,6 +60,7 @@ const ScreensPage = async ({ searchParams }: { searchParams: Promise<{ loai?: st
               <Link href={`/hub/man/${r.code}`} className="flex items-center gap-3 py-2.5 hover:text-(--hub-accent)">
                 <span className="w-[150px] shrink-0 font-mono text-(--hub-accent)">{r.code}</span>
                 <span className="min-w-0 flex-1 truncate">{r.title}</span>
+                {navRow(r.code)?.final && <Tag tone="violet">Final</Tag>}
                 {requirementPages(r.code).length > 0 && <Tag tone="green">Có requirement</Tag>}
                 {r.kind === "du-kien" ? <Tag tone="gray">Chưa vẽ</Tag> : <KindTag kind={r.kind} />}
               </Link>

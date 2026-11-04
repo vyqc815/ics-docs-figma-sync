@@ -1,6 +1,7 @@
 import { notFound } from "next/navigation";
 
-import { PageHead } from "@/components/qc/ui";
+import { PageHead, Panel } from "@/components/qc/ui";
+import { can, session } from "@/lib/qc/auth";
 
 import { Editor } from "./editor";
 
@@ -11,7 +12,7 @@ const EditPage = async ({ searchParams }: { searchParams: Promise<{ f?: string }
   return (
     <>
       <PageHead back="/hub/requirement" title="Sửa requirement" sub={f} />
-      <Editor file={f} />
+      {can(await session(), "edit") ? <Editor file={f} /> : <Panel>Tài khoản dev chỉ được xem. Cần quyền QC hoặc admin để sửa requirement.</Panel>}
     </>
   );
 };

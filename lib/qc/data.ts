@@ -59,6 +59,8 @@ export type Registry = {
 export type Frame = { id: string; title: string; loai: string; parent?: string | null };
 export type ReqPage = { file: string; prefix: string; title: string; pages: number[] };
 export type Reserved = Record<string, { title?: string; requirement?: string; pages?: string[] }>;
+/** A row of the "Danh sách màn hình" table on Figma's NAVIGATION page (scripts/he-thong-ma/navigation.py). */
+export type NavRow = { code: string; title: string; node: string | null; type: string; page: string; final: boolean; todo: boolean; removed: boolean; loai: string; group: string };
 
 const json = <T,>(path: string, fallback: T): T => (existsSync(path) ? (JSON.parse(readFileSync(path, "utf-8")) as T) : fallback);
 
@@ -71,6 +73,7 @@ let cache: {
   reserved: Reserved;
   index: QcIndex;
   pages: Map<string, string>;
+  nav: Record<string, NavRow>;
 } | null = null;
 
 export type IndexFile = { path: string; title: string; prefix: string; screens: string[]; pages: { no: number; title: string; screens: string[] }[] };
@@ -98,6 +101,10 @@ function load(): NonNullable<typeof cache> {
       } as Registry);
   }
   const frames = json<{ fileKey: string; frames: Record<string, Frame> }>(join(SYS, "figma-frames.json"), { fileKey: "", frames: {} });
+  const nav = json<{ codes: Record<string, NavRow> }>(join(SYS, "navigation.json"), { codes: {} }).codes;
+  // codes in the NAVIGATION table whose frame is not named with the code yet still count as screens
+  for (const r of Object.values(nav))
+    if (!r.removed && !frames.frames[r.code] && r.node) frames.frames[r.code] = { id: r.node, title: r.title, loai: r.loai };
   cache = {
     clusters: clusters.filter((c) => registries.has(c.name)).map((c) => ({ name: c.name, title: c.title })),
     registries,
@@ -106,6 +113,7 @@ function load(): NonNullable<typeof cache> {
     screenReq: json(join(ROOT, "scripts", "figma", "screen-requirements.json"), {}),
     reserved: json<{ codes: Reserved }>(join(SYS, "ma-du-kien.json"), { codes: {} }).codes,
     index: json(join(SYS, "qc-index.json"), {}),
+    nav,
     pages: new Map(json<{ pages: { name: string; route: string }[] }>(join(ROOT, "figma.pages.json"), { pages: [] }).pages.map((p) => [p.name, p.route])),
   };
   return cache;
@@ -115,6 +123,8 @@ export const clusters = (): { name: string; title: string }[] => load().clusters
 export const registry = (name: string): Registry | undefined => load().registries.get(name);
 export const frames = (): Record<string, Frame> => load().frames;
 export const reserved = (): Reserved => load().reserved;
+/** The code's row in the NAVIGATION table (Final, Chưa làm, Đã bỏ, nhóm), if design listed it there. */
+export const navRow = (code: string): NavRow | undefined => load().nav[code.replace(/-DK$/, "")];
 export const indexInfo = (): QcIndex => load().index;
 /** Every requirement file (docs/he-thong-ma/qc-index.json), path without the "requirements/" prefix. */
 export const requirementFiles = (): IndexFile[] => (load().index.files ?? []).map((f) => ({ ...f, path: f.path.replace(/^requirements\//, "") }));

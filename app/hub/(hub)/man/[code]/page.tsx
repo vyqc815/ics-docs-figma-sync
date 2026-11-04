@@ -3,7 +3,23 @@ import { notFound } from "next/navigation";
 import { Code2, PenTool } from "lucide-react";
 
 import { KindTag, LiveShot, PageHead, Panel, PriorityTag, StatusTag, TabBar, Tag } from "@/components/qc/ui";
-import { builtPage, clusterOfFile, clustersOf, figmaUrl, frames, registry, requirementPages, reserved } from "@/lib/qc/data";
+import { builtPage, clusterOfFile, clustersOf, figmaUrl, frames, navRow, registry, requirementPages, reserved } from "@/lib/qc/data";
+
+/** Site of vyqc815/ics-docs-figma-sync (BA docs ↔ Figma), opened on the screen's code. */
+const DOCS_BA = (process.env.DOCS_FIGMA_URL ?? "https://icstestsapi.pls.edu.vn/docs-figma").replace(/\/$/, "");
+
+/** Flags from the NAVIGATION table on Figma, the official screen list design keeps. */
+const NavTags = ({ code }: { code: string }): React.JSX.Element => {
+  const n = navRow(code);
+  if (!n) return <Tag tone="amber">Chưa có trong NAVIGATION</Tag>;
+  return (
+    <>
+      {n.removed && <Tag tone="red">Đã bỏ</Tag>}
+      {n.todo && <Tag tone="gray">Chưa làm</Tag>}
+      {n.final && <Tag tone="green">Final</Tag>}
+    </>
+  );
+};
 
 /** One screen: live Figma render, where requirements talk about it, its items and the testcases that cover them. */
 const ScreenPage = async ({ params, searchParams }: { params: Promise<{ code: string }>; searchParams: Promise<{ xem?: string }> }): Promise<React.JSX.Element> => {
@@ -44,6 +60,7 @@ const ScreenPage = async ({ params, searchParams }: { params: Promise<{ code: st
       >
         <div className="flex gap-2 text-sm">
           {frame && <KindTag kind={frame.loai} />}
+          <NavTags code={code} />
           {!frame && <Tag tone="gray">Chưa có thiết kế</Tag>}
         </div>
       </PageHead>
@@ -66,6 +83,17 @@ const ScreenPage = async ({ params, searchParams }: { params: Promise<{ code: st
               {frame && (
                 <a href={figmaUrl(frame.id)} target="_blank" rel="noreferrer" className="flex items-center gap-1.5 rounded-xl bg-(--hub-panel-2) px-3 py-2 hover:text-(--hub-accent)">
                   <PenTool className="size-4" /> Mở Figma ↗
+                </a>
+              )}
+              {navRow(code) && (
+                <a
+                  href={`${DOCS_BA}/figma-screens.html#${code}`}
+                  target="_blank"
+                  rel="noreferrer"
+                  title="Docs BA trên ics-docs-figma-sync (cần tài khoản bên đó)"
+                  className="flex items-center gap-1.5 rounded-xl bg-(--hub-panel-2) px-3 py-2 hover:text-(--hub-accent)"
+                >
+                  Docs BA ↗
                 </a>
               )}
               {built && (

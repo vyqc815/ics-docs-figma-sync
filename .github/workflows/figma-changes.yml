@@ -15,7 +15,7 @@ on:
         default: false
 
 permissions:
-  contents: read
+  contents: write   # ghi docs/dong-bo/figma-doi.json (màn nào đổi lúc nào) cho trạng thái đồng bộ trên Hub
   actions: read
 
 concurrency:
@@ -32,6 +32,7 @@ jobs:
           sparse-checkout: |
             figma.pages.json
             scripts/figma
+            docs/dong-bo
 
       - uses: actions/setup-node@v4
         with:
@@ -92,6 +93,17 @@ jobs:
         with:
           path: .figma/pages/snapshot.json
           key: figma-snapshot-${{ github.run_id }}
+
+      - name: Log changed screens
+        if: steps.notify.outputs.changed == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/dong-bo/figma-doi.json
+          git diff --cached --quiet && exit 0
+          git commit -m "Đồng bộ: ghi màn Figma vừa đổi"
+          for i in 1 2 3; do git pull --rebase -q && git push -q && exit 0; sleep 5; done
+          exit 1
 
       - name: Keep full report
         if: steps.notify.outputs.changed == 'true'

@@ -56,6 +56,11 @@ jobs:
       - name: New screens
         run: $FIGMA_PAGE discover --rest
 
+      # Bảng "Danh sách màn hình" trên trang NAVIGATION: danh sách mã chính thức (Final, Chưa làm, Đã bỏ) + báo lệch.
+      - name: NAVIGATION table
+        continue-on-error: true
+        run: python3 scripts/he-thong-ma/navigation.py
+
       - name: Which screens changed
         id: changed
         run: |

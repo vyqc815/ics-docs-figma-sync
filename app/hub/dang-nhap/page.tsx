@@ -3,7 +3,8 @@ import { redirect } from "next/navigation";
 import { LockKeyhole } from "lucide-react";
 
 import { Logo } from "@/components/qc/logo";
-import { COOKIE, checkPassword, passwordSet } from "@/lib/qc/auth";
+import { COOKIE, MAX_AGE, checkLogin, passwordSet, token } from "@/lib/qc/auth";
+import { readUsers } from "@/lib/qc/users";
 import "../hub.css";
 
 export const metadata = { title: "Đăng nhập · QC PLS" };
@@ -11,13 +12,17 @@ export const metadata = { title: "Đăng nhập · QC PLS" };
 async function login(form: FormData): Promise<void> {
   "use server";
   const next = String(form.get("next") || "/hub");
-  const value = checkPassword(String(form.get("password") ?? ""));
-  if (!value) redirect(`/hub/dang-nhap?sai=1&next=${encodeURIComponent(next)}`);
-  (await cookies()).set(COOKIE, value, { httpOnly: true, secure: true, sameSite: "lax", path: "/hub", maxAge: 60 * 60 * 24 * 30 });
+  const name = String(form.get("name") ?? "");
+  const password = String(form.get("password") ?? "");
+  // the team password needs no account list; other names are looked up in docs/hub/users.json
+  const users = name.trim() && name.trim().toLowerCase() !== "admin" ? (await readUsers().catch(() => ({ users: [] }))).users : [];
+  const who = checkLogin(name, password, users);
+  if (!who) redirect(`/hub/dang-nhap?sai=1&next=${encodeURIComponent(next)}`);
+  (await cookies()).set(COOKIE, token(who), { httpOnly: true, secure: true, sameSite: "lax", path: "/hub", maxAge: MAX_AGE });
   redirect(next.startsWith("/hub") ? next : "/hub");
 }
 
-/** Shared team password for the QC hub. */
+/** Sign in with an account, or with the team password and no name (admin). */
 const LoginPage = async ({ searchParams }: { searchParams: Promise<{ sai?: string; next?: string }> }): Promise<React.JSX.Element> => {
   const { sai, next } = await searchParams;
   return (
@@ -37,18 +42,29 @@ const LoginPage = async ({ searchParams }: { searchParams: Promise<{ sai?: strin
         ) : (
           <>
             <input type="hidden" name="next" value={next ?? "/hub"} />
+            <label className="mb-2 block text-sm text-(--hub-muted)" htmlFor="name">
+              Tài khoản
+            </label>
+            <input
+              id="name"
+              name="name"
+              autoComplete="username"
+              autoFocus
+              placeholder="Để trống nếu dùng mật khẩu team"
+              className="mb-4 w-full rounded-xl border border-(--hub-line) bg-(--hub-panel) px-4 py-3 text-sm outline-none placeholder:text-(--hub-faint) focus:border-(--hub-accent)"
+            />
             <label className="mb-2 block text-sm text-(--hub-muted)" htmlFor="password">
-              Mật khẩu team
+              Mật khẩu
             </label>
             <input
               id="password"
               name="password"
               type="password"
-              autoFocus
+              autoComplete="current-password"
               required
               className="w-full rounded-xl border border-(--hub-line) bg-(--hub-panel) px-4 py-3 text-sm outline-none focus:border-(--hub-accent)"
             />
-            {sai && <p className="mt-2 text-xs text-(--hub-red)">Sai mật khẩu.</p>}
+            {sai && <p className="mt-2 text-xs text-(--hub-red)">Sai tài khoản hoặc mật khẩu.</p>}
             <button className="mt-5 w-full rounded-xl bg-(--hub-accent-strong) py-3 text-sm font-semibold text-white hover:bg-(--hub-accent)">
               Vào
             </button>

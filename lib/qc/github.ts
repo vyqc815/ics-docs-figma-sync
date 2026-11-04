@@ -14,6 +14,11 @@ export const REPO =
 
 async function gh(path: string, init?: RequestInit): Promise<Response> {
   if (!(await signedIn())) throw new Error("Cần đăng nhập Hub.");
+  return ghUnchecked(path, init);
+}
+
+/** Without the sign-in check: only for reading the account list at sign-in (lib/qc/users.ts). */
+export async function ghUnchecked(path: string, init?: RequestInit): Promise<Response> {
   const token = process.env.GITHUB_WRITE_TOKEN;
   if (!token) throw new Error("Server chưa có GITHUB_WRITE_TOKEN.");
   return fetch(`https://api.github.com/repos/${REPO}${path}`, {

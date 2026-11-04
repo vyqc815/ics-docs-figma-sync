@@ -34,7 +34,12 @@ jobs:
           last=$(gh run list -R "$GITHUB_REPOSITORY" -w "Deploy demo" -s success -L 1 --json headSha -q '.[0].headSha')
           head=$(gh api "repos/$GITHUB_REPOSITORY/commits/main" -q .sha)
           echo "lần deploy trước: $last · main: $head"
-          if [ "${{ github.event_name }}" = "schedule" ] && [ "$last" = "$head" ]; then
+          # files the hub reads live from GitHub (sync marks, Figma change log, accounts, projects) need no deploy
+          other=yes
+          if [ -n "$last" ] && [ "$last" != "$head" ] && list=$(gh api "repos/$GITHUB_REPOSITORY/compare/$last...$head" -q '.files[].filename'); then
+            other=$(echo "$list" | grep -vE '^docs/(dong-bo|hub|du-an)/' | head -1)
+          fi
+          if [ "${{ github.event_name }}" = "schedule" ] && { [ "$last" = "$head" ] || [ -z "$other" ]; }; then
             echo "Không có gì mới, bỏ qua."; echo "deploy=false" >> "$GITHUB_OUTPUT"
           else
             echo "deploy=true" >> "$GITHUB_OUTPUT"

@@ -1,6 +1,6 @@
 "use server";
 
-import { signedIn } from "@/lib/qc/auth";
+import { requireRole, signedIn } from "@/lib/qc/auth";
 import { REPO } from "@/lib/qc/github";
 
 /**
@@ -33,10 +33,11 @@ export async function loadOriginal(file: string): Promise<{ text: string; sha: s
 }
 
 export async function saveOriginal(file: string, text: string, sha: string, note: string): Promise<{ sha: string; commit: string }> {
+  const me = await requireRole("edit");
   const res = await gh(`/contents/${safe(file)}`, {
     method: "PUT",
     body: JSON.stringify({
-      message: `QC sửa requirement trên Hub: ${file}${note ? ` — ${note}` : ""}`,
+      message: `${me.name} sửa requirement trên Hub: ${file}${note ? ` — ${note}` : ""}`,
       content: Buffer.from(text, "utf-8").toString("base64"),
       sha,
       branch: "main",
@@ -50,6 +51,7 @@ export async function saveOriginal(file: string, text: string, sha: string, note
 
 /** Puts the latest main on the hub now instead of at the next scheduled deploy. */
 export async function deployNow(): Promise<void> {
+  await requireRole("edit");
   const res = await gh(`/actions/workflows/deploy.yml/dispatches`, { method: "POST", body: JSON.stringify({ ref: "main" }) });
   if (!res.ok) throw new Error(`Không kích được deploy (GitHub ${res.status}).`);
 }

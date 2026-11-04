@@ -1,6 +1,6 @@
 "use server";
 
-import { signedIn } from "@/lib/qc/auth";
+import { requireRole, signedIn } from "@/lib/qc/auth";
 import { readFile, startWorkflow, workflowRuns, writeFile } from "@/lib/qc/github";
 
 /**
@@ -115,6 +115,7 @@ export async function listProjects(): Promise<ProjectInfo[]> {
 }
 
 export async function saveProject(p: Omit<ProjectInfo, "slug" | "count">, screens: Screen[]): Promise<string> {
+  await requireRole("edit");
   const current = await readFile(LIST);
   const list: ProjectInfo[] = current ? JSON.parse(current.text) : [];
   const slug = list.find((x) => x.fileKey === p.fileKey)?.slug ?? slugOf(p.name);
@@ -126,6 +127,7 @@ export async function saveProject(p: Omit<ProjectInfo, "slug" | "count">, screen
 }
 
 export async function deleteProject(slug: string): Promise<void> {
+  await requireRole("edit");
   const current = await readFile(LIST);
   if (!current) return;
   const list = (JSON.parse(current.text) as ProjectInfo[]).filter((x) => x.slug !== slug);
@@ -138,6 +140,7 @@ export async function projectScreens(slug: string): Promise<Screen[]> {
 }
 
 export async function startProposal(slug: string): Promise<void> {
+  await requireRole("edit");
   const p = (await listProjects()).find((x) => x.slug === slug);
   if (!p) throw new Error("Không thấy dự án.");
   await startWorkflow("de-xuat-ma.yml", { slug, file: p.fileKey, project: p.code, pages: p.pages.join(",") });
@@ -156,9 +159,11 @@ export async function proposalState(slug: string): Promise<{ running: boolean; l
 }
 
 export async function saveProposal(slug: string, proposal: Proposal, sha: string): Promise<string> {
+  await requireRole("edit");
   return writeFile(`docs/du-an/${slug}/de-xuat-ma.json`, `${JSON.stringify(proposal, null, 1)}\n`, `Đề xuất mã ${slug}: design duyệt`, sha);
 }
 
 export async function sendToDesign(slug: string, text: string): Promise<void> {
+  await requireRole("edit");
   await startWorkflow("chat-message.yml", { thread: `design-${slug}`, text });
 }

@@ -1,12 +1,20 @@
 import ids from "@/lib/figma-frame-ids.generated.json";
 import sections from "@/lib/figma-sections.generated.json";
 import config from "@/figma.pages.json";
+import navigation from "@/docs/he-thong-ma/navigation.json";
 
 export const dynamic = "force-dynamic";
 export const maxDuration = 60;
 
 const FRAME_IDS = ids as Record<string, string>;
 const SECTIONS = sections as Record<string, string[]>;
+/** Frames linked from the NAVIGATION table: codes design listed before naming the frame. */
+type NavCodes = { codes: Record<string, { code: string; node: string | null; removed: boolean }> };
+const NAV: Record<string, string> = Object.fromEntries(
+  Object.values((navigation as NavCodes).codes)
+    .filter((r) => r.node && !r.removed)
+    .map((r) => [r.code, r.node as string]),
+);
 const CODE = /^[A-Z]{2,4}(?:-[A-Z]{1,4})+-\d{6}(?:-DK)?$/;
 const FRAME_NAME = /^(?:[①-⑳] \S+ · )?([A-Z]{2,4}(?:-[A-Z]{1,4})+-\d{6}(?:-DK)?)\s*[—–-]/u;
 
@@ -64,7 +72,7 @@ export async function GET(_req: Request, { params }: { params: Promise<{ code: s
   if (!CODE.test(code)) return new Response(`Mã ${code} không đúng dạng.`, { status: 404 });
   const token = process.env.FIGMA_ACCESS_TOKEN;
   if (!token) return new Response("Thiếu FIGMA_ACCESS_TOKEN trên server.", { status: 503 });
-  const nodeId = FRAME_IDS[code] ?? (await findOnFigma(code, token));
+  const nodeId = FRAME_IDS[code] ?? NAV[code] ?? (await findOnFigma(code, token));
   if (!nodeId) return notDrawn(code);
 
   const api = `https://api.figma.com/v1/images/${config.fileKey}?ids=${encodeURIComponent(nodeId)}&format=png&scale=1`;

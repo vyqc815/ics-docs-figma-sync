@@ -87,8 +87,28 @@ if (!changes.length && !deleted.length) {
 	process.exit(0);
 }
 
+logChanges(changes);
 await postToChat(chatText(changes, deleted));
 process.exit(3);
+
+/**
+ * docs/dong-bo/figma-doi.json: when each screen last changed on Figma (10 latest per code). The hub compares it
+ * with the "đã đồng bộ" mark of each requirement file to show 🔵 UI đổi / 🔴 cả hai đổi.
+ */
+function logChanges(changed) {
+	const path = "docs/dong-bo/figma-doi.json";
+	const log = existsSync(path) ? JSON.parse(readFileSync(path, "utf-8")) : {};
+	const at = new Date().toISOString();
+	for (const p of changed) {
+		const counts = {};
+		for (const c of p.changes) counts[c.kind] = (counts[c.kind] ?? 0) + 1;
+		const what = Object.entries(counts).map(([k, n]) => `${LABEL[k] ?? k} ${n}`).join(", ");
+		const code = p.page.toUpperCase();
+		log[code] = [{ at, what }, ...(log[code] ?? [])].slice(0, 10);
+	}
+	mkdirSync(dirname(path), { recursive: true });
+	writeFileSync(path, `${JSON.stringify(log, null, 1)}\n`, "utf-8");
+}
 
 /** Changes design made, matched by frame id; sync work on our side does not count. */
 function designChanges(before, after) {
