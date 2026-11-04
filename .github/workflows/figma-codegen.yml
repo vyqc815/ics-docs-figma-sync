@@ -30,7 +30,7 @@ jobs:
       - uses: actions/checkout@v4
         with:
           repository: khanhtruongds-del/figma-console-mcp-pls
-          ref: feat/screen-registry
+          ref: main
           token: ${{ secrets.PIPELINE_TOKEN }}
           path: .pipeline
 
