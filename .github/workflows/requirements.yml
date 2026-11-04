@@ -58,6 +58,7 @@ jobs:
 
       - name: Notify
         if: always()
+        continue-on-error: true   # a Chat problem must not mark the requirement update as failed
         env:
           QC_VERSION: ${{ steps.commit.outputs.version }}
         run: |

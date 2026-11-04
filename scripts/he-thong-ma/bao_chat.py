@@ -14,10 +14,10 @@ run_url = os.environ.get("RUN_URL", "")
 kind = sys.argv[1]
 if kind == "ok":
     body = open(sys.argv[2], encoding="utf-8").read().strip()
-    text = (f"*[{project}] Requirement đã cập nhật từ bản gốc QC*\n{body}\n"
+    text = (f"*[{project}] Requirement đã cập nhật từ docs BA*\n{body}\n"
             f"Web QC Hub (/hub) có bản mới ở lượt deploy kế tiếp (9h, 13h hoặc 17h) (version {os.environ.get('QC_VERSION', '?')}).")
 elif kind == "khong-doi":
-    text = f"*[{project}] Bản gốc QC vừa sửa*, kết quả sau khi chuyển không khác bản đang có, không cần cập nhật."
+    text = f"*[{project}] Docs BA vừa đổi*, kết quả sau khi chuyển không khác bản đang có, không cần cập nhật."
 else:
     log = open(sys.argv[2], encoding="utf-8").read().splitlines() if len(sys.argv) > 2 else []
     err = [l for l in log if "DỪNG" in l or "Error" in l or "Traceback" in l or ": ô bảng" in l or ": dòng" in l][:12]
