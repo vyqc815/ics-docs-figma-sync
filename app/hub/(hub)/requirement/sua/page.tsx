@@ -17,9 +17,9 @@ const EditPage = async ({ searchParams }: { searchParams: Promise<{ f?: string }
       <PageHead back="/hub/requirement" title="Sửa requirement" sub={f} />
       {baDocsMode() ? (
         <Panel>
-          Tài liệu lấy từ docs của BA (nhánh stable) và tự cập nhật, nên không sửa trên Hub (sửa sẽ bị ghi đè).{" "}
-          <Link href={`/hub/docs?f=${encodeURIComponent(f)}#gop-y`} className="text-(--hub-accent) hover:underline">
-            Ghi góp ý cho BA →
+          QC viết requirement ở repo docs, nhánh stable. Hub tự lấy bản mới mỗi 5 phút, nên không sửa ở đây (sửa sẽ bị ghi đè).{" "}
+          <Link href="/hub/huong-dan" className="text-(--hub-accent) hover:underline">
+            Xem luồng viết requirement →
           </Link>
         </Panel>
       ) : can(await session(), "edit") ? <Editor file={f} /> : <Panel>Tài khoản dev chỉ được xem. Cần quyền QC hoặc admin để sửa requirement.</Panel>}

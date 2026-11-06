@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { Download, History, MessageSquarePlus, PencilLine } from "lucide-react";
+import { Download, History, PencilLine } from "lucide-react";
 
 import { FigmaPanel, type PanelScreen } from "@/components/qc/figma-panel";
 import { RequirementMarkdown } from "@/components/qc/markdown";
@@ -10,8 +10,8 @@ import { STATES, syncRowsCached } from "@/lib/qc/dong-bo";
 import { builtPage, clusterOfFile, figmaUrl, frames, requirementFiles, requirementMarkdown } from "@/lib/qc/data";
 
 import { markSynced } from "../dong-bo/actions";
-import { addComment, resolveComment, saveTags } from "./actions";
-import { COMMENTS, DOC_META, baDocsMode, readJson, type Comments, type DocMeta } from "@/lib/qc/store";
+import { saveTags } from "./actions";
+import { DOC_META, baDocsMode, readJson, type DocMeta } from "@/lib/qc/store";
 import { BASE, withBase } from "@/lib/base-path";
 
 export const dynamic = "force-dynamic";
@@ -44,8 +44,6 @@ const DocPage = async ({ searchParams }: { searchParams: Promise<{ f?: string }>
   const back = `/hub/docs?f=${encodeURIComponent(f)}`;
   const tags = (await readJson<DocMeta>(DOC_META, {}).catch((): DocMeta => ({})))[f]?.tags ?? [];
   const ba = baDocsMode();
-  const comments = (await readJson<Comments>(COMMENTS, {}).catch((): Comments => ({})))[f] ?? [];
-  const open = comments.filter((c) => !c.done).length;
 
   return (
     <div className="flex items-start">
@@ -67,10 +65,9 @@ const DocPage = async ({ searchParams }: { searchParams: Promise<{ f?: string }>
             </form>
           )}
           {ba ? (
-            <a href="#gop-y" title="Góp ý cho BA" className="flex items-center gap-1 rounded-lg p-2 text-(--hub-muted) hover:bg-(--hub-panel-2) hover:text-(--hub-text)">
-              <MessageSquarePlus className="size-4" />
-              {open > 0 && <span className="text-xs text-(--hub-amber)">{open}</span>}
-            </a>
+            <span title="Hub tự lấy bản mới mỗi 5 phút" className="text-xs text-(--hub-faint)">
+              Sửa ở repo docs, nhánh stable
+            </span>
           ) : (
             can(me, "edit") && (
               <Link href={`/hub/requirement/sua?f=${encodeURIComponent(f)}`} title="Sửa requirement" className="rounded-lg p-2 text-(--hub-muted) hover:bg-(--hub-panel-2) hover:text-(--hub-text)">
@@ -132,43 +129,6 @@ const DocPage = async ({ searchParams }: { searchParams: Promise<{ f?: string }>
             <RequirementMarkdown file={f} text={text} />
           </div>
         </article>
-        {(ba || comments.length > 0) && (
-          <section id="gop-y" className="mt-4 scroll-mt-24 rounded-[20px] bg-(--hub-panel) px-6 py-5">
-            <h2 className="mb-1 text-[15px] font-semibold">Góp ý cho BA {open > 0 && <span className="text-(--hub-amber)">· {open} chưa xử lý</span>}</h2>
-            <p className="mb-4 text-xs text-(--hub-muted)">Tài liệu lấy từ docs của BA (nhánh stable), tự cập nhật. Cần sửa gì thì ghi ở đây, BA sửa bên đó.</p>
-            <ul className="mb-4 space-y-2">
-              {comments.map((c) => (
-                <li key={c.id} className={`rounded-xl bg-(--hub-panel-2) px-4 py-3 text-[13px] ${c.done ? "opacity-60" : ""}`}>
-                  <p className="mb-1 text-xs text-(--hub-muted)">
-                    {c.by} · {time(c.at)}
-                    {c.done && ` · đã xử lý (${c.done.by}, ${time(c.done.at)})`}
-                  </p>
-                  <p className="whitespace-pre-wrap">{c.text}</p>
-                  {!c.done && can(me, "edit") && (
-                    <form action={resolveComment} className="mt-2">
-                      <input type="hidden" name="file" value={f} />
-                      <input type="hidden" name="id" value={c.id} />
-                      <button className="text-xs text-(--hub-muted) hover:text-(--hub-green)">Đánh dấu đã xử lý</button>
-                    </form>
-                  )}
-                </li>
-              ))}
-            </ul>
-            {me && (
-              <form action={addComment} className="flex flex-col gap-2">
-                <input type="hidden" name="file" value={f} />
-                <textarea
-                  name="text"
-                  required
-                  rows={3}
-                  placeholder="Ví dụ: Trang 2 thiếu trạng thái lỗi khi nhập sai email…"
-                  className="rounded-xl border border-(--hub-line) bg-(--hub-panel-2) px-3 py-2 text-[13px] outline-none focus:border-(--hub-accent)"
-                />
-                <button className="self-end rounded-xl bg-(--hub-accent-strong) px-4 py-2 text-xs font-semibold text-white hover:bg-(--hub-accent)">Gửi góp ý</button>
-              </form>
-            )}
-          </section>
-        )}
       </div>
       <FigmaPanel screens={screens} docId="doc-body" liveBase={process.env.QC_IMAGE_BASE ?? BASE} />
     </div>

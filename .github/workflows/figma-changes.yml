@@ -33,6 +33,7 @@ jobs:
             figma.pages.json
             scripts/figma
             docs/dong-bo
+            docs/he-thong-ma
 
       - uses: actions/setup-node@v4
         with:
@@ -104,6 +105,15 @@ jobs:
           git commit -m "Đồng bộ: ghi màn Figma vừa đổi"
           for i in 1 2 3; do git pull --rebase -q && git push -q && exit 0; sleep 5; done
           exit 1
+
+      # Dev đã đánh dấu Đang làm / Xong màn nào mà Figma đổi sau đó: nhắn webhook của dev + dự án (Hub › Tài khoản).
+      - name: Notify developers
+        if: steps.quota.outputs.skip != 'true'
+        continue-on-error: true
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          HUB_URL: ${{ vars.HUB_URL }}
+        run: node scripts/figma/notify-devs.mjs
 
       - name: Keep full report
         if: steps.notify.outputs.changed == 'true'

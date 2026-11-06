@@ -57,9 +57,16 @@ export async function syncRowsCached(maxAgeMs = 60_000): Promise<SyncRow[]> {
   return rows;
 }
 
+export type FigmaLog = Record<string, { at: string; what: string }[]>;
+
+/** docs/dong-bo/figma-doi.json: code → real design changes, newest written hourly by figma-changes.yml. */
+export async function readFigmaLog(): Promise<FigmaLog> {
+  const doi = await readFile(DOI);
+  return doi ? (JSON.parse(doi.text) as FigmaLog) : {};
+}
+
 export async function syncRows(): Promise<SyncRow[]> {
-  const [{ marks }, doi] = await Promise.all([readMarks(), readFile(DOI)]);
-  const log = (doi ? JSON.parse(doi.text) : {}) as Record<string, { at: string; what: string }[]>;
+  const [{ marks }, log] = await Promise.all([readMarks(), readFigmaLog()]);
   return requirementFiles().map((f) => {
     const mark = marks[f.path];
     const hash = docsHash(f.path);

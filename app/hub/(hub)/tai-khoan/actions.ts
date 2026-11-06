@@ -4,6 +4,7 @@ import { cookies } from "next/headers";
 import { redirect } from "next/navigation";
 
 import { COOKIE, ROLES, hashPassword, requireRole, session, type Role, type User } from "@/lib/qc/auth";
+import { NOTIFY, WEBHOOK, readJson, updateJson, type NotifySettings } from "@/lib/qc/store";
 import { readUsers, writeUsers } from "@/lib/qc/users";
 import { withBase } from "@/lib/base-path";
 
@@ -63,6 +64,48 @@ export async function changeOwnPassword(form: FormData): Promise<void> {
   if (password.length < 8) back(`loi=${encodeURIComponent("Mật khẩu ít nhất 8 ký tự.")}`);
   await edit((u) => u.map((x) => (x.name === me.name ? { ...x, ...hashPassword(password) } : x)), `Hub: ${me.name} đổi mật khẩu`);
   back(`ok=${encodeURIComponent("Đã đổi mật khẩu.")}`);
+}
+
+/**
+ * Google Chat webhooks for "your screen changed" (scripts/figma/notify-devs.mjs): each user sets their own,
+ * an admin sets the project's. Field "url" empty removes it.
+ */
+export async function saveWebhook(form: FormData): Promise<void> {
+  const target = String(form.get("target"));
+  const me = target === "project" ? await requireRole("admin") : await session();
+  if (!me) redirect("/hub/dang-nhap");
+  const url = String(form.get("url") ?? "").trim();
+  if (url && !WEBHOOK.test(url)) back(`loi=${encodeURIComponent("Link webhook phải có dạng https://chat.googleapis.com/v1/spaces/…/messages?key=…")}`);
+  await updateJson<NotifySettings>(
+    NOTIFY,
+    {},
+    (n) => {
+      if (target === "project") return { ...n, project: url || undefined };
+      const devs = { ...n.devs };
+      if (url) devs[me.name] = url;
+      else delete devs[me.name];
+      return { ...n, devs };
+    },
+    `Thông báo: ${target === "project" ? "webhook dự án" : `webhook của ${me.name}`} ${url ? "lưu" : "bỏ"} · ${me.name}`,
+  );
+  back(`ok=${encodeURIComponent(url ? "Đã lưu webhook." : "Đã bỏ webhook.")}`);
+}
+
+/** Sends one test message to the saved webhook (own, or the project's for an admin). */
+export async function testWebhook(form: FormData): Promise<void> {
+  const target = String(form.get("target"));
+  const me = target === "project" ? await requireRole("admin") : await session();
+  if (!me) redirect("/hub/dang-nhap");
+  const n = await readJson<NotifySettings>(NOTIFY, {});
+  const url = target === "project" ? n.project : n.devs?.[me.name];
+  if (!url) back(`loi=${encodeURIComponent("Chưa lưu webhook.")}`);
+  const res = await fetch(url as string, {
+    method: "POST",
+    headers: { "Content-Type": "application/json; charset=UTF-8" },
+    body: JSON.stringify({ text: `*[QC Hub] Tin thử* từ ${me.name}: màn bạn đang làm đổi requirement hoặc Figma thì Hub báo vào đây.` }),
+    cache: "no-store",
+  }).catch(() => null);
+  back(res?.ok ? `ok=${encodeURIComponent("Đã gửi tin thử, kiểm tra Google Chat.")}` : `loi=${encodeURIComponent(`Gửi không được (${res?.status ?? "lỗi mạng"}). Kiểm tra lại link webhook.`)}`);
 }
 
 export async function logout(): Promise<void> {

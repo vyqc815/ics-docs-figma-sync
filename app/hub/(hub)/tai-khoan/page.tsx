@@ -1,8 +1,9 @@
 import { PageHead, Panel, Tag } from "@/components/qc/ui";
 import { ROLES, can, session } from "@/lib/qc/auth";
+import { NOTIFY, maskWebhook, readJson, type NotifySettings } from "@/lib/qc/store";
 import { readUsers } from "@/lib/qc/users";
 
-import { addUser, changeOwnPassword, logout, removeUser, resetPassword, setRole } from "./actions";
+import { addUser, changeOwnPassword, logout, removeUser, resetPassword, saveWebhook, setRole, testWebhook } from "./actions";
 
 export const dynamic = "force-dynamic";
 
@@ -21,12 +22,38 @@ const RoleSelect = ({ value }: { value?: string }): React.JSX.Element => (
   </select>
 );
 
-/** Your account; for admins, every account of the hub. */
+/** A saved webhook is never shown in full: only its tail, with replace, test and remove. */
+const WebhookForm = ({ target, saved }: { target: "me" | "project"; saved?: string }): React.JSX.Element => (
+  <div className="flex flex-wrap items-center gap-2">
+    <form action={saveWebhook} className="flex min-w-0 flex-1 flex-wrap gap-2">
+      <input type="hidden" name="target" value={target} />
+      <input name="url" type="url" required placeholder="https://chat.googleapis.com/v1/spaces/…/messages?key=…" className={`${input} min-w-[280px] flex-1`} />
+      <button className={button}>{saved ? "Thay" : "Lưu"}</button>
+    </form>
+    {saved && (
+      <>
+        <span className="font-mono text-xs text-(--hub-muted)">Đang dùng: {maskWebhook(saved)}</span>
+        <form action={testWebhook}>
+          <input type="hidden" name="target" value={target} />
+          <button className={small}>Gửi thử</button>
+        </form>
+        <form action={saveWebhook}>
+          <input type="hidden" name="target" value={target} />
+          <input type="hidden" name="url" value="" />
+          <button className={`${small} text-(--hub-red)`}>Bỏ</button>
+        </form>
+      </>
+    )}
+  </div>
+);
+
+/** Your account and Chat notifications; for admins, the project's notifications and every account of the hub. */
 const AccountsPage = async ({ searchParams }: { searchParams: Promise<{ ok?: string; loi?: string }> }): Promise<React.JSX.Element> => {
   const { ok, loi } = await searchParams;
   const me = (await session())!;
   const admin = can(me, "admin");
   const users = admin ? (await readUsers()).users : [];
+  const notify = await readJson<NotifySettings>(NOTIFY, {}).catch((): NotifySettings => ({}));
 
   return (
     <>
@@ -48,8 +75,21 @@ const AccountsPage = async ({ searchParams }: { searchParams: Promise<{ ok?: str
           </Panel>
         )}
 
+        <Panel title="Thông báo Google Chat của bạn">
+          <WebhookForm target="me" saved={notify.devs?.[me.name]} />
+          <p className="mt-3 text-xs text-(--hub-faint)">
+            Màn bạn đánh dấu Đang làm / Xong mà requirement hoặc Figma đổi sau đó thì Hub nhắn vào đây. Lấy link: Google Chat › mở space (hoặc tạo space chỉ
+            có bạn) › tên space › Ứng dụng và tích hợp › Webhook › Thêm webhook › chép link.
+          </p>
+        </Panel>
+
         {admin && (
           <>
+            <Panel title="Thông báo Google Chat của dự án">
+              <WebhookForm target="project" saved={notify.project} />
+              <p className="mt-3 text-xs text-(--hub-faint)">Mọi tin “màn đổi sau khi dev code” của cả team cũng gửi vào space này, ghi rõ tên dev.</p>
+            </Panel>
+
             <Panel title="Thêm tài khoản">
               <form action={addUser} className="flex flex-wrap gap-2">
                 <input name="name" required placeholder="tên đăng nhập (vd vy.qc)" className={input} />

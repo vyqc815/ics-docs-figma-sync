@@ -1,54 +1,112 @@
 import { PageHead, Panel } from "@/components/qc/ui";
+import { baDocsMode } from "@/lib/qc/store";
 
-const STEPS: { title: string; items: string[] }[] = [
+type Step = { title: string; items: string[] };
+
+/** Where QC writes: the docs repo on the company server (DOCS_BA_DIR), the hub's own editor elsewhere. */
+const writeWhere = (ba: boolean): string =>
+  ba
+    ? "Viết, sửa file .md ở repo docs, nhánh stable. Hub tự lấy bản mới mỗi 5 phút; không sửa trên Hub (sẽ bị ghi đè)."
+    : "Mở tài liệu trên Hub, bấm bút chì để sửa rồi Lưu: Hub lưu thẳng bản gốc (qc/requirements) lên GitHub.";
+
+const qcSteps = (ba: boolean): Step[] => [
   {
-    title: "Đọc tài liệu",
+    title: "QC · Viết requirement",
     items: [
-      "Menu trái › Tài liệu: mở một requirement. Chấm màu cạnh tên là trạng thái đồng bộ.",
-      "Bấm mã màn (ô tím) trong bài: panel Figma bên phải mở đúng màn đó. Kéo mép trái panel để đổi độ rộng, » để thu gọn.",
-      "Ảnh trong bài và trong panel là ảnh Figma trực tiếp (trễ tối đa 5 phút), không cần đăng nhập Figma.",
-      "Nút ⬇ tải file MD; nút bút chì sửa requirement (QC, admin).",
+      writeWhere(ba),
+      "Không cần đặt mã trên Figma: mã màn do design đặt ở tên frame.",
+      "Mỗi mục ### của phần UI là một Trang. Ghi mã màn đang mô tả (vd. CD-KH-060100) ngay trong mục đó, thường ở chú thích ảnh: Hub gắn đúng màn và ảnh Figma cho Trang.",
+      "Không ghi mã màn thì Hub tự đoán theo chữ trên Figma; đoán không chắc thì Trang vào mục Chưa gắn mã.",
+      "Không tự viết mã khu vực, item (A03.07): Hub tự đánh và giữ nguyên khi chèn, xoá dòng. Đổi chữ nhãn một dòng thì dòng đó nhận mã mới.",
+      "Testcase để ở bảng có cột Given / When / Then.",
     ],
   },
   {
-    title: "Trạng thái đồng bộ",
+    title: "QC · Sau khi lưu",
     items: [
-      "🟢 Đồng bộ · 🟠 Requirement đổi, UI chưa cập nhật · 🔵 UI đổi, requirement chưa cập nhật · 🔴 Cả hai đổi · ⚪ Chưa có mốc.",
-      "Figma được quét mỗi giờ (7h–19h, thứ 2–7); màn nào design sửa thật thì requirement nhắc tới nó chuyển 🔵.",
-      "So requirement với Figma (xem “trước / sau” của màn đổi), khớp thì bấm “Đã đồng bộ” để đặt mốc mới.",
-      "Trang Đồng bộ: lọc theo trạng thái, xem màn nào đổi, lúc nào, đổi gì.",
+      "Hub chuyển bản gốc sang template, gắn mã, kiểm đủ nội dung rồi báo vào Google Chat.",
+      "Bản chuyển thiếu câu, thiếu ô bảng hay lệch số testcase so với bản gốc thì dừng: Hub giữ bản cũ, Chat báo chỗ thiếu để sửa.",
+      "Lên Hub ở lượt deploy kế tiếp (9h, 13h, 17h, thứ 2–7).",
+      "Màn chưa có thiết kế: nhờ người giữ hệ thống mã cấp mã dự kiến. Trang hiện thẻ “Chưa có thiết kế”, design vẽ đúng mã thì thành ảnh thật.",
     ],
   },
   {
-    title: "Màn hình",
+    title: "QC · Đối chiếu với Figma",
     items: [
-      "Trang một màn: tab Figma / Demo thật / Spec MD / Trước–sau; Mở Figma, Xem code.",
-      "Nhãn Final / Chưa làm / Đã bỏ lấy từ bảng NAVIGATION trên Figma (design giữ bảng này).",
-      "Dev: bấm Đang làm / Xong ở đầu trang màn để báo tiến độ của mình; tổng hợp ở Tiến độ dev.",
-    ],
-  },
-  {
-    title: "Tìm và lọc",
-    items: [
-      "Tổng quan › ô tìm: theo mã màn, item, REQ, testcase, tên màn và cả chữ trong tài liệu.",
-      "Tag: gắn ở đầu mỗi tài liệu (QC, admin), bấm tag để xem các tài liệu cùng tag.",
-    ],
-  },
-  {
-    title: "Tài khoản",
-    items: [
-      "dev: chỉ xem và báo tiến độ · qc: + sửa requirement, đánh dấu đồng bộ, tag, dự án · admin: + quản lý tài khoản.",
-      "Đổi mật khẩu: Tài khoản. Quên mật khẩu: nhờ admin đặt lại.",
+      "Chấm cạnh tên tài liệu: 🟢 Đồng bộ · 🟠 Requirement đổi, UI chưa cập nhật · 🔵 UI đổi, requirement chưa cập nhật · 🔴 Cả hai đổi · ⚪ Chưa có mốc.",
+      "Mở tài liệu, xem “Đổi sau mốc” và tab Trước–sau của màn đổi; cập nhật requirement nếu cần.",
+      "Requirement và Figma đã khớp thì bấm “Đã đồng bộ” để đặt mốc mới.",
+      "Trang Chưa gắn mã: các Trang Hub chưa nối được với màn nào, cần ghi mã màn vào.",
     ],
   },
 ];
 
-/** How to use the hub, step by step. */
+const OTHER_STEPS: Step[] = [
+  {
+    title: "Dev · Đọc requirement",
+    items: [
+      "Requirement: mở tài liệu. Bấm mã màn (ô tím) trong bài để panel Figma bên phải mở đúng màn đó.",
+      "Ảnh Figma trong bài là ảnh trực tiếp (trễ tối đa 5 phút), không cần tài khoản Figma.",
+      "Trang một màn: tab Figma / Demo thật / Spec MD / Trước–sau, nút Xem code. “Item, testcase của cụm” cho danh sách item và testcase.",
+      "Nhãn Final / Chưa làm / Đã bỏ trên màn lấy từ bảng NAVIGATION của design: chỉ code màn Final.",
+      "Tài liệu chuyển 🔵 hoặc 🔴: UI vừa đổi, xem “Đổi sau mốc” trước khi code tiếp.",
+    ],
+  },
+  {
+    title: "Dev · Đánh dấu tiến độ",
+    items: [
+      "Ở đầu trang mỗi màn, hàng “Tôi:” chọn Chưa làm / Đang làm / Xong. Mỗi người chỉ đánh dấu phần của mình.",
+      "Mỗi lần đánh dấu là mốc của bạn cho màn đó: Hub nhớ bạn code theo bản requirement và Figma lúc ấy.",
+      "Tiến độ dev: tổng hợp theo từng người; ai đang làm, đã xong màn nào.",
+      "Tài khoản dev chỉ xem tài liệu và báo tiến độ, không sửa requirement.",
+    ],
+  },
+  {
+    title: "Dev · Màn đổi sau khi đã code",
+    items: [
+      "Requirement của màn (các Trang nhắc tới màn, yêu cầu, testcase) hoặc frame Figma đổi sau mốc của bạn: trang màn hiện “Có cập nhật sau khi bạn đánh dấu”, kèm đổi gì, lúc nào.",
+      "Tiến độ dev › “Có cập nhật sau khi code”: các màn đã đánh dấu mà đổi sau đó, theo từng người.",
+      "Code xong phần thay đổi thì bấm “Đã code theo bản mới”: Hub đặt lại mốc.",
+      "Google Chat: dán link webhook của bạn ở Tài khoản › Thông báo Google Chat, bấm Gửi thử. Figma đổi thì tin đến trong vòng 1 giờ; requirement đổi thì tin đến sau lượt deploy đưa bản mới lên Hub.",
+      "Admin điền thêm webhook của dự án: mọi tin của cả team vào một space, ghi tên dev.",
+    ],
+  },
+  {
+    title: "Design · Cập nhật Figma",
+    items: [
+      "Đặt tên frame theo dạng “<MÃ> — <tên>”, vd. “CD-KH-060100 — Bài tập về nhà / BTVN”. Frame chưa có mã thì Hub không thấy.",
+      "Mã: <DỰ ÁN>-<MODULE>-SSMMKK. KK = 00 màn gốc, 01–09 trạng thái, 10, 20… popup / dropdown; bản tối thêm -DK.",
+      "Giữ bảng “Danh sách màn hình” trên trang NAVIGATION: Final, Chưa làm, gạch ngang là đã bỏ.",
+      "Màn đã có mã dự kiến (thẻ “Chưa có thiết kế”, trang Chưa gắn mã): vẽ frame đặt đúng mã đó.",
+      "File Figma mới chưa có mã: QC tạo dự án ở trang Dự án, bấm đề xuất mã, design duyệt rồi đặt tên frame.",
+    ],
+  },
+  {
+    title: "Design · Sửa xong thì",
+    items: [
+      "Ảnh màn trong requirement đổi sau tối đa 5 phút.",
+      "Figma được quét mỗi giờ (7h–19h, thứ 2–7): màn sửa thật được báo vào Google Chat, tài liệu nhắc tới nó chuyển 🔵.",
+      "Code demo và Spec MD sinh lại lúc 8h30, 12h30, 16h30, lên Hub ở lượt deploy 9h, 13h, 17h.",
+      "Đổi tên layer hay lệch ≤ 1px không tính là sửa.",
+    ],
+  },
+  {
+    title: "Tìm, tag, tài khoản",
+    items: [
+      "Tổng quan › ô tìm: theo mã màn, item, REQ, testcase, tên màn và cả chữ trong tài liệu.",
+      "Tag gắn ở đầu mỗi tài liệu (QC, admin); bấm tag để xem các tài liệu cùng tag.",
+      "dev: xem, báo tiến độ · qc: + sửa requirement, đánh dấu đồng bộ, tag, dự án · admin: + quản lý tài khoản, webhook dự án.",
+      "Đổi mật khẩu ở Tài khoản; quên mật khẩu thì nhờ admin đặt lại.",
+    ],
+  },
+];
+
+/** How to use the hub, by role: QC writes requirements, dev reads and marks progress, design updates Figma. */
 const HelpPage = (): React.JSX.Element => (
   <>
-    <PageHead title="Hướng dẫn" sub="Figma · Requirement · Testcase trên một web" />
+    <PageHead title="Hướng dẫn" sub="QC viết requirement · Dev đọc và báo tiến độ · Design cập nhật Figma" />
     <div className="grid gap-4 lg:grid-cols-2">
-      {STEPS.map((s) => (
+      {[...qcSteps(baDocsMode()), ...OTHER_STEPS].map((s) => (
         <Panel key={s.title} title={s.title}>
           <ul className="list-disc space-y-1.5 pl-5 text-[13.5px] leading-relaxed text-(--hub-muted)">
             {s.items.map((i) => (

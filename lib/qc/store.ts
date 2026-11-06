@@ -27,17 +27,29 @@ export async function updateJson<T>(path: string, fallback: T, change: (data: T)
 export const DOC_META = "docs/hub/tai-lieu.json";
 export type DocMeta = Record<string, { tags?: string[] }>;
 
-/** docs/hub/tien-do.json: each developer's own progress per screen code. */
+/**
+ * docs/hub/tien-do.json: each developer's own progress per screen code. Marking a state is also the developer's
+ * baseline for that screen (lib/qc/dev-moc.ts): `at` and the hashes of the requirement it was coded against.
+ * nUi / nRules / nFigma: what scripts/figma/notify-devs.mjs already sent to Google Chat, so nothing is sent twice.
+ */
 export const PROGRESS = "docs/hub/tien-do.json";
 export type ProgressState = "dang" | "xong";
-export type Progress = Record<string, Record<string, { s: ProgressState; at: string }>>;
+export type ProgressEntry = { s: ProgressState; at: string; ui?: string; rules?: string; nUi?: string; nRules?: string; nFigma?: string };
+export type Progress = Record<string, Record<string, ProgressEntry>>;
 export const PROGRESS_LABEL: Record<ProgressState, string> = { dang: "Đang làm", xong: "Xong" };
 
 /**
- * docs/hub/gop-y.json: comments on a requirement file. Where BA docs are the source (DOCS_BA_DIR set, company
- * server), the hub does not edit requirements; QC and dev leave comments here for the BA to apply on stable.
+ * docs/hub/thong-bao.json: Google Chat webhooks for "your screen changed" messages: one per developer (set by
+ * themselves) and one for the project (set by an admin), read by scripts/figma/notify-devs.mjs. Never shown in full.
  */
-export const COMMENTS = "docs/hub/gop-y.json";
-export type Comment = { id: string; by: string; at: string; text: string; done?: { by: string; at: string } };
-export type Comments = Record<string, Comment[]>;
+export const NOTIFY = "docs/hub/thong-bao.json";
+export type NotifySettings = { project?: string; devs?: Record<string, string> };
+export const WEBHOOK = /^https:\/\/chat\.googleapis\.com\/v1\/spaces\/[\w-]+\/messages\?\S+$/;
+/** "…" + the last characters, enough to recognise which webhook is saved. */
+export const maskWebhook = (url: string): string => `chat.googleapis.com/…${url.slice(-6)}`;
+
+/**
+ * Docs repo as the source (DOCS_BA_DIR set, company server): QC writes requirements in the docs repo, branch stable,
+ * and the hub copies them in (lib/qc/ba-sync.ts), so it does not edit them itself.
+ */
 export const baDocsMode = (): boolean => !!process.env.DOCS_BA_DIR;

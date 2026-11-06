@@ -1,13 +1,17 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { Code2, PenTool } from "lucide-react";
+import { Code2, PenTool, TriangleAlert } from "lucide-react";
 
 import { KindTag, LiveShot, PageHead, Panel, PriorityTag, StatusTag, TabBar, Tag } from "@/components/qc/ui";
 import { session } from "@/lib/qc/auth";
+import { changesSince } from "@/lib/qc/dev-moc";
+import { readFigmaLog, type FigmaLog } from "@/lib/qc/dong-bo";
 import { PROGRESS, PROGRESS_LABEL, readJson, type Progress } from "@/lib/qc/store";
 import { setProgress } from "../../docs/actions";
 import { builtPage, clusterOfFile, clustersOf, figmaUrl, frames, navRow, registry, requirementPages, reserved } from "@/lib/qc/data";
 import { withBase } from "@/lib/base-path";
+
+const time = (iso: string): string => new Date(iso).toLocaleString("vi-VN", { timeZone: "Asia/Ho_Chi_Minh", dateStyle: "short", timeStyle: "short" });
 
 /** Site of vyqc815/ics-docs-figma-sync (BA docs ↔ Figma), opened on the screen's code. */
 const DOCS_BA = (process.env.DOCS_FIGMA_URL ?? "https://icstestsapi.pls.edu.vn/docs-figma").replace(/\/$/, "");
@@ -57,7 +61,10 @@ const ScreenPage = async ({ params, searchParams }: { params: Promise<{ code: st
   const view = xem === "demo" && demo ? "demo" : xem === "spec" && built ? "spec" : xem === "so-sanh" && built && frame ? "so-sanh" : "figma";
   const me = await session();
   const progress = (await readJson<Progress>(PROGRESS, {}).catch((): Progress => ({})))[code] ?? {};
-  const mine = me ? progress[me.name]?.s : undefined;
+  const mine = me ? progress[me.name] : undefined;
+  const log: FigmaLog = Object.keys(progress).length ? await readFigmaLog().catch((): FigmaLog => ({})) : {};
+  const updated = new Map(Object.entries(progress).map(([name, p]) => [name, changesSince(code, p, log)]));
+  const myChanges = me ? updated.get(me.name) : null;
 
   return (
     <>
@@ -80,7 +87,7 @@ const ScreenPage = async ({ params, searchParams }: { params: Promise<{ code: st
                 key={v}
                 name="s"
                 value={v}
-                className={`rounded-lg px-2.5 py-1 ${(mine ?? "") === v ? "bg-(--hub-accent-strong) text-white" : "text-(--hub-muted) hover:text-(--hub-text)"}`}
+                className={`rounded-lg px-2.5 py-1 ${(mine?.s ?? "") === v ? "bg-(--hub-accent-strong) text-white" : "text-(--hub-muted) hover:text-(--hub-text)"}`}
               >
                 {v ? PROGRESS_LABEL[v] : "Chưa làm"}
               </button>
@@ -90,11 +97,51 @@ const ScreenPage = async ({ params, searchParams }: { params: Promise<{ code: st
         {Object.keys(progress).length > 0 && (
           <p className="w-full text-xs text-(--hub-muted)">
             {Object.entries(progress)
-              .map(([name, p]) => `${name}: ${PROGRESS_LABEL[p.s]}`)
+              .map(([name, p]) => `${name}: ${PROGRESS_LABEL[p.s]}${updated.get(name) ? " (có cập nhật)" : ""}`)
               .join(" · ")}
           </p>
         )}
       </PageHead>
+      {mine && myChanges && (
+        <section className="mb-6 rounded-3xl border border-(--hub-amber)/50 bg-(--hub-panel) p-5">
+          <div className="flex flex-wrap items-start gap-3">
+            <TriangleAlert className="mt-0.5 size-5 shrink-0 text-(--hub-amber)" />
+            <div className="min-w-0 flex-1 text-[13.5px]">
+              <p className="font-semibold">Có cập nhật sau khi bạn đánh dấu “{PROGRESS_LABEL[mine.s]}” lúc {time(mine.at)}</p>
+              <ul className="mt-2 list-disc space-y-1 pl-5 text-(--hub-muted)">
+                {myChanges.ui && (
+                  <li>
+                    Requirement của màn đổi:{" "}
+                    {pages.map((p) => (
+                      <span key={p.file}>
+                        {p.title} (Trang {p.pages.join(", ")}){" "}
+                      </span>
+                    ))}
+                  </li>
+                )}
+                {myChanges.rules && <li>Yêu cầu nghiệp vụ hoặc testcase của tài liệu đổi</li>}
+                {myChanges.figma.slice(0, 6).map((c) => (
+                  <li key={c.code + c.at}>
+                    Figma <span className="font-mono text-(--hub-accent)">{c.code}</span>: {c.what} · {time(c.at)}
+                  </li>
+                ))}
+              </ul>
+              {myChanges.figma.length > 0 && built && frame && (
+                <Link href={`${base}so-sanh`} className="mt-2 inline-block text-xs text-(--hub-accent) hover:underline">
+                  Xem Trước / sau →
+                </Link>
+              )}
+            </div>
+            <form action={setProgress}>
+              <input type="hidden" name="code" value={code} />
+              <input type="hidden" name="s" value={mine.s} />
+              <button className="rounded-xl bg-(--hub-accent-strong) px-3 py-1.5 text-xs font-semibold text-white hover:bg-(--hub-accent)">
+                Đã code theo bản mới
+              </button>
+            </form>
+          </div>
+        </section>
+      )}
       <Panel className="mb-6">
         <div className="mb-4">
           <TabBar tabs={views} active={view} />
