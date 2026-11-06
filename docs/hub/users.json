@@ -10,5 +10,11 @@
   "role": "admin",
   "salt": "1a86fe61fe1ae0ee6aabc6bbf73334fd",
   "hash": "1111103f45e61fb068895b62fadcfaade7a4f5c99638cf26010e21d3a51bb05a"
+ },
+ {
+  "name": "phuc.it",
+  "role": "dev",
+  "salt": "c51f3dbc1ab4d3fd6f45bf1eca100a4b",
+  "hash": "4188d3404e16807864f93708d26f1cf2e77da637bba1d0258b219ed208af33d9"
  }
 ]
