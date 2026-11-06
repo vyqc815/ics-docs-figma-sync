@@ -1,7 +1,8 @@
 {
  "account_management/account_management.md": {
   "tags": [
-   "master"
+   "master",
+   "account"
   ]
  },
  "course_management/course_management.md": {
