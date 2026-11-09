@@ -90,21 +90,21 @@
   {
    "id": "TR-CT.REQ13",
    "name": "Danh sách bài",
-   "text": "Tab `BTVN` gồm một BTVN cho mỗi bài học của lớp (kể cả bài bổ sung, không gồm Tự học); tab `Kiểm Tra` gồm bài kiểm tra của khoá học và bài kiểm tra bổ sung do Admin thêm, sắp theo ngày giao tăng dần, bài chưa giao xếp sau. Giáo viên không thêm bài kiểm tra. BTVN tự giao khi bài học mở, giáo viên không giao/thu hồi BTVN; chỉ bài kiểm tra có Giao bài/Thu hồi. Tìm theo tên bài; tải toàn bộ, không phân trang; mặc định tab BTVN và card đầu tiên.",
+   "text": "Tab `BTVN` gồm một BTVN cho mỗi bài học của lớp (kể cả bài bổ sung, không gồm Tự học); tab `Kiểm Tra` gồm bài kiểm tra của khoá học và bài kiểm tra bổ sung do Admin thêm, sắp theo ngày giao tăng dần, bài chưa giao xếp sau. Giáo viên không thêm bài kiểm tra. BTVN tự giao khi bài học mở, giáo viên không giao/thu hồi BTVN; chỉ bài kiểm tra có Giao bài/Kết thúc bài/Thu hồi. Tìm theo tên bài; tải toàn bộ, không phân trang; mặc định tab BTVN và card đầu tiên.",
    "source": "qc",
    "content": "qc"
   },
   {
    "id": "TR-CT.REQ14",
    "name": "Khối Tổng Quan",
-   "text": "`Đã Chấm K.Tra` = bài kiểm tra Đã chấm / tổng bài kiểm tra; `K.Tra Đã Giao` = bài đã giao / tổng bài kiểm tra; `Đã Chấm BTVN` = BTVN Đã chấm / tổng BTVN; `Điểm K.Tra`, `Điểm BTVN` = trung bình điểm các bài đã chấm (điểm 0 vẫn tính), làm tròn 1 chữ số thập phân, không có thì trống; `Tỉ Lệ Làm BTVN` = trung bình tỷ lệ nộp BTVN của học viên hợp lệ trên các bài đã mở. Tính toàn lớp, không đổi theo card hoặc tìm kiếm.",
+   "text": "`Đã Chấm K.Tra` = bài kiểm tra Đã chấm / tổng bài kiểm tra; `K.Tra Đã Giao` = bài đã giao (gồm cả đã kết thúc; bài thu hồi không tính) / tổng bài kiểm tra; `Đã Chấm BTVN` = BTVN Đã chấm / tổng BTVN; `Điểm K.Tra`, `Điểm BTVN` = trung bình điểm các bài đã chấm (điểm 0 vẫn tính), làm tròn 1 chữ số thập phân, không có thì trống; `Tỉ Lệ Làm BTVN` = trung bình tỷ lệ nộp BTVN của học viên hợp lệ trên các bài đã mở. Tính toàn lớp, không đổi theo card hoặc tìm kiếm.",
    "source": "qc",
    "content": "qc"
   },
   {
    "id": "TR-CT.REQ15",
    "name": "Badge và card",
-   "text": "Badge = số bài Chưa chấm của tab. Bốn nhãn `Chưa giao`, `Đang đợi nộp bài`, `Chưa chấm`, `Đã chấm` theo dữ liệu giao/nộp/chấm (BTVN Chưa giao = bài học chưa mở). Vòng số đã nộp `S/N` = học viên hợp lệ đã nộp / tổng học viên hợp lệ. Vòng tỷ lệ chấm = C/S × 100, S = 0 là 0%.",
+   "text": "Badge = số bài Chưa chấm của tab. Bốn nhãn `Chưa giao`, `Đang đợi nộp bài`, `Chưa chấm`, `Đã chấm` theo dữ liệu giao/nộp/chấm (BTVN Chưa giao = bài học chưa mở); bài kiểm tra đã kết thúc có thêm badge `Đã kết thúc`. Vòng số đã nộp `S/N` = học viên hợp lệ đã nộp / tổng học viên hợp lệ. Vòng tỷ lệ chấm = C/S × 100, S = 0 là 0%.",
    "source": "qc",
    "content": "qc"
   },
@@ -125,7 +125,7 @@
   {
    "id": "TR-CT.REQ18",
    "name": "Thu hồi bài kiểm tra",
-   "text": "Chỉ `Giáo viên phụ trách chính`, qua popup có cảnh báo xoá dữ liệu. Thành công xoá lượt giao và toàn bộ bài làm, điểm, nhận xét chấm của bài; bài về Chưa giao; giao lại là lượt mới.",
+   "text": "Chỉ `Giáo viên phụ trách chính`, qua popup có cảnh báo xoá dữ liệu; áp dụng cho bài đang giao và bài đã kết thúc. Thành công xoá lượt giao và toàn bộ bài làm, điểm, nhận xét chấm của bài; bài về Chưa giao; giao lại là lượt mới.",
    "source": "qc",
    "content": "qc"
   },
@@ -212,6 +212,13 @@
    "text": "Bảng hiển thị điểm danh (cột Đi học ở tab Buổi học, cột Trạng thái ở Tổng quan) dùng bộ icon `Trạng thái đi học` theo bảng ghép 7 trạng thái; hover hiện tên trạng thái. Dropdown điểm danh ở Bước 1 chỉ hiển thị chữ.",
    "source": "qc",
    "content": "qc"
+  },
+  {
+   "id": "TR-CT.REQ31",
+   "name": "Kết thúc bài kiểm tra",
+   "text": "Chỉ `Giáo viên phụ trách chính`, chỉ bài kiểm tra đang giao, qua popup xác nhận. Thành công lưu thời điểm kết thúc, giữ bài làm, điểm, nhận xét; card thêm badge `Đã kết thúc`, còn nút `Thu hồi`. Sau khi kết thúc: học viên chỉ xem kết quả, mọi request lưu câu trả lời / nộp bị từ chối; giáo viên vẫn chấm, sửa điểm, nhận xét; bài vẫn tính vào `K.Tra Đã Giao`. Không mở lại bài đã kết thúc; làm lại bằng Thu hồi rồi Giao bài lượt mới.",
+   "source": "qc",
+   "content": "qc"
   }
  ],
  "screens": {
@@ -239,6 +246,7 @@
     "TR-CT.A07",
     "TR-CT.A08",
     "TR-CT.A11",
+    "TR-CT.A28",
     "TR-CT.A24",
     "TR-CT.F01"
    ]
@@ -4847,7 +4855,7 @@
      "id": "TR-CT.A14.03",
      "name": "nhan-trang-thai-kiem-tra",
      "label": "Nhãn trạng thái Kiểm tra",
-     "spec": "`Chưa giao`: giáo viên chưa giao. `Đang đợi nộp bài`: đã giao, chưa có bài nộp. `Chưa chấm`: còn bài nộp chưa có điểm. `Đã chấm`: mọi bài đã nộp đều có điểm.",
+     "spec": "`Chưa giao`: giáo viên chưa giao. `Đang đợi nộp bài`: đã giao, chưa có bài nộp. `Chưa chấm`: còn bài nộp chưa có điểm. `Đã chấm`: mọi bài đã nộp đều có điểm. Bài đã kết thúc có thêm badge `Đã kết thúc` cạnh nhãn chấm (`Chưa chấm` / `Đã chấm`; không ai nộp thì chỉ badge `Đã kết thúc`).",
      "source": "tu-dien",
      "content": "qc",
      "matches": {
@@ -5509,7 +5517,7 @@
      "id": "TR-CT.A16.04",
      "name": "giao-thanh-cong",
      "label": "Giao thành công",
-     "spec": "Lưu lượt giao: lớp, bài kiểm tra, giáo viên giao, ngày giao. Card chuyển `Đang đợi nộp bài`; nút đổi thành `Thu hồi`; vùng trái chuyển sang bảng kết quả. Học viên hợp lệ thấy bài trên app.",
+     "spec": "Lưu lượt giao: lớp, bài kiểm tra, giáo viên giao, ngày giao. Card chuyển `Đang đợi nộp bài`; nút `Giao bài` đổi thành hai nút `Kết thúc bài` và `Thu hồi`; vùng trái chuyển sang bảng kết quả. Học viên hợp lệ thấy bài trên app.",
      "source": "tu-dien",
      "content": "qc",
      "matches": {},
@@ -5742,6 +5750,117 @@
     "gv-lop-040204",
     "gv-lop-040205",
     "gv-lop-040210"
+   ]
+  },
+  {
+   "id": "TR-CT.A28",
+   "name": "ket-thuc-bai-kiem-tra",
+   "title": "Kết thúc bài kiểm tra",
+   "screens": [
+    "gv-lop-030100"
+   ],
+   "screensGuessed": [],
+   "source": "tu-dien",
+   "content": "qc",
+   "requirement": "teacher_role/class/class_teaching_requirements.md",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "TR-CT.A28.01",
+     "name": "nut-ket-thuc-bai",
+     "label": "Nút Kết thúc bài",
+     "spec": "Chỉ ở bài kiểm tra đang giao (chưa kết thúc). Bấm mở popup `Kết thúc bài`, nội dung `Nhấn 'Xác nhận' để kết thúc bài kiểm tra này. Học viên sẽ không nộp được bài nữa.`, nút `Huỷ` / `Xác nhận`.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [
+      {
+       "type": "opens",
+       "target": "TR-CT.A28",
+       "raw": "mở popup `Kết thúc bài`"
+      }
+     ],
+     "testcases": [
+      "TR-CT.TC106"
+     ],
+     "missingTerms": [
+      "Kết thúc bài"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "TR-CT.A28.02",
+     "name": "ket-thuc-thanh-cong",
+     "label": "Kết thúc thành công",
+     "spec": "Lưu thời điểm kết thúc; card có thêm badge `Đã kết thúc`; nút `Kết thúc bài` ẩn, còn nút `Thu hồi`; vùng trái giữ bảng kết quả; Toast `Kết thúc bài kiểm tra thành công.`",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Kết thúc thành công",
+      "Đã kết thúc"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "TR-CT.A28.03",
+     "name": "hoc-vien-sau-khi-ket-thuc",
+     "label": "Học viên sau khi kết thúc",
+     "spec": "Bài vẫn hiện trên app, chỉ xem kết quả (điểm, nhận xét khi đã chấm); không vào làm, không lưu câu trả lời, không nộp. Học viên chưa nộp giữ trạng thái `Chưa nộp`.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "gv-lop-030100": [
+       {
+        "term": "Chưa nộp",
+        "figmaId": "4324:20826",
+        "layer": "Trạng thái nộp bài và điểm",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Trạng thái nộp bài và điểm",
+        "component": "Trạng thái nộp bài và điểm",
+        "variant": {
+         "Trạng thái": "Chưa Nộp",
+         "Cỡ": "24"
+        },
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Học viên sau khi kết thúc"
+     ],
+     "status": "khop"
+    },
+    {
+     "id": "TR-CT.A28.04",
+     "name": "cham-sau-khi-ket-thuc",
+     "label": "Chấm sau khi kết thúc",
+     "spec": "Giáo viên phụ trách chính vẫn chấm, sửa điểm, nhận xét bài đã nộp như khi đang giao (REQ06).",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [
+      {
+       "type": "governed-by",
+       "target": "TR-CT.REQ06",
+       "raw": "REQ06"
+      }
+     ],
+     "testcases": [],
+     "missingTerms": [
+      "Chấm sau khi kết thúc"
+     ],
+     "status": "chua-thay-tren-figma"
+    }
+   ],
+   "screensFromItems": [
+    "gv-lop-030100"
    ]
   },
   {
@@ -7475,7 +7594,7 @@
      "id": "TR-CT.A27.01",
      "name": "thanh-cong",
      "label": "Thành công",
-     "spec": "`Thành Công` | Giao bài: `Giao bài kiểm tra thành công.`; thu hồi: `Thu hồi bài kiểm tra thành công.`; áp dụng nhận xét chung xong: `Đã cập nhật nhận xét chung.`; ghi nhận nút: `Đã ghi nhận chấm và sửa bài trên lớp.`",
+     "spec": "`Thành Công` | Giao bài: `Giao bài kiểm tra thành công.`; kết thúc bài: `Kết thúc bài kiểm tra thành công.`; thu hồi: `Thu hồi bài kiểm tra thành công.`; áp dụng nhận xét chung xong: `Đã cập nhật nhận xét chung.`; ghi nhận nút: `Đã ghi nhận chấm và sửa bài trên lớp.`",
      "source": "tu-dien",
      "content": "qc",
      "matches": {
@@ -7577,7 +7696,7 @@
      "id": "TR-CT.A27.04",
      "name": "loi",
      "label": "Lỗi",
-     "spec": "`Có Lỗi Xảy Ra` | Bắt đầu, kết thúc, hoàn thành buổi học; lưu điểm, nhận xét, tải file, nhận xét chung hoặc ghi nhận nút thất bại.",
+     "spec": "`Có Lỗi Xảy Ra` | Bắt đầu, kết thúc, hoàn thành buổi học; giao, kết thúc, thu hồi bài kiểm tra; lưu điểm, nhận xét, tải file, nhận xét chung hoặc ghi nhận nút thất bại.",
      "source": "tu-dien",
      "content": "qc",
      "matches": {},
@@ -8106,7 +8225,7 @@
  "exceptions": [
   {
    "id": "TR-CT.EX01",
-   "text": "Giáo viên không phải `Giáo viên phụ trách chính` của lớp → không có nút điều hướng chấm, `Giao bài`, `Thu hồi`; mở URL hoặc gửi request chấm/giao/thu hồi bị backend từ chối, không lưu dữ liệu. Giáo viên không thuộc lớp không xem được menu.",
+   "text": "Giáo viên không phải `Giáo viên phụ trách chính` của lớp → không có nút điều hướng chấm, `Giao bài`, `Kết thúc bài`, `Thu hồi`; mở URL hoặc gửi request chấm/giao/kết thúc/thu hồi bị backend từ chối, không lưu dữ liệu. Giáo viên không thuộc lớp không xem được menu.",
    "source": "qc",
    "content": "qc"
   },
@@ -8166,7 +8285,7 @@
   },
   {
    "id": "TR-CT.EX11",
-   "text": "Giao hoặc thu hồi thất bại do backend/network → Toast `Có Lỗi Xảy Ra`; trạng thái bài và dữ liệu bài làm giữ nguyên.",
+   "text": "Giao, kết thúc hoặc thu hồi thất bại do backend/network → Toast `Có Lỗi Xảy Ra`; trạng thái bài và dữ liệu bài làm giữ nguyên.",
    "source": "qc",
    "content": "qc"
   },
@@ -8221,6 +8340,12 @@
   {
    "id": "TR-CT.EX20",
    "text": "Giáo viên gửi request thiết lập lại bài nộp của học viên → backend từ chối; bài nộp giữ nguyên.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "TR-CT.EX21",
+   "text": "Học viên lưu câu trả lời hoặc nộp bài kiểm tra đã kết thúc → backend từ chối; app báo bài đã kết thúc; bài đã nộp trước đó giữ nguyên. Kết thúc bài đã kết thúc → backend từ chối, dữ liệu giữ nguyên.",
    "source": "qc",
    "content": "qc"
   }
@@ -8351,6 +8476,15 @@
    "content": "qc",
    "requirements": [
     "TR-CT.REQ18"
+   ]
+  },
+  {
+   "id": "TR-CT.FLOW16",
+   "name": "Kết thúc bài kiểm tra",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "TR-CT.REQ31"
    ]
   },
   {
@@ -9345,6 +9479,114 @@
    "exceptions": [],
    "flows": [],
    "items": []
+  },
+  {
+   "id": "TR-CT.TC101",
+   "title": "Case 101: Kết thúc bài thành công",
+   "priority": "High",
+   "smoke": true,
+   "region": "TR-CT.A28",
+   "scenario": "Flow 16 / REQ31",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "TR-CT.REQ31"
+   ],
+   "exceptions": [],
+   "flows": [
+    "TR-CT.FLOW16"
+   ],
+   "items": []
+  },
+  {
+   "id": "TR-CT.TC102",
+   "title": "Case 102: Huỷ kết thúc",
+   "priority": "Medium",
+   "smoke": false,
+   "region": "TR-CT.A28",
+   "scenario": "Flow 16 / REQ31",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "TR-CT.REQ31"
+   ],
+   "exceptions": [],
+   "flows": [
+    "TR-CT.FLOW16"
+   ],
+   "items": []
+  },
+  {
+   "id": "TR-CT.TC103",
+   "title": "Case 103: Chấm sau khi kết thúc",
+   "priority": "High",
+   "smoke": false,
+   "region": "TR-CT.A28",
+   "scenario": "REQ31 / REQ06",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "TR-CT.REQ31",
+    "TR-CT.REQ06"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "TR-CT.TC104",
+   "title": "Case 104: Học viên nộp sau khi kết thúc",
+   "priority": "High",
+   "smoke": false,
+   "region": "TR-CT.A28",
+   "scenario": "EX21 / REQ31",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "TR-CT.REQ31"
+   ],
+   "exceptions": [
+    "TR-CT.EX21"
+   ],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "TR-CT.TC105",
+   "title": "Case 105: Thu hồi bài đã kết thúc",
+   "priority": "Medium",
+   "smoke": false,
+   "region": "TR-CT.A28",
+   "scenario": "REQ18 / REQ31",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "TR-CT.REQ18",
+    "TR-CT.REQ31"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "TR-CT.TC106",
+   "title": "Case 106: Không phải phụ trách chính",
+   "priority": "High",
+   "smoke": false,
+   "region": "TR-CT.A28",
+   "scenario": "EX01 / REQ31",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "TR-CT.REQ31"
+   ],
+   "exceptions": [
+    "TR-CT.EX01"
+   ],
+   "flows": [],
+   "items": [
+    "TR-CT.A28.01"
+   ]
   },
   {
    "id": "TR-CT.TC55",

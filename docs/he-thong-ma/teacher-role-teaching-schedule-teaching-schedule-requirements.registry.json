@@ -27,7 +27,7 @@
   {
    "id": "TR-TS.REQ04",
    "name": "Màu và nghiệp vụ",
-   "text": "Màu thẻ theo trạng thái lịch (cố định cam, linh hoạt xanh dương, hoàn thành xanh lá, hủy bỏ xám), cùng bộ với Lịch dạy tổng và tab Lịch dạy trong lớp; không tô màu theo ngày. Lịch Hủy bỏ vẫn hiển thị, màu xám, không phát sinh lương. Lịch đã qua ngày nhưng chưa Hoàn thành giữ màu cố định / linh hoạt; không đánh đồng lịch đã qua với buổi đã hoàn thành.",
+   "text": "Cố định cam, Linh hoạt xanh dương, Hoàn thành xanh lá, Hủy bỏ xám (Hoàn thành/Hủy bỏ ghi đè màu loại). Lịch Hủy bỏ không phát sinh lương. Màu không tự thay trạng thái hoặc ghi nhận lương; không đánh đồng lịch đã qua với buổi đã hoàn thành.",
    "source": "qc",
    "content": "qc"
   },
@@ -358,32 +358,16 @@
      "id": "TR-TS.A01.11",
      "name": "vien-the-tai-menu-nay",
      "label": "Viền thẻ tại menu này",
-     "spec": "Màu theo **trạng thái lịch**, cùng bộ với Lịch dạy tổng và tab Lịch dạy trong lớp: `Lịch cố định` cam (buổi chưa hoàn thành, sinh từ khung cố định), `Lịch linh hoạt` xanh dương (buổi chưa hoàn thành, thêm linh hoạt), `Lịch hoàn thành` xanh lá, `Lịch hủy bỏ` xám. Không tô màu theo ngày đã qua / hôm nay / tương lai. Có thông tin ngày giờ và tên trạng thái (hover) để không chỉ dựa vào màu.",
+     "spec": "Cập nhật 03/11/2026: màu theo loại/trạng thái như tab Lịch dạy của lớp: Cố định cam, Linh hoạt xanh dương, Hoàn thành xanh lá, Hủy bỏ xám (Hoàn thành/Hủy bỏ ghi đè màu loại). Không tô màu theo ngày. Có thông tin ngày giờ và tên trạng thái để không chỉ dựa vào màu.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {
-      "gv-ld-010000": [
-       {
-        "term": "Lịch cố định",
-        "figmaId": "5413:47085",
-        "layer": "STATUS CALENDAR",
-        "confidence": "cao",
-        "region": null,
-        "owner": "STATUS CALENDAR",
-        "component": "STATUS CALENDAR",
-        "variant": {
-         "Property 1": "LỊCH CỐ ĐỊNH"
-        },
-        "inCode": false
-       }
-      ]
-     },
+     "matches": {},
      "relations": [],
      "testcases": [],
      "missingTerms": [
       "Viền thẻ tại menu này"
      ],
-     "status": "khop"
+     "status": "chua-thay-tren-figma"
     },
     {
      "id": "TR-TS.A01.12",
@@ -407,7 +391,7 @@
      "id": "TR-TS.A01.13",
      "name": "trang-thai-lich",
      "label": "Trạng thái lịch",
-     "spec": "Là dữ liệu nghiệp vụ riêng: Đang đợi / Hoàn thành / Hủy bỏ. Lịch Đang đợi đã qua ngày giờ vẫn giữ màu cam / xanh dương, không tự chuyển xanh lá.",
+     "spec": "Là dữ liệu nghiệp vụ riêng: Đang đợi / Hoàn thành / Hủy bỏ. Không đổi trạng thái chỉ vì đã qua ngày/giờ.",
      "source": "tu-dien",
      "content": "qc",
      "matches": {},
@@ -422,7 +406,7 @@
      "id": "TR-TS.A01.14",
      "name": "luong",
      "label": "Lương",
-     "spec": "Viền xanh lá = lịch đã Hoàn thành; chỉ buổi Hoàn thành (qua luồng Bài học, lịch được gắn) mới phát sinh lương theo requirement đã chốt.",
+     "spec": "Viền xanh lá chỉ là trạng thái Hoàn thành của lịch (`teaching_status = 1`), không chứng minh đã được tính lương. Hoàn thành qua luồng Bài học và lịch được gắn mới làm phát sinh lương theo requirement đã chốt.",
      "source": "tu-dien",
      "content": "qc",
      "matches": {
@@ -449,8 +433,25 @@
       "TR-TS.TC08",
       "TR-TS.TC8a"
      ],
-     "missingTerms": [],
+     "missingTerms": [
+      "teaching_status = 1"
+     ],
      "status": "khop"
+    },
+    {
+     "id": "TR-TS.A01.16",
+     "name": "giong-man-quan-ly-lich-lop",
+     "label": "Giống màn quản lý lịch lớp",
+     "spec": "Dùng chung bộ màu với tab Lịch dạy ở Chi tiết lớp; màu chỉ để hiển thị, không đổi dữ liệu.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Giống màn quản lý lịch lớp"
+     ],
+     "status": "chua-thay-tren-figma"
     }
    ]
   },
@@ -1454,7 +1455,7 @@
   },
   {
    "id": "TR-TS.TC07",
-   "title": "Case 7: Màu thẻ theo trạng thái lịch",
+   "title": "Case 7: Màu theo loại/trạng thái",
    "priority": "High",
    "smoke": false,
    "region": "TR-TS.A01",

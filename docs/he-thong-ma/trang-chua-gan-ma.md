@@ -63,3 +63,4 @@ Các trang dưới đây chưa khớp chắc chắn với frame Figma nên chưa
 | `survey_bug/bug/bug.md` | Trang 1: Chi tiết bài học – Tab Bug (Thêm Bug) | chưa đủ chắc | CD-BL-010000, CH-BL-010000, GV-BL-010000, ADM-GY-010000 |
 | `teacher_role/class/class_process_requirements.md` | Trang 3: Nội dung buổi họp và Action Item | chưa đủ chắc |  |
 | `teacher_role/class/class_process_requirements.md` | Trang 4: Toast phản hồi CRUD | không item nào khớp đủ | GV-LOP-060100 |
+| `teacher_role/class/class_teaching_requirements.md` | Trang 18: Kết thúc bài kiểm tra | không item nào khớp đủ | GV-LOP-030100 |

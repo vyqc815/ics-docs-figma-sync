@@ -34,6 +34,7 @@ Requirement: `teacher_role/class/class_teaching_requirements.md` — [Giáo viê
 - `FLOW12` Xem kết quả Bài tập và Kiểm tra — `REQ13`
 - `FLOW13` Giao bài kiểm tra — `REQ17`
 - `FLOW14` Thu hồi bài kiểm tra — `REQ18`
+- `FLOW16` Kết thúc bài kiểm tra — `REQ31`
 - `FLOW15` Xem Tự học — `REQ29`
 
 ## 3. Popup, trạng thái, dropdown
@@ -270,6 +271,17 @@ Frame: `GV-LOP-040200`, `GV-LOP-040201`, `GV-LOP-040204`, `GV-LOP-040205`, `GV-L
 | `A17.01` | nut-thu-hoi | `Atom/Button` Type=Danger, Size=Small | `4324:99732` Button · Thu hồi | — | opens `A17` |  | Khớp | QC |
 | `A17.02` | thu-hoi-thanh-cong | `Trạng thái nộp bài và điểm`  | `4324:99813` Trạng thái nộp bài và điểm | — |  |  | Khớp | QC |
 
+### `A28` Kết thúc bài kiểm tra
+
+Frame: `GV-LOP-030100` · Nguồn nội dung: QC
+
+| Mã | Tên | Component (variant) | Layer | Trong code | Quan hệ | Testcase | Trạng thái | Nguồn |
+|---|---|---|---|---|---|---|---|---|
+| `A28.01` | nut-ket-thuc-bai |  |  | — | opens `A28` | `TC106` | Chưa khớp tự động | QC |
+| `A28.02` | ket-thuc-thanh-cong |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A28.03` | hoc-vien-sau-khi-ket-thuc | `Trạng thái nộp bài và điểm`  | `4324:20826` Trạng thái nộp bài và điểm | — |  |  | Khớp | QC |
+| `A28.04` | cham-sau-khi-ket-thuc |  |  | — | governed-by `REQ06` |  | Chưa khớp tự động | QC |
+
 ### `A18` Màn chấm bài — Khung màn và điều hướng
 
 Frame: `GV-LOP-040100`, `GV-LOP-040200`, `GV-LOP-040320` (tool đoán:GV-LOP-040320) · Nguồn nội dung: QC
@@ -439,12 +451,12 @@ Frame: `GV-LOP-030100`, `GV-LOP-030110`, `GV-LOP-030170`, `GV-LOP-030200`, `GV-L
 | `REQ10` | Câu hỏi con | Chấm từng câu con; điểm câu cha = trung bình câu con khi mọi câu con có điểm. Đáp án câu con ghép theo mã câu con, thiếu mã thì theo thứ tự. |
 | `REQ11` | Đã chấm và sửa bài trên lớp | Chỉ ghi nhận khi mọi câu trả lời của học viên đã nộp có điểm. Bấm không giới hạn số lần; mỗi lần ghi đè người bấm và thời điểm máy chủ, chỉ lưu lần bấm gần nhất. Chip hiển thị avatar, tên và thời điểm của người bấm gần nhất. Bản ghi tách BTVN/Kiểm tra theo bài và lớp. Thẻ `Đã chấm và sửa bài` ở Tổng quan lớp = số bài BTVN + Kiểm tra đã có bản ghi, mỗi bài tính một lần dù bấm nhiều lần. |
 | `REQ12` | Đồng bộ dữ liệu | Thay đổi điểm/nhận xét được phản ánh ở bảng học viên, card bài, khối Tổng Quan của menu Bài tập và Kiểm tra và các chỉ số Điểm BTVN, Điểm KT, Đã chấm và sửa bài ở Tổng quan lớp sau khi quay lại hoặc tải lại. |
-| `REQ13` | Danh sách bài | Tab `BTVN` gồm một BTVN cho mỗi bài học của lớp (kể cả bài bổ sung, không gồm Tự học); tab `Kiểm Tra` gồm bài kiểm tra của khoá học và bài kiểm tra bổ sung do Admin thêm, sắp theo ngày giao tăng dần, bài chưa giao xếp sau. Giáo viên không thêm bài kiểm tra. BTVN tự giao khi bài học mở, giáo viên không giao/thu hồi BTVN; chỉ bài kiểm tra có Giao bài/Thu hồi. Tìm theo tên bài; tải toàn bộ, không phân trang; mặc định tab BTVN và card đầu tiên. |
-| `REQ14` | Khối Tổng Quan | `Đã Chấm K.Tra` = bài kiểm tra Đã chấm / tổng bài kiểm tra; `K.Tra Đã Giao` = bài đã giao / tổng bài kiểm tra; `Đã Chấm BTVN` = BTVN Đã chấm / tổng BTVN; `Điểm K.Tra`, `Điểm BTVN` = trung bình điểm các bài đã chấm (điểm 0 vẫn tính), làm tròn 1 chữ số thập phân, không có thì trống; `Tỉ Lệ Làm BTVN` = trung bình tỷ lệ nộp BTVN của học viên hợp lệ trên các bài đã mở. Tính toàn lớp, không đổi theo card hoặc tìm kiếm. |
-| `REQ15` | Badge và card | Badge = số bài Chưa chấm của tab. Bốn nhãn `Chưa giao`, `Đang đợi nộp bài`, `Chưa chấm`, `Đã chấm` theo dữ liệu giao/nộp/chấm (BTVN Chưa giao = bài học chưa mở). Vòng số đã nộp `S/N` = học viên hợp lệ đã nộp / tổng học viên hợp lệ. Vòng tỷ lệ chấm = C/S × 100, S = 0 là 0%. |
+| `REQ13` | Danh sách bài | Tab `BTVN` gồm một BTVN cho mỗi bài học của lớp (kể cả bài bổ sung, không gồm Tự học); tab `Kiểm Tra` gồm bài kiểm tra của khoá học và bài kiểm tra bổ sung do Admin thêm, sắp theo ngày giao tăng dần, bài chưa giao xếp sau. Giáo viên không thêm bài kiểm tra. BTVN tự giao khi bài học mở, giáo viên không giao/thu hồi BTVN; chỉ bài kiểm tra có Giao bài/Kết thúc bài/Thu hồi. Tìm theo tên bài; tải toàn bộ, không phân trang; mặc định tab BTVN và card đầu tiên. |
+| `REQ14` | Khối Tổng Quan | `Đã Chấm K.Tra` = bài kiểm tra Đã chấm / tổng bài kiểm tra; `K.Tra Đã Giao` = bài đã giao (gồm cả đã kết thúc; bài thu hồi không tính) / tổng bài kiểm tra; `Đã Chấm BTVN` = BTVN Đã chấm / tổng BTVN; `Điểm K.Tra`, `Điểm BTVN` = trung bình điểm các bài đã chấm (điểm 0 vẫn tính), làm tròn 1 chữ số thập phân, không có thì trống; `Tỉ Lệ Làm BTVN` = trung bình tỷ lệ nộp BTVN của học viên hợp lệ trên các bài đã mở. Tính toàn lớp, không đổi theo card hoặc tìm kiếm. |
+| `REQ15` | Badge và card | Badge = số bài Chưa chấm của tab. Bốn nhãn `Chưa giao`, `Đang đợi nộp bài`, `Chưa chấm`, `Đã chấm` theo dữ liệu giao/nộp/chấm (BTVN Chưa giao = bài học chưa mở); bài kiểm tra đã kết thúc có thêm badge `Đã kết thúc`. Vòng số đã nộp `S/N` = học viên hợp lệ đã nộp / tổng học viên hợp lệ. Vòng tỷ lệ chấm = C/S × 100, S = 0 là 0%. |
 | `REQ16` | Bảng kết quả học viên | Gồm tập học viên hợp lệ (REQ02) với Điểm số (trống khi chưa chấm, 0 hợp lệ), tên, thời gian làm bài (tối đa hiển thị 23:59:59), trạng thái nộp và số câu bỏ qua. Bấm dòng Đã nộp mở màn chấm (chỉ Giáo viên phụ trách chính); bấm dòng Chưa nộp hiện Toast `Học viên chưa nộp bài này!`. Vòng trên card có tooltip `Số bài đã nộp` và `Đã chấm`. Giáo viên không có Thiết lập lại nộp bài. |
 | `REQ17` | Giao bài kiểm tra | Chỉ `Giáo viên phụ trách chính`, qua popup xác nhận; lớp phải `Đang học` hoặc là lớp không chính thức. Thành công lưu lượt giao với ngày giao; bài chưa giao hiển thị xem trước đề. |
-| `REQ18` | Thu hồi bài kiểm tra | Chỉ `Giáo viên phụ trách chính`, qua popup có cảnh báo xoá dữ liệu. Thành công xoá lượt giao và toàn bộ bài làm, điểm, nhận xét chấm của bài; bài về Chưa giao; giao lại là lượt mới. |
+| `REQ18` | Thu hồi bài kiểm tra | Chỉ `Giáo viên phụ trách chính`, qua popup có cảnh báo xoá dữ liệu; áp dụng cho bài đang giao và bài đã kết thúc. Thành công xoá lượt giao và toàn bộ bài làm, điểm, nhận xét chấm của bài; bài về Chưa giao; giao lại là lượt mới. |
 | `REQ19` | Danh sách bài học | Toàn bộ bài của lớp theo thứ tự (gồm bài bổ sung), mặc định chọn bài đầu. Card bài đã mở có giáo viên của buổi (người bắt đầu), mốc mở `HH:mm - dd/MM/yyyy`, vòng BTVN/Đi học; card chưa mở chỉ có số thứ tự xám, tên, mô tả. Giáo viên không thêm/sửa/xoá bài. |
 | `REQ20` | Dặn dò trước buổi học | Bài Chưa mở hiển thị 5 dòng dặn dò cố định và checkbox `Tôi đã đọc ghi chú`; phải tick mới bắt đầu được. Không hiển thị ghi chú hay nhận xét của bài trước (chỉ xem ở bài đã hoàn thành). Mọi giáo viên của lớp được bắt đầu bất kỳ bài chưa mở; lớp phải `Đang học` hoặc là lớp không chính thức. |
 | `REQ21` | Chọn lịch và lương buổi | Lớp có lịch tuần này thì hiện popup `Chọn lịch dạy` gồm lịch tuần này của chính giáo viên (lịch Hoàn thành không chọn được, lịch huỷ ẩn) và `Không chọn lịch`. Chọn lịch: gắn lịch với buổi và giáo viên, lịch giữ `Đang đợi` (lịch cố định chưa có bản ghi thì tạo bản ghi Đang đợi); lịch đã gắn không chọn được cho buổi khác. Lịch chỉ chuyển `Hoàn thành` và phát sinh lương buổi dạy (một lần) khi bấm `Hoàn thành buổi học`; ngày tính lương là ngày của lịch, không phải ngày hoàn thành. Không chọn lịch hoặc lớp không có lịch tuần này: không phát sinh lương, có Toast `Thông Báo` tương ứng. Mỗi bài một buổi. |
@@ -457,7 +469,8 @@ Frame: `GV-LOP-030100`, `GV-LOP-030110`, `GV-LOP-030170`, `GV-LOP-030200`, `GV-L
 | `REQ28` | % BTVN và Đi học theo bài | Tính theo số học viên `Đang học`/`Dự thính` của đúng bài: % BTVN = đã nộp / tập; % Đi học = đi học (Có mặt, Vào trễ, Ra sớm, Vào trễ & Ra sớm) / số đã điểm danh trong tập (Nghỉ CP/KP trong mẫu, Chưa điểm danh loại khỏi tử và mẫu). Mẫu số 0 để trống. |
 | `REQ29` | Tự học | Mọi giáo viên của lớp xem danh sách bài tự học (giữ thứ tự đã lưu, tải toàn bộ, mặc định bài 1) và bảng thời gian app của toàn bộ học viên đủ 7 trạng thái theo 8 phần `Học Flashcard`, `Bài tập`, `Từ vựng`, `Ngữ pháp`, `Đọc`, `Kanji`, `Nghe`, `Bảng chữ`; `HH:mm:ss`, ô vượt 24 giờ hiển thị `23:59:59`. Chỉ đọc: không thêm khóa/bài, không sửa thời gian; xem bảng không tạo thời gian học; Tự học không ảnh hưởng điểm danh, BTVN của bài học chính. |
 | `REQ30` | Icon trạng thái điểm danh | Bảng hiển thị điểm danh (cột Đi học ở tab Buổi học, cột Trạng thái ở Tổng quan) dùng bộ icon `Trạng thái đi học` theo bảng ghép 7 trạng thái; hover hiện tên trạng thái. Dropdown điểm danh ở Bước 1 chỉ hiển thị chữ. |
-| `EX01` | Ngoại lệ | Giáo viên không phải `Giáo viên phụ trách chính` của lớp → không có nút điều hướng chấm, `Giao bài`, `Thu hồi`; mở URL hoặc gửi request chấm/giao/thu hồi bị backend từ chối, không lưu dữ liệu. Giáo viên không thuộc lớp không xem được menu. |
+| `REQ31` | Kết thúc bài kiểm tra | Chỉ `Giáo viên phụ trách chính`, chỉ bài kiểm tra đang giao, qua popup xác nhận. Thành công lưu thời điểm kết thúc, giữ bài làm, điểm, nhận xét; card thêm badge `Đã kết thúc`, còn nút `Thu hồi`. Sau khi kết thúc: học viên chỉ xem kết quả, mọi request lưu câu trả lời / nộp bị từ chối; giáo viên vẫn chấm, sửa điểm, nhận xét; bài vẫn tính vào `K.Tra Đã Giao`. Không mở lại bài đã kết thúc; làm lại bằng Thu hồi rồi Giao bài lượt mới. |
+| `EX01` | Ngoại lệ | Giáo viên không phải `Giáo viên phụ trách chính` của lớp → không có nút điều hướng chấm, `Giao bài`, `Kết thúc bài`, `Thu hồi`; mở URL hoặc gửi request chấm/giao/kết thúc/thu hồi bị backend từ chối, không lưu dữ liệu. Giáo viên không thuộc lớp không xem được menu. |
 | `EX02` | Ngoại lệ | Bấm `Đã Chấm và Sửa Bài Trên Lớp` khi còn câu trả lời chưa chấm → Toast `Thông Báo` `Vui lòng chấm hết bài cho học viên!`; không ghi nhận, chip giữ nguyên. |
 | `EX03` | Ngoại lệ | Dán nhận xét với dữ liệu bộ nhớ tạm sai định dạng → Toast `Thông Báo` `Dữ liệu không hợp lệ`; nhận xét giữ nguyên. |
 | `EX04` | Ngoại lệ | Lưu điểm, nhận xét hoặc nhận xét chung thất bại → Toast `Có Lỗi Xảy Ra`; không tính lại điểm bài từ dữ liệu chưa lưu. |
@@ -467,7 +480,7 @@ Frame: `GV-LOP-030100`, `GV-LOP-030110`, `GV-LOP-030170`, `GV-LOP-030200`, `GV-L
 | `EX08` | Ngoại lệ | Bài chưa có học viên nộp → vùng thẻ hiển thị `Chưa có học sinh nộp bài`; không có thẻ để chấm. |
 | `EX09` | Ngoại lệ | File ghi âm hoặc ảnh nhận xét lớn hơn 25MB → không tải lên, không thêm chip; Toast `Cảnh Báo` `File vượt quá dung lượng cho phép (25MB).` |
 | `EX10` | Ngoại lệ | Giao bài kiểm tra khi lớp chính thức chưa ở trạng thái `Đang học` → Toast `Cảnh Báo` `Lớp chưa bắt đầu!`; bài vẫn `Chưa giao`. |
-| `EX11` | Ngoại lệ | Giao hoặc thu hồi thất bại do backend/network → Toast `Có Lỗi Xảy Ra`; trạng thái bài và dữ liệu bài làm giữ nguyên. |
+| `EX11` | Ngoại lệ | Giao, kết thúc hoặc thu hồi thất bại do backend/network → Toast `Có Lỗi Xảy Ra`; trạng thái bài và dữ liệu bài làm giữ nguyên. |
 | `EX12` | Ngoại lệ | Bắt đầu buổi học khi lớp chính thức chưa ở trạng thái `Đang học` → Toast `Cảnh Báo` `Lớp chưa bắt đầu!`; không tạo buổi, không đổi lịch. |
 | `EX13` | Ngoại lệ | Sửa điểm danh hoặc ghi chú sau khi buổi đã `Hoàn thành`, hoặc sửa điểm danh khi buổi đã `Chờ hoàn thành` → backend từ chối; dữ liệu giữ nguyên. |
 | `EX14` | Ngoại lệ | Tải tài nguyên của bài bị khoá → không tải; Toast `Thông Báo` `Chỉ tải được tài nguyên của 3 bài đã mở gần nhất`; request trực tiếp bị từ chối. |
@@ -477,6 +490,7 @@ Frame: `GV-LOP-030100`, `GV-LOP-030110`, `GV-LOP-030170`, `GV-LOP-030200`, `GV-L
 | `EX18` | Ngoại lệ | Tải danh sách bài hoặc bảng thời gian Tự học lỗi → vùng lỗi có `Thử lại`; không hiển thị rỗng hoặc `00:00:00` giả. |
 | `EX19` | Ngoại lệ | Bấm dòng học viên `Chưa nộp` ở bảng kết quả → Toast `Thông Báo` `Học viên chưa nộp bài này!`; không mở màn chấm. |
 | `EX20` | Ngoại lệ | Giáo viên gửi request thiết lập lại bài nộp của học viên → backend từ chối; bài nộp giữ nguyên. |
+| `EX21` | Ngoại lệ | Học viên lưu câu trả lời hoặc nộp bài kiểm tra đã kết thúc → backend từ chối; app báo bài đã kết thúc; bài đã nộp trước đó giữ nguyên. Kết thúc bài đã kết thúc → backend từ chối, dữ liệu giữ nguyên. |
 
 ## 6. Testcase
 
@@ -538,6 +552,12 @@ Frame: `GV-LOP-030100`, `GV-LOP-030110`, `GV-LOP-030170`, `GV-LOP-030200`, `GV-L
 | `TC52` | Case 52: Thu hồi xoá bài làm và điểm | High |  | Flow 14 / REQ18 | `A17` |  |
 | `TC53` | Case 53: Huỷ thu hồi | Medium |  | Flow 14 / REQ18 | `A17` |  |
 | `TC54` | Case 54: Giao lại sau thu hồi | Medium |  | REQ17 / REQ18 | `A17` |  |
+| `TC101` | Case 101: Kết thúc bài thành công | High | Có | Flow 16 / REQ31 | `A28` |  |
+| `TC102` | Case 102: Huỷ kết thúc | Medium |  | Flow 16 / REQ31 | `A28` |  |
+| `TC103` | Case 103: Chấm sau khi kết thúc | High |  | REQ31 / REQ06 | `A28` |  |
+| `TC104` | Case 104: Học viên nộp sau khi kết thúc | High |  | EX21 / REQ31 | `A28` |  |
+| `TC105` | Case 105: Thu hồi bài đã kết thúc | Medium |  | REQ18 / REQ31 | `A28` |  |
+| `TC106` | Case 106: Không phải phụ trách chính | High |  | EX01 / REQ31 | `A28` | `A28.01` |
 | `TC55` | Case 55: Mở màn chấm từ card bài | High | Có | Flow 5 / REQ01 | `A18` | `A18.04` |
 | `TC56` | Case 56: Mở màn chấm từ dòng học viên đã nộp | High |  | Flow 5 / REQ01 / REQ04 | `A18` |  |
 | `TC57` | Case 57: Dòng học viên chưa nộp không điều hướng | Medium |  | REQ01 | `A18` |  |
@@ -601,7 +621,7 @@ Frame: `GV-LOP-030100`, `GV-LOP-030110`, `GV-LOP-030170`, `GV-LOP-030200`, `GV-L
 - `A12` Khác Figma GV-LOP-040100: Figma chưa có nút điều hướng chấm bài trên card; requirement bổ sung nút này cho `Giáo viên phụ trách chính`.
 - `A14` Khác Figma GV-LOP-040200: Figma chưa có frame card `Chưa giao` đang chọn (xem trước đề) và nút `Giao bài`; hai thành phần này đặc tả theo ICS cũ.
 - `A26` Khác Figma GV-LOP-050100: Figma chỉ có trạng thái chưa có khóa tự học; trạng thái có dữ liệu theo UI của requirement Admin, bỏ các nút thêm.
-- Chưa khớp tự động (74): `A01.01`, `A01.03`, `A01.04`, `A01.05`, `A03.06`, `A03.07`, `A04.02`, `A04.04`, `A04.05`, `A04.06`, `A04.07`, `A05.01`, `A06.01`, `A06.03`, `A07.04`, `A08.01`, `A08.02`, `A08.03`, `A08.04`, `A08.05`, `A08.06`, `A08.07`, `A10.02`, `A11.01`, `A11.04`, `A11.05`, `A12.03`, `A12.04`, `A12.06`, `A12.07`, `A13.07`, `A14.01`, `A14.05`, `A15.07`, `A16.03`, `A16.04`, `A18.01`, `A18.03`, `A18.05`, `A19.04`, `A20.01`, `A20.04`, `A20.06`, `A21.01`, `A21.05`, `A21.06`, `A21.07`, `A21.08`, `A21.09`, `A21.10`, `A21.11`, `A21.12`, `A21.13`, `A22.01`, `A22.02`, `A22.03`, `A22.04`, `A23.01`, `A23.02`, `A23.03`, `A24.01`, `A24.02`, `A24.03`, `A25.01`, `A25.03`, `A25.04`, `A26.02`, `A26.03`, `A26.04`, `A26.05`, `A26.06`, `A26.07`, `A27.03`, `A27.04`
+- Chưa khớp tự động (77): `A01.01`, `A01.03`, `A01.04`, `A01.05`, `A03.06`, `A03.07`, `A04.02`, `A04.04`, `A04.05`, `A04.06`, `A04.07`, `A05.01`, `A06.01`, `A06.03`, `A07.04`, `A08.01`, `A08.02`, `A08.03`, `A08.04`, `A08.05`, `A08.06`, `A08.07`, `A10.02`, `A11.01`, `A11.04`, `A11.05`, `A12.03`, `A12.04`, `A12.06`, `A12.07`, `A13.07`, `A14.01`, `A14.05`, `A15.07`, `A16.03`, `A16.04`, `A28.01`, `A28.02`, `A28.04`, `A18.01`, `A18.03`, `A18.05`, `A19.04`, `A20.01`, `A20.04`, `A20.06`, `A21.01`, `A21.05`, `A21.06`, `A21.07`, `A21.08`, `A21.09`, `A21.10`, `A21.11`, `A21.12`, `A21.13`, `A22.01`, `A22.02`, `A22.03`, `A22.04`, `A23.01`, `A23.02`, `A23.03`, `A24.01`, `A24.02`, `A24.03`, `A25.01`, `A25.03`, `A25.04`, `A26.02`, `A26.03`, `A26.04`, `A26.05`, `A26.06`, `A26.07`, `A27.03`, `A27.04`
 - Frame Figma chưa có requirement (11): `GV-LOP-030120`, `GV-LOP-030121`, `GV-LOP-030401`, `GV-LOP-040110`, `GV-LOP-040201`, `GV-LOP-040204`, `GV-LOP-040205`, `GV-LOP-040210`, `GV-LOP-040211`, `GV-LOP-040221`, `GV-LOP-040320`
 - Thiếu prototype link đi vào (7): `GV-LOP-030120`, `GV-LOP-030121`, `GV-LOP-030401`, `GV-LOP-040110`, `GV-LOP-040204`, `GV-LOP-040205`, `GV-LOP-050100`
 - Phân loại cần design duyệt (8): `GV-LOP-030401`, `GV-LOP-040110`, `GV-LOP-040201`, `GV-LOP-040204`, `GV-LOP-040205`, `GV-LOP-040210`, `GV-LOP-040320`, `GV-LOP-050100`

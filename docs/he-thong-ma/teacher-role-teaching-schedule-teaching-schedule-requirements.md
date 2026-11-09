@@ -43,10 +43,11 @@ Frame: `GV-LD-010000` · Nguồn nội dung: QC
 | `A01.08` | sap-xep-the |  |  | — |  |  | Chưa khớp tự động | QC |
 | `A01.09` | o-khong-co-lich |  |  | — |  |  | Chưa khớp tự động | QC |
 | `A01.10` | nhieu-lich-trong-ngay |  |  | — |  |  | Chưa khớp tự động | QC |
-| `A01.11` | vien-the-tai-menu-nay | `STATUS CALENDAR`  | `5413:47085` STATUS CALENDAR | — |  |  | Khớp | QC |
+| `A01.11` | vien-the-tai-menu-nay |  |  | — |  |  | Chưa khớp tự động | QC |
 | `A01.12` | lich-huy-bo |  |  | — |  | `TC7a` | Chưa khớp tự động | QC |
 | `A01.13` | trang-thai-lich |  |  | — |  |  | Chưa khớp tự động | QC |
 | `A01.14` | luong | `ICON MENU`  | `I5425:257921;4901:212752;2245:87764` Icon | — |  | `TC07`, `TC7a`, `TC08`, `TC8a` | Khớp | QC |
+| `A01.16` | giong-man-quan-ly-lich-lop |  |  | — |  |  | Chưa khớp tự động | QC |
 
 ### `A02` Tab Quản lý đăng ký lịch
 
@@ -107,7 +108,7 @@ Frame: `GV-LD-020000` · Nguồn nội dung: Figma
 | `REQ01` | Phạm vi lịch dạy | Chỉ lịch có giáo viên được phân công là người đang đăng nhập; không lấy toàn bộ lịch của lớp chỉ vì người đó tham gia lớp. Backend kiểm tra phạm vi. |
 | `REQ02` | Tuần | Mặc định tuần hiện tại, Thứ 2–Chủ Nhật, mũi tên dịch một tuần; header và thẻ cùng khoảng theo timezone nghiệp vụ. |
 | `REQ03` | Cách trình bày | Theo lớp hoặc theo ngày, cùng tập lịch; mỗi lịch một thẻ, sắp tăng theo giờ trong ngày; đủ chỗ xem mọi lịch. |
-| `REQ04` | Màu và nghiệp vụ | Màu thẻ theo trạng thái lịch (cố định cam, linh hoạt xanh dương, hoàn thành xanh lá, hủy bỏ xám), cùng bộ với Lịch dạy tổng và tab Lịch dạy trong lớp; không tô màu theo ngày. Lịch Hủy bỏ vẫn hiển thị, màu xám, không phát sinh lương. Lịch đã qua ngày nhưng chưa Hoàn thành giữ màu cố định / linh hoạt; không đánh đồng lịch đã qua với buổi đã hoàn thành. |
+| `REQ04` | Màu và nghiệp vụ | Cố định cam, Linh hoạt xanh dương, Hoàn thành xanh lá, Hủy bỏ xám (Hoàn thành/Hủy bỏ ghi đè màu loại). Lịch Hủy bỏ không phát sinh lương. Màu không tự thay trạng thái hoặc ghi nhận lương; không đánh đồng lịch đã qua với buổi đã hoàn thành. |
 | `REQ05` | Lịch dạy chỉ đọc | Thẻ chỉ hiển thị, không có hành động khi bấm, không mở popup và không điều hướng. Không CRUD/hủy/hoàn thành/mở lại trực tiếp tại tab này. Giáo viên hoàn thành qua luồng Bài học được cấp quyền theo requirement riêng. |
 | `REQ06` | Lịch đăng ký | Lưới 3 buổi × 7 thứ của chính giáo viên; một ô một khung giờ và ghi chú riêng; một ô là một ca, tối đa 21. Ghi chú chung độc lập. Không tạo buổi dạy/lương từ lịch đăng ký. |
 | `REQ07` | Popup | Giờ bắt đầu/kết thúc bắt buộc, đúng khung buổi và mốc 30 phút, kết thúc sau bắt đầu; xác nhận chỉ cập nhật nháp, hủy không đổi ô. Backend validate lại khi lưu. |
@@ -133,7 +134,7 @@ Frame: `GV-LD-020000` · Nguồn nội dung: Figma
 | `TC04` | Case 4: Bật và tắt Theo lớp | High |  | Flow 2 / REQ03 | `A01` |  |
 | `TC05` | Case 5: Tuần không có lịch | Medium |  | EX02 / REQ02 | `A01` |  |
 | `TC06` | Case 6: Nhiều lịch và bản ghi thay thế | High |  | REQ03 | `A01` |  |
-| `TC07` | Case 7: Màu thẻ theo trạng thái lịch | High |  | REQ04 | `A01` | `A01.14` |
+| `TC07` | Case 7: Màu theo loại/trạng thái | High |  | REQ04 | `A01` | `A01.14` |
 | `TC7a` | Case 7a: Lịch hủy vẫn hiển thị màu xám | High |  | REQ01 / REQ04–REQ05 | `A01` | `A01.12`, `A01.14` |
 | `TC08` | Case 8: Lịch dạy chỉ đọc | High |  | REQ05 / EX01 | `A01` | `A01.14` |
 | `TC8a` | Case 8a: Thẻ lịch không có hành động | High |  | REQ05 | `A01` | `A01.07`, `A01.14` |
@@ -166,7 +167,7 @@ Frame: `GV-LD-020000` · Nguồn nội dung: Figma
 
 **Tool báo, cần người xem**
 
-- Chưa khớp tự động (14): `A01.02`, `A01.03`, `A01.04`, `A01.06`, `A01.07`, `A01.08`, `A01.09`, `A01.10`, `A01.12`, `A01.13`, `A02.01`, `A02.03`, `A02.05`, `A02.06`
+- Chưa khớp tự động (16): `A01.02`, `A01.03`, `A01.04`, `A01.06`, `A01.07`, `A01.08`, `A01.09`, `A01.10`, `A01.11`, `A01.12`, `A01.13`, `A01.16`, `A02.01`, `A02.03`, `A02.05`, `A02.06`
 - Phân loại cần design duyệt (1): `GV-LD-010000`
 - Thiếu prototype link đi vào (2): `GV-LD-010000`, `GV-LD-020010`
 

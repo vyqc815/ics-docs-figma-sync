@@ -4007,6 +4007,7 @@
    "chi tiet cau hoi va bo loc hoc vien": 20,
    "danh sach cau hoi va trang thai cham": 19,
    "icon trang thai diem danh": 8,
+   "ket thuc bai kiem tra": 28,
    "khoi tong quan": 13,
    "kiem tra chua giao xem truoc de va giao bai": 16,
    "man cham bai khung man va dieu huong": 18,
@@ -4174,6 +4175,12 @@
     "loi": 4,
     "thanh cong": 1,
     "thong tin": 2
+   },
+   "28": {
+    "cham sau khi ket thuc": 4,
+    "hoc vien sau khi ket thuc": 3,
+    "ket thuc thanh cong": 2,
+    "nut ket thuc bai": 1
    },
    "3": {
     "bat dau khong chon lich": 7,
@@ -4385,6 +4392,7 @@
   "items": {
    "1": {
     "cot ngay": 4,
+    "giong man quan ly lich lop": 16,
     "khac man quan ly lich lop": 15,
     "lich huy bo": 12,
     "luong": 14,

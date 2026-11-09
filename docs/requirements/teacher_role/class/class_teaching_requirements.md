@@ -1,6 +1,6 @@
 # [Giáo viên] Chi tiết lớp — Giảng dạy
 
-Tài liệu đặc tả nhóm menu **Giảng dạy** trong Chi tiết lớp của role Giáo viên: Bài học, Bài tập và Kiểm tra, Tự học. Gồm menu **Bài học** (dặn dò, bắt đầu buổi, điểm danh, hoàn thành buổi, các tab bài), menu **Bài tập và Kiểm tra** (danh sách, giao/thu hồi bài kiểm tra), **màn chấm bài** dùng chung cho BTVN và Kiểm tra, và menu **Tự học** (chỉ xem). Ảnh danh sách lấy từ Figma; ảnh trạng thái có dữ liệu của Tự học lấy từ requirement Admin; ảnh luồng dạy và màn chấm là UI ICS cũ, dùng làm tham chiếu bố cục và hành vi; tên học viên, điểm và nội dung câu hỏi trong ảnh là dữ liệu mẫu.
+Tài liệu đặc tả nhóm menu **Giảng dạy** trong Chi tiết lớp của role Giáo viên: Bài học, Bài tập và Kiểm tra, Tự học. Gồm menu **Bài học** (dặn dò, bắt đầu buổi, điểm danh, hoàn thành buổi, các tab bài), menu **Bài tập và Kiểm tra** (danh sách, giao/kết thúc/thu hồi bài kiểm tra), **màn chấm bài** dùng chung cho BTVN và Kiểm tra, và menu **Tự học** (chỉ xem). Ảnh danh sách lấy từ Figma; ảnh trạng thái có dữ liệu của Tự học lấy từ requirement Admin; ảnh luồng dạy và màn chấm là UI ICS cũ, dùng làm tham chiếu bố cục và hành vi; tên học viên, điểm và nội dung câu hỏi trong ảnh là dữ liệu mẫu.
 
 ## 1. UI
 
@@ -333,7 +333,7 @@ Tài liệu đặc tả nhóm menu **Giảng dạy** trong Chi tiết lớp củ
 
 - `A14.01` **Badge tab**: Số bài của tab có trạng thái `Chưa chấm`; mỗi bài đếm một lần dù có nhiều bài nộp chưa chấm; bằng 0 thì ẩn.
 - `A14.02` **Nhãn trạng thái BTVN**: `Chưa giao`: bài học chưa mở. `Đang đợi nộp bài`: bài đã mở, chưa học viên hợp lệ nào nộp. `Chưa chấm`: còn bài nộp của học viên hợp lệ chưa có điểm. `Đã chấm`: mọi bài đã nộp đều có điểm.
-- `A14.03` **Nhãn trạng thái Kiểm tra**: `Chưa giao`: giáo viên chưa giao. `Đang đợi nộp bài`: đã giao, chưa có bài nộp. `Chưa chấm`: còn bài nộp chưa có điểm. `Đã chấm`: mọi bài đã nộp đều có điểm.
+- `A14.03` **Nhãn trạng thái Kiểm tra**: `Chưa giao`: giáo viên chưa giao. `Đang đợi nộp bài`: đã giao, chưa có bài nộp. `Chưa chấm`: còn bài nộp chưa có điểm. `Đã chấm`: mọi bài đã nộp đều có điểm. Bài đã kết thúc có thêm badge `Đã kết thúc` cạnh nhãn chấm (`Chưa chấm` / `Đã chấm`; không ai nộp thì chỉ badge `Đã kết thúc`).
 - `A14.04` **Vòng số đã nộp**: Dạng `S/N`: S = số học viên hợp lệ đã nộp; N = tổng học viên hợp lệ của bài (REQ02). Vòng tô theo tỷ lệ S/N. Rê chuột hiện tooltip `Số bài đã nộp`. Bài chưa giao không hiển thị.
 - `A14.05` **Vòng tỷ lệ chấm**: `C / S × 100`, làm tròn số nguyên `%`: C = số bài đã nộp có điểm, S = số bài đã nộp. S = 0 hiển thị `0%`. Điểm 0 vẫn tính là đã chấm. Rê chuột hiện tooltip `Đã chấm`.
 - `A14.06` **Mô tả**: Mô tả bài nguồn (nhiều dòng), không thay bằng nội dung bài làm.
@@ -381,7 +381,7 @@ Tài liệu đặc tả nhóm menu **Giảng dạy** trong Chi tiết lớp củ
 - `A16.01` **Xem trước đề**: Liệt kê lần lượt các câu: hướng dẫn, đề, đoạn văn, âm thanh (phát được), hình, đáp án `A`–`D`. Chỉ xem, không chọn đáp án. Đề không có câu thì hiển thị `Không có dữ liệu`.
 - `A16.02` **Nút `Giao bài`**: Chỉ `Giáo viên phụ trách chính`. Bấm mở popup `Giao bài` với nội dung `Nhấn 'Xác nhận' để giao bài kiểm tra này`, nút `Huỷ` / `Xác nhận`.
 - `A16.03` **Điều kiện giao**: Lớp ở trạng thái `Đang học`, hoặc lớp không chính thức (Lớp demo). Không đạt thì không giao, hiển thị Toast `Cảnh Báo` `Lớp chưa bắt đầu!`.
-- `A16.04` **Giao thành công**: Lưu lượt giao: lớp, bài kiểm tra, giáo viên giao, ngày giao. Card chuyển `Đang đợi nộp bài`; nút đổi thành `Thu hồi`; vùng trái chuyển sang bảng kết quả. Học viên hợp lệ thấy bài trên app.
+- `A16.04` **Giao thành công**: Lưu lượt giao: lớp, bài kiểm tra, giáo viên giao, ngày giao. Card chuyển `Đang đợi nộp bài`; nút `Giao bài` đổi thành hai nút `Kết thúc bài` và `Thu hồi`; vùng trái chuyển sang bảng kết quả. Học viên hợp lệ thấy bài trên app.
 
 - Tập học viên hợp lệ của bài kiểm tra xác định theo ngày giao (REQ02).
 - Giáo viên khác của lớp vẫn xem trước đề nhưng không có nút `Giao bài`.
@@ -392,7 +392,7 @@ Tài liệu đặc tả nhóm menu **Giảng dạy** trong Chi tiết lớp củ
 
 **Mô tả:**
 
-- Bài kiểm tra đã giao có nút `Thu hồi` cạnh tên bài, chỉ hiển thị với `Giáo viên phụ trách chính`.
+- Bài kiểm tra đã giao (kể cả đã kết thúc) có nút `Thu hồi` cạnh tên bài, chỉ hiển thị với `Giáo viên phụ trách chính`.
 
 **Điểm cần lưu ý:**
 
@@ -403,13 +403,30 @@ Tài liệu đặc tả nhóm menu **Giảng dạy** trong Chi tiết lớp củ
 - Sau khi thu hồi, các thẻ `Đã Chấm K.Tra`, `K.Tra Đã Giao`, `Điểm K.Tra` và badge tab cập nhật lại.
 - Giao lại sau khi thu hồi là lượt giao mới, học viên làm lại từ đầu.
 
-### Trang 18: GV-LOP-040100, GV-LOP-040200 — Màn chấm bài — Khung màn và điều hướng
+### Trang 18: Kết thúc bài kiểm tra
+**Mô tả:**
+
+- Bài kiểm tra đang giao có nút `Kết thúc bài` cạnh nút `Thu hồi`, chỉ hiển thị với `Giáo viên phụ trách chính`. Kết thúc là thu bài: học viên không làm, không nộp thêm; bài làm, điểm và nhận xét giữ nguyên.
+
+**Điểm cần lưu ý:**
+
+- `A28.01` **Nút `Kết thúc bài`**: Chỉ ở bài kiểm tra đang giao (chưa kết thúc). Bấm mở popup `Kết thúc bài`, nội dung `Nhấn 'Xác nhận' để kết thúc bài kiểm tra này. Học viên sẽ không nộp được bài nữa.`, nút `Huỷ` / `Xác nhận`.
+- `A28.02` **Kết thúc thành công**: Lưu thời điểm kết thúc; card có thêm badge `Đã kết thúc`; nút `Kết thúc bài` ẩn, còn nút `Thu hồi`; vùng trái giữ bảng kết quả; Toast `Kết thúc bài kiểm tra thành công.`
+- `A28.03` **Học viên sau khi kết thúc**: Bài vẫn hiện trên app, chỉ xem kết quả (điểm, nhận xét khi đã chấm); không vào làm, không lưu câu trả lời, không nộp. Học viên chưa nộp giữ trạng thái `Chưa nộp`.
+- `A28.04` **Chấm sau khi kết thúc**: Giáo viên phụ trách chính vẫn chấm, sửa điểm, nhận xét bài đã nộp như khi đang giao (REQ06).
+
+- Không có mở lại bài đã kết thúc. Muốn học viên làm lại thì `Thu hồi` (xoá bài làm, điểm) rồi `Giao bài` lượt mới.
+- Học viên đang làm dở lúc kết thúc: câu trả lời chưa nộp không được nộp; app báo bài đã kết thúc. Bài đã nộp trước thời điểm kết thúc giữ nguyên.
+- Bài đã kết thúc vẫn tính vào `K.Tra Đã Giao`; chỉ `Thu hồi` mới làm giảm.
+- Tab BTVN không có `Kết thúc bài` (BTVN tự giao theo bài học).
+
+### Trang 19: GV-LOP-040100, GV-LOP-040200 — Màn chấm bài — Khung màn và điều hướng
 
 ![Figma mới nhất · GV-LOP-040100](https://ics-figma-demo.vercel.app/api/figma-frame/GV-LOP-040100.png)
 
 ![Figma mới nhất · GV-LOP-040200](https://ics-figma-demo.vercel.app/api/figma-frame/GV-LOP-040200.png)
 
-![Trang 18](./images/grading-record-reviewed.png)
+![Trang 19](./images/grading-record-reviewed.png)
 
 *Màn chấm bài: chi tiết câu bên trái, danh sách Câu hỏi bên phải, nút Đã Chấm và Sửa Bài Trên Lớp kèm avatar và thời điểm của người bấm (UI ICS cũ) — nhấn để xem ảnh gốc*
 
@@ -434,11 +451,11 @@ Tài liệu đặc tả nhóm menu **Giảng dạy** trong Chi tiết lớp củ
 - Giáo viên khác của lớp (không phải `Giáo viên phụ trách chính`) không thấy nút điều hướng và không mở được màn chấm, kể cả bằng URL.
 - Ảnh UI Giáo viên trên Figma (GV-LOP-040100, GV-LOP-040200) chưa có nút điều hướng trên card và chưa có màn chấm; dùng ảnh UI ICS cũ làm tham chiếu.
 
-### Trang 19: GV-LOP-040320 — Danh sách Câu hỏi và trạng thái chấm
+### Trang 20: GV-LOP-040320 — Danh sách Câu hỏi và trạng thái chấm
 
 ![Figma mới nhất · GV-LOP-040320](https://ics-figma-demo.vercel.app/api/figma-frame/GV-LOP-040320.png)
 
-![Trang 19](./images/grading-multiple-choice.png)
+![Trang 20](./images/grading-multiple-choice.png)
 
 *Danh sách Câu hỏi bên phải: icon trạng thái chấm, nhãn loại câu, đề bài và vòng tỷ lệ điểm (UI ICS cũ) — nhấn để xem ảnh gốc*
 
@@ -459,7 +476,7 @@ Tài liệu đặc tả nhóm menu **Giảng dạy** trong Chi tiết lớp củ
 - Điểm 0 đã chấm vẫn tính vào tỷ lệ; câu trả lời chưa chấm không tham gia tỷ lệ.
 - Trạng thái và tỷ lệ cập nhật ngay sau mỗi lần chấm điểm, không cần tải lại màn.
 
-### Trang 20: GV-LOP-040100, GV-LOP-040320 — Chi tiết câu hỏi và bộ lọc học viên
+### Trang 21: GV-LOP-040100, GV-LOP-040320 — Chi tiết câu hỏi và bộ lọc học viên
 
 ![Figma mới nhất · GV-LOP-040100](https://ics-figma-demo.vercel.app/api/figma-frame/GV-LOP-040100.png)
 
@@ -482,13 +499,13 @@ Tài liệu đặc tả nhóm menu **Giảng dạy** trong Chi tiết lớp củ
 - Tập học viên hiển thị theo REQ02; không hiển thị tài khoản không phải học viên.
 - Không có học viên nộp bài: vùng thẻ hiển thị `Chưa có học sinh nộp bài`.
 
-### Trang 21: GV-LOP-040200, GV-LOP-040201 — Thẻ học viên — điểm và đáp án
+### Trang 22: GV-LOP-040200, GV-LOP-040201 — Thẻ học viên — điểm và đáp án
 
 ![Figma mới nhất · GV-LOP-040200](https://ics-figma-demo.vercel.app/api/figma-frame/GV-LOP-040200.png)
 
 ![Figma mới nhất · GV-LOP-040201](https://ics-figma-demo.vercel.app/api/figma-frame/GV-LOP-040201.png)
 
-![Trang 21](./images/grading-match-column.png)
+![Trang 22](./images/grading-match-column.png)
 
 *Thẻ học viên câu Nối từ: số thứ tự, tên, dãy điểm 0–10, Đáp án của học viên và Nhận xét của giáo viên (UI ICS cũ) — nhấn để xem ảnh gốc*
 
@@ -519,11 +536,11 @@ Tài liệu đặc tả nhóm menu **Giảng dạy** trong Chi tiết lớp củ
 - Mỗi lần bấm điểm chỉ cập nhật câu trả lời của đúng học viên–câu–bài–lớp; không đổi điểm câu khác.
 - Khi mọi câu của học viên trong bài đã có điểm, hệ thống tính lại điểm bài theo REQ07.
 
-### Trang 22: GV-LOP-030401 — Nhận xét của giáo viên
+### Trang 23: GV-LOP-030401 — Nhận xét của giáo viên
 
 ![Figma mới nhất · GV-LOP-030401](https://ics-figma-demo.vercel.app/api/figma-frame/GV-LOP-030401.png)
 
-![Trang 22](./images/grading-teacher-comment-audio.png)
+![Trang 23](./images/grading-teacher-comment-audio.png)
 
 *Nhận xét của giáo viên: ô nhập, icon micro, icon tài liệu, chip File ghi âm có nút ×, icon sao chép và dán (UI ICS cũ) — nhấn để xem ảnh gốc*
 
@@ -545,7 +562,7 @@ Tài liệu đặc tả nhóm menu **Giảng dạy** trong Chi tiết lớp củ
 - Nhận xét độc lập với điểm: có thể nhận xét trước khi chấm và ngược lại.
 - Nội dung chữ hiển thị dạng văn bản thuần, không thực thi HTML/script.
 
-### Trang 23: GV-LOP-040300 — Nhận xét chung của câu
+### Trang 24: GV-LOP-040300 — Nhận xét chung của câu
 
 ![Figma mới nhất · GV-LOP-040300](https://ics-figma-demo.vercel.app/api/figma-frame/GV-LOP-040300.png)
 
@@ -565,7 +582,7 @@ Tài liệu đặc tả nhóm menu **Giảng dạy** trong Chi tiết lớp củ
 - `Huỷ` đóng popup, không đổi nhận xét nào, không hiển thị Toast.
 - Áp dụng cho mọi học viên có câu trả lời của câu, không phụ thuộc bộ lọc đang bật.
 
-### Trang 24: GV-LOP-040301 — Câu hỏi con
+### Trang 25: GV-LOP-040301 — Câu hỏi con
 
 ![Figma mới nhất · GV-LOP-040301](https://ics-figma-demo.vercel.app/api/figma-frame/GV-LOP-040301.png)
 
@@ -584,7 +601,7 @@ Tài liệu đặc tả nhóm menu **Giảng dạy** trong Chi tiết lớp củ
 - Thẻ học viên của câu cha không hiển thị dãy điểm chung.
 - Câu con ghép đáp án theo mã câu con; dữ liệu cũ không có mã thì ghép theo thứ tự câu con.
 
-### Trang 25: GV-LOP-040300 — Nút Đã Chấm và Sửa Bài Trên Lớp
+### Trang 26: GV-LOP-040300 — Nút Đã Chấm và Sửa Bài Trên Lớp
 
 ![Figma mới nhất · GV-LOP-040300](https://ics-figma-demo.vercel.app/api/figma-frame/GV-LOP-040300.png)
 
@@ -603,15 +620,15 @@ Tài liệu đặc tả nhóm menu **Giảng dạy** trong Chi tiết lớp củ
 - Bản ghi tách riêng BTVN và Kiểm tra, theo bài và lớp. Thẻ `Đã chấm và sửa bài` ở Tổng quan lớp đếm số bài BTVN + Kiểm tra đã có bản ghi; bấm lại cùng bài không tăng thẻ.
 - Ghi nhận không khoá chấm: giáo viên vẫn sửa điểm và nhận xét sau khi bấm.
 
-### Trang 26: GV-LOP-050100 — Tự học — Danh sách bài và bảng thời gian
+### Trang 27: GV-LOP-050100 — Tự học — Danh sách bài và bảng thời gian
 
 ![Figma mới nhất · GV-LOP-050100](https://ics-figma-demo.vercel.app/api/figma-frame/GV-LOP-050100.png)
 
-![Trang 26](./images/self-study-empty.png)
+![Trang 27](./images/self-study-empty.png)
 
 *Menu Tự học khi lớp chưa có khóa tự học (Figma GV-LOP-050100) — nhấn để xem ảnh gốc*
 
-![Trang 26](../../management_requirement/class_management/images/58-class-self-study-times.png)
+![Trang 27](../../management_requirement/class_management/images/58-class-self-study-times.png)
 
 *Trạng thái có dữ liệu: Danh sách bài tự học và bảng thời gian (ảnh requirement Admin, Giáo viên không có nút thêm) — nhấn để xem ảnh gốc*
 
@@ -634,24 +651,24 @@ Tài liệu đặc tả nhóm menu **Giảng dạy** trong Chi tiết lớp củ
 - Tự học tách khỏi bài học chính: không có buổi học, điểm danh, BTVN; không đổi % BTVN/Đi học của menu Bài học và không vào danh sách BTVN.
 - Khác Figma GV-LOP-050100: Figma chỉ có trạng thái chưa có khóa tự học; trạng thái có dữ liệu theo UI của requirement Admin, bỏ các nút thêm.
 
-### Trang 27: GV-LOP-040205 — Toast phản hồi CRUD
+### Trang 28: GV-LOP-040205 — Toast phản hồi CRUD
 
 ![Figma mới nhất · GV-LOP-040205](https://ics-figma-demo.vercel.app/api/figma-frame/GV-LOP-040205.png)
 
-![Trang 27](../../images/01-toast-crud.png)
+![Trang 28](../../images/01-toast-crud.png)
 
 *Toast Thành Công, Thông Báo, Cảnh Báo và Có Lỗi Xảy Ra — nhấn để xem ảnh gốc*
 
 **Mô tả:**
 
-- Phản hồi sau các thao tác thay đổi dữ liệu: bắt đầu, kết thúc, hoàn thành buổi học, giao bài, thu hồi bài kiểm tra, lưu điểm, lưu nhận xét, áp dụng nhận xét chung, ghi nhận Đã chấm và sửa bài.
+- Phản hồi sau các thao tác thay đổi dữ liệu: bắt đầu, kết thúc, hoàn thành buổi học, giao bài, kết thúc bài, thu hồi bài kiểm tra, lưu điểm, lưu nhận xét, áp dụng nhận xét chung, ghi nhận Đã chấm và sửa bài.
 
 **Điểm cần lưu ý:**
 
-- `A27.01` **Thành công**: Tiêu đề cố định: `Thành Công`; Khi sử dụng trong màn chấm: Giao bài: `Giao bài kiểm tra thành công.`; thu hồi: `Thu hồi bài kiểm tra thành công.`; áp dụng nhận xét chung xong: `Đã cập nhật nhận xét chung.`; ghi nhận nút: `Đã ghi nhận chấm và sửa bài trên lớp.`
+- `A27.01` **Thành công**: Tiêu đề cố định: `Thành Công`; Khi sử dụng trong màn chấm: Giao bài: `Giao bài kiểm tra thành công.`; kết thúc bài: `Kết thúc bài kiểm tra thành công.`; thu hồi: `Thu hồi bài kiểm tra thành công.`; áp dụng nhận xét chung xong: `Đã cập nhật nhận xét chung.`; ghi nhận nút: `Đã ghi nhận chấm và sửa bài trên lớp.`
 - `A27.02` **Thông tin**: Tiêu đề cố định: `Thông Báo`; Khi sử dụng trong màn chấm: `Lớp không có lịch để tính lương buổi này`; `Bạn đã bỏ qua chọn lịch, buổi học này sẽ không được tính lương`; `Chỉ tải được tài nguyên của 3 bài đã mở gần nhất`; `Đã sao chép`; `Dữ liệu không hợp lệ`; `Vui lòng chấm hết bài cho học viên!`
 - `A27.03` **Cảnh báo**: Tiêu đề cố định: `Cảnh Báo`; Khi sử dụng trong màn chấm: `Lớp chưa bắt đầu!` khi bắt đầu buổi học hoặc giao bài kiểm tra lúc lớp chưa ở trạng thái Đang học; `File vượt quá dung lượng cho phép (25MB).` khi file ghi âm hoặc ảnh nhận xét lớn hơn 25MB.
-- `A27.04` **Lỗi**: Tiêu đề cố định: `Có Lỗi Xảy Ra`; Khi sử dụng trong màn chấm: Bắt đầu, kết thúc, hoàn thành buổi học; lưu điểm, nhận xét, tải file, nhận xét chung hoặc ghi nhận nút thất bại.
+- `A27.04` **Lỗi**: Tiêu đề cố định: `Có Lỗi Xảy Ra`; Khi sử dụng trong màn chấm: Bắt đầu, kết thúc, hoàn thành buổi học; giao, kết thúc, thu hồi bài kiểm tra; lưu điểm, nhận xét, tải file, nhận xét chung hoặc ghi nhận nút thất bại.
 
 - Bấm điểm và lưu nhận xét từng thẻ lưu ngay, không hiển thị Toast thành công để tránh lặp Toast khi chấm nhiều học viên; thành công thể hiện bằng điểm/nhận xét được cập nhật trên thẻ.
 - Bắt đầu, Kết thúc, Hoàn thành buổi học thành công không hiển thị Toast thành công; kết quả thể hiện bằng việc chuyển bước và màn `Buổi học đã kết thúc`.
@@ -807,6 +824,18 @@ Giáo viên phụ trách chính chọn card Kiểm tra đã giao → bấm "Thu 
       → Bài về "Chưa giao", vùng trái về xem trước đề; Toast "Thu hồi bài kiểm tra thành công."
 ```
 
+**Flow 16 / REQ31: Kết thúc bài kiểm tra**
+
+```text
+Giáo viên phụ trách chính chọn card Kiểm tra đang giao → bấm "Kết thúc bài"
+      → Popup "Nhấn 'Xác nhận' để kết thúc bài kiểm tra này. Học viên sẽ không nộp được bài nữa."
+      → Huỷ: đóng popup, không đổi dữ liệu
+      → Xác nhận: lưu thời điểm kết thúc; giữ bài làm, điểm, nhận xét
+      → Card thêm badge "Đã kết thúc"; ẩn "Kết thúc bài", còn "Thu hồi"; Toast "Kết thúc bài kiểm tra thành công."
+      → Học viên: bài còn trên app, chỉ xem kết quả; lưu / nộp câu trả lời bị từ chối
+      → Giáo viên vẫn chấm, sửa điểm, nhận xét; muốn làm lại thì Thu hồi (Flow 14) rồi Giao bài (Flow 13)
+```
+
 **Flow 15 / REQ29: Xem Tự học**
 
 ```text
@@ -819,7 +848,7 @@ Giáo viên vào Chi tiết lớp → Giảng dạy → Tự học
 
 ### 2.2. Ngoại lệ
 
-- **EX01:** Giáo viên không phải `Giáo viên phụ trách chính` của lớp → không có nút điều hướng chấm, `Giao bài`, `Thu hồi`; mở URL hoặc gửi request chấm/giao/thu hồi bị backend từ chối, không lưu dữ liệu. Giáo viên không thuộc lớp không xem được menu.
+- **EX01:** Giáo viên không phải `Giáo viên phụ trách chính` của lớp → không có nút điều hướng chấm, `Giao bài`, `Kết thúc bài`, `Thu hồi`; mở URL hoặc gửi request chấm/giao/kết thúc/thu hồi bị backend từ chối, không lưu dữ liệu. Giáo viên không thuộc lớp không xem được menu.
 - **EX02:** Bấm `Đã Chấm và Sửa Bài Trên Lớp` khi còn câu trả lời chưa chấm → Toast `Thông Báo` `Vui lòng chấm hết bài cho học viên!`; không ghi nhận, chip giữ nguyên.
 - **EX03:** Dán nhận xét với dữ liệu bộ nhớ tạm sai định dạng → Toast `Thông Báo` `Dữ liệu không hợp lệ`; nhận xét giữ nguyên.
 - **EX04:** Lưu điểm, nhận xét hoặc nhận xét chung thất bại → Toast `Có Lỗi Xảy Ra`; không tính lại điểm bài từ dữ liệu chưa lưu.
@@ -829,7 +858,7 @@ Giáo viên vào Chi tiết lớp → Giảng dạy → Tự học
 - **EX08:** Bài chưa có học viên nộp → vùng thẻ hiển thị `Chưa có học sinh nộp bài`; không có thẻ để chấm.
 - **EX09:** File ghi âm hoặc ảnh nhận xét lớn hơn 25MB → không tải lên, không thêm chip; Toast `Cảnh Báo` `File vượt quá dung lượng cho phép (25MB).`
 - **EX10:** Giao bài kiểm tra khi lớp chính thức chưa ở trạng thái `Đang học` → Toast `Cảnh Báo` `Lớp chưa bắt đầu!`; bài vẫn `Chưa giao`.
-- **EX11:** Giao hoặc thu hồi thất bại do backend/network → Toast `Có Lỗi Xảy Ra`; trạng thái bài và dữ liệu bài làm giữ nguyên.
+- **EX11:** Giao, kết thúc hoặc thu hồi thất bại do backend/network → Toast `Có Lỗi Xảy Ra`; trạng thái bài và dữ liệu bài làm giữ nguyên.
 - **EX12:** Bắt đầu buổi học khi lớp chính thức chưa ở trạng thái `Đang học` → Toast `Cảnh Báo` `Lớp chưa bắt đầu!`; không tạo buổi, không đổi lịch.
 - **EX13:** Sửa điểm danh hoặc ghi chú sau khi buổi đã `Hoàn thành`, hoặc sửa điểm danh khi buổi đã `Chờ hoàn thành` → backend từ chối; dữ liệu giữ nguyên.
 - **EX14:** Tải tài nguyên của bài bị khoá → không tải; Toast `Thông Báo` `Chỉ tải được tài nguyên của 3 bài đã mở gần nhất`; request trực tiếp bị từ chối.
@@ -839,6 +868,7 @@ Giáo viên vào Chi tiết lớp → Giảng dạy → Tự học
 - **EX18:** Tải danh sách bài hoặc bảng thời gian Tự học lỗi → vùng lỗi có `Thử lại`; không hiển thị rỗng hoặc `00:00:00` giả.
 - **EX19:** Bấm dòng học viên `Chưa nộp` ở bảng kết quả → Toast `Thông Báo` `Học viên chưa nộp bài này!`; không mở màn chấm.
 - **EX20:** Giáo viên gửi request thiết lập lại bài nộp của học viên → backend từ chối; bài nộp giữ nguyên.
+- **EX21:** Học viên lưu câu trả lời hoặc nộp bài kiểm tra đã kết thúc → backend từ chối; app báo bài đã kết thúc; bài đã nộp trước đó giữ nguyên. Kết thúc bài đã kết thúc → backend từ chối, dữ liệu giữ nguyên.
 
 ### 2.3. Yêu cầu khác
 
@@ -874,12 +904,12 @@ Giáo viên vào Chi tiết lớp → Giảng dạy → Tự học
 
 | Mã | Tên yêu cầu | Mô tả |
 |---|---|---|
-| REQ13 | Danh sách bài | Tab `BTVN` gồm một BTVN cho mỗi bài học của lớp (kể cả bài bổ sung, không gồm Tự học); tab `Kiểm Tra` gồm bài kiểm tra của khoá học và bài kiểm tra bổ sung do Admin thêm, sắp theo ngày giao tăng dần, bài chưa giao xếp sau. Giáo viên không thêm bài kiểm tra. BTVN tự giao khi bài học mở, giáo viên không giao/thu hồi BTVN; chỉ bài kiểm tra có Giao bài/Thu hồi. Tìm theo tên bài; tải toàn bộ, không phân trang; mặc định tab BTVN và card đầu tiên. |
-| REQ14 | Khối Tổng Quan | `Đã Chấm K.Tra` = bài kiểm tra Đã chấm / tổng bài kiểm tra; `K.Tra Đã Giao` = bài đã giao / tổng bài kiểm tra; `Đã Chấm BTVN` = BTVN Đã chấm / tổng BTVN; `Điểm K.Tra`, `Điểm BTVN` = trung bình điểm các bài đã chấm (điểm 0 vẫn tính), làm tròn 1 chữ số thập phân, không có thì trống; `Tỉ Lệ Làm BTVN` = trung bình tỷ lệ nộp BTVN của học viên hợp lệ trên các bài đã mở. Tính toàn lớp, không đổi theo card hoặc tìm kiếm. |
-| REQ15 | Badge và card | Badge = số bài Chưa chấm của tab. Bốn nhãn `Chưa giao`, `Đang đợi nộp bài`, `Chưa chấm`, `Đã chấm` theo dữ liệu giao/nộp/chấm (BTVN Chưa giao = bài học chưa mở). Vòng số đã nộp `S/N` = học viên hợp lệ đã nộp / tổng học viên hợp lệ. Vòng tỷ lệ chấm = C/S × 100, S = 0 là 0%. |
+| REQ13 | Danh sách bài | Tab `BTVN` gồm một BTVN cho mỗi bài học của lớp (kể cả bài bổ sung, không gồm Tự học); tab `Kiểm Tra` gồm bài kiểm tra của khoá học và bài kiểm tra bổ sung do Admin thêm, sắp theo ngày giao tăng dần, bài chưa giao xếp sau. Giáo viên không thêm bài kiểm tra. BTVN tự giao khi bài học mở, giáo viên không giao/thu hồi BTVN; chỉ bài kiểm tra có Giao bài/Kết thúc bài/Thu hồi. Tìm theo tên bài; tải toàn bộ, không phân trang; mặc định tab BTVN và card đầu tiên. |
+| REQ14 | Khối Tổng Quan | `Đã Chấm K.Tra` = bài kiểm tra Đã chấm / tổng bài kiểm tra; `K.Tra Đã Giao` = bài đã giao (gồm cả đã kết thúc; bài thu hồi không tính) / tổng bài kiểm tra; `Đã Chấm BTVN` = BTVN Đã chấm / tổng BTVN; `Điểm K.Tra`, `Điểm BTVN` = trung bình điểm các bài đã chấm (điểm 0 vẫn tính), làm tròn 1 chữ số thập phân, không có thì trống; `Tỉ Lệ Làm BTVN` = trung bình tỷ lệ nộp BTVN của học viên hợp lệ trên các bài đã mở. Tính toàn lớp, không đổi theo card hoặc tìm kiếm. |
+| REQ15 | Badge và card | Badge = số bài Chưa chấm của tab. Bốn nhãn `Chưa giao`, `Đang đợi nộp bài`, `Chưa chấm`, `Đã chấm` theo dữ liệu giao/nộp/chấm (BTVN Chưa giao = bài học chưa mở); bài kiểm tra đã kết thúc có thêm badge `Đã kết thúc`. Vòng số đã nộp `S/N` = học viên hợp lệ đã nộp / tổng học viên hợp lệ. Vòng tỷ lệ chấm = C/S × 100, S = 0 là 0%. |
 | REQ16 | Bảng kết quả học viên | Gồm tập học viên hợp lệ (REQ02) với Điểm số (trống khi chưa chấm, 0 hợp lệ), tên, thời gian làm bài (tối đa hiển thị 23:59:59), trạng thái nộp và số câu bỏ qua. Bấm dòng Đã nộp mở màn chấm (chỉ Giáo viên phụ trách chính); bấm dòng Chưa nộp hiện Toast `Học viên chưa nộp bài này!`. Vòng trên card có tooltip `Số bài đã nộp` và `Đã chấm`. Giáo viên không có Thiết lập lại nộp bài. |
 | REQ17 | Giao bài kiểm tra | Chỉ `Giáo viên phụ trách chính`, qua popup xác nhận; lớp phải `Đang học` hoặc là lớp không chính thức. Thành công lưu lượt giao với ngày giao; bài chưa giao hiển thị xem trước đề. |
-| REQ18 | Thu hồi bài kiểm tra | Chỉ `Giáo viên phụ trách chính`, qua popup có cảnh báo xoá dữ liệu. Thành công xoá lượt giao và toàn bộ bài làm, điểm, nhận xét chấm của bài; bài về Chưa giao; giao lại là lượt mới. |
+| REQ18 | Thu hồi bài kiểm tra | Chỉ `Giáo viên phụ trách chính`, qua popup có cảnh báo xoá dữ liệu; áp dụng cho bài đang giao và bài đã kết thúc. Thành công xoá lượt giao và toàn bộ bài làm, điểm, nhận xét chấm của bài; bài về Chưa giao; giao lại là lượt mới. |
 
 | Mã | Tên yêu cầu | Mô tả |
 |---|---|---|
@@ -895,6 +925,7 @@ Giáo viên vào Chi tiết lớp → Giảng dạy → Tự học
 | REQ28 | % BTVN và Đi học theo bài | Tính theo số học viên `Đang học`/`Dự thính` của đúng bài: % BTVN = đã nộp / tập; % Đi học = đi học (Có mặt, Vào trễ, Ra sớm, Vào trễ & Ra sớm) / số đã điểm danh trong tập (Nghỉ CP/KP trong mẫu, Chưa điểm danh loại khỏi tử và mẫu). Mẫu số 0 để trống. |
 | REQ29 | Tự học | Mọi giáo viên của lớp xem danh sách bài tự học (giữ thứ tự đã lưu, tải toàn bộ, mặc định bài 1) và bảng thời gian app của toàn bộ học viên đủ 7 trạng thái theo 8 phần `Học Flashcard`, `Bài tập`, `Từ vựng`, `Ngữ pháp`, `Đọc`, `Kanji`, `Nghe`, `Bảng chữ`; `HH:mm:ss`, ô vượt 24 giờ hiển thị `23:59:59`. Chỉ đọc: không thêm khóa/bài, không sửa thời gian; xem bảng không tạo thời gian học; Tự học không ảnh hưởng điểm danh, BTVN của bài học chính. |
 | REQ30 | Icon trạng thái điểm danh | Bảng hiển thị điểm danh (cột Đi học ở tab Buổi học, cột Trạng thái ở Tổng quan) dùng bộ icon `Trạng thái đi học` theo bảng ghép 7 trạng thái; hover hiện tên trạng thái. Dropdown điểm danh ở Bước 1 chỉ hiển thị chữ. |
+| REQ31 | Kết thúc bài kiểm tra | Chỉ `Giáo viên phụ trách chính`, chỉ bài kiểm tra đang giao, qua popup xác nhận. Thành công lưu thời điểm kết thúc, giữ bài làm, điểm, nhận xét; card thêm badge `Đã kết thúc`, còn nút `Thu hồi`. Sau khi kết thúc: học viên chỉ xem kết quả, mọi request lưu câu trả lời / nộp bị từ chối; giáo viên vẫn chấm, sửa điểm, nhận xét; bài vẫn tính vào `K.Tra Đã Giao`. Không mở lại bài đã kết thúc; làm lại bằng Thu hồi rồi Giao bài lượt mới. |
 
 ### 2.4. Ràng buộc
 
@@ -909,13 +940,13 @@ Giáo viên vào Chi tiết lớp → Giảng dạy → Tự học
 
 **Bài tập và Kiểm tra, màn chấm bài**
 
-| Role | Xem danh sách, kết quả, xem trước đề | Giao / Thu hồi bài kiểm tra | Mở màn chấm | Chấm điểm / sửa đè điểm app | Nhận xét / Nhận xét chung | Đã Chấm và Sửa Bài Trên Lớp |
+| Role | Xem danh sách, kết quả, xem trước đề | Giao / Kết thúc / Thu hồi bài kiểm tra | Mở màn chấm | Chấm điểm / sửa đè điểm app | Nhận xét / Nhận xét chung | Đã Chấm và Sửa Bài Trên Lớp |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|
 | Giáo viên phụ trách chính của lớp | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | Giáo viên khác của lớp | ✅ | ❌ | ❌ | ❌ | ❌ | ❌ |
 | Các role khác | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ |
 
-- Giáo viên khác của lớp xem kết quả chấm (điểm, trạng thái nộp) ở bảng học viên của menu Bài tập và Kiểm tra, không vào màn chấm, không giao/thu hồi.
+- Giáo viên khác của lớp xem kết quả chấm (điểm, trạng thái nộp) ở bảng học viên của menu Bài tập và Kiểm tra, không vào màn chấm, không giao/kết thúc/thu hồi.
 - Thiết lập lại nộp bài (xoá bài làm để học viên làm lại) chỉ Admin, Class Handler, Support thực hiện theo requirement Admin; giáo viên không có.
 - Không role nào có nút Thêm bài kiểm tra trong menu này; bài kiểm tra bổ sung do Admin thêm ở chức năng riêng.
 - Các role quản lý (Admin, Class Handler, Support) thao tác BTVN/Kiểm tra theo requirement Admin [Chi tiết lớp học — Menu Bài tập và kiểm tra](../../management_requirement/class_management/class_detail_homework_tests_requirements.md); tài liệu này không cấp thêm quyền chấm cho các role đó.
@@ -988,7 +1019,7 @@ Giáo viên vào Chi tiết lớp → Giảng dạy → Tự học
 | Case 39: Điểm trung bình tính cả điểm 0 | High | REQ14 | Giáo viên | Kiểm tra đã chấm điểm 8 và 0; một Chưa nộp, một Chưa chấm | **Given** xem `Điểm K.Tra`<br>**When** tổng hợp<br>**Then** hiển thị 4.0 | - Chưa nộp/chưa chấm không vào mẫu<br>- Không trộn BTVN |
 | Case 40: K.Tra Đã Giao theo thao tác giao | Medium | REQ14 / REQ17 | Giáo viên phụ trách chính | Lớp có 9 bài kiểm tra, đã giao 3 | **Given** giao thêm 1 bài<br>**When** khối Tổng Quan cập nhật<br>**Then** `K.Tra Đã Giao` là 04/09 | - Thu hồi 1 bài thì về 03/09<br>- `Đã Chấm K.Tra` vẫn chia cho tổng 09 bài |
 | Case 41: Badge đếm bài chưa chấm | High | REQ15 | Giáo viên | BTVN có 2 bài Chưa chấm, mỗi bài 5 bài nộp chưa chấm | **Given** xem tab BTVN<br>**When** tính badge<br>**Then** badge là 2 | - Không hiển thị 10<br>- Không cộng bài của tab Kiểm tra |
-| Case 42: Đủ bốn nhãn trạng thái | High | REQ15 | Giáo viên | Có bài ở mỗi trạng thái | **Given** xem danh sách<br>**When** render card<br>**Then** đúng Chưa giao, Đang đợi nộp bài, Chưa chấm, Đã chấm | - BTVN Chưa giao là bài học chưa mở |
+| Case 42: Đủ bốn nhãn trạng thái | High | REQ15 | Giáo viên | Có bài ở mỗi trạng thái | **Given** xem danh sách<br>**When** render card<br>**Then** đúng Chưa giao, Đang đợi nộp bài, Chưa chấm, Đã chấm | - BTVN Chưa giao là bài học chưa mở<br>- Kiểm tra đã kết thúc có thêm badge `Đã kết thúc` |
 | Case 43: Vòng đã nộp trên tổng | High | REQ15 | Giáo viên | Bài có 14 học viên hợp lệ, 12 đã nộp | **Given** xem card<br>**When** tính vòng số đã nộp<br>**Then** hiển thị `12/14` | - Không hiển thị 12/2 |
 | Case 44: Tỷ lệ chấm trên bài đã nộp | High | REQ15 | Giáo viên | 3 học viên đã nộp đều đã chấm, 15 chưa nộp | **Given** xem card<br>**When** tính tỷ lệ chấm<br>**Then** 100% | - Không chia cho tổng học viên<br>- S = 0 hiển thị 0% |
 | Case 45: Ba trạng thái dòng | High · Smoke | Flow 12 / REQ16 | Giáo viên | A chưa nộp, B nộp chưa chấm, C được chấm 0 | **Given** xem bảng<br>**When** render<br>**Then** A Chưa nộp, B Đã nộp không điểm, C Đã nộp điểm 0 | - Không hiển thị 0 cho B<br>- Không ẩn điểm 0 của C |
@@ -1003,6 +1034,12 @@ Giáo viên vào Chi tiết lớp → Giảng dạy → Tự học
 | Case 52: Thu hồi xoá bài làm và điểm | High | Flow 14 / REQ18 | Giáo viên phụ trách chính | Bài đã giao, 5 học viên đã nộp, 3 đã chấm | **Given** bấm `Thu hồi`<br>**When** bấm `Xác nhận`<br>**Then** bài về Chưa giao | - Không còn bài làm/điểm/nhận xét của 5 học viên<br>- Toast `Thu hồi bài kiểm tra thành công.`<br>- Khối Tổng Quan cập nhật |
 | Case 53: Huỷ thu hồi | Medium | Flow 14 / REQ18 | Giáo viên phụ trách chính | Popup Thu hồi đang mở | **Given** bấm `Huỷ`<br>**When** popup đóng<br>**Then** dữ liệu giữ nguyên | - Không Toast |
 | Case 54: Giao lại sau thu hồi | Medium | REQ17 / REQ18 | Giáo viên phụ trách chính | Bài vừa thu hồi | **Given** bấm `Giao bài` và xác nhận<br>**When** học viên mở app<br>**Then** học viên làm lại từ đầu | - Không khôi phục bài làm cũ |
+| Case 101: Kết thúc bài thành công | High · Smoke | Flow 16 / REQ31 | Giáo viên phụ trách chính | Bài đang giao, 5/8 học viên đã nộp | **Given** bấm `Kết thúc bài`<br>**When** bấm `Xác nhận`<br>**Then** card có badge `Đã kết thúc` | - Toast `Kết thúc bài kiểm tra thành công.`<br>- Còn nút `Thu hồi`, không còn `Kết thúc bài`<br>- 5 bài nộp, điểm giữ nguyên; `K.Tra Đã Giao` không đổi |
+| Case 102: Huỷ kết thúc | Medium | Flow 16 / REQ31 | Giáo viên phụ trách chính | Popup Kết thúc bài đang mở | **Given** bấm `Huỷ`<br>**When** popup đóng<br>**Then** bài vẫn đang giao | - Không Toast<br>- Học viên vẫn nộp được |
+| Case 103: Chấm sau khi kết thúc | High | REQ31 / REQ06 | Giáo viên phụ trách chính | Bài đã kết thúc, 2 bài nộp chưa chấm | **Given** mở màn chấm<br>**When** chấm 2 bài<br>**Then** điểm lưu, card chuyển `Đã chấm` kèm `Đã kết thúc` | - Học viên thấy điểm trên app |
+| Case 104: Học viên nộp sau khi kết thúc | High | EX21 / REQ31 | Học viên | Học viên A đang làm dở khi giáo viên kết thúc | **Given** A bấm `Nộp`<br>**When** backend kiểm tra<br>**Then** từ chối, app báo bài đã kết thúc | - A vẫn `Chưa nộp` ở bảng kết quả<br>- Request lưu câu trả lời cũng bị từ chối |
+| Case 105: Thu hồi bài đã kết thúc | Medium | REQ18 / REQ31 | Giáo viên phụ trách chính | Bài đã kết thúc, có bài nộp và điểm | **Given** bấm `Thu hồi`<br>**When** bấm `Xác nhận`<br>**Then** bài về `Chưa giao` | - Bài làm, điểm, nhận xét bị xoá<br>- `K.Tra Đã Giao` giảm 1<br>- Giao lại là lượt mới |
+| Case 106: Không phải phụ trách chính | High | EX01 / REQ31 | Giáo viên | Giáo viên thuộc lớp, không phải phụ trách chính; bài đang giao | **Given** xem card<br>**When** render<br>**Then** không có nút `Kết thúc bài` | - Gửi request kết thúc bị từ chối<br>- Bài vẫn đang giao |
 | Case 55: Mở màn chấm từ card bài | High · Smoke | Flow 5 / REQ01 | Giáo viên phụ trách chính | Bài BTVN có học viên đã nộp | **Given** đang ở menu Bài tập và Kiểm tra<br>**When** bấm nút điều hướng trên card bài<br>**Then** mở màn chấm của đúng bài | - Tiêu đề đúng tên bài<br>- Chọn sẵn câu đầu tiên<br>- Danh sách Câu hỏi đủ câu của bài |
 | Case 56: Mở màn chấm từ dòng học viên đã nộp | High | Flow 5 / REQ01 / REQ04 | Giáo viên phụ trách chính | Học viên A đã nộp bài | **Given** đang xem bảng học viên của bài<br>**When** bấm dòng A<br>**Then** mở màn chấm của bài, lọc sẵn A | - Bộ lọc Học Viên chọn A<br>- Chỉ thẻ A hiển thị ở câu đang chọn<br>- Có thể bỏ lọc để xem mọi học viên |
 | Case 57: Dòng học viên chưa nộp không điều hướng | Medium | REQ01 | Giáo viên phụ trách chính | Học viên B chưa nộp | **Given** đang xem bảng học viên<br>**When** bấm dòng B<br>**Then** không mở màn chấm | - Không lỗi<br>- Không tạo dữ liệu chấm |

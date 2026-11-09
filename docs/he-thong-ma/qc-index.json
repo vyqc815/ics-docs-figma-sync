@@ -1,6 +1,6 @@
 {
- "version": "cf4f3ffc96d58ee2",
- "generatedAt": "2026-11-04T08:09:50+00:00",
+ "version": "4c5480fb1964d065",
+ "generatedAt": "2026-11-09T02:30:54+00:00",
  "liveImage": "https://ics-figma-demo.vercel.app/api/figma-frame/{code}.png",
  "files": [
   {
@@ -4815,6 +4815,11 @@
     },
     {
      "no": 18,
+     "title": "Kết thúc bài kiểm tra",
+     "screens": []
+    },
+    {
+     "no": 19,
      "title": "Màn chấm bài — Khung màn và điều hướng",
      "screens": [
       "GV-LOP-040100",
@@ -4822,14 +4827,14 @@
      ]
     },
     {
-     "no": 19,
+     "no": 20,
      "title": "Danh sách Câu hỏi và trạng thái chấm",
      "screens": [
       "GV-LOP-040320"
      ]
     },
     {
-     "no": 20,
+     "no": 21,
      "title": "Chi tiết câu hỏi và bộ lọc học viên",
      "screens": [
       "GV-LOP-040100",
@@ -4837,7 +4842,7 @@
      ]
     },
     {
-     "no": 21,
+     "no": 22,
      "title": "Thẻ học viên — điểm và đáp án",
      "screens": [
       "GV-LOP-040200",
@@ -4845,42 +4850,42 @@
      ]
     },
     {
-     "no": 22,
+     "no": 23,
      "title": "Nhận xét của giáo viên",
      "screens": [
       "GV-LOP-030401"
      ]
     },
     {
-     "no": 23,
+     "no": 24,
      "title": "Nhận xét chung của câu",
      "screens": [
       "GV-LOP-040300"
      ]
     },
     {
-     "no": 24,
+     "no": 25,
      "title": "Câu hỏi con",
      "screens": [
       "GV-LOP-040301"
      ]
     },
     {
-     "no": 25,
+     "no": 26,
      "title": "Nút Đã Chấm và Sửa Bài Trên Lớp",
      "screens": [
       "GV-LOP-040300"
      ]
     },
     {
-     "no": 26,
+     "no": 27,
      "title": "Tự học — Danh sách bài và bảng thời gian",
      "screens": [
       "GV-LOP-050100"
      ]
     },
     {
-     "no": 27,
+     "no": 28,
      "title": "Toast phản hồi CRUD",
      "screens": [
       "GV-LOP-040205"

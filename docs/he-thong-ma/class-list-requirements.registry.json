@@ -6,7 +6,7 @@
   {
    "id": "TR-CL.REQ01",
    "name": "Phạm vi và bộ lọc",
-   "text": "Lớp giáo viên được thêm vào tại trung tâm đang chọn. Tìm theo mã lớp/tên khoá; Loại lớp (`Lớp 1-1`, `Lớp chung`, `Lớp demo`), Trạng thái (7 trạng thái, mặc định `Đang học`), Trình độ; chọn nhiều, trong cùng bộ lọc là OR. Hàng thẻ và Danh sách lớp dùng cùng tập lớp thỏa bộ lọc. Không có kỳ thống kê.",
+   "text": "Lớp giáo viên được thêm vào tại trung tâm đang chọn. Tìm theo mã lớp/tên khoá; Loại lớp (`Lớp 1-1`, `Lớp chung`, `Lớp demo`), Trạng thái (7 trạng thái, mặc định `Đang học` + `Khai giảng`), Trình độ; chọn nhiều, trong cùng bộ lọc là OR. Hàng thẻ và Danh sách lớp dùng cùng tập lớp thỏa bộ lọc. Không có kỳ thống kê.",
    "source": "qc",
    "content": "qc"
   },
@@ -178,7 +178,7 @@
      "id": "TR-CL.A01.04",
      "name": "trang-thai",
      "label": "Trạng thái",
-     "spec": "Chọn một hoặc nhiều trong 7 trạng thái lớp: `Mới tạo`, `Trải nghiệm`, `Khai giảng`, `Đang học`, `Tạm ngưng`, `Hoàn thành`, `Huỷ bỏ`. **Mặc định `Đang học`**.",
+     "spec": "Chọn một hoặc nhiều trong 7 trạng thái lớp: `Mới tạo`, `Trải nghiệm`, `Khai giảng`, `Đang học`, `Tạm ngưng`, `Hoàn thành`, `Huỷ bỏ`. **Mặc định `Đang học` + `Khai giảng`**.",
      "source": "tu-dien",
      "content": "qc",
      "matches": {

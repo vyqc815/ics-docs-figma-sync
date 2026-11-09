@@ -1,6 +1,6 @@
 # [Học viên] Kiểm tra
 
-Tab **Kiểm tra** trong chi tiết lớp của app học viên: danh sách bài kiểm tra giáo viên đã giao, làm bài có đếm giờ, nộp, chờ chấm và xem kết quả. Bài kiểm tra do CD soạn ([Bài tập về nhà và Kiểm tra](../../course_management/homework-test/homework-test.md), [Học kỳ — Kiểm tra](../../course_management/semester/test/test.md)); giáo viên giao / thu hồi / chấm theo [Giáo viên — Giảng dạy](../../teacher_role/class/class_teaching_requirements.md).
+Tab **Kiểm tra** trong chi tiết lớp của app học viên: danh sách bài kiểm tra giáo viên đã giao, làm bài có đếm giờ, nộp, chờ chấm và xem kết quả. Bài kiểm tra do CD soạn ([Bài tập về nhà và Kiểm tra](../../course_management/homework-test/homework-test.md), [Học kỳ — Kiểm tra](../../course_management/semester/test/test.md)); giáo viên giao / kết thúc / thu hồi / chấm theo [Giáo viên — Giảng dạy](../../teacher_role/class/class_teaching_requirements.md).
 
 Có ảnh danh sách; màn làm bài và kết quả chưa có ảnh.
 
@@ -25,6 +25,7 @@ Có ảnh danh sách; màn làm bài và kết quả chưa có ảnh.
 - `A01.03` **Trống**: `Chưa có bài kiểm tra nào được giao`.
 
 - Chỉ hiện bài trạng thái `Đang đợi nộp bài` trở đi của lớp; bài `Chưa giao` hoặc bị giáo viên `Thu hồi` không hiện (thu hồi xoá bài làm và điểm).
+- Bài giáo viên đã `Kết thúc bài` vẫn hiện, thẻ có thêm tag `Đã kết thúc`; bấm thẻ chỉ mở màn kết quả (đã nộp) hoặc báo `Bài kiểm tra đã kết thúc` (chưa nộp), không vào làm bài.
 - Khác ảnh: ảnh dùng badge điểm cho mọi thẻ; requirement thêm trạng thái `Chưa làm` / `Đang làm` / `Chờ chấm` trước khi có điểm.
 
 ### Trang 2: HV-KT-020000 — Làm bài kiểm tra
@@ -79,7 +80,7 @@ Có ảnh danh sách; màn làm bài và kết quả chưa có ảnh.
 **Điểm cần lưu ý:**
 
 - `A04.01` **Thành công**: Tiêu đề cố định: `Thành Công`; Khi sử dụng: `Nộp bài thành công`
-- `A04.02` **Thông tin**: Tiêu đề cố định: `Thông Báo`; Khi sử dụng: `Hết giờ, bài đã được nộp`
+- `A04.02` **Thông tin**: Tiêu đề cố định: `Thông Báo`; Khi sử dụng: `Hết giờ, bài đã được nộp`; `Bài kiểm tra đã kết thúc`
 - `A04.03` **Cảnh báo**: Tiêu đề cố định: `Cảnh Báo`; Khi sử dụng: `Cần quyền micro để ghi âm`; `Không có kết nối, vui lòng thử lại`
 - `A04.04` **Lỗi**: Tiêu đề cố định: `Có Lỗi Xảy Ra`; Khi sử dụng: `Nộp bài thất bại, vui lòng thử lại`
 
@@ -113,6 +114,7 @@ Vào bài → đồng hồ chạy → trả lời (nháp server) → thoát: t�
 - **EX04:** Nộp lặp → backend từ chối; app chỉ hiện kết quả.
 - **EX05:** Mất mạng khi lưu nháp → giữ trên máy, đồng bộ khi có mạng; nộp thất bại Toast `Có Lỗi Xảy Ra`.
 - **EX06:** Học viên không thuộc diện làm bài tại thời điểm giao → không thấy bài.
+- **EX07:** Giáo viên kết thúc bài → lưu câu trả lời / nộp bị backend từ chối, Toast `Thông Báo` `Bài kiểm tra đã kết thúc`; bài đã nộp trước đó giữ nguyên, vẫn xem kết quả.
 
 ### 2.3. Yêu cầu khác
 
@@ -121,6 +123,7 @@ Vào bài → đồng hồ chạy → trả lời (nháp server) → thoát: t�
 | REQ01 | Danh sách | Bài đã giao của lớp, mới nhất trước; badge trạng thái `Chưa làm` / `Đang làm` / `Chờ chấm` / điểm; tag ngày giao và điểm danh buổi gắn bài. |
 | REQ02 | Làm bài | 8 loại câu của CD; thứ tự câu cố định, chuyển câu tự do; thời gian đếm từ lúc vào, tạm dừng khi thoát; giới hạn thời gian theo cấu hình bài; nháp server; nộp một lần. |
 | REQ03 | Kết quả | App tự chấm Trắc nghiệm, Sắp xếp, Nối từ; giáo viên chấm phần còn lại; điểm bài thang 10 = trung bình điểm câu; Đạt khi ≥ Điểm đạt; hiện thời gian làm, chi tiết câu, nhận xét. |
+| REQ04 | Bài đã kết thúc | Bài giáo viên đã kết thúc vẫn trong danh sách với tag `Đã kết thúc`; chỉ xem kết quả (đã nộp), không làm, không lưu câu trả lời, không nộp. Điểm vẫn cập nhật khi giáo viên chấm sau khi kết thúc. Làm lại chỉ khi giáo viên thu hồi và giao lại. |
 
 ### 2.4. Ràng buộc
 
@@ -128,7 +131,7 @@ Vào bài → đồng hồ chạy → trả lời (nháp server) → thoát: t�
 
 | Role | Xem danh sách | Làm / nộp | Xem kết quả |
 |---|:---:|:---:|:---:|
-| Học viên của lớp | ✅ | ✅ (bài đã giao, chưa nộp) | ✅ |
+| Học viên của lớp | ✅ | ✅ (bài đã giao, chưa kết thúc, chưa nộp) | ✅ |
 | Người dùng trải nghiệm | ❌ | ❌ | ❌ |
 
 #### Ràng buộc khác
@@ -150,6 +153,8 @@ Vào bài → đồng hồ chạy → trả lời (nháp server) → thoát: t�
 | Case 1: Mở tab | High · Smoke | Flow 1 / REQ01 | Học viên | Giáo viên đã giao 3 bài, 1 đã chấm 7.0 | **Given** bấm `Kiểm tra`<br>**When** tải<br>**Then** 3 thẻ, badge `7.0`, `Chờ chấm`, `Chưa làm` | - Ngày giao đúng |
 | Case 2: Bài bị thu hồi | High | EX01 | Học viên | Giáo viên thu hồi bài đã nộp | **Given** mở tab<br>**When** tải lại<br>**Then** bài biến mất | - Điểm cũ không còn |
 | Case 3: Không có bài | Low | EX02 | Học viên | Lớp chưa giao | **Given** mở tab<br>**When** tải<br>**Then** `Chưa có bài kiểm tra nào được giao` | - |
+| Case 12: Bài đã kết thúc | High | EX07 / REQ04 | Học viên | Giáo viên kết thúc bài; A đã nộp (đã chấm 7.0), B chưa nộp | **Given** A và B mở tab<br>**When** bấm thẻ<br>**Then** A mở màn kết quả `7.0`; B thấy `Bài kiểm tra đã kết thúc` | - Thẻ có tag `Đã kết thúc`<br>- Không vào làm bài |
+| Case 13: Đang làm thì giáo viên kết thúc | High | EX07 / REQ04 | Học viên | A đang làm câu 5 | **Given** giáo viên kết thúc bài<br>**When** A lưu câu trả lời hoặc bấm `Nộp`<br>**Then** bị từ chối, Toast `Thông Báo` `Bài kiểm tra đã kết thúc` | - Thoát về danh sách<br>- A vẫn `Chưa nộp` |
 | Case 4: Làm và nộp | High · Smoke | Flow 2 / REQ02 | Học viên | Bài 20 câu `Chưa làm` | **Given** bấm thẻ<br>**When** trả lời 20 câu, `Nộp bài` → `Nộp`<br>**Then** màn kết quả chờ chấm, Toast `Nộp bài thành công` | - Thẻ badge `Chờ chấm`, 100% |
 | Case 5: Tạm dừng | High | REQ02 | Học viên | Đang câu 7, 05:12 | **Given** back<br>**When** mở lại sau 10 phút<br>**Then** ở câu 7, đồng hồ 05:12 tiếp tục | - Đáp án 1–6 còn |
 | Case 6: Hết giờ | Medium | EX03 / REQ02 | Học viên | Bài giới hạn 30 phút | **Given** đồng hồ về 0<br>**When** hết<br>**Then** tự nộp, Toast `Thông Báo` `Hết giờ, bài đã được nộp` | - Câu trống tính bỏ qua |
