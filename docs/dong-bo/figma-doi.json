@@ -34,5 +34,293 @@
    "at": "2026-11-06T14:02:30.777Z",
    "what": "Thêm 5, Đổi vị trí, kích thước 13, Đổi chữ 3"
   }
+ ],
+ "ADM-LOP-030400": [
+  {
+   "at": "2026-11-09T05:17:22.748Z",
+   "what": "Đổi vị trí, kích thước 357, Thêm 36, Đổi chữ 9"
+  }
+ ],
+ "ADM-LOP-030400-DK": [
+  {
+   "at": "2026-11-09T05:17:22.748Z",
+   "what": "Đổi vị trí, kích thước 354, Thêm 36, Đổi chữ 9"
+  }
+ ],
+ "ADM-LOP-020700": [
+  {
+   "at": "2026-11-09T05:17:22.748Z",
+   "what": "Đổi vị trí, kích thước 281, Thêm 24, Đổi chữ 1"
+  }
+ ],
+ "ADM-LOP-020700-DK": [
+  {
+   "at": "2026-11-09T05:17:22.748Z",
+   "what": "Đổi vị trí, kích thước 281, Thêm 24, Đổi chữ 1"
+  }
+ ],
+ "ADM-LOP-020800": [
+  {
+   "at": "2026-11-09T05:17:22.748Z",
+   "what": "Đổi vị trí, kích thước 252, Thêm 24, Đổi chữ 1"
+  }
+ ],
+ "ADM-LOP-020800-DK": [
+  {
+   "at": "2026-11-09T05:17:22.748Z",
+   "what": "Đổi vị trí, kích thước 252, Thêm 24, Đổi chữ 1"
+  }
+ ],
+ "ADM-QT-020000": [
+  {
+   "at": "2026-11-09T05:17:22.748Z",
+   "what": "Đổi chữ 1"
+  }
+ ],
+ "ADM-QT-020000-DK": [
+  {
+   "at": "2026-11-09T05:17:22.748Z",
+   "what": "Đổi chữ 1"
+  }
+ ],
+ "CD-TL-010000": [
+  {
+   "at": "2026-11-09T05:17:22.748Z",
+   "what": "Đổi vị trí, kích thước 10, Đổi component 1, Thêm 5, Xoá 3"
+  }
+ ],
+ "CD-TL-010100": [
+  {
+   "at": "2026-11-09T05:17:22.748Z",
+   "what": "Đổi vị trí, kích thước 10, Đổi component 1, Thêm 5, Xoá 3"
+  }
+ ],
+ "CD-TL-010000-DK": [
+  {
+   "at": "2026-11-09T05:17:22.748Z",
+   "what": "Đổi vị trí, kích thước 10, Đổi component 1, Thêm 5, Xoá 3"
+  }
+ ],
+ "CD-TL-010100-DK": [
+  {
+   "at": "2026-11-09T05:17:22.748Z",
+   "what": "Đổi vị trí, kích thước 10, Đổi component 1, Thêm 5, Xoá 3"
+  }
+ ],
+ "CD-BL-010000": [
+  {
+   "at": "2026-11-09T05:17:22.748Z",
+   "what": "Đổi vị trí, kích thước 3"
+  }
+ ],
+ "CH-BL-010000": [
+  {
+   "at": "2026-11-09T05:17:22.748Z",
+   "what": "Đổi vị trí, kích thước 3"
+  }
+ ],
+ "GV-LOP-040300": [
+  {
+   "at": "2026-11-09T05:17:22.748Z",
+   "what": "Đổi vị trí, kích thước 251, Đổi component 1, Thêm 38, Xoá 3"
+  }
+ ],
+ "GV-LOP-040300-DK": [
+  {
+   "at": "2026-11-09T05:17:22.748Z",
+   "what": "Đổi vị trí, kích thước 251, Đổi component 1, Thêm 38, Xoá 3"
+  }
+ ],
+ "ADM-LOP-020709": [
+  {
+   "at": "2026-11-09T05:17:22.748Z",
+   "what": "Đổi vị trí, kích thước 280, Thêm 22, Đổi chữ 1"
+  }
+ ],
+ "ADM-LOP-020709-DK": [
+  {
+   "at": "2026-11-09T05:17:22.748Z",
+   "what": "Đổi vị trí, kích thước 280, Thêm 22, Đổi chữ 1"
+  }
+ ],
+ "ADM-LOP-020809": [
+  {
+   "at": "2026-11-09T05:17:22.748Z",
+   "what": "Đổi vị trí, kích thước 251, Thêm 22, Đổi chữ 1"
+  }
+ ],
+ "ADM-LOP-020809-DK": [
+  {
+   "at": "2026-11-09T05:17:22.748Z",
+   "what": "Đổi vị trí, kích thước 251, Thêm 22, Đổi chữ 1"
+  }
+ ],
+ "CD-KH-070301": [
+  {
+   "at": "2026-11-09T05:17:22.748Z",
+   "what": "Đổi vị trí, kích thước 80, Đổi component 1, Thêm 5, Xoá 3"
+  }
+ ],
+ "CD-KH-070308": [
+  {
+   "at": "2026-11-09T05:17:22.748Z",
+   "what": "Đổi vị trí, kích thước 80, Đổi component 1, Thêm 5, Xoá 3"
+  }
+ ],
+ "CD-KH-070306": [
+  {
+   "at": "2026-11-09T05:17:22.748Z",
+   "what": "Đổi vị trí, kích thước 102, Đổi component 1, Thêm 5, Xoá 3"
+  }
+ ],
+ "CD-KH-070307": [
+  {
+   "at": "2026-11-09T05:17:22.748Z",
+   "what": "Đổi vị trí, kích thước 80, Đổi component 1, Thêm 5, Xoá 3"
+  }
+ ],
+ "CD-KH-050110": [
+  {
+   "at": "2026-11-09T05:17:22.748Z",
+   "what": "Đổi vị trí, kích thước 35, Đổi component 1, Thêm 5, Xoá 3"
+  }
+ ],
+ "CD-KH-050140": [
+  {
+   "at": "2026-11-09T05:17:22.748Z",
+   "what": "Đổi vị trí, kích thước 18, Thêm 6, Đổi component 1, Xoá 7"
+  }
+ ],
+ "CD-KH-050210": [
+  {
+   "at": "2026-11-09T05:17:22.748Z",
+   "what": "Đổi vị trí, kích thước 27, Đổi component 1, Thêm 5, Xoá 3"
+  }
+ ],
+ "CD-KH-030230": [
+  {
+   "at": "2026-11-09T05:17:22.748Z",
+   "what": "Đổi vị trí, kích thước 189, Thêm 33, Đổi chữ 9"
+  }
+ ],
+ "CD-KH-070306-DK": [
+  {
+   "at": "2026-11-09T05:17:22.748Z",
+   "what": "Đổi vị trí, kích thước 102, Đổi component 1, Thêm 5, Xoá 3"
+  }
+ ],
+ "CD-KH-070307-DK": [
+  {
+   "at": "2026-11-09T05:17:22.748Z",
+   "what": "Đổi vị trí, kích thước 80, Đổi component 1, Thêm 5, Xoá 3"
+  }
+ ],
+ "CD-KH-070301-DK": [
+  {
+   "at": "2026-11-09T05:17:22.748Z",
+   "what": "Đổi vị trí, kích thước 80, Đổi component 1, Thêm 5, Xoá 3"
+  }
+ ],
+ "CD-KH-070308-DK": [
+  {
+   "at": "2026-11-09T05:17:22.748Z",
+   "what": "Đổi vị trí, kích thước 80, Đổi component 1, Thêm 5, Xoá 3"
+  }
+ ],
+ "CD-KH-050110-DK": [
+  {
+   "at": "2026-11-09T05:17:22.748Z",
+   "what": "Đổi vị trí, kích thước 35, Đổi component 1, Thêm 5, Xoá 3"
+  }
+ ],
+ "CD-KH-050140-DK": [
+  {
+   "at": "2026-11-09T05:17:22.748Z",
+   "what": "Đổi vị trí, kích thước 18, Thêm 6, Đổi component 1, Xoá 7"
+  }
+ ],
+ "CD-KH-050210-DK": [
+  {
+   "at": "2026-11-09T05:17:22.748Z",
+   "what": "Đổi vị trí, kích thước 27, Đổi component 1, Thêm 5, Xoá 3"
+  }
+ ],
+ "CD-KH-030230-DK": [
+  {
+   "at": "2026-11-09T05:17:22.748Z",
+   "what": "Đổi vị trí, kích thước 210, Thêm 72, Đổi chữ 6, Xoá 6"
+  }
+ ],
+ "GV-LOP-040210": [
+  {
+   "at": "2026-11-09T05:17:22.748Z",
+   "what": "Đổi vị trí, kích thước 57, Đổi component 1, Thêm 5, Xoá 3"
+  }
+ ],
+ "GV-LOP-040301": [
+  {
+   "at": "2026-11-09T05:17:22.748Z",
+   "what": "Thêm 13, Xoá 2"
+  }
+ ],
+ "GV-LOP-040302": [
+  {
+   "at": "2026-11-09T05:17:22.748Z",
+   "what": "Đổi vị trí, kích thước 34, Đổi component 1, Thêm 5, Xoá 3"
+  }
+ ],
+ "GV-LOP-040204": [
+  {
+   "at": "2026-11-09T05:17:22.748Z",
+   "what": "Đổi vị trí, kích thước 60, Đổi component 1, Thêm 5, Xoá 3"
+  }
+ ],
+ "GV-LOP-040210-DK": [
+  {
+   "at": "2026-11-09T05:17:22.748Z",
+   "what": "Đổi vị trí, kích thước 57, Đổi component 1, Thêm 5, Xoá 3"
+  }
+ ],
+ "GV-LOP-040301-DK": [
+  {
+   "at": "2026-11-09T05:17:22.748Z",
+   "what": "Thêm 13, Xoá 2"
+  }
+ ],
+ "GV-LOP-040302-DK": [
+  {
+   "at": "2026-11-09T05:17:22.748Z",
+   "what": "Đổi vị trí, kích thước 34, Đổi component 1, Thêm 5, Xoá 3"
+  }
+ ],
+ "GV-LOP-040204-DK": [
+  {
+   "at": "2026-11-09T05:17:22.748Z",
+   "what": "Đổi vị trí, kích thước 60, Đổi component 1, Thêm 5, Xoá 3"
+  }
+ ],
+ "GV-LOP-040330": [
+  {
+   "at": "2026-11-09T05:17:22.748Z",
+   "what": "Đổi vị trí, kích thước 137, Đổi component 1, Thêm 5, Xoá 3"
+  }
+ ],
+ "GV-LOP-040333": [
+  {
+   "at": "2026-11-09T05:17:22.748Z",
+   "what": "Đổi vị trí, kích thước 162, Đổi component 4, Thêm 20, Xoá 12"
+  }
+ ],
+ "GV-LOP-040330-DK": [
+  {
+   "at": "2026-11-09T05:17:22.748Z",
+   "what": "Đổi vị trí, kích thước 137, Đổi component 1, Thêm 5, Xoá 3"
+  }
+ ],
+ "GV-LOP-040333-DK": [
+  {
+   "at": "2026-11-09T05:17:22.748Z",
+   "what": "Đổi vị trí, kích thước 162, Đổi component 4, Thêm 20, Xoá 12"
+  }
  ]
 }
