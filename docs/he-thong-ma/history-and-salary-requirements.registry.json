@@ -20,7 +20,7 @@
   {
    "id": "TR-HAS.REQ03",
    "name": "Buổi và lương",
-   "text": "Tổng lương từng lớp chỉ gồm lương buổi dạy của chính giáo viên trong khoảng, không gồm KPI/OT.  Buổi Hoàn thành của chính giáo viên; không lịch vẫn đếm nhưng tiền 0; buổi có lịch giữ tiền đã ghi nhận. Không hồi tố khi đổi mức lương. Chỉ đọc và không tự coi phát sinh lương là đã thanh toán.",
+   "text": "Tổng lương từng lớp chỉ gồm lương buổi dạy của chính giáo viên trong khoảng, không gồm KPI/OT.  Buổi Hoàn thành của chính giáo viên (người bấm Bắt đầu; chỉ người đó được Kết thúc và Hoàn thành); buổi chưa Hoàn thành không tính; không lịch vẫn đếm nhưng tiền 0; buổi có lịch giữ tiền đã ghi nhận. Không hồi tố khi đổi mức lương. Chỉ đọc và không tự coi phát sinh lương là đã thanh toán.",
    "source": "qc",
    "content": "qc"
   },
@@ -458,7 +458,7 @@
      "id": "TR-HAS.A01.04",
      "name": "so-buoi-da-day",
      "label": "Số buổi đã dạy",
-     "spec": "Số buổi Hoàn thành do giáo viên đang đăng nhập dạy trong khoảng; kể cả buổi không gắn lịch. Buổi có lịch lọc theo ngày tính lương của lịch; không lịch dùng thời điểm hoàn thành.",
+     "spec": "Số buổi Hoàn thành do giáo viên đang đăng nhập dạy (người bấm Bắt đầu và Hoàn thành buổi) trong khoảng; kể cả buổi không gắn lịch. Buổi có lịch lọc theo ngày tính lương của lịch; không lịch dùng thời điểm hoàn thành.",
      "source": "tu-dien",
      "content": "qc",
      "matches": {
@@ -497,7 +497,7 @@
      "id": "TR-HAS.A01.05",
      "name": "luong-buoi-day",
      "label": "Lương buổi dạy",
-     "spec": "Tổng tiền đã ghi nhận của các buổi Hoàn thành có lịch gắn trong khoảng. Mỗi buổi giữ mức đã ghi nhận khi hoàn thành; không tính lại buổi cũ khi mức lương thay đổi. Buổi không lịch bằng 0.",
+     "spec": "Tổng tiền đã ghi nhận của các buổi Hoàn thành có lịch gắn trong khoảng. Mỗi buổi giữ mức đã ghi nhận khi hoàn thành; không tính lại buổi cũ khi mức lương thay đổi. Buổi không lịch bằng 0; buổi chưa Hoàn thành không có lương.",
      "source": "tu-dien",
      "content": "qc",
      "matches": {

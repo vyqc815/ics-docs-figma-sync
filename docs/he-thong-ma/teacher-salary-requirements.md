@@ -119,6 +119,9 @@ Frame: `ADM-LGV-010000` (tool đoán:ADM-LGV-010000) · Nguồn nội dung: QC
 | `A08.10` | case-10-duyet-khac-ap-dung-luong |  |  | — | governed-by `REQ06` |  | Chưa khớp tự động | QC |
 | `A08.11` | case-11-chi-thong-ke-va-export |  |  | — | governed-by `REQ08` |  | Chưa khớp tự động | QC |
 | `A08.12` | case-12-tap-phat-sinh-trong-ky |  |  | — | governed-by `REQ01` |  | Chưa khớp tự động | QC |
+| `A08.25` | case-12a-chi-tinh-cho-nguoi-mo-hoan-than |  |  | — | governed-by `REQ03` |  | Chưa khớp tự động | QC |
+| `A08.26` | case-12b-chua-hoan-thanh-khong-co-luong |  |  | — | governed-by `REQ03` |  | Chưa khớp tự động | QC |
+| `A08.27` | case-12c-lich-da-duoc-chon |  |  | — | governed-by `REQ03` |  | Chưa khớp tự động | QC |
 | `A08.13` | case-13-chon-xem-doc-lap-export |  |  | — | governed-by `REQ08`; governed-by `REQ09` |  | Chưa khớp tự động | QC |
 | `A08.14` | case-14-loc-lop-dung-giao-vien |  |  | — | governed-by `REQ09` |  | Chưa khớp tự động | QC |
 | `A08.15` | case-15-dung-mau-excel |  |  | — | governed-by `REQ08` |  | Chưa khớp tự động | QC |
@@ -196,7 +199,7 @@ Frame: `ADM-LGV-010000` · Nguồn nội dung: Figma
 
 **Tool báo, cần người xem**
 
-- Chưa khớp tự động (54): `A01.02`, `A01.03`, `A01.04`, `A01.05`, `A01.07`, `A01.08`, `A01.09`, `A01.10`, `A05.01`, `A05.02`, `A05.03`, `A05.04`, `A05.05`, `A05.06`, `A05.07`, `A05.08`, `A05.09`, `A05.10`, `A05.11`, `A05.12`, `A08.01`, `A08.02`, `A08.03`, `A08.04`, `A08.05`, `A08.06`, `A08.07`, `A08.08`, `A08.09`, `A08.10`, `A08.11`, `A08.12`, `A08.13`, `A08.14`, `A08.15`, `A08.16`, `A08.17`, `A08.18`, `A08.19`, `A08.20`, `A08.21`, `A08.22`, `A08.23`, `A08.24`, `A10.01`, `A10.02`, `A10.03`, `A10.04`, `A10.05`, `A10.06`, `A10.07`, `A10.08`, `A10.09`, `A10.10`
+- Chưa khớp tự động (57): `A01.02`, `A01.03`, `A01.04`, `A01.05`, `A01.07`, `A01.08`, `A01.09`, `A01.10`, `A05.01`, `A05.02`, `A05.03`, `A05.04`, `A05.05`, `A05.06`, `A05.07`, `A05.08`, `A05.09`, `A05.10`, `A05.11`, `A05.12`, `A08.01`, `A08.02`, `A08.03`, `A08.04`, `A08.05`, `A08.06`, `A08.07`, `A08.08`, `A08.09`, `A08.10`, `A08.11`, `A08.12`, `A08.25`, `A08.26`, `A08.27`, `A08.13`, `A08.14`, `A08.15`, `A08.16`, `A08.17`, `A08.18`, `A08.19`, `A08.20`, `A08.21`, `A08.22`, `A08.23`, `A08.24`, `A10.01`, `A10.02`, `A10.03`, `A10.04`, `A10.05`, `A10.06`, `A10.07`, `A10.08`, `A10.09`, `A10.10`
 
 ## 9. Chi tiết dựng
 

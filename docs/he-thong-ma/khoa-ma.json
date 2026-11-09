@@ -2763,6 +2763,9 @@
     "case 10 duyet khac ap dung luong": 10,
     "case 11 chi thong ke va export": 11,
     "case 12 tap phat sinh trong ky": 12,
+    "case 12a chi tinh cho nguoi mo hoan thanh": 25,
+    "case 12b chua hoan thanh khong co luong": 26,
+    "case 12c lich da duoc chon": 27,
     "case 13 chon xem doc lap export": 13,
     "case 14 loc lop dung giao vien": 14,
     "case 15 dung mau excel": 15,
@@ -4185,6 +4188,7 @@
    "3": {
     "bat dau khong chon lich": 7,
     "bat dau voi lich": 6,
+    "kiem tra khi bat dau": 8,
     "lop khong co lich tuan nay": 1,
     "lua chon khong chon lich": 3,
     "nut huy bat dau": 4,

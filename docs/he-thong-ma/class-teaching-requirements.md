@@ -89,6 +89,7 @@ Frame: `GV-LOP-030120`, `GV-LOP-030121` (tool đoán:GV-LOP-030120, GV-LOP-03012
 | `A03.03` | lua-chon-khong-chon-lich |  | `5292:223039` Không chọn lịch | — |  |  | Khớp một phần | QC |
 | `A03.04` | nut-huy-bat-dau | `Atom/Button` Type=Primary, Size=Medium; `Atom/Button` Type=Secondary, Size=Medium | `I5292:223001;2514:153361` Atom/Button; `I5292:223001;2514:153363` Atom/Button | — |  |  | Khớp | QC |
 | `A03.05` | popup-bat-dau-buoi-hoc | `Popup/Header`  | `I5292:223042;2514:153348` Title | — |  |  | Khớp một phần | QC |
+| `A03.08` | kiem-tra-khi-bat-dau | `Atom/Button` Type=Primary, Size=Medium | `I5292:223058;2514:153363` Atom/Button | — |  |  | Khớp một phần | QC |
 | `A03.06` | bat-dau-voi-lich |  |  | — |  |  | Chưa khớp tự động | QC |
 | `A03.07` | bat-dau-khong-chon-lich |  |  | — |  |  | Chưa khớp tự động | QC |
 
@@ -136,7 +137,7 @@ Frame: `GV-LOP-030170` · Nguồn nội dung: QC
 |---|---|---|---|---|---|---|---|---|
 | `A06.01` | bai-dang-day |  |  | — | opens `A06` |  | Chưa khớp tự động | QC |
 | `A06.02` | bai-cho-hoan-thanh |  | `5292:226702` Chờ hoàn thành | — |  |  | Khớp | QC |
-| `A06.03` | nguoi-tiep-tuc |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A06.03` | nguoi-tiep-tuc |  | `5292:226698` Bài học đã mở | — |  |  | Khớp | QC |
 
 ### `A07` Tab Buổi học — Bài đã hoàn thành
 
@@ -459,10 +460,10 @@ Frame: `GV-LOP-030100`, `GV-LOP-030110`, `GV-LOP-030170`, `GV-LOP-030200`, `GV-L
 | `REQ18` | Thu hồi bài kiểm tra | Chỉ `Giáo viên phụ trách chính`, qua popup có cảnh báo xoá dữ liệu; áp dụng cho bài đang giao và bài đã kết thúc. Thành công xoá lượt giao và toàn bộ bài làm, điểm, nhận xét chấm của bài; bài về Chưa giao; giao lại là lượt mới. |
 | `REQ19` | Danh sách bài học | Toàn bộ bài của lớp theo thứ tự (gồm bài bổ sung), mặc định chọn bài đầu. Card bài đã mở có giáo viên của buổi (người bắt đầu), mốc mở `HH:mm - dd/MM/yyyy`, vòng BTVN/Đi học; card chưa mở chỉ có số thứ tự xám, tên, mô tả. Giáo viên không thêm/sửa/xoá bài. |
 | `REQ20` | Dặn dò trước buổi học | Bài Chưa mở hiển thị 5 dòng dặn dò cố định và checkbox `Tôi đã đọc ghi chú`; phải tick mới bắt đầu được. Không hiển thị ghi chú hay nhận xét của bài trước (chỉ xem ở bài đã hoàn thành). Mọi giáo viên của lớp được bắt đầu bất kỳ bài chưa mở; lớp phải `Đang học` hoặc là lớp không chính thức. |
-| `REQ21` | Chọn lịch và lương buổi | Lớp có lịch tuần này thì hiện popup `Chọn lịch dạy` gồm lịch tuần này của chính giáo viên (lịch Hoàn thành không chọn được, lịch huỷ ẩn) và `Không chọn lịch`. Chọn lịch: gắn lịch với buổi và giáo viên, lịch giữ `Đang đợi` (lịch cố định chưa có bản ghi thì tạo bản ghi Đang đợi); lịch đã gắn không chọn được cho buổi khác. Lịch chỉ chuyển `Hoàn thành` và phát sinh lương buổi dạy (một lần) khi bấm `Hoàn thành buổi học`; ngày tính lương là ngày của lịch, không phải ngày hoàn thành. Không chọn lịch hoặc lớp không có lịch tuần này: không phát sinh lương, có Toast `Thông Báo` tương ứng. Mỗi bài một buổi. |
+| `REQ21` | Chọn lịch và lương buổi | Lớp có lịch tuần này thì hiện popup `Chọn lịch dạy` gồm lịch tuần này của chính giáo viên (lịch Hoàn thành không chọn được, lịch huỷ ẩn) và `Không chọn lịch`. Chọn lịch: gắn lịch với buổi và giáo viên, lịch giữ `Đang đợi` (lịch cố định chưa có bản ghi thì tạo bản ghi Đang đợi); lịch đã gắn không chọn được cho buổi khác. Lịch chỉ chuyển `Hoàn thành` và phát sinh lương buổi dạy (một lần) khi bấm `Hoàn thành buổi học`; ngày tính lương là ngày của lịch, không phải ngày hoàn thành. Không chọn lịch hoặc lớp không có lịch tuần này: không phát sinh lương, có Toast `Thông Báo` tương ứng. Lịch đã gắn buổi khác khi bấm Xác nhận → lỗi `Lịch này đã được chọn để mở`. Chỉ giáo viên của lớp được bắt đầu; không cần bài trước Hoàn thành. Lương ghi cho giáo viên của buổi. Mỗi bài một buổi. |
 | `REQ22` | Điểm danh | Danh sách gồm học viên `Đang học`, `Dự thính`, `Hoàn thành`. Mỗi học viên một trạng thái trong `Có mặt`, `Vào trễ`, `Ra sớm`, `Vào trễ & Ra sớm`, `Nghỉ CP`, `Nghỉ KP` (mặc định `Chưa điểm danh`). Kết thúc buổi học khi điểm danh đủ và có ghi chú lớp hoặc tick `Không có dặn dò cho học viên`; lưu điểm danh và `Giáo viên nhận xét lớp`, buổi chuyển `Chờ hoàn thành`. |
 | `REQ23` | Hoàn thành buổi học | Ghi chú từng học viên (gửi Support, gửi học viên) không bắt buộc. Ghi chú gửi Support và gửi giáo viên tiếp theo phải có nội dung hoặc tick checkbox `Không có dặn dò` tương ứng. Hoàn thành lưu ghi chú, buổi chuyển `Hoàn thành`, lịch đã gắn chuyển `Hoàn thành` và phát sinh lương, xoá nháp. |
-| `REQ24` | Nháp và tiếp tục | Dữ liệu Bước 1/Bước 2 lưu nháp trên server sau mỗi thay đổi, theo lớp–bài. Mọi giáo viên của lớp tiếp tục được buổi `Đang dạy` (`Vào điểm danh`) hoặc `Chờ hoàn thành` (`Hoàn thành buổi học`) và thấy đúng nháp; giáo viên của buổi giữ nguyên là người bắt đầu. |
+| `REQ24` | Nháp và tiếp tục | Dữ liệu Bước 1/Bước 2 lưu nháp trên server sau mỗi thay đổi, theo lớp–bài. Chỉ giáo viên của buổi (người bắt đầu) tiếp tục được buổi `Đang dạy` (`Vào điểm danh`) hoặc `Chờ hoàn thành` (`Hoàn thành buổi học`) và thấy đúng nháp; giáo viên khác của lớp chỉ xem. |
 | `REQ25` | Bài đã hoàn thành | Hiển thị `Giáo viên nhận xét lớp`, ghi chú gửi Support, ghi chú gửi giáo viên tiếp theo và bảng học viên (Đi học, BTVN, Ghi chú) chỉ đọc. Giáo viên không sửa sau khi hoàn thành. |
 | `REQ26` | Thông tin, Nội dung, Kiến thức | Dữ liệu định nghĩa bài học chỉ đọc giống Admin; Kiến thức để trống. |
 | `REQ27` | Tài nguyên | Bấm file tải ngay. Chỉ tải được tài nguyên của 3 bài đã mở có số thứ tự lớn nhất; bài khác (đã mở trước đó hoặc chưa mở) hiển thị file kèm icon khoá, bấm không tải; áp dụng cả Bài giảng và Tài nguyên khác; backend kiểm tra khi tải. |
@@ -484,13 +485,16 @@ Frame: `GV-LOP-030100`, `GV-LOP-030110`, `GV-LOP-030170`, `GV-LOP-030200`, `GV-L
 | `EX12` | Ngoại lệ | Bắt đầu buổi học khi lớp chính thức chưa ở trạng thái `Đang học` → Toast `Cảnh Báo` `Lớp chưa bắt đầu!`; không tạo buổi, không đổi lịch. |
 | `EX13` | Ngoại lệ | Sửa điểm danh hoặc ghi chú sau khi buổi đã `Hoàn thành`, hoặc sửa điểm danh khi buổi đã `Chờ hoàn thành` → backend từ chối; dữ liệu giữ nguyên. |
 | `EX14` | Ngoại lệ | Tải tài nguyên của bài bị khoá → không tải; Toast `Thông Báo` `Chỉ tải được tài nguyên của 3 bài đã mở gần nhất`; request trực tiếp bị từ chối. |
-| `EX15` | Ngoại lệ | Hai giáo viên cùng bắt đầu một bài → chỉ tạo một buổi; người sau vào tiếp tục buổi đã có, không chọn lịch lần hai; mỗi buổi phát sinh lương tối đa một lần khi Hoàn thành. |
+| `EX15` | Ngoại lệ | Hai giáo viên cùng bắt đầu một bài → chỉ tạo một buổi, người bấm trước là giáo viên của buổi; người sau thấy bài đã mở ở chế độ chỉ xem, không chọn lịch lần hai; mỗi buổi phát sinh lương tối đa một lần khi Hoàn thành. |
 | `EX16` | Ngoại lệ | Bắt đầu, Kết thúc hoặc Hoàn thành buổi thất bại do backend/network → Toast `Có Lỗi Xảy Ra`; trạng thái buổi giữ nguyên, nháp không mất. |
 | `EX17` | Ngoại lệ | Giáo viên gửi request thêm khóa tự học hoặc thêm bài tự học → backend từ chối; danh sách Tự học giữ nguyên. |
 | `EX18` | Ngoại lệ | Tải danh sách bài hoặc bảng thời gian Tự học lỗi → vùng lỗi có `Thử lại`; không hiển thị rỗng hoặc `00:00:00` giả. |
 | `EX19` | Ngoại lệ | Bấm dòng học viên `Chưa nộp` ở bảng kết quả → Toast `Thông Báo` `Học viên chưa nộp bài này!`; không mở màn chấm. |
 | `EX20` | Ngoại lệ | Giáo viên gửi request thiết lập lại bài nộp của học viên → backend từ chối; bài nộp giữ nguyên. |
 | `EX21` | Ngoại lệ | Học viên lưu câu trả lời hoặc nộp bài kiểm tra đã kết thúc → backend từ chối; app báo bài đã kết thúc; bài đã nộp trước đó giữ nguyên. Kết thúc bài đã kết thúc → backend từ chối, dữ liệu giữ nguyên. |
+| `EX22` | Ngoại lệ | Bắt đầu với lịch đã gắn buổi khác (giáo viên khác vừa chọn) → Toast `Có Lỗi Xảy Ra` `Lịch này đã được chọn để mở`; không tạo buổi, không đổi lịch; popup Chọn lịch tải lại. |
+| `EX23` | Ngoại lệ | Người không phải giáo viên của lớp bắt đầu buổi → backend từ chối; không tạo buổi, không đổi lịch. |
+| `EX24` | Ngoại lệ | Giáo viên khác giáo viên của buổi điểm danh, Kết thúc hoặc Hoàn thành buổi → backend từ chối; buổi, nháp và lịch giữ nguyên, không phát sinh lương. |
 
 ## 6. Testcase
 
@@ -506,6 +510,9 @@ Frame: `GV-LOP-030100`, `GV-LOP-030110`, `GV-LOP-030170`, `GV-LOP-030200`, `GV-L
 | `TC08` | Case 8: Không chọn lịch | High |  | Flow 2 / REQ21 | `A03` |  |
 | `TC09` | Case 9: Lớp không có lịch tuần này | Medium |  | REQ21 | `A03` | `A03.02` |
 | `TC10` | Case 10: Lịch đã hoàn thành không chọn được | Medium |  | REQ21 | `A03` | `A03.02` |
+| `TC11a` | Case 11a: Lịch đã được chọn để mở | High |  | Flow 2 / REQ21 / EX22 | `A03` |  |
+| `TC11b` | Case 11b: Không phải giáo viên của lớp | High |  | REQ21 / EX23 | `A03` |  |
+| `TC11c` | Case 11c: Mở bài khi bài trước chưa hoàn thành | Medium |  | REQ20 / REQ21 | `A03` |  |
 | `TC11` | Case 11: Huỷ không bắt đầu | Medium |  | Flow 2 | `A03` |  |
 | `TC12` | Case 12: Kết thúc buổi học | High | Có | Flow 3 / REQ22 | `A04` | `A04.08` |
 | `TC13` | Case 13: Khoá nút khi còn chưa điểm danh | High |  | REQ22 | `A04` |  |
@@ -516,6 +523,7 @@ Frame: `GV-LOP-030100`, `GV-LOP-030110`, `GV-LOP-030170`, `GV-LOP-030200`, `GV-L
 | `TC18` | Case 18: Khoá nút khi thiếu ghi chú | High |  | REQ23 | `A05` |  |
 | `TC19` | Case 19: Ghi chú hiển thị ở bài đã hoàn thành | High |  | REQ20 / REQ23 / REQ25 | `A05` |  |
 | `TC20` | Case 20: Tiếp tục buổi Đang dạy | High |  | Flow 3 / REQ24 | `A06` |  |
+| `TC20b` | Case 20b: Giáo viên khác chỉ xem | High |  | REQ24 / EX24 | `A06` |  |
 | `TC21` | Case 21: Tiếp tục buổi Chờ hoàn thành | Medium |  | Flow 4 / REQ24 | `A06` |  |
 | `TC22` | Case 22: Xem kết quả buổi | High |  | REQ25 | `A07` | `A07.04` |
 | `TC23` | Case 23: Không sửa sau hoàn thành | High |  | EX13 / REQ25 | `A07` |  |
@@ -621,7 +629,7 @@ Frame: `GV-LOP-030100`, `GV-LOP-030110`, `GV-LOP-030170`, `GV-LOP-030200`, `GV-L
 - `A12` Khác Figma GV-LOP-040100: Figma chưa có nút điều hướng chấm bài trên card; requirement bổ sung nút này cho `Giáo viên phụ trách chính`.
 - `A14` Khác Figma GV-LOP-040200: Figma chưa có frame card `Chưa giao` đang chọn (xem trước đề) và nút `Giao bài`; hai thành phần này đặc tả theo ICS cũ.
 - `A26` Khác Figma GV-LOP-050100: Figma chỉ có trạng thái chưa có khóa tự học; trạng thái có dữ liệu theo UI của requirement Admin, bỏ các nút thêm.
-- Chưa khớp tự động (77): `A01.01`, `A01.03`, `A01.04`, `A01.05`, `A03.06`, `A03.07`, `A04.02`, `A04.04`, `A04.05`, `A04.06`, `A04.07`, `A05.01`, `A06.01`, `A06.03`, `A07.04`, `A08.01`, `A08.02`, `A08.03`, `A08.04`, `A08.05`, `A08.06`, `A08.07`, `A10.02`, `A11.01`, `A11.04`, `A11.05`, `A12.03`, `A12.04`, `A12.06`, `A12.07`, `A13.07`, `A14.01`, `A14.05`, `A15.07`, `A16.03`, `A16.04`, `A28.01`, `A28.02`, `A28.04`, `A18.01`, `A18.03`, `A18.05`, `A19.04`, `A20.01`, `A20.04`, `A20.06`, `A21.01`, `A21.05`, `A21.06`, `A21.07`, `A21.08`, `A21.09`, `A21.10`, `A21.11`, `A21.12`, `A21.13`, `A22.01`, `A22.02`, `A22.03`, `A22.04`, `A23.01`, `A23.02`, `A23.03`, `A24.01`, `A24.02`, `A24.03`, `A25.01`, `A25.03`, `A25.04`, `A26.02`, `A26.03`, `A26.04`, `A26.05`, `A26.06`, `A26.07`, `A27.03`, `A27.04`
+- Chưa khớp tự động (76): `A01.01`, `A01.03`, `A01.04`, `A01.05`, `A03.06`, `A03.07`, `A04.02`, `A04.04`, `A04.05`, `A04.06`, `A04.07`, `A05.01`, `A06.01`, `A07.04`, `A08.01`, `A08.02`, `A08.03`, `A08.04`, `A08.05`, `A08.06`, `A08.07`, `A10.02`, `A11.01`, `A11.04`, `A11.05`, `A12.03`, `A12.04`, `A12.06`, `A12.07`, `A13.07`, `A14.01`, `A14.05`, `A15.07`, `A16.03`, `A16.04`, `A28.01`, `A28.02`, `A28.04`, `A18.01`, `A18.03`, `A18.05`, `A19.04`, `A20.01`, `A20.04`, `A20.06`, `A21.01`, `A21.05`, `A21.06`, `A21.07`, `A21.08`, `A21.09`, `A21.10`, `A21.11`, `A21.12`, `A21.13`, `A22.01`, `A22.02`, `A22.03`, `A22.04`, `A23.01`, `A23.02`, `A23.03`, `A24.01`, `A24.02`, `A24.03`, `A25.01`, `A25.03`, `A25.04`, `A26.02`, `A26.03`, `A26.04`, `A26.05`, `A26.06`, `A26.07`, `A27.03`, `A27.04`
 - Frame Figma chưa có requirement (11): `GV-LOP-030120`, `GV-LOP-030121`, `GV-LOP-030401`, `GV-LOP-040110`, `GV-LOP-040201`, `GV-LOP-040204`, `GV-LOP-040205`, `GV-LOP-040210`, `GV-LOP-040211`, `GV-LOP-040221`, `GV-LOP-040320`
 - Thiếu prototype link đi vào (7): `GV-LOP-030120`, `GV-LOP-030121`, `GV-LOP-030401`, `GV-LOP-040110`, `GV-LOP-040204`, `GV-LOP-040205`, `GV-LOP-050100`
 - Phân loại cần design duyệt (8): `GV-LOP-030401`, `GV-LOP-040110`, `GV-LOP-040201`, `GV-LOP-040204`, `GV-LOP-040205`, `GV-LOP-040210`, `GV-LOP-040320`, `GV-LOP-050100`

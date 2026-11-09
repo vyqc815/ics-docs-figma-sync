@@ -1119,6 +1119,70 @@
      "status": "chua-thay-tren-figma"
     },
     {
+     "id": "M-TS.A08.25",
+     "name": "case-12a-chi-tinh-cho-nguoi-mo-hoan-than",
+     "label": "Case 12a: Chỉ tính cho người mở / hoàn thành",
+     "spec": "High | REQ03 | **Given** A bắt đầu bài với lịch Thứ 4 và Hoàn thành; B cùng dạy lớp<br>**When** xem kỳ chứa Thứ 4<br>**Then** buổi và tiền thuộc A | B không có buổi này; B không Hoàn thành thay được.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [
+      {
+       "type": "governed-by",
+       "target": "M-TS.REQ03",
+       "raw": "REQ03"
+      }
+     ],
+     "testcases": [],
+     "missingTerms": [
+      "Case 12a: Chỉ tính cho người mở / hoàn thành"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-TS.A08.26",
+     "name": "case-12b-chua-hoan-thanh-khong-co-luong",
+     "label": "Case 12b: Chưa Hoàn thành không có lương",
+     "spec": "High | REQ03 | **Given** buổi Đang dạy hoặc Chờ hoàn thành có lịch trong kỳ<br>**When** tải danh sách<br>**Then** không tính số buổi và tiền | Có lương khi Hoàn thành, theo ngày của lịch.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [
+      {
+       "type": "governed-by",
+       "target": "M-TS.REQ03",
+       "raw": "REQ03"
+      }
+     ],
+     "testcases": [],
+     "missingTerms": [
+      "Case 12b: Chưa Hoàn thành không có lương"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "M-TS.A08.27",
+     "name": "case-12c-lich-da-duoc-chon",
+     "label": "Case 12c: Lịch đã được chọn",
+     "spec": "High | REQ03 | **Given** lịch Thứ 4 đã gắn bài 4; giáo viên khác mở bài 5 với lịch Thứ 4<br>**When** xác nhận<br>**Then** lỗi `Lịch này đã được chọn để mở` | Lịch Thứ 4 chỉ phát sinh lương một lần.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [
+      {
+       "type": "governed-by",
+       "target": "M-TS.REQ03",
+       "raw": "REQ03"
+      }
+     ],
+     "testcases": [],
+     "missingTerms": [
+      "Case 12c: Lịch đã được chọn",
+      "Lịch này đã được chọn để mở"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
      "id": "M-TS.A08.13",
      "name": "case-13-chon-xem-doc-lap-export",
      "label": "Case 13: Chọn xem độc lập Export",

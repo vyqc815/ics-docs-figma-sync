@@ -146,7 +146,7 @@
   {
    "id": "TR-CT.REQ21",
    "name": "Chọn lịch và lương buổi",
-   "text": "Lớp có lịch tuần này thì hiện popup `Chọn lịch dạy` gồm lịch tuần này của chính giáo viên (lịch Hoàn thành không chọn được, lịch huỷ ẩn) và `Không chọn lịch`. Chọn lịch: gắn lịch với buổi và giáo viên, lịch giữ `Đang đợi` (lịch cố định chưa có bản ghi thì tạo bản ghi Đang đợi); lịch đã gắn không chọn được cho buổi khác. Lịch chỉ chuyển `Hoàn thành` và phát sinh lương buổi dạy (một lần) khi bấm `Hoàn thành buổi học`; ngày tính lương là ngày của lịch, không phải ngày hoàn thành. Không chọn lịch hoặc lớp không có lịch tuần này: không phát sinh lương, có Toast `Thông Báo` tương ứng. Mỗi bài một buổi.",
+   "text": "Lớp có lịch tuần này thì hiện popup `Chọn lịch dạy` gồm lịch tuần này của chính giáo viên (lịch Hoàn thành không chọn được, lịch huỷ ẩn) và `Không chọn lịch`. Chọn lịch: gắn lịch với buổi và giáo viên, lịch giữ `Đang đợi` (lịch cố định chưa có bản ghi thì tạo bản ghi Đang đợi); lịch đã gắn không chọn được cho buổi khác. Lịch chỉ chuyển `Hoàn thành` và phát sinh lương buổi dạy (một lần) khi bấm `Hoàn thành buổi học`; ngày tính lương là ngày của lịch, không phải ngày hoàn thành. Không chọn lịch hoặc lớp không có lịch tuần này: không phát sinh lương, có Toast `Thông Báo` tương ứng. Lịch đã gắn buổi khác khi bấm Xác nhận → lỗi `Lịch này đã được chọn để mở`. Chỉ giáo viên của lớp được bắt đầu; không cần bài trước Hoàn thành. Lương ghi cho giáo viên của buổi. Mỗi bài một buổi.",
    "source": "qc",
    "content": "qc"
   },
@@ -167,7 +167,7 @@
   {
    "id": "TR-CT.REQ24",
    "name": "Nháp và tiếp tục",
-   "text": "Dữ liệu Bước 1/Bước 2 lưu nháp trên server sau mỗi thay đổi, theo lớp–bài. Mọi giáo viên của lớp tiếp tục được buổi `Đang dạy` (`Vào điểm danh`) hoặc `Chờ hoàn thành` (`Hoàn thành buổi học`) và thấy đúng nháp; giáo viên của buổi giữ nguyên là người bắt đầu.",
+   "text": "Dữ liệu Bước 1/Bước 2 lưu nháp trên server sau mỗi thay đổi, theo lớp–bài. Chỉ giáo viên của buổi (người bắt đầu) tiếp tục được buổi `Đang dạy` (`Vào điểm danh`) hoặc `Chờ hoàn thành` (`Hoàn thành buổi học`) và thấy đúng nháp; giáo viên khác của lớp chỉ xem.",
    "source": "qc",
    "content": "qc"
   },
@@ -1226,6 +1226,39 @@
      "status": "khop-mot-phan"
     },
     {
+     "id": "TR-CT.A03.08",
+     "name": "kiem-tra-khi-bat-dau",
+     "label": "Kiểm tra khi Bắt đầu",
+     "spec": "Backend kiểm lại khi bấm `Xác nhận`: người bấm không phải giáo viên của lớp → từ chối, Toast `Có Lỗi Xảy Ra`; lịch đã chọn đã được gắn với buổi khác (vd giáo viên khác vừa chọn) → Toast `Có Lỗi Xảy Ra` `Lịch này đã được chọn để mở`, không tạo buổi, popup Chọn lịch tải lại.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "gv-lop-030121": [
+       {
+        "term": "Xác nhận",
+        "figmaId": "I5292:223058;2514:153363",
+        "layer": "Atom/Button",
+        "confidence": "cao",
+        "region": null,
+        "owner": "Atom/Button",
+        "component": "Atom/Button",
+        "variant": {
+         "Label": "Xác nhận",
+         "Type": "Primary",
+         "Size": "Medium"
+        },
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Kiểm tra khi Bắt đầu"
+     ],
+     "status": "khop-mot-phan"
+    },
+    {
      "id": "TR-CT.A03.06",
      "name": "bat-dau-voi-lich",
      "label": "Bắt đầu với lịch",
@@ -2210,16 +2243,30 @@
      "id": "TR-CT.A06.03",
      "name": "nguoi-tiep-tuc",
      "label": "Người tiếp tục",
-     "spec": "Mọi giáo viên của lớp; giáo viên của buổi vẫn là người đã bấm Bắt đầu.",
+     "spec": "Chỉ giáo viên của buổi (người đã bấm Bắt đầu). Giáo viên khác của lớp thấy `Bài học đã mở` và tên giáo viên của buổi, không có nút `Vào điểm danh` / `Hoàn thành buổi học`.",
      "source": "tu-dien",
      "content": "qc",
-     "matches": {},
+     "matches": {
+      "gv-lop-030170": [
+       {
+        "term": "Bài học đã mở",
+        "figmaId": "5292:226698",
+        "layer": "Bài học đã mở",
+        "confidence": "cao",
+        "region": null,
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       }
+      ]
+     },
      "relations": [],
      "testcases": [],
      "missingTerms": [
       "Người tiếp tục"
      ],
-     "status": "chua-thay-tren-figma"
+     "status": "khop"
     }
    ],
    "screensFromItems": [
@@ -8309,7 +8356,7 @@
   },
   {
    "id": "TR-CT.EX15",
-   "text": "Hai giáo viên cùng bắt đầu một bài → chỉ tạo một buổi; người sau vào tiếp tục buổi đã có, không chọn lịch lần hai; mỗi buổi phát sinh lương tối đa một lần khi Hoàn thành.",
+   "text": "Hai giáo viên cùng bắt đầu một bài → chỉ tạo một buổi, người bấm trước là giáo viên của buổi; người sau thấy bài đã mở ở chế độ chỉ xem, không chọn lịch lần hai; mỗi buổi phát sinh lương tối đa một lần khi Hoàn thành.",
    "source": "qc",
    "content": "qc"
   },
@@ -8346,6 +8393,24 @@
   {
    "id": "TR-CT.EX21",
    "text": "Học viên lưu câu trả lời hoặc nộp bài kiểm tra đã kết thúc → backend từ chối; app báo bài đã kết thúc; bài đã nộp trước đó giữ nguyên. Kết thúc bài đã kết thúc → backend từ chối, dữ liệu giữ nguyên.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "TR-CT.EX22",
+   "text": "Bắt đầu với lịch đã gắn buổi khác (giáo viên khác vừa chọn) → Toast `Có Lỗi Xảy Ra` `Lịch này đã được chọn để mở`; không tạo buổi, không đổi lịch; popup Chọn lịch tải lại.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "TR-CT.EX23",
+   "text": "Người không phải giáo viên của lớp bắt đầu buổi → backend từ chối; không tạo buổi, không đổi lịch.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "TR-CT.EX24",
+   "text": "Giáo viên khác giáo viên của buổi điểm danh, Kết thúc hoặc Hoàn thành buổi → backend từ chối; buổi, nháp và lịch giữ nguyên, không phát sinh lương.",
    "source": "qc",
    "content": "qc"
   }
@@ -8681,6 +8746,61 @@
    ]
   },
   {
+   "id": "TR-CT.TC11a",
+   "title": "Case 11a: Lịch đã được chọn để mở",
+   "priority": "High",
+   "smoke": false,
+   "region": "TR-CT.A03",
+   "scenario": "Flow 2 / REQ21 / EX22",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "TR-CT.REQ21"
+   ],
+   "exceptions": [
+    "TR-CT.EX22"
+   ],
+   "flows": [
+    "TR-CT.FLOW02"
+   ],
+   "items": []
+  },
+  {
+   "id": "TR-CT.TC11b",
+   "title": "Case 11b: Không phải giáo viên của lớp",
+   "priority": "High",
+   "smoke": false,
+   "region": "TR-CT.A03",
+   "scenario": "REQ21 / EX23",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "TR-CT.REQ21"
+   ],
+   "exceptions": [
+    "TR-CT.EX23"
+   ],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "TR-CT.TC11c",
+   "title": "Case 11c: Mở bài khi bài trước chưa hoàn thành",
+   "priority": "Medium",
+   "smoke": false,
+   "region": "TR-CT.A03",
+   "scenario": "REQ20 / REQ21",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "TR-CT.REQ20",
+    "TR-CT.REQ21"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": []
+  },
+  {
    "id": "TR-CT.TC11",
    "title": "Case 11: Huỷ không bắt đầu",
    "priority": "Medium",
@@ -8850,6 +8970,24 @@
    "flows": [
     "TR-CT.FLOW03"
    ],
+   "items": []
+  },
+  {
+   "id": "TR-CT.TC20b",
+   "title": "Case 20b: Giáo viên khác chỉ xem",
+   "priority": "High",
+   "smoke": false,
+   "region": "TR-CT.A06",
+   "scenario": "REQ24 / EX24",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "TR-CT.REQ24"
+   ],
+   "exceptions": [
+    "TR-CT.EX24"
+   ],
+   "flows": [],
    "items": []
   },
   {
