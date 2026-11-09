@@ -83,6 +83,8 @@
 **Mô tả:**
 
 - Khi bắt đầu, giáo viên chọn lịch dạy tuần này để gắn buổi với lịch và tính lương; có thể không chọn lịch, khi đó buổi không được tính lương.
+- Chỉ **giáo viên của lớp** được bắt đầu buổi; người bấm Bắt đầu là **giáo viên của buổi**.
+- Không bắt buộc bài trước đã Hoàn thành: lớp được có nhiều bài `Đang dạy` / `Chờ hoàn thành` cùng lúc.
 
 **Giải thích thành phần:**
 
@@ -93,12 +95,14 @@
 | Lựa chọn `Không chọn lịch` | Dòng phụ `Buổi học này sẽ không được tính lương`. |
 | Nút `Huỷ` / `Bắt đầu` | `Huỷ` đóng popup, không bắt đầu. `Bắt đầu` cần đã chọn một lịch hoặc `Không chọn lịch`. |
 | Popup `Bắt đầu buổi học` | Sau khi chọn lịch: nội dung `Nhấn 'Xác nhận' để bắt đầu buổi học!`, nút `Huỷ` / `Xác nhận`. |
+| Kiểm tra khi Bắt đầu | Backend kiểm lại khi bấm `Xác nhận`: người bấm không phải giáo viên của lớp → từ chối, Toast `Có Lỗi Xảy Ra`; lịch đã chọn đã được gắn với buổi khác (vd giáo viên khác vừa chọn) → Toast `Có Lỗi Xảy Ra` `Lịch này đã được chọn để mở`, không tạo buổi, popup Chọn lịch tải lại. |
 | Bắt đầu với lịch | Tạo buổi của bài (giáo viên của buổi, mốc mở = thời điểm máy chủ, trạng thái `Đang dạy`); **gắn** lịch được chọn với buổi và giáo viên, lịch **giữ trạng thái `Đang đợi`** (chưa Hoàn thành, chưa phát sinh lương). Lịch cố định chưa có bản ghi ngày đó thì tạo bản ghi lịch `Đang đợi` theo giờ của lịch cố định. Chuyển sang Bước 1 — Điểm danh. |
 | Bắt đầu không chọn lịch | Tạo buổi như trên, không đổi lịch, không phát sinh lương; Toast `Thông Báo` `Bạn đã bỏ qua chọn lịch, buổi học này sẽ không được tính lương`. Chuyển sang Bước 1. |
 
 **Điểm cần lưu ý:**
 
-- Mỗi bài chỉ có một buổi; hai giáo viên bấm bắt đầu cùng lúc thì chỉ tạo một buổi, người sau vào tiếp tục buổi đã có.
+- Mỗi bài chỉ có một buổi; hai giáo viên bấm bắt đầu cùng lúc thì chỉ tạo một buổi, người bấm trước là giáo viên của buổi; người sau thấy bài đã mở ở chế độ chỉ xem.
+- **Điều kiện có lương buổi dạy:** đã chọn lịch lúc bắt đầu **và** giáo viên của buổi bấm `Hoàn thành buổi học`. Không chọn lịch → không có lương; bài chưa Hoàn thành → chưa có lương. Lương ghi cho giáo viên của buổi (người mở và hoàn thành).
 - Lịch đã gắn chỉ chuyển `Hoàn thành` và **phát sinh lương buổi dạy** khi giáo viên bấm `Hoàn thành buổi học` ở Bước 2 (khác ICS cũ chuyển ngay khi bắt đầu); lương buổi dạy tính theo lương/giờ của giáo viên ở lớp.
 - **Ngày tính lương là ngày của lịch đã chọn**, không phải ngày bấm Hoàn thành: chọn lịch ngày 15 để bắt đầu, ngày 20 mới hoàn thành buổi thì lương thuộc ngày 15.
 
@@ -110,6 +114,9 @@
 | Case 8: Không chọn lịch | High |  | Flow 2 / REQ21 | Giáo viên | Có lịch tuần này | **Given** chọn `Không chọn lịch`<br>**When** xác nhận bắt đầu<br>**Then** Toast `Bạn đã bỏ qua chọn lịch, buổi học này sẽ không được tính lương` | - Không đổi lịch nào<br>- Không phát sinh lương |
 | Case 9: Lớp không có lịch tuần này | Medium |  | REQ21 | Giáo viên | Lớp không có lịch trong tuần | **Given** bấm Bắt đầu buổi học<br>**When** xác nhận<br>**Then** Toast `Lớp không có lịch để tính lương buổi này` | - Không hiện popup Chọn lịch dạy |
 | Case 10: Lịch đã hoàn thành không chọn được | Medium |  | REQ21 | Giáo viên | Lịch Thứ 2 đã Hoàn thành, Thứ 6 chưa | **Given** mở popup Chọn lịch dạy<br>**When** xem danh sách<br>**Then** Thứ 2 không chọn được | - Lịch huỷ không hiển thị<br>- Chỉ lịch của chính giáo viên |
+| Case 11a: Lịch đã được chọn để mở | High |  | Flow 2 / REQ21 / EX22 | Giáo viên | A và B cùng dạy lớp, cùng mở popup Chọn lịch; A đã bắt đầu bài 4 với lịch Thứ 4 | **Given** B chọn lịch Thứ 4 cho bài 5<br>**When** bấm `Xác nhận`<br>**Then** Toast `Lịch này đã được chọn để mở` | - Bài 5 vẫn Chưa mở<br>- Lịch Thứ 4 vẫn gắn bài 4 của A |
+| Case 11b: Không phải giáo viên của lớp | High |  | REQ21 / EX23 | Giáo viên | C không thuộc lớp | **Given** C gửi request bắt đầu bài<br>**When** backend kiểm tra<br>**Then** bị từ chối | - Không tạo buổi, không đổi lịch |
+| Case 11c: Mở bài khi bài trước chưa hoàn thành | Medium |  | REQ20 / REQ21 | Giáo viên | Bài 4 đang `Đang dạy` | **Given** chọn bài 5 và bắt đầu<br>**When** xác nhận<br>**Then** bài 5 chuyển Đang dạy | - Bài 4 giữ Đang dạy<br>- Lịch đã gắn bài 4 không chọn được cho bài 5 |
 | Case 11: Huỷ không bắt đầu | Medium |  | Flow 2 | Giáo viên | Popup đang mở | **Given** bấm `Huỷ`<br>**When** popup đóng<br>**Then** bài vẫn Chưa mở | - Không đổi lịch |
 
 ### Bước 1 — Điểm danh và Ghi chú cho lớp học
@@ -138,7 +145,8 @@
 
 **Điểm cần lưu ý:**
 
-- Mỗi thay đổi được lưu nháp lên server ngay; đổi máy hoặc giáo viên khác của lớp bấm tiếp tục sẽ thấy đúng phần đã nhập.
+- Mỗi thay đổi được lưu nháp lên server ngay; đổi máy tiếp tục sẽ thấy đúng phần đã nhập.
+- Chỉ giáo viên của buổi được điểm danh và `Kết thúc buổi học`; giáo viên khác của lớp gửi request thì backend từ chối.
 - Sau khi Kết thúc buổi học, giáo viên không sửa điểm danh nữa.
 
 #### Testcase — Bước 1 Điểm danh
@@ -149,7 +157,7 @@
 | Case 13: Khoá nút khi còn chưa điểm danh | High |  | REQ22 | Giáo viên | 1 học viên còn `Chưa điểm danh` | **Given** đã nhập ghi chú lớp<br>**When** xem nút<br>**Then** `Kết thúc buổi học` khoá | - Điểm danh đủ thì nút mở |
 | Case 14: Không có dặn dò | Medium |  | REQ22 | Giáo viên | Đã điểm danh đủ, ghi chú lớp trống | **Given** tick `Không có dặn dò cho học viên`<br>**When** xem nút<br>**Then** nút mở | - Nhận xét lớp lưu rỗng |
 | Case 15: Danh sách học viên điểm danh | High |  | REQ22 | Giáo viên | Lớp có học viên Đang học, Dự thính, Hoàn thành, Nghỉ học, Rời lớp, Chỉ xem, Xóa | **Given** mở Bước 1<br>**When** danh sách tải<br>**Then** chỉ có Đang học, Dự thính, Hoàn thành | - Không hiển thị Nghỉ học, Rời lớp, Chỉ xem, Xóa |
-| Case 16: Nháp lưu trên server | High |  | REQ24 | Giáo viên | A đã điểm danh 1/2 học viên | **Given** giáo viên B của lớp mở bài và bấm `Vào điểm danh`<br>**When** Bước 1 tải<br>**Then** B thấy đúng 1 học viên đã điểm danh | - Giáo viên của buổi vẫn là A |
+| Case 16: Nháp lưu trên server | High |  | REQ24 | Giáo viên | A đã điểm danh 1/2 học viên | **Given** A đổi máy, bấm `Vào điểm danh`<br>**When** Bước 1 tải<br>**Then** A thấy đúng 1 học viên đã điểm danh | - Giáo viên của buổi vẫn là A<br>- Giáo viên khác của lớp không vào được Bước 1 |
 
 ### Bước 2 — Ghi chú buổi học và Hoàn thành
 
@@ -181,6 +189,7 @@
 **Điểm cần lưu ý:**
 
 - Ghi chú gửi giáo viên tiếp theo, gửi Support và nhận xét lớp hiển thị chỉ đọc ở tab Buổi học của chính bài này khi đã hoàn thành; không hiển thị ở Dặn dò trước buổi học của bài kế tiếp.
+- Chỉ giáo viên của buổi được `Hoàn thành buổi học`; giáo viên khác của lớp gửi request thì backend từ chối, không phát sinh lương.
 - Sau khi Hoàn thành, giáo viên chỉ xem; không sửa điểm danh, nhận xét hoặc ghi chú.
 - Mỗi thay đổi lưu nháp lên server như Bước 1.
 
@@ -204,13 +213,14 @@
 |---|---|
 | Bài `Đang dạy` | Nút `Vào điểm danh`; bấm mở popup `Tiếp tục buổi học` (`Nhấn 'Xác nhận' để tiếp tục buổi học!`), xác nhận vào Bước 1 với nháp hiện có. |
 | Bài `Chờ hoàn thành` | Nút `Hoàn thành buổi học`; bấm vào Bước 2 với nháp hiện có. |
-| Người tiếp tục | Mọi giáo viên của lớp; giáo viên của buổi vẫn là người đã bấm Bắt đầu. |
+| Người tiếp tục | Chỉ giáo viên của buổi (người đã bấm Bắt đầu). Giáo viên khác của lớp thấy `Bài học đã mở` và tên giáo viên của buổi, không có nút `Vào điểm danh` / `Hoàn thành buổi học`. |
 
 #### Testcase — Tiếp tục buổi học
 
 | Tên testcase | Priority | Loại test | Scenario | Role | Pre-condition | Given / When / Then | Expected Result |
 |---|---| --- |---|---|---|---|---|
 | Case 20: Tiếp tục buổi Đang dạy | High |  | Flow 3 / REQ24 | Giáo viên | Bài Đang dạy | **Given** bấm `Vào điểm danh`<br>**When** xác nhận popup Tiếp tục buổi học<br>**Then** mở Bước 1 với dữ liệu nháp | - Không tạo buổi mới<br>- Không chọn lịch lại |
+| Case 20b: Giáo viên khác chỉ xem | High |  | REQ24 / EX24 | Giáo viên | A bắt đầu bài 4 (Đang dạy); B cùng dạy lớp | **Given** B mở bài 4<br>**When** xem tab Buổi học<br>**Then** không có nút `Vào điểm danh` | - Request điểm danh / Kết thúc / Hoàn thành của B bị từ chối<br>- Không phát sinh lương cho B |
 | Case 21: Tiếp tục buổi Chờ hoàn thành | Medium |  | Flow 4 / REQ24 | Giáo viên | Bài Chờ hoàn thành | **Given** bấm `Hoàn thành buổi học`<br>**When** màn mở<br>**Then** vào Bước 2 | - Không sửa được điểm danh |
 
 ### Tab Buổi học — Bài đã hoàn thành
@@ -998,7 +1008,10 @@ Giáo viên chọn bài Chưa mở → tab Buổi học hiển thị Dặn dò t
       → Lớp không Đang học và không phải lớp demo: Toast "Lớp chưa bắt đầu!", dừng
       → Lớp không có lịch tuần này: popup "Bắt đầu buổi học" → Xác nhận → tạo buổi Đang dạy; Toast "Lớp không có lịch để tính lương buổi này"
       → Có lịch: popup "Chọn lịch dạy" (lịch tuần này của chính giáo viên)
-            → Chọn lịch → popup "Bắt đầu buổi học" → Xác nhận → tạo buổi Đang dạy; gắn lịch (lịch vẫn Đang đợi)
+            → Chọn lịch → popup "Bắt đầu buổi học" → Xác nhận
+                  → Không phải giáo viên của lớp: từ chối, dừng
+                  → Lịch đã gắn buổi khác: Toast "Lịch này đã được chọn để mở", dừng
+                  → Tạo buổi Đang dạy; gắn lịch (lịch vẫn Đang đợi)
             → "Không chọn lịch" → Xác nhận → tạo buổi Đang dạy; Toast "Bạn đã bỏ qua chọn lịch, buổi học này sẽ không được tính lương"
       → Chuyển sang Bước 1 — Điểm danh
 ```
@@ -1006,7 +1019,7 @@ Giáo viên chọn bài Chưa mở → tab Buổi học hiển thị Dặn dò t
 **Flow 3 / REQ22: Điểm danh và Kết thúc buổi học**
 
 ```text
-Giáo viên ở Bước 1 (hoặc bấm "Vào điểm danh" ở bài Đang dạy → popup Tiếp tục buổi học → Xác nhận)
+Giáo viên của buổi ở Bước 1 (hoặc bấm "Vào điểm danh" ở bài Đang dạy → popup Tiếp tục buổi học → Xác nhận)
       → Chọn trạng thái điểm danh cho từng học viên; nhập Ghi chú cho lớp học hoặc tick "Không có dặn dò cho học viên"
       → Mỗi thay đổi lưu nháp lên server
       → Đủ điều kiện: bấm "Kết thúc buổi học" → popup nhắc tắt record → Xác nhận
@@ -1016,7 +1029,7 @@ Giáo viên ở Bước 1 (hoặc bấm "Vào điểm danh" ở bài Đang dạy
 **Flow 4 / REQ23: Ghi chú và Hoàn thành buổi học**
 
 ```text
-Giáo viên ở Bước 2 (hoặc bấm "Hoàn thành buổi học" ở bài Chờ hoàn thành)
+Giáo viên của buổi ở Bước 2 (hoặc bấm "Hoàn thành buổi học" ở bài Chờ hoàn thành)
       → Nhập ghi chú từng học viên (không bắt buộc), ghi chú gửi Support và gửi giáo viên tiếp theo (hoặc tick "Không có dặn dò")
       → Bấm "Hoàn thành buổi học" → popup nhắc kiểm tra ghi chú và tắt record → Xác nhận
       → Lưu ghi chú; buổi Hoàn thành; lịch đã gắn chuyển Hoàn thành và phát sinh lương; xoá nháp; hiển thị "Buổi học đã kết thúc"
@@ -1162,13 +1175,16 @@ Giáo viên vào Chi tiết lớp → Giảng dạy → Tự học
 - **EX12:** Bắt đầu buổi học khi lớp chính thức chưa ở trạng thái `Đang học` → Toast `Cảnh Báo` `Lớp chưa bắt đầu!`; không tạo buổi, không đổi lịch.
 - **EX13:** Sửa điểm danh hoặc ghi chú sau khi buổi đã `Hoàn thành`, hoặc sửa điểm danh khi buổi đã `Chờ hoàn thành` → backend từ chối; dữ liệu giữ nguyên.
 - **EX14:** Tải tài nguyên của bài bị khoá → không tải; Toast `Thông Báo` `Chỉ tải được tài nguyên của 3 bài đã mở gần nhất`; request trực tiếp bị từ chối.
-- **EX15:** Hai giáo viên cùng bắt đầu một bài → chỉ tạo một buổi; người sau vào tiếp tục buổi đã có, không chọn lịch lần hai; mỗi buổi phát sinh lương tối đa một lần khi Hoàn thành.
+- **EX15:** Hai giáo viên cùng bắt đầu một bài → chỉ tạo một buổi, người bấm trước là giáo viên của buổi; người sau thấy bài đã mở ở chế độ chỉ xem, không chọn lịch lần hai; mỗi buổi phát sinh lương tối đa một lần khi Hoàn thành.
 - **EX16:** Bắt đầu, Kết thúc hoặc Hoàn thành buổi thất bại do backend/network → Toast `Có Lỗi Xảy Ra`; trạng thái buổi giữ nguyên, nháp không mất.
 - **EX17:** Giáo viên gửi request thêm khóa tự học hoặc thêm bài tự học → backend từ chối; danh sách Tự học giữ nguyên.
 - **EX18:** Tải danh sách bài hoặc bảng thời gian Tự học lỗi → vùng lỗi có `Thử lại`; không hiển thị rỗng hoặc `00:00:00` giả.
 - **EX19:** Bấm dòng học viên `Chưa nộp` ở bảng kết quả → Toast `Thông Báo` `Học viên chưa nộp bài này!`; không mở màn chấm.
 - **EX20:** Giáo viên gửi request thiết lập lại bài nộp của học viên → backend từ chối; bài nộp giữ nguyên.
 - **EX21:** Học viên lưu câu trả lời hoặc nộp bài kiểm tra đã kết thúc → backend từ chối; app báo bài đã kết thúc; bài đã nộp trước đó giữ nguyên. Kết thúc bài đã kết thúc → backend từ chối, dữ liệu giữ nguyên.
+- **EX22:** Bắt đầu với lịch đã gắn buổi khác (giáo viên khác vừa chọn) → Toast `Có Lỗi Xảy Ra` `Lịch này đã được chọn để mở`; không tạo buổi, không đổi lịch; popup Chọn lịch tải lại.
+- **EX23:** Người không phải giáo viên của lớp bắt đầu buổi → backend từ chối; không tạo buổi, không đổi lịch.
+- **EX24:** Giáo viên khác giáo viên của buổi điểm danh, Kết thúc hoặc Hoàn thành buổi → backend từ chối; buổi, nháp và lịch giữ nguyên, không phát sinh lương.
 
 ### 2.3. Yêu cầu khác
 
@@ -1207,10 +1223,10 @@ Giáo viên vào Chi tiết lớp → Giảng dạy → Tự học
 
 - **REQ19 – Danh sách bài học:** Toàn bộ bài của lớp theo thứ tự (gồm bài bổ sung), mặc định chọn bài đầu. Card bài đã mở có giáo viên của buổi (người bắt đầu), mốc mở `HH:mm - dd/MM/yyyy`, vòng BTVN/Đi học; card chưa mở chỉ có số thứ tự xám, tên, mô tả. Giáo viên không thêm/sửa/xoá bài.
 - **REQ20 – Dặn dò trước buổi học:** Bài Chưa mở hiển thị 5 dòng dặn dò cố định và checkbox `Tôi đã đọc ghi chú`; phải tick mới bắt đầu được. Không hiển thị ghi chú hay nhận xét của bài trước (chỉ xem ở bài đã hoàn thành). Mọi giáo viên của lớp được bắt đầu bất kỳ bài chưa mở; lớp phải `Đang học` hoặc là lớp không chính thức.
-- **REQ21 – Chọn lịch và lương buổi:** Lớp có lịch tuần này thì hiện popup `Chọn lịch dạy` gồm lịch tuần này của chính giáo viên (lịch Hoàn thành không chọn được, lịch huỷ ẩn) và `Không chọn lịch`. Chọn lịch: gắn lịch với buổi và giáo viên, lịch giữ `Đang đợi` (lịch cố định chưa có bản ghi thì tạo bản ghi Đang đợi); lịch đã gắn không chọn được cho buổi khác. Lịch chỉ chuyển `Hoàn thành` và phát sinh lương buổi dạy (một lần) khi bấm `Hoàn thành buổi học`; ngày tính lương là ngày của lịch, không phải ngày hoàn thành. Không chọn lịch hoặc lớp không có lịch tuần này: không phát sinh lương, có Toast `Thông Báo` tương ứng. Mỗi bài một buổi.
+- **REQ21 – Chọn lịch và lương buổi:** Lớp có lịch tuần này thì hiện popup `Chọn lịch dạy` gồm lịch tuần này của chính giáo viên (lịch Hoàn thành không chọn được, lịch huỷ ẩn) và `Không chọn lịch`. Chọn lịch: gắn lịch với buổi và giáo viên, lịch giữ `Đang đợi` (lịch cố định chưa có bản ghi thì tạo bản ghi Đang đợi); lịch đã gắn không chọn được cho buổi khác. Lịch chỉ chuyển `Hoàn thành` và phát sinh lương buổi dạy (một lần) khi bấm `Hoàn thành buổi học`; ngày tính lương là ngày của lịch, không phải ngày hoàn thành. Không chọn lịch hoặc lớp không có lịch tuần này: không phát sinh lương, có Toast `Thông Báo` tương ứng. Lịch đã gắn buổi khác khi bấm Xác nhận → lỗi `Lịch này đã được chọn để mở`. Chỉ giáo viên của lớp được bắt đầu; không cần bài trước Hoàn thành. Lương ghi cho giáo viên của buổi. Mỗi bài một buổi.
 - **REQ22 – Điểm danh:** Danh sách gồm học viên `Đang học`, `Dự thính`, `Hoàn thành`. Mỗi học viên một trạng thái trong `Có mặt`, `Vào trễ`, `Ra sớm`, `Vào trễ & Ra sớm`, `Nghỉ CP`, `Nghỉ KP` (mặc định `Chưa điểm danh`). Kết thúc buổi học khi điểm danh đủ và có ghi chú lớp hoặc tick `Không có dặn dò cho học viên`; lưu điểm danh và `Giáo viên nhận xét lớp`, buổi chuyển `Chờ hoàn thành`.
 - **REQ23 – Hoàn thành buổi học:** Ghi chú từng học viên (gửi Support, gửi học viên) không bắt buộc. Ghi chú gửi Support và gửi giáo viên tiếp theo phải có nội dung hoặc tick checkbox `Không có dặn dò` tương ứng. Hoàn thành lưu ghi chú, buổi chuyển `Hoàn thành`, lịch đã gắn chuyển `Hoàn thành` và phát sinh lương, xoá nháp.
-- **REQ24 – Nháp và tiếp tục:** Dữ liệu Bước 1/Bước 2 lưu nháp trên server sau mỗi thay đổi, theo lớp–bài. Mọi giáo viên của lớp tiếp tục được buổi `Đang dạy` (`Vào điểm danh`) hoặc `Chờ hoàn thành` (`Hoàn thành buổi học`) và thấy đúng nháp; giáo viên của buổi giữ nguyên là người bắt đầu.
+- **REQ24 – Nháp và tiếp tục:** Dữ liệu Bước 1/Bước 2 lưu nháp trên server sau mỗi thay đổi, theo lớp–bài. Chỉ giáo viên của buổi (người bắt đầu) tiếp tục được buổi `Đang dạy` (`Vào điểm danh`) hoặc `Chờ hoàn thành` (`Hoàn thành buổi học`) và thấy đúng nháp; giáo viên khác của lớp chỉ xem.
 - **REQ25 – Bài đã hoàn thành:** Hiển thị `Giáo viên nhận xét lớp`, ghi chú gửi Support, ghi chú gửi giáo viên tiếp theo và bảng học viên (Đi học, BTVN, Ghi chú) chỉ đọc. Giáo viên không sửa sau khi hoàn thành.
 - **REQ26 – Thông tin, Nội dung, Kiến thức:** Dữ liệu định nghĩa bài học chỉ đọc giống Admin; Kiến thức để trống.
 - **REQ27 – Tài nguyên:** Bấm file tải ngay. Chỉ tải được tài nguyên của 3 bài đã mở có số thứ tự lớn nhất; bài khác (đã mở trước đó hoặc chưa mở) hiển thị file kèm icon khoá, bấm không tải; áp dụng cả Bài giảng và Tài nguyên khác; backend kiểm tra khi tải.
@@ -1262,4 +1278,6 @@ Giáo viên vào Chi tiết lớp → Giảng dạy → Tự học
 
 ## 3. Cần xác nhận
 
-- Không còn mục cần xác nhận.
+- Giáo viên của buổi bị gỡ khỏi lớp khi buổi chưa Hoàn thành: buổi giữ `Đang dạy` / `Chờ hoàn thành`, chưa có ai được hoàn thành thay; cần chốt người xử lý (vd Support).
+- Lịch đã gắn buổi bị huỷ trước khi Hoàn thành: tạm giữ luật cũ (không phát sinh lương cho lịch huỷ); cần chốt.
+- BE hiện cho mọi giáo viên của lớp tiếp tục buổi; cần sửa API theo REQ24 / EX22–EX24.
