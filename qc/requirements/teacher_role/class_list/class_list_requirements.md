@@ -23,7 +23,7 @@
 | Trung tâm | Lấy theo trung tâm giáo viên đang chọn ở header; chỉ lớp của trung tâm đó. |
 | `Tìm kiếm` | Tìm theo mã lớp hoặc tên khoá học, không phân biệt hoa thường; áp dụng cho cả hàng thẻ chỉ số và Danh sách lớp. |
 | `Loại lớp` | Chọn một hoặc nhiều: `Lớp 1-1`, `Lớp chung`, `Lớp demo`. Mặc định tất cả. |
-| `Trạng thái` | Chọn một hoặc nhiều trong 7 trạng thái lớp: `Mới tạo`, `Trải nghiệm`, `Khai giảng`, `Đang học`, `Tạm ngưng`, `Hoàn thành`, `Huỷ bỏ`. **Mặc định `Đang học`**. |
+| `Trạng thái` | Chọn một hoặc nhiều trong 7 trạng thái lớp: `Mới tạo`, `Trải nghiệm`, `Khai giảng`, `Đang học`, `Tạm ngưng`, `Hoàn thành`, `Huỷ bỏ`. **Mặc định `Đang học` + `Khai giảng`**. |
 | `Trình độ` | Chọn một hoặc nhiều trình độ từ dữ liệu định nghĩa. Mặc định tất cả. |
 | Tập lớp thỏa bộ lọc | Lớp giáo viên được thêm vào (mọi trạng thái), thuộc trung tâm, khớp tìm kiếm và cả 3 bộ lọc. Hàng thẻ và Danh sách lớp cùng dùng tập này. |
 
@@ -145,7 +145,7 @@
 
 ```text
 Giáo viên đăng nhập → chọn trung tâm ở header → menu Lớp
-      → Hệ thống tải lớp giáo viên được thêm vào tại trung tâm, bộ lọc mặc định Trạng thái = Đang học
+      → Hệ thống tải lớp giáo viên được thêm vào tại trung tâm, bộ lọc mặc định Trạng thái = Đang học + Khai giảng
       → Tính hàng thẻ chỉ số trên tập lớp thỏa bộ lọc; hiển thị Danh sách lớp; chọn lớp đầu tiên → khối lớp bên trái
       → Không có lớp: thẻ 0/0, 0%; ẩn khối lớp; danh sách "Bảng dữ liệu này đang trống"
 ```
@@ -173,7 +173,7 @@ Giáo viên bấm card → khối lớp bên trái đổi theo lớp đó
 
 ### 2.3. Yêu cầu khác
 
-- **REQ01 – Phạm vi và bộ lọc:** Lớp giáo viên được thêm vào tại trung tâm đang chọn. Tìm theo mã lớp/tên khoá; Loại lớp (`Lớp 1-1`, `Lớp chung`, `Lớp demo`), Trạng thái (7 trạng thái, mặc định `Đang học`), Trình độ; chọn nhiều, trong cùng bộ lọc là OR. Hàng thẻ và Danh sách lớp dùng cùng tập lớp thỏa bộ lọc. Không có kỳ thống kê.
+- **REQ01 – Phạm vi và bộ lọc:** Lớp giáo viên được thêm vào tại trung tâm đang chọn. Tìm theo mã lớp/tên khoá; Loại lớp (`Lớp 1-1`, `Lớp chung`, `Lớp demo`), Trạng thái (7 trạng thái, mặc định `Đang học` + `Khai giảng`), Trình độ; chọn nhiều, trong cùng bộ lọc là OR. Hàng thẻ và Danh sách lớp dùng cùng tập lớp thỏa bộ lọc. Không có kỳ thống kê.
 - **REQ02 – Hàng thẻ:** `Số lớp` = lớp Đang học / tổng lớp tập; `Đi học`, `BTVN` = trung bình tỷ lệ của mọi học viên trong tập; `Lên kỳ` = trung bình `(Đi học + BTVN)/2` của mọi học viên; `Đạt KPI` = trung bình KPI lớp (KPI lớp = trung bình Lên kỳ của học viên trong lớp), mỗi lớp trọng số bằng nhau; badge hạng theo nguồn. Làm tròn kết quả cuối 1 chữ số thập phân; học viên/lớp thiếu mẫu số không tham gia; tập rỗng `0%`.
 - **REQ03 – Khối lớp đang chọn:** Mặc định lớp đầu tiên; `Kết quả`, ngày bắt đầu/kết thúc, khung giờ học, 6 chỉ số theo công thức Tổng quan lớp; ẩn khi không có lớp.
 - **REQ04 – Danh sách lớp:** Card có icon trạng thái, mã lớp, tên khoá, tiến độ `x/y Buổi` (buổi Hoàn thành / tổng buổi khoá), badge hạng, vòng KPI lớp, `>` vào Chi tiết lớp; sắp theo mã lớp; không phân trang.
