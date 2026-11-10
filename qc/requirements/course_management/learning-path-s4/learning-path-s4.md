@@ -6,6 +6,8 @@
 
 ### Trang 1: Nội dung buổi học (Lộ Trình S4)
 
+Màn S4 có **2 tab** ở đầu trang: `Nội dung buổi học` (Trang 1, mặc định) và `Kiến thức/Kỹ năng` (Trang 2).
+
 ![alt text](image.png)
 
 **Mô tả:**
@@ -43,6 +45,21 @@
 - **Cột STT:** số thứ tự hàng theo thứ tự hiện tại; icon kéo thả nằm bên trái STT để sắp xếp bài học.
 - **Cột Bài học:** tên (in đậm) + mô tả phụ bên dưới, không có mô tả hiển thị "-". **Sửa trực tiếp tại ô** (click vào tên/mô tả để chuyển sang ô nhập).
 - **Cột Kỳ:** dropdown chọn kỳ cho từng bài học, hiển thị mã kỳ (màu xanh) + tên kỳ, text dài cắt bằng "...". Danh sách lấy từ các kỳ của khoá học hiện tại; mặc định là kỳ của bài học. Đổi Kỳ ở đây sẽ chuyển bài học sang học kỳ mới: bài học không còn ở tab Bài học của học kỳ cũ và xuất hiện ở tab Bài học của học kỳ mới (bài học trong học kỳ tự động theo lộ trình S4).
+
+### Trang 2: Kiến thức/Kỹ năng (Lộ Trình S4)
+
+![Tab Kiến thức/Kỹ năng](image-kien-thuc-ky-nang.png)
+
+**Mô tả:**
+- CD tick bài học (hàng) **có loại kiến thức / kỹ năng nào** (cột). Tick ở đây là **nguồn duy nhất** của tag `Kiến thức` / `Kỹ năng` ở tab Thông tin của [Chi tiết bài học](../semester/lesson/lesson.md) và **đồng bộ hai chiều** với nút `+` / `x` ở đó.
+- Tick **độc lập với cụm** ở Kiến thức (S1) / Kỹ năng (S6): tick không tạo, không xoá, không đòi hỏi cụm liên kết; cụm liên kết bài vẫn lập ở S1 / S6 và chỉ quyết định **mục nào** hiện ở tab Kiến thức / Kỹ năng của bài.
+
+**Điểm cần lưu ý:**
+- **Cột cố định:** `STT`, `Bài học` (tên in đậm + mô tả, cắt "..."), `Kỳ` (dropdown giống Trang 1). Hàng và thứ tự bài học dùng chung với Trang 1 (kéo thả, sửa tên / mô tả, đổi Kỳ ở Trang 1 đều phản ánh ở đây). Freeze 3 cột đầu và hàng header như Trang 1.
+- **Cột loại** theo thứ tự: các loại kiến thức của trung tâm theo thứ tự tab ở S1 (`Từ vựng`, `Ngữ pháp`, `Mẫu câu`, `Hán tự (Hanzi)` / `Kanji`, `Phát âm`, `Bảng chữ`), rồi 4 kỹ năng theo thứ tự tab ở S6 (`Nghe`, `Đọc`, `Viết`, `Nói`). Loại trung tâm không dùng thì **ẩn cột** (vd khoá tiếng Đức không có `Hán tự`, `Kanji`, `Phát âm`; `Bảng chữ` chỉ trung tâm có hệ chữ riêng) — cùng quy tắc tab loại ở S1.
+- **Header mỗi cột loại** 3 dòng: dòng 1 nhóm (`KIẾN THỨC` / `KỸ NĂNG`, chữ nhỏ xám), dòng 2 tên loại in hoa, dòng 3 `{N} bài` = số bài đã tick ở cột. **Không có badge** đủ / thiếu.
+- **Ô tick:** checkbox, 2 trạng thái. 1 bài tick được nhiều loại; 1 loại tick được nhiều bài; không giới hạn.
+- **Không có Import / Export Excel** cho tab này, chỉ thao tác trên màn.
 
 ---
 
@@ -84,6 +101,17 @@ Hàng tick Khai giảng (60') + Phát âm (45') → Thời gian 01:45:00 (117%, 
 
 **Flow 6: Sửa tên/mô tả bài học** — CD click ô tên/mô tả, nhập, rời ô hoặc Enter → FE gọi API cập nhật (lỗi: hoàn tác về giá trị cũ + thông báo lỗi).
 
+**Flow 7: Tick loại kiến thức / kỹ năng (Trang 2)**
+
+```
+CD mở tab Kiến thức/Kỹ năng → FE gọi API lấy [bài học + kỳ + danh sách loại của trung tâm + loại đã tick của từng bài]
+CD click ô (bài học X, loại L) → FE đảo trạng thái tick → cập nhật dòng 3 header cột L (`N bài`)
+→ FE gọi API cập nhật tick loại của bài X
+   ↓ API lỗi: FE hoàn tác ô → header về số cũ → Toast `Có Lỗi Xảy Ra`
+→ Mở Chi tiết bài X: tab Thông tin hiện tag loại L (Kiến thức hoặc Kỹ năng), badge tab tăng theo
+Ngược lại: ở Chi tiết bài X bấm `+` thêm loại L hoặc `x` gỡ tag L → "Lưu thay đổi" → ô (X, L) ở S4 đổi theo
+```
+
 ### 2.2. Ngoại lệ
 
 - **EX01:** Số tick của cột > tổng buổi → vẫn cho tick, badge `Quá buổi` (đỏ), không popup chặn.
@@ -94,6 +122,9 @@ Hàng tick Khai giảng (60') + Phát âm (45') → Thời gian 01:45:00 (117%, 
 - **EX06:** S2 thêm buổi học → hiển thị thêm cột mới chưa tick (`00/{tổng}`, `[ 0 PHÚT ]`, badge `Chưa đủ buổi`).
 - **EX07:** API lưu lỗi (tick, đổi Kỳ, kéo thả, sửa tên/mô tả) → hoàn tác thao tác vừa làm, tính lại hiển thị, hiện thông báo lỗi.
 - **EX08:** Tên bài học để trống/chỉ khoảng trắng → không lưu, trả về tên cũ.
+- **EX10:** Tick / bỏ tick loại khi bài học **chưa có / vẫn còn** cụm liên kết ở S1 / S6 → luôn cho phép (độc lập); cụm giữ nguyên. Loại đã tick mà chưa có cụm: tab Kiến thức / Kỹ năng của bài hiện trạng thái trống.
+- **EX11:** Request tick loại trung tâm không dùng (ẩn cột) → BE từ chối, không lưu.
+- **EX12:** Hai người cùng sửa tick (S4 và nút `+` ở Chi tiết bài học) → bản lưu sau cùng thắng; mở lại màn thấy giá trị mới nhất.
 - **EX09:** Phút chuẩn 1 buổi luôn có giá trị (S2 mặc định 90 phút, chỉ nhận số nguyên dương) nên cột Thời gian luôn tính được % màu; hàng chưa tick hiển thị màu xám theo EX03.
 
 ### 2.3. Yêu cầu khác
@@ -110,10 +141,13 @@ Hàng tick Khai giảng (60') + Phát âm (45') → Thời gian 01:45:00 (117%, 
 | REQ08 | Kéo thả | Thứ tự bài học được lưu, STT cập nhật theo; chỉ dùng cho màn này. |
 | REQ09 | Dropdown Kỳ | Danh sách kỳ của khoá học hiện tại; mặc định kỳ của bài học; hiển thị mã kỳ + tên kỳ. Đổi Kỳ sẽ chuyển bài học sang học kỳ mới (đồng bộ tab Bài học của Học kỳ). |
 | REQ10 | Sửa inline | Tên (bắt buộc) và mô tả (không bắt buộc) bài học sửa trực tiếp tại ô; dữ liệu dùng chung với tab Bài học của Học kỳ. |
+| REQ11 | Tab Kiến thức/Kỹ năng | Bảng bài học × loại kiến thức / kỹ năng của trung tâm (ẩn loại không dùng); header dòng 3 `{N} bài`, không badge; không có Excel. |
+| REQ12 | Nguồn tag bài học | Tick ở Trang 2 là nguồn duy nhất của tag Kiến thức / Kỹ năng và badge tab ở Chi tiết bài học; đồng bộ hai chiều với nút `+` / `x` ở tab Thông tin. |
+| REQ13 | Độc lập với cụm | Tick không tạo / xoá / kiểm tra cụm ở S1 / S6; liên kết cụm ↔ bài vẫn lập ở S1 / S6. |
 
 ### 2.4. Ràng buộc
 
-| Role | Xem | Tick / bỏ tick | Đổi Kỳ | Kéo thả | Sửa tên/mô tả |
+| Role | Xem | Tick / bỏ tick (2 tab) | Đổi Kỳ | Kéo thả | Sửa tên/mô tả |
 |---|:---:|:---:|:---:|:---:|:---:|
 | CD | ✅ | ✅ | ✅ | ✅ | ✅ |
 | Role khác | ❌ | ❌ | ❌ | ❌ | ❌ |
@@ -141,3 +175,7 @@ Dữ liệu giả định: phút chuẩn 1 buổi = 90. Cột "Khai giảng" 12 
 | Case 9: API lưu lỗi | High |  | CD; cột Chủ đề giao tiếp 04/05 | **Given** mất mạng/API lỗi<br>**When** tick thêm 1 ô; (thử tương tự với đổi Kỳ, kéo thả, sửa tên)<br>**Then** quan sát | - Thao tác được hoàn tác về trạng thái cũ<br>- Header (`04/05 [ 200 PHÚT ]`), badge (Chưa đủ buổi), Thời gian và màu về giá trị cũ<br>- Hiện thông báo lỗi |
 | Case 10: Phân quyền | High |  | Role khác CD | **Given** đăng nhập role không phải CD<br>**When** xem menu và truy cập trực tiếp đường dẫn S4<br>**Then** quan sát | - Không có menu Lộ Trình (S4)<br>- Truy cập trực tiếp không được, không xem/sửa được dữ liệu |
 | Case 11: Cột có tổng buổi = 0 | Low |  | CD; S2 có buổi học Số buổi = 0 | **Given** mở S4<br>**When** quan sát cột, tick 1 ô; sửa S2 thành 1 buổi và bỏ tick<br>**Then** xem badge | - `00/00`: `Đủ buổi` (xanh)<br>- `01/00`: `Quá buổi` (đỏ)<br>- `00/01`: `Chưa đủ buổi` (cam) |
+| Case 12: Tab Kiến thức/Kỹ năng – cột theo trung tâm | High | Smoke | CD; khoá Betreux (tiếng Đức) và khoá Đắc Nhân (tiếng Trung) | **Given** mở S4 tab `Kiến thức/Kỹ năng`<br>**When** xem cột ở từng khoá; gửi API tick loại `Hán tự` cho khoá tiếng Đức<br>**Then** xem cột và kết quả API | - Khoá Đức: `Từ vựng`, `Ngữ pháp`, `Mẫu câu`, rồi `Nghe`, `Đọc`, `Viết`, `Nói`; không có `Hán tự`, `Kanji`, `Phát âm`<br>- Khoá Trung có thêm `Hán tự (Hanzi)`, `Phát âm`<br>- Header 3 dòng, dòng 3 `0 bài` khi chưa tick, không badge<br>- API tick `Hán tự` ở khoá Đức bị từ chối (EX11) |
+| Case 13: Tick loại → tag ở Chi tiết bài học | High | Smoke | CD; Bài 1 chưa tick loại nào, chưa có cụm liên kết | **Given** tab `Kiến thức/Kỹ năng`<br>**When** tick `Từ vựng`, `Ngữ pháp`, `Mẫu câu`, `Nghe` cho Bài 1; mở Chi tiết Bài 1<br>**Then** xem header S4 và bài học | - Header các cột tăng `1 bài`<br>- Tab Thông tin: Kiến thức `Từ vựng`, `Ngữ pháp`, `Mẫu câu`; Kỹ năng `Nghe`<br>- Badge tab Kiến thức `03`, Kỹ năng `01`<br>- Tab Kiến thức loại `Từ vựng` (chưa có cụm): trạng thái trống kèm hướng dẫn (EX10) |
+| Case 14: Đồng bộ hai chiều, độc lập với cụm | High |  | CD; Bài 1 đã tick `Từ vựng`, có cụm Từ vựng liên kết ở S1 | **Given** mở Chi tiết Bài 1<br>**When** (a) bấm `x` gỡ tag `Từ vựng`, `+` thêm `Đọc`, "Lưu thay đổi", mở lại S4; (b) ở S4 tick lại `Từ vựng`<br>**Then** xem S4, bài học, S1 | - (a) Ô (Bài 1, Từ vựng) bỏ tick, (Bài 1, Đọc) có tick; header cập nhật<br>- Cụm Từ vựng ở S1 vẫn liên kết Bài 1, không bị xoá<br>- (b) Tag `Từ vựng` hiện lại ở bài học |
+| Case 15: Tick lỗi và khoá Công khai | Medium |  | CD; (a) API lỗi; (b) khoá `Công Khai` | **Given** tab `Kiến thức/Kỹ năng`<br>**When** (a) tick 1 ô khi mất mạng; (b) mở khoá Công khai, thử tick, gửi API tick<br>**Then** quan sát | - (a) Ô hoàn tác, header về số cũ, Toast `Có Lỗi Xảy Ra`<br>- (b) Ô tick disable, chỉ xem; API bị từ chối |

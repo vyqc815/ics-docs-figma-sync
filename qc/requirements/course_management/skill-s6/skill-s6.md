@@ -7,7 +7,7 @@
 > thẳng vào thư viện, mọi khoá đang dùng bản ghi đó thấy nội dung mới.
 >
 > **Tổ chức theo cụm, cụm liên kết bài học:** giống Kiến thức (S1), mỗi tab chia bài kỹ năng theo **cụm** (panel Cụm bên
-> phải); số cụm mỗi tab sinh từ Số buổi của loại đó ở Tổng quan (S2). Mỗi cụm liên kết **đúng 1 bài học**, mỗi bài học
+> phải); cụm do CD tạo (`Thêm cụm mới` hoặc Chia cụm bằng AI, số cụm mặc định theo Số buổi của loại ở Tổng quan (S2)). Mỗi cụm liên kết **đúng 1 bài học**, mỗi bài học
 > nhận **tối đa 1 cụm mỗi loại** (BE bắt trùng). Chi tiết bài học chỉ **hiển thị** bài của cụm đã liên kết, không chọn
 > từng bài (xem khu vực Cụm liên kết với Chi tiết bài học).
 >
@@ -38,7 +38,7 @@
 |---|---|
 | Tab kỹ năng | 4 tab cố định `Nghe`, `Đọc`, `Viết`, `Nói`, mọi trung tâm giống nhau; mặc định mở `Nghe`. Mỗi tab có bộ cụm riêng; đổi tab thì panel Cụm đổi theo tab và về `Tất cả cụm`. |
 | `Khoá học:` | Tên khoá học (vd `Nhập Môn Tiếng Trung (HSK1)`); không gắn học kỳ / bài học. |
-| Toolbar tiêu đề | Tên tab (hoặc tên cụm đang chọn) + badge `N bài nghe` / `N bài đọc` + badge cam `N thiếu thông tin` (ẩn khi 0); đang chọn cụm thì hai badge tính trong cụm. Nút tab Nghe: `Transcript AI`, `Soát lỗi AI`, `Preview mobile`, `+ Thêm bài nghe`. Nút tab Đọc: `Preview mobile`, `+ Thêm bài đọc`; `Tạo câu hỏi bằng AI`, `Soát lỗi bằng AI` nằm ở hàng tìm kiếm. |
+| Toolbar tiêu đề | Tên tab (hoặc tên cụm đang chọn) + badge `N bài nghe` / `N bài đọc` + badge cam `N thiếu thông tin` (ẩn khi 0); đang chọn cụm thì hai badge tính trong cụm. Nút tab Nghe: `Transcript AI`, `Soát lỗi AI`, `Preview mobile`, `+ Thêm bài nghe`. Nút tab Đọc: `Preview mobile`, `+ Thêm bài đọc`; `Tạo câu hỏi bằng AI`, `Soát lỗi bằng AI` nằm ở hàng tìm kiếm. `Tạo câu hỏi bằng AI` chạy Generate bằng AI của bộ câu hỏi cho nhiều bài (xem khu vực Tạo câu hỏi bằng AI). |
 | Hàng tìm kiếm | Ô `Tìm bài nghe, nội dung…` / `Tìm bài đọc, nội dung…`; `Sắp xếp`, `Trạng thái`. Lọc theo cụm bằng panel Cụm (không có lọc `Bài học`). |
 | Nhập nhanh | Dòng cuối bảng `Nhập nhanh bài nghe — nhấn Enter để thêm` (xem khu vực Nhập nhanh). |
 | Footer | `Hiển thị a–b trong N bài nghe`, phân trang 50 dòng / trang, số trang, `…`, Trước / Sau. |
@@ -118,7 +118,7 @@
 | `STT`, checkbox, `Cụm`, menu `⋮` | Như bảng Nghe; menu `⋮` thay `Transcript AI` bằng `Tạo câu hỏi bằng AI`. |
 | `Bài đọc` | Tên bài (ngôn ngữ đích) + mô tả tiếng Việt, như cột `Bài nghe`. |
 | `Đoạn văn` | Tối đa 2 dòng, dài thì cắt `…`; chưa có hiện `— chưa có đoạn văn —` màu cam. |
-| Cột khác | `Audio đọc mẫu`, `Số câu hỏi`, `Từ vựng liên quan` (số từ), `Nâng cao`, `Trạng thái`, `Cụm`; bảng cuộn ngang, ghim như bảng Nghe. |
+| Cột khác | `Audio đọc mẫu`, `Số câu hỏi` (số câu trong tab Câu hỏi của bài), `Từ vựng` (số từ của bài), `Nâng cao`, `Trạng thái`, `Cụm`; bảng cuộn ngang, ghim như bảng Nghe. |
 
 **Điểm cần lưu ý:**
 
@@ -141,25 +141,26 @@
 
 - Panel bên phải của mỗi tab quản lý cụm của **kỹ năng đó** (Nghe, Đọc, Viết, Nói mỗi tab một bộ cụm riêng), giống
   Panel Cụm của Kiến thức (S1): xem số bài mỗi cụm, chọn cụm để lọc bảng, đổi tên cụm, liên kết cụm với bài học,
-  Chia cụm bằng AI; số cụm sinh từ Số buổi của loại ở Tổng quan (S2). **UI cần bổ sung** (Figma đang vẽ panel `Học kỳ & bài học`).
-  Chia cụm bằng AI. **UI cần bổ sung** (Figma đang vẽ panel `Học kỳ & bài học`).
+  thêm / xoá cụm, Chia cụm bằng AI. Cụm **chỉ được tạo** khi CD `Thêm cụm mới` hoặc áp dụng Chia cụm bằng AI; Tổng quan (S2)
+  chỉ cho **số cụm mặc định** trong popup Chia cụm bằng AI, không tự tạo / xoá cụm. **UI cần bổ sung** (Figma đang vẽ panel `Học kỳ & bài học`).
 
 **Giải thích thành phần:**
 
 | Thành phần | Yêu cầu |
 |---|---|
-| `Tất cả cụm` + badge `N cụm` | Tiêu đề panel và số cụm hiện có; chọn để xem mọi bài của tab (mặc định). |
-| `Số cụm` | **Chỉ đọc**, = tổng `Số buổi` của các dòng Nội dung buổi học có Loại = kỹ năng của tab ở Tổng quan (S2); ghi chú `Theo Tổng quan (S2) · N buổi`. Hệ thống tự tạo đủ cụm rỗng `Chủ đề 1` … `Chủ đề N`; CD đổi tên, chia bài, liên kết bài học. Chưa có buổi thì panel hiện `Chưa có cụm. Nhập Số buổi cho loại <Nghe> ở Tổng quan (S2) để tạo cụm.` |
-| `Chia cụm bằng AI` | AI đề xuất chia các bài của tab vào cụm theo chủ đề nội dung; kết quả chờ duyệt, CD áp dụng hoặc bỏ, theo cùng quy tắc popup Chia cụm bằng AI của S1. |
-| Dòng cụm | `NN. <tên cụm>` + badge số bài của cụm (0 hiện xám) + chip bài học đã liên kết (`HK I · Bài 3`) hoặc nhãn cam `Chưa liên kết`; chọn để lọc bảng trái, tiêu đề bảng đổi thành tên cụm. Menu ⋮: `Đổi tên`, `Liên kết bài học`. Không có `Xoá cụm`. |
+| `Tất cả cụm` + badge `N cụm` | Tiêu đề panel và số cụm hiện có; chọn để xem mọi bài của tab (mặc định). Không có ô nhập Số cụm ở panel. Tab chưa có cụm: panel hiện `Chưa có cụm. Thêm cụm mới hoặc Chia cụm bằng AI.` |
+| `Số cụm` (trong popup Chia cụm bằng AI) | **Bắt buộc**, số nguyên ≥ 1 và ≥ số cụm hiện có của tab. Điền sẵn tổng `Số buổi` của các dòng Nội dung buổi học có loại kỹ năng của tab ở Tổng quan (S2) (một dòng chọn nhiều loại thì tính cho mỗi loại), kèm ghi chú `Theo Tổng quan (S2) · N buổi`; CD sửa được. Nhỏ hơn số cụm hiện có: lỗi `Số cụm không được nhỏ hơn số cụm hiện có (K). Xoá bớt cụm ở panel Cụm trước.` |
+| `Chia cụm bằng AI` | AI đề xuất chia các bài của tab vào đúng `Số cụm` cụm theo chủ đề nội dung (cụm cũ giữ, thiếu thì tạo thêm cụm nhãn `Cụm mới`); kết quả chờ duyệt, CD áp dụng hoặc bỏ, theo cùng quy tắc popup Chia cụm bằng AI của S1. |
+| Dòng cụm | `NN. <tên cụm>` + badge số bài của cụm (0 hiện xám) + chip bài học đã liên kết (`HK I · Bài 3`) hoặc nhãn cam `Chưa liên kết`; chọn để lọc bảng trái, tiêu đề bảng đổi thành tên cụm. Menu ⋮: `Đổi tên`, `Liên kết bài học`, `Xoá cụm`. |
 | Popup `Liên kết bài học` | Như S1: cây `<kỳ> › Bài N`, radio chọn đúng 1 bài; bài đã có cụm **cùng loại kỹ năng** mờ kèm `Đã liên kết: <cụm>`; `Bỏ liên kết`; `Huỷ` / `Lưu`. |
 | `Chưa phân cụm` | Badge cam = số bài chưa thuộc cụm nào; chọn để lọc. |
-| `Thêm cụm mới` | **Bỏ**: số cụm chỉ do S2 quyết định. |
+| `Thêm cụm mới` | Ô nhập cuối danh sách cụm: gõ tên + Enter → tạo cụm rỗng ở cuối (tên trống thì mặc định `Chủ đề {k}`). |
+| Popup `Xoá cụm` | Như S1: `Cụm <tên> có N bài{, đang liên kết <kỳ> · Bài k}. Bài sẽ về Chưa phân cụm, bài học không còn bài của cụm này.`; `Huỷ` / `Xoá cụm`. Bài không bị gỡ khỏi khoá. |
 
 **Điểm cần lưu ý:**
 
 - Một bài kỹ năng thuộc **tối đa 1 cụm** của tab đó (hoặc `Chưa phân cụm`); số đếm cập nhật ngay sau thêm / gỡ bài, thêm / gỡ cụm.
-- Không xoá cụm tại S6; bớt cụm bằng cách giảm Số buổi của loại ở S2 (chỉ được khi cụm cuối rỗng và chưa liên kết).
+- Xoá cụm: bài trong cụm về `Chưa phân cụm`, liên kết cụm ↔ bài học bị bỏ (tag loại ở bài học theo S4 không đổi). Đổi Số buổi ở S2 không tạo / xoá cụm.
 - **Liên kết bài học:** một cụm ↔ đúng 1 bài học; một bài học nhận tối đa 1 cụm Nghe, 1 cụm Đọc, 1 cụm Viết, 1 cụm Nói.
   BE kiểm tra trùng khi lưu (EX13); đổi bài = gỡ liên kết cũ. Thêm / gỡ / chuyển bài giữa cụm không cần cảnh báo, bài học
   phản ánh cụm ngay.
@@ -173,10 +174,12 @@
 |---|---| --- |---|---|---|---|---|
 | Case 10: Lọc theo cụm | High | Smoke | Flow 1 / REQ06 | CD | Cụm `Chào hỏi` có 3 bài nghe | **Given** bấm `Chào hỏi` ở panel Cụm<br>**When** bảng lọc<br>**Then** 3 bài, tiêu đề bảng `Chào hỏi` + `3 bài nghe` | - Footer `1–3 trong 3` |
 | Case 11: Lọc Chưa phân cụm | High |  | REQ06 | CD | 40 bài chưa thuộc cụm | **Given** bấm `Chưa phân cụm`<br>**When** bảng lọc<br>**Then** 40 bài, cột Cụm hiện `Chưa phân cụm` | - Badge `40` cam |
-| Case 12: Cụm sinh từ S2 | High | Smoke | Flow 8 / REQ05 | CD | S2 có dòng Loại `Nghe` tổng 5 buổi | **Given** mở tab Nghe<br>**When** xem panel Cụm<br>**Then** `Chủ đề 1` … `Chủ đề 5`, Số cụm chỉ đọc `5` | - Tab Đọc không bị tạo cụm |
+| Case 12: Không tự sinh cụm từ S2 | High | Smoke | Flow 8 / REQ05 | CD | Tab Nghe chưa có cụm; S2 có dòng Loại `Nghe` tổng 5 buổi | **Given** mở tab Nghe<br>**When** xem panel Cụm; sửa Số buổi ở S2 thành 8, quay lại<br>**Then** panel `0 cụm`, hiện `Chưa có cụm. Thêm cụm mới hoặc Chia cụm bằng AI.` | - Không có ô Số cụm ở panel<br>- Đổi S2 không tạo / xoá cụm |
 | Case 12a: Liên kết cụm với bài học | High | Smoke | Flow 8 / REQ05 | CD | Cụm `Chào hỏi`, Bài 1 chưa có cụm Nghe | **Given** ⋮ cụm › `Liên kết bài học`, chọn `HK I · Bài 1`, Lưu<br>**When** lưu xong<br>**Then** chip `HK I · Bài 1` trên cụm; Chi tiết Bài 1 tab Kỹ năng hiện 3 bài nghe | - Bài 1 vẫn liên kết thêm được cụm Đọc |
-| Case 12c: Bài đã có cụm cùng loại | High |  | EX13 / REQ05 | CD | Bài 1 đã liên kết cụm Nghe `Chào hỏi` | **Given** cụm `Gia đình` › `Liên kết bài học`<br>**When** xem Bài 1; gửi request trực tiếp<br>**Then** Bài 1 mờ `Đã liên kết: Chào hỏi`; API từ chối | - Không có `Xoá cụm` trong menu |
-| Case 12b: Chia cụm bằng AI | Medium |  | Flow 8 / REQ05 / REQ11 | CD | 20 bài chưa phân cụm | **Given** bấm `Chia cụm bằng AI`<br>**When** AI đề xuất, CD áp dụng<br>**Then** bài vào cụm theo đề xuất | - Bỏ đề xuất thì cụm không đổi |
+| Case 12c: Bài đã có cụm cùng loại | High |  | EX13 / REQ05 | CD | Bài 1 đã liên kết cụm Nghe `Chào hỏi` | **Given** cụm `Gia đình` › `Liên kết bài học`<br>**When** xem Bài 1; gửi request trực tiếp<br>**Then** Bài 1 mờ `Đã liên kết: Chào hỏi`; API từ chối | - Dữ liệu không đổi |
+| Case 12b: Chia cụm bằng AI, Số cụm mặc định theo S2 | Medium |  | Flow 8 / REQ05 / REQ11 | CD | 20 bài nghe chưa phân cụm, chưa có cụm; S2 có 2 dòng chọn `Nghe` (3 + 2 buổi) | **Given** bấm `Chia cụm bằng AI`<br>**When** xem ô `Số cụm`; giữ `5`, tạo đề xuất, áp dụng<br>**Then** tạo 5 cụm, bài vào cụm theo đề xuất | - Ô điền sẵn `5`, ghi chú `Theo Tổng quan (S2) · 5 buổi`<br>- Nhập `0` thì nút tạo đề xuất mờ<br>- Bỏ đề xuất thì cụm không đổi |
+| Case 12d: Thêm cụm tay | Medium |  | Flow 8 / REQ05 | CD | Tab Đọc có 2 cụm | **Given** ô `Thêm cụm mới`<br>**When** gõ `Mua sắm` + Enter; Enter với ô trống<br>**Then** thêm cụm `Mua sắm`, rồi `Chủ đề 4` ở cuối | - Badge `4 cụm`, cụm mới `Chưa liên kết` |
+| Case 12e: Xoá cụm | Medium |  | Flow 8 / REQ05 | CD | Cụm Nghe `Gia đình` có 3 bài, liên kết `HK I · Bài 2` | **Given** ⋮ cụm › `Xoá cụm`<br>**When** xem popup; bấm `Xoá cụm`<br>**Then** cụm bị xoá | - Popup nêu 3 bài và Bài 2<br>- 3 bài về `Chưa phân cụm`, vẫn trong khoá<br>- Chi tiết Bài 2 tab Kỹ năng loại Nghe hiện chưa liên kết; tag `Nghe` (theo S4) giữ nguyên |
 
 ---
 
@@ -224,6 +227,8 @@
 **Mô tả:**
 
 - Mở từ tên bài hoặc menu `⋮ › Mở chi tiết`. Drawer trượt từ phải phủ panel Cụm; dòng đang mở tô sáng.
+- Drawer có **2 tab** ở đầu: `Thông tin` (các field dưới, mặc định) và `Câu hỏi` kèm badge số câu (xem khu vực Chi tiết
+  bài — Tab Câu hỏi).
 - Lưu = sửa **bản ghi thư viện**; mọi khoá dùng bài này thấy nội dung mới.
 
 **Giải thích field:**
@@ -237,7 +242,7 @@
 | `Nâng cao` | Toggle `Không` (mặc định) / `Có`; cùng ý nghĩa field Nâng cao của Kiến thức (S1): `Có` = bài nâng cao, không đẩy lên bước học chính. (**UI cần bổ sung**) |
 | `Âm thanh` | Trình phát `00:00 / mm:ss`; `Tải lên` / `Thay` / `Xoá`; chỉ `.mp3`, tối đa 50MB (theo `file_limits.json`, **khác Figma** ghi `MP3 / WAV · 25 MB`). |
 | `Kịch bản · N lượt` | Danh sách lượt thoại theo thứ tự: nhãn người nói (`A`, `B`…), câu gốc, `Phiên âm ·`, `Dịch ·`, mốc `start – end` theo audio (`mm:ss.s`, **UI cần bổ sung**). Thêm / sửa / xoá / kéo thả lượt; lượt có giá trị AI chờ duyệt viền nét đứt cam với `✓ Duyệt` / `↺ Hoàn tác`. |
-| `Câu hỏi` | Tóm tắt `N câu hỏi · <loại> k · …` và `Mở chi tiết ›` dẫn sang màn Chi tiết câu hỏi của Thư viện bài tập (`CD-KH-070301` Listening); chưa có câu hiện `0 câu hỏi` màu cam. |
+| Tab `Câu hỏi N` | Badge = số câu trong bộ câu hỏi của bài; 0 câu hiện badge cam `0`. Bấm để mở tab Câu hỏi ngay trong drawer (không chuyển sang Thư viện bài tập). |
 | Footer | Ghi chú `Lưu = sửa bản ghi thư viện; mọi khoá dùng bài này thấy nội dung mới`; `Huỷ`, `Lưu`. |
 
 **Điểm cần lưu ý:**
@@ -255,7 +260,7 @@
 | Case 17: Tên trống không lưu | High |  | EX02 / REQ04 | CD | Drawer đang mở | **Given** xoá Tên bài<br>**When** bấm `Lưu`<br>**Then** viền đỏ Tên bài, không lưu | - Không có Toast thành công |
 | Case 18: Tải file sai loại / quá dung lượng | High |  | EX03 / REQ03 | CD | File `.wav` 10MB và `.mp3` 60MB | **Given** tải từng file<br>**When** kiểm tra<br>**Then** cả hai bị từ chối, Toast `Cảnh Báo` nêu lý do | - Không thay file cũ |
 | Case 19: Đóng khi có thay đổi | Medium |  | REQ07 | CD | Đã sửa chưa lưu | **Given** bấm `×`<br>**When** popup xác nhận<br>**Then** `Huỷ` giữ drawer, `Bỏ thay đổi` đóng | - Dữ liệu không đổi |
-| Case 20: Mở chi tiết câu hỏi | Medium |  | Flow 5 / REQ08 | CD | Bài có 5 câu | **Given** bấm `Mở chi tiết ›`<br>**When** điều hướng<br>**Then** mở màn Chi tiết câu hỏi Listening của bài | - Quay lại giữ drawer |
+| Case 20: Mở tab Câu hỏi | Medium |  | Flow 5 / Flow 12 / REQ08 | CD | Bài có 5 câu | **Given** drawer bài nghe<br>**When** bấm tab `Câu hỏi 5`<br>**Then** hiện bộ câu hỏi của bài ngay trong drawer | - Quay lại tab `Thông tin` giữ dữ liệu đang sửa |
 | Case 20a: Lưu drawer thất bại | Medium |  | EX09 | CD | Drawer bài nghe đang mở, giả lập mất mạng | **Given** sửa Mô tả<br>**When** bấm `Lưu`<br>**Then** Toast `Có Lỗi Xảy Ra` | - Dữ liệu giữ giá trị cũ |
 
 ---
@@ -270,23 +275,74 @@
 
 | Field | Yêu cầu |
 |---|---|
-| `Tên bài` *, `Mô tả` *, `Cụm`, `Nâng cao`, `Câu hỏi`, Footer | Như drawer bài nghe; `Mở chi tiết ›` dẫn sang `CD-KH-070302` Reading. |
+| `Tên bài` *, `Mô tả` *, `Cụm`, `Nâng cao`, tab `Câu hỏi`, Footer | Như drawer bài nghe. |
 | `Đoạn văn` * | Nhiều dòng, ngôn ngữ đích; trống thì bài tính thiếu thông tin. Có thể tách câu: mỗi câu có `Phiên âm ·`, `Dịch ·` (tuỳ chọn, AI điền được). |
 | `Audio đọc mẫu` | Không bắt buộc; `.mp3` ≤ 50MB; có file thì app học viên phát kèm đoạn văn. |
-| `Từ vựng liên quan` | Chọn nhiều từ trong Kiến thức (S1) Từ vựng của chính khoá; chip có `×`; dùng để app tô sáng và tra nhanh trong đoạn văn. |
+| `Từ vựng · N từ` | **Danh sách từ riêng của bài đọc** (không chọn từ S1): bảng cột `Từ` *, `Phiên âm`, `Loại từ`, `Nghĩa` *, `Ví dụ` (+ phiên âm, nghĩa ví dụ); `+ Thêm từ` thêm dòng cuối, sửa tại chỗ, `⋮ › Xoá`, kéo thả đổi thứ tự; `Import Excel` ngay trong khối (mọi dòng hợp lệ thêm vào bài đang mở). Dùng để app tô sáng và tra nhanh trong đoạn văn. |
 
 **Điểm cần lưu ý:**
 
-- Từ vựng liên quan chỉ là tham chiếu, sửa từ ở S1 thì đoạn văn thấy nội dung mới; gỡ từ khỏi khoá ở S1 thì tự mất
-  khỏi danh sách này.
+- Từ vựng của bài đọc thuộc **bản ghi thư viện** của bài, không nối với Từ vựng S1: sửa / gỡ từ ở S1 không ảnh hưởng,
+  sửa từ của bài không tạo từ ở S1. Từ trùng với từ S1 vẫn được (không bắt trùng).
+- Dòng thiếu `Từ` hoặc `Nghĩa` viền đỏ, không lưu dòng đó. Thêm / sửa / xoá từ lưu cùng nút `Lưu` của tab Thông tin.
+- Import từ vựng trong drawer: cột `word` *, `mean` *, `phonetic`, `type`, `furigana`, `example`, `example_phonetic`,
+  `example_mean` (sheet đầu, hoặc sheet `reading_vocabulary` nếu có); cột `id`, `reading_lesson_id` bỏ qua; dòng thiếu
+  field bắt buộc bị bỏ, báo theo số dòng; từ thêm vào cuối danh sách của bài đang mở.
 
 #### Testcase — Drawer Chi tiết bài đọc
 
 | Tên testcase | Priority | Loại test | Scenario | Role | Pre-condition | Given / When / Then | Expected Result |
 |---|---| --- |---|---|---|---|---|
 | Case 21: Sửa đoạn văn và lưu | High | Smoke | Flow 5 / REQ04 | CD | Bài đọc 05 chưa có đoạn văn | **Given** nhập đoạn văn, bấm `Lưu`<br>**When** lưu xong<br>**Then** bảng hiện đoạn văn, bài hết thiếu thông tin | - Badge thiếu giảm 1 |
-| Case 22: Gắn từ vựng liên quan | Medium |  | REQ04 | CD | S1 có từ `爸爸` | **Given** chọn `爸爸` ở Từ vựng liên quan<br>**When** lưu<br>**Then** chip `爸爸` hiện trong drawer | - Gỡ `爸爸` ở S1 thì chip biến mất |
+| Case 22: Thêm từ vựng của bài đọc | Medium |  | REQ04 | CD | Bài đọc 06 chưa có từ | **Given** `+ Thêm từ`, nhập `多少钱`, nghĩa `bao nhiêu tiền`<br>**When** bấm `Lưu`<br>**Then** khối `Từ vựng · 1 từ`, cột `Từ vựng` trên bảng = 1 | - S1 không có thêm từ `多少钱`<br>- Dòng thiếu Nghĩa viền đỏ, không lưu |
+| Case 22a: Import từ vựng vào bài đang mở | Medium |  | REQ04 / EX14 | CD | File 6 dòng, cột `reading_lesson_id` là mã bài khác; dòng 3 thiếu `mean` | **Given** drawer bài đọc 06, khối Từ vựng › `Import Excel`<br>**When** chọn file<br>**Then** 5 từ thêm vào bài 06 | - Cột id bỏ qua<br>- Báo `Dòng 3: thiếu mean` |
 | Case 23: Audio đọc mẫu không bắt buộc | Low |  | REQ04 | CD | Bài đọc có đoạn văn, không audio | **Given** xem bảng<br>**When** render<br>**Then** bài không tính thiếu thông tin | - Preview phát được khi có audio |
+
+---
+
+### Chi tiết bài — Tab Câu hỏi (bộ câu hỏi của bài kỹ năng)
+
+**Mô tả:**
+
+- Mọi bài kỹ năng (Nghe, Đọc; Viết / Nói khi viết sau) có tab `Câu hỏi` trong drawer chi tiết, là **bộ câu hỏi đầy đủ như
+  BTVN & Kiểm tra**, dùng lại nguyên thành phần của [Bài tập về nhà và Kiểm tra](../homework-test/homework-test.md): thẻ
+  tổng quan, bảng câu hỏi (8 loại câu, câu hỏi con, đáp án, điểm, menu `⋮`), nhập nhanh cuối bảng, popup Chọn loại câu,
+  popup Soạn câu hỏi, Import / Export Excel, Soát lỗi bằng AI, Generate bằng AI, Preview mobile. Quy tắc giống tab Câu hỏi
+  của mục Kiến thức ([S1](../knowledge-s1/knowledge-s1.md)).
+- Thay cho link `Mở chi tiết ›` sang màn Chi tiết câu hỏi của Thư viện bài tập (`CD-KH-070301` / `CD-KH-070302`) trước đây.
+- Câu trắc nghiệm A–D cũ của bài (`MiniQuestionModel`: câu, a–d, đáp án, giải thích) **gộp vào bộ mới** thành câu loại
+  `Trắc nghiệm` (4 đáp án, đáp án đúng theo `answer`, `explain` → giải thích), không còn danh sách câu riêng.
+- Bộ câu hỏi thuộc **bản ghi thư viện** của bài: mọi khoá dùng bài thấy cùng bộ câu. App học viên dùng bộ này ở chế độ
+  **Luyện tập** (không lưu điểm); bài chưa có câu thì app tự sinh như cũ (xem [App học viên – Kỹ năng](../../student_app/skill/skill.md)).
+
+**Khác với BTVN & Kiểm tra:**
+
+| Thành phần | Yêu cầu |
+|---|---|
+| Cây kỳ / bài | Không có; bộ câu hỏi là của bài kỹ năng đang mở. |
+| Cột / field `Kiến thức / Kỹ năng` | Tự gắn bài đang mở, **chỉ đọc**; bộ lọc Kiến thức / Kỹ năng ẩn. |
+| Generate bằng AI | Không có bước chọn cụm; AI sinh câu theo kịch bản (Nghe) hoặc đoạn văn + từ vựng (Đọc) của bài + prompt. Bài Nghe chưa có kịch bản / bài Đọc chưa có đoạn văn → nút mờ, tooltip `Cần kịch bản / đoạn văn để tạo câu hỏi`. |
+| Thẻ tổng quan | Không có thời gian làm bài. |
+| Export | Tên file `<Khoá học>_<Kỹ năng>_<tên bài>.xlsx`, cột như BTVN. |
+| Import | Mọi dòng hợp lệ thêm vào cuối bộ câu hỏi **của bài đang mở**; cột `id`, `lesson_id`, `listening_lesson_id` / `reading_lesson_id` (nếu có) **bỏ qua**; dòng thiếu `STT`, `Câu hỏi`, `Loại câu` bị bỏ, báo theo số dòng; câu con nối câu cha theo `STT` dạng `7.1`. File cũ dạng sheet `listening_question` / `reading_question` (`question`, `a`–`d`, `answer`, `explain`) vẫn đọc được, mỗi dòng thành 1 câu `Trắc nghiệm`. |
+
+**Điểm cần lưu ý:**
+
+- Thêm / sửa / xoá câu lưu ngay theo từng thao tác (như BTVN), không qua nút `Lưu` của tab Thông tin.
+- Khoá `Công Khai` / `Vô hiệu`: tab chỉ đọc (Export vẫn dùng được).
+- Gỡ bài khỏi khoá **không** xoá bộ câu hỏi; popup gỡ ghi thêm `Bài có N câu hỏi, vẫn giữ trong thư viện.`
+- Bài **thiếu thông tin** khi bộ câu hỏi 0 câu (câu AI chưa duyệt không tính).
+
+#### Testcase — Tab Câu hỏi của bài kỹ năng
+
+| Tên testcase | Priority | Loại test | Scenario | Role | Pre-condition | Given / When / Then | Expected Result |
+|---|---| --- |---|---|---|---|---|
+| Case 23a: Câu trắc nghiệm cũ gộp vào bộ mới | High | Smoke | Flow 12 / REQ08 | CD | Bài đọc 06 có 3 câu a–d cũ | **Given** mở drawer bài 06<br>**When** bấm tab `Câu hỏi 3`<br>**Then** 3 câu loại `Trắc nghiệm`, đáp án và giải thích giữ nguyên | - Không còn link `Mở chi tiết ›` |
+| Case 23b: Thêm câu và câu con | High | Smoke | Flow 12 / REQ08 | CD | Bài nghe 01 chưa có câu | **Given** tab Câu hỏi trống<br>**When** thêm 1 câu `Điền từ` và 1 câu hỏi con có 2 câu con<br>**Then** bộ có 2 câu, dòng `2.1`, `2.2` | - Badge `Câu hỏi 2`<br>- Cột Kiến thức / Kỹ năng hiện tên bài, không sửa được |
+| Case 23c: Import câu hỏi không theo id | High |  | Flow 12 / REQ08 / EX14 | CD | File 8 dòng, cột `reading_lesson_id` là mã bài khác; dòng 5 thiếu `Loại câu` | **Given** tab Câu hỏi bài đọc 06<br>**When** Import<br>**Then** 7 câu thêm vào bài 06 | - Báo `Dòng 5: thiếu Loại câu`<br>- Toast `Đã import 7 câu hỏi.` |
+| Case 23d: Import file sheet reading_question cũ | Medium |  | Flow 12 / REQ08 | CD | File có sheet `reading_question` 4 dòng a–d | **Given** tab Câu hỏi bài đọc<br>**When** Import<br>**Then** 4 câu `Trắc nghiệm` | - Đáp án đúng theo cột `answer` |
+| Case 23e: Generate theo bài | Medium |  | Flow 12 / REQ11 | CD | Bài nghe có kịch bản 6 lượt | **Given** Generate bằng AI, Số câu 5<br>**When** Generate, thêm các dòng đã chọn<br>**Then** 5 câu về nội dung kịch bản | - Bài chưa có kịch bản: nút mờ |
+| Case 23f: Khoá Công khai và gỡ bài | Medium |  | REQ08 / REQ09 | CD | (a) khoá `Công Khai`; (b) khoá `Nháp`, bài có 3 câu | **Given** mở tab Câu hỏi; gỡ bài khỏi khoá<br>**When** quan sát<br>**Then** (a) chỉ đọc; (b) popup ghi `Bài có 3 câu hỏi, vẫn giữ trong thư viện.` | - Thêm lại bài từ thư viện thấy đủ 3 câu |
 
 ---
 
@@ -310,7 +366,7 @@
 
 **Điểm cần lưu ý:**
 
-- Popup không tạo cụm mới (cụm sinh theo Số buổi ở Tổng quan (S2)).
+- Popup không tạo cụm mới (tạo cụm ở panel Cụm › `Thêm cụm mới` hoặc qua Chia cụm bằng AI).
 - Bài bị gỡ khỏi cụm thì về `Chưa phân cụm`, vẫn còn trong khoá, không xuất hiện ở bài học nào.
 - Sau khi lưu, bài có thể biến mất khỏi bảng nếu đang lọc theo cụm vừa gỡ; Toast nêu rõ kết quả.
 
@@ -520,7 +576,7 @@
 | Thành phần | Yêu cầu |
 |---|---|
 | Toolbar | Badge `0 bài nghe`; nút AI, `Preview mobile`, ô tìm, bộ lọc mờ; `+ Thêm bài nghe` vẫn bật. |
-| Panel Cụm | Mọi badge 0; vẫn tạo cụm được bằng `Số cụm`. |
+| Panel Cụm | Mọi badge 0; vẫn tạo cụm được bằng `Thêm cụm mới` hoặc Chia cụm bằng AI. |
 
 **Điểm cần lưu ý:**
 
@@ -541,8 +597,9 @@
 - `Export Excel` tải bài của tab ra `.xlsx`; `Import Excel` thêm bài từ `.xlsx` vào khoá (**UI cần bổ sung**: menu, popup
   kết quả). File theo cấu trúc file dữ liệu khoá học (vd `HSK1_DATA_v261028.xlsx`): một file chứa nhiều sheet, **mỗi tab
   kỹ năng chỉ đọc đúng các sheet của kỹ năng đó**, bỏ qua mọi sheet khác (`vocabulary`, `grammar`, `btvn`, `lesson`…).
-- **Không có cột bài học:** cột `lesson_id` (nếu có trong file) bị bỏ qua, không gắn bài kỹ năng vào bài học. Bài import
-  vào cụm đang chọn ở panel Cụm; đang ở `Tất cả cụm` / `Chưa phân cụm` thì vào `Chưa phân cụm`.
+- **Không cần đúng id (10/11):** cột `lesson_id`, `id` (nếu có) bị bỏ qua, không đối chiếu với dữ liệu hệ thống, không
+  gắn bài kỹ năng vào bài học. Dòng có đủ field bắt buộc thì import; bài import vào cụm đang chọn ở panel Cụm; đang ở
+  `Tất cả cụm` / `Chưa phân cụm` thì vào `Chưa phân cụm`.
 
 **Sheet đọc khi Import tab Nghe (3 sheet):**
 
@@ -550,7 +607,7 @@
 |---|---|---|
 | `listening_lesson` (bắt buộc) | Mỗi dòng = 1 bài nghe | `id` → mã dòng trong file (chỉ để nối sheet, không lưu làm mã bài); `title` → `Tên bài`; `mean` → `Mô tả`. Bỏ qua `lesson_id`. |
 | `listening` | Kịch bản, mỗi dòng = 1 lượt thoại, theo thứ tự dòng | `listening_lesson_id` → bài nghe; `character` → người nói (`A`, `B`…); `sentence` → câu gốc; `phonetic` → `Phiên âm`; `furigana` → phiên âm có chú thích (tiếng Nhật); `mean` → `Dịch`; `start` / `end` → mốc thời gian. Bỏ qua `id`, `_start`, `_end`. |
-| `listening_question` | Câu hỏi của bài nghe | `listening_lesson_id` → bài nghe; `question`, `a`–`d`, `answer` (số thứ tự đáp án đúng 1–4), `explain` → câu hỏi trắc nghiệm của bài (lưu vào bộ câu hỏi Listening của Thư viện bài tập). |
+| `listening_question` | Câu hỏi của bài nghe | `listening_lesson_id` → bài nghe; `question`, `a`–`d`, `answer` (số thứ tự đáp án đúng 1–4), `explain` → 1 câu `Trắc nghiệm` trong tab Câu hỏi của bài. Có cột `question_type` thì theo loại câu đó (8 loại của BTVN), câu con ở sheet `listening_subquestion` (nối `listening_question_id`) nếu có. |
 
 **Sheet đọc khi Import tab Đọc (4 sheet):**
 
@@ -558,23 +615,24 @@
 |---|---|---|
 | `reading_lesson` (bắt buộc) | Mỗi dòng = 1 bài đọc | `id` → mã dòng trong file; `title` → `Tên bài`; `mean` → `Mô tả`; `source` → nguồn (ghi chú). Bỏ qua `lesson_id`. |
 | `reading` | Đoạn văn, mỗi dòng = 1 câu, theo thứ tự dòng | `reading_lesson_id` → bài đọc; `sentence` → câu của đoạn văn; `phonetic` → `Phiên âm`; `furigana` → phiên âm có chú thích; `mean` → `Dịch`. Bỏ qua `id`, `note`. |
-| `reading_question` | Câu hỏi của bài đọc | `reading_lesson_id` → bài đọc; `question`, `image`, `question_type`, `a`–`d`, `answer`, `explain` → câu hỏi (bộ câu hỏi Reading của Thư viện bài tập). |
-| `reading_vocabulary` | Từ vựng liên quan của bài đọc | **Bắt buộc có cột `reading_lesson_id`** → bài đọc; `word`, `phonetic`, `type`, `furigana`, `mean`, `example`, `example_phonetic`, `example_mean` → từ vựng. Từ trùng với Từ vựng S1 của khoá thì nối vào từ đó; chưa có thì tạo từ mới trong S1 của khoá rồi nối. |
+| `reading_question` | Câu hỏi của bài đọc | `reading_lesson_id` → bài đọc; `question`, `image`, `question_type`, `a`–`d`, `answer`, `explain` → câu trong tab Câu hỏi của bài (thiếu / không nhận ra `question_type` thì là `Trắc nghiệm`); câu con ở sheet `reading_subquestion` nếu có. |
+| `reading_vocabulary` | Từ vựng của bài đọc | `reading_lesson_id` → bài đọc trong cùng file; `word` *, `mean` *, `phonetic`, `type`, `furigana`, `example`, `example_phonetic`, `example_mean` → 1 từ trong danh sách `Từ vựng` riêng của bài. **Không nối / không tạo từ ở S1.** Thiếu cột `reading_lesson_id` thì bỏ qua cả sheet, báo `reading_vocabulary: thiếu cột reading_lesson_id, không import từ vựng`; bài đọc vẫn import. |
 
 **Giải thích thành phần:**
 
 | Thành phần | Yêu cầu |
 |---|---|
 | Import — sheet | Thiếu sheet bắt buộc (`listening_lesson` / `reading_lesson`) → báo `Không tìm thấy sheet listening_lesson`, không import. Sheet phụ trống / không có thì bài thiếu phần đó (tính thiếu thông tin), vẫn import. |
-| Import — dòng bắt buộc | Sheet bài gốc: `title`. Sheet phụ: cột nối `listening_lesson_id` / `reading_lesson_id` phải trùng một `id` của sheet bài gốc trong cùng file. Nghe cho phép trống file âm thanh (bài tính thiếu thông tin). |
-| Import — lỗi dữ liệu | Có dòng lỗi → **chặn cả file**, không thêm bài nào; danh sách lỗi theo **sheet + số dòng** (vd `reading_vocabulary dòng 12: thiếu reading_lesson_id`, `listening dòng 40: listening_lesson_id 999 không có trong listening_lesson`). |
-| Import — thành công | Mỗi dòng sheet bài gốc tạo 1 bản ghi thư viện mới `Nháp` (kèm kịch bản / đoạn văn, câu hỏi, từ vựng liên quan), gắn vào khoá theo thứ tự dòng, vào cụm đang chọn; Toast `Thành Công` `Đã import N bài nghe.`; gợi ý Soát lỗi AI. Không tự dò trùng bài. |
+| Import — dòng bắt buộc | Sheet bài gốc: `title`. Sheet phụ: cột nối `listening_lesson_id` / `reading_lesson_id` phải trùng một `id` của sheet bài gốc **trong cùng file** (chỉ để nối sheet, không phải id hệ thống; trống `id` ở sheet bài gốc thì nối theo thứ tự dòng `1, 2, …`). Nghe cho phép trống file âm thanh (bài tính thiếu thông tin). |
+| Import — lỗi dữ liệu | Dòng lỗi **bị bỏ**, các dòng khác vẫn import; popup kết quả liệt kê lỗi theo **sheet + số dòng** (vd `listening_lesson dòng 4: thiếu title`, `listening dòng 40: listening_lesson_id 999 không có trong listening_lesson`). Bài gốc bị bỏ thì các dòng phụ nối vào nó cũng bỏ. Không còn dòng hợp lệ nào → không import, Toast `Cảnh Báo`. |
+| Import — thành công | Mỗi dòng sheet bài gốc tạo 1 bản ghi thư viện mới `Nháp` (kèm kịch bản / đoạn văn, câu hỏi, từ vựng của bài), gắn vào khoá theo thứ tự dòng, vào cụm đang chọn; Toast `Thành Công` `Đã import N bài nghe.` (kèm `, bỏ M dòng lỗi` nếu có); gợi ý Soát lỗi AI. Không tự dò trùng bài. |
 | Export | Toàn bộ bài của tab trong khoá (không theo bộ lọc); tên file `<Khoá học>_<Kỹ năng>.xlsx`; cùng các sheet và cột như bảng trên (Nghe 3 sheet, Đọc 4 sheet, `reading_vocabulary` có `reading_lesson_id`), `id` đánh lại theo thứ tự trong file; thêm cột `cluster` (tên các cụm, cách nhau `;`) ở sheet bài gốc để tham khảo. Không có cột bài học. |
 
 **Điểm cần lưu ý:**
 
 - Chỉ nhận `.xlsx`; File export dùng lại được để import (cột `cluster` khi import được bỏ qua, bài vào cụm đang chọn).
-- `id` / `*_lesson_id` chỉ dùng để nối các sheet trong cùng một file, không lưu và không đối chiếu với dữ liệu hệ thống.
+- `id` / `*_lesson_id` chỉ dùng để nối các sheet trong cùng một file, không lưu và không đối chiếu với dữ liệu hệ thống;
+  file export từ khoá khác hoặc có id trùng / khác dữ liệu hệ thống vẫn import bình thường.
 - Một file có thể chứa cả sheet Nghe và Đọc: import ở tab Nghe chỉ lấy 3 sheet Nghe, import ở tab Đọc chỉ lấy 4 sheet Đọc.
 
 #### Testcase — Import / Export Excel
@@ -583,11 +641,12 @@
 |---|---| --- |---|---|---|---|---|
 | Case 40: Export đúng sheet | High | Smoke | Flow 9 / REQ12 | CD | 48 bài nghe, đang lọc cụm `Chào hỏi` | **Given** bấm `Export Excel` ở tab Nghe<br>**When** tải file<br>**Then** file có 3 sheet `listening_lesson` (48 dòng), `listening`, `listening_question` | - Không theo bộ lọc<br>- Không có cột bài học |
 | Case 41: Import tab Nghe chỉ đọc 3 sheet | High | Smoke | Flow 9 / REQ12 | CD | File `HSK1_DATA` có đủ sheet Nghe, Đọc, Kiến thức; `listening_lesson` 113 dòng | **Given** tab Nghe, `Import Excel`, chọn file<br>**When** xử lý<br>**Then** tạo 113 bài nghe kèm kịch bản và câu hỏi | - Không tạo bài đọc / kiến thức<br>- Cột `lesson_id` bị bỏ qua, bài vào cụm đang chọn<br>- Toast `Đã import 113 bài nghe.` |
-| Case 41a: Import tab Đọc đọc 4 sheet | High | Smoke | Flow 9 / REQ12 | CD | Cùng file; `reading_lesson` 107 dòng; `reading_vocabulary` có `reading_lesson_id` | **Given** tab Đọc, `Import Excel`<br>**When** xử lý<br>**Then** tạo 107 bài đọc kèm đoạn văn, câu hỏi, từ vựng liên quan | - Không tạo bài nghe |
-| Case 42: Import có dòng lỗi | High |  | EX05 / REQ12 | CD | `listening_lesson` dòng 4 trống `title` | **Given** import<br>**When** kiểm tra<br>**Then** chặn cả file, báo `listening_lesson dòng 4: thiếu title` | - Không thêm bài nào |
-| Case 42a: Import file sai định dạng / thiếu sheet | Medium |  | EX05 / REQ12 | CD | Khoá `Nháp` | **Given** import file `.csv`; import `.xlsx` không có sheet `listening_lesson`<br>**When** xử lý<br>**Then** chặn cả file, báo lỗi | - Không thêm bài nào |
-| Case 42c: reading_vocabulary thiếu cột nối | High |  | EX05 / REQ12 | CD | Sheet `reading_vocabulary` không có cột `reading_lesson_id` | **Given** import ở tab Đọc<br>**When** kiểm tra<br>**Then** chặn cả file, báo thiếu `reading_lesson_id` | - Không thêm bài nào |
-| Case 42d: Dòng phụ trỏ tới bài không có | Medium |  | EX05 / REQ12 | CD | `listening` có dòng `listening_lesson_id` = 999 | **Given** import<br>**When** kiểm tra<br>**Then** chặn cả file, báo `listening dòng N: listening_lesson_id 999 không có trong listening_lesson` | - |
+| Case 41a: Import tab Đọc đọc 4 sheet | High | Smoke | Flow 9 / REQ12 | CD | Cùng file; `reading_lesson` 107 dòng; `reading_vocabulary` có `reading_lesson_id` | **Given** tab Đọc, `Import Excel`<br>**When** xử lý<br>**Then** tạo 107 bài đọc kèm đoạn văn, câu hỏi, từ vựng của bài | - Không tạo bài nghe<br>- Từ vựng S1 không đổi |
+| Case 42: Import có dòng lỗi | High |  | EX05 / REQ12 | CD | `listening_lesson` 10 dòng, dòng 4 trống `title` | **Given** import<br>**When** kiểm tra<br>**Then** tạo 9 bài, báo `listening_lesson dòng 4: thiếu title` | - Dòng phụ của bài dòng 4 cũng bỏ<br>- Toast `Đã import 9 bài nghe, bỏ 1 dòng lỗi.` |
+| Case 42a: Import file sai định dạng / thiếu sheet | Medium |  | EX05 / REQ12 | CD | Khoá `Nháp` | **Given** import file `.csv`; import `.xlsx` không có sheet `listening_lesson`<br>**When** xử lý<br>**Then** không import, báo lỗi định dạng / thiếu sheet | - Không thêm bài nào |
+| Case 42c: reading_vocabulary thiếu cột nối | High |  | EX05 / REQ12 | CD | Sheet `reading_vocabulary` không có cột `reading_lesson_id` | **Given** import ở tab Đọc<br>**When** kiểm tra<br>**Then** bài đọc vẫn import, bỏ qua sheet từ vựng, báo thiếu `reading_lesson_id` | - Bài đọc không có từ vựng |
+| Case 42d: Dòng phụ trỏ tới bài không có | Medium |  | EX05 / REQ12 | CD | `listening` có dòng `listening_lesson_id` = 999 | **Given** import<br>**When** kiểm tra<br>**Then** bỏ dòng đó, báo `listening dòng N: listening_lesson_id 999 không có trong listening_lesson` | - Các bài khác import đủ |
+| Case 42e: File có id khác hệ thống | High | Smoke | EX14 / REQ12 | CD | File export từ khoá khác, cột `id`, `lesson_id` là mã của khoá đó | **Given** tab Nghe khoá đang mở, `Import Excel`<br>**When** xử lý<br>**Then** tạo bài mới trong khoá đang mở, cụm đang chọn | - Không báo lỗi id<br>- Khoá nguồn không đổi |
 | Case 42b: Khoá không Nháp vẫn Export Excel | Medium |  | Ràng buộc quyền | CD | Khoá `Công Khai` có 48 bài nghe | **Given** mở S6<br>**When** bấm `Export Excel`<br>**Then** tải file đủ 48 bài | - Không có `Import Excel` |
 
 ---
@@ -634,14 +693,16 @@
 
 **Mô tả:**
 
-- AI sinh câu hỏi cho bài đọc từ đoạn văn, theo loại câu của Thư viện bài tập; kết quả vào bộ câu hỏi của bài ở trạng
-  thái chờ duyệt, duyệt tại màn Chi tiết câu hỏi Reading. Quy tắc duyệt, dừng, khoá bài như Transcript AI.
+- **Gộp vào Generate bằng AI** của tab Câu hỏi: cùng popup (Số câu, loại câu, prompt), cùng cách sinh. Nút toolbar / menu
+  dòng / hàng loạt chạy Generate cho **nhiều bài đọc một lúc** từ đoạn văn + từ vựng của từng bài; kết quả vào tab Câu hỏi
+  của từng bài ở trạng thái chờ duyệt, duyệt ngay trong tab đó. Quy tắc dừng, khoá bài như Transcript AI.
+- Một bài thì dùng Generate bằng AI trong tab Câu hỏi (chọn dòng rồi thêm, như BTVN).
 
 **Giải thích thành phần:**
 
 | Thành phần | Yêu cầu |
 |---|---|
-| Nút toolbar / menu dòng / hàng loạt | Chỉ bài có đoạn văn; popup nhập số câu (mặc định 5) và loại câu cho phép. |
+| Nút toolbar / menu dòng / hàng loạt | Chỉ bài có đoạn văn; popup Generate bằng AI của BTVN (số câu mặc định 5, loại câu, prompt), không có bước chọn cụm. |
 | Thanh AI | `AI · Đang tạo câu hỏi cho N bài đọc`, tiến độ, `Duyệt tất cả (m)`, `Dừng`. |
 
 **Điểm cần lưu ý:**
@@ -652,7 +713,7 @@
 
 | Tên testcase | Priority | Loại test | Scenario | Role | Pre-condition | Given / When / Then | Expected Result |
 |---|---| --- |---|---|---|---|---|
-| Case 47: Tạo 5 câu cho 1 bài đọc | High | Smoke | Flow 10 / REQ11 | CD | Bài đọc có đoạn văn, 0 câu | **Given** `⋮ › Tạo câu hỏi bằng AI`, số câu 5<br>**When** xong<br>**Then** drawer hiện `5 câu hỏi · chờ duyệt`, bài vẫn thiếu thông tin tới khi duyệt | - Duyệt xong `Số câu hỏi` = 5 |
+| Case 47: Tạo 5 câu cho 1 bài đọc | High | Smoke | Flow 10 / REQ11 | CD | Bài đọc có đoạn văn, 0 câu | **Given** `⋮ › Tạo câu hỏi bằng AI`, số câu 5<br>**When** xong<br>**Then** tab Câu hỏi của bài có 5 câu nhãn `AI · chờ duyệt`, bài vẫn thiếu thông tin tới khi duyệt | - Duyệt xong `Số câu hỏi` = 5 |
 
 ---
 
@@ -714,7 +775,7 @@
 **Điểm cần lưu ý:**
 
 - Preview không ghi dữ liệu học; bài thiếu file / đoạn văn hoặc 0 câu hỏi hiện thông báo trong khung điện thoại.
-- Bài đọc: tab `Kịch bản` thay bằng `Đoạn văn` (tô sáng Từ vựng liên quan, phát audio đọc mẫu nếu có).
+- Bài đọc: tab `Kịch bản` thay bằng `Đoạn văn` (tô sáng Từ vựng của bài, phát audio đọc mẫu nếu có).
 
 #### Testcase — Preview mobile
 
@@ -836,10 +897,10 @@ CD gõ tên ở dòng cuối bảng → Enter
 
 ```text
 CD bấm tên bài hoặc ⋮ › Mở chi tiết → drawer
-      → Sửa Tên / Mô tả / file / kịch bản (lượt, phiên âm, dịch, mốc thời gian) hoặc đoạn văn / audio mẫu / từ vựng liên quan
+      → Sửa Tên / Mô tả / file / kịch bản (lượt, phiên âm, dịch, mốc thời gian) hoặc đoạn văn / audio mẫu / từ vựng của bài
       → Sửa cụm → popup Thêm vào cụm / Gỡ khỏi cụm
       → Lưu → sửa bản ghi thư viện, mọi khoá dùng bài thấy nội dung mới
-      → Câu hỏi: Mở chi tiết › → màn Chi tiết câu hỏi của Thư viện bài tập
+      → Tab Câu hỏi → soạn bộ câu hỏi của bài ngay trong drawer (Flow 12)
 ```
 
 **Flow 6 / REQ05: Thêm vào cụm / Gỡ khỏi cụm**
@@ -857,14 +918,15 @@ CD ⋮ › Gỡ khỏi khoá hoặc Gỡ khỏi khoá (N) → popup xác nhận 
       → Gỡ bài khỏi khoá, khỏi mọi cụm và khỏi các bài học của khoá; bản ghi thư viện và khoá khác không đổi
 ```
 
-**Flow 8 / REQ05 / REQ11: Cụm sinh từ S2, đổi tên, liên kết bài học, chia cụm AI**
+**Flow 8 / REQ05 / REQ11: Thêm / xoá / đổi tên cụm, liên kết bài học, chia cụm AI**
 
 ```text
-CD nhập Loại (Nghe / Đọc / Viết / Nói) + Số buổi ở Tổng quan (S2) → hệ thống tạo đủ cụm rỗng Chủ đề 1 … N cho tab (Số cụm chỉ đọc)
+CD Thêm cụm mới (tên + Enter) → cụm rỗng ở cuối; Tổng quan (S2) không tự tạo / xoá cụm
+CD ⋮ cụm › Xoá cụm → popup nêu số bài + bài học liên kết → Xoá: bài về Chưa phân cụm, bỏ liên kết bài học
 CD ⋮ cụm › Đổi tên → lưu tên mới
 CD ⋮ cụm › Liên kết bài học → chọn 1 bài (bài đã có cụm cùng loại bị mờ) → Lưu
       → BE kiểm tra trùng → lưu liên kết (gỡ liên kết cũ của cụm nếu có) hoặc từ chối (EX13) → Chi tiết bài học hiện bài của cụm
-Chia cụm bằng AI → AI đề xuất bài vào cụm → CD áp dụng hoặc bỏ
+Chia cụm bằng AI → ô Số cụm điền sẵn tổng Số buổi của loại ở S2, CD sửa được → AI đề xuất bài vào cụm → CD áp dụng hoặc bỏ
 ```
 
 **Flow 9 / REQ12: Import / Export Excel**
@@ -873,12 +935,12 @@ Chia cụm bằng AI → AI đề xuất bài vào cụm → CD áp dụng hoặ
 Export: tải toàn bộ bài của tab ra .xlsx (Nghe 3 sheet, Đọc 4 sheet, không cột bài học)
 Import tab Nghe: chọn .xlsx → chỉ đọc listening_lesson, listening, listening_question
 Import tab Đọc: chọn .xlsx → chỉ đọc reading_lesson, reading, reading_question, reading_vocabulary
-      → bỏ qua sheet khác và cột lesson_id → kiểm tra từng dòng, nối sheet phụ qua *_lesson_id
-      → có lỗi: chặn cả file, liệt kê lỗi theo sheet + dòng
-      → hợp lệ: tạo bản ghi thư viện Nháp, gắn khoá theo thứ tự dòng, vào cụm đang chọn, Toast Thành Công, gợi ý Soát lỗi AI
+      → bỏ qua sheet khác, cột id / lesson_id hệ thống → kiểm tra từng dòng, nối sheet phụ qua *_lesson_id trong cùng file
+      → dòng lỗi: bỏ dòng, liệt kê lỗi theo sheet + dòng
+      → dòng hợp lệ: tạo bản ghi thư viện Nháp, gắn khoá theo thứ tự dòng, vào cụm đang chọn, Toast Thành Công, gợi ý Soát lỗi AI
 ```
 
-**Flow 10 / REQ11: Transcript AI (Nghe) / Tạo câu hỏi AI (Đọc)**
+**Flow 10 / REQ11: Transcript AI (Nghe) / Tạo câu hỏi AI hàng loạt (Đọc, dùng Generate của bộ câu hỏi)**
 
 ```text
 CD bấm nút toolbar / ⋮ / hàng loạt / tick khi tạo → AI chạy nền, thanh AI hiện tiến độ, bài bị khoá sửa
@@ -909,21 +971,32 @@ CD mở Chi tiết bài học → tab Kỹ năng (mặc định lọc Nghe)
 CD sửa cụm ở S6 (thêm / gỡ / chuyển bài, đổi tên, đổi liên kết) → bài học cập nhật ngay, không thao tác tại bài
 ```
 
+**Flow 12 / REQ08: Bộ câu hỏi của bài kỹ năng**
+
+```text
+CD mở drawer bài nghe / đọc → tab Câu hỏi N
+      → thêm / sửa / xoá câu, câu con, nhập nhanh, Import / Export, Soát lỗi, Generate (như BTVN, gắn bài đang mở)
+      → lưu theo từng thao tác vào bản ghi thư viện; mọi khoá dùng bài thấy cùng bộ câu
+      → app học viên: Luyện tập dùng bộ câu (không lưu điểm); 0 câu thì app tự sinh như cũ
+```
+
 ### 2.2. Ngoại lệ
 
 - **EX01:** Khoá học không `Nháp` → ẩn / mờ mọi thao tác ghi (gồm thao tác cụm); API thêm / sửa / gỡ / cụm / AI bị từ chối.
 - **EX02:** Tên bài trống, Nhập nhanh rỗng, Tạo bài mới thiếu file (Nghe) hoặc đoạn văn (Đọc) → báo lỗi tại field, không tạo / lưu.
 - **EX03:** File âm thanh không phải `.mp3` hoặc lớn hơn 50MB → từ chối, Toast `Cảnh Báo`, giữ file cũ.
 - **EX04:** Gắn bản ghi thư viện đã có trong khoá → popup khoá lựa chọn, không gắn thêm từ popup; API vẫn nhận (như S1 REQ04: không bắt trùng bản ghi trong khoá).
-- **EX05:** Import không phải `.xlsx`, thiếu sheet bài gốc, `reading_vocabulary` thiếu cột `reading_lesson_id`, dòng thiếu
-  field bắt buộc hoặc `*_lesson_id` không có trong sheet bài gốc → chặn cả file, báo theo sheet + dòng, không thêm bài nào.
+- **EX05:** Import không phải `.xlsx` hoặc thiếu sheet bài gốc → không import. Dòng thiếu field bắt buộc hoặc
+  `*_lesson_id` không có trong sheet bài gốc của file → bỏ dòng, các dòng khác vẫn import, báo theo sheet + dòng.
+  `reading_vocabulary` thiếu cột `reading_lesson_id` → bỏ qua sheet đó, báo lỗi.
 - **EX06:** AI lỗi hoặc CD bấm `Dừng` → bài chưa xử lý giữ nguyên; bài đã xử lý giữ trạng thái chờ duyệt; AI lỗi thì Toast `Có Lỗi Xảy Ra`.
 - **EX07:** Sửa / gỡ bài đang được AI xử lý → UI mờ; API từ chối.
 - **EX08:** Role khác CD hoặc trung tâm khác trung tâm đang chọn truy cập S6 / gọi API → từ chối.
 - **EX09:** Lưu drawer, thêm / gỡ cụm, liên kết bài học, gỡ bài, duyệt AI thất bại → giữ dữ liệu cũ, Toast `Có Lỗi Xảy Ra`.
 - **EX10:** Thêm bài vào cụm của tab khác / khoá khác, hoặc liên kết cụm với bài học không thuộc khoá đang mở (qua API) → từ chối.
-- **EX11:** Đổi `Số cụm`, thêm hoặc xoá cụm trực tiếp ở S6 (UI / API) → ô chỉ đọc, không có nút; API từ chối. Số cụm chỉ đổi qua Số buổi ở S2.
+- **EX11:** Đổi Loại / Số buổi ở Tổng quan (S2) → không tạo / xoá cụm ở S6; chỉ đổi số mặc định của ô `Số cụm` trong popup Chia cụm bằng AI. Nhập Số cụm nhỏ hơn số cụm hiện có → lỗi dưới ô, không gửi AI.
 - **EX13:** Liên kết cụm với bài học đã có cụm cùng loại kỹ năng → BE từ chối (409), Toast `Cảnh Báo` nêu cụm đang chiếm; dữ liệu không đổi.
+- **EX14:** Import (bài, câu hỏi, từ vựng) có cột `id`, `lesson_id`, `*_lesson_id` là mã hệ thống / của bài khác → bỏ qua cột, vẫn import vào chỗ đang mở (khoá + cụm đang chọn, hoặc bài đang mở với câu hỏi / từ vựng).
 
 ### 2.3. Yêu cầu khác
 
@@ -931,15 +1004,15 @@ CD sửa cụm ở S6 (thêm / gỡ / chuyển bài, đổi tên, đổi liên k
 - **REQ02 – Tab kỹ năng:** 4 tab `Nghe`, `Đọc`, `Viết`, `Nói` ở mọi trung tâm, mỗi tab có panel Cụm riêng; bảng và field
   của tài liệu này áp dụng Nghe và Đọc, Viết / Nói viết sau.
 - **REQ03 – Cột và nội dung:** Nghe: tên, mô tả, âm thanh (mp3 ≤ 50MB, thời lượng không giới hạn, `h:mm:ss` khi ≥ 1 giờ, chỉ phát một bài tại một thời điểm), cụm. Đọc: tên, mô tả, đoạn văn, cụm; audio đọc mẫu không bắt buộc. Không có cột bài học.
-- **REQ04 – Thư viện kỹ năng:** Bài của S6 là tham chiếu bản ghi Thư viện kỹ năng; không có rule bắt trùng bản ghi trong khoá (thống nhất với S1 REQ04), popup thêm chỉ khoá bài đã có để tránh thêm nhầm. Thêm mới (popup tạo, nhập nhanh, import) tạo bản ghi `Nháp`; sửa tại S6 sửa bản ghi thư viện. Field: Tên *, Mô tả, Nâng cao (Có / Không, mặc định Không), Âm thanh + Kịch bản (lượt, người nói, phiên âm, dịch, mốc start / end) với Nghe; Đoạn văn + audio đọc mẫu + Từ vựng liên quan (từ S1 của khoá) với Đọc. **Thiếu thông tin** khi thiếu file / đoạn văn, mô tả, hoặc 0 câu hỏi đã duyệt.
-- **REQ05 – Cụm:** Mỗi tab có bộ cụm riêng của khoá; một bài thuộc **tối đa 1 cụm** của tab. **Số cụm = tổng Số buổi của loại ở Tổng quan (S2)**, tự tạo `Chủ đề k`, không nhập / thêm / xoá cụm tại S6; CD đổi tên, Chia cụm bằng AI. **Mỗi cụm liên kết đúng 1 bài học, mỗi bài học tối đa 1 cụm mỗi loại kỹ năng**, BE kiểm tra trùng (EX13), liên kết tại ⋮ cụm; nhân bản khoá sao chép cụm và liên kết. Thêm vào / gỡ khỏi cụm qua popup thêm / tạo, nhập nhanh, import (cụm đang chọn), menu dòng, hàng loạt, nhãn cột Cụm, drawer (chọn 1 cụm). Xoá cụm không gỡ bài khỏi khoá. Số đếm panel Cụm cập nhật ngay. Thứ tự bài trong cụm kéo thả được.
+- **REQ04 – Thư viện kỹ năng:** Bài của S6 là tham chiếu bản ghi Thư viện kỹ năng; không có rule bắt trùng bản ghi trong khoá (thống nhất với S1 REQ04), popup thêm chỉ khoá bài đã có để tránh thêm nhầm. Thêm mới (popup tạo, nhập nhanh, import) tạo bản ghi `Nháp`; sửa tại S6 sửa bản ghi thư viện. Field: Tên *, Mô tả, Nâng cao (Có / Không, mặc định Không), Âm thanh + Kịch bản (lượt, người nói, phiên âm, dịch, mốc start / end) với Nghe; Đoạn văn + audio đọc mẫu + Từ vựng (danh sách từ riêng của bài, không nối S1) với Đọc. **Thiếu thông tin** khi thiếu file / đoạn văn, mô tả, hoặc 0 câu hỏi đã duyệt.
+- **REQ05 – Cụm:** Mỗi tab có bộ cụm riêng của khoá; một bài thuộc **tối đa 1 cụm** của tab. Cụm chỉ được tạo khi CD `Thêm cụm mới` hoặc Chia cụm bằng AI (ô `Số cụm` mặc định = tổng Số buổi của loại ở S2, CD sửa được, ≥ số cụm hiện có); S2 không tự tạo / xoá cụm; CD đổi tên, xoá cụm (bài về Chưa phân cụm, bỏ liên kết). **Mỗi cụm liên kết đúng 1 bài học, mỗi bài học tối đa 1 cụm mỗi loại kỹ năng**, BE kiểm tra trùng (EX13), liên kết tại ⋮ cụm; nhân bản khoá sao chép cụm và liên kết. Thêm vào / gỡ khỏi cụm qua popup thêm / tạo, nhập nhanh, import (cụm đang chọn), menu dòng, hàng loạt, nhãn cột Cụm, drawer (chọn 1 cụm). Xoá cụm không gỡ bài khỏi khoá. Số đếm panel Cụm cập nhật ngay. Thứ tự bài trong cụm kéo thả được.
 - **REQ06 – Bảng, tìm kiếm, lọc, sắp xếp:** Bảng hiện đủ mọi field, cuộn ngang, ghim cột đầu / cuối. Tìm theo tên, mô tả, nội dung; lọc theo cụm (panel Cụm), Trạng thái `Tất cả / Nháp / Công khai / Vô hiệu`, Nâng cao `Tất cả / Có / Không`; sắp xếp `Thứ tự thêm / Tên A–Z / Mới cập nhật / Thứ tự trong cụm`; phân trang 50 dòng; đổi điều kiện về trang 1.
 - **REQ07 – Drawer chi tiết:** Đủ field theo REQ04, cụm chỉ đọc + `Sửa cụm`, duyệt / hoàn tác giá trị AI, hỏi xác nhận khi đóng có thay đổi; lưu ảnh hưởng mọi khoá dùng bản ghi.
-- **REQ08 – Câu hỏi:** Soạn và duyệt ở màn Chi tiết câu hỏi của Thư viện bài tập (Listening / Reading), đủ loại câu của BTVN & Kiểm tra; drawer chỉ tóm tắt số câu theo loại và dẫn link.
+- **REQ08 – Bộ câu hỏi của bài:** Mọi bài kỹ năng có tab `Câu hỏi` trong drawer, đủ chức năng như BTVN & Kiểm tra (8 loại câu, câu con, điểm, Import / Export, Soát lỗi, Generate, Preview), gắn bài đang mở; thuộc bản ghi thư viện; câu a–d cũ gộp thành câu `Trắc nghiệm`; import không theo id; khoá không Nháp chỉ đọc; gỡ bài khỏi khoá giữ câu hỏi. App học viên dùng ở chế độ Luyện tập, không lưu điểm.
 - **REQ09 – Gỡ khỏi khoá:** Xoá ở S6 là gỡ khỏi khoá và khỏi cụm (bài học liên kết cụm không còn bài), có xác nhận nêu cụm và bài học; bản ghi thư viện còn; kết quả học viên giữ.
 - **REQ10 – Trạng thái khoá học:** Chỉ thao tác ghi khi khoá `Nháp`; khoá khác chỉ xem, tìm, lọc, Preview, Export.
-- **REQ11 – AI:** Transcript AI (Nghe, từ file âm thanh, có phiên âm, dịch, mốc thời gian), Tạo câu hỏi AI (Đọc, từ đoạn văn), Soát lỗi AI (cả hai), Chia cụm bằng AI. Kết quả lưu nháp chờ duyệt, không ghi đè; `Duyệt tất cả` của Soát lỗi áp dụng sửa của AI, có Hoàn tác; `Dừng` được; bài đang xử lý bị khoá sửa / gỡ.
-- **REQ12 – Import / Export Excel:** Chỉ `.xlsx`. Tab Nghe chỉ đọc 3 sheet `listening_lesson`, `listening`, `listening_question`; tab Đọc chỉ đọc 4 sheet `reading_lesson`, `reading`, `reading_question`, `reading_vocabulary` (bắt buộc cột `reading_lesson_id`); bỏ qua sheet khác. **Không có cột bài học**: bỏ qua `lesson_id`, bài vào cụm đang chọn. Export toàn bộ bài của tab cùng cấu trúc sheet; import tạo bản ghi `Nháp` thêm vào cuối, có dòng lỗi thì chặn cả file, không tự dò trùng.
+- **REQ11 – AI:** Transcript AI (Nghe, từ file âm thanh, có phiên âm, dịch, mốc thời gian), Tạo câu hỏi AI (Đọc, từ đoạn văn, dùng Generate của bộ câu hỏi), Soát lỗi AI (cả hai), Chia cụm bằng AI. Kết quả lưu nháp chờ duyệt, không ghi đè; `Duyệt tất cả` của Soát lỗi áp dụng sửa của AI, có Hoàn tác; `Dừng` được; bài đang xử lý bị khoá sửa / gỡ.
+- **REQ12 – Import / Export Excel:** Chỉ `.xlsx`. Tab Nghe chỉ đọc 3 sheet `listening_lesson`, `listening`, `listening_question`; tab Đọc chỉ đọc 4 sheet `reading_lesson`, `reading`, `reading_question`, `reading_vocabulary` (cần cột `reading_lesson_id`, thiếu thì bỏ qua sheet); bỏ qua sheet khác. **Không cần đúng id**: bỏ qua `id`, `lesson_id` hệ thống, `*_lesson_id` chỉ nối sheet trong cùng file, bài vào cụm đang chọn. Export toàn bộ bài của tab cùng cấu trúc sheet; import tạo bản ghi `Nháp` thêm vào cuối, dòng lỗi bị bỏ và báo theo sheet + dòng, không tự dò trùng; `reading_vocabulary` tạo từ của bài, không nối S1.
 - **REQ13 – Preview mobile:** Tái hiện màn học của app học viên cho bài đang chọn (Làm bài / Kịch bản hoặc Đoạn văn / Kết quả); toggle `Kịch bản ẩn khi làm bài` lưu theo bài; không ghi dữ liệu học.
 - **REQ14 – Bài kỹ năng trong bài học:** Chi tiết bài học không chọn bài; tab Kỹ năng chỉ hiển thị bài của cụm đã liên kết, theo loại đang lọc (mặc định Nghe), tiêu đề là tên cụm; thay đổi ở cụm phản ánh ngay; không thêm / gỡ / sửa tại bài; badge tab = số loại kỹ năng có cụm liên kết.
 - **REQ15 – Phản hồi:** Mỗi thao tác thay đổi dữ liệu đúng một Toast theo kết quả; không báo thành công trước khi lưu xong.
@@ -960,7 +1033,7 @@ CD sửa cụm ở S6 (thêm / gỡ / chuyển bài, đổi tên, đổi liên k
 - Bài S6 tham chiếu bản ghi thư viện bằng định danh, không dùng tên làm khoá liên kết; sửa ở S6 ảnh hưởng mọi khoá dùng
   bản ghi.
 - Cụm thuộc khoá + tab kỹ năng; bài chỉ vào được cụm cùng khoá, cùng tab. Bài học chỉ thêm được bài kỹ năng trong S6 của
-  chính khoá; Từ vựng liên quan của bài đọc chỉ chọn trong S1 của chính khoá.
+  chính khoá; Từ vựng và bộ câu hỏi của bài thuộc bản ghi thư viện của bài.
 - Không cho phép truy cập hoặc thực hiện hành động `❌`, kể cả gọi trực tiếp bằng URL hoặc request.
 
 ---
@@ -968,19 +1041,23 @@ CD sửa cụm ở S6 (thêm / gỡ / chuyển bài, đổi tên, đổi liên k
 ## 3. Cần xác nhận
 
 - **Figma tab Đọc:** chưa có drawer Chi tiết bài đọc, popup thêm / tạo / gỡ, chọn nhiều, màn trống, Preview; viết theo
-  Nghe, cần vẽ bổ sung (gồm khối Đoạn văn, Audio đọc mẫu, Từ vựng liên quan).
+  Nghe, cần vẽ bổ sung (gồm khối Đoạn văn, Audio đọc mẫu, bảng Từ vựng của bài, tab Câu hỏi).
 - **Figma Nghe:** kịch bản chưa vẽ mốc thời gian `start / end` từng lượt; popup Tạo bài ghi `MP3 / WAV · 25 MB`, requirement
   chốt `.mp3` ≤ 50MB theo `file_limits.json` (`KNOWLEDGE_MEDIA`), cần sửa chữ trên Figma hoặc đổi config.
 - **Figma panel Cụm:** mọi màn S6 đang vẽ panel `Học kỳ & bài học`, cột / ô `Bài học`; cần vẽ lại theo panel Cụm, cột
   `Cụm`, popup `Cụm của N bài`, ô `Thêm vào cụm` (tham khảo Figma Kiến thức S1).
-- **UI cần vẽ theo mô hình cụm ↔ bài học (03/11):** ô Số cụm chỉ đọc theo S2, bỏ `Thêm cụm mới` / `Xoá cụm`, menu ⋮ cụm có `Liên kết bài học` + popup chọn bài, chip bài học trên dòng cụm, field và bộ lọc `Nâng cao`, bảng đủ cột cuộn ngang có cột ghim, tab Kỹ năng ở Chi tiết bài học chỉ xem theo cụm.
+- **UI cần vẽ theo mô hình cụm ↔ bài học (03/11):** panel Cụm không có ô Số cụm, có `Thêm cụm mới` và ⋮ `Xoá cụm`; popup Chia cụm bằng AI có ô `Số cụm` điền sẵn theo S2 (10/11); menu ⋮ cụm có `Liên kết bài học` + popup chọn bài, chip bài học trên dòng cụm, field và bộ lọc `Nâng cao`, bảng đủ cột cuộn ngang có cột ghim, tab Kỹ năng ở Chi tiết bài học chỉ xem theo cụm.
 - **Import / Export Excel:** chưa có UI menu và popup kết quả; cấu trúc sheet theo file dữ liệu khoá học (vd
-  `HSK1_DATA_v261028.xlsx`); file hiện tại chưa có cột `reading_lesson_id` ở sheet `reading_vocabulary`, cần bổ sung trước
-  khi import tab Đọc.
+  `HSK1_DATA_v261028.xlsx`); file hiện tại chưa có cột `reading_lesson_id` ở sheet `reading_vocabulary`, cần bổ sung để
+  import được từ vựng của bài đọc (thiếu thì bài vẫn import, bỏ qua từ vựng). Sheet câu hỏi có thể thêm cột
+  `question_type` và sheet `*_subquestion` cho đủ 8 loại câu (10/11, đề xuất, cần dev chốt tên).
+- **Xoá cụm (10/11):** S2 không còn quản lý số cụm nên S6 có lại `Thêm cụm mới` và `Xoá cụm` như S1; cần chốt cùng S1.
+- **Dữ liệu câu hỏi cũ (10/11):** câu a–d cũ của bài nghe / đọc (`MiniQuestionModel`) chuyển thành câu `Trắc nghiệm` trong
+  bộ câu hỏi mới; cần dev chốt cách chuyển dữ liệu (một lần khi triển khai hay khi mở bài).
 - **Phiên âm theo ngôn ngữ:** tiếng Trung pinyin, tiếng Nhật furigana / romaji, tiếng Hàn romanization; tiếng Anh / Đức /
   Pháp để trống hay dùng IPA, chưa chốt.
 - **Preview app học viên:** màn Làm bài / Kết quả tái hiện theo app; cần ảnh app để khớp chi tiết (cách tô sáng câu theo
-  mốc thời gian, hiển thị Từ vựng liên quan).
+  mốc thời gian, hiển thị Từ vựng của bài).
 
 ---
 
@@ -990,9 +1067,9 @@ CD sửa cụm ở S6 (thêm / gỡ / chuyển bài, đổi tên, đổi liên k
 |---|---|---|
 | Nơi quản lý | Thư viện kỹ năng theo cấp độ, gắn bài học qua `lessonId`; mỗi bài thuộc đúng 1 bài học | Bản ghi thư viện dùng chung, gắn vào khoá qua S6, chia theo cụm (mỗi bài tối đa 1 cụm); S6 không gắn bài học, bài học thêm bài kỹ năng tại Chi tiết bài học |
 | Field bài nghe | `title`, `mean` (mô tả), `level`, `course`, `audio`; câu nghe `sentence`, `furigana`, `phonetic`, `mean`, `start`, `end`, `enable` | Giữ: tên, mô tả, audio, kịch bản có phiên âm, dịch, mốc start / end; thêm người nói A / B |
-| Field bài đọc | `title`, `mean`, `item` (đoạn văn), `audio`, `vocabularies`; câu đọc có furigana, phonetic, mean | Giữ đoạn văn, audio đọc mẫu, từ vựng liên quan (từ S1), câu có phiên âm / dịch |
-| Câu hỏi | `MiniQuestionModel`: trắc nghiệm A–D, đáp án, giải thích, bật / tắt | Dùng đủ loại câu của Thư viện bài tập, soạn ở Chi tiết câu hỏi |
+| Field bài đọc | `title`, `mean`, `item` (đoạn văn), `audio`, `vocabularies`; câu đọc có furigana, phonetic, mean | Giữ đoạn văn, audio đọc mẫu, câu có phiên âm / dịch; từ vựng là danh sách từ riêng của bài (không chọn từ S1) |
+| Câu hỏi | `MiniQuestionModel`: trắc nghiệm A–D, đáp án, giải thích, bật / tắt | Bộ câu hỏi đầy đủ như BTVN trong tab Câu hỏi của drawer; câu a–d cũ gộp thành câu Trắc nghiệm |
 | Thêm dữ liệu | `Thêm mới`, `Thêm từ JSON`, `Thêm từ thư viện`, `Export JSON` | `Thêm từ thư viện`, `Tạo bài mới`, Nhập nhanh, `Import / Export Excel`; bỏ JSON |
 | Xoá | Xoá bài (có xác nhận) | Gỡ khỏi khoá, bản ghi thư viện còn |
-| AI | Không có | Transcript AI, Tạo câu hỏi AI, Soát lỗi AI, chờ duyệt |
+| AI | Không có | Transcript AI, Tạo câu hỏi AI (Generate), Soát lỗi AI, chờ duyệt |
 | Preview | Không có | Preview mobile theo bài |
