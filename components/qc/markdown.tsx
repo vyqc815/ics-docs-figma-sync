@@ -53,7 +53,7 @@ export function RequirementMarkdown({ file, text }: { file: string; text: string
             if (alt?.startsWith(QC_SHOT)) return null;
             // ![](figma:MÃ) in a requirement, or the live image line the conversion adds
             const code = url?.match(/\/api\/figma-frame\/([A-Z0-9-]+)\.png$/)?.[1];
-            if (code) return <FigmaShot code={code} live liveBase={url?.split("/api/")[0] ?? BASE} project={project} className="my-2.5" />;
+            if (code) return <FigmaShot code={code} live liveBase={project ? BASE : (url?.split("/api/")[0] ?? BASE)} project={project} className="my-2.5" />;
             // eslint-disable-next-line @next/next/no-img-element
             return <img src={url} alt={alt ?? ""} loading="lazy" />;
           },

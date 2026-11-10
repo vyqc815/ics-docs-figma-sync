@@ -2,7 +2,7 @@ import { existsSync, readFileSync } from "node:fs";
 import { join } from "node:path";
 import { cache as requestCache } from "react";
 import { withBase } from "@/lib/base-path";
-import { DEFAULT_PROJECT, dataDirs, getProject } from "@/lib/projects";
+import { type DataDirs, DEFAULT_PROJECT, dataDirs, getProject } from "@/lib/projects";
 
 /**
  * Read-only access to the code system for the QC hub (/hub): clusters, registries, requirement
@@ -93,6 +93,8 @@ export type Data = {
   req: string;
   /** Requirement Markdown held in memory (live projects), by path. */
   docs?: Map<string, string>;
+  /** trang-chua-gan-ma.md held in memory (live projects). */
+  unmapped?: string;
 };
 const cache = new Map<string, Data>();
 
@@ -102,17 +104,19 @@ export const prime = (project: string, data: Data): void => void cache.set(proje
 export type IndexFile = { path: string; title: string; prefix: string; screens: string[]; pages: { no: number; title: string; screens: string[] }[] };
 type QcIndex = { version?: string; generatedAt?: string; files?: IndexFile[] };
 
-function load(project: string = current()): Data {
-  const hit = cache.get(project);
-  if (hit) return hit;
-  const p = getProject(project);
-  if (!p) throw new Error(`Không có dự án ${project}.`);
-  const dirs = dataDirs(p);
-  const SYS = join(/* turbopackIgnore: true */ ROOT, dirs.sys);
-  const clusters = json<{ clusters: { name: string; title: string }[] }>(join(SYS, "clusters.json"), { clusters: [] }).clusters;
+/** Reads one file of a project's code system (repo-relative path); the fallback when it is not there. */
+export type Reader = <T>(path: string, fallback: T) => T;
+
+/**
+ * A project's data from its generated code system, the files scripts/he-thong-ma writes: ICS reads them from
+ * disk, a hub-added project from main through GitHub (lib/qc/remote.ts). `dirs` are repo-relative.
+ */
+export function assemble(read: Reader, dirs: DataDirs, fileKey: string): Data {
+  const sys = (name: string) => `${dirs.sys}/${name}`;
+  const clusters = read<{ clusters: { name: string; title: string }[] }>(sys("clusters.json"), { clusters: [] }).clusters;
   const registries = new Map<string, Registry>();
   for (const c of clusters) {
-    const r = json<Partial<Registry> | null>(join(SYS, `${c.name}.registry.json`), null);
+    const r = read<Partial<Registry> | null>(sys(`${c.name}.registry.json`), null);
     // Figma-only clusters have no requirement side: fill the lists so pages need no checks
     if (r)
       registries.set(c.name, {
@@ -128,24 +132,32 @@ function load(project: string = current()): Data {
         ...r,
       } as Registry);
   }
-  const frames = json<{ fileKey: string; frames: Record<string, Frame> }>(join(SYS, "figma-frames.json"), { fileKey: "", frames: {} });
-  const nav = json<{ codes: Record<string, NavRow> }>(join(SYS, "navigation.json"), { codes: {} }).codes;
+  const frames = read<{ fileKey: string; frames: Record<string, Frame> }>(sys("figma-frames.json"), { fileKey: "", frames: {} });
+  const nav = read<{ codes: Record<string, NavRow> }>(sys("navigation.json"), { codes: {} }).codes;
   // codes in the NAVIGATION table whose frame is not named with the code yet still count as screens
   for (const r of Object.values(nav))
     if (!r.removed && !frames.frames[r.code] && r.node) frames.frames[r.code] = { id: r.node, title: r.title, loai: r.loai };
-  const data: Data = {
+  return {
     clusters: clusters.filter((c) => registries.has(c.name)).map((c) => ({ name: c.name, title: c.title })),
     registries,
     frames: frames.frames,
-    fileKey: frames.fileKey || p.fileKey,
-    screenReq: json(join(/* turbopackIgnore: true */ ROOT, dirs.screenReq), {}),
-    reserved: json<{ codes: Reserved }>(join(SYS, "ma-du-kien.json"), { codes: {} }).codes,
-    index: json(join(SYS, "qc-index.json"), {}),
+    fileKey: frames.fileKey || fileKey,
+    screenReq: read(dirs.screenReq, {}),
+    reserved: read<{ codes: Reserved }>(sys("ma-du-kien.json"), { codes: {} }).codes,
+    index: read(sys("qc-index.json"), {}),
     nav,
-    pages: new Map(dirs.pages ? json<{ pages: { name: string; route: string }[] }>(join(/* turbopackIgnore: true */ ROOT, dirs.pages), { pages: [] }).pages.map((x) => [x.name, x.route]) : []),
-    sys: SYS,
+    pages: new Map(dirs.pages ? read<{ pages: { name: string; route: string }[] }>(dirs.pages, { pages: [] }).pages.map((x) => [x.name, x.route]) : []),
+    sys: join(/* turbopackIgnore: true */ ROOT, dirs.sys),
     req: join(/* turbopackIgnore: true */ ROOT, dirs.requirements),
   };
+}
+
+function load(project: string = current()): Data {
+  const hit = cache.get(project);
+  if (hit) return hit;
+  const p = getProject(project);
+  if (!p) throw new Error(`Không có dự án ${project}.`);
+  const data = assemble((path, fallback) => json(join(/* turbopackIgnore: true */ ROOT, path), fallback), dataDirs(p), p.fileKey);
   cache.set(project, data);
   return data;
 }
@@ -207,11 +219,13 @@ export function requirementMarkdown(file: string, project?: string): string | nu
 }
 
 export function unmappedPages(project?: string): { file: string; page: string; reason: string; candidates: string }[] {
-  const sys = load(project).sys;
-  if (!sys) return [];
-  const path = join(sys, "trang-chua-gan-ma.md");
-  if (!existsSync(path)) return [];
-  return readFileSync(path, "utf-8")
+  const data = load(project);
+  let text = data.unmapped;
+  if (text === undefined) {
+    const path = data.sys ? join(data.sys, "trang-chua-gan-ma.md") : "";
+    text = path && existsSync(path) ? readFileSync(path, "utf-8") : "";
+  }
+  return text
     .split("\n")
     .filter((l) => l.startsWith("| `"))
     .map((l) => {

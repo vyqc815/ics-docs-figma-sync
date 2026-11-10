@@ -1,17 +1,18 @@
 import { existsSync, readdirSync, readFileSync, statSync } from "node:fs";
 import { join, relative } from "node:path";
 
-import { dataDirs, type Project, projectDir } from "@/lib/projects";
-import { type Data, type Frame, type IndexFile, prime, type Registry, type Screen } from "@/lib/qc/data";
-import { listFiles, readBlob, readFile } from "@/lib/qc/github";
+import { dataDirs, originalsDir, type Project, projectDir, workDir } from "@/lib/projects";
+import { assemble, type Data, type Frame, type IndexFile, prime, type Registry, type Screen } from "@/lib/qc/data";
+import { listFiles, readBlob, readFile, type TreeEntry } from "@/lib/qc/github";
 
 /**
- * Live data of a project added from the hub (no generated code system in this repo): the requirement Markdown
- * in its docs folder of this repo (read from main through GitHub, so a commit shows without a deploy; the copy on
- * disk when GitHub is not reachable), the screens from its Figma scan (docs/du-an/<slug>/screens.json), with the
- * proposed code (de-xuat-ma.json) for a frame that has none on Figma yet. A lighter code system than ICS's
- * scripts: one cluster per requirement file, holding the screen codes the file names, plus one for the screens
- * no file names yet. Rebuilt at most every few minutes per server instance.
+ * Live data of a project added from the hub, read from main through GitHub (a commit shows without a deploy;
+ * the copy on disk when GitHub is not reachable). Rebuilt at most every few minutes per server instance.
+ *
+ * Full: the code system scripts/he-thong-ma/du_an.py generated in projects/<folder>/_hub (clusters, registry,
+ * items, testcases, page codes, screen → requirement pages), the same files ICS reads, so every hub page works
+ * as for ICS. Light, until that first run: the originals in projects/<folder>/requirements, one cluster per
+ * file holding the screen codes it names, screens from the Figma scan (+ proposed codes).
  */
 
 type Scanned = { id: string; name: string; code: string | null; kind: string };
@@ -29,6 +30,43 @@ const pending = new Map<string, Promise<Data>>();
 const blobs = new Map<string, string>();
 
 const loaiOf = (code: string): string => (code.endsWith("-DK") ? "ban-toi" : /00$/.test(code) ? "man-chinh" : "popup");
+
+async function texts(entries: TreeEntry[]): Promise<Map<string, string>> {
+  const out = new Map<string, string>();
+  for (let i = 0; i < entries.length; i += 8)
+    await Promise.all(
+      entries.slice(i, i + 8).map(async (e) => {
+        let text = blobs.get(e.sha);
+        if (text === undefined) blobs.set(e.sha, (text = await readBlob(e.sha)));
+        out.set(e.path, text);
+      }),
+    );
+  return out;
+}
+
+/** The generated code system of the project (projects/<folder>/_hub), or null before its first run. */
+async function readSystem(p: Project): Promise<Data | null> {
+  const dirs = dataDirs(p);
+  let files: TreeEntry[];
+  try {
+    files = await listFiles(workDir(p));
+  } catch {
+    return null; // no GitHub: the light build reads the disk
+  }
+  if (!files.some((e) => e.path === `${dirs.sys}/clusters.json`)) return null;
+  const wanted = files.filter(
+    (e) =>
+      (e.path.startsWith(`${dirs.sys}/`) && !e.path.slice(dirs.sys.length + 1).includes("/") && /\.(json|md)$/.test(e.path)) ||
+      e.path === dirs.screenReq ||
+      (e.path.startsWith(`${dirs.requirements}/`) && e.path.endsWith(".md")),
+  );
+  const got = await texts(wanted.slice(0, MAX_FILES * 3));
+  const data = assemble((path, fallback) => (got.has(path) ? JSON.parse(got.get(path)!) : fallback), dirs, p.fileKey);
+  const req = `${dirs.requirements}/`;
+  data.docs = new Map([...got].filter(([k]) => k.startsWith(req)).map(([k, v]) => [k.slice(req.length), v]));
+  data.unmapped = got.get(`${dirs.sys}/trang-chua-gan-ma.md`) ?? "";
+  return data;
+}
 
 /** Every .md under the docs folder, path relative to it. */
 async function readDocs(dir: string): Promise<Map<string, string>> {
@@ -78,13 +116,17 @@ export function framesOf(scanned: Scanned[], proposal: ProposalRow[]): Record<st
 }
 
 async function build(p: Project): Promise<Data> {
+  return (await readSystem(p)) ?? light(p);
+}
+
+async function light(p: Project): Promise<Data> {
   const dir = projectDir(p.slug);
   const [scan, prop] = await Promise.all([readFile(`${dir}/screens.json`), readFile(`${dir}/de-xuat-ma.json`)]);
   const scanned = (scan ? JSON.parse(scan.text) : []) as Scanned[];
   const proposal = (prop ? (JSON.parse(prop.text) as { frames?: ProposalRow[] }).frames : null) ?? [];
   const frames = framesOf(scanned, proposal);
 
-  const docs = await readDocs(dataDirs(p).requirements);
+  const docs = await readDocs(originalsDir(p));
   const screenOf = (code: string): Screen => ({ id: code, title: frames[code].title, kind: frames[code].loai, parent: frames[code].parent, nodeId: frames[code].id, inFigma: true });
   const empty = { requirements: [], exceptions: [], regions: [], testcases: [], issues: [] };
 

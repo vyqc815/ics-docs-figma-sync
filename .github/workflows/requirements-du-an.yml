@@ -1,0 +1,89 @@
+# Hệ thống mã cho các dự án thêm từ Hub, giống requirements.yml của ICS.
+# QC sửa bản gốc ở projects/<thư mục>/requirements (máy cá nhân push lên main, hoặc bút chì trên Hub),
+# hoặc Hub quét lại Figma / lưu mã đề xuất / lưu danh sách dự án
+# → du_an.py: figma-frames từ lần quét, chuyển template, gắn mã, cụm, registry, testcase → projects/<thư mục>/_hub
+# → commit → báo Google Chat (luồng requirement-<MÃ DỰ ÁN>). Hub đọc main trực tiếp: không cần deploy.
+name: Requirement dự án
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "projects/*/requirements/**"
+      - "docs/du-an/projects.json"
+      - "docs/du-an/*/screens.json"
+      - "docs/du-an/*/de-xuat-ma.json"
+  workflow_dispatch:
+    inputs:
+      slug: { description: "Slug dự án (trống = mọi dự án)", required: false, default: "" }
+
+concurrency:
+  group: requirements-du-an
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      GOOGLE_CHAT_WEBHOOK_URL: ${{ secrets.GOOGLE_CHAT_WEBHOOK_URL }}
+      RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+      HUB_LIVE: "1"
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Convert and check
+        id: run
+        env:
+          SLUG: ${{ inputs.slug }}
+          BEFORE: ${{ github.event.before }}
+        run: |
+          set +e
+          if [ "${{ github.event_name }}" = "push" ] && [ -n "$BEFORE" ] && [ "$BEFORE" != "0000000000000000000000000000000000000000" ]; then
+            python3 scripts/he-thong-ma/du_an.py --changed "$BEFORE" "$GITHUB_SHA" --summary "$RUNNER_TEMP/summary.md" > "$RUNNER_TEMP/run.log" 2>&1
+          else
+            python3 scripts/he-thong-ma/du_an.py $SLUG --summary "$RUNNER_TEMP/summary.md" > "$RUNNER_TEMP/run.log" 2>&1
+          fi
+          code=$?
+          grep -v '^{"nguon' "$RUNNER_TEMP/run.log" | tail -80
+          echo "ok=$([ "$code" = 0 ] && echo true || echo false)" >> "$GITHUB_OUTPUT"
+          # projects that stopped, for the Chat thread of each
+          echo "stopped=$(grep -o 'DỪNG ở dự án: .*' "$RUNNER_TEMP/run.log" | sed 's/DỪNG ở dự án: //')" >> "$GITHUB_OUTPUT"
+
+      # commit what was built even when another project stopped: each project's _hub is its own
+      - name: Commit
+        id: commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A projects/*/_hub 2>/dev/null || true
+          if git diff --cached --quiet; then echo "changed=false" >> "$GITHUB_OUTPUT"; exit 0; fi
+          git commit -m "Hệ thống mã dự án: cập nhật từ bản gốc (${GITHUB_SHA::7})"
+          for i in 1 2 3; do git pull --rebase -q && git push -q && break; sleep 5; done
+          echo "changed=true" >> "$GITHUB_OUTPUT"
+
+      - name: Notify
+        if: always()
+        continue-on-error: true
+        run: |
+          code_of() { python3 -c "import json,sys;print(next((p.get('code') or p['slug'] for p in json.load(open('docs/du-an/projects.json')) if p['slug']==sys.argv[1]),sys.argv[1]))" "$1"; }
+          for f in "$RUNNER_TEMP"/summary.md.*; do
+            [ -f "$f" ] || continue
+            FIGMA_PROJECT="$(code_of "${f##*.}")" python3 scripts/he-thong-ma/bao_chat.py ok "$f"
+          done
+          for s in $(echo "${{ steps.run.outputs.stopped }}" | tr ',' ' '); do
+            FIGMA_PROJECT="$(code_of "$s")" python3 scripts/he-thong-ma/bao_chat.py loi "$RUNNER_TEMP/run.log"
+          done
+
+      - name: Fail when stopped
+        if: steps.run.outputs.ok != 'true'
+        run: exit 1

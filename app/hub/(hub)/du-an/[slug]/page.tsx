@@ -1,7 +1,8 @@
 import { notFound } from "next/navigation";
 
 import { PageHead } from "@/components/qc/ui";
-import { dataDirs } from "@/lib/projects";
+import { folderOf, workDir } from "@/lib/projects";
+import { listFiles } from "@/lib/qc/github";
 import { can, session } from "@/lib/qc/auth";
 
 import { listProjects, projectScreens, proposalState } from "../actions";
@@ -18,10 +19,11 @@ const ProjectPage = async ({ params }: { params: Promise<{ slug: string }> }): P
   const rows = state.proposal?.frames ?? [];
   return (
     <>
-      <PageHead back="/hub/du-an" title={project.name} sub={`${screens.length} màn · mã dự án ${project.code} · file “${project.fileName}” · quét lúc ${new Date(project.scannedAt).toLocaleString("vi-VN", { timeZone: "Asia/Ho_Chi_Minh" })}`} />
+      <PageHead back="/hub/du-an" title={project.name} sub={`${screens.length} màn · file “${project.fileName}” · quét lúc ${new Date(project.scannedAt).toLocaleString("vi-VN", { timeZone: "Asia/Ho_Chi_Minh" })}`} />
       <ProjectView
         project={project}
-        docsDir={dataDirs(project).requirements}
+        folder={folderOf(project)}
+        built={(await listFiles(`${workDir(project)}/docs/he-thong-ma`).catch(() => [])).length > 0}
         canEdit={can(await session(), "edit")}
         screens={screens}
         proposal={{

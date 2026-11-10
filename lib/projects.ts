@@ -2,10 +2,13 @@ import { existsSync, readFileSync } from "node:fs";
 import { join } from "node:path";
 
 /**
- * Projects the hub serves. Each one has its own Figma file, its own requirement docs (Markdown in a folder of
- * this repo) and its own data folder. ICS is built in and keeps the folders it always had; projects added from
- * the "Dự án" page live in docs/du-an/projects.json: their scan, code proposal, sync marks and tags in
- * docs/du-an/<slug>/, their requirement Markdown in `docsDir` (by default projects/<slug>/requirements).
+ * Projects the hub serves. Each one has its own Figma file, its own requirement docs and the same code system
+ * (clusters, registry, items, testcases, codes) built by scripts/he-thong-ma. ICS is built in and keeps the
+ * folders it always had; projects added from the "Dự án" page live in docs/du-an/projects.json, with
+ *   projects/<folder>/requirements/   QC's original Markdown (like qc/requirements of ICS)
+ *   projects/<folder>/_hub/           the code system generated from it (scripts/he-thong-ma/du_an.py,
+ *                                     .github/workflows/requirements-du-an.yml), laid out like the ICS repo
+ *   docs/du-an/<slug>/                the hub's data: Figma scan, code proposal, sync marks, tags, Figma changes
  *
  * Usage: `await loadProjects()` once per request (lib/qc/project.ts), then `getProject(slug)` / `listProjects()`.
  * The list is read live from main through GitHub (the hub writes it there), so a new project shows at once;
@@ -39,7 +42,9 @@ export type Project = {
   scan?: ScanScope;
   scannedAt: string;
   count: number;
-  /** Repo-relative folder of the project's requirement Markdown (live projects). */
+  /** Its folder under projects/ (picked on the hub); the slug when not set. */
+  folder?: string;
+  /** Older saves: the requirement folder itself (projects/<folder>/requirements). */
   docsDir?: string;
   data?: Partial<DataDirs>;
 };
@@ -48,9 +53,19 @@ export const DEFAULT_PROJECT = "ics";
 export const PROJECTS_FILE = "docs/du-an/projects.json";
 /** Folder of a live project's hub data (scan, code proposal, sync marks, tags, Figma changes). */
 export const projectDir = (slug: string): string => `docs/du-an/${slug}`;
-export const defaultDocsDir = (slug: string): string => `projects/${slug}/requirements`;
-/** Folders ICS uses: no other project may take them as its docs folder. */
-export const RESERVED_DIRS = ["docs/requirements", "qc/requirements", "docs/he-thong-ma", "docs/pages", "docs/du-an", "docs/hub", "docs/dong-bo"];
+/** Every hub-added project has its folder under projects/ (see projects/README.md). */
+export const DOCS_ROOT = "projects";
+/** Folders under projects/ that are not a project: the ICS reference note and the template. */
+export const RESERVED_FOLDERS = ["ics", "_mau-du-an"];
+/** A folder name under projects/: letters, digits, "-" and "_", not starting with "." or "_". */
+export const FOLDER = /^[a-z0-9][a-z0-9_-]{0,59}$/;
+
+/** The project's folder under projects/. */
+export const folderOf = (p: Project): string => p.folder ?? p.docsDir?.match(/^projects\/([^/]+)/)?.[1] ?? p.slug;
+/** Where QC writes a hub-added project's requirements (originals). */
+export const originalsDir = (p: Project): string => `${DOCS_ROOT}/${folderOf(p)}/requirements`;
+/** Its generated code system, laid out like the ICS repo (scripts/he-thong-ma/du_an.py). */
+export const workDir = (p: Project): string => `${DOCS_ROOT}/${folderOf(p)}/_hub`;
 
 const ROOT = /* turbopackIgnore: true */ process.cwd();
 const json = <T,>(path: string, fallback: T): T => (existsSync(path) ? (JSON.parse(readFileSync(path, "utf-8")) as T) : fallback);
@@ -71,20 +86,13 @@ function ics(): Project {
   };
 }
 
-/** Data folders of a project: what it sets, else its docs folder and projects/<slug>/…. */
+/** Data folders of a project: what it sets (ICS), else its generated code system in projects/<folder>/_hub. */
 export const dataDirs = (p: Project): DataDirs => ({
-  sys: p.data?.sys ?? `projects/${p.slug}/he-thong-ma`,
-  requirements: p.data?.requirements ?? p.docsDir ?? defaultDocsDir(p.slug),
-  screenReq: p.data?.screenReq ?? `projects/${p.slug}/screen-requirements.json`,
+  sys: p.data?.sys ?? `${workDir(p)}/docs/he-thong-ma`,
+  requirements: p.data?.requirements ?? `${workDir(p)}/docs/requirements`,
+  screenReq: p.data?.screenReq ?? `${workDir(p)}/scripts/figma/screen-requirements.json`,
   pages: p.data?.pages ?? null,
 });
-
-/** "projects/abc/requirements/" → "projects/abc/requirements"; null when it leaves the repo or is not a folder name. */
-export function cleanDir(dir: string): string | null {
-  const d = dir.trim().replace(/\\/g, "/").replace(/^\.?\/+|\/+$/g, "").replace(/\/{2,}/g, "/");
-  if (!d || d.split("/").some((s) => s === "." || s === ".." || s.startsWith(".")) || !/^[\w\-./]+$/.test(d)) return null;
-  return d;
-}
 
 /** The saved list as last read live from GitHub, and when. */
 let live: { at: number; list: Project[] } | null = null;

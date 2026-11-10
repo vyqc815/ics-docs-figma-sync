@@ -52,7 +52,7 @@ export function Editor({ file, live, folder, project }: { file: string; live: bo
               setSaved(text);
               setNote("");
               return r.live
-                ? "Đã lưu vào repo. Hub đã đọc lại, bản mới hiện ngay."
+                ? "Đã lưu. Khoảng 1–2 phút nữa hệ thống chuyển template, gắn mã và báo Chat; Hub hiện bản mới ngay sau đó (không cần deploy)."
                 : "Đã lưu. Khoảng 1–2 phút nữa hệ thống chuyển template, gắn mã và báo Chat; bấm “Đưa lên Hub ngay” để không chờ lượt deploy.";
             })
           }
@@ -95,7 +95,7 @@ export function Editor({ file, live, folder, project }: { file: string; live: bo
       <p className="text-xs text-(--hub-faint)">
         Đây là bản gốc ({folder}/{file}). Ảnh Figma thật, tự cập nhật, không cần chụp: ghi mã màn ở tiêu đề mục (“### CD-KH-030200 — Danh sách
         bài học”), hoặc chèn ở bất kỳ đâu bằng <code>![](figma:CD-KH-030200)</code>.{" "}
-        {live ? "Màn được gắn vào tài liệu theo các mã màn ghi trong bài." : "Lưu xong hệ thống tự kiểm không mất nội dung; nếu thiếu sẽ giữ bản cũ và báo Chat."}
+        Lưu xong hệ thống tự kiểm không mất nội dung; nếu thiếu sẽ giữ bản cũ và báo Chat.
       </p>
     </div>
   );

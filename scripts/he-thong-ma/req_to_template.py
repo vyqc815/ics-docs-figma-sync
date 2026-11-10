@@ -17,7 +17,8 @@ from khoa_ma import Lock, rel_of
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 CODE = r"[A-Z]{2,4}(?:-[A-Z]{1,4})+-\d{6}(?:-DK)?"
-FRAMES = json.load(open(os.path.join(HERE, "..", "..", "docs", "he-thong-ma", "figma-frames.json")))["frames"]
+# HTM_WORK: work folder of the project being converted (khoa_ma.py); ICS by default
+FRAMES = json.load(open(os.path.join(os.environ.get("HTM_WORK") or os.path.join(HERE, "..", ".."), "docs", "he-thong-ma", "figma-frames.json")))["frames"]
 
 
 def cells(line):

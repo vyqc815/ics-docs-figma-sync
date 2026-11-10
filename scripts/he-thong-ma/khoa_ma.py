@@ -11,7 +11,9 @@ req_to_template.py và registry.py dùng chung module này nên mã hai bên lu�
 import collections, json, os, re, unicodedata
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-PATH = os.path.join(HERE, "..", "..", "docs", "he-thong-ma", "khoa-ma.json")
+# HTM_WORK: work folder of the project being converted (ICS: the repo; a hub-added project: projects/<slug>/_hub)
+WORK = os.environ.get("HTM_WORK") or os.path.join(HERE, "..", "..")
+PATH = os.path.join(WORK, "docs", "he-thong-ma", "khoa-ma.json")
 
 
 def norm(s):

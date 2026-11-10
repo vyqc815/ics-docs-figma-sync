@@ -2,12 +2,13 @@
 
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import { useMemo, useState, useTransition } from "react";
+import { useEffect, useMemo, useState, useTransition } from "react";
 import { FolderOpen, Loader2, RefreshCw, ScanSearch, SquareArrowOutUpRight, Wand2 } from "lucide-react";
 
 import { refreshProject, switchProject } from "@/lib/qc/project-actions";
 
-import { type ProjectInfo, rescanProject, type Screen, setDocsDir, startProposal } from "../actions";
+import { type FolderInfo, projectFolders, type ProjectInfo, rescanProject, type Screen, setFolder, startProposal } from "../actions";
+import { FolderPicker } from "../folder-picker";
 import { Grid } from "../projects";
 
 type Summary = { running: boolean; lastRun: string | null; total: number; review: number; codes: Record<string, string> };
@@ -15,13 +16,17 @@ type Summary = { running: boolean; lastRun: string | null; total: number; review
 /** A project's screens with their proposed codes: open it in the hub, scan Figma again, its docs folder, "Đề xuất mã". */
 export function ProjectView({
   project,
-  docsDir,
+  folder,
+  built,
   canEdit,
   screens,
   proposal,
 }: {
   project: ProjectInfo;
-  docsDir: string;
+  /** Its folder under projects/. */
+  folder: string;
+  /** Whether the code system was generated (projects/<folder>/_hub). */
+  built: boolean;
   canEdit: boolean;
   screens: Screen[];
   proposal: Summary;
@@ -30,7 +35,11 @@ export function ProjectView({
   const [kind, setKind] = useState("Tất cả");
   const [q, setQ] = useState("");
   const [msg, setMsg] = useState<{ ok: boolean; text: string } | null>(null);
-  const [dir, setDir] = useState(docsDir);
+  const [dir, setDir] = useState(folder);
+  const [folders, setFolders] = useState<FolderInfo[]>([]);
+  useEffect(() => {
+    if (canEdit) projectFolders().then(setFolders, () => setFolders([]));
+  }, [canEdit]);
   const [busy, start] = useTransition();
   const act = (fn: () => Promise<string>) =>
     start(async () => {
@@ -54,7 +63,10 @@ export function ProjectView({
         <div className="min-w-0 flex-1">
           <p className="font-semibold">Xem trong Hub</p>
           <p className="mt-1 text-sm text-(--hub-muted)">
-            Tổng quan, requirement, màn hình của dự án này: requirement là các file .md trong <span className="font-mono">{docsDir}</span> (nhánh main), màn từ lần quét Figma.
+            Requirement viết ở <span className="font-mono">projects/{folder}/requirements</span> (nhánh main).{" "}
+            {built
+              ? "Hệ thống mã đã chạy: cụm, item, REQ, testcase, mã trang như ICS."
+              : "Hệ thống mã chưa chạy (chưa có file .md, hoặc lần chạy đầu chưa xong): Hub tạm đọc thẳng bản gốc."}
           </p>
           {msg && <p className={`mt-1 text-sm ${msg.ok ? "text-(--hub-green)" : "text-(--hub-red)"}`}>{msg.text}</p>}
         </div>
@@ -88,21 +100,18 @@ export function ProjectView({
         </button>
       </section>
       {canEdit && (
-        <section className="flex flex-wrap items-center gap-3 rounded-3xl bg-(--hub-panel) p-5">
-          <p className="font-semibold">Thư mục docs</p>
-          <input
-            value={dir}
-            onChange={(e) => setDir(e.target.value)}
-            className="min-w-64 flex-1 rounded-xl border border-(--hub-line) bg-(--hub-panel-2) px-4 py-2.5 font-mono text-sm outline-none focus:border-(--hub-accent)"
-          />
+        <section className="flex flex-wrap items-end gap-3 rounded-3xl bg-(--hub-panel) p-5">
+          <div className="min-w-0 flex-1">
+            <FolderPicker folders={folders} value={dir} onChange={setDir} own={folder} />
+          </div>
           <button
             type="button"
-            disabled={busy || !dir.trim() || dir.trim() === docsDir}
+            disabled={busy || !dir.trim() || dir.trim() === folder}
             onClick={() =>
               act(async () => {
-                const r = await setDocsDir(project.slug, dir);
-                setDir(r.dir);
-                return `Docs ở ${r.dir}: ${r.files} file .md.`;
+                const r = await setFolder(project.slug, dir);
+                setFolders(await projectFolders());
+                return `Đã đổi sang projects/${r.name}: ${r.files} file requirement. Hệ thống mã chạy lại trong 1–2 phút.`;
               })
             }
             className="flex items-center gap-1.5 rounded-xl bg-(--hub-panel-2) px-4 py-2.5 text-sm hover:text-(--hub-accent) disabled:opacity-50"

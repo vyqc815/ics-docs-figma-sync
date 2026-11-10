@@ -23,12 +23,16 @@ import argparse, datetime, json, os, re, shutil, subprocess, sys, tempfile, zipf
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
+# --work also picks the code lock and Figma frames the modules below load at import (HTM_WORK, khoa_ma.py);
+# the scripts run after inherit it
+if "--work" in sys.argv[:-1]:
+    os.environ["HTM_WORK"] = os.path.abspath(sys.argv[sys.argv.index("--work") + 1])
 from kiem_noi_dung import missing  # noqa: E402
 from khoa_ma import Lock  # noqa: E402
 from req_to_template import CODE, FRAMES, convert  # noqa: E402
 
 KEEP_RAW = re.compile(r"(^|/)(requirement_template|legacy_source_review|[^/]*_audit)\.md$")
-IMAGE = re.compile(r"!\[[^\]]*\]\((?!https?:)([^)\s]+)\)")
+IMAGE = re.compile(r"!\[[^\]]*\]\((?!https?:|figma:)([^)\s]+)\)")
 
 
 def run(*args):

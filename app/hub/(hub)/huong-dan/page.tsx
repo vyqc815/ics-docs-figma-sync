@@ -45,28 +45,28 @@ const PROJECT_STEPS: Step[] = [
   {
     title: "QC · Thêm dự án mới",
     items: [
-      "Dự án › Dự án mới: nhập Tên dự án, MÃ (2–4 chữ in hoa, vd. ADM), link file Figma, bấm Đọc file. File Figma phải được chia sẻ cho tài khoản Figma của server.",
-      "Thư mục docs: thư mục trong repo này chứa requirement .md của dự án (gợi ý các thư mục có sẵn). Để trống là projects/<slug>/requirements. Không dùng được thư mục của ICS hay của dự án khác.",
+      "Dự án › Dự án mới: nhập Tên dự án, link file Figma, bấm Đọc file. File Figma phải được chia sẻ cho tài khoản Figma của server.",
+      "Thư mục: chọn theo tên một thư mục có sẵn trong projects/, hoặc “+ Thư mục mới…” rồi gõ tên: Hub tạo projects/<tên>/requirements từ mẫu (projects/_mau-du-an).",
       "Tick cả trang hoặc từng Section cần quét; giữ “Chỉ frame có mã ở đầu tên” nếu frame đã đặt tên “<MÃ> — <tên>”. Bấm Quét, xem kết quả, rồi Lưu dự án.",
-      "Danh sách dự án lưu chung cho cả team, hiện ngay, không cần deploy. Cần quyền QC hoặc admin. Dán lại link Figma của một dự án đã có thì Hub cập nhật dự án đó, không tạo dự án mới.",
+      "Lưu xong hệ thống mã chạy lần đầu (1–2 phút). Dán lại link Figma của một dự án đã có thì Hub cập nhật dự án đó, không tạo dự án mới. Cần quyền QC hoặc admin.",
     ],
   },
   {
-    title: "QC · Viết docs cho dự án mới",
+    title: "QC · Viết requirement cho dự án",
     items: [
-      "Mỗi file .md trong thư mục docs (cả thư mục con) là một tài liệu; dòng # đầu tiên là tên. Đẩy lên nhánh main hoặc sửa trên Hub (bút chì): Hub đọc lại trong vài phút, bấm “Đọc lại docs” ở trang dự án để lấy ngay.",
-      "Ghi mã màn (vd. ADM-KH-010100) trong bài: Hub gắn màn đó vào tài liệu, hiện ảnh Figma ở panel phải. Chèn ảnh màn ở bất kỳ đâu bằng ![](figma:ADM-KH-010100); ảnh khác để cạnh file .md, link tương đối.",
-      "Dự án mới không có item, REQ, testcase như ICS: mỗi file là một cụm gồm các màn nó nhắc; màn chưa file nào nhắc nằm ở cụm “Màn chưa có trong docs”.",
-      "Đồng bộ, tag, tiến độ dev dùng như ICS, riêng cho từng dự án. Figma của dự án được quét mỗi giờ cùng ICS; tin đổi màn vào luồng Chat figma-<MÃ>.",
+      "Bản gốc ở projects/<tên>/requirements (như qc/requirements của ICS): git pull → sửa / thêm <module>/<chuc-nang>.md → commit → push lên main. Hoặc sửa trên Hub (bút chì).",
+      "Viết theo template như ICS: ## 1. UI với các mục ### Trang N, ghi mã màn trong mục; testcase Given / When / Then; REQ; Cần xác nhận. Mẫu: projects/_mau-du-an, hướng dẫn: projects/README.md.",
+      "Sau khi push, hệ thống chuyển template, gắn mã trang / khu vực / item, dựng cụm, registry, testcase như ICS (projects/<tên>/_hub, không sửa tay) và báo Chat. Thiếu nội dung thì dừng, giữ bản cũ.",
+      "Hub có bản mới sau vài phút, không cần deploy; “Đọc lại docs” ở trang dự án để lấy ngay.",
     ],
   },
   {
     title: "QC · Dùng và cập nhật dự án",
     items: [
-      "Chọn dự án ở ô “Dự án” trên đầu trang (hoặc Mở trong Hub ở trang dự án): Tổng quan, Requirement, Màn, Cụm, Đồng bộ, Tag, Tiến độ đều theo dự án đang chọn.",
-      "Design thêm frame, đổi tên, đặt mã: trang dự án › “Quét lại Figma” (quét lại đúng các trang/Section đã chọn lúc thêm).",
-      "Chỉ màn có mã mới hiện trong Hub. File chưa có mã: Đề xuất mã → Duyệt mã & gửi design. Mã đã đề xuất được Hub dùng ngay; design đổi tên frame theo cột “Tên mới” rồi Quét lại Figma.",
-      "Đổi thư mục docs ở trang dự án. Bỏ dự án (thùng rác) xoá dữ liệu Hub của dự án (lần quét, đề xuất mã, mốc đồng bộ, tag); thư mục docs được giữ.",
+      "Chọn dự án ở ô “Dự án” trên đầu trang: Tổng quan, Requirement, Màn, Cụm, Item, Testcase, Đồng bộ, Tag, Tiến độ, Chưa gắn mã đều theo dự án đang chọn.",
+      "Design thêm frame, đổi tên, đặt mã: trang dự án › “Quét lại Figma”; hệ thống mã chạy lại theo danh sách màn mới. Figma của dự án được quét mỗi giờ, tin đổi màn vào luồng Chat figma-<MÃ>.",
+      "Chỉ màn có mã mới hiện trong Hub. File chưa có mã: Đề xuất mã → Duyệt mã & gửi design; mã đã lưu được dùng ngay, design đổi tên frame theo cột “Tên mới” rồi Quét lại Figma.",
+      "Đổi thư mục ở trang dự án. Bỏ dự án (thùng rác) xoá dữ liệu Hub của dự án (lần quét, đề xuất mã, mốc đồng bộ, tag); thư mục projects/<tên> được giữ.",
     ],
   },
 ];

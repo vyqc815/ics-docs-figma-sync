@@ -5,7 +5,7 @@ import Link from "next/link";
 
 import { can, session } from "@/lib/qc/auth";
 import { baDocsMode } from "@/lib/qc/store";
-import { dataDirs, isLive } from "@/lib/projects";
+import { isLive, originalsDir } from "@/lib/projects";
 import { hubProject } from "@/lib/qc/project";
 
 import { Editor } from "./editor";
@@ -26,7 +26,7 @@ const EditPage = async ({ searchParams }: { searchParams: Promise<{ f?: string }
             Xem luồng viết requirement →
           </Link>
         </Panel>
-      ) : can(await session(), "edit") ? <Editor file={f} live={live} folder={live ? dataDirs(project).requirements : "qc/requirements"} project={live ? project.slug : undefined} /> : <Panel>Tài khoản dev chỉ được xem. Cần quyền QC hoặc admin để sửa requirement.</Panel>}
+      ) : can(await session(), "edit") ? <Editor file={f} live={live} folder={live ? originalsDir(project) : "qc/requirements"} project={live ? project.slug : undefined} /> : <Panel>Tài khoản dev chỉ được xem. Cần quyền QC hoặc admin để sửa requirement.</Panel>}
     </>
   );
 };

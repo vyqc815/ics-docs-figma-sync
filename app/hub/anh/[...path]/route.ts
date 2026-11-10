@@ -2,7 +2,7 @@ import { readFile } from "node:fs/promises";
 import { extname, join, normalize, sep } from "node:path";
 
 import { signedIn } from "@/lib/qc/auth";
-import { dataDirs, isLive } from "@/lib/projects";
+import { dataDirs, isLive, originalsDir } from "@/lib/projects";
 import { readBytes } from "@/lib/qc/github";
 import { reqDir } from "@/lib/qc/data";
 import { hubProject } from "@/lib/qc/project";
@@ -29,7 +29,9 @@ export async function GET(_req: Request, { params }: { params: Promise<{ path: s
   // a hub-added project's docs are read live from main: its images too (the copy on disk without GitHub)
   if (isLive(project)) {
     const rel = file.slice(REQ_DIR.length + 1).split(sep).join("/");
-    const bytes = await readBytes(`${dataDirs(project).requirements}/${rel}`).catch(() => null);
+    // the converted copy (images copied with it), else the original before the code system first ran
+    const bytes =
+      (await readBytes(`${dataDirs(project).requirements}/${rel}`).catch(() => null)) ?? (await readBytes(`${originalsDir(project)}/${rel}`).catch(() => null));
     if (bytes) return new Response(bytes as BodyInit, { headers: { "Content-Type": type, "Cache-Control": "private, max-age=300" } });
   }
   try {

@@ -14,8 +14,11 @@ run_url = os.environ.get("RUN_URL", "")
 kind = sys.argv[1]
 if kind == "ok":
     body = open(sys.argv[2], encoding="utf-8").read().strip()
-    text = (f"*[{project}] Requirement đã cập nhật từ docs BA*\n{body}\n"
-            f"Web QC Hub (/hub) có bản mới ở lượt deploy kế tiếp (9h, 13h hoặc 17h) (version {os.environ.get('QC_VERSION', '?')}).")
+    if os.environ.get("HUB_LIVE"):  # hub-added projects: the hub reads main live (requirements-du-an.yml)
+        text = f"*[{project}] Requirement đã cập nhật*\n{body}\nWeb QC Hub (/hub) có bản mới ngay (vài phút), không cần deploy."
+    else:
+        text = (f"*[{project}] Requirement đã cập nhật từ docs BA*\n{body}\n"
+                f"Web QC Hub (/hub) có bản mới ở lượt deploy kế tiếp (9h, 13h hoặc 17h) (version {os.environ.get('QC_VERSION', '?')}).")
 elif kind == "khong-doi":
     text = f"*[{project}] Docs BA vừa đổi*, kết quả sau khi chuyển không khác bản đang có, không cần cập nhật."
 else:

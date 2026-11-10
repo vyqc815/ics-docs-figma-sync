@@ -8,7 +8,8 @@ import { ChevronLeft, FolderPlus, Loader2, ScanSearch, Trash2 } from "lucide-rea
 import { withBase } from "@/lib/base-path";
 import { switchProject } from "@/lib/qc/project-actions";
 
-import { deleteProject, docsFolders, type Outline, type ProjectInfo, readFigmaFile, saveProject, type Screen, scanFigmaFile, slugFor } from "./actions";
+import { deleteProject, type FolderInfo, type Outline, projectFolders, type ProjectInfo, readFigmaFile, saveProject, type Screen, scanFigmaFile, slugFor } from "./actions";
+import { FolderPicker } from "./folder-picker";
 
 /**
  * Projects page: ICS is built in; other projects come from a Figma link + the folder of this repo that holds
@@ -20,16 +21,6 @@ type Project = { fileKey: string };
 const btn = "flex items-center gap-1.5 rounded-xl px-4 py-2.5 text-sm font-medium disabled:opacity-50";
 const primary = `${btn} bg-(--hub-accent-strong) text-white hover:bg-(--hub-accent)`;
 const ghost = `${btn} bg-(--hub-panel-2) hover:text-(--hub-accent)`;
-const initials = (name: string) =>
-  name
-    .normalize("NFD")
-    .replace(/[\u0300-\u036f]/g, "")
-    .split(/[^A-Za-z0-9]+/)
-    .filter(Boolean)
-    .map((w) => w[0])
-    .join("")
-    .toUpperCase()
-    .slice(0, 4);
 const thumb = (p: Pick<Project, "fileKey">, s: Screen) => withBase(`/hub/node-anh?file=${p.fileKey}&node=${encodeURIComponent(s.id)}&scale=0.25`);
 
 export function Projects({ ics, initial, canEdit }: { ics: { screens: number; clusters: number }; initial: ProjectInfo[]; canEdit: boolean }): React.JSX.Element {
@@ -62,9 +53,9 @@ export function Projects({ ics, initial, canEdit }: { ics: { screens: number; cl
             <Link href={`/hub/du-an/${p.slug}`} className="block">
               <p className="text-lg font-semibold">{p.name}</p>
               <p className="mt-1 text-sm text-(--hub-muted)">
-                {p.count} màn · mã <span className="font-mono">{p.code}</span> · file “{p.fileName}”
+                {p.count} màn · file “{p.fileName}”
               </p>
-              <p className="mt-1 truncate font-mono text-xs text-(--hub-muted)">docs: {p.docsDir ?? `projects/${p.slug}/requirements`}</p>
+              <p className="mt-1 truncate font-mono text-xs text-(--hub-muted)">docs: projects/{p.folder ?? p.docsDir?.split("/")[1] ?? p.slug}/requirements</p>
               <p className="mt-3 text-xs text-(--hub-faint)">Quét lúc {new Date(p.scannedAt).toLocaleString("vi-VN")}</p>
             </Link>
             {canEdit && <button
@@ -91,14 +82,12 @@ export function Projects({ ics, initial, canEdit }: { ics: { screens: number; cl
 
 function NewProject({ onCancel, onSaved }: { onCancel: () => void; onSaved: (slug: string) => void }): React.JSX.Element {
   const [name, setName] = useState("");
-  const [code, setCode] = useState("");
   const [link, setLink] = useState("");
-  const [docsDir, setDocsDir] = useState("");
-  const [folders, setFolders] = useState<{ dir: string; files: number; used: string | null }[]>([]);
+  const [folder, setFolder] = useState("");
+  const [folders, setFolders] = useState<FolderInfo[]>([]);
   useEffect(() => {
-    docsFolders().then(setFolders, () => setFolders([]));
+    projectFolders().then(setFolders, () => setFolders([]));
   }, []);
-  const known = folders.find((f) => f.dir === docsDir.trim().replace(/\/$/, ""));
   const [outline, setOutline] = useState<Outline | null>(null);
   const [pages, setPages] = useState<Set<string>>(new Set());
   const [sections, setSections] = useState<Set<string>>(new Set());
@@ -140,13 +129,6 @@ function NewProject({ onCancel, onSaved }: { onCancel: () => void; onSaved: (slu
         <div className="grid gap-3 md:grid-cols-[1fr_2fr_auto]">
           <div className="flex gap-2">
             <input value={name} onChange={(e) => setName(e.target.value)} placeholder="Tên dự án" className="min-w-0 flex-1 rounded-xl border border-(--hub-line) bg-(--hub-panel-2) px-4 py-2.5 text-sm outline-none focus:border-(--hub-accent)" />
-            <input
-              value={code}
-              onChange={(e) => setCode(e.target.value.toUpperCase().replace(/[^A-Z]/g, "").slice(0, 4))}
-              placeholder="MÃ"
-              title="Tiền tố mã của dự án (2–4 chữ in hoa), VD: ICS"
-              className="w-20 rounded-xl border border-(--hub-line) bg-(--hub-panel-2) px-3 py-2.5 font-mono text-sm outline-none focus:border-(--hub-accent)"
-            />
           </div>
           <input value={link} onChange={(e) => setLink(e.target.value)} placeholder="Link file Figma: https://www.figma.com/design/…" className="rounded-xl border border-(--hub-line) bg-(--hub-panel-2) px-4 py-2.5 text-sm outline-none focus:border-(--hub-accent)" />
           <button
@@ -161,37 +143,18 @@ function NewProject({ onCancel, onSaved }: { onCancel: () => void; onSaved: (slu
                 setPages(new Set());
                 setSections(new Set());
                 if (!name) setName(o.name);
-                if (!code) setCode(initials(name || o.name));
-                if (!docsDir) setDocsDir(`projects/${await slugFor(name || o.name)}/requirements`);
+                if (!folder) {
+                  // a free folder named like the project, else a new one with its slug
+                  const slug = await slugFor(name || o.name);
+                  setFolder(folders.find((f) => f.name === slug && !f.used)?.name ?? slug);
+                }
               })
             }
           >
             {busy && !outline ? <Loader2 className="size-4 animate-spin" /> : null} Đọc file
           </button>
         </div>
-        <div className="space-y-1">
-          <input
-            value={docsDir}
-            onChange={(e) => setDocsDir(e.target.value)}
-            list="docs-folders"
-            placeholder="Thư mục docs trong repo này, vd. projects/ten-du-an/requirements"
-            className="w-full rounded-xl border border-(--hub-line) bg-(--hub-panel-2) px-4 py-2.5 font-mono text-sm outline-none focus:border-(--hub-accent)"
-          />
-          <datalist id="docs-folders">
-            {folders.filter((f) => !f.used).map((f) => (
-              <option key={f.dir} value={f.dir}>{f.files} file .md</option>
-            ))}
-          </datalist>
-          <p className="text-xs text-(--hub-faint)">
-            {!docsDir.trim()
-              ? "Để trống: projects/<slug>/requirements. Requirement của dự án viết thành file .md trong thư mục này."
-              : known?.used
-                ? `Thư mục này đang là docs của dự án “${known.used}”.`
-                : known
-                  ? `${known.files} file .md trong thư mục (tính cả thư mục con).`
-                  : "Thư mục chưa có file .md: lưu được, Hub hiện tài liệu khi file được đẩy lên main."}
-          </p>
-        </div>
+        <FolderPicker folders={folders} value={folder} onChange={setFolder} />
         {error && <p className="text-sm text-(--hub-red)">{error}</p>}
       </section>
 
@@ -241,7 +204,7 @@ function NewProject({ onCancel, onSaved }: { onCancel: () => void; onSaved: (slu
             <button
               type="button"
               className={primary}
-              disabled={busy || !screens.length || code.length < 2}
+              disabled={busy || !screens.length}
               onClick={() =>
                 run(async () => {
                   const picked = outline.pages.filter((p) => pages.has(p.id) || p.sections.some((x) => sections.has(x.id))).map((p) => p.name);
@@ -249,12 +212,11 @@ function NewProject({ onCancel, onSaved }: { onCancel: () => void; onSaved: (slu
                     await saveProject(
                       {
                         name: name || outline.name,
-                        code,
                         fileKey: outline.fileKey,
                         fileName: outline.name,
                         pages: picked,
                         scan: { pageIds: [...pages], sectionIds: [...sections], onlyCoded },
-                        docsDir: docsDir.trim(),
+                        folder: folder.trim(),
                       },
                       screens,
                     ),

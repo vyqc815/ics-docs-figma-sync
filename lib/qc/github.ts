@@ -48,6 +48,7 @@ export async function writeFile(path: string, text: string, message: string, sha
   });
   if (res.status === 409 || res.status === 422) throw new Error("File vừa được người khác lưu. Tải lại trang rồi làm lại.");
   if (!res.ok) throw new Error(`Lưu thất bại (GitHub ${res.status}).`);
+  forgetTree();
   return ((await res.json()) as { content: { sha: string } }).content.sha;
 }
 
@@ -74,11 +75,40 @@ async function api<T>(path: string, init?: RequestInit): Promise<T> {
   return (await res.json()) as T;
 }
 
+/** The whole tree of main, kept a few seconds: one hub page may list several folders. */
+let tree: { at: number; entries: Promise<TreeEntry[]> } | null = null;
+const TREE_MS = 10_000;
+
 /** Every file on main under a folder (all of them without one), paths repo-relative. */
 export async function listFiles(prefix = ""): Promise<TreeEntry[]> {
-  const j = await api<{ tree: TreeEntry[]; truncated?: boolean }>(`/git/trees/main?recursive=1`);
+  if (!tree || Date.now() - tree.at > TREE_MS) {
+    const entries = api<{ tree: TreeEntry[] }>(`/git/trees/main?recursive=1`).then((j) => j.tree.filter((e) => e.type === "blob"));
+    tree = { at: Date.now(), entries };
+    entries.catch(() => (tree = null));
+  }
   const p = prefix ? `${prefix.replace(/\/$/, "")}/` : "";
-  return j.tree.filter((e) => e.type === "blob" && e.path.startsWith(p));
+  return (await tree.entries).filter((e) => e.path.startsWith(p));
+}
+
+/** Forget the cached tree, after the hub committed. */
+export const forgetTree = (): void => void (tree = null);
+
+/** Copies every file under one folder of main to another in one commit (same blobs, no upload); returns how many. */
+export async function copyFolder(from: string, to: string, message: string, skip: (rel: string) => boolean = () => false): Promise<number> {
+  const src = `${from.replace(/\/$/, "")}/`;
+  const head = (await api<{ object: { sha: string } }>("/git/ref/heads/main")).object.sha;
+  const commit = await api<{ tree: { sha: string } }>(`/git/commits/${head}`);
+  const all = await api<{ tree: TreeEntry[] }>(`/git/trees/${commit.tree.sha}?recursive=1`);
+  const files = all.tree.filter((e) => e.type === "blob" && e.path.startsWith(src) && !skip(e.path.slice(src.length)));
+  if (!files.length) return 0;
+  const made = await api<{ sha: string }>("/git/trees", {
+    method: "POST",
+    body: JSON.stringify({ base_tree: commit.tree.sha, tree: files.map((e) => ({ path: `${to}/${e.path.slice(src.length)}`, mode: "100644", type: "blob", sha: e.sha })) }),
+  });
+  const c = await api<{ sha: string }>("/git/commits", { method: "POST", body: JSON.stringify({ message, tree: made.sha, parents: [head] }) });
+  await api("/git/refs/heads/main", { method: "PATCH", body: JSON.stringify({ sha: c.sha, force: false }) });
+  forgetTree();
+  return files.length;
 }
 
 /** Text of a blob by its sha (from listFiles); the sha names the content, so callers may cache by it. */
@@ -101,6 +131,7 @@ export async function deleteFolder(prefix: string, message: string): Promise<num
   });
   const made = await api<{ sha: string }>("/git/commits", { method: "POST", body: JSON.stringify({ message, tree: tree.sha, parents: [head] }) });
   await api("/git/refs/heads/main", { method: "PATCH", body: JSON.stringify({ sha: made.sha, force: false }) });
+  forgetTree();
   return gone.length;
 }
 

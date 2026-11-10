@@ -2,27 +2,27 @@
 
 import { requireRole } from "@/lib/qc/auth";
 import {
-  cleanDir,
   DEFAULT_PROJECT,
-  dataDirs,
-  defaultDocsDir,
+  DOCS_ROOT,
+  FOLDER,
+  folderOf,
   getProject,
   loadProjects,
   type Project,
   projectDir,
   PROJECTS_FILE,
   reloadProjects,
-  RESERVED_DIRS,
+  RESERVED_FOLDERS,
   type ScanScope,
 } from "@/lib/projects";
-import { deleteFolder, listFiles, readFile, startWorkflow, workflowRuns, writeFile } from "@/lib/qc/github";
+import { copyFolder, deleteFolder, listFiles, readFile, startWorkflow, workflowRuns, writeFile } from "@/lib/qc/github";
 import { primeLive } from "@/lib/qc/remote";
 
 /**
  * Reading a Figma file for the "Dự án" page: its pages and sections, then the screens in the parts the
  * user ticked. Through the REST API with the server's FIGMA_ACCESS_TOKEN (the file must be shared with it).
  * Projects are saved in this repo: the list in docs/du-an/projects.json, each project's data in
- * docs/du-an/<slug>/, its requirement Markdown in a folder of this repo (docsDir). QC / admin only.
+ * docs/du-an/<slug>/, its requirements and generated code system in projects/<folder>/. QC / admin only.
  */
 
 type Rn = { id: string; name: string; type: string; children?: Rn[]; absoluteBoundingBox?: { width: number; height: number } };
@@ -141,49 +141,70 @@ export async function slugFor(name: string): Promise<string> {
   return slug;
 }
 
-/** Folders of this repo that hold Markdown, with how many files: choices for a project's docs folder. */
-export async function docsFolders(): Promise<{ dir: string; files: number; used: string | null }[]> {
+export type FolderInfo = { name: string; files: number; built: boolean; used: string | null };
+
+/** Folders under projects/ (one per project, picked by name), with how many requirement files each holds. */
+export async function projectFolders(): Promise<FolderInfo[]> {
   await requireRole("edit");
-  const list = await loadProjects();
+  const list = (await loadProjects()).filter((p) => p.slug !== DEFAULT_PROJECT);
+  const found = new Map<string, FolderInfo>();
+  for (const e of await listFiles(DOCS_ROOT)) {
+    const [, name, ...rest] = e.path.split("/");
+    if (!name || !rest.length || !FOLDER.test(name) || RESERVED_FOLDERS.includes(name)) continue;
+    const f = found.get(name) ?? { name, files: 0, built: false, used: list.find((p) => folderOf(p) === name)?.name ?? null };
+    if (rest[0] === "requirements" && e.path.endsWith(".md")) f.files += 1;
+    if (rest[0] === "_hub") f.built = true;
+    found.set(name, f);
+  }
+  return [...found.values()].sort((x, y) => x.name.localeCompare(y.name));
+}
+
+/** A folder this project may use: a plain name, not the template / ICS note, not another project's. */
+async function checkFolder(folder: string, slug: string): Promise<string> {
+  const f = folder.trim();
+  if (!FOLDER.test(f)) throw new Error("Tên thư mục chỉ gồm chữ thường không dấu, số, “-” hoặc “_”, vd. thu-hoa-don.");
+  if (RESERVED_FOLDERS.includes(f)) throw new Error(`projects/${f} là mẫu / ghi chú tham chiếu, chọn thư mục khác.`);
+  const other = (await loadProjects()).find((p) => p.slug !== slug && p.slug !== DEFAULT_PROJECT && folderOf(p) === f);
+  if (other) throw new Error(`projects/${f} đang là thư mục của dự án “${other.name}”.`);
+  return f;
+}
+
+/** A folder new on main gets the template's requirements (projects/_mau-du-an), so QC fills it in. */
+async function ensureFolder(folder: string, name: string): Promise<void> {
+  if ((await listFiles(`${DOCS_ROOT}/${folder}`)).length) return;
+  await copyFolder(`${DOCS_ROOT}/_mau-du-an`, `${DOCS_ROOT}/${folder}`, `Dự án ${name}: tạo projects/${folder} từ mẫu`, (rel) => rel === "README.md");
+}
+
+/** "ADM-KH-010100" frames → "ADM"; none → initials of the name ("Thu hoá đơn" → "THD"), 2–4 letters. */
+function codeOf(name: string, screens: Screen[]): string {
   const count = new Map<string, number>();
-  for (const e of await listFiles())
-    if (e.path.endsWith(".md") && !e.path.startsWith(".") && !e.path.startsWith("node_modules/")) {
-      const parts = e.path.split("/").slice(0, -1);
-      for (let i = 1; i <= parts.length; i++) count.set(parts.slice(0, i).join("/"), (count.get(parts.slice(0, i).join("/")) ?? 0) + 1);
-    }
-  return [...count]
-    .filter(([dir]) => !RESERVED_DIRS.some((r) => dir === r || dir.startsWith(`${r}/`)))
-    .map(([dir, files]) => ({ dir, files, used: list.find((p) => dataDirs(p).requirements === dir)?.name ?? null }))
-    .sort((a, b) => a.dir.localeCompare(b.dir));
+  for (const s of screens) if (s.code) count.set(s.code.split("-")[0], (count.get(s.code.split("-")[0]) ?? 0) + 1);
+  const top = [...count].sort((a, b) => b[1] - a[1])[0]?.[0];
+  if (top) return top;
+  const letters = slugOf(name).split("-").map((w) => w[0] ?? "").join("").toUpperCase().slice(0, 4);
+  return letters.length >= 2 ? letters : (slugOf(name).replace(/-/g, "").toUpperCase().slice(0, 3) || "DA").padEnd(2, "A");
 }
 
-/** A docs folder this project may use: inside the repo, not ICS's, not another project's (nor inside one). */
-async function checkDir(dir: string, slug: string): Promise<{ dir: string; files: number }> {
-  const d = cleanDir(dir);
-  if (!d) throw new Error("Thư mục docs không hợp lệ: ghi đường dẫn trong repo, vd. projects/ten-du-an/requirements.");
-  const inside = (a: string, b: string) => a === b || a.startsWith(`${b}/`) || b.startsWith(`${a}/`);
-  if (RESERVED_DIRS.some((r) => inside(d, r))) throw new Error(`Thư mục ${d} thuộc dữ liệu của ICS/Hub, chọn thư mục khác.`);
-  const other = (await loadProjects()).find((p) => p.slug !== slug && inside(dataDirs(p).requirements, d));
-  if (other) throw new Error(`Thư mục ${d} đang là docs của dự án “${other.name}”.`);
-  const files = (await listFiles(d)).filter((e) => e.path.endsWith(".md")).length;
-  return { dir: d, files };
-}
-
-type NewProject = { name: string; code: string; fileKey: string; fileName: string; pages: string[]; scan: ScanScope; docsDir: string };
+type NewProject = { name: string; fileKey: string; fileName: string; pages: string[]; scan: ScanScope; folder: string };
 
 /** Saves a project (a new one, or the one already made from this Figma file) with its scanned screens. */
 export async function saveProject(p: NewProject, screens: Screen[]): Promise<string> {
   await requireRole("edit");
-  if (!/^[A-Z]{2,4}$/.test(p.code)) throw new Error("Mã dự án là 2–4 chữ in hoa, vd. ADM.");
   const ics = getProject(DEFAULT_PROJECT);
   if (ics?.fileKey && ics.fileKey === p.fileKey) throw new Error("File Figma này là của ICS, đã có sẵn trong Hub.");
   const current = await readFile(LIST);
   const list: ProjectInfo[] = current ? JSON.parse(current.text) : [];
   const old = list.find((x) => x.fileKey === p.fileKey && x.slug !== DEFAULT_PROJECT);
   const slug = old?.slug ?? (await slugFor(p.name));
-  const { dir } = await checkDir(p.docsDir || defaultDocsDir(slug), slug);
+  const folder = await checkFolder(p.folder || slug, slug);
+  await ensureFolder(folder, p.name);
   await writeScreens(slug, p.name, screens);
-  const next = [...list.filter((x) => x.slug !== slug), { ...old, ...p, docsDir: dir, slug, count: screens.length, scannedAt: new Date().toISOString() }];
+  const { docsDir: _old, ...rest } = old ?? ({} as Partial<ProjectInfo>);
+  void _old;
+  // no project code to type: the prefix most frames already carry, else the initials of the name (Chat threads, proposals)
+  const code = rest.code ?? codeOf(p.name, screens);
+  const next = [...list.filter((x) => x.slug !== slug), { ...rest, ...p, code, folder, slug, count: screens.length, scannedAt: new Date().toISOString() }];
+  // this commit runs requirements-du-an.yml: the code system of the project is built from its folder
   await writeFile(LIST, `${JSON.stringify(next, null, 1)}\n`, `Dự án ${p.name}: lưu`, current?.sha);
   reloadProjects();
   return slug;
@@ -226,13 +247,16 @@ export async function rescanProject(slug: string): Promise<number> {
   return screens.length;
 }
 
-/** Points the project at another docs folder of this repo. */
-export async function setDocsDir(slug: string, dir: string): Promise<{ dir: string; files: number }> {
+/** Points the project at another folder under projects/ (created from the template when new). */
+export async function setFolder(slug: string, folder: string): Promise<FolderInfo> {
   await requireRole("edit");
-  const checked = await checkDir(dir, slug);
-  const next = await patchProject(slug, { docsDir: checked.dir }, `Dự án ${slug}: docs ở ${checked.dir}`);
+  const f = await checkFolder(folder, slug);
+  const p = (await listProjects()).find((x) => x.slug === slug);
+  if (!p) throw new Error("Không thấy dự án.");
+  await ensureFolder(f, p.name);
+  const next = await patchProject(slug, { folder: f, docsDir: undefined }, `Dự án ${p.name}: thư mục projects/${f}`);
   await primeLive(next, true).catch(() => undefined);
-  return checked;
+  return (await projectFolders()).find((x) => x.name === f) ?? { name: f, files: 0, built: false, used: p.name };
 }
 
 /** Removes the project from the list and its hub data (docs/du-an/<slug>); its docs folder is kept. */
