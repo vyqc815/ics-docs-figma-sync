@@ -5,7 +5,7 @@
   du_an.py --changed <sha-trước> <sha-sau>     # các dự án có file đổi giữa hai commit (requirements-du-an.yml)
 
 Mỗi dự án có một thư mục projects/<thư mục>/ (chọn ở Hub, trường "folder"):
-  requirements/   bản gốc QC viết (như qc/requirements của ICS)
+  requirements/   bản gốc QC viết (như projects/ics/requirements của ICS)
   _hub/           thư mục làm việc sinh tự động, cùng bố cục với repo ICS để dùng chung các script:
     figma.pages.json                    fileKey (dự án chưa có code demo: pages rỗng)
     lib/figma-frame-ids.generated.json  mã → node id (apply_page_codes.py)

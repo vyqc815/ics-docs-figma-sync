@@ -1,5 +1,5 @@
 # Hệ thống mã cho các dự án thêm từ Hub, giống requirements.yml của ICS.
-# QC sửa bản gốc ở projects/<thư mục>/requirements (máy cá nhân push lên main, hoặc bút chì trên Hub),
+# QC sửa bản gốc ở projects/<thư mục>/requirements (push lên main),
 # hoặc Hub quét lại Figma / lưu mã đề xuất / lưu danh sách dự án
 # → du_an.py: figma-frames từ lần quét, chuyển template, gắn mã, cụm, registry, testcase → projects/<thư mục>/_hub
 # → commit → báo Google Chat (luồng requirement-<MÃ DỰ ÁN>). Hub đọc main trực tiếp: không cần deploy.
@@ -10,6 +10,7 @@ on:
     branches: [main]
     paths:
       - "projects/*/requirements/**"
+      - "!projects/ics/**"
       - "docs/du-an/projects.json"
       - "docs/du-an/*/screens.json"
       - "docs/du-an/*/de-xuat-ma.json"

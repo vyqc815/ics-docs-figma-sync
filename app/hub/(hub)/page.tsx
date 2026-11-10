@@ -47,18 +47,22 @@ const Overview = async ({ searchParams }: { searchParams: Promise<{ q?: string }
         </Panel>
       )}
 
-      <div className="mb-6 grid grid-cols-2 gap-3 md:grid-cols-3 xl:grid-cols-6">
-        <Stat label="Cụm màn" value={clusters().length} />
-        <Stat label="Frame Figma" value={Object.keys(frames()).length} hint={`${Object.keys(reserved()).length} mã dự kiến`} />
-        <Stat label="File requirement" value={<Link href="/hub/requirement" className="hover:text-(--hub-accent)">{files}</Link>} />
-        <Stat label="Item requirement" value={items} hint={`${Math.round((matched / Math.max(items, 1)) * 100)}% thấy trên Figma`} tone="green" />
-        <Stat label="Testcase" value={sum("testcases")} />
-        <Stat label="Trang chưa gắn mã" value={unmappedPages().length} tone="amber" hint={<Link href="/hub/chua-gan-ma" className="hover:text-(--hub-accent)">Xem danh sách →</Link>} />
-      </div>
+      {!q && (
+        <>
+          <div className="mb-6 grid grid-cols-2 gap-3 md:grid-cols-3 xl:grid-cols-6">
+            <Stat label="Cụm màn" value={clusters().length} />
+            <Stat label="Frame Figma" value={Object.keys(frames()).length} hint={`${Object.keys(reserved()).length} mã dự kiến`} />
+            <Stat label="File requirement" value={<Link href="/hub/requirement" className="hover:text-(--hub-accent)">{files}</Link>} />
+            <Stat label="Item requirement" value={items} hint={`${Math.round((matched / Math.max(items, 1)) * 100)}% thấy trên Figma`} tone="green" />
+            <Stat label="Testcase" value={sum("testcases")} />
+            <Stat label="Trang chưa gắn mã" value={unmappedPages().length} tone="amber" hint={<Link href="/hub/chua-gan-ma" className="hover:text-(--hub-accent)">Xem danh sách →</Link>} />
+          </div>
 
-      <Panel title={`Cụm màn (${clusters().length})`}>
-        <ClusterGrid />
-      </Panel>
+          <Panel title={`Cụm màn (${clusters().length})`}>
+            <ClusterGrid />
+          </Panel>
+        </>
+      )}
     </>
   );
 };

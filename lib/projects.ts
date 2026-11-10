@@ -5,7 +5,7 @@ import { join } from "node:path";
  * Projects the hub serves. Each one has its own Figma file, its own requirement docs and the same code system
  * (clusters, registry, items, testcases, codes) built by scripts/he-thong-ma. ICS is built in and keeps the
  * folders it always had; projects added from the "Dự án" page live in docs/du-an/projects.json, with
- *   projects/<folder>/requirements/   QC's original Markdown (like qc/requirements of ICS)
+ *   projects/<folder>/requirements/   QC's original Markdown (like projects/ics/requirements of ICS)
  *   projects/<folder>/_hub/           the code system generated from it (scripts/he-thong-ma/du_an.py,
  *                                     .github/workflows/requirements-du-an.yml), laid out like the ICS repo
  *   docs/du-an/<slug>/                the hub's data: Figma scan, code proposal, sync marks, tags, Figma changes

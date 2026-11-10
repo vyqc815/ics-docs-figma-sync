@@ -41,7 +41,7 @@ export function Projects({ ics, initial, canEdit }: { ics: { screens: number; cl
         </div>
       )}
       <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
-        <button type="button" disabled={busy} onClick={() => start(() => switchProject("ics"))} className="rounded-2xl bg-(--hub-panel) p-5 text-left hover:bg-(--hub-panel-2)">
+        <button type="button" disabled={busy} onClick={() => start(() => switchProject("ics"))} className="cursor-pointer rounded-2xl bg-(--hub-panel) p-5 text-left hover:bg-(--hub-panel-2)">
           <p className="text-lg font-semibold">ICS</p>
           <p className="mt-1 text-sm text-(--hub-muted)">
             {ics.screens} màn · {ics.clusters} cụm · đủ requirement, registry, code
@@ -49,7 +49,7 @@ export function Projects({ ics, initial, canEdit }: { ics: { screens: number; cl
           <p className="mt-3 text-xs text-(--hub-green)">● Đang chạy tự động</p>
         </button>
         {list.map((p) => (
-          <div key={p.slug} className="relative rounded-2xl bg-(--hub-panel) p-5 hover:bg-(--hub-panel-2)">
+          <div key={p.slug} className="relative cursor-pointer rounded-2xl bg-(--hub-panel) p-5 hover:bg-(--hub-panel-2)">
             <Link href={`/hub/du-an/${p.slug}`} className="block">
               <p className="text-lg font-semibold">{p.name}</p>
               <p className="mt-1 text-sm text-(--hub-muted)">

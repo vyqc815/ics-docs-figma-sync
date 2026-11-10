@@ -1,9 +1,10 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { Download, History, PencilLine } from "lucide-react";
+import { Download, History } from "lucide-react";
 
 import { FigmaPanel, type PanelScreen } from "@/components/qc/figma-panel";
 import { RequirementMarkdown } from "@/components/qc/markdown";
+import { BackButton } from "@/components/qc/back-button";
 import { Tag } from "@/components/qc/ui";
 import { can, session } from "@/lib/qc/auth";
 import { STATES, syncRowsCached } from "@/lib/qc/dong-bo";
@@ -13,7 +14,7 @@ import { isLive } from "@/lib/projects";
 
 import { markSynced } from "../dong-bo/actions";
 import { saveTags } from "./actions";
-import { docMetaPath, baDocsMode, readJson, type DocMeta } from "@/lib/qc/store";
+import { docMetaPath, readJson, type DocMeta } from "@/lib/qc/store";
 import { BASE, withBase } from "@/lib/base-path";
 
 export const dynamic = "force-dynamic";
@@ -46,13 +47,12 @@ const DocPage = async ({ searchParams }: { searchParams: Promise<{ f?: string }>
   const cluster = clusterOfFile(f);
   const back = `/hub/docs?f=${encodeURIComponent(f)}`;
   const tags = (await readJson<DocMeta>(docMetaPath(), {}).catch((): DocMeta => ({})))[f]?.tags ?? [];
-  // BA docs mode is about ICS's requirements; a hub-added project is edited on the hub
-  const ba = baDocsMode() && !isLive(project);
 
   return (
     <div className="flex items-start">
       <div className="min-w-0 flex-1">
         <div className="mb-4 flex flex-wrap items-center gap-3 rounded-[20px] bg-(--hub-panel) px-4 py-3">
+          <BackButton fallback="/hub" />
           <span className="size-2.5 shrink-0 rounded-full" style={{ background: DOT[s.tone], boxShadow: `0 0 0 4px color-mix(in srgb, ${DOT[s.tone]} 18%, transparent)` }} />
           <div className="min-w-0 flex-1">
             <p className="text-[14px] font-medium">{s.label}</p>
@@ -67,17 +67,6 @@ const DocPage = async ({ searchParams }: { searchParams: Promise<{ f?: string }>
               <input type="hidden" name="back" value={back} />
               <button className="rounded-xl bg-(--hub-accent-strong) px-3 py-1.5 text-xs font-semibold text-white hover:bg-(--hub-accent)">Đã đồng bộ</button>
             </form>
-          )}
-          {ba ? (
-            <span title="Hub tự lấy bản mới mỗi 5 phút" className="text-xs text-(--hub-faint)">
-              Sửa ở repo docs, nhánh stable
-            </span>
-          ) : (
-            can(me, "edit") && (
-              <Link href={`/hub/requirement/sua?f=${encodeURIComponent(f)}`} title="Sửa requirement" className="rounded-lg p-2 text-(--hub-muted) hover:bg-(--hub-panel-2) hover:text-(--hub-text)">
-                <PencilLine className="size-4" />
-              </Link>
-            )
           )}
           <a href={withBase(`/hub/tai-md?f=${encodeURIComponent(f)}`)} title="Tải file MD" className="rounded-lg p-2 text-(--hub-muted) hover:bg-(--hub-panel-2) hover:text-(--hub-text)">
             <Download className="size-4" />

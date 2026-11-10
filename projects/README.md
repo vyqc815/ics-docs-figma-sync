@@ -7,10 +7,10 @@ REQ, testcase, màn → trang requirement, đồng bộ, tag, tiến độ dev, 
 ```
 projects/
 ├── README.md              ← file này
-├── ics/README.md          ← ICS: bảng so sánh, ICS giữ thư mục cũ (lý do ở trong)
+├── ics/README.md          ← ICS: bảng so sánh với dự án thêm từ Hub
 ├── _mau-du-an/            ← mẫu: Hub copy phần requirements/ khi tạo thư mục mới
 └── <tên-thư-mục>/         ← một dự án, vd. thu-hoa-don
-    ├── requirements/      ← QC VIẾT Ở ĐÂY (bản gốc, như qc/requirements của ICS)
+    ├── requirements/      ← QC VIẾT Ở ĐÂY (bản gốc; ICS cũng là một dự án: projects/ics/requirements)
     │   ├── tong-quan.md
     │   └── <module>/<chuc-nang>.md (+ images/)
     └── _hub/              ← SINH TỰ ĐỘNG, không sửa tay (như docs/requirements + docs/he-thong-ma của ICS)
@@ -48,7 +48,7 @@ git push origin main                       # 1–2 phút sau Hub có bản mới
 Không sửa và không commit tay `projects/*/_hub/` (Actions ghi lại mỗi lần chạy); không sửa tay `docs/du-an/**`.
 Chạy thử trên máy (cần Python 3): `python3 scripts/he-thong-ma/du_an.py <slug>`.
 
-## Quy ước viết (giống ICS: `qc/requirements/requirement_template.md`)
+## Quy ước viết (giống ICS: `projects/ics/requirements/requirement_template.md`)
 
 - Mỗi file `.md` là một tài liệu; dòng `# ...` đầu tiên là tên.
 - Phần `## 1. UI`: mỗi mục `### Trang N: <tên>` là một trang. **Ghi mã màn trong mục** (vd. `*Màn ABC-KH-010100*`):

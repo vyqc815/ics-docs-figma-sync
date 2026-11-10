@@ -197,9 +197,6 @@ jobs:
           set -a; . /opt/docs-figma/app/.env; . /opt/docs-figma/hub/.env; set +a
           cd /opt/docs-figma/hub/current
           export NODE_ENV=production HOSTNAME=127.0.0.1 PORT="\${PORT:-8030}"
-          # BA docs (branch stable) the BE deploy keeps on this server; the old site linked app/docs to it.
-          # The hub syncs them into qc/requirements every 5 minutes (lib/qc/ba-sync.ts).
-          [ -r /opt/docs-figma/app/docs/ ] && export DOCS_BA_DIR=/opt/docs-figma/app/docs/
           exec ./.node/node server.js
           SH
           chmod +x $H/start.sh

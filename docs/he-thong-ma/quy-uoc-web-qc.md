@@ -25,7 +25,7 @@ Xem trực tiếp tại `https://ics-figma-demo.vercel.app/hub` (mật khẩu ch
 | Màn `/hub/man/<MÃ>` | Ảnh Figma, trang requirement nhắc tới màn, item trên màn, testcase liên quan |
 | Chưa gắn mã `/hub/chua-gan-ma` | Trang requirement chưa nối được với frame Figma |
 
-QC sửa bản gốc ở `qc/requirements` trên GitHub → vài phút sau web tự cập nhật (xem `.github/workflows/requirements.yml`). Không cần gửi zip.
+QC sửa bản gốc ở `projects/ics/requirements` trên GitHub → vài phút sau web tự cập nhật (xem `.github/workflows/requirements.yml`). Không cần gửi zip.
 
 ## 2. Cấu trúc file và cách đọc
 

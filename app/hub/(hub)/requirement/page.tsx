@@ -1,14 +1,12 @@
 import Link from "next/link";
 
 import { PageHead, Panel, Tag } from "@/components/qc/ui";
-import { can, session } from "@/lib/qc/auth";
 import { clusterOfFile, requirementFiles } from "@/lib/qc/data";
 import { hubProject } from "@/lib/qc/project";
 
 /** Every requirement file, grouped by its top folder; opens in its cluster when it has one. */
 const RequirementsPage = async (): Promise<React.JSX.Element> => {
   await hubProject();
-  const edit = can(await session(), "edit");
   const files = requirementFiles();
   const groups = Map.groupBy(files, (f) => f.path.split("/")[0]);
   return (
@@ -32,9 +30,6 @@ const RequirementsPage = async (): Promise<React.JSX.Element> => {
                       </span>
                       {!cluster && <Tag tone="gray">Chưa có màn Figma</Tag>}
                     </Link>
-                    {edit && <Link href={`/hub/requirement/sua?f=${encodeURIComponent(f.path)}`} className="rounded-lg bg-(--hub-panel-2) px-3 py-1 text-xs hover:text-(--hub-accent)">
-                      Sửa
-                    </Link>}
                   </li>
                 );
               })}

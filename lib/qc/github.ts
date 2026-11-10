@@ -28,23 +28,66 @@ export async function ghUnchecked(path: string, init?: RequestInit): Promise<Res
   });
 }
 
+/**
+ * Data the hub itself writes (accounts, sync marks, tags, progress, webhooks) goes to its own branch, so every
+ * click does not become a commit on main. Everything else (requirements, projects, generated docs) stays on main.
+ * Reads fall back to main until the first write creates the file on the data branch.
+ */
+export const DATA_BRANCH = process.env.HUB_DATA_BRANCH ?? "hub-data";
+export const isHubData = (path: string): boolean =>
+  path.startsWith("docs/hub/") || path === "docs/dong-bo/moc.json" || /^docs\/du-an\/[^/]+\/(dong-bo|tai-lieu)\.json$/.test(path);
+export const branchOf = (path: string): string => (isHubData(path) ? DATA_BRANCH : "main");
+
+const enc = (path: string): string => path.split("/").map(encodeURIComponent).join("/");
+
+/** Contents API on the branch of this path; for a data file missing there, the copy on main. */
+async function getContents(path: string, headers?: Record<string, string>, call: typeof gh = gh): Promise<Response> {
+  const branch = branchOf(path);
+  const res = await call(`/contents/${enc(path)}?ref=${encodeURIComponent(branch)}`, { headers });
+  if (res.status === 404 && branch !== "main") return call(`/contents/${enc(path)}?ref=main`, { headers });
+  return res;
+}
+
+/** Same as getContents without the sign-in check: only for reading the account list at sign-in (lib/qc/users.ts). */
+export const getContentsUnchecked = (path: string): Promise<Response> => getContents(path, undefined, ghUnchecked);
+
+/** Creates the data branch from main when it is not there yet. */
+async function ensureBranch(): Promise<void> {
+  if ((await gh(`/git/ref/heads/${DATA_BRANCH}`)).ok) return;
+  const head = (await gh(`/git/ref/heads/main`).then((r) => r.json())) as { object: { sha: string } };
+  const res = await gh(`/git/refs`, { method: "POST", body: JSON.stringify({ ref: `refs/heads/${DATA_BRANCH}`, sha: head.object.sha }) });
+  if (!res.ok && res.status !== 422) throw new Error(`Không tạo được nhánh ${DATA_BRANCH} (GitHub ${res.status}).`);
+}
+
 export async function readFile(path: string): Promise<{ text: string; sha: string } | null> {
-  const res = await gh(`/contents/${path}?ref=main`);
+  const res = await getContents(path);
   if (res.status === 404) return null;
   if (!res.ok) throw new Error(`GitHub ${res.status} khi đọc ${path}.`);
   const j = (await res.json()) as { content: string; sha: string; encoding: string; download_url?: string };
   // files over 1MB come back without content: fetch the raw file instead
   if (!j.content && j.download_url) {
-    const raw = await gh(`/contents/${path}?ref=main`, { headers: { Accept: "application/vnd.github.raw+json" } });
+    const raw = await getContents(path, { Accept: "application/vnd.github.raw+json" });
     return { text: await raw.text(), sha: j.sha };
   }
   return { text: Buffer.from(j.content, "base64").toString("utf-8"), sha: j.sha };
 }
 
 export async function writeFile(path: string, text: string, message: string, sha?: string): Promise<string> {
-  const res = await gh(`/contents/${path}`, {
+  const branch = branchOf(path);
+  let base = sha;
+  if (branch !== "main") {
+    await ensureBranch();
+    // sha comes from a read that may have fallen back to main: compare with the file on the data branch itself
+    const cur = await gh(`/contents/${enc(path)}?ref=${encodeURIComponent(branch)}`);
+    const here = cur.ok ? ((await cur.json()) as { sha: string }).sha : undefined;
+    const onMain = here ? undefined : await gh(`/contents/${enc(path)}?ref=main`).then(async (r) => (r.ok ? ((await r.json()) as { sha: string }).sha : undefined));
+    if (here && sha && sha !== here) throw new Error("File vừa được người khác lưu. Tải lại trang rồi làm lại.");
+    if (!here && sha && onMain && sha !== onMain) throw new Error("File vừa được người khác lưu. Tải lại trang rồi làm lại.");
+    base = here;
+  }
+  const res = await gh(`/contents/${enc(path)}`, {
     method: "PUT",
-    body: JSON.stringify({ message, content: Buffer.from(text, "utf-8").toString("base64"), branch: "main", ...(sha ? { sha } : {}) }),
+    body: JSON.stringify({ message, content: Buffer.from(text, "utf-8").toString("base64"), branch, ...(base ? { sha: base } : {}) }),
   });
   if (res.status === 409 || res.status === 422) throw new Error("File vừa được người khác lưu. Tải lại trang rồi làm lại.");
   if (!res.ok) throw new Error(`Lưu thất bại (GitHub ${res.status}).`);
@@ -137,7 +180,7 @@ export async function deleteFolder(prefix: string, message: string): Promise<num
 
 /** Bytes of a file on main (images in a docs folder); null when it is not there. */
 export async function readBytes(path: string): Promise<Uint8Array | null> {
-  const res = await gh(`/contents/${path.split("/").map(encodeURIComponent).join("/")}?ref=main`, { headers: { Accept: "application/vnd.github.raw+json" } });
+  const res = await getContents(path, { Accept: "application/vnd.github.raw+json" });
   if (res.status === 404) return null;
   if (!res.ok) throw new Error(`GitHub ${res.status} khi đọc ${path}.`);
   return new Uint8Array(await res.arrayBuffer());

@@ -17,7 +17,7 @@ const ITEMS = [
 ];
 
 /** Sidebar links; the active one gets the violet bar like the reference design. */
-export function QcNav(): React.JSX.Element {
+export function QcNav({ badges = {} }: { badges?: Record<string, number> }): React.JSX.Element {
   const path = usePathname();
   return (
     <nav className="hub-scroll flex gap-1 overflow-x-auto lg:flex-col lg:overflow-visible">
@@ -34,6 +34,9 @@ export function QcNav(): React.JSX.Element {
           >
             <Icon className="size-[18px]" />
             {label}
+            {badges[href] ? (
+              <span className="ml-auto rounded-full bg-(--hub-amber)/15 px-2 py-0.5 text-[11px] font-semibold text-(--hub-amber) tabular-nums">{badges[href]}</span>
+            ) : null}
             {active && <span className="absolute top-1.5 -right-[13px] bottom-1.5 hidden w-[3px] rounded-full bg-(--hub-accent) lg:block" />}
           </Link>
         );

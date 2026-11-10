@@ -270,6 +270,6 @@ export function search(q: string, limit = 60, project?: string): Hit[] {
       const line = text.slice(text.lastIndexOf("\n", at) + 1, (text.indexOf("\n", at) + 1 || text.length + 1) - 1).replace(/[#*`>|_[\]]/g, " ").replace(/\s+/g, " ").trim();
       out.push({ kind: "tài liệu", code: f.prefix || "—", title: f.title, href: `/hub/docs?f=${encodeURIComponent(f.path)}`, sub: line.slice(0, 160) });
     }
-  const order = { "màn": 0, "tài liệu": 1, "cụm": 2, "yêu cầu": 3, "item": 4, "testcase": 5 };
+  const order = { "cụm": 0, "tài liệu": 1, "yêu cầu": 2, "màn": 3, "item": 4, testcase: 5 };
   return out.sort((a, b) => order[a.kind] - order[b.kind]).slice(0, limit);
 }

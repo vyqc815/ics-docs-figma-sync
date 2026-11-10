@@ -69,7 +69,7 @@ const AccountsPage = async ({ searchParams }: { searchParams: Promise<{ ok?: str
         {me.name !== "admin" && (
           <Panel title="Đổi mật khẩu">
             <form action={changeOwnPassword} className="flex flex-wrap gap-2">
-              <input name="password" type="password" minLength={8} required placeholder="Mật khẩu mới (≥ 8 ký tự)" autoComplete="new-password" className={input} />
+              <input name="password" type="password" minLength={4} required placeholder="Mật khẩu mới (≥ 4 ký tự)" autoComplete="new-password" className={input} />
               <button className={button}>Đổi</button>
             </form>
           </Panel>
@@ -92,9 +92,9 @@ const AccountsPage = async ({ searchParams }: { searchParams: Promise<{ ok?: str
 
             <Panel title="Thêm tài khoản">
               <form action={addUser} className="flex flex-wrap gap-2">
-                <input name="name" required placeholder="tên đăng nhập (vd vy.qc)" className={input} />
+                <input name="name" required type="email" placeholder="email đăng nhập (vd vy@pls.edu.vn)" className={input} />
                 <RoleSelect />
-                <input name="password" type="password" minLength={8} required placeholder="Mật khẩu (≥ 8 ký tự)" autoComplete="new-password" className={input} />
+                <input name="password" type="password" minLength={4} required placeholder="Mật khẩu (≥ 4 ký tự)" autoComplete="new-password" className={input} />
                 <button className={button}>Thêm</button>
               </form>
               <p className="mt-3 text-xs text-(--hub-faint)">
@@ -118,7 +118,7 @@ const AccountsPage = async ({ searchParams }: { searchParams: Promise<{ ok?: str
                       </form>
                       <form action={resetPassword} className="flex gap-1">
                         <input type="hidden" name="name" value={u.name} />
-                        <input name="password" type="password" minLength={8} required placeholder="Mật khẩu mới" autoComplete="new-password" className={`${input} w-36`} />
+                        <input name="password" type="password" minLength={4} required placeholder="Mật khẩu mới" autoComplete="new-password" className={`${input} w-36`} />
                         <button className={small}>Đặt lại</button>
                       </form>
                       <form action={removeUser}>

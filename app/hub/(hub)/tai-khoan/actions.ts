@@ -10,7 +10,7 @@ import { withBase } from "@/lib/base-path";
 
 /** Account management of the hub: admin adds, changes, removes accounts; everyone changes their own password. */
 const back = (q: string): never => redirect(`/hub/tai-khoan?${q}`);
-const NAME = /^[a-z0-9._-]{2,32}$/;
+const NAME = /^[a-z0-9._+@-]{2,64}$/;
 
 async function edit(change: (users: User[]) => User[] | string, message: string): Promise<void> {
   const { users, sha } = await readUsers();
@@ -24,9 +24,9 @@ export async function addUser(form: FormData): Promise<void> {
   const name = String(form.get("name") ?? "").trim().toLowerCase();
   const role = String(form.get("role")) as Role;
   const password = String(form.get("password") ?? "");
-  if (!NAME.test(name) || name === "admin") back(`loi=${encodeURIComponent("Tên 2–32 ký tự: chữ thường, số, . _ -; không dùng admin.")}`);
+  if (!NAME.test(name) || name === "admin") back(`loi=${encodeURIComponent("Tên đăng nhập là email (2–64 ký tự, không dùng admin).")}`);
   if (!(role in ROLES)) back("loi=Quy%E1%BB%81n%20kh%C3%B4ng%20%C4%91%C3%BAng.");
-  if (password.length < 8) back(`loi=${encodeURIComponent("Mật khẩu ít nhất 8 ký tự.")}`);
+  if (password.length < 4) back(`loi=${encodeURIComponent("Mật khẩu ít nhất 4 ký tự.")}`);
   await edit((u) => (u.some((x) => x.name === name) ? `Đã có tài khoản ${name}.` : [...u, { name, role, ...hashPassword(password) }]), `Hub: thêm tài khoản ${name} (${role})`);
   back(`ok=${encodeURIComponent(`Đã thêm ${name}.`)}`);
 }
@@ -44,7 +44,7 @@ export async function resetPassword(form: FormData): Promise<void> {
   await requireRole("admin");
   const name = String(form.get("name"));
   const password = String(form.get("password") ?? "");
-  if (password.length < 8) back(`loi=${encodeURIComponent("Mật khẩu ít nhất 8 ký tự.")}`);
+  if (password.length < 4) back(`loi=${encodeURIComponent("Mật khẩu ít nhất 4 ký tự.")}`);
   await edit((u) => u.map((x) => (x.name === name ? { ...x, ...hashPassword(password) } : x)), `Hub: đặt lại mật khẩu ${name}`);
   back(`ok=${encodeURIComponent(`Đã đặt lại mật khẩu ${name}.`)}`);
 }
@@ -61,7 +61,7 @@ export async function changeOwnPassword(form: FormData): Promise<void> {
   if (!me) redirect("/hub/dang-nhap");
   if (me.name === "admin") back(`loi=${encodeURIComponent("Tài khoản admin dùng mật khẩu team (QC_WEB_PASSWORD), đổi trong biến môi trường của server.")}`);
   const password = String(form.get("password") ?? "");
-  if (password.length < 8) back(`loi=${encodeURIComponent("Mật khẩu ít nhất 8 ký tự.")}`);
+  if (password.length < 4) back(`loi=${encodeURIComponent("Mật khẩu ít nhất 4 ký tự.")}`);
   await edit((u) => u.map((x) => (x.name === me.name ? { ...x, ...hashPassword(password) } : x)), `Hub: ${me.name} đổi mật khẩu`);
   back(`ok=${encodeURIComponent("Đã đổi mật khẩu.")}`);
 }

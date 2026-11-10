@@ -1,19 +1,14 @@
 import { PageHead, Panel } from "@/components/qc/ui";
-import { baDocsMode } from "@/lib/qc/store";
 
 type Step = { title: string; items: string[] };
 
-/** Where QC writes: the docs repo on the company server (DOCS_BA_DIR), the hub's own editor elsewhere. */
-const writeWhere = (ba: boolean): string =>
-  ba
-    ? "Viết, sửa file .md ở repo docs, nhánh stable. Hub tự lấy bản mới mỗi 5 phút; không sửa trên Hub (sẽ bị ghi đè)."
-    : "Mở tài liệu trên Hub, bấm bút chì để sửa rồi Lưu: Hub lưu thẳng bản gốc (qc/requirements) lên GitHub.";
+const WRITE_WHERE = "Hub chỉ để xem. Viết, sửa file .md trong repo: mỗi dự án (kể cả ICS) ở projects/<tên>/requirements → commit → push lên main.";
 
-const qcSteps = (ba: boolean): Step[] => [
+const qcSteps = (): Step[] => [
   {
     title: "QC · Viết requirement",
     items: [
-      writeWhere(ba),
+      WRITE_WHERE,
       "Không cần đặt mã trên Figma: mã màn do design đặt ở tên frame.",
       "Mỗi mục ### của phần UI là một Trang. Ghi mã màn đang mô tả (vd. CD-KH-060100) ngay trong mục đó, thường ở chú thích ảnh: Hub gắn đúng màn và ảnh Figma cho Trang.",
       "Không ghi mã màn thì Hub tự đoán theo chữ trên Figma; đoán không chắc thì Trang vào mục Chưa gắn mã.",
@@ -54,7 +49,7 @@ const PROJECT_STEPS: Step[] = [
   {
     title: "QC · Viết requirement cho dự án",
     items: [
-      "Bản gốc ở projects/<tên>/requirements (như qc/requirements của ICS): git pull → sửa / thêm <module>/<chuc-nang>.md → commit → push lên main. Hoặc sửa trên Hub (bút chì).",
+      "Bản gốc ở projects/<tên>/requirements (ICS cũng vậy: projects/ics/requirements): git pull → sửa / thêm <module>/<chuc-nang>.md → commit → push lên main.",
       "Viết theo template như ICS: ## 1. UI với các mục ### Trang N, ghi mã màn trong mục; testcase Given / When / Then; REQ; Cần xác nhận. Mẫu: projects/_mau-du-an, hướng dẫn: projects/README.md.",
       "Sau khi push, hệ thống chuyển template, gắn mã trang / khu vực / item, dựng cụm, registry, testcase như ICS (projects/<tên>/_hub, không sửa tay) và báo Chat. Thiếu nội dung thì dừng, giữ bản cũ.",
       "Hub có bản mới sau vài phút, không cần deploy; “Đọc lại docs” ở trang dự án để lấy ngay.",
@@ -136,7 +131,7 @@ const HelpPage = (): React.JSX.Element => (
   <>
     <PageHead title="Hướng dẫn" sub="QC viết requirement, thêm dự án · Dev đọc và báo tiến độ · Design cập nhật Figma" />
     <div className="grid gap-4 lg:grid-cols-2">
-      {[...qcSteps(baDocsMode()), ...PROJECT_STEPS, ...OTHER_STEPS].map((s) => (
+      {[...qcSteps(), ...PROJECT_STEPS, ...OTHER_STEPS].map((s) => (
         <Panel key={s.title} title={s.title}>
           <ul className="list-disc space-y-1.5 pl-5 text-[13.5px] leading-relaxed text-(--hub-muted)">
             {s.items.map((i) => (

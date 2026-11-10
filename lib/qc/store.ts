@@ -53,8 +53,3 @@ export const WEBHOOK = /^https:\/\/chat\.googleapis\.com\/v1\/spaces\/[\w-]+\/me
 /** "…" + the last characters, enough to recognise which webhook is saved. */
 export const maskWebhook = (url: string): string => `chat.googleapis.com/…${url.slice(-6)}`;
 
-/**
- * Docs repo as the source (DOCS_BA_DIR set, company server): QC writes requirements in the docs repo, branch stable,
- * and the hub copies them in (lib/qc/ba-sync.ts), so it does not edit them itself.
- */
-export const baDocsMode = (): boolean => !!process.env.DOCS_BA_DIR;

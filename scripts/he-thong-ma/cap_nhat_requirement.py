@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
 """Một lệnh: bộ requirement gốc của QC -> docs/requirements theo template, gắn mã, ảnh Figma, zip gửi QC.
 
-  cap_nhat_requirement.py <requirements.zip của QC>      # bản gốc mới: chép vào qc/requirements rồi chạy
-  cap_nhat_requirement.py qc/requirements --no-zip       # bản gốc trong repo (GitHub Actions dùng cách này)
+  cap_nhat_requirement.py <requirements.zip của QC>      # bản gốc mới: chép vào projects/ics/requirements rồi chạy
+  cap_nhat_requirement.py projects/ics/requirements --no-zip       # bản gốc trong repo (GitHub Actions dùng cách này)
   thêm: [--work .] [--out file.zip] [--summary tom-tat.md]
 
-Bản gốc QC luôn nằm ở qc/requirements trong repo; QC sửa ở đó (GitHub web) thì
+Bản gốc QC luôn nằm ở projects/ics/requirements trong repo; QC sửa ở đó (GitHub web) thì
 .github/workflows/requirements.yml tự chạy lệnh này, commit, deploy và báo Google Chat.
 
 Các bước:

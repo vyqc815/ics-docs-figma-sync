@@ -1,4 +1,4 @@
-# QC sửa bản gốc ở qc/requirements (GitHub web: sửa file .md, hoặc "Add file → Upload files" cho ảnh)
+# QC sửa bản gốc ở projects/ics/requirements (GitHub web: sửa file .md, hoặc "Add file → Upload files" cho ảnh)
 # → chuyển template, gắn mã, dựng registry (cap_nhat_requirement.py) → commit → báo Google Chat.
 # Lên Hub ở lượt deploy gộp kế tiếp (9h, 13h, 17h; deploy.yml), để giữ phút Actions miễn phí.
 # Web QC Hub (/hub) đọc bản đã gắn mã. Kiểm thiếu nội dung thì dừng, giữ bản cũ và báo lỗi.
@@ -7,7 +7,7 @@ name: Requirement QC
 on:
   push:
     branches: [main]
-    paths: ["qc/requirements/**"]
+    paths: ["projects/ics/requirements/**"]
   workflow_dispatch:
 
 concurrency:
@@ -38,7 +38,7 @@ jobs:
         id: run
         run: |
           set +e
-          python3 scripts/he-thong-ma/cap_nhat_requirement.py qc/requirements --no-zip --summary "$RUNNER_TEMP/summary.md" > "$RUNNER_TEMP/run.log" 2>&1
+          python3 scripts/he-thong-ma/cap_nhat_requirement.py projects/ics/requirements --no-zip --summary "$RUNNER_TEMP/summary.md" > "$RUNNER_TEMP/run.log" 2>&1
           code=$?
           grep -v '^{"nguon' "$RUNNER_TEMP/run.log" | tail -80
           echo "ok=$([ "$code" = 0 ] && echo true || echo false)" >> "$GITHUB_OUTPUT"

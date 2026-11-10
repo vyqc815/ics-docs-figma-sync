@@ -21,6 +21,8 @@ const root = process.cwd();
 const withDocs = process.argv.includes("--docs");
 const PROGRESS = "docs/hub/tien-do.json";
 const NOTIFY = "docs/hub/thong-bao.json";
+// the hub keeps its own data on this branch (lib/qc/github.ts), so its clicks do not fill main with commits
+const DATA_BRANCH = process.env.HUB_DATA_BRANCH ?? "hub-data";
 const CHAT_LIMIT = 3500;
 const hub = (process.env.HUB_URL ?? "").replace(/\/$/, "");
 const repo = process.env.GITHUB_REPOSITORY;
@@ -41,7 +43,8 @@ async function gh(path, init = {}) {
 /** Latest copy on main (other people write these files from the hub), else the checked-out one. */
 async function readShared(rel, fallback) {
 	if (!repo || !token) return { data: local(rel, fallback), sha: undefined };
-	const res = await gh(`/contents/${rel}?ref=main`);
+	let res = await gh(`/contents/${rel}?ref=${DATA_BRANCH}`);
+	if (res.status === 404) res = await gh(`/contents/${rel}?ref=main`); // not written on the data branch yet
 	if (res.status === 404) return { data: fallback, sha: undefined };
 	if (!res.ok) throw new Error(`GitHub ${res.status} khi đọc ${rel}`);
 	const j = await res.json();
@@ -171,8 +174,14 @@ if (!repo || !token) {
 	process.exit(0);
 }
 for (let attempt = 0; attempt < 3; attempt += 1) {
-	const { data, sha: fileSha } = await readShared(PROGRESS, {});
-	const body = { message: `Tiến độ: đã báo dev ${sent.length} màn có cập nhật`, content: Buffer.from(`${JSON.stringify(apply(data), null, 1)}\n`).toString("base64"), branch: "main", sha: fileSha };
+	const { data } = await readShared(PROGRESS, {});
+	if (!(await gh(`/git/ref/heads/${DATA_BRANCH}`)).ok) {
+		const head = await (await gh(`/git/ref/heads/main`)).json();
+		await gh(`/git/refs`, { method: "POST", body: JSON.stringify({ ref: `refs/heads/${DATA_BRANCH}`, sha: head.object.sha }) });
+	}
+	const cur = await gh(`/contents/${PROGRESS}?ref=${DATA_BRANCH}`);
+	const fileSha = cur.ok ? (await cur.json()).sha : undefined;
+	const body = { message: `Tiến độ: đã báo dev ${sent.length} màn có cập nhật`, content: Buffer.from(`${JSON.stringify(apply(data), null, 1)}\n`).toString("base64"), branch: DATA_BRANCH, ...(fileSha ? { sha: fileSha } : {}) };
 	const res = await gh(`/contents/${PROGRESS}`, { method: "PUT", body: JSON.stringify(body) });
 	if (res.ok) process.exit(0);
 	if (res.status !== 409 && res.status !== 422) throw new Error(`GitHub ${res.status} khi lưu ${PROGRESS}`);

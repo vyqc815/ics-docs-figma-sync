@@ -52,6 +52,7 @@ const ScreensPage = async ({ searchParams }: { searchParams: Promise<{ loai?: st
             className={`rounded-full px-3 py-1 text-xs ${k === loai ? "bg-(--hub-accent-strong) text-white" : "bg-(--hub-panel-2) text-(--hub-muted) hover:text-(--hub-text)"}`}
           >
             {label}
+            {k === "du-kien" && <span className="ml-1.5 tabular-nums opacity-70">{Object.keys(reserved()).filter((c) => !frames()[c]).length}</span>}
           </Link>
         ))}
       </div>

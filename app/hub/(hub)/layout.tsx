@@ -2,7 +2,6 @@ import { Suspense, type ReactNode } from "react";
 import Link from "next/link";
 import { headers } from "next/headers";
 import { redirect } from "next/navigation";
-import { TriangleAlert } from "lucide-react";
 
 import { Logo } from "@/components/qc/logo";
 import { QcNav } from "@/components/qc/nav";
@@ -11,7 +10,7 @@ import { DocTree, type TreeGroup } from "@/components/qc/doc-tree";
 import { listProjects } from "@/lib/projects";
 import { session, signedIn } from "@/lib/qc/auth";
 import { syncRowsCached, type State } from "@/lib/qc/dong-bo";
-import { frames, indexInfo, requirementFiles, reserved, unmappedPages } from "@/lib/qc/data";
+import { indexInfo, requirementFiles, unmappedPages } from "@/lib/qc/data";
 import { hubProject } from "@/lib/qc/project";
 import "../hub.css";
 
@@ -35,7 +34,6 @@ const HubLayout = async ({ children }: { children: ReactNode }): Promise<React.J
   const project = await hubProject();
   const info = indexInfo();
   const unmapped = unmappedPages().length;
-  const notDrawn = Object.keys(reserved()).filter((c) => !frames()[c]).length;
   const updated = info.generatedAt ? new Date(info.generatedAt).toLocaleString("vi-VN", { timeZone: "Asia/Ho_Chi_Minh" }) : "—";
 
   const me = await session();
@@ -56,12 +54,7 @@ const HubLayout = async ({ children }: { children: ReactNode }): Promise<React.J
           <span className="hidden text-[13px] text-(--hub-muted) md:block">Figma · Requirement · Testcase</span>
         </Link>
         <ProjectPicker current={project.slug} projects={listProjects().map(({ slug, name }) => ({ slug, name }))} />
-        <p className="flex min-w-0 flex-1 items-center gap-2 text-[13px]">
-          <TriangleAlert className="size-4 shrink-0 text-(--hub-amber)" />
-          <span className="truncate text-(--hub-muted)">
-            {unmapped} trang requirement chưa gắn mã màn · {notDrawn} mã dự kiến chưa có thiết kế
-          </span>
-        </p>
+        <span className="flex-1" />
         <p className="hidden text-[13px] text-(--hub-muted) lg:block">
           Requirement <span className="text-(--hub-text)">{info.version?.slice(0, 8) ?? "—"}</span> · {updated}
         </p>
@@ -79,7 +72,7 @@ const HubLayout = async ({ children }: { children: ReactNode }): Promise<React.J
 
       <div className="flex min-h-0 flex-1 flex-col bg-(--hub-shell) lg:flex-row">
         <aside className="hub-scroll shrink-0 border-(--hub-line)/60 px-3 py-5 lg:sticky lg:top-[57px] lg:h-[calc(100vh-57px)] lg:w-[280px] lg:overflow-y-auto lg:border-r">
-          <QcNav />
+          <QcNav badges={{ "/hub/chua-gan-ma": unmapped }} />
           <Suspense>
             <DocTree groups={groups} />
           </Suspense>
