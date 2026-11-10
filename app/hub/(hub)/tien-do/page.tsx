@@ -2,6 +2,8 @@ import Link from "next/link";
 
 import { PageHead, Panel, Tag } from "@/components/qc/ui";
 import { frames } from "@/lib/qc/data";
+import { hubProject } from "@/lib/qc/project";
+import { isLive, listProjects } from "@/lib/projects";
 import { changesSince } from "@/lib/qc/dev-moc";
 import { readFigmaLog, type FigmaLog } from "@/lib/qc/dong-bo";
 import { PROGRESS, PROGRESS_LABEL, readJson, type Progress, type ProgressEntry } from "@/lib/qc/store";
@@ -16,11 +18,16 @@ const time = (iso: string): string => new Date(iso).toLocaleString("vi-VN", { ti
  */
 const ProgressPage = async ({ searchParams }: { searchParams: Promise<{ dev?: string; "cap-nhat"?: string }> }): Promise<React.JSX.Element> => {
   const { dev = "", "cap-nhat": onlyUpdated } = await searchParams;
-  const [progress, log] = await Promise.all([
+  const project = await hubProject();
+  const [allProgress, log] = await Promise.all([
     readJson<Progress>(PROGRESS, {}).catch((): Progress => ({})),
     readFigmaLog().catch((): FigmaLog => ({})),
   ]);
   const all = frames();
+  // one progress file for every project: keep this project's screens (ICS: all but the codes of hub-added projects)
+  const others = listProjects().filter((p) => isLive(p)).map((p) => `${p.code}-`);
+  const mine = (code: string): boolean => !!all[code.replace(/-DK$/, "")] || (!isLive(project) && !others.some((o) => code.startsWith(o)));
+  const progress = Object.fromEntries(Object.entries(allProgress).filter(([code]) => mine(code))) as Progress;
   const total = Object.keys(all).filter((c) => !c.endsWith("-DK")).length;
   const byDev = new Map<string, (ProgressEntry & { code: string; updated: boolean })[]>();
   for (const [code, row] of Object.entries(progress))

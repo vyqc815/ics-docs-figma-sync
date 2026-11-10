@@ -2,9 +2,11 @@ import Link from "next/link";
 
 import { PageHead, Panel, Tag } from "@/components/qc/ui";
 import { clusterOfFile, unmappedPages } from "@/lib/qc/data";
+import { hubProject } from "@/lib/qc/project";
 
 /** Requirement pages with no screen code yet (toasts, screens not drawn), from docs/he-thong-ma/trang-chua-gan-ma.md. */
-const UnmappedPage = (): React.JSX.Element => {
+const UnmappedPage = async (): Promise<React.JSX.Element> => {
+  await hubProject();
   const rows = unmappedPages();
   return (
     <>

@@ -5,7 +5,8 @@ import { redirect } from "next/navigation";
 import { requireRole, session } from "@/lib/qc/auth";
 
 import { screenHashes } from "@/lib/qc/dev-moc";
-import { DOC_META, PROGRESS, updateJson, type DocMeta, type Progress, type ProgressState } from "@/lib/qc/store";
+import { hubProject } from "@/lib/qc/project";
+import { docMetaPath, PROGRESS, updateJson, type DocMeta, type Progress, type ProgressState } from "@/lib/qc/store";
 
 const tagOf = (s: string): string =>
   s
@@ -19,9 +20,11 @@ const tagOf = (s: string): string =>
 /** Tags of a requirement file, typed as "course, homework" (QC / admin). */
 export async function saveTags(form: FormData): Promise<void> {
   const me = await requireRole("edit");
+  // a server action renders no layout: load the project picked in the header and name it on every read
+  const { slug } = await hubProject();
   const file = String(form.get("file"));
   const tags = [...new Set(String(form.get("tags") ?? "").split(",").map(tagOf).filter(Boolean))].slice(0, 12);
-  await updateJson<DocMeta>(DOC_META, {}, (m) => ({ ...m, [file]: { ...m[file], tags } }), `Tag ${file}: ${tags.join(", ") || "(bỏ hết)"} · ${me.name}`);
+  await updateJson<DocMeta>(docMetaPath(slug), {}, (m) => ({ ...m, [file]: { ...m[file], tags } }), `Tag ${file}: ${tags.join(", ") || "(bỏ hết)"} · ${me.name}`);
   redirect(`/hub/docs?f=${encodeURIComponent(file)}`);
 }
 
@@ -32,9 +35,10 @@ export async function saveTags(form: FormData): Promise<void> {
 export async function setProgress(form: FormData): Promise<void> {
   const me = await session();
   if (!me) redirect("/hub/dang-nhap");
+  const { slug } = await hubProject();
   const code = String(form.get("code"));
   const s = String(form.get("s")) as ProgressState | "";
-  const hashes = screenHashes(code);
+  const hashes = screenHashes(code, slug);
   await updateJson<Progress>(
     PROGRESS,
     {},

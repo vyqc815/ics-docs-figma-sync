@@ -2,14 +2,18 @@
 
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import { useState, useTransition } from "react";
+import { useEffect, useState, useTransition } from "react";
 import { ChevronLeft, FolderPlus, Loader2, ScanSearch, Trash2 } from "lucide-react";
 
-import { deleteProject, type Outline, type ProjectInfo, readFigmaFile, saveProject, type Screen, scanFigmaFile } from "./actions";
+import { withBase } from "@/lib/base-path";
+import { switchProject } from "@/lib/qc/project-actions";
+
+import { deleteProject, docsFolders, type Outline, type ProjectInfo, readFigmaFile, saveProject, type Screen, scanFigmaFile, slugFor } from "./actions";
 
 /**
- * Projects page: ICS is built in; other projects come from a Figma link → pick pages/sections → scan →
- * screens with live renders. Saved in the repo (docs/du-an), shared by the whole team.
+ * Projects page: ICS is built in; other projects come from a Figma link + the folder of this repo that holds
+ * their requirement Markdown → pick pages/sections → scan → screens with live renders. Saved in the repo
+ * (docs/du-an, read by lib/projects.ts), shared by the whole team.
  */
 type Project = { fileKey: string };
 
@@ -26,9 +30,9 @@ const initials = (name: string) =>
     .join("")
     .toUpperCase()
     .slice(0, 4);
-const thumb = (p: Pick<Project, "fileKey">, s: Screen) => `/hub/node-anh?file=${p.fileKey}&node=${encodeURIComponent(s.id)}&scale=0.25`;
+const thumb = (p: Pick<Project, "fileKey">, s: Screen) => withBase(`/hub/node-anh?file=${p.fileKey}&node=${encodeURIComponent(s.id)}&scale=0.25`);
 
-export function Projects({ ics, initial }: { ics: { screens: number; clusters: number }; initial: ProjectInfo[] }): React.JSX.Element {
+export function Projects({ ics, initial, canEdit }: { ics: { screens: number; clusters: number }; initial: ProjectInfo[]; canEdit: boolean }): React.JSX.Element {
   const router = useRouter();
   const [list, setList] = useState(initial);
   const [adding, setAdding] = useState(false);
@@ -38,19 +42,21 @@ export function Projects({ ics, initial }: { ics: { screens: number; clusters: n
 
   return (
     <div className="space-y-4">
-      <div className="flex justify-end">
-        <button type="button" className={primary} onClick={() => setAdding(true)}>
-          <FolderPlus className="size-4" /> Dự án mới
-        </button>
-      </div>
+      {canEdit && (
+        <div className="flex justify-end">
+          <button type="button" className={primary} onClick={() => setAdding(true)}>
+            <FolderPlus className="size-4" /> Dự án mới
+          </button>
+        </div>
+      )}
       <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
-        <Link href="/hub" className="rounded-2xl bg-(--hub-panel) p-5 hover:bg-(--hub-panel-2)">
+        <button type="button" disabled={busy} onClick={() => start(() => switchProject("ics"))} className="rounded-2xl bg-(--hub-panel) p-5 text-left hover:bg-(--hub-panel-2)">
           <p className="text-lg font-semibold">ICS</p>
           <p className="mt-1 text-sm text-(--hub-muted)">
             {ics.screens} màn · {ics.clusters} cụm · đủ requirement, registry, code
           </p>
           <p className="mt-3 text-xs text-(--hub-green)">● Đang chạy tự động</p>
-        </Link>
+        </button>
         {list.map((p) => (
           <div key={p.slug} className="relative rounded-2xl bg-(--hub-panel) p-5 hover:bg-(--hub-panel-2)">
             <Link href={`/hub/du-an/${p.slug}`} className="block">
@@ -58,15 +64,16 @@ export function Projects({ ics, initial }: { ics: { screens: number; clusters: n
               <p className="mt-1 text-sm text-(--hub-muted)">
                 {p.count} màn · mã <span className="font-mono">{p.code}</span> · file “{p.fileName}”
               </p>
+              <p className="mt-1 truncate font-mono text-xs text-(--hub-muted)">docs: {p.docsDir ?? `projects/${p.slug}/requirements`}</p>
               <p className="mt-3 text-xs text-(--hub-faint)">Quét lúc {new Date(p.scannedAt).toLocaleString("vi-VN")}</p>
             </Link>
-            <button
+            {canEdit && <button
               type="button"
               aria-label="Bỏ dự án"
               disabled={busy}
               className="absolute top-4 right-4 text-(--hub-faint) hover:text-(--hub-red)"
               onClick={() =>
-                confirm(`Bỏ dự án “${p.name}” khỏi danh sách?`) &&
+                confirm(`Bỏ dự án “${p.name}” khỏi danh sách? Dữ liệu Hub của dự án (lần quét, đề xuất mã, mốc đồng bộ, tag) bị xoá; thư mục docs được giữ.`) &&
                 start(async () => {
                   await deleteProject(p.slug);
                   setList(list.filter((x) => x.slug !== p.slug));
@@ -74,7 +81,7 @@ export function Projects({ ics, initial }: { ics: { screens: number; clusters: n
               }
             >
               <Trash2 className="size-4" />
-            </button>
+            </button>}
           </div>
         ))}
       </div>
@@ -86,6 +93,12 @@ function NewProject({ onCancel, onSaved }: { onCancel: () => void; onSaved: (slu
   const [name, setName] = useState("");
   const [code, setCode] = useState("");
   const [link, setLink] = useState("");
+  const [docsDir, setDocsDir] = useState("");
+  const [folders, setFolders] = useState<{ dir: string; files: number; used: string | null }[]>([]);
+  useEffect(() => {
+    docsFolders().then(setFolders, () => setFolders([]));
+  }, []);
+  const known = folders.find((f) => f.dir === docsDir.trim().replace(/\/$/, ""));
   const [outline, setOutline] = useState<Outline | null>(null);
   const [pages, setPages] = useState<Set<string>>(new Set());
   const [sections, setSections] = useState<Set<string>>(new Set());
@@ -149,11 +162,35 @@ function NewProject({ onCancel, onSaved }: { onCancel: () => void; onSaved: (slu
                 setSections(new Set());
                 if (!name) setName(o.name);
                 if (!code) setCode(initials(name || o.name));
+                if (!docsDir) setDocsDir(`projects/${await slugFor(name || o.name)}/requirements`);
               })
             }
           >
             {busy && !outline ? <Loader2 className="size-4 animate-spin" /> : null} Đọc file
           </button>
+        </div>
+        <div className="space-y-1">
+          <input
+            value={docsDir}
+            onChange={(e) => setDocsDir(e.target.value)}
+            list="docs-folders"
+            placeholder="Thư mục docs trong repo này, vd. projects/ten-du-an/requirements"
+            className="w-full rounded-xl border border-(--hub-line) bg-(--hub-panel-2) px-4 py-2.5 font-mono text-sm outline-none focus:border-(--hub-accent)"
+          />
+          <datalist id="docs-folders">
+            {folders.filter((f) => !f.used).map((f) => (
+              <option key={f.dir} value={f.dir}>{f.files} file .md</option>
+            ))}
+          </datalist>
+          <p className="text-xs text-(--hub-faint)">
+            {!docsDir.trim()
+              ? "Để trống: projects/<slug>/requirements. Requirement của dự án viết thành file .md trong thư mục này."
+              : known?.used
+                ? `Thư mục này đang là docs của dự án “${known.used}”.`
+                : known
+                  ? `${known.files} file .md trong thư mục (tính cả thư mục con).`
+                  : "Thư mục chưa có file .md: lưu được, Hub hiện tài liệu khi file được đẩy lên main."}
+          </p>
         </div>
         {error && <p className="text-sm text-(--hub-red)">{error}</p>}
       </section>
@@ -210,7 +247,15 @@ function NewProject({ onCancel, onSaved }: { onCancel: () => void; onSaved: (slu
                   const picked = outline.pages.filter((p) => pages.has(p.id) || p.sections.some((x) => sections.has(x.id))).map((p) => p.name);
                   onSaved(
                     await saveProject(
-                      { name: name || outline.name, code, fileKey: outline.fileKey, fileName: outline.name, pages: picked, scannedAt: new Date().toISOString() },
+                      {
+                        name: name || outline.name,
+                        code,
+                        fileKey: outline.fileKey,
+                        fileName: outline.name,
+                        pages: picked,
+                        scan: { pageIds: [...pages], sectionIds: [...sections], onlyCoded },
+                        docsDir: docsDir.trim(),
+                      },
                       screens,
                     ),
                   );

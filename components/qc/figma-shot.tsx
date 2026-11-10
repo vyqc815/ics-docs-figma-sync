@@ -10,9 +10,22 @@ import { BASE, withBase } from "@/lib/base-path";
  * arrives, so the page is fast and still shows edits made since the last export. A span (block) so it can
  * sit inside the paragraph Markdown puts an image in.
  */
-export function FigmaShot({ code, liveBase = BASE, live = false, className = "" }: { code: string; liveBase?: string; live?: boolean; className?: string }): React.JSX.Element {
-	const liveUrl = `${liveBase}/api/figma-frame/${code}.png`;
-	const [src, setSrc] = useState(withBase(`/figma-ref/${code}.png`));
+export function FigmaShot({
+	code,
+	liveBase = BASE,
+	live = false,
+	className = "",
+	project,
+}: {
+	code: string;
+	liveBase?: string;
+	live?: boolean;
+	className?: string;
+	/** A project other than ICS: no export saved here, always the live render of that project's file. */
+	project?: string;
+}): React.JSX.Element {
+	const liveUrl = `${liveBase}/api/figma-frame/${code}.png${project ? `?p=${encodeURIComponent(project)}` : ""}`;
+	const [src, setSrc] = useState(project ? liveUrl : withBase(`/figma-ref/${code}.png`));
 	const [fresh, setFresh] = useState(false);
 	useEffect(() => {
 		if (!live) return;

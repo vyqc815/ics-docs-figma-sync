@@ -6,10 +6,13 @@ import { TriangleAlert } from "lucide-react";
 
 import { Logo } from "@/components/qc/logo";
 import { QcNav } from "@/components/qc/nav";
+import { ProjectPicker } from "@/components/qc/project-picker";
 import { DocTree, type TreeGroup } from "@/components/qc/doc-tree";
+import { listProjects } from "@/lib/projects";
 import { session, signedIn } from "@/lib/qc/auth";
 import { syncRowsCached, type State } from "@/lib/qc/dong-bo";
 import { frames, indexInfo, requirementFiles, reserved, unmappedPages } from "@/lib/qc/data";
+import { hubProject } from "@/lib/qc/project";
 import "../hub.css";
 
 export const metadata = { title: "QC PLS", robots: { index: false } };
@@ -29,6 +32,7 @@ const HubLayout = async ({ children }: { children: ReactNode }): Promise<React.J
     const path = (await headers()).get("x-invoke-path") ?? "/hub";
     redirect(`/hub/dang-nhap?next=${encodeURIComponent(path)}`);
   }
+  const project = await hubProject();
   const info = indexInfo();
   const unmapped = unmappedPages().length;
   const notDrawn = Object.keys(reserved()).filter((c) => !frames()[c]).length;
@@ -51,6 +55,7 @@ const HubLayout = async ({ children }: { children: ReactNode }): Promise<React.J
           <Logo className="h-7 w-auto" />
           <span className="hidden text-[13px] text-(--hub-muted) md:block">Figma · Requirement · Testcase</span>
         </Link>
+        <ProjectPicker current={project.slug} projects={listProjects().map(({ slug, name }) => ({ slug, name }))} />
         <p className="flex min-w-0 flex-1 items-center gap-2 text-[13px]">
           <TriangleAlert className="size-4 shrink-0 text-(--hub-amber)" />
           <span className="truncate text-(--hub-muted)">

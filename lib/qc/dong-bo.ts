@@ -1,7 +1,8 @@
 import { createHash } from "node:crypto";
 
 import { readFile } from "@/lib/qc/github";
-import { requirementFiles, requirementMarkdown } from "@/lib/qc/data";
+import { DEFAULT_PROJECT, projectDir } from "@/lib/projects";
+import { requestProject, requirementFiles, requirementMarkdown } from "@/lib/qc/data";
 
 /**
  * Whether a requirement file and its Figma screens still match since someone checked them ("Đánh dấu đã đồng bộ"),
@@ -9,10 +10,12 @@ import { requirementFiles, requirementMarkdown } from "@/lib/qc/data";
  *   docs/dong-bo/moc.json        file → hash of the requirement when marked, when, by whom (written from the hub)
  *   docs/dong-bo/figma-doi.json  code → latest real design changes (figma-changes.yml, hourly)
  * Both are read live from GitHub, so a mark or a Figma change shows without a deploy. The requirement text is the
- * deployed one, the same the hub shows.
+ * one the hub shows. A project added from the hub keeps its own pair in docs/du-an/<slug>/ (dong-bo.json,
+ * figma-doi.json written by scripts/figma/live-changes.mjs), for the project of this request (lib/qc/project.ts).
  */
-export const MOC = "docs/dong-bo/moc.json";
-export const DOI = "docs/dong-bo/figma-doi.json";
+const live = (slug: string): boolean => slug !== DEFAULT_PROJECT;
+export const mocPath = (slug: string = requestProject().slug): string => (live(slug) ? `${projectDir(slug)}/dong-bo.json` : "docs/dong-bo/moc.json");
+export const doiPath = (slug: string = requestProject().slug): string => (live(slug) ? `${projectDir(slug)}/figma-doi.json` : "docs/dong-bo/figma-doi.json");
 
 export type Mark = { docs: string; at: string; by: string };
 export type State = "xanh" | "cam" | "lam" | "do" | "chua";
@@ -34,26 +37,26 @@ export type SyncRow = {
   changes: { code: string; at: string; what: string }[];
 };
 
-export const docsHash = (file: string): string | null => {
-  const text = requirementMarkdown(file);
+export const docsHash = (file: string, slug?: string): string | null => {
+  const text = requirementMarkdown(file, slug);
   return text === null ? null : createHash("sha256").update(text).digest("hex").slice(0, 16);
 };
 
-export async function readMarks(): Promise<{ marks: Record<string, Mark>; sha?: string }> {
-  const f = await readFile(MOC);
+export async function readMarks(slug?: string): Promise<{ marks: Record<string, Mark>; sha?: string }> {
+  const f = await readFile(mocPath(slug));
   return f ? { marks: JSON.parse(f.text), sha: f.sha } : { marks: {} };
 }
 
-/** Short cache: the menu shows a dot per file on every page, two GitHub reads each time would be slow. */
-let cached: { at: number; rows: SyncRow[] } | null = null;
-export const forgetSync = (): void => {
-  cached = null;
-};
+/** Short cache per project: the menu shows a dot per file on every page, two GitHub reads each time would be slow. */
+const cached = new Map<string, { at: number; rows: SyncRow[] }>();
+export const forgetSync = (slug: string = requestProject().slug): void => void cached.delete(slug);
 
 export async function syncRowsCached(maxAgeMs = 60_000): Promise<SyncRow[]> {
-  if (cached && Date.now() - cached.at < maxAgeMs) return cached.rows;
+  const slug = requestProject().slug;
+  const hit = cached.get(slug);
+  if (hit && Date.now() - hit.at < maxAgeMs) return hit.rows;
   const rows = await syncRows();
-  cached = { at: Date.now(), rows };
+  cached.set(slug, { at: Date.now(), rows });
   return rows;
 }
 
@@ -61,7 +64,7 @@ export type FigmaLog = Record<string, { at: string; what: string }[]>;
 
 /** docs/dong-bo/figma-doi.json: code → real design changes, newest written hourly by figma-changes.yml. */
 export async function readFigmaLog(): Promise<FigmaLog> {
-  const doi = await readFile(DOI);
+  const doi = await readFile(doiPath());
   return doi ? (JSON.parse(doi.text) as FigmaLog) : {};
 }
 

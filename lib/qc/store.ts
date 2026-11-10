@@ -1,3 +1,5 @@
+import { DEFAULT_PROJECT, projectDir } from "@/lib/projects";
+import { requestProject } from "@/lib/qc/data";
 import { readFile, writeFile } from "@/lib/qc/github";
 
 /**
@@ -23,8 +25,11 @@ export async function updateJson<T>(path: string, fallback: T, change: (data: T)
   }
 }
 
-/** docs/hub/tai-lieu.json: tags per requirement file (seeded from ics-docs-figma-sync sync/docs_meta.yml). */
-export const DOC_META = "docs/hub/tai-lieu.json";
+/**
+ * docs/hub/tai-lieu.json: tags per requirement file (seeded from ics-docs-figma-sync sync/docs_meta.yml); a project
+ * added from the hub keeps its own in docs/du-an/<slug>/tai-lieu.json. For the project of this request.
+ */
+export const docMetaPath = (slug: string = requestProject().slug): string => (slug === DEFAULT_PROJECT ? "docs/hub/tai-lieu.json" : `${projectDir(slug)}/tai-lieu.json`);
 export type DocMeta = Record<string, { tags?: string[] }>;
 
 /**

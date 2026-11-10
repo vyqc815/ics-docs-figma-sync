@@ -2,6 +2,7 @@ import Link from "next/link";
 
 import { KindTag, PageHead, Panel, Tag } from "@/components/qc/ui";
 import { frames, navRow, requirementPages, reserved } from "@/lib/qc/data";
+import { hubProject } from "@/lib/qc/project";
 
 const KINDS = [
   ["", "Tất cả"],
@@ -17,6 +18,7 @@ const KINDS = [
 /** Every screen code, filterable by kind; dark variants are left out (they are themes of the same screen). */
 const ScreensPage = async ({ searchParams }: { searchParams: Promise<{ loai?: string; q?: string }> }): Promise<React.JSX.Element> => {
   const { loai = "", q = "" } = await searchParams;
+  await hubProject();
   const needle = q.toLowerCase();
   const rows =
     loai === "du-kien"

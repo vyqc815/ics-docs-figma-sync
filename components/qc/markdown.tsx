@@ -4,6 +4,8 @@ import remarkGfm from "remark-gfm";
 
 import { FigmaShot } from "@/components/qc/figma-shot";
 import { BASE, withBase } from "@/lib/base-path";
+import { DEFAULT_PROJECT } from "@/lib/projects";
+import { requestProject } from "@/lib/qc/data";
 
 const QC_SHOT = "qc-shot:";
 
@@ -29,6 +31,8 @@ function preferFigma(text: string): string {
  */
 export function RequirementMarkdown({ file, text }: { file: string; text: string }): React.JSX.Element {
   const dir = posix.dirname(file);
+  // a project other than ICS renders its own Figma file (lib/qc/project.ts sets it for the request)
+  const project = requestProject().slug === DEFAULT_PROJECT ? undefined : requestProject().slug;
   return (
     <div className="hub-md">
       <ReactMarkdown
@@ -49,7 +53,7 @@ export function RequirementMarkdown({ file, text }: { file: string; text: string
             if (alt?.startsWith(QC_SHOT)) return null;
             // ![](figma:MÃ) in a requirement, or the live image line the conversion adds
             const code = url?.match(/\/api\/figma-frame\/([A-Z0-9-]+)\.png$/)?.[1];
-            if (code) return <FigmaShot code={code} live liveBase={url?.split("/api/")[0] ?? BASE} className="my-2.5" />;
+            if (code) return <FigmaShot code={code} live liveBase={url?.split("/api/")[0] ?? BASE} project={project} className="my-2.5" />;
             // eslint-disable-next-line @next/next/no-img-element
             return <img src={url} alt={alt ?? ""} loading="lazy" />;
           },

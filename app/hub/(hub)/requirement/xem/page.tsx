@@ -4,6 +4,7 @@ import { RequirementMarkdown } from "@/components/qc/markdown";
 import { BackButton } from "@/components/qc/back-button";
 import { Panel } from "@/components/qc/ui";
 import { requirementMarkdown } from "@/lib/qc/data";
+import { hubProject } from "@/lib/qc/project";
 
 /** A requirement file outside every cluster (screens not drawn on Figma yet), read on its own. */
 const RequirementView = async ({
@@ -12,6 +13,7 @@ const RequirementView = async ({
   searchParams: Promise<{ f?: string }>;
 }): Promise<React.JSX.Element> => {
   const { f = "" } = await searchParams;
+  await hubProject();
   const text = f.endsWith(".md") ? requirementMarkdown(f) : null;
   if (!text) notFound();
   return (

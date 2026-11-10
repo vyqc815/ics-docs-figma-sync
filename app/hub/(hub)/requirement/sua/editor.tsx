@@ -9,7 +9,7 @@ import { deployNow, loadOriginal, saveOriginal } from "./actions";
 import { withBase } from "@/lib/base-path";
 
 /** QC edits the original requirement (left) with a live preview (right); saving commits it to GitHub. */
-export function Editor({ file }: { file: string }): React.JSX.Element {
+export function Editor({ file, live, folder, project }: { file: string; live: boolean; folder: string; project?: string }): React.JSX.Element {
   const [text, setText] = useState("");
   const [sha, setSha] = useState("");
   const [saved, setSaved] = useState("");
@@ -51,14 +51,16 @@ export function Editor({ file }: { file: string }): React.JSX.Element {
               setSha(r.sha);
               setSaved(text);
               setNote("");
-              return "Đã lưu. Khoảng 1–2 phút nữa hệ thống chuyển template, gắn mã và báo Chat; bấm “Đưa lên Hub ngay” để không chờ lượt deploy.";
+              return r.live
+                ? "Đã lưu vào repo. Hub đã đọc lại, bản mới hiện ngay."
+                : "Đã lưu. Khoảng 1–2 phút nữa hệ thống chuyển template, gắn mã và báo Chat; bấm “Đưa lên Hub ngay” để không chờ lượt deploy.";
             })
           }
           className="flex items-center gap-1.5 rounded-xl bg-(--hub-accent-strong) px-4 py-2.5 text-sm font-medium text-white hover:bg-(--hub-accent) disabled:opacity-50"
         >
           {busy ? <Loader2 className="size-4 animate-spin" /> : <Save className="size-4" />} Lưu
         </button>
-        <button
+        {!live && <button
           type="button"
           disabled={busy}
           onClick={() =>
@@ -70,7 +72,7 @@ export function Editor({ file }: { file: string }): React.JSX.Element {
           className="flex items-center gap-1.5 rounded-xl bg-(--hub-panel-2) px-4 py-2.5 text-sm hover:text-(--hub-accent) disabled:opacity-50"
         >
           <Rocket className="size-4" /> Đưa lên Hub ngay
-        </button>
+        </button>}
       </div>
       {msg && <p className={`text-sm ${msg.ok ? "text-(--hub-green)" : "text-(--hub-red)"}`}>{msg.text}</p>}
       {dirty && <p className="text-xs text-(--hub-amber)">Có thay đổi chưa lưu.</p>}
@@ -84,15 +86,16 @@ export function Editor({ file }: { file: string }): React.JSX.Element {
         <div className="hub-scroll hub-md h-[72vh] overflow-y-auto rounded-2xl bg-(--hub-panel) p-5">
           <ReactMarkdown
             remarkPlugins={[remarkGfm]}
-            urlTransform={(u) => (/^figma:/i.test(u) ? withBase(`/api/figma-frame/${u.slice(6).trim().toUpperCase()}.png`) : /^(https?:|\/|#)/.test(u) ? u : "")}
+            urlTransform={(u) => (/^figma:/i.test(u) ? withBase(`/api/figma-frame/${u.slice(6).trim().toUpperCase()}.png${project ? `?p=${encodeURIComponent(project)}` : ""}`) : /^(https?:|\/|#)/.test(u) ? u : "")}
           >
             {text}
           </ReactMarkdown>
         </div>
       </div>
       <p className="text-xs text-(--hub-faint)">
-        Đây là bản gốc QC (qc/requirements/{file}). Ảnh Figma thật, tự cập nhật, không cần chụp: ghi mã màn ở tiêu đề mục (“### CD-KH-030200 — Danh sách
-        bài học”), hoặc chèn ở bất kỳ đâu bằng <code>![](figma:CD-KH-030200)</code>. Lưu xong hệ thống tự kiểm không mất nội dung; nếu thiếu sẽ giữ bản cũ và báo Chat.
+        Đây là bản gốc ({folder}/{file}). Ảnh Figma thật, tự cập nhật, không cần chụp: ghi mã màn ở tiêu đề mục (“### CD-KH-030200 — Danh sách
+        bài học”), hoặc chèn ở bất kỳ đâu bằng <code>![](figma:CD-KH-030200)</code>.{" "}
+        {live ? "Màn được gắn vào tài liệu theo các mã màn ghi trong bài." : "Lưu xong hệ thống tự kiểm không mất nội dung; nếu thiếu sẽ giữ bản cũ và báo Chat."}
       </p>
     </div>
   );

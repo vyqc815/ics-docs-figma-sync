@@ -4,6 +4,8 @@ import type { ReactNode } from "react";
 import { BackButton } from "@/components/qc/back-button";
 import { FigmaShot } from "@/components/qc/figma-shot";
 import { BASE, withBase } from "@/lib/base-path";
+import { DEFAULT_PROJECT } from "@/lib/projects";
+import { requestProject } from "@/lib/qc/data";
 
 /** Small building blocks of the QC hub, all on the dark panel palette from app/qc/qc.css. */
 
@@ -188,6 +190,7 @@ export function LiveShot({
       className={className}
       live={live}
       liveBase={process.env.QC_IMAGE_BASE ?? BASE}
+      project={requestProject().slug === DEFAULT_PROJECT ? undefined : requestProject().slug}
     />
   );
 }

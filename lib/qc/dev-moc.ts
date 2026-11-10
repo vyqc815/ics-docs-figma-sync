@@ -26,12 +26,12 @@ function section(text: string, start: RegExp, level: number): string {
 
 export type DocsHashes = { ui?: string; rules?: string };
 
-export function screenHashes(code: string): DocsHashes {
-  const pages = [...requirementPages(code)].sort((a, b) => a.file.localeCompare(b.file));
+export function screenHashes(code: string, project?: string): DocsHashes {
+  const pages = [...requirementPages(code, project)].sort((a, b) => a.file.localeCompare(b.file));
   const ui: string[] = [];
   const rules: string[] = [];
   for (const p of pages) {
-    const text = requirementMarkdown(p.file);
+    const text = requirementMarkdown(p.file, project);
     if (!text) continue;
     for (const n of [...p.pages].sort((a, b) => a - b)) ui.push(`${p.file}#${n}\n${section(text, new RegExp(`^### Trang ${n}:`), 3)}`);
     rules.push(`${p.file}\n${section(text, /^## 2\. /, 2)}\n${section(text, /^## 3\. /, 2)}`);

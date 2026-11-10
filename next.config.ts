@@ -3,7 +3,7 @@ import type { NextConfig } from "next";
 // The Figma viewer pages and API read the page Markdown and generated code at request time.
 const figmaSources = ["./figma.pages.json", "./docs/pages/**/*", "./components/figma/**/*"];
 
-const qcSources = ["./figma.pages.json", "./docs/requirements/**/*", "./docs/he-thong-ma/**/*", "./scripts/figma/screen-requirements.json"];
+const qcSources = ["./figma.pages.json", "./docs/requirements/**/*", "./docs/he-thong-ma/**/*", "./scripts/figma/screen-requirements.json", "./docs/du-an/projects.json", "./projects/**/*"];
 
 const nextConfig: NextConfig = {
   // NEXT_OUTPUT=standalone: a self-contained server bundle for the company server (deploy.yml, job "server");

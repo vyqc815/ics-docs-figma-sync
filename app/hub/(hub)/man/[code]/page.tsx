@@ -9,6 +9,7 @@ import { readFigmaLog, type FigmaLog } from "@/lib/qc/dong-bo";
 import { PROGRESS, PROGRESS_LABEL, readJson, type Progress } from "@/lib/qc/store";
 import { setProgress } from "../../docs/actions";
 import { builtPage, clusterOfFile, clustersOf, figmaUrl, frames, navRow, registry, requirementPages, reserved } from "@/lib/qc/data";
+import { hubProject } from "@/lib/qc/project";
 import { withBase } from "@/lib/base-path";
 
 const time = (iso: string): string => new Date(iso).toLocaleString("vi-VN", { timeZone: "Asia/Ho_Chi_Minh", dateStyle: "short", timeStyle: "short" });
@@ -33,6 +34,7 @@ const NavTags = ({ code }: { code: string }): React.JSX.Element => {
 const ScreenPage = async ({ params, searchParams }: { params: Promise<{ code: string }>; searchParams: Promise<{ xem?: string }> }): Promise<React.JSX.Element> => {
   const code = (await params).code.toUpperCase();
   const { xem = "figma" } = await searchParams;
+  await hubProject();
   const frame = frames()[code];
   const planned = reserved()[code];
   if (!frame && !planned) notFound();

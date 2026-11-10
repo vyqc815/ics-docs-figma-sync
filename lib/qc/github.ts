@@ -65,3 +65,49 @@ export async function workflowRuns(file: string, n = 10): Promise<Run[]> {
   const j = (await res.json()) as { workflow_runs: { status: string; conclusion: string | null; created_at: string; html_url: string; display_title: string }[] };
   return j.workflow_runs.map((r) => ({ status: r.status, conclusion: r.conclusion, createdAt: r.created_at, url: r.html_url }));
 }
+
+export type TreeEntry = { path: string; type: string; sha: string };
+
+async function api<T>(path: string, init?: RequestInit): Promise<T> {
+  const res = await gh(path, init ? { ...init, headers: { "Content-Type": "application/json" } } : undefined);
+  if (!res.ok) throw new Error(`GitHub ${res.status} ${path.split("?")[0]}`);
+  return (await res.json()) as T;
+}
+
+/** Every file on main under a folder (all of them without one), paths repo-relative. */
+export async function listFiles(prefix = ""): Promise<TreeEntry[]> {
+  const j = await api<{ tree: TreeEntry[]; truncated?: boolean }>(`/git/trees/main?recursive=1`);
+  const p = prefix ? `${prefix.replace(/\/$/, "")}/` : "";
+  return j.tree.filter((e) => e.type === "blob" && e.path.startsWith(p));
+}
+
+/** Text of a blob by its sha (from listFiles); the sha names the content, so callers may cache by it. */
+export async function readBlob(sha: string): Promise<string> {
+  const j = await api<{ content: string; encoding: string }>(`/git/blobs/${sha}`);
+  return Buffer.from(j.content, j.encoding === "base64" ? "base64" : "utf-8").toString("utf-8");
+}
+
+/** Deletes every file under a folder on main in one commit; returns how many. */
+export async function deleteFolder(prefix: string, message: string): Promise<number> {
+  const p = `${prefix.replace(/\/$/, "")}/`;
+  const head = (await api<{ object: { sha: string } }>("/git/ref/heads/main")).object.sha;
+  const commit = await api<{ tree: { sha: string } }>(`/git/commits/${head}`);
+  const all = await api<{ tree: TreeEntry[] }>(`/git/trees/${commit.tree.sha}?recursive=1`);
+  const gone = all.tree.filter((e) => e.type === "blob" && e.path.startsWith(p));
+  if (!gone.length) return 0;
+  const tree = await api<{ sha: string }>("/git/trees", {
+    method: "POST",
+    body: JSON.stringify({ base_tree: commit.tree.sha, tree: gone.map((e) => ({ path: e.path, mode: "100644", type: "blob", sha: null })) }),
+  });
+  const made = await api<{ sha: string }>("/git/commits", { method: "POST", body: JSON.stringify({ message, tree: tree.sha, parents: [head] }) });
+  await api("/git/refs/heads/main", { method: "PATCH", body: JSON.stringify({ sha: made.sha, force: false }) });
+  return gone.length;
+}
+
+/** Bytes of a file on main (images in a docs folder); null when it is not there. */
+export async function readBytes(path: string): Promise<Uint8Array | null> {
+  const res = await gh(`/contents/${path.split("/").map(encodeURIComponent).join("/")}?ref=main`, { headers: { Accept: "application/vnd.github.raw+json" } });
+  if (res.status === 404) return null;
+  if (!res.ok) throw new Error(`GitHub ${res.status} khi đọc ${path}.`);
+  return new Uint8Array(await res.arrayBuffer());
+}

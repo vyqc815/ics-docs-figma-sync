@@ -3,6 +3,7 @@ import Link from "next/link";
 import { PageHead, Panel, Tag } from "@/components/qc/ui";
 import { can, session } from "@/lib/qc/auth";
 import { STATES, syncRows, type State } from "@/lib/qc/dong-bo";
+import { hubProject } from "@/lib/qc/project";
 
 import { markAllUnmarked, markSynced } from "./actions";
 
@@ -14,6 +15,8 @@ const time = (iso: string): string => new Date(iso).toLocaleString("vi-VN", { ti
 const SyncPage = async ({ searchParams }: { searchParams: Promise<{ tt?: string }> }): Promise<React.JSX.Element> => {
   const { tt = "" } = await searchParams;
   const me = await session();
+  // layout and page render side by side: load the picked project here too, not only in the layout
+  await hubProject();
   let rows: Awaited<ReturnType<typeof syncRows>>;
   try {
     rows = await syncRows();

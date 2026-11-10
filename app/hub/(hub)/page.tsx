@@ -4,12 +4,14 @@ import { ArrowUpRight } from "lucide-react";
 import { ClusterGrid } from "@/components/qc/cluster-grid";
 import { PageHead, Panel, SearchBox, Stat, Tag } from "@/components/qc/ui";
 import { clusters, frames, registry, requirementFiles, reserved, search, stats, unmappedPages } from "@/lib/qc/data";
+import { hubProject } from "@/lib/qc/project";
 
 const KIND_TONE = { "màn": "violet", "cụm": "gray", "item": "green", "yêu cầu": "amber", testcase: "red", "tài liệu": "violet" } as const;
 
 /** Overview: totals, search across every code, and the clusters. */
 const Overview = async ({ searchParams }: { searchParams: Promise<{ q?: string }> }): Promise<React.JSX.Element> => {
   const { q = "" } = await searchParams;
+  await hubProject();
   const all = clusters().map((c) => stats(registry(c.name)!));
   const sum = (k: keyof (typeof all)[number]) => all.reduce((n, s) => n + s[k], 0);
   const items = sum("items");

@@ -2,6 +2,10 @@ import ids from "@/lib/figma-frame-ids.generated.json";
 import sections from "@/lib/figma-sections.generated.json";
 import config from "@/figma.pages.json";
 import navigation from "@/docs/he-thong-ma/navigation.json";
+import { DEFAULT_PROJECT, getProject, loadProjects } from "@/lib/projects";
+import { signedIn } from "@/lib/qc/auth";
+import { frames } from "@/lib/qc/data";
+import { primeLive } from "@/lib/qc/remote";
 
 export const dynamic = "force-dynamic";
 export const maxDuration = 60;
@@ -67,15 +71,27 @@ function notDrawn(code: string): Response {
  * so a busy Figma API leaves the last good image in place. A code not drawn yet shows
  * a "Chưa có thiết kế" card and turns into the real image once design draws the frame.
  */
-export async function GET(_req: Request, { params }: { params: Promise<{ code: string }> }): Promise<Response> {
+export async function GET(req: Request, { params }: { params: Promise<{ code: string }> }): Promise<Response> {
   const code = (await params).code.replace(/\.png$/i, "").toUpperCase();
   if (!CODE.test(code)) return new Response(`Mã ${code} không đúng dạng.`, { status: 404 });
   const token = process.env.FIGMA_ACCESS_TOKEN;
   if (!token) return new Response("Thiếu FIGMA_ACCESS_TOKEN trên server.", { status: 503 });
-  const nodeId = FRAME_IDS[code] ?? NAV[code] ?? (await findOnFigma(code, token));
+  // ?p=<slug>: a project added from the hub (its own Figma file, frames from its scan); hub users only
+  const slug = new URL(req.url).searchParams.get("p");
+  let fileKey = config.fileKey;
+  let nodeId: string | undefined;
+  if (slug && slug !== DEFAULT_PROJECT) {
+    if (!(await signedIn())) return new Response("Cần đăng nhập Hub.", { status: 401 });
+    await loadProjects();
+    const p = getProject(slug);
+    if (!p) return new Response("Không có dự án này.", { status: 404 });
+    await primeLive(p);
+    fileKey = p.fileKey;
+    nodeId = frames(p.slug)[code]?.id;
+  } else nodeId = FRAME_IDS[code] ?? NAV[code] ?? (await findOnFigma(code, token));
   if (!nodeId) return notDrawn(code);
 
-  const api = `https://api.figma.com/v1/images/${config.fileKey}?ids=${encodeURIComponent(nodeId)}&format=png&scale=1`;
+  const api = `https://api.figma.com/v1/images/${fileKey}?ids=${encodeURIComponent(nodeId)}&format=png&scale=1`;
   const rendered = await fetch(api, { headers: { "X-Figma-Token": token }, cache: "no-store" });
   const url = rendered.ok ? ((await rendered.json()) as { images?: Record<string, string | null> }).images?.[nodeId] : null;
   if (!url) return new Response(`Figma không trả ảnh cho ${code} (${rendered.status}).`, { status: 502, headers: NO_STORE });
@@ -85,8 +101,9 @@ export async function GET(_req: Request, { params }: { params: Promise<{ code: s
   return new Response(png.body, {
     headers: {
       "Content-Type": "image/png",
-      // 5 minutes fresh; after that the CDN serves the cached image at once and refreshes it in the background
-      "Cache-Control": "public, max-age=300, s-maxage=300, stale-while-revalidate=86400",
+      // 5 minutes fresh; after that the CDN serves the cached image at once and refreshes it in the background.
+      // Another project's frames are for hub users only: the browser keeps them, not the CDN.
+      "Cache-Control": slug && slug !== DEFAULT_PROJECT ? "private, max-age=300" : "public, max-age=300, s-maxage=300, stale-while-revalidate=86400",
     },
   });
 }

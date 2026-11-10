@@ -5,6 +5,7 @@ import { Code2, ExternalLink, MonitorPlay, PenTool } from "lucide-react";
 import { RequirementMarkdown } from "@/components/qc/markdown";
 import { KindTag, LiveShot, PageHead, Panel, PriorityTag, Stat, StatusTag, TabBar, Tag } from "@/components/qc/ui";
 import { builtPage, figmaUrl, registry, requirementMarkdown, stats, type Registry } from "@/lib/qc/data";
+import { hubProject } from "@/lib/qc/project";
 
 type Search = { tab?: string; file?: string; req?: string; p?: string };
 
@@ -12,6 +13,7 @@ type Search = { tab?: string; file?: string; req?: string; p?: string };
 const ClusterPage = async ({ params, searchParams }: { params: Promise<{ name: string }>; searchParams: Promise<Search> }): Promise<React.JSX.Element> => {
   const { name } = await params;
   const sp = await searchParams;
+  await hubProject();
   const r = registry(name);
   if (!r) notFound();
   const s = stats(r);

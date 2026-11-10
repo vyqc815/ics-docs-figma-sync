@@ -79,6 +79,9 @@ function screenHashes(code) {
 const { data: progress } = await readShared(PROGRESS, {});
 const { data: notify } = await readShared(NOTIFY, {});
 const log = local("docs/dong-bo/figma-doi.json", {});
+// projects added from the hub log their own Figma changes (scripts/figma/live-changes.mjs); codes carry the project prefix
+for (const p of local("docs/du-an/projects.json", []))
+	if (p.slug !== "ics") for (const [code, rows] of Object.entries(local(`docs/du-an/${p.slug}/figma-doi.json`, {}))) log[code] = [...rows, ...(log[code] ?? [])];
 const titles = local("docs/he-thong-ma/figma-frames.json", { frames: {} }).frames;
 const time = (iso) => new Date(iso).toLocaleString("vi-VN", { timeZone: "Asia/Ho_Chi_Minh", dateStyle: "short", timeStyle: "short" });
 const LABEL = { dang: "Đang làm", xong: "Xong" };

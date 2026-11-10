@@ -1,0 +1,121 @@
+import { existsSync, readFileSync } from "node:fs";
+import { join } from "node:path";
+
+/**
+ * Projects the hub serves. Each one has its own Figma file, its own requirement docs (Markdown in a folder of
+ * this repo) and its own data folder. ICS is built in and keeps the folders it always had; projects added from
+ * the "Dự án" page live in docs/du-an/projects.json: their scan, code proposal, sync marks and tags in
+ * docs/du-an/<slug>/, their requirement Markdown in `docsDir` (by default projects/<slug>/requirements).
+ *
+ * Usage: `await loadProjects()` once per request (lib/qc/project.ts), then `getProject(slug)` / `listProjects()`.
+ * The list is read live from main through GitHub (the hub writes it there), so a new project shows at once;
+ * without GitHub access, the copy on disk.
+ */
+
+/** Repo-relative folders of a project's data. */
+export type DataDirs = {
+  /** Generated code system: clusters.json, *.registry.json, figma-frames.json, qc-index.json… */
+  sys: string;
+  /** Requirement Markdown as the hub reads it. */
+  requirements: string;
+  /** Screen → requirement pages map. */
+  screenReq: string;
+  /** Built pages (name → route); only ICS has demo code in this repo. */
+  pages: string | null;
+};
+
+/** What was ticked when the project's Figma file was scanned, so "Quét lại" scans the same parts. */
+export type ScanScope = { pageIds: string[]; sectionIds: string[]; onlyCoded: boolean };
+
+export type Project = {
+  slug: string;
+  name: string;
+  /** Prefix of the project's screen codes (ICS, ADM…). */
+  code: string;
+  fileKey: string;
+  fileName: string;
+  /** Figma pages the screens were scanned from. */
+  pages: string[];
+  scan?: ScanScope;
+  scannedAt: string;
+  count: number;
+  /** Repo-relative folder of the project's requirement Markdown (live projects). */
+  docsDir?: string;
+  data?: Partial<DataDirs>;
+};
+
+export const DEFAULT_PROJECT = "ics";
+export const PROJECTS_FILE = "docs/du-an/projects.json";
+/** Folder of a live project's hub data (scan, code proposal, sync marks, tags, Figma changes). */
+export const projectDir = (slug: string): string => `docs/du-an/${slug}`;
+export const defaultDocsDir = (slug: string): string => `projects/${slug}/requirements`;
+/** Folders ICS uses: no other project may take them as its docs folder. */
+export const RESERVED_DIRS = ["docs/requirements", "qc/requirements", "docs/he-thong-ma", "docs/pages", "docs/du-an", "docs/hub", "docs/dong-bo"];
+
+const ROOT = /* turbopackIgnore: true */ process.cwd();
+const json = <T,>(path: string, fallback: T): T => (existsSync(path) ? (JSON.parse(readFileSync(path, "utf-8")) as T) : fallback);
+
+/** ICS: the folders this repo was built around. */
+function ics(): Project {
+  const cfg = json<{ fileKey?: string }>(join(/* turbopackIgnore: true */ ROOT, "figma.pages.json"), {});
+  return {
+    slug: DEFAULT_PROJECT,
+    name: "ICS",
+    code: "ICS",
+    fileKey: cfg.fileKey ?? "",
+    fileName: "PLS-ICS",
+    pages: [],
+    scannedAt: "",
+    count: 0,
+    data: { sys: "docs/he-thong-ma", requirements: "docs/requirements", screenReq: "scripts/figma/screen-requirements.json", pages: "figma.pages.json" },
+  };
+}
+
+/** Data folders of a project: what it sets, else its docs folder and projects/<slug>/…. */
+export const dataDirs = (p: Project): DataDirs => ({
+  sys: p.data?.sys ?? `projects/${p.slug}/he-thong-ma`,
+  requirements: p.data?.requirements ?? p.docsDir ?? defaultDocsDir(p.slug),
+  screenReq: p.data?.screenReq ?? `projects/${p.slug}/screen-requirements.json`,
+  pages: p.data?.pages ?? null,
+});
+
+/** "projects/abc/requirements/" → "projects/abc/requirements"; null when it leaves the repo or is not a folder name. */
+export function cleanDir(dir: string): string | null {
+  const d = dir.trim().replace(/\\/g, "/").replace(/^\.?\/+|\/+$/g, "").replace(/\/{2,}/g, "/");
+  if (!d || d.split("/").some((s) => s === "." || s === ".." || s.startsWith(".")) || !/^[\w\-./]+$/.test(d)) return null;
+  return d;
+}
+
+/** The saved list as last read live from GitHub, and when. */
+let live: { at: number; list: Project[] } | null = null;
+const LIVE_MS = 30_000;
+
+/** Reads the saved list from main (at most every 30 s); keeps the last good copy when GitHub fails. */
+export async function loadProjects(): Promise<Project[]> {
+  if (!live || Date.now() - live.at > LIVE_MS) {
+    try {
+      const { readFile } = await import("@/lib/qc/github");
+      const f = await readFile(PROJECTS_FILE);
+      live = { at: Date.now(), list: f ? (JSON.parse(f.text) as Project[]) : [] };
+    } catch {
+      live = live ? { ...live, at: Date.now() } : null;
+    }
+  }
+  return listProjects();
+}
+
+/** Forget the live copy, after the hub saved the list. */
+export const reloadProjects = (): void => void (live = null);
+
+/** A project whose data is not generated in this repo: built live from its docs folder and Figma scan. */
+export const isLive = (p: Project): boolean => !p.data?.sys;
+
+/** Built-in ICS first, then the saved ones (a saved "ics" entry overrides fields of the built-in one). */
+export function listProjects(): Project[] {
+  const saved = live?.list ?? json<Project[]>(join(/* turbopackIgnore: true */ ROOT, PROJECTS_FILE), []);
+  const base = ics();
+  const own = saved.find((p) => p.slug === base.slug);
+  return [own ? { ...base, ...own, data: { ...base.data, ...own.data } } : base, ...saved.filter((p) => p.slug !== base.slug)];
+}
+
+export const getProject = (slug: string = DEFAULT_PROJECT): Project | undefined => listProjects().find((p) => p.slug === slug);

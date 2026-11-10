@@ -2,14 +2,16 @@ import Link from "next/link";
 
 import { PageHead, Panel } from "@/components/qc/ui";
 import { requirementFiles } from "@/lib/qc/data";
-import { DOC_META, readJson, type DocMeta } from "@/lib/qc/store";
+import { hubProject } from "@/lib/qc/project";
+import { docMetaPath, readJson, type DocMeta } from "@/lib/qc/store";
 
 export const dynamic = "force-dynamic";
 
 /** Every tag with its documents; ?t= opens one tag. Tags are set on each document's page. */
 const TagsPage = async ({ searchParams }: { searchParams: Promise<{ t?: string }> }): Promise<React.JSX.Element> => {
   const { t = "" } = await searchParams;
-  const meta = await readJson<DocMeta>(DOC_META, {}).catch((): DocMeta => ({}));
+  await hubProject();
+  const meta = await readJson<DocMeta>(docMetaPath(), {}).catch((): DocMeta => ({}));
   const title = new Map(requirementFiles().map((f) => [f.path, f.title]));
   const byTag = new Map<string, string[]>();
   for (const [file, m] of Object.entries(meta)) for (const tag of m.tags ?? []) byTag.set(tag, [...(byTag.get(tag) ?? []), file]);

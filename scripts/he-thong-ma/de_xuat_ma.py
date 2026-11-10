@@ -459,7 +459,9 @@ def export(out_dir, project, file_key, file_name, frames, raw, got, codes):
 def suggest(args):
     key = re.search(r"figma\.com/(?:design|file)/([A-Za-z0-9]+)", args.file)
     key = key[1] if key else args.file
-    pages = [p.strip() for p in args.pages.split(",")] if args.pages else None
+    # Hub joins page names with "|" (a Figma page name may hold a comma); by hand "," still works
+    sep = "|" if "|" in (args.pages or "") else ","
+    pages = [p.strip() for p in args.pages.split(sep) if p.strip()] if args.pages else None
     frames, raw, fname = rest_frames(key, pages)
     got = propose(frames)
     codes = assign_codes(args.project, frames, got, raw)

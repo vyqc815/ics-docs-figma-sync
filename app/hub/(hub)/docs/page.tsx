@@ -8,10 +8,12 @@ import { Tag } from "@/components/qc/ui";
 import { can, session } from "@/lib/qc/auth";
 import { STATES, syncRowsCached } from "@/lib/qc/dong-bo";
 import { builtPage, clusterOfFile, figmaUrl, frames, requirementFiles, requirementMarkdown } from "@/lib/qc/data";
+import { hubProject } from "@/lib/qc/project";
+import { isLive } from "@/lib/projects";
 
 import { markSynced } from "../dong-bo/actions";
 import { saveTags } from "./actions";
-import { DOC_META, baDocsMode, readJson, type DocMeta } from "@/lib/qc/store";
+import { docMetaPath, baDocsMode, readJson, type DocMeta } from "@/lib/qc/store";
 import { BASE, withBase } from "@/lib/base-path";
 
 export const dynamic = "force-dynamic";
@@ -25,6 +27,7 @@ const DOT = { green: "var(--hub-green)", amber: "var(--hub-amber)", violet: "var
  */
 const DocPage = async ({ searchParams }: { searchParams: Promise<{ f?: string }> }): Promise<React.JSX.Element> => {
   const { f = "" } = await searchParams;
+  const project = await hubProject();
   const text = f.endsWith(".md") ? requirementMarkdown(f) : null;
   if (!text) notFound();
   const info = requirementFiles().find((x) => x.path === f);
@@ -42,8 +45,9 @@ const DocPage = async ({ searchParams }: { searchParams: Promise<{ f?: string }>
     .sort((a, b) => (text.indexOf(a.code) + 1 || Infinity) - (text.indexOf(b.code) + 1 || Infinity));
   const cluster = clusterOfFile(f);
   const back = `/hub/docs?f=${encodeURIComponent(f)}`;
-  const tags = (await readJson<DocMeta>(DOC_META, {}).catch((): DocMeta => ({})))[f]?.tags ?? [];
-  const ba = baDocsMode();
+  const tags = (await readJson<DocMeta>(docMetaPath(), {}).catch((): DocMeta => ({})))[f]?.tags ?? [];
+  // BA docs mode is about ICS's requirements; a hub-added project is edited on the hub
+  const ba = baDocsMode() && !isLive(project);
 
   return (
     <div className="flex items-start">
@@ -130,7 +134,7 @@ const DocPage = async ({ searchParams }: { searchParams: Promise<{ f?: string }>
           </div>
         </article>
       </div>
-      <FigmaPanel screens={screens} docId="doc-body" liveBase={process.env.QC_IMAGE_BASE ?? BASE} />
+      <FigmaPanel screens={screens} docId="doc-body" liveBase={process.env.QC_IMAGE_BASE ?? BASE} project={isLive(project) ? project.slug : undefined} />
     </div>
   );
 };

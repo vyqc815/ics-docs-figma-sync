@@ -34,6 +34,7 @@ jobs:
             scripts/figma
             docs/dong-bo
             docs/he-thong-ma
+            docs/du-an
 
       - uses: actions/setup-node@v4
         with:
@@ -95,12 +96,43 @@ jobs:
           path: .figma/pages/snapshot.json
           key: figma-snapshot-${{ github.run_id }}
 
+      # Dự án thêm từ Hub (docs/du-an/projects.json): mỗi dự án một mốc, ghi docs/du-an/<slug>/figma-doi.json.
+      - name: Restore snapshots of hub projects
+        if: steps.quota.outputs.skip != 'true'
+        uses: actions/cache/restore@v4
+        with:
+          path: .figma/live
+          key: figma-live-${{ github.run_id }}
+          restore-keys: figma-live-
+
+      - name: Hub projects
+        if: steps.quota.outputs.skip != 'true' && inputs.test != true
+        id: live
+        continue-on-error: true
+        env:
+          FIGMA_ACCESS_TOKEN: ${{ secrets.FIGMA_ACCESS_TOKEN }}
+          GOOGLE_CHAT_WEBHOOK_URL: ${{ secrets.GOOGLE_CHAT_WEBHOOK_URL }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: |
+          set +e
+          node scripts/figma/live-changes.mjs
+          code=$?
+          if [ "$code" = 3 ]; then echo "changed=true" >> "$GITHUB_OUTPUT"; exit 0; fi
+          exit $code
+
+      - name: Save snapshots of hub projects
+        if: hashFiles('.figma/live/*.json') != ''
+        uses: actions/cache/save@v4
+        with:
+          path: .figma/live
+          key: figma-live-${{ github.run_id }}
+
       - name: Log changed screens
-        if: steps.notify.outputs.changed == 'true'
+        if: steps.notify.outputs.changed == 'true' || steps.live.outputs.changed == 'true'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add docs/dong-bo/figma-doi.json
+          git add -A docs/dong-bo/figma-doi.json docs/du-an
           git diff --cached --quiet && exit 0
           git commit -m "Đồng bộ: ghi màn Figma vừa đổi"
           for i in 1 2 3; do git pull --rebase -q && git push -q && exit 0; sleep 5; done

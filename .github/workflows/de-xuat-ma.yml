@@ -8,7 +8,7 @@ on:
       slug: { description: "Thư mục dự án (docs/du-an/<slug>)", required: true }
       file: { description: "fileKey hoặc link Figma", required: true }
       project: { description: "Tiền tố mã dự án (VD: ABC)", required: true }
-      pages: { description: "Trang Figma, cách nhau dấu phẩy (trống = mọi trang)", required: false, default: "" }
+      pages: { description: "Trang Figma, cách nhau dấu | (hoặc dấu phẩy; trống = mọi trang)", required: false, default: "" }
 
 permissions:
   contents: write

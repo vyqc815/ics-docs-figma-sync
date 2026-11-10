@@ -48,7 +48,7 @@ function Fold({ icon, label, src, desktop = false }: { icon: React.ReactNode; la
  * mentions, one at a time as a live Figma image (no Figma sign-in needed). Screen codes in the document text
  * become buttons that open their screen here. The panel is resized by dragging its left edge and can be folded.
  */
-export function FigmaPanel({ screens, docId, liveBase = BASE }: { screens: PanelScreen[]; docId: string; liveBase?: string }): React.JSX.Element {
+export function FigmaPanel({ screens, docId, liveBase = BASE, project }: { screens: PanelScreen[]; docId: string; liveBase?: string; project?: string }): React.JSX.Element {
   const [code, setCode] = useState(screens[0]?.code ?? "");
   const [width, setWidth] = useState(46);
   const [folded, setFolded] = useState(false);
@@ -161,7 +161,7 @@ export function FigmaPanel({ screens, docId, liveBase = BASE }: { screens: Panel
           </button>
         </div>
         <div className="hub-scroll min-h-0 flex-1 space-y-2 overflow-y-auto p-3">
-          <FigmaShot key={current.code} code={current.code} live liveBase={liveBase} />
+          <FigmaShot key={current.code} code={current.code} live liveBase={liveBase} project={project} />
           {current.demo && <Fold key={`d-${current.code}`} icon={<MonitorPlay className="size-4" />} label="Demo thật" src={current.demo} desktop />}
           {current.source && <Fold key={`c-${current.code}`} icon={<Code2 className="size-4" />} label="Code" src={current.source} />}
         </div>

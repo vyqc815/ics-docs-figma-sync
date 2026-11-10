@@ -50,7 +50,7 @@ export function Review({ slug, initial, sha: firstSha }: { slug: string; initial
             act(async () => {
               setSha(await saveProposal(slug, { ...initial, frames: rows }, sha));
               setDirty(false);
-              return "Đã lưu. Hệ thống dùng mã này ngay cho dự án.";
+              return "Đã lưu. Hub dùng mã này ngay cho các màn chưa có mã trên Figma; design đổi tên frame xong thì bấm Quét lại Figma.";
             })
           }
           className="flex items-center gap-1.5 rounded-xl bg-(--hub-accent-strong) px-4 py-2.5 text-sm font-medium text-white hover:bg-(--hub-accent) disabled:opacity-50"
