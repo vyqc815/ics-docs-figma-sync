@@ -119,20 +119,21 @@ Frame: `CD-KH-030200` · Nguồn nội dung: Figma
 | Mã | Tên | Nội dung |
 |---|---|---|
 | `REQ01` | Danh sách chỉ xem | Không kéo-thả, không thêm/xoá thủ công. Thứ tự cố định theo 3 số cuối Mã bài học. Card không có nhãn cam, mũi tên. |
-| `REQ02` | Icon 3 phần | Sáng khi số lượng phần đó > 0 (icon Kiến thức = số loại kiến thức + số loại kỹ năng có cụm liên kết), tối khi = 0. |
+| `REQ02` | Icon 3 phần | Sáng khi số lượng phần đó > 0 (icon Kiến thức = số loại kiến thức + số loại kỹ năng đã tick ở S4), tối khi = 0. |
 | `REQ03` | Nội dung dạng text | 1 loại nội dung text, nhóm → nội dung; tên bắt buộc; mô tả nội dung ≤ 500 ký tự; kéo-thả/xoá/badge theo mục 1. |
-| `REQ04` | Không sửa kiến thức/kỹ năng từ bài học | Chỉ tạo / sửa / chia cụm / liên kết ở S1 / S6; bài học chỉ xem. |
-| `REQ10` | Tab Kiến thức / Kỹ năng | 2 tab riêng, chỉ xem: bộ lọc Loại (mặc định Từ vựng / Nghe), tiêu đề = tên cụm đã liên kết với bài cho loại đó, danh sách mục của cụm theo thứ tự trong cụm, khung phải chi tiết. Kiến thức lấy từ S1, Kỹ năng lấy từ S6 của khoá đang mở. Badge tab = số loại có cụm liên kết. |
+| `REQ04` | Không sửa kiến thức/kỹ năng từ bài học | Mục, cụm, liên kết cụm chỉ tạo / sửa ở S1 / S6; bài học chỉ xem mục. Bài học chỉ sửa được **loại** (tag) ở tab Thông tin, đồng bộ với S4. |
+| `REQ10` | Tab Kiến thức / Kỹ năng | 2 tab riêng, chỉ xem: bộ lọc Loại (mặc định Từ vựng / Nghe), tiêu đề = tên cụm đã liên kết với bài cho loại đó, danh sách mục của cụm theo thứ tự trong cụm, khung phải chi tiết. Kiến thức lấy từ S1, Kỹ năng lấy từ S6 của khoá đang mở. Badge tab = số loại đã tick ở S4. |
 | `REQ12` | Liên kết cụm ↔ bài học | Một cụm liên kết đúng 1 bài học; một bài học tối đa 1 cụm mỗi loại; BE bắt trùng (EX02). Liên kết lập / đổi / bỏ tại S1 / S6; mọi thay đổi trong cụm phản ánh ngay ở bài học. Nhân bản khoá sao chép liên kết. |
-| `REQ11` | Kỹ năng/Kiến thức ở tab Thông tin | Read-only, tự sinh = tập **loại** có cụm liên kết với bài; không lưu riêng, không chọn tay. |
+| `REQ11` | Kỹ năng/Kiến thức ở tab Thông tin | = tập **loại** đã tick cho bài ở S4 tab `Kiến thức/Kỹ năng`; nút `+` thêm / `x` gỡ, lưu khi "Lưu thay đổi", đồng bộ hai chiều với S4; độc lập với cụm. |
 | `REQ05` | Mã bài học | 12 số `CCAALLBBBEEE`: `CC` = mã trung tâm, `AA` = ID danh mục, `LL` = ID cấp độ (lấy từ ID khoá học `CCAALLMMM`), `BBB` = 3 số cuối ID học kỳ (`CCAALLMMMBBB`), `EEE` = số thứ tự bài học (`001`–`999`). Mã không chứa `MMM` của khoá học. Tự sinh, không sửa thủ công; đồng bộ khi ID học kỳ / ID khoá học đổi (EX03). |
 | `REQ06` | Tự tạo/xoá bài học | Số bài học = "Số buổi" ở S2. Tên mặc định `Bài học {số thứ tự}`. Xoá = xoá mềm bài + dữ liệu con (nội dung, tài nguyên, liên kết kiến thức/kỹ năng). |
 | `REQ07` | Cột buổi học | Lấy từ tick ở Lộ trình (S4), chỉ xem; màu thời lượng và trạng thái trống theo mục 1. |
-| `REQ08` | Lưu & Hủy | Thông tin / Nội dung lưu gộp khi "Lưu thay đổi" (Kiến thức / Kỹ năng chỉ xem); Tài nguyên lưu/xoá ngay; Hủy/X/click ngoài có popup xác nhận khi còn thay đổi chưa lưu. |
+| `REQ08` | Lưu & Hủy | Thông tin (gồm tag Kiến thức / Kỹ năng) / Nội dung lưu gộp khi "Lưu thay đổi" (tab Kiến thức / Kỹ năng chỉ xem); Tài nguyên lưu/xoá ngay; Hủy/X/click ngoài có popup xác nhận khi còn thay đổi chưa lưu. |
 | `REQ09` | Quyền theo trạng thái | Chỉ sửa bài học (thông tin, nội dung, tài nguyên, kiến thức/kỹ năng) và đổi "Số buổi" khi học kỳ `Nháp` **và** khoá học `Nháp`. Bài học không có trạng thái riêng, đi theo trạng thái học kỳ / khoá học. Nhân bản học kỳ / khoá học sao chép toàn bộ bài học (xem `information.md` REQ06, `course_management.md` REQ11). |
 | `EX01` | Ngoại lệ | Tên nhóm/nội dung trống hoặc chỉ khoảng trắng → chặn thêm/lưu. |
 | `EX02` | Ngoại lệ | Liên kết cụm thứ hai cùng loại vào một bài học (từ S1 / S6 hoặc API) → BE từ chối, bài giữ cụm cũ; popup liên kết mờ bài đã có cụm cùng loại. |
-| `EX06` | Ngoại lệ | Loại chưa có cụm liên kết, hoặc cụm liên kết chưa có mục → tab hiển thị trạng thái trống (`Chưa có cụm <loại> liên kết với bài này` / `Cụm <tên> chưa có mục`), badge không đếm loại đó. |
+| `EX06` | Ngoại lệ | Loại chưa có cụm liên kết, hoặc cụm liên kết chưa có mục → tab hiển thị trạng thái trống (`Chưa có cụm <loại> liên kết với bài này` / `Cụm <tên> chưa có mục`); badge vẫn đếm loại đó nếu đã tick ở S4. |
+| `EX11` | Ngoại lệ | Thêm tag loại trung tâm không dùng (qua API) → BE từ chối. Gỡ tag loại vẫn còn cụm liên kết → cho phép, cụm giữ nguyên (S4 EX10). |
 | `EX07` | Ngoại lệ | Gỡ mục / bài khỏi khoá ở S1 / S6 khi thuộc cụm đã liên kết bài học → popup gỡ nêu cụm và bài học; xác nhận → mục mất khỏi cụm và khỏi bài học. |
 | `EX10` | Ngoại lệ | Mục `Chưa phân cụm` → không xuất hiện ở bài học nào; gửi API gắn mục trực tiếp vào bài học → BE từ chối (không còn liên kết mục ↔ bài). |
 | `EX08` | Ngoại lệ | Mục thiếu thông tin trong cụm liên kết → vẫn hiện ở tab với chấm cam (bài học phản ánh cụm); app học viên chỉ dùng mục đủ thông tin. |
@@ -153,7 +154,7 @@ Frame: `CD-KH-030200` · Nguồn nội dung: Figma
 | `TC06` | Case 6: Tài nguyên (file, link, menu 3 chấm) | High |  | CD; `Nháp`; tab Tài nguyên | — |  |
 | `TC07` | Case 7: Tab Kiến thức hiện mục của cụm liên kết | High | Có | CD; cụm Từ vựng `Gia đình` (16 mục) liên kết Bài 1; cụm Ngữ pháp `Chủ đề 2` liên kết Bài 1 | — |  |
 | `TC7b` | Case 7b: Tab Kỹ năng hiện bài của cụm liên kết | High | Có | CD; cụm Nghe `Chào hỏi` (3 bài) liên kết Bài 1 | — |  |
-| `TC7c` | Case 7c: Tag tự động và badge theo số loại | High |  | CD; Bài 1 có cụm Từ vựng, Ngữ pháp, Mẫu câu và cụm Nghe liên kết | — |  |
+| `TC7c` | Case 7c: Tag và badge theo tick S4, nút + / x | High | Có | CD; khoá `Nháp`; ở S4 tab `Kiến thức/Kỹ năng` Bài 1 tick `Từ vựng`, `Ngữ pháp`, `Mẫu câu`, `Nghe`; chỉ `Từ vựng` có cụm liên kết | — |  |
 | `TC7e` | Case 7e: Cụm thay đổi, bài học phản ánh ngay | High |  | CD; cụm `Gia đình` liên kết Bài 1 | — |  |
 | `TC7h` | Case 7h: BE bắt trùng cụm cùng loại | High |  | CD; Bài 1 đã có cụm Từ vựng `Gia đình` | — |  |
 | `TC7f` | Case 7f: Gỡ mục khỏi khoá ở S1 khi thuộc cụm liên kết | High |  | Mục `爸爸` thuộc cụm `Gia đình` liên kết Bài 1 | — |  |
@@ -177,7 +178,7 @@ Frame: `CD-KH-030200` · Nguồn nội dung: Figma
 - Phân loại cần design duyệt (12): `CD-KH-030211`, `CD-KH-030230`, `CD-KH-030231`, `CD-KH-030240`, `CD-KH-030241`, `CD-KH-030242`, `CD-KH-030243`, `CD-KH-030244`, `CD-KH-030245`, `CD-KH-030246`, `CD-KH-030247`, `CD-KH-030250`
 - Thiếu prototype link đi vào (9): `CD-KH-030211`, `CD-KH-030231`, `CD-KH-030241`, `CD-KH-030242`, `CD-KH-030243`, `CD-KH-030244`, `CD-KH-030245`, `CD-KH-030246`, `CD-KH-030247`
 - Testcase không trỏ REQ (17): `TC01`, `TC02`, `TC03`, `TC04`, `TC05`, `TC06`, `TC07`, `TC7b`, `TC7c`, `TC7e`, `TC7h`, `TC7f`, `TC7g`, `TC7d`, `TC08`, `TC09`, `TC10`
-- REQ/EX chưa có testcase (22): `REQ01`, `REQ02`, `REQ03`, `REQ04`, `REQ10`, `REQ12`, `REQ11`, `REQ05`, `REQ06`, `REQ07`, `REQ08`, `REQ09`, `EX01`, `EX02`, `EX06`, `EX07`, `EX10`, `EX08`, `EX09`, `EX03`, `EX04`, `EX05`
+- REQ/EX chưa có testcase (23): `REQ01`, `REQ02`, `REQ03`, `REQ04`, `REQ10`, `REQ12`, `REQ11`, `REQ05`, `REQ06`, `REQ07`, `REQ08`, `REQ09`, `EX01`, `EX02`, `EX06`, `EX11`, `EX07`, `EX10`, `EX08`, `EX09`, `EX03`, `EX04`, `EX05`
 
 ## 9. Chi tiết dựng
 

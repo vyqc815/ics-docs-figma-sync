@@ -160,6 +160,7 @@ Frame: `CD-KH-030340` (tool đoán:CD-KH-060140, CD-KH-060141) · Nguồn nội 
 | `A07.03` | import-dong-bat-buoc |  | `5491:357722` STT | — |  |  | Khớp | QC |
 | `A07.04` | import-loi-du-lieu |  |  | — |  |  | Chưa khớp tự động | QC |
 | `A07.05` | import-cau-trung |  |  | — |  |  | Chưa khớp tự động | QC |
+| `A07.07` | import-cau-hoi-con |  | `5491:357722` STT | — |  |  | Khớp | QC |
 | `A07.06` | import-thanh-cong |  | `5491:357722` STT | — |  |  | Khớp | QC |
 
 ### `A08` Soát lỗi bằng AI
@@ -247,13 +248,13 @@ Frame: `CD-KH-030340` · Nguồn nội dung: Figma
 | `REQ03` | Bảng câu hỏi | Cột STT, Câu hỏi, Loại câu, Đáp án đúng, Kiến thức / Kỹ năng; lọc Loại câu, Kiến thức / Kỹ năng và tìm kiếm (không có lọc Trạng thái); câu hỏi con mở / thu; 50 câu/trang; xoá mềm; chỉ thêm / sửa / xoá khi học kỳ và khoá học `Nháp`. |
 | `REQ04` | Loại câu | 8 loại Trắc nghiệm, Sắp xếp, Nối từ, Nói (App chấm); Đọc, Viết, Hình ảnh (GV chấm); Câu hỏi con (theo từng câu con). |
 | `REQ05` | Soạn câu hỏi | Bắt buộc Số câu, Loại câu (khoá sau khi chọn), Kiến thức hoặc Kỹ năng, Điểm, Nội dung câu hỏi; đáp án theo loại câu; file tối đa 25MB; Số câu trùng thì chèn và dồn các câu sau. |
-| `REQ06` | Import / Export Excel | Cột file giống bảng UI, không có cột Điểm; export toàn bộ câu của bài; import thêm vào cuối, kiểm tra từng dòng, có dòng lỗi thì chặn cả file; không tự dò câu trùng. |
+| `REQ06` | Import / Export Excel | Cột file giống bảng UI, không có cột Điểm; export toàn bộ câu của bài; import thêm vào cuối bài đang chọn, **không cần đúng id** (bỏ qua `id`, `lesson_id`, `test_id`), câu con nối theo STT, dòng lỗi bị bỏ và báo theo số dòng; không tự dò câu trùng. |
 | `REQ07` | Soát lỗi bằng AI | Rà toàn bộ câu của bài, phát hiện câu trùng và các lỗi khác, chỉ báo, không tự sửa. |
 | `REQ08` | Generate bằng AI | Hai chế độ Nhập prompt / Chọn kiến thức & kỹ năng; Số câu không giới hạn; sinh bảng N dòng để sửa và chọn; chỉ dòng được tick mới tạo câu, thêm vào cuối bộ với tag `AI`; huỷ / lỗi không thêm câu. |
 | `REQ09` | Không trạng thái và kỳ Vô hiệu | BTVN, bộ câu hỏi và câu hỏi không có trạng thái riêng (trạng thái hiển thị ở Thư viện theo khoá học); chỉ sửa được khi học kỳ `Nháp` và khoá học `Nháp`, ngược lại chỉ đọc. Nhân bản học kỳ / khoá học sao chép toàn bộ BTVN và bộ câu hỏi thành câu hỏi mới. Kỳ `Vô hiệu`: BTVN đã tạo trong lớp từ kỳ đó trước khi vô hiệu vẫn dùng bình thường. |
 | `EX01` | Ngoại lệ | Lưu câu thiếu field bắt buộc (Số câu, Loại câu, Kiến thức / Kỹ năng, Điểm, Nội dung câu hỏi) → báo lỗi dưới field, không lưu. |
 | `EX02` | Ngoại lệ | File hình ảnh / âm thanh lớn hơn 25MB → không tải lên; Toast `Cảnh Báo` `File vượt quá dung lượng cho phép (25MB).` |
-| `EX03` | Ngoại lệ | File import có dòng thiếu field bắt buộc, sai Loại câu, sai Kiến thức / Kỹ năng, không phải `.xlsx` hoặc sai cột tiêu đề → chặn cả file, báo lỗi theo dòng; không thêm câu nào. |
+| `EX03` | Ngoại lệ | File import không phải `.xlsx` hoặc thiếu cột tiêu đề bắt buộc → không import. Dòng thiếu field bắt buộc, sai Loại câu, sai Kiến thức / Kỹ năng, câu con không có câu cha → bỏ dòng, các dòng khác vẫn thêm, báo lỗi theo dòng. Cột `id`, `lesson_id`, `test_id` trong file bị bỏ qua, không gây lỗi. |
 | `EX04` | Ngoại lệ | Lưu, import, export thất bại do backend / network → Toast `Có Lỗi Xảy Ra`; dữ liệu không thay đổi một phần. |
 | `EX05` | Ngoại lệ | Thêm, sửa, xoá, import, generate câu thuộc học kỳ hoặc khoá học không ở `Nháp` (giao diện hoặc request trực tiếp) → backend từ chối; Toast `Cảnh Báo`; dữ liệu không đổi. |
 | `EX06` | Ngoại lệ | Generate thiếu field bắt buộc (prompt, cụm kiến thức, số câu, dạng câu hỏi) hoặc dòng bảng thiếu Prompt / Kiến thức / Kỹ năng → khoá nút hoặc báo lỗi dòng, không tạo. |
@@ -288,7 +289,9 @@ Frame: `CD-KH-030340` · Nguồn nội dung: Figma
 | `TC21` | Case 21: File quá 25MB | Medium |  | EX02 / REQ05 | `A06` |  |
 | `TC22` | Case 22: Export đúng cột | High | Có | Flow 5 / REQ06 | `A07` | `A07.02` |
 | `TC23` | Case 23: Import thành công | High | Có | Flow 5 / REQ06 | `A07` |  |
-| `TC24` | Case 24: Chặn cả file khi có dòng lỗi | High |  | EX03 / REQ06 | `A07` |  |
+| `TC24` | Case 24: Bỏ dòng lỗi, vẫn import dòng hợp lệ | High |  | EX03 / REQ06 | `A07` |  |
+| `TC24a` | Case 24a: File có id của bài khác | High | Có | EX03 / REQ06 | `A07` |  |
+| `TC24b` | Case 24b: Câu con không có câu cha | Medium |  | EX03 / REQ06 | `A07` |  |
 | `TC25` | Case 25: Không tự bỏ câu trùng | Medium |  | REQ06 / REQ07 | `A07` |  |
 | `TC26` | Case 26: Export rồi import lại | Medium |  | REQ06 | `A07` | `A07.02` |
 | `TC26a` | Case 26a: Import file không phải .xlsx / sai cột tiêu đề | Medium |  | EX03 / REQ06 | `A07` |  |

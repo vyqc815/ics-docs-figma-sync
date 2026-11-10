@@ -13,7 +13,7 @@
   {
    "id": "CM-LE.REQ02",
    "name": "Icon 3 phần",
-   "text": "Sáng khi số lượng phần đó > 0 (icon Kiến thức = số loại kiến thức + số loại kỹ năng có cụm liên kết), tối khi = 0.",
+   "text": "Sáng khi số lượng phần đó > 0 (icon Kiến thức = số loại kiến thức + số loại kỹ năng đã tick ở S4), tối khi = 0.",
    "source": "qc",
    "content": "qc"
   },
@@ -27,14 +27,14 @@
   {
    "id": "CM-LE.REQ04",
    "name": "Không sửa kiến thức/kỹ năng từ bài học",
-   "text": "Chỉ tạo / sửa / chia cụm / liên kết ở S1 / S6; bài học chỉ xem.",
+   "text": "Mục, cụm, liên kết cụm chỉ tạo / sửa ở S1 / S6; bài học chỉ xem mục. Bài học chỉ sửa được **loại** (tag) ở tab Thông tin, đồng bộ với S4.",
    "source": "qc",
    "content": "qc"
   },
   {
    "id": "CM-LE.REQ10",
    "name": "Tab Kiến thức / Kỹ năng",
-   "text": "2 tab riêng, chỉ xem: bộ lọc Loại (mặc định Từ vựng / Nghe), tiêu đề = tên cụm đã liên kết với bài cho loại đó, danh sách mục của cụm theo thứ tự trong cụm, khung phải chi tiết. Kiến thức lấy từ S1, Kỹ năng lấy từ S6 của khoá đang mở. Badge tab = số loại có cụm liên kết.",
+   "text": "2 tab riêng, chỉ xem: bộ lọc Loại (mặc định Từ vựng / Nghe), tiêu đề = tên cụm đã liên kết với bài cho loại đó, danh sách mục của cụm theo thứ tự trong cụm, khung phải chi tiết. Kiến thức lấy từ S1, Kỹ năng lấy từ S6 của khoá đang mở. Badge tab = số loại đã tick ở S4.",
    "source": "qc",
    "content": "qc"
   },
@@ -48,7 +48,7 @@
   {
    "id": "CM-LE.REQ11",
    "name": "Kỹ năng/Kiến thức ở tab Thông tin",
-   "text": "Read-only, tự sinh = tập **loại** có cụm liên kết với bài; không lưu riêng, không chọn tay.",
+   "text": "= tập **loại** đã tick cho bài ở S4 tab `Kiến thức/Kỹ năng`; nút `+` thêm / `x` gỡ, lưu khi \"Lưu thay đổi\", đồng bộ hai chiều với S4; độc lập với cụm.",
    "source": "qc",
    "content": "qc"
   },
@@ -76,7 +76,7 @@
   {
    "id": "CM-LE.REQ08",
    "name": "Lưu & Hủy",
-   "text": "Thông tin / Nội dung lưu gộp khi \"Lưu thay đổi\" (Kiến thức / Kỹ năng chỉ xem); Tài nguyên lưu/xoá ngay; Hủy/X/click ngoài có popup xác nhận khi còn thay đổi chưa lưu.",
+   "text": "Thông tin (gồm tag Kiến thức / Kỹ năng) / Nội dung lưu gộp khi \"Lưu thay đổi\" (tab Kiến thức / Kỹ năng chỉ xem); Tài nguyên lưu/xoá ngay; Hủy/X/click ngoài có popup xác nhận khi còn thay đổi chưa lưu.",
    "source": "qc",
    "content": "qc"
   },
@@ -466,7 +466,7 @@
    "source": "tu-dien",
    "content": "qc",
    "requirement": "course_management/semester/lesson/lesson.md",
-   "needsDesign": true,
+   "needsDesign": false,
    "figmaDiffNotes": [],
    "items": [
     {
@@ -1342,7 +1342,13 @@
   },
   {
    "id": "CM-LE.EX06",
-   "text": "Loại chưa có cụm liên kết, hoặc cụm liên kết chưa có mục → tab hiển thị trạng thái trống (`Chưa có cụm <loại> liên kết với bài này` / `Cụm <tên> chưa có mục`), badge không đếm loại đó.",
+   "text": "Loại chưa có cụm liên kết, hoặc cụm liên kết chưa có mục → tab hiển thị trạng thái trống (`Chưa có cụm <loại> liên kết với bài này` / `Cụm <tên> chưa có mục`); badge vẫn đếm loại đó nếu đã tick ở S4.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "CM-LE.EX11",
+   "text": "Thêm tag loại trung tâm không dùng (qua API) → BE từ chối. Gỡ tag loại vẫn còn cụm liên kết → cho phép, cụm giữ nguyên (S4 EX10).",
    "source": "qc",
    "content": "qc"
   },
@@ -1541,11 +1547,11 @@
   },
   {
    "id": "CM-LE.TC7c",
-   "title": "Case 7c: Tag tự động và badge theo số loại",
+   "title": "Case 7c: Tag và badge theo tick S4, nút + / x",
    "priority": "High",
-   "smoke": false,
+   "smoke": true,
    "region": null,
-   "scenario": "CD; Bài 1 có cụm Từ vựng, Ngữ pháp, Mẫu câu và cụm Nghe liên kết",
+   "scenario": "CD; khoá `Nháp`; ở S4 tab `Kiến thức/Kỹ năng` Bài 1 tick `Từ vựng`, `Ngữ pháp`, `Mẫu câu`, `Nghe`; chỉ `Từ vựng` có cụm liên kết",
    "source": "qc",
    "content": "qc",
    "requirements": [],
@@ -1995,6 +2001,11 @@
   {
    "kind": "req-chua-co-testcase",
    "ref": "CM-LE.EX06",
+   "text": "chưa có testcase ghi mã này"
+  },
+  {
+   "kind": "req-chua-co-testcase",
+   "ref": "CM-LE.EX11",
    "text": "chưa có testcase ghi mã này"
   },
   {

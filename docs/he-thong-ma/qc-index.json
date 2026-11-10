@@ -1,6 +1,6 @@
 {
- "version": "22bf89bb9e66557d",
- "generatedAt": "2026-11-09T06:25:56+00:00",
+ "version": "b79ddd363ef5b231",
+ "generatedAt": "2026-11-10T03:52:09+00:00",
  "liveImage": "https://ics-figma-demo.vercel.app/api/figma-frame/{code}.png",
  "files": [
   {
@@ -575,20 +575,25 @@
     },
     {
      "no": 9,
+     "title": "Tab Câu hỏi (bộ câu hỏi của mục)",
+     "screens": []
+    },
+    {
+     "no": 10,
      "title": "Chọn nhiều và thao tác hàng loạt",
      "screens": [
       "CD-KH-040120"
      ]
     },
     {
-     "no": 10,
+     "no": 11,
      "title": "Popup Thêm vào cụm / Gỡ khỏi cụm",
      "screens": [
       "CD-KH-040125"
      ]
     },
     {
-     "no": 11,
+     "no": 12,
      "title": "Panel Cụm và Số cụm",
      "screens": [
       "CD-KH-040100",
@@ -596,42 +601,42 @@
      ]
     },
     {
-     "no": 12,
+     "no": 13,
      "title": "Popup Chia cụm bằng AI",
      "screens": [
       "CD-KH-040170"
      ]
     },
     {
-     "no": 13,
+     "no": 14,
      "title": "AI: Thêm bằng AI, Điền thiếu, Soát lỗi, Tạo lại",
      "screens": [
       "CD-KH-040190"
      ]
     },
     {
-     "no": 14,
+     "no": 15,
      "title": "Preview mobile",
      "screens": [
       "CD-KH-040140"
      ]
     },
     {
-     "no": 15,
+     "no": 16,
      "title": "Popup xác nhận gỡ mục khỏi khoá",
      "screens": [
       "CD-KH-040155"
      ]
     },
     {
-     "no": 16,
+     "no": 17,
      "title": "Cụm liên kết với Chi tiết bài học",
      "screens": [
       "CD-KH-030248"
      ]
     },
     {
-     "no": 17,
+     "no": 18,
      "title": "Toast phản hồi CRUD",
      "screens": []
     }
@@ -954,6 +959,7 @@
     "requirements/course_management/semester/lesson/image-3.png",
     "requirements/course_management/semester/lesson/image-4.png",
     "requirements/course_management/semester/lesson/image-5.png",
+    "requirements/course_management/semester/lesson/image-thong-tin-tag.png",
     "requirements/course_management/semester/lesson/image.png"
    ]
   },
@@ -1021,6 +1027,7 @@
     "CD-KH-050180",
     "CD-KH-050190",
     "CD-KH-050200",
+    "CD-KH-050210",
     "CD-KH-070301",
     "CD-KH-070302"
    ],
@@ -1064,104 +1071,111 @@
      "no": 6,
      "title": "Drawer Chi tiết bài nghe",
      "screens": [
-      "CD-KH-050110",
-      "CD-KH-070301"
+      "CD-KH-050110"
      ]
     },
     {
      "no": 7,
      "title": "Drawer Chi tiết bài đọc",
      "screens": [
-      "CD-KH-070302"
+      "CD-KH-050210"
      ]
     },
     {
      "no": 8,
+     "title": "Chi tiết bài — Tab Câu hỏi (bộ câu hỏi của bài kỹ năng)",
+     "screens": [
+      "CD-KH-070301",
+      "CD-KH-070302"
+     ]
+    },
+    {
+     "no": 9,
      "title": "Menu thao tác dòng và Popup Thêm vào cụm / Gỡ khỏi cụm",
      "screens": [
       "CD-KH-050100"
      ]
     },
     {
-     "no": 9,
+     "no": 10,
      "title": "Nhập nhanh",
      "screens": [
       "CD-KH-050140"
      ]
     },
     {
-     "no": 10,
+     "no": 11,
      "title": "Chọn nhiều và thao tác hàng loạt",
      "screens": [
       "CD-KH-050120"
      ]
     },
     {
-     "no": 11,
+     "no": 12,
      "title": "Popup Thêm bài từ thư viện",
      "screens": [
       "CD-KH-050150"
      ]
     },
     {
-     "no": 12,
+     "no": 13,
      "title": "Popup Tạo bài mới",
      "screens": [
       "CD-KH-050160"
      ]
     },
     {
-     "no": 13,
+     "no": 14,
      "title": "Popup Gỡ khỏi khoá",
      "screens": [
       "CD-KH-050155"
      ]
     },
     {
-     "no": 14,
+     "no": 15,
      "title": "Màn trống",
      "screens": [
       "CD-KH-050130"
      ]
     },
     {
-     "no": 15,
+     "no": 16,
      "title": "Import / Export Excel",
      "screens": []
     },
     {
-     "no": 16,
+     "no": 17,
      "title": "Transcript bằng AI",
      "screens": [
       "CD-KH-050180"
      ]
     },
     {
-     "no": 17,
+     "no": 18,
      "title": "Tạo câu hỏi bằng AI (tab Đọc)",
      "screens": []
     },
     {
-     "no": 18,
+     "no": 19,
      "title": "Soát lỗi bằng AI",
      "screens": [
       "CD-KH-050190"
      ]
     },
     {
-     "no": 19,
+     "no": 20,
      "title": "Preview mobile",
      "screens": [
       "CD-KH-050140"
      ]
     },
     {
-     "no": 20,
+     "no": 21,
      "title": "Cụm liên kết với Chi tiết bài học",
      "screens": []
     },
     {
-     "no": 21,
+     "no": 22,
      "title": "Toast phản hồi CRUD",
      "screens": []
     }

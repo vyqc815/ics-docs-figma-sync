@@ -41,7 +41,7 @@
   {
    "id": "CM-HW.REQ06",
    "name": "Import / Export Excel",
-   "text": "Cột file giống bảng UI, không có cột Điểm; export toàn bộ câu của bài; import thêm vào cuối, kiểm tra từng dòng, có dòng lỗi thì chặn cả file; không tự dò câu trùng.",
+   "text": "Cột file giống bảng UI, không có cột Điểm; export toàn bộ câu của bài; import thêm vào cuối bài đang chọn, **không cần đúng id** (bỏ qua `id`, `lesson_id`, `test_id`), câu con nối theo STT, dòng lỗi bị bỏ và báo theo số dòng; không tự dò câu trùng.",
    "source": "qc",
    "content": "qc"
   },
@@ -4819,7 +4819,7 @@
      "id": "CM-HW.A07.04",
      "name": "import-loi-du-lieu",
      "label": "Import — lỗi dữ liệu",
-     "spec": "Có dòng thiếu field bắt buộc hoặc sai giá trị → **chặn cả file**, không thêm câu nào, hiển thị danh sách lỗi theo số dòng (vd `Dòng 5: thiếu Loại câu`).",
+     "spec": "Dòng thiếu field bắt buộc hoặc sai giá trị (Loại câu ngoài 8 loại, Kiến thức / Kỹ năng không có trong khoá) → **bỏ dòng đó**, các dòng khác vẫn thêm; popup kết quả liệt kê lỗi theo số dòng (vd `Dòng 5: thiếu Loại câu`). Không còn dòng hợp lệ → không thêm câu nào, Toast `Cảnh Báo`.",
      "source": "tu-dien",
      "content": "qc",
      "matches": {},
@@ -4847,10 +4847,39 @@
      "status": "chua-thay-tren-figma"
     },
     {
+     "id": "CM-HW.A07.07",
+     "name": "import-cau-hoi-con",
+     "label": "Import — câu hỏi con",
+     "spec": "Câu con nối với câu cha theo `STT` dạng `7.1`, `7.2` trong file (không theo id); không tìm thấy câu cha `7` (hoặc câu cha bị bỏ) thì bỏ câu con, báo lỗi dòng.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "cd-kh-030340": [
+       {
+        "term": "STT",
+        "figmaId": "5491:357722",
+        "layer": "STT",
+        "confidence": "cao",
+        "region": null,
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Import — câu hỏi con"
+     ],
+     "status": "khop"
+    },
+    {
      "id": "CM-HW.A07.06",
      "name": "import-thanh-cong",
      "label": "Import — thành công",
-     "spec": "Thêm vào cuối bộ theo thứ tự `STT` trong file; Toast `Thành Công` `Đã import N câu hỏi.`; gợi ý chạy Soát lỗi bằng AI.",
+     "spec": "Thêm vào cuối bộ theo thứ tự `STT` trong file; Toast `Thành Công` `Đã import N câu hỏi.` (kèm `, bỏ M dòng lỗi` nếu có); gợi ý chạy Soát lỗi bằng AI.",
      "source": "tu-dien",
      "content": "qc",
      "matches": {
@@ -5930,7 +5959,7 @@
   },
   {
    "id": "CM-HW.EX03",
-   "text": "File import có dòng thiếu field bắt buộc, sai Loại câu, sai Kiến thức / Kỹ năng, không phải `.xlsx` hoặc sai cột tiêu đề → chặn cả file, báo lỗi theo dòng; không thêm câu nào.",
+   "text": "File import không phải `.xlsx` hoặc thiếu cột tiêu đề bắt buộc → không import. Dòng thiếu field bắt buộc, sai Loại câu, sai Kiến thức / Kỹ năng, câu con không có câu cha → bỏ dòng, các dòng khác vẫn thêm, báo lỗi theo dòng. Cột `id`, `lesson_id`, `test_id` trong file bị bỏ qua, không gây lỗi.",
    "source": "qc",
    "content": "qc"
   },
@@ -6480,8 +6509,44 @@
   },
   {
    "id": "CM-HW.TC24",
-   "title": "Case 24: Chặn cả file khi có dòng lỗi",
+   "title": "Case 24: Bỏ dòng lỗi, vẫn import dòng hợp lệ",
    "priority": "High",
+   "smoke": false,
+   "region": "CM-HW.A07",
+   "scenario": "EX03 / REQ06",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "CM-HW.REQ06"
+   ],
+   "exceptions": [
+    "CM-HW.EX03"
+   ],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "CM-HW.TC24a",
+   "title": "Case 24a: File có id của bài khác",
+   "priority": "High",
+   "smoke": true,
+   "region": "CM-HW.A07",
+   "scenario": "EX03 / REQ06",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "CM-HW.REQ06"
+   ],
+   "exceptions": [
+    "CM-HW.EX03"
+   ],
+   "flows": [],
+   "items": []
+  },
+  {
+   "id": "CM-HW.TC24b",
+   "title": "Case 24b: Câu con không có câu cha",
+   "priority": "Medium",
    "smoke": false,
    "region": "CM-HW.A07",
    "scenario": "EX03 / REQ06",

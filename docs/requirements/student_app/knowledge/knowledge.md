@@ -133,6 +133,7 @@ Mỗi loại dùng chung bộ thao tác: danh sách theo cụm, chi tiết mục
 - `A05.02` **Ngữ pháp**: Chế độ: `Học`, `Flashcard`, `Trắc nghiệm`
 - `A05.03` **Hanzi / Kanji**: Chế độ: `Chi tiết`, `Luyện viết`, `Flashcard`, `Trắc nghiệm`, `Thử thách 1`, `Thử thách 2`
 - `A05.04` **Mẫu câu**: Chế độ: `Học`, `Flashcard`
+- `A05.13` **Mọi loại (thêm)**: Chế độ: `Bài tập` khi phạm vi có ít nhất 1 mục có bộ câu hỏi do CD soạn (tab Câu hỏi của mục ở S1)
 
 **Điểm cần lưu ý:**
 
@@ -144,9 +145,12 @@ Mỗi loại dùng chung bộ thao tác: danh sách theo cụm, chi tiết mục
 - `A05.10` **`Luyện viết` (Chữ)**: Khung chữ mẫu, khung kẻ ô để viết tay theo thứ tự nét; `Hoàn tác`, `Xoá`, `Ẩn / Hiện hướng dẫn`, loa, `<` `>`; `Kiểm tra` so nét với mẫu: popup xanh `Đúng` hoặc đỏ `Sai` kèm chữ mẫu.
 - `A05.11` **`Thử thách 1` / `2` (Chữ)**: 16 câu, mỗi câu 5–7 giây; Thử thách 1: hiện phiên âm → chọn 1 trong 16 ô chữ; Thử thách 2: hiện chữ → chọn 1 trong 16 ô phiên âm; sai hoặc hết giờ mất 1 tim (3 tim); thông báo `Làm tốt lắm, tiếp tục nào` / `Sai rồi bạn ơi, ‘x’ mới đúng` / `Hết giờ cho câu này`; kết quả `Thành công rồi!` / `Hãy luyện tập thật tốt nhé!`. Đúng thì chữ chuyển Đã thuộc.
 - `A05.12` **`Chi tiết` (Chữ)**: Mở Chi tiết mục, duyệt bằng `<` `>` qua cả phạm vi.
+- `A05.14` **`Bài tập` (mọi loại)**: Câu hỏi CD soạn cho các mục trong phạm vi (theo thứ tự mục, rồi STT), đủ 8 loại câu như BTVN, kể cả câu hỏi con; `<` `>`, `n/N`, `Nộp bài` → câu App chấm hiện đúng xanh / sai đỏ + giải thích; câu GV chấm (Nói, Viết…) hiện bài mẫu / đáp án tham khảo để tự so. **Không lưu điểm**, không đổi trạng thái thuộc; `Làm lại` / `Quay lại`.
 
 - Chế độ `Học`, `Flashcard` cập nhật trạng thái thuộc khi học viên bấm tag; `Thử thách` Từ vựng và `Trắc nghiệm` Ngữ pháp không đổi trạng thái; Thử thách chữ đổi khi trả lời đúng.
 - Phạm vi luyện tập = danh sách đang mở (cụm hoặc bộ lọc).
+- Câu kiểm tra trong `Học` và câu của `Trắc nghiệm`: mục có bộ câu hỏi thì lấy câu từ bộ đó (câu App chấm); mục **không có
+  câu hỏi thì app tự sinh như cũ** (từ nghĩa, ví dụ, cấu trúc của mục). `Thử thách` giữ cách tự sinh.
 - Không có mục: `Không có nội dung để luyện tập`.
 
 ### Trang 6: Toast phản hồi CRUD
@@ -197,7 +201,8 @@ Duyệt → thẻ 1/N → Đã Thuộc / Cần Học Lại (Quay Lại để s�
 
 ```text
 Luyện Tập → popup chế độ theo loại → chạy chế độ trên phạm vi đang mở
-      → Học / Flashcard: đổi trạng thái thuộc khi bấm tag; Thử thách / Trắc nghiệm: chỉ kết quả phiên
+      → Học / Flashcard: đổi trạng thái thuộc khi bấm tag; Thử thách / Trắc nghiệm / Bài tập: chỉ kết quả phiên
+      → câu hỏi: lấy bộ câu hỏi CD soạn của mục; mục không có câu thì app tự sinh như cũ
       → Kết thúc: màn / popup kết quả, Làm lại hoặc Quay lại
 ```
 
@@ -217,7 +222,7 @@ Luyện Tập → popup chế độ theo loại → chạy chế độ trên ph�
 | REQ02 | Hiển thị | Cụm có tiến độ % Đã thuộc; chip / thẻ / ô theo loại; chi tiết mục đủ field có dữ liệu, ẩn field trống; bật / tắt dịch nghĩa nhớ theo thiết bị; bộ lọc Tất cả / Đã thuộc / Chưa thuộc. |
 | REQ03 | Thư viện | ⭐ lưu / gỡ một mục; chọn nhiều lưu / gỡ hàng loạt; Toast `Đã cập nhật thư viện!`. |
 | REQ04 | Trạng thái thuộc | Một trạng thái theo học viên và mục, dùng chung mọi màn; 💡, tag trên thẻ, Duyệt, Flashcard, Thử thách chữ (đúng) đều đổi được; Cần học lại = Chưa thuộc. |
-| REQ05 | Luyện tập | Bộ chế độ theo loại như bảng; Học chèn kiểm tra sau 3–5 thẻ; Flashcard 3 loại + Tuỳ chỉnh; Thử thách 10 giây / câu, 3 sao; Trắc nghiệm ngữ pháp điểm thang 10 không lưu; Luyện viết so nét; Thử thách chữ 16 câu, 5–7 giây, 3 tim. |
+| REQ05 | Luyện tập | Bộ chế độ theo loại như bảng; Học chèn kiểm tra sau 3–5 thẻ; Flashcard 3 loại + Tuỳ chỉnh; Thử thách 10 giây / câu, 3 sao; Trắc nghiệm ngữ pháp điểm thang 10 không lưu; Luyện viết so nét; Thử thách chữ 16 câu, 5–7 giây, 3 tim. Mục có bộ câu hỏi (S1): thêm chế độ `Bài tập`, câu kiểm tra / Trắc nghiệm lấy từ bộ đó, không lưu điểm; mục không có câu thì tự sinh như cũ. |
 | REQ06 | Audio | Loa phát audio mục, không có thì TTS theo ngôn ngữ trung tâm. |
 
 ### 2.4. Ràng buộc
@@ -265,6 +270,8 @@ Luyện Tập → popup chế độ theo loại → chạy chế độ trên ph�
 | Case 17: Thử thách thua | Medium | EX02 / REQ05 | Học viên | Chế độ Thử thách | **Given** sai 3 câu<br>**When** mất sao thứ 3<br>**Then** popup `Thật tiếc...`, `Quay lại` / `Làm lại` | - Trạng thái thuộc không đổi |
 | Case 18: Trắc nghiệm ngữ pháp | Medium | REQ05 | Học viên | 13 câu, làm 2 | **Given** `Kết thúc`<br>**When** popup `Số câu chưa hoàn thành: 11/13`<br>**Then** `Xem đáp án` hiện kết quả, câu trống ghi bỏ qua | - Điểm thang 10, không lưu |
 | Case 19: Luyện viết Hanzi | Medium | REQ05 | Học viên Đắc Nhân | Chữ `你` | **Given** viết tay, `Kiểm tra`<br>**When** nét khớp<br>**Then** popup xanh `Đúng` | - `Hoàn tác` bỏ nét cuối |
+| Case 20a: Bài tập theo bộ câu hỏi | High · Smoke | Flow 4 / REQ05 | Học viên | Cụm 10 từ, 3 từ có tổng 6 câu do CD soạn | **Given** `Luyện Tập`<br>**When** chọn `Bài tập`, làm 6 câu, `Nộp bài`<br>**Then** đúng / sai từng câu kèm giải thích | - Không lưu điểm, trạng thái thuộc không đổi |
+| Case 20b: Mục không có câu hỏi | High | Flow 4 / REQ05 | Học viên | Cụm 10 từ, không từ nào có câu hỏi | **Given** `Luyện Tập`<br>**When** xem popup; chọn `Học`<br>**Then** không có `Bài tập`; câu kiểm tra tự sinh như cũ | - |
 | Case 20: Thử thách 1 Hanzi | Medium | REQ05 | Học viên Đắc Nhân | 16 chữ | **Given** chọn đúng 16 câu<br>**When** hết<br>**Then** `Thành công rồi!`, 16 chữ Đã thuộc | - Hết giờ 1 câu mất 1 tim |
 | Toast Case 1: Thành công | High | Ràng buộc Toast CRUD | Học viên | Mạng ổn | **Given** bấm ⭐<br>**When** lưu xong<br>**Then** Toast `Thành Công` | - Một Toast |
 | Toast Case 2: Lỗi | Medium | Ràng buộc Toast CRUD | Học viên | Backend lỗi | **Given** bấm ⭐<br>**When** thất bại<br>**Then** Toast `Có Lỗi Xảy Ra`, ⭐ giữ trạng thái cũ | - |

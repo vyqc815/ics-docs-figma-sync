@@ -55,14 +55,14 @@
   {
    "id": "CM-KS.REQ08",
    "name": "Cụm",
-   "text": "Mỗi loại có bộ cụm riêng; **số cụm = tổng Số buổi của loại ở Tổng quan (S2)**, hệ thống tự tạo cụm rỗng",
+   "text": "Mỗi loại có bộ cụm riêng; cụm chỉ được tạo khi CD `Thêm cụm mới` hoặc `Chia cụm bằng AI` (S2 không tự",
    "source": "qc",
    "content": "qc"
   },
   {
    "id": "CM-KS.REQ09",
    "name": "Chia cụm bằng AI",
-   "text": "AI chia mục vào các cụm đang có theo chủ đề và prompt, đặt tên cụm theo chủ đề; không tạo",
+   "text": "`Số cụm` bắt buộc, mặc định = tổng Số buổi của loại ở S2, CD sửa được, ≥ số cụm hiện có;",
    "source": "qc",
    "content": "qc"
   },
@@ -91,6 +91,13 @@
    "id": "CM-KS.REQ13",
    "name": "Kiến thức trong bài học",
    "text": "Chi tiết bài học không chọn mục; tab Kiến thức chỉ hiển thị mục hiện có của cụm đã",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "CM-KS.REQ16",
+   "name": "Bộ câu hỏi của mục",
+   "text": "Mọi loại kiến thức có tab `Câu hỏi` trong Chi tiết mục, đủ chức năng như BTVN & Kiểm tra",
    "source": "qc",
    "content": "qc"
   },
@@ -359,7 +366,8 @@
    "openedFrom": [],
    "citedByRequirement": false,
    "regions": [
-    "CM-KS.A05"
+    "CM-KS.A05",
+    "CM-KS.A18"
    ]
   },
   "CD-KH-040170": {
@@ -3448,9 +3456,7 @@
       ]
      },
      "relations": [],
-     "testcases": [
-      "CM-KS.TC25e"
-     ],
+     "testcases": [],
      "missingTerms": [
       "×"
      ],
@@ -3480,9 +3486,7 @@
      "content": "qc",
      "matches": {},
      "relations": [],
-     "testcases": [
-      "CM-KS.TC25c"
-     ],
+     "testcases": [],
      "missingTerms": [
       "↻ Tạo lại"
      ],
@@ -3529,11 +3533,7 @@
      "content": "qc",
      "matches": {},
      "relations": [],
-     "testcases": [
-      "CM-KS.TC25a",
-      "CM-KS.TC25b",
-      "CM-KS.TC25e"
-     ],
+     "testcases": [],
      "missingTerms": [
       "Ví dụ n",
       "Ví dụ"
@@ -3607,6 +3607,144 @@
      ],
      "status": "chua-thay-tren-figma"
     }
+   ]
+  },
+  {
+   "id": "CM-KS.A18",
+   "name": "chi-tiet-muc-tab-cau-hoi-bo-cau-hoi-cua-",
+   "title": "Chi tiết mục — Tab Câu hỏi (bộ câu hỏi của mục)",
+   "screens": [
+    "cd-kh-040160"
+   ],
+   "screensGuessed": [
+    "CD-KH-040100",
+    "CD-KH-040200"
+   ],
+   "source": "tu-dien",
+   "content": "qc",
+   "requirement": "course_management/knowledge-s1/knowledge-s1.md",
+   "needsDesign": false,
+   "figmaDiffNotes": [],
+   "items": [
+    {
+     "id": "CM-KS.A18.01",
+     "name": "cay-ky-bai",
+     "label": "Cây kỳ / bài",
+     "spec": "Không có; bộ câu hỏi là của mục đang mở.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Cây kỳ / bài"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "CM-KS.A18.02",
+     "name": "cot-field-kien-thuc-ky-nang",
+     "label": "Cột / field Kiến thức / Kỹ năng",
+     "spec": "Tự gắn mục đang mở, **chỉ đọc**, không bắt buộc chọn; bộ lọc Kiến thức / Kỹ năng ẩn.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Kiến thức / Kỹ năng"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "CM-KS.A18.03",
+     "name": "generate-bang-ai",
+     "label": "Generate bằng AI",
+     "spec": "Không có bước chọn cụm; AI sinh câu theo nội dung mục đang mở (từ, nghĩa, ví dụ, cấu trúc…) + prompt.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "CM-KS.TC25g",
+      "CM-KS.TC25j"
+     ],
+     "missingTerms": [
+      "Generate bằng AI"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "CM-KS.A18.04",
+     "name": "the-tong-quan",
+     "label": "Thẻ tổng quan",
+     "spec": "Không có thời gian làm bài (giống BTVN).",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "CM-KS.TC25g"
+     ],
+     "missingTerms": [
+      "Thẻ tổng quan"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "CM-KS.A18.05",
+     "name": "export",
+     "label": "Export",
+     "spec": "Tên file `<Khoá học>_<Loại>_<nội dung mục>.xlsx`.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [
+      "CM-KS.TC25g",
+      "CM-KS.TC25k"
+     ],
+     "missingTerms": [
+      "Export",
+      "<Khoá học>_<Loại>_<nội dung mục>.xlsx"
+     ],
+     "status": "chua-thay-tren-figma"
+    },
+    {
+     "id": "CM-KS.A18.06",
+     "name": "import",
+     "label": "Import",
+     "spec": "Mọi dòng hợp lệ được thêm vào cuối bộ câu hỏi **của mục đang mở**; cột `id`, `lesson_id`, mã mục trong file (nếu có) **bỏ qua**; dòng thiếu field bắt buộc (`STT`, `Câu hỏi`, `Loại câu`) bị bỏ, các dòng khác vẫn thêm, popup kết quả liệt kê lỗi theo số dòng (vd `Dòng 5: thiếu Loại câu`). Câu con nối với câu cha theo `STT` dạng `7.1`, `7.2` trong file; không tìm thấy câu cha thì bỏ câu con, báo lỗi dòng.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "cd-kh-040160": [
+       {
+        "term": "Import",
+        "figmaId": "4846:171925",
+        "layer": "Tự chia cụm bằng AI sau khi import",
+        "confidence": "cao",
+        "region": "Tuỳ chọn",
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "testcases": [
+      "CM-KS.TC25g",
+      "CM-KS.TC25i"
+     ],
+     "missingTerms": [
+      "id"
+     ],
+     "status": "khop"
+    }
+   ],
+   "screensFromItems": [
+    "cd-kh-040160"
    ]
   },
   {
@@ -3982,18 +4120,18 @@
      "status": "khop"
     },
     {
-     "id": "CM-KS.A11.02",
-     "name": "so-cum",
-     "label": "Số cụm",
-     "spec": "**Chỉ đọc**, = tổng `Số buổi` của các dòng Nội dung buổi học có Loại này ở Tổng quan (S2); kèm ghi chú `Theo Tổng quan (S2) · N buổi`. Hệ thống tự tạo đủ cụm rỗng tên `Chủ đề 1` … `Chủ đề N` theo S2; CD đổi tên, chia mục và liên kết bài học tại đây. Loại chưa có buổi ở S2 thì panel hiện `Chưa có cụm. Nhập Số buổi cho loại <X> ở Tổng quan (S2) để tạo cụm.` (**UI cần cập nhật**, Figma vẽ ô nhập).",
+     "id": "CM-KS.A11.10",
+     "name": "tat-ca-cum-so-cum",
+     "label": "Tất cả cụm (số cụm)",
+     "spec": "Badge `N cụm` = số cụm hiện có của loại; không có ô nhập Số cụm ở panel (Số cụm nhập trong popup Chia cụm bằng AI). Loại chưa có cụm: panel hiện `Chưa có cụm. Thêm cụm mới hoặc Chia cụm bằng AI.`",
      "source": "tu-dien",
      "content": "qc",
      "matches": {
       "cd-kh-040100": [
        {
-        "term": "Số cụm",
-        "figmaId": "5003:16498",
-        "layer": "Số cụm",
+        "term": "Tất cả cụm",
+        "figmaId": "4846:158308",
+        "layer": "Tất cả cụm",
         "confidence": "cao",
         "region": "Panel · Cụm từ vựng",
         "owner": null,
@@ -4004,9 +4142,9 @@
       ],
       "cd-kh-040200": [
        {
-        "term": "Số cụm",
-        "figmaId": "5003:16663",
-        "layer": "Số cụm",
+        "term": "Tất cả cụm",
+        "figmaId": "5003:16660",
+        "layer": "Tất cả cụm",
         "confidence": "cao",
         "region": "Panel · Cụm từ vựng",
         "owner": null,
@@ -4017,10 +4155,7 @@
       ]
      },
      "relations": [],
-     "testcases": [
-      "CM-KS.TC30",
-      "CM-KS.TC30a"
-     ],
+     "testcases": [],
      "missingTerms": [],
      "status": "khop"
     },
@@ -4074,7 +4209,9 @@
        "raw": "Mở popup Chia cụm bằng AI"
       }
      ],
-     "testcases": [],
+     "testcases": [
+      "CM-KS.TC30"
+     ],
      "missingTerms": [],
      "status": "khop"
     },
@@ -4218,7 +4355,9 @@
       ]
      },
      "relations": [],
-     "testcases": [],
+     "testcases": [
+      "CM-KS.TC32"
+     ],
      "missingTerms": [],
      "status": "khop"
     },
@@ -4226,7 +4365,7 @@
      "id": "CM-KS.A11.07",
      "name": "dong-cum",
      "label": "Dòng cụm",
-     "spec": "Số thứ tự + tên + số mục + chip bài học đã liên kết (`HK I · Bài 3`) hoặc nhãn cam `Chưa liên kết`; menu ⋮: `Đổi tên`, `Liên kết bài học`. Không có `Xoá cụm`.",
+     "spec": "Số thứ tự + tên + số mục + chip bài học đã liên kết (`HK I · Bài 3`) hoặc nhãn cam `Chưa liên kết`; menu ⋮: `Đổi tên`, `Liên kết bài học`, `Xoá cụm`.",
      "source": "tu-dien",
      "content": "qc",
      "matches": {},
@@ -4259,7 +4398,7 @@
      "id": "CM-KS.A11.09",
      "name": "them-cum-moi",
      "label": "Thêm cụm mới",
-     "spec": "**Bỏ**: số cụm chỉ do S2 quyết định.",
+     "spec": "Ô nhập cuối danh sách cụm: gõ tên + Enter → tạo cụm rỗng ở cuối (tên trống thì mặc định `Chủ đề {k}`).",
      "source": "tu-dien",
      "content": "qc",
      "matches": {
@@ -4305,9 +4444,27 @@
       ]
      },
      "relations": [],
-     "testcases": [],
+     "testcases": [
+      "CM-KS.TC30",
+      "CM-KS.TC30a"
+     ],
      "missingTerms": [],
      "status": "khop"
+    },
+    {
+     "id": "CM-KS.A11.11",
+     "name": "popup-xoa-cum",
+     "label": "Popup Xoá cụm",
+     "spec": "Tiêu đề `Xoá cụm`; nội dung `Cụm <tên> có N mục{, đang liên kết <kỳ> · Bài k}. Mục sẽ về Chưa phân cụm, bài học không còn mục của cụm này.`; nút `Huỷ` / `Xoá cụm`. Mục không bị gỡ khỏi khoá.",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {},
+     "relations": [],
+     "testcases": [],
+     "missingTerms": [
+      "Xoá cụm"
+     ],
+     "status": "chua-thay-tren-figma"
     }
    ]
   },
@@ -4358,6 +4515,37 @@
      "missingTerms": [
       "Tiêu đề / mô tả"
      ],
+     "status": "khop"
+    },
+    {
+     "id": "CM-KS.A12.10",
+     "name": "so-cum",
+     "label": "Số cụm",
+     "spec": "**Bắt buộc**, số nguyên ≥ 1 và ≥ số cụm hiện có của loại. Điền sẵn tổng Số buổi của loại ở S2 kèm ghi chú `Theo Tổng quan (S2) · N buổi`; loại chưa có ở S2 thì để trống. Nhỏ hơn số cụm hiện có: lỗi dưới ô `Số cụm không được nhỏ hơn số cụm hiện có (K). Xoá bớt cụm ở panel Cụm trước.`",
+     "source": "tu-dien",
+     "content": "qc",
+     "matches": {
+      "cd-kh-040170": [
+       {
+        "term": "Số cụm",
+        "figmaId": "4846:172018",
+        "layer": "Số cụm",
+        "confidence": "cao",
+        "region": "Cột cấu hình",
+        "owner": null,
+        "component": null,
+        "variant": null,
+        "inCode": false
+       }
+      ]
+     },
+     "relations": [],
+     "testcases": [
+      "CM-KS.TC34",
+      "CM-KS.TC34a",
+      "CM-KS.TC37"
+     ],
+     "missingTerms": [],
      "status": "khop"
     },
     {
@@ -4527,7 +4715,8 @@
      },
      "relations": [],
      "testcases": [
-      "CM-KS.TC34"
+      "CM-KS.TC34",
+      "CM-KS.TC37"
      ],
      "missingTerms": [],
      "status": "khop"
@@ -4536,7 +4725,7 @@
      "id": "CM-KS.A12.07",
      "name": "de-xuat-cua-ai",
      "label": "Đề xuất của AI",
-     "spec": "Badge `N mục → M cụm`; mỗi cụm 1 thẻ: tên cụm (AI đặt theo chủ đề, sửa được bằng icon bút), nhãn `Cụm cũ`, `+k từ`, danh sách mục. Kéo thả mục giữa các cụm để chỉnh.",
+     "spec": "Badge `N mục → M cụm`; mỗi cụm 1 thẻ: tên cụm (AI đặt theo chủ đề, sửa được bằng icon bút), nhãn `Cụm cũ` hoặc `Cụm mới`, `+k từ`, danh sách mục. Kéo thả mục giữa các cụm để chỉnh.",
      "source": "tu-dien",
      "content": "qc",
      "matches": {
@@ -5391,7 +5580,7 @@
      "id": "CM-KS.A17.03",
      "name": "canh-bao",
      "label": "Cảnh báo",
-     "spec": "`Cảnh Báo` | Dữ liệu chưa hợp lệ hoặc điều kiện cần kiểm tra (vd `Nhập Số buổi cho loại này ở Tổng quan (S2) trước khi chia cụm bằng AI.`).",
+     "spec": "`Cảnh Báo` | Dữ liệu chưa hợp lệ hoặc điều kiện cần kiểm tra (vd `Liên kết bài học` bị từ chối vì bài đã có cụm cùng loại).",
      "source": "tu-dien",
      "content": "qc",
      "matches": {},
@@ -5629,7 +5818,7 @@
   },
   {
    "id": "CM-KS.EX05",
-   "text": "Chia cụm bằng AI khi loại chưa có cụm (S2 chưa có buổi cho loại) → không gửi yêu cầu, nhắc nhập Số buổi ở Tổng quan (S2).",
+   "text": "Chia cụm bằng AI khi `Số cụm` trống / 0 → nút `Tạo đề xuất` disable, gợi ý nhập Số cụm; nhỏ hơn số cụm hiện có → lỗi dưới ô, không gửi AI.",
    "source": "qc",
    "content": "qc"
   },
@@ -5665,13 +5854,19 @@
   },
   {
    "id": "CM-KS.EX11",
-   "text": "Đổi `Số cụm`, thêm hoặc xoá cụm trực tiếp ở S1 (qua UI / API) → ô chỉ đọc, không có nút; API từ chối. Số cụm chỉ đổi qua Số buổi ở S2.",
+   "text": "Đổi Loại / Số buổi ở Tổng quan (S2) → không tạo / xoá cụm ở S1; chỉ đổi số mặc định của ô `Số cụm` trong popup Chia cụm bằng AI.",
    "source": "qc",
    "content": "qc"
   },
   {
    "id": "CM-KS.EX13",
    "text": "Liên kết cụm với bài học đã có cụm cùng loại, hoặc với bài học không thuộc khoá → BE từ chối (409), Toast `Cảnh Báo` nêu cụm đang chiếm; dữ liệu không đổi.",
+   "source": "qc",
+   "content": "qc"
+  },
+  {
+   "id": "CM-KS.EX14",
+   "text": "Import (kiến thức hoặc câu hỏi) có cột `id`, `lesson_id`, mã mục sai / thuộc mục khác / không có → bỏ qua cột, vẫn import vào chỗ đang mở; dòng thiếu field bắt buộc → bỏ dòng, các dòng khác vẫn import, báo lỗi theo số dòng.",
    "source": "qc",
    "content": "qc"
   },
@@ -5752,7 +5947,7 @@
   },
   {
    "id": "CM-KS.FLOW08",
-   "name": "Cụm sinh từ S2, đổi tên và liên kết bài học",
+   "name": "Thêm / đổi tên / xoá cụm và liên kết bài học",
    "source": "qc",
    "content": "qc",
    "requirements": [
@@ -5793,6 +5988,15 @@
    "content": "qc",
    "requirements": [
     "CM-KS.REQ13"
+   ]
+  },
+  {
+   "id": "CM-KS.FLOW14",
+   "name": "Bộ câu hỏi của mục",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "CM-KS.REQ16"
    ]
   },
   {
@@ -6461,11 +6665,113 @@
    ]
   },
   {
+   "id": "CM-KS.TC25g",
+   "title": "Case 25g: Mở tab Câu hỏi",
+   "priority": "High",
+   "smoke": true,
+   "region": "CM-KS.A18",
+   "scenario": "Flow 14 / REQ16",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "CM-KS.REQ16"
+   ],
+   "exceptions": [],
+   "flows": [
+    "CM-KS.FLOW14"
+   ],
+   "items": [
+    "CM-KS.A18.03",
+    "CM-KS.A18.04",
+    "CM-KS.A18.05",
+    "CM-KS.A18.06"
+   ]
+  },
+  {
+   "id": "CM-KS.TC25h",
+   "title": "Case 25h: Thêm câu và câu con",
+   "priority": "High",
+   "smoke": true,
+   "region": "CM-KS.A18",
+   "scenario": "Flow 14 / REQ16",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "CM-KS.REQ16"
+   ],
+   "exceptions": [],
+   "flows": [
+    "CM-KS.FLOW14"
+   ],
+   "items": []
+  },
+  {
+   "id": "CM-KS.TC25i",
+   "title": "Case 25i: Import không theo id",
+   "priority": "High",
+   "smoke": false,
+   "region": "CM-KS.A18",
+   "scenario": "Flow 14 / REQ16 / EX14",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "CM-KS.REQ16"
+   ],
+   "exceptions": [
+    "CM-KS.EX14"
+   ],
+   "flows": [
+    "CM-KS.FLOW14"
+   ],
+   "items": [
+    "CM-KS.A18.06"
+   ]
+  },
+  {
+   "id": "CM-KS.TC25j",
+   "title": "Case 25j: Generate theo mục",
+   "priority": "Medium",
+   "smoke": false,
+   "region": "CM-KS.A18",
+   "scenario": "Flow 14 / REQ16",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "CM-KS.REQ16"
+   ],
+   "exceptions": [],
+   "flows": [
+    "CM-KS.FLOW14"
+   ],
+   "items": [
+    "CM-KS.A18.03"
+   ]
+  },
+  {
+   "id": "CM-KS.TC25k",
+   "title": "Case 25k: Khoá Công khai và gỡ mục",
+   "priority": "Medium",
+   "smoke": false,
+   "region": "CM-KS.A18",
+   "scenario": "REQ16 / REQ07",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "CM-KS.REQ16",
+    "CM-KS.REQ07"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": [
+    "CM-KS.A18.05"
+   ]
+  },
+  {
    "id": "CM-KS.TC25a",
    "title": "Case 25a: Sửa đủ field ở Chi tiết mục",
    "priority": "High",
    "smoke": true,
-   "region": "CM-KS.A08",
+   "region": "CM-KS.A18",
    "scenario": "Flow 5 / REQ06",
    "source": "qc",
    "content": "qc",
@@ -6476,16 +6782,14 @@
    "flows": [
     "CM-KS.FLOW05"
    ],
-   "items": [
-    "CM-KS.A08.08"
-   ]
+   "items": []
   },
   {
    "id": "CM-KS.TC25b",
    "title": "Case 25b: Thêm và xoá ví dụ",
    "priority": "Medium",
    "smoke": false,
-   "region": "CM-KS.A08",
+   "region": "CM-KS.A18",
    "scenario": "REQ03 / REQ06",
    "source": "qc",
    "content": "qc",
@@ -6495,16 +6799,14 @@
    ],
    "exceptions": [],
    "flows": [],
-   "items": [
-    "CM-KS.A08.08"
-   ]
+   "items": []
   },
   {
    "id": "CM-KS.TC25c",
    "title": "Case 25c: Tạo lại một field",
    "priority": "Medium",
    "smoke": false,
-   "region": "CM-KS.A08",
+   "region": "CM-KS.A18",
    "scenario": "REQ10",
    "source": "qc",
    "content": "qc",
@@ -6513,16 +6815,14 @@
    ],
    "exceptions": [],
    "flows": [],
-   "items": [
-    "CM-KS.A08.05"
-   ]
+   "items": []
   },
   {
    "id": "CM-KS.TC25d",
    "title": "Case 25d: Đóng khi chưa lưu",
    "priority": "Low",
    "smoke": false,
-   "region": "CM-KS.A08",
+   "region": "CM-KS.A18",
    "scenario": "REQ06",
    "source": "qc",
    "content": "qc",
@@ -6538,7 +6838,7 @@
    "title": "Case 25e: Lưu với Ví dụ rỗng / Từ loại ngoài danh sách",
    "priority": "Medium",
    "smoke": false,
-   "region": "CM-KS.A08",
+   "region": "CM-KS.A18",
    "scenario": "EX12",
    "source": "qc",
    "content": "qc",
@@ -6547,17 +6847,14 @@
     "CM-KS.EX12"
    ],
    "flows": [],
-   "items": [
-    "CM-KS.A08.03",
-    "CM-KS.A08.08"
-   ]
+   "items": []
   },
   {
    "id": "CM-KS.TC25f",
    "title": "Case 25f: Lưu thất bại",
    "priority": "Medium",
    "smoke": false,
-   "region": "CM-KS.A08",
+   "region": "CM-KS.A18",
    "scenario": "EX09",
    "source": "qc",
    "content": "qc",
@@ -6672,7 +6969,7 @@
   },
   {
    "id": "CM-KS.TC30",
-   "title": "Case 30: Cụm sinh từ S2",
+   "title": "Case 30: Không tự sinh cụm từ S2",
    "priority": "High",
    "smoke": true,
    "region": "CM-KS.A11",
@@ -6687,7 +6984,8 @@
     "CM-KS.FLOW08"
    ],
    "items": [
-    "CM-KS.A11.02"
+    "CM-KS.A11.03",
+    "CM-KS.A11.09"
    ]
   },
   {
@@ -6748,38 +7046,42 @@
   },
   {
    "id": "CM-KS.TC32",
-   "title": "Case 32: Không xoá cụm tại S1",
+   "title": "Case 32: Xoá cụm",
    "priority": "Medium",
    "smoke": false,
    "region": "CM-KS.A11",
-   "scenario": "REQ08",
+   "scenario": "Flow 8 / REQ08",
    "source": "qc",
    "content": "qc",
    "requirements": [
     "CM-KS.REQ08"
    ],
    "exceptions": [],
-   "flows": [],
-   "items": []
+   "flows": [
+    "CM-KS.FLOW08"
+   ],
+   "items": [
+    "CM-KS.A11.06"
+   ]
   },
   {
    "id": "CM-KS.TC30a",
-   "title": "Case 30a: Số cụm luôn chỉ đọc",
+   "title": "Case 30a: Thêm cụm tay",
    "priority": "Medium",
    "smoke": false,
    "region": "CM-KS.A11",
-   "scenario": "REQ08 / EX11",
+   "scenario": "Flow 8 / REQ08",
    "source": "qc",
    "content": "qc",
    "requirements": [
     "CM-KS.REQ08"
    ],
-   "exceptions": [
-    "CM-KS.EX11"
+   "exceptions": [],
+   "flows": [
+    "CM-KS.FLOW08"
    ],
-   "flows": [],
    "items": [
-    "CM-KS.A11.02"
+    "CM-KS.A11.09"
    ]
   },
   {
@@ -6800,7 +7102,7 @@
   },
   {
    "id": "CM-KS.TC34",
-   "title": "Case 34: Chia cụm bằng AI",
+   "title": "Case 34: Chia cụm bằng AI, Số cụm mặc định theo S2",
    "priority": "High",
    "smoke": true,
    "region": "CM-KS.A12",
@@ -6815,7 +7117,26 @@
     "CM-KS.FLOW10"
    ],
    "items": [
+    "CM-KS.A12.10",
     "CM-KS.A12.06"
+   ]
+  },
+  {
+   "id": "CM-KS.TC34a",
+   "title": "Case 34a: Sửa Số cụm",
+   "priority": "High",
+   "smoke": false,
+   "region": "CM-KS.A12",
+   "scenario": "REQ09",
+   "source": "qc",
+   "content": "qc",
+   "requirements": [
+    "CM-KS.REQ09"
+   ],
+   "exceptions": [],
+   "flows": [],
+   "items": [
+    "CM-KS.A12.10"
    ]
   },
   {
@@ -6852,7 +7173,7 @@
   },
   {
    "id": "CM-KS.TC37",
-   "title": "Case 37: Chưa có cụm",
+   "title": "Case 37: Số cụm trống",
    "priority": "Medium",
    "smoke": false,
    "region": "CM-KS.A12",
@@ -6864,7 +7185,10 @@
     "CM-KS.EX05"
    ],
    "flows": [],
-   "items": []
+   "items": [
+    "CM-KS.A12.10",
+    "CM-KS.A12.06"
+   ]
   },
   {
    "id": "CM-KS.TC38",
@@ -7378,6 +7702,11 @@
   {
    "kind": "req-chua-co-testcase",
    "ref": "CM-KS.EX03",
+   "text": "chưa có testcase ghi mã này"
+  },
+  {
+   "kind": "req-chua-co-testcase",
+   "ref": "CM-KS.EX11",
    "text": "chưa có testcase ghi mã này"
   }
  ],

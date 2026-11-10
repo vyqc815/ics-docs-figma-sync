@@ -342,11 +342,39 @@ Cùng tên `mean` nhưng ý nghĩa khác theo loại: ở Từ vựng `mean` là
 - Field hệ thống tự sinh (Phiên âm từng chữ, Chuỗi tìm kiếm Kanji) không hiện để sửa.
 - Mục đang được AI xử lý thì drawer chỉ đọc (xem khu vực AI).
 
-### Trang 9: CD-KH-040120 — Chọn nhiều và thao tác hàng loạt
+### Trang 9: Chi tiết mục — Tab Câu hỏi (bộ câu hỏi của mục)
+**Mô tả:**
+
+- Drawer Chi tiết mục có **2 tab** ở đầu: `Thông tin` (form field như trên, mặc định) và `Câu hỏi` kèm badge số câu
+  (vd `Câu hỏi 12`). **Mọi loại kiến thức** (Từ vựng, Ngữ pháp, Mẫu câu, Hán tự, Kanji, Phát âm, Bảng chữ) đều có tab này.
+- Tab `Câu hỏi` là **bộ câu hỏi đầy đủ như BTVN & Kiểm tra**, dùng lại nguyên thành phần của
+  [Bài tập về nhà và Kiểm tra](../homework-test/homework-test.md): thẻ tổng quan (Tổng số câu, Tổng điểm, Cơ cấu theo dạng
+  câu), bảng câu hỏi (8 loại câu, câu hỏi con, đáp án, điểm, menu `⋮`), nhập nhanh cuối bảng, popup Chọn loại câu,
+  popup Soạn câu hỏi, Import / Export Excel, Soát lỗi bằng AI, Generate bằng AI, Preview mobile.
+- Bộ câu hỏi thuộc **bản ghi thư viện** của mục (như các field khác của drawer): mọi khoá dùng mục thấy cùng bộ câu hỏi.
+- App học viên dùng bộ này ở chế độ **Luyện tập** của mục (không lưu điểm); mục chưa có câu hỏi thì app tự sinh câu luyện
+  tập như cũ (xem [App học viên – Kiến thức](../../student_app/knowledge/knowledge.md)).
+
+**Khác với BTVN & Kiểm tra:**
+
+- `A18.01` **Cây kỳ / bài**: Không có; bộ câu hỏi là của mục đang mở.
+- `A18.02` **Cột / field `Kiến thức / Kỹ năng`**: Tự gắn mục đang mở, **chỉ đọc**, không bắt buộc chọn; bộ lọc Kiến thức / Kỹ năng ẩn.
+- `A18.03` **Generate bằng AI**: Không có bước chọn cụm; AI sinh câu theo nội dung mục đang mở (từ, nghĩa, ví dụ, cấu trúc…) + prompt.
+- `A18.04` **Thẻ tổng quan**: Không có thời gian làm bài (giống BTVN).
+- `A18.05` **Export**: Tên file `<Khoá học>_<Loại>_<nội dung mục>.xlsx`.
+- `A18.06` **Import**: Mọi dòng hợp lệ được thêm vào cuối bộ câu hỏi **của mục đang mở**; cột `id`, `lesson_id`, mã mục trong file (nếu có) **bỏ qua**; dòng thiếu field bắt buộc (`STT`, `Câu hỏi`, `Loại câu`) bị bỏ, các dòng khác vẫn thêm, popup kết quả liệt kê lỗi theo số dòng (vd `Dòng 5: thiếu Loại câu`). Câu con nối với câu cha theo `STT` dạng `7.1`, `7.2` trong file; không tìm thấy câu cha thì bỏ câu con, báo lỗi dòng.
+
+**Điểm cần lưu ý:**
+
+- Thêm / sửa / xoá câu hỏi lưu ngay theo từng thao tác (như BTVN), không đi qua nút `Lưu` của tab Thông tin.
+- Khoá `Công Khai` / `Vô hiệu`: tab chỉ đọc (ẩn thêm, sửa, xoá, Import, Generate; Export vẫn dùng được).
+- Gỡ mục khỏi khoá (REQ07) **không** xoá bộ câu hỏi (vẫn ở bản ghi thư viện); popup gỡ ghi thêm `Mục có N câu hỏi, vẫn giữ trong thư viện.`
+
+### Trang 10: CD-KH-040120 — Chọn nhiều và thao tác hàng loạt
 
 ![Figma mới nhất · CD-KH-040120](https://ics-figma-demo.vercel.app/api/figma-frame/CD-KH-040120.png)
 
-![Trang 9](./images/03-chon-nhieu.png)
+![Trang 10](./images/03-chon-nhieu.png)
 
 *Thanh thao tác khi chọn 3 từ — nhấn để xem ảnh gốc*
 
@@ -369,11 +397,11 @@ Cùng tên `mean` nhưng ý nghĩa khác theo loại: ở Từ vựng `mean` là
   `Thêm vào cụm / Gỡ khỏi cụm`, `Xoá (N)` mờ (ảnh `07-ai-dien-thieu.png`).
 - `Soát lỗi bằng AI` không nằm ở thanh hàng loạt; nút ở thanh công cụ luôn chạy cho toàn bộ mục của tab.
 
-### Trang 10: CD-KH-040125 — Popup Thêm vào cụm / Gỡ khỏi cụm
+### Trang 11: CD-KH-040125 — Popup Thêm vào cụm / Gỡ khỏi cụm
 
 ![Figma mới nhất · CD-KH-040125](https://ics-figma-demo.vercel.app/api/figma-frame/CD-KH-040125.png)
 
-![Trang 10](./images/04-them-go-cum.png)
+![Trang 11](./images/04-them-go-cum.png)
 
 *Popup `Cụm của 3 mục` — Figma đang vẽ tick nhiều cụm, <b>cần cập nhật</b> sang chọn 1 cụm — nhấn để xem ảnh gốc*
 
@@ -390,11 +418,11 @@ Cùng tên `mean` nhưng ý nghĩa khác theo loại: ở Từ vựng `mean` là
 
 **Điểm cần lưu ý:**
 
-- Popup không tạo cụm mới (cụm sinh theo Số buổi ở Tổng quan (S2)).
+- Popup không tạo cụm mới (tạo cụm ở panel Cụm › `Thêm cụm mới` hoặc qua Chia cụm bằng AI).
 - Mục bị gỡ khỏi cụm thì về `Chưa phân cụm`; mục `Chưa phân cụm` không xuất hiện ở bài học nào.
 - Chuyển mục sang cụm khác thì bài học liên kết cụm cũ không còn mục, bài học liên kết cụm mới có thêm mục; không cần cảnh báo, không có popup phụ.
 
-### Trang 11: CD-KH-040100, CD-KH-040200 — Panel Cụm và Số cụm
+### Trang 12: CD-KH-040100, CD-KH-040200 — Panel Cụm và Số cụm
 
 ![Figma mới nhất · CD-KH-040100](https://ics-figma-demo.vercel.app/api/figma-frame/CD-KH-040100.png)
 
@@ -403,69 +431,77 @@ Cùng tên `mean` nhưng ý nghĩa khác theo loại: ở Từ vựng `mean` là
 **Mô tả:**
 
 - Panel bên phải của mỗi tab quản lý cụm của **loại đó** (mỗi loại có bộ cụm riêng): xem số mục mỗi cụm, chọn cụm để
-  lọc bảng, đổi tên cụm, liên kết cụm với bài học, Chia cụm bằng AI; số cụm sinh từ Số buổi ở Tổng quan (S2).
+  lọc bảng, thêm / đổi tên / xoá cụm, liên kết cụm với bài học, Chia cụm bằng AI. Cụm **chỉ được tạo** khi CD `Thêm cụm mới`
+  hoặc khi `Chia cụm bằng AI`; Tổng quan (S2) **không** tự tạo / xoá cụm, chỉ cung cấp số cụm mặc định cho popup Chia cụm bằng AI.
 
 **Điểm cần lưu ý:**
 
 - `A11.01` **`Tất cả cụm` + badge `N cụm`**: Tiêu đề panel và số cụm hiện có.
-- `A11.02` **`Số cụm`**: **Chỉ đọc**, = tổng `Số buổi` của các dòng Nội dung buổi học có Loại này ở Tổng quan (S2); kèm ghi chú `Theo Tổng quan (S2) · N buổi`. Hệ thống tự tạo đủ cụm rỗng tên `Chủ đề 1` … `Chủ đề N` theo S2; CD đổi tên, chia mục và liên kết bài học tại đây. Loại chưa có buổi ở S2 thì panel hiện `Chưa có cụm. Nhập Số buổi cho loại <X> ở Tổng quan (S2) để tạo cụm.` (**UI cần cập nhật**, Figma vẽ ô nhập).
+- `A11.10` **`Tất cả cụm` (số cụm)**: Badge `N cụm` = số cụm hiện có của loại; không có ô nhập Số cụm ở panel (Số cụm nhập trong popup Chia cụm bằng AI). Loại chưa có cụm: panel hiện `Chưa có cụm. Thêm cụm mới hoặc Chia cụm bằng AI.`
 - `A11.03` **`Chia cụm bằng AI`**: Mở popup Chia cụm bằng AI.
 - `A11.04` **Tìm cụm**: Tìm theo tên cụm.
 - `A11.05` **`Tất cả`**: Hiện mọi mục của loại; badge tổng số mục.
 - `A11.06` **`Chưa phân cụm`**: Mục không thuộc cụm nào; icon cảnh báo + số mục.
-- `A11.07` **Dòng cụm**: Số thứ tự + tên + số mục + chip bài học đã liên kết (`HK I · Bài 3`) hoặc nhãn cam `Chưa liên kết`; menu ⋮: `Đổi tên`, `Liên kết bài học`. Không có `Xoá cụm`.
+- `A11.07` **Dòng cụm**: Số thứ tự + tên + số mục + chip bài học đã liên kết (`HK I · Bài 3`) hoặc nhãn cam `Chưa liên kết`; menu ⋮: `Đổi tên`, `Liên kết bài học`, `Xoá cụm`.
 - `A11.08` **Popup `Liên kết bài học`**: Tiêu đề `Liên kết cụm <tên cụm> với bài học`; cây `<kỳ> › Bài N: <tên>` của khoá, radio chọn **đúng 1 bài**; bài đã có cụm **cùng loại** mờ kèm nhãn `Đã liên kết: <tên cụm kia>`; lựa chọn `Bỏ liên kết`; `Huỷ` / `Lưu`. (**UI cần bổ sung**)
-- `A11.09` **`Thêm cụm mới`**: **Bỏ**: số cụm chỉ do S2 quyết định.
+- `A11.09` **`Thêm cụm mới`**: Ô nhập cuối danh sách cụm: gõ tên + Enter → tạo cụm rỗng ở cuối (tên trống thì mặc định `Chủ đề {k}`).
+- `A11.11` **Popup `Xoá cụm`**: Tiêu đề `Xoá cụm`; nội dung `Cụm <tên> có N mục{, đang liên kết <kỳ> · Bài k}. Mục sẽ về Chưa phân cụm, bài học không còn mục của cụm này.`; nút `Huỷ` / `Xoá cụm`. Mục không bị gỡ khỏi khoá.
 
-- Không xoá cụm tại S1; muốn bớt cụm thì giảm `Số buổi` của loại ở S2 (chỉ được khi cụm cuối rỗng và chưa liên kết, xem S2 EX05).
+- Thêm / xoá cụm làm tại panel này (hoặc AI tạo thêm cụm khi chia); đổi Loại / Số buổi ở S2 **không** làm thay đổi cụm.
+- Xoá cụm: mục trong cụm về `Chưa phân cụm`, liên kết cụm ↔ bài học bị bỏ (tag loại ở bài học theo S4 không đổi).
 - **Liên kết bài học:** một cụm liên kết **đúng 1** bài học; một bài học nhận **tối đa 1 cụm mỗi loại** (Từ vựng, Ngữ pháp, …, Nghe, Đọc…). BE kiểm tra khi lưu: bài đã có cụm cùng loại → từ chối, Toast `Cảnh Báo` `Bài 1 đã liên kết cụm Từ vựng "Gia đình".`. Đổi sang bài khác = gỡ liên kết cũ, lập liên kết mới. Chi tiết bài học hiển thị mục của cụm đã liên kết (xem khu vực Cụm liên kết với Chi tiết bài học).
 - Thêm / gỡ / chuyển mục giữa các cụm **không** cần cảnh báo bài học: bài học luôn hiển thị mục hiện có của cụm đã liên kết.
 - Cụm là mắt xích duy nhất giữa mục và bài học: thêm mục vào cụm thì bài học liên kết thấy ngay; gỡ mục khỏi cụm thì bài học không còn mục đó.
 - Nhân bản khoá học sao chép cụm, mục trong cụm và liên kết cụm ↔ bài học sang bản sao.
 
-### Trang 12: CD-KH-040170 — Popup Chia cụm bằng AI
+### Trang 13: CD-KH-040170 — Popup Chia cụm bằng AI
 
 ![Figma mới nhất · CD-KH-040170](https://ics-figma-demo.vercel.app/api/figma-frame/CD-KH-040170.png)
 
-![Trang 12](./images/11-popup-chia-cum-ai.png)
+![Trang 13](./images/11-popup-chia-cum-ai.png)
 
 *Popup Chia cụm bằng AI — AI đưa từ vào các cụm đang có — nhấn để xem ảnh gốc*
 
 **Mô tả:**
 
-- AI đề xuất cách đưa các mục vào **các cụm đang có** của loại theo chủ đề và prompt của CD; CD xem trước, chỉnh rồi
-  áp dụng. Ví dụ 500 từ vựng, 24 cụm: AI chia 500 từ vào 24 cụm và đặt tên cụm theo chủ đề.
+- AI chia các mục vào **đúng Số cụm** CD nhập: dùng các cụm đang có trước, **tạo thêm cụm mới** cho đủ Số cụm, đặt tên cụm
+  theo chủ đề và prompt của CD; CD xem trước, chỉnh rồi áp dụng. Ví dụ 500 từ vựng, chưa có cụm, Số cụm 24: AI tạo 24 cụm
+  và chia 500 từ vào đó.
+- **Số cụm mặc định** = tổng `Số buổi` của các dòng Nội dung buổi học có loại này ở [Tổng quan (S2)](../overview-s2/overview-s2.md)
+  (dòng chọn nhiều loại tính cho từng loại). Ví dụ `Từ vựng A` 5 buổi + `Từ vựng B` 10 buổi → mặc định `15`; CD gõ số khác được.
 
 **Giải thích field/thành phần:**
 
 - `A12.01` **Tiêu đề / mô tả**: `Chia cụm bằng AI`; `AI đưa từ vựng vào các cụm đang có và đặt tên cụm theo chủ đề. Xem trước và chỉnh trước khi áp dụng.`
+- `A12.10` **`Số cụm`**: **Bắt buộc**, số nguyên ≥ 1 và ≥ số cụm hiện có của loại. Điền sẵn tổng Số buổi của loại ở S2 kèm ghi chú `Theo Tổng quan (S2) · N buổi`; loại chưa có ở S2 thì để trống. Nhỏ hơn số cụm hiện có: lỗi dưới ô `Số cụm không được nhỏ hơn số cụm hiện có (K). Xoá bớt cụm ở panel Cụm trước.`
 - `A12.02` **Phạm vi chia cụm**: Chọn 1: `Tất cả N từ (chia lại toàn bộ)`, `Chỉ M từ chưa phân cụm (giữ cụm cũ)`, `Mục đang chọn` (mờ, ghi `chưa chọn mục nào` khi chưa chọn).
 - `A12.03` **Số từ / cụm**: Khoảng số mục mỗi cụm để AI tham khảo (vd `10 – 25`); **không bắt buộc**, trống thì AI tự cân đối.
 - `A12.04` **Gợi ý nhanh**: Mẫu tiêu chí điền nhanh vào prompt: `Theo chủ đề giao tiếp`, `Theo từ loại`, `Theo độ khó`, `Theo bộ thủ`. Không có gợi ý theo bài học (cụm không gắn bài học).
 - `A12.05` **Yêu cầu thêm cho AI (prompt)**: Ô nhập, tối đa 500 ký tự (bộ đếm `x/500`).
 - `A12.06` **`Tạo đề xuất`**: Gửi yêu cầu cho AI.
-- `A12.07` **Đề xuất của AI**: Badge `N mục → M cụm`; mỗi cụm 1 thẻ: tên cụm (AI đặt theo chủ đề, sửa được bằng icon bút), nhãn `Cụm cũ`, `+k từ`, danh sách mục. Kéo thả mục giữa các cụm để chỉnh.
+- `A12.07` **Đề xuất của AI**: Badge `N mục → M cụm`; mỗi cụm 1 thẻ: tên cụm (AI đặt theo chủ đề, sửa được bằng icon bút), nhãn `Cụm cũ` hoặc `Cụm mới`, `+k từ`, danh sách mục. Kéo thả mục giữa các cụm để chỉnh.
 - `A12.08` **Ghi chú phạm vi**: Vd `Chỉ thêm từ vào cụm, không đổi cụm của 16 từ đã phân cụm`.
 - `A12.09` **`Huỷ` / `Tạo lại` / `Áp dụng M cụm`**: Huỷ: không đổi gì; Tạo lại: AI đề xuất lại; Áp dụng: lưu phân bổ và tên cụm, ghi 1 dòng `Chia cụm bằng AI: N mục → M cụm` vào Log cập nhật.
 
 **Điểm cần lưu ý:**
 
-- AI **không tạo cụm mới, không tạo cụm con**; chỉ dùng các cụm đang có (Số cụm); mọi thẻ đề xuất mang nhãn `Cụm cũ`.
-  Chưa có cụm (loại chưa có buổi ở S2) thì chưa chia được: Toast `Cảnh Báo` — `Nhập Số buổi cho loại này ở Tổng quan (S2) trước khi chia cụm bằng AI.`
+- AI **không tạo cụm con, không xoá cụm**; số cụm sau áp dụng = `Số cụm` đã nhập (cụm cũ giữ nguyên, thiếu thì tạo thêm cụm mới
+  nhãn `Cụm mới`). Cụm mới chỉ được lưu khi bấm `Áp dụng`; `Huỷ` thì không tạo cụm nào.
+- `Số cụm` trống hoặc 0 → nút `Tạo đề xuất` disable, dưới ô hiện `Nhập Số cụm để chia.`
 - Áp dụng với phạm vi `Chỉ M mục chưa phân cụm` chỉ **thêm** mục vào cụm, không đổi cụm của mục đã phân cụm.
 - Mỗi mục chỉ thuộc 1 cụm: AI đưa mỗi mục vào đúng 1 cụm; kéo thả trong đề xuất là chuyển cụm.
 - Hoàn tác sau khi áp dụng là chức năng của `Log cập nhật` (requirement riêng), không nằm trong S1; dòng ghi chú
   `Có thể hoàn tác trong Log cập nhật` trên popup chỉ dẫn sang đó.
 
-### Trang 13: CD-KH-040190 — AI: Thêm bằng AI, Điền thiếu, Soát lỗi, Tạo lại
+### Trang 14: CD-KH-040190 — AI: Thêm bằng AI, Điền thiếu, Soát lỗi, Tạo lại
 
 ![Figma mới nhất · CD-KH-040190](https://ics-figma-demo.vercel.app/api/figma-frame/CD-KH-040190.png)
 
-![Trang 13](./images/07-ai-dien-thieu.png)
+![Trang 14](./images/07-ai-dien-thieu.png)
 
 *Điền thiếu bằng AI đang chạy (ảnh cũ còn nhãn AI · Duyệt / Hoàn tác — đã bỏ, xem mô tả) — nhấn để xem ảnh gốc*
 
-![Trang 13](./images/12-soat-loi-ai.png)
+![Trang 14](./images/12-soat-loi-ai.png)
 
 *Soát lỗi bằng AI: ô nghi sai viền nét đứt, popover Hiện tại / Đề xuất / lý do — nhấn để xem ảnh gốc*
 
@@ -499,11 +535,11 @@ Cùng tên `mean` nhưng ý nghĩa khác theo loại: ở Từ vựng `mean` là
   không mở Chi tiết mục để sửa, `Xoá`, `Thêm vào cụm / Gỡ khỏi cụm` mờ; thanh hàng loạt chỉ còn `Dừng`, `Bỏ chọn`.
   Mục khác và Nhập nhanh vẫn thao tác bình thường. API thay đổi mục đang xử lý bị từ chối (EX10).
 
-### Trang 14: CD-KH-040140 — Preview mobile
+### Trang 15: CD-KH-040140 — Preview mobile
 
 ![Figma mới nhất · CD-KH-040140](https://ics-figma-demo.vercel.app/api/figma-frame/CD-KH-040140.png)
 
-![Trang 14](./images/06-preview-mobile.png)
+![Trang 15](./images/06-preview-mobile.png)
 
 *Preview mobile theo từ đang chọn — nhấn để xem ảnh gốc*
 
@@ -526,11 +562,11 @@ Cùng tên `mean` nhưng ý nghĩa khác theo loại: ở Từ vựng `mean` là
 - **UI cần bổ sung:** Preview cho Ngữ pháp, Mẫu câu, Hán tự, Kanji, Bảng chữ, Phát âm — vẽ theo màn app học viên
   sau khi có ảnh / mô tả màn app (mục 3).
 
-### Trang 15: CD-KH-040155 — Popup xác nhận gỡ mục khỏi khoá
+### Trang 16: CD-KH-040155 — Popup xác nhận gỡ mục khỏi khoá
 
 ![Figma mới nhất · CD-KH-040155](https://ics-figma-demo.vercel.app/api/figma-frame/CD-KH-040155.png)
 
-![Trang 15](./images/13-popup-go-muc.png)
+![Trang 16](./images/13-popup-go-muc.png)
 
 *Popup gỡ mục khỏi khoá học, liệt kê bài đang dùng — nhấn để xem ảnh gốc*
 
@@ -549,11 +585,11 @@ Cùng tên `mean` nhưng ý nghĩa khác theo loại: ở Từ vựng `mean` là
 
 - Gỡ không xoá bản ghi thư viện; khoá khác đang dùng bản ghi không bị ảnh hưởng.
 
-### Trang 16: CD-KH-030248 — Cụm liên kết với Chi tiết bài học
+### Trang 17: CD-KH-030248 — Cụm liên kết với Chi tiết bài học
 
 ![Figma mới nhất · CD-KH-030248](https://ics-figma-demo.vercel.app/api/figma-frame/CD-KH-030248.png)
 
-![Trang 16](./images/19-popup-them-vao-bai.png)
+![Trang 17](./images/19-popup-them-vao-bai.png)
 
 *Figma `CD-KH-030270` vẽ popup thêm từng mục vào bài học — <b>đã bỏ</b>, bài học chỉ hiển thị mục của cụm đã liên kết; cần vẽ lại tab chỉ xem — nhấn để xem ảnh gốc*
 
@@ -561,6 +597,7 @@ Cùng tên `mean` nhưng ý nghĩa khác theo loại: ở Từ vựng `mean` là
 
 - Bài học **không** chọn mục; liên kết duy nhất là **cụm ↔ bài học** lập tại panel Cụm của S1 (menu ⋮ cụm › `Liên kết bài học`). Tab `Kiến thức` của Chi tiết bài học chỉ **hiển thị** mục hiện có của các cụm đã liên kết với bài đó, lọc theo loại; không có nút thêm, gỡ, sửa.
 - Đặc tả UI chi tiết (bộ lọc loại, tiêu đề theo tên cụm, 2 khung) xem [Học kỳ — Bài học](../semester/lesson/lesson.md) tab Kiến thức; mục dưới đây chỉ ghi quy tắc dữ liệu S1.
+- **Tag loại và badge tab** ở Chi tiết bài học **không** lấy từ cụm mà từ tick ở [Lộ trình (S4)](../learning-path-s4/learning-path-s4.md) tab `Kiến thức/Kỹ năng` (độc lập với cụm).
 
 **Điểm cần lưu ý:**
 
@@ -573,8 +610,8 @@ Cùng tên `mean` nhưng ý nghĩa khác theo loại: ở Từ vựng `mean` là
 - Nội dung mục luôn là nội dung hiện tại của bản ghi thư viện.
 - Gỡ mục khỏi khoá (Flow 11) thì mục mất khỏi cụm và khỏi bài học liên kết, có cảnh báo nêu cụm và bài học.
 
-### Trang 17: Toast phản hồi CRUD
-![Trang 17](../../images/01-toast-crud.png)
+### Trang 18: Toast phản hồi CRUD
+![Trang 18](../../images/01-toast-crud.png)
 
 *Toast Thành Công, Thông Báo, Cảnh Báo và Có Lỗi Xảy Ra — nhấn để xem ảnh gốc*
 
@@ -586,7 +623,7 @@ Cùng tên `mean` nhưng ý nghĩa khác theo loại: ở Từ vựng `mean` là
 
 - `A17.01` **Thành công**: Tiêu đề cố định: `Thành Công`; Khi sử dụng: Backend đã xác nhận thao tác thay đổi dữ liệu thành công (vd `Đã thêm 1 từ vào Chưa phân cụm.`).
 - `A17.02` **Thông tin**: Tiêu đề cố định: `Thông Báo`; Khi sử dụng: Thao tác đã được tiếp nhận nhưng cần thời gian xử lý (vd `AI đang điền thông tin cho 2 từ.`).
-- `A17.03` **Cảnh báo**: Tiêu đề cố định: `Cảnh Báo`; Khi sử dụng: Dữ liệu chưa hợp lệ hoặc điều kiện cần kiểm tra (vd `Nhập Số buổi cho loại này ở Tổng quan (S2) trước khi chia cụm bằng AI.`).
+- `A17.03` **Cảnh báo**: Tiêu đề cố định: `Cảnh Báo`; Khi sử dụng: Dữ liệu chưa hợp lệ hoặc điều kiện cần kiểm tra (vd `Liên kết bài học` bị từ chối vì bài đã có cụm cùng loại).
 - `A17.04` **Lỗi**: Tiêu đề cố định: `Có Lỗi Xảy Ra`; Khi sử dụng: Backend / network / AI không hoàn tất thao tác.
 
 - Mỗi thao tác logic chỉ một Toast kết quả; Huỷ, tìm kiếm, lọc, đổi tab, Preview không có Toast CRUD.
@@ -675,11 +712,12 @@ CD bấm Soát lỗi bằng AI ở thanh công cụ (toàn bộ mục của tab,
       → CD Duyệt (thay bằng đề xuất) hoặc Bỏ qua; giá trị cũ giữ nguyên tới khi duyệt
 ```
 
-**Flow 8 / REQ08: Cụm sinh từ S2, đổi tên và liên kết bài học**
+**Flow 8 / REQ08: Thêm / đổi tên / xoá cụm và liên kết bài học**
 
 ```text
-CD nhập Loại + Số buổi ở Tổng quan (S2) → hệ thống tạo đủ cụm rỗng Chủ đề 1 … N cho loại (Số cụm ở S1 chỉ đọc)
+CD Thêm cụm mới (tên + Enter) → cụm rỗng ở cuối; Tổng quan (S2) không tự tạo / xoá cụm
 CD Đổi tên cụm → lưu tên mới
+CD ⋮ cụm › Xoá cụm → popup nêu số mục + bài liên kết → Xoá: mục về Chưa phân cụm, bỏ liên kết bài học
 CD ⋮ cụm › Liên kết bài học → popup cây kỳ › bài, bài đã có cụm cùng loại bị mờ → chọn 1 bài → Lưu
       → BE kiểm tra: bài chưa có cụm cùng loại → lưu liên kết (gỡ liên kết cũ của cụm nếu có); có rồi → từ chối (EX13)
       → Chi tiết bài học hiện mục của cụm
@@ -697,9 +735,10 @@ CD chọn 1 hoặc nhiều mục → Thêm vào cụm / Gỡ khỏi cụm
 **Flow 10 / REQ09: Chia cụm bằng AI**
 
 ```text
-CD bấm Chia cụm bằng AI (loại đã có ≥ 1 cụm)
+CD bấm Chia cụm bằng AI
+      → Ô Số cụm điền sẵn = tổng Số buổi của loại ở S2 (CD sửa được, ≥ số cụm hiện có, bắt buộc)
       → Chọn phạm vi, Số từ / cụm (tuỳ chọn), gợi ý nhanh, nhập prompt → Tạo đề xuất
-      → AI đưa mục vào các cụm đang có, đặt tên cụm theo chủ đề (không tạo cụm mới / cụm con)
+      → AI dùng cụm đang có + tạo thêm cụm mới cho đủ Số cụm, đặt tên theo chủ đề (không tạo cụm con)
       → CD kéo thả mục giữa cụm, sửa tên cụm; Tạo lại nếu cần
       → Áp dụng: lưu phân bổ + tên cụm, ghi Log cập nhật, Toast Thành Công; Huỷ: không đổi
 ```
@@ -722,6 +761,16 @@ CD mở Chi tiết bài học → tab Kiến thức (mặc định lọc Từ v�
 CD sửa cụm ở S1 (thêm / gỡ / chuyển mục, đổi tên, đổi liên kết) → bài học cập nhật ngay, không thao tác tại bài
 ```
 
+**Flow 14 / REQ16: Bộ câu hỏi của mục**
+
+```text
+CD mở Chi tiết mục → tab Câu hỏi (badge số câu)
+      → Thêm / sửa / xoá câu, câu con, Generate / Soát lỗi bằng AI: như BTVN & Kiểm tra, lưu ngay từng thao tác
+      → Import Excel: mọi dòng đủ STT, Câu hỏi, Loại câu vào mục đang mở; cột id bỏ qua; dòng lỗi bỏ, báo theo số dòng
+      → Export Excel: tải bộ câu hỏi của mục
+      → App học viên dùng bộ câu hỏi ở chế độ Luyện tập; mục không có câu hỏi thì app tự sinh như cũ
+```
+
 **Flow 13 / REQ12: Preview mobile**
 
 ```text
@@ -736,14 +785,15 @@ CD chọn mục → Preview mobile → panel hiện thẻ theo màn học của 
 - **EX03:** Điền thiếu bằng AI quá 50 mục / lần hoặc Thêm bằng AI số lượng > 50 → UI chặn (nút mờ / báo `Tối đa 50 mục mỗi lần`); API từ chối, không chạy AI.
 - **EX04:** AI lỗi hoặc CD bấm `Dừng` → mục chưa xử lý giữ nguyên; mục đã điền giữ giá trị AI đã lưu; báo lỗi nếu AI
   lỗi.
-- **EX05:** Chia cụm bằng AI khi loại chưa có cụm (S2 chưa có buổi cho loại) → không gửi yêu cầu, nhắc nhập Số buổi ở Tổng quan (S2).
+- **EX05:** Chia cụm bằng AI khi `Số cụm` trống / 0 → nút `Tạo đề xuất` disable, gợi ý nhập Số cụm; nhỏ hơn số cụm hiện có → lỗi dưới ô, không gửi AI.
 - **EX06:** Role khác CD truy cập S1 hoặc gọi API thay đổi kiến thức → từ chối, không thay đổi dữ liệu.
 - **EX07:** Truy cập tab Bảng chữ ở trung tâm không có hệ chữ riêng (qua URL / API) → từ chối.
 - **EX08:** Truy cập khoá học / kiến thức của trung tâm khác trung tâm đang chọn → từ chối.
 - **EX09:** Lưu thất bại (sửa, cụm, liên kết bài học, áp dụng AI) → giữ dữ liệu cũ, Toast `Có Lỗi Xảy Ra`.
 - **EX10:** Sửa / xoá / đổi cụm mục đang được AI xử lý → UI mờ thao tác; API từ chối, dữ liệu không đổi.
-- **EX11:** Đổi `Số cụm`, thêm hoặc xoá cụm trực tiếp ở S1 (qua UI / API) → ô chỉ đọc, không có nút; API từ chối. Số cụm chỉ đổi qua Số buổi ở S2.
+- **EX11:** Đổi Loại / Số buổi ở Tổng quan (S2) → không tạo / xoá cụm ở S1; chỉ đổi số mặc định của ô `Số cụm` trong popup Chia cụm bằng AI.
 - **EX13:** Liên kết cụm với bài học đã có cụm cùng loại, hoặc với bài học không thuộc khoá → BE từ chối (409), Toast `Cảnh Báo` nêu cụm đang chiếm; dữ liệu không đổi.
+- **EX14:** Import (kiến thức hoặc câu hỏi) có cột `id`, `lesson_id`, mã mục sai / thuộc mục khác / không có → bỏ qua cột, vẫn import vào chỗ đang mở; dòng thiếu field bắt buộc → bỏ dòng, các dòng khác vẫn import, báo lỗi theo số dòng.
 - **EX12:** Lưu Chi tiết mục với Ví dụ rỗng (0 ví dụ) hoặc Từ loại ngoài danh sách → báo lỗi tại field, không lưu.
 
 ### 2.3. Yêu cầu khác
@@ -780,14 +830,14 @@ CD chọn mục → Preview mobile → panel hiện thẻ theo màn học của 
   nhận thì gỡ luôn khỏi các bài đó.
 | Mã | Tên yêu cầu | Mô tả |
 |---|---|---|
-| REQ08 | Cụm | Mỗi loại có bộ cụm riêng; **số cụm = tổng Số buổi của loại ở Tổng quan (S2)**, hệ thống tự tạo cụm rỗng |
-  `Chủ đề k`, S1 không nhập Số cụm, không thêm / xoá cụm; CD đổi tên cụm, chia mục. **Mỗi mục thuộc tối đa 1 cụm**; cột Cụm
+| REQ08 | Cụm | Mỗi loại có bộ cụm riêng; cụm chỉ được tạo khi CD `Thêm cụm mới` hoặc `Chia cụm bằng AI` (S2 không tự |
+  tạo / xoá cụm); CD đổi tên, xoá cụm (mục về `Chưa phân cụm`), chia mục. **Mỗi mục thuộc tối đa 1 cụm**; cột Cụm
   hiện 1 nhãn, bấm mở popup cụm (chọn 1). **Mỗi cụm liên kết đúng 1 bài học; mỗi bài học nhận tối đa 1 cụm mỗi loại**, BE
   kiểm tra trùng khi lưu (EX13); liên kết lập / đổi / bỏ tại menu ⋮ của cụm. Nhân bản khoá sao chép cụm và liên kết.
 | Mã | Tên yêu cầu | Mô tả |
 |---|---|---|
-| REQ09 | Chia cụm bằng AI | AI chia mục vào các cụm đang có theo chủ đề và prompt, đặt tên cụm theo chủ đề; không tạo |
-  cụm mới / cụm con; `Số từ / cụm` là gợi ý không bắt buộc; có xem trước, chỉnh, tạo lại, áp dụng; phạm vi `Chỉ … chưa
+| REQ09 | Chia cụm bằng AI | `Số cụm` bắt buộc, mặc định = tổng Số buổi của loại ở S2, CD sửa được, ≥ số cụm hiện có; |
+  AI dùng cụm đang có + tạo thêm cụm mới cho đủ Số cụm, đặt tên theo chủ đề; không tạo cụm con, không xoá cụm; `Số từ / cụm` là gợi ý không bắt buộc; có xem trước, chỉnh, tạo lại, áp dụng; phạm vi `Chỉ … chưa
   phân cụm` giữ cụm cũ; áp dụng ghi Log cập nhật (hoàn tác thuộc Log cập nhật).
 | Mã | Tên yêu cầu | Mô tả |
 |---|---|---|
@@ -812,7 +862,13 @@ CD chọn mục → Preview mobile → panel hiện thẻ theo màn học của 
 |---|---|---|
 | REQ13 | Kiến thức trong bài học | Chi tiết bài học không chọn mục; tab Kiến thức chỉ hiển thị mục hiện có của cụm đã |
   liên kết với bài, theo loại đang lọc (mặc định Từ vựng), tiêu đề là tên cụm; mọi thay đổi ở cụm phản ánh ngay; không
-  thêm / gỡ / sửa tại bài; badge tab = số loại có cụm liên kết.
+  thêm / gỡ / sửa mục tại bài; badge tab và tag loại = các loại đã tick cho bài ở Lộ trình (S4) tab `Kiến thức/Kỹ năng`
+  (độc lập với cụm).
+| Mã | Tên yêu cầu | Mô tả |
+|---|---|---|
+| REQ16 | Bộ câu hỏi của mục | Mọi loại kiến thức có tab `Câu hỏi` trong Chi tiết mục, đủ chức năng như BTVN & Kiểm tra |
+  (8 loại câu, câu con, điểm, soạn, Import / Export, Generate, Soát lỗi bằng AI); thuộc bản ghi thư viện; cột Kiến thức / Kỹ
+  năng tự gắn mục; import không theo id; khoá không ở `Nháp` thì chỉ đọc; app dùng cho Luyện tập, không lưu điểm.
 | Mã | Tên yêu cầu | Mô tả |
 |---|---|---|
 | REQ14 | Quyền | Chỉ CD được truy cập và thao tác S1 trong trung tâm đang chọn; kiểm tra cả UI và API. |
@@ -883,6 +939,11 @@ CD chọn mục → Preview mobile → panel hiện thẻ theo màn học của 
 | Case 23: Sửa nhanh inline | High · Smoke | Flow 5 / REQ06 | CD | Có từ `爸爸` | **Given** chọn `Sửa nhanh (inline)`<br>**When** sửa Nghĩa và nhấn Enter<br>**Then** lưu nghĩa mới | - Toast `Thành Công`<br>- Khoá khác dùng cùng bản ghi thấy nghĩa mới |
 | Case 24: Huỷ sửa inline | Medium | REQ06 | CD | Đang sửa inline | **Given** đã đổi giá trị ô<br>**When** nhấn Esc<br>**Then** giữ giá trị cũ | - Không có Toast CRUD |
 | Case 25: Nhân bản | Medium | REQ06 | CD | Từ `弟弟` thuộc cụm `Gia đình` | **Given** chọn `Nhân bản`<br>**When** hệ thống xử lý<br>**Then** có thêm 1 dòng `弟弟` | - Là bản ghi thư viện mới<br>- Thuộc cụm `Gia đình` |
+| Case 25g: Mở tab Câu hỏi | High · Smoke | Flow 14 / REQ16 | CD | Từ `爸爸` có 3 câu (2 Trắc nghiệm, 1 Sắp xếp) | **Given** mở Chi tiết `爸爸`<br>**When** bấm tab `Câu hỏi 3`<br>**Then** hiện thẻ tổng quan và bảng 3 câu | - Cột Kiến thức / Kỹ năng hiện `爸爸`, không sửa được<br>- Có đủ nút `+ Thêm câu hỏi`, Import / Export, Soát lỗi, Generate bằng AI |
+| Case 25h: Thêm câu và câu con | High · Smoke | Flow 14 / REQ16 | CD | Mục Ngữ pháp `是` chưa có câu | **Given** tab Câu hỏi trống<br>**When** thêm 1 câu Trắc nghiệm và 1 câu hỏi con có 2 câu con<br>**Then** bộ có 2 câu, dòng `2.1`, `2.2` | - Badge tab `Câu hỏi 2`<br>- Khoá khác dùng `是` thấy cùng bộ câu |
+| Case 25i: Import không theo id | High | Flow 14 / REQ16 / EX14 | CD | File 10 dòng: cột `lesson_id`, `vocabulary_id` là mã của mục khác; dòng 4 thiếu `Loại câu`; dòng `9.1` không có câu `9` | **Given** tab Câu hỏi của `爸爸`<br>**When** Import file<br>**Then** 8 câu được thêm vào `爸爸` | - Cột id bỏ qua, không báo lỗi<br>- Popup kết quả: `Dòng 4: thiếu Loại câu`, `Dòng 10: không tìm thấy câu cha 9`<br>- Toast `Thành Công` `Đã import 8 câu hỏi.` |
+| Case 25j: Generate theo mục | Medium | Flow 14 / REQ16 | CD | Từ `爸爸` có nghĩa, ví dụ | **Given** Generate bằng AI, Số câu 5<br>**When** Generate, thêm các dòng đã chọn<br>**Then** 5 câu về `爸爸` | - Không có bước chọn cụm |
+| Case 25k: Khoá Công khai và gỡ mục | Medium | REQ16 / REQ07 | CD | (a) khoá `Công Khai`; (b) khoá `Nháp`, `爸爸` có 3 câu | **Given** mở tab Câu hỏi; gỡ `爸爸` khỏi khoá<br>**When** quan sát<br>**Then** (a) chỉ đọc, Export vẫn dùng; (b) popup gỡ ghi `Mục có 3 câu hỏi, vẫn giữ trong thư viện.` | - Thêm lại `爸爸` từ thư viện thấy đủ 3 câu |
 | Case 25a: Sửa đủ field ở Chi tiết mục | High · Smoke | Flow 5 / REQ06 | CD | Từ `爸爸` thiếu Ví dụ | **Given** mở `Mở chi tiết …`<br>**When** thêm 1 ví dụ (câu, phiên âm, nghĩa), bấm `Lưu`<br>**Then** bản ghi thư viện cập nhật | - Toast `Thành Công`<br>- Mục hết thiếu thông tin<br>- Khoá khác dùng `爸爸` thấy ví dụ mới |
 | Case 25b: Thêm và xoá ví dụ | Medium | REQ03 / REQ06 | CD | Mục có 2 ví dụ | **Given** drawer đang mở<br>**When** `Xoá` ví dụ 2 rồi Lưu<br>**Then** còn 1 ví dụ | - Không xoá được ví dụ cuối cùng |
 | Case 25c: Tạo lại một field | Medium | REQ10 | CD | Từ `爸爸` có Nghĩa `bố` | **Given** drawer đang mở<br>**When** bấm `↻ Tạo lại` cạnh Nghĩa, xác nhận<br>**Then** AI sinh nghĩa mới, ghi đè `bố` | - Field khác giữ nguyên<br>- Huỷ ở bước xác nhận thì không đổi<br>- Field nào cũng có `↻ Tạo lại` (trừ field hệ thống tự sinh) |
@@ -895,17 +956,18 @@ CD chọn mục → Preview mobile → panel hiện thẻ theo màn học của 
 | Case 28: Thêm mục vào cụm | High · Smoke | Flow 9 / REQ08 | CD | Chọn 3 từ chưa phân cụm | **Given** popup cụm đang mở<br>**When** chọn `Gia đình`, bấm Lưu<br>**Then** 3 từ thuộc `Gia đình` | - Chỉ chọn được 1 cụm<br>- Số mục `Gia đình` +3, Chưa phân cụm −3 |
 | Case 28a: Chuyển cụm mục đang hiển thị ở bài học | High | Flow 9 / REQ08 | CD | Từ `爸爸` thuộc `Gia đình` (liên kết Bài 1); `Học tập` liên kết Bài 3 | **Given** popup cụm<br>**When** chọn `Học tập`, Lưu<br>**Then** từ chuyển cụm, không có cảnh báo | - Bài 1 hết `爸爸`, Bài 3 có `爸爸`<br>- Từ rời `Gia đình`, vào `Học tập`, mất khỏi Bài 1 |
 | Case 29: Gỡ khỏi cụm | Medium | REQ08 | CD | Từ thuộc cụm `Gia đình` | **Given** popup cụm<br>**When** chọn `Chưa phân cụm`, Lưu<br>**Then** từ về `Chưa phân cụm` | - Từ vẫn còn trong khoá |
-| Case 30: Cụm sinh từ S2 | High · Smoke | Flow 8 / REQ08 | CD | S2 có dòng Loại Từ vựng tổng 24 buổi | **Given** mở tab Từ vựng<br>**When** xem panel Cụm<br>**Then** 24 cụm `Chủ đề 1` … `Chủ đề 24`, ô Số cụm chỉ đọc `24` | - Ghi chú `Theo Tổng quan (S2) · 24 buổi` |
+| Case 30: Không tự sinh cụm từ S2 | High · Smoke | Flow 8 / REQ08 | CD | Loại Từ vựng chưa có cụm; S2 có dòng Loại Từ vựng tổng 24 buổi | **Given** mở tab Từ vựng<br>**When** xem panel Cụm; sửa Số buổi ở S2 thành 30, quay lại<br>**Then** panel vẫn `0 cụm`, hiện `Chưa có cụm. Thêm cụm mới hoặc Chia cụm bằng AI.` | - Không có ô Số cụm ở panel<br>- Đổi S2 không tạo / xoá cụm |
 | Case 31: Liên kết cụm với bài học | High · Smoke | Flow 8 / REQ08 | CD | Cụm `Gia đình`, Bài 1 chưa có cụm Từ vựng | **Given** ⋮ cụm › `Liên kết bài học`, chọn `HK I · Bài 1`<br>**When** Lưu<br>**Then** dòng cụm hiện chip `HK I · Bài 1`; Chi tiết Bài 1 tab Kiến thức hiện mục của cụm | - Toast `Thành Công` |
 | Case 31a: Bài đã có cụm cùng loại | High | EX13 / REQ08 | CD | Bài 1 đã liên kết cụm Từ vựng `Gia đình` | **Given** cụm `Học tập` › `Liên kết bài học`<br>**When** xem Bài 1, rồi gửi request trực tiếp<br>**Then** Bài 1 mờ, nhãn `Đã liên kết: Gia đình`; API từ chối | - Bài 1 liên kết được cụm Ngữ pháp |
 | Case 31b: Đổi bài học của cụm | Medium | Flow 8 / REQ08 | CD | Cụm `Gia đình` đang liên kết Bài 1 | **Given** chọn `HK I · Bài 2`, Lưu<br>**When** lưu xong<br>**Then** Bài 1 hết cụm Từ vựng, Bài 2 có cụm `Gia đình` | - Chọn `Bỏ liên kết` thì cụm về `Chưa liên kết` |
-| Case 32: Không xoá cụm tại S1 | Medium | REQ08 | CD | Cụm `Chủ đề 24` có 20 từ | **Given** menu ⋮ của cụm<br>**When** xem lựa chọn; gửi request xoá cụm<br>**Then** không có `Xoá cụm`; API từ chối | - Giảm cụm chỉ qua S2 |
-| Case 30a: Số cụm luôn chỉ đọc | Medium | REQ08 / EX11 | CD | Có 10 cụm | **Given** panel Cụm<br>**When** bấm vào ô `Số cụm`; gửi API đổi Số cụm<br>**Then** ô chỉ đọc, hiện `10`; API từ chối | - Loại chưa có buổi ở S2 hiện hướng dẫn nhập Số buổi |
+| Case 32: Xoá cụm | Medium | Flow 8 / REQ08 | CD | Cụm `Gia đình` có 20 từ, liên kết `HK I · Bài 1` | **Given** ⋮ cụm › `Xoá cụm`<br>**When** xem popup; bấm `Xoá cụm`<br>**Then** cụm bị xoá | - Popup nêu 20 mục và Bài 1<br>- 20 từ về `Chưa phân cụm`, vẫn trong khoá<br>- Chi tiết Bài 1 tab Kiến thức loại Từ vựng hiện trạng thái chưa liên kết; tag `Từ vựng` (theo S4) giữ nguyên |
+| Case 30a: Thêm cụm tay | Medium | Flow 8 / REQ08 | CD | Có 2 cụm | **Given** ô `Thêm cụm mới`<br>**When** gõ `Gia đình` + Enter; Enter với ô trống<br>**Then** thêm cụm `Gia đình`, rồi `Chủ đề 4` ở cuối | - Badge `4 cụm`<br>- Cụm mới `Chưa liên kết`, 0 mục |
 | Case 33: Cụm riêng theo loại | Medium | REQ08 | CD | Từ vựng có 24 cụm | **Given** tab Ngữ pháp<br>**When** xem panel Cụm<br>**Then** hiện cụm của Ngữ pháp | - Không lẫn cụm của Từ vựng |
-| Case 34: Chia cụm bằng AI | High · Smoke | Flow 10 / REQ09 | CD | 500 từ chưa phân cụm, 24 cụm rỗng | **Given** popup, phạm vi `Chỉ 500 mục chưa phân cụm`, nhập prompt<br>**When** `Tạo đề xuất` rồi `Áp dụng 24 cụm`<br>**Then** 500 từ được đưa vào 24 cụm | - Tên cụm đổi theo chủ đề<br>- Không có cụm mới<br>- Toast `Thành Công` |
+| Case 34: Chia cụm bằng AI, Số cụm mặc định theo S2 | High · Smoke | Flow 10 / REQ09 | CD | 500 từ chưa phân cụm, chưa có cụm; S2 có `Từ vựng A` 5 buổi, `Từ vựng B` 10 buổi | **Given** mở popup<br>**When** xem ô `Số cụm`; giữ `15`, chọn `Chỉ 500 mục chưa phân cụm`, nhập prompt, `Tạo đề xuất`, `Áp dụng 15 cụm`<br>**Then** tạo 15 cụm và chia 500 từ | - Ô `Số cụm` điền sẵn `15`, ghi chú `Theo Tổng quan (S2) · 15 buổi`<br>- 15 thẻ nhãn `Cụm mới`, tên theo chủ đề<br>- Toast `Thành Công`, badge panel `15 cụm` |
+| Case 34a: Sửa Số cụm | High | REQ09 | CD | Đang có 10 cụm; mặc định S2 `15` | **Given** popup<br>**When** gõ `20` rồi chia; mở lại, gõ `8`<br>**Then** kết quả | - `20`: đề xuất 10 `Cụm cũ` + 10 `Cụm mới`; áp dụng xong `20 cụm`<br>- `8`: lỗi `Số cụm không được nhỏ hơn số cụm hiện có (20)…`, không gửi AI |
 | Case 35: Giữ cụm cũ | High | REQ09 | CD | 16 từ đã ở cụm `Gia đình` | **Given** phạm vi `Chỉ … chưa phân cụm`<br>**When** áp dụng<br>**Then** 16 từ giữ nguyên cụm | - Chỉ từ chưa phân cụm được thêm vào cụm |
 | Case 36: Chỉnh đề xuất trước khi áp dụng | Medium | REQ09 | CD | Đã có đề xuất | **Given** đề xuất AI<br>**When** kéo 1 từ sang cụm khác và sửa tên cụm<br>**Then** áp dụng đúng theo bản đã chỉnh | - Tên cụm theo bản sửa |
-| Case 37: Chưa có cụm | Medium | EX05 | CD | Loại chưa có buổi ở S2 | **Given** panel Cụm<br>**When** bấm `Chia cụm bằng AI`<br>**Then** Toast `Cảnh Báo` — `Nhập Số cụm trước khi chia cụm bằng AI.` | - Không gửi yêu cầu AI<br>- Panel gợi ý nhập Số cụm |
+| Case 37: Số cụm trống | Medium | EX05 | CD | Loại chưa có dòng nào ở S2, chưa có cụm | **Given** popup Chia cụm bằng AI<br>**When** xem ô `Số cụm`; bấm `Tạo đề xuất`<br>**Then** ô trống, nút disable, gợi ý `Nhập Số cụm để chia.` | - Nhập `5` thì nút bật, AI tạo 5 cụm mới |
 | Case 38: Huỷ | Low | REQ09 | CD | Đã có đề xuất | **Given** popup<br>**When** bấm `Huỷ`<br>**Then** đóng popup | - Cụm không thay đổi<br>- Không có Toast CRUD |
 | Case 38a: Thêm bằng AI theo số lượng | High · Smoke | Flow 6a / REQ10 | CD | Tab Từ vựng | **Given** popup `Thêm bằng AI`, prompt `từ vựng chủ đề gia đình`, Số lượng `10`<br>**When** bấm `Tạo` rồi `Thêm 10 từ`<br>**Then** 10 từ mới đủ field trong S1 | - Tạo bản ghi thư viện mới, vào cụm đang chọn<br>- Toast `Thành Công` |
 | Case 38b: Thêm bằng AI quá 50 | Medium | REQ10 | CD | Popup `Thêm bằng AI` | **Given** nhập Số lượng `60`<br>**When** bấm `Tạo`<br>**Then** báo `Tối đa 50 mục mỗi lần`, không gửi yêu cầu | - API với số lượng > 50 bị từ chối |
@@ -921,12 +983,14 @@ CD chọn mục → Preview mobile → panel hiện thẻ theo màn học của 
 | Case 47: Huỷ gỡ | Medium | REQ07 | CD | Popup đang mở | **Given** popup xác nhận<br>**When** bấm `Huỷ`<br>**Then** không thay đổi | - Không có Toast CRUD |
 | Case 48: Bài học hiện mục của cụm liên kết | High · Smoke | Flow 12 / REQ13 | CD | Cụm `Gia đình` (16 từ) liên kết Bài 1 | **Given** mở Chi tiết Bài 1, tab Kiến thức<br>**When** lọc `Từ vựng`<br>**Then** tiêu đề `Cụm từ vựng: Gia đình · 16 từ`, 16 từ đúng thứ tự trong cụm | - Không có nút +, × |
 | Case 49: Thêm mục vào cụm, bài học cập nhật | High · Smoke | Flow 12 / REQ13 | CD | Như Case 48 | **Given** ở S1 thêm 1 từ vào cụm `Gia đình`<br>**When** mở lại Bài 1<br>**Then** 17 từ | - Gỡ 1 từ khỏi cụm thì còn 16 |
-| Case 50: Loại chưa liên kết | Medium | REQ13 | CD | Bài 1 chưa có cụm Ngữ pháp | **Given** tab Kiến thức, lọc `Ngữ pháp`<br>**When** render<br>**Then** `Chưa có cụm Ngữ pháp liên kết với bài này` + hướng dẫn | - Badge tab không đếm loại này |
+| Case 50: Loại chưa liên kết | Medium | REQ13 | CD | Bài 1 chưa có cụm Ngữ pháp | **Given** tab Kiến thức, lọc `Ngữ pháp`<br>**When** render<br>**Then** `Chưa có cụm Ngữ pháp liên kết với bài này` + hướng dẫn | - Badge tab đếm loại này nếu đã tick ở S4, không phụ thuộc cụm |
 | Case 51: Không thao tác tại bài học | Medium | REQ13 | CD | Bài có kiến thức | **Given** tab Kiến thức<br>**When** xem thao tác; gửi API gắn mục vào bài<br>**Then** không có thêm / gỡ / sửa; API từ chối | - Chỉ liên kết qua cụm ở S1 |
 | Toast Case 1: Thành công | High | REQ15 | CD | Dữ liệu hợp lệ | **Given** CD xác nhận thao tác thay đổi<br>**When** backend xử lý thành công<br>**Then** hiển thị `Thành Công` | - Chỉ sau khi backend xác nhận<br>- Đúng một Toast |
 | Toast Case 2: Cảnh báo | High | REQ15 | CD | Điều kiện chưa đủ | **Given** chia cụm AI khi loại chưa có cụm<br>**When** bấm `Chia cụm bằng AI`<br>**Then** hiển thị `Cảnh Báo` — `Nhập Số cụm trước khi chia cụm bằng AI.` | - Không gửi yêu cầu |
 | Toast Case 3: Lỗi xử lý | High | REQ15 | CD | Backend / AI lỗi | **Given** đã gửi thao tác hợp lệ<br>**When** xử lý thất bại<br>**Then** hiển thị `Có Lỗi Xảy Ra` | - Dữ liệu không cập nhật một phần |
 | Toast Case 4: Đang xử lý | Medium | REQ15 | CD | AI chạy cho nhiều mục | **Given** đã bấm Điền thiếu cho nhiều mục<br>**When** AI đang chạy<br>**Then** hiển thị `Thông Báo` nếu cần | - Không báo thành công sớm |
+
+#### Testcase — Chi tiết mục (drawer)
 
 ---
 
@@ -934,14 +998,16 @@ CD chọn mục → Preview mobile → panel hiện thẻ theo màn học của 
 
 ## 4. Câu hỏi cần xác nhận
 
-- **Q01:** **Bảng chữ tiếng Hàn:** chưa có sheet dữ liệu; field lấy theo Figma Thư viện (Phụ lục A.7.2), cần sheet để chốt cột
+- **Q01:** **Xoá cụm (10/11):** S2 không còn quản lý số cụm nên S1 có lại `Thêm cụm mới` và `Xoá cụm`. Đề xuất: xoá cụm thì mục về
+  `Chưa phân cụm`, bỏ liên kết bài học, có popup xác nhận. Cần xác nhận có chặn xoá khi cụm còn liên kết bài học không.
+- **Q02:** **Bảng chữ tiếng Hàn:** chưa có sheet dữ liệu; field lấy theo Figma Thư viện (Phụ lục A.7.2), cần sheet để chốt cột
   dữ liệu và Từ ví dụ. Alphabet (Anh / Đức / Pháp) hiện không có tab Bảng chữ; xác nhận có cần thêm sau không.
-- **Q02:** **Phát âm tiếng Nhật / Anh / Đức / Pháp / Hàn:** tab Phát âm có ở mọi trung tâm; cấu trúc dữ liệu mới có cho tiếng
+- **Q03:** **Phát âm tiếng Nhật / Anh / Đức / Pháp / Hàn:** tab Phát âm có ở mọi trung tâm; cấu trúc dữ liệu mới có cho tiếng
   Trung (Phụ lục A.6), các ngôn ngữ khác cần sheet dữ liệu (vd phiên âm IPA).
-- **Q03:** **Dạng thẻ Preview** của Ngữ pháp, Mẫu câu, Hán tự, Kanji, Bảng chữ, Phát âm: tái hiện màn học của app học viên — chờ
+- **Q04:** **Dạng thẻ Preview** của Ngữ pháp, Mẫu câu, Hán tự, Kanji, Bảng chữ, Phát âm: tái hiện màn học của app học viên — chờ
   ảnh / mô tả màn app để ghi nội dung thẻ và vẽ Figma.
-- **Q04:** **Danh sách Từ loại** tiếng Hàn, Anh, Đức, Pháp: chưa có dữ liệu mẫu (Phụ lục A mới có tiếng Trung và tiếng Nhật).
-- **Q05:** **UI cần vẽ theo mô hình cụm ↔ bài học (03/11):** ô Số cụm chỉ đọc kèm ghi chú theo S2, bỏ `Thêm cụm mới` / `Xoá cụm`, menu ⋮ cụm có `Liên kết bài học` + popup chọn bài (bài đã có cụm cùng loại mờ), chip bài học trên dòng cụm, bộ lọc `Nâng cao`, bảng đủ cột cuộn ngang có cột ghim, tab Kiến thức ở Chi tiết bài học chỉ xem theo cụm.
+- **Q05:** **Danh sách Từ loại** tiếng Hàn, Anh, Đức, Pháp: chưa có dữ liệu mẫu (Phụ lục A mới có tiếng Trung và tiếng Nhật).
+- **Q06:** **UI cần vẽ theo mô hình cụm ↔ bài học (03/11):** panel Cụm không có ô Số cụm, có `Thêm cụm mới` và ⋮ `Xoá cụm`; popup Chia cụm bằng AI có ô `Số cụm` điền sẵn theo S2 (10/11), menu ⋮ cụm có `Liên kết bài học` + popup chọn bài (bài đã có cụm cùng loại mờ), chip bài học trên dòng cụm, bộ lọc `Nâng cao`, bảng đủ cột cuộn ngang có cột ghim, tab Kiến thức ở Chi tiết bài học chỉ xem theo cụm.
 
 ---
 
@@ -954,10 +1020,13 @@ Nguồn: `HSK1 - DATA (3_2026_2)` (khoá tiếng Trung, HSK1), `KHOÁ N5 THƯỜ
 **Bảng** = cột trên bảng và sửa inline · **List n** = cột thứ n khi Thêm theo list · **Nhanh** = ô Nhập nhanh ·
 **Chi tiết** = drawer Chi tiết mục · **AI** = Điền thiếu bằng AI điền được · **Hệ thống** = tự sinh, CD không nhập.
 
-**Kiến thức không có cột bài học:** khi import dữ liệu kiến thức vào khoá, cột `lesson_id` (và `*.lesson_id`) trong
-file bị **bỏ qua**, không dùng để tìm hoặc tính mã bài học và không gắn mục vào bài học. Mục import vào cụm đang chọn ở
-panel Cụm (đang ở `Tất cả` thì `Chưa phân cụm`). Gắn kiến thức vào bài học chỉ làm tại Chi tiết bài học (theo cụm hoặc
-từng mục). Mục lặp ở nhiều dòng (cùng nội dung) vẫn gộp thành 1 bản ghi thư viện.
+**Import không theo id (10/11):** import dữ liệu kiến thức vào khoá **không cần đúng id**: dòng có đủ field `Bắt buộc` (cột
+bảng dưới) thì được thêm, cột `id`, `lesson_id` (và `*.lesson_id`) trong file bị **bỏ qua**, không dùng để tìm hoặc tính mã
+bài học và không gắn mục vào bài học; dòng thiếu field bắt buộc bị bỏ, các dòng khác vẫn thêm, báo lỗi theo số dòng (EX14).
+Mục import vào cụm đang chọn ở
+panel Cụm (đang ở `Tất cả` thì `Chưa phân cụm`). Mục hiện ở bài học qua cụm liên kết (panel Cụm › ⋮ ›
+`Liên kết bài học`). Mục lặp ở nhiều dòng (cùng nội dung) vẫn gộp thành 1 bản ghi thư viện. Sheet câu hỏi của mục
+(`<loại>_question`, `<loại>_subquestion`) import tại tab Câu hỏi của mục, theo cột BTVN.
 
 ### A.1. Từ vựng (`vocabulary`)
 

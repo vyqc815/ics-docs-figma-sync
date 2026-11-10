@@ -404,6 +404,7 @@
    "7": {
     "cot file": 1,
     "export": 2,
+    "import cau hoi con": 7,
     "import cau trung": 5,
     "import dong bat buoc": 3,
     "import loi du lieu": 4,
@@ -430,6 +431,7 @@
    "ai them bang ai dien thieu soat loi tao lai": 13,
    "bang danh sach tim kiem sap xep va loc": 3,
    "chi tiet muc drawer": 8,
+   "chi tiet muc tab cau hoi bo cau hoi cua muc": 18,
    "chon nhieu va thao tac hang loat": 9,
    "cum lien ket voi chi tiet bai hoc": 16,
    "field cua tung loai kien thuc": 2,
@@ -470,9 +472,11 @@
     "chua phan cum": 6,
     "dong cum": 7,
     "popup lien ket bai hoc": 8,
+    "popup xoa cum": 11,
     "so cum": 2,
     "tat ca": 5,
     "tat ca cum badge n cum": 1,
+    "tat ca cum so cum": 10,
     "them cum moi": 9,
     "tim cum": 4
    },
@@ -482,6 +486,7 @@
     "goi y nhanh": 4,
     "huy tao lai ap dung m cum": 9,
     "pham vi chia cum": 2,
+    "so cum": 10,
     "so tu cum": 3,
     "tao de xuat": 6,
     "tieu de mo ta": 1,
@@ -525,6 +530,14 @@
     "loi": 4,
     "thanh cong": 1,
     "thong tin": 2
+   },
+   "18": {
+    "cay ky bai": 1,
+    "cot field kien thuc ky nang": 2,
+    "export": 5,
+    "generate bang ai": 3,
+    "import": 6,
+    "the tong quan": 4
    },
    "2": {
     "audio": 20,
@@ -895,6 +908,7 @@
   "areas": {
    "bang bai doc": 3,
    "bang bai nghe": 2,
+   "chi tiet bai tab cau hoi bo cau hoi cua bai ky nang": 22,
    "chon nhieu va thao tac hang loat": 10,
    "cum lien ket voi chi tiet bai hoc": 20,
    "drawer chi tiet bai doc": 7,
@@ -1021,6 +1035,14 @@
     "thanh cong": 1,
     "thong tin": 2
    },
+   "22": {
+    "cay ky bai": 1,
+    "cot field kien thuc ky nang": 2,
+    "export": 5,
+    "generate bang ai": 3,
+    "import": 6,
+    "the tong quan": 4
+   },
    "3": {
     "bai doc": 2,
     "cot khac": 4,
@@ -1032,7 +1054,9 @@
     "chua phan cum": 6,
     "dong cum": 4,
     "popup lien ket bai hoc": 5,
+    "popup xoa cum": 9,
     "so cum": 2,
+    "so cum trong popup chia cum bang ai": 8,
     "tat ca cum badge n cum": 1,
     "them cum moi": 7
    },
@@ -1051,6 +1075,7 @@
     "kich ban n luot": 7,
     "mo ta": 3,
     "nang cao": 5,
+    "tab cau hoi n": 10,
     "ten bai": 2,
     "tieu de": 1
    },
@@ -1058,7 +1083,9 @@
     "audio doc mau": 3,
     "doan van": 2,
     "ten bai mo ta cum nang cao cau hoi footer": 1,
-    "tu vung lien quan": 4
+    "ten bai mo ta cum nang cao tab cau hoi footer": 5,
+    "tu vung lien quan": 4,
+    "tu vung n tu": 6
    },
    "8": {
     "go khoi khoa": 4,
@@ -3492,12 +3519,14 @@
     "tong ket": 3
    },
    "5": {
+    "bai tap moi loai": 14,
     "chi tiet chu": 12,
     "flashcard": 6,
     "hanzi kanji": 3,
     "hoc": 5,
     "luyen viet chu": 10,
     "mau cau": 4,
+    "moi loai them": 13,
     "ngu phap": 2,
     "thu thach 1 2 chu": 11,
     "thu thach tu vung": 7,
@@ -3642,6 +3671,7 @@
    },
    "3": {
     "header": 1,
+    "khoi tu vung": 5,
     "luyen tap": 4,
     "noi dung": 2,
     "popup tuy chinh": 3

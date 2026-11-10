@@ -4289,7 +4289,7 @@
     2,
     3,
     7,
-    11
+    12
    ],
    "prefix": "CM-KS",
    "title": "Kiến thức (S1)"
@@ -4303,7 +4303,7 @@
     2,
     3,
     7,
-    11
+    12
    ],
    "prefix": "CM-KS",
    "title": "Kiến thức (S1)"
@@ -4317,7 +4317,7 @@
     2,
     3,
     7,
-    11
+    12
    ],
    "prefix": "CM-KS",
    "title": "Kiến thức (S1)"
@@ -4327,7 +4327,7 @@
   {
    "file": "course_management/knowledge-s1/knowledge-s1.md",
    "pages": [
-    9
+    10
    ],
    "prefix": "CM-KS",
    "title": "Kiến thức (S1)"
@@ -4337,7 +4337,7 @@
   {
    "file": "course_management/knowledge-s1/knowledge-s1.md",
    "pages": [
-    9
+    10
    ],
    "prefix": "CM-KS",
    "title": "Kiến thức (S1)"
@@ -4347,7 +4347,7 @@
   {
    "file": "course_management/knowledge-s1/knowledge-s1.md",
    "pages": [
-    10
+    11
    ],
    "prefix": "CM-KS",
    "title": "Kiến thức (S1)"
@@ -4357,7 +4357,7 @@
   {
    "file": "course_management/knowledge-s1/knowledge-s1.md",
    "pages": [
-    10
+    11
    ],
    "prefix": "CM-KS",
    "title": "Kiến thức (S1)"
@@ -4387,7 +4387,7 @@
   {
    "file": "course_management/knowledge-s1/knowledge-s1.md",
    "pages": [
-    14
+    15
    ],
    "prefix": "CM-KS",
    "title": "Kiến thức (S1)"
@@ -4397,7 +4397,7 @@
   {
    "file": "course_management/knowledge-s1/knowledge-s1.md",
    "pages": [
-    14
+    15
    ],
    "prefix": "CM-KS",
    "title": "Kiến thức (S1)"
@@ -4427,7 +4427,7 @@
   {
    "file": "course_management/knowledge-s1/knowledge-s1.md",
    "pages": [
-    15
+    16
    ],
    "prefix": "CM-KS",
    "title": "Kiến thức (S1)"
@@ -4437,7 +4437,7 @@
   {
    "file": "course_management/knowledge-s1/knowledge-s1.md",
    "pages": [
-    15
+    16
    ],
    "prefix": "CM-KS",
    "title": "Kiến thức (S1)"
@@ -4467,7 +4467,7 @@
   {
    "file": "course_management/knowledge-s1/knowledge-s1.md",
    "pages": [
-    12
+    13
    ],
    "prefix": "CM-KS",
    "title": "Kiến thức (S1)"
@@ -4477,7 +4477,7 @@
   {
    "file": "course_management/knowledge-s1/knowledge-s1.md",
    "pages": [
-    12
+    13
    ],
    "prefix": "CM-KS",
    "title": "Kiến thức (S1)"
@@ -4491,7 +4491,7 @@
     2,
     3,
     7,
-    11
+    12
    ],
    "prefix": "CM-KS",
    "title": "Kiến thức (S1)"
@@ -4501,7 +4501,7 @@
   {
    "file": "course_management/knowledge-s1/knowledge-s1.md",
    "pages": [
-    13
+    14
    ],
    "prefix": "CM-KS",
    "title": "Kiến thức (S1)"
@@ -4511,7 +4511,7 @@
   {
    "file": "course_management/knowledge-s1/knowledge-s1.md",
    "pages": [
-    13
+    14
    ],
    "prefix": "CM-KS",
    "title": "Kiến thức (S1)"
@@ -4545,7 +4545,7 @@
     2,
     3,
     7,
-    11
+    12
    ],
    "prefix": "CM-KS",
    "title": "Kiến thức (S1)"
@@ -4559,7 +4559,7 @@
     2,
     3,
     7,
-    11
+    12
    ],
    "prefix": "CM-KS",
    "title": "Kiến thức (S1)"
@@ -4573,7 +4573,7 @@
     2,
     3,
     7,
-    11
+    12
    ],
    "prefix": "CM-KS",
    "title": "Kiến thức (S1)"
@@ -4587,7 +4587,7 @@
     2,
     4,
     5,
-    8
+    9
    ],
    "prefix": "CM-SS",
    "title": "Kỹ năng (S6) — Nghe / Đọc"
@@ -4601,7 +4601,7 @@
     2,
     4,
     5,
-    8
+    9
    ],
    "prefix": "CM-SS",
    "title": "Kỹ năng (S6) — Nghe / Đọc"
@@ -4631,7 +4631,7 @@
   {
    "file": "course_management/skill-s6/skill-s6.md",
    "pages": [
-    10
+    11
    ],
    "prefix": "CM-SS",
    "title": "Kỹ năng (S6) — Nghe / Đọc"
@@ -4641,7 +4641,7 @@
   {
    "file": "course_management/skill-s6/skill-s6.md",
    "pages": [
-    10
+    11
    ],
    "prefix": "CM-SS",
    "title": "Kỹ năng (S6) — Nghe / Đọc"
@@ -4651,7 +4651,7 @@
   {
    "file": "course_management/skill-s6/skill-s6.md",
    "pages": [
-    14
+    15
    ],
    "prefix": "CM-SS",
    "title": "Kỹ năng (S6) — Nghe / Đọc"
@@ -4661,7 +4661,7 @@
   {
    "file": "course_management/skill-s6/skill-s6.md",
    "pages": [
-    14
+    15
    ],
    "prefix": "CM-SS",
    "title": "Kỹ năng (S6) — Nghe / Đọc"
@@ -4671,8 +4671,8 @@
   {
    "file": "course_management/skill-s6/skill-s6.md",
    "pages": [
-    9,
-    19
+    10,
+    20
    ],
    "prefix": "CM-SS",
    "title": "Kỹ năng (S6) — Nghe / Đọc"
@@ -4682,8 +4682,8 @@
   {
    "file": "course_management/skill-s6/skill-s6.md",
    "pages": [
-    9,
-    19
+    10,
+    20
    ],
    "prefix": "CM-SS",
    "title": "Kỹ năng (S6) — Nghe / Đọc"
@@ -4693,7 +4693,7 @@
   {
    "file": "course_management/skill-s6/skill-s6.md",
    "pages": [
-    11
+    12
    ],
    "prefix": "CM-SS",
    "title": "Kỹ năng (S6) — Nghe / Đọc"
@@ -4703,7 +4703,7 @@
   {
    "file": "course_management/skill-s6/skill-s6.md",
    "pages": [
-    11
+    12
    ],
    "prefix": "CM-SS",
    "title": "Kỹ năng (S6) — Nghe / Đọc"
@@ -4713,7 +4713,7 @@
   {
    "file": "course_management/skill-s6/skill-s6.md",
    "pages": [
-    13
+    14
    ],
    "prefix": "CM-SS",
    "title": "Kỹ năng (S6) — Nghe / Đọc"
@@ -4723,7 +4723,7 @@
   {
    "file": "course_management/skill-s6/skill-s6.md",
    "pages": [
-    13
+    14
    ],
    "prefix": "CM-SS",
    "title": "Kỹ năng (S6) — Nghe / Đọc"
@@ -4733,7 +4733,7 @@
   {
    "file": "course_management/skill-s6/skill-s6.md",
    "pages": [
-    12
+    13
    ],
    "prefix": "CM-SS",
    "title": "Kỹ năng (S6) — Nghe / Đọc"
@@ -4743,7 +4743,7 @@
   {
    "file": "course_management/skill-s6/skill-s6.md",
    "pages": [
-    12
+    13
    ],
    "prefix": "CM-SS",
    "title": "Kỹ năng (S6) — Nghe / Đọc"
@@ -4753,7 +4753,7 @@
   {
    "file": "course_management/skill-s6/skill-s6.md",
    "pages": [
-    16
+    17
    ],
    "prefix": "CM-SS",
    "title": "Kỹ năng (S6) — Nghe / Đọc"
@@ -4763,7 +4763,7 @@
   {
    "file": "course_management/skill-s6/skill-s6.md",
    "pages": [
-    16
+    17
    ],
    "prefix": "CM-SS",
    "title": "Kỹ năng (S6) — Nghe / Đọc"
@@ -4773,7 +4773,7 @@
   {
    "file": "course_management/skill-s6/skill-s6.md",
    "pages": [
-    18
+    19
    ],
    "prefix": "CM-SS",
    "title": "Kỹ năng (S6) — Nghe / Đọc"
@@ -4783,7 +4783,7 @@
   {
    "file": "course_management/skill-s6/skill-s6.md",
    "pages": [
-    18
+    19
    ],
    "prefix": "CM-SS",
    "title": "Kỹ năng (S6) — Nghe / Đọc"
@@ -4813,7 +4813,17 @@
   {
    "file": "course_management/skill-s6/skill-s6.md",
    "pages": [
-    3
+    7
+   ],
+   "prefix": "CM-SS",
+   "title": "Kỹ năng (S6) — Nghe / Đọc"
+  }
+ ],
+ "CD-KH-050210-DK": [
+  {
+   "file": "course_management/skill-s6/skill-s6.md",
+   "pages": [
+    7
    ],
    "prefix": "CM-SS",
    "title": "Kỹ năng (S6) — Nghe / Đọc"
@@ -5149,7 +5159,7 @@
   {
    "file": "course_management/skill-s6/skill-s6.md",
    "pages": [
-    6
+    8
    ],
    "prefix": "CM-SS",
    "title": "Kỹ năng (S6) — Nghe / Đọc"
@@ -5167,7 +5177,7 @@
   {
    "file": "course_management/skill-s6/skill-s6.md",
    "pages": [
-    6
+    8
    ],
    "prefix": "CM-SS",
    "title": "Kỹ năng (S6) — Nghe / Đọc"
@@ -5185,7 +5195,7 @@
   {
    "file": "course_management/skill-s6/skill-s6.md",
    "pages": [
-    6
+    8
    ],
    "prefix": "CM-SS",
    "title": "Kỹ năng (S6) — Nghe / Đọc"
@@ -5203,7 +5213,7 @@
   {
    "file": "course_management/skill-s6/skill-s6.md",
    "pages": [
-    7
+    8
    ],
    "prefix": "CM-SS",
    "title": "Kỹ năng (S6) — Nghe / Đọc"
@@ -5221,7 +5231,7 @@
   {
    "file": "course_management/skill-s6/skill-s6.md",
    "pages": [
-    7
+    8
    ],
    "prefix": "CM-SS",
    "title": "Kỹ năng (S6) — Nghe / Đọc"
@@ -5299,7 +5309,7 @@
   {
    "file": "course_management/skill-s6/skill-s6.md",
    "pages": [
-    6
+    8
    ],
    "prefix": "CM-SS",
    "title": "Kỹ năng (S6) — Nghe / Đọc"
@@ -5317,7 +5327,7 @@
   {
    "file": "course_management/skill-s6/skill-s6.md",
    "pages": [
-    7
+    8
    ],
    "prefix": "CM-SS",
    "title": "Kỹ năng (S6) — Nghe / Đọc"
@@ -5335,7 +5345,7 @@
   {
    "file": "course_management/skill-s6/skill-s6.md",
    "pages": [
-    7
+    8
    ],
    "prefix": "CM-SS",
    "title": "Kỹ năng (S6) — Nghe / Đọc"

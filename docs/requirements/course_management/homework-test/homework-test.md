@@ -188,18 +188,22 @@ Menu **Bài Tập Về Nhà** trong khoá học của role **CD**: soạn **bộ
 **Mô tả:**
 
 - `Export Excel` tải bộ câu hỏi của bài đang chọn ra file `.xlsx`; `Import Excel` thêm câu hỏi từ file `.xlsx` vào cuối bộ câu hỏi của bài đang chọn (**UI popup kết quả cần bổ sung**).
+- **Không cần đúng id (10/11):** file chỉ cần đủ field bắt buộc; mọi dòng hợp lệ vào **bài (BTVN / bài kiểm tra) đang chọn**.
+  Cột `id`, `lesson_id`, `test_id`, mã câu (nếu có, vd file dạng sheet `btvn_question` / `test_question` của file dữ liệu
+  khoá học) **bị bỏ qua**, không lọc dòng theo bài, không đối chiếu với dữ liệu hệ thống.
 
 **Điểm cần lưu ý:**
 
 - `A07.01` **Cột file**: **Giống cột bảng câu hỏi trên UI**: `STT`, `Câu hỏi`, `Hướng dẫn`, `Loại câu`, `Đáp án đúng`, `Kiến thức / Kỹ năng`, `Điểm`. Câu hỏi con nằm ở các dòng ngay dưới câu cha, `STT` dạng `7.1`, `7.2`.
 - `A07.02` **Export**: Xuất toàn bộ câu của bài (không theo bộ lọc đang chọn); tên file `<Khoá học>_<Bài>.xlsx`.
 - `A07.03` **Import — dòng bắt buộc**: Mỗi dòng phải có `STT`, `Câu hỏi`, `Loại câu` (một trong 8 loại), `Kiến thức / Kỹ năng` (cụm của khoá hoặc Nghe, Đọc, Viết, Nói). Không có cột `Điểm`.
-- `A07.04` **Import — lỗi dữ liệu**: Có dòng thiếu field bắt buộc hoặc sai giá trị → **chặn cả file**, không thêm câu nào, hiển thị danh sách lỗi theo số dòng (vd `Dòng 5: thiếu Loại câu`).
+- `A07.04` **Import — lỗi dữ liệu**: Dòng thiếu field bắt buộc hoặc sai giá trị (Loại câu ngoài 8 loại, Kiến thức / Kỹ năng không có trong khoá) → **bỏ dòng đó**, các dòng khác vẫn thêm; popup kết quả liệt kê lỗi theo số dòng (vd `Dòng 5: thiếu Loại câu`). Không còn dòng hợp lệ → không thêm câu nào, Toast `Cảnh Báo`.
 - `A07.05` **Import — câu trùng**: Không tự dò hay bỏ câu trùng; mọi dòng hợp lệ đều được thêm. Câu trùng do **Soát lỗi bằng AI** phát hiện.
-- `A07.06` **Import — thành công**: Thêm vào cuối bộ theo thứ tự `STT` trong file; Toast `Thành Công` `Đã import N câu hỏi.`; gợi ý chạy Soát lỗi bằng AI.
+- `A07.07` **Import — câu hỏi con**: Câu con nối với câu cha theo `STT` dạng `7.1`, `7.2` trong file (không theo id); không tìm thấy câu cha `7` (hoặc câu cha bị bỏ) thì bỏ câu con, báo lỗi dòng.
+- `A07.06` **Import — thành công**: Thêm vào cuối bộ theo thứ tự `STT` trong file; Toast `Thành Công` `Đã import N câu hỏi.` (kèm `, bỏ M dòng lỗi` nếu có); gợi ý chạy Soát lỗi bằng AI.
 
-- File export dùng lại được để import (cùng cấu trúc cột).
-- Chỉ nhận `.xlsx`; file khác hoặc sai cột tiêu đề → báo lỗi, không import.
+- File export dùng lại được để import (cùng cấu trúc cột), kể cả file export từ bài / khoá khác.
+- Chỉ nhận `.xlsx`; file khác hoặc thiếu cột tiêu đề bắt buộc → báo lỗi, không import (cột thừa bị bỏ qua).
 - Khác Figma: nút Import / Export mới có ở CD-KH-030340; chưa có popup kết quả import.
 
 ### Trang 8: CD-KH-060150 — Soát lỗi bằng AI
@@ -384,8 +388,8 @@ CD bấm ⋮ → Xoá (hoặc chọn nhiều → Xoá)
 ```text
 Export Excel → tải file .xlsx toàn bộ câu của bài, cột như bảng UI
 Import Excel → chọn file .xlsx → kiểm tra từng dòng
-      → Có dòng lỗi: chặn cả file, báo lỗi theo số dòng
-      → Hợp lệ: thêm mọi dòng vào cuối bộ (không bỏ câu trùng), Toast "Đã import N câu hỏi."
+      → bỏ qua cột id / lesson_id / test_id → dòng lỗi: bỏ dòng, báo lỗi theo số dòng
+      → Dòng hợp lệ: thêm vào cuối bộ của bài đang chọn (không bỏ câu trùng), Toast "Đã import N câu hỏi."
 ```
 
 **Flow 6 / REQ08: Tạo câu hỏi bằng AI**
@@ -411,7 +415,7 @@ CD bấm "Soát lỗi bằng AI" → AI rà toàn bộ câu của bài
 
 - **EX01:** Lưu câu thiếu field bắt buộc (Số câu, Loại câu, Kiến thức / Kỹ năng, Điểm, Nội dung câu hỏi) → báo lỗi dưới field, không lưu.
 - **EX02:** File hình ảnh / âm thanh lớn hơn 25MB → không tải lên; Toast `Cảnh Báo` `File vượt quá dung lượng cho phép (25MB).`
-- **EX03:** File import có dòng thiếu field bắt buộc, sai Loại câu, sai Kiến thức / Kỹ năng, không phải `.xlsx` hoặc sai cột tiêu đề → chặn cả file, báo lỗi theo dòng; không thêm câu nào.
+- **EX03:** File import không phải `.xlsx` hoặc thiếu cột tiêu đề bắt buộc → không import. Dòng thiếu field bắt buộc, sai Loại câu, sai Kiến thức / Kỹ năng, câu con không có câu cha → bỏ dòng, các dòng khác vẫn thêm, báo lỗi theo dòng. Cột `id`, `lesson_id`, `test_id` trong file bị bỏ qua, không gây lỗi.
 - **EX04:** Lưu, import, export thất bại do backend / network → Toast `Có Lỗi Xảy Ra`; dữ liệu không thay đổi một phần.
 - **EX05:** Thêm, sửa, xoá, import, generate câu thuộc học kỳ hoặc khoá học không ở `Nháp` (giao diện hoặc request trực tiếp) → backend từ chối; Toast `Cảnh Báo`; dữ liệu không đổi.
 - **EX06:** Generate thiếu field bắt buộc (prompt, cụm kiến thức, số câu, dạng câu hỏi) hoặc dòng bảng thiếu Prompt / Kiến thức / Kỹ năng → khoá nút hoặc báo lỗi dòng, không tạo.
@@ -426,7 +430,7 @@ CD bấm "Soát lỗi bằng AI" → AI rà toàn bộ câu của bài
 | REQ03 | Bảng câu hỏi | Cột STT, Câu hỏi, Loại câu, Đáp án đúng, Kiến thức / Kỹ năng; lọc Loại câu, Kiến thức / Kỹ năng và tìm kiếm (không có lọc Trạng thái); câu hỏi con mở / thu; 50 câu/trang; xoá mềm; chỉ thêm / sửa / xoá khi học kỳ và khoá học `Nháp`. |
 | REQ04 | Loại câu | 8 loại Trắc nghiệm, Sắp xếp, Nối từ, Nói (App chấm); Đọc, Viết, Hình ảnh (GV chấm); Câu hỏi con (theo từng câu con). |
 | REQ05 | Soạn câu hỏi | Bắt buộc Số câu, Loại câu (khoá sau khi chọn), Kiến thức hoặc Kỹ năng, Điểm, Nội dung câu hỏi; đáp án theo loại câu; file tối đa 25MB; Số câu trùng thì chèn và dồn các câu sau. |
-| REQ06 | Import / Export Excel | Cột file giống bảng UI, không có cột Điểm; export toàn bộ câu của bài; import thêm vào cuối, kiểm tra từng dòng, có dòng lỗi thì chặn cả file; không tự dò câu trùng. |
+| REQ06 | Import / Export Excel | Cột file giống bảng UI, không có cột Điểm; export toàn bộ câu của bài; import thêm vào cuối bài đang chọn, **không cần đúng id** (bỏ qua `id`, `lesson_id`, `test_id`), câu con nối theo STT, dòng lỗi bị bỏ và báo theo số dòng; không tự dò câu trùng. |
 | REQ07 | Soát lỗi bằng AI | Rà toàn bộ câu của bài, phát hiện câu trùng và các lỗi khác, chỉ báo, không tự sửa. |
 | REQ08 | Generate bằng AI | Hai chế độ Nhập prompt / Chọn kiến thức & kỹ năng; Số câu không giới hạn; sinh bảng N dòng để sửa và chọn; chỉ dòng được tick mới tạo câu, thêm vào cuối bộ với tag `AI`; huỷ / lỗi không thêm câu. |
 | REQ09 | Không trạng thái và kỳ Vô hiệu | BTVN, bộ câu hỏi và câu hỏi không có trạng thái riêng (trạng thái hiển thị ở Thư viện theo khoá học); chỉ sửa được khi học kỳ `Nháp` và khoá học `Nháp`, ngược lại chỉ đọc. Nhân bản học kỳ / khoá học sao chép toàn bộ BTVN và bộ câu hỏi thành câu hỏi mới. Kỳ `Vô hiệu`: BTVN đã tạo trong lớp từ kỳ đó trước khi vô hiệu vẫn dùng bình thường. |
@@ -482,10 +486,12 @@ CD bấm "Soát lỗi bằng AI" → AI rà toàn bộ câu của bài
 | Case 21: File quá 25MB | Medium | EX02 / REQ05 | CD | File âm thanh 30MB | **Given** chọn file<br>**When** tải lên<br>**Then** không thêm file, báo `File vượt quá dung lượng cho phép (25MB).` | - |
 | Case 22: Export đúng cột | High · Smoke | Flow 5 / REQ06 | CD | Bài có 8 câu, 1 câu hỏi con 3 câu con | **Given** đang lọc Loại câu `Viết`<br>**When** bấm `Export Excel`<br>**Then** file có đủ 8 câu và 3 dòng `7.1`–`7.3`, cột như bảng UI | - Không phụ thuộc bộ lọc |
 | Case 23: Import thành công | High · Smoke | Flow 5 / REQ06 | CD | File 10 dòng hợp lệ | **Given** bấm `Import Excel`, chọn file<br>**When** hệ thống xử lý<br>**Then** thêm 10 câu vào cuối bộ | - Toast `Đã import 10 câu hỏi.` |
-| Case 24: Chặn cả file khi có dòng lỗi | High | EX03 / REQ06 | CD | File 10 dòng, dòng 5 thiếu Loại câu | **Given** import file<br>**When** kiểm tra<br>**Then** không thêm câu nào, báo `Dòng 5: thiếu Loại câu` | - Bộ câu hỏi giữ nguyên |
+| Case 24: Bỏ dòng lỗi, vẫn import dòng hợp lệ | High | EX03 / REQ06 | CD | File 10 dòng, dòng 5 thiếu Loại câu | **Given** import file<br>**When** kiểm tra<br>**Then** thêm 9 câu, báo `Dòng 5: thiếu Loại câu` | - Toast `Đã import 9 câu hỏi, bỏ 1 dòng lỗi.` |
+| Case 24a: File có id của bài khác | High · Smoke | EX03 / REQ06 | CD | Đang chọn BTVN Bài 2; file 6 dòng có cột `lesson_id` = Bài 5, `id` là mã câu cũ | **Given** import file<br>**When** xử lý<br>**Then** 6 câu thêm vào Bài 2 | - Không báo lỗi id<br>- Bài 5 không đổi<br>- Áp dụng tương tự bài kiểm tra với cột `test_id` |
+| Case 24b: Câu con không có câu cha | Medium | EX03 / REQ06 | CD | File có dòng `9.1` nhưng không có dòng `9` | **Given** import file<br>**When** xử lý<br>**Then** bỏ dòng `9.1`, báo `Dòng N: không tìm thấy câu cha 9` | - Các dòng khác vẫn thêm |
 | Case 25: Không tự bỏ câu trùng | Medium | REQ06 / REQ07 | CD | File có 2 dòng trùng câu đã có | **Given** import file<br>**When** thành công<br>**Then** cả 2 dòng được thêm | - Soát lỗi bằng AI báo 2 câu trùng |
 | Case 26: Export rồi import lại | Medium | REQ06 | CD | Bài A có 8 câu | **Given** export bài A, import file vào bài B trống<br>**When** thành công<br>**Then** bài B có 8 câu giống bài A | - |
-| Case 26a: Import file không phải .xlsx / sai cột tiêu đề | Medium | EX03 / REQ06 | CD | Bài thuộc học kỳ và khoá `Nháp` | **Given** import file `.csv`; import file `.xlsx` sai cột tiêu đề<br>**When** xử lý<br>**Then** chặn cả file, báo lỗi | - Không thêm câu nào |
+| Case 26a: Import file không phải .xlsx / sai cột tiêu đề | Medium | EX03 / REQ06 | CD | Bài thuộc học kỳ và khoá `Nháp` | **Given** import file `.csv`; import file `.xlsx` sai cột tiêu đề<br>**When** xử lý<br>**Then** không import, báo lỗi định dạng / thiếu cột | - Không thêm câu nào |
 | Case 27: Phát hiện câu trùng | High | Flow 7 / REQ07 | CD | Câu 02 và câu 11 cùng nội dung, cùng loại | **Given** bấm `Soát lỗi bằng AI`<br>**When** AI trả kết quả<br>**Then** danh sách có vấn đề trùng giữa câu 02 và 11 | - Không tự xoá câu nào |
 | Case 28: Không có lỗi | Low | REQ07 | CD | Bộ câu hỏi đúng | **Given** soát lỗi<br>**When** AI trả kết quả<br>**Then** hiện `Không tìm thấy lỗi.` | - |
 | Case 29: Generate theo prompt | High · Smoke | Flow 6 / REQ08 | CD | Bài kiểm tra đang mở | **Given** nhập prompt, Số câu `30`, Dạng `Tuỳ chọn`<br>**When** bấm `Generate`<br>**Then** mở trạng thái Đang tạo bảng | - |

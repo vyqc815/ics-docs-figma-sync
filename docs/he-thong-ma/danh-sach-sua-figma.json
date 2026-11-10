@@ -466,29 +466,6 @@
   {
    "cluster": "lesson",
    "clusterTitle": "Học Kỳ - Tab Bài học",
-   "region": "CM-LE.A02",
-   "regionTitle": "Popup: Chi tiết bài học - Tab Thông tin",
-   "screens": [
-    "CD-KH-030244",
-    "CD-KH-030245",
-    "CD-KH-030246",
-    "CD-KH-030247"
-   ],
-   "kind": "khu-vuc-can-bo-sung",
-   "requirement": "course_management/semester/lesson/lesson.md",
-   "item": null,
-   "text": "Requirement ghi khu vực này \"UI cần bổ sung\"; vẽ theo bảng item của khu vực.",
-   "id": "FIX-025",
-   "links": {
-    "CD-KH-030244": "https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=7193-403630",
-    "CD-KH-030245": "https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=7193-403961",
-    "CD-KH-030246": "https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=7193-404272",
-    "CD-KH-030247": "https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=7193-404533"
-   }
-  },
-  {
-   "cluster": "lesson",
-   "clusterTitle": "Học Kỳ - Tab Bài học",
    "region": "CM-LE.A05",
    "regionTitle": "Popup: Chi tiết bài học - Tab Kiến thức",
    "screens": [
@@ -500,7 +477,7 @@
    "requirement": "course_management/semester/lesson/lesson.md",
    "item": null,
    "text": "Requirement ghi khu vực này \"UI cần bổ sung\"; vẽ theo bảng item của khu vực.",
-   "id": "FIX-026",
+   "id": "FIX-025",
    "links": {
     "CD-KH-030211": "https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=7193-402861",
     "CD-KH-030244": "https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=7193-403630",
@@ -519,7 +496,7 @@
    "requirement": "curriculum_management_requirement/level_management/level_management.md",
    "item": null,
    "text": "Requirement ghi khu vực này \"UI cần bổ sung\"; vẽ theo bảng item của khu vực.",
-   "id": "FIX-027",
+   "id": "FIX-026",
    "links": {
     "CD-CDO-010010": "https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=1901-3763"
    }
@@ -537,7 +514,7 @@
    "requirement": "course_management/library/library.md",
    "item": "CM-LI.A01.04",
    "text": "Thêm `Lọc Nâng cao`: Chỉ Thư viện kiến thức và kỹ năng: `Tất cả` (mặc định), `Có`, `Không` theo field Nâng cao của mục (**UI cần bổ sung**).",
-   "id": "FIX-028",
+   "id": "FIX-027",
    "links": {
     "CD-KH-070160": "https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=5729-91615",
     "CD-KH-070170": "https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=5729-92036"
@@ -556,7 +533,7 @@
    "requirement": "course_management/library/library.md",
    "item": "CM-LI.A01.10",
    "text": "Thêm `Cột Nâng cao`: `Có` / `Không`; chỉ có ở Thư viện kiến thức và kỹ năng, đứng trước cột `Trạng thái` (**UI cần bổ sung**).",
-   "id": "FIX-029",
+   "id": "FIX-028",
    "links": {
     "CD-KH-070160": "https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=5729-91615",
     "CD-KH-070170": "https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=5729-92036"
@@ -576,7 +553,7 @@
    "requirement": "course_management/library/library.md",
    "item": "CM-LI.A04.10",
    "text": "Thêm `Menu ⋮`: Như các tab khác (Đổi trạng thái, Xoá). Ở dạng lưới thao tác qua panel Chi tiết chữ (**UI cần bổ sung**: nút `⋮` trong panel).",
-   "id": "FIX-030",
+   "id": "FIX-029",
    "links": {
     "CD-KH-070160": "https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=5729-91615",
     "CD-KH-070161": "https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=5729-94334",
@@ -596,7 +573,7 @@
    "requirement": "course_management/library/library.md",
    "item": "CM-LI.A06.11",
    "text": "Thêm `Bấm dòng tab mẫu`: Mở bộ câu hỏi chỉ đọc (**UI cần bổ sung**).",
-   "id": "FIX-031",
+   "id": "FIX-030",
    "links": {
     "CD-KH-070160": "https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=5729-91615",
     "CD-KH-070170": "https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=5729-92036"
@@ -615,7 +592,7 @@
    "requirement": "course_management/library/library.md",
    "item": "CM-LI.A07.08",
    "text": "Thêm `Audio theo kịch bản`: Thêm / sửa / xoá lượt thoại hoặc đổi giọng đối tượng làm audio cũ lệch kịch bản: thanh audio hiện nhãn `Audio cần tạo lại`; CD bấm `Tạo lại audio` (hệ thống đọc từng lượt bằng TTS theo giọng của đối tượng, ghép theo thứ tự lượt) hoặc tải file mới. Lưu câu khi audio chưa tạo lại thì hỏi xác nhận. **UI cần bổ sung.**",
-   "id": "FIX-032",
+   "id": "FIX-031",
    "links": {
     "CD-KH-070304": "https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=6163-332037",
     "CD-KH-070305": "https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=6163-332868"
@@ -634,7 +611,7 @@
    "requirement": "course_management/library/library.md",
    "item": "CM-LI.A07.09",
    "text": "Thêm `Lựa chọn / đáp án`: Phần câu hỏi của bài nghe (lựa chọn, đáp án đúng) theo form soạn câu của BTVN; Figma chưa vẽ (**UI cần bổ sung**).",
-   "id": "FIX-033",
+   "id": "FIX-032",
    "links": {
     "CD-KH-070304": "https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=6163-332037",
     "CD-KH-070305": "https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=6163-332868"
@@ -653,7 +630,7 @@
    "requirement": "course_management/library/library.md",
    "item": "CM-LI.A07.23",
    "text": "Thêm `Chọn từ có sẵn`: Trên popup `Thêm từ khoá` có ô tìm từ trong Kiến thức (S1) của khoá học (Từ vựng, Hanzi / Kanji); chọn từ thì tự điền Phiên âm, Từ loại, Nghĩa, Chi tiết từ, Hán Việt, Ví dụ, CD sửa lại được. Không tìm thấy thì nhập mới như Figma. **UI cần bổ sung.**",
-   "id": "FIX-034",
+   "id": "FIX-033",
    "links": {
     "CD-KH-070304": "https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=6163-332037",
     "CD-KH-070305": "https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=6163-332868"
@@ -671,7 +648,7 @@
    "requirement": "meeting_schedule/meeting_schedule.md",
    "item": null,
    "text": "Requirement ghi khu vực này \"UI cần bổ sung\"; vẽ theo bảng item của khu vực.",
-   "id": "FIX-035",
+   "id": "FIX-034",
    "links": {
     "SP-LHP-010010": "https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=3857-80154"
    }
@@ -695,7 +672,7 @@
    "requirement": "course_management/skill-s6/skill-s6.md",
    "item": "CM-SS.A02.06",
    "text": "Thêm `Nâng cao`: `Có` / `Không` (mặc định `Không`); `Có` = bài nâng cao, app không đẩy lên bước học chính, vẫn hiện trong danh sách luyện (**UI cần bổ sung**).",
-   "id": "FIX-036",
+   "id": "FIX-035",
    "links": {
     "CD-KH-050100": "https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=5491-340361",
     "CD-KH-050110": "https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=6646-84755",
@@ -728,7 +705,7 @@
    "requirement": "course_management/skill-s6/skill-s6.md",
    "item": null,
    "text": "Requirement ghi khu vực này \"UI cần bổ sung\"; vẽ theo bảng item của khu vực.",
-   "id": "FIX-037",
+   "id": "FIX-036",
    "links": {
     "CD-KH-050100": "https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=5491-340361",
     "CD-KH-050110": "https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=6646-84755",
@@ -754,7 +731,7 @@
    "requirement": "course_management/skill-s6/skill-s6.md",
    "item": "CM-SS.A05.05",
    "text": "Thêm `Nâng cao`: `Tất cả` (mặc định), `Có`, `Không` (**UI cần bổ sung**).",
-   "id": "FIX-038",
+   "id": "FIX-037",
    "links": {
     "CD-KH-050100": "https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=5491-340361"
    }
@@ -772,7 +749,7 @@
    "requirement": "course_management/skill-s6/skill-s6.md",
    "item": "CM-SS.A06.05",
    "text": "Thêm `Nâng cao`: Toggle `Không` (mặc định) / `Có`; cùng ý nghĩa field Nâng cao của Kiến thức (S1): `Có` = bài nâng cao, không đẩy lên bước học chính. (**UI cần bổ sung**)",
-   "id": "FIX-039",
+   "id": "FIX-038",
    "links": {
     "CD-KH-050150": "https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=6646-122539",
     "CD-KH-050160": "https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=6646-122949"
@@ -791,7 +768,7 @@
    "requirement": "course_management/skill-s6/skill-s6.md",
    "item": "CM-SS.A06.07",
    "text": "Thêm `Kịch bản · N lượt`: Danh sách lượt thoại theo thứ tự: nhãn người nói (`A`, `B`…), câu gốc, `Phiên âm ·`, `Dịch ·`, mốc `start – end` theo audio (`mm:ss.s`, **UI cần bổ sung**). Thêm / sửa / xoá / kéo thả lượt; lượt có giá trị AI chờ duyệt viền nét đứt cam với `✓ Duyệt` / `↺ Hoàn tác`.",
-   "id": "FIX-040",
+   "id": "FIX-039",
    "links": {
     "CD-KH-050150": "https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=6646-122539",
     "CD-KH-050160": "https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=6646-122949"
@@ -809,7 +786,7 @@
    "requirement": "course_management/skill-s6/skill-s6.md",
    "item": null,
    "text": "Requirement ghi khu vực này \"UI cần bổ sung\"; vẽ theo bảng item của khu vực.",
-   "id": "FIX-041",
+   "id": "FIX-040",
    "links": {
     "CD-KH-050210": "https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=6935-379016"
    }
@@ -835,7 +812,7 @@
    "requirement": "course_management/skill-s6/skill-s6.md",
    "item": null,
    "text": "Requirement ghi khu vực này \"UI cần bổ sung\"; vẽ theo bảng item của khu vực.",
-   "id": "FIX-042",
+   "id": "FIX-041",
    "links": {
     "CD-KH-050100": "https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=5491-340361",
     "CD-KH-050110": "https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=6646-84755",
@@ -861,7 +838,7 @@
    "requirement": "course_management/skill-s6/skill-s6.md",
    "item": null,
    "text": "Requirement ghi khu vực này \"UI cần bổ sung\"; vẽ theo bảng item của khu vực.",
-   "id": "FIX-043",
+   "id": "FIX-042",
    "links": {
     "CD-KH-050150": "https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=6646-122539"
    }
@@ -878,7 +855,7 @@
    "requirement": "course_management/skill-s6/skill-s6.md",
    "item": null,
    "text": "Requirement ghi khu vực này \"UI cần bổ sung\"; vẽ theo bảng item của khu vực.",
-   "id": "FIX-044",
+   "id": "FIX-043",
    "links": {
     "CD-KH-050160": "https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=6646-122949"
    }
@@ -898,7 +875,7 @@
    "requirement": "course_management/skill-s6/skill-s6.md",
    "item": null,
    "text": "Requirement ghi khu vực này \"UI cần bổ sung\"; vẽ theo bảng item của khu vực.",
-   "id": "FIX-045",
+   "id": "FIX-044",
    "links": {
     "CD-KH-070302": "https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=6163-82177",
     "CD-KH-070305": "https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=6163-332868",
@@ -918,7 +895,7 @@
    "requirement": "course_management/skill-s6/skill-s6.md",
    "item": null,
    "text": "Requirement ghi khu vực này \"UI cần bổ sung\"; vẽ theo bảng item của khu vực.",
-   "id": "FIX-046",
+   "id": "FIX-045",
    "links": {
     "CD-KH-050100": "https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=5491-340361"
    }
@@ -935,7 +912,7 @@
    "requirement": "course_management/semester/test/test.md",
    "item": null,
    "text": "Khác Figma CD-KH-030300: card chưa có menu `⋮` để xoá bài.",
-   "id": "FIX-047",
+   "id": "FIX-046",
    "links": {
     "CD-KH-030300": "https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=497-18242"
    }
@@ -952,7 +929,7 @@
    "requirement": "course_management/semester/test/test.md",
    "item": "CM-TE.A01.06",
    "text": "Thêm `Xoá bài`: Menu `⋮` trên card có `Xoá` (popup xác nhận `Xoá bài kiểm tra \"<tên>\"? Bộ câu hỏi của bài cũng sẽ bị xoá.`, nút `Huỷ` / `Xoá`); xoá mềm (**UI cần bổ sung**).",
-   "id": "FIX-048",
+   "id": "FIX-047",
    "links": {
     "CD-KH-030300": "https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=497-18242"
    }
@@ -969,7 +946,7 @@
    "requirement": "course_management/semester/test/test.md",
    "item": null,
    "text": "Khác Figma CD-KH-030310: ô `Số câu hỏi` đang vẽ như ô nhập, requirement là chỉ đọc; ô `Tổng điểm` trên Figma cần bỏ. Dòng Lưu ý ghi `Số câu hỏi và tổng điểm có thể được cập nhật`.",
-   "id": "FIX-049",
+   "id": "FIX-048",
    "links": {
     "CD-KH-030310": "https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=1496-16304"
    }
@@ -986,7 +963,7 @@
    "requirement": "course_management/semester/test/test.md",
    "item": null,
    "text": "Khác Figma: bộ câu hỏi đang vẽ thành màn riêng `CD-KH-030340` (mở từ `>`); requirement đặt trong tab `Bộ Câu Hỏi` của popup (**UI cần bổ sung**).",
-   "id": "FIX-050",
+   "id": "FIX-049",
    "links": {
     "CD-KH-030300": "https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=497-18242"
    }
@@ -1003,7 +980,7 @@
    "requirement": "course_management/semester/test/test.md",
    "item": null,
    "text": "Requirement ghi khu vực này \"UI cần bổ sung\"; vẽ theo bảng item của khu vực.",
-   "id": "FIX-051",
+   "id": "FIX-050",
    "links": {
     "CD-KH-030300": "https://www.figma.com/design/rRVs5HX0kIHffbS0V40djG/?node-id=497-18242"
    }

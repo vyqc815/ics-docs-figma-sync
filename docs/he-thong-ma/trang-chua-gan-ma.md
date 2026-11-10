@@ -8,13 +8,14 @@ Các trang dưới đây chưa khớp chắc chắn với frame Figma nên chưa
 | `action_board_requirement/action_board_requirements.md` | Trang 10: Toast phản hồi CRUD | không có trong registry |  |
 | `appointment_requirement/appointment_requirements.md` | Trang 7: Toast phản hồi CRUD | chưa đủ chắc |  |
 | `course_management/homework-test/homework-test.md` | Trang 13: Toast phản hồi CRUD | không item nào khớp đủ | CD-KH-030347 |
-| `course_management/knowledge-s1/knowledge-s1.md` | Trang 17: Toast phản hồi CRUD | không item nào khớp đủ | CD-KH-040170 |
+| `course_management/knowledge-s1/knowledge-s1.md` | Trang 9: Chi tiết mục — Tab Câu hỏi (bộ câu hỏi của mục) | không item nào khớp đủ | CD-KH-040160 |
+| `course_management/knowledge-s1/knowledge-s1.md` | Trang 18: Toast phản hồi CRUD | không item nào khớp đủ | CD-KH-040170 |
 | `course_management/library/library.md` | Trang 8: Toast phản hồi CRUD | không item nào khớp đủ | CD-KH-070301 |
 | `course_management/semester/information/information.md` | Trang 4: Popup xoá học kỳ | chưa đủ chắc | CD-KH-030100 |
-| `course_management/skill-s6/skill-s6.md` | Trang 15: Import / Export Excel | khớp 4 frame, quá nhiều | CD-KH-070302, CD-KH-070305, CD-KH-070309, CD-KH-070313 |
-| `course_management/skill-s6/skill-s6.md` | Trang 17: Tạo câu hỏi bằng AI (tab Đọc) | chưa đủ chắc |  |
-| `course_management/skill-s6/skill-s6.md` | Trang 20: Cụm liên kết với Chi tiết bài học | không item nào khớp đủ | CD-KH-050100 |
-| `course_management/skill-s6/skill-s6.md` | Trang 21: Toast phản hồi CRUD | không item nào khớp đủ | CD-KH-050190 |
+| `course_management/skill-s6/skill-s6.md` | Trang 16: Import / Export Excel | khớp 4 frame, quá nhiều | CD-KH-070302, CD-KH-070305, CD-KH-070309, CD-KH-070313 |
+| `course_management/skill-s6/skill-s6.md` | Trang 18: Tạo câu hỏi bằng AI (tab Đọc) | chưa đủ chắc |  |
+| `course_management/skill-s6/skill-s6.md` | Trang 21: Cụm liên kết với Chi tiết bài học | không item nào khớp đủ | CD-KH-050100 |
+| `course_management/skill-s6/skill-s6.md` | Trang 22: Toast phản hồi CRUD | không item nào khớp đủ | CD-KH-050190 |
 | `management_requirement/class_management/class_detail_journal_requirements.md` | Trang 4: Popup xác nhận xóa nhật ký | chưa đủ chắc | ADM-LOP-050100 |
 | `management_requirement/class_management/class_detail_lessons_requirements.md` | Trang 3: Popup Ghi chú từng học viên | chưa đủ chắc |  |
 | `management_requirement/class_management/class_detail_lessons_requirements.md` | Trang 4: Sửa điểm danh cho học viên | chưa đủ chắc |  |
