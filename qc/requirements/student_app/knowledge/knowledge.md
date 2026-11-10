@@ -1,0 +1,330 @@
+# [Học viên] Kiến thức
+
+> Các màn **Kiến thức** của app học viên: Từ vựng, Ngữ pháp, Chữ (Hanzi ở Đắc Nhân / Kanji ở Sakumi), Mẫu câu. Mở từ hàng thẻ Kiến thức trong [Chi tiết bài học](../lesson/lesson.md) (phạm vi: kiến thức của bài), từ màn chính 247 theo cấp độ (phạm vi: cả cấp độ, xem [Màn chính và trải nghiệm](../home_trial/home_trial.md)) hoặc từ [Thư viện học tập](../library/library.md) (phạm vi: mục đã lưu). Nội dung lấy từ [Kiến thức (S1)](../../course_management/knowledge-s1/knowledge-s1.md); app chỉ đọc.
+>
+> Mỗi loại dùng chung bộ thao tác: danh sách theo cụm, chi tiết mục, đánh dấu `Đã thuộc`, lưu vào thư viện, Duyệt, Luyện tập (Học / Flashcard / Thử thách / Trắc nghiệm / Luyện viết tuỳ loại). Ảnh ví dụ tiếng Trung; chỗ chưa có ảnh để trống.
+
+## 1. UI
+
+### Danh sách theo cụm
+
+<p align="center">
+  <a href="./images/01-tu-vung-theo-cum.png"><img src="./images/01-tu-vung-theo-cum.png" alt="Từ vựng theo cụm" width="300" title="Nhấn để xem ảnh gốc"></a>
+  <a href="./images/02-tu-vung-tat-dich.png"><img src="./images/02-tu-vung-tat-dich.png" alt="Từ vựng tắt dịch nghĩa" width="300" title="Nhấn để xem ảnh gốc"></a>
+  <a href="./images/03-tu-vung-popup.png"><img src="./images/03-tu-vung-popup.png" alt="Popup chi tiết nhanh" width="300" title="Nhấn để xem ảnh gốc"></a><br>
+  <em>Từ vựng theo cụm: chip từ, bật / tắt dịch nghĩa, popup xem nhanh — nhấn để xem ảnh gốc</em>
+</p>
+
+<p align="center">
+  <a href="./images/11-han-tu-theo-cum.png"><img src="./images/11-han-tu-theo-cum.png" alt="Hán tự theo cụm" width="300" title="Nhấn để xem ảnh gốc"></a>
+  <a href="./images/16-o-han-tu-trang-thai.png"><img src="./images/16-o-han-tu-trang-thai.png" alt="Trạng thái ô chữ" width="300" title="Nhấn để xem ảnh gốc"></a><br>
+  <em>Hanzi theo cụm: ô chữ + phiên âm; 4 trạng thái ô: chưa thuộc, đã thuộc, chọn nhiều, đã chọn — nhấn để xem ảnh gốc</em>
+</p>
+
+**Mô tả:**
+
+- Màn đầu của mỗi loại kiến thức: các cụm (chủ đề) của S1, mỗi cụm mở ra danh sách mục dạng chip; bấm chip xem nhanh, `Xem chi tiết` mở danh sách thẻ đầy đủ.
+
+**Giải thích thành phần:**
+
+| Thành phần | Yêu cầu |
+|---|---|
+| Header | Back, badge cấp độ (vd `HSK1`), tên loại (`TỪ VỰNG`, `NGỮ PHÁP`, `HÁN TỰ` / `KANJI`, `MẪU CÂU`), nút góc phải: icon dịch (bật / tắt nghĩa) ở Từ vựng; icon lọc và icon ⭐+ (chọn nhiều) ở danh sách thẻ. |
+| Thẻ cụm | Số thứ tự (ô cam), tên cụm gốc + nghĩa, thanh tiến độ `%` = số mục Đã thuộc / tổng mục của cụm; nút `⌄` / `⌃` mở / thu. Mặc định mở cụm đầu tiên. |
+| Chip mục | Từ vựng, Mẫu câu: từ / câu gốc + nghĩa (ẩn nghĩa khi tắt dịch); Hanzi / Kanji: ô vuông chữ + phiên âm; Ngữ pháp: không dùng chip, đi thẳng danh sách thẻ. Chip Đã thuộc nền cam chữ trắng; Chưa thuộc nền trắng. |
+| Bấm chip | Popup xem nhanh: từ, nghĩa, hình (nếu có), nút loa, ví dụ `Vd1`, `Vd2` có highlight và dịch; nút `×`. Hanzi / Kanji: popup gồm chữ, phiên âm, Hán Việt, nghĩa, nút loa. |
+| `Xem chi tiết` | Mở Danh sách thẻ của cụm đang chọn. |
+| Icon dịch | Bật / tắt phần nghĩa dưới mọi chip; trạng thái nhớ theo thiết bị. |
+
+**Điểm cần lưu ý:**
+
+- Phạm vi mục theo nơi mở: từ bài học chỉ cụm / mục gắn với bài; từ màn 247 là toàn bộ cụm của cấp độ; từ Thư viện là mục đã lưu.
+- Cụm không có mục nào gắn với phạm vi thì không hiện.
+- Không có dữ liệu: `Hiện chưa có nội dung <loại> cho cấp độ này`.
+
+#### Testcase — Danh sách theo cụm
+
+| Tên testcase | Priority | Loại test | Scenario | Role | Pre-condition | Given / When / Then | Expected Result |
+|---|---| --- |---|---|---|---|---|
+| Case 1: Mở Từ vựng từ bài học | High | Smoke | Flow 1 / REQ01 | Học viên | Bài gắn 2 cụm từ vựng | **Given** bấm thẻ `Từ vựng` ở Chi tiết bài<br>**When** màn tải<br>**Then** 2 cụm, cụm 1 mở sẵn, chip đúng mục của bài | - % cụm theo số Đã thuộc |
+| Case 2: Tắt dịch nghĩa | Medium |  | REQ02 | Học viên | Đang bật dịch | **Given** bấm icon dịch<br>**When** đổi<br>**Then** chip chỉ còn từ gốc | - Vào lại vẫn tắt |
+| Case 3: Popup xem nhanh | Medium |  | REQ02 | Học viên | Chip `你好` | **Given** bấm chip<br>**When** popup<br>**Then** từ, nghĩa, hình, loa, 2 ví dụ | - `×` đóng, không đổi trạng thái |
+| Case 4: Hanzi theo cụm | Medium |  | REQ01 | Học viên Đắc Nhân | Cụm 1 có 16 chữ, 4 đã thuộc | **Given** mở Hán tự<br>**When** render<br>**Then** 16 ô, 4 ô nền cam | - Học viên Sakumi thấy tiêu đề `KANJI` |
+
+### Danh sách thẻ và chọn nhiều
+
+<p align="center">
+  <a href="./images/04-tu-vung-danh-sach.png"><img src="./images/04-tu-vung-danh-sach.png" alt="Danh sách thẻ từ vựng" width="300" title="Nhấn để xem ảnh gốc"></a>
+  <a href="./images/05-tu-vung-chon-nhieu.png"><img src="./images/05-tu-vung-chon-nhieu.png" alt="Chọn nhiều từ vựng" width="300" title="Nhấn để xem ảnh gốc"></a>
+  <a href="./images/07-ngu-phap-danh-sach.png"><img src="./images/07-ngu-phap-danh-sach.png" alt="Danh sách ngữ pháp" width="300" title="Nhấn để xem ảnh gốc"></a><br>
+  <em>Thẻ mục: tag Đã thuộc / Chưa thuộc, ⭐ lưu, loa, Xem chi tiết; chế độ chọn nhiều với thanh "Thêm vào thư viện 03" — nhấn để xem ảnh gốc</em>
+</p>
+
+<p align="center">
+  <a href="./images/08-ngu-phap-chon-nhieu.png"><img src="./images/08-ngu-phap-chon-nhieu.png" alt="Chọn nhiều ngữ pháp" width="300" title="Nhấn để xem ảnh gốc"></a>
+  <a href="./images/12-han-tu-luoi.png"><img src="./images/12-han-tu-luoi.png" alt="Lưới Hán tự" width="300" title="Nhấn để xem ảnh gốc"></a>
+  <a href="./images/13-han-tu-chon-nhieu.png"><img src="./images/13-han-tu-chon-nhieu.png" alt="Chọn nhiều Hán tự" width="300" title="Nhấn để xem ảnh gốc"></a><br>
+  <em>Ngữ pháp chọn nhiều; lưới Hanzi với nút Duyệt / Luyện tập và chế độ chọn nhiều — nhấn để xem ảnh gốc</em>
+</p>
+
+**Mô tả:**
+
+- Danh sách đầy đủ mục của cụm / phạm vi: Từ vựng, Ngữ pháp, Mẫu câu dạng thẻ; Hanzi / Kanji dạng lưới ô. Có chế độ chọn nhiều để lưu hàng loạt vào Thư viện; chân màn có `Duyệt` và `Luyện Tập`.
+
+**Giải thích field/thành phần:**
+
+| Thành phần | Yêu cầu |
+|---|---|
+| Thẻ Từ vựng | Góc trái tag `Đã thuộc` (xanh lá) / `Chưa thuộc` (xám); hình (hoặc ảnh mặc định); từ (cam), phiên âm, nghĩa (kèm chú thích cách dùng); nút ⭐ (lưu thư viện, sáng cam khi đã lưu), loa, `Xem chi tiết`. |
+| Thẻ Ngữ pháp | Tag thuộc, số thứ tự, cấu trúc (cam), mô tả ngắn; ⭐, loa, `Xem chi tiết`. |
+| Thẻ Mẫu câu | Tag thuộc, câu gốc, phiên âm, nghĩa; ⭐, loa, `Xem chi tiết`. |
+| Ô Hanzi / Kanji | Chữ + phiên âm; Đã thuộc nền cam; bấm ô mở Chi tiết chữ. Chân màn: nút `Duyệt`, `Luyện Tập`. |
+| Icon lọc | Lọc `Tất cả` / `Đã thuộc` / `Chưa thuộc`. |
+| Icon ⭐+ | Bật chế độ chọn nhiều: mỗi thẻ / ô có checkbox; thẻ đã chọn viền cam; thanh nổi `Thêm vào thư viện` + số đã chọn và nút `×` thoát chế độ. Mục đã có trong thư viện tick sẵn, bỏ tick rồi xác nhận = gỡ khỏi thư viện. |
+| ⭐ trên thẻ | Bấm để lưu / gỡ ngay một mục; Toast `Thành Công` `Đã cập nhật thư viện!`. |
+
+**Điểm cần lưu ý:**
+
+- Trạng thái Đã thuộc và lưu thư viện đồng bộ với mọi màn khác (Duyệt, Flashcard, Chi tiết, Thư viện).
+- Nhấn `Thêm vào thư viện` lưu toàn bộ tick, gỡ toàn bộ bỏ tick; Toast một lần.
+- Ngữ pháp không có bước cụm: mở từ Chi tiết bài đi thẳng vào danh sách thẻ.
+
+#### Testcase — Danh sách thẻ và chọn nhiều
+
+| Tên testcase | Priority | Loại test | Scenario | Role | Pre-condition | Given / When / Then | Expected Result |
+|---|---| --- |---|---|---|---|---|
+| Case 5: Lưu một mục | High | Smoke | Flow 2 / REQ03 | Học viên | Thẻ `Good morning` chưa lưu | **Given** bấm ⭐<br>**When** backend lưu<br>**Then** ⭐ sáng cam, Toast `Đã cập nhật thư viện!` | - Thư viện có mục này |
+| Case 6: Chọn nhiều | High |  | Flow 2 / REQ03 | Học viên | 6 thẻ, 2 đã lưu | **Given** bấm ⭐+ → tick thêm 1, bỏ tick 1 đã lưu<br>**When** `Thêm vào thư viện 02`<br>**Then** thư viện: +1, −1 | - Một Toast<br>- Thoát chế độ chọn |
+| Case 7: Lọc Chưa thuộc | Medium |  | REQ02 | Học viên | 6 thẻ, 2 Đã thuộc | **Given** lọc `Chưa thuộc`<br>**When** áp dụng<br>**Then** 4 thẻ | - |
+| Case 8: Lưới Hanzi | Medium |  | REQ01 | Học viên Đắc Nhân | Cụm 16 chữ | **Given** mở danh sách<br>**When** render<br>**Then** lưới 4 cột, nút `Duyệt` `Luyện Tập` | - Bấm ô mở Chi tiết chữ |
+
+### Chi tiết mục
+
+<p align="center">
+  <a href="./images/06-chi-tiet-tu-vung.png"><img src="./images/06-chi-tiet-tu-vung.png" alt="Chi tiết từ vựng" width="300" title="Nhấn để xem ảnh gốc"></a>
+  <a href="./images/09-chi-tiet-ngu-phap.png"><img src="./images/09-chi-tiet-ngu-phap.png" alt="Chi tiết ngữ pháp" width="300" title="Nhấn để xem ảnh gốc"></a>
+  <a href="./images/10-chi-tiet-ngu-phap-ghi-nho.png"><img src="./images/10-chi-tiet-ngu-phap-ghi-nho.png" alt="Chi tiết ngữ pháp có Ghi nhớ" width="300" title="Nhấn để xem ảnh gốc"></a><br>
+  <em>Chi tiết từ vựng (hình, từ, phiên âm, nghĩa, ví dụ); chi tiết ngữ pháp (cấu trúc, giải thích, cách dùng, ghi nhớ) — nhấn để xem ảnh gốc</em>
+</p>
+
+<p align="center">
+  <a href="./images/15-chi-tiet-han-tu.png"><img src="./images/15-chi-tiet-han-tu.png" alt="Chi tiết Hán tự" width="300" title="Nhấn để xem ảnh gốc"></a><br>
+  <em>Chi tiết Hanzi: nghĩa Hán tự & Việt, thành phần, cách viết từng nét, bộ thủ, từ đồng nghĩa, cách ghi nhớ, từ vựng liên quan — nhấn để xem ảnh gốc</em>
+</p>
+
+**Mô tả:**
+
+- Màn đầy đủ một mục, điều hướng `<` `>` trong phạm vi danh sách; góc phải có 💡 (Đã thuộc) và ⭐ (lưu thư viện).
+
+**Giải thích field/thành phần:**
+
+| Loại | Nội dung hiển thị |
+|---|---|
+| Từ vựng | Hình minh hoạ; khối `TỪ VỰNG` + loa; phiên âm; nghĩa (kèm loại từ, chú thích); khối `Ví dụ` mỗi ví dụ gồm câu gốc có highlight, phiên âm, dịch, loa. Mở rộng (nếu có) hiện dưới ví dụ. |
+| Ngữ pháp | Khối `CẤU TRÚC`; `GIẢI THÍCH NGỮ PHÁP`; `Cách Dùng VD1..n` (câu, phiên âm, dịch, loa, highlight điểm ngữ pháp); `GHI NHỚ 1..n` (lưu ý) kèm ví dụ `Ghi Nhớ VDn`; nút `Video` nếu có link video (mở popup YouTube, tốc độ 0.25x–2x, toàn màn hình). |
+| Hanzi | Khối chữ + phiên âm + loa; `NGHĨA HÁN TỰ & VIỆT` (các âm Hán Việt và nghĩa); `THÀNH PHẦN CẤU THÀNH`; `CÁCH VIẾT` (hoạt hình nét, `n/N` nét, `<` `>`); `BỘ THỦ`; `TỪ ĐỒNG NGHĨA` (chip chữ giống); `CÁCH GHI NHỚ`; `TỪ VỰNG` (chữ, phiên âm, nghĩa, loa). |
+| Kanji | Như Hanzi nhưng `Âm On`, `Âm Kun` dạng tag thay cho phiên âm; không có Thành phần nếu S1 không nhập. |
+| Mẫu câu | Câu, phiên âm, nghĩa, loa; ví dụ ngữ cảnh nếu có. |
+| 💡 | Bật = Đã thuộc (icon cam), tắt = Chưa thuộc; đổi ngay, không Toast. |
+| ⭐ | Lưu / gỡ thư viện; Toast `Đã cập nhật thư viện!`. |
+| `<` `>` `n/N` | Chuyển mục trong danh sách đang mở (giữ bộ lọc). |
+
+**Điểm cần lưu ý:**
+
+- Field trống ở S1 thì ẩn khối tương ứng, không hiện `— trống —`.
+- Loa phát audio của mục, không có thì TTS.
+- Ảnh Chi tiết Hán tự: khối Cách viết dùng nét SVG của S1; chưa có SVG thì ẩn khối.
+
+#### Testcase — Chi tiết mục
+
+| Tên testcase | Priority | Loại test | Scenario | Role | Pre-condition | Given / When / Then | Expected Result |
+|---|---| --- |---|---|---|---|---|
+| Case 9: Chi tiết từ vựng | High | Smoke | Flow 1 / REQ02 | Học viên | Từ `你` có 1 ví dụ | **Given** `Xem chi tiết`<br>**When** màn tải<br>**Then** hình, từ, phiên âm, nghĩa, ví dụ highlight `你`, `01/15` | - Loa phát audio |
+| Case 10: Đánh dấu thuộc | High |  | REQ04 | Học viên | 💡 đang tắt | **Given** bấm 💡<br>**When** lưu<br>**Then** icon cam; thẻ ở danh sách tag `Đã thuộc` | - % cụm tăng |
+| Case 11: Ngữ pháp có video | Medium |  | REQ02 | Học viên | Điểm ngữ pháp có link YouTube | **Given** bấm `Video`<br>**When** popup<br>**Then** video phát, đổi được tốc độ | - Không có link thì ẩn nút |
+| Case 12: Chi tiết Hanzi | Medium |  | REQ02 | Học viên Đắc Nhân | Chữ `你` có SVG nét | **Given** bấm ô<br>**When** màn tải<br>**Then** khối Cách viết chạy nét, bộ thủ `亻`, từ vựng liên quan | - |
+
+### Duyệt
+
+**Mô tả:**
+
+- Xem lần lượt mục của phạm vi dạng thẻ một mặt, tự đánh giá `Đã thuộc` / `Cần học lại`, có `Quay lại`; kết thúc hiện tổng kết và `Duyệt lại`. Giống bước Duyệt kiến thức trong [Bài học](../lesson/lesson.md) nhưng chỉ cho loại đang mở.
+
+**Giải thích thành phần:**
+
+| Thành phần | Yêu cầu |
+|---|---|
+| Thẻ | Từ vựng: từ, nghĩa, ví dụ highlight; Ngữ pháp: cấu trúc, giải thích, ví dụ; Hanzi / Kanji: chữ, phiên âm, nghĩa, từ liên quan + loa; Mẫu câu: câu, phiên âm, nghĩa. |
+| Nút | `Cần Học Lại` / `Đã Thuộc`; `Quay Lại` từ thẻ 2. |
+| Tổng kết | `ĐÃ THUỘC` / `CẦN HỌC LẠI` số lượng, `Duyệt Lại`. |
+
+**Điểm cần lưu ý:**
+
+- `Đã thuộc` cập nhật trạng thái thuộc và % tiến độ; `Cần học lại` đưa mục về Chưa thuộc.
+- Không có mục: `Không có <loại> nào để duyệt` + `Quay lại`.
+
+#### Testcase — Duyệt
+
+| Tên testcase | Priority | Loại test | Scenario | Role | Pre-condition | Given / When / Then | Expected Result |
+|---|---| --- |---|---|---|---|---|
+| Case 13: Duyệt cụm | High | Smoke | Flow 3 / REQ04 | Học viên | Cụm 10 từ | **Given** bấm `Duyệt`<br>**When** 8 Đã thuộc, 2 Cần học lại<br>**Then** tổng kết `8` / `2` | - % cụm = 80% |
+| Case 14: Duyệt rỗng | Low |  | EX01 | Học viên | Cụm 0 mục trong phạm vi | **Given** bấm `Duyệt`<br>**When** tải<br>**Then** `Không có từ nào để duyệt` | - |
+
+### Luyện tập
+
+<p align="center">
+  <a href="./images/14-han-tu-luyen-tap.png"><img src="./images/14-han-tu-luyen-tap.png" alt="Popup Luyện tập Hán tự" width="300" title="Nhấn để xem ảnh gốc"></a><br>
+  <em>Popup chọn chế độ luyện tập (Hanzi): Chi tiết, Luyện viết, Flashcard, Trắc nghiệm, Thử thách 1, Thử thách 2 — nhấn để xem ảnh gốc</em>
+</p>
+
+**Mô tả:**
+
+- Bấm `Luyện Tập` mở popup chọn chế độ; bộ chế độ theo loại:
+
+| Loại | Chế độ |
+|---|---|
+| Từ vựng | `Học`, `Flashcard`, `Thử thách` |
+| Ngữ pháp | `Học`, `Flashcard`, `Trắc nghiệm` |
+| Hanzi / Kanji | `Chi tiết`, `Luyện viết`, `Flashcard`, `Trắc nghiệm`, `Thử thách 1`, `Thử thách 2` |
+| Mẫu câu | `Học`, `Flashcard` |
+| Mọi loại (thêm) | `Bài tập` khi phạm vi có ít nhất 1 mục có bộ câu hỏi do CD soạn (tab Câu hỏi của mục ở S1) |
+
+**Giải thích thành phần:**
+
+| Chế độ | Nội dung |
+|---|---|
+| `Học` | Chuỗi Card nội dung (từ, nghĩa, ví dụ, `Tiếp tục`) và Flashcard (mặt trước câu ví dụ + loa; `Tiếp theo` lật; mặt sau hình, nghĩa, loại từ, dịch; `Hoàn thành` → `Tiếp tục`); sau 3–5 thẻ chèn câu kiểm tra (Trắc nghiệm 1 đáp án, Sắp xếp từ, Nối từ); sai thì hiện đáp án và làm lại; hết chuỗi: `Chúc mừng đã hoàn thành phần học`. Ngữ pháp: thẻ cấu trúc + ví dụ, câu kiểm tra Điền chỗ trống / Sắp xếp. Chữ: thẻ chữ → mặt sau âm, nghĩa, bộ thủ, ví dụ; câu kiểm tra chọn nghĩa / chọn âm đọc. |
+| `Flashcard` | Như Học qua Flashcard ở Bài học: 3 loại thẻ, Tuỳ chỉnh (Xem tất cả, Xáo trộn, Chạy tự động, Loại 1–3), tag Đã thuộc / Chưa thuộc, loa, `<` `>` và vuốt. Chữ: loại 1 chữ → nghĩa + âm + ví dụ; loại 2 nghĩa → chữ + âm + ví dụ; loại 3 chữ + hình → đầy đủ. Mọi thẻ Đã thuộc: màn `Chúc mừng bạn hoàn thành Flashcard` + `Xem tất cả`. |
+| `Thử thách` (Từ vựng) | Trắc nghiệm hình + từ → 4 nghĩa; đồng hồ 10 giây / câu; 3 sao = 3 lượt sai; đúng viền xanh, sai viền đỏ mất 1 sao; hết sao: popup `Thật tiếc, bạn không vượt qua được thử thách`; hết câu: `Chúc mừng bạn đã vượt qua thử thách!`; nút `Quay lại` / `Làm lại`. Không đổi trạng thái thuộc. |
+| `Trắc nghiệm` (Ngữ pháp) | Câu Điền chỗ trống (4 lựa chọn) và Sắp xếp câu; `<` `>` chuyển câu, `n/N`, `Xem hướng dẫn`, `Kết thúc` → popup xác nhận `Số câu chưa hoàn thành: X/Y` với `Làm lại` / `Xem đáp án`; kết quả: từng câu đúng xanh / sai đỏ, câu bỏ qua ghi `Bạn đã bỏ qua câu này`, đáp án đúng, điểm thang 10 và nhận xét. Kết quả không lưu. |
+| `Trắc nghiệm` (Chữ) | Câu hỏi là chữ hoặc audio; 4 đáp án (nghĩa hoặc âm); phản hồi xanh / đỏ, tự chuyển câu; thanh tiến độ; kết quả % đúng, danh sách chữ, `Làm lại`. |
+| `Luyện viết` (Chữ) | Khung chữ mẫu, khung kẻ ô để viết tay theo thứ tự nét; `Hoàn tác`, `Xoá`, `Ẩn / Hiện hướng dẫn`, loa, `<` `>`; `Kiểm tra` so nét với mẫu: popup xanh `Đúng` hoặc đỏ `Sai` kèm chữ mẫu. |
+| `Thử thách 1` / `2` (Chữ) | 16 câu, mỗi câu 5–7 giây; Thử thách 1: hiện phiên âm → chọn 1 trong 16 ô chữ; Thử thách 2: hiện chữ → chọn 1 trong 16 ô phiên âm; sai hoặc hết giờ mất 1 tim (3 tim); thông báo `Làm tốt lắm, tiếp tục nào` / `Sai rồi bạn ơi, ‘x’ mới đúng` / `Hết giờ cho câu này`; kết quả `Thành công rồi!` / `Hãy luyện tập thật tốt nhé!`. Đúng thì chữ chuyển Đã thuộc. |
+| `Chi tiết` (Chữ) | Mở Chi tiết mục, duyệt bằng `<` `>` qua cả phạm vi. |
+| `Bài tập` (mọi loại) | Câu hỏi CD soạn cho các mục trong phạm vi (theo thứ tự mục, rồi STT), đủ 8 loại câu như BTVN, kể cả câu hỏi con; `<` `>`, `n/N`, `Nộp bài` → câu App chấm hiện đúng xanh / sai đỏ + giải thích; câu GV chấm (Nói, Viết…) hiện bài mẫu / đáp án tham khảo để tự so. **Không lưu điểm**, không đổi trạng thái thuộc; `Làm lại` / `Quay lại`. |
+
+**Điểm cần lưu ý:**
+
+- Chế độ `Học`, `Flashcard` cập nhật trạng thái thuộc khi học viên bấm tag; `Thử thách` Từ vựng và `Trắc nghiệm` Ngữ pháp không đổi trạng thái; Thử thách chữ đổi khi trả lời đúng.
+- Phạm vi luyện tập = danh sách đang mở (cụm hoặc bộ lọc).
+- Câu kiểm tra trong `Học` và câu của `Trắc nghiệm`: mục có bộ câu hỏi thì lấy câu từ bộ đó (câu App chấm); mục **không có
+  câu hỏi thì app tự sinh như cũ** (từ nghĩa, ví dụ, cấu trúc của mục). `Thử thách` giữ cách tự sinh.
+- Không có mục: `Không có nội dung để luyện tập`.
+
+#### Testcase — Luyện tập
+
+| Tên testcase | Priority | Loại test | Scenario | Role | Pre-condition | Given / When / Then | Expected Result |
+|---|---| --- |---|---|---|---|---|
+| Case 15: Chọn chế độ theo loại | High | Smoke | Flow 4 / REQ05 | Học viên | Mở Từ vựng, Ngữ pháp, Hanzi | **Given** bấm `Luyện Tập` ở từng màn<br>**When** popup<br>**Then** Từ vựng 3 chế độ, Ngữ pháp 3, Hanzi 6 | - Đúng bảng chế độ |
+| Case 16: Học có câu kiểm tra | High |  | Flow 4 / REQ05 | Học viên | Cụm 10 từ | **Given** chế độ Học<br>**When** qua 4 thẻ<br>**Then** chèn câu kiểm tra; sai thì làm lại | - Hết chuỗi: thông báo hoàn thành |
+| Case 17: Thử thách thua | Medium |  | EX02 / REQ05 | Học viên | Chế độ Thử thách | **Given** sai 3 câu<br>**When** mất sao thứ 3<br>**Then** popup `Thật tiếc...`, `Quay lại` / `Làm lại` | - Trạng thái thuộc không đổi |
+| Case 18: Trắc nghiệm ngữ pháp | Medium |  | REQ05 | Học viên | 13 câu, làm 2 | **Given** `Kết thúc`<br>**When** popup `Số câu chưa hoàn thành: 11/13`<br>**Then** `Xem đáp án` hiện kết quả, câu trống ghi bỏ qua | - Điểm thang 10, không lưu |
+| Case 19: Luyện viết Hanzi | Medium |  | REQ05 | Học viên Đắc Nhân | Chữ `你` | **Given** viết tay, `Kiểm tra`<br>**When** nét khớp<br>**Then** popup xanh `Đúng` | - `Hoàn tác` bỏ nét cuối |
+| Case 20a: Bài tập theo bộ câu hỏi | High | Smoke | Flow 4 / REQ05 | Học viên | Cụm 10 từ, 3 từ có tổng 6 câu do CD soạn | **Given** `Luyện Tập`<br>**When** chọn `Bài tập`, làm 6 câu, `Nộp bài`<br>**Then** đúng / sai từng câu kèm giải thích | - Không lưu điểm, trạng thái thuộc không đổi |
+| Case 20b: Mục không có câu hỏi | High |  | Flow 4 / REQ05 | Học viên | Cụm 10 từ, không từ nào có câu hỏi | **Given** `Luyện Tập`<br>**When** xem popup; chọn `Học`<br>**Then** không có `Bài tập`; câu kiểm tra tự sinh như cũ | - |
+| Case 20: Thử thách 1 Hanzi | Medium |  | REQ05 | Học viên Đắc Nhân | 16 chữ | **Given** chọn đúng 16 câu<br>**When** hết<br>**Then** `Thành công rồi!`, 16 chữ Đã thuộc | - Hết giờ 1 câu mất 1 tim |
+
+### Toast phản hồi CRUD
+
+<p align="center">
+  <a href="../../images/01-toast-crud.png"><img src="../../images/01-toast-crud.png" alt="Bốn trạng thái Toast CRUD" width="520" title="Nhấn để xem ảnh gốc"></a><br>
+  <em>Toast Thành Công, Thông Báo, Cảnh Báo và Có Lỗi Xảy Ra — nhấn để xem ảnh gốc</em>
+</p>
+
+**Mô tả:**
+
+- Phản hồi khi lưu / gỡ thư viện; đổi trạng thái thuộc không Toast.
+
+**Giải thích thành phần:**
+
+| Loại Toast | Tiêu đề cố định | Khi sử dụng |
+|---|---|---|
+| Thành công | `Thành Công` | `Đã cập nhật thư viện!` |
+| Cảnh báo | `Cảnh Báo` | `Không có kết nối, vui lòng thử lại` |
+| Lỗi | `Có Lỗi Xảy Ra` | `Cập nhật thư viện thất bại` |
+
+**Điểm cần lưu ý:**
+
+- Chọn nhiều: một Toast cho cả lần xác nhận.
+
+#### Testcase — Toast phản hồi CRUD
+
+| Tên testcase | Priority | Loại test | Scenario | Role | Pre-condition | Given / When / Then | Expected Result |
+|---|---| --- |---|---|---|---|---|
+| Toast Case 1: Thành công | High |  | Ràng buộc Toast CRUD | Học viên | Mạng ổn | **Given** bấm ⭐<br>**When** lưu xong<br>**Then** Toast `Thành Công` | - Một Toast |
+| Toast Case 2: Lỗi | Medium |  | Ràng buộc Toast CRUD | Học viên | Backend lỗi | **Given** bấm ⭐<br>**When** thất bại<br>**Then** Toast `Có Lỗi Xảy Ra`, ⭐ giữ trạng thái cũ | - |
+
+---
+
+## 2. Yêu cầu
+
+### 2.1. Flow chính
+
+**Flow 1 / REQ01 / REQ02: Xem kiến thức**
+
+```text
+Mở loại kiến thức (từ bài học / 247 / Thư viện) → cụm trong phạm vi, cụm đầu mở sẵn
+      → Chip → popup xem nhanh; Xem chi tiết → danh sách thẻ (lọc, chọn nhiều)
+      → Thẻ → Chi tiết mục (< > trong danh sách), 💡 Đã thuộc, ⭐ lưu
+```
+
+**Flow 2 / REQ03: Lưu vào thư viện**
+
+```text
+⭐ trên thẻ / chi tiết → lưu hoặc gỡ ngay → Toast "Đã cập nhật thư viện!"
+⭐+ → chế độ chọn nhiều → tick / bỏ tick → "Thêm vào thư viện N" → lưu tick, gỡ bỏ tick → Toast → thoát chế độ
+```
+
+**Flow 3 / REQ04: Duyệt**
+
+```text
+Duyệt → thẻ 1/N → Đã Thuộc / Cần Học Lại (Quay Lại để sửa) → tổng kết → Duyệt Lại
+```
+
+**Flow 4 / REQ05: Luyện tập**
+
+```text
+Luyện Tập → popup chế độ theo loại → chạy chế độ trên phạm vi đang mở
+      → Học / Flashcard: đổi trạng thái thuộc khi bấm tag; Thử thách / Trắc nghiệm / Bài tập: chỉ kết quả phiên
+      → câu hỏi: lấy bộ câu hỏi CD soạn của mục; mục không có câu thì app tự sinh như cũ
+      → Kết thúc: màn / popup kết quả, Làm lại hoặc Quay lại
+```
+
+### 2.2. Ngoại lệ
+
+- **EX01:** Phạm vi không có mục → `Hiện chưa có nội dung <loại> cho cấp độ này` / `Không có <loại> nào để duyệt` / `Không có nội dung để luyện tập`.
+- **EX02:** Thử thách: sai 3 lần hoặc hết giờ 3 lần → popup thua, cho làm lại; không ghi gì.
+- **EX03:** Mất mạng khi lưu thư viện / đổi thuộc → giữ trạng thái cũ, Toast `Cảnh Báo`.
+- **EX04:** Mục bị CD chuyển Vô hiệu hoặc gỡ khỏi bài → không còn trong danh sách bài; mục đã lưu thư viện vẫn xem được ở Thư viện.
+- **EX05:** Trả lời sai trong chế độ Học → hiện đáp án đúng, bắt làm lại; không chuyển tiếp.
+
+### 2.3. Yêu cầu khác
+
+- **REQ01 – Nguồn và phạm vi:** Dữ liệu từ S1 (cụm, mục, field) chỉ đọc; phạm vi theo nơi mở: bài học (mục gắn bài), 247 (cấp độ), Thư viện (mục đã lưu). Loại Chữ theo trung tâm (Hanzi Đắc Nhân, Kanji Sakumi).
+- **REQ02 – Hiển thị:** Cụm có tiến độ % Đã thuộc; chip / thẻ / ô theo loại; chi tiết mục đủ field có dữ liệu, ẩn field trống; bật / tắt dịch nghĩa nhớ theo thiết bị; bộ lọc Tất cả / Đã thuộc / Chưa thuộc.
+- **REQ03 – Thư viện:** ⭐ lưu / gỡ một mục; chọn nhiều lưu / gỡ hàng loạt; Toast `Đã cập nhật thư viện!`.
+- **REQ04 – Trạng thái thuộc:** Một trạng thái theo học viên và mục, dùng chung mọi màn; 💡, tag trên thẻ, Duyệt, Flashcard, Thử thách chữ (đúng) đều đổi được; Cần học lại = Chưa thuộc.
+- **REQ05 – Luyện tập:** Bộ chế độ theo loại như bảng; Học chèn kiểm tra sau 3–5 thẻ; Flashcard 3 loại + Tuỳ chỉnh; Thử thách 10 giây / câu, 3 sao; Trắc nghiệm ngữ pháp điểm thang 10 không lưu; Luyện viết so nét; Thử thách chữ 16 câu, 5–7 giây, 3 tim. Mục có bộ câu hỏi (S1): thêm chế độ `Bài tập`, câu kiểm tra / Trắc nghiệm lấy từ bộ đó, không lưu điểm; mục không có câu thì tự sinh như cũ.
+- **REQ06 – Audio:** Loa phát audio mục, không có thì TTS theo ngôn ngữ trung tâm.
+
+### 2.4. Ràng buộc
+
+#### Quyền
+
+| Role | Xem | Đã thuộc / lưu thư viện | Duyệt / Luyện tập |
+|---|:---:|:---:|:---:|
+| Học viên (đăng nhập) | ✅ | ✅ | ✅ |
+| Người dùng trải nghiệm (chưa đăng nhập) | ✅ nội dung mở của cấp độ | ✅ lưu trên máy | ✅ |
+
+#### Phạm vi dữ liệu
+
+- Học viên: trạng thái thuộc và thư viện lưu server theo tài khoản; người dùng trải nghiệm lưu trên thiết bị (xem [Màn chính và trải nghiệm](../home_trial/home_trial.md)).
+- Backend chỉ trả mục thuộc khoá học / cấp độ học viên được phép.
+
+---
+
+## 3. Cần xác nhận
+
+- Màn Duyệt, chế độ Học, Thử thách, Trắc nghiệm ngữ pháp, Luyện viết, Thử thách 1–2 chữ, chi tiết Mẫu câu chưa có ảnh thiết kế.
+- Thời gian Thử thách (10 giây / câu) và Thử thách chữ (5–7 giây / câu) lấy theo spec cũ, cần chốt số cụ thể.
+- Kanji: field `Thành phần cấu thành` và `Cách viết` có hiển thị như Hanzi không (S1 Kanji không bắt buộc Thứ tự nét).
