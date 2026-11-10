@@ -4,17 +4,5 @@
   "role": "admin",
   "salt": "667ad4140b7a97048c068324bad117cc",
   "hash": "3d9111affbcf64ccf7ef7d73a26ef24afd06aa0fc729e363f1b982dc0e270f06"
- },
- {
-  "name": "khanh.ds",
-  "role": "admin",
-  "salt": "1a86fe61fe1ae0ee6aabc6bbf73334fd",
-  "hash": "1111103f45e61fb068895b62fadcfaade7a4f5c99638cf26010e21d3a51bb05a"
- },
- {
-  "name": "phuc.it",
-  "role": "dev",
-  "salt": "c51f3dbc1ab4d3fd6f45bf1eca100a4b",
-  "hash": "4188d3404e16807864f93708d26f1cf2e77da637bba1d0258b219ed208af33d9"
  }
 ]
