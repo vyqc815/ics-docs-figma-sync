@@ -5,7 +5,12 @@ const figmaSources = ["./figma.pages.json", "./docs/pages/**/*", "./components/f
 
 const qcSources = ["./figma.pages.json", "./docs/requirements/**/*", "./docs/he-thong-ma/**/*", "./scripts/figma/screen-requirements.json", "./docs/du-an/projects.json", "./projects/**/*"];
 
+// One id per build, inlined into both the server and the browser code: the hub compares the two to notice a
+// new deploy (components/qc/new-version.tsx, app/hub/phien-ban/route.ts).
+const BUILD_ID = (process.env.GITHUB_SHA ?? process.env.VERCEL_GIT_COMMIT_SHA ?? "").slice(0, 8) + "-" + Date.now().toString(36);
+
 const nextConfig: NextConfig = {
+  env: { HUB_BUILD_ID: BUILD_ID },
   // NEXT_OUTPUT=standalone: a self-contained server bundle for the company server (deploy.yml, job "server");
   // Vercel builds leave it unset.
   ...(process.env.NEXT_OUTPUT === "standalone" ? { output: "standalone" as const } : {}),

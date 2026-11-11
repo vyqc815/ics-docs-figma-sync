@@ -5,6 +5,7 @@ import { redirect } from "next/navigation";
 
 import { Logo } from "@/components/qc/logo";
 import { QcNav } from "@/components/qc/nav";
+import { NewVersion } from "@/components/qc/new-version";
 import { ProjectPicker } from "@/components/qc/project-picker";
 import { DocTree, type TreeGroup } from "@/components/qc/doc-tree";
 import { listProjects } from "@/lib/projects";
@@ -74,6 +75,7 @@ const HubLayout = async ({ children }: { children: ReactNode }): Promise<React.J
         </aside>
         <main className="min-w-0 flex-1 px-5 py-7 lg:px-8">{children}</main>
       </div>
+      <NewVersion />
     </div>
   );
 };
