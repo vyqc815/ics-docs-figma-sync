@@ -10,7 +10,7 @@ import { DocTree, type TreeGroup } from "@/components/qc/doc-tree";
 import { listProjects } from "@/lib/projects";
 import { session, signedIn } from "@/lib/qc/auth";
 import { syncRowsCached, type State } from "@/lib/qc/dong-bo";
-import { indexInfo, requirementFiles, unmappedPages } from "@/lib/qc/data";
+import { requirementFiles, unmappedPages } from "@/lib/qc/data";
 import { hubProject } from "@/lib/qc/project";
 import "../hub.css";
 
@@ -32,9 +32,7 @@ const HubLayout = async ({ children }: { children: ReactNode }): Promise<React.J
     redirect(`/hub/dang-nhap?next=${encodeURIComponent(path)}`);
   }
   const project = await hubProject();
-  const info = indexInfo();
   const unmapped = unmappedPages().length;
-  const updated = info.generatedAt ? new Date(info.generatedAt).toLocaleString("vi-VN", { timeZone: "Asia/Ho_Chi_Minh" }) : "—";
 
   const me = await session();
   const rows = await syncRowsCached().catch(() => []);
@@ -55,9 +53,6 @@ const HubLayout = async ({ children }: { children: ReactNode }): Promise<React.J
         </Link>
         <ProjectPicker current={project.slug} projects={listProjects().map(({ slug, name }) => ({ slug, name }))} />
         <span className="flex-1" />
-        <p className="hidden text-[13px] text-(--hub-muted) lg:block">
-          Requirement <span className="text-(--hub-text)">{info.version?.slice(0, 8) ?? "—"}</span> · {updated}
-        </p>
         <p className="text-[13px] text-(--hub-muted)">
           Figma: <span className="text-(--hub-green)">Live</span>
         </p>

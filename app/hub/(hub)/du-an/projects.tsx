@@ -91,7 +91,7 @@ function NewProject({ onCancel, onSaved }: { onCancel: () => void; onSaved: (slu
   const [outline, setOutline] = useState<Outline | null>(null);
   const [pages, setPages] = useState<Set<string>>(new Set());
   const [sections, setSections] = useState<Set<string>>(new Set());
-  const [onlyCoded, setOnlyCoded] = useState(true);
+  const [onlyCoded, setOnlyCoded] = useState(false);
   const [screens, setScreens] = useState<Screen[] | null>(null);
   const [error, setError] = useState("");
   const [busy, start] = useTransition();
@@ -200,11 +200,20 @@ function NewProject({ onCancel, onSaved }: { onCancel: () => void; onSaved: (slu
       {outline && screens && (
         <section className="rounded-3xl bg-(--hub-panel) p-5">
           <div className="mb-4 flex flex-wrap items-center justify-between gap-3">
-            <p className="font-semibold">Tìm thấy {screens.length} màn</p>
+            <div>
+              <p className="font-semibold">Tìm thấy {screens.length} màn</p>
+              {!screens.length && (
+                <p className="mt-1 text-xs text-(--hub-muted)">
+                  {onlyCoded
+                    ? "Không frame nào có mã ở đầu tên. Bỏ tick “Chỉ frame có mã ở đầu tên” rồi quét lại để lấy mọi frame; hoặc lưu luôn, quét lại sau khi design đặt mã."
+                    : "Phần đã chọn không có frame nào từ 320×200 trở lên. Chọn trang / Section khác, hoặc lưu luôn rồi Quét lại Figma sau."}
+                </p>
+              )}
+            </div>
             <button
               type="button"
               className={primary}
-              disabled={busy || !screens.length}
+              disabled={busy || !name.trim()}
               onClick={() =>
                 run(async () => {
                   const picked = outline.pages.filter((p) => pages.has(p.id) || p.sections.some((x) => sections.has(x.id))).map((p) => p.name);
@@ -224,7 +233,7 @@ function NewProject({ onCancel, onSaved }: { onCancel: () => void; onSaved: (slu
                 })
               }
             >
-              {busy ? <Loader2 className="size-4 animate-spin" /> : null} Lưu dự án
+              {busy ? <Loader2 className="size-4 animate-spin" /> : null} {screens.length ? "Lưu dự án" : "Lưu dự án (chưa có màn)"}
             </button>
           </div>
           <Grid project={{ fileKey: outline.fileKey }} screens={screens.slice(0, 24)} />

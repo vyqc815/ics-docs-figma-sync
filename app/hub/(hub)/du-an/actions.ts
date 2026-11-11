@@ -46,7 +46,11 @@ async function figma(path: string): Promise<unknown> {
   return res.json();
 }
 
-const countFrames = (n: Rn): number => (n.children ?? []).reduce((k, c) => k + (c.type === "FRAME" ? 1 : c.type === "SECTION" || c.type === "GROUP" ? countFrames(c) : 0), 0);
+/** Nodes that can be a screen: a frame, or a component / instance drawn as one. */
+const SCREEN = new Set(["FRAME", "COMPONENT", "INSTANCE"]);
+/** Containers opened while looking for screens. */
+const BOX = new Set(["SECTION", "GROUP", "COMPONENT_SET"]);
+const countFrames = (n: Rn): number => (n.children ?? []).reduce((k, c) => k + (SCREEN.has(c.type) ? 1 : BOX.has(c.type) ? countFrames(c) : 0), 0);
 
 export async function readFigmaFile(link: string): Promise<Outline> {
   const fileKey = link.match(/figma\.com\/(?:design|file|proto)\/([A-Za-z0-9]+)/)?.[1] ?? (/^[A-Za-z0-9]{15,}$/.test(link.trim()) ? link.trim() : null);
@@ -58,7 +62,7 @@ export async function readFigmaFile(link: string): Promise<Outline> {
     pages: (file.document.children ?? []).map((p) => ({
       id: p.id,
       name: p.name.trim(),
-      frames: (p.children ?? []).filter((c) => c.type === "FRAME").length,
+      frames: (p.children ?? []).filter((c) => SCREEN.has(c.type)).length + (p.children ?? []).filter((c) => c.type === "GROUP" || c.type === "COMPONENT_SET").reduce((k, c) => k + countFrames(c), 0),
       sections: (p.children ?? []).filter((c) => c.type === "SECTION").map((s) => ({ id: s.id, name: s.name.trim(), frames: countFrames(s) })),
     })),
   };
@@ -80,7 +84,7 @@ export async function scanFigmaFile(fileKey: string, pageIds: string[], sectionI
     if (!whole && !sections.length) continue;
     const res = (await figma(`/v1/files/${fileKey}/nodes?ids=${encodeURIComponent(page.id)}&depth=4`)) as { nodes: Record<string, { document: Rn } | null> };
     const visit = (n: Rn, section: string | null, take: boolean) => {
-      if (n.type === "FRAME") {
+      if (SCREEN.has(n.type)) {
         if (!take) return;
         const code = n.name.match(CODE)?.[1] ?? null;
         const box = n.absoluteBoundingBox ?? { width: 0, height: 0 };
@@ -88,7 +92,7 @@ export async function scanFigmaFile(fileKey: string, pageIds: string[], sectionI
           out.push({ id: n.id, name: n.name, code, kind: kindOf(code), page: page.name.trim(), section, width: Math.round(box.width), height: Math.round(box.height) });
         return;
       }
-      if (n.type === "SECTION" || n.type === "GROUP")
+      if (BOX.has(n.type))
         for (const c of n.children ?? []) visit(c, n.type === "SECTION" ? n.name.trim() : section, take || sectionIds.includes(n.id));
     };
     for (const c of res.nodes[page.id]?.document.children ?? []) visit(c, null, whole);
